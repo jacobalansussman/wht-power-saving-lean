@@ -11,10 +11,11 @@ Lean files that are byte for byte those of this repository, and then in a copy o
 `lakefile.lean` of this repository, partly from compiled files of the working build (section 3). A build of this
 revision from nothing has not been made (section 8, point 12).
 
-**State of the checks of the third result when this text was written.** Both theorems passed the official
-comparator once (section 5), in the project's working tree, on Lean files that are byte for byte those of this
-repository. `tools/Compare.lean` had not been run on them, and no build of this revision in a copy of the
-repository or from nothing had been made (section 8, point 13).
+**State of the checks of the third result.** Both theorems passed the official comparator three times
+(section 5): twice in the project's working tree (18:27 and 18:55 UTC) and once in a copy of the repository
+(19:20 UTC), on Lean files that are byte for byte those of this repository. `tools/Compare.lean` passed in the
+working tree and in the copy (19:23 UTC). No build of this revision from nothing has been made (section 8,
+point 13).
 
 ## 1. What is checked
 
@@ -188,7 +189,7 @@ the first result were not repeated for this revision (section 9).
     lake env lean --run tools/Compare.lean Work.Fourier.UniformFourierChallenge \
         Work.Fourier.Main OAI.PowerSaving.transform_mainZ OAI.PowerSaving.convolution_mainZ
 
-It had not been run for the third result when this text was written.
+It passed for the third result in the project's working tree and, at 19:23 UTC, in a copy of the repository (163 s).
 
 ## 5. Check with the official comparator
 
@@ -350,10 +351,12 @@ Read these before relying on the result.
     (section 5) replayed compiled files of that origin. A rebuild from nothing with the commands of section 3,
     followed by sections 4 and 5, closes this gap; re-runs are welcome.
 
-13. **The third result.** Its modules were compiled, and its one comparator run was made, in the project's
-    working tree only. That run replayed compiled files, those of the certificate of the second result among
-    them (point 12). `tools/Compare.lean` and a negative control were not run for it. A rebuild from nothing
-    with the commands of section 3, followed by sections 4 and 5, closes this gap; re-runs are welcome.
+13. **The third result.** The comparator passed three times: twice in the project's working tree and once in a
+    copy of the repository, where the 15 new modules had been compiled from source. Every run replayed compiled
+    files, those of the certificate of the second result among them (point 12). `tools/Compare.lean` passed in
+    both places; the negative control was run in the working tree. No build from nothing has been made. A
+    rebuild from nothing with the commands of section 3, followed by sections 4 and 5, closes this gap;
+    re-runs are welcome.
 
 ## 9. Measurements of the first publication (2026-10-09, 194 modules)
 

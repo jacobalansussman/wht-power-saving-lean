@@ -377,7 +377,8 @@ All times are UTC. The AI agents ran every check, on one machine.
   compiled modules of the second result (under two minutes; VERIFY.md, section 3). What is said below about the
   build of the second result holds here too: no build from nothing has been made. In a copy of the
   repository the 15 new modules were compiled from source on the compiled modules of the second revision; the
-  comparator has not yet been run in that copy.
+  comparator and `tools/Compare.lean` were then run in that copy and both passed (comparator 19:01 to 19:20,
+  1137 s; `tools/Compare.lean` 19:23).
 - **The repeated files.** `tools/fourier/mkchain.py` (242 lines of Python) makes the 11 copies, `Goal.lean`, the
   challenge and the comparator configuration from OpenAI's unmodified files. `python3
   tools/fourier/regen_check.py` runs it again and compares the result with the files of this repository: all 14
@@ -485,10 +486,10 @@ All times are UTC. The AI agents ran every check, on one machine.
 - New in the third revision: the statement of the third result is OpenAI's challenge file with three
   changes (section 1). `diff` shows them in a few lines (VERIFY.md, section 1). The one that carries the
   claim is the exponent.
-- New in the third revision: the third result has had one comparator run, in the project's working tree. A build
-  of this revision in a copy of the repository or from nothing, a run of `tools/Compare.lean`, and a negative
-  control (the checkers must reject this proof against a statement whose saving is one unit larger) had not been
-  made for it when this text was written.
+- New in the third revision: the third result has had three comparator runs, two in the project's working tree
+  and one in a copy of the repository. `tools/Compare.lean` passed in both places, and the negative control (the
+  checkers must reject this proof against a statement whose saving is one unit larger) was run in the working
+  tree. A build of this revision from nothing has not been made.
 - The comparator ran on macOS with a stand-in for its Linux sandbox `landrun`. The second kernel (`nanoda`) was
   off, as in OpenAI's configuration of its own Fourier challenge. `leanchecker` was not run on these modules.
 - In every comparator run the modules of the proof had been compiled beforehand, outside the sandbox, so the
