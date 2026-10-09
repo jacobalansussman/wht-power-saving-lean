@@ -5,7 +5,9 @@ Author of this repository: Jacob Sussman. Repository: https://github.com/jacobal
 This file says what this work takes from others, what it shares with work that others published first, and
 where the other results stand. It rests on three read-only looks at public sources by the AI agents I directed:
 a scan on 2026-10-08 at about 21:10 UTC, a scan on 2026-10-09 ending 10:39 UTC, and a re-read of 20 pull requests
-and 4 repositories on 2026-10-09 from 11:46 to 11:55 UTC. **All times are UTC.**
+and 4 repositories on 2026-10-09 from 11:46 to 11:55 UTC. For the second result they looked again on 2026-10-09:
+a read-only fetch of six pull-request heads at 13:17, reads of pull requests #192 to #198 at 14:02, a list of
+titles at 14:37, and a last look at 16:06 (section 5). **All times are UTC.**
 
 Rules of this file:
 - Every outside figure is **a claim of its authors**. How they checked it is stated next to it. The authors of
@@ -16,14 +18,17 @@ Rules of this file:
   where only a title was read. Example: the title of #178 says kappa = 6.5592e-4, and its body gives the
   complex-side saving 13126968687/(2 * 10^13) = 6.5634843e-4. In the five pull requests where the agents compared
   the two (#130, #144, #155, #168, #178) the complex-side saving is a little above the kappa of the title.
+  In #193 it is 5 percent above: complex side 7.009184e-4, kappa 6.647872e-4.
 - No outside checker was run and no outside Lean development was built. The agents read sources and recomputed
-  some arithmetic.
+  some arithmetic. For the second result they also loaded published data files into their own programs
+  (section 1).
 - People are named by their GitHub handles, as in the sources.
 - "Not found" means: searched for and not found. It does not mean "does not exist".
 - The field moved every 10 to 30 minutes while this was written. Section 5 is out of date by the time you read it.
 
-"Saving" is 1 - z in a bound n (log n)^z. My figure is 5.399225e-4 (whole-block accounting), a Lean theorem
-for the Walsh-Hadamard statement described in the README.
+"Saving" is 1 - z in a bound n (log n)^z. My figures are 7.474547e-4 (the second result) and 5.399225e-4 (the
+first), both in whole-block accounting, both Lean theorems for the Walsh-Hadamard statement described in the
+README.
 
 ## 1. What this work takes from others
 
@@ -37,16 +42,67 @@ tensor savings and exact Fourier circuits" and "An explicit power saving for the
 transform" (OpenAI, 25 September 2026, in `preprints/` of openai/math). Section 7 reproduces their BibTeX
 entries. OpenAI did not write, review or endorse this repository.
 
-**Whole-residual batching** (the accounting behind my headline figure). Community follow-ups to OpenAI's
+**The helper circuit of the second result: the community's paired-cube circuit, in the state of pull request
+#193 to [CrocSwap/integer-mult-bounds](https://github.com/CrocSwap/integer-mult-bounds)** (Apache-2.0). This is
+the largest thing the second result takes from others. The circuit is theirs in every part:
+
+| part | author and pull request | read at |
+|---|---|---|
+| paired cubes: ports on coordinate pairs, eight-port cubes, coordinate-star centres | icekylinx, [#144](https://github.com/CrocSwap/integer-mult-bounds/pull/144), created 2026-10-09 04:19:35, in main since 05:06 (through #149). Its notice credits an664, #128, for "the substantial completed-core workspace-sharing principle" and says that its queries "restrict the retained eumemic PR #117 positive DAG" | main `d1d6c07` |
+| modules, carrier links, frames and physical layer at p = 11 ("PR168 v4") | eumemic, [#168](https://github.com/CrocSwap/integer-mult-bounds/pull/168), created 08:22:16 | head `4a3c769` |
+| source-parity local word (a + b and a - b from the same two arrays) and source-assisted frame flow | icekylinx, [#184](https://github.com/CrocSwap/integer-mult-bounds/pull/184), created 11:32:18, closed | its body, and its files in the tree of #193 |
+| the same construction on the modules of #168 v4 | ikeboy, [#191](https://github.com/CrocSwap/integer-mult-bounds/pull/191), created 12:16:23 | head `15fa62d` |
+| hand-over pairs chosen so that no donor is erased; complex side 7.009184e-4 | ikeboy, [#193](https://github.com/CrocSwap/integer-mult-bounds/pull/193), created 12:36:35 | head `187e101` |
+
+- #193 gives its credits in these words: "icekylinx (PR184, with GPT-6 Astra and Codex assistance) for the
+  method, the tools and the bit supplier. eumemic (PR168 v4, with Claude assistance) for the query modules and
+  the physical layer. Package by Avi Eisenberg with Claude assistance." The citation file of the repository
+  (at `4a3c769`) asks to cite icekylinx's paired-cube construction, an664's completed-core sharing and the
+  constituent contributions, and names Douglas Colkitt as maintainer.
+- Techniques inside these data that earlier pull requests introduced: slot reuse at birth (#124, jamesyc; #143,
+  eumemic), operation-frame descent (#131, eumemic; #168), source gauges (#115 and #144, icekylinx), carrier
+  links (below).
+- The branch of #193 is stacked on #191, and #191 on #185 (rohanarun) with #184 merged. The shared-edge local
+  circuit of #181 (chafreaky) and its successors #186 (Dugongue) and #195 (huxint) are another line: by the
+  agents' rebuild the word of #193 has the local circuit of #184, not the shared-edge one.
+- **What the agents loaded.** They read the scripts as text and ran none. They loaded these published files as
+  data. From #168 (`4a3c769`): `references/paired-cube/sources/local_L1.json`,
+  `tmod_TE_TD_TB3_1_1_4_full_6.0617964e-4.json`, `pmod_J0_full_6.0666810e-4.json` and `qmod_climb3u_best.json`
+  in the same directory (modules), `references/paired-cube/selected-module/matching-arcs.json` (carrier links)
+  and `references/paired-cube/physical/frames.json` (frames). From #193 (`187e101`):
+  `research/source-assisted-v4/data/physical-pairs.json` (pairs). Thirteen files of #168 were compared by blob
+  hash with the tree of #193 and are equal.
+- **What the agents made of it.** Their own generator rebuilt the circuit and reproduced the published counts
+  of #193: 9,412 helper arrays, 12,052 roles per vertex, rank mass 794,112, and the histogram of block ranks. The
+  result is one explicit list of additions. #193 itself publishes a ledger (counts per frame) with local checks.
+  Each of its 1,980 in-place steps is written here as two ordinary additions.
+- **What was checked before, and what is checked here.** #193 states the scope of its own validation: "The
+  exact lift and the contract checks establish the local maps and the flow ledger. There is no globally
+  renumbered scalar transcript of the new complex word and no full Clifford/router replay." The Lean directory
+  of that repository (`formal/lean`, as read at `4a3c769`) holds certificate arithmetic and two algebraic facts
+  about the labels of an earlier circuit. As far as my scans found at the time of writing, the theorem of this
+  repository is the first full machine check of the #193 circuit, as rebuilt here. It checks the circuit inside
+  my layout and for my statement. It does not check their theorem on integer multiplication.
+- A newer pull request, [#196](https://github.com/CrocSwap/integer-mult-bounds/pull/196) (chafreaky, 13:23:42),
+  has another cube circuit with a smaller complex side (6.6549e-4) and claims a fuller check of it (both
+  directions, every dirty column).
+
+**The general frame lemma.** The statement is the community's: CrocSwap `notes/general-clifford-frames.tex`
+has it for arbitrary binary subspaces, "including degenerate subspaces", with one recursive child per nested
+step. Every outside figure above 7.4e-5 depends on it. Its Lean proof for the family-130 RAM model
+(`Work/GFrame`) is in this repository, with the two free adapter steps it needs and the proofs of their cost.
+
+**Whole-residual batching** (the accounting behind both of my figures). Community follow-ups to OpenAI's
 sibling result on integer multiplication apply the whole residual of a network edge, of rank r, as one
 recursive call. The earliest that the agents found is pull request #10 to
 [CrocSwap/integer-mult-bounds](https://github.com/CrocSwap/integer-mult-bounds) (icekylinx, 2026-10-08 08:26):
 "Apply whole complex residuals as recursive calls". shea256's manuscript (below) credits further complex
 batching to eumemic (#15). The "whole-block" recursion of this repository is that idea, proved in Lean for the
-family-130 RAM model and for runs of unit moves only. The Lean development of danadran01 (section 5) formalises
+family-130 RAM model: in the first engine for runs of unit moves, in the generalised engine for blocks between
+nested subspaces. The Lean development of danadran01 (section 5) formalises
 the same accounting under the name "grouped recursion".
 
-**The helper circuit NStar3 and the two-stage word.** This work takes them from round six of
+**The helper circuit NStar3 and the two-stage word** (first result). The first result takes them from round six of
 [Swapnil-jain/integer-mult-kappa](https://github.com/Swapnil-jain/integer-mult-kappa) (NStar3, two stages,
 copied centres), the "complex side" network of that integer-multiplication follow-up. That repository names its
 own sources: it builds on OpenAI's "Integer multiplication below n log n" and on the framework of the CrocSwap
@@ -59,23 +115,26 @@ network to the family-130 RAM model in
 `bf38c00`) and proposed a saving of 7.3e-5. Checked by its author with a written argument and finite Python
 checks, not in Lean. Its README describes the network as "Swapnil Jain's round-six complex network, building on
 work by Douglas Colkitt, icekylinx, eumemic, and Aurel Prosz / Paureel". The agents put that network into
-Lean before they changed the layout. The helper circuit in this repository still has NStar3's sums as its
+Lean before they changed the layout. The helper circuit of the first result still has NStar3's sums as its
 starting point.
 
 **Carrier links.** At an addition n = a + b one argument slot becomes the sum and the other rests. A link hands
 the resting slot to a later use of the same value, which saves one helper array. The idea is from CrocSwap pull
 requests #24, #32 and #36 (icekylinx), with a weighted version in #44 (rohanarun) and link-friendly circuits in
 #53 and #62 (ikeboy). Checked by their authors in Python and C++. The agents applied it to NStar3 with a maximum
-matching.
+matching. The circuit of the second result comes with its authors' own carrier links (`matching-arcs.json` of
+#168).
 
 ## 2. Ideas developed here that others published first
+
+This section is about the first result.
 
 Four of the design steps in the README were worked out inside my project. Its first scan (2026-10-08, about
 21:10) found none of them in public, and the project did not look outside again until the second scan. In that
 interval others published the work below. Nothing of mine was published. The outside work is therefore
 independent of mine, and **priority in the public record is theirs.** I claim none.
 
-| idea (README, section 5) | public record | how close |
+| idea (README, section 6) | public record | how close |
 |---|---|---|
 | Layout on a group of isometries with label dimension linear in h; a third stage | CrocSwap [#130](https://github.com/CrocSwap/integer-mult-bounds/pull/130) (icekylinx), created 2026-10-09 02:29:02, merged 05:06:02: "three invocation banks on a regular Cayley cover in dimension `3h-2`" | same idea, three stages |
 | One helper set for all stages | [#137](https://github.com/CrocSwap/integer-mult-bounds/pull/137) (eumemic), 03:18:33, open; [#144](https://github.com/CrocSwap/integer-mult-bounds/pull/144) (icekylinx), 04:19:35, merged 05:06. Inside one stage: #128 (an664), 01:35:20 | same idea. In theirs each core finishes its clean-up before the next stage starts |
@@ -95,49 +154,63 @@ comparator at 02:38 on 2026-10-09, nine minutes after #130 appeared; the one wit
   The nearest outside relative is "lockstep" pairing (#132, ikeboy), which its author withdrew as invalid.
 - **A Lean proof at this exponent.** The largest saving in an outside Lean theorem that the agents found is 3.2e-6
   (section 5, row D).
+- **A Lean proof of the general frame lemma**, and **a machine check of a whole circuit of the paired-cube
+  family** (section 1). Added with the second result.
 
-Both statements are as of 10:39 on 2026-10-09 and are limited by what the scans covered (section 6). The
-re-read at 11:46 looked at the titles of the newer pull requests only and found no new commit in the
-repositories of Swapnil-jain, eumemic, danadran01 and shea256.
+The first two statements are as of 10:39 on 2026-10-09 and are limited by what the scans covered (section 6).
+The re-read at 11:46 looked at the titles of the newer pull requests only and found no new commit in the
+repositories of Swapnil-jain, eumemic, danadran01 and shea256. The later reads for the second result (13:17 to
+14:37) were made to rebuild the circuit, not to search; they reported no five-stage layout and no Lean proof of
+these kinds, and the repositories of eumemic and danadran01 still had no new commit at 14:37. The last look
+(16:06, section 5) read the bodies of #193 to #207: none describes a five-stage layout or a Lean check
+of its circuit, and those two repositories still had no new commit. All three statements are therefore "as
+far as my scans found at the time of writing".
 
-## 4. Why the larger outside figures are not like for like
+## 4. How my figures compare with the outside figures
 
-Python-certified outside figures are larger than mine (section 5, row A). The comparison needs care.
-
-- Theirs are per-vertex histograms certified by Python programs inside the integer-multiplication project. Nobody
-  has turned the figures above mine into a Fourier theorem, and none is in Lean. (Row C does it on paper for
-  the smaller figure of row B.) Mine is a Lean theorem of a transform statement.
-- **Their counts rest on a frame lemma for arbitrary binary subspaces, "including degenerate subspaces"**
-  (CrocSwap `notes/general-clifford-frames.tex`), with one recursive child per nested step. Every outside figure
-  above 7.4e-5 depends on it. The Lean framework of this repository does not have that lemma.
-- **A first look at that lemma.** On 2026-10-09, from about 11:10 to 12:10, the agents examined it: three
-  reports, three counter-checks and a summary, by derivations on paper and tests on small arrays. The lemma has
-  not been proved in Lean, and none of this work is in this repository. What they report:
+- **Second result.** My 7.474547e-4 and the complex side of #193, 7.009184e-4, are the same circuit in two
+  layouts: their word has three stages, mine has five (the bridged word, section 3). By the agents' computation
+  the circuit of #193 in a three-stage word gives 7.0091e-4, their figure. So the difference is the layout and
+  nothing else. Mine is a Lean theorem of a transform statement. Theirs is a figure inside the
+  integer-multiplication project, certified by Python programs; as far as my scans found, it has not been
+  turned into a Fourier theorem. Their headline, kappa, is a further and smaller number (rules above).
+- **First result.** My 5.399225e-4 rests on my project's own circuit, without the general frame lemma. Outside
+  figures passed it at 06:40 on 2026-10-09 (section 5).
+- **The frame lemma.** Their counts rest on a frame lemma for arbitrary binary subspaces, "including degenerate
+  subspaces" (CrocSwap `notes/general-clifford-frames.tex`), with one recursive child per nested step. When the
+  first text was written the Lean framework of this repository did not have that lemma. A first look by the
+  agents (2026-10-09, about 11:10 to 12:10: three reports, three counter-checks and a summary, by derivations
+  on paper and tests on small arrays) reported, as the first text said:
   - The lemma itself held up, on paper and in tests on small arrays.
-  - The recursion engine of this repository does not need unit directions. The layers above it do: its label
+  - The recursion engine of the first result does not need unit directions. The layers above it do: its label
     calculus and its certificate checker work with unit directions and orthogonal projectors.
   - The lemma does not fit those layers as they are. For degenerate subspaces the outside frames are not in the
-    family of frames that this framework uses. Using them needs new free operations (a permutation of addresses
-    and a phase that depends on the address), whose cost in the RAM model is argued on paper only.
+    family of frames that those layers use. Using them needs new free operations (a permutation of addresses
+    and a phase that depends on the address), whose cost in the RAM model was then argued on paper only.
   - A substitute that stays inside that family of frames (another dot product) was tried on the frames
     published with #168. It works for one part of that circuit. With one dot product for the whole circuit
     it cannot work for the helper frames.
   - The lemma is necessary for the outside figures and not sufficient. The 6.56e-4 design also uses four further
-    rules that the engine and checker here do not have, among them entrance gauges and slot reuse at birth. By
+    rules that the first engine and checker do not have, among them entrance gauges and slot reuse at birth. By
     the agents' count, 13,416 of the 15,149 operation frames published with #168 are degenerate subspaces.
 
-  Whether the lemma and those rules can be proved in this framework is open. It is the next thing I plan to try.
+  What followed is in the README, section 5. The lemma is now proved in Lean here, with the two free operations
+  and their cost, in a generalised engine and a new checker beside the old ones. In the certificate format of
+  the second result the further rules that #193 uses are ordinary additions and tests of the checker.
 - Their stock of arrays is indexed by the whole orthogonal group O(66,2), described in writing and never built.
-  Mine is indexed by O(80,2) in the same way: defined in Lean, never enumerated.
-- Outside figures use whole-residual accounting. They compare with my 5.399225e-4, not with my per-rank
+  Mine is indexed by O(110,2) for the second result and O(80,2) for the first, in the same way: defined in Lean,
+  never enumerated.
+- Outside figures use whole-residual accounting. They compare with my whole-block figures, not with my per-rank
   3.155781e-4. The agents found no outside per-rank figure.
 - In the other direction: rows C and D below are about the Fourier transform of every length. Mine is about the
   Walsh-Hadamard transform.
 
-Outside techniques that this work does not use: slot reuse at birth (#124, #143), operation-frame descent in
-bundles (#131, #168, #178), partial and pair-aware source gauges (#115, #144), extended carrier matching (#162),
-merged output reads (#161), the paired-cube producer at p = 11, and the transfer to every length without
-padding to a power of two (eumemic, danadran01).
+Outside techniques and this work. The first result uses none of the following; the second uses those that are
+in the data of #193: slot reuse at birth (#124, #143), operation-frame descent in bundles (#131, #168, #178),
+partial and pair-aware source gauges (#115, #144), extended carrier matching (#162), merged output reads
+(#161), the paired-cube producer at p = 11. Used by neither: terminal sinks (#166; #193 has none), the bit
+side of the outside networks, and the transfer to every length without padding to a power of two (eumemic,
+danadran01).
 
 ## 5. Where the other results stood on 2026-10-09
 
@@ -152,7 +225,8 @@ padding to a power of two (eumemic, danadran01).
 | C | every saving below 4.856e-4, with an extra (log log n) factor | [eumemic/exact-dft-bounds](https://github.com/eumemic/exact-dft-bounds), `6f87d1a`, first commit 08:33. Fourier transform of every length, and convolution | "a paper proof with an exact finite certificate, and it is not formally verified" |
 | D | 3.2e-6 | [danadran01/exact-dft-power-saving](https://github.com/danadran01/exact-dft-power-saving), `1a7b25e`, 03:48. Fourier transform of every length, on OpenAI's own `DFTProgram` and `TimeBounds` | **Lean.** Their record: a clean build, standard axioms only, `leanchecker`. A comparator challenge file is shipped; no comparator run is reported. **It was not built here** |
 | E | 7.3e-5; 7.4026e-5; 5.1e-10; conditional 1e-9 | shea256; sobakadog8; teal-sea; a fork by whyihaveyou. Family 130 | written arguments or Python; the last one Lean arithmetic with open premises |
-| | 5.399225e-4 | this repository, Walsh-Hadamard statement, 09:59 | Lean, comparator, audits by AI agents; limits in the README |
+| | 5.399225e-4 | this repository, first result, Walsh-Hadamard statement, 09:59 | Lean, comparator, audits by AI agents; limits in the README |
+| | 7.474547e-4 | this repository, second result, the same statement, with the circuit of #193, 15:14 | Lean, comparator, audits by AI agents; limits in the README |
 
 **Titles only, state at 11:46.** Pull requests #179 to #185 had appeared. The agents read their titles, not
 their bodies, so the figures are kappa and not complex-side savings: 6.5592e-4 (#179, chafreaky, open, 10:41),
@@ -173,11 +247,45 @@ huxint, open, 13:00), both kappa from titles. Swapnil-jain/integer-mult-kappa pu
 (`1a580dc`, "conditional witness kappa = 2^-10.547"). The repositories of rows C and D had no new commit. None
 of this was read beyond the front page, the titles and the commit subjects.
 
+**State at 14:02, pull requests #179 to #198 read by their bodies or certificates.** Complex-side savings as
+their authors state them (the agents recomputed most of them from the published block lists): 6.5635e-4 (#179,
+chafreaky), 6.6219e-4 (#181, chafreaky), 6.5708e-4 (#184, icekylinx, closed), 6.6232e-4 (#186, Dugongue, the
+hub's reviewed result), 6.6307e-4 (#191, ikeboy), **7.009184e-4 (#193, ikeboy)**, 6.6309e-4 (#195, huxint),
+6.6549e-4 (#196, chafreaky). #194, #197 and #198 change only the bit side and keep the complex word of #193;
+the largest kappa in a title was 6.7608e-4 (#197, evmckinney9). Swapnil-jain round eleven: complex side
+6.7147e-4. #192 (DaysSky) states a ceiling of 7.010e-4 for the frame layouts of #168's word; #193 says that it
+"does not apply to this word".
+
+**State at 14:37, titles only.** Pull requests #199 to #201 had appeared: kappa 6.678525e-4 (#199,
+maxime-fleury), a bit-side figure (#200, chafreaky, a draft) and "A κ ceiling of 2.5592e-3 for every word on
+#144's paired-cube design (no new κ)" (#201, DaysSky). The hub's main branch was at `3b6b668` (13:23).
+
+**State at 16:06, the last look before this text.** Read from 15:52 to 15:53 and again from 16:06 to 16:07:
+the list of the 30 newest pull requests, the bodies of #193 to #207 (#207 at 16:06, the others at 15:52), the
+front page of the hub and the latest commits of three repositories. Pull requests up to #207 existed. Kappa in
+the titles of the newest ones: 6.768823e-4 (#202, chafreaky, open, 14:39), 6.773148e-4 (#204, maxime-fleury,
+open, 15:13; #199 now states the same figure), 6.830613e-4 (#205, rohanarun, open, 15:46), 6.830611e-4 (#206,
+EcmaXp, created 15:49, closed by 15:52), 6.831905e-4 (#207, Dugongue, open, 16:00). #203 (huxint, 15:05) is a
+study of barriers with no new figure. **The largest complex-side saving stated in any of these bodies was still
+7.009184e-4**, the circuit of #193: #194, #197, #202, #204, #205, #206 and #207 keep it (they call it #193's
+"complex supplier"; #207 writes its saving as 700918443859411/10^18 and says that it "makes no new
+Lean-certification or practical-speedup claim") and change the bit side; #196 and #200 have a complex word of
+their own at 6.6549e-4. #201 states a ceiling, not a result (complex side below 2.5657e-3 for every word on
+#144's design). The hub's main branch was still at `3b6b668` (13:23); its front page named #186 (Dugongue) as
+the current reviewed result, kappa = 6.61885549259598e-4. No new commit in danadran01/exact-dft-power-saving
+(`1a7b25e`, 03:48, the Lean theorem with saving 3.2e-6) or in eumemic/exact-dft-bounds (`6f87d1a`, 09:34).
+Swapnil-jain/integer-mult-kappa was still at round eleven (`1a580dc`, 13:03); its Lean files check certificate
+arithmetic. None of the bodies of #193 to #207 describes a Lean check of its circuit or a five-stage layout. So
+at that time the agents knew of no outside complex-side figure above my 7.474547e-4 and of no outside Lean
+theorem for a Fourier or Walsh-Hadamard statement with a saving above 3.2e-6.
+
 How the largest outside complex-side claim for this network family moved during the night (all
 Python-certified claims): 7.4e-5 (first scan) -> 3.148e-4 (#130, 02:29) -> 4.139e-4 (#137, 03:18) ->
 4.856569e-4 (#144, 04:19) -> 5.1135e-4 (#152, 06:05) -> 5.514156e-4 (#155, 06:40, the first above my final
 figure; closed at 06:54 as superseded by #157) -> 5.6228e-4 (#157) -> 5.8857e-4 (#161, 07:23) -> 6.5632e-4
-(#168, 10:09) -> 6.5635e-4 (#178, 10:29).
+(#168, 10:09) -> 6.5635e-4 (#178, 10:29) -> 6.6219e-4 (#181, 11:10) -> 6.6232e-4 (#186, 11:54) -> 6.6307e-4
+(#191, 12:16) -> 7.009184e-4 (#193, 12:36). The last four are among the pull requests that the agents read in
+full; others of those hours were read by title only.
 
 The agents found no lower bound or impossibility result for this problem in public sources. Only limits for
 particular routes exist.
@@ -191,12 +299,20 @@ particular routes exist.
 - A third look by one reviewing agent (11:46 to 11:55): 36 unauthenticated reads of the public GitHub API. It
   confirmed the number, author and time of 20 of the pull requests named in this file and read the titles of
   the newest ones.
+- Further reads for the second result, all read-only: at 13:17 one shallow `git fetch` of the heads of #181,
+  #186, #191, #192, #193 and #194 and of main (`27d82eb`), and the bodies of eight pull requests; at 14:02 the
+  bodies of #192 to #198 and the certificate of #196; at 14:37 the list of titles up to #201; at 14:42 author
+  and title of eight older pull requests; at 15:52 and again at 16:06 the list of the 30 newest pull
+  requests, the bodies of #193 to #207, the front page of the hub and the latest commits of three repositories
+  (section 5). Scripts were read as text and none was run. Published JSON files were loaded as data
+  (section 1).
 - Covered: openai/math and its forks (every branch of the roughly 65 forks pushed since 2026-10-07); the
-  CrocSwap pull requests up to #178 (#169 to #177 by title and summary only); the repositories named above.
+  CrocSwap pull requests up to #178 (#169 to #177 by title and summary only) and those named in the line
+  above; the repositories named above.
 - Not reached: X / Twitter, the openai.com page, a paywalled newspaper article. GitHub code search does not
   index day-old repositories. Private repositories cannot be seen.
-- The medium-confidence part: whether the larger outside claims are correct. The agents checked their arithmetic
-  only.
+- The medium-confidence part: whether the outside claims are correct. The agents checked their arithmetic
+  only. The exception is the circuit of #193, which the second result checks in Lean as rebuilt here.
 - If you know of work that should be credited here and is not, please open an issue at https://github.com/jacobalansussman/wht-power-saving-lean.
 
 ## 7. How to cite OpenAI's manuscripts

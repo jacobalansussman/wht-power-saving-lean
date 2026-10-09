@@ -8,6 +8,10 @@ endorse it. The package name "OAI" and the namespace "OAI.PowerSaving" are
 those of openai/math and are kept only because the new files extend that
 development.
 
+This repository is not a project of CrocSwap/integer-mult-bounds either. Its
+authors did not write, review or endorse it. Section 6 says what is taken
+from their repository.
+
 This repository contains files from, and files derived from, the repository
 "openai/math" (https://github.com/openai/math), family 130, "Exact Fourier
 transforms below n log n", at commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.
@@ -23,11 +27,13 @@ to the authors of openai/math (OpenAI).
 
 2. Files that contain upstream text.
    - Work/CarrierCheck/ChallengeB2Ke16x.lean,
-     Work/CarrierCheck/ChallengeB2Ke16xR.lean and the text template
-     tools/gen/templates/ChallengeB2L16x.lean.txt each contain, as their lines
-     22-270, lines 9-257 of lean/ComparatorChallenges/UniformFourier.lean of
-     openai/math (the RAM cost model), unchanged. Everything else in these
-     three files was written for this repository.
+     Work/CarrierCheck/ChallengeB2Ke16xR.lean,
+     Work/GCert/Data/ChallengeB2Gp193x.lean and the text template
+     tools/gen/templates/ChallengeB2L16x.lean.txt each contain, as their
+     lines 22-270, lines 9-257 of
+     lean/ComparatorChallenges/UniformFourier.lean of openai/math (the RAM cost
+     model), unchanged. Everything else in these files was written for this
+     repository.
    - Work/Scratch/Engine.lean and Work/Block/Engine.lean contain copies of
      proofs of openai/math, changed for this repository: sections 1, 2 and 5
      of Work/Scratch/Engine.lean are upstream proofs with the batch layout
@@ -57,15 +63,77 @@ to the authors of openai/math (OpenAI).
    certificate data and the generator scripts. See README.md, section 4.
 
 5. Ideas taken from other public work.
-   The network in this repository uses ideas published by others, among them
+   The network of the first result uses ideas published by others, among them
    the helper circuit "NStar3" (Swapnil-jain/integer-mult-kappa, which credits
    CrocSwap pull request #36 and Paureel for parts of it), its transfer to
    family 130 (shea256/fourier-transform-below-nlogn), and "carrier links" and
    "whole-residual batching" (pull requests to CrocSwap/integer-mult-bounds).
-   No file of those repositories is included here. One comment in
+   No file of Swapnil-jain/integer-mult-kappa or of
+   shea256/fourier-transform-below-nlogn is included here. One comment in
    Work/Scratch/Engine.lean quotes three counts reported in
-   Swapnil-jain/integer-mult-kappa and names that source. The credits, with
-   links, are in RELATED-WORK.md.
+   Swapnil-jain/integer-mult-kappa and names that source. The general frame
+   lemma that Work/GFrame proves is stated in
+   notes/general-clifford-frames.tex of CrocSwap/integer-mult-bounds; its Lean
+   proof was written for this repository. The credits, with links, are in
+   RELATED-WORK.md.
+
+6. Data derived from CrocSwap/integer-mult-bounds (second result).
+   The helper circuit of the second result is the paired-cube circuit of the
+   repository "CrocSwap/integer-mult-bounds"
+   (https://github.com/CrocSwap/integer-mult-bounds), in the state of its pull
+   request #193. It is the design of that community: icekylinx (pull requests
+   #144 and #184), eumemic (#168, and #117 behind its modules), ikeboy /
+   Avi Eisenberg (#191 and #193), with an664 (#128) credited there for the
+   workspace-sharing principle. That repository is published under the Apache
+   License, Version 2.0 (the same licence text as the file LICENSE). Its
+   NOTICE file begins "A sharper exponent for integer multiplication /
+   Copyright 2026 Douglas Colkitt" and says that the community release "is
+   not solely Douglas Colkitt's work". A complete copy of that NOTICE file, as
+   it is at the head of pull request #193, is in
+   third-party/CrocSwap-integer-mult-bounds/NOTICE.
+
+   The data were taken from these files of that repository. They were loaded
+   as data by programs written for this repository; no program of that
+   repository was run, and none is included here.
+   - at the head of pull request #168 (eumemic),
+     4a3c769e5c5430e7114c4d3e099ff34664677f17:
+       references/paired-cube/sources/local_L1.json
+       references/paired-cube/sources/tmod_TE_TD_TB3_1_1_4_full_6.0617964e-4.json
+       references/paired-cube/sources/pmod_J0_full_6.0666810e-4.json
+       references/paired-cube/sources/qmod_climb3u_best.json
+       references/paired-cube/selected-module/matching-arcs.json
+       references/paired-cube/physical/frames.json
+   - at the head of pull request #193 (ikeboy),
+     187e1010ac8b259af8e9b5166f68b64bc27b4b47:
+       research/source-assisted-v4/data/physical-pairs.json
+
+   Files of this repository that contain data derived from them:
+   tools/certificate/gcert1-p11-pr193.json.gz and the Lean data modules
+   generated from it, Work/GCert/Data/Gen/P193*.lean and the files they import
+   from Work/GCert/Data/Gen/P193/; its block counts are also in the generated
+   modules Work/GCert/Data/P193Price.lean, RateB2Gp193.lean, RateB2Gp193x.lean
+   and InstB2Gp193.lean.
+   Changes made: the circuit was rebuilt from those data as one explicit,
+   renumbered list of additions with a table of frames, in the certificate
+   format "gcert/1" of this repository; its 1,980 in-place steps were written
+   as pairs of additions with rescaled coefficients; the Lean data modules
+   were generated from that list. No file of that repository is included
+   unchanged, except the copy of its NOTICE file named above.
+
+   Notices of that NOTICE file that pertain to these data, quoted:
+
+     Paired-cube and shared-core extension, 9 October 2026
+     Copyright 2026 icekylinx
+
+     Source-assisted common-frame extension (2026-10-09)
+     Copyright 2026 icekylinx. Apache-2.0.
+     Substantial dependency: eumemic PR168,
+     fd25adb7fbaa12ee761d02c733c54d1d2a7687ee
+
+   The full text of both notices, and the notices of the work they build on,
+   are in the copy named above. The credits, with links and with the words of
+   pull request #193 about its own sources, are in README.md ("Whose circuit
+   this is") and in RELATED-WORK.md, section 1.
 
 Not included in this repository and fetched by the build: Mathlib
 (https://github.com/leanprover-community/mathlib4, Apache License 2.0) and its
