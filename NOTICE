@@ -1,0 +1,73 @@
+Walsh-Hadamard power saving (wht-power-saving-lean)
+Copyright 2026 Jacob Sussman
+
+Repository: https://github.com/jacobalansussman/wht-power-saving-lean
+
+This repository is not a project of OpenAI. OpenAI did not write, review or
+endorse it. The package name "OAI" and the namespace "OAI.PowerSaving" are
+those of openai/math and are kept only because the new files extend that
+development.
+
+This repository contains files from, and files derived from, the repository
+"openai/math" (https://github.com/openai/math), family 130, "Exact Fourier
+transforms below n log n", at commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.
+That repository is published under the Apache License, Version 2.0. A copy of
+the licence is in the file LICENSE. The upstream repository has no NOTICE file
+and its licence text names no copyright holder; the files are attributed here
+to the authors of openai/math (OpenAI).
+
+1. Unmodified upstream files.
+   The 89 files under OAI/Computability/ are byte-for-byte copies of the files
+   with the same paths under lean/ in openai/math at the commit above. They
+   have not been changed.
+
+2. Files that contain upstream text.
+   - Work/CarrierCheck/ChallengeB2Ke16x.lean,
+     Work/CarrierCheck/ChallengeB2Ke16xR.lean and the text template
+     tools/gen/templates/ChallengeB2L16x.lean.txt each contain, as their lines
+     22-270, lines 9-257 of lean/ComparatorChallenges/UniformFourier.lean of
+     openai/math (the RAM cost model), unchanged. Everything else in these
+     three files was written for this repository.
+   - Work/Scratch/Engine.lean and Work/Block/Engine.lean contain copies of
+     proofs of openai/math, changed for this repository: sections 1, 2 and 5
+     of Work/Scratch/Engine.lean are upstream proofs with the batch layout
+     renamed, and both files contain a copy of the private upstream theorem
+     "hills_project" (lean/OAI/Computability/FourierTransform/
+     TensorProgram.lean) with its envelope generalised. The comments in the
+     two files mark these places.
+   - lakefile.lean is adapted from lean/lakefile.lean of openai/math: the same
+     package name, toolchain, package option and Mathlib pin; every other
+     dependency was removed and the libraries of this repository were added.
+     lean-toolchain is a byte-for-byte copy of lean/lean-toolchain.
+     lake-manifest.json lists Mathlib and its dependencies at the revisions of
+     lean/lake-manifest.json.
+   - RELATED-WORK.md reproduces the BibTeX entries of two manuscripts of
+     openai/math.
+
+3. New files that build on upstream proofs.
+   The other files under WHTCheck/ and Work/ were written for this
+   repository. They import the upstream files, and several of them generalise
+   or adapt proofs of upstream files (for example Work/Block/Recursion.lean,
+   which says so in its header). They are changes and additions made for this
+   repository and are not part of openai/math.
+
+4. How the new files were made.
+   Jacob Sussman made the new files on 2026-10-08 and 2026-10-09 by directing
+   a team of AI agents (Claude). The agents wrote the new Lean files, the
+   certificate data and the generator scripts. See README.md, section 4.
+
+5. Ideas taken from other public work.
+   The network in this repository uses ideas published by others, among them
+   the helper circuit "NStar3" (Swapnil-jain/integer-mult-kappa, which credits
+   CrocSwap pull request #36 and Paureel for parts of it), its transfer to
+   family 130 (shea256/fourier-transform-below-nlogn), and "carrier links" and
+   "whole-residual batching" (pull requests to CrocSwap/integer-mult-bounds).
+   No file of those repositories is included here. One comment in
+   Work/Scratch/Engine.lean quotes three counts reported in
+   Swapnil-jain/integer-mult-kappa and names that source. The credits, with
+   links, are in RELATED-WORK.md.
+
+Not included in this repository and fetched by the build: Mathlib
+(https://github.com/leanprover-community/mathlib4, Apache License 2.0) and its
+dependencies. The comparator (https://github.com/leanprover/comparator) is a
+separate tool and is not included.

@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Work.CarrierCheck.ChallengeB2Ke16xR",
+  "solution_module": "Work.CarrierCheck.SolutionB2Ke16xR",
+  "theorem_names": [
+    "OAI.PowerSaving.WHT.wht_main_rank_B2Ke16x"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}
