@@ -1,33 +1,49 @@
-# Walsh-Hadamard transform in O(n (log n)^z), z = 1 - 7.474547e-4, checked in Lean
+# Discrete Fourier transform of every length in O(n (log n)^z), z = 1 - 7.474546e-4, checked in Lean
 
 Author: Jacob Sussman. Repository: https://github.com/jacobalansussman/wht-power-saving-lean. Licence: Apache-2.0 ([LICENSE](LICENSE), [NOTICE](NOTICE)).
-Text of 2026-10-09, second revision. The first text, of 2026-10-09, is commit `024f763`.
+Text of 2026-10-09, third revision. The first text is commit `024f763`; the second is commit `fdfb781`, with its
+note on open directions in `e0bbe1c`; all of 2026-10-09.
 
-A Lean 4 proof that one fixed program computes the Walsh-Hadamard transform of every length n = 2^k in
+A Lean 4 proof that one fixed program computes the discrete Fourier transform of every length n in
 O(n (log n)^z) operations with z < 1, in the exact-arithmetic RAM cost model of OpenAI's "Exact Fourier
 transforms below n log n" ([openai/math](https://github.com/openai/math), family 130, commit `fd4aeeb`).
-OpenAI's result is about the discrete Fourier transform. This repository builds on OpenAI's Lean files, applies
-their method to the Walsh-Hadamard transform and proves a larger saving 1 - z for it: 7.474547e-4, where
-OpenAI's own tensor engine gives 2/10^11 for the same statement.
+This is OpenAI's own headline statement. The saving 1 - z proved here is 7.474546e-4, where OpenAI's
+statement has 10^-13. The statement file is OpenAI's challenge file with the exponent replaced (section 1
+names the two other differences, a comment and one letter on seven names). The same file states convolution,
+and that is proved as well. The step from the lengths 2^k to every length is OpenAI's reduction, repeated here
+with one constant changed ("Whose reduction this is", below).
 
-**This is the second result of this repository.** The first, 5.399225e-4, was published here on the morning of
-2026-10-09. It is still in the repository and still stands (section 1, at the end). The second is 1.384
-times the first.
+**This is the third result of this repository. The first two are its siblings.** They are for the
+Walsh-Hadamard transform of the lengths n = 2^k: saving 7.474547e-4 (the second result) and 5.399225e-4 (the
+first), both published here on 2026-10-09. They are still in the repository and still stand (section 1). The
+Fourier theorem and the second result are two corollaries of one kernel program, a program that applies the
+k-fold tensor power of one fixed 2-by-2 matrix to an array of length 2^k, and they rest on the same
+certificate. The first result comes from a kernel program of the same kind with an earlier network.
 
 **This is not an OpenAI project.** OpenAI did not write, review or endorse it. The 89 files under `OAI/` are
-OpenAI's, unmodified. The Lake package name `OAI` and the namespace `OAI.PowerSaving` are theirs and are kept
-only because the new modules extend their development.
+OpenAI's, unmodified. Under `Work/Fourier/` there are copies of OpenAI's files with changes: each says so in
+its first lines, and [NOTICE](NOTICE), section 7, lists them. The Lake package name `OAI` and the namespace
+`OAI.PowerSaving` are theirs and are kept only because the new modules extend their development.
 
 I built this on 8 and 9 October 2026 with a team of AI agents (Claude) that I directed (section 4): the first
-result in about a day, the second in the hours after it. Every proof here is checked by Lean's kernel. The new
-proofs have not yet had a line-by-line human review, and I would welcome one. Please read section 2 before
-quoting the number. Credits and the relation to other work: [RELATED-WORK.md](RELATED-WORK.md).
+result in about a day, the second in the hours after it, the third later the same day. Every proof here is
+checked by
+Lean's kernel. The new proofs have not yet had a line-by-line human review, and I would welcome one. Please
+read section 2 before quoting the number. Credits and the relation to other work: [RELATED-WORK.md](RELATED-WORK.md).
 
 ## What is new here
 
-- **The largest saving for this problem that I could find anywhere at the time of writing, and it is
-  machine-checked:** 7.474547e-4. The largest outside figure for the same quantity (the "complex side" of the
-  community's networks) was 7.009184e-4 (pull request #193; read again at 16:06 UTC), certified by scripts.
+- **A machine-checked proof of OpenAI's own headline statement, the discrete Fourier transform of every
+  length, with saving 7.474546e-4.** OpenAI's statement has 10^-13. The statement file is OpenAI's challenge
+  file with the exponent replaced (section 1). As far as my scans found at the time of writing, the largest
+  saving in an outside Lean proof of that statement was 3.2e-6
+  ([danadran01/exact-dft-power-saving](https://github.com/danadran01/exact-dft-power-saving); not built
+  here), and the largest in an outside written argument was 6.7e-4 (shea256; conditional, not
+  formalised).
+- **The largest saving for the kernel program and for the Walsh-Hadamard transform that I could find anywhere
+  at the time of writing, and it is machine-checked:** 7.474547e-4. The largest outside figure for the same
+  quantity (the "complex side" of the community's networks) was 7.009184e-4
+  (pull request #193; read again at 18:11 UTC), certified by scripts.
 - **A five-stage "bridged" layout that, as far as my scans found at the time of writing, is in no other
   work.** The same helper circuit gives 7.009e-4 in the three-stage layout its authors use and 7.474547e-4 in
   this one.
@@ -40,15 +56,82 @@ quoting the number. Credits and the relation to other work: [RELATED-WORK.md](RE
   from their published data (section 3 says what that rests on). Its own validation was local; its author's
   words are quoted in the next section.
 
-The helper circuit itself is not mine: it is the work of the people credited in the next section. Section 5
-says in plain words what each of these items is. "My scans" are the read-only looks at public sources by the
-AI agents I directed; RELATED-WORK.md says what they covered and when, the last one at 16:06 UTC on
+Two things behind this list are not mine. The step from the kernel program to every length is OpenAI's
+reduction, and the helper circuit is the community's. The next two sections give the credit. Section 5 says in
+plain words what each of these items is. "My scans" are the read-only looks at public sources by the AI agents
+I directed; RELATED-WORK.md says what they covered and when, the last one at 18:11 UTC on
 2026-10-09.
+
+## Whose reduction this is
+
+The step from the kernel program to the Fourier transform of every length is OpenAI's, in every part. Their
+Lean proof uses the network through one theorem (`hills_program` in their `TensorProgram.lean`), and that
+theorem is used in one place. The generalised engine of this repository proves the same sentence with my
+exponent in place of theirs. So the third result needed no new mathematics after the kernel program:
+
+- **OpenAI's 11 files between that theorem and their final statement are repeated here with one constant
+  changed: the exponent.** The files are `SectorAlgorithm`, `SynchronizedAlgorithm`, `WorkingTransform`,
+  `WorkingCompiler`, `WorkingPreparation`, `ArbitraryLength`, `TransformProgram`, `ConvolutionProgram`,
+  `UniformBounds`, `Asymptotics` and `Main` (1,825 lines in OpenAI's repository). The copies are under
+  `Work/Fourier/`. In them OpenAI's exponent `alpha` = 1 - 2/10^11 is `alphaZ` = 1 - 7474547/10^10, the work
+  bound `hills` that is defined from it is `hillsZ`, the one use of `hills_program` is `hillsZ_program`, and
+  the exponent of the final statement, 1 - 1/10^13, is 1 - 7474546/10^10. Every declaration of the copies has
+  the letter `Z` in its name (115 of the 167 at the end of their own name, the other 52 on the name of the
+  declaration they belong to, as in `WeftZ.transfer`), so that Lean cannot take OpenAI's original for the copy, and the
+  import lines point to the copies. Two further edits were needed, and the first comment of each file names its
+  own: in the copy of `Main` the same constant stands once as a literal number, 2/10^11, and is replaced there
+  too (the two final theorems of that copy also received a comment of their own); and in the copy of
+  `SynchronizedAlgorithm` the name `canopy` is written out as `Grove.canopy` in 5 places, because in the larger
+  environment of the copy the short name would mean another declaration. The script also put the letter on three
+  names inside OpenAI's comments; the comments are otherwise OpenAI's and describe OpenAI's network. The proofs
+  are OpenAI's. A script made the copies
+  (`tools/fourier/mkchain.py`). A twelfth small file, `Work/Fourier/Goal.lean`, repeats the five definitions
+  of OpenAI's `Goal.lean` that contain the exponent of the statement.
+- **The copies are marked as modified.** Each begins with a comment that names the OpenAI file it is derived
+  from and says what was changed, as the Apache-2.0 licence asks, and [NOTICE](NOTICE), section 7, lists
+  them. OpenAI's own files under `OAI/` are unmodified, as before, and the proof still imports them.
+- **New Lean for the third result: one file, `Work/Fourier/Seam.lean` (245 lines), written by the
+  agents.** It states the kernel program of the generalised engine in the form that OpenAI's reduction asks
+  for, and proves the few facts about the work bound that the reduction uses.
+
+The price of the reduction is a factor (log log n)^2 at the kernel's own exponent. That is why the Fourier
+saving is 7.474546e-4, just below the kernel's 7.474547e-4 (section 2, point 4).
+
+Others reached this statement before me, and the credit for that is theirs:
+
+- **danadran01**, [danadran01/exact-dft-power-saving](https://github.com/danadran01/exact-dft-power-saving)
+  (commit `1a7b25e`, 2026-10-09 03:48 UTC). As far as my scans found, the first Lean proof that improves
+  OpenAI's Fourier statement: saving 3.2e-6 on OpenAI's own `DFTProgram` and `TimeBounds`, with whole-block
+  recursion in Lean under the name "grouped recursion". Their development changes three of OpenAI's files,
+  all three at the theorem named above, and by their record the rest of OpenAI's chain then goes through as
+  it is. Their record reports a clean build, the standard axioms and `leanchecker`, and no comparator run.
+  It was not built here.
+- **shea256**, [shea256/fourier-transform-below-nlogn](https://github.com/shea256/fourier-transform-below-nlogn).
+  The first written transfer of a community network to this statement (first commit 8 October 2026; eumemic
+  writes of it: "That work has priority for the idea of the transfer"). Its figure was 6.7e-4 when
+  it was last read (18:11 UTC on 2026-10-09, commit `a2840b1`): "a proposed conditional transfer, supported by a
+  written argument and
+  finite checks". Not formalised.
+- **eumemic**, [eumemic/exact-dft-bounds](https://github.com/eumemic/exact-dft-bounds) (commit `6f87d1a`). A
+  written transfer with batched recursion: every saving below 4.856e-4, with an extra log log factor; in
+  their words "a paper proof with an exact finite certificate, and it is not formally verified". Their
+  README also states in writing the observation that the route here rests on: OpenAI's later sections use
+  the kernel theorem "only through three things: the bound O(2^k (k+1)^θ), the fact that only rational
+  constants and i are needed (their §5.3), and its word-size accounting".
+- The helper circuit behind the kernel program is the community's (next section), and the accounting is
+  their whole-residual batching (RELATED-WORK.md, section 1).
+
+What is mine in the third result: the kernel program at this exponent with its machine check (the second
+result), the seam file, and the machine check of the whole against OpenAI's statement.
+
+7.474546e-4 is 233 times danadran01's Lean figure, 1.54 times eumemic's written figure and 1.12
+times shea256's. The two written figures rest on other networks, and they were moving within hours while this
+was written.
 
 ## Whose circuit this is
 
 The helper circuit (section 6) is the part of the network that decides the size of the saving. In the second
-result it is the community's in every part:
+result, and so in the third, it is the community's in every part:
 
 - the paired-cube construction: icekylinx, [#144](https://github.com/CrocSwap/integer-mult-bounds/pull/144)
   (in their main branch since 2026-10-09 05:06 UTC). Its notice credits an664 (#128) for the workspace-sharing
@@ -85,7 +168,61 @@ about integer multiplication and has further parts that this repository does not
 7.474547e-4 is above the 7.009184e-4 that #193 states for the same circuit because the layout differs: their word
 has three stages, mine has five. By the agents' computation the same circuit in a three-stage word gives 7.0091e-4.
 
-## 1. The result
+## 1. The results
+
+### The Fourier transform of every length (third result)
+
+One fixed program, in the RAM model of OpenAI's proof, computes the discrete Fourier transform of every length
+n >= 1 in O(n (log n)^z) operations with z = 1 - 7474546/10^10, and in o(n log n). The saving 1 - z is
+7.474546e-4. The logarithm is the natural one, as in OpenAI's statement. A second fixed program does the same
+for convolution.
+
+    theorem OAI.PowerSaving.transform_mainZ : DFTGoalZ
+    theorem OAI.PowerSaving.convolution_mainZ : ConvGoalZ
+
+    def DFTGoalZ : Prop := ∃ order solve W, DFTProgram order solve W ∧ TimeBoundsZ W
+    def ConvGoalZ : Prop := ∃ order solve W, ConvProgram order solve W ∧ TimeBoundsZ W
+    def TimeBoundsZ (W : ℕ → ℕ) : Prop :=
+      let W' := fun n : ℕ => (W n : ℝ)
+      W' =O[atTop] paperTime ∧ W' =O[atTop] decimalTimeZ ∧ W' =o[atTop] nlogn
+    def decimalTimeZ (n : ℕ) : ℝ := (n:ℝ) * (Real.log (n:ℝ)) ^ decimalExponentZ
+    def decimalExponentZ : ℝ := 1 - 7474546/(10^(10:ℕ))
+
+Proof: module `Work.Fourier.Main`. The statement with every definition it depends on: module
+`Work.Fourier.UniformFourierChallenge` (`Work/Fourier/UniformFourierChallenge.lean`, 348 lines, imports only
+Mathlib). It is
+OpenAI's challenge file `lean/ComparatorChallenges/UniformFourier.lean` (336 lines) with three changes, which
+its first comment lists: that comment; the exponent, `1 - 1/(10^(13:ℕ))` in OpenAI's file; and the letter `Z`
+at the end of seven names (`decimalExponent`, `decimalTime`, `TimeBounds`, `DFTGoal`, `ConvGoal`,
+`transform_main`, `convolution_main`). The letter is forced: the proof imports OpenAI's unmodified files, in
+which these names carry OpenAI's values. Every other byte of the file is OpenAI's.
+
+- `DFTProgram order solve W`: `order` and `solve` are two programs of the RAM, `solve` in the mode without
+  general products. For every n >= 1, `order` computes from n a number d with 0 < d < 1024 n^3. For every
+  complex vector x of length n, the run of `solve` on (n, exp(2 pi i / d), x) is valid (no division by zero)
+  and returns exactly `dft n x` (entry j is the sum over k of exp(2 pi i j k / n) x_k). The work of `order`,
+  one unit for the root, and the work of `solve` are together at most W(n). Every integer the two programs
+  produce, and W(n) + 10(n+2), is at most (n+2)^c for one constant c. The root of unity is an input because
+  the RAM has no instruction that produces it.
+- `ConvProgram order solve W`: the same for the convolution of two vectors of length n (`conv n x y`, of
+  length 2n - 1), with `solve` in the mode with general products and a root of order below 1024 (2n-1)^3.
+- `TimeBoundsZ W`, three bounds as n grows: W(n) = O(n (log n)^(1 - d)) with d = 7.474546e-4
+  (`decimalTimeZ`; the one line whose value differs from OpenAI's, where d = 10^-13); W(n) =
+  O(n (log n)^theta (log log n)^(4 - theta)), the bound of OpenAI's manuscript with its own theta, about
+  1 - 2.1e-13 (`paperTime`, unchanged); and W(n) = o(n log n).
+
+The cost model and its caveats are the same for all three results. The paragraph "The cost model is OpenAI's,
+with its caveats" below states them.
+
+**Whose statement this is.** OpenAI's, with one number replaced. No definition in it was written for this
+repository.
+
+**Where the exponent comes from.** The kernel program runs at saving 7.474547e-4; the theorem of the second
+result rests on it. OpenAI's reduction turns it into a Fourier program whose work is
+O(n (log n)^z (log log n)^2) at that z. A pure power of log n therefore needs an exponent slightly above z,
+and the statement has the saving 7.474546e-4 (section 2, point 4).
+
+### The Walsh-Hadamard transform (second and first results)
 
 One fixed program, in the RAM model of OpenAI's proof, computes the Walsh-Hadamard transform of every length
 n = 2^k in O(n (log2 n + 1)^z) operations with z = 1 - 7474547/10^10 = 0.9992525453, and in o(n log n).
@@ -114,7 +251,7 @@ permits exact complex arithmetic and unrestricted coefficients, while integer va
 polynomially bounded in n" (their `lean/docs/130.md`). So the theorem says nothing about bit complexity, about
 computations with bounded coefficients, or about numerical stability (section 2, point 6).
 
-**Whose statement this is.** OpenAI's repository states and proves the discrete Fourier transform of every
+**Whose statement the Walsh-Hadamard one is.** OpenAI's repository states and proves the discrete Fourier transform of every
 length (`DFTProgram`, `TimeBounds`, stated saving 10^-13). Its family 130 has no Walsh-Hadamard statement. The RAM
 cost model in my statement (challenge lines 22-270) is OpenAI's, byte for byte (their
 `lean/ComparatorChallenges/UniformFourier.lean`, lines 9-257). The about 60 lines after it (271-331), which
@@ -139,7 +276,8 @@ whole-block accounting only (section 2, point 3).
 1. **It is not a better circuit, and it does not verify the community's theorem.** The second result places
    their circuit in my layout and checks it for my statement. Nothing here is about integer multiplication.
    Their headline figure, kappa, also needs a second ingredient (the "bit side") and analytic and routing
-   interfaces that their authors call assumptions. None of that is checked or used here.
+   interfaces that their authors call assumptions. None of that is checked or used here. The third result
+   uses the same circuit and has no circuit of its own.
 2. **The outside figures are a different quantity, and they keep moving.** The titles of the pull requests to
    CrocSwap/integer-mult-bounds give kappa, the saving for integer multiplication: roughly the smaller of the
    "complex side" saving, which is the quantity of my theorem, and the bit side. For #193: complex side
@@ -149,6 +287,10 @@ whole-block accounting only (section 2, point 3).
      was still 7.009184e-4: the circuit of #193, which #194, #197, #202, #204, #205, #206 and #207 keep while
      they change the bit side. The front page of the hub's main branch (`3b6b668`) named #186 as its reviewed
      result (kappa 6.61885549e-4).
+   - At 18:11 UTC on 2026-10-09 pull requests up to #215 existed. The largest kappa in a title was 6.839217e-4
+     (#210, eumemic, open, 16:58). The largest complex-side saving stated as a result in the bodies of #208 to
+     #215 was still 7.009184e-4, the circuit of #193, which #210, #211 and #213 keep. #208 prices further steps,
+     up to kappa 1.226488e-3, and its title calls them "target, not built".
    - Their authors call each figure conditional. The figures are certified by Python scripts, are not peer
      reviewed and are not Lean theorems.
    - [#192](https://github.com/CrocSwap/integer-mult-bounds/pull/192) (DaysSky) states a ceiling of 7.010e-4
@@ -157,15 +299,28 @@ whole-block accounting only (section 2, point 3).
      five-stage layout.
 3. **Whole-block accounting only.** The generalised engine has a whole-block theorem and no per-rank theorem.
    So the second result has no companion with OpenAI's own recursion. In per-rank accounting the result of this
-   repository is still 3.155781e-4, from the first network.
-4. **It is the Walsh-Hadamard statement, not the Fourier transform of every length.** The exponent has not
-   been carried over to OpenAI's `DFTProgram` statement. For that statement an outside Lean development claims
-   3.2e-6 ([danadran01/exact-dft-power-saving](https://github.com/danadran01/exact-dft-power-saving)), and an
-   outside written proof, not formalised, claims every saving below 4.856e-4 with an extra log log factor
-   ([eumemic/exact-dft-bounds](https://github.com/eumemic/exact-dft-bounds)). Neither was built or checked for
-   this repository.
+   repository is still 3.155781e-4, from the first network. The third result rests on the same whole-block
+   kernel program, so it has no such companion either: in OpenAI's own recursion the Fourier statement
+   stands where OpenAI proved it.
+4. **The Fourier saving is strictly below the kernel's.** The final statement of the third result carries
+   no extra factor: it is O(n (log n)^(1 - d)) with d = 7.474546e-4. Behind it, OpenAI's reduction costs a
+   factor (log log n)^2 on top of the kernel program. At the kernel's own exponent, z = 1 - 7.474547e-4, the
+   chain therefore gives O(n (log n)^z (log log n)^2), and a pure power of log n needs an exponent a little
+   above z. The same argument would give every saving below 7.474547e-4. The theorem here states
+   7.474546e-4, and it does not state 7.474547e-4 itself.
+   - Outside figures for the same statement, none of them built or checked for this repository: 3.2e-6 in
+     Lean ([danadran01/exact-dft-power-saving](https://github.com/danadran01/exact-dft-power-saving));
+     in written arguments that are not formalised, 6.7e-4, conditional
+     ([shea256/fourier-transform-below-nlogn](https://github.com/shea256/fourier-transform-below-nlogn)),
+     and every saving below 4.856e-4 with an extra log log factor
+     ([eumemic/exact-dft-bounds](https://github.com/eumemic/exact-dft-bounds)). They rest on other networks.
+   - The Walsh-Hadamard results are for the lengths 2^k only. The first of them, with my project's own
+     circuit, has not been carried over to the Fourier statement.
+   - The statement is OpenAI's `DFTProgram` and `ConvProgram`: transforms over the complex numbers, with a
+     root of unity supplied to the program. Nothing is claimed for other transforms or other models.
 5. **It is a statement about growth, not a usable algorithm.** (c) marks numbers computed from a formula, not in
-   Lean. The figures are those of the second result; the first result's are in brackets.
+   Lean. The figures are those of the kernel program of the second and third results; the first result's
+   are in brackets.
    - The proof works with a table of 2^a arrays indexed by all orthogonal matrices of a 110-dimensional space
      over F_2 [80-dimensional]. The table is never written down. a = 6049 (c) [3213], and 2^a has
      1821 digits (c) [968].
@@ -178,6 +333,11 @@ whole-block accounting only (section 2, point 3).
      here [2e-10 to 4e-10]. Machine constants were never computed, here or by OpenAI.
    - With every constant set to 1, a gain of 1% over the ordinary algorithm needs log2 n near 2^39
      (c, heuristic) [2^45].
+   - For the third result these are figures of the kernel program, not of the Fourier program. The
+     Fourier program calls the kernel program on arrays whose lengths it chooses itself: by the agents'
+     reading of OpenAI's files, about (log log n)^2 sweeps on arrays of total length at most 8n. The
+     lengths n at which the saving starts, and the constants of the reduction, were not computed, here
+     or by OpenAI.
 
    In Lean: `tableExp n s = Nat.clog 2 n + s`, `threshold u a = u * (a + 1)`, m = 110, s = 40, 14,692
    arrays per unit [m = 80, s = 40, 9362], one unit per orthogonal matrix. Not in Lean: the order of that group,
@@ -187,12 +347,54 @@ whole-block accounting only (section 2, point 3).
    its circuit result that it makes "no all-length, bounded-coefficient, conditioning, or bit-complexity claim".
    The last three limits hold here as well. The classical lower bound of order n log n for linear computations
    with bounded constants (Morgenstern, 1973) is not contradicted: this model does not bound the constants.
+   All of this holds for the third result too. Its root of unity is an exact input.
 
 What is real is the exponent: a theorem about growth for all n in this model, machine-checked.
 
 ## 3. How it was checked, and the limits
 
 All times are UTC. The AI agents ran every check, on one machine.
+
+**Third result.**
+
+- **Comparator.** The comparator (described under the second result, below) was run with the configuration
+  `comparator/UniformFourier.json`. Its challenge is `Work/Fourier/UniformFourierChallenge.lean`, OpenAI's
+  challenge file with the exponent replaced
+  (section 1), and it checks both theorems, `transform_mainZ` and `convolution_mainZ`. Its verdict "Lean
+  default kernel accepts the solution" / "Your solution is okay!" was obtained twice, in the project's working
+  tree, on Lean files that are byte for byte those of this repository: by the agent that built the proof, at
+  18:27 (1528 s), and by an auditing agent with its own configuration, at 18:55 (1236 s).
+- **Audit by a separate agent** (another Claude session with its own scripts; not a human). Besides its own
+  comparator run it ran the second comparison script (`tools/Compare.lean`): pass, on the three standard
+  axioms. Both tools reject the same proof against a statement whose saving is one unit larger. It compared
+  the eleven repeated files with OpenAI's originals token by token: apart from the renames, the differences are
+  the seam, one constant, and one name written out in full in five places, which keeps OpenAI's meaning. It
+  walked both proofs: they reach every kernel check of the certificate and no `sorryAx`. It did not read the
+  repeated proofs line by line and did not rebuild from source.
+- **What the kernel replays.** The Fourier theorem rests on the certificate of the second result. The
+  comparator replays the whole proof in the kernel, the segmented evaluations of that certificate included.
+- **Build.** The modules of `Work/Fourier` were compiled from source in the project's working tree, on the
+  compiled modules of the second result (under two minutes; VERIFY.md, section 3). What is said below about the
+  build of the second result holds here too: no build from nothing has been made. In a copy of the
+  repository the 15 new modules were compiled from source on the compiled modules of the second revision; the
+  comparator has not yet been run in that copy.
+- **The repeated files.** `tools/fourier/mkchain.py` (242 lines of Python) makes the 11 copies, `Goal.lean`, the
+  challenge and the comparator configuration from OpenAI's unmodified files. `python3
+  tools/fourier/regen_check.py` runs it again and compares the result with the files of this repository: all 14
+  were reproduced byte for byte (VERIFY.md, section 6). So every difference between a copy and its OpenAI
+  original is one that the script makes, and the script can be read. A second comparison, by another agent's own
+  script, of each copy with its original line by line made the table in ORIGIN.md. Beyond the renamed names, the
+  import lines and the added comments it found the two edits named in "Whose reduction this is", the exponent
+  line of the challenge, and no other change to the code.
+- **Audits by separate agents** (other Claude sessions; not humans). I had an auditing agent compare the new
+  statements with OpenAI's as kernel terms, not as text. In the seam file, `hillsZ_program` has the type of
+  OpenAI's `hills_program` with `hills` replaced by `hillsZ`; `hillsZ` is OpenAI's `hills` with `alpha` replaced
+  by `alphaZ`; `alphaZ` is OpenAI's `alpha` with 2/10^11 replaced by 7474547/10^10; and the six side facts have
+  OpenAI's statements. A walk of the proof term of `hillsZ_program` reached 38,544 constants: all 106 names of
+  the certificate of the second result and of its soundness chain that the audit of the second result had listed
+  (every kernel check of the certificate among them), no other certificate, none of OpenAI's `hills_program`,
+  `hills` or `alpha`, no `sorryAx`, and the three permitted axioms only. The agent compared statements and
+  walked proof terms; it did not read the proofs.
 
 **Second result.**
 
@@ -274,6 +476,19 @@ All times are UTC. The AI agents ran every check, on one machine.
 - The new proofs are checked by the Lean kernel but have not yet had a line-by-line human review; the
   auditing agents checked statements, not proof texts. So the claim rests on the kernel and on the statement
   being the right one. I would be glad to have both read.
+- New in the third revision: the Fourier theorem adds no independent check of the kernel program. It rests
+  on the certificate, the generalised engine and the checker of the second result, and every limit stated
+  here for the second result holds for the third.
+- New in the third revision: the 11 repeated files are OpenAI's proofs with every declaration renamed by a
+  script. The kernel checks the result as it is. That the copies differ from OpenAI's files only as their
+  first comments and NOTICE say rests on the file comparison named above, not on Lean.
+- New in the third revision: the statement of the third result is OpenAI's challenge file with three
+  changes (section 1). `diff` shows them in a few lines (VERIFY.md, section 1). The one that carries the
+  claim is the exponent.
+- New in the third revision: the third result has had one comparator run, in the project's working tree. A build
+  of this revision in a copy of the repository or from nothing, a run of `tools/Compare.lean`, and a negative
+  control (the checkers must reject this proof against a statement whose saving is one unit larger) had not been
+  made for it when this text was written.
 - The comparator ran on macOS with a stand-in for its Linux sandbox `landrun`. The second kernel (`nanoda`) was
   off, as in OpenAI's configuration of its own Fourier challenge. `leanchecker` was not run on these modules.
 - In every comparator run the modules of the proof had been compiled beforehand, outside the sandbox, so the
@@ -324,7 +539,15 @@ it went through the same day, together with an engine and a checker that use it.
 circuit the community had published could be checked as it stands, so I chose to check theirs. The agents
 rebuilt it from the published data, wrote the Lean proofs and ran the checks.
 
-## 5. What is new in this revision, in plain words
+The third result came later the same day. The note on open directions had named it as a lead: carry the exponent
+over
+to the statement OpenAI headlines. I had the agents scope it before anything was built. They found that
+OpenAI's proof uses the network through a single theorem and that the generalised engine already proves that
+theorem's sentence at my exponent, and they recommended the route that leaves OpenAI's files unmodified and
+repeats OpenAI's reduction in this repository. I took that route and asked for speed. The agents wrote the
+seam file, repeated the 11 files by script, and ran the checks.
+
+## 5. What is new in the second and third revisions, in plain words
 
 Words. An *array* is one working copy of the data, of length n. Its *frame* is the coordinate system it is
 written in at a given moment. A *move* takes an array to a larger frame, and a *block* is a run of moves of one
@@ -359,6 +582,13 @@ coordinates. An addition between two arrays is free and is allowed only when bot
 - **The circuit.** The community's paired-cube circuit at p = 11 ("Whose circuit this is", above; sizes in
   section 6), written as a certificate in that format. By the agents' count 91 percent of its moves pass
   through frames that the first engine cannot use. That is why the three items above had to exist first.
+- **The seam and the repeated reduction (third result).** OpenAI's route from the kernel program to every
+  length asks one thing of the network: a kernel program within a work bound. In their files the bound is the
+  fixed function `hills`, the ceiling of (k+1)^alpha. `Work/Fourier/Seam.lean` states the kernel program of
+  the generalised engine in exactly that form, with the bound `hillsZ` at my exponent (`hillsZ_program`), and
+  proves what the reduction uses of the bound: it is at least 1, it grows with k, it is at most k + 1 and at
+  most 2 (k+1)^z, and z lies between 0 and 1 and below the exponents of OpenAI's statement. The 11 files
+  after it are OpenAI's, repeated with that bound ("Whose reduction this is", above).
 
 ## 6. The design
 
@@ -453,10 +683,10 @@ I expect to leave this project alone for a while, so [notes/open-directions.md](
 it on: every lead I know of, with what is known, what it might give, how to start, and what already failed.
 
 - **Major leads.** The scratch copies above (what-if 1.28147e-3, no design known); a per-rank theorem for the
-  generalised engine (its rate inequality at 4.058344e-4 is a Lean lemma already); the Fourier transform of
-  every length, which OpenAI headlines (largest outside Lean claim that my scans found: 3.2e-6); the room under
-  the outside ceilings (#201, DaysSky, claims 2.5657e-3 and covers neither this circuit nor this layout); the
-  Lean frame lemma and the checker, for what the multiplication project still assumes.
+  generalised engine (its rate inequality at 4.058344e-4 is a Lean lemma already); the room under the
+  outside ceilings (#201, DaysSky, claims 2.5657e-3 and covers neither this circuit nor this layout); the
+  Lean frame lemma and the checker, for what the multiplication project still assumes. The Fourier transform
+  of every length was on this list and is now the third result; the note says what remains of it (A3).
 - **Minor leads** (fourteen, each with its computed size and its label), **the checks I would welcome most**,
   **seventeen things that were tried and did not work**, and **how a better circuit becomes a theorem here**.
 
@@ -464,22 +694,27 @@ it on: every lead I know of, with what is known, what it might give, how to star
 
     OAI/          89 files of openai/math (lean/OAI/Computability), unmodified
     WHTCheck/     the first Walsh-Hadamard corollary; defines `wht` and `WHTProgram`
-    Work/         237 modules written here.
+    Work/         252 modules: 237 written here for the first two results, and Work/Fourier.
                   First result: recursion engines and rate arithmetic (Scratch, Block*, FoldRate), invocation
                   and network theorems (SharedSumStructured, Combine, Reframe, Bridge, BridgeGeom, Carrier),
                   certificate checkers, data and final theorems (SharedSumChecker, CarrierCheck).
                   Second result: GFrame (frame lemma, generalised engine, 54 modules, 48 of them imported
                   by the final proof), GCert (extended checker in the parts Labels, Scalar and Chain; Data
                   with the certificate and the final theorem)
+                  Third result: Fourier (15 modules: the seam file written here, the modified
+                  copies of 11 OpenAI files and of five definitions of a twelfth, the challenge, and a file that prints the axioms of the final theorems;
+                  the final theorems are in the copy of `Main`)
     comparator/   the comparator configurations
     tools/        `Compare.lean`, the certificates as JSON (`tools/certificate/`), their reference checkers,
-                  the generators (`tools/gen/` first result, `tools/gx/` second), `whatif_copies.py` (section 7)
+                  the generators (`tools/gen/` first result, `tools/gx/` second), `whatif_copies.py` (section 7),
+                  `tools/fourier/` (the script that made the copies of the third result, and its check)
     lakefile.lean, lean-toolchain, lake-manifest.json    Lean v4.34.1 and the Mathlib commit pinned by openai/math
     VERIFY.md     how to rebuild everything and re-run every check
     ORIGIN.md     where every file comes from (with MANIFEST.sha256); `tools/gx/ORIGIN.md` for the tools and
                   the certificate of the second result
     RELATED-WORK.md, NOTICE, LICENSE
-    notes/, third-party/    the notes of section 7 (scratch copies; all open directions); the NOTICE file of CrocSwap/integer-mult-bounds (NOTICE, section 6)
+    notes/, third-party/    the notes of section 7 (scratch copies; all open directions); the NOTICE file of CrocSwap/integer-mult-bounds (NOTICE, section 6);
+                  OpenAI's challenge file `UniformFourier.lean`, unmodified, to compare the challenge of the third result with
 
 The comments inside the Lean files were not edited for this release, so that the files are byte for byte the
 ones that were checked. They still use path names and working titles of the tree they were written in ("Scratch

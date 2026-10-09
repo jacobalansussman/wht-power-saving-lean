@@ -7,7 +7,8 @@ where the other results stand. It rests on three read-only looks at public sourc
 a scan on 2026-10-08 at about 21:10 UTC, a scan on 2026-10-09 ending 10:39 UTC, and a re-read of 20 pull requests
 and 4 repositories on 2026-10-09 from 11:46 to 11:55 UTC. For the second result they looked again on 2026-10-09:
 a read-only fetch of six pull-request heads at 13:17, reads of pull requests #192 to #198 at 14:02, a list of
-titles at 14:37, and a last look at 16:06 (section 5). **All times are UTC.**
+titles at 14:37, and a look at 16:06 (section 5). For the third result: a read of three repositories at
+17:15 on 2026-10-09, and a last look at 18:11 on 2026-10-09 (section 5). **All times are UTC.**
 
 Rules of this file:
 - Every outside figure is **a claim of its authors**. How they checked it is stated next to it. The authors of
@@ -28,7 +29,8 @@ Rules of this file:
 
 "Saving" is 1 - z in a bound n (log n)^z. My figures are 7.474547e-4 (the second result) and 5.399225e-4 (the
 first), both in whole-block accounting, both Lean theorems for the Walsh-Hadamard statement described in the
-README.
+README; and 7.474546e-4 (the third result), a Lean theorem for OpenAI's own Fourier statement of every
+length, from the kernel program of the second.
 
 ## 1. What this work takes from others
 
@@ -41,6 +43,44 @@ re-run them. The tensor engine in their Lean has saving 2/10^11. The two manuscr
 tensor savings and exact Fourier circuits" and "An explicit power saving for the exact discrete Fourier
 transform" (OpenAI, 25 September 2026, in `preprints/` of openai/math). Section 7 reproduces their BibTeX
 entries. OpenAI did not write, review or endorse this repository.
+
+**OpenAI's reduction from the kernel program to every length (third result).** The third result takes the
+whole of it. OpenAI's Lean proof uses the network through one theorem, `hills_program`
+(`TensorProgram.lean`), which has one call site (`SectorAlgorithm.lean`). The 11 files of theirs that follow
+(`SectorAlgorithm`, `SynchronizedAlgorithm`, `WorkingTransform`, `WorkingCompiler`, `WorkingPreparation`,
+`ArbitraryLength`, `TransformProgram`, `ConvolutionProgram`, `UniformBounds`, `Asymptotics`, `Main`) are
+repeated under `Work/Fourier/` with one constant changed, the exponent, and with every declaration renamed.
+The copies say so in their first lines, and NOTICE, section 7, lists them. The statement is OpenAI's
+challenge file `lean/ComparatorChallenges/UniformFourier.lean` with the exponent replaced. What this
+repository adds to it is the kernel program at the larger exponent, in the form of that one theorem
+(`Work/Fourier/Seam.lean`).
+
+**Who carried a larger saving to the Fourier statement first.** Three outside works did, and the third result
+follows them:
+
+- **danadran01**, [danadran01/exact-dft-power-saving](https://github.com/danadran01/exact-dft-power-saving)
+  (`1a7b25e`, 2026-10-09 03:48; Apache-2.0 by its README). Lean, on OpenAI's own `DFTProgram` and
+  `TimeBounds`, saving 3.2e-6 (`transform_improved`, `improvedExponent = 1 - 32/10^7`). As far as my scans
+  found, it is the first Lean improvement of the Fourier statement. It is a modified copy of OpenAI's Lean
+  with three of OpenAI's files changed (`TensorSaving`, `TensorProgram`, `Main`), all at the place where the
+  network enters; by a file comparison of the agents every other OpenAI file in it is byte-identical to the
+  one here. Its recursion is whole-block ("grouped recursion"). Its record reports a clean build, the standard
+  axioms and `leanchecker`; a comparator configuration is included and no comparator run is reported. It was
+  not built here. The third result does not use its code: the engine of this repository has letters that its
+  recursion does not have (helper arrays that start at zero, an additive bijection of the labels, a phase),
+  so the route here goes through OpenAI's own theorem.
+- **shea256**, [shea256/fourier-transform-below-nlogn](https://github.com/shea256/fourier-transform-below-nlogn).
+  The first written transfer of a community network to the family-130 model (first commit 2026-10-08;
+  eumemic's README: "That work has priority for the idea of the transfer"). Written argument and finite
+  Python checks, not Lean; section 5 has its figures.
+- **eumemic**, [eumemic/exact-dft-bounds](https://github.com/eumemic/exact-dft-bounds) (`6f87d1a`). A written
+  transfer with batched recursion, every saving below 4.856e-4 with an extra log log factor. Its README
+  states the observation that the third result rests on, for OpenAI's manuscript: "OpenAI's Sections 3–5
+  (exact-width Fourier words, sector synchronization, small-prime working lengths, chirp convolution) use
+  their Theorem 2.6 only through three things: the bound O(2^k (k+1)^θ), the fact that only rational
+  constants and i are needed (their §5.3), and its word-size accounting." Its Theorem 3.1 is the sentence
+  that the generalised engine of this repository proves in Lean. "A paper proof with an exact finite
+  certificate, and it is not formally verified."
 
 **The helper circuit of the second result: the community's paired-cube circuit, in the state of pull request
 #193 to [CrocSwap/integer-mult-bounds](https://github.com/CrocSwap/integer-mult-bounds)** (Apache-2.0). This is
@@ -153,7 +193,8 @@ comparator at 02:38 on 2026-10-09, nine minutes after #130 appeared; the one wit
   invocations in place of six, and the five-stage layout with m = 5h. Not found by any of the ten scanning agents.
   The nearest outside relative is "lockstep" pairing (#132, ikeboy), which its author withdrew as invalid.
 - **A Lean proof at this exponent.** The largest saving in an outside Lean theorem that the agents found is 3.2e-6
-  (section 5, row D).
+  (section 5, row D). Row D is a theorem about the Fourier statement of every length, so this holds for the
+  third result as well as for the first two.
 - **A Lean proof of the general frame lemma**, and **a machine check of a whole circuit of the paired-cube
   family** (section 1). Added with the second result.
 
@@ -163,7 +204,8 @@ repositories of Swapnil-jain, eumemic, danadran01 and shea256. The later reads f
 14:37) were made to rebuild the circuit, not to search; they reported no five-stage layout and no Lean proof of
 these kinds, and the repositories of eumemic and danadran01 still had no new commit at 14:37. The last look
 (16:06, section 5) read the bodies of #193 to #207: none describes a five-stage layout or a Lean check
-of its circuit, and those two repositories still had no new commit. All three statements are therefore "as
+of its circuit, and those two repositories still had no new commit. The read at 17:15 and the last look at
+18:11 (section 5) are the basis for the third result. All three statements are therefore "as
 far as my scans found at the time of writing".
 
 ## 4. How my figures compare with the outside figures
@@ -202,15 +244,23 @@ far as my scans found at the time of writing".
   never enumerated.
 - Outside figures use whole-residual accounting. They compare with my whole-block figures, not with my per-rank
   3.155781e-4. The agents found no outside per-rank figure.
-- In the other direction: rows C and D below are about the Fourier transform of every length. Mine is about the
-  Walsh-Hadamard transform.
+- **Third result.** Rows C, D and E below are about the Fourier transform of every length, which is the
+  statement of my third result. Mine, 7.474546e-4, is a Lean theorem checked by the comparator against
+  OpenAI's challenge file with the exponent replaced. Row D, 3.2e-6, is a Lean theorem by its authors' record
+  and was not built here. Rows C and E are written arguments, not formalised: every saving below 4.856e-4
+  with an extra log log factor (eumemic), and 6.7e-4, which its author calls a proposed conditional
+  transfer (shea256, state of 18:11 UTC on 2026-10-09, commit `a2840b1`). The networks differ: mine is the
+  circuit of #193 in the
+  five-stage layout, theirs are the networks named in those rows. The transfer is the same idea in all four,
+  and it is OpenAI's reduction in every one.
+- My first two results are about the Walsh-Hadamard transform. None of rows C, D and E has a figure for it.
 
 Outside techniques and this work. The first result uses none of the following; the second uses those that are
 in the data of #193: slot reuse at birth (#124, #143), operation-frame descent in bundles (#131, #168, #178),
 partial and pair-aware source gauges (#115, #144), extended carrier matching (#162), merged output reads
-(#161), the paired-cube producer at p = 11. Used by neither: terminal sinks (#166; #193 has none), the bit
+(#161), the paired-cube producer at p = 11. Used by none of the three results: terminal sinks (#166; #193 has none), the bit
 side of the outside networks, and the transfer to every length without padding to a power of two (eumemic,
-danadran01).
+danadran01). The third result uses OpenAI's own transfer (section 1).
 
 ## 5. Where the other results stood on 2026-10-09
 
@@ -227,6 +277,7 @@ danadran01).
 | E | 7.3e-5; 7.4026e-5; 5.1e-10; conditional 1e-9 | shea256; sobakadog8; teal-sea; a fork by whyihaveyou. Family 130 | written arguments or Python; the last one Lean arithmetic with open premises |
 | | 5.399225e-4 | this repository, first result, Walsh-Hadamard statement, 09:59 | Lean, comparator, audits by AI agents; limits in the README |
 | | 7.474547e-4 | this repository, second result, the same statement, with the circuit of #193, 15:14 | Lean, comparator, audits by AI agents; limits in the README |
+| | 7.474546e-4 | this repository, third result, OpenAI's Fourier statement of every length (`DFTProgram`, and `ConvProgram`), from the kernel program of the second result, 18:27 | Lean, comparator, audits by AI agents; limits in the README |
 
 **Titles only, state at 11:46.** Pull requests #179 to #185 had appeared. The agents read their titles, not
 their bodies, so the figures are kappa and not complex-side savings: 6.5592e-4 (#179, chafreaky, open, 10:41),
@@ -279,6 +330,39 @@ arithmetic. None of the bodies of #193 to #207 describes a Lean check of its cir
 at that time the agents knew of no outside complex-side figure above my 7.474547e-4 and of no outside Lean
 theorem for a Fourier or Walsh-Hadamard statement with a saving above 3.2e-6.
 
+**State at 17:15, three repositories, read for the third result.** The agents cloned three repositories
+read-only and read them; nothing in them was built or run. danadran01/exact-dft-power-saving was at `1a7b25e`
+(the repository was created at 03:40; one commit; no issue or pull request had been opened), and
+eumemic/exact-dft-bounds at `6f87d1a`: no new commit in either. shea256/fourier-transform-below-nlogn was at
+`a2840b1`; at 15:24 it had raised its figure to 6.7e-4, with the network of round eleven of
+Swapnil-jain/integer-mult-kappa. Its README: "The exact tensor witness is `a=0.00067147467` and the chosen
+Fourier saving is `delta=0.00067`. This is a **proposed conditional transfer**, supported by a written
+argument and finite checks. Independent mathematical review and end-to-end formal verification remain
+pending." A file comparison showed that danadran01's tree differs from the OpenAI files of this repository in
+three files (`TensorSaving`, `TensorProgram`, `Main`) and in no other.
+
+**State at 18:11 on 2026-10-09, the last look before this text.** Read from 18:11 to 18:12: the list of the 30
+newest pull requests with their bodies (#186 to #215), the latest commits of five repositories, the list of the
+100 newest forks of openai/math with the branch names of the two pushed since 16:06, two repository searches,
+and the README of shea256's repository at its head commit. Pull requests up to #215 existed. Kappa in the titles
+of those after #207: 6.83921676706449e-4 (#210, eumemic, open, 16:58), 6.838479e-4 (#211, rohanarun, open,
+17:14), 6.83847872497761e-4 (#213, sennemmi, open, 17:33). #208 (maxime-fleury, 16:52) prices a ladder of
+further steps, up to kappa 1.226488e-3 with new residual types; its title calls them "target, not built", and
+#215 (GamingPuzzled, 18:09) says that they need a mechanism other than the published one. #212 (chafreaky,
+17:31) states a ceiling, not a result (kappa below 6.959e-4 on the bit word of #205 to #207). #214
+(antoine-olivier, 17:44) replays the verifiers of four earlier pull requests. #209 (16:56) is my own entry: one
+line that links this repository, with no kappa claim. **The largest complex-side saving stated as a result in
+any of these bodies was still 7.009184e-4**, the circuit of #193: #210, #211 and #213 keep it and change the bit
+side, and #213 says that it "adds no Lean proof". The hub's main branch was still at `3b6b668` (13:23). No new
+commit in danadran01/exact-dft-power-saving (`1a7b25e`, 03:48), in eumemic/exact-dft-bounds (`6f87d1a`, 09:34),
+in shea256/fourier-transform-below-nlogn (`a2840b1`, 15:24; its README still states delta = 0.00067) or in
+Swapnil-jain/integer-mult-kappa (`1a580dc`, 13:03). Two forks of openai/math had been pushed since 16:06
+(grwtsk/openai-math, akashlevy/math); by their branch names neither concerns the Fourier family. A search for
+repositories pushed since 2026-10-08 that match "exact dft" returned those of eumemic and danadran01 and no
+other. So at that time the agents knew of no outside complex-side figure above my 7.474547e-4, of no outside
+Lean theorem for a Fourier or Walsh-Hadamard statement with a saving above 3.2e-6, and of no outside written
+figure for the Fourier statement above 6.7e-4.
+
 How the largest outside complex-side claim for this network family moved during the night (all
 Python-certified claims): 7.4e-5 (first scan) -> 3.148e-4 (#130, 02:29) -> 4.139e-4 (#137, 03:18) ->
 4.856569e-4 (#144, 04:19) -> 5.1135e-4 (#152, 06:05) -> 5.514156e-4 (#155, 06:40, the first above my final
@@ -306,6 +390,13 @@ particular routes exist.
   requests, the bodies of #193 to #207, the front page of the hub and the latest commits of three repositories
   (section 5). Scripts were read as text and none was run. Published JSON files were loaded as data
   (section 1).
+- Reads for the third result, read-only: at 17:15 on 2026-10-09 shallow clones of danadran01/exact-dft-power-saving,
+  eumemic/exact-dft-bounds and shea256/fourier-transform-below-nlogn, read as text and compared file by file
+  with the OpenAI files here; no outside program was run and no outside Lean was built. The last look
+  (18:11): 15 read-only requests without authentication, from 18:11 to 18:12: 14 to the public GitHub API (the
+  30 newest pull requests with their bodies, the latest commits of five repositories, the 100 newest forks of
+  openai/math, the branches and events of two of them, two repository searches, the rate limit) and one for the
+  README of shea256's repository at `a2840b1`.
 - Covered: openai/math and its forks (every branch of the roughly 65 forks pushed since 2026-10-07); the
   CrocSwap pull requests up to #178 (#169 to #177 by title and summary only) and those named in the line
   above; the repositories named above.

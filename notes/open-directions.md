@@ -1,6 +1,8 @@
 # Open directions
 
-Author: Jacob Sussman. Text of 2026-10-09, written with the second revision of this repository.
+Author: Jacob Sussman. Text of 2026-10-09, written with the second revision of this repository. With the
+third revision (2026-10-09) lead A3 was carried out: A3, the paragraph "Where things stand" and item 8 of
+section C were rewritten for it. Everything else is the text of the second revision.
 
 I expect to leave this project alone for a while: my weekly Claude limits ran out with the list below still
 open. So this note hands the project to anyone who wants to continue it. It has every lead I know of that is
@@ -22,8 +24,10 @@ the full credits are in RELATED-WORK.md. Every figure carries a label:
 - *outside claim*: claimed by outside authors; how they checked it is said. Not checked here unless said.
 - *on paper*: derived on paper by the agents, with computer checks at small sizes. Not in Lean.
 
-Where things stand (all three proved in Lean, comparator): 7.474547e-4 with the community's circuit of #193
-at h = 22; 5.399225e-4 with my first circuit at h = 16; in per-rank accounting 3.155781e-4, first circuit.
+Where things stand (all four proved in Lean, comparator): for OpenAI's Fourier statement of every length
+7.474546e-4, from the kernel program of the next figure; for the Walsh-Hadamard transform 7.474547e-4 with
+the community's circuit of #193 at h = 22; 5.399225e-4 with my first circuit at h = 16; in per-rank
+accounting 3.155781e-4, first circuit.
 
 ## A. Major leads
 
@@ -69,26 +73,36 @@ recursion does. The generalised engine has a whole-block theorem only (`BlockWHT
   (`engine_program_scratch`). The generalised word needs the same cut for blocks that stand between two
   adapter steps (`Work/GFrame/Engine/Letters.lean`, `Adapt.lean`). The work has not been sized.
 
-### A3. The Fourier transform of every length
+### A3. The Fourier transform of every length: done, and what remains
 
-OpenAI's headline statement is the discrete Fourier transform of every length (`DFTProgram`, `TimeBounds`;
-saving 10^-13, proved in Lean by them). Both results of this repository are for the Walsh-Hadamard transform
-of the lengths 2^k, and nothing has been done here to carry the exponent over.
+This lead is no longer open. The third result of this repository is OpenAI's headline statement, the discrete
+Fourier transform of every length (`DFTProgram`, `TimeBounds`), with saving 7.474546e-4, and convolution
+with it (proved in Lean, comparator: `transform_mainZ` and `convolution_mainZ` in `Work/Fourier/Main.lean`).
+OpenAI's own statement has 10^-13.
 
-- **Outside** (outside claims; neither was built or checked here). danadran01/exact-dft-power-saving: a Lean
-  proof on OpenAI's own `DFTProgram` with saving 3.2e-6 (their record: a clean build, standard axioms only,
-  `leanchecker`; no comparator run is reported). eumemic/exact-dft-bounds: a written transfer of a community
-  network to every length, every saving below 4.856e-4 with an extra log log factor ("a paper proof with an
-  exact finite certificate, and it is not formally verified"), crediting an earlier transfer by shea256.
-- **What it would give** (what-if). The statement OpenAI headlines, at a saving just below 7.47e-4: more than
-  200 times the largest outside Lean figure for that statement that my scans found.
-- **How to start.** OpenAI's files, unmodified under `OAI/`, already go from their tensor engine to every
-  length. By a first reading made for this note (one agent, not checked by a second, not a result): the
-  exponent enters that chain through one definition, `hills` in `TensorSaving.lean` (the ceiling of
-  (k+1)^alpha), which `SectorAlgorithm.lean`, `SynchronizedAlgorithm.lean` and `Asymptotics.lean` use by name
-  on the way to `transform_main` in `Main.lean`. A copy of that chain with the work bound as a parameter, fed
-  by the program of the generalised engine, is the direct route. The other is to carry the certificate into
-  danadran01's development, which has whole-block recursion ("grouped recursion") on `DFTProgram` already.
+- **How it went.** The first reading for this note had the exponent enter OpenAI's chain through one
+  definition. The scoping made that exact: the chain uses the network through one theorem, `hills_program`
+  in `TensorProgram.lean`, with one call site, and the generalised engine proves the same sentence at the
+  exponent of the second result (`hillsZ_program`, `Work/Fourier/Seam.lean`). OpenAI's 11 files between that
+  theorem and `transform_main` are repeated under `Work/Fourier/` with that one constant changed (README,
+  "Whose reduction this is"). The other route named here before, through danadran01's development, was left
+  aside: it gives the same exponent and would have moved the Lean of this repository into theirs.
+- **Outside** (outside claims; none was built or checked here). danadran01/exact-dft-power-saving: Lean,
+  saving 3.2e-6 on the same statement, the first Lean improvement of it that my scans found. Written
+  transfers, not formalised: shea256/fourier-transform-below-nlogn, the first of them (6.7e-4 when
+  last read, "proposed conditional transfer"), and eumemic/exact-dft-bounds (every saving below 4.856e-4 with
+  an extra log log factor).
+
+What remains of it:
+
+| | what | size | label | what it needs |
+|---|---|---|---|---|
+| a | The last digit: the Fourier statement at the kernel's own 7.474547e-4 | one unit of 10^-10 | on paper | OpenAI's reduction costs a factor (log log n)^2, so the Fourier exponent has to lie strictly above the kernel's. A kernel program one unit better gives it, and that is B3: 7474548 and 7474549 hold by exact arithmetic and are not yet proved |
+| b | A transfer theorem with the kernel program as a hypothesis: a kernel program at exponent z gives the Fourier statement at every exponent above z | no new figure; after it, a better network is one line for both transforms | on paper: an estimate of the scoping agent, not checked | the 11 repeated files with the kernel program passed through as a hypothesis (167 declarations; Lean universe levels are the risk). `envelope_program_ge` in `Work/Fourier/Seam.lean` is the kernel side at every exponent above the present one. The twin for the Walsh-Hadamard transform exists: `wht_main_of_engine`, `Work/Block/WHT.lean` |
+| c | A per-rank companion for the Fourier statement | just below 4.058344e-4 (what-if) | what-if | A2 first; then the same seam |
+| d | The transfer without padding (eumemic's batched route) with this network | below 3e-10 (the padding of the kernel program has fill parameter s = 40) | on paper: an estimate of the scoping agent | much more Lean for the ninth decimal; not recommended |
+| e | Why OpenAI's Lean has the factor (log log n)^2 where their manuscript has (log log n)^(4 - theta) | no figure | not determined | a reading of `Asymptotics.lean` beside the manuscript |
+| f | An independent build and comparator run of danadran01's theorem | no figure of mine; their record reports a clean build and no comparator run | not attempted | their tree builds on the same Lean and Mathlib versions as this one |
 
 ### A4. The room under the outside ceilings
 
@@ -188,6 +202,10 @@ per-rank figure, which still comes from that circuit, and as a second, independe
    #193: 9,412 helper arrays, 12,052 arrays per vertex of their word, rank mass 794,112, the block histogram.
 7. **Smaller**: a negative control and a walk of the proof term for the per-rank companion of the first
    result; an audit of the Python generators (`tools/gx/gxgen.py`, `gxrate.py`, `gxconv.py`).
+8. **For the third result.** The comparator on Linux as in item 1; a build from nothing; a reading of
+   `Work/Fourier/Seam.lean`, the one new proof file; a run of `diff` on the challenge (VERIFY.md, section 1) and
+   of the script that makes the copies. And for the neighbouring work: an independent build and comparator run
+   of danadran01's theorem, which their record does not report.
 
 ## D. What was tried and did not work
 

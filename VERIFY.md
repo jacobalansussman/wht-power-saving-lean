@@ -11,23 +11,40 @@ Lean files that are byte for byte those of this repository, and then in a copy o
 `lakefile.lean` of this repository, partly from compiled files of the working build (section 3). A build of this
 revision from nothing has not been made (section 8, point 12).
 
+**State of the checks of the third result when this text was written.** Both theorems passed the official
+comparator once (section 5), in the project's working tree, on Lean files that are byte for byte those of this
+repository. `tools/Compare.lean` had not been run on them, and no build of this revision in a copy of the
+repository or from nothing had been made (section 8, point 13).
+
 ## 1. What is checked
 
-| theorem (namespace `OAI.PowerSaving.WHT`) | statement | challenge module | solution module | comparator config |
+| theorem (namespace `OAI.PowerSaving.WHT` unless written out) | statement | challenge module | solution module | comparator config |
 |---|---|---|---|---|
+| `OAI.PowerSaving.transform_mainZ` and `OAI.PowerSaving.convolution_mainZ` (third result) | `DFTGoalZ` and `ConvGoalZ`: OpenAI's `DFTGoal` and `ConvGoal` with `decimalExponentZ := 1 - 7474546/(10^(10:ℕ))` | `Work.Fourier.UniformFourierChallenge` | `Work.Fourier.Main` | `comparator/UniformFourier.json` |
 | `wht_main_block_B2Gp193x` (second result) | `∃ solve W, WHTProgram solve W ∧ WHTTimeBoundsAt (1 - 7474547/(10:ℝ)^10) W` | `Work.GCert.Data.ChallengeB2Gp193x` | `Work.GCert.Data.SolutionB2Gp193x` | `comparator/B2Gp193x.json` |
 | `wht_main_block_B2Ke16x` (first result) | the same with `1 - 5399225/(10:ℝ)^10` | `Work.CarrierCheck.ChallengeB2Ke16x` | `Work.CarrierCheck.SolutionB2Ke16x` | `comparator/B2Ke16x.json` |
 | `wht_main_rank_B2Ke16x` (first result, per-rank) | the same with `1 - 3155781/(10:ℝ)^10` | `Work.CarrierCheck.ChallengeB2Ke16xR` | `Work.CarrierCheck.SolutionB2Ke16xR` | `comparator/B2Ke16xR.json` |
 
 A challenge module states the theorem with `sorry` and imports only Mathlib: it is the text to read to see what
 is claimed (331 lines; the cost model, `wht`, `WHTProgram`, `WHTTimeBoundsAt`). The three
-challenge modules differ in the exponent, in the name of the theorem and in the comments that quote the two
+Walsh-Hadamard challenge modules differ in the exponent, in the name of the theorem and in the comments that quote the two
 and the module names, and in nothing else. A solution module proves a theorem of the same name. Two tools compare the two:
 
 * **comparator** (github.com/leanprover/comparator): the solution proves the same statement as the challenge, uses
   only the permitted axioms `propext`, `Quot.sound`, `Classical.choice`, and is accepted by the Lean kernel.
 * **`tools/Compare.lean`** (this repository, about 220 lines): an independent second check of "same statement
   as a kernel term, every definition the statement depends on identical, permitted axioms only".
+
+The challenge module of the third result (348 lines) is OpenAI's challenge file with three
+changes, which its first comment lists: that comment, the exponent, and the suffix `Z` on seven names. To see
+them (the first file is OpenAI's, unchanged; ORIGIN.md, last section, says how to compare it with a checkout
+of openai/math):
+
+    diff third-party/openai-math/lean/ComparatorChallenges/UniformFourier.lean Work/Fourier/UniformFourierChallenge.lean
+
+Expected: 9 hunks. One block of 12 added lines after line 2 (an empty line and the comment), and 8 changed
+lines, OpenAI's lines 269, 274, 317, 319, 321, 323, 326 and 330: the exponent, and the seven names where they
+are defined or used. So 20 lines are marked `>` and 8 are marked `<`, and nothing else differs.
 
 ## 2. What you need
 
@@ -129,6 +146,21 @@ One of these modules needs up to 7.0 GB and about 3 minutes (table). Build them 
 plain `lake build` would start several kernel checks of a certificate at the same time.) Always name the
 modules, as above.
 
+**Third result.** The modules of `Work/Fourier` hold no certificate data and make no kernel evaluation of a
+certificate. They import the final module of the second result, so they are built after the loop above:
+
+    lake build Work.Fourier.UniformFourierChallenge Work.Fourier.Main Work.Fourier.Axioms
+
+The warning "declaration uses `sorry`" then appears for a fourth module, the challenge
+`Work.Fourier.UniformFourierChallenge`. The build of `Work.Fourier.Axioms` prints, among other lines:
+
+    'OAI.PowerSaving.transform_mainZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'OAI.PowerSaving.convolution_mainZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'OAI.PowerSaving.RAM.hillsZ_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Measured in the project's working tree, on the compiled modules of the second result: `Work.Fourier.Seam` 35 s;
+the other 14 modules in one `lake build`, 58 s (9238 jobs, exit code 0). Memory was not sampled.
+
 ## 4. Check with `tools/Compare.lean`
 
     lake env lean --run tools/Compare.lean Work.GCert.Data.ChallengeB2Gp193x \
@@ -151,6 +183,13 @@ Measured: for the second result `RESULT: PASS`, exit code 0, twice: 227 s, 4.3 G
 project's working tree (15:43 to 15:47), and 148 s, 7.2 GB in the build copy (16:13 to 16:15). The two runs for
 the first result were not repeated for this revision (section 9).
 
+**Third result.** `tools/Compare.lean` takes both theorems in one run:
+
+    lake env lean --run tools/Compare.lean Work.Fourier.UniformFourierChallenge \
+        Work.Fourier.Main OAI.PowerSaving.transform_mainZ OAI.PowerSaving.convolution_mainZ
+
+It had not been run for the third result when this text was written.
+
 ## 5. Check with the official comparator
 
 The comparator needs three programs on `PATH`: `comparator` itself (github.com/leanprover/comparator),
@@ -160,6 +199,7 @@ its verdict can be trusted. Used here: comparator at commit `d03acab154d269c06e6
 lean4export at `076e8e57707e813375e8f9da8bf989799ace9680`, in both checkouts `lean-toolchain` changed from
 v4.34.0 to v4.34.1 (the Lean version of this repository) and nothing else.
 
+    lake env comparator comparator/UniformFourier.json
     lake env comparator comparator/B2Gp193x.json
     lake env comparator comparator/B2Ke16x.json
     lake env comparator comparator/B2Ke16xR.json
@@ -190,6 +230,7 @@ Measured (macOS, the stand-in above, `enable_nanoda` false; each row says where 
 
 | config | verdict lines | exit | time | largest resident size |
 |---|---|---|---|---|
+| `comparator/UniformFourier.json` (third result, both theorems), in the working tree, by the agent that built the proof, ended 18:27 | "Lean default kernel accepts the solution" / "Your solution is okay!" | 0 | 1528 s | 9.0 GB (9,660,301,312 bytes, the largest process as `time -l` reports it) |
 | `comparator/B2Gp193x.json`, in the working tree, by the agent that built the proof, ended 15:14 | "Lean default kernel accepts the solution" / "Your solution is okay!" | 0 | 1814 s | 9.1 GB |
 | the same, in the working tree, by an auditing agent with its own copy of the configuration, 15:25 to 15:43 | the same two lines | 0 | 1116 s | 9.4 GB (all Lean processes together) |
 | the same, in the build copy of this repository, 15:55 to 16:13 (every module replayed, none built) | the same two lines | 0 | 1058 s | 9.6 GB |
@@ -211,6 +252,16 @@ Both lines were obtained on the files of this revision (15:22, and again at 16:1
 that are not in the repository are the eight-decimal variant of the second result (`ChallengeB2Gp193`,
 `SolutionB2Gp193` and its comparator configuration). It compiles in the working tree and has not been put
 through the comparator, so it is not published.
+
+For the third result, the copies of OpenAI's files under `Work/Fourier/`:
+
+    python3 tools/fourier/regen_check.py
+
+makes the 11 copies, `Goal.lean`, the challenge and the comparator configuration again, in a temporary
+directory, from the unmodified files under `OAI/` and `third-party/openai-math/`, and compares them with the
+files of this repository. It needs Python 3 and no Lean. Expected last line, exit code 0:
+
+    RESULT: REPRODUCED (14 repository files reproduced byte for byte, 0 different, 0 generated files not in the repository)
 
 Reference checkers of the two certificates, written without Lean:
 
@@ -282,6 +333,7 @@ Read these before relying on the result.
 8. **What the checks do not say.** They say that the solution proves the statement written in the challenge
    module. Whether that statement means what a reader expects has to be judged by reading the challenge module:
    the cost model in it is OpenAI's, the definitions `wht`, `WHTProgram`, `WHTTimeBoundsAt` are my project's.
+   For the third result the whole challenge module is OpenAI's, with the three changes named in section 1.
    The checks say nothing about the speed of any program on inputs of realistic size.
 9. **`tools/Compare.lean` is my project's own tool.** It is a second opinion written independently of the
    comparator, not an independent party. The comparator is the outside tool.
@@ -297,6 +349,11 @@ Read these before relying on the result.
     (section 3). So for the second result no build from nothing has been made; the comparator pass in this copy
     (section 5) replayed compiled files of that origin. A rebuild from nothing with the commands of section 3,
     followed by sections 4 and 5, closes this gap; re-runs are welcome.
+
+13. **The third result.** Its modules were compiled, and its one comparator run was made, in the project's
+    working tree only. That run replayed compiled files, those of the certificate of the second result among
+    them (point 12). `tools/Compare.lean` and a negative control were not run for it. A rebuild from nothing
+    with the commands of section 3, followed by sections 4 and 5, closes this gap; re-runs are welcome.
 
 ## 9. Measurements of the first publication (2026-10-09, 194 modules)
 

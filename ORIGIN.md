@@ -1,8 +1,9 @@
 # Where every file comes from
 
 This file was written for the first publication (commit `024f763`, 194 Lean modules). Its tables describe the
-files of that publication, which are unchanged apart from the documentation files. The last section, "Files added in the second revision", lists
-what the second revision (2026-10-09) added.
+files of that publication, which are unchanged apart from the documentation files. The section "Files added in the second revision" lists
+what the second revision (2026-10-09) added, and the last section, "Files added in the third revision", what
+the third (2026-10-09) added.
 
 "openai/math" below means the repository github.com/openai/math at commit
 `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb` (Apache-2.0), directory `lean/`.
@@ -23,7 +24,8 @@ what the second revision (2026-10-09) added.
 | `README.md`, `RELATED-WORK.md`, `NOTICE`, `ORIGIN.md`, `VERIFY.md`, `MANIFEST.sha256`, `.gitignore` | 7 files | This project. `RELATED-WORK.md` quotes other people's pull requests and reproduces two BibTeX entries of openai/math. |
 | `LICENSE` | 1 file | The Apache License 2.0, byte-identical to `LICENSE` of openai/math (sha256 `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4`). |
 
-No file of openai/math is modified. Two files of this project contain copies of upstream proofs that were then
+No file under `OAI/` is modified. Since the third revision, modified copies of 11 of them are under
+`Work/Fourier/` (last section). Two files of this project contain copies of upstream proofs that were then
 changed (`Work/Scratch/Engine.lean`, `Work/Block/Engine.lean`; their comments mark the places, and `NOTICE`
 lists them). The namespace `OAI.PowerSaving` and the package name `OAI` are those of
 openai/math; they are kept because the new modules extend that development. Their use here does not mean that
@@ -116,3 +118,38 @@ Path names in the comments of the new Lean files:
 | `checks/wht26/gx-chain/py/netgen.py` | not in this repository (the script behind the five files of `Work/GCert/Chain/` named above) |
 | `checks/wht26/shared/gcert-interface.md` | not in this repository (a working specification of the certificate format) |
 | `(key: gx-data)`, `(key: gx-chain)`, `(key: gx-labels)`, `(key: gx-scalar)`, `(key: eng-labels)`, `(key: eng-integrate)`, `(key: combine)` | names of the work packages in which a file was written |
+
+## Files added in the third revision
+
+Nothing of the earlier publications was changed except the documentation files and `MANIFEST.sha256`.
+
+| path | files | origin |
+|---|---|---|
+| `Work/Fourier/Seam.lean` | 1 Lean file | This project. Written directly as Lean text. The kernel program of the generalised engine in the form of OpenAI's theorem `hills_program`, and the facts about the work bound that OpenAI's reduction uses. It repeats the statement of `hills_program` (`TensorProgram.lean`) and the definition of `hills` (`TensorSaving.lean`) with the two names replaced; its header says so. |
+| the 11 copied proof files under `Work/Fourier/` (table below) | 11 Lean files | **openai/math, modified.** Made by `tools/fourier/mkchain.py` from the unmodified files under `OAI/Computability/FourierTransform/`: every declaration has the letter `Z` in its name (as a suffix of its own name or of its parent's), `alpha` and `hills` are replaced by `alphaZ` and `hillsZ`, the definitions of the statement by those of `Goal.lean`, and the imports point to the copies. Two further edits were needed, and the first comment of each file names its own: in the copy of `Main` the same constant stands once as a literal number, 2/10^11, and is replaced there too (the two final theorems of that copy also received a comment of their own); and in the copy of `SynchronizedAlgorithm` the name `canopy` is written out as `Grove.canopy` in 5 places, because in the larger environment of the copy the short name would mean another declaration. The script also put the letter on three names inside OpenAI's comments; the comments are otherwise OpenAI's and describe OpenAI's network. Each file says this in its first comment (`NOTICE`, section 7). |
+| `Work/Fourier/Goal.lean` | 1 Lean file | **openai/math, modified.** Five definitions of `OAI/Computability/FourierTransform/Goal.lean` with the exponent replaced and the suffix `Z`; made by the same script. |
+| `Work/Fourier/UniformFourierChallenge.lean` | 1 Lean file | **openai/math, modified.** `lean/ComparatorChallenges/UniformFourier.lean` with a comment added, the exponent replaced and the suffix `Z` on seven names; made by the same script. Imports only Mathlib. |
+| `comparator/UniformFourier.json` | 1 JSON file | This project, on the pattern of `lean/ComparatorChallenges/UniformFourier.json` of openai/math: the same fields, with the module names and theorem names of this repository. |
+| `third-party/openai-math/lean/ComparatorChallenges/UniformFourier.lean` | 1 Lean file | **openai/math, unmodified.** Byte-identical to `lean/ComparatorChallenges/UniformFourier.lean` of the commit above (336 lines, sha256 `4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74`). Not part of the Lean build: `tools/fourier/mkchain.py` reads it to make the challenge, and `diff` shows the changes (VERIFY.md, section 1). With the checkout of "How to check the first row yourself": `cmp third-party/openai-math/lean/ComparatorChallenges/UniformFourier.lean openai-math/lean/ComparatorChallenges/UniformFourier.lean`. |
+| `Work/Fourier/Axioms.lean` | 1 Lean file | This project. It proves nothing: when it is built it prints the axioms of the final theorems and of `hillsZ_program` (VERIFY.md, section 3). |
+| `tools/fourier/` | 2 Python scripts | This project. `mkchain.py` makes the copies; `regen_check.py` makes the eleven copies, `Goal.lean`, the challenge and the comparator configuration again from the unmodified files under `OAI/` and `third-party/openai-math/` and compares bytes (VERIFY.md, section 6). |
+
+| File of this repository | Derived from (openai/math at fd4aeeb) | Lines: original, copy | Identical lines | Kind of change | Change notice in the file |
+|---|---|---|---|---|---|
+| `Work/Fourier/ArbitraryLength.lean` | `lean/OAI/Computability/FourierTransform/ArbitraryLength.lean` | 224, 239 | 159 | identifiers renamed on 64 lines (18 names: 15 with the suffix Z, 3 with Z inserted); 1 import line replaced by 1; 15 comment lines added; no other change to the code | yes |
+| `Work/Fourier/Asymptotics.lean` | `lean/OAI/Computability/FourierTransform/Asymptotics.lean` | 187, 202 | 112 | identifiers renamed on 74 lines (32 names: 26 with the suffix Z, 6 with Z inserted); 1 import line replaced by 1; 15 comment lines added; no other change to the code | yes |
+| `Work/Fourier/Axioms.lean` | none (new file; nearest upstream file `lean/OAI/Computability/FourierCircuit/Core.lean`, similarity 0.06) | -, 13 | - | not a copy | - |
+| `Work/Fourier/ConvolutionProgram.lean` | `lean/OAI/Computability/FourierTransform/ConvolutionProgram.lean` | 100, 115 | 77 | identifiers renamed on 22 lines (10 names: 9 with the suffix Z, 1 with Z inserted); 1 import line replaced by 1; 15 comment lines added; no other change to the code | yes |
+| `Work/Fourier/Goal.lean` | parts of `lean/OAI/Computability/FourierTransform/Goal.lean` | -, 35 | 6 | written for this repository, with upstream lines: of its 7 code lines, 6 are lines of `lean/OAI/Computability/FourierTransform/Goal.lean` (original lines 35, 75-77, 79, 81): unchanged: its lines 25; with identifiers renamed: its lines 21, 24, 26, 28, 30 | yes |
+| `Work/Fourier/Main.lean` | `lean/OAI/Computability/FourierTransform/Main.lean` | 151, 176 | 90 | identifiers renamed on 59 lines (40 names: 35 with the suffix Z, 5 with Z inserted); 1 import line replaced by 2; 24 comment lines added; other code lines changed: 1 of the original, 1 of the copy (copy line 59) | yes |
+| `Work/Fourier/Seam.lean` | parts of `lean/OAI/Computability/FourierTransform/Main.lean`, `lean/OAI/Computability/FourierTransform/TensorProgram.lean`, `lean/OAI/Computability/FourierTransform/TensorSaving.lean` | -, 245 | 19 | written for this repository, with upstream lines: of its 122 code lines, 15 are lines of `lean/OAI/Computability/FourierTransform/TensorProgram.lean` (original lines 36-37, 95-96): unchanged: its lines 93-94, 113-114, 141-142, 163-164, 185-187, 194-196; with identifiers renamed: its lines 184; 3 are lines of `lean/OAI/Computability/FourierTransform/TensorSaving.lean` (original lines 83-84, 114): with identifiers renamed: its lines 45-46, 59; 1 is a line of `lean/OAI/Computability/FourierTransform/Main.lean` (original line 60): with identifiers renamed: its lines 213 | yes |
+| `Work/Fourier/SectorAlgorithm.lean` | `lean/OAI/Computability/FourierTransform/SectorAlgorithm.lean` | 224, 239 | 162 | identifiers renamed on 61 lines (17 names: 13 with the suffix Z, 4 with Z inserted); 1 import line replaced by 1; 15 comment lines added; no other change to the code | yes |
+| `Work/Fourier/SynchronizedAlgorithm.lean` | `lean/OAI/Computability/FourierTransform/SynchronizedAlgorithm.lean` | 126, 142 | 94 | identifiers renamed on 31 lines (12 names: 10 with the suffix Z, 1 with Z inserted, 1 other), the other being `canopy` to `Grove.canopy` (5 lines); 1 import line replaced by 1; 16 comment lines added; no other change to the code | yes |
+| `Work/Fourier/TransformProgram.lean` | `lean/OAI/Computability/FourierTransform/TransformProgram.lean` | 146, 161 | 94 | identifiers renamed on 51 lines (21 names: 19 with the suffix Z, 2 with Z inserted); 1 import line replaced by 1; 15 comment lines added; no other change to the code | yes |
+| `Work/Fourier/UniformBounds.lean` | `lean/OAI/Computability/FourierTransform/UniformBounds.lean` | 183, 198 | 115 | identifiers renamed on 67 lines (29 names: 25 with the suffix Z, 4 with Z inserted); 1 import line replaced by 1; 15 comment lines added; no other change to the code | yes |
+| `Work/Fourier/UniformFourierChallenge.lean` | `lean/ComparatorChallenges/UniformFourier.lean` | 336, 348 | 328 | identifiers renamed on 7 lines (7 names: 7 with the suffix Z); 12 comment lines added; other code lines changed: 1 of the original, 1 of the copy (copy line 281) | yes |
+| `Work/Fourier/WorkingCompiler.lean` | `lean/OAI/Computability/FourierTransform/WorkingCompiler.lean` | 153, 168 | 104 | identifiers renamed on 48 lines (14 names: 14 with the suffix Z); 1 import line replaced by 1; 15 comment lines added; no other change to the code | yes |
+| `Work/Fourier/WorkingPreparation.lean` | `lean/OAI/Computability/FourierTransform/WorkingPreparation.lean` | 212, 227 | 156 | identifiers renamed on 55 lines (30 names: 28 with the suffix Z, 2 with Z inserted); 1 import line replaced by 1; 15 comment lines added; no other change to the code | yes |
+| `Work/Fourier/WorkingTransform.lean` | `lean/OAI/Computability/FourierTransform/WorkingTransform.lean` | 119, 134 | 91 | identifiers renamed on 27 lines (9 names: 8 with the suffix Z, 1 with Z inserted); 1 import line replaced by 1; 15 comment lines added; no other change to the code | yes |
+
+How the table was made: each file was compared line by line with the upstream file (`diff`-style alignment). "Identical lines" are the same bytes. "Identifiers renamed" counts the lines that are equal to the upstream line except for identifiers; "suffix Z" is a name with the letter `Z` appended (`gleamT` to `gleamTZ`), "Z inserted" a name with `Z` inside it or inside one component of a dotted name (`hills_pos` to `hillsZ_pos`, `Breezy.of_moves` to `BreezyZ.of_moves`), and any other substitution is written out. Every line that differs for another reason is counted as an import line, a comment line or an "other code line".
