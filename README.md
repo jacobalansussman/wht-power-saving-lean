@@ -447,6 +447,19 @@ No design for that is known yet. If you find one, the checker and pipeline in th
 data: a circuit in the certificate format of section 5 is a data file. The note `notes/scratch-copies.md` has the
 formulas and says where each of the four points above comes from.
 
+### The other open directions
+
+I expect to leave this project alone for a while, so [notes/open-directions.md](notes/open-directions.md) hands
+it on: every lead I know of, with what is known, what it might give, how to start, and what already failed.
+
+- **Major leads.** The scratch copies above (what-if 1.28147e-3, no design known); a per-rank theorem for the
+  generalised engine (its rate inequality at 4.058344e-4 is a Lean lemma already); the Fourier transform of
+  every length, which OpenAI headlines (largest outside Lean claim that my scans found: 3.2e-6); the room under
+  the outside ceilings (#201, DaysSky, claims 2.5657e-3 and covers neither this circuit nor this layout); the
+  Lean frame lemma and the checker, for what the multiplication project still assumes.
+- **Minor leads** (fourteen, each with its computed size and its label), **the checks I would welcome most**,
+  **seventeen things that were tried and did not work**, and **how a better circuit becomes a theorem here**.
+
 ## 8. Layout
 
     OAI/          89 files of openai/math (lean/OAI/Computability), unmodified
@@ -466,7 +479,7 @@ formulas and says where each of the four points above comes from.
     ORIGIN.md     where every file comes from (with MANIFEST.sha256); `tools/gx/ORIGIN.md` for the tools and
                   the certificate of the second result
     RELATED-WORK.md, NOTICE, LICENSE
-    notes/, third-party/    the note of section 7; the NOTICE file of CrocSwap/integer-mult-bounds (NOTICE, section 6)
+    notes/, third-party/    the notes of section 7 (scratch copies; all open directions); the NOTICE file of CrocSwap/integer-mult-bounds (NOTICE, section 6)
 
 The comments inside the Lean files were not edited for this release, so that the files are byte for byte the
 ones that were checked. They still use path names and working titles of the tree they were written in ("Scratch
