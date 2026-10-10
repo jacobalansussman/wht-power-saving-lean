@@ -1,0 +1,14 @@
+{
+  "challenge_module": "Work.GCert.Data.ChallengeB2Gp233",
+  "solution_module": "Work.GCert.Data.SolutionB2Gp233",
+  "theorem_names": [
+    "OAI.PowerSaving.WHT.wht_main_block_B2Gp233"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}
