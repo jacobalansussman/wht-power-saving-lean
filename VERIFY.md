@@ -413,5 +413,13 @@ source on top of a build of the third revision, several certificate modules in p
     'OAI.PowerSaving.convolution_mainY' depends on axioms: [propext, Classical.choice, Quot.sound]
     'OAI.PowerSaving.RAM.hillsY_program' depends on axioms: [propext, Classical.choice, Quot.sound]
 
-Not done for this result: the official comparator (section 5), a build from nothing, a run on arrays. The
-comparator configurations are `comparator/B2Gp233x.json` and `comparator/UniformFourier233.json`.
+The official comparator (section 5) was then run on Linux with its real sandbox (`landrun` built from its `main`
+branch with Go 1.24; `lean4export` at `076e8e57` and `comparator` at `d03acab1`, both with `lean-toolchain` set to
+v4.34.1; `enable_nanoda` false), through `systemd-run` as the comparator's README recommends, in the working tree
+after the builds above (nothing left to build: every module replayed):
+
+    lake env comparator comparator/B2Gp233x.json           # 05:53 to 06:12 local, 18.5 min, exit 0
+    lake env comparator comparator/UniformFourier233.json  # 06:12 to 06:28 local, 16.5 min, exit 0
+
+Both ended with "Lean default kernel accepts the solution" / "Your solution is okay!". Memory was not sampled.
+Not done for this result: a build from nothing, a run on arrays, the second kernel (`enable_nanoda`).

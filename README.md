@@ -59,8 +59,8 @@ by `tools/fourier/mkchain233.py`, which differs from `mkchain.py` only in its co
 Price of the circuit by the Python mirror (`tools/gx/gxdry.py`): whole-block 7547361/10^10 (7547364 holds,
 7547365 fails), per-rank unchanged at 4058344/10^10. The outside repository's own figure for this word in its
 three-stage layout is 7.0990740e-4 (pull request #233, certified by its scripts); in the five-stage layout of
-this repository the pairing alone is worth +0.97 percent over the circuit of #193. The official comparator was
-not run for this result (VERIFY.md, section 10).
+this repository the pairing alone is worth +0.97 percent over the circuit of #193. The official comparator accepted
+both solutions on Linux with its real sandbox (VERIFY.md, section 10).
 
 ## What is new here
 
