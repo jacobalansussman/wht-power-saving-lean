@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Work.FourierE8.UniformFourierChallenge",
+  "solution_module": "Work.FourierE8.Main",
+  "theorem_names": [
+    "OAI.PowerSaving.transform_mainE8",
+    "OAI.PowerSaving.convolution_mainE8"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}

@@ -1,0 +1,62 @@
+order	approach	helpers	helpers_per_pair	copy_moves	D	W	figure	saving	per_rank	sha256_of_gz	file_in_this_folder	remark
+1	reference: one helper per unwanted term (deliberately wasteful)	6728	56.0667	72	120	7208	1655510	1.6555e-4	972052	dd2a2e273ccf260f30d7b4361b4630b8e72a1b2c9cbe47b06081bc8e74fd599e		
+2	architecture of the published certificate transplanted	2166	18.0500	72	120	2646	4223321	4.2233e-4	2648825	bb63ffe55410dc4135b22a13048522f2e520763f71c7e4ad7205e9318e6ad917		
+3	covering without shared sums	2557	21.3083	72	120	3037	3666514	3.6665e-4	2307651	a6462071759c08e23fdee1aff67093f02fb494beed9071dbe576ac7da31dc267		
+4	architecture of the published certificate transplanted	1808	15.0667	72	120	2288	4785212	4.7852e-4	3063525	963c8672960f459061d0cb54dd26808ecf2412ece59763879dbac2bd97095988		
+5	architecture of the published certificate transplanted	1773	14.7750	72	120	2253	4836580	4.8366e-4	3111145	8e08ea6cbbb6a95013e8efea26ef4db73f26964d6517c96fbb551f281fe8ba3d		
+6	architecture of the published certificate transplanted	1665	13.8750	72	120	2145	5025959	5.0260e-4	3267887	37b6cea60740b6df162d03a9d2ca905e765412941a1003bbe7834813a26b3594		
+7	round 1: shared sums by symmetry, in-place pairs	1949	16.2417	72	120	2429	4595534	4.5955e-4	2885594	1ab3a3a7038d7cf2ef3578a74afcb8b6d9ba4575dbc1e0ad5b442f9d2b00df08		
+8	covering without shared sums	2480	20.6667	72	120	2960	3787420	3.7874e-4	2367708	f1f231c47e986eba22c8df3354b9946c7d9a603ba64673124050e274690e7e65		
+9	round 1: shared sums by symmetry, in-place pairs	1598	13.3167	72	120	2078	5248392	5.2484e-4	3373320	a6cda0e56be8c16f543a565027e55700744c35635ea3ea41256e145d440f4b4c		
+10	architecture of the published certificate transplanted	1670	13.9167	72	120	2150	5073193	5.0732e-4	3260283	f99049c0e93514edebfac4fea9c621d12006496e14110c36674b3294d6a6cb69	data/others/transplant-R1670-5073193.json.gz	field derived_from rewritten for publication, circuit unchanged; sha256 of the file as registered: 0bdcdf0a3244468e25fb0431caaa5cd979e9c3b2a08c25f3a7234da538d35921
+11	covering without shared sums	2372	19.7667	72	120	2852	3910405	3.9104e-4	2457411	22f59f014df07ba4c597a053a42a70d18d69a23727214df846666f4f1fb454a2		
+12	triangles on top, shared sums below	1664	13.8667	72	120	2144	5065357	5.0654e-4	3269412	2657942acecaf659e34048329cb26769bbc7589be2b52459bc9d60573cbf514d		
+13	covering without shared sums	2370	19.7500	72	120	2850	3918055	3.9181e-4	2459137	46f0da3e70eace65f73197b20a5a0e7cc7ad84c250e994a49018206621a0ee67		
+14	triangles on top, shared sums below	1532	12.7667	72	120	2012	5382649	5.3826e-4	3484049	04777791f682123d1371abfda68fed40f4548d2ec38bd4442a70bd38b242ee3c		
+15	covering without shared sums	2366	19.7167	72	120	2846	3923956	3.9240e-4	2462594	681f97b9cd773a9144d3c81ca547ac7795cf501bb8ac6554224b1acb1954cbe6	data/others/covering-R2366-3923956.json.gz	field derived_from rewritten for publication, circuit unchanged; sha256 of the file as registered: 8f472b094b5dd37870d8d55d565bea9731e486cd8e329603c7b2811c9525a29e
+16	round 1: shared sums by symmetry, in-place pairs	1299	10.8250	72	120	1779	6190737	6.1907e-4	3940705	c197c1682209fec28851cd360e59d966163cbe5911f85e8bc9782788a90c503d		
+17	triangles on top, shared sums below	1501	12.5083	72	120	1981	5467224	5.4672e-4	3538606	52aa16aa745cd0c82b7cc7102e99f71118c1a2dead42e39d698d6d543afcfc8c		
+18	triangles on top, shared sums below	1482	12.3500	72	120	1962	5513331	5.5133e-4	3572897	33e513c70234a80b3ced67597411b16c7c5417e19eb950281d7d4bfdf477a6eb		
+19	triangles on top, shared sums below	1475	12.2917	72	120	1955	5535177	5.5352e-4	3585699	69ef147e755ed70cdbbea0c4ff7ebf68894884a35c8ae72a7f5cb6de09967a82	data/others/triangles-R1475-5535177.json.gz	field derived_from rewritten for publication, circuit unchanged; sha256 of the file as registered: 7c3245528d14d481e18198798cf90eb4200af1cf403a7f0a380372ce0ffb3a3d
+20	round 1: shared sums by symmetry, in-place pairs	1149	9.5750	72	120	1629	6770851	6.7709e-4	4303867	59410a180f31fc0b8f6490640b71642b7fb981e62eddc047a3e5dfc27582e9bb		
+21	round 1: shared sums by symmetry, in-place pairs	1028	8.5667	72	120	1508	7467861	7.4679e-4	4649509	017ed5f14ff2b1e4e776f17033faea3c97e601e526daee92263fbe0b3b4fadb7		
+22	round 1: shared sums by symmetry, in-place pairs	1028	8.5667	72	120	1508	7558959	7.5590e-4	4649509	bb7607bc0f874c0e3f72fa98b90a2be9eaa96c91c812bf36e3dc52b79006c471		Lean-checked during the work, files not included
+23	round 2: sources read directly (xsub.py, xexp.py)	917	7.6417	72	120	1397	7992818	7.9928e-4	5019294	9b69c7abe2723bdfc7b831fae783d3fa6d3fddb060bbd958a7452bc4e4550ba3		
+24	round 2: an existing file re-scheduled (sched.py)	1028	8.5667	72	120	1508	7614776	7.6148e-4	4649509	8c0ca1e98e5b63abd4acbbef95b04c42e1f755fbee4ae02d57620cbb77766910		
+25	round 2: slot reuse (reuse2.py), alone or with the direct-read passes	985	8.2083	72	120	1465	7659352	7.6594e-4	4786104	139237c08cfcdbcaddf6be3b003ecb1122b07bfd1d4afc36c91ebdc00e131a54		
+26	round 2: sources read directly (xsub.py, xexp.py)	909	7.5750	72	120	1389	8023769	8.0238e-4	5048230	1ecd369dbeacce32d3e08e096d2f96f19c4ca5afc97c343f293106944c358d64		
+27	round 2: an existing file re-scheduled (sched.py)	917	7.6417	72	120	1397	8061861	8.0619e-4	5019294	b5a82ea5f050ebbca158608bc2e3e215dbb6acd4dc8217537b72f504ebcad2a0		
+28	round 2: slot reuse (reuse2.py), alone or with the direct-read passes	869	7.2417	72	120	1349	8131276	8.1313e-4	5198066	fd7c23dc560dd570146c10497c3bdf232989197cabf6d263003e532e20e10bf7		
+29	round 2: greedy choices changed, then all passes	956	7.9667	72	120	1436	7868871	7.8689e-4	4882849	60c55bf4d7b04849968668244182c302fdd93550ab2af32568298a322f915565		
+30	round 2: greedy choices changed, then all passes	891	7.4250	72	120	1371	8193327	8.1933e-4	5114574	ad6ea4cf8e354badaaecde4e991488014b2ea675786fb3cd80bde48ef44be51b		
+31	round 2: an existing file re-scheduled (sched.py)	869	7.2417	72	120	1349	8207378	8.2074e-4	5198066	3bc41b214887d4cb00eff5f325833c00bc365cd4f0f7b0aca9743eb0136cc0b1		
+32	round 2: slot reuse (reuse2.py), alone or with the direct-read passes	868	7.2333	72	120	1348	8213152	8.2132e-4	5201926	ab3a7afea34870b62cbf16e6ff3aef275342ce23b855d52d14ceda5a4fd85ee8		
+33	triangle top with the symmetric greedy below	1159	9.6583	72	120	1639	6805162	6.8052e-4	4277586	e32d3387b6a61cb78172298651db78a671814607d94fcf78f6e107b2ac8a2381	data/others/triangle-top-R1159-6805162.json.gz	field derived_from rewritten for publication, circuit unchanged; sha256 of the file as registered: c74f4be8a9812a12f901a59f85aff3d38ac4cbef0e334abe81f99c33b8653969
+34	round 2: greedy choices changed, then all passes	893	7.4417	72	120	1373	8196788	8.1968e-4	5107116	ca22d4926c42c736bfc85709d21a9a84a7c79a8e86576bf6a6d48b6adf1785ed		
+35	round 2: an existing file re-scheduled (sched.py)	868	7.2333	72	120	1348	8215871	8.2159e-4	5201926	bc415c8c7c7a67febc62bbea31883c03b49e5bcb2b50528434a99d99a354b873		
+36	round 2: sources read directly (xsub.py, xexp.py)	910	7.5833	72	120	1390	8028179	8.0282e-4	5044595	5eeca5cc480c6cf254443fb1c691d68e1c16cd1b15e8da4cdedb89ba9c3a4612		
+37	round 2: greedy choices changed, then all passes	855	7.1250	72	120	1335	8305701	8.3057e-4	5252633	d94da10de3a750cd0a7da80780cbc35e93693c2239937410709e2c22d8b5b766		
+38	round 2: an existing file re-scheduled (sched.py)	855	7.1250	72	120	1335	8307770	8.3078e-4	5252633	042707c103051f94d19d4e449dd30a84b11d59dc71cacb3df409b80daf3760a1		
+39	round 2: greedy choices changed, then all passes	853	7.1083	72	120	1333	8320202	8.3202e-4	5260521	2f575463d234c03f4e6add47215181c16e1e34406470b8b3973c76b010cec4d7		Lean-checked during the work, files not included
+40	round 3: a second slot-reuse pass on a finished file	835	6.9583	72	120	1315	8417401	8.4174e-4	5332602	b31220b0a71883a0f0564f5e1f08ad3ce43b24044b3cd9a0e54450605ed5bb0b		
+41	round 3: integer programme over the pool of 1,470 sums	827	6.8917	72	120	1307	8499603	8.4996e-4	5365275	aa702bbc168f9e0fe91479ac85c47f20cf6f3676c5b8894a9b61776e88a66058		
+42	round 3: a second slot-reuse pass on a finished file	812	6.7667	72	120	1292	8586263	8.5863e-4	5427630	a7c70d4ed8399576704a6fc003131084338d6759b0bb01575178c585a17a8ad4		
+43	round 3: more changed greedy choices; the programme with first weight 0.55	848	7.0667	72	120	1328	8351847	8.3518e-4	5280347	6812251df92ec382f6a0df3294ee0a8f9a780829d086a249f711267a785f640f		
+44	round 3: a second slot-reuse pass on a finished file	809	6.7417	72	120	1289	8601322	8.6013e-4	5440275	9592c65e25901e4d3fd6b10ad85429eeae8eea4aefdf70d6d9728e4e425aa1e3		
+45	round 3: a second slot-reuse pass on a finished file	811	6.7583	72	120	1291	8591102	8.5911e-4	5431838	e85aefcf6686de2a6fd22cd82909b1852ab3a6857a203257eab60ee339037c8e		
+46	round 3: integer programme over the pool of 1,470 sums	815	6.7917	72	120	1295	8585620	8.5856e-4	5415043	395b88b336cd8a9310618f1860224b0f205b08426263314c7a22af11c2f799cc		
+47	round 3: a second slot-reuse pass on a finished file	809	6.7417	72	120	1289	8620217	8.6202e-4	5440275	3eae71e724d368f5670f8f288cd9daa278344405ee81c35cea3752de693ee4d7		
+48	round 3: integer programme with a term for stops	808	6.7333	72	120	1288	8602392	8.6024e-4	5444503	dfeaa0a5f3c2bbaf993aeb25f6b3957aa5faa13b31a92881401ee355f4300026		
+49	round 3: a second slot-reuse pass on a finished file	808	6.7333	72	120	1288	8625953	8.6260e-4	5444503	b664ab13e92d851cfc1aec60248acf01714f9f455d9107dd70c0c6e0c4ccd89b		
+50	round 3: integer programme with two device weights	822	6.8500	72	120	1302	8520927	8.5209e-4	5385900	18dd27243b6587e0c0a655185a1889324a22017c3763d3645cbf96c895d65e88		
+51	round 3: integer programme over the pool of 1,470 sums	794	6.6167	72	120	1274	8716750	8.7167e-4	5504396	90ddafbe87254e64d48907439f6a9d3f6c2321b72552f4c2e8607a19c4c54bee		
+52	round 3: integer programme with a term for stops	801	6.6750	72	120	1281	8637167	8.6372e-4	5474286	d6911741bdfb3134a925ff9f6038f45056b5a8a990a41af0c370c212ccd85fdc		
+53	round 3: a second slot-reuse pass on a finished file	793	6.6083	72	120	1273	8721376	8.7214e-4	5508724	65b14f1548d5e8dd642462f38b1ec587641159413f118c66ae1eec7b07f778cf		
+54	round 3: a second slot-reuse pass on a finished file	792	6.6000	72	120	1272	8726429	8.7264e-4	5513060	61f7a4160bd1ea062c38e2851bd89378110ee1148702f26015801537da7d972a		
+55	round 3: integer programme with two device weights	787	6.5583	72	120	1267	8753727	8.7537e-4	5534839	629418f70a459934c1d2d8d0bcb14d88d2c345858eb9517c151a0e7a005bf54a		
+56	round 3: integer programme over the pool of 1,470 sums	785	6.5417	72	120	1265	8749632	8.7496e-4	5543599	b235313430d5c2a76e7e8bf816522d536f4f87b1ef50de02eb8f0941e866bc73		
+57	round 3: more changed greedy choices; the programme with first weight 0.55	782	6.5167	72	120	1262	8755827	8.7558e-4	5556791	0bb71b47ac9d9b1ba5e6ae60d2245568df933139eee2fb20cc9227c9bb060ee2		
+58	round 3: integer programme over the pool of 1,470 sums	785	6.5417	72	120	1265	8758761	8.7588e-4	5543599	7cfe00b3e8e3067a0f3ede787c6d6bd805368e8fe7afea0005204a371fe0d1e4		
+59	round 3: integer programme with two device weights	783	6.5250	72	120	1263	8762479	8.7625e-4	5552387	4b92f00fc7454b9b15e6d71a3b05062792eacca0a0ca4efee46f87827d57c8aa		the certificate of this repository (tools/certificate/gcert1-e8-r783.json.gz)
+60	round 3: integer programme with a term for stops	785	6.5417	72	120	1265	8757259	8.7573e-4	5543599	11f503620a3920897defd6b4a20be01de39f2f5e79129fbcdb0c1610b4dc6738		
+61	round 3: more changed greedy choices; the programme with first weight 0.55	782	6.5167	72	120	1262	8757398	8.7574e-4	5556791	272a6f0abdbfd4873fac841b12242f4d4b529b1b410ac33c9a10ee177b3ec784		

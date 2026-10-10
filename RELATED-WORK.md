@@ -3,12 +3,25 @@
 Author of this repository: Jacob Sussman. Repository: https://github.com/jacobalansussman/wht-power-saving-lean.
 
 This file says what this work takes from others, what it shares with work that others published first, and
-where the other results stand. It rests on three read-only looks at public sources by the AI agents I directed:
+where the other results stand. It rests on read-only looks at public sources by the AI agents I directed. The
+first three were
 a scan on 2026-10-08 at about 21:10 UTC, a scan on 2026-10-09 ending 10:39 UTC, and a re-read of 20 pull requests
 and 4 repositories on 2026-10-09 from 11:46 to 11:55 UTC. For the second result they looked again on 2026-10-09:
 a read-only fetch of six pull-request heads at 13:17, reads of pull requests #192 to #198 at 14:02, a list of
 titles at 14:37, and a look at 16:06 (section 5). For the third result: a read of three repositories at
-17:15 on 2026-10-09, and a last look at 18:11 on 2026-10-09 (section 5). **All times are UTC.**
+17:15 on 2026-10-09, and a last look at 18:11 on 2026-10-09 (section 5).
+
+For the fourth revision they read more on 2026-10-10:
+
+- For the credits of section 1: the descriptions of pull requests #161, #162, #163 and #168, and the scripts
+  that NOTICE, section 6, names. The figures of section 5 were not looked at again.
+- For the fourth result: the 100 newest pull requests of CrocSwap/integer-mult-bounds, #233 to #332, in one
+  read at 20:49 on 2026-10-10 (section 8).
+- For the sentence about the largest saving with a Lean proof: the repositories for the Fourier statement
+  and the list of the community's pull requests again, between 21:25 and 21:35 on 2026-10-10 (section 8,
+  "The look of the evening of 2026-10-10").
+
+**All times are UTC.**
 
 Rules of this file:
 - Every outside figure is **a claim of its authors**. How they checked it is stated next to it. The authors of
@@ -20,9 +33,12 @@ Rules of this file:
   complex-side saving 13126968687/(2 * 10^13) = 6.5634843e-4. In the five pull requests where the agents compared
   the two (#130, #144, #155, #168, #178) the complex-side saving is a little above the kappa of the title.
   In #193 it is 5 percent above: complex side 7.009184e-4, kappa 6.647872e-4.
-- No outside checker was run and no outside Lean development was built. The agents read sources and recomputed
-  some arithmetic. For the second result they also loaded published data files into their own programs
-  (section 1).
+- No outside checker was run. One outside Lean development was built: pull request #2 of this repository,
+  which the agents built on a Linux machine on 2026-10-10 (section 8). No other outside Lean development was
+  built. For the rest the agents read sources and recomputed
+  some arithmetic. For the second result they also loaded published data files into the programs that are
+  now in `tools/rebuild/`. They made those programs in part by adapting the outside scripts (section 1;
+  NOTICE, section 6).
 - People are named by their GitHub handles, as in the sources.
 - "Not found" means: searched for and not found. It does not mean "does not exist".
 - The field moved every 10 to 30 minutes while this was written. Section 5 is out of date by the time you read it.
@@ -30,7 +46,9 @@ Rules of this file:
 "Saving" is 1 - z in a bound n (log n)^z. My figures are 7.474547e-4 (the second result) and 5.399225e-4 (the
 first), both in whole-block accounting, both Lean theorems for the Walsh-Hadamard statement described in the
 README; and 7.474546e-4 (the third result), a Lean theorem for OpenAI's own Fourier statement of every
-length, from the kernel program of the second.
+length, from the kernel program of the second. The fourth result, of 2026-10-10, has Lean theorems at two more
+figures: 8.762479e-4 for the Walsh-Hadamard statement and 8.762478e-4 for the Fourier statement of every
+length. They come from a new unit (section 8).
 
 ## 1. What this work takes from others
 
@@ -99,9 +117,14 @@ the largest thing the second result takes from others. The circuit is theirs in 
   the physical layer. Package by Avi Eisenberg with Claude assistance." The citation file of the repository
   (at `4a3c769`) asks to cite icekylinx's paired-cube construction, an664's completed-core sharing and the
   constituent contributions, and names Douglas Colkitt as maintainer.
-- Techniques inside these data that earlier pull requests introduced: slot reuse at birth (#124, jamesyc; #143,
-  eumemic), operation-frame descent (#131, eumemic; #168), source gauges (#115 and #144, icekylinx), carrier
-  links (below).
+- Techniques inside these data that earlier pull requests introduced:
+  - slot reuse at birth: jamesyc (#124) and eumemic (#143);
+  - operation-frame descent: eumemic (#131), and #168;
+  - source gauges: icekylinx (#115 and #144);
+  - carrier links (below), and their compilation under the closure condition of #162 (DaysSky);
+  - merged output reads: eumemic (#161), in the form that #168 gives them. In that form each port's three
+    single-target outputs are fused into one. In the words of #168, this fusion
+    "follows #163's same-singleton fusion" (#163, chafreaky). The fold orders are #168's own.
 - The branch of #193 is stacked on #191, and #191 on #185 (rohanarun) with #184 merged. The shared-edge local
   circuit of #181 (chafreaky) and its successors #186 (Dugongue) and #195 (huxint) are another line: by the
   agents' rebuild the word of #193 has the local circuit of #184, not the shared-edge one.
@@ -112,7 +135,9 @@ the largest thing the second result takes from others. The circuit is theirs in 
   and `references/paired-cube/physical/frames.json` (frames). From #193 (`187e101`):
   `research/source-assisted-v4/data/physical-pairs.json` (pairs). Thirteen files of #168 were compared by blob
   hash with the tree of #193 and are equal.
-- **What the agents made of it.** Their own generator rebuilt the circuit and reproduced the published counts
+- **What the agents made of it.** They made the programs that are now in `tools/rebuild/`, in part by
+  adapting the scripts of these pull requests. [NOTICE](NOTICE), section 6, names the scripts and their
+  authors. Those programs rebuilt the circuit and reproduced the published counts
   of #193: 9,412 helper arrays, 12,052 roles per vertex, rank mass 794,112, and the histogram of block ranks. The
   result is one explicit list of additions. #193 itself publishes a ledger (counts per frame) with local checks.
   Each of its 1,980 in-place steps is written here as two ordinary additions.
@@ -162,8 +187,10 @@ starting point.
 the resting slot to a later use of the same value, which saves one helper array. The idea is from CrocSwap pull
 requests #24, #32 and #36 (icekylinx), with a weighted version in #44 (rohanarun) and link-friendly circuits in
 #53 and #62 (ikeboy). Checked by their authors in Python and C++. The agents applied it to NStar3 with a maximum
-matching. The circuit of the second result comes with its authors' own carrier links (`matching-arcs.json` of
-#168).
+matching. The circuit of the second result comes with its authors' own carrier links: `matching-arcs.json` of
+#168 has 10,704 links. #168 says that they were compiled with the `compile_closure` of #162 (DaysSky). The
+rebuild carries 10,044 of them over to the word of #193 (the word is the network written as a sequence of
+stages).
 
 ## 2. Ideas developed here that others published first
 
@@ -210,6 +237,11 @@ far as my scans found at the time of writing".
 
 ## 4. How my figures compare with the outside figures
 
+- **Fourth result.** My 8.762479e-4 is for another circuit than any outside figure. It is for a unit on 120
+  labels of width 9, found by this project's search (section 8). A unit is the finite network that a saving
+  is computed from. The outside figures for the same quantity are for the community's paired-cube circuit at
+  h = 22 or h = 20 in the five-stage layout. Mine is a Lean theorem of this repository. Section 8 says how
+  each outside figure is certified.
 - **Second result.** My 7.474547e-4 and the complex side of #193, 7.009184e-4, are the same circuit in two
   layouts: their word has three stages, mine has five (the bridged word, section 3). By the agents' computation
   the circuit of #193 in a three-stage word gives 7.0091e-4, their figure. So the difference is the layout and
@@ -256,11 +288,20 @@ far as my scans found at the time of writing".
 - My first two results are about the Walsh-Hadamard transform. None of rows C, D and E has a figure for it.
 
 Outside techniques and this work. The first result uses none of the following; the second uses those that are
-in the data of #193: slot reuse at birth (#124, #143), operation-frame descent in bundles (#131, #168, #178),
-partial and pair-aware source gauges (#115, #144), extended carrier matching (#162), merged output reads
-(#161), the paired-cube producer at p = 11. Used by none of the three results: terminal sinks (#166; #193 has none), the bit
+in the data of #193:
+
+- slot reuse at birth (#124, #143);
+- operation-frame descent in bundles (#131, #168, #178);
+- partial and pair-aware source gauges (#115, #144);
+- extended carrier matching (#162, DaysSky);
+- merged output reads (#161). In the published circuit they are #168's fusion of each port's three
+  single-target outputs, which follows #163 (chafreaky);
+- the paired-cube producer at p = 11.
+
+Used by none of the first three results: terminal sinks (#166; #193 has none), the bit
 side of the outside networks, and the transfer to every length without padding to a power of two (eumemic,
-danadran01). The third result uses OpenAI's own transfer (section 1).
+danadran01). The third result uses OpenAI's own transfer (section 1), and so does the fourth. The fourth
+result has no bit side either. Section 8 says which devices its circuit uses.
 
 ## 5. Where the other results stood on 2026-10-09
 
@@ -397,6 +438,21 @@ particular routes exist.
   30 newest pull requests with their bodies, the latest commits of five repositories, the 100 newest forks of
   openai/math, the branches and events of two of them, two repository searches, the rate limit) and one for the
   README of shea256's repository at `a2840b1`.
+- Reads for the fourth revision (2026-10-10), read-only and without authentication. Through the public GitHub
+  API: the pull requests #161, #162, #163, #168, #233 and #304. As text: scripts of #144, #161, #162, #168
+  and #193. No outside program was run. These reads were made for the credits of section 1 and for the two
+  later figures that the README names. The scans of section 5 were not repeated.
+- One more read for the fourth result, read-only: at 20:49 on 2026-10-10 one request to the GitHub API for the
+  100 newest pull requests of CrocSwap/integer-mult-bounds (#233 to #332) with their descriptions (section 8).
+  Nothing was fetched from their branches and nothing was run.
+- A last look for the fourth result, read-only, by three agents between 21:25 and 21:35 on 2026-10-10:
+  requests to the public GitHub API and GitHub's repository search, arXiv by title and abstract, and Hacker
+  News. It covered the repositories for the Fourier statement (danadran01, eumemic, shea256, and
+  xangma/exact-fourier-circuits, which is new to this file), pull request #2 of this repository, the list of
+  the community's pull requests up to #334, and the forks of openai/math pushed since 2026-10-09 (not every
+  branch). In this look nothing was built and nothing was run (section 8).
+- One outside Lean proof was built for the fourth result: pull request #2 of this repository, at its head
+  `837dc31`, on a Linux machine, between 20:38 and 21:51 on 2026-10-10 (section 8).
 - Covered: openai/math and its forks (every branch of the roughly 65 forks pushed since 2026-10-07); the
   CrocSwap pull requests up to #178 (#169 to #177 by title and summary only) and those named in the line
   above; the repositories named above.
@@ -426,3 +482,136 @@ of family 130, copied from `preprints/` of openai/math at commit `fd4aeeb`:
                       \href{https://github.com/openai/math/blob/main/preprints/An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026/main.pdf}{OAI:An-explicit-power-saving-for-the-exact-discrete-Fourier-transform-September-25-2026}},
       year = {2026}
     }
+
+## 8. The fourth result (2026-10-10): credits, and where the outside figures stood
+
+**What the new circuit takes from others.** The agents I directed designed and found the circuit of the
+fourth result on 2026-10-10 (README, sections 4 and 6). Three devices in it are other people's. In the list,
+a helper is a helper array: an extra array that holds a partial sum.
+
+- **The in-place pair**, from icekylinx
+  ([#184](https://github.com/CrocSwap/integer-mult-bounds/pull/184)), carried in ikeboy's #191 and #193.
+  It forms a + b and a - b on the two arrays that held a and b. The circuit of the second result has 1,980
+  such steps. The new circuit has them too. Among them are kinds with other signs and with halves that the
+  circuit of the second result does not have. In the integer programme that selects the shared
+  sums, the in-place pair is one of the kinds of node.
+- **The re-use of finished helpers with a compensating read**, from jamesyc
+  ([#124](https://github.com/CrocSwap/integer-mult-bounds/pull/124)) and eumemic
+  ([#143](https://github.com/CrocSwap/integer-mult-bounds/pull/143)). A helper that nothing reads any more
+  takes a new value, and each target concerned first reads the old content with the opposite sign. Section 1
+  names both for the circuit of the second result.
+- **The late pairing rule**, from Chafik Boukhalfa (the account chafreaky, by his own statement):
+  [#200](https://github.com/CrocSwap/integer-mult-bounds/pull/200) and
+  [#233](https://github.com/CrocSwap/integer-mult-bounds/pull/233), and pull request #2 of this repository.
+  The rule is the choice of which finished helper a new value takes. The search programs use his idea as
+  the rule that picks the finished helper, in a greedy rule written here. His program, his 2,310 pairs and
+  his certificate were not used. On an earlier design of the same day, against a control with the opposite
+  rule, that rule was 40 percent of the gain of the re-use pass. That is about 0.5 percent of that design's
+  saving: 7.659352e-4 with the rule and 7.618803e-4 with the opposite rule. Both are prices computed in
+  Python, with no Lean proof. It was not measured on the certificate of this revision.
+
+Chafik Boukhalfa is credited in two more places: in section 1, for the fusion of single-target outputs
+(#163) in the circuit of the second result, and in the README, for the hand-over pairs of #233.
+
+A related idea that the new circuit does not take from its source:
+[#304](https://github.com/CrocSwap/integer-mult-bounds/pull/304) (DreamingOfClouds) forms more shared sums
+before the scatter, the one step that hands the totals to the targets. As far as I know, the sums
+that the new circuit forms before the scatter were not taken from #304.
+
+The integer programme is solved with HiGHS, an open-source solver, called through SciPy.
+
+**What these credits rest on.** As far as I know, no agent of the first two rounds of the search read the
+community's repository, CrocSwap/integer-mult-bounds. The attributions come from two places:
+
+- the descriptions of the pull requests, which other agents of this project read on the morning of
+  2026-10-10;
+- the credits already in this file.
+
+The commit history of that repository was not read for them. If a device here should be credited to someone
+else, please open an issue.
+
+**Where the outside figures stood at 20:49 UTC on 2026-10-10.** The table rests on one read of the 100 newest
+pull requests of CrocSwap/integer-mult-bounds (#233 to #332): their titles and descriptions. Every figure is
+a claim of its authors, as everywhere in this file.
+
+| figure for the quantity of my Walsh-Hadamard theorem (five-stage layout) | whose | how certified, by its own text | mine is |
+|---|---|---|---|
+| 7795/10^7 (7795973/10^10) | [#327](https://github.com/CrocSwap/integer-mult-bounds/pull/327), DreamingOfClouds, 18:51, open; h = 20, 6,455 helpers | "two independent rational moment engines"; its author reports that it was "kernel-checked in Lean with Jacob Sussman's unchanged generator". Not built here | 1.1240 times it |
+| 7635/10^7 (7635875/10^10 by `gxdry.py` here) | [#304](https://github.com/CrocSwap/integer-mult-bounds/pull/304), DreamingOfClouds, 12:01 UTC on 2026-10-10, open; h = 22, 9,160 helpers | scripts; its description said "no Lean build" | 1.1475 times it |
+| 7547361/10^10 | the circuit of #193 with the pairs of #233 (Chafik Boukhalfa, chafreaky); his pull request #2 of this repository, open | pull request #2 reports a Lean kernel check of the Walsh-Hadamard statement at this figure and of the Fourier statement at 7547360/10^10, `tools/Compare.lean` "PASS for both" and a comparator run on Linux, "both accepted". The agents built the pull request on a Linux machine on 2026-10-10: all 54 Lean modules that it adds compiled, and `tools/Compare.lean` printed `RESULT: PASS` for both statements; they did not run the comparator on it (the record below). In this repository's own rebuild the figure is a price by `gxdry.py`, and `tools/rebuild/` reproduces it (README, "Whose circuit this is") | 1.1610 times it |
+| 7474547/10^10 | the second result of this repository | a Lean theorem here | 1.1723 times it |
+
+Among those 100 pull requests, the largest kappa in a title was 7.77268e-4 (eumemic,
+[#332](https://github.com/CrocSwap/integer-mult-bounds/pull/332), 20:17 UTC). At 21:15 UTC #334 passed it
+with 7.77596e-4 (the look of the evening, below). Kappa is the saving for integer
+multiplication, and it needs a bit side as well (rules above). This repository offers none. The new unit
+(the finite network that the saving of the fourth result is computed from) has not been tried as a
+complex-side supplier for that project.
+
+So as of that read and of the look of the evening (below), 8.762479e-4 is the largest saving with a Lean
+proof that I know of for the Walsh-Hadamard
+statement, and 8.762478e-4 for the Fourier statement. That claim covers only figures with a Lean proof, on
+purpose. #208, an older pull request that is not among the 100, prices targets up to kappa 1.226488e-3 that
+its own title calls "target, not built". The claim does not cover prices of that kind.
+
+**The look of the evening of 2026-10-10 (21:25 to 21:35).** Three agents read the outside sources again,
+read-only, for the sentence above. These three agents built nothing. Every Lean build below is as its author
+reports it. There is one more thing to say of the first item: other agents built that pull request on the
+same evening (the record after this list).
+
+- **Pull request #2 of this repository**, by Chafik Boukhalfa (the account chafreaky), open, head `837dc31`.
+  It states 1 - 7547360/10^10 for the Fourier transform of every length and 1 - 7547361/10^10 for the
+  Walsh-Hadamard transform. It is his result: the circuit of his #233 in the five-stage layout of this
+  repository. He reports the Lean build and the comparator runs for both. This was the largest outside
+  figure with a Lean proof for the Fourier statement. The agents built it on a Linux machine on the same
+  evening, and every module of it compiled (the record after this list).
+- **shea256/fourier-transform-below-nlogn**, read at commit `62554f9` (04:53). Since commit `a101b36` (03:16)
+  its selection is 7.547360e-4, marked "formalized", in place of the 6.7e-4 of 2026-10-09. Its words: "an
+  incorporated upstream result with a reproduced Lean proof" and "it does not claim a new exponent of our
+  own". The rebuild is reported by its author. It was not built here.
+- **danadran01/exact-dft-power-saving**: still at `1a7b25e`, with 3.2e-6.
+- **eumemic/exact-dft-bounds**: still at `6f87d1a`, with every saving below 4.856e-4, written. Its open pull
+  request #1 (chafreaky) has written figures up to 7.099e-4, "not formally verified".
+- **openai/math**: still at `fd4aeeb`.
+- **xangma/exact-fourier-circuits**, which this file had not named. It has a Lean proof for the Fourier
+  transform of every length with theta < 1 - 2/10^13 and an extra log log factor. That is about the size of
+  OpenAI's saving. Its machine model is its own, so it is not the statement of this repository. It was not
+  built here.
+- **CrocSwap/integer-mult-bounds**, at 21:33. Two more pull requests existed, #333 and #334 (both eumemic).
+  #334 has the largest kappa in a title, 7.77596e-4 (21:15), and keeps #327 as its complex side. Neither
+  states a Lean build. The closed #246 (maxime-fleury) prices 8.3465e-4 for the complex side and calls it "a
+  conditional priced target, not a witness". So the first row of the table is the largest complex-side
+  figure with a reported Lean check, not the largest figure priced.
+- **Also looked at:** the forks of openai/math pushed since 2026-10-09 (not every branch), GitHub's
+  repository search, arXiv by title and abstract, and Hacker News.
+- **Not looked at:** X, Zulip, Discord, forums, other code hosts, and the branches of forks of the
+  community's repository that are not pull requests.
+- **What was found:** no Lean proof, reported or built, of a saving of 8.7625e-4 or more for either
+  statement. My 8.762478e-4 for the Fourier statement is 1.16 times the 7.547360e-4 of pull request #2. My
+  8.762479e-4 for the Walsh-Hadamard statement is 1.12 times the 7.795973e-4 of #327.
+
+**The build of pull request #2 of this repository, 2026-10-10 (20:38 to 21:51).** This is Chafik Boukhalfa's
+result on his own hand-over pairs. On my Mac the build could not finish, so the agents built it on a Linux
+machine.
+
+- **Where:** a rented Linux machine (x86-64, Ubuntu 24.04, 51 GiB of memory), at the head of the pull request,
+  `837dc31`, on top of a from-source build of the published tree of this repository (`f010392`) on the same
+  machine.
+- **The build:** all 54 Lean modules that the pull request adds compiled, with no error.
+- **The two heaviest modules:** `Work.GCert.Data.Gen.P233Scal0` and `Work.GCert.Data.Gen.P233Scal1` built in
+  574 s and 642 s. The largest process of each held about 13 GB (13.3 GB and 13.4 GB). The 54 modules took 66
+  minutes in all, on a machine that other jobs shared.
+- **The axioms:** his three theorems, `wht_main_block_B2Gp233x`, `transform_mainY` and `convolution_mainY`,
+  depend on `propext`, `Classical.choice` and `Quot.sound`, and on no other axiom.
+- **The statement check:** `tools/Compare.lean` printed `RESULT: PASS` for his Walsh-Hadamard challenge and
+  solution and for his Fourier challenge and solution, with the constant counts that he states (38871; 43381
+  and 43404).
+- **Not run in that build:** the official comparator on his two configurations. He reports those runs
+  himself.
+- **Mathlib** was not compiled there. Its compiled files came from Mathlib's cache.
+- **The Python checks** of his certificate were made on the Mac earlier that day, not on the Linux machine
+  (README, "Whose circuit this is").
+- **On the Mac** (16 GB of memory) 36 of the 54 modules built. The build could not finish there, because the
+  two heaviest modules need about 13 GB each.
+- **Not merged:** his files are in his pull request and not in this repository, so these three theorems are
+  his and are not theorems of this repository. The README says why ("Whose circuit this is").

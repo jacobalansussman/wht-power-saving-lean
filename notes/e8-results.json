@@ -1,0 +1,212 @@
+{
+  "format": "e8-results/1",
+  "written": "2026-10-10",
+  "author": "Jacob Sussman",
+  "about": "Machine-readable index of the E8 result of the fourth revision: figures, files, checksums, theorem names, which program reproduces what, and which approach reached which figure. The account in words is in how-the-e8-unit-was-found.md, what-did-not-work.md and open-directions-2.md, in this folder.",
+  "how_to_read": {
+    "figure": "A figure is a saving 1 - z. figure_integer N means the exponent z = 1 - N/10^10; saving is the same number in the form 8.7625e-4.",
+    "status_values": {
+      "lean": "a theorem of this repository, checked by Lean's kernel",
+      "lean_during_the_work": "built and checked in Lean on 2026-10-10 under a working name; the Lean files of that design are not included in this repository",
+      "price": "computed by tools/gx/refcheck.py and tools/gx/gxdry.py for a certificate file that both accept; not checked in Lean in this repository",
+      "what_if": "arithmetic with no design behind it",
+      "on_paper": "argued in writing by the AI agents of this project with computer checks; not in Lean, without a human review"
+    },
+    "review": "The reports behind this index were written by AI agents (Claude) that I directed, on 2026-10-09 and 2026-10-10. They have not had a line-by-line human review."
+  },
+  "unit": {
+    "family": "E8",
+    "family_definition": "all triples and all complements of pairs on 9 points: 84 labels with three ones and 36 with seven; 120 labels of width 9; two pairs know each other when their labels overlap in an even number of places; each pair knows 56 others",
+    "label_width_h": 9,
+    "pairs_v": 120,
+    "stages": 5,
+    "block_size_m": 45,
+    "helpers_R": 783,
+    "helpers_per_pair": 6.525,
+    "arrays_W": 1263,
+    "totals": 8,
+    "totals_frame_dimension": 9,
+    "copy_moves_cst": 72,
+    "moves_saved_D": 120,
+    "moves_saved_formula": "D = 4 v - 5 cst = 480 - 360",
+    "moves_in_one_pass_N": 9039,
+    "helper_blocks_in_one_pass": 3396,
+    "helper_blocks_per_helper": 4.34,
+    "scalar_units": {"sources": "1/2", "helpers": "1/2", "targets": "1/6"}
+  },
+  "certificate": {
+    "path": "tools/certificate/gcert1-e8-r783.json.gz",
+    "sha256_gz": "4b92f00fc7454b9b15e6d71a3b05062792eacca0a0ca4efee46f87827d57c8aa",
+    "sha256_json": "3594f19c4d01cf11fb930c5c61baeed399620acbc5b94096b16bcacb23997dd3",
+    "bytes_gz": 21883,
+    "figure_integer": 8762479,
+    "saving": "8.7625e-4",
+    "exponent": "1 - 8762479/10^10",
+    "ratio_to_third_revision": 1.1723,
+    "python_checks": {
+      "status": "price",
+      "refcheck": "ACCEPTED by gx.check1: h=9 v=120 R=783 N=9039 gates A=773 B=1220",
+      "gxdry_mirror": "MIRROR ACCEPTS (label side E0 E1 E2 E6, scalar side E3 E4 E5)",
+      "gxdry_figure": "10 decimals, fill 1 - 2^-40: whole-block 8762479 (evaluated 8762482 holds / 8762483 fails); per-rank 5552387",
+      "gxrate_unit": "unit B2Ge8: W=1263 m=45 D=120 tally=56715",
+      "labels": "exactly the 120 E8 labels (set comparison)"
+    }
+  },
+  "lean": {
+    "walsh_hadamard": {
+      "theorem": "wht_main_block_B2Ge8x",
+      "statement_shape": "exists solve W, WHTProgram solve W and WHTTimeBoundsAt (1 - 8762479 / 10 ^ 10) W",
+      "exponent": "1 - 8762479/10^10",
+      "certificate_name": "E8",
+      "instance_name": "B2Ge8",
+      "namespace": "GXD.E8",
+      "modules": "Work/GCert/Data/Gen/E8*.lean and Work/GCert/Data/ (E8Cert, E8Price, E8ScalOK, RateB2Ge8, RateB2Ge8x, InstB2Ge8, B2Ge8, B2Ge8Main, ChallengeB2Ge8x, SolutionB2Ge8x)",
+      "comparator_config": "comparator/B2Ge8x.json",
+      "written_by": "the generators of the third revision, unchanged: tools/gx/gxgen.py and tools/gx/gxrate.py; no hand-written Lean",
+      "regeneration_check": "python3 -B tools/gx/regen_check_e8.py",
+      "kernel_build": "built by Lean's kernel on two machines on 2026-10-10: Mac, 24 modules, exit code 0, 183 s; Linux, 24 modules, exit code 0, 476 s",
+      "axioms": "[propext, Classical.choice, Quot.sound]",
+      "compare_lean": "RESULT: PASS on the Mac and on Linux",
+      "comparator": "Your solution is okay! on the Mac (stand-in tools/landrun-macos-shim.sh) and on Linux (a stand-in built on namespaces; that kernel has no Landlock); no run with the real landrun",
+      "peak_memory": "build: 6.15 GB resident on the Mac, 6.69 GB on Linux; tools/Compare.lean: 7.32 GB resident and about 9.8 GB of footprint (sampled) on the Mac, 16.0 GB resident on Linux; comparator: 6.09 GB on the Mac, 6.80 GB on Linux"
+    },
+    "fourier_and_convolution": {
+      "theorems": ["transform_mainE8", "convolution_mainE8"],
+      "folder": "Work/FourierE8",
+      "exponent_expected": "1 - 8762478/10^10",
+      "exponent_built": "1 - 8762478/10^10",
+      "comparator_config": "comparator/UniformFourierE8.json",
+      "hand_made_files": {
+        "Work/FourierE8/Seam.lean": "Work/Fourier/Seam.lean with 96 lines changed and 6 comment lines added",
+        "Work/FourierE8/Axioms.lean": "Work/Fourier/Axioms.lean with 10 lines changed",
+        "tools/fourier/mkchain_e8.py": "tools/fourier/mkchain.py with 40 lines changed and 4 comment lines added",
+        "tools/fourier/regen_check_e8.py": "tools/fourier/regen_check.py with 10 lines changed and 3 comment lines added"
+      },
+      "generated_files": "13 Lean files in Work/FourierE8 and comparator/UniformFourierE8.json, written by tools/fourier/mkchain_e8.py",
+      "regeneration_check": "python3 -B tools/fourier/regen_check_e8.py",
+      "kernel_build": "built by Lean's kernel on two machines on 2026-10-10: Mac, 15 modules, exit code 0, 168 s; Linux, 15 modules, exit code 0, 709 s",
+      "axioms": "[propext, Classical.choice, Quot.sound] for both",
+      "compare_lean": "RESULT: PASS on the Mac and on Linux",
+      "comparator": "Your solution is okay! on the Mac and on Linux, each with a stand-in for the sandbox; no run with the real landrun"
+    }
+  },
+  "third_revision": {
+    "walsh_hadamard": {"figure_integer": 7474547, "saving": "7.4745e-4", "status": "lean", "theorem": "wht_main_block_B2Gp193x", "certificate": "tools/certificate/gcert1-p11-pr193.json.gz", "label_width_h": 22, "pairs_v": 1320, "helpers_R": 9412, "copy_moves_cst": 440, "block_size_m": 110, "arrays_W": 14692},
+    "fourier_and_convolution": {"figure_integer": 7474546, "saving": "7.4745e-4", "status": "lean"}
+  },
+  "reproduce": [
+    {"what": "the Python price of the certificate", "command": "python3 -B tools/gx/refcheck.py tools/certificate/gcert1-e8-r783.json.gz ; python3 -B tools/gx/gxdry.py tools/certificate/gcert1-e8-r783.json.gz", "needs": "Python 3.9 or later, standard library"},
+    {"what": "the certificate from the recorded hierarchy (compile and prune, re-use of finished helpers, the two device passes, re-scheduling), then the two checkers and a stand-alone replay", "command": "python3 -B tools/e8/run.py", "needs": "standard library; about 2 minutes"},
+    {"what": "the pool of 1,470 sums from the four greedy hierarchies in tools/e8/data/pool-sources/", "command": "python3 -B tools/e8/run.py --pool", "needs": "standard library"},
+    {"what": "the hierarchy from the pool by the integer programme (weights 0.55 and 0.85, no symmetry imposed), then the chain", "command": "python3 -B tools/e8/run.py --solve", "needs": "numpy and scipy (HiGHS inside scipy); the recorded run used Python 3.9.6, numpy 2.0.2, scipy 1.13.1; another solver version may return another optimum of equal value and then another certificate"},
+    {"what": "the generated Lean modules of the Walsh-Hadamard side from the certificate", "command": "python3 -B tools/gx/regen_check_e8.py", "needs": "standard library"},
+    {"what": "the generated Lean modules of the Fourier chain", "command": "python3 -B tools/fourier/regen_check_e8.py", "needs": "standard library"},
+    {"what": "the Lean theorems", "command": "see VERIFY.md", "needs": "the Lean toolchain and Mathlib pinned by this repository"}
+  ],
+  "chain_of_the_certificate": [
+    {"pass": "pool of sums", "program": "tools/e8/pool1.py", "data": "tools/e8/data/pool-a.json", "detail": "the sums of four greedy hierarchies with their images under a group of 64 reorderings of the points: 1,266 different sums, 1,470 with the images"},
+    {"pass": "integer programme", "program": "tools/e8/solve.py with tools/e8/xmilp.py", "data": "tools/e8/data/hierarchy-l0.55-m0.85.json.gz", "detail": "minimises deliveries plus sums formed alone; an in-place pair costs nothing; weight 0.55 for a sum formed alone with a single-source part, 0.85 for one whose smaller part has two sources; no symmetry imposed; 22,466 variables; solver HiGHS, gap 0; result 550 deliveries, 390 sums formed alone (68 with a single-source part), 367 in-place pairs; parts of in-place pairs numbered first"},
+    {"pass": "compiler and pruning of target stops", "program": "tools/e8/prune.py with tools/e8/comp.py", "helpers_after": 927, "figure_integer_after": 8125886},
+    {"pass": "re-use of finished helpers with a compensating read (52 copies written on finished helpers)", "program": "tools/e8/reuse2.py with tools/e8/comp2.py", "helpers_after": 875, "figure_integer_after": 8261680},
+    {"pass": "single sources read directly", "program": "tools/e8/xsub.py", "helpers_after": 819, "figure_integer_after": 8552172},
+    {"pass": "small sums (up to 6 sources) replaced by direct reads", "program": "tools/e8/xexp.py 6", "helpers_after": 783, "figure_integer_after": 8686103},
+    {"pass": "re-scheduling (seed 1, 60 sweeps, start temperature 1.5)", "program": "tools/e8/sched.py 1 60 1.5", "helpers_after": 783, "figure_integer_after": 8762479}
+  ],
+  "approaches": [
+    {"round": 0, "approach": "one helper per unwanted term (deliberately wasteful)", "helpers": 6728, "helpers_per_pair": 56.07, "figure_integer": 1655510, "saving": "1.6555e-4", "status": "price", "outcome": "reference: shows that a unit exists"},
+    {"round": 1, "approach": "nine totals one dimension lower", "helpers": 7305, "helpers_per_pair": 60.88, "figure_integer": 1529544, "saving": "1.5295e-4", "status": "price", "outcome": "still 72 copy moves; a control"},
+    {"round": 1, "approach": "covering without shared sums", "helpers": 2366, "helpers_per_pair": 19.72, "figure_integer": 3923956, "saving": "3.9240e-4", "status": "price", "outcome": "cannot reach parity: this kind of design needs at least 1,848 helpers"},
+    {"round": 1, "approach": "the architecture of the third revision's circuit transplanted", "helpers": 1670, "helpers_per_pair": 13.92, "figure_integer": 5073193, "saving": "5.0732e-4", "status": "price", "outcome": "failed below the top level"},
+    {"round": 1, "approach": "triangles on top, shared sums below", "helpers": 1475, "helpers_per_pair": 12.29, "figure_integer": 5535177, "saving": "5.5352e-4", "status": "price", "outcome": "failed below the top level"},
+    {"round": 2, "approach": "triangle top with the machinery of the winning design", "helpers": 1159, "helpers_per_pair": 9.66, "figure_integer": 6805162, "saving": "6.8052e-4", "status": "price", "outcome": "clear negative"},
+    {"round": 1, "approach": "shared sums chosen greedily by orbits of a group of 64, in-place pairs", "helpers": 1028, "helpers_per_pair": 8.57, "figure_integer": 7558959, "saving": "7.5590e-4", "status": "lean_during_the_work", "outcome": "first design above the third revision's figure"},
+    {"round": 2, "approach": "the same, re-scheduled only", "helpers": 1028, "helpers_per_pair": 8.57, "figure_integer": 7614776, "saving": "7.6148e-4", "status": "price", "outcome": "ceiling for those additions about 7.672e-4"},
+    {"round": 2, "approach": "the same with re-use of finished helpers only", "helpers": 985, "helpers_per_pair": 8.21, "figure_integer": 7659352, "saving": "7.6594e-4", "status": "price", "outcome": ""},
+    {"round": 2, "approach": "the same with sources read directly only", "helpers": 910, "helpers_per_pair": 7.58, "figure_integer": 8028179, "saving": "8.0282e-4", "status": "price", "outcome": ""},
+    {"round": 2, "approach": "all devices, the greedy choices", "helpers": 868, "helpers_per_pair": 7.23, "figure_integer": 8215871, "saving": "8.2159e-4", "status": "price", "outcome": ""},
+    {"round": 2, "approach": "all devices, 8 of the 89 greedy choices changed", "helpers": 853, "helpers_per_pair": 7.11, "figure_integer": 8320202, "saving": "8.3202e-4", "status": "lean_during_the_work", "outcome": "best of round 2; its Fourier and convolution twin at 1 - 8320201/10^10 was also built during the work"},
+    {"round": 3, "approach": "a ninth changed greedy choice", "helpers": 848, "helpers_per_pair": 7.07, "figure_integer": 8351847, "saving": "8.3518e-4", "status": "price", "outcome": "the end of the greedy scan"},
+    {"round": 3, "approach": "hierarchy by the integer programme (first weight 0.4), unchanged chain", "helpers": 827, "helpers_per_pair": 6.89, "figure_integer": 8499603, "saving": "8.4996e-4", "status": "price", "outcome": ""},
+    {"round": 3, "approach": "parts of in-place pairs numbered first", "helpers": 815, "helpers_per_pair": 6.79, "figure_integer": 8585620, "saving": "8.5856e-4", "status": "price", "outcome": ""},
+    {"round": 3, "approach": "in-place pairs also when one helper holds halves", "helpers": 794, "helpers_per_pair": 6.62, "figure_integer": 8716750, "saving": "8.7168e-4", "status": "price", "outcome": ""},
+    {"round": 3, "approach": "the same with a re-use pass on the finished file, units 1/4, 1/4, 1/12", "helpers": 792, "helpers_per_pair": 6.60, "figure_integer": 8726429, "saving": "8.7264e-4", "status": "price", "outcome": "units that no Lean-checked file has"},
+    {"round": 3, "approach": "a stop cost in the programme", "helpers": 785, "helpers_per_pair": 6.54, "figure_integer": 8757259, "saving": "8.7573e-4", "status": "price", "outcome": "inside the noise of the top files"},
+    {"round": 3, "approach": "first weight 0.55, second re-scheduling pass", "helpers": 782, "helpers_per_pair": 6.52, "figure_integer": 8757398, "saving": "8.7574e-4", "status": "price", "outcome": "inside the noise of the top files"},
+    {"round": 3, "approach": "first weight 0.65", "helpers": 785, "helpers_per_pair": 6.54, "figure_integer": 8758761, "saving": "8.7588e-4", "status": "price", "outcome": "inside the noise of the top files"},
+    {"round": 3, "approach": "weights 0.55 and 0.85", "helpers": 783, "helpers_per_pair": 6.53, "figure_integer": 8762479, "saving": "8.7625e-4", "status": "see lean.walsh_hadamard; price by the Python tools in any case", "outcome": "the certificate of this revision"}
+  ],
+  "where_round_3_gained": {
+    "start_figure_integer": 8320202,
+    "end_figure_integer": 8762479,
+    "ratio": 1.0532,
+    "compiler_change_alone_on_the_greedy_hierarchy": {"figure_integer": 8577519, "helpers": 809, "gain_percent": 3.1},
+    "optimal_hierarchy_on_top_of_it": {"figure_integer": 8716750, "helpers": 794, "gain_percent": 1.6},
+    "two_weights_on_top": {"figure_integer": 8762479, "helpers": 783, "gain_percent": 0.52},
+    "order_of_this_split": "compiler change first, on the greedy hierarchy; in the order in which the steps were made (how-the-e8-unit-was-found.md, section 3) the same gain splits as +2.2 % hierarchy, +1.0 % numbering, +1.5 % compiler change, +0.5 % weights",
+    "greedy_against_optimum_of_its_own_pool": {"plain_count_greedy": 990, "plain_count_optimum": 938, "percent_above": 5.5},
+    "noise": "optima of the programme with equal objective value differ by 0.3 to 0.6 percent in the figure; the four best files of the round lie within 0.1 percent"
+  },
+  "outside_certificates_priced_here": [
+    {"source": "pull request #2 to this repository (Chafik Boukhalfa, account chafreaky)", "label_width_h": 22, "helpers": 9412, "figure_integer": 7547361, "saving": "7.5474e-4", "status": "price as computed here; a Lean theorem in his pull request, which the agents built on Linux on 2026-10-10", "lean_by_its_author": "the pull request reports a Lean kernel check at this figure (theorem wht_main_block_B2Gp233x), tools/Compare.lean PASS and a comparator run on Linux", "lean_built_by_the_agents": "on 2026-10-10 the agents built the pull request on a Linux machine: all 54 Lean modules that it adds compiled; its three theorems depend only on propext, Classical.choice and Quot.sound; tools/Compare.lean printed RESULT: PASS for the Walsh-Hadamard statement and for the Fourier statements; the agents did not run the official comparator on it; on the Mac the build could not finish, because two of its modules need about 13 GB of memory each; the pull request is not merged"},
+    {"source": "hub #304 (DreamingOfClouds)", "label_width_h": 22, "helpers": 9160, "figure_integer": 7635875, "saving": "7.6359e-4", "status": "price"}
+  ],
+  "floors": {
+    "status": "on_paper",
+    "copy_moves_any_circuit": 55,
+    "copy_moves_with_8_totals_and_the_scatter_in_use": 72,
+    "copy_moves_open_range": [55, 71],
+    "moves_saved_at_most": 205,
+    "helpers_any_circuit": 8,
+    "helpers_with_this_scatter_no_target_reads_a_target": 116,
+    "helpers_with_this_scatter_targets_may_read_targets": 37,
+    "what_if_figure_at_116_helpers": "about 2.8e-3"
+  },
+  "remaining_waste": {
+    "stops": "4.34 helper blocks per helper (4.20 in the round-2 design); a what-if with three blocks per helper and one per source and target prices the 783 helpers at 10752492 (1.0752e-3), 1.227 times the figure",
+    "copy_moves": "72 copy moves take back 360 of the 480 moves; about 4 percent of the figure per copy move",
+    "helpers": "6.53 per pair against floors of 0.97 or 0.31 per pair",
+    "idle_helpers": "a re-use pass on the finished certificate finds no candidate; frames stop 99.9 percent of candidate pairs",
+    "tie_breaks": "0.3 to 0.6 percent of the figure depends on which optimum the solver returns"
+  },
+  "other_families": {
+    "status": "price; no Lean was run on these files; they are not included in this repository",
+    "method": "the method of round 2 (not the integer programme of round 3)",
+    "results": [
+      {"points": 11, "pairs": 220, "run": "the E8 search of round 2, ported unchanged", "helpers_per_pair": 13.4, "figure_integer": 5360784, "saving": "5.3608e-4"},
+      {"points": 11, "pairs": 220, "run": "a rule read off the best E8 design for the top two levels", "helpers": 2084, "helpers_per_pair": 9.47, "figure_integer": 6954826, "saving": "6.9548e-4"},
+      {"points": 13, "pairs": 364, "run": "the same rule, two stages cut short", "helpers": 3770, "helpers_per_pair": 10.36, "figure_integer": 7477404, "saving": "7.4774e-4"},
+      {"points": 15, "pairs": 560, "run": "the same rule on a shortened run", "helpers_per_pair": 12.57, "figure_integer": 6934825, "saving": "6.9348e-4"}
+    ]
+  },
+  "dead_ends": [
+    {"id": "designs-below-parity", "note_section": "what-did-not-work.md, section 1"},
+    {"id": "large-symmetry-groups", "note_section": "what-did-not-work.md, section 2"},
+    {"id": "cheaper-scratch-copies", "note_section": "what-did-not-work.md, section 3"},
+    {"id": "stops", "note_section": "what-did-not-work.md, section 4"},
+    {"id": "idle-devices", "note_section": "what-did-not-work.md, section 5"},
+    {"id": "search-routes-of-round-3", "note_section": "what-did-not-work.md, section 6"},
+    {"id": "fat-labels", "note_section": "what-did-not-work.md, section 7"},
+    {"id": "other-thin-families-and-11-13-15-points", "note_section": "what-did-not-work.md, section 8"},
+    {"id": "tiny-units-and-arithmetic-modulo-2", "note_section": "what-did-not-work.md, section 9", "key_numbers": {"core_hours_on_arithmetic_modulo_2": 31.2, "clock_hours": 11.6, "states": "29.8 billion", "result": "empty by a twelve-line argument: in arithmetic modulo 2 no scheme uses fewer than W m moves"}}
+  ],
+  "open_directions": [
+    {"id": 1, "direction": "the integer programme: objective, tie-breaks, new sums", "odds_guess": "fair; about 1 percent from the untried items, under 0.5 percent from more of the same"},
+    {"id": 2, "direction": "stops as part of the design", "odds_guess": "fair for 1 to 2 percent; unknown for more"},
+    {"id": 3, "direction": "13 points as a design question", "odds_guess": "below even"},
+    {"id": 4, "direction": "copy moves between 55 and 72", "odds_guess": "low"},
+    {"id": 5, "direction": "three arrays in eight moves at block size 3", "odds_guess": "very low that a scheme exists"},
+    {"id": 6, "direction": "the larger fat-label cells", "odds_guess": "low"},
+    {"id": 7, "direction": "a comparator run in a real sandbox", "odds_guess": "high that it passes"},
+    {"id": 8, "direction": "a line-by-line human review", "odds_guess": "not a question of odds"}
+  ],
+  "credits": [
+    {"what": "re-use of finished helpers with a compensating read", "who": "jamesyc (hub #124); eumemic (hub #143)", "used_in_certificate": true},
+    {"what": "the late pairing rule: which finished helper a new value takes", "who": "Chafik Boukhalfa (account chafreaky), hub #200 and #233, pull request #2 to this repository", "used_in_certificate": true, "detail": "used as the rule of choice in the re-use pass; his program, pairs and certificate are not used"},
+    {"what": "the in-place pair: a + b and a - b formed on the two arrays that held a and b", "who": "icekylinx (hub #184), carried in ikeboy's #191 and #193", "used_in_certificate": true},
+    {"what": "the circuit inside the third revision's certificate", "who": "ikeboy (#191, #193), eumemic (#168), icekylinx (#144, #184)", "used_in_certificate": false},
+    {"what": "the statements that nothing saves at block size 2 and that gates without a (1+i) denominator never save, and the difference between the equal-frame game and the wider one", "who": "eumemic (hub #288)", "used_in_certificate": false, "detail": "the proofs for the game searched here were made in this project; see what-did-not-work.md, section 9"},
+    {"what": "the solver", "who": "HiGHS, through scipy.optimize.milp", "used_in_certificate": true},
+    {"what": "direction of the work; the E8 unit, its design, the integer programme, the format, checkers and generators", "who": "Jacob Sussman; the AI agents (Claude) I directed wrote the programs and proofs", "used_in_certificate": true}
+  ],
+  "hub": "CrocSwap/integer-mult-bounds; 'hub #n' is its pull request n"
+}

@@ -1,0 +1,200 @@
+# For network-coding readers: the graphs behind a Walsh–Hadamard schedule, three statements about small cases, and an open case from pull request #288
+
+Author: Jacob Sussman. Text of 2026-10-10.
+
+**What this note is.** It is a set of leads for researchers in network coding, not a result. It makes no claim about the multiple-unicast conjecture. Nothing in it is checked by a proof assistant, and no person has yet read its arguments; I would welcome a reader.
+
+**Where the objects come from.** This repository proves that a fixed program computes the Walsh–Hadamard transform of length N in O(N (log N)^(1−x)) operations for a small x > 0. The proof is built from a *schedule*: a finite list of steps on *arrays*, each of which holds a linear combination of the data. Every array stands in a coordinate *frame*. A step either adds arrays together or "moves" one array to a neighbouring frame.
+
+**The reading.** A small schedule whose additions only join arrays that stand in the same frame can be read as a linear code, used once, on a family of undirected graphs: the frames are the vertices, an array carries a combination of the messages, and a move takes it to a neighbouring vertex for the price of one symbol.
+
+**Who had this reading first.** The reading is not mine. Pull request #288 of the public GitHub repository `CrocSwap/integer-mult-bounds` states it. That pull request was opened by eumemic on 10 October 2026 and, by its own statement, prepared with AI assistance; it was open and unreviewed when I last looked. It names the graph, sets up the two models below, has the certificate lemma I use (its "FO lemma"), reports bounds and lists the open case of section 3. It adds that the reading assumes the coding model covers time-ordered circuits. My published schedules are not of the restricted kind described under "The reading": their additions also join arrays that stand in different frames (section 5).
+
+**What I add.** An inequality for ordinary linear codes (statement A); proofs, not attached here, of a statement reported in that pull request (statement B); and a bound for a case it lists as open (statement C). I worked these out with AI agents in October 2026.
+
+**What is in the note.**
+
+- Section 1: the graphs and the two models.
+- Section 2: three statements about small cases, each with its status (who derived it, what a computer checked, whether the proof is attached).
+- Section 3: one open case.
+- Section 4: what each field might take from the other.
+- Section 5: what I am not claiming.
+- Section 6: five questions that are not yet checked.
+- Sources: the papers and the pull request, in one list at the end.
+
+**How to repeat the two computer checks that come with this note.** Both are in the folder [network-coding/](network-coding/). They use only the Python standard library and take about a second each. Run them inside that folder. `python3 -B check_two_arrays.py cert_E162_bitmodel.json` recomputes the table of statement C(ii) and ends with a line that starts `PASS`. `python3 -B subspace_metrics.py` checks the K_2,3, K_3,3 and Γ_3,3 labels of statement A and ends with `ALL CHECKS PASS`.
+
+**How to reach me.** Please open an issue in this repository (`jacobalansussman/wht-power-saving-lean`).
+
+## 1. The objects
+
+**The graphs.** The vertices of X_m are the subspaces of dimension m of F_2^(2m) on which the standard symplectic form vanishes; two are adjacent when they meet in dimension m − 1. This is the dual polar graph of Sp(2m,2), the graph pull request #288 names. The distance of U and V is m − dim(U ∩ V). X_2 has 15 vertices of degree 6, X_3 has 135 of degree 14. (The attached files use this repository's words: a vertex is a *frame* and m is the *block size*.)
+
+**The ordinary model.**
+
+- There are W sessions, with one symbol each.
+- The designer chooses the W ordered pairs (source, sink); any pairs of vertices at distance m are allowed.
+- The code is a scalar linear code over Q, used once, with memory and a time order: each transmission sends one symbol, a rational combination of what the sender holds, over one edge.
+- Cost is the number of symbols sent. Routing costs mW.
+
+Pull request #288 writes Q(i) where I write Q; statement A below holds for both.
+
+**The operator model.** This is my reading of what the engine of this repository accepts. (The engine is the part of the repository's proofs that accepts schedules. The reading rests on five of its definitions, read as text; the identification is not itself a checked statement.) The statements below are about the model as defined here. It is not a network code in your sense.
+
+Index 2^m × 2^m complex matrices by F_2^m. The model uses four kinds of matrices:
+
+- T_a is the permutation matrix of x ↦ x + a.
+- P_A is the permutation matrix of an invertible linear map A.
+- D_(z,c) is the diagonal matrix whose entry at x is 1 or i according to the bit z·x + c.
+- R_z = ((1+i)/2)·1 + ((1−i)/2)·T_z for z ≠ 0.
+
+B_m is the group generated by all T, P, D; G_m is generated by B_m and the R_z. G_m is a finite group of Clifford matrices: B_2 and G_2 have 3,072 and 46,080 elements, B_3 and G_3 have 2,752,512 and 371,589,120. K = R_(e_1) ··· R_(e_m) is the Walsh–Hadamard matrix up to elements of B_m and a scalar.
+
+T_a, R_z and K are not my definitions. They are the shift, the direction and the kernel of the public repository `openai/math`, on which this repository builds. P_A, D_(z,c) and the engine were added in this repository.
+
+The rules of the model are these. A *register* is what the repository calls an array, and a *paid step* is what it calls a move. The registers that start with a message are the arrays that the attached file two-arrays.md counts ("two arrays").
+
+- A register holds an element of Q[G_m]^W: a rational combination of terms [g]·v_l, where g is in G_m and v_1, …, v_W are the messages. Two terms are of the same kind only when their matrices are equal and their messages are the same. Register l starts with [1]·v_l. Any number of further registers start with 0 and cost nothing.
+- Free: replace the registers by rational combinations of the registers; multiply one register on the left by an element of B_m.
+- Paid, cost 1: multiply one register on the left by one R_z.
+- Goal: register l holds exactly [K]·v_l. Paying m per register always works.
+
+**Where the graph is in the operator model.** A label (x|z) in F_2^(2m) stands for the matrix T_x times the diagonal matrix of the signs (−1)^(z·y). The *position* of a term [g]·v is the coset B_m·g. As a vertex of X_m it is the set of labels of the matrices g⁻¹Dg, D running through the diagonal sign matrices. There are 15 cosets at m = 2 and 135 at m = 3, and B_m·g and B_m·R_z·g are adjacent. So elements of B_m do not move a term, and a paid step moves every term of a register to a neighbour of its position, each along its own edge, for the price of one symbol.
+
+**How the two models are related.** The ordinary model sits inside the operator model. It is the case in which every register is one group element applied to a rational combination of the messages, each message first multiplied by a fixed matrix of its own; the choice of these matrices places the sessions. Outside that case a register can lie on both sides of a cut, and the cut-set bound loses its meaning.
+
+*Status of this section.* The counts and the behaviour of positions come from separately written programs of AI agents at m = 2 and m = 3 (not included here). The order of G_3 is derived (256 × 1,451,520), not enumerated. The embedding of the ordinary model has two derivations and no computer check.
+
+## 2. Three statements
+
+The statements of this section are written with one piece of notation. Choose one subspace Y_u per vertex u, all inside one vector space over a field F. I call such a choice a *labelling*, and a *table* when it is given as a file. Write δ(u,v) = dim Y_u − dim(Y_u ∩ Y_v) and d(u,v) = δ(u,v) + δ(v,u). This d is the subspace distance of Koetter and Kschischang.
+
+### A. Subspace labels bound scalar linear codes
+
+**In plain words.** Every labelling gives an inequality that every scalar linear code over the field of the labelling, or over a subfield of it, must satisfy: summed over the symbols it sends, the code covers at least as much δ as its sessions span from source to sink. The cut-set bound is one case of it.
+
+**Precisely.** On any undirected graph, for any sessions and any scalar linear code, the sum of δ(u,v) over the symbols sent from u to v is at least the sum of δ(source, sink) over the sessions. Here a scalar linear code means: each transmission is one symbol, a linear combination over a subfield of F of what the sender holds; one use of the network, with memory. The same holds with d.
+
+**What follows for known metrics.** So for scalar linear codes every such d satisfies what Liu, Que, Z. Li and B. Li call the graph-metric inequality (Definition 3 of their preprint; see Sources); they state it for all codes and for metrics induced by a map to a fixed graph. Cut metrics are the case Y_u ∈ {0, F}. The K_2,3-, K_3,3- and Γ_3,3-metrics used in that preprint (it takes them from Karzanov and from Hirai) are of this kind:
+
+- for K_2,3 take zero, three lines and the plane of F²;
+- for Γ_3,3 take a 3 × 3 grid of lines in projective 3-space, the nine spans of two meeting lines, and the whole space;
+- the six lines of the grid alone give twice the K_3,3-metric.
+
+**In the operator model.** There the inequality is the "FO lemma" of pull request #288: it holds when the labels are carried by a representation ρ of G_m, the label at the position of g being ρ(g)⁻¹Y_0 with Y_0 kept by B_m. That pull request credits its authors' earlier work and says that papers P1 and P2 of Swapnil Jain prove overlapping statements; I have not read those papers. My part is two things. The first is a proof that allows scratch registers (the registers that start with 0) and combinations that cannot be undone. The second is an averaging step: any labelling becomes a group-carried one when its translates under the group are put side by side, and δ is then replaced by its average.
+
+*Status.*
+
+- The inequality with δ: about ten lines, derived at least five times by AI agents (not attached; on request). One AI agent also tested it by program on small codes (every code with up to 4 transmissions on a path of three vertices over GF(2), and 9,000 random cases on K_2,3, a 5-cycle and K_4 over GF(2) and GF(3)) and found no violation. That is a test, not a proof.
+- The form with d and the link to the preprint of Liu, Que, Z. Li and B. Li: two derivations (not attached).
+- The K_2,3, K_3,3 and Γ_3,3 labels: checked by [network-coding/subspace_metrics.py](network-coding/subspace_metrics.py) over four fields (K_2,3) and five (the other two); a second program, written separately and not included here, agrees.
+- The operator form and the averaging step: proofs in [network-coding/two-arrays.md](network-coding/two-arrays.md), Lemmas 1 and 2. One AI agent that did not write them has read both line by line and tested them on small exact cases.
+- No human reader.
+- I state A for scalar codes only; the vector-linear and time-shared cases are not written out.
+- A short search of arXiv did not turn up statement A or the remark on the K_2,3-, K_3,3- and Γ_3,3-metrics; both may be known.
+
+### B. Characteristic 2
+
+**What pull request #288 has.** It reports for its model: "Gates without a (1+i) denominator never save, at any m." The pull request labels it as proved; I did not find the proof in its package.
+
+**What I have for the models above, in plain words.** On these graphs a scalar linear code over a field of characteristic 2 never sends fewer symbols than routing. In the operator model, a list of steps with fewer than mW paid ones, if one exists, has to divide by 2 in a free step.
+
+**Precisely.**
+
+- Ordinary model: on X_m, for every m and any sessions between any vertices, no scalar linear code over a field F of characteristic 2 sends fewer symbols than routing. (In A take Y_u = u ⊗ F; then δ is the graph distance.)
+- Operator model: if every rational coefficient in the free steps has an odd denominator, at least mW paid steps are needed. So any saving has to divide by 2 in a free step. (R_z itself contains (1 ± i)/2; the statement is about the free combinations.)
+
+*Status.* Ordinary model: six readings by AI agents and two separately written programs that replay the proof on small cases (not included here). Operator model: four separately written derivations. No human reader. Proofs not attached; on request.
+
+### C. Where 2 is invertible, at m = 3
+
+**C(i), in plain words.** Call a labelling of X_3 *exact* when, for some c > 0, it has δ ≤ c on all edges and δ ≥ 3c on all pairs at distance 3. Where 2 is not 0, there is none.
+
+**Precisely.** Over a field in which 2 is not 0, no labelling of X_3 has δ ≤ c on all edges and δ ≥ 3c on all pairs at distance 3, for any c > 0. Such a labelling would contain seven subspaces with the dependencies of the Fano plane; the last step is Lemma 6.2 of Blasiak, Kleinberg and Lubetzky. Pull request #288 has this remark for one class of labellings.
+
+*Status.* A proof of half a page: two full derivations by AI agents and a program for the incidences (not included here). The match of the last step with Lemma 6.2 was made by reading, by two AI agents, each of which downloaded the paper itself. No human reader. Not attached; on request.
+
+**C(ii), in plain words.** In the operator model at m = 3, two messages need 6 paid steps, which is the routing value, and not 5.
+
+**Precisely.** A table that gives each vertex of X_3 a 3-dimensional subspace of Q^7 yields, after averaging: in the operator model W messages need at least 105W/41 paid steps. So two messages need 6, the routing value, and not 5.
+
+**How this stands next to pull request #288.** That pull request reports the bound 50W/21 for its Clifford model. It lists two messages in 5 steps (with two or more inserted free elements) as open in its full register model. As I read its text, the machine of two-arrays.md, which allows coefficients in any field of characteristic 0, contains that case for Clifford frames when a paid element costs at least its length. (That file defines its machine, Clifford matrices and length.) I have not confirmed that reading with its author.
+
+*Status.* The proof is in [network-coding/two-arrays.md](network-coding/two-arrays.md). The table is [network-coding/cert_E162_bitmodel.json](network-coding/cert_E162_bitmodel.json), and [network-coding/check_two_arrays.py](network-coding/check_two_arrays.py) recomputes every rank and the two averages, 41/35 on edges and 3 at distance 3, in a second. Six further programs, not included here, give the same two averages: one by the AI agent that wrote the checker (written within the same hour; it shares no code with the checker) and one each by five other AI agents. One AI agent that took no part in writing the proof has read both lemmas line by line and tested them on small exact cases (m = 1 and m = 2); it also spoiled the table in three ways of its own, and the checker rejected all three. No person has read the proof. Not covered: frames outside the Clifford group, and coefficient fields of positive characteristic (the proof is for characteristic 0; section 5 of two-arrays.md says what the table gives modulo small primes). I did not find 105W/41 elsewhere in a short search.
+
+## 3. One open case (pull request #288 lists it as open)
+
+**The question. Three messages, m = 3, operator model: do 8 paid steps suffice, or are 9 needed?**
+
+**Who lists it.** Pull request #288 lists this case as open in its register model ("W = 3 with s = 8"), with the bound 50W/21, which is 7.14 for three messages.
+
+**What I add.**
+
+- At least 315/41 = 7.68, by C(ii), which is unrefereed.
+- Nine are needed if no free step divides by 2 (B).
+- Nine are needed in the ordinary model. Pull request #288 argues this from known theorems (common-frame networks with at most 8 steps never save; its caveat on time-ordered circuits applies). An enumeration by my agents agrees: it counts cuts on a complete list of 177,815 small graphs, with two separately written programs (not included here).
+- A scheme with 8 must spend at least two paid steps on registers that mix several messages (a counting argument, three derivations).
+- By C(i) no labelling is exact. To settle the case through A one needs a table with δ = 3 at distance 3 whose average δ on edges is below 9/8; the best I have gives 41/35.
+
+**What would settle it.** A yes would be a list of steps with 8 paid ones, which a short program can verify term by term in the group ring. A no by this method would be a table as in the last item; the included checker prints the averages of any table. G_3 has 371,589,120 elements, so a direct search is not routine.
+
+**In the ordinary model.** On X_3 the nearest case that is undecided as far as I know is four sessions with 11 transmissions. Pull request #288 lists the open cases of its own models.
+
+## 4. What each field might take from the other
+
+- For network coding: X_2 and X_3 are small graphs with a large symmetry group on which statements can be checked exactly. Subspace labels are a family of inequalities for scalar linear codes that contains the cut-set bound (A). The operator model is a priced computation over a group ring in which a cut cannot be stated; whether W messages cost W times one message is open there at three messages.
+- For schedules of this kind: results of the field on few sessions apply to the ordinary model as they stand, and inequalities of the field for seven subspaces may give what the open case of section 3 lacks. Both are in the list of section 6, because I have them through one reading only.
+
+## 5. What I am not claiming
+
+- **The conjecture.** I make no claim about the multiple-unicast conjecture (Li and Li, 2004; independently Harvey, Kleinberg and Lehman). Since 7 October 2026 two preprints state that it fails: one by Zhang, B. Li and Z. Li and one by Braverman and He (both in Sources). Two public repositories state the same, as of 10 October 2026: `chris1234555/ncc-certificate`, whose README says it has not been peer reviewed, and `dysfunctor/network-coding-counterexample`, whose README is headed "ALL CONTENT IS AI GENERATED". I have checked none of the four. Statements A to C do not use any of them.
+- **No comparison with routing.** I state no comparison between any schedule of mine and routing, and none is offered as an instance. My published schedules are not codes on X_m: between stages their proofs re-read helper arrays (extra arrays that hold partial sums) in new frames, so additions join arrays that stand in different frames.
+
+  For one earlier schedule (that of my second result, the one with x = 7.47e-4 in the operation count at the top of this note) AI agents have written a reading as a longer list of sessions. It is conditional on two things that are not done. The first is a review of the reading itself, which rests on a property read off the proof text and on a lemma with a single derivation. The second is an examination, as one object, of the whole family of schedules that the reading needs. I draw no conclusion from it, and nothing of the kind has been looked at for the schedule of the fourth result. The helper circuit of that earlier schedule (its scheme of additions, with the helper arrays) is not mine. It is the paired-cube circuit of the community that publishes in the public repository `CrocSwap/integer-mult-bounds`, as of pull request #193 there. It was made in pull requests by icekylinx, eumemic and ikeboy, which are listed in Sources; "Whose circuit this is" in the README says who made which part.
+- **What this repository's theorems are about.** Nothing about network coding in my work is machine-checked. The theorems this repository proves are about the number of operations of a program; their statements do not mention graphs, sessions or codes.
+- **What pull request #288 has first.** These are in pull request #288 before this note: the reading of schedules as one-shot codes on the dual polar graph; the two models; the group-ring form; the certificate lemma for group-carried labels (its "FO lemma"); the statement that gates without a (1+i) denominator never save; the bound 50W/21; the Fano remark; and the list of open cases at m = 3.
+- **What the literature has.** The distance d of section 2 is the subspace distance of Koetter and Kschischang.
+- **Review.** Statements A to C are unrefereed and have had no human reader. "Not found" means not found by a short search.
+
+## 6. Not yet checked: offered as questions
+
+Each of these has one derivation or one reading by an AI agent and nothing more, unless it says otherwise.
+
+1. **A case of the preprint of Liu, Que, Z. Li and B. Li.** That preprint reduces the case "no three sessions have six distinct terminal locations" to an inequality on the fixed graph Γ_3,3 (its Theorem 8). It does so through a packing theorem of Hirai that uses cut, K_2,3-, K_3,3- and Γ_3,3-metrics. All four are subspace distances, the K_3,3-metric up to a factor 2 (the labels of statement A). Does statement A then give, for scalar linear codes, that coding does not beat routing in that case? I have two derivations of the combination step and a computer check of the labels only. I have not read Hirai's or Karzanov's papers, the preprint is unrefereed, and the statement may be known.
+2. **Two sessions.** Xiahou, Li, Wu and Huang (2014) are reported to me as proving that, for two unicast sessions on an undirected network, coding is equivalent to routing (their Corollary 5.1). Does that settle two sessions in the ordinary model at every m, for all codes? One reading; I have not verified the reference myself.
+3. **Seven subspaces.** Theorem 6.6 of Blasiak, Kleinberg and Lubetzky and Theorem 8.6 of Dougherty, Freiling and Zeger are reported to me as inequalities for any seven subspaces when 2 is invertible. Applied to the seven subspaces of C(i), do they give a positive lower bound on how far a labelling of X_3 must be from exact, and is it enough for section 3? Nobody has tried.
+4. **The Fano network.** For the Fano network, as Dougherty, Freiling and Zeger describe it, seven subspaces with the Fano dependencies are what a linear code needs, and they exist only in characteristic 2. In C(i) the same seven subspaces are what an exact labelling needs. So there the configuration limits codes and here it limits lower bounds. Is that more than a resemblance?
+5. **The averaging step, and wider classes of codes.** Is the averaging step (Lemma 2 of two-arrays.md) written down elsewhere? Does statement A hold as stated for vector-linear and time-shared codes? One re-derivation says yes for vector-linear codes.
+
+## Sources
+
+The pull request this note starts from:
+
+- Pull request #288 of `CrocSwap/integer-mult-bounds`, opened by eumemic on 10 October 2026.
+
+Papers named in sections 2 and 6:
+
+- Ralf Koetter and Frank Kschischang, "Coding for Errors and Erasures in Random Network Coding", arXiv:cs/0703061.
+- Sirui Liu, Li Que, Zongpeng Li and Baochun Li, "On the Multiple-Unicast Conjecture: Beyond Cut Metrics", arXiv:2608.06070v1 (a preprint, unrefereed).
+- Anna Blasiak, Robert Kleinberg and Eyal Lubetzky, "Lexicographic products and the power of non-linear network coding", arXiv:1108.2489v1 (Lemma 6.2; Theorem 6.6 as reported to me).
+- Randall Dougherty, Chris Freiling and Kenneth Zeger, "Achievable Rate Regions for Network Coding", arXiv:1311.4601 (Theorem 8.6 as reported to me).
+- Hirai, "Metric packing for K3 + K3", Combinatorica 30 (2010), 295–326. I have not read it.
+- Karzanov: the papers that the preprint of Liu, Que, Z. Li and B. Li takes its metrics from. I have not read them.
+- Xiahou, Li, Wu and Huang (2014), Corollary 5.1, as reported to me. I have not verified the reference myself.
+- Papers P1 and P2 of Swapnil Jain, as pull request #288 names them. I have not read them.
+
+Named only in section 5, where I say what I do not claim. I have checked none of these four:
+
+- Xindan Zhang, Baochun Li and Zongpeng Li, "Network Coding Can Beat Routing in Undirected Multiple-Unicast Networks", arXiv:2610.09367.
+- Mark Braverman and Zhongtian He, "The Multiple Unicast Conjecture is False", arXiv:2610.10108.
+- The repository `chris1234555/ncc-certificate`.
+- The repository `dysfunctor/network-coding-counterexample`.
+
+Also named in section 5:
+
+- The conjecture itself: Li and Li, 2004; independently Harvey, Kleinberg and Lehman.
+- Pull requests #144 and #184 (icekylinx), #168 (eumemic), #191 and #193 (ikeboy) of `CrocSwap/integer-mult-bounds`, for the helper circuit of an earlier schedule.
+
+## Corrections
+
+Corrections, references I have missed and readers are welcome: please open an issue in this repository (`jacobalansussman/wht-power-saving-lean`). If a statement above is known, I would like to cite where.

@@ -2,8 +2,8 @@
 
 This file was written for the first publication (commit `024f763`, 194 Lean modules). Its tables describe the
 files of that publication, which are unchanged apart from the documentation files. The section "Files added in the second revision" lists
-what the second revision (2026-10-09) added, and the last section, "Files added in the third revision", what
-the third (2026-10-09) added.
+what the second revision (2026-10-09) added, the section "Files added in the third revision" what the third
+(2026-10-09) added, and the last section, "Files added in the fourth revision", what the fourth (2026-10-10) added.
 
 "openai/math" below means the repository github.com/openai/math at commit
 `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb` (Apache-2.0), directory `lean/`.
@@ -25,7 +25,8 @@ the third (2026-10-09) added.
 | `LICENSE` | 1 file | The Apache License 2.0, byte-identical to `LICENSE` of openai/math (sha256 `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4`). |
 
 No file under `OAI/` is modified. Since the third revision, modified copies of 11 of them are under
-`Work/Fourier/` (last section). Two files of this project contain copies of upstream proofs that were then
+`Work/Fourier/` (section "Files added in the third revision"), and since the fourth a second set of such copies
+is under `Work/FourierE8/` (last section). Two files of this project contain copies of upstream proofs that were then
 changed (`Work/Scratch/Engine.lean`, `Work/Block/Engine.lean`; their comments mark the places, and `NOTICE`
 lists them). The namespace `OAI.PowerSaving` and the package name `OAI` are those of
 openai/math; they are kept because the new modules extend that development. Their use here does not mean that
@@ -153,3 +154,37 @@ Nothing of the earlier publications was changed except the documentation files a
 | `Work/Fourier/WorkingTransform.lean` | `lean/OAI/Computability/FourierTransform/WorkingTransform.lean` | 119, 134 | 91 | identifiers renamed on 27 lines (9 names: 8 with the suffix Z, 1 with Z inserted); 1 import line replaced by 1; 15 comment lines added; no other change to the code | yes |
 
 How the table was made: each file was compared line by line with the upstream file (`diff`-style alignment). "Identical lines" are the same bytes. "Identifiers renamed" counts the lines that are equal to the upstream line except for identifiers; "suffix Z" is a name with the letter `Z` appended (`gleamT` to `gleamTZ`), "Z inserted" a name with `Z` inside it or inside one component of a dotted name (`hills_pos` to `hillsZ_pos`, `Breezy.of_moves` to `BreezyZ.of_moves`), and any other substitution is written out. Every line that differs for another reason is counted as an import line, a comment line or an "other code line".
+
+## Files added in the fourth revision
+
+Nothing of the earlier publications was changed except the documentation files (the notes among them), `NOTICE`
+and `MANIFEST.sha256`. The fourth revision adds three things:
+
+1. The fourth result (every row of the table but the last two). Its certificate is the first row: a data file
+   that lists the additions of one circuit. The Lean files of the next two rows are generated from it. The
+   programs that found the certificate are in `tools/e8/`. Three devices in its circuit were published by
+   others (`NOTICE`, section 8).
+2. The scripts that issue #1 of this repository asked for (the row before the last): the programs in
+   `tools/rebuild/`, which rebuild the certificate of the second result. Six of them follow scripts of the
+   outside repository CrocSwap/integer-mult-bounds closely, two of the six in parts (the row names them).
+3. A note for readers from another field, with the folder of files that belongs to it (the last row).
+
+`tools/gx/ORIGIN.md` says more about both certificates and how they were made.
+
+| path | files | origin |
+|---|---|---|
+| `tools/certificate/gcert1-e8-r783.json.gz` | 1 certificate | This project. The certificate of the fourth result (format gcert/1, h = 9, 120 ports, 783 helper arrays). The search programs in `tools/e8/` found it on 2026-10-10. sha256 `4b92f00fc7454b9b15e6d71a3b05062792eacca0a0ca4efee46f87827d57c8aa` (uncompressed JSON: `3594f19c4d01cf11fb930c5c61baeed399620acbc5b94096b16bcacb23997dd3`). See `tools/gx/ORIGIN.md`. Three devices in its circuit were published by others (`NOTICE`, section 8). |
+| `Work/GCert/Data/Gen/E8.lean`, `Gen/E8/S0.lean`, `Gen/E8Par.lean`, `Gen/E8Tab0.lean` to `E8Tab3.lean`, `Gen/E8Seg0.lean`, `E8Seg1.lean`, `E8SegF.lean`, `Gen/E8End.lean`, `E8Hist.lean`, `E8YChk.lean`, `E8Scal0.lean`, and `Work/GCert/Data/E8Cert.lean`, `E8Price.lean`, `E8ScalOK.lean` | 17 Lean files | This project. Generated from that certificate by `tools/gx/gxgen.py`, unchanged: the certificate data and one module for each kernel evaluation. |
+| `Work/GCert/Data/RateB2Ge8.lean`, `RateB2Ge8x.lean`, `InstB2Ge8.lean`, `B2Ge8.lean`, `B2Ge8Main.lean`, `ChallengeB2Ge8x.lean`, `SolutionB2Ge8x.lean`; `comparator/B2Ge8x.json` | 7 Lean files, 1 JSON file | This project. Generated by `tools/gx/gxrate.py`, unchanged. `python3 tools/gx/regen_check_e8.py` regenerates these 25 files and compares them byte for byte. `ChallengeB2Ge8x.lean` contains the block from openai/math like the other challenge files: its lines 22-270 are lines 9-257 of `lean/ComparatorChallenges/UniformFourier.lean` (`sed -n 22,270p` of it prints the same sha256, 39866ff8...87411), and its header comment is inherited in the same way. |
+| the 11 copied proof files, `Goal.lean` and `UniformFourierChallenge.lean` under `Work/FourierE8/` | 13 Lean files | **openai/math, modified.** Made by `tools/fourier/mkchain_e8.py` from the same unmodified files as their namesakes under `Work/Fourier/` (section above, whose table of line counts and kinds of change holds for them with the suffix `E8` in place of `Z`): `alpha` and `hills` are replaced by `alphaE8` (1 - 8762479/10^10) and `hillsE8`, the exponent of the statement by 1 - 8762478/10^10. Each file says so in its first comment (`NOTICE`, section 7). |
+| `Work/FourierE8/Seam.lean`, `Work/FourierE8/Axioms.lean` | 2 Lean files | This project. `Work/Fourier/Seam.lean` and `Work/Fourier/Axioms.lean` with names and numbers replaced by a table of changes (Seam: 96 lines changed and 6 comment lines added, no proof step changed; Axioms: 10 lines changed). Not generated by `mkchain_e8.py`. |
+| `comparator/UniformFourierE8.json` | 1 JSON file | This project. Written by `tools/fourier/mkchain_e8.py`: `comparator/UniformFourier.json` with the module folder and the two theorem names changed. |
+| `tools/fourier/mkchain_e8.py`, `tools/fourier/regen_check_e8.py` | 2 Python scripts | This project. `mkchain.py` and `regen_check.py` of the third revision with constants and names changed (40 and 10 lines changed, 4 and 3 comment lines added). `python3 tools/fourier/regen_check_e8.py` makes the 13 files and the comparator configuration again and compares bytes. |
+| `tools/gx/regen_check_e8.py` | 1 Python script | This project. A wrapper: it checks the sha256 of the certificate and runs `tools/gx/regen_check.py`, unchanged, with its arguments. Of the other 15 files of `tools/gx/`, 14 are unchanged from the third revision, the two generators and the two checkers among them. The fifteenth is the documentation file `tools/gx/ORIGIN.md`, which has new text in this revision. |
+| `tools/e8/` | 32 files: 19 Python programs, a README and 12 data files | This project. The search programs that found the certificate of the fourth result. The agents (the team of AI agents that the README describes) wrote them on 2026-10-10. Only the solver stage needs NumPy and SciPy (the integer programme is solved with HiGHS through `scipy.optimize.milp`); the one command that rebuilds the certificate, `python3 -B tools/e8/run.py`, needs the standard library only. No part of any proof. The scripts of `tools/rebuild/` were compared statement by statement with outside programs; these have not been. |
+| `notes/how-the-e8-unit-was-found.md`, `notes/what-did-not-work.md`, `notes/open-directions-2.md`, `notes/e8-results.json` | 3 notes, 1 JSON file | This project. The account of the search of 2026-10-10. No part of any proof. |
+| `tools/rebuild/` | 13 Python scripts | This project, in part adapted from scripts of CrocSwap/integer-mult-bounds. The programs that rebuild the certificate of the second result from data files of that repository. Three of them (`rebuild.py`, `fetch_inputs.py`, `rbpaths.py`) were written for this repository. The other ten are the working scripts that made the certificate, tidied: the paths are relative, most of the unused parts are taken out, comments are reworded, the notices of the outside scripts are added, and `aligned.py` has an option to read another file of hand-over pairs. Six of the ten follow scripts of that repository closely: `compile.py`, `graphgen.py`, `aligned.py`, `stage.py`, and parts of `build.py` and `f2.py`. Each of the six says so in its first lines, and `NOTICE`, section 6, names the outside scripts and their authors. The data files are fetched, not included. To run the rebuild, see `tools/gx/ORIGIN.md` ("Run the rebuild yourself"). |
+| the note under `notes/` for readers from another field, and the folder beside it (the README names both) | 1 note; a folder with 5 files: a README, a written argument, 2 Python programs and 1 JSON table | Added in this revision. No part of any proof. The note's "Sources" list names the outside pull request it starts from and the papers it cites; the written argument says that a computer search found the table. |
+
+Path names in the comments of the new Lean files: the generated modules of the fourth result carry the same
+working path names as those of the second result (table above: `checks/wht26/gx-data/py/...` is `tools/gx/`).

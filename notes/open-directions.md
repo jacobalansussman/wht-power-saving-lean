@@ -197,8 +197,9 @@ per-rank figure, which still comes from that circuit, and as a second, independe
    test size: p = 6, 1,896 arrays of 4,096 entries), and by their own statement the community's frame replay
    covers p = 6 and 7 only. The in-place step of #193 stands at a degenerate frame in all 1,980 places and has
    not been run on arrays at such a frame. At full size one run is 12,052 arrays of 2^22 entries.
-6. **An independent review of the conversion of the outside circuit.** The programs that rebuilt it are not in
-   this repository; `tools/gx/ORIGIN.md` names the outside files and commits that they read. What agrees with
+6. **An independent review of the conversion of the outside circuit.** The programs that rebuilt it are in
+   `tools/rebuild/` now and can be run again; `tools/gx/ORIGIN.md` says how, and names the outside files and
+   commits that they read. An independent reading of them is still open. What agrees with
    #193: 9,412 helper arrays, 12,052 arrays per vertex of their word, rank mass 794,112, the block histogram.
 7. **Smaller**: a negative control and a walk of the proof term for the per-rank companion of the first
    result; an audit of the Python generators (`tools/gx/gxgen.py`, `gxrate.py`, `gxconv.py`).
@@ -232,7 +233,7 @@ Each with its reason, in a line or two. Every negative statement holds inside th
 14. **A smaller table.** The isometries of the pairs generate the whole orthogonal group (exact for h = 4 to 8).
 15. **Combining the two best searched circuits by parts.** 5.1273e-4 against 5.1284e-4 (tested designs).
 16. **Erasing donors, reusing emptied arrays** (#184, #191). #193 dropped both: an erased donor costs a helper.
-17. **Outside.** Boolean-lattice networks (#172): refuted in its comments. "Lockstep" pairing (#132): withdrawn by its author.
+17. **Outside.** Boolean-lattice networks (#172): shown not to hold in its comments. "Lockstep" pairing (#132): withdrawn by its author.
 
 ## E. Practical notes
 
@@ -262,7 +263,10 @@ format gcert/1 (README, section 5; conditions in `tools/gx/gx.py`; example: the 
   state passes between the batches. A larger circuit needs more batches, not a new proof.
 - What the checker covers: certificates without the extension rule, every scratch copy at a frame of dimension
   at least 1, whole-block accounting, and the scatter step of the present invocation theorem.
-- Not in this repository: the programs that rebuilt the community circuit, the search programs of the first
-  circuit, and the certificate files of B4 to B8. `tools/certificate/` has the two that the theorems rest on.
+- Not in this repository: the search programs of the first circuit, the certificate files of B4 to B8, and
+  the two programs that checked the rebuilt word before its conversion (an exact symbolic replay and a
+  checker of the intermediate format). `tools/certificate/` has the certificates that the theorems rest
+  on (three since the fourth revision). The programs that rebuilt the community circuit are in
+  `tools/rebuild/`, and the search programs of the fourth result are in `tools/e8/`.
 
 If one of these leads works out, I would be glad to see it.
