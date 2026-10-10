@@ -31,6 +31,37 @@ checked by
 Lean's kernel. The new proofs have not yet had a line-by-line human review, and I would welcome one. Please
 read section 2 before quoting the number. Credits and the relation to other work: [RELATED-WORK.md](RELATED-WORK.md).
 
+## Fourth result (pull request, 2026-10-10): the same theorems with the circuit of pull request #233, saving 7.547361e-4
+
+Contributed by Chafik Boukhalfa (CrocSwap/integer-mult-bounds pull requests #200, #233, #256; Anthropic Claude
+assistance), as a pull request to this repository. Nothing of the first three results is changed; the new files
+are listed in ORIGIN.md ("Files added in the fourth revision").
+
+The helper circuit of the second result with the reuse pairing of pull request #233 in place of the pairing of
+#193 (operation frames unchanged; R = 9,412 slots, N = 262,944 unit moves, 69,683 blocks per invocation against
+70,169) is `tools/certificate/gcert1-p11-pr233-flow.json.gz`, in the same format gcert/1, made by
+`tools/emit/gcert_emit.py` from the published data of the outside repository (`tools/emit/ORIGIN.md`). With
+the generators of this repository unchanged (`tools/gx/gxgen.py`, `tools/gx/gxrate.py`: `tools/gx/regen_check.py
+tools/certificate/gcert1-p11-pr233-flow.json.gz P233 B2Gp233`) it gives, all proved in Lean (kernel; axioms
+`propext`, `Classical.choice`, `Quot.sound`; `tools/Compare.lean` passed for both):
+
+    theorem OAI.PowerSaving.WHT.wht_main_block_B2Gp233x :
+        ∃ solve W, WHTProgram solve W ∧ WHTTimeBoundsAt (1 - 7547361/(10:ℝ)^10) W
+    theorem OAI.PowerSaving.transform_mainY : DFTGoalY        -- decimalExponentY = 1 - 7547360/10^10
+    theorem OAI.PowerSaving.convolution_mainY : ConvGoalY
+
+The Walsh-Hadamard statement is `Work/GCert/Data/ChallengeB2Gp233x.lean` (the challenge of the second result
+with the exponent replaced); the Fourier statement is `Work/Fourier233/UniformFourierChallenge.lean`, OpenAI's
+challenge file with the exponent `1 - 7547360/(10^(10:ℕ))` and the letter `Y` on the same seven names (`Z` in
+the third result, so that both chains can live in one repository). The copies under `Work/Fourier233/` are made
+by `tools/fourier/mkchain233.py`, which differs from `mkchain.py` only in its constants (`diff` the two), and
+`Work/Fourier233/Seam.lean` is `Work/Fourier/Seam.lean` with the certificate and the exponent replaced.
+Price of the circuit by the Python mirror (`tools/gx/gxdry.py`): whole-block 7547361/10^10 (7547364 holds,
+7547365 fails), per-rank unchanged at 4058344/10^10. The outside repository's own figure for this word in its
+three-stage layout is 7.0990740e-4 (pull request #233, certified by its scripts); in the five-stage layout of
+this repository the pairing alone is worth +0.97 percent over the circuit of #193. The official comparator accepted
+both solutions on Linux with its real sandbox (VERIFY.md, section 10).
+
 ## What is new here
 
 - **A machine-checked proof of OpenAI's own headline statement, the discrete Fourier transform of every

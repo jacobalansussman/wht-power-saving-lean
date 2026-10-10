@@ -62,3 +62,13 @@ what `gxgen.py` / `gxrate.py` produce from this file.
     python3 tools/gx/regen_check.py                       # regenerates the Lean modules and compares
     python3 tools/gx/gxdry.py tools/certificate/gcert1-p11-pr193.json.gz      # Python mirror of both checks
     python3 tools/gx/refcheck.py                          # the reference checker gx.check1 on the certificate
+
+## The certificate `tools/certificate/gcert1-p11-pr233-flow.json.gz` (fourth revision)
+
+The same circuit with the reuse pairing of pull request #233 of the outside repository (chafreaky) in place of
+the pairs of #193, frames unchanged: R = 9,412, N = 262,944, 69,683 blocks per invocation. It was NOT made by the
+rebuild of steps 1-3 above but by `tools/emit/gcert_emit.py` from the files that the outside repository's own
+scripts write for that word (`tools/emit/ORIGIN.md`). That the emitter is faithful rests on two checks: on the
+layer of #193/#194 it reproduces the block histogram of `gcert1-p11-pr193.json.gz` class by class, and on the
+layer of #233 its ledger is the child histogram that #233 certifies. `gx.check1` accepts the file (labels and
+the exact scalar identity); the Lean checks are those of the second result, on the generated modules `P233`.

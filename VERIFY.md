@@ -378,3 +378,48 @@ Kept as a record; the commands were those of the first text of this file (commit
 sampler: 144 s, 6.2 GB. Comparator (macOS, the stand-in, `enable_nanoda` false): `comparator/B2Ke16x.json`
 171 s, 6.3 GB; `comparator/B2Ke16xR.json` 178 s, 6.2 GB; both "Lean default kernel accepts the solution" /
 "Your solution is okay!", exit 0. Disk then: `.lake/build` 1.3 GB, about 9.5 GB in all.
+
+## 10. The fourth result (pull request, 2026-10-10)
+
+The circuit of pull request #233 of CrocSwap/integer-mult-bounds, `tools/certificate/gcert1-p11-pr233-flow.json.gz`
+(sha256 of the file in MANIFEST.sha256; `tools/emit/ORIGIN.md` says how it was made). Python checks, no Lean:
+
+    python3 -B tools/gx/refcheck.py tools/certificate/gcert1-p11-pr233-flow.json.gz     # ACCEPTED by gx.check1 (8 s)
+    python3 -B tools/gx/gxdry.py    tools/certificate/gcert1-p11-pr233-flow.json.gz     # MIRROR ACCEPTS; whole-block 7547361
+    python3 tools/gx/regen_check.py tools/certificate/gcert1-p11-pr233-flow.json.gz P233 B2Gp233   # 41 files reproduced
+    python3 tools/fourier/regen_check233.py                                             # 14 files reproduced
+
+Lean, after section 3 (the modules of the second result built), one `lake build` of the 34 new modules under
+`Work/GCert/Data/` (the data `Gen.P233.S0` to `S8`, `Gen.P233`, `Gen.P233Par`; the frame table `Gen.P233Tab0` to
+`Tab3`; the replay `Gen.P233Seg0` to `Seg5`, `SegF`, `End`, `Hist`, `YChk`; the scalar replay `Gen.P233Scal0`,
+`Scal1`; `InstB2Gp233`, `RateB2Gp233`, `RateB2Gp233x`, `ChallengeB2Gp233`, `ChallengeB2Gp233x`, `P233Price`,
+`P233Cert`, `P233ScalOK`, `B2Gp233`, `B2Gp233Main`, `SolutionB2Gp233`, `SolutionB2Gp233x`), then the Fourier chain:
+
+    lake build Work.GCert.Data.SolutionB2Gp233x Work.GCert.Data.SolutionB2Gp233 Work.GCert.Data.B2Gp233Main
+    lake build Work.Fourier233.UniformFourierChallenge Work.Fourier233.Main Work.Fourier233.Axioms
+    lake env lean --run tools/Compare.lean Work.GCert.Data.ChallengeB2Gp233x \
+        Work.GCert.Data.SolutionB2Gp233x OAI.PowerSaving.WHT.wht_main_block_B2Gp233x
+    lake env lean --run tools/Compare.lean Work.Fourier233.UniformFourierChallenge \
+        Work.Fourier233.Main OAI.PowerSaving.transform_mainY OAI.PowerSaving.convolution_mainY
+
+Measured by the contributor on Linux (aarch64, 20 cores, 121 GB; Lean v4.34.1, Lake 5.0.0; every module built from
+source on top of a build of the third revision, several certificate modules in parallel): the 34 modules in one
+`lake build`, 8 minutes (9229 jobs, exit 0; "declaration uses `sorry`" for `ChallengeB2Gp233` and
+`ChallengeB2Gp233x` only; the longest module `Gen.P233Seg5`, 190 s); the Fourier chain 3 minutes (9240 jobs); both
+`Compare.lean` runs `RESULT: PASS` (solution proofs of 38871 constants for the Walsh-Hadamard theorem, 43381 and 43404 for the two Fourier theorems). The builds print
+
+    'OAI.PowerSaving.WHT.wht_main_block_B2Gp233x' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'OAI.PowerSaving.transform_mainY' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'OAI.PowerSaving.convolution_mainY' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'OAI.PowerSaving.RAM.hillsY_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+The official comparator (section 5) was then run on Linux with its real sandbox (`landrun` built from its `main`
+branch with Go 1.24; `lean4export` at `076e8e57` and `comparator` at `d03acab1`, both with `lean-toolchain` set to
+v4.34.1; `enable_nanoda` false), through `systemd-run` as the comparator's README recommends, in the working tree
+after the builds above (nothing left to build: every module replayed):
+
+    lake env comparator comparator/B2Gp233x.json           # 05:53 to 06:12 local, 18.5 min, exit 0
+    lake env comparator comparator/UniformFourier233.json  # 06:12 to 06:28 local, 16.5 min, exit 0
+
+Both ended with "Lean default kernel accepts the solution" / "Your solution is okay!". Memory was not sampled.
+Not done for this result: a build from nothing, a run on arrays, the second kernel (`enable_nanoda`).
