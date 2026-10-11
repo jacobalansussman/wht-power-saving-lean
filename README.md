@@ -119,9 +119,11 @@ is what that rests on.
   five-stage layout of this repository. He reports the Lean build and the comparator runs.
 - On 10 October 2026 the agents built his pull request on a Linux machine. All 54 Lean modules that it adds
   compiled. His three theorems depend only on the three standard axioms. `tools/Compare.lean` printed
-  `RESULT: PASS` for his Walsh-Hadamard statement and for his Fourier statements. The agents did not run
-  the official comparator on his files; he reports those runs himself. On my Mac the build could not
-  finish, because two of his modules need about 13 GB of memory each. Section 9 has the details.
+  `RESULT: PASS` for his Walsh-Hadamard statement and for his Fourier statements. After the build, the
+  agents ran the official comparator on the two configurations for which he reports runs, with a stand-in
+  for its sandbox. It accepted both. He reports his own comparator runs, made with the real sandbox. On my
+  Mac the build could not finish, because two of his modules need about 13 GB of memory each. Section 9 has
+  the details.
 - shea256's repository now gives that same figure, where it had 6.7e-4 on 9 October. It reports its own
   rebuild of that proof and says that it "does not claim a new exponent of our own". That rebuild is
   reported by its author. It was not repeated here.
@@ -443,11 +445,13 @@ and a comparator run on Linux. With the unchanged generators I reproduced his 41
 byte, and my checker and `gxdry.py` accept his certificate at 7547361. On 10 October 2026 the agents built
 his pull request on a Linux machine. All 54 Lean modules that it adds compiled. His three theorems depend
 only on the three standard axioms. `tools/Compare.lean` printed `RESULT: PASS` for his Walsh-Hadamard
-statement and for his Fourier statements. The agents did not run the official comparator on his files; he
-reports those runs himself. On my Mac the build could not finish, because two of his modules need about
-13 GB of memory each. So in his pull request 7.547361e-4 is a Lean theorem, and it is his result. Section 9
-has the details of the build. The pull request is not merged: I would rather this repository make that
-circuit with its own scripts, which `tools/rebuild/` now does, than carry generated files.
+statement and for his Fourier statements. After the build, the agents ran the official comparator on the
+two configurations for which he reports runs, with a stand-in for its sandbox. It accepted both, each with
+`Your solution is okay!` (74 and 73 minutes; 14.4 and 14.5 GB). He reports his own comparator runs, made
+with the real sandbox. On my Mac the build could not finish, because two of his modules need about 13 GB of
+memory each. So in his pull request 7.547361e-4 is a Lean theorem, and it is his result. Section 9 has the
+details of the build and of those runs. The pull request is not merged: I would rather this repository make
+that circuit with its own scripts, which `tools/rebuild/` now does, than carry generated files.
 
 **What is mine:** the Lean proof of the general frame lemma for this RAM model, the generalised engine, the
 extended certificate checker (section 5), the bridged five-stage layout in which their circuit is placed
@@ -808,6 +812,8 @@ times and memory.
   150 s; 15.7 and 16.0 GB); the comparator printed `Your solution is okay!` for both configurations (406 s
   and 432 s). The stand-in there is built on Linux namespaces, and the comparator replayed modules that had
   been compiled before the run. The machine was shared with other jobs, so its times are upper bounds.
+  Memory on that machine, here and in the next point, is the kbytes figure that GNU `time` printed, divided
+  by a million. A kbyte there is 1024 bytes, so in units of 10^9 bytes each figure is 2.4 % higher.
 - **The third revision, built from nothing on Linux.** On 10 October 2026 the whole published third revision
   was also built from nothing on that machine. It was cloned from GitHub, and all 342 Lean modules of the
   repository were compiled from source with the commands of VERIFY.md (94 minutes; largest process 10.5 GB).
@@ -823,10 +829,14 @@ times and memory.
   - third result, `comparator/UniformFourier.json`: 108 minutes, 11.4 GB.
 
   The runs shared the machine, so the times are upper bounds. Two negative controls, one on the statement of
-  the second result and one on the Fourier statement of the third, were refused with exit code 1. One run
-  was still going when this text was written: the comparator for the third result in a tree where nothing
-  had been compiled before. It is the third attempt in that tree, and each attempt continued the build of
-  the one before. It has no verdict here.
+  the second result and one on the Fourier statement of the third, were refused with exit code 1.
+
+  The agents also ran the comparator for the third result in a tree where none of the repository's modules
+  had been compiled before. Mathlib's compiled files came from its cache. The comparator accepted the
+  result, with `Your solution is okay!` and exit code 0. That was the third attempt in that tree, and each
+  attempt continued the build of the one before. In the three attempts together, 314 modules of the
+  repository were compiled inside the stand-in. The last attempt took 127 minutes and 11.4 GB. This verdict
+  came after the fourth revision was published (section 9).
 - **No real sandbox on that Linux machine.** The comparator's sandbox needs Landlock, a feature of the Linux
   kernel. The Linux kernel of that machine has no Landlock, so the comparator's real sandbox could not run
   there either (limits, below).
@@ -1082,7 +1092,10 @@ in section 9, and nothing else in it has changed).
   these modules.
 - In every comparator run the modules of the proof had been compiled beforehand, outside the sandbox, so the
   comparator replayed existing build products. Mathlib was not rebuilt from source, and the Lean toolchain and
-  the comparator programs were the ones already installed. See VERIFY.md, section 8.
+  the comparator programs were the ones already installed. See VERIFY.md, section 8. One later run is the
+  exception: on 10 October 2026, on the Linux machine, the comparator for the third result ran in a tree
+  where none of the repository's modules had been compiled before, and it accepted the result at the third
+  attempt (section 3).
 - New in the second revision: on 2026-10-09 the second result had not yet had the rebuild from nothing that
   the first result had.
   The copy of the repository in which the comparator passed took the compiled files of its 25 certificate
@@ -1407,13 +1420,16 @@ kept out of the prose so that the prose can be read.
 
 ### For the opening and what is new
 
-The four texts of this README:
+The four texts of this README, and one follow-up:
 
 - First text (first result): commit `024f763`, 2026-10-09.
 - Second text (second result): commit `fdfb781`, with its note on open directions in commit `e0bbe1c`,
   2026-10-09.
 - Third text (third result): commits `6a1d04f` and `f010392`, 2026-10-09.
-- Fourth text (fourth result): this one, 2026-10-10.
+- Fourth text (fourth result): commit `5ba3046`, 2026-10-10.
+- Follow-up to the fourth text: this one. It adds the comparator verdicts on the Linux machine that arrived
+  after the fourth text was published, and it corrects wording about the runs on that machine. It changes no
+  Lean file and no figure of a result.
 
 OpenAI's work that the statement and the cost model come from: [openai/math](https://github.com/openai/math),
 family 130, commit `fd4aeeb`.
@@ -1480,13 +1496,27 @@ result on his own hand-over pairs:
   build of the published tree of this repository (commit `f010392`).
 - All 54 Lean modules that the pull request adds compiled, with no error.
 - The two heaviest modules, `Work.GCert.Data.Gen.P233Scal0` and `Work.GCert.Data.Gen.P233Scal1`, built in
-  574 s and 642 s. The largest process of each held about 13 GB (13.3 GB and 13.4 GB). The 54 modules took
-  66 minutes in all, on a machine that other jobs shared.
+  574 s and 642 s. The largest process of each held about 13 GB (12.7 GiB and 12.8 GiB). The 54 modules
+  took 66 minutes in all, on a machine that other jobs shared.
 - His three theorems, `wht_main_block_B2Gp233x`, `transform_mainY` and `convolution_mainY`, depend on
   `propext`, `Classical.choice` and `Quot.sound`, and on no other axiom.
 - `tools/Compare.lean` printed `RESULT: PASS` for his Walsh-Hadamard challenge and solution and for his
   Fourier challenge and solution, with the constant counts that he states (38871; 43381 and 43404).
-- Not run in that build: the official comparator on his two configurations. He reports those runs himself.
+- Not run in that build: the official comparator. The agents ran it afterwards on
+  `comparator/B2Gp233x.json` and `comparator/UniformFourier233.json`, the two configurations for which he
+  reports runs. They used a second copy of that tree and the stand-in for the sandbox (section 3). The
+  comparator accepted both, each with `Lean default kernel accepts the solution`, `Your solution is okay!`
+  and exit code 0. Each log has 176 `Replayed` lines and no `Built` line, so no module was compiled inside
+  the runs.
+  - `comparator/B2Gp233x.json`: started at 22:58 on 2026-10-10, ended at 00:12 on 2026-10-11; 74 minutes,
+    14.4 GB.
+  - `comparator/UniformFourier233.json`: started at 23:00 on 2026-10-10, ended at 00:13 on 2026-10-11;
+    73 minutes, 14.5 GB.
+  - The runs shared the machine, so the times are upper bounds.
+  - The memory is counted as in section 3: the kbytes figure that GNU `time` printed (14443212 and
+    14501748), divided by a million.
+  - These are not runs with the comparator's real sandbox. He reports his own runs, with the real `landrun`
+    sandbox.
 - Mathlib was not compiled there. Its compiled files came from Mathlib's cache.
 - The Python checks of his certificate were made on the Mac earlier that day, not on the Linux machine
   ("Whose circuit this is").
@@ -1611,3 +1641,13 @@ the seconds are the duration of the run.
 
 **The fourth result.** It was found, built and checked on 2026-10-10. Its runs, with commands, times and
 memory, are in [VERIFY.md](VERIFY.md), section 10.
+
+**The comparator for the third result in a tree compiled from nothing, on the Linux machine** (section 3).
+All times are UTC, on 2026-10-10.
+
+- The first attempt started at 20:40 and the second at 21:17. Neither gave a verdict: the agents stopped
+  both during the build, to keep the shared machine within its memory.
+- The third attempt started at 21:23 and ended at 23:30, with `Your solution is okay!` and exit code 0.
+- That was after the fourth text was published, so the fourth text said that the run had no verdict. The
+  follow-up text has the verdict.
+- The exact time and memory are in [VERIFY.md](VERIFY.md), section 8, point 14.

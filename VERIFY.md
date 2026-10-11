@@ -386,7 +386,9 @@ Read these before relying on the result.
    the comparator runs, outside its sandbox. The comparator's README lists as an assumption that the solution
    was not compiled before. To meet it, run section 5 directly after `lake exe cache get`: the comparator then
    builds every module itself. It was not run in that order here; it compiles several kernel checks of a
-   certificate at the same time and may need more than 16 GB.
+   certificate at the same time and may need more than 16 GB. On 2026-10-10 it was run in that order on the
+   Linux machine, for `comparator/UniformFourier.json` only, and it accepted the third result at the third
+   attempt, each attempt continuing the build of the one before (point 14).
 4. **Mathlib was not rebuilt from source.** Its compiled files came from Mathlib's cache server for the pinned
    revision (`lake exe cache get`), as is usual.
 5. **Not fetched fresh for this test:** the Lean toolchain v4.34.1 and the `comparator` and `lean4export`
@@ -458,9 +460,19 @@ Read these before relying on the result.
     and the two runs for the first result used the same copy of the tree, partly at the same time. The run for
     the second result used a second copy. The two negative controls were
     refused with exit code 1 (a challenge with 7474548 for the second result, and one for the Fourier statement
-    of the third). One run was still going when this text was written: the comparator with
-    `comparator/UniformFourier.json` in a tree where nothing had been compiled before. It is the third attempt
-    in that tree, and each attempt continued the build of the one before. It has no verdict here.
+    of the third).
+
+    The agents also ran the comparator with `comparator/UniformFourier.json` in a tree where none of the
+    repository's modules had been compiled before. Mathlib's compiled files came from its cache. The comparator
+    accepted the third result there: `Build completed successfully (9236 jobs)`,
+    `Lean default kernel accepts the solution`, `Your solution is okay!` and exit code 0. That was the third
+    attempt in that tree, and each attempt continued the build of the one before. The first two attempts gave
+    no verdict: the agents stopped both during the build, to keep the shared machine within its memory. In the
+    third, a helper that the agents ran outside the stand-in paused and resumed Lean processes for the same
+    reason. The logs of the three attempts have 132, 1 and 181 `Built` lines, so 314 modules of the
+    repository were compiled inside the stand-in. The last attempt: 7639 s (2:07:18), 11402808 kB. This verdict
+    came after the fourth revision was published; the text published then said that the run had no verdict.
+
     None of these runs used the comparator's real sandbox (point 1).
 
 ## 9. Measurements of the first publication (2026-10-09, 194 modules)
@@ -636,9 +648,11 @@ Measured, Mac (the stand-in of section 5, `enable_nanoda` false): for both confi
 `Lean default kernel accepts the solution` and `Your solution is okay!`, exit code 0; 85 s and 6.05 GB for
 `comparator/B2Ge8x.json`, 89 s and 6.09 GB for `comparator/UniformFourierE8.json`; 171 modules replayed, none
 built. Linux: the same two lines for both configurations, exit code 0; 406 s and 6.80 GB, 432 s and 6.68 GB;
-171 modules replayed, none built. The sandbox there was a stand-in built on Linux namespaces, not `landrun`,
-because that kernel has no Landlock; the stand-in was not tested on its own in these runs. This is not a run
-with the real sandbox. The times are from a machine under load.
+171 `Replayed` lines and no `Built` line in each log. A memory figure in GB for the Linux machine, here and in
+the rest of this file, is the kbytes figure that GNU `time` printed, divided by a million; a kbyte there is
+1024 bytes, so in units of 10^9 bytes each figure is 2.4 % higher. The sandbox there was a stand-in built on
+Linux namespaces, not `landrun`, because that kernel has no Landlock; the stand-in was not tested on its own
+in these runs. This is not a run with the real sandbox. The times are from a machine under load.
 
 ### 10.4 Regenerate the generated files, and check the certificate in Python (no Lean needed)
 

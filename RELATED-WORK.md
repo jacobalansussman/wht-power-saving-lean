@@ -538,7 +538,7 @@ a claim of its authors, as everywhere in this file.
 |---|---|---|---|
 | 7795/10^7 (7795973/10^10) | [#327](https://github.com/CrocSwap/integer-mult-bounds/pull/327), DreamingOfClouds, 18:51, open; h = 20, 6,455 helpers | "two independent rational moment engines"; its author reports that it was "kernel-checked in Lean with Jacob Sussman's unchanged generator". Not built here | 1.1240 times it |
 | 7635/10^7 (7635875/10^10 by `gxdry.py` here) | [#304](https://github.com/CrocSwap/integer-mult-bounds/pull/304), DreamingOfClouds, 12:01 UTC on 2026-10-10, open; h = 22, 9,160 helpers | scripts; its description said "no Lean build" | 1.1475 times it |
-| 7547361/10^10 | the circuit of #193 with the pairs of #233 (Chafik Boukhalfa, chafreaky); his pull request #2 of this repository, open | pull request #2 reports a Lean kernel check of the Walsh-Hadamard statement at this figure and of the Fourier statement at 7547360/10^10, `tools/Compare.lean` "PASS for both" and a comparator run on Linux, "both accepted". The agents built the pull request on a Linux machine on 2026-10-10: all 54 Lean modules that it adds compiled, and `tools/Compare.lean` printed `RESULT: PASS` for both statements; they did not run the comparator on it (the record below). In this repository's own rebuild the figure is a price by `gxdry.py`, and `tools/rebuild/` reproduces it (README, "Whose circuit this is") | 1.1610 times it |
+| 7547361/10^10 | the circuit of #193 with the pairs of #233 (Chafik Boukhalfa, chafreaky); his pull request #2 of this repository, open | pull request #2 reports a Lean kernel check of the Walsh-Hadamard statement at this figure and of the Fourier statement at 7547360/10^10, `tools/Compare.lean` "PASS for both" and a comparator run on Linux, "both accepted". The agents built the pull request on a Linux machine on 2026-10-10: all 54 Lean modules that it adds compiled, and `tools/Compare.lean` printed `RESULT: PASS` for both statements; after the build they ran the official comparator on the two configurations for which he reports runs, with a stand-in for its sandbox, and it accepted both (the record below). In this repository's own rebuild the figure is a price by `gxdry.py`, and `tools/rebuild/` reproduces it (README, "Whose circuit this is") | 1.1610 times it |
 | 7474547/10^10 | the second result of this repository | a Lean theorem here | 1.1723 times it |
 
 Among those 100 pull requests, the largest kappa in a title was 7.77268e-4 (eumemic,
@@ -599,15 +599,26 @@ machine.
   machine.
 - **The build:** all 54 Lean modules that the pull request adds compiled, with no error.
 - **The two heaviest modules:** `Work.GCert.Data.Gen.P233Scal0` and `Work.GCert.Data.Gen.P233Scal1` built in
-  574 s and 642 s. The largest process of each held about 13 GB (13.3 GB and 13.4 GB). The 54 modules took 66
-  minutes in all, on a machine that other jobs shared.
+  574 s and 642 s. The largest process of each held about 13 GB (12.7 GiB and 12.8 GiB). The 54 modules took
+  66 minutes in all, on a machine that other jobs shared.
 - **The axioms:** his three theorems, `wht_main_block_B2Gp233x`, `transform_mainY` and `convolution_mainY`,
   depend on `propext`, `Classical.choice` and `Quot.sound`, and on no other axiom.
 - **The statement check:** `tools/Compare.lean` printed `RESULT: PASS` for his Walsh-Hadamard challenge and
   solution and for his Fourier challenge and solution, with the constant counts that he states (38871; 43381
   and 43404).
-- **Not run in that build:** the official comparator on his two configurations. He reports those runs
-  himself.
+- **Not run in that build:** the official comparator. The agents ran it afterwards on
+  `comparator/B2Gp233x.json` and `comparator/UniformFourier233.json`, the two configurations for which he
+  reports runs. They used a second copy of that tree and a stand-in for the sandbox (README, section 3).
+- **The comparator runs made afterwards:** the comparator accepted both configurations, each with
+  `Lean default kernel accepts the solution`, `Your solution is okay!` and exit code 0. Each log has 176
+  `Replayed` lines and no `Built` line. The time is the wall clock of the run, and the memory is the maximum
+  resident set size that GNU `time` printed.
+  - `comparator/B2Gp233x.json`: 22:58 on 2026-10-10 to 00:12 on 2026-10-11; 4455 s (1:14:15), 14443212 kB.
+  - `comparator/UniformFourier233.json`: 23:00 on 2026-10-10 to 00:13 on 2026-10-11; 4388 s (1:13:07),
+    14501748 kB.
+  - The runs shared the machine, so the times are upper bounds.
+  - These are not runs with the comparator's real sandbox: the kernel of that machine has no Landlock. He
+    reports his own runs, with the real `landrun` sandbox.
 - **Mathlib** was not compiled there. Its compiled files came from Mathlib's cache.
 - **The Python checks** of his certificate were made on the Mac earlier that day, not on the Linux machine
   (README, "Whose circuit this is").
