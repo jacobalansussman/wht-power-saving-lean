@@ -1,0 +1,19 @@
+[lift] seed 31: cells lam1 1 t1 16 F 137 K 731; |B_m sample| 106 of 4000; q order 7 found; 25s
+[d4] d1 0, d0 21, |S| 16
+[run1] |B_m letters| 400, span of their 30x30 slot permutations 184 (A has dim 184)  49s
+[run1] fixed slots [18, 19]  free slots [8, 18, 19, 29]  d0 21  S [0, 1, 2, 3, 6, 7, 12, 13, 14, 15, 20, 21, 24, 25, 26, 27]
+[run1] reduced problem residual 1.18e-13 ; null dim 244
+[run1] F1 terms 2800  absorption defect 8.7e-16  56s
+[run1] FRAME-SUM RELAXATION of the lifted skeleton (relax.Eng.decide, top free): passes = True  mu_ok {0: np.True_, 1: np.True_, 2: np.True_, 4: np.True_, 5: np.True_, 6: np.True_}  sv_gap (np.float64(0.2698502030199378), np.float64(2.495284412459211e-14))  76s
+[run1] control Y = 1: passes = False
+[d4] sigma = trivial (dim 1): null dim 12; rank of the kernel block per effective character a (need 1): a=0:1, a=1:1, a=2:1, a=3:1, a=4:1, a=5:1, a=6:1   76s
+[d4] sigma = natural V (dim 16): null dim 96; rank of the kernel block per effective character a (need 16): a=0:16, a=1:0, a=2:0, a=3:0, a=4:0, a=5:0, a=6:0   78s
+[d4] sigma = conj V (dim 16): null dim 96; rank of the kernel block per effective character a (need 16): a=0:16, a=1:0, a=2:0, a=3:0, a=4:0, a=5:0, a=6:0   81s
+[d4] sigma = natural V, character a=0 ALONE: null dim 416, kernel-block rank 0 (need 16)
+[d4] sigma = natural V, character a=1 ALONE: null dim 416, kernel-block rank 0 (need 16)
+[d4] sigma = natural V, character a=2 ALONE: null dim 416, kernel-block rank 0 (need 16)
+[d4] sigma = natural V, character a=3 ALONE: null dim 416, kernel-block rank 0 (need 16)
+[d4] sigma = natural V, character a=4 ALONE: null dim 416, kernel-block rank 0 (need 16)
+[d4] sigma = natural V, character a=5 ALONE: null dim 416, kernel-block rank 0 (need 16)
+[d4] sigma = natural V, character a=6 ALONE: null dim 416, kernel-block rank 0 (need 16)
+done 87s

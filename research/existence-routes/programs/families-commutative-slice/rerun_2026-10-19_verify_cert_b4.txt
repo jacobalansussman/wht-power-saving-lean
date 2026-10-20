@@ -1,0 +1,2 @@
+rows 83; label errors 0; rank-bound variables left uncancelled: 0; c-coefficients all >= -1: True; constant: sum lambda * rhs = -4
+VERIFIED: sum_z beta_z c_z <= -4 with beta_z >= -1, hence sum_z c_z >= 4, i.e. M >= 4W for every unit

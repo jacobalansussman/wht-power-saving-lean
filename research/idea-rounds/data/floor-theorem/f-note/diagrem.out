@@ -1,0 +1,5 @@
+rank of H - 4*signs modulo 998244353 : histogram [(8, 2), (9, 32), (10, 261), (11, 1344), (12, 4840), (13, 12272), (14, 20385), (15, 19120), (16, 7280)]
+sign patterns with rank <= 8: 2
+ signs 0000: exact rank 8, supports of size <= 3 carrying a column-space vector: 0, their span: 0
+ signs ffff: exact rank 8, supports of size <= 3 carrying a column-space vector: 0, their span: 0
+patterns examined exactly: 2 ; with a basis of vectors of at most 3 non-zeros: 0

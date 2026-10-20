@@ -1,0 +1,41 @@
+{
+ "a_bad": 0,
+ "a_checks": 40000,
+ "a_crossings": 8072,
+ "D_one": 320,
+ "D_two_max": 208,
+ "prices": {
+  "one-sided U8, exact fill (calibration, 1.6647327e-3)": {
+   "m": 73,
+   "D_per_replica": 320,
+   "rank1_crossing_pieces_per_word": 0,
+   "rank48_fill": 2397,
+   "remainder": 0,
+   "root": 0.001664732700176769
+  },
+  "two-sided, the lemma floor: D 208, 9 x 112 rank-1 crossings": {
+   "m": 74,
+   "D_per_replica": 208,
+   "rank1_crossing_pieces_per_word": 8064,
+   "rank48_fill": 2397,
+   "remainder": 0,
+   "root": 0.0010545261047766503
+  },
+  "two-sided, an-build fixed-order tie: D 320 (GB crossings only)": {
+   "m": 74,
+   "D_per_replica": 320,
+   "rank1_crossing_pieces_per_word": 7168,
+   "rank48_fill": 2397,
+   "remainder": 0,
+   "root": 0.0016246235529820486
+  },
+  "two-sided, an-build ceiling D 768 (GF free: impossible)": {
+   "m": 74,
+   "D_per_replica": 768,
+   "rank1_crossing_pieces_per_word": 3584,
+   "rank48_fill": 2397,
+   "remainder": 0,
+   "root": 0.003921158023805414
+  }
+ }
+}

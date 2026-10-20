@@ -1,0 +1,4 @@
+N=8192 K=16 floor -90 dBFS | 16-bit: median +33.33 dB, mean +33.72 dB, worst far bin +34.79 dB above the reference worst | 25-bit: median +0.70 dB, mean +1.43 dB, worst far bin +15.42 dB above the reference worst
+N=8192 K=16 floor -100 dBFS | 16-bit: median +39.30 dB, mean +39.83 dB, worst far bin +41.41 dB above the reference worst | 25-bit: median +2.02 dB, mean +3.98 dB, worst far bin +21.12 dB above the reference worst
+N=8192 K=8 floor -90 dBFS | 16-bit: median +33.46 dB, mean +34.37 dB, worst far bin +35.29 dB above the reference worst | 25-bit: median +0.74 dB, mean +1.39 dB, worst far bin +13.94 dB above the reference worst
+N=8192 K=8 floor -100 dBFS | 16-bit: median +39.34 dB, mean +40.14 dB, worst far bin +42.32 dB above the reference worst | 25-bit: median +1.96 dB, mean +3.95 dB, worst far bin +20.47 dB above the reference worst

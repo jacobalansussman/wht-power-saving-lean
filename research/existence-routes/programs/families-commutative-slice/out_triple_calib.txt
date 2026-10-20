@@ -1,0 +1,16 @@
+plain 1in3 b3 m=3 W=1 M=3: odd forms of slack <= 1: 24; even forms checked 24 -> passes
+plain 2in6 b3 m=3 W=2 M=6: odd forms of slack <= 1: 24; even forms checked 24 -> passes
+plain 3in9 b3 m=3 W=3 M=9: odd forms of slack <= 1: 24; even forms checked 24 -> passes
+plain 2in8 b4 m=4 W=2 M=8: odd forms of slack <= 1: 256; even forms checked 448 -> passes
+plain 4in16 b4 m=4 W=4 M=16: odd forms of slack <= 1: 256; even forms checked 448 -> passes
+plain 3in15 b5 m=5 W=3 M=15: odd forms of slack <= 1: 5120; even forms checked 15360 -> passes
+plain 1in5 b5 m=5 W=1 M=5: odd forms of slack <= 1: 5120; even forms checked 15360 -> passes
+1in4 (7,11,13,14) b4 m=4 W=1 M=4: odd forms of slack <= 1: 256; even forms checked 448 -> passes
+a7 2in8 two reps b4 m=4 W=2 M=8: odd forms of slack <= 1: 128; even forms checked 504 -> passes
+a8 4in16 2x2 reps b4 m=4 W=4 M=16: odd forms of slack <= 1: 128; even forms checked 504 -> passes
+U3 2in7 b3 m=3 W=2 M=7: odd forms of slack <= 1: 12; even forms checked 31 -> passes
+U3 1in7 b3 (W below) m=3 W=1 M=7: odd forms of slack <= 1: 12; even forms checked 31 -> passes
+U3^(2) 4in14 b3 m=3 W=4 M=14: odd forms of slack <= 1: 12; even forms checked 31 -> passes
+U3^(2) 3in14 b3 m=3 W=3 M=14: odd forms of slack <= 1: 12; even forms checked 31 -> passes
+U4 3in15 b4 (exists? 3 plain arrays fit in 12 of its moves) m=4 W=3 M=15: odd forms of slack <= 1: 56; even forms checked 511 -> passes
+U4 4in15 b4 [excluded by Thm 1] m=4 W=4 M=15: odd forms of slack <= 1: 56; even forms checked 511 -> passes

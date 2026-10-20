@@ -1,0 +1,1276 @@
+{
+ "label": "#2979",
+ "inputs": {
+  "gauge44": {
+   "gcert": "lowered words (gcert/1b) S2979-base.gcert1b.json.gz",
+   "gcert_sha256": "9b6dcf038c6d17376d5c35fe45d37c0caf3d6233f4ad739839fcfacee4c76202",
+   "R": 408,
+   "h": 9,
+   "block_hist": {
+    "1": 2445,
+    "2": 706,
+    "3": 232,
+    "4": 108,
+    "5": 18,
+    "8": 8
+   },
+   "max_block_rank": 8,
+   "res_hist": {
+    "4": 26,
+    "5": 2,
+    "6": 16,
+    "7": 52,
+    "8": 99,
+    "9": 213
+   },
+   "res_sum": 3283,
+   "exits": 91
+  },
+  "extra": {
+   "gcert": "lowered words (gcert/1b) S2979-extra.gcert1b.json.gz",
+   "gcert_sha256": "661834781be2387347408db4f3bd03514f9e2432257cc2d8ea11fb2037a96a42",
+   "R": 408,
+   "h": 9,
+   "block_hist": {
+    "1": 2445,
+    "2": 706,
+    "3": 232,
+    "4": 108,
+    "5": 18,
+    "8": 8
+   },
+   "max_block_rank": 8,
+   "res_hist": {
+    "4": 26,
+    "5": 2,
+    "6": 16,
+    "7": 52,
+    "8": 99,
+    "9": 213
+   },
+   "res_sum": 3283,
+   "exits": 91
+  },
+  "lean": {
+   "HStage.lean": "fb59e998e31b7fb5501ff79f98072dd09f8283f51e65f5c6b7d36a5365ab577a",
+   "HCert.lean": "68c0bee5f71a75869f5fabfa98ce5c5f22c2a09bfecf837b5a2688eefbd70a23",
+   "HostK.lean": "595a84d2ca7c46e8f14c2481d602a0d1c07d6c918547d9fc65f8f041ab5b1eeb"
+  },
+  "Gates.lean": {
+   "path": "Shea's Bridge401/Gates.lean",
+   "sha256": "077bcf0362a06cdf222477ae8fb68a1c556aa740119df50520efaa6705715d3f"
+  },
+  "ORDER.json": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+  "DISPATCH.json": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c",
+  "PLAN.json.gz": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e",
+  "TEMPLATE.json.gz": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+  "FILL": {
+   "path": "hub #2979 allocation/FILL.json.gz",
+   "sha256": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39"
+  },
+  "PROFILE": {
+   "path": "hub main: research/rank7-joint-endframes/allocation/PROFILE.json",
+   "sha256": "94a819747f3ced41f1544ada0036c983fc0c92847b9644380f877a06cd7931cf"
+  }
+ },
+ "our_network": {
+  "gates": {
+   "gateA2": {
+    "p": "pABQ_2",
+    "k": "kAQ_2",
+    "written": [
+     1,
+     4
+    ],
+    "read": [
+     2,
+     3
+    ],
+    "coeff": {
+     "1": 1,
+     "4": -1
+    }
+   },
+   "gateB2": {
+    "p": "pABQ_2",
+    "k": "kBQ_2",
+    "written": [
+     1,
+     4
+    ],
+    "read": [
+     2,
+     3
+    ],
+    "coeff": {
+     "1": -1,
+     "4": 1
+    }
+   },
+   "gateA3": {
+    "p": "pABQ_3",
+    "k": "kAQ_3",
+    "written": [
+     3,
+     6
+    ],
+    "read": [
+     4,
+     5
+    ],
+    "coeff": {
+     "3": 1,
+     "6": -1
+    }
+   },
+   "gateB3": {
+    "p": "pABQ_3",
+    "k": "kBQ_3",
+    "written": [
+     3,
+     6
+    ],
+    "read": [
+     4,
+     5
+    ],
+    "coeff": {
+     "3": -1,
+     "6": 1
+    }
+   },
+   "gateA4": {
+    "p": "pABQ_4",
+    "k": "kAQ_4",
+    "written": [
+     5,
+     8
+    ],
+    "read": [
+     6,
+     7
+    ],
+    "coeff": {
+     "5": 1,
+     "8": -1
+    }
+   },
+   "gateB4": {
+    "p": "pABQ_4",
+    "k": "kBQ_4",
+    "written": [
+     5,
+     8
+    ],
+    "read": [
+     6,
+     7
+    ],
+    "coeff": {
+     "5": -1,
+     "8": 1
+    }
+   },
+   "gateC4": {
+    "p": "pCQ_4",
+    "k": "kCQ_4",
+    "written": [
+     6,
+     7
+    ],
+    "read": [
+     5,
+     8
+    ],
+    "coeff": {
+     "6": -1,
+     "7": 1
+    }
+   },
+   "gateC3": {
+    "p": "pCQ_3",
+    "k": "kCQ_3",
+    "written": [
+     4,
+     5
+    ],
+    "read": [
+     3,
+     6
+    ],
+    "coeff": {
+     "4": -1,
+     "5": 1
+    }
+   },
+   "gateC2": {
+    "p": "pCQ_2",
+    "k": "kCQ_2",
+    "written": [
+     2,
+     3
+    ],
+    "read": [
+     1,
+     4
+    ],
+    "coeff": {
+     "2": -1,
+     "3": 1
+    }
+   }
+  },
+  "run_order": [
+   "adapt0",
+   "stage0",
+   "adapt1",
+   "stage1",
+   "climbA2",
+   "gateA2",
+   "adapt2",
+   "stage2",
+   "climbB2",
+   "gateB2",
+   "adapt3",
+   "stage3",
+   "climbA3",
+   "gateA3",
+   "adapt4",
+   "stage4",
+   "climbB3",
+   "gateB3",
+   "adapt5",
+   "stage5",
+   "climbA4",
+   "gateA4",
+   "adapt6",
+   "stage6",
+   "climbB4",
+   "gateB4",
+   "adapt7",
+   "stage7",
+   "adapt8",
+   "stage8",
+   "fin",
+   "gateC4",
+   "gateC3",
+   "gateC2"
+  ],
+  "kinds": {
+   "A2": {
+    "climb_step": "climbA2",
+    "comps": [
+     3,
+     4
+    ],
+    "pair": 2,
+    "rank": 16
+   },
+   "B2": {
+    "climb_step": "climbB2",
+    "comps": [
+     3,
+     4
+    ],
+    "pair": 2,
+    "rank": 8
+   },
+   "A3": {
+    "climb_step": "climbA3",
+    "comps": [
+     5,
+     6
+    ],
+    "pair": 3,
+    "rank": 32
+   },
+   "B3": {
+    "climb_step": "climbB3",
+    "comps": [
+     5,
+     6
+    ],
+    "pair": 3,
+    "rank": 8
+   },
+   "A4": {
+    "climb_step": "climbA4",
+    "comps": [
+     7,
+     8
+    ],
+    "pair": 4,
+    "rank": 48
+   },
+   "B4": {
+    "climb_step": "climbB4",
+    "comps": [
+     7,
+     8
+    ],
+    "pair": 4,
+    "rank": 8
+   },
+   "F1": {
+    "climb_step": "fin",
+    "comps": [
+     1,
+     2
+    ],
+    "pair": 1,
+    "rank": 48
+   },
+   "F2": {
+    "climb_step": "fin",
+    "comps": [
+     3,
+     4
+    ],
+    "pair": 2,
+    "rank": 32
+   },
+   "F3": {
+    "climb_step": "fin",
+    "comps": [
+     5,
+     6
+    ],
+    "pair": 3,
+    "rank": 16
+   }
+  }
+ },
+ "child_to_kind": {
+  "0": {
+   "kind": "A2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 16
+  },
+  "1": {
+   "kind": "B2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 8
+  },
+  "2": {
+   "kind": "A2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 16
+  },
+  "3": {
+   "kind": "B2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 8
+  },
+  "4": {
+   "kind": "A3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 32
+  },
+  "5": {
+   "kind": "B3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 8
+  },
+  "6": {
+   "kind": "A3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 32
+  },
+  "7": {
+   "kind": "B3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 8
+  },
+  "8": {
+   "kind": "A4",
+   "hub_pair": 3,
+   "side": 0,
+   "rank": 48
+  },
+  "9": {
+   "kind": "B4",
+   "hub_pair": 3,
+   "side": 0,
+   "rank": 8
+  },
+  "10": {
+   "kind": "A4",
+   "hub_pair": 3,
+   "side": 1,
+   "rank": 48
+  },
+  "11": {
+   "kind": "B4",
+   "hub_pair": 3,
+   "side": 1,
+   "rank": 8
+  },
+  "12": {
+   "kind": "F1",
+   "hub_pair": 0,
+   "side": 0,
+   "rank": 48
+  },
+  "13": {
+   "kind": "F1",
+   "hub_pair": 0,
+   "side": 1,
+   "rank": 48
+  },
+  "14": {
+   "kind": "F2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 32
+  },
+  "15": {
+   "kind": "F2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 32
+  },
+  "16": {
+   "kind": "F3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 16
+  },
+  "17": {
+   "kind": "F3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 16
+  }
+ },
+ "fill": {
+  "rows": 271728,
+  "roles_per_call": 408,
+  "calls": 666,
+  "replicas": 74
+ },
+ "G0": {
+  "label": "our network, #2979 order",
+  "roles": 271728,
+  "cross_replica_roles": 251358,
+  "violations": {},
+  "loads_over_rank": 0,
+  "one_use_per_call_and_role": true,
+  "remainders": 52184,
+  "remainder_profile": {
+   "1": 17310,
+   "3": 4956,
+   "5": 1728,
+   "48": 28190
+  },
+  "classes": [
+   {
+    "hub_child": 4,
+    "kind": "A3",
+    "side": "x",
+    "remainder": 1,
+    "cls": "neither",
+    "count": 2306
+   },
+   {
+    "hub_child": 4,
+    "kind": "A3",
+    "side": "x",
+    "remainder": 5,
+    "cls": "neither",
+    "count": 1074
+   },
+   {
+    "hub_child": 6,
+    "kind": "A3",
+    "side": "y",
+    "remainder": 1,
+    "cls": "neither",
+    "count": 5978
+   },
+   {
+    "hub_child": 6,
+    "kind": "A3",
+    "side": "y",
+    "remainder": 5,
+    "cls": "neither",
+    "count": 652
+   },
+   {
+    "hub_child": 8,
+    "kind": "A4",
+    "side": "x",
+    "remainder": 3,
+    "cls": "neither",
+    "count": 224
+   },
+   {
+    "hub_child": 8,
+    "kind": "A4",
+    "side": "x",
+    "remainder": 48,
+    "cls": "HEAD-literal",
+    "count": 8064
+   },
+   {
+    "hub_child": 10,
+    "kind": "A4",
+    "side": "y",
+    "remainder": 3,
+    "cls": "neither",
+    "count": 266
+   },
+   {
+    "hub_child": 10,
+    "kind": "A4",
+    "side": "y",
+    "remainder": 48,
+    "cls": "HEAD-literal",
+    "count": 8022
+   },
+   {
+    "hub_child": 12,
+    "kind": "F1",
+    "side": "x",
+    "remainder": 3,
+    "cls": "neither",
+    "count": 1776
+   },
+   {
+    "hub_child": 12,
+    "kind": "F1",
+    "side": "x",
+    "remainder": 48,
+    "cls": "neither",
+    "count": 6512
+   },
+   {
+    "hub_child": 13,
+    "kind": "F1",
+    "side": "y",
+    "remainder": 3,
+    "cls": "neither",
+    "count": 2690
+   },
+   {
+    "hub_child": 13,
+    "kind": "F1",
+    "side": "y",
+    "remainder": 48,
+    "cls": "neither",
+    "count": 5592
+   },
+   {
+    "hub_child": 14,
+    "kind": "F2",
+    "side": "x",
+    "remainder": 1,
+    "cls": "neither",
+    "count": 2170
+   },
+   {
+    "hub_child": 14,
+    "kind": "F2",
+    "side": "x",
+    "remainder": 5,
+    "cls": "neither",
+    "count": 2
+   },
+   {
+    "hub_child": 15,
+    "kind": "F2",
+    "side": "y",
+    "remainder": 1,
+    "cls": "neither",
+    "count": 6856
+   }
+  ],
+  "totals_by_class": {
+   "HEAD-literal": 16086,
+   "neither": 36098
+  },
+  "rank48_by_class": {
+   "HEAD-literal": 16086,
+   "neither": 12104
+  },
+  "heads_rank48_unhosted": 16086,
+  "examples": {
+   "4:1:neither": {
+    "replica": 0,
+    "port": 54,
+    "comp": 5,
+    "climb_pos": 178,
+    "first_nonidentity_before": [
+     [
+      "0",
+      "adapt0:adapter:A3",
+      "False"
+     ],
+     [
+      "1",
+      "hosted:A3",
+      "False"
+     ],
+     [
+      "1",
+      "stage0:hostuse:A3",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "179",
+      "gateA3:gate_read",
+      "False"
+     ],
+     [
+      "273",
+      "hosted:B3",
+      "False"
+     ],
+     [
+      "308",
+      "adapt4:adapter:B3",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "4:5:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 5,
+    "climb_pos": 178,
+    "first_nonidentity_before": [
+     [
+      "0",
+      "adapt0:adapter:A3",
+      "False"
+     ],
+     [
+      "1",
+      "stage0:hostuse:A3",
+      "False"
+     ],
+     [
+      "20",
+      "adapt1:adapter:A3",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "179",
+      "gateA3:gate_read",
+      "False"
+     ],
+     [
+      "217",
+      "hosted:B3",
+      "False"
+     ],
+     [
+      "308",
+      "adapt4:adapter:B3",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "6:1:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 6,
+    "climb_pos": 178,
+    "first_nonidentity_before": [
+     [
+      "0",
+      "adapt0:adapter:A3",
+      "False"
+     ],
+     [
+      "1",
+      "hosted:A3",
+      "False"
+     ],
+     [
+      "1",
+      "stage0:hostuse:A3",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "179",
+      "gateA3:gate_write",
+      "False"
+     ],
+     [
+      "273",
+      "hosted:B3",
+      "False"
+     ],
+     [
+      "308",
+      "adapt4:adapter:B3",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "6:5:neither": {
+    "replica": 1,
+    "port": 0,
+    "comp": 6,
+    "climb_pos": 206,
+    "first_nonidentity_before": [
+     [
+      "4",
+      "adapt0:adapter:A3",
+      "False"
+     ],
+     [
+      "5",
+      "stage0:hostuse:A3",
+      "False"
+     ],
+     [
+      "17",
+      "hosted:A3",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "207",
+      "gateA3:gate_write",
+      "False"
+     ],
+     [
+      "241",
+      "hosted:B3",
+      "False"
+     ],
+     [
+      "344",
+      "adapt4:adapter:B3",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "8:3:neither": {
+    "replica": 23,
+    "port": 0,
+    "comp": 7,
+    "climb_pos": 1742,
+    "first_nonidentity_before": [
+     [
+      "21",
+      "hosted:A4",
+      "False"
+     ],
+     [
+      "476",
+      "adapt0:adapter:A4",
+      "False"
+     ],
+     [
+      "477",
+      "stage0:hostuse:A4",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "1743",
+      "gateA4:gate_read",
+      "False"
+     ],
+     [
+      "1817",
+      "hosted:B4",
+      "False"
+     ],
+     [
+      "1952",
+      "adapt6:adapter:B4",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "fin:free_final",
+     "brec401:relabel"
+    ]
+   },
+   "8:48:HEAD-literal": {
+    "replica": 0,
+    "port": 0,
+    "comp": 7,
+    "climb_pos": 482,
+    "first_nonidentity_before": [],
+    "first_nonfree_after": [
+     [
+      "483",
+      "gateA4:gate_read",
+      "False"
+     ],
+     [
+      "513",
+      "hosted:B4",
+      "False"
+     ],
+     [
+      "688",
+      "adapt6:adapter:B4",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "fin:free_final",
+     "brec401:relabel"
+    ]
+   },
+   "10:3:neither": {
+    "replica": 23,
+    "port": 0,
+    "comp": 8,
+    "climb_pos": 1742,
+    "first_nonidentity_before": [
+     [
+      "476",
+      "adapt0:adapter:A4",
+      "False"
+     ],
+     [
+      "477",
+      "stage0:hostuse:A4",
+      "False"
+     ],
+     [
+      "665",
+      "hosted:A4",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "1743",
+      "gateA4:gate_write",
+      "False"
+     ],
+     [
+      "1913",
+      "hosted:B4",
+      "False"
+     ],
+     [
+      "1952",
+      "adapt6:adapter:B4",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "fin:free_final",
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "10:48:HEAD-literal": {
+    "replica": 0,
+    "port": 0,
+    "comp": 8,
+    "climb_pos": 482,
+    "first_nonidentity_before": [],
+    "first_nonfree_after": [
+     [
+      "483",
+      "gateA4:gate_write",
+      "False"
+     ],
+     [
+      "577",
+      "hosted:B4",
+      "False"
+     ],
+     [
+      "688",
+      "adapt6:adapter:B4",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "fin:free_final",
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "12:3:neither": {
+    "replica": 4,
+    "port": 43,
+    "comp": 1,
+    "climb_pos": 1450,
+    "first_nonidentity_before": [
+     [
+      "17",
+      "stage0:local",
+      "False"
+     ],
+     [
+      "69",
+      "stage1:local",
+      "False"
+     ],
+     [
+      "71",
+      "gateA2:gate_write",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "1453",
+      "gateC2:gate_read",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "12:48:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 1,
+    "climb_pos": 1194,
+    "first_nonidentity_before": [
+     [
+      "1",
+      "stage0:local",
+      "False"
+     ],
+     [
+      "21",
+      "stage1:local",
+      "False"
+     ],
+     [
+      "23",
+      "gateA2:gate_write",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "1197",
+      "gateC2:gate_read",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "13:3:neither": {
+    "replica": 1,
+    "port": 110,
+    "comp": 2,
+    "climb_pos": 1258,
+    "first_nonidentity_before": [
+     [
+      "5",
+      "stage0:local",
+      "False"
+     ],
+     [
+      "33",
+      "stage1:local",
+      "False"
+     ],
+     [
+      "35",
+      "gateA2:gate_read",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "1261",
+      "gateC2:gate_write",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "13:48:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 2,
+    "climb_pos": 1194,
+    "first_nonidentity_before": [
+     [
+      "1",
+      "stage0:local",
+      "False"
+     ],
+     [
+      "21",
+      "stage1:local",
+      "False"
+     ],
+     [
+      "23",
+      "gateA2:gate_read",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "1197",
+      "gateC2:gate_write",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "14:1:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 3,
+    "climb_pos": 1194,
+    "first_nonidentity_before": [
+     [
+      "0",
+      "adapt0:adapter:A2",
+      "False"
+     ],
+     [
+      "1",
+      "stage0:hostuse:A2",
+      "False"
+     ],
+     [
+      "5",
+      "hosted:A2",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "1196",
+      "gateC3:gate_read",
+      "False"
+     ],
+     [
+      "1197",
+      "gateC2:gate_write",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "14:5:neither": {
+    "replica": 26,
+    "port": 0,
+    "comp": 3,
+    "climb_pos": 2354,
+    "first_nonidentity_before": [
+     [
+      "205",
+      "hosted:A2",
+      "False"
+     ],
+     [
+      "608",
+      "adapt0:adapter:A2",
+      "False"
+     ],
+     [
+      "609",
+      "stage0:hostuse:A2",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "2356",
+      "gateC3:gate_read",
+      "False"
+     ],
+     [
+      "2357",
+      "gateC2:gate_write",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "15:1:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 4,
+    "climb_pos": 1194,
+    "first_nonidentity_before": [
+     [
+      "0",
+      "adapt0:adapter:A2",
+      "False"
+     ],
+     [
+      "1",
+      "stage0:hostuse:A2",
+      "False"
+     ],
+     [
+      "5",
+      "hosted:A2",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "1196",
+      "gateC3:gate_write",
+      "False"
+     ],
+     [
+      "1197",
+      "gateC2:gate_read",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   }
+  }
+ },
+ "control_gateA4_before_climbA4": {
+  "totals_by_class": {
+   "neither": 52184
+  },
+  "rank48_by_class": {
+   "neither": 28190
+  },
+  "violations": {
+   "outside_our_window": 2450
+  }
+ },
+ "control_without_gateC2": {
+  "totals_by_class": {
+   "HEAD-literal": 16086,
+   "TAIL-literal": 16570,
+   "neither": 19528
+  },
+  "rank48_by_class": {
+   "HEAD-literal": 16086,
+   "TAIL-literal": 12104
+  },
+  "classes": [
+   {
+    "hub_child": 12,
+    "kind": "F1",
+    "side": "x",
+    "remainder": 3,
+    "cls": "TAIL-literal",
+    "count": 1776
+   },
+   {
+    "hub_child": 12,
+    "kind": "F1",
+    "side": "x",
+    "remainder": 48,
+    "cls": "TAIL-literal",
+    "count": 6512
+   },
+   {
+    "hub_child": 13,
+    "kind": "F1",
+    "side": "y",
+    "remainder": 3,
+    "cls": "TAIL-literal",
+    "count": 2690
+   },
+   {
+    "hub_child": 13,
+    "kind": "F1",
+    "side": "y",
+    "remainder": 48,
+    "cls": "TAIL-literal",
+    "count": 5592
+   }
+  ]
+ },
+ "call_blocks": {
+  "calls_per_provider": {
+   "extra": 416,
+   "gauge44": 250
+  },
+  "max_rank_over_both_words": 8,
+  "all_call_blocks_rank_le_8": true,
+  "global_profile": {
+   "1": 1645680,
+   "2": 470196,
+   "3": 159468,
+   "4": 71928,
+   "5": 13716,
+   "8": 5328,
+   "48": 28190
+  },
+  "hub_profile": {
+   "1": 1645680,
+   "2": 470196,
+   "3": 159468,
+   "4": 71928,
+   "5": 13716,
+   "8": 5328,
+   "48": 28190
+  },
+  "global_profile_equals_hub": true,
+  "rank_mass": 4816512
+ },
+ "ok": true
+}

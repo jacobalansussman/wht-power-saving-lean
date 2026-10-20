@@ -1,0 +1,9 @@
+h=7 stage 1: costs {'X': 6, 'Y': 6, 'C': 21, 'side': {2: 7, 0: 7}, 'fin': 336} ; table {'X': 6, 'Y': 6, 'C': 21, 'side': 7, 'fin': 336} ; decreasing edges ['C 3->4']
+h=7 stage 2: boundary X equal True, Y equal True
+h=7 stage 2: costs {'X': 42, 'Y': 42, 'C': 63, 'side': {2: 49, 0: 49}, 'fin': 294} ; table {'X': 42, 'Y': 42, 'C': 63, 'side': 49, 'fin': 294} ; decreasing edges ['C 3->4']
+h=7 stage 3: boundary X equal True, Y equal True
+h=7 terminals: X sink full True ; Y sink = U_a^perp True ; X source(stage1) = U_a checked at stage 1
+h=7 stage 3: costs {'X': 294, 'Y': 294, 'C': 357, 'side': {2: 343, 0: 343}, 'fin': 0} ; table {'X': 294, 'Y': 294, 'C': 357, 'side': 343, 'fin': 0} ; decreasing edges ['C 3->4']
+h=7: v=35 d=16 m=343 W=2173150 ; brute-force sum of residuals = 745716300 ; W*m-2N+2L = 745716300 ; equal: True ; Delta = -325850
+problems: none
+python3 -I -B  7  1.63s user 0.02s system 98% cpu 1.681 total

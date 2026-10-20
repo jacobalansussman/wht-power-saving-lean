@@ -1,0 +1,34 @@
+{
+ "design": "E7",
+ "k": 7,
+ "n": 63,
+ "max_err": 7.554494603032488e-14,
+ "exact": true,
+ "paid": {
+  "x": 378,
+  "centre": 49,
+  "carrier": 6457,
+  "y": 378
+ },
+ "total": 7262,
+ "children": {
+  "carrier:1": 30,
+  "carrier:2": 171,
+  "carrier:3": 342,
+  "carrier:4": 581,
+  "carrier:5": 547,
+  "centre:7": 7,
+  "x:1": 284,
+  "x:2": 20,
+  "x:3": 5,
+  "x:4": 3,
+  "x:5": 3,
+  "x:6": 2,
+  "y:1": 378
+ },
+ "scratch_nonzero_dropped": 1995,
+ "free": 236,
+ "carriers": 1671,
+ "junk": 2016,
+ "seconds": 79.5
+}

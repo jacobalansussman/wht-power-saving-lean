@@ -1,0 +1,5 @@
+sign |R| = 16 classes of D_e0..D_e3: [[0], [1], [2], [3]]
+o3 |R| = 48 classes of D_e0..D_e3: [[0, 1, 2], [3]]
+o4 |R| = 64 classes of D_e0..D_e3: [[0, 1, 2, 3]]
+addr |R| = 384 classes of D_e0..D_e3: [[0, 1, 2, 3]]
+E = K g1^-1 equals D_e0: True | depth(E g1) = 4 E g1 == K: True | depth(E g2) = 2 E g2 == X_e0 D_e2 D_e3: True

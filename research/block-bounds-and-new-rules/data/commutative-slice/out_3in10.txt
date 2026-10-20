@@ -1,0 +1,8 @@
+m=4 W=3 n=10: N=10, multisets 1961256, candidate functionals 512
+certified failing: 1961256, passing the Phi-test: 0
+       17.65 real        15.40 user         1.43 sys
+m=4 W=3 n=10: multisets enumerated 1961256, certificate entries 1961256, complete: True
+  exclusion certificates valid: 1961256; entries without certificate: 0 (of which pass the test by brute force: 0)
+RESULT: PASS -> 1961256 of 1961256 multisets EXCLUDED by certificate; 0 pass the test
+       15.28 real        14.55 user         0.14 sys
+            19709952  maximum resident set size

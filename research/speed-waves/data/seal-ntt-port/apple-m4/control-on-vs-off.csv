@@ -1,0 +1,109 @@
+n,benchmark,pairs,off_median_us,on_median_us,change_pct,spread_lo_pct,spread_hi_pct,verdict
+4096,UTIL / NTTForwardLowLevelLazy,3,12.946,8.437,-34.83,-35.16,-29.70,faster
+4096,UTIL / NTTInverseLowLevelLazy,3,14.004,8.458,-39.60,-40.35,-37.68,faster
+4096,UTIL / NTTForwardLowLevel,3,19.100,8.429,-55.87,-55.95,-52.88,faster
+4096,UTIL / NTTInverseLowLevel,3,15.029,8.471,-43.64,-44.44,-40.53,faster
+4096,UTIL / NTTForward,3,77.646,34.038,-56.16,-56.89,-54.10,faster
+4096,UTIL / NTTInverse,3,59.816,34.317,-42.63,-43.27,-39.41,faster
+4096,BFV / EncryptSecret,3,355.125,327.238,-7.85,-7.91,-3.07,faster
+4096,BFV / EncryptPublic,3,582.359,515.692,-11.45,-12.27,-8.66,faster
+4096,BFV / Decrypt,3,108.979,87.442,-19.76,-20.26,-15.85,faster
+4096,BFV / EncodeBatch,3,17.008,10.125,-40.47,-40.47,-38.63,faster
+4096,BFV / DecodeBatch,3,22.225,11.254,-49.36,-49.91,-48.01,faster
+4096,BFV / EvaluateMulCt,3,1464.396,1397.492,-4.57,-4.76,-0.76,faster
+4096,BFV / EvaluateSquare,3,1039.113,981.979,-5.50,-5.87,-2.15,faster
+4096,BFV / EvaluateRelinInplace,3,242.087,182.983,-24.41,-25.12,-19.82,faster
+4096,BFV / EvaluateRotateRows,3,251.733,191.742,-23.83,-24.24,-19.63,faster
+4096,BFV / EvaluateRotateCols,3,252.225,191.437,-24.10,-24.23,-19.22,faster
+4096,CKKS / EncryptSecret,3,276.813,253.650,-8.37,-8.54,-3.17,faster
+4096,CKKS / EncryptPublic,3,623.154,488.304,-21.64,-22.26,-17.12,faster
+4096,CKKS / Decrypt,3,17.150,17.333,1.07,-0.34,5.27,no change
+4096,CKKS / EncodeDouble,3,82.137,60.700,-26.10,-26.77,-22.05,faster
+4096,CKKS / DecodeDouble,3,124.042,109.550,-11.68,-14.53,-7.75,faster
+4096,CKKS / EvaluateMulCt,3,42.733,42.634,-0.23,-3.78,4.62,no change
+4096,CKKS / EvaluateSquare,3,32.333,32.092,-0.75,-3.03,2.93,no change
+4096,CKKS / EvaluateRelinInplace,3,240.838,181.021,-24.84,-26.97,-20.32,faster
+4096,CKKS / EvaluateRescaleInplace,3,68.412,46.079,-32.65,-34.02,-30.17,faster
+4096,CKKS / EvaluateRotate,3,249.629,190.150,-23.83,-24.34,-19.60,faster
+4096,CKKS / EvaluateAddCt,3,9.625,9.608,-0.17,-3.92,6.02,no change
+8192,UTIL / NTTForwardLowLevelLazy,3,28.529,17.312,-39.32,-39.50,-38.19,faster
+8192,UTIL / NTTInverseLowLevelLazy,3,29.642,17.708,-40.26,-41.28,-38.32,faster
+8192,UTIL / NTTForwardLowLevel,3,40.683,17.296,-57.49,-57.56,-56.55,faster
+8192,UTIL / NTTInverseLowLevel,3,31.658,17.700,-44.09,-44.92,-42.36,faster
+8192,UTIL / NTTForward,3,325.362,143.633,-55.85,-56.82,-55.30,faster
+8192,UTIL / NTTInverse,3,252.600,144.958,-42.61,-43.82,-41.04,faster
+8192,BFV / EncryptSecret,3,1141.229,1025.521,-10.14,-10.17,-5.05,faster
+8192,BFV / EncryptPublic,3,1566.771,1314.233,-16.12,-16.68,-12.49,faster
+8192,BFV / Decrypt,3,399.467,306.992,-23.15,-24.15,-20.57,faster
+8192,BFV / EncodeBatch,3,36.400,21.500,-40.93,-42.85,-35.82,faster
+8192,BFV / DecodeBatch,3,49.083,22.900,-53.34,-53.78,-50.44,faster
+8192,BFV / EvaluateMulCt,3,5488.367,5183.000,-5.56,-7.29,-1.76,faster
+8192,BFV / EvaluateSquare,3,3984.192,3723.804,-6.54,-8.42,-2.48,faster
+8192,BFV / EvaluateRelinInplace,3,1223.617,909.138,-25.70,-28.29,-24.18,faster
+8192,BFV / EvaluateRotateRows,3,1268.004,943.054,-25.63,-26.97,-24.71,faster
+8192,BFV / EvaluateRotateCols,3,1269.454,944.812,-25.57,-26.49,-24.54,faster
+8192,CKKS / EncryptSecret,3,871.846,778.600,-10.70,-12.16,-10.43,faster
+8192,CKKS / EncryptPublic,3,1729.808,1262.013,-27.04,-28.11,-26.80,faster
+8192,CKKS / Decrypt,3,64.417,64.833,0.65,-2.15,1.87,no change
+8192,CKKS / EncodeDouble,3,260.392,168.525,-35.28,-36.73,-33.72,faster
+8192,CKKS / DecodeDouble,3,550.521,502.912,-8.65,-14.42,-7.67,faster
+8192,CKKS / EvaluateMulCt,3,167.196,166.971,-0.13,-2.46,0.86,no change
+8192,CKKS / EvaluateSquare,3,122.792,122.767,-0.02,-2.46,2.85,no change
+8192,CKKS / EvaluateRelinInplace,3,1214.625,900.875,-25.83,-28.00,-24.27,faster
+8192,CKKS / EvaluateRescaleInplace,3,295.542,210.946,-28.62,-30.53,-26.94,faster
+8192,CKKS / EvaluateRotate,3,1253.017,932.954,-25.54,-27.39,-23.21,faster
+8192,CKKS / EvaluateAddCt,3,34.658,34.616,-0.12,-1.41,2.98,no change
+16384,UTIL / NTTForwardLowLevelLazy,3,61.962,37.242,-39.90,-41.07,-39.34,faster
+16384,UTIL / NTTInverseLowLevelLazy,3,66.433,40.996,-38.29,-38.47,-36.35,faster
+16384,UTIL / NTTForwardLowLevel,3,87.254,37.087,-57.49,-57.69,-56.31,faster
+16384,UTIL / NTTInverseLowLevel,3,70.208,40.896,-41.75,-42.24,-40.31,faster
+16384,UTIL / NTTForward,3,1415.625,613.008,-56.70,-56.81,-55.91,faster
+16384,UTIL / NTTInverse,3,1138.900,668.313,-41.32,-41.36,-40.57,faster
+16384,BFV / EncryptSecret,3,4213.479,3721.971,-11.67,-13.35,-10.08,faster
+16384,BFV / EncryptPublic,3,4973.792,4009.725,-19.38,-19.96,-18.21,faster
+16384,BFV / Decrypt,3,1637.216,1215.696,-25.75,-26.15,-25.66,faster
+16384,BFV / EncodeBatch,3,82.475,45.200,-45.20,-45.73,-42.68,faster
+16384,BFV / DecodeBatch,3,97.354,46.829,-51.90,-55.05,-51.50,faster
+16384,BFV / EvaluateMulCt,3,23022.583,21552.767,-6.38,-6.52,-6.19,faster
+16384,BFV / EvaluateSquare,3,17013.300,15804.017,-7.11,-8.71,-6.73,faster
+16384,BFV / EvaluateRelinInplace,3,7720.471,5555.508,-28.04,-28.35,-27.80,faster
+16384,BFV / EvaluateRotateRows,3,7894.071,5707.238,-27.70,-28.68,-27.18,faster
+16384,BFV / EvaluateRotateCols,3,7898.633,5690.367,-27.96,-29.39,-27.45,faster
+16384,CKKS / EncryptSecret,3,3101.112,2698.687,-12.98,-13.17,-12.97,faster
+16384,CKKS / EncryptPublic,3,5625.304,3792.150,-32.59,-32.78,-32.31,faster
+16384,CKKS / Decrypt,3,256.371,256.292,-0.03,-0.42,0.21,no change
+16384,CKKS / EncodeDouble,3,943.800,539.158,-42.87,-42.95,-42.81,faster
+16384,CKKS / DecodeDouble,3,2677.646,2455.158,-8.31,-8.59,-8.14,faster
+16384,CKKS / EvaluateMulCt,3,669.754,669.796,0.01,-0.07,0.71,no change
+16384,CKKS / EvaluateSquare,3,493.854,492.475,-0.28,-0.33,0.09,no change
+16384,CKKS / EvaluateRelinInplace,3,7707.721,5503.054,-28.60,-28.96,-28.40,faster
+16384,CKKS / EvaluateRescaleInplace,3,1281.287,893.167,-30.29,-30.34,-29.82,faster
+16384,CKKS / EvaluateRotate,3,7809.675,5626.741,-27.95,-28.01,-27.60,faster
+16384,CKKS / EvaluateAddCt,3,137.254,137.725,0.34,0.13,0.63,slower
+32768,UTIL / NTTForwardLowLevelLazy,3,149.521,143.679,-3.91,-4.52,-3.36,faster
+32768,UTIL / NTTInverseLowLevelLazy,3,156.054,150.525,-3.54,-5.35,-2.70,faster
+32768,UTIL / NTTForwardLowLevel,3,201.279,193.658,-3.79,-4.44,-3.66,faster
+32768,UTIL / NTTInverseLowLevel,3,164.675,159.892,-2.90,-4.94,-2.85,faster
+32768,UTIL / NTTForward,3,6139.708,5874.529,-4.32,-4.45,-2.53,faster
+32768,UTIL / NTTInverse,3,5033.312,4829.592,-4.05,-4.62,-3.53,faster
+32768,BFV / EncryptSecret,3,16555.821,16650.317,0.57,0.39,3.06,slower
+32768,BFV / EncryptPublic,3,20197.575,20278.229,0.40,0.15,0.89,slower
+32768,BFV / Decrypt,3,6739.792,6719.363,-0.30,-0.51,0.17,no change
+32768,BFV / EncodeBatch,3,195.117,108.054,-44.62,-45.13,-43.32,faster
+32768,BFV / DecodeBatch,3,230.933,108.121,-53.18,-53.43,-52.75,faster
+32768,BFV / EvaluateMulCt,3,105439.612,105082.008,-0.34,-0.38,-0.10,faster
+32768,BFV / EvaluateSquare,3,78298.788,78135.408,-0.21,-0.50,-0.19,faster
+32768,BFV / EvaluateRelinInplace,3,51037.325,50987.062,-0.10,-0.20,-0.10,faster
+32768,BFV / EvaluateRotateRows,3,51795.350,51697.500,-0.19,-3.92,-0.14,faster
+32768,BFV / EvaluateRotateCols,3,54008.900,51665.158,-4.34,-4.61,-0.15,faster
+32768,CKKS / EncryptSecret,3,12313.779,12092.904,-1.79,-3.46,-0.44,faster
+32768,CKKS / EncryptPublic,3,23390.813,23094.183,-1.27,-4.28,0.04,no change
+32768,CKKS / Decrypt,3,982.092,954.279,-2.83,-3.05,-0.76,faster
+32768,CKKS / EncodeDouble,3,4816.654,4704.696,-2.32,-2.55,-0.24,faster
+32768,CKKS / DecodeDouble,3,14333.117,14106.966,-1.58,-1.58,-0.65,faster
+32768,CKKS / EvaluateMulCt,3,2533.971,2533.683,-0.01,-0.19,0.79,no change
+32768,CKKS / EvaluateSquare,3,1908.292,1902.154,-0.32,-0.99,1.00,no change
+32768,CKKS / EvaluateRelinInplace,3,51380.075,51948.888,1.11,-0.27,1.50,no change
+32768,CKKS / EvaluateRescaleInplace,3,5391.771,5397.729,0.11,-0.28,1.16,no change
+32768,CKKS / EvaluateRotate,3,53867.996,53432.596,-0.81,-1.62,-0.53,faster
+32768,CKKS / EvaluateAddCt,3,596.162,592.142,-0.67,-1.91,0.86,no change

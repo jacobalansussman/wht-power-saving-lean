@@ -1,0 +1,14 @@
+The U8 word, rebuilt by the agents on the first Colab machine on 13 October 2026 (logs as written, home-folder
+paths shortened).
+
+run-u8.sh  ran the program research/complex-t21-owners/vendor/pr870/construction/barch/reproduce_barch.py of
+           CrocSwap/integer-mult-bounds (recipe U8), in a clone of that repository at commit
+           407d52ff15b2217b6e22bce44728b4c3907b6515 (first line of u8.log), on Jeremy Kothe's #799 X4 word.
+u8.log     its eight steps, each PASS, and the exit status 0; STEPS.json the time of each step.
+barch.log  the sha256 of the word it built (090fd574...); barch-controls.log its controls.
+native.log the exact replay of the word: canonical sha256 24db880b7dab31e6af4eec8a1aba1bbbae29cd50d9a7b77cf0e9b571b3e5ae7c,
+           504 helpers, the local profile. The repository pins the same value for the word, in
+           research/complex-t21-owners/vendor/pr870/construction/barch/LOCAL-PINS-barch-U8.json at that commit.
+The word itself is not included. The certificates of community/u8x, community/u8xm and community/u8xmhh are
+computed from it (NOTICE, section 9, item g; the community's notices are in
+third-party/CrocSwap-integer-mult-bounds/at-407d52ff/).

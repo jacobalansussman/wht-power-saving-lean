@@ -1,0 +1,8 @@
+m=2 (a) homomorphism/lift-independence: 30/30 words of 7 letters equal; pi o Lambda = id: 30/30; letter types ['addr', 'shift', 'dir', 'shift', 'shift', 'dir', 'addr']
+m=2 (b) D(dir z) == closed form for 3/3 z; group-element counts [6]
+m=2 (c) sizes (total group elements, Pauli terms in blocks 0,2, in blocks 1,3):
+   phase letters z!=0: [8]
+   phase letter z=0,c=1 (scalar i): (1, [1, 1], [1, 1])   shift X^1: (1, [1, 1], [1, 1])
+   elementary address map: (8, [1, 1], [4, 4])
+   random address maps: [(32, [1, 1], [16, 16]), (8, [1, 1], [4, 4]), (8, [1, 1], [4, 4]), (8, [1, 1], [4, 4]), (32, [1, 1], [16, 16]), (32, [1, 1], [16, 16])]
+m=2 (d) block-0 orbits [1, 15] (claim [1, 15]); block-2 orbits [6, 10] (claim [6, 10])

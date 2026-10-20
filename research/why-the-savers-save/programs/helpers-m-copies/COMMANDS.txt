@@ -1,0 +1,21 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+d-mcopy-code, 13 Oct 2026.  All runs < 15 s, < 200 MB, python3 -I (3.9) from this folder.
+W = ../../bound-check/k-word/data/u8-native/local/FULL-WORD.json.gz   (U8 word, hub FULL-WORD format; same word as CANONICAL)
+  python3 -I ../../bound-check/m-anatomy/pricer.py --profile '{"1":848490,"2":112554,"3":148518,"4":53946,"5":23976,"8":2664,"48":11086}' --m 73 --W 33152 --deficit 11840   # #942 control -> step0_control.out
+  python3 -I audit_local_pr870_py39.py --word W --output audit_control.json   # hub pr870 independent audit (copy; only change: int.bit_count shim for py3.9) PASS on the unchanged word
+  python3 -I mc_map.py W mc_map.json          # 112 M copies: per-gate events with values (replay in the audit's program order)
+  python3 -I mc_groups.py W mc_groups.json    # 14 groups of 8 (components of M-M gates), 4 targets each, restoration check
+  python3 -I group_timeline.py W 0            # group 0 complete B timeline (pre-reads <6>, dirt folding at E4, loads at F_j, butterflies, reads at U_t)
+  python3 -I group_spec.py W 0                # delivery matrix C (targets x 8 packets) and frames of group 0
+  python3 -I all_groups.py W all_groups.json  # all groups: visitors of every F_j (exactly creator pair + M copy), readers, W/U containment
+  python3 -I chain_cover.py W G               # giver inventory (value-level) + exact min nested-chain cover, group G
+  python3 -I existing_relays.py W             # no existing register / other target can relay needed content (value-level)
+  python3 -I reach.py W ; python3 -I reach_control.py W   # value-free reachability without / with the group's M copies
+  python3 -I cover_valuefree.py W             # value-free exact lower bound: 8 relays per group, all 14 groups
+  python3 -I split_candidates.py W            # one-run-split third visitors: none
+  python3 -I ../g-break/mcopy_check.py ../../bound-check/k-word/data/u8-native/local/CANONICAL-WORD.json.gz   # fallback g2 numbers
+Library: wordlib.py (basis/containment, audit program order, audit climb rule).

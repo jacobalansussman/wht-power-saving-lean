@@ -1,0 +1,38 @@
+== Part A: one-type thresholds (calibration against recorded values) ==
+  2 in 3 at block 2 (rank-1 moves)                 theta* = 0.5850  saving = 0.4150   recorded: 0.415 (ex-note)
+  3 in 5 at block 2                                theta* = 0.7370  saving = 0.2630   recorded: 0.263 (ex-note)
+  2 arrays block 3, ranks 1,1,1,1,1                theta* = 0.8340  saving = 0.1660   recorded: x = 0.1660 (w-engine 4.2)
+  2 arrays block 3, ranks 2,1,1,1                  theta* = 0.7813  saving = 0.2187   recorded: x = 0.2187 (w-engine 4.2)
+  2 arrays block 3, ranks 2,2,1                    theta* = 0.6728  saving = 0.3272   recorded: x = 0.3272 (w-engine 4.2)
+  3 arrays block 3, eight rank 1                   theta* = 0.8928  saving = 0.1072   recorded: x = 0.1072 (w-engine 4.2)
+  3 arrays block 3, ranks 2,2,2,2                  theta* = 0.7095  saving = 0.2905   recorded: x = 0.2905 (w-engine 4.2)
+  mixed 1 + 4 in 10 at block 3 (tau-transfer)      theta* = 0.8811  saving = 0.1189   recorded: 0.119 (ex-laser Thm 1)
+  mixed 7 + 38 in 88 at block 3                    theta* = 0.8750  saving = 0.1250   recorded: 0.125 (ex-laser Thm 1)
+  5 in 14 at block 3                               theta* = 0.9372  saving = 0.0628   recorded: 0.063 (ex-note)
+  2 in 7 at block 4                                theta* = 0.9037  saving = 0.0963   recorded: 0.096 (meta2)
+  3 in 10 at block 4                               theta* = 0.8685  saving = 0.1315   recorded: 0.132 (meta2)
+  grouped 2 arrays block 4, ranks 2,2,2,1          theta* = 0.8325  saving = 0.1675   recorded: 0.1675 (MAP 0.5)
+  plain W in Wm at block 5 (must give saving 0)    theta* = 1.0000  saving = 0.0000   recorded: 0 (plain FFT)
+  OpenAI-type win q=2 b=2 g=3 (plain 4): alpha = 0.7925 = ln g/ln(b q^(b-1)) = 0.7925
+  OpenAI-type win q=2 b=3 g=11 (plain 12): alpha = 0.9650 = ln g/ln(b q^(b-1)) = 0.9650
+  OpenAI-type win q=2 b=4 g=31 (plain 32): alpha = 0.9908 = ln g/ln(b q^(b-1)) = 0.9908
+
+== Part B: two types, cross rules (universality as strong connectivity) ==
+  theta=0.500: cone spectral radius of the price operator = 1.0607; eigvec (vH,vU)=(0.354,1.000)  [<1: theta-saving for both types]
+  theta=0.580: cone spectral radius of the price operator = 1.0034; eigvec (vH,vU)=(0.334,1.000)  [<1: theta-saving for both types]
+  theta=0.585: cone spectral radius of the price operator = 1.0000; eigvec (vH,vU)=(0.333,1.000)  [<1: theta-saving for both types]
+  theta=0.590: cone spectral radius of the price operator = 0.9965; eigvec (vH,vU)=(0.332,1.000)  [<1: theta-saving for both types]
+  theta=0.700: cone spectral radius of the price operator = 0.9234; eigvec (vH,vU)=(0.308,1.000)  [<1: theta-saving for both types]
+  threshold for H alone: 3 = 2*2^th -> th = 0.5850 (saving 0.415); U gets the same threshold
+
+== Part C: OpenAI's reflection contradiction, most favourable transfer to theta-prices ==
+  theta = 1: first d with a contradiction = 31  (paper: incompatible when d > 30)
+  critical theta (largest theta with NO contradiction at any d): theta_c = 0.9639  -> saving at most 0.0361; best d there ~ 262
+  theta = 0.99: max over d of (lower - upper) = +896967.165 at d = 9957765
+  theta = 0.97: max over d of (lower - upper) = +23.806 at d = 1323
+  theta = 0.96: max over d of (lower - upper) = -3.696 at d = 120
+  theta = 0.95: max over d of (lower - upper) = -6.398 at d = 28
+  theta = 0.9: max over d of (lower - upper) = -7.474 at d = 2
+  to refute theta = 0.9: dense-pair price must be < 1.0388 (OpenAI: 3*2^-theta = 1.6077); best d ~ 123
+  to refute theta = 0.95: dense-pair price must be < 1.4082 (OpenAI: 3*2^-theta = 1.5529); best d ~ 204
+  (ratio check) at theta=0.9 the cheap/tensor slope ratio needed at d is (2d)^-0.1: d=150 -> 0.565, d=10^4 -> 0.371; OpenAI's is 3/4 (times 2^(1-theta))

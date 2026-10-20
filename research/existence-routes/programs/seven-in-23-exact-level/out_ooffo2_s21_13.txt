@@ -1,0 +1,9 @@
+[lift] seed 21: cells lam1 1 t1 16 F 137 K 731; |B_m sample| 151 of 4000; q order 7 found; 24s
+[d4] d1 0, d0 14, |S| 16
+[ooffo] second twist found; 49s
+[ooffo] designs: residuals 1.9e-13, 1.6e-13
+[ooffo] F1 2800 terms (absorption 7e-17), F2 2800 terms (absorption 1e-15)  63s
+[ooffo2] gl14 (dim 14) generic lifts, full rows, all30: per chi (F1 / F2 / both; need 14): chi=0: 2/2/2, chi=1: 0/2/2, chi=2: 2/2/2, chi=3: 2/0/2, chi=4: 2/2/2, chi=5: 2/2/2, chi=6: 2/2/2   72s
+[ooffo2] sq16 (dim 16) generic lifts, full rows, all30: per chi (F1 / F2 / both; need 16): chi=0: 0/0/0, chi=1: 0/0/0, chi=2: 0/0/0, chi=3: 0/0/0, chi=4: 0/0/0, chi=5: 0/0/0, chi=6: 0/0/0   80s
+[ooffo2] aff16 (dim 16) generic lifts, full rows, all30: per chi (F1 / F2 / both; need 16): chi=0: 1/1/1, chi=1: 0/1/1, chi=2: 1/1/1, chi=3: 1/0/1, chi=4: 1/1/1, chi=5: 1/1/1, chi=6: 1/1/1   91s
+done 91s

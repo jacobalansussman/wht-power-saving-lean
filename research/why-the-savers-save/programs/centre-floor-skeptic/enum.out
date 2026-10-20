@@ -1,0 +1,21 @@
+subspaces total 8283458
+d=0  #W=1  n(d)=0  Tmax(d)=0
+d=1  #W=511  n(d)=1  Tmax(d)=90
+d=2  #W=43435  n(d)=2  Tmax(d)=180
+d=3  #W=788035  n(d)=4  Tmax(d)=340
+d=4  #W=3309747  n(d)=8  Tmax(d)=612
+d=5  #W=3309747  n(d)=12  Tmax(d)=897
+d=6  #W=788035  n(d)=20  Tmax(d)=1155
+d=7  #W=43435  n(d)=36  Tmax(d)=1260
+d=8  #W=511  n(d)=64  Tmax(d)=1260
+d=9  #W=1  n(d)=112  Tmax(d)=1260
+clique floor = 52.3636 at d = 6
+cov d=1  Gamma 1..1   N 1..1
+cov d=2  Gamma 2..2   N 2..2
+cov d=3  Gamma 4..4   N 4..4
+cov d=4  Gamma 8..8   N 8..8
+cov d=5  Gamma 12..12   N 12..12
+cov d=6  Gamma 20..20   N 20..20
+cov d=7  Gamma 32..32   N 32..32
+cov d=8  Gamma 52..52   N 56..56
+cov d=9  Gamma 53..53   N 56..56

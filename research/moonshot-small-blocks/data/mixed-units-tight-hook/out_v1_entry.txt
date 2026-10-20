@@ -1,0 +1,64 @@
+v1_entry.py:99: RuntimeWarning: divide by zero encountered in matmul
+  assert np.allclose(Rm @ Rm.conj().T, np.eye(560)), nm
+v1_entry.py:99: RuntimeWarning: overflow encountered in matmul
+  assert np.allclose(Rm @ Rm.conj().T, np.eye(560)), nm
+v1_entry.py:99: RuntimeWarning: invalid value encountered in matmul
+  assert np.allclose(Rm @ Rm.conj().T, np.eye(560)), nm
+floats: dim E_R = 136 (gap 0.866), dim E_K = 56 (gap 0.354), dim N_D = 200 -> cap = 80, dem_R = 144, dem_K = 224
+p = 2097133: dim E_R = 136, dim E_K = 56, cap(N) = 80; Nperp: dim E_R = 136, dim E_K = 56
+p = 2097097: dim E_R = 136, dim E_K = 56, cap(N) = 80; Nperp: dim E_R = 136, dim E_K = 56
+v1_entry.py:211: RuntimeWarning: divide by zero encountered in matmul
+  rR = np.linalg.norm(A @ ER_c); rK = np.linalg.norm(A @ EK_c)
+v1_entry.py:211: RuntimeWarning: overflow encountered in matmul
+  rR = np.linalg.norm(A @ ER_c); rK = np.linalg.norm(A @ EK_c)
+v1_entry.py:211: RuntimeWarning: invalid value encountered in matmul
+  rR = np.linalg.norm(A @ ER_c); rK = np.linalg.norm(A @ EK_c)
+v1_entry.py:223: RuntimeWarning: divide by zero encountered in matmul
+  sv = np.linalg.svd(A @ ER_c, compute_uv=False); frk = int((sv > 1e-8).sum())
+v1_entry.py:223: RuntimeWarning: overflow encountered in matmul
+  sv = np.linalg.svd(A @ ER_c, compute_uv=False); frk = int((sv > 1e-8).sum())
+v1_entry.py:223: RuntimeWarning: invalid value encountered in matmul
+  sv = np.linalg.svd(A @ ER_c, compute_uv=False); frk = int((sv > 1e-8).sum())
+class representatives: 1680
+monomial shortcut agrees with dense determinant rho on 3 random letters
+(R:N pass, K:N pass, R:Nperp pass, K:Nperp pass) -> classes: {(False, True, False, True): 105, (False, False, False, True): 1575}
+smallest float residual ||pi_O rho(Db) E_R|| over classes: 2.8284
+defect ranks (R:N, K:N, R:Nperp, K:Nperp) -> classes:
+    (8, 0, 8, 0) 9
+    (28, 20, 8, 0) 36
+    (40, 36, 8, 0) 18
+    (44, 0, 44, 0) 72
+    (44, 36, 44, 0) 72
+    (48, 20, 44, 0) 144
+    (48, 36, 8, 0) 36
+    (60, 48, 8, 0) 36
+    (62, 20, 44, 0) 144
+    (62, 48, 44, 0) 144
+    (64, 36, 44, 0) 288
+    (72, 56, 8, 0) 9
+    (80, 0, 80, 0) 24
+    (80, 20, 80, 0) 96
+    (80, 36, 44, 0) 72
+    (80, 36, 80, 0) 144
+    (80, 48, 44, 0) 144
+    (80, 48, 80, 0) 96
+    (80, 56, 44, 0) 72
+    (80, 56, 80, 0) 24
+       53.50 real        53.46 user         0.03 sys
+            99368960  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8303  page reclaims
+                  19  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 115  voluntary context switches
+                 218  involuntary context switches
+       1161194317924  instructions retired
+        212023480326  cycles elapsed
+            92717488  peak memory footprint

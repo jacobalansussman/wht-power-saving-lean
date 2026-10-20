@@ -1,0 +1,23 @@
+	Command being timed: "env LEAN_NUM_THREADS=1 lake build Work.XHost.HSchedK Work.XHost.HPriceK"
+	User time (seconds): 49.24
+	System time (seconds): 25.05
+	Percent of CPU this job got: 24%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:05.38
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6746852
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 125748
+	Minor (reclaiming a frame) page faults: 999004
+	Voluntary context switches: 239104
+	Involuntary context switches: 3717
+	Swaps: 0
+	File system inputs: 16464312
+	File system outputs: 60504
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

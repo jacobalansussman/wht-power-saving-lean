@@ -1,0 +1,97 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# VECLIB_MAXIMUM_THREADS=1
+## zgemm stages of a GEMM-DFT Welch (2^22 samples, 50 % overlap)  (9 repeats of >= 0.20 s each, programs take turns; ns per call)
+rep  0  512: F16 x [16 x 262144]     11468906.8824
+rep  0  512: [131072 x 32] x F32     14303893.2500
+rep  0  4096: F64 x [64 x 65536]     12095802.6316
+rep  0  4096: [65536 x 64] x F64     14653549.5000
+rep  1  512: [131072 x 32] x F32     14602403.6250
+rep  1  4096: F64 x [64 x 65536]     12236745.6316
+rep  1  4096: [65536 x 64] x F64     14447216.1250
+rep  1  512: F16 x [16 x 262144]     11979580.8824
+rep  2  4096: F64 x [64 x 65536]     11960743.4211
+rep  2  4096: [65536 x 64] x F64     14311684.8750
+rep  2  512: F16 x [16 x 262144]     12112250.0000
+rep  2  512: [131072 x 32] x F32     14311013.0625
+rep  3  4096: [65536 x 64] x F64     14378161.5000
+rep  3  512: F16 x [16 x 262144]     12157843.1765
+rep  3  512: [131072 x 32] x F32     14430796.8750
+rep  3  4096: F64 x [64 x 65536]     11964519.7368
+rep  4  512: F16 x [16 x 262144]     11940242.6471
+rep  4  512: [131072 x 32] x F32     14579296.8750
+rep  4  4096: F64 x [64 x 65536]     12173348.6842
+rep  4  4096: [65536 x 64] x F64     14603479.1875
+rep  5  512: [131072 x 32] x F32     14727416.6875
+rep  5  4096: F64 x [64 x 65536]     12310065.7895
+rep  5  4096: [65536 x 64] x F64     15004216.1875
+rep  5  512: F16 x [16 x 262144]     12281568.6471
+rep  6  4096: F64 x [64 x 65536]     12387526.3158
+rep  6  4096: [65536 x 64] x F64     14985945.3125
+rep  6  512: F16 x [16 x 262144]     12118914.2353
+rep  6  512: [131072 x 32] x F32     14564434.8750
+rep  7  4096: [65536 x 64] x F64     14946716.1875
+rep  7  512: F16 x [16 x 262144]     12289433.8235
+rep  7  512: [131072 x 32] x F32     15101984.3750
+rep  7  4096: F64 x [64 x 65536]     12533219.2632
+rep  8  512: F16 x [16 x 262144]     12195803.8824
+rep  8  512: [131072 x 32] x F32     14644028.6250
+rep  8  4096: F64 x [64 x 65536]     12293673.2105
+rep  8  4096: [65536 x 64] x F64     14899502.6250
+RESULT zgemm stages of a GEMM-DFT Welch (2^22 samples, 50 % overlap) 512: F16 x [16 x 262144]     best 11468906.8824  median 12118914.2353  ns/call  (calls/rep 17)
+RESULT zgemm stages of a GEMM-DFT Welch (2^22 samples, 50 % overlap) 512: [131072 x 32] x F32     best 14303893.2500  median 14579296.8750  ns/call  (calls/rep 16)
+RESULT zgemm stages of a GEMM-DFT Welch (2^22 samples, 50 % overlap) 4096: F64 x [64 x 65536]     best 11960743.4211  median 12236745.6316  ns/call  (calls/rep 19)
+RESULT zgemm stages of a GEMM-DFT Welch (2^22 samples, 50 % overlap) 4096: [65536 x 64] x F64     best 14311684.8750  median 14653549.5000  ns/call  (calls/rep 16)
+MS 512: F16 x [16 x 262144]     median   12.119 ms  (44.3 GFLOP/s)
+MS 512: [131072 x 32] x F32     median   14.579 ms  (73.6 GFLOP/s)
+MS 4096: F64 x [64 x 65536]     median   12.237 ms  (175.5 GFLOP/s)
+MS 4096: [65536 x 64] x F64     median   14.654 ms  (146.6 GFLOP/s)
+SUM 512: 26.698 ms (two GEMMs only); SUM 4096: 26.890 ms
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# VECLIB_MAXIMUM_THREADS=(default)
+## zgemm stages of a GEMM-DFT Welch (2^22 samples, 50 % overlap)  (9 repeats of >= 0.20 s each, programs take turns; ns per call)
+rep  0  512: F16 x [16 x 262144]     11128164.4737
+rep  0  512: [131072 x 32] x F32     13301497.4375
+rep  0  4096: F64 x [64 x 65536]     10382549.6190
+rep  0  4096: [65536 x 64] x F64     12408519.7368
+rep  1  512: [131072 x 32] x F32     13099145.8125
+rep  1  4096: F64 x [64 x 65536]     10393625.0000
+rep  1  4096: [65536 x 64] x F64     12394918.8421
+rep  1  512: F16 x [16 x 262144]     11143035.0526
+rep  2  4096: F64 x [64 x 65536]     10434867.0952
+rep  2  4096: [65536 x 64] x F64     12496048.2105
+rep  2  512: F16 x [16 x 262144]     10693370.6316
+rep  2  512: [131072 x 32] x F32     13143218.7500
+rep  3  4096: [65536 x 64] x F64     12399469.3158
+rep  3  512: F16 x [16 x 262144]     10859673.2632
+rep  3  512: [131072 x 32] x F32     12944424.5000
+rep  3  4096: F64 x [64 x 65536]     10329154.7619
+rep  4  512: F16 x [16 x 262144]     11058370.6316
+rep  4  512: [131072 x 32] x F32     13154945.3125
+rep  4  4096: F64 x [64 x 65536]     10557269.8571
+rep  4  4096: [65536 x 64] x F64     12167002.2105
+rep  5  512: [131072 x 32] x F32     12529487.0000
+rep  5  4096: F64 x [64 x 65536]     10508619.0476
+rep  5  4096: [65536 x 64] x F64     12506839.9474
+rep  5  512: F16 x [16 x 262144]     10684429.8421
+rep  6  4096: F64 x [64 x 65536]     10197152.7619
+rep  6  4096: [65536 x 64] x F64     12509682.0526
+rep  6  512: F16 x [16 x 262144]     11147548.2632
+rep  6  512: [131072 x 32] x F32     13050528.6875
+rep  7  4096: [65536 x 64] x F64     12591256.5789
+rep  7  512: F16 x [16 x 262144]     10935344.3158
+rep  7  512: [131072 x 32] x F32     12662406.2500
+rep  7  4096: F64 x [64 x 65536]     10268446.4286
+rep  8  512: F16 x [16 x 262144]     11243585.5263
+rep  8  512: [131072 x 32] x F32     12917885.4375
+rep  8  4096: F64 x [64 x 65536]     10458956.3333
+rep  8  4096: [65536 x 64] x F64     12145511.0000
+RESULT zgemm stages of a GEMM-DFT Welch (2^22 samples, 50 % overlap) 512: F16 x [16 x 262144]     best 10684429.8421  median 11058370.6316  ns/call  (calls/rep 19)
+RESULT zgemm stages of a GEMM-DFT Welch (2^22 samples, 50 % overlap) 512: [131072 x 32] x F32     best 12529487.0000  median 13050528.6875  ns/call  (calls/rep 16)
+RESULT zgemm stages of a GEMM-DFT Welch (2^22 samples, 50 % overlap) 4096: F64 x [64 x 65536]     best 10197152.7619  median 10393625.0000  ns/call  (calls/rep 21)
+RESULT zgemm stages of a GEMM-DFT Welch (2^22 samples, 50 % overlap) 4096: [65536 x 64] x F64     best 12145511.0000  median 12408519.7368  ns/call  (calls/rep 19)
+MS 512: F16 x [16 x 262144]     median   11.058 ms  (48.5 GFLOP/s)
+MS 512: [131072 x 32] x F32     median   13.051 ms  (82.3 GFLOP/s)
+MS 4096: F64 x [64 x 65536]     median   10.394 ms  (206.6 GFLOP/s)
+MS 4096: [65536 x 64] x F64     median   12.409 ms  (173.1 GFLOP/s)
+SUM 512: 24.109 ms (two GEMMs only); SUM 4096: 22.802 ms
+DONE

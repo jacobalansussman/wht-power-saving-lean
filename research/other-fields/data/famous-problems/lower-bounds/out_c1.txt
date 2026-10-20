@@ -1,0 +1,5 @@
+(a) n=2: WHT_4 == vec(H X H^T): True
+(a) n=4: WHT_16 == vec(H X H^T): True
+(a) n=8: WHT_64 == vec(H X H^T): True
+(b) n=4: Strassen arithmetic gates (incl. gates on constants) = 247; linear-circuit gates after linearisation = 95; ratio = 0.385 (claim <= 3); outputs == H_n X exactly: True
+(b) n=8: Strassen arithmetic gates (incl. gates on constants) = 2017; linear-circuit gates after linearisation = 673; ratio = 0.334 (claim <= 3); outputs == H_n X exactly: True

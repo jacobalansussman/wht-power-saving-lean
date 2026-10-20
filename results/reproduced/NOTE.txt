@@ -1,0 +1,10 @@
+Re-run of tools/reproduce-search.sh from the copies of the programs in this repository, on a Mac (Python 3.9,
+standard library), 19 October 2026: 14 minutes, 0.97 GB at most.
+
+- run-2026-10-19.log is that run. Its comparison found two differences, both in the T74 regression control: the
+  recorded run had been given the label "T74 control" and the script did not pass it, so the "label" fields
+  differed and nothing else did.
+- The script now passes --label "T74 control". That step was run again, and COMPARE-2026-10-19.txt is the
+  comparison after it: every fresh output equals the recorded one.
+- heads/cross-replica-3945.txt and heads/margins.txt were made by short inline commands in the original run,
+  not by a program in tools/, so they are not re-run.

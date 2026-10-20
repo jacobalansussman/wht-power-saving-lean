@@ -1,0 +1,79 @@
+=== control #799 (fast)
+{
+ "profile": {
+  "1": 183457,
+  "2": 24336,
+  "3": 30961,
+  "4": 13968,
+  "5": 4032,
+  "8": 576,
+  "44": 1,
+  "48": 2396
+ },
+ "m": 73,
+ "W": 7168,
+ "rank_mass": 520704,
+ "deficit": 2560,
+ "calls": 259727,
+ "maxrank": 48,
+ "b": "1664400278850482327913/1000000000000000000000000",
+ "b_decimal": "0.001664400278850482327913",
+ "certified": false,
+ "surcharge": false,
+ "c": "0.001733427039589844234749",
+ "binding": "complex",
+ "kappa": "1661634653669567/1000000000000000000",
+ "kappa_decimal": "0.001661634653669567",
+ "control_b_matches_799": true,
+ "control_kappa_matches_799": true
+}
+=== W1 what-if: repaired door on the 8 stage-1 calls: -64 rank-8 copies, +8*224 = 1792 rank-1 moves (deficit 2560+512-1792 = 1280)
+{
+ "profile": {
+  "1": 185249,
+  "2": 24336,
+  "3": 30961,
+  "4": 13968,
+  "5": 4032,
+  "8": 512,
+  "44": 1,
+  "48": 2396
+ },
+ "m": 73,
+ "W": 7168,
+ "rank_mass": 521984,
+ "deficit": 1280,
+ "calls": 261455,
+ "maxrank": 48,
+ "b": "829923094014971084509/1000000000000000000000000",
+ "b_decimal": "0.000829923094014971084509",
+ "certified": false,
+ "surcharge": false,
+ "c": "0.001733427039589844234749",
+ "binding": "complex",
+ "kappa": "16584697856541/20000000000000000",
+ "kappa_decimal": "0.00082923489282705"
+}
+=== W2 what-if: repaired door on all 40 hand-over calls: -320 rank-8, +40*224 = 8960 rank-1 (deficit 2560+2560-8960 = -3840)
+{
+ "profile": {
+  "1": 192417,
+  "2": 24336,
+  "3": 30961,
+  "4": 13968,
+  "5": 4032,
+  "8": 256,
+  "44": 1,
+  "48": 2396
+ },
+ "m": 73,
+ "W": 7168,
+ "rank_mass": 527104,
+ "deficit": -3840,
+ "calls": 268367,
+ "maxrank": 48,
+ "b": "0/1",
+ "b_decimal": "0",
+ "certified": false,
+ "surcharge": false
+}

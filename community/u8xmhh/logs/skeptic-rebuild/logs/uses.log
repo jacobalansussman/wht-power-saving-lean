@@ -1,0 +1,260 @@
+module Work.FourierU8XMHH.Main: 11138 modules loaded
+
+=== root OAI.PowerSaving.transform_mainU8XMHH: proof closure 43014 constants, unresolved 0
+  group OAI.Computability: 2318
+  group WHTCheck: 17
+  group Work.Bank401: 9
+  group Work.Block: 176
+  group Work.BlockAccounting: 6
+  group Work.BlockApply: 47
+  group Work.Bridge: 11
+  group Work.Bridge377: 23
+  group Work.Bridge401: 149
+  group Work.BridgeC: 100
+  group Work.Carrier: 47
+  group Work.CarrierCheck: 36
+  group Work.Combine: 32
+  group Work.FoldRate: 19
+  group Work.FourierU8XMHH: 253
+  group Work.GCert: 1014
+  group Work.GFrame: 378
+  group Work.Gauge: 37
+  group Work.KLow: 78
+  group Work.KMX: 153
+  group Work.Reframe: 68
+  group Work.Scratch: 14
+  group Work.SharedSumChecker: 119
+  group Work.SharedSumStructured: 40
+  group Work.XHost: 1154
+  group Work.XMut: 132
+  group XExit: 36
+  other groups: [(Aesop, 1), (Batteries, 159), (Init, 6900), (Mathlib, 29488)]
+  module Work.FourierU8XMHH.ArbitraryLength: 49 constants; e.g. [OAI.PowerSaving.RAM.Bench.CruiseU8XMHH, OAI.PowerSaving.RAM.Bench.CruiseU8XMHH.ac, OAI.PowerSaving.RAM.Bench.CruiseU8XMHH.deliver, OAI.PowerSaving.RAM.Bench.CruiseU8XMHH.dims, OAI.PowerSaving.RAM.Bench.CruiseU8XMHH.dom, OAI.PowerSaving.RAM.Bench.CruiseU8XMHH.dom._proof_1_1]
+  module Work.FourierU8XMHH.Asymptotics: 22 constants; e.g. [OAI.PowerSaving.Skies.QmU8XMHH, OAI.PowerSaving.Skies.QtopU8XMHH, OAI.PowerSaving.Skies.TmU8XMHH, OAI.PowerSaving.Skies.TtopU8XMHH, OAI.PowerSaving.Skies.docks_evU8XMHH, OAI.PowerSaving.Skies.dwarfU8XMHH]
+  module Work.FourierU8XMHH.Goal: 6 constants; e.g. [OAI.PowerSaving.DFTGoalU8XMHH, OAI.PowerSaving.TimeBoundsU8XMHH, OAI.PowerSaving.decimalExponentU8XMHH, OAI.PowerSaving.decimalExponentU8XMHH._proof_1, OAI.PowerSaving.decimalExponentU8XMHH._proof_2, OAI.PowerSaving.decimalTimeU8XMHH]
+  module Work.FourierU8XMHH.Main: 15 constants; e.g. [OAI.PowerSaving.Skies.alpha_thetaU8XMHH, OAI.PowerSaving.Skies.decimal_littleU8XMHH, OAI.PowerSaving.Skies.decimal_rangeU8XMHH, OAI.PowerSaving.Skies.flight_littleU8XMHH, OAI.PowerSaving.Skies.multiplier_rangeU8XMHH, OAI.PowerSaving.Skies.speedU8XMHH]
+  module Work.FourierU8XMHH.Seam: 13 constants; e.g. [OAI.PowerSaving.RAM.hillsU8XMHH_program, OAI.PowerSaving.SeamU8XMHH.engine_U8XMHHx, OAI.PowerSaving.alphaU8XMHH, OAI.PowerSaving.alphaU8XMHH._proof_1, OAI.PowerSaving.alphaU8XMHH._proof_2, OAI.PowerSaving.alphaU8XMHH_lt]
+  module Work.FourierU8XMHH.SectorAlgorithm: 28 constants; e.g. [OAI.PowerSaving.RAM.Bench.MattingU8XMHH, OAI.PowerSaving.RAM.Bench.MattingU8XMHH.cardT, OAI.PowerSaving.RAM.Bench.MattingU8XMHH.cover, OAI.PowerSaving.RAM.Bench.MattingU8XMHH.kitOf, OAI.PowerSaving.RAM.Bench.MattingU8XMHH.length, OAI.PowerSaving.RAM.Bench.MattingU8XMHH.mk]
+  module Work.FourierU8XMHH.SynchronizedAlgorithm: 15 constants; e.g. [OAI.PowerSaving.RAM.Bench.Bough.swellU8XMHH, OAI.PowerSaving.RAM.Bench.Bough.waterU8XMHH, OAI.PowerSaving.RAM.Bench.ThicketU8XMHH, OAI.PowerSaving.RAM.Bench.ThicketU8XMHH.atlas, OAI.PowerSaving.RAM.Bench.ThicketU8XMHH.beats, OAI.PowerSaving.RAM.Bench.ThicketU8XMHH.conduct]
+  module Work.FourierU8XMHH.TransformProgram: 22 constants; e.g. [OAI.PowerSaving.RAM.Bench.BreezyU8XMHH, OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.bind, OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.bind._proof_1_5, OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.bind._proof_1_6, OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.bind.match_1_1, OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.bind.match_1_3]
+  module Work.FourierU8XMHH.UniformBounds: 21 constants; e.g. [OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.ration, OAI.PowerSaving.RAM.Bench.RationU8XMHH, OAI.PowerSaving.RAM.Bench.RationU8XMHH.c, OAI.PowerSaving.RAM.Bench.RationU8XMHH.d, OAI.PowerSaving.RAM.Bench.RationU8XMHH.mk, OAI.PowerSaving.RAM.Bench.RationU8XMHH.p]
+  module Work.FourierU8XMHH.WorkingCompiler: 26 constants; e.g. [OAI.PowerSaving.RAM.Bench.FoundryU8XMHH, OAI.PowerSaving.RAM.Bench.FoundryU8XMHH.archE, OAI.PowerSaving.RAM.Bench.FoundryU8XMHH.arches, OAI.PowerSaving.RAM.Bench.FoundryU8XMHH.axes, OAI.PowerSaving.RAM.Bench.FoundryU8XMHH.digitT, OAI.PowerSaving.RAM.Bench.FoundryU8XMHH.kilnD]
+  module Work.FourierU8XMHH.WorkingPreparation: 31 constants; e.g. [OAI.PowerSaving.RAM.Bench.Neaps.etaPU8XMHH, OAI.PowerSaving.RAM.Bench.Neaps.extractPU8XMHH, OAI.PowerSaving.RAM.Bench.Neaps.kilnPU8XMHH, OAI.PowerSaving.RAM.Bench.Neaps.kilnPU8XMHH._proof_1_1, OAI.PowerSaving.RAM.Bench.Neaps.ladeGrainU8XMHH, OAI.PowerSaving.RAM.Bench.Neaps.layersBoundU8XMHH]
+  module Work.FourierU8XMHH.WorkingTransform: 5 constants; e.g. [OAI.PowerSaving.RAM.Bench.Fen.chartTU8XMHH, OAI.PowerSaving.RAM.Bench.ThicketU8XMHH.traverse, OAI.PowerSaving.RAM.Bench.chartU8XMHH, OAI.PowerSaving.RAM.Bench.dualWordU8XMHH, _private.Work.FourierU8XMHH.WorkingTransform.0.OAI.PowerSaving.RAM.Bench.ThicketU8XMHH.via]
+  module Work.GCert.Data.Gen.U8XM: 1 constants; e.g. [GXD.U8XM.raw]
+  module Work.GCert.Data.Gen.U8XM.S0: 196 constants; e.g. [GXD.U8XM.cuts, GXD.U8XM.ext, GXD.U8XM.ext_0, GXD.U8XM.final, GXD.U8XM.final_0, GXD.U8XM.final_1]
+  module Work.GCert.Data.Gen.U8XMEChk: 6 constants; e.g. [GXD.U8XM.echk0_ok, GXD.U8XM.echk0_ok._proof_1_1, GXD.U8XM.echk1_ok, GXD.U8XM.echk1_ok._proof_1_1, GXD.U8XM.echk2_ok, GXD.U8XM.echk2_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMEnd: 2 constants; e.g. [GXD.U8XM.end_ok, GXD.U8XM.end_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMGl: 5 constants; e.g. [GXD.U8XM.el, GXD.U8XM.gl, GXD.U8XM.glb0, GXD.U8XM.glb1, GXD.U8XM.glb2]
+  module Work.GCert.Data.Gen.U8XMHist: 62 constants; e.g. [GXD.U8XM.rA, GXD.U8XM.rB, GXD.U8XM.rankA0_ok, GXD.U8XM.rankA0_ok._proof_1_1, GXD.U8XM.rankA1_ok, GXD.U8XM.rankA1_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMPar: 1 constants; e.g. [GXD.U8XM.par]
+  module Work.GCert.Data.Gen.U8XMScal0: 2 constants; e.g. [GXD.U8XM.scal0_ok, GXD.U8XM.scal0_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMScal1: 2 constants; e.g. [GXD.U8XM.scal1_ok, GXD.U8XM.scal1_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMScal2: 2 constants; e.g. [GXD.U8XM.scal2_ok, GXD.U8XM.scal2_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMScal3: 2 constants; e.g. [GXD.U8XM.scal3_ok, GXD.U8XM.scal3_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSched: 1 constants; e.g. [GXD.U8XM.schedRes]
+  module Work.GCert.Data.Gen.U8XMSeg0: 2 constants; e.g. [GXD.U8XM.seg0_ok, GXD.U8XM.seg0_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSeg1: 2 constants; e.g. [GXD.U8XM.seg1_ok, GXD.U8XM.seg1_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSeg2: 2 constants; e.g. [GXD.U8XM.seg2_ok, GXD.U8XM.seg2_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSeg3: 2 constants; e.g. [GXD.U8XM.seg3_ok, GXD.U8XM.seg3_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSeg4: 2 constants; e.g. [GXD.U8XM.seg4_ok, GXD.U8XM.seg4_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSegF: 2 constants; e.g. [GXD.U8XM.segF_ok, GXD.U8XM.segF_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMTab0: 2 constants; e.g. [GXD.U8XM.tab0_ok, GXD.U8XM.tab0_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMTab1: 2 constants; e.g. [GXD.U8XM.tab1_ok, GXD.U8XM.tab1_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMTab2: 2 constants; e.g. [GXD.U8XM.tab2_ok, GXD.U8XM.tab2_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMTab3: 2 constants; e.g. [GXD.U8XM.tab3_ok, GXD.U8XM.tab3_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMYChk: 2 constants; e.g. [GXD.U8XM.ychk_ok, GXD.U8XM.ychk_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk0: 16 constants; e.g. [GXD.U8XM.zb0f, GXD.U8XM.zb0f._proof_1_1, GXD.U8XM.zb0t, GXD.U8XM.zb0t._proof_1_1, GXD.U8XM.zb1f, GXD.U8XM.zb1f._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk1: 16 constants; e.g. [GXD.U8XM.zb4f, GXD.U8XM.zb4f._proof_1_1, GXD.U8XM.zb4t, GXD.U8XM.zb4t._proof_1_1, GXD.U8XM.zb5f, GXD.U8XM.zb5f._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk2: 16 constants; e.g. [GXD.U8XM.zc1, GXD.U8XM.zc1._proof_1_1, GXD.U8XM.zc2, GXD.U8XM.zc2._proof_1_1, GXD.U8XM.zc3, GXD.U8XM.zc3._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk3: 16 constants; e.g. [GXD.U8XM.zc10, GXD.U8XM.zc10._proof_1_1, GXD.U8XM.zc11, GXD.U8XM.zc11._proof_1_1, GXD.U8XM.zc12, GXD.U8XM.zc12._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk4: 16 constants; e.g. [GXD.U8XM.zc17, GXD.U8XM.zc17._proof_1_1, GXD.U8XM.zc18, GXD.U8XM.zc18._proof_1_1, GXD.U8XM.zc19, GXD.U8XM.zc19._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk5: 4 constants; e.g. [GXD.U8XM.zc25, GXD.U8XM.zc25._proof_1_1, GXD.U8XM.zc26, GXD.U8XM.zc26._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZL: 30 constants; e.g. [GXD.U8XM.chunk0, GXD.U8XM.chunk1, GXD.U8XM.chunk10, GXD.U8XM.chunk11, GXD.U8XM.chunk12, GXD.U8XM.chunk13]
+  module Work.GCert.Data.Gen.U8XMZOK: 24 constants; e.g. [GXD.U8XM.exitRC, GXD.U8XM.hbit, GXD.U8XM.hbit._proof_1_1, GXD.U8XM.hch, GXD.U8XM.hch._simp_1_2, GXD.U8XM.hch._simp_1_3]
+  module Work.GCert.Data.InstU8XM: 7 constants; e.g. [OAI.PowerSaving.BridgeRate.U8XM.invPrice, OAI.PowerSaving.BridgeRate.U8XM.invPrice._proof_1, OAI.PowerSaving.BridgeRate.U8XM.invPrice._proof_2, OAI.PowerSaving.BridgeRate.U8XM.invPrice._proof_3, OAI.PowerSaving.BridgeRate.U8XM.invPrice._proof_4, OAI.PowerSaving.BridgeRate.U8XM.invPrice._proof_5]
+  module Work.GCert.Data.U8XMCert: 12 constants; e.g. [GXD.U8XM.aux, GXD.U8XM.cen_dim, GXD.U8XM.cen_ok, GXD.U8XM.cen_ok._proof_1_1, GXD.U8XM.fin_ok, GXD.U8XM.fin_ok._proof_1_1]
+  module Work.GCert.Data.U8XMGlue401: 15 constants; e.g. [GXD.U8XM.es, GXD.U8XM.es_gl, GXD.U8XM.es_ok, GXD.U8XM.ginv, GXD.U8XM.ginvX, GXD.U8XM.ginvX._proof_1]
+  module Work.GCert.Data.U8XMPrice: 11 constants; e.g. [GXD.U8XM.invPrice, GXD.U8XM.invPrice._proof_1, GXD.U8XM.invPrice._proof_2, GXD.U8XM.invPrice._proof_3, GXD.U8XM.invPrice._proof_4, GXD.U8XM.invPrice._proof_5]
+  module Work.GCert.Data.U8XMScalOK: 1 constants; e.g. [GXD.U8XM.scalOKZ]
+  module Work.KLow.ExitEnd: 4 constants; e.g. [OAI.PowerSaving.XEX.ExitCols, OAI.PowerSaving.XEX.ExitRows, OAI.PowerSaving.XEX.exit_row_inv, OAI.PowerSaving.XEX.iE_lS]
+  module Work.KLow.GlueX: 8 constants; e.g. [GXD.bitB, GXD.bit_sep, GXD.bit_sep._simp_1_1, GXD.memK_complete, GXD.mem_slotsL, GXD.mem_slotsL._proof_1_1]
+  module Work.KLow.LabelsX: 47 constants; e.g. [GLab.EndsX, GLab.EndsX.hn, GLab.EndsX.mk, GLab.EndsX.port, GLab.EndsX.ret, GLab.EndsX.slot]
+  module Work.KLow.NoY: 14 constants; e.g. [GXD.addsB_ny, GXD.dN, GXD.diag_addMat_comm, GXD.diag_addMat_y, GXD.diag_matP, GXD.isYN]
+  module Work.KLow.ZCheck: 5 constants; e.g. [GS.memZ, GS.memZ_sound, GS.mul_scaledCol, GS.zFin, GS.zFin_sound]
+  module Work.KMX.ExitEndZ: 9 constants; e.g. [OAI.PowerSaving.XEX.ExitColsX, OAI.PowerSaving.XEX.col_y_zero', OAI.PowerSaving.XEX.exit_col_invZ, OAI.PowerSaving.XEX.exit_hGrZ, OAI.PowerSaving.XEX.exit_hGrZ_scal, OAI.PowerSaving.XEX.exit_hHrZ]
+  module Work.KMX.GlueXZ: 24 constants; e.g. [GXD.exit_of_twinZ, GXD.exit_of_zchecksZ, GXD.exit_of_zchecksZ._proof_1_1, GXD.exit_of_zchecksZ._proof_1_2, GXD.exit_of_zchecksZ._proof_1_3, GXD.exit_of_zchecksZ._proof_1_4]
+  module Work.KMX.HalvesZ: 76 constants; e.g. [OAI.PowerSaving.XEX.GLabXZ, OAI.PowerSaving.XEX.GLabXZ.E, OAI.PowerSaving.XEX.GLabXZ.Gr, OAI.PowerSaving.XEX.GLabXZ.Gt, OAI.PowerSaving.XEX.GLabXZ.Hr, OAI.PowerSaving.XEX.GLabXZ.Ht]
+  module Work.KMX.LabelsXZ: 38 constants; e.g. [GLab.ValidX.glabXZ, GLab.ValidX.glabXZ._proof_1, GLab.ValidX.glabXZ._proof_10, GLab.ValidX.glabXZ._proof_11, GLab.ValidX.glabXZ._proof_12, GLab.ValidX.glabXZ._proof_13]
+  module Work.KMX.ZCheckZ: 6 constants; e.g. [GS.zCheckZ, GS.zCheckZ_sound, GS.zCheckZ_sound._proof_1_1, GS.zCheckZ_sound._proof_1_2, GS.zCheckZ_sound._proof_1_3, GS.zCheckZ_sound._proof_1_4]
+  module Work.XHost.Data.HU8XMSched: 245 constants; e.g. [GXD.U8XMHH.brows0, GXD.U8XMHH.brows1, GXD.U8XMHH.brows2, GXD.U8XMHH.brows3, GXD.U8XMHH.brows4, GXD.U8XMHH.brows5]
+  module Work.XHost.Data.InstU8XMHH: 11 constants; e.g. [OAI.PowerSaving.BridgeRate.U8XMHH.padPrice, OAI.PowerSaving.BridgeRate.U8XMHH.remPrice, OAI.PowerSaving.BridgeRate.U8XMHH.remPrice._proof_1, OAI.PowerSaving.BridgeRate.U8XMHH.remPrice._proof_2, OAI.PowerSaving.BridgeRate.U8XMHH.remPrice._proof_3, OAI.PowerSaving.BridgeRate.U8XMHH.remPrice._proof_4]
+  module Work.XHost.Data.RateU8XMHHx: 2 constants; e.g. [OAI.PowerSaving.BlockAccounting.blocksU8XMHHx, OAI.PowerSaving.BlockAccounting.fold_U8XMHHx]
+  module Work.XHost.Frames: 31 constants; e.g. [OAI.PowerSaving.XHost.HostForm, OAI.PowerSaving.XHost.HostForm._proof_1, OAI.PowerSaving.XHost.InvH, OAI.PowerSaving.XHost.LH, OAI.PowerSaving.XHost.LH_mono, OAI.PowerSaving.XHost.LH_succ]
+  module Work.XHost.HCert: 10 constants; e.g. [OAI.PowerSaving.XHost.GHost401.Sz, OAI.PowerSaving.XHost.GHost401.Sz._proof_1, OAI.PowerSaving.XHost.GHost401.corr, OAI.PowerSaving.XHost.GHost401.padR, OAI.PowerSaving.XHost.GHost401.run, OAI.PowerSaving.XHost.GHost401.runFull]
+  module Work.XHost.HDef: 284 constants; e.g. [OAI.PowerSaving.XHost.GHost401, OAI.PowerSaving.XHost.GHost401.FinD, OAI.PowerSaving.XHost.GHost401.G0, OAI.PowerSaving.XHost.GHost401.G1, OAI.PowerSaving.XHost.GHost401.G2, OAI.PowerSaving.XHost.GHost401.G3]
+  module Work.XHost.HEnd: 3 constants; e.g. [OAI.PowerSaving.XHost.engine_of_ginv_host, OAI.PowerSaving.XHost.engine_of_ginv_host._proof_1_1, OAI.PowerSaving.XHost.engine_of_ginv_host._proof_1_2]
+  module Work.XHost.HGeom: 309 constants; e.g. [OAI.PowerSaving.XHost.GHost401.mk.congr_simp, OAI.PowerSaving.XHost.HostSched.fits, OAI.PowerSaving.XHost.bank_ex, OAI.PowerSaving.XHost.bank_ex._proof_1_1, OAI.PowerSaving.XHost.bank_ex._proof_1_2, OAI.PowerSaving.XHost.bank_ex._proof_1_3]
+  module Work.XHost.HPriceK: 9 constants; e.g. [OAI.PowerSaving.XHost.encE, OAI.PowerSaving.XHost.encE._proof_1, OAI.PowerSaving.XHost.encE._proof_2, OAI.PowerSaving.XHost.encE._proof_3, OAI.PowerSaving.XHost.encE._proof_4, OAI.PowerSaving.XHost.rcost_fin]
+  module Work.XHost.HRoles: 57 constants; e.g. [OAI.PowerSaving.XHost.GB_loc, OAI.PowerSaving.XHost.GB_loc.match_1_1, OAI.PowerSaving.XHost.GF_loc, OAI.PowerSaving.XHost.GF_loc.match_1_1, OAI.PowerSaving.XHost.HostOK, OAI.PowerSaving.XHost.dDec]
+  module Work.XHost.HSched: 31 constants; e.g. [OAI.PowerSaving.XHost.HostSched, OAI.PowerSaving.XHost.HostSched.bk, OAI.PowerSaving.XHost.HostSched.fitsR, OAI.PowerSaving.XHost.HostSched.hinj, OAI.PowerSaving.XHost.HostSched.hostAt, OAI.PowerSaving.XHost.HostSched.hostInj]
+  module Work.XHost.HSchedK: 119 constants; e.g. [OAI.PowerSaving.XHost.HostSched.ofTab, OAI.PowerSaving.XHost.HostSched.ofTab._proof_1, OAI.PowerSaving.XHost.HostSched.ofTab._proof_2, OAI.PowerSaving.XHost.HostSched.ofTab._proof_3, OAI.PowerSaving.XHost.HostSched.ofTab._proof_4, OAI.PowerSaving.XHost.HostSched.ofTab._proof_5]
+  module Work.XHost.HStage: 34 constants; e.g. [OAI.PowerSaving.XHost.GHost401.adapt0, OAI.PowerSaving.XHost.GHost401.adapt1, OAI.PowerSaving.XHost.GHost401.adapt2, OAI.PowerSaving.XHost.GHost401.adapt3, OAI.PowerSaving.XHost.GHost401.adapt4, OAI.PowerSaving.XHost.GHost401.adapt5]
+  module Work.XHost.HostK: 3 constants; e.g. [OAI.PowerSaving.XHost.inWin, OAI.PowerSaving.XHost.inWin.match_1, OAI.PowerSaving.XHost.rankOf]
+  module Work.XHost.U8XMHH: 6 constants; e.g. [GXD.U8XMHH.hfits, GXD.U8XMHH.hpad_price, GXD.U8XMHH.hprice, GXD.U8XMHH.hrem_price, GXD.U8XMHH.hsched, GXD.U8XMHH.hwidth]
+  module Work.XMut.Dirt: 13 constants; e.g. [XMut.dirt_bwdZ, XMut.dirt_bwdZ._abel_1_1, XMut.dirt_fwdZ, XMut.dirt_fwdZ._abel_1_1, XMut.g8z, XMut.g8z_facts]
+  module Work.XMut.ECheckZ: 10 constants; e.g. [GS.ERunZ, GS.ERunZ.of_check, GS.ERunZ.of_check._proof_1_1, GS.ERunZ.of_check._proof_1_2, GS.ERunZ.of_check._proof_1_3, GS.ERunZ.of_check._proof_1_4]
+  module Work.XMut.GInv: 5 constants; e.g. [OAI.PowerSaving.GX.GScalZ, OAI.PowerSaving.GX.GScalZ.gauged, OAI.PowerSaving.GX.GScalZ.hE, OAI.PowerSaving.GX.GScalZ.mk, OAI.PowerSaving.GX.GScalZ.toScalZ]
+  module Work.XMut.Glue: 4 constants; e.g. [GXD.gscalOfZ, GXD.gscalOfZ._proof_1, GXD.gscalOfZ_gauged, GXD.reg_slotZ]
+  module Work.XMut.Scal: 29 constants; e.g. [OAI.PowerSaving.GX.ScalZ, OAI.PowerSaving.GX.ScalZ.Cc, OAI.PowerSaving.GX.ScalZ.Jr, OAI.PowerSaving.GX.ScalZ.MA, OAI.PowerSaving.GX.ScalZ.MAi, OAI.PowerSaving.GX.ScalZ.MB]
+  module Work.XMut.ScalarZ: 71 constants; e.g. [GS.ItemRunZ, GS.ItemRunZ.match_1, GS.ItemsRunZ, GS.ItemsRunZ._f, GS.ItemsRunZ.match_1, GS.ItemsRunZ_cA]
+  contains OAI.PowerSaving.XHost.engine_of_ginv_host: true  [Work.XHost.HEnd]
+  contains OAI.PowerSaving.XHost.HostSched.ofTab_fitsR: true  [Work.XHost.HSchedK]
+  contains OAI.PowerSaving.XHost.hostSchedK: true  [Work.XHost.HSchedK]
+  contains GXD.U8XMHH.hs_ok: true  [Work.XHost.Data.HU8XMSched]
+  contains GXD.U8XMHH.hsched: true  [Work.XHost.U8XMHH]
+  contains GXD.U8XMHH.hfits: true  [Work.XHost.U8XMHH]
+  contains GXD.U8XMHH.hprice: true  [Work.XHost.U8XMHH]
+  contains GXD.U8XMHH.hwidth: true  [Work.XHost.U8XMHH]
+  contains GXD.U8XM.ginv: true  [Work.GCert.Data.U8XMGlue401]
+  contains GXD.ginvXOfZ: true  [Work.KMX.GlueXZ]
+  contains GXD.U8XM.scalOKZ: true  [Work.GCert.Data.U8XMScalOK]
+  contains GXD.U8XM.validX: true  [Work.GCert.Data.U8XMCert]
+  contains GXD.exit_of_zchecksZ: true  [Work.KMX.GlueXZ]
+  contains OAI.PowerSaving.BlockAccounting.fold_U8XMHHx: true  [Work.XHost.Data.RateU8XMHHx]
+  contains OAI.PowerSaving.BlockAccounting.blocksU8XMHHx: true  [Work.XHost.Data.RateU8XMHHx]
+  contains OAI.PowerSaving.BridgeRate.U8XMHH.unit_cost_x: true  [Work.XHost.Data.InstU8XMHH]
+  contains OAI.PowerSaving.SeamU8XMHH.engine_U8XMHHx: true  [Work.FourierU8XMHH.Seam]
+  contains OAI.PowerSaving.RAM.hillsU8XMHH_program: true  [Work.FourierU8XMHH.Seam]
+  contains OAI.PowerSaving.BlockAccounting.fold_U8XMx: false  [Work.GCert.Data.RateU8XMx]
+  axioms reached: [Quot.sound, Classical.choice, propext]
+
+=== root OAI.PowerSaving.convolution_mainU8XMHH: proof closure 43037 constants, unresolved 0
+  group OAI.Computability: 2331
+  group WHTCheck: 17
+  group Work.Bank401: 9
+  group Work.Block: 176
+  group Work.BlockAccounting: 6
+  group Work.BlockApply: 47
+  group Work.Bridge: 11
+  group Work.Bridge377: 23
+  group Work.Bridge401: 149
+  group Work.BridgeC: 100
+  group Work.Carrier: 47
+  group Work.CarrierCheck: 36
+  group Work.Combine: 32
+  group Work.FoldRate: 19
+  group Work.FourierU8XMHH: 263
+  group Work.GCert: 1014
+  group Work.GFrame: 378
+  group Work.Gauge: 37
+  group Work.KLow: 78
+  group Work.KMX: 153
+  group Work.Reframe: 68
+  group Work.Scratch: 14
+  group Work.SharedSumChecker: 119
+  group Work.SharedSumStructured: 40
+  group Work.XHost: 1154
+  group Work.XMut: 132
+  group XExit: 36
+  other groups: [(Aesop, 1), (Batteries, 159), (Init, 6900), (Mathlib, 29488)]
+  module Work.FourierU8XMHH.ArbitraryLength: 49 constants; e.g. [OAI.PowerSaving.RAM.Bench.CruiseU8XMHH, OAI.PowerSaving.RAM.Bench.CruiseU8XMHH.ac, OAI.PowerSaving.RAM.Bench.CruiseU8XMHH.deliver, OAI.PowerSaving.RAM.Bench.CruiseU8XMHH.dims, OAI.PowerSaving.RAM.Bench.CruiseU8XMHH.dom, OAI.PowerSaving.RAM.Bench.CruiseU8XMHH.dom._proof_1_1]
+  module Work.FourierU8XMHH.Asymptotics: 22 constants; e.g. [OAI.PowerSaving.Skies.QmU8XMHH, OAI.PowerSaving.Skies.QtopU8XMHH, OAI.PowerSaving.Skies.TmU8XMHH, OAI.PowerSaving.Skies.TtopU8XMHH, OAI.PowerSaving.Skies.docks_evU8XMHH, OAI.PowerSaving.Skies.dwarfU8XMHH]
+  module Work.FourierU8XMHH.ConvolutionProgram: 5 constants; e.g. [OAI.PowerSaving.RAM.Bench.crossTU8XMHH, OAI.PowerSaving.RAM.Bench.fusingU8XMHH, OAI.PowerSaving.RAM.Bench.stretchU8XMHH, OAI.PowerSaving.RAM.Bench.stretch_posU8XMHH, OAI.PowerSaving.RAM.Bench.stretch_posU8XMHH._proof_1_1]
+  module Work.FourierU8XMHH.Goal: 6 constants; e.g. [OAI.PowerSaving.ConvGoalU8XMHH, OAI.PowerSaving.TimeBoundsU8XMHH, OAI.PowerSaving.decimalExponentU8XMHH, OAI.PowerSaving.decimalExponentU8XMHH._proof_1, OAI.PowerSaving.decimalExponentU8XMHH._proof_2, OAI.PowerSaving.decimalTimeU8XMHH]
+  module Work.FourierU8XMHH.Main: 15 constants; e.g. [OAI.PowerSaving.Skies.alpha_thetaU8XMHH, OAI.PowerSaving.Skies.decimal_littleU8XMHH, OAI.PowerSaving.Skies.decimal_rangeU8XMHH, OAI.PowerSaving.Skies.flight_littleU8XMHH, OAI.PowerSaving.Skies.multiplier_rangeU8XMHH, OAI.PowerSaving.Skies.speedU8XMHH]
+  module Work.FourierU8XMHH.Seam: 13 constants; e.g. [OAI.PowerSaving.RAM.hillsU8XMHH_program, OAI.PowerSaving.SeamU8XMHH.engine_U8XMHHx, OAI.PowerSaving.alphaU8XMHH, OAI.PowerSaving.alphaU8XMHH._proof_1, OAI.PowerSaving.alphaU8XMHH._proof_2, OAI.PowerSaving.alphaU8XMHH_lt]
+  module Work.FourierU8XMHH.SectorAlgorithm: 28 constants; e.g. [OAI.PowerSaving.RAM.Bench.MattingU8XMHH, OAI.PowerSaving.RAM.Bench.MattingU8XMHH.cardT, OAI.PowerSaving.RAM.Bench.MattingU8XMHH.cover, OAI.PowerSaving.RAM.Bench.MattingU8XMHH.kitOf, OAI.PowerSaving.RAM.Bench.MattingU8XMHH.length, OAI.PowerSaving.RAM.Bench.MattingU8XMHH.mk]
+  module Work.FourierU8XMHH.SynchronizedAlgorithm: 15 constants; e.g. [OAI.PowerSaving.RAM.Bench.Bough.swellU8XMHH, OAI.PowerSaving.RAM.Bench.Bough.waterU8XMHH, OAI.PowerSaving.RAM.Bench.ThicketU8XMHH, OAI.PowerSaving.RAM.Bench.ThicketU8XMHH.atlas, OAI.PowerSaving.RAM.Bench.ThicketU8XMHH.beats, OAI.PowerSaving.RAM.Bench.ThicketU8XMHH.conduct]
+  module Work.FourierU8XMHH.TransformProgram: 27 constants; e.g. [OAI.PowerSaving.RAM.Bench.BreezyU8XMHH, OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.bind, OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.bind._proof_1_5, OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.bind._proof_1_6, OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.bind.match_1_1, OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.bind.match_1_3]
+  module Work.FourierU8XMHH.UniformBounds: 21 constants; e.g. [OAI.PowerSaving.RAM.Bench.BreezyU8XMHH.ration, OAI.PowerSaving.RAM.Bench.RationU8XMHH, OAI.PowerSaving.RAM.Bench.RationU8XMHH.c, OAI.PowerSaving.RAM.Bench.RationU8XMHH.d, OAI.PowerSaving.RAM.Bench.RationU8XMHH.mk, OAI.PowerSaving.RAM.Bench.RationU8XMHH.p]
+  module Work.FourierU8XMHH.WorkingCompiler: 26 constants; e.g. [OAI.PowerSaving.RAM.Bench.FoundryU8XMHH, OAI.PowerSaving.RAM.Bench.FoundryU8XMHH.archE, OAI.PowerSaving.RAM.Bench.FoundryU8XMHH.arches, OAI.PowerSaving.RAM.Bench.FoundryU8XMHH.axes, OAI.PowerSaving.RAM.Bench.FoundryU8XMHH.digitT, OAI.PowerSaving.RAM.Bench.FoundryU8XMHH.kilnD]
+  module Work.FourierU8XMHH.WorkingPreparation: 31 constants; e.g. [OAI.PowerSaving.RAM.Bench.Neaps.etaPU8XMHH, OAI.PowerSaving.RAM.Bench.Neaps.extractPU8XMHH, OAI.PowerSaving.RAM.Bench.Neaps.kilnPU8XMHH, OAI.PowerSaving.RAM.Bench.Neaps.kilnPU8XMHH._proof_1_1, OAI.PowerSaving.RAM.Bench.Neaps.ladeGrainU8XMHH, OAI.PowerSaving.RAM.Bench.Neaps.layersBoundU8XMHH]
+  module Work.FourierU8XMHH.WorkingTransform: 5 constants; e.g. [OAI.PowerSaving.RAM.Bench.Fen.chartTU8XMHH, OAI.PowerSaving.RAM.Bench.ThicketU8XMHH.traverse, OAI.PowerSaving.RAM.Bench.chartU8XMHH, OAI.PowerSaving.RAM.Bench.dualWordU8XMHH, _private.Work.FourierU8XMHH.WorkingTransform.0.OAI.PowerSaving.RAM.Bench.ThicketU8XMHH.via]
+  module Work.GCert.Data.Gen.U8XM: 1 constants; e.g. [GXD.U8XM.raw]
+  module Work.GCert.Data.Gen.U8XM.S0: 196 constants; e.g. [GXD.U8XM.cuts, GXD.U8XM.ext, GXD.U8XM.ext_0, GXD.U8XM.final, GXD.U8XM.final_0, GXD.U8XM.final_1]
+  module Work.GCert.Data.Gen.U8XMEChk: 6 constants; e.g. [GXD.U8XM.echk0_ok, GXD.U8XM.echk0_ok._proof_1_1, GXD.U8XM.echk1_ok, GXD.U8XM.echk1_ok._proof_1_1, GXD.U8XM.echk2_ok, GXD.U8XM.echk2_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMEnd: 2 constants; e.g. [GXD.U8XM.end_ok, GXD.U8XM.end_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMGl: 5 constants; e.g. [GXD.U8XM.el, GXD.U8XM.gl, GXD.U8XM.glb0, GXD.U8XM.glb1, GXD.U8XM.glb2]
+  module Work.GCert.Data.Gen.U8XMHist: 62 constants; e.g. [GXD.U8XM.rA, GXD.U8XM.rB, GXD.U8XM.rankA0_ok, GXD.U8XM.rankA0_ok._proof_1_1, GXD.U8XM.rankA1_ok, GXD.U8XM.rankA1_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMPar: 1 constants; e.g. [GXD.U8XM.par]
+  module Work.GCert.Data.Gen.U8XMScal0: 2 constants; e.g. [GXD.U8XM.scal0_ok, GXD.U8XM.scal0_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMScal1: 2 constants; e.g. [GXD.U8XM.scal1_ok, GXD.U8XM.scal1_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMScal2: 2 constants; e.g. [GXD.U8XM.scal2_ok, GXD.U8XM.scal2_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMScal3: 2 constants; e.g. [GXD.U8XM.scal3_ok, GXD.U8XM.scal3_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSched: 1 constants; e.g. [GXD.U8XM.schedRes]
+  module Work.GCert.Data.Gen.U8XMSeg0: 2 constants; e.g. [GXD.U8XM.seg0_ok, GXD.U8XM.seg0_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSeg1: 2 constants; e.g. [GXD.U8XM.seg1_ok, GXD.U8XM.seg1_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSeg2: 2 constants; e.g. [GXD.U8XM.seg2_ok, GXD.U8XM.seg2_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSeg3: 2 constants; e.g. [GXD.U8XM.seg3_ok, GXD.U8XM.seg3_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSeg4: 2 constants; e.g. [GXD.U8XM.seg4_ok, GXD.U8XM.seg4_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMSegF: 2 constants; e.g. [GXD.U8XM.segF_ok, GXD.U8XM.segF_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMTab0: 2 constants; e.g. [GXD.U8XM.tab0_ok, GXD.U8XM.tab0_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMTab1: 2 constants; e.g. [GXD.U8XM.tab1_ok, GXD.U8XM.tab1_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMTab2: 2 constants; e.g. [GXD.U8XM.tab2_ok, GXD.U8XM.tab2_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMTab3: 2 constants; e.g. [GXD.U8XM.tab3_ok, GXD.U8XM.tab3_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMYChk: 2 constants; e.g. [GXD.U8XM.ychk_ok, GXD.U8XM.ychk_ok._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk0: 16 constants; e.g. [GXD.U8XM.zb0f, GXD.U8XM.zb0f._proof_1_1, GXD.U8XM.zb0t, GXD.U8XM.zb0t._proof_1_1, GXD.U8XM.zb1f, GXD.U8XM.zb1f._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk1: 16 constants; e.g. [GXD.U8XM.zb4f, GXD.U8XM.zb4f._proof_1_1, GXD.U8XM.zb4t, GXD.U8XM.zb4t._proof_1_1, GXD.U8XM.zb5f, GXD.U8XM.zb5f._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk2: 16 constants; e.g. [GXD.U8XM.zc1, GXD.U8XM.zc1._proof_1_1, GXD.U8XM.zc2, GXD.U8XM.zc2._proof_1_1, GXD.U8XM.zc3, GXD.U8XM.zc3._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk3: 16 constants; e.g. [GXD.U8XM.zc10, GXD.U8XM.zc10._proof_1_1, GXD.U8XM.zc11, GXD.U8XM.zc11._proof_1_1, GXD.U8XM.zc12, GXD.U8XM.zc12._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk4: 16 constants; e.g. [GXD.U8XM.zc17, GXD.U8XM.zc17._proof_1_1, GXD.U8XM.zc18, GXD.U8XM.zc18._proof_1_1, GXD.U8XM.zc19, GXD.U8XM.zc19._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZChk5: 4 constants; e.g. [GXD.U8XM.zc25, GXD.U8XM.zc25._proof_1_1, GXD.U8XM.zc26, GXD.U8XM.zc26._proof_1_1]
+  module Work.GCert.Data.Gen.U8XMZL: 30 constants; e.g. [GXD.U8XM.chunk0, GXD.U8XM.chunk1, GXD.U8XM.chunk10, GXD.U8XM.chunk11, GXD.U8XM.chunk12, GXD.U8XM.chunk13]
+  module Work.GCert.Data.Gen.U8XMZOK: 24 constants; e.g. [GXD.U8XM.exitRC, GXD.U8XM.hbit, GXD.U8XM.hbit._proof_1_1, GXD.U8XM.hch, GXD.U8XM.hch._simp_1_2, GXD.U8XM.hch._simp_1_3]
+  module Work.GCert.Data.InstU8XM: 7 constants; e.g. [OAI.PowerSaving.BridgeRate.U8XM.invPrice, OAI.PowerSaving.BridgeRate.U8XM.invPrice._proof_1, OAI.PowerSaving.BridgeRate.U8XM.invPrice._proof_2, OAI.PowerSaving.BridgeRate.U8XM.invPrice._proof_3, OAI.PowerSaving.BridgeRate.U8XM.invPrice._proof_4, OAI.PowerSaving.BridgeRate.U8XM.invPrice._proof_5]
+  module Work.GCert.Data.U8XMCert: 12 constants; e.g. [GXD.U8XM.aux, GXD.U8XM.cen_dim, GXD.U8XM.cen_ok, GXD.U8XM.cen_ok._proof_1_1, GXD.U8XM.fin_ok, GXD.U8XM.fin_ok._proof_1_1]
+  module Work.GCert.Data.U8XMGlue401: 15 constants; e.g. [GXD.U8XM.es, GXD.U8XM.es_gl, GXD.U8XM.es_ok, GXD.U8XM.ginv, GXD.U8XM.ginvX, GXD.U8XM.ginvX._proof_1]
+  module Work.GCert.Data.U8XMPrice: 11 constants; e.g. [GXD.U8XM.invPrice, GXD.U8XM.invPrice._proof_1, GXD.U8XM.invPrice._proof_2, GXD.U8XM.invPrice._proof_3, GXD.U8XM.invPrice._proof_4, GXD.U8XM.invPrice._proof_5]
+  module Work.GCert.Data.U8XMScalOK: 1 constants; e.g. [GXD.U8XM.scalOKZ]
+  module Work.KLow.ExitEnd: 4 constants; e.g. [OAI.PowerSaving.XEX.ExitCols, OAI.PowerSaving.XEX.ExitRows, OAI.PowerSaving.XEX.exit_row_inv, OAI.PowerSaving.XEX.iE_lS]
+  module Work.KLow.GlueX: 8 constants; e.g. [GXD.bitB, GXD.bit_sep, GXD.bit_sep._simp_1_1, GXD.memK_complete, GXD.mem_slotsL, GXD.mem_slotsL._proof_1_1]
+  module Work.KLow.LabelsX: 47 constants; e.g. [GLab.EndsX, GLab.EndsX.hn, GLab.EndsX.mk, GLab.EndsX.port, GLab.EndsX.ret, GLab.EndsX.slot]
+  module Work.KLow.NoY: 14 constants; e.g. [GXD.addsB_ny, GXD.dN, GXD.diag_addMat_comm, GXD.diag_addMat_y, GXD.diag_matP, GXD.isYN]
+  module Work.KLow.ZCheck: 5 constants; e.g. [GS.memZ, GS.memZ_sound, GS.mul_scaledCol, GS.zFin, GS.zFin_sound]
+  module Work.KMX.ExitEndZ: 9 constants; e.g. [OAI.PowerSaving.XEX.ExitColsX, OAI.PowerSaving.XEX.col_y_zero', OAI.PowerSaving.XEX.exit_col_invZ, OAI.PowerSaving.XEX.exit_hGrZ, OAI.PowerSaving.XEX.exit_hGrZ_scal, OAI.PowerSaving.XEX.exit_hHrZ]
+  module Work.KMX.GlueXZ: 24 constants; e.g. [GXD.exit_of_twinZ, GXD.exit_of_zchecksZ, GXD.exit_of_zchecksZ._proof_1_1, GXD.exit_of_zchecksZ._proof_1_2, GXD.exit_of_zchecksZ._proof_1_3, GXD.exit_of_zchecksZ._proof_1_4]
+  module Work.KMX.HalvesZ: 76 constants; e.g. [OAI.PowerSaving.XEX.GLabXZ, OAI.PowerSaving.XEX.GLabXZ.E, OAI.PowerSaving.XEX.GLabXZ.Gr, OAI.PowerSaving.XEX.GLabXZ.Gt, OAI.PowerSaving.XEX.GLabXZ.Hr, OAI.PowerSaving.XEX.GLabXZ.Ht]
+  module Work.KMX.LabelsXZ: 38 constants; e.g. [GLab.ValidX.glabXZ, GLab.ValidX.glabXZ._proof_1, GLab.ValidX.glabXZ._proof_10, GLab.ValidX.glabXZ._proof_11, GLab.ValidX.glabXZ._proof_12, GLab.ValidX.glabXZ._proof_13]
+  module Work.KMX.ZCheckZ: 6 constants; e.g. [GS.zCheckZ, GS.zCheckZ_sound, GS.zCheckZ_sound._proof_1_1, GS.zCheckZ_sound._proof_1_2, GS.zCheckZ_sound._proof_1_3, GS.zCheckZ_sound._proof_1_4]
+  module Work.XHost.Data.HU8XMSched: 245 constants; e.g. [GXD.U8XMHH.brows0, GXD.U8XMHH.brows1, GXD.U8XMHH.brows2, GXD.U8XMHH.brows3, GXD.U8XMHH.brows4, GXD.U8XMHH.brows5]
+  module Work.XHost.Data.InstU8XMHH: 11 constants; e.g. [OAI.PowerSaving.BridgeRate.U8XMHH.padPrice, OAI.PowerSaving.BridgeRate.U8XMHH.remPrice, OAI.PowerSaving.BridgeRate.U8XMHH.remPrice._proof_1, OAI.PowerSaving.BridgeRate.U8XMHH.remPrice._proof_2, OAI.PowerSaving.BridgeRate.U8XMHH.remPrice._proof_3, OAI.PowerSaving.BridgeRate.U8XMHH.remPrice._proof_4]
+  module Work.XHost.Data.RateU8XMHHx: 2 constants; e.g. [OAI.PowerSaving.BlockAccounting.blocksU8XMHHx, OAI.PowerSaving.BlockAccounting.fold_U8XMHHx]
+  module Work.XHost.Frames: 31 constants; e.g. [OAI.PowerSaving.XHost.HostForm, OAI.PowerSaving.XHost.HostForm._proof_1, OAI.PowerSaving.XHost.InvH, OAI.PowerSaving.XHost.LH, OAI.PowerSaving.XHost.LH_mono, OAI.PowerSaving.XHost.LH_succ]
+  module Work.XHost.HCert: 10 constants; e.g. [OAI.PowerSaving.XHost.GHost401.Sz, OAI.PowerSaving.XHost.GHost401.Sz._proof_1, OAI.PowerSaving.XHost.GHost401.corr, OAI.PowerSaving.XHost.GHost401.padR, OAI.PowerSaving.XHost.GHost401.run, OAI.PowerSaving.XHost.GHost401.runFull]
+  module Work.XHost.HDef: 284 constants; e.g. [OAI.PowerSaving.XHost.GHost401, OAI.PowerSaving.XHost.GHost401.FinD, OAI.PowerSaving.XHost.GHost401.G0, OAI.PowerSaving.XHost.GHost401.G1, OAI.PowerSaving.XHost.GHost401.G2, OAI.PowerSaving.XHost.GHost401.G3]
+  module Work.XHost.HEnd: 3 constants; e.g. [OAI.PowerSaving.XHost.engine_of_ginv_host, OAI.PowerSaving.XHost.engine_of_ginv_host._proof_1_1, OAI.PowerSaving.XHost.engine_of_ginv_host._proof_1_2]
+  module Work.XHost.HGeom: 309 constants; e.g. [OAI.PowerSaving.XHost.GHost401.mk.congr_simp, OAI.PowerSaving.XHost.HostSched.fits, OAI.PowerSaving.XHost.bank_ex, OAI.PowerSaving.XHost.bank_ex._proof_1_1, OAI.PowerSaving.XHost.bank_ex._proof_1_2, OAI.PowerSaving.XHost.bank_ex._proof_1_3]
+  module Work.XHost.HPriceK: 9 constants; e.g. [OAI.PowerSaving.XHost.encE, OAI.PowerSaving.XHost.encE._proof_1, OAI.PowerSaving.XHost.encE._proof_2, OAI.PowerSaving.XHost.encE._proof_3, OAI.PowerSaving.XHost.encE._proof_4, OAI.PowerSaving.XHost.rcost_fin]
+  module Work.XHost.HRoles: 57 constants; e.g. [OAI.PowerSaving.XHost.GB_loc, OAI.PowerSaving.XHost.GB_loc.match_1_1, OAI.PowerSaving.XHost.GF_loc, OAI.PowerSaving.XHost.GF_loc.match_1_1, OAI.PowerSaving.XHost.HostOK, OAI.PowerSaving.XHost.dDec]
+  module Work.XHost.HSched: 31 constants; e.g. [OAI.PowerSaving.XHost.HostSched, OAI.PowerSaving.XHost.HostSched.bk, OAI.PowerSaving.XHost.HostSched.fitsR, OAI.PowerSaving.XHost.HostSched.hinj, OAI.PowerSaving.XHost.HostSched.hostAt, OAI.PowerSaving.XHost.HostSched.hostInj]
+  module Work.XHost.HSchedK: 119 constants; e.g. [OAI.PowerSaving.XHost.HostSched.ofTab, OAI.PowerSaving.XHost.HostSched.ofTab._proof_1, OAI.PowerSaving.XHost.HostSched.ofTab._proof_2, OAI.PowerSaving.XHost.HostSched.ofTab._proof_3, OAI.PowerSaving.XHost.HostSched.ofTab._proof_4, OAI.PowerSaving.XHost.HostSched.ofTab._proof_5]
+  module Work.XHost.HStage: 34 constants; e.g. [OAI.PowerSaving.XHost.GHost401.adapt0, OAI.PowerSaving.XHost.GHost401.adapt1, OAI.PowerSaving.XHost.GHost401.adapt2, OAI.PowerSaving.XHost.GHost401.adapt3, OAI.PowerSaving.XHost.GHost401.adapt4, OAI.PowerSaving.XHost.GHost401.adapt5]
+  module Work.XHost.HostK: 3 constants; e.g. [OAI.PowerSaving.XHost.inWin, OAI.PowerSaving.XHost.inWin.match_1, OAI.PowerSaving.XHost.rankOf]
+  module Work.XHost.U8XMHH: 6 constants; e.g. [GXD.U8XMHH.hfits, GXD.U8XMHH.hpad_price, GXD.U8XMHH.hprice, GXD.U8XMHH.hrem_price, GXD.U8XMHH.hsched, GXD.U8XMHH.hwidth]
+  module Work.XMut.Dirt: 13 constants; e.g. [XMut.dirt_bwdZ, XMut.dirt_bwdZ._abel_1_1, XMut.dirt_fwdZ, XMut.dirt_fwdZ._abel_1_1, XMut.g8z, XMut.g8z_facts]
+  module Work.XMut.ECheckZ: 10 constants; e.g. [GS.ERunZ, GS.ERunZ.of_check, GS.ERunZ.of_check._proof_1_1, GS.ERunZ.of_check._proof_1_2, GS.ERunZ.of_check._proof_1_3, GS.ERunZ.of_check._proof_1_4]
+  module Work.XMut.GInv: 5 constants; e.g. [OAI.PowerSaving.GX.GScalZ, OAI.PowerSaving.GX.GScalZ.gauged, OAI.PowerSaving.GX.GScalZ.hE, OAI.PowerSaving.GX.GScalZ.mk, OAI.PowerSaving.GX.GScalZ.toScalZ]
+  module Work.XMut.Glue: 4 constants; e.g. [GXD.gscalOfZ, GXD.gscalOfZ._proof_1, GXD.gscalOfZ_gauged, GXD.reg_slotZ]
+  module Work.XMut.Scal: 29 constants; e.g. [OAI.PowerSaving.GX.ScalZ, OAI.PowerSaving.GX.ScalZ.Cc, OAI.PowerSaving.GX.ScalZ.Jr, OAI.PowerSaving.GX.ScalZ.MA, OAI.PowerSaving.GX.ScalZ.MAi, OAI.PowerSaving.GX.ScalZ.MB]
+  module Work.XMut.ScalarZ: 71 constants; e.g. [GS.ItemRunZ, GS.ItemRunZ.match_1, GS.ItemsRunZ, GS.ItemsRunZ._f, GS.ItemsRunZ.match_1, GS.ItemsRunZ_cA]
+  contains OAI.PowerSaving.XHost.engine_of_ginv_host: true  [Work.XHost.HEnd]
+  contains OAI.PowerSaving.XHost.HostSched.ofTab_fitsR: true  [Work.XHost.HSchedK]
+  contains OAI.PowerSaving.XHost.hostSchedK: true  [Work.XHost.HSchedK]
+  contains GXD.U8XMHH.hs_ok: true  [Work.XHost.Data.HU8XMSched]
+  contains GXD.U8XMHH.hsched: true  [Work.XHost.U8XMHH]
+  contains GXD.U8XMHH.hfits: true  [Work.XHost.U8XMHH]
+  contains GXD.U8XMHH.hprice: true  [Work.XHost.U8XMHH]
+  contains GXD.U8XMHH.hwidth: true  [Work.XHost.U8XMHH]
+  contains GXD.U8XM.ginv: true  [Work.GCert.Data.U8XMGlue401]
+  contains GXD.ginvXOfZ: true  [Work.KMX.GlueXZ]
+  contains GXD.U8XM.scalOKZ: true  [Work.GCert.Data.U8XMScalOK]
+  contains GXD.U8XM.validX: true  [Work.GCert.Data.U8XMCert]
+  contains GXD.exit_of_zchecksZ: true  [Work.KMX.GlueXZ]
+  contains OAI.PowerSaving.BlockAccounting.fold_U8XMHHx: true  [Work.XHost.Data.RateU8XMHHx]
+  contains OAI.PowerSaving.BlockAccounting.blocksU8XMHHx: true  [Work.XHost.Data.RateU8XMHHx]
+  contains OAI.PowerSaving.BridgeRate.U8XMHH.unit_cost_x: true  [Work.XHost.Data.InstU8XMHH]
+  contains OAI.PowerSaving.SeamU8XMHH.engine_U8XMHHx: true  [Work.FourierU8XMHH.Seam]
+  contains OAI.PowerSaving.RAM.hillsU8XMHH_program: true  [Work.FourierU8XMHH.Seam]
+  contains OAI.PowerSaving.BlockAccounting.fold_U8XMx: false  [Work.GCert.Data.RateU8XMx]
+  axioms reached: [Quot.sound, Classical.choice, propext]

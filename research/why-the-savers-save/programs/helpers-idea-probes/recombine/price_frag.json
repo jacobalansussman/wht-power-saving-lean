@@ -1,0 +1,72 @@
+{
+ "one run per helper": {
+  "helper_runs": 504,
+  "helper_width": 3778,
+  "b": "0.002259476673545",
+  "gain_pct": 35.72653788668963,
+  "kappa": "0.001730427469823602"
+ },
+ "tails >= dim 6 in one run (B/tail/cleanup)": {
+  "helper_runs": 1966,
+  "helper_width": 3778,
+  "b": "0.001733697595265",
+  "gain_pct": 4.143041219620862,
+  "kappa": "0.001730427469823602"
+ },
+ "B-phase + cleanup tails from dim 3 up merged": {
+  "helper_runs": 1462,
+  "helper_width": 3778,
+  "b": "0.001889803924554",
+  "gain_pct": 13.520332813182119,
+  "kappa": "0.001730427469823602"
+ },
+ "factory 0->3 in one run (phase A)": {
+  "helper_runs": 2092,
+  "helper_width": 3778,
+  "b": "0.001715610901146",
+  "gain_pct": 3.0565753121546675,
+  "kappa": "0.001712672621326812"
+ },
+ "cleanup steps only merged": {
+  "helper_runs": 2484,
+  "helper_width": 3778,
+  "b": "0.001664729781628",
+  "gain_pct": 0.00015154959443532137,
+  "kappa": "0.00166196306222244"
+ },
+ "cold helpers enter at first gate frame (drop first run if 0->1)": {
+  "helper_runs": 2212,
+  "helper_width": 3506,
+  "b": "0.001751141484657",
+  "gain_pct": 5.190893911426526,
+  "kappa": "0.001730427469823602"
+ },
+ "pairs of rank-1 runs fused (1+1 -> 2)": {
+  "helper_runs": 1802,
+  "helper_width": 3778,
+  "b": "0.001742132668100",
+  "gain_pct": 4.649735201524303,
+  "kappa": "0.001730427469823602"
+ },
+ "pair factory: 0->1->2 fused for half the factory chains": {
+  "helper_runs": 2372,
+  "helper_width": 3778,
+  "b": "0.001676963922732",
+  "gain_pct": 0.7350551825883491,
+  "kappa": "0.00167415642280995"
+ },
+ "hyperplane ends: drop the cleanup 8->9 climb (end at the dim-8 join)": {
+  "helper_runs": 2212,
+  "helper_width": 3506,
+  "b": "0.001751141484657",
+  "gain_pct": 5.190893911426526,
+  "kappa": "0.001730427469823602"
+ },
+ "32 cold helpers enter at dim 1 (stand-in for the promo_scan singletons)": {
+  "helper_runs": 2452,
+  "helper_width": 3746,
+  "b": "0.001674450248322",
+  "gain_pct": 0.584059012083416,
+  "kappa": "0.001671651151635998"
+ }
+}

@@ -1,0 +1,13 @@
+/content/work/logs/aA-final/fast-L2979H/BosDumpStage.lean:129:40: warning: `String.trim` has been deprecated: Use `String.trimAscii` instead
+
+Note: The updated constant has a different type:
+  String → String.Slice
+instead of
+  String → String
+/content/work/logs/aA-final/fast-L2979H/BosDumpStage.lean:129:76: warning: `String.trim` has been deprecated: Use `String.trimAscii` instead
+
+Note: The updated constant has a different type:
+  String → String.Slice
+instead of
+  String → String
+BosDump: 27102 constants of the closure written to /content/work/logs/aA-final/fast-L2979H/merged.tsv

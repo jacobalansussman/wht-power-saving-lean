@@ -1,0 +1,12 @@
+m=4 k=8 f=9: dim W = 205920, dim N = 102960, block chi=0: N 6435, out 6435
+blocks built (697s)
+  rank of d1 on block chi=0 = 1716  x16 = 27456  (39s)
+  rank of g2 on block chi=0 = 3036  x16 = 48576  (48s)
+  rank of g3 on block chi=0 = 4270  x16 = 68320  (131s)
+  rank of K on block chi=0 = 5412  x16 = 86592  (943s)
+  chain t=1: dim of intersection on block = 4719  (57s)
+  chain t=2: dim of intersection on block = 3201  (116s)
+  chain t=3: dim of intersection on block = 1824  (230s)
+  chain t=4: dim of intersection on block = 726  (919s)
+plain chain f=9: intersection dims x16 = [102960, 75504, 51216, 29184, 11616]; gains [27456, 24288, 22032, 17568]; sum 91344
+DONE

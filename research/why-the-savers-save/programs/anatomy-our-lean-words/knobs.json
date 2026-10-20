@@ -1,0 +1,55 @@
+{
+ "U8X0HQ (our best, Lean-checked)": {
+  "W": 7491,
+  "D": 2560,
+  "N": 1570082.7,
+  "D_over_N": 0.0016304873435239657,
+  "a": 0.0016256630933557325,
+  "mean_log": 2.8846807965881336
+ },
+ "U8 at exact fill (ceiling of the U8 line in this network)": {
+  "W": 7168,
+  "D": 2560,
+  "N": 1533104.1,
+  "D_over_N": 0.0016698148881577333,
+  "a": 0.001664732700176769,
+  "mean_log": 2.944290939367869
+ },
+ "exact fill, central totals free (cst 0, D = W: one saved direction per array)": {
+  "W": 7168,
+  "D": 7168,
+  "N": 1522915.7,
+  "D_over_N": 0.004706760857211145,
+  "a": 0.004666564654209819,
+  "mean_log": 2.9508380200812554
+ },
+ "U8X0HQ rest, central totals free": {
+  "W": 7491,
+  "D": 7168,
+  "N": 1559894.3,
+  "D_over_N": 0.0045951830079751285,
+  "a": 0.004557033872400687,
+  "mean_log": 2.890432848526665
+ },
+ "exact fill, every local rank-1 climb paired into rank-2 (hypothetical)": {
+  "W": 7168,
+  "D": 2560,
+  "N": 1405942.1,
+  "D_over_N": 0.0018208431716970805,
+  "a": 0.0018154311565429329,
+  "mean_log": 2.700079239137401
+ },
+ "one_saved_move_rank1_m3": 0.3690702464285425,
+ "one_saved_move_rank1_m4": 0.20751874963942185,
+ "one_saved_move_rank1_m5": 0.13864688385321391,
+ "one_saved_move_rank1_m6": 0.10175559829607281,
+ "one_saved_move_rank1_m7": 0.07921777883839824,
+ "one_saved_move_rank1_m9": 0.053605369642813844,
+ "one_saved_move_rank1_m16": 0.023277351097870366,
+ "one_saved_move_rank1_m73": 0.0032148823037571536,
+ "delta U8/C588 line (hub P112 network, P=4, T=8)": 0.35714285714285715,
+ "delta hub T74 (T=37)": 0.35714285714285715,
+ "delta our 4th result (E8 unit, bridged 5-stage, 4v data)": 0.25,
+ "delta our 2nd/3rd (paired cube p=11)": 0.5833333333333334,
+ "delta our 1st (NStar3)": 0.46205357142857145
+}

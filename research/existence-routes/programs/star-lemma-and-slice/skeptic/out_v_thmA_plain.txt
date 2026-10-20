@@ -1,0 +1,12 @@
+== ../e3-slice6/plain_W1_m3.npz
+W 1 M 3 dirs [1, 2, 4] ; Gam strictly lower: True  strictly upper: False
+order-2 system (*) max error over 64 forms: 0
+check v_i.u_i = 1: 0.0 ; v_j.u_i = G_ji/2 (i<j): 0.0
+f=4:  4096 inputs y, 295 distinct characters; literal: max err 0, wrong at 0; corrected: max err 0, wrong at 0
+all 512 characters reachable with some f: literal wrong at 0 (max err 0); corrected wrong at 0 (max err 0)
+== ../e3-slice6/plain_W2_m3.npz
+W 2 M 6 dirs [1, 2, 4, 1, 2, 4] ; Gam strictly lower: True  strictly upper: False
+order-2 system (*) max error over 64 forms: 0
+check v_i.u_i = 1: 0.0 ; v_j.u_i = G_ji/2 (i<j): 0.0
+f=4:  4096 inputs y, 295 distinct characters; literal: max err 0, wrong at 0; corrected: max err 0, wrong at 0
+all 512 characters reachable with some f: literal wrong at 0 (max err 0); corrected wrong at 0 (max err 0)

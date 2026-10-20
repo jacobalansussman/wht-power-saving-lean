@@ -1,0 +1,17 @@
+m=2: 17 free letters (3 shifts, 8 phases, 6 address maps): each maps Delta into Delta: True
+   rank 1 (block; 3 tuples of independent directions): dim(Delta + (g(x)g)Delta) - dim Delta = [2]   predicted 2^m - 2^(m-k) = 2
+   rank 2 (kernel-rank; 6 tuples of independent directions): dim(Delta + (g(x)g)Delta) - dim Delta = [3]   predicted 2^m - 2^(m-k) = 3
+   kernel (digitProd littleC) == dir e1 ... dir em : True
+m=3: 191 free letters (7 shifts, 16 phases, 168 address maps): each maps Delta into Delta: True
+   rank 1 (block; 7 tuples of independent directions): dim(Delta + (g(x)g)Delta) - dim Delta = [4]   predicted 2^m - 2^(m-k) = 4
+   rank 2 (block; 42 tuples of independent directions): dim(Delta + (g(x)g)Delta) - dim Delta = [6]   predicted 2^m - 2^(m-k) = 6
+   rank 3 (kernel-rank; 168 tuples of independent directions): dim(Delta + (g(x)g)Delta) - dim Delta = [7]   predicted 2^m - 2^(m-k) = 7
+   kernel (digitProd littleC) == dir e1 ... dir em : True
+m=4: 87 free letters (15 shifts, 32 phases, 40 address maps): each maps Delta into Delta: True
+   rank 1 (block; 15 tuples of independent directions): dim(Delta + (g(x)g)Delta) - dim Delta = [8]   predicted 2^m - 2^(m-k) = 8
+   rank 2 (block; 40 tuples of independent directions): dim(Delta + (g(x)g)Delta) - dim Delta = [12]   predicted 2^m - 2^(m-k) = 12
+   rank 3 (block; 40 tuples of independent directions): dim(Delta + (g(x)g)Delta) - dim Delta = [14]   predicted 2^m - 2^(m-k) = 14
+   rank 4 (kernel-rank; 40 tuples of independent directions): dim(Delta + (g(x)g)Delta) - dim Delta = [15]   predicted 2^m - 2^(m-k) = 15
+   kernel (digitProd littleC) == dir e1 ... dir em : True
+m=2, 4 columns, rank 1: weight = 12 (mod p), 12 (SVD); predicted 12
+m=2, 4 columns, rank 2: weight = 15 (mod p), 15 (SVD); predicted 15

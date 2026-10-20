@@ -1,0 +1,23 @@
+	Command being timed: "/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean -DautoImplicit=false -R /content/work/rf-wht/shea/lean/complex588 -o /content/work/rf-wht/shea/lean/complex588/.lake/build/lib/lean/Work/XHost/HStage.olean -i /content/work/rf-wht/shea/lean/complex588/.lake/build/lib/lean/Work/XHost/HStage.ilean /content/work/rf-wht/shea/lean/complex588/Work/XHost/HStage.lean"
+	User time (seconds): 67.58
+	System time (seconds): 3.76
+	Percent of CPU this job got: 252%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:28.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7018188
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 242571
+	Voluntary context switches: 4319
+	Involuntary context switches: 20872
+	Swaps: 0
+	File system inputs: 696
+	File system outputs: 7544
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,5 @@
+(4,3,13): deletion-passing 72; clique-excluded 0; excluded only by new tests 0; pass all 72
+  PASS-ALL (control): S=[7, 7, 7, 11, 11, 11, 13, 13, 13, 14, 14, 14, 15]  -> best residual 5.128e-15 ['5.1e-15', '9.3e-15', '6.1e-03']
+  PASS-ALL (control): S=[7, 7, 7, 11, 11, 11, 13, 13, 13, 14, 14, 14, 14]  -> best residual 4.708e-24 ['4.7e-24', '6.5e-15', '5.9e-03']
+  PASS-ALL (control): S=[7, 7, 7, 11, 11, 11, 13, 13, 13, 13, 14, 14, 14]  -> best residual 1.095e-18 ['3.4e-16', '1.1e-18', '8.4e-03']
+  PASS-ALL (control): S=[7, 7, 7, 11, 11, 11, 12, 13, 13, 13, 14, 14, 14]  -> best residual 6.491e-16 ['6.5e-16', '7.0e-16', '1.3e-01']

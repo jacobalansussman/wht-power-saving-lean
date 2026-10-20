@@ -1,0 +1,41 @@
+OURS START Mon Oct 19 12:45:13 PM UTC 2026 mode=quick host=0629706ddf60
+base tree built (waited 270s; controls still running)
+/content/work/ours/in/ours-u8x0hq-overlay.tgz: OK
+OVERLAY-OK (257 files)
+copy done in 137s; 9.7G
+mathlib: d13f23b723b8a846827a245b89c10fc7d3f11612; packages: aesop batteries Cli importGraph LeanSearchClient mathlib plausible proofwidgets Qq 
+IN-TREE-OK: 257 overlay files + lakefile (-- fsp-cc (split centres on mutable sources) lean_lib CSX where globs := #[`CSX.+] )
+tracked changes:  M lean/complex588/lakefile.lean 
+   (slot: waited 0s; heavy lean now 1, avail 50038 MB)
+=== build START 12:52:01
+=== build END rc=0 wall=872s maxrss_kb=8993964 13:06:33
+Build completed successfully (9330 jobs).
+   113s Work.XHost.Data.HU8X0HQSched
+   99s Work.GCert.Data.Gen.U8X0ZChk3
+   99s Work.GCert.Data.Gen.U8X0ZChk2
+   86s Work.GCert.Data.Gen.U8X0ZChk0
+   82s Work.GCert.Data.Gen.U8X0ZChk1
+   70s Work.GCert.Data.Gen.U8X0ZChk4
+   42s Work.XHost.HGeom
+   40s Work.XHost.HDef
+   39s Work.GCert.Data.Gen.U8X0Sched
+   32s Work.GCert.Data.Gen.U8X0EChk
+   (slot: waited 0s; heavy lean now 0, avail 50467 MB)
+=== nobuild START 13:06:33
+=== nobuild END rc=0 wall=24s maxrss_kb=1015348 13:06:57
+All targets up-to-date (9330 jobs).
+   (slot: waited 0s; heavy lean now 0, avail 50461 MB)
+=== axioms START 13:06:57
+=== axioms END rc=0 wall=7s maxrss_kb=6970476 13:07:04
+'OAI.PowerSaving.transform_mainU8X0HQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainU8X0HQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8X0HQ_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+base controls passed (waited 0s)
+BASE-READY waited 0s
+OURS-READY written
+OURS-READY Mon Oct 19 01:07:04 PM UTC 2026 host=0629706ddf60 mode=quick
+tree /content/work/ours/T (Lake project /content/work/ours/T/lean/complex588)
+build OK, --no-build OK, axioms OK
+BASE-READY: Mon Oct 19 12:57:36 PM UTC 2026
+OURS END Mon Oct 19 01:07:04 PM UTC 2026
+EXIT 0

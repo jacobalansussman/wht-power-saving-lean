@@ -1,0 +1,3 @@
+m=5 p=1000003: frames used 1500, dim N 527, dim(N+Y0) 558; delta_A [16, 24, 28, 30, 31]; delta_B [15, 23, 27, 29, 30]; delta_B == delta_A - 1: True
+m=5 p=999983: frames used 1500, dim N 527, dim(N+Y0) 558; delta_A [16, 24, 28, 30, 31]; delta_B [15, 23, 27, 29, 30]; delta_B == delta_A - 1: True
+python3 -B certB.py 1500  53.34s user 1.81s system 99% cpu 55.467 total

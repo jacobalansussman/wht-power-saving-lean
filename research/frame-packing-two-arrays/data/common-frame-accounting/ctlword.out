@@ -1,0 +1,184 @@
+{
+ "s": "s023",
+ "n_generators": 8,
+ "generators": [
+  {
+   "gen": 0,
+   "inputs": [
+    0
+   ],
+   "terms_per_input": {
+    "0": 1
+   },
+   "coeffs": {
+    "0": [
+     "1"
+    ]
+   }
+  },
+  {
+   "gen": 1,
+   "inputs": [
+    1
+   ],
+   "terms_per_input": {
+    "1": 1
+   },
+   "coeffs": {
+    "1": [
+     "1"
+    ]
+   }
+  },
+  {
+   "gen": 2,
+   "inputs": [
+    0,
+    1
+   ],
+   "terms_per_input": {
+    "0": 1,
+    "1": 1
+   },
+   "coeffs": {
+    "0": [
+     "1"
+    ],
+    "1": [
+     "1"
+    ]
+   },
+   "twist_class": 0,
+   "twist_is_free_monomial": true,
+   "same_raw_frame_for_both_inputs": true
+  },
+  {
+   "gen": 3,
+   "inputs": [
+    0,
+    1
+   ],
+   "terms_per_input": {
+    "0": 1,
+    "1": 1
+   },
+   "coeffs": {
+    "0": [
+     "1"
+    ],
+    "1": [
+     "1"
+    ]
+   },
+   "twist_class": 0,
+   "twist_is_free_monomial": true,
+   "same_raw_frame_for_both_inputs": true
+  },
+  {
+   "gen": 4,
+   "inputs": [
+    0,
+    1
+   ],
+   "terms_per_input": {
+    "0": 1,
+    "1": 1
+   },
+   "coeffs": {
+    "0": [
+     "1"
+    ],
+    "1": [
+     "1"
+    ]
+   },
+   "twist_class": 0,
+   "twist_is_free_monomial": true,
+   "same_raw_frame_for_both_inputs": null
+  },
+  {
+   "gen": 5,
+   "inputs": [
+    0,
+    1
+   ],
+   "terms_per_input": {
+    "0": 1,
+    "1": 1
+   },
+   "coeffs": {
+    "0": [
+     "1"
+    ],
+    "1": [
+     "-1"
+    ]
+   },
+   "twist_class": 1,
+   "twist_is_free_monomial": true,
+   "same_raw_frame_for_both_inputs": true
+  },
+  {
+   "gen": 6,
+   "inputs": [
+    0,
+    1
+   ],
+   "terms_per_input": {
+    "0": 1,
+    "1": 1
+   },
+   "coeffs": {
+    "0": [
+     "1"
+    ],
+    "1": [
+     "-1"
+    ]
+   },
+   "twist_class": 1,
+   "twist_is_free_monomial": true,
+   "same_raw_frame_for_both_inputs": false
+  },
+  {
+   "gen": 7,
+   "inputs": [
+    0,
+    1
+   ],
+   "terms_per_input": {
+    "0": 1,
+    "1": 1
+   },
+   "coeffs": {
+    "0": [
+     "1"
+    ],
+    "1": [
+     "-1"
+    ]
+   },
+   "twist_class": 1,
+   "twist_is_free_monomial": true,
+   "same_raw_frame_for_both_inputs": null
+  }
+ ],
+ "all_single_term_per_input": true,
+ "all_terms_clifford": false,
+ "n_distinct_twists": 2,
+ "twist_classes_identified": [
+  "e",
+  "s^2"
+ ],
+ "frame_network_in_x_basis": false,
+ "lineage_by_generator": [
+  null,
+  null,
+  "e",
+  "e",
+  "e",
+  "s^2",
+  "s^2",
+  "s^2"
+ ]
+}

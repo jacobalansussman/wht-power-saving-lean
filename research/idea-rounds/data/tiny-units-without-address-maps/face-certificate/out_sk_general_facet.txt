@@ -1,0 +1,10 @@
+FACET SUBSPACE, antisymmetric part: N = span of a(T), T an f-set inside a facet x_j = c (in at least one facet)
+m=2 f=2: dim A 6, dim N 4, c = 2*C(2^(m-1),f) = 2; cap by weight {1: [1], 2: [0]}; dem 2; random free products moving N: 0; least gap 9.68e+15
+m=3 f=3: dim A 56, dim N 24, c = 2*C(2^(m-1),f) = 8; cap by weight {1: [8], 2: [8], 3: [8]}; dem 24; random free products moving N: 0; least gap 3.07e+15
+m=3 f=4: dim A 70, dim N 6, c = 2*C(2^(m-1),f) = 2; cap by weight {1: [2], 2: [3], 3: [4]}; dem 6; random free products moving N: 0; least gap 3.62e+15
+m=4 f=3: dim A 560, dim N 352, c = 2*C(2^(m-1),f) = 112; cap by weight {1: [64], 2: [80], 3: [96], 4: [96]}; dem 160; random free products moving N: 0; least gap 8.26e+14
+m=4 f=4: dim A 1820, dim N 536, c = 2*C(2^(m-1),f) = 140; cap by weight {1: [128], 2: [228], 3: [314], 4: [392]}; dem 488; random free products moving N: 0; least gap 1.47e+14
+m=4 f=5: dim A 4368, dim N 448, c = 2*C(2^(m-1),f) = 112; cap by weight {1: [112], 2: [224], 3: [336], 4: [448]}; dem 448; random free products moving N: 0; least gap 4.51e+14
+m=4 f=6: dim A 8008, dim N 224, c = 2*C(2^(m-1),f) = 56; cap by weight {1: [56], 2: [112], 3: [168], 4: [224]}; dem 224; random free products moving N: 0; least gap 5.82e+14
+m=4 f=7: dim A 11440, dim N 64, c = 2*C(2^(m-1),f) = 16; cap by weight {1: [16], 2: [32], 3: [48], 4: [64]}; dem 64; random free products moving N: 0; least gap 2.12e+15
+m=4 f=8: dim A 12870, dim N 8, c = 2*C(2^(m-1),f) = 2; cap by weight {1: [2], 2: [4], 3: [6], 4: [8]}; dem 8; random free products moving N: 0; least gap 9.02e+15

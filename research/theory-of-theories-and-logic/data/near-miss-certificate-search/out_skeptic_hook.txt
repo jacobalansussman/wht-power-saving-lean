@@ -1,0 +1,15 @@
+orbit sizes [15, 15, 120, 120, 420, 420, 840, 840, 2520, 2520, 2520, 2520] K 12 (1s)
+hook orbits [0, 3, 4, 7, 8, 10] dim 6435 pure union: True
+j=1: 1107 classes, max 256, unitarity err 1.8e-15 (1s)
+  HOOK float: psi_1 = 1716 (x16 = 27456), phi_1 = 1716.000000 (x16 = 27456.000), s_1 = 1.000000, kept >= 1.000e+00, dropped <= 5.7e-16 (1s)
+j=2: 85 classes, max 1296, unitarity err 0.0e+00 (2s)
+  HOOK float: psi_2 = 3036 (x16 = 48576), phi_2 = 2574.000000 (x16 = 41184.000), s_2 = 0.847826, kept >= 8.660e-01, dropped <= 1.4e-15 (3s)
+j=3: 9 classes, max 4900, unitarity err 4.4e-16 (53s)
+  HOOK float: psi_3 = 4270 (x16 = 68320), phi_3 = 3003.000000 (x16 = 48048.000), s_3 = 0.703279, kept >= 3.536e-01, dropped <= 1.6e-15 (85s)
+diagonal letter acts on f_T by scalars (structural), sample [-1.-0.j -1.-0.j -0.+1.j  1.+0.j -0.+1.j]
+  HOOK mod 998244353: psi_1 = 1716 (85s)
+  HOOK mod 998244353: psi_2 = 3036 (87s)
+  HOOK mod 998244353: psi_3 = 4270 (136s)
+  HOOK mod 1000000009: psi_1 = 1716 (137s)
+  HOOK mod 1000000009: psi_2 = 3036 (139s)
+  HOOK mod 1000000009: psi_3 = 4270 (186s)

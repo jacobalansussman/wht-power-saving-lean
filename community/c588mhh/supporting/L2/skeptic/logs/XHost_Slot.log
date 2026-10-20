@@ -1,0 +1,20 @@
+'OAI.PowerSaving.GF.XHost.hostOK_slot' depends on axioms: [propext, Classical.choice, Quot.sound]
+        3.03 real         1.38 user         1.71 sys
+          6002982912  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              447006  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                5624  involuntary context switches
+         35993814869  instructions retired
+         12197794660  cycles elapsed
+           905362512  peak memory footprint
+EXIT=0 TIME=3s HEAVY=0 CMD=/usr/bin/env LEAN_PATH=<verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean:<verify>/.lake/build/lib/lean:<verify>/.lake/packages/mathlib/.lake/build/lib/lean:<verify>/.lake/packages/batteries/.lake/build/lib/lean:<verify>/.lake/packages/Qq/.lake/build/lib/lean:<verify>/.lake/packages/aesop/.lake/build/lib/lean:<verify>/.lake/packages/proofwidgets/.lake/build/lib/lean:<verify>/.lake/packages/importGraph/.lake/build/lib/lean:<verify>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<verify>/.lake/packages/plausible/.lake/build/lib/lean:<verify>/.lake/packages/Cli/.lake/build/lib/lean LEAN_NUM_THREADS=2 /usr/bin/time -l lean -DautoImplicit=false -R <verify>/checks/wht43/bound-check/v-host-1/proj -o <verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean/XHost/Slot.olean -i <verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean/XHost/Slot.ilean <verify>/checks/wht43/bound-check/v-host-1/proj/XHost/Slot.lean

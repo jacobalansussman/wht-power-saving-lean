@@ -1,0 +1,18 @@
+Lagrangians 2295 7s
+neighbours of K at d3: 15 ; content cells t: 7  7s
+F choice 0, content cell #0: |G| = 10752, dim A = 184, G-fixed slots [0, 13] (t slot 0), input distances of fixed [2, 3]  8s
+G-orbit sizes on the 30 slots: [1, 28, 1] ; kernel slot 29 in orbit of size 28
+order-7 elements 3072 ; G-classes 2 [1536, 1536]
+  lam1 16 class 0 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 2.81e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 1.2e-14
+  lam1 16 class 0 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+  lam1 16 class 1 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 3.04e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 1.3e-14
+  lam1 16 class 1 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+  lam1 17 class 0 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 2.18e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 1.1e-14
+  lam1 17 class 0 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+  lam1 17 class 1 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 3.88e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 1.9e-14
+  lam1 17 class 1 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+  lam1 24 class 0 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 4.62e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 2.1e-14
+  lam1 24 class 0 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+  lam1 24 class 1 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 2.94e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 1.4e-14
+  lam1 24 class 1 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+done 8s

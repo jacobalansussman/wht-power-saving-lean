@@ -1,0 +1,6 @@
+m=3 plain 2 in 2m: psi screen [True, True] | cut by one move: [True, False]
+m=3 single trunk, no injections (300 designs): psi screen outcomes {(False, False): 300}
+m=4 plain 2 in 2m: psi screen [True, True] | cut by one move: [True, False]
+m=4 single trunk, no injections (300 designs): psi screen outcomes {(False, False): 300}
+m=3 order-3 control: psi screen [True, True] | cut by one move: [False, False]
+m=4 order-3 control: psi screen [True, True] | cut by one move: [False, False]

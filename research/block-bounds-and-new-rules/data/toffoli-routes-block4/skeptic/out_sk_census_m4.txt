@@ -1,0 +1,20 @@
+m 4 all pairs of K rows compatible: True
+ .. 200000 3179 18.6 memo 34752
+ .. 400000 5999 35.0 memo 54334
+ .. 600000 9222 53.9 memo 85278
+ .. 800000 12053 71.2 memo 103132
+ .. 1000000 14901 88.5 memo 121064
+ .. 1200000 18063 107.5 memo 145478
+ .. 1400000 20923 124.6 memo 159944
+ .. 1600000 24044 142.8 memo 184340
+ .. 1800000 26932 159.7 memo 198620
+ .. 2000000 29747 176.1 memo 212408
+perfect matchings of K rows: 2027025
+continuing first steps (matchings): 30465 distinct depth-(m-1) frames: 30465 max matchings per frame: 1
+continuing translation matchings: 15 routes through them: 165375
+TOTAL ROUTES (chains of distinct frames): 736785
+  |S_1| = 30465
+  |S_2| = 63665
+  |S_3| = 30465
+t=179.9 memo=223490
+[skeptic note] affine-flag CONTROL at m=4 stopped by hand at the 60-min time box (still running after ~20 min); m=2,3 controls passed (3, 21).

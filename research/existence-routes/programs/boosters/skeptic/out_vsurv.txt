@@ -1,0 +1,5 @@
+S6 v={2: -1, 5: -4, 3: 2, 4: 1, 6: 2}: F=0 plain=0 D'(1)=0.06291 root=0.68060 negative on (0.6806,1) contiguous=True D(0.9)=-0.003406 D(0.9983)=-1.060e-04; walk=True; 4267 of my tests, failed []; tight 50 e.g. ['C6k5', 'C6k6', 'Dist6S(0,)', 'Dist6S(1, 2, 3, 4, 5, 6)', 'Dist6S(0, 1, 2, 3, 4, 5, 6)', 'Lines6T((0, 1), (1, 1))']
+S7 v={2: -1, 5: -1, 6: -1, 3: 2, 7: 1}: F=0 plain=0 D'(1)=0.02900 root=0.86666 negative on (0.8667,1) contiguous=True D(0.9)=-0.000569 D(0.9983)=-4.848e-05; walk=True; 8271 of my tests, failed []; tight 50 e.g. ['C7k6', 'C7k7', 'Dist7S(0,)', 'Dist7S(1, 2, 3, 4, 5, 6, 7)', 'Dist7S(0, 1, 2, 3, 4, 5, 6, 7)', 'Lines7T((0, 1), (1, 1))']
+S8 v={2: -1, 5: -1, 6: -2, 3: 1, 4: 2, 8: 1}: F=0 plain=0 D'(1)=0.08713 root=0.75807 negative on (0.7581,1) contiguous=True D(0.9)=-0.003972 D(0.9983)=-1.465e-04; walk=True; 16247 of my tests, failed []; tight 50 e.g. ['C8k7', 'C8k8', 'Dist8S(0,)', 'Dist8S(1, 2, 3, 4, 5, 6, 7, 8)', 'Dist8S(0, 1, 2, 3, 4, 5, 6, 7, 8)', 'Lines8T((0, 1), (1, 1))']
+35 listed survivors re-tested with my certificates (M = m, m+1, b = 2): killed 0
+$H python3 -B vsurv.py  10.06s user 0.19s system 94% cpu 10.796 total

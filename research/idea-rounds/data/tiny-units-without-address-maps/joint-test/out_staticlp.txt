@@ -1,0 +1,19 @@
+distinct static inequalities: 190
+W =  1: least K with a multiset passing every static cut:  3  (plain schedule:  3 ; a saving of 1e-1 needs K <=  2) ; multisets passing at that K: 1, e.g. n_1..n_7 = (1, 1, 0, 1, 0, 0, 0)
+W =  2: least K with a multiset passing every static cut:  6  (plain schedule:  6 ; a saving of 1e-1 needs K <=  5) ; multisets passing at that K: 53, e.g. n_1..n_7 = (0, 0, 0, 1, 2, 2, 1)
+W =  3: least K with a multiset passing every static cut:  9  (plain schedule:  9 ; a saving of 1e-1 needs K <=  8) ; multisets passing at that K: 206, e.g. n_1..n_7 = (0, 0, 0, 1, 3, 3, 2)
+W =  4: least K with a multiset passing every static cut: 11  (plain schedule: 12 ; a saving of 1e-1 needs K <= 10) ; multisets passing at that K: 39, e.g. n_1..n_7 = (1, 1, 1, 2, 2, 2, 2)
+W =  5: least K with a multiset passing every static cut: 14  (plain schedule: 15 ; a saving of 1e-1 needs K <= 13) ; multisets passing at that K: 144, e.g. n_1..n_7 = (1, 1, 1, 2, 3, 3, 3)
+W =  6: least K with a multiset passing every static cut: 16  (plain schedule: 18 ; a saving of 1e-1 needs K <= 16) ; multisets passing at that K: 45, e.g. n_1..n_7 = (1, 2, 3, 2, 3, 2, 3)
+W =  7: least K with a multiset passing every static cut: 19  (plain schedule: 21 ; a saving of 1e-1 needs K <= 18) ; multisets passing at that K: 63, e.g. n_1..n_7 = (2, 2, 2, 3, 3, 3, 4)
+W =  8: least K with a multiset passing every static cut: 21  (plain schedule: 24 ; a saving of 1e-1 needs K <= 21) ; multisets passing at that K: 12, e.g. n_1..n_7 = (3, 3, 2, 3, 3, 3, 4)
+W =  9: least K with a multiset passing every static cut: 24  (plain schedule: 27 ; a saving of 1e-1 needs K <= 24) ; multisets passing at that K: 30, e.g. n_1..n_7 = (3, 3, 3, 3, 4, 4, 4)
+LP at W = 1: least sum of n_w = 2.600000 ; n = [0.3, 0.3, 0.4, 0.3, 0.4, 0.4, 0.5]
+dual, made rational: coefficients of n_1..n_7 after combining = ['1', '1', '1', '1', '1', '1', '1'] (each must be <= 1) ; right side = 13/5 * W
+exact check of the combination: True  ->  K = sum n_w >= 13/5 * W = 2.600000 * W
+   weight 1/12 on: sum_w n_w * [2, 2, 2, 6, 4, 4, 4] >= 9 * W   (U = (5,1) (6,1) (7,1))
+   weight 1/60 on: sum_w n_w * [2, 4, 4, 4, 4, 2, 0] >= 7 * W   (U = (1,1) (6,1))
+   weight 1/12 on: sum_w n_w * [2, 6, 4, 2, 2, 4, 4] >= 9 * W   (U = (3,1) (6,1) (7,1))
+   weight 1/60 on: sum_w n_w * [4, 2, 4, 4, 2, 4, 0] >= 7 * W   (U = (2,1) (5,1))
+   weight 1/60 on: sum_w n_w * [4, 4, 2, 2, 4, 4, 0] >= 7 * W   (U = (3,1) (4,1))
+   weight 1/12 on: sum_w n_w * [6, 2, 4, 2, 4, 2, 4] >= 9 * W   (U = (3,1) (5,1) (7,1))

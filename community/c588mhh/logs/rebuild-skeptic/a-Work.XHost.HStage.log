@@ -1,0 +1,35 @@
+START Work.XHost.HStage 20:57:41
+'OAI.PowerSaving.XHost.GHost401.stage0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.GHost401.stage1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.GHost401.stage2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.GHost401.stage3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.GHost401.stage4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.GHost401.stage5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.GHost401.stage6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.GHost401.stage7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.GHost401.stage8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.GHost401.fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean -DautoImplicit=false -R . -o /content/work/vh2/build/Work/XHost/HStage.olean -i /content/work/vh2/build/Work/XHost/HStage.ilean Work/XHost/HStage.lean"
+	User time (seconds): 183.17
+	System time (seconds): 18.64
+	Percent of CPU this job got: 426%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:47.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6933732
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 29
+	Minor (reclaiming a frame) page faults: 328311
+	Voluntary context switches: 10890
+	Involuntary context switches: 28021
+	Swaps: 0
+	File system inputs: 1544
+	File system outputs: 7544
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+EXIT 0 Work.XHost.HStage 20:58:28

@@ -1,0 +1,10 @@
+  design #1 a1=2 a2=0 dup=2 injections=10: psi residual 2.100e-01
+  design #2 a1=0 a2=2 dup=3 injections=7: psi residual 9.999e-01
+  design #3 a1=2 a2=0 dup=0 injections=12: psi residual 7.071e-01
+  design #4 a1=0 a2=3 dup=2 injections=12: psi residual 5.162e-08
+    scalars |c_i|: [1.0, 4.0317, 1.7613, 3.7201, 2.7929, 2.8556, 2.0802, 0.7058, 3.1162, 1.0522, 0.4332, 0.9702]
+    injections (register, slot, source state): [('Rt', 0, 0), ('A', 0, 1), ('A', 1, 6), ('A', 1, 6), ('A', 2, 7), ('A', 0, 5), ('A', 0, 5), ('A', 1, 6), ('A', 2, 7), ('A', 2, 7), ('A', 2, 7), ('A', 0, 5)]
+    chart level with these scalars: ['dead after peel', 'dead after peel']
+  design #5 a1=2 a2=3 dup=0 injections=4: psi residual 1.000e+00
+  design #6 a1=3 a2=3 dup=3 injections=6: psi residual 1.000e+00
+done in 169s

@@ -1,0 +1,52 @@
+m=4: 600 designs, depth 8, 982s; best ((0, 0), 3, 3, 0, 4)
+   best history (statuses, orphans, total terms): [(['no', 'no'], 2, 10), (['no', 'no'], 8, 11), (['no', 'no'], 5, 16), (['no', 'no'], 10, 20), (['cap', 'cap'], 0, 23)]
+   (0, 0, 0, ('cap', 'cap')) 8
+   (0, 0, 0, ('no:linear syste', 'cap')) 2
+   (0, 0, 0, ('no:linear syste', 'no:linear syste')) 25
+   (0, 1, 0, ('cap', 'cap')) 17
+   (0, 1, 0, ('cap', 'no:linear syste')) 1
+   (0, 1, 0, ('no:linear syste', 'no:linear syste')) 23
+   (0, 2, 0, ('cap', 'cap')) 9
+   (0, 2, 0, ('cap', 'no:linear syste')) 2
+   (0, 2, 0, ('no:linear syste', 'no:linear syste')) 17
+   (0, 3, 0, ('cap', 'cap')) 28
+   (0, 3, 0, ('no:linear syste', 'cap')) 4
+   (0, 3, 0, ('no:linear syste', 'no:linear syste')) 4
+   (1, 0, 0, ('cap', 'cap')) 14
+   (1, 0, 0, ('no:linear syste', 'cap')) 1
+   (1, 0, 0, ('no:linear syste', 'no:linear syste')) 19
+   (1, 1, 0, ('cap', 'cap')) 14
+   (1, 1, 0, ('cap', 'no:linear syste')) 1
+   (1, 1, 0, ('no:linear syste', 'cap')) 1
+   (1, 1, 0, ('no:linear syste', 'no:linear syste')) 34
+   (1, 2, 0, ('cap', 'cap')) 11
+   (1, 2, 0, ('cap', 'no:linear syste')) 1
+   (1, 2, 0, ('no:linear syste', 'cap')) 3
+   (1, 2, 0, ('no:linear syste', 'no:linear syste')) 18
+   (1, 3, 0, ('cap', 'cap')) 31
+   (1, 3, 0, ('no:linear syste', 'cap')) 2
+   (1, 3, 0, ('no:linear syste', 'no:linear syste')) 9
+   (2, 0, 0, ('cap', 'cap')) 20
+   (2, 0, 0, ('no:linear syste', 'cap')) 1
+   (2, 0, 0, ('no:linear syste', 'no:linear syste')) 14
+   (2, 1, 0, ('cap', 'cap')) 16
+   (2, 1, 0, ('cap', 'no:linear syste')) 1
+   (2, 1, 0, ('no:linear syste', 'cap')) 3
+   (2, 1, 0, ('no:linear syste', 'no:linear syste')) 26
+   (2, 2, 0, ('cap', 'cap')) 4
+   (2, 2, 0, ('no:linear syste', 'no:linear syste')) 34
+   (2, 3, 0, ('cap', 'cap')) 24
+   (2, 3, 0, ('no:linear syste', 'cap')) 7
+   (2, 3, 0, ('no:linear syste', 'no:linear syste')) 1
+   (3, 0, 0, ('cap', 'cap')) 26
+   (3, 0, 0, ('cap', 'no:linear syste')) 1
+   (3, 0, 0, ('no:linear syste', 'cap')) 1
+   (3, 0, 0, ('no:linear syste', 'no:linear syste')) 2
+   (3, 1, 0, ('cap', 'cap')) 30
+   (3, 1, 0, ('cap', 'no:linear syste')) 1
+   (3, 1, 0, ('no:linear syste', 'no:linear syste')) 10
+   (3, 2, 0, ('cap', 'cap')) 30
+   (3, 2, 0, ('cap', 'no:linear syste')) 7
+   (3, 2, 0, ('no:linear syste', 'no:linear syste')) 3
+   (3, 3, 0, ('cap', 'cap')) 35
+   (3, 3, 0, ('no:linear syste', 'no:linear syste')) 4

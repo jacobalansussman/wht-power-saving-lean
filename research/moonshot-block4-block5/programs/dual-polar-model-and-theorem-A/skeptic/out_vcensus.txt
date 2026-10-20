@@ -1,0 +1,10 @@
+P0-orbit of (L0, Lambda_K): 1024 (expect 1024 opposites of L0)
+states of D r D b: 30720  by depth: [(0, 1024), (1, 1024), (2, 28672)]
+depth-2 states 28672, geodesic 3584, distinct mu2 28, letter classes (neighbours) 30
+pairs: 100352
+number of selective geodesic classes per pair: [(0, 57344), (1, 43008)]
+(number of classes, dim(J1 cap I2)): [((0, 0), 57344), ((1, 1), 43008)]
+(a) holds in 860160 of 860160
+(b) holds in 3584 of 3584
+random geodesic pairs (h1, h2), selective (1->, 2->): [((False, False), 71506), ((False, True), 42748), ((True, False), 42694), ((True, True), 43052)]
+time 13.7s

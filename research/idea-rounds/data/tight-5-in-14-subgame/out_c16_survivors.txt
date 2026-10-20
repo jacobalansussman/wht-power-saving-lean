@@ -1,0 +1,29 @@
+trace check 105a: id 105  transvection -35 (table 105, -35)
+Levi orbits on the distinct radical weights of 105a: [7, 7, 28]
+dim N 56  profile 20 38 49 (Theorem M: 20, 38, 49)
+dim E = 7
+cap module dim 20
+H order 6: shapes passing hook balance AND 105a: 11  [4s]
+      arrays 1x2+3x1 | moves 1x3(T2)+2x3(T2)+1x2(T3)+3x1(T6)
+      arrays 1x2+3x1 | moves 1x6(T1)+1x3(T2)+5x1(T6)
+      arrays 1x2+3x1 | moves 2x3(T2)+1x3(T2)+1x2(T3)+3x1(T6)
+      arrays 1x2+3x1 | moves 3x3(T2)+1x2(T3)+3x1(T6)
+      arrays 1x3+1x2 | moves 1x6(T1)+1x3(T2)+1x3(T2)+1x2(T3)
+      arrays 1x3+1x2 | moves 1x6(T1)+2x3(T2)+1x2(T3)
+      arrays 1x3+1x2 | moves 2x6(T1)+2x1(T6)
+      arrays 1x3+2x1 | moves 1x3(T2)+3x3(T2)+2x1(T6)
+      arrays 1x3+2x1 | moves 2x3(T2)+2x3(T2)+2x1(T6)
+      arrays 1x3+2x1 | moves 4x3(T2)+2x1(T6)
+      arrays 2x2+1x1 | moves 1x6(T1)+1x3(T2)+2x2(T3)+1x1(T6)
+H order 8: shapes passing hook balance AND 105a: 5  [7s]
+      arrays 1x4+1x1 | moves 1x4(T2)+1x4(T2)+1x4(T2)+1x2(T4)
+      arrays 1x4+1x1 | moves 1x4(T2)+1x4(T2)+2x2(T4)+1x2(T4)
+      arrays 1x4+1x1 | moves 1x4(T2)+2x4(T2)+1x2(T4)
+      arrays 1x4+1x1 | moves 2x4(T2)+1x4(T2)+1x2(T4)
+      arrays 1x4+1x1 | moves 3x4(T2)+1x2(T4)
+H order 12: shapes passing hook balance AND 105a: 0  [12s]
+   best failing shapes (largest min 105a margin, irreducible index): [(-7.0, 0, 'arrays 1x3+2x1 | moves 1x6(T2)+2x3(T4)+2x1(T12)'), (-8.0, 0, 'arrays 5x1 | moves 1x6(T2)+1x3(T4)+5x1(T12)'), (-9.0, 0, 'arrays 1x3+2x1 | moves 1x6(T2)+2x3(T4)+2x1(T12)'), (-9.0, 0, 'arrays 1x3+2x1 | moves 1x4(T3)+3x3(T4)+1x1(T12)')]
+H order 12: shapes passing hook balance AND 105a: 0  [13s]
+H order 24: shapes passing hook balance AND 105a: 0  [31s]
+   best failing shapes (largest min 105a margin, irreducible index): [(-7.0, 3, 'arrays 1x3+2x1 | moves 1x6(T4)+2x3(T8)+2x1(T24)'), (-7.0, 3, 'arrays 1x3+2x1 | moves 1x6(T4)+2x3(T8)+2x1(T24)'), (-8.0, 3, 'arrays 1x2+3x1 | moves 1x6(T4)+1x3(T8)+1x2(T12)+3x1(T24)'), (-8.0, 3, 'arrays 1x2+3x1 | moves 1x6(T4)+1x3(T8)+1x2(T12)+3x1(T24)')]
+H order 24: shapes passing hook balance AND 105a: 0  [35s]

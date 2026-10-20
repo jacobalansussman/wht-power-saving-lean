@@ -1,0 +1,18 @@
+INSTALL B3945H: 175 new, 0 identical (skipped), from /content/work/bB-data/in/lean; hashes /content/work/bB-data/in-B3945H.sha256
+=== lightA START 18:42:37
+=== lightA END rc=0 wall=1156s maxrss_kb=1339300 19:01:53
+✔ [165/165] Built Work.XHostT.Data.S5H.P1 (12s)
+Build completed successfully (165 jobs).
+   (slot: waited 0s; heavy 2, avail 48820 MB)
+phase B LEAN_NUM_THREADS=1
+=== heavyB START 19:01:53
+=== heavyB END rc=1 wall=270s maxrss_kb=7062904 19:06:23
+✖ [9414/9419] Running Work.Mixed.RateMono
+error: no such file or directory (error code: 2)
+✖ [9415/9419] Running Work.Mixed.Rate3945HSharp
+error: Work/Mixed/Rate3945HSharp.lean: bad import 'Work.Mixed.RateMono'
+error: build failed
+- Work.Mixed.Rate3945HSharp
+error: build failed
+FAILED: phase B rc=1
+EXIT 1

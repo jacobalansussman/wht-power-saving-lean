@@ -1,0 +1,4 @@
+|G| = 46080, |F| = 3072, cosets = 15, levels [0, 1, 2], K's coset level = 2
+60 random words: violations of (Phi_0 step <= 1, Phi_1(t+1) <= Phi_0(t), monotone, Phi_1 <= Phi_0): 0
+plain schedule (2 directions per array): ok = True; (Phi_0, Phi_1) after each move: [(0, 0), (1, 0), (1, 1), (2, 1), (2, 2)]
+  end: Phi_1 = 2 (Theorem D needs W = 2); live registers hold K e_l: True

@@ -1,0 +1,6 @@
+m=3 S=[1, 2, 3, 4, 5, 6, 7] W=2: residual 1.3e-19; (a) max |E| on joined positions 6.4e-10; (b) min singular value of E_D over 31 even forms 1.55e-01; (c) max relative singular value beyond |D|-W over 32 odd forms 6.4e-10
+m=3 S=[1, 2, 4, 3, 6, 7, 5] W=2: residual 2.0e-27; (a) max |E| on joined positions 1.8e-14; (b) min singular value of E_D over 31 even forms 2.05e-01; (c) max relative singular value beyond |D|-W over 32 odd forms 1.9e-14
+m=4 S=[1, 7, 2, 11, 4, 13, 8, 14] W=2: residual 1.9e-16; (a) max |E| on joined positions 9.8e-10; (b) min singular value of E_D over 504 even forms 2.38e-01; (c) max relative singular value beyond |D|-W over 512 odd forms 9.8e-10
+m=3 S=[1, 1, 2, 2, 4, 4] W=2: residual 1.7e-25; (a) max |E| on joined positions 1.3e-13; (b) min singular value of E_D over 24 even forms 3.95e-01; (c) max relative singular value beyond |D|-W over 32 odd forms 1.9e-13
+m=4 S=[7, 11, 13, 14] W=1: residual 5.5e-24; (a) max |E| on joined positions 1.3e-13; (b) min singular value of E_D over 448 even forms 1.90e-02; (c) max relative singular value beyond |D|-W over 512 odd forms 1.3e-13
+m=3 S=[1, 2, 4] W=1: residual 5.8e-22; (a) max |E| on joined positions 4.6e-12; (b) min singular value of E_D over 24 even forms 8.45e-01; (c) max relative singular value beyond |D|-W over 32 odd forms 4.6e-12

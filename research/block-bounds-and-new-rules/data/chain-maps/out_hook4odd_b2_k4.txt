@@ -1,0 +1,5 @@
+m=4 k=4 f=5: dim W = 29120, dim N = 7280, block chi=0: N 455, out 1365
+  d1: rank on block chi=0 = 182; x16 = 2912  (columns 1s, rank 0s)
+  B2: rank on block chi=0 = 306; x16 = 4896  (columns 1s, rank 0s)
+  K: rank on block chi=0 = 420; x16 = 6720  (columns 1s, rank 8s)
+cap formula 2912; dim N 7280; hook bound (dim H - dim N) 17472; ratio bound 2.5000

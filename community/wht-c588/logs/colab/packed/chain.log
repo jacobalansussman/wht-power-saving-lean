@@ -1,0 +1,5 @@
+copy start Tue Oct 13 17:02:49 UTC 2026
+copy done 157s; chown .lake to root (a root-run Lake in a nobody-owned .lake hits git dubious-ownership and re-materialises every package)
+chown rc=0
+chain done
+EXIT 0

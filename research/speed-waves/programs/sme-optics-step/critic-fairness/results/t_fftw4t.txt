@@ -1,0 +1,175 @@
+[timing lock] waiting for timing lock 06:00:30
+[timing lock] got lock 06:02:18; load: { 85.10 82.92 57.76 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=1024 mode=fwcheck SW=64 PFD=4 col radices: 2 8 8 8
+# FFTW threads: 4
+# FFTW plans (MEASURE, time limit) took 0.6 s
+CHECK propagation step FFTW-d 2D (threads 4) vs pocketfft: max rel 6.227e-16  rel RMS 5.810e-16  PASS
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=1024 mode=step SW=64 PFD=4 col radices: 2 8 8 8
+# FFTW threads: 4
+# FFTW plans (MEASURE, time limit) took 0.0 s
+## propagation step 1024^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  SME step (rev. order)              5.1493
+rep  0  PFFFT-d rows+transp               11.9754
+rep  0  KFR-d rows+transp (rev.)          12.7136
+rep  0  FFTW-d 2D MEASURE                  3.9820
+rep  1  PFFFT-d rows+transp               12.0362
+rep  1  KFR-d rows+transp (rev.)          12.8995
+rep  1  FFTW-d 2D MEASURE                  4.4028
+rep  1  SME step (rev. order)              5.3955
+rep  2  KFR-d rows+transp (rev.)          13.0139
+rep  2  FFTW-d 2D MEASURE                  3.9366
+rep  2  SME step (rev. order)              5.1314
+rep  2  PFFFT-d rows+transp               11.9337
+rep  3  FFTW-d 2D MEASURE                  3.9483
+rep  3  SME step (rev. order)              5.1454
+rep  3  PFFFT-d rows+transp               12.0008
+rep  3  KFR-d rows+transp (rev.)          12.9744
+rep  4  SME step (rev. order)              5.1742
+rep  4  PFFFT-d rows+transp               11.9764
+rep  4  KFR-d rows+transp (rev.)          13.2283
+rep  4  FFTW-d 2D MEASURE                  4.5149
+rep  5  PFFFT-d rows+transp               11.9873
+rep  5  KFR-d rows+transp (rev.)          13.0492
+rep  5  FFTW-d 2D MEASURE                  4.0888
+rep  5  SME step (rev. order)              5.1766
+rep  6  KFR-d rows+transp (rev.)          13.1003
+rep  6  FFTW-d 2D MEASURE                  4.1556
+rep  6  SME step (rev. order)              5.1721
+rep  6  PFFFT-d rows+transp               12.0185
+rep  7  FFTW-d 2D MEASURE                  4.1657
+rep  7  SME step (rev. order)              5.4007
+rep  7  PFFFT-d rows+transp               12.3017
+rep  7  KFR-d rows+transp (rev.)          13.2318
+rep  8  SME step (rev. order)              5.2578
+rep  8  PFFFT-d rows+transp               11.9486
+rep  8  KFR-d rows+transp (rev.)          13.1399
+rep  8  FFTW-d 2D MEASURE                  4.1909
+RESULT propagation step 1024^2 c128             SME step (rev. order)        best     5.1314  median     5.1742  ns/call(ms)  (calls/rep 43)
+RESULT propagation step 1024^2 c128             PFFFT-d rows+transp          best    11.9337  median    11.9873  ns/call(ms)  (calls/rep 19)
+RESULT propagation step 1024^2 c128             KFR-d rows+transp (rev.)     best    12.7136  median    13.0492  ns/call(ms)  (calls/rep 17)
+RESULT propagation step 1024^2 c128             FFTW-d 2D MEASURE            best     3.9366  median     4.1556  ns/call(ms)  (calls/rep 51)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=1024 mode=mt SW=64 PFD=4 col radices: 2 8 8 8
+# cluster: NEON threads use KFR-d; SME takes 8 row units (8 rows each) at a time; tail 3
+CHECK cluster step (1 SME + 3 NEON) read at -n vs pocketfft: max rel 1.192e-15  PASS
+CHECK cluster step (4 NEON) read at -n vs pocketfft: max rel 6.705e-16  PASS
+## cluster propagation step 1024^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  cluster 1 SME + 3 NEON             3.5875
+rep  0  cluster 4 NEON (same plan)         4.7940
+rep  0  1 SME thread (others spin)         5.5564
+rep  1  cluster 4 NEON (same plan)         4.6500
+rep  1  1 SME thread (others spin)         5.8265
+rep  1  cluster 1 SME + 3 NEON             3.6726
+rep  2  1 SME thread (others spin)         5.6969
+rep  2  cluster 1 SME + 3 NEON             3.6803
+rep  2  cluster 4 NEON (same plan)         4.7943
+rep  3  cluster 1 SME + 3 NEON             4.1949
+rep  3  cluster 4 NEON (same plan)         4.9003
+rep  3  1 SME thread (others spin)         6.2031
+rep  4  cluster 4 NEON (same plan)         4.8501
+rep  4  1 SME thread (others spin)         6.1462
+rep  4  cluster 1 SME + 3 NEON             4.0363
+rep  5  1 SME thread (others spin)         5.9814
+rep  5  cluster 1 SME + 3 NEON             3.7563
+rep  5  cluster 4 NEON (same plan)         4.7802
+rep  6  cluster 1 SME + 3 NEON             3.8318
+rep  6  cluster 4 NEON (same plan)         4.9235
+rep  6  1 SME thread (others spin)         5.7118
+rep  7  cluster 4 NEON (same plan)         4.8470
+rep  7  1 SME thread (others spin)         5.9574
+rep  7  cluster 1 SME + 3 NEON             3.7566
+rep  8  1 SME thread (others spin)         6.3814
+rep  8  cluster 1 SME + 3 NEON             4.0235
+rep  8  cluster 4 NEON (same plan)         5.0545
+RESULT cluster propagation step 1024^2 c128     cluster 1 SME + 3 NEON       best     3.5875  median     3.7566  ns/call(ms)  (calls/rep 58)
+RESULT cluster propagation step 1024^2 c128     cluster 4 NEON (same plan)   best     4.6500  median     4.8470  ns/call(ms)  (calls/rep 45)
+RESULT cluster propagation step 1024^2 c128     1 SME thread (others spin)   best     5.5564  median     5.9574  ns/call(ms)  (calls/rep 36)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=fwcheck SW=32 PFD=4 col radices: 4 8 8 8
+# FFTW threads: 4
+# FFTW plans (MEASURE, time limit) took 2.3 s
+CHECK propagation step FFTW-d 2D (threads 4) vs pocketfft: max rel 5.930e-16  rel RMS 6.021e-16  PASS
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=step SW=16 PFD=4 col radices: 4 8 8 8
+# FFTW threads: 4
+# FFTW plans (MEASURE, time limit) took 0.0 s
+## propagation step 2048^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  SME step (rev. order)             25.5571
+rep  0  PFFFT-d rows+transp               51.8216
+rep  0  KFR-d rows+transp (rev.)          51.0710
+rep  0  FFTW-d 2D MEASURE                 20.4291
+rep  1  PFFFT-d rows+transp               51.9608
+rep  1  KFR-d rows+transp (rev.)          52.0973
+rep  1  FFTW-d 2D MEASURE                 22.1390
+rep  1  SME step (rev. order)             26.4829
+rep  2  KFR-d rows+transp (rev.)          53.3429
+rep  2  FFTW-d 2D MEASURE                 22.2226
+rep  2  SME step (rev. order)             25.5842
+rep  2  PFFFT-d rows+transp               53.6413
+rep  3  FFTW-d 2D MEASURE                 21.4322
+rep  3  SME step (rev. order)             26.7685
+rep  3  PFFFT-d rows+transp               54.9325
+rep  3  KFR-d rows+transp (rev.)          52.0850
+rep  4  SME step (rev. order)             25.4543
+rep  4  PFFFT-d rows+transp               51.8939
+rep  4  KFR-d rows+transp (rev.)          51.8428
+rep  4  FFTW-d 2D MEASURE                 19.3512
+rep  5  PFFFT-d rows+transp               51.8017
+rep  5  KFR-d rows+transp (rev.)          51.2855
+rep  5  FFTW-d 2D MEASURE                 19.6805
+rep  5  SME step (rev. order)             25.3310
+rep  6  KFR-d rows+transp (rev.)          50.6889
+rep  6  FFTW-d 2D MEASURE                 20.0880
+rep  6  SME step (rev. order)             25.6560
+rep  6  PFFFT-d rows+transp               52.3318
+rep  7  FFTW-d 2D MEASURE                 19.4065
+rep  7  SME step (rev. order)             25.8638
+rep  7  PFFFT-d rows+transp               51.8890
+rep  7  KFR-d rows+transp (rev.)          50.9444
+rep  8  SME step (rev. order)             25.5523
+rep  8  PFFFT-d rows+transp               51.9212
+rep  8  KFR-d rows+transp (rev.)          51.1350
+rep  8  FFTW-d 2D MEASURE                 21.1303
+RESULT propagation step 2048^2 c128             SME step (rev. order)        best    25.3310  median    25.5842  ns/call(ms)  (calls/rep 9)
+RESULT propagation step 2048^2 c128             PFFFT-d rows+transp          best    51.8017  median    51.9212  ns/call(ms)  (calls/rep 5)
+RESULT propagation step 2048^2 c128             KFR-d rows+transp (rev.)     best    50.6889  median    51.2855  ns/call(ms)  (calls/rep 5)
+RESULT propagation step 2048^2 c128             FFTW-d 2D MEASURE            best    19.3512  median    20.4291  ns/call(ms)  (calls/rep 11)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=mt SW=16 PFD=4 col radices: 4 8 8 8
+# cluster: NEON threads use KFR-d; SME takes 8 row units (8 rows each) at a time; tail 3
+CHECK cluster step (1 SME + 3 NEON) read at -n vs pocketfft: max rel 1.251e-15  PASS
+CHECK cluster step (4 NEON) read at -n vs pocketfft: max rel 7.866e-16  PASS
+## cluster propagation step 2048^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  cluster 1 SME + 3 NEON            14.8185
+rep  0  cluster 4 NEON (same plan)        17.5368
+rep  0  1 SME thread (others spin)        30.6455
+rep  1  cluster 4 NEON (same plan)        17.2857
+rep  1  1 SME thread (others spin)        29.4706
+rep  1  cluster 1 SME + 3 NEON            14.6901
+rep  2  1 SME thread (others spin)        29.9835
+rep  2  cluster 1 SME + 3 NEON            14.7745
+rep  2  cluster 4 NEON (same plan)        17.2408
+rep  3  cluster 1 SME + 3 NEON            14.8643
+rep  3  cluster 4 NEON (same plan)        17.4387
+rep  3  1 SME thread (others spin)        29.6746
+rep  4  cluster 4 NEON (same plan)        17.3570
+rep  4  1 SME thread (others spin)        35.9517
+rep  4  cluster 1 SME + 3 NEON            17.1706
+rep  5  1 SME thread (others spin)        45.9048
+rep  5  cluster 1 SME + 3 NEON            19.3675
+rep  5  cluster 4 NEON (same plan)        19.5659
+rep  6  cluster 1 SME + 3 NEON            15.7223
+rep  6  cluster 4 NEON (same plan)        19.5817
+rep  6  1 SME thread (others spin)        34.0265
+rep  7  cluster 4 NEON (same plan)        19.8109
+rep  7  1 SME thread (others spin)        31.9355
+rep  7  cluster 1 SME + 3 NEON            15.3947
+rep  8  1 SME thread (others spin)        34.2715
+rep  8  cluster 1 SME + 3 NEON            16.2437
+rep  8  cluster 4 NEON (same plan)        16.4058
+RESULT cluster propagation step 2048^2 c128     cluster 1 SME + 3 NEON       best    14.6901  median    15.3947  ns/call(ms)  (calls/rep 16)
+RESULT cluster propagation step 2048^2 c128     cluster 4 NEON (same plan)   best    16.4058  median    17.4387  ns/call(ms)  (calls/rep 13)
+RESULT cluster propagation step 2048^2 c128     1 SME thread (others spin)   best    29.4706  median    31.9355  ns/call(ms)  (calls/rep 8)
+T4DONE

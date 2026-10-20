@@ -1,0 +1,10 @@
+== S5D5 class 0: frames 12, degree [5], m 3, twists 120, free 10
+S5D5/c0 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+S5D5/c0 M=2 states=25 max(L1+L2)=2 (I) holds  [0.0s]
+S5D5/c0 M=3 states=463 max(L1+L2)=3 (I) holds  [0.6s]
+S5D5/c0 M=4 raw successors=36847 (I) holds goal no | M=5: 9701 states passed the filter, goal-in-one no  [2.0s]
+== S5S3 class 0: frames 20, degree [6], m 3, twists 120, free 6
+S5S3/c0 M=1 states=4 max(L1+L2)=1 (I) holds  [0.0s]
+S5S3/c0 M=2 states=48 max(L1+L2)=2 (I) holds  [0.0s]
+S5S3/c0 M=3 states=868 max(L1+L2)=3 (I) holds  [0.3s]
+S5S3/c0 M=4 raw successors=60967 (I) holds goal no | M=5: 15677 states passed the filter, goal-in-one no  [3.0s]

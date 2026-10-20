@@ -1,0 +1,3 @@
+nu(K) per row: [16] -> depth(K) >= log2 16 = 4; plain chain gives 4
+min over rows of nu(K sigma) for 2000 random monomials + Toffoli/CS: 16 - worst = 16 -> every frame B'K sigma has depth exactly 4
+9-move unit with both K-paths through one mixing move: moves = 9, live 1 = K x1: True, live 2 = K x2: True

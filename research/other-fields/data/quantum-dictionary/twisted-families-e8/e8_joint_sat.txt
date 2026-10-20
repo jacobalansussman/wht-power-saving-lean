@@ -1,0 +1,63 @@
+== e8_joint_sat.py 8 8 0,1,2
+k0 8, others 8: 117792 vars, 403743 clauses (14256 pair-forbids over 3820 pairs), built 0.2s
+SAT (1.0s)
+total 0 rank 8
+total 1 rank 8
+total 2 rank 8
+== e8_joint_sat.py 7 8 0,1,2
+k0 7, others 8: 112877 vars, 386866 clauses (14256 pair-forbids over 3820 pairs), built 0.2s
+UNSAT (0.8s)
+== e8_joint_sat.py min 8
+k0 15, others 15: 589352 vars, 2149784 clauses (165984 pair-forbids over 5768 pairs), built 1.2s
+mode min: sum over totals of (rank - 7) <= 8, i.e. cst <= 64
+SAT (40.1s)
+total 0 rank 8
+total 1 rank 8
+total 2 rank 8
+total 3 rank 8
+total 4 rank 8
+total 5 rank 8
+total 6 rank 8
+total 7 rank 8
+== e8_joint_sat.py min 7
+k0 14, others 14: 550032 vars, 2014760 clauses (165984 pair-forbids over 5768 pairs), built 1.1s
+mode min: sum over totals of (rank - 7) <= 7, i.e. cst <= 63
+UNSAT (24.8s)
+== e8_joint_sat.py min 7 --loose
+k0 14, others 14: 550032 vars, 1937480 clauses (88704 pair-forbids over 5768 pairs), built 1.4s
+mode min: sum over totals of (rank - 7) <= 7, i.e. cst <= 63
+SAT (17.0s)
+(time)  19.16s user 0.26s system 99% cpu 19.492 total
+== e8_joint_sat.py min 8 --loose
+k0 15, others 15: 589352 vars, 2072504 clauses (88704 pair-forbids over 5768 pairs), built 1.4s
+mode min: sum over totals of (rank - 7) <= 8, i.e. cst <= 64
+SAT (68.2s)
+(time)  70.44s user 0.21s system 99% cpu 1:10.68 total
+== e8_joint_sat.py min 0 --loose
+k0 7, others 7: 274792 vars, 992320 clauses (88704 pair-forbids over 5768 pairs), built 0.8s
+mode min: sum over totals of (rank - 7) <= 0, i.e. cst <= 56
+UNSAT (2.9s)
+(time)  4.19s user 0.06s system 99% cpu 4.256 total
+== e8_joint_sat.py min 4 --loose
+mode min: sum over totals of (rank - 7) <= 4, i.e. cst <= 60
+UNSAT (13.3s)
+== e8_joint_sat.py min 2 --loose
+mode min: sum over totals of (rank - 7) <= 2, i.e. cst <= 58
+UNSAT (4.0s)
+== e8_joint_sat.py min 1 --loose
+mode min: sum over totals of (rank - 7) <= 1, i.e. cst <= 57
+UNSAT (3.1s)
+== e8_joint_sat.py min 6 --loose
+mode min: sum over totals of (rank - 7) <= 6, i.e. cst <= 62
+SAT (23.9s)
+total 0 rank 8
+total 1 rank 7
+total 2 rank 8
+total 3 rank 7
+total 4 rank 8
+total 5 rank 8
+total 6 rank 8
+total 7 rank 8
+== e8_joint_sat.py min 5 --loose
+mode min: sum over totals of (rank - 7) <= 5, i.e. cst <= 61
+UNSAT (13.8s)

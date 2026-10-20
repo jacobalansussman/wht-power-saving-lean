@@ -1,0 +1,12 @@
+m=3: 7 rank-ones in a space of dim 6; rank of all = 6
+  dependency space dimension 1 (expected 2^m - 1 - m(m+1)/2 = 1)
+  weight distribution of the dependencies: {7: 1}
+  minimum dependency size 7; minimum words: {'3-subspace': 1, 'other': 0} (number of 3-dim subspaces of F_2^3: 1)
+m=4: 15 rank-ones in a space of dim 10; rank of all = 10
+  dependency space dimension 5 (expected 2^m - 1 - m(m+1)/2 = 5)
+  weight distribution of the dependencies: {7: 15, 8: 15, 15: 1}
+  minimum dependency size 7; minimum words: {'3-subspace': 15, 'other': 0} (number of 3-dim subspaces of F_2^4: 15)
+m=5: 31 rank-ones in a space of dim 15; rank of all = 15
+  dependency space dimension 16 (expected 2^m - 1 - m(m+1)/2 = 16)
+  weight distribution of the dependencies: {7: 155, 8: 465, 11: 5208, 12: 8680, 15: 18259, 16: 18259, 19: 8680, 20: 5208, 23: 465, 24: 155, 31: 1}
+  minimum dependency size 7; minimum words: {'3-subspace': 155, 'other': 0} (number of 3-dim subspaces of F_2^5: 155)

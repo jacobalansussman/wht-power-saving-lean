@@ -1,0 +1,32 @@
+alpha3 config {'CAP': 20000, 'TRUNC': 1, 'FIFO': 1, 'LMMAX': 1500, 'NORM': 'all', 'OLDPEEL': 0, 'PROG': 10000, 'MODPMAX': 400000000.0} argv ['1303', '42', '24', '3', '3', 'orbitCYZ', '0', '0', '543', '8'] PYTHONHASHSEED=0
+seed 1303 mode orbitCYZ 2-in-8: config {'profA': (4, 2), 'profB': (2, 4), 'lam': (3, 3), 'Ya': (3, 3, False, False), 'Yb': (3, 1, False, False)} (0s)
+  orbit sigma: order 15 fixes A1,A2 False; rejections {'dead': 710, 'ord': 228, 'notcycle': 5, 'alive': {(0, 'a'): [(1, 2, 'non')], (0, 'b'): [(14, 4, 'non')], (1, 'b'): [(14, 3, 'non')]}}
+  orbit x1: 15 injections
+  orbit x2: 15 injections
+     peel2 out 1 d=5: created 1, killed 0, live 1, rows 0 (all rows of live cols 0), incomplete rows 0, class live 1 of 1, seeds live 1, unconstrained cols 1 (class 1), requeued 0 (3s)
+     peel2 out 2 d=5: created 1, killed 0, live 1, rows 0 (all rows of live cols 0), incomplete rows 0, class live 1 of 1, seeds live 1, unconstrained cols 1 (class 1), requeued 0 (3s)
+     out 1: 0 rows, 1 cols (1 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     out 2: 0 rows, 1 cols (1 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     modp out 1 d=5 norm=all complete: 1 x 1, rank A 1, rank [A|e] 1 -> CONSISTENT at random alpha (0s)
+     modp out 2 d=5 norm=all complete: 1 x 1, rank A 1, rank [A|e] 1 -> CONSISTENT at random alpha (0s)
+     LM (dense, special alpha): residual 1.756e-31
+  d=5 round 0: injections 30, closures [(0, 1, 1), (0, 1, 1)], residual 1.756e-31 (4s)
+     peel2 out 1 d=4: created 4, killed 0, live 4, rows 60 (all rows of live cols 60), incomplete rows 0, class live 2 of 2, seeds live 1, unconstrained cols 0 (class 0), requeued 0 (4s)
+     peel2 out 2 d=4: created 4, killed 0, live 4, rows 60 (all rows of live cols 60), incomplete rows 0, class live 2 of 2, seeds live 1, unconstrained cols 0 (class 0), requeued 0 (4s)
+     out 1: 60 rows, 4 cols (2 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     out 2: 60 rows, 4 cols (2 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     V4: not handled (out 1: 4 columns (need 2 with one seed)); falling back to jd2
+     modp out 1 d=4 norm=all complete: 61 x 4, rank A 4, rank [A|e] 5 -> INCONSISTENT at random alpha (0s)
+     modp out 2 d=4 norm=all complete: 61 x 4, rank A 4, rank [A|e] 5 -> INCONSISTENT at random alpha (0s)
+     LM (dense, special alpha): residual 1.959e-25
+  d=4 round 0: injections 30, closures [(60, 4, 2), (60, 4, 2)], residual 1.959e-25 (4s)
+     peel2 out 1 d=3: created 3, killed 11, live 0, rows 0 (all rows of live cols 0), incomplete rows 0, class live 0 of 1, seeds live 0, unconstrained cols 0 (class 0), requeued 0 (4s)
+     peel2 out 2 d=3: created 10, killed 17, live 2, rows 31 (all rows of live cols 31), incomplete rows 0, class live 0 of 1, seeds live 0, unconstrained cols 0 (class 0), requeued 0 (5s)
+     out 1: 0 rows, 0 cols (0 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     out 2: 31 rows, 2 cols (0 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     modp out 1 d=3 norm=all complete: 1 x 0, rank A 0, rank [A|e] 0 -> INCONSISTENT at random alpha (0s)
+     modp out 2 d=3 norm=all complete: 32 x 2, rank A 1, rank [A|e] 2 -> INCONSISTENT at random alpha (0s)
+     LM (dense, special alpha): residual 2.000e+00
+  d=3 round 0: injections 30, closures [(0, 0, 0), (31, 2, 0)], residual 2.000e+00 (5s)
+STOP at d=3 (residual 2.000e+00)
+result ('stop', 3) (5s) stats {'zl_score_x1': (0, 1), 'zl_score_x2': (0, 1)}

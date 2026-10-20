@@ -1,0 +1,7 @@
+Shea's base (52394849): 448 files; package/u8x0hq overlay: 257; package/lever overlay: 405
+checked tree (Colab C4, /content/work/i-final/T/lean/complex588, no .lake): 1110 files
+package files that would replace a file laid before them: u8x0hq 0, lever 0
+only in the checked tree: []
+only in base + packages: []
+different bytes: ['lakefile.lean']  (lakefile.lean: the same two library lines that apply-overlay.sh appends; the checked tree has comment lines above them)
+RESULT: EQUAL except lakefile.lean

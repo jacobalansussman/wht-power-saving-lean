@@ -1,0 +1,10 @@
+3-cycle -fixed cell [0, 15, 23, 24] ...: trace of 3-cycle (2-0j)  trace of (01) (-8-0j)
+3-cycle -fixed cell [0, 7, 24, 31] ...: trace of 3-cycle (2-0j)  trace of (01) (-8-0j)
+(01) -fixed cell [0, 11, 19, 24] ...: trace of 3-cycle None  trace of (01) (-8-0j)
+(01) -fixed cell [0, 8, 16, 24] ...: trace of 3-cycle None  trace of (01) (-8-0j)
+(01) -fixed cell [0, 15, 23, 24] ...: trace of 3-cycle (2-0j)  trace of (01) (-8-0j)
+(01) -fixed cell [0, 4, 8, 12] ...: trace of 3-cycle None  trace of (01) (-8+0j)
+(01) -fixed cell [0, 7, 24, 31] ...: trace of 3-cycle (2-0j)  trace of (01) (-8-0j)
+(01) -fixed cell [0, 3, 24, 27] ...: trace of 3-cycle None  trace of (01) (-8-0j)
+f = 1: max |tau_h(m x) - c_h (m x)| over h = 1..6 on random raw arrays: 0.00e+00
+f = 2: max |tau_h(m x) - c_h (m x)| over h = 1..6 on random raw arrays: 8.88e-16

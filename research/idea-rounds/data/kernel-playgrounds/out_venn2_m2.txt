@@ -1,0 +1,14 @@
+H m=2 a=1 b=1: best ratio 1.5000 S=(1,) cap=2 dem=3 dimY=4
+H m=2 a=1 b=2: best ratio 2.0000 S=(1,) cap=4 dem=8 dimY=12
+H m=2 a=1 b=3: best ratio 1.5000 S=(1,) cap=2 dem=3 dimY=12
+H m=2 a=2 b=2: best ratio 1.6667 S=(2,) cap=3 dem=5 dimY=6
+H m=2 a=2 b=3: best ratio 2.0000 S=(2,) cap=4 dem=8 dimY=12
+H m=2 a=3 b=3: best ratio 1.5000 S=(3,) cap=2 dem=3 dimY=4
+== H m=2: top 5: [(2.0, 2, 3, (2,), 4, 8, 12), (2.0, 2, 3, (1,), 4, 8, 12), (2.0, 1, 2, (1,), 4, 8, 12), (2.0, 1, 2, (0,), 4, 8, 12), (1.6667, 2, 2, (2,), 3, 5, 6)]
+L m=2 a=1 b=1: best ratio 1.5000 S=(1,) cap=2 dem=3 dimY=4
+L m=2 a=1 b=2: best ratio 1.7500 S=(1,) cap=4 dem=7 dimY=12
+L m=2 a=1 b=3: best ratio 1.5000 S=(1,) cap=2 dem=3 dimY=12
+L m=2 a=2 b=2: best ratio 1.6667 S=(1, 2) cap=3 dem=5 dimY=30
+L m=2 a=2 b=3: best ratio 1.7500 S=(2,) cap=4 dem=7 dimY=12
+L m=2 a=3 b=3: best ratio 1.5000 S=(3,) cap=2 dem=3 dimY=4
+== L m=2: top 5: [(1.75, 2, 3, (2,), 4, 7, 12), (1.75, 2, 3, (1,), 4, 7, 12), (1.75, 1, 2, (1,), 4, 7, 12), (1.75, 1, 2, (0,), 4, 7, 12), (1.6667, 2, 2, (1, 2), 3, 5, 30)]

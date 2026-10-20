@@ -1,0 +1,12 @@
+L=2 done: 9 runs, 0 bad, 2 units, 0 s
+L=3 done: 2115 runs, 0 bad, 224 units, 1 s
+L=4 done: 330651 runs, 0 bad, 15144 units, 149 s
+alphabet: 3 moves, 78 other letters; runs 330651; identity violations 0; units 15144
+  M=2 coherent         P=0 B=0 : 14584 units
+  M=2 same-input split P=0 B=0 : 560 units
+  incoherent example: {'word': "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1, None)])]", 'M': 2, 'P': 0, 'B': 0, 'D': 0, 'Z': 0, 'coherence': 'same-input split'}
+  incoherent example: {'word': "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1, None)])]", 'M': 2, 'P': 0, 'B': 0, 'D': 0, 'Z': 0, 'coherence': 'same-input split'}
+  incoherent example: {'word': "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)])]", 'M': 2, 'P': 0, 'B': 0, 'D': 0, 'Z': 0, 'coherence': 'same-input split'}
+  incoherent example: {'word': "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)])]", 'M': 2, 'P': 0, 'B': 0, 'D': 0, 'Z': 0, 'coherence': 'same-input split'}
+  incoherent example: {'word': "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, -2, None), (1, 1, None)])]", 'M': 2, 'P': 0, 'B': 0, 'D': 0, 'Z': 0, 'coherence': 'same-input split'}
+  incoherent example: {'word': "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)])]", 'M': 2, 'P': 0, 'B': 0, 'D': 0, 'Z': 0, 'coherence': 'same-input split'}

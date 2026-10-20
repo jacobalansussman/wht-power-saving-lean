@@ -1,0 +1,15 @@
+W 8 burnside 50895
+W 9 burnside 130065
+W 10 burnside 286155
+W10 s10 lines 286155 distinct orbits 286155 burnside 286155 verdicts {'X': 248363, 'D': 35732, 'P': 2060}
+W10 s10y lines 2060 distinct orbits 2060 burnside 286155 verdicts {'Y': 2060}
+  s10 P == s10y set: True s10y all Y: {'Y'}
+W9 s9y lines 130065 distinct orbits 130065 burnside 130065 verdicts {'Y': 127501, 'D': 2288, 'P': 276}
+W9 q9 lines 276 distinct orbits 276 burnside 130065 verdicts {'C': 276}
+  s9y P == q9 set: True q9 verdicts: {'C'}
+W8 all8 lines 50895 distinct orbits 50895 burnside 50895 verdicts {'Z': 5361, 'M': 33767, 'C': 10098, 'P': 1669}
+  all8 lines found verbatim in q8* outputs: 50895 of 50895
+W8 deep* lines 1669 distinct orbits 1669 burnside 50895 verdicts {'P': 1266, 'M': 326, 'C': 77}
+  all8 P == deep set: True
+  deep P == surv8_final: True 1266 1266
+8a verdict C mirror(-k) verdict M mirror in final survivors: False

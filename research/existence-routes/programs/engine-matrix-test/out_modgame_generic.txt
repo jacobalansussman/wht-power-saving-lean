@@ -1,0 +1,21 @@
+column-module game m=3 W=2 M=6 (frames 135, target needs dim >= 128): generic choices: dims [2, 16, 85, 204, 268, 269, 270], distance of targets to V_M = 1.54e-15 TARGETS REACHED [0.8s]
+column-module game m=3 W=2 M=5 (frames 135, target needs dim >= 128): generic choices: dims [2, 16, 85, 204, 268, 269], distance of targets to V_M = 5.32e-02  [0.7s]
+column-module game m=3 W=2 M=4 (frames 135, target needs dim >= 128): generic choices: dims [2, 16, 85, 204, 268], distance of targets to V_M = 1.25e-01  [0.6s]
+Traceback (most recent call last):
+  File "modgame.py", line 76, in <module>
+    (res, dims), n = run(m, W, M, rs)
+  File "modgame.py", line 69, in run
+    res, dims, V = play(coefs)
+  File "modgame.py", line 60, in play
+    V = closure(np.hstack([V, w[:, None]]), gens, n, W)
+  File "modgame.py", line 34, in closure
+    B2 = orth(new, tol)
+  File "modgame.py", line 40, in orth
+    U, s, _ = np.linalg.svd(X, full_matrices=False)
+  File "numpy/linalg/_linalg.py", line 1796, in svd
+    u, s, vh = gufunc(a, signature=signature)
+  File "numpy/linalg/_linalg.py", line 113, in _raise_linalgerror_svd_nonconvergence
+    raise LinAlgError("SVD did not converge")
+numpy.linalg.LinAlgError: SVD did not converge
+column-module game m=3 W=3 M=8 (frames 135, target needs dim >= 192): generic choices: dims [3, 17, 86, 218, 337, 401, 402, 403, 404], distance of targets to V_M = 7.35e-02  [2.8s]
+column-module game m=3 W=3 M=7 (frames 135, target needs dim >= 192): generic choices: dims [3, 17, 86, 218, 337, 401, 402, 403], distance of targets to V_M = 1.01e-01  [2.5s]

@@ -1,0 +1,15 @@
+h=6 stage 1 (forward X->Y): invocation exact; edge classes vs oa_ledger lists: all match
+h=6 stage 2 (inverse Y->X): invocation exact; edge classes vs oa_ledger lists: all match
+h=6 stage 3 (forward X->Y): invocation exact; edge classes vs oa_ledger lists: all match
+h=6 after three stages (X, Y) = (-y, x): True
+PASS
+h=7 stage 1 (forward X->Y): invocation exact; edge classes vs oa_ledger lists: all match
+h=7 stage 2 (inverse Y->X): invocation exact; edge classes vs oa_ledger lists: all match
+h=7 stage 3 (forward X->Y): invocation exact; edge classes vs oa_ledger lists: all match
+h=7 after three stages (X, Y) = (-y, x): True
+PASS
+h=8 stage 1 (forward X->Y): invocation exact; edge classes vs oa_ledger lists: all match
+h=8 stage 2 (inverse Y->X): invocation exact; edge classes vs oa_ledger lists: all match
+h=8 stage 3 (forward X->Y): invocation exact; edge classes vs oa_ledger lists: all match
+h=8 after three stages (X, Y) = (-y, x): True
+PASS

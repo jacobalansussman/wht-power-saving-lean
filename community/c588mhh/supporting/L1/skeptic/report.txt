@@ -1,0 +1,43 @@
+The written verdict of the independent agent (a skeptic) that ran this check, as it returned it, with home-folder
+paths shortened. Agent labels in it (c-base, m-build, m-gen, x-mutable, h-L1, h-L2, h-L3-build) are the names
+of the agents whose work it checked.
+
+I could not refute the claim. Every checkable part of it held up.
+
+**1. It compiles from my own clean copy.** I built it in <verify>/checks/wht43/bound-check/v-host-0/proj, with my own build script (v-host-0/mk.sh) running through locked.sh one module at a time. I copied Work/Gauge/Defs.lean directly from Shea's tree, not h-L1's vendored copy. Its sha256 is c5423488…, at commit 0e61af6.
+- Defs: exit 0, 65 s, peak footprint 0.93 GB.
+- XHost/L1.lean: exit 0, 3 s, peak footprint 0.92 GB.
+- The "peak memory" figure is macOS's peak footprint. The maximum resident set size reads about 6.0 GB, mostly mapped .olean files, and the sentinel did not intervene.
+- Every #print axioms in L1 lists only [propext, Classical.choice, Quot.sound].
+- grep finds no sorry, admit, native_decide or axiom in L1.lean or Defs.lean, apart from the words "No `sorry`" in the doc comments. It also finds no unsafe, implemented_by or debug options. The log has 0 warnings.
+- L1.lean is 262 lines, as claimed, and identical to h-L1's clean/proj copy.
+
+**2. The imported engine is the same as Shea's.** I traced the import closure of Work.GCert.Chain.InvThm and Work.GFrame.Labels.ConjB: 98 Work modules. Each is byte-identical between our ~/misc/fft/verify/Work and Shea's complex588 tree. None of our .olean files is older than its source. So L1 was proved against the same definitions the #588 network uses, and it should compile unchanged inside Shea's tree on the Colab. I did not test that on the Colab.
+
+**3. The statements are the plan's, not weaker ones.** `#check` of `ginvE_slot_residual` gives exactly the plan's L1:
+- for every `I : GInvE`, every `W : GWin` and every slot q, there are Cm, Cm' and `z : Fin (card H - dim (ent q)) → Space`;
+- with `Free Cm`, `Free Cm'`, `Cm'*Cm = 1`, `Cm*Cm' = 1` and z linearly independent;
+- each `z i = eu k` for some `k ∈ liftS univ \ liftS (ent q).s`;
+- and `W.X.Φ (ent q).top = Cm * blockMat z * Cm' * W.X.Φ (ent q)`.
+- `Free` is a real inductive predicate (Work/GFrame/Engine/Free.lean), not trivially true.
+- The network uses GInvE: Bridge401/GNetDef, GNetStage, End and others.
+
+**4. It applies to the network windows by name.** The claim left this link as optional, so I wrote and compiled it myself: v-host-0/proj/XHostTest/Tie.lean, theorem `gwinB_L1`. Exit 0, 12 s, same three axioms. It states L1 for `gwinB hB hH d qq` with z injective and each `z i = eu (Sum.inl k)`, k ∉ (ent q).s, which is the plan's "images of the missing label coordinates". gwinC defines its window X with the same `BXMap.ofConj` (I read Bridge377/WinC.lean), but Bridge377 is not built on the Mac, so I did not compile that case.
+
+**5. "Already in Shea's tree" is true.** I read the sources:
+- Work/Bridge401/Sched.lean has `entW_spec : X.Φ U.top = entW X U * X.Φ U`, where `entW = kg G' * pk(liftS univ \ liftS s) * kg G'⁻¹`, and `entW_form`.
+- Work/Bank401/Adapt.lean has `gauged_step` and `gauged_Wn`.
+- All of them are a few lines on top of `core_nested`, as is h-L1's `slot_residual`.
+
+The "main open mathematical point" was therefore essentially done already. h-L1 added the blockMat form with C'C = 1, the identification of the directions, the forward/backward GInvE routes and the uniqueness of Wn.
+
+**6. The figures and numeric checks match.** 1.6360855e-3 and 1.5785076e-3 match LADDER.md (lines 16, 26 and 84), and the claim correctly calls them what-ifs, not Lean-checked. The numeric logs agree with the claim: 98 instances, 504 of 510 controls failed as they should (the 6 exceptions are all at |H| = 2), and the seam check passed 18 of 18. I reran seam_check.py from my own copy (v-host-0/toy, through heavy.sh): all_pass true, 26 runs, ALL SEAM CHECKS PASS.
+
+**Caveats, none of which refutes the claim:**
+- L1 being easy does not shorten L3: the generator, about 3,000 generated lines and the checker of about 44,000 host-table entries. Nor does it shorten L4, the instance build. The claim does not estimate their time.
+- h-L2's modules were not rebuilt by h-L1, and not by me either.
+- Nothing has been built on the Colab yet.
+
+**My files** are in <verify>/checks/wht43/bound-check/v-host-0/: proj/ (the clean copy), mk.sh, proj/XHostTest/Tie.lean, logs/ (Work_Gauge_Defs.log, XHost_L1.log, XHostTest_Tie.log, seam_check.log) and toy/.
+
+**To redo it:** `cd v-host-0/proj && ../mk.sh Work/Gauge/Defs.lean 600 >/dev/null 2>&1; ../mk.sh XHost/L1.lean 900 >/dev/null 2>&1; ../mk.sh XHostTest/Tie.lean 600 >/dev/null 2>&1`.

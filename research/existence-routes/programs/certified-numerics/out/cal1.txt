@@ -1,0 +1,286 @@
+=== b4_2in7_border.json  n=13 N=36  nalpha=4  LM best |F|^2=1.909e-06  max|x|=361
+   dual certificate (degree 0) from the near miss: False
+   certified exclusion box around the near miss: half-width 0.0001220703125 (row 27)
+   NulLA degree 0 (exact over Q): False  [matrix 55 x 36, rank 30 / 31, 0.0s]
+   NulLA degree 1 (exact over Q): True  [matrix 578 x 504, rank 381 / 381, 1.5s]
+   time 97.1s
+=== cal_b3_2in5_s0.json  n=10 N=26  nalpha=3  LM best |F|^2=5.000e-01  max|x|=485
+   dual certificate (degree 0) from the near miss: False
+   certified exclusion box around the near miss: half-width 0.001953125 (dual combination y.F (mean-value form))
+   NulLA degree 0 (exact over Q): True  [matrix 27 x 26, rank 19 / 19, 0.0s]
+   time 82.0s
+=== cal_b3_2in5_s2.json  n=10 N=24  nalpha=3  LM best |F|^2=3.333e-01  max|x|=4.33
+   dual certificate (degree 0) from the near miss: False
+   certified exclusion box around the near miss: half-width 0.03125 (dual combination y.F (mean-value form))
+   NulLA degree 0 (exact over Q): True  [matrix 27 x 24, rank 19 / 19, 0.0s]
+   time 72.0s
+=== cal_b3_2in5_s4.json  n=10 N=30  nalpha=3  LM best |F|^2=5.000e-01  max|x|=1.56
+   dual certificate (degree 0) from the near miss: True  constant=(Fraction(1, 1), Fraction(0, 1)), support 2 rows
+   certified exclusion box around the near miss: half-width 0.25 (dual combination y.F (mean-value form))
+   NulLA degree 0 (exact over Q): True  [matrix 27 x 30, rank 19 / 19, 0.0s]
+   time 6.8s
+=== cal_b3_2in5_s5.json  n=9 N=18  nalpha=3  LM best |F|^2=5.000e-01  max|x|=2.68
+   dual certificate (degree 0) from the near miss: True  constant=(Fraction(1, 1), Fraction(0, 1)), support 2 rows
+   certified exclusion box around the near miss: half-width 0.125 (dual combination y.F (mean-value form))
+   NulLA degree 0 (exact over Q): True  [matrix 19 x 18, rank 13 / 13, 0.0s]
+   time 5.1s
+=== cal_b3_2in5_s6.json  n=10 N=28  nalpha=3  LM best |F|^2=3.333e-01  max|x|=1.09
+   dual certificate (degree 0) from the near miss: True  constant=(Fraction(1, 1), Fraction(0, 1)), support 3 rows
+   certified exclusion box around the near miss: half-width 0.125 (dual combination y.F (mean-value form))
+   NulLA degree 0 (exact over Q): True  [matrix 27 x 28, rank 19 / 19, 0.0s]
+   time 9.6s
+=== cal_b3_2in5_s7.json  n=10 N=24  nalpha=3  LM best |F|^2=3.333e-01  max|x|=1
+   dual certificate (degree 0) from the near miss: True  constant=(Fraction(1, 1), Fraction(0, 1)), support 3 rows
+   certified exclusion box around the near miss: half-width 0.125 (row 16)
+   NulLA degree 0 (exact over Q): True  [matrix 27 x 24, rank 19 / 19, 0.0s]
+   time 7.4s
+=== cal_plain3_s0.json  n=15 N=24  nalpha=3  LM best |F|^2=6.695e-31  max|x|=2.26
+   rank: 12
+   sv_gap: (0.22457311726978987, 9.598670286795439e-17)
+   square: (12, 12)
+   fixed: {'x0': ('3/32', '-43/64'), 'x1': ('-85/64', '117/64'), 'x2': ('41/64', '-13/16')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 12
+   leftover_max_abs_upper: 5.480588732554445e-107
+   exact_candidate_maxden: 128002382622479313770654991431205
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('3/32', '-43/64'), 'x1': ('-85/64', '117/64'), 'x2': ('41/64', '-13/16'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('42753572866331827645733245288448/128002382622479313770654991431205', '55960251349422593150399750864896/128002382622479313770654991431205'), 'x13': ('28655157082926989467282454478848/128002382622479313770654991431205', '-23875166984000218706289148166144/128002382622479313770654991431205'), 'x14': ('-49707314066042281024483451994112/128002382622479313770654991431205', '-51809247661887602486666470621184/128002382622479313770654991431205')}
+   time 0.5s
+=== cal_plain3_s1.json  n=15 N=24  nalpha=3  LM best |F|^2=1.159e-30  max|x|=1.53
+   rank: 12
+   sv_gap: (0.11127147192557174, 4.032580665544882e-17)
+   square: (12, 12)
+   fixed: {'x0': ('-1/16', '43/32'), 'x1': ('-1/16', '19/16'), 'x2': ('-35/32', '-1/16')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 12
+   leftover_max_abs_upper: 5.225063794311039e-107
+   exact_candidate_maxden: 11016540354656150082926261
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('-1/16', '43/32'), 'x1': ('-1/16', '19/16'), 'x2': ('-35/32', '-1/16'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('13177873748771073460666368/11016540354656150082926261', '10942257235368556951764992/11016540354656150082926261'), 'x13': ('6391918405838850930507776/11016540354656150082926261', '10410934901730272542982144/11016540354656150082926261'), 'x14': ('10863376889590283957198848/11016540354656150082926261', '3736288204919524088406016/11016540354656150082926261')}
+   time 0.6s
+=== cal_plain3_s2.json  n=15 N=30  nalpha=3  LM best |F|^2=1.164e-29  max|x|=3.65
+   rank: 13
+   sv_gap: (0.03731869171176712, 9.702437470770697e-18)
+   square: (13, 13)
+   fixed: {'x0': ('87/64', '-2'), 'x2': ('-7/8', '-1/32')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 17
+   leftover_max_abs_upper: 1.697939314945909e-60
+   exact_candidate_maxden: 11914934713265
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('87/64', '-2'), 'x1': ('0', '0'), 'x2': ('-7/8', '-1/32'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('-7022573518848/11914934713265', '-3430940672/700878512545'), 'x13': ('14796130148352/11914934713265', '38310766852096/11914934713265'), 'x14': ('9662962860032/11914934713265', '-13965860143104/11914934713265')}
+   time 0.4s
+=== cal_plain3_s3.json  n=15 N=21  nalpha=3  LM best |F|^2=1.479e-30  max|x|=2.98
+   rank: 12
+   sv_gap: (0.09623114160706568, 4.1456620685711504e-17)
+   square: (12, 12)
+   fixed: {'x0': ('-1', '-39/32'), 'x1': ('5/8', '-31/64'), 'x2': ('-7/8', '9/64')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 9
+   leftover_max_abs_upper: 3.302623860099481e-107
+   exact_candidate_maxden: 1814422649250322699965
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('-1', '-39/32'), 'x1': ('5/8', '-31/64'), 'x2': ('-7/8', '9/64'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('2506327897705080160256/1814422649250322699965', '1017523598592497549312/1814422649250322699965'), 'x13': ('-806529459785077620736/1814422649250322699965', '5386655107525281579008/1814422649250322699965'), 'x14': ('757000064518307446784/1814422649250322699965', '-2436877636046612856832/1814422649250322699965')}
+   time 0.2s
+=== cal_plain3_s4.json  n=15 N=18  nalpha=3  LM best |F|^2=5.374e-30  max|x|=2.34
+   rank: 12
+   sv_gap: (0.004646322749519631, 1.5709927416374758e-17)
+   square: (12, 12)
+   fixed: {'x0': ('15/16', '137/64'), 'x1': ('31/64', '57/64'), 'x2': ('-73/64', '-3/32')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 6
+   leftover_max_abs_upper: 2.1651169112248496e-105
+   exact_candidate_maxden: 6796029616007409233127511515
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('15/16', '137/64'), 'x1': ('31/64', '57/64'), 'x2': ('-73/64', '-3/32'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('9230250565864917210912391168/6796029616007409233127511515', '-8112527911820512823895261184/6796029616007409233127511515'), 'x13': ('-990574904077985233485430784/522771508923646864086731655', '1329396320843798702106607616/6796029616007409233127511515'), 'x14': ('6726735261108683178149675008/6796029616007409233127511515', '14215793886499037428859273216/6796029616007409233127511515')}
+   time 0.2s
+=== cal_plain3_s5.json  n=15 N=21  nalpha=3  LM best |F|^2=6.163e-31  max|x|=1.91
+   rank: 12
+   sv_gap: (0.08688756478749574, 2.4917833024880426e-17)
+   square: (12, 12)
+   fixed: {'x0': ('121/64', '-15/64'), 'x1': ('51/64', '-61/64'), 'x2': ('45/64', '61/64')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 9
+   leftover_max_abs_upper: 1.768981519686632e-106
+   exact_candidate_maxden: 4809589170519333284360965
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('121/64', '-15/64'), 'x1': ('51/64', '-61/64'), 'x2': ('45/64', '61/64'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('-338979692609221666275328/961917834103866656872193', '-1265341069117287968014336/4809589170519333284360965'), 'x13': ('513833195932933605621760/961917834103866656872193', '-851118088347358155964416/4809589170519333284360965'), 'x14': ('-91443390839787454726144/961917834103866656872193', '2140839765712308004716544/4809589170519333284360965')}
+   time 0.4s
+=== cal_plain4F_s0.json  n=14 N=20  nalpha=4  LM best |F|^2=3.944e-31  max|x|=2.99
+   rank: 11
+   sv_gap: (0.0234541687829996, 6.983112654558524e-18)
+   square: (11, 11)
+   fixed: {'x0': ('31/32', '1/8'), 'x1': ('-35/32', '3/32'), 'x3': ('3/16', '5/16')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 9
+   leftover_max_abs_upper: 4.0090073140498206e-60
+   exact_candidate_maxden: 8556910716315
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('31/32', '1/8'), 'x1': ('-35/32', '3/32'), 'x2': ('0', '0'), 'x3': ('3/16', '5/16'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('-8885052964864/8556910716315', '-7972278788096/2852303572105'), 'x13': ('-14933540798464/8556910716315', '3992386207744/2852303572105')}
+   time 0.5s
+=== cal_plain4F_s1.json  n=14 N=20  nalpha=4  LM best |F|^2=1.822e-06  max|x|=741
+   dual certificate (degree 0) from the near miss: False
+   certified exclusion box around the near miss: half-width 3.0517578125e-05 (row 16)
+   NulLA degree 0 (exact over Q): False  [matrix 63 x 20, rank 20 / 21, 0.0s]
+   NulLA degree 1 (exact over Q): True  [matrix 702 x 300, rank 270 / 270, 1.7s]
+   time 72.7s
+=== cal_plain4F_s2.json  n=14 N=16  nalpha=4  LM best |F|^2=2.944e-29  max|x|=2.84
+   rank: 10
+   sv_gap: (0.0923570321651732, 7.376753805062998e-17)
+   square: (10, 10)
+   fixed: {'x0': ('-67/64', '31/64'), 'x1': ('11/8', '1/8'), 'x2': ('-177/64', '41/64'), 'x3': ('21/16', '-7/64')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 6
+   leftover_max_abs_upper: 5.346108884660688e-107
+   exact_candidate_maxden: 3332158048233659125
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('-67/64', '31/64'), 'x1': ('11/8', '1/8'), 'x2': ('-177/64', '41/64'), 'x3': ('21/16', '-7/64'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('2587197835837964288/3332158048233659125', '2128132141459439616/3332158048233659125'), 'x13': ('-2748611173287985152/3332158048233659125', '-1485991855064612864/3332158048233659125')}
+   time 0.3s
+=== cal_plain4F_s3.json  n=14 N=18  nalpha=4  LM best |F|^2=1.524e-30  max|x|=2.79
+   rank: 11
+   sv_gap: (0.008314712946668214, 2.5865594637094435e-17)
+   square: (11, 11)
+   fixed: {'x0': ('9/32', '-3/16'), 'x2': ('63/64', '-5/64'), 'x3': ('-89/32', '-13/64')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 7
+   leftover_max_abs_upper: 5.700050747772547e-58
+   exact_candidate_maxden: 15752345250535673845
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('9/32', '-3/16'), 'x1': ('-63/64', '5/64'), 'x2': ('63/64', '-5/64'), 'x3': ('-89/32', '-13/64'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('-4413735333938593792/15752345250535673845', '38326067832337465344/15752345250535673845'), 'x13': ('-1392734020814503936/3150469050107134769', '604588544647757824/3150469050107134769')}
+   time 0.5s
+=== cal_plain4F_s4.json  n=14 N=26  nalpha=4  LM best |F|^2=4.439e-31  max|x|=3.72
+   rank: 12
+   sv_gap: (0.01799310973385017, 9.6417938859214e-18)
+   square: (12, 12)
+   fixed: {'x0': ('-69/64', '5/64'), 'x1': ('29/32', '-3/64')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 14
+   leftover_max_abs_upper: 1.1776535525359613e-60
+   exact_candidate_maxden: 1978609515
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('-69/64', '5/64'), 'x1': ('29/32', '-3/64'), 'x2': ('0', '0'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('895031296/1978609515', '-1758963712/659536505'), 'x13': ('-7370702848/1978609515', '-508428288/659536505')}
+   time 0.6s
+=== cal_plain4F_s5.json  n=14 N=22  nalpha=4  LM best |F|^2=7.210e-30  max|x|=3.68
+   rank: 11
+   sv_gap: (0.001977724137211929, 6.019064833674353e-18)
+   square: (11, 11)
+   fixed: {'x0': ('-65/64', '1/32'), 'x1': ('33/32', '-1/64'), 'x3': ('7/8', '-45/16')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 11
+   leftover_max_abs_upper: 7.125615403537571e-61
+   exact_candidate_maxden: 274284216375
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('-65/64', '1/32'), 'x1': ('33/32', '-1/64'), 'x2': ('0', '0'), 'x3': ('7/8', '-45/16'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('0', '0'), 'x12': ('116672954368/91428072125', '78488010752/274284216375'), 'x13': ('17296719872/21098785875', '-82061164544/21098785875')}
+   time 0.6s
+=== cal_plain4P_s0.json  n=13 N=34  nalpha=3  LM best |F|^2=1.793e-30  max|x|=1.46
+   rank: 11
+   sv_gap: (0.25277155952121483, 1.3935942646071933e-16)
+   square: (11, 11)
+   fixed: {'x0': ('13/16', '-39/32'), 'x2': ('27/64', '-7/64')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 23
+   leftover_max_abs_upper: 2.162470079031564e-59
+   exact_candidate_maxden: 581315
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('13/16', '-39/32'), 'x1': ('0', '0'), 'x2': ('27/64', '-7/64'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('146432/581315', '115712/581315'), 'x12': ('0', '0')}
+   time 0.5s
+=== cal_plain4P_s1.json  n=13 N=38  nalpha=3  LM best |F|^2=1.133e-31  max|x|=1.7
+   rank: 11
+   sv_gap: (0.3055375811525703, 3.194220784156409e-17)
+   square: (11, 11)
+   fixed: {'x0': ('9/32', '-67/64'), 'x1': ('-5/16', '-107/64')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 27
+   leftover_max_abs_upper: 1.9493468069072553e-59
+   exact_candidate_maxden: 150086005
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('9/32', '-67/64'), 'x1': ('-5/16', '-107/64'), 'x2': ('0', '0'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('-14585856/150086005', '48013312/150086005'), 'x12': ('0', '0')}
+   time 0.5s
+=== cal_plain4P_s2.json  n=12 N=28  nalpha=2  LM best |F|^2=4.790e-39  max|x|=0.681
+   rank: 11
+   sv_gap: (0.4819559093569051, 2.9503686396483204e-20)
+   square: (11, 11)
+   fixed: {'x0': ('27/64', '3/8')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 17
+   leftover_max_abs_upper: 6.730917107900155e-60
+   exact_candidate_maxden: 8857
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('27/64', '3/8'), 'x1': ('0', '0'), 'x2': ('0', '0'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('5824/8857', '-1536/8857'), 'x11': ('0', '0')}
+   time 0.3s
+=== cal_plain4P_s3.json  n=12 N=28  nalpha=2  LM best |F|^2=1.541e-32  max|x|=2.09
+   rank: 11
+   sv_gap: (0.3527149867243809, 8.946269517797259e-20)
+   square: (11, 11)
+   fixed: {'x0': ('9/16', '-129/64')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 17
+   leftover_max_abs_upper: 1.274656720366278e-59
+   exact_candidate_maxden: 26641
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('9/16', '-129/64'), 'x1': ('0', '0'), 'x2': ('0', '0'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('6400/26641', '8256/26641'), 'x11': ('0', '0')}
+   time 0.3s
+=== cal_plain4P_s4.json  n=12 N=28  nalpha=2  LM best |F|^2=4.668e-34  max|x|=0.996
+   rank: 11
+   sv_gap: (0.7070930066230489, 8.833162053208668e-18)
+   square: (11, 11)
+   fixed: {'x0': ('-3/32', '29/64')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 17
+   leftover_max_abs_upper: 5.568466078715228e-60
+   exact_candidate_maxden: 145
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('-3/32', '29/64'), 'x1': ('0', '0'), 'x2': ('0', '0'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('128/145', '-64/145'), 'x11': ('0', '0')}
+   time 0.3s
+=== cal_plain4P_s5.json  n=13 N=44  nalpha=3  LM best |F|^2=2.052e-32  max|x|=2.8
+   rank: 12
+   sv_gap: (0.3359215251714523, 3.391853959818699e-18)
+   square: (12, 12)
+   fixed: {'x0': ('-19/16', '81/32')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 32
+   leftover_max_abs_upper: 1.0403573362470733e-59
+   exact_candidate_maxden: 2199
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('-19/16', '81/32'), 'x1': ('0', '0'), 'x2': ('0', '0'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('0', '0'), 'x11': ('-64/2199', '-288/733'), 'x12': ('0', '0')}
+   time 0.7s
+=== t27_mid3_m2_s1.json  n=13 N=36  nalpha=4  LM best |F|^2=1.860e-06  max|x|=366
+   dual certificate (degree 0) from the near miss: False
+   certified exclusion box around the near miss: half-width 0.000244140625 (row 27)
+   NulLA degree 0 (exact over Q): False  [matrix 55 x 36, rank 30 / 31, 0.0s]
+   NulLA degree 1 (exact over Q): True  [matrix 578 x 504, rank 381 / 381, 2.2s]
+   time 161.4s

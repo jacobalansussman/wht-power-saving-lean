@@ -1,0 +1,90 @@
+{
+ "one copy (k=2)": {
+  "least_plane_helpers": 224,
+  "removed_vs_U8": 168,
+  "optimistic": {
+   "b": "0.002062196125559",
+   "b_pct": 23.876,
+   "kappa": "0.001730427469823602"
+  },
+  "hole": {
+   "b": "0.001831600790475",
+   "b_pct": 10.024,
+   "kappa": "0.001730427469823602"
+  }
+ },
+ "two copies (k=3)": {
+  "least_plane_helpers": 392,
+  "removed_vs_U8": 0
+ },
+ "two copies + targets": {
+  "least_plane_helpers": 280,
+  "removed_vs_U8": 112,
+  "optimistic": {
+   "b": "0.001921172169381",
+   "b_pct": 15.405,
+   "kappa": "0.001730427469823602"
+  },
+  "hole": {
+   "b": "0.001772369822681",
+   "b_pct": 6.466,
+   "kappa": "0.001730427469823602"
+  }
+ },
+ "one copy + targets": {
+  "least_plane_helpers": 112,
+  "removed_vs_U8": 280,
+  "optimistic": {
+   "b": "0.002417164667747",
+   "b_pct": 45.199,
+   "kappa": "0.001730427469823602"
+  },
+  "hole": {
+   "b": "0.001962827546221",
+   "b_pct": 17.907,
+   "kappa": "0.001730427469823602"
+  }
+ },
+ "two copies, one descent (2 planes/register)": {
+  "least_plane_helpers": 140,
+  "removed_vs_U8": 252,
+  "optimistic": {
+   "b": "0.002317421730609",
+   "b_pct": 39.207,
+   "kappa": "0.001730427469823602"
+  },
+  "hole": {
+   "b": "0.001928284008511",
+   "b_pct": 15.832,
+   "kappa": "0.001730427469823602"
+  }
+ },
+ "two copies + targets + one descent": {
+  "least_plane_helpers": 28,
+  "removed_vs_U8": 364,
+  "optimistic": {
+   "b": "0.002706865537975",
+   "b_pct": 62.601,
+   "kappa": "0.001730427469823602"
+  },
+  "hole": {
+   "b": "0.002074324863556",
+   "b_pct": 24.604,
+   "kappa": "0.001730427469823602"
+  }
+ },
+ "hub_stronger_cap_matching_28": {
+  "least_plane_helpers": 364,
+  "removed_vs_U8": 28,
+  "optimistic": {
+   "b": "0.001722931027686",
+   "b_pct": 3.496,
+   "kappa": "0.001719967642068459"
+  },
+  "hole": {
+   "b": "0.001690391564318",
+   "b_pct": 1.542,
+   "kappa": "0.001687538962691081"
+  }
+ }
+}

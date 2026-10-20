@@ -1,0 +1,44 @@
+m=3 plain 2 in 6: (['yes1', 'yes1'], '11'); cut: (['yes1', 'no'], '10')
+   o3 control: (['yes6', 'yes6'], '11'); cut by one move: (['no', 'no'], '00')
+   two-frame sigma order 3: exact ['yes6', 'yes6'] psi 11  expected yes: OK
+   two-frame sigma order 7: exact ['yes14', 'yes14'] psi 11  expected yes: OK
+   two-frame sigma order 3: exact ['yes6', 'yes6'] psi 11  expected yes: OK
+   two-frame sigma order 4: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 2: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 7: exact ['yes14', 'yes14'] psi 11  expected yes: OK
+   two-frame sigma order 2: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 4: exact ['no', 'no'] psi 11  expected no: OK
+m=4 plain 2 in 8: (['yes1', 'yes1'], '11'); cut: (['yes1', 'no'], '10')
+   o3 control: (['yes6', 'yes6'], '11'); cut by one move: (['no', 'no'], '00')
+   two-frame sigma order 4: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 6: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 7: exact ['yes14', 'yes14'] psi 11  expected yes: OK
+   two-frame sigma order 7: exact ['yes14', 'yes14'] psi 11  expected yes: OK
+   two-frame sigma order 4: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 6: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 15: exact ['yes30', 'yes30'] psi 11  expected yes: OK
+   two-frame sigma order 15: exact ['yes30', 'yes30'] psi 11  expected yes: OK
+   two-frame sigma order 5: exact ['yes10', 'yes10'] psi 11  expected yes: OK
+   two-frame sigma order 3: exact ['yes6', 'yes6'] psi 11  expected yes: OK
+   two-frame sigma order 5: exact ['yes10', 'yes10'] psi 11  expected yes: OK
+   two-frame sigma order 2: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 3: exact ['yes6', 'yes6'] psi 11  expected yes: OK
+   two-frame sigma order 2: exact ['no', 'no'] psi 11  expected no: OK
+m=5 plain 2 in 10: (['yes1', 'yes1'], '11'); cut: (['yes1', 'no'], '10')
+   o3 control: (['yes6', 'yes6'], '11'); cut by one move: (['no', 'no'], '00')
+   two-frame sigma order 31: exact ['yes62', 'yes62'] psi 11  expected yes: OK
+   two-frame sigma order 6: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 14: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 15: exact ['yes30', 'yes30'] psi 11  expected yes: OK
+   two-frame sigma order 5: exact ['yes10', 'yes10'] psi 11  expected yes: OK
+   two-frame sigma order 31: exact ['yes62', 'yes62'] psi 11  expected yes: OK
+   two-frame sigma order 14: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 15: exact ['yes30', 'yes30'] psi 11  expected yes: OK
+   two-frame sigma order 21: exact ['yes42', 'yes42'] psi 11  expected yes: OK
+   two-frame sigma order 4: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 7: exact ['yes14', 'yes14'] psi 11  expected yes: OK
+   two-frame sigma order 21: exact ['yes42', 'yes42'] psi 11  expected yes: OK
+   two-frame sigma order 5: exact ['yes10', 'yes10'] psi 11  expected yes: OK
+   two-frame sigma order 12: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 12: exact ['no', 'no'] psi 11  expected no: OK
+   two-frame sigma order 6: exact ['no', 'no'] psi 11  expected no: OK

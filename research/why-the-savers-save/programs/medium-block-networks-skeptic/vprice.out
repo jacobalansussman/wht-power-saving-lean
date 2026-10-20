@@ -1,0 +1,6 @@
+per-call classes: {'x': (896, 562), 'y': (896, 520), 's': (3778, 2484), 'c': (64, 8)} helper levels per call 3778
+(a) U8X0 ideal banks: T=25 W=16934.0 banks=11334.0 D=800.0 (per replica 32.0)
+    fold root 7.3057223e-04   moment root 7.3057223e-04   first order D/N 7.3130e-04
+(f) T74 gauge44 ideal banks: helper levels/call 3734, W=16802.0, D=800.0, fold root 7.3920199e-04
+    helpers free (data and copies only): fold 2.3338e-03, D = 32
+    generous ceiling (data {8,16}, copies rank 8, junk free): fold 8.2607e-03, moment 8.2607e-03

@@ -1,0 +1,22 @@
+own-pub rc=0
+own-pub-O rc=0
+own-B rc=0
+own-B-O rc=0
+own-negOldPub rc=1 (expect !=0) ValueError: owner assignment moved
+own-negFillPub rc=1 (expect !=0) ValueError: owner assignment moved
+audit bytes equal
+aud-own3734 rc=0 
+aud-pub3815 rc=0 
+aud-B rc=0 
+aud-negclock rc=1 ValueError: strict lower and closed upper window
+v3815-pub rc=0 {"ceiling_certificate": {"at": "1730578437266246818741/1000000000000000000000000", "dual_feasible": true, "min_F_per_replica_lower_bound_positive": true, "patterns": 2551}, "fill_payload_sha256": "940
+v3815-B rc=1 ValueError: release input binding
+reg-cmd1 rc=1 :: -B /content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/verify.py :: ValueError: input hash: owner/inputs/old-FILL.json.gz
+reg-cmd2 rc=0 :: -B /content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/checks/independent_frames.py --controls :: {"canonical_source_sha256": {"NEW-base.json.gz": "cee1ddcbdf3cdcba99146f281cbb452440dd1ed641aa3a47ccc3343680ae7ddc", "NEW-extra.json.gz": "cc1826748ed24cd085a5756b46f0090d5a43ad54820c025366cf2848aca58
+reg-cmd3 rc=0 :: -B /content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/checks/exact_root.py --controls :: {"comparison_count": 322560, "comparison_rank": 73, "full_profile": {"1": 8041680, "2": 2306880, "3": 729648, "4": 353160, "5": 69120, "8": 25920, "48": 137952}, "lower_decimal": "0.001730663236534549
+reg-cmd4 rc=0 :: -B /content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/owner/verify.py :: {"calls": 3240, "changed_bins": 84240, "checker_sha256": "5c2b43cb3312c8637e149e8ef4cbeecc861658dd31c906e2f59c60e2618a67a9", "controls_rejected": ["same_call_family", "offset_hole", "closed_owner_wind
+reg-cmd5 rc=0 :: -B /content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/owner/check_gain.py :: {"status": "PASS_EXACT_UNIFORM_MOMENT_GAIN", "kappa_domain": "0 < kappa <= 1/500", "gain_per_replica_at_least": "(122944077/15625000)*kappa", "derivative_lower": "13660453/15625000", "scope": "Rationa
+reg-cmd6 rc=1 :: -B /content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/test_verify.py :: ValueError: input hash: owner/inputs/old-FILL.json.gz
+reg-cmd7 rc=1 :: -O -B /content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/test_verify.py :: ValueError: input hash: owner/inputs/old-FILL.json.gz
+reg-cmd8 rc=1 :: -B /content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/admission/authenticate.py :: ValueError: complete admission frozen inputs
+ALLDONE

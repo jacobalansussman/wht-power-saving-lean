@@ -1,0 +1,2 @@
+kernel on two columns (n = 4) = F1 * (digit2 <- digit2 + digit1) * F2 exactly: True
+F1 and F2 keep the sets {00,11} and {01,10} (blind to the witness): True True ; the address map does not: False

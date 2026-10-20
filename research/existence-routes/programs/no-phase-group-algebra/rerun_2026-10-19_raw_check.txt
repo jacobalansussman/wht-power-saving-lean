@@ -1,0 +1,6 @@
+T1 plain e1 e2 e3 (W=1)                          f = 1..6: max relative error 5.74e-16
+T2 dirs 3,5,6,7 (W=1)                            f = 1..6: max relative error 5.74e-16
+T3 U_3 2 in 7 (W=2)                              f = 1..6: max relative error 5.99e-16
+T4 address map h, moves h e_j, then h^-1 (W=1)   f = 1..6: max relative error 5.99e-16
+T7 two channels, mixing, address map (W=2)       f = 1..6: max relative error 5.99e-16
+mismatches: 0

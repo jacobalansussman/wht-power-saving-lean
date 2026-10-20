@@ -1,0 +1,13 @@
+{
+ "agent": "d-I2-walsh", "date": "2026-10-13", "idea": "I2 Walsh packets for the M copies",
+ "action": "confirm-and-stop, as BRIEF.md's 15:50 EDT update instructs; no new build",
+ "confirmation": {
+   "word": "w-walsh/K8-FULL-WORD.json.gz, compressed sha256 49596aa4... = helpers/k8-pairs/dl1042/slots/local/FULL-WORD.json.gz; content sha256 c2b29430...",
+   "rerun": "mc_map, mc_groups, all_groups, block_matrix x14, obstruction, cover_valuefree re-run from a scratch copy (python3 -I, Mac, 20 s): 35 of 35 output files byte-identical to w-walsh's",
+   "obstruction": "672 ordered packet pairs over the 14 blocks (48 per block): c1 = c2 = c3 = 0; coset = support in 14/14 blocks",
+   "value_free_floor": "8 relays per group, all 14 groups (non-relay chains fixed)",
+   "hub_audit": "w-walsh/colab-out: K8 control PASS (hub audit_local unmodified, sha 03afcfc9); W4-g0-literal FAIL: frame not monotone (65, ...)"
+ },
+ "scope": "The c1-c3 tests are frame containments, so they hold for any M-copy, holder and cut coefficients while the holder chains stay fixed (c2 and c3 cover holder re-routing). They do not test whether a re-valued cut and new centre values could change the correction each target needs (for example to a single packet), so they do not close NOTE.md section 4's 'cut re-valued' lever. cover_valuefree uses the delivery count that the v-mcopy-code skeptics refuted as a general floor.",
+ "outcome": "no-gain; kappa stays 0.001672188119205421"
+}

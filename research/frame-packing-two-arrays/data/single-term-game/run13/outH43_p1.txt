@@ -1,0 +1,7 @@
+== H43: frames 81, degrees [8], m 4, twists 1296, free 16, target orbit 16
+H43 M=1 states=8 max(L1+L2)=1 (I) holds goal no  [0.1s]
+H43 M=2 states=244 max(L1+L2)=2 (I) holds goal no  [1.4s]
+H43 M=3 states=7588 max(L1+L2)=3 (I) holds goal no  [53.3s]
+   split: expanding part 1/2 of layer 3 (3794 states)
+H43 M=4 states=261547 max(L1+L2)=4 (I) holds goal no  [1235.4s]
+H43 M=5 successors(no dedup)=55659375 max(L1+L2)=5 (I) holds goal no  [1605.0s]

@@ -1,0 +1,4 @@
+P111 r=8 L=1 closure=none gauge=XK=I                         UNSAT  vars 83271 clauses 288367  0.2s
+P111 r=8 L=2 closure=none gauge=XK=I                         UNSAT  vars 94862 clauses 305587  1.4s
+P111 r=8 L=2 closure=one gauge=XK=I                          UNSAT  vars 184862 clauses 760731  1.4s
+P111ours r=8 L=2 closure=none gauge=XK=I                     UNSAT  vars 95154 clauses 306523  1.2s

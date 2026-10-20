@@ -1,0 +1,6 @@
+forms: 32768  distinct odd supports 16384  even supports 16384
+rows 116 invalid rows 0
+combined c coefficients: min -1 max -1 (need >= -1; c vars present 31 of 31)
+combined w coefficients < 0: 0 ; max w coefficient 0
+sum lambda*rhs = -93/20
+VERIFIED: sum_x c_x >= 93/20 = 4.65

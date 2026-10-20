@@ -1,0 +1,23 @@
+	Command being timed: "env LEAN_PATH=/content/work/v-m-rebuild/out2:/content/work/shea/lean/complex588/.lake/packages/Cli/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/Qq/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/aesop/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/batteries/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/importGraph/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/mathlib/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/plausible/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/proofwidgets/.lake/build/lib/lean /content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean -DautoImplicit=false -R /content/work/v-m-rebuild/src /content/work/v-m-rebuild/src/Work/GCert/Data/C588MScalOK.lean -o /content/work/v-m-rebuild/out2/Work/GCert/Data/C588MScalOK.olean -i /content/work/v-m-rebuild/out2/Work/GCert/Data/C588MScalOK.ilean"
+	User time (seconds): 5.83
+	System time (seconds): 2.78
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.77
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6978880
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 154895
+	Voluntary context switches: 315
+	Involuntary context switches: 1586
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 72
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,115 @@
+m=3 k=2 alpha=0: rows 21 cols 7 rank_p 6 -> n*rank = 48  (0.0s)
+delta upper bound 48
+  type 00 (alpha=0,beta=0) rows 7 cols 0 rank_p 0 x1  (0.0s)
+  type a0 (alpha=1,beta=0) rows 4 cols 0 rank_p 0 x7  (0.0s)
+  type 0b (alpha=0,beta=1) rows 7 cols 3 rank_p 3 x7  (0.0s)
+  type ab0 (alpha=1,beta=2) rows 4 cols 3 rank_p 3 x21  (0.0s)
+  type ab1 (alpha=1,beta=1) rows 4 cols 3 rank_p 2 x28  (0.0s)
+  check (alpha=7,beta=5) type ab0: rank_p 3
+  check (alpha=5,beta=7) type ab0: rank_p 3
+  check (alpha=5,beta=6) type ab1: rank_p 2
+  check (alpha=6,beta=2) type ab1: rank_p 2
+m=3 k=3: dem >= 140 (by GL types)  (0.0s)
+delta upper bound 140
+m=3 k=4 alpha=0: rows 35 cols 35 rank_p 28 -> n*rank = 224  (0.0s)
+delta upper bound 224
+  type 00 (alpha=0,beta=0) rows 0 cols 7 rank_p 0 x1  (0.0s)
+  type a0 (alpha=1,beta=0) rows 3 cols 7 rank_p 3 x7  (0.0s)
+  type 0b (alpha=0,beta=1) rows 0 cols 4 rank_p 0 x7  (0.0s)
+  type ab0 (alpha=1,beta=2) rows 3 cols 4 rank_p 3 x21  (0.0s)
+  type ab1 (alpha=1,beta=1) rows 3 cols 4 rank_p 2 x28  (0.0s)
+  check (alpha=7,beta=5) type ab0: rank_p 3
+  check (alpha=5,beta=7) type ab0: rank_p 3
+  check (alpha=5,beta=6) type ab1: rank_p 2
+  check (alpha=6,beta=2) type ab1: rank_p 2
+m=3 k=5: dem >= 140 (by GL types)  (0.0s)
+delta upper bound 210
+m=3 k=6 alpha=0: rows 7 cols 21 rank_p 6 -> n*rank = 48  (0.0s)
+delta upper bound 112
+  type 00 (alpha=0,beta=0) rows 35 cols 0 rank_p 0 x1  (0.0s)
+  type a0 (alpha=1,beta=0) rows 28 cols 0 rank_p 0 x15  (0.0s)
+  type 0b (alpha=0,beta=1) rows 35 cols 7 rank_p 7 x15  (0.0s)
+  type ab0 (alpha=1,beta=2) rows 28 cols 7 rank_p 7 x105  (0.0s)
+  type ab1 (alpha=1,beta=1) rows 28 cols 7 rank_p 6 x120  (0.0s)
+  check (alpha=15,beta=10) type ab0: rank_p 7
+  check (alpha=11,beta=14) type ab0: rank_p 7
+  check (alpha=9,beta=12) type ab1: rank_p 6
+  check (alpha=13,beta=4) type ab1: rank_p 6
+m=4 k=3: dem >= 1560 (by GL types)  (0.0s)
+delta upper bound 1560
+m=4 k=4 alpha=0: rows 1365 cols 455 rank_p 420 -> n*rank = 6720  (0.2s)
+delta upper bound 6720
+  type 00 (alpha=0,beta=0) rows 168 cols 105 rank_p 70 x1  (0.0s)
+  type a0 (alpha=1,beta=0) rows 189 cols 105 rank_p 98 x15  (0.0s)
+  type 0b (alpha=0,beta=1) rows 168 cols 84 rank_p 77 x15  (0.0s)
+  type ab0 (alpha=1,beta=2) rows 189 cols 84 rank_p 77 x105  (0.0s)
+  type ab1 (alpha=1,beta=1) rows 189 cols 84 rank_p 77 x120  (0.0s)
+  check (alpha=15,beta=10) type ab0: rank_p 77
+  check (alpha=11,beta=14) type ab0: rank_p 77
+  check (alpha=9,beta=12) type ab1: rank_p 77
+  check (alpha=13,beta=4) type ab1: rank_p 77
+m=4 k=5: dem >= 20020 (by GL types)  (0.1s)
+delta upper bound 20020
+m=4 k=6 alpha=0: rows 5005 cols 3003 rank_p 2730 -> n*rank = 43680  (24.9s)
+delta upper bound 43680
+  type 00 (alpha=0,beta=0) rows 280 cols 435 rank_p 224 x1  (0.1s)
+  type a0 (alpha=1,beta=0) rows 315 cols 435 rank_p 280 x15  (0.2s)
+  type 0b (alpha=0,beta=1) rows 280 cols 400 rank_p 245 x15  (0.2s)
+  type ab0 (alpha=1,beta=2) rows 315 cols 400 rank_p 284 x105  (0.3s)
+  type ab1 (alpha=1,beta=1) rows 315 cols 400 rank_p 280 x120  (0.4s)
+  check (alpha=15,beta=10) type ab0: rank_p 284
+  check (alpha=11,beta=14) type ab0: rank_p 284
+  check (alpha=9,beta=12) type ab1: rank_p 280
+  check (alpha=13,beta=4) type ab1: rank_p 280
+m=4 k=9: dem >= 71519 (by GL types)  (0.7s)
+delta upper bound 90090
+m=5 k=2 alpha=0: rows 465 cols 31 rank_p 30 -> n*rank = 960  (0.0s)
+delta upper bound 960
+  type 00 (alpha=0,beta=0) rows 155 cols 0 rank_p 0 x1  (0.0s)
+  type a0 (alpha=1,beta=0) rows 140 cols 0 rank_p 0 x31  (0.0s)
+  type 0b (alpha=0,beta=1) rows 155 cols 15 rank_p 15 x31  (0.0s)
+  type ab0 (alpha=1,beta=2) rows 140 cols 15 rank_p 15 x465  (0.0s)
+  type ab1 (alpha=1,beta=1) rows 140 cols 15 rank_p 14 x496  (0.0s)
+  check (alpha=30,beta=20) type ab0: rank_p 15
+  check (alpha=22,beta=28) type ab0: rank_p 15
+  check (alpha=18,beta=25) type ab1: rank_p 14
+  check (alpha=26,beta=7) type ab1: rank_p 14
+m=5 k=3: dem >= 14384 (by GL types)  (0.0s)
+delta upper bound 14384
+  type 00 (alpha=0,beta=0) rows 651 cols 0 rank_p 0 x1  (0.0s)
+  type a0 (alpha=1,beta=0) rows 620 cols 0 rank_p 0 x63  (0.0s)
+  type 0b (alpha=0,beta=1) rows 651 cols 31 rank_p 31 x63  (0.1s)
+  type ab0 (alpha=1,beta=2) rows 620 cols 31 rank_p 31 x1953  (0.1s)
+  type ab1 (alpha=1,beta=1) rows 620 cols 31 rank_p 30 x2016  (0.1s)
+  check (alpha=60,beta=40) type ab0: rank_p 31
+  check (alpha=44,beta=57) type ab0: rank_p 31
+  check (alpha=37,beta=49) type ab0: rank_p 31
+  check (alpha=53,beta=15) type ab0: rank_p 31
+m=6 k=3: dem >= 122976 (by GL types)  (0.1s)
+delta upper bound 122976
+m=4 k=7: ALL blocks, dem >= 71519  (18.3s)
+delta upper bound 72072
+cap closed form == c0 for m<=8 all k: True
+3 2 delta 48 cap 24 ratio 2 2.0 2(n-1)/(n-k+1)= 2
+3 3 delta 140 cap 60 ratio 7/3 2.3333333333333335 2(n-1)/(n-k+1)= 7/3
+3 4 delta 224 cap 80 ratio 14/5 2.8 2(n-1)/(n-k+1)= 14/5
+4 3 delta 1560 cap 728 ratio 15/7 2.142857142857143 2(n-1)/(n-k+1)= 15/7
+4 4 delta 6720 cap 2912 ratio 30/13 2.3076923076923075 2(n-1)/(n-k+1)= 30/13
+4 5 delta 20020 cap 8008 ratio 5/2 2.5 2(n-1)/(n-k+1)= 5/2
+4 6 delta 43680 cap 16016 ratio 30/11 2.727272727272727 2(n-1)/(n-k+1)= 30/11
+4 8 delta 91520 cap 27456 ratio 10/3 3.3333333333333335 2(n-1)/(n-k+1)= 10/3
+5 3 delta 14384 cap 6960 ratio 31/15 2.066666666666667 2(n-1)/(n-k+1)= 31/15
+5 4 delta 138880 cap 64960 ratio 62/29 2.1379310344827585 2(n-1)/(n-k+1)= 62/29
+5 5 delta 970920 cap 438480 ratio 31/14 2.2142857142857144 2(n-1)/(n-k+1)= 31/14
+6 3 delta 122976 cap 60512 ratio 63/31 2.032258064516129 2(n-1)/(n-k+1)= 63/31
+6 4 delta 2499840 cap 1210240 ratio 126/61 2.0655737704918034 2(n-1)/(n-k+1)= 126/61
+ceiling m 2 2 2.0 smallest cap 0
+ceiling m 3 14/5 2.8 smallest cap 0.06280001798504743
+ceiling m 4 10/3 3.3333333333333335 smallest cap 0.1315172029168969
+ceiling m 5 62/17 3.6470588235294117 smallest cap 0.19604165467187235
+ceiling m 6 42/11 3.8181818181818183 smallest cap 0.2522577006040807
+m4 k8 actual 41/13 cap(4,8) 27456
+moves-only cap m 3 14/5 0.06280001798504743
+moves-only cap m 4 41/13 0.17144385676150425
+moves-only cap m 5 31/14 0.506082298218238
+moves-only cap m 6 63/31 0.6042172322315624

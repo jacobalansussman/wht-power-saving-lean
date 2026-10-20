@@ -1,0 +1,2 @@
+pipeline schedule: dependency order OK in all runs; steady rounds = N-L+1 and boundary calls = L(L-1) when N>=L: True
+so the boundary overhead is L(L-1) calls of weight 1/N each (O(L^2/N), not O(L/N) as PROOF.md writes; still -> 0 as N grows)

@@ -1,0 +1,7 @@
+m=6: frames 4922775, sphere sizes [1, 126, 5208, 89280, 666624, 2064384, 2097152]; 1500 uniform pairs per distance, seed 3
+d=1 pairs 1500 sumdelta 3562 mean 2.374667 stderr 0.027957 hist [(1, 388), (2, 430), (3, 461), (4, 174), (5, 47)]
+d=2 pairs 1500 sumdelta 5359 mean 3.572667 stderr 0.026044 hist [(2, 239), (3, 468), (4, 523), (5, 235), (6, 35)]
+d=3 pairs 1500 sumdelta 6687 mean 4.458000 stderr 0.021135 hist [(3, 192), (4, 553), (5, 631), (6, 124)]
+d=4 pairs 1500 sumdelta 7564 mean 5.042667 stderr 0.017885 hist [(4, 329), (5, 778), (6, 393)]
+d=5 pairs 1500 sumdelta 8219 mean 5.479333 stderr 0.012903 hist [(5, 781), (6, 719)]
+d=6 pairs 1500 sumdelta 9000 mean 6.000000 stderr 0.000000 hist [(6, 1500)]

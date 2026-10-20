@@ -1,0 +1,5 @@
+blocksU8XMHHx [(1, 186137), (2, 25216), (3, 32368), (4, 12560), (5, 5184), (8, 936), (12, 64), (48, 2608), (61, 1)]
+composition OK: 72 x invocation profile + 8 x per-run remainders + pads = blocksU8XMHHx
+at a = 16197706/10^10: LHS <= 8.222147874051e+15, RHS = 8222147952508928, slack >= 9.542e-09
+exact fold (s = 40): holds at 16197738/10^10, fails at 16197739/10^10 (the certificate uses 16197706, 32 grid points below)
+RATE CHECK PASS: blocksU8XMHHx, s = 40, W = 7478, fold holds at the certificate exponent 1 - 16197706/10^10

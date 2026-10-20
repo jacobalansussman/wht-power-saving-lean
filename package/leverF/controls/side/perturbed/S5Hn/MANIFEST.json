@@ -1,0 +1,25 @@
+{
+ "src": "S5H-hosttab.json.gz",
+ "sha256": "009df87c16355df4657ea4f242c6ce27b3784121351c14a5444f2eba705e5151",
+ "perturbed": {
+  "mode": "load",
+  "k": 0,
+  "q": 0,
+  "old": 699730,
+  "new": 699731
+ },
+ "negatives": [
+  {
+   "file": "NegSome3123.lean",
+   "kind": 3123,
+   "must": "FAIL",
+   "why": "bin 699730: load 7 + remainder 0 != rank 16"
+  },
+  {
+   "file": "NegNone3123.lean",
+   "kind": 3123,
+   "must": "PASS",
+   "why": "bin 699730: load 7 + remainder 0 != rank 16"
+  }
+ ]
+}

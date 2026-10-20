@@ -1,0 +1,12 @@
+N = 64
+  R2^2SDF (generic)                adder bits   384  mux bits   576  LUT4 (adder+mux)   960  FF bits   192  memory words    63
+  R2^2SDF, muxes in carry cells    adder bits   384  mux bits    96  LUT4 (adder+mux)   480  FF bits   192  memory words    63
+  serial-butterfly SC              adder bits   192  mux bits   576  LUT4 (adder+mux)   768  FF bits   768  memory words    88
+N = 256
+  R2^2SDF (generic)                adder bits   512  mux bits   768  LUT4 (adder+mux)  1280  FF bits   256  memory words   255
+  R2^2SDF, muxes in carry cells    adder bits   512  mux bits   128  LUT4 (adder+mux)   640  FF bits   256  memory words   255
+  serial-butterfly SC              adder bits   256  mux bits   768  LUT4 (adder+mux)  1024  FF bits  1024  memory words   374
+N = 1024
+  R2^2SDF (generic)                adder bits   640  mux bits   960  LUT4 (adder+mux)  1600  FF bits   320  memory words  1023
+  R2^2SDF, muxes in carry cells    adder bits   640  mux bits   160  LUT4 (adder+mux)   800  FF bits   320  memory words  1023
+  serial-butterfly SC              adder bits   320  mux bits   960  LUT4 (adder+mux)  1280  FF bits  1280  memory words  1524

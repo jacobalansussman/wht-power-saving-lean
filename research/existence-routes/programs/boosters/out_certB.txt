@@ -1,0 +1,6 @@
+m=2 p=1000003: frames used 15, dim N 9, dim(N+Y0) 12; delta_A [2, 3]; delta_B [1, 2]; delta_B == delta_A - 1: True
+m=2 p=999983: frames used 15, dim N 9, dim(N+Y0) 12; delta_A [2, 3]; delta_B [1, 2]; delta_B == delta_A - 1: True
+m=3 p=1000003: frames used 135, dim N 35, dim(N+Y0) 42; delta_A [4, 6, 7]; delta_B [3, 5, 6]; delta_B == delta_A - 1: True
+m=3 p=999983: frames used 135, dim N 35, dim(N+Y0) 42; delta_A [4, 6, 7]; delta_B [3, 5, 6]; delta_B == delta_A - 1: True
+m=4 p=1000003: frames used 2295, dim N 135, dim(N+Y0) 150; delta_A [8, 12, 14, 15]; delta_B [7, 11, 13, 14]; delta_B == delta_A - 1: True
+m=4 p=999983: frames used 2295, dim N 135, dim(N+Y0) 150; delta_A [8, 12, 14, 15]; delta_B [7, 11, 13, 14]; delta_B == delta_A - 1: True

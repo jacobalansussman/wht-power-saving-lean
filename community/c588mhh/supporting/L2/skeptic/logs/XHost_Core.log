@@ -1,0 +1,30 @@
+<verify>/checks/wht43/bound-check/v-host-1/proj/XHost/Core.lean:124:8: warning: This simp argument is unused:
+  Fin.append_left
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.append_right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'OAI.PowerSaving.GF.gwalk_roleAct_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.host_remaining_climb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.host_remaining_climb_twisted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.host_route_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+       40.93 real         2.03 user         3.96 sys
+          5961351168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              347547  page reclaims
+              108733  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+              224834  involuntary context switches
+         47697731707  instructions retired
+         23223819029  cycles elapsed
+           918026936  peak memory footprint
+EXIT=0 TIME=41s HEAVY=0 CMD=/usr/bin/env LEAN_PATH=<verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean:<verify>/.lake/build/lib/lean:<verify>/.lake/packages/mathlib/.lake/build/lib/lean:<verify>/.lake/packages/batteries/.lake/build/lib/lean:<verify>/.lake/packages/Qq/.lake/build/lib/lean:<verify>/.lake/packages/aesop/.lake/build/lib/lean:<verify>/.lake/packages/proofwidgets/.lake/build/lib/lean:<verify>/.lake/packages/importGraph/.lake/build/lib/lean:<verify>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<verify>/.lake/packages/plausible/.lake/build/lib/lean:<verify>/.lake/packages/Cli/.lake/build/lib/lean LEAN_NUM_THREADS=2 /usr/bin/time -l lean -DautoImplicit=false -R <verify>/checks/wht43/bound-check/v-host-1/proj -o <verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean/XHost/Core.olean -i <verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean/XHost/Core.ilean <verify>/checks/wht43/bound-check/v-host-1/proj/XHost/Core.lean

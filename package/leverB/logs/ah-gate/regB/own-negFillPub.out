@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/content/work/ah-gate/regB/own-negFillPub/owner/verify.py", line 146, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/content/work/ah-gate/regB/own-negFillPub/owner/verify.py", line 84, in main
+    need(all(a[:5]==b[:5] for a,b in zip(rows,oldrows)),'owner assignment moved')
+  File "/content/work/ah-gate/regB/own-negFillPub/owner/verify.py", line 12, in need
+    if not ok:raise ValueError(why)
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: owner assignment moved

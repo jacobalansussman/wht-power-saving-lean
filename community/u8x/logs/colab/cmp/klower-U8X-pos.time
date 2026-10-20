@@ -1,0 +1,23 @@
+	Command being timed: "/content/work/cc/jail2.sh /content/work/cc/t-klower/lean/complex588 /bin/sh -c exec lake env /bin/sh -c 'PATH=/content/work/cc/fresh-bin:$PATH; export PATH; exec comparator comparator/fourier-u8x.json'"
+	User time (seconds): 3101.88
+	System time (seconds): 358.41
+	Percent of CPU this job got: 75%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16:48
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9414604
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 444204
+	Minor (reclaiming a frame) page faults: 32470984
+	Voluntary context switches: 963781
+	Involuntary context switches: 240484
+	Swaps: 0
+	File system inputs: 44662976
+	File system outputs: 1132936
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

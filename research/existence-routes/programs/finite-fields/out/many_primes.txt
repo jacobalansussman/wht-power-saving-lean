@@ -1,0 +1,12 @@
+full_c_0_1_1_1.a0 + full_c_0_1_1_1.a1: n=3 d=3 s=2 h=0.000: KPS ln|a| <= 5.48e+04; need F_p points at 2636 primes >= 1073741824
+   primes tested 1, with F_p points 1
+   primes tested 10, with F_p points 10
+   primes tested 100, with F_p points 100
+   primes tested 1000, with F_p points 1000
+   primes tested 2000, with F_p points 2000
+EXISTS [non-constructive: F_p points at 2636 distinct primes in (1073741824, 1073796973] > KPS bound 5.48e+04/ln(1073741824)]
+full_c_1_0_1_1.a0: n=2 d=4 s=4 h=0.000: KPS ln|a| <= 1.572e+04; need F_p points at 756 primes >= 1073741824
+   primes tested 1, with F_p points 0
+   primes tested 10, with F_p points 0
+   primes tested 100, with F_p points 0
+NO CERTIFICATE: F_p points at 0 of 300 primes (needed 756)

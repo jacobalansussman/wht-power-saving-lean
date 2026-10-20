@@ -1,0 +1,21 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK w0 neon        F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 4.862e-06 (frame 649 mel 13) rms 3.521e-08 PASS
+CHECK w1 neon        F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 4.862e-06 (frame 649 mel 13) rms 3.521e-08 PASS
+reps logmel W=2 E=0 neon: 2705.237 2966.655
+RESULT logmel     W=2 E=0 neon      median 2966.655 best 2705.237 ns/frame agg  =    0.337 Mframe/s | call p50  15237.8 p99  51293.7 max  66956.2 us | SME calls   0.0 % | mean us: sme 0.0 neon 16999.1 | calls 134 | CHECK PASS
+CHECK w0 sme         F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 7.416e-06 (frame 649 mel 13) rms 3.905e-08 PASS
+CHECK w1 neon        F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 4.862e-06 (frame 649 mel 13) rms 3.521e-08 PASS
+reps logmel W=2 E=0 static:1: 3154.891 2504.917
+RESULT logmel     W=2 E=0 static:1  median 3154.891 best 2504.917 ns/frame agg  =    0.317 Mframe/s | call p50  16087.8 p99  51467.2 max  72009.8 us | SME calls  56.5 % | mean us: sme 14619.2 neon 19232.6 | calls 128 | CHECK PASS
+CHECK w0 neon        F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 4.862e-06 (frame 649 mel 13) rms 3.521e-08 PASS
+CHECK w1 neon        F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 4.862e-06 (frame 649 mel 13) rms 3.521e-08 PASS
+CHECK w1 sme         F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 7.416e-06 (frame 649 mel 13) rms 3.905e-08 PASS
+CHECK w0 sme         F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 7.416e-06 (frame 649 mel 13) rms 3.905e-08 PASS
+reps logmel W=2 E=0 token:1: 2002.555 2347.326
+RESULT logmel     W=2 E=0 token:1   median 2347.326 best 2002.555 ns/frame agg  =    0.426 Mframe/s | call p50  11324.0 p99  43507.6 max  46703.8 us | SME calls  59.5 % | mean us: sme 11185.0 neon 15313.6 | calls 169 | CHECK PASS
+CHECK w0 neon        F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 4.862e-06 (frame 649 mel 13) rms 3.521e-08 PASS
+CHECK w0 sme         F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 7.416e-06 (frame 649 mel 13) rms 3.905e-08 PASS
+CHECK w1 neon        F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 4.862e-06 (frame 649 mel 13) rms 3.521e-08 PASS
+CHECK w1 sme         F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 7.416e-06 (frame 649 mel 13) rms 3.905e-08 PASS
+reps logmel W=2 E=0 owner: 3119.663 1527.506
+RESULT logmel     W=2 E=0 owner     median 3119.663 best 1527.506 ns/frame agg  =    0.321 Mframe/s | call p50   5552.7 p99 101083.9 max 111489.1 us | SME calls  52.8 % | mean us: sme 11251.3 neon 13885.8 | calls 139 | CHECK PASS

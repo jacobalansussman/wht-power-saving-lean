@@ -1,0 +1,84 @@
+INSTALL CTL: 2 new, 0 identical (skipped), from /content/work/fc-engine/in/ctl; hashes /content/work/fc-engine/in-CTL.sha256
+   (slot: waited 0s; heavy 0, avail 50543 MB)
+   LEAN_NUM_THREADS=3
+=== build START 02:22:02
+=== build END rc=0 wall=10s maxrss_kb=6999060 02:22:12
+Build completed successfully (9102 jobs).
+   4.9s Work.Mixed.Bridge.Ctl3945F
+   4.5s Work.Mixed.Rate3945FSharp
+=== nobuild START 02:22:12
+=== nobuild END rc=0 wall=6s maxrss_kb=1009376 02:22:18
+All targets up-to-date (9102 jobs).
+BUILD CTL OK
+info: Work/Mixed/Rate3945FSharp.lean:75:0: 'OAI.PowerSaving.MX.rate3945F_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Rate3945FSharp.lean:76:0: 'OAI.PowerSaving.MX.rate3945F_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Bridge/Ctl3945F.lean:43:0: 'OAI.PowerSaving.PB.hcutF3945F_old' depends on axioms: [propext]
+info: Work/Mixed/Bridge/Ctl3945F.lean:44:0: 'OAI.PowerSaving.PB.hcutF3945F_more' depends on axioms: [propext]
+info: Work/Mixed/Bridge/Ctl3945F.lean:45:0: 'OAI.PowerSaving.PB.hcutF3945F_unsplit' depends on axioms: [propext]
+INSTALL L3945FS: 20 new, 1 identical (skipped), from /content/work/fc-engine/in/stub-L3945FS/stage; hashes /content/work/fc-engine/in-L3945FS.sha256
+   (slot: waited 0s; heavy 0, avail 50542 MB)
+   LEAN_NUM_THREADS=3
+=== build START 02:22:18
+=== build END rc=0 wall=125s maxrss_kb=7179212 02:24:23
+Build completed successfully (9334 jobs).
+   17s Work.FourierL3945FS.Asymptotics
+   15s Work.FourierL3945FS.UniformBounds
+   13s Work.FourierL3945FS.Main
+   10s Work.FourierL3945FS.ConvolutionProgram
+   6.6s Work.FourierL3945FSNeg.UniformFourierChallenge
+   6.4s Work.FourierL3945FS.WorkingPreparation
+   6.3s Work.FourierL3945FS.UniformFourierChallenge
+   5.6s Work.FourierL3945FS.SectorAlgorithm
+=== nobuild START 02:24:23
+=== nobuild END rc=0 wall=6s maxrss_kb=960596 02:24:29
+All targets up-to-date (9334 jobs).
+BUILD L3945FS OK
+CHECKS L3945FS NUM=16256629 START Tue Oct 20 02:24:29 AM UTC 2026
+   (slot: waited 0s; heavy 0, avail 50569 MB)
+=== axioms START 02:24:29
+=== axioms END rc=0 wall=5s maxrss_kb=6969992 02:24:34
+'OAI.PowerSaving.transform_mainL3945FS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945FS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945FS_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms L3945FS: standard only
+   (slot: waited 0s; heavy 0, avail 50562 MB)
+=== axioms-extra START 02:24:34
+=== axioms-extra END rc=0 wall=5s maxrss_kb=6970352 02:24:39
+'OAI.PowerSaving.MX.L3945FS.engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.L3945FS.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945FS.engine_L3945FS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945FS_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL3945FS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945FS.alphaL3945FS_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL3945FS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL3945FS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945FS' depends on axioms: [propext, Classical.choice, Quot.sound]
+extra axioms: standard only
+files grepped: 17 (from /content/work/fc-engine/in-L3945FS.files)
+sorry/admit lines: 0
+forbidden-construct mentions inside backquotes (not uses): 1
+forbidden-construct lines: 0
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74 /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierL3945FS (1 - 16256629/10^10): byte-identical to my derivation from OpenAI's statement
+challenge FourierL3945FSNeg (1 - 16256630/10^10): byte-identical to my derivation from OpenAI's statement
+positive and negative challenge differ only in the numerator
+Compare.lean e48d6d3b (= /content/work/ours/Compare.lean)
+   (slot: waited 0s; heavy 0, avail 50566 MB)
+=== compare-pos START 02:24:40
+=== compare-pos END rc=0 wall=67s maxrss_kb=16073684 02:25:47
+compare-pos rc=0
+RESULT: PASS
+   (slot: waited 0s; heavy 0, avail 50547 MB)
+=== compare-neg START 02:25:47
+=== compare-neg END rc=1 wall=44s maxrss_kb=16139696 02:26:31
+compare-neg rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentL3945FS: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentL3945FS._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL3945FS: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentL3945FS._proof_1: type differs
+RESULT: FAIL
+VERDICT Compare positive: PASS
+VERDICT Compare negative: FAIL (expected)
+CHECKS L3945FS ALL AS EXPECTED Tue Oct 20 02:26:31 AM UTC 2026
+EXIT 0
+STUB L3945FS OK

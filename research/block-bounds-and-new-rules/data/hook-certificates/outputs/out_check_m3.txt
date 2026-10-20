@@ -1,0 +1,11 @@
+[PASS] cap dir 1: 200 vectors in N, images outside N: 0, disjoint supports: True -> f(dir 1) <= 80
+[PASS] cap dir 2: 200 vectors in N, images outside N: 0, disjoint supports: True -> f(dir 2) <= 80
+[PASS] cap dir 3: 200 vectors in N, images outside N: 0, disjoint supports: True -> f(dir 3) <= 80
+[PASS] cap dir 4: 200 vectors in N, images outside N: 0, disjoint supports: True -> f(dir 4) <= 80
+[PASS] cap dir 5: 200 vectors in N, images outside N: 0, disjoint supports: True -> f(dir 5) <= 80
+[PASS] cap dir 6: 200 vectors in N, images outside N: 0, disjoint supports: True -> f(dir 6) <= 80
+[PASS] cap dir 7: 200 vectors in N, images outside N: 0, disjoint supports: True -> f(dir 7) <= 80
+[PASS] dem m=3 f=5: minor of K_W[S^c,S] of size 224, det mod 1000000009 = 611530155 -> dem >= 224
+[PASS] f(dir1 dir2) m=3 f=5: 136 exact vectors v in N with B2_W v in N (failures 0), independent (rank mod 1000000009 = 136) -> f(B2) <= 144
+[PASS] M_0 block m=3 f=5: minor of size 28, det mod 1000000009 = 686407996 -> rank M_0 >= 28; 8 x = 224
+SUMMARY m=3 f=5: cap <= 80, dem >= 224, f(B2) <= 144: bound 14/5 W; all checks PASS

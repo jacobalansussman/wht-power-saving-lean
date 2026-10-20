@@ -1,0 +1,13 @@
+== neg_m3_29.txt
+cert: m=3 k=4 alpha=0 p=2147483629 (prime: yes) I^2=-1: yes, 29 distinct well-formed rows/cols: yes
+det mod p of the 29 x 29 minor of M_0 = 0
+RESULT: FAIL  -> rank M_0 over Q(i) >= 0 (not certified)
+exit 1
+== neg_m3_dup.txt
+cert: m=3 k=4 alpha=0 p=2147483629 (prime: yes) I^2=-1: yes, 28 distinct well-formed rows/cols: NO
+RESULT: FAIL (format)
+exit 1
+== neg_m3_comp.txt
+cert: m=3 k=4 alpha=0 p=2147483627 (prime: NO) I^2=-1: NO, 28 distinct well-formed rows/cols: yes
+RESULT: FAIL (format)
+exit 1

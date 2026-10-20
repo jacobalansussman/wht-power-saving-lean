@@ -1,0 +1,20 @@
+VERDICT bos lean: accepted
+   (slot: waited 0s; heavy 0, avail 50473 MB)
+FAST CHECK L3945H START Mon Oct 19 09:41:08 PM UTC 2026
+files in the PR: 449 (limit 500); largest 7141733 bytes (limit 20000000); total 30306271 bytes (limit 150000000)
+verifier planning: 448 modules in 147 serial chains, acyclic
+visibility: 0 modules see local modules outside their group that they did not see before; 201 see earlier siblings of their group only; 0 see new external imports
+STATIC CHECK PASS
+tree mode: root Work.FourierL3945H.Main, 703 modules; axioms of: OAI.PowerSaving.transform_mainL3945H OAI.PowerSaving.convolution_mainL3945H
+tree dump rc=0 172s: BosDump: 37606 constants of the closure written to /content/work/logs/bB-final/fast-L3945H/tree.tsv
+merged dump rc=0 179s: BosDump: 37590 constants of the closure written to /content/work/logs/bB-final/fast-L3945H/merged.tsv
+non-auxiliary constants: 29512 (original stage, 699 modules) vs 29512 (merged stage, 443 modules)
+auxiliary constants: 8094 (original) vs 8076 (merged); distinct contents 6885 vs 6885
+metaprogramming objects (notation parsers, macros; compared by type only): 1, value differs for 1
+theorems: 12307; same statement in both: all above; proof term identical for 12307, different for 0 (allowed)
+axioms of OAI.PowerSaving.convolution_mainL3945H: original ['Classical.choice', 'Quot.sound', 'propext'], merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+axioms of OAI.PowerSaving.transform_mainL3945H: original ['Classical.choice', 'Quot.sound', 'propext'], merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+axioms of Race.bound: original None, merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+IDENTITY CHECK PASS
+FAST CHECK L3945H END Mon Oct 19 09:47:22 PM UTC 2026
+EXIT 0

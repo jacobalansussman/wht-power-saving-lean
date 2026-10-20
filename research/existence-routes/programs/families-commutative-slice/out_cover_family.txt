@@ -1,0 +1,9 @@
+U_4 W=3 (slack 1; saving if it existed -0.161) m=4 W=3 M=15 s=1: odd forms of slack <= 1: 56; even forms checked 40 -> passes
+U_4 W=2 (slack 2; saving if it existed -0.453) m=4 W=2 M=15 s=2: odd forms of slack <= 2: 56; even forms checked 40 -> passes
+U_5 W=7 (slack 1; saving if it existed 0.075) m=5 W=7 M=31 s=1: odd forms of slack <= 1: 240; even forms checked 40 -> EXCLUDED; covered even support: dirs [24, 25, 26, 27, 28, 29, 30, 31] (|D| = 8)
+U_5 W=6 (slack 2; saving if it existed -0.020) m=5 W=6 M=31 s=2: odd forms of slack <= 2: 240; even forms checked 40 -> passes
+U_5 W=5 (slack 3; saving if it existed -0.134) m=5 W=5 M=31 s=3: odd forms of slack <= 3: 240; even forms checked 40 -> passes
+U_6 W=15 (slack 1; saving if it existed 0.199) m=6 W=15 M=63 s=1: odd forms of slack <= 1: 992; even forms checked 40 -> EXCLUDED; covered even support: dirs [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63] (|D| = 16)
+U_6 W=14 (slack 2; saving if it existed 0.161) m=6 W=14 M=63 s=2: odd forms of slack <= 2: 992; even forms checked 40 -> EXCLUDED; covered even support: dirs [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63] (|D| = 16)
+U_6 W=13 (slack 3; saving if it existed 0.119) m=6 W=13 M=63 s=3: odd forms of slack <= 3: 992; even forms checked 40 -> passes
+U_6 W=12 (slack 4; saving if it existed 0.075) m=6 W=12 M=63 s=4: odd forms of slack <= 4: 992; even forms checked 40 -> passes

@@ -1,0 +1,461 @@
+m=2 plain W=1                    img M=2 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [1, 1] 
+m=2 plain W=1                    coimg M=2 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [1, 1] 
+m=2 plain W=1                    opp M=2 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [1, 1] P_w=0.0
+m=2 plain W=2                    img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 plain W=2                    coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 plain W=2                    opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=2 plain W=3                    img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] 
+m=2 plain W=3                    coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] 
+m=2 plain W=3                    opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] P_w=0.0
+m=2 pair trick                   img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 pair trick                   coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 pair trick                   opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=2 copy-move-copy               img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 copy-move-copy               coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 copy-move-copy               opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=2 gauge-exchange               img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 gauge-exchange               coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 gauge-exchange               opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=2 packing gadget               img M=5 Delta=-1  P_live: img/opp=0 frame=0 | P_asc=-1 (frame -1) | crossings per level [2, 2] 
+m=2 packing gadget               coimg M=5 Delta=-1  P_live: img/opp=0 frame=0 | P_asc=-1 (frame -1) | crossings per level [2, 2] 
+m=2 packing gadget               opp M=5 Delta=-1  P_live: img/opp=0 frame=0 | P_asc=-1 (frame -1) | crossings per level [2, 2] P_w=-1.0
+m=2 crossing pair                img M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] 
+m=2 crossing pair                coimg M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] 
+m=2 crossing pair                opp M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] P_w=2.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] P_w=0.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] P_w=3.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] P_w=2.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] P_w=3.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4] P_w=3.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] P_w=0.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] P_w=2.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3] P_w=0.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] P_w=2.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] P_w=2.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4] P_w=3.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] P_w=2.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] P_w=3.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] P_w=2.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] P_w=3.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3] P_w=2.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 5] P_w=3.0
+m=2 random crossing unit W=3 |C|=1 img M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] 
+m=2 random crossing unit W=3 |C|=1 coimg M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] 
+m=2 random crossing unit W=3 |C|=1 opp M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4] P_w=2.0
+m=2 random crossing unit W=2 |C|=1 img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] 
+m=2 random crossing unit W=2 |C|=1 opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2] P_w=0.0
+m=3 plain W=1                    img M=3 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [1, 1, 1] 
+m=3 plain W=1                    coimg M=3 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [1, 1, 1] 
+m=3 plain W=1                    opp M=3 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [1, 1, 1] P_w=0.0
+m=3 plain W=2                    img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 plain W=2                    coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 plain W=2                    opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 plain W=3                    img M=9 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3] 
+m=3 plain W=3                    coimg M=9 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3] 
+m=3 plain W=3                    opp M=9 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3] P_w=0.0
+m=3 pair trick                   img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 pair trick                   coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 pair trick                   opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 copy-move-copy               img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 copy-move-copy               coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 copy-move-copy               opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 gauge-exchange               img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 gauge-exchange               coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 gauge-exchange               opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 packing gadget               img M=7 Delta=-1  P_live: img/opp=0 frame=0 | P_asc=-1 (frame -1) | crossings per level [2, 2, 2] 
+m=3 packing gadget               coimg M=7 Delta=-1  P_live: img/opp=0 frame=0 | P_asc=-1 (frame -1) | crossings per level [2, 2, 2] 
+m=3 packing gadget               opp M=7 Delta=-1  P_live: img/opp=0 frame=0 | P_asc=-1 (frame -1) | crossings per level [2, 2, 2] P_w=-1.0
+m=3 order-3 control C6O3         img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 order-3 control C6O3         coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 order-3 control C6O3         opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 +-1 halving control C6H      img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 +-1 halving control C6H      coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 +-1 halving control C6H      opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 crossing pair                img M=6 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 4, 3] 
+m=3 crossing pair                coimg M=6 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 4, 3] 
+m=3 crossing pair                opp M=6 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 4, 3] P_w=4.0
+m=3 random crossing unit W=2 |C|=2 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=2 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=2 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random crossing unit W=2 |C|=1 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=1 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=1 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random crossing unit W=3 |C|=1 img M=9 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [5, 5, 3] 
+m=3 random crossing unit W=3 |C|=1 coimg M=9 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 5, 5] 
+m=3 random crossing unit W=3 |C|=1 opp M=9 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [5, 5, 3] P_w=4.0
+m=3 random crossing unit W=2 |C|=2 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=2 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=2 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random crossing unit W=2 |C|=1 img M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3, 2] 
+m=3 random crossing unit W=2 |C|=1 coimg M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [2, 3, 3] 
+m=3 random crossing unit W=2 |C|=1 opp M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3, 2] P_w=2.0
+m=3 random crossing unit W=3 |C|=2 img M=9 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [4, 5, 4] 
+m=3 random crossing unit W=3 |C|=2 coimg M=9 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [4, 5, 4] 
+m=3 random crossing unit W=3 |C|=2 opp M=9 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [4, 5, 4] P_w=4.0
+m=3 random crossing unit W=3 |C|=1 img M=9 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4, 3] 
+m=3 random crossing unit W=3 |C|=1 coimg M=9 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [3, 4, 5] 
+m=3 random crossing unit W=3 |C|=1 opp M=9 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 4, 3] P_w=3.0
+m=3 random crossing unit W=2 |C|=1 img M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [2, 4, 2] 
+m=3 random crossing unit W=2 |C|=1 coimg M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [2, 4, 2] 
+m=3 random crossing unit W=2 |C|=1 opp M=6 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [2, 4, 2] P_w=2.0
+m=3 random crossing unit W=3 |C|=1 img M=9 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 3, 5] 
+m=3 random crossing unit W=3 |C|=1 coimg M=9 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [5, 3, 4] 
+m=3 random crossing unit W=3 |C|=1 opp M=9 Delta=0  P_live: img/opp=3 frame=3 | P_asc=3 (frame 3) | crossings per level [4, 3, 5] P_w=3.0
+m=3 random crossing unit W=2 |C|=2 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=2 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=2 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random crossing unit W=2 |C|=2 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=2 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=2 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random crossing unit W=2 |C|=2 img M=6 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 4, 3] 
+m=3 random crossing unit W=2 |C|=2 coimg M=6 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 4, 3] 
+m=3 random crossing unit W=2 |C|=2 opp M=6 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 4, 3] P_w=4.0
+m=3 random crossing unit W=2 |C|=1 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=1 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=1 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random crossing unit W=3 |C|=2 img M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [5, 6, 4] 
+m=3 random crossing unit W=3 |C|=2 coimg M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [4, 6, 5] 
+m=3 random crossing unit W=3 |C|=2 opp M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [5, 6, 4] P_w=6.0
+m=3 random crossing unit W=3 |C|=2 img M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [5, 6, 4] 
+m=3 random crossing unit W=3 |C|=2 coimg M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [4, 6, 5] 
+m=3 random crossing unit W=3 |C|=2 opp M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [5, 6, 4] P_w=6.0
+m=3 random crossing unit W=2 |C|=1 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=1 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=1 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random crossing unit W=3 |C|=2 img M=9 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3] 
+m=3 random crossing unit W=3 |C|=2 coimg M=9 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3] 
+m=3 random crossing unit W=3 |C|=2 opp M=9 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random crossing unit W=3 |C|=2 img M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [4, 6, 5] 
+m=3 random crossing unit W=3 |C|=2 coimg M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [5, 6, 4] 
+m=3 random crossing unit W=3 |C|=2 opp M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [4, 6, 5] P_w=6.0
+m=3 random crossing unit W=3 |C|=2 img M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [5, 6, 4] 
+m=3 random crossing unit W=3 |C|=2 coimg M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [4, 6, 5] 
+m=3 random crossing unit W=3 |C|=2 opp M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [5, 6, 4] P_w=6.0
+m=3 random crossing unit W=2 |C|=1 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=1 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=1 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random crossing unit W=3 |C|=2 img M=9 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3] 
+m=3 random crossing unit W=3 |C|=2 coimg M=9 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3] 
+m=3 random crossing unit W=3 |C|=2 opp M=9 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random crossing unit W=2 |C|=1 img M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=1 coimg M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] 
+m=3 random crossing unit W=2 |C|=1 opp M=6 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random crossing unit W=3 |C|=2 img M=9 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [4, 5, 4] 
+m=3 random crossing unit W=3 |C|=2 coimg M=9 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [4, 5, 4] 
+m=3 random crossing unit W=3 |C|=2 opp M=9 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [4, 5, 4] P_w=4.0
+m=3 random crossing unit W=3 |C|=1 img M=9 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 4, 4] 
+m=3 random crossing unit W=3 |C|=1 coimg M=9 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4, 3] 
+m=3 random crossing unit W=3 |C|=1 opp M=9 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 4, 4] P_w=2.0
+m=3 random crossing unit W=3 |C|=2 img M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [4, 6, 5] 
+m=3 random crossing unit W=3 |C|=2 coimg M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [5, 6, 4] 
+m=3 random crossing unit W=3 |C|=2 opp M=9 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [4, 6, 5] P_w=6.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=3    img M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    coimg M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    opp M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=3    img M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    coimg M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    opp M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=3    img M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    coimg M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    opp M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random order-3 packer W=3    img M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    coimg M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    opp M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random order-3 packer W=3    img M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    coimg M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    opp M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random order-3 packer W=3    img M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    coimg M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    opp M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random order-3 packer W=3    img M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    coimg M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    opp M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=3    img M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    coimg M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    opp M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=3    img M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    coimg M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    opp M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=2    img M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    coimg M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] 
+m=3 random order-3 packer W=2    opp M=6 Delta=0  P_live: img/opp=0 frame=3 | P_asc=0 (frame 3) | crossings per level [2, 2, 2] P_w=0.0
+m=3 random order-3 packer W=3    img M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    coimg M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] 
+m=3 random order-3 packer W=3    opp M=9 Delta=0  P_live: img/opp=0 frame=6 | P_asc=0 (frame 6) | crossings per level [3, 3, 3] P_w=0.0
+m=4 plain W=1                    img M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [1, 1, 1, 1] 
+m=4 plain W=1                    coimg M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [1, 1, 1, 1] 
+m=4 plain W=1                    opp M=4 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [1, 1, 1, 1] P_w=0.0
+m=4 plain W=2                    img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 plain W=2                    coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 plain W=2                    opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 plain W=3                    img M=12 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3, 3] 
+m=4 plain W=3                    coimg M=12 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3, 3] 
+m=4 plain W=3                    opp M=12 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 pair trick                   img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 pair trick                   coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 pair trick                   opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 copy-move-copy               img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 copy-move-copy               coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 copy-move-copy               opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 gauge-exchange               img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 gauge-exchange               coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 gauge-exchange               opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 packing gadget               img M=9 Delta=-1  P_live: img/opp=0 frame=0 | P_asc=-1 (frame -1) | crossings per level [2, 2, 2, 2] 
+m=4 packing gadget               coimg M=9 Delta=-1  P_live: img/opp=0 frame=0 | P_asc=-1 (frame -1) | crossings per level [2, 2, 2, 2] 
+m=4 packing gadget               opp M=9 Delta=-1  P_live: img/opp=0 frame=0 | P_asc=-1 (frame -1) | crossings per level [2, 2, 2, 2] P_w=-1.0
+m=4 order-3 control C8O3         img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 order-3 control C8O3         coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 order-3 control C8O3         opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 +-1 halving control C8H      img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 +-1 halving control C8H      coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 +-1 halving control C8H      opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 crossing pair                img M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] 
+m=4 crossing pair                coimg M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] 
+m=4 crossing pair                opp M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] P_w=6.0
+m=4 random crossing unit W=2 |C|=2 img M=8 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [2, 4, 4, 2] 
+m=4 random crossing unit W=2 |C|=2 coimg M=8 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [2, 4, 4, 2] 
+m=4 random crossing unit W=2 |C|=2 opp M=8 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [2, 4, 4, 2] P_w=4.0
+m=4 random crossing unit W=3 |C|=2 img M=12 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4, 3, 3] 
+m=4 random crossing unit W=3 |C|=2 coimg M=12 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 3, 4, 4] 
+m=4 random crossing unit W=3 |C|=2 opp M=12 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [4, 4, 3, 3] P_w=2.0
+m=4 random crossing unit W=2 |C|=2 img M=8 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 4, 3, 2] 
+m=4 random crossing unit W=2 |C|=2 coimg M=8 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [2, 3, 4, 3] 
+m=4 random crossing unit W=2 |C|=2 opp M=8 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 4, 3, 2] P_w=4.0
+m=4 random crossing unit W=3 |C|=2 img M=12 Delta=0  P_live: img/opp=8 frame=8 | P_asc=8 (frame 8) | crossings per level [5, 5, 5, 5] 
+m=4 random crossing unit W=3 |C|=2 coimg M=12 Delta=0  P_live: img/opp=8 frame=8 | P_asc=8 (frame 8) | crossings per level [5, 5, 5, 5] 
+m=4 random crossing unit W=3 |C|=2 opp M=12 Delta=0  P_live: img/opp=8 frame=8 | P_asc=8 (frame 8) | crossings per level [5, 5, 5, 5] P_w=8.0
+m=4 random crossing unit W=2 |C|=2 img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=2 coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=2 opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random crossing unit W=3 |C|=2 img M=12 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 6, 6, 3] 
+m=4 random crossing unit W=3 |C|=2 coimg M=12 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 6, 6, 3] 
+m=4 random crossing unit W=3 |C|=2 opp M=12 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 6, 6, 3] P_w=6.0
+m=4 random crossing unit W=2 |C|=2 img M=8 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 4, 3, 2] 
+m=4 random crossing unit W=2 |C|=2 coimg M=8 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [2, 3, 4, 3] 
+m=4 random crossing unit W=2 |C|=2 opp M=8 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 4, 3, 2] P_w=4.0
+m=4 random crossing unit W=3 |C|=1 img M=12 Delta=0  P_live: img/opp=5 frame=5 | P_asc=5 (frame 5) | crossings per level [3, 8, 3, 3] 
+m=4 random crossing unit W=3 |C|=1 coimg M=12 Delta=0  P_live: img/opp=5 frame=5 | P_asc=5 (frame 5) | crossings per level [3, 3, 8, 3] 
+m=4 random crossing unit W=3 |C|=1 opp M=12 Delta=0  P_live: img/opp=5 frame=5 | P_asc=5 (frame 5) | crossings per level [3, 8, 3, 3] P_w=5.0
+m=4 random crossing unit W=3 |C|=3 img M=12 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [4, 5, 5, 4] 
+m=4 random crossing unit W=3 |C|=3 coimg M=12 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [4, 5, 5, 4] 
+m=4 random crossing unit W=3 |C|=3 opp M=12 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [4, 5, 5, 4] P_w=6.0
+m=4 random crossing unit W=2 |C|=3 img M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] 
+m=4 random crossing unit W=2 |C|=3 coimg M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] 
+m=4 random crossing unit W=2 |C|=3 opp M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] P_w=6.0
+m=4 random crossing unit W=2 |C|=2 img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=2 coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=2 opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random crossing unit W=3 |C|=1 img M=12 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 5, 7, 3] 
+m=4 random crossing unit W=3 |C|=1 coimg M=12 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 7, 5, 3] 
+m=4 random crossing unit W=3 |C|=1 opp M=12 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 5, 7, 3] P_w=6.0
+m=4 random crossing unit W=3 |C|=2 img M=12 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 4, 4, 3] 
+m=4 random crossing unit W=3 |C|=2 coimg M=12 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 4, 4, 3] 
+m=4 random crossing unit W=3 |C|=2 opp M=12 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 4, 4, 3] P_w=2.0
+m=4 random crossing unit W=3 |C|=1 img M=12 Delta=0  P_live: img/opp=5 frame=5 | P_asc=5 (frame 5) | crossings per level [5, 5, 4, 3] 
+m=4 random crossing unit W=3 |C|=1 coimg M=12 Delta=0  P_live: img/opp=5 frame=5 | P_asc=5 (frame 5) | crossings per level [3, 4, 5, 5] 
+m=4 random crossing unit W=3 |C|=1 opp M=12 Delta=0  P_live: img/opp=5 frame=5 | P_asc=5 (frame 5) | crossings per level [5, 5, 4, 3] P_w=5.0
+m=4 random crossing unit W=2 |C|=3 img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=3 coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=3 opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random crossing unit W=3 |C|=2 img M=12 Delta=0  P_live: img/opp=10 frame=10 | P_asc=10 (frame 10) | crossings per level [5, 6, 6, 5] 
+m=4 random crossing unit W=3 |C|=2 coimg M=12 Delta=0  P_live: img/opp=10 frame=10 | P_asc=10 (frame 10) | crossings per level [5, 6, 6, 5] 
+m=4 random crossing unit W=3 |C|=2 opp M=12 Delta=0  P_live: img/opp=10 frame=10 | P_asc=10 (frame 10) | crossings per level [5, 6, 6, 5] P_w=10.0
+m=4 random crossing unit W=3 |C|=3 img M=12 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3, 3] 
+m=4 random crossing unit W=3 |C|=3 coimg M=12 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3, 3] 
+m=4 random crossing unit W=3 |C|=3 opp M=12 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random crossing unit W=3 |C|=2 img M=12 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 5, 5, 3] 
+m=4 random crossing unit W=3 |C|=2 coimg M=12 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 5, 5, 3] 
+m=4 random crossing unit W=3 |C|=2 opp M=12 Delta=0  P_live: img/opp=4 frame=4 | P_asc=4 (frame 4) | crossings per level [3, 5, 5, 3] P_w=4.0
+m=4 random crossing unit W=2 |C|=1 img M=8 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [2, 3, 3, 2] 
+m=4 random crossing unit W=2 |C|=1 coimg M=8 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [2, 3, 3, 2] 
+m=4 random crossing unit W=2 |C|=1 opp M=8 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [2, 3, 3, 2] P_w=2.0
+m=4 random crossing unit W=2 |C|=2 img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=2 coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=2 opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random crossing unit W=2 |C|=3 img M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] 
+m=4 random crossing unit W=2 |C|=3 coimg M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] 
+m=4 random crossing unit W=2 |C|=3 opp M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] P_w=6.0
+m=4 random crossing unit W=2 |C|=3 img M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] 
+m=4 random crossing unit W=2 |C|=3 coimg M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] 
+m=4 random crossing unit W=2 |C|=3 opp M=8 Delta=0  P_live: img/opp=6 frame=6 | P_asc=6 (frame 6) | crossings per level [3, 4, 4, 3] P_w=6.0
+m=4 random crossing unit W=2 |C|=3 img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=3 coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=3 opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random crossing unit W=2 |C|=1 img M=8 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [2, 3, 2, 3] 
+m=4 random crossing unit W=2 |C|=1 coimg M=8 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [3, 2, 3, 2] 
+m=4 random crossing unit W=2 |C|=1 opp M=8 Delta=0  P_live: img/opp=2 frame=2 | P_asc=2 (frame 2) | crossings per level [2, 3, 2, 3] P_w=2.0
+m=4 random crossing unit W=2 |C|=3 img M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=3 coimg M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] 
+m=4 random crossing unit W=2 |C|=3 opp M=8 Delta=0  P_live: img/opp=0 frame=0 | P_asc=0 (frame 0) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=3    img M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    coimg M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    opp M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=3    img M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    coimg M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    opp M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=3    img M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    coimg M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    opp M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=3    img M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    coimg M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    opp M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random order-3 packer W=3    img M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    coimg M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    opp M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random order-3 packer W=3    img M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    coimg M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    opp M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=3    img M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    coimg M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    opp M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=3    img M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    coimg M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    opp M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+m=4 random order-3 packer W=3    img M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    coimg M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    opp M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random order-3 packer W=3    img M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    coimg M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] 
+m=4 random order-3 packer W=3    opp M=12 Delta=0  P_live: img/opp=0 frame=8 | P_asc=0 (frame 8) | crossings per level [3, 3, 3, 3] P_w=0.0
+m=4 random order-3 packer W=2    img M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    coimg M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] 
+m=4 random order-3 packer W=2    opp M=8 Delta=0  P_live: img/opp=0 frame=4 | P_asc=0 (frame 4) | crossings per level [2, 2, 2, 2] P_w=0.0
+
+SUMMARY: 459 rows, 0 violations

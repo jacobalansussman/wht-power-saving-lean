@@ -1,0 +1,79 @@
+[timing lock] waiting for timing lock 05:38:21
+[timing lock] got lock 05:39:31; load: { 15.01 8.62 8.27 }
+Mon Oct 12 05:39:31 EDT 2026
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=1024 mode=mt SW=64 PFD=4 col radices: 2 8 8 8
+# FFTW plans (MEASURE, time limit) took 0.0 s
+# cluster: NEON threads use KFR-d; SME takes 8 row units (8 rows each) at a time; tail 3
+CHECK cluster step (1 SME + 3 NEON) read at -n vs pocketfft: max rel 1.537e-15  PASS
+CHECK cluster step (4 NEON) read at -n vs pocketfft: max rel 7.784e-16  PASS
+## cluster propagation step 1024^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  cluster 1 SME + 3 NEON             4.1134
+rep  0  cluster 4 NEON (same plan)         5.1240
+rep  0  1 SME thread (others spin)         5.6193
+rep  1  cluster 4 NEON (same plan)         4.0822
+rep  1  1 SME thread (others spin)         5.1775
+rep  1  cluster 1 SME + 3 NEON             3.1755
+rep  2  1 SME thread (others spin)         5.1669
+rep  2  cluster 1 SME + 3 NEON             3.1723
+rep  2  cluster 4 NEON (same plan)         3.9429
+rep  3  cluster 1 SME + 3 NEON             3.1960
+rep  3  cluster 4 NEON (same plan)         3.9656
+rep  3  1 SME thread (others spin)         5.1852
+rep  4  cluster 4 NEON (same plan)         3.9538
+rep  4  1 SME thread (others spin)         5.1923
+rep  4  cluster 1 SME + 3 NEON             3.1785
+rep  5  1 SME thread (others spin)         5.3214
+rep  5  cluster 1 SME + 3 NEON             3.2765
+rep  5  cluster 4 NEON (same plan)         3.9594
+rep  6  cluster 1 SME + 3 NEON             3.1757
+rep  6  cluster 4 NEON (same plan)         3.9640
+rep  6  1 SME thread (others spin)         5.2088
+rep  7  cluster 4 NEON (same plan)         4.5758
+rep  7  1 SME thread (others spin)         5.6451
+rep  7  cluster 1 SME + 3 NEON             3.2537
+rep  8  1 SME thread (others spin)         5.1726
+rep  8  cluster 1 SME + 3 NEON             3.1732
+rep  8  cluster 4 NEON (same plan)         4.0457
+RESULT cluster propagation step 1024^2 c128     cluster 1 SME + 3 NEON       best     3.1723  median     3.1785  ns/call(ms)  (calls/rep 55)
+RESULT cluster propagation step 1024^2 c128     cluster 4 NEON (same plan)   best     3.9429  median     3.9656  ns/call(ms)  (calls/rep 44)
+RESULT cluster propagation step 1024^2 c128     1 SME thread (others spin)   best     5.1669  median     5.1923  ns/call(ms)  (calls/rep 36)
+Mon Oct 12 05:39:37 EDT 2026
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=4096 mode=mt SW=16 PFD=4 col radices: 8 8 8 8
+# FFTW plans (MEASURE, time limit) took 0.0 s
+# cluster: NEON threads use KFR-d; SME takes 8 row units (8 rows each) at a time; tail 3
+CHECK cluster step (1 SME + 3 NEON) read at -n vs pocketfft: max rel 1.562e-15  PASS
+CHECK cluster step (4 NEON) read at -n vs pocketfft: max rel 7.999e-16  PASS
+## cluster propagation step 4096^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  cluster 1 SME + 3 NEON            54.1455
+rep  0  cluster 4 NEON (same plan)        70.9428
+rep  0  1 SME thread (others spin)        84.6889
+rep  1  cluster 4 NEON (same plan)        70.2481
+rep  1  1 SME thread (others spin)        86.4387
+rep  1  cluster 1 SME + 3 NEON            54.5239
+rep  2  1 SME thread (others spin)        84.9012
+rep  2  cluster 1 SME + 3 NEON            54.4759
+rep  2  cluster 4 NEON (same plan)        71.4820
+rep  3  cluster 1 SME + 3 NEON            54.4088
+rep  3  cluster 4 NEON (same plan)        70.9292
+rep  3  1 SME thread (others spin)        85.1374
+rep  4  cluster 4 NEON (same plan)        72.1585
+rep  4  1 SME thread (others spin)        85.8877
+rep  4  cluster 1 SME + 3 NEON            54.7191
+rep  5  1 SME thread (others spin)        84.4499
+rep  5  cluster 1 SME + 3 NEON            54.6301
+rep  5  cluster 4 NEON (same plan)        71.2250
+rep  6  cluster 1 SME + 3 NEON            56.2515
+rep  6  cluster 4 NEON (same plan)        70.4581
+rep  6  1 SME thread (others spin)        85.2235
+rep  7  cluster 4 NEON (same plan)        71.4327
+rep  7  1 SME thread (others spin)        86.2862
+rep  7  cluster 1 SME + 3 NEON            60.6467
+rep  8  1 SME thread (others spin)        97.0800
+rep  8  cluster 1 SME + 3 NEON            60.9933
+rep  8  cluster 4 NEON (same plan)        73.3823
+RESULT cluster propagation step 4096^2 c128     cluster 1 SME + 3 NEON       best    54.1455  median    54.6301  ns/call(ms)  (calls/rep 5)
+RESULT cluster propagation step 4096^2 c128     cluster 4 NEON (same plan)   best    70.2481  median    71.2250  ns/call(ms)  (calls/rep 4)
+RESULT cluster propagation step 4096^2 c128     1 SME thread (others spin)   best    84.4499  median    85.2235  ns/call(ms)  (calls/rep 3)
+Mon Oct 12 05:39:47 EDT 2026

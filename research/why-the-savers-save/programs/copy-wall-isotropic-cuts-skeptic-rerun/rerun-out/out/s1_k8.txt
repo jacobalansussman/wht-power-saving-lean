@@ -1,0 +1,17 @@
+removed-octad labels o_k: [364, 193, 342, 251, 162, 271, 152, 309]  isotropic? [False, False, False, False, False, False, False, False]
+the 8 classes with omega 7: [147, 169, 202, 240, 260, 318, 349, 359]
+  h 147  weight 4  |C_h| 56  omega(complement) 4  C_h equals C_{o_k} for k in []  h.o_k = [0, 0, 0, 0, 0, 0, 0, 0]
+  h 169  weight 4  |C_h| 56  omega(complement) 4  C_h equals C_{o_k} for k in []  h.o_k = [0, 0, 0, 0, 0, 0, 0, 0]
+  h 202  weight 4  |C_h| 56  omega(complement) 4  C_h equals C_{o_k} for k in []  h.o_k = [0, 0, 0, 0, 0, 0, 0, 0]
+  h 240  weight 4  |C_h| 56  omega(complement) 4  C_h equals C_{o_k} for k in []  h.o_k = [0, 0, 0, 0, 0, 0, 0, 0]
+  h 260  weight 2  |C_h| 56  omega(complement) 4  C_h equals C_{o_k} for k in []  h.o_k = [0, 0, 0, 0, 0, 0, 0, 0]
+  h 318  weight 6  |C_h| 56  omega(complement) 4  C_h equals C_{o_k} for k in []  h.o_k = [0, 0, 0, 0, 0, 0, 0, 0]
+  h 349  weight 6  |C_h| 56  omega(complement) 4  C_h equals C_{o_k} for k in []  h.o_k = [0, 0, 0, 0, 0, 0, 0, 0]
+  h 359  weight 6  |C_h| 56  omega(complement) 4  C_h equals C_{o_k} for k in []  h.o_k = [0, 0, 0, 0, 0, 0, 0, 0]
+(K0=7, one class) omega of complement of C_h, by |C_h|:
+   |C_h| 48  omega(complement) 8 : 7
+   |C_h| 52  omega(complement) 8 : 112
+   |C_h| 56  omega(complement) 4 : 8
+   |C_h| 56  omega(complement) 8 : 16
+   |C_h| 60  omega(complement) 4 : 112
+(K0=6, two classes) omega of the unclassed rest over all pairs: [(3, 224), (4, 23116), (7, 288), (8, 8757)]

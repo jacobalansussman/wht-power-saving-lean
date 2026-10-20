@@ -1,0 +1,18 @@
+f=2 pi=(1+-Z1)/2: Q: |half|=0.50 |R8|/|half|=0.0e+00 | fib: |half|=0.56 |R8|/|half|=0.0e+00 | full: |half|=0.64 |R8|/|half|=1.3e+00
+      seeded at Q: |fam(1e-5)-fam(1e-7)|/|fam| = 1.3e-05 (converges)  |fam - PropS twin|/|twin| = 7.94e-01  fibrewise |fam(1e-7)|/sqrt(n) = 1.84
+f=2 pi=(1+-lZ1)/2: Q: |half|=0.50 |R8|/|half|=0.0e+00 | fib: |half|=0.42 |R8|/|half|=0.0e+00 | full: |half|=0.62 |R8|/|half|=1.2e+00
+      seeded at Q: |fam(1e-5)-fam(1e-7)|/|fam| = 1.4e-05 (converges)  |fam - PropS twin|/|twin| = 8.54e-01  fibrewise |fam(1e-7)|/sqrt(n) = 2.07
+f=2 pi=(1+-X1)/2: Q: |half|=0.00 |R8|/|half|=0.0e+00 | fib: |half|=0.23 |R8|/|half|=2.8e-16 | full: |half|=0.59 |R8|/|half|=1.4e+00
+      seeded at Q: |fam(1e-5)-fam(1e-7)|/|fam| = 1.5e-05 (converges)  |fam - PropS twin|/|twin| = 1.49e-07  fibrewise |fam(1e-7)|/sqrt(n) = 2.16
+f=3 pi=(1+-Z1)/2: Q: |half|=0.50 |R8|/|half|=0.0e+00 | fib: |half|=0.60 |R8|/|half|=0.0e+00 | full: |half|=0.63 |R8|/|half|=1.2e+00
+      seeded at Q: |fam(1e-5)-fam(1e-7)|/|fam| = 1.3e-05 (converges)  |fam - PropS twin|/|twin| = 8.37e-01  fibrewise |fam(1e-7)|/sqrt(n) = 2.41
+f=3 pi=(1+-lZ1)/2: Q: |half|=0.50 |R8|/|half|=0.0e+00 | fib: |half|=0.54 |R8|/|half|=0.0e+00 | full: |half|=0.61 |R8|/|half|=1.2e+00
+      seeded at Q: |fam(1e-5)-fam(1e-7)|/|fam| = 1.4e-05 (converges)  |fam - PropS twin|/|twin| = 8.47e-01  fibrewise |fam(1e-7)|/sqrt(n) = 2.21
+f=3 pi=(1+-X1)/2: Q: |half|=0.00 |R8|/|half|=0.0e+00 | fib: |half|=0.48 |R8|/|half|=1.8e-16 | full: |half|=0.62 |R8|/|half|=1.2e+00
+      seeded at Q: |fam(1e-5)-fam(1e-7)|/|fam| = 1.4e-05 (converges)  |fam - PropS twin|/|twin| = 1.46e-07  fibrewise |fam(1e-7)|/sqrt(n) = 1.71
+f=4 pi=(1+-Z1)/2: Q: |half|=0.50 |R8|/|half|=0.0e+00 | fib: |half|=0.51 |R8|/|half|=0.0e+00 | full: |half|=0.61 |R8|/|half|=1.2e+00
+      seeded at Q: |fam(1e-5)-fam(1e-7)|/|fam| = 1.3e-05 (converges)  |fam - PropS twin|/|twin| = 8.39e-01  fibrewise |fam(1e-7)|/sqrt(n) = 2.04
+f=4 pi=(1+-lZ1)/2: Q: |half|=0.50 |R8|/|half|=0.0e+00 | fib: |half|=0.48 |R8|/|half|=0.0e+00 | full: |half|=0.61 |R8|/|half|=1.2e+00
+      seeded at Q: |fam(1e-5)-fam(1e-7)|/|fam| = 1.3e-05 (converges)  |fam - PropS twin|/|twin| = 8.34e-01  fibrewise |fam(1e-7)|/sqrt(n) = 2.12
+f=4 pi=(1+-X1)/2: Q: |half|=0.00 |R8|/|half|=0.0e+00 | fib: |half|=0.46 |R8|/|half|=1.8e-16 | full: |half|=0.62 |R8|/|half|=1.2e+00
+      seeded at Q: |fam(1e-5)-fam(1e-7)|/|fam| = 1.4e-05 (converges)  |fam - PropS twin|/|twin| = 1.44e-07  fibrewise |fam(1e-7)|/sqrt(n) = 2.07

@@ -1,0 +1,183 @@
+{
+  "format": "certificate-package/1 (as community/*/result.json of jacobalansussman/wht-power-saving-lean)",
+  "name": "lever",
+  "suffix": "L3945",
+  "title": "The community's #3945 circuit with the recursion lever (half cut: 57,312 heads cut by 24 of their 48 axes, target 49), on the mixed-target recursion",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "numerator": 17501109,
+  "negative_numerator": 17501110,
+  "saving": "1.7501109e-3",
+  "exponent": "1 - 17501109/10^10",
+  "exponents": {
+    "statement": "1 - 17501109/10^10",
+    "seam_alpha": "1 - (100*17501109 + 1)/10^12",
+    "rate_point": "1 - (100*17501109 + 2)/10^12",
+    "mixed_root": "1.7501109246e-3"
+  },
+  "mode": "add",
+  "requires": [
+    "u8x0hq"
+  ],
+  "lakefile_add": [],
+  "tree_change": "lakefile.lean gains no line of its own; package/u8x0hq, laid first, adds its two library lines: lean_lib XExit where globs := #[`XExit.+] and lean_lib CSX where globs := #[`CSX.+]",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainL3945",
+    "OAI.PowerSaving.convolution_mainL3945"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainL3945",
+    "OAI.PowerSaving.convolution_mainL3945",
+    "OAI.PowerSaving.RAM.hillsL3945_program"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierL3945.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierL3945Neg.UniformFourierChallenge",
+  "solution_module": "Work.FourierL3945.Main",
+  "axioms_file": "Work/FourierL3945/Axioms.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentL3945",
+  "build_targets": [
+    "Work.L3945.Stmt",
+    "Work.L3945.Engine",
+    "Work.FourierL3945.Main",
+    "Work.FourierL3945.UniformFourierChallenge",
+    "Work.FourierL3945Neg.UniformFourierChallenge",
+    "Work.FourierL3945.Axioms"
+  ],
+  "lean_controls": [
+    {
+      "name": "rate-fails-one-unit-higher",
+      "file": "controls/Rate3945SharpCtl.lean",
+      "what": "Lean proves the rate fact fails at every saving of 1.7501110e-3 or more (rate3945_fails; e-r45m1 RateMono + Rate3945Sharp in one file)"
+    },
+    {
+      "name": "host-table-one-step-too-far",
+      "file": "controls/Heads3945Neg.lean",
+      "what": "Lean's kernel decides that #3945's table has NOT 57,313 heads and that NOT every residual is at least 6"
+    }
+  ],
+  "comparator": {
+    "positive": "comparator/fourier-l3945.json",
+    "negative": "comparator/fourier-l3945-neg.json"
+  },
+  "circuit": {
+    "community_pr": "#3945",
+    "head": "91f81d13",
+    "replicas": 360,
+    "calls": 3240,
+    "arrays_W": 322560,
+    "roles": 1321920,
+    "paid_profile_uniform": {
+      "1": 8041680,
+      "2": 2306880,
+      "3": 729648,
+      "4": 353160,
+      "5": 69120,
+      "8": 25920,
+      "48": 137952
+    },
+    "heads": 57312,
+    "other_rank48": 80640,
+    "paid_profile_half_cut": {
+      "1": 8041680,
+      "2": 2306880,
+      "3": 729648,
+      "4": 353160,
+      "5": 69120,
+      "8": 25920,
+      "24": 57312,
+      "48": 80640
+    },
+    "targets_half_cut": {
+      "73": 265248,
+      "49": 57312
+    }
+  },
+  "checks": {
+    "build (19 Oct 2026, Colab C4)": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/build.out",
+      "note": "over a built copy of the package/u8x0hq stack: light kernel-data modules 14 min 44 s (8 threads), the rest 18 min 6 s (3 threads), 9.1 GiB at most"
+    },
+    "axioms": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/l3945/axioms.log",
+      "note": "both theorems and hillsL3945_program; also the engine, the seam and the rate (axioms-extra.log)"
+    },
+    "source scan": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/l3945/sorry-grep.txt",
+      "note": "401 files: no sorry or admit outside the statement files; no forbidden construct (forbidden-grep.txt)"
+    },
+    "statement files derived from OpenAI's": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/final.out",
+      "note": "both byte-identical to the derivation with 17501109 and 17501110 (l3945/derived-*.lean)"
+    },
+    "Compare.lean positive": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/l3945/compare-pos.log",
+      "note": "RESULT: PASS, 98 s, 15.3 GiB"
+    },
+    "Compare.lean negative": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/l3945/compare-neg.log",
+      "note": "RESULT: FAIL on decimalExponentL3945"
+    },
+    "official comparator positive (stand-in sandbox)": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/L3945-cmp.out",
+      "note": "nanoda and Lean's kernel accept; 5494 s, 14.4 GiB"
+    },
+    "official comparator negative": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/L3945-cmp.out",
+      "note": "rejected: Const does not match (decimalExponentL3945)"
+    },
+    "leaderboard verifier re-created offline (c92b9b6)": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/L3945-bos.out",
+      "note": "Lean check 6963 s from source (700 modules, 3 threads, 9.6 GiB), axiom audit, nanoda 4974 s; the bound one grid step higher rejected"
+    },
+    "Lean control: the rate fact fails one unit higher": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/controls/Rate3945SharpCtl.log",
+      "note": "rate3945_fails, standard axioms"
+    },
+    "Lean control: the table of hosts has not one head more": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/controls/Heads3945Neg.log",
+      "note": "heads_cnt_ne_succ and res_ge0_6_false by the kernel; must-fail negatives in neg/"
+    },
+    "the packages laid over the base equal the checked tree": {
+      "status": "pass",
+      "log": "logs/2026-10-19-build/tree-equality.txt",
+      "note": "Shea's base + package/u8x0hq + package/lever = the 1,110 files of the checked tree, except lakefile.lean's comments"
+    },
+    "Lean data regenerated by the generators": {
+      "status": "not run",
+      "log": "",
+      "note": "tools/gen/ not yet collected"
+    },
+    "independent rebuild (skeptic)": {
+      "status": "not run",
+      "log": "",
+      "note": ""
+    },
+    "published scripts on a fresh base, 19 Oct 2026 (apply-overlay, build-and-check)": {
+      "status": "pass",
+      "log": "logs/2026-10-19-published-scripts/pubtest.out",
+      "note": "Colab C3, a fresh copy of Shea's built tree: apply-overlay.sh laid package/u8x0hq and package/lever; one parallel lake build of every module (32 minutes, 9.1 GiB at most); build-and-check.sh as published: every Lean check passed; the first run failed only the lakefile rule (this package's tree_change did not quote package/u8x0hq's two library lines); with tree_change fixed, the script's own evaluation re-run on the same logs: ALL CHECKS PASSED (pubtest/eval-fixed.out)"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+m=3: order-3 control, end solves ['yes', 'yes']; raw-gauge packing P = 3 (expected m = 3)
+   output 0: solution of 6 terms re-verified exactly: True
+   output 1: solution of 6 terms re-verified exactly: True
+   r2 cut by one move: ['no', 'no']
+m=4: order-3 control, end solves ['yes', 'yes']; raw-gauge packing P = 4 (expected m = 4)
+   output 0: solution of 6 terms re-verified exactly: True
+   output 1: solution of 6 terms re-verified exactly: True
+   r2 cut by one move: ['no', 'no']

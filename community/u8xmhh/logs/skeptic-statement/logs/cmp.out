@@ -1,0 +1,34 @@
+VCMP START Wed Oct 14 01:06:27 UTC 2026
+copy done in 75s; owner of .lake: nobody mathlib: nobody
+2c2
+< # fs-build copy (13 Oct 2026) of k-build's copy: identical to c-base's jail2.sh except the nounix path (/content/work/fs-build/cc/nounix).
+---
+> # fs-build copy (13 Oct 2026) of k-build's copy: identical to c-base's jail2.sh except the nounix path (/content/work/v-fs-statement/cc/nounix).
+35c35
+< exec setpriv --reuid 65534 --regid 65534 --clear-groups --bounding-set -all --inh-caps -all --no-new-privs -- /content/work/fs-build/cc/nounix "$@"
+---
+> exec setpriv --reuid 65534 --regid 65534 --clear-groups --bounding-set -all --inh-caps -all --no-new-privs -- /content/work/v-fs-statement/cc/nounix "$@"
+tools: afa65e57a1770f59 /content/work/cc/bin/comparator 8c5d64ba68f4d3a6 /content/work/cc/bin/lean4export c9cecac22f9631c0 /content/work/cc/bin/nanoda_bin 1e6528c3f2c8b10b /content/work/v-fs-statement/cc/nounix 01f56ebe57de64f1 /content/work/v-fs-statement/cc/fresh-bin/lake 
+challenge sha256: 108410500f6d97bbc0430e3b594e53f5518a297a8d1721e1ac32008a311cae33 neg: 47d346880b50d40f7a68f18b977e4864cf15e0338cae053b181a93096de7f1c8
+=== vpos START Wed Oct 14 01:08:42 UTC 2026 (waited 0s) config 4f3017388ddfd463 comparator/fourier-u8xmhh.json
+=== vpos END rc=0 wall=841s Wed Oct 14 01:22:43 UTC 2026
+Building Work.FourierU8XMHH.UniformFourierChallenge
+warning: Work/FourierU8XMHH/UniformFourierChallenge.lean:326:8: declaration uses `sorry`
+warning: Work/FourierU8XMHH/UniformFourierChallenge.lean:330:8: declaration uses `sorry`
+Building Work.FourierU8XMHH.Main
+nanoda kernel accepts the solution
+Lean default kernel accepts the solution
+Your solution is okay!
+	Maximum resident set size (kbytes): 7031556
+	Exit status: 0
+=== vneg START Wed Oct 14 01:22:43 UTC 2026 (waited 0s) config c8290c3d43aaef05 comparator/fourier-u8xmhh-neg.json
+=== vneg END rc=1 wall=79s Wed Oct 14 01:24:02 UTC 2026
+Building Work.FourierU8XMHHNeg.UniformFourierChallenge
+warning: Work/FourierU8XMHHNeg/UniformFourierChallenge.lean:326:8: declaration uses `sorry`
+warning: Work/FourierU8XMHHNeg/UniformFourierChallenge.lean:330:8: declaration uses `sorry`
+Building Work.FourierU8XMHH.Main
+uncaught exception: Const does not match between challenge and target 'OAI.PowerSaving.decimalExponentU8XMHH'
+	Maximum resident set size (kbytes): 7014860
+	Exit status: 1
+VCMP END Wed Oct 14 01:24:02 UTC 2026
+EXIT 0

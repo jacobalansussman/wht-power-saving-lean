@@ -1,0 +1,10 @@
+== A2 --dup 2
+instance A2-x2: v 6, h 3, frame field Q, payload F_2; knows-pairs 0
+  star floor = 6   (branch and bound, nodes 20971); read sets of an optimal decoder:
+  one drop per port = 6
+== B2 --dup 2
+== f2h3-odd --dup 2
+instance f2h3-odd-x2: v 8, h 3, frame field 2, payload F_2; knows-pairs 24
+  star floor = 8   (branch and bound, nodes 2181166); read sets of an optimal decoder:
+  one drop per port = 8
+== A2 --dup 3

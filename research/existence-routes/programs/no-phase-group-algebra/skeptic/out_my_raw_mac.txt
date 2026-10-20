@@ -1,0 +1,26 @@
+Lemma R m=2 f=1: max rel err 2.21e-16
+Lemma R m=2 f=2: max rel err 2.64e-16
+Lemma R m=2 f=3: max rel err 3.80e-16
+Lemma R m=2 f=4: max rel err 3.21e-16
+Lemma R m=2 f=5: max rel err 2.81e-16
+Lemma R m=2 f=6: max rel err 4.37e-16
+Lemma R m=2 f=7: max rel err 4.11e-16
+Lemma R m=2 f=8: max rel err 4.33e-16
+Lemma R m=3 f=1: max rel err 2.24e-16
+Lemma R m=3 f=2: max rel err 3.61e-16
+Lemma R m=3 f=3: max rel err 4.19e-16
+Lemma R m=3 f=4: max rel err 4.34e-16
+Lemma R m=3 f=5: max rel err 4.18e-16
+Lemma R m=3 f=6: max rel err 4.68e-16
+m=3 f=1: Fano product of 7 corrected moves = 1: err 1.76e-16; P_h d'_z P_h^-1 = d'_hz: err 0.00e+00
+m=3 f=2: Fano product of 7 corrected moves = 1: err 4.23e-16; P_h d'_z P_h^-1 = d'_hz: err 0.00e+00
+m=3 f=3: Fano product of 7 corrected moves = 1: err 4.27e-16; P_h d'_z P_h^-1 = d'_hz: err 0.00e+00
+m=3 f=4: Fano product of 7 corrected moves = 1: err 4.46e-16; P_h d'_z P_h^-1 = d'_hz: err 0.00e+00
+m=3 f=5: Fano product of 7 corrected moves = 1: err 5.19e-16; P_h d'_z P_h^-1 = d'_hz: err 0.00e+00
+m=3 f=6: Fano product of 7 corrected moves = 1: err 4.88e-16; P_h d'_z P_h^-1 = d'_hz: err 0.00e+00
+f=1: U_3 lifted err 3.02e-16 | U_3 uncorrected err 1.46e+00 | T7 lifted err 4.60e-16 | T8 (must fail) err 1.85e-16
+f=2: U_3 lifted err 3.55e-16 | U_3 uncorrected err 1.16e+00 | T7 lifted err 3.96e-16 | T8 (must fail) err 1.02e+00
+f=3: U_3 lifted err 4.20e-16 | U_3 uncorrected err 1.38e+00 | T7 lifted err 3.51e-16 | T8 (must fail) err 1.56e+00
+f=4: U_3 lifted err 4.54e-16 | U_3 uncorrected err 1.25e+00 | T7 lifted err 4.50e-16 | T8 (must fail) err 1.44e+00
+f=5: U_3 lifted err 4.45e-16 | U_3 uncorrected err 1.45e+00 | T7 lifted err 5.21e-16 | T8 (must fail) err 1.97e+00
+f=6: U_3 lifted err 5.26e-16 | U_3 uncorrected err 1.63e+00 | T7 lifted err 5.17e-16 | T8 (must fail) err 1.40e+00

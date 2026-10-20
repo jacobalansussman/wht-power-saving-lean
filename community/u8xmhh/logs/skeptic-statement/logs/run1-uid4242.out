@@ -1,0 +1,18 @@
+VFS START Wed Oct 14 01:02:32 UTC 2026
+toolchain file: leanprover/lean4:v4.34.1
+LEAN_PATH=/content/work/fs-build/B/lean/complex588/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/Cli/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/Qq/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/aesop/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/batteries/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/importGraph/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/mathlib/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/plausible/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/proofwidgets/.lake/build/lib/lean
+--- source hashes in the tree
+21
+--- olean vs source mtimes (olean must be newer)
+FourierU8XMHH/UniformFourierChallenge src=21:23:42 olean=22:17:49 ok
+FourierU8XMHHNeg/UniformFourierChallenge src=21:23:42 olean=22:17:57 ok
+FourierU8XMHH/Main src=21:23:42 olean=22:19:29 ok
+FourierU8XMHH/Goal src=21:23:42 olean=22:17:41 ok
+FourierU8XMHH/Seam src=21:23:42 olean=22:18:04 ok
+XHost/U8XMHH src=21:23:42 olean=22:17:25 ok
+XHost/Data/HU8XMSched src=21:23:42 olean=22:13:12 ok
+XHost/Data/RateU8XMHHx src=21:23:42 olean=22:06:52 ok
+=== check START 01:02:32
+=== check END rc=1 wall=1s maxrss_kb=191100
+/content/work/v-fs-statement/VfsCheck.lean:1:0: error: failed to open file '/content/work/fs-build/B/lean/complex588/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib.olean': Permission denied
+=== cmp-pos START 01:02:33

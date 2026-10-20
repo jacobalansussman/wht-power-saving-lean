@@ -1,0 +1,28 @@
+A  H^(x)k = ((1+i)/2)^-k D C^(x)k D for k=1..6: True
+B  Bluestein (n=2..13, L=2^ceil) and Rader (p=3..13): max abs error 3.29e-14
+C  k=1: H diag(H e_s/N) H = xor-shift by s over F_10007 for all s,j: True
+C  k=2: H diag(H e_s/N) H = xor-shift by s over F_10007 for all s,j: True
+C  k=3: H diag(H e_s/N) H = xor-shift by s over F_10007 for all s,j: True
+C  k=4: H diag(H e_s/N) H = xor-shift by s over F_10007 for all s,j: True
+C  k=5: H diag(H e_s/N) H = xor-shift by s over F_10007 for all s,j: True
+C  composite network cost vs routing lower bound (rate-1, unit capacity):
+   k  N   relays  edges(code cost)  min_s sum dist  max_s sum dist  ratio edges/max_s
+   1    2  False        10           6           6  1.667
+   1    2  True         18          10          10  1.800
+   2    4  False        36          20          20  1.800
+   2    4  True         68          36          36  1.889
+   3    8  False       104          56          56  1.857
+   3    8  True        200         104         104  1.923
+   4   16  False       272         144         144  1.889
+   4   16  True        528         272         272  1.941
+   5   32  False       672         352         352  1.909
+   5   32  True       1312         672         672  1.952
+   6   64  False      1600         832         832  1.923
+   6   64  True       3136        1600        1600  1.960
+   7  128  False      3712        1920        1920  1.933
+   7  128  True       7296        3712        3712  1.966
+   8  256  False      8448        4352        4352  1.941
+   8  256  True      16640        8448        8448  1.970
+        1.85 real         1.82 user         0.02 sys
+           180060160  maximum resident set size
+           176144840  peak memory footprint

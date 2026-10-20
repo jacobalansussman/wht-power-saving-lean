@@ -1,0 +1,9 @@
+Part A: max Theta(R) = best exponent the duality allows from R; saving = 1 - max Theta
+  base only (plain, Kronecker, lower boundedness): max Theta = 1.0000 (saving 0.0000); Theta is [0, max]: True
+  + 1+4 in 10 at block 3 (rank-1 moves; ex-laser tau_c 0.8811): max Theta = 0.8811 (saving 0.1189); Theta is [0, max]: True; independent value 0.8811
+  + grouped test rule {3:1,2:4} <= {1:6,2:2} (ex-laser tau_c 0.8214): max Theta = 0.8214 (saving 0.1786); Theta is [0, max]: True; independent value 0.8214
+  + its recycled rank-1 form {3:1,2:2} <= {1:6}: max Theta = 0.8214 (saving 0.1786); Theta is [0, max]: True; independent value 0.8214
+  + grouped mixed {4:1,3:2} <= {1:5,2:2} (paid rank 2 not a target rank): max Theta = 0.8843 (saving 0.1157); Theta is [0, max]: True
+  + pure grouped 2[3] <= 3[1] + [2] (engine moment root): max Theta = 0.7813 (saving 0.2187); Theta is [0, max]: True
+  + hypothetical engine 2 in 5 at block 3 (proved impossible as a finite unit): max Theta = 0.8340 (saving 0.1660); Theta is [0, max]: True
+  2 in 5 at block 3 is in the ASYMPTOTIC closure of J iff theta* <= log_3(5/2) = 0.834 ; known: theta* <= 1 - 1.68e-3 and theta* >= 0 only, so the duality cannot refuse it.

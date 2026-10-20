@@ -1,0 +1,42 @@
+m=5 n=1 W=8 M=31: deletion failures 0, tight forms 240, live directions 31, max tight clique (virtual) 31, bound Wn = 8
+VERDICT: EXCLUDED (tight clique)
+Traceback (most recent call last):
+  File "vtest5.py", line 6, in <module>
+    m, n, power, W = (int(x) for x in sys.argv[1:5])
+  File "vtest5.py", line 6, in <genexpr>
+    m, n, power, W = (int(x) for x in sys.argv[1:5])
+ValueError: invalid literal for int() with base 10: '5 31 1 8 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1'
+Traceback (most recent call last):
+  File "vtest5.py", line 6, in <module>
+    m, n, power, W = (int(x) for x in sys.argv[1:5])
+  File "vtest5.py", line 6, in <genexpr>
+    m, n, power, W = (int(x) for x in sys.argv[1:5])
+ValueError: invalid literal for int() with base 10: '5 31 1 7 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1'
+Traceback (most recent call last):
+  File "vtest5.py", line 6, in <module>
+    m, n, power, W = (int(x) for x in sys.argv[1:5])
+  File "vtest5.py", line 6, in <genexpr>
+    m, n, power, W = (int(x) for x in sys.argv[1:5])
+ValueError: invalid literal for int() with base 10: '5 31 1 8 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1'
+Traceback (most recent call last):
+  File "vtest5.py", line 6, in <module>
+    m, n, power, W = (int(x) for x in sys.argv[1:5])
+  File "vtest5.py", line 6, in <genexpr>
+    m, n, power, W = (int(x) for x in sys.argv[1:5])
+ValueError: invalid literal for int() with base 10: '5 1 1 7 uniform:1'
+Traceback (most recent call last):
+  File "vtest5.py", line 6, in <module>
+    m, n, power, W = (int(x) for x in sys.argv[1:5])
+  File "vtest5.py", line 6, in <genexpr>
+    m, n, power, W = (int(x) for x in sys.argv[1:5])
+ValueError: invalid literal for int() with base 10: '5 1 1 8 1,2,4,8,16,1,2,4,8,16,1,2,4,8,16,1,2,4,8,16,1,2,4,8,16,1,2,4,8,16,1,2,4,8,16,1,2,4,8,16'
+m=5 n=31 W=8 M=31: deletion failures 0, tight forms 0, live directions 0, max tight clique (virtual) 0, bound Wn = 248
+VERDICT: not excluded
+m=5 n=31 W=7 M=31: deletion failures 0, tight forms 0, live directions 0, max tight clique (virtual) 0, bound Wn = 217
+VERDICT: not excluded
+m=5 n=31 W=8 M=40: deletion failures 0, tight forms 0, live directions 0, max tight clique (virtual) 0, bound Wn = 248
+VERDICT: not excluded
+m=5 n=1 W=7 M=31: deletion failures 0, tight forms 0, live directions 0, max tight clique (virtual) 0, bound Wn = 7
+VERDICT: not excluded
+m=5 n=1 W=8 M=40: deletion failures 0, tight forms 5120, live directions 31, max tight clique (virtual) 8, bound Wn = 8
+VERDICT: not excluded

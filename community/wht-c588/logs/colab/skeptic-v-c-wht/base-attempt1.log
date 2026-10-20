@@ -1,0 +1,40 @@
+=== START Tue Oct 13 18:35:59 UTC 2026 tree=/content/work/c-wht/lean/complex588 label=base
+git HEAD: 52394849c7ecf3412d39b925d75fc7fdb98994d8  status:
+?? Work/WHTC588/
+?? Work/WHTC588Neg/
+?? comparator/WHTC588-nanoda.json
+?? comparator/WHTC588.json
+?? comparator/WHTC588Neg.json
+LEAN_PATH=/content/work/v-c-wht/base/olean:/content/work/c-wht/lean/complex588/.lake/packages/Cli/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/batteries/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/Qq/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/aesop/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/proofwidgets/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/importGraph/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/plausible/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/mathlib/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/build/lib/lean
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+62100e5b36d482657d895f45ca9710a407d2f7ae6b89cddc2119a0009bfb31d3  Work/WHTC588/Axioms.lean
+f8141383a3c992c59d94e9ef08bc9df62e3f99a4daf37a69466606dcd365e9a9  Work/WHTC588/Challenge.lean
+e1d6f80254a717b972062f7060641877fa2e0f440961af6a9081d21e55fc8792  Work/WHTC588/Main.lean
+b54c77e36f2a191a7a9fdd7a345eab40c48e710f26285c454d41cecfb685aabf  Work/WHTC588/Solution.lean
+48b37f36164d1599d532e36f5dc014e3ae94420bd2b32d4f62be9023636f90ed  Work/WHTC588Neg/Challenge.lean
+e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  /content/work/ours/Compare.lean
+  (lean procs running at start: 3)
+--- fresh lean -o Work/WHTC588/Challenge.lean rc=0 wall=341s maxrss_kb=6465640
+Work/WHTC588/Challenge.lean:327:8: warning: declaration uses `sorry`
+  (lean procs running at start: 2)
+--- fresh lean -o Work/WHTC588Neg/Challenge.lean rc=0 wall=11s maxrss_kb=6585292
+Work/WHTC588Neg/Challenge.lean:327:8: warning: declaration uses `sorry`
+  (lean procs running at start: 2)
+--- fresh lean -o Work/WHTC588/Main.lean rc=1 wall=1s maxrss_kb=182824
+Work/WHTC588/Main.lean:1:0: error: object file '/content/work/v-c-wht/base/olean/Work/FourierC588/Seam.olean' of module Work.FourierC588.Seam does not exist
+  (lean procs running at start: 2)
+--- fresh lean -o Work/WHTC588/Solution.lean rc=1 wall=0s maxrss_kb=184064
+Work/WHTC588/Solution.lean:1:0: error: object file '/content/work/v-c-wht/base/olean/Work/WHTC588/Main.olean' of module Work.WHTC588.Main does not exist
+--- fresh olean sha256 vs the tree's olean (built by c-wht's lake build)
+  WHTC588/Challenge fresh=912909d8f1f6a0b3 tree=ec2a491bba7b0530 DIFFERENT
+  WHTC588Neg/Challenge fresh=0d29a4c175b463e8 tree=b6744b3e6e7d7533 DIFFERENT
+/content/work/v-c-wht/vcwht-fresh.sh: line 34: /content/work/v-c-wht/base/olean/Work/WHTC588/Main.olean: No such file or directory
+  WHTC588/Main fresh= tree=ea3dffc49b55879d DIFFERENT
+/content/work/v-c-wht/vcwht-fresh.sh: line 34: /content/work/v-c-wht/base/olean/Work/WHTC588/Solution.olean: No such file or directory
+  WHTC588/Solution fresh= tree=a14f40dc9170b620 DIFFERENT
+  (lean procs running at start: 2)
+--- axioms (fresh oleans first on LEAN_PATH)
+/content/work/v-c-wht/base/Ax.lean:1:0: error: object file '/content/work/v-c-wht/base/olean/Work/WHTC588/Solution.olean' of module Work.WHTC588.Solution does not exist
+axioms rc=1
+  (lean procs running at start: 2)
+--- Compare.lean pos: Work.WHTC588.Challenge vs Work.WHTC588.Solution OAI.PowerSaving.WHT.wht_main_block_C588x

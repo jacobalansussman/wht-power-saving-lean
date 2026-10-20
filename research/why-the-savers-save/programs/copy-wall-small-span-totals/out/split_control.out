@@ -1,0 +1,7 @@
+split of coordinate total 8 into 7-dim frames: ports of C8 in F_a 28, in F_b 28, union covers C8: True
+split (natural, masks = Lines(F) cap C8) restart 0: residual 2.21e-10 nat [8.     0.     0.8497 0.4487]  7s
+split (natural, masks = Lines(F) cap C8) restart 1: residual 2.18e-10 nat [8.     0.     0.8637 0.5272]  14s
+split (natural, masks = Lines(F) cap C8) restart 2: residual 2.16e-10 nat [8.     0.     0.8675 0.567 ]  21s
+split (masks = full Lines(F_a), Lines(F_b)) restart 0: residual 2.13e-10 nat [8.     0.     0.8734 0.6734]  28s
+split (masks = full Lines(F_a), Lines(F_b)) restart 1: residual 2.16e-10 nat [8.     0.     0.8653 0.5748]  34s
+split (masks = full Lines(F_a), Lines(F_b)) restart 2: residual 2.15e-10 nat [8.     0.     0.8715 0.6285]  39s

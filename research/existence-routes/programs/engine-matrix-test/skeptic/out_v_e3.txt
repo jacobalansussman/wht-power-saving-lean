@@ -1,0 +1,8 @@
+m=1: Had P_K Had == 2^m K: True; 2 S_j dir(e_j) S_j == (1+i) Had_j for all j: True; prod Had_j == Had: True; Lemma E0 (dir z = g dir e1 g^-1, all z != 0): True
+m=2: Had P_K Had == 2^m K: True; 2 S_j dir(e_j) S_j == (1+i) Had_j for all j: True; prod Had_j == Had: True; Lemma E0 (dir z = g dir e1 g^-1, all z != 0): True
+m=3: Had P_K Had == 2^m K: True; 2 S_j dir(e_j) S_j == (1+i) Had_j for all j: True; prod Had_j == Had: True; Lemma E0 (dir z = g dir e1 g^-1, all z != 0): True
+m=4: Had P_K Had == 2^m K: True; 2 S_j dir(e_j) S_j == (1+i) Had_j for all j: True; prod Had_j == Had: True; Lemma E0 (dir z = g dir e1 g^-1, all z != 0): True
+m=2: rank(rho_f(P_K) - lam) == rank(rho_f(K) - lam), lam in {1,i,-1,-i,0.3+0.7i}: [(1, True), (2, True), (3, True)]
+m=3: rank(rho_f(P_K) - lam) == rank(rho_f(K) - lam), lam in {1,i,-1,-i,0.3+0.7i}: [(1, True), (2, True)]
+E10 own random word m=2 f=1 (M=4 moves, 3 registers, k=2): transfer form error 3.0e-13; rank identity at 5 lambdas: [np.True_, np.True_, np.True_, np.True_, np.True_]
+E10 own random word m=2 f=2 (M=4 moves, 3 registers, k=12): transfer form error 1.3e-12; rank identity at 5 lambdas: [np.True_, np.True_, np.True_, np.True_, np.True_]

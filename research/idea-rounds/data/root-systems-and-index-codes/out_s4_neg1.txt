@@ -1,0 +1,7 @@
+neg seed 1 start 0: M = 13 gates, residual 6144 after 61 iterations
+neg seed 1 start 1: M = 13 gates, residual 6144 after 59 iterations
+neg seed 1 start 2: M = 13 gates, residual 6144 after 70 iterations
+neg seed 1 start 3: M = 13 gates, residual 6144 after 75 iterations
+neg seed 1 BEST 6144
+time 78.9 s
+python3 s4_refl_probe.py neg 1  78.62s user 0.40s system 99% cpu 1:19.23 total

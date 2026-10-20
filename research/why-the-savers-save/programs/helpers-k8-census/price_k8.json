@@ -1,0 +1,158 @@
+{
+ "control": {
+  "b": "0.001674989015937672328468",
+  "kappa": "0.001672188119205421"
+ },
+ "N32": {
+  "typical": {
+   "hole": {
+    "b": "0.001704231143210",
+    "b_gain_pct": 1.746,
+    "kappa": "0.001701331680774581",
+    "kappa_gain": 2.914356156916e-05,
+    "kappa_gain_pct": 1.743,
+    "binding": "complex"
+   },
+   "bins48": {
+    "b": "0.001741971834619",
+    "b_gain_pct": 3.999,
+    "kappa": "0.001730427469823602",
+    "kappa_gain": 5.8239350618181e-05,
+    "kappa_gain_pct": 3.483,
+    "binding": "bit"
+   }
+  },
+  "mcopy": {
+   "hole": {
+    "b": "0.001697777362016",
+    "b_gain_pct": 1.361,
+    "kappa": "0.001694899799505106",
+    "kappa_gain": 2.2711680299685e-05,
+    "kappa_gain_pct": 1.358,
+    "binding": "complex"
+   },
+   "bins48": {
+    "b": "0.001730879735007",
+    "b_gain_pct": 3.337,
+    "kappa": "0.001727888967009765",
+    "kappa_gain": 5.5700847804344e-05,
+    "kappa_gain_pct": 3.331,
+    "binding": "complex"
+   }
+  }
+ },
+ "N36": {
+  "typical": {
+   "hole": {
+    "b": "0.001707961098288",
+    "b_gain_pct": 1.968,
+    "kappa": "0.001705048941025591",
+    "kappa_gain": 3.286082182017e-05,
+    "kappa_gain_pct": 1.965,
+    "binding": "complex"
+   },
+   "bins48": {
+    "b": "0.001750718698091",
+    "b_gain_pct": 4.521,
+    "kappa": "0.001730427469823602",
+    "kappa_gain": 5.8239350618181e-05,
+    "kappa_gain_pct": 3.483,
+    "binding": "bit"
+   }
+  },
+  "mcopy": {
+   "hole": {
+    "b": "0.001700669692585",
+    "b_gain_pct": 1.533,
+    "kappa": "0.00169778232563929",
+    "kappa_gain": 2.5594206433869e-05,
+    "kappa_gain_pct": 1.531,
+    "binding": "complex"
+   },
+   "bins48": {
+    "b": "0.001738137809082",
+    "b_gain_pct": 3.77,
+    "kappa": "0.001730427469823602",
+    "kappa_gain": 5.8239350618181e-05,
+    "kappa_gain_pct": 3.483,
+    "binding": "bit"
+   }
+  }
+ },
+ "N40": {
+  "typical": {
+   "hole": {
+    "b": "0.001711704791926",
+    "b_gain_pct": 2.192,
+    "kappa": "0.00170877986524236",
+    "kappa_gain": 3.6591746036939e-05,
+    "kappa_gain_pct": 2.188,
+    "binding": "complex"
+   },
+   "bins48": {
+    "b": "0.001759558919634",
+    "b_gain_pct": 5.049,
+    "kappa": "0.001730427469823602",
+    "kappa_gain": 5.8239350618181e-05,
+    "kappa_gain_pct": 3.483,
+    "binding": "bit"
+   }
+  },
+  "mcopy": {
+   "hole": {
+    "b": "0.001703571774980",
+    "b_gain_pct": 1.706,
+    "kappa": "0.001700674553811258",
+    "kappa_gain": 2.8486434605837e-05,
+    "kappa_gain_pct": 1.704,
+    "binding": "complex"
+   },
+   "bins48": {
+    "b": "0.001745443265107",
+    "b_gain_pct": 4.206,
+    "kappa": "0.001730427469823602",
+    "kappa_gain": 5.8239350618181e-05,
+    "kappa_gain_pct": 3.483,
+    "binding": "bit"
+   }
+  }
+ },
+ "N56": {
+  "typical": {
+   "hole": {
+    "b": "0.001726847124308",
+    "b_gain_pct": 3.096,
+    "kappa": "0.001723870263900249",
+    "kappa_gain": 5.1682144694828e-05,
+    "kappa_gain_pct": 3.091,
+    "binding": "complex"
+   },
+   "bins48": {
+    "b": "0.001795833211166",
+    "b_gain_pct": 7.215,
+    "kappa": "0.001730427469823602",
+    "kappa_gain": 5.8239350618181e-05,
+    "kappa_gain_pct": 3.483,
+    "binding": "bit"
+   }
+  },
+  "mcopy": {
+   "hole": {
+    "b": "0.001715281002682",
+    "b_gain_pct": 2.406,
+    "kappa": "0.001712343851802642",
+    "kappa_gain": 4.0155732597221e-05,
+    "kappa_gain_pct": 2.401,
+    "binding": "complex"
+   },
+   "bins48": {
+    "b": "0.001775329942336",
+    "b_gain_pct": 5.991,
+    "kappa": "0.001730427469823602",
+    "kappa_gain": 5.8239350618181e-05,
+    "kappa_gain_pct": 3.483,
+    "binding": "bit"
+   }
+  }
+ }
+}

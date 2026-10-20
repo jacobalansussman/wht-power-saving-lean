@@ -1,0 +1,4 @@
+m=1 W=2 R=3 trials=300 steps=12: all claims held=True;  largest rise on a cheap step=0;  largest rise per block by bound q: {1: 1};  kernel on W arrays: rank Psi=2 (= W(2^m-1)=2);  one shift of column 1 of one array: rank Psi=2
+m=2 W=2 R=3 trials=150 steps=12: all claims held=True;  largest rise on a cheap step=0;  largest rise per block by bound q: {2: 2, 3: 3};  kernel on W arrays: rank Psi=6 (= W(2^m-1)=6);  one shift of column 1 of one array: rank Psi=4
+m=2 W=1 R=2 trials=150 steps=12: all claims held=True;  largest rise on a cheap step=0;  largest rise per block by bound q: {2: 2, 3: 3};  kernel on W arrays: rank Psi=3 (= W(2^m-1)=3);  one shift of column 1 of one array: rank Psi=4
+m=3 W=1 R=2 trials=6 steps=8: all claims held=True;  largest rise on a cheap step=0;  largest rise per block by bound q: {4: 4, 6: 6, 7: 7};  kernel on W arrays: rank Psi=7 (= W(2^m-1)=7);  one shift of column 1 of one array: rank Psi=8

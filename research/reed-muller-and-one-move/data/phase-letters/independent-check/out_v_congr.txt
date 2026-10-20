@@ -1,0 +1,6 @@
+m=2: nonsingular symmetric 4, alternating 1, orbit of I 3, orbits (size, alternating) [(1, 1), (3, 0)], |GL|=6
+m=3: nonsingular symmetric 28, alternating 0, orbit of I 28, orbits (size, alternating) [(28, 0)], |GL|=168
+m=4: nonsingular symmetric 448, alternating 28, orbit of I 420, orbits (size, alternating) [(28, 1), (420, 0)], |GL|=20160
+m=5: nonsingular symmetric 13888, alternating 0, orbit of I reached 13885 after 400000 draws
+m=6: nonsingular alternating 13888; |GL(6,2)|/|Sp(6,2)| = 13888
+m=5: orbit of I under congruence (BFS over elementary generators): 13888

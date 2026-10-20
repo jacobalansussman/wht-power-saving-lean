@@ -1,0 +1,5 @@
+=== mine, word K9, their clique 12:35:31
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 12:35:31
+[heavy.sh] got slot heavy-3 12:35:41
+unit word K 9 seed 0 clique(live idx) [0, 57, 58, 65, 67, 73, 104, 107] -> lines [0, 64, 65, 73, 75, 81, 112, 116]  vars 90423 clauses 313178 fit 5851 solver cadical153
+stopped by verifier at 12:55:41 (time box), unresolved after ~20 min

@@ -1,0 +1,6 @@
+forms enumerated 2097152 ; weight-16 supports: odd 992 even 961
+weights <= 20 occurring: [0, 16]
+F = {z1=z2=1}: |F| = 16 ; even support? True ; odd? False
+affine hyperplanes of F: 30
+U_6, W=13: max over the 30 hyperplanes of the min slack of an odd form containing it = 3
+number of odd 16-supports containing each hyperplane: min 2 max 3

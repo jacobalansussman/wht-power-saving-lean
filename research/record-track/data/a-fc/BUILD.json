@@ -1,0 +1,43 @@
+{
+ "line": "2979",
+ "C": 24,
+ "ext": false,
+ "a": 0.0017884,
+ "T": 74,
+ "order": "research/rank7-joint-endframes/allocation/ORDER.json of CrocSwap/integer-mult-bounds at 12fa8c5c",
+ "from_sol": "class-solution/SOL-MIP0.json",
+ "build_seconds": 20.87775731086731,
+ "engine": "PASS",
+ "engine_controls_rejected": [
+  "false_replica_count",
+  "missing_literal_helper_role",
+  "unbound_provider_at_actual_call",
+  "unavailable_source_window",
+  "same_call_physical_family_collision",
+  "unpaid_hole_in_compact_pending_prefix",
+  "changed_total_paid_profile"
+ ],
+ "idle": {
+  "1": 2269,
+  "6": 5,
+  "7": 3,
+  "17": 8,
+  "19": 1,
+  "23": 25905,
+  "48": 16576
+ },
+ "profile": {
+  "1": 1630639,
+  "2": 470196,
+  "3": 154512,
+  "4": 71928,
+  "5": 11988,
+  "6": 5,
+  "7": 3,
+  "8": 5328,
+  "17": 8,
+  "19": 1,
+  "23": 25905,
+  "48": 16576
+ }
+}

@@ -1,0 +1,258 @@
+# provenance of every overlay file (path relative to lean/complex588) -> the package it came from (all under ~/misc/fft/verify/checks/wht43/bound-check on the Mac)
+./comparator/fourier-u8xm.json k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./comparator/fourier-u8xm-neg.json k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./XExit/Compat.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./XExit/Hub.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./XExit/Pack.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./XExit/End.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./XExit/Halves.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/KLow/GlueX.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/KLow/ExitEnd.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/KLow/ZCheck.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/KLow/LabelsX.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/KLow/NoY.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XMNeg/UniformFourierChallenge.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/KMX/LabelsXZ.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/KMX/GlueXZ.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/KMX/ExitEndZ.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/KMX/HalvesZ.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/KMX/ZCheckZ.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/ArbitraryLength.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/WorkingPreparation.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/WorkingCompiler.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/Asymptotics.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/TransformProgram.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/SynchronizedAlgorithm.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/SectorAlgorithm.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/UniformFourierChallenge.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/UniformBounds.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/Goal.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/ConvolutionProgram.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/Axioms.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/Main.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/Seam.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/FourierU8XM/WorkingTransform.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/XMut/Glue.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/XMut/ECheckZ.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/XMut/Dirt.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/XMut/Labels.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/XMut/Scal.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/XMut/GInv.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/XMut/ScalarZ.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/U8XMCert.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/InstU8XM.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/U8XMControls.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/U8XMGlue401.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/RateU8XMx.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/U8XMPrice.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/U8XMScalOK.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMTab2.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows10.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows6.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMZChk4.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMZChk5.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows7.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMHist.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMSched.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows11.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMZOK.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMTab3.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMEnd.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows0.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMZChk2.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMScal3.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMSeg0.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows16.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows17.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMSeg1.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMScal2.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMZChk3.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows1.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMSegF.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMZChk0.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows2.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows14.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMPar.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMZL.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMSeg2.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMScal1.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMScal0.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMSeg3.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows15.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMGl.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows3.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMZChk1.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows12.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows8.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMSeg4.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMTab0.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows4.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMEChk.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows5.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XM.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMTab1.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMYChk.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows9.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XMRows13.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./Work/GCert/Data/Gen/U8XM/S0.lean k-combine/pkg/k-combine-u8xm.tar.gz (overlay/)
+./comparator/fourier-u8xmhh.json fs-build/in/u8xmhh-src.tgz
+./comparator/fourier-u8xmhh-neg.json fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHHNeg/UniformFourierChallenge.lean fs-build/in/u8xmhh-src.tgz
+./Work/XHost/U8XMHH.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/ArbitraryLength.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/WorkingPreparation.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/WorkingCompiler.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/Asymptotics.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/TransformProgram.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/SynchronizedAlgorithm.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/SectorAlgorithm.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/UniformFourierChallenge.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/UniformBounds.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/Goal.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/ConvolutionProgram.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/Axioms.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/Main.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/Seam.lean fs-build/in/u8xmhh-src.tgz
+./Work/FourierU8XMHH/WorkingTransform.lean fs-build/in/u8xmhh-src.tgz
+./Work/XHost/Data/HU8XMSched.lean fs-build/in/u8xmhh-src.tgz
+./Work/XHost/Data/InstU8XMHH.lean fs-build/in/u8xmhh-src.tgz
+./Work/XHost/Data/RateU8XMHHx.lean fs-build/in/u8xmhh-src.tgz
+./Work/XHost/HPriceK.lean fs-build/in/xhost-src.tgz
+./Work/XHost/HGeom.lean fs-build/in/xhost-src.tgz
+./Work/XHost/HSchedK.lean fs-build/in/xhost-src.tgz
+./Work/XHost/Frames.lean fs-build/in/xhost-src.tgz
+./Work/XHost/HStage.lean fs-build/in/xhost-src.tgz
+./Work/XHost/HostK.lean fs-build/in/xhost-src.tgz
+./Work/XHost/HEnd.lean fs-build/in/xhost-src.tgz
+./Work/XHost/HSched.lean fs-build/in/xhost-src.tgz
+./Work/XHost/HBank.lean fs-build/in/xhost-src.tgz
+./Work/XHost/HDef.lean fs-build/in/xhost-src.tgz
+./Work/XHost/HRoles.lean fs-build/in/xhost-src.tgz
+./Work/XHost/HCert.lean fs-build/in/xhost-src.tgz
+./comparator/fourier-u8x0.json fsp-cc/out/stage-u8x0.tgz
+./comparator/fourier-u8x0-neg.json fsp-cc/out/stage-u8x0.tgz
+./CSX/ScalX.lean fsp-cc/out/stage-u8x0.tgz
+./CSX/HalvesS.lean fsp-cc/out/stage-u8x0.tgz
+./CSX/LabelsS.lean fsp-cc/out/stage-u8x0.tgz
+./CSX/TwinX.lean fsp-cc/out/stage-u8x0.tgz
+./CSX/ScalarZX.lean fsp-cc/out/stage-u8x0.tgz
+./CSX/GlueS.lean fsp-cc/out/stage-u8x0.tgz
+./CSX/Scat.lean fsp-cc/out/stage-u8x0.tgz
+./CSX/ZCheckZX.lean fsp-cc/out/stage-u8x0.tgz
+./CSX/ECheckZX.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0Neg/UniformFourierChallenge.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/ArbitraryLength.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/WorkingPreparation.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/WorkingCompiler.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/Asymptotics.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/TransformProgram.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/SynchronizedAlgorithm.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/SectorAlgorithm.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/UniformFourierChallenge.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/UniformBounds.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/Goal.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/ConvolutionProgram.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/Axioms.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/Main.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/Seam.lean fsp-cc/out/stage-u8x0.tgz
+./Work/FourierU8X0/WorkingTransform.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/U8X0ScalOK.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/InstU8X0.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/U8X0Price.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/U8X0Cert.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/RateU8X0x.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/U8X0Glue401.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Gl.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0ZChk2.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows0.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Seg3.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows13.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Scal3.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Scal2.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0ZL.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows12.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Seg2.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows1.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0ZChk3.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Par.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0EChk.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows15.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0ZChk4.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows6.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0YChk.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Tab1.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Tab0.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Seg4.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows7.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0ZChk5.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Sched.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows14.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows17.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows8.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Hist.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Tab3.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows4.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0End.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows5.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Tab2.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows9.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows16.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Seg1.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows2.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0ZChk0.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Scal1.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0SegF.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows11.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0ZOK.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows10.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Scal0.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0ZChk1.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Rows3.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0Seg0.lean fsp-cc/out/stage-u8x0.tgz
+./Work/GCert/Data/Gen/U8X0/S0.lean fsp-cc/out/stage-u8x0.tgz
+./comparator/fourier-u8x0hh-neg.json fsp-cc/out/stage-u8x0hh.tgz
+./comparator/fourier-u8x0hh.json fsp-cc/out/stage-u8x0hh.tgz
+./Work/XHost/U8X0HH.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HHNeg/UniformFourierChallenge.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/ArbitraryLength.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/WorkingPreparation.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/WorkingCompiler.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/Asymptotics.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/TransformProgram.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/SynchronizedAlgorithm.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/SectorAlgorithm.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/UniformFourierChallenge.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/UniformBounds.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/Goal.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/ConvolutionProgram.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/Axioms.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/Main.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/Seam.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/FourierU8X0HH/WorkingTransform.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/XHost/Data/RateU8X0HHx.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/XHost/Data/HU8X0Sched.lean fsp-cc/out/stage-u8x0hh.tgz
+./Work/XHost/Data/InstU8X0HH.lean fsp-cc/out/stage-u8x0hh.tgz
+./comparator/fourier-u8x0hq.json fsp-build/out/stage-u8x0hq.tgz
+./comparator/fourier-u8x0hq-neg.json fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/ArbitraryLength.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/WorkingPreparation.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/WorkingCompiler.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/Asymptotics.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/TransformProgram.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/SynchronizedAlgorithm.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/SectorAlgorithm.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/UniformFourierChallenge.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/UniformBounds.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/Goal.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/ConvolutionProgram.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/Axioms.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/Main.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/Seam.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQ/WorkingTransform.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/XHost/U8X0HQ.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/FourierU8X0HQNeg/UniformFourierChallenge.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/BlockAccounting/Moment4.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/XHost/Data/RateU8X0HQx.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/XHost/Data/InstU8X0HQ.lean fsp-build/out/stage-u8x0hq.tgz
+./Work/XHost/Data/HU8X0HQSched.lean fsp-build/out/stage-u8x0hq.tgz

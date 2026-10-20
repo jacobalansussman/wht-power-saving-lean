@@ -1,0 +1,26 @@
+START Work.XHost.Data.H588MSched 21:00:26
+'GXD.C588MHH.hs_ok' depends on axioms: [propext]
+	Command being timed: "/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean -DautoImplicit=false -R . -o /content/work/vh2/build/Work/XHost/Data/H588MSched.olean -i /content/work/vh2/build/Work/XHost/Data/H588MSched.ilean Work/XHost/Data/H588MSched.lean"
+	User time (seconds): 107.15
+	System time (seconds): 4.75
+	Percent of CPU this job got: 107%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:43.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8519368
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 177901
+	Voluntary context switches: 128727
+	Involuntary context switches: 1780
+	Swaps: 0
+	File system inputs: 440
+	File system outputs: 3032
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+EXIT 0 Work.XHost.Data.H588MSched 21:02:10

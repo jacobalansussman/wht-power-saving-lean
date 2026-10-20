@@ -1,0 +1,11 @@
+  type 00 (alpha=0,beta=0) rows 5208 cols 1085 rank_p 930 x1  (18.6s)
+  type a0 (alpha=1,beta=0) rows 5313 cols 1085 rank_p 1050 x31  (35.3s)
+  type 0b (alpha=0,beta=1) rows 5208 cols 980 rank_p 945 x31  (51.2s)
+  type ab0 (alpha=1,beta=2) rows 5313 cols 980 rank_p 945 x465  (65.3s)
+  type ab1 (alpha=1,beta=1) rows 5313 cols 980 rank_p 945 x496  (79.8s)
+  check (alpha=30,beta=20) type ab0: rank_p 945
+  check (alpha=22,beta=28) type ab0: rank_p 945
+  check (alpha=18,beta=25) type ab1: rank_p 945
+  check (alpha=26,beta=7) type ab1: rank_p 945
+m=5 k=5: dem >= 970920 (by GL types)  (139.6s)
+delta upper bound 970920

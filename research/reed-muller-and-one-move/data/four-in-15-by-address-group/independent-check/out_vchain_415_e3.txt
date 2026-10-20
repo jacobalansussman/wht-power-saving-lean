@@ -1,0 +1,2 @@
+gen [6, 13, 10, 3] |H|=3 orbit reps [1, 2, 3, 5, 6]  4 in 15: 3876 splits, 1 survive [(3, 2, 3, 4, 3)]; first-failing test counts {'T1 deletion': 3847, 'T2 cover': 17, 'T4 rectangles': 6, 'T3 E-pattern': 5, 'pass': 1}
+gen [12, 5, 11, 6] |H|=3 orbit reps [1, 2, 3, 4, 5]  4 in 15: 3876 splits, 1 survive [(3, 3, 4, 2, 3)]; first-failing test counts {'T1 deletion': 3847, 'T2 cover': 17, 'T3 E-pattern': 5, 'T4 rectangles': 6, 'pass': 1}

@@ -1,0 +1,9 @@
+flag | configuration | flagged | f=3,4 extracted | f=5 subspace spectrum (relative distance, ascending) | survivors f=5 | f=6 residual of survivors | irreducible vs lower+reducible: f=3,4 collapses -> f=5 survivors | class
+B1 | batch B: 1;2;4;7, W=(1, K5, H15), B=H15, S=1 | 1 | 1 | [0.73] | 0 | - | 1 -> 0 | (a) all 1
+B2 | batch B: 1;2;4;4, W=(1, K5, H15), B=H15, S=1 | 5 | 5 | [4.7e-15, 5e-15, 5.1e-15, 5.4e-15, 0.76] | 4 | [5e-15, 5.3e-15, 5.3e-15, 5.5e-15] | 0 -> - | (b) 4, (a) 1
+B3 | batch B: 1;2;4;7, W=(1, K5, H30), B=H30, S=2 | 1 | 1 | [0.66] | 0 | - | 1 -> 0 | (a) all 1
+C1 | batch C: 1,B;2;4,A, W=(K5, H30), B=H30, S=1 | 2 | 2 | [0.72, 0.73] | 0 | - | 2 -> 0 | (a) all 2
+C2 | batch C: 1;2;4, W=(K9, H30), B=H30, S=2 | 8 | 8 | [4.4e-15, 5.4e-15, 0.54, 0.67, 0.68, 0.69, 0.71, 0.71] | 2 | [4.8e-15, 6e-15] | 6 -> 0 | (b) 2, (a) 6
+C3 | batch C: 1,B;2;4,A, W=(K9, H30), B=H30, S=2 | 10 | 10 | [0.63, 0.66, 0.66, 0.66, 0.67, 0.67, 0.68, 0.68, 0.69, 0.7] | 0 | - | 10 -> 0 | (a) all 10
+C4s601 | batch C: 1;2;7, W=(K9, H30), B=H30, S=2 (f=5 seed 601) | 7 | 7 | [4.4e-15, 4.6e-15, 5.9e-15, 0.54, 0.67, 0.68, 0.68] | 3 | [4.7e-15, 4.9e-15, 6.3e-15] | 4 -> 0 | (b) 3, (a) 4
+C5 | batch C: 1;2;4,A.T2.Ai, W=(K9, H30), B=H30, S=2 | 8 | = C2 (frame commutes with D4) | as C2 | 2 | as C2 | as C2 | (b) 2, (a) 6

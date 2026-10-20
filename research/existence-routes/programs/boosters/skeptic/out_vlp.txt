@@ -1,0 +1,7 @@
+m=3 hooks=False: 401 rows; booster-negative at 0/100 grid points
+m=3 hooks=True: 405 rows; booster-negative at 0/100 grid points
+m=4 hooks=False: 664 rows; booster-negative at 0/100 grid points
+m=4 hooks=True: 668 rows; booster-negative at 0/100 grid points
+m=5 hooks=False: 1171 rows; booster-negative at 100/100 grid points (0.01..0.9983); worst -0.00483 at 0.8, v = [-0.1024, 0.2811, 0.3131, -1.0, 0.5202]
+m=5 hooks=True: 1174 rows; booster-negative at 100/100 grid points (0.01..0.9983); worst -0.00449 at 0.74, v = [-0.0623, 0.0208, 0.5935, -1.0, 0.4481]
+$H python3 -B vlp.py 3 4 5  7.53s user 0.69s system 48% cpu 17.038 total

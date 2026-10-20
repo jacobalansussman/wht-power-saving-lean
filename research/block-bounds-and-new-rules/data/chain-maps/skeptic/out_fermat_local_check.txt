@@ -1,0 +1,12 @@
+generators of H(5,4) (Fermat form) by direct RREF enumeration: 891 (want 891)
+distance spheres (0,1,2,3) -> number of frames: {(1, 42, 336, 512): 891}
+edges (unordered distance-1 pairs): 18711
+Fermat planes: 405, distinct frames: 405
+(is Fermat, number of Fermat neighbours) -> count: {(True, 24): 405, (False, 15): 486}
+monomial group orbits on frames: sizes [405, 486]; Fermat frames per orbit [405, 0]
+other frame 462: 15 Fermat nbrs; neighbour pairs by distance {2: 105}; 3-subsets passing the test 455/455; 4-subsets passing 0/1365 (exact)
+other frame 256: 15 Fermat nbrs; neighbour pairs by distance {2: 105}; 3-subsets passing the test 455/455; 4-subsets passing 0/1365 (exact)
+other frame 541: 15 Fermat nbrs; neighbour pairs by distance {2: 105}; 3-subsets passing the test 455/455; 4-subsets passing 0/1365 (exact)
+other frame 327: 15 Fermat nbrs; neighbour pairs by distance {2: 105}; 3-subsets passing the test 455/455; 4-subsets passing 0/1365 (exact)
+other frame 569: 15 Fermat nbrs; neighbour pairs by distance {2: 105}; 3-subsets passing the test 455/455; 4-subsets passing 0/1365 (exact)
+other frame 515: 15 Fermat nbrs; neighbour pairs by distance {2: 105}; 3-subsets passing the test 455/455; 4-subsets passing 0/1365 (exact)

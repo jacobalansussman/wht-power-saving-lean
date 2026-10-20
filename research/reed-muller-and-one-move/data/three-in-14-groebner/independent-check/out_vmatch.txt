@@ -1,0 +1,11 @@
+ordered self-dual bases: 720
+  mine-b5 idx 0: their cert Y=[2, 7, 9] |DF|=5 r(forms with that support)=[0] pairs-in-my-tight-supports=True -> OK
+  mine-b5 idx 2: their cert Y=[2, 7, 11] |DF|=5 r(forms with that support)=[0] pairs-in-my-tight-supports=True -> OK
+mine-b5: my zero-block verdict agrees with theirs on 44 of 44
+mine-b5-plain: my zero-block verdict agrees with theirs on 44 of 44
+rm2-b5: my zero-block verdict agrees with theirs on 44 of 44
+ctl-plain1in5: my zero-block verdict agrees with theirs on 1 of 1
+mine-b5: their Z certificate re-checked by my code: 44 of 44 valid
+rm2-b5: their Z certificate re-checked by my code: 44 of 44 valid
+mine-b5: 44 instances, 0 with an ambiguous basis, 44 distinct classes; equal to my 44: True; mine minus theirs 0, theirs minus mine 0
+rm2-b5: 44 instances, 0 with an ambiguous basis, 44 distinct classes; equal to my 44: True; mine minus theirs 0, theirs minus mine 0

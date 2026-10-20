@@ -1,0 +1,9 @@
+walk seed 1: 56 anchors, 28672 (P1,target) pairs, d(P1,Q) counts {2: 3024, 1: 56} (8s)
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (1, 5, (4, 4, 4)) 28672
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (2, 3, (2, 4, 4)) 344064
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (2, 4, (3, 4, 4)) 344064
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (2, 5, (4, 4, 4)) 860160
+TOTAL by (lam1, pattern):
+   (3, (2, 4, 4)) 344064
+   (4, (3, 4, 4)) 344064
+   (5, (4, 4, 4)) 888832

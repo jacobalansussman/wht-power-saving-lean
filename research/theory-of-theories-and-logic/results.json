@@ -1,0 +1,2204 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "theory-of-theories-and-logic",
+ "title": "What our methods can and cannot do: the abstract rounds",
+ "dates": "2026-10-14 to 2026-10-15",
+ "made_with": "AI agents (Claude) directed by the author",
+ "status_words": [
+  "proved in Lean",
+  "checked by computer",
+  "argued by hand, not checked",
+  "refuted",
+  "open"
+ ],
+ "counts": {
+  "proved in Lean": 0,
+  "checked by computer": 22,
+  "argued by hand, not checked": 21,
+  "refuted": 9,
+  "open": 2
+ },
+ "findings": [
+  {
+   "id": "theory-of-theories-and-logic/1",
+   "statement": "The algebra of combining units (side by side, and nesting a block-k unit inside a block-m unit) has one dimension: every monotone homomorphism is n -> n^theta for a single theta, or degenerate. So the best saving s* is one number whatever block sizes are used (Theorem C).",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic)",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/one-exponent-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "M1"
+  },
+  {
+   "id": "theory-of-theories-and-logic/2",
+   "statement": "Every certificate meets the saving through one growth exponent per block, theta(psi) = min_j ln(psi_m/psi_j)/ln(m/j); a certificate with growth exponent theta rules out savings above 1 - theta and no more (Lemma D); mixing certificates never beats the best single one (Lemma E). To rule out a saving of 0.1 a family needs growth exponent >= 0.9 at arbitrarily large blocks; a family never proving more than 4 moves per array cannot rule out 0.1 at any block >= 5.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic); the skeptic corrected 'at every block' to 'at arbitrarily large blocks'",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {
+    "5^0.9": 4.26
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/one-exponent-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "T5"
+  },
+  {
+   "id": "theory-of-theories-and-logic/3",
+   "statement": "One direction costs at most two calls of the whole block transform: dir_e1 = S1 K S1 K^-1 S1^3 exactly, K^-1 = K X_all.",
+   "status": "checked by computer",
+   "status_detail": "exact computation in Q(i) at blocks 1 to 3, one program, not repeated by anyone; argued by hand for every block",
+   "date": "2026-10-14",
+   "block": "1-3",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/one-exponent/out_archimedes.txt"
+   ],
+   "programs": [
+    "programs/one-exponent/archimedes.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": null
+  },
+  {
+   "id": "theory-of-theories-and-logic/4",
+   "statement": "Units whose mixing coefficients never divide by 2 never save, at any block, in any composition (Proposition G: the mod-2 frame distance is a perfect certificate).",
+   "status": "argued by hand, not checked",
+   "status_detail": "assembles two results of the earlier revisions; no skeptic read the assembly",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/one-exponent-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": null
+  },
+  {
+   "id": "theory-of-theories-and-logic/5",
+   "statement": "Growth exponents of the start lifts are 0.85, 0.71, 0.57 and 0.44 at blocks 3 to 6; at engine prices for grouped blocks lifts cap the saving near 0.43 at block 5 (hooks: 0.83) and near 0.56 at block 6.",
+   "status": "checked by computer",
+   "status_detail": "exact at blocks 3 and 4, exact edges plus sampled pairs at block 5, sampled at block 6; one AI skeptic recomputed the block-4 pair sums exactly over 2,632,365 pairs and enlarged the block-6 sample (growth exponent about 0.437)",
+   "date": "2026-10-14",
+   "block": "3-6",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "theta": [
+     0.85,
+     0.71,
+     0.57,
+     0.44
+    ],
+    "cap_block5": 0.43,
+    "cap_block6": 0.56
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/one-exponent/out_liftprof_m3.txt",
+    "data/one-exponent/out_liftprof_m4.txt",
+    "data/one-exponent/out_liftprof_m5_sample.txt",
+    "data/one-exponent/out_liftsample_m6.txt",
+    "data/one-exponent/out_mixcap.txt"
+   ],
+   "programs": [
+    "programs/one-exponent/liftprof.c",
+    "programs/one-exponent/liftsample.py"
+   ],
+   "rerun_2026_10_19": "identical at blocks 3 and 4 (apart from the input path); blocks 5 and 6 not re-run",
+   "archive_entry": "T5"
+  },
+  {
+   "id": "theory-of-theories-and-logic/6",
+   "statement": "Ceilings flow up the ladder of games: a certificate for a game with more free steps is a certificate, with the same numbers, for every game below it, so a ceiling computed in the engine game holds in every game above it.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two independent AI skeptics re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "engine",
+    "chi",
+    "widened",
+    "everything-free"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/chi-game-ceiling-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": null
+  },
+  {
+   "id": "theory-of-theories-and-logic/7",
+   "statement": "In the engine game a certificate loses nothing by ignoring Pauli flips (Theorem 1), so every engine certificate is a pattern of subspaces on the frames; the hook's frame pattern alone gives 14/5 at block 3 (on all 18,090 ordered frame pairs it takes one value per distance: 80, 144, 224 at distances 1, 2, 3; 224/80 = 14/5).",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic); the frame-pair values are checked by computer",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "figure": 2.8,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/certificates-by-game-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "L7"
+  },
+  {
+   "id": "theory-of-theories-and-logic/8",
+   "statement": "In the everything-free game every certificate of the usual product form must ignore everything, so it proves nothing (Theorem 2; rests on Tof X0 Tof^-1 = X0 CNOT(1->2) and CS X0 CS^-1 = X0 S1 CZ).",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic)",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "everything-free"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/certificates-by-game-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "T6"
+  },
+  {
+   "id": "theory-of-theories-and-logic/9",
+   "statement": "Colourings and coordinate frame families have ceilings 1.75 (block 3), 1.875 (block 4), below 2 at every block in the engine game, and 21/16 at block 3 and below 4/3 in the chi game (Proposition 3).",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic)",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "engine",
+    "chi"
+   ],
+   "figure": null,
+   "numbers": {
+    "engine": [
+     1.75,
+     1.875
+    ],
+    "chi_block3": 1.3125
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/certificates-by-game-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "T6"
+  },
+  {
+   "id": "theory-of-theories-and-logic/10",
+   "statement": "Theorem S': every cut (certificate built from non-repeated irreducible pieces) at block m proves fewer than 4(2^m - 1)/(2^m + 1) moves per array: 12/5, 28/9, 60/17, 124/33, 252/65 at blocks 2 to 6, below 4 always. So no certificate without repeated pieces can settle the bar at any block from 5 on.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two independent AI skeptics re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "caps": {
+     "2": "12/5",
+     "3": "28/9",
+     "4": "60/17",
+     "5": "124/33",
+     "6": "252/65"
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/sp62-certificate-and-cut-cap-proof.md",
+    "data/sp62-mixed-unit-certificate/out_dpg_eig.txt"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "T6"
+  },
+  {
+   "id": "theory-of-theories-and-logic/11",
+   "statement": "All 24,609 cuts of the 30 irreducibles of Sp(6,2) were computed; none beats the hook's 14/5, which is a cut in the 56-dimensional irreducible; the eigenvalue ratio 5/14 appears in 29 of the 30.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "figure": 2.8,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/sp62-mixed-unit-certificate/out_cuts_a.txt",
+    "data/sp62-mixed-unit-certificate/out_cuts_b.txt",
+    "data/sp62-mixed-unit-certificate/out_cuts_c.txt",
+    "data/sp62-mixed-unit-certificate/out_cuts_d1.txt",
+    "data/sp62-mixed-unit-certificate/out_cuts_d2.txt",
+    "data/sp62-mixed-unit-certificate/out_cuts_e.txt"
+   ],
+   "programs": [
+    "programs/sp62-mixed-unit-certificate/fg_cuts.py",
+    "programs/sp62-mixed-unit-certificate/fg_build.py"
+   ],
+   "rerun_2026_10_19": "not re-run (needs the 228 MB cache of irreducibles)",
+   "archive_entry": null
+  },
+  {
+   "id": "theory-of-theories-and-logic/12",
+   "statement": "Theorem M: in the 105-dimensional irreducible 105a of Sp(6,2) (value -35 on transvections), the sum of the weight spaces of one 28-element orbit (dimension 56) has profile (20, 38, 49) against the hook's (10, 18, 28); with Theorem R it excludes the block-3 mixed units 1+4 in 10, 2+8 in 20, 4+21 in 49 and 7+38 in 88 in the engine game; the engine room for mixed units falls from 0.1255 to 0.1160.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; two independent AI skeptics repeated it with their own code; the two skeptics each rebuilt the certificate in a different model (through W(E7)); it does not apply in the widened game",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "profile": [
+     20,
+     38,
+     49
+    ],
+    "hook_profile": [
+     10,
+     18,
+     28
+    ],
+    "excluded": {
+     "1+4 in 10": [
+      200,
+      201
+     ],
+     "2+8 in 20": [
+      400,
+      402
+     ],
+     "4+21 in 49": [
+      980,
+      994
+     ],
+     "7+38 in 88": [
+      1760,
+      1787
+     ]
+    },
+    "savings_if_they_existed": {
+     "1+4 in 10": 0.119,
+     "2+8 in 20": 0.119,
+     "7+38 in 88": 0.125
+    },
+    "mixed_room_before_after": [
+     0.1255,
+     0.116
+    ]
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/sp62-certificate-and-cut-cap-proof.md",
+    "data/sp62-mixed-unit-certificate/exact_mats_lam3.json",
+    "data/sp62-mixed-unit-certificate/out_exact_cert2.txt",
+    "data/sp62-mixed-unit-certificate/out_verify_exact.txt",
+    "data/sp62-mixed-unit-certificate/out_skeptic_e7_check_seed1.txt"
+   ],
+   "programs": [
+    "programs/sp62-mixed-unit-certificate/verify_exact.py",
+    "programs/sp62-mixed-unit-certificate/skeptic_e7_check.py",
+    "programs/sp62-mixed-unit-certificate/exact_cert.py"
+   ],
+   "rerun_2026_10_19": "identical (verify_exact.py, skeptic_e7_check.py)",
+   "archive_entry": "X8"
+  },
+  {
+   "id": "theory-of-theories-and-logic/13",
+   "statement": "Mixed units have more room than pure ones at block 3 (Schoenhage's tau-theorem transplanted): room 0.1255 against 0.0628 for a pure kernel and 0.079 for pure rank-2 targets, from a sweep of 180 certificates.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; an independent AI skeptic repeated it with its own code (one skeptic)",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {
+    "room_mixed": 0.1255,
+    "room_kernel": 0.0628,
+    "room_rank2": 0.079
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/venn-certificate-spare-row/out_venn_sweep_m3.jsonl",
+    "data/venn-certificate-spare-row/out_mixed_room.txt",
+    "notes/transplants-and-venn-certificate.md"
+   ],
+   "programs": [
+    "programs/venn-certificate-spare-row/mixed_room.py"
+   ],
+   "rerun_2026_10_19": "identical (mixed_room.py on the shipped sweep)",
+   "archive_entry": "X12"
+  },
+  {
+   "id": "theory-of-theories-and-logic/14",
+   "statement": "A Venn certificate in Lambda^3 V (x) Lambda^4 V with intersection pattern {0,2} has cap 752 (exact) and rank-2 demand 1424: rank-2 targets with one spare row need at least 89/47 = 1.8936 moves each, which excludes 7 in 13, 8 in 15 and 9 in 17 at block 3 in the widened game (hence the engine game); 10 in 19 (0.074) is the smallest open case.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; an independent AI skeptic repeated it with its own code (one skeptic); the cap is exact over Q, the demands are ranks modulo two primes (lower bounds)",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "widened",
+    "engine"
+   ],
+   "figure": 1.8936,
+   "numbers": {
+    "cap": 752,
+    "rank2_demand": 1424,
+    "kernel_demand": 1712,
+    "7 in 13 needs": 13.255,
+    "9 in 17 needs": 17.043
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/venn-certificate-spare-row/out_skeptic_exact_cap_3_4_J02.txt",
+    "data/venn-certificate-spare-row/out_3_4_J02.txt"
+   ],
+   "programs": [
+    "programs/venn-certificate-spare-row/skeptic_exact_cap.py",
+    "programs/venn-certificate-spare-row/indep_venn_check.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": "X12"
+  },
+  {
+   "id": "theory-of-theories-and-logic/15",
+   "statement": "Every whole-graph block-3 lift has excess at least 68 on its 945 edges (Lemma E3: an interval lift with a bad end edge costs at least 3, attained by an exact lift; 64 end and 96 middle incidences per edge), so every block-3 lift proves at most 2835/1013 = 2.7986 moves per array, below the hook; no lift can exclude 5 in 14 or 6 in 17.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two independent AI skeptics re-derived it and found no error; no person and no proof checker has checked it; the counts are checked by computer",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "figure": 2.7986,
+   "numbers": {
+    "E_min_lower": 68,
+    "best_known_E": 162
+   },
+   "supersedes": [
+    "block-3 lifts <= 105/37 if b_3 = 2 (first cycle)"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/lift-gluing-and-sylvester-gallai-proof.md",
+    "data/lift-gluing/out_counts3.txt",
+    "data/lift-gluing/out_check_e3.txt"
+   ],
+   "programs": [
+    "programs/lift-gluing/counts3.py",
+    "programs/lift-gluing/check_e3.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": "T8"
+  },
+  {
+   "id": "theory-of-theories-and-logic/16",
+   "statement": "Every block-4 interval lift has excess at least 18 (exact LP dual 120/7; ILP optimum 18), so 18 <= b_4 <= 36; block 5 has at least 141 (dual 5611/40); excess per edge is at least 0.072 from block 3 and 0.075 from block 4.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; two independent AI skeptics repeated it with their own code (exact LP dual certificates)",
+   "date": "2026-10-14",
+   "block": "4-5",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "b4": [
+     18,
+     36
+    ],
+    "b5_lower": 141,
+    "per_edge_lower": {
+     "3": 0.072,
+     "4": 0.075
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/lift-gluing/out_dualcert_m4.txt",
+    "data/lift-gluing/out_dualcert_m5.txt",
+    "data/lift-gluing/out_mycover_m4.txt"
+   ],
+   "programs": [
+    "programs/lift-gluing/dualcert.py",
+    "programs/lift-gluing/mycover.py"
+   ],
+   "rerun_2026_10_19": "block 4 identical apart from the last digits of the float LP value; block 5 not re-run",
+   "archive_entry": "T8"
+  },
+  {
+   "id": "theory-of-theories-and-logic/17",
+   "statement": "Decomposed block-4 lifts need exactly 36 on an interval, so they prove at most 80/23 = 3.478 moves per array at block 4, just under 4^0.9 = 3.482.",
+   "status": "checked by computer",
+   "status_detail": "exhaustive search over 32 million sets of lines by the first-cycle lifts track; used and not refuted by the second wave's two skeptics, but not re-derived",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "figure": 3.478,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/lift-gluing-and-sylvester-gallai-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "T8"
+  },
+  {
+   "id": "theory-of-theories-and-logic/18",
+   "statement": "Theorem SG: through the Dvir-Saraf-Wigderson rank bound, decomposed lifts pay at least (2/3)kappa_m per edge, tending to about 1/3 at large even blocks and 0.314 at large odd ones, effective only from about block 110.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two independent AI skeptics re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-14",
+   "block": "large",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/lift-gluing-and-sylvester-gallai-proof.md",
+    "data/lift-gluing/out_kappa.txt"
+   ],
+   "programs": [
+    "programs/lift-gluing/kappa.py"
+   ],
+   "rerun_2026_10_19": "identical (kappa.py)",
+   "archive_entry": "T8"
+  },
+  {
+   "id": "theory-of-theories-and-logic/19",
+   "statement": "Every Sylvester-Gallai-type counting argument is capped at exactly 1/3 per edge, so the bar's threshold overtakes it from block 18 (Proposition C).",
+   "status": "refuted",
+   "status_detail": "both skeptics of the lifts track; what survives: the cap is some constant ((2/3)kappa_m = 0.400, 0.583, 0.299, 0.387 at blocks 3-6 for the linear version; at least 0.38 for a sharper version; about 1 for the whole class), so such counting can never show that lifts fail at all large blocks",
+   "date": "2026-10-14",
+   "block": "large",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "skeptics' recomputation of the LP and counterexample phi = 1/6 to the forced end rows",
+   "evidence": [
+    "data/lift-gluing/out_kappa2.txt"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "C13"
+  },
+  {
+   "id": "theory-of-theories-and-logic/20",
+   "statement": "Theorem F and the angle law: for any frame-family certificate at blocks up to 40 the spectral factor from edges to depth j is at most 2 - 2^(1-j), the exact maximum there; at larger blocks only a cap of 8/3 is shown, and the ratio at depth j is spectral factor times angle factor s_1/s_j. Theorem H: hooks use the full spectral factor at every depth, block and k, so their value is their angle factor, below 2; every hook has right-angle edges. Settling the bar at block m <= 40 needs angle factor >= m^0.9/2 (2.88 at block 7, 3.97 at block 10); every family computed stays below 2.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two independent AI skeptics re-derived it and found no error; no person and no proof checker has checked it; the skeptics added s_1 = 1 for every hook and the exact 68,320",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "spectral_caps": [
+     1.5,
+     1.75,
+     1.875
+    ],
+    "angle_needed": {
+     "7": 2.88,
+     "10": 3.97
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/angle-law-proof.md",
+    "data/angle-law/out_omega_exact.txt",
+    "data/angle-law/out_hook_cells.txt",
+    "data/angle-law/out_frames_check.txt",
+    "data/angle-law/out_frob_ceiling.txt"
+   ],
+   "programs": [
+    "programs/angle-law/omega_exact.py",
+    "programs/angle-law/hook_cells.py",
+    "programs/angle-law/frames_check.py",
+    "programs/angle-law/frob_ceiling.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": "T9"
+  },
+  {
+   "id": "theory-of-theories-and-logic/21",
+   "statement": "The block-4 near miss (2 in 7, private-end branch) is one number: under the k = 8 hook a move is worth at most 27,456 and a depth-3 piece needs 68,320 (exact over Q), leaving 640 of 137,280; the hook has full spectral factor 7/4 and right-angle edges, and its depth-3 average sin^2 per angle is 48,048/68,320 = 0.7033; closing needs a certificate whose depth-3 average is below 0.7 times its edge average.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; two independent AI skeptics repeated it with their own code",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": 2.48834,
+   "numbers": {
+    "cap": 27456,
+    "depth3_demand": 68320,
+    "room": 640,
+    "of": 137280,
+    "s3": 0.70328
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/angle-law-proof.md",
+    "data/near-miss-certificate-search/out_skeptic_hook.txt"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "T9"
+  },
+  {
+   "id": "theory-of-theories-and-logic/22",
+   "statement": "A search of about 4,000 block-4 certificates (hook relatives; cuts of the Sp(8,2) irreducibles 85, 238, 510, 595; all 2,047 orbit cuts; overlap cuts) found none above the hook's 2135/858 = 2.488 at depth 3; the named irreducibles reach only 13/7, 9/4, 11/6, 7/3; the block-4 hook ties several pieces together; building from block 3 would need a block-3 certificate above 2.849.",
+   "status": "checked by computer",
+   "status_detail": "one AI skeptic repeated the main result with its own code (hook numbers mod two primes, orbit cuts, overlap cuts by a different reduction) and computed the 22 missing orbit cuts (best 2.304); hook-relative runners-up 2.4868, 2.4858, 2.4855 not rechecked",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "figure": 2.48834,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/near-miss-certificate-search/out_mcuts_all.json",
+    "data/near-miss-certificate-search/out_hookrel.txt",
+    "data/near-miss-certificate-search/out_proj_counts_rerun.txt"
+   ],
+   "programs": [
+    "programs/near-miss-certificate-search/mcuts.py",
+    "programs/near-miss-certificate-search/hookrel.py",
+    "programs/near-miss-certificate-search/sp8lib.py",
+    "programs/near-miss-certificate-search/proj_counts.py"
+   ],
+   "rerun_2026_10_19": "proj_counts.py re-run; the searches not re-run",
+   "archive_entry": "N1"
+  },
+  {
+   "id": "theory-of-theories-and-logic/23",
+   "statement": "A certificate with the full spectral factor 7/4 and depth-3 average sin^2 below 0.7 closes the near-miss branch.",
+   "status": "refuted",
+   "status_detail": "orbit cut 1434 has spectral factor 7/4 and s_3 = 0.699 but s_1 = 858/865 and misses (2.483); the correct test is s_3 < 0.7 s_1",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the cert-07 skeptic's orbit cut 1434 (and its mirror 854)",
+   "evidence": [
+    "data/near-miss-certificate-search/out_skeptic_1434.txt",
+    "data/near-miss-certificate-search/out_skeptic_1434_854_rerun.txt"
+   ],
+   "programs": [
+    "programs/near-miss-certificate-search/vc_1434.py",
+    "programs/near-miss-certificate-search/vclib.py"
+   ],
+   "rerun_2026_10_19": "reproduced (cut 1434 identical; 854 added)",
+   "archive_entry": "N1"
+  },
+  {
+   "id": "theory-of-theories-and-logic/24",
+   "statement": "In the chi game at block 3 every certificate is capped at 169/57 = 2.965 moves per array; natively an exact 13-row certificate of rank inequalities (5 submodularity, 4 monotonicity, 3 Ingleton, 1 Dougherty-Freiling-Zeger) on the 44-frame interval over F_4 proves it, with one Fano gadget of weight 2/57; the 360 Fano planes buy nothing. The three open thresholds 8/3, 5/2, 7/3 lie inside the window (231/131, 169/57].",
+   "status": "checked by computer",
+   "status_detail": "exact computation; two independent AI skeptics repeated it with their own code; both routes rest on an earlier reduction (all certificates to rank inequalities on one interval) that no skeptic has checked",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "chi"
+   ],
+   "figure": 2.9649,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/chi-game-ceiling-proof.md",
+    "data/chi-game-ceiling/certificate_q4_m3_K5_u_1D.json",
+    "data/chi-game-ceiling/out_verify_q4m3K5.txt",
+    "data/chi-game-ceiling/out_skeptic_mycert.txt"
+   ],
+   "programs": [
+    "programs/chi-game-ceiling/verify_q.py",
+    "programs/chi-game-ceiling/skeptic_mycert.py",
+    "programs/chi-game-ceiling/geo.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": "T9"
+  },
+  {
+   "id": "theory-of-theories-and-logic/25",
+   "statement": "Chi-game lifts survive locally by 0.006: the least excess of a 44-frame interval lift is between 9 (exact; 12 is a solver bound with Hirzebruch rows) and 18 (an exact lift whose 9 bad edges are the tangent flags of the Hermitian curve), so the local ceiling 147/55 = 2.6727 is above 8/3; every chi-game lift proves at most 147/52 = 2.827 (2.774 if the solver bound 12 holds); a whole-geometry lift excludes 3 in 8 only with excess at most 2,338 on 18,711 edges (best known 13,122).",
+   "status": "checked by computer",
+   "status_detail": "exact computation; two independent AI skeptics repeated it with their own code",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "chi"
+   ],
+   "figure": null,
+   "numbers": {
+    "b": [
+     9,
+     18
+    ],
+    "local_ceiling": "147/55",
+    "needed_E_3in8": 2338,
+    "edges": 18711,
+    "best_E": 13122
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/chi-game-ceiling/lift_alpha_s2.txt",
+    "data/chi-game-ceiling/out_skeptic_mycheck_lift_s2.txt",
+    "data/chi-game-ceiling/out_skeptic_mylift.txt",
+    "notes/chi-game-ceiling-proof.md"
+   ],
+   "programs": [
+    "programs/chi-game-ceiling/skeptic_mycheck_lift.py",
+    "programs/chi-game-ceiling/skeptic_mylift.py"
+   ],
+   "rerun_2026_10_19": "identical (apart from the input path)",
+   "archive_entry": "T9"
+  },
+  {
+   "id": "theory-of-theories-and-logic/26",
+   "statement": "In the chi game no cut proves more than 28/11 = 2.545 (from the 891-frame graph's degree 42 and second eigenvalue 9), so no cut can exclude 3 in 8 there.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic has read it; the eigenvalue arithmetic is checked by computer",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "chi"
+   ],
+   "figure": 2.5454,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/frame-graph-eigenvalues/out_dpg_eig_check.txt"
+   ],
+   "programs": [
+    "programs/frame-graph-eigenvalues/dpg_eig_check.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": null
+  },
+  {
+   "id": "theory-of-theories-and-logic/27",
+   "statement": "Theorem E+: the sign defect of the earlier transfer vanishes identically and the naive collapse of Clifford cellular automata is multiplicative, so every certificate kept by monomial Clifford tensor powers gives the same bounds (2W at block 2, 14W/5 at block 3, 41W/13 at block 4) in every game whose letters are locality-preserving Clifford maps with translation-invariant bulk (unimodular chain maps, CZ and i-phase couplings, cyclic rotations, boundary Cliffords) and whose free letters are monomial or boundary-local.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic); randomized exact checks on 1,440 automata and 720 pairs with a control that has power",
+   "date": "2026-10-14",
+   "block": "2-4",
+   "games": [
+    "unimodular chain maps"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/clifford-cohomology-proof.md",
+    "data/clifford-cohomology/out_indep.txt",
+    "data/clifford-cohomology/out_ctrl.txt",
+    "data/clifford-cohomology/out_ring.txt"
+   ],
+   "programs": [
+    "programs/clifford-cohomology/indep.py",
+    "programs/clifford-cohomology/ctrl.py",
+    "programs/clifford-cohomology/ring.py",
+    "programs/clifford-cohomology/cqca.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": "L18"
+  },
+  {
+   "id": "theory-of-theories-and-logic/28",
+   "statement": "Theorem X: a formally polynomial approximate unit (cancellations of negative eps-powers hold with the paid moves as unknown symbols) runs exactly at a cost factor O(log log N), so its saving is unchanged.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic)",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/exactification.md",
+    "data/exactification/out_exact_toy.txt"
+   ],
+   "programs": [
+    "programs/exactification/exact_toy.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": "L14"
+  },
+  {
+   "id": "theory-of-theories-and-logic/29",
+   "statement": "Making a relation-using approximate unit exact costs at least a factor 2 per level, so such units are worthless at blocks 2 to 4.",
+   "status": "refuted",
+   "status_detail": "the skeptic's toy counterexample needs 3 coefficient-level paid calls for M = 3, and 1 after pruning: the factor can be 1; the cost lies between the exact cost and (a+1)M",
+   "date": "2026-10-14",
+   "block": "2-4",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "skeptic counterexample (skeptic_exactify_count.py)",
+   "evidence": [
+    "data/exactification/out_skeptic_exactify_count_rerun.txt",
+    "notes/exactification.md"
+   ],
+   "programs": [
+    "programs/exactification/skeptic_exactify_count.py"
+   ],
+   "rerun_2026_10_19": "re-run; output shipped as new",
+   "archive_entry": "C11"
+  },
+  {
+   "id": "theory-of-theories-and-logic/30",
+   "statement": "A family of approximate units gives a real unit only if its error is exactly zero in the limit (transfer criterion).",
+   "status": "refuted",
+   "status_detail": "counterexample: scale by 1 + 1/k; exact units form a closed set, so every bounded family whose error tends to 0 has an exact limit; only families with unbounded numbers can fail",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "every"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the logic round's skeptic (transfer_and_cs.py)",
+   "evidence": [
+    "data/every-f-and-logical-form/out_transfer_and_cs.txt"
+   ],
+   "programs": [
+    "programs/every-f-and-logical-form/transfer_and_cs.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": "C15"
+  },
+  {
+   "id": "theory-of-theories-and-logic/31",
+   "statement": "One array needs m paid moves in every game whose free steps do bounded work per output entry (chi and everything-free games included); without sums of arrays no circuit goes below m paid moves per array (ZX track, after the repair p f + 2mWL >= mWf for every f, so p >= mW).",
+   "status": "argued by hand, not checked",
+   "status_detail": "upheld by AI skeptics in two rounds; the ZX version was refuted as first written (its premise that every free step permutes and rephases entries is false with Hadamards on end columns) and both ZX skeptics supplied the repair",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "every"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/zx-proof.md",
+    "data/zx-sum-free/out_zx1.txt",
+    "data/zx-sum-free/out_zx4.txt"
+   ],
+   "programs": [
+    "programs/zx-sum-free/zx1_sumfree.py",
+    "programs/zx-sum-free/zx4_xw_sumfree.py"
+   ],
+   "rerun_2026_10_19": "not re-run (Colab runs)",
+   "archive_entry": "L3"
+  },
+  {
+   "id": "theory-of-theories-and-logic/32",
+   "statement": "PyZX 0.10.7's basic_optimization changes the linear map of circuits containing XPhase gates; minimal failing input CNOT(2,1), CNOT(1,2), XPhase(1, phase 1/2) on 3 qubits.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; an independent AI skeptic repeated it with its own code (one skeptic)",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/zx-sum-free/out_skeptic_pyzx_bug_repro.txt"
+   ],
+   "programs": [
+    "programs/zx-sum-free/skeptic_pyzx_bug_repro.py"
+   ],
+   "rerun_2026_10_19": "reproduced against PyZX 0.10.7 from PyPI",
+   "archive_entry": "L3"
+  },
+  {
+   "id": "theory-of-theories-and-logic/33",
+   "statement": "GCT: the best closed (GCT-type) obstruction proves exactly the border complexity and is capped by the same barrier as rank methods; an obstruction seeing only some irreducibles is capped by a computable relaxed game; irreducibles couple only through shared P_0-types.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic has read it",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/gct-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": "programs not in this revision",
+   "archive_entry": null
+  },
+  {
+   "id": "theory-of-theories-and-logic/34",
+   "statement": "At block 3, inside the hook's 56-dimensional irreducible, an exact 5 in 14 and an exact mixed 1+4 in 10 exist in the relaxed game (residuals 5.6e-13 and 3.4e-29), so no argument confined to that piece can rule out 5 in 14; the coupling 56+105 descended to 5.4e-9 on 5 in 14 and was still falling.",
+   "status": "open",
+   "status_detail": "a numerical search; this is evidence, not proof; no skeptic",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/gct-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": "programs not in this revision",
+   "archive_entry": null
+  },
+  {
+   "id": "theory-of-theories-and-logic/35",
+   "statement": "All 652 symmetric block-4 skeletons (562 for 2 in 7, 81 for 3 in 10, 4 for 4 in 13, 5 for 7 in 23) are impossible for every choice of complex coefficients.",
+   "status": "refuted",
+   "status_detail": "the normalisation fixed the first coefficient of every move to 1 and left out 'first coefficient = 0'; with every coefficient free 4 of 93 sampled skeletons pass the relaxation; 157 of the 562 really cost 5 or 6; the 652 are a sample from one builder",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "its skeptic (v-nag)",
+   "evidence": [
+    "notes/symmetric-skeletons-pattern-certificates.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "C14"
+  },
+  {
+   "id": "theory-of-theories-and-logic/36",
+   "statement": "With every coefficient free, 17 of the 652 symmetric block-4 skeletons pass the relaxation (all 2 in 7 at true cost 7); 16 of the 17 have no unit for any complex coefficients (15 exactly over Q; the 16th with its forced zeros modulo two primes); g27_Fany4_s7 is open with 49 of 64 charts excluded exactly and 15 open.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; one AI skeptic rebuilt every system with its own code, found 0 disagreements on 677 relaxations, and independently re-decided 9 of the 15 exact exclusions over Q; five of the other six were only screened at one exact point each, and g27_mid3_m3_s13 was not rechecked",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {
+    "pass_relaxation": 17,
+    "of": 652,
+    "no_unit": 16,
+    "open": "g27_Fany4_s7",
+    "s7_charts_excluded": 49,
+    "s7_charts": 64
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/symmetric-block4-skeletons/relaxation_table.txt",
+    "data/symmetric-block4-skeletons/relaxation_hits.txt",
+    "data/symmetric-block4-skeletons/out_skeptic_relax652.txt",
+    "data/symmetric-block4-skeletons/g27_Fany4_s7_open_charts.txt"
+   ],
+   "programs": [
+    "programs/symmetric-block4-skeletons/vnr.py",
+    "programs/symmetric-block4-skeletons/vnr_run.py",
+    "programs/symmetric-block4-skeletons/chart.py"
+   ],
+   "rerun_2026_10_19": "not re-run (needs Singular)",
+   "archive_entry": "X25"
+  },
+  {
+   "id": "theory-of-theories-and-logic/37",
+   "statement": "Pattern identity: in each failing symmetric skeleton the target row is a multiple of a few junk rows touched only by the target's own moves; constant multiples give the solver floors 1/2, 1/3, 1/4, polynomial ones give residuals that vanish only as numbers grow; held in 81 of 82 checked certificates, and only where first coefficients are nonzero.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic for the lemma; the 81 of 82 count is the v-nag skeptic's",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/symmetric-skeletons-pattern-certificates.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "T13"
+  },
+  {
+   "id": "theory-of-theories-and-logic/38",
+   "statement": "Choosing letters reaches special position (4 of 1,116 single replacements of a control pass, all exact programs), but all 71 aligned 2-in-7 programs (40 symmetric, 31 asymmetric) that pass the relaxation without dropping a summand fail the full test through the zero divisor (1+u)(1-u) = 0; about 9,400 single and 136 paired letter changes kept it; the one aligned 3-in-10 skeleton fails its relaxation exactly.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone; it inherits the first-coefficient normalisation, so cases with a first coefficient 0 are unchecked",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [],
+   "programs": [],
+   "rerun_2026_10_19": "programs not in this revision",
+   "archive_entry": "X26"
+  },
+  {
+   "id": "theory-of-theories-and-logic/39",
+   "statement": "msolve 0.6.5 reads a monomial written x*x as x (exponents not accumulated): {x*x*y*z - x*x, x*x*y*z} gives basis [x], with ^ it gives [x^2]. Write powers as x^k and cross-check with Singular.",
+   "status": "checked by computer",
+   "status_detail": "confirmed by the orchestrating agent on a Colab machine; every affected verdict of these rounds was redone",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": null
+  },
+  {
+   "id": "theory-of-theories-and-logic/40",
+   "statement": "In the engine game the every-f bound depends only on the block (Corollary F1): the engine group has 96 elements at block 1 and 46,080 at block 2, r' = 12, 20 and at least 28 distinct nonzero traces at blocks 1, 2, 3, and at block 1 f = 1..8 is the shortest range that always suffices; chain shifts have no block-wide bound; with controlled-S the block-2 group is infinite.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; an independent AI skeptic repeated it with its own code (one skeptic) (every number reproduced in exact arithmetic); the general Theorem F behind it is finding 54, argued by hand",
+   "date": "2026-10-14",
+   "block": "1-3",
+   "games": [
+    "engine",
+    "chain maps",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {
+    "group_order": {
+     "1": 96,
+     "2": 46080
+    },
+    "r_prime": {
+     "1": 12,
+     "2": 20,
+     "3": ">=28"
+    },
+    "block1_f_range": 8
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/logic-classification-proof.md",
+    "notes/logic-classification-skeptic.md",
+    "data/every-f-and-logical-form/out_fbound.txt",
+    "data/every-f-and-logical-form/out_engine_group_exact.txt",
+    "data/every-f-and-logical-form/out_block3_traces.txt"
+   ],
+   "programs": [
+    "programs/every-f-and-logical-form/fbound.py",
+    "programs/every-f-and-logical-form/engine_group_exact.py",
+    "programs/every-f-and-logical-form/block3_traces.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": "M9"
+  },
+  {
+   "id": "theory-of-theories-and-logic/41",
+   "statement": "'Some unit saves more than q' is Sigma_1, so s* is computable from below and a true existence claim is provable in Robinson arithmetic: the existence side and every bounded question are never independent; independence can live only in the unbounded ceilings, exactly as far as s* fails to be computable (Theorems A and I). Provability logic, reflection, consistency axioms and large cardinals add no new Sigma_1 truths (Theorem P); Lefschetz principle for fixed shapes.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic); item 6 of Theorem A (the full circuit model drops to Sigma_1 exactly when every circuit saving comes from a finite unit) is argued in one direction only",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "every"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/logic-classification-proof.md",
+    "notes/logic-classification-skeptic.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "M9"
+  },
+  {
+   "id": "theory-of-theories-and-logic/42",
+   "statement": "Corollary F1 (finite check of every f in the engine game) replaces the missing Lean lemma of the earlier revisions.",
+   "status": "refuted",
+   "status_detail": "its route to 'right at every f' passes through 'a formal identity is right for every f', which is the missing lemma itself",
+   "date": "2026-10-14",
+   "block": "every",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the logic round's skeptic",
+   "evidence": [
+    "notes/logic-classification-skeptic.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "M9"
+  },
+  {
+   "id": "theory-of-theories-and-logic/43",
+   "statement": "The ml-logic track's dated record (predictions written before computing) is genuine.",
+   "status": "refuted",
+   "status_detail": "file times show every file was written within about ten minutes, before most of the times the files give; the mathematics does not depend on it",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the logic round's skeptic",
+   "evidence": [
+    "notes/logic-classification-skeptic.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "C15"
+  },
+  {
+   "id": "theory-of-theories-and-logic/44",
+   "statement": "Proposition D: for each skeleton exactly one of a closure polynomial (a closure-type impossibility proof) or a border curve (an approximate unit, which proves no closure-type proof exists) exists, and searching for both by size decides which. Theorem R, hooks and lifts are narrower than closure-type; for them only the 'no' side is decided.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic); corrected from 'rank-type' to 'closure-type'",
+   "date": "2026-10-15",
+   "block": "every",
+   "games": [
+    "every"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/proof-complexity-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "M12"
+  },
+  {
+   "id": "theory-of-theories-and-logic/45",
+   "statement": "Three 2-in-7 skeletons at block 4 (g27_Fany4_s5, g27_Fany4_s6, g27_Fp2b_m3_s5) have exact border curves on their relaxations, whose relaxations have no exact solution; one curve refined to 80 digits has relaxation error 0.447 eps while its numbers grow like 0.57/eps.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; an independent AI skeptic repeated it with its own code (one skeptic) (consistent at two new primes; Singular agreed on two; 80-digit Newton refinement); a fourth curve (f27_FAmid3_m3_s16) is numerical only and not reproduced",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/border-curves/out_refine3.txt",
+    "data/border-curves/out_sing.txt",
+    "data/border-curves/g27_Fp2b_m3_s5.u.p1.ms"
+   ],
+   "programs": [
+    "programs/border-curves/refine.py",
+    "programs/border-curves/myfo.py"
+   ],
+   "rerun_2026_10_19": "identical (apart from timing)",
+   "archive_entry": "N2"
+  },
+  {
+   "id": "theory-of-theories-and-logic/46",
+   "statement": "From the border curves: no Theorem-R certificate can ever exclude 2 in 7 at block 4.",
+   "status": "refuted",
+   "status_detail": "the step is incomplete: it needs the border to be right at every f with legitimate letters and the skeleton to lie in the branch the certificate search targets",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the ml-proofcx skeptic",
+   "evidence": [
+    "notes/proof-complexity-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "N2"
+  },
+  {
+   "id": "theory-of-theories-and-logic/47",
+   "statement": "Refutations of our impossible systems are cheap: 1,304 infeasible relaxations at blocks 3 and 4 and 58 Singular-decided skeletons refute at Nullstellensatz or Polynomial Calculus degree 2 to 6, mostly block + 1; the degree tracks the block, not the moves (2 in 7 and 7 in 23 both at degree 5 at block 4).",
+   "status": "checked by computer",
+   "status_detail": "for the 58 skeletons an AI skeptic redid the degrees exactly over Q (15 at degree 2, 43 at degree 3); the 1,304 were computed modulo a prime only, not repeated",
+   "date": "2026-10-14",
+   "block": "3-4",
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/proof-complexity-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "T14"
+  },
+  {
+   "id": "theory-of-theories-and-logic/48",
+   "statement": "15 of the 17 two-in-seven relaxations with complex solutions have no solution over the two-element field, so every solution of those 15 must divide by 2.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/proof-complexity-proof.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "T14"
+  },
+  {
+   "id": "theory-of-theories-and-logic/49",
+   "statement": "Two-certificate theorem: at a fixed shape exactly one of a refutation identity 1 = sum g_i f_i or a set of commuting rational matrices at which every equation vanishes exists, the matrix size bounded by the product of the degrees (Heintz); so existence at a fixed shape cannot be independent of arithmetic.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic) (it confirmed the source)",
+   "date": "2026-10-15",
+   "block": "every",
+   "games": [
+    "every"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/two-certificates-note.md",
+    "notes/two-certificates-skeptic.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "M10"
+  },
+  {
+   "id": "theory-of-theories-and-logic/50",
+   "statement": "Six commuting-matrix existence certificates (Karatsuba slice, W-state slice, special-position control, relaxation hits needing i) pass a standalone exact checker; a tampered one is rejected; none is a unit of our problem.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; an independent AI skeptic repeated it with its own code (one skeptic) (including that each certificate belongs to the right original system)",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/two-certificate-theorem/certs",
+    "data/two-certificate-theorem/out_check_cert_rerun.txt",
+    "data/two-certificate-theorem/out_skeptic_indep_check.txt"
+   ],
+   "programs": [
+    "programs/two-certificate-theorem/check_cert.py"
+   ],
+   "rerun_2026_10_19": "VALID for all six",
+   "archive_entry": "M10"
+  },
+  {
+   "id": "theory-of-theories-and-logic/51",
+   "statement": "Ruling out every refutation up to the effective-Nullstellensatz degree is hopeless on our systems (about 10^610 unknowns for the smallest real 37-unknown skeleton, 10^(8.7e23) for exact 2 in 7 at block 4, at best 10^357 with structure); plain Bezout counting is blocked (Karatsuba square slice: 1,728 counted, 4 finite); for a square slice with a nonsingular root one prime plus Hensel's lemma proves existence (12 x 12 Karatsuba slice at p = 10007).",
+   "status": "checked by computer",
+   "status_detail": "exact computation; an independent AI skeptic repeated it with its own code (one skeptic)",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [],
+   "figure": null,
+   "numbers": {
+    "log10_unknowns_37": 610,
+    "with_structure": 357,
+    "bezout": 1728,
+    "finite": 4,
+    "hensel_prime": 10007
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/two-certificate-theorem/out_skeptic_hensel_demo.txt",
+    "data/two-certificate-theorem/out_skeptic_infinity_verify.txt",
+    "notes/two-certificates-note.md"
+   ],
+   "programs": [
+    "programs/two-certificate-theorem/skeptic_hensel_demo.py",
+    "programs/two-certificate-theorem/skeptic_infinity_verify.py"
+   ],
+   "rerun_2026_10_19": "identical",
+   "archive_entry": "M11"
+  },
+  {
+   "id": "theory-of-theories-and-logic/52",
+   "statement": "Four readings of the existence-by-refutation track: 'a proof that an existence proof exists is never cheaper than the existence proof', 'counting is the only non-constructive route', 'counting can prove only border units', 'mod p is never a proof over C'.",
+   "status": "refuted",
+   "status_detail": "Hensel lifting, many-primes counts, certified numerics on square slices and refined counting are other routes; the real obstacle is that our systems have more equations than unknowns",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the ml-fooling skeptic",
+   "evidence": [
+    "notes/two-certificates-skeptic.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "C16"
+  },
+  {
+   "id": "theory-of-theories-and-logic/53",
+   "statement": "76 of 133 previously undecided skeletons refute at degree 2 or 3 modulo one prime.",
+   "status": "open",
+   "status_detail": "modulo one prime only, not a proof over C; very likely right but below Singular's verdicts",
+   "date": "2026-10-15",
+   "block": "3-4",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/two-certificates-note.md"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "C16"
+  },
+  {
+   "id": "theory-of-theories-and-logic/54",
+   "statement": "Every f reduces to finitely many f (Theorem F of the logic round): for letters that act on the digit columns like a finite-state machine (column-uniform letters, chain maps, carries, neighbour phases) a bound N(S) computable from the shape suffices, so each shape is one finite polynomial system decided by Groebner bases.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic); its numbers in the engine game are finding 40",
+   "date": "2026-10-14",
+   "block": "1-3",
+   "games": [
+    "engine",
+    "chain maps",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "notes/logic-classification-proof.md",
+    "notes/logic-classification-skeptic.md",
+    "data/every-f-and-logical-form/out_fbound.txt",
+    "data/every-f-and-logical-form/out_engine_group_exact.txt",
+    "data/every-f-and-logical-form/out_block3_traces.txt"
+   ],
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "M9"
+  }
+ ],
+ "open": [
+  {
+   "id": "theory-of-theories-and-logic/open-1",
+   "question": "Can lifts keep up with the bar: does the excess per edge of the best lifts stay at or below m^0.1 - 1 at arbitrarily large blocks? (18 <= b_4 <= 36 shown by hand with exact LP certificates; two skeptics.)",
+   "worth": "decides whether any named certificate family can settle a saving of 0.1",
+   "first_experiment": "Show that defect collisions never pay at block 4 (a finite check), which would give b_4 = 36 for every lift; in parallel test a rank-deficiency (2-flat) Sylvester-Gallai bound at block 5.",
+   "programs": [
+    "programs/lift-gluing/mycover.py",
+    "programs/lift-gluing/dualcert.py"
+   ]
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-2",
+   "question": "Can any certificate family make its angle factor grow like m^0.9/2?",
+   "worth": "the bar",
+   "first_experiment": "Build block-5 lifts optimised for small far-pair angles (depth-3 average sin^2) instead of small edge excess and measure their angle factor against the start lifts.",
+   "programs": [
+    "programs/angle-law/frames_check.py"
+   ]
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-3",
+   "question": "Block-4 near miss, certificate side: is there a certificate with depth-3 average below 0.7 times its edge average at full spectral factor?",
+   "worth": {
+    "2 in 7, block 4": 0.096,
+    "3 in 10": 0.132,
+    "4 in 13": 0.15
+   },
+   "first_experiment": "Cuts of the Sp(8,2) irreducibles 1071, 1275, 1360 and 1785 with sp8lib.py scored by the corrected test; then overlap cuts with first set of size >= 4 and whole-graph lifts built for depth 3 (mean edge excess < 0.2).",
+   "programs": [
+    "programs/near-miss-certificate-search/sp8lib.py",
+    "programs/near-miss-certificate-search/mcuts.py"
+   ]
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-4",
+   "question": "The chi-game cluster at block 3: 3 in 8, 2 in 5, 3 in 7.",
+   "worth": {
+    "3 in 8": 0.107,
+    "2 in 5": 0.166,
+    "3 in 7": 0.229
+   },
+   "first_experiment": "Skeptic check of the derived cut cap 28/11; build the irreducible pieces of the unitary group acting on the 891 frames and list their cuts; try to prove that an interval lift with o bad end edges has excess >= 18 + o/6.",
+   "programs": [
+    "programs/frame-graph-eigenvalues/dpg_eig_check.py"
+   ]
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-5",
+   "question": "Does the symmetric skeleton g27_Fany4_s7 (2 in 7, block 4) have a unit? 15 of 64 charts open.",
+   "worth": 0.096,
+   "first_experiment": "Run the exact chart test with Singular over Q on each open chart (5 to 30 minutes each on a Colab machine).",
+   "programs": [
+    "programs/symmetric-block4-skeletons/chart.py"
+   ]
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-6",
+   "question": "3 in 10 at block 4 by letter choice.",
+   "worth": 0.132,
+   "first_experiment": "Make the junk count include the other arrays' target rows, rerun the descent from the one aligned 3-in-10 skeleton and its neighbours, and screen with every coefficient free.",
+   "programs": []
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-7",
+   "question": "Do the four border skeletons' full systems carry approximate 2-in-7 units?",
+   "worth": 0.096,
+   "first_experiment": "Recover and save the numerical curve of f27_FAmid3_m3_s16, seed the full-system search with it, and run the other three on all eight characters (msolve with powers as x^k, or a sparse closure).",
+   "programs": [
+    "programs/border-curves/refine.py",
+    "programs/border-curves/search.py"
+   ]
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-8",
+   "question": "Are the 76 refutations modulo one prime real?",
+   "worth": null,
+   "first_experiment": "Recheck at a second prime or exactly over Q with Singular.",
+   "programs": []
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-9",
+   "question": "Does the existence pipeline certify a real unit of ours?",
+   "worth": null,
+   "first_experiment": "Run it on the 8-move control word (expected 1 x 1 certificate) and the plain schedule; then state the commuting-matrix certificate lemma in Lean on a Colab machine.",
+   "programs": [
+    "programs/two-certificate-theorem/check_cert.py"
+   ]
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-10",
+   "question": "Is s* computable?",
+   "worth": "the only place independence could live",
+   "first_experiment": "Check whether the arguments known for Shannon capacity (Boche-Deppe) and asymptotic tensor rank (Christandl et al.) carry over to the algebra of combining units; no machine work is suggested.",
+   "programs": []
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-11",
+   "question": "Do couplings of irreducibles (GCT relaxations) obstruct 5 in 14 at block 3?",
+   "worth": 0.0628,
+   "first_experiment": "A stratum-aware solver validated on the plain 1 in 3 in the pieces 35 and 56+70; then decide 5 in 14 in 56+70.",
+   "programs": []
+  },
+  {
+   "id": "theory-of-theories-and-logic/open-12",
+   "question": "Loose ends: r'(3) exactly; whether f = 1..8 suffices at block 2; second skeptics for Theorem C and Lemmas D, E, Theorems F and I, Theorem E+, 89/47, the GCT propositions and the pattern identity.",
+   "worth": null,
+   "first_experiment": "Enumerate the block-3 engine group on a Colab machine to get r'(3).",
+   "programs": [
+    "programs/every-f-and-logical-form/engine_group_exact.py"
+   ]
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/frame-graph-eigenvalues/dpg_eig_check.py",
+   "language": "python",
+   "shows": "exact dual-polar-graph eigenvalues and cut caps (5/14, 13/30, 28/11)",
+   "command": "python3 dpg_eig_check.py",
+   "run_from": "programs/frame-graph-eigenvalues",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/one-exponent/archimedes.py",
+   "language": "python",
+   "shows": "one direction = two block calls, exact in Q(i)",
+   "command": "python3 archimedes.py",
+   "run_from": "programs/one-exponent",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/one-exponent/liftprof.c",
+   "language": "c",
+   "shows": "exact lift profiles (pair sums by distance) of a lift file",
+   "command": "cc -O2 -o liftprof liftprof.c -lm -lpthread && ./liftprof ../../data/one-exponent/lifts/g4c.txt 4",
+   "run_from": "programs/one-exponent",
+   "time": "under 1 s at blocks 3, 4",
+   "memory": "under 100 MB",
+   "needs": [
+    "C compiler"
+   ],
+   "rerun_2026_10_19": "identical apart from the input path"
+  },
+  {
+   "path": "programs/one-exponent/liftsample.py",
+   "language": "python",
+   "shows": "sampled profiles of start lifts",
+   "command": "python3 liftsample.py 4 3000 1",
+   "run_from": "programs/one-exponent",
+   "time": "2 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/one-exponent/gen.py",
+   "language": "python",
+   "shows": "the start lifts of the dual polar graph's frames: writes g3c.txt, g4c.txt and the unshipped block-5 lift g5c.txt",
+   "command": "python3 gen.py 5 g5c.txt",
+   "run_from": "programs/one-exponent",
+   "time": "33 s at m = 5",
+   "memory": "85 MB",
+   "needs": [],
+   "rerun_2026_10_19": "m = 3, 4, 5 byte-for-byte equal to g3c.txt, g4c.txt and g5c.txt (SHA-256 of g5c.txt as in not_shipped)"
+  },
+  {
+   "path": "programs/sp62-mixed-unit-certificate/verify_exact.py",
+   "language": "python",
+   "shows": "Theorem M: exact rational ranks of the saved certificate matrices",
+   "command": "python3 verify_exact.py ../../data/sp62-mixed-unit-certificate/exact_mats_lam3.json",
+   "run_from": "programs/sp62-mixed-unit-certificate",
+   "time": "5 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/sp62-mixed-unit-certificate/skeptic_e7_check.py",
+   "language": "python",
+   "shows": "Theorem M rebuilt independently through W(E7)",
+   "command": "python3 skeptic_e7_check.py 1",
+   "run_from": "programs/sp62-mixed-unit-certificate",
+   "time": "8 s",
+   "memory": "50 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/sp62-mixed-unit-certificate/exact_cert.py",
+   "language": "python",
+   "shows": "producer of the certificate matrices (with fgcore.py and gap/ctbl.json)",
+   "command": "python3 exact_cert.py 3 8 28",
+   "run_from": "programs/sp62-mixed-unit-certificate",
+   "time": "not measured",
+   "memory": "not measured",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "not re-run"
+  },
+  {
+   "path": "programs/sp62-mixed-unit-certificate/fg_build.py",
+   "language": "python",
+   "shows": "builds the irreducibles of Sp(6,2) (writes a 228 MB cache)",
+   "command": "python3 fg_build.py irreps.npz",
+   "run_from": "programs/sp62-mixed-unit-certificate",
+   "time": "not measured",
+   "memory": "several GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "not re-run"
+  },
+  {
+   "path": "programs/sp62-mixed-unit-certificate/fg_cuts.py",
+   "language": "python",
+   "shows": "all cuts of the irreducibles (24,609)",
+   "command": "python3 fg_cuts.py irreps.npz out.json",
+   "run_from": "programs/sp62-mixed-unit-certificate",
+   "time": "not measured",
+   "memory": "several GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "not re-run"
+  },
+  {
+   "path": "programs/venn-certificate-spare-row/skeptic_exact_cap.py",
+   "language": "python",
+   "shows": "exact cap 752 of the 89/47 certificate",
+   "command": "python3 skeptic_exact_cap.py 3 4 0,2",
+   "run_from": "programs/venn-certificate-spare-row",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/venn-certificate-spare-row/indep_venn_check.py",
+   "language": "python",
+   "shows": "cap and demands of the 89/47 certificate modulo two primes",
+   "command": "python3 indep_venn_check.py 3 4 0,2",
+   "run_from": "programs/venn-certificate-spare-row",
+   "time": "37 s",
+   "memory": "1.5 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/venn-certificate-spare-row/mixed_room.py",
+   "language": "python",
+   "shows": "the mixed-unit room from the 180-certificate sweep",
+   "command": "python3 mixed_room.py ../../data/venn-certificate-spare-row/out_venn_sweep_m3.jsonl",
+   "run_from": "programs/venn-certificate-spare-row",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/chi-game-ceiling/verify_q.py",
+   "language": "python",
+   "shows": "exact check of the 13-row 169/57 certificate over F_4",
+   "command": "python3 verify_q.py ../../data/chi-game-ceiling/certificate_q4_m3_K5_u_1D.json",
+   "run_from": "programs/chi-game-ceiling",
+   "time": "16 s",
+   "memory": "240 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/chi-game-ceiling/skeptic_mycert.py",
+   "language": "python",
+   "shows": "the skeptic's independent check of the same certificate (uses geo.py)",
+   "command": "python3 skeptic_mycert.py ../../data/chi-game-ceiling/certificate_q4_m3_K5_u_1D.json",
+   "run_from": "programs/chi-game-ceiling",
+   "time": "13 s",
+   "memory": "200 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/chi-game-ceiling/skeptic_mycheck_lift.py",
+   "language": "python",
+   "shows": "recomputes the excess 18 of the chi-game interval lift",
+   "command": "python3 skeptic_mycheck_lift.py ../../data/chi-game-ceiling/lift_alpha_s2.txt",
+   "run_from": "programs/chi-game-ceiling",
+   "time": "5 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical apart from the input path"
+  },
+  {
+   "path": "programs/exactification/exact_toy.py",
+   "language": "python",
+   "shows": "Theorem X's toy composed exactly to depth 6",
+   "command": "python3 exact_toy.py",
+   "run_from": "programs/exactification",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/exactification/skeptic_exactify_count.py",
+   "language": "python",
+   "shows": "counterexample to the factor 2",
+   "command": "python3 skeptic_exactify_count.py",
+   "run_from": "programs/exactification",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "re-run; output new"
+  },
+  {
+   "path": "programs/clifford-cohomology/indep.py",
+   "language": "python",
+   "shows": "Theorem E+: random Clifford automata, multiplicativity, defect zero",
+   "command": "python3 indep.py 1 2 3 4",
+   "run_from": "programs/clifford-cohomology",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/clifford-cohomology/ctrl.py",
+   "language": "python",
+   "shows": "control: wrong collapse orders fail",
+   "command": "python3 ctrl.py",
+   "run_from": "programs/clifford-cohomology",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/clifford-cohomology/ring.py",
+   "language": "python",
+   "shows": "odd-ring restriction depends on L mod 4",
+   "command": "python3 ring.py",
+   "run_from": "programs/clifford-cohomology",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/lift-gluing/counts3.py",
+   "language": "python",
+   "shows": "block-3 frame graph counts behind E >= 68",
+   "command": "python3 counts3.py",
+   "run_from": "programs/lift-gluing",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/lift-gluing/kappa.py",
+   "language": "python",
+   "shows": "the constants kappa_m of Theorem SG",
+   "command": "python3 kappa.py",
+   "run_from": "programs/lift-gluing",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/lift-gluing/check_e3.py",
+   "language": "python",
+   "shows": "the exact interval lift with excess 3",
+   "command": "cd ../../data/lift-gluing && python3 ../../programs/lift-gluing/check_e3.py",
+   "run_from": "programs/lift-gluing",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/lift-gluing/dualcert.py",
+   "language": "python",
+   "shows": "exact LP dual certificates for b_4 >= 18 and b_5 >= 141 (reads mycover.py)",
+   "command": "python3 dualcert.py 4 1",
+   "run_from": "programs/lift-gluing",
+   "time": "7 s at block 4",
+   "memory": "90 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_2026_10_19": "block 4 identical apart from float digits"
+  },
+  {
+   "path": "programs/angle-law/omega_exact.py",
+   "language": "python",
+   "shows": "Theorem F exactly up to block 40",
+   "command": "python3 omega_exact.py 40",
+   "run_from": "programs/angle-law",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/angle-law/frob_ceiling.py",
+   "language": "python",
+   "shows": "the spectral ceiling table",
+   "command": "python3 frob_ceiling.py",
+   "run_from": "programs/angle-law",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/angle-law/hook_cells.py",
+   "language": "python",
+   "shows": "Theorem H on hooks",
+   "command": "python3 hook_cells.py",
+   "run_from": "programs/angle-law",
+   "time": "1 s",
+   "memory": "50 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/angle-law/frames_check.py",
+   "language": "python",
+   "shows": "frame-family checks of Theorem F",
+   "command": "python3 frames_check.py",
+   "run_from": "programs/angle-law",
+   "time": "14 s",
+   "memory": "640 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/near-miss-certificate-search/vc_1434.py",
+   "language": "python",
+   "shows": "orbit cut 1434 and its mirror: the counterexample to the first closing test",
+   "command": "python3 vc_1434.py 1434,854",
+   "run_from": "programs/near-miss-certificate-search",
+   "time": "14 s",
+   "memory": "about 3 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "reproduced"
+  },
+  {
+   "path": "programs/near-miss-certificate-search/proj_counts.py",
+   "language": "python",
+   "shows": "projection counts behind the 2.849 threshold",
+   "command": "python3 proj_counts.py",
+   "run_from": "programs/near-miss-certificate-search",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "re-run; output new"
+  },
+  {
+   "path": "programs/near-miss-certificate-search/mcuts.py",
+   "language": "python",
+   "shows": "orbit cuts of the block-4 hook module",
+   "command": "python3 mcuts.py all OUT.json",
+   "run_from": "programs/near-miss-certificate-search",
+   "time": "hours",
+   "memory": "not measured",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "not re-run"
+  },
+  {
+   "path": "programs/near-miss-certificate-search/hookrel.py",
+   "language": "python",
+   "shows": "hook-relative coordinate families",
+   "command": "python3 hookrel.py",
+   "run_from": "programs/near-miss-certificate-search",
+   "time": "not measured",
+   "memory": "not measured",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "not re-run"
+  },
+  {
+   "path": "programs/zx-sum-free/skeptic_pyzx_bug_repro.py",
+   "language": "python",
+   "shows": "the PyZX 0.10.7 basic_optimization bug",
+   "command": "python3 skeptic_pyzx_bug_repro.py",
+   "run_from": "programs/zx-sum-free",
+   "time": "3 s",
+   "memory": "under 100 MB",
+   "needs": [
+    "numpy",
+    "pyzx==0.10.7"
+   ],
+   "rerun_2026_10_19": "reproduced"
+  },
+  {
+   "path": "programs/zx-sum-free/zx1_sumfree.py",
+   "language": "python",
+   "shows": "sum-free circuits through PyZX (162 circuits, 378 runs)",
+   "command": "python3 zx1_sumfree.py",
+   "run_from": "programs/zx-sum-free",
+   "time": "not measured (ran on a Colab machine)",
+   "memory": "not measured",
+   "needs": [
+    "numpy",
+    "pyzx==0.10.7"
+   ],
+   "rerun_2026_10_19": "not re-run"
+  },
+  {
+   "path": "programs/symmetric-block4-skeletons/vnr_run.py",
+   "language": "python",
+   "shows": "the skeptic's rebuild of a symmetric skeleton (vnr.py) and Singular decision of its relaxation or full system",
+   "command": "tar -xzf ../../data/symmetric-block4-skeletons/recipes_all678.tar.gz && python3 vnr_run.py relax NAME",
+   "run_from": "programs/symmetric-block4-skeletons",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy",
+    "Singular"
+   ],
+   "rerun_2026_10_19": "not re-run"
+  },
+  {
+   "path": "programs/symmetric-block4-skeletons/chart.py",
+   "language": "python",
+   "shows": "chart-by-chart exact decision over Q",
+   "command": "python3 chart.py NAME 1800",
+   "run_from": "programs/symmetric-block4-skeletons",
+   "time": "minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy",
+    "Singular"
+   ],
+   "rerun_2026_10_19": "not re-run"
+  },
+  {
+   "path": "programs/every-f-and-logical-form/fbound.py",
+   "language": "python",
+   "shows": "engine groups at blocks 1 and 2, r', the block-1 ranks",
+   "command": "python3 fbound.py",
+   "run_from": "programs/every-f-and-logical-form",
+   "time": "3 s",
+   "memory": "75 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/every-f-and-logical-form/engine_group_exact.py",
+   "language": "python",
+   "shows": "the skeptic's exact engine groups",
+   "command": "python3 engine_group_exact.py",
+   "run_from": "programs/every-f-and-logical-form",
+   "time": "90 s",
+   "memory": "200 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/every-f-and-logical-form/transfer_and_cs.py",
+   "language": "python",
+   "shows": "counterexample to the transfer criterion; infinite controlled-S element",
+   "command": "python3 transfer_and_cs.py",
+   "run_from": "programs/every-f-and-logical-form",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/every-f-and-logical-form/hankel.py",
+   "language": "python",
+   "shows": "why twiddle factors are not finite-state",
+   "command": "python3 hankel.py",
+   "run_from": "programs/every-f-and-logical-form",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/every-f-and-logical-form/block3_traces.py",
+   "language": "python",
+   "shows": "block-3 trace moduli (r'(3) >= 28)",
+   "command": "python3 block3_traces.py",
+   "run_from": "programs/every-f-and-logical-form",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/two-certificate-theorem/check_cert.py",
+   "language": "python",
+   "shows": "standalone checker of commuting-matrix certificates",
+   "command": "python3 check_cert.py ../../data/two-certificate-theorem/certs/*.json",
+   "run_from": "programs/two-certificate-theorem",
+   "time": "4 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "VALID x6"
+  },
+  {
+   "path": "programs/two-certificate-theorem/skeptic_hensel_demo.py",
+   "language": "python",
+   "shows": "one-prime Hensel existence certificate on the Karatsuba slice",
+   "command": "python3 skeptic_hensel_demo.py",
+   "run_from": "programs/two-certificate-theorem",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/two-certificate-theorem/skeptic_infinity_verify.py",
+   "language": "python",
+   "shows": "Bezout counts and the locus at infinity",
+   "command": "python3 skeptic_infinity_verify.py",
+   "run_from": "programs/two-certificate-theorem",
+   "time": "under 1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_2026_10_19": "identical"
+  },
+  {
+   "path": "programs/border-curves/refine.py",
+   "language": "python",
+   "shows": "80-digit refinement of the g27_Fp2b_m3_s5 border curve",
+   "command": "python3 refine.py",
+   "run_from": "programs/border-curves",
+   "time": "12 s",
+   "memory": "under 100 MB",
+   "needs": [
+    "numpy",
+    "mpmath"
+   ],
+   "rerun_2026_10_19": "identical apart from timing"
+  }
+ ],
+ "rerun_2026_10_19": {
+  "machine": "the Mac (Apple M4 Mac mini)",
+  "programs": 38,
+  "runs": 41,
+  "failures": 0,
+  "note": "outputs equal the shipped ones apart from timing lines, input paths printed in a first line, the last digits of one float LP value, and the cut choice of vc_1434.py; two runs exceeded 1 GB (indep_venn_check.py 1.5 GB, vc_1434.py about 3 GB)"
+ },
+ "not_shipped": [
+  {
+   "file": "g5c.txt (block-5 lift, 36.6 MB, regenerable with programs/one-exponent/gen.py 5 g5c.txt)",
+   "sha256": "3d13df4a99c6f92b876aa7d4703872b8f2631e4ba0f548e33e692cb1d1311a5c"
+  },
+  {
+   "file": "irreps.npz (Sp(6,2) irreducibles cache, 228 MB, regenerable with fg_build.py)",
+   "sha256": "1f2197d205c57d6f67db0141c689960e88cfc6840eab9faa5193ea4bea82c1bf"
+  },
+  {
+   "file": "algcache_m3_VV.npy (border-track cache, 107 MB)",
+   "sha256": "506e627c3ad5c0e8c8ea57db8862f617a4cbdc0621b7f33a54a1004007867151"
+  },
+  {
+   "file": "programs of the GCT track, the letter-choice follow-up, the original algebraic-geometry track and its re-run",
+   "sha256": null,
+   "reason": "multi-folder pipelines importing private builders"
+  },
+  {
+   "file": "msolve outputs from before the parsing bug (except the relaxation table, which the bug cannot affect and which a skeptic re-decided with Singular)",
+   "sha256": null,
+   "reason": "invalid"
+  }
+ ],
+ "warnings": [
+  "msolve 0.6.5 reads x*x as x: write powers as x^k and cross-check with Singular"
+ ]
+}

@@ -1,0 +1,18 @@
+m=4 k=10 f=11: dim W = 128128, dim N = 80080, block chi=0: N 5005, out 3003
+hook4odd_lean.py:89: RuntimeWarning: divide by zero encountered in matmul
+  Mx = np.fmod(Pinv @ X, p)                            # t x rest, exact (t <= 64)
+hook4odd_lean.py:89: RuntimeWarning: overflow encountered in matmul
+  Mx = np.fmod(Pinv @ X, p)                            # t x rest, exact (t <= 64)
+hook4odd_lean.py:89: RuntimeWarning: invalid value encountered in matmul
+  Mx = np.fmod(Pinv @ X, p)                            # t x rest, exact (t <= 64)
+hook4odd_lean.py:95: RuntimeWarning: divide by zero encountered in matmul
+  blk = A[ch, c0 + b:] - np.fmod(Y @ Mx, p)
+hook4odd_lean.py:95: RuntimeWarning: overflow encountered in matmul
+  blk = A[ch, c0 + b:] - np.fmod(Y @ Mx, p)
+hook4odd_lean.py:95: RuntimeWarning: invalid value encountered in matmul
+  blk = A[ch, c0 + b:] - np.fmod(Y @ Mx, p)
+  d1: rank on block chi=0 = 1001; x16 = 16016  (columns 54s, rank 8s)
+  B3: rank on block chi=0 = 2379; x16 = 38064  (columns 55s, rank 16s)
+  B2: rank on block chi=0 = 1749; x16 = 27984  (columns 54s, rank 10s)
+cap formula 16016; dim N 80080; hook bound (dim H - dim N) 43680; ratio bound 2.7273
+exit 0

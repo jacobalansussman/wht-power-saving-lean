@@ -1,0 +1,66 @@
+/content/work/fsp-build/cc/nounix.c: OK
+/content/work/fsp-build/cc/nounix: OK
+/content/work/fsp-build/cc/fresh-bin/lake: OK
+2c2
+< # fsp-cc copy (14 Oct 2026) of fs-build/k-build copy: identical to c-base's jail2.sh except the nounix path (/content/work/fsp-cc/cc/nounix).
+---
+> # fsp-build copy (14 Oct 2026) of fsp-cc/fs-build/k-build copy: identical to c-base's jail2.sh except the nounix path (/content/work/fsp-build/cc/nounix).
+35c35
+< exec setpriv --reuid 65534 --regid 65534 --clear-groups --bounding-set -all --inh-caps -all --no-new-privs -- /content/work/fsp-cc/cc/nounix "$@"
+---
+> exec setpriv --reuid 65534 --regid 65534 --clear-groups --bounding-set -all --inh-caps -all --no-new-privs -- /content/work/fsp-build/cc/nounix "$@"
+tools: afa65e57a1770f59 /content/work/cc/bin/comparator 8c5d64ba68f4d3a6 /content/work/cc/bin/lean4export c9cecac22f9631c0 /content/work/cc/bin/nanoda_bin 5c159a9a380fcff1 /content/work/fsp-build/cc/jail2.sh 1e6528c3f2c8b10b /content/work/fsp-build/cc/nounix 01f56ebe57de64f1 /content/work/fsp-build/cc/fresh-bin/lake 
+=== u8x0hq-pos START Wed Oct 14 12:36:14 UTC 2026 (slot waited 0s) config: 06022b98ab7bc087471db347a3d33224798cd288c6c1204a0c41a615d10f2f58  comparator/fourier-u8x0hq.json
+{
+  "challenge_module": "Work.FourierU8X0HQ.UniformFourierChallenge",
+  "solution_module": "Work.FourierU8X0HQ.Main",
+  "theorem_names": [
+    "OAI.PowerSaving.transform_mainU8X0HQ",
+    "OAI.PowerSaving.convolution_mainU8X0HQ"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
+olean files before: 601
+=== u8x0hq-pos END rc=0 wall=953s Wed Oct 14 12:52:07 UTC 2026
+Building Work.FourierU8X0HQ.UniformFourierChallenge
+Building Work.FourierU8X0HQ.Main
+nanoda kernel accepts the solution
+Lean default kernel accepts the solution
+Your solution is okay!
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 15:53.02
+	Maximum resident set size (kbytes): 7034172
+	Exit status: 0
+olean files after: 601
+=== u8x0hq-neg START Wed Oct 14 12:52:09 UTC 2026 (slot waited 0s) config: ffbee5a5e32e307031b685b67ba889dbb14788019b050917d23147c95ebb7601  comparator/fourier-u8x0hq-neg.json
+{
+  "challenge_module": "Work.FourierU8X0HQNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierU8X0HQ.Main",
+  "theorem_names": [
+    "OAI.PowerSaving.transform_mainU8X0HQ",
+    "OAI.PowerSaving.convolution_mainU8X0HQ"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
+olean files before: 601
+=== u8x0hq-neg END rc=1 wall=99s Wed Oct 14 12:53:48 UTC 2026
+Building Work.FourierU8X0HQNeg.UniformFourierChallenge
+Building Work.FourierU8X0HQ.Main
+uncaught exception: Const does not match between challenge and target 'OAI.PowerSaving.decimalExponentU8X0HQ'
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:38.54
+	Maximum resident set size (kbytes): 7034148
+	Exit status: 1
+olean files after: 601
+CMPDONE
+EXIT 0

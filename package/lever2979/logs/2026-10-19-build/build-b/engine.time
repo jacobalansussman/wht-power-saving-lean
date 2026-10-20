@@ -1,0 +1,23 @@
+	Command being timed: "env LEAN_NUM_THREADS=3 lake build Work.L2979.Engine Work.L2979.Stmt Work.L2979.Engine Work.FourierL2979.Main Work.FourierL2979.UniformFourierChallenge Work.FourierL2979Neg.UniformFourierChallenge Work.FourierL2979.Axioms Work.Mixed.Rate2979Sharp Work.Mixed.R5Joint2979 Work.XHostT.Inst.S2979HB Work.Mixed.Bridge.HFTest2979"
+	User time (seconds): 2762.30
+	System time (seconds): 309.34
+	Percent of CPU this job got: 255%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 20:04.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9486876
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 131150
+	Minor (reclaiming a frame) page faults: 14400356
+	Voluntary context switches: 649854
+	Involuntary context switches: 362019
+	Swaps: 0
+	File system inputs: 12228944
+	File system outputs: 946616
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

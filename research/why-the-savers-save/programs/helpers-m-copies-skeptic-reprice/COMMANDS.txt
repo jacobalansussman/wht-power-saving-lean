@@ -1,0 +1,14 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+v-mcopy-code-reprice (skeptic of d-mcopy-code), 13 Oct 2026. python3 -I (3.9), all runs from clean/ (fresh copy of d-mcopy-code scripts + FULL-WORD.json.gz, sha256 5d063c4c...):
+  pricer #942 control -> clean/step0_control.out (identical to d-mcopy-code)
+  audit_local_pr870_py39.py -> audit_control_clean.json (PASS)
+  mc_groups.py, all_groups.py, reach.py, reach_control.py, cover_valuefree.py -> outputs identical to d-mcopy-code
+  NEW: python3 -I ../trace_targets.py FULL-WORD.json.gz G   (G=0..13) -> trace_targets_all.out
+       every group target holds all 64 packet sources right after the CUT (from centres 60/61/63/224/31/240/23/256); final x-part = own x_t only
+  NEW: python3 -I ../cut_structure.py FULL-WORD.json.gz 0 -> cut_structure_g0.out (cut reads, packet sign patterns, y-y gates, shared frames)
+  NEW: python3 -I ../reach_withcut.py FULL-WORD.json.gz -> reach_withcut.out (reach.py + the 224 cut gates as edges: all 4 targets reached in 14/14 groups)
+  NEW: python3 -I ../cross_targets.py FULL-WORD.json.gz G -> cross_targets_all.out (24-28 outside targets share an existing dim-1 chain frame with each group target and carry the same packet content; span check True for 56/56)

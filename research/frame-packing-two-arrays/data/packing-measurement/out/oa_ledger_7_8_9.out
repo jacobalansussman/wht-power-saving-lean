@@ -1,0 +1,66 @@
+h=7 stage 1: M=239311100 P=10890250 D=1955100 Bmix=6817125
+h=7 stage 2: M=242398100 P=37387000 D=1955100 Bmix=31770375
+h=7 stage 3: M=264007100 P=12605250 D=68600 Bmix=14663250
+h=7: W=2173150 m=343 M=745716300 (brute-force W m - 2N + 2L = 745716300, equal True); Delta = -325850
+   raw ledger: P=60882500 Bmix=B=53250750 D=3978800 Z=0 I0=0 ; P - B - 2D = -325850 ; identity True
+   per move: P/M=0.0816 B/M=0.0714 D/M=0.0053 ; net (P-B-2D)/M = -4.370e-04 ; max labels on one move 36
+   by stage and wire (moves, extra labels, descents):
+     stage 1 A    M=4802000 P=4116000 D=0 P/M=0.857
+     stage 1 C    M=205800 P=2401000 D=1269100 P/M=11.667
+     stage 1 X    M=257250 P=0 D=0 P/M=0.000
+     stage 1 Y    M=257250 P=4373250 D=686000 P/M=17.000
+     stage 1 fin  M=233788800 P=0 D=0 P/M=0.000
+     stage 2 A    M=33614000 P=28812000 D=0 P/M=0.857
+     stage 2 C    M=617400 P=2401000 D=1269100 P/M=3.889
+     stage 2 X    M=1800750 P=4373250 D=686000 P/M=2.429
+     stage 2 Y    M=1800750 P=1800750 D=0 P/M=1.000
+     stage 2 fin  M=204565200 P=0 D=0 P/M=0.000
+     stage 3 A    M=235298000 P=0 D=0 P/M=0.000
+     stage 3 C    M=3498600 P=0 D=68600 P/M=0.000
+     stage 3 X    M=12605250 P=0 D=0 P/M=0.000
+     stage 3 Y    M=12605250 P=12605250 D=0 P/M=1.000
+   moves by number of labels carried: {1: 697593400, 2: 47334000, 16: 240100, 18: 514500, 36: 34300}
+h=8 stage 1: M=2265245696 P=73934336 D=10235904 Bmix=52509184
+h=8 stage 2: M=2282456064 P=298898432 D=10235904 Bmix=268868096
+h=8 stage 3: M=2420139008 P=78675968 D=225792 Bmix=89739776
+h=8: W=13607104 m=512 M=6967840768 (brute-force W m - 2N + 2L = 6967840768, equal True); Delta = -1003520
+   raw ledger: P=451508736 Bmix=B=411117056 D=20697600 Z=0 I0=0 ; P - B - 2D = -1003520 ; identity True
+   per move: P/M=0.0648 B/M=0.0590 D/M=0.0030 ; net (P-B-2D)/M = -1.440e-04 ; max labels on one move 57
+   by stage and wire (moves, extra labels, descents):
+     stage 1 A    M=35123200 P=30732800 D=0 P/M=0.875
+     stage 1 C    M=677376 P=11239424 D=5845504 P/M=16.593
+     stage 1 X    M=1229312 P=0 D=0 P/M=0.000
+     stage 1 Y    M=1229312 P=31962112 D=4390400 P/M=26.000
+     stage 1 fin  M=2226986496 P=0 D=0 P/M=0.000
+     stage 2 A    M=280985600 P=245862400 D=0 P/M=0.875
+     stage 2 C    M=2257920 P=11239424 D=5845504 P/M=4.978
+     stage 2 X    M=9834496 P=31962112 D=4390400 P/M=3.250
+     stage 2 Y    M=9834496 P=9834496 D=0 P/M=1.000
+     stage 2 fin  M=1979543552 P=0 D=0 P/M=0.000
+     stage 3 A    M=2247884800 P=0 D=0 P/M=0.000
+     stage 3 C    M=14902272 P=0 D=225792 P/M=0.000
+     stage 3 X    M=78675968 P=0 D=0 P/M=0.000
+     stage 3 Y    M=78675968 P=78675968 D=0 P/M=1.000
+   moves by number of labels carried: {1: 6599373312, 2: 365105664, 22: 802816, 27: 2458624, 57: 100352}
+h=9 stage 1: M=16481277792 P=407780352 D=44495136 Bmix=314725824
+h=9 stage 2: M=16557143904 P=1891911168 D=44495136 Bmix=1760923584
+h=9 stage 3: M=17239938912 P=384072192 D=635040 Bmix=431488512
+h=9: W=68965344 m=729 M=50278360608 (brute-force W m - 2N + 2L = 50278360608, equal True); Delta = -2624832
+   raw ledger: P=2683763712 Bmix=B=2507137920 D=89625312 Z=0 I0=0 ; P - B - 2D = -2624832 ; identity True
+   per move: P/M=0.0534 B/M=0.0499 D/M=0.0018 ; net (P-B-2D)/M = -5.221e-05 ; max labels on one move 85
+   by stage and wire (moves, extra labels, descents):
+     stage 1 A    M=202704768 P=180182016 D=0 P/M=0.889
+     stage 1 C    M=1905120 P=42674688 D=21972384 P/M=22.400
+     stage 1 X    M=4741632 P=0 D=0 P/M=0.000
+     stage 1 Y    M=4741632 P=184923648 D=22522752 P/M=39.000
+     stage 1 fin  M=16267184640 P=0 D=0 P/M=0.000
+     stage 2 A    M=1824342912 P=1621638144 D=0 P/M=0.889
+     stage 2 C    M=6985440 P=42674688 D=21972384 P/M=6.109
+     stage 2 X    M=42674688 P=184923648 D=22522752 P/M=4.333
+     stage 2 Y    M=42674688 P=42674688 D=0 P/M=1.000
+     stage 2 fin  M=14640466176 P=0 D=0 P/M=0.000
+     stage 3 A    M=16419086208 P=0 D=0 P/M=0.000
+     stage 3 C    M=52708320 P=0 D=635040 P/M=0.000
+     stage 3 X    M=384072192 P=0 D=0 P/M=0.000
+     stage 3 Y    M=384072192 P=384072192 D=0 P/M=1.000
+   moves by number of labels carried: {1: 48037770144, 2: 2228567040, 29: 2286144, 40: 9483264, 85: 254016}

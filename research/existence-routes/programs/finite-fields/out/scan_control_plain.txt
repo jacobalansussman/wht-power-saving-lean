@@ -1,0 +1,11 @@
+full_c_0_1_0_0.a0 + full_c_0_1_0_0.a1: 4 eqs, 3 alphas, 4 betas; coefficient denominators divisible by none
+  p=2: alphas all: 1 alpha values carry F_p points; Prop.4 on up to 20: {'obstructed': 0, 'lifted': 0, 'slice-lifted': 1}; first: alpha=(0, 0, 0) tangent dim 3; slice-lifted
+  p=3: alphas all: 1 alpha values carry F_p points; Prop.4 on up to 20: {'obstructed': 0, 'lifted': 0, 'slice-lifted': 1}; first: alpha=(0, 0, 0) tangent dim 3; slice-lifted
+  p=5: alphas all: 27 alpha values carry F_p points; Prop.4 on up to 20: {'obstructed': 0, 'lifted': 0, 'slice-lifted': 20}; first: alpha=(0, 0, 0) tangent dim 3; slice-lifted
+  p=7: alphas all: 125 alpha values carry F_p points; Prop.4 on up to 20: {'obstructed': 0, 'lifted': 0, 'slice-lifted': 20}; first: alpha=(0, 0, 0) tangent dim 3; slice-lifted
+t27_mid3_m2_s1.u: 30 eqs, 8 alphas, 9 betas; coefficient denominators divisible by none
+  p=2: alphas all: 0 alpha values carry F_p points; Prop.4 on up to 20: {'obstructed': 0, 'lifted': 0}
+  p=3: alphas sample 3000: 37 alpha values carry F_p points; Prop.4 on up to 20: {'obstructed': 0, 'lifted': 0, 'slice-lifted': 20}; first: alpha=(1, 0, 1, 1, 0, 1, 0, 1) tangent dim 6; slice-lifted
+  p=5: alphas sample 3000: 38 alpha values carry F_p points; Prop.4 on up to 20: {'obstructed': 0, 'lifted': 0, 'slice-lifted': 20}; first: alpha=(1, 3, 4, 4, 0, 3, 2, 0) tangent dim 6; slice-lifted
+  p=7: alphas sample 3000: 29 alpha values carry F_p points; Prop.4 on up to 20: {'obstructed': 0, 'lifted': 0, 'slice-lifted': 20}; first: alpha=(0, 1, 6, 6, 0, 5, 5, 4) tangent dim 6; slice-lifted
+  p=11: alphas sample 3000: 16 alpha values carry F_p points; Prop.4 on up to 20: {'obstructed': 0, 'lifted': 0, 'slice-lifted': 16}; first: alpha=(5, 9, 1, 1, 0, 2, 5, 10) tangent dim 6; slice-lifted

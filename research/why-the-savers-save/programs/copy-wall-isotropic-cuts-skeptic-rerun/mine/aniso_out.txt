@@ -1,0 +1,11 @@
+(python3 -I aniso.py, 38 s; copied from the run)
+other                |C_h|   0 omega 0 parts  0 : 1
+other                |C_h|  56 omega 8 parts  7 : 16
+other                |C_h|  60 omega 8 parts  8 : 112
+other                |C_h|  64 omega 8 parts  8 : 7
+port label           |C_h|  52 omega 4 parts 13 : 110
+port label           |C_h|  52 omega 4 parts 14 : 2
+removed-octad label  |C_h|  56 omega 4 parts 14 : 7
+removed-octad label  |C_h|  56 omega 4 parts 15 : 1
+anisotropic h: 256  max parts: 15  => pure 1-dim-cut designs need K >= ceil(112/15) = 8
+rowrank.py (rows C_h, all 112 columns, real ALS, 300 iters): port label rank 4: 8.2, 6: 5.1, 7: 3.3, 8: 0.42 (natural rank-8 solution exists; ALS slow); iso60 rank 7: 1.69, rank 8: 3.1e-12

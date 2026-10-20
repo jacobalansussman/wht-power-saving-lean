@@ -1,0 +1,9 @@
+'OAI.PowerSaving.SeamC588MHH.engine_C588MHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.engine_of_ginv_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.HostSched.ofTab_fitsR' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.PowerSaving.SeamC588MHH.engine_C588MHHx : ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+  (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+  OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl) (OAI.PowerSaving.RAM.bundle cl)
+    (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+    (fun i => (OAI.PowerSaving.Binary.bits (k i)).tape (OAI.PowerSaving.Binary.ripple (k i) (v i))) fun i =>
+    2 ^ k i * OAI.PowerSaving.envelope (1 - 15699306 / 10 ^ 10) (k i)

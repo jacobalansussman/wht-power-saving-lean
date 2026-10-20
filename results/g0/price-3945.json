@@ -1,0 +1,40 @@
+{
+ "label": "#3945",
+ "W": 322560,
+ "profile": {
+  "1": 8041680,
+  "2": 2306880,
+  "3": 729648,
+  "4": 353160,
+  "5": 69120,
+  "8": 25920,
+  "48": 137952
+ },
+ "profile_equals_hub": true,
+ "b_hub_engine": "0.001730663236534549309146",
+ "b_mixed_root": "1.730663236534549231926405e-03",
+ "stated_root": [
+  "0.001730663236534549309146",
+  "0.001730663236534549309147"
+ ],
+ "b_reproduces_stated_lower_digit_for_digit": true,
+ "heads": 57312,
+ "other_rank48": 80640,
+ "uniform": {
+  "b": "1.7306632365e-03",
+  "over_uniform_pct": "+0.000",
+  "separated": true
+ },
+ "half_cut": {
+  "b": "1.7501109246e-03",
+  "over_uniform_pct": "+1.124",
+  "separated": true
+ },
+ "full_cut": {
+  "b": "1.7307679642e-03",
+  "over_uniform_pct": "+0.006",
+  "separated": true
+ },
+ "breakeven_full_cut_heads": 57262,
+ "half_cut_breakeven_heads": 1
+}

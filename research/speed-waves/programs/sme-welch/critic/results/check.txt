@@ -1,0 +1,240 @@
+CHECK N=  512 hann    nov=  256 L=  18949 nseg=   73 (odd ) sme   max|d|/max|r| 1.02e-15  max bin rel 1.51e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  18949 nseg=   73 (odd ) smef  max|d|/max|r| 1.02e-15  max bin rel 1.51e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  18949 nseg=   73 (odd ) vdsp  max|d|/max|r| 1.02e-15  max bin rel 1.70e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  18949 nseg=   73 (odd ) pfd   max|d|/max|r| 1.02e-15  max bin rel 1.65e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  18949 nseg=   73 (odd ) kfr   max|d|/max|r| 1.02e-15  max bin rel 1.53e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  18949 nseg=   73 (odd ) smew  max|d|/max|r| 1.02e-15  max bin rel 1.51e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  18949 nseg=   73 (odd ) fftw  max|d|/max|r| 1.02e-15  max bin rel 1.70e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  20480 nseg=   79 (odd ) sme   max|d|/max|r| 7.18e-16  max bin rel 1.51e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  20480 nseg=   79 (odd ) smef  max|d|/max|r| 7.18e-16  max bin rel 1.51e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  20480 nseg=   79 (odd ) vdsp  max|d|/max|r| 7.18e-16  max bin rel 1.42e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  20480 nseg=   79 (odd ) pfd   max|d|/max|r| 7.18e-16  max bin rel 1.46e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  20480 nseg=   79 (odd ) kfr   max|d|/max|r| 7.18e-16  max bin rel 1.46e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  20480 nseg=   79 (odd ) smew  max|d|/max|r| 7.18e-16  max bin rel 1.51e-15  PASS
+CHECK N=  512 hann    nov=  256 L=  20480 nseg=   79 (odd ) fftw  max|d|/max|r| 7.18e-16  max bin rel 1.47e-15  PASS
+CHECK N=  512 hann    nov=  256 L= 262147 nseg= 1023 (odd ) sme   max|d|/max|r| 1.51e-15  max bin rel 4.12e-15  PASS
+CHECK N=  512 hann    nov=  256 L= 262147 nseg= 1023 (odd ) smef  max|d|/max|r| 1.51e-15  max bin rel 4.12e-15  PASS
+CHECK N=  512 hann    nov=  256 L= 262147 nseg= 1023 (odd ) vdsp  max|d|/max|r| 1.59e-15  max bin rel 4.35e-15  PASS
+CHECK N=  512 hann    nov=  256 L= 262147 nseg= 1023 (odd ) pfd   max|d|/max|r| 1.51e-15  max bin rel 4.12e-15  PASS
+CHECK N=  512 hann    nov=  256 L= 262147 nseg= 1023 (odd ) kfr   max|d|/max|r| 1.59e-15  max bin rel 4.16e-15  PASS
+CHECK N=  512 hann    nov=  256 L= 262147 nseg= 1023 (odd ) smew  max|d|/max|r| 1.51e-15  max bin rel 4.12e-15  PASS
+CHECK N=  512 hann    nov=  256 L= 262147 nseg= 1023 (odd ) fftw  max|d|/max|r| 1.51e-15  max bin rel 4.12e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  18949 nseg=   37 (odd ) sme   max|d|/max|r| 1.10e-15  max bin rel 1.72e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  18949 nseg=   37 (odd ) smef  max|d|/max|r| 1.10e-15  max bin rel 1.72e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  18949 nseg=   37 (odd ) vdsp  max|d|/max|r| 1.10e-15  max bin rel 1.60e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  18949 nseg=   37 (odd ) pfd   max|d|/max|r| 1.10e-15  max bin rel 1.67e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  18949 nseg=   37 (odd ) kfr   max|d|/max|r| 1.10e-15  max bin rel 1.61e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  18949 nseg=   37 (odd ) smew  max|d|/max|r| 1.10e-15  max bin rel 1.72e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  18949 nseg=   37 (odd ) fftw  max|d|/max|r| 9.44e-16  max bin rel 1.69e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  20480 nseg=   40 (even) sme   max|d|/max|r| 1.15e-15  max bin rel 1.77e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  20480 nseg=   40 (even) smef  max|d|/max|r| 1.15e-15  max bin rel 1.77e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  20480 nseg=   40 (even) vdsp  max|d|/max|r| 1.15e-15  max bin rel 1.63e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  20480 nseg=   40 (even) pfd   max|d|/max|r| 1.15e-15  max bin rel 1.65e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  20480 nseg=   40 (even) kfr   max|d|/max|r| 1.15e-15  max bin rel 1.63e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  20480 nseg=   40 (even) smew  max|d|/max|r| 1.15e-15  max bin rel 1.77e-15  PASS
+CHECK N=  512 hamming nov=    0 L=  20480 nseg=   40 (even) fftw  max|d|/max|r| 9.83e-16  max bin rel 1.71e-15  PASS
+CHECK N=  512 hamming nov=    0 L= 262147 nseg=  512 (even) sme   max|d|/max|r| 1.32e-15  max bin rel 3.18e-15  PASS
+CHECK N=  512 hamming nov=    0 L= 262147 nseg=  512 (even) smef  max|d|/max|r| 1.32e-15  max bin rel 3.18e-15  PASS
+CHECK N=  512 hamming nov=    0 L= 262147 nseg=  512 (even) vdsp  max|d|/max|r| 1.10e-15  max bin rel 3.18e-15  PASS
+CHECK N=  512 hamming nov=    0 L= 262147 nseg=  512 (even) pfd   max|d|/max|r| 1.32e-15  max bin rel 2.96e-15  PASS
+CHECK N=  512 hamming nov=    0 L= 262147 nseg=  512 (even) kfr   max|d|/max|r| 1.17e-15  max bin rel 2.96e-15  PASS
+CHECK N=  512 hamming nov=    0 L= 262147 nseg=  512 (even) smew  max|d|/max|r| 1.32e-15  max bin rel 3.18e-15  PASS
+CHECK N=  512 hamming nov=    0 L= 262147 nseg=  512 (even) fftw  max|d|/max|r| 1.17e-15  max bin rel 3.18e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  18949 nseg=   49 (odd ) sme   max|d|/max|r| 8.98e-16  max bin rel 1.52e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  18949 nseg=   49 (odd ) smef  max|d|/max|r| 8.98e-16  max bin rel 1.52e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  18949 nseg=   49 (odd ) vdsp  max|d|/max|r| 5.98e-16  max bin rel 1.35e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  18949 nseg=   49 (odd ) pfd   max|d|/max|r| 8.98e-16  max bin rel 1.53e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  18949 nseg=   49 (odd ) kfr   max|d|/max|r| 8.98e-16  max bin rel 1.52e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  18949 nseg=   49 (odd ) smew  max|d|/max|r| 8.98e-16  max bin rel 1.52e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  18949 nseg=   49 (odd ) fftw  max|d|/max|r| 5.98e-16  max bin rel 1.26e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  20480 nseg=   53 (odd ) sme   max|d|/max|r| 6.11e-16  max bin rel 1.58e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  20480 nseg=   53 (odd ) smef  max|d|/max|r| 6.11e-16  max bin rel 1.58e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  20480 nseg=   53 (odd ) vdsp  max|d|/max|r| 6.11e-16  max bin rel 1.58e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  20480 nseg=   53 (odd ) pfd   max|d|/max|r| 6.11e-16  max bin rel 1.58e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  20480 nseg=   53 (odd ) kfr   max|d|/max|r| 6.11e-16  max bin rel 1.58e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  20480 nseg=   53 (odd ) smew  max|d|/max|r| 6.11e-16  max bin rel 1.58e-15  PASS
+CHECK N=  512 hann    nov=  128 L=  20480 nseg=   53 (odd ) fftw  max|d|/max|r| 4.96e-16  max bin rel 1.58e-15  PASS
+CHECK N=  512 hann    nov=  128 L= 262147 nseg=  682 (even) sme   max|d|/max|r| 2.87e-15  max bin rel 3.28e-15  PASS
+CHECK N=  512 hann    nov=  128 L= 262147 nseg=  682 (even) smef  max|d|/max|r| 2.87e-15  max bin rel 3.28e-15  PASS
+CHECK N=  512 hann    nov=  128 L= 262147 nseg=  682 (even) vdsp  max|d|/max|r| 2.87e-15  max bin rel 3.15e-15  PASS
+CHECK N=  512 hann    nov=  128 L= 262147 nseg=  682 (even) pfd   max|d|/max|r| 2.87e-15  max bin rel 3.36e-15  PASS
+CHECK N=  512 hann    nov=  128 L= 262147 nseg=  682 (even) kfr   max|d|/max|r| 2.87e-15  max bin rel 2.94e-15  PASS
+CHECK N=  512 hann    nov=  128 L= 262147 nseg=  682 (even) smew  max|d|/max|r| 2.87e-15  max bin rel 3.28e-15  PASS
+CHECK N=  512 hann    nov=  128 L= 262147 nseg=  682 (even) fftw  max|d|/max|r| 2.87e-15  max bin rel 3.05e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  37893 nseg=   73 (odd ) sme   max|d|/max|r| 8.32e-16  max bin rel 1.51e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  37893 nseg=   73 (odd ) smed  max|d|/max|r| 8.32e-16  max bin rel 1.52e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  37893 nseg=   73 (odd ) vdsp  max|d|/max|r| 8.32e-16  max bin rel 1.38e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  37893 nseg=   73 (odd ) pfd   max|d|/max|r| 8.32e-16  max bin rel 1.38e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  37893 nseg=   73 (odd ) kfr   max|d|/max|r| 6.24e-16  max bin rel 1.51e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  37893 nseg=   73 (odd ) fftw  max|d|/max|r| 8.32e-16  max bin rel 1.51e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  40960 nseg=   79 (odd ) sme   max|d|/max|r| 6.95e-16  max bin rel 1.44e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  40960 nseg=   79 (odd ) smed  max|d|/max|r| 6.95e-16  max bin rel 1.49e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  40960 nseg=   79 (odd ) vdsp  max|d|/max|r| 5.21e-16  max bin rel 1.39e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  40960 nseg=   79 (odd ) pfd   max|d|/max|r| 6.95e-16  max bin rel 1.60e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  40960 nseg=   79 (odd ) kfr   max|d|/max|r| 5.21e-16  max bin rel 1.44e-15  PASS
+CHECK N= 1024 hann    nov=  512 L=  40960 nseg=   79 (odd ) fftw  max|d|/max|r| 5.21e-16  max bin rel 1.44e-15  PASS
+CHECK N= 1024 hann    nov=  512 L= 262147 nseg=  511 (odd ) sme   max|d|/max|r| 1.10e-15  max bin rel 2.63e-15  PASS
+CHECK N= 1024 hann    nov=  512 L= 262147 nseg=  511 (odd ) smed  max|d|/max|r| 1.01e-15  max bin rel 2.83e-15  PASS
+CHECK N= 1024 hann    nov=  512 L= 262147 nseg=  511 (odd ) vdsp  max|d|/max|r| 1.01e-15  max bin rel 2.72e-15  PASS
+CHECK N= 1024 hann    nov=  512 L= 262147 nseg=  511 (odd ) pfd   max|d|/max|r| 8.27e-16  max bin rel 2.72e-15  PASS
+CHECK N= 1024 hann    nov=  512 L= 262147 nseg=  511 (odd ) kfr   max|d|/max|r| 9.18e-16  max bin rel 2.72e-15  PASS
+CHECK N= 1024 hann    nov=  512 L= 262147 nseg=  511 (odd ) fftw  max|d|/max|r| 1.01e-15  max bin rel 2.72e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  37893 nseg=   37 (odd ) sme   max|d|/max|r| 5.43e-16  max bin rel 1.34e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  37893 nseg=   37 (odd ) smed  max|d|/max|r| 2.71e-16  max bin rel 1.47e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  37893 nseg=   37 (odd ) vdsp  max|d|/max|r| 3.62e-16  max bin rel 1.47e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  37893 nseg=   37 (odd ) pfd   max|d|/max|r| 5.43e-16  max bin rel 1.47e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  37893 nseg=   37 (odd ) kfr   max|d|/max|r| 3.62e-16  max bin rel 1.47e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  37893 nseg=   37 (odd ) fftw  max|d|/max|r| 3.62e-16  max bin rel 1.47e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  40960 nseg=   40 (even) sme   max|d|/max|r| 3.27e-16  max bin rel 1.40e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  40960 nseg=   40 (even) smed  max|d|/max|r| 3.74e-16  max bin rel 1.32e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  40960 nseg=   40 (even) vdsp  max|d|/max|r| 3.74e-16  max bin rel 1.17e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  40960 nseg=   40 (even) pfd   max|d|/max|r| 3.74e-16  max bin rel 1.24e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  40960 nseg=   40 (even) kfr   max|d|/max|r| 5.61e-16  max bin rel 1.24e-15  PASS
+CHECK N= 1024 hamming nov=    0 L=  40960 nseg=   40 (even) fftw  max|d|/max|r| 7.48e-16  max bin rel 1.31e-15  PASS
+CHECK N= 1024 hamming nov=    0 L= 262147 nseg=  256 (even) sme   max|d|/max|r| 5.44e-16  max bin rel 1.90e-15  PASS
+CHECK N= 1024 hamming nov=    0 L= 262147 nseg=  256 (even) smed  max|d|/max|r| 4.08e-16  max bin rel 1.99e-15  PASS
+CHECK N= 1024 hamming nov=    0 L= 262147 nseg=  256 (even) vdsp  max|d|/max|r| 4.08e-16  max bin rel 1.97e-15  PASS
+CHECK N= 1024 hamming nov=    0 L= 262147 nseg=  256 (even) pfd   max|d|/max|r| 4.08e-16  max bin rel 1.99e-15  PASS
+CHECK N= 1024 hamming nov=    0 L= 262147 nseg=  256 (even) kfr   max|d|/max|r| 4.08e-16  max bin rel 1.97e-15  PASS
+CHECK N= 1024 hamming nov=    0 L= 262147 nseg=  256 (even) fftw  max|d|/max|r| 4.08e-16  max bin rel 1.97e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  37893 nseg=   49 (odd ) sme   max|d|/max|r| 9.43e-16  max bin rel 1.45e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  37893 nseg=   49 (odd ) smed  max|d|/max|r| 5.66e-16  max bin rel 1.31e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  37893 nseg=   49 (odd ) vdsp  max|d|/max|r| 7.54e-16  max bin rel 1.28e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  37893 nseg=   49 (odd ) pfd   max|d|/max|r| 7.54e-16  max bin rel 1.48e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  37893 nseg=   49 (odd ) kfr   max|d|/max|r| 7.54e-16  max bin rel 1.26e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  37893 nseg=   49 (odd ) fftw  max|d|/max|r| 5.66e-16  max bin rel 1.28e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  40960 nseg=   53 (odd ) sme   max|d|/max|r| 3.49e-16  max bin rel 1.32e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  40960 nseg=   53 (odd ) smed  max|d|/max|r| 3.05e-16  max bin rel 1.61e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  40960 nseg=   53 (odd ) vdsp  max|d|/max|r| 3.49e-16  max bin rel 1.32e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  40960 nseg=   53 (odd ) pfd   max|d|/max|r| 5.24e-16  max bin rel 1.32e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  40960 nseg=   53 (odd ) kfr   max|d|/max|r| 5.24e-16  max bin rel 1.46e-15  PASS
+CHECK N= 1024 hann    nov=  256 L=  40960 nseg=   53 (odd ) fftw  max|d|/max|r| 3.49e-16  max bin rel 1.46e-15  PASS
+CHECK N= 1024 hann    nov=  256 L= 262147 nseg=  341 (odd ) sme   max|d|/max|r| 1.19e-15  max bin rel 2.16e-15  PASS
+CHECK N= 1024 hann    nov=  256 L= 262147 nseg=  341 (odd ) smed  max|d|/max|r| 1.11e-15  max bin rel 2.43e-15  PASS
+CHECK N= 1024 hann    nov=  256 L= 262147 nseg=  341 (odd ) vdsp  max|d|/max|r| 1.11e-15  max bin rel 2.13e-15  PASS
+CHECK N= 1024 hann    nov=  256 L= 262147 nseg=  341 (odd ) pfd   max|d|/max|r| 1.11e-15  max bin rel 2.21e-15  PASS
+CHECK N= 1024 hann    nov=  256 L= 262147 nseg=  341 (odd ) kfr   max|d|/max|r| 1.11e-15  max bin rel 2.16e-15  PASS
+CHECK N= 1024 hann    nov=  256 L= 262147 nseg=  341 (odd ) fftw  max|d|/max|r| 1.19e-15  max bin rel 2.21e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  75781 nseg=   73 (odd ) sme   max|d|/max|r| 1.05e-15  max bin rel 2.20e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  75781 nseg=   73 (odd ) smed  max|d|/max|r| 1.05e-15  max bin rel 2.20e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  75781 nseg=   73 (odd ) vdsp  max|d|/max|r| 1.05e-15  max bin rel 2.38e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  75781 nseg=   73 (odd ) pfd   max|d|/max|r| 1.05e-15  max bin rel 2.59e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  75781 nseg=   73 (odd ) kfr   max|d|/max|r| 1.17e-15  max bin rel 2.38e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  75781 nseg=   73 (odd ) fftw  max|d|/max|r| 1.28e-15  max bin rel 2.59e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  81920 nseg=   79 (odd ) sme   max|d|/max|r| 1.05e-15  max bin rel 2.56e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  81920 nseg=   79 (odd ) smed  max|d|/max|r| 1.05e-15  max bin rel 2.56e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  81920 nseg=   79 (odd ) vdsp  max|d|/max|r| 1.16e-15  max bin rel 2.34e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  81920 nseg=   79 (odd ) pfd   max|d|/max|r| 1.05e-15  max bin rel 2.27e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  81920 nseg=   79 (odd ) kfr   max|d|/max|r| 1.05e-15  max bin rel 2.34e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L=  81920 nseg=   79 (odd ) fftw  max|d|/max|r| 1.05e-15  max bin rel 2.36e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L= 262147 nseg=  255 (odd ) sme   max|d|/max|r| 8.39e-16  max bin rel 3.34e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L= 262147 nseg=  255 (odd ) smed  max|d|/max|r| 8.39e-16  max bin rel 3.34e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L= 262147 nseg=  255 (odd ) vdsp  max|d|/max|r| 1.05e-15  max bin rel 3.23e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L= 262147 nseg=  255 (odd ) pfd   max|d|/max|r| 8.39e-16  max bin rel 3.16e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L= 262147 nseg=  255 (odd ) kfr   max|d|/max|r| 8.39e-16  max bin rel 3.23e-15  PASS
+CHECK N= 2048 hann    nov= 1024 L= 262147 nseg=  255 (odd ) fftw  max|d|/max|r| 8.39e-16  max bin rel 3.34e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  75781 nseg=   37 (odd ) sme   max|d|/max|r| 6.53e-16  max bin rel 1.04e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  75781 nseg=   37 (odd ) smed  max|d|/max|r| 6.53e-16  max bin rel 1.04e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  75781 nseg=   37 (odd ) vdsp  max|d|/max|r| 4.36e-16  max bin rel 9.90e-16  PASS
+CHECK N= 2048 hamming nov=    0 L=  75781 nseg=   37 (odd ) pfd   max|d|/max|r| 4.36e-16  max bin rel 1.00e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  75781 nseg=   37 (odd ) kfr   max|d|/max|r| 4.36e-16  max bin rel 1.00e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  75781 nseg=   37 (odd ) fftw  max|d|/max|r| 6.53e-16  max bin rel 1.06e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  81920 nseg=   40 (even) sme   max|d|/max|r| 4.38e-16  max bin rel 1.31e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  81920 nseg=   40 (even) smed  max|d|/max|r| 4.38e-16  max bin rel 1.31e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  81920 nseg=   40 (even) vdsp  max|d|/max|r| 4.38e-16  max bin rel 1.53e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  81920 nseg=   40 (even) pfd   max|d|/max|r| 4.38e-16  max bin rel 1.53e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  81920 nseg=   40 (even) kfr   max|d|/max|r| 3.29e-16  max bin rel 1.53e-15  PASS
+CHECK N= 2048 hamming nov=    0 L=  81920 nseg=   40 (even) fftw  max|d|/max|r| 3.29e-16  max bin rel 1.53e-15  PASS
+CHECK N= 2048 hamming nov=    0 L= 262147 nseg=  128 (even) sme   max|d|/max|r| 5.10e-16  max bin rel 1.82e-15  PASS
+CHECK N= 2048 hamming nov=    0 L= 262147 nseg=  128 (even) smed  max|d|/max|r| 5.10e-16  max bin rel 1.82e-15  PASS
+CHECK N= 2048 hamming nov=    0 L= 262147 nseg=  128 (even) vdsp  max|d|/max|r| 4.08e-16  max bin rel 1.64e-15  PASS
+CHECK N= 2048 hamming nov=    0 L= 262147 nseg=  128 (even) pfd   max|d|/max|r| 3.06e-16  max bin rel 1.75e-15  PASS
+CHECK N= 2048 hamming nov=    0 L= 262147 nseg=  128 (even) kfr   max|d|/max|r| 4.08e-16  max bin rel 1.75e-15  PASS
+CHECK N= 2048 hamming nov=    0 L= 262147 nseg=  128 (even) fftw  max|d|/max|r| 3.06e-16  max bin rel 1.64e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  75781 nseg=   49 (odd ) sme   max|d|/max|r| 1.24e-15  max bin rel 2.06e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  75781 nseg=   49 (odd ) smed  max|d|/max|r| 1.24e-15  max bin rel 2.06e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  75781 nseg=   49 (odd ) vdsp  max|d|/max|r| 1.24e-15  max bin rel 2.47e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  75781 nseg=   49 (odd ) pfd   max|d|/max|r| 1.24e-15  max bin rel 2.06e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  75781 nseg=   49 (odd ) kfr   max|d|/max|r| 1.12e-15  max bin rel 2.27e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  75781 nseg=   49 (odd ) fftw  max|d|/max|r| 1.24e-15  max bin rel 2.27e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  81920 nseg=   53 (odd ) sme   max|d|/max|r| 1.26e-15  max bin rel 2.26e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  81920 nseg=   53 (odd ) smed  max|d|/max|r| 1.26e-15  max bin rel 2.26e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  81920 nseg=   53 (odd ) vdsp  max|d|/max|r| 1.26e-15  max bin rel 2.05e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  81920 nseg=   53 (odd ) pfd   max|d|/max|r| 1.38e-15  max bin rel 1.97e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  81920 nseg=   53 (odd ) kfr   max|d|/max|r| 1.26e-15  max bin rel 1.91e-15  PASS
+CHECK N= 2048 hann    nov=  512 L=  81920 nseg=   53 (odd ) fftw  max|d|/max|r| 1.26e-15  max bin rel 2.04e-15  PASS
+CHECK N= 2048 hann    nov=  512 L= 262147 nseg=  170 (even) sme   max|d|/max|r| 1.11e-15  max bin rel 2.76e-15  PASS
+CHECK N= 2048 hann    nov=  512 L= 262147 nseg=  170 (even) smed  max|d|/max|r| 1.11e-15  max bin rel 2.76e-15  PASS
+CHECK N= 2048 hann    nov=  512 L= 262147 nseg=  170 (even) vdsp  max|d|/max|r| 1.11e-15  max bin rel 2.76e-15  PASS
+CHECK N= 2048 hann    nov=  512 L= 262147 nseg=  170 (even) pfd   max|d|/max|r| 1.11e-15  max bin rel 2.58e-15  PASS
+CHECK N= 2048 hann    nov=  512 L= 262147 nseg=  170 (even) kfr   max|d|/max|r| 1.11e-15  max bin rel 2.76e-15  PASS
+CHECK N= 2048 hann    nov=  512 L= 262147 nseg=  170 (even) fftw  max|d|/max|r| 1.11e-15  max bin rel 2.76e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 151557 nseg=   73 (odd ) sme   max|d|/max|r| 1.34e-15  max bin rel 2.76e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 151557 nseg=   73 (odd ) smef  max|d|/max|r| 1.34e-15  max bin rel 2.76e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 151557 nseg=   73 (odd ) vdsp  max|d|/max|r| 1.22e-15  max bin rel 2.80e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 151557 nseg=   73 (odd ) pfd   max|d|/max|r| 1.22e-15  max bin rel 2.84e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 151557 nseg=   73 (odd ) kfr   max|d|/max|r| 1.10e-15  max bin rel 2.66e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 151557 nseg=   73 (odd ) smew  max|d|/max|r| 1.34e-15  max bin rel 2.76e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 151557 nseg=   73 (odd ) fftw  max|d|/max|r| 1.22e-15  max bin rel 2.59e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 163840 nseg=   79 (odd ) sme   max|d|/max|r| 1.45e-15  max bin rel 2.87e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 163840 nseg=   79 (odd ) smef  max|d|/max|r| 1.45e-15  max bin rel 2.87e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 163840 nseg=   79 (odd ) vdsp  max|d|/max|r| 1.45e-15  max bin rel 3.06e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 163840 nseg=   79 (odd ) pfd   max|d|/max|r| 1.45e-15  max bin rel 3.06e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 163840 nseg=   79 (odd ) kfr   max|d|/max|r| 1.45e-15  max bin rel 3.06e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 163840 nseg=   79 (odd ) smew  max|d|/max|r| 1.45e-15  max bin rel 2.87e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 163840 nseg=   79 (odd ) fftw  max|d|/max|r| 1.72e-15  max bin rel 3.06e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 262147 nseg=  127 (odd ) sme   max|d|/max|r| 1.65e-15  max bin rel 3.16e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 262147 nseg=  127 (odd ) smef  max|d|/max|r| 1.65e-15  max bin rel 3.16e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 262147 nseg=  127 (odd ) vdsp  max|d|/max|r| 1.90e-15  max bin rel 3.16e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 262147 nseg=  127 (odd ) pfd   max|d|/max|r| 1.52e-15  max bin rel 3.16e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 262147 nseg=  127 (odd ) kfr   max|d|/max|r| 1.27e-15  max bin rel 3.01e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 262147 nseg=  127 (odd ) smew  max|d|/max|r| 1.65e-15  max bin rel 3.16e-15  PASS
+CHECK N= 4096 hann    nov= 2048 L= 262147 nseg=  127 (odd ) fftw  max|d|/max|r| 1.27e-15  max bin rel 3.16e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 151557 nseg=   37 (odd ) sme   max|d|/max|r| 1.39e-15  max bin rel 2.34e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 151557 nseg=   37 (odd ) smef  max|d|/max|r| 1.39e-15  max bin rel 2.34e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 151557 nseg=   37 (odd ) vdsp  max|d|/max|r| 1.39e-15  max bin rel 2.44e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 151557 nseg=   37 (odd ) pfd   max|d|/max|r| 1.51e-15  max bin rel 2.44e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 151557 nseg=   37 (odd ) kfr   max|d|/max|r| 1.39e-15  max bin rel 2.34e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 151557 nseg=   37 (odd ) smew  max|d|/max|r| 1.39e-15  max bin rel 2.34e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 151557 nseg=   37 (odd ) fftw  max|d|/max|r| 1.39e-15  max bin rel 2.35e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 163840 nseg=   40 (even) sme   max|d|/max|r| 1.61e-15  max bin rel 3.79e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 163840 nseg=   40 (even) smef  max|d|/max|r| 1.61e-15  max bin rel 3.79e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 163840 nseg=   40 (even) vdsp  max|d|/max|r| 1.36e-15  max bin rel 3.65e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 163840 nseg=   40 (even) pfd   max|d|/max|r| 1.61e-15  max bin rel 3.65e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 163840 nseg=   40 (even) kfr   max|d|/max|r| 1.48e-15  max bin rel 3.65e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 163840 nseg=   40 (even) smew  max|d|/max|r| 1.61e-15  max bin rel 3.79e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 163840 nseg=   40 (even) fftw  max|d|/max|r| 1.36e-15  max bin rel 3.65e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 262147 nseg=   64 (even) sme   max|d|/max|r| 1.35e-15  max bin rel 2.54e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 262147 nseg=   64 (even) smef  max|d|/max|r| 1.35e-15  max bin rel 2.54e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 262147 nseg=   64 (even) vdsp  max|d|/max|r| 1.22e-15  max bin rel 2.54e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 262147 nseg=   64 (even) pfd   max|d|/max|r| 1.10e-15  max bin rel 2.54e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 262147 nseg=   64 (even) kfr   max|d|/max|r| 1.22e-15  max bin rel 2.54e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 262147 nseg=   64 (even) smew  max|d|/max|r| 1.35e-15  max bin rel 2.54e-15  PASS
+CHECK N= 4096 hamming nov=    0 L= 262147 nseg=   64 (even) fftw  max|d|/max|r| 1.10e-15  max bin rel 2.48e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 151557 nseg=   49 (odd ) sme   max|d|/max|r| 1.64e-15  max bin rel 2.69e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 151557 nseg=   49 (odd ) smef  max|d|/max|r| 1.64e-15  max bin rel 2.69e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 151557 nseg=   49 (odd ) vdsp  max|d|/max|r| 1.64e-15  max bin rel 2.73e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 151557 nseg=   49 (odd ) pfd   max|d|/max|r| 1.64e-15  max bin rel 2.58e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 151557 nseg=   49 (odd ) kfr   max|d|/max|r| 1.64e-15  max bin rel 2.73e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 151557 nseg=   49 (odd ) smew  max|d|/max|r| 1.64e-15  max bin rel 2.69e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 151557 nseg=   49 (odd ) fftw  max|d|/max|r| 1.91e-15  max bin rel 2.64e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 163840 nseg=   53 (odd ) sme   max|d|/max|r| 1.72e-15  max bin rel 2.77e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 163840 nseg=   53 (odd ) smef  max|d|/max|r| 1.72e-15  max bin rel 2.77e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 163840 nseg=   53 (odd ) vdsp  max|d|/max|r| 1.59e-15  max bin rel 2.68e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 163840 nseg=   53 (odd ) pfd   max|d|/max|r| 1.59e-15  max bin rel 2.77e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 163840 nseg=   53 (odd ) kfr   max|d|/max|r| 1.59e-15  max bin rel 2.65e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 163840 nseg=   53 (odd ) smew  max|d|/max|r| 1.72e-15  max bin rel 2.77e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 163840 nseg=   53 (odd ) fftw  max|d|/max|r| 1.72e-15  max bin rel 2.51e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 262147 nseg=   85 (odd ) sme   max|d|/max|r| 2.03e-15  max bin rel 4.74e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 262147 nseg=   85 (odd ) smef  max|d|/max|r| 2.03e-15  max bin rel 4.74e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 262147 nseg=   85 (odd ) vdsp  max|d|/max|r| 2.03e-15  max bin rel 4.59e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 262147 nseg=   85 (odd ) pfd   max|d|/max|r| 2.03e-15  max bin rel 4.59e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 262147 nseg=   85 (odd ) kfr   max|d|/max|r| 2.17e-15  max bin rel 4.59e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 262147 nseg=   85 (odd ) smew  max|d|/max|r| 2.03e-15  max bin rel 4.74e-15  PASS
+CHECK N= 4096 hann    nov= 1024 L= 262147 nseg=   85 (odd ) fftw  max|d|/max|r| 2.03e-15  max bin rel 4.59e-15  PASS
+CHECK 2-D 5 x 100003 hamming nov=0 N=1024 sme   max bin rel 1.74e-15 PASS
+CHECK 2-D 5 x 100003 hamming nov=0 N=1024 smed  max bin rel 1.58e-15 PASS
+CHECK 2-D 5 x 100003 hamming nov=0 N=1024 vdsp  max bin rel 1.68e-15 PASS
+CHECK 2-D 5 x 100003 hamming nov=0 N=1024 pfd   max bin rel 1.68e-15 PASS
+CHECK 2-D 5 x 100003 hamming nov=0 N=1024 kfr   max bin rel 2.10e-15 PASS
+numpy 2.0.2 scipy 1.13.1; broken=False; FAILS 0; worst bin rel (unbroken) 4.74e-15

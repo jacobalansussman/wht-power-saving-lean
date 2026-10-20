@@ -1,4 +1,4 @@
-# Discrete Fourier transform of every length in O(n (log n)^z), z = 1 - 8.762478e-4, checked in Lean
+# Discrete Fourier transform of every length in O(n (log n)^z), z = 1 - 1.7806935e-3, checked in Lean
 
 Author: Jacob Sussman. Repository: https://github.com/jacobalansussman/wht-power-saving-lean. Licence: Apache-2.0 ([LICENSE](LICENSE), [NOTICE](NOTICE)).
 
@@ -8,51 +8,941 @@ statement, from their "Exact Fourier transforms below n log n" ([openai/math](ht
 family 130). The cost model is theirs too: a random-access machine (RAM) with exact arithmetic. I call 1 - z
 *the saving*. OpenAI's statement has a saving of 10^-13.
 
-**The new result.** The saving proved here is 8.7625e-4, for two statements. Both are new on 10 October 2026:
+**The new result.** On 19 October 2026 I proved the saving 1.7807e-3, exactly
+z = 1 - 17806935/10^10, for the Fourier transform of every length. OpenAI's statement file also states
+convolution, and that is proved at the same exponent. It is built on the community's circuit [#3945](https://github.com/CrocSwap/integer-mult-bounds/pull/3945), Dugongue's,
+with two steps of mine: I re-solved its table of where helper storage goes with the community's own programs, so
+that every head is kept, and the main one, the *recursion lever*, here in its full form (the *full cut*). The saving is above every complex-side construction claimed by others on the community's repository, proved or not (the complex side is the part of their figure that measures the same
+thing as my saving; some research notes there print higher ceilings or targets, which are not constructions), and 9.54 % above my own previous Lean-checked saving,
+1.6256629e-3, which is published here for the first time too. This is the seventh result of this repository; the
+table "All the results" below lists all of them.
+
+| | saving | how it is checked |
+|---|---|---|
+| **this result** (the full cut) | **1.7806935e-3** | Lean proof of OpenAI's statement |
+| the half cut on the same circuit and table, also proved in Lean here | 1.7581520e-3 | Lean proof |
+| the lever on #2979 with every head kept, also proved in Lean here | 1.7564707e-3 | Lean proof |
+| the lever on #2979 as published, also proved in Lean here | 1.7556473e-3 | Lean proof |
+| the lever on #3945 as published, also proved in Lean here | 1.7501109e-3 | Lean proof |
+| the circuit it is built on, Dugongue's [#3945](https://github.com/CrocSwap/integer-mult-bounds/pull/3945), as the community prices it | 1.7306632e-3 | the community's own programs |
+| the highest complex-side construction claimed on the community's repository on 19 October ([#4088](https://github.com/CrocSwap/integer-mult-bounds/pull/4088), Cinna Davis; the same figure in [#4100](https://github.com/CrocSwap/integer-mult-bounds/pull/4100)) | 1.7309791e-3 | the community's own programs; open then, archived on 20 October; not selected |
+| the highest complex-side construction ever claimed there (the chain of pull requests #3934 to #3959) | 1.7411726e-3 | withdrawn: it carried moves that their author had retracted, and another contributor's audit (#4046) disputed it |
+| the community's selected record ([#1094](https://github.com/CrocSwap/integer-mult-bounds/pull/1094)) | kappa 1.6726602e-3 (complex side 1.6754627e-3) | reviewed and selected by the community |
+| the largest saving on the public Lean leaderboard, [bigospeedrun.com/exact-dft](https://bigospeedrun.com/exact-dft) | 1.2654e-3 | Lean proof (Bojnal's, on canghaimeng's C588AT, which runs on my engine) |
+| my previous Lean-checked saving, the sixth result (first published here) | 1.6256629e-3 | Lean proof |
+
+The result is 2.89 % above the figure of the circuit it is built on (the half cut is 1.59 % above it). All the community's figures in
+the table are those of 19 October 2026; the community moves fast, and section 9 says where each one was read.
+Ross Richardson's [#4091](https://github.com/CrocSwap/integer-mult-bounds/pull/4091) certifies 1.7309803e-3 as the
+optimum of a pooled (relaxed) model of #4088's words: a ceiling, not a construction. On 20 October
+[#4181](https://github.com/CrocSwap/integer-mult-bounds/pull/4181) (Rohan Arun, open) claimed a fill that attains
+that ceiling; my figures are above both.
+The community's figures compare with mine only on what they call the *complex side*: their headline figure for
+integer multiplication also depends on a second ingredient, the *bit side*, which this work does not touch.
+
+**The idea, in one paragraph.** The program is recursive. It cuts a long transform into a fixed pattern of
+smaller transforms, the community's circuit, and does each of those by calling itself. How fast such a program
+is depends on one balance between the sizes of the smaller transforms and the size of the job. In the
+community's recursion every array of the circuit always takes a full-size job. But in each round of the circuit
+used here, 80,640 of the smaller transforms are *heads*: each one is the very first thing done to its
+array, and it touches no other array. On those arrays the circuit can take a smaller job instead, and the head
+itself leaves the circuit: its work is done elsewhere in the recursion. The recursion then has to handle jobs of
+two sizes at once, in a fixed ratio, and the proof shows that it still runs at the speed the balance predicts,
+provided every piece of paid work is smaller than every job. With the whole head removed, the smaller job has 25
+axes, so each of the other 57,312 idle blocks of rank 48 in each round is split into two blocks of rank 24, which
+computes the same thing. This step is what I call *the lever*: removing the whole head is its *full cut*, the
+result above; removing half of each head, which needs no split, is its *half cut*. "What is new in the fifth
+revision", below, explains it with the numbers.
+
+**What is new in this revision.** This is the fifth revision of the repository; the fourth was published on
+10 October 2026 with a saving of 8.7625e-4. Since then:
+
+- **The lever, proved in Lean** (19 October 2026): a recursion with jobs of two sizes (Theorem 1G and its Lean
+  proof inside OpenAI's machine model), the *head lemma* (removing half of each head, or all of it, leaves a
+  circuit that does the smaller job on the head's array and the full job everywhere else), the split of a block
+  of rank 48 into two blocks of rank 24 (an identity, proved in Lean with no condition on the block), a Lean check that the heads are heads
+  (a *heads-first certificate*), and the community's circuits #3945 and #2979 ported to Lean, with a device the Lean route
+  had never handled: *borrowed* helpers whose coordinates are changed for free by a fixed linear map (the
+  community calls them *warps*). Proved in Lean on four pairs of circuit and table of hosts, five results in all: #3945 with every head kept, with the full cut (1.7806935e-3, the result above) and with the half cut (1.7581520e-3), and, with the half cut, #2979 with every head kept (1.7564707e-3), #2979 as published (1.7556473e-3) and #3945 as published (1.7501109e-3).
+- **Every head kept.** The community's programs that decide where helper storage goes put each empty block of
+  rank 48 either where it is a head or where it never is, at the same price, as their solvers happened to. I re-ran the community's own
+  allocation programs with one more condition, that every block that can be a head stays empty, and the same
+  circuits then have more heads: 80,640 instead of 57,312 on #3945, and 16,576 instead of 16,086 on #2979. Only
+  the table of where helper storage goes changes; the words, the order of the runs and the price of the circuit
+  stay the community's, and the community's own checks pass on the new tables.
+- **Four results proved in Lean on 13 and 14 October and not published until now**, each a rung of a ladder on
+  the community's circuits: 1.3552606e-3 (mutable sources on Jeremy Kothe's circuit), 1.5699305e-3 (with same-run
+  hosting), 1.6197705e-3 (the fifth result: exit frames, mutable sources and hosting on the community's U8
+  circuit) and 1.6256629e-3 (the sixth result: the same with no source copies left and a tighter bank table),
+  with the smaller rungs of the same days. They stayed unpublished because they did not beat the community's own
+  figures. The lever is built on top of them.
+- **The research of 10 to 20 October**, in [research/](research/README.md): twelve sections, 585 findings, each with its status (23 proved in Lean, 212 checked by computer, 216 argued by hand and not checked, 92 refuted, 42 open),
+  and 122 open questions, each with a first experiment. It holds the moonshot waves of 14 and 15 October,
+  which looked for a small unit with a large saving at blocks 2 to 5 in every game I could define and found
+  none; the lower bounds found along the way (three proved in Lean); why the record circuits save; the
+  routes to proving that a unit exists without finding it; the links to other fields; the speed waves on real
+  processors and FPGAs; and the record track that led to the lever. Failures are told as plainly as successes.
+
+**Whose work it rests on.** Most of what this result stands on is other people's, and the credit for it is
+theirs. [NOTICE](NOTICE), section 10, lists every contribution with its pull request; in short:
+
+- **The circuits** of the lever are the community's. #3945 is Dugongue's (made with OpenAI Codex), the
+  newest in a line of circuits by many contributors: dataisfire made the staged circuit it starts from, zxv the
+  staged pair, Ross Richardson the staged entrance, Erwan Secousses (ChaloupeMusic) the clock and the table of
+  hosts (the programs that made the every-head table on #3945 are his), hexapode the endpoint combination,
+  roger-sato the retimed releases, Jeremy Diviney and dcharb78 the coupled carriers, and Marius-Paul Dumitrean
+  the joint end frames. #2979 is Marius-Paul Dumitrean's (made with Anthropic's Claude), on Jeremy Kothe's gate
+  rewrites (#2957) and Mason Hale's words, chronology and allocation checker (#2917), with Jeremy Diviney's
+  paired extraction, Yiyang Lu's shared kernels and allocation model, Dugongue's owner engine, Ross Richardson,
+  Tekalign, icekylinx, themilkman216 and Gareth Davidson; the programs that made the every-head table on #2979
+  are #2979's own. Before them came Jeremy Kothe, Lyy-iiis, philippeVV, Mason Hale, Sagar Thakrar (with Arham
+  Tahir's audit), Tekalign, themilkman216, Vlado Vojdanovski and the others NOTICE names.
+- **The borrowed helpers and their warps**, with the exact Clifford machinery that checks them, are Cinna Davis's
+  (1337isnot1337, with OpenAI Codex), on icekylinx's native line and the wrappers of DreamingOfClouds and
+  chafreaky. Tekalign added the lifted targets, zxv the source-partner aliases, and Jeremy Kothe and philippeVV
+  the hosting of a whole helper inside another one before it starts.
+- **The layout of copies underneath** grows from the community's circuit T74: Rohan Arun's, with Marius-Paul
+  Dumitrean, Jeremy Kothe and LeverRank, on Jeremy Kothe's earlier words with Thomas DiFiore, Jeremy Diviney and
+  Chafik Boukhalfa (chafreaky); Vlado Vojdanovski, Chafik Boukhalfa and Jeremy Kothe made its assembly.
+- **The price of a circuit** is the community's moment formula. The agents re-implemented the community's exact
+  moment engine (the package "native complex moment" by Rohan Arun with OpenAI Codex, on work of Dugongue,
+  eumemic and icekylinx) and reproduced the community's figures to 24 digits before using it.
+- **Checks of the circuits by others:** Chris R (Clear1nsight) audited #3945, and ChaloupeMusic replayed its exact
+  operator, on the operator model of Nick Petalas and Matarener.
+- **Ryan Shea** turned Jeremy Kothe's earlier circuit into a Lean proof of OpenAI's statement
+  ([shea256/fourier-transform-below-nlogn](https://github.com/shea256/fourier-transform-below-nlogn), folder
+  `lean/complex588`). His tree is the Lean project every result since the fifth is laid over, and his conversion
+  pipeline and generators are the base of mine.
+- **Nil Mamano** wrote the Lean files of the nine-stage network and the templates of the Fourier chain that
+  Shea's tree takes over; **Dugongue** made its entrance gauges and banks, **Zhihao Chen** (jacklightChen) its
+  compressed layout, **lydakis** the bank patterns and **DaysSky** the layout it starts from. DaysSky proposed
+  hosting helpers in idle arrays and Zhihao Chen wrote the argument for mutable sources, both in the community's
+  terms; Jeremy Kothe and DreamingOfClouds wrote the community's lemmas on where a helper may end.
+- **The ladder of 13 and 14 October** is built on the community's U8 circuit (Jeremy Kothe's, with Chafik
+  Boukhalfa's frame changes, on icekylinx's construction "gauge44") and on Jeremy Kothe's circuit of Shea's proof;
+  "The results of 13 October 2026", below, gives its credits in full.
+- **Schönhage's τ-theorem** for matrix multiplication is the idea that Theorem 1G extends.
+- **OpenAI** made the cost model, the statement, and the step from the lengths 2^k to every length.
+
+What is mine:
+
+- the mixed-target recursion: Theorem 1G and its Lean proof in OpenAI's model;
+- the lever: finding the heads, the half cut and the full cut with its split, which keep the recursion's
+  condition, the head lemma, and the tables with every head kept (made with the community's own allocation programs and one added condition);
+- the Lean ports of the community's newest circuits: the conversion of their borrowed-helper words into my
+  certificate format, the Lean checker for warps with its soundness proof, the networks of many copies with
+  hosting across copies, and the generators of the Lean data;
+- the Lean engine underneath, and its extensions for exit frames, mutable sources, centre reading and hosting
+  (the fifth and sixth results);
+- the research in [research/](research/README.md).
+
+The agents (Claude) wrote the proofs and programs under my direction ("Who made it, and how", below).
+
+**How it was checked, and the limits.** Every check below passed for the result above, on Linux machines of
+Google's Colab service (8 processors, about 50 GB of memory). Each lever package's `README.txt` and `result.json`
+list its own checks with their logs:
+
+- Lean's kernel accepted the new modules (410 for the result above), compiled from source over Shea's
+  tree with `package/u8x0hq`. The two theorems depend only on the three standard axioms (`propext`,
+  `Classical.choice`, `Quot.sound`), and the source files contain no `sorry` other than the two lines that
+  OpenAI's statement file has too.
+- `tools/Compare.lean` printed `RESULT: PASS`: the theorems proved are those of OpenAI's statement file,
+  `UniformFourier.lean`, with only the exponent and seven names changed. The same comparison against a statement
+  one unit of 10^-10 stronger fails, as it must.
+- The official comparator, the program that OpenAI's repository uses, accepted the proof with both of its kernels
+  (nanoda and Lean's) and rejected the statement one unit stronger.
+- The agents re-created the leaderboard's verifier offline, on the proof packaged as a submission, and its phases
+  passed: the Lean check, which compiled the packaged proof from source, the audit of the axioms, and the nanoda
+  kernel, and the same run one unit stronger was rejected. The leaderboard admits at most 500 files, so the
+  packaged proof merges small modules (generated data, and chains of modules each importing the one before) into
+  larger ones (450 files). A separate check compared the merged form, constant by constant, with the proof built
+  from the unmerged files and found the same 29,540 constants in both, each with the same statement and definition,
+  and every one of the 12,330 theorems with the same proof.
+- The rate fact behind the figure is proved in Lean at 1.7806935e-3, and Lean also proves that it fails at
+  every saving one unit higher. Lean's kernel counts the heads in the table of hosts (80,640) and
+  refuses one more, and Lean proves that the full cut's profile is wrong with #3945's own head count, with one head
+  more, and without the split.
+- The agents also re-ran the community's complete checks of each circuit from scratch, with the new tables where
+  the tables changed, and they passed.
+- Three more agents, each with the sole job of finding a fault, checked the full cut again on other machines: one
+  fetched OpenAI's statement afresh, derived the statement files from it once more and rebuilt the proof from the
+  package alone; one rebuilt every new module from the package on a fresh copy of the base and ran the official
+  comparator again; one re-derived the head count, the split blocks, the separation and the rate fact from the Lean
+  data files with programs of its own, checked the hypotheses of Theorem 1G, and re-read the community's figures.
+  None found a fault in the proof. They found cosmetic points only, listed with the correct text in the package's `KNOWN-ISSUES.txt`; they are left as
+  compiled, because the files are checked byte for byte. Known cosmetic issues: names left from the half-cut package
+  that the full cut reuses; in every package's `Main.lean` the comment above the Fourier theorem calls it a sibling of
+  a Walsh-Hadamard theorem `wht_main_block_...` that does not exist (it should say only that the theorem follows from
+  the package's kernel program); line 15 of design B's `Seam.lean` says 57,312 heads where it should say 80,640; the
+  header of `Rate3945F.lean` gives a relative slack of 8.926e-11, which is measured against W (against the right side
+  it is 1.07e-10); and the header of each `Goal.lean` cites OpenAI's lines 75-78, 80 and 82 where the definitions are
+  at 75-77, 79 and 81. For the half cut on the same table, three other agents did the same; none found a fault in the proof, and one found two comments in Lean files that are out of date (one gives #3945's own head count); they are left as compiled, because the files are checked byte for byte.
+- This repository's own scripts (`scripts/`), run as VERIFY.md section 12 says from a fresh clone on a fresh copy
+  of Shea's tree, rebuilt `package/leverF` (the result above), `package/leverB` (the half cut on the same table) and
+  `package/leverA` (the lever on #2979 with every head kept), passed every check on all three, and the comparator
+  accepted all three again ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)).
+  Preparing that run found three faults in `scripts/build-and-check.sh` with the lever packages; they are fixed.
+
+The limits are properties of how it was built and checked:
+
+- Like every figure in this race, the result is asymptotic. The constant hidden in the O is astronomically
+  large, so it says nothing about running times at sizes anyone can run.
+- The proof lives in Shea's Lean tree, laid over it as two packages (`package/u8x0hq`, then
+  `package/leverF`), not in this repository's own Lean project.
+- Every Lean run was on Colab machines. The comparator's sandbox needs a feature of the Linux kernel (Landlock)
+  that those machines lack, so it ran inside a stand-in; the re-creation of the leaderboard's verifier used the
+  agents' own scripts in the same stand-in, and the verifier's own controller never ran.
+- The community's figures that the result is compared with are their claims, checked by their programs. My
+  result does not rest on those checks or on the community's premises: the circuit enters the Lean proof only as
+  data, which Lean checks.
+- Theorem 1G was first argued by hand in a simple model of jobs; what is proved in Lean is its form inside
+  OpenAI's model for rules with two job sizes that are separated, as used here. Rules that are not separated, where some paid block is larger than the
+  smaller job, are not covered by any theorem ([notes/open-directions-4.md](notes/open-directions-4.md)).
+- No person outside this project has reviewed the new proofs, and I would welcome a line-by-line review.
+
+**All the results.**
+
+| Result | What is computed | Saving | Where the proof is | Date |
+|---|---|---|---|---|
+| seventh | Fourier transform of every length, and convolution: the community's #3945 with every head kept, and the recursion lever (80,640 heads, full cut, the other 57,312 blocks of rank 48 split) | 1.7806935e-3 | `package/leverF`, on Shea's tree | 19 October 2026 |
+| with the seventh | Fourier transform of every length, and convolution: the community's #3945 with every head kept, and the recursion lever (80,640 heads, half cut) | 1.7581520e-3 | `package/leverB`, on Shea's tree | 19 October 2026 |
+| with the seventh | Fourier transform of every length, and convolution: the community's #2979 with every head kept, and the recursion lever (16,576 heads, half cut) | 1.7564707e-3 | `package/leverA`, on Shea's tree | 19 October 2026 |
+| with the seventh | Fourier transform of every length, and convolution: the community's #2979 as published, with the recursion lever (16,086 heads, half cut) | 1.7556473e-3 | `package/lever2979`, on Shea's tree | 19 October 2026 |
+| with the seventh | Fourier transform of every length, and convolution: the community's #3945 as published, with the recursion lever (57,312 heads, half cut) | 1.7501109e-3 | `package/lever`, on Shea's tree | 19 October 2026 |
+| sixth | Fourier transform of every length, and convolution: the community's U8 circuit with exit frames, mutable sources without centre copies and same-run hosting (one-pad bank table) | 1.6256629e-3 | `package/u8x0hq`, on Shea's tree | 14 October 2026 |
+| fifth | Fourier transform of every length, and convolution: the community's U8 circuit with exit frames, mutable sources and same-run hosting | 1.6197705e-3 | `community/u8xmhh`, on Shea's tree | 13 October 2026 |
+| with the fifth | Fourier transform of every length: Kothe's circuit with mutable sources and same-run hosting | 1.5699305e-3 | `community/c588mhh`, on Shea's tree | 13 October 2026 |
+| with the fifth | Walsh-Hadamard transform, lengths 2^k, on that kernel program | 1.5699306e-3 | `community/wht-c588mhh`, on Shea's tree | 13 October 2026 |
+| with the fifth | Fourier transform of every length: the community's U8 circuit with exit frames and mutable sources | 1.3868856e-3 | `community/u8xm`, on Shea's tree | 13 October 2026 |
+| with the fifth | Fourier transform of every length: Kothe's circuit with mutable sources only | 1.3552606e-3 | `community/c588m`, on Shea's tree | 13 October 2026 |
+| with the fifth | Walsh-Hadamard transform, on that kernel program | 1.3552607e-3 | `community/wht-c588`, on Shea's tree | 13 October 2026 |
+| with the fifth | Fourier transform of every length: the U8 circuit with exit frames | 1.2704023e-3 | `community/u8x`, on Shea's tree | 13 October 2026 |
+| with the fifth | Fourier transform of every length: Shea's certificate with a repacked bank table | 1.2383291e-3 | `community/c588-repack`, on Shea's tree | 13 October 2026 |
+| with the fifth | Walsh-Hadamard transform, on Shea's kernel program and on the repacked one | 1.2331686e-3 and 1.2383292e-3 | `community/wht-c588`, on Shea's tree | 13 October 2026 |
+| fourth | Fourier transform of every length, and convolution | 8.762478e-4 | this repository's Lean project | 10 October 2026 |
+| fourth | Walsh-Hadamard transform, lengths 2^k | 8.762479e-4 | this repository's Lean project | 10 October 2026 |
+| third | Fourier transform of every length, and convolution | 7.474546e-4 | this repository's Lean project | 9 October 2026 |
+| second | Walsh-Hadamard transform | 7.474547e-4 | this repository's Lean project | 9 October 2026 |
+| first | Walsh-Hadamard transform | 5.399225e-4 | this repository's Lean project | 9 October 2026 |
+
+Every line is checked by Lean's kernel, by `tools/Compare.lean` and by the official comparator. The lines on
+Shea's tree differ in what else was done; "What is new in the fifth revision" and "The results of 13 October in
+detail", items 1 and 4, give each one's checks, logs and gaps. The sixth result's package also holds the Fourier
+chains of four instances built on the way to it (U8XM, U8XMHH, U8X0 and U8X0HH; its `README.txt`). There is no Walsh-Hadamard line for
+the kernel programs of the lever, of the sixth result or of the fifth: that corollary is one term, as for the
+others, but it has not been built. The Walsh-Hadamard lines on Shea's tree are compared with this repository's own
+published Walsh-Hadamard statement, with only the exponent and the theorem name changed. Each Walsh-Hadamard
+figure sits one unit of 10^-10 above the Fourier figure on the same kernel program: the step to every length costs
+a factor (log log n)^2, so the Fourier statement is taken one unit lower (section 2, point 4).
+
+**Who made it, and how.** I built this repository between 8 and 20 October 2026 with a team of AI agents
+(Claude) that I directed. I set the goals, chose which ideas to pursue, and decided at each stage what to do
+next. The agents wrote the Lean proofs, designed the networks, ran the searches and the community's checks, and
+tried to refute one another's work. For the results since the fifth I chose to build on the best work the
+community had published rather than on my own circuit, and to prove the steps its figures assume. The lever's
+idea came out of a round on abstract routes on 14 October 2026; the agents counted the heads, proved Theorem 1G on
+paper and planned the Lean route that day, and then I paused it for other directions. On 19 October the agents
+priced the lever on the community's newest circuits, and I had the proofs built on five machines at once.
+[notes/how-the-lever-was-found.md](notes/how-the-lever-was-found.md) tells that story and
+[notes/fifth-result-story.md](notes/fifth-result-story.md) the story of 13 October, each with what failed and the
+claims that did not stand.
+
+**This is not an OpenAI project, and not the community's.** OpenAI did not write, review or endorse it. Their
+material is here in these forms:
+
+- The 89 files under `OAI/` are OpenAI's, unmodified.
+- Under `Work/Fourier/` and `Work/FourierE8/` there are copies of OpenAI's files with changes. Each says so in
+  its first lines, and [NOTICE](NOTICE), section 7, lists them.
+- The packages under `community/` and `package/` hold more such copies. Each copy of OpenAI's statement file among
+  the files of `community/` that are laid over Shea's tree (the folders `overlay/` and `variants/`) says so in a
+  notice on its lines 3 to 12 (3 to 14 in `community/c588-repack`); the notice was added after the build and the
+  checks, and it gives the checksum of the file as it was compiled, which removing the notice gives back. The
+  statement copies in `package/` are kept byte for byte as they were compiled, because the scripts derive them
+  again from OpenAI's file and compare the two; [NOTICE](NOTICE), section 10, lists them and what was changed. A
+  few more changed copies are kept among the logs of `community/` exactly as they were compiled or fetched, so
+  they carry no such notice; a file `NOTICE.txt` in each of their folders says what was changed. The copies of
+  OpenAI's proof files say so in their first lines. [NOTICE](NOTICE), sections 9 and 10, lists them all.
+- The name of the Lean (Lake) package, `OAI`, and the namespace `OAI.PowerSaving` are theirs. They are kept
+  only because the new modules extend their development.
+
+Ryan Shea, Nil Mamano, DaysSky and the community's authors have not reviewed it either.
+
+**Where to look next.**
+
+- "What is new in the fifth revision", just below: the lever with the numbers, the theorem, what the proof is made
+  of and what is not claimed; the sixth result; the research.
+- [research/README.md](research/README.md): the research of 10 to 20 October, section by section, and
+  [research/open-problems.md](research/open-problems.md), every open question with a first experiment.
+- [notes/how-the-lever-was-found.md](notes/how-the-lever-was-found.md) and
+  [notes/open-directions-4.md](notes/open-directions-4.md): the lever's story, and what was left before the full cut
+  (written for #3945 as published), each lead with a first experiment.
+- [VERIFY.md](VERIFY.md), section 12: how to rebuild and check the lever and the sixth result yourself, and how to
+  re-run the searches and prices on a laptop.
+- "The results of 13 October 2026", further down: the fifth result and its rungs, with every check and its log.
+- The fourth result and the earlier ones follow, from "What was new in the fourth revision" on. Section 9 has
+  the dates, commits and outside sources behind every statement, kept out of the prose.
+
+## What is new in the fifth revision (2026-10-20)
+
+### The lever, with the numbers
+
+**Words used here.**
+
+- **Saving.** The program needs O(n (log n)^z) operations; the saving is 1 - z. Larger is better.
+- **Array, axis.** The program keeps its data in many *arrays*. In the circuits used here every array carries 73
+  coordinates, its *axes*, and the work on an array is a transform along some of its axes.
+- **Block, rank.** A costly step of the circuit is a *block*: a transform along some number r of one array's
+  axes, which the program does by calling itself on a smaller problem. r is the block's *rank*. Additions between
+  arrays are free.
+- **Unit.** One full pass of the community's circuit: on #3945, 360 copies of a smaller circuit, 3,240 runs in all,
+  over W = 322,560 arrays; on #2979, 74 copies and 666 runs.
+- **Job.** What the recursion asks of one array in one unit: a transform along k of its axes. In the community's
+  recursion k is always 73, the *full job*.
+
+**The balance.** For a recursive program of this kind the saving is fixed by one equation. If one unit does
+blocks of ranks r_1, r_2, ... on W arrays that each take a job of 73 axes, the operation count grows like
+n (log n)^τ, where τ is the number that balances
+
+    r_1^τ + r_2^τ + ...  =  W · 73^τ ,
+
+and the saving is 1 - τ. This is the community's moment formula. For #3945 the unit's blocks are 8,041,680 of
+rank 1, 2,306,880 of rank 2, 729,648 of rank 3, 353,160 of rank 4, 69,120 of rank 5, 25,920 of rank 8 and
+137,952 of rank 48, and the balance gives the community's figure, 1.7306632e-3.
+
+**Heads, and the half cut.** The blocks of rank 48 finish off parts of arrays in which no helper storage was
+placed. The agents followed every array through the unit and found that some of them are *heads*: the first
+operation on their array, acting on that array alone, with nothing kept in that array before it. In #3945 as the
+community published it, 57,312 of the 137,952 are heads; the other 80,640 are not, because other steps work on
+their arrays before them.
+
+A transform along 73 axes is the same as one along 24 axes followed by one along the other 49, because transforms
+along different axes commute. So an array whose first step is a head along 48 axes can be given a smaller job:
+the 24 axes that the head would start with are taken out of this unit's job on that array and done elsewhere in
+the recursion. On that array the unit then has a job of 49 axes, and the head needs only its other 24 axes.
+
+The balance changes on both sides. With h heads among the rank-48 blocks, each head turns a 48 on the left into a
+24, and each head array turns a 73 on the right into a 49. On #3945 as published:
+
+    (other blocks) + 80,640 · 48^τ + 57,312 · 24^τ  =  265,248 · 73^τ + 57,312 · 49^τ .
+
+Both sides lose about the same amount, but not exactly: x^τ grows a little more slowly for large x when τ is
+below 1, so the step from 48 to 24 removes slightly more than the step from 73 to 49. The left side falls further,
+the balance moves to a smaller τ, and the saving grows from 1.7306632e-3 to 1.7501109e-3. More heads give more:
+that is why the tables with every head kept are worth building.
+
+**Why only half of each head.** A recursion with jobs of two sizes is not the community's recursion, so it needs
+its own theorem. **Theorem 1G** (the agents' proof, first in a simple model of jobs) says: if every block that is
+paid for is smaller than every job (the rule is *separated*), the program runs in O(n (log n)^τ') operations for
+every τ' above the balance root τ, with a constant that depends on τ'. The construction is a tree of calls run in
+lockstep, so that every call receives exactly the jobs of both sizes it needs, and the few jobs that are left over
+are done by fresh calls of the whole program. Here every paid block has rank at most 48 and the smaller job has 49
+axes, so the rule is separated. Cutting the whole head instead (a job of 25 axes) would leave the other blocks of
+rank 48 larger than the smaller job. They can be split into two blocks of 24: a block along 48 axes is the same as
+one along 24 of them followed by one along the other 24. On #3945 as published that split costs back almost all
+of the gain: the full cut gives 1.7307680e-3 against the half cut's 1.7501109e-3. With every head kept (below)
+there are fewer blocks to split and more heads to remove, and the full cut is the best: 1.7806935e-3.
+
+**Every head kept.** In the community's allocation model an empty block of rank 48 can sit in two places in each
+copy at the same price: in one it is a head, in the other it never is. The community's programs split them as
+their solvers happened to. Re-running those programs with every head position kept empty changes only the table
+of where helper storage goes. On #3945 the heads become 80,640 (the most there can be, 224 per copy) and the other
+57,312 are not heads; on #2979 the heads become 16,576 of 28,190 (8,288 in each of the two head positions,
+against 16,086 as published). The paid blocks, the community's figure for the circuit and its checks stay the
+same.
+
+**The figures.** Every figure here except those of the last column is a price by the balance, computed to at
+least ten digits and rounded down to the grid of 10^-10 ([tools/lever/README.md](tools/lever/README.md), item 2).
+The last column gives the figure proved in Lean, a point of the same grid at or below the price.
+
+| circuit and table of hosts | heads | the circuit's own figure | with the half cut | with the full cut | in Lean |
+|---|---|---|---|---|---|
+| #3945 (Dugongue) with every head kept | 80,640 | 1.7306632e-3 | 1.7581520e-3 (+1.59 %) | 1.7806935e-3 (+2.89 %) | both proved in Lean: 1.7806935e-3 (full cut, `package/leverF`) and 1.7581520e-3 (half cut, `package/leverB`) |
+| #2979 (Marius-Paul Dumitrean) with every head kept | 16,576 | 1.7290340e-3 | 1.7564708e-3 (+1.59 %) | 1.7797095e-3 | 1.7564707e-3, proved in Lean (`package/leverA`) |
+| #2979, as published | 16,086 | 1.7290340e-3 | 1.7556473e-3 (+1.54 %) | 1.7744822e-3 | 1.7556473e-3, proved in Lean (`package/lever2979`) |
+| #3945, as published | 57,312 | 1.7306632e-3 | 1.7501109e-3 (+1.12 %) | 1.7307680e-3 | 1.7501109e-3, proved in Lean (`package/lever`) |
+| #3815 (ChaloupeMusic), the fallback for #3945 | 57,312 | 1.7305784e-3 | 1.7500242e-3 (+1.12 %) | - | not built |
+| #4076 (Rohan Arun, a draft built on #3945's words) | - | 1.7308090e-3 | 1.7504268e-3 (+1.13 %) | 1.7315054e-3 | not built |
+| T74 (#1839, Jeremy Kothe), where the lever was first found | 11,010 | 1.6797550e-3 | 1.6968621e-3 (+1.02 %) | 1.6948358e-3 | not built |
+
+The figures of the full cut are prices, not built, except on #3945 with every head kept, where it is proved in
+Lean (`package/leverF`). The full cut on #2979 with every head kept (1.7797095e-3) would need the data of that
+table and the cut fact proved on #2979's words: the Lean bridge of the full cut (`Work/Mixed/Bridge/CoreF`, listed in
+`package/leverF/README.txt`) is general in the table, but its cut fact is proved in Lean only on #3945's words. On #2979's words a re-solved table, A-fc, prices at 1.7887046e-3 under the full cut (the price 1.7887045643e-3
+rounded to the nearest; on the grid of 10^-10, rounded down as above, 17,887,045/10^10), above the Lean result;
+it is checked by computer, not proved in Lean ([research/record-track/data/a-fc/](research/record-track/data/a-fc/README.md)).
+
+**The theorem.**
+
+| | |
+|---|---|
+| statement | OpenAI's `UniformFourier.lean` (family 130), with the exponent `1 - 17806935/10^10` and seven names changed |
+| theorems | `OAI.PowerSaving.transform_mainL3945F` (the transform of every length) and `OAI.PowerSaving.convolution_mainL3945F` (convolution) |
+| file | `Work/FourierL3945F/Main.lean` in `package/leverF/overlay/` |
+| statement files compared | `Work/FourierL3945F/UniformFourierChallenge.lean` (this exponent) and `Work/FourierL3945FNeg/UniformFourierChallenge.lean` (one unit stronger) |
+| axioms | `propext`, `Classical.choice`, `Quot.sound` |
+| base | Ryan Shea's `lean/complex588` at commit `5239484`, with `package/u8x0hq` and then `package/leverF` laid over it |
+
+The other lever packages have the same form with their own suffix (the table "All the results").
+
+**What the proof is made of.** Each lever package's `README.txt` lists its folders and `MODULES.txt` every module
+in build order. In short:
+
+| part | what it proves | where |
+|---|---|---|
+| the flow and the cost bound | Theorem 1G's bookkeeping: the weights of the tree of classes, exact balance, sources and exits, and the cost bound for every exponent above the rate point | `Work/Mixed/` (Flow, Phi, LemmaA, Bound, TwoTarget) |
+| the program | the lockstep tree of calls as a program in OpenAI's machine model, its correctness and its cost | `Work/Mixed/Prog/`, `Work/MixedCost/` |
+| the seam and the rate fact | OpenAI's statement accepts an engine whose cost has a constant factor; the balance holds at the figure and fails one unit above | `Work/Mixed/` (SeamConst, Rate*, RateMono) |
+| the head lemma | removing heads, or half of each, leaves a circuit that does the smaller job on the head arrays and the full job elsewhere; any block of rank a + b is two blocks | `Work/Mixed/HeadM1` and, in some packages, `HeadComm` |
+| the heads-first certificate | the circuit equals the same circuit with its heads moved to the very front, as a first step on arrays that nothing has touched yet; Lean's kernel counts the heads in the table of hosts | `Work/Mixed/Bridge/`, `Work/XHostT/HF*/` |
+| warps | the Lean checker for the community's borrowed helpers, and what a warp means as a matrix | `Work/KLowW/`, `Work/Warp/`, `Work/PWGen/` |
+| the network of copies | the hosted network with any number of copies, any order of runs, and helper storage hosted in idle arrays of any copy | `Work/XHostD/`, `Work/XHostR/`, `Work/XHostT/` |
+| the circuit as data | both words of the circuit, the dispatch of its runs and the table of hosts, each checked by Lean's kernel | `Work/GCert/Data/`, `Work/XHostT/Data/` (generated) |
+| the Fourier chain | the step from the kernel program to every length, at this exponent | `Work/Fourier<suffix>/` (generated) |
+
+Every generated file can be made again from the community's files: each package's `generators/REGENERATE.sh`
+does it and compares the result with the package's `SHA256SUMS`. Each generator that writes a figure refuses a
+figure one unit higher.
+
+**What is not claimed for the lever.**
+
+- Nothing about integer multiplication. The community's headline figure, kappa, is capped by the complex side b (through b/(1+b): the selected record's b of 1.6754627e-3 gives its kappa of 1.6726602e-3) and by a bit side; the lever raises only the complex side, so the community's kappa would rise only as far as its
+  bit side.
+- No speed-up in practice (the constant is astronomically large).
+- Nothing about the community's premises beyond what the Lean proof itself establishes. The proof is of OpenAI's
+  statement in OpenAI's model; the community's own figures rest on premises that they state, which this
+  repository neither uses nor checks.
+- No claim to be the largest saving anyone will have: the community's figures that are not Lean-checked are listed
+  in the table at the top, and higher claims may appear at any time.
+
+### The sixth result: 1.6256629e-3 (14 October 2026)
+
+On 14 October 2026 I proved the saving 1.6256629e-3, z = 1 - 16256629/10^10, for the Fourier transform of every
+length and for convolution, on the community's U8 circuit. It is the fifth result (below) taken further: the
+central totals are read from the sources themselves, so no source copies remain (`CSX/`), and the hosting uses a
+bank table with one pad and rate facts with a quartic bound (`Work/BlockAccounting/Moment4`). It stayed unpublished
+because it did not beat the community's own figure for that circuit, and it is the engine every lever package is
+laid over. The package is `package/u8x0hq`: 257 Lean files, with the Fourier chains of four instances built on
+the way (U8XM, U8XMHH, U8X0 and U8X0HH).
+
+Its checks, on Colab machines (the package's `result.json` lists each with its log): the build (299 s, 8.9 GB at
+most); the three standard axioms; the host-table checker proved by Lean's kernel to reject a table with one
+remainder changed; both statement files OpenAI's file with only the exponent changed (16256629 and 16256630) and a suffix added to seven names; `tools/Compare.lean`
+`RESULT: PASS`, and one unit stronger `RESULT: FAIL`; the official comparator in the stand-in sandbox, both kernels
+accepting and the stronger statement rejected; the leaderboard's verifier re-created offline (the Lean check
+compiled the packaged proof from source in 78 minutes); and an agent whose only job was to refute it rebuilt every
+module from a fresh copy of Shea's tree on another machine and re-ran the generators byte for byte, and did not
+refute it. On 19 October it was rebuilt on all five machines before the lever build, and this repository's scripts
+were run on it from a fresh copy of Shea's tree (`ALL CHECKS PASSED`; the comparator accepted).
+
+One limit of its own: comments in seven of its files describe the U8 circuit with an earlier, inexact list of
+makers that names the community's owner maps; those owner maps are not used, and the package's `README.txt` names
+the files. The files are left exactly as they were compiled and checked.
+
+### The research since the fourth revision, and the moonshots
+
+[research/](research/README.md) holds everything else I did between 10 and 19 October 2026, in twelve sections,
+each with its programs, data and a machine-readable `results.json`. In short:
+
+- **No new unit was found**, at any open shape and in any game, not even at the stepping-stone tier of a saving of
+  0.01. The moonshot waves of 14 and 15 October searched blocks 2 to 5 in the engine game, the widened game (every
+  address permutation free, Toffoli gates included) and the everything-free game (column-mixing maps and the
+  running XOR free as well), and mixed units that finish some arrays only partly. The nearest miss is a unit of 2
+  arrays in 7 moves at block 4, allowed by every bound by a margin of 640 out of 137,280; it is still open.
+- **What came out instead are lower bounds.** Proved in Lean: the counting rule behind every lower bound, that
+  block 2 never saves, and that block 3 needs at least 2.8 moves per array (a block-3 unit saves at most 6.28e-2).
+  Checked by computer: block 4 needs at least 41/13 moves per array (at most 0.171). Argued by hand, not checked:
+  block 2 never saves in any game whose free steps touch boundedly many entries per row, and the methods behind
+  these bounds can never rule out a saving of 0.1 from block 5 on.
+- **How the savers save.** Every known saving is frame packing (argued by hand, not checked), and the record
+  circuits, OpenAI's, the community's and mine, all save the same way: one free direction per array, delivered
+  through a small shared centre. Every lever on that mechanism that the rounds could think of failed to lift the
+  record; that is what sent the record track to the recursion instead.
+- **Routes, fields and speed.** No route proved that a unit exists without finding it, although such a unit would
+  count in full (proved in Lean). The problem is not a famous problem in disguise. On real machines, one result
+  moved an application: a number-theoretic transform inside Microsoft SEAL made a loop of encryption operations
+  21.2 % faster.
+- Failures are told as plainly as successes (92 findings are marked refuted, each with what refuted it), and every
+  open question comes with a first experiment ([research/open-problems.md](research/open-problems.md)).
+
+## The results of 13 October 2026 (the fifth result and its rungs)
+
+This part is the text I wrote on 13 and 14 October 2026 for the fifth result, which was not published until
+this revision; its figures, checks and credits are unchanged. The sixth result and the lever, above, are built
+on it.
+
+**The fifth result.** On 13 October 2026 I proved the saving 1.6198e-3, exactly z = 1 - 16197705/10^10, for the
+Fourier transform of every length. OpenAI's statement file also states convolution, and that is proved as well.
+Before that day, the largest saving with a Lean proof that I knew of was Ryan Shea's 1.2331685e-3, the top
+entry that morning of the leaderboard [bigospeedrun.com/exact-dft](https://bigospeedrun.com/exact-dft). The new
+saving is 31.35 % above his (1.3135 times). It is built in his Lean tree, on the community's newer "U8" circuit.
+On the way I proved smaller savings the same day, each a rung of the same ladder: 1.3553e-3 and then 1.5699e-3
+on the circuit of Shea's proof, Jeremy Kothe's, and 1.3869e-3 on the U8 circuit. The fifth result is 3.17 %
+above the best of them. The table "All the results" at the top lists all of them.
+
+**What is new in it.** Three proofs in Lean, each of a step that the community behind the circuit assumes in its
+own figures, and the certificate that stacks all three on the community's U8 circuit. A few words first:
+
+- The program works on many *arrays*, working copies of the data. A small circuit of additions runs over and
+  over inside it, in a network of nine stages. In each run some arrays are *sources*: they hold what that run
+  reads.
+- Each array is written in a coordinate system, its *frame*, which grows as the work on the array proceeds. A
+  *move* is one costly step on one array: it takes the array to a larger frame. A *climb* is a run of such
+  moves. By the end of each run every array must have climbed to the *full frame*, the largest one. Additions
+  between arrays are free, but only between arrays that stand at the same frame. Section 5 says more.
+- A *helper* is a spare array that holds partial sums. Between stages a helper still has part of its climb
+  ahead of it, its *leftover piece*. Shea's pipeline keeps those pieces in *banks*: arrays of their own that
+  the program carries through every run. Every bank widens every run, so the fewer banks, the larger the
+  saving.
+- A *certificate* is a data file that lists the additions of a circuit one by one. A Lean checker reads it, and
+  the checker's soundness is proved.
+- The *engine* is the part of the Lean proof that turns a checked network into one program for the lengths
+  2^k with a time bound. That program is the *kernel program*, and the theorem that delivers it is the *end
+  theorem*. The *Fourier chain* is the set of files that carries the kernel program through OpenAI's reduction
+  to every length. Only its first file, the *seam*, names the end theorem.
+- *The community* is the contributors of the public repository
+  [CrocSwap/integer-mult-bounds](https://github.com/CrocSwap/integer-mult-bounds), where the circuit comes from.
+
+The result is four layers, one on top of the other. The first is the community's circuit; each of the other
+three is a step that I proved in Lean:
+
+- **The circuit: the community's U8 circuit.** Jeremy Kothe built it in the community's repository, from
+  another circuit of his there, published earlier the same day, which carries frame changes by Chafik
+  Boukhalfa and is built on icekylinx's construction that the community calls "gauge44". The agents rebuilt it
+  with the community's own program, and its checksum matched the one the community records
+  (`community/base-logs/u8-word/`).
+- **Exit frames, proved in Lean.** The engine checks that a run does the right thing and then cleans up the
+  helpers with an *undo step* derived from the run. So every helper climbs to the full frame by the end of a
+  run, where the undo step can restore it. The community's newer circuits let some helpers stop
+  earlier, at an *exit frame*, a smaller frame, and charge only for the climb that the undo step then needs. I
+  proved in Lean that the engine stays correct with exit frames (`XExit`, `Work/KLow`). On the U8 circuit, 126
+  helpers end at exit frames. Ryan Shea's notes name exit frames as the next step for the Lean route, and the
+  charge for them follows the community's written lemmas about where a helper may end.
+- **Mutable sources, proved in Lean.** The engine asked that a run never write into its sources. So Shea's
+  conversion first copies each of the circuit's 112 sources into a helper, and every run pays for those
+  copies. I proved that the engine stays correct when a run writes into its sources, provided the undo step at
+  the end of the run restores them too. This is 7 modules, 1,429
+  lines, in `Work/XMut`, and `Work/KMX` joins it with exit frames. Zhihao Chen had written the argument for
+  this step in the community's terms; the Lean proof is new. On the U8 circuit five copies stay: five of the
+  eight *central totals* (sums formed in the middle of a run that every target reads) sit in source arrays,
+  and the engine's step that reads those totals reads them only from helpers.
+- **Same-run hosting, proved in Lean.** In each run, some data arrays sit idle for part of the time. DaysSky
+  proposed, for the community's circuits, to keep the helpers' leftover pieces in those idle arrays instead of
+  in banks ("idle-axis hosting"), and wrote a proof of it in the community's terms. I proved in Lean that the
+  engine stays correct when it does so, with every piece hosted by an array that is idle within the same run.
+  This is `Work/XHost`, about 5,400 lines. It takes the nine-stage network that Shea's proof runs on, from Nil
+  Mamano's files, and adds hosting to it. It adds a checker, `hostSchedK`, that reads the table of hosts and
+  banks inside Lean, with a proof that a table it accepts is sound (`HostSched.ofTab_fitsR`). And it ends in an
+  end theorem, `XHost.engine_of_ginv_host`, of the same form as the one Shea's proof ends in, so his Fourier
+  chain runs on it with only its seam changed. Which parts are adapted from whose files is set out below.
+
+**The certificate that stacks them.** With exit frames and mutable sources, and every leftover piece kept in a
+bank, the U8 circuit needs 3,771 banks. With same-run hosting, 2,016 idle arrays host 4,092 pieces in each run,
+and 310 banks remain. The agents generated the host table and the Lean data with programs adapted from those
+of the hosting result on Kothe's circuit, and Lean's kernel checks the table with `hostSchedK`. The network modules of
+`Work/XHost` are the same files, byte for byte, in both hosting results.
+
+**Whose work it rests on.** Most of what this result stands on is other people's, and the credit for it is
+theirs:
+
+- **Jeremy Kothe** made the U8 circuit, from another circuit of his and the line of circuits before it. The
+  community's notice credits its last step, the "triangle-hybrid" construction, to NewBArch, and the driver
+  and composition of that step to ColdWitness/icekylinx.
+- **Chafik Boukhalfa** made the frame changes that the U8 circuit carries from that other circuit of Kothe's.
+- **icekylinx** made the "gauge44" construction that the U8 circuit is built on.
+- **Kothe, DreamingOfClouds and icekylinx**, among others, made the community's helpers that end early, at
+  low frames, in the line of circuits the U8 circuit grows from. **Kothe and DreamingOfClouds** wrote the
+  community's lemmas about where a helper may end, on which the charge for exit frames rests.
+- All of them built on the earlier work that the community's notices name; copies of the notices are in
+  `third-party/CrocSwap-integer-mult-bounds/`.
+- **Jeremy Kothe** also made the circuit of Shea's proof, "atm3" in the community's repository, on which the
+  smaller hosting result is built.
+- **Ryan Shea** turned Kothe's circuit into a Lean proof of OpenAI's statement: the conversion pipeline, the
+  generators and the Lean instantiation, in
+  [shea256/fourier-transform-below-nlogn](https://github.com/shea256/fourier-transform-below-nlogn), folder
+  `lean/complex588`. His proof is the record this result improves, and the new files, those of the U8 circuit
+  included, are laid over his tree.
+- **Nil Mamano** published, in his submission to the leaderboard, the Lean files that Shea's tree takes over
+  for the nine-stage network: the extension of the engine for *entrance gauges* (the "gauged" interface
+  `GInvE`), the network itself, written by his generator, its bank lemmas and bank-table checker, its end
+  theorem `GX.engine_of_ginv_401`, and the templates of the Fourier chain. An entrance gauge lets a helper
+  enter a run already part of the way up its climb, so that its leftover piece is smaller. The hosting proof is
+  built from these files (next paragraph).
+- **Dugongue** made the entrance gauges and the banks of that network; **Zhihao Chen** (jacklightChen) its
+  compressed nine-stage layout with its banks and padding; **lydakis** the bank patterns; and **DaysSky** the
+  bridged layout it starts from.
+- **DaysSky** also proposed hosting helpers in idle arrays, with a written proof that the Lean proof follows
+  for hosts within one run, and laid out the integer programme that chooses the hosts.
+- **Zhihao Chen** also wrote the argument for mutable sources in the community's terms.
+- **The authors of CrocSwap/integer-mult-bounds** built the line of circuits that both circuits belong to.
+- **OpenAI** made the cost model and the statement, and the step from the lengths 2^k to every length.
+
+Two parts of the community's own figures for the U8 circuit are not part of this result. One is its
+*owner maps*, which say which array keeps each helper's leftover piece: Hao Yan's controller with sixteen
+copies of the data, which Kothe applied to the U8 circuit, and the newer owner packings of Chafik Boukhalfa and
+Jonathan Capalbo. The other is DreamingOfClouds' bit supplier, the second ingredient of the community's figure
+for integer multiplication. My certificates take from the U8 circuit only its additions and their frames; they
+keep the leftover pieces in the banks of Shea's pipeline and, for the fifth result, in the agents' host table.
+
+**What the hosting proof takes from whose files.** The hosted network is Mamano's nine-stage network with
+hosting added. `HDef`, `HStage`, `HGeom` and `HCert` are copies of its files `GNetDef`, `GNetStage`, `GGeom`
+and `GNetCert` with hosting added, and `HEnd` adapts its end theorem (`Work/Bridge401/End.lean` of Shea's
+tree), which runs on my engine. The step that moves a helper's leftover piece into its host is `host_adapt`,
+`host_pad`, `slot_frames` and `host_frames` in `Work/XHost/Frames.lean`. They are adapted from the bank lemmas
+`bank_adapt`, `bank_pad` and `bank_frames` of the same files, with the host treated as a bank whose climb starts
+and ends at the host's own frames. The checker `hostSchedK` is modelled on the bank-table checker of those
+files and copies its lemmas about lists. Each file says in its first lines what it copies, and
+[NOTICE](NOTICE), section 9, lists them.
+
+What is mine:
+
+- the original Lean engine of this repository, which Shea's and Mamano's proofs run on: the *frame lemma*,
+  which widens the frames an array may use, and the *generalised engine*, which accepts those frames (section 5
+  has both); the certificate checker of the second result; and the lemma `core_nested` that the entrance gauges
+  build on;
+- the Lean proofs of exit frames (`XExit`, `Work/KLow`), of mutable sources (`Work/XMut`) and of the two
+  together (`Work/KMX`);
+- for same-run hosting: adding hosting to Mamano's network, the checker `hostSchedK` and its soundness proof,
+  the host tables and the instances that use them (`U8XMHH`, and `C588MHH` on Kothe's circuit);
+- the generators that wrote the new Lean files, the smaller results of the table below, and the checks.
+
+The agents wrote the proofs under my direction ("Who made it, and how", below).
+
+**Two lemmas that the checked results do not use.** Before the network was built, the agents proved two
+lemmas, L1 and L2, as a plan for the proof. They are compiled separately, on a Mac, in
+`community/c588mhh/supporting/`, and no module of either hosting result imports them. **L1 is not new**: it restates, in
+the form the plan needed, what Shea's tree already proves (`B401.gauged_step`, `B401.gauged_Wn`,
+`GX.entW_spec`, `GX.entW_form`, `GX.gauge_step`), on Dugongue's entrance gauges, Mamano's files and my
+`core_nested`. L2 shows that a relabelling of addresses, a step the engine counts as free because it is one
+pass over the data, can carry a helper's leftover piece into the part of its host's frame that the host has
+not yet climbed. The checked result does this with `host_adapt` instead, adapted from Mamano's files as above.
+
+**How it was checked, and the limits.** Every check below passed, on Linux machines of Google's Colab service
+(8 processors, 51 GiB):
+
+- Lean's kernel accepted the 32 new modules, compiled from source on the second Colab machine over Shea's tree
+  with the files of the 1.3869e-3 result on the U8 circuit. The two theorems depend only on the three standard
+  axioms (`propext`, `Classical.choice`, `Quot.sound`).
+- `tools/Compare.lean` printed `RESULT: PASS`: the theorem proved is OpenAI's own statement file,
+  `UniformFourier.lean`, with only the exponent and seven names changed. The same comparison against a statement
+  one unit stronger fails, as it must.
+- The official comparator, the program that OpenAI's repository uses, accepted the proof with both of its
+  kernels (nanoda and Lean's). It rejected the statement one unit stronger.
+- The agents re-created the leaderboard's verifier offline, on the proof packaged as a submission like the
+  entries the leaderboard holds, and its three phases passed: the Lean check, which compiled the packaged
+  proof from source, the audit of the axioms, and the nanoda kernel.
+- A control inside Lean: a copy of the host table with one entry off by one is rejected by the checker.
+- Two agents whose only job was to refute the result checked it on their own. One compared the statement with
+  OpenAI's file, checked the theorems in Lean in its own copy of the tree and ran the comparator again. The
+  other compiled the 32 modules again from the uploaded sources on the first Colab machine, over its own copy
+  of an earlier build of the 1.3869e-3 result; all compiled, the comparison passed, the stronger statement
+  failed and the axioms were the standard three. Neither found a fault.
+
+The limits are properties of how it was built and checked:
+
+- The proof lives in Shea's Lean tree, not in this repository's own Lean project. This repository carries the
+  new files as a package, `community/u8xmhh`, which is laid over his tree after `community/u8xm`; the two need
+  one line added to the tree's `lakefile.lean`.
+- Every Lean run of the result was on Colab machines. Only a first run of the host-table checker, on the
+  generated table and on a copy with one entry off by one, was on a Mac.
+- The comparator's sandbox needs a feature of the Linux kernel (Landlock) that those machines lack, so it ran
+  inside a stand-in. Its build found the compiled files up to date, so it checked them with both kernels
+  without compiling them again; the verifier's re-creation and the second agent's rebuild compiled them from
+  source (Mathlib came already compiled).
+- The re-creation of the verifier used the agents' own scripts inside the same stand-in. The verifier's own
+  controller was never run, and nothing was submitted to the leaderboard.
+- The build ran over a second build of the 1.3869e-3 result that the agents made on the same machine; the logs
+  of that second build are not in the package, apart from the lines that show its comparator verdicts.
+- Some comments inside the new seam file are wrong: they name lemmas of the 1.3869e-3 result that the code
+  does not call. The package's `README.txt` lists them, and the rebuilding agent's log shows which lemmas the
+  proof does reach.
+- Two comments in its new files, and one in the exit-frame files of the U8 results, credit the U8 circuit
+  with an earlier, inexact list that names the community's owner maps among its makers. The credits above are
+  the right ones; each package's `README.txt` names those comments.
+- No person outside this project has reviewed the new proofs, and I would welcome a line-by-line review.
+
+"The results of 13 October in detail", just below, has every check with its log, and [VERIFY.md](VERIFY.md),
+section 11, has the commands.
+
+### The results of 13 October in detail
+
+There are eight new things. The first is the result; the others are what it needs and what came with it.
+
+**1. The theorems of the fifth result, and their checks.**
+
+| Theorem | What it is about | Exponent z |
+|---|---|---|
+| `OAI.PowerSaving.transform_mainU8XMHH` | Fourier transform of every length | 1 - 16197705/10^10 |
+| `OAI.PowerSaving.convolution_mainU8XMHH` | convolution | 1 - 16197705/10^10 |
+
+The statement file is `Work/FourierU8XMHH/UniformFourierChallenge.lean`. It is OpenAI's `UniformFourier.lean`
+with the exponent `1 - 1/10^13` replaced by `1 - 16197705/10^10` and the suffix `U8XMHH` put on the seven names
+that carry the exponent (`decimalExponent`, `decimalTime`, `TimeBounds`, `DFTGoal`, `ConvGoal`,
+`transform_main`, `convolution_main`). The rest is OpenAI's.
+
+The checks, on the second Colab machine unless the line says otherwise:
+
+| Check | Result | Log, under `community/u8xmhh/` |
+|---|---|---|
+| build: the 32 new modules with Lake, in six steps, over Shea's tree with `community/u8xm` built | every step ended without error (15 minutes, 8.6 GB at most); then every target up to date | `logs/colab/build.out` |
+| axioms of the two theorems and of the program behind them | `propext`, `Classical.choice`, `Quot.sound` only | `logs/colab/axioms.log`, and `logs/colab/axioms-glue.log` for the host-table check and the end theorem |
+| `tools/Compare.lean` against OpenAI's statement with the exponent of the table above | `RESULT: PASS` | `logs/colab/compare-pos.log` |
+| the same against the statement one unit of 10^-10 stronger | `RESULT: FAIL`, as it must | `logs/colab/compare-neg.log` |
+| the two statement files against the agents' own derivation from OpenAI's file | the same, byte for byte | `logs/colab/build.out` |
+| a copy of the host table with one entry off by one | Lean's kernel proves that `hostSchedK` rejects it | `logs/colab/hsneg.time`, `logs/colab/ax/HsU8XMHHNeg.lean` |
+| the sources scanned for `sorry`, `admit` and other forbidden words | only the placeholders of the statement files | `logs/colab/sorry-grep.txt`, `admit-grep.txt`, `forbidden-grep.txt` |
+| official comparator, with a stand-in for its sandbox; its build found the compiled files up to date | nanoda and Lean's kernel accept: `Your solution is okay!` (15 minutes, 7.0 GB) | `logs/colab/cmp/fsb-U8XMHH-pos.log`, `logs/colab/cmp.out` |
+| official comparator, one unit stronger | rejected | `logs/colab/cmp/fsb-U8XMHH-neg.log` |
+| the leaderboard's verifier, re-created offline with the agents' scripts in the same stand-in, on the proof packaged as a submission | its three phases pass: the Lean check, compiling the packaged proof from source (68 minutes, 8.4 GB); the axiom audit; nanoda and Lean's kernel (14 minutes) | `logs/colab/bos-H.out`, `logs/colab/bos-H/` |
+| Python checks on the Mac before the build: an independent audit of the generated tables, the placement and the rate | pass | `logs/mac-preflight/` |
+| static checks on the Mac (`tools/community/package_check.py`), as for every package | pass | `logs/static-check.txt` |
+| an agent checks the statement on its own, in its own copy of the tree on the same machine: OpenAI's files, the differences of the statement files, the theorems in plain Lean, the comparison and the comparator again | all as above; the comparator accepted, and rejected one unit stronger | `logs/skeptic-statement/` (`report.txt` is its written verdict; `logs/out/check.log`, `logs/cmp/`) |
+| an agent compiles the 32 modules again from the uploaded sources on the first Colab machine, one per step, over its own copy of an earlier build of `community/u8xm` | all compiled; `RESULT: PASS`, one unit stronger `RESULT: FAIL`; standard axioms; the proof reaches the end theorem of the hosted network and the host-table checker; it did not run the comparator | `logs/skeptic-rebuild/` (`report.txt`; `logs/build.out`, `compare-pos.log`, `compare-neg.log`, `uses.log`) |
+| `community/u8xm`, laid under it, built a second time on the second machine | its comparator accepted it, and rejected one unit stronger | `logs/colab/setup.out` (first lines); the logs of that build are not shown |
+
+**The same two proofs on Kothe's circuit** (`community/c588mhh`, 1.5699305e-3). The first hosting result, built
+on the first Colab machine the same afternoon, has these theorems:
+
+| Theorem | What it is about | Exponent z |
+|---|---|---|
+| `OAI.PowerSaving.transform_mainC588MHH` | Fourier transform of every length | 1 - 15699305/10^10 |
+| `OAI.PowerSaving.convolution_mainC588MHH` | convolution | 1 - 15699305/10^10 |
+| `OAI.PowerSaving.WHT.wht_main_block_C588MHHx` | Walsh-Hadamard transform, lengths 2^k | 1 - 15699306/10^10 |
+
+The statement file of the first two is `Work/FourierC588MHH/UniformFourierChallenge.lean`, made the same way
+with the suffix `C588MHH`. The third theorem is stated in the form of this repository's published
+Walsh-Hadamard statement, with its exponent and its name changed. Its proof is one term: my theorem
+`BlockWHT.wht_main_of_engine` applied to the kernel program of the first two.
+
+The checks of the first two, on the first Colab machine unless the line says otherwise:
+
+| Check | Result | Log, under `community/c588mhh/` |
+|---|---|---|
+| build: the 49 new modules, one at a time with plain `lean`, over Shea's tree with `community/c588m` built | the last compile of every module ended without error (earlier rounds, while the agents fixed errors, are kept) | `logs/colab/r2.summary` to `logs/colab/r14.summary` |
+| axioms of the two theorems and of the program behind them | `propext`, `Classical.choice`, `Quot.sound` only | `logs/colab/r14-Work.FourierC588MHH.Axioms.log` |
+| `tools/Compare.lean` against OpenAI's statement with the exponent of the table above | `RESULT: PASS` | `logs/colab/final-C588MHH-compare-pos.log` |
+| the same against the statement one unit of 10^-10 stronger | `RESULT: FAIL`, as it must | `logs/colab/final-C588MHH-compare-neg.log` |
+| official comparator, with a stand-in for its sandbox; its own Lake build compiled the hosted modules again | nanoda and Lean's kernel accept: `Your solution is okay!` (14 minutes, 8.6 GB) | `logs/colab/final-C588MHH-cmp-pos.out` |
+| official comparator, one unit stronger | rejected | `logs/colab/final-C588MHH-cmp-neg.out` |
+| control: the hosted network with an empty host table | `RESULT: PASS` at 1 - 13552606/10^10, the figure without hosting; one unit stronger fails; comparator accepts, and rejects one unit stronger | `logs/colab/final-C588MH.out`, `logs/colab/cmp-C588MH.out` |
+| static checks on the Mac (`tools/community/package_check.py`): checksums; the statement against OpenAI's, with the notice of lines 3 to 12 removed; the notice present; the negative statement; the comparator configurations; the module list; no forbidden word in the Lean code; every check of `result.json` either passed with a log inside the package or marked "not shown" or "not run" | pass | `logs/static-check.txt` |
+| an agent copies the sources afresh and compiles the 32 modules of the result into its own build folder | all compiled; `RESULT: PASS`, one unit stronger `RESULT: FAIL`; standard axioms, also for `XHost.engine_of_ginv_host`; it did not run the comparator | `logs/rebuild-skeptic/a.summary`, `cmp-pos.log`, `cmp-neg.log`, `ax.log` |
+| the lemmas L1 and L2, which the result does not import, compiled on the Mac | no `sorry`, standard axioms | `supporting/L1/logs/`, `supporting/L2/logs/` |
+| two agents, one per lemma, rebuild L1 and L2 on the Mac from their own copies, with the files of Shea's tree they need taken from his tree | all compiled, standard axioms; for L2 also an audit module of its own, for L1 a link to the network's windows and an exact check of the seam | `supporting/L1/skeptic/`, `supporting/L2/skeptic/` (`report.txt` in each is its written verdict) |
+| negative control of the host-table checker inside Lean | ran on the Mac on an earlier version of the data files | not shown |
+| the leaderboard's verifier (bigospeedrun/verifier) | not run on this result | not run |
+
+The Walsh-Hadamard theorem was built and checked on the second Colab machine: 21 modules compiled, standard
+axioms, `tools/Compare.lean` (and its failure one unit stronger), and the official comparator with both kernels
+(and its rejection one unit stronger). Its logs are in `community/wht-c588mhh/logs/colab/` (`run.out` prints
+`ALL CHECKS PASSED`; `cmp.out` has the comparator runs).
+
+**2. Same-run hosting: what the proof says.** A run of the circuit is a product of simple matrices that act on
+the arrays, in nine stages. Between stages, each helper still has a leftover piece of its climb to the full
+frame. Shea's pipeline gives every such piece a place in a bank. But in each run, the data arrays sit idle
+during some of the stages: the nine-stage network in Shea's tree has 18 such idle stretches, and at the end of
+each the idle array still has a climb of its own to make. Hosting keeps a helper's leftover piece inside such
+an idle array instead of in a bank. A relabelling of addresses, which the engine counts as free, moves the
+piece into the part of the host's frame that the host has not yet climbed. The host's own climb then finishes
+with the piece inside it, and only the rest of that climb is paid. In the proof this is `host_adapt` and
+`host_pad` (`Work/XHost/Frames.lean`), adapted from Mamano's bank lemmas `bank_adapt` and `bank_pad`: a host is
+handled as a bank whose climb starts and ends at the host's own frames.
+
+The Lean proof in `Work/XHost` has these parts:
+
+- the roles of the arrays in a hosted stage, and a proof that no two pieces are given the same place
+  (`HRoles`); the hosted stage and its certificate (`HDef`, `HStage`, `HCert`), which are copies of Mamano's
+  `GNetDef`, `GNetStage` and `GNetCert` with hosting added; the frames of a host (`Frames`), adapted from his
+  bank lemmas;
+- the geometry of the 18 idle stretches (`HGeom`, a copy of the instance part of Mamano's `GGeom` with hosting
+  added);
+- host schedules (`HSched`) and the checker `hostSchedK` (`HSchedK`), which reads the host table and the bank
+  table inside Lean's kernel. It is modelled on the bank-table checker of Mamano's files and copies their
+  lemmas about lists. Its soundness, `HostSched.ofTab_fitsR`, turns any table it accepts into a proved
+  schedule, so a wrong table cannot pass;
+- the end theorem `XHost.engine_of_ginv_host` (`HEnd`). It has the same conclusion as Mamano's
+  `GX.engine_of_ginv_401`, and its file is adapted from his `Work/Bridge401/End.lean` in Shea's tree, which
+  is built on my engine. So the Fourier chain of `community/c588m` runs on it with only its seam changed
+  (`Work/FourierC588MHH`);
+- the instances. `U8XMHH`, the fifth result, is the certificate of `community/u8xm` with its host table; its
+  data, glue and Fourier chain are in `community/u8xmhh`, whose twelve network modules are the same files as
+  here. `C588MHH` is the certificate of `community/c588m` with its host table, and the control `C588MH` is the
+  same network with an empty host table.
+
+*Same-run* means that every piece is hosted by an array that is idle within the same run. Letting a piece wait
+in an array that is idle during the next run would give a little more and needs a change in the order of the
+network (open directions).
+
+What the two proofs do to Kothe's circuit, per run:
+
+| | Shea's conversion | mutable sources (`community/c588m`) | and same-run hosting (`community/c588mhh`) |
+|---|---|---|---|
+| sources | 112 | 112 | 112 |
+| helpers | 616 (112 of them copies of sources) | 504 | 504 |
+| banks | 5,040 | 4,032 | 111 |
+| saving, Fourier transform of every length | 1.2331685e-3 | 1.3552606e-3 | 1.5699305e-3 |
+
+And on the U8 circuit, per run:
+
+| | exit frames and mutable sources (`community/u8xm`) | and same-run hosting (`community/u8xmhh`) |
+|---|---|---|
+| helpers | 509 (504, and the 5 copies of sources that stay) | 509 |
+| hosted pieces | none | 4,092, in 2,016 idle arrays |
+| banks | 3,771 | 310 |
+| saving, Fourier transform of every length | 1.3868856e-3 | 1.6197705e-3 |
+
+The community's repository lists "whole-call hosting" among the steps its headline figure assumes. The Lean
+proof here is of hosting within one run, for this engine. It does not by itself check the community's own
+construction.
+
+**3. Mutable sources: what the proof says** (the package `community/c588m`, 1.3552606e-3). The engine checks
+that a run does the right thing and then undoes the run's side effects with an undo step derived from it. Before,
+it proved this under the rule that no step of the run writes a source, so that the sources come out of the run
+unchanged. The new modules drop that rule. The undo step then restores the sources together with the helpers.
+The proof needs only that no output feeds back into a source or a helper and that the run is invertible. It also
+checks that the undo step is legal where it stands: at the end of a run, the sources and the helpers it touches
+all stand at the same frame. The theorems are `XMut.dirt_fwdZ` and `XMut.dirt_bwdZ`
+(`Work/XMut/Dirt.lean`); the other six modules carry them through the checker and into Mamano's gauged
+interface.
+
+Without the copies, Kothe's circuit has 5,916 moves per run instead of 6,924. It breaks the old rule in 535
+places, by the exact Python check, and the old check inside Lean rejects it too (`community/c588m`, the negative
+controls), so the gain comes from the new proof and from nothing else. The package passed the same kinds of
+check as the hosting results, with its logs in `community/c588m/logs/colab/` (`mb-build.out`, `axioms.log`,
+`compare-fourier.log`, `compare-negative.log`, `cmp-A1.out`, `cmp-A2neg.out`,
+`68-Work.GCert.Data.C588MControls.log`, `source-scan.txt`).
+
+It is also, with the fifth result, one of the two packages on which the agents re-created the leaderboard's
+verifier. On a submission packaged like the entries the leaderboard already holds, they ran the verifier's three
+phases offline (the comparator's Lean check, the audit of the axioms and the nanoda kernel) with scripts of their
+own, inside the same stand-in sandbox as the comparator, and all three passed (`logs/colab/bos/`). The verifier's
+own controller, which needs sandboxing tools those machines lack, was not run. Two agents also tried to refute the
+result. One rebuilt all 70 modules on the second Colab machine against that machine's own build of Shea's
+tree; every module compiled, the comparison passed on its build and failed one unit stronger, and the axioms
+were the standard three (`logs/skeptic-rebuild/`); it did not run the comparator. The other compared the
+statement files with OpenAI's file and read the logs; it did not run Lean, and its written verdict is the only
+record of its check (`logs/skeptic-statement/report.txt`).
+
+**4. The supporting results, with their checks and their gaps.** Every package has a `result.json` that lists
+each check with its status. A check marked "pass" names its log inside the package; any other check is marked
+"not shown" (it ran, but its log is not in the package or has no verdict) or "not run". The static checks of
+`tools/community/package_check.py` refuse a package that breaks this rule.
+
+| Package | What is proved | Saving | Passed, with logs | Not done or not shown |
+|---|---|---|---|---|
+| `community/c588mhh` | Fourier transform of every length: Kothe's circuit with mutable sources and same-run hosting | 1.5699305e-3 | all of the second check table of item 1, with its logs | not shown: a negative control of the host-table checker on the Mac; not run: the leaderboard's verifier |
+| `community/wht-c588mhh` | Walsh-Hadamard transform on the kernel program of `c588mhh` | 1.5699306e-3 | build, axioms, comparison and its failure one unit stronger, comparator accepted and rejected one unit stronger (`logs/colab/`) | not run: an independent check; the leaderboard's verifier |
+| `community/u8xm` | Fourier transform of every length: the U8 circuit with exit frames and mutable sources (5 of the 112 copies kept) | 1.3868856e-3 | build, axioms, comparison and its failure, comparator accepted and rejected, negative controls in Lean (`logs/colab/lake.out`, `checks2.out`, `cmp/`) | not shown: a second build by the agents and two independent agents' checks of it, which found no fault (their logs are not in the package); not run: the leaderboard's verifier |
+| `community/c588m` | Fourier transform of every length: Kothe's circuit with mutable sources | 1.3552606e-3 | all of item 3: the checks of the build, the re-created verifier (`logs/colab/bos/`), an agent's rebuild of the 70 modules with the comparison and its failure (`logs/skeptic-rebuild/`), and an agent's written comparison of the statement (`logs/skeptic-statement/report.txt`) | not run: the verifier's own controller; the comparator on the agent's rebuild |
+| `community/wht-c588` | Walsh-Hadamard transform on the kernel program of `c588m` | 1.3552607e-3 | build, axioms, comparison and its failure, comparator accepted and rejected (`logs/colab/c588m/`) | not run: an independent check; the leaderboard's verifier |
+| `community/u8x` | Fourier transform of every length: the U8 circuit with exit frames | 1.2704023e-3 | build, axioms, comparison and its failure, comparator accepted and rejected (`logs/colab/direct.out`, `checks.out`, `cmp/`); two controls in Lean (`controls.log`; their file was compiled on the Colab and is not in the package) | not shown: a second build by the agents and two independent agents' checks of it, which found no fault (their logs are not in the package); not run: the leaderboard's verifier |
+| `community/c588-repack` | Fourier transform of every length: Shea's certificate with a repacked bank table | 1.2383291e-3 | build, axioms, comparison and its failure, comparator accepted and rejected (`logs/colab/`); an agent's re-check of the built tree, mounted read-only: up to date, standard axioms, the exponent, the comparison (`logs/colab/skeptic-v-c-pack/vcp2.log`, `compare-pos.log`) | not shown: that agent's comparison one unit stronger, which did not finish; not run: the leaderboard's verifier |
+| `community/wht-c588` | Walsh-Hadamard transform on Shea's kernel program and on the repacked one | 1.2331686e-3 and 1.2383292e-3 | build, axioms, comparison and its failure, comparator accepted and rejected (`logs/colab/`); on Shea's kernel program, an agent's rebuild with the comparison and its failure (`logs/colab/skeptic-v-c-wht/base.log`) | not shown: that agent's check on the repacked kernel program, stopped at its time limit; not run: the leaderboard's verifier |
+
+- **Exit frames** (`u8x`, `u8xm`, and under the fifth result). In the engine every helper climbs to the full frame at the end of a run, so
+  that the undo step can restore it. The community's newer circuits let some helpers stop earlier, at an *exit
+  frame* of lower dimension, and charge for the climb that the undo step then needs. The agents wrote that theory
+  in Lean (`XExit`, `Work/KLow`) and applied it to the community's U8 circuit: 126 helpers end at exit frames of
+  dimension 4 or 8. `Work/KMX` joins it with mutable sources. Five source copies stay. In the U8 circuit, five
+  of the eight *central totals* (sums formed in the middle of a run that every target reads) sit in source
+  arrays, and the engine's step that reads those totals reads them only from helpers. Ryan Shea's notes name
+  exit frames as the next step for the Lean route, and the charge for them follows the community's written
+  lemmas about where a helper may end. These two packages, and the fifth result laid over `u8xm`, need one line
+  added to the lakefile of Shea's tree (VERIFY.md, 11.2c).
+- **The repacked bank table** (`c588-repack`). The circuit keeps its 112 copies. At the end of every unit each
+  bank climbs whatever room its pieces did not fill, and that *padding* is paid. An integer programme found a
+  table with 5,009 banks whose padding costs the least possible, by the agents' exact count, and a sharper
+  inequality in the step that turns the cost of one unit into the exponent (`term_le4`, in a new module
+  `Moment4.lean`) takes the figure to its exact limit for that table. It replaces 38 of Shea's generated files,
+  so it needs its own copy of his tree.
+- **The Walsh-Hadamard corollaries** (`wht-c588`, `wht-c588mhh`). Each is the one-term corollary of item 1 on
+  another kernel program. None has been built on the kernel program of the fifth result.
+
+**5. The programs, and a script to swap the certificate.** `tools/community/` holds the programs that generated
+the packages of the mutable-sources result and their inputs: `c588m-gen` regenerates all 147 Lean and
+comparator files of `community/c588m` byte for byte (`REPRODUCE.sh`, a few seconds on a Mac); `mutable` re-derives
+the circuit without the copies from Shea's generated data, with its checks and controls; `repack` remakes the
+bank table of item 4. The programs that wrote the hosting files and chose the host tables are inside the
+packages, in `community/c588mhh/generators/` and `community/u8xmhh/generators/`; regenerating the packages from
+them was not re-run. A better certificate in
+the same form can replace the headline one with `tools/swap-certificate.sh`, which checks the new package,
+installs it next to the old one and changes the text only when every check has passed with a log (VERIFY.md,
+11.5). I moved the headline from `community/c588mhh` to `community/u8xmhh` by hand: the script would also have
+renamed the many places that name `community/c588mhh` itself, which stays.
+
+**6. The account of the day, and the open directions.**
+[notes/fifth-result-story.md](notes/fifth-result-story.md) tells how the result was found: a survey of the
+community's work, a ladder of steps that a Lean proof must pay for and the community's figures assume, the
+three proofs that climbed it, and what failed and why, including the claims of the day that turned out wrong.
+It keeps the figures of the afternoon, when the fifth result was the hosting result on Kothe's circuit; a note at
+its top says how the full stack was built that night.
+[notes/open-directions-3.md](notes/open-directions-3.md) lists what may come next, each with a first experiment.
+
+**7. What is not claimed for the fifth result.**
+
+- **The circuit is not mine, and neither are the ideas of the three steps.** The U8 circuit is the
+  community's, put into Shea's Lean tree; exit frames are the community's, with their charge from
+  its written lemmas; mutable sources had Zhihao Chen's written argument; hosting is DaysSky's idea. What is
+  new is the Lean proofs of the three steps, and the certificate that uses them.
+- **It is not the community's figure, and it is below it.** The community's figure has two parts, and the one
+  of the same kind as my Fourier saving is its *complex side*. Its selected figures on 13 October 2026 had
+  complex sides of 1.6644e-3, for the circuit of Kothe's that the U8 circuit is built from, and then
+  1.6647e-3, for the U8 circuit with Capalbo's owner packing; its newest circuits were priced higher still,
+  around 1.675e-3. Its own price of Kothe's earlier circuit has a complex side of 1.6049e-3. Those figures
+  assume several steps that have no Lean proof; exit frames, mutable sources and hosting within one run were
+  three of them. The fifth result is compared only with figures that have a Lean proof.
+- **Nothing here is about integer multiplication.** Section 2, point 1, holds for this result as well.
+- **It has the limits of every result here:** it is a statement about growth (section 2, point 5), and its
+  Fourier saving sits 1/10^10 below that of its kernel program (point 4).
+- **The builds ran over trees that already held compiled modules**: Shea's, and for the fifth result those of
+  `community/u8xm`, from a second build of it whose own logs are not in the package. The offline re-creations
+  of the leaderboard's verifier, on `community/c588m` and on the fifth result, and the independent rebuild of
+  the fifth result compiled the new modules from source; Mathlib came already compiled.
+- **The figures of later steps are prices or what-ifs.** The figures in the open-directions note (1.6256506e-3
+  without the last five source copies and 1.6293239e-3 with hosting across runs, on the U8 circuit; 1.5785076e-3
+  with hosting across runs on Kothe's circuit) are computed by Python programs for constructions whose Lean
+  proofs are not written.
+
+**8. Whose work it is, once more, in one table.** Section 9, "For the fifth result", gives the pull request or
+file behind each line.
+
+| Who | What |
+|---|---|
+| Jeremy Kothe | the U8 circuit and the line of circuits it grows from; the circuit of Shea's proof ("atm3"), with the predecessors its notices name; with DreamingOfClouds, the lemmas about where a helper may end, on which the charge for exit frames rests |
+| Chafik Boukhalfa | the frame changes that the U8 circuit carries |
+| icekylinx | the "gauge44" construction that the U8 circuit is built on |
+| DreamingOfClouds | with Kothe, icekylinx and others, the helpers that end early in the line of the U8 circuit; with Kothe, the lemmas about where a helper may end |
+| NewBArch, ColdWitness/icekylinx | the triangle-hybrid step of the U8 circuit, as the community's notice credits it |
+| Ryan Shea | the conversion pipeline, the generators, the bank and seam pipeline and the Lean instantiation of Kothe's circuit, whose tree the U8 results are laid over too; the lemmas that L1 restates; the notes that name exit frames as the next step for the Lean route |
+| Nil Mamano | the Lean files of the nine-stage network that Shea's tree takes over from his submission to the leaderboard: the gauged extension of the engine (`GInvE`), the network (`GNetDef`, `GNetStage`, `GGeom`, `GNetCert`), the bank lemmas (`bank_adapt`, `bank_pad`, `bank_frames`), the bank-table checker, the end theorem `GX.engine_of_ginv_401`, and the Fourier chain templates. The hosted network copies or adapts these files |
+| Dugongue | the entrance gauges and the banks of that network |
+| Zhihao Chen (jacklightChen) | the compressed nine-stage layout with its banks and padding; the written argument for mutable sources in the community's terms |
+| lydakis | the bank patterns |
+| DaysSky | the bridged layout the network starts from; hosting helpers in idle arrays, with the written proof that the Lean proof follows for hosts within one run; the layout of the integer programme that chooses the hosts |
+| the authors of CrocSwap/integer-mult-bounds | the line of circuits both circuits belong to, and the earlier work their notices name |
+| OpenAI | the cost model, the statements and the step to every length |
+| me, with the agents | the original Lean engine these proofs run on; the Lean proofs of exit frames, of mutable sources and of the two together; for same-run hosting, adding hosting to Mamano's network, the checker `hostSchedK` and its soundness proof, the host tables and the instances (`U8XMHH`, `C588MHH`); the generators, the certificates, the repacked bank table, the Walsh-Hadamard corollaries and the checks |
+
+Not in this result, though the community's own figures for the U8 circuit use them: the owner maps of Hao Yan,
+Kothe, Chafik Boukhalfa and Jonathan Capalbo, and DreamingOfClouds' bit supplier ("Whose work it rests on",
+above).
+
+## What was new in the fourth revision (2026-10-10)
+
+**The fourth result.** The saving proved on 10 October 2026 was 8.7625e-4, for two statements:
 
 - the Fourier transform of every length, with z = 1 - 8762478/10^10; the file that states it also states
   convolution, and that is proved as well;
 - the Walsh-Hadamard transform of the lengths n = 2^k, with z = 1 - 8762479/10^10. That is 1.1723 times the
   7.4745e-4 of my second result (+17.2 %).
 
-This is the fourth result of this repository. The three earlier ones are still here and still stand
-(section 1):
+Both are proved in this repository's own Lean project. The file that states the Fourier theorem is OpenAI's own
+statement file, which they call a challenge file, with the exponent replaced (section 1 names the two other
+differences, a comment and a suffix on seven names).
 
-| Result | What is computed | Saving | Date |
-|---|---|---|---|
-| fourth | Fourier transform of every length, and convolution | 8.762478e-4 | new on 10 October 2026 |
-| fourth | Walsh-Hadamard transform, lengths 2^k | 8.762479e-4 | new on 10 October 2026 |
-| third | Fourier transform of every length, and convolution | 7.474546e-4 | published here on 9 October 2026 |
-| second | Walsh-Hadamard transform | 7.474547e-4 | published here on 9 October 2026 |
-| first | Walsh-Hadamard transform | 5.399225e-4 | published here on 9 October 2026 |
-
-**How it was checked, and the limits.** Every proof here is checked by Lean's kernel, the part of Lean that
-accepts or rejects a finished proof. The file that states the Fourier theorem is OpenAI's own statement file,
-which they call a challenge file, with the exponent replaced (section 1 names the two other differences, a
-comment and a suffix on seven names). The new proofs
-have not yet had a line-by-line human review, and I would welcome one. Section 3 has every run and its limits.
-Section 2 says what is not claimed; please read it before quoting the number.
-
-**Who made it, and how.** I built this on 8, 9 and 10 October 2026 with a team of AI agents (Claude) that I
-directed: the first result in about a day, the second in the hours after it, the third later the same day, the
-fourth on the day after. I set the goals, chose which ideas to pursue, and decided at each stage what to do
-next. The agents wrote the Lean proofs, designed the network, found the certificate (the data file that lists
-the additions of its circuit) by computer search, and audited one another's work. Several of the design ideas
-were found and published independently by other people during the same hours (section 4).
-
-**This is not an OpenAI project.** OpenAI did not write, review or endorse it. Three kinds of their material
-are here:
-
-- The 89 files under `OAI/` are OpenAI's, unmodified.
-- Under `Work/Fourier/` and `Work/FourierE8/` there are copies of OpenAI's files with changes. Each says so in
-  its first lines, and [NOTICE](NOTICE), section 7, lists them.
-- The name of the Lean (Lake) package, `OAI`, and the namespace `OAI.PowerSaving` are theirs. They are kept
-  only because the new modules extend their development.
-
-**Where the improvement comes from.** OpenAI's proof reduces the saving to a finite network: a fixed number of
+**Where the improvement came from.** OpenAI's proof reduces the saving to a finite network: a fixed number of
 working copies of the data (*arrays*), each to be transformed along a fixed number of directions, with a
 schedule that needs fewer steps than the plain one. I call one such network a *unit*, and the program for the
-lengths 2^k that is built on it the *kernel program*. The new result comes from a new and much smaller unit,
+lengths 2^k that is built on it the *kernel program*. The fourth result came from a new and much smaller unit,
 found by computer search on 10 October 2026. It has 1,263 arrays with 45 directions each (in the words used
 below, a label space of dimension 45). The unit of the second and third results has 14,692 arrays with 110
 directions each. The Fourier theorem is the same kernel program carried to every length; its saving is
@@ -61,15 +951,13 @@ smaller by 1/10^10.
 **Whose work it rests on.** The step from the lengths 2^k to every length is OpenAI's reduction, repeated here
 with one constant changed. The helper circuit of the second and third results, that is the scheme of additions
 between their arrays, was made by the contributors of the public repository CrocSwap/integer-mult-bounds, whom
-I call *the community*. Three devices in the new circuit are other people's too. The sections "Whose ideas the
-new unit uses", "Whose reduction this is" and "Whose circuit this is" give the credit, and
+I call *the community*. Three devices in the circuit of the fourth result are other people's too. The sections
+"Whose ideas the new unit uses", "Whose reduction this is" and "Whose circuit this is" give the credit, and
 [RELATED-WORK.md](RELATED-WORK.md) has the credits and the relation to other work.
 
-**Where to look next.** Section 1 has the exact statements. Section 2 has what is not claimed. Section 3 and
+**Where to look.** Section 1 has the exact statements. Section 2 has what is not claimed. Section 3 and
 [VERIFY.md](VERIFY.md) have the checks and how to repeat them. Section 9 has the dates, commits and outside
 sources behind the statements, which are kept out of the prose.
-
-## What is new in the fourth revision (2026-10-10)
 
 There are five new things.
 
@@ -94,7 +982,7 @@ new Lean modules were compiled from source, in a tree that already held the comp
 results. On both, the comparator ran with a stand-in for its sandbox, not with the real one. Section 3 has
 the runs and their limits.
 
-As of 10 October 2026 this is the largest saving with a Lean proof that I know of, for either statement. Here
+As of 10 October 2026 this was the largest saving with a Lean proof that I knew of, for either statement. Here
 is what that rests on.
 
 - On that day the agents read the titles and descriptions of the newest pull requests of the community's
@@ -225,9 +1113,9 @@ All three revisions were published here on 9 October 2026. The searches of outsi
 made on that day.
 
 - **Third result: a machine-checked proof of OpenAI's own headline statement, with the saving 7.474546e-4.**
-  The statement is the discrete Fourier transform of every length. OpenAI's statement has 10^-13, and the
-  fourth result now has 8.7625e-4. The statement file is OpenAI's challenge file with the exponent replaced
-  (section 1). As far as I could find, the largest outside figures were these:
+  The statement is the discrete Fourier transform of every length. OpenAI's statement has 10^-13, the
+  fourth result has 8.7625e-4 and the fifth 1.6198e-3. The statement file is OpenAI's challenge file with
+  the exponent replaced (section 1). As far as I could find, the largest outside figures were these:
   - in an outside Lean proof of that statement: 3.2e-6
     ([danadran01/exact-dft-power-saving](https://github.com/danadran01/exact-dft-power-saving); not built
     here);
@@ -386,7 +1274,9 @@ revision", item 1).
 ## Whose circuit this is
 
 This section is about the circuit of the second and third results. The circuit of the fourth result is another
-one; its credits are at the top, under "Whose ideas the new unit uses".
+one; its credits are in "What was new in the fourth revision", under "Whose ideas the new unit uses". The
+circuit of the fifth result is the community's U8 circuit; its credits are in "What is new in the fifth
+revision".
 
 The helper circuit is the part of the network that decides the size of the saving. It is the additions by
 which pairs of data arrays exchange their contents, with the helper arrays (extra arrays that hold the
@@ -470,9 +1360,70 @@ computation the same circuit in a three-stage word gives 7.0091e-4.
 
 ## 1. The results
 
+### The lever: 1.7807e-3, on Shea's Lean tree (new on 2026-10-19)
+
+The lever gives the largest saving of this repository: 1.7807e-3 for the Fourier transform of every
+length and for convolution, with the full cut. Its proof is the package `package/leverF`, laid over Ryan Shea's
+tree `lean/complex588` after the package `package/u8x0hq` (VERIFY.md, section 12). The definitions that carry the
+exponent, in `Work/FourierL3945F/Goal.lean` and in the statement file
+`Work/FourierL3945F/UniformFourierChallenge.lean`:
+
+    def decimalExponentL3945F : ℝ := 1 - 17806935/(10^(10:ℕ))
+    def decimalTimeL3945F (n : ℕ) : ℝ := (n:ℝ) * (Real.log (n:ℝ)) ^ decimalExponentL3945F
+    def TimeBoundsL3945F (W : ℕ → ℕ) : Prop :=
+      let W' := fun n : ℕ => (W n : ℝ)
+      W' =O[atTop] paperTime ∧ W' =O[atTop] decimalTimeL3945F ∧ W' =o[atTop] nlogn
+    def DFTGoalL3945F : Prop := ∃ order solve W, DFTProgram order solve W ∧ TimeBoundsL3945F W
+    def ConvGoalL3945F : Prop := ∃ order solve W, ConvProgram order solve W ∧ TimeBoundsL3945F W
+
+    theorem OAI.PowerSaving.transform_mainL3945F : DFTGoalL3945F
+    theorem OAI.PowerSaving.convolution_mainL3945F : ConvGoalL3945F
+
+`DFTProgram`, `ConvProgram`, `paperTime` and `nlogn` are OpenAI's, unchanged. The other lever packages of the
+table "All the results" have the same form with their own suffix (the half cut on the same table: `package/leverB`,
+suffix `L3945H`, at 1 - 17581520/10^10). "What is new in the fifth revision", at the top,
+has the checks and the credits.
+
+### The sixth result: 1.6257e-3, on Shea's Lean tree (14 October 2026)
+
+The sixth result is `package/u8x0hq`, laid over Ryan Shea's tree (VERIFY.md, section 12), with the theorems
+`OAI.PowerSaving.transform_mainU8X0HQ` and `OAI.PowerSaving.convolution_mainU8X0HQ` at the exponent
+1 - 16256629/10^10, in the same form as above with the suffix `U8X0HQ`. "What is new in the fifth revision", at
+the top, has its checks.
+
+### The fifth result: 1.6198e-3, on Shea's Lean tree (new on 2026-10-13)
+
+The fifth result was the largest saving of this repository until the sixth: 1.6198e-3 for the Fourier transform of every length
+and for convolution. Its proof is not in this repository's own Lean project. It is the package
+`community/u8xmhh`, laid over Ryan Shea's tree `lean/complex588` after the package `community/u8xm`
+(VERIFY.md, section 11). The definitions that carry the exponent, in `Work/FourierU8XMHH/Goal.lean` and in the
+statement file `Work/FourierU8XMHH/UniformFourierChallenge.lean`:
+
+    def decimalExponentU8XMHH : ℝ := 1 - 16197705/(10^(10:ℕ))
+    def decimalTimeU8XMHH (n : ℕ) : ℝ := (n:ℝ) * (Real.log (n:ℝ)) ^ decimalExponentU8XMHH
+    def TimeBoundsU8XMHH (W : ℕ → ℕ) : Prop :=
+      let W' := fun n : ℕ => (W n : ℝ)
+      W' =O[atTop] paperTime ∧ W' =O[atTop] decimalTimeU8XMHH ∧ W' =o[atTop] nlogn
+    def DFTGoalU8XMHH : Prop := ∃ order solve W, DFTProgram order solve W ∧ TimeBoundsU8XMHH W
+    def ConvGoalU8XMHH : Prop := ∃ order solve W, ConvProgram order solve W ∧ TimeBoundsU8XMHH W
+
+    theorem OAI.PowerSaving.transform_mainU8XMHH : DFTGoalU8XMHH
+    theorem OAI.PowerSaving.convolution_mainU8XMHH : ConvGoalU8XMHH
+
+`DFTProgram`, `ConvProgram`, `paperTime` and `nlogn` are OpenAI's, unchanged. The packages of the same day with
+smaller savings (`community/c588mhh` at 1 - 15699305/10^10, `community/u8xm`, `community/c588m`,
+`community/u8x`, `community/c588-repack`) have the same form with their own suffix. The largest Walsh-Hadamard
+saving of the day is on the kernel program of `community/c588mhh`:
+
+    theorem OAI.PowerSaving.WHT.wht_main_block_C588MHHx :
+      ∃ solve W, WHTProgram solve W ∧ WHTTimeBoundsAt (1 - 15699306/(10:ℝ)^10) W
+
+with `WHTProgram` and `WHTTimeBoundsAt` as in the second result below; it is in `community/wht-c588mhh`.
+"The results of 13 October 2026", above, has the checks and the credits.
+
 ### The fourth result: both statements at 8.7625e-4 (new on 2026-10-10)
 
-The fourth result is the largest saving in this repository: 8.7625e-4, for the Walsh-Hadamard transform, for
+The fourth result is the largest saving proved in this repository's own Lean project: 8.7625e-4, for the Walsh-Hadamard transform, for
 the Fourier transform of every length and for convolution. The saving is 1 - z, where the program needs
 O(n (log n)^z) operations. The second and third results have 7.4745e-4.
 
@@ -657,6 +1608,13 @@ The two figures of the first result are two accountings of the same network.
 The second result exists in whole-block accounting only (section 2, point 3).
 
 ## 2. What is not claimed
+
+**The lever has a list of its own** ("What is new in the fifth revision", "What is not claimed for the lever"),
+and so does **the fifth result** ("The results of 13 October in detail", item 7). In short: the circuit
+is the community's U8 circuit, and the ideas of the three steps are the community's, Zhihao Chen's and
+DaysSky's; the proof lives in Ryan Shea's tree; the community's own
+figures are higher and rest on steps without a Lean proof; the leaderboard's own verifier was not run on it
+(the agents re-created its three phases offline); and points 4 and 5 below (the step to every length, and growth) hold for it too.
 
 0. **The fourth result has the limits of the second and third. Its figure is larger for one reason only: the
    unit.** Every point below holds for it with 8.7625e-4 in place of 7.4745e-4, except where a point says
@@ -1186,6 +2144,40 @@ the community's circuit because its scripts were not here. I had the agents tidy
 that six of the thirteen files are adaptations of the community's scripts. The earlier text called the
 generator the agents' own. This revision corrects that and names the authors (NOTICE, section 6).
 
+The fifth result came on 13 October 2026. By then the community had moved far past my fourth result, and Ryan
+Shea had carried Jeremy Kothe's circuit into a Lean proof of OpenAI's statement through my engine, with Nil
+Mamano's extension. I chose to build on that work rather than on my own circuit. I had the agents survey what
+the community had published and find which steps a Lean proof must pay for while the community's figures assume
+them away. Mutable sources was the cheapest of those steps to prove, so I put it first: the agents wrote the
+proof, generated the certificate without the copies, and built and checked it on Colab machines (1.3553e-3).
+Hosting was the largest step left, and the agents built it the same afternoon: two lemmas first, then the hosted
+network, its checker and the instance, with a control that had to reproduce the figure without hosting exactly
+(1.5699e-3). Exit frames, on the community's U8 circuit, came alongside: alone (1.2704e-3), then with mutable
+sources (1.3869e-3). That evening the agents put the hosted network on the U8 circuit too, and the three steps
+together gave the fifth result, 1.6198e-3. Other rounds of agents tried to beat the community's own figure
+meanwhile and found nothing lasting.
+[notes/fifth-result-story.md](notes/fifth-result-story.md) tells the whole day, with its failures and its
+corrections, and `tools/community/` has the programs.
+
+The sixth result came on 14 October 2026: the agents took the stack two steps further on the same circuit (no
+source copies left, and a tighter bank table with a quartic rate bound), and it gave 1.6257e-3. It was still
+below the community's own figure, so I kept it unpublished and turned to research. For five days I ran rounds of
+agents on the question behind all of this: is there a small unit with a much larger saving, or a proof that there
+is none? The moonshot waves of 14 and 15 October searched for one at blocks 2 to 5 in every game I could define;
+other rounds asked how the known savings work, which lower bounds can be proved and checked by machine, whether a
+unit can be shown to exist without being found, what other fields know, and, for two days, how to make real
+transforms faster on processors and FPGAs. No unit was found. [research/](research/README.md) holds all of it,
+with its programs, the claims that were refuted and the questions still open.
+
+The lever came out of one of those rounds. On the morning of 14 October I had the agents ask whether two ideas
+from fast matrix multiplication carry over: the laser method does not, but Schönhage's τ-theorem does, and with it
+came the observation that a block at the very start of an array can be traded for a smaller job. The agents found
+such heads in the community's circuit, proved Theorem 1G on paper and planned the Lean route, and I paused it for
+the research. On 19 October the agents priced it on the community's newest circuits, checked those circuits with
+the community's own programs, and found that the community's allocation programs could keep every head with one
+added condition. I had the four proofs built in parallel on five machines.
+[notes/how-the-lever-was-found.md](notes/how-the-lever-was-found.md) tells it, with what failed.
+
 ## 5. What is new in the second and third revisions, in plain words
 
 Words. An *array* is one working copy of the data, of length n. Its *frame* is the coordinate system it is
@@ -1364,6 +2356,15 @@ formulas and says where each of the four points above comes from.
 knew of then, with what is known, what it might give, how to start, and what already failed.
 [notes/open-directions-2.md](notes/open-directions-2.md) adds the leads of the fourth result: what the search
 of 2026-10-10 did not try and what may be promising.
+[notes/open-directions-3.md](notes/open-directions-3.md) adds the leads of the fifth result: the steps the
+community assumes that a Lean proof could still pay for (hosting across runs, the last source copies), with
+their prices, what the rounds of 13 October 2026 mapped about the copies and the helpers, and what the agents
+found about small units that evening and night, each finding with its status (the working notes behind it
+are now in [research/](research/README.md), where later results supersede some of its statements).
+[notes/open-directions-4.md](notes/open-directions-4.md) adds the leads of the lever: rules that are not
+separated, heads with hosted helpers in front of them, the other blocks of rank 48, the full cut, and the next
+circuits of the community. [research/open-problems.md](research/open-problems.md) lists the 122 open questions
+of the research since 10 October, each with a first experiment.
 
 - **Major leads.** The scratch copies above (what-if 1.28147e-3, no design known); a per-rank theorem for the
   generalised engine (its rate inequality at 4.058344e-4 is a Lean lemma already); the room under the
@@ -1392,12 +2393,43 @@ of 2026-10-10 did not try and what may be promising.
                   new certificate (namespace `GXD.E8`, instance `B2Ge8`; the final theorem is in
                   `SolutionB2Ge8x`), and FourierE8 (15 modules, the twin of Fourier with the suffix `E8`)
     comparator/   the comparator configurations
+    community/    the fifth result and the results that came with it, as packages laid over Ryan Shea's
+                  Lean tree (VERIFY.md, section 11): u8xmhh (the fifth result: the U8 circuit with exit frames,
+                  mutable sources and hosting, with its host table, generators, logs and the two independent
+                  checks), c588mhh (hosting on Kothe's circuit, with its host table, generators, logs, the
+                  independent rebuild and the lemmas L1 and L2), c588m (mutable sources,
+                  with its certificate, data, logs and two bank tables not built in Lean), u8xm and u8x (exit
+                  frames), c588-repack, wht-c588 and wht-c588mhh (the Walsh-Hadamard corollaries), scripts
+                  (apply, build and check, comparator, the leaderboard's packaging),
+                  base-logs (the build of Shea's tree on the Colab, the agents' rebuild of the community's U8
+                  circuit, and the scripts used there);
+                  current.json names the headline package of 13 October
+    package/      the sixth result and the lever, as packages laid over Ryan Shea's Lean tree with `scripts/`
+                  (VERIFY.md, section 12): u8x0hq (the sixth result, laid first; every lever package requires it),
+                  leverF (the full cut on #3945 with every head kept, 1.7806935e-3; the result of the title),
+                  leverB (the half cut on #3945 with every head kept, 1.7581520e-3),
+                  leverA (the lever on #2979 with every head kept, 1.7564707e-3),
+                  lever2979 (the lever on #2979 as published, 1.7556473e-3),
+                  lever (the lever on #3945 as published, 1.7501109e-3),
+                  each with its overlay, `MODULES.txt`, `result.json`, `SHA256SUMS`, logs, controls and generators
+    scripts/      apply-overlay.sh, build-and-check.sh, run-comparator.sh (VERIFY.md, section 12) and the scripts
+                  as the agents ran them (base/, cc-jail/, bos/, lever-run/)
+    research/     the research of 10 to 20 October 2026 in twelve sections, with its index (README.md,
+                  index.json, open-problems.md, make_index.py)
+    data/, results/   the lever's inputs and recorded outputs: the community's #3945 words in canonical form and
+                  their conversion into this project's certificate format; the head tests, prices and the
+                  community's checks as re-run (`results/reproduced/` compares a fresh run with them)
     tools/        `Compare.lean`, the certificates as JSON (`tools/certificate/`), their reference checkers,
                   the generators (`tools/gen/` first result, `tools/gx/` second and fourth), `whatif_copies.py` (section 7),
                   `tools/fourier/` (the scripts that made the copies of the third and of the fourth result, and their checks),
                   `tools/rebuild/` (the programs that rebuild the certificate of the second result from the
                   community's data files; the data files are fetched, not included),
-                  `tools/e8/` (the search programs that found the certificate of the fourth result)
+                  `tools/e8/` (the search programs that found the certificate of the fourth result),
+                  `tools/community/` (the generators of the packages under `community/` and
+                  `package_check.py`), `tools/swap-certificate.sh` (replaces the headline package of `community/`),
+                  `tools/lever/` (the lever's search and pricing programs, with their README),
+                  `tools/lever-hub/` (the programs shared with the research package for the community), and
+                  `tools/reproduce-search.sh` and `tools/compare_results.py` (re-run them and compare with `results/`)
     lakefile.lean, lean-toolchain, lake-manifest.json    Lean v4.34.1 and the Mathlib commit pinned by openai/math
     VERIFY.md     how to rebuild everything and re-run every check
     ORIGIN.md     where every file comes from (with MANIFEST.sha256); `tools/gx/ORIGIN.md` for the tools and
@@ -1406,8 +2438,16 @@ of 2026-10-10 did not try and what may be promising.
     notes/, third-party/    the notes of section 7 (scratch copies; all open directions) and the four notes of the
                   fourth result (how the unit was found, what did not work, open directions 2, the results as JSON);
                   the note for readers from network coding (`for-network-coding-readers.md`, with the folder `network-coding/`);
-                  the NOTICE file of CrocSwap/integer-mult-bounds (NOTICE, section 6);
-                  OpenAI's challenge file `UniformFourier.lean`, unmodified, to compare the challenges of the third and fourth results with
+                  the two notes of the fifth result (`fifth-result-story.md`, `open-directions-3.md`);
+                  the two notes of the lever (`how-the-lever-was-found.md`, `open-directions-4.md`);
+                  the NOTICE file of CrocSwap/integer-mult-bounds (NOTICE, section 6), and its notices at the
+                  commit the U8 circuit was rebuilt from (NOTICE, section 9, item g);
+                  OpenAI's challenge file `UniformFourier.lean`, unmodified, to compare the challenges of the third and fourth results with;
+                  unmodified files of Ryan Shea's repository that the generators of the fifth result use, with his
+                  licence and notices (`third-party/shea256-fourier-transform-below-nlogn/SOURCE.md`);
+                  unmodified copies of 32 files of the community's #3945 that the lever's programs read, with
+                  their licence, notices and git blob hashes
+                  (`third-party/CrocSwap-integer-mult-bounds/staged544-terminal-gap-fill/`, NOTICE, section 10)
 
 The comments inside the Lean files were not edited for this release, so that the files are byte for byte the
 ones that were checked. They still use path names and working titles of the tree they were written in ("Scratch
@@ -1420,16 +2460,21 @@ kept out of the prose so that the prose can be read.
 
 ### For the opening and what is new
 
-The four texts of this README, and one follow-up:
+The five texts of this README, and one follow-up:
 
 - First text (first result): commit `024f763`, 2026-10-09.
 - Second text (second result): commit `fdfb781`, with its note on open directions in commit `e0bbe1c`,
   2026-10-09.
 - Third text (third result): commits `6a1d04f` and `f010392`, 2026-10-09.
 - Fourth text (fourth result): commit `5ba3046`, 2026-10-10.
-- Follow-up to the fourth text: this one. It adds the comparator verdicts on the Linux machine that arrived
-  after the fourth text was published, and it corrects wording about the runs on that machine. It changes no
-  Lean file and no figure of a result.
+- Follow-up to the fourth text: commit `9c94857`, 2026-10-10. It added the comparator verdicts on the Linux
+  machine that arrived after the fourth text was published, and it corrected wording about the runs on that
+  machine. It changed no Lean file and no figure of a result.
+- Fifth text (fifth revision): this one, 19 and 20 October 2026. Its part "The results of 13 October 2026" was written
+  on 13 October 2026 for a fifth text that was not published; before this revision, its headline had been moved
+  on 2026-10-14 from `community/c588mhh` to the full stack, `community/u8xmhh`. Its sources are in "For the fifth
+  result", below; those of the lever, the sixth result and the research are in "For the lever, the sixth result
+  and the research".
 
 OpenAI's work that the statement and the cost model come from: [openai/math](https://github.com/openai/math),
 family 130, commit `fd4aeeb`.
@@ -1549,6 +2594,188 @@ The outside figures in "What was new in the first three revisions":
   outside Lean proof of the Fourier statement; not built here. 6.7e-4: shea256, an outside written argument;
   conditional, not formalised. Both as the searches of 2026-10-09 found them. On 2026-10-10 shea256's
   repository gave 7.547360e-4 instead (list above).
+
+### For the fifth result
+
+**The text.** The part of this README on the fifth result was written on 13 October 2026. The commit of this
+revision adds, with it, the packages under `community/`, `tools/community/`, `tools/swap-certificate.sh`, the
+third-party folder of Ryan Shea's files and VERIFY.md, section 11.
+
+**The base.**
+
+- Ryan Shea's repository [shea256/fourier-transform-below-nlogn](https://github.com/shea256/fourier-transform-below-nlogn)
+  at commit `52394849c7ecf3412d39b925d75fc7fdb98994d8`, folder `lean/complex588`. Its `lean/complex588` is the
+  same at `9749945` (the commit Nil Mamano's leaderboard entry names) and at `0e61af6`. Lean v4.34.1, Mathlib
+  `d13f23b723b8a846827a245b89c10fc7d3f11612`.
+- Jeremy Kothe's circuit is pull request #588 of CrocSwap/integer-mult-bounds ("atm3"). The community's
+  record of it (`certificates/checkpoints/family588.json`) gives kappa 0.001602278921983212; its complex side,
+  kappa/(1 - kappa), is 1.6049e-3.
+- Nil Mamano's gauged extension and Fourier templates: Shea's `NOTICE.complex588` says that the Lean files of
+  the #401 layout come from Nil Mamano's published submission to the leaderboard (bigospeedrun/verifier commit
+  `025396033eede56e3af6e02ed2679ba828381bd5`), unchanged apart from an import prefix, and that those files name
+  "DFT Bridge3" and "DFT New Sums", and the record instance "DFT Lean". Shea's `lean/complex588/SOURCE_MANIFEST.json`
+  lists `Work/Bank401/Adapt.lean`, `Work/Bank401/Frames.lean` and every file of `Work/Bridge401/` (among them
+  `GNetDef`, `GNetStage`, `GGeom`, `GNetCert`, `SchedK` and `End`) as taken from
+  `submissions/dft/nmamano-dft-record/Submission/` at that commit. The headers of those files credit the
+  entrance gauges and the residual banks to Dugongue (#401), the bank patterns to lydakis (#275), the
+  compressed nine-stage layout with its banks and padding to jacklightChen (#377) and the bridged word to
+  DaysSky (#363). The entry of Mamano and Shea, `submissions/dft/nmamano-shea-c588` of bigospeedrun/verifier,
+  was merged on 12 October 2026 (pull request #7 there).
+- Shea's notice also describes what his conversion added: the "source-copy lowering of the mutable-source
+  provider", the handling of scales, the cyclic bank packing, the generated checks and the Fourier instance. The
+  fifth result removes that lowering.
+- Zhihao Chen (jacklightChen): pull request #425 of CrocSwap/integer-mult-bounds, the written scalar-interface
+  argument for mutable sources.
+- Dugongue: pull request #401 there, the entrance gauges and the banks of the nine-stage network; Zhihao Chen
+  (jacklightChen): pull request #377 there, its compressed nine-stage layout with its banks and padding.
+- DaysSky: pull request #442 there, "idle-axis hosting", with its written proof
+  (`research/idle-axis-hosting/PROOF.md`, sections 1 and 2, the hosting lemma) and the integer programme that
+  chooses the hosts. The lemmas L1 and L2 (`community/c588mhh/supporting/`) and the hosting programs
+  (`generators/design-tools/host_price.py` of `community/c588mhh` and of `community/u8xmhh`) cite its sections;
+  the checked modules of `Work/XHost` cite the pull request. The files of `Work/XHost` that
+  copy or adapt files of Shea's tree say so in their first lines: `HDef`, `HStage`, `HGeom` and `HCert` (from
+  `Work/Bridge401/GNetDef`, `GNetStage`, `GGeom`, `GNetCert`), `HEnd` (from `Work/Bridge401/End.lean`),
+  `Frames` (from `Work/Bank401/Adapt.lean` and `Frames.lean`) and `HSchedK` (lemmas about lists copied from
+  `Work/Bridge401/SchedK.lean`).
+- The U8 circuit of `community/u8x`, `community/u8xm` and `community/u8xmhh`: pull request #869 of
+  CrocSwap/integer-mult-bounds (Jeremy Kothe, "eight triangle-hybrid B deliveries in block 0 on PR799's word"),
+  on Kothe's #799, which carries the eight frame changes of Chafik Boukhalfa's #741, and on icekylinx's #645
+  (the gauge44 construction). #869 credits chafreaky (Boukhalfa's account) for #741, #685 and #660 ("the
+  frames, the owner map and the exact-flow packing"), icekylinx for #645, and "the PR601/604/617/622/627/635
+  lineage and every upstream contributor credited in PR645"; the community's
+  notice at the commit below (`research/complex-t21-owners/NOTICE.md`) says "PR869/PR870 supplies the
+  unchanged U8 local word" and credits its triangle-hybrid construction to NewBArch, with its driver and
+  composition to ColdWitness/icekylinx. The helpers that end early come into that line with, among others,
+  #591, #592 and #601 (Kothe), #604 (DreamingOfClouds) and #645 (icekylinx). The charge for exit frames follows
+  the community's endpoint lemmas in Lean, #593 (Kothe) and #599 (DreamingOfClouds).
+- Not used by those certificates, though the community's figures for the U8 circuit use them: the owner maps
+  of #870 (Kothe, applying Hao Yan's sixteen-replica controller of #858), #890 (Boukhalfa, "T21 whole-owner
+  packing") and #942 (Jonathan Capalbo, the account jon314159, "T37 whole-owner packing"), the last two of
+  which state that the U8 local word is unchanged, and the bit supplier #589 (DreamingOfClouds); #869 states
+  "The complex side binds; PR589's bit supplier gives 0.0017334". I read the authors, titles and texts of
+  these pull requests on 14 October 2026.
+- The rebuild of the U8 circuit: CrocSwap/integer-mult-bounds, main branch at commit
+  `407d52ff15b2217b6e22bce44728b4c3907b6515`, program
+  `research/complex-t21-owners/vendor/pr870/construction/barch/reproduce_barch.py`, recipe U8 (#869's builder,
+  in the copy of #870's package that #890 keeps), on Kothe's #799 X4 word; canonical sha256 of the word
+  `24db880b7dab31e6af4eec8a1aba1bbbae29cd50d9a7b77cf0e9b571b3e5ae7c`, pinned by the community in
+  `LOCAL-PINS-barch-U8.json` in the same folder at that commit. Logs: `community/base-logs/u8-word/`. The
+  community's notices at that commit are copied in `third-party/CrocSwap-integer-mult-bounds/at-407d52ff/`.
+- Ryan Shea's notes on exit frames: `research/complex-transfer-588-596/HANDOFF.md` of his repository at the
+  commit above, section "Next mathematical test", which names as "the decisive follow-up" to generalise
+  `GInvE` and its bank-frame construction from the full frame to the actual exit frames. The helpers that end
+  early are the community's (its pull requests #596 and #601 by Kothe and #604 and #610 by DreamingOfClouds,
+  which that note names).
+- The community's selected results on 13 October 2026 were, in turn, #799 (complex side 1.6644e-3, in the
+  morning), #942 (1.6647273e-3) and #1042 (in the afternoon).
+- The community's list of assumptions: its README, read on 13 October 2026 at commit `f567884a`, names
+  "common-label/mutable-source realization" and "whole-call hosting" among them. The newest figures quoted in
+  "The results of 13 October in detail", item 7, are those of its selected result of that afternoon, pull request
+  #1042 (kappa 0.001672188119205421; complex side 0.001674989015937672, reproduced by the agents' copy of its
+  pricing program).
+
+**The leaderboard.** bigospeedrun.com/exact-dft, read on 13 October 2026 (the site's data file
+`data/exact-dft.json` at commit `d48436fa2c35` of bigospeedrun/site): first Ryan Shea, 1.2331685e-3, Lean
+Verified; second Nil Mamano, 1.0221e-3; third this repository's fourth result, 8.7625e-4.
+
+**The machines and the runs.** Every Lean run of the fifth revision's results was on two Google Colab
+machines: Linux x86-64, Intel Xeon 2.20 GHz, 8 logical processors, 51 GiB, kernel 6.6.122+ without Landlock,
+no systemd. On a Mac (Apple silicon, 16 GB) ran only the lemmas L1 and L2 that the hosting results do not
+import, the two agents' rebuilds of them, the negative control of `hostSchedK` for `community/c588mhh` on an
+earlier version of the data files, whose log is not in the package, and the first run of `hostSchedK` on the
+tables of `community/u8xmhh` (`logs/generation/mac-FsPrice_HsU8XMHH*.log` there).
+
+- The 32 modules of `community/u8xmhh`, its checks, the comparator and the offline re-creation of the
+  leaderboard's verifier ran on the second machine, on 13 October 2026: the build and the comparator between
+  22:05 and 22:42 UTC, the re-creation between 23:31 and 00:54 UTC (14 October), with bigospeedrun/verifier
+  at `c92b9b6` and `community/u8xmhh/scripts-as-run/build/fsb_submission.py`, which packages the proof like
+  Nil Mamano's entry. The comparator configurations are `comparator/fourier-u8xmhh.json` and
+  `comparator/fourier-u8xmhh-neg.json`. The tree was a copy of a second build of `community/u8xm` that the
+  agents made on that machine the same evening. The independent check of the statement ran on the same
+  machine in its own copy of the tree; the independent rebuild ran on the first machine, over its own copy of
+  the agents' first build of `community/u8xm` there, between about 01:00 and 01:50 UTC on 14 October.
+- The agents' rebuild of the U8 circuit with the community's program ran on the first machine.
+- The 49 modules of `community/c588mhh`, its checks and the comparator ran on the first machine. The
+  comparator configurations are `comparator/fourier-c588mhh.json` and `comparator/fourier-c588mhh-neg.json`
+  (and `fourier-c588mh*.json` for the control). The independent rebuild of its 32 modules ran on the same
+  machine, in a build folder of its own. The lemmas L1 and L2 were compiled on a Mac.
+- The packages `community/u8x` and `community/u8xm` were built and checked on the first machine.
+- The 70 modules of `community/c588m`, the checks and the comparator ran on the first machine. The comparator
+  configurations are `comparator/fourier-c588m.json` and `comparator/fourier-c588m-neg.json`; the sandbox
+  stand-in is `community/base-logs/scripts/jail2.sh`.
+- The offline re-creation of the leaderboard's verifier used bigospeedrun/verifier at commit `c92b9b6` (the
+  preparation script, `community/scripts/bos/mb-bos-prep.sh`, stops on any other commit), on the submission
+  folder packaged by `community/scripts/bos/mb_submission.py`, the script that reproduces the format of Nil
+  Mamano's entry byte for byte. `community/scripts/bos/mb-bos-run.sh` ran the verifier's three phases (lean,
+  audit, nanoda) one after the other, each inside the stand-in sandbox `jail2.sh` with `LEAN_NUM_THREADS=1`,
+  because the verifier's own controller uses bwrap and systemd-run, which those machines lack. Its Lean phase
+  took 108 minutes at 8.2 GB, the axiom audit 18 minutes and the nanoda phase 16 minutes. Logs:
+  `community/c588m/logs/colab/bos/`.
+- The Walsh-Hadamard corollaries at the kernels of `c588m` and `c588mhh`, and the independent rebuild of
+  `community/c588m`, ran on the second machine.
+- Tools at the pins of the verifier (`profiles/tools.json`): comparator `d03acab`, lean4export `076e8e5`,
+  nanoda `3a24072`, landrun `811cfff`.
+
+**The rounds of 13 October 2026** that the story note tells were run by the agents in the working folders of
+this project; their figures and verdicts are in the story note and in `notes/open-directions-3.md`, each with
+its status.
+
+### For the lever, the sixth result and the research
+
+**The text.** The opening, "What is new in the fifth revision" and the lever's entries elsewhere were written on
+19 October 2026 and revised on 20 October 2026 for this revision. The sixth result was built and checked on 14 October 2026
+and rebuilt on 19 October 2026 (`package/u8x0hq/logs/`).
+
+**The community's figures** (the table at the top), read on 19 October 2026 from the pull requests of
+CrocSwap/integer-mult-bounds, read-only: #3945 at head `91f81d13` (complex root
+0.001730663236534549309146...); #2979 on main at `20ecf289`, merged there as research (complex root
+0.001729033982646513517717...); the highest complex-side construction among the open pull requests, #4088 (and #4100), 1.7309791e-3; #4091's
+1.7309803e-3 is the optimum of a pooled (relaxed) model, not a construction; the chain
+#3934 to #3959 (b 1.7411726e-3 in #3955, kappa 1.7367387e-3 in #3959), which carried the idle-axis moves of #3251
+that their author retracted on 18 October after exact operator replays, was disputed by the open audit #4046 and
+closed; the selected record #1094 (kappa 1.6726602e-3, complex side 1.6754627e-3); main at `bb4bccbf`.
+A re-read on the evening of 19 October (the newest pull request was #4121) found no complex-side construction at or above the lever's; some research notes there print higher ceilings or targets, which are not constructions.
+On the morning of 20 October (05:00 to 05:30 UTC) the community archived a large batch of pull requests on its main branch, among them #3945, #4091, #4085, #4076 and #4088, with an explicit review scope and none selected; #3945's files on main are the same as at its head. A re-read after that (main `12fa8c5c`, newest pull request #4167) found no complex-side construction at or above the lever's. #4181 (Rohan Arun, opened on 20 October at 11:22 UTC, open at the last read, newest pull request #4195) claims a fill at 1.7309803e-3 that attains #4091's pooled ceiling.
+
+**The leaderboard.** bigospeedrun.com/exact-dft (the data file `data/exact-dft.json` of bigospeedrun/site), read on
+19 October 2026: top entry 1.2654e-3, Bojnal's, on canghaimeng's C588AT, which runs on my engine.
+
+**The community's checks re-run by the agents**, from scratch, on Colab machines (`results/community-checks/` and
+the logs of each lever package):
+
+- #3945: its complete stated verification `admission/full_replay.py` with fresh native replays
+  (`PASS_TERMINAL_WIDTH5_COMPLETE_CONDITIONAL_RELEASE`, 119 of 119 controls rejected), its eight registered
+  commands, the fresh native replay of both words (`PASS_COMPLETE_T74_NATIVE_REPLAY`) and the exact eight-stream
+  operator replay over all 360 owners (0 differences); #3815's complete admission with fresh natives.
+- #2979: the registered runner `scripts/research_package.py` (`PASS_REGISTERED_RESEARCH_PACKAGE`) and the complete
+  replay `reproduce.py` with the author's recorded pins (`PASS_RANK7_JOINT_ENDFRAMES_COMPLETE_REPLAY`).
+- The tables with every head kept: on #3945, its `owner/verify.py` (`PASS_LITERAL_ENLARGED_OWNER_FILL`, plain and
+  `-O`) and `full_replay.py` (`PASS_TERMINAL_WIDTH5_COMPLETE_CONDITIONAL_RELEASE`, 119 of 119 controls), fill
+  sha256 `9c06677d...`; on #2979, its `check_allocation.py` (`PASS_RANK7_LITERAL_OWNERS_AND_EXACT_MOMENT`) and
+  `reproduce.py` (`PASS_RANK7_JOINT_ENDFRAMES_COMPLETE_REPLAY`), fill sha256 `764395fc...`. The exact operator
+  replay over every owner gave 0 differences on both.
+
+**The circuits' files.** #3945: `research/staged544-terminal-gap-fill/` at head
+`91f81d131252db704f945891da1ea54e29d46b8b`; the 32 files the programs read are in `third-party/`, each checked
+against its git blob hash (`BLOBS.txt`). #2979: `research/rank7-joint-endframes/` at main `20ecf289`; 12 of its
+files are copied unmodified into the generators of `package/lever2979` and `package/leverA` (NOTICE, section
+10.c), each checked by its hash.
+
+**Credits.** The pull request bodies, `CREDITS.md`, `NOTICE.md` and native lineage notices of #3945, #2979 and
+their predecessors (copies of #3945's in `third-party/`), the community's ledger of pull requests, and, for the
+T74 line, the bodies of #1297 to #1839.
+
+**The Lean builds and their skeptics.** The five lever packages were built and checked on 19 and 20 October 2026 (UTC) on five Colab machines by the integration agents `i-final` (`package/lever`), `x-final` (`package/lever2979`), `aA-final` (`package/leverA`), `bB-final` (`package/leverB`) and `fc-final` (`package/leverF`, round `wht45/fullcut`, with `fc-gate`, `fc-engine` and `fc-rate`), on Lean data generated by `aA-data`, `bB-data` and the earlier tracks of rounds `wht45/lever` and `wht45/lever2979`; the merged leaderboard form and its identity check are `h-bos`'s; the run of `scripts/` from a fresh clone of this repository is `r-finalize`'s. Each package's `logs/` and `result.json` give the
+machine, date, times and peak memory of each step. The skeptics, three per package (the statement, an independent rebuild, the price): `v-statement`, `v-rebuild`, `v-price` (`package/lever`); `v2979-statement`, `v2979-rebuild`, `v2979-price` (`package/lever2979`); `vA-statement`, `vA-rebuild`, `vA-price` (`package/leverA`); `vB-statement`, `vB-rebuild`, `vB-price` (`package/leverB`); `vF-statement`, `vF-rebuild`, `vF-price` (`package/leverF`). All fifteen upheld their result; no fix round was needed.
+
+**The bases.** Ryan Shea's tree as for the fifth result (below). OpenAI's statement:
+`lean/ComparatorChallenges/UniformFourier.lean` of openai/math at commit
+`fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`, sha256 `4c571f27...`, copied in `third-party/openai-math/`. The
+leaderboard's verifier: bigospeedrun/verifier at `c92b9b6`, re-created offline; its file limit of 500 read at main
+`1e009d7`.
+
+**The research.** [research/README.md](research/README.md) and each section's own Sources section name the notes,
+rounds and skeptic verdicts behind it.
 
 ### For the credits
 

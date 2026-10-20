@@ -1,0 +1,14 @@
+projected profiles added: 997
+register 6, ranks <= 5: 1343 rows; boosters negative at 0/50
+register 6, ranks <= 6: 1343 rows; boosters negative at 50/50, from 0.02 to 0.9983
+   cover [0.9, 0.9983]: eps = 7.56e-05, v = {1: 0.00921, 2: -0.13106, 3: 0.21135, 4: 0.35725, 5: -0.86894, 6: 0.42243}
+register 7, ranks <= 5: 1330 rows; boosters negative at 0/50
+register 7, ranks <= 6: 1330 rows; boosters negative at 50/50, from 0.02 to 0.9983
+register 7, ranks <= 7: 1330 rows; boosters negative at 50/50, from 0.02 to 0.9983
+   cover [0.9, 0.9983]: eps = 0.000129, v = {1: 0.01452, 2: -0.15976, 3: 0.17482, 4: 0.56522, 5: -0.84024, 7: 0.24584}
+register 8, ranks <= 5: 1351 rows; boosters negative at 0/50
+register 8, ranks <= 6: 1351 rows; boosters negative at 50/50, from 0.02 to 0.9983
+register 8, ranks <= 7: 1351 rows; boosters negative at 50/50, from 0.02 to 0.9983
+register 8, ranks <= 8: 1351 rows; boosters negative at 50/50, from 0.02 to 0.9983
+   cover [0.9, 0.9983]: eps = 0.000243, v = {2: -0.11376, 4: 0.61376, 6: -0.88624, 8: 0.38624}
+python3 -B projall.py  16.82s user 0.44s system 104% cpu 16.461 total

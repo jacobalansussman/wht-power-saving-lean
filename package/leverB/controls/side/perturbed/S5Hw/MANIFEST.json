@@ -1,0 +1,37 @@
+{
+ "src": "S5H-hosttab.json.gz",
+ "sha256": "009df87c16355df4657ea4f242c6ce27b3784121351c14a5444f2eba705e5151",
+ "perturbed": {
+  "mode": "win",
+  "k": 2,
+  "q": 1,
+  "old": 463900,
+  "new": 220
+ },
+ "negatives": [
+  {
+   "file": "NegSome0.lean",
+   "kind": 0,
+   "must": "FAIL",
+   "why": "bin 220: record (call 2, slot 1) outside the window [0, 40] (time 104)"
+  },
+  {
+   "file": "NegNone0.lean",
+   "kind": 0,
+   "must": "PASS",
+   "why": "bin 220: record (call 2, slot 1) outside the window [0, 40] (time 104)"
+  },
+  {
+   "file": "NegSome2070.lean",
+   "kind": 2070,
+   "must": "FAIL",
+   "why": "bin 463900: load 7 + remainder 0 != rank 16"
+  },
+  {
+   "file": "NegNone2070.lean",
+   "kind": 2070,
+   "must": "PASS",
+   "why": "bin 463900: load 7 + remainder 0 != rank 16"
+  }
+ ]
+}

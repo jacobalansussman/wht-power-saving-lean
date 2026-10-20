@@ -1,0 +1,26 @@
+{
+ "case": "best twisted mirror (all)",
+ "chains": [
+  10,
+  10,
+  10,
+  10,
+  10,
+  10,
+  10,
+  10
+ ],
+ "drops": [
+  17,
+  17,
+  17,
+  17,
+  17,
+  17,
+  17,
+  17
+ ],
+ "per_call_cleanup": 136,
+ "per_call_both": 272,
+ "source": "../job-twistall/twistall.json"
+}

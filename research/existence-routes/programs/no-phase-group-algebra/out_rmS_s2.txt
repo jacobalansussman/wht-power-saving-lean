@@ -1,0 +1,19 @@
+CAL plain 2 in 8 slice sector lam=1
+{"m": 4, "n": 1, "lam": 1, "W": 2, "M": 8, "unknowns": 128, "chars": 1024}
+{"restart": 0, "loss": 0.18262818682447718, "iters": 60, "secs": 39.1}
+{"restart": 1, "loss": 0.5991522175506845, "iters": 60, "secs": 28.2}
+{"restart": 2, "loss": 22.533354928690283, "iters": 60, "secs": 27.8}
+BEST 0.18262818682447718
+CAL 2 in 5 block 3 slice sector lam=1
+{"m": 3, "n": 1, "lam": 1, "W": 2, "M": 5, "unknowns": 68, "chars": 64}
+{"restart": 0, "loss": 64.43571671508661, "iters": 60, "secs": 1.3}
+{"restart": 1, "loss": 64.16309588248888, "iters": 60, "secs": 0.5}
+{"restart": 2, "loss": 64.07629909494261, "iters": 60, "secs": 0.5}
+BEST 64.07629909494261
+CAL 2 in 5 block 3 slice sector lam=7
+{"m": 3, "n": 1, "lam": 7, "W": 2, "M": 5, "unknowns": 68, "chars": 64}
+{"restart": 0, "loss": 64.43624726443397, "iters": 60, "secs": 1.4}
+{"restart": 1, "loss": 64.16311252435952, "iters": 60, "secs": 0.7}
+{"restart": 2, "loss": 64.07628742778996, "iters": 60, "secs": 0.6}
+BEST 64.07628742778996
+EXIT 0

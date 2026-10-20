@@ -1,0 +1,39 @@
+CHECK Literal source-guarded reconstruction from PR3945's words, hygiene, Lagrangian frame bill, arbitrary-dirty forward/dual/boundary semantics, native receipt closure, owner/moment bridge.
+{"providers": {"base": {"local_profile": {"1": 2488, "2": 714, "3": 223, "4": 102, "5": 20, "8": 8}, "staged_entrances": ["600", "608", "609"], "width_inventory": {"5": 28, "6": 18, "7": 56, "8": 93, "9": 213}}, "extra": {"local_profile": {"1": 2488, "2": 714, "3": 223, "4": 102, "5": 20, "8": 8}, "staged_entrances": ["600", "608", "609"], "width_inventory": {"5": 28, "6": 18, "7": 56, "8": 93, "9": 213}}}, "scope": "Fresh literal reconstruction from PR3945 words, hygiene, exact Lagrangian frame bill, arbitrary-dirty forward/dual/boundary semantics. Native receipts authenticated; phases are a separate fresh-run command.", "status": "PASS_STAGED_ENTRY_WORDS"}
+CHECK Independent GF(2) frame ledger, declared deletions/releases/entrances, profile delta and inventories; ten mutation controls.
+{"canonical_source_sha256": {"NEW-base.json.gz": "ac474908d37c99db0282a094cef8a3a258570e3b4256b87707020ef02a239b84", "NEW-extra.json.gz": "c0038838293e274efeeca533ba8dbd210e3f43ad11246abf0e89a4160a2efa75", "OLD-base.json.gz": "cee1ddcbdf3cdcba99146f281cbb452440dd1ed641aa3a47ccc3343680ae7ddc", "OLD-extra.json.gz": "cc1826748ed24cd085a5756b46f0090d5a43ad54820c025366cf2848aca589b2"}, "providers": {"base": {"buffers": 91, "deleted_reads": 12, "local_profile_delta": {"1": 6, "2": 2, "3": 5, "4": -7}, "new_profile": {"1": 2488, "2": 714, "3": 223, "4": 102, "5": 20, "8": 8}, "old_profile": {"1": 2482, "2": 712, "3": 218, "4": 109, "5": 20, "8": 8}, "releases": 6, "staged_entrances": ["600", "608", "609"]}, "extra": {"buffers": 91, "deleted_reads": 12, "local_profile_delta": {"1": 6, "2": 2, "3": 5, "4": -7}, "new_profile": {"1": 2488, "2": 714, "3": 223, "4": 102, "5": 20, "8": 8}, "old_profile": {"1": 2482, "2": 712, "3": 218, "4": 109, "5": 20, "8": 8}, "releases": 6, "staged_entrances": ["600", "608", "609"]}}, "rejected_controls": ["base: wrong paid histogram", "base: wrong native exit frame", "base: missing staged entrance", "base: changed release coefficient", "base: changed scalar operator", "extra: wrong paid histogram", "extra: wrong native exit frame", "extra: missing staged entrance", "extra: changed release coefficient", "extra: changed scalar operator"], "scope": "Independent local binary frames, exact histogram/inventory and declared staged-entry operator contract; native phases, dirty semantics and literal owner/outer assembly checked separately.", "status": "PASS_INDEPENDENT_BINARY_BASIS_LEDGER"}
+CHECK Rational root bracket for the new complete profile, PR3945's bracket, strict padded improvement; four controls.
+{"comparison_count": 322560, "comparison_rank": 73, "full_profile": {"1": 8061120, "2": 2313360, "3": 745362, "4": 330480, "5": 66690, "8": 25920, "48": 138438}, "gain_over_pr3945_upper_at_least": "1457970420027725869999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000", "lower_decimal": "0.001730809033576552081734", "lower_moment_interval": ["-2906050333530049387833754948115659793970473/100000000000000000000000000000000000000000000000000000000000", "-29060503335300493878337549481156597939704729/1000000000000000000000000000000000000000000000000000000000000"], "outer_lower": "17308090335765520817339999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000", "outer_lower_decimal": "0.0017308090335765520817339999999999999999999998999999999999999999999999", "owner_profile_matches": true, "pr3945_bracket_moments": [["-50797378400470903009019639701961947218065649/1000000000000000000000000000000000000000000000000000000000000", "-3174836150029431438063727481372621701129103/62500000000000000000000000000000000000000000000000000000000"], ["3097410067753202483272724232830445513172919/200000000000000000000000000000000000000000000000000000000000", "3871762584691503104090905291038056891466149/250000000000000000000000000000000000000000000000000000000000"]], "pr3945_root_bracket": ["865331618267274654573/500000000000000000000000", "1730663236534549309147/1000000000000000000000000"], "rejected_controls": ["one wrong aggregate rank1 count", "idle change replaced by rank-1 cells", "unsupported larger endpoint", "PR3945 profile at the new bracket"], "root_lower": "865404516788276040867/500000000000000000000000", "root_upper": "346161806715310416347/200000000000000000000000", "scope": "Exact paid-profile comparison. Native phases, literal owner fill and inherited outer theorem hypotheses are checked by the package replay.", "status": "PASS_EXACT_PROFILE_ROOT", "upper_decimal": "0.001730809033576552081735", "upper_moment_interval": ["9304618196317565084427322044456426124873303/250000000000000000000000000000000000000000000000000000000000", "37218472785270260337709288177825704499493213/1000000000000000000000000000000000000000000000000000000000000"]}
+CHECK Every literal owner role of PR3945's fill and of the new fill: windows, family distinctness, compact offsets, capacity, idle and complete histogram; seven controls incl. restored narrowed widths.
+{"calls": 3240, "checker_sha256": "7652799c138481d23d42394e853eaf3cbaf8c7ac949849631c64df487f6760e3", "controls_rejected": ["same_call_family", "offset_hole", "closed_owner_window", "overflow", "restored_width_helper_index_366", "restored_width_helper_index_370", "restored_width_helper_index_371"], "fill_sha256": "a8de70d8cc5e15914881dd4849e51014af261bdd215ced7222ceb111cc5baab9", "final_word_sha256": {"base": "8159c67d29ab58efe546ebc4ce20872421996cc71b5f17737ff8b36cbc76d148", "extra": "0147e6b30ef328e227e89113323eb0d02d116e125b0e7c99a00ea4f2652dcc80"}, "idle": {"3": 22842, "5": 1890, "48": 138438}, "owner_windows": 6480, "physical_bins": 725760, "pr3945_idle": {"3": 23328, "5": 4320, "48": 137952}, "profile": {"1": 8061120, "2": 2313360, "3": 745362, "4": 330480, "5": 66690, "8": 25920, "48": 138438}, "replicas": 360, "roles": 1321920, "roles_moved_vs_pr3945": 70876, "scope": "Exact full owner role, chronology, distinctness, capacity, compact-prefix and paid histogram audit of both PR3945 and the new literal fill. Native/caller/outer admission handled separately.", "seconds": 26.220175858000403, "status": "PASS_LITERAL_STAGED_ENTRY_OWNER_FILL"}
+CHECK Regenerate the literal fill from PR3945's fill and the declared 70,876 role moves; byte-equal payload.
+{"fill_payload_sha256": "8e4cd747ab0512c5a258181754cc4d7ccfdd1f1dde11e24846914e9f0898b862", "moved_roles": 70876, "roles": 1321920, "status": "PASS_REGENERATED_LITERAL_FILL"}
+CHECK Seven guarded recipe mutations.
+PASS_7_RECIPE_CONTROLS
+CHECK Same controls with assertions disabled.
+PASS_7_RECIPE_CONTROLS
+PASS_REGISTERED_RESEARCH_PACKAGE research/staged544-triple-entry-fill outcome=completed
+	Command being timed: "/usr/bin/python3.12 -B scripts/research_package.py --package research/staged544-triple-entry-fill"
+	User time (seconds): 45.25
+	System time (seconds): 3.48
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:49.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1094276
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 616705
+	Voluntary context switches: 2199
+	Involuntary context switches: 206
+	Swaps: 0
+	File system inputs: 2992
+	File system outputs: 32
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+rc=0

@@ -1,0 +1,108 @@
+=== B1: 1 collapse vectors at f=3,4 over 675 kept top words; 0 survive at f=5
+  failing part: dim 1; 5 top words carry 90% of its weight; heaviest:
+    ('1', '1', 'Pr0', 'C01', 'X2')  weight 0.224
+    ('1', '1', '1', 'C01', '1')  weight 0.224
+    ('1', '1', 'Pr0', 'C01', '1')  weight 0.224
+    ('1', '1', '1', 'C01', 'X2')  weight 0.224
+    ('1', '1', 'Pr0', 'Z1', 'X2')  weight 0.012
+    ('1', '1', '1', '1', 'X2')  weight 0.010
+    ('1', '1', '1', 'Z1', 'X2')  weight 0.010
+    ('1', '1', 'Pr0', 'Pr0', 'X2')  weight 0.010
+    ('1', '1', 'T2', 'T2', 'X2')  weight 0.010
+    ('1', '1', '1', 'Pr0', 'X2')  weight 0.007
+    ('1', '1', 'Pr0', '1', 'X2')  weight 0.007
+    ('1', '1', 'Pr0', 'Z1', '1')  weight 0.006
+  letters in the words carrying 90% (share of weight): Pr0 0.46
+=== B2: 5 collapse vectors at f=3,4 over 638 kept top words; 4 survive at f=5
+  failing part: dim 1; 8 top words carry 90% of its weight; heaviest:
+    ('1', '1', '1', 'C01', 'X2')  weight 0.350
+    ('1', '1', 'Pr0', 'C01', 'X2')  weight 0.350
+    ('1', '1', '1', 'C01', '1')  weight 0.044
+    ('1', '1', 'Pr0', 'C01', 'Z1')  weight 0.044
+    ('1', '1', 'Pr0', 'C01', '1')  weight 0.044
+    ('1', '1', '1', 'C01', 'Z1')  weight 0.044
+    ('1', '1', 'Pr0', 'Z1', 'X2')  weight 0.019
+    ('1', '1', '1', 'Z1', 'X2')  weight 0.015
+    ('1', '1', '1', '1', 'X2')  weight 0.015
+    ('1', '1', 'T2', 'T2', 'X2')  weight 0.015
+    ('1', '1', 'Pr0', 'Pr0', 'X2')  weight 0.015
+    ('1', '1', 'Pr0', '1', 'X2')  weight 0.011
+  letters in the words carrying 90% (share of weight): Pr0 0.46
+  survivor part: dim 4; heaviest words: [('1', '1', 'A', 'Pr0', 'X4'), ('1', '1', 'Pr0', 'Z1', 'P12'), ('1', '1', 'Pr0', 'T2', 'X4'), ('1', '1', 'T2', 'Pr0', 'X4'), ('1', '1', '1', 'Pr0', 'P12'), ('1', '1', 'Pr0', '1', 'P12'), ('1', '1', 'T2', 'X4', 'Z1'), ('1', '1', 'T2', 'Z1', 'X4'), ('1', '1', 'Pr0', '1', 'Z1'), ('1', '1', '1', 'Pr0', 'Z1')]
+=== B3: 1 collapse vectors at f=3,4 over 1350 kept top words; 0 survive at f=5
+  failing part: dim 1; 4 top words carry 90% of its weight; heaviest:
+    ('1', '1', 'Pr0', 'C01', 'X2')  weight 0.226
+    ('1', '1', 'Pr0', 'C01', '1')  weight 0.226
+    ('1', '1', '1', 'C01', 'X2')  weight 0.226
+    ('1', '1', '1', 'C01', '1')  weight 0.226
+    ('1', '1', '1', 'Z1', 'X2')  weight 0.010
+    ('1', '1', 'Pr0', 'Z1', 'X2')  weight 0.010
+    ('1', '1', 'Pr0', 'Pr0', 'X2')  weight 0.010
+    ('1', '1', 'A.T2.Ai', 'A.T2.Ai', 'X2')  weight 0.006
+    ('1', '1', 'T2', 'T2', 'X2')  weight 0.006
+    ('1', '1', '1', 'Pr0', 'X2')  weight 0.006
+    ('1', '1', 'Pr0', '1', 'X2')  weight 0.006
+    ('1', '1', '1', '1', 'X2')  weight 0.006
+  letters in the words carrying 90% (share of weight): Pr0 0.45
+=== C1: 2 collapse vectors at f=3,4 over 1350 kept top words; 0 survive at f=5
+  failing part: dim 2; 11 top words carry 90% of its weight; heaviest:
+    ('1', '1', 'lX1', 'X1')  weight 0.247
+    ('1', 'A', 'lX1', 'X1')  weight 0.169
+    ('1', 'A', 'lX1', '1')  weight 0.169
+    ('1', 'A', '1', 'X1')  weight 0.095
+    ('1', '1', 'lX1', '1')  weight 0.062
+    ('1', '1', '1', 'X1')  weight 0.042
+    ('1', 'Pr0', 'lX1', 'Z1')  weight 0.031
+    ('1', 'Pr0', 'lX1', '1')  weight 0.031
+    ('1', 'Pr0', 'Z1', 'X1')  weight 0.027
+    ('1', 'A', 'Pr0', 'X1')  weight 0.021
+    ('1', '1', 'Pr0', 'X1')  weight 0.015
+    ('1', 'Pr0', '1', 'X1')  weight 0.015
+  letters in the words carrying 90% (share of weight): lX1 0.71, A 0.46, Pr0 0.13
+=== C2: 8 collapse vectors at f=3,4 over 2409 kept top words; 2 survive at f=5
+  failing part: dim 6; 24 top words carry 90% of its weight; heaviest:
+    ('1', '1', 'C20', 'Z4')  weight 0.050
+    ('1', 'X1', 'C20', 'X4')  weight 0.050
+    ('1', 'X1', 'C20', 'Z4')  weight 0.050
+    ('1', '1', 'C20', 'X4')  weight 0.050
+    ('1', '1', 'a0', '1')  weight 0.042
+    ('1', 'X1', 'A', '1')  weight 0.042
+    ('1', '1', 'B', 'X1')  weight 0.042
+    ('1', '1', 'B', '1')  weight 0.042
+    ('1', 'X1', 'A', 'X1')  weight 0.042
+    ('1', '1', 'A', 'X1')  weight 0.042
+    ('1', 'X1', 'B', '1')  weight 0.042
+    ('1', 'X1', 'B', 'X1')  weight 0.042
+  letters in the words carrying 90% (share of weight): B 0.17, a0 0.17, A 0.17, a0i 0.13, lX1 0.08
+  survivor part: dim 2; heaviest words: [('1', 'P01', 'Pr0', 'P01'), ('1', 'P01', 'Pr0', 'Z1'), ('1', 'P01', 'Pr0', '1'), ('1', 'P01', 'P01', 'Z2'), ('1', 'P01', 'Z1', 'P01'), ('1', 'Pr0', 'Pr2', 'Z4'), ('1', '1', '1', 'X1'), ('1', 'CS01', 'Pr0', 'P01'), ('1', 'CS01', 'Pr0', 'P12'), ('1', '1', '1', 'X2')]
+=== C3: 10 collapse vectors at f=3,4 over 2430 kept top words; 0 survive at f=5
+  failing part: dim 10; 47 top words carry 90% of its weight; heaviest:
+    ('1', 'X1', 'lX1', 'Z1')  weight 0.051
+    ('1', 'X1', 'lX1', 'P01')  weight 0.040
+    ('1', 'X1', 'lX1', 'X4')  weight 0.040
+    ('1', '1', 'lX1', 'X4')  weight 0.040
+    ('1', '1', 'lX1', 'P01')  weight 0.040
+    ('1', 'A', 'lX1', '1')  weight 0.034
+    ('1', 'A', 'lX1', 'X1')  weight 0.034
+    ('1', '1', 'lX1', 'Z4')  weight 0.032
+    ('1', '1', 'lX1', 'P12')  weight 0.032
+    ('1', '1', 'lX1', 'X2')  weight 0.032
+    ('1', 'X1', 'lX1', 'X2')  weight 0.032
+    ('1', '1', 'lX1', 'Z2')  weight 0.032
+  letters in the words carrying 90% (share of weight): lX1 0.64, Bi 0.10, A 0.09, Pr0 0.06
+=== C4s601: 7 collapse vectors at f=3,4 over 2411 kept top words; 3 survive at f=5
+  failing part: dim 4; 16 top words carry 90% of its weight; heaviest:
+    ('1', '1', 'B', '1')  weight 0.063
+    ('1', '1', 'a0', 'X1')  weight 0.063
+    ('1', 'X1', 'a0', '1')  weight 0.063
+    ('1', 'X1', 'a0', 'X1')  weight 0.063
+    ('1', 'X1', 'A', '1')  weight 0.063
+    ('1', '1', 'A', '1')  weight 0.063
+    ('1', 'X1', 'B', '1')  weight 0.063
+    ('1', '1', 'A', 'X1')  weight 0.063
+    ('1', 'X1', 'A', 'X1')  weight 0.062
+    ('1', '1', 'B', 'X1')  weight 0.062
+    ('1', 'X1', 'B', 'X1')  weight 0.062
+    ('1', '1', 'a0', '1')  weight 0.062
+  letters in the words carrying 90% (share of weight): A 0.25, a0 0.25, B 0.25, a0i 0.19
+  survivor part: dim 3; heaviest words: [('1', 'P01', 'Pr0', 'X2'), ('1', 'P01', 'Pr0', 'P01'), ('1', 'P01', 'Pr0', '1'), ('1', 'P01', 'Z1', 'X2'), ('1', 'P01', 'Z1', '1'), ('1', 'P01', 'Z1', 'P01'), ('1', 'Pr0', 'Z1', 'X4'), ('1', 'T2', 'X4', 'X4'), ('1', '1', 'Z1', '1'), ('1', 'Pr0', 'P12', 'P12')]

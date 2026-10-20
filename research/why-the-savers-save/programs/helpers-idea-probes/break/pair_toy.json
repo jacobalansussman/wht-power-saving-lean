@@ -1,0 +1,44 @@
+{
+ "k=2": {
+  "all_packets_helpers": 16,
+  "best_upper_helpers": 6,
+  "its_lower": 6,
+  "lines": 7,
+  "packet_planes": 7,
+  "design": {
+   "2": 0,
+   "3": 0,
+   "4": 2,
+   "5": null,
+   "6": null,
+   "7": null,
+   "10": 2,
+   "11": null,
+   "12": null,
+   "13": null,
+   "14": null,
+   "15": 0
+  }
+ },
+ "k=3": {
+  "all_packets_helpers": 28,
+  "best_upper_helpers": 13,
+  "its_lower": 13,
+  "lines": 7,
+  "packet_planes": 7,
+  "design": {
+   "2": 0,
+   "3": 0,
+   "4": null,
+   "5": null,
+   "6": null,
+   "7": 0,
+   "10": 2,
+   "11": null,
+   "12": 2,
+   "13": null,
+   "14": null,
+   "15": null
+  }
+ }
+}

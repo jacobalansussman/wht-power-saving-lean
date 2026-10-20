@@ -1,0 +1,11 @@
+T74E: W=10855 m=73 sum calls rank = 789855 vs W*m = 792415; root tau = 0.998595992057839207  saving 1 - tau = 0.0014040079421607
+#1042: W=14336 m=73 sum calls rank = 1041408 vs W*m = 1046528; root tau = 0.998325010984062327  saving 1 - tau = 0.0016749890159376
+T74E root_lower = {'root_lower': '17550099277/12500000000000', 'root_upper': '1404007942161/1000000000000000', 'root_lower_decimal': '0.00
+my families at block 8, ranks <= 4: 189 rows; booster-negative at 0/50
+my families at block 12, ranks <= 4: 475 rows; booster-negative at 0/50
+my families at block 12, ranks <= 5: 475 rows; booster-negative at 50/50 (0.02..0.9983); worst -0.00498 at 0.78 v=[-0.0966, 0.1891, 0.4205, -1.0, 0.4914]
+my families at block 17, ranks <= 4: 1155 rows; booster-negative at 0/50
+my families at block 17, ranks <= 5: 1155 rows; booster-negative at 50/50 (0.02..0.9983); worst -0.00498 at 0.78 v=[-0.0967, 0.1898, 0.4198, -1.0, 0.4916]
+my families at block 24, ranks <= 4: 2933 rows; booster-negative at 0/50
+my families at block 32, ranks <= 4: 6545 rows; booster-negative at 0/50
+$H python3 -B vlp_big.py 8:4 12:4 12:5 17:4 17:5 24:4 32:4  90.02s user 1.65s system 96% cpu 1:35.20 total

@@ -1,0 +1,5 @@
+M copies 56  gates by phase (total): {'B': 628, 'cleanup': 906, 'A': 4}
+M copies with any gate in A: 4
+cold 0->4 scratch 56 on distinct planes 56  their gates: {'A': 2424, 'tail': 84}
+M copies reaching a scratch plane on their own chain: 32  perfect matching size: 8
+M-copy dim paths: [((1, 5, 6, 7, 8, 9), 24), ((1, 4, 6, 7, 8, 9), 24), ((1, 4, 5, 6, 8, 9), 8)]

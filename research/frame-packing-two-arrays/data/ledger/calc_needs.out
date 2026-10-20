@@ -1,0 +1,12 @@
+m  | proved floor M/W | max saving allowed | s=0.1: M/W, Delta/(Wm), avg crossing distance, extra labels/move | s=0.01: same
+ 2 | 2.0000 | 0.0000 | M/W<=1.866 EXCLUDED D/(Wm)>=0.0670 cross>=0.134 pack>=0.0718 | M/W<=1.986 EXCLUDED D/(Wm)>=0.0069 cross>=0.014 pack>=0.0070
+ 3 | 2.8000 | 0.0628 | M/W<=2.688 EXCLUDED D/(Wm)>=0.1040 cross>=0.312 pack>=0.1161 | M/W<=2.967 ALLOWED  D/(Wm)>=0.0109 cross>=0.033 pack>=0.0110
+ 4 | 3.1538 | 0.1714 | M/W<=3.482 ALLOWED  D/(Wm)>=0.1294 cross>=0.518 pack>=0.1487 | M/W<=3.945 ALLOWED  D/(Wm)>=0.0138 cross>=0.055 pack>=0.0140
+ 5 | 2.9447 | 0.3290 | M/W<=4.257 ALLOWED  D/(Wm)>=0.1487 cross>=0.743 pack>=0.1746 | M/W<=4.920 ALLOWED  D/(Wm)>=0.0160 cross>=0.080 pack>=0.0162
+ 6 | 2.9447 | 0.3972 | M/W<=5.016 ALLOWED  D/(Wm)>=0.1640 cross>=0.984 pack>=0.1962 | M/W<=5.893 ALLOWED  D/(Wm)>=0.0178 cross>=0.107 pack>=0.0181
+ 8 | 2.9447 | 0.4806 | M/W<=6.498 ALLOWED  D/(Wm)>=0.1877 cross>=1.502 pack>=0.2311 | M/W<=7.835 ALLOWED  D/(Wm)>=0.0206 cross>=0.165 pack>=0.0210
+12 | 2.9447 | 0.5654 | M/W<=9.360 ALLOWED  D/(Wm)>=0.2200 cross>=2.640 pack>=0.2821 | M/W<=11.705 ALLOWED  D/(Wm)>=0.0245 cross>=0.295 pack>=0.0252
+16 | 2.9447 | 0.6105 | M/W<=12.126 ALLOWED  D/(Wm)>=0.2421 cross>=3.874 pack>=0.3195 | M/W<=15.562 ALLOWED  D/(Wm)>=0.0273 cross>=0.438 pack>=0.0281
+25 | 2.9447 | 0.6645 | M/W<=18.119 ALLOWED  D/(Wm)>=0.2752 cross>=6.881 pack>=0.3797 | M/W<=24.208 ALLOWED  D/(Wm)>=0.0317 cross>=0.792 pack>=0.0327
+41 | 2.9447 | 0.7092 | M/W<=28.282 ALLOWED  D/(Wm)>=0.3102 cross>=12.718 pack>=0.4497 | M/W<=39.505 ALLOWED  D/(Wm)>=0.0365 cross>=1.495 pack>=0.0378
+73 | 2.9447 | 0.7483 | M/W<=47.532 ALLOWED  D/(Wm)>=0.3489 cross>=25.468 pack>=0.5358 | M/W<=69.934 ALLOWED  D/(Wm)>=0.0420 cross>=3.066 pack>=0.0438

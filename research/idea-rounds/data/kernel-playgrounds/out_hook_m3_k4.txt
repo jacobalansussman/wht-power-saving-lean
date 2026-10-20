@@ -1,0 +1,7 @@
+m=3 f=5 k=4 dimW=560 dimN=280 | H [[1,1],[1,-1]] (chi=-1)              cap=80 dem=224 ratio=2.8000  two-primes-agree=True
+m=3 f=5 k=4 dimW=560 dimN=280 | L shear [[1,0],[1,1]] (triangular)     cap=80 dem=173 ratio=2.1625  two-primes-agree=True
+m=3 f=5 k=4 dimW=560 dimN=280 | Fib [[1,1],[1,0]] (triangular)         cap=80 dem=173 ratio=2.1625  two-primes-agree=True
+m=3 f=5 k=4 dimW=560 dimN=280 | chi=2 [[1,1],[1,2]]                    cap=80 dem=224 ratio=2.8000  two-primes-agree=True
+m=3 f=5 k=4 dimW=560 dimN=280 | chi=-2 [[1,1],[1,-2]]                  cap=80 dem=224 ratio=2.8000  two-primes-agree=True
+m=3 f=5 k=4 dimW=560 dimN=280 | chi=3 [[1,1],[1,3]]                    cap=80 dem=224 ratio=2.8000  two-primes-agree=True
+m=3 f=5 k=4 dimW=560 dimN=280 | random dense                           cap=80 dem=224 ratio=2.8000  two-primes-agree=True

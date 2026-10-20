@@ -1,0 +1,325 @@
+⚠ [8977/9055] Replayed Work.MixedCost.Close
+warning: Work/MixedCost/Close.lean:169:33: Variable name `d` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _d
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Work/MixedCost/Close.lean:170:33: Variable name `d` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _d
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Work/MixedCost/Close.lean:259:0: 'OAI.PowerSaving.MCost.recurse_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Close.lean:260:0: 'OAI.PowerSaving.MCost.recurse_gen' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Close.lean:261:0: 'OAI.PowerSaving.MCost.recurse_list_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Close.lean:262:0: 'OAI.PowerSaving.MCost.recurse_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9015/9055] Replayed Work.Scratch.Engine
+info: Work/Scratch/Engine.lean:1522:0: 'OAI.PowerSaving.RAM.recurse_runS' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1523:0: 'OAI.PowerSaving.RAM.engine_all_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1524:0: 'OAI.PowerSaving.RAM.engine_program_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1525:0: 'OAI.PowerSaving.RAM.hills_program_via_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1526:0: 'OAI.PowerSaving.RAM.LiveKernel.iff_erase_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1527:0: 'OAI.PowerSaving.RAM.no_erase_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1528:0: 'OAI.PowerSaving.RAM.Route.gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1529:0: 'OAI.PowerSaving.RAM.LiveKernel.of_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1530:0: 'OAI.PowerSaving.RAM.endpoint_reversible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1531:0: 'OAI.PowerSaving.RAM.endpoint_by_copy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1532:0: 'OAI.PowerSaving.two_stage_rate_28' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1533:0: 'OAI.PowerSaving.two_stage_rate_33' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1534:0: 'OAI.PowerSaving.RAM.two_stage_h24_if_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1535:0: 'OAI.PowerSaving.RAM.allotC_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9016/9055] Replayed Work.Block.Split
+warning: Work/Block/Split.lean:67:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:67:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:67:32: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:68:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:68:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:75:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:80:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:82:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:88:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:89:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:109:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:109:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:109:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:110:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:110:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:110:32: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:111:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:111:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+info: Work/Block/Split.lean:257:0: 'OAI.PowerSaving.Binary.blockMat_eq_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Split.lean:258:0: 'OAI.PowerSaving.Binary.exists_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Split.lean:259:0: 'OAI.PowerSaving.Binary.linearIndependent_of_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9017/9055] Replayed Work.Block.Peel
+warning: Work/Block/Peel.lean:118:11: `if_neg` has been deprecated: Use `ite_eq_right` instead
+info: Work/Block/Peel.lean:133:0: 'OAI.PowerSaving.Binary.Split.act' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9018/9055] Replayed Work.Block.Address
+warning: Work/Block/Address.lean:70:20: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Work/Block/Address.lean:181:0: 'OAI.PowerSaving.RAM.Gear.from_gridB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Address.lean:182:0: 'OAI.PowerSaving.RAM.Gear.to_gridB' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9020/9055] Replayed Work.Block.Batches
+info: Work/Block/Batches.lean:353:0: 'OAI.PowerSaving.RAM.Rig.open_blockB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Batches.lean:354:0: 'OAI.PowerSaving.RAM.Rig.sweepB' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9021/9055] Replayed Work.Block.Recursion
+warning: Work/Block/Recursion.lean:52:14: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: Work/Block/Recursion.lean:56:14: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: Work/Block/Recursion.lean:270:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Recursion.lean:337:40: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Recursion.lean:348:39: `if_neg` has been deprecated: Use `ite_eq_right` instead
+info: Work/Block/Recursion.lean:386:0: 'OAI.PowerSaving.RAM.amplifyB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Recursion.lean:387:0: 'OAI.PowerSaving.RAM.recurse_runB' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9022/9055] Replayed Work.Block.Engine
+info: Work/Block/Engine.lean:317:0: 'OAI.PowerSaving.RAM.allotB_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Engine.lean:318:0: 'OAI.PowerSaving.RAM.engine_all_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Engine.lean:319:0: 'OAI.PowerSaving.RAM.engine_program_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9023/9055] Replayed Work.Block.Bridge
+info: Work/Block/Bridge.lean:306:0: 'OAI.PowerSaving.RAM.engine_program_block_costR' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Bridge.lean:307:0: 'OAI.PowerSaving.RAM.engine_program_block_of_tally' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Bridge.lean:308:0: 'OAI.PowerSaving.RAM.hills_program_via_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Bridge.lean:309:0: 'OAI.PowerSaving.Binary.SwapEq.walk_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9024/9055] Replayed Work.GFrame.Engine.Letters
+info: Work/GFrame/Engine/Letters.lean:197:0: 'OAI.PowerSaving.GF.gwalk_ofB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Letters.lean:198:0: 'OAI.PowerSaving.GF.GLiveKernel.ofB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Letters.lean:199:0: 'OAI.PowerSaving.GF.GWord.costR_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9025/9055] Replayed Work.GFrame.Engine.Adapt
+warning: Work/GFrame/Engine/Adapt.lean:123:37: `if_true` has been deprecated: Use `ite_true` instead
+warning: Work/GFrame/Engine/Adapt.lean:160:37: `if_true` has been deprecated: Use `ite_true` instead
+info: Work/GFrame/Engine/Adapt.lean:182:0: 'OAI.PowerSaving.RAM.Rig.perm_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Adapt.lean:183:0: 'OAI.PowerSaving.RAM.GRig.phase_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9026/9055] Replayed Work.GFrame.Engine.Sweep
+info: Work/GFrame/Engine/Sweep.lean:123:0: 'OAI.PowerSaving.RAM.GRig.open_gmove' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Sweep.lean:124:0: 'OAI.PowerSaving.RAM.GRig.gsweep' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Sweep.lean:125:0: 'OAI.PowerSaving.RAM.gamplifies' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9027/9055] Replayed WHTCheck.Solution
+info: WHTCheck/Solution.lean:468:0: 'OAI.PowerSaving.RAM.hills_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:469:0: 'OAI.PowerSaving.WHT.wht_can' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:470:0: 'OAI.PowerSaving.WHT.wht_program_internal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:471:0: 'OAI.PowerSaving.WHT.wht_main' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:472:0: OAI.PowerSaving.WHT.wht_can : ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+  (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+  OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl) (OAI.PowerSaving.RAM.bundle cl)
+    (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+    (fun i => (OAI.PowerSaving.Binary.bits (k i)).tape (Matrix.mulVec (OAI.PowerSaving.Binary.wal (Fin (k i))) (v i)))
+    fun i => 2 ^ k i * OAI.PowerSaving.hills (k i)
+info: WHTCheck/Solution.lean:473:0: OAI.PowerSaving.WHT.wht_main : OAI.PowerSaving.WHT.WHTGoal
+info: WHTCheck/Solution.lean:474:0: def OAI.PowerSaving.WHT.WHTGoal : Prop :=
+∃ solve W, OAI.PowerSaving.WHT.WHTProgram solve W ∧ OAI.PowerSaving.WHT.WHTTimeBounds W
+ℹ [9028/9055] Replayed Work.GFrame.Engine.Level
+info: Work/GFrame/Engine/Level.lean:163:0: 'OAI.PowerSaving.RAM.gamplify' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9029/9055] Replayed Work.Mixed.Prog.Sem
+warning: Work/Mixed/Prog/Sem.lean:51:6: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sem.lean:59:30: `if_false` has been deprecated: Use `ite_false` instead
+warning: Work/Mixed/Prog/Sem.lean:72:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sem.lean:72:27: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sem.lean:73:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sem.lean:73:27: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sem.lean:83:23: `if_true` has been deprecated: Use `ite_true` instead
+warning: Work/Mixed/Prog/Sem.lean:83:32: `if_false` has been deprecated: Use `ite_false` instead
+warning: Work/Mixed/Prog/Sem.lean:85:23: `if_true` has been deprecated: Use `ite_true` instead
+warning: Work/Mixed/Prog/Sem.lean:85:32: `if_false` has been deprecated: Use `ite_false` instead
+warning: Work/Mixed/Prog/Sem.lean:131:69: `if_true` has been deprecated: Use `ite_true` instead
+warning: Work/Mixed/Prog/Sem.lean:134:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sem.lean:144:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sem.lean:147:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sem.lean:234:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sem.lean:251:35: `if_true` has been deprecated: Use `ite_true` instead
+warning: Work/Mixed/Prog/Sem.lean:254:36: `if_false` has been deprecated: Use `ite_false` instead
+warning: Work/Mixed/Prog/Sem.lean:255:30: `if_false` has been deprecated: Use `ite_false` instead
+warning: Work/Mixed/Prog/Sem.lean:254:66: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [h1, hy, and_false, if_false, mul_zero, zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Work/Mixed/Prog/Sem.lean:273:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+info: Work/Mixed/Prog/Sem.lean:282:0: 'OAI.PowerSaving.Binary.maskHi_mul_maskK' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Prog/Sem.lean:283:0: 'OAI.PowerSaving.Binary.hlow_placeS' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Prog/Sem.lean:284:0: 'OAI.PowerSaving.Binary.placeS_loc' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9031/9055] Replayed Work.Mixed.Prog.Route
+warning: Work/Mixed/Prog/Route.lean:88:13: `if_true` has been deprecated: Use `ite_true` instead
+warning: Work/Mixed/Prog/Route.lean:179:57: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: Work/Mixed/Prog/Route.lean:234:26: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+⚠ [9032/9055] Replayed Work.Mixed.Prog.Block
+warning: Work/Mixed/Prog/Block.lean:63:6: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+⚠ [9033/9055] Replayed Work.Mixed.Prog.Exit
+warning: Work/Mixed/Prog/Exit.lean:37:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+⚠ [9034/9055] Replayed Work.Mixed.Prog.Desc
+warning: Work/Mixed/Prog/Desc.lean:102:6: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: Work/Mixed/Prog/Desc.lean:106:21: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+⚠ [9035/9055] Replayed Work.Mixed.Prog.Loops
+warning: Work/Mixed/Prog/Loops.lean:56:2: Unused tactic linter: `change 0 + 0 + T i + T i * Wt i ≤ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Work/Mixed/Prog/Loops.lean:70:21: `if_true` has been deprecated: Use `ite_true` instead
+warning: Work/Mixed/Prog/Loops.lean:70:56: `if_false` has been deprecated: Use `ite_false` instead
+warning: Work/Mixed/Prog/Loops.lean:72:55: `if_true` has been deprecated: Use `ite_true` instead
+warning: Work/Mixed/Prog/Loops.lean:74:21: `if_true` has been deprecated: Use `ite_true` instead
+warning: Work/Mixed/Prog/Loops.lean:74:34: `if_false` has been deprecated: Use `ite_false` instead
+warning: Work/Mixed/Prog/Loops.lean:72:39: This simp argument is unused:
+  Nat.lt_one_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [lt_add_iff_pos_right, if_true, zero_lt_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Work/Mixed/Prog/Loops.lean:120:36: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Loops.lean:123:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Loops.lean:131:2: Unused tactic linter: `change 0 + 0 + T i + T i * Wt i ≤ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9036/9055] Replayed Work.Mixed.Prog.ClassTabs
+warning: Work/Mixed/Prog/ClassTabs.lean:185:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+⚠ [9037/9055] Replayed Work.Mixed.Prog.RouteTabs
+warning: Work/Mixed/Prog/RouteTabs.lean:138:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/RouteTabs.lean:138:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/RouteTabs.lean:139:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/RouteTabs.lean:139:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/RouteTabs.lean:156:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/RouteTabs.lean:156:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/RouteTabs.lean:157:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/RouteTabs.lean:157:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/RouteTabs.lean:236:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+⚠ [9038/9055] Replayed Work.Mixed.Prog.Unload
+warning: Work/Mixed/Prog/Unload.lean:34:24: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: Work/Mixed/Prog/Unload.lean:52:6: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+⚠ [9039/9055] Replayed Work.Mixed.Prog.LoadRAM
+warning: Work/Mixed/Prog/LoadRAM.lean:241:8: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+⚠ [9040/9055] Replayed Work.Mixed.Prog.Acc
+warning: Work/Mixed/Prog/Acc.lean:33:14: `if_pos` has been deprecated: Use `ite_eq_left` instead
+⚠ [9041/9055] Replayed Work.Mixed.Prog.SweepMath
+warning: Work/Mixed/Prog/SweepMath.lean:26:17: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: Work/Mixed/Prog/SweepMath.lean:69:20: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/SweepMath.lean:99:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/SweepMath.lean:102:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+⚠ [9042/9055] Replayed Work.Mixed.Prog.Sweep
+warning: Work/Mixed/Prog/Sweep.lean:70:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sweep.lean:71:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sweep.lean:73:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sweep.lean:76:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sweep.lean:89:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sweep.lean:90:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sweep.lean:92:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sweep.lean:94:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sweep.lean:274:8: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: Work/Mixed/Prog/Sweep.lean:301:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sweep.lean:301:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sweep.lean:302:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sweep.lean:302:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sweep.lean:305:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sweep.lean:305:23: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/Sweep.lean:306:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Prog/Sweep.lean:306:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+⚠ [9043/9055] Replayed Work.Mixed.Prog.SweepUp
+warning: Work/Mixed/Prog/SweepUp.lean:128:29: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+⚠ [9044/9055] Replayed Work.Mixed.Prog.SweepLeaf
+warning: Work/Mixed/Prog/SweepLeaf.lean:91:43: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: Work/Mixed/Prog/SweepLeaf.lean:123:30: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+⚠ [9045/9055] Replayed Work.Mixed.Prog.ClassBody
+warning: Work/Mixed/Prog/ClassBody.lean:260:25: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Prog/ClassBody.lean:278:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+⚠ [9047/9055] Replayed Work.MixedCost.TopDesc
+warning: Work/MixedCost/TopDesc.lean:78:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/TopDesc.lean:104:8: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+info: Work/MixedCost/TopDesc.lean:132:0: 'OAI.PowerSaving.RAM.fromHi_ripple' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9048/9055] Replayed Work.MixedCost.TopRest
+warning: Work/MixedCost/TopRest.lean:66:22: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+info: Work/MixedCost/TopRest.lean:119:0: 'OAI.PowerSaving.RAM.can_hiVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/TopRest.lean:120:0: 'OAI.PowerSaving.RAM.rest_call' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9049/9055] Replayed Work.MixedCost.TopCountM
+info: Work/MixedCost/TopCountM.lean:145:0: 'OAI.PowerSaving.RAM.Eng.ownSrc_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/TopCountM.lean:146:0: 'OAI.PowerSaving.RAM.Eng.cons_succ_idx' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9050/9055] Replayed Work.MixedCost.TopCount
+warning: Work/MixedCost/TopCount.lean:76:10: This simp argument is unused:
+  c1
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [c2, hd, hu1, mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Work/MixedCost/TopCount.lean:525:0: 'OAI.PowerSaving.RAM.Eng.can_ownCnt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/TopCount.lean:526:0: 'OAI.PowerSaving.RAM.Eng.cnt_body' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/TopCount.lean:527:0: 'OAI.PowerSaving.RAM.Eng.can_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9051/9055] Replayed Work.MixedCost.Naive
+info: Work/MixedCost/Naive.lean:62:0: 'OAI.PowerSaving.MCost.naive_jobs' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9052/9055] Replayed Work.MixedCost.TopBody
+warning: Work/MixedCost/TopBody.lean:234:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/TopBody.lean:252:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/TopBody.lean:278:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/TopBody.lean:295:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/TopBody.lean:225:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Work/MixedCost/TopBody.lean:261:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Work/MixedCost/TopBody.lean:406:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Work/MixedCost/TopBody.lean:679:2: Unused tactic linter: `change 0 + 0 + n e + n e * (n e + 2) ≤ n e * (n e + 3) + 1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: Work/MixedCost/TopBody.lean:688:0: 'OAI.PowerSaving.RAM.rest_elem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/TopBody.lean:689:0: 'OAI.PowerSaving.RAM.copy_elem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/TopBody.lean:690:0: 'OAI.PowerSaving.RAM.leftover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/TopBody.lean:691:0: 'OAI.PowerSaving.RAM.assemble' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/TopBody.lean:692:0: 'OAI.PowerSaving.RAM.tree_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/TopBody.lean:693:0: 'OAI.PowerSaving.RAM.can_topG' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9053/9055] Replayed Work.MixedCost.TopMain
+warning: Work/MixedCost/TopMain.lean:69:87: Unused tactic linter: `(try simp only [G])` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Work/MixedCost/TopMain.lean:116:6: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/TopMain.lean:125:22: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/TopMain.lean:131:22: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/TopMain.lean:189:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/TopMain.lean:297:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/TopMain.lean:202:54: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Work/MixedCost/TopMain.lean:251:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: Work/MixedCost/TopMain.lean:309:0: 'OAI.PowerSaving.RAM.Eng.can_book' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/TopMain.lean:310:0: 'OAI.PowerSaving.RAM.Eng.top_body' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9054/9055] Replayed Work.Mixed.Prog.Glue
+warning: Work/Mixed/Prog/Glue.lean:94:8: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: Work/Mixed/Prog/Glue.lean:153:20: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+info: Work/Mixed/Prog/Glue.lean:224:0: 'OAI.PowerSaving.RAM.Eng.hbody' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Prog/Glue.lean:225:0: 'OAI.PowerSaving.RAM.Eng.class_body_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Prog/Glue.lean:226:0: 'OAI.PowerSaving.RAM.Eng.kidsC_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Prog/Glue.lean:227:0: 'OAI.PowerSaving.RAM.Eng.unl_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9055/9055] Replayed Work.Mixed.Prog.CostC
+warning: Work/Mixed/Prog/CostC.lean:63:31: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Work/Mixed/Prog/CostC.lean:66:31: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: Work/Mixed/Prog/CostC.lean:81:11: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Work/Mixed/Prog/CostC.lean:123:17: This simp argument is unused:
+  hmv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Work/Mixed/Prog/CostC.lean:124:17: This simp argument is unused:
+  hmv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Work/Mixed/Prog/CostC.lean:219:13: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Work/Mixed/Prog/CostC.lean:224:78: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (9055 jobs).

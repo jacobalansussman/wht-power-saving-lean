@@ -1,0 +1,11 @@
+Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  /content/work/ours/Compare.lean e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  tools/Compare.lean 
+=== STEP compare-pos START 20:33:15
+=== STEP compare-pos END rc=0 wall=85s maxrss_kb=16105016 last: RESULT: PASS
+=== STEP compare-neg START 20:34:40
+=== STEP compare-neg END rc=1 wall=156s maxrss_kb=15509500 last: RESULT: FAIL
+(negative comparison must be nonzero: rc=1)
+RESULT: PASS
+FAIL: OAI.PowerSaving.decimalExponentC588MH: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentC588MH: definition body differs
+RESULT: FAIL
+COMPARE DONE

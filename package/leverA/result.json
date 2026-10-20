@@ -1,0 +1,305 @@
+{
+  "format": "certificate-package/1 (as community/*/result.json of jacobalansussman/wht-power-saving-lean)",
+  "name": "leverA",
+  "suffix": "L2979H",
+  "title": "The community's #2979 circuit with every head kept (fill 764395fc) and the recursion lever (half cut: 16,576 heads cut by 24 of their 48 axes, target 49), on the mixed-target recursion",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "numerator": 17564707,
+  "negative_numerator": 17564708,
+  "saving": "1.7564707e-3",
+  "exponent": "1 - 17564707/10^10",
+  "exponents": {
+    "statement": "1 - 17564707/10^10",
+    "seam_alpha": "1 - 1756470701/10^12",
+    "rate_point": "1 - 1756470702/10^12",
+    "mixed_root": "1.75647080068e-3",
+    "rate_fact_false_from": "1 - 17564709/10^10 (two grid steps above the figure; at 17564708 the rate fact still holds, the root being 0.0068 grid steps above it)"
+  },
+  "mode": "add",
+  "requires": [
+    "u8x0hq"
+  ],
+  "lakefile_add": [],
+  "tree_change": "none: every new file is under Work/ (lean_lib Work) or comparator/",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainL2979H",
+    "OAI.PowerSaving.convolution_mainL2979H"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainL2979H",
+    "OAI.PowerSaving.convolution_mainL2979H",
+    "OAI.PowerSaving.RAM.hillsL2979H_program",
+    "OAI.PowerSaving.MX.L2979H.engine"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierL2979H.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierL2979HNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierL2979H.Main",
+  "axioms_file": "Work/FourierL2979H/Axioms.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentL2979H",
+  "build_targets": [
+    "Work.L2979H.Stmt",
+    "Work.L2979H.Engine",
+    "Work.FourierL2979H.Main",
+    "Work.FourierL2979H.UniformFourierChallenge",
+    "Work.FourierL2979HNeg.UniformFourierChallenge",
+    "Work.FourierL2979H.Axioms"
+  ],
+  "lean_controls": [
+    {
+      "name": "heads-and-residuals-one-step-too-far",
+      "file": "controls/Heads2979HNeg.lean",
+      "expect": "compiles",
+      "what": "Lean's kernel decides that the host table does not have 16,577 heads and that not every residual is at least 5"
+    },
+    {
+      "name": "rate-fact-two-grid-steps-higher",
+      "file": "controls/Rate2979HSharpCtl.lean",
+      "expect": "compiles",
+      "what": "the rate fact is false at 1 - 17564709/10^10 and at every larger saving (rate2979H_sharp, rate2979H_fails); at 1 - 17564708/10^10 it is still true"
+    },
+    {
+      "name": "16577-heads",
+      "file": "controls/NegHeads.lean",
+      "expect": "fails",
+      "what": "claims 16,577 heads; the kernel refutes it"
+    },
+    {
+      "name": "one-chunk-count-too-high",
+      "file": "controls/NegGlob.lean",
+      "expect": "fails",
+      "what": "claims one host-table chunk count one higher; the kernel refutes it"
+    }
+  ],
+  "comparator": {
+    "positive": "overlay/comparator/fourier-l2979h.json",
+    "negative": "overlay/comparator/fourier-l2979h-neg.json"
+  },
+  "circuit": {
+    "community_pr": "#2979",
+    "head": "be191346 (merged; read on main bb4bccbf)",
+    "fill": {
+      "file": "fill/FILL.json.gz",
+      "sha256": "764395fcc2d883e9dc1ecfedce2131c745dc7ad1b9c41d7b52ef54da16d7f71c",
+      "rows": 271728,
+      "published_fill_sha256": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39",
+      "made_by": "#2979's fill17.py with one constraint per owner (every child-8/10 bin empty) and double.py; fill/README.txt"
+    },
+    "replicas": 74,
+    "calls": 666,
+    "arrays_W": 66304,
+    "roles": 271728,
+    "paid_profile_uniform": {
+      "1": 1645680,
+      "2": 470196,
+      "3": 159468,
+      "4": 71928,
+      "5": 13716,
+      "8": 5328,
+      "48": 28190
+    },
+    "heads": 16576,
+    "heads_by_child": {
+      "8": 8288,
+      "10": 8288
+    },
+    "other_rank48": 11614,
+    "paid_profile_half_cut": {
+      "1": 1645680,
+      "2": 470196,
+      "3": 159468,
+      "4": 71928,
+      "5": 13716,
+      "8": 5328,
+      "24": 16576,
+      "48": 11614
+    },
+    "targets_half_cut": {
+      "73": 49728,
+      "49": 16576
+    },
+    "community_figure_b": "1.7290340e-3"
+  },
+  "modules": 284,
+  "verifier_pr_files": {
+    "closure_modules": 581,
+    "limit": 500,
+    "merged": true,
+    "merge_tool": "h-bos's bos_merge.py (round wht45/release, h-bos/INTERFACE.md): level chain, groups of modules of one level merged into one file",
+    "modules_after_merge": 447,
+    "merged_groups": 25,
+    "modules_in_groups": 159,
+    "pr_files": 449,
+    "largest_bytes": 3495001,
+    "total_bytes": 17539524,
+    "rechecked_in_lean": "the merged stage compiled from source by the verifier's lean phase, kernel-checked by Lean and nanoda (Colab C4, and again on Colab C1); identity check of every theorem against the built tree (Colab C1)"
+  },
+  "checks": [
+    {
+      "name": "lake build of the whole closure",
+      "verdict": "PASS",
+      "where": "Colab C1",
+      "logs": [
+        "logs/2026-10-19-build/build.out",
+        "logs/2026-10-19-build/build-a/",
+        "logs/2026-10-19-build/build-b/engine.log",
+        "logs/2026-10-19-build/final.out"
+      ],
+      "detail": "in a copy of the U8X0HQ stack: the 41 host-table data jobs, then 9,511 jobs (the engine, the chain, the side checks) in 244 s at most 7.7 GB, rc 0; no 'declaration uses sorry' warning; the final run's install finds the 286 files identical and the build up to date (9,507 jobs)"
+    },
+    {
+      "name": "#print axioms",
+      "verdict": "standard only",
+      "where": "Colab C1",
+      "logs": [
+        "logs/2026-10-19-build/l2979h/axioms.log",
+        "logs/2026-10-19-build/l2979h/axioms-extra.log"
+      ],
+      "detail": "propext, Classical.choice, Quot.sound for OAI.PowerSaving.transform_mainL2979H, OAI.PowerSaving.convolution_mainL2979H, OAI.PowerSaving.RAM.hillsL2979H_program, OAI.PowerSaving.MX.L2979H.engine, OAI.PowerSaving.MX.L2979H.EngineStmt.lift, OAI.PowerSaving.SeamL2979H.engine_L2979H, OAI.PowerSaving.RAM.envelope_program_geL2979H, OAI.PowerSaving.SeamL2979H.alphaL2979H_lt_target, OAI.PowerSaving.Skies.alpha_thetaL2979H"
+    },
+    {
+      "name": "source greps",
+      "verdict": "0 uses",
+      "where": "Colab C1",
+      "logs": [
+        "logs/2026-10-19-build/l2979h/sorry-grep.txt",
+        "logs/2026-10-19-build/l2979h/forbidden-grep.txt",
+        "logs/2026-10-19-build/l2979h/forbidden-grep-raw.txt",
+        "logs/2026-10-19-build/l2979h/checked-lean-files.txt"
+      ],
+      "detail": "sorry, admit, axiom declarations, native_decide, implemented_by, @[extern], unsafe, ofReduceBool/Nat, skipKernelTC, Lean.Elab, elab_rules, macro_rules over the 282 Lean files of the closure (the two challenge files hold OpenAI's two sorry lines each, by design) and the 4 side checks: 0 uses; 5 mentions inside backquotes in header comments ('No `sorry`, no `native_decide`.')"
+    },
+    {
+      "name": "challenge files re-derived from OpenAI's statement",
+      "verdict": "byte-identical",
+      "where": "Colab C1",
+      "logs": [
+        "logs/2026-10-19-build/final.out",
+        "logs/2026-10-19-build/l2979h/derived-FourierL2979H.lean",
+        "logs/2026-10-19-build/l2979h/derived-FourierL2979HNeg.lean"
+      ],
+      "detail": "from /content/work/ref/UniformFourier-fd4aeeb2....lean (sha256 4c571f27...): only the exponent (1 - 17564707/10^10, negative 1 - 17564708/10^10) and the names change"
+    },
+    {
+      "name": "tools/Compare.lean positive",
+      "verdict": "PASS",
+      "where": "Colab C1",
+      "logs": [
+        "logs/2026-10-19-build/l2979h/compare-pos.log"
+      ],
+      "detail": "143 s, 16.0 GB"
+    },
+    {
+      "name": "tools/Compare.lean negative (one grid step higher, 1 - 17564708/10^10)",
+      "verdict": "FAIL (expected)",
+      "where": "Colab C1",
+      "logs": [
+        "logs/2026-10-19-build/l2979h/compare-neg.log"
+      ],
+      "detail": "decimalExponentL2979H: definition body differs; 105 s"
+    },
+    {
+      "name": "official comparator positive (overlay/comparator/fourier-l2979h.json)",
+      "verdict": "accepted",
+      "where": "Colab C1 (jail, uid 65534)",
+      "logs": [
+        "logs/2026-10-19-build/L2979H-cmp.out",
+        "logs/2026-10-19-build/l2979h/cmp/l2979h-pos.log"
+      ],
+      "detail": "'nanoda kernel accepts the solution', 'Lean default kernel accepts the solution', 'Your solution is okay!'; 2823 s, 15.1 GB"
+    },
+    {
+      "name": "official comparator negative (overlay/comparator/fourier-l2979h-neg.json)",
+      "verdict": "rejected (expected)",
+      "where": "Colab C1 (jail, uid 65534)",
+      "logs": [
+        "logs/2026-10-19-build/L2979H-cmp.out",
+        "logs/2026-10-19-build/l2979h/cmp/l2979h-neg.log"
+      ],
+      "detail": "'Const does not match between challenge and target OAI.PowerSaving.decimalExponentL2979H'; 347 s"
+    },
+    {
+      "name": "bigospeedrun verifier re-created offline (merged stage, bound 17564707/10^10)",
+      "verdict": "accepted",
+      "where": "Colab C4",
+      "logs": [
+        "logs/2026-10-19-bos-C4/L2979H-bos.out",
+        "logs/2026-10-19-bos-C4/bos-L2979H/"
+      ],
+      "detail": "closure 581 modules, over the 500-file limit, merged to 447 modules (25 groups holding 159 modules): 449 PR files, static check pass; lean phase compiles the stage from source and accepts it (3866 s, 10.0 GB), audit 'Race.bound' depends on [propext, Classical.choice, Quot.sound], nanoda accepts it (1801 s)"
+    },
+    {
+      "name": "bigospeedrun verifier negative (bound 17564708/10^10, one grid step higher)",
+      "verdict": "rejected (expected)",
+      "where": "Colab C4",
+      "logs": [
+        "logs/2026-10-19-bos-C4/L2979H-bos.out",
+        "logs/2026-10-19-bos-C4/bos-L2979Hneg/"
+      ],
+      "detail": "the same merged stage at the higher bound is rejected"
+    },
+    {
+      "name": "identity check: built tree against the merged stage (h-bos hbos-check-fast.sh)",
+      "verdict": "PASS",
+      "where": "Colab C1",
+      "logs": [
+        "logs/2026-10-19-build/ident.out",
+        "logs/2026-10-19-build/fast-L2979H/"
+      ],
+      "detail": "theorems: 9584; same statement in both: all above; proof term identical for 9584, different for 0 (allowed)"
+    },
+    {
+      "name": "bigospeedrun verifier re-created offline, second copy",
+      "verdict": "accepted; negative rejected",
+      "where": "Colab C1",
+      "logs": [
+        "logs/2026-10-19-build/L2979H-bos.out",
+        "logs/2026-10-19-build/bos-L2979H/",
+        "logs/2026-10-19-build/bos-L2979Hneg/"
+      ],
+      "detail": "the same merged stage, built again on C1 (2 threads)"
+    },
+    {
+      "name": "release controls",
+      "verdict": "all as expected",
+      "where": "Colab C1",
+      "logs": [
+        "logs/2026-10-19-build/ctl.out",
+        "logs/2026-10-19-build/controls/"
+      ],
+      "detail": "Heads2979HNeg (not 16,577 heads; not every residual >= 5) and Rate2979HSharpCtl (rate fact false at 1 - 17564709/10^10 and beyond) compile with standard axioms; NegHeads and NegGlob fail to compile as required"
+    },
+    {
+      "name": "generators: generators/REGENERATE.sh",
+      "verdict": "all as expected",
+      "where": "Mac (Python, 0.26 GB)",
+      "logs": [
+        "logs/regenerate/REGENERATE.out",
+        "logs/regenerate/regenerate.log",
+        "logs/regenerate/compare.tsv"
+      ],
+      "detail": "185 generated overlay files and the 4 controls + 3 side checks made again byte-identical, 0 different; the generators refuse one step too high (17564708 for the rate fact and the statement, 8,289 heads, 14611616 for the words, perturbed tables, dispatch 417/249)"
+    },
+    {
+      "name": "the fill, with the community's own code",
+      "verdict": "PASS",
+      "where": "Colab C1 (ah-gate)",
+      "logs": [
+        "fill/checks/",
+        "fill/README.txt"
+      ],
+      "detail": "#2979's check_allocation.py PASS_RANK7_LITERAL_OWNERS_AND_EXACT_MOMENT (5 controls rejected); #2979's complete admission replay PASS_RANK7_JOINT_ENDFRAMES_COMPLETE_REPLAY with fresh natives (139 of 139 strict controls rejected, kappa = the claim, PASS_RELEASE); 16,576 heads; paid profile = #2979's PROFILE.json"
+    }
+  ]
+}

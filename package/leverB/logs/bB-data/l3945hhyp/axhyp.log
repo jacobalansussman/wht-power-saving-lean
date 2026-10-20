@@ -1,0 +1,12 @@
+'OAI.PowerSaving.MX.L3945H.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945H.engine_L3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945H.alphaL3945H_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+@OAI.PowerSaving.transform_mainL3945H : ∀ [hE_L3945H : Fact OAI.PowerSaving.MX.L3945H.EngineStmt],
+  OAI.PowerSaving.DFTGoalL3945H
+@OAI.PowerSaving.convolution_mainL3945H : ∀ [hE_L3945H : Fact OAI.PowerSaving.MX.L3945H.EngineStmt],
+  OAI.PowerSaving.ConvGoalL3945H

@@ -1,0 +1,42 @@
+{
+ "control": {
+  "b": "1664727258740678855772/10^24",
+  "kappa": "1661960547713947/10^18",
+  "reproduced": true
+ },
+ "audit_control": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES (unchanged U8 word)",
+ "step1": {
+  "groups": 14,
+  "per_group": {
+   "M_copies": 8,
+   "entrance_dims": "4 x dim 1 + 4 x dim 4 (8 groups) or dim 5 (6 groups)",
+   "targets": 4,
+   "target_pairs": 2,
+   "packets": 8,
+   "packet_sources": 8,
+   "packet_frame_visitors": "exactly 3: the two creators + the M copy (hh 97, hx 10, xx 5)",
+   "readers_per_packet": 2,
+   "readers_in_different_pairs": true,
+   "final_reads": 8,
+   "pre_reads_at_entrance_line": 16
+  },
+  "idea_claim_one_group_one_plane_4_relays": "REFUTED: one group = one 4-target set (2 butterfly pairs) = 8 super-packet frames = 8 relays (third visitors)"
+ },
+ "step2": {
+  "min_relays_per_group": 8,
+  "all_groups": true,
+  "model": "all non-relay chains fixed (no new runs), helpers may not read targets, timing ignored, value-free (any coefficients)",
+  "devices_covered": [
+   "coded relays",
+   "differential reads",
+   "first reads at frame 0",
+   "switchable-ratio sources",
+   "re-valued pre-combination keeping chains",
+   "target-target relays"
+  ],
+  "one_run_split_candidates": 0,
+  "registers_reaching_U_t_besides_M": 0
+ },
+ "step3": "no splice: k<8 infeasible under the rules",
+ "step4": "no new price; what-ifs: all 112 M copies 1.8754e-3 (+12.66 %, kappa capped 1.7304e-3), hole bracket 1.7463e-3 (+4.90 %)"
+}

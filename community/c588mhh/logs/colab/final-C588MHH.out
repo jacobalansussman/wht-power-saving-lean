@@ -1,0 +1,17 @@
+Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  /content/work/ours/Compare.lean e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  tools/Compare.lean 
+=== STEP compare-pos START 20:11:33
+=== STEP compare-pos END rc=0 wall=107s maxrss_kb=15753968 last: RESULT: PASS
+=== STEP compare-neg START 20:13:20
+=== STEP compare-neg END rc=1 wall=118s maxrss_kb=16089208 last: RESULT: FAIL
+(negative comparison must be nonzero: rc=1)
+RESULT: PASS
+FAIL: OAI.PowerSaving.decimalExponentC588MHH: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentC588MHH: definition body differs
+RESULT: FAIL
+COMPARATOR positive rc=1 20:15:21
+uncaught exception: Child exited with 1
+=== hl3-C588MHH-pos END rc=1 wall=1s Tue Oct 13 20:15:21 UTC 2026 epoch=1791922521
+COMPARATOR negative rc=1 (must be nonzero) 20:15:24
+uncaught exception: Child exited with 1
+=== hl3-C588MHH-neg END rc=1 wall=1s Tue Oct 13 20:15:23 UTC 2026 epoch=1791922523
+FINAL DONE

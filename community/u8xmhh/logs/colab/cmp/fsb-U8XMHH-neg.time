@@ -1,0 +1,24 @@
+Command exited with non-zero status 1
+	Command being timed: "/content/work/fs-build/cc/jail2.sh /content/work/fs-build/B/lean/complex588 /bin/sh -c exec lake env /bin/sh -c 'PATH=/content/work/fs-build/cc/fresh-bin:$PATH; export PATH; exec comparator comparator/fourier-u8xmhh-neg.json'"
+	User time (seconds): 72.78
+	System time (seconds): 21.27
+	Percent of CPU this job got: 64%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:25.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6916640
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 58204
+	Minor (reclaiming a frame) page faults: 608067
+	Voluntary context switches: 308134
+	Involuntary context switches: 5120
+	Swaps: 0
+	File system inputs: 5461728
+	File system outputs: 2752
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

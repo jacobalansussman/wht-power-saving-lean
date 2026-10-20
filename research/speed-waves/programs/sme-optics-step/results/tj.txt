@@ -1,0 +1,30 @@
+[timing lock] waiting for timing lock 04:41:22
+[timing lock] got lock 04:43:13; load: { 32.48 36.88 38.38 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=mt SW=32 PFD=4 col radices: 4 8 8 8
+# FFTW plans (MEASURE, time limit) took 0.0 s
+# cluster: NEON threads use KFR-d; SME takes 8 row units (8 rows each) at a time; tail 3
+CHECK cluster step (1 SME + 3 NEON) read at -n vs pocketfft: max rel 1.326e-15  PASS
+CHECK cluster step (4 NEON) read at -n vs pocketfft: max rel 7.849e-16  PASS
+RESULT cluster propagation step 2048^2 c128     cluster 1 SME + 3 NEON       best    16.0884  median    16.4138  ns/call(ms)  (calls/rep 14)
+RESULT cluster propagation step 2048^2 c128     cluster 4 NEON (same plan)   best    18.0188  median    18.1179  ns/call(ms)  (calls/rep 11)
+RESULT cluster propagation step 2048^2 c128     1 SME thread (others spin)   best    32.3223  median    34.6669  ns/call(ms)  (calls/rep 8)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=mt SW=16 PFD=4 col radices: 4 8 8 8
+# FFTW plans (MEASURE, time limit) took 0.0 s
+# cluster: NEON threads use KFR-d; SME takes 8 row units (8 rows each) at a time; tail 3
+CHECK cluster step (1 SME + 3 NEON) read at -n vs pocketfft: max rel 1.273e-15  PASS
+CHECK cluster step (4 NEON) read at -n vs pocketfft: max rel 7.849e-16  PASS
+RESULT cluster propagation step 2048^2 c128     cluster 1 SME + 3 NEON       best    14.5630  median    14.9774  ns/call(ms)  (calls/rep 14)
+RESULT cluster propagation step 2048^2 c128     cluster 4 NEON (same plan)   best    17.2319  median    17.5458  ns/call(ms)  (calls/rep 13)
+RESULT cluster propagation step 2048^2 c128     1 SME thread (others spin)   best    30.4173  median    32.2288  ns/call(ms)  (calls/rep 7)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=step SW=16 PFD=4 col radices: 4 8 8 8
+RESULT propagation step 2048^2 c128             SME step (rev. order)        best    26.6482  median    26.8788  ns/call(ms)  (calls/rep 9)
+RESULT propagation step 2048^2 c128             PFFFT-d rows+transp          best    53.0622  median    53.4547  ns/call(ms)  (calls/rep 5)
+RESULT propagation step 2048^2 c128             KFR-d rows+transp (rev.)     best    52.7097  median    53.2465  ns/call(ms)  (calls/rep 5)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=4096 mode=step SW=16 PFD=4 col radices: 8 8 8 8
+RESULT propagation step 4096^2 c128             SME step (rev. order)        best    82.9333  median    83.9287  ns/call(ms)  (calls/rep 3)
+RESULT propagation step 4096^2 c128             PFFFT-d rows+transp          best   235.2382  median   236.2359  ns/call(ms)  (calls/rep 1)
+RESULT propagation step 4096^2 c128             KFR-d rows+transp (rev.)     best   217.8993  median   219.4555  ns/call(ms)  (calls/rep 1)

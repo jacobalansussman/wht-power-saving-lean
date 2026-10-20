@@ -1,0 +1,420 @@
+same	Work/FourierL2979/ArbitraryLength.lean
+same	Work/FourierL2979/Asymptotics.lean
+same	Work/FourierL2979/Axioms.lean
+same	Work/FourierL2979/ConvolutionProgram.lean
+same	Work/FourierL2979/Goal.lean
+same	Work/FourierL2979/Main.lean
+same	Work/FourierL2979/Seam.lean
+same	Work/FourierL2979/SectorAlgorithm.lean
+same	Work/FourierL2979/SynchronizedAlgorithm.lean
+same	Work/FourierL2979/TransformProgram.lean
+same	Work/FourierL2979/UniformBounds.lean
+same	Work/FourierL2979/UniformFourierChallenge.lean
+same	Work/FourierL2979/WorkingCompiler.lean
+same	Work/FourierL2979/WorkingPreparation.lean
+same	Work/FourierL2979/WorkingTransform.lean
+same	Work/FourierL2979Neg/UniformFourierChallenge.lean
+same	Work/GCert/Data/Gen/S2979B.lean
+same	Work/GCert/Data/Gen/S2979B/D0.lean
+same	Work/GCert/Data/Gen/S2979B/D1.lean
+same	Work/GCert/Data/Gen/S2979B/D2.lean
+same	Work/GCert/Data/Gen/S2979B/D3.lean
+same	Work/GCert/Data/Gen/S2979B/D4.lean
+same	Work/GCert/Data/Gen/S2979B/D5.lean
+same	Work/GCert/Data/Gen/S2979B/D6.lean
+same	Work/GCert/Data/Gen/S2979BEnds.lean
+same	Work/GCert/Data/Gen/S2979BFp.lean
+same	Work/GCert/Data/Gen/S2979BHist.lean
+same	Work/GCert/Data/Gen/S2979BLab.lean
+same	Work/GCert/Data/Gen/S2979BLabB.lean
+same	Work/GCert/Data/Gen/S2979BRes.lean
+same	Work/GCert/Data/Gen/S2979BRows.lean
+same	Work/GCert/Data/Gen/S2979BRows0.lean
+same	Work/GCert/Data/Gen/S2979BRows1.lean
+same	Work/GCert/Data/Gen/S2979BRows10.lean
+same	Work/GCert/Data/Gen/S2979BRows11.lean
+same	Work/GCert/Data/Gen/S2979BRows12.lean
+same	Work/GCert/Data/Gen/S2979BRows13.lean
+same	Work/GCert/Data/Gen/S2979BRows14.lean
+same	Work/GCert/Data/Gen/S2979BRows15.lean
+same	Work/GCert/Data/Gen/S2979BRows16.lean
+same	Work/GCert/Data/Gen/S2979BRows17.lean
+same	Work/GCert/Data/Gen/S2979BRows2.lean
+same	Work/GCert/Data/Gen/S2979BRows3.lean
+same	Work/GCert/Data/Gen/S2979BRows4.lean
+same	Work/GCert/Data/Gen/S2979BRows5.lean
+same	Work/GCert/Data/Gen/S2979BRows6.lean
+same	Work/GCert/Data/Gen/S2979BRows7.lean
+same	Work/GCert/Data/Gen/S2979BRows8.lean
+same	Work/GCert/Data/Gen/S2979BRows9.lean
+same	Work/GCert/Data/Gen/S2979BScB.lean
+same	Work/GCert/Data/Gen/S2979BScF.lean
+same	Work/GCert/Data/Gen/S2979BSched.lean
+same	Work/GCert/Data/Gen/S2979BTab0.lean
+same	Work/GCert/Data/Gen/S2979BTab1.lean
+same	Work/GCert/Data/Gen/S2979BTab2.lean
+same	Work/GCert/Data/Gen/S2979BTab3.lean
+same	Work/GCert/Data/Gen/S2979BWC.lean
+same	Work/GCert/Data/Gen/S2979BWT.lean
+same	Work/GCert/Data/Gen/S2979E.lean
+same	Work/GCert/Data/Gen/S2979E/D0.lean
+same	Work/GCert/Data/Gen/S2979E/D1.lean
+same	Work/GCert/Data/Gen/S2979E/D2.lean
+same	Work/GCert/Data/Gen/S2979E/D3.lean
+same	Work/GCert/Data/Gen/S2979E/D4.lean
+same	Work/GCert/Data/Gen/S2979E/D5.lean
+same	Work/GCert/Data/Gen/S2979E/D6.lean
+same	Work/GCert/Data/Gen/S2979EEnds.lean
+same	Work/GCert/Data/Gen/S2979EFp.lean
+same	Work/GCert/Data/Gen/S2979EHist.lean
+same	Work/GCert/Data/Gen/S2979ELab.lean
+same	Work/GCert/Data/Gen/S2979ELabB.lean
+same	Work/GCert/Data/Gen/S2979ERes.lean
+same	Work/GCert/Data/Gen/S2979ERows.lean
+same	Work/GCert/Data/Gen/S2979ERows0.lean
+same	Work/GCert/Data/Gen/S2979ERows1.lean
+same	Work/GCert/Data/Gen/S2979ERows10.lean
+same	Work/GCert/Data/Gen/S2979ERows11.lean
+same	Work/GCert/Data/Gen/S2979ERows12.lean
+same	Work/GCert/Data/Gen/S2979ERows13.lean
+same	Work/GCert/Data/Gen/S2979ERows14.lean
+same	Work/GCert/Data/Gen/S2979ERows15.lean
+same	Work/GCert/Data/Gen/S2979ERows16.lean
+same	Work/GCert/Data/Gen/S2979ERows17.lean
+same	Work/GCert/Data/Gen/S2979ERows2.lean
+same	Work/GCert/Data/Gen/S2979ERows3.lean
+same	Work/GCert/Data/Gen/S2979ERows4.lean
+same	Work/GCert/Data/Gen/S2979ERows5.lean
+same	Work/GCert/Data/Gen/S2979ERows6.lean
+same	Work/GCert/Data/Gen/S2979ERows7.lean
+same	Work/GCert/Data/Gen/S2979ERows8.lean
+same	Work/GCert/Data/Gen/S2979ERows9.lean
+same	Work/GCert/Data/Gen/S2979EScB.lean
+same	Work/GCert/Data/Gen/S2979EScF.lean
+same	Work/GCert/Data/Gen/S2979ESched.lean
+same	Work/GCert/Data/Gen/S2979ETab0.lean
+same	Work/GCert/Data/Gen/S2979ETab1.lean
+same	Work/GCert/Data/Gen/S2979ETab2.lean
+same	Work/GCert/Data/Gen/S2979ETab3.lean
+same	Work/GCert/Data/Gen/S2979EWC.lean
+same	Work/GCert/Data/Gen/S2979EWT.lean
+same	Work/GCert/Data/InstS2979B.lean
+same	Work/GCert/Data/InstS2979E.lean
+same	Work/GCert/Data/RateS2979Bx.lean
+same	Work/GCert/Data/RateS2979Ex.lean
+same	Work/GCert/Data/S2979BGlue401.lean
+same	Work/GCert/Data/S2979BPrice.lean
+same	Work/GCert/Data/S2979EGlue401.lean
+same	Work/GCert/Data/S2979EPrice.lean
+same	Work/KLowW/Data.lean
+same	Work/KLowW/Inv.lean
+same	Work/KLowW/InvMain.lean
+same	Work/KLowW/LabK.lean
+same	Work/KLowW/LabSound.lean
+same	Work/KLowW/Main.lean
+same	Work/KLowW/Route.lean
+same	Work/KLowW/ScalK.lean
+same	Work/KLowW/ScalSound.lean
+same	Work/KLowW/Win.lean
+same	Work/L2979/Stmt.lean
+same	Work/Mixed/Rate2979.lean
+same	Work/Mixed/SeamConst.lean
+same	Work/PWGen/Fp.lean
+same	Work/PWGen/Res.lean
+same	Work/PWGen/Roles.lean
+same	Work/PWGen/S2979Pair.lean
+same	Work/Warp/KLW.lean
+same	Work/Warp/Sem.lean
+same	Work/Warp/Win.lean
+same	Work/Warp/Word.lean
+same	Work/XHostT/Data/D2979/Disp.lean
+same	Work/XHostT/Data/H2979/Calls.lean
+same	Work/XHostT/Data/H2979/Glob.lean
+same	Work/XHostT/Data/H2979/GlobC0.lean
+same	Work/XHostT/Data/H2979/GlobC1.lean
+same	Work/XHostT/Data/H2979/GlobC2.lean
+same	Work/XHostT/Data/H2979/GlobC3.lean
+same	Work/XHostT/Data/H2979/GlobC4.lean
+same	Work/XHostT/Data/H2979/GlobC5.lean
+same	Work/XHostT/Data/H2979/Order.lean
+same	Work/XHostT/Data/H2979/P0.lean
+same	Work/XHostT/Data/H2979/P1.lean
+same	Work/XHostT/Data/H2979/P10.lean
+same	Work/XHostT/Data/H2979/P11.lean
+same	Work/XHostT/Data/H2979/P12.lean
+same	Work/XHostT/Data/H2979/P13.lean
+same	Work/XHostT/Data/H2979/P14.lean
+same	Work/XHostT/Data/H2979/P15.lean
+same	Work/XHostT/Data/H2979/P16.lean
+same	Work/XHostT/Data/H2979/P17.lean
+same	Work/XHostT/Data/H2979/P18.lean
+same	Work/XHostT/Data/H2979/P19.lean
+same	Work/XHostT/Data/H2979/P2.lean
+same	Work/XHostT/Data/H2979/P20.lean
+same	Work/XHostT/Data/H2979/P21.lean
+same	Work/XHostT/Data/H2979/P22.lean
+same	Work/XHostT/Data/H2979/P23.lean
+same	Work/XHostT/Data/H2979/P24.lean
+same	Work/XHostT/Data/H2979/P25.lean
+same	Work/XHostT/Data/H2979/P26.lean
+same	Work/XHostT/Data/H2979/P3.lean
+same	Work/XHostT/Data/H2979/P4.lean
+same	Work/XHostT/Data/H2979/P5.lean
+same	Work/XHostT/Data/H2979/P6.lean
+same	Work/XHostT/Data/H2979/P7.lean
+same	Work/XHostT/Data/H2979/P8.lean
+same	Work/XHostT/Data/H2979/P9.lean
+same	Work/XHostT/Data/H2979/Whole.lean
+same	Work/XHostT/HFW2979/Cert.lean
+same	Work/XHostT/HFW2979/Def.lean
+same	Work/XHostT/HFW2979/Heads.lean
+same	Work/XHostT/HFW2979/Stage.lean
+same	Work/XHostT/HFW2979/ToHF.lean
+same	comparator/fourier-l2979-neg.json
+same	comparator/fourier-l2979.json
+made, not in the overlay (outside the closure)	Work/FourierS2979B/ArbitraryLength.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/Asymptotics.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/Axioms.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/ConvolutionProgram.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/Goal.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/Main.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/Seam.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/SectorAlgorithm.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/SynchronizedAlgorithm.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/TransformProgram.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/UniformBounds.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/UniformFourierChallenge.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/WorkingCompiler.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/WorkingPreparation.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979B/WorkingTransform.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979BNeg/UniformFourierChallenge.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/ArbitraryLength.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/Asymptotics.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/Axioms.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/ConvolutionProgram.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/Goal.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/Main.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/Seam.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/SectorAlgorithm.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/SynchronizedAlgorithm.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/TransformProgram.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/UniformBounds.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/UniformFourierChallenge.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/WorkingCompiler.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/WorkingPreparation.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979E/WorkingTransform.lean
+made, not in the overlay (outside the closure)	Work/FourierS2979ENeg/UniformFourierChallenge.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB0.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB1.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB10.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB11.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB12.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB13.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB14.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB2.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB3.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB4.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB5.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB6.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB7.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB8.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScB9.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF0.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF1.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF10.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF11.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF12.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF13.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF14.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF2.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF3.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF4.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF5.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF6.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF7.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF8.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BScF9.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg0.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg1.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg10.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg11.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg12.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg13.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg14.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg2.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg3.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg4.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg5.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg6.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg7.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg8.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979BSeg9.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB0.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB1.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB10.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB11.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB12.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB13.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB14.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB2.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB3.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB4.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB5.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB6.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB7.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB8.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScB9.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF0.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF1.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF10.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF11.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF12.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF13.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF14.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF2.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF3.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF4.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF5.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF6.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF7.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF8.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979EScF9.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg0.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg1.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg10.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg11.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg12.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg13.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg14.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg2.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg3.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg4.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg5.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg6.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg7.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg8.lean
+made, not in the overlay (outside the closure)	Work/GCert/Data/Gen/S2979ESeg9.lean
+made, not in the overlay (outside the closure)	Work/KLowW/WinStage.lean
+made, not in the overlay (outside the closure)	Work/Mixed/Rate2979Sharp.lean
+made, not in the overlay (outside the closure)	Work/PWGen/B401W/EndW.lean
+made, not in the overlay (outside the closure)	Work/PWGen/B401W/GGeomW.lean
+made, not in the overlay (outside the closure)	Work/PWGen/B401W/GNetCertW.lean
+made, not in the overlay (outside the closure)	Work/PWGen/B401W/GNetDefW.lean
+made, not in the overlay (outside the closure)	Work/PWGen/B401W/GNetStageW.lean
+made, not in the overlay (outside the closure)	Work/XHostT/Data/H2979/MANIFEST.json
+made, not in the overlay (outside the closure)	comparator/fourier-s2979b-neg.json
+made, not in the overlay (outside the closure)	comparator/fourier-s2979b.json
+made, not in the overlay (outside the closure)	comparator/fourier-s2979e-neg.json
+made, not in the overlay (outside the closure)	comparator/fourier-s2979e.json
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/BlockAccounting/Sharp.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/L2979/Engine.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/L2979/EngineOfGeomW.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/L2979/Prov.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Bound.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Bridge/Core.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Bridge/HFTest2979.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Bridge/HFTest2979W.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Bridge/HeadsFirst.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Bridge/HeadsFirst2979.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Bridge/Inst.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Bridge/Inst2979.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Flow.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/HeadM1.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/LemmaA.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Phi.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Acc.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Block.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/CTab.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/ClassBody.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/ClassSide.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/ClassTabs.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/ClsDom.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/CostC.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Desc.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Exit.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Glue.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/LoadRAM.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Loops.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Route.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/RouteTabs.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Sem.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Seq.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Sweep.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/SweepLeaf.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/SweepMath.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/SweepUp.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Unload.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Prog/Valid.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Rate3815.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/Rate3945.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/Mixed/TwoTarget.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Adapter.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Bill.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Bridge.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/BridgeTwo.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Close.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/EngineClose.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/EngineFinal.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Final.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Fuel.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Jobs.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Match.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Naive.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Poly.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/SeamCost.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/SeamPort.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/SeamProg.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/TopBody.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/TopCount.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/TopCountM.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/TopDesc.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/TopDom.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/TopMain.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/TopRest.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/MixedCost/Wire.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostD/FramesK.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostD/HCert.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostD/HDef.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostD/HEnd.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostD/HGeom.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostD/HSchedD.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostD/HStage.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostD/Prov.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostR/HSchedR.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/Data/H2979/DispLink.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/Data/H2979/Heads.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HF/Cert.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HF/Count2979C.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HF/Def.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HF/GeomA4.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HF/GeomInst.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HF/Heads.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HF/Inst2979.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HF/Stage.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HF/ToHF.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HFW2979/Disp2979W.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HFW2979/GeomA4W.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/HFW2979/GeomInstW.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/Inst/S2979.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/Inst/S2979Facts.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/KCheck.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/KGlue.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/KHead.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/KHeadC.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/KHist.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/KHistC.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/KWhole.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TCert.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TCertW.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TDef.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TDefW.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TEnd.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TGeom.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TGeomW.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TLocal.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TProvW.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TRoles.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TSchedK.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TStage.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TStageW.lean
+in the overlay, not generated here (hand-written, or generic: see README.txt)	Work/XHostT/TTab.lean

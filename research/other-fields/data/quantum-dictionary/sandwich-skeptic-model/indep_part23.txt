@@ -1,0 +1,14 @@
+witness memberships: a0 in X_S True, phi a0 in X_T True, a* in Y_S True, phi a* in Y_T True, mu in Y_S True, phi mu in X_T True, nu in X_S True, phi nu in Y_T True
+distances: d(a0,a*)=2 d(a0,mu)=1 d(mu,a*)=1 | d(phi a0,phi mu)=1 d(phi mu,phi a*)=1 | old-style d(a0,phi a0)=1 d(a*,phi a*)=1 d(mu,phi mu)=3 d(nu,phi nu)=1
+timeline geodesic: X_S <u_S>->nu->a0->F True; X_T <u_T>->phi a0->phi mu->F True; Y_S L0->a*->mu->e_S True; Y_T L0->phi nu->phi a*->e_T True; nu==<u_S> True, phi a0==<u_T> True
+phi found: ['011101', '000011', '111100', '000101', '010000', '111000'] symplectic: True
+p_u = (u|u) lies in every X_u frame: True; (u|0) in L_<u>: False
+R-coordinates: p'_S=p_S in a0 True, p'_T in a0 True, q'_S in a* True, q'_T in a* True; Gram [[w(p'_S,q'_S), w(p'_S,q'_T)],[w(p'_T,q'_S), w(p'_T,q'_T)]] = [[1, 0], [0, 1]]
+m=2 odd labels 2: ordered pairs 2 (claim 2), orthogonal 2 (claim 1), ratio 1.0000
+m=3 odd labels 4: ordered pairs 12 (claim 12), orthogonal 6 (claim 6), ratio 2.0000
+m=4 odd labels 8: ordered pairs 56 (claim 56), orthogonal 32 (claim 28), ratio 1.7500
+m=5 odd labels 16: ordered pairs 240 (claim 240), orthogonal 120 (claim 120), ratio 2.0000
+m=6 odd labels 32: ordered pairs 992 (claim 992), orthogonal 512 (claim 496), ratio 1.9375
+m=7 odd labels 64: ordered pairs 4032 (claim 4032), orthogonal 2016 (claim 2016), ratio 2.0000
+m=8 odd labels 128: ordered pairs 16256 (claim 16256), orthogonal 8192 (claim 8128), ratio 1.9844
+m=9 odd labels 256: ordered pairs 65280 (claim 65280), orthogonal 32640 (claim 32640), ratio 2.0000

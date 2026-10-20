@@ -1,0 +1,18 @@
+parsed |R| = 175 distinct 175 max 907 ; |pi| = 182 is permutation of 0..181: True
+C,J subsets of R: True True  |B| = 157
+candidate edges 910 physical 735
+degrees of the physical graph G (degree: count): [(5, 6), (6, 24), (7, 35), (8, 42), (9, 35), (10, 40)]
+in-degree = out-degree = 5 at every vertex: True ; d+_C = d-_J at every vertex: True
+G-distance between the two ends of the 157 session edges (distance: count): [(5, 157)]  sum = 785
+G connected: True ; diameter: 5
+ordered pairs of G by distance: [(0, 182), (1, 1470), (2, 10782), (3, 14636), (4, 5598), (5, 456)]
+moves 735 against 157*m: m=3: 471  m=4: 628  m=5: 785
+--- dimension of W (edge assignments obeying all 182 local rules); 910 unknowns, 910 conditions
+field of 9 elements (p=3), digits 0,1,2      : nullity 166   [the preprint states: at least 166]
+field of 9 elements (p=3), no cubing at lines: nullity 131   [my variant, for comparison]
+same integer rule read in Z[i]/10007 (a field; upper bound for the Gaussian rationals), digits 0,1,2: nullity 25
+same integer rule read in Z[i]/10007 (a field; upper bound for the Gaussian rationals), digits -1,0,1: nullity 25
+   ... and without the cubing at lines, Z[i]/10007, digits 0,1,2: nullity 25
+same integer rule read in Z[i]/1000003 (a field; upper bound for the Gaussian rationals), digits 0,1,2: nullity 25
+same integer rule read in Z[i]/1000003 (a field; upper bound for the Gaussian rationals), digits -1,0,1: nullity 25
+   ... and without the cubing at lines, Z[i]/1000003, digits 0,1,2: nullity 25

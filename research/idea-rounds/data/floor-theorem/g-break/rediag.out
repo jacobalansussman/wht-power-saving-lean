@@ -1,0 +1,10 @@
+p=65537 m=1: q(rank k block), k=0..m = [0, 1]  claimed [0, 1]  match=True;  q(random monomial on both columns)=0;  q(shift on column 1 only)=2
+p=65537 m=2: q(rank k block), k=0..m = [0, 2, 3]  claimed [0, 2, 3]  match=True;  q(random monomial on both columns)=0;  q(shift on column 1 only)=4
+p=65537 m=3: q(rank k block), k=0..m = [0, 4, 6, 7]  claimed [0, 4, 6, 7]  match=True;  q(random monomial on both columns)=0;  q(shift on column 1 only)=8
+p=65537 m=4: q(rank k block), k=0..m = [0, 8, 12, 14, 15]  claimed [0, 8, 12, 14, 15]  match=True;  q(random monomial on both columns)=0;  q(shift on column 1 only)=16
+p=65537 m=5: q(rank k block), k=0..m = [0, 16, 24, 28, 30, 31]  claimed [0, 16, 24, 28, 30, 31]  match=True;  q(random monomial on both columns)=0;  q(shift on column 1 only)=32
+p=40961 m=1: q(rank k block), k=0..m = [0, 1]  claimed [0, 1]  match=True;  q(random monomial on both columns)=0;  q(shift on column 1 only)=2
+p=40961 m=2: q(rank k block), k=0..m = [0, 2, 3]  claimed [0, 2, 3]  match=True;  q(random monomial on both columns)=0;  q(shift on column 1 only)=4
+p=40961 m=3: q(rank k block), k=0..m = [0, 4, 6, 7]  claimed [0, 4, 6, 7]  match=True;  q(random monomial on both columns)=0;  q(shift on column 1 only)=8
+p=40961 m=4: q(rank k block), k=0..m = [0, 8, 12, 14, 15]  claimed [0, 8, 12, 14, 15]  match=True;  q(random monomial on both columns)=0;  q(shift on column 1 only)=16
+p=40961 m=5: q(rank k block), k=0..m = [0, 16, 24, 28, 30, 31]  claimed [0, 16, 24, 28, 30, 31]  match=True;  q(random monomial on both columns)=0;  q(shift on column 1 only)=32

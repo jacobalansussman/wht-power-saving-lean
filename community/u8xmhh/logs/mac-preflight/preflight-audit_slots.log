@@ -1,0 +1,2 @@
+AUDIT PASS U8XM_5cc copies=0 defer=0: 32736 hosted residuals, W=7478, D=2560, histogram matches
+python3 -I tools/audit_slots.py data/words.json U8XM_5cc   0.12s user 0.01s system 96% cpu 0.134 total

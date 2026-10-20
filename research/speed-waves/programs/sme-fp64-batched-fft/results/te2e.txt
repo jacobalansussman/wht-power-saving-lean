@@ -1,0 +1,94 @@
+[timing lock] waiting for timing lock 02:55:25
+[timing lock] got lock 02:58:22; load: { 24.02 33.05 35.31 }
+numpy 2.0.2 scipy 1.13.1
+CHECK N=512 rows=2048: SME vs numpy.fft max|diff|/max|X| = 6.747e-16 PASS; scipy overwrite_x result in place: True
+RESULT rows c128 N=512 rows=2048 (16 MiB)       SME fp64 via ctypes, output reused           best   0.7163 median   0.7206 ns/point
+RESULT rows c128 N=512 rows=2048 (16 MiB)       SME fp64 via ctypes + np.empty_like per call best   0.7233 median   0.7267 ns/point
+RESULT rows c128 N=512 rows=2048 (16 MiB)       numpy.fft.fft (allocates)                    best   2.1058 median   2.2319 ns/point
+RESULT rows c128 N=512 rows=2048 (16 MiB)       scipy.fft.fft workers=1 (allocates)          best   2.3303 median   2.3451 ns/point
+RESULT rows c128 N=512 rows=2048 (16 MiB)       scipy.fft.fft workers=1 copy+overwrite_x     best   2.1979 median   2.2422 ns/point
+RESULT rows c128 N=512 rows=2048 (16 MiB)       scipy.fft.fft workers=4 (allocates)          best   0.9344 median   0.9426 ns/point
+CHECK N=4096 rows=512: SME vs numpy.fft max|diff|/max|X| = 7.589e-16 PASS; scipy overwrite_x result in place: True
+RESULT rows c128 N=4096 rows=512 (32 MiB)       SME fp64 via ctypes, output reused           best   1.0688 median   1.0820 ns/point
+RESULT rows c128 N=4096 rows=512 (32 MiB)       SME fp64 via ctypes + np.empty_like per call best   1.0763 median   1.0820 ns/point
+RESULT rows c128 N=4096 rows=512 (32 MiB)       numpy.fft.fft (allocates)                    best   3.9961 median   4.0327 ns/point
+RESULT rows c128 N=4096 rows=512 (32 MiB)       scipy.fft.fft workers=1 (allocates)          best   3.9459 median   4.0460 ns/point
+RESULT rows c128 N=4096 rows=512 (32 MiB)       scipy.fft.fft workers=1 copy+overwrite_x     best   4.4239 median   4.4811 ns/point
+RESULT rows c128 N=4096 rows=512 (32 MiB)       scipy.fft.fft workers=4 (allocates)          best   1.4459 median   1.4766 ns/point
+CHECK N=1024 rows=2048: SME vs numpy.fft max|diff|/max|X| = 6.526e-16 PASS; scipy overwrite_x result in place: True
+RESULT rows c128 N=1024 rows=2048 (32 MiB)      SME fp64 via ctypes, output reused           best   1.4583 median   1.4755 ns/point
+RESULT rows c128 N=1024 rows=2048 (32 MiB)      SME fp64 via ctypes + np.empty_like per call best   1.4622 median   1.4789 ns/point
+RESULT rows c128 N=1024 rows=2048 (32 MiB)      numpy.fft.fft (allocates)                    best   2.4388 median   2.4474 ns/point
+RESULT rows c128 N=1024 rows=2048 (32 MiB)      scipy.fft.fft workers=1 (allocates)          best   2.4092 median   2.4282 ns/point
+RESULT rows c128 N=1024 rows=2048 (32 MiB)      scipy.fft.fft workers=1 copy+overwrite_x     best   2.4355 median   2.4764 ns/point
+RESULT rows c128 N=1024 rows=2048 (32 MiB)      scipy.fft.fft workers=4 (allocates)          best   1.1063 median   1.1100 ns/point
+CHECK N=2048 rows=1024: SME vs numpy.fft max|diff|/max|X| = 6.588e-16 PASS; scipy overwrite_x result in place: True
+RESULT rows c128 N=2048 rows=1024 (32 MiB)      SME fp64 via ctypes, output reused           best   1.8089 median   1.8141 ns/point
+RESULT rows c128 N=2048 rows=1024 (32 MiB)      SME fp64 via ctypes + np.empty_like per call best   1.8196 median   1.8323 ns/point
+RESULT rows c128 N=2048 rows=1024 (32 MiB)      numpy.fft.fft (allocates)                    best   2.5968 median   2.6239 ns/point
+RESULT rows c128 N=2048 rows=1024 (32 MiB)      scipy.fft.fft workers=1 (allocates)          best   2.5737 median   2.5888 ns/point
+RESULT rows c128 N=2048 rows=1024 (32 MiB)      scipy.fft.fft workers=1 copy+overwrite_x     best   2.9762 median   2.9996 ns/point
+RESULT rows c128 N=2048 rows=1024 (32 MiB)      scipy.fft.fft workers=4 (allocates)          best   1.1520 median   1.1590 ns/point
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## n=1024 x16, other P-core spinning on NEON/int  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  vDSP_DFT_Interleaved_ExecuteD       1.8099
+rep  0  vDSP_DFT_ExecuteD (split)          1.5774
+rep  0  PFFFT-d (NEON control)             1.6649
+rep  1  vDSP_DFT_ExecuteD (split)          1.5793
+rep  1  PFFFT-d (NEON control)             1.6626
+rep  1  vDSP_DFT_Interleaved_ExecuteD       1.8087
+rep  2  PFFFT-d (NEON control)             1.6566
+rep  2  vDSP_DFT_Interleaved_ExecuteD       1.8053
+rep  2  vDSP_DFT_ExecuteD (split)          1.5800
+rep  3  vDSP_DFT_Interleaved_ExecuteD       1.8091
+rep  3  vDSP_DFT_ExecuteD (split)          1.5811
+rep  3  PFFFT-d (NEON control)             1.6638
+rep  4  vDSP_DFT_ExecuteD (split)          1.5818
+rep  4  PFFFT-d (NEON control)             1.6640
+rep  4  vDSP_DFT_Interleaved_ExecuteD       1.8069
+rep  5  PFFFT-d (NEON control)             1.6480
+rep  5  vDSP_DFT_Interleaved_ExecuteD       1.8045
+rep  5  vDSP_DFT_ExecuteD (split)          1.5811
+rep  6  vDSP_DFT_Interleaved_ExecuteD       1.8058
+rep  6  vDSP_DFT_ExecuteD (split)          1.5861
+rep  6  PFFFT-d (NEON control)             1.6629
+rep  7  vDSP_DFT_ExecuteD (split)          1.5907
+rep  7  PFFFT-d (NEON control)             1.6654
+rep  7  vDSP_DFT_Interleaved_ExecuteD       1.8090
+rep  8  PFFFT-d (NEON control)             1.6569
+rep  8  vDSP_DFT_Interleaved_ExecuteD       1.8047
+rep  8  vDSP_DFT_ExecuteD (split)          1.5805
+RESULT n=1024 x16, other P-core spinning on NEON/int vDSP_DFT_Interleaved_ExecuteD best     1.8045  median     1.8069  ns/point  (calls/rep 7409)
+RESULT n=1024 x16, other P-core spinning on NEON/int vDSP_DFT_ExecuteD (split)    best     1.5774  median     1.5811  ns/point  (calls/rep 8491)
+RESULT n=1024 x16, other P-core spinning on NEON/int PFFFT-d (NEON control)       best     1.6480  median     1.6629  ns/point  (calls/rep 8072)
+## n=1024 x16, other P-core running the SME kernel  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  vDSP_DFT_Interleaved_ExecuteD       1.9418
+rep  0  vDSP_DFT_ExecuteD (split)          1.6464
+rep  0  PFFFT-d (NEON control)             1.7666
+rep  1  vDSP_DFT_ExecuteD (split)          1.6737
+rep  1  PFFFT-d (NEON control)             1.7564
+rep  1  vDSP_DFT_Interleaved_ExecuteD       1.9182
+rep  2  PFFFT-d (NEON control)             1.8107
+rep  2  vDSP_DFT_Interleaved_ExecuteD       1.9284
+rep  2  vDSP_DFT_ExecuteD (split)          1.6369
+rep  3  vDSP_DFT_Interleaved_ExecuteD       1.8990
+rep  3  vDSP_DFT_ExecuteD (split)          1.6751
+rep  3  PFFFT-d (NEON control)             1.7661
+rep  4  vDSP_DFT_ExecuteD (split)          1.6419
+rep  4  PFFFT-d (NEON control)             1.7235
+rep  4  vDSP_DFT_Interleaved_ExecuteD       1.8737
+rep  5  PFFFT-d (NEON control)             1.7648
+rep  5  vDSP_DFT_Interleaved_ExecuteD       1.9897
+rep  5  vDSP_DFT_ExecuteD (split)          1.7240
+rep  6  vDSP_DFT_Interleaved_ExecuteD       1.9382
+rep  6  vDSP_DFT_ExecuteD (split)          1.7156
+rep  6  PFFFT-d (NEON control)             1.7837
+rep  7  vDSP_DFT_ExecuteD (split)          1.7067
+rep  7  PFFFT-d (NEON control)             1.7822
+rep  7  vDSP_DFT_Interleaved_ExecuteD       2.1460
+rep  8  PFFFT-d (NEON control)             1.7877
+rep  8  vDSP_DFT_Interleaved_ExecuteD       1.9244
+rep  8  vDSP_DFT_ExecuteD (split)          1.7171
+RESULT n=1024 x16, other P-core running the SME kernel vDSP_DFT_Interleaved_ExecuteD best     1.8737  median     1.9284  ns/point  (calls/rep 7250)
+RESULT n=1024 x16, other P-core running the SME kernel vDSP_DFT_ExecuteD (split)    best     1.6369  median     1.6751  ns/point  (calls/rep 8212)
+RESULT n=1024 x16, other P-core running the SME kernel PFFFT-d (NEON control)       best     1.7235  median     1.7666  ns/point  (calls/rep 7462)

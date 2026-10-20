@@ -1,0 +1,13 @@
+m=4 f=8 mode=facet U=[1, 2, 4, 8] dim A=12870 dim N=8 rows outside N=12862
+cap, direction w=1 (weight 1): rank mod p = 2; floating rank = 2 (least kept singular value 254, next 0); worst rounding of a minor 5.3e-15
+cap, direction w=3 (weight 2): rank mod p = 4; floating rank = 4 (least kept singular value 248, next 0); worst rounding of a minor 5.3e-15
+cap, direction w=7 (weight 3): rank mod p = 6; floating rank = 6 (least kept singular value 237, next 0); worst rounding of a minor 5.3e-15
+cap, direction w=15 (weight 4): rank mod p = 8; floating rank = 8 (least kept singular value 222, next 0); worst rounding of a minor 5.3e-15
+facet.py:33: RuntimeWarning: divide by zero encountered in matmul
+  K = dir2(1 << j) @ K
+facet.py:33: RuntimeWarning: overflow encountered in matmul
+  K = dir2(1 << j) @ K
+facet.py:33: RuntimeWarning: invalid value encountered in matmul
+  K = dir2(1 << j) @ K
+dem (kernel): rank mod p = 8; floating rank = 8 (least kept singular value 4.26e+09, next 0); worst rounding of a minor 3e-07
+summary m=4 f=8: dim N=8 = 4 x 2; caps={1: 2, 2: 4, 3: 6, 4: 8}; dem=8; dem/max cap = 1.0000

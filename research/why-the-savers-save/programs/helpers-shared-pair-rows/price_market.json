@@ -1,0 +1,38 @@
+{
+ "control": {
+  "b": "0.001664727258740678855772",
+  "kappa": "0.001661960547713947"
+ },
+ "typical56": {
+  "optimistic": {
+   "b": "0.001780517459161",
+   "b_gain_pct": 6.956,
+   "kappa": "0.001730427469823602",
+   "kappa_gain_pct": 4.12,
+   "binding": "bit"
+  },
+  "hole": {
+   "b": "0.001713756234514",
+   "b_gain_pct": 2.945,
+   "kappa": "0.001710824298705773",
+   "kappa_gain_pct": 2.94,
+   "binding": "complex"
+  }
+ },
+ "mcopy56": {
+  "optimistic": {
+   "b": "0.001763807177714",
+   "b_gain_pct": 5.952,
+   "kappa": "0.001730427469823602",
+   "kappa_gain_pct": 4.12,
+   "binding": "bit"
+  },
+  "hole": {
+   "b": "0.001704520086878",
+   "b_gain_pct": 2.39,
+   "kappa": "0.001701619642017795",
+   "kappa_gain_pct": 2.386,
+   "binding": "complex"
+  }
+ }
+}

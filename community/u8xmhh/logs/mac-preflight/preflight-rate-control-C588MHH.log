@@ -1,0 +1,4 @@
+blocksC588MHHx [(1, 180640), (2, 35424), (3, 20224), (4, 17056), (5, 5728), (6, 4032), (7, 320), (8, 1584), (39, 1), (48, 1680)]
+at a = 15699306/10^10: LHS <= 8.003345065890e+15, RHS = 8003345138581504, slack >= 9.083e-09
+exact fold (s = 40): holds at 15699335/10^10, fails at 15699336/10^10 (the certificate uses 15699306, 29 grid points below)
+RATE CHECK PASS: blocksC588MHHx, s = 40, W = 7279, fold holds at the certificate exponent 1 - 15699306/10^10

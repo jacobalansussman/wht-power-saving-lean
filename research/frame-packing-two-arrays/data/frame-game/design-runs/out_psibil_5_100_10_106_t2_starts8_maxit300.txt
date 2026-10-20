@@ -1,0 +1,26 @@
+  design a1=3 a2=2 dup=0 injections=7: min psi residual over scalars 9.766e-01
+  design a1=0 a2=3 dup=0 injections=8: min psi residual over scalars 1.000e+00
+  design a1=3 a2=2 dup=0 injections=8: min psi residual over scalars 9.446e-01
+  design a1=3 a2=0 dup=0 injections=6: min psi residual over scalars 7.071e-01
+  design a1=3 a2=1 dup=0 injections=10: min psi residual over scalars 6.478e-01
+  design a1=3 a2=3 dup=0 injections=4: min psi residual over scalars 1.000e+00
+  design a1=3 a2=1 dup=0 injections=5: min psi residual over scalars 7.108e-01
+  design a1=0 a2=3 dup=0 injections=10: min psi residual over scalars 1.000e+00
+  design a1=2 a2=3 dup=0 injections=8: min psi residual over scalars 1.000e+00
+  design a1=0 a2=3 dup=0 injections=7: min psi residual over scalars 1.000e+00
+  design a1=3 a2=3 dup=0 injections=3: min psi residual over scalars 1.000e+00
+  design a1=1 a2=3 dup=0 injections=7: min psi residual over scalars 1.000e+00
+  design a1=2 a2=3 dup=0 injections=6: min psi residual over scalars 1.000e+00
+  design a1=0 a2=3 dup=0 injections=5: min psi residual over scalars 1.000e+00
+  design a1=3 a2=1 dup=0 injections=5: min psi residual over scalars 9.502e-01
+  design a1=3 a2=3 dup=0 injections=3: min psi residual over scalars 1.000e+00
+  design a1=3 a2=2 dup=0 injections=8: min psi residual over scalars 9.961e-01
+  design a1=2 a2=3 dup=0 injections=10: min psi residual over scalars 1.000e+00
+  design a1=3 a2=3 dup=0 injections=3: min psi residual over scalars 1.000e+00
+  design a1=3 a2=3 dup=0 injections=5: min psi residual over scalars 1.000e+00
+  design a1=2 a2=3 dup=0 injections=10: min psi residual over scalars 1.000e+00
+  design a1=3 a2=3 dup=0 injections=4: min psi residual over scalars 1.000e+00
+  design a1=2 a2=3 dup=0 injections=3: min psi residual over scalars 1.000e+00
+  design a1=1 a2=2 dup=0 injections=10: min psi residual over scalars 1.000e+00
+  design a1=3 a2=1 dup=0 injections=6: min psi residual over scalars 7.072e-01
+m=5 tlen=2 dup=False: 25 designs passed linearised psi; min residuals [np.float64(0.6478), np.float64(0.7071), np.float64(0.7072), np.float64(0.7108), np.float64(0.9446), np.float64(0.9502), np.float64(0.9766), np.float64(0.9961), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0)] (594s)

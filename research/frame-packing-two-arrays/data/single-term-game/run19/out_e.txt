@@ -1,0 +1,30 @@
+== D7 class 0: frames 7, degree [2], m 3, twists 14, free 2
+D7/c0 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+D7/c0 M=2 states=9 max(L1+L2)=2 (I) holds  [0.0s]
+D7/c0 M=3 states=27 max(L1+L2)=3 (I) holds  [0.0s]
+D7/c0 M=4 raw successors=248 (I) holds goal no | M=5: 89 states passed the filter, goal-in-one no  [0.0s]
+== D7 class 1: frames 7, degree [2], m 3, twists 14, free 2
+D7/c1 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+D7/c1 M=2 states=9 max(L1+L2)=2 (I) holds  [0.0s]
+D7/c1 M=3 states=27 max(L1+L2)=3 (I) holds  [0.0s]
+D7/c1 M=4 raw successors=247 (I) holds goal no | M=5: 89 states passed the filter, goal-in-one no  [0.0s]
+== D7 class 2: frames 7, degree [2], m 3, twists 14, free 2
+D7/c2 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+D7/c2 M=2 states=9 max(L1+L2)=2 (I) holds  [0.0s]
+D7/c2 M=3 states=27 max(L1+L2)=3 (I) holds  [0.0s]
+D7/c2 M=4 raw successors=250 (I) holds goal no | M=5: 90 states passed the filter, goal-in-one no  [0.0s]
+== S4Z2 class 0: frames 12, degree [4], m 3, twists 24, free 2
+S4Z2/c0 M=1 states=4 max(L1+L2)=1 (I) holds  [0.0s]
+S4Z2/c0 M=2 states=37 max(L1+L2)=2 (I) holds  [0.0s]
+S4Z2/c0 M=3 states=305 max(L1+L2)=3 (I) holds  [0.1s]
+S4Z2/c0 M=4 raw successors=6296 (I) holds goal no | M=5: 1852 states passed the filter, goal-in-one no  [0.5s]
+== S4Z3 class 1: frames 8, degree [3], m 3, twists 24, free 3
+S4Z3/c1 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+S4Z3/c1 M=2 states=14 max(L1+L2)=2 (I) holds  [0.0s]
+S4Z3/c1 M=3 states=98 max(L1+L2)=3 (I) holds  [0.0s]
+S4Z3/c1 M=4 raw successors=1912 (I) holds goal no | M=5: 690 states passed the filter, goal-in-one no  [0.2s]
+== B3 class 0: frames 8, degree [3], m 3, twists 48, free 6
+B3/c0 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+B3/c0 M=2 states=12 max(L1+L2)=2 (I) holds  [0.0s]
+B3/c0 M=3 states=92 max(L1+L2)=3 (I) holds  [0.1s]
+B3/c0 M=4 raw successors=2833 (I) holds goal no | M=5: 854 states passed the filter, goal-in-one no  [0.2s]

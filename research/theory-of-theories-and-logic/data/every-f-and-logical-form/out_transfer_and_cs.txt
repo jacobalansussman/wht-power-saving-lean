@@ -1,0 +1,16 @@
+Part 1: family mu_k = 1 + 1/k on the shape 'D then scale by mu'
+  k =       1: residual at f = 1,2,3: 1.414e+00, 2.000e+00, 2.828e+00  (nonzero, -> 0)
+  k =      10: residual at f = 1,2,3: 1.414e-01, 2.000e-01, 2.828e-01  (nonzero, -> 0)
+  k =     100: residual at f = 1,2,3: 1.414e-02, 2.000e-02, 2.828e-02  (nonzero, -> 0)
+  k =    1000: residual at f = 1,2,3: 1.414e-03, 2.000e-03, 2.828e-03  (nonzero, -> 0)
+  k = 1000000: residual at f = 1,2,3: 1.414e-06, 2.000e-06, 2.828e-06  (nonzero, -> 0)
+  limit mu = 1: residual 0.0 (exact unit)
+  X D X == D: True
+  2-parameter family k =      10: residual 1.414e-01, 2.000e-01, 2.828e-01
+  2-parameter family k =    1000: residual 1.414e-03, 2.000e-03, 2.828e-03
+  2-parameter family k = 1000000: residual 1.414e-06, 2.000e-06, 2.828e-06
+Part 2: an element of infinite order in <engine letters, CS> at block 2
+  word: ('D0', 'D1', 'CS')  eigenvalue angles / 2pi: [ 0.046261  0.3587   -0.404961  0.25    ]
+  char poly coefficients: [ 1. +0.j   0.5-1.5j -1. -1.j  -1.5+0.5j  0. +1.j ]
+  exact: g^5040 == I ? False ; 2-adic denominator exponent of g^5040: 2521
+  => infinite order: True

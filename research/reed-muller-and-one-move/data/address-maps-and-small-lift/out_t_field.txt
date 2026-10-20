@@ -1,0 +1,35 @@
+=== m = 3, q = 8, poly = 0b1011, self-dual basis = [3, 5, 7]
+F1 sum f_j = 1 (want 1); sum f_j^(1+2^i), i=1..m-1: [0, 0] (want all 0): PASS
+   dot product of coordinates = Tr(xy) for all x, y: True
+F2 (exhaustive, 64 forms): degree<=2 failures 0; span rank 6 of 6; tr Q != Tr(b): 0: PASS
+F3 n_odd(Q) = 2^(m-1)[b != 0] failures: 0 of 64: PASS
+F4 7 distinct channel targets; T_0 = I: True; all invertible: True; closed under addition: True: PASS
+F5 Frobenius F F^T = I: True
+=== m = 4, q = 16, poly = 0b10011, self-dual basis = [10, 9, 14, 12]
+F1 sum f_j = 1 (want 1); sum f_j^(1+2^i), i=1..m-1: [0, 0, 0] (want all 0): PASS
+   dot product of coordinates = Tr(xy) for all x, y: True
+F2 (exhaustive, 4096 forms): degree<=2 failures 0; span rank 10 of 10; tr Q != Tr(b): 0: PASS
+F3 n_odd(Q) = 2^(m-1)[b != 0] failures: 0 of 4096: PASS
+F4 15 distinct channel targets; T_0 = I: True; all invertible: True; closed under addition: True: PASS
+F5 Frobenius F F^T = I: True
+=== m = 5, q = 32, poly = 0b100101, self-dual basis = [8, 7, 21, 5, 30]
+F1 sum f_j = 1 (want 1); sum f_j^(1+2^i), i=1..m-1: [0, 0, 0, 0] (want all 0): PASS
+   dot product of coordinates = Tr(xy) for all x, y: True
+F2 (exhaustive, 32768 forms): degree<=2 failures 0; span rank 15 of 15; tr Q != Tr(b): 0: PASS
+F3 n_odd(Q) = 2^(m-1)[b != 0] failures: 0 of 32768: PASS
+F4 31 distinct channel targets; T_0 = I: True; all invertible: True; closed under addition: True: PASS
+F5 Frobenius F F^T = I: True
+=== m = 6, q = 64, poly = 0b1000011, self-dual basis = [40, 36, 49, 35, 51, 44]
+F1 sum f_j = 1 (want 1); sum f_j^(1+2^i), i=1..m-1: [0, 0, 0, 0, 0] (want all 0): PASS
+   dot product of coordinates = Tr(xy) for all x, y: True
+F2 (random 3000, 3000 forms): degree<=2 failures 0; span rank 21 of 21; tr Q != Tr(b): 0: PASS
+F3 n_odd(Q) = 2^(m-1)[b != 0] failures: 0 of 3000: PASS
+F4 63 distinct channel targets; T_0 = I: True; all invertible: True; closed under addition: True: PASS
+F5 Frobenius F F^T = I: True
+=== m = 7, q = 128, poly = 0b10000011, self-dual basis = [115, 123, 97, 37, 5, 107, 35]
+F1 sum f_j = 1 (want 1); sum f_j^(1+2^i), i=1..m-1: [0, 0, 0, 0, 0, 0] (want all 0): PASS
+   dot product of coordinates = Tr(xy) for all x, y: True
+F2 (random 3000, 3000 forms): degree<=2 failures 0; span rank 28 of 28; tr Q != Tr(b): 0: PASS
+F3 n_odd(Q) = 2^(m-1)[b != 0] failures: 0 of 3000: PASS
+F4 127 distinct channel targets; T_0 = I: True; all invertible: True; closed under addition: True: PASS
+F5 Frobenius F F^T = I: True

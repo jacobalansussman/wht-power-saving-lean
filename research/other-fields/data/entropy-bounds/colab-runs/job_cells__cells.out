@@ -1,0 +1,12 @@
+m=2 three cells (a line / far / rest): 3 cells, 6 arc groups, 6 session groups -> ground 12
+   routing on quotient 80 -> 1.07143 per session;  cut LP 80.0 -> 1.07143
+  closed LP: ground 12, closed-set orbit variables 3337 (of 4096), inequalities 60785, equalities 64, 0.1s
+  pdlp: status Optimal, primal 80.000000161, rigorous dual bound 79.999991613, 3s
+   entropy LP (full Shannon) 80.000000 (rigorous >= 79.999992) -> 1.07143 per session
+   Ingleton violated 32 (max 1.4e-07), DFZ violated 0 (max 0.0e+00)
+  pdlp: status Optimal, primal 79.999999822, rigorous dual bound 79.999997008, 2s
+   with them: 80.000000 (rigorous >= 79.999997)
+m=3 annealed k=5 (rho 1.7027): 4 cells, 12 arc groups, 12 session groups -> ground 24
+   routing on quotient 6912 -> 1.70270 per session;  cut LP 6912.0 -> 1.70270
+m=3 annealed k=6 (rho 1.7500): 4 cells, 12 arc groups, 12 session groups -> ground 24
+   routing on quotient 6720 -> 1.75000 per session;  cut LP 6720.0 -> 1.75000

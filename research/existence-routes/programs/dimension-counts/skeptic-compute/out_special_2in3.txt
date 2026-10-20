@@ -1,0 +1,3 @@
+dim A = 88
+start 0 loss 9.592806931304854e-30 1 s
+{"shape": "2 in 3", "loss": 9.592806931304854e-30, "max|slot matrix|": 1.0157605254439297, "membership_in_A_relerr": 3.3160893491943205e-15, "residual_my_forward": 2.006096511086036e-15, "Eeff": 544, "rank_at_solution(r, last kept sv, first dropped sv)": [520, 0.06970923762659846, 2.985810761268003e-15], "generic_rank": [520, 0.0009647721308269955, 2.6711962339678248e-15]}

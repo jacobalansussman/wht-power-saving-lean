@@ -1,0 +1,7 @@
+h=3: 135 frames, graph built 0.0s
+control, hub ports (all 4 odd labels, no twist): knows == (u_S.u_T = 0): True; exact cost == pairing rank on all 225 (R,D): True
+random twisted 4-port families at h=3 (60 families, random odd labels, fixed twists of type stab0):
+  ordered pairs 720: exact knows 140, vector condition omega(p_T,q_S)=0 262, exact-but-not-vector 0 (must be 0)
+  (R,D) totals 13500: no common read or delivery frame 8295; exact cost == pairing rank 4865; exact < rank 0 (must be 0)
+  floors (exact frames, payload F_3): {4: 60}  (v = 4)
+time 71.2s

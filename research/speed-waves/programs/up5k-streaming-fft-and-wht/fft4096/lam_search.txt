@@ -1,0 +1,10 @@
+tol -72 dB: total digits 13 (baseline lam=1: 1+4+4+5=14), lam 0.811810
+   one: 4 digits ((1, 0), (-1, 2), (1, 4), (-1, 11)) value 0.8120117 (target 0.8118100)
+   c1: 2 digits ((1, 1), (1, 2)) value 0.7500000 (target 0.7500146)
+   s1: 3 digits ((1, 2), (1, 4), (-1, 9)) value 0.3105469 (target 0.3106662)
+   c2: 4 digits ((1, 1), (1, 4), (1, 6), (-1, 8)) value 0.5742188 (target 0.5740364)
+tol -66 dB: total digits 12 (baseline lam=1: 1+4+4+5=14), lam 0.812100
+   one: 3 digits ((1, 0), (-1, 2), (1, 4)) value 0.8125000 (target 0.8121000)
+   c1: 2 digits ((1, 1), (1, 2)) value 0.7500000 (target 0.7502826)
+   s1: 3 digits ((1, 2), (1, 4), (-1, 9)) value 0.3105469 (target 0.3107772)
+   c2: 4 digits ((1, 1), (1, 4), (1, 7), (1, 8)) value 0.5742188 (target 0.5742414)

@@ -1,0 +1,5 @@
+m=4 W=3 M=10: 300 random configurations; span+deletion+clique verdicts agree with mt_lm in 300; (mt_lm pass, mine incl. Z pass) counts: {(False, False): 300}
+m=4 W=2 M=7: 300 random configurations; span+deletion+clique verdicts agree with mt_lm in 300; (mt_lm pass, mine incl. Z pass) counts: {(False, False): 300}
+m=3 W=5 M=14: 300 random configurations; span+deletion+clique verdicts agree with mt_lm in 300; (mt_lm pass, mine incl. Z pass) counts: {(False, False): 299, (True, False): 1}
+m=4 W=3 dirs [1, 1, 2, 2, 4, 7, 8, 11, 13, 14]: 112 target tuples pass my deletion; mt_lm finds no violation in 112; clique verdicts agree in 112; pass cliques: 8
+m=3 W=4 dirs [1, 1, 1, 2, 2, 2, 3, 4, 5, 6, 7]: 13 target tuples pass my deletion; mt_lm finds no violation in 13; clique verdicts agree in 13; pass cliques: 13

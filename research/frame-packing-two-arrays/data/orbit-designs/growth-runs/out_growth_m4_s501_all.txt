@@ -1,0 +1,124 @@
+growth.py m=4 trials=60 depth=6 seed=501 kinds=['stab', 'cycle', 'twof', 'perm', 'rand']
+trial 0 a=(2,2) single: nn/2/12 nn/2/12 nn/2/12 nn/4/17 nn/11/22 nc/3/26 cc/-/30
+trial 0 a=(2,2) orbit : nn/2/12 nn/1/26 nn/9/36 cc/-/44  orbits=[('stab', 'A', 0, 0, 6, 8), ('rand', 'B', 0, 0, 6, 6), ('cycle', 'B', 0, 0, 6, 4)]
+trial 1 a=(0,1) single: nn/2/15 nn/3/19 nn/-/25
+trial 1 a=(0,1) orbit : nn/2/15 nn/1/29 nn/-/35  orbits=[('rand', 'B', 1, 1, 4, 8), ('perm', 'A', 0, 2, 3, 2)]
+trial 2 a=(3,0) single: nn/2/13 nn/4/18 nn/4/18 nn/9/27 nn/9/27 nn/14/39 nn/14/39
+trial 2 a=(3,0) orbit : nn/2/13 nn/8/22 nn/-/47  orbits=[('perm', 'B', 0, 0, 1, 3), ('twof', 'B', 2, 2, 7, 6)]
+trial 3 a=(3,0) single: nn/2/13 nn/4/19 nn/4/19 nn/4/22 nn/4/22 nn/8/32 nn/8/32
+trial 3 a=(3,0) orbit : nn/2/13 nn/20/31 nn/174/79 cc/-/157  orbits=[('twof', 'B', 0, 0, 1, 6), ('twof', 'B', 2, 2, 7, 7), ('rand', 'R1', 0, 2, 1, 6)]
+trial 4 a=(3,1) single: nn/2/12 nn/4/14 nn/4/14 nn/9/15 nn/9/15 cc/-/17
+trial 4 a=(3,1) orbit : nn/2/12 nn/6/16 nc/1/20 cc/-/111  orbits=[('perm', 'B', 0, 1, 3, 2), ('perm', 'B', 1, 1, 7, 2), ('rand', 'R1', 0, 1, 1, 7)]
+trial 5 a=(3,1) single: nn/2/12 nn/3/14 nn/3/14 nn/3/14 nn/3/14 nn/3/14 nn/3/14
+trial 5 a=(3,1) orbit : nn/2/12 nn/6/16 nn/-/40  orbits=[('perm', 'B', 0, 1, 1, 2), ('stab', 'B', 1, 1, 7, 7)]
+trial 6 a=(1,1) single: nn/2/14 nn/2/14 nn/2/14 nn/2/14 nn/2/14 nn/3/18 nn/3/18
+trial 6 a=(1,1) orbit : nn/2/14 nn/7/22 nn/83/50 cc/-/66  orbits=[('perm', 'B', 0, 1, 4, 2), ('cycle', 'B', 0, 1, 4, 8), ('rand', 'B', 0, 1, 0, 8)]
+trial 7 a=(2,0) single: nn/2/14 nn/4/17 nn/4/17 nn/4/17 nn/4/17 nn/9/21 nn/13/24
+trial 7 a=(2,0) orbit : nn/2/14 nn/7/18 nn/-/30  orbits=[('perm', 'B', 2, 2, 4, 2), ('stab', 'B', 1, 2, 5, 4)]
+trial 8 a=(2,0) single: nn/2/14 nn/3/18 nn/3/18 nn/-/22
+trial 8 a=(2,0) orbit : nn/2/14 nn/11/30 nc/-/60  orbits=[('stab', 'B', 1, 1, 4, 4), ('stab', 'B', 0, 2, 4, 6)]
+trial 9 a=(2,2) single: nn/2/12 nn/4/17 nn/7/20 nn/7/20 nn/11/23 nn/11/23 nn/11/23
+trial 9 a=(2,2) orbit : nn/2/12 nn/1/26 nn/5/32 cc/-/39  orbits=[('stab', 'B', 0, 0, 6, 8), ('perm', 'A', 0, 0, 6, 4), ('twof', 'B', 0, 0, 2, 7)]
+trial 10 a=(0,2) single: nn/2/14 nn/3/16 nn/7/19 nn/-/13
+trial 10 a=(0,2) orbit : nn/2/14 nn/27/42 cc/-/54  orbits=[('twof', 'A', 1, 1, 4, 7), ('stab', 'A', 0, 2, 3, 4)]
+trial 11 a=(2,1) single: nn/1/13 nn/1/13 nn/-/15
+trial 11 a=(2,1) orbit : nn/1/13 nn/44/37 cc/-/53  orbits=[('rand', 'B', 0, 0, 6, 6), ('twof', 'B', 0, 1, 5, 4)]
+trial 12 a=(1,1) single: nn/2/14 nn/2/14 nn/5/18 nn/7/26 nn/5/28 nn/5/28 nn/19/40
+trial 12 a=(1,1) orbit : nn/2/14 nn/6/20 nn/21/32 cc/-/96  orbits=[('perm', 'A', 1, 1, 5, 4), ('rand', 'B', 0, 1, 1, 6), ('stab', 'B', 0, 1, 6, 4)]
+trial 13 a=(3,0) single: nn/2/13 nn/2/13 nn/6/17 nn/6/20 nn/6/20 nn/13/23 cc/-/33
+trial 13 a=(3,0) orbit : nn/2/13 nn/8/25 cn/19/49 cc/-/343  orbits=[('rand', 'B', 1, 2, 6, 4), ('twof', 'B', 1, 1, 6, 6), ('twof', 'B', 0, 2, 5, 7)]
+trial 14 a=(3,0) single: nn/2/13 nn/4/16 nn/7/23 nn/6/27 nn/7/36 nn/11/42 nn/11/42
+trial 14 a=(3,0) orbit : nn/2/13 nn/46/21 nn/206/51 nn/-/75  orbits=[('stab', 'B', 2, 2, 1, 8), ('twof', 'B', 0, 2, 5, 6), ('perm', 'B', 2, 2, 7, 3)]
+trial 15 a=(1,0) single: nn/2/15 nn/4/18 nn/7/24 nn/18/34 nn/58/44 cc/-/59
+trial 15 a=(1,0) orbit : nn/2/15 nn/14/27 nn/36/42 nn/130/70 cc/-/518  orbits=[('rand', 'A', 1, 1, 7, 7), ('rand', 'B', 0, 2, 2, 5), ('rand', 'A', 1, 1, 4, 4), ('rand', 'A', 0, 1, 5, 8)]
+trial 16 a=(2,3) single: nn/2/11 nn/4/16 nn/7/18 cc/-/28
+trial 16 a=(2,3) orbit : nn/2/11 nn/7/21 nn/41/33 cc/-/75  orbits=[('stab', 'R2', 0, 2, 1, 2), ('stab', 'A', 0, 0, 6, 4), ('stab', 'R2', 2, 2, 3, 6)]
+trial 17 a=(3,0) single: nn/2/13 nn/4/16 nn/8/19 nn/8/19 nn/18/23 nn/46/31 cc/-/33
+trial 17 a=(3,0) orbit : nn/2/13 nn/22/62 nn/65/134 cc/-/350  orbits=[('stab', 'R1', 0, 0, 1, 7), ('perm', 'B', 0, 2, 2, 3), ('rand', 'B', 0, 2, 5, 8)]
+trial 18 a=(2,3) single: nn/2/11 nn/5/16 nn/5/16 nn/6/18 nn/6/18 nn/6/18 nn/6/18
+trial 18 a=(2,3) orbit : nn/2/11 nn/10/13 cc/-/33  orbits=[('perm', 'A', 0, 0, 3, 2), ('stab', 'R2', 0, 1, 3, 4)]
+trial 19 a=(3,2) single: nn/2/11 nn/4/15 nn/7/24 nn/13/30 nn/17/33 cc/-/45
+trial 19 a=(3,2) orbit : nn/2/11 nn/14/23 nn/108/29 nc/1/41 cc/-/92  orbits=[('rand', 'B', 0, 0, 7, 7), ('perm', 'B', 0, 0, 7, 3), ('stab', 'B', 0, 0, 7, 6), ('perm', 'Rt', 0, 0, 6, 3)]
+trial 20 a=(1,1) single: nn/2/14 nn/3/18 nn/-/22
+trial 20 a=(1,1) orbit : nn/2/14 nc/1/46 cc/-/82  orbits=[('rand', 'B', 0, 1, 6, 8), ('perm', 'B', 1, 1, 7, 2)]
+trial 21 a=(1,0) single: nn/2/15 nn/3/17 nn/3/17 nn/3/17 nn/-/13
+trial 21 a=(1,0) orbit : nn/2/15 nn/25/51 nn/67/63 cc/-/127  orbits=[('rand', 'B', 0, 1, 3, 6), ('perm', 'B', 1, 2, 5, 3), ('stab', 'A', 0, 1, 3, 4)]
+trial 22 a=(1,1) single: nn/2/14 nn/3/18 nn/-/22
+trial 22 a=(1,1) orbit : nn/2/14 nn/23/38 cc/-/136  orbits=[('twof', 'B', 0, 1, 4, 6), ('stab', 'A', 1, 1, 5, 7)]
+trial 23 a=(2,3) single: nn/2/11 nn/4/15 nn/7/20 nn/7/20 nn/7/20 nn/13/28 cc/-/45
+trial 23 a=(2,3) orbit : nn/2/11 nn/6/13 nn/54/41 cc/-/71  orbits=[('perm', 'A', 0, 0, 3, 2), ('rand', 'R2', 1, 2, 3, 7), ('cycle', 'R2', 0, 2, 2, 6)]
+trial 24 a=(0,0) single: nn/2/16 nn/3/18 nn/-/24
+trial 24 a=(0,0) orbit : nn/2/16 nn/13/34 nn/47/58 nn/159/74 cc/-/122  orbits=[('perm', 'B', 0, 1, 3, 3), ('perm', 'B', 2, 2, 6, 3), ('perm', 'B', 2, 2, 6, 2), ('stab', 'B', 2, 2, 7, 6)]
+trial 25 a=(0,1) single: nn/2/15 nn/1/21 nn/1/21 nn/1/21 nn/8/25 nn/20/33 nn/58/43
+trial 25 a=(0,1) orbit : nn/2/15 nn/5/27 nn/1/57 cc/-/105  orbits=[('perm', 'A', 0, 2, 4, 2), ('stab', 'A', 2, 2, 7, 6), ('stab', 'A', 0, 2, 0, 6)]
+trial 26 a=(1,0) single: nn/2/15 nn/5/19 nn/2/15 nn/2/15 nn/3/16 nn/2/21 nn/2/21
+trial 26 a=(1,0) orbit : nn/2/15 nn/17/31 nc/47/75 cc/-/152  orbits=[('twof', 'A', 0, 0, 5, 4), ('perm', 'B', 0, 2, 3, 2), ('twof', 'B', 0, 2, 2, 7)]
+trial 27 a=(0,2) single: nn/2/14 nn/4/17 nn/6/21 nn/6/21 nn/26/26 cc/-/31
+trial 27 a=(0,2) orbit : nn/2/14 nn/7/32 cc/-/96  orbits=[('perm', 'A', 0, 0, 4, 3), ('stab', 'R2', 0, 1, 0, 4)]
+trial 28 a=(1,1) single: nn/2/14 nn/2/14 nn/2/14 nn/2/14 nn/2/14 nn/2/14 nn/2/14
+trial 28 a=(1,1) orbit : nn/2/14 nn/31/46 nn/287/70 cc/-/130  orbits=[('rand', 'B', 0, 1, 4, 8), ('cycle', 'B', 0, 1, 4, 6), ('stab', 'A', 1, 1, 5, 2)]
+trial 29 a=(0,1) single: nn/2/15 nn/4/18 nn/11/24 nn/15/28 nn/64/34 cc/-/40
+trial 29 a=(0,1) orbit : nn/2/15 nn/29/57 nn/281/217 cc/-/281  orbits=[('rand', 'A', 0, 1, 3, 7), ('twof', 'B', 0, 1, 6, 5), ('perm', 'B', 0, 1, 6, 2)]
+trial 30 a=(0,3) single: nn/2/13 nn/2/13 nn/2/13 nn/2/13 nn/4/18 nn/8/26 cc/-/36
+trial 30 a=(0,3) orbit : nn/2/13 cn/1/31 cn/4/41 cc/-/50  orbits=[('stab', 'A', 0, 2, 2, 6), ('perm', 'R2', 2, 2, 0, 2), ('perm', 'A', 0, 0, 0, 3)]
+trial 31 a=(0,1) single: nn/2/15 nn/5/19 nn/7/23 nn/18/26 nn/18/26 cc/-/31
+trial 31 a=(0,1) orbit : nn/2/15 nn/7/31 nn/-/37  orbits=[('rand', 'A', 2, 2, 4, 8), ('stab', 'A', 2, 2, 7, 4)]
+trial 32 a=(0,3) single: nn/2/13 nn/4/18 nn/4/18 nn/1/13 nn/1/15 nn/1/15 nn/1/15
+trial 32 a=(0,3) orbit : nn/2/13 nn/22/48 nc/17/210 cc/-/219  orbits=[('rand', 'R2', 2, 2, 0, 7), ('stab', 'A', 0, 1, 5, 6), ('perm', 'A', 0, 2, 0, 3)]
+trial 33 a=(2,3) single: nn/2/11 nn/1/9 nn/3/13 nn/2/15 nn/2/17 nn/-/23
+trial 33 a=(2,3) orbit : nn/2/11  orbits=[]
+trial 34 a=(0,3) single: nn/2/13 nn/4/15 nn/9/18 nn/20/21 nn/20/21 nn/20/21 cc/-/33
+trial 34 a=(0,3) orbit : nn/2/13 nn/12/28 nn/33/70 cc/-/196  orbits=[('twof', 'A', 0, 0, 0, 5), ('cycle', 'R2', 0, 2, 0, 6), ('cycle', 'A', 0, 1, 4, 6)]
+trial 35 a=(2,2) single: nn/2/12 nn/3/14 nn/-/16
+trial 35 a=(2,2) orbit : nn/2/12 nn/27/26 nn/51/32 cc/-/46  orbits=[('rand', 'B', 0, 0, 6, 7), ('twof', 'A', 0, 0, 6, 3), ('rand', 'B', 0, 0, 6, 7)]
+trial 36 a=(1,0) single: nn/2/15 nn/2/15 nn/2/15 nn/2/15 nn/3/19 nn/12/27 nn/-/35
+trial 36 a=(1,0) orbit : nn/2/15 nn/14/39 nn/45/45 cc/-/143  orbits=[('rand', 'A', 0, 1, 3, 7), ('stab', 'B', 0, 2, 0, 2), ('rand', 'A', 1, 1, 7, 7)]
+trial 37 a=(3,3) single: nn/2/10 nn/8/11 nn/5/15 nn/5/15 nn/-/17
+trial 37 a=(3,3) orbit : nn/2/10 cc/-/13  orbits=[('perm', 'Rt', 0, 0, 7, 3)]
+trial 38 a=(1,1) single: nn/2/14 nn/3/18 nn/3/20 nn/3/20 nn/-/24
+trial 38 a=(1,1) orbit : nn/2/14 nn/19/34 cc/-/58  orbits=[('twof', 'B', 0, 1, 4, 5), ('stab', 'B', 0, 1, 4, 6)]
+trial 39 a=(1,2) single: nn/2/13 nn/5/15 cn/1/17 cn/2/26 cn/4/29 cc/-/33
+trial 39 a=(1,2) orbit : nn/2/13 nn/14/37 nn/53/43 cn/1/128 cn/14/646 cc/-/982  orbits=[('twof', 'A', 0, 1, 5, 7), ('perm', 'A', 0, 0, 4, 3), ('stab', 'A', 1, 1, 7, 6), ('rand', 'R2', 0, 1, 2, 7), ('stab', 'A', 0, 1, 4, 6)]
+trial 40 a=(0,0) single: nn/2/16 nn/2/16 nn/5/22 nn/9/26 nn/13/30 nn/13/30 nn/13/30
+trial 40 a=(0,0) orbit : nn/2/16 nn/1/22 nn/44/58 nn/98/94 cc/-/318  orbits=[('perm', 'A', 0, 2, 2, 2), ('rand', 'A', 0, 0, 4, 6), ('rand', 'A', 0, 1, 5, 6), ('perm', 'A', 1, 2, 6, 4)]
+trial 41 a=(2,2) single: nn/2/12 nn/3/14 nn/3/14 nn/-/16
+trial 41 a=(2,2) orbit : nn/2/12 nn/1/18 nn/-/30  orbits=[('stab', 'A', 0, 0, 6, 4), ('stab', 'B', 0, 0, 6, 7)]
+trial 42 a=(0,3) single: nn/2/13 nn/3/15 nn/7/19 nn/7/19 nn/7/19 nn/7/19 nn/7/19
+trial 42 a=(0,3) orbit : nn/2/13 nn/15/37 nc/99/157 cc/-/647  orbits=[('stab', 'A', 1, 1, 6, 6), ('twof', 'A', 0, 2, 5, 5), ('stab', 'A', 2, 2, 7, 7)]
+trial 43 a=(1,1) single: nn/2/14 nn/2/14 nn/2/14 nn/3/18 nn/3/18 nn/-/22
+trial 43 a=(1,1) orbit : nn/2/14 nn/1/18 nn/-/50  orbits=[('stab', 'A', 1, 1, 5, 3), ('stab', 'A', 0, 1, 4, 4)]
+trial 44 a=(0,2) single: nn/2/14 nn/3/16 nn/6/19 nn/12/23 nn/12/23 nn/16/27 nn/16/27
+trial 44 a=(0,2) orbit : nn/2/14 nn/1/26 cc/-/80  orbits=[('perm', 'A', 1, 2, 5, 4), ('stab', 'A', 0, 1, 0, 6)]
+trial 45 a=(3,0) single: nn/2/13 nn/4/16 nc/1/22 cc/-/23
+trial 45 a=(3,0) orbit : nn/2/13 nn/4/19 nn/183/67 cn/357/203 cc/-/503  orbits=[('perm', 'B', 0, 2, 5, 2), ('stab', 'B', 1, 1, 6, 6), ('stab', 'R1', 0, 2, 0, 4), ('perm', 'B', 0, 2, 2, 4)]
+trial 46 a=(0,1) single: nn/2/15 nn/1/9 nn/-/13
+trial 46 a=(0,1) orbit : nn/2/15 nn/17/31 nn/199/39 cc/-/99  orbits=[('stab', 'B', 0, 0, 5, 4), ('stab', 'B', 1, 1, 3, 4), ('rand', 'B', 1, 1, 7, 6)]
+trial 47 a=(2,3) single: nn/2/11 nn/2/11 nn/2/11 nn/7/15 nn/7/15 nn/34/19 nn/34/19
+trial 47 a=(2,3) orbit : nn/2/11 nn/4/13 nn/12/19 nn/1/29 cn/12/107 cc/-/185  orbits=[('perm', 'A', 0, 0, 7, 2), ('perm', 'A', 0, 0, 7, 3), ('twof', 'A', 0, 0, 7, 6), ('stab', 'R2', 1, 1, 3, 6), ('twof', 'R2', 1, 2, 1, 6)]
+trial 48 a=(3,0) single: nn/2/13 nn/3/15 nn/3/15 nn/3/15 nn/3/15 nn/3/15 nn/7/19
+trial 48 a=(3,0) orbit : nn/2/13 nn/9/19 nn/50/54 nn/314/222 cc/-/270  orbits=[('perm', 'B', 1, 1, 1, 3), ('twof', 'R1', 2, 2, 1, 7), ('twof', 'B', 0, 1, 4, 7), ('stab', 'B', 0, 2, 4, 2)]
+trial 49 a=(0,3) single: nn/2/13 nn/5/17 nn/5/17 nn/5/17 nn/5/17 nn/17/26 nn/35/36
+trial 49 a=(0,3) orbit : nn/2/13 nn/15/31 nn/156/79 cc/-/212  orbits=[('twof', 'R2', 1, 1, 0, 3), ('rand', 'A', 1, 1, 4, 6), ('rand', 'R2', 0, 2, 1, 7)]
+trial 50 a=(3,3) single: nn/2/10 nn/5/14 nn/5/16 cc/-/18
+trial 50 a=(3,3) orbit : nn/2/10 nn/77/24 cc/-/56  orbits=[('stab', 'R2', 2, 2, 4, 7), ('stab', 'Rt', 0, 0, 7, 4)]
+trial 51 a=(1,1) single: nn/2/14 nn/2/14 nn/2/14 nn/3/16 nn/3/16 nn/-/22
+trial 51 a=(1,1) orbit : nn/2/14 nn/12/24 nn/571/136 cc/-/1648  orbits=[('twof', 'B', 1, 1, 5, 6), ('rand', 'B', 0, 1, 4, 8), ('rand', 'A', 0, 1, 6, 7)]
+trial 52 a=(3,0) single: nn/2/13 nn/3/15 nn/3/15 nn/3/15 nn/7/19 nn/7/19 nn/7/19
+trial 52 a=(3,0) orbit : nn/2/13 nn/16/27 cc/-/69  orbits=[('twof', 'B', 1, 1, 1, 7), ('twof', 'R1', 0, 0, 1, 6)]
+trial 53 a=(1,0) single: nn/2/15 nn/3/19 nn/-/23
+trial 53 a=(1,0) orbit : nn/2/15 nn/8/24 cc/-/84  orbits=[('perm', 'B', 0, 2, 1, 3), ('stab', 'A', 0, 1, 4, 6)]
+trial 54 a=(3,0) single: nn/2/13 nn/1/9 nn/2/12 nn/4/15 nn/5/16 nn/-/23
+trial 54 a=(3,0) orbit : nn/2/13 nn/1/25 cc/-/116  orbits=[('stab', 'B', 1, 2, 6, 4), ('twof', 'R1', 0, 0, 1, 7)]
+trial 55 a=(1,2) single: nn/2/13 nn/4/15 nn/4/15 nn/4/15 nn/4/15 nn/4/15 nn/4/15
+trial 55 a=(1,2) orbit : nn/2/13 nn/12/23 nn/-/58  orbits=[('twof', 'A', 0, 1, 2, 5), ('rand', 'A', 1, 1, 7, 6)]
+trial 56 a=(2,3) single: nn/2/11 nn/5/16 nn/10/22 nn/21/30 nn/21/30 nn/21/30 cc/-/39
+trial 56 a=(2,3) orbit : nn/2/11 nn/29/46 nn/61/56 cc/-/173  orbits=[('rand', 'R2', 0, 0, 3, 7), ('perm', 'R2', 0, 2, 0, 2), ('perm', 'R1', 0, 1, 1, 3)]
+trial 57 a=(0,2) single: nn/2/14 nn/4/21 nn/7/27 nn/-/33
+trial 57 a=(0,2) orbit : nn/2/14 nn/60/32 cc/-/128  orbits=[('stab', 'A', 0, 1, 0, 6), ('twof', 'A', 1, 2, 6, 7)]
+trial 58 a=(3,0) single: nn/2/13 nn/2/13 nn/2/13 nn/2/13 nn/2/13 nn/2/13 nn/2/13
+trial 58 a=(3,0) orbit : nn/2/13 nn/14/49 nn/57/70 nc/1/238 cc/-/532  orbits=[('twof', 'B', 0, 2, 5, 7), ('rand', 'B', 0, 2, 4, 7), ('rand', 'B', 1, 2, 6, 4), ('stab', 'B', 1, 1, 6, 7)]
+trial 59 a=(3,1) single: nn/2/12 nn/2/12 nn/4/18 nn/13/24 nn/16/27 cc/-/33
+trial 59 a=(3,1) orbit : nn/2/12 nn/6/20 nn/16/40 nn/60/56 nc/1/68 cc/-/128  orbits=[('perm', 'B', 0, 1, 6, 3), ('twof', 'B', 0, 1, 6, 6), ('twof', 'B', 0, 1, 6, 4), ('perm', 'B', 0, 1, 6, 3), ('perm', 'B', 1, 1, 7, 2)]
+mean orphan count per repair step (designs still running at that step):
+   single ['2.0 (n=60)', '3.2 (n=60)', '4.5 (n=52)', '6.5 (n=45)', '10.5 (n=42)', '11.1 (n=30)', '12.5 (n=22)']
+   orbit ['2.0 (n=60)', '14.5 (n=58)', '89.0 (n=36)', '112.2 (n=10)', '9.0 (n=3)', '-', '-']

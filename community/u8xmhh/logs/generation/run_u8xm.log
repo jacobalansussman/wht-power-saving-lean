@@ -1,0 +1,8 @@
+== U8XM_5cc -> hu8xm_sr 17:01:08
+{"name": "U8XM_5cc", "copies": 0, "defer": 0, "dropped": [0, 0], "repaired": 0, "W": 7529, "banks": 361, "hosted": 32736, "unhosted": 3912, "L_idle": 83016.1, "root_lower": "0.00161679000711", "kernel_A": 16167867, "dft": 16167866}
+  remainders: {'A2': {0: 1792}, 'B2': {0: 976, 1: 432, 4: 384}, 'A3': {0: 808, 1: 344, 2: 608, 12: 32}, 'B3': {0: 976, 1: 432, 3: 256, 4: 128}, 'A4': {0: 488, 48: 1304}, 'B4': {0: 976, 1: 432, 4: 384}, 'F1': {0: 488, 48: 1304}, 'F2': {0: 808, 1: 680, 2: 272, 12: 32}, 'F3': {0: 1792}}  solver: 0 4.1 s
+AUDIT PASS U8XM_5cc copies=0 defer=0: 32736 hosted residuals, W=7529, D=2560, histogram matches
+== repack2 17:01:24
+out/hu8xm_sr.json: LB 310 old banks 361 -> 310 banks, pad L 168, pads [(0, 276), (1, 33), (29, 1)]; W=7478 dft3=16196135 dft4=16196168
+AUDIT PASS U8XM_5cc copies=0 defer=0: 32736 hosted residuals, W=7478, D=2560, histogram matches
+== done 17:05:33

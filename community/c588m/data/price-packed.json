@@ -1,0 +1,59 @@
+{
+  "status": "EXACT_ARITHMETIC_CANDIDATE_MUTABLE_SOURCES_NO_COPIES",
+  "source_copies": false,
+  "schedule": "packed",
+  "source_sha256": "b53a0194b4ee826377e95601dee03b87f43ab197da3f24447f7b8bfaf852d800",
+  "schedule_sha256": "f66c603bad5e618cb8a9f677fbb8dbdcadaec445a8d087da5060d8b9430c06c2",
+  "h": 9,
+  "m": 73,
+  "v": 112,
+  "local_profile": {
+    "1": 2484,
+    "2": 492,
+    "3": 280,
+    "4": 232,
+    "5": 56,
+    "6": 56,
+    "8": 8
+  },
+  "local_residual_count": 504,
+  "banks": 4005,
+  "W": 11173,
+  "deficit": 2560,
+  "profile": {
+    "1": 178848,
+    "2": 35424,
+    "3": 20160,
+    "4": 16704,
+    "5": 4032,
+    "6": 4032,
+    "8": 5952,
+    "16": 3584,
+    "32": 3584,
+    "45": 1,
+    "48": 3584
+  },
+  "pad_hist": {
+    "0": 4004,
+    "45": 1
+  },
+  "exact_rate": {
+    "root_lower": "1356632023589/1000000000000000",
+    "root_upper": "135663202359/100000000000000",
+    "root_lower_decimal": "0.001356632023589",
+    "root_upper_decimal": "0.00135663202359",
+    "lower_endpoint_margin_at_least": "6.644781651593103496294823400038544103176396265091311837E-17",
+    "upper_endpoint_excess_at_least": "2.252274215268531731074793663851276322868185026566302597E-15",
+    "moment_upper_at_dft_record": "0.9992247552206252280152376850784713406904129935531660387",
+    "strictly_beats_record_as_a_moment": true,
+    "method": "80-term rational atanh log; 30-degree rational exponential; explicit tails",
+    "scope": "Arithmetic only; no circuit realization or DFT transfer is inferred"
+  },
+  "kernel_numerator": 13566303,
+  "dft_numerator": 13566302,
+  "schedK_mirror": true,
+  "schedK_duplicate_owner_control": false,
+  "schedK_wrong_pad_control": false,
+  "packing_attempt": 1,
+  "packing_seed": 0
+}

@@ -1,0 +1,16 @@
+block 4 even (m-2)-flats 49 odd 56
+F rows 49 pieces 120
+rows 849 vars 135 build 0.0s
+status 0 Optimization terminated successfully. (HiGHS Status 7: Optimal)
+LP optimum (float) 4.000000000000
+c at optimum (rounded): [np.float64(1.0), np.float64(1.0), np.float64(-0.0), np.float64(1.0), np.float64(0.0), np.float64(-0.0), np.float64(-0.0), np.float64(1.0), np.float64(0.0), np.float64(0.0), np.float64(-0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)]
+dual objective (float) 4.000000000000
+limit_denominator 100: exact bound 2741676674418139672/689309876818975509 = 3.977422588329  (rows used 51, repairs 11)
+limit_denominator 1000: exact bound 5473341330109319943448527797813/1368350684195114082687165818613 = 3.999955123586  (rows used 46, repairs 5)
+limit_denominator 10000: exact bound 4 = 4.000000000000  (rows used 41, repairs 0)
+limit_denominator 1e+06: exact bound 4 = 4.000000000000  (rows used 41, repairs 0)
+limit_denominator 1e+09: exact bound 4 = 4.000000000000  (rows used 41, repairs 0)
+limit_denominator 1e+12: exact bound 4 = 4.000000000000  (rows used 41, repairs 0)
+BEST exact lower bound on M/W: 4 = 4.000000000000
+time 0.0s
+./py.sh my_rclp.py 4 cells  0.21s user 0.08s system 50% cpu 0.578 total

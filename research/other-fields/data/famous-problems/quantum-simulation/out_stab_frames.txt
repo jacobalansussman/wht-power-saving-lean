@@ -1,0 +1,8 @@
+m=2: stabiliser states 60, frames 15, |L| = {4}
+  (b) overlap^2 in {0, 2^-d}: 1830/1830 pairs pass
+  (c) free group fixes L_0: True; orbits (min dist, max dist, size): [(0, 0, 1), (1, 1, 6), (2, 2, 8)]
+  (d) max frame distance moved by one Hadamard: 1; d(L_0, H^m L_0) = 2
+m=3: stabiliser states 1080, frames 135, |L| = {8}
+  (b) overlap^2 in {0, 2^-d}: 583740/583740 pairs pass
+  (c) free group fixes L_0: True; orbits (min dist, max dist, size): [(0, 0, 1), (1, 1, 14), (2, 2, 56), (3, 3, 64)]
+  (d) max frame distance moved by one Hadamard: 1; d(L_0, H^m L_0) = 3

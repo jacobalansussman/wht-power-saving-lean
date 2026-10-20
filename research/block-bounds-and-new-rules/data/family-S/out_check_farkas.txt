@@ -1,0 +1,5 @@
+[PASS] ip2: multipliers nonnegative: True; objective - sum lambda g = no variable terms, constant 0  (n - 2m >= 0, where n = s1 + s2 + c + r1 + r2 + lin (the program's n))
+[PASS] ip1: multipliers nonnegative: True; objective - sum lambda g = no variable terms, constant 0  (n - 2m - 1 >= 0, where n = s1 + s2 + c + r1 + r2)
+[PASS] model check m=2: 835424 enumerated configurations, constraint violations 0
+[PASS] model check m=3: 4115761 enumerated configurations, constraint violations 0
+RESULT: PASS

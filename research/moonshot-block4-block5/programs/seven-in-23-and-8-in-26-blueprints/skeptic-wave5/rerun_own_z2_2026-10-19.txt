@@ -1,0 +1,26 @@
+Lagrangians 2295 31s
+neighbours of K at d3: 15 ; content cells t: 7  31s
+F choice 0, content cell #0: |G| = 10752, dim A = 184, G-fixed slots [0, 13] (t slot 0), input distances of fixed [2, 3]  34s
+G-orbit sizes on the 30 slots: [1, 28, 1] ; kernel slot 29 in orbit of size 28
+involutions 399 ; elementary abelian subgroups of order 8: 11391  74s
+distance-4 slots 16 ; non-free slots with one O1 cell 26
+   0  74s
+   2000  146s
+   4000  210s
+   6000  281s
+   8000  344s
+   10000  416s
+counts (regular kernel orbit, some regular orbit in G.k0, #failing chars with all d<=3 free, #failing with one O1 cell):
+    (False, False, 5, 5) 252
+    (False, False, 6, 6) 252
+    (False, False, 7, 7) 2991
+    (False, True, 4, 4) 36
+    (False, True, 5, 5) 108
+    (False, True, 6, 6) 1380
+    (False, True, 7, 7) 3108
+    (True, True, 4, 4) 48
+    (True, True, 5, 5) 144
+    (True, True, 6, 6) 1056
+    (True, True, 7, 7) 2016
+min failing (generous free span) by (regk, regG): {(True, True): 4, (False, False): 5, (False, True): 4}
+done 468s

@@ -1,0 +1,8 @@
+H D1 H D2 H = [['6', '0'], ['-10', '8']]
+U == Dl W Dr : True
+H == U D P U P : True
+k=1  H^k via 2 calls to U^k: True   U^k via 3 calls to H^k: True
+k=2  H^k via 2 calls to U^k: True   U^k via 3 calls to H^k: True
+k=3  H^k via 2 calls to U^k: True   U^k via 3 calls to H^k: True
+k=4  H^k via 2 calls to U^k: True   U^k via 3 calls to H^k: True
+=> L(H^k) <= 2 L(U^k) + 3*2^k and L(U^k) <= 3 L(H^k) + 4*2^k: WHT, Yates zeta transform and disjointness (= P U) share one log-exponent at L0.

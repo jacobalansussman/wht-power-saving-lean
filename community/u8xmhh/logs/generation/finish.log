@@ -1,0 +1,6 @@
+U8XM_5cc: R=509 hosted/run=4092 hosts=2016 rem-hist={0: 1138, 1: 290, 2: 110, 3: 32, 4: 112, 12: 8, 48: 326} -> out/HU8XM-hosttab.lean
+U8XMHH: kernel numerator 16197706 DFT 16197705 W 7478 banks 310 hosted entries/run 4092
+written; rate slack 5.964834437776731e-11
+{"keep": {"GXD.U8XMHH.": "GXD.U8XM.", "blocksU8XMHHx": "blocksU8XMx", "fold_U8XMHHx": "fold_U8XMx"}, "num": {"13868857": "16197706", "13868856": "16197705", "10939": "7478"}, "import": "Work.XHost.U8XMHH", "call": "  XHost.engine_of_ginv_host GXD.U8XM.ginv GXD.U8XM.h9 GXD.U8XMHH.hsched GXD.U8XMHH.hf
+ok U8XMHH
+finish ok hu8xm_sr

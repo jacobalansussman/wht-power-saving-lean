@@ -1,0 +1,9 @@
+(4,4,17): deletion-passing 211; clique-excluded 116; excluded only by new tests 4; pass all 91
+  NEW-EXCLUDED (must stall): S=[1, 2, 3, 4, 5, 6, 7, 7, 8, 8, 9, 10, 11, 12, 13, 14, 15] ('EXCLUDED', 'passes', 'passes') -> best residual 2.613e+02 ['2.6e+02', '2.6e+02', '2.7e+02']
+  NEW-EXCLUDED (must stall): S=[1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 10, 11, 11, 12, 13, 14, 15] ('EXCLUDED', 'passes', 'passes') -> best residual 2.721e+02 ['2.7e+02', '2.7e+02', '2.7e+02']
+  NEW-EXCLUDED (must stall): S=[1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 13, 14, 15] ('EXCLUDED', 'passes', 'passes') -> best residual 2.721e+02 ['2.7e+02', '2.7e+02', '2.7e+02']
+  NEW-EXCLUDED (must stall): S=[1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 14, 15] ('EXCLUDED', 'passes', 'passes') -> best residual 2.722e+02 ['2.7e+02', '2.7e+02', '2.7e+02']
+  PASS-ALL (control): S=[7, 7, 7, 7, 11, 11, 11, 11, 13, 13, 13, 13, 14, 14, 14, 14, 15]  -> best residual 6.284e-18 ['3.7e-17', '6.3e-18', '2.1e-02']
+  PASS-ALL (control): S=[7, 7, 7, 7, 11, 11, 11, 11, 13, 13, 13, 13, 14, 14, 14, 14, 14]  -> best residual 1.473e-16 ['1.5e-16', '3.4e-15', '1.9e+00']
+  PASS-ALL (control): S=[7, 7, 7, 7, 11, 11, 11, 11, 13, 13, 13, 13, 13, 14, 14, 14, 14]  -> best residual 1.252e-18 ['2.2e-17', '1.3e-18', '3.6e-05']
+  PASS-ALL (control): S=[7, 7, 7, 7, 11, 11, 11, 11, 12, 13, 13, 13, 13, 14, 14, 14, 14]  -> best residual 8.506e-15 ['1.4e-14', '1.4e-14', '8.5e-15']

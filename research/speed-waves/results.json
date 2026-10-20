@@ -1,0 +1,1326 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "speed-waves",
+ "title": "Speed-first waves 11-15: real processors and FPGAs (11-13 October)",
+ "dates": "2026-10-11 to 2026-10-13",
+ "made_with": "AI agents (Claude) directed by the author",
+ "machines": "one Apple M4 Mac mini (all processor timings); GitHub-hosted Arm Neoverse N2 runners (SEAL port check); open FPGA tools (Yosys, nextpnr), no vendor tools, no board",
+ "in_lean": false,
+ "status_words": [
+  "proved in Lean",
+  "checked by computer",
+  "argued by hand, not checked",
+  "refuted",
+  "open"
+ ],
+ "status_note": "For measurements, \"checked by computer\" means an independent AI critic re-measured the claim with its own baseline and programs (the detail says how many); \"one program, not repeated by anyone\" means no critic re-ran it. No person repeated any measurement.",
+ "bar": {
+  "processors": "at least 10 % less time than the strongest available baseline, like for like, at real sizes",
+  "fpgas": "at least 10 % less area at equal throughput and clock",
+  "or": "a capability the baselines lack, with a measured advantage"
+ },
+ "lessons": [
+  "Kernel gains are rarely application gains: measure the transform's share of the whole job first (only the SEAL NTT moved a whole application by more than 10 %).",
+  "Every headline shrank under a stronger baseline: a better library (FFTW double with NEON and a working timer, KFR), more cores (one matrix unit per cluster), colder caches, or a different design.",
+  "Credit the known part: most FPGA wins were a known mechanism in a new use (WP486 packing, vertical CSE, LUT-RAM transposition, carry-cell absorption).",
+  "The obvious rewrite takes a large share of the gain: build the fair rival before claiming."
+ ],
+ "findings": [
+  {
+   "id": "speed-waves/seal-ckks-loop",
+   "statement": "A NEON fp64-FMA NTT in place of SEAL 4.1.2's scalar NTT (primes below 2^50; the loop's two 60-bit primes ran a tuned scalar radix-4 NTT, also new) makes a loop of real CKKS operations at N = 2^14 21.2 % faster, with word-for-word equal ciphertexts, on one core and on all four P-cores. With SEAL's own code for the 60-bit primes the gain was -19.1 % (the developer's run, not repeated by the critic).",
+   "status": "checked by computer",
+   "status_detail": "one critic re-measured it with its own scalar control; a fairness critic read it",
+   "date": "2026-10-12",
+   "figure": "-21.2 %",
+   "conditions": "Apple M4, SEAL 4.1.2, CKKS N = 2^14, moduli 60, 7 x 40, 60 bits",
+   "numbers": {
+    "loop_ms_new": 93.6,
+    "loop_ms_seal": 118.8,
+    "change_vs_seal_pct": -21.2,
+    "change_vs_tuned_scalar_control_pct": -14.4,
+    "four_loops_four_pcores_pct": -21.2,
+    "eight_loops_pct": -22.0,
+    "ntt_share_of_loop_pct": [
+     59,
+     66
+    ],
+    "seal_tests_passed": "276/276",
+    "kernel_2e14_50bit_us": [
+     39.6,
+     61.6
+    ],
+    "with_seal_code_for_60bit_primes_pct": -19.1
+   },
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/seal-bfv-defaults",
+   "statement": "SEAL's own BFV default moduli at N = 2^12 to 2^14 are all below 2^50, so the same kernel makes the BFV loop 16.3 % to 20.8 % faster; CKKS at N = 2^15 gains 27.0 % and the tutorial size N = 2^13 (60, 40, 40, 60) only 10.8 %.",
+   "status": "checked by computer",
+   "status_detail": "found by the critic, correcting the developer's \"default moduli only -8 %\"",
+   "date": "2026-10-12",
+   "figure": "-16.3 % to -20.8 %",
+   "numbers": {
+    "bfv_default_pct": [
+     -16.3,
+     -20.8
+    ],
+    "ckks_2e15_pct": -27.0,
+    "ckks_2e13_tutorial_pct": -10.8,
+    "ckks_2e13_vs_control_pct": -7.1
+   },
+   "evidence": [],
+   "programs": [],
+   "supersedes": [
+    "the developer's claim \"SEAL default moduli only -8 %\""
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/seal-large-primes-radix4",
+   "statement": "A radix-4 scalar NTT with one overflow guard per pass for 55-60-bit primes gives -16.7 % on BFV at N = 2^15 against SEAL as shipped but only -6.3 % against our own scalar control: below the bar.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (read by the fairness critic only)",
+   "date": "2026-10-12",
+   "figure": "-6.3 %",
+   "numbers": {
+    "vs_seal_pct": -16.7,
+    "vs_control_pct": -6.3
+   },
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/seal-sme-int16-ntt",
+   "statement": "An exact 55-60-bit NTT through 16-bit limb products on the M4's matrix unit is 29 % to 49 % slower than a tuned scalar NTT (the whole NTT +37 %): moving partial sums out of the unit and the 87-bit reduction cost more than the products save.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone",
+   "date": "2026-10-12",
+   "figure": "+29 % to +49 %",
+   "numbers": {
+    "stage_pct": [
+     29,
+     49
+    ],
+    "whole_ntt_pct": 37,
+    "za_readout_ns_per_coeff": 0.5,
+    "reduction_ns_per_coeff": 0.49
+   },
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/seal-port-tests",
+   "statement": "The NTT ported into SEAL 4.6.2 as the build setting SEAL_USE_NEON_NTT (off by default, primes below 2^50) passes SEAL's whole test suite with the setting off (372/372) and on (373/373) on the M4 (Release and Debug) and with GCC 13.3 and Clang 18.1 on Arm Neoverse N2; it switches itself off on x86 (372/372 pass); with it off the library objects are byte-identical to unmodified SEAL 4.6.2; the new tests catch 11 of 12 planted bugs.",
+   "status": "checked by computer",
+   "status_detail": "SEAL's own tests on two chips and two compilers; planted bugs; two independent AI skeptics, neither refuted it",
+   "date": "2026-10-13",
+   "numbers": {
+    "tests_off": "372/372",
+    "tests_on": "373/373",
+    "planted_bugs_caught": "11/12",
+    "start_up_memory_mb": [
+     467,
+     502
+    ]
+   },
+   "evidence": [
+    "data/seal-ntt-port/README.md"
+   ],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/seal-port-exactness",
+   "statement": "The ported NTT is exact: about 36.6 million transforms against SEAL's scalar code gave 0 mismatches; CKKS, BFV and BGV results are byte-identical with the setting on and off in all four rounding modes; the reduction planner was checked with exact rationals in 7,130 cases. The exactness proof itself is a written argument in a code comment.",
+   "status": "checked by computer",
+   "status_detail": "two independent AI skeptics with their own programs, neither refuted it; the written proof is argued by hand, not checked (not in Lean)",
+   "date": "2026-10-13",
+   "figure": "0 mismatches",
+   "numbers": {
+    "transforms_compared": 36600000,
+    "mismatches": 0,
+    "planner_cases_exact_rational": 7130
+   },
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/seal-port-speed-m4",
+   "statement": "With the setting on, SEAL's own benchmark program on the M4 (generic ARMv8.0-A build, SEAL's 128-bit default primes, n = 4,096 to 16,384) runs the NTT 35 % to 58 % faster, relinearisation and rotation 24 % to 30 %, CKKS rescale 30 % to 33 %, BFV decryption 20 % to 26 %, BFV multiplication and squaring 5 % to 9 %, multiply-then-relinearise 7 % to 12 % (BFV) and 21 % to 26 % (CKKS; the sum of the two measured operations); nothing changes at n = 32,768 except BFV batch encoding and decoding (20-bit plaintext prime).",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone; 7 off/on pairs; a control with the NEON code switched off at run time matched the rows with an NTT (median gap 0.8 points, at most 4.6)",
+   "date": "2026-10-13",
+   "figure": "-35 % to -58 % (NTT)",
+   "numbers": {
+    "ntt_pct": [
+     -35,
+     -58
+    ],
+    "relin_rotate_pct": [
+     -24,
+     -30
+    ],
+    "ckks_rescale_pct": [
+     -30,
+     -33
+    ],
+    "bfv_decrypt_pct": [
+     -20,
+     -26
+    ],
+    "bfv_multiply_pct": [
+     -5,
+     -9
+    ],
+    "mulrelin_bfv_pct": [
+     -7,
+     -12
+    ],
+    "mulrelin_ckks_pct": [
+     -21,
+     -26
+    ]
+   },
+   "evidence": [
+    "data/seal-ntt-port/apple-m4/m4-table.csv",
+    "data/seal-ntt-port/apple-m4/control-neon-alone.csv"
+   ],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/seal-ckks-decrypt-layout",
+   "statement": "The apparent 20 % gain on CKKS decryption (which runs no NTT) is not the port; most likely it is where the machine code of the benchmark program happens to sit (an inference from the control runs; the loop was not traced); it also inflates BFV decryption by 3 to 4 points.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (a control with identical code layout and memory)",
+   "date": "2026-10-13",
+   "numbers": {},
+   "evidence": [
+    "data/seal-ntt-port/apple-m4/control-not-neon.csv",
+    "data/seal-ntt-port/apple-m4/layout-table.csv"
+   ],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/seal-port-speed-n2",
+   "statement": "On GitHub's Arm machines (Arm Neoverse N2) the gains are smaller: fully reduced forward NTT -27 % to -30 %, public-key encryption -8 % to -15 %, relinearisation and rotation about -4 % to -5 % (GCC) and about -9 % to -10 % (Clang), BFV multiplication -1 % to -3 %; two runs on fresh machines agree within about half a point.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone; two runs, two compilers, 7 pairs each",
+   "date": "2026-10-13",
+   "figure": "-27 % to -30 % (forward NTT)",
+   "numbers": {
+    "fwd_ntt_pct": [
+     -27,
+     -30
+    ],
+    "public_key_encrypt_pct": [
+     -8,
+     -15
+    ],
+    "relin_rotate_gcc_pct": [
+     -4,
+     -5
+    ],
+    "relin_rotate_clang_pct": [
+     -9,
+     -10
+    ],
+    "lazy_fwd_ntt_gcc_pct": [
+     -4,
+     -6
+    ],
+    "lazy_fwd_ntt_clang_pct": [
+     -8,
+     -12
+    ],
+    "bfv_multiply_pct": [
+     -1,
+     -3
+    ]
+   },
+   "evidence": [
+    "data/seal-ntt-port/neoverse-n2/run1-gcc.csv",
+    "data/seal-ntt-port/neoverse-n2/run1-clang.csv",
+    "data/seal-ntt-port/neoverse-n2/run2-gcc.csv",
+    "data/seal-ntt-port/neoverse-n2/run2-clang.csv"
+   ],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/seal-gcc-alignment",
+   "statement": "With GCC at n = 32,768, SEAL's own fully reduced forward NTT runs 3 % to 4 % slower in the build with the setting on although its machine code is identical: the loop's alignment moved.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (disassembly compared)",
+   "date": "2026-10-13",
+   "figure": "+3 % to +4 %",
+   "numbers": {},
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/fp64-batched-fft",
+   "statement": "A batched complex128 FFT on the M4's matrix unit (radix-8 passes as complex 8 x 8 DFT matrices in fp64 outer products) takes 41 % less time than KFR at 512 points and 44 % less than FFTW double with NEON at 4,096 points, one P-core, batch 64, in cache; -50 % / -52 % from DRAM; only -15 % / -16 % at 1,024 (in cache) / 2,048 (from DRAM); -26 % / -18 % on the whole P-cluster.",
+   "status": "checked by computer",
+   "status_detail": "one critic rebuilt the baselines (KFR); a later rebuild of the strongest FFTW corrected the 4,096 figure",
+   "date": "2026-10-12",
+   "figure": "-41 % (512), -44 % (4,096)",
+   "numbers": {
+    "ns_per_point_512": [
+     0.688,
+     1.171
+    ],
+    "ns_per_point_4096": [
+     0.952,
+     1.709
+    ],
+    "dram_pct": [
+     -50,
+     -52
+    ],
+    "pct_1024": -15,
+    "pct_2048": -16,
+    "cluster_pct": [
+     -26,
+     -18
+    ],
+    "python_vs_scipy_4workers_pct": [
+     -23,
+     -26
+    ],
+    "error_vs_libraries": [
+     1.5,
+     1.8
+    ]
+   },
+   "evidence": [],
+   "programs": [
+    "programs/sme-fp64-batched-fft"
+   ],
+   "supersedes": [
+    "-52 % at 4,096 points (against an FFTW plan 17-20 % slow)",
+    "-55.8 % / -61.9 % first claimed against PFFFT-d / vDSP"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": "correctness checks at 512 and 4,096 points identical; broken copy fails"
+  },
+  {
+   "id": "speed-waves/optics-one-core",
+   "statement": "One complex128 angular-spectrum propagation step on one P-core with the matrix unit takes 38 % / 47 % / 62 % less time than FFTW double with NEON and its own 2-D plan, at 1,024^2 / 2,048^2 / 4,096^2 (about -30 / -42 / -56 % with natural-order output, worked out from parts).",
+   "status": "checked by computer",
+   "status_detail": "one critic and the fairness critic",
+   "date": "2026-10-12",
+   "figure": "-38 % / -47 % / -62 %",
+   "numbers": {
+    "ms_1024": [
+     5.0,
+     8.1
+    ],
+    "pct_512": -49,
+    "natural_order_pct_derived": [
+     -30,
+     -42,
+     -56
+    ],
+    "error": [
+     1.2e-15,
+     2.1e-15
+    ],
+    "gpu_complex64_speedup_vs_one_sme_core": [
+     2.6,
+     3.7
+    ]
+   },
+   "evidence": [],
+   "programs": [
+    "programs/sme-optics-step"
+   ],
+   "supersedes": [
+    "-56 / -49 / -62 % against PFFFT-d or KFR-d rows plus transpose"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/optics-cluster-1024",
+   "statement": "The claimed -19 % for the optics step on the whole P-cluster at 1,024^2 does not hold: it ties FFTW's own 4-thread 2-D plan (in place, PATIENT).",
+   "status": "refuted",
+   "status_detail": "refuted by the critic's FFTW 4-thread 2-D plan",
+   "date": "2026-10-12",
+   "figure": "tie",
+   "numbers": {
+    "ms_1024_sme_cluster": [
+     3.17,
+     3.4
+    ],
+    "ms_1024_fftw_4t": 3.29
+   },
+   "evidence": [],
+   "programs": [
+    "programs/sme-optics-step"
+   ],
+   "supersedes": [],
+   "refuted_by": "FFTW double with NEON, its own 4-thread 2-D plan",
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/optics-cluster-large",
+   "statement": "On the whole P-cluster the optics step gains 12.7 % / 20.7 % at 2,048^2 / 4,096^2 against four NEON threads running the same strip plan (27-38 % against FFTW's threaded 2-D plan).",
+   "status": "checked by computer",
+   "status_detail": "one critic and the fairness critic",
+   "date": "2026-10-12",
+   "figure": "-12.7 % / -20.7 %",
+   "numbers": {},
+   "evidence": [],
+   "programs": [
+    "programs/sme-optics-step"
+   ],
+   "supersedes": [
+    "-16 / -21 % against 4 x KFR-d same plan"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/welch-one-core",
+   "statement": "A one-pass fp64 Welch spectrum (window, FFT, |X|^2 accumulation) on one P-core with the matrix unit takes 33 % / 27 % / 11 % / 41 % less time than FFTW double with NEON and the real-input routes, at segment lengths 512 / 1,024 / 2,048 / 4,096, 2^22 samples, 50 % Hann.",
+   "status": "checked by computer",
+   "status_detail": "one critic and the fairness critic",
+   "date": "2026-10-12",
+   "figure": "-33 / -27 / -11 / -41 %",
+   "numbers": {
+    "ms_512": [
+     4.59,
+     6.87
+    ],
+    "ms_4096": [
+     5.65,
+     9.55
+    ],
+    "checks_vs_scipy": 239,
+    "max_error": 4.7e-15
+   },
+   "evidence": [],
+   "programs": [
+    "programs/sme-welch"
+   ],
+   "supersedes": [
+    "-33 / -30 / -15 / -41 % first claimed"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/welch-four-cores",
+   "statement": "On four P-cores (64 channels) the matrix-unit Welch clears the bar at no segment length (-1 % to -10 %); the claimed -10.3 % and -11.2 % are refuted.",
+   "status": "refuted",
+   "status_detail": "refuted by the critic, who added FFTW double with NEON to a race that had only 4 x vDSP at 1,024",
+   "date": "2026-10-12",
+   "figure": "-1 % to -10 %",
+   "numbers": {},
+   "evidence": [],
+   "programs": [
+    "programs/sme-welch"
+   ],
+   "supersedes": [],
+   "refuted_by": "critic re-measurement with the strongest 4-thread baselines",
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/welch-python",
+   "statement": "From Python the matrix-unit Welch is 62 % / 66 % faster than a 6-line batched rfft Welch with 4 workers in fp64; most of that is doing Welch in C at all.",
+   "status": "checked by computer",
+   "status_detail": "the fairness critic built the 6-line rival",
+   "date": "2026-10-12",
+   "figure": "-62 / -66 %",
+   "numbers": {},
+   "evidence": [],
+   "programs": [
+    "programs/sme-welch"
+   ],
+   "supersedes": [
+    "-83 % to -87 % against scipy and MNE"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/fp64-convolve",
+   "statement": "A drop-in for np.convolve / np.correlate computing the direct sum with fp64 Toeplitz tiles on the matrix unit is 74 % / 85 % / 87 % / 81 % / 68 % / 70 % faster than the best of numpy, scipy and vDSP at 9 / 33 / 129 / 257 / 513 / 1,025 taps (whole Python call, 10^6 samples); against a C PFFFT-double overlap-save it wins only below about 450 taps.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (wave 15 ended before a critic)",
+   "date": "2026-10-12",
+   "figure": "-68 % to -87 %",
+   "numbers": {
+    "pct_by_taps": {
+     "9": -74,
+     "33": -85,
+     "129": -87,
+     "257": -81,
+     "513": -68,
+     "1025": -70
+    },
+    "gmacs_at_1025_taps": 240,
+    "numpy_gmacs": 11,
+    "crossover_vs_c_fft_taps": 450,
+    "vs_c_ols_257_pct": -33,
+    "vs_c_ols_513_pct": 13,
+    "vs_c_ols_1025_ratio": 1.9,
+    "error_vs_numpy_median": 1.4,
+    "fixed_cost_us": 1.7
+   },
+   "evidence": [],
+   "programs": [
+    "programs/sme-fp64-convolve"
+   ],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": "check.py quick 534/534 PASS; broken copy 4/4 FAIL; NaN pattern identical"
+  },
+  {
+   "id": "speed-waves/cluster-trylock",
+   "statement": "In multi-process code a per-cluster try-lock in front of the matrix unit with a NEON fallback gives -17.6 % / -18.9 % on a 4-worker Whisper log-mel (-15 % with 8 workers) and -11 % / -12 % on a 4-worker fp64 FFT against all-NEON; letting every worker enter the unit is 19 % to 41 % slower than all-NEON (slowest 1 % of calls 1.6-2.8 x); a resident owner process fails (9-25 us hand-off).",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (read by the fairness critic only)",
+   "date": "2026-10-12",
+   "figure": "-17.6 % / -18.9 %",
+   "numbers": {
+    "logmel_4w_pct": [
+     -17.6,
+     -18.9
+    ],
+    "logmel_8w_pct": -15,
+    "fft_4w_pct": [
+     -11,
+     -12
+    ],
+    "all_sme_slower_pct": [
+     19,
+     41
+    ],
+    "owner_handoff_us": [
+     9,
+     25
+    ]
+   },
+   "evidence": [],
+   "programs": [
+    "programs/sme-cluster-trylock"
+   ],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/fir-fp32",
+   "statement": "A Toeplitz-tile FIR filter on the matrix unit (fp32, one thread, 2^20 samples, in cache, >= ~1,000 outputs per call) takes 59 % / 53 % / 50 % less time than Accelerate sgemm on block-Toeplitz panels at 16 / 64 / 256 taps; it loses on short calls and above about 500-1,000 taps (the critic's estimate from measured parts).",
+   "status": "checked by computer",
+   "status_detail": "two critics independently built the stronger sgemm baseline",
+   "date": "2026-10-11",
+   "figure": "-59 / -53 / -50 %",
+   "numbers": {
+    "dram_pct": [
+     -42,
+     -49,
+     -52
+    ],
+    "short_call_loss_pct": [
+     127,
+     481
+    ]
+   },
+   "evidence": [],
+   "programs": [
+    "programs/sme-fp32-fir"
+   ],
+   "supersedes": [
+    "-75 / -87 / -68 % against vDSP conv and PFFFT"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": "correctness checks identical"
+  },
+  {
+   "id": "speed-waves/fft256-fp32",
+   "statement": "A batched 256-point fp32 FFT on the matrix unit is 28 % faster per core than vDSP's DFT at batch 64 (-31 % to -33 % from DRAM) but only 5 % to 12 % faster on the whole chip in cache and no faster from DRAM, and slower at batch 1.",
+   "status": "checked by computer",
+   "status_detail": "one critic",
+   "date": "2026-10-11",
+   "figure": "-28 % per core",
+   "numbers": {
+    "chip_pct": [
+     -5,
+     -12
+    ],
+    "batch1_pct": 6.6
+   },
+   "evidence": [],
+   "programs": [
+    "programs/sme-fp32-fft"
+   ],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": "correctness check identical"
+  },
+  {
+   "id": "speed-waves/neon-wht",
+   "statement": "A NEON textbook Walsh-Hadamard transform (fp32, one thread) takes 8 % to 24 % less time than FFHT's NEON code at each of the six sizes tested from 2^8 to 2^22.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone",
+   "date": "2026-10-11",
+   "figure": "-8 % to -24 %",
+   "numbers": {
+    "ns_per_point_2e10": [
+     0.207,
+     0.272
+    ],
+    "ns_per_point_2e20": [
+     0.498,
+     0.54
+    ]
+   },
+   "evidence": [],
+   "programs": [
+    "programs/neon-wht"
+   ],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": "correctness check identical"
+  },
+  {
+   "id": "speed-waves/fftw-shipped-no-neon",
+   "statement": "conda-forge's FFTW 3.3.10 for osx-arm64 and linux-aarch64 contains 0 NEON codelets; Homebrew enables SIMD on Intel only; Debian arm64 has NEON in single precision only. With the same API and plans, conda-forge's osx-arm64 library takes 1.63-1.68 x as long for complex fp64, 1.27-1.38 x for real fp64 and 2.0-2.6 x for fp32 as FFTW built with NEON.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (a probe no critic read)",
+   "date": "2026-10-12",
+   "figure": "1.27 x to 2.6 x slower",
+   "numbers": {
+    "complex_fp64_ratio": [
+     1.63,
+     1.68
+    ],
+    "real_fp64_ratio": [
+     1.27,
+     1.38
+    ],
+    "fp32_ratio": [
+     2.0,
+     2.6
+    ],
+    "neon_codelets_shipped": 0,
+    "neon_codelets_correct_build": 583
+   },
+   "evidence": [],
+   "programs": [
+    "programs/fftw-neon-probe"
+   ],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/pocketfft-vector-path",
+   "statement": "pocketfft's batched vector path (the FFT inside numpy and scipy) is 30 % slower than its scalar path at 64 rows of 4,096 complex128 points (3.86 against 2.96 ns per point), in one run.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone, one run",
+   "date": "2026-10-12",
+   "figure": "+30 %",
+   "numbers": {},
+   "evidence": [],
+   "programs": [
+    "programs/fftw-neon-probe"
+   ],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/pfb-packing-wave13",
+   "statement": "Two 8-bit telescope signals per DSP48E2 multiply in the SKA-Low channeliser: 224 -> 112 DSPs per slice; the halving is Xilinx WP486's known packing; the new part (exact guards from branch coefficient sums, offset through the C port) saves about 17k LUTs per chip and 1.6-2.1 dB of stop-band over the obvious WP486 design.",
+   "status": "checked by computer",
+   "status_detail": "one critic; synthesis only",
+   "date": "2026-10-12",
+   "figure": "-50 % DSPs (known part)",
+   "numbers": {
+    "dsp_per_slice": [
+     224,
+     112
+    ],
+    "lut_saving_per_chip": 17000,
+    "db_gain": [
+     1.6,
+     2.1
+    ]
+   },
+   "evidence": [],
+   "programs": [
+    "programs/packed-pfb"
+   ],
+   "supersedes": [
+    "-50 % DSPs presented as new"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/pfb-graded-groups",
+   "statement": "With tap groups graded by coefficient size, the packed channeliser needs 7 instead of 14 DSPs per signal lane and meets every filter requirement (ripple +-0.19 dB, alias edge -62.1 dB, far stop-band -83.2 dB); worked out for the KU040 chip: -33.4 % of the channeliser's DSPs, -25.6 % of the chip's; on DSP48E1 one variant meets everything at -43 % DSPs.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (read by the fairness critic); synthesis only; the chip figures are worked out, not placed",
+   "date": "2026-10-12",
+   "figure": "7 vs 14 DSP per lane",
+   "numbers": {
+    "ripple_db": 0.19,
+    "alias_edge_db": -62.1,
+    "far_stopband_db": -83.2,
+    "pertap_wp486_db": -81.4,
+    "extra_lut": [
+     1700,
+     17300
+    ],
+    "channeliser_dsp_pct": -33.4,
+    "chip_dsp_pct": -25.6,
+    "dsp48e1_pct": -43
+   },
+   "evidence": [
+    "data/packed-pfb/wave14/c3_Bs_c2s_s19_c2.npy"
+   ],
+   "programs": [
+    "programs/packed-pfb"
+   ],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/pfb-unpack-exhaustive",
+   "statement": "Unpacking the two products from one DSP is bit-exact for all 2^28 inputs; a broken copy fails on 41,180,672 of them.",
+   "status": "checked by computer",
+   "status_detail": "exhaustive simulation (Verilator); re-run for this revision",
+   "date": "2026-10-12",
+   "figure": "0 mismatches in 2^28",
+   "numbers": {
+    "vectors": 268435456,
+    "mismatches": 0,
+    "broken_mismatches": 41180672
+   },
+   "evidence": [],
+   "programs": [
+    "programs/packed-pfb"
+   ],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": "identical output"
+  },
+  {
+   "id": "speed-waves/carry-folded-sdf-fft",
+   "statement": "A streaming radix-2^2 SDF FFT with its stage multiplexers folded into Lattice CCU2 carry cells needs about 20 % fewer slices than the best generic RTL on CrossLink-NX at 256 points (-21 % LUT positions measured; ECP5 about 4 points less; NX clock +10 %); only against Yosys, and a Lattice patent may mean Lattice's tools already do it.",
+   "status": "checked by computer",
+   "status_detail": "one critic; open tools only",
+   "date": "2026-10-12",
+   "figure": "about -20 % slices",
+   "numbers": {
+    "lut_positions_pct": -21,
+    "nx_clock_pct": 10,
+    "radar_chain_slices_pct": -14.3
+   },
+   "evidence": [],
+   "programs": [
+    "programs/carry-folded-sdf-fft"
+   ],
+   "supersedes": [
+    "-23.9 % NX against a weaker baseline; -52 % against a published core (dropped)"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": "carry-cell function checks: 0 failures"
+  },
+  {
+   "id": "speed-waves/radar-chain-two-channels",
+   "statement": "Packing two real radar channels into one complex FFT in a range-Doppler chain: built and simulated bit-exact (114,688 outputs, 0 mismatches; a broken split fails), but the area table was never written.",
+   "status": "open",
+   "status_detail": "correctness checked by computer, one program; area not reported (wave 15 cut short)",
+   "date": "2026-10-12",
+   "numbers": {},
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/up5k-folded-fft-4096",
+   "statement": "A folded 4,096-point FFT on the iCE40-UP5K with all arithmetic in 6 SB_MAC16 blocks takes 235 logic cells, 40 % fewer than the best DSP-multiplier rival (393) and 56 % fewer than the obvious design (529), at 50 MHz (the datasheet cap); 1.85 M samples/s at 48 MHz.",
+   "status": "checked by computer",
+   "status_detail": "one critic (10 seeds, re-timed DSP paths)",
+   "date": "2026-10-12",
+   "figure": "235 cells, -40 %",
+   "numbers": {
+    "cells": 235,
+    "rival_cells": [
+     393,
+     529
+    ],
+    "mhz": 50
+   },
+   "evidence": [],
+   "programs": [
+    "programs/up5k-folded-fft"
+   ],
+   "supersedes": [
+    "-58 % / -82 % and 61.3 MHz first claimed"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": "precision model identical"
+  },
+  {
+   "id": "speed-waves/up5k-folded-fft-8192-25bit",
+   "statement": "A 25-bit folded 8,192-point FFT on the UP5K takes 274 cells, reads a -90 dBFS noise floor within 0.73 dB (the 16-bit design 33.3 dB high), for 10 cells more than a 16-bit design; rivals 709 / 645 / 408 cells.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (wave 15, no critic); RTL bit-exact on 106,496 samples; netlist simulation unfinished",
+   "date": "2026-10-12",
+   "figure": "274 cells",
+   "numbers": {
+    "cells": 274,
+    "floor_db": 0.73,
+    "floor_db_16bit": 33.3,
+    "rivals": {
+     "logic_only": 709,
+     "behavioural_mac": 645,
+     "twiddle_3mac": 408
+    }
+   },
+   "evidence": [],
+   "programs": [
+    "programs/up5k-folded-fft"
+   ],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/up5k-streaming-fft-4096",
+   "statement": "A 4,096-point streaming FFT fits the iCE40-UP5K: 4,849 cells (92 %), 30.9 MHz over 12 seeds, 47.7 dB SQNR; a capability whose only rivals are ablations.",
+   "status": "checked by computer",
+   "status_detail": "one critic",
+   "date": "2026-10-12",
+   "figure": "fits (capability)",
+   "numbers": {
+    "cells": 4849,
+    "mhz": 30.9,
+    "sqnr_db": 47.7
+   },
+   "evidence": [],
+   "programs": [
+    "programs/up5k-streaming-fft-and-wht"
+   ],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/up5k-streaming-wht-4096",
+   "statement": "A 4,096-point streaming WHT with its adders and multiplexers in the UP5K's 8 idle DSP blocks takes 253 against 633 cells (-60 %), about 58 MHz; for slow uses a folded design is smaller still (189 cells).",
+   "status": "checked by computer",
+   "status_detail": "one critic",
+   "date": "2026-10-12",
+   "figure": "-60 %",
+   "numbers": {
+    "cells": [
+     253,
+     633
+    ],
+    "mhz": 58,
+    "folded_cells": 189
+   },
+   "evidence": [],
+   "programs": [
+    "programs/up5k-streaming-fft-and-wht"
+   ],
+   "supersedes": [
+    "246 against 633 cells at 60.5 MHz; 8k/16k points as a capability"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/v6-rounding",
+   "statement": "Feeding the bit that a halving butterfly drops into the sum's carry-in gains about 6 dB of signal-to-noise for 6-13 cells (free on the UP5K's DSP carry-in pin); the baseline gets it too.",
+   "status": "checked by computer",
+   "status_detail": "one critic",
+   "date": "2026-10-12",
+   "figure": "+6.0 dB",
+   "numbers": {},
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/fpga-ntt-radix4-guard-probe",
+   "statement": "The one-guard radix-4 NTT schedule in an FPGA NTT datapath: -18.5 % LUT4 / -14.7 % slices for the fabric of one radix-4 group on ECP5-25F (DSP products excluded).",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (a probe)",
+   "date": "2026-10-12",
+   "figure": "-18.5 % LUT4",
+   "numbers": {},
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/ffa-pfb-probe",
+   "statement": "A fast-FIR structure across frames in a telescope filter bank needs 21 instead of 28 multiplies per two outputs at 14 taps per branch (-25 %), exact.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (a probe)",
+   "date": "2026-10-12",
+   "figure": "-25 % multiplies",
+   "numbers": {},
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/hevc-fme-interpolators",
+   "statement": "xk265's HEVC interpolators as DSP48E1 chains save 18.6 % LUTs and 18.2 % DSPs in the module against a fair rival but only 7.6 % of the motion estimation's LUTs (below the bar; DSPs -17.8 %), synthesis only. The FME-level figures were measured with a SATD engine later found not to be a drop-in (hevc-fme-xrm-not-dropin), so they describe an incorrect design; the module-level figures do not depend on it.",
+   "status": "checked by computer",
+   "status_detail": "one critic built the fair rival; synthesis only",
+   "date": "2026-10-12",
+   "figure": "-7.6 % LUT (below)",
+   "numbers": {},
+   "evidence": [],
+   "programs": [],
+   "supersedes": [
+    "module -41.5 % LUT; FME -20.4 % LUT"
+   ],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/hevc-fme-xrm-not-dropin",
+   "statement": "The faster SATD engine used in the HEVC motion-estimation figures of waves 13-14 is not a drop-in replacement inside xk265: with it the FME writes different motion vectors for 88 % of entries, so the 73 % ECP5 placement and the Xilinx whole-FME figures were for an incorrect design; the correct design needs about 83 % of the ECP5-85F and 1080p30 needs 67.8 MHz against a 30.6 MHz pre-route estimate.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (wave 15, no critic); it refutes the correctness of the earlier FME figures",
+   "date": "2026-10-12",
+   "numbers": {
+    "mv_entries_different_pct": 88,
+    "correct_fme_lut4_pct_of_85f": 83,
+    "mhz_needed_1080p30": 67.8,
+    "mhz_preroute": 30.6
+   },
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": null,
+   "rerun_for_this_revision": null
+  },
+  {
+   "id": "speed-waves/int16-rotation",
+   "statement": "int16 arithmetic for a Hadamard rotate-and-quantise on M4 NEON (claimed -22.3 / -26.6 % against fp32) is no gain: an fp16 kernel with the same plan is as fast or faster at equal quality; the gain was 16-bit lanes.",
+   "status": "refuted",
+   "status_detail": "refuted by two critics (fp16 rival)",
+   "date": "2026-10-12",
+   "numbers": {},
+   "evidence": [],
+   "programs": [],
+   "supersedes": [],
+   "refuted_by": "an fp16 kernel with the same plan",
+   "rerun_for_this_revision": null
+  }
+ ],
+ "parked": [
+  {
+   "lead": "Hadamard rotation for quantised LLMs, SME fp32",
+   "number": "-73 % at 4,096, -64 % at 14,336 (against NEON WHT; at 14,336 with an sgemm stage for the factor 28)",
+   "status": "checked by computer, one critic",
+   "why": "about 0.2 % of a decode token"
+  },
+  {
+   "lead": "Whisper log-mel front end, SME fp32",
+   "number": "spectrogram -50 %; log-mel -40 % one core, -19.5 to -22.9 % four cores",
+   "status": "checked by computer, two critics",
+   "why": "from audio files -1.6 to -3 %"
+  },
+  {
+   "lead": "bank of short FIR filters, SME",
+   "number": "-29 % / -31 % warm",
+   "status": "checked by computer, one critic",
+   "why": "cold caches +29 to +50 %; about 0.1 % of a core"
+  },
+  {
+   "lead": "streaming SATD with one's-complement abs-max (FPGA)",
+   "number": "4x4 -22.9 / -15.9 / -20.5 %",
+   "status": "checked by computer, one critic",
+   "why": "+0.9 % inside the FME"
+  },
+  {
+   "lead": "fused last level, (32,11) decoder (FPGA)",
+   "number": "-31.3 % LUT4 ECP5",
+   "status": "checked by computer, one critic (all inputs of the fused back end checked with Yosys's sat solver on a transcription of the logic)",
+   "why": "about 0.15 % of a base-station FPGA"
+  },
+  {
+   "lead": "Hadamard decoder on NEON",
+   "number": "-18 % for the new part",
+   "status": "checked by computer, one program, not repeated by anyone",
+   "why": "not timed against the base-station code"
+  },
+  {
+   "lead": "fp16 lanes for rotate-and-quantise",
+   "number": "-20.2 % against fp32",
+   "status": "checked by computer, one critic",
+   "why": "0.2-0.5 % of a decode token"
+  },
+  {
+   "lead": "polar-decoder element in butterfly form (FPGA)",
+   "number": "ECP5 -32 % against a plain element",
+   "status": "checked by computer, one program, not repeated by anyone",
+   "why": "decoders are memory- and sorter-dominated"
+  },
+  {
+   "lead": "ternary-adder Hadamard on Xilinx 7",
+   "number": "-13.9 % by Yosys count, synthesis only",
+   "status": "open",
+   "why": "needs vendor place-and-route",
+   "status_detail": "unproven"
+  },
+  {
+   "lead": "fused last level in an LSH hash",
+   "number": "-10.4 to -14.6 %",
+   "status": "open",
+   "why": "needs an argmax-fused baseline",
+   "status_detail": "baseline too weak"
+  }
+ ],
+ "open": [
+  {
+   "id": "speed-waves/open-1",
+   "question": "Why does the SEAL port gain so much less on a non-Apple Arm core?",
+   "first_experiment": "Time the new kernel and SEAL's lazy forward NTT level by level on a Neoverse N2 (GitHub Arm runners) and try -mcpu=neoverse-n2; if the lazy transform cannot gain, use the new code there only for the fully reduced transforms."
+  },
+  {
+   "id": "speed-waves/open-2",
+   "question": "Does the fp64-FMA NTT give the same gain inside OpenFHE?",
+   "first_experiment": "Route OpenFHE's NTT for primes below 2^50 through the floating-point method, run OpenFHE's unit tests, time its own CKKS benchmarks on the M4 and an Arm server runner."
+  },
+  {
+   "id": "speed-waves/open-3",
+   "question": "A NEON build of FFTW for conda-forge and Homebrew users.",
+   "first_experiment": "Rebuild conda-forge's recipe with --enable-neon in both precisions and the aarch64 host triple, run FFTW's tests/check.pl, time the probe grid and pyFFTW with the library swapped in."
+  },
+  {
+   "id": "speed-waves/open-4",
+   "question": "Does the packed filter bank close timing in AMD's tools?",
+   "first_experiment": "Place and route one lane and one slice in Vivado at 200-250 MHz; compare with AMD's FIR Compiler."
+  },
+  {
+   "id": "speed-waves/open-5",
+   "question": "Do Lattice's own tools already fold multiplexers into carry cells?",
+   "first_experiment": "Synthesise the folded and gated generic FFTs with Lattice Radiant on CrossLink-NX; if Radiant folds them, the gain is gone."
+  },
+  {
+   "id": "speed-waves/open-6",
+   "question": "Does the convolve kernel survive a critic, and can it be made multi-process safe?",
+   "first_experiment": "Have a critic rebuild the baselines; add a C FFT overlap-save above about 450 taps and the per-cluster try-lock; time 1, 4 and 8 Python processes."
+  },
+  {
+   "id": "speed-waves/open-7",
+   "question": "What does the M4's second (efficiency-cluster) matrix unit add?",
+   "first_experiment": "Time the batched complex128 FFT on the E-cluster unit alone, then one P-cluster plus one E-cluster thread plus NEON threads against all-NEON on all ten cores."
+  },
+  {
+   "id": "speed-waves/open-8",
+   "question": "The optics step as a real split-step loop.",
+   "first_experiment": "Natural-order output inside the kernels and a 100-step split-step loop, timed against scipy.fft with all workers and FFTW's threaded 2-D plan."
+  },
+  {
+   "id": "speed-waves/open-9",
+   "question": "Is pocketfft's batched vector path fixable for large rows?",
+   "first_experiment": "Cap the batched buffer at the L1 size and time 64 x 4,096 complex128 again."
+  },
+  {
+   "id": "speed-waves/open-10",
+   "question": "What do the small-FPGA designs cost in power?",
+   "first_experiment": "A switching-activity estimate with the open flow for the folded UP5K FFT and its rivals, then one board measurement."
+  },
+  {
+   "id": "speed-waves/open-11",
+   "question": "Can HEVC fractional motion estimation route on an ECP5-85F at a usable clock with the encoder's own SATD?",
+   "first_experiment": "Pipeline the candidate-index path and the vertical filters (a cycle-exact latency-neutral split exists), then route with 5 seeds."
+  },
+  {
+   "id": "speed-waves/open-12",
+   "question": "How much area does packing two real radar channels per FFT save?",
+   "first_experiment": "Place and route the packed and unpacked chains with 5 seeds each and write the area table."
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/timing-harness",
+   "language": "c",
+   "shows": "the shared timing harness",
+   "command": "clang -O3 -mcpu=apple-m4 bench_example.c -o bench_example && ./bench_example 10",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": null
+  },
+  {
+   "path": "programs/baseline-wrappers",
+   "language": "c++",
+   "shows": "C wrappers around KFR for the fp64 baselines",
+   "command": "see README",
+   "time": "-",
+   "memory": "-",
+   "needs": [
+    "KFR"
+   ],
+   "rerun_for_this_revision": null
+  },
+  {
+   "path": "programs/fpga-measure",
+   "language": "python",
+   "shows": "synthesis and P&R measurement on 8 chips; equivalence checks; UP5K DSP timing",
+   "command": "python3 -B fpga_measure.py --list-chips",
+   "time": "seconds to 30 min per seed",
+   "memory": "0.35-0.7 GB per nextpnr run and up",
+   "needs": [
+    "Yosys",
+    "nextpnr",
+    "Icarus Verilog",
+    "SymbiYosys"
+   ],
+   "rerun_for_this_revision": "not re-run"
+  },
+  {
+   "path": "programs/neon-wht",
+   "language": "c",
+   "shows": "the NEON WHT baseline and FFT library baselines",
+   "command": "./wht_bench check",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "FFHT",
+    "PFFFT",
+    "FFTW (single)"
+   ],
+   "rerun_for_this_revision": "correctness check identical"
+  },
+  {
+   "path": "programs/sme-fp32-fir",
+   "language": "c",
+   "shows": "the matrix-unit FIR and the critic's sgemm baseline",
+   "command": "./fir check 64 20",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "Apple M4",
+    "PFFFT"
+   ],
+   "rerun_for_this_revision": "correctness checks identical"
+  },
+  {
+   "path": "programs/sme-fp32-fft",
+   "language": "c, python",
+   "shows": "matrix-unit 256- and 400-point fp32 FFTs",
+   "command": "./fft256 check",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "Apple M4",
+    "PFFFT",
+    "FFTW (single)"
+   ],
+   "rerun_for_this_revision": "correctness check identical"
+  },
+  {
+   "path": "programs/sme-fp64-batched-fft",
+   "language": "c, python",
+   "shows": "batched complex128 FFTs on the matrix unit",
+   "command": "./fftnp 512 check 64",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "Apple M4",
+    "PFFFT",
+    "pocketfft"
+   ],
+   "rerun_for_this_revision": "checks identical; broken copy fails"
+  },
+  {
+   "path": "programs/sme-optics-step",
+   "language": "c, python",
+   "shows": "the angular-spectrum optics step",
+   "command": "./prop 1024 check",
+   "time": "under a minute",
+   "memory": "1-2 GB at 4,096^2",
+   "needs": [
+    "Apple M4",
+    "PFFFT",
+    "pocketfft",
+    "FFTW double NEON",
+    "KFR"
+   ],
+   "rerun_for_this_revision": "not re-run"
+  },
+  {
+   "path": "programs/sme-welch",
+   "language": "c, python",
+   "shows": "the one-pass fp64 Welch",
+   "command": "python3 check.py",
+   "time": "about a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "Apple M4",
+    "PFFFT",
+    "FFTW double NEON",
+    "KFR",
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "not re-run"
+  },
+  {
+   "path": "programs/sme-fp64-convolve",
+   "language": "c, python",
+   "shows": "numpy-compatible convolve and correlate on the matrix unit",
+   "command": "python3 check.py quick",
+   "time": "about a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "Apple M4",
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "534/534 PASS; broken 4/4 FAIL; NaN pattern identical"
+  },
+  {
+   "path": "programs/sme-cluster-trylock",
+   "language": "c",
+   "shows": "the per-cluster try-lock policies",
+   "command": "./mp_lm 4:neon 4:cauto",
+   "time": "a minute per row",
+   "memory": "under 1 GB",
+   "needs": [
+    "Apple M4",
+    "FFTW (single)",
+    "PFFFT",
+    "FFTW double NEON",
+    "KFR"
+   ],
+   "rerun_for_this_revision": "not re-run"
+  },
+  {
+   "path": "programs/fftw-neon-probe",
+   "language": "c, c++, python",
+   "shows": "shipped FFTW against FFTW with NEON; pocketfft probes",
+   "command": "./shipfftw sf/lib/libfftw3.dylib c2c 512",
+   "time": "minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "conda-forge FFTW package",
+    "FFTW NEON builds",
+    "pocketfft"
+   ],
+   "rerun_for_this_revision": "not re-run"
+  },
+  {
+   "path": "programs/packed-pfb",
+   "language": "python, verilog, c++",
+   "shows": "packed telescope filter bank: coefficient searches, RTL, test benches, exhaustive unpacking",
+   "command": "cd wave13/proof/exh && verilator ... && ./obj_dir/vexh",
+   "time": "40 s (exhaustive check) to tens of minutes (searches)",
+   "memory": "under 2 GB",
+   "needs": [
+    "numpy",
+    "scipy",
+    "Verilator",
+    "Yosys"
+   ],
+   "rerun_for_this_revision": "exhaustive check identical"
+  },
+  {
+   "path": "programs/carry-folded-sdf-fft",
+   "language": "python, verilog",
+   "shows": "streaming FFT with multiplexers in carry cells; the gated rival",
+   "command": "python3 check_cells.py",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy",
+    "Icarus Verilog",
+    "Yosys",
+    "nextpnr"
+   ],
+   "rerun_for_this_revision": "carry-cell checks 0 failures"
+  },
+  {
+   "path": "programs/up5k-folded-fft",
+   "language": "python, verilog",
+   "shows": "folded 4,096-point and 25-bit 8,192-point UP5K FFTs",
+   "command": "python3 ffold.py prec",
+   "time": "seconds to 15 min per seed",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy",
+    "Icarus Verilog",
+    "Yosys",
+    "nextpnr-ice40"
+   ],
+   "rerun_for_this_revision": "precision model identical"
+  },
+  {
+   "path": "programs/up5k-streaming-fft-and-wht",
+   "language": "python, verilog",
+   "shows": "streaming 4,096-point FFT and WHT on the UP5K",
+   "command": "python3 fft4096/fft4k.py model --frames 16",
+   "time": "minutes; 10-20 min per FFT seed",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy",
+    "Icarus Verilog",
+    "Yosys",
+    "nextpnr-ice40"
+   ],
+   "rerun_for_this_revision": "fft4k.py model --frames 16: output identical to fft4096/model_precision_final.txt"
+  }
+ ],
+ "withheld": [
+  {
+   "what": "the SEAL patch (neon-ntt-v4.6.2.patch: 10 files, +1,245 lines) and the wave-13 NTT kernel source",
+   "why": "I am holding it back until I decide whether and how to offer it to SEAL's maintainers",
+   "sha256": "4eb1b5dc510ce3a3b1a00250a3b366bb7e805c59b0727b7fea66d81edd312d6c"
+  }
+ ]
+}

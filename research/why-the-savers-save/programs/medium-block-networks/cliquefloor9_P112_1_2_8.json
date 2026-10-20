@@ -1,0 +1,25 @@
+{
+ "design": "P112",
+ "n": 112,
+ "k": 9,
+ "omega": 8,
+ "cliques": 1260,
+ "dims": {
+  "1": {
+   "subspaces": 511,
+   "Tmax": 90,
+   "floor": 112.0
+  },
+  "2": {
+   "subspaces": 43435,
+   "Tmax": 180,
+   "floor": 112.0
+  },
+  "8": {
+   "subspaces": 511,
+   "Tmax": 1260,
+   "floor": 64.0
+  }
+ },
+ "floor": 64.0
+}

@@ -1,0 +1,23 @@
+first n with Ports n (upstream switches from d = n to d = express n): 1048576 (2^20.00); orderE there = 20
+               n Ports   log2 d  v2(d)    1024n^3/d  odd primes in vol
+               2 False     1.00      1         4096                  -
+              16 False     4.00      4    2.621e+05                  -
+             128 False     7.00      7    1.678e+07                  -
+            1024 False    10.00     10    1.074e+09                  -
+            8192 False    13.00     13    6.872e+10                  -
+           65536 False    16.00     16    4.398e+12                  -
+          524288 False    19.00     19    2.815e+14                  -
+         1000000 False    19.93      6    1.024e+15                  -
+         1594323  True    63.57     25        303.9   6 primes, max 17
+         4194304  True    66.21     44        885.6   7 primes, max 19
+        10000019  True    69.46     24         1259   7 primes, max 19
+        16777217  True    70.21     24         3542   7 primes, max 19
+        33554432  True    72.21     50         7085   7 primes, max 19
+       268435456  True    79.73     53    1.971e+04   8 primes, max 23
+      1000000007  True    83.63     27     6.84e+04   8 primes, max 23
+      2147483648  True    85.59     54     1.74e+05   9 primes, max 29
+     17179869184  True    91.59     60    1.392e+06   9 primes, max 29
+    137438953472  True    97.55     61     1.15e+07  10 primes, max 31
+   1099511627775  True   103.55     27    9.198e+07  10 primes, max 31
+   1099511627776  True   104.55     68    4.599e+07  10 primes, max 31
+checks: 0 < d < 8 n^3 and n | d for every n above (asserted)

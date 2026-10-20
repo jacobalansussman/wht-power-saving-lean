@@ -1,0 +1,59 @@
+A. support facts
+  m=1: every dir z (z!=0) has exactly 2 nonzeros per column: True ; K has 2 nonzeros in every column: True
+  m=2: every dir z (z!=0) has exactly 2 nonzeros per column: True ; K has 4 nonzeros in every column: True
+  m=3: every dir z (z!=0) has exactly 2 nonzeros per column: True ; K has 8 nonzeros in every column: True
+  m=4: every dir z (z!=0) has exactly 2 nonzeros per column: True ; K has 16 nonzeros in every column: True
+  m=5: every dir z (z!=0) has exactly 2 nonzeros per column: True ; K has 32 nonzeros in every column: True
+  m=6: every dir z (z!=0) has exactly 2 nonzeros per column: True ; K has 64 nonzeros in every column: True
+  m=7: every dir z (z!=0) has exactly 2 nonzeros per column: True (8 sampled z) ; K has 128 nonzeros in every column: True
+  m=8: every dir z (z!=0) has exactly 2 nonzeros per column: True (8 sampled z) ; K has 256 nonzeros in every column: True
+  m=3: 200 random words (all permutations, Z4 phases): max nonzeros per column by number of directions j: {0: 1, 1: 2, 2: 4}  (bound 2^j; K needs 8)
+  m=4: 200 random words (all permutations, Z4 phases): max nonzeros per column by number of directions j: {0: 1, 1: 2, 2: 4, 3: 8}  (bound 2^j; K needs 16)
+B. m = 2, engine game: 0-1 BFS (free letters cost 0, a direction costs 1)
+  group elements reached: 46080 ; by least number of directions: {0: 3072, 1: 18432, 2: 24576}
+  least number of directions in a word equal to K: 2  (Theorem D / depth: m = 2)
+C. units open under the certified rung-1 bound and closed by Theorem D (total rank >= W + m - 1)
+  block 2 engine  (L = 2.0000): newly excluded: none
+  block 2 widened (L = 2.0000): newly excluded: none
+  block 3 engine  (L = 2.8000): newly excluded: none
+  block 3 widened (L = 2.8000): newly excluded: none
+  block 4 engine  (L = 3.1538): newly excluded: none
+  block 4 widened (L = 3.1538): newly excluded: none
+  block 5 engine  (L = 2.6654): newly excluded: 1-in-3 (0.317), 1-in-4 (0.139)
+  block 5 widened (L = 2.2143): newly excluded: 1-in-3 (0.317), 1-in-4 (0.139), 2-in-5 (0.431)
+  block 6 engine  (L = 2.6410): newly excluded: 1-in-3 (0.387), 1-in-4 (0.226), 1-in-5 (0.102), 2-in-6 (0.387)
+  block 6 widened (L = 2.0323): newly excluded: 1-in-3 (0.387), 1-in-4 (0.226), 1-in-5 (0.102), 2-in-5 (0.489), 2-in-6 (0.387), 3-in-7 (0.527)
+  block 7 engine  (L = none certified): newly excluded: 1-in-1 (1.000), 1-in-2 (0.644), 1-in-3 (0.435), 1-in-4 (0.288), 1-in-5 (0.173), 1-in-6 (0.079), 2-in-2 (1.000), 2-in-3 (0.792), 2-in-4 (0.644), 2-in-5 (0.529), 2-in-6 (0.435), 2-in-7 (0.356), 3-in-3 (1.000), 3-in-4 (0.852), 3-in-5 (0.737), 3-in-6 (0.644), 3-in-7 (0.565), 3-in-8 (0.496), 4-in-4 (1.000), 4-in-5 (0.885), 4-in-6 (0.792), 4-in-7 (0.712), 4-in-8 (0.644), 4-in-9 (0.583), 5-in-5 (1.000), 5-in-6 (0.906), 5-in-7 (0.827), 5-in-8 (0.758), 5-in-9 (0.698), 5-in-10 (0.644), 6-in-6 (1.000), 6-in-7 (0.921), 6-in-8 (0.852), 6-in-9 (0.792), 6-in-10 (0.737), 6-in-11 (0.689), 7-in-7 (1.000), 7-in-8 (0.931), 7-in-9 (0.871), 7-in-10 (0.817), 7-in-11 (0.768), 7-in-12 (0.723), 8-in-8 (1.000), 8-in-9 (0.939), 8-in-10 (0.885), 8-in-11 (0.836), 8-in-12 (0.792), 8-in-13 (0.750), 9-in-9 (1.000), 9-in-10 (0.946), 9-in-11 (0.897), 9-in-12 (0.852), 9-in-13 (0.811), 9-in-14 (0.773), 10-in-10 (1.000), 10-in-11 (0.951), 10-in-12 (0.906), 10-in-13 (0.865), 10-in-14 (0.827), 10-in-15 (0.792), 11-in-11 (1.000), 11-in-12 (0.955), 11-in-13 (0.914), 11-in-14 (0.876), 11-in-15 (0.841), 11-in-16 (0.807), 12-in-12 (1.000), 12-in-13 (0.959), 12-in-14 (0.921), 12-in-15 (0.885), 12-in-16 (0.852), 12-in-17 (0.821)
+  block 7 widened (L = none certified): newly excluded: 1-in-1 (1.000), 1-in-2 (0.644), 1-in-3 (0.435), 1-in-4 (0.288), 1-in-5 (0.173), 1-in-6 (0.079), 2-in-2 (1.000), 2-in-3 (0.792), 2-in-4 (0.644), 2-in-5 (0.529), 2-in-6 (0.435), 2-in-7 (0.356), 3-in-3 (1.000), 3-in-4 (0.852), 3-in-5 (0.737), 3-in-6 (0.644), 3-in-7 (0.565), 3-in-8 (0.496), 4-in-4 (1.000), 4-in-5 (0.885), 4-in-6 (0.792), 4-in-7 (0.712), 4-in-8 (0.644), 4-in-9 (0.583), 5-in-5 (1.000), 5-in-6 (0.906), 5-in-7 (0.827), 5-in-8 (0.758), 5-in-9 (0.698), 5-in-10 (0.644), 6-in-6 (1.000), 6-in-7 (0.921), 6-in-8 (0.852), 6-in-9 (0.792), 6-in-10 (0.737), 6-in-11 (0.689), 7-in-7 (1.000), 7-in-8 (0.931), 7-in-9 (0.871), 7-in-10 (0.817), 7-in-11 (0.768), 7-in-12 (0.723), 8-in-8 (1.000), 8-in-9 (0.939), 8-in-10 (0.885), 8-in-11 (0.836), 8-in-12 (0.792), 8-in-13 (0.750), 9-in-9 (1.000), 9-in-10 (0.946), 9-in-11 (0.897), 9-in-12 (0.852), 9-in-13 (0.811), 9-in-14 (0.773), 10-in-10 (1.000), 10-in-11 (0.951), 10-in-12 (0.906), 10-in-13 (0.865), 10-in-14 (0.827), 10-in-15 (0.792), 11-in-11 (1.000), 11-in-12 (0.955), 11-in-13 (0.914), 11-in-14 (0.876), 11-in-15 (0.841), 11-in-16 (0.807), 12-in-12 (1.000), 12-in-13 (0.959), 12-in-14 (0.921), 12-in-15 (0.885), 12-in-16 (0.852), 12-in-17 (0.821)
+  block 8 engine  (L = none certified): newly excluded: 1-in-1 (1.000), 1-in-2 (0.667), 1-in-3 (0.472), 1-in-4 (0.333), 1-in-5 (0.226), 1-in-6 (0.138), 1-in-7 (0.064), 2-in-2 (1.000), 2-in-3 (0.805), 2-in-4 (0.667), 2-in-5 (0.559), 2-in-6 (0.472), 2-in-7 (0.398), 2-in-8 (0.333), 3-in-3 (1.000), 3-in-4 (0.862), 3-in-5 (0.754), 3-in-6 (0.667), 3-in-7 (0.593), 3-in-8 (0.528), 3-in-9 (0.472), 4-in-4 (1.000), 4-in-5 (0.893), 4-in-6 (0.805), 4-in-7 (0.731), 4-in-8 (0.667), 4-in-9 (0.610), 4-in-10 (0.559), 5-in-5 (1.000), 5-in-6 (0.912), 5-in-7 (0.838), 5-in-8 (0.774), 5-in-9 (0.717), 5-in-10 (0.667), 5-in-11 (0.621), 6-in-6 (1.000), 6-in-7 (0.926), 6-in-8 (0.862), 6-in-9 (0.805), 6-in-10 (0.754), 6-in-11 (0.709), 6-in-12 (0.667), 7-in-7 (1.000), 7-in-8 (0.936), 7-in-9 (0.879), 7-in-10 (0.828), 7-in-11 (0.783), 7-in-12 (0.741), 7-in-13 (0.702), 8-in-8 (1.000), 8-in-9 (0.943), 8-in-10 (0.893), 8-in-11 (0.847), 8-in-12 (0.805), 8-in-13 (0.767), 8-in-14 (0.731), 9-in-9 (1.000), 9-in-10 (0.949), 9-in-11 (0.903), 9-in-12 (0.862), 9-in-13 (0.823), 9-in-14 (0.788), 9-in-15 (0.754), 10-in-10 (1.000), 10-in-11 (0.954), 10-in-12 (0.912), 10-in-13 (0.874), 10-in-14 (0.838), 10-in-15 (0.805), 10-in-16 (0.774), 11-in-11 (1.000), 11-in-12 (0.958), 11-in-13 (0.920), 11-in-14 (0.884), 11-in-15 (0.851), 11-in-16 (0.820), 11-in-17 (0.791), 12-in-12 (1.000), 12-in-13 (0.962), 12-in-14 (0.926), 12-in-15 (0.893), 12-in-16 (0.862), 12-in-17 (0.832), 12-in-18 (0.805)
+  block 8 widened (L = none certified): newly excluded: 1-in-1 (1.000), 1-in-2 (0.667), 1-in-3 (0.472), 1-in-4 (0.333), 1-in-5 (0.226), 1-in-6 (0.138), 1-in-7 (0.064), 2-in-2 (1.000), 2-in-3 (0.805), 2-in-4 (0.667), 2-in-5 (0.559), 2-in-6 (0.472), 2-in-7 (0.398), 2-in-8 (0.333), 3-in-3 (1.000), 3-in-4 (0.862), 3-in-5 (0.754), 3-in-6 (0.667), 3-in-7 (0.593), 3-in-8 (0.528), 3-in-9 (0.472), 4-in-4 (1.000), 4-in-5 (0.893), 4-in-6 (0.805), 4-in-7 (0.731), 4-in-8 (0.667), 4-in-9 (0.610), 4-in-10 (0.559), 5-in-5 (1.000), 5-in-6 (0.912), 5-in-7 (0.838), 5-in-8 (0.774), 5-in-9 (0.717), 5-in-10 (0.667), 5-in-11 (0.621), 6-in-6 (1.000), 6-in-7 (0.926), 6-in-8 (0.862), 6-in-9 (0.805), 6-in-10 (0.754), 6-in-11 (0.709), 6-in-12 (0.667), 7-in-7 (1.000), 7-in-8 (0.936), 7-in-9 (0.879), 7-in-10 (0.828), 7-in-11 (0.783), 7-in-12 (0.741), 7-in-13 (0.702), 8-in-8 (1.000), 8-in-9 (0.943), 8-in-10 (0.893), 8-in-11 (0.847), 8-in-12 (0.805), 8-in-13 (0.767), 8-in-14 (0.731), 9-in-9 (1.000), 9-in-10 (0.949), 9-in-11 (0.903), 9-in-12 (0.862), 9-in-13 (0.823), 9-in-14 (0.788), 9-in-15 (0.754), 10-in-10 (1.000), 10-in-11 (0.954), 10-in-12 (0.912), 10-in-13 (0.874), 10-in-14 (0.838), 10-in-15 (0.805), 10-in-16 (0.774), 11-in-11 (1.000), 11-in-12 (0.958), 11-in-13 (0.920), 11-in-14 (0.884), 11-in-15 (0.851), 11-in-16 (0.820), 11-in-17 (0.791), 12-in-12 (1.000), 12-in-13 (0.962), 12-in-14 (0.926), 12-in-15 (0.893), 12-in-16 (0.862), 12-in-17 (0.832), 12-in-18 (0.805)
+  smallest open units after Theorem D (W <= 6; '-' = none with M < mW):
+    block 3 engine : 1: -; 2: -; 3: -; 4: -; 5-in-14 (0.063); 6-in-17 (0.052)
+    block 3 widened: 1: -; 2: -; 3: -; 4: -; 5-in-14 (0.063); 6-in-17 (0.052)
+    block 4 engine : 1: -; 2-in-7 (0.096); 3-in-10 (0.132); 4-in-13 (0.150); 5-in-16 (0.161); 6-in-19 (0.169)
+    block 4 widened: 1: -; 2-in-7 (0.096); 3-in-10 (0.132); 4-in-13 (0.150); 5-in-16 (0.161); 6-in-19 (0.169)
+    block 5 engine : 1: -; 2-in-6 (0.317); 3-in-8 (0.391); 4-in-11 (0.371); 5-in-14 (0.360); 6-in-16 (0.391)
+    block 5 widened: 1: -; 2-in-6 (0.317); 3-in-7 (0.474); 4-in-9 (0.496); 5-in-12 (0.456); 6-in-14 (0.474)
+    block 6 engine : 1: -; 2-in-7 (0.301); 3-in-8 (0.453); 4-in-11 (0.435); 5-in-14 (0.425); 6-in-16 (0.453)
+    block 6 widened: 1: -; 2-in-7 (0.301); 3-in-8 (0.453); 4-in-9 (0.547); 5-in-11 (0.560); 6-in-13 (0.568)
+D. barriers
+  filtered rung with level j >= 1 can exclude W-in-M only if j + W*(m-j) > M for some j (s_j <= m-j):
+    block 3, 5-in-14: levels that could help: none -> filtered rung = rung 1
+    block 3, 6-in-17: levels that could help: none -> filtered rung = rung 1
+    block 4, 2-in-7: levels that could help: none -> filtered rung = rung 1
+    block 4, 3-in-10: levels that could help: none -> filtered rung = rung 1
+    block 4, 4-in-13: levels that could help: none -> filtered rung = rung 1
+    block 4, 5-in-16: levels that could help: none -> filtered rung = rung 1
+    block 5, 3-in-7: levels that could help: [1, 2, 3]
+    block 5, 2-in-6: levels that could help: [1, 2, 3]
+    block 6, 3-in-8: levels that could help: [1, 2, 3, 4]
+    block 6, 4-in-9: levels that could help: [1, 2, 3, 4]
+  pair (two-register) potential, generator counting: per-array ceiling sqrt(2m+1)-1 vs plain m:
+    m=2: 1.2361  (block-2 test needs 2: FAILS)
+    m=3: 1.6458  (block-2 test needs 2: )
+    m=4: 2.0000  (block-2 test needs 2: )
+    m=5: 2.3166  (block-2 test needs 2: )
+    m=6: 2.6056  (block-2 test needs 2: )
+    m=7: 2.8730  (block-2 test needs 2: )
+    m=8: 3.1231  (block-2 test needs 2: )
+python3 -I -B ladder_check.py  65.79s user 1.04s system 89% cpu 1:14.87 total

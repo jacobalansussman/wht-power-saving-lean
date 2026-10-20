@@ -1,0 +1,33 @@
+=== pos START Tue Oct 20 05:04:22 AM UTC 2026 tree=/content/work/r-finalize/shea-leverF/lean/complex588 config=comparator/fourier-l3945f.json mode=jail
+git HEAD: 52394849c7ecf3412d39b925d75fc7fdb98994d8   git status lines: 234
+config: d85ee757231a56b1a58c923106ca4c72e5674d7f205f992e0fd52d0319a81fd9  comparator/fourier-l3945f.json
+{
+  "challenge_module": "Work.FourierL3945F.UniformFourierChallenge",
+  "solution_module": "Work.FourierL3945F.Main",
+  "theorem_names": [
+    "OAI.PowerSaving.transform_mainL3945F",
+    "OAI.PowerSaving.convolution_mainL3945F"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
+tools: afa65e57a1770f59 /content/work/cc/bin/comparator 8c5d64ba68f4d3a6 /content/work/cc/bin/lean4export 1f50c692a7ff2a12 /content/work/cc/bin/nanoda_bin 8fac2a5378b48d35 /content/work/cc-jail/jail2.sh 1e6528c3f2c8b10b /content/work/cc-jail/nounix 01f56ebe57de64f1 /content/work/cc-jail/fresh-bin/lake 
+olean files before: 773
+[...]
+info: Work/GFrame/Clifford/Cross.lean:141:0: 'OAI.PowerSaving.GF.kernel_mul_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:138:0: 'OAI.PowerSaving.GF.kernel_mul_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+=== pos END rc=0 wall=4578s Tue Oct 20 06:20:41 AM UTC 2026
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16:17
+	Maximum resident set size (kbytes): 16089104
+	Exit status: 0
+olean files after: 773

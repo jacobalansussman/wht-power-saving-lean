@@ -1,0 +1,45 @@
+=== rmG_g3c (Colab 4)
+LM n=3 4 in 16 (control), 40 orbits, gscale 0.1
+{"m": 4, "n": 3, "W": 4, "M": 16, "chars": 2, "orbits": 41, "unknowns": 1488}
+{"restart": 0, "loss": 0.6002389256408436, "loss_all_chars": 5.693627934266417, "secs": 1282.3}
+{"restart": 1, "loss": 8.545516671494206e-26, "loss_all_chars": 7.18698381398446e-25, "secs": 1112.1}
+BEST 8.545516671494206e-26
+LM n=3 4 in 15, 40 orbits, gscale 0.1
+{"m": 4, "n": 3, "W": 4, "M": 15, "chars": 2, "orbits": 40, "unknowns": 1350}
+{"restart": 0, "loss": 827.5708900884606, "loss_all_chars": 12932.281132741919, "secs": 1207.6}
+{"restart": 1, "loss": 864.6392105559506, "loss_all_chars": 12242.276411707746, "secs": 836.1}
+BEST 827.5708900884606
+EXIT 0
+=== rmG_g5c (Colab 4)
+LM n=5 4 in 16 (control), 24 orbits, gscale 0.1
+{"m": 4, "n": 5, "W": 4, "M": 16, "chars": 2, "orbits": 25, "unknowns": 2480}
+{"restart": 0, "loss": 509.5257437210174, "loss_all_chars": 6327.25799373239, "secs": 4318.1}
+=== rmD_d3 (Colab 5)
+n=3 4 in 15 subset 40 seed 1
+{"m": 4, "n": 3, "W": 4, "M": 15, "chars": 2, "orbits": 41, "unknowns": 1350}
+{"restart": 0, "loss": 371.6005500630468, "loss_all_chars": 3538.6749073306237, "secs": 1388.3}
+BEST 371.6005500630468
+n=3 4 in 15 subset 40 seed 2
+{"m": 4, "n": 3, "W": 4, "M": 15, "chars": 2, "orbits": 40, "unknowns": 1350}
+{"restart": 0, "loss": 399.93035505645787, "loss_all_chars": 3597.126837275645, "secs": 1077.8}
+BEST 399.93035505645787
+n=3 4 in 15 subset 40 seed 3
+{"m": 4, "n": 3, "W": 4, "M": 15, "chars": 2, "orbits": 40, "unknowns": 1350}
+{"restart": 0, "loss": 603.7842323220843, "loss_all_chars": 7513.568551957911, "secs": 1474.6}
+BEST 603.7842323220843
+n=3 plain-cost 4 in 16 subset 40
+{"m": 4, "n": 3, "W": 4, "M": 16, "chars": 2, "orbits": 41, "unknowns": 1488}
+{"restart": 0, "loss": 9.22193029165662e-24, "loss_all_chars": 8.86728358041153e-23, "secs": 1376.8}
+=== rmD_d5 (Colab 5)
+n=5 4 in 15 subset 24 seed 1
+{"m": 4, "n": 5, "W": 4, "M": 15, "chars": 2, "orbits": 25, "unknowns": 2250}
+=== rmJ (Colab 5)
+target n=3 4 in 15, 40 orbits, seed 41 (matched to the g3c control)
+{"m": 4, "n": 3, "W": 4, "M": 15, "chars": 2, "orbits": 41, "unknowns": 1350}
+{"restart": 0, "loss": 352.86109470300005, "loss_all_chars": 3597.3772347351182, "secs": 918.9}
+BEST 352.86109470300005
+target n=3 4 in 15, 40 orbits, seed 42 (matched to the g3c control)
+{"m": 4, "n": 3, "W": 4, "M": 15, "chars": 2, "orbits": 41, "unknowns": 1350}
+{"restart": 0, "loss": 639.1865375129588, "loss_all_chars": 7858.047552630863, "secs": 1298.2}
+BEST 639.1865375129588
+EXIT 0

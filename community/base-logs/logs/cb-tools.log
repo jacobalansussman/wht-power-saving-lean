@@ -1,0 +1,81 @@
+== START Tue Oct 13 14:34:16 UTC 2026 ==
+/content/work/cc/comparator: d03acab154d269c06e60e4de7e4cc85deebff94b (wanted d03acab154d269c06e60e4de7e4cc85deebff94b)
+/content/work/cc/lean4export: 076e8e57707e813375e8f9da8bf989799ace9680 (wanted 076e8e57707e813375e8f9da8bf989799ace9680)
+/content/work/cc/nanoda: 3a2407216ee84a75f9e1aead6803d0578be06ae7 (wanted 3a2407216ee84a75f9e1aead6803d0578be06ae7)
+/content/work/cc/landrun: 811cfff51ceaf3d9843708aa6d22e9b84ccac8b4 (wanted 811cfff51ceaf3d9843708aa6d22e9b84ccac8b4)
+== lean4export ==
+ lean-toolchain | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+✔ [3/6] Built Main (1.5s)
+✔ [4/6] Built Main:c.o (323ms)
+✔ [5/6] Built Export:c.o (4.4s)
+✔ [6/6] Built lean4export:exe (6.1s)
+Build completed successfully (6 jobs).
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:23.82
+	Maximum resident set size (kbytes): 1653132
+== comparator ==
+ lean-toolchain | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+4: [{"url": "https://github.com/leanprover/lean4export",
+5-   "type": "git",
+6-   "subDir": null,
+7-   "scope": "leanprover",
+--
+9:   "name": "lean4export",
+10-   "manifestFile": "lake-manifest.json",
+11-   "inputRev": "master",
+✔ [13/16] Built Main (3.1s)
+✔ [14/16] Built Main:c.o (3.5s)
+✔ [15/16] Built Export.Parse:c.o (8.9s)
+✔ [16/16] Built comparator:exe (1.3s)
+Build completed successfully (16 jobs).
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:14.73
+	Maximum resident set size (kbytes): 1643208
+076e8e57707e813375e8f9da8bf989799ace9680
+'/content/work/cc/lean4export/.lake/build/bin/lean4export' -> '/content/work/cc/bin/lean4export'
+'/content/work/cc/comparator/.lake/build/bin/comparator' -> '/content/work/cc/bin/comparator'
+== rust (rustup into /content/work/rust) ==
+7d0ea0f8eba7fa1ebfe998091cd7ec4501e33ec5ca6b884eb4d894d7da5170af  /content/work/cc/dl/rustup-init.sh
+CFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+CFLAGS_x86_64-unknown-linux-gnu = None
+cargo 1.99.0 (5f94df478 2026-08-27)
+rustc 1.99.0 (b940084d7 2026-09-28)
+== nanoda ==
+   Compiling indexmap v2.13.0
+   Compiling serde_derive v1.0.228
+   Compiling num-bigint v0.5.1
+   Compiling nanoda_lib v0.4.19 (/content/work/cc/nanoda)
+    Finished `release` profile [optimized] target(s) in 32.96s
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:32.99
+	Maximum resident set size (kbytes): 344916
+	Exit status: 0
+'/content/work/cc/nanoda/target/release/nanoda_bin' -> '/content/work/cc/bin/nanoda_bin'
+== go ==
+go version chosen: go1.27.2 sha256 ecbadb99091a3f46e31f5f934b068b1864eafa7995211b39eaddf76996045fe5
+go.tgz: OK
+go version go1.27.2 linux/amd64
+== landrun ==
+go: downloading github.com/urfave/cli/v3 v3.6.2
+go: downloading github.com/landlock-lsm/go-landlock v0.9.0
+go: downloading golang.org/x/sys v0.40.0
+go: downloading kernel.org/pub/linux/libs/security/libcap/psx v1.2.77
+	Exit status: 0
+== nounix ==
+nounix built
+total 356616
+drwxr-xr-x  2 root root      4096 Oct 13 14:36 .
+drwxr-xr-x 12 root root      4096 Oct 13 14:35 ..
+-rwxr-xr-x  1 root root 122488776 Oct 13 14:34 comparator
+-rwxr-xr-x  1 root root   7347080 Oct 13 14:36 landrun
+-rwxr-xr-x  1 root root 233952032 Oct 13 14:34 lean4export
+-rwxr-xr-x  1 root root   1351384 Oct 13 14:35 nanoda_bin
+-rwxr-xr-x  1 root root     16216 Oct 13 14:36 nounix
+afa65e57a1770f5961efe7681626a9a1cd99705262421658abd30b705f66e4a2  /content/work/cc/bin/comparator
+a0f231c30338bc935b9472afd08ecea41d85cbe8c040886cb609987710de89ff  /content/work/cc/bin/landrun
+8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1  /content/work/cc/bin/lean4export
+c9cecac22f9631c0a7518ad6b093d01b2d44917d34346b265abaf695e3cdca84  /content/work/cc/bin/nanoda_bin
+1e6528c3f2c8b10b04f5c5e5a77d4ef71f17a09d35cbe836b14cb3022f1c6779  /content/work/cc/bin/nounix
+landrun version 0.1.18
+== END Tue Oct 13 14:36:13 UTC 2026 ==
+EXIT 0

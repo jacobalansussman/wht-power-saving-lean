@@ -1,0 +1,37 @@
+START Work.XHost.Frames 20:58:44
+Work/XHost/Frames.lean:189:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+'OAI.PowerSaving.XHost.hostForm_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.host_adapt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.host_pad' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.slot_frames' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.host_frames' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean -DautoImplicit=false -R . -o /content/work/vh2/build/Work/XHost/Frames.olean -i /content/work/vh2/build/Work/XHost/Frames.ilean Work/XHost/Frames.lean"
+	User time (seconds): 13.06
+	System time (seconds): 5.57
+	Percent of CPU this job got: 113%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:16.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6787864
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 24
+	Minor (reclaiming a frame) page faults: 156910
+	Voluntary context switches: 5028
+	Involuntary context switches: 768
+	Swaps: 0
+	File system inputs: 2696
+	File system outputs: 1848
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+EXIT 0 Work.XHost.Frames 20:59:01

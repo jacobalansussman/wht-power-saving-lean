@@ -1,0 +1,4 @@
+{"keep": {"GXD.C588MHH.": "GXD.C588M.", "blocksC588MHHx": "blocksC588Mx", "fold_C588MHHx": "fold_C588Mx"},
+ "num": {"13552607": "15699306", "13552606": "15699305", "11200": "7279"},
+ "import": "Work.XHost.C588MHH",
+ "call": "  XHost.engine_of_ginv_host GXD.C588M.ginv GXD.C588M.h9 GXD.C588MHH.hsched GXD.C588MHH.hfits\n    73 7279 rfl GXD.C588MHH.hwidth (by norm_num) BlockAccounting.blocksC588MHHx\n    (fun φ => by rw [GXD.C588MHH.hprice φ]; exact BridgeRate.C588MHH.unit_cost_x φ)\n    40 (1 - 15699306/(10:ℝ)^10) (by norm_num) (by norm_num) BlockAccounting.fold_C588MHHx cl m k v\n"}

@@ -1,0 +1,53 @@
+{
+ "1": {
+  "n_lagrangians": 3,
+  "all_isotropic": true,
+  "free_fix_L0": true,
+  "paid_move_L0_exactly_1": true,
+  "paid_move_every_L_at_most_1": true,
+  "dir_is_transvection_(z|0)": true,
+  "d(L0, Kbar L0)": 1,
+  "n_edges": 3,
+  "n_opposite_pairs": 3,
+  "a1_common_neighbours_of_an_edge": 1,
+  "point_cut_ratios": [
+   "1"
+  ],
+  "formula_2(1-2^-m)": "1"
+ },
+ "2": {
+  "n_lagrangians": 15,
+  "all_isotropic": true,
+  "free_fix_L0": true,
+  "paid_move_L0_exactly_1": true,
+  "paid_move_every_L_at_most_1": true,
+  "dir_is_transvection_(z|0)": true,
+  "d(L0, Kbar L0)": 2,
+  "n_edges": 45,
+  "n_opposite_pairs": 60,
+  "a1_common_neighbours_of_an_edge": 1,
+  "c2_bruteforce_max_ratio": "3/2",
+  "c2_subsets_checked": 16383,
+  "c2_best_set_size": 3,
+  "point_cut_ratios": [
+   "3/2"
+  ],
+  "formula_2(1-2^-m)": "3/2"
+ },
+ "3": {
+  "n_lagrangians": 135,
+  "all_isotropic": true,
+  "free_fix_L0": true,
+  "paid_move_L0_exactly_1": true,
+  "paid_move_every_L_at_most_1": true,
+  "dir_is_transvection_(z|0)": true,
+  "d(L0, Kbar L0)": 3,
+  "n_edges": 945,
+  "n_opposite_pairs": 4320,
+  "a1_common_neighbours_of_an_edge": 1,
+  "point_cut_ratios": [
+   "7/4"
+  ],
+  "formula_2(1-2^-m)": "7/4"
+ }
+}

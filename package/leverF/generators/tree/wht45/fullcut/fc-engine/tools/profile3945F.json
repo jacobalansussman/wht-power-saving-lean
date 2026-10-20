@@ -1,0 +1,3 @@
+{"source": "design B (wht45/reopt FOUND.md) FULL cut: #3945's PROFILE (unchanged) {1: 8041680, 2: 2306880, 3: 729648, 4: 353160, 5: 69120, 8: 25920, 48: 137952}; the 80,640 literal heads (children 8/10) are removed entirely (their arrays get target 73 - 48 = 25); the other 57,312 idle rank-48 blocks are split 24 + 24 (114,624 rank-24 blocks); every paid rank <= 24 < 25",
+ "children": {"1": 8041680, "2": 2306880, "3": 729648, "4": 353160, "5": 69120, "8": 25920, "24": 114624},
+ "W": 322560, "H": 80640, "kc": 25, "m": 73}

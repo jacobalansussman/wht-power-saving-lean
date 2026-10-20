@@ -1,0 +1,30 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 11:49:55
+[heavy.sh] got slot heavy-2 12:15:09
+{
+ "profile": {
+  "1": 183457,
+  "2": 24336,
+  "3": 30961,
+  "4": 13968,
+  "5": 4032,
+  "8": 576,
+  "44": 1,
+  "48": 2396
+ },
+ "m": 73,
+ "W": 7168,
+ "rank_mass": 520704,
+ "deficit": 2560,
+ "calls": 259727,
+ "maxrank": 48,
+ "b": "1664400278850482327913/1000000000000000000000000",
+ "b_decimal": "0.001664400278850482327913",
+ "certified": true,
+ "surcharge": false,
+ "c": "0.001733427039589844234749",
+ "binding": "complex",
+ "kappa": "1661634653669567/1000000000000000000",
+ "kappa_decimal": "0.001661634653669567",
+ "control_b_matches_799": true,
+ "control_kappa_matches_799": true
+}

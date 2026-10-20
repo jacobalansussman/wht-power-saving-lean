@@ -1,0 +1,3 @@
+threads for the solution build (lake adapter): 1
+=== lean START Tue Oct 13 17:08:12 UTC 2026 epoch=1791911292 olean files: 0
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/cpack-bos/control/bin:$PATH; export PATH; exec comparator /content/work/cpack-bos/control/lean.json'

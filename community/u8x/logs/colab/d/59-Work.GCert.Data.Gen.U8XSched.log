@@ -1,0 +1,24 @@
+'GXD.U8X.sched_ok' depends on axioms: [propext]
+	Command being timed: "lake env lean -DautoImplicit=false -R . -o .lake/build/lib/lean/Work/GCert/Data/Gen/U8XSched.olean -i .lake/build/lib/lean/Work/GCert/Data/Gen/U8XSched.ilean Work/GCert/Data/Gen/U8XSched.lean"
+	User time (seconds): 71.69
+	System time (seconds): 16.04
+	Percent of CPU this job got: 69%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:05.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6792180
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 23589
+	Minor (reclaiming a frame) page faults: 584509
+	Voluntary context switches: 56745
+	Involuntary context switches: 2056
+	Swaps: 0
+	File system inputs: 2685040
+	File system outputs: 416
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

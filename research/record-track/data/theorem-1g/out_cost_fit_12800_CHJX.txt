@@ -1,0 +1,32 @@
+== C {5:1,4:3} r=[1]*6+[2]*2+[3]*2: tau_c=0.930659 theta=0.7925 eta_m=0.8386 kappa=4 W=4 P=10
+   structure over n<= 12800: unbalanced points 0; sources outside (n/m, n]: 0; max |Phi_exit/Phi_src - 1| = 1.33e-15; max exit / (r_max (n/m)^theta) = 1.0000
+   cu=0.0 best:  n=50 T/n^t=1.1721 T/(n^t ln^k)=0.005  n=100 T/n^t=1.1546 T/(n^t ln^k)=0.00257  n=200 T/n^t=1.1987 T/(n^t ln^k)=0.00152  n=400 T/n^t=1.1874 T/(n^t ln^k)=0.000921  n=800 T/n^t=1.2226 T/(n^t ln^k)=0.000612  n=1600 T/n^t=1.2165 T/(n^t ln^k)=0.000411  n=3200 T/n^t=1.2435 T/(n^t ln^k)=0.000293  n=6400 T/n^t=1.2415 T/(n^t ln^k)=0.00021  n=12800 T/n^t=1.2611 T/(n^t ln^k)=0.000158
+     local slopes (window-averaged) vs tau=0.9307: 100->200:0.9865 200->400:0.9200 400->800:0.9711 800->1600:0.9260 1600->3200:0.9593 3200->6400:0.9312 6400->12800:0.8828
+     LSQ slope of ln T on ln n over [800,12800]: 0.9388  (tau=0.9307; diff +0.0082); max_n T/n^tau = 1.2703
+   cu=0.0 forced:  n=50 T/n^t=1.1721 T/(n^t ln^k)=0.005  n=100 T/n^t=1.1546 T/(n^t ln^k)=0.00257  n=200 T/n^t=1.1987 T/(n^t ln^k)=0.00152  n=400 T/n^t=1.1874 T/(n^t ln^k)=0.000921  n=800 T/n^t=1.2226 T/(n^t ln^k)=0.000612  n=1600 T/n^t=1.2165 T/(n^t ln^k)=0.000411  n=3200 T/n^t=1.2435 T/(n^t ln^k)=0.000293  n=6400 T/n^t=1.2415 T/(n^t ln^k)=0.00021  n=12800 T/n^t=1.2611 T/(n^t ln^k)=0.000158
+     local slopes (window-averaged) vs tau=0.9307: 100->200:0.9865 200->400:0.9200 400->800:0.9711 800->1600:0.9260 1600->3200:0.9593 3200->6400:0.9312 6400->12800:0.8828
+     LSQ slope of ln T on ln n over [800,12800]: 0.9388  (tau=0.9307; diff +0.0082); max_n T/n^tau = 1.2703
+== H {3:2} r=[2,1,2]: tau_c=0.672814 theta=0.6309 eta_m=0.5000 kappa=4 W=2 P=3
+   structure over n<= 12800: unbalanced points 0; sources outside (n/m, n]: 0; max |Phi_exit/Phi_src - 1| = 3.33e-16; max exit / (r_max (n/m)^theta) = 1.0000
+   cu=0.0 best:  n=50 T/n^t=2.1489 T/(n^t ln^k)=0.00918  n=100 T/n^t=2.0107 T/(n^t ln^k)=0.00447  n=200 T/n^t=2.4270 T/(n^t ln^k)=0.00308  n=400 T/n^t=2.5760 T/(n^t ln^k)=0.002  n=800 T/n^t=2.1757 T/(n^t ln^k)=0.00109  n=1600 T/n^t=2.6234 T/(n^t ln^k)=0.000885  n=3200 T/n^t=2.6081 T/(n^t ln^k)=0.000615  n=6400 T/n^t=3.2303 T/(n^t ln^k)=0.000548  n=12800 T/n^t=3.2600 T/(n^t ln^k)=0.000408
+     local slopes (window-averaged) vs tau=0.6728: 100->200:0.9497 200->400:0.6726 400->800:0.4996 800->1600:0.9408 1600->3200:0.7141 3200->6400:0.5291 6400->12800:1.0154
+     LSQ slope of ln T on ln n over [800,12800]: 0.7332  (tau=0.6728; diff +0.0603); max_n T/n^tau = 3.3861
+   cu=0.0 forced:  n=50 T/n^t=2.1489 T/(n^t ln^k)=0.00918  n=100 T/n^t=2.0107 T/(n^t ln^k)=0.00447  n=200 T/n^t=2.4270 T/(n^t ln^k)=0.00308  n=400 T/n^t=2.5760 T/(n^t ln^k)=0.002  n=800 T/n^t=2.1757 T/(n^t ln^k)=0.00109  n=1600 T/n^t=2.6234 T/(n^t ln^k)=0.000885  n=3200 T/n^t=2.6081 T/(n^t ln^k)=0.000615  n=6400 T/n^t=3.2303 T/(n^t ln^k)=0.000548  n=12800 T/n^t=3.2600 T/(n^t ln^k)=0.000408
+     local slopes (window-averaged) vs tau=0.6728: 100->200:0.9497 200->400:0.6726 400->800:0.4996 800->1600:0.9408 1600->3200:0.7141 3200->6400:0.5291 6400->12800:1.0154
+     LSQ slope of ln T on ln n over [800,12800]: 0.7332  (tau=0.6728; diff +0.0603); max_n T/n^tau = 3.3861
+== J {5:2} r=[4,1,4] theta=.861: tau_c=0.739419 theta=0.8614 eta_m=0.5000 kappa=10 W=2 P=3
+   structure over n<= 12800: unbalanced points 0; sources outside (n/m, n]: 0; max |Phi_exit/Phi_src - 1| = 4.44e-16; max exit / (r_max (n/m)^theta) = 1.0000
+   cu=0.0 best:  n=50 T/n^t=2.0787 T/(n^t ln^k)=2.48e-06  n=100 T/n^t=2.4901 T/(n^t ln^k)=5.8e-07  n=200 T/n^t=2.6177 T/(n^t ln^k)=1.5e-07  n=400 T/n^t=2.9170 T/(n^t ln^k)=4.89e-08  n=800 T/n^t=2.8108 T/(n^t ln^k)=1.58e-08  n=1600 T/n^t=3.3672 T/(n^t ln^k)=7.05e-09  n=3200 T/n^t=2.8715 T/(n^t ln^k)=2.45e-09  n=6400 T/n^t=3.4118 T/(n^t ln^k)=1.28e-09  n=12800 T/n^t=4.0872 T/(n^t ln^k)=7.14e-10
+     local slopes (window-averaged) vs tau=0.7394: 100->200:0.8248 200->400:0.8960 400->800:0.6999 800->1600:0.9728 1600->3200:0.5489 3200->6400:0.9783 6400->12800:0.8906
+     LSQ slope of ln T on ln n over [800,12800]: 0.8545  (tau=0.7394; diff +0.1151); max_n T/n^tau = 4.4112
+   cu=0.0 forced:  n=50 T/n^t=2.0787 T/(n^t ln^k)=2.48e-06  n=100 T/n^t=2.4901 T/(n^t ln^k)=5.8e-07  n=200 T/n^t=2.6177 T/(n^t ln^k)=1.5e-07  n=400 T/n^t=2.9170 T/(n^t ln^k)=4.89e-08  n=800 T/n^t=2.8108 T/(n^t ln^k)=1.58e-08  n=1600 T/n^t=3.3672 T/(n^t ln^k)=7.05e-09  n=3200 T/n^t=2.8715 T/(n^t ln^k)=2.45e-09  n=6400 T/n^t=3.4118 T/(n^t ln^k)=1.28e-09  n=12800 T/n^t=4.0872 T/(n^t ln^k)=7.14e-10
+     local slopes (window-averaged) vs tau=0.7394: 100->200:0.8248 200->400:0.8960 400->800:0.6999 800->1600:0.9728 1600->3200:0.5489 3200->6400:0.9783 6400->12800:0.8906
+     LSQ slope of ln T on ln n over [800,12800]: 0.8545  (tau=0.7394; diff +0.1151); max_n T/n^tau = 4.4112
+== X NON-separated {3:1,2:4} r=[1]*6+[2]*2: tau_c=0.821448 theta=1.0000 eta_m=0.6985 kappa=inf W=5 P=8
+   structure over n<= 12800: unbalanced points 0; sources outside (n/m, n]: 0; max |Phi_exit/Phi_src - 1| = 6.66e-16; max exit / (r_max (n/m)^theta) = 1.0000
+   cu=0.0 best:  n=50 T/n^t=1.4208 T/(n^t ln^k)=1.42  n=100 T/n^t=1.4793 T/(n^t ln^k)=1.48  n=200 T/n^t=1.5318 T/(n^t ln^k)=1.53  n=400 T/n^t=1.5779 T/(n^t ln^k)=1.58  n=800 T/n^t=1.6187 T/(n^t ln^k)=1.62  n=1600 T/n^t=1.6550 T/(n^t ln^k)=1.65  n=3200 T/n^t=1.6879 T/(n^t ln^k)=1.69  n=6400 T/n^t=1.7182 T/(n^t ln^k)=1.72  n=12800 T/n^t=1.7463 T/(n^t ln^k)=1.75
+     local slopes (window-averaged) vs tau=0.8214: 100->200:0.8709 200->400:0.8631 400->800:0.8575 800->1600:0.8534 1600->3200:0.8502 3200->6400:0.8477 6400->12800:0.7868
+     LSQ slope of ln T on ln n over [800,12800]: 0.8473  (tau=0.8214; diff +0.0259); max_n T/n^tau = 1.7510
+   cu=0.0 forced:  n=50 T/n^t=1.4208 T/(n^t ln^k)=1.42  n=100 T/n^t=1.4793 T/(n^t ln^k)=1.48  n=200 T/n^t=1.5318 T/(n^t ln^k)=1.53  n=400 T/n^t=1.5779 T/(n^t ln^k)=1.58  n=800 T/n^t=1.6187 T/(n^t ln^k)=1.62  n=1600 T/n^t=1.6550 T/(n^t ln^k)=1.65  n=3200 T/n^t=1.6879 T/(n^t ln^k)=1.69  n=6400 T/n^t=1.7182 T/(n^t ln^k)=1.72  n=12800 T/n^t=1.7463 T/(n^t ln^k)=1.75
+     local slopes (window-averaged) vs tau=0.8214: 100->200:0.8709 200->400:0.8631 400->800:0.8575 800->1600:0.8534 1600->3200:0.8502 3200->6400:0.8477 6400->12800:0.7868
+     LSQ slope of ln T on ln n over [800,12800]: 0.8473  (tau=0.8214; diff +0.0259); max_n T/n^tau = 1.7510

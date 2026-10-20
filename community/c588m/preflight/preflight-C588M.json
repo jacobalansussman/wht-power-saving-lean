@@ -1,0 +1,153 @@
+{
+  "checks": [
+    {
+      "mode": "x",
+      "pass": true,
+      "source_count": 112,
+      "denominators": {
+        "x": 4,
+        "y": 8,
+        "s": 8
+      },
+      "maximum_uncancelled_entry": {
+        "x": "5550",
+        "y": "81616",
+        "s": "56979/4"
+      },
+      "updates": 125518,
+      "x_rows_restored_(classic_hx)": false
+    },
+    {
+      "mode": "y",
+      "pass": true,
+      "source_count": 112,
+      "denominators": {
+        "x": 1,
+        "y": 2,
+        "s": 1
+      },
+      "maximum_uncancelled_entry": {
+        "x": "1",
+        "y": "3/2",
+        "s": "1"
+      },
+      "updates": 504,
+      "x_rows_restored_(classic_hx)": null
+    },
+    {
+      "mode": "e",
+      "pass": true,
+      "source_count": 228,
+      "denominators": {
+        "x": 4,
+        "y": 4,
+        "s": 4
+      },
+      "maximum_uncancelled_entry": {
+        "x": "1",
+        "y": "8",
+        "s": "4"
+      },
+      "updates": 3811,
+      "x_rows_restored_(classic_hx)": null
+    }
+  ],
+  "SPar_by_Shea_rule": [
+    10,
+    21,
+    4,
+    8,
+    8
+  ],
+  "largest_uncancelled_digit": 652928,
+  "scope": "Exact rational preflight only; the packed kernel terms are mirrored by zmirror.py; Lean kernel checks still required.",
+  "exact_packed_mirror": {
+    "spar": [
+      10,
+      21,
+      4,
+      8,
+      8
+    ],
+    "espar": [
+      10,
+      8,
+      4,
+      8,
+      8
+    ],
+    "scal": [
+      {
+        "lo": 0,
+        "n": 28,
+        "value": true,
+        "adds": 4243,
+        "seconds": 0.02
+      },
+      {
+        "lo": 28,
+        "n": 28,
+        "value": true,
+        "adds": 4243,
+        "seconds": 0.02
+      },
+      {
+        "lo": 56,
+        "n": 28,
+        "value": true,
+        "adds": 4243,
+        "seconds": 0.02
+      },
+      {
+        "lo": 84,
+        "n": 28,
+        "value": true,
+        "adds": 4243,
+        "seconds": 0.02
+      }
+    ],
+    "ychk": {
+      "lo": 0,
+      "n": 112,
+      "value": true,
+      "adds": 224,
+      "seconds": 0.0
+    },
+    "echk": [
+      {
+        "batch": 0,
+        "size": 80,
+        "value": true,
+        "adds": 4243,
+        "seconds": 0.02
+      },
+      {
+        "batch": 1,
+        "size": 80,
+        "value": true,
+        "adds": 4243,
+        "seconds": 0.01
+      },
+      {
+        "batch": 2,
+        "size": 68,
+        "value": true,
+        "adds": 4243,
+        "seconds": 0.01
+      }
+    ],
+    "all_true": true
+  },
+  "epar": [
+    10,
+    8,
+    4,
+    8,
+    8
+  ],
+  "e_batches": [
+    80,
+    80,
+    68
+  ]
+}

@@ -1,0 +1,22 @@
+rank 8 restart 0 residual 1.511e+01  min|diag| 0.676  sv tail [10.6914 10.6807  0.    ]
+rank 8 restart 1 residual 1.511e+01  min|diag| 0.672  sv tail [10.6981 10.6671  0.    ]
+rank 8 restart 2 residual 1.511e+01  min|diag| 0.654  sv tail [10.7016 10.6664  0.    ]
+BEST 8 bit 15.10900679528155
+rank 9 restart 0 residual 1.403e+01  min|diag| 0.753  sv tail [10.2549 10.2517  0.    ]
+rank 9 restart 1 residual 1.403e+01  min|diag| 0.760  sv tail [10.2583 10.2546  0.    ]
+rank 9 restart 2 residual 1.408e+01  min|diag| 0.689  sv tail [10.1636 10.1312  0.    ]
+BEST 9 bit 14.026230492790926
+rank 10 restart 0 residual 1.283e+01  min|diag| 0.817  sv tail [9.8179 9.8178 0.    ]
+rank 10 restart 1 residual 1.283e+01  min|diag| 0.797  sv tail [9.7887 9.7823 0.    ]
+rank 10 restart 2 residual 1.285e+01  min|diag| 0.767  sv tail [9.6982 9.6623 0.    ]
+BEST 10 bit 12.830759629176573
+rank 12 restart 0 residual 9.920e+00  min|diag| 0.896  sv tail [8.998  8.9976 0.    ]
+rank 12 restart 1 residual 9.920e+00  min|diag| 0.896  sv tail [8.9986 8.989  0.    ]
+rank 12 restart 2 residual 9.920e+00  min|diag| 0.898  sv tail [8.9982 8.9972 0.    ]
+BEST 12 bit 9.919698021659526
+BEST 14 bit 5.685246667480545
+BEST 15 bit 7.97921393282795e-13
+BEST 16 bit 4.373755963984131e-14
+BEST 20 bit 0.004397910221947177
+BEST 8 cx 4.176654753280138e-14
+BEST 9 cx 5.6455534456683016e-14

@@ -1,0 +1,48 @@
+{
+ "source_lines_per_plane": [
+  4
+ ],
+ "target_caps_per_plane": [
+  8
+ ],
+ "one copy: sources only (hub bound, control)": {
+  "need_total": 336,
+  "covered_by_borrowed": 112,
+  "least_helpers": 224
+ },
+ "one copy: sources + targets in whose cap the plane lies": {
+  "need_total": 336,
+  "covered_by_borrowed": 224,
+  "least_helpers": 112
+ },
+ "one copy: sources + hub-compatible foreign outputs": {
+  "need_total": 336,
+  "covered_by_borrowed": 216,
+  "least_helpers": 120
+ },
+ "one copy: targets only (no source borrowing)": {
+  "need_total": 336,
+  "covered_by_borrowed": 112,
+  "least_helpers": 224
+ },
+ "two copies: sources only (hub bound, control)": {
+  "need_total": 504,
+  "covered_by_borrowed": 112,
+  "least_helpers": 392
+ },
+ "two copies: sources + targets in whose cap the plane lies": {
+  "need_total": 504,
+  "covered_by_borrowed": 224,
+  "least_helpers": 280
+ },
+ "two copies: sources + hub-compatible foreign outputs": {
+  "need_total": 504,
+  "covered_by_borrowed": 216,
+  "least_helpers": 288
+ },
+ "two copies: targets only (no source borrowing)": {
+  "need_total": 504,
+  "covered_by_borrowed": 112,
+  "least_helpers": 392
+ }
+}

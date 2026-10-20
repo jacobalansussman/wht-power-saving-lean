@@ -1,0 +1,45 @@
+f=1
+   C0 0.0e+00
+   C1 [D1(Y),D2(Y')] 1.7e-16
+   C2 max 0.0e+00
+   C3 generic [D1,X1] 1.17 twist 0.40 D1D1=X1 0.83 [D1,D3] 1.26
+   C3 exact-Q [D1,X1] 0e+00 twist 0e+00 D1D1=X1 1e-16 [D1,D3] 9e-17
+   C4 R7 rel.diff exact 1.7e-16 | generic 0.42 | equivariant+last-exact 1.7e-16  (|pi- u|/|v| 0.71 0.96 1.13)
+f=2
+   C0 1.2e-16
+   C1 [D1(Y),D2(Y')] 2.0e-16
+   C2 max 0.0e+00
+   C2' a1 order-growth control [a1, D2(Y')] 1.18
+   C3 generic [D1,X1] 1.25 twist 1.39 D1D1=X1 1.27 [D1,D3] 1.41
+   C3 exact-Q [D1,X1] 9e-17 twist 0e+00 D1D1=X1 1e-16 [D1,D3] 2e-16
+   C4 R7 rel.diff exact 1.6e-16 | generic 1.04 | equivariant+last-exact 1.7e-16  (|pi- u|/|v| 0.71 0.56 0.86)
+f=3
+   C0 1.5e-16
+   C1 [D1(Y),D2(Y')] 2.4e-16
+   C2 max 0.0e+00
+   C2' a1 order-growth control [a1, D2(Y')] 1.24
+   C3 generic [D1,X1] 1.38 twist 1.37 D1D1=X1 1.28 [D1,D3] 1.39
+   C3 exact-Q [D1,X1] 1e-16 twist 0e+00 D1D1=X1 2e-16 [D1,D3] 2e-16
+   C4 R7 rel.diff exact 2.6e-16 | generic 1.34 | equivariant+last-exact 2.7e-16  (|pi- u|/|v| 0.71 0.78 1.03)
+f=4
+   C0 2.1e-16
+   C1 [D1(Y),D2(Y')] 3.1e-16
+   C2 max 0.0e+00
+   C2' a1 order-growth control [a1, D2(Y')] 1.32
+   C3 generic [D1,X1] 1.35 twist 1.37 D1D1=X1 1.34 [D1,D3] 1.37
+   C3 exact-Q [D1,X1] 2e-16 twist 0e+00 D1D1=X1 2e-16 [D1,D3] 3e-16
+   C4 R7 rel.diff exact 3.0e-16 | generic 1.33 | equivariant+last-exact 3.1e-16  (|pi- u|/|v| 0.73 0.68 1.33)
+keptlib.py:73: RuntimeWarning: divide by zero encountered in matmul
+  R = R + Xf @ R @ Xf
+keptlib.py:73: RuntimeWarning: overflow encountered in matmul
+  R = R + Xf @ R @ Xf
+keptlib.py:73: RuntimeWarning: invalid value encountered in matmul
+  R = R + Xf @ R @ Xf
+f=5
+   C0 2.5e-16
+   C1 [D1(Y),D2(Y')] 4.1e-16
+   C2 max 0.0e+00
+   C2' a1 order-growth control [a1, D2(Y')] 1.39
+   C3 generic [D1,X1] 1.44 twist 1.43 D1D1=X1 1.42 [D1,D3] 1.41
+   C3 exact-Q [D1,X1] 3e-16 twist 0e+00 D1D1=X1 3e-16 [D1,D3] 4e-16
+   C4 R7 rel.diff exact 4.2e-16 | generic 1.42 | equivariant+last-exact 4.1e-16  (|pi- u|/|v| 0.70 0.67 0.95)

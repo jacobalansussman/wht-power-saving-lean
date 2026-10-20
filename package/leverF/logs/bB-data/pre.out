@@ -1,0 +1,17 @@
+copy of ours/T done in 77s
+=== nobuild START 18:27:57
+=== nobuild END rc=0 wall=31s maxrss_kb=977948 18:28:28
+All targets up-to-date (9327 jobs).
+TREE OK /content/work/bB-data/T (11G)
+INSTALL ENG: 385 new, 0 identical (skipped), from /content/work/bB-data/in/engine; hashes /content/work/bB-data/in-ENG.sha256
+   (slot: waited 10s; heavy 1, avail 48793 MB)
+pre LEAN_NUM_THREADS=2
+=== pre START 18:28:39
+=== pre END rc=1 wall=804s maxrss_kb=7270464 18:42:03
+✖ [9051/9321] Running Work.Mixed.SeamConst
+error: no such file or directory (error code: 2)
+error: build failed
+Some required targets logged failures:
+- Work.Mixed.SeamConst
+error: build failed
+PRE rc=1

@@ -1,0 +1,51 @@
+[timing lock] waiting for timing lock 04:45:54
+[timing lock] got lock 04:46:09; load: { 32.68 34.96 37.29 }
+### round 10 log-mel start 04:46:09 load { 32.68 34.96 37.29 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+reps logmel W=4 E=0 neon: 68.412 69.072 68.390 68.992 70.538 70.819 69.554
+PATHS logmel     W=4 E=0 neon      neon calls p50 708.5 p99 1604.4 us (n=13639) | sme calls p50 0.0 p99 0.0 us (n=0) | owner jobs 0 | SME calls from E-cores 0
+RESULT logmel     W=4 E=0 neon      median   69.072 best   68.390 ns/frame agg  =   14.478 Mframe/s | call p50    708.5 p99   1604.4 max   6333.8 us | SME calls   0.0 % | mean us: sme 0.0 neon 832.5 | calls 13639 | CHECK PASS
+reps logmel W=4 E=0 cauto: 56.000 56.084 55.818 55.740 56.022 56.029 57.042
+PATHS logmel     W=4 E=0 cauto     neon calls p50 740.2 p99 1668.7 us (n=5837) | sme calls p50 517.0 p99 959.4 us (n=10996) | owner jobs 0 | SME calls from E-cores 0
+NOTE relaxed token ops
+RESULT logmel     W=4 E=0 cauto     median   56.022 best   55.740 ns/frame agg  =   17.850 Mframe/s | call p50    532.0 p99   1600.9 max  11046.9 us | SME calls  65.3 % | mean us: sme 519.9 neon 961.8 | calls 16833 | CHECK PASS
+reps logmel W=8 E=0 neon: 46.794 46.803 46.679 46.578 46.804 46.798 47.047
+PATHS logmel     W=8 E=0 neon      neon calls p50 874.5 p99 2176.1 us (n=20258) | sme calls p50 0.0 p99 0.0 us (n=0) | owner jobs 0 | SME calls from E-cores 0
+RESULT logmel     W=8 E=0 neon      median   46.798 best   46.578 ns/frame agg  =   21.369 Mframe/s | call p50    874.5 p99   2176.1 max   7809.8 us | SME calls   0.0 % | mean us: sme 0.0 neon 1122.9 | calls 20258 | CHECK PASS
+reps logmel W=8 E=0 cauto: 39.937 40.039 39.890 40.130 40.285 39.821 39.768
+PATHS logmel     W=8 E=0 cauto     neon calls p50 1573.2 p99 2386.7 us (n=12981) | sme calls p50 516.0 p99 1440.8 us (n=10764) | owner jobs 0 | SME calls from E-cores 0
+NOTE relaxed token ops
+RESULT logmel     W=8 E=0 cauto     median   39.937 best   39.768 ns/frame agg  =   25.040 Mframe/s | call p50    771.9 p99   2084.0 max  24521.9 us | SME calls  45.2 % | mean us: sme 539.0 neon 1308.0 | calls 23745 | CHECK PASS
+### round 10 fft 512 x 64 kfr 04:46:22
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+reps fft64kfr W=4 E=0 neon: 0.434 0.439 0.435 0.432 0.434 0.434 0.434
+PATHS fft64kfr   W=4 E=0 neon      neon calls p50 48.1 p99 124.3 us (n=199662) | sme calls p50 0.0 p99 0.0 us (n=0) | owner jobs 0 | SME calls from E-cores 0
+RESULT fft64kfr   W=4 E=0 neon      median    0.434 best    0.432 ns/point agg  = 2304.929 Mpoint/s | call p50     48.1 p99    124.3 max   6720.9 us | SME calls   0.0 % | mean us: sme 0.0 neon 56.9 | calls 199662 | CHECK PASS
+reps fft64kfr W=4 E=0 cauto: 0.410 0.413 0.410 0.409 0.408 0.408 0.407
+PATHS fft64kfr   W=4 E=0 cauto     neon calls p50 104.7 p99 129.8 us (n=58081) | sme calls p50 35.9 p99 43.4 us (n=153688) | owner jobs 0 | SME calls from E-cores 0
+NOTE relaxed token ops
+RESULT fft64kfr   W=4 E=0 cauto     median    0.409 best    0.407 ns/point agg  = 2447.430 Mpoint/s | call p50     36.3 p99    117.5 max   7948.3 us | SME calls  72.7 % | mean us: sme 36.0 neon 99.9 | calls 211769 | CHECK PASS
+reps fft64kfr W=8 E=0 neon: 0.304 0.306 0.306 0.304 0.303 0.306 0.305
+PATHS fft64kfr   W=8 E=0 neon      neon calls p50 58.8 p99 141.5 us (n=285027) | sme calls p50 0.0 p99 0.0 us (n=0) | owner jobs 0 | SME calls from E-cores 0
+RESULT fft64kfr   W=8 E=0 neon      median    0.305 best    0.303 ns/point agg  = 3281.325 Mpoint/s | call p50     58.8 p99    141.5 max  14063.0 us | SME calls   0.0 % | mean us: sme 0.0 neon 79.8 | calls 285027 | CHECK PASS
+reps fft64kfr W=8 E=0 cauto: 0.289 0.288 0.287 0.295 0.289 0.290 0.287
+PATHS fft64kfr   W=8 E=0 cauto     neon calls p50 111.3 p99 136.7 us (n=152428) | sme calls p50 37.0 p99 42.0 us (n=148745) | owner jobs 0 | SME calls from E-cores 0
+NOTE relaxed token ops
+RESULT fft64kfr   W=8 E=0 cauto     median    0.289 best    0.287 ns/point agg  = 3463.052 Mpoint/s | call p50     80.8 p99    129.0 max  48517.9 us | SME calls  49.4 % | mean us: sme 38.0 neon 112.6 | calls 301173 | CHECK PASS
+### round 10 fft 4096 x 16 fftwd 04:46:35
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+reps fft64fftwd W=4 E=0 cauto: 0.573 0.572 0.574 0.572 0.572 0.572 0.573
+PATHS fft64fftwd W=4 E=0 cauto     neon calls p50 270.2 p99 433.2 us (n=20050) | sme calls p50 100.3 p99 114.8 us (n=55534) | owner jobs 0 | SME calls from E-cores 0
+NOTE relaxed token ops
+RESULT fft64fftwd W=4 E=0 cauto     median    0.572 best    0.572 ns/point agg  = 1747.777 Mpoint/s | call p50    100.9 p99    405.2 max   8310.9 us | SME calls  73.1 % | mean us: sme 101.4 neon 285.0 | calls 75584 | CHECK PASS
+reps fft64fftwd W=4 E=0 neon: 0.650 0.648 0.650 0.650 0.647 0.649 0.651
+PATHS fft64fftwd W=4 E=0 neon      neon calls p50 143.4 p99 397.4 us (n=66735) | sme calls p50 0.0 p99 0.0 us (n=0) | owner jobs 0 | SME calls from E-cores 0
+RESULT fft64fftwd W=4 E=0 neon      median    0.650 best    0.647 ns/point agg  = 1539.518 Mpoint/s | call p50    143.4 p99    397.4 max   9984.0 us | SME calls   0.0 % | mean us: sme 0.0 neon 170.2 | calls 66735 | CHECK PASS
+reps fft64fftwd W=8 E=0 cauto: 0.431 0.431 0.431 0.433 0.432 0.432 0.433
+PATHS fft64fftwd W=8 E=0 cauto     neon calls p50 390.8 p99 566.8 us (n=46997) | sme calls p50 100.2 p99 305.7 us (n=53878) | owner jobs 0 | SME calls from E-cores 0
+NOTE relaxed token ops
+RESULT fft64fftwd W=8 E=0 cauto     median    0.432 best    0.431 ns/point agg  = 2314.199 Mpoint/s | call p50    108.3 p99    502.2 max  17654.8 us | SME calls  53.4 % | mean us: sme 104.8 neon 365.5 | calls 100875 | CHECK PASS
+reps fft64fftwd W=8 E=0 neon: 0.464 0.467 0.463 0.462 0.466 0.462 0.463
+PATHS fft64fftwd W=8 E=0 neon      neon calls p50 176.8 p99 480.9 us (n=93526) | sme calls p50 0.0 p99 0.0 us (n=0) | owner jobs 0 | SME calls from E-cores 0
+RESULT fft64fftwd W=8 E=0 neon      median    0.463 best    0.462 ns/point agg  = 2158.102 Mpoint/s | call p50    176.8 p99    480.9 max  10210.2 us | SME calls   0.0 % | mean us: sme 0.0 neon 243.2 | calls 93526 | CHECK PASS
+### end 04:46:48 load { 34.59 35.15 37.25 }

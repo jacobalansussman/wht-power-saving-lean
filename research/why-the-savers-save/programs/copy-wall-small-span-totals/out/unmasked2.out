@@ -1,0 +1,10 @@
+rs 1 res 1.3e-10 rank 9 smin 1.74e-06 snext 6.57e-01 dmin 9.04e-02
+rs 21 res 4.3e-14 rank 9 smin 8.25e-16 snext 5.74e-01 dmin 3.86e-04
+K=9 init=gauss restarts=40: {('natural', 9): 37, ('NON-NATURAL', 9): 1, ('partial', 9): 1, ('natural', 8): 1}  unconverged residuals []  36s
+K=9 init=sparse restarts=30: {'not converged': 30}  unconverged residuals ['1.0e+00', '1.0e+00', '1.4e+00', '1.4e+00', '1.7e+00']  230s
+rs 3 res 7.5e-14 rank 10 smin 1.36e-06 snext 4.22e-01 dmin 9.23e-02
+rs 24 res 4.0e-10 rank 10 smin 2.98e-06 snext 5.71e-01 dmin 4.15e-01
+K=10 init=gauss restarts=30: {('natural', 10): 25, ('NON-NATURAL', 10): 2, ('natural', 8): 1, ('natural', 9): 2}  unconverged residuals []  82s
+K=11 init=gauss restarts=20: {('natural', 11): 15, ('natural', 10): 3, ('natural', 9): 2}  unconverged residuals []  81s
+
+[exited with code 0]

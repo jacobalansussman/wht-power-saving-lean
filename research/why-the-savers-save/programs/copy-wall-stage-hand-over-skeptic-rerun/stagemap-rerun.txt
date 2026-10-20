@@ -1,0 +1,39 @@
+(1) scalar replay of the B_K recipe (hub global_k.py), K = 4, s = 9; P-bank = 2p, 0-bank = 2p+1
+    whole word returns to the identity (exchange included): True
+    pair 0 stage 0 (fwd) -> 1 (rev): source(i+1) bank = target(i) bank: True; content = target(i) after stage i [= target before + source of stage i]: True; extra banks in between (bridge): -
+    pair 0 stage 1 (rev) -> 2 (fwd): source(i+1) bank = target(i) bank: True; content = target(i) after stage i [= target before + source of stage i]: False; extra banks in between (bridge): [2]
+    pair 1 stage 3 (rev) -> 4 (fwd): source(i+1) bank = target(i) bank: True; content = target(i) after stage i [= target before + source of stage i]: False; extra banks in between (bridge): [4]
+    pair 2 stage 5 (rev) -> 6 (fwd): source(i+1) bank = target(i) bank: True; content = target(i) after stage i [= target before + source of stage i]: False; extra banks in between (bridge): [6]
+    pair 3 stage 7 (rev) -> 8 (fwd): source(i+1) bank = target(i) bank: True; content = target(i) after stage i [= target before + source of stage i]: True; extra banks in between (bridge): -
+
+(2) frames of ONE port at the boundary i -> i+1 (dims relative to the common base E_i; h = 9, a = h - k = 8)
+    fwd i -> rev i+1
+      P-bank (src i, tgt i+1)    | in window i: i: <a_T> -> U            | at the boundary: U  = <a_T>+E_(i+1)  [new: line]              | i+1: U -> U+B  [new: <a_T> -> U']
+      0-bank (tgt i, src i+1)    | in window i: i: 0 -> a_T^perp         | at the boundary: a_T^perp = E_(i+1)  [new: frame 0]           | i+1: a_T^perp -> a_T^perp+B  [new: 0 -> a_T'^perp]
+      stage-i total              | in window i: formed at P_j (dim 8)    | at the boundary: not a port register: no new identification   | 
+      stage-i copy (star)        | in window i: P_j -> 0 (paid 8)        | at the boundary: frame 0 of window i = E_i, 8 below E_(i+1)   | 
+      stage-(i+1) total          | in window i:                          | at the boundary: formed at <= P_j'^perp (new)                 | copy climbs 8 to U' (new)
+    rev i -> fwd i+1
+      0-bank (src i, tgt i+1)    | in window i: i: 0 -> a_T^perp         | at the boundary: a_T^perp = E_(i+1)  [new: frame 0]           | i+1: [new: 0 -> a_T'^perp]
+      P-bank (tgt i, src i+1)    | in window i: i: <a_T> -> U            | at the boundary: U = <a_T>+E_(i+1)  [new: line]               | i+1: [new: <a_T> -> U']
+      stage-i total (reverse)    | in window i: formed at <= P_j^perp    | at the boundary:                                              | 
+      stage-i copy (reverse)     | in window i: climbs 8 to U (paid)     | at the boundary: U = <a_T>+E_(i+1) for EVERY T in old coords  | 
+      stage-(i+1) total          | in window i:                          | at the boundary: formed at P_j' (new)                         | copy drops 8 to E_(i+1) (new)
+
+(3) distinct labels on P112: 112; distinct hyperplanes a_T^perp (= preimages of the common E_(i+1)): 112
+    so the 112 transitions t_T are pairwise different maps: a register holding content of two ports cannot be
+    re-identified into window i+1 by one map.
+    pairs (S,T) with a common legal frame at stage i+1 in the OLD identification: fwd->rev 0, rev->fwd 0 (of 12544)
+    same count in the NEW identification (the stage-(i+1) side information, off-diagonal): 5824
+
+(4) hand-over routes for the 8 totals A_a of the complex P112 frame decoder (served = read set, as cxp.py)
+    a | w_in=dim P | R2 route: E_i -> U | mid-climb read at P^perp -> U | rev->fwd drop U -> common cut | route N: E_i -> E_(i+1) | star copy (new)
+    0 | 8 | 9 | 8 | 8 | 8 | 8
+    1 | 8 | 9 | 8 | 8 | 8 | 8
+    2 | 8 | 9 | 8 | 8 | 8 | 8
+    3 | 8 | 9 | 8 | 8 | 8 | 8
+    4 | 8 | 9 | 8 | 8 | 8 | 8
+    5 | 8 | 9 | 8 | 8 | 8 | 8
+    6 | 8 | 9 | 8 | 8 | 8 | 8
+    7 | 8 | 9 | 8 | 8 | 8 | 8
+    per call (8 totals): R2 route 72, mid-climb 64, rev->fwd 64, route N 64, star copies 64

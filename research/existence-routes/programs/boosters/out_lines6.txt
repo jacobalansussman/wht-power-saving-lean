@@ -1,0 +1,12 @@
+m=6 T=(1,): profile [32240, 47208, 54404, 57930, 59675, 60543]
+m=6 T=(2,): profile [496, 616, 644, 650, 651, 651]
+m=6 T=(0, 1): profile [496, 616, 644, 650, 651, 651]
+m=6 T=(0, 2): profile [32240, 47208, 54404, 57930, 59675, 60543]
+m=6 T=(1, 2): profile [31744, 47104, 54656, 58400, 60264, 61194]
+S6 margin under T=(0,): 1940
+S6 margin under T=(1,): 1916
+S6 margin under T=(2,): 20
+S6 margin under T=(0, 1): 20
+S6 margin under T=(0, 2): 1916
+S6 margin under T=(1, 2): 1940
+python3 -B lines6.py 6  19.58s user 0.14s system 96% cpu 20.442 total

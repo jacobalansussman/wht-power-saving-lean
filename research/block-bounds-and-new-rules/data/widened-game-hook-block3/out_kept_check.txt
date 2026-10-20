@@ -1,0 +1,33 @@
+A. 8*kernel (littleC^(x)3, Lean) == (2dir e1)(2dir e2)(2dir e3): True [0.0s]
+A. dir(e1)^2 == shift e1: True [0.0s]
+dim W = 560, dim N = 280, dim W/N = 280 [0.0s]
+B. letters tested: 199; image of N not inside N for: none [54.3s]
+B. every N basis vector supported on one multiset of addresses (=> eigenvector of EVERY diagonal^(x)5): True [54.3s]
+C. explicit vectors u: 200; all u in N: True; (2dir e1)^(x)5 u in N for all (exact Z[i]): True [54.7s]
+C. p=134217689: rank of the u's = 200  -> cap(dir e1) <= 80 (exact, over Q(i)) [54.8s]
+C. p=134217649: rank of the u's = 200  -> cap(dir e1) <= 80 (exact, over Q(i)) [54.8s]
+C. p=134217617: rank of the u's = 200  -> cap(dir e1) <= 80 (exact, over Q(i)) [54.9s]
+D. p=134217689: f(dir z), z=1..7 (mod-p lower bounds): [80, 80, 80, 80, 80, 80, 80] [58.0s]
+D. p=134217689: f(K) (mod-p lower bound) = 224 [59.3s]
+D. p=134217649: f(dir z), z=1..7 (mod-p lower bounds): [80, 80, 80, 80, 80, 80, 80] [62.5s]
+D. p=134217649: f(K) (mod-p lower bound) = 224 [63.7s]
+D. p=134217689: f(dir z1 dir z2) over 42 ordered independent pairs: values [144] [100.2s]
+D. p=134217689: f(dir e1 dir e1) = f(shift) = 0 [101.0s]
+      101.18 real       100.76 user         0.39 sys
+          1297285120  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               80809  page reclaims
+                  30  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 100  voluntary context switches
+                1865  involuntary context switches
+       1707469230955  instructions retired
+        405242108828  cycles elapsed
+          1289323768  peak memory footprint

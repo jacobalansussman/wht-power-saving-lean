@@ -1,0 +1,53 @@
+{
+ "control": {
+  "b": "0.001664727258740678855772",
+  "kappa": "1661960547713947/10^18",
+  "reproduced": true
+ },
+ "baseline_audit": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+ "direct_consumer_model": {
+  "consumed_planes": 136,
+  "compatible_ordered_pairs": 300,
+  "exact_max_bmatching": 100,
+  "greedy": 94,
+  "note": "g-fields model (direct target reads only), reproduced on FULL-WORD"
+ },
+ "exact_arrival_sandwich": {
+  "dims": {
+   "face 4": 168,
+   "fac 3": 168,
+   "x 3": 56,
+   "x 4": 56,
+   "fac 4": 56
+  },
+  "other_planes_inside": 0,
+  "pairs": 0,
+  "free_carriers": 0
+ },
+ "latecopy": {
+  "face_copies_with_any_cross_block_P1": 0,
+  "of": 168,
+  "modes": [
+   "content",
+   "frame"
+  ]
+ },
+ "superpacket_I2": {
+  "common_reader_pairs": 256,
+  "passing": 0
+ },
+ "I9": {
+  "source_other_plane_incidences": 560,
+  "same_block": 560,
+  "rank_Ps_plus_P": 4,
+  "cross_block_coincidences": 0,
+  "block_span_in_target_perp": "0/1568"
+ },
+ "compensation": {
+  "gates": 6320,
+  "frame": "[]",
+  "before_A": true,
+  "constrain_S": false
+ },
+ "outcome": "no-gain (exact obstruction at step 1: the arrival sandwich, for the U8 word and its delivery network)"
+}

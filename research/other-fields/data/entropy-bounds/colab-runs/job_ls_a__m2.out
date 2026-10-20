@@ -1,0 +1,6 @@
+m=2 W=3: best of 30 samples 6.000000 (routing 6) (21s)
+m=2 W=3: minimum cut LP found 6.000000 vs routing 6; layout [(0, 7), (7, 3), (9, 0)]  (56s)
+m=2 W=4: best of 30 samples 8.000000 (routing 8) (35s)
+m=2 W=4: minimum cut LP found 8.000000 vs routing 8; layout [(0, 7), (5, 3), (7, 0), (4, 6)]  (96s)
+m=2 W=5: best of 30 samples 9.000000 (routing 10) (61s)
+m=2 W=5: minimum cut LP found 9.000000 vs routing 10; layout [(0, 7), (3, 1), (4, 10), (0, 10), (10, 7)]  (129s)

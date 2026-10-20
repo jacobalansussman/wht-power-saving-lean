@@ -1,0 +1,10 @@
+support 2, kills ('F2',): 9 entries; e.g.
+   a = [1, 1, 0]  inverse denominator 2  real part of inverse coefficients ['1/2', '-1/2', '1/2']
+   a = [1, 1j, 0]  inverse denominator 2  real part of inverse coefficients ['1/2', '1/2', '-1/2']
+   a = [1, (-0-1j), 0]  inverse denominator 2  real part of inverse coefficients ['1/2', '1/2', '-1/2']
+   a = [1, 0, 1]  inverse denominator 2  real part of inverse coefficients ['1/2', '1/2', '-1/2']
+support 3, kills ('F4',): 15 entries; e.g.
+   a = [1, 1, -1]  inverse denominator 2  real part of inverse coefficients ['1/2', '0', '1/2']
+   a = [1, 1, 1j]  inverse denominator 10  real part of inverse coefficients ['3/10', '-1/5', '3/10']
+   a = [1, 1, (-0-1j)]  inverse denominator 10  real part of inverse coefficients ['3/10', '-1/5', '3/10']
+   a = [1, -1, 1]  inverse denominator 2  real part of inverse coefficients ['1/2', '1/2', '0']

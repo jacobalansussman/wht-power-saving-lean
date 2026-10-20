@@ -1,0 +1,2 @@
+../e3-engineE/fake_h_3_2_4.npz: m=3 W=2 M=4: 16 equations, 122 unknowns; |F| = 7.91e-15; Jacobian rank 16 (s_min 7.534e-02, s_max 4.754e+01); Newton step 6.95e-14; sampled Lipschitz of J 2.88e+01; Kantorovich h = 2.66e-11 -> exact real zero within 1.4e-13 (h < 1/2)
+../e3-engineE/fake_h_3_3_6.npz: m=3 W=3 M=6: 36 equations, 300 unknowns; |F| = 6.51e-14; Jacobian rank 36 (s_min 9.880e-02, s_max 3.802e+02); Newton step 3.71e-13; sampled Lipschitz of J 2.55e+02; Kantorovich h = 9.56e-10 -> exact real zero within 7.4e-13 (h < 1/2)

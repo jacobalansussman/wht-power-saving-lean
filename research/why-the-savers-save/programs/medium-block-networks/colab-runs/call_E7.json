@@ -1,0 +1,38 @@
+{
+ "summary": {
+  "design": "E7",
+  "n": 63,
+  "k": 7,
+  "junk_entries": 2016,
+  "free": 236,
+  "resid": 1780,
+  "carriers": 1675,
+  "carrier_levels": 6415,
+  "bound_free": 882
+ },
+ "raw_check_exact": true,
+ "paid_levels": 7220,
+ "by_class": {
+  "x": 378,
+  "centre": 49,
+  "carrier": 6415,
+  "y": 378
+ },
+ "children": {
+  "carrier:1": 34,
+  "carrier:2": 173,
+  "carrier:3": 364,
+  "carrier:4": 577,
+  "carrier:5": 527,
+  "centre:7": 7,
+  "x:1": 295,
+  "x:2": 16,
+  "x:3": 4,
+  "x:4": 3,
+  "x:5": 3,
+  "x:6": 2,
+  "y:1": 366,
+  "y:2": 6
+ },
+ "seconds": 544.2
+}

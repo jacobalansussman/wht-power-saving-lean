@@ -1,0 +1,9 @@
+m=2 n=4: mu_1 = 1/3 = 0.333333; mu_2 = 0.500000; mu_last = 0.500000; all mu_l < mu_1 for l>=2: False; mu decreasing: False; 2/(1-mu_1) = 3
+m=3 n=8: mu_1 = 3/7 = 0.428571; mu_2 = 0.300000; mu_last = 0.214286; all mu_l < mu_1 for l>=2: True; mu decreasing: True; 2/(1-mu_1) = 7/2
+m=4 n=16: mu_1 = 7/15 = 0.466667; mu_2 = 0.269231; mu_last = 0.063636; all mu_l < mu_1 for l>=2: True; mu decreasing: True; 2/(1-mu_1) = 15/4
+m=5 n=32: mu_1 = 15/31 = 0.483871; mu_2 = 0.258621; mu_last = 0.006434; all mu_l < mu_1 for l>=2: True; mu decreasing: True; 2/(1-mu_1) = 31/8
+m=6 n=64: mu_1 = 31/63 = 0.492063; mu_2 = 0.254098; mu_last = 0.000065; all mu_l < mu_1 for l>=2: True; mu decreasing: True; 2/(1-mu_1) = 63/16
+m=7 n=128: mu_1 = 63/127 = 0.496063; mu_2 = 0.252000; mu_last = 0.000000; all mu_l < mu_1 for l>=2: True; mu decreasing: True; 2/(1-mu_1) = 127/32
+m=8 n=256: mu_1 = 127/255 = 0.498039; mu_2 = 0.250988; mu_last = 0.000000; all mu_l < mu_1 for l>=2: True; mu decreasing: True; 2/(1-mu_1) = 255/64
+m=9 n=512: mu_1 = 255/511 = 0.499022; mu_2 = 0.250491; mu_last = 0.000000; all mu_l < mu_1 for l>=2: True; mu decreasing: True; 2/(1-mu_1) = 511/128
+m=10 n=1024: mu_1 = 511/1023 = 0.499511; mu_2 = 0.250245; mu_last = 0.000000; all mu_l < mu_1 for l>=2: True; mu decreasing: True; 2/(1-mu_1) = 1023/256

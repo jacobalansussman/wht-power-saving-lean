@@ -1,0 +1,27 @@
+f=4: rank 975 of 1178, per-f exact null 203, nonzero spectrum bottom: 0.0028 0.0086 0.0087 0.0088 0.0113 0.0116 0.0119 0.0120
+f=5: rank 994 of 1178, per-f exact null 184, nonzero spectrum bottom: 0.0115 0.0116 0.0117 0.0159 0.0184 0.0184 0.0190 0.0194
+f=6: rank 996 of 1178, per-f exact null 182, nonzero spectrum bottom: 0.0125 0.0126 0.0126 0.0176 0.0211 0.0211 0.0214 0.0232
+f=7: rank 994 of 1178, per-f exact null 184, nonzero spectrum bottom: 0.0130 0.0130 0.0130 0.0180 0.0225 0.0225 0.0226 0.0237
+f=8: rank 996 of 1178, per-f exact null 182, nonzero spectrum bottom: 0.0132 0.0132 0.0132 0.0181 0.0232 0.0232 0.0233 0.0238
+relations exact at every f in [5, 6, 7, 8] (fixed coefficients): 182 ; complement dim 996
+  f=4: on the complement: smallest eigenvalues -0.00000 -0.00000 -0.00000 -0.00000 -0.00000 -0.00000 -0.00000 -0.00000 ; # below 1e-9: 21
+  f=5: on the complement: smallest eigenvalues -0.00000 0.00000 0.01147 0.01162 0.01166 0.01594 0.01838 0.01843 ; # below 1e-9: 2
+  f=6: on the complement: smallest eigenvalues 0.01251 0.01257 0.01258 0.01760 0.02105 0.02107 0.02136 0.02316 ; # below 1e-9: 0
+  f=7: on the complement: smallest eigenvalues -0.00000 0.00000 0.01295 0.01297 0.01298 0.01798 0.02247 0.02248 ; # below 1e-9: 2
+  f=8: on the complement: smallest eigenvalues 0.01317 0.01318 0.01318 0.01814 0.02325 0.02325 0.02327 0.02379 ; # below 1e-9: 0
+  max |G_5 - G_4| = 7.500e-01
+  max |G_6 - G_5| = 5.000e-01
+  max |G_7 - G_6| = 5.000e-01
+  max |G_8 - G_7| = 5.000e-01
+smallest-eigenvalue combination at f=8 (eig 0.01317), top terms:
+   -0.572-0.165i  lCS.fCS.B
+   +0.416+0.134i  lS1.fCS.B
+   +0.341+0.107i  B.Pr1.lCS
+   +0.336+0.105i  B.Pr0.lCS
+   -0.248-0.087i  B.Pr1.lS1
+   -0.246-0.086i  B.Pr0.lS1
+   +0.010-0.102i  B.lCS.lCS
+   -0.086-0.028i  B.Pr0.Pr1
+   +0.028+0.073i  B.lS1.lS1
+   +0.060-0.043i  B.lCS
+  its norm^2 at each f: f4:0.01336 f5:0.01309 f6:0.01301 f7:0.01305 f8:0.01317

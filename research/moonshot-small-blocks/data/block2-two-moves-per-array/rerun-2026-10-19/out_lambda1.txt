@@ -1,0 +1,6 @@
+exact case (3,2) over F_2, general n: solutions = 0 (Theorem 2W linear algebra: expect 0)
+order-1 (3,2) over F_2, n strictly lower triangular: (B0,G0,n0) with a solution: 24; Lambda1 violations: 0; (b,g) counts {(1, 1): 24}
+order-1 (3,2) over F_2, n general: (B0,G0,n0) with a solution: 4032; Lambda1 violations: 0; (b,g) counts {(1, 1): 4032}
+(4,3): 4680 (B0, G0) pairs with G0 in normal form and B0 G0 = 0
+(4,3): pairs meeting Lambda1's necessary rank conditions: 0 (expect 0)
+(4,3): direct solvability tests on 2264 (B0,G0,n0) triples with the largest b+g: 0 solvable (expect 0)

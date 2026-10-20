@@ -1,0 +1,4 @@
+m=4 family=odd: M=8 directions, deletion bound W=2 (moves/array 4.000, saving if it existed 0.000); tight odd forms 128, live 8, max clique 2 -> passes
+m=5 family=odd: M=16 directions, deletion bound W=4 (moves/array 4.000, saving if it existed 0.139); tight odd forms 1200, live 16, max clique 16 -> EXCLUDED
+m=4 family=all: M=15 directions, deletion bound W=4 (moves/array 3.750, saving if it existed 0.047); tight odd forms 56, live 15, max clique 15 -> EXCLUDED
+m=5 family=all: M=31 directions, deletion bound W=8 (moves/array 3.875, saving if it existed 0.158); tight odd forms 240, live 31, max clique 31 -> EXCLUDED

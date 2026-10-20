@@ -1,0 +1,6 @@
+pools {7: 24749} 0s
+seed 0 dims [7, 7, 7, 7, 7, 7, 7, 7, 7]: Hall failures 10 after 12000 steps, ports read per total [34, 34, 30, 34, 34, 34, 34, 34, 34], uncovered 0  7s
+seed 1 dims [7, 7, 7, 7, 7, 7, 7, 7, 7]: Hall failures 12 after 12000 steps, ports read per total [32, 34, 34, 34, 34, 34, 34, 34, 34], uncovered 0  14s
+seed 2 dims [7, 7, 7, 7, 7, 7, 7, 7, 7]: Hall failures 13 after 12000 steps, ports read per total [34, 32, 30, 34, 32, 34, 34, 34, 34], uncovered 0  21s
+families passing Hall: 0
+$VENV -I famsearch.py 7,7,7,7,7,7,7,7,7 3 12000 out/fam9x7.npy  21.22s user 0.03s system 99% cpu 21.256 total

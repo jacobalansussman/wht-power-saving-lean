@@ -1,0 +1,5 @@
+s2 F1 exact Q-rank of r(q), q != 0: [(7, 9), (8, 502)]
+s2 F2 min |r(q)| = 48  sizes>=44 needed for one part >= 22
+s2 distinct perp-of-pair flats 4900 line counts [(30, 3780), (36, 1120)] exact ranks [(6, 200)] (first 200)
+s2 F3 min over F of rank_p(Gram(r(q) minus F)), histogram over q: [(7, 120), (8, 391)]  q with <= 6: []  12.1 s
+s2 mod-p Gram rank vs exact Q rank mismatches on 300 random subsets: 0

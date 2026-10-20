@@ -1,0 +1,9 @@
+pool DR 168 directions; 18970 candidate subspaces
+seed 0: greedy served True cost 72 (2 s)
+seed 0: best 72; verified exact True n 8 pair 72 star 72  terms [9, 9, 9, 9, 9, 9, 9, 9] (413 s)
+seed 1: greedy served True cost 72 (414 s)
+   seed 1 lns 29: 71 (520 s)
+seed 1: best 71; verified exact True n 8 pair 71 star 71  terms [9, 9, 9, 9, 9, 9, 9, 8] (801 s)
+seed 2: greedy served True cost 72 (802 s)
+   seed 2 lns 39: 71 (934 s)
+seed 2: best 71; verified exact True n 8 pair 71 star 71  terms [9, 9, 9, 9, 9, 9, 9, 8] (1138 s)

@@ -1,0 +1,32 @@
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HGeom.lean:399:0: warning: Definition `zH_spec` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HGeom.lean:427:0: warning: Definition `z_A2_spec` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HGeom.lean:455:0: warning: Definition `z_B2_spec` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HGeom.lean:483:0: warning: Definition `z_A3_spec` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HGeom.lean:511:0: warning: Definition `z_B3_spec` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HGeom.lean:539:0: warning: Definition `z_A4_spec` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HGeom.lean:567:0: warning: Definition `z_B4_spec` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HGeom.lean:595:0: warning: Definition `z_F1_spec` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HGeom.lean:623:0: warning: Definition `z_F2_spec` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HGeom.lean:651:0: warning: Definition `z_F3_spec` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+'OAI.PowerSaving.XHost.ghostGeom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.bridgeHost_gcert' depends on axioms: [propext, Classical.choice, Quot.sound]

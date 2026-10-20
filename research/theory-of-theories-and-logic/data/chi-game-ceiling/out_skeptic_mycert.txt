@@ -1,0 +1,5 @@
+group order 241920
+rows {'sub': 5, 'mono': 4, 'dfz': 1, 'ing': 3} eqs 5 |P1| 294 |P3| 674
+orbit variables touched 22 ; negative coefficients: 0 []
+VERIFIED: mean delta_3 <= 169/57 * mean delta_1 = 2.9649122807017543
+DFZ row evaluated on the F_4 family: -1 (must be < 0: the row is false in characteristic 2)

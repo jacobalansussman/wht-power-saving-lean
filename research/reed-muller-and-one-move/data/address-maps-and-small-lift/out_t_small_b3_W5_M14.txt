@@ -1,0 +1,21 @@
+m=3 W=5 M=14: 28 targets; 361 classes of direction multisets (0.1 s)
+  SURVIVOR dirs (1, 1, 1, 1, 2, 2, 2, 2, 3, 4, 4, 5, 6, 7) (orbit 84; distinct dirs independent: False): 13 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 12,16,18,20,23 (tight 11, clique 5)
+    zero-block exclusion: dirs (1, 1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 6, 7) targets [16, 16, 18, 21, 22]: form 43 |D| = 9, r = 0, zero clique 5
+    zero-block exclusion: dirs (1, 1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 6, 7) targets [16, 16, 19, 20, 22]: form 33 |D| = 9, r = 0, zero clique 5
+    zero-block exclusion: dirs (1, 1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 6, 7) targets [16, 16, 19, 21, 23]: form 35 |D| = 9, r = 0, zero clique 5
+  SURVIVOR dirs (1, 1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 6, 7) (orbit 168; distinct dirs independent: False): 13 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 12,17,18,20,23 (tight 11, clique 5)
+  SURVIVOR dirs (1, 1, 1, 1, 2, 2, 2, 3, 4, 4, 5, 6, 6, 7) (orbit 84; distinct dirs independent: False): 13 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 8,12,18,20,23 (tight 9, clique 5)
+  SURVIVOR dirs (1, 1, 1, 1, 2, 2, 2, 3, 4, 4, 5, 6, 7, 7) (orbit 84; distinct dirs independent: False): 13 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 11,12,18,20,23 (tight 9, clique 5)
+  SURVIVOR dirs (1, 1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 6, 6, 7) (orbit 84; distinct dirs independent: False): 2 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 8,16,19,20,22 (tight 10, clique 4)
+  SURVIVOR dirs (1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 5, 6, 7) (orbit 28; distinct dirs independent: False): 3 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 13,16,19,21,22 (tight 7, clique 5)
+  SURVIVOR dirs (1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 5, 6, 7) (orbit 84; distinct dirs independent: False): 1 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 13,17,18,20,23 (tight 7, clique 5)
+  SURVIVOR dirs (1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 7) (orbit 84; distinct dirs independent: False): 15 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 2,12,18,20,23 (tight 7, clique 4)
+  SURVIVOR dirs (1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 6, 7, 7) (orbit 42; distinct dirs independent: False): 2 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 13,17,18,20,23 (tight 5, clique 4)
+  SURVIVOR dirs (1, 1, 1, 2, 2, 2, 3, 4, 4, 4, 5, 6, 7, 7) (orbit 28; distinct dirs independent: False): 1 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 7,11,16,16,23 (tight 12, clique 4)
+  SURVIVOR dirs (1, 1, 1, 2, 2, 2, 3, 4, 4, 5, 5, 6, 6, 7) (orbit 84; distinct dirs independent: False): 46 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 0,16,18,20,27 (tight 8, clique 4)
+  SURVIVOR dirs (1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7) (orbit 42; distinct dirs independent: False): 106 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 0,8,13,19,20 (tight 5, clique 4)
+  SURVIVOR dirs (1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7) (orbit 1; distinct dirs independent: False): 39564 target 5-multisets pass S+D+C+Z (0 with no tight form); example targets idx 0,0,0,6,8 (tight 12, clique 4)
+  classes with some target in span: 337; with a target 5-multiset passing deletion: 20; passing cliques and the zero-block test too: 13
+  target tuples passing deletion but excluded: by cliques 5001, by the zero-block test 8529
+  classes skipped by the free-direction lemma (independent distinct directions, M < mW): 0
+  done in 22.5 s

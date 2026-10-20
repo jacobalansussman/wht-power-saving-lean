@@ -1,0 +1,72 @@
+[
+ {
+  "seq": [
+   "GF"
+  ],
+  "mode": "fixed",
+  "min_crossings_including_bank": 2,
+  "states": 39674
+ },
+ {
+  "seq": [
+   "GF"
+  ],
+  "mode": "free",
+  "min_crossings_including_bank": 2,
+  "states": 39679
+ },
+ {
+  "seq": [
+   "GB"
+  ],
+  "mode": "fixed",
+  "min_crossings_including_bank": 2,
+  "states": 39302
+ },
+ {
+  "seq": [
+   "GB"
+  ],
+  "mode": "free",
+  "min_crossings_including_bank": 2,
+  "states": 39307
+ },
+ {
+  "seq": [
+   "GF",
+   "GB"
+  ],
+  "mode": "fixed",
+  "min_crossings_including_bank": 3,
+  "states": 79938
+ },
+ {
+  "seq": [
+   "GF",
+   "GB"
+  ],
+  "mode": "free",
+  "min_crossings_including_bank": 3,
+  "states": 80656
+ },
+ {
+  "seq": [
+   "GF",
+   "GB",
+   "GF"
+  ],
+  "mode": "fixed",
+  "min_crossings_including_bank": 4,
+  "states": 120314
+ },
+ {
+  "seq": [
+   "GF",
+   "GB",
+   "GF"
+  ],
+  "mode": "free",
+  "min_crossings_including_bank": 3,
+  "states": 120976
+ }
+]

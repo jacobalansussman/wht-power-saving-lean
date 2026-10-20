@@ -1,0 +1,24 @@
+design  P   m  data  free centre     D  c/call (break-even)  decoder
+E7      1  19   126   126    147   -21   49 (42.0)  coordinate decoder (natural.py)
+D6      1  13    60    60     90   -30   30 (20.0)  coordinate decoder (natural.py)
+A5      1  13    30    30     90   -60   30 (10.0)  coordinate decoder (natural.py)
+D6      2  21   120   120    150   -30   30 (24.0)  coordinate decoder (natural.py)
+A5      2  21    60    60    150   -90   30 (12.0)  coordinate decoder (natural.py)
+P112    1  25   224   224    216     8   72 (74.7)  coordinate decoder (natural.py)
+E8      1  25   240   240    216    24   72 (80.0)  coordinate decoder (natural.py)
+P112    1  25   224   224    192    32   64 (74.7)  hub's decoder (U8X0, Lean-checked)
+E7      1  19   126   126    126     0   42 (42.0)  hypothetical t(k-1) decoder (not found)
+D6      2  21   120   120    120     0   24 (24.0)  hypothetical t(k-1) decoder (not found)
+
+P112, block 25, one replica (3 calls), U8X0 word, helpers on banks (ideal packing):
+  W = 224 data + 453.36 banks = 677.36;  paid levels: x 2688, y 2688, helpers 11334, copies 192; D = 32
+  narrow mass sources                 6798.1  ( 15.5 %)
+  narrow mass targets                 6652.1  ( 15.2 %)
+  narrow mass helpers (on banks)     30088.6  ( 68.8 %)
+  narrow mass centre copies            218.8  (  0.5 %)
+  first order a = D/N = 7.3130e-04 (the fold gives 7.3057223e-4)
+  with helpers free (no banks, no helper mass): D/N = 2.3411e-03
+
+to beat the hub at block 25 (first order, D = 32 fixed, U8X0's data and copy blocks kept): helper narrow mass per replica <= 5381, i.e. <= 17.9 % of U8X0's 30089
+most generous ceiling at block 25 (helpers free, data in children {8, 16}, hub's centre): a <= 8.290e-03
+  E8 (120 ports, coordinate decoder 72): D = 24, ceiling a <= 5.822e-03

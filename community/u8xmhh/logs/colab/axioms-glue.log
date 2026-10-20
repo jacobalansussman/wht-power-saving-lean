@@ -1,0 +1,51 @@
+'GXD.U8XMHH.hs_ok' depends on axioms: [propext]
+'GXD.U8XMHH.hfits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XMHH.hwidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XMHH.hprice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BridgeRate.U8XMHH.unit_cost_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BlockAccounting.fold_U8XMHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.HostSched.ofTab_fitsR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.engine_of_ginv_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.wht_of_ginv_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamU8XMHH.engine_U8XMHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8XMHH_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XM.ginv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XM.hent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XM.exitRC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XM.scalOKZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XM.validX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.ginvXOfZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.exit_of_zchecksZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+@OAI.PowerSaving.XHost.engine_of_ginv_host : ∀ {H T Sl C : Type} [inst : Fintype H] [inst_1 : DecidableEq H]
+  [inst_2 : Fintype T] [inst_3 : DecidableEq T] [inst_4 : Fintype Sl] [inst_5 : DecidableEq Sl] [inst_6 : Fintype C]
+  [inst_7 : DecidableEq C] (I : OAI.PowerSaving.GX.GInvE H T Sl C),
+  Fintype.card H = 9 →
+    ∀ (S : OAI.PowerSaving.XHost.HostSched Sl T),
+      S.fits I.ent →
+        ∀ (u W : ℕ),
+          73 = u →
+            64 * Fintype.card T + S.nb = W →
+              1 ≤ W →
+                ∀ (U : List (ℕ × ℕ)),
+                  (∀ (φ : ℕ → ℝ), OAI.PowerSaving.XHost.unitPriceHost I S φ = OAI.PowerSaving.Binary.listCost φ U) →
+                    ∀ (s : ℕ) (z : ℝ),
+                      0 ≤ z →
+                        z ≤ 1 →
+                          (2 ^ s - 1) * OAI.PowerSaving.BlockAccounting.moment u z U +
+                                ↑W *
+                                  (OAI.PowerSaving.BlockAccounting.T u z (u - 1) 1 +
+                                    OAI.PowerSaving.BlockAccounting.T u z 1 1) <
+                              2 ^ s * ↑W →
+                            ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+                              (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+                              OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl)
+                                (OAI.PowerSaving.RAM.bundle cl) (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+                                (fun i =>
+                                  (OAI.PowerSaving.Binary.bits (k i)).tape (OAI.PowerSaving.Binary.ripple (k i) (v i)))
+                                fun i => 2 ^ k i * OAI.PowerSaving.envelope z (k i)
+OAI.PowerSaving.SeamU8XMHH.engine_U8XMHHx : ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+  (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+  OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl) (OAI.PowerSaving.RAM.bundle cl)
+    (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+    (fun i => (OAI.PowerSaving.Binary.bits (k i)).tape (OAI.PowerSaving.Binary.ripple (k i) (v i))) fun i =>
+    2 ^ k i * OAI.PowerSaving.envelope (1 - 16197706 / 10 ^ 10) (k i)

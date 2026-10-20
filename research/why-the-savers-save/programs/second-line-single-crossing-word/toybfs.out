@@ -1,0 +1,14 @@
+A1 GF 1x1y, 1 copy                                      min paid status changes = 1 | rank P + slot flips = 1 | states 150
+A2 GB 1x1y, 1 copy                                      min paid status changes = 1 | rank P + slot flips = 1 | states 88
+A3 GF 1x1y, no copy, no slot                            min paid status changes = None | rank P + slot flips = 1 | states 1
+B1 GF 1x1y, slot N->S (natural climb), no copy          min paid status changes = 3 | rank P + slot flips = 2 | states 11232
+B2 GF 1x1y, slot N->S (natural climb), 1 copy           min paid status changes = 2 | rank P + slot flips = 2 | states 210317
+B3 GF 1x1y, slot N->N, no copy                          min paid status changes = 2 | rank P + slot flips = 1 | states 4909
+B4 GF 1x1y, slot S->S, no copy                          min paid status changes = 2 | rank P + slot flips = 1 | states 7225
+B5 GB 1x1y, slot N->S, no copy                          min paid status changes = 3 | rank P + slot flips = 2 | states 11232
+B6 GB 1x1y, slot S->N, no copy                          min paid status changes = 3 | rank P + slot flips = 2 | states 11232
+C1 GF 2x2y P=I, 1 copy                                  min paid status changes = 3 | rank P + slot flips = 2 | states 599041
+C2 GF 2x2y P=[[1,1],[1,1]] (rank 1), 1 copy             min paid status changes = 1 | rank P + slot flips = 1 | states 8791
+C3 GB 2x2y P=I, 1 copy                                  min paid status changes = 3 | rank P + slot flips = 2 | states 325180
+C4 GF 2x2y P=[[1,1],[0,1]], 1 copy                      min paid status changes = 3 | rank P + slot flips = 2 | states 600193
+checks/wht42/common/heavy.sh python3 -I toybfs.py   30.17s user 0.25s system 99% cpu 30.641 total

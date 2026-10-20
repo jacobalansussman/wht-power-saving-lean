@@ -1,0 +1,8 @@
+m=2 f=3 mode=facet U=[1, 2] dim A=4 dim N=0 rows outside N=4
+cap, direction w=1 (weight 1): rank mod p = 0; floating rank = 0 (least kept singular value 0, next 0); worst rounding of a minor 0
+cap, direction w=3 (weight 2): rank mod p = 0; floating rank = 0 (least kept singular value 0, next 0); worst rounding of a minor 0
+dem (kernel): rank mod p = 0; floating rank = 0 (least kept singular value 0, next 0); worst rounding of a minor 0
+Traceback (most recent call last):
+  File "facet.py", line 115, in <module>
+    print(f"summary m={m} f={f}: dim N={len(cols)} = {len(U)} x {c}; caps={ {k: v[0] for k, v in done.items()} }; dem={dem[0]}; dem/max cap = {dem[0]/max(v[0] for v in done.values()):.4f}")
+ZeroDivisionError: division by zero

@@ -1,0 +1,11 @@
+E8 hyperplane section: n=64 k=8 omega=8 maxcliques=240 hub-type 56 vs break-even 42.7 -> no
+E8 hyperplane section: n=56 k=8 omega=4 maxcliques=630 hub-type 28 vs break-even 37.3 -> SAVES at hub-type
+P112 size 112
+P112 hyperplane section: n=64 k=8 omega=8 maxcliques=240 hub-type 56 vs break-even 42.7 -> no
+P112 hyperplane section: n=60 k=8 omega=8 maxcliques=90 hub-type 56 vs break-even 40.0 -> no
+P112 hyperplane section: n=56 k=8 omega=7 maxcliques=64 hub-type 49 vs break-even 37.3 -> no
+P112 hyperplane section: n=52 k=8 omega=4 maxcliques=477 hub-type 28 vs break-even 34.7 -> SAVES at hub-type
+P112 hyperplane section: n=48 k=8 omega=8 maxcliques=60 hub-type 56 vs break-even 32.0 -> no
+E7 hyperplane section: n=32 k=6 omega=4 maxcliques=120 hub-type 20 vs break-even 21.3 -> SAVES at hub-type
+E7 hyperplane section: n=31 k=6 omega=7 maxcliques=15 hub-type 35 vs break-even 20.7 -> no
+       82.67 real        80.80 user         0.19 sys

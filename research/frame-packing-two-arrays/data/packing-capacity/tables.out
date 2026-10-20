@@ -1,0 +1,30 @@
+| block m | proved floor L_m | s_max | kappa_m = m/L_m - 1 (net packing per move, ceiling) | 0.1 needs per move | 0.1 per array | 0.01 per move | 0.01 per array |
+|---|---|---|---|---|---|---|---|
+| 2 | 2 | 0.0000 | 0.0000 | 0.0718 (excluded) | 0.134 | 0.0070 (excluded) | 0.014 |
+| 3 | 2.8 | 0.0628 | 0.0714 | 0.1161 (excluded) | 0.312 | 0.0110 | 0.033 |
+| 4 | 3.1538 | 0.1714 | 0.2683 | 0.1487 | 0.518 | 0.0140 | 0.055 |
+| 5 | 2.9917 | 0.3191 | 0.6713 | 0.1746 | 0.743 | 0.0162 | 0.080 |
+| 6 | 2.9729 | 0.3919 | 1.0182 | 0.1962 | 0.984 | 0.0181 | 0.107 |
+| 8 | 2.9447 | 0.4806 | 1.7167 | 0.2311 | 1.502 | 0.0210 | 0.165 |
+| 16 | 2.9447 | 0.6105 | 4.4335 | 0.3195 | 3.874 | 0.0281 | 0.438 |
+| 25 | 2.9447 | 0.6645 | 7.4898 | 0.3797 | 6.881 | 0.0327 | 0.792 |
+| 41 | 2.9447 | 0.7092 | 12.9233 | 0.4497 | 12.718 | 0.0378 | 1.495 |
+| 73 | 2.9447 | 0.7483 | 23.7903 | 0.5358 | 25.468 | 0.0438 | 3.066 |
+
+| two-array target | block | saving | Delta = 2m - M | irreducible live packing P* needed (every gauge) | live ascending packing per move (raw) |
+|---|---|---|---|---|---|
+| 2 in 7  | 4 | 0.096 | 1 | >= 1 | >= 0.143 |
+| 2 in 2,2,2,1 grouped, total rank 7 | 4 | 0.096 | 1 | >= 1 | >= 0.143 |
+| 2 in 6  | 5 | 0.317 | 4 | >= 4 | >= 0.667 |
+| 2 in 7  | 5 | 0.222 | 3 | >= 3 | >= 0.429 |
+| 2 in 8  | 5 | 0.139 | 2 | >= 2 | >= 0.250 |
+| 2 in 8  | 6 | 0.226 | 4 | >= 4 | >= 0.500 |
+| 2 in 9  | 6 | 0.161 | 3 | >= 3 | >= 0.333 |
+| 2 in 10  | 6 | 0.102 | 2 | >= 2 | >= 0.200 |
+
+| W >= 3 target | block | saving | Delta | raw live ascending packing needed | irreducible packing needed |
+|---|---|---|---|---|---|
+| 5 in 14 | 3 | 0.063 | 1 | >= 1 | >= 1 - gamma_m(h) (coding gain of the layout; 0 for one-source/one-sink layouts) |
+| 3 in 10 | 4 | 0.132 | 2 | >= 2 | >= 2 - gamma_m(h) (coding gain of the layout; 0 for one-source/one-sink layouts) |
+| 4 in 13 | 4 | 0.150 | 3 | >= 3 | >= 3 - gamma_m(h) (coding gain of the layout; 0 for one-source/one-sink layouts) |
+| 3 in 7 (widened game only: the engine floor 2.99172 per array excludes it) | 5 | 0.474 | 8 | >= 8 | >= 8 - gamma_m(h) (coding gain of the layout; 0 for one-source/one-sink layouts) |

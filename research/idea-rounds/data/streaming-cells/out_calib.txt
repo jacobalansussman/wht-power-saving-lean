@@ -1,0 +1,40 @@
+  plain block cell (r=0): block 2, p=1, r=0, paid/period=2, delay=0: CORRECT at all 8 forms
+  plain FIR pipeline: block 2, p=1, r=1, paid/period=2, delay=1: CORRECT at all 8 forms
+  plain block cell (r=0): block 3, p=1, r=0, paid/period=3, delay=0: CORRECT at all 64 forms
+  plain FIR pipeline: block 3, p=1, r=2, paid/period=3, delay=2: CORRECT at all 64 forms
+  plain block cell (r=0): block 4, p=1, r=0, paid/period=4, delay=0: CORRECT at all 1024 forms
+  plain FIR pipeline: block 4, p=1, r=3, paid/period=4, delay=3: CORRECT at all 1024 forms
+  plain block cell (r=0): block 5, p=1, r=0, paid/period=5, delay=0: CORRECT at all 32768 forms
+  plain FIR pipeline: block 5, p=1, r=4, paid/period=5, delay=4: CORRECT at all 32768 forms
+  negative control (last stage's move deleted): block 2, p=1, r=1, paid/period=1, delay=1: WRONG at 4 of 8 forms
+  negative control (last stage's move deleted): block 3, p=1, r=2, paid/period=2, delay=2: WRONG at 32 of 64 forms
+  negative control (last stage's move deleted): block 4, p=1, r=3, paid/period=3, delay=3: WRONG at 512 of 1024 forms
+E2. Slice consistency: c < m moves per period can never carry the target [I] (rank argument).
+  block 3: direction sets with c < m whose span holds I: 0 of 28; with c = m: 1 of 35
+  block 4: direction sets with c < m whose span holds I: 0 of 575; with c = m: 2 of 1365
+  block 5: direction sets with c < m whose span holds I: 0 of 36456; with c = m: 6 of 169911
+E3. Class (ii): free scalar IIR inside the cell (a = 3/7) changes nothing; class (iii) hidden paid loop.
+  pipeline + free scalar IIR pre/post filters: block 2, p=1, r=3, paid/period=2, delay=1: CORRECT at all 8 forms
+  pipeline + hidden loop with a paid move: block 2, p=1, r=2, paid/period=3, delay=1: CORRECT at all 8 forms
+  pipeline + free scalar IIR pre/post filters: block 3, p=1, r=4, paid/period=3, delay=2: CORRECT at all 64 forms
+  pipeline + hidden loop with a paid move: block 3, p=1, r=3, paid/period=4, delay=2: CORRECT at all 64 forms
+  pipeline + free scalar IIR pre/post filters: block 4, p=1, r=5, paid/period=4, delay=3: CORRECT at all 1024 forms
+  pipeline + hidden loop with a paid move: block 4, p=1, r=4, paid/period=5, delay=3: CORRECT at all 1024 forms
+       14.40 real        14.37 user         0.02 sys
+            15777792  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2093  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  65  involuntary context switches
+        332356341818  instructions retired
+         59863769100  cycles elapsed
+            11682104  peak memory footprint

@@ -1,0 +1,20 @@
+stage 0 GF pair 1  model G : 112 lines need a crossing, largest count per line   1, sum 112
+stage 0 GF pair 1  model F : 112 lines need a crossing, largest count per line   1, sum 112
+stage 1 GB pair 1  model G : 112 lines need a crossing, largest count per line   1, sum 112
+stage 1 GB pair 1  model F :   1 lines need a crossing, largest count per line 112, sum 112
+stage 2 GF pair 1  model G : 112 lines need a crossing, largest count per line   1, sum 112
+stage 2 GF pair 1  model F :   1 lines need a crossing, largest count per line 112, sum 112
+stage 3 GB pair 2  model G : 112 lines need a crossing, largest count per line   1, sum 112
+stage 3 GB pair 2  model F : 112 lines need a crossing, largest count per line   1, sum 112
+stage 4 GF pair 2  model G : 112 lines need a crossing, largest count per line   1, sum 112
+stage 4 GF pair 2  model F :   1 lines need a crossing, largest count per line 112, sum 112
+stage 5 GB pair 3  model G : 112 lines need a crossing, largest count per line   1, sum 112
+stage 5 GB pair 3  model F : 112 lines need a crossing, largest count per line   1, sum 112
+stage 6 GF pair 3  model G : 112 lines need a crossing, largest count per line   1, sum 112
+stage 6 GF pair 3  model F :   1 lines need a crossing, largest count per line 112, sum 112
+stage 7 GB pair 4  model G : 112 lines need a crossing, largest count per line   1, sum 112
+stage 7 GB pair 4  model F : 112 lines need a crossing, largest count per line   1, sum 112
+stage 8 GF pair 4  model G : 112 lines need a crossing, largest count per line   1, sum 112
+stage 8 GF pair 4  model F :   1 lines need a crossing, largest count per line 112, sum 112
+per replica, the sum over calls of the LARGEST per-line count (a floor on paid register-crossings): {'G': 9, 'F': 564}
+gain of the second line per replica: 896.  Model F floor per replica: 564 (kills: the shared-s lemma returns in every later call)

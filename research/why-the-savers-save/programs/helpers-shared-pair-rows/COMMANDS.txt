@@ -1,0 +1,15 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+d-pair-market, 13 Oct 2026. WORD = ../../bound-check/k-word/data/u8-native/local/CANONICAL-WORD.json.gz ; VP = ../../../wht33/fatlabels/venv/bin/python3
+  python3 -I ../../bound-check/m-anatomy/pricer.py --profile '{"1":848490,"2":112554,"3":148518,"4":53946,"5":23976,"8":2664,"48":11086}' --m 73 --W 33152 --deficit 11840   # control
+  python3 -I u8_blocks.py WORD            # U8's own block partition -> u8_blocks.json (differs from g-search a1)
+  python3 -I u8_target_low.py WORD        # what lifts each target to rank 1 / 2 (all 112 rank-2 stops = own-block pair reads)
+  ablation (U8 block 0):  env OPTS=P,LL SCOPE={faces|all} FIX={1|0} UNSIGNED={1|0} TERMINAL={0|1} TL=60 VP -I pm.py 0   -> abl/
+  market:   env OPTS=P,LL,LF,H FB={0,4,8,12,16} TL=90 VP -I pm.py 0  -> mkt/ ;  FB=8 all blocks -> mkt/fb8_b*.json
+  admissible: env OPTS=P,LL,LF,H FB=8 FACELOW=0 TL=60 DUMP=own/bB_sol.json VP -I pm.py B   (B = 0..13) -> own/
+  Lagrangian bound: env OPTS=P,LL,LF,H LAM=0.5 TL=60 VP -I pm.py B -> lam/
+  19-vs-30: NOFIRSTCAP=1 TL=40 VP -I m1_variant.py 0 4 LL first   (run from this folder: uses g-search's a1 partition)
+  python3 -I price_market.py              # what-if price of 56 fewer helpers

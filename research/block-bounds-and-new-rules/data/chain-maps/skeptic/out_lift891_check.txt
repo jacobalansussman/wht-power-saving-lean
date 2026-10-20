@@ -1,0 +1,8 @@
+generators of H(5,4) (Fermat form) by direct RREF enumeration: 891 (want 891)
+distance spheres (0,1,2,3) -> number of frames: {(1, 42, 336, 512): 891}
+edges (unordered distance-1 pairs): 18711
+Fermat planes: 405, distinct frames: 405
+(is Fermat, number of Fermat neighbours) -> count: {(True, 24): 405, (False, 15): 486}
+Fermat (405) + Teichmueller-RREF (486): exact excess histogram {0: 9963, 1: 4374, 2: 4374}, E = 13122, abar_1 = 131/77, bound 3/abar_1 = 231/131 = 1.763359
+all Teichmueller-RREF (891): exact excess histogram {0: 9963, 1: 4374, 2: 4374}, E = 13122, abar_1 = 131/77, bound 3/abar_1 = 231/131 = 1.763359
+Fermat-Fermat unordered pairs: delta by distance (exact) {1: {1: 4860}, 2: {2: 31590}, 3: {3: 45360}}

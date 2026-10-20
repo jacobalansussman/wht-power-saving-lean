@@ -1,0 +1,8 @@
+=== sample s2 11:45:06
+./batch4.sh: line 4: 61208 Alarm clock: 14         perl -e 'alarm 300; exec @ARGV' $V -I sample_caseB.py s2 150 7 > out/sample_s2.out 2>&1
+exit 142
+=== sample word 11:50:06
+exit 0
+=== xor rflats s2 6x8,7x2 11:50:36
+unit s2 v 111 classes [7, 7, 6, 6, 6, 6, 6, 6, 6, 6] (star cost <= 62), vars 115549 clauses 637753, fit pairs 5851, built 1.1 s
+stopped by agent at 12:09:18 (time box); unresolved

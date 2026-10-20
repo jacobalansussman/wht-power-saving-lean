@@ -1,0 +1,28 @@
+nounix built: 1e6528c3f2c8b10b04f5c5e5a77d4ef71f17a09d35cbe836b14cb3022f1c6779  /content/work/rf-wht/cc/nounix
+=== chown .lake to 65534 Tue Oct 13 21:27:53 UTC 2026 (not following the packages symlink)
+chown rc=0 0s; packages: lrwxrwxrwx 1 nobody nogroup 55 Oct 13 21:16 /content/work/rf-wht/shea/lean/complex588/.lake/packages -> /content/work/r-wht/shea/lean/complex588/.lake/packages
+=== rfwht-WHTC588MHH-nanoda Tue Oct 13 21:27:53 UTC 2026
+  (waited 0s for 16 GB MemAvailable; now 46 GB)
+rc=0
+nanoda kernel accepts the solution
+Lean default kernel accepts the solution
+Your solution is okay!
+=== rfwht-WHTC588MHH-nanoda END rc=0 wall=721s Tue Oct 13 21:39:57 UTC 2026 epoch=1791927597
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 12:01.03
+	Maximum resident set size (kbytes): 8771716
+=== rfwht-WHTC588MHHNeg Tue Oct 13 21:39:57 UTC 2026
+  (waited 0s for 16 GB MemAvailable; now 46 GB)
+rc=1
+=== rfwht-WHTC588MHHNeg END rc=1 wall=283s Tue Oct 13 21:44:41 UTC 2026 epoch=1791927881
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:42.78
+	Maximum resident set size (kbytes): 6793480
+=== rfwht-WHTC588MHH Tue Oct 13 21:44:41 UTC 2026
+  (waited 0s for 16 GB MemAvailable; now 45 GB)
+rc=0
+Lean default kernel accepts the solution
+Your solution is okay!
+=== rfwht-WHTC588MHH END rc=0 wall=327s Tue Oct 13 21:50:08 UTC 2026 epoch=1791928208
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:26.30
+	Maximum resident set size (kbytes): 6785372
+=== END Tue Oct 13 21:50:08 UTC 2026
+EXIT 0

@@ -1,0 +1,30 @@
+{
+ "design": "A5",
+ "k": 5,
+ "n": 15,
+ "max_err": 1.0252595555306951e-14,
+ "exact": true,
+ "paid": {
+  "x": 60,
+  "centre": 30,
+  "carrier": 182,
+  "y": 60
+ },
+ "total": 332,
+ "children": {
+  "carrier:1": 4,
+  "carrier:2": 35,
+  "carrier:3": 36,
+  "centre:5": 6,
+  "x:1": 29,
+  "x:2": 6,
+  "x:3": 5,
+  "x:4": 1,
+  "y:1": 60
+ },
+ "scratch_nonzero_dropped": 122,
+ "free": 42,
+ "carriers": 75,
+ "junk": 120,
+ "seconds": 0.1
+}

@@ -1,0 +1,6 @@
+(1) s-fix model, single carrier E_z=e0 s^T, s=(0,2,-1): diag(M) = ['-1', '-1', '-1'] ; simulate (N=0, E_y=0): True
+(2) fuller model, carrier 0 holds y_old_1: M = [['-1', '1'], ['0', '-1']]  N = [['0', '-1'], ['0', '0']]  diag N zero: True  simulate: True
+    -> target 0 reads source 1 AND the carried y_old_1 in source 0, and cancels x_old_1 from target 1: the carried y_old IS read; s-fix's "M E_y = 0, can never be read" holds only without target->target reads.
+    diag(M) = ['-1', '-1'] -> the diagonal is still nonzero (no saving).
+(3) fuller model, single carrier (random s, r, n<=5): 1681 invertible, 325 admissible (diag N = 0), zero diagonal in M: 0
+(4) permutation door E_z = swap: diag(M) = ['0', '0']  simulate: True

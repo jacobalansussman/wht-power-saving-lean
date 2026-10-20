@@ -1,0 +1,26 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 12:34:11
+[heavy.sh] got slot heavy-2 12:35:19
+== 1+2. replays (my semantics; hub-local = global_k.py ops 1-3 + one-frame check every letter)
+words.txt: B riders + cleanup                  B    hub-local paid 18  EXACT at all 16384 points, scratch clean
+words.txt: B riders + cleanup                  B    wide      paid 18  EXACT at all 16384 points, scratch clean
+  same word, cleanup letters 18-29 removed     B    hub-local paid 15  WRONG: ['X1', 'Y1', 'X2', 'Y2', 'X4', 'Y4']
+  same word, cleanup letters 18-29 removed     B    wide      paid 15  WRONG: ['X1', 'Y1', 'X2', 'Y2', 'X4', 'Y4']
+words.txt: B plain                             B    hub-local paid 18  EXACT at all 16384 points, scratch clean
+words.txt: B plain                             B    wide      paid 18  EXACT at all 16384 points, scratch clean
+words.txt: A riders, cleanup reused (overwrite) A    hub-local paid 13  ILLEGAL: second centre open
+words.txt: A riders, cleanup reused (overwrite) A    wide      paid 18  EXACT at all 16384 points, scratch clean
+A plain (re-typed here, with boundary)         A    hub-local paid 18  EXACT at all 16384 points, scratch clean | boundary: all registers one-frame under new routes
+A plain (re-typed here, with boundary)         A    wide      paid 18  EXACT at all 16384 points, scratch clean | boundary: all registers one-frame under new routes
+B riders + cleanup (re-typed here)             B    hub-local paid 18  EXACT at all 16384 points, scratch clean
+B riders + cleanup (re-typed here)             B    wide      paid 18  EXACT at all 16384 points, scratch clean
+probe: riders, scatter first, no X cleanup     B    hub-local paid 15  WRONG: ['X1', 'Y1', 'X2', 'Y2', 'X4', 'Y4']
+probe: riders, scatter first, no X cleanup     B    wide      paid 15  WRONG: ['X1', 'Y1', 'X2', 'Y2', 'X4', 'Y4']
+
+== 3. lower bound (own search, mod-p exact witnesses, brute-force IP)
+[B] bound on paid moves of EVERY word: 18  (n_z = [6, 6, 0, 6, 0, 0, 0]); max rank per |D|: {2: 6, 4: 6, 6: 4}
+    pair ranks: [([1, 2], 4), ([1, 3], 6), ([1, 4], 4), ([1, 5], 6), ([1, 6], 6), ([1, 7], 6), ([2, 3], 6), ([2, 4], 4), ([2, 5], 6), ([2, 6], 6), ([2, 7], 6), ([3, 4], 6), ([3, 5], 0), ([3, 6], 0), ([3, 7], 0), ([4, 5], 6), ([4, 6], 6), ([4, 7], 6), ([5, 6], 0), ([5, 7], 0), ([6, 7], 0)]
+[A] bound on paid moves of EVERY word: 18  (n_z = [6, 6, 0, 6, 0, 0, 0]); max rank per |D|: {2: 6, 4: 6, 6: 6}
+    pair ranks: [([1, 2], 2), ([1, 3], 6), ([1, 4], 2), ([1, 5], 6), ([1, 6], 6), ([1, 7], 6), ([2, 3], 6), ([2, 4], 2), ([2, 5], 6), ([2, 6], 6), ([2, 7], 6), ([3, 4], 6), ([3, 5], 0), ([3, 6], 0), ([3, 7], 0), ([4, 5], 6), ([4, 6], 6), ([4, 7], 6), ([5, 6], 0), ([5, 7], 0), ([6, 7], 0)]
+real 731.63
+user 635.15
+sys 9.28

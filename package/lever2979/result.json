@@ -1,0 +1,271 @@
+{
+  "format": "certificate-package/1 (as community/*/result.json of jacobalansussman/wht-power-saving-lean)",
+  "name": "lever2979",
+  "suffix": "L2979",
+  "title": "The community's #2979 circuit with the recursion lever (half cut: 16,086 heads cut by 24 of their 48 axes, target 49), on the mixed-target recursion",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "numerator": 17556473,
+  "negative_numerator": 17556474,
+  "saving": "1.7556473e-3",
+  "exponent": "1 - 17556473/10^10",
+  "exponents": {
+    "statement": "1 - 17556473/10^10",
+    "seam_alpha": "1 - 1755647301/10^12",
+    "rate_point": "1 - 1755647302/10^12",
+    "mixed_root": "1.75564731529e-3"
+  },
+  "mode": "add",
+  "requires": [
+    "u8x0hq"
+  ],
+  "lakefile_add": [],
+  "tree_change": "none: every new file is under Work/ (lean_lib Work) or comparator/",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainL2979",
+    "OAI.PowerSaving.convolution_mainL2979"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainL2979",
+    "OAI.PowerSaving.convolution_mainL2979",
+    "OAI.PowerSaving.RAM.hillsL2979_program",
+    "OAI.PowerSaving.MX.L2979.engine"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierL2979.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierL2979Neg.UniformFourierChallenge",
+  "solution_module": "Work.FourierL2979.Main",
+  "axioms_file": "Work/FourierL2979/Axioms.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentL2979",
+  "build_targets": [
+    "Work.L2979.Stmt",
+    "Work.L2979.Engine",
+    "Work.FourierL2979.Main",
+    "Work.FourierL2979.UniformFourierChallenge",
+    "Work.FourierL2979Neg.UniformFourierChallenge",
+    "Work.FourierL2979.Axioms"
+  ],
+  "lean_controls": [
+    {
+      "name": "heads-and-residuals-one-step-too-far",
+      "file": "controls/Heads2979Neg.lean",
+      "expect": "compiles",
+      "what": "Lean's kernel decides that the host table does not have 16,087 heads and that not every residual is at least 5"
+    },
+    {
+      "name": "rate-fact-one-grid-step-higher",
+      "file": "controls/Rate2979SharpCtl.lean",
+      "expect": "compiles",
+      "what": "the rate fact is false at 1 - 17556474/10^10 and at every larger saving (rate2979_sharp, rate2979_fails)"
+    },
+    {
+      "name": "16087-heads",
+      "file": "controls/NegHeads.lean",
+      "expect": "fails",
+      "what": "claims 16,087 heads; the kernel refutes it"
+    },
+    {
+      "name": "one-chunk-count-too-high",
+      "file": "controls/NegGlob.lean",
+      "expect": "fails",
+      "what": "claims one host-table chunk count one higher; the kernel refutes it"
+    }
+  ],
+  "comparator": {
+    "positive": "overlay/comparator/fourier-l2979.json",
+    "negative": "overlay/comparator/fourier-l2979-neg.json"
+  },
+  "circuit": {
+    "community_pr": "#2979",
+    "head": "be191346 (merged; read on main bb4bccbf)",
+    "replicas": 74,
+    "calls": 666,
+    "arrays_W": 66304,
+    "roles": 271728,
+    "paid_profile_uniform": {
+      "1": 1645680,
+      "2": 470196,
+      "3": 159468,
+      "4": 71928,
+      "5": 13716,
+      "8": 5328,
+      "48": 28190
+    },
+    "heads": 16086,
+    "other_rank48": 12104,
+    "paid_profile_half_cut": {
+      "1": 1645680,
+      "2": 470196,
+      "3": 159468,
+      "4": 71928,
+      "5": 13716,
+      "8": 5328,
+      "24": 16086,
+      "48": 12104
+    },
+    "targets_half_cut": {
+      "73": 50218,
+      "49": 16086
+    },
+    "community_figure_b": "1.7290340e-3"
+  },
+  "modules": 284,
+  "verifier_pr_files": {
+    "unmerged": 583,
+    "merged": 449,
+    "limit": 500,
+    "note": "581 closure modules + Submission.lean + manifest.json; merged by h-bos's bos_merge.py (chain level) to 447 + 2"
+  },
+  "checks": [
+    {
+      "name": "build",
+      "machine": "Colab C1",
+      "verdict": "builds",
+      "log": "logs/2026-10-19-build/build-b/engine.log",
+      "detail": "lake build of the whole closure in a copy of the U8X0HQ stack: phase A (host-table data, 41 jobs, 212 s), phase B (engine, network, words, chain, side checks; 9,511 jobs, 1,204 s, at most 9.5 GB), rc 0"
+    },
+    {
+      "name": "final-run-build",
+      "machine": "Colab C1",
+      "verdict": "up to date",
+      "log": "logs/2026-10-19-build/final.out",
+      "detail": "the fixed final run (isk-final.sh) installs 0 new / 286 identical files and finds every target built (9,507 jobs)"
+    },
+    {
+      "name": "axioms",
+      "machine": "Colab C1",
+      "verdict": "standard only",
+      "log": "logs/2026-10-19-build/l2979/axioms.log",
+      "detail": "#print axioms of transform_mainL2979, convolution_mainL2979, hillsL2979_program: propext, Classical.choice, Quot.sound"
+    },
+    {
+      "name": "axioms-extra",
+      "machine": "Colab C1",
+      "verdict": "standard only",
+      "log": "logs/2026-10-19-build/l2979/axioms-extra.log",
+      "detail": "MX.L2979.engine, EngineStmt.lift, SeamL2979.engine_L2979, envelope_program_geL2979, alphaL2979_lt_target, alpha_thetaL2979 and both final theorems: propext, Classical.choice, Quot.sound"
+    },
+    {
+      "name": "source-greps",
+      "machine": "Colab C1",
+      "verdict": "0 and 0",
+      "log": "logs/2026-10-19-build/l2979/checked-lean-files.txt",
+      "detail": "282 new Lean files (all but OpenAI's two challenge statements) grepped for sorry/admit and for axiom, native_decide, unsafe, implemented_by, extern: 0 lines each (5 mentions inside backquoted comments, not uses)"
+    },
+    {
+      "name": "statement",
+      "machine": "Colab C1",
+      "verdict": "byte-identical",
+      "log": "logs/2026-10-19-build/l2979/derived-FourierL2979.lean",
+      "detail": "both challenge files equal the derivation from OpenAI's UniformFourier statement (fd4aeeb2) with only the exponent (17556473, negative 17556474) and names changed"
+    },
+    {
+      "name": "compare-positive",
+      "machine": "Colab C1",
+      "verdict": "PASS",
+      "log": "logs/2026-10-19-build/l2979/compare-pos.log",
+      "detail": "tools/Compare.lean (e48d6d3b) against the challenge at 1 - 17556473/10^10 (158 s, 15.9 GB)"
+    },
+    {
+      "name": "compare-negative",
+      "machine": "Colab C1",
+      "verdict": "FAIL (expected)",
+      "log": "logs/2026-10-19-build/l2979/compare-neg.log",
+      "detail": "one grid step higher, 1 - 17556474/10^10: decimalExponentL2979 differs"
+    },
+    {
+      "name": "comparator-positive",
+      "machine": "Colab C1",
+      "verdict": "accepted",
+      "log": "logs/2026-10-19-build/l2979/cmp/l2979-pos.log",
+      "detail": "official comparator in the stand-in jail (uid 65534): nanoda kernel and Lean default kernel accept (2,758 s, 15.0 GB)"
+    },
+    {
+      "name": "comparator-negative",
+      "machine": "Colab C1",
+      "verdict": "rejected (expected)",
+      "log": "logs/2026-10-19-build/l2979/cmp/l2979-neg.log",
+      "detail": "one grid step higher: \"Const does not match between challenge and target OAI.PowerSaving.decimalExponentL2979\""
+    },
+    {
+      "name": "pr-files",
+      "machine": "Colab C1",
+      "verdict": "449 of 500",
+      "log": "logs/2026-10-19-build/L2979-bos.out",
+      "detail": "the closure of Work.FourierL2979.Main has 581 modules (583 pull-request files with Submission.lean and the manifest), over the verifier's 500-file limit; h-bos's bos_merge.py merges it to 447 modules (449 files, largest 3.5 MB of 20 MB, total 17.5 MB of 150 MB); static check: every member verbatim once, acyclic"
+    },
+    {
+      "name": "bigospeedrun-merged-lean",
+      "machine": "Colab C1",
+      "verdict": "accepted",
+      "log": "logs/2026-10-19-build/bos-L2979/lean.log",
+      "detail": "the verifier (c92b9b6, profile direct, UniformFourier233.lean + Race.bound at 17556473/10^10) re-created offline: the merged stage compiled from source, Lean default kernel accepts (5,108 s, 10.0 GB)"
+    },
+    {
+      "name": "bigospeedrun-merged-audit",
+      "machine": "Colab C1",
+      "verdict": "standard axioms",
+      "log": "logs/2026-10-19-build/bos-L2979/audit.log",
+      "detail": "'Race.bound' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "name": "bigospeedrun-merged-nanoda",
+      "machine": "Colab C1",
+      "verdict": "accepted",
+      "log": "logs/2026-10-19-build/bos-L2979/nanoda.log",
+      "detail": "the comparator with nanoda on the merged stage: nanoda kernel and Lean default kernel accept (2,380 s, 14.8 GB)"
+    },
+    {
+      "name": "bigospeedrun-merged-negative",
+      "machine": "Colab C1",
+      "verdict": "rejected (expected)",
+      "log": "logs/2026-10-19-build/bos-L2979neg/lean.log",
+      "detail": "the merged stage at 17556474/10^10 (one grid step higher): the adapter does not compile (Submission.lean:28:78 unsolved goals), the comparator rejects"
+    },
+    {
+      "name": "merge-identity",
+      "machine": "Colab C1",
+      "verdict": "PASS",
+      "log": "logs/2026-10-19-build/fast-L2979/compare.txt",
+      "detail": "h-bos's identity check: the 21,650 non-auxiliary constants of the merged stage and of the built tree agree; 9,584 theorems with the same statement and the identical proof term; the final theorems' axioms are the same"
+    },
+    {
+      "name": "bigospeedrun-unmerged",
+      "machine": "Colab C5",
+      "verdict": "accepted (3 phases)",
+      "log": "logs/2026-10-19-bos-unmerged/bos-L2979U/nanoda.log",
+      "detail": "the same re-creation on the unmerged 581-module stage: lean (4,230 s), audit and nanoda (1,955 s) accept"
+    },
+    {
+      "name": "bigospeedrun-unmerged-negative",
+      "machine": "Colab C5",
+      "verdict": "rejected (expected)",
+      "log": "logs/2026-10-19-bos-unmerged/bos-L2979Uneg/lean.log",
+      "detail": "the unmerged stage one grid step higher is rejected"
+    },
+    {
+      "name": "controls",
+      "machine": "Colab C1",
+      "verdict": "all as expected",
+      "log": "logs/controls/ctl.out",
+      "detail": "Heads2979Neg and Rate2979SharpCtl compile (axioms propext / standard); NegHeads and NegGlob fail to compile"
+    },
+    {
+      "name": "regenerate",
+      "machine": "Mac (Python, 3 min, 0.26 GB)",
+      "verdict": "all as expected",
+      "log": "logs/regenerate/REGENERATE.out",
+      "detail": "generators/REGENERATE.sh: 174 overlay files regenerated byte-identical, 0 different; every generator refuses one unit too high"
+    }
+  ]
+}

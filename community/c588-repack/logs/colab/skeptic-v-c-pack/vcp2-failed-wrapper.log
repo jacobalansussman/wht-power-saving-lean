@@ -1,0 +1,21 @@
+VCP2 START Tue Oct 13 19:08:56 UTC 2026 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 status_lines=39
+ro test: touch: cannot touch '.vcp-rotest': Read-only file system
+read-only-ok
+mathlib git: d13f23b723b8a846827a245b89c10fc7d3f11612 https://github.com/leanprover-community/mathlib4.git
+=== STEP nobuild START Tue Oct 13 19:08:57 UTC 2026 cmd: RO lake build --no-build Work.FourierC588.Main Work.FourierC588.UniformFourierChallenge Work.FourierC588Neg.UniformFourierChallenge Work.GCert.Data.C588Controls Work.FourierC588.Axioms
+=== STEP nobuild END rc=127 wall=0s maxrss_kb=1024 last: /usr/bin/time: cannot run RO: No such file or directory
+gate ok after 20s heavy=2 avail=46G
+=== STEP probe-main START Tue Oct 13 19:09:18 UTC 2026 cmd: RO lake env lean /content/work/v-c-pack/ProbeMain.lean
+=== STEP probe-main END rc=127 wall=0s maxrss_kb=1024 last: /usr/bin/time: cannot run RO: No such file or directory
+gate ok after 0s heavy=2 avail=46G
+=== STEP probe-chal START Tue Oct 13 19:09:18 UTC 2026 cmd: RO lake env lean /content/work/v-c-pack/ProbeChal.lean
+=== STEP probe-chal END rc=127 wall=0s maxrss_kb=1152 last: /usr/bin/time: cannot run RO: No such file or directory
+gate ok after 0s heavy=2 avail=46G
+=== STEP compare-pos START Tue Oct 13 19:09:18 UTC 2026 cmd: RO lake env lean --run tools/Compare.lean Work.FourierC588.UniformFourierChallenge Work.FourierC588.Main OAI.PowerSaving.transform_mainC588 OAI.PowerSaving.convolution_mainC588
+=== STEP compare-pos END rc=127 wall=0s maxrss_kb=1024 last: /usr/bin/time: cannot run RO: No such file or directory
+gate ok after 0s heavy=2 avail=46G
+=== STEP compare-neg START Tue Oct 13 19:09:18 UTC 2026 cmd: RO lake env lean --run tools/Compare.lean Work.FourierC588Neg.UniformFourierChallenge Work.FourierC588.Main OAI.PowerSaving.transform_mainC588 OAI.PowerSaving.convolution_mainC588
+=== STEP compare-neg END rc=127 wall=0s maxrss_kb=1024 last: /usr/bin/time: cannot run RO: No such file or directory
+(compare-neg must be nonzero)
+VCP2 END Tue Oct 13 19:09:18 UTC 2026 status_lines=39 oleans=355
+EXIT 0

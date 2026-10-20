@@ -1,0 +1,406 @@
+[timing lock] waiting for timing lock 04:47:00
+[timing lock] got lock 04:47:00; load: { 34.35 35.08 37.20 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK FFTW-d NEON pipeline                     max abs err 3.553e-15  rel err 2.234e-16  (tol 1.0e-13) PASS
+CHECK KFR-d pipeline                           max abs err 1.776e-15  rel err 1.117e-16  (tol 1.0e-13) PASS
+CHECK SME-A (NEON acc)                         max abs err 1.776e-15  rel err 1.117e-16  (tol 1.0e-13) PASS
+CHECK SME-F (acc in last pass)                 max abs err 1.776e-15  rel err 1.117e-16  (tol 1.0e-13) PASS
+## welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  vDSP-D split pipeline              1.7755
+rep  0  FFTW-d NEON pipeline               1.6786
+rep  0  KFR-d pipeline                     1.7310
+rep  0  SME-A (NEON acc)                   1.3163
+rep  0  SME-F (acc in last pass)           1.1342
+rep  1  FFTW-d NEON pipeline               1.6650
+rep  1  KFR-d pipeline                     1.7220
+rep  1  SME-A (NEON acc)                   1.3129
+rep  1  SME-F (acc in last pass)           1.1170
+rep  1  vDSP-D split pipeline              1.7731
+rep  2  KFR-d pipeline                     1.7284
+rep  2  SME-A (NEON acc)                   1.3115
+rep  2  SME-F (acc in last pass)           1.1174
+rep  2  vDSP-D split pipeline              1.7717
+rep  2  FFTW-d NEON pipeline               1.6703
+rep  3  SME-A (NEON acc)                   1.3140
+rep  3  SME-F (acc in last pass)           1.1144
+rep  3  vDSP-D split pipeline              1.7728
+rep  3  FFTW-d NEON pipeline               1.6758
+rep  3  KFR-d pipeline                     1.7276
+rep  4  SME-F (acc in last pass)           1.1150
+rep  4  vDSP-D split pipeline              1.7733
+rep  4  FFTW-d NEON pipeline               1.6722
+rep  4  KFR-d pipeline                     1.7296
+rep  4  SME-A (NEON acc)                   1.3175
+rep  5  vDSP-D split pipeline              1.7701
+rep  5  FFTW-d NEON pipeline               1.6727
+rep  5  KFR-d pipeline                     1.7297
+rep  5  SME-A (NEON acc)                   1.3069
+rep  5  SME-F (acc in last pass)           1.1142
+rep  6  FFTW-d NEON pipeline               1.6734
+rep  6  KFR-d pipeline                     1.7280
+rep  6  SME-A (NEON acc)                   1.3076
+rep  6  SME-F (acc in last pass)           1.1155
+rep  6  vDSP-D split pipeline              1.7746
+rep  7  KFR-d pipeline                     1.7270
+rep  7  SME-A (NEON acc)                   1.3095
+rep  7  SME-F (acc in last pass)           1.1170
+rep  7  vDSP-D split pipeline              1.7673
+rep  7  FFTW-d NEON pipeline               1.6666
+rep  8  SME-A (NEON acc)                   1.3110
+rep  8  SME-F (acc in last pass)           1.1184
+rep  8  vDSP-D split pipeline              1.7752
+rep  8  FFTW-d NEON pipeline               1.6770
+rep  8  KFR-d pipeline                     1.7287
+RESULT welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383 vDSP-D split pipeline        best     1.7673  median     1.7731  ns/input sample  (calls/rep 30)
+RESULT welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383 FFTW-d NEON pipeline         best     1.6650  median     1.6727  ns/input sample  (calls/rep 32)
+RESULT welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383 KFR-d pipeline               best     1.7220  median     1.7284  ns/input sample  (calls/rep 31)
+RESULT welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383 SME-A (NEON acc)             best     1.3069  median     1.3115  ns/input sample  (calls/rep 40)
+RESULT welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383 SME-F (acc in last pass)     best     1.1142  median     1.1170  ns/input sample  (calls/rep 48)
+MS vDSP-D split pipeline        best    7.413 median    7.437 ms/call
+MS FFTW-d NEON pipeline         best    6.983 median    7.016 ms/call
+MS KFR-d pipeline               best    7.223 median    7.250 ms/call
+MS SME-A (NEON acc)             best    5.481 median    5.501 ms/call
+MS SME-F (acc in last pass)     best    4.673 median    4.685 ms/call
+VS SME-A (NEON acc)             vs KFR-d: best  -24.1 %  median  -24.1 %
+VS SME-F (acc in last pass)     vs KFR-d: best  -35.3 %  median  -35.4 %
+VS FFTW-d NEON pipeline         vs vDSP: best   -5.8 %  median   -5.7 %
+VS KFR-d pipeline               vs vDSP: best   -2.6 %  median   -2.5 %
+VS SME-A (NEON acc)             vs vDSP: best  -26.1 %  median  -26.0 %
+VS SME-F (acc in last pass)     vs vDSP: best  -37.0 %  median  -37.0 %
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK FFTW-d NEON pipeline                     max abs err 1.066e-14  rel err 3.495e-16  (tol 1.0e-13) PASS
+CHECK KFR-d pipeline                           max abs err 1.066e-14  rel err 3.495e-16  (tol 1.0e-13) PASS
+CHECK SME-A (NEON acc)                         max abs err 3.553e-15  rel err 1.165e-16  (tol 1.0e-13) PASS
+CHECK SME-D (DIF prep, acc in pass)            max abs err 3.553e-15  rel err 1.165e-16  (tol 1.0e-13) PASS
+## welch fp64 N=1024 nov=512 hann C=1 L=2^22 (32 MiB) nseg=8191  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  vDSP-D split pipeline              1.9131
+rep  0  FFTW-d NEON pipeline               1.9994
+rep  0  KFR-d pipeline                     2.1419
+rep  0  SME-A (NEON acc)                   1.7451
+rep  0  SME-D (DIF prep, acc in pass)       1.2996
+rep  1  FFTW-d NEON pipeline               2.0178
+rep  1  KFR-d pipeline                     2.1462
+rep  1  SME-A (NEON acc)                   1.7993
+rep  1  SME-D (DIF prep, acc in pass)       1.3185
+rep  1  vDSP-D split pipeline              1.9502
+rep  2  KFR-d pipeline                     2.1352
+rep  2  SME-A (NEON acc)                   1.7625
+rep  2  SME-D (DIF prep, acc in pass)       1.3076
+rep  2  vDSP-D split pipeline              1.9076
+rep  2  FFTW-d NEON pipeline               2.0053
+rep  3  SME-A (NEON acc)                   1.7541
+rep  3  SME-D (DIF prep, acc in pass)       1.2959
+rep  3  vDSP-D split pipeline              1.9134
+rep  3  FFTW-d NEON pipeline               1.9936
+rep  3  KFR-d pipeline                     2.1379
+rep  4  SME-D (DIF prep, acc in pass)       1.3083
+rep  4  vDSP-D split pipeline              1.9157
+rep  4  FFTW-d NEON pipeline               2.0021
+rep  4  KFR-d pipeline                     2.1417
+rep  4  SME-A (NEON acc)                   1.7483
+rep  5  vDSP-D split pipeline              1.9095
+rep  5  FFTW-d NEON pipeline               1.9939
+rep  5  KFR-d pipeline                     2.1325
+rep  5  SME-A (NEON acc)                   1.7668
+rep  5  SME-D (DIF prep, acc in pass)       1.2943
+rep  6  FFTW-d NEON pipeline               1.9947
+rep  6  KFR-d pipeline                     2.1401
+rep  6  SME-A (NEON acc)                   1.7440
+rep  6  SME-D (DIF prep, acc in pass)       1.2788
+rep  6  vDSP-D split pipeline              1.9095
+rep  7  KFR-d pipeline                     2.1419
+rep  7  SME-A (NEON acc)                   1.7440
+rep  7  SME-D (DIF prep, acc in pass)       1.2762
+rep  7  vDSP-D split pipeline              1.9109
+rep  7  FFTW-d NEON pipeline               1.9969
+rep  8  SME-A (NEON acc)                   1.7470
+rep  8  SME-D (DIF prep, acc in pass)       1.2942
+rep  8  vDSP-D split pipeline              1.9138
+rep  8  FFTW-d NEON pipeline               1.9820
+rep  8  KFR-d pipeline                     2.1389
+RESULT welch fp64 N=1024 nov=512 hann C=1 L=2^22 (32 MiB) nseg=8191 vDSP-D split pipeline        best     1.9076  median     1.9131  ns/input sample  (calls/rep 28)
+RESULT welch fp64 N=1024 nov=512 hann C=1 L=2^22 (32 MiB) nseg=8191 FFTW-d NEON pipeline         best     1.9820  median     1.9969  ns/input sample  (calls/rep 27)
+RESULT welch fp64 N=1024 nov=512 hann C=1 L=2^22 (32 MiB) nseg=8191 KFR-d pipeline               best     2.1325  median     2.1401  ns/input sample  (calls/rep 25)
+RESULT welch fp64 N=1024 nov=512 hann C=1 L=2^22 (32 MiB) nseg=8191 SME-A (NEON acc)             best     1.7440  median     1.7483  ns/input sample  (calls/rep 31)
+RESULT welch fp64 N=1024 nov=512 hann C=1 L=2^22 (32 MiB) nseg=8191 SME-D (DIF prep, acc in pass) best     1.2762  median     1.2959  ns/input sample  (calls/rep 41)
+MS vDSP-D split pipeline        best    8.001 median    8.024 ms/call
+MS FFTW-d NEON pipeline         best    8.313 median    8.375 ms/call
+MS KFR-d pipeline               best    8.944 median    8.976 ms/call
+MS SME-A (NEON acc)             best    7.315 median    7.333 ms/call
+MS SME-D (DIF prep, acc in pass) best    5.353 median    5.435 ms/call
+VS SME-A (NEON acc)             vs KFR-d: best  -18.2 %  median  -18.3 %
+VS SME-D (DIF prep, acc in pass) vs KFR-d: best  -40.2 %  median  -39.4 %
+VS FFTW-d NEON pipeline         vs vDSP: best   +3.9 %  median   +4.4 %
+VS KFR-d pipeline               vs vDSP: best  +11.8 %  median  +11.9 %
+VS SME-A (NEON acc)             vs vDSP: best   -8.6 %  median   -8.6 %
+VS SME-D (DIF prep, acc in pass) vs vDSP: best  -33.1 %  median  -32.3 %
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK FFTW-d NEON pipeline                     max abs err 7.105e-15  rel err 1.283e-16  (tol 1.0e-13) PASS
+CHECK KFR-d pipeline                           max abs err 3.331e-16  rel err 6.012e-18  (tol 1.0e-13) PASS
+CHECK SME-A (NEON acc)                         max abs err 7.105e-15  rel err 1.283e-16  (tol 1.0e-13) PASS
+CHECK SME-D (DIF prep, acc in pass)            max abs err 7.105e-15  rel err 1.283e-16  (tol 1.0e-13) PASS
+## welch fp64 N=2048 nov=1024 hann C=1 L=2^22 (32 MiB) nseg=4095  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  vDSP-D split pipeline              2.3450
+rep  0  FFTW-d NEON pipeline               2.2375
+rep  0  KFR-d pipeline                     2.3441
+rep  0  SME-A (NEON acc)                   2.1764
+rep  0  SME-D (DIF prep, acc in pass)       1.9057
+rep  1  FFTW-d NEON pipeline               2.2414
+rep  1  KFR-d pipeline                     2.4530
+rep  1  SME-A (NEON acc)                   2.1610
+rep  1  SME-D (DIF prep, acc in pass)       1.9090
+rep  1  vDSP-D split pipeline              2.3569
+rep  2  KFR-d pipeline                     2.3835
+rep  2  SME-A (NEON acc)                   2.1853
+rep  2  SME-D (DIF prep, acc in pass)       1.8806
+rep  2  vDSP-D split pipeline              2.3534
+rep  2  FFTW-d NEON pipeline               2.2485
+rep  3  SME-A (NEON acc)                   2.1685
+rep  3  SME-D (DIF prep, acc in pass)       1.8803
+rep  3  vDSP-D split pipeline              2.3604
+rep  3  FFTW-d NEON pipeline               2.2315
+rep  3  KFR-d pipeline                     2.3454
+rep  4  SME-D (DIF prep, acc in pass)       1.9076
+rep  4  vDSP-D split pipeline              2.3463
+rep  4  FFTW-d NEON pipeline               2.2410
+rep  4  KFR-d pipeline                     2.3502
+rep  4  SME-A (NEON acc)                   2.1744
+rep  5  vDSP-D split pipeline              2.3515
+rep  5  FFTW-d NEON pipeline               2.2354
+rep  5  KFR-d pipeline                     2.3418
+rep  5  SME-A (NEON acc)                   2.1741
+rep  5  SME-D (DIF prep, acc in pass)       1.8992
+rep  6  FFTW-d NEON pipeline               2.2286
+rep  6  KFR-d pipeline                     2.3612
+rep  6  SME-A (NEON acc)                   2.1659
+rep  6  SME-D (DIF prep, acc in pass)       1.9063
+rep  6  vDSP-D split pipeline              2.3615
+rep  7  KFR-d pipeline                     2.3916
+rep  7  SME-A (NEON acc)                   2.1743
+rep  7  SME-D (DIF prep, acc in pass)       1.9061
+rep  7  vDSP-D split pipeline              2.3524
+rep  7  FFTW-d NEON pipeline               2.2324
+rep  8  SME-A (NEON acc)                   2.1769
+rep  8  SME-D (DIF prep, acc in pass)       1.8919
+rep  8  vDSP-D split pipeline              2.3679
+rep  8  FFTW-d NEON pipeline               2.2281
+rep  8  KFR-d pipeline                     2.3553
+RESULT welch fp64 N=2048 nov=1024 hann C=1 L=2^22 (32 MiB) nseg=4095 vDSP-D split pipeline        best     2.3450  median     2.3534  ns/input sample  (calls/rep 23)
+RESULT welch fp64 N=2048 nov=1024 hann C=1 L=2^22 (32 MiB) nseg=4095 FFTW-d NEON pipeline         best     2.2281  median     2.2354  ns/input sample  (calls/rep 24)
+RESULT welch fp64 N=2048 nov=1024 hann C=1 L=2^22 (32 MiB) nseg=4095 KFR-d pipeline               best     2.3418  median     2.3553  ns/input sample  (calls/rep 23)
+RESULT welch fp64 N=2048 nov=1024 hann C=1 L=2^22 (32 MiB) nseg=4095 SME-A (NEON acc)             best     2.1610  median     2.1743  ns/input sample  (calls/rep 25)
+RESULT welch fp64 N=2048 nov=1024 hann C=1 L=2^22 (32 MiB) nseg=4095 SME-D (DIF prep, acc in pass) best     1.8803  median     1.9057  ns/input sample  (calls/rep 28)
+MS vDSP-D split pipeline        best    9.836 median    9.871 ms/call
+MS FFTW-d NEON pipeline         best    9.345 median    9.376 ms/call
+MS KFR-d pipeline               best    9.822 median    9.879 ms/call
+MS SME-A (NEON acc)             best    9.064 median    9.120 ms/call
+MS SME-D (DIF prep, acc in pass) best    7.887 median    7.993 ms/call
+VS SME-A (NEON acc)             vs KFR-d: best   -7.7 %  median   -7.7 %
+VS SME-D (DIF prep, acc in pass) vs KFR-d: best  -19.7 %  median  -19.1 %
+VS FFTW-d NEON pipeline         vs vDSP: best   -5.0 %  median   -5.0 %
+VS KFR-d pipeline               vs vDSP: best   -0.1 %  median   +0.1 %
+VS SME-A (NEON acc)             vs vDSP: best   -7.8 %  median   -7.6 %
+VS SME-D (DIF prep, acc in pass) vs vDSP: best  -19.8 %  median  -19.0 %
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK FFTW-d NEON pipeline                     max abs err 2.842e-14  rel err 2.847e-16  (tol 1.0e-13) PASS
+CHECK KFR-d pipeline                           max abs err 1.421e-14  rel err 1.423e-16  (tol 1.0e-13) PASS
+CHECK SME-A (NEON acc)                         max abs err 2.842e-14  rel err 2.847e-16  (tol 1.0e-13) PASS
+CHECK SME-F (acc in last pass)                 max abs err 2.842e-14  rel err 2.847e-16  (tol 1.0e-13) PASS
+## welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  vDSP-D split pipeline              2.9404
+rep  0  FFTW-d NEON pipeline               2.4058
+rep  0  KFR-d pipeline                     2.6233
+rep  0  SME-A (NEON acc)                   1.6209
+rep  0  SME-F (acc in last pass)           1.4095
+rep  1  FFTW-d NEON pipeline               2.3992
+rep  1  KFR-d pipeline                     2.6072
+rep  1  SME-A (NEON acc)                   1.6204
+rep  1  SME-F (acc in last pass)           1.4018
+rep  1  vDSP-D split pipeline              2.9318
+rep  2  KFR-d pipeline                     2.6148
+rep  2  SME-A (NEON acc)                   1.6173
+rep  2  SME-F (acc in last pass)           1.4015
+rep  2  vDSP-D split pipeline              2.9444
+rep  2  FFTW-d NEON pipeline               2.4068
+rep  3  SME-A (NEON acc)                   1.6171
+rep  3  SME-F (acc in last pass)           1.3977
+rep  3  vDSP-D split pipeline              2.9423
+rep  3  FFTW-d NEON pipeline               2.4098
+rep  3  KFR-d pipeline                     2.6378
+rep  4  SME-F (acc in last pass)           1.4019
+rep  4  vDSP-D split pipeline              2.9322
+rep  4  FFTW-d NEON pipeline               2.4033
+rep  4  KFR-d pipeline                     2.6366
+rep  4  SME-A (NEON acc)                   1.6169
+rep  5  vDSP-D split pipeline              2.9318
+rep  5  FFTW-d NEON pipeline               2.3972
+rep  5  KFR-d pipeline                     2.6147
+rep  5  SME-A (NEON acc)                   1.6188
+rep  5  SME-F (acc in last pass)           1.4004
+rep  6  FFTW-d NEON pipeline               2.3980
+rep  6  KFR-d pipeline                     2.6127
+rep  6  SME-A (NEON acc)                   1.6170
+rep  6  SME-F (acc in last pass)           1.3960
+rep  6  vDSP-D split pipeline              2.9426
+rep  7  KFR-d pipeline                     2.6049
+rep  7  SME-A (NEON acc)                   1.6223
+rep  7  SME-F (acc in last pass)           1.4031
+rep  7  vDSP-D split pipeline              2.9406
+rep  7  FFTW-d NEON pipeline               2.4002
+rep  8  SME-A (NEON acc)                   1.6202
+rep  8  SME-F (acc in last pass)           1.4031
+rep  8  vDSP-D split pipeline              2.9458
+rep  8  FFTW-d NEON pipeline               2.4181
+rep  8  KFR-d pipeline                     2.6285
+RESULT welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047 vDSP-D split pipeline        best     2.9318  median     2.9406  ns/input sample  (calls/rep 18)
+RESULT welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047 FFTW-d NEON pipeline         best     2.3972  median     2.4033  ns/input sample  (calls/rep 22)
+RESULT welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047 KFR-d pipeline               best     2.6049  median     2.6148  ns/input sample  (calls/rep 21)
+RESULT welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047 SME-A (NEON acc)             best     1.6169  median     1.6188  ns/input sample  (calls/rep 33)
+RESULT welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047 SME-F (acc in last pass)     best     1.3960  median     1.4018  ns/input sample  (calls/rep 38)
+MS vDSP-D split pipeline        best   12.297 median   12.334 ms/call
+MS FFTW-d NEON pipeline         best   10.054 median   10.080 ms/call
+MS KFR-d pipeline               best   10.926 median   10.967 ms/call
+MS SME-A (NEON acc)             best    6.782 median    6.790 ms/call
+MS SME-F (acc in last pass)     best    5.855 median    5.879 ms/call
+VS SME-A (NEON acc)             vs KFR-d: best  -37.9 %  median  -38.1 %
+VS SME-F (acc in last pass)     vs KFR-d: best  -46.4 %  median  -46.4 %
+VS FFTW-d NEON pipeline         vs vDSP: best  -18.2 %  median  -18.3 %
+VS KFR-d pipeline               vs vDSP: best  -11.2 %  median  -11.1 %
+VS SME-A (NEON acc)             vs vDSP: best  -44.8 %  median  -45.0 %
+VS SME-F (acc in last pass)     vs vDSP: best  -52.4 %  median  -52.3 %
+### PATIENT N=512
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK FFTW-d NEON pipeline                     max abs err 3.553e-15  rel err 2.234e-16  (tol 1.0e-13) PASS
+CHECK KFR-d pipeline                           max abs err 1.776e-15  rel err 1.117e-16  (tol 1.0e-13) PASS
+CHECK SME-A (NEON acc)                         max abs err 1.776e-15  rel err 1.117e-16  (tol 1.0e-13) PASS
+CHECK SME-F (acc in last pass)                 max abs err 1.776e-15  rel err 1.117e-16  (tol 1.0e-13) PASS
+## welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  vDSP-D split pipeline              1.7747
+rep  0  FFTW-d NEON pipeline               1.6745
+rep  0  KFR-d pipeline                     1.7324
+rep  0  SME-A (NEON acc)                   1.3124
+rep  0  SME-F (acc in last pass)           1.1173
+rep  1  FFTW-d NEON pipeline               1.6719
+rep  1  KFR-d pipeline                     1.7256
+rep  1  SME-A (NEON acc)                   1.3096
+rep  1  SME-F (acc in last pass)           1.1131
+rep  1  vDSP-D split pipeline              1.7670
+rep  2  KFR-d pipeline                     1.7256
+rep  2  SME-A (NEON acc)                   1.3078
+rep  2  SME-F (acc in last pass)           1.1120
+rep  2  vDSP-D split pipeline              1.7705
+rep  2  FFTW-d NEON pipeline               1.6768
+rep  3  SME-A (NEON acc)                   1.3117
+rep  3  SME-F (acc in last pass)           1.1139
+rep  3  vDSP-D split pipeline              1.7676
+rep  3  FFTW-d NEON pipeline               1.6764
+rep  3  KFR-d pipeline                     1.7287
+rep  4  SME-F (acc in last pass)           1.1131
+rep  4  vDSP-D split pipeline              1.7676
+rep  4  FFTW-d NEON pipeline               1.6748
+rep  4  KFR-d pipeline                     1.7309
+rep  4  SME-A (NEON acc)                   1.3136
+rep  5  vDSP-D split pipeline              1.7670
+rep  5  FFTW-d NEON pipeline               1.6759
+rep  5  KFR-d pipeline                     1.7294
+rep  5  SME-A (NEON acc)                   1.3089
+rep  5  SME-F (acc in last pass)           1.1140
+rep  6  FFTW-d NEON pipeline               1.6707
+rep  6  KFR-d pipeline                     1.7291
+rep  6  SME-A (NEON acc)                   1.3079
+rep  6  SME-F (acc in last pass)           1.1139
+rep  6  vDSP-D split pipeline              1.7587
+rep  7  KFR-d pipeline                     1.7257
+rep  7  SME-A (NEON acc)                   1.3098
+rep  7  SME-F (acc in last pass)           1.1122
+rep  7  vDSP-D split pipeline              1.7638
+rep  7  FFTW-d NEON pipeline               1.6728
+rep  8  SME-A (NEON acc)                   1.3103
+rep  8  SME-F (acc in last pass)           1.1153
+rep  8  vDSP-D split pipeline              1.7745
+rep  8  FFTW-d NEON pipeline               1.6813
+rep  8  KFR-d pipeline                     1.7241
+RESULT welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383 vDSP-D split pipeline        best     1.7587  median     1.7676  ns/input sample  (calls/rep 30)
+RESULT welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383 FFTW-d NEON pipeline         best     1.6707  median     1.6748  ns/input sample  (calls/rep 32)
+RESULT welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383 KFR-d pipeline               best     1.7241  median     1.7287  ns/input sample  (calls/rep 31)
+RESULT welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383 SME-A (NEON acc)             best     1.3078  median     1.3098  ns/input sample  (calls/rep 40)
+RESULT welch fp64 N=512 nov=256 hann C=1 L=2^22 (32 MiB) nseg=16383 SME-F (acc in last pass)     best     1.1120  median     1.1139  ns/input sample  (calls/rep 48)
+MS vDSP-D split pipeline        best    7.376 median    7.414 ms/call
+MS FFTW-d NEON pipeline         best    7.007 median    7.025 ms/call
+MS KFR-d pipeline               best    7.231 median    7.251 ms/call
+MS SME-A (NEON acc)             best    5.485 median    5.494 ms/call
+MS SME-F (acc in last pass)     best    4.664 median    4.672 ms/call
+VS SME-A (NEON acc)             vs KFR-d: best  -24.1 %  median  -24.2 %
+VS SME-F (acc in last pass)     vs KFR-d: best  -35.5 %  median  -35.6 %
+VS FFTW-d NEON pipeline         vs vDSP: best   -5.0 %  median   -5.2 %
+VS KFR-d pipeline               vs vDSP: best   -2.0 %  median   -2.2 %
+VS SME-A (NEON acc)             vs vDSP: best  -25.6 %  median  -25.9 %
+VS SME-F (acc in last pass)     vs vDSP: best  -36.8 %  median  -37.0 %
+### PATIENT N=4096
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK FFTW-d NEON pipeline                     max abs err 2.842e-14  rel err 2.847e-16  (tol 1.0e-13) PASS
+CHECK KFR-d pipeline                           max abs err 1.421e-14  rel err 1.423e-16  (tol 1.0e-13) PASS
+CHECK SME-A (NEON acc)                         max abs err 2.842e-14  rel err 2.847e-16  (tol 1.0e-13) PASS
+CHECK SME-F (acc in last pass)                 max abs err 2.842e-14  rel err 2.847e-16  (tol 1.0e-13) PASS
+## welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  vDSP-D split pipeline              2.9477
+rep  0  FFTW-d NEON pipeline               2.3703
+rep  0  KFR-d pipeline                     2.6010
+rep  0  SME-A (NEON acc)                   1.6198
+rep  0  SME-F (acc in last pass)           1.4028
+rep  1  FFTW-d NEON pipeline               2.3788
+rep  1  KFR-d pipeline                     2.6335
+rep  1  SME-A (NEON acc)                   1.6206
+rep  1  SME-F (acc in last pass)           1.4013
+rep  1  vDSP-D split pipeline              2.9305
+rep  2  KFR-d pipeline                     2.6038
+rep  2  SME-A (NEON acc)                   1.6179
+rep  2  SME-F (acc in last pass)           1.4043
+rep  2  vDSP-D split pipeline              2.9313
+rep  2  FFTW-d NEON pipeline               2.3699
+rep  3  SME-A (NEON acc)                   1.6198
+rep  3  SME-F (acc in last pass)           1.4061
+rep  3  vDSP-D split pipeline              2.9731
+rep  3  FFTW-d NEON pipeline               2.3927
+rep  3  KFR-d pipeline                     2.6337
+rep  4  SME-F (acc in last pass)           1.4077
+rep  4  vDSP-D split pipeline              2.9826
+rep  4  FFTW-d NEON pipeline               2.3841
+rep  4  KFR-d pipeline                     2.6438
+rep  4  SME-A (NEON acc)                   1.6153
+rep  5  vDSP-D split pipeline              2.9377
+rep  5  FFTW-d NEON pipeline               2.3807
+rep  5  KFR-d pipeline                     2.6445
+rep  5  SME-A (NEON acc)                   1.6200
+rep  5  SME-F (acc in last pass)           1.3988
+rep  6  FFTW-d NEON pipeline               2.3965
+rep  6  KFR-d pipeline                     2.6260
+rep  6  SME-A (NEON acc)                   1.6210
+rep  6  SME-F (acc in last pass)           1.4002
+rep  6  vDSP-D split pipeline              2.9544
+rep  7  KFR-d pipeline                     2.6314
+rep  7  SME-A (NEON acc)                   1.6372
+rep  7  SME-F (acc in last pass)           1.4073
+rep  7  vDSP-D split pipeline              2.9440
+rep  7  FFTW-d NEON pipeline               2.3670
+rep  8  SME-A (NEON acc)                   1.6141
+rep  8  SME-F (acc in last pass)           1.4014
+rep  8  vDSP-D split pipeline              2.9422
+rep  8  FFTW-d NEON pipeline               2.3828
+rep  8  KFR-d pipeline                     2.6386
+RESULT welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047 vDSP-D split pipeline        best     2.9305  median     2.9440  ns/input sample  (calls/rep 18)
+RESULT welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047 FFTW-d NEON pipeline         best     2.3670  median     2.3807  ns/input sample  (calls/rep 23)
+RESULT welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047 KFR-d pipeline               best     2.6010  median     2.6335  ns/input sample  (calls/rep 21)
+RESULT welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047 SME-A (NEON acc)             best     1.6141  median     1.6198  ns/input sample  (calls/rep 33)
+RESULT welch fp64 N=4096 nov=2048 hann C=1 L=2^22 (32 MiB) nseg=2047 SME-F (acc in last pass)     best     1.3988  median     1.4028  ns/input sample  (calls/rep 38)
+MS vDSP-D split pipeline        best   12.291 median   12.348 ms/call
+MS FFTW-d NEON pipeline         best    9.928 median    9.985 ms/call
+MS KFR-d pipeline               best   10.909 median   11.046 ms/call
+MS SME-A (NEON acc)             best    6.770 median    6.794 ms/call
+MS SME-F (acc in last pass)     best    5.867 median    5.884 ms/call
+VS SME-A (NEON acc)             vs KFR-d: best  -37.9 %  median  -38.5 %
+VS SME-F (acc in last pass)     vs KFR-d: best  -46.2 %  median  -46.7 %
+VS FFTW-d NEON pipeline         vs vDSP: best  -19.2 %  median  -19.1 %
+VS KFR-d pipeline               vs vDSP: best  -11.2 %  median  -10.5 %
+VS SME-A (NEON acc)             vs vDSP: best  -44.9 %  median  -45.0 %
+VS SME-F (acc in last pass)     vs vDSP: best  -52.3 %  median  -52.3 %

@@ -1,0 +1,12 @@
+m=4 targets=I:4 dirs=all order=lex W=4 M=15: exact tests {'violations': 0, 'tight': 56, 'clique': 15, 'W': 4, 'excluded': True}
+m=4 targets=k:0,1,2,3 dirs=all order=lex W=4 M=15: exact tests {'violations': 0, 'tight': 7, 'clique': 4, 'W': 4, 'excluded': False}
+m=4 targets=k:0,0,0,0 dirs=all order=lex W=4 M=15: exact tests {'violations': 0, 'tight': 56, 'clique': 15, 'W': 4, 'excluded': True}
+m=4 targets=beta:1,2,3,4 dirs=all order=lex W=4 M=15: exact tests {'violations': 0, 'tight': 0, 'clique': 0, 'W': 4, 'excluded': False}
+m=4 targets=beta:1,2,4,8 dirs=all order=lex W=4 M=15: exact tests {'violations': 0, 'tight': 7, 'clique': 4, 'W': 4, 'excluded': False}
+m=4 targets=k:0,5,10,3 dirs=all order=lex W=4 M=15: exact tests {'violations': 0, 'tight': 0, 'clique': 0, 'W': 4, 'excluded': False}
+m=4 targets=k:0,1,2,3 dirs=frames order=lex W=4 M=16: exact tests {'violations': 0, 'tight': 26, 'clique': 4, 'W': 4, 'excluded': False}
+m=4 targets=I:4 dirs=frames order=lex W=4 M=16: exact tests {'violations': 0, 'tight': 256, 'clique': 4, 'W': 4, 'excluded': False}
+m=4 targets=k:0,1,2,4 dirs=all order=lex W=4 M=15: exact tests {'violations': 0, 'tight': 0, 'clique': 0, 'W': 4, 'excluded': False}
+m=4 targets=k:0,3,6,9 dirs=all order=lex W=4 M=15: exact tests {'violations': 0, 'tight': 7, 'clique': 4, 'W': 4, 'excluded': False}
+m=4 targets=k:0,1,4,6 dirs=all order=lex W=4 M=15: exact tests {'violations': 0, 'tight': 0, 'clique': 0, 'W': 4, 'excluded': False}
+m=4 targets=k:0,1,5,6 dirs=all order=lex W=4 M=15: exact tests {'violations': 0, 'tight': 7, 'clique': 4, 'W': 4, 'excluded': False}

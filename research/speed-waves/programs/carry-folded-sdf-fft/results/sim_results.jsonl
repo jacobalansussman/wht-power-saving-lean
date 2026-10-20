@@ -1,0 +1,14 @@
+{"design": "fft_sdf_256", "samples_checked": 102400, "mismatches": 0, "first_mismatch_frame_pos": null, "result": "PASS", "sqnr_db_model_vs_float_random_frames": 60.678}
+{"design": "fft_sc_256", "samples_checked": 102400, "mismatches": 0, "first_mismatch_frame_pos": null, "result": "PASS", "sqnr_db_model_vs_float_random_frames": 60.678}
+{"design": "fft_sdf_256_broken", "samples_checked": 102400, "mismatches": 25254, "first_mismatch_frame_pos": [5, 64], "result": "FAIL", "sqnr_db_model_vs_float_random_frames": 60.678}
+{"design": "fft_sc_256_broken", "samples_checked": 102400, "mismatches": 25254, "first_mismatch_frame_pos": [5, 64], "result": "FAIL", "sqnr_db_model_vs_float_random_frames": 60.678}
+{"design": "fft_sdf_1024", "samples_checked": 102400, "mismatches": 0, "first_mismatch_frame_pos": null, "result": "PASS", "sqnr_db_model_vs_float_random_frames": 56.79}
+{"design": "fft_sc_1024", "samples_checked": 102400, "mismatches": 0, "first_mismatch_frame_pos": null, "result": "PASS", "sqnr_db_model_vs_float_random_frames": 56.79}
+{"design": "fft_sdfx_256_broken", "samples_checked": 3072, "mismatches": 448, "first_mismatch_frame_pos": [5, 64], "result": "FAIL", "sqnr_db_model_vs_float_random_frames": 66.551}
+{"design": "fft_sdfn_256_broken", "samples_checked": 3072, "mismatches": 448, "first_mismatch_frame_pos": [5, 64], "result": "FAIL", "sqnr_db_model_vs_float_random_frames": 66.551}
+{"design": "fft_sc_64", "samples_checked": 102400, "mismatches": 0, "first_mismatch_frame_pos": null, "result": "PASS", "sqnr_db_model_vs_float_random_frames": 57.109}
+{"design": "fft_sdf_64", "samples_checked": 102400, "mismatches": 0, "first_mismatch_frame_pos": null, "result": "PASS", "sqnr_db_model_vs_float_random_frames": 57.109}
+{"design": "fft_sdfx_64", "samples_checked": 25600, "mismatches": 0, "first_mismatch_frame_pos": null, "result": "PASS", "sqnr_db_model_vs_float_random_frames": 73.282}
+{"design": "fft_sdfx_1024", "samples_checked": 40960, "mismatches": 0, "first_mismatch_frame_pos": null, "result": "PASS", "sqnr_db_model_vs_float_random_frames": 61.119}
+{"design": "fft_sdfx_256", "samples_checked": 102400, "mismatches": 0, "first_mismatch_frame_pos": null, "result": "PASS", "sqnr_db_model_vs_float_random_frames": 60.678}
+{"design": "fft_sdfn_256", "samples_checked": 102400, "mismatches": 0, "first_mismatch_frame_pos": null, "result": "PASS", "sqnr_db_model_vs_float_random_frames": 60.678}

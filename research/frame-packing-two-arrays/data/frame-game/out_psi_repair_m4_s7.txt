@@ -1,0 +1,9 @@
+(('cap', 'cap'), (False, False), 3) 8
+(('cap', 'cap'), (False, False), 4) 15
+(('cap', 'cap'), (False, False), 5) 2
+(('cap', 'cap'), (False, False), 6) 1
+(('cap', 'cap'), (True, False), 3) 1
+(('no:linear', 'cap'), (False, False), 4) 3
+(('no:linear', 'no:linear'), (False, False), 2) 8
+(('no:linear', 'no:linear'), (False, False), 3) 1
+(('no:linear', 'no:linear'), (False, False), 4) 1

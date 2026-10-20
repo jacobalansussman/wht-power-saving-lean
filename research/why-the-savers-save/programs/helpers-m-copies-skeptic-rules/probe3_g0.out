@@ -1,0 +1,16 @@
+target 169 reads centre 60 coef 1/4 centre content by packet (coef relative to packet): {0: ['1'], 1: ['1'], 2: ['1'], 3: ['1']}  own source in centre: 1
+target 169 reads centre 61 coef 1/4 centre content by packet (coef relative to packet): {4: ['1'], 5: ['1'], 6: ['1'], 7: ['1']}  own source in centre: 1
+   target 169 after cut, by packet: {0: ['1/4'], 1: ['1/4'], 2: ['1/4'], 3: ['1/4'], 4: ['1/4'], 5: ['1/4'], 6: ['1/4'], 7: ['1/4']}
+   target 169 end of B, by packet: {}
+target 170 reads centre 63 coef 1/4 centre content by packet (coef relative to packet): {0: ['-1'], 1: ['1'], 4: ['-1'], 5: ['1']}  own source in centre: -1
+target 170 reads centre 224 coef -1/4 centre content by packet (coef relative to packet): {2: ['-1'], 3: ['1'], 6: ['-1'], 7: ['1']}  own source in centre: 1
+   target 170 after cut, by packet: {0: ['-1/4'], 1: ['1/4'], 2: ['1/4'], 3: ['-1/4'], 4: ['-1/4'], 5: ['1/4'], 6: ['1/4'], 7: ['-1/4']}
+   target 170 end of B, by packet: {}
+target 172 reads centre 60 coef 1/4 centre content by packet (coef relative to packet): {0: ['1'], 1: ['1'], 2: ['1'], 3: ['1']}  own source in centre: 1
+target 172 reads centre 61 coef -1/4 centre content by packet (coef relative to packet): {4: ['1'], 5: ['1'], 6: ['1'], 7: ['1']}  own source in centre: -1
+   target 172 after cut, by packet: {0: ['1/4'], 1: ['1/4'], 2: ['1/4'], 3: ['1/4'], 4: ['-1/4'], 5: ['-1/4'], 6: ['-1/4'], 7: ['-1/4']}
+   target 172 end of B, by packet: {}
+target 175 reads centre 63 coef 1/4 centre content by packet (coef relative to packet): {0: ['-1'], 1: ['1'], 4: ['-1'], 5: ['1']}  own source in centre: -1
+target 175 reads centre 224 coef 1/4 centre content by packet (coef relative to packet): {2: ['-1'], 3: ['1'], 6: ['-1'], 7: ['1']}  own source in centre: -1
+   target 175 after cut, by packet: {0: ['-1/4'], 1: ['1/4'], 2: ['-1/4'], 3: ['1/4'], 4: ['-1/4'], 5: ['1/4'], 6: ['-1/4'], 7: ['1/4']}
+   target 175 end of B, by packet: {}

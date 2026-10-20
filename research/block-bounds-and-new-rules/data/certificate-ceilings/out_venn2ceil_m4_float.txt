@@ -1,0 +1,27 @@
+m=4 n=16 float64
+  a=1 done (0.0s)
+  a=2 done (0.0s)
+  a=3 done (0.0s)
+  a=4 done (0.0s)
+  a=5 done (0.0s)
+  a=6 done (0.0s)
+  a=7 done (0.0s)
+  a=8 done (0.0s)
+mu_1 = (n-2)/(2(n-1)) = 0.466667;  spectral ceiling 2/(1-mu_1) = 4(n-1)/n = 3.750000;  hook ceiling 4(n-1)/(n+2) = 3.333333
+max over (a,b) of the chain's second eigenvalue: 0.466666667  (<= mu_1: True)
+top (a,b) by refined ceiling = min(sum_j min(dimY_j, dimS_j-dimY_j), m cap)/cap   [screen = min(dimN,codimN,m cap)/cap]
+  L^1 (x) L^7: refined 3.3333  screen 3.3333  J=(0,) dimN 102960.0 cap 24024.0 refined-dem-bound 80080.0  lambda2 0.466667
+  L^1 (x) L^8: refined 3.3333  screen 3.7500  J=(0,) dimN 102960.0 cap 27456.0 refined-dem-bound 91520.0  lambda2 0.466667
+  L^2 (x) L^11: refined 3.2500  screen 3.2500  J=(0, 1) dimN 283920.0 cap 73920.0 refined-dem-bound 240240.0  lambda2 0.466667
+  L^3 (x) L^13: refined 3.1310  screen 3.4552  J=(0, 1, 2) dimN 153440.0 cap 44408.0 refined-dem-bound 139040.0  lambda2 0.466667
+  L^2 (x) L^4: refined 3.1113  screen 3.2560  J=(0,) dimN 120120.0 cap 30184.0 refined-dem-bound 93912.0  lambda2 0.466667
+  L^3 (x) L^3: refined 3.0164  screen 3.4552  J=(0,) dimN 160160.0 cap 44408.0 refined-dem-bound 133952.0  lambda2 0.466667
+  L^1 (x) L^6: refined 3.0000  screen 3.0000  J=(0,) dimN 80080.0 cap 16016.0 refined-dem-bound 48048.0  lambda2 0.466667
+  L^1 (x) L^9: refined 3.0000  screen 3.3333  J=(0,) dimN 80080.0 cap 24024.0 refined-dem-bound 72072.0  lambda2 0.466667
+  L^2 (x) L^12: refined 2.9592  screen 3.2560  J=(0, 1) dimN 98280.0 cap 30184.0 refined-dem-bound 89320.0  lambda2 0.466667
+  L^5 (x) L^11: refined 2.8296  screen 3.1285  J=(0, 1, 2, 3) dimN 9854208.0 cap 2948736.0 refined-dem-bound 8343608.0  lambda2 0.466667
+  L^2 (x) L^5: refined 2.8167  screen 3.2500  J=(0,) dimN 240240.0 cap 73920.0 refined-dem-bound 208208.0  lambda2 0.466667
+  L^3 (x) L^12: refined 2.8150  screen 2.8150  J=(0, 1, 2) dimN 618800.0 cap 142240.0 refined-dem-bound 400400.0  lambda2 0.466667
+best with a >= 2 (not a hook): L^2 (x) L^11: refined 3.2500  screen 3.2500  J=(0, 1)
+largest screen with a >= 2: L^3 (x) L^13: screen 3.4552
+done 0.0s

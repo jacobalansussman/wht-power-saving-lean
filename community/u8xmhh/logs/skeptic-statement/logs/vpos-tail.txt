@@ -1,0 +1,33 @@
+rt/Data/Gen/U8XMZChk4.lean:21:0: 'GXD.U8XM.zc22' depends on axioms: [propext]
+info: Work/GCert/Data/Gen/U8XMZChk4.lean:22:0: 'GXD.U8XM.zc23' depends on axioms: [propext]
+info: Work/GCert/Data/Gen/U8XMZChk4.lean:23:0: 'GXD.U8XM.zc24' depends on axioms: [propext]
+ℹ [9301/9317] Replayed Work.GCert.Data.Gen.U8XMZChk5
+info: Work/GCert/Data/Gen/U8XMZChk5.lean:10:0: 'GXD.U8XM.zc25' depends on axioms: [propext]
+info: Work/GCert/Data/Gen/U8XMZChk5.lean:11:0: 'GXD.U8XM.zc26' depends on axioms: [propext]
+ℹ [9302/9317] Replayed Work.GCert.Data.Gen.U8XMZOK
+info: Work/GCert/Data/Gen/U8XMZOK.lean:57:0: 'GXD.U8XM.exitRC' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9303/9317] Replayed Work.GCert.Data.U8XMGlue401
+warning: Work/GCert/Data/U8XMGlue401.lean:29:61: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Work/GCert/Data/U8XMGlue401.lean:29:61: Unused tactic linter: `decide` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: Work/GCert/Data/U8XMGlue401.lean:100:0: 'GXD.U8XM.ginv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Data/U8XMGlue401.lean:101:0: 'GXD.U8XM.price' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Data/U8XMGlue401.lean:102:0: 'GXD.U8XM.fitsS' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9304/9317] Replayed Work.XHost.U8XMHH
+info: Work/XHost/U8XMHH.lean:63:0: 'GXD.U8XMHH.hfits' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XHost/U8XMHH.lean:64:0: 'GXD.U8XMHH.hprice' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9305/9317] Replayed Work.FourierU8XMHH.Seam
+info: Work/FourierU8XMHH/Seam.lean:168:0: 'OAI.PowerSaving.RAM.hillsU8XMHH_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierU8XMHH/Seam.lean:169:0: 'OAI.PowerSaving.RAM.envelope_program_geU8XMHH' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierU8XMHH/Seam.lean:170:0: 'OAI.PowerSaving.SeamU8XMHH.alphaU8XMHH_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierU8XMHH/Seam.lean:171:0: 'OAI.PowerSaving.hillsU8XMHH_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9317 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.PowerSaving.transform_mainU8XMHH, OAI.PowerSaving.convolution_mainU8XMHH, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Work.FourierU8XMHH.Main
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!

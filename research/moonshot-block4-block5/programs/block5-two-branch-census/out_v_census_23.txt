@@ -1,0 +1,14 @@
+walk seed 2: 56 anchors, 28672 (P1,target) pairs, d(P1,Q) counts {2: 3024, 1: 56} (41s)
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (1, 5, (4, 4, 4)) 28672
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (2, 3, (2, 4, 4)) 344064
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (2, 4, (3, 4, 4)) 344064
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (2, 5, (4, 4, 4)) 860160
+walk seed 3: 56 anchors, 28672 (P1,target) pairs, d(P1,Q) counts {2: 3024, 1: 56} (51s)
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (1, 5, (4, 4, 4)) 28672
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (2, 3, (2, 4, 4)) 344064
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (2, 4, (3, 4, 4)) 344064
+   (d(P1,Q), lam1, d(Q,.) of the 3 common nbrs of N1, A1): (2, 5, (4, 4, 4)) 860160
+TOTAL by (lam1, pattern):
+   (3, (2, 4, 4)) 688128
+   (4, (3, 4, 4)) 688128
+   (5, (4, 4, 4)) 1777664

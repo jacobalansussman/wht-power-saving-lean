@@ -1,0 +1,29 @@
+hyperplanes: distinct port sets 511
+  hyperplane sub-unit (ports, root rank, omega) (64, 9, 8) : 7 hyperplanes
+  hyperplane sub-unit (ports, root rank, omega) (60, 9, 8) : 224 hyperplanes
+  hyperplane sub-unit (ports, root rank, omega) (56, 9, 8) : 32 hyperplanes
+  hyperplane sub-unit (ports, root rank, omega) (56, 9, 4) : 8 hyperplanes
+  hyperplane sub-unit (ports, root rank, omega) (56, 8, 7) : 8 hyperplanes
+  hyperplane sub-unit (ports, root rank, omega) (52, 9, 8) : 104 hyperplanes
+  hyperplane sub-unit (ports, root rank, omega) (52, 9, 4) : 112 hyperplanes
+  hyperplane sub-unit (ports, root rank, omega) (52, 8, 8) : 8 hyperplanes
+  hyperplane sub-unit (ports, root rank, omega) (48, 9, 8) : 6 hyperplanes
+  hyperplane sub-unit (ports, root rank, omega) (48, 8, 8) : 1 hyperplanes
+  hyperplane sub-unit (ports, root rank, omega) (0, 0, 0) : 1 hyperplanes
+  example normals h per type: {(64, 9, 8): 1, (60, 9, 8): 2, (56, 9, 8): 170, (56, 9, 4): 7, (56, 8, 7): 6, (52, 9, 8): 15, (52, 9, 4): 11, (52, 8, 8): 255}
+  7-dim sub-unit (ports, rank, omega) (36, 9, 8) : 440 subspaces, e.g. duals (1, 62)
+  7-dim sub-unit (ports, rank, omega) (36, 8, 8) : 8 subspaces, e.g. duals (1, 2)
+  7-dim sub-unit (ports, rank, omega) (34, 9, 8) : 2664 subspaces, e.g. duals (2, 61)
+  7-dim sub-unit (ports, rank, omega) (34, 8, 8) : 24 subspaces, e.g. duals (2, 8)
+  7-dim sub-unit (ports, rank, omega) (34, 7, 4) : 896 subspaces, e.g. duals (3, 9)
+  7-dim sub-unit (ports, rank, omega) (32, 9, 8) : 2234 subspaces, e.g. duals (1, 30)
+  7-dim sub-unit (ports, rank, omega) (32, 8, 8) : 27 subspaces, e.g. duals (31, 481)
+  7-dim sub-unit (ports, rank, omega) (32, 8, 7) : 220 subspaces, e.g. duals (2, 124)
+  7-dim sub-unit (ports, rank, omega) (32, 8, 4) : 840 subspaces, e.g. duals (1, 6)
+  7-dim sub-unit (ports, rank, omega) (32, 7, 7) : 4 subspaces, e.g. duals (2, 4)
+  7-dim sub-unit (ports, rank, omega) (32, 7, 4) : 220 subspaces, e.g. duals (3, 125)
+  7-dim sub-unit (ports, rank, omega) (32, 6, 4) : 4 subspaces, e.g. duals (3, 5)
+  7-dim sub-unit (ports, rank, omega) (30, 9, 8) : 4992 subspaces, e.g. duals (2, 45)
+  7-dim sub-unit (ports, rank, omega) (30, 8, 8) : 384 subspaces, e.g. duals (3, 252)
+  7-dim sub-unit (ports, rank, omega) (30, 8, 4) : 5376 subspaces, e.g. duals (2, 9)
+6s

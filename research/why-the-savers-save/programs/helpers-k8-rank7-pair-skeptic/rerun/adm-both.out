@@ -1,0 +1,14 @@
+PASS discovery-bind
+PASS discovery-emit
+PASS discovery-audit
+PASS discovery-invoice
+PASS discovery-assembly
+PASS strict-bind
+PASS strict-emit
+PASS strict-audit
+PASS strict-invoice
+PASS strict-assembly
+PASS admission
+PASS bit
+PASS independent
+PASS_COMPLETE_K8_RANK7_ASSEMBLY 0.001673020532498619

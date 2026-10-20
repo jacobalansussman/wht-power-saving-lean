@@ -1,0 +1,93 @@
+# overlay files: word matches of sorry admit axiom native_decide implemented_by extern unsafe opaque sorryAx
+Work/BlockAccounting/Sharp.lean:6:Importable module `Work.BlockAccounting.Sharp`.  Imports only Mathlib (through `Moment`).  No `sorry`.
+Work/FourierL3945HNeg/UniformFourierChallenge.lean:327:  sorry
+Work/FourierL3945HNeg/UniformFourierChallenge.lean:331:  sorry
+Work/FourierL3945H/Seam.lean:31:No `sorry`, no `native_decide`.
+Work/FourierL3945H/UniformFourierChallenge.lean:327:  sorry
+Work/FourierL3945H/UniformFourierChallenge.lean:331:  sorry
+Work/KLowW/Data.lean:22:No `sorry`.
+Work/KLowW/Inv.lean:24:No `sorry`.
+Work/KLowW/InvMain.lean:11:No `sorry`.
+Work/KLowW/LabK.lean:18:Soundness: `Work.KLowW.LabSound`.  No `sorry`.
+Work/KLowW/LabSound.lean:16:No `sorry`.
+Work/KLowW/Main.lean:16:No `sorry`.
+Work/KLowW/Route.lean:20:No `sorry`.
+Work/KLowW/ScalK.lean:22:Soundness: `Work.KLowW.ScalSound`.  No `sorry`.
+Work/KLowW/ScalSound.lean:19:No `sorry`.
+Work/KLowW/Win.lean:17:No `sorry`.
+Work/L3945H/Engine.lean:14:i-final's Engine.lean (wht45/lever) with the design-B instance; bB-data (wht45/allheads, 19 Oct 2026, design B: #3945 with every child-8/10 bin a literal head); prepared with assistance from Claude.  No `sorry`.
+Work/L3945H/EngineOfGeomW.lean:12:numbers.)  bB-data (wht45/allheads, 19 Oct 2026, design B: #3945 with every child-8/10 bin a literal head); prepared with assistance from Claude.  No `sorry`.
+Work/L3945H/Prov.lean:24:i-final (wht45/lever, 19 Oct 2026); instance 3945H by bB-data (wht45/allheads, 19 Oct 2026, design B: #3945 with every child-8/10 bin a literal head); prepared with assistance from Claude.  No `sorry`.
+Work/Mixed/Bridge/Core.lean:28:No `sorry`, no new axiom, no `native_decide`.
+Work/Mixed/Bridge/HeadsFirst3945H.lean:12:Written by x-inst (wht45/lever2979) on p-bridge's file; instance 3945H by bB-data (wht45/allheads, 19 Oct 2026, design B: #3945 with every child-8/10 bin a literal head); prepared with assistance from Claude.  No `sorry`.
+Work/Mixed/Bridge/HFTest3945HW.lean:17:bB-data (wht45/allheads, 19 Oct 2026, design B: #3945 with every child-8/10 bin a literal head); prepared with assistance from Claude.  No `sorry`.
+Work/Mixed/Bridge/Inst3945H.lean:21:No `sorry`.
+Work/Mixed/HeadM1.lean:7:New file (wht43 record track, 14 Oct 2026).  Imports only our block/GFrame engine.  No `sorry`, no axioms.
+Work/Mixed/Rate3815.lean:18:No `sorry`, no `native_decide`.
+Work/Mixed/Rate3945H.lean:18:No `sorry`, no `native_decide`.
+Work/Mixed/Rate3945.lean:18:No `sorry`, no `native_decide`.
+Work/Mixed/SeamConst.lean:19:No `sorry`, no axioms.
+Work/PWGen/Fp.lean:16:so the kernel never builds a chain of unevaluated additions.  No `sorry`.
+Work/PWGen/Res.lean:9:p-warpchk's proof of `inv_res` after its first `show`, unchanged.  No `sorry`.
+Work/PWGen/Roles.lean:9:then centre copies).  No `sorry`.
+Work/PWGen/S5Pair.lean:11:`I0 := extra`, `I1 := gauge44`), and their prices.  No `sorry`.
+Work/Warp/KLW.lean:24:No `sorry`.
+Work/Warp/Sem.lean:32:No `sorry`.
+Work/Warp/Win.lean:10:No `sorry`.
+Work/Warp/Word.lean:22:No `sorry`.
+Work/XHostD/FramesK.lean:12:assistance from Claude.  No `sorry`.
+Work/XHostD/HCert.lean:9:prepared with assistance from Claude.  PER-RUN version (one host table per run) written by fsp-perrun/tools/mk_perrun.py (wht43, 14 Oct 2026) from h-L3-build's file by checked text substitution; prepared with assistance from Claude.  TWO-PROVIDER version (a per-call invocation `Ic ρ l` with the target vectors of `I`, per-call entrance labels and residuals) written by lg-a2a4/tools/mk_disp.py (wht43, 14 Oct 2026) from fsp-perrun's file by checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostD/HDef.lean:13:Written by h-L3-build/gen/gen_hnet.py (wht43, 13 Oct 2026), prepared with assistance from Claude.  PER-RUN version (one host table per run) written by fsp-perrun/tools/mk_perrun.py (wht43, 14 Oct 2026) from h-L3-build's file by checked text substitution; prepared with assistance from Claude.  TWO-PROVIDER version (a per-call invocation `Ic ρ l` with the target vectors of `I`, per-call entrance labels and residuals) written by lg-a2a4/tools/mk_disp.py (wht43, 14 Oct 2026) from fsp-perrun's file by checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostD/HEnd.lean:11:assistance from Claude.  PER-RUN version (one host table per run) written by fsp-perrun/tools/mk_perrun.py (wht43, 14 Oct 2026) from h-L3-build's file by checked text substitution; prepared with assistance from Claude.  TWO-PROVIDER version (a per-call invocation `Ic ρ l` with the target vectors of `I`, per-call entrance labels and residuals) written by lg-a2a4/tools/mk_disp.py (wht43, 14 Oct 2026) from fsp-perrun's file by checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostD/HGeom.lean:20:Written by h-L3-build/gen/gen_hgeom.py (wht43, 13 Oct 2026), prepared with assistance from Claude.  PER-RUN version (one host table per run) written by fsp-perrun/tools/mk_perrun.py (wht43, 14 Oct 2026) from h-L3-build's file by checked text substitution; prepared with assistance from Claude.  TWO-PROVIDER version (a per-call invocation `Ic ρ l` with the target vectors of `I`, per-call entrance labels and residuals) written by lg-a2a4/tools/mk_disp.py (wht43, 14 Oct 2026) from fsp-perrun's file by checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostD/HSchedD.lean:15:from Claude.  No `sorry`.
+Work/XHostD/HStage.lean:10:Claude.  PER-RUN version (one host table per run) written by fsp-perrun/tools/mk_perrun.py (wht43, 14 Oct 2026) from h-L3-build's file by checked text substitution; prepared with assistance from Claude.  TWO-PROVIDER version (a per-call invocation `Ic ρ l` with the target vectors of `I`, per-call entrance labels and residuals) written by lg-a2a4/tools/mk_disp.py (wht43, 14 Oct 2026) from fsp-perrun's file by checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostD/Prov.lean:19:2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostR/HSchedR.lean:13:Claude.  No `sorry`.
+Work/XHostT/Data/D3945/Disp.lean:8:one off; prepared with assistance from Claude.  No `sorry`. -/
+Work/XHostT/Data/S5H/DispLink.lean:12:Written by p-disp (wht45/lever, 19 Oct 2026); instance S5H by bB-data (wht45/allheads, 19 Oct 2026, design B: #3945 with every child-8/10 bin a literal head); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/Data/S5H/Heads.lean:7:with the instance and the counts changed.  No `sorry`. -/
+Work/XHostT/HF/Cert.lean:13:checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HF/Def.lean:11:checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HF/GeomA4.lean:17:classT_X, classT_Y) and Sussman's (Work/Block/Frames.lean); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HF/GeomInst.lean:18:No `sorry`.
+Work/XHostT/HF/Heads.lean:15:Written by p-hfirst (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HF/Stage.lean:9:checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HF/ToHF.lean:14:p-hfirst/tools/mk_xneth.py from p-a3's TDef.lean; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HFW2979/Cert.lean:13:checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HFW2979/Def.lean:11:checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HFW2979/Disp2979W.lean:14:Written by x-inst (wht45/lever2979, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HFW2979/GeomA4W.lean:12:Written by x-inst (wht45/lever2979, 19 Oct 2026) on p-hfirst's file; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HFW2979/GeomInstW.lean:18:Written by x-inst (wht45/lever2979, 19 Oct 2026) on p-hfirst's file; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HFW2979/Heads.lean:15:Written by p-hfirst (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HFW2979/Stage.lean:9:checked text substitution; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/HFW2979/ToHF.lean:15:p-hfirst/tools/mk_xneth.py from p-a3's TDef.lean; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/Inst/S5HFacts.lean:20:bB-data (wht45/allheads, 19 Oct 2026, design B: #3945 with every child-8/10 bin a literal head); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/Inst/S5H.lean:12:Written by p-a3 (wht45/lever, 19 Oct 2026); instance S5H by bB-data (wht45/allheads, 19 Oct 2026, design B: #3945 with every child-8/10 bin a literal head); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/KCheck.lean:20:Written by p-a3 (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/KGlue.lean:19:Written by p-hostck (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/KHeadC.lean:10:x-tables (wht45/lever2979, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/KHead.lean:13:x-tables (wht45/lever2979, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/KHistC.lean:10:Written by p-hostck (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/KHist.lean:17:Written by p-hostck (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/KWhole.lean:13:Written by p-hostck (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TCert.lean:13:prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TCertW.lean:14:prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TDef.lean:14:Ryan Shea's complex588 tree (Bridge401: Nil Mamano's gen401 on Dugongue #401 / jacklightChen #377 / Lydakis #275 / DaysSky #363; engine and E8 unit by Jacob Sussman), DaysSky's idle-axis hosting (CrocSwap/integer-mult-bounds PR #442), h-L3-build / fsp-perrun / lg-a2a4 (wht43).  Generated by p-a3/tools/gen_xnet.py (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TDefW.lean:15:Ryan Shea's complex588 tree (Bridge401: Nil Mamano's gen401 on Dugongue #401 / jacklightChen #377 / Lydakis #275 / DaysSky #363; engine and E8 unit by Jacob Sussman), DaysSky's idle-axis hosting (CrocSwap/integer-mult-bounds PR #442), h-L3-build / fsp-perrun / lg-a2a4 (wht43).  Generated by p-a3/tools/gen_xnet.py (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TEnd.lean:11:Written by p-a3 (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TGeom.lean:19:Sussman's engine and stage geometry); hosting by DaysSky (PR #442); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TGeomW.lean:22:Sussman's engine and stage geometry); hosting by DaysSky (PR #442); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TLocal.lean:22:Claude.  No `sorry`.
+Work/XHostT/TProvW.lean:17:text substitution; the warp condition is p-warpchk's / p-warpsem's; prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TRoles.lean:22:PR #442).  Written by rb-a3 (wht43, 14 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TSchedK.lean:13:proof.  Written by p-a3 (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TStage.lean:15:Ryan Shea's complex588 tree (Bridge401: Nil Mamano's gen401 on Dugongue #401 / jacklightChen #377 / Lydakis #275 / DaysSky #363; engine and E8 unit by Jacob Sussman), DaysSky's idle-axis hosting (CrocSwap/integer-mult-bounds PR #442), h-L3-build / fsp-perrun / lg-a2a4 (wht43).  Generated by p-a3/tools/gen_xnet.py (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TStageW.lean:16:Ryan Shea's complex588 tree (Bridge401: Nil Mamano's gen401 on Dugongue #401 / jacklightChen #377 / Lydakis #275 / DaysSky #363; engine and E8 unit by Jacob Sussman), DaysSky's idle-axis hosting (CrocSwap/integer-mult-bounds PR #442), h-L3-build / fsp-perrun / lg-a2a4 (wht43).  Generated by p-a3/tools/gen_xnet.py (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+Work/XHostT/TTab.lean:13:Written by p-a3 (wht45/lever, 19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+# tracked files of the tree changed:
+ M lakefile.lean
+# lakefile.lean diff:
++
++lean_lib XExit where globs := #[`XExit.+]
++lean_lib CSX where globs := #[`CSX.+]

@@ -1,0 +1,11 @@
+U_4^(1) W=3 (slack 1; saving if it existed -0.161) m=4 W=3 M=15: odd forms of slack <= 1: 56; even forms checked 511 -> passes
+U_4^(2) W=7 (slack 1; saving if it existed -0.050) m=4 W=7 M=30: odd forms of slack <= 1: 56; even forms checked 511 -> passes
+U_4^(3) W=11 (slack 1; saving if it existed -0.016) m=4 W=11 M=45: odd forms of slack <= 1: 56; even forms checked 511 -> passes
+U_4^(5) W=19 (slack 1; saving if it existed 0.010) m=4 W=19 M=75: odd forms of slack <= 1: 56; even forms checked 511 -> passes
+U_4^(8) W=31 (slack 1; saving if it existed 0.024) m=4 W=31 M=120: odd forms of slack <= 1: 56; even forms checked 511 -> passes
+U_5^(1) W=7 (slack 1; saving if it existed 0.075) m=5 W=7 M=31: odd forms of slack <= 1: 240; even forms checked 16383 -> EXCLUDED; even support fully triple-covered: dirs [24, 25, 26, 27, 28, 29, 30, 31] (|D| = 8)
+U_5^(1) W=6 (slack 2; saving if it existed -0.020) m=5 W=6 M=31: odd forms of slack <= 1: 0; even forms checked 16383 -> passes
+U_5^(2) W=15 (slack 1; saving if it existed 0.118) m=5 W=15 M=62: odd forms of slack <= 1: 240; even forms checked 16383 -> EXCLUDED; even support fully triple-covered: dirs [24, 25, 26, 27, 28, 29, 30, 31] (|D| = 16)
+U_6^(1) W=15 (slack 1; saving if it existed 0.199) m=6 W=15 M=63: odd forms of slack <= 1: 992; even forms checked 1048575 -> EXCLUDED; even support fully triple-covered: dirs [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63] (|D| = 16)
+U_6^(1) W=14 (slack 2; saving if it existed 0.161) m=6 W=14 M=63: odd forms of slack <= 1: 0; even forms checked 1048575 -> passes
+U_6^(1) W=13 (slack 3; saving if it existed 0.119) m=6 W=13 M=63: odd forms of slack <= 1: 0; even forms checked 1048575 -> passes

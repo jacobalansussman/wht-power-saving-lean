@@ -1,0 +1,10 @@
+[timing lock] waiting for timing lock 05:46:30
+[timing lock] got lock 05:49:32; load: { 45.51 33.23 21.07 }
+RESULT vectors(clang/gcc)     c2c rows=64 n=512 best 1.9181 med 1.9247 ns/pt checksum 2.6773801355e+05
+RESULT NO_VECTORS(msvc-like)  c2c rows=64 n=512 best 2.4507 med 2.4641 ns/pt checksum 2.6773801355e+05
+RESULT vectors(clang/gcc)     c2c rows=64 n=4096 best 3.8595 med 3.8877 ns/pt checksum 6.0700317767e+06
+RESULT NO_VECTORS(msvc-like)  c2c rows=64 n=4096 best 2.9610 med 2.9706 ns/pt checksum 6.0700317767e+06
+RESULT vectors(clang/gcc)     r2c rows=64 n=2048 best 1.2297 med 1.2373 ns/pt checksum 7.5926723815e+05
+RESULT NO_VECTORS(msvc-like)  r2c rows=64 n=2048 best 1.6468 med 1.6533 ns/pt checksum 7.5926723815e+05
+RESULT vectors(clang/gcc)     c2c rows=16 n=16384 best 4.9378 med 4.9466 ns/pt checksum 1.2139972916e+07
+RESULT NO_VECTORS(msvc-like)  c2c rows=16 n=16384 best 5.4399 med 5.5000 ns/pt checksum 1.2139972916e+07

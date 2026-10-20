@@ -1,0 +1,55 @@
+== T6: K = D1 D2 ; exact D1 = Q(x)I ; fibrewise commutation
+f=1: |D1 - fib(Q,row0)| = 0.0e+00  |D2 - fib(Q,row1)| = 0.0e+00  |K - D1 D2| check D1D2=D2D1 exact: 0.0e+00
+      [A1, A2] = 0.0e+00 (fibrewise, independent Y, Y')
+f=2: |D1 - fib(Q,row0)| = 0.0e+00  |D2 - fib(Q,row1)| = 0.0e+00  |K - D1 D2| check D1D2=D2D1 exact: 0.0e+00
+      [A1, A2] = 0.0e+00 (fibrewise, independent Y, Y')
+f=3: |D1 - fib(Q,row0)| = 0.0e+00  |D2 - fib(Q,row1)| = 0.0e+00  |K - D1 D2| check D1D2=D2D1 exact: 0.0e+00
+      [A1, A2] = 0.0e+00 (fibrewise, independent Y, Y')
+f=4: |D1 - fib(Q,row0)| = 0.0e+00  |D2 - fib(Q,row1)| = 0.0e+00  |K - D1 D2| check D1D2=D2D1 exact: 0.0e+00
+      [A1, A2] = 0.0e+00 (fibrewise, independent Y, Y')
+== T1: R8
+f=1: exactQ: |R8|/|pi- u2| = 0.00e+00 (|pi- u2| = 0.00e+00) | fibrewise: |R8|/|pi- u2| = 2.28e-16 (|pi- u2| = 5.76e-02) | full: |R8|/|pi- u2| = 2.11e+00 (|pi- u2| = 5.80e-01)
+f=2: exactQ: |R8|/|pi- u2| = 0.00e+00 (|pi- u2| = 0.00e+00) | fibrewise: |R8|/|pi- u2| = 2.13e-16 (|pi- u2| = 4.90e-01) | full: |R8|/|pi- u2| = 1.16e+00 (|pi- u2| = 6.27e-01)
+f=3: exactQ: |R8|/|pi- u2| = 0.00e+00 (|pi- u2| = 0.00e+00) | fibrewise: |R8|/|pi- u2| = 1.81e-16 (|pi- u2| = 4.44e-01) | full: |R8|/|pi- u2| = 1.20e+00 (|pi- u2| = 6.11e-01)
+f=4: exactQ: |R8|/|pi- u2| = 0.00e+00 (|pi- u2| = 0.00e+00) | fibrewise: |R8|/|pi- u2| = 1.72e-16 (|pi- u2| = 5.02e-01) | full: |R8|/|pi- u2| = 1.22e+00 (|pi- u2| = 6.13e-01)
+f=5: exactQ: |R8|/|pi- u2| = 0.00e+00 (|pi- u2| = 0.00e+00) | fibrewise: |R8|/|pi- u2| = 1.74e-16 (|pi- u2| = 5.17e-01) | full: |R8|/|pi- u2| = 1.22e+00 (|pi- u2| = 6.12e-01)
+== T2: Proposition S
+f=2 exactQ: eps=0.01: |fam-twin|/|twin| = 1.45e-02 ; eps=0.0001: |fam-twin|/|twin| = 1.45e-04 ; eps=1e-06: |fam-twin|/|twin| = 1.45e-06
+f=2 fibrewise: eps=0.01: |fam|/sqrt(n) = 2.464e+00 ; eps=0.0001: |fam|/sqrt(n) = 2.464e+00 ; eps=1e-06: |fam|/sqrt(n) = 2.465e+00
+f=2 full: eps=0.01: |fam|/sqrt(n) = 7.263e+01 ; eps=0.0001: |fam|/sqrt(n) = 7.254e+03 ; eps=1e-06: |fam|/sqrt(n) = 7.254e+05
+f=2: twin vs K (relative) = 1.119 (random perturbations; just shows the twin is a generic exact 3-move output)
+f=3 exactQ: eps=0.01: |fam-twin|/|twin| = 1.45e-02 ; eps=0.0001: |fam-twin|/|twin| = 1.45e-04 ; eps=1e-06: |fam-twin|/|twin| = 1.45e-06
+f=3 fibrewise: eps=0.01: |fam|/sqrt(n) = 1.824e+00 ; eps=0.0001: |fam|/sqrt(n) = 1.824e+00 ; eps=1e-06: |fam|/sqrt(n) = 1.824e+00
+f=3 full: eps=0.01: |fam|/sqrt(n) = 7.364e+01 ; eps=0.0001: |fam|/sqrt(n) = 7.353e+03 ; eps=1e-06: |fam|/sqrt(n) = 7.353e+05
+f=3: twin vs K (relative) = 1.123 (random perturbations; just shows the twin is a generic exact 3-move output)
+f=4 exactQ: eps=0.01: |fam-twin|/|twin| = 1.43e-02 ; eps=0.0001: |fam-twin|/|twin| = 1.43e-04 ; eps=1e-06: |fam-twin|/|twin| = 1.43e-06
+f=4 fibrewise: eps=0.01: |fam|/sqrt(n) = 2.168e+00 ; eps=0.0001: |fam|/sqrt(n) = 2.168e+00 ; eps=1e-06: |fam|/sqrt(n) = 2.168e+00
+f=4 full: eps=0.01: |fam|/sqrt(n) = 7.511e+01 ; eps=0.0001: |fam|/sqrt(n) = 7.508e+03 ; eps=1e-06: |fam|/sqrt(n) = 7.508e+05
+f=4: twin vs K (relative) = 1.126 (random perturbations; just shows the twin is a generic exact 3-move output)
+== T3: commutant of D1 (fibrewise value)
+f=2: [D1fib, .]: a1=0e+00 b1=0e+00 fX2=0e+00 X2=0e+00 S2=0e+00 X1=1e+00 a0=8e-01 C01=8e-01 | ord(a1)=2 ord(b1)=2 ord(a1 b1)=3 |[a1,b1]|=1
+      lamps k<2: max |[lamp_k, lamp_l]| = 0e+00, max |lamp^2 - 1| = 0e+00
+f=3: [D1fib, .]: a1=0e+00 b1=0e+00 fX2=0e+00 X2=0e+00 S2=0e+00 X1=1e+00 a0=1e+00 C01=8e-01 | ord(a1)=4 ord(b1)=4 ord(a1 b1)=7 |[a1,b1]|=1
+      lamps k<3: max |[lamp_k, lamp_l]| = 0e+00, max |lamp^2 - 1| = 0e+00
+f=4: [D1fib, .]: a1=0e+00 b1=0e+00 fX2=0e+00 X2=0e+00 S2=0e+00 X1=8e-01 a0=7e-01 C01=6e-01 | ord(a1)=4 ord(b1)=4 ord(a1 b1)=7 |[a1,b1]|=1
+      lamps k<4: max |[lamp_k, lamp_l]| = 0e+00, max |lamp^2 - 1| = 0e+00
+f=5: [D1fib, .]: a1=0e+00 b1=0e+00 fX2=0e+00 X2=0e+00 S2=0e+00 X1=6e-01 a0=7e-01 C01=5e-01 | ord(a1)=8 ord(b1)=8 ord(a1 b1)=31 |[a1,b1]|=1
+      lamps k<4: max |[lamp_k, lamp_l]| = 0e+00, max |lamp^2 - 1| = 0e+00
+== T3b: <L, L'> in GL_f(F2) (L = I + S from a1, L' = I + S^T from b1)
+f=2: |<L, L'>| = 6  |GL_f(F2)| = 6
+f=3: |<L, L'>| = 168  |GL_f(F2)| = 168
+f=4: |<L, L'>| = 2520  |GL_f(F2)| = 20160
+f=5: |<L, L'>| = 3079274  |GL_f(F2)| = 9999360
+f=6: |<L, L'>| = 3622537  |GL_f(F2)| = 20158709760
+== T4: braid D_z S_z D_z = S_z D_z S_z
+f=1 z=1: exact 0.0e+00  generic fibrewise 0.78
+f=1 z=2: exact 0.0e+00  generic fibrewise 0.67
+f=1 z=3: exact 1.0e+00  generic fibrewise 1.64
+f=2 z=1: exact 0.0e+00  generic fibrewise 1.35
+f=2 z=2: exact 0.0e+00  generic fibrewise 1.56
+f=2 z=3: exact 1.2e+00  generic fibrewise 1.22
+f=3 z=1: exact 0.0e+00  generic fibrewise 1.41
+f=3 z=2: exact 0.0e+00  generic fibrewise 1.35
+f=3 z=3: exact 1.3e+00  generic fibrewise 1.31
+== T5: Fact A, tau(a1^n) vs 2^(min(2^v,f)-f)
+Fact A: mismatches over f=1..10, n=1..24: 0

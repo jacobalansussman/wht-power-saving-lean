@@ -1,0 +1,8 @@
+/content/work/v-m-rebuild/src/Work/XMut/GInv.lean:111:10: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+/content/work/v-m-rebuild/src/Work/XMut/GInv.lean:112:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+/content/work/v-m-rebuild/src/Work/XMut/GInv.lean:127:10: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+/content/work/v-m-rebuild/src/Work/XMut/GInv.lean:128:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+/content/work/v-m-rebuild/src/Work/XMut/GInv.lean:193:6: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+'OAI.PowerSaving.GX.GLabZ.fwd_erasedE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GX.GLabZ.bwd_erasedE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GX.GLabZ.inv' depends on axioms: [propext, Classical.choice, Quot.sound]

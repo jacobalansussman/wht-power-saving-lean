@@ -1,0 +1,6 @@
+=== their sat_notW0 s2 9 12:33:18
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 12:33:18
+[heavy.sh] got slot heavy-3 12:34:16
+unit s2 v 111 K 9 gauge clique (0, 64, 65, 72, 73, 108, 116, 118) vars 90519 clauses 313526 fit pairs 5851
+RESULT UNSAT (every decoder with K totals has W >= W0) 54.0 s
+exit 0 12:35:12

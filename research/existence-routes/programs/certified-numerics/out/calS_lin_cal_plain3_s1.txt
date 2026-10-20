@@ -1,0 +1,11 @@
+=== cal_plain3_s1.json n=15 N=24 LM 1.4e-31
+   rank: 12
+   slices: linear (3 random integer forms)
+   square: (15, 15)
+   krawczyk: True
+   leftover: 12
+   simplest_rational_closes: False
+   root_sample: ['[0.055281296481552234870345683', '[0.964304408731105603563367427', '[0.944874898259715297613157776']
+   route_S_closed: 12 of 12 leftover rows
+   verdict: EXISTS (Route S): the certified root of the square subsystem is an exact zero of every row of F
+   sliced unknowns: ['x12', 'x13', 'x14']  alphas: 3

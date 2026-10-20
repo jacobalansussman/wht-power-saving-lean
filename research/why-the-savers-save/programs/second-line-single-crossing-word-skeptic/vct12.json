@@ -1,0 +1,52 @@
+{
+ "construction": "x_i all congruent mod theta, sum = 0 mod 3, in E^6; min norm 6",
+ "minimal_vectors": 756,
+ "shapes": {
+  "(0, 0, 0, 0, 3, 3)": 270,
+  "(1, 1, 1, 1, 1, 1)": 486
+ },
+ "real": {
+  "lines": 378,
+  "t": 12,
+  "n_over_t": 31.5,
+  "tight": true,
+  "abs_2Re_ip_from_each_line": {
+   "0": 135,
+   "3": 160,
+   "6": 82
+  },
+  "normalised": "|2Re<x,y>|/12: 3 -> 1/4, 6 -> 1/2",
+  "junk_per_port": 242,
+  "junk_clique_found": 45,
+  "copy_ratio_lower": 1.4285714285714286,
+  "passes": {
+   "copy_ratio": false,
+   "window": false,
+   "junk": false
+  }
+ },
+ "complex": {
+  "lines": 126,
+  "t": 6,
+  "n_over_t": 21.0,
+  "tight": true,
+  "abs2_ip_from_each_line": {
+   "0": 45,
+   "9": 80
+  },
+  "normalised": "|<x,y>|^2/36: 9 -> 1/4",
+  "junk_per_port": 80,
+  "junk_clique_found": 15,
+  "copy_ratio_lower": 0.7142857142857143,
+  "passes": {
+   "copy_ratio": false,
+   "window": false,
+   "junk": true
+  },
+  "products_from_line0": {
+   "(3, 3)": 13,
+   "(0, -3)": 28,
+   "(3, 0)": 39
+  }
+ }
+}

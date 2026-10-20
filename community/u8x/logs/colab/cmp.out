@@ -1,0 +1,250 @@
++ SRC=/content/work/k-lower
++ T=/content/work/cc/t-klower
++ P=/content/work/cc/t-klower/lean/complex588
++ LOGD=/content/work/logs/k-lower-u8x/cmp
++ mkdir -p /content/work/logs/k-lower-u8x/cmp
+++ date +%s
++ s=1791912608
++ '[' -d /content/work/cc/t-klower ']'
++ cp -a /content/work/k-lower /content/work/cc/t-klower
+++ date +%s
++ echo 'copy wall=128s'
+copy wall=128s
++ cd /content/work/cc/t-klower/lean/complex588
++ cat
++ TC=/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin
++ for L in klower-U8X-pos klower-U8X-neg
++ C=comparator/fourier-u8x.json
++ '[' klower-U8X-pos = klower-U8X-neg ']'
++ mkdir -p /content/work/cc/scratch-klower-U8X-pos
++ chown -R 65534:65534 /content/work/cc/t-klower/lean/complex588/.lake /content/work/cc/scratch-klower-U8X-pos
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 1 -ge 2 ']'
+++ date -u
+++ sha256sum comparator/fourier-u8x.json
++ echo '=== klower-U8X-pos START Tue Oct 13 17:33:37 UTC 2026 config: 93938005ed95edf887a9fad0dddd61f5a2c9ae4cd0a0e51972a9431ec2dd7d75  comparator/fourier-u8x.json'
+=== klower-U8X-pos START Tue Oct 13 17:33:37 UTC 2026 config: 93938005ed95edf887a9fad0dddd61f5a2c9ae4cd0a0e51972a9431ec2dd7d75  comparator/fourier-u8x.json
+++ date +%s
++ s=1791912817
++ env -i PATH=/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin:/content/work/cc/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin HOME=/content/work/cc/home LANG=C.UTF-8 JAIL_TMP=/content/work/cc/scratch-klower-U8X-pos /usr/bin/time -v -o /content/work/logs/k-lower-u8x/cmp/klower-U8X-pos.time /content/work/cc/jail2.sh /content/work/cc/t-klower/lean/complex588 /bin/sh -c 'exec lake env /bin/sh -c '\''PATH=/content/work/cc/fresh-bin:$PATH; export PATH; exec comparator comparator/fourier-u8x.json'\'''
++ rc=0
+++ date +%s
+++ date -u
++ echo '=== klower-U8X-pos END rc=0 wall=4609s Tue Oct 13 18:50:26 UTC 2026'
+=== klower-U8X-pos END rc=0 wall=4609s Tue Oct 13 18:50:26 UTC 2026
++ tail -5 /content/work/logs/k-lower-u8x/cmp/klower-U8X-pos.log
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
++ grep -E 'Maximum resident|Elapsed|Exit status' /content/work/logs/k-lower-u8x/cmp/klower-U8X-pos.time
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16:48
+	Maximum resident set size (kbytes): 9414604
+	Exit status: 0
++ for L in klower-U8X-pos klower-U8X-neg
++ C=comparator/fourier-u8x.json
++ '[' klower-U8X-neg = klower-U8X-neg ']'
++ C=comparator/fourier-u8x-neg.json
++ mkdir -p /content/work/cc/scratch-klower-U8X-neg
++ chown -R 65534:65534 /content/work/cc/t-klower/lean/complex588/.lake /content/work/cc/scratch-klower-U8X-neg
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ wc -l
+++ awk '$1>2000000'
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 4 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 4 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 4 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 4 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 4 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 3 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 2 -ge 2 ']'
++ sleep 10
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 1 -ge 2 ']'
+++ date -u
+++ sha256sum comparator/fourier-u8x-neg.json
++ echo '=== klower-U8X-neg START Tue Oct 13 18:54:57 UTC 2026 config: 8491f84a538f6ccc09f0ad5a8454a27c7912351e02e622c0cedf61bcef1552aa  comparator/fourier-u8x-neg.json'
+=== klower-U8X-neg START Tue Oct 13 18:54:57 UTC 2026 config: 8491f84a538f6ccc09f0ad5a8454a27c7912351e02e622c0cedf61bcef1552aa  comparator/fourier-u8x-neg.json
+++ date +%s
++ s=1791917697
++ env -i PATH=/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin:/content/work/cc/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin HOME=/content/work/cc/home LANG=C.UTF-8 JAIL_TMP=/content/work/cc/scratch-klower-U8X-neg /usr/bin/time -v -o /content/work/logs/k-lower-u8x/cmp/klower-U8X-neg.time /content/work/cc/jail2.sh /content/work/cc/t-klower/lean/complex588 /bin/sh -c 'exec lake env /bin/sh -c '\''PATH=/content/work/cc/fresh-bin:$PATH; export PATH; exec comparator comparator/fourier-u8x-neg.json'\'''
++ rc=1
+++ date +%s
+++ date -u
++ echo '=== klower-U8X-neg END rc=1 wall=2403s Tue Oct 13 19:35:00 UTC 2026'
+=== klower-U8X-neg END rc=1 wall=2403s Tue Oct 13 19:35:00 UTC 2026
++ tail -5 /content/work/logs/k-lower-u8x/cmp/klower-U8X-neg.log
+info: Work/FourierU8X/Seam.lean:172:0: 'OAI.PowerSaving.SeamU8X.alphaU8X_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierU8X/Seam.lean:173:0: 'OAI.PowerSaving.hillsU8X_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9289 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.PowerSaving.transform_mainU8X, OAI.PowerSaving.convolution_mainU8X, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Work.FourierU8X.Main
+uncaught exception: Const does not match between challenge and target 'OAI.PowerSaving.decimalExponentU8X'
++ grep -E 'Maximum resident|Elapsed|Exit status' /content/work/logs/k-lower-u8x/cmp/klower-U8X-neg.time
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 40:02.43
+	Maximum resident set size (kbytes): 6628792
+	Exit status: 1
++ echo CMPDONE
+CMPDONE

@@ -1,0 +1,36 @@
+   (slot: waited 0s; heavy 0, avail 50633 MB)
+Heads3945HNeg rc=0 10s maxrss_kb=1212148
+'OAI.PowerSaving.XHostT.K.DS5H.heads_cnt_ne_succ' depends on axioms: [propext]
+'OAI.PowerSaving.XHostT.K.DS5H.res_ge0_6_false' depends on axioms: [propext]
+VERDICT control Heads3945HNeg: compiles, standard axioms
+   (slot: waited 0s; heavy 0, avail 50022 MB)
+Rate3945FSharpCtl rc=0 44s maxrss_kb=3388740
+'OAI.PowerSaving.MX.twoTarget_fail_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.rate3945F_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.rate3945F_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+VERDICT control Rate3945FSharpCtl: compiles, standard axioms
+   (slot: waited 0s; heavy 0, avail 50385 MB)
+Ctl3945F rc=0 45s maxrss_kb=6677220
+'OAI.PowerSaving.PB.hcutF3945F_old' depends on axioms: [propext]
+'OAI.PowerSaving.PB.hcutF3945F_more' depends on axioms: [propext]
+'OAI.PowerSaving.PB.hcutF3945F_unsplit' depends on axioms: [propext]
+VERDICT control Ctl3945F: compiles, standard axioms
+   (slot: waited 0s; heavy 0, avail 50539 MB)
+NegHeads rc=1 17s
+/content/work/fc-final/controls/NegHeads.lean:8:57: error: Tactic `decide` proved that the proposition
+VERDICT negative NegHeads: FAILS as required
+   (slot: waited 0s; heavy 1, avail 46942 MB)
+NegHeadsOld rc=1 18s
+/content/work/fc-final/controls/NegHeadsOld.lean:8:55: error: Tactic `decide` proved that the proposition
+VERDICT negative NegHeadsOld: FAILS as required
+   (slot: waited 0s; heavy 1, avail 40836 MB)
+NegRes rc=1 0s
+/content/work/fc-final/controls/NegRes.lean:8:52: error: Tactic `decide` proved that the proposition
+VERDICT negative NegRes: FAILS as required
+   (slot: waited 0s; heavy 1, avail 40814 MB)
+NegGlob rc=1 5s
+/content/work/fc-final/controls/NegGlob.lean:8:43: error: Tactic `decide` proved that the proposition
+VERDICT negative NegGlob: FAILS as required
+controls: sorry/admit lines 0; forbidden lines 0
+CONTROLS ALL AS EXPECTED
+EXIT 0

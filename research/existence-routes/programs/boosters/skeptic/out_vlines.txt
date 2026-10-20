@@ -1,0 +1,4 @@
+m=2: lines 35 expect 35; diagonal only at d=0: True
+m=3: lines 651 expect 651; diagonal only at d=0: True
+m=3 brute force = DP for every T and d: True
+$H python3 -B vlines.py  2.29s user 0.08s system 92% cpu 2.575 total

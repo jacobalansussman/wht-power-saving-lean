@@ -1,0 +1,17 @@
+[     0s] C1: labels match (1350 top words); lower words 2250; claimed collapse vectors 2
+[    34s] f=3,4 fresh: rows 4608, lower rank 2059
+[    34s] claimed collapse vectors at f=3,4 (fresh inputs): residuals ['3.7e-15', '4.2e-15']
+[    36s] trivial columns at f=3,4 (fresh): 0; npz kept 1350 -> implied trivial 0
+[    41s] column dependencies of all top columns at f=3,4: 138
+[    47s] non-trivial collapse count at f=3,4 with my inputs: 2 (claimed 2); gap 3.4e-02 / 1.6e-15
+[    47s] candidate space dim 140 (= X 2 + dependencies 138 + trivial 0, overlaps removed)
+[    53s] my reducibility: 0 top words reducible at f=3, 0 confirmed at f=4; npz red: 0; agreement on kept columns: 1350/1350
+[    89s] f=5 seed 5101: rows 10000 of 32768, lower rank 2060
+[    89s] f=5: claimed X per-vector residuals ['7.42e-01', '7.43e-01']; X-subspace spectrum ['7.38e-01', '7.47e-01']
+[    89s] f=5: f=3,4-trivial columns, max residual at f=5: 0.0e+00
+[    90s] f=5: candidate space image rank 2, mod lower 2: collapses surviving 0 (from images: 0); gap 8.3e-01 / 6.7e-15
+[    91s] f=5: span(X) + f=3,4 dependencies (no trivial cols): image rank 2, mod lower 2: collapses 0
+[    92s] f=5: [B+ mine reducibility] irreducible cols 1350, candidate dim 140, image rank 2, mod lower+reducible 2: IRREDUCIBLE collapses 0; smallest residuals ['7.4e-01', '7.5e-01']
+[    93s] f=5: [B+ npz reducibility] irreducible cols 1350, candidate dim 140, image rank 2, mod lower+reducible 2: IRREDUCIBLE collapses 0; smallest residuals ['7.4e-01', '7.5e-01']
+RESULT {"tag": "C1", "res34": [3.742825277376748e-15, 4.156736892684777e-15], "nt34_mine": 2, "red_mine": 0, "red_npz": 0, "red_disagree": [], "f5": {"per": [0.7417362050891078, 0.74349600092991], "spec": [0.7379539895648458, 0.747250953285028], "triv_max": 0.0, "coll": 0, "coll_noE": 0, "irr_coll_mine": 0, "irr_coll_npz": 0}}
+[    93s] done

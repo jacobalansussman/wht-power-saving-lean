@@ -1,0 +1,22 @@
+== word 1x2 --caseB (run at 11:51, foreground): RESULT UNSAT 2.8 s
+== s2 1x2 --caseB 11:53:54
+RESULT UNSAT 2.4 s
+== word 1x2 11:53:57
+RESULT UNSAT 2.2 s
+== word 2x2 11:54:26
+sat_light unit word K 10 light classes [2, 2] caseB False vars 121924 clauses 12386172
+== s2 2x2 11:56:06
+sat_light unit s2 K 10 light classes [2, 2] caseB False vars 122076 clauses 12386700
+== word 1x1,2x1 11:57:46
+RESULT UNSAT 10.4 s
+== s2 1x1,2x1 11:57:57
+RESULT UNSAT 11.3 s
+== word 2x2 11:58:17
+RESULT UNSAT 47.0 s
+== s2 2x2 11:59:05
+RESULT UNSAT 62.5 s
+== word 1x1,3x1 12:00:09
+sat_light unit word K 10 light classes [3, 1] caseB False vars 273906 clauses 611706
+== s2 1x1,3x1 12:01:49
+sat_light unit s2 K 10 light classes [3, 1] caseB False vars 274058 clauses 612234
+== word 1x1,3x1 and s2 1x1,3x1: unresolved at 100 s (alarm)

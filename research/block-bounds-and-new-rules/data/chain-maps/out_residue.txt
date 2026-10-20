@@ -1,0 +1,108 @@
+==== F16, lambda of order 5 (Hermitian, involution x -> x^4): field of order 16, lambda = g^3 (order 5) ====
+PASS chi      symbol preserves the Hermitian form
+PASS E        symbol preserves the Hermitian form
+PASS Gm       symbol preserves the Hermitian form
+PASS G3       symbol preserves the Hermitian form
+PASS G3b      symbol preserves the Hermitian form
+PASS D1       symbol preserves the Hermitian form
+PASS Dcz      symbol preserves the Hermitian form
+PASS CZchain  symbol preserves the Hermitian form
+PASS CNOT     symbol preserves the Hermitian form
+PASS SWAP     symbol preserves the Hermitian form
+PASS D01      symbol preserves the Hermitian form
+PASS D10      symbol preserves the Hermitian form
+PASS D11      symbol preserves the Hermitian form
+PASS K        symbol preserves the Hermitian form
+     isotropic points: 1105; totally isotropic planes (generators): 325
+PASS generators of H(3,16): 325 (expect (q^3+1)(q+1) with q^2 = 16)
+PASS chi      moves L0 to distance 0 (want 0)
+PASS E        moves L0 to distance 0 (want 0)
+PASS Gm       moves L0 to distance 0 (want 0)
+PASS G3       moves L0 to distance 0 (want 0)
+PASS G3b      moves L0 to distance 0 (want 0)
+PASS D1       moves L0 to distance 0 (want 0)
+PASS Dcz      moves L0 to distance 0 (want 0)
+PASS CZchain  moves L0 to distance 0 (want 0)
+PASS CNOT     moves L0 to distance 0 (want 0)
+PASS SWAP     moves L0 to distance 0 (want 0)
+PASS D01      moves L0 to distance 1 (want 1)
+PASS D10      moves L0 to distance 1 (want 1)
+PASS D11      moves L0 to distance 1 (want 1)
+PASS K        moves L0 to distance 2 (want 2)
+     orbit of L0 under the letter symbols: 325 of 325 frames
+PASS orbit of L0 = all 325 generators
+PASS group of symbols is transitive on ordered pairs at each distance: orbits per distance {0: 1, 1: 1, 2: 1}
+     L0 has 68 neighbours and 256 opposite frames
+     |O| = |common neighbours of L0 and K L0| = 17
+PASS triads give 68 distinct circles of sizes [5] on O
+PASS every 3 points of O lie in exactly one circle (inversive plane)
+PASS derived structure at one point: 16 points, 20 lines of sizes [4], every 2 points on exactly one line (affine plane)
+     -> in a c = 1 realisation these 16 points of P^2(C) would have t_2 = t_3 = 0, t_4 = 20
+==== F4, lambda = alpha (control: 27 frames): field of order 4, lambda = g^1 (order 3) ====
+PASS chi      symbol preserves the Hermitian form
+PASS E        symbol preserves the Hermitian form
+PASS Gm       symbol preserves the Hermitian form
+PASS D1       symbol preserves the Hermitian form
+PASS Dcz      symbol preserves the Hermitian form
+PASS CZchain  symbol preserves the Hermitian form
+PASS CNOT     symbol preserves the Hermitian form
+PASS SWAP     symbol preserves the Hermitian form
+PASS D01      symbol preserves the Hermitian form
+PASS D10      symbol preserves the Hermitian form
+PASS D11      symbol preserves the Hermitian form
+PASS K        symbol preserves the Hermitian form
+     isotropic points: 45; totally isotropic planes (generators): 27
+PASS generators of H(3,4): 27 (expect (q^3+1)(q+1) with q^2 = 4)
+PASS chi      moves L0 to distance 0 (want 0)
+PASS E        moves L0 to distance 0 (want 0)
+PASS Gm       moves L0 to distance 0 (want 0)
+PASS D1       moves L0 to distance 0 (want 0)
+PASS Dcz      moves L0 to distance 0 (want 0)
+PASS CZchain  moves L0 to distance 0 (want 0)
+PASS CNOT     moves L0 to distance 0 (want 0)
+PASS SWAP     moves L0 to distance 0 (want 0)
+PASS D01      moves L0 to distance 1 (want 1)
+PASS D10      moves L0 to distance 1 (want 1)
+PASS D11      moves L0 to distance 1 (want 1)
+PASS K        moves L0 to distance 2 (want 2)
+     orbit of L0 under the letter symbols: 27 of 27 frames
+PASS orbit of L0 = all 27 generators
+PASS group of symbols is transitive on ordered pairs at each distance: orbits per distance {0: 1, 1: 1, 2: 1}
+     L0 has 10 neighbours and 16 opposite frames
+     |O| = |common neighbours of L0 and K L0| = 5
+PASS triads give 10 distinct circles of sizes [3] on O
+PASS every 3 points of O lie in exactly one circle (inversive plane)
+PASS derived structure at one point: 4 points, 6 lines of sizes [2], every 2 points on exactly one line (affine plane)
+     -> in a c = 1 realisation these 4 points of P^2(C) would have t_2 = t_3 = 0, t_2 = 6
+==== F8, lambda of order 7 (no Hermitian form): field of order 8, lambda = g^1 (order 7) ====
+     chi     : symplectic multipliers seen ['2']
+     E       : symplectic multipliers seen ['0', '1', '2', '3', '4', '5', '6', '7', 'bad']
+     Gm      : symplectic multipliers seen ['0', '1', '2', '3', '4', '5', '6', '7', 'bad']
+     G3      : symplectic multipliers seen ['4']
+     G3b     : symplectic multipliers seen ['0', '1', '2', '3', '4', '5', '6', '7', 'bad']
+     D1      : symplectic multipliers seen ['1']
+     Dcz     : symplectic multipliers seen ['1']
+     CZchain : symplectic multipliers seen ['1']
+     CNOT    : symplectic multipliers seen ['1']
+     SWAP    : symplectic multipliers seen ['1']
+     D01     : symplectic multipliers seen ['1']
+     D10     : symplectic multipliers seen ['1']
+     D11     : symplectic multipliers seen ['1']
+     K       : symplectic multipliers seen ['1']
+     2-planes of F8^4: 4745
+PASS chi      moves L0 to distance 0 (want 0)
+PASS E        moves L0 to distance 0 (want 0)
+PASS Gm       moves L0 to distance 0 (want 0)
+PASS G3       moves L0 to distance 0 (want 0)
+PASS G3b      moves L0 to distance 0 (want 0)
+PASS D1       moves L0 to distance 0 (want 0)
+PASS Dcz      moves L0 to distance 0 (want 0)
+PASS CZchain  moves L0 to distance 0 (want 0)
+PASS CNOT     moves L0 to distance 0 (want 0)
+PASS SWAP     moves L0 to distance 0 (want 0)
+PASS D01      moves L0 to distance 1 (want 1)
+PASS D10      moves L0 to distance 1 (want 1)
+PASS D11      moves L0 to distance 1 (want 1)
+PASS K        moves L0 to distance 2 (want 2)
+     orbit of L0 under the letter symbols: 4745 of 4745 frames
+ALL CHECKS PASS

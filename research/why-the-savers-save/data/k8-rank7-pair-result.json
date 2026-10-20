@@ -1,0 +1,212 @@
+{
+ "label": "k8-twin",
+ "date": "2026-10-13",
+ "hub_state": {
+  "selected_at_start": {
+   "pr": 1042,
+   "kappa": "0.001672188119205421"
+  },
+  "selected_at_end": {
+   "pr": 1094,
+   "author": "rohanarun",
+   "kappa": "0.001672660197076918",
+   "main": "ce7ad1b6",
+   "merged": "2026-10-13T18:47:07Z"
+  },
+  "open_above": {
+   "1121": [
+    "jeremykothe2",
+    "574/575 rank-7 ends + T16 repack",
+    "0.001672965558289236"
+   ],
+   "1130": [
+    "jeremykothe2",
+    "+ eighth slot X54",
+    "0.001673006105142741"
+   ],
+   "1129": [
+    "aliromman",
+    "T37 packing",
+    "0.001674097969905390"
+   ],
+   "1131": [
+    "chafreaky",
+    "T37 packing",
+    "0.001674097969905390"
+   ]
+  },
+  "580_581_claims": "none in any open PR body/title (gh, read-only, PRs up to #1136); Kothe #1121 construction/ends7/README.md names 574, 575, 580, 581 as the only qualifying helpers but builds 574/575 only"
+ },
+ "audit_local_hub_unmodified_py313": {
+  "K8-SLOT-WORD": {
+   "status": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+   "content_sha256": "c2b294300760e1fd6eeab8c22c4d13e4633dca40e52cac8da0d68163a76e3ca8",
+   "local_profile": {
+    "1": 2412,
+    "2": 418,
+    "3": 432,
+    "4": 142,
+    "5": 82,
+    "8": 8
+   },
+   "width_inventory": {
+    "4": 56,
+    "5": 32,
+    "7": 30,
+    "8": 122,
+    "9": 240
+   },
+   "parent_interface_checked": true
+  },
+  "W-k8-580-581": {
+   "status": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+   "content_sha256": "0fe5f87593f1ff84a2f4ab81096f3f67ac58f0409d2692d282b5b3e72e6534a0",
+   "local_profile": {
+    "1": 2406,
+    "2": 432,
+    "3": 424,
+    "4": 142,
+    "5": 82,
+    "8": 8
+   },
+   "width_inventory": {
+    "4": 56,
+    "5": 32,
+    "7": 32,
+    "8": 120,
+    "9": 240
+   },
+   "parent_interface_checked": true
+  },
+  "W-k8-574-575": {
+   "status": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+   "content_sha256": "576a30f923e55b59c2b55a7237f33deed01de746e9108dfe2e6eb4dbe95ae9f9",
+   "local_profile": {
+    "1": 2406,
+    "2": 432,
+    "3": 424,
+    "4": 142,
+    "5": 82,
+    "8": 8
+   },
+   "width_inventory": {
+    "4": 56,
+    "5": 32,
+    "7": 32,
+    "8": 120,
+    "9": 240
+   },
+   "parent_interface_checked": true
+  },
+  "W-k8-574-575-580-581": {
+   "status": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+   "content_sha256": "fcdff8bd4e8f81066b14c372b7a617c498829cc42e05efcc5ad5fc12895a44d9",
+   "local_profile": {
+    "1": 2400,
+    "2": 446,
+    "3": 416,
+    "4": 142,
+    "5": 82,
+    "8": 8
+   },
+   "width_inventory": {
+    "4": 56,
+    "5": 32,
+    "7": 34,
+    "8": 118,
+    "9": 240
+   },
+   "parent_interface_checked": true
+  }
+ },
+ "native_pipeline_colab2": {
+  "steps": [
+   "independent-local",
+   "hpe_audit_and_transport",
+   "hpe_emit_local",
+   "hpe_audit_local",
+   "hpe_adapters_local (cold wrappers)",
+   "phases_full"
+  ],
+  "all_pass_for": [
+   "K8-SLOT-WORD (control)",
+   "W-k8-580-581",
+   "W-k8-574-575-580-581"
+  ],
+  "wrapper_checks": "PASS_RESIDUAL_WRAPPERS_ARE_EXACT; cold hyperplane end pairs 12 (control) -> 13 (580/581) -> 14 (both pairs)",
+  "new_wrapper_recipe_580_581": "RESIDUAL-ADAPTERS key '0:1004', rank 7, terminal_vectors [256,128,65,37,20,8,2]",
+  "program_sha_forward": {
+   "control": "071ecdac...",
+   "580/581": "c36e3a51...",
+   "both": "ed4f09b2..."
+  }
+ },
+ "baseline_1042_replay_with_fresh_natives": "PASS_GAUGE44_T16_STRICT_GLOBAL_REPLAY 0.001672188119205421",
+ "complete_A_580_581_word_transferred_PR1090_map": {
+  "status": "PASS_COMPLETE_K8_RANK7_ASSEMBLY",
+  "kappa": "0.001672404744903063",
+  "conservative": "0.001672404742051193",
+  "map": "PR1090 (1337isnot1337) OWNERS with helper labels 350<->356, 351<->357 swapped (owners/OWNERS-580-581-from-PR1090.json.gz, content 957213ac2cb78f9f...)",
+  "vs_1042": "+2.1663e-07",
+  "vs_selected_1094": "-2.555e-07",
+  "note": "mirror of open PR1090 (same kappa); not above the current selected #1094"
+ },
+ "complete_B_both_pairs_574_575_580_581": {
+  "status": "PASS_COMPLETE_K8_RANK7_ASSEMBLY (discovery+strict bind/emit/audit/invoice/assembly, 69 admission controls, 12 bit controls, independent T16 with 6 controls)",
+  "kappa": "0.001673020532498619",
+  "conservative": "0.001673020529646581",
+  "complex_lower": "209478027603615623513/125000000000000000000000",
+  "complex_profile": {
+   "1": 347806,
+   "2": 64225,
+   "3": 60244,
+   "4": 20449,
+   "5": 11808,
+   "8": 1154,
+   "16": 8,
+   "32": 4,
+   "48": 4877
+  },
+  "word_content_sha256": "fcdff8bd4e8f81066b14c372b7a617c498829cc42e05efcc5ad5fc12895a44d9",
+  "map": "owners/OWNERS-g1314-on1121-s41.json.gz (content e253949f8a3c561834efb1edf32cf4537dec2433df2373387b2025daf257eb99), Kothe PR1121 map re-packed by our window pattern-flow LNS (wlns3.py seed 41, LAM0=1.0015) to absorb 288 helper-580/581 narrowings",
+  "idle": {
+   "1": 2206,
+   "2": 1,
+   "3": 340,
+   "4": 1,
+   "8": 2,
+   "16": 8,
+   "32": 4,
+   "48": 4877
+  },
+  "vs_1042": "+8.3241e-07",
+  "vs_selected_1094": "+3.6034e-07",
+  "vs_open_1121_Kothe": "+5.4974e-08",
+  "vs_open_1130_Kothe_X54": "+1.4427e-08",
+  "below_open": {
+   "1154 Dugongue": "0.001673260706543984",
+   "1129/1131 T37": "0.001674097969905390",
+   "1152 chafreaky T37+rank7": "0.001674340686401949",
+   "1148 tomdif": "0.001675121647789207"
+  },
+  "pricer_reproduces": true,
+  "equal_effort_controls_no_580_581_on_PR1121": {
+   "wlns3 seed41 60 rounds (2-window rounds)": "no change, 0.001672965558289236",
+   "wlns3c seed41 45 rounds (6-window rounds)": "no change, 0.001672965558289236",
+   "wlns3c seed42 45 rounds (6-window rounds)": "{1:2213,3:354,7:3,16:1,48:4875} -> 0.001672979007591178 (+1.345e-08 over PR1121, packing only)",
+   "attribution": "both-pairs map exceeds the best control by +4.15e-08; at most ~1.3e-08 of the +5.50e-08 over PR1121 is search-only packing"
+  }
+ },
+ "pipeline_test_both_pairs_holed_map": {
+  "kappa": "0.001672420539912278",
+  "note": "PR1121 map with 288 rank-1 holes; admission pipeline check only"
+ },
+ "what_ifs_pricer": {
+  "g14 on #1042 +6x48": "0.001672249067005696",
+  "g13+g14 on #1042 +12x48": "0.001672310019198037",
+  "g14 on #1094 +6x48": "0.001672721179073121",
+  "g13+g14 on #1094 +12x48": "0.001672782165465063",
+  "g13+g14 on PR1121 +6x48 (perfect)": "0.001673026562404039",
+  "g13+g14 on PR1121 as +36x8": "0.001672744746488268 (loss)"
+ }
+}

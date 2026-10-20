@@ -1,0 +1,27 @@
+{
+ "588atm3": {
+  "rank": 5916,
+  "narrow": 21305.227682752742,
+  "residuals": 4060,
+  "local_minus_res": 1856,
+  "D_per_replica": 320
+ },
+ "U8E1": {
+  "rank": 5634,
+  "narrow": 20623.137101984106,
+  "residuals": 3778,
+  "local_minus_res": 1856,
+  "D_per_replica": 320
+ },
+ "U8XM_5cc": {
+  "rank": 5679,
+  "narrow": 20733.030115168593,
+  "residuals": 3823,
+  "local_minus_res": 1856,
+  "D_per_replica": 320
+ },
+ "T74 gauge44 (from T74E = 72 local + bank rest)": {
+  "rank": 5594,
+  "narrow": 20420.694933843464
+ }
+}

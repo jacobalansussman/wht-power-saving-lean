@@ -1,0 +1,19 @@
+m=2 W=1 steps=[1, 1] targets=[2]: P=6 E=15 P-E=-9 o=1.875 P-gauge=5.667
+m=2 W=2 steps=[1, 1, 1, 1] targets=[2, 2]: P=26 E=60 P-E=-34 o=7.500 P-gauge=25.333
+m=2 W=1 steps=[1] targets=[2]: P=3 E=15 P-E=-12 o=1.875 P-gauge=2.833
+m=2 W=2 steps=[1, 1, 1] targets=[2, 2]: P=19 E=60 P-E=-41 o=7.500 P-gauge=18.500
+m=2 W=3 steps=[1, 1, 1, 1, 1] targets=[2, 2, 2]: P=49 E=135 P-E=-86 o=16.875 P-gauge=48.167
+m=3 W=1 steps=[1, 1, 1] targets=[3]: P=10 E=135 P-E=-125 o=1.984 P-gauge=9.786
+m=3 W=2 steps=[1, 1, 1, 1, 1, 1] targets=[3, 3]: P=43 E=540 P-E=-497 o=7.938 P-gauge=42.571
+m=3 W=2 steps=[1, 1, 1, 1, 1] targets=[3, 3]: P=34 E=540 P-E=-506 o=7.938 P-gauge=33.643
+m=3 W=3 steps=[1, 1, 1, 1, 1, 1, 1, 1] targets=[3, 3, 3]: P=85 E=1215 P-E=-1130 o=17.859 P-gauge=84.429
+m=3 W=5 steps=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] targets=[3, 3, 3, 3, 3]: P=256 E=3375 P-E=-3119 o=49.609 P-gauge=255.000
+m=3 W=5 steps=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1] targets=[3, 2, 2, 2, 2]: P=170 E=3375 P-E=-3205 o=49.699 P-gauge=169.286
+m=4 W=1 steps=[1, 1, 1, 1] targets=[4]: P=15 E=2295 P-E=-2280 o=1.999 P-gauge=14.867
+m=4 W=2 steps=[1, 1, 1, 1, 1, 1, 1, 1] targets=[4, 4]: P=64 E=9180 P-E=-9116 o=7.996 P-gauge=63.733
+m=4 W=2 steps=[1, 1, 1, 1, 1, 1, 1] targets=[4, 4]: P=53 E=9180 P-E=-9127 o=7.996 P-gauge=52.767
+m=4 W=2 steps=[2, 2, 2, 1] targets=[4, 4]: P=26 E=9180 P-E=-9154 o=7.996 P-gauge=25.956
+m=4 W=3 steps=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1] targets=[4, 4, 4]: P=114 E=20655 P-E=-20541 o=17.991 P-gauge=113.667
+m=2: dominance threshold c = sqrt(2+2L)-2 = 3.657;  exact smallest c with slots(W,cW) >= W^2 L for W=1..5: [4.0, 4.0, 4.0, 3.75, 3.8]
+m=3: dominance threshold c = sqrt(2+2L)-2 = 14.492;  exact smallest c with slots(W,cW) >= W^2 L for W=1..5: [15.0, 15.0, 14.666666666666666, 14.75, 14.6]
+m=4: dominance threshold c = sqrt(2+2L)-2 = 65.764;  exact smallest c with slots(W,cW) >= W^2 L for W=1..5: [67.0, 66.5, 66.0, 66.0, 66.0]

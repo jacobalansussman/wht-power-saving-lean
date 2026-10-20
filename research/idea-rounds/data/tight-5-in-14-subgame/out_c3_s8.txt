@@ -1,0 +1,35 @@
+each nonsingular vector in exactly two point-cliques: Counter({2: 28})
+|O(q0)| = 40320  distinct images in S8: 40320
+to_perm is a homomorphism (200 random pairs): True
+h -> [(0, 1)]  h2 -> [(2, 6)]  h3 -> [(5, 7)]  K -> [(0, 1), (2, 6), (5, 7)]
+|B'| = 1344
+B' orbits on 1-subsets: [8]
+B' orbits on 2-subsets: [28]
+B' orbits on 3-subsets: [56]
+B' orbits on 4-subsets: [14, 56]
+the 14 affine planes (blocks of the Steiner system S(3,4,8) of L_Z): [(0, 1, 2, 5), (0, 1, 3, 6), (0, 1, 4, 7), (0, 2, 3, 4), (0, 2, 6, 7), (0, 3, 5, 7), (0, 4, 5, 6), (1, 2, 3, 7), (1, 2, 4, 6), (1, 3, 4, 5), (1, 5, 6, 7), (2, 3, 5, 6), (2, 4, 5, 7), (3, 4, 6, 7)]
+Levi fixes points: []  Levi orbits on points: [8]
+blocks of K(L_Z) structure: [(0, 1, 2, 3), (0, 1, 4, 5), (0, 1, 6, 7), (0, 2, 4, 6), (0, 2, 5, 7), (0, 3, 4, 7), (0, 3, 5, 6), (1, 2, 4, 7), (1, 2, 5, 6), (1, 3, 4, 6), (1, 3, 5, 7), (2, 3, 4, 5), (2, 3, 6, 7), (4, 5, 6, 7)]  shared blocks with L_Z: 0
+(8,) dim 1  hom err 0.0e+00  trace(transposition)=1  trace(K)=1
+(7, 1) dim 7  hom err 2.2e-16  trace(transposition)=5  trace(K)=1
+(6, 2) dim 20  hom err 4.4e-16  trace(transposition)=10  trace(K)=2
+(6, 1, 1) dim 21  hom err 5.6e-16  trace(transposition)=9  trace(K)=-3
+(5, 3) dim 28  hom err 6.7e-16  trace(transposition)=10  trace(K)=2
+(5, 2, 1) dim 64  hom err 5.6e-16  trace(transposition)=16  trace(K)=0
+(5, 1, 1, 1) dim 35  hom err 6.7e-16  trace(transposition)=5  trace(K)=-3
+(4, 4) dim 14  hom err 6.7e-16  trace(transposition)=4  trace(K)=-0
+(4, 3, 1) dim 70  hom err 7.8e-16  trace(transposition)=10  trace(K)=-2
+(4, 2, 2) dim 56  hom err 5.6e-16  trace(transposition)=4  trace(K)=4
+(4, 2, 1, 1) dim 90  hom err 7.8e-16  trace(transposition)=0  trace(K)=0
+(4, 1, 1, 1, 1) dim 35  hom err 5.6e-16  trace(transposition)=-5  trace(K)=3
+(3, 3, 2) dim 42  hom err 8.9e-16  trace(transposition)=0  trace(K)=-0
+(3, 3, 1, 1) dim 56  hom err 7.8e-16  trace(transposition)=-4  trace(K)=-4
+(3, 2, 2, 1) dim 70  hom err 7.8e-16  trace(transposition)=-10  trace(K)=2
+(3, 2, 1, 1, 1) dim 64  hom err 6.7e-16  trace(transposition)=-16  trace(K)=-0
+(3, 1, 1, 1, 1, 1) dim 21  hom err 4.4e-16  trace(transposition)=-9  trace(K)=3
+(2, 2, 2, 2) dim 14  hom err 7.8e-16  trace(transposition)=-4  trace(K)=0
+(2, 2, 2, 1, 1) dim 28  hom err 6.7e-16  trace(transposition)=-10  trace(K)=-2
+(2, 2, 1, 1, 1, 1) dim 20  hom err 4.4e-16  trace(transposition)=-10  trace(K)=-2
+(2, 1, 1, 1, 1, 1, 1) dim 7  hom err 3.3e-16  trace(transposition)=-5  trace(K)=-1
+(1, 1, 1, 1, 1, 1, 1, 1) dim 1  hom err 0.0e+00  trace(transposition)=-1  trace(K)=-1
+sum of squares of dims: 40320

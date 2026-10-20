@@ -1,0 +1,24 @@
+{
+ "control_942": {"b": "0.001664727258740678855772", "kappa": "0.001661960547713947", "reproduced": true},
+ "step1_no": {
+   "FULL_ended_helpers": 378, "eight_to_nine_in_cleanup": 272, "cold_0_to_9": 216, "entering_to_9": 162,
+   "single_tail_591_candidates": 0, "min_cleanup_gates_per_helper": 2, "gates_commute_to_B_alone": 0,
+   "U_any_order_same_gates_dim": {"9": 377, "8": 1}, "U_closure_first_dim": {"9": 378},
+   "Umin_cones_fixed_endB_dim": {"9": 378}, "Umin_cones_any_AB_frames_dim": {"9": 378},
+   "binding_fixed_endB": "inverse-row cone alone 370; dirt-column cone the other 8 (571,573,583,585,594-597 = hub #988's 347,...,373)",
+   "binding_lazy_frames": "inverse-row cone alone 362; dirt-column cone the other 16"
+ },
+ "variant_rank7_ends": {
+   "dim8_ends_with_dim7_lazy_cone": 70, "groups": 20, "groups_with_negative_local_cost": [17, 18],
+   "group17": {"helpers": [588, 589], "same_as": "hub PR1030 (AlexS-scale)"},
+   "group18": {"helpers": [598, 599], "U": [256, 128, 67, 35, 18, 10, 6], "new": true},
+   "word": "W-g17g18.json.gz", "content_sha256": "483ee95657e32ca8d3daeac5deba9e9b401cccbaed9df71ca00af29979448bfe",
+   "audit": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+   "local_profile": {"1": 2536, "2": 366, "3": 430, "4": 162, "5": 72, "8": 8}, "dlocal": {"1": -12, "2": 28, "3": -16},
+   "width_inventory": {"4": 80, "5": 32, "7": 58, "8": 118, "9": 216}, "width_per_call": 3774,
+   "price_333_perfect": {"b": "0.001664852212601180310833", "kappa": "0.001662085086567277", "idle": {"48": 11113, "42": 1}},
+   "price_72_perfect": {"b": "0.001664853522570218862626", "kappa": "0.001662086392185373", "idle": {"48": 2403}},
+   "price_333_holes": {"b": "0.001663640787939703985421", "kappa": "0.001660877684080688"},
+   "status": "local word exact and audited; owner map for the perfect packing and the hub's emitted cold rank-7 wrapper recipes not built (what-if on those two)"
+ }
+}

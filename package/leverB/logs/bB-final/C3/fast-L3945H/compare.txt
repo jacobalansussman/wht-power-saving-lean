@@ -1,0 +1,8 @@
+non-auxiliary constants: 29512 (original stage, 699 modules) vs 29512 (merged stage, 443 modules)
+auxiliary constants: 8094 (original) vs 8076 (merged); distinct contents 6885 vs 6885
+metaprogramming objects (notation parsers, macros; compared by type only): 1, value differs for 1
+theorems: 12307; same statement in both: all above; proof term identical for 12307, different for 0 (allowed)
+axioms of OAI.PowerSaving.convolution_mainL3945H: original ['Classical.choice', 'Quot.sound', 'propext'], merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+axioms of OAI.PowerSaving.transform_mainL3945H: original ['Classical.choice', 'Quot.sound', 'propext'], merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+axioms of Race.bound: original None, merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+IDENTITY CHECK PASS

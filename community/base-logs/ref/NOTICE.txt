@@ -1,0 +1,13 @@
+Notice (Apache License 2.0, section 4(b)) for the Lean files in this folder.
+
+UniformFourier-<commit>.lean (three files) are unmodified copies of lean/ComparatorChallenges/UniformFourier.lean
+of github.com/openai/math (Apache License 2.0) at the three commits in their names; the three are byte-identical
+(sha256 4c571f275bd7506c..., the same as third-party/openai-math/).
+
+mine-12331685.lean, mine-12331686.lean and mine-Y-7547360.lean are modified copies of the same file, derived
+by the agents to compare the statements of the base build with OpenAI's. Changed, exactly: the exponent
+`1 - 1/(10^(13:ℕ))` of decimalExponent is replaced by `1 - 12331685/(10^(10:ℕ))`, `1 - 12331686/(10^(10:ℕ))`
+and `1 - 7547360/(10^(10:ℕ))` respectively, and seven names (decimalExponent, decimalTime, TimeBounds,
+DFTGoal, ConvGoal, transform_main, convolution_main) have the suffix `C588` (the first two) or `Y` (the
+third). Every other line is OpenAI's. diff-verifier233-vs-openai.txt compares the third with the verifier's
+own copy.

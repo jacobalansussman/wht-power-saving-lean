@@ -1,0 +1,5 @@
+t-open (13 Oct 2026): idea list, tests and top-3 developer briefs are in the agent's returned report (workflow journal).
+Files here:
+  tests/idle_regrain.sh, tests/idle_regrain.out  -- I-idle: certified what-if prices of #1042 with the idle remainder re-grained
+  tests/mcopy_join.py,  tests/mcopy_join.out     -- I-walsh: M-copy content rank and packet-frame joins, group 0 of U8
+Control: #1042 b = 0.001674989015937672328468, kappa = 0.001672188119205421 (first line of idle_regrain.out).

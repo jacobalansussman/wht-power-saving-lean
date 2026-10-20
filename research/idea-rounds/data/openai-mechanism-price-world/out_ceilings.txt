@@ -1,0 +1,36 @@
+OpenAI's family, dense pair 3/2, overhead 7.5 w
+  fixed U^(x)2d        max s = 1.5343e-03 at d = 63  (r = 0.8690)
+  width ln w           max s = 1.5820e-03 at d = 63  (r = 0.8690)
+  uniform block 2d+2   max s = 3.9958e-02 at d = 241  (r = 0.7811)
+  d=  31 r=0.99194 fixed=1.745e-04 width=1.825e-04 uniform=1.947e-03
+  d=  32 r=0.98438 fixed=3.293e-04 width=3.442e-04 uniform=3.759e-03
+  d=  45 r=0.91667 fixed=1.315e-03 width=1.364e-03 uniform=1.924e-02
+  d=  60 r=0.87500 fixed=1.530e-03 width=1.579e-03 uniform=2.780e-02
+  d=  80 r=0.84375 fixed=1.474e-03 width=1.513e-03 uniform=3.339e-02
+  d= 250 r=0.78000 fixed=7.057e-04 width=7.141e-04 uniform=3.995e-02
+
+If the overhead 7.5 w could be cut to c w (same 3/2 dense pair), width-scale ceiling:
+  c= 7.5: max s = 1.5820e-03 at d = 63
+  c=   4: max s = 2.9260e-03 at d = 34
+  c=   2: max s = 5.6894e-03 at d = 17
+  c=   1: max s = 1.0786e-02 at d = 9
+  c= 0.5: max s = 1.9539e-02 at d = 5
+
+If a dense pair cost 1 instead of 3/2 (cheap side d/2 + 7 per coordinate):
+  width ln w           max s = 7.2241e-03 at d = 31
+  uniform block 2d+2   max s = 1.0618e-01 at d = 119
+
+Streaming in the block: uniform ceiling if the block is k*(2d+2) directions
+  k=       1: max s = 3.9958e-02 at d = 241;  fixed-matrix with k: 1.582e-03
+  k=    1000: max s = 1.9387e-02 at d = 507;  fixed-matrix with k: 1.582e-06
+  k=   10000: max s = 1.6633e-02 at d = 592;  fixed-matrix with k: 1.582e-07
+  k=  100000: max s = 1.4580e-02 at d = 677;  fixed-matrix with k: 1.582e-08
+  k= 1000000: max s = 1.2988e-02 at d = 761;  fixed-matrix with k: 1.582e-09
+
+Lean packing (InventoryValidity.scalable_square_win): T=(2W-1)u calls vs 2Wu, so r = 1-1/(2W),
+q = W u, b = 2, s = ln(1/r)/ln(2 W u) ~ 1/(2W ln(2Wu)); W >= K*B + I >= 5*B with B = sum of type widths.
+  d=32: B>=w=7.379e+19, W>=3.689e+20: s <= 1.420e-23
+  d=60: B>=w=5.317e+36, W>=2.658e+37: s <= 1.087e-40
+
+Fixed-matrix versus uniform amplification of the same ratio (record-like unit, block 73, s=1.7173e-3):
+  r = 0.992659; uniform gives 1.7173e-03; fixed (q=2,b=m) gives 1.3595e-04; factor 12.6

@@ -1,0 +1,18 @@
+A5 exact m=1: K K X_all = I: True; S1 K S1 K^-1 S1^3 = dir_e1: True
+A5 exact m=2: K K X_all = I: True; S1 K S1 K^-1 S1^3 = dir_e1: True
+A5 exact m=3: K K X_all = I: True; S1 K S1 K^-1 S1^3 = dir_e1: True
+A5 exact m=4: K K X_all = I: True; S1 K S1 K^-1 S1^3 = dir_e1: True
+A5 exact m=5: K K X_all = I: True; S1 K S1 K^-1 S1^3 = dir_e1: True
+A5 exact m=6: K K X_all = I: True; S1 K S1 K^-1 S1^3 = dir_e1: True
+cert A exact, width 3: rank-1 block moves 4 of the 7 labels of L0; formula 2^w - 2^(w-r) = 4
+cert A exact, width 3: rank-2 block moves 6 of the 7 labels of L0; formula 2^w - 2^(w-r) = 6
+cert A exact, width 3: rank-3 block moves 7 of the 7 labels of L0; formula 2^w - 2^(w-r) = 7
+cert A exact, width 4: rank-1 block moves 8 of the 15 labels of L0; formula 2^w - 2^(w-r) = 8
+cert A exact, width 4: rank-2 block moves 12 of the 15 labels of L0; formula 2^w - 2^(w-r) = 12
+cert A exact, width 4: rank-3 block moves 14 of the 15 labels of L0; formula 2^w - 2^(w-r) = 14
+cert A exact, width 4: rank-4 block moves 15 of the 15 labels of L0; formula 2^w - 2^(w-r) = 15
+cert A exact, width 5: rank-1 block moves 16 of the 31 labels of L0; formula 2^w - 2^(w-r) = 16
+cert A exact, width 5: rank-2 block moves 24 of the 31 labels of L0; formula 2^w - 2^(w-r) = 24
+cert A exact, width 5: rank-3 block moves 28 of the 31 labels of L0; formula 2^w - 2^(w-r) = 28
+cert A exact, width 5: rank-4 block moves 30 of the 31 labels of L0; formula 2^w - 2^(w-r) = 30
+cert A exact, width 5: rank-5 block moves 31 of the 31 labels of L0; formula 2^w - 2^(w-r) = 31

@@ -1,0 +1,34 @@
+rank(M(w) - I), f = 12, 20, 33: [0, 0, 0] chi Slast1 chi^-1 P^-1
+rank(M(w) - I), f = 12, 20, 33: [0, 0, 0] chi_row1 Slast1 chi_row1^-1 P^-1
+E^-1 Dcz E Dcz^-1: is phase type (x-part identity, z += B x): True
+   z += B x couplings in the bulk (column offset, z-row, x-row): [(np.int64(-1), np.int64(1), np.int64(1)), (np.int64(1), np.int64(1), np.int64(1))]
+  lambda=1: chi: not regular with q = 1
+  lambda=1: chi_ac: not regular with q = 1
+  lambda=1: chi_row1: not regular with q = 1
+  lambda=1: E: regular (q=1)
+  lambda=1: Gm: not regular with q = 1
+  lambda=1: G5: not regular with q = 1
+  lambda=1: D1: regular (q=1)
+  lambda=1: Dcz: regular (q=1)
+  lambda=1: CZch: regular (q=1)
+  lambda=1: P: not regular with q = 1
+  lambda=1: Slast: regular (q=1)
+  lambda=1: Hlast: regular (q=1)
+  lambda=1: Hfirst: regular (q=1)
+  lambda=1: k: not regular with q = 1
+  lambda=1: l: not regular with q = 1
+  lambda=1: CNOT: regular (q=1)
+  lambda=1: SWAPQ: regular (q=1)
+  lambda=1: SS: regular (q=1)
+  lambda=1: Dt01: regular (q=1)
+  lambda=1: Dt10: regular (q=1)
+  lambda=1: Dt11: regular (q=1)
+  lambda=1: H0: regular (q=1)
+  lambda=1: H1: regular (q=1)
+  lambda=1: H11: regular (q=1)
+  lambda=1: HH: regular (q=1)
+  lambda=1: KX: regular (q=1)
+  lambda=1: Slast1: regular (q=1)
+letters singular at 1 as expected: True ['CNOT', 'CZch', 'D1', 'Dcz', 'Dt01', 'Dt10', 'Dt11', 'E', 'H0', 'H1', 'H11', 'HH', 'Hfirst', 'Hlast', 'KX', 'SS', 'SWAPQ', 'Slast', 'Slast1']
+lambda=1 symbols are symplectic: True
+lambda=1: 60 random words, 60 with s(w) != I, rank-growth failures: 0

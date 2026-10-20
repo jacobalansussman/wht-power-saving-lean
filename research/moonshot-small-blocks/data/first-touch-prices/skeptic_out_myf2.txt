@@ -1,0 +1,54 @@
+=== krelay 5,4 struct 24 0 x_krelay_54_struct_s24_t0.npy
+W 6 targets ['K', 'R', 'R', 'R', 'R', 'R'] moves 12 coefs 112
+  kernel slot 0: D-block Gram eigenvalues/row (top 3) [1.     0.9996 0.    ] ; character weights in the top-2 missed plane {'000': 0.0, '100': 0.0, '010': 0.0, '110': 0.0, '001': 1.0, '101': 1.0, '011': -0.0, '111': -0.0}
+total f=2 residual 0.250155
+per (slot, block) residual > 1e-6: {'0D': 0.249957, '1D': 4e-06, '2D': 9e-06, '3D': 1e-05, '4D': 1e-05, '5D': 1.3e-05, '0S': 0.000152}
+max two-row residual: 1.2860313557716303e-05
+=== krelay 5,4 struct 24 1 x_krelay_54_struct_s24_t1.npy
+W 6 targets ['K', 'R', 'R', 'R', 'R', 'R'] moves 12 coefs 112
+  kernel slot 0: D-block Gram eigenvalues/row (top 3) [1.     0.8646 0.    ] ; character weights in the top-2 missed plane {'000': -0.0, '100': 0.0, '010': 0.0, '110': 0.0, '001': 1.0, '101': 1.0, '011': -0.0, '111': -0.0}
+total f=2 residual 0.258359
+per (slot, block) residual > 1e-6: {'0D': 0.233077, '1D': 0.004928, '2D': 0.001753, '3D': 0.000614, '4D': 0.002926, '5D': 0.006704, '0S': 0.008358}
+max two-row residual: 0.0067042557019000495
+=== krelay 5,4 struct 24 2 x_krelay_54_struct_s24_t2.npy
+W 6 targets ['K', 'R', 'R', 'R', 'R', 'R'] moves 12 coefs 112
+  kernel slot 0: D-block Gram eigenvalues/row (top 3) [1. 1. 0.] ; character weights in the top-2 missed plane {'000': 0.0, '100': -0.0, '010': -0.0, '110': 0.0, '001': 1.0, '101': 1.0, '011': 0.0, '111': -0.0}
+total f=2 residual 0.276612
+per (slot, block) residual > 1e-6: {'0D': 0.25, '0S': 0.026612}
+max two-row residual: 2.5030949124550873e-13
+=== krelay 5,4 engine 22 0 x_krelay_54_engine_s22_t0.npy
+W 6 targets ['K', 'R', 'R', 'R', 'R', 'R'] moves 12 coefs 112
+  kernel slot 0: D-block Gram eigenvalues/row (top 3) [0. 0. 0.] ; character weights in the top-2 missed plane {'000': 0.993, '100': 0.994, '010': 0.006, '110': 0.007, '001': 0.0, '101': 0.0, '011': -0.0, '111': -0.0}
+total f=2 residual 0.500038
+per (slot, block) residual > 1e-6: {'1D': 0.103491, '2D': 0.054983, '3D': 0.031993, '4D': 0.053258, '5D': 0.256274, '0S': 3e-05, '1S': 2e-06, '5S': 4e-06}
+max two-row residual: 0.2562743729998589
+=== layered 6,5,1 struct 15 0 x_layered_651_struct_s15_t0.npy
+W 6 targets ['K', 'R', 'R', 'R', 'R', 'R'] moves 12 coefs 112
+  kernel slot 0: D-block Gram eigenvalues/row (top 3) [7.121e-01 2.900e-03 5.000e-04] ; character weights in the top-2 missed plane {'000': 0.0, '100': 0.0, '010': 0.0, '110': 0.0, '001': 1.0, '101': 1.0, '011': -0.0, '111': -0.0}
+total f=2 residual 0.25662
+per (slot, block) residual > 1e-6: {'0D': 0.089534, '1D': 0.019369, '2D': 0.082919, '3D': 0.008167, '4D': 0.035305, '5D': 0.014859, '0S': 0.000439, '1S': 0.000793, '2S': 0.003209, '3S': 0.000184, '4S': 0.001394, '5S': 0.000447}
+max two-row residual: 0.0829191203609238
+=== layered 6,5,1 struct 49 0 x_layered_651_struct_s49_t0_k2_i0_15.npy
+W 6 targets ['K', 'R', 'R', 'R', 'R', 'R'] moves 12 coefs 112
+  kernel slot 0: D-block Gram eigenvalues/row (top 3) [9.999e-01 9.999e-01 5.000e-04] ; character weights in the top-2 missed plane {'000': 0.0, '100': 0.0, '010': 0.0, '110': 0.0, '001': 1.0, '101': 1.0, '011': -0.0, '111': 0.0}
+total f=2 residual 0.250169
+per (slot, block) residual > 1e-6: {'0D': 0.250113, '1D': 1.7e-05, '2D': 7e-06, '3D': 1.5e-05, '4D': 1.2e-05, '5D': 4e-06, '0S': 2e-06}
+max two-row residual: 1.679455444320991e-05
+=== layered 6,6,1 engine 11 0 x_layered_661_engine_s11_t0.npy
+W 6 targets ['K', 'R', 'R', 'R', 'R', 'R'] moves 13 coefs 126
+  kernel slot 0: D-block Gram eigenvalues/row (top 3) [0. 0. 0.] ; character weights in the top-2 missed plane {'000': 0.993, '100': 0.982, '010': 0.018, '110': 0.007, '001': 0.0, '101': 0.0, '011': -0.0, '111': -0.0}
+total f=2 residual 0.0
+per (slot, block) residual > 1e-6: {}
+max two-row residual: 8.673800910258509e-09
+=== layered 6,6,1 struct 31 0 x_layered_661_struct_s31_t0.npy
+W 6 targets ['K', 'R', 'R', 'R', 'R', 'R'] moves 13 coefs 126
+  kernel slot 0: D-block Gram eigenvalues/row (top 3) [0. 0. 0.] ; character weights in the top-2 missed plane {'000': 0.683, '100': 0.891, '010': 0.138, '110': 0.288, '001': 0.0, '101': 0.0, '011': 0.0, '111': 0.0}
+total f=2 residual 0.006224
+per (slot, block) residual > 1e-6: {'0D': 4e-06, '1S': 0.001162, '2S': 0.003404, '3S': 9.5e-05, '4S': 0.00129, '5S': 0.000269}
+max two-row residual: 0.0034040748544479304
+=== krelay 5,5 engine 26 0 x_krelay_55_engine_s26_t0.npy
+W 6 targets ['K', 'R', 'R', 'R', 'R', 'R'] moves 13 coefs 126
+  kernel slot 0: D-block Gram eigenvalues/row (top 3) [0. 0. 0.] ; character weights in the top-2 missed plane {'000': 0.325, '100': 0.721, '010': 0.588, '110': 0.366, '001': 0.0, '101': 0.0, '011': 0.0, '111': 0.0}
+total f=2 residual 1e-06
+per (slot, block) residual > 1e-6: {}
+max two-row residual: 1.604459941085409e-09

@@ -1,0 +1,74 @@
+[
+ {
+  "design": "D4",
+  "n": 12,
+  "Z": 12,
+  "groups": [
+   4,
+   4,
+   4
+  ],
+  "method": "exact",
+  "floor_per_port": 1.0
+ },
+ {
+  "design": "D5",
+  "n": 20,
+  "Z": 12,
+  "groups": [
+   4,
+   4,
+   4
+  ],
+  "method": "exact",
+  "floor_per_port": 0.6
+ },
+ {
+  "design": "D6",
+  "n": 30,
+  "Z": 12,
+  "groups": [
+   4,
+   4,
+   4
+  ],
+  "method": "greedy, 4000 restarts (a lower bound on the best Z)",
+  "floor_per_port": 0.4
+ },
+ {
+  "design": "A3",
+  "n": 6,
+  "Z": 6,
+  "groups": [
+   2,
+   2,
+   2
+  ],
+  "method": "exact",
+  "floor_per_port": 1.0
+ },
+ {
+  "design": "A4",
+  "n": 10,
+  "Z": 6,
+  "groups": [
+   2,
+   2,
+   2
+  ],
+  "method": "exact",
+  "floor_per_port": 0.6
+ },
+ {
+  "design": "A5",
+  "n": 15,
+  "Z": 6,
+  "groups": [
+   2,
+   2,
+   2
+  ],
+  "method": "exact",
+  "floor_per_port": 0.4
+ }
+]

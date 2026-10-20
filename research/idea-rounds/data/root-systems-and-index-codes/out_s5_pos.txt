@@ -1,0 +1,5 @@
+pos W=7 seed 1 start 0: M=35, subset residual 9406.73 (150 its), ALL-forms residual 327693, 64 s
+python3 s5_sub7_probe.py pos 7 1 1  64.26s user 0.78s system 99% cpu 1:05.24 total
+pos W=7 seed 2 start 0: M=35, subset residual 11070.4 (320 its), ALL-forms residual 391619, 125 s
+pos W=7 seed 2 start 1: M=35, subset residual 5611.33 (320 its), ALL-forms residual 196608, 119 s
+ITERS=320 python3 s5_sub7_probe.py pos 7 2 2  241.36s user 2.76s system 99% cpu 4:04.89 total

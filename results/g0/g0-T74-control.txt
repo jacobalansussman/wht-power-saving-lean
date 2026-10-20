@@ -1,0 +1,204 @@
+{
+ "label": "T74 control",
+ "call_blocks": {
+  "calls_per_provider": {
+   "extra": 417,
+   "gauge44": 249
+  },
+  "max_rank_over_both_words": 8,
+  "all_call_blocks_rank_le_8": true,
+  "global_profile": {
+   "1": 1560432,
+   "2": 336336,
+   "3": 278724,
+   "4": 84912,
+   "5": 54612,
+   "8": 5328,
+   "48": 22748
+  },
+  "hub_profile": {
+   "1": 1560432,
+   "2": 336336,
+   "3": 278724,
+   "4": 84912,
+   "5": 54612,
+   "8": 5328,
+   "48": 22748
+  },
+  "global_profile_equals_hub": true,
+  "rank_mass": 4816512
+ },
+ "child_to_kind": {
+  "0": {
+   "kind": "A2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 16
+  },
+  "1": {
+   "kind": "B2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 8
+  },
+  "2": {
+   "kind": "A2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 16
+  },
+  "3": {
+   "kind": "B2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 8
+  },
+  "4": {
+   "kind": "A3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 32
+  },
+  "5": {
+   "kind": "B3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 8
+  },
+  "6": {
+   "kind": "A3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 32
+  },
+  "7": {
+   "kind": "B3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 8
+  },
+  "8": {
+   "kind": "A4",
+   "hub_pair": 3,
+   "side": 0,
+   "rank": 48
+  },
+  "9": {
+   "kind": "B4",
+   "hub_pair": 3,
+   "side": 0,
+   "rank": 8
+  },
+  "10": {
+   "kind": "A4",
+   "hub_pair": 3,
+   "side": 1,
+   "rank": 48
+  },
+  "11": {
+   "kind": "B4",
+   "hub_pair": 3,
+   "side": 1,
+   "rank": 8
+  },
+  "12": {
+   "kind": "F1",
+   "hub_pair": 0,
+   "side": 0,
+   "rank": 48
+  },
+  "13": {
+   "kind": "F1",
+   "hub_pair": 0,
+   "side": 1,
+   "rank": 48
+  },
+  "14": {
+   "kind": "F2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 32
+  },
+  "15": {
+   "kind": "F2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 32
+  },
+  "16": {
+   "kind": "F3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 16
+  },
+  "17": {
+   "kind": "F3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 16
+  }
+ },
+ "fill": {
+  "rows": 319680,
+  "roles_per_call": 480,
+  "calls": 666,
+  "replicas": 74
+ },
+ "ok": true
+}
+{
+ "label": "our network, T74 control order",
+ "roles": 319680,
+ "cross_replica_roles": 296300,
+ "violations": {},
+ "loads_over_rank": 0,
+ "one_use_per_call_and_role": true,
+ "remainders": 22748,
+ "remainder_profile": {
+  "48": 22748
+ },
+ "classes": [
+  {
+   "hub_child": 8,
+   "kind": "A4",
+   "side": "x",
+   "remainder": 48,
+   "cls": "HEAD-literal",
+   "count": 6150
+  },
+  {
+   "hub_child": 10,
+   "kind": "A4",
+   "side": "y",
+   "remainder": 48,
+   "cls": "HEAD-literal",
+   "count": 4860
+  },
+  {
+   "hub_child": 12,
+   "kind": "F1",
+   "side": "x",
+   "remainder": 48,
+   "cls": "neither",
+   "count": 6672
+  },
+  {
+   "hub_child": 13,
+   "kind": "F1",
+   "side": "y",
+   "remainder": 48,
+   "cls": "neither",
+   "count": 5066
+  }
+ ],
+ "totals_by_class": {
+  "HEAD-literal": 11010,
+  "neither": 11738
+ },
+ "rank48_by_class": {
+  "HEAD-literal": 11010,
+  "neither": 11738
+ },
+ "heads_rank48_unhosted": 11010
+}
+controls: {"totals_by_class": {"neither": 22748}, "rank48_by_class": {"neither": 22748}, "violations": {"outside_our_window": 33396}} {"totals_by_class": {"HEAD-literal": 11010, "TAIL-literal": 11738}, "rank48_by_class": {"HEAD-literal": 11010, "TAIL-literal": 11738}, "classes": [{"hub_child": 12, "kind": "F1", "side": "x", "remainder": 48, "cls": "TAIL-literal", "count": 6672}, {"hub_child": 13, "kind": "F1", "side": "y", "remainder": 48, "cls": "TAIL-literal", "count": 5066}]}

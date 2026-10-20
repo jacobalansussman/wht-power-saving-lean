@@ -1,0 +1,89 @@
+'OAI.PowerSaving.XEX.GInvX.toE'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XEX.GLabX.inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XEX.fitsX_ofLab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XEX.HubTail.hHsplit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XEX.HubTail.hHr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XEX.wht_of_ginvx_401' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XEX.engine_of_ginvx_401' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XEX.engine_of_halvesX_401' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XEX.wht_of_halvesX_401' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GX.engine_of_ginv_401' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GX.wht_of_ginv_401' depends on axioms: [propext, Classical.choice, Quot.sound]
+@OAI.PowerSaving.XEX.engine_of_ginvx_401 : ∀ {H T Sl C : Type} [inst : Fintype H] [inst_1 : DecidableEq H]
+  [inst_2 : Fintype T] [inst_3 : DecidableEq T] [inst_4 : Fintype Sl] [inst_5 : DecidableEq Sl] [inst_6 : Fintype C]
+  [inst_7 : DecidableEq C] (I : OAI.PowerSaving.XEX.GInvX H T Sl C),
+  Fintype.card H = 9 →
+    ∀ (S : OAI.PowerSaving.GX.BankSched Sl),
+      OAI.PowerSaving.XEX.fitsX S I →
+        ∀ (u W : ℕ),
+          73 = u →
+            64 * Fintype.card T + S.nb = W →
+              1 ≤ W →
+                ∀ (U : List (ℕ × ℕ)),
+                  (∀ (φ : ℕ → ℝ),
+                      72 * I.cost φ + ↑(Fintype.card T) * OAI.PowerSaving.GX.bankPrice377 φ +
+                          ∑ b, OAI.PowerSaving.CB.bcost φ (S.pad b) =
+                        OAI.PowerSaving.Binary.listCost φ U) →
+                    ∀ (s : ℕ) (z : ℝ),
+                      0 ≤ z →
+                        z ≤ 1 →
+                          (2 ^ s - 1) * OAI.PowerSaving.BlockAccounting.moment u z U +
+                                ↑W *
+                                  (OAI.PowerSaving.BlockAccounting.T u z (u - 1) 1 +
+                                    OAI.PowerSaving.BlockAccounting.T u z 1 1) <
+                              2 ^ s * ↑W →
+                            ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+                              (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+                              OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl)
+                                (OAI.PowerSaving.RAM.bundle cl) (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+                                (fun i =>
+                                  (OAI.PowerSaving.Binary.bits (k i)).tape (OAI.PowerSaving.Binary.ripple (k i) (v i)))
+                                fun i => 2 ^ k i * OAI.PowerSaving.envelope z (k i)
+@OAI.PowerSaving.XEX.wht_of_ginvx_401 : ∀ {H T Sl C : Type} [inst : Fintype H] [inst_1 : DecidableEq H]
+  [inst_2 : Fintype T] [inst_3 : DecidableEq T] [inst_4 : Fintype Sl] [inst_5 : DecidableEq Sl] [inst_6 : Fintype C]
+  [inst_7 : DecidableEq C] (I : OAI.PowerSaving.XEX.GInvX H T Sl C),
+  Fintype.card H = 9 →
+    ∀ (S : OAI.PowerSaving.GX.BankSched Sl),
+      OAI.PowerSaving.XEX.fitsX S I →
+        ∀ (u W : ℕ),
+          73 = u →
+            64 * Fintype.card T + S.nb = W →
+              1 ≤ W →
+                ∀ (U : List (ℕ × ℕ)),
+                  (∀ (φ : ℕ → ℝ),
+                      72 * I.cost φ + ↑(Fintype.card T) * OAI.PowerSaving.GX.bankPrice377 φ +
+                          ∑ b, OAI.PowerSaving.CB.bcost φ (S.pad b) =
+                        OAI.PowerSaving.Binary.listCost φ U) →
+                    ∀ (s : ℕ) (z : ℝ),
+                      0 ≤ z →
+                        z < 1 →
+                          (2 ^ s - 1) * OAI.PowerSaving.BlockAccounting.moment u z U +
+                                ↑W *
+                                  (OAI.PowerSaving.BlockAccounting.T u z (u - 1) 1 +
+                                    OAI.PowerSaving.BlockAccounting.T u z 1 1) <
+                              2 ^ s * ↑W →
+                            ∃ solve W',
+                              OAI.PowerSaving.WHT.WHTProgram solve W' ∧ OAI.PowerSaving.BlockWHT.WHTTimeBoundsAt z W'
+	Command being timed: "lake env lean XExitAxioms.lean"
+	User time (seconds): 5.49
+	System time (seconds): 3.67
+	Percent of CPU this job got: 86%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6541644
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 612
+	Minor (reclaiming a frame) page faults: 184091
+	Voluntary context switches: 7048
+	Involuntary context switches: 421
+	Swaps: 0
+	File system inputs: 115872
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

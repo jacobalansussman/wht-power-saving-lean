@@ -1,0 +1,81 @@
+== (A) letters: symbol at alpha and tameness of M e_I(c) - e_I(s c) ==
+PASS chi      q=[-1, 0]: symbol consistent at two windows/sizes; residual radius 1,1 <= 3; s = [[3, 0, 0, 0], [0, 3, 0, 0], [0, 0, 3, 0], [0, 0, 0, 3]]
+PASS chi^-1   q=[0, 1]: symbol consistent at two windows/sizes; residual radius 1,1 <= 3; s = [[2, 0, 0, 0], [0, 2, 0, 0], [0, 0, 2, 0], [0, 0, 0, 2]]
+PASS chiA     q=[0, 1]: symbol consistent at two windows/sizes; residual radius 1,1 <= 3; s = [[2, 0, 0, 0], [0, 2, 0, 0], [0, 0, 2, 0], [0, 0, 0, 2]]
+PASS chiA^-1  q=[-1, 0]: symbol consistent at two windows/sizes; residual radius 1,1 <= 3; s = [[3, 0, 0, 0], [0, 3, 0, 0], [0, 0, 3, 0], [0, 0, 0, 3]]
+PASS E        q=[0]: symbol consistent at two windows/sizes; residual radius 1,1 <= 3; s = [[1, 2, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 3, 1]]
+PASS Gm       q=[-1, 0]: symbol consistent at two windows/sizes; residual radius 2,2 <= 3; s = [[1, 2, 0, 0], [2, 0, 0, 0], [0, 0, 0, 2], [0, 0, 2, 3]]
+PASS Gm^-1    q=[0, 1]: symbol consistent at two windows/sizes; residual radius 2,2 <= 3; s = [[0, 3, 0, 0], [3, 2, 0, 0], [0, 0, 1, 3], [0, 0, 3, 0]]
+PASS D1       q=[0]: symbol consistent at two windows/sizes; residual radius -1,-1 <= 3; s = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 1, 0, 1]]
+PASS Dcz      q=[0]: symbol consistent at two windows/sizes; residual radius -1,-1 <= 3; s = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 1, 1, 0], [1, 0, 0, 1]]
+PASS P        q=[0, 1]: symbol consistent at two windows/sizes; residual radius 1,-1 <= 3; s = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS Slast    q=[0]: symbol consistent at two windows/sizes; residual radius -1,-1 <= 3; s = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS Hlast    q=[0]: symbol consistent at two windows/sizes; residual radius -1,-1 <= 3; s = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS k        q=[0, 1]: symbol consistent at two windows/sizes; residual radius 2,-1 <= 3; s = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS l        q=[0, 1]: symbol consistent at two windows/sizes; residual radius 2,-1 <= 3; s = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS D01      q=[0]: symbol consistent at two windows/sizes; residual radius -1,-1 <= 3; s = [[1, 0, 1, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS D10      q=[0]: symbol consistent at two windows/sizes; residual radius -1,-1 <= 3; s = [[1, 0, 0, 0], [0, 1, 0, 1], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS D11      q=[0]: symbol consistent at two windows/sizes; residual radius -1,-1 <= 3; s = [[1, 0, 1, 1], [0, 1, 1, 1], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS K        q=[0]: symbol consistent at two windows/sizes; residual radius -1,-1 <= 3; s = [[0, 0, 1, 0], [0, 0, 0, 1], [1, 0, 0, 0], [0, 1, 0, 0]]
+PASS CNOT     q=[0]: symbol consistent at two windows/sizes; residual radius -1,-1 <= 3; s = [[1, 1, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 1, 1]]
+PASS SWAP     q=[0]: symbol consistent at two windows/sizes; residual radius -1,-1 <= 3; s = [[0, 1, 0, 0], [1, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0]]
+PASS s(chi) s(chi^-1) = I
+PASS s(chi^-1) s(chi) = I
+PASS s(chiA) s(chiA^-1) = I
+PASS s(chiA^-1) s(chiA) = I
+PASS s(Gm) s(Gm^-1) = I
+PASS s(Gm^-1) s(Gm) = I
+== (E) the symbols on the 27 frames ==
+PASS chi      preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS chi^-1   preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS chiA     preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS chiA^-1  preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS E        preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS Gm       preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS Gm^-1    preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS D1       preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS Dcz      preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS P        preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS Slast    preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS Hlast    preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS k        preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS l        preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS D01      preserves Hg; distance(L0, s L0) = 1 (want 1, paid)
+PASS D10      preserves Hg; distance(L0, s L0) = 1 (want 1, paid)
+PASS D11      preserves Hg; distance(L0, s L0) = 1 (want 1, paid)
+PASS K        preserves Hg; distance(L0, s L0) = 2 (want 2, paid)
+PASS CNOT     preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+PASS SWAP     preserves Hg; distance(L0, s L0) = 0 (want 0, free)
+== (D) identities between families and their symbols ==
+PASS f=12: M(chi Slast chi^-1) = M(P)
+PASS f=12: M(E^-1 Dcz E Dcz^-1) = M(CZ chain on row 1)
+PASS f=20: M(chi Slast chi^-1) = M(P)
+PASS f=20: M(E^-1 Dcz E Dcz^-1) = M(CZ chain on row 1)
+PASS symbol(chi Slast chi^-1) = symbol(P) = I
+PASS symbol(E^-1 Dcz E Dcz^-1) = symbol(CZ chain) = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 1, 0, 1]] (= symbol(D1): the S_last relation holds in the bulk)
+PASS f=16: skeptic's k*l: rank(M - I) = 4 (bounded), symbol(k) s(l) = I
+PASS f=24: skeptic's k*l: rank(M - I) = 4 (bounded), symbol(k) s(l) = I
+PASS f=32: skeptic's k*l: rank(M - I) = 4 (bounded), symbol(k) s(l) = I
+== (B) random words: wave property with Q_w = product of q's;  (C) rank lemma ==
+PASS (B) 60 random words: residual of M(w) e_I(c) - e_I(s_w c) is (Q_w, dI, R_w)-tame in all (0 bad)
+   s_w != I: rank(M - I) at f = 24, 36, 48: [48, 72, 96]  (window bound K: [np.int64(1), np.int64(3), np.int64(4)])  word E D10 CNOT D11
+   s_w != I: rank(M - I) at f = 24, 36, 48: [96, 144, 192]  (window bound K: [0, np.int64(1), np.int64(1)])  word Hlast Slast D11 Hlast E K l
+   s_w != I: rank(M - I) at f = 24, 36, 48: [92, 140, 188]  (window bound K: [0, 0, np.int64(1)])  word D01 l Dcz D1 chi^-1 D01
+   s_w != I: rank(M - I) at f = 24, 36, 48: [73, 109, 145]  (window bound K: [0, 0, np.int64(1)])  word D11 CNOT k Slast Dcz l CNOT
+   s_w != I: rank(M - I) at f = 24, 36, 48: [93, 141, 189]  (window bound K: [0, 0, 0])  word chiA Slast Gm^-1 chiA^-1 k
+   s_w != I: rank(M - I) at f = 24, 36, 48: [48, 72, 96]  (window bound K: [0, 0, 0])  word k chiA^-1 l k chiA E
+   s_w != I: rank(M - I) at f = 24, 36, 48: [90, 138, 186]  (window bound K: [np.int64(1), np.int64(2), np.int64(2)])  word Dcz Hlast chi^-1 Hlast
+   s_w != I: rank(M - I) at f = 24, 36, 48: [93, 141, 189]  (window bound K: [0, 0, 0])  word chi^-1 Gm^-1 chi P
+   s_w != I: rank(M - I) at f = 24, 36, 48: [94, 142, 190]  (window bound K: [np.int64(1), np.int64(2), np.int64(2)])  word chi Dcz
+   s_w != I: rank(M - I) at f = 24, 36, 48: [70, 106, 142]  (window bound K: [3, 5, 7])  word Hlast K D10
+   s_w != I: rank(M - I) at f = 24, 36, 48: [92, 140, 188]  (window bound K: [np.int64(1), np.int64(2), np.int64(2)])  word Hlast chi Dcz
+   s_w != I: rank(M - I) at f = 24, 36, 48: [92, 140, 188]  (window bound K: [np.int64(1), np.int64(2), np.int64(2)])  word chiA^-1 CNOT
+PASS (C) every sampled word with s_w != I has rank(M - I) >= K(f) and strictly growing
+   words with s_w = I (rank may be anything; S2 is one-directional):
+     P Hlast: rank(M - I) at f = 24, 36: [3, 3]
+     chi chi^-1: rank(M - I) at f = 24, 36: [0, 0]
+     D10 D10: rank(M - I) at f = 24, 36: [0, 0]
+     SWAP SWAP: rank(M - I) at f = 24, 36: [0, 0]
+     Slast Slast P: rank(M - I) at f = 24, 36: [1, 1]
+     Slast chiA^-1 chi chiA^-1: rank(M - I) at f = 24, 36: [96, 144]
+ALL CHECKS PASS

@@ -1,0 +1,14 @@
+m= 2: eigenvalue check True; c_1/mu_1 = 3/2, c_m/mu_m = 1/2
+m= 3: eigenvalue check True; c_1/mu_1 = 7/4, c_m/mu_m = 3/4
+m= 4: eigenvalue check True; c_1/mu_1 = 15/8, c_m/mu_m = 5/8
+m= 5: eigenvalue check True; c_1/mu_1 = 31/16, c_m/mu_m = 11/16
+m= 6: eigenvalue check True; c_1/mu_1 = 63/32, c_m/mu_m = 21/32
+m= 7: eigenvalue check True; c_1/mu_1 = 127/64, c_m/mu_m = 43/64
+m= 8: eigenvalue check True; c_1/mu_1 = 255/128, c_m/mu_m = 85/128
+m= 9: eigenvalue check True; c_1/mu_1 = 511/256, c_m/mu_m = 171/256
+m=10: eigenvalue check True; c_1/mu_1 = 1023/512, c_m/mu_m = 341/512
+m=11: eigenvalue check True; c_1/mu_1 = 2047/1024, c_m/mu_m = 683/1024
+m=12: eigenvalue check True; c_1/mu_1 = 4095/2048, c_m/mu_m = 1365/2048
+m=13: eigenvalue check True; c_1/mu_1 = 8191/4096, c_m/mu_m = 2731/4096
+m=14: eigenvalue check True; c_1/mu_1 = 16383/8192, c_m/mu_m = 5461/8192
+ALL EXACT CHECKS PASS

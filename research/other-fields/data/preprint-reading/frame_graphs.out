@@ -1,0 +1,14 @@
+block size 2: frames 15, degree [(6, 15)], frames at distance k from one frame [(0, 1), (1, 6), (2, 8)], triangles 15, edges 45, (distance, common neighbours): count [((1, 1), 6), ((2, 3), 8)], bipartite: False
+block size 3: frames 135, degree [(14, 135)], frames at distance k from one frame [(0, 1), (1, 14), (2, 56), (3, 64)], triangles 315, edges 945, (distance, common neighbours): count [((1, 1), 14), ((2, 3), 56)], bipartite: False
+block size 4: frames 2295, degree [(30, 2295)], frames at distance k from one frame [(0, 1), (1, 30), (2, 280), (3, 960), (4, 1024)], triangles 11475, edges 34425, (distance, common neighbours): count [((1, 1), 30), ((2, 3), 280)], bipartite: False
+block size 5 by the same formulas [derived, not built]: frames 3*5*9*17*33 = 75735 , degree 62, opposite frames per frame 2^15 = 32768
+--- exponent of the translated unit by the engine's inequality in the limit of large s: sum over blocks (k/m)^z < W
+Braverman-He causal code as it stands: W=157, m=5, moves=735 against 785; saved fraction 0.0637; all blocks of rank 1: x = 0.0409; per-rank formula -ln(1-rho)/ln m = 0.0409; whole-block bound rho/((1-rho) ln m) = 0.0423; same bound if every move sat in a rank-(m-1) block (not available to this code): 0.3049
+their nondeterministic certificate (not a schedule): W=166, m=5, moves=744 against 830; saved fraction 0.1036; all blocks of rank 1: x = 0.0680; per-rank formula -ln(1-rho)/ln m = 0.0680; whole-block bound rho/((1-rho) ln m) = 0.0718; same bound if every move sat in a rank-(m-1) block (not available to this code): 0.5180
+saved fraction needed for x = 0.1 with rank-1 blocks at block size 3: 0.1040  (moves per array at most 2.6879 of 3)
+saved fraction needed for x = 0.1 with rank-1 blocks at block size 4: 0.1294  (moves per array at most 3.4822 of 4)
+saved fraction needed for x = 0.1 with rank-1 blocks at block size 5: 0.1487  (moves per array at most 4.2567 of 5)
+saved fraction needed for x = 0.1 with rank-1 blocks at block size 7: 0.1768  (moves per array at most 5.7622 of 7)
+rate a code of this design needs (K sessions on a graph with E edges before deletion, ends of a session m apart): cost (E-K)/(mK);
+   m=3: gain at all needs K/E > 0.2500; x >= 0.1 needs K/E > 0.2712;  the preprint's figures: 166/910 = 0.1824 (certificate), 157/(735+157) = 0.1760 (causal)
+   m=5: gain at all needs K/E > 0.1667; x >= 0.1 needs K/E > 0.1902;  the preprint's figures: 166/910 = 0.1824 (certificate), 157/(735+157) = 0.1760 (causal)

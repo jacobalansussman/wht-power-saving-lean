@@ -1,0 +1,52 @@
+S4 fixing z-vectors [] and z-planes [(0, 3, 5, 6)]: 9 exact shapes
+   irreps [3, 3, 1, 2, 1]
+   array orbit |S|=1 size 24 demand [84. 84. 28. 56. 28.]
+   array orbit |S|=2 size 12 demand [44. 44. 12. 24. 12.]
+   array orbit |S|=2 size 12 demand [44. 40. 16. 28. 12.]
+   array orbit |S|=3 size 8 demand [28. 28. 10. 18. 10.]
+   array orbit |S|=4 size 6 demand [22. 22.  6. 12.  6.]
+   array orbit |S|=4 size 6 demand [24. 20.  8. 12.  4.]
+   array orbit |S|=4 size 6 demand [24. 24.  4.  8.  4.]
+   array orbit |S|=6 size 4 demand [16. 12.  7.  9.  3.]
+   array orbit |S|=8 size 3 demand [13. 11.  3.  4.  1.]
+   array orbit |S|=12 size 2 demand [8. 8. 2. 2. 2.]
+   array orbit |S|=24 size 1 demand [ 5.  3.  2.  1. -0.]
+   move orbit |T|=1 size 24 cap [30. 30. 10. 20. 10.] exact=True
+   move orbit |T|=2 size 12 cap [16. 16.  4.  8.  4.] exact=True
+   move orbit |T|=2 size 12 cap [16. 14.  6. 10.  4.] exact=True
+   move orbit |T|=3 size 8 cap [10. 10.  4.  6.  4.] exact=True
+   move orbit |T|=4 size 6 cap [8. 8. 2. 4. 2.] exact=True
+   move orbit |T|=4 size 6 cap [9. 7. 3. 4. 1.] exact=True
+   move orbit |T|=4 size 6 cap [9. 9. 1. 2. 1.] exact=True
+   move orbit |T|=6 size 4 cap [6. 4. 3. 3. 1.] exact=True
+   move orbit |T|=8 size 3 cap [ 5.  4.  1.  1. -0.] exact=True
+   move orbit |T|=12 size 2 cap [3. 3. 1. 0. 1.] exact=True
+   move orbit |T|=24 size 1 cap [2. 1. 1. 0. 0.] exact=True
+      arrays 1x2+3x1 | moves 1x4(T6)+2x3(T8)+1x2(T12)+2x1(T24)
+      arrays 1x2+3x1 | moves 1x6(T4)+1x4(T6)+4x1(T24)
+      arrays 1x2+3x1 | moves 1x6(T4)+1x3(T8)+1x2(T12)+3x1(T24)
+      arrays 2x2+1x1 | moves 1x6(T4)+1x3(T8)+2x2(T12)+1x1(T24)
+      arrays 1x3+2x1 | moves 1x4(T6)+3x3(T8)+1x1(T24)
+      arrays 1x3+2x1 | moves 1x6(T4)+2x3(T8)+2x1(T24)
+      arrays 1x3+1x2 | moves 1x6(T4)+2x3(T8)+1x2(T12)
+      arrays 1x3+1x2 | moves 1x6(T4)+1x6(T4)+2x1(T24)
+S4 fixing z-vectors [7] and z-planes []: 0 exact shapes
+[8s]
+|B'| = 1344  |E'| = 192
+dims A, B, C: 7 21 28
+C7 ⟂ C21: True
+hook type 7: t = -0.333333, residual 1.57e-14
+hook type 21: t = 1.000000, residual 4.00e-14
+family members (cap, demand): [(10, 28), (10, 28), (10, 28), (10, 28)]
+SUBGAME H order 6 (fixes z-vectors [2], z-planes [(0, 1, 4, 5)]): exact shapes per certificate {'hook': 6, 'Y(-1.04,-1.72)': 6, 'Y(-0.32,0.55)': 6, 'Y(1.48,0.14)': 6}  common to all: 6 [10s]
+       arrays 1x2+3x1 | moves 1x6(T1)+1x3(T2)+5x1(T6)
+       arrays 1x2+3x1 | moves 3x3(T2)+1x2(T3)+3x1(T6)
+       arrays 1x3+1x2 | moves 1x6(T1)+2x3(T2)+1x2(T3)
+       arrays 1x3+1x2 | moves 2x6(T1)+2x1(T6)
+       arrays 1x3+2x1 | moves 4x3(T2)+2x1(T6)
+       arrays 2x2+1x1 | moves 1x6(T1)+1x3(T2)+2x2(T3)+1x1(T6)
+SUBGAME H order 8 (fixes z-vectors [2], z-planes [(0, 2, 5, 7)]): exact shapes per certificate {'hook': 0, 'Y(-1.04,-1.72)': 0, 'Y(-0.32,0.55)': 0, 'Y(1.48,0.14)': 0}  common to all: 0 [13s]
+SUBGAME H order 12 (fixes z-vectors [], z-planes [(0, 2, 5, 7)]): exact shapes per certificate {'hook': 0, 'Y(-1.04,-1.72)': 0, 'Y(-0.32,0.55)': 0, 'Y(1.48,0.14)': 0}  common to all: 0 [16s]
+SUBGAME H order 12 (fixes z-vectors [5], z-planes []): exact shapes per certificate {'hook': 0, 'Y(-1.04,-1.72)': 0, 'Y(-0.32,0.55)': 0, 'Y(1.48,0.14)': 0}  common to all: 0 [17s]
+SUBGAME H order 24 (fixes z-vectors [], z-planes [(0, 3, 5, 6)]): exact shapes per certificate {'hook': 0, 'Y(-1.04,-1.72)': 0, 'Y(-0.32,0.55)': 0, 'Y(1.48,0.14)': 0}  common to all: 0 [26s]
+SUBGAME H order 24 (fixes z-vectors [7], z-planes []): exact shapes per certificate {'hook': 0, 'Y(-1.04,-1.72)': 0, 'Y(-0.32,0.55)': 0, 'Y(1.48,0.14)': 0}  common to all: 0 [30s]

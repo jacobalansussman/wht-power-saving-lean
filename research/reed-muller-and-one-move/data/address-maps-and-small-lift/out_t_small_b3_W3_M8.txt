@@ -1,0 +1,8 @@
+m=3 W=3 M=8: 28 targets; 44 classes of direction multisets (0.0 s)
+    zero-block exclusion: dirs (1, 1, 2, 3, 4, 5, 6, 7) targets [8, 18, 22]: form 34 |D| = 5, r = 0, zero clique 3
+    zero-block exclusion: dirs (1, 1, 2, 3, 4, 5, 6, 7) targets [8, 19, 23]: form 35 |D| = 5, r = 0, zero clique 3
+    zero-block exclusion: dirs (1, 1, 2, 3, 4, 5, 6, 7) targets [9, 16, 21]: form 35 |D| = 5, r = 0, zero clique 3
+  classes with some target in span: 34; with a target 3-multiset passing deletion: 1; passing cliques and the zero-block test too: 0
+  target tuples passing deletion but excluded: by cliques 104, by the zero-block test 8
+  classes skipped by the free-direction lemma (independent distinct directions, M < mW): 0
+  done in 0.0 s

@@ -1,0 +1,9 @@
+control b0 = 1.6644002789e-03 (hub #799: 1.6644002789e-3)
+cst 63, one copy 8->7 (hub lever)                                                b = 1.7112e-03  (+2.81 %)  what-if
+cst 56, one copy removed (hub lever)                                             b = 2.0392e-03  (+22.52 %)  what-if
+cst 63, 9 totals at dim 7 (open by counting)                                     b = 1.7106e-03  (+2.77 %)  what-if
+cst 60, 10 totals at dim 6 (open by counting)                                    b = 1.8503e-03  (+11.17 %)  what-if
+cst 56, 8 totals at dim 7 (open by counting; excluded for linear totals)         b = 2.0385e-03  (+22.47 %)  what-if
+cst 54, 9 totals at dim 6 (open by counting)                                     b = 2.1313e-03  (+28.05 %)  what-if
+cst 53, octad floor shape 8 x dim 6 + 1 x dim 5                                  b = 2.1781e-03  (+30.86 %)  what-if
+cst 0, copies free (star scope dropped)                                          b = 4.6656e-03  (+180.32 %)  what-if

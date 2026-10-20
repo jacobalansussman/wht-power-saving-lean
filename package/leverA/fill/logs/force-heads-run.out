@@ -1,0 +1,316 @@
+CHRONOLOGY pr2833-t37 T 37 calls 333 calls per provider {'extra': 208, 'gauge44': 125}
+INVENTORY {'extra': {4: 26, 5: 2, 6: 16, 7: 52, 8: 99, 9: 213}, 'gauge44': {4: 26, 5: 2, 6: 16, 7: 52, 8: 99, 9: 213}} LOCAL {1: 2445, 2: 706, 3: 232, 4: 108, 5: 18, 8: 8}
+RELAX cap 0.001729035764875516181444 0.0017290357648755161814441 tight 12 idle/replica {'1': '234', '3': '1341/20', '5': '93/4', '48': '7619/20'}
+PATTERN MIX {'8:8': 24864, '16:8+8': 1386, '16:7+9': 15190, '32:9+9+9': 864, '32:7+7+9+9': 1063, '32:6+8+9+9': 5328, '32:5+9+9+9': 666, '32:4+9+9+9': 8655, '48:empty': 14095, '48:9+9+9+9+9': 2478, '48:4+8+9+9+9+9': 3}
+MIX kappa bracket 0.0017290339826465135177175 0.0017290339826465135177176 idle {1: 8655, 3: 2478, 5: 864, 48: 14095} gap to cap 1.782e-09 gain vs PR2917 7.4453e-06 gain vs PR2930 6.5341e-06
+MODEL {'T': 37, 'chronology': 'pr2833-t37', 'groups': 333, 'variables': 162744, 'pattern_variables': 851, 'flow_variables': 161893, 'constraints': 102076, 'nonzeros': 587115, 'workers': 1, 'catalogue': 'tight', 'patterns_per_cap': {'8': 1, '16': 2, '32': 5, '48': 3}}
+HEAD GROUPS 37 with an empty-pattern variable 37
+
+Starting CP-SAT solver v9.15.6755
+Parameters: random_seed: 1 max_time_in_seconds: 2400 log_search_progress: true num_search_workers: 1
+
+Initial satisfaction model '': (model_fingerprint: 0x6d7036c9bcb8c8d2)
+#Variables: 162'744 (159'006 primary variables)
+  - 9'049 in [0,2]
+  - 9'049 in [0,16]
+  - 22'467 in [0,26]
+  - 13'914 in [0,52]
+  - 30'468 in [0,99]
+  - 76'946 in [0,213]
+  - 851 in [0,224]
+#kLinear1: 13'568
+#kLinear2: 30'546
+#kLinear3: 32'089
+#kLinearN: 25'910 (#terms: 416'225)
+
+Starting presolve at 0.19s
+  5.59e-02s  0.00e+00d  [DetectDominanceRelations] 
+  5.22e-01s  0.00e+00d  [PresolveToFixPoint] #num_loops=5 #num_dual_strengthening=1 
+  2.03e-03s  0.00e+00d  [ExtractEncodingFromLinear] 
+  4.07e-02s  0.00e+00d  [DetectDuplicateColumns] 
+  3.75e-03s  0.00e+00d  [DetectDuplicateConstraints] #duplicates=1 
+[Symmetry] Graph for symmetry has 353'711 nodes and 584'877 arcs.
+[Symmetry] Symmetry computation done. time: 0.306378 dtime: 0.159612
+[Symmetry] #generators: 74, average support size: 779.622
+[Symmetry] 26922 orbits on 55768 variables with sizes: 6,6,6,6,6,6,6,6,6,6,...
+[Symmetry] Found orbitope of size 481 x 6
+  4.25e-03s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  3.66e-01s  1.00e-03d  [Probe] 
+  5.93e-04s  0.00e+00d  [MaxClique] 
+  3.33e-02s  0.00e+00d  [DetectDominanceRelations] 
+  2.55e-01s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  2.66e-02s  0.00e+00d  [ProcessAtMostOneAndLinear] 
+  4.07e-03s  0.00e+00d  [DetectDuplicateConstraints] 
+  3.50e-03s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  6.40e-02s  4.76e-03d  [DetectDominatedLinearConstraints] #relevant_constraints=70'572 #num_inclusions=20'047 
+  8.05e-03s  0.00e+00d  [DetectDifferentVariables] 
+  7.03e-03s  0.00e+00d  [ProcessSetPPC] 
+  2.10e-02s  0.00e+00d  [TransformClausesToExactlyOne] 
+  1.09e-03s  0.00e+00d  [DetectEncodedComplexDomains] 
+  6.16e-03s  1.16e-06d  [FindAlmostIdenticalLinearConstraints] #num_tested_pairs=5 
+  2.54e-04s  0.00e+00d  [FindBigAtMostOneAndLinearOverlap] 
+  4.27e-02s  1.85e-01d  [FindBigVerticalLinearOverlap] 
+  4.56e-01s  1.00e+00d *[FindBigHorizontalLinearOverlap] #linears=3'289 
+  1.31e-03s  0.00e+00d  [MergeClauses] 
+  3.39e-02s  0.00e+00d  [DetectDominanceRelations] 
+  2.45e-01s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  3.20e-02s  0.00e+00d  [DetectDominanceRelations] 
+  2.50e-01s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  1.85e-02s  0.00e+00d  [DetectDuplicateColumns] 
+  3.92e-03s  0.00e+00d  [DetectDuplicateConstraints] 
+[Symmetry] Graph for symmetry has 353'711 nodes and 584'877 arcs.
+[Symmetry] Symmetry computation done. time: 0.246638 dtime: 0.159612
+[Symmetry] #generators: 74, average support size: 779.622
+[Symmetry] 26922 orbits on 55768 variables with sizes: 6,6,6,6,6,6,6,6,6,6,...
+[Symmetry] Found orbitope of size 481 x 6
+  4.23e-03s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  2.33e-01s  1.00e-03d  [Probe] 
+  6.28e-04s  0.00e+00d  [MaxClique] 
+  3.35e-02s  0.00e+00d  [DetectDominanceRelations] 
+  2.44e-01s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  2.76e-02s  0.00e+00d  [ProcessAtMostOneAndLinear] 
+  4.01e-03s  0.00e+00d  [DetectDuplicateConstraints] 
+  4.75e-03s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  6.78e-02s  4.76e-03d  [DetectDominatedLinearConstraints] #relevant_constraints=70'572 #num_inclusions=20'047 
+  8.07e-03s  0.00e+00d  [DetectDifferentVariables] 
+  6.22e-03s  0.00e+00d  [ProcessSetPPC] 
+  1.43e-02s  0.00e+00d  [TransformClausesToExactlyOne] 
+  1.14e-03s  0.00e+00d  [DetectEncodedComplexDomains] 
+  5.12e-03s  2.00e-06d  [FindAlmostIdenticalLinearConstraints] #num_tested_pairs=4 
+  2.36e-04s  0.00e+00d  [FindBigAtMostOneAndLinearOverlap] 
+  4.24e-02s  1.85e-01d  [FindBigVerticalLinearOverlap] 
+  4.42e-01s  1.00e+00d *[FindBigHorizontalLinearOverlap] #linears=3'289 
+  9.45e-04s  0.00e+00d  [MergeClauses] 
+  3.16e-02s  0.00e+00d  [DetectDominanceRelations] 
+  2.34e-01s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  7.14e-04s  0.00e+00d  [MergeNoOverlap] 
+  4.44e-04s  0.00e+00d  [MergeNoOverlap2D] 
+
+Presolve summary:
+  - 78 affine relations were detected.
+  - rule 'affine: new relation' was applied 78 times.
+  - rule 'duplicate: removed constraint' was applied 1 time.
+  - rule 'linear1: x in domain' was applied 150 times.
+  - rule 'linear: always true' was applied 16'554 times.
+  - rule 'linear: empty' was applied 14'758 times.
+  - rule 'linear: fixed or dup variables' was applied 23'337 times.
+  - rule 'linear: reduced variable domains' was applied 16'013 times.
+  - rule 'linear: remapped using affine relations' was applied 5'022 times.
+  - rule 'presolve: 29368 unused variables removed.' was applied 1 time.
+  - rule 'presolve: iteration' was applied 2 times.
+
+Presolved satisfaction model '': (model_fingerprint: 0xca9b3b02448223ee)
+#Variables: 133'298 (129'973 primary variables)
+  - 9'047 in [0,2]
+  - 18'432 in [0,3]
+  - 9'047 in [0,16]
+  - 9'048 in [0,26]
+  - 13'913 in [0,52]
+  - 31 in [0,60]
+  - 35 in [0,68]
+  - 39 in [0,76]
+  - 43 in [0,84]
+  - 47 in [0,92]
+  - 1 in [0,94]
+  - 47 in [0,96]
+  - 17'050 in [0,99]
+  - 52 in [0,102]
+  - 53 in [0,104]
+  - 114 in [0,112]
+  - 61 in [0,120]
+  - 62 in [0,122]
+  - 65 in [0,128]
+  - 67 in [0,132]
+  - 69 in [0,136]
+  - 72 in [0,142]
+  - 73 in [0,144]
+  - 77 in [0,152]
+  - 78 in [0,154]
+  - 81 in [0,160]
+  - 84 in [0,166]
+  - 85 in [0,168]
+  - 89 in [0,176]
+  - 90 in [0,178]
+  - 100 in [0,183]
+  - 93 in [0,184]
+  - 96 in [0,190]
+  - 97 in [0,192]
+  - 47 in [0,199]
+  - 101 in [0,200]
+  - 103 in [0,204]
+  - 47 in [0,206]
+  - 105 in [0,208]
+  - 53'969 in [0,213]
+  - 1 in [0,216]
+  - 1 in [0,218]
+  - 482 in [0,224]
+  - 1 in [2,96]
+  - 1 in [16,199]
+  - 1 in [23,26]
+  - 1 in [23,206]
+#kLinear2: 20'047
+#kLinear3: 32'052
+#kLinearN: 18'473 (#terms: 328'232)
+[Symmetry] Graph for symmetry has 324'265 nodes and 584'877 arcs.
+[Symmetry] Symmetry computation done. time: 0.22926 dtime: 0.157846
+[Symmetry] #generators: 74, average support size: 779.622
+[Symmetry] 26922 orbits on 55768 variables with sizes: 6,6,6,6,6,6,6,6,6,6,...
+[Symmetry] Found orbitope of size 481 x 6
+
+Preloading model.
+
+Starting search at 5.21s with 1 workers.
+1 full problem subsolver: [main]
+
+[Precedences] num_relations=0 num_clauses=0
+[Probing] deterministic_time: 0 (limit: 1) wall_time: 1.28e-06 (0/0)
+[LinearRelaxationBeforeCliqueExpansion] #linear:70572 #at_most_ones:0
+[FinalLinearRelaxation] #linear:70572 #cut_generators:0
+Initial num_bool: 0
+
+Starting subsolver 'main' hint search at 6.04s
+Starting subsolver 'main' search at 6.04s
+#1     295.54s main
+
+Task timing           n [     min,      max]      avg      dev     time         n [     min,      max]      avg      dev    dtime
+      'main':         1 [   4.84m,    4.84m]    4.84m   0.00ns    4.84m         1 [   1.60m,    1.60m]    1.60m   0.00ns    1.60m
+
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+       'main':  28'403          3    28'805         0                0          3         326        630'677
+
+SAT formula    Fixed  Equiv   Total  VarLeft  BinaryClauses  PermanentClauses  TemporaryClauses
+      'main':      0      0  28'403   28'403          1'868                 0                 1
+
+SAT stats    ClassicMinim  LitRemoved  LitRemovedBinary  LitLearned  LitForgotten  Subsumed
+    'main':             0           0                 0         151             0         2
+
+Vivification    Clauses  Decisions  LitTrue  Subsumed  LitRemoved  DecisionReused  Conflicts
+       'main':        0          0        0         0           0               0          0
+
+Clause deletion    at_true  l_and_not(l)  to_binary  sub_conflict  sub_extra  sub_decisions  sub_eager  sub_vivify  sub_probing  sub_inpro  blocked  eliminated  forgotten  promoted  conflicts
+          'main':        0             0          0             0          0              0          2           0            0          0        0           0          0         3          3
+
+Lp stats    Component  Iterations  AddedCuts  OPTIMAL  DUAL_F.  DUAL_U.
+   'main':          1      58'363          0      957       58        3
+
+Lp dimension           Final dimension of first component
+       'main':  4184 rows, 133298 columns, 251853 entries
+
+Lp debug    CutPropag  CutEqPropag  Adjust  Overflow  Bad  BadScaling
+   'main':          0            0       1         0    0           0
+
+Lp pool    Constraints  Updates  Simplif  Merged  Shortened  Split  Strengthened  Cuts/Call
+  'main':       70'572        0        0       0          0      0             0        0/0
+
+Solutions (1)    Num   Rank
+        'main':    1  [0,0]
+
+Solution repositories    Added  Queried  Synchro
+    'alternative_path':      0        0        0
+      'best_solutions':      1        0        1
+   'fj solution hints':      0        0        0
+
+LRAT_status: NA
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 146684
+booleans: 28403
+conflicts: 3
+branches: 28805
+propagations: 326
+integer_propagations: 630677
+restarts: 0
+lp_iterations: 58363
+walltime: 295.589
+usertime: 295.589
+deterministic_time: 98.2473
+gap_integral: 0
+solution_fingerprint: 0x6482b8a72bc4fed5
+
+CpSolverResponse summary:
+status: OPTIMAL
+objective: 0
+best_bound: 0
+integers: 146684
+booleans: 28403
+conflicts: 3
+branches: 28805
+propagations: 326
+integer_propagations: 630677
+restarts: 0
+lp_iterations: 58363
+walltime: 295.589
+usertime: 295.589
+deterministic_time: 98.2473
+gap_integral: 0
+solution_fingerprint: 0x6482b8a72bc4fed5
+
+SOLVER OPTIMAL 298.8 s
+OWNER_CHECK_PASS /content/work/reopt-o-model/c2979/runs/force-t37 roles 135864 idle {1: 8655, 3: 2478, 5: 864, 48: 14095} physical 33661
+KAPPA 0.0017290339826465135177175 .. 0.0017290339826465135177176 cap 0.0017290357648755161814441 gap 1.782e-09 gain vs PR2917 claim 7.4453e-06 gain vs PR2930 claim 6.5341e-06 gain vs PR2966 4.999710e-06
+	Command being timed: "nice -n 19 /content/work/reopt-o-model/v2979/bin/python -B code/fill17_heads.py --work runs/force-t37 --chronology pr2833-t37 --providers /content/work/reopt-o-model/hub-main/research/rank7-joint-endframes/allocation/PROVIDERS.json --mix-file /content/work/reopt-o-model/hub-main/research/rank7-joint-endframes/construction/allocation/T37-FACE-MIX.json --buffers 91 --seed 1 --workers 1 --catalogue tight --force-heads --seconds 2400 --method o-model probe: #2979 fill17.py + head variables (fill17_heads.py) | doubled by double.py"
+	User time (seconds): 313.05
+	System time (seconds): 1.60
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:15.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 880752
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 29
+	Minor (reclaiming a frame) page faults: 256110
+	Voluntary context switches: 165
+	Involuntary context switches: 1984
+	Swaps: 0
+	File system inputs: 3872
+	File system outputs: 1432
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+order74 == interleave(order37, order37+37): True ; dispatch copied: True
+engine PASS in 1.5 s 271728 {1: 17310, 3: 4956, 5: 1728, 48: 28190} rank_mass 4816512 live 66304
+physical 66813 KAPPA 0.0017290339826465135177175 .. 0.0017290339826465135177176 cap 0.0017290357648755161814441 gap 1.782e-09 gain vs PR2917 claim 7.445335e-06 gain vs PR2930 claim 6.534076e-06
+payload sha {'ORDER.json': '519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1', 'FILL.json.gz': '77ff4d3b93bc5cb749dc73d2d1be26c02db31167fa21e92e43bfa87c5a214c6c', 'DISPATCH.json': '65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c', 'PROFILE.json': '3f647ed68d26c43f63761640503a63c96ae3adaec0d22db16ed777c9b4e1f926', 'PROVIDERS.json': '8a96f1404917d45e4b3e4f66aae63b85ce35daf7e6649e1eb19997ef6798741d'}
+	Command being timed: "nice -n 19 /content/work/reopt-o-model/v2979/bin/python -B code/double.py runs/force-t37 runs/force-t74 --providers /content/work/reopt-o-model/hub-main/research/rank7-joint-endframes/allocation/PROVIDERS.json --buffers 91"
+	User time (seconds): 9.84
+	System time (seconds): 0.81
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 416132
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 141251
+	Voluntary context switches: 9
+	Involuntary context switches: 56
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2696
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+  "8/10 (rank 48)": {
+   "48": 16576
+  },
+  "9/11 (rank 8)": {
+--
+  "12/13 (rank 48)": {
+   "0": 6,
+   "3": 4956,
+   "48": 11614
+--
+ "total_heads": 16576
+}
+764395fcc2d883e9dc1ecfedce2131c745dc7ad1b9c41d7b52ef54da16d7f71c  runs/force-t74/FILL.json.gz
+DONE_PROBE force

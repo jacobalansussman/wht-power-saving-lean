@@ -1,0 +1,124 @@
+{
+  "allocation_sha256": {
+    "allocation/DISPATCH.json": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c",
+    "allocation/FILL.json.gz": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39",
+    "allocation/ORDER.json": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+    "allocation/PROFILE.json": "94a819747f3ced41f1544ada0036c983fc0c92847b9644380f877a06cd7931cf",
+    "allocation/PROVIDERS.json": "f2edb7922f3029a5d607437e737775ff3371bca49ebab62e5e2495d16d3bf573",
+    "allocation/SEARCH.json": "2ceb1f825cb68e44d17d4251f74c3975ae5122c845391c1ca8de2e564ac4246a",
+    "allocation/baseline/CLAIM.json": "656a4c93411b078753783513e2e71b1722a56e7b70120264a38118811982fa77",
+    "allocation/baseline/ORDER.json": "d559a1dcb83707724afc0310f6ef8e3a36ad6cda0a895ca6abae9d6f39a0fc76",
+    "allocation/baseline/PROFILE.json": "6de8ac1fd628cdd2afa5a43872da69c7dab9d7219bdc318f9db55fd8ccdb5eb2",
+    "allocation/vendor/PLAN.json.gz": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e",
+    "allocation/vendor/TEMPLATE.json.gz": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+    "allocation/vendor/independent_owners.py": "77a848729159e271ba64f403dfd59dddb13044b17b2950fa56700f442e2fe461"
+  },
+  "calls": 666,
+  "controls": {
+    "capacity_overflow": "bin capacity",
+    "changed_paid_profile": "complete claimed profile",
+    "duplicate_helper": "duplicate helper",
+    "missing_role": "complete role count",
+    "same_call_family_collision": "same-call family collision"
+  },
+  "idle": {
+    "1": 17310,
+    "3": 4956,
+    "5": 1728,
+    "48": 28190
+  },
+  "live": 66304,
+  "moment": {
+    "W": 66304,
+    "baseline_claim_sha256": "656a4c93411b078753783513e2e71b1722a56e7b70120264a38118811982fa77",
+    "baseline_profile_sha256": "6de8ac1fd628cdd2afa5a43872da69c7dab9d7219bdc318f9db55fd8ccdb5eb2",
+    "controls": [
+      "zero log/exp identities",
+      "overstated endpoint",
+      "added rank32 charge"
+    ],
+    "gain": "4998757898408639167/1000000000000000000000000",
+    "gain_decimal": "0.000004998757898408639167",
+    "lower": "172903398264651351771759/100000000000000000000000000",
+    "method": "Independent 128-term atanh / degree24 exponential with explicit positive tails and outward 192-bit dyadic rounding",
+    "new_moment_at_full_prior": [
+      "6277012666331281494351147074785863149278635105147690737317/6277101735386680763835789423207666416102355444464034512896",
+      "6277012666331281494351147074785863149278635105147690737319/6277101735386680763835789423207666416102355444464034512896"
+    ],
+    "normalized_profile_delta": {
+      "1": 3309895680,
+      "2": 17221800960,
+      "3": -11339575296,
+      "4": -441584640,
+      "5": -3254200320,
+      "48": 297970176
+    },
+    "oldW": 331520,
+    "outer_endpoint": "1729033982646513517717/1000000000000000000000000",
+    "previous": "17240352247481048785499999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+    "profile_sha256": "94a819747f3ced41f1544ada0036c983fc0c92847b9644380f877a06cd7931cf",
+    "scope": "Complete paid histogram and exact moment only; full native/physical/outer release is separate.",
+    "status": "PASS_SEPARATE_EXACT_RATIONAL_FRONTIER_MOMENT",
+    "target": "17290339826465135177169999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+    "target_decimal": "0.0017290339826465135177169999999999999999999998999999999999999999999999",
+    "upper": "2161292478308141897147/1250000000000000000000000"
+  },
+  "physical": 66813,
+  "physical_source": "Actual 91-register private cleanup namespace, 408 live helpers, eight centres and two guards; global stock checked separately.",
+  "profile": {
+    "1": 1645680,
+    "2": 470196,
+    "3": 159468,
+    "4": 71928,
+    "5": 13716,
+    "8": 5328,
+    "48": 28190
+  },
+  "providers": {
+    "base": {
+      "local_profile": {
+        "1": 2445,
+        "2": 706,
+        "3": 232,
+        "4": 108,
+        "5": 18,
+        "8": 8
+      },
+      "private_buffers": 91,
+      "sha256": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "6": 16,
+        "7": 52,
+        "8": 99,
+        "9": 213
+      }
+    },
+    "extra": {
+      "local_profile": {
+        "1": 2445,
+        "2": 706,
+        "3": 232,
+        "4": 108,
+        "5": 18,
+        "8": 8
+      },
+      "private_buffers": 91,
+      "sha256": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "6": 16,
+        "7": 52,
+        "8": 99,
+        "9": 213
+      }
+    }
+  },
+  "rank_mass": 4816512,
+  "replicas": 74,
+  "roles": 271728,
+  "scope": "Recounted local frames, exact whole-owner geometry and directed moment; algebra/native/global/outer admission remains separately required.",
+  "status": "PASS_RANK7_LITERAL_OWNERS_AND_EXACT_MOMENT"
+}

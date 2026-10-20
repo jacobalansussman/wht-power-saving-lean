@@ -1,0 +1,70 @@
+== V56: types ['7a', '21a', '28a']
+   h joins (row <- col):
+      7a xxx
+      21a xxx
+      28a xxx
+   K blocks (row <- col):
+      7a xxx
+      21a xxx
+      28a xxx
+   depth seen for K = 1 (pairs at that distance: [('21a', '7a', 1), ('28a', '7a', 1), ('7a', '21a', 1), ('28a', '21a', 1), ('7a', '28a', 1), ('21a', '28a', 1)]); for K2 = 1
+== V105a: types ['14a', '14b', '21a', '56a']
+   h joins (row <- col):
+      14a xxxx
+      14b xx.x
+      21a x.xx
+      56a xxxx
+   K blocks (row <- col):
+      14a xxxx
+      14b xxxx
+      21a xxxx
+      56a xxxx
+   depth seen for K = 2 (pairs at that distance: [('21a', '14b', 2), ('14b', '21a', 2)]); for K2 = 2
+== V84: types ['1a', '6a', '7a', '7b', '14a', '21a', '28a']
+   h joins (row <- col):
+      1a xx.x...
+      6a xx.xxx.
+      7a ..xxx.x
+      7b xxxxxx.
+      14a .xxxxxx
+      21a .x.xxxx
+      28a ..x.xxx
+   K blocks (row <- col):
+      1a x.xx.xx
+      6a .xxxxxx
+      7a xxxxxxx
+      7b xxxxxxx
+      14a .xxxxxx
+      21a xxxxxxx
+      28a xxxxxxx
+   depth seen for K = 3 (pairs at that distance: [('28a', '1a', 3), ('1a', '28a', 3)]); for K2 = 2
+== V105 (irr12): types ['7a', '7b', '21a', '28a', '42a']
+   h joins (row <- col):
+      7a x.xx.
+      7b .xx.x
+      21a xxxxx
+      28a x.xxx
+      42a .xxxx
+   K blocks (row <- col):
+      7a xxxxx
+      7b xxxxx
+      21a xxxxx
+      28a xxxxx
+      42a xxxxx
+   depth seen for K = 2 (pairs at that distance: [('7b', '7a', 2), ('42a', '7a', 2), ('7a', '7b', 2), ('28a', '7b', 2), ('7b', '28a', 2), ('7a', '42a', 2)]); for K2 = 2
+== V105 (irr13): types ['7a', '7b', '21a', '21b', '21c', '28a']
+   h joins (row <- col):
+      7a xxx..x
+      7b xxx.x.
+      21a xxxxxx
+      21b ..xxxx
+      21c .xxxxx
+      28a x.xxxx
+   K blocks (row <- col):
+      7a xxxxxx
+      7b xxxxxx
+      21a xxxxxx
+      21b xxxxxx
+      21c xxxxxx
+      28a xxxxxx
+   depth seen for K = 2 (pairs at that distance: [('21b', '7a', 2), ('21c', '7a', 2), ('21b', '7b', 2), ('28a', '7b', 2), ('7a', '21b', 2), ('7b', '21b', 2), ('7a', '21c', 2), ('7b', '28a', 2)]); for K2 = 2

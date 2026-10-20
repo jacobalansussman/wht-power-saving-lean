@@ -1,0 +1,9 @@
+n-fixed distance-1 cells: [[0, 1, 16, 17, 32, 33, 48, 49], [0, 9, 16, 25, 32, 41, 48, 57]]
+reps found: 2
+cell [0, 9, 16, 25, 32, 41, 48, 57]  sigma(n) = [28, 26, 26]
+cell [0, 1, 16, 17, 32, 33, 48, 49]  sigma(n) = [28, 26, 26]
+lift n X^a Z^b: demand split (76, 74, 74)  cap splits on the two cells ((28, 26, 26), (28, 26, 26))  count 10 [(0, 0), (0, 2), (0, 4), (0, 6)]
+lift n X^a Z^b: demand split (74, 76, 74)  cap splits on the two cells ((26, 26, 28), (26, 26, 28))  count 4 [(2, 0), (2, 6), (4, 2), (4, 6)]
+lift n X^a Z^b: demand split (74, 74, 76)  cap splits on the two cells ((26, 28, 26), (26, 28, 26))  count 2 [(6, 4), (6, 6)]
+cell [0, 9, 16, 25, 32, 41, 48, 57] : letters (mod scalar) commuting with n up to scalar 48  exactly 48
+cell [0, 1, 16, 17, 32, 33, 48, 49] : letters (mod scalar) commuting with n up to scalar 48  exactly 48

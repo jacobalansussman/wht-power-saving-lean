@@ -1,0 +1,15 @@
+=== nobuild START 20:05:28
+=== nobuild END rc=0 wall=61s maxrss_kb=960924 20:06:29
+All targets up-to-date (9327 jobs).
+TREE OK /content/work/aA-final/T (12G)
+INSTALL L2979H-extra: 112 new, 154 identical (skipped), from /content/work/aA-final/in/engine; hashes /content/work/aA-final/in-L2979H-extra.sha256
+INSTALL L2979H-side: 0 new, 4 identical (skipped), from /content/work/aA-final/in/side; hashes /content/work/aA-final/in-L2979H-side.sha256
+INSTALL L2979H: 18 new, 2 identical (skipped), from /content/work/aA-final/in/final-L2979H/stage; hashes /content/work/aA-final/in-L2979H.sha256
+=== lightA START 20:06:32
+=== lightA END rc=0 wall=1s maxrss_kb=840400 20:06:33
+ℹ [41/41] Replayed Work.XHostT.Data.H2979H.Heads
+info: Work/XHostT/Data/H2979H/Heads.lean:20:0: 'OAI.PowerSaving.XHostT.K.DH2979H.heads_cnt' depends on axioms: [propext]
+Build completed successfully (41 jobs).
+   (slot: waited 0s; heavy 2, avail 38743 MB)
+phase B LEAN_NUM_THREADS=1
+=== engine START 20:06:33

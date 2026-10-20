@@ -1,0 +1,33 @@
+== Engine-level parabolic Bruhat decomposition (Bravyi-Maslov Theorem 1, Maslov-Roetteler Thm 13 form)
+  m=1: |B| = 32 (formula 32); |G| = 96 (formula 96)
+       rank-B histogram over G: {0: 32, 1: 64}
+       r=0: |B X_r B| = 32; every element has rank B = 0 and the double coset is the whole rank-0 class: True
+       r=1: |B X_r B| = 64; every element has rank B = 1 and the double coset is the whole rank-1 class: True
+       union of the double cosets = G: True
+       one direction changes rank B by at most 1 (all g, all dir(e_j)): violations 0
+  m=2: |B| = 3072 (formula 3072); |G| = 46080 (formula 46080)
+       rank-B histogram over G: {0: 3072, 1: 18432, 2: 24576}
+       r=0: |B X_r B| = 3072; every element has rank B = 0 and the double coset is the whole rank-0 class: True
+       r=1: |B X_r B| = 18432; every element has rank B = 1 and the double coset is the whole rank-1 class: True
+       r=2: |B X_r B| = 24576; every element has rank B = 2 and the double coset is the whole rank-2 class: True
+       union of the double cosets = G: True
+       one direction changes rank B by at most 1 (all g, all dir(e_j)): violations 0
+DONE
+       15.67 real        15.65 user         0.01 sys
+            90341376  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6576  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 146  involuntary context switches
+        346138661678  instructions retired
+         61967238939  cycles elapsed
+            86655336  peak memory footprint

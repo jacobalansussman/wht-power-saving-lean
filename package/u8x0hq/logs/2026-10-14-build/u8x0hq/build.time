@@ -1,0 +1,23 @@
+	Command being timed: "env LEAN_NUM_THREADS=1 lake build Work.BlockAccounting.Moment4 Work.XHost.U8X0HQ Work.FourierU8X0HQ.Main Work.FourierU8X0HQ.UniformFourierChallenge Work.FourierU8X0HQNeg.UniformFourierChallenge Work.FourierU8X0HQ.Axioms"
+	User time (seconds): 260.88
+	System time (seconds): 46.36
+	Percent of CPU this job got: 102%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:58.48
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8887532
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 123
+	Minor (reclaiming a frame) page faults: 3807780
+	Voluntary context switches: 394706
+	Involuntary context switches: 9730
+	Swaps: 0
+	File system inputs: 587656
+	File system outputs: 283784
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

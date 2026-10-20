@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/content/work/ah-gate/regB/c3815-B/staged544-clock-ceiling/verify.py", line 203, in <module>
+    main()
+  File "/content/work/ah-gate/regB/c3815-B/staged544-clock-ceiling/verify.py", line 149, in main
+    need(rel['order_sha256'] == sha(P / 'inputs/ORDER.json') and rel['fill_sha256'] == sha(P / 'inputs/FILL.json.gz'), 'release input binding')
+  File "/content/work/ah-gate/regB/c3815-B/staged544-clock-ceiling/verify.py", line 47, in need
+    raise ValueError(why)
+ValueError: release input binding

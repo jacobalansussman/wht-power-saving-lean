@@ -1,0 +1,38 @@
+CONTROL START Wed Oct 14 12:19:42 UTC 2026
+copy done in 103s; 11G
+MY COPY's .lake chowned to root (source tree untouched: nobody)
+copy HEAD 52394849c7ecf3412d39b925d75fc7fdb98994d8; tracked changes:  M lean/complex588/lakefile.lean 
+ lean/complex588/lakefile.lean | 6 ++++++
+ 1 file changed, 6 insertions(+)
++
++-- x-exit-lean (exit-frame helpers)
++lean_lib XExit where globs := #[`XExit.+]
++
++-- fsp-cc (split centres on mutable sources)
++lean_lib CSX where globs := #[`CSX.+]
+mathlib: d13f23b723b8a846827a245b89c10fc7d3f11612 ; packages: Cli LeanSearchClient Qq aesop batteries importGraph mathlib plausible proofwidgets 
+SOURCES-OK: all 234 overlay files match the Mac packages
+   (slot: waited 0s; heavy lean now 0, avail 50661 MB)
+=== nobuild START 12:21:27
+=== nobuild END rc=0 wall=12s maxrss_kb=1003784 12:21:39
+All targets up-to-date (9428 jobs).
+   (slot: waited 0s; heavy lean now 0, avail 50669 MB)
+=== compare-pos-U8XMHH START 12:21:39
+=== compare-pos-U8XMHH END rc=0 wall=117s maxrss_kb=15989380 12:23:36
+compare-pos-U8XMHH rc=0
+RESULT: PASS
+   (slot: waited 0s; heavy lean now 0, avail 50605 MB)
+=== compare-neg-U8XMHH START 12:23:37
+=== compare-neg-U8XMHH END rc=1 wall=80s maxrss_kb=16130020 12:24:57
+compare-neg-U8XMHH rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH._proof_1: type differs
+   (slot: waited 0s; heavy lean now 0, avail 50630 MB)
+=== compare-pos-U8X0HH START 12:24:57
+=== compare-pos-U8X0HH END rc=0 wall=73s maxrss_kb=16141728 12:26:10
+compare-pos-U8X0HH rc=0
+RESULT: PASS
+CONTROL-OK
+CONTROL END Wed Oct 14 12:26:10 UTC 2026
+EXIT 0

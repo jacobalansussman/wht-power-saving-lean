@@ -1,0 +1,13 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+v-hpe-multigate-reprice (skeptic of d-hpe-multigate), 13 Oct 2026. python3 -I (3.9), seconds each.
+Clean copy of d-hpe-multigate's scripts rerun from scratchpad: all outputs byte-identical (audit receipts differ only in elapsed_seconds).
+  python3 -I indep_cones.py ../d-hpe-multigate/U8-FULL-WORD.json.gz indep_u8.json      # own code, mod 2^61-1, Q*P=I product check; fixed and lazy cones
+  python3 -I indep_cones.py ../d-hpe-multigate/W-g17g18.json.gz indep_g1718.json
+  indep_nocentre.py = same with centre forcing dropped in the lazy pass (stress test; also run with start_extra frames emptied)
+k8/: d-hpe-multigate's cones.py/lazy_cones.py/groups.py/make_word.py run on PR1090's sources/K8-SLOT-WORD.json.gz (dl1090/, read-only gh api, data only)
+  group 13 = helpers 574/575 = PR1090's recipe exactly (12 changes); group 14 = helpers 580/581, same U as U8 group 18, unclaimed;
+  W-k8-g13g14.json.gz passes the PR870 audit (audit-k8-g13g14.json). Not priced exactly: needs the T16 owner map.

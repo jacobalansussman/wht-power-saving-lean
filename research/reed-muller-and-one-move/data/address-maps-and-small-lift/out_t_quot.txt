@@ -1,0 +1,31 @@
+m=4 class d=3: least r = (2, (6, 7))
+m=4 class d=5: least r = (2, (2, 3))
+m=5 class d=3: least r = (3, (2, 5, 6))
+m=5 class d=5: least r = (3, (6, 18, 21))
+m=5 all classes [3, 5] (the full Sym_m quotient = the slice target I): least r = None
+m=6 class d=3: least r = (2, (58, 59))
+m=6 class d=5: least r = (3, (2, 4, 7))
+m=6 class d=9: least r = (2, (34, 35))
+m=6 all classes [3, 5, 9] (the full Sym_m quotient = the slice target I): least r = None
+m=7 class d=3: least r = (3, (8, 97, 104))
+m=7 class d=5: least r = (3, (2, 53, 54))
+m=7 class d=9: least r = (3, (2, 56, 59))
+m=7 all classes [3, 5, 9] (the full Sym_m quotient = the slice target I): least r = None
+m=6 two classes [3, 5] (proper quotient): least r = (3, (15, 22, 24))
+m=6 two classes [3, 9] (proper quotient): least r = (2, (58, 59))
+m=6 two classes [5, 9] (proper quotient): least r = (4, (2, 14, 39, 42))
+m=7 two classes [3, 5] (proper quotient): least r = None
+m=7 two classes [3, 9] (proper quotient): least r = None
+m=7 two classes [5, 9] (proper quotient): least r = None
+m=8 two classes [3, 5] (proper quotient): least r = (4, (10, 69, 147, 221))
+m=8 two classes [3, 9] (proper quotient): least r = (2, (214, 215))
+m=8 two classes [3, 17] (proper quotient): least r = (4, (2, 6, 184, 189))
+m=8 two classes [5, 9] (proper quotient): least r = (4, (10, 69, 147, 221))
+m=8 two classes [5, 17] (proper quotient): least r = (4, (2, 5, 64, 70))
+m=8 two classes [9, 17] (proper quotient): least r = (4, (2, 17, 76, 94))
+m=9 two classes [3, 5] (proper quotient): least r = (3, (29, 333, 337))
+m=9 two classes [3, 9] (proper quotient): least r = None
+m=9 two classes [3, 17] (proper quotient): least r = (3, (29, 333, 337))
+m=9 two classes [5, 9] (proper quotient): least r = None
+m=9 two classes [5, 17] (proper quotient): least r = (3, (29, 333, 337))
+m=9 two classes [9, 17] (proper quotient): least r = None

@@ -1,0 +1,51 @@
+[
+ {
+  "case": "calibration: one-sided, copy per total",
+  "gates": 7948,
+  "illegal": 0,
+  "by_phase": {},
+  "x_on_illegal": 0,
+  "y_on_illegal": 0,
+  "scratch_on_illegal": 0,
+  "excess_dims": 0
+ },
+ {
+  "case": "natural mirror, one copy per total",
+  "gates": 7948,
+  "illegal": 2453,
+  "by_phase": {
+   "S": 448,
+   "B": 2005
+  },
+  "x_on_illegal": 0,
+  "y_on_illegal": 112,
+  "scratch_on_illegal": 416,
+  "excess_dims": 10978
+ },
+ {
+  "case": "natural mirror, one copy per (total, reader)",
+  "gates": 7948,
+  "illegal": 2429,
+  "by_phase": {
+   "S": 448,
+   "B": 1981
+  },
+  "x_on_illegal": 0,
+  "y_on_illegal": 112,
+  "scratch_on_illegal": 856,
+  "excess_dims": 3744
+ },
+ {
+  "case": "best symmetric twisted mirror, one copy per (total, reader)",
+  "gates": 7948,
+  "illegal": 2360,
+  "by_phase": {
+   "S": 448,
+   "B": 1912
+  },
+  "x_on_illegal": 0,
+  "y_on_illegal": 112,
+  "scratch_on_illegal": 856,
+  "excess_dims": 3623
+ }
+]

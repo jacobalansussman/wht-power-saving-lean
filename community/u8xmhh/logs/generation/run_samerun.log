@@ -1,0 +1,19 @@
+== 588atm3_shea_route_control -> h588_c0_samerun 16:58:27
+{"name": "588atm3_shea_route_control", "copies": 0, "defer": 0, "dropped": [0, 0], "repaired": 0, "W": 7294, "banks": 126, "hosted": 35280, "unhosted": 1008, "L_idle": 92015.9, "root_lower": "0.00156888519039", "kernel_A": 15688822, "dft": 15688821}
+  remainders: {'A2': {0: 1632, 7: 160}, 'B2': {0: 1120, 1: 160, 8: 512}, 'A3': {0: 352, 1: 576, 5: 864}, 'B3': {0: 1120, 1: 256, 3: 64, 4: 352}, 'A4': {0: 960, 48: 832}, 'B4': {0: 1120, 1: 176, 8: 496}, 'F1': {0: 944, 48: 848}, 'F2': {0: 336, 1: 624, 5: 832}, 'F3': {0: 1632, 7: 160}}  solver: 0 7.6 s
+out/h588_c0_samerun.json: LB 111 old banks 126 -> 111 banks, pad L 24, pads [(0, 110), (39, 1)]; W=7279 dft3=15699305 dft4=15699334
+AUDIT PASS 588atm3_shea_route_control copies=0 defer=0: 35280 hosted residuals, W=7294, D=2560, histogram matches
+AUDIT PASS 588atm3_shea_route_control copies=0 defer=0: 35280 hosted residuals, W=7279, D=2560, histogram matches
+== 869/870/890_U8_exit_frames(E1) -> h869_c0_samerun 16:59:22
+{"name": "869/870/890_U8_exit_frames(E1)", "copies": 0, "defer": 0, "dropped": [0, 0], "repaired": 0, "W": 7544, "banks": 376, "hosted": 32256, "unhosted": 4032, "L_idle": 85204.3, "root_lower": "0.00162252782113", "kernel_A": 16225245, "dft": 16225244}
+  remainders: {'A2': {0: 1792}, 'B2': {0: 976, 1: 432, 4: 384}, 'A3': {0: 800, 1: 352, 2: 592, 12: 48}, 'B3': {0: 976, 1: 432, 3: 256, 4: 128}, 'A4': {0: 448, 48: 1344}, 'B4': {0: 976, 1: 432, 4: 384}, 'F1': {0: 448, 48: 1344}, 'F2': {0: 800, 1: 672, 2: 272, 12: 48}, 'F3': {0: 1792}}  solver: 0 4.2 s
+out/h869_c0_samerun.json: LB 323 old banks 376 -> 323 banks, pad L 173, pads [(0, 288), (1, 34), (25, 1)]; W=7491 dft3=16254943 dft4=16254976
+AUDIT PASS 869/870/890_U8_exit_frames(E1) copies=0 defer=0: 32256 hosted residuals, W=7544, D=2560, histogram matches
+AUDIT PASS 869/870/890_U8_exit_frames(E1) copies=0 defer=0: 32256 hosted residuals, W=7491, D=2560, histogram matches
+== U8XM_5cc -> hu8xm_c0_samerun 17:04:49
+{"name": "U8XM_5cc", "copies": 0, "defer": 0, "dropped": [0, 0], "repaired": 0, "W": 7529, "banks": 361, "hosted": 32736, "unhosted": 3912, "L_idle": 83016.1, "root_lower": "0.00161679000711", "kernel_A": 16167867, "dft": 16167866}
+  remainders: {'A2': {0: 1792}, 'B2': {0: 976, 1: 432, 4: 384}, 'A3': {0: 808, 1: 344, 2: 608, 12: 32}, 'B3': {0: 976, 1: 432, 3: 256, 4: 128}, 'A4': {0: 488, 48: 1304}, 'B4': {0: 976, 1: 432, 4: 384}, 'F1': {0: 488, 48: 1304}, 'F2': {0: 808, 1: 680, 2: 272, 12: 32}, 'F3': {0: 1792}}  solver: 0 4.0 s
+out/hu8xm_c0_samerun.json: LB 310 old banks 361 -> 310 banks, pad L 168, pads [(0, 276), (1, 33), (29, 1)]; W=7478 dft3=16196135 dft4=16196168
+AUDIT PASS U8XM_5cc copies=0 defer=0: 32736 hosted residuals, W=7529, D=2560, histogram matches
+AUDIT PASS U8XM_5cc copies=0 defer=0: 32736 hosted residuals, W=7478, D=2560, histogram matches
+== done 17:09:03

@@ -1,0 +1,9 @@
+[lift] seed 31: cells lam1 1 t1 16 F 137 K 731; |B_m sample| 106 of 4000; q order 7 found; 39s
+[d4] d1 0, d0 21, |S| 16
+[fullrow] V (dim 16) all30: (a: r_a(full) / m_a(p)) 0: 0/4, 1: 0/2, 2: 0/2, 3: 0/2, 4: 0/2, 5: 0/2, 6: 0/2; total deficit 112 vs ds 16 -> EXCLUDED for every F2 twist  67s
+[fullrow] V (dim 16) d4: (a: r_a(full) / m_a(p)) 0: 0/4, 1: 0/2, 2: 0/2, 3: 0/2, 4: 0/2, 5: 0/2, 6: 0/2; total deficit 112 vs ds 16 -> EXCLUDED for every F2 twist  68s
+[fullrow] gl14 (dim 14) all30: (a: r_a(full) / m_a(p)) 0: 0/2, 1: 2/2, 2: 2/2, 3: 2/2, 4: 2/2, 5: 2/2, 6: 2/2; total deficit 86 vs ds 14 -> EXCLUDED for every F2 twist  71s
+[fullrow] gl14 (dim 14) d4: (a: r_a(full) / m_a(p)) 0: 0/2, 1: 2/2, 2: 2/2, 3: 2/2, 4: 2/2, 5: 2/2, 6: 2/2; total deficit 86 vs ds 14 -> EXCLUDED for every F2 twist  72s
+[fullrow] aff16 (dim 16) all30: (a: r_a(full) / m_a(p)) 0: 0/4, 1: 1/2, 2: 1/2, 3: 1/2, 4: 1/2, 5: 1/2, 6: 1/2; total deficit 106 vs ds 16 -> EXCLUDED for every F2 twist  75s
+[fullrow] aff16 (dim 16) d4: (a: r_a(full) / m_a(p)) 0: 0/4, 1: 1/2, 2: 1/2, 3: 1/2, 4: 1/2, 5: 1/2, 6: 1/2; total deficit 106 vs ds 16 -> EXCLUDED for every F2 twist  76s
+done 76s

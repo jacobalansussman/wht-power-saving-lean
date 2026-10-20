@@ -1,0 +1,21 @@
+[ALT=1 ALTONLY=1; non-alternating targets 420, alternating 28]
+m=4 W=1 M=5: 448 targets; 1 classes of direction multisets (0.0 s)
+  SURVIVOR dirs (1, 2, 4, 8, 15) (orbit 1; distinct dirs independent: True): 1 target 1-multisets pass S+D+C+Z (0 with no tight form); example targets idx 447 (tight 160, clique 1)
+     targets 447 tight 160 clique 1
+  classes with some target in span: 1; with a target 1-multiset passing deletion: 1; passing cliques and the zero-block test too: 1
+  target tuples passing deletion but excluded: by cliques 0, by the zero-block test 0
+  classes skipped by the free-direction lemma (independent distinct directions, M < mW): 0
+  done in 0.0 s
+[ALT=1 ALTONLY=1; non-alternating targets 420, alternating 28]
+m=4 W=1 M=4: 448 targets; 8 classes of direction multisets (0.1 s)
+  classes with some target in span: 1; with a target 1-multiset passing deletion: 0; passing cliques and the zero-block test too: 0
+  target tuples passing deletion but excluded: by cliques 0, by the zero-block test 0
+  classes skipped by the free-direction lemma (independent distinct directions, M < mW): 0
+  done in 0.1 s
+[ALT=1 ALTONLY=1; non-alternating targets 420, alternating 28]
+m=4 W=1 M=5: 448 targets; 15 classes of direction multisets (0.2 s)
+  SURVIVOR dirs (1, 2, 4, 8, 15) (orbit 168; distinct dirs independent: True): 1 target 1-multisets pass S+D+C+Z (0 with no tight form); example targets idx 447 (tight 160, clique 1)
+  classes with some target in span: 4; with a target 1-multiset passing deletion: 1; passing cliques and the zero-block test too: 1
+  target tuples passing deletion but excluded: by cliques 0, by the zero-block test 0
+  classes skipped by the free-direction lemma (independent distinct directions, M < mW): 0
+  done in 0.2 s

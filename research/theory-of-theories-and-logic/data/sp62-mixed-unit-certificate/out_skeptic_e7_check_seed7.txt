@@ -1,0 +1,17 @@
+frame R0 (positive-root indices): [0, 3, 10, 15, 24, 29, 62]
+lines among the 7 frame roots: 7
+max |P| entry 1152
+eigenspace ranks mod p (-21, -45, -9): 105 7 35  sum 147
+{'0': 1, '2(21)': 21, '4noline(7)': 7, '4line(28)': 28, '6(7)': 7}
+weight-space dims per orbit (mod p): {'0': 0, '2(21)': 0, '4noline(7)': 14, '4line(28)': 56, '6(7)': 35}  total 105
+dim N = 56  ( (147, 56) )
+dim N exact: 56
+found 6 stabiliser elements in 116 tries
+N kept by all sampled P_0 elements (mod p)
+distance 1: f_N mod p over 3 random elements: [20, 20, 20]
+distance 2: f_N mod p over 3 random elements: [38, 38, 38]
+distance 3: f_N mod p over 3 random elements: [49, 49, 49]
+distance 1: exact f_N = 20
+distance 2: exact f_N = 38
+distance 3: exact f_N = 49
+EXACT PROFILE (20, 38, 49)  psi3+4psi2-10psi1 = 1  7psi3+38psi2-88psi1 = 27

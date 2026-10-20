@@ -1,0 +1,4 @@
+
+cells sizes Counter({1: 8, 2: 4, 0: 3}) arc groups {(0, 2): 4, (0, 1): 8, (2, 0): 4, (2, 1): 16, (1, 0): 8, (1, 2): 16} session groups {(0, 1): 16, (0, 2): 8, (2, 0): 8, (2, 1): 16, (1, 0): 16, (1, 2): 16}
+my Shannon LP on the 3-cell contraction: 80.000000 (nc-gain: 80); per session after averaging 1.07143 (nc-gain 1.07143)
+EXIT 0

@@ -1,0 +1,21 @@
+walks 3360 distinct N2 1120
+0 N2 done, t=0.1s
+100 N2 done, t=3.2s
+200 N2 done, t=6.2s
+300 N2 done, t=9.0s
+400 N2 done, t=12.0s
+500 N2 done, t=14.9s
+600 N2 done, t=17.8s
+700 N2 done, t=20.7s
+800 N2 done, t=23.8s
+900 N2 done, t=26.6s
+1000 N2 done, t=29.6s
+1100 N2 done, t=32.6s
+anchors per N2: {48: 1120}  d(P,L0) of anchors: {(2,): 53760}
+far Y count per N2: {48: 1120}
+special ordered pairs per N2: {1536: 1120}
+per special pair (#clean A1, #clean A2): {(16, 16): 1720320}
+lambda configurations total (over all N2, x3 for walks): {(3, 3): 110100480, (3, 4): 110100480, (4, 3): 110100480, (4, 4): 110100480}
+pairs admitting (3,3): 1720320  violations of the L3 fact: 0
+pairs admitting lambda_1=3 (any lambda_2): violations 0 ok 1720320
+time 33.2s

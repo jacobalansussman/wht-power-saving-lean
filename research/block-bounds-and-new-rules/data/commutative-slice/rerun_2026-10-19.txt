@@ -1,0 +1,28 @@
+Re-run for this revision, 19 October 2026, on an Apple M4 Mac mini (Python 3.9 with numpy 2.0.2 and scipy 1.13.1), from the published files
+
+$ python3 -I check_lp.py ../../data/commutative-slice/cert_lp_m2.json
+exit 0, 1 s
+m=2: support 2, distribution exact: True, all y.Phi(kappa)=1: True, max_z E[y.Phi(z)] = 1/2 <= v = 1/2: True
+RESULT: PASS -> at block 2, every multiset of n directions with n < 2 W fails the test
+
+$ python3 -I check_lp.py ../../data/commutative-slice/cert_lp_m3.json
+exit 0, 0 s
+m=3: support 7, distribution exact: True, all y.Phi(kappa)=1: True, max_z E[y.Phi(z)] = 1/3 <= v = 1/3: True
+RESULT: PASS -> at block 3, every multiset of n directions with n < 3 W fails the test
+
+$ python3 -I check_lp.py ../../data/commutative-slice/cert_lp_m4.json
+exit 0, 0 s
+m=4: support 13, distribution exact: True, all y.Phi(kappa)=1: True, max_z E[y.Phi(z)] = 4/15 <= v = 4/15: True
+RESULT: PASS -> at block 4, every multiset of n directions with n < 15/4 W fails the test
+
+$ python3 -I check_lp.py ../../data/commutative-slice/cert_lp_m5.json
+exit 0, 0 s
+m=5: support 30, distribution exact: True, all y.Phi(kappa)=1: True, max_z E[y.Phi(z)] = 8/31 <= v = 8/31: True
+RESULT: PASS -> at block 5, every multiset of n directions with n < 31/8 W fails the test
+
+$ python3 -I check_matroid.py 4 2 7 ../../data/commutative-slice/cert_m4_W2_n7.bin
+exit 0, 2 s
+m=4 W=2 n=7: multisets enumerated 116280, certificate entries 116280, complete: True
+  exclusion certificates valid: 116280; entries without certificate: 0 (of which pass the test by brute force: 0)
+RESULT: PASS -> 116280 of 116280 multisets EXCLUDED by certificate; 0 pass the test
+

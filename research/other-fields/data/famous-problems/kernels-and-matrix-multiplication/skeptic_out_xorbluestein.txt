@@ -1,0 +1,10 @@
+n=1: (-1)^{|x&y|} == i^|x| i^|y| i^-|x^y| for all x,y: True
+n=2: (-1)^{|x&y|} == i^|x| i^|y| i^-|x^y| for all x,y: True
+n=3: (-1)^{|x&y|} == i^|x| i^|y| i^-|x^y| for all x,y: True
+n=4: (-1)^{|x&y|} == i^|x| i^|y| i^-|x^y| for all x,y: True
+n=5: (-1)^{|x&y|} == i^|x| i^|y| i^-|x^y| for all x,y: True
+n=6: (-1)^{|x&y|} == i^|x| i^|y| i^-|x^y| for all x,y: True
+n=1: support of W^(x)n == subset-convolution support (third index complemented): True (3 terms)
+n=2: support of W^(x)n == subset-convolution support (third index complemented): True (9 terms)
+n=3: support of W^(x)n == subset-convolution support (third index complemented): True (27 terms)
+n=4: support of W^(x)n == subset-convolution support (third index complemented): True (81 terms)

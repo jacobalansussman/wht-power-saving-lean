@@ -1,0 +1,36 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=16 n=2^20 NT=4 NTS=2 BLAS_B=64 J=2 (useful MAC fraction 0.125) BLAS_CH=16384 ols_N=1024 pf_N=512 VPOS=0
+CHECK vdsp_conv L=16 n=2^20 (32768 outs)       max abs err 4.967e-07  rel err 9.987e-08  (tol 1.0e-05) PASS
+CHECK vdsp_conv_pos L=16 n=2^20 (32768 outs)   max abs err 4.967e-07  rel err 9.987e-08  (tol 1.0e-05) PASS
+CHECK vdsp_conv_mt L=16 n=2^20 (32768 outs)    max abs err 4.967e-07  rel err 9.987e-08  (tol 1.0e-05) PASS
+CHECK ols_pffft L=16 n=2^20 (32768 outs)       max abs err 9.378e-07  rel err 1.886e-07  (tol 1.0e-05) PASS
+CHECK pffft_ols_mt L=16 n=2^20 (32768 outs)    max abs err 9.953e-07  rel err 2.001e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=16 n=2^20 (32768 outs)       max abs err 2.061e-06  rel err 4.144e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp_mt L=16 n=2^20 (32768 outs)    max abs err 2.061e-06  rel err 4.144e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=16 n=2^20 (32768 outs)    max abs err 7.494e-07  rel err 1.507e-07  (tol 1.0e-05) PASS
+CHECK sme_mt L=16 n=2^20 (32768 outs)          max abs err 7.494e-07  rel err 1.507e-07  (tol 1.0e-05) PASS
+CHECK blas_toep L=16 n=2^20 (32768 outs)       max abs err 7.494e-07  rel err 1.507e-07  (tol 1.0e-05) PASS
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=64 n=2^20 NT=4 NTS=2 BLAS_B=64 J=2 (useful MAC fraction 0.500) BLAS_CH=16384 ols_N=1024 pf_N=512 VPOS=0
+CHECK vdsp_conv L=64 n=2^20 (32768 outs)       max abs err 1.817e-06  rel err 1.553e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv_pos L=64 n=2^20 (32768 outs)   max abs err 1.817e-06  rel err 1.553e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv_mt L=64 n=2^20 (32768 outs)    max abs err 1.817e-06  rel err 1.553e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=64 n=2^20 (32768 outs)       max abs err 2.211e-06  rel err 1.890e-07  (tol 1.0e-05) PASS
+CHECK pffft_ols_mt L=64 n=2^20 (32768 outs)    max abs err 2.732e-06  rel err 2.336e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=64 n=2^20 (32768 outs)       max abs err 4.005e-06  rel err 3.424e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp_mt L=64 n=2^20 (32768 outs)    max abs err 4.575e-06  rel err 3.912e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=64 n=2^20 (32768 outs)    max abs err 3.517e-06  rel err 3.007e-07  (tol 1.0e-05) PASS
+CHECK sme_mt L=64 n=2^20 (32768 outs)          max abs err 3.517e-06  rel err 3.007e-07  (tol 1.0e-05) PASS
+CHECK blas_toep L=64 n=2^20 (32768 outs)       max abs err 3.517e-06  rel err 3.007e-07  (tol 1.0e-05) PASS
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=256 n=2^20 NT=4 NTS=2 BLAS_B=64 J=5 (useful MAC fraction 0.800) BLAS_CH=16384 ols_N=2048 pf_N=1024 VPOS=0
+CHECK vdsp_conv L=256 n=2^20 (32768 outs)      max abs err 6.314e-06  rel err 2.722e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv_pos L=256 n=2^20 (32768 outs)  max abs err 6.314e-06  rel err 2.722e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv_mt L=256 n=2^20 (32768 outs)   max abs err 6.314e-06  rel err 2.722e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=256 n=2^20 (32768 outs)      max abs err 5.233e-06  rel err 2.257e-07  (tol 1.0e-05) PASS
+CHECK pffft_ols_mt L=256 n=2^20 (32768 outs)   max abs err 5.233e-06  rel err 2.257e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=256 n=2^20 (32768 outs)      max abs err 8.095e-06  rel err 3.491e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp_mt L=256 n=2^20 (32768 outs)   max abs err 8.095e-06  rel err 3.491e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=256 n=2^20 (32768 outs)   max abs err 1.341e-05  rel err 5.782e-07  (tol 1.0e-05) PASS
+CHECK sme_mt L=256 n=2^20 (32768 outs)         max abs err 1.341e-05  rel err 5.782e-07  (tol 1.0e-05) PASS
+CHECK blas_toep L=256 n=2^20 (32768 outs)      max abs err 1.341e-05  rel err 5.782e-07  (tol 1.0e-05) PASS

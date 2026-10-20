@@ -1,0 +1,2 @@
+orb.py mode=two m=4 W=2 target 2 in 7; trials=90 depth=4 seed=112 kinds=['stab', 'cycle']
+trial 0: a=(3, 3) dup=2 orbits=[('stab', 'R2', 1, 2, 3, 4), ('stab', 'Rt', 0, 0, 7, 4), ('stab', 'Rt', 0, 0, 7, 6), ('cycle', 'Rt', 0, 0, 7, 3)] hist=[('00', 'nn', 'nn', 'H', 8, '-,-'), ('11', 'yy', 'nn', '-', 6, '-,-'), ('11', 'yy', 'cc', '-', 6, 'L3c,L4n'), ('11', 'yy', 'cc', '-', 6, 'L4c,L4c'), ('11', 'yy', 'cc', '-', 6, 'L4c,L4c')]

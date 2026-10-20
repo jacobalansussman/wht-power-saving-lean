@@ -1,0 +1,461 @@
+{
+ "runs": 330651,
+ "bad": 0,
+ "nunits": 15144,
+ "classes": {
+  "(2, 'coherent', 0, 0)": 14584,
+  "(2, 'same-input split', 0, 0)": 560
+ },
+ "incoherent": [
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, -2, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1, None)]), ('move', 1, 1), ('mix', 2, [(2, -2, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)]), ('move', 1, 1), ('mix', 2, [(2, -2, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)]), ('move', 1, 1), ('mix', 2, [(2, -2, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, -2, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, -2, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, -2, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, -2, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, -2, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, -2, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, -2, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, -2, None), (1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, -2, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, -1i, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, -2, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(-1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)]), ('move', 1, 1), ('mix', 2, [(2, Fraction(1, 2), None), (1, Fraction(1, 2), None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  },
+  {
+   "word": "[('move', 0, 1), ('mix', 2, [(1, 1, None)]), ('move', 1, 1), ('mix', 2, [(2, 1, None), (1, 1, None)])]",
+   "M": 2,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "same-input split"
+  }
+ ]
+}

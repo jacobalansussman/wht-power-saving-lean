@@ -1,0 +1,17 @@
+m=1: Lagrangians 3 (formula 3); subspaces 2; frames.py-subspace frames all Lagrangian: True; I(L0,LF)==subspace frames(frames.py conv): True; I(L0,LF)==CSS frames: False
+   excess histogram {0: 2, 1: 1}; neighbours of L0: 2 = 2(2^m-1)=2; subspace 1, non-subspace 1, non-subspace all transversal to L_F: True
+   odd labels 1; ordered distinct pairs 0; orthogonal ordered pairs 0; claim formula (2^(m-1)-1)2^(m-2) = -
+m=2: Lagrangians 15 (formula 15); subspaces 5; frames.py-subspace frames all Lagrangian: True; I(L0,LF)==subspace frames(frames.py conv): True; I(L0,LF)==CSS frames: False
+   excess histogram {0: 5, 1: 6, 2: 4}; neighbours of L0: 6 = 2(2^m-1)=6; subspace 3, non-subspace 3, non-subspace all transversal to L_F: True
+   odd labels 2; ordered distinct pairs 2; orthogonal ordered pairs 2; claim formula (2^(m-1)-1)2^(m-2) = 1
+m=3: Lagrangians 135 (formula 135); subspaces 16; frames.py-subspace frames all Lagrangian: True; I(L0,LF)==subspace frames(frames.py conv): True; I(L0,LF)==CSS frames: False
+   excess histogram {0: 16, 1: 35, 2: 56, 3: 28}; neighbours of L0: 14 = 2(2^m-1)=14; subspace 7, non-subspace 7, non-subspace all transversal to L_F: True
+   odd labels 4; ordered distinct pairs 12; orthogonal ordered pairs 6; claim formula (2^(m-1)-1)2^(m-2) = 6
+m=4: Lagrangians 2295 (formula 2295); subspaces 67; frames.py-subspace frames all Lagrangian: True; I(L0,LF)==subspace frames(frames.py conv): True; I(L0,LF)==CSS frames: False
+   excess histogram {0: 67, 1: 240, 2: 700, 3: 840, 4: 448}; neighbours of L0: 30 = 2(2^m-1)=30; subspace 15, non-subspace 15, non-subspace all transversal to L_F: True
+   odd labels 8; ordered distinct pairs 56; orthogonal ordered pairs 32; claim formula (2^(m-1)-1)2^(m-2) = 28
+m=5: odd 16, all ordered 240, orthogonal 120, claim formula 120, ratio 2.0000; L0-neighbours 2(2^m-1)=62, subspace 31, odd-label subspace 16
+m=6: odd 32, all ordered 992, orthogonal 512, claim formula 496, ratio 1.9375; L0-neighbours 2(2^m-1)=126, subspace 63, odd-label subspace 32
+m=7: odd 64, all ordered 4032, orthogonal 2016, claim formula 2016, ratio 2.0000; L0-neighbours 2(2^m-1)=254, subspace 127, odd-label subspace 64
+m=8: odd 128, all ordered 16256, orthogonal 8192, claim formula 8128, ratio 1.9844; L0-neighbours 2(2^m-1)=510, subspace 255, odd-label subspace 128
+m=9: odd 256, all ordered 65280, orthogonal 32640, claim formula 32640, ratio 2.0000; L0-neighbours 2(2^m-1)=1022, subspace 511, odd-label subspace 256

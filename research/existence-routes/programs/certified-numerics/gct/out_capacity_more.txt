@@ -1,0 +1,18 @@
+irreps [6]: n = 35, types (dim, multiplicity): [(7, 1), (28, 1)]
+multiplicity-free; norms of the blocks h[tau, tau']: [[1.0, 2.449], [2.449, 4.69]]
+S + ShS = End(V): True  (so k has depth 1: True)
+  type 0: dim 7 x mult 1: need 7 per array (rows of k outside the inputs), cap <= 6 per move -> M/W >= 1.167   [sv gaps: need 8.7e-01 | 0.0e+00; cap 1.0e+00 | 5.2e-15; generic need would be 7]
+  type 1: dim 28 x mult 1: need 7 per array (rows of k outside the inputs), cap <= 6 per move -> M/W >= 1.167   [sv gaps: need 8.7e-01 | 0.0e+00; cap 1.0e+00 | 4.9e-15; generic need would be 7]
+irreps [7]: n = 35, types (dim, multiplicity): [(1, 1), (6, 1), (7, 1), (21, 1)]
+multiplicity-free; norms of the blocks h[tau, tau']: [[0.357, 0.742, 0.567, 0.0], [0.742, 1.421, 0.655, 1.732], [0.567, 0.655, 1.803, 1.732], [0.0, 1.732, 1.732, 3.873]]
+S + ShS = End(V): False  (so k has depth 1: False)
+  type 0: dim 1 x mult 1: need 1 per array (rows of k outside the inputs), cap <= 1 per move -> M/W >= 1.000   [sv gaps: need 9.9e-01 | 0.0e+00; cap 9.3e-01 | 0.0e+00; generic need would be 1]
+  type 1: dim 6 x mult 1: need 6 per array (rows of k outside the inputs), cap <= 4 per move -> M/W >= 1.500   [sv gaps: need 9.4e-01 | 0.0e+00; cap 9.9e-01 | 8.7e-15; generic need would be 6]
+  type 2: dim 7 x mult 1: need 7 per array (rows of k outside the inputs), cap <= 4 per move -> M/W >= 1.750   [sv gaps: need 4.8e-01 | 0.0e+00; cap 8.7e-01 | 2.7e-15; generic need would be 7]
+  type 3: dim 21 x mult 1: need 13 per array (rows of k outside the inputs), cap <= 6 per move -> M/W >= 2.167   [sv gaps: need 7.1e-01 | 1.1e-15; cap 1.0e+00 | 1.3e-14; generic need would be 14]
+irreps [9]: n = 70, types (dim, multiplicity): [(21, 1), (21, 1), (28, 1)]
+multiplicity-free; norms of the blocks h[tau, tau']: [[3.122, 1.5, 3.0], [1.5, 3.122, 3.0], [3.0, 3.0, 3.162]]
+S + ShS = End(V): True  (so k has depth 1: True)
+  type 0: dim 21 x mult 1: need 21 per array (rows of k outside the inputs), cap <= 13 per move -> M/W >= 1.615   [sv gaps: need 6.6e-01 | 0.0e+00; cap 8.7e-01 | 3.5e-15; generic need would be 21]
+  type 1: dim 21 x mult 1: need 21 per array (rows of k outside the inputs), cap <= 15 per move -> M/W >= 1.400   [sv gaps: need 5.3e-01 | 0.0e+00; cap 8.7e-01 | 2.8e-15; generic need would be 21]
+  type 2: dim 28 x mult 1: need 21 per array (rows of k outside the inputs), cap <= 22 per move -> M/W >= 0.955   [sv gaps: need 6.6e-01 | 3.1e-15; cap 8.7e-01 | 2.5e-15; generic need would be 28]

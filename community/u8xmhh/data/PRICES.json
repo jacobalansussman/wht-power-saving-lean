@@ -1,0 +1,283 @@
+{
+ "date": "2026-10-13",
+ "agent": "fs-price",
+ "rows": [
+  {
+   "label": "Shea control (#588 atm3 + 112 source copies, dedicated banks)",
+   "status": "Lean-checked (Shea); reproduced",
+   "dft_c": 12331685,
+   "saving_c": "1.2331685e-03",
+   "dft_q": null,
+   "W": 12208,
+   "vs_shea_pct": 0.0
+  },
+  {
+   "label": "C588M control (#588 + mutable sources, annealed table)",
+   "status": "Lean-checked (m-gen/m-build); reproduced",
+   "dft_c": 13552606,
+   "saving_c": "1.3552606e-03",
+   "dft_q": null,
+   "W": 11200,
+   "vs_shea_pct": 9.9
+  },
+  {
+   "label": "U8XM control (U8 + exit frames + mutable, 5 centre copies, 3771 banks)",
+   "status": "Lean-checked (k-combine); reproduced",
+   "dft_c": 13868856,
+   "saving_c": "1.3868856e-03",
+   "dft_q": null,
+   "W": 10939,
+   "vs_shea_pct": 12.47
+  },
+  {
+   "label": "C588MHH control (#588 + mutable + same-run hosting)",
+   "status": "Lean-checked (h-L3-build); reproduced, tables byte-identical",
+   "dft_c": 15699305,
+   "saving_c": "1.5699305e-03",
+   "dft_q": 15699334,
+   "W": 7279,
+   "banks": 111,
+   "pads": {
+    "0": 110,
+    "39": 1
+   },
+   "hosted": 35280,
+   "unhosted": 1008,
+   "defer": 0,
+   "samerun": 1,
+   "file": "out/h588_c0_samerun.repacked2.json",
+   "vs_shea_pct": 27.31
+  },
+  {
+   "label": "U8 + exits, NO copies, same-run hosting (h-L3-design control)",
+   "status": "Python price; reproduced; needs Cc generalised",
+   "dft_c": 16254943,
+   "saving_c": "1.6254943e-03",
+   "dft_q": 16254976,
+   "W": 7491,
+   "banks": 323,
+   "pads": {
+    "0": 288,
+    "1": 34,
+    "25": 1
+   },
+   "hosted": 32256,
+   "unhosted": 4032,
+   "defer": 0,
+   "samerun": 1,
+   "file": "out/h869_c0_samerun.repacked2.json",
+   "vs_shea_pct": 31.81
+  },
+  {
+   "label": "U8 + exits, NO copies, same-run hosting, pads consolidated (reference)",
+   "status": "Python price; needs Cc generalised (200-400 Lean lines)",
+   "dft_c": 16256506,
+   "saving_c": "1.6256506e-03",
+   "dft_q": 16256539,
+   "W": 7491,
+   "banks": 323,
+   "pads": {
+    "0": 321,
+    "2": 1,
+    "57": 1
+   },
+   "hosted": 32256,
+   "unhosted": 4032,
+   "defer": 0,
+   "samerun": 1,
+   "file": "out/h869_c0_samerun.padsa.json",
+   "vs_shea_pct": 31.83
+  },
+  {
+   "label": "U8XM + same-run hosting, host_repack2 banks",
+   "status": "Python price; superseded by the pad-consolidated table",
+   "dft_c": 16196135,
+   "saving_c": "1.6196135e-03",
+   "dft_q": 16196168,
+   "W": 7478,
+   "banks": 310,
+   "pads": {
+    "0": 276,
+    "1": 33,
+    "29": 1
+   },
+   "hosted": 32736,
+   "unhosted": 3912,
+   "defer": 0,
+   "samerun": 1,
+   "file": "out/hu8xm_sr.repacked2.json",
+   "vs_shea_pct": 31.34
+  },
+  {
+   "label": "U8XMHH = U8XM + same-run hosting, pads consolidated (THE TARGET)",
+   "status": "Python price + Lean data generated; hostSchedK checked in Lean on the Mac",
+   "dft_c": 16197705,
+   "saving_c": "1.6197705e-03",
+   "dft_q": 16197737,
+   "W": 7478,
+   "banks": 310,
+   "pads": {
+    "0": 308,
+    "1": 1,
+    "61": 1
+   },
+   "hosted": 32736,
+   "unhosted": 3912,
+   "defer": 0,
+   "samerun": 1,
+   "file": "out/hu8xm_sr.padsa.json",
+   "vs_shea_pct": 31.35
+  },
+  {
+   "label": "U8XM + cross-run hosting, deferred finals (reference)",
+   "status": "Python price; no Lean format (cross-run tables)",
+   "dft_c": 16287794,
+   "saving_c": "1.6287794e-03",
+   "dft_q": 16287827,
+   "W": 7307,
+   "banks": 139,
+   "pads": {
+    "1": 20,
+    "3": 1,
+    "4": 1,
+    "5": 11,
+    "6": 2,
+    "15": 3,
+    "24": 13,
+    "32": 1,
+    "40": 1,
+    "48": 14,
+    "56": 23,
+    "64": 49
+   },
+   "hosted": 36123,
+   "unhosted": 525,
+   "defer": 1,
+   "samerun": 0,
+   "file": "out/hu8xm_x_d1.repacked2.json",
+   "vs_shea_pct": 32.08
+  },
+  {
+   "label": "U8XM + cross-run hosting, deferred finals, pads consolidated (reference)",
+   "status": "Python price; no Lean format",
+   "dft_c": 16287794,
+   "saving_c": "1.6287794e-03",
+   "dft_q": 16287827,
+   "W": 7307,
+   "banks": 139,
+   "pads": {
+    "1": 20,
+    "3": 1,
+    "4": 1,
+    "5": 11,
+    "6": 2,
+    "15": 3,
+    "24": 13,
+    "32": 1,
+    "40": 1,
+    "48": 14,
+    "56": 23,
+    "64": 49
+   },
+   "hosted": 36123,
+   "unhosted": 525,
+   "defer": 1,
+   "samerun": 0,
+   "file": "out/hu8xm_x_d1.padsa.json",
+   "vs_shea_pct": 32.08
+  },
+  {
+   "label": "U8XM + cross-run hosting, strict order (reference)",
+   "status": "Python price; no Lean format",
+   "dft_c": 16293239,
+   "saving_c": "1.6293239e-03",
+   "dft_q": 16293272,
+   "W": 7317,
+   "banks": 149,
+   "pads": {
+    "0": 51,
+    "6": 1,
+    "30": 4,
+    "34": 1,
+    "38": 4,
+    "47": 4,
+    "51": 4,
+    "55": 7,
+    "64": 17,
+    "69": 56
+   },
+   "hosted": 35963,
+   "unhosted": 685,
+   "defer": 0,
+   "samerun": 0,
+   "file": "out/hu8xm_x_d0.repacked2.json",
+   "vs_shea_pct": 32.13
+  },
+  {
+   "label": "U8XM + cross-run hosting, strict order, pads consolidated (reference)",
+   "status": "Python price; no Lean format",
+   "dft_c": 16293239,
+   "saving_c": "1.6293239e-03",
+   "dft_q": 16293272,
+   "W": 7317,
+   "banks": 149,
+   "pads": {
+    "0": 51,
+    "6": 1,
+    "30": 4,
+    "34": 1,
+    "38": 4,
+    "47": 4,
+    "51": 4,
+    "55": 7,
+    "64": 17,
+    "69": 56
+   },
+   "hosted": 35963,
+   "unhosted": 685,
+   "defer": 0,
+   "samerun": 0,
+   "file": "out/hu8xm_x_d0.padsa.json",
+   "vs_shea_pct": 32.13
+  }
+ ],
+ "generator_summary": {
+  "name": "U8XMHH",
+  "kernel_numerator": 16197706,
+  "dft_numerator": 16197705,
+  "W": 7478,
+  "banks": 310,
+  "hist": {
+   "1": 186137,
+   "2": 25216,
+   "3": 32368,
+   "4": 12560,
+   "5": 5184,
+   "8": 936,
+   "12": 64,
+   "48": 2608,
+   "61": 1
+  },
+  "pads": {
+   "0": 308,
+   "1": 1,
+   "61": 1
+  },
+  "rem_hist": {
+   "0": 1138,
+   "1": 290,
+   "2": 110,
+   "3": 32,
+   "4": 112,
+   "12": 8,
+   "48": 326
+  },
+  "slack": 5.964834437776731e-11,
+  "source": {
+   "hosttab": "out/HU8XM-hosttab.json",
+   "repack": "out/hu8xm_sr.padsa.json",
+   "price": "k-combine/out/price/U8XM.json",
+   "sched": "k-combine/out/global-U8XM/Work/GCert/Data/Gen/U8XMSched.lean"
+  }
+ }
+}

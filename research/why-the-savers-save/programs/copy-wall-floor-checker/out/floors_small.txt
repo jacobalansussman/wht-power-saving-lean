@@ -1,0 +1,47 @@
+instance A2: v 3, h 3, frame field Q, payload F_2; knows-pairs 0
+  star floor = 3   (branch and bound, nodes 11); read sets of an optimal decoder:
+     read [0]  star 1
+     read [1]  star 1
+     read [2]  star 1
+  pair floor = 3   (states expanded 449)
+  one drop per port = 3
+instance B2: v 4, h 2, frame field Q, payload F_2; knows-pairs 4
+  star floor = 4   (branch and bound, nodes 70); read sets of an optimal decoder:
+     read [0]  star 1
+     read [1]  star 1
+     read [2]  star 1
+     read [3]  star 1
+  pair floor = 4   (states expanded 3877)
+  one drop per port = 4
+instance f2h3-odd: v 4, h 3, frame field 2, payload F_2; knows-pairs 6
+  star floor = 4   (branch and bound, nodes 50); read sets of an optimal decoder:
+     read [0]  star 1
+     read [1]  star 1
+     read [2]  star 1
+     read [3]  star 1
+  pair floor = 4   (states expanded 988)
+  one drop per port = 4
+instance A3: v 6, h 4, frame field Q, payload F_2; knows-pairs 6
+  star floor = 6   (branch and bound, nodes 3525); read sets of an optimal decoder:
+     read [0]  star 1
+     read [1]  star 1
+     read [2]  star 1
+     read [3]  star 1
+     read [4]  star 1
+     read [5]  star 1
+  one drop per port = 6
+instance f2h4-odd: v 8, h 4, frame field 2, payload F_2; knows-pairs 32
+  star floor = 8   (branch and bound, nodes 253337); read sets of an optimal decoder:
+     read [0]  star 1
+     read [1]  star 1
+     read [2]  star 1
+     read [3]  star 1
+     read [4]  star 1
+     read [5]  star 1
+     read [6]  star 1
+     read [7]  star 1
+  one drop per port = 8
+instance f2h3-odd: v 4, h 3, frame field 2, payload F_3; knows-pairs 6
+  star floor = 4   (states expanded 34591)
+  pair floor = 4   (states expanded 43121)
+  one drop per port = 4

@@ -1,0 +1,8 @@
+G order 10752  24s
+dim A 184  25s
+reduced problem residual 3.07e-14
+F1 terms 1288  max distance 3  25s
+DESIGNED (Y from the reduced problem): passes = True  mu_ok {0: np.True_, 2: np.True_, 3: np.True_, 4: np.True_, 5: np.True_, 6: np.True_}  null_dim 12  sv_gap (np.float64(0.63071972498638), np.float64(9.971493826372401e-15))
+CONTROL single term (Y = 1): passes = False  mu_ok {0: np.False_, 2: np.False_, 3: np.False_, 4: np.False_, 5: np.False_, 6: np.False_}
+CONTROL random Y (same support): passes = False  mu_ok {0: np.False_, 2: np.False_, 3: np.False_, 4: np.False_, 5: np.False_, 6: np.False_}
+done 28s

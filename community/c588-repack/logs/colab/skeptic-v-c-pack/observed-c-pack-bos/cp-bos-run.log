@@ -1,0 +1,11 @@
+threads for the solution build (lake adapter): 1
+=== lean START Tue Oct 13 17:08:12 UTC 2026 epoch=1791911292 olean files: 0
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/cpack-bos/control/bin:$PATH; export PATH; exec comparator /content/work/cpack-bos/control/lean.json'
+=== lean END rc=0 wall=7759s Tue Oct 13 19:17:31 UTC 2026 maxrss_kb=9116876
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, Race.bound, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Submission
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 353
+=== audit START Tue Oct 13 19:17:32 UTC 2026 epoch=1791919052 olean files: 353
+cmd: exec lake env lean VerifierAudit.lean

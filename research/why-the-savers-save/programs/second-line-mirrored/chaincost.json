@@ -1,0 +1,52 @@
+[
+ {
+  "case": "natural mirror",
+  "chains": [
+   14,
+   14,
+   14,
+   14,
+   14,
+   14,
+   14,
+   14
+  ],
+  "drops": [
+   30,
+   29,
+   29,
+   27,
+   28,
+   27,
+   31,
+   30
+  ],
+  "per_call_cleanup": 231,
+  "per_call_both": 462
+ },
+ {
+  "case": "best sampled twisted mirror",
+  "chains": [
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "drops": [
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17
+  ],
+  "per_call_cleanup": 136,
+  "per_call_both": 272
+ }
+]

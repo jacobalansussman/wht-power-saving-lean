@@ -1,0 +1,40 @@
+check_relX.py:40: RuntimeWarning: divide by zero encountered in matmul
+  strict = np.linalg.norm(P @ Xg @ cp - Xg @ P @ cp) / np.linalg.norm(cp)
+check_relX.py:40: RuntimeWarning: overflow encountered in matmul
+  strict = np.linalg.norm(P @ Xg @ cp - Xg @ P @ cp) / np.linalg.norm(cp)
+check_relX.py:40: RuntimeWarning: invalid value encountered in matmul
+  strict = np.linalg.norm(P @ Xg @ cp - Xg @ P @ cp) / np.linalg.norm(cp)
+check_relX.py:41: RuntimeWarning: divide by zero encountered in matmul
+  ev = np.linalg.norm(P @ D @ cp - D @ P @ cp)
+check_relX.py:41: RuntimeWarning: overflow encountered in matmul
+  ev = np.linalg.norm(P @ D @ cp - D @ P @ cp)
+check_relX.py:41: RuntimeWarning: invalid value encountered in matmul
+  ev = np.linalg.norm(P @ D @ cp - D @ P @ cp)
+check_relX.py:45: RuntimeWarning: divide by zero encountered in matmul
+  o0_fib = D @ c + (P @ E1f - E1f @ P) @ cp
+check_relX.py:45: RuntimeWarning: overflow encountered in matmul
+  o0_fib = D @ c + (P @ E1f - E1f @ P) @ cp
+check_relX.py:45: RuntimeWarning: invalid value encountered in matmul
+  o0_fib = D @ c + (P @ E1f - E1f @ P) @ cp
+check_relX.py:46: RuntimeWarning: divide by zero encountered in matmul
+  o0_gen = D @ c + (P @ E1g - E1g @ P) @ cp
+check_relX.py:46: RuntimeWarning: overflow encountered in matmul
+  o0_gen = D @ c + (P @ E1g - E1g @ P) @ cp
+check_relX.py:46: RuntimeWarning: invalid value encountered in matmul
+  o0_gen = D @ c + (P @ E1g - E1g @ P) @ cp
+check_relX.py:50: RuntimeWarning: divide by zero encountered in matmul
+  f"  generic error = {np.linalg.norm(o0_gen - D @ c):.1f};  [E1f, a1] = {np.linalg.norm(P @ E1f - E1f @ P):.1e}")
+check_relX.py:50: RuntimeWarning: overflow encountered in matmul
+  f"  generic error = {np.linalg.norm(o0_gen - D @ c):.1f};  [E1f, a1] = {np.linalg.norm(P @ E1f - E1f @ P):.1e}")
+check_relX.py:50: RuntimeWarning: invalid value encountered in matmul
+  f"  generic error = {np.linalg.norm(o0_gen - D @ c):.1f};  [E1f, a1] = {np.linalg.norm(P @ E1f - E1f @ P):.1e}")
+check_relX.py:49: RuntimeWarning: divide by zero encountered in matmul
+  f"  order-0 error, fibrewise sub-call error = {np.linalg.norm(o0_fib - D @ c):.1e};"
+check_relX.py:49: RuntimeWarning: overflow encountered in matmul
+  f"  order-0 error, fibrewise sub-call error = {np.linalg.norm(o0_fib - D @ c):.1e};"
+check_relX.py:49: RuntimeWarning: invalid value encountered in matmul
+  f"  order-0 error, fibrewise sub-call error = {np.linalg.norm(o0_fib - D @ c):.1e};"
+f=2: |a1 D1 - D1 a1| c' = 0.0e+00;  strict eps^-1 part (generic X) = 9.59 (nonzero: relation-using);  order-0 error, fibrewise sub-call error = 0.0e+00;  generic error = 40.3;  [E1f, a1] = 0.0e+00
+f=3: |a1 D1 - D1 a1| c' = 0.0e+00;  strict eps^-1 part (generic X) = 15.02 (nonzero: relation-using);  order-0 error, fibrewise sub-call error = 0.0e+00;  generic error = 181.1;  [E1f, a1] = 0.0e+00
+f=4: |a1 D1 - D1 a1| c' = 0.0e+00;  strict eps^-1 part (generic X) = 31.14 (nonzero: relation-using);  order-0 error, fibrewise sub-call error = 0.0e+00;  generic error = 685.1;  [E1f, a1] = 0.0e+00
+f=5: |a1 D1 - D1 a1| c' = 0.0e+00;  strict eps^-1 part (generic X) = 63.83 (nonzero: relation-using);  order-0 error, fibrewise sub-call error = 0.0e+00;  generic error = 2880.7;  [E1f, a1] = 0.0e+00

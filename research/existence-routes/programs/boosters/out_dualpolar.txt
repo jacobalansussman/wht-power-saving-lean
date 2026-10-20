@@ -1,0 +1,13 @@
+2 [1, 6, 8] 15
+3 [1, 14, 56, 64] 135
+4 [1, 30, 280, 960, 1024] 2295
+5 [1, 62, 1240, 9920, 31744, 32768] 75735
+6 [1, 126, 5208, 89280, 666624, 2064384, 2097152] 4922775
+M=3 S={0}: [1, 1, 1]  S={0,1} (E: 12,12,15): [12, 12, 15]
+M=2: row sums = sphere sizes: True; p^1_11 = a_1 = 1
+M=3: row sums = sphere sizes: True; p^1_11 = a_1 = 1
+M=4: row sums = sphere sizes: True; p^1_11 = a_1 = 1
+M=5: row sums = sphere sizes: True; p^1_11 = a_1 = 1
+M=6: row sums = sphere sizes: True; p^1_11 = a_1 = 1
+M=7: row sums = sphere sizes: True; p^1_11 = a_1 = 1
+M=8: row sums = sphere sizes: True; p^1_11 = a_1 = 1

@@ -1,0 +1,77 @@
+{
+ "control uniform T74": {
+  "b": "1.6797549561255e-3",
+  "vs_hub_percent": "+0.0000",
+  "separated": true
+ },
+ "full cut, heads=11010, others 24+24": {
+  "b": "1.6948357904638e-3",
+  "vs_hub_percent": "+0.8978",
+  "separated": true
+ },
+ "half cut, heads=11010 (keep 24, target 49), others 48": {
+  "b": "1.6968621073119e-3",
+  "vs_hub_percent": "+1.0184",
+  "separated": true
+ },
+ "full cut, heads=9443, others 24+24": {
+  "b": "1.6797623491040e-3",
+  "vs_hub_percent": "+0.0004",
+  "separated": true
+ },
+ "half cut, heads=9443 (keep 24, target 49), others 48": {
+  "b": "1.6944061777429e-3",
+  "vs_hub_percent": "+0.8722",
+  "separated": true
+ },
+ "full cut, heads=12000, others 24+24": {
+  "b": "1.7044988258081e-3",
+  "vs_hub_percent": "+1.4731",
+  "separated": true
+ },
+ "half cut, heads=12000 (keep 24, target 49), others 48": {
+  "b": "1.6984173740397e-3",
+  "vs_hub_percent": "+1.1110",
+  "separated": true
+ },
+ "full cut, heads=13000, others 24+24": {
+  "b": "1.7143717248056e-3",
+  "vs_hub_percent": "+2.0608",
+  "separated": true
+ },
+ "half cut, heads=13000 (keep 24, target 49), others 48": {
+  "b": "1.6999912358539e-3",
+  "vs_hub_percent": "+1.2047",
+  "separated": true
+ },
+ "full cut, heads=14000, others 24+24": {
+  "b": "1.7243594016053e-3",
+  "vs_hub_percent": "+2.6554",
+  "separated": true
+ },
+ "half cut, heads=14000 (keep 24, target 49), others 48": {
+  "b": "1.7015680054657e-3",
+  "vs_hub_percent": "+1.2986",
+  "separated": true
+ },
+ "full cut, heads=15000, others 24+24": {
+  "b": "1.7344638647947e-3",
+  "vs_hub_percent": "+3.2570",
+  "separated": true
+ },
+ "half cut, heads=15000 (keep 24, target 49), others 48": {
+  "b": "1.7031476909081e-3",
+  "vs_hub_percent": "+1.3926",
+  "separated": true
+ },
+ "full cut, heads=16576, others 24+24": {
+  "b": "1.7506305527275e-3",
+  "vs_hub_percent": "+4.2194",
+  "separated": true
+ },
+ "half cut, heads=16576 (keep 24, target 49), others 48": {
+  "b": "1.7056432134939e-3",
+  "vs_hub_percent": "+1.5412",
+  "separated": true
+ }
+}

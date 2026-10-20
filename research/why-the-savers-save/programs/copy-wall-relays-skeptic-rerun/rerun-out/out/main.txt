@@ -1,0 +1,5 @@
+P120 r=8 L=1 closure=none gauge=XK=I(|K|=8)                  UNSAT  vars 97680 clauses 338808  0.2s
+P120 r=8 L=2 closure=none gauge=XK=I(|K|=8)                  UNSAT  vars 111240 clauses 358968  1.2s
+P120 r=8 L=3 closure=trans gauge=XK=I(|K|=8)                 UNSAT  vars 231480 clauses 1170360  5.9s
+P111 r=8 L=2 closure=none gauge=XK=I(|K|=8)                  UNSAT  vars 94862 clauses 305587  1.1s
+P111 r=8 L=3 closure=one gauge=XK=I(|K|=8)                   UNSAT  vars 190713 clauses 772322  5.8s

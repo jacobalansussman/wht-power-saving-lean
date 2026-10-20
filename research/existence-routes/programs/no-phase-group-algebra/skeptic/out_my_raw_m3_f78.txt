@@ -1,0 +1,7 @@
+Lemma R m=3 f=7: max rel err 5.08e-16
+Lemma R m=3 f=8: max rel err 5.63e-16
+m=3 f=7: Fano product of 7 corrected moves = 1: err 5.78e-16; P_h d'_z P_h^-1 = d'_hz: err 4.00e-16
+m=3 f=8: Fano product of 7 corrected moves = 1: err 5.87e-16; P_h d'_z P_h^-1 = d'_hz: err 4.04e-16
+f=7: U_3 lifted err 5.74e-16 | U_3 uncorrected err 1.40e+00 | T7 lifted err 5.94e-16 | T8 (must fail) err 1.30e+00
+f=8: U_3 lifted err 6.33e-16 | U_3 uncorrected err 1.56e+00 | T7 lifted err 6.46e-16 | T8 (must fail) err 1.39e+00
+DONE

@@ -1,0 +1,141 @@
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:38:13: warning: This simp argument is unused:
+  mul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx, my, im,
+    yy', xy', yx', my', im', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:38:67: warning: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, zero_mul, mul_assoc, yy, xy, yx, my, im, yy',
+    xy', yx', my', im', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:38:77: warning: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, mul_assoc, yy, xy, yx, my, im, yy',
+    xy', yx', my', im', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:39:19: warning: This simp argument is unused:
+  xy
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, yx, my,
+    im, yy', xy', yx', my', im', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:39:23: warning: This simp argument is unused:
+  yx
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, my,
+    im, yy', xy', yx', my', im', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:39:40: warning: This simp argument is unused:
+  xy'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx,
+    my, im, yy', yx', my', im', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:39:45: warning: This simp argument is unused:
+  yx'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx,
+    my, im, yy', xy', my', im', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:39:55: warning: This simp argument is unused:
+  im'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx,
+    my, im, yy', xy', yx', my', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:39:60: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx,
+    my, im, yy', xy', yx', my', im', add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:39:70: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx,
+    my, im, yy', xy', yx', my', im', sub_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:39:80: warning: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx,
+    my, im, yy', xy', yx', my', im', sub_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:53:77: warning: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, mul_assoc, yy, xy, yx, my, im, iy,
+    yy', xy', yx', my', im', iy', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:54:23: warning: This simp argument is unused:
+  yx
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, my,
+    im, iy, yy', xy', yx', my', im', iy', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:54:49: warning: This simp argument is unused:
+  yx'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx,
+    my, im, iy, yy', xy', my', im', iy', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:54:59: warning: This simp argument is unused:
+  im'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx,
+    my, im, iy, yy', xy', yx', my', iy', sub_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:54:79: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx,
+    my, im, iy, yy', xy', yx', my', im', iy', sub_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/v-m-rebuild/src/Work/XMut/Dirt.lean:54:89: warning: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, mul_zero, zero_mul, mul_assoc, yy, xy, yx,
+    my, im, iy, yy', xy', yx', my', im', iy', sub_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'XMut.dirt_fwdZ' depends on axioms: [propext]
+'XMut.dirt_bwdZ' depends on axioms: [propext]
+'XMut.hFz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'XMut.hBz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'XMut.offdiag_z' depends on axioms: [propext, Classical.choice, Quot.sound]

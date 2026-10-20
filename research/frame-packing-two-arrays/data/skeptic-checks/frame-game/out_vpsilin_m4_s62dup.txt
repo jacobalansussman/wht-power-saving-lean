@@ -1,0 +1,7 @@
+m=4 seed=62 dup=True: 30 designs, 26s
+   agree 30
+   mine 00 10
+   mine 01 4
+   mine 10 2
+   mine 11 14
+python3 -B vpsilin.py 4 30 12 62   26.16s user 0.02s system 99% cpu 26.187 total

@@ -1,0 +1,10 @@
+== J63 class 0: frames 20, degree [9], m 3, twists 720, free 36
+J63/c0 M=1 states=2 max(L1+L2)=1 (I) holds  [2.8s]
+J63/c0 M=2 states=65 max(L1+L2)=2 (I) holds  [4.7s]
+J63/c0 M=3 states=4170 max(L1+L2)=3 (I) holds  [202.5s]
+J63/c0 M=4 raw successors=1612466 (I) holds goal no | M=5: 108261 states passed the filter, goal-in-one no  [164.0s]
+== J63 class 1: frames 20, degree [9], m 3, twists 720, free 36
+J63/c1 M=1 states=2 max(L1+L2)=1 (I) holds  [1.3s]
+J63/c1 M=2 states=66 max(L1+L2)=2 (I) holds  [2.3s]
+J63/c1 M=3 states=4161 max(L1+L2)=3 (I) holds  [178.4s]
+J63/c1 M=4 raw successors=1610955 (I) holds goal no | M=5: 121051 states passed the filter, goal-in-one no  [168.3s]

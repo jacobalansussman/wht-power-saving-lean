@@ -1,0 +1,7 @@
+PASS native
+PASS ledgers
+PASS local-replay
+PASS wrappers
+PASS phases
+PASS_COMPLETE_T74_NATIVE_REPLAY sparse 142.708
+rc=0

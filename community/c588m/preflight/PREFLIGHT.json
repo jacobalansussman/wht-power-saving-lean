@@ -1,0 +1,229 @@
+{
+ "all_pass": true,
+ "checks": [
+  {
+   "check": "input certificate = Shea's candidate with the 112 copies folded back = x-mutable's file; histogram replayed",
+   "pass_": true,
+   "detail": {
+    "sha256": "b53a0194b4ee826377e95601dee03b87f43ab197da3f24447f7b8bfaf852d800",
+    "R": 504,
+    "N": 5916,
+    "hist": {
+     "1": 2484,
+     "2": 492,
+     "3": 280,
+     "4": 232,
+     "5": 56,
+     "6": 56,
+     "8": 8
+    },
+    "entrance_rank_sum": 476
+   }
+  },
+  {
+   "check": "rational scalar audit, mutable kinds (x: hid, y: identity, e: E7); Shea's rule gives SPar",
+   "pass_": true,
+   "detail": {
+    "SPar": [
+     10,
+     21,
+     4,
+     8,
+     8
+    ],
+    "largest_digit": 652928,
+    "x_rows_restored": false
+   }
+  },
+  {
+   "check": "exact packed mirror of the kernel terms: scalCheckZ x4 (10,21,4,8,8), yCheckZ, eCheckZ x3 (10,8,4,8,8) all true",
+   "pass_": true,
+   "detail": {
+    "scal": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "ychk": true,
+    "echk": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "check": "margin: at sw - 1 the scalar batches fail (digit width is tight, as Shea's 21)",
+   "pass_": true,
+   "detail": {
+    "scal_sw20": [
+     false,
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "check": "mirror controls vs facts Lean decided in Shea's build (classic accept at sw 21, his bad scalar false, sw 20 false); copy-free cert fails the classic checks",
+   "pass_": true,
+   "detail": {
+    "ours_classic_first_failure": "kind test fails: 0 += 27"
+   }
+  },
+  {
+   "check": "Sussman's Python mirror inside gxgen: label side E0/E1/E2/E6 (frames, pairs, replay, scatter cut, histogram) and the mutable-kind scalar side accept",
+   "pass_": true,
+   "detail": [
+    "C588M: mirror accepts; h=9 v=112 R=504 N=5916; pairs=3001; replay segments=4; scalar batches=4"
+   ]
+  },
+  {
+   "check": "generated Lean data parse back to the certificate; kernel-term mirror on the parsed text all true",
+   "pass_": true,
+   "detail": {
+    "all_true": true,
+    "scal": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "ychk": true,
+    "echk": [
+     true,
+     true,
+     true
+    ]
+   }
+  },
+  {
+   "check": "tries of the generated data (annealed): tab codes, st0 = start, res_ok (schedRes), cen_ok",
+   "pass_": true,
+   "detail": {
+    "tab_codes_equal_frames": true,
+    "st0_equals_start": true,
+    "res_ok": true,
+    "cen_ok": true
+   }
+  },
+  {
+   "check": "bank table annealed: schedK mirror true; duplicate owner and wrong pad controls false; deficit 2560",
+   "pass_": true,
+   "detail": {
+    "banks": 4032,
+    "W": 11200,
+    "pads": {
+     "0": 3960,
+     "28": 72
+    }
+   }
+  },
+  {
+   "check": "rate certificate annealed (Sussman's foldlib.plan_block, B = 10, s = 40) at the kernel numerator; DFT = kernel - 1",
+   "pass_": true,
+   "detail": {
+    "root_bracket": [
+     "0.001355262352915",
+     "0.001355262352916"
+    ],
+    "kernel": 13552607,
+    "dft": 13552606,
+    "rational_slack": 2.1867178795450055e-11
+   }
+  },
+  {
+   "check": "tries of the generated data (cyclic): tab codes, st0 = start, res_ok (schedRes), cen_ok",
+   "pass_": true,
+   "detail": {
+    "tab_codes_equal_frames": true,
+    "st0_equals_start": true,
+    "res_ok": true,
+    "cen_ok": true
+   }
+  },
+  {
+   "check": "bank table cyclic: schedK mirror true; duplicate owner and wrong pad controls false; deficit 2560",
+   "pass_": true,
+   "detail": {
+    "banks": 4032,
+    "W": 11200,
+    "pads": {
+     "0": 2520,
+     "1": 1440,
+     "8": 72
+    }
+   }
+  },
+  {
+   "check": "rate certificate cyclic (Sussman's foldlib.plan_block, B = 10, s = 40) at the kernel numerator; DFT = kernel - 1",
+   "pass_": true,
+   "detail": {
+    "root_bracket": [
+     "0.001351308903169",
+     "0.00135130890317"
+    ],
+    "kernel": 13513072,
+    "dft": 13513071,
+    "rational_slack": 1.6318548991722536e-10
+   }
+  },
+  {
+   "check": "tries of the generated data (packed): tab codes, st0 = start, res_ok (schedRes), cen_ok",
+   "pass_": true,
+   "detail": {
+    "tab_codes_equal_frames": true,
+    "st0_equals_start": true,
+    "res_ok": true,
+    "cen_ok": true
+   }
+  },
+  {
+   "check": "bank table packed: schedK mirror true; duplicate owner and wrong pad controls false; deficit 2560",
+   "pass_": true,
+   "detail": {
+    "banks": 4005,
+    "W": 11173,
+    "pads": {
+     "0": 4004,
+     "45": 1
+    }
+   }
+  },
+  {
+   "check": "rate certificate packed (Sussman's foldlib.plan_block, B = 10, s = 40) at the kernel numerator; DFT = kernel - 1",
+   "pass_": true,
+   "detail": {
+    "root_bracket": [
+     "0.001356632023589",
+     "0.00135663202359"
+    ],
+    "kernel": 13566303,
+    "dft": 13566302,
+    "rational_slack": 1.7067349280997605e-10
+   }
+  },
+  {
+   "check": "Lean negative controls predicted false (scatter sign flipped; classic check; duplicate owner), positives true",
+   "pass_": true,
+   "detail": {
+    "note": "Shea's own control (first A gate doubled) would be TRUE here, so it is replaced",
+    "shea_style": true
+   }
+  },
+  {
+   "check": "x-mutable's 7 engine modules relocated to Work/XMut (import prefix only)",
+   "pass_": true,
+   "detail": {
+    "Dirt.lean": 0,
+    "ECheckZ.lean": 1,
+    "GInv.lean": 1,
+    "Glue.lean": 3,
+    "Labels.lean": 1,
+    "Scal.lean": 1,
+    "ScalarZ.lean": 1
+   }
+  }
+ ]
+}

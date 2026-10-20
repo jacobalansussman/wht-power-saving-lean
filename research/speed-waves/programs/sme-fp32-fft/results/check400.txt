@@ -1,0 +1,8 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK SME2 25x16 (split)           B=16   every transform vs fp64 DFT, natural order: max abs err 8.579e-06  rel (to max |X|) 1.744e-07  PASS
+CHECK PFFFT z-order (interl.)      B=16   every transform vs fp64 DFT, natural order: max abs err 1.733e-05  rel (to max |X|) 3.410e-07  PASS
+CHECK PFFFT ordered (interl.)      B=16   every transform vs fp64 DFT, natural order: max abs err 1.479e-05  rel (to max |X|) 2.933e-07  PASS
+CHECK FFTW3f MEASURE (interl.)     B=16   every transform vs fp64 DFT, natural order: max abs err 5.379e-06  rel (to max |X|) 1.127e-07  PASS
+CHECK vDSP_DFT_Execute (split)     setup returned NULL (size 400 not supported)
+CHECK SME2 25x16 (split)           B=1    every transform vs fp64 DFT, natural order: max abs err 7.390e-06  rel (to max |X|) 1.839e-07  PASS
+CHECK SME2 25x16 (split)           B=3    every transform vs fp64 DFT, natural order: max abs err 6.911e-06  rel (to max |X|) 1.549e-07  PASS

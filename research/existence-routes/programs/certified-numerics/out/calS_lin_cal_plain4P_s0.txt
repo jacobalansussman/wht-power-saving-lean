@@ -1,0 +1,11 @@
+=== cal_plain4P_s0.json n=13 N=34 LM 3.8e-31
+   rank: 11
+   slices: linear (2 random integer forms)
+   square: (13, 13)
+   krawczyk: True
+   leftover: 23
+   simplest_rational_closes: False
+   root_sample: ['[0.102217806910329568901708732', '[-3.00876016260151802387045421', '[1.102217806910329568901708732']
+   route_S_closed: 21 of 23 leftover rows
+   verdict: UNDECIDED by Route S at these degrees: 2 rows not closed, e.g. (17, 'syzygies exist (nullity 738) but every u vanishes somewhere on the box [2876 x 2758]')
+   sliced unknowns: ['x2', 'x11']  alphas: 3

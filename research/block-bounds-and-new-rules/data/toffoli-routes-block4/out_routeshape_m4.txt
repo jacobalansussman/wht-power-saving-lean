@@ -1,0 +1,24 @@
+rep size 15 done (11025 routes) t=37.8
+rep size 840 done (225 routes) t=38.3
+rep size 630 done (257 routes) t=39.0
+rep size 1260 done (121 routes) t=39.2
+rep size 5040 done (9 routes) t=39.2
+rep size 10080 done (1 routes) t=39.2
+rep size 10080 done (1 routes) t=39.2
+rep size 2520 done (1 routes) t=39.3
+(T_K, T_B, components at depth 1..m-1) : number of routes (all, weighted)
+(False, False, (8, 2, 1)) 40320
+(False, False, (8, 3, 1)) 161280
+(False, False, (8, 4, 1)) 212940
+(False, True, (8, 1, 1)) 55440
+(False, True, (8, 2, 1)) 73080
+(False, True, (8, 3, 1)) 20160
+(False, True, (8, 4, 1)) 8190
+(True, False, (8, 2, 2)) 22680
+(True, False, (8, 3, 2)) 75600
+(True, False, (8, 4, 2)) 58590
+(True, True, (8, 2, 2)) 3780
+(True, True, (8, 3, 2)) 3780
+(True, True, (8, 4, 2)) 945
+total 736785
+T_K: 165375 T_B: 165375 both: 8505 neither: 414540

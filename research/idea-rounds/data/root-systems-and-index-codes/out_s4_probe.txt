@@ -1,0 +1,18 @@
+probe seed 1 start 0: M = 15 gates, residual 4096 after 91 iterations
+probe seed 1 start 1: M = 15 gates, residual 6144 after 70 iterations
+probe seed 1 start 2: M = 15 gates, residual 4096 after 94 iterations
+probe seed 1 start 3: M = 15 gates, residual 4096 after 172 iterations
+probe seed 1 BEST 4096
+time 124.5 s
+probe seed 2 start 0: M = 15 gates, residual 4096 after 142 iterations
+probe seed 2 start 1: M = 15 gates, residual 4096 after 73 iterations
+probe seed 2 start 2: M = 15 gates, residual 4096 after 103 iterations
+probe seed 2 start 3: M = 15 gates, residual 4096 after 113 iterations
+probe seed 2 BEST 4096
+time 109.9 s
+probe seed 3 start 0: M = 15 gates, residual 4096 after 94 iterations
+probe seed 3 start 1: M = 15 gates, residual 4096 after 68 iterations
+probe seed 3 start 2: M = 15 gates, residual 4096 after 59 iterations
+probe seed 3 start 3: M = 15 gates, residual 4096 after 133 iterations
+probe seed 3 BEST 4096
+time 91.7 s

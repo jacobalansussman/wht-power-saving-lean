@@ -1,0 +1,15 @@
+colab-sources.sha256 lists the sha256 of the source files uploaded to the first Colab machine for the build that are
+also in this package (overlay/); each matches the package's file. The upload also held the ten files below: an
+earlier split of the host-table data modules, which the checked result does not import and which are not in this
+package. Their lines were moved here from colab-sources.sha256.
+
+ae594d6bcf633bec4a96e73ffb82eb20ff8684514e6d11bd1d85e08af2c444fc  Work/XHost/Data/H588MBr0.lean
+e6bdbf9aea73b9c779d63a3ace82889fe2d72828adfc49ff07c25f82dfec6cd1  Work/XHost/Data/H588MBr1.lean
+0a2724306da182ab37f8d12faad43bc28bfb3280c57c08b67a921bfbfb1dcfe3  Work/XHost/Data/H588MBr2.lean
+7fea3fffc280972ac00adede89d4022c7ac724f3c275d4587b4b407eae168f99  Work/XHost/Data/H588MBr3.lean
+c7dbdc48a98348cf3c5b131be1f385fc0b2036319349b470ab860943be5c4d49  Work/XHost/Data/H588MBr4.lean
+a8c9091a806335febe487d902434346c37d6185f85de6b4e8dda096771d3daf4  Work/XHost/Data/H588MBr5.lean
+2b71a7fecce58ac43c305aee0847cb78329435792b54f31629d37a1633aefb99  Work/XHost/Data/H588MBr6.lean
+86840ac9eef8c6175fe8906689efa34ef2aeccfb9bb640b094f406d58a75ce5e  Work/XHost/Data/H588MBr7.lean
+f778057256371bc67e631661f38568edd42192d22ce1e0cd4c3356781ff33eb2  Work/XHost/Data/H588MBr8.lean
+63bc2dfa117707b1a44b716a688942871381a870a1b5042fc4aa6b38b1a3fbb9  Work/XHost/Data/H588MHr.lean

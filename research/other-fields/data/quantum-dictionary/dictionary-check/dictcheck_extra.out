@@ -1,0 +1,10 @@
+== H. OpenAI family-130 frames (network.tex eq. net:frame): L(Phi_U) = L_U for nondegenerate U
+  m=1: 2 nondegenerate U, label of Phi_U = L_U = {(u|u+v)} for all: True
+  m=2: 4 nondegenerate U, label of Phi_U = L_U = {(u|u+v)} for all: True
+  m=3: 10 nondegenerate U, label of Phi_U = L_U = {(u|u+v)} for all: True
+== I. Lagrangian = (U = projection to the X part, symmetric form beta on U); counts sum_k [m,k]_2 2^(k(k+1)/2)
+  m=1: 2 X-projections (all subspaces: True); each carries 2^(k(k+1)/2) Lagrangians: True; exactly one with beta = dot (the subspace frame L_U): True; exactly one with beta = 0 (CSS): True; non-subspace frames: 1
+  m=2: 5 X-projections (all subspaces: True); each carries 2^(k(k+1)/2) Lagrangians: True; exactly one with beta = dot (the subspace frame L_U): True; exactly one with beta = 0 (CSS): True; non-subspace frames: 10
+  m=3: 16 X-projections (all subspaces: True); each carries 2^(k(k+1)/2) Lagrangians: True; exactly one with beta = dot (the subspace frame L_U): True; exactly one with beta = 0 (CSS): True; non-subspace frames: 119
+  m=4: 67 X-projections (all subspaces: True); each carries 2^(k(k+1)/2) Lagrangians: True; exactly one with beta = dot (the subspace frame L_U): True; exactly one with beta = 0 (CSS): True; non-subspace frames: 2228
+EXTRA CHECKS PASSED

@@ -1,0 +1,33 @@
+# module  stage  (topological order: every module after all modules of the overlay that it imports; laid over community/u8xm)
+Work.XHost.HostK  1-network (byte-identical to community/c588mhh)
+Work.XHost.HRoles  1-network (byte-identical to community/c588mhh)
+Work.XHost.HDef  1-network (byte-identical to community/c588mhh)
+Work.XHost.HStage  1-network (byte-identical to community/c588mhh)
+Work.XHost.HCert  1-network (byte-identical to community/c588mhh)
+Work.XHost.Frames  1-network (byte-identical to community/c588mhh)
+Work.XHost.HSched  1-network (byte-identical to community/c588mhh)
+Work.XHost.HGeom  1-network (byte-identical to community/c588mhh)
+Work.XHost.HEnd  1-network (byte-identical to community/c588mhh)
+Work.XHost.HBank  1-network (byte-identical to community/c588mhh)
+Work.XHost.HSchedK  1-network (byte-identical to community/c588mhh)
+Work.XHost.HPriceK  1-network (byte-identical to community/c588mhh)
+Work.XHost.Data.HU8XMSched  2-data
+Work.XHost.Data.RateU8XMHHx  2-data
+Work.XHost.Data.InstU8XMHH  2-data
+Work.XHost.U8XMHH  3-glue
+Work.FourierU8XMHH.Seam  4-fourier
+Work.FourierU8XMHH.SectorAlgorithm  4-fourier
+Work.FourierU8XMHH.SynchronizedAlgorithm  4-fourier
+Work.FourierU8XMHH.WorkingTransform  4-fourier
+Work.FourierU8XMHH.WorkingCompiler  4-fourier
+Work.FourierU8XMHH.WorkingPreparation  4-fourier
+Work.FourierU8XMHH.ArbitraryLength  4-fourier
+Work.FourierU8XMHH.TransformProgram  4-fourier
+Work.FourierU8XMHH.ConvolutionProgram  4-fourier
+Work.FourierU8XMHH.UniformBounds  4-fourier
+Work.FourierU8XMHH.Asymptotics  4-fourier
+Work.FourierU8XMHH.Goal  4-fourier
+Work.FourierU8XMHH.Main  4-fourier
+Work.FourierU8XMHH.Axioms  4-fourier
+Work.FourierU8XMHH.UniformFourierChallenge  5-statement
+Work.FourierU8XMHHNeg.UniformFourierChallenge  5-statement

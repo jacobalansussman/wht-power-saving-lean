@@ -1,0 +1,20 @@
+PASS number of Hg-frames = 27 (got 27)
+PASS meeting graph regular of degree 10
+PASS srg(27,10,1,5): lambda {1}, mu {5}
+PASS L0 = {x = 0} is a frame
+PASS all 15 moves T_v (v != 0) map L0 to an adjacent frame
+PASS K L0 is a frame opposite to L0
+PASS T_v preserves Hg (sampled)
+PASS K preserves Hg
+PASS chi(alpha) preserves Hg and fixes every frame (central)
+PASS E(alpha) preserves Hg and fixes L0
+PASS Phi is an isometry Hg -> Hstd
+PASS Phi is bijective
+PASS 27 Fermat lines
+PASS reductions mod 2 are 27 distinct Hstd-generators
+PASS Phi maps the 27 game frames onto the 27 reduced Fermat lines
+PASS over C: delta(lift U, lift V) = frame distance on all 729 ordered pairs (mismatches 0)
+PASS mod 7 (omega=2): same (mismatches 0)
+PASS mod 13 (omega=3): same (mismatches 0)
+ordered pairs by distance: {0: 27, 1: 270, 2: 432} -> abar_1 = 1, abar_2 = 2: PERFECT family, moves >= 2 W in the alpha game
+ALL CHECKS PASS

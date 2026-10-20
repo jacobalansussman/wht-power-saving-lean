@@ -1,0 +1,36 @@
+nextpnr model (recomputed from SDF): 61.28 MHz (16.318 ns)
+corrected (DSP/SPRAM arcs from timings_up5k.txt): 60.66 MHz (16.486 ns)   cells re-modelled: {'ICESTORM_DSP': 6, 'ICESTORM_SPRAM': 2}   unresolved loop nodes: 0
+corrected, DSP/SPRAM clock pins given the logic cells' clock delay (no 0.93 ns hard-block skew): 64.27 MHz (15.559 ns)
+corrected, and block-RAM (EBR) setups from the database instead of nextpnr's 0.1 ns: 60.66 MHz (16.486 ns)
+CONSERVATIVE (DSP/SPRAM + EBR setups, the worse of the two hard-block clock models): 60.66 MHz
+worst path through a DSP/SPRAM block (corrected): 60.66 MHz (16.486 ns), ends at u_dut.core.spi_RAM/ADDRESS_11
+
+-- path 1: 16.486 ns (60.66 MHz), ends at u_dut.core.spi_RAM/ADDRESS_11 (setup 0.268, read:SPRAM setup)
+    +2.317  u_dut.core.j_SB_DFFESR_Q_4_D_SB_LUT4_O_LC/O                  ICESTORM_LC clk->out (+clock net 0.927)
+    +1.761  u_dut.core.aprev_SB_DFFE_Q_D_SB_LUT4_O_LC/I2                 net
+    +1.205  u_dut.core.aprev_SB_DFFE_Q_D_SB_LUT4_O_LC/O                  ICESTORM_LC
+    +3.495  u_dut.core.aprev_SB_DFFE_Q_D_SB_LUT4_I3_LC/I3                net
+    +0.874  u_dut.core.aprev_SB_DFFE_Q_D_SB_LUT4_I3_LC/O                 ICESTORM_LC
+    +1.761  u_dut.core.spr_ADDRESS_11_SB_LUT4_O_LC/I2                    net
+    +1.205  u_dut.core.spr_ADDRESS_11_SB_LUT4_O_LC/O                     ICESTORM_LC
+    +3.600  u_dut.core.spi_RAM/ADDRESS_11                                net
+
+-- path 2: 16.453 ns (60.78 MHz), ends at u_dut.core.spr_RAM/DATAIN_4 (setup 0.143, read:SPRAM setup)
+    +2.886  u_dut.core.um2_DSP/O_18                                      read:acc reg CLK->O
+    +6.963  u_dut.core.spr_DATAIN_4_SB_LUT4_O_I3_SB_LUT4_O_LC/I3         net
+    +0.874  u_dut.core.spr_DATAIN_4_SB_LUT4_O_I3_SB_LUT4_O_LC/O          ICESTORM_LC
+    +1.761  u_dut.core.spr_DATAIN_4_SB_LUT4_O_LC/I3                      net
+    +0.874  u_dut.core.spr_DATAIN_4_SB_LUT4_O_LC/O                       ICESTORM_LC
+    +2.952  u_dut.core.spr_RAM/DATAIN_4                                  net
+
+-- worst DSP/SPRAM path: 16.486 ns (60.66 MHz)
+    +2.317  u_dut.core.j_SB_DFFESR_Q_4_D_SB_LUT4_O_LC/O                  ICESTORM_LC clk->out (+clock net 0.927)
+    +1.761  u_dut.core.aprev_SB_DFFE_Q_D_SB_LUT4_O_LC/I2                 net
+    +1.205  u_dut.core.aprev_SB_DFFE_Q_D_SB_LUT4_O_LC/O                  ICESTORM_LC
+    +3.495  u_dut.core.aprev_SB_DFFE_Q_D_SB_LUT4_I3_LC/I3                net
+    +0.874  u_dut.core.aprev_SB_DFFE_Q_D_SB_LUT4_I3_LC/O                 ICESTORM_LC
+    +1.761  u_dut.core.spr_ADDRESS_11_SB_LUT4_O_LC/I2                    net
+    +1.205  u_dut.core.spr_ADDRESS_11_SB_LUT4_O_LC/O                     ICESTORM_LC
+    +3.600  u_dut.core.spi_RAM/ADDRESS_11                                net
+
+internal DSP register-to-register estimates (worst 4): u_dut.core.um1_DSP top: A/B input reg -> multiplier -> adder -> acc reg 6.94 ns; u_dut.core.um1_DSP bot: A/B input reg -> multiplier -> adder -> acc reg 6.94 ns; u_dut.core.um3_DSP top: A/B input reg -> multiplier -> adder -> acc reg 6.94 ns; u_dut.core.um3_DSP bot: A/B input reg -> multiplier -> adder -> acc reg 6.94 ns

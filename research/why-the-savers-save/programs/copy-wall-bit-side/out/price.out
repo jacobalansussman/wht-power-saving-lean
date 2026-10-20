@@ -1,0 +1,11 @@
+control c0 = 1.7334270e-03 (PR589 bit side, expected 1.7334270e-3); b0 = 1.6644003e-03 (#799 complex side)
+cst 62: one copy 7 -> 6 (lever check, expect +2.80 %)          c = 1.7820e-03  (+2.80 %)  what-if
+cst 62: 8 totals at 6 + 2 at 7 (first door, K = 10)            c = 1.7814e-03  (+2.77 %)  what-if
+cst 62: 9 totals at 6 + 1 at 8 (K = 10)                        c = 1.7814e-03  (+2.77 %)  what-if
+cst 61: 9 totals at 6 + 1 at 7 (K = 10)                        c = 1.8300e-03  (+5.57 %)  what-if
+cst 60: 10 totals at 6 (K = 10)                                c = 1.8785e-03  (+8.37 %)  what-if
+cst 62: 7 at 6 + 4 at 5 (K = 11)                               c = 1.7809e-03  (+2.74 %)  what-if
+cst 56: 8 totals at 7 (clique-count floor shape)               c = 2.0740e-03  (+19.65 %)  what-if
+cst 0: copies free                                             c = 4.8028e-03  (+177.07 %)  what-if
+kappa: b0 = 1.6644e-03 < c0 = 1.7334e-03, so b binds; a gain in c moves kappa only together with a complex-side gain above +4.15 % on b.
+P120 bit decoder (v = 120, a different unit, not a profile delta): x = cst/v; break-even with P111's 63/111 = 0.5676 is cst = 68.1; today's P120 floor 72 gives x = 0.6000 (estimate only).

@@ -1,0 +1,19 @@
+       64.62 real         2.20 user         6.30 sys
+          6000181248  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              284843  page reclaims
+              174084  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               54004  voluntary context switches
+              273374  involuntary context switches
+         60309706475  instructions retired
+         33291333659  cycles elapsed
+           931185112  peak memory footprint
+EXIT=0 TIME=65s HEAVY=0 CMD=/usr/bin/env LEAN_PATH=<verify>/checks/wht43/bound-check/v-host-0/proj/.lake/build/lib/lean:<verify>/.lake/build/lib/lean:<verify>/.lake/packages/mathlib/.lake/build/lib/lean:<verify>/.lake/packages/batteries/.lake/build/lib/lean:<verify>/.lake/packages/Qq/.lake/build/lib/lean:<verify>/.lake/packages/aesop/.lake/build/lib/lean:<verify>/.lake/packages/proofwidgets/.lake/build/lib/lean:<verify>/.lake/packages/importGraph/.lake/build/lib/lean:<verify>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<verify>/.lake/packages/plausible/.lake/build/lib/lean:<verify>/.lake/packages/Cli/.lake/build/lib/lean LEAN_NUM_THREADS=2 /usr/bin/time -l lean -DautoImplicit=false -R <verify>/checks/wht43/bound-check/v-host-0/proj -o <verify>/checks/wht43/bound-check/v-host-0/proj/.lake/build/lib/lean/Work/Gauge/Defs.olean -i <verify>/checks/wht43/bound-check/v-host-0/proj/.lake/build/lib/lean/Work/Gauge/Defs.ilean <verify>/checks/wht43/bound-check/v-host-0/proj/Work/Gauge/Defs.lean

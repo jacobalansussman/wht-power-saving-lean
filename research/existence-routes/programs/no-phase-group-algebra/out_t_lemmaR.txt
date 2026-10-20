@@ -1,0 +1,14 @@
+t_lemmaR.py:47: RuntimeWarning: divide by zero encountered in matmul
+t_lemmaR.py:47: RuntimeWarning: overflow encountered in matmul
+t_lemmaR.py:47: RuntimeWarning: invalid value encountered in matmul
+t_lemmaR.py:49: RuntimeWarning: divide by zero encountered in matmul
+t_lemmaR.py:49: RuntimeWarning: overflow encountered in matmul
+t_lemmaR.py:49: RuntimeWarning: invalid value encountered in matmul
+t_lemmaR.py:57: RuntimeWarning: divide by zero encountered in matmul
+t_lemmaR.py:57: RuntimeWarning: overflow encountered in matmul
+t_lemmaR.py:57: RuntimeWarning: invalid value encountered in matmul
+m=2: checked f=1..5, all z
+m=3: checked f=1..3, all z
+checks 36 failures 0
+        5.23 real         6.05 user         0.13 sys
+           226836480  maximum resident set size

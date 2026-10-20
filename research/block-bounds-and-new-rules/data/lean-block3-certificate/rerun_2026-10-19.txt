@@ -1,0 +1,16 @@
+Re-run for this revision, 19 October 2026, on an Apple M4 Mac mini (Python 3.9 with numpy 2.0.2 and scipy 1.13.1), from the published files
+
+$ python3 -I blocks.py 65537 ../../../rerun_logs/cert65537_rerun.json
+exit 0, 21 s
+p 65537 I 256
+s 0 rank 28 inverse ok True max|G| 64
+s 1 rank 28 inverse ok True max|G| 64
+s 2 rank 28 inverse ok True max|G| 64
+s 3 rank 28 inverse ok True max|G| 64
+s 4 rank 28 inverse ok True max|G| 64
+s 5 rank 28 inverse ok True max|G| 64
+s 6 rank 28 inverse ok True max|G| 64
+s 7 rank 28 inverse ok True max|G| 64
+total 224
+identical to the published certificate: True
+

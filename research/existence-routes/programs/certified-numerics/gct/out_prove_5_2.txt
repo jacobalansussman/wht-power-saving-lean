@@ -1,0 +1,6 @@
+irr 5 n=27, 1 in 2: 2862 unknowns, 729 equations; Gauss-Newton residual 4.44e-14; Jacobian rank 729 (sv 1.47e+02 .. 3.19e-02) [87s]
+square slice: cond 9.54e+04
+after square Newton: residual 4.08e-14
+Krawczyk at half-width 1e-11: fail (max |K - y| 1.88e-06 vs 1e-11) [12s]
+Krawczyk at half-width 1e-09: fail (max |K - y| 1.88e-06 vs 1e-09) [22s]
+Krawczyk at half-width 1e-07: fail (max |K - y| 1.89e-06 vs 1e-07) [33s]

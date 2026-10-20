@@ -1,0 +1,12 @@
+E6 r=6 L=1 closure=none gauge=XK=I(|K|=5)                    UNSAT  vars 7593 clauses 25494  0.0s
+E6 r=7 L=1 closure=none gauge=XK=I(|K|=5)                    SAT    vars 8967 clauses 30051  1.6s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 7, 'cT_static_fit': True, 'rank_cT': 7, 'layer_sizes': [36]}
+E6 r=5 L=2 closure=none gauge=XK=I(|K|=5)                    UNSAT  vars 7695 clauses 23097  0.1s
+E6 6 2 none --gaugeX                                         UNDECIDED (killed at 25s)
+E6 r=5 L=3 closure=none gauge=XK=I(|K|=5)                    UNSAT  vars 8451 clauses 24573  2.9s
+E6 6 3 none --gaugeX                                         UNDECIDED (killed at 25s)
+E6 5 36 none --gaugeX                                        UNDECIDED (killed at 25s)
+E6 6 36 none --gaugeX                                        UNDECIDED (killed at 25s)
+E6 6 3 one --gaugeX                                          UNDECIDED (killed at 25s)
+E6 6 3 trans --gaugeX                                        UNDECIDED (killed at 25s)
+E6 6 36 one --gaugeX                                         UNDECIDED (killed at 25s)
+E6 6 36 trans --gaugeX                                       UNDECIDED (killed at 25s)

@@ -1,0 +1,9 @@
+lockstep 1+4 in 10, L=12: classes 111, sources used == Source: True, leaves == M u(0): True
+lockstep 1+4 in 10, L=30: classes 1111, sources used == Source: True, leaves == M u(0): True
+lockstep 1+1 in 4, L=30: classes 85, sources used == Source: True, leaves == M u(0): True
+lockstep 1+4 in 10, L=54: classes 11111, sources used == Source: True, leaves == M u(0): True
+lockstep 7+38 in 88, L=12: classes 7833, sources used == Source: True, leaves == M u(0): True
+balance 1+4 in 10, L=30: unbalanced 0, leaves 10, Phi(src) 10.0000000000, sources in (12, 27] vs (L/3, L] = (10.0, 30]
+balance 1+4 in 10, L=200: unbalanced 0, leaves 10, Phi(src) 10.0000000000, sources in (72, 192] vs (L/3, L] = (66.7, 200]
+balance 7+38 in 88, L=30: unbalanced 0, leaves 88, Phi(src) 88.0000000000, sources in (12, 27] vs (L/3, L] = (10.0, 30]
+balance 7+38 in 88, L=200: unbalanced 0, leaves 88, Phi(src) 88.0000000000, sources in (72, 192] vs (L/3, L] = (66.7, 200]

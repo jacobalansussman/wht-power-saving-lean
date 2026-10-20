@@ -1,0 +1,17 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+v-hpe-multigate-rules (skeptic of d-hpe-multigate), 13 Oct 2026. All python3 -I, seconds each. D=../d-hpe-multigate
+dl1090/ = END-RECIPE.json and sources/K8-SLOT-WORD.json.gz of hub PR1090 at b535975a (read-only download; data only).
+K8-SLOT-WORD content sha256 c2b294300760e1fd... = PR1018's seven-slot k8 word (the word of the selected #1042 frontier).
+  python3 -I $D/cones.py dl1090/K8-SLOT-WORD.json.gz k8-cones.json
+  python3 -I $D/lazy_cones.py dl1090/K8-SLOT-WORD.json.gz k8-cones.json k8-lazy.json     # {(4,4):32,(8,7):46,(9,9):402}
+  python3 -I $D/groups.py dl1090/K8-SLOT-WORD.json.gz k8-lazy.json k8-groups.json       # groups 13 (574/575) and 14 (580/581) have dS -1.6223
+  python3 -I $D/make_word.py dl1090/K8-SLOT-WORD.json.gz k8-lazy.json W-k8-574-575.json.gz 574,575    # = PR1090's 8 B frames + tails 93/94
+  python3 -I $D/make_word.py dl1090/K8-SLOT-WORD.json.gz k8-lazy.json W-k8-574-575-580-581.json.gz 574,575,580,581
+  python3 -I $D/vendor/audit_local_pr870_py39.py --word dl1090/K8-SLOT-WORD.json.gz --output audit-k8-control.json   # PASS
+  python3 -I $D/vendor/audit_local_pr870_py39.py --word W-k8-574-575-580-581.json.gz --output audit-k8-g13g14.json  # PASS
+  python3 -I price_k8.py      # control #1042 reproduced exactly; brackets for the k8 twin pair
+asm1042.json = hub main ba82555c research/community-frontier1042-audit/ASSEMBLY.json (selected frontier).

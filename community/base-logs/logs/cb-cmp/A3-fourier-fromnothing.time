@@ -1,0 +1,23 @@
+	Command being timed: "/content/work/cc/jail2.sh /content/work/cc/t-fresh/lean/complex588 /bin/sh -c exec lake env /bin/sh -c 'PATH=/content/work/cc/fresh-bin:$PATH; export PATH; exec comparator comparator/fourier.json'"
+	User time (seconds): 3588.25
+	System time (seconds): 747.90
+	Percent of CPU this job got: 118%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:00:55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9660676
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 31437
+	Minor (reclaiming a frame) page faults: 60335201
+	Voluntary context switches: 1585027
+	Involuntary context switches: 247356
+	Swaps: 0
+	File system inputs: 3195984
+	File system outputs: 4867656
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

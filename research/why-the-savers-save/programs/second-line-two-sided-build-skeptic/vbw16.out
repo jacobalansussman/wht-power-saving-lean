@@ -1,0 +1,5 @@
+norm-8 vectors in BW16: 4320  lines: 2160  shapes: Counter({((1, 8),): 3840, ((2, 2),): 480})
+|ip| distribution from each of 50 lines (|ip| 0, 2, 4 of norm 8 = 0, 1/4, 1/2): {((0, 855), (2, 1024), (4, 280)): 50}
+sum f f^T: diagonal {1080} off-diagonal {0} => tight, n/t = 135
+mutually-junk clique found: 53 (window >= this; pass mark <= 12)
+Leech {4e1+4ej}: 23 lines, pairwise ip {16}

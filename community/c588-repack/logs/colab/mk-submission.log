@@ -1,0 +1,5 @@
+control: 350 submission modules; 350 equal tx(Shea's file); mismatches: []
+overlay files outside the submission closure: ['Work/BlockAccounting/Moment4.lean', 'Work/FourierC588/UniformFourierChallenge.lean', 'Work/FourierC588Neg/UniformFourierChallenge.lean', 'Work/GCert/Data/C588Controls.lean']
+overlay: 35 files replaced, 1 new (Moment4)
+bound occurrences in adapter: 3
+out: 351 modules under Submission/ + Submission.lean; manifest bound 12383291/10000000000

@@ -1,0 +1,7 @@
+m=2 |AGL|=24
+matchings 3
+orbits 1 sum sizes 3 t=0.2
+orbit size       3 cont=True routes=1 translation=True diffs=[1, 1] nsupp=2
+AGL-invariance spot check passed
+CONTINUING first steps: 3 of 3; translation ones: 3; total routes (chains of cosets) = 3
+t=0.2

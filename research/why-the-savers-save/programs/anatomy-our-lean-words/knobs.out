@@ -1,0 +1,18 @@
+U8X0HQ (our best, Lean-checked)                                                W  7491 D  2560 N  1570082.7 lbar 2.885 a* 1.6256631e-03
+U8 at exact fill (ceiling of the U8 line in this network)                      W  7168 D  2560 N  1533104.1 lbar 2.944 a* 1.6647327e-03
+exact fill, central totals free (cst 0, D = W: one saved direction per array)  W  7168 D  7168 N  1522915.7 lbar 2.951 a* 4.6665647e-03
+U8X0HQ rest, central totals free                                               W  7491 D  7168 N  1559894.3 lbar 2.890 a* 4.5570339e-03
+exact fill, every local rank-1 climb paired into rank-2 (hypothetical)         W  7168 D  2560 N  1405942.1 lbar 2.700 a* 1.8154312e-03
+  one saved move per array, all moves rank 1, block m=  3: s = ln(m/(m-1))/ln m = 0.3691
+  one saved move per array, all moves rank 1, block m=  4: s = ln(m/(m-1))/ln m = 0.2075
+  one saved move per array, all moves rank 1, block m=  5: s = ln(m/(m-1))/ln m = 0.1386
+  one saved move per array, all moves rank 1, block m=  6: s = ln(m/(m-1))/ln m = 0.1018
+  one saved move per array, all moves rank 1, block m=  7: s = ln(m/(m-1))/ln m = 0.0792
+  one saved move per array, all moves rank 1, block m=  9: s = ln(m/(m-1))/ln m = 0.0536
+  one saved move per array, all moves rank 1, block m= 16: s = ln(m/(m-1))/ln m = 0.0233
+  one saved move per array, all moves rank 1, block m= 73: s = ln(m/(m-1))/ln m = 0.0032
+  deficit per data array, U8/C588 line (hub P112 network, P=4, T=8): 2560/7168 = 0.3571
+  deficit per data array, hub T74 (T=37): 23680/66304 = 0.3571
+  deficit per data array, our 4th result (E8 unit, bridged 5-stage, 4v data): 120/480 = 0.2500
+  deficit per data array, our 2nd/3rd (paired cube p=11): 3080/5280 = 0.5833
+  deficit per data array, our 1st (NStar3): 1035/2240 = 0.4621

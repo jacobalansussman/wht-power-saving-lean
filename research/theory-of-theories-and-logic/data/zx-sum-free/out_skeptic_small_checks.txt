@@ -1,0 +1,18 @@
+D == H S H exactly: True
+S D S == e^{i pi/4} H: True
+D^2 == X: True
+spider nest dim 2: product == I: False (== scalar*I: False)
+spider nest dim 3: product == I: True (== scalar*I: True)
+spider nest dim 3: product == I: True (== scalar*I: True)
+spider nest dim 4: product == I: True (== scalar*I: True)
+SWAP built from free pieces is SWAP: True
+I_2 (x) H == SWAP (H_slot (x) I) SWAP: True
+hence I_2 (x) D free at f = 1 (D = H S H, S per-array letter on both arrays): True
+Theorem 1 support bound s <= 2^t held on 300 random circuits; max s/2^min(t,n) = 1.0
+XW, f=1, m=2: K = (H S H)^(x)n from end-column letters only: True
+XW, f=1, m=3: K = (H S H)^(x)n from end-column letters only: True
+XW, f=2, m=2: K = (H S H)^(x)n from end-column letters only: True
+XW, f=2, m=3: K = (H S H)^(x)n from end-column letters only: True
+non-commuting rank-1 weights: fusion exp(i pi/4 A)exp(i pi/4 B) == exp(i pi/4 (A+B)): False
+orthogonal pair fuses, fused weight idempotent rank 2: True 2
+equal pair fuses to slot-weighted P (free): True

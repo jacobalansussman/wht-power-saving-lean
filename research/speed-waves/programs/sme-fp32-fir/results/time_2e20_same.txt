@@ -1,0 +1,245 @@
+[timing lock] waiting for timing lock 23:13:26
+[timing lock] got lock 23:15:42; load: { 17.91 19.59 16.83 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# L=16 n=2^20 ols_N=256 sme_chunk=16384 Cn=32 useful MAC fraction of SME 0.5000
+## fir L=16 n=2^20 same olsN=256  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  ols2_vdsp                          0.9342
+rep  0  vdsp_conv                          0.3115
+rep  0  sme_toeplitz                       0.0791
+rep  0  ols_pffft                          0.7916
+rep  1  vdsp_conv                          0.3109
+rep  1  sme_toeplitz                       0.0780
+rep  1  ols_pffft                          0.7929
+rep  1  ols2_vdsp                          0.9339
+rep  2  sme_toeplitz                       0.0796
+rep  2  ols_pffft                          0.7912
+rep  2  ols2_vdsp                          0.9341
+rep  2  vdsp_conv                          0.3116
+rep  3  ols_pffft                          0.7935
+rep  3  ols2_vdsp                          0.9366
+rep  3  vdsp_conv                          0.3115
+rep  3  sme_toeplitz                       0.0766
+rep  4  ols2_vdsp                          0.9350
+rep  4  vdsp_conv                          0.3114
+rep  4  sme_toeplitz                       0.0777
+rep  4  ols_pffft                          0.7886
+rep  5  vdsp_conv                          0.3113
+rep  5  sme_toeplitz                       0.0793
+rep  5  ols_pffft                          0.7929
+rep  5  ols2_vdsp                          0.9367
+rep  6  sme_toeplitz                       0.0769
+rep  6  ols_pffft                          0.7933
+rep  6  ols2_vdsp                          0.9354
+rep  6  vdsp_conv                          0.3114
+rep  7  ols_pffft                          0.7887
+rep  7  ols2_vdsp                          0.9348
+rep  7  vdsp_conv                          0.3120
+rep  7  sme_toeplitz                       0.0793
+rep  8  ols2_vdsp                          0.9351
+rep  8  vdsp_conv                          0.3112
+rep  8  sme_toeplitz                       0.0796
+rep  8  ols_pffft                          0.7904
+RESULT fir L=16 n=2^20 same olsN=256            ols2_vdsp                    best     0.9339  median     0.9350  ns/output  (calls/rep 225)
+RESULT fir L=16 n=2^20 same olsN=256            vdsp_conv                    best     0.3109  median     0.3114  ns/output  (calls/rep 673)
+RESULT fir L=16 n=2^20 same olsN=256            sme_toeplitz                 best     0.0766  median     0.0791  ns/output  (calls/rep 2728)
+RESULT fir L=16 n=2^20 same olsN=256            ols_pffft                    best     0.7886  median     0.7916  ns/output  (calls/rep 265)
+GMACS fir L=16 n=2^20 same olsN=256            ols2_vdsp      best   0.9339 ns/out =    17.1 GMAC/s (median    17.1)
+GMACS fir L=16 n=2^20 same olsN=256            vdsp_conv      best   0.3109 ns/out =    51.5 GMAC/s (median    51.4)
+GMACS fir L=16 n=2^20 same olsN=256            sme_toeplitz   best   0.0766 ns/out =   208.8 GMAC/s (median   202.3)
+GMACS fir L=16 n=2^20 same olsN=256            ols_pffft      best   0.7886 ns/out =    20.3 GMAC/s (median    20.2)
+[timing lock] waiting for timing lock 23:15:51
+[timing lock] got lock 23:17:33; load: { 16.70 18.60 16.77 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# L=64 n=2^20 ols_N=512 sme_chunk=16384 Cn=80 useful MAC fraction of SME 0.8000
+## fir L=64 n=2^20 same olsN=512  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  ols2_vdsp                          1.0404
+rep  0  vdsp_conv                          1.2092
+rep  0  sme_toeplitz                       0.1128
+rep  0  ols_pffft                          0.8411
+rep  1  vdsp_conv                          1.2096
+rep  1  sme_toeplitz                       0.1123
+rep  1  ols_pffft                          0.8456
+rep  1  ols2_vdsp                          1.0348
+rep  2  sme_toeplitz                       0.1137
+rep  2  ols_pffft                          0.8525
+rep  2  ols2_vdsp                          1.0344
+rep  2  vdsp_conv                          1.2116
+rep  3  ols_pffft                          0.9127
+rep  3  ols2_vdsp                          1.0547
+rep  3  vdsp_conv                          1.2175
+rep  3  sme_toeplitz                       0.1129
+rep  4  ols2_vdsp                          1.0430
+rep  4  vdsp_conv                          1.2290
+rep  4  sme_toeplitz                       0.1134
+rep  4  ols_pffft                          0.8538
+rep  5  vdsp_conv                          1.2142
+rep  5  sme_toeplitz                       0.1135
+rep  5  ols_pffft                          0.8576
+rep  5  ols2_vdsp                          1.0563
+rep  6  sme_toeplitz                       0.1134
+rep  6  ols_pffft                          0.8565
+rep  6  ols2_vdsp                          1.0474
+rep  6  vdsp_conv                          1.2148
+rep  7  ols_pffft                          0.8503
+rep  7  ols2_vdsp                          1.0315
+rep  7  vdsp_conv                          1.2112
+rep  7  sme_toeplitz                       0.1126
+rep  8  ols2_vdsp                          1.0367
+rep  8  vdsp_conv                          1.2118
+rep  8  sme_toeplitz                       0.1128
+rep  8  ols_pffft                          0.8499
+RESULT fir L=64 n=2^20 same olsN=512            ols2_vdsp                    best     1.0315  median     1.0404  ns/output  (calls/rep 205)
+RESULT fir L=64 n=2^20 same olsN=512            vdsp_conv                    best     1.2092  median     1.2118  ns/output  (calls/rep 174)
+RESULT fir L=64 n=2^20 same olsN=512            sme_toeplitz                 best     0.1123  median     0.1129  ns/output  (calls/rep 1874)
+RESULT fir L=64 n=2^20 same olsN=512            ols_pffft                    best     0.8411  median     0.8525  ns/output  (calls/rep 254)
+GMACS fir L=64 n=2^20 same olsN=512            ols2_vdsp      best   1.0315 ns/out =    62.0 GMAC/s (median    61.5)
+GMACS fir L=64 n=2^20 same olsN=512            vdsp_conv      best   1.2092 ns/out =    52.9 GMAC/s (median    52.8)
+GMACS fir L=64 n=2^20 same olsN=512            sme_toeplitz   best   0.1123 ns/out =   570.0 GMAC/s (median   566.7)
+GMACS fir L=64 n=2^20 same olsN=512            ols_pffft      best   0.8411 ns/out =    76.1 GMAC/s (median    75.1)
+[timing lock] waiting for timing lock 23:17:42
+[timing lock] got lock 23:19:27; load: { 18.71 18.91 17.13 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# L=256 n=2^20 ols_N=8192 sme_chunk=16384 Cn=272 useful MAC fraction of SME 0.9412
+## fir L=256 n=2^20 same olsN=8192  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  ols2_vdsp                          1.0579
+rep  0  vdsp_conv                          5.5390
+rep  0  sme_toeplitz                       0.3313
+rep  0  ols_pffft                          1.0115
+rep  1  vdsp_conv                          5.5401
+rep  1  sme_toeplitz                       0.3220
+rep  1  ols_pffft                          1.0041
+rep  1  ols2_vdsp                          1.0592
+rep  2  sme_toeplitz                       0.3326
+rep  2  ols_pffft                          1.0200
+rep  2  ols2_vdsp                          1.0484
+rep  2  vdsp_conv                          5.5431
+rep  3  ols_pffft                          1.0136
+rep  3  ols2_vdsp                          1.0633
+rep  3  vdsp_conv                          5.5326
+rep  3  sme_toeplitz                       0.3213
+rep  4  ols2_vdsp                          1.0606
+rep  4  vdsp_conv                          5.5325
+rep  4  sme_toeplitz                       0.3259
+rep  4  ols_pffft                          1.0122
+rep  5  vdsp_conv                          5.5838
+rep  5  sme_toeplitz                       0.3297
+rep  5  ols_pffft                          1.0269
+rep  5  ols2_vdsp                          1.0670
+rep  6  sme_toeplitz                       0.3241
+rep  6  ols_pffft                          1.0104
+rep  6  ols2_vdsp                          1.0580
+rep  6  vdsp_conv                          5.5325
+rep  7  ols_pffft                          1.0119
+rep  7  ols2_vdsp                          1.0628
+rep  7  vdsp_conv                          5.5375
+rep  7  sme_toeplitz                       0.3227
+rep  8  ols2_vdsp                          1.0833
+rep  8  vdsp_conv                          5.5398
+rep  8  sme_toeplitz                       0.3313
+rep  8  ols_pffft                          1.0105
+RESULT fir L=256 n=2^20 same olsN=8192          ols2_vdsp                    best     1.0484  median     1.0606  ns/output  (calls/rep 197)
+RESULT fir L=256 n=2^20 same olsN=8192          vdsp_conv                    best     5.5325  median     5.5390  ns/output  (calls/rep 38)
+RESULT fir L=256 n=2^20 same olsN=8192          sme_toeplitz                 best     0.3213  median     0.3259  ns/output  (calls/rep 651)
+RESULT fir L=256 n=2^20 same olsN=8192          ols_pffft                    best     1.0041  median     1.0119  ns/output  (calls/rep 210)
+GMACS fir L=256 n=2^20 same olsN=8192          ols2_vdsp      best   1.0484 ns/out =   244.2 GMAC/s (median   241.4)
+GMACS fir L=256 n=2^20 same olsN=8192          vdsp_conv      best   5.5325 ns/out =    46.3 GMAC/s (median    46.2)
+GMACS fir L=256 n=2^20 same olsN=8192          sme_toeplitz   best   0.3213 ns/out =   796.7 GMAC/s (median   785.5)
+GMACS fir L=256 n=2^20 same olsN=8192          ols_pffft      best   1.0041 ns/out =   254.9 GMAC/s (median   253.0)
+[timing lock] waiting for timing lock 23:19:36
+[timing lock] got lock 23:21:09; load: { 14.77 17.58 16.82 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# L=1024 n=2^20 ols_N=8192 sme_chunk=16384 Cn=1040 useful MAC fraction of SME 0.9846
+## fir L=1024 n=2^20 same olsN=8192  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  ols2_vdsp                          1.1486
+rep  0  vdsp_conv                         24.3043
+rep  0  sme_toeplitz                       1.1559
+rep  0  ols_pffft                          1.2696
+rep  1  vdsp_conv                         24.3027
+rep  1  sme_toeplitz                       1.1923
+rep  1  ols_pffft                          1.3083
+rep  1  ols2_vdsp                          1.1835
+rep  2  sme_toeplitz                       1.2438
+rep  2  ols_pffft                          1.3521
+rep  2  ols2_vdsp                          1.1912
+rep  2  vdsp_conv                         24.3968
+rep  3  ols_pffft                          1.3661
+rep  3  ols2_vdsp                          1.1703
+rep  3  vdsp_conv                         24.3198
+rep  3  sme_toeplitz                       1.2360
+rep  4  ols2_vdsp                          1.1813
+rep  4  vdsp_conv                         24.4316
+rep  4  sme_toeplitz                       1.1989
+rep  4  ols_pffft                          1.2758
+rep  5  vdsp_conv                         24.3110
+rep  5  sme_toeplitz                       1.1865
+rep  5  ols_pffft                          1.2927
+rep  5  ols2_vdsp                          1.1441
+rep  6  sme_toeplitz                       1.1578
+rep  6  ols_pffft                          1.2889
+rep  6  ols2_vdsp                          1.1523
+rep  6  vdsp_conv                         24.3942
+rep  7  ols_pffft                          1.2859
+rep  7  ols2_vdsp                          1.2467
+rep  7  vdsp_conv                         24.7176
+rep  7  sme_toeplitz                       1.2359
+rep  8  ols2_vdsp                          1.1739
+rep  8  vdsp_conv                         24.9082
+rep  8  sme_toeplitz                       1.2685
+rep  8  ols_pffft                          1.3045
+RESULT fir L=1024 n=2^20 same olsN=8192         ols2_vdsp                    best     1.1441  median     1.1739  ns/output  (calls/rep 180)
+RESULT fir L=1024 n=2^20 same olsN=8192         vdsp_conv                    best    24.3027  median    24.3942  ns/output  (calls/rep 9)
+RESULT fir L=1024 n=2^20 same olsN=8192         sme_toeplitz                 best     1.1559  median     1.1989  ns/output  (calls/rep 187)
+RESULT fir L=1024 n=2^20 same olsN=8192         ols_pffft                    best     1.2696  median     1.2927  ns/output  (calls/rep 164)
+GMACS fir L=1024 n=2^20 same olsN=8192         ols2_vdsp      best   1.1441 ns/out =   895.0 GMAC/s (median   872.3)
+GMACS fir L=1024 n=2^20 same olsN=8192         vdsp_conv      best  24.3027 ns/out =    42.1 GMAC/s (median    42.0)
+GMACS fir L=1024 n=2^20 same olsN=8192         sme_toeplitz   best   1.1559 ns/out =   885.9 GMAC/s (median   854.1)
+GMACS fir L=1024 n=2^20 same olsN=8192         ols_pffft      best   1.2696 ns/out =   806.5 GMAC/s (median   792.1)
+[timing lock] waiting for timing lock 23:21:19
+[timing lock] got lock 23:22:01; load: { 15.72 17.46 16.82 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# L=4096 n=2^20 ols_N=16384 sme_chunk=16384 Cn=4112 useful MAC fraction of SME 0.9961
+## fir L=4096 n=2^20 same olsN=16384  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  ols2_vdsp                          1.3870
+rep  0  vdsp_conv                         98.2989
+rep  0  sme_toeplitz                       4.5115
+rep  0  ols_pffft                          1.6562
+rep  1  vdsp_conv                         98.4587
+rep  1  sme_toeplitz                       4.5306
+rep  1  ols_pffft                          1.6005
+rep  1  ols2_vdsp                          1.4054
+rep  2  sme_toeplitz                       4.5000
+rep  2  ols_pffft                          1.6115
+rep  2  ols2_vdsp                          1.4030
+rep  2  vdsp_conv                         98.4048
+rep  3  ols_pffft                          1.6009
+rep  3  ols2_vdsp                          1.3906
+rep  3  vdsp_conv                         98.4318
+rep  3  sme_toeplitz                       4.6359
+rep  4  ols2_vdsp                          1.3720
+rep  4  vdsp_conv                         98.2731
+rep  4  sme_toeplitz                       4.3269
+rep  4  ols_pffft                          1.5953
+rep  5  vdsp_conv                         98.3797
+rep  5  sme_toeplitz                       4.5113
+rep  5  ols_pffft                          1.6080
+rep  5  ols2_vdsp                          1.4034
+rep  6  sme_toeplitz                       4.3898
+rep  6  ols_pffft                          1.5877
+rep  6  ols2_vdsp                          1.3985
+rep  6  vdsp_conv                         98.2531
+rep  7  ols_pffft                          1.5905
+rep  7  ols2_vdsp                          1.4160
+rep  7  vdsp_conv                         98.4174
+rep  7  sme_toeplitz                       4.4609
+rep  8  ols2_vdsp                          1.4047
+rep  8  vdsp_conv                         98.3589
+rep  8  sme_toeplitz                       4.6004
+rep  8  ols_pffft                          1.6052
+RESULT fir L=4096 n=2^20 same olsN=16384        ols2_vdsp                    best     1.3720  median     1.4030  ns/output  (calls/rep 150)
+RESULT fir L=4096 n=2^20 same olsN=16384        vdsp_conv                    best    98.2531  median    98.3797  ns/output  (calls/rep 3)
+RESULT fir L=4096 n=2^20 same olsN=16384        sme_toeplitz                 best     4.3269  median     4.5113  ns/output  (calls/rep 50)
+RESULT fir L=4096 n=2^20 same olsN=16384        ols_pffft                    best     1.5877  median     1.6009  ns/output  (calls/rep 132)
+GMACS fir L=4096 n=2^20 same olsN=16384        ols2_vdsp      best   1.3720 ns/out =  2985.4 GMAC/s (median  2919.4)
+GMACS fir L=4096 n=2^20 same olsN=16384        vdsp_conv      best  98.2531 ns/out =    41.7 GMAC/s (median    41.6)
+GMACS fir L=4096 n=2^20 same olsN=16384        sme_toeplitz   best   4.3269 ns/out =   946.6 GMAC/s (median   907.9)
+GMACS fir L=4096 n=2^20 same olsN=16384        ols_pffft      best   1.5877 ns/out =  2579.9 GMAC/s (median  2558.5)

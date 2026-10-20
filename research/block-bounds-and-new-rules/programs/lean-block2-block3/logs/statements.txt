@@ -1,0 +1,55 @@
+info: Work/PfLean/Statements.lean:4:0: dem3 : 224 ≤ raise (hookN 3) (matL 5 (OAI.PowerSaving.Binary.kernel (Fin 3)))
+info: Work/PfLean/Statements.lean:6:0: @block3_bound : ∀ {ρ : Type u_1} {σ : Type u_2} [inst : Fintype ρ] [inst_1 : DecidableEq ρ] [inst_2 : Fintype σ]
+  {e : σ → ρ},
+  Function.Injective e →
+    ∀ (w : OAI.PowerSaving.GF.GWord (Fin 3) ρ),
+      OAI.PowerSaving.GF.GLiveKernel e w → 14 * Fintype.card σ ≤ 5 * OAI.PowerSaving.GF.GWord.cost id w
+info: Work/PfLean/Statements.lean:8:0: Dem3.dem3_of_check : (∀ s < 8, Dem3Comp.BlockCheck s) →
+  224 ≤ raise (hookN 3) (matL 5 (OAI.PowerSaving.Binary.kernel (Fin 3)))
+info: Work/PfLean/Statements.lean:9:0: @[reducible] def OAI.PowerSaving.PfLean.Dem3Comp.BlockCheck : ℕ → Prop :=
+fun s =>
+  ∀ i < 28,
+    ∀ j < 28,
+      (OAI.PowerSaving.PfLean.Dem3Comp.dotN (OAI.PowerSaving.PfLean.Dem3Comp.Bf s i)
+              (fun k => OAI.PowerSaving.PfLean.Dem3Comp.Gf s k j) 28 -
+            if i = j then 1 else 0) %
+          65537 =
+        0
+info: Work/PfLean/Statements.lean:10:0: def OAI.PowerSaving.PfLean.Dem3Comp.Gf : ℕ → ℕ → ℕ → ℤ :=
+fun s k j =>
+  OAI.PowerSaving.PfLean.Dem3Comp.GenZ s ((OAI.PowerSaving.PfLean.Dem3Data.rowsD.getD s []).getD k [])
+    ((OAI.PowerSaving.PfLean.Dem3Data.colsD.getD s []).getD j [])
+info: Work/PfLean/Statements.lean:11:0: def OAI.PowerSaving.PfLean.Dem3Comp.GenZ : ℕ → List ℕ → List ℕ → ℤ :=
+fun s us ts =>
+  OAI.PowerSaving.PfLean.Dem3Comp.sum8 fun u =>
+    OAI.PowerSaving.PfLean.Dem3Comp.chiZ s u * OAI.PowerSaving.PfLean.Dem3Comp.pwZ u *
+      OAI.PowerSaving.PfLean.Dem3Comp.det4 fun b a =>
+        OAI.PowerSaving.PfLean.Dem3Comp.pwZ (us.getD (↑b) 0 ^^^ u ^^^ (0 :: ts).getD (↑a) 0)
+info: Work/PfLean/Statements.lean:12:0: def OAI.PowerSaving.PfLean.Dem3Comp.pwZ : ℕ → ℤ :=
+fun z => [1, -256, -256, 65536, -256, 65536, 65536, -16777216].getD z 0
+info: Work/PfLean/Statements.lean:13:0: def OAI.PowerSaving.PfLean.Dem3Comp.chiZ : ℕ → ℕ → ℤ :=
+fun s u => [1, -1, -1, 1, -1, 1, 1, -1].getD (s &&& u) 0
+info: Work/PfLean/Statements.lean:14:0: def OAI.PowerSaving.PfLean.Dem3.GenR.{u_1} : {R : Type u_1} →
+  [CommRing R] →
+    R →
+      OAI.PowerSaving.PfLean.Dem3.S3 →
+        OAI.PowerSaving.Binary.Sky (Fin 3) 5 → OAI.PowerSaving.Binary.Sky (Fin 3) 5 → R :=
+fun {R} [CommRing R] ι s τ σ =>
+  ∑ u,
+    OAI.PowerSaving.PfLean.Dem3.chiR s u *
+      (OAI.PowerSaving.PfLean.Dem3.PrR ι (τ 0 + u) (σ 0) *
+        (Matrix.of fun b a => OAI.PowerSaving.PfLean.Dem3.PrR ι (τ b.succ + u) (σ a.succ)).det)
+info: Work/PfLean/Statements.lean:15:0: def OAI.PowerSaving.PfLean.Dem3.nv : Fin 8 × Fin 28 → OAI.PowerSaving.Binary.Sky (Fin 3) 5 → ℂ :=
+fun p =>
+  ∑ h,
+    OAI.PowerSaving.Binary.sign (OAI.PowerSaving.Binary.dot (OAI.PowerSaving.PfLean.Dem3.ad ↑p.1) h) •
+      OAI.PowerSaving.Binary.matAct 5 (OAI.PowerSaving.Binary.shift h)
+        ((OAI.PowerSaving.PfLean.Alt 3) (OAI.PowerSaving.PfLean.del (OAI.PowerSaving.PfLean.Dem3.colT ↑p.1 ↑p.2)))
+info: Work/PfLean/Statements.lean:16:0: def OAI.PowerSaving.PfLean.raise.{u_1, u_2} : {K : Type u_1} →
+  {V : Type u_2} →
+    [inst : Field K] → [inst_1 : AddCommGroup V] → [inst_2 : Module K V] → Submodule K V → (V →ₗ[K] V) → ℕ :=
+fun {K} {V} [Field K] [AddCommGroup V] [Module K V] P L => Module.finrank K ↥(Submodule.map (P.mkQ ∘ₗ L) P)
+info: Work/PfLean/Statements.lean:17:0: def OAI.PowerSaving.PfLean.hookN.{u_1} : {α : Type u_1} →
+  [inst : Fintype α] → [inst_1 : DecidableEq α] → (j : ℕ) → Submodule ℂ (OAI.PowerSaving.PfLean.Xf α (j + 2)) :=
+fun {α} [Fintype α] [DecidableEq α] j => Submodule.map (OAI.PowerSaving.PfLean.Alt j) (OAI.PowerSaving.PfLean.Dsub j)
+info: Work/PfLean/Statements.lean:18:0: 'OAI.PowerSaving.PfLean.dem3' depends on axioms: [propext, Classical.choice, Quot.sound]

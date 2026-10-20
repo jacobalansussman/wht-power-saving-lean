@@ -1,0 +1,210 @@
+[timing lock] waiting for timing lock 02:30:58
+[timing lock] got lock 02:30:58; load: { 47.18 43.48 30.55 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## c2c fp64 n=4096 B=64 same  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME fp64 (split)                   1.0194
+rep  0  vDSP_DFT_ExecuteD (split)          3.2028
+rep  0  vDSP_fft_zopD (split)              3.1861
+rep  0  PFFFT-d ordered (inter)            2.6432
+rep  0  pocketfft c2c copy+exec            3.2739
+rep  1  vDSP_DFT_ExecuteD (split)          3.3151
+rep  1  vDSP_fft_zopD (split)              3.2094
+rep  1  PFFFT-d ordered (inter)            2.6642
+rep  1  pocketfft c2c copy+exec            3.2510
+rep  1  SME fp64 (split)                   1.0213
+rep  2  vDSP_fft_zopD (split)              3.2434
+rep  2  PFFFT-d ordered (inter)            2.6740
+rep  2  pocketfft c2c copy+exec            3.2693
+rep  2  SME fp64 (split)                   1.0144
+rep  2  vDSP_DFT_ExecuteD (split)          3.2591
+rep  3  PFFFT-d ordered (inter)            2.6760
+rep  3  pocketfft c2c copy+exec            3.2619
+rep  3  SME fp64 (split)                   1.0186
+rep  3  vDSP_DFT_ExecuteD (split)          3.3452
+rep  3  vDSP_fft_zopD (split)              3.1680
+rep  4  pocketfft c2c copy+exec            3.2608
+rep  4  SME fp64 (split)                   1.0145
+rep  4  vDSP_DFT_ExecuteD (split)          3.2195
+rep  4  vDSP_fft_zopD (split)              3.1970
+rep  4  PFFFT-d ordered (inter)            2.6363
+rep  5  SME fp64 (split)                   1.0558
+rep  5  vDSP_DFT_ExecuteD (split)          3.2307
+rep  5  vDSP_fft_zopD (split)              3.2272
+rep  5  PFFFT-d ordered (inter)            2.6728
+rep  5  pocketfft c2c copy+exec            3.2886
+rep  6  vDSP_DFT_ExecuteD (split)          3.2609
+rep  6  vDSP_fft_zopD (split)              3.2318
+rep  6  PFFFT-d ordered (inter)            2.6815
+rep  6  pocketfft c2c copy+exec            3.2718
+rep  6  SME fp64 (split)                   1.0176
+rep  7  vDSP_fft_zopD (split)              3.2136
+rep  7  PFFFT-d ordered (inter)            2.6302
+rep  7  pocketfft c2c copy+exec            3.2269
+rep  7  SME fp64 (split)                   1.0193
+rep  7  vDSP_DFT_ExecuteD (split)          3.1888
+rep  8  PFFFT-d ordered (inter)            2.6620
+rep  8  pocketfft c2c copy+exec            3.1937
+rep  8  SME fp64 (split)                   1.0236
+rep  8  vDSP_DFT_ExecuteD (split)          3.1871
+rep  8  vDSP_fft_zopD (split)              3.2105
+RESULT c2c fp64 n=4096 B=64 same                SME fp64 (split)             best     1.0144  median     1.0193  ns/point  (calls/rep 836)
+RESULT c2c fp64 n=4096 B=64 same                vDSP_DFT_ExecuteD (split)    best     3.1871  median     3.2307  ns/point  (calls/rep 262)
+RESULT c2c fp64 n=4096 B=64 same                vDSP_fft_zopD (split)        best     3.1680  median     3.2105  ns/point  (calls/rep 264)
+RESULT c2c fp64 n=4096 B=64 same                PFFFT-d ordered (inter)      best     2.6302  median     2.6642  ns/point  (calls/rep 318)
+RESULT c2c fp64 n=4096 B=64 same                pocketfft c2c copy+exec      best     3.1937  median     3.2619  ns/point  (calls/rep 256)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## c2c fp64 n=4096 B=512 same  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME fp64 (split)                   1.3698
+rep  0  vDSP_DFT_ExecuteD (split)          2.5183
+rep  0  vDSP_fft_zopD (split)              2.4996
+rep  0  PFFFT-d ordered (inter)            2.7256
+rep  0  pocketfft c2c copy+exec            3.5341
+rep  1  vDSP_DFT_ExecuteD (split)          2.5330
+rep  1  vDSP_fft_zopD (split)              2.5143
+rep  1  PFFFT-d ordered (inter)            2.7554
+rep  1  pocketfft c2c copy+exec            3.5584
+rep  1  SME fp64 (split)                   1.4123
+rep  2  vDSP_fft_zopD (split)              2.4929
+rep  2  PFFFT-d ordered (inter)            2.7117
+rep  2  pocketfft c2c copy+exec            3.4821
+rep  2  SME fp64 (split)                   1.3759
+rep  2  vDSP_DFT_ExecuteD (split)          2.5196
+rep  3  PFFFT-d ordered (inter)            2.7224
+rep  3  pocketfft c2c copy+exec            3.5525
+rep  3  SME fp64 (split)                   1.3740
+rep  3  vDSP_DFT_ExecuteD (split)          2.4593
+rep  3  vDSP_fft_zopD (split)              2.4882
+rep  4  pocketfft c2c copy+exec            3.4822
+rep  4  SME fp64 (split)                   1.3844
+rep  4  vDSP_DFT_ExecuteD (split)          2.5381
+rep  4  vDSP_fft_zopD (split)              2.5089
+rep  4  PFFFT-d ordered (inter)            2.6977
+rep  5  SME fp64 (split)                   1.3811
+rep  5  vDSP_DFT_ExecuteD (split)          2.5096
+rep  5  vDSP_fft_zopD (split)              2.4889
+rep  5  PFFFT-d ordered (inter)            2.6738
+rep  5  pocketfft c2c copy+exec            3.4613
+rep  6  vDSP_DFT_ExecuteD (split)          2.5145
+rep  6  vDSP_fft_zopD (split)              2.5125
+rep  6  PFFFT-d ordered (inter)            2.6856
+rep  6  pocketfft c2c copy+exec            3.5592
+rep  6  SME fp64 (split)                   1.4182
+rep  7  vDSP_fft_zopD (split)              2.5474
+rep  7  PFFFT-d ordered (inter)            2.6968
+rep  7  pocketfft c2c copy+exec            3.5649
+rep  7  SME fp64 (split)                   1.4394
+rep  7  vDSP_DFT_ExecuteD (split)          2.6058
+rep  8  PFFFT-d ordered (inter)            2.7857
+rep  8  pocketfft c2c copy+exec            3.6479
+rep  8  SME fp64 (split)                   1.4225
+rep  8  vDSP_DFT_ExecuteD (split)          2.6039
+rep  8  vDSP_fft_zopD (split)              2.6090
+RESULT c2c fp64 n=4096 B=512 same               SME fp64 (split)             best     1.3698  median     1.3844  ns/point  (calls/rep 73)
+RESULT c2c fp64 n=4096 B=512 same               vDSP_DFT_ExecuteD (split)    best     2.4593  median     2.5196  ns/point  (calls/rep 41)
+RESULT c2c fp64 n=4096 B=512 same               vDSP_fft_zopD (split)        best     2.4882  median     2.5089  ns/point  (calls/rep 42)
+RESULT c2c fp64 n=4096 B=512 same               PFFFT-d ordered (inter)      best     2.6738  median     2.7117  ns/point  (calls/rep 40)
+RESULT c2c fp64 n=4096 B=512 same               pocketfft c2c copy+exec      best     3.4613  median     3.5525  ns/point  (calls/rep 30)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## c2c fp64 n=4096 B=64 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME fp64 (split)                   1.4066
+rep  0  vDSP_DFT_ExecuteD (split)          3.4978
+rep  0  vDSP_fft_zopD (split)              3.5012
+rep  0  PFFFT-d ordered (inter)            2.9587
+rep  0  pocketfft c2c copy+exec            3.8249
+rep  1  vDSP_DFT_ExecuteD (split)          3.7266
+rep  1  vDSP_fft_zopD (split)              3.6976
+rep  1  PFFFT-d ordered (inter)            2.8882
+rep  1  pocketfft c2c copy+exec            3.7717
+rep  1  SME fp64 (split)                   1.5275
+rep  2  vDSP_fft_zopD (split)              3.6922
+rep  2  PFFFT-d ordered (inter)            2.9799
+rep  2  pocketfft c2c copy+exec            3.7405
+rep  2  SME fp64 (split)                   1.5183
+rep  2  vDSP_DFT_ExecuteD (split)          3.6650
+rep  3  PFFFT-d ordered (inter)            2.9680
+rep  3  pocketfft c2c copy+exec            3.8352
+rep  3  SME fp64 (split)                   1.6333
+rep  3  vDSP_DFT_ExecuteD (split)          3.8103
+rep  3  vDSP_fft_zopD (split)              3.8046
+rep  4  pocketfft c2c copy+exec            3.8205
+rep  4  SME fp64 (split)                   1.5036
+rep  4  vDSP_DFT_ExecuteD (split)          3.5219
+rep  4  vDSP_fft_zopD (split)              3.6060
+rep  4  PFFFT-d ordered (inter)            2.8638
+rep  5  SME fp64 (split)                   1.5102
+rep  5  vDSP_DFT_ExecuteD (split)          3.6172
+rep  5  vDSP_fft_zopD (split)              3.5360
+rep  5  PFFFT-d ordered (inter)            3.0007
+rep  5  pocketfft c2c copy+exec            3.9439
+rep  6  vDSP_DFT_ExecuteD (split)          3.5424
+rep  6  vDSP_fft_zopD (split)              3.4941
+rep  6  PFFFT-d ordered (inter)            2.8346
+rep  6  pocketfft c2c copy+exec            3.7339
+rep  6  SME fp64 (split)                   1.5598
+rep  7  vDSP_fft_zopD (split)              3.6990
+rep  7  PFFFT-d ordered (inter)            2.9959
+rep  7  pocketfft c2c copy+exec            3.8184
+rep  7  SME fp64 (split)                   1.5374
+rep  7  vDSP_DFT_ExecuteD (split)          3.6282
+rep  8  PFFFT-d ordered (inter)            2.9391
+rep  8  pocketfft c2c copy+exec            3.8478
+rep  8  SME fp64 (split)                   1.5785
+rep  8  vDSP_DFT_ExecuteD (split)          3.6365
+rep  8  vDSP_fft_zopD (split)              3.6350
+RESULT c2c fp64 n=4096 B=64 separate            SME fp64 (split)             best     1.4066  median     1.5275  ns/point  (calls/rep 561)
+RESULT c2c fp64 n=4096 B=64 separate            vDSP_DFT_ExecuteD (split)    best     3.4978  median     3.6282  ns/point  (calls/rep 242)
+RESULT c2c fp64 n=4096 B=64 separate            vDSP_fft_zopD (split)        best     3.4941  median     3.6350  ns/point  (calls/rep 230)
+RESULT c2c fp64 n=4096 B=64 separate            PFFFT-d ordered (inter)      best     2.8346  median     2.9587  ns/point  (calls/rep 283)
+RESULT c2c fp64 n=4096 B=64 separate            pocketfft c2c copy+exec      best     3.7339  median     3.8205  ns/point  (calls/rep 226)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## c2c fp64 n=4096 B=512 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME fp64 (split)                   1.6184
+rep  0  vDSP_DFT_ExecuteD (split)          2.8834
+rep  0  vDSP_fft_zopD (split)              2.7639
+rep  0  PFFFT-d ordered (inter)            2.9652
+rep  0  pocketfft c2c copy+exec            3.7554
+rep  1  vDSP_DFT_ExecuteD (split)          2.7587
+rep  1  vDSP_fft_zopD (split)              2.7486
+rep  1  PFFFT-d ordered (inter)            3.0782
+rep  1  pocketfft c2c copy+exec            4.0523
+rep  1  SME fp64 (split)                   1.5956
+rep  2  vDSP_fft_zopD (split)              2.7092
+rep  2  PFFFT-d ordered (inter)            2.9312
+rep  2  pocketfft c2c copy+exec            3.7479
+rep  2  SME fp64 (split)                   1.5258
+rep  2  vDSP_DFT_ExecuteD (split)          2.7875
+rep  3  PFFFT-d ordered (inter)            3.0540
+rep  3  pocketfft c2c copy+exec            3.7560
+rep  3  SME fp64 (split)                   1.5021
+rep  3  vDSP_DFT_ExecuteD (split)          2.7815
+rep  3  vDSP_fft_zopD (split)              2.6851
+rep  4  pocketfft c2c copy+exec            3.7533
+rep  4  SME fp64 (split)                   1.4816
+rep  4  vDSP_DFT_ExecuteD (split)          2.6976
+rep  4  vDSP_fft_zopD (split)              2.7432
+rep  4  PFFFT-d ordered (inter)            2.9056
+rep  5  SME fp64 (split)                   1.5056
+rep  5  vDSP_DFT_ExecuteD (split)          2.7556
+rep  5  vDSP_fft_zopD (split)              2.7376
+rep  5  PFFFT-d ordered (inter)            2.9299
+rep  5  pocketfft c2c copy+exec            3.7508
+rep  6  vDSP_DFT_ExecuteD (split)          2.6766
+rep  6  vDSP_fft_zopD (split)              2.6884
+rep  6  PFFFT-d ordered (inter)            2.9492
+rep  6  pocketfft c2c copy+exec            3.7972
+rep  6  SME fp64 (split)                   1.5380
+rep  7  vDSP_fft_zopD (split)              2.8375
+rep  7  PFFFT-d ordered (inter)            2.9731
+rep  7  pocketfft c2c copy+exec            3.7456
+rep  7  SME fp64 (split)                   1.4616
+rep  7  vDSP_DFT_ExecuteD (split)          2.7917
+rep  8  PFFFT-d ordered (inter)            3.0317
+rep  8  pocketfft c2c copy+exec            3.7796
+rep  8  SME fp64 (split)                   1.5499
+rep  8  vDSP_DFT_ExecuteD (split)          2.4771
+rep  8  vDSP_fft_zopD (split)              2.6051
+RESULT c2c fp64 n=4096 B=512 separate           SME fp64 (split)             best     1.4616  median     1.5258  ns/point  (calls/rep 64)
+RESULT c2c fp64 n=4096 B=512 separate           vDSP_DFT_ExecuteD (split)    best     2.4771  median     2.7587  ns/point  (calls/rep 36)
+RESULT c2c fp64 n=4096 B=512 separate           vDSP_fft_zopD (split)        best     2.6051  median     2.7376  ns/point  (calls/rep 39)
+RESULT c2c fp64 n=4096 B=512 separate           PFFFT-d ordered (inter)      best     2.9056  median     2.9652  ns/point  (calls/rep 36)
+RESULT c2c fp64 n=4096 B=512 separate           pocketfft c2c copy+exec      best     3.7456  median     3.7554  ns/point  (calls/rep 27)

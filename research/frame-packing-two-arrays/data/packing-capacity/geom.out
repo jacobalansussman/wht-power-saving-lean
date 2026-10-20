@@ -1,0 +1,202 @@
+{
+ "m": 2,
+ "frames": 15,
+ "neighbours": 6,
+ "lemmaS_ok": true,
+ "lemmaS_profile": {
+  "level 0": {
+   "frames": 1,
+   "ascend": 6,
+   "lateral": 0,
+   "descend": 0
+  },
+  "level 1": {
+   "frames": 6,
+   "ascend": 4,
+   "lateral": 1,
+   "descend": 1
+  },
+  "level 2": {
+   "frames": 8,
+   "ascend": 0,
+   "lateral": 3,
+   "descend": 3
+  }
+ },
+ "min_blocking_set_level_m_minus_1": 3,
+ "progress_profile": [
+  "(d(L0,X), d(L1,X)) = (0,2): 1 positions; neighbours with df=+2,+1,0,-1,-2: (3, 3, 0, 0, 0)",
+  "(d(L0,X), d(L1,X)) = (1,1): 3 positions; neighbours with df=+2,+1,0,-1,-2: (1, 1, 2, 1, 1)",
+  "(d(L0,X), d(L1,X)) = (1,2): 3 positions; neighbours with df=+2,+1,0,-1,-2: (2, 3, 0, 1, 0)",
+  "(d(L0,X), d(L1,X)) = (2,0): 1 positions; neighbours with df=+2,+1,0,-1,-2: (0, 0, 0, 3, 3)",
+  "(d(L0,X), d(L1,X)) = (2,1): 3 positions; neighbours with df=+2,+1,0,-1,-2: (0, 1, 0, 3, 2)",
+  "(d(L0,X), d(L1,X)) = (2,2): 1 positions; neighbours with df=+2,+1,0,-1,-2: (0, 0, 6, 0, 0)",
+  "(d(L0,X), d(L1,X)) = (2,2): 3 positions; neighbours with df=+2,+1,0,-1,-2: (0, 2, 2, 2, 0)"
+ ],
+ "bundle_pairs_examined": 120,
+ "bundle_rho_distribution": {
+  "0.0": 1,
+  "0.5": 6,
+  "1.0": 47,
+  "1.25": 36,
+  "1.5": 23,
+  "1.75": 6,
+  "2.0": 1
+ },
+ "bundle_lambda_distribution": {
+  "0": 30,
+  "1": 89,
+  "2": 1
+ },
+ "bundle_mean_rho": 1.1833333333333333,
+ "bundle_mean_lambda": 0.7583333333333333,
+ "bundle_share_full_rho_m": 0.008333333333333333
+}
+{
+ "m": 3,
+ "frames": 135,
+ "neighbours": 14,
+ "lemmaS_ok": true,
+ "lemmaS_profile": {
+  "level 0": {
+   "frames": 1,
+   "ascend": 14,
+   "lateral": 0,
+   "descend": 0
+  },
+  "level 1": {
+   "frames": 14,
+   "ascend": 12,
+   "lateral": 1,
+   "descend": 1
+  },
+  "level 2": {
+   "frames": 56,
+   "ascend": 8,
+   "lateral": 3,
+   "descend": 3
+  },
+  "level 3": {
+   "frames": 64,
+   "ascend": 0,
+   "lateral": 7,
+   "descend": 7
+  }
+ },
+ "min_blocking_set_level_m_minus_1": 3,
+ "progress_profile": [
+  "(d(L0,X), d(L1,X)) = (0,3): 1 positions; neighbours with df=+2,+1,0,-1,-2: (7, 7, 0, 0, 0)",
+  "(d(L0,X), d(L1,X)) = (1,2): 7 positions; neighbours with df=+2,+1,0,-1,-2: (3, 3, 6, 1, 1)",
+  "(d(L0,X), d(L1,X)) = (1,3): 7 positions; neighbours with df=+2,+1,0,-1,-2: (6, 7, 0, 1, 0)",
+  "(d(L0,X), d(L1,X)) = (2,1): 7 positions; neighbours with df=+2,+1,0,-1,-2: (1, 1, 6, 3, 3)",
+  "(d(L0,X), d(L1,X)) = (2,2): 21 positions; neighbours with df=+2,+1,0,-1,-2: (2, 3, 4, 3, 2)",
+  "(d(L0,X), d(L1,X)) = (2,3): 7 positions; neighbours with df=+2,+1,0,-1,-2: (4, 4, 6, 0, 0)",
+  "(d(L0,X), d(L1,X)) = (2,3): 21 positions; neighbours with df=+2,+1,0,-1,-2: (4, 6, 2, 2, 0)",
+  "(d(L0,X), d(L1,X)) = (3,0): 1 positions; neighbours with df=+2,+1,0,-1,-2: (0, 0, 0, 7, 7)",
+  "(d(L0,X), d(L1,X)) = (3,1): 7 positions; neighbours with df=+2,+1,0,-1,-2: (0, 1, 0, 7, 6)",
+  "(d(L0,X), d(L1,X)) = (3,2): 7 positions; neighbours with df=+2,+1,0,-1,-2: (0, 0, 6, 4, 4)",
+  "(d(L0,X), d(L1,X)) = (3,2): 21 positions; neighbours with df=+2,+1,0,-1,-2: (0, 2, 2, 6, 4)",
+  "(d(L0,X), d(L1,X)) = (3,3): 28 positions; neighbours with df=+2,+1,0,-1,-2: (0, 4, 6, 4, 0)"
+ ],
+ "bundle_pairs_examined": 8640,
+ "bundle_rho_distribution": {
+  "0.0": 1,
+  "0.5": 14,
+  "1.0": 182,
+  "1.5": 2415,
+  "1.75": 3136,
+  "2.0": 2128,
+  "2.25": 616,
+  "2.5": 133,
+  "2.75": 14,
+  "3.0": 1
+ },
+ "bundle_lambda_distribution": {
+  "0": 127,
+  "1": 7329,
+  "2": 1183,
+  "3": 1
+ },
+ "bundle_mean_rho": 1.7726273148148148,
+ "bundle_mean_lambda": 1.1224537037037037,
+ "bundle_share_full_rho_m": 0.00011574074074074075
+}
+{
+ "m": 4,
+ "frames": 2295,
+ "neighbours": 30,
+ "lemmaS_ok": true,
+ "lemmaS_profile": {
+  "level 0": {
+   "frames": 1,
+   "ascend": 30,
+   "lateral": 0,
+   "descend": 0
+  },
+  "level 1": {
+   "frames": 30,
+   "ascend": 28,
+   "lateral": 1,
+   "descend": 1
+  },
+  "level 2": {
+   "frames": 280,
+   "ascend": 24,
+   "lateral": 3,
+   "descend": 3
+  },
+  "level 3": {
+   "frames": 960,
+   "ascend": 16,
+   "lateral": 7,
+   "descend": 7
+  },
+  "level 4": {
+   "frames": 1024,
+   "ascend": 0,
+   "lateral": 15,
+   "descend": 15
+  }
+ },
+ "min_blocking_set_level_m_minus_1": null,
+ "progress_profile": [
+  "(d(L0,X), d(L1,X)) = (0,4): 1 positions; neighbours with df=+2,+1,0,-1,-2: (15, 15, 0, 0, 0)",
+  "(d(L0,X), d(L1,X)) = (1,3): 15 positions; neighbours with df=+2,+1,0,-1,-2: (7, 7, 14, 1, 1)",
+  "(d(L0,X), d(L1,X)) = (1,4): 15 positions; neighbours with df=+2,+1,0,-1,-2: (14, 15, 0, 1, 0)",
+  "(d(L0,X), d(L1,X)) = (2,2): 35 positions; neighbours with df=+2,+1,0,-1,-2: (3, 3, 18, 3, 3)",
+  "(d(L0,X), d(L1,X)) = (2,3): 105 positions; neighbours with df=+2,+1,0,-1,-2: (6, 7, 12, 3, 2)",
+  "(d(L0,X), d(L1,X)) = (2,4): 35 positions; neighbours with df=+2,+1,0,-1,-2: (12, 12, 6, 0, 0)",
+  "(d(L0,X), d(L1,X)) = (2,4): 105 positions; neighbours with df=+2,+1,0,-1,-2: (12, 14, 2, 2, 0)",
+  "(d(L0,X), d(L1,X)) = (3,1): 15 positions; neighbours with df=+2,+1,0,-1,-2: (1, 1, 14, 7, 7)",
+  "(d(L0,X), d(L1,X)) = (3,2): 105 positions; neighbours with df=+2,+1,0,-1,-2: (2, 3, 12, 7, 6)",
+  "(d(L0,X), d(L1,X)) = (3,3): 105 positions; neighbours with df=+2,+1,0,-1,-2: (4, 4, 14, 4, 4)",
+  "(d(L0,X), d(L1,X)) = (3,3): 315 positions; neighbours with df=+2,+1,0,-1,-2: (4, 6, 10, 6, 4)",
+  "(d(L0,X), d(L1,X)) = (3,4): 420 positions; neighbours with df=+2,+1,0,-1,-2: (8, 12, 6, 4, 0)",
+  "(d(L0,X), d(L1,X)) = (4,0): 1 positions; neighbours with df=+2,+1,0,-1,-2: (0, 0, 0, 15, 15)",
+  "(d(L0,X), d(L1,X)) = (4,1): 15 positions; neighbours with df=+2,+1,0,-1,-2: (0, 1, 0, 15, 14)",
+  "(d(L0,X), d(L1,X)) = (4,2): 35 positions; neighbours with df=+2,+1,0,-1,-2: (0, 0, 6, 12, 12)",
+  "(d(L0,X), d(L1,X)) = (4,2): 105 positions; neighbours with df=+2,+1,0,-1,-2: (0, 2, 2, 14, 12)",
+  "(d(L0,X), d(L1,X)) = (4,3): 420 positions; neighbours with df=+2,+1,0,-1,-2: (0, 4, 6, 12, 8)",
+  "(d(L0,X), d(L1,X)) = (4,4): 28 positions; neighbours with df=+2,+1,0,-1,-2: (0, 0, 30, 0, 0)",
+  "(d(L0,X), d(L1,X)) = (4,4): 420 positions; neighbours with df=+2,+1,0,-1,-2: (0, 8, 14, 8, 0)"
+ ],
+ "bundle_pairs_examined": 300,
+ "bundle_rho_distribution": {
+  "1.5": 2,
+  "2.0": 66,
+  "2.25": 121,
+  "2.5": 82,
+  "2.75": 24,
+  "3.0": 5
+ },
+ "bundle_lambda_distribution": {
+  "0": 1,
+  "1": 10,
+  "2": 287,
+  "3": 2
+ },
+ "bundle_mean_rho": 2.3108333333333335,
+ "bundle_mean_lambda": 1.9666666666666666,
+ "bundle_share_full_rho_m": 0.0,
+ "sampled": true
+}

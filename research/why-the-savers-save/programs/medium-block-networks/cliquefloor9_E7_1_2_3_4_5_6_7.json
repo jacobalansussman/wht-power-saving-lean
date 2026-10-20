@@ -1,0 +1,45 @@
+{
+ "design": "E7",
+ "n": 63,
+ "k": 7,
+ "omega": 7,
+ "cliques": 135,
+ "dims": {
+  "1": {
+   "subspaces": 127,
+   "Tmax": 15,
+   "floor": 63.0
+  },
+  "2": {
+   "subspaces": 2667,
+   "Tmax": 30,
+   "floor": 63.0
+  },
+  "3": {
+   "subspaces": 11811,
+   "Tmax": 54,
+   "floor": 52.5
+  },
+  "4": {
+   "subspaces": 11811,
+   "Tmax": 90,
+   "floor": 42.0
+  },
+  "5": {
+   "subspaces": 2667,
+   "Tmax": 135,
+   "floor": 35.0
+  },
+  "6": {
+   "subspaces": 127,
+   "Tmax": 135,
+   "floor": 42.0
+  },
+  "7": {
+   "subspaces": 1,
+   "Tmax": 135,
+   "floor": 49.0
+  }
+ },
+ "floor": 35.0
+}

@@ -1,0 +1,10 @@
+m=3 W=4 M=11: 28 targets; 136 classes of direction multisets (0.0 s)
+  SURVIVOR dirs (1, 1, 1, 2, 2, 2, 3, 4, 5, 6, 7) (orbit 21; distinct dirs independent: False): 13 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 12,18,20,23 (tight 11, clique 4)
+    zero-block exclusion: dirs (1, 1, 1, 2, 2, 3, 3, 4, 5, 6, 7) targets [16, 18, 21, 22]: form 43 |D| = 7, r = 0, zero clique 4
+    zero-block exclusion: dirs (1, 1, 1, 2, 2, 3, 3, 4, 5, 6, 7) targets [16, 19, 20, 22]: form 33 |D| = 7, r = 0, zero clique 4
+    zero-block exclusion: dirs (1, 1, 1, 2, 2, 3, 3, 4, 5, 6, 7) targets [16, 19, 21, 23]: form 35 |D| = 7, r = 0, zero clique 4
+  SURVIVOR dirs (1, 1, 2, 2, 3, 4, 4, 5, 6, 7, 7) (orbit 7; distinct dirs independent: False): 1 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 7,11,16,23 (tight 12, clique 3)
+  classes with some target in span: 120; with a target 4-multiset passing deletion: 6; passing cliques and the zero-block test too: 2
+  target tuples passing deletion but excluded: by cliques 923, by the zero-block test 397
+  classes skipped by the free-direction lemma (independent distinct directions, M < mW): 0
+  done in 0.5 s

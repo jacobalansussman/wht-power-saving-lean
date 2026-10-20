@@ -1,0 +1,22 @@
+{
+  "files": {
+    "inputs/DISPATCH.json": "5d6fa711d704a1b498e5fe066ea821c4fa0217463702e82a7ce5be9da4023e8a",
+    "inputs/old-FILL.json.gz": "50e4635123c0551a1a3c8f4cab870bcccc3e579c24447abe9d81336fde91f883",
+    "inputs/old-NATIVE-base.json.gz": "bfe0cc0badac6c6d18461ceea0b299162c0f280c05f81b63f11fcc06cf9180e6",
+    "inputs/old-NATIVE-extra.json.gz": "c5eec94a64cecfd6b83de05619628ad4868e889d62a55b49973f09705cc60448",
+    "inputs/old-PROFILE.json": "9686df0d8e710c2e94aef3887f4bf130a05b64215faeae702cccb59e95a469d5",
+    "inputs/old-WORD-base.json.gz": "5ca4be99851f8878cbfe0fd6c454df926b11218f17feefa1664721cf03156699",
+    "inputs/old-WORD-extra.json.gz": "965268a9be73d3f62e7ef680d18f108cf064bfe1f44b82157baa61443232904e",
+    "inputs/ORDER.json": "743e74b538432e2b2045e754b0de9c18f36fc5039fdb8eb542177a898ec78e44",
+    "inputs/PLAN.json.gz": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e",
+    "inputs/TEMPLATE.json.gz": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+    "inputs/WORD-base.json.gz": "08e6c96fbe3dfec96cb8451b3867ef8c1a214109ecd1e5af7fcc28e0f05728d0",
+    "inputs/WORD-extra.json.gz": "d83c2ec9cecc0ad092d34ea4080b28a4fd7199579356b6d5a8fc6cd53ff93299",
+    "FILL.json.gz": "430233230c9194a52bda171afd21713351fdd02e0054230012109e44047c4c55",
+    "PROFILE.json": "64b85c791a331e79ddc18f047b672240c008900b8c004d37cf6d925067373228",
+    "MANIFEST.json": "20340f8fd8c03297c59e1912ad1795048aa5d8bd0dd9a4c584222ed62912fd72",
+    "OWNER-LIFT-PROOF.txt": "e61f6893510bf3a7fd218cff0cbad438044502a3f440875df4bd663da0ebee9e",
+    "check_gain.py": "59b125e43dc1c1255f2c01d86ee9862f24c6fc46105f867a8b03c125f85628dc"
+  },
+  "scope": "Exact immutable source containers and generated mathematical artifacts; final word payloads also bind the nomination hashes in MANIFEST.json."
+}

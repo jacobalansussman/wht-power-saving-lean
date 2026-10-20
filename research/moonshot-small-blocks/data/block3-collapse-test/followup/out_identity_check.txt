@@ -1,0 +1,28 @@
+f=3 (I1): |lhs - rhs|/|rhs| = 1.9e-16
+f=3 D2 P01 D1 v = P01 X1 v: 1.8e-16
+f=3 (I2) top D4: |a D Pr0 u - b D Z1 Pr0 u - i D u| / |D u| = 5.3e-17
+f=3 (I2) top D7: |a D Pr0 u - b D Z1 Pr0 u - i D u| / |D u| = 1.7e-16
+f=4 (I1): |lhs - rhs|/|rhs| = 2.0e-16
+f=4 D2 P01 D1 v = P01 X1 v: 2.0e-16
+f=4 (I2) top D4: |a D Pr0 u - b D Z1 Pr0 u - i D u| / |D u| = 5.8e-17
+f=4 (I2) top D7: |a D Pr0 u - b D Z1 Pr0 u - i D u| / |D u| = 2.0e-16
+f=5 (I1): |lhs - rhs|/|rhs| = 2.3e-16
+f=5 D2 P01 D1 v = P01 X1 v: 2.2e-16
+f=5 (I2) top D4: |a D Pr0 u - b D Z1 Pr0 u - i D u| / |D u| = 5.8e-17
+f=5 (I2) top D7: |a D Pr0 u - b D Z1 Pr0 u - i D u| / |D u| = 2.2e-16
+f=6 (I1): |lhs - rhs|/|rhs| = 2.5e-16
+f=6 D2 P01 D1 v = P01 X1 v: 2.5e-16
+f=6 (I2) top D4: |a D Pr0 u - b D Z1 Pr0 u - i D u| / |D u| = 5.7e-17
+f=6 (I2) top D7: |a D Pr0 u - b D Z1 Pr0 u - i D u| / |D u| = 2.4e-16
+f=3 (I3) g=1: 2.8e-16; P01 commutes with D7: 0.0e+00
+f=3 (I3) g=P01: 2.8e-16; P01 commutes with D7: 0.0e+00
+f=3 (I3) g=X2: 2.8e-16; P01 commutes with D7: 0.0e+00
+f=4 (I3) g=1: 3.4e-16; P01 commutes with D7: 0.0e+00
+f=4 (I3) g=P01: 3.4e-16; P01 commutes with D7: 0.0e+00
+f=4 (I3) g=X2: 3.4e-16; P01 commutes with D7: 0.0e+00
+f=5 (I3) g=1: 3.8e-16; P01 commutes with D7: 0.0e+00
+f=5 (I3) g=P01: 3.8e-16; P01 commutes with D7: 0.0e+00
+f=5 (I3) g=X2: 3.8e-16; P01 commutes with D7: 0.0e+00
+f=6 (I3) g=1: 4.2e-16; P01 commutes with D7: 0.0e+00
+f=6 (I3) g=P01: 4.2e-16; P01 commutes with D7: 0.0e+00
+f=6 (I3) g=X2: 4.2e-16; P01 commutes with D7: 0.0e+00

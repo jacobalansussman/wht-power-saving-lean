@@ -1,0 +1,715 @@
+PASS convolve  n=      1 m=    1 full  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 full  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 full  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 full  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 full  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 full  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 full  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 full  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 full  c128 path=1 vs numpy 3.17e-17  err/exact: fc64 0.00e+00 numpy 3.17e-17  ratio 0.00
+PASS correlate n=      1 m=    1 full  c128 path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 same  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 same  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 same  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 same  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 same  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 same  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 same  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 same  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 same  c128 path=1 vs numpy 9.23e-17  err/exact: fc64 0.00e+00 numpy 9.23e-17  ratio 0.00
+PASS correlate n=      1 m=    1 same  c128 path=1 vs numpy 3.71e-17  err/exact: fc64 3.18e-17 numpy 6.89e-17  ratio 0.46
+PASS convolve  n=      1 m=    1 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      1 m=    1 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      1 m=    1 valid c128 path=1 vs numpy 1.90e-16  err/exact: fc64 0.00e+00 numpy 1.90e-16  ratio 0.00
+PASS correlate n=      1 m=    1 valid c128 path=1 vs numpy 1.15e-17  err/exact: fc64 1.15e-17 numpy 0.00e+00  ratio 11534425955065514629177646853589239841233280779620445763168501264717649191793841293939949768703563161493125472651589429707100732547609122004709653490114051744064399581312762478041869449243899323239507034523368711494242368207247423264517728965907396170742209842410291486751305379086336.00
+PASS convolve  n=      3 m=    1 full  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 full  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 full  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 full  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 full  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 full  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 full  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 full  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 full  c128 path=1 vs numpy 1.31e-16  err/exact: fc64 9.57e-18 numpy 1.92e-16  ratio 0.05
+PASS correlate n=      3 m=    1 full  c128 path=1 vs numpy 1.84e-16  err/exact: fc64 3.79e-17 numpy 1.85e-16  ratio 0.21
+PASS convolve  n=      3 m=    1 same  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 same  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 same  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 same  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 same  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 same  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 same  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 same  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 same  c128 path=1 vs numpy 1.16e-16  err/exact: fc64 0.00e+00 numpy 1.16e-16  ratio 0.00
+PASS correlate n=      3 m=    1 same  c128 path=1 vs numpy 2.40e-17  err/exact: fc64 1.27e-16 numpy 1.27e-16  ratio 1.00
+PASS convolve  n=      3 m=    1 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      3 m=    1 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      3 m=    1 valid c128 path=1 vs numpy 7.87e-17  err/exact: fc64 3.82e-17 numpy 1.60e-16  ratio 0.24
+PASS correlate n=      3 m=    1 valid c128 path=1 vs numpy 2.44e-17  err/exact: fc64 9.76e-17 numpy 9.76e-17  ratio 1.00
+PASS convolve  SWAPPED len(a)=1 len(v)=3 full  f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=1 len(v)=3 full  f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=1 len(v)=3 full  c128 vs numpy 6.10e-17
+PASS correlate SWAPPED len(a)=1 len(v)=3 full  c128 vs numpy 6.19e-17
+PASS convolve  SWAPPED len(a)=1 len(v)=3 same  f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=1 len(v)=3 same  f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=1 len(v)=3 same  c128 vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=1 len(v)=3 same  c128 vs numpy 1.36e-17
+PASS convolve  SWAPPED len(a)=1 len(v)=3 valid f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=1 len(v)=3 valid f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=1 len(v)=3 valid c128 vs numpy 7.91e-17
+PASS correlate SWAPPED len(a)=1 len(v)=3 valid c128 vs numpy 8.87e-17
+PASS convolve  n=      7 m=    3 full  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      7 m=    3 full  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 1.24e-16 numpy 1.24e-16  ratio 1.00
+PASS convolve  n=      7 m=    3 full  f64  path=4 vs numpy 1.10e-17  err/exact: fc64 3.67e-17 numpy 4.90e-17  ratio 0.75
+PASS convolve  n=      7 m=    3 full  f64  path=5 vs numpy 1.32e-17  err/exact: fc64 3.10e-17 numpy 5.35e-17  ratio 0.58
+PASS correlate n=      7 m=    3 full  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 3.01e-17 numpy 3.01e-17  ratio 1.00
+PASS correlate n=      7 m=    3 full  f64  path=2 vs numpy 9.20e-17  err/exact: fc64 0.00e+00 numpy 1.33e-16  ratio 0.00
+PASS correlate n=      7 m=    3 full  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 1.07e-16 numpy 1.07e-16  ratio 1.00
+PASS correlate n=      7 m=    3 full  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 7.25e-17 numpy 7.25e-17  ratio 1.00
+PASS convolve  n=      7 m=    3 full  c128 path=1 vs numpy 1.20e-16  err/exact: fc64 7.96e-17 numpy 8.37e-17  ratio 0.95
+PASS correlate n=      7 m=    3 full  c128 path=1 vs numpy 1.01e-16  err/exact: fc64 1.82e-16 numpy 1.69e-16  ratio 1.08
+PASS convolve  n=      7 m=    3 same  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 1.55e-16 numpy 1.55e-16  ratio 1.00
+PASS convolve  n=      7 m=    3 same  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 2.66e-17 numpy 2.66e-17  ratio 1.00
+PASS convolve  n=      7 m=    3 same  f64  path=4 vs numpy 1.26e-16  err/exact: fc64 5.40e-17 numpy 1.26e-16  ratio 0.43
+PASS convolve  n=      7 m=    3 same  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 1.28e-16 numpy 1.28e-16  ratio 1.00
+PASS correlate n=      7 m=    3 same  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 1.99e-16 numpy 1.99e-16  ratio 1.00
+PASS correlate n=      7 m=    3 same  f64  path=2 vs numpy 4.23e-17  err/exact: fc64 1.69e-16 numpy 1.69e-16  ratio 1.00
+PASS correlate n=      7 m=    3 same  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 2.09e-16 numpy 2.09e-16  ratio 1.00
+PASS correlate n=      7 m=    3 same  f64  path=5 vs numpy 1.65e-17  err/exact: fc64 1.32e-16 numpy 1.32e-16  ratio 1.00
+PASS convolve  n=      7 m=    3 same  c128 path=1 vs numpy 1.96e-16  err/exact: fc64 1.90e-16 numpy 1.21e-16  ratio 1.56
+PASS correlate n=      7 m=    3 same  c128 path=1 vs numpy 9.26e-17  err/exact: fc64 8.03e-17 numpy 1.25e-16  ratio 0.64
+PASS convolve  n=      7 m=    3 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS convolve  n=      7 m=    3 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 3.55e-17 numpy 3.55e-17  ratio 1.00
+PASS convolve  n=      7 m=    3 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 1.12e-16 numpy 1.12e-16  ratio 1.00
+PASS convolve  n=      7 m=    3 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 1.79e-16 numpy 1.79e-16  ratio 1.00
+PASS correlate n=      7 m=    3 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 0.00e+00 numpy 0.00e+00  ratio 0.00
+PASS correlate n=      7 m=    3 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 6.03e-17 numpy 6.03e-17  ratio 1.00
+PASS correlate n=      7 m=    3 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 3.84e-17 numpy 3.84e-17  ratio 1.00
+PASS correlate n=      7 m=    3 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 8.54e-17 numpy 8.54e-17  ratio 1.00
+PASS convolve  n=      7 m=    3 valid c128 path=1 vs numpy 1.14e-16  err/exact: fc64 1.67e-16 numpy 1.86e-16  ratio 0.89
+PASS correlate n=      7 m=    3 valid c128 path=1 vs numpy 1.38e-16  err/exact: fc64 1.34e-16 numpy 1.08e-16  ratio 1.24
+PASS convolve  SWAPPED len(a)=3 len(v)=7 full  f64  vs numpy 6.57e-17
+PASS correlate SWAPPED len(a)=3 len(v)=7 full  f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=3 len(v)=7 full  c128 vs numpy 1.90e-16
+PASS correlate SWAPPED len(a)=3 len(v)=7 full  c128 vs numpy 1.73e-16
+PASS convolve  SWAPPED len(a)=3 len(v)=7 same  f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=3 len(v)=7 same  f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=3 len(v)=7 same  c128 vs numpy 1.32e-16
+PASS correlate SWAPPED len(a)=3 len(v)=7 same  c128 vs numpy 2.08e-16
+PASS convolve  SWAPPED len(a)=3 len(v)=7 valid f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=3 len(v)=7 valid f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=3 len(v)=7 valid c128 vs numpy 1.38e-16
+PASS correlate SWAPPED len(a)=3 len(v)=7 valid c128 vs numpy 2.90e-16
+PASS convolve  n=    100 m=    3 full  f64  path=1 vs numpy 1.06e-17  err/exact: fc64 1.82e-16 numpy 1.82e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 full  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 1.85e-16 numpy 1.85e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 full  f64  path=4 vs numpy 1.19e-17  err/exact: fc64 1.87e-16 numpy 1.87e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 full  f64  path=5 vs numpy 1.04e-16  err/exact: fc64 1.72e-16 numpy 1.72e-16  ratio 1.00
+PASS correlate n=    100 m=    3 full  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 1.58e-16 numpy 1.58e-16  ratio 1.00
+PASS correlate n=    100 m=    3 full  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 1.78e-16 numpy 1.78e-16  ratio 1.00
+PASS correlate n=    100 m=    3 full  f64  path=4 vs numpy 7.62e-17  err/exact: fc64 1.84e-16 numpy 1.84e-16  ratio 1.00
+PASS correlate n=    100 m=    3 full  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 1.39e-16 numpy 1.39e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 full  c128 path=1 vs numpy 1.43e-16  err/exact: fc64 1.59e-16 numpy 1.38e-16  ratio 1.15
+PASS correlate n=    100 m=    3 full  c128 path=1 vs numpy 1.69e-16  err/exact: fc64 1.97e-16 numpy 1.85e-16  ratio 1.06
+PASS convolve  n=    100 m=    3 same  f64  path=1 vs numpy 1.81e-17  err/exact: fc64 1.48e-16 numpy 1.38e-16  ratio 1.07
+PASS convolve  n=    100 m=    3 same  f64  path=2 vs numpy 1.31e-16  err/exact: fc64 2.01e-16 numpy 2.01e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 same  f64  path=4 vs numpy 1.08e-17  err/exact: fc64 2.05e-16 numpy 2.05e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 same  f64  path=5 vs numpy 7.28e-17  err/exact: fc64 1.90e-16 numpy 1.90e-16  ratio 1.00
+PASS correlate n=    100 m=    3 same  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 2.16e-16 numpy 2.16e-16  ratio 1.00
+PASS correlate n=    100 m=    3 same  f64  path=2 vs numpy 7.85e-17  err/exact: fc64 1.95e-16 numpy 1.95e-16  ratio 1.00
+PASS correlate n=    100 m=    3 same  f64  path=4 vs numpy 9.41e-18  err/exact: fc64 1.72e-16 numpy 1.72e-16  ratio 1.00
+PASS correlate n=    100 m=    3 same  f64  path=5 vs numpy 1.43e-17  err/exact: fc64 2.13e-16 numpy 2.13e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 same  c128 path=1 vs numpy 1.22e-16  err/exact: fc64 1.41e-16 numpy 1.28e-16  ratio 1.10
+PASS correlate n=    100 m=    3 same  c128 path=1 vs numpy 1.51e-16  err/exact: fc64 1.94e-16 numpy 1.68e-16  ratio 1.16
+PASS convolve  n=    100 m=    3 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 1.88e-16 numpy 1.88e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 1.44e-16 numpy 1.44e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 2.13e-16 numpy 2.13e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 1.79e-16 numpy 1.79e-16  ratio 1.00
+PASS correlate n=    100 m=    3 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 1.99e-16 numpy 1.99e-16  ratio 1.00
+PASS correlate n=    100 m=    3 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 2.09e-16 numpy 2.09e-16  ratio 1.00
+PASS correlate n=    100 m=    3 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 2.21e-16 numpy 2.21e-16  ratio 1.00
+PASS correlate n=    100 m=    3 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 2.03e-16 numpy 2.03e-16  ratio 1.00
+PASS convolve  n=    100 m=    3 valid c128 path=1 vs numpy 1.80e-16  err/exact: fc64 2.28e-16 numpy 1.87e-16  ratio 1.22
+PASS correlate n=    100 m=    3 valid c128 path=1 vs numpy 2.25e-16  err/exact: fc64 2.85e-16 numpy 1.78e-16  ratio 1.60
+PASS convolve  SWAPPED len(a)=3 len(v)=100 full  f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=3 len(v)=100 full  f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=3 len(v)=100 full  c128 vs numpy 1.56e-16
+PASS correlate SWAPPED len(a)=3 len(v)=100 full  c128 vs numpy 1.65e-16
+PASS convolve  SWAPPED len(a)=3 len(v)=100 same  f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=3 len(v)=100 same  f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=3 len(v)=100 same  c128 vs numpy 2.56e-16
+PASS correlate SWAPPED len(a)=3 len(v)=100 same  c128 vs numpy 1.34e-16
+PASS convolve  SWAPPED len(a)=3 len(v)=100 valid f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=3 len(v)=100 valid f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=3 len(v)=100 valid c128 vs numpy 2.08e-16
+PASS correlate SWAPPED len(a)=3 len(v)=100 valid c128 vs numpy 1.35e-16
+PASS convolve  n=    100 m=    4 full  f64  path=1 vs numpy 7.98e-18  err/exact: fc64 2.14e-16 numpy 2.14e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 full  f64  path=2 vs numpy 6.17e-17  err/exact: fc64 1.92e-16 numpy 1.92e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 full  f64  path=4 vs numpy 6.75e-17  err/exact: fc64 2.12e-16 numpy 2.12e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 full  f64  path=5 vs numpy 2.33e-17  err/exact: fc64 2.18e-16 numpy 2.18e-16  ratio 1.00
+PASS correlate n=    100 m=    4 full  f64  path=1 vs numpy 6.03e-17  err/exact: fc64 1.51e-16 numpy 1.51e-16  ratio 1.00
+PASS correlate n=    100 m=    4 full  f64  path=2 vs numpy 5.08e-17  err/exact: fc64 2.03e-16 numpy 2.03e-16  ratio 1.00
+PASS correlate n=    100 m=    4 full  f64  path=4 vs numpy 3.23e-17  err/exact: fc64 1.99e-16 numpy 1.99e-16  ratio 1.00
+PASS correlate n=    100 m=    4 full  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 1.48e-16 numpy 1.48e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 full  c128 path=1 vs numpy 1.88e-16  err/exact: fc64 1.93e-16 numpy 1.38e-16  ratio 1.41
+PASS correlate n=    100 m=    4 full  c128 path=1 vs numpy 1.44e-16  err/exact: fc64 1.41e-16 numpy 1.62e-16  ratio 0.87
+PASS convolve  n=    100 m=    4 same  f64  path=1 vs numpy 2.15e-17  err/exact: fc64 2.14e-16 numpy 2.14e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 same  f64  path=2 vs numpy 4.18e-17  err/exact: fc64 2.14e-16 numpy 2.14e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 same  f64  path=4 vs numpy 9.04e-17  err/exact: fc64 1.92e-16 numpy 1.92e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 same  f64  path=5 vs numpy 1.21e-17  err/exact: fc64 2.04e-16 numpy 2.04e-16  ratio 1.00
+PASS correlate n=    100 m=    4 same  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 2.15e-16 numpy 2.15e-16  ratio 1.00
+PASS correlate n=    100 m=    4 same  f64  path=2 vs numpy 1.16e-16  err/exact: fc64 1.90e-16 numpy 1.90e-16  ratio 1.00
+PASS correlate n=    100 m=    4 same  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 1.52e-16 numpy 1.52e-16  ratio 1.00
+PASS correlate n=    100 m=    4 same  f64  path=5 vs numpy 3.80e-17  err/exact: fc64 2.12e-16 numpy 2.12e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 same  c128 path=1 vs numpy 1.90e-16  err/exact: fc64 2.09e-16 numpy 1.54e-16  ratio 1.36
+PASS correlate n=    100 m=    4 same  c128 path=1 vs numpy 1.79e-16  err/exact: fc64 1.58e-16 numpy 1.84e-16  ratio 0.86
+PASS convolve  n=    100 m=    4 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 1.40e-16 numpy 1.40e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 1.95e-16 numpy 1.95e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 2.06e-16 numpy 2.06e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 2.13e-16 numpy 2.13e-16  ratio 1.00
+PASS correlate n=    100 m=    4 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 1.83e-16 numpy 1.83e-16  ratio 1.00
+PASS correlate n=    100 m=    4 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 1.76e-16 numpy 1.76e-16  ratio 1.00
+PASS correlate n=    100 m=    4 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 2.14e-16 numpy 2.14e-16  ratio 1.00
+PASS correlate n=    100 m=    4 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 1.91e-16 numpy 1.91e-16  ratio 1.00
+PASS convolve  n=    100 m=    4 valid c128 path=1 vs numpy 1.72e-16  err/exact: fc64 1.72e-16 numpy 1.56e-16  ratio 1.10
+PASS correlate n=    100 m=    4 valid c128 path=1 vs numpy 2.16e-16  err/exact: fc64 2.08e-16 numpy 1.46e-16  ratio 1.42
+PASS convolve  SWAPPED len(a)=4 len(v)=100 full  f64  vs numpy 1.19e-16
+PASS correlate SWAPPED len(a)=4 len(v)=100 full  f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=4 len(v)=100 full  c128 vs numpy 3.12e-16
+PASS correlate SWAPPED len(a)=4 len(v)=100 full  c128 vs numpy 1.73e-16
+PASS convolve  SWAPPED len(a)=4 len(v)=100 same  f64  vs numpy 5.03e-17
+PASS correlate SWAPPED len(a)=4 len(v)=100 same  f64  vs numpy 8.86e-18
+PASS convolve  SWAPPED len(a)=4 len(v)=100 same  c128 vs numpy 1.89e-16
+PASS correlate SWAPPED len(a)=4 len(v)=100 same  c128 vs numpy 2.25e-16
+PASS convolve  SWAPPED len(a)=4 len(v)=100 valid f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=4 len(v)=100 valid f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=4 len(v)=100 valid c128 vs numpy 1.94e-16
+PASS correlate SWAPPED len(a)=4 len(v)=100 valid c128 vs numpy 2.44e-16
+PASS convolve  n=    513 m=   33 full  f64  path=1 vs numpy 2.97e-16  err/exact: fc64 2.04e-16 numpy 1.03e-16  ratio 1.98
+PASS convolve  n=    513 m=   33 full  f64  path=2 vs numpy 3.99e-16  err/exact: fc64 1.33e-16 numpy 1.61e-16  ratio 0.83
+PASS convolve  n=    513 m=   33 full  f64  path=4 vs numpy 3.20e-16  err/exact: fc64 1.22e-16 numpy 8.49e-17  ratio 1.43
+PASS convolve  n=    513 m=   33 full  f64  path=5 vs numpy 3.10e-16  err/exact: fc64 1.74e-16 numpy 1.74e-16  ratio 1.00
+PASS correlate n=    513 m=   33 full  f64  path=1 vs numpy 4.08e-16  err/exact: fc64 2.63e-16 numpy 1.23e-16  ratio 2.14
+PASS correlate n=    513 m=   33 full  f64  path=2 vs numpy 3.17e-16  err/exact: fc64 2.20e-16 numpy 1.08e-16  ratio 2.03
+PASS correlate n=    513 m=   33 full  f64  path=4 vs numpy 3.86e-16  err/exact: fc64 1.58e-16 numpy 1.75e-16  ratio 0.90
+PASS correlate n=    513 m=   33 full  f64  path=5 vs numpy 3.89e-16  err/exact: fc64 1.38e-16 numpy 1.02e-16  ratio 1.35
+PASS convolve  n=    513 m=   33 full  c128 path=1 vs numpy 3.79e-16  err/exact: fc64 1.34e-16 numpy 1.22e-16  ratio 1.10
+PASS correlate n=    513 m=   33 full  c128 path=1 vs numpy 4.34e-16  err/exact: fc64 1.40e-16 numpy 8.53e-17  ratio 1.65
+PASS convolve  n=    513 m=   33 same  f64  path=1 vs numpy 4.58e-16  err/exact: fc64 3.32e-16 numpy 1.13e-16  ratio 2.94
+PASS convolve  n=    513 m=   33 same  f64  path=2 vs numpy 4.26e-16  err/exact: fc64 1.36e-16 numpy 9.67e-17  ratio 1.41
+PASS convolve  n=    513 m=   33 same  f64  path=4 vs numpy 2.94e-16  err/exact: fc64 1.79e-16 numpy 1.02e-16  ratio 1.76
+PASS convolve  n=    513 m=   33 same  f64  path=5 vs numpy 3.09e-16  err/exact: fc64 2.15e-16 numpy 1.55e-16  ratio 1.38
+PASS correlate n=    513 m=   33 same  f64  path=1 vs numpy 2.89e-16  err/exact: fc64 2.12e-16 numpy 1.34e-16  ratio 1.58
+PASS correlate n=    513 m=   33 same  f64  path=2 vs numpy 3.56e-16  err/exact: fc64 1.67e-16 numpy 9.36e-17  ratio 1.78
+PASS correlate n=    513 m=   33 same  f64  path=4 vs numpy 3.18e-16  err/exact: fc64 2.46e-16 numpy 9.14e-17  ratio 2.69
+PASS correlate n=    513 m=   33 same  f64  path=5 vs numpy 6.26e-16  err/exact: fc64 3.22e-16 numpy 1.10e-16  ratio 2.93
+PASS convolve  n=    513 m=   33 same  c128 path=1 vs numpy 4.36e-16  err/exact: fc64 1.43e-16 numpy 8.69e-17  ratio 1.64
+PASS correlate n=    513 m=   33 same  c128 path=1 vs numpy 4.27e-16  err/exact: fc64 1.70e-16 numpy 9.02e-17  ratio 1.88
+PASS convolve  n=    513 m=   33 valid f64  path=1 vs numpy 2.97e-16  err/exact: fc64 2.29e-16 numpy 9.90e-17  ratio 2.31
+PASS convolve  n=    513 m=   33 valid f64  path=2 vs numpy 2.72e-16  err/exact: fc64 1.40e-16 numpy 6.11e-17  ratio 2.29
+PASS convolve  n=    513 m=   33 valid f64  path=4 vs numpy 2.73e-16  err/exact: fc64 1.14e-16 numpy 8.33e-17  ratio 1.36
+PASS convolve  n=    513 m=   33 valid f64  path=5 vs numpy 3.54e-16  err/exact: fc64 1.61e-16 numpy 9.31e-17  ratio 1.73
+PASS correlate n=    513 m=   33 valid f64  path=1 vs numpy 4.75e-16  err/exact: fc64 1.99e-16 numpy 1.17e-16  ratio 1.70
+PASS correlate n=    513 m=   33 valid f64  path=2 vs numpy 3.54e-16  err/exact: fc64 2.22e-16 numpy 1.28e-16  ratio 1.74
+PASS correlate n=    513 m=   33 valid f64  path=4 vs numpy 2.26e-16  err/exact: fc64 1.96e-16 numpy 9.41e-17  ratio 2.08
+PASS correlate n=    513 m=   33 valid f64  path=5 vs numpy 3.35e-16  err/exact: fc64 1.20e-16 numpy 9.61e-17  ratio 1.25
+PASS convolve  n=    513 m=   33 valid c128 path=1 vs numpy 4.49e-16  err/exact: fc64 1.57e-16 numpy 6.63e-17  ratio 2.37
+PASS correlate n=    513 m=   33 valid c128 path=1 vs numpy 4.07e-16  err/exact: fc64 2.07e-16 numpy 8.63e-17  ratio 2.40
+PASS convolve  SWAPPED len(a)=33 len(v)=513 full  f64  vs numpy 2.90e-16
+PASS correlate SWAPPED len(a)=33 len(v)=513 full  f64  vs numpy 3.94e-16
+PASS convolve  SWAPPED len(a)=33 len(v)=513 full  c128 vs numpy 4.74e-16
+PASS correlate SWAPPED len(a)=33 len(v)=513 full  c128 vs numpy 6.30e-16
+PASS convolve  SWAPPED len(a)=33 len(v)=513 same  f64  vs numpy 2.86e-16
+PASS correlate SWAPPED len(a)=33 len(v)=513 same  f64  vs numpy 2.74e-16
+PASS convolve  SWAPPED len(a)=33 len(v)=513 same  c128 vs numpy 3.58e-16
+PASS correlate SWAPPED len(a)=33 len(v)=513 same  c128 vs numpy 3.57e-16
+PASS convolve  SWAPPED len(a)=33 len(v)=513 valid f64  vs numpy 2.50e-16
+PASS correlate SWAPPED len(a)=33 len(v)=513 valid f64  vs numpy 3.08e-16
+PASS convolve  SWAPPED len(a)=33 len(v)=513 valid c128 vs numpy 5.36e-16
+PASS correlate SWAPPED len(a)=33 len(v)=513 valid c128 vs numpy 6.65e-16
+PASS convolve  n=   1000 m= 1025 full  f64  path=1 vs numpy 1.77e-15  err/exact: fc64 1.30e-16 numpy 1.40e-16  ratio 0.93
+PASS convolve  n=   1000 m= 1025 full  f64  path=2 vs numpy 1.94e-15  err/exact: fc64 2.06e-16 numpy 2.06e-16  ratio 1.00
+PASS convolve  n=   1000 m= 1025 full  f64  path=4 vs numpy 5.34e-16  err/exact: fc64 2.13e-16 numpy 2.13e-16  ratio 1.00
+PASS convolve  n=   1000 m= 1025 full  f64  path=5 vs numpy 4.30e-16  err/exact: fc64 1.38e-16 numpy 1.82e-16  ratio 0.76
+PASS correlate n=   1000 m= 1025 full  f64  path=1 vs numpy 2.32e-15  err/exact: fc64 1.79e-16 numpy 1.31e-16  ratio 1.37
+PASS correlate n=   1000 m= 1025 full  f64  path=2 vs numpy 1.62e-15  err/exact: fc64 1.67e-16 numpy 1.25e-16  ratio 1.33
+PASS correlate n=   1000 m= 1025 full  f64  path=4 vs numpy 5.88e-16  err/exact: fc64 1.87e-16 numpy 1.87e-16  ratio 1.00
+PASS correlate n=   1000 m= 1025 full  f64  path=5 vs numpy 4.98e-16  err/exact: fc64 1.03e-16 numpy 1.03e-16  ratio 1.00
+PASS convolve  n=   1000 m= 1025 full  c128 path=1 vs numpy 2.35e-15  err/exact: fc64 1.89e-16 numpy 1.32e-16  ratio 1.44
+PASS correlate n=   1000 m= 1025 full  c128 path=1 vs numpy 2.31e-15  err/exact: fc64 1.74e-16 numpy 1.05e-16  ratio 1.66
+PASS convolve  n=   1000 m= 1025 same  f64  path=1 vs numpy 1.63e-15  err/exact: fc64 1.29e-16 numpy 4.45e-17  ratio 2.89
+PASS convolve  n=   1000 m= 1025 same  f64  path=2 vs numpy 1.71e-15  err/exact: fc64 1.72e-16 numpy 4.65e-17  ratio 3.70
+PASS convolve  n=   1000 m= 1025 same  f64  path=4 vs numpy 4.83e-16  err/exact: fc64 5.17e-17 numpy 5.17e-17  ratio 1.00
+PASS convolve  n=   1000 m= 1025 same  f64  path=5 vs numpy 4.75e-16  err/exact: fc64 6.02e-17 numpy 4.20e-17  ratio 1.43
+PASS correlate n=   1000 m= 1025 same  f64  path=1 vs numpy 1.74e-15  err/exact: fc64 1.69e-16 numpy 4.45e-17  ratio 3.80
+PASS correlate n=   1000 m= 1025 same  f64  path=2 vs numpy 1.71e-15  err/exact: fc64 2.80e-16 numpy 4.58e-17  ratio 6.10
+PASS correlate n=   1000 m= 1025 same  f64  path=4 vs numpy 4.64e-16  err/exact: fc64 4.11e-17 numpy 5.48e-17  ratio 0.75
+PASS correlate n=   1000 m= 1025 same  f64  path=5 vs numpy 4.44e-16  err/exact: fc64 4.91e-17 numpy 4.72e-17  ratio 1.04
+PASS convolve  n=   1000 m= 1025 same  c128 path=1 vs numpy 1.91e-15  err/exact: fc64 1.63e-16 numpy 4.99e-17  ratio 3.25
+PASS correlate n=   1000 m= 1025 same  c128 path=1 vs numpy 2.37e-15  err/exact: fc64 1.58e-16 numpy 3.97e-17  ratio 3.99
+PASS convolve  n=   1000 m= 1025 valid f64  path=1 vs numpy 7.36e-16  err/exact: fc64 4.95e-17 numpy 1.34e-17  ratio 3.68
+PASS convolve  n=   1000 m= 1025 valid f64  path=2 vs numpy 1.46e-15  err/exact: fc64 1.45e-16 numpy 1.44e-17  ratio 10.04
+PASS convolve  n=   1000 m= 1025 valid f64  path=4 vs numpy 3.95e-16  err/exact: fc64 2.89e-17 numpy 1.78e-17  ratio 1.63
+PASS convolve  n=   1000 m= 1025 valid f64  path=5 vs numpy 3.55e-16  err/exact: fc64 2.80e-17 numpy 2.12e-17  ratio 1.32
+PASS correlate n=   1000 m= 1025 valid f64  path=1 vs numpy 1.59e-15  err/exact: fc64 1.54e-16 numpy 1.40e-17  ratio 11.00
+PASS correlate n=   1000 m= 1025 valid f64  path=2 vs numpy 1.45e-15  err/exact: fc64 1.44e-16 numpy 1.45e-17  ratio 9.89
+PASS correlate n=   1000 m= 1025 valid f64  path=4 vs numpy 5.35e-16  err/exact: fc64 3.61e-17 numpy 1.44e-17  ratio 2.50
+PASS correlate n=   1000 m= 1025 valid f64  path=5 vs numpy 2.61e-16  err/exact: fc64 3.09e-17 numpy 1.37e-17  ratio 2.26
+PASS convolve  n=   1000 m= 1025 valid c128 path=1 vs numpy 2.76e-15  err/exact: fc64 1.45e-16 numpy 3.33e-17  ratio 4.35
+PASS correlate n=   1000 m= 1025 valid c128 path=1 vs numpy 1.95e-15  err/exact: fc64 1.06e-16 numpy 4.22e-17  ratio 2.51
+PASS convolve  n=   4096 m=   64 full  f64  path=1 vs numpy 4.78e-16  err/exact: fc64 1.78e-16 numpy 1.65e-16  ratio 1.08
+PASS convolve  n=   4096 m=   64 full  f64  path=2 vs numpy 7.06e-16  err/exact: fc64 1.57e-16 numpy 1.50e-16  ratio 1.04
+PASS convolve  n=   4096 m=   64 full  f64  path=4 vs numpy 5.47e-16  err/exact: fc64 1.19e-16 numpy 1.20e-16  ratio 1.00
+PASS convolve  n=   4096 m=   64 full  f64  path=5 vs numpy 6.36e-16  err/exact: fc64 2.88e-16 numpy 1.24e-16  ratio 2.33
+PASS correlate n=   4096 m=   64 full  f64  path=1 vs numpy 4.20e-16  err/exact: fc64 1.97e-16 numpy 1.95e-16  ratio 1.01
+PASS correlate n=   4096 m=   64 full  f64  path=2 vs numpy 5.64e-16  err/exact: fc64 2.70e-16 numpy 1.87e-16  ratio 1.44
+PASS correlate n=   4096 m=   64 full  f64  path=4 vs numpy 4.47e-16  err/exact: fc64 2.04e-16 numpy 1.48e-16  ratio 1.38
+PASS correlate n=   4096 m=   64 full  f64  path=5 vs numpy 4.16e-16  err/exact: fc64 1.64e-16 numpy 1.64e-16  ratio 1.00
+PASS convolve  n=   4096 m=   64 full  c128 path=1 vs numpy 1.02e-15  err/exact: fc64 1.48e-16 numpy 1.97e-16  ratio 0.75
+PASS correlate n=   4096 m=   64 full  c128 path=1 vs numpy 7.78e-16  err/exact: fc64 2.56e-16 numpy 1.26e-16  ratio 2.04
+PASS convolve  n=   4096 m=   64 same  f64  path=1 vs numpy 4.48e-16  err/exact: fc64 2.30e-16 numpy 6.65e-17  ratio 3.46
+PASS convolve  n=   4096 m=   64 same  f64  path=2 vs numpy 6.49e-16  err/exact: fc64 1.13e-16 numpy 8.57e-17  ratio 1.32
+PASS convolve  n=   4096 m=   64 same  f64  path=4 vs numpy 7.20e-16  err/exact: fc64 1.83e-16 numpy 7.84e-17  ratio 2.33
+PASS convolve  n=   4096 m=   64 same  f64  path=5 vs numpy 5.85e-16  err/exact: fc64 1.77e-16 numpy 8.82e-17  ratio 2.01
+PASS correlate n=   4096 m=   64 same  f64  path=1 vs numpy 4.78e-16  err/exact: fc64 1.74e-16 numpy 1.01e-16  ratio 1.72
+PASS correlate n=   4096 m=   64 same  f64  path=2 vs numpy 6.08e-16  err/exact: fc64 1.12e-16 numpy 1.08e-16  ratio 1.03
+PASS correlate n=   4096 m=   64 same  f64  path=4 vs numpy 5.75e-16  err/exact: fc64 1.67e-16 numpy 9.68e-17  ratio 1.73
+PASS correlate n=   4096 m=   64 same  f64  path=5 vs numpy 3.32e-16  err/exact: fc64 1.68e-16 numpy 8.29e-17  ratio 2.03
+PASS convolve  n=   4096 m=   64 same  c128 path=1 vs numpy 8.42e-16  err/exact: fc64 1.36e-16 numpy 5.32e-17  ratio 2.56
+PASS correlate n=   4096 m=   64 same  c128 path=1 vs numpy 6.90e-16  err/exact: fc64 1.94e-16 numpy 6.41e-17  ratio 3.02
+PASS convolve  n=   4096 m=   64 valid f64  path=1 vs numpy 5.64e-16  err/exact: fc64 1.57e-16 numpy 7.17e-17  ratio 2.20
+PASS convolve  n=   4096 m=   64 valid f64  path=2 vs numpy 6.17e-16  err/exact: fc64 3.01e-16 numpy 7.61e-17  ratio 3.96
+PASS convolve  n=   4096 m=   64 valid f64  path=4 vs numpy 4.93e-16  err/exact: fc64 2.11e-16 numpy 1.14e-16  ratio 1.86
+PASS convolve  n=   4096 m=   64 valid f64  path=5 vs numpy 5.49e-16  err/exact: fc64 1.76e-16 numpy 7.07e-17  ratio 2.49
+PASS correlate n=   4096 m=   64 valid f64  path=1 vs numpy 4.35e-16  err/exact: fc64 1.88e-16 numpy 8.19e-17  ratio 2.29
+PASS correlate n=   4096 m=   64 valid f64  path=2 vs numpy 4.56e-16  err/exact: fc64 1.71e-16 numpy 8.48e-17  ratio 2.02
+PASS correlate n=   4096 m=   64 valid f64  path=4 vs numpy 5.36e-16  err/exact: fc64 1.20e-16 numpy 8.95e-17  ratio 1.34
+PASS correlate n=   4096 m=   64 valid f64  path=5 vs numpy 4.48e-16  err/exact: fc64 1.15e-16 numpy 6.46e-17  ratio 1.78
+PASS convolve  n=   4096 m=   64 valid c128 path=1 vs numpy 6.99e-16  err/exact: fc64 1.96e-16 numpy 5.83e-17  ratio 3.37
+PASS correlate n=   4096 m=   64 valid c128 path=1 vs numpy 6.44e-16  err/exact: fc64 2.10e-16 numpy 9.79e-17  ratio 2.15
+PASS convolve  SWAPPED len(a)=64 len(v)=4096 full  f64  vs numpy 4.28e-16
+PASS correlate SWAPPED len(a)=64 len(v)=4096 full  f64  vs numpy 5.51e-16
+PASS convolve  SWAPPED len(a)=64 len(v)=4096 full  c128 vs numpy 1.05e-15
+PASS correlate SWAPPED len(a)=64 len(v)=4096 full  c128 vs numpy 6.43e-16
+PASS convolve  SWAPPED len(a)=64 len(v)=4096 same  f64  vs numpy 4.31e-16
+PASS correlate SWAPPED len(a)=64 len(v)=4096 same  f64  vs numpy 4.63e-16
+PASS convolve  SWAPPED len(a)=64 len(v)=4096 same  c128 vs numpy 6.76e-16
+PASS correlate SWAPPED len(a)=64 len(v)=4096 same  c128 vs numpy 7.86e-16
+PASS convolve  SWAPPED len(a)=64 len(v)=4096 valid f64  vs numpy 5.34e-16
+PASS correlate SWAPPED len(a)=64 len(v)=4096 valid f64  vs numpy 6.08e-16
+PASS convolve  SWAPPED len(a)=64 len(v)=4096 valid c128 vs numpy 6.84e-16
+PASS correlate SWAPPED len(a)=64 len(v)=4096 valid c128 vs numpy 7.38e-16
+PASS convolve  n=   5000 m=   33 full  f64  path=1 vs numpy 3.67e-16  err/exact: fc64 2.00e-16 numpy 2.00e-16  ratio 1.00
+PASS convolve  n=   5000 m=   33 full  f64  path=2 vs numpy 5.34e-16  err/exact: fc64 1.82e-16 numpy 1.26e-16  ratio 1.45
+PASS convolve  n=   5000 m=   33 full  f64  path=4 vs numpy 4.63e-16  err/exact: fc64 1.71e-16 numpy 1.00e-16  ratio 1.70
+PASS convolve  n=   5000 m=   33 full  f64  path=5 vs numpy 3.76e-16  err/exact: fc64 1.51e-16 numpy 2.05e-16  ratio 0.74
+PASS correlate n=   5000 m=   33 full  f64  path=1 vs numpy 4.04e-16  err/exact: fc64 1.94e-16 numpy 1.77e-16  ratio 1.10
+PASS correlate n=   5000 m=   33 full  f64  path=2 vs numpy 3.85e-16  err/exact: fc64 2.57e-16 numpy 1.41e-16  ratio 1.82
+PASS correlate n=   5000 m=   33 full  f64  path=4 vs numpy 5.81e-16  err/exact: fc64 2.23e-16 numpy 1.78e-16  ratio 1.25
+PASS correlate n=   5000 m=   33 full  f64  path=5 vs numpy 5.11e-16  err/exact: fc64 2.21e-16 numpy 2.10e-16  ratio 1.05
+PASS convolve  n=   5000 m=   33 full  c128 path=1 vs numpy 5.84e-16  err/exact: fc64 1.94e-16 numpy 8.87e-17  ratio 2.19
+PASS correlate n=   5000 m=   33 full  c128 path=1 vs numpy 6.53e-16  err/exact: fc64 2.00e-16 numpy 1.03e-16  ratio 1.94
+PASS convolve  n=   5000 m=   33 same  f64  path=1 vs numpy 4.97e-16  err/exact: fc64 2.13e-16 numpy 1.30e-16  ratio 1.64
+PASS convolve  n=   5000 m=   33 same  f64  path=2 vs numpy 5.98e-16  err/exact: fc64 2.29e-16 numpy 1.21e-16  ratio 1.89
+PASS convolve  n=   5000 m=   33 same  f64  path=4 vs numpy 4.89e-16  err/exact: fc64 1.47e-16 numpy 1.28e-16  ratio 1.15
+PASS convolve  n=   5000 m=   33 same  f64  path=5 vs numpy 4.63e-16  err/exact: fc64 2.09e-16 numpy 1.31e-16  ratio 1.60
+PASS correlate n=   5000 m=   33 same  f64  path=1 vs numpy 2.39e-16  err/exact: fc64 1.04e-16 numpy 9.50e-17  ratio 1.09
+PASS correlate n=   5000 m=   33 same  f64  path=2 vs numpy 4.01e-16  err/exact: fc64 3.19e-16 numpy 1.24e-16  ratio 2.57
+PASS correlate n=   5000 m=   33 same  f64  path=4 vs numpy 4.68e-16  err/exact: fc64 1.84e-16 numpy 1.08e-16  ratio 1.71
+PASS correlate n=   5000 m=   33 same  f64  path=5 vs numpy 3.99e-16  err/exact: fc64 1.42e-16 numpy 1.19e-16  ratio 1.19
+PASS convolve  n=   5000 m=   33 same  c128 path=1 vs numpy 6.61e-16  err/exact: fc64 2.37e-16 numpy 8.14e-17  ratio 2.91
+PASS correlate n=   5000 m=   33 same  c128 path=1 vs numpy 4.19e-16  err/exact: fc64 1.66e-16 numpy 9.27e-17  ratio 1.79
+PASS convolve  n=   5000 m=   33 valid f64  path=1 vs numpy 4.59e-16  err/exact: fc64 2.37e-16 numpy 8.40e-17  ratio 2.83
+PASS convolve  n=   5000 m=   33 valid f64  path=2 vs numpy 3.91e-16  err/exact: fc64 2.44e-16 numpy 1.22e-16  ratio 2.00
+PASS convolve  n=   5000 m=   33 valid f64  path=4 vs numpy 3.91e-16  err/exact: fc64 2.47e-16 numpy 1.02e-16  ratio 2.41
+PASS convolve  n=   5000 m=   33 valid f64  path=5 vs numpy 3.86e-16  err/exact: fc64 2.08e-16 numpy 8.67e-17  ratio 2.39
+PASS correlate n=   5000 m=   33 valid f64  path=1 vs numpy 3.49e-16  err/exact: fc64 1.55e-16 numpy 1.05e-16  ratio 1.48
+PASS correlate n=   5000 m=   33 valid f64  path=2 vs numpy 3.73e-16  err/exact: fc64 2.06e-16 numpy 8.06e-17  ratio 2.55
+PASS correlate n=   5000 m=   33 valid f64  path=4 vs numpy 3.07e-16  err/exact: fc64 2.80e-16 numpy 8.27e-17  ratio 3.38
+PASS correlate n=   5000 m=   33 valid f64  path=5 vs numpy 3.59e-16  err/exact: fc64 2.35e-16 numpy 6.51e-17  ratio 3.60
+PASS convolve  n=   5000 m=   33 valid c128 path=1 vs numpy 5.64e-16  err/exact: fc64 1.88e-16 numpy 9.13e-17  ratio 2.06
+PASS correlate n=   5000 m=   33 valid c128 path=1 vs numpy 7.39e-16  err/exact: fc64 2.08e-16 numpy 1.07e-16  ratio 1.95
+PASS convolve  SWAPPED len(a)=33 len(v)=5000 full  f64  vs numpy 3.55e-16
+PASS correlate SWAPPED len(a)=33 len(v)=5000 full  f64  vs numpy 4.41e-16
+PASS convolve  SWAPPED len(a)=33 len(v)=5000 full  c128 vs numpy 4.93e-16
+PASS correlate SWAPPED len(a)=33 len(v)=5000 full  c128 vs numpy 5.81e-16
+PASS convolve  SWAPPED len(a)=33 len(v)=5000 same  f64  vs numpy 3.34e-16
+PASS correlate SWAPPED len(a)=33 len(v)=5000 same  f64  vs numpy 3.58e-16
+PASS convolve  SWAPPED len(a)=33 len(v)=5000 same  c128 vs numpy 4.87e-16
+PASS correlate SWAPPED len(a)=33 len(v)=5000 same  c128 vs numpy 5.14e-16
+PASS convolve  SWAPPED len(a)=33 len(v)=5000 valid f64  vs numpy 3.54e-16
+PASS correlate SWAPPED len(a)=33 len(v)=5000 valid f64  vs numpy 3.94e-16
+PASS convolve  SWAPPED len(a)=33 len(v)=5000 valid c128 vs numpy 5.07e-16
+PASS correlate SWAPPED len(a)=33 len(v)=5000 valid c128 vs numpy 5.60e-16
+PASS convolve  n=  10007 m=  128 full  f64  path=1 vs numpy 6.14e-16  err/exact: fc64 1.26e-16 numpy 8.78e-17  ratio 1.43
+PASS convolve  n=  10007 m=  128 full  f64  path=2 vs numpy 8.10e-16  err/exact: fc64 1.48e-16 numpy 1.31e-16  ratio 1.13
+PASS convolve  n=  10007 m=  128 full  f64  path=4 vs numpy 4.56e-16  err/exact: fc64 1.25e-16 numpy 1.80e-16  ratio 0.70
+PASS convolve  n=  10007 m=  128 full  f64  path=5 vs numpy 4.08e-16  err/exact: fc64 2.04e-16 numpy 2.04e-16  ratio 1.00
+PASS correlate n=  10007 m=  128 full  f64  path=1 vs numpy 1.09e-15  err/exact: fc64 1.76e-16 numpy 1.36e-16  ratio 1.29
+PASS correlate n=  10007 m=  128 full  f64  path=2 vs numpy 7.37e-16  err/exact: fc64 1.83e-16 numpy 6.64e-17  ratio 2.75
+PASS correlate n=  10007 m=  128 full  f64  path=4 vs numpy 4.60e-16  err/exact: fc64 1.40e-16 numpy 1.40e-16  ratio 1.00
+PASS correlate n=  10007 m=  128 full  f64  path=5 vs numpy 4.91e-16  err/exact: fc64 1.53e-16 numpy 1.28e-16  ratio 1.19
+PASS convolve  n=  10007 m=  128 full  c128 path=1 vs numpy 8.11e-16  err/exact: fc64 1.62e-16 numpy 1.84e-16  ratio 0.88
+PASS correlate n=  10007 m=  128 full  c128 path=1 vs numpy 1.04e-15  err/exact: fc64 1.59e-16 numpy 1.18e-16  ratio 1.35
+PASS convolve  n=  10007 m=  128 same  f64  path=1 vs numpy 9.31e-16  err/exact: fc64 1.24e-16 numpy 6.39e-17  ratio 1.95
+PASS convolve  n=  10007 m=  128 same  f64  path=2 vs numpy 1.02e-15  err/exact: fc64 2.19e-16 numpy 6.04e-17  ratio 3.63
+PASS convolve  n=  10007 m=  128 same  f64  path=4 vs numpy 4.92e-16  err/exact: fc64 1.32e-16 numpy 5.75e-17  ratio 2.29
+PASS convolve  n=  10007 m=  128 same  f64  path=5 vs numpy 4.63e-16  err/exact: fc64 1.30e-16 numpy 5.83e-17  ratio 2.24
+PASS correlate n=  10007 m=  128 same  f64  path=1 vs numpy 5.56e-16  err/exact: fc64 1.85e-16 numpy 9.92e-17  ratio 1.86
+PASS correlate n=  10007 m=  128 same  f64  path=2 vs numpy 9.86e-16  err/exact: fc64 1.66e-16 numpy 6.21e-17  ratio 2.67
+PASS correlate n=  10007 m=  128 same  f64  path=4 vs numpy 4.71e-16  err/exact: fc64 1.45e-16 numpy 9.20e-17  ratio 1.58
+PASS correlate n=  10007 m=  128 same  f64  path=5 vs numpy 4.47e-16  err/exact: fc64 1.36e-16 numpy 7.63e-17  ratio 1.79
+PASS convolve  n=  10007 m=  128 same  c128 path=1 vs numpy 9.71e-16  err/exact: fc64 1.62e-16 numpy 6.65e-17  ratio 2.44
+PASS correlate n=  10007 m=  128 same  c128 path=1 vs numpy 1.08e-15  err/exact: fc64 1.48e-16 numpy 5.05e-17  ratio 2.94
+PASS convolve  n=  10007 m=  128 valid f64  path=1 vs numpy 8.22e-16  err/exact: fc64 1.61e-16 numpy 5.36e-17  ratio 3.00
+PASS convolve  n=  10007 m=  128 valid f64  path=2 vs numpy 7.94e-16  err/exact: fc64 3.60e-16 numpy 6.40e-17  ratio 5.62
+PASS convolve  n=  10007 m=  128 valid f64  path=4 vs numpy 4.44e-16  err/exact: fc64 8.99e-17 numpy 6.24e-17  ratio 1.44
+PASS convolve  n=  10007 m=  128 valid f64  path=5 vs numpy 3.47e-16  err/exact: fc64 1.12e-16 numpy 4.75e-17  ratio 2.36
+PASS correlate n=  10007 m=  128 valid f64  path=1 vs numpy 7.68e-16  err/exact: fc64 2.02e-16 numpy 5.68e-17  ratio 3.55
+PASS correlate n=  10007 m=  128 valid f64  path=2 vs numpy 7.98e-16  err/exact: fc64 1.92e-16 numpy 6.10e-17  ratio 3.15
+PASS correlate n=  10007 m=  128 valid f64  path=4 vs numpy 5.83e-16  err/exact: fc64 1.33e-16 numpy 8.54e-17  ratio 1.56
+PASS correlate n=  10007 m=  128 valid f64  path=5 vs numpy 7.38e-16  err/exact: fc64 1.35e-16 numpy 5.62e-17  ratio 2.41
+PASS convolve  n=  10007 m=  128 valid c128 path=1 vs numpy 1.04e-15  err/exact: fc64 1.67e-16 numpy 5.51e-17  ratio 3.02
+PASS correlate n=  10007 m=  128 valid c128 path=1 vs numpy 9.57e-16  err/exact: fc64 1.77e-16 numpy 5.04e-17  ratio 3.52
+PASS convolve  SWAPPED len(a)=128 len(v)=10007 full  f64  vs numpy 6.90e-16
+PASS correlate SWAPPED len(a)=128 len(v)=10007 full  f64  vs numpy 8.48e-16
+PASS convolve  SWAPPED len(a)=128 len(v)=10007 full  c128 vs numpy 1.02e-15
+PASS correlate SWAPPED len(a)=128 len(v)=10007 full  c128 vs numpy 9.64e-16
+PASS convolve  SWAPPED len(a)=128 len(v)=10007 same  f64  vs numpy 7.85e-16
+PASS correlate SWAPPED len(a)=128 len(v)=10007 same  f64  vs numpy 7.05e-16
+PASS convolve  SWAPPED len(a)=128 len(v)=10007 same  c128 vs numpy 1.56e-15
+PASS correlate SWAPPED len(a)=128 len(v)=10007 same  c128 vs numpy 1.06e-15
+PASS convolve  SWAPPED len(a)=128 len(v)=10007 valid f64  vs numpy 1.03e-15
+PASS correlate SWAPPED len(a)=128 len(v)=10007 valid f64  vs numpy 8.38e-16
+PASS convolve  SWAPPED len(a)=128 len(v)=10007 valid c128 vs numpy 9.87e-16
+PASS correlate SWAPPED len(a)=128 len(v)=10007 valid c128 vs numpy 1.20e-15
+PASS convolve  n=  20000 m=  257 full  f64  path=1 vs numpy 1.37e-15  err/exact: fc64 1.66e-16 numpy 1.60e-16  ratio 1.03
+PASS convolve  n=  20000 m=  257 full  f64  path=2 vs numpy 9.25e-16  err/exact: fc64 1.21e-16 numpy 1.27e-16  ratio 0.95
+PASS convolve  n=  20000 m=  257 full  f64  path=4 vs numpy 4.18e-16  err/exact: fc64 1.54e-16 numpy 1.17e-16  ratio 1.32
+PASS convolve  n=  20000 m=  257 full  f64  path=5 vs numpy 4.88e-16  err/exact: fc64 1.20e-16 numpy 1.82e-16  ratio 0.66
+PASS correlate n=  20000 m=  257 full  f64  path=1 vs numpy 1.04e-15  err/exact: fc64 1.81e-16 numpy 1.43e-16  ratio 1.27
+PASS correlate n=  20000 m=  257 full  f64  path=2 vs numpy 9.02e-16  err/exact: fc64 2.03e-16 numpy 1.18e-16  ratio 1.72
+PASS correlate n=  20000 m=  257 full  f64  path=4 vs numpy 4.91e-16  err/exact: fc64 1.47e-16 numpy 1.57e-16  ratio 0.94
+PASS correlate n=  20000 m=  257 full  f64  path=5 vs numpy 3.89e-16  err/exact: fc64 1.64e-16 numpy 1.64e-16  ratio 1.00
+PASS convolve  n=  20000 m=  257 full  c128 path=1 vs numpy 1.57e-15  err/exact: fc64 1.80e-16 numpy 1.28e-16  ratio 1.41
+PASS correlate n=  20000 m=  257 full  c128 path=1 vs numpy 1.67e-15  err/exact: fc64 1.63e-16 numpy 1.63e-16  ratio 1.00
+PASS convolve  n=  20000 m=  257 same  f64  path=1 vs numpy 1.12e-15  err/exact: fc64 1.98e-16 numpy 7.94e-17  ratio 2.49
+PASS convolve  n=  20000 m=  257 same  f64  path=2 vs numpy 1.08e-15  err/exact: fc64 2.45e-16 numpy 5.33e-17  ratio 4.59
+PASS convolve  n=  20000 m=  257 same  f64  path=4 vs numpy 4.22e-16  err/exact: fc64 1.19e-16 numpy 8.49e-17  ratio 1.41
+PASS convolve  n=  20000 m=  257 same  f64  path=5 vs numpy 3.91e-16  err/exact: fc64 1.36e-16 numpy 5.48e-17  ratio 2.49
+PASS correlate n=  20000 m=  257 same  f64  path=1 vs numpy 1.06e-15  err/exact: fc64 2.29e-16 numpy 4.44e-17  ratio 5.16
+PASS correlate n=  20000 m=  257 same  f64  path=2 vs numpy 1.37e-15  err/exact: fc64 1.87e-16 numpy 5.60e-17  ratio 3.34
+PASS correlate n=  20000 m=  257 same  f64  path=4 vs numpy 3.87e-16  err/exact: fc64 8.96e-17 numpy 5.83e-17  ratio 1.54
+PASS correlate n=  20000 m=  257 same  f64  path=5 vs numpy 4.20e-16  err/exact: fc64 8.40e-17 numpy 5.43e-17  ratio 1.55
+PASS convolve  n=  20000 m=  257 same  c128 path=1 vs numpy 1.57e-15  err/exact: fc64 1.41e-16 numpy 4.94e-17  ratio 2.86
+PASS correlate n=  20000 m=  257 same  c128 path=1 vs numpy 1.56e-15  err/exact: fc64 1.43e-16 numpy 6.33e-17  ratio 2.26
+PASS convolve  n=  20000 m=  257 valid f64  path=1 vs numpy 1.05e-15  err/exact: fc64 2.12e-16 numpy 5.12e-17  ratio 4.14
+PASS convolve  n=  20000 m=  257 valid f64  path=2 vs numpy 1.50e-15  err/exact: fc64 1.44e-16 numpy 5.52e-17  ratio 2.60
+PASS convolve  n=  20000 m=  257 valid f64  path=4 vs numpy 5.08e-16  err/exact: fc64 5.86e-17 numpy 4.84e-17  ratio 1.21
+PASS convolve  n=  20000 m=  257 valid f64  path=5 vs numpy 5.16e-16  err/exact: fc64 7.63e-17 numpy 5.13e-17  ratio 1.49
+PASS correlate n=  20000 m=  257 valid f64  path=1 vs numpy 1.05e-15  err/exact: fc64 1.67e-16 numpy 5.95e-17  ratio 2.80
+PASS correlate n=  20000 m=  257 valid f64  path=2 vs numpy 1.37e-15  err/exact: fc64 1.99e-16 numpy 5.97e-17  ratio 3.33
+PASS correlate n=  20000 m=  257 valid f64  path=4 vs numpy 4.10e-16  err/exact: fc64 7.58e-17 numpy 5.54e-17  ratio 1.37
+PASS correlate n=  20000 m=  257 valid f64  path=5 vs numpy 4.42e-16  err/exact: fc64 5.53e-17 numpy 5.42e-17  ratio 1.02
+PASS convolve  n=  20000 m=  257 valid c128 path=1 vs numpy 1.70e-15  err/exact: fc64 2.60e-16 numpy 5.07e-17  ratio 5.13
+PASS correlate n=  20000 m=  257 valid c128 path=1 vs numpy 1.84e-15  err/exact: fc64 1.58e-16 numpy 5.30e-17  ratio 2.99
+PASS convolve  SWAPPED len(a)=257 len(v)=20000 full  f64  vs numpy 9.02e-16
+PASS correlate SWAPPED len(a)=257 len(v)=20000 full  f64  vs numpy 1.21e-15
+PASS convolve  SWAPPED len(a)=257 len(v)=20000 full  c128 vs numpy 1.82e-15
+PASS correlate SWAPPED len(a)=257 len(v)=20000 full  c128 vs numpy 1.57e-15
+PASS convolve  SWAPPED len(a)=257 len(v)=20000 same  f64  vs numpy 8.85e-16
+PASS correlate SWAPPED len(a)=257 len(v)=20000 same  f64  vs numpy 1.13e-15
+PASS convolve  SWAPPED len(a)=257 len(v)=20000 same  c128 vs numpy 1.97e-15
+PASS correlate SWAPPED len(a)=257 len(v)=20000 same  c128 vs numpy 1.65e-15
+PASS convolve  SWAPPED len(a)=257 len(v)=20000 valid f64  vs numpy 8.52e-16
+PASS correlate SWAPPED len(a)=257 len(v)=20000 valid f64  vs numpy 1.01e-15
+PASS convolve  SWAPPED len(a)=257 len(v)=20000 valid c128 vs numpy 1.69e-15
+PASS correlate SWAPPED len(a)=257 len(v)=20000 valid c128 vs numpy 1.47e-15
+PASS convolve  n=  65536 m= 1025 full  f64  path=1 vs numpy 1.82e-15  err/exact: fc64 1.31e-16 numpy 1.43e-16  ratio 0.92
+PASS convolve  n=  65536 m= 1025 full  f64  path=4 vs numpy 3.62e-16  err/exact: fc64 1.98e-16 numpy 1.28e-16  ratio 1.55
+PASS convolve  n=  65536 m= 1025 full  f64  path=5 vs numpy 4.46e-16  err/exact: fc64 1.66e-16 numpy 1.33e-16  ratio 1.25
+PASS correlate n=  65536 m= 1025 full  f64  path=1 vs numpy 2.08e-15  err/exact: fc64 1.62e-16 numpy 1.62e-16  ratio 1.00
+PASS correlate n=  65536 m= 1025 full  f64  path=4 vs numpy 4.61e-16  err/exact: fc64 2.03e-16 numpy 1.01e-16  ratio 2.01
+PASS correlate n=  65536 m= 1025 full  f64  path=5 vs numpy 4.02e-16  err/exact: fc64 1.48e-16 numpy 2.15e-16  ratio 0.69
+PASS convolve  n=  65536 m= 1025 full  c128 path=1 vs numpy 3.39e-15  err/exact: fc64 2.33e-16 numpy 1.25e-16  ratio 1.87
+PASS correlate n=  65536 m= 1025 full  c128 path=1 vs numpy 3.19e-15  err/exact: fc64 1.53e-16 numpy 1.35e-16  ratio 1.14
+PASS convolve  n=  65536 m= 1025 same  f64  path=1 vs numpy 2.14e-15  err/exact: fc64 2.35e-16 numpy 5.25e-17  ratio 4.48
+PASS convolve  n=  65536 m= 1025 same  f64  path=4 vs numpy 4.38e-16  err/exact: fc64 4.06e-17 numpy 4.10e-17  ratio 0.99
+PASS convolve  n=  65536 m= 1025 same  f64  path=5 vs numpy 4.75e-16  err/exact: fc64 3.65e-17 numpy 7.17e-17  ratio 0.51
+PASS correlate n=  65536 m= 1025 same  f64  path=1 vs numpy 2.36e-15  err/exact: fc64 1.66e-16 numpy 4.16e-17  ratio 4.00
+PASS correlate n=  65536 m= 1025 same  f64  path=4 vs numpy 4.06e-16  err/exact: fc64 4.18e-17 numpy 4.26e-17  ratio 0.98
+PASS correlate n=  65536 m= 1025 same  f64  path=5 vs numpy 4.42e-16  err/exact: fc64 5.48e-17 numpy 4.41e-17  ratio 1.24
+PASS convolve  n=  65536 m= 1025 same  c128 path=1 vs numpy 3.24e-15  err/exact: fc64 1.14e-16 numpy 4.38e-17  ratio 2.61
+PASS correlate n=  65536 m= 1025 same  c128 path=1 vs numpy 3.49e-15  err/exact: fc64 1.61e-16 numpy 5.43e-17  ratio 2.97
+PASS convolve  n=  65536 m= 1025 valid f64  path=1 vs numpy 2.17e-15  err/exact: fc64 1.38e-16 numpy 1.40e-17  ratio 9.81
+PASS convolve  n=  65536 m= 1025 valid f64  path=4 vs numpy 4.76e-16  err/exact: fc64 3.40e-17 numpy 1.64e-17  ratio 2.08
+PASS convolve  n=  65536 m= 1025 valid f64  path=5 vs numpy 3.63e-16  err/exact: fc64 5.71e-17 numpy 2.32e-17  ratio 2.46
+PASS correlate n=  65536 m= 1025 valid f64  path=1 vs numpy 2.16e-15  err/exact: fc64 2.84e-16 numpy 2.73e-17  ratio 10.42
+PASS correlate n=  65536 m= 1025 valid f64  path=4 vs numpy 4.66e-16  err/exact: fc64 4.24e-17 numpy 1.96e-17  ratio 2.16
+PASS correlate n=  65536 m= 1025 valid f64  path=5 vs numpy 4.50e-16  err/exact: fc64 3.54e-17 numpy 2.04e-17  ratio 1.73
+PASS convolve  n=  65536 m= 1025 valid c128 path=1 vs numpy 3.60e-15  err/exact: fc64 1.63e-16 numpy 4.20e-17  ratio 3.89
+PASS correlate n=  65536 m= 1025 valid c128 path=1 vs numpy 3.03e-15  err/exact: fc64 2.19e-16 numpy 4.04e-17  ratio 5.42
+PASS convolve  n=  12345 m= 1024 full  f64  path=1 vs numpy 1.71e-15  err/exact: fc64 1.74e-16 numpy 1.61e-16  ratio 1.08
+PASS convolve  n=  12345 m= 1024 full  f64  path=2 vs numpy 1.79e-15  err/exact: fc64 1.86e-16 numpy 9.14e-17  ratio 2.03
+PASS convolve  n=  12345 m= 1024 full  f64  path=4 vs numpy 3.73e-16  err/exact: fc64 1.42e-16 numpy 9.11e-17  ratio 1.56
+PASS convolve  n=  12345 m= 1024 full  f64  path=5 vs numpy 3.69e-16  err/exact: fc64 1.85e-16 numpy 1.77e-16  ratio 1.04
+PASS correlate n=  12345 m= 1024 full  f64  path=1 vs numpy 1.99e-15  err/exact: fc64 2.31e-16 numpy 1.53e-16  ratio 1.51
+PASS correlate n=  12345 m= 1024 full  f64  path=2 vs numpy 2.29e-15  err/exact: fc64 1.91e-16 numpy 1.88e-16  ratio 1.01
+PASS correlate n=  12345 m= 1024 full  f64  path=4 vs numpy 4.11e-16  err/exact: fc64 1.34e-16 numpy 1.89e-16  ratio 0.71
+PASS correlate n=  12345 m= 1024 full  f64  path=5 vs numpy 4.45e-16  err/exact: fc64 1.58e-16 numpy 1.21e-16  ratio 1.30
+PASS convolve  n=  12345 m= 1024 full  c128 path=1 vs numpy 3.30e-15  err/exact: fc64 2.07e-16 numpy 1.31e-16  ratio 1.58
+PASS correlate n=  12345 m= 1024 full  c128 path=1 vs numpy 2.57e-15  err/exact: fc64 2.71e-16 numpy 1.39e-16  ratio 1.95
+PASS convolve  n=  12345 m= 1024 same  f64  path=1 vs numpy 1.97e-15  err/exact: fc64 3.09e-16 numpy 4.21e-17  ratio 7.34
+PASS convolve  n=  12345 m= 1024 same  f64  path=2 vs numpy 2.47e-15  err/exact: fc64 1.47e-16 numpy 5.54e-17  ratio 2.64
+PASS convolve  n=  12345 m= 1024 same  f64  path=4 vs numpy 4.34e-16  err/exact: fc64 5.76e-17 numpy 4.18e-17  ratio 1.38
+PASS convolve  n=  12345 m= 1024 same  f64  path=5 vs numpy 4.13e-16  err/exact: fc64 5.41e-17 numpy 3.96e-17  ratio 1.36
+PASS correlate n=  12345 m= 1024 same  f64  path=1 vs numpy 2.67e-15  err/exact: fc64 1.90e-16 numpy 3.71e-17  ratio 5.11
+PASS correlate n=  12345 m= 1024 same  f64  path=2 vs numpy 1.75e-15  err/exact: fc64 1.90e-16 numpy 4.68e-17  ratio 4.05
+PASS correlate n=  12345 m= 1024 same  f64  path=4 vs numpy 3.34e-16  err/exact: fc64 4.25e-17 numpy 7.01e-17  ratio 0.61
+PASS correlate n=  12345 m= 1024 same  f64  path=5 vs numpy 4.19e-16  err/exact: fc64 4.94e-17 numpy 2.96e-17  ratio 1.67
+PASS convolve  n=  12345 m= 1024 same  c128 path=1 vs numpy 3.22e-15  err/exact: fc64 2.50e-16 numpy 5.42e-17  ratio 4.61
+PASS correlate n=  12345 m= 1024 same  c128 path=1 vs numpy 2.23e-15  err/exact: fc64 1.67e-16 numpy 3.93e-17  ratio 4.26
+PASS convolve  n=  12345 m= 1024 valid f64  path=1 vs numpy 2.11e-15  err/exact: fc64 1.40e-16 numpy 1.78e-17  ratio 7.86
+PASS convolve  n=  12345 m= 1024 valid f64  path=2 vs numpy 2.54e-15  err/exact: fc64 3.01e-16 numpy 2.80e-17  ratio 10.76
+PASS convolve  n=  12345 m= 1024 valid f64  path=4 vs numpy 4.40e-16  err/exact: fc64 4.04e-17 numpy 2.71e-17  ratio 1.49
+PASS convolve  n=  12345 m= 1024 valid f64  path=5 vs numpy 4.10e-16  err/exact: fc64 4.17e-17 numpy 1.41e-17  ratio 2.96
+PASS correlate n=  12345 m= 1024 valid f64  path=1 vs numpy 2.22e-15  err/exact: fc64 1.27e-16 numpy 2.16e-17  ratio 5.86
+PASS correlate n=  12345 m= 1024 valid f64  path=2 vs numpy 1.97e-15  err/exact: fc64 1.79e-16 numpy 2.10e-17  ratio 8.49
+PASS correlate n=  12345 m= 1024 valid f64  path=4 vs numpy 3.93e-16  err/exact: fc64 2.80e-17 numpy 2.36e-17  ratio 1.19
+PASS correlate n=  12345 m= 1024 valid f64  path=5 vs numpy 4.47e-16  err/exact: fc64 4.66e-17 numpy 2.78e-17  ratio 1.68
+PASS convolve  n=  12345 m= 1024 valid c128 path=1 vs numpy 2.69e-15  err/exact: fc64 2.19e-16 numpy 5.22e-17  ratio 4.21
+PASS correlate n=  12345 m= 1024 valid c128 path=1 vs numpy 2.53e-15  err/exact: fc64 1.29e-16 numpy 4.36e-17  ratio 2.97
+PASS convolve  SWAPPED len(a)=1024 len(v)=12345 full  f64  vs numpy 2.11e-15
+PASS correlate SWAPPED len(a)=1024 len(v)=12345 full  f64  vs numpy 1.58e-15
+PASS convolve  SWAPPED len(a)=1024 len(v)=12345 full  c128 vs numpy 3.23e-15
+PASS correlate SWAPPED len(a)=1024 len(v)=12345 full  c128 vs numpy 3.60e-15
+PASS convolve  SWAPPED len(a)=1024 len(v)=12345 same  f64  vs numpy 2.17e-15
+PASS correlate SWAPPED len(a)=1024 len(v)=12345 same  f64  vs numpy 1.97e-15
+PASS convolve  SWAPPED len(a)=1024 len(v)=12345 same  c128 vs numpy 3.12e-15
+PASS correlate SWAPPED len(a)=1024 len(v)=12345 same  c128 vs numpy 3.43e-15
+PASS convolve  SWAPPED len(a)=1024 len(v)=12345 valid f64  vs numpy 1.78e-15
+PASS correlate SWAPPED len(a)=1024 len(v)=12345 valid f64  vs numpy 1.76e-15
+PASS convolve  SWAPPED len(a)=1024 len(v)=12345 valid c128 vs numpy 2.30e-15
+PASS correlate SWAPPED len(a)=1024 len(v)=12345 valid c128 vs numpy 3.47e-15
+PASS convolve  n=    999 m= 1000 full  f64  path=1 vs numpy 1.34e-15  err/exact: fc64 2.05e-16 numpy 4.69e-17  ratio 4.38
+PASS convolve  n=    999 m= 1000 full  f64  path=2 vs numpy 1.78e-15  err/exact: fc64 1.70e-16 numpy 1.60e-16  ratio 1.06
+PASS convolve  n=    999 m= 1000 full  f64  path=4 vs numpy 5.27e-16  err/exact: fc64 2.22e-16 numpy 2.22e-16  ratio 1.00
+PASS convolve  n=    999 m= 1000 full  f64  path=5 vs numpy 3.40e-16  err/exact: fc64 1.17e-16 numpy 1.17e-16  ratio 1.00
+PASS correlate n=    999 m= 1000 full  f64  path=1 vs numpy 1.71e-15  err/exact: fc64 1.77e-16 numpy 1.50e-16  ratio 1.18
+PASS correlate n=    999 m= 1000 full  f64  path=2 vs numpy 1.71e-15  err/exact: fc64 1.77e-16 numpy 1.28e-16  ratio 1.38
+PASS correlate n=    999 m= 1000 full  f64  path=4 vs numpy 5.01e-16  err/exact: fc64 1.09e-16 numpy 1.64e-16  ratio 0.66
+PASS correlate n=    999 m= 1000 full  f64  path=5 vs numpy 5.99e-16  err/exact: fc64 1.77e-16 numpy 1.77e-16  ratio 1.00
+PASS convolve  n=    999 m= 1000 full  c128 path=1 vs numpy 1.96e-15  err/exact: fc64 2.12e-16 numpy 1.55e-16  ratio 1.37
+PASS correlate n=    999 m= 1000 full  c128 path=1 vs numpy 2.82e-15  err/exact: fc64 1.61e-16 numpy 1.46e-16  ratio 1.11
+PASS convolve  n=    999 m= 1000 same  f64  path=1 vs numpy 1.81e-15  err/exact: fc64 1.93e-16 numpy 4.05e-17  ratio 4.78
+PASS convolve  n=    999 m= 1000 same  f64  path=2 vs numpy 1.37e-15  err/exact: fc64 9.70e-17 numpy 5.45e-17  ratio 1.78
+PASS convolve  n=    999 m= 1000 same  f64  path=4 vs numpy 4.04e-16  err/exact: fc64 5.37e-17 numpy 4.64e-17  ratio 1.16
+PASS convolve  n=    999 m= 1000 same  f64  path=5 vs numpy 4.76e-16  err/exact: fc64 5.10e-17 numpy 4.31e-17  ratio 1.18
+PASS correlate n=    999 m= 1000 same  f64  path=1 vs numpy 1.51e-15  err/exact: fc64 1.44e-16 numpy 4.71e-17  ratio 3.06
+PASS correlate n=    999 m= 1000 same  f64  path=2 vs numpy 1.50e-15  err/exact: fc64 2.47e-16 numpy 4.79e-17  ratio 5.15
+PASS correlate n=    999 m= 1000 same  f64  path=4 vs numpy 5.15e-16  err/exact: fc64 8.06e-17 numpy 4.06e-17  ratio 1.99
+PASS correlate n=    999 m= 1000 same  f64  path=5 vs numpy 4.08e-16  err/exact: fc64 4.63e-17 numpy 5.14e-17  ratio 0.90
+PASS convolve  n=    999 m= 1000 same  c128 path=1 vs numpy 1.75e-15  err/exact: fc64 1.51e-16 numpy 4.86e-17  ratio 3.10
+PASS correlate n=    999 m= 1000 same  c128 path=1 vs numpy 2.34e-15  err/exact: fc64 2.15e-16 numpy 4.79e-17  ratio 4.50
+PASS convolve  n=    999 m= 1000 valid f64  path=1 vs numpy 2.47e-15  err/exact: fc64 4.60e-17 numpy 3.54e-18  ratio 13.00
+PASS convolve  n=    999 m= 1000 valid f64  path=2 vs numpy 1.34e-15  err/exact: fc64 7.16e-17 numpy 7.26e-18  ratio 9.86
+PASS convolve  n=    999 m= 1000 valid f64  path=4 vs numpy 3.43e-16  err/exact: fc64 1.41e-17 numpy 7.07e-18  ratio 2.00
+PASS convolve  n=    999 m= 1000 valid f64  path=5 vs numpy 2.04e-16  err/exact: fc64 2.15e-17 numpy 1.44e-17  ratio 1.50
+PASS correlate n=    999 m= 1000 valid f64  path=1 vs numpy 2.21e-15  err/exact: fc64 2.94e-16 numpy 7.40e-18  ratio 39.78
+PASS correlate n=    999 m= 1000 valid f64  path=2 vs numpy 4.57e-15  err/exact: fc64 4.85e-17 numpy 5.20e-18  ratio 9.33
+PASS correlate n=    999 m= 1000 valid f64  path=4 vs numpy 4.07e-16  err/exact: fc64 2.22e-17 numpy 3.62e-18  ratio 6.15
+PASS correlate n=    999 m= 1000 valid f64  path=5 vs numpy 5.87e-16  err/exact: fc64 7.26e-18 numpy 1.41e-17  ratio 0.51
+PASS convolve  n=    999 m= 1000 valid c128 path=1 vs numpy 1.90e-15  err/exact: fc64 7.57e-17 numpy 1.82e-17  ratio 4.15
+PASS correlate n=    999 m= 1000 valid c128 path=1 vs numpy 4.18e-15  err/exact: fc64 1.22e-16 numpy 3.81e-17  ratio 3.21
+PASS convolve  n= 100000 m=    3 full  f64  path=1 vs numpy 3.56e-17  err/exact: fc64 1.89e-16 numpy 1.89e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 full  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 2.07e-16 numpy 2.07e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 full  f64  path=4 vs numpy 2.46e-17  err/exact: fc64 2.05e-16 numpy 2.05e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 full  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 2.11e-16 numpy 2.11e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 full  f64  path=1 vs numpy 0.00e+00  err/exact: fc64 1.96e-16 numpy 1.96e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 full  f64  path=2 vs numpy 9.56e-17  err/exact: fc64 1.98e-16 numpy 1.98e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 full  f64  path=4 vs numpy 6.37e-18  err/exact: fc64 2.07e-16 numpy 2.07e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 full  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 1.94e-16 numpy 1.94e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 full  c128 path=1 vs numpy 3.33e-16  err/exact: fc64 1.56e-16 numpy 1.66e-16  ratio 0.94
+PASS correlate n= 100000 m=    3 full  c128 path=1 vs numpy 2.24e-16  err/exact: fc64 1.88e-16 numpy 1.87e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 same  f64  path=1 vs numpy 3.12e-17  err/exact: fc64 2.01e-16 numpy 2.01e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 same  f64  path=2 vs numpy 0.00e+00  err/exact: fc64 1.97e-16 numpy 1.97e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 same  f64  path=4 vs numpy 4.39e-17  err/exact: fc64 2.06e-16 numpy 2.06e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 same  f64  path=5 vs numpy 0.00e+00  err/exact: fc64 2.00e-16 numpy 2.00e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 same  f64  path=1 vs numpy 5.76e-17  err/exact: fc64 2.09e-16 numpy 2.09e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 same  f64  path=2 vs numpy 1.38e-18  err/exact: fc64 2.15e-16 numpy 2.15e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 same  f64  path=4 vs numpy 0.00e+00  err/exact: fc64 1.99e-16 numpy 1.99e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 same  f64  path=5 vs numpy 1.31e-17  err/exact: fc64 2.11e-16 numpy 2.11e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 same  c128 path=1 vs numpy 2.98e-16  err/exact: fc64 1.91e-16 numpy 1.63e-16  ratio 1.18
+PASS correlate n= 100000 m=    3 same  c128 path=1 vs numpy 2.65e-16  err/exact: fc64 1.85e-16 numpy 1.85e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 1.76e-16 numpy 1.76e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 1.87e-16 numpy 1.87e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 2.20e-16 numpy 2.20e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 1.79e-16 numpy 1.79e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 2.11e-16 numpy 2.11e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 2.10e-16 numpy 2.10e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 2.21e-16 numpy 2.21e-16  ratio 1.00
+PASS correlate n= 100000 m=    3 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 2.02e-16 numpy 2.02e-16  ratio 1.00
+PASS convolve  n= 100000 m=    3 valid c128 path=1 vs numpy 2.25e-16  err/exact: fc64 1.77e-16 numpy 1.91e-16  ratio 0.93
+PASS correlate n= 100000 m=    3 valid c128 path=1 vs numpy 3.17e-16  err/exact: fc64 1.88e-16 numpy 1.52e-16  ratio 1.24
+PASS convolve  SWAPPED len(a)=3 len(v)=100000 full  f64  vs numpy 1.88e-17
+PASS correlate SWAPPED len(a)=3 len(v)=100000 full  f64  vs numpy 7.87e-18
+PASS convolve  SWAPPED len(a)=3 len(v)=100000 full  c128 vs numpy 2.94e-16
+PASS correlate SWAPPED len(a)=3 len(v)=100000 full  c128 vs numpy 2.78e-16
+PASS convolve  SWAPPED len(a)=3 len(v)=100000 same  f64  vs numpy 2.77e-17
+PASS correlate SWAPPED len(a)=3 len(v)=100000 same  f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=3 len(v)=100000 same  c128 vs numpy 2.94e-16
+PASS correlate SWAPPED len(a)=3 len(v)=100000 same  c128 vs numpy 2.09e-16
+PASS convolve  SWAPPED len(a)=3 len(v)=100000 valid f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=3 len(v)=100000 valid f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=3 len(v)=100000 valid c128 vs numpy 2.69e-16
+PASS correlate SWAPPED len(a)=3 len(v)=100000 valid c128 vs numpy 2.19e-16
+PASS convolve  n= 100000 m=    9 full  f64  path=1 vs numpy 1.05e-16  err/exact: fc64 1.60e-16 numpy 1.73e-16  ratio 0.92
+PASS convolve  n= 100000 m=    9 full  f64  path=2 vs numpy 5.01e-17  err/exact: fc64 1.34e-16 numpy 2.00e-16  ratio 0.67
+PASS convolve  n= 100000 m=    9 full  f64  path=4 vs numpy 3.61e-17  err/exact: fc64 1.59e-16 numpy 1.59e-16  ratio 1.00
+PASS convolve  n= 100000 m=    9 full  f64  path=5 vs numpy 2.56e-17  err/exact: fc64 2.00e-16 numpy 2.00e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 full  f64  path=1 vs numpy 3.68e-17  err/exact: fc64 2.03e-16 numpy 2.03e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 full  f64  path=2 vs numpy 6.36e-17  err/exact: fc64 1.59e-16 numpy 1.59e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 full  f64  path=4 vs numpy 5.60e-17  err/exact: fc64 2.22e-16 numpy 2.22e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 full  f64  path=5 vs numpy 5.74e-17  err/exact: fc64 1.95e-16 numpy 1.95e-16  ratio 1.00
+PASS convolve  n= 100000 m=    9 full  c128 path=1 vs numpy 4.41e-16  err/exact: fc64 1.91e-16 numpy 1.62e-16  ratio 1.18
+PASS correlate n= 100000 m=    9 full  c128 path=1 vs numpy 3.22e-16  err/exact: fc64 1.65e-16 numpy 1.71e-16  ratio 0.97
+PASS convolve  n= 100000 m=    9 same  f64  path=1 vs numpy 1.04e-16  err/exact: fc64 2.06e-16 numpy 1.30e-16  ratio 1.59
+PASS convolve  n= 100000 m=    9 same  f64  path=2 vs numpy 5.07e-17  err/exact: fc64 1.81e-16 numpy 1.81e-16  ratio 1.00
+PASS convolve  n= 100000 m=    9 same  f64  path=4 vs numpy 5.34e-17  err/exact: fc64 2.54e-16 numpy 2.54e-16  ratio 1.00
+PASS convolve  n= 100000 m=    9 same  f64  path=5 vs numpy 4.00e-17  err/exact: fc64 1.32e-16 numpy 1.32e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 same  f64  path=1 vs numpy 1.19e-16  err/exact: fc64 1.90e-16 numpy 1.90e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 same  f64  path=2 vs numpy 7.44e-17  err/exact: fc64 2.35e-16 numpy 2.35e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 same  f64  path=4 vs numpy 6.49e-17  err/exact: fc64 1.92e-16 numpy 1.92e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 same  f64  path=5 vs numpy 7.71e-17  err/exact: fc64 1.60e-16 numpy 1.60e-16  ratio 1.00
+PASS convolve  n= 100000 m=    9 same  c128 path=1 vs numpy 4.25e-16  err/exact: fc64 1.92e-16 numpy 1.34e-16  ratio 1.43
+PASS correlate n= 100000 m=    9 same  c128 path=1 vs numpy 3.70e-16  err/exact: fc64 1.75e-16 numpy 1.17e-16  ratio 1.49
+PASS convolve  n= 100000 m=    9 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 3.03e-16 numpy 3.03e-16  ratio 1.00
+PASS convolve  n= 100000 m=    9 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 1.36e-16 numpy 1.36e-16  ratio 1.00
+PASS convolve  n= 100000 m=    9 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 2.00e-16 numpy 2.00e-16  ratio 1.00
+PASS convolve  n= 100000 m=    9 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 1.51e-16 numpy 1.51e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 valid f64  path=1 vs numpy 0.00e+00  err/exact: fc64 1.52e-16 numpy 1.52e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 valid f64  path=2 vs numpy 0.00e+00  err/exact: fc64 1.65e-16 numpy 1.65e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 valid f64  path=4 vs numpy 0.00e+00  err/exact: fc64 2.41e-16 numpy 2.41e-16  ratio 1.00
+PASS correlate n= 100000 m=    9 valid f64  path=5 vs numpy 0.00e+00  err/exact: fc64 1.78e-16 numpy 1.78e-16  ratio 1.00
+PASS convolve  n= 100000 m=    9 valid c128 path=1 vs numpy 3.74e-16  err/exact: fc64 1.62e-16 numpy 1.39e-16  ratio 1.16
+PASS correlate n= 100000 m=    9 valid c128 path=1 vs numpy 3.00e-16  err/exact: fc64 1.53e-16 numpy 1.19e-16  ratio 1.29
+PASS convolve  SWAPPED len(a)=9 len(v)=100000 full  f64  vs numpy 6.91e-17
+PASS correlate SWAPPED len(a)=9 len(v)=100000 full  f64  vs numpy 7.60e-17
+PASS convolve  SWAPPED len(a)=9 len(v)=100000 full  c128 vs numpy 3.85e-16
+PASS correlate SWAPPED len(a)=9 len(v)=100000 full  c128 vs numpy 3.43e-16
+PASS convolve  SWAPPED len(a)=9 len(v)=100000 same  f64  vs numpy 3.13e-17
+PASS correlate SWAPPED len(a)=9 len(v)=100000 same  f64  vs numpy 3.40e-17
+PASS convolve  SWAPPED len(a)=9 len(v)=100000 same  c128 vs numpy 2.94e-16
+PASS correlate SWAPPED len(a)=9 len(v)=100000 same  c128 vs numpy 4.25e-16
+PASS convolve  SWAPPED len(a)=9 len(v)=100000 valid f64  vs numpy 0.00e+00
+PASS correlate SWAPPED len(a)=9 len(v)=100000 valid f64  vs numpy 0.00e+00
+PASS convolve  SWAPPED len(a)=9 len(v)=100000 valid c128 vs numpy 4.57e-16
+PASS correlate SWAPPED len(a)=9 len(v)=100000 valid c128 vs numpy 4.74e-16
+PASS convolve  n= 100000 m=  513 full  f64  path=1 vs numpy 1.65e-15  err/exact: fc64 1.28e-16 numpy 1.26e-16  ratio 1.02
+PASS convolve  n= 100000 m=  513 full  f64  path=4 vs numpy 6.20e-16  err/exact: fc64 1.05e-16 numpy 1.37e-16  ratio 0.77
+PASS convolve  n= 100000 m=  513 full  f64  path=5 vs numpy 4.08e-16  err/exact: fc64 1.83e-16 numpy 1.83e-16  ratio 1.00
+PASS correlate n= 100000 m=  513 full  f64  path=1 vs numpy 1.59e-15  err/exact: fc64 2.91e-16 numpy 1.56e-16  ratio 1.87
+PASS correlate n= 100000 m=  513 full  f64  path=4 vs numpy 5.24e-16  err/exact: fc64 2.16e-16 numpy 1.81e-16  ratio 1.20
+PASS correlate n= 100000 m=  513 full  f64  path=5 vs numpy 5.48e-16  err/exact: fc64 1.07e-16 numpy 6.81e-17  ratio 1.57
+PASS convolve  n= 100000 m=  513 full  c128 path=1 vs numpy 2.40e-15  err/exact: fc64 1.72e-16 numpy 1.45e-16  ratio 1.19
+PASS correlate n= 100000 m=  513 full  c128 path=1 vs numpy 2.81e-15  err/exact: fc64 2.62e-16 numpy 1.10e-16  ratio 2.38
+PASS convolve  n= 100000 m=  513 same  f64  path=1 vs numpy 1.61e-15  err/exact: fc64 2.50e-16 numpy 5.95e-17  ratio 4.20
+PASS convolve  n= 100000 m=  513 same  f64  path=4 vs numpy 4.04e-16  err/exact: fc64 7.22e-17 numpy 5.55e-17  ratio 1.30
+PASS convolve  n= 100000 m=  513 same  f64  path=5 vs numpy 5.61e-16  err/exact: fc64 5.61e-17 numpy 5.53e-17  ratio 1.01
+PASS correlate n= 100000 m=  513 same  f64  path=1 vs numpy 1.54e-15  err/exact: fc64 1.51e-16 numpy 5.64e-17  ratio 2.68
+PASS correlate n= 100000 m=  513 same  f64  path=4 vs numpy 4.15e-16  err/exact: fc64 6.05e-17 numpy 5.68e-17  ratio 1.07
+PASS correlate n= 100000 m=  513 same  f64  path=5 vs numpy 5.59e-16  err/exact: fc64 7.63e-17 numpy 4.97e-17  ratio 1.54
+PASS convolve  n= 100000 m=  513 same  c128 path=1 vs numpy 2.46e-15  err/exact: fc64 1.71e-16 numpy 6.12e-17  ratio 2.79
+PASS correlate n= 100000 m=  513 same  c128 path=1 vs numpy 1.87e-15  err/exact: fc64 1.44e-16 numpy 7.74e-17  ratio 1.86
+PASS convolve  n= 100000 m=  513 valid f64  path=1 vs numpy 1.61e-15  err/exact: fc64 1.83e-16 numpy 5.92e-17  ratio 3.10
+PASS convolve  n= 100000 m=  513 valid f64  path=4 vs numpy 5.71e-16  err/exact: fc64 4.13e-17 numpy 5.35e-17  ratio 0.77
+PASS convolve  n= 100000 m=  513 valid f64  path=5 vs numpy 5.32e-16  err/exact: fc64 4.11e-17 numpy 5.78e-17  ratio 0.71
+PASS correlate n= 100000 m=  513 valid f64  path=1 vs numpy 1.61e-15  err/exact: fc64 2.15e-16 numpy 5.49e-17  ratio 3.92
+PASS correlate n= 100000 m=  513 valid f64  path=4 vs numpy 5.19e-16  err/exact: fc64 7.09e-17 numpy 4.19e-17  ratio 1.69
+PASS correlate n= 100000 m=  513 valid f64  path=5 vs numpy 5.56e-16  err/exact: fc64 4.08e-17 numpy 5.73e-17  ratio 0.71
+PASS convolve  n= 100000 m=  513 valid c128 path=1 vs numpy 2.37e-15  err/exact: fc64 1.61e-16 numpy 5.31e-17  ratio 3.03
+PASS correlate n= 100000 m=  513 valid c128 path=1 vs numpy 2.41e-15  err/exact: fc64 1.72e-16 numpy 5.42e-17  ratio 3.17
+PASS convolve  n= 300001 m=  129 full  f64  path=1 vs numpy 8.82e-16  err/exact: fc64 1.81e-16 numpy 1.21e-16  ratio 1.49
+PASS convolve  n= 300001 m=  129 full  f64  path=4 vs numpy 5.77e-16  err/exact: fc64 1.11e-16 numpy 1.86e-16  ratio 0.60
+PASS convolve  n= 300001 m=  129 full  f64  path=5 vs numpy 5.02e-16  err/exact: fc64 1.38e-16 numpy 1.66e-16  ratio 0.83
+PASS correlate n= 300001 m=  129 full  f64  path=1 vs numpy 7.48e-16  err/exact: fc64 2.93e-16 numpy 1.13e-16  ratio 2.58
+PASS correlate n= 300001 m=  129 full  f64  path=4 vs numpy 4.63e-16  err/exact: fc64 1.96e-16 numpy 1.96e-16  ratio 1.00
+PASS correlate n= 300001 m=  129 full  f64  path=5 vs numpy 4.32e-16  err/exact: fc64 1.13e-16 numpy 1.93e-16  ratio 0.58
+PASS convolve  n= 300001 m=  129 full  c128 path=1 vs numpy 1.41e-15  err/exact: fc64 2.96e-16 numpy 1.54e-16  ratio 1.92
+PASS correlate n= 300001 m=  129 full  c128 path=1 vs numpy 1.28e-15  err/exact: fc64 2.11e-16 numpy 1.86e-16  ratio 1.13
+PASS convolve  n= 300001 m=  129 same  f64  path=1 vs numpy 8.52e-16  err/exact: fc64 2.38e-16 numpy 9.01e-17  ratio 2.64
+PASS convolve  n= 300001 m=  129 same  f64  path=4 vs numpy 5.86e-16  err/exact: fc64 1.38e-16 numpy 1.14e-16  ratio 1.21
+PASS convolve  n= 300001 m=  129 same  f64  path=5 vs numpy 5.40e-16  err/exact: fc64 1.59e-16 numpy 5.28e-17  ratio 3.00
+PASS correlate n= 300001 m=  129 same  f64  path=1 vs numpy 7.98e-16  err/exact: fc64 2.33e-16 numpy 6.71e-17  ratio 3.47
+PASS correlate n= 300001 m=  129 same  f64  path=4 vs numpy 5.32e-16  err/exact: fc64 9.18e-17 numpy 7.30e-17  ratio 1.26
+PASS correlate n= 300001 m=  129 same  f64  path=5 vs numpy 4.45e-16  err/exact: fc64 1.61e-16 numpy 1.25e-16  ratio 1.30
+PASS convolve  n= 300001 m=  129 same  c128 path=1 vs numpy 1.37e-15  err/exact: fc64 1.52e-16 numpy 7.31e-17  ratio 2.08
+PASS correlate n= 300001 m=  129 same  c128 path=1 vs numpy 1.16e-15  err/exact: fc64 1.55e-16 numpy 5.84e-17  ratio 2.65
+PASS convolve  n= 300001 m=  129 valid f64  path=1 vs numpy 7.04e-16  err/exact: fc64 2.19e-16 numpy 5.24e-17  ratio 4.17
+PASS convolve  n= 300001 m=  129 valid f64  path=4 vs numpy 5.11e-16  err/exact: fc64 1.14e-16 numpy 7.31e-17  ratio 1.56
+PASS convolve  n= 300001 m=  129 valid f64  path=5 vs numpy 5.27e-16  err/exact: fc64 1.28e-16 numpy 5.64e-17  ratio 2.27
+PASS correlate n= 300001 m=  129 valid f64  path=1 vs numpy 1.03e-15  err/exact: fc64 2.06e-16 numpy 5.60e-17  ratio 3.69
+PASS correlate n= 300001 m=  129 valid f64  path=4 vs numpy 4.26e-16  err/exact: fc64 1.32e-16 numpy 5.59e-17  ratio 2.37
+PASS correlate n= 300001 m=  129 valid f64  path=5 vs numpy 5.13e-16  err/exact: fc64 1.19e-16 numpy 5.95e-17  ratio 2.00
+PASS convolve  n= 300001 m=  129 valid c128 path=1 vs numpy 1.45e-15  err/exact: fc64 1.40e-16 numpy 5.36e-17  ratio 2.61
+PASS correlate n= 300001 m=  129 valid c128 path=1 vs numpy 1.62e-15  err/exact: fc64 2.12e-16 numpy 6.62e-17  ratio 3.20
+PASS convolve  n=1000000 m=   33 full  f64  path=1 vs numpy 5.17e-16  err/exact: fc64 1.94e-16 numpy 1.43e-16  ratio 1.35
+PASS convolve  n=1000000 m=   33 full  f64  path=4 vs numpy 4.51e-16  err/exact: fc64 1.98e-16 numpy 1.54e-16  ratio 1.29
+PASS convolve  n=1000000 m=   33 full  f64  path=5 vs numpy 4.93e-16  err/exact: fc64 1.94e-16 numpy 1.24e-16  ratio 1.56
+PASS correlate n=1000000 m=   33 full  f64  path=1 vs numpy 6.76e-16  err/exact: fc64 2.44e-16 numpy 1.51e-16  ratio 1.62
+PASS correlate n=1000000 m=   33 full  f64  path=4 vs numpy 4.65e-16  err/exact: fc64 2.08e-16 numpy 1.20e-16  ratio 1.73
+PASS correlate n=1000000 m=   33 full  f64  path=5 vs numpy 5.39e-16  err/exact: fc64 1.51e-16 numpy 2.05e-16  ratio 0.74
+PASS convolve  n=1000000 m=   33 full  c128 path=1 vs numpy 6.74e-16  err/exact: fc64 1.57e-16 numpy 1.71e-16  ratio 0.92
+PASS correlate n=1000000 m=   33 full  c128 path=1 vs numpy 6.53e-16  err/exact: fc64 1.77e-16 numpy 1.56e-16  ratio 1.14
+PASS convolve  n=1000000 m=   33 same  f64  path=1 vs numpy 5.66e-16  err/exact: fc64 1.62e-16 numpy 1.07e-16  ratio 1.51
+PASS convolve  n=1000000 m=   33 same  f64  path=4 vs numpy 4.08e-16  err/exact: fc64 1.80e-16 numpy 1.17e-16  ratio 1.54
+PASS convolve  n=1000000 m=   33 same  f64  path=5 vs numpy 6.02e-16  err/exact: fc64 2.03e-16 numpy 1.01e-16  ratio 2.00
+PASS correlate n=1000000 m=   33 same  f64  path=1 vs numpy 5.29e-16  err/exact: fc64 1.81e-16 numpy 1.18e-16  ratio 1.53
+PASS correlate n=1000000 m=   33 same  f64  path=4 vs numpy 5.78e-16  err/exact: fc64 1.26e-16 numpy 1.08e-16  ratio 1.17
+PASS correlate n=1000000 m=   33 same  f64  path=5 vs numpy 4.79e-16  err/exact: fc64 2.16e-16 numpy 9.58e-17  ratio 2.25
+PASS convolve  n=1000000 m=   33 same  c128 path=1 vs numpy 6.39e-16  err/exact: fc64 1.87e-16 numpy 8.56e-17  ratio 2.19
+PASS correlate n=1000000 m=   33 same  c128 path=1 vs numpy 7.10e-16  err/exact: fc64 1.45e-16 numpy 8.90e-17  ratio 1.63
+PASS convolve  n=1000000 m=   33 valid f64  path=1 vs numpy 5.35e-16  err/exact: fc64 1.52e-16 numpy 1.37e-16  ratio 1.11
+PASS convolve  n=1000000 m=   33 valid f64  path=4 vs numpy 4.75e-16  err/exact: fc64 1.67e-16 numpy 9.51e-17  ratio 1.76
+PASS convolve  n=1000000 m=   33 valid f64  path=5 vs numpy 5.57e-16  err/exact: fc64 1.94e-16 numpy 1.02e-16  ratio 1.90
+PASS correlate n=1000000 m=   33 valid f64  path=1 vs numpy 4.85e-16  err/exact: fc64 1.65e-16 numpy 1.14e-16  ratio 1.44
+PASS correlate n=1000000 m=   33 valid f64  path=4 vs numpy 5.30e-16  err/exact: fc64 1.84e-16 numpy 1.04e-16  ratio 1.76
+PASS correlate n=1000000 m=   33 valid f64  path=5 vs numpy 4.95e-16  err/exact: fc64 2.62e-16 numpy 1.10e-16  ratio 2.38
+PASS convolve  n=1000000 m=   33 valid c128 path=1 vs numpy 7.24e-16  err/exact: fc64 1.36e-16 numpy 6.39e-17  ratio 2.14
+PASS correlate n=1000000 m=   33 valid c128 path=1 vs numpy 7.50e-16  err/exact: fc64 1.50e-16 numpy 8.85e-17  ratio 1.70
+PASS convolve  n= 200000 m= 2049 full  f64  path=1 vs numpy 4.03e-15  err/exact: fc64 1.78e-16 numpy 1.78e-16  ratio 1.00
+PASS convolve  n= 200000 m= 2049 full  f64  path=4 vs numpy 5.09e-16  err/exact: fc64 1.73e-16 numpy 1.73e-16  ratio 1.00
+PASS convolve  n= 200000 m= 2049 full  f64  path=5 vs numpy 4.49e-16  err/exact: fc64 2.18e-16 numpy 1.31e-16  ratio 1.67
+PASS correlate n= 200000 m= 2049 full  f64  path=1 vs numpy 3.50e-15  err/exact: fc64 2.08e-16 numpy 8.79e-17  ratio 2.36
+PASS correlate n= 200000 m= 2049 full  f64  path=4 vs numpy 5.14e-16  err/exact: fc64 1.01e-16 numpy 1.51e-16  ratio 0.67
+PASS correlate n= 200000 m= 2049 full  f64  path=5 vs numpy 5.25e-16  err/exact: fc64 1.61e-16 numpy 1.41e-16  ratio 1.14
+PASS convolve  n= 200000 m= 2049 full  c128 path=1 vs numpy 4.63e-15  err/exact: fc64 1.74e-16 numpy 9.25e-17  ratio 1.88
+PASS correlate n= 200000 m= 2049 full  c128 path=1 vs numpy 4.49e-15  err/exact: fc64 1.81e-16 numpy 1.54e-16  ratio 1.17
+PASS convolve  n= 200000 m= 2049 same  f64  path=1 vs numpy 3.42e-15  err/exact: fc64 2.13e-16 numpy 1.55e-17  ratio 13.74
+PASS convolve  n= 200000 m= 2049 same  f64  path=4 vs numpy 5.45e-16  err/exact: fc64 2.94e-17 numpy 1.39e-17  ratio 2.11
+PASS convolve  n= 200000 m= 2049 same  f64  path=5 vs numpy 5.42e-16  err/exact: fc64 4.95e-17 numpy 1.58e-17  ratio 3.13
+PASS correlate n= 200000 m= 2049 same  f64  path=1 vs numpy 3.50e-15  err/exact: fc64 1.87e-16 numpy 1.76e-17  ratio 10.61
+PASS correlate n= 200000 m= 2049 same  f64  path=4 vs numpy 4.95e-16  err/exact: fc64 3.48e-17 numpy 2.79e-17  ratio 1.25
+PASS correlate n= 200000 m= 2049 same  f64  path=5 vs numpy 5.07e-16  err/exact: fc64 3.47e-17 numpy 1.41e-17  ratio 2.46
+PASS convolve  n= 200000 m= 2049 same  c128 path=1 vs numpy 5.36e-15  err/exact: fc64 2.27e-16 numpy 5.59e-17  ratio 4.07
+PASS correlate n= 200000 m= 2049 same  c128 path=1 vs numpy 4.73e-15  err/exact: fc64 2.08e-16 numpy 5.09e-17  ratio 4.08
+PASS convolve  n= 200000 m= 2049 valid f64  path=1 vs numpy 3.38e-15  err/exact: fc64 1.52e-16 numpy 2.08e-17  ratio 7.31
+PASS convolve  n= 200000 m= 2049 valid f64  path=4 vs numpy 3.81e-16  err/exact: fc64 2.83e-17 numpy 1.45e-17  ratio 1.96
+PASS convolve  n= 200000 m= 2049 valid f64  path=5 vs numpy 5.15e-16  err/exact: fc64 2.78e-17 numpy 1.39e-17  ratio 2.01
+PASS correlate n= 200000 m= 2049 valid f64  path=1 vs numpy 3.17e-15  err/exact: fc64 1.89e-16 numpy 1.39e-17  ratio 13.57
+PASS correlate n= 200000 m= 2049 valid f64  path=4 vs numpy 4.74e-16  err/exact: fc64 2.83e-17 numpy 1.40e-17  ratio 2.02
+PASS correlate n= 200000 m= 2049 valid f64  path=5 vs numpy 5.16e-16  err/exact: fc64 4.08e-17 numpy 2.07e-17  ratio 1.97
+PASS convolve  n= 200000 m= 2049 valid c128 path=1 vs numpy 5.44e-15  err/exact: fc64 1.43e-16 numpy 5.90e-17  ratio 2.43
+PASS correlate n= 200000 m= 2049 valid c128 path=1 vs numpy 3.95e-15  err/exact: fc64 2.01e-16 numpy 4.04e-17  ratio 4.96
+SUMMARY 714 of 714 PASS

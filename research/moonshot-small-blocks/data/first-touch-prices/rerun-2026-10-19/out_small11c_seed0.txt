@@ -1,0 +1,12 @@
+trial 0 F 0.4113 kernel D-block Gram eigenvalues/row [1.    0.002 0.002]
+   missed direction over x = 0..7: [-1.-0.j -0.+0.j -1.-0.j  0.-0.j  1.+0.j  0.-0.j  1.+0.j -0.+0.j]
+   missed direction over x = 0..7: [ 1.   -0.j     0.001-0.j    -0.958+0.006j -0.001+0.j     1.   -0.j
+  0.001-0.j    -0.958+0.006j -0.001+0.j   ]
+trial 1 F 0.2522 kernel D-block Gram eigenvalues/row [0.997 0.997 0.005]
+   missed direction over x = 0..7: [-0.018-0.j  1.   -0.j -0.018-0.j  1.   +0.j  0.018+0.j -1.   +0.j
+  0.018+0.j -1.   +0.j]
+   missed direction over x = 0..7: [ 1.   +0.j  0.018-0.j  1.   -0.j  0.018-0.j -1.   +0.j -0.018+0.j
+ -1.   +0.j -0.018+0.j]
+trial 2 F 0.375 kernel D-block Gram eigenvalues/row [1. 1. 0.]
+   missed direction over x = 0..7: [1.-0.j 0.-0.j 1.-0.j 0.+0.j 1.-0.j 0.-0.j 1.-0.j 0.+0.j]
+   missed direction over x = 0..7: [ 1.-0.j  0.-0.j  1.-0.j  0.+0.j -1.-0.j  0.-0.j -1.-0.j  0.+0.j]

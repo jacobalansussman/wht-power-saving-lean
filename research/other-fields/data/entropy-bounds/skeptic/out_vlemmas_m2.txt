@@ -1,0 +1,8 @@
+(1) m=2: dpg map ok; edge sets equal: True; distances equal: True
+(2) m=2: claim (b) tested on 840 triples (u opposite y, d(w,y) < m; 120 (u,y) pairs): failures 0
+(3) m=2 W=3: 250/300 random layouts two-class stretchable; explicit Lemma W packing fails on 0
+(3) m=2 W=4: 161/300 random layouts two-class stretchable; explicit Lemma W packing fails on 0
+(3) m=2 W=5: 0/300 random layouts two-class stretchable; explicit Lemma W packing fails on 0
+(3) m=2 W=6: 0/300 random layouts two-class stretchable; explicit Lemma W packing fails on 0
+(4,5) m=2: e(D) over 3000 random layouts {0: 2518, 1: 482} (shares 0: 83.93%, 1: 16.07%); Lemma W+ construction checked on 482 with e >= 1: failures 0
+(4b) m=2: hill-climbed 40 layouts, max e(D) = 1; Lemma W+ construction failures 0  (2s)

@@ -1,0 +1,43 @@
+{
+ "T74": {
+  "mass": 4816512,
+  "bill0": 0.9951076320939335,
+  "deficit_frac": 0.004892367906066508,
+  "reff": 3.944766509206073,
+  "a_rank1": 0.0011430884692798895,
+  "a_first_order": 0.001680691436847265,
+  "a": 0.0016796717955048224,
+  "name": "T74 profile (PROFILE.json, PR1424 era)"
+ },
+ "T74_levers": {
+  "idle at 51 (fractional)": 0.001687576593653872,
+  "local mass as rank-8": 0.0027162181115499284,
+  "local mass as rank-16": 0.0038640745586697163,
+  "everything at rank 51": 0.01367516000970753,
+  "centre free (drop 8x rank-8 per call)": 0.004708621849141503,
+  "centre halved (drop 4x rank-8 per call)": 0.0031932595499150613,
+  "2 unpaid coords/family (drop W rank-1)": 0.006458289258288895,
+  "2x families per call, same centre": 0.0031932595499150613,
+  "4x families per call, same centre": 0.00395071945763964
+ },
+ "1042": {
+  "mass": 1041408,
+  "bill0": 0.9951076320939335,
+  "deficit_frac": 0.004892367906066508,
+  "reff": 3.912654692699769,
+  "a_rank1": 0.0011430884692798895,
+  "a_first_order": 0.0016759968778579718,
+  "a": 0.001674989015937711,
+  "name": "#1042 (T16): 144 x local + derived idle"
+ },
+ "1094ceil": {
+  "mass": 1041408.0,
+  "bill0": 0.9951076320939335,
+  "deficit_frac": 0.004892367906066508,
+  "reff": 4.016486171427095,
+  "a_rank1": 0.0011430884692798895,
+  "a_first_order": 0.0016911333667353836,
+  "a": 0.0016900541090886787,
+  "name": "#1094 local + all idle mass at rank 51 (hub ceiling)"
+ }
+}

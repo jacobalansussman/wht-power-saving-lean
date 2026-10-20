@@ -1,0 +1,72 @@
+symlinked 22 entries; real dirs: /content/work/v-c-wht/base/olean/Work/WHTC588Neg /content/work/v-c-wht/base/olean/Work/WHTC588 
+=== START Tue Oct 13 18:45:40 UTC 2026 tree=/content/work/c-wht/lean/complex588 label=base
+git HEAD: 52394849c7ecf3412d39b925d75fc7fdb98994d8  status:
+?? Work/WHTC588/
+?? Work/WHTC588Neg/
+?? comparator/WHTC588-nanoda.json
+?? comparator/WHTC588.json
+?? comparator/WHTC588Neg.json
+LEAN_PATH=/content/work/v-c-wht/base/olean:/content/work/c-wht/lean/complex588/.lake/packages/Cli/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/batteries/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/Qq/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/aesop/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/proofwidgets/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/importGraph/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/plausible/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/packages/mathlib/.lake/build/lib/lean:/content/work/c-wht/lean/complex588/.lake/build/lib/lean
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+62100e5b36d482657d895f45ca9710a407d2f7ae6b89cddc2119a0009bfb31d3  Work/WHTC588/Axioms.lean
+f8141383a3c992c59d94e9ef08bc9df62e3f99a4daf37a69466606dcd365e9a9  Work/WHTC588/Challenge.lean
+e1d6f80254a717b972062f7060641877fa2e0f440961af6a9081d21e55fc8792  Work/WHTC588/Main.lean
+b54c77e36f2a191a7a9fdd7a345eab40c48e710f26285c454d41cecfb685aabf  Work/WHTC588/Solution.lean
+48b37f36164d1599d532e36f5dc014e3ae94420bd2b32d4f62be9023636f90ed  Work/WHTC588Neg/Challenge.lean
+e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  /content/work/ours/Compare.lean
+--- fresh Work/WHTC588/Challenge.olean kept from attempt 1 (same source sha256, compiled Tue Oct 13 18:43:10 UTC 2026), not recompiled
+--- fresh Work/WHTC588Neg/Challenge.olean kept from attempt 1 (same source sha256, compiled Tue Oct 13 18:44:31 UTC 2026), not recompiled
+  (lean procs running at start: 4)
+--- fresh lean -o Work/WHTC588/Main.lean rc=0 wall=38s maxrss_kb=6708032
+'OAI.PowerSaving.WHTC588.wht_main_C588x' depends on axioms: [propext, Classical.choice, Quot.sound]
+  (lean procs running at start: 3)
+--- fresh lean -o Work/WHTC588/Solution.lean rc=0 wall=14s maxrss_kb=6705976
+'OAI.PowerSaving.WHT.wht_main_block_C588x' depends on axioms: [propext, Classical.choice, Quot.sound]
+--- fresh olean sha256 vs the tree's olean (built by c-wht's lake build)
+  WHTC588/Challenge fresh=912909d8f1f6a0b3 tree=ec2a491bba7b0530 DIFFERENT
+  WHTC588Neg/Challenge fresh=0d29a4c175b463e8 tree=b6744b3e6e7d7533 DIFFERENT
+  WHTC588/Main fresh=55727965ca11742e tree=ea3dffc49b55879d DIFFERENT
+  WHTC588/Solution fresh=fed85a6407145043 tree=a14f40dc9170b620 DIFFERENT
+  (lean procs running at start: 2)
+--- axioms (fresh oleans first on LEAN_PATH)
+'OAI.PowerSaving.WHTC588.wht_main_C588x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.WHT.wht_main_block_C588x' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.PowerSaving.WHT.wht_main_block_C588x : ∃ solve W,
+  OAI.PowerSaving.WHT.WHTProgram solve W ∧ OAI.PowerSaving.WHT.WHTTimeBoundsAt (1 - 12331686 / 10 ^ 10) W
+axioms rc=0
+  (lean procs running at start: 2)
+--- Compare.lean pos: Work.WHTC588.Challenge vs Work.WHTC588.Solution OAI.PowerSaving.WHT.wht_main_block_C588x
+challenge module: Work.WHTC588.Challenge   (10745 modules loaded)
+solution module:  Work.WHTC588.Solution   (11084 modules loaded)
+sanity: imported proofs are loaded (Nat.add_comm uses 7 constants, Real.exp_pos uses 85)
+
+=== OAI.PowerSaving.WHT.wht_main_block_C588x ===
+challenge: theorem in Work.WHTC588.Challenge;  solution: theorem in Work.WHTC588.Solution
+OK: statement is the same kernel term in both
+challenge proof uses sorryAx: true
+statement depends on 2035 constants; 107 are declared in the challenge file itself
+OK: every statement dependency is identical in the solution
+solution proof reaches 37496 constants; axioms: #[Classical.choice, Quot.sound, propext]
+OK: only permitted axioms
+
+RESULT: PASS
+compare-pos rc=0 wall=213s maxrss_kb=14841932
+  (lean procs running at start: 2)
+--- Compare.lean neg: Work.WHTC588Neg.Challenge vs Work.WHTC588.Solution OAI.PowerSaving.WHT.wht_main_block_C588x
+challenge module: Work.WHTC588Neg.Challenge   (10745 modules loaded)
+solution module:  Work.WHTC588.Solution   (11084 modules loaded)
+sanity: imported proofs are loaded (Nat.add_comm uses 7 constants, Real.exp_pos uses 85)
+
+=== OAI.PowerSaving.WHT.wht_main_block_C588x ===
+challenge: theorem in Work.WHTC588Neg.Challenge;  solution: theorem in Work.WHTC588.Solution
+FAIL: statement (type) differs between challenge and solution
+challenge proof uses sorryAx: true
+statement depends on 2035 constants; 107 are declared in the challenge file itself
+OK: every statement dependency is identical in the solution
+solution proof reaches 37496 constants; axioms: #[Classical.choice, Quot.sound, propext]
+OK: only permitted axioms
+
+RESULT: FAIL
+compare-neg rc=1 wall=620s maxrss_kb=14329828
+=== END Tue Oct 13 19:05:47 UTC 2026
+EXIT base 0

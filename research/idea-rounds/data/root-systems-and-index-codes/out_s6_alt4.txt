@@ -1,0 +1,12 @@
+alternating nonsingular: 28  invertible non-alternating: 420  rank 2: 140
+alt4 seed 1: W = 4 registers, 15 gates, target lengths [5, 5, 5, 5] (sum 20)
+   start 0: residual 4096 after 122 its
+   start 1: residual 4096 after 63 its
+   start 2: residual 4096 after 57 its
+time 77.6 s
+alternating nonsingular: 28  invertible non-alternating: 420  rank 2: 140
+alt4 seed 2: W = 4 registers, 15 gates, target lengths [5, 5, 5, 5] (sum 20)
+   start 0: residual 6144 after 400 its
+   start 1: residual 4096 after 129 its
+   start 2: residual 4096 after 134 its
+time 160.5 s

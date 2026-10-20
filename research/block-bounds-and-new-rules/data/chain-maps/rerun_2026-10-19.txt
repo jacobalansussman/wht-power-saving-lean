@@ -1,0 +1,140 @@
+Re-run for this revision, 19 October 2026, on an Apple M4 Mac mini (Python 3.9 with numpy 2.0.2 and scipy 1.13.1), from the published files; the output is identical to the original output in this folder
+
+$ python3 -I every_f.py
+exit 0, 365 s
+m = 2: Part A, P D_z^(x)f P^-1 = X^(z x 1) . D_(z e_0)^-1 . CZ^W_z for every f
+  z=1: automata n=16+4; every-f equivalence: (True, 1); brute force f=0..3 vs RHS: True, vs LHS MPO: True
+        control: same identity with D^-1 on EVERY column instead of column 0: (False, 2)
+  z=2: automata n=16+4; every-f equivalence: (True, 1); brute force f=0..3 vs RHS: True, vs LHS MPO: True
+        control: same identity with D^-1 on EVERY column instead of column 0: (False, 2)
+  z=3: automata n=16+4; every-f equivalence: (True, 1); brute force f=0..3 vs RHS: True, vs LHS MPO: True
+        control: same identity with D^-1 on EVERY column instead of column 0: (False, 2)
+Part B: K^(x)f . E_e versus K^(x)f (E_e = row0 ^= row1 << e)
+  e=1: automata n=2+1; result (False, 2)  (expected: first difference at f = 2)
+  e=2: automata n=4+1; result (False, 3)  (expected: first difference at f = 3)
+  e=3: automata n=8+1; result (False, 4)  (expected: first difference at f = 4)
+  e=4: automata n=16+1; result (False, 5)  (expected: first difference at f = 5)
+
+$ python3 -I ram_letters.py
+exit 0, 3 s
+per-entry RAM ops (incl. 1 look + 1 write of the moved value); table ops / 2^k; exhaustive check
+m=2 f=2 r=0 k= 4  row ^= row<<1, all rows                    ops/entry= 22  tables/2^k= 10.312  OK
+m=2 f=2 r=0 k= 4  inverse (prefix XOR, table)                ops/entry= 14  tables/2^k= 12.000  OK
+m=2 f=2 r=0 k= 4  row0 ^= row1<<1                            ops/entry= 17  tables/2^k= 10.312  OK
+m=2 f=2 r=0 k= 4  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 27  tables/2^k= 10.312  OK
+m=2 f=2 r=0 k= 4  its inverse (adjugate + det^-1 table)      ops/entry= 29  tables/2^k= 11.062  OK
+m=2 f=2 r=0 k= 4  carry: +1 across column digits             ops/entry= 47  tables/2^k= 16.562  OK
+m=2 f=2 r=0 k= 4  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k= 16.688  OK
+m=2 f=2 r=0 k= 4  random GL(4,F2) as 4 row letters           ops/entry= 22  tables/2^k= 13.312  OK
+m=2 f=3 r=1 k= 7  row ^= row<<1, all rows                    ops/entry= 22  tables/2^k=  5.414  OK
+m=2 f=3 r=1 k= 7  inverse (prefix XOR, table)                ops/entry= 14  tables/2^k=  5.906  OK
+m=2 f=3 r=1 k= 7  row0 ^= row1<<1                            ops/entry= 17  tables/2^k=  5.414  OK
+m=2 f=3 r=1 k= 7  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 27  tables/2^k=  5.414  OK
+m=2 f=3 r=1 k= 7  its inverse (adjugate + det^-1 table)      ops/entry= 29  tables/2^k=  5.633  OK
+m=2 f=3 r=1 k= 7  carry: +1 across column digits             ops/entry= 47  tables/2^k=  9.398  OK
+m=2 f=3 r=1 k= 7  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k=  9.461  OK
+m=2 f=3 r=1 k= 7  random GL(6,F2) as 4 row letters           ops/entry= 22  tables/2^k=  6.289  OK
+m=2 f=4 r=0 k= 8  row ^= row<<1, all rows                    ops/entry= 22  tables/2^k= 10.957  OK
+m=2 f=4 r=0 k= 8  inverse (prefix XOR, table)                ops/entry= 14  tables/2^k= 11.484  OK
+m=2 f=4 r=0 k= 8  row0 ^= row1<<1                            ops/entry= 17  tables/2^k= 10.957  OK
+m=2 f=4 r=0 k= 8  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 27  tables/2^k= 10.957  OK
+m=2 f=4 r=0 k= 8  its inverse (adjugate + det^-1 table)      ops/entry= 29  tables/2^k= 11.191  OK
+m=2 f=4 r=0 k= 8  carry: +1 across column digits             ops/entry= 47  tables/2^k= 19.902  OK
+m=2 f=4 r=0 k= 8  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k= 19.980  OK
+m=2 f=4 r=0 k= 8  random GL(8,F2) as 8 row letters           ops/entry= 38  tables/2^k= 12.832  OK
+m=2 f=5 r=1 k=11  row ^= row<<1, all rows                    ops/entry= 22  tables/2^k=  5.495  OK
+m=2 f=5 r=1 k=11  inverse (prefix XOR, table)                ops/entry= 14  tables/2^k=  5.631  OK
+m=2 f=5 r=1 k=11  row0 ^= row1<<1                            ops/entry= 17  tables/2^k=  5.495  OK
+m=2 f=5 r=1 k=11  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 27  tables/2^k=  5.495  OK
+m=2 f=5 r=1 k=11  its inverse (adjugate + det^-1 table)      ops/entry= 29  tables/2^k=  5.555  OK
+m=2 f=5 r=1 k=11  carry: +1 across column digits             ops/entry= 47  tables/2^k= 10.226  OK
+m=2 f=5 r=1 k=11  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k= 10.248  OK
+m=2 f=5 r=1 k=11  random GL(10,F2) as 7 row letters          ops/entry= 34  tables/2^k=  5.918  OK
+m=2 f=6 r=0 k=12  row ^= row<<1, all rows                    ops/entry= 22  tables/2^k= 10.997  OK
+m=2 f=6 r=0 k=12  inverse (prefix XOR, table)                ops/entry= 14  tables/2^k= 11.136  OK
+m=2 f=6 r=0 k=12  row0 ^= row1<<1                            ops/entry= 17  tables/2^k= 10.997  OK
+m=2 f=6 r=0 k=12  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 27  tables/2^k= 10.997  OK
+m=2 f=6 r=0 k=12  its inverse (adjugate + det^-1 table)      ops/entry= 29  tables/2^k= 11.059  OK
+m=2 f=6 r=0 k=12  carry: +1 across column digits             ops/entry= 47  tables/2^k= 20.726  OK
+m=2 f=6 r=0 k=12  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k= 20.749  OK
+m=2 f=6 r=0 k=12  random GL(12,F2) as 5 row letters          ops/entry= 26  tables/2^k= 11.305  OK
+m=3 f=2 r=0 k= 6  row ^= row<<1, all rows                    ops/entry= 31  tables/2^k=  2.578  OK
+m=3 f=2 r=0 k= 6  inverse (prefix XOR, table)                ops/entry= 19  tables/2^k=  3.000  OK
+m=3 f=2 r=0 k= 6  row0 ^= row1<<1                            ops/entry= 21  tables/2^k=  2.578  OK
+m=3 f=2 r=0 k= 6  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 31  tables/2^k=  2.578  OK
+m=3 f=2 r=0 k= 6  its inverse (adjugate + det^-1 table)      ops/entry= 33  tables/2^k=  2.766  OK
+m=3 f=2 r=0 k= 6  carry: +1 across column digits             ops/entry= 68  tables/2^k=  4.141  OK
+m=3 f=2 r=0 k= 6  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k=  4.172  OK
+m=3 f=2 r=0 k= 6  random GL(6,F2) as 12 row letters          ops/entry= 55  tables/2^k=  4.828  OK
+m=3 f=3 r=1 k=10  row ^= row<<1, all rows                    ops/entry= 31  tables/2^k=  0.677  OK
+m=3 f=3 r=1 k=10  inverse (prefix XOR, table)                ops/entry= 19  tables/2^k=  0.738  OK
+m=3 f=3 r=1 k=10  row0 ^= row1<<1                            ops/entry= 21  tables/2^k=  0.677  OK
+m=3 f=3 r=1 k=10  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 31  tables/2^k=  0.677  OK
+m=3 f=3 r=1 k=10  its inverse (adjugate + det^-1 table)      ops/entry= 33  tables/2^k=  0.704  OK
+m=3 f=3 r=1 k=10  carry: +1 across column digits             ops/entry= 68  tables/2^k=  1.175  OK
+m=3 f=3 r=1 k=10  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k=  1.183  OK
+m=3 f=3 r=1 k=10  random GL(9,F2) as 10 row letters          ops/entry= 47  tables/2^k=  0.950  OK
+m=3 f=4 r=0 k=12  row ^= row<<1, all rows                    ops/entry= 31  tables/2^k=  0.685  OK
+m=3 f=4 r=0 k=12  inverse (prefix XOR, table)                ops/entry= 19  tables/2^k=  0.718  OK
+m=3 f=4 r=0 k=12  row0 ^= row1<<1                            ops/entry= 21  tables/2^k=  0.685  OK
+m=3 f=4 r=0 k=12  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 31  tables/2^k=  0.685  OK
+m=3 f=4 r=0 k=12  its inverse (adjugate + det^-1 table)      ops/entry= 33  tables/2^k=  0.699  OK
+m=3 f=4 r=0 k=12  carry: +1 across column digits             ops/entry= 68  tables/2^k=  1.244  OK
+m=3 f=4 r=0 k=12  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k=  1.249  OK
+m=3 f=4 r=0 k=12  random GL(12,F2) as 23 row letters         ops/entry= 99  tables/2^k=  1.022  OK
+m=4 f=3 r=0 k=12  row ^= row<<1, all rows                    ops/entry= 40  tables/2^k=  0.169  OK
+m=4 f=3 r=0 k=12  inverse (prefix XOR, table)                ops/entry= 24  tables/2^k=  0.185  OK
+m=4 f=3 r=0 k=12  row0 ^= row1<<1                            ops/entry= 25  tables/2^k=  0.169  OK
+m=4 f=3 r=0 k=12  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 35  tables/2^k=  0.169  OK
+m=4 f=3 r=0 k=12  its inverse (adjugate + det^-1 table)      ops/entry= 37  tables/2^k=  0.176  OK
+m=4 f=3 r=0 k=12  carry: +1 across column digits             ops/entry= 89  tables/2^k=  0.294  OK
+m=4 f=3 r=0 k=12  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k=  0.296  OK
+m=4 f=3 r=0 k=12  random GL(12,F2) as 26 row letters         ops/entry=112  tables/2^k=  0.347  OK
+
+$ python3 -I lines27.py
+exit 0, 5 s
+PASS number of Hg-frames = 27 (got 27)
+PASS meeting graph regular of degree 10
+PASS srg(27,10,1,5): lambda {1}, mu {5}
+PASS L0 = {x = 0} is a frame
+PASS all 15 moves T_v (v != 0) map L0 to an adjacent frame
+PASS K L0 is a frame opposite to L0
+PASS T_v preserves Hg (sampled)
+PASS K preserves Hg
+PASS chi(alpha) preserves Hg and fixes every frame (central)
+PASS E(alpha) preserves Hg and fixes L0
+PASS Phi is an isometry Hg -> Hstd
+PASS Phi is bijective
+PASS 27 Fermat lines
+PASS reductions mod 2 are 27 distinct Hstd-generators
+PASS Phi maps the 27 game frames onto the 27 reduced Fermat lines
+PASS over C: delta(lift U, lift V) = frame distance on all 729 ordered pairs (mismatches 0)
+PASS mod 7 (omega=2): same (mismatches 0)
+PASS mod 13 (omega=3): same (mismatches 0)
+ordered pairs by distance: {0: 27, 1: 270, 2: 432} -> abar_1 = 1, abar_2 = 2: PERFECT family, moves >= 2 W in the alpha game
+ALL CHECKS PASS
+
+$ python3 -I relcheck.py
+exit 0, 1 s
+f=1: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+f=2: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+f=3: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+f=4: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+f=5: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+f=6: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+t=1: entries where theta_t(S) != a + b theta_t(Z): 0 of 2  -> collapse IS a representation of the relation
+t=2: entries where theta_t(S) != a + b theta_t(Z): 1 of 4  -> collapse is NOT a representation of the relation
+t=3: entries where theta_t(S) != a + b theta_t(Z): 4 of 8  -> collapse is NOT a representation of the relation
+t=4: entries where theta_t(S) != a + b theta_t(Z): 10 of 16  -> collapse is NOT a representation of the relation
+t=5: entries where theta_t(S) != a + b theta_t(Z): 20 of 32  -> collapse is NOT a representation of the relation
+
+$ python3 -I e2_counter.py
+exit 0, 0 s
+f=8: k,l symplectic: True; k in Q(r=1, symbol I): True; l in Q(r=1, symbol I): True
+   k*l: deep x deep nonzero entries of M - I for r = 1..3: {1: 36, 2: 16, 3: 4}  (all > 0 => k*l not in Q for any r)
+   k*l: rank(M(kl) - I) = 4  (bounded: the bounded-rank repair of Q keeps symbol I)
+f=12: k,l symplectic: True; k in Q(r=1, symbol I): True; l in Q(r=1, symbol I): True
+   k*l: deep x deep nonzero entries of M - I for r = 1..5: {1: 100, 2: 64, 3: 36, 4: 16, 5: 4}  (all > 0 => k*l not in Q for any r)
+   k*l: rank(M(kl) - I) = 4  (bounded: the bounded-rank repair of Q keeps symbol I)
+COUNTEREXAMPLE TO E2 AS WRITTEN CONFIRMED
+

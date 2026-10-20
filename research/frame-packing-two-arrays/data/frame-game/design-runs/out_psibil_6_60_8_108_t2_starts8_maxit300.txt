@@ -1,0 +1,6 @@
+  design a1=2 a2=3 dup=0 injections=7: min psi residual over scalars 1.414e+00
+  design a1=4 a2=4 dup=0 injections=6: min psi residual over scalars 1.000e+00
+  design a1=1 a2=4 dup=0 injections=6: min psi residual over scalars 1.000e+00
+  design a1=4 a2=4 dup=0 injections=5: min psi residual over scalars 1.000e+00
+  design a1=1 a2=4 dup=0 injections=8: min psi residual over scalars 1.000e+00
+m=6 tlen=2 dup=False: 5 designs passed linearised psi; min residuals [np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.4142)] (314s)

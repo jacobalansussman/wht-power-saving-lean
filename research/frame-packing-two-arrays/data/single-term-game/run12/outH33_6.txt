@@ -1,0 +1,7 @@
+== H33: frames 27, degrees [6], m 3, twists 216, free 8, target orbit 8
+H33 M=1 states=6 max(L1+L2)=1 (I) holds goal no  [0.0s]
+H33 M=2 states=96 max(L1+L2)=2 (I) holds goal no  [0.2s]
+H33 M=3 states=1547 max(L1+L2)=3 (I) holds goal no  [5.3s]
+H33 M=4 states=32302 max(L1+L2)=4 (I) holds goal no  [79.0s]
+H33 M=5 states=814750 max(L1+L2)=5 (I) holds goal no  [1548.8s]
+H33 M=6 successors(no dedup)=79829304 max(L1+L2)=6 (I) holds goal REACHED (1228)  [2885.8s]

@@ -1,0 +1,121 @@
+design.py m=6 trials=300 depth=8 seed=82 dup=False trunk length=2 (target 2 in 10)
+m=6: 300 designs, depth 8, 470s; best ((1, 0), 4, 4, 0, 4)
+   best history (statuses, orphans, total terms): [(['no', 'no'], 2, 14), (['no', 'no'], 5, 19), (['no', 'no'], 5, 19), (['no', 'no'], 20, 30), (['yes', 'no'], 0, 18)]
+   (0, 0, 0, ('cap', 'cap', 'psilin:00')) 5
+   (0, 0, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 2
+   (0, 0, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 2
+   (0, 0, 0, ('no:target row u', 'no:linear syste', 'psilin:00')) 1
+   (0, 0, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 3
+   (0, 1, 0, ('cap', 'cap', 'psilin:00')) 4
+   (0, 1, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 2
+   (0, 1, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 5
+   (0, 2, 0, ('cap', 'cap', 'psilin:00')) 5
+   (0, 2, 0, ('cap', 'cap', 'psilin:01')) 1
+   (0, 2, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 1
+   (0, 2, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 1
+   (0, 2, 0, ('no:target row u', 'no:linear syste', 'psilin:00')) 2
+   (0, 2, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 2
+   (0, 3, 0, ('cap', 'cap', 'psilin:00')) 1
+   (0, 3, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 1
+   (0, 3, 0, ('no:target row u', 'cap', 'psilin:00')) 1
+   (0, 3, 0, ('no:target row u', 'no:linear syste', 'psilin:00')) 2
+   (0, 3, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 3
+   (0, 3, 0, ('no:target row u', 'no:target row u', 'psilin:01')) 1
+   (0, 4, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 3
+   (1, 0, 0, ('cap', 'cap', 'psilin:00')) 4
+   (1, 0, 0, ('cap', 'no:target row u', 'psilin:00')) 1
+   (1, 0, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 4
+   (1, 0, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 1
+   (1, 0, 0, ('no:target row u', 'no:linear syste', 'psilin:00')) 2
+   (1, 0, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 1
+   (1, 1, 0, ('cap', 'cap', 'psilin:00')) 2
+   (1, 1, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 3
+   (1, 1, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 2
+   (1, 1, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 4
+   (1, 2, 0, ('cap', 'cap', 'psilin:00')) 1
+   (1, 2, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 4
+   (1, 2, 0, ('no:target row u', 'no:linear syste', 'psilin:00')) 1
+   (1, 2, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 3
+   (1, 3, 0, ('cap', 'cap', 'psilin:00')) 2
+   (1, 3, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 7
+   (1, 3, 0, ('no:target row u', 'no:linear syste', 'psilin:00')) 3
+   (1, 3, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 3
+   (1, 3, 0, ('no:target row u', 'no:target row u', 'psilin:01')) 1
+   (1, 3, 0, ('no:target row u', 'no:target row u', 'psilin:11')) 1
+   (1, 4, 0, ('cap', 'cap', 'psilin:01')) 1
+   (1, 4, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 1
+   (1, 4, 0, ('no:target row u', 'no:target row u', 'psilin:01')) 4
+   (1, 4, 0, ('no:target row u', 'no:target row u', 'psilin:10')) 1
+   (2, 0, 0, ('cap', 'cap', 'psilin:00')) 3
+   (2, 0, 0, ('cap', 'no:target row u', 'psilin:00')) 2
+   (2, 0, 0, ('no:linear syste', 'cap', 'psilin:00')) 1
+   (2, 0, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 6
+   (2, 0, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 1
+   (2, 1, 0, ('no:linear syste', 'cap', 'psilin:00')) 1
+   (2, 1, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 8
+   (2, 1, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 2
+   (2, 1, 0, ('no:linear syste', 'no:target row u', 'psilin:10')) 1
+   (2, 1, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 4
+   (2, 1, 0, ('no:target row u', 'no:target row u', 'psilin:10')) 1
+   (2, 2, 0, ('cap', 'cap', 'psilin:00')) 2
+   (2, 2, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 8
+   (2, 2, 0, ('no:target row u', 'no:linear syste', 'psilin:00')) 1
+   (2, 3, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 7
+   (2, 3, 0, ('no:linear syste', 'no:linear syste', 'psilin:01')) 1
+   (2, 3, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 4
+   (2, 4, 0, ('cap', 'cap', 'psilin:11')) 3
+   (2, 4, 0, ('no:target row u', 'cap', 'psilin:11')) 1
+   (2, 4, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 1
+   (2, 4, 0, ('no:target row u', 'no:target row u', 'psilin:01')) 3
+   (2, 4, 0, ('no:target row u', 'no:target row u', 'psilin:11')) 3
+   (3, 0, 0, ('cap', 'cap', 'psilin:00')) 3
+   (3, 0, 0, ('cap', 'cap', 'psilin:10')) 2
+   (3, 0, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 2
+   (3, 0, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 3
+   (3, 0, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 3
+   (3, 1, 0, ('cap', 'cap', 'psilin:00')) 4
+   (3, 1, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 1
+   (3, 1, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 1
+   (3, 1, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 4
+   (3, 2, 0, ('cap', 'cap', 'psilin:00')) 2
+   (3, 2, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 3
+   (3, 2, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 3
+   (3, 2, 0, ('no:target row u', 'no:linear syste', 'psilin:00')) 1
+   (3, 2, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 2
+   (3, 3, 0, ('no:linear syste', 'no:linear syste', 'psilin:00')) 4
+   (3, 3, 0, ('no:linear syste', 'no:linear syste', 'psilin:01')) 1
+   (3, 3, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 1
+   (3, 3, 0, ('no:target row u', 'no:target row u', 'psilin:01')) 1
+   (3, 4, 0, ('cap', 'cap', 'psilin:11')) 2
+   (3, 4, 0, ('no:target row u', 'no:linear syste', 'psilin:01')) 1
+   (3, 4, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 1
+   (3, 4, 0, ('no:target row u', 'no:target row u', 'psilin:11')) 2
+   (4, 0, 0, ('cap', 'cap', 'psilin:00')) 1
+   (4, 0, 0, ('cap', 'cap', 'psilin:01')) 1
+   (4, 0, 0, ('cap', 'cap', 'psilin:10')) 1
+   (4, 0, 0, ('cap', 'no:target row u', 'psilin:10')) 1
+   (4, 0, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 2
+   (4, 0, 0, ('no:target row u', 'cap', 'psilin:00')) 1
+   (4, 0, 0, ('no:target row u', 'cap', 'psilin:01')) 1
+   (4, 0, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 1
+   (4, 0, 0, ('no:target row u', 'no:target row u', 'psilin:10')) 1
+   (4, 0, 0, ('yes', 'no:target row u', 'psilin:11')) 1
+   (4, 1, 0, ('cap', 'cap', 'psilin:00')) 6
+   (4, 1, 0, ('cap', 'cap', 'psilin:10')) 3
+   (4, 1, 0, ('no:target row u', 'no:target row u', 'psilin:01')) 1
+   (4, 1, 0, ('no:target row u', 'no:target row u', 'psilin:10')) 3
+   (4, 2, 0, ('cap', 'cap', 'psilin:10')) 1
+   (4, 2, 0, ('no:linear syste', 'no:target row u', 'psilin:00')) 1
+   (4, 2, 0, ('no:linear syste', 'no:target row u', 'psilin:10')) 2
+   (4, 2, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 7
+   (4, 3, 0, ('cap', 'cap', 'psilin:01')) 4
+   (4, 3, 0, ('cap', 'cap', 'psilin:10')) 1
+   (4, 3, 0, ('cap', 'cap', 'psilin:11')) 7
+   (4, 3, 0, ('no:target row u', 'no:target row u', 'psilin:00')) 1
+   (4, 3, 0, ('no:target row u', 'no:target row u', 'psilin:01')) 1
+   (4, 3, 0, ('no:target row u', 'no:target row u', 'psilin:11')) 4
+   (4, 4, 0, ('cap', 'cap', 'psilin:11')) 5
+   (4, 4, 0, ('cap', 'no:target row u', 'psilin:11')) 1
+   (4, 4, 0, ('no:linear syste', 'no:linear syste', 'psilin:11')) 1
+   (4, 4, 0, ('yes', 'no:target row u', 'psilin:11')) 1
+   skel-fail 23

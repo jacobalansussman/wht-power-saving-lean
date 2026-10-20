@@ -1,0 +1,30 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 11:07:04
+[heavy.sh] got slot heavy-1 11:11:25
+P111-s2 cliques 4373
+P111-word cliques 4373
+P120 cliques 8640
+rank 1: 120 flats (0.0 s)
+checks/wht43/copywall/d-bitspan/t_flats.py:54: RuntimeWarning: divide by zero encountered in matmul
+  met[a:a + 4000] = ((Fm @ inc) > 0.5).sum(1)
+checks/wht43/copywall/d-bitspan/t_flats.py:54: RuntimeWarning: overflow encountered in matmul
+  met[a:a + 4000] = ((Fm @ inc) > 0.5).sum(1)
+checks/wht43/copywall/d-bitspan/t_flats.py:54: RuntimeWarning: invalid value encountered in matmul
+  met[a:a + 4000] = ((Fm @ inc) > 0.5).sum(1)
+   P111-s2    most met   504 of  4373 (504.0 per dim), most live lines   1, flats meeting all 0, fewest misses [(3869, 1), (3925, 1), (3941, 8), (3970, 1), (3981, 2)]
+   P111-word  most met   504 of  4373 (504.0 per dim), most live lines   1, flats meeting all 0, fewest misses [(3869, 1), (3925, 4), (3941, 7), (3970, 1), (3981, 4)]
+   P120       most met   576 of  8640 (576.0 per dim), most live lines   1, flats meeting all 0, fewest misses [(8064, 120)]
+rank 2: 4900 flats (0.4 s)
+   P111-s2    most met  1155 of  4373 (577.5 per dim), most live lines   3, flats meeting all 0, fewest misses [(3218, 1), (3229, 6), (3245, 4), (3284, 1), (3303, 2)]
+   P111-word  most met  1160 of  4373 (580.0 per dim), most live lines   3, flats meeting all 0, fewest misses [(3213, 1), (3218, 3), (3229, 2), (3245, 6), (3300, 1)]
+   P120       most met  1512 of  8640 (756.0 per dim), most live lines   3, flats meeting all 0, fewest misses [(7128, 1120), (7488, 3780)]
+rank 3: 85680 flats (6.5 s)
+   P111-s2    most met  1980 of  4373 (660.0 per dim), most live lines   6, flats meeting all 0, fewest misses [(2393, 1), (2417, 1), (2433, 3), (2444, 1), (2515, 2)]
+   P111-word  most met  1967 of  4373 (655.7 per dim), most live lines   6, flats meeting all 0, fewest misses [(2406, 1), (2409, 1), (2444, 2), (2446, 2), (2460, 1)]
+   P120       most met  2656 of  8640 (885.3 per dim), most live lines   6, flats meeting all 0, fewest misses [(5984, 7560), (6552, 40320), (6912, 37800)]
+rank 4: 661542 flats (82.5 s)
+   P111-s2    most met  2894 of  4373 (723.5 per dim), most live lines  12, flats meeting all 0, fewest misses [(1479, 1), (1498, 1), (1601, 1), (1654, 1), (1656, 1)]
+   P111-word  most met  2921 of  4373 (730.2 per dim), most live lines  12, flats meeting all 0, fewest misses [(1452, 1), (1600, 1), (1604, 1), (1614, 1), (1615, 1)]
+   P120       most met  4224 of  8640 (1056.0 per dim), most live lines  12, flats meeting all 0, fewest misses [(4416, 3150), (4745, 24192), (5408, 151200), (5616, 67200), (5976, 302400)]
+rank 5: 2091600 flats (379.2 s)
+   P111-s2    most met  3653 of  4373 (730.6 per dim), most live lines  20, flats meeting all 0, fewest misses [(720, 1), (768, 1), (785, 1), (832, 1), (844, 1)]
+   P111-word  most met  3665 of  4373 (733.0 per dim), most live lines  20, flats meeting all 0, fewest misses [(708, 1), (750, 1), (757, 1), (783, 1), (789, 3)]

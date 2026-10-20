@@ -1,0 +1,11 @@
+ports 111; boundary identities H_1 = P_2 and K_1 = 0_2 fail for 0 of 222 checks
+stage-2 P-bank interval [G(P_t), G(H)] the same for all ports: True; G(P_t) = E_1+U: True
+stage-2 0-bank start frames G(0) = E_1 + K_t: pairs of ports with EQUAL start frame: 0 of 6105
+strict global, P-target new / 0-source new: 0 of 12321 ordered pairs share a frame (diagonal 0)
+strict global, P-target old / 0-source new: 0 of 12321 ordered pairs share a frame (diagonal 0)
+strict global, P-target new / 0-source old: 0 of 12321 ordered pairs share a frame (diagonal 0)
+strict global, P-target old / 0-source old: 0 of 12321 ordered pairs share a frame (diagonal 0)
+CONTROL strict global, 0-source / 0-source at stage 2 (needed by every cross-port total of the stage-2 decoder): 0 of 12210
+local reading, stage-2 P-target S [P_S, H] and 0-source T [0, K_T]: share iff q_S.q_T = 0: 6470 of 12210 off-diagonal, diagonal 0
+local reading, 0-source / 0-source: share at local 0 always: 12210 of 12210
+python3 -I recount.py  38.76s user 0.02s system 99% cpu 38.783 total

@@ -1,0 +1,71 @@
+> Working note written by an AI agent during the round of 15 October 2026; kept as written, with private paths
+> and machine names removed. Where it disagrees with this section's README.md, the README wins: it
+> follows the later skeptic verdicts.
+
+v-centre STATUS (skeptic of ctr-window + ctr-search, centre/BRIEF.md). Started 2026-10-15 17:39 EDT. Time-box 90 min -> ~19:09.
+
+PREDICTIONS (dated 2026-10-15 17:39 EDT, before checking anything beyond reading WINDOW.md and the two STATUS files)
+Q1 (80 %): the hub floor rows C1-C5 in WINDOW.md section 2 match the hub's own text (PR READMEs in hub-read/ and
+    live gh reads), at most one minor mis-statement of hypotheses or status.
+Q2 (70 %): the accounting claim holds: #2338 s3.7 text really says COPY rank = source-frame dimension, temp at frame 0,
+    so the shipped format is one-sided and 52.36 is a floor there.
+Q3 (65 %): the 52.36 floor recomputes in my own code (I will at least recompute Tmax at dim 6 = 1155 of 1260).
+Q4 (60 %): the O1 >= 64 closure by ctr-search has at least one gap I can name (the reduction, the WLOG that A_k is
+    all ports in W_k, NC_k, or the co-flat list) that makes it not yet a proof; 40 % it survives my checks.
+Q5 (55 %): the O1 floor of 60 (weighted basis count) survives: rests on #1212 Thm 1 plus the claim that a term's
+    one-sided cost >= dim span of gather labels and that a term adds rank <= 1 on a basis block.
+Q6 (85 %): calibration claims (64 and 72 found, sub-52.36 refused) reproduce from their files.
+Q7 (95 %): no centre is claimed, so nothing to rebuild; no price effect.
+
+LOG (Mac clock, EDT; entries before the last are accurate to about 2 min; `date` read 17:56:39 when this log was written)
+17:39 predictions written; read BRIEF, WINDOW.md v4, ctr-window/STATUS.txt, ctr-search/STATUS.txt + RESULTS.json.
+17:42 hub read first-hand (gh, read only) into hub-own/: PR metadata + READMEs at head for #2338 #2724 #2228 #2639 #1212
+      #1815 #1633 #1224; byte-identical to ctr-window's copies of #2338, #2724, #2639. Statuses re-read (#2277 merged
+      21:41 UTC and #2321 merged 20:19 UTC, after ctr-window's 20:30 snapshot; nothing in the map depends on it).
+17:45 calc/build.py (own P112 in Hamming coordinates, dense B, F2 labels, 1,260 frames, co-flats, D7 normals):
+      B rank 9; Gamma_a 53 (x112), N_i 56 (x8); D7-type co-flats 70 (x128), 73 (x896), 76 (x56).
+17:46 calc/enum.c (own RREF enumeration of all 8,283,458 subspaces incl. 0): Tmax 90,180,340,612,897,1155,1260 ->
+      clique floor 52.3636 at d = 6 [52.36 CONFIRMED]; n(d) = 1,2,4,8,12,20,36,64,112; coverage maxima of Gamma/N
+      per dim = ctr-search's coflat.json exactly; 43,173 closed dim-7 sets, 763,987 closed dim-6 sets.
+17:47 calc/m9check.py: covering-pair graph on the 43,173 dim-7 sets over all 248 co-flats <= 72 ports: 1,016 edges,
+      0 triangles (needs a 9-clique) [m = 9 CONFIRMED]; (1,6,7^8) port+dim6+dim7 covers: 0 [CONFIRMED].
+17:48 calc/triples.c (direct, all 120 co-flats, no symmetry): EPS 0: 8,960 triples (Gamma: 0); EPS 1 and 2: 134,400;
+      calc/k4.py: no K4 in either [m = 10 rest, 11, 12 CONFIRMED].
+17:49 calc/prof.py (own profile enumeration, m <= 63, own n(d)/coverage): survivors identical to profiles.json.
+      Soundness: 8^8 and 9^8 pass; (1)^112 (singleton decoder, cost 112) passes; (9) at m = 1 fails.
+17:50 Reduction re-derived by hand: M = Y X^T rank 8 real => M = D1 G D2 (#1212 Thm 1, REAL matrices, K_ii = 4 after
+      row scaling), row(M) = row(Phi D2) inside span(cols of X) => d2_b r_b = sum_j X_bj c_j; cost uses gather supports
+      only. NC_k, incidence (<= 1 port per direction alone), WLOG A_k -> S(W_k) (monotone relaxation) all hold.
+      Co-flat list: E8 cap hyperplane = Levi of rank 7 (E7 63, D7 42, E6A1 37, A7 28, ...), so co-flats < 75 are
+      E7-type (53, 56) or D7-type (70 + f); computed f >= 0 gives 70 only below 73.  => O1 closure >= 64 CONFIRMED.
+17:51 calc/calib.py: hub64 (e_i, 8 x 56 ports) exact on all 112x112 entries, one-sided 8 x 8 = 64; butterfly
+      (e_2a +- e_2a+1) exact, 8 x 9 = 72 [calibration CONFIRMED]; ctr-search's out/ files show 64 found (sas greedy,
+      pool containing the frame directions), 71/72 without frame directions, negctl refusals.
+17:53 calc/mappool.py + calc/mu.c: ctr-window's 10,560-set pool, all bases (own exact determinants), 1,260 frames;
+      own labels from its roots; own exact max over every subspace: C = 1073741831, H = 872468135, d = 6 ->
+      59.073341 [O1 floor 60 CONFIRMED, now superseded by >= 64].
+17:54 ctr-window's rank-1 pairing term re-checked on its roots with own frames: meets 598 frames on both sides
+      (bound <= 16.86) [CONFIRMED]; my own crude search reached 501 (bound <= 20.1), same conclusion.
+17:55 Accounting: our gcert/1 checker (wht36/seal/export/tools/gx/gxcore.py, scatter_cut) charges each retained
+      total the dimension of its frame, y roles at frame 0: one-sided, first-hand. Hub #2338 s1 calls the pairing rank
+      "what the invoice charges" and the one-sided COPY rule is quoted in s3.7 in the BIT-side (P111) context; s1 also
+      says every bound holds for any costlier physical charge. So the map's accounting is right for our U8 line;
+      for the hub's own P112 centre it rests on that s3.7 sentence + #717's "cost = dimension of the label span".
+17:55 New hub PRs since 20:00 UTC scanned (hub-own/recent_own.txt): none closes or opens the window (#2757 is another
+      mask, #2782 a positive half-integral class, #2765 padding). Hub kappa moved: #2767 conditional 1.71726e-3,
+      #2751 1.71714e-3 (> #2745's 1.7161e-3); no price effect since no centre.
+
+OUTCOMES vs PREDICTIONS
+Q1 (80 %) hub rows match: HELD. Nits: C12 says "exact certificates" but D1267's k = 7 closure ends with 2,342
+   SAT-only cases (no DRAT, fork), and #2724 (18:27 UTC) still calls k = 7 open; status line "all open except
+   #2228, #1180, #845" omits #1787, #1224, #1633 (merged; cited in rows that give no status).
+Q2 (70 %) accounting: HELD for our line (first-hand gcert/1); for the hub's centre, see 18:00 caveat.
+Q3 (65 %) 52.36 recomputes: HELD exactly.
+Q4 (60 % a gap in the O1 closure): FAILED. No gap found; every computational input recomputed by own code,
+   the reduction and the co-flat classification checked by argument. Scope: real (rational) coefficients only
+   (#1212 Theorem 1 is for real matrices), single layer, one-sided charge.
+Q5 (55 %) floor 60 survives: HELD (59.0733 exact, own code).
+Q6 (85 %) calibration reproduces: HELD.
+Q7 (95 %) no centre, no price effect: HELD.
+VERDICT: NOT REFUTED. WINDOW.md v4 is stale on O1 (says 60-63 open; ctr-search's closure, confirmed here, closes it
+at >= 64 one-sided). Nothing running, no Colab, nothing posted, none of the hub's code run.

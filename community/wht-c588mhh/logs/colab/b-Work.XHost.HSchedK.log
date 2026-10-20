@@ -1,0 +1,11 @@
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HSchedK.lean:161:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HSchedK.lean:162:6: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HSchedK.lean:163:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HSchedK.lean:166:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HSchedK.lean:325:32: warning: `if_true` has been deprecated: Use `ite_true` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HSchedK.lean:327:53: warning: `if_false` has been deprecated: Use `ite_false` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HSchedK.lean:336:35: warning: `if_false` has been deprecated: Use `ite_false` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HSchedK.lean:345:15: warning: `if_true` has been deprecated: Use `ite_true` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HSchedK.lean:377:11: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HSchedK.lean:506:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+'OAI.PowerSaving.XHost.HostSched.ofTab_fitsR' depends on axioms: [propext, Classical.choice, Quot.sound]

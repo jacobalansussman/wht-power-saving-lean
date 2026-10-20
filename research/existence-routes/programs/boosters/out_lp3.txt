@@ -1,0 +1,22 @@
+register 6, ranks <= 4: 429 certificate rows; boosters negative at 0/100 grid points
+register 6, ranks <= 5: 429 certificate rows; boosters negative at 0/100 grid points
+register 6, ranks <= 6: 429 certificate rows; boosters negative at 100/100 grid points, from 0.01 to 0.9983
+register 7, ranks <= 4: 546 certificate rows; boosters negative at 0/100 grid points
+register 7, ranks <= 5: 546 certificate rows; boosters negative at 0/100 grid points
+register 7, ranks <= 6: 546 certificate rows; boosters negative at 100/100 grid points, from 0.01 to 0.9983
+register 8, ranks <= 4: 829 certificate rows; boosters negative at 0/100 grid points
+register 8, ranks <= 5: 829 certificate rows; boosters negative at 0/100 grid points
+register 8, ranks <= 6: 829 certificate rows; boosters negative at 100/100 grid points, from 0.01 to 0.9983
+register 9, ranks <= 4: 176 certificate rows; boosters negative at 0/100 grid points
+register 9, ranks <= 5: 176 certificate rows; boosters negative at 0/100 grid points
+register 9, ranks <= 6: 176 certificate rows; boosters negative at 100/100 grid points, from 0.01 to 0.9983
+register 10, ranks <= 4: 192 certificate rows; boosters negative at 0/100 grid points
+register 10, ranks <= 5: 192 certificate rows; boosters negative at 0/100 grid points
+register 10, ranks <= 6: 192 certificate rows; boosters negative at 100/100 grid points, from 0.01 to 0.9983
+register 11, ranks <= 4: 167 certificate rows; boosters negative at 0/100 grid points
+register 11, ranks <= 5: 167 certificate rows; boosters negative at 0/100 grid points
+register 11, ranks <= 6: 167 certificate rows; boosters negative at 100/100 grid points, from 0.01 to 0.9983
+register 12, ranks <= 4: 182 certificate rows; boosters negative at 0/100 grid points
+register 12, ranks <= 5: 182 certificate rows; boosters negative at 0/100 grid points
+register 12, ranks <= 6: 182 certificate rows; boosters negative at 100/100 grid points, from 0.01 to 0.9983
+python3 -B lp3.py  18.10s user 0.47s system 101% cpu 18.261 total

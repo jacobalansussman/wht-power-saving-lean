@@ -1,0 +1,18 @@
+s3_subspace.py:120: RuntimeWarning: divide by zero encountered in matmul
+  X = H @ D @ H.T
+s3_subspace.py:120: RuntimeWarning: overflow encountered in matmul
+  X = H @ D @ H.T
+s3_subspace.py:120: RuntimeWarning: invalid value encountered in matmul
+  X = H @ D @ H.T
+S1: {0} u {alpha^k : k in [0, 1, 2, 5, 11, 18, 19] } is a 3-dim subspace V of GF(32): OK
+    targets are symmetric and additive: T_(v+v') = T_v + T_v' (mod 2): OK
+    every target invertible and non-alternating (congruent to I): OK
+S2: the 7 array characters are the 7 nonzero characters of pi: Sym_5^* -> F_2^3; |K0| = 4096 = 2^12: OK
+S3: H D_Q H^T = translation by pi(Q) on F_2^3 for all 8 classes (a Pauli X^pi(Q) on 3 qubits): OK
+S4: the 7 non-trivial Hadamard rows (the plain gates) are E8 roots (h_u/2): OK
+    each target X^v = product of 4 reflections in E8 roots e_x - e_(x+v) = product of the 4 Hadamard
+    reflections with <u,v> = 1 (two 4A1 frames of the D4 through v): OK
+    real 3-qubit stabiliser rays: 240 by support size: {1: 8, 2: 56, 4: 112, 8: 64} ; of these, E8 root lines (scaled): 120
+S5: |{h in GL(5,2) : h U_V h^T = U_V}| = 1
+S6: rank of the 31 rank-one matrices z z^T: 15 (so the dependency code has dimension 16 )
+    the 155 three-dim subspaces (minus 0) are dependencies: True

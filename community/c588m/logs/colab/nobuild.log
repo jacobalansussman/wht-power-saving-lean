@@ -1,0 +1,370 @@
+info: mathlib: URL has changed; deleting '/content/work/mb/shea/lean/complex588/.lake/packages/mathlib' and cloning again
+info: mathlib: cloning https://github.com/leanprover-community/mathlib4.git
+info: mathlib: checking out revision 'd13f23b723b8a846827a245b89c10fc7d3f11612'
+info: plausible: URL has changed; deleting '/content/work/mb/shea/lean/complex588/.lake/packages/plausible' and cloning again
+info: plausible: cloning https://github.com/leanprover-community/plausible
+info: plausible: checking out revision '118aa17ee84656b8bd727fef7c458ee8c833385c'
+info: LeanSearchClient: URL has changed; deleting '/content/work/mb/shea/lean/complex588/.lake/packages/LeanSearchClient' and cloning again
+info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+info: LeanSearchClient: checking out revision 'ddf04cf3949fa556442341e87d47f9f6e6074707'
+info: importGraph: URL has changed; deleting '/content/work/mb/shea/lean/complex588/.lake/packages/importGraph' and cloning again
+info: importGraph: cloning https://github.com/leanprover-community/import-graph
+info: importGraph: checking out revision 'e928b72544873815af278d38681b31c0293588e3'
+info: proofwidgets: URL has changed; deleting '/content/work/mb/shea/lean/complex588/.lake/packages/proofwidgets' and cloning again
+info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+info: proofwidgets: checking out revision '106ff4fafc74ef4ac99d81dbf3ab399118f497a5'
+info: aesop: URL has changed; deleting '/content/work/mb/shea/lean/complex588/.lake/packages/aesop' and cloning again
+info: aesop: cloning https://github.com/leanprover-community/aesop
+info: aesop: checking out revision '355695d523e41d0554926416cba2a2b3544fbbc9'
+info: Qq: URL has changed; deleting '/content/work/mb/shea/lean/complex588/.lake/packages/Qq' and cloning again
+info: Qq: cloning https://github.com/leanprover-community/quote4
+info: Qq: checking out revision '6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259'
+info: batteries: URL has changed; deleting '/content/work/mb/shea/lean/complex588/.lake/packages/batteries' and cloning again
+info: batteries: cloning https://github.com/leanprover-community/batteries
+info: batteries: checking out revision 'f2effa3d803fda822b1f97b806c47cf2adfbcbc2'
+info: Cli: URL has changed; deleting '/content/work/mb/shea/lean/complex588/.lake/packages/Cli' and cloning again
+info: Cli: cloning https://github.com/leanprover/lean4-cli
+info: Cli: checking out revision 'e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204'
+✖ [4/21] Building Batteries.Util.LibraryNote
+error: target is out-of-date and needs to be rebuilt
+✖ [6/21] Building Batteries.Tactic.Unreachable
+error: target is out-of-date and needs to be rebuilt
+✖ [8/21] Building Batteries.Lean.TagAttribute
+error: target is out-of-date and needs to be rebuilt
+✖ [12/21] Building Batteries.Tactic.Init
+error: target is out-of-date and needs to be rebuilt
+✖ [13/21] Building Batteries.Tactic.SeqFocus
+error: target is out-of-date and needs to be rebuilt
+✖ [14/21] Building Batteries.Tactic.Lint.Basic
+error: target is out-of-date and needs to be rebuilt
+✖ [16/21] Building Batteries.Lean.Syntax
+error: target is out-of-date and needs to be rebuilt
+✖ [20/21] Building Batteries.Classes.RatCast
+error: target is out-of-date and needs to be rebuilt
+✖ [21/73] Building Batteries.Lean.EStateM
+error: target is out-of-date and needs to be rebuilt
+✖ [22/73] Building Batteries.Lean.Except
+error: target is out-of-date and needs to be rebuilt
+✖ [25/73] Building Batteries.CodeAction.Attr
+error: target is out-of-date and needs to be rebuilt
+✖ [27/73] Building Batteries.Lean.Position
+error: target is out-of-date and needs to be rebuilt
+✖ [29/73] Building Batteries.CodeAction.Deprecated
+error: target is out-of-date and needs to be rebuilt
+✖ [34/73] Building Batteries.Control.Lemmas
+error: target is out-of-date and needs to be rebuilt
+✖ [35/73] Building Batteries.Control.LawfulMonadState
+error: target is out-of-date and needs to be rebuilt
+✖ [38/73] Building Batteries.Control.ForInStep.Basic
+error: target is out-of-date and needs to be rebuilt
+✖ [45/73] Building Batteries.Data.Array.Init.Lemmas
+error: target is out-of-date and needs to be rebuilt
+✖ [48/73] Building Batteries.Data.Array.Match
+error: target is out-of-date and needs to be rebuilt
+✖ [49/73] Building Batteries.Data.Array.Merge
+error: target is out-of-date and needs to be rebuilt
+✖ [59/73] Building Batteries.Data.BinaryHeap.Basic
+error: target is out-of-date and needs to be rebuilt
+✖ [64/73] Building Batteries.Data.BitVec.Basic
+error: target is out-of-date and needs to be rebuilt
+✖ [65/73] Building Batteries.Data.Nat.Basic
+error: target is out-of-date and needs to be rebuilt
+✖ [71/73] Building Batteries.Data.Bool
+error: target is out-of-date and needs to be rebuilt
+✖ [72/73] Building Batteries.Data.ByteArray
+error: target is out-of-date and needs to be rebuilt
+✖ [73/115] Building Batteries.Data.ByteSlice
+error: target is out-of-date and needs to be rebuilt
+✖ [77/115] Building Batteries.Tactic.OpenPrivate
+error: target is out-of-date and needs to be rebuilt
+✖ [87/115] Building Batteries.Tactic.Trans
+error: target is out-of-date and needs to be rebuilt
+✖ [91/115] Building Batteries.Data.Float.Basic
+error: target is out-of-date and needs to be rebuilt
+✖ [95/115] Building Batteries.Data.FloatArray
+error: target is out-of-date and needs to be rebuilt
+✖ [96/115] Building Batteries.Lean.HashMap
+error: target is out-of-date and needs to be rebuilt
+✖ [99/115] Building Batteries.Data.List.ArrayMap
+error: target is out-of-date and needs to be rebuilt
+✖ [101/115] Building Batteries.Data.List.Init.Lemmas
+error: target is out-of-date and needs to be rebuilt
+✖ [102/115] Building Batteries.Data.List.Interleave
+error: target is out-of-date and needs to be rebuilt
+✖ [110/115] Building Batteries.Lean.System.IO
+error: target is out-of-date and needs to be rebuilt
+✖ [113/115] Building Batteries.Data.NameSet
+error: target is out-of-date and needs to be rebuilt
+✖ [115/150] Building Batteries.Data.Nat.Bitwise.Lemmas
+error: target is out-of-date and needs to be rebuilt
+✖ [130/150] Building Batteries.Data.Random.MersenneTwister
+error: target is out-of-date and needs to be rebuilt
+✖ [136/150] Building Batteries.Data.RunningStats
+error: target is out-of-date and needs to be rebuilt
+✖ [137/150] Building Batteries.Data.Stream
+error: target is out-of-date and needs to be rebuilt
+✖ [138/150] Building Batteries.Data.String.AsciiCasing
+error: target is out-of-date and needs to be rebuilt
+✖ [139/150] Building Batteries.Data.String.Basic
+error: target is out-of-date and needs to be rebuilt
+✖ [140/150] Building Batteries.Data.String.Legacy
+error: target is out-of-date and needs to be rebuilt
+✖ [144/150] Building Batteries.Util.Panic
+error: target is out-of-date and needs to be rebuilt
+✖ [153/196] Building Batteries.Lean.Expr
+error: target is out-of-date and needs to be rebuilt
+✖ [155/196] Building Batteries.Lean.HashSet
+error: target is out-of-date and needs to be rebuilt
+✖ [156/196] Building Batteries.Lean.IO.Process
+error: target is out-of-date and needs to be rebuilt
+✖ [158/196] Building Batteries.Lean.LawfulMonad
+error: target is out-of-date and needs to be rebuilt
+✖ [159/196] Building Batteries.Lean.LawfulMonadLift
+error: target is out-of-date and needs to be rebuilt
+✖ [160/196] Building Batteries.Lean.Meta.Basic
+error: target is out-of-date and needs to be rebuilt
+✖ [161/196] Building Batteries.Lean.Meta.Expr
+error: target is out-of-date and needs to be rebuilt
+✖ [162/196] Building Batteries.Lean.PersistentHashMap
+error: target is out-of-date and needs to be rebuilt
+✖ [164/196] Building Batteries.Lean.Meta.Inaccessible
+error: target is out-of-date and needs to be rebuilt
+✖ [166/196] Building Batteries.Lean.MonadBacktrack
+error: target is out-of-date and needs to be rebuilt
+✖ [169/196] Building Batteries.Lean.Meta.UnusedNames
+error: target is out-of-date and needs to be rebuilt
+✖ [170/196] Building Batteries.Lean.NameMapAttribute
+error: target is out-of-date and needs to be rebuilt
+✖ [171/196] Building Batteries.Lean.PersistentHashSet
+error: target is out-of-date and needs to be rebuilt
+✖ [178/196] Building Batteries.Tactic.Case
+error: target is out-of-date and needs to be rebuilt
+✖ [179/196] Building Batteries.Tactic.Congr
+error: target is out-of-date and needs to be rebuilt
+✖ [183/196] Building Batteries.Tactic.Instances
+error: target is out-of-date and needs to be rebuilt
+✖ [184/196] Building Batteries.Tactic.Lemma
+error: target is out-of-date and needs to be rebuilt
+✖ [185/196] Building Batteries.Tactic.NoMatch
+error: target is out-of-date and needs to be rebuilt
+✖ [186/196] Building Batteries.Tactic.PermuteGoals
+error: target is out-of-date and needs to be rebuilt
+✖ [187/196] Building Batteries.Tactic.PrintDependents
+error: target is out-of-date and needs to be rebuilt
+✖ [188/196] Building Batteries.Tactic.PrintOpaques
+error: target is out-of-date and needs to be rebuilt
+✖ [190/196] Building Batteries.Tactic.ShowUnused
+error: target is out-of-date and needs to be rebuilt
+✖ [191/196] Building Batteries.Tactic.SqueezeScope
+error: target is out-of-date and needs to be rebuilt
+✖ [192/196] Building Batteries.Util.Cache
+error: target is out-of-date and needs to be rebuilt
+✖ [193/196] Building Batteries.Util.ExtendedBinder
+error: target is out-of-date and needs to be rebuilt
+✖ [194/196] Building Batteries.Util.Pickle
+error: target is out-of-date and needs to be rebuilt
+✖ [196/230] Building Mathlib.Tactic.Linter.DirectoryDependency
+error: target is out-of-date and needs to be rebuilt
+✖ [230/263] Building ImportGraph.Imports.ImportGraph
+error: target is out-of-date and needs to be rebuilt
+✖ [232/263] Building ImportGraph.Lean.Environment
+error: target is out-of-date and needs to be rebuilt
+✖ [239/263] Building ImportGraph.Graph.TransitiveClosure
+error: target is out-of-date and needs to be rebuilt
+✖ [329/351] Building Aesop.Script.Tactic
+error: target is out-of-date and needs to be rebuilt
+✖ [330/351] Building Aesop.Script.GoalWithMVars
+error: target is out-of-date and needs to be rebuilt
+✖ [332/351] Building Aesop.Nanos
+error: target is out-of-date and needs to be rebuilt
+✖ [334/351] Building Aesop.Index.DiscrTreeConfig
+error: target is out-of-date and needs to be rebuilt
+✖ [341/351] Building Aesop.Check
+error: target is out-of-date and needs to be rebuilt
+✖ [343/351] Building Aesop.Rule.Name
+error: target is out-of-date and needs to be rebuilt
+✖ [344/351] Building Aesop.Options.Public
+error: target is out-of-date and needs to be rebuilt
+✖ [347/351] Building Aesop.Script.OptimizeSyntax
+error: target is out-of-date and needs to be rebuilt
+✖ [353/390] Building Aesop.Forward.LevelIndex
+error: target is out-of-date and needs to be rebuilt
+✖ [354/390] Building Aesop.Forward.PremiseIndex
+error: target is out-of-date and needs to be rebuilt
+✖ [357/390] Building Aesop.Percent
+error: target is out-of-date and needs to be rebuilt
+✖ [362/390] Building Aesop.Forward.SlotIndex
+error: target is out-of-date and needs to be rebuilt
+✖ [364/390] Building Aesop.Util.UnionFind
+error: target is out-of-date and needs to be rebuilt
+✖ [373/390] Building Aesop.ElabM
+error: target is out-of-date and needs to be rebuilt
+✖ [377/390] Building Aesop.Util.Tactic
+error: target is out-of-date and needs to be rebuilt
+✖ [378/390] Building Aesop.Util.Unfold
+error: target is out-of-date and needs to be rebuilt
+✖ [390/463] Building Aesop.Util.OrderedHashSet
+error: target is out-of-date and needs to be rebuilt
+✖ [394/463] Building Aesop.RuleSet.Name
+error: target is out-of-date and needs to be rebuilt
+✖ [412/463] Building Aesop.Search.Expansion.Simp
+error: target is out-of-date and needs to be rebuilt
+✖ [418/463] Building Aesop.Exception
+error: target is out-of-date and needs to be rebuilt
+✖ [445/463] Building Aesop.Frontend.Basic
+error: target is out-of-date and needs to be rebuilt
+✖ [468/500] Building Qq.ForLean.ReduceEval
+error: target is out-of-date and needs to be rebuilt
+✖ [469/500] Building Qq.ForLean.ToExpr
+error: target is out-of-date and needs to be rebuilt
+✖ [470/500] Building Qq.Typ
+error: target is out-of-date and needs to be rebuilt
+✖ [475/500] Building Qq.ForLean.Do
+error: target is out-of-date and needs to be rebuilt
+✖ [476/500] Building Qq.SortLocalDecls
+error: target is out-of-date and needs to be rebuilt
+✖ [585/600] Building Plausible.Random
+error: target is out-of-date and needs to be rebuilt
+✖ [588/600] Building Plausible.Shrinkable
+error: target is out-of-date and needs to be rebuilt
+✖ [592/600] Building Plausible.Attr
+error: target is out-of-date and needs to be rebuilt
+✖ [600/614] Building LeanSearchClient.Basic
+error: target is out-of-date and needs to be rebuilt
+✖ [620/646] Building ProofWidgets.Compat
+error: target is out-of-date and needs to be rebuilt
+✖ [624/646] Building ProofWidgets.Util
+error: target is out-of-date and needs to be rebuilt
+✖ [7920/7966] Building Mathlib.MeasureTheory.Measure.Typeclasses.NoAtoms
+error: target is out-of-date and needs to be rebuilt
+ℹ [9224/9291] Replayed Work.GCert.Data.Count
+info: Work/GCert/Data/Count.lean:44:0: 'GXD.wsumK_eq' depends on axioms: [propext]
+info: Work/GCert/Data/Count.lean:45:0: 'GXD.sum_of_wsumK' depends on axioms: [propext]
+ℹ [9226/9291] Replayed Work.GCert.Data.Gen.C588MHist
+info: Work/GCert/Data/Gen/C588MHist.lean:39:0: 'GXD.C588M.rankBoundA' does not depend on any axioms
+info: Work/GCert/Data/Gen/C588MHist.lean:40:0: 'GXD.C588M.rankA0_ok' does not depend on any axioms
+ℹ [9228/9291] Replayed Work.GCert.Data.Gen.C588MTab0
+info: Work/GCert/Data/Gen/C588MTab0.lean:10:0: 'GXD.C588M.tab0_ok' depends on axioms: [propext]
+ℹ [9229/9291] Replayed Work.GCert.Data.Gen.C588MTab1
+info: Work/GCert/Data/Gen/C588MTab1.lean:10:0: 'GXD.C588M.tab1_ok' depends on axioms: [propext]
+ℹ [9230/9291] Replayed Work.GCert.Data.Gen.C588MTab2
+info: Work/GCert/Data/Gen/C588MTab2.lean:10:0: 'GXD.C588M.tab2_ok' depends on axioms: [propext]
+ℹ [9231/9291] Replayed Work.GCert.Data.Gen.C588MTab3
+info: Work/GCert/Data/Gen/C588MTab3.lean:10:0: 'GXD.C588M.tab3_ok' depends on axioms: [propext]
+ℹ [9233/9291] Replayed Work.GCert.Data.Gen.C588MSeg0
+info: Work/GCert/Data/Gen/C588MSeg0.lean:9:0: 'GXD.C588M.seg0_ok' depends on axioms: [propext]
+ℹ [9234/9291] Replayed Work.GCert.Data.Gen.C588MSeg1
+info: Work/GCert/Data/Gen/C588MSeg1.lean:9:0: 'GXD.C588M.seg1_ok' depends on axioms: [propext]
+ℹ [9235/9291] Replayed Work.GCert.Data.Gen.C588MSeg2
+info: Work/GCert/Data/Gen/C588MSeg2.lean:9:0: 'GXD.C588M.seg2_ok' depends on axioms: [propext]
+ℹ [9236/9291] Replayed Work.GCert.Data.Gen.C588MSeg3
+info: Work/GCert/Data/Gen/C588MSeg3.lean:9:0: 'GXD.C588M.seg3_ok' depends on axioms: [propext]
+ℹ [9237/9291] Replayed Work.GCert.Data.Gen.C588MSegF
+info: Work/GCert/Data/Gen/C588MSegF.lean:9:0: 'GXD.C588M.segF_ok' depends on axioms: [propext]
+Some required targets logged failures:
+- Batteries.Util.LibraryNote
+- Batteries.Tactic.Unreachable
+- Batteries.Lean.TagAttribute
+- Batteries.Tactic.Init
+- Batteries.Tactic.SeqFocus
+- Batteries.Tactic.Lint.Basic
+- Batteries.Lean.Syntax
+- Batteries.Classes.RatCast
+- Batteries.Lean.EStateM
+- Batteries.Lean.Except
+- Batteries.CodeAction.Attr
+- Batteries.Lean.Position
+- Batteries.CodeAction.Deprecated
+- Batteries.Control.Lemmas
+- Batteries.Control.LawfulMonadState
+- Batteries.Control.ForInStep.Basic
+- Batteries.Data.Array.Init.Lemmas
+- Batteries.Data.Array.Match
+- Batteries.Data.Array.Merge
+- Batteries.Data.BinaryHeap.Basic
+- Batteries.Data.BitVec.Basic
+- Batteries.Data.Nat.Basic
+- Batteries.Data.Bool
+- Batteries.Data.ByteArray
+- Batteries.Data.ByteSlice
+- Batteries.Tactic.OpenPrivate
+- Batteries.Tactic.Trans
+- Batteries.Data.Float.Basic
+- Batteries.Data.FloatArray
+- Batteries.Lean.HashMap
+- Batteries.Data.List.ArrayMap
+- Batteries.Data.List.Init.Lemmas
+- Batteries.Data.List.Interleave
+- Batteries.Lean.System.IO
+- Batteries.Data.NameSet
+- Batteries.Data.Nat.Bitwise.Lemmas
+- Batteries.Data.Random.MersenneTwister
+- Batteries.Data.RunningStats
+- Batteries.Data.Stream
+- Batteries.Data.String.AsciiCasing
+- Batteries.Data.String.Basic
+- Batteries.Data.String.Legacy
+- Batteries.Util.Panic
+- Batteries.Lean.Expr
+- Batteries.Lean.HashSet
+- Batteries.Lean.IO.Process
+- Batteries.Lean.LawfulMonad
+- Batteries.Lean.LawfulMonadLift
+- Batteries.Lean.Meta.Basic
+- Batteries.Lean.Meta.Expr
+- Batteries.Lean.PersistentHashMap
+- Batteries.Lean.Meta.Inaccessible
+- Batteries.Lean.MonadBacktrack
+- Batteries.Lean.Meta.UnusedNames
+- Batteries.Lean.NameMapAttribute
+- Batteries.Lean.PersistentHashSet
+- Batteries.Tactic.Case
+- Batteries.Tactic.Congr
+- Batteries.Tactic.Instances
+- Batteries.Tactic.Lemma
+- Batteries.Tactic.NoMatch
+- Batteries.Tactic.PermuteGoals
+- Batteries.Tactic.PrintDependents
+- Batteries.Tactic.PrintOpaques
+- Batteries.Tactic.ShowUnused
+- Batteries.Tactic.SqueezeScope
+- Batteries.Util.Cache
+- Batteries.Util.ExtendedBinder
+- Batteries.Util.Pickle
+- Mathlib.Tactic.Linter.DirectoryDependency
+- ImportGraph.Imports.ImportGraph
+- ImportGraph.Lean.Environment
+- ImportGraph.Graph.TransitiveClosure
+- Aesop.Script.Tactic
+- Aesop.Script.GoalWithMVars
+- Aesop.Nanos
+- Aesop.Index.DiscrTreeConfig
+- Aesop.Check
+- Aesop.Rule.Name
+- Aesop.Options.Public
+- Aesop.Script.OptimizeSyntax
+- Aesop.Forward.LevelIndex
+- Aesop.Forward.PremiseIndex
+- Aesop.Percent
+- Aesop.Forward.SlotIndex
+- Aesop.Util.UnionFind
+- Aesop.ElabM
+- Aesop.Util.Tactic
+- Aesop.Util.Unfold
+- Aesop.Util.OrderedHashSet
+- Aesop.RuleSet.Name
+- Aesop.Search.Expansion.Simp
+- Aesop.Exception
+- Aesop.Frontend.Basic
+- Qq.ForLean.ReduceEval
+- Qq.ForLean.ToExpr
+- Qq.Typ
+- Qq.ForLean.Do
+- Qq.SortLocalDecls
+- Plausible.Random
+- Plausible.Shrinkable
+- Plausible.Attr
+- LeanSearchClient.Basic
+- ProofWidgets.Compat
+- ProofWidgets.Util
+- Mathlib.MeasureTheory.Measure.Typeclasses.NoAtoms

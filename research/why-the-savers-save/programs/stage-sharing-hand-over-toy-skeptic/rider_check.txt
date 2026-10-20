@@ -1,0 +1,34 @@
+(1) free rides on stage-i data climbs that land on a frame some output needs (F or a psi):
+   x_1 at its start    rides Y_2 from its mid   -> x_1 @ psi_2
+   x_1 at its start    rides Y_4 from its mid   -> x_1 @ psi_4
+   x_1 at its mid      rides X_2 from its mid   -> x_1 @ F
+   y_1 at its start(0) rides Y_2 from its start -> y_1 @ psi_2
+   y_1 at its start(0) rides Y_4 from its start -> y_1 @ psi_4
+   y_1 at its mid      rides X_2 from its start -> y_1 @ F
+   x_2 at its start    rides Y_1 from its mid   -> x_2 @ psi_1
+   x_2 at its mid      rides X_1 from its mid   -> x_2 @ F
+   y_2 at its start(0) rides Y_1 from its start -> y_2 @ psi_1
+   y_2 at its start(0) rides Y_4 from its start -> y_2 @ psi_4
+   y_2 at its mid      rides X_1 from its start -> y_2 @ F
+   y_2 at its mid      rides Y_4 from its mid   -> y_2 @ psi_4
+   y_2 at its end(psi) rides X_4 from its mid   -> y_2 @ F
+   y_4 at its start(0) rides Y_1 from its start -> y_4 @ psi_1
+   y_4 at its start(0) rides Y_2 from its start -> y_4 @ psi_2
+   y_4 at its mid      rides X_1 from its start -> y_4 @ F
+   y_4 at its mid      rides Y_2 from its mid   -> y_4 @ psi_2
+   y_4 at its end(psi) rides X_1 from its mid   -> y_4 @ F
+   y_4 at its end(psi) rides X_2 from its mid   -> y_4 @ F
+
+(2) twin paths (different data climbs, same frame, same remaining moves):
+   X_1 and X_2: same frame after 1 move(s), same remaining moves [4], same end frame F
+
+(3) riders: y_4 into X_1 at start (from Y_4 mid), y_1 into X_2 at start (from Y_1 mid), y_2 into X_4 at mid
+    (from Y_2 end, before Y_2's stage-i scatter).  Formal sums after the X climbs (input -> exact frame):
+   X_1 = x_1@F + y_4@F
+   X_2 = x_2@F + y_1@F
+   X_4 = x_4@F + y_2@F
+   X_1 + X_2 + X_4 == T2 (coded total sum_T (y_T + x_T)@F, exact frames): True
+   paid moves beyond the data climbs: 0 (s-wide toy: 3 for T2 with N and with H)
+   left to pay for (outside s-wide's toy): each live X_T now holds a rider y_S@F; the stage-i copy of X_T
+   (F -> psi_T) carries it into Y_T as junk unless cleaned.  Whether cleaning costs less than the
+   3 moves saved is the open question escape (b) poses; neither s-wide's search nor this script decides it.

@@ -1,0 +1,70 @@
+The written verdict of the independent agent (a skeptic) that ran this check, as it returned it, with home-folder
+paths shortened. Agent labels in it (fs-build, fs-price, h-L3-build, k-build, k-combine, v-k-rebuild) are the
+names of the agents whose work it checked; Colab #1 and Colab #2 are the first and second Colab machines.
+
+NOT REFUTED. I re-checked the key step independently on Colab #2: OpenAI's family-130 DFT statement at exponent 1 - 16197705/10^10 is proved with standard axioms, and the official comparator accepts it. Every check below reproduced fs-build's results. The saving of 1.6197705e-3 is Lean-checked.
+
+What I checked:
+
+1. **Challenge vs OpenAI.**
+   - My reference is OpenAI's UniformFourier.lean (sha256 4c571f27...). It is byte-identical to lean/ComparatorChallenges/UniformFourier.lean in a clean clone of github.com/openai/math (HEAD 1581d4c, no local changes; the file was last changed before fd4aeeb).
+   - Diffing it against Work/FourierU8XMHH/UniformFourierChallenge.lean changes exactly two things:
+     - the exponent line, `1 - 1/(10^(13:ℕ))` becomes `1 - 16197705/(10^(10:ℕ))`;
+     - the six names (decimalExponent, decimalTime, TimeBounds, DFTGoal, ConvGoal, transform_main/convolution_main) gain the suffix U8XMHH.
+   - The negative challenge differs from the positive only in 16197705 → 16197706.
+   - The challenge hashes in the tree (108410500f..., 47d34688...) equal the Mac files I diffed.
+
+2. **All 89 OpenAI files in the tree** (OAI/...) are byte-identical to openai/math.
+   - Mathlib and all 9 packages are clean (no tracked changes) at their pinned revisions, in both the fs-build tree and the verifier stage.
+   - Mathlib is at d13f23b, the revision bigospeedrun's profile pins.
+
+3. **My own Lean check** (plain lean, no Lake, uid 65534, read-only; logs/out/check.log):
+   - transform_mainU8XMHH and convolution_mainU8XMHH depend only on [propext, Classical.choice, Quot.sound].
+   - Their types are DFTGoalU8XMHH and ConvGoalU8XMHH.
+   - `decimalExponentU8XMHH = 1 - 16197705/(10^(10:ℕ))` holds by rfl.
+   - DFTProgram, ConvProgram, paperTime and nlogn resolve to OpenAI's module OAI.Computability.FourierTransform.Goal.
+
+4. **Compare.lean, re-run by me.** The tool's sha256 e48d6d3b... is the same as in our published repos and Shea's tree.
+   - Positive: PASS for both theorems. Every statement dependency is identical, and the proofs reach 43,014 and 43,037 constants with only the 3 permitted axioms.
+   - Negative at 16197706: FAIL ("decimalExponentU8XMHH: definition body differs").
+   - No file in the tree was modified.
+
+5. **Official comparator, replayed by me** in my own cp -a copy of the tree. I used the same binaries (comparator afa65e57, lean4export 8c5d64ba, nanoda c9cecac2) and my own copy of jail2.sh (only the nounix path changed).
+   - Positive: "nanoda kernel accepts", "Lean default kernel accepts", "Your solution is okay!", rc 0, 841 s, 7.0 GB.
+   - Negative: rc 1, "Const does not match between challenge and target 'OAI.PowerSaving.decimalExponentU8XMHH'".
+
+6. **Sorry and forbidden constructs.** I grepped 126 new files on the Mac (12 XHost network modules, 20 U8XMHH modules, the 94-file k-combine overlay; 17,543 lines).
+   - The only `sorry` lines are the statement placeholders at lines 327 and 331 of the four challenge files.
+   - There is no axiom, native_decide, implemented_by, extern, unsafe, ofReduceBool, skipKernelTC, elab or macro.
+   - Across every build and comparator log, the only "declaration uses `sorry`" warnings are in the challenge files.
+
+7. **Negative control of the host-table checker.** HsU8XMHHNeg.lean differs from the real tables in exactly one entry: hremL[346] changes from 1 to 0. All other lists are identical, and the residuals list equals GXD.U8XM.schedRes.
+   - The build log shows rc 0 for `hostSchedK ... = false` by decide +kernel.
+
+8. **Provenance.**
+   - The 12 XHost sources are byte-identical to h-L3-build/lean/Work/XHost and pass xhost.sha256.
+   - The 20 generated sources in the Colab tree match fs-price/lean on the Mac, and both tarballs pass their SHA256SUMS.
+   - Comparator config hashes 4f301738... and c8290c3d... match the logged runs.
+   - The remote logs exist on Colab #2 with matching timestamps.
+
+9. **Verifier re-creation.** VerifierChallenge.lean is bigospeedrun's challenges/dft/UniformFourier233.lean (sha256 3a646acd..., clone c92b9b6) plus the generated Race.bound at 3239541/2000000000, which equals 16197705/10^10 exactly.
+   - The bos-H.out log shows the lean, audit (standard axioms) and nanoda phases all accepted.
+
+10. **Arithmetic.** +31.35 %, +3.17 %, +16.79 % and +19.52 % are correct, as is the 2.68 % gap below the hub's b = 1.6644003e-3.
+   - The rate fact fold_U8XMHHx is itself a Lean theorem used by the Seam, so the Python rate check is only a preflight.
+
+Caveats (none refutes the claim):
+- **Stand-in jail:** the comparator runs used the stand-in jail, not landrun/systemd, and the verifier run is an offline re-creation, not a submission.
+- **Syntactic negatives:** the negatives only show the exponent is compared. That is the most such a negative can show.
+- **Miscount:** "21 new modules" is a miscount. MODULES-U8XMHH.txt lists 20, and the tree also gained the 12 XHost network modules.
+- **Stale docstrings in Seam.lean:** they name engine_of_ginv_401, fold_U8XMx, scalOK and U8XMHHGlue401. The code calls XHost.engine_of_ginv_host and fold_U8XMHHx.
+- **Sorry counter:** build.out's sorry counter is broken (straight quotes in the grep). Confirmed harmless.
+- **Not the top of the ladder:** the ladder's higher rungs (R4 with 5 copies ≥ 1.6277775e-3; cross-run hosting 1.6293239e-3) are Python prices needing per-run host tables in Lean. The claim says so.
+
+Files (all under <verify>/checks/wht43/bound-check/v-fs-statement/):
+- scripts/: VfsCheck.lean, vfs-run.sh, vfs-cmp.sh, negdiff.py
+- logs/: run.out, out/check.log, out/cmp-pos.log, out/cmp-neg.log, cmp.out, cmp/vneg.log, cmp/*.time, vpos-summary.txt, vpos-tail.txt, tree-hashes.txt, oai-tree.txt
+
+On Colab #2:
+- My work is in /content/work/v-fs-statement. My tree copy, /content/work/v-fs-statement/B (11 GB, .lake owned by 65534), was left in place: never run root Lake there. Remove it with `rm -rf /content/work/v-fs-statement/B`.
+- I left the tmux servers vfss2 and vfsc (sessions ended).

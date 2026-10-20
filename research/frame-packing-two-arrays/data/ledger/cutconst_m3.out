@@ -1,0 +1,17 @@
+m=3: |Gamma| = 135, valency 14, opposite per vertex 64, diameter 3 (0.1 s)
+  ball radius 0: ratio 1.000000
+  ball radius 1: ratio 1.250000
+  ball radius 2: ratio 1.125000
+  Voronoi <, d(F1,F2)=1: ratio 1.509804
+  Voronoi <=, d(F1,F2)=1: ratio 1.509804
+  Voronoi <, d(F1,F2)=2: ratio 1.303922
+  Voronoi <=, d(F1,F2)=2: ratio 1.303922
+  Voronoi <, d(F1,F2)=3: ratio 1.230000
+  Voronoi <=, d(F1,F2)=3: ratio 1.230000
+  vector set w=1: ratio 1.750000 (2(1-2^-m) = 1.750000)
+  vector set w=8: ratio 1.750000 (2(1-2^-m) = 1.750000)
+  vector set w=9: ratio 1.750000 (2(1-2^-m) = 1.750000)
+  local search (40 restarts): best 1.750000
+RESULT m=3: c_m >= 1.750000 (m = 3; plain needs 3; engine floor 2.8) from: vector set w=1
+  best set size 15 of 135
+python3 cutconst.py 3 40  0.30s user 0.03s system 94% cpu 0.349 total

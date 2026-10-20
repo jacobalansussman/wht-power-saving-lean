@@ -1,0 +1,86 @@
+{
+ "agent": "t-km (wht43/symmetry track 2: Kramer-Mesner)",
+ "date": "2026-10-13",
+ "control_1042": {
+  "b": "0.001674989015937672328468",
+  "kappa": "0.001672188119205421",
+  "source": "reproduced by k8-pairs; not re-run here (no construction to price)"
+ },
+ "b_decoders_P112": {
+  "group": "C7 = <g7>, g7 an automorphism of P112 in GL(9,2) (16 port 7-cycles); fixed flats dims 4 (1), 7 (4), 8 (6), 9 (1)",
+  "exact_tests": "count (8 frames meet every octad), Hall on all 1996 maximal cliques (1260 octads, 512 7-cliques, 224 6-cliques), pinning",
+  "controls": "natural decoder (8 x 8, cost 64) is g7- and g3-invariant and passes; search at cost <= 64 returns 21 survivors",
+  "searched_cost_le_63": {
+   "C7: 7-orbit dim 7 + fixed flats (incl. whole space)": {
+    "families": 141841,
+    "survive": 0,
+    "octad_hall_only_pass": 1
+   },
+   "C7: 7-orbit dim 8 + fixed (K>=8)": {
+    "families": 360,
+    "survive": 0
+   },
+   "C7: 7-orbit dim 6 + fixed (incl. whole space)": {
+    "families": 20518508,
+    "count_stage_pass": 160,
+    "survive": 0
+   },
+   "C7: 7-orbit dim 5 + fixed + single-port orbits (<=4 pieces, incl. whole space)": {
+    "families": 6899697300,
+    "count_stage_pass": 0
+   },
+   "C7: 7-orbit dim 4 + fixed + single-port orbits (<=3 pieces, incl. whole space)": {
+    "families": "222527 reps x combos",
+    "count_prefilter_pass": 0
+   },
+   "C7: orbits (7,1) + fixed": {
+    "families": 592032,
+    "survive": 0
+   },
+   "C7: orbits (7,2)": {
+    "families": 5476296,
+    "survive": 0
+   },
+   "C7: orbits (8,1)": {
+    "families": 1152,
+    "survive": 0
+   },
+   "C7: orbits (6,1) + fixed (incl. whole space)": {
+    "families": 62865216,
+    "count_stage_pass": 71,
+    "survive": 0
+   },
+   "C8: 8-orbit dim 7 + any small orbits": {
+    "families": 21400,
+    "survive": 0
+   },
+   "C8: 8-orbit dim 6 + any small orbits (incl. whole space)": {
+    "families": 25546296,
+    "count_stage_pass": 672,
+    "survive": 0
+   },
+   "C8: 8-orbit dim 5 + small orbits of 10 types (<=2 pieces, incl. whole space)": {
+    "families": 1203645814,
+    "count_stage_pass": 0
+   }
+  },
+  "octad_hall_is_not_enough": "C7-invariant 9 x 7 family (cost 63) passes Hall on all 1260 octads, fails Hall on 21 non-octad maximal cliques and pinning on 63 ports; ALS residual 14.4 (b/witness_octadHall_9x7.json)",
+  "groups": "C7 = <g7> (16 port 7-cycles), C8 = <g8> (14 port 8-cycles), C4 = <g8^2>; all from random automorphisms of P112 in GL(9,2) (b/aut2.py)",
+  "clique_count_floor": "plain counting over all 1996 maximal cliques gives 52 (octads alone 53, control reproduced): no better floor",
+  "not_finished": "C4 (two 4-orbits of dim 7 + one fixed flat: 10,700^2 pairs x 78 fixed flats) stopped at the time box; C3 shapes (three 3-orbits) not run"
+ },
+ "a_packet_decompositions": {
+  "faces_forced": "1456/1456 block reads: demand support = known sources = u_t^perp cap V_b (rank 3); 12 faces + 2 own = all 14 affine planes",
+  "block_group": "AGL(3,2) 1344; face-set stabiliser 192 = signed symmetries of the 12 face needs; transitive on faces",
+  "pm_faces_scope_FB0": {
+   "P": 28,
+   "LL": 52,
+   "P+LL": 28,
+   "P+LL+LF+H": 28
+  },
+  "pm_faces_scope_FB8": 26,
+  "verdict": "no G-invariant in-block decomposition beats 28 under the corrected baseline",
+  "reader_triangles": "face pairs across blocks share 0/2/4 readers; each face 4+4 with exactly two partner faces (rank P+Q = 5); 56 triangles"
+ },
+ "outcome": "no-gain"
+}

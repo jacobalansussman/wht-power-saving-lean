@@ -1,0 +1,7 @@
+block 2: |G| = 46080 (expected 46080 = 4 x 11520), enumerated in 7.1 s
+block 2 plain1: W = 1, M = 2: lifted word equals [K] e_l in C[G] (mod both primes): [True, True]; f = 1 lift alone: [True, True]  (7 s)
+block 2 plain2: W = 2, M = 4: lifted word equals [K] e_l in C[G] (mod both primes): [True, True]; f = 1 lift alone: [True, True]  (7 s)
+block 2 xchg: W = 2, M = 4: lifted word equals [K] e_l in C[G] (mod both primes): [True, True]; f = 1 lift alone: [False, False]  (8 s)
+block 2 mix13: W = 2, M = 4: lifted word equals [K] e_l in C[G] (mod both primes): [True, True]; f = 1 lift alone: [False, False]  (13 s)
+block 2 randW1_0: W = 1, M = 2: lifted word equals [K] e_l in C[G] (mod both primes): [True, True]; f = 1 lift alone: [False, False]  (16 s)
+block 2 randW1_1: W = 1, M = 2: lifted word equals [K] e_l in C[G] (mod both primes): [True, True]; f = 1 lift alone: [False, False]  (17 s)

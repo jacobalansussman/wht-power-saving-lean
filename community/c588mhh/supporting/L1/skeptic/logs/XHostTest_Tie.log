@@ -1,0 +1,33 @@
+@OAI.PowerSaving.XHost.ginvE_slot_residual : ∀ {H T Sl C α : Type} [inst : Fintype H] [inst_1 : DecidableEq H]
+  [inst_2 : Fintype T] [inst_3 : DecidableEq T] [inst_4 : Fintype Sl] [inst_5 : DecidableEq Sl] [inst_6 : Fintype C]
+  [inst_7 : DecidableEq C] [inst_8 : Fintype α] [inst_9 : DecidableEq α] (I : OAI.PowerSaving.GX.GInvE H T Sl C)
+  (W : OAI.PowerSaving.GX.GWin H α) (q : Sl),
+  ∃ Cm Cm' z,
+    OAI.PowerSaving.GF.Free Cm ∧
+      OAI.PowerSaving.GF.Free Cm' ∧
+        Cm' * Cm = 1 ∧
+          Cm * Cm' = 1 ∧
+            LinearIndependent OAI.PowerSaving.Binary.F z ∧
+              (∀ (i : Fin (Fintype.card H - (I.ent q).dim)),
+                  ∃ k ∈ W.X.liftS Finset.univ \ W.X.liftS (I.ent q).s, z i = OAI.PowerSaving.Binary.eu k) ∧
+                W.X.Φ (I.ent q).top = Cm * OAI.PowerSaving.Binary.blockMat z * Cm' * W.X.Φ (I.ent q)
+'OAI.PowerSaving.XHostTest.gwinB_L1' depends on axioms: [propext, Classical.choice, Quot.sound]
+       12.35 real         1.51 user         2.50 sys
+          5978112000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              426165  page reclaims
+               30773  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                7824  voluntary context switches
+               42352  involuntary context switches
+         39956725425  instructions retired
+         16289067572  cycles elapsed
+           912884232  peak memory footprint
+EXIT=0 TIME=12s HEAVY=0 CMD=/usr/bin/env LEAN_PATH=<verify>/checks/wht43/bound-check/v-host-0/proj/.lake/build/lib/lean:<verify>/.lake/build/lib/lean:<verify>/.lake/packages/mathlib/.lake/build/lib/lean:<verify>/.lake/packages/batteries/.lake/build/lib/lean:<verify>/.lake/packages/Qq/.lake/build/lib/lean:<verify>/.lake/packages/aesop/.lake/build/lib/lean:<verify>/.lake/packages/proofwidgets/.lake/build/lib/lean:<verify>/.lake/packages/importGraph/.lake/build/lib/lean:<verify>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<verify>/.lake/packages/plausible/.lake/build/lib/lean:<verify>/.lake/packages/Cli/.lake/build/lib/lean LEAN_NUM_THREADS=2 /usr/bin/time -l lean -DautoImplicit=false -R <verify>/checks/wht43/bound-check/v-host-0/proj -o <verify>/checks/wht43/bound-check/v-host-0/proj/.lake/build/lib/lean/XHostTest/Tie.olean -i <verify>/checks/wht43/bound-check/v-host-0/proj/.lake/build/lib/lean/XHostTest/Tie.ilean <verify>/checks/wht43/bound-check/v-host-0/proj/XHostTest/Tie.lean

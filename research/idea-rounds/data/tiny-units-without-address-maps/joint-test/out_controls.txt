@@ -1,0 +1,16 @@
+W=1 K=4 sets=380 patterns with a certificate: 0 ; without: 240
+W=1 K=4 records 240 ; certificate verified 0 ; certificate WRONG 0 ; no certificate 240 ; smallest margin (need - cut) -1
+W=2 K=6 sets=380 patterns with a certificate: 0 ; without: 90
+W=2 K=6 records 90 ; certificate verified 0 ; certificate WRONG 0 ; no certificate 90 ; smallest margin (need - cut) -1
+W=3 K=9 sets=380 patterns with a certificate: 0 ; without: 1680
+W=3 K=9 records 1680 ; certificate verified 0 ; certificate WRONG 0 ; no certificate 1680 ; smallest margin (need - cut) -1
+W=3 K=10 sets=380 patterns with a certificate: 0 ; without: 800
+W=3 K=10 records 800 ; certificate verified 0 ; certificate WRONG 0 ; no certificate 800 ; smallest margin (need - cut) -1
+W=3 K=11 sets=380 patterns with a certificate: 0 ; without: 800
+W=3 K=11 records 800 ; certificate verified 0 ; certificate WRONG 0 ; no certificate 800 ; smallest margin (need - cut) -1
+W=3 K=12 sets=380 patterns with a certificate: 0 ; without: 800
+W=3 K=12 records 800 ; certificate verified 0 ; certificate WRONG 0 ; no certificate 800 ; smallest margin (need - cut) -1
+W=2 K=7 sets=380 patterns with a certificate: 0 ; without: 500
+W=2 K=7 records 500 ; certificate verified 0 ; certificate WRONG 0 ; no certificate 500 ; smallest margin (need - cut) -1
+W=2 K=8 sets=380 patterns with a certificate: 0 ; without: 500
+W=2 K=8 records 500 ; certificate verified 0 ; certificate WRONG 0 ; no certificate 500 ; smallest margin (need - cut) -1

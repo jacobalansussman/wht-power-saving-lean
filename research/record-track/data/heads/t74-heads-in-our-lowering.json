@@ -1,0 +1,87 @@
+{
+ "date": "2026-10-14",
+ "agent": "lg-g0",
+ "gate": "G0 (rl-plan section 6)",
+ "verdict": "PASS: heads 11010 >= 9443 (kill line), margin 1567",
+ "lowering": "bh-gap gcert words (no copies, exit-route residuals) + OUR hosted nine-stage network (h-L3-build Work/XHost step order and role touches parsed from Lean; gate read/write sets from Shea Bridge401/Gates.lean at 5239484) + T74 PLAN order / OWNERS as data, each replica run cut into segments at its call times",
+ "heads": 11010,
+ "neither": 11738,
+ "tails": 0,
+ "per_child": {
+  "8": [
+   "A4",
+   "x",
+   48,
+   "HEAD-literal",
+   6150
+  ],
+  "10": [
+   "A4",
+   "y",
+   48,
+   "HEAD-literal",
+   4860
+  ],
+  "12": [
+   "F1",
+   "x",
+   48,
+   "neither",
+   6672
+  ],
+  "13": [
+   "F1",
+   "y",
+   48,
+   "neither",
+   5066
+  ]
+ },
+ "remainder_profile": {
+  "48": 22748
+ },
+ "remainder_profile_equals_48_22748": true,
+ "owner_entries": 319680,
+ "window_violations_in_our_order": {},
+ "loads_over_rank": 0,
+ "one_use_per_call_and_role": true,
+ "our_residuals_equal_hub_widths": {
+  "T74-extra-566": true,
+  "T74-gauge44-566": true
+ },
+ "call_blocks": {
+  "max_rank": 8,
+  "all_le_8": true,
+  "global_profile_equals_hub": true,
+  "global_profile": {
+   "1": 1560432,
+   "2": 336336,
+   "3": 278724,
+   "4": 84912,
+   "5": 54612,
+   "8": 5328,
+   "48": 22748
+  }
+ },
+ "word_hist_equals_hub_registry": {
+  "T74-extra-566": true,
+  "T74-gauge44-566": true
+ },
+ "windows_derived_equal_lean_inWin": true,
+ "controls": {
+  "negative_gateA4_before_climbA4": {
+   "neither": 22748
+  },
+  "positive_tail_detector_without_gateC2": {
+   "HEAD-literal": 11010,
+   "TAIL-literal": 11738
+  },
+  "hub_controller_counts_rl_check": {
+   "8": 6150,
+   "10": 4860,
+   "12": 6672,
+   "13": 5066
+  }
+ },
+ "prices_recomputed": "out/price-check.txt: uniform 1.6797549561e-3, full cut 1.6948357905e-3, half cut 1.6968621073e-3 [what-if, mixed price; rl-plan root]"
+}

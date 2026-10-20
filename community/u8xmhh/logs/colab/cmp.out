@@ -1,0 +1,54 @@
+tools: afa65e57a1770f59 /content/work/cc/bin/comparator 8c5d64ba68f4d3a6 /content/work/cc/bin/lean4export c9cecac22f9631c0 /content/work/cc/bin/nanoda_bin 23bac6afaf444361 /content/work/fs-build/cc/jail2.sh 1e6528c3f2c8b10b /content/work/fs-build/cc/nounix 01f56ebe57de64f1 /content/work/fs-build/cc/fresh-bin/lake 
+=== fsb-U8XMHH-pos START Tue Oct 13 22:24:38 UTC 2026 (slot waited 10s) config: 4f3017388ddfd4637a13980fb2decbf7454389b5fd8f99c88ac6c1dedd908e43  comparator/fourier-u8xmhh.json
+{
+  "challenge_module": "Work.FourierU8XMHH.UniformFourierChallenge",
+  "solution_module": "Work.FourierU8XMHH.Main",
+  "theorem_names": [
+    "OAI.PowerSaving.transform_mainU8XMHH",
+    "OAI.PowerSaving.convolution_mainU8XMHH"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
+olean files before: 480
+=== fsb-U8XMHH-pos END rc=0 wall=887s Tue Oct 13 22:39:25 UTC 2026
+Building Work.FourierU8XMHH.UniformFourierChallenge
+Building Work.FourierU8XMHH.Main
+nanoda kernel accepts the solution
+Lean default kernel accepts the solution
+Your solution is okay!
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:47.37
+	Maximum resident set size (kbytes): 7025672
+	Exit status: 0
+olean files after: 480
+=== fsb-U8XMHH-neg START Tue Oct 13 22:39:37 UTC 2026 (slot waited 10s) config: c8290c3d43aaef05b0a0978584ddf44b45211ec08ae0e2416b7c0dbf82bd4be1  comparator/fourier-u8xmhh-neg.json
+{
+  "challenge_module": "Work.FourierU8XMHHNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierU8XMHH.Main",
+  "theorem_names": [
+    "OAI.PowerSaving.transform_mainU8XMHH",
+    "OAI.PowerSaving.convolution_mainU8XMHH"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
+olean files before: 480
+=== fsb-U8XMHH-neg END rc=1 wall=146s Tue Oct 13 22:42:03 UTC 2026
+Building Work.FourierU8XMHHNeg.UniformFourierChallenge
+Building Work.FourierU8XMHH.Main
+uncaught exception: Const does not match between challenge and target 'OAI.PowerSaving.decimalExponentU8XMHH'
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:25.34
+	Maximum resident set size (kbytes): 6916640
+	Exit status: 1
+olean files after: 480
+CMPDONE

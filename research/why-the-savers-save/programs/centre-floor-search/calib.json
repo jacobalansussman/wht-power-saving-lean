@@ -1,0 +1,122 @@
+[
+ {
+  "name": "hub64: f = e_i (frame roots)",
+  "exact": true,
+  "pair": 64,
+  "pair_terms": [
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8
+  ],
+  "star_gather": 64,
+  "star_gather_terms": [
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8
+  ],
+  "star_scatter": 64,
+  "star_min": 64,
+  "n": 8,
+  "junk_entries": 5824
+ },
+ {
+  "name": "butterfly (e_2a +- e_2a+1)",
+  "exact": true,
+  "pair": 72,
+  "pair_terms": [
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9
+  ],
+  "star_gather": 72,
+  "star_gather_terms": [
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9
+  ],
+  "star_scatter": 72,
+  "star_min": 72,
+  "n": 8,
+  "junk_entries": 5824
+ },
+ {
+  "name": "halves (e_j +- e_j+4)",
+  "exact": true,
+  "pair": 72,
+  "pair_terms": [
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9
+  ],
+  "star_gather": 72,
+  "star_gather_terms": [
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9
+  ],
+  "star_scatter": 72,
+  "star_min": 72,
+  "n": 8,
+  "junk_entries": 5824
+ },
+ {
+  "name": "WHT rows",
+  "exact": true,
+  "pair": 72,
+  "pair_terms": [
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9
+  ],
+  "star_gather": 72,
+  "star_gather_terms": [
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9,
+   9
+  ],
+  "star_scatter": 72,
+  "star_min": 72,
+  "n": 8,
+  "junk_entries": 5824
+ }
+]

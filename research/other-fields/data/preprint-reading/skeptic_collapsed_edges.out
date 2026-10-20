@@ -1,0 +1,13 @@
+edges 735 sessions 157 session distances [(5, 157)]
+pairs by distance [(1, 735), (2, 5391), (3, 7318), (4, 2799), (5, 228)]
+forced pairs by distance [(1, 735), (2, 5391), (3, 6742), (4, 2199), (5, 157)]
+block size 5, no edge collapsed: forced pairs 3 apart with 8 or 9 first steps (count, all needed pairs forced): [((8, True), 1110), ((9, True), 414)] total 1524
+block size 4: every pair 2 apart is forced: True => the collapsed edges form a matching, at most 91; moves at least 644 against 157*4 = 628
+block size 3: paths of 3 edges 39683 of which with unforced ends (could be collapsed whole) 4246
+  two-edge paths that survive the peeling (a collapsed cycle needs them): 2147 ; edges on them: 579
+  collapsed edges at most 181 + 579 = 760 ; a saving at block size 3 needs at least 265 ; moves at least -25 against 157*3 = 471
+x for 735 rank-1 blocks, W = 157, m = 5: 0.0409 ; certificate 744/166: 0.0680
+  m = 3: x = 0.1 needs moves per array below 2.6879 (saved fraction 0.1040)
+  m = 4: x = 0.1 needs moves per array below 3.4822 (saved fraction 0.1294)
+  m = 5: x = 0.1 needs moves per array below 4.2567 (saved fraction 0.1487)
+whole-block bound rho/((1-rho) Lbar): Lbar = ln 5: 0.0423 ; Lbar needed for 0.1: 0.680, i.e. mean block rank about 2.53 of 5

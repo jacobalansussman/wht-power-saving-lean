@@ -1,0 +1,41 @@
+menu main: 457 words, 437 distinct group elements (20 duplicates merged); rows 10912; 3.0 s
+layer slopes seen (rounded to 0.05): [np.float64(0.0), np.float64(1.0), np.float64(1.5), np.float64(2.0)]
+dim of relation space N = 24   (cut between singular values 9.68e-02 and 6.95e-15)
+paid count: sum of dims within bins = 21  ->  excess (relations not split by paid count) = 3
+layer bin: sum of dims within bins = 24  ->  excess (relations not split by layer bin) = 0
+--- 3 independent relations not split by paid count; representatives:
+  relation 0: 15 terms; recheck rel. residual f=7: 8.4e-16  f=8: 8.4e-16
+     +1.0000+0.0000i  [paid 0, layer 0.00]  X2
+     -0.5094+0.7928i  [paid 2, layer 0.00]  D2.Pr0.D2
+     -0.1037+0.8163i  [paid 2, layer 0.00]  D1.Pr0.D1
+     -0.0829-0.6611i  [paid 2, layer 0.00]  D2.Z1.D2
+     -0.3956-0.4808i  [paid 2, layer 0.00]  D1.Z1.D1
+     +0.3912-0.4052i  [paid 0, layer 0.00]  X1
+     +0.3729-0.1872i  [paid 2, layer 0.00]  D3.Pr1.D3
+     -0.3040+0.2360i  [paid 2, layer 0.00]  D2.Pr1.D2
+     -0.0789+0.3034i  [paid 2, layer 0.00]  D3.Pr0.D3
+     +0.0284-0.2921i  [paid 2, layer 0.00]  CS.D1.Pr0.D1.CSi
+  relation 1: 15 terms; recheck rel. residual f=7: 1.1e-15  f=8: 1.1e-15
+     +1.0000-0.0000i  [paid 0, layer 0.00]  X3
+     -0.6124+0.6031i  [paid 2, layer 0.00]  D3.Pr0.D3
+     -0.3876+0.3969i  [paid 2, layer 0.00]  D3.Pr1.D3
+     +0.3590-0.3355i  [paid 2, layer 0.00]  D2.Pr1.D2
+     -0.1894-0.3993i  [paid 2, layer 0.00]  D1.Z1.D1
+     +0.3613+0.1204i  [paid 2, layer 0.00]  D1.Pr0.D1
+     -0.3606-0.0042i  [paid 0, layer 0.00]  X2
+     -0.0918-0.3022i  [paid 0, layer 0.00]  X1
+     +0.0699-0.1962i  [paid 2, layer 0.00]  CS.D1.Pr0.D1.CSi
+     -0.1331+0.0631i  [paid 2, layer 0.00]  CS.D1.1.D1.CSi
+  relation 2: 15 terms; recheck rel. residual f=7: 7.6e-16  f=8: 7.6e-16
+     +1.0000+0.0000i  [paid 2, layer 0.00]  D1.Pr0.D1
+     -0.6128-0.7165i  [paid 0, layer 0.00]  X1
+     +0.2148+0.6858i  [paid 0, layer 0.00]  X2
+     -0.3968-0.5265i  [paid 2, layer 0.00]  D3.Pr0.D3
+     -0.2256-0.4329i  [paid 2, layer 0.00]  D2.Ai.lCS.A.D2
+     +0.2256+0.4329i  [paid 2, layer 0.00]  D1.Ai.lCS.A.D1
+     +0.4724+0.0448i  [paid 2, layer 0.00]  D2.Z1.D2
+     -0.3148-0.3008i  [paid 2, layer 0.00]  D2.Pr0.D2
+     -0.1522+0.3848i  [paid 2, layer 0.00]  D1.Z1.D1
+     -0.1599+0.3001i  [paid 0, layer 0.00]  X3
+--- 0 independent relations not split by layer bin; representatives:
+done 14.4 s

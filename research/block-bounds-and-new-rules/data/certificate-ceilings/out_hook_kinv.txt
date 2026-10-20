@@ -1,0 +1,18 @@
+m=2: K symmetric True;  K Z_1 K = i^m Z_1 exactly: True
+m=2 k=1: psi(Lambda^(k-1)) inside N: True;  psi injective (disjoint nonempty supports): True;  dim = C(n,k-1) = 1
+m=2: K symmetric True;  K Z_1 K = i^m Z_1 exactly: True
+m=2 k=2: psi(Lambda^(k-1)) inside N: True;  psi injective (disjoint nonempty supports): True;  dim = C(n,k-1) = 4
+m=3: K symmetric True;  K Z_1 K = i^m Z_1 exactly: True
+m=3 k=1: psi(Lambda^(k-1)) inside N: True;  psi injective (disjoint nonempty supports): True;  dim = C(n,k-1) = 1
+m=3: K symmetric True;  K Z_1 K = i^m Z_1 exactly: True
+m=3 k=4: psi(Lambda^(k-1)) inside N: True;  psi injective (disjoint nonempty supports): True;  dim = C(n,k-1) = 56
+m=4: K symmetric True;  K Z_1 K = i^m Z_1 exactly: True
+m=4 k=8: psi(Lambda^(k-1)) inside N: True;  psi injective (disjoint nonempty supports): True;  dim = C(n,k-1) = 11440
+m=5: K symmetric True;  K Z_1 K = i^m Z_1 exactly: True
+m=5 k=3: psi(Lambda^(k-1)) inside N: True;  psi injective (disjoint nonempty supports): True;  dim = C(n,k-1) = 496
+m=6: K symmetric True;  K Z_1 K = i^m Z_1 exactly: True
+m=6 k=2: psi(Lambda^(k-1)) inside N: True;  psi injective (disjoint nonempty supports): True;  dim = C(n,k-1) = 64
+m=7: K symmetric True;  K Z_1 K = i^m Z_1 exactly: True
+m=7 k=2: psi(Lambda^(k-1)) inside N: True;  psi injective (disjoint nonempty supports): True;  dim = C(n,k-1) = 128
+m=8: K symmetric True;  K Z_1 K = i^m Z_1 exactly: True
+m=8 k=2: psi(Lambda^(k-1)) inside N: True;  psi injective (disjoint nonempty supports): True;  dim = C(n,k-1) = 256

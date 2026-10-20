@@ -1,0 +1,263 @@
+[timing lock] waiting for timing lock 04:48:53
+[timing lock] got lock 04:48:53; load: { 30.27 33.39 36.27 }
+106.9   4 /System/Library/PrivateFrameworks/MediaAnalysis.framework/Versions/A/mediaanalysisd
+ 99.1  31 $OSS_CAD_SUITE/libexec/z3
+ 16.7   4 $OSS_CAD_SUITE/libexec/nextpnr-ecp5
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK 4 x vDSP-D pipeline (all 64 channels)    max abs err 0.000e+00  rel err 0.000e+00  (tol 1.0e-13) PASS
+CHECK 4 x FFTW-d NEON pipeline (all 64 channels) max abs err 5.329e-15  rel err 3.237e-16  (tol 1.0e-13) PASS
+CHECK 1 SME + 3 FFTW-d (all 64 channels)       max abs err 5.329e-15  rel err 3.237e-16  (tol 1.0e-13) PASS
+CHECK 2 SME + 2 FFTW-d (all 64 channels)       max abs err 3.553e-15  rel err 2.158e-16  (tol 1.0e-13) PASS
+CHECK 4 SME threads (all 64 channels)          max abs err 5.329e-15  rel err 3.237e-16  (tol 1.0e-13) PASS
+CHECK 4 x KFR-d pipeline (all 64 channels)     max abs err 7.105e-15  rel err 4.316e-16  (tol 1.0e-13) PASS
+CHECK 1 SME + 3 KFR-d (all 64 channels)        max abs err 7.105e-15  rel err 4.316e-16  (tol 1.0e-13) PASS
+## cluster welch fp64 N=512 nov=256 hann C=64 L=2^18 (128 MiB)  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  4 x vDSP-D pipeline                0.6675
+rep  0  4 x FFTW-d NEON pipeline           0.5920
+rep  0  1 SME + 3 FFTW-d                   0.6274
+rep  0  2 SME + 2 FFTW-d                   0.5898
+rep  0  4 SME threads                      0.6125
+rep  0  4 x KFR-d pipeline                 0.5984
+rep  0  1 SME + 3 KFR-d                    0.6114
+rep  1  4 x FFTW-d NEON pipeline           0.5864
+rep  1  1 SME + 3 FFTW-d                   0.6142
+rep  1  2 SME + 2 FFTW-d                   0.5898
+rep  1  4 SME threads                      0.6172
+rep  1  4 x KFR-d pipeline                 0.5971
+rep  1  1 SME + 3 KFR-d                    0.6013
+rep  1  4 x vDSP-D pipeline                0.6910
+rep  2  1 SME + 3 FFTW-d                   0.6135
+rep  2  2 SME + 2 FFTW-d                   0.5951
+rep  2  4 SME threads                      0.6143
+rep  2  4 x KFR-d pipeline                 0.6021
+rep  2  1 SME + 3 KFR-d                    0.6301
+rep  2  4 x vDSP-D pipeline                0.6683
+rep  2  4 x FFTW-d NEON pipeline           0.5978
+rep  3  2 SME + 2 FFTW-d                   0.6044
+rep  3  4 SME threads                      0.6134
+rep  3  4 x KFR-d pipeline                 0.5974
+rep  3  1 SME + 3 KFR-d                    0.6143
+rep  3  4 x vDSP-D pipeline                0.6751
+rep  3  4 x FFTW-d NEON pipeline           0.6040
+rep  3  1 SME + 3 FFTW-d                   0.6128
+rep  4  4 SME threads                      0.6187
+rep  4  4 x KFR-d pipeline                 0.5974
+rep  4  1 SME + 3 KFR-d                    0.6299
+rep  4  4 x vDSP-D pipeline                0.6703
+rep  4  4 x FFTW-d NEON pipeline           0.6035
+rep  4  1 SME + 3 FFTW-d                   0.6325
+rep  4  2 SME + 2 FFTW-d                   0.6002
+rep  5  4 x KFR-d pipeline                 0.6279
+rep  5  1 SME + 3 KFR-d                    0.6147
+rep  5  4 x vDSP-D pipeline                0.6764
+rep  5  4 x FFTW-d NEON pipeline           0.6096
+rep  5  1 SME + 3 FFTW-d                   0.6284
+rep  5  2 SME + 2 FFTW-d                   0.6027
+rep  5  4 SME threads                      0.5980
+rep  6  1 SME + 3 KFR-d                    0.6125
+rep  6  4 x vDSP-D pipeline                0.6700
+rep  6  4 x FFTW-d NEON pipeline           0.6092
+rep  6  1 SME + 3 FFTW-d                   0.6128
+rep  6  2 SME + 2 FFTW-d                   0.6100
+rep  6  4 SME threads                      0.6121
+rep  6  4 x KFR-d pipeline                 0.6114
+rep  7  4 x vDSP-D pipeline                0.6728
+rep  7  4 x FFTW-d NEON pipeline           0.6070
+rep  7  1 SME + 3 FFTW-d                   0.6195
+rep  7  2 SME + 2 FFTW-d                   0.6010
+rep  7  4 SME threads                      0.6264
+rep  7  4 x KFR-d pipeline                 0.6182
+rep  7  1 SME + 3 KFR-d                    0.6319
+rep  8  4 x FFTW-d NEON pipeline           0.6010
+rep  8  1 SME + 3 FFTW-d                   0.6169
+rep  8  2 SME + 2 FFTW-d                   0.6260
+rep  8  4 SME threads                      0.6127
+rep  8  4 x KFR-d pipeline                 0.6180
+rep  8  1 SME + 3 KFR-d                    0.6184
+rep  8  4 x vDSP-D pipeline                0.6928
+RESULT cluster welch fp64 N=512 nov=256 hann C=64 L=2^18 (128 MiB) 4 x vDSP-D pipeline          best     0.6675  median     0.6728  ns/input sample  (calls/rep 20)
+RESULT cluster welch fp64 N=512 nov=256 hann C=64 L=2^18 (128 MiB) 4 x FFTW-d NEON pipeline     best     0.5864  median     0.6035  ns/input sample  (calls/rep 23)
+RESULT cluster welch fp64 N=512 nov=256 hann C=64 L=2^18 (128 MiB) 1 SME + 3 FFTW-d             best     0.6128  median     0.6169  ns/input sample  (calls/rep 22)
+RESULT cluster welch fp64 N=512 nov=256 hann C=64 L=2^18 (128 MiB) 2 SME + 2 FFTW-d             best     0.5898  median     0.6010  ns/input sample  (calls/rep 21)
+RESULT cluster welch fp64 N=512 nov=256 hann C=64 L=2^18 (128 MiB) 4 SME threads                best     0.5980  median     0.6134  ns/input sample  (calls/rep 22)
+RESULT cluster welch fp64 N=512 nov=256 hann C=64 L=2^18 (128 MiB) 4 x KFR-d pipeline           best     0.5971  median     0.6021  ns/input sample  (calls/rep 21)
+RESULT cluster welch fp64 N=512 nov=256 hann C=64 L=2^18 (128 MiB) 1 SME + 3 KFR-d              best     0.6013  median     0.6147  ns/input sample  (calls/rep 21)
+MS 4 x vDSP-D pipeline      best    11.199 median    11.288 ms/call   vs 4 x vDSP median   +0.0 %  vs slot-1 library x 4 median  +11.5 %
+MS 4 x FFTW-d NEON pipeline best     9.838 median    10.125 ms/call   vs 4 x vDSP median  -10.3 %  vs slot-1 library x 4 median   +0.0 %
+MS 1 SME + 3 FFTW-d         best    10.281 median    10.349 ms/call   vs 4 x vDSP median   -8.3 %  vs slot-1 library x 4 median   +2.2 %
+MS 2 SME + 2 FFTW-d         best     9.896 median    10.083 ms/call   vs 4 x vDSP median  -10.7 %  vs slot-1 library x 4 median   -0.4 %
+MS 4 SME threads            best    10.033 median    10.290 ms/call   vs 4 x vDSP median   -8.8 %  vs slot-1 library x 4 median   +1.6 %
+MS 4 x KFR-d pipeline       best    10.018 median    10.102 ms/call   vs 4 x vDSP median  -10.5 %  vs slot-1 library x 4 median   -0.2 %
+MS 1 SME + 3 KFR-d          best    10.088 median    10.312 ms/call   vs 4 x vDSP median   -8.6 %  vs slot-1 library x 4 median   +1.8 %
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK 4 x vDSP-D pipeline (all 64 channels)    max abs err 0.000e+00  rel err 0.000e+00  (tol 1.0e-13) PASS
+CHECK 4 x FFTW-d NEON pipeline (all 64 channels) max abs err 2.132e-14  rel err 3.718e-16  (tol 1.0e-13) PASS
+CHECK 1 SME + 3 FFTW-d (all 64 channels)       max abs err 2.132e-14  rel err 3.718e-16  (tol 1.0e-13) PASS
+CHECK 2 SME + 2 FFTW-d (all 64 channels)       max abs err 2.132e-14  rel err 3.718e-16  (tol 1.0e-13) PASS
+CHECK 4 SME threads (all 64 channels)          max abs err 2.132e-14  rel err 3.718e-16  (tol 1.0e-13) PASS
+CHECK 4 x KFR-d pipeline (all 64 channels)     max abs err 2.132e-14  rel err 3.718e-16  (tol 1.0e-13) PASS
+CHECK 1 SME + 3 KFR-d (all 64 channels)        max abs err 2.132e-14  rel err 3.718e-16  (tol 1.0e-13) PASS
+## cluster welch fp64 N=2048 nov=1024 hann C=64 L=2^18 (128 MiB)  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  4 x vDSP-D pipeline                0.8336
+rep  0  4 x FFTW-d NEON pipeline           0.8169
+rep  0  1 SME + 3 FFTW-d                   0.8093
+rep  0  2 SME + 2 FFTW-d                   0.8522
+rep  0  4 SME threads                      0.7885
+rep  0  4 x KFR-d pipeline                 0.8300
+rep  0  1 SME + 3 KFR-d                    0.8418
+rep  1  4 x FFTW-d NEON pipeline           0.8158
+rep  1  1 SME + 3 FFTW-d                   0.8108
+rep  1  2 SME + 2 FFTW-d                   0.8016
+rep  1  4 SME threads                      0.8032
+rep  1  4 x KFR-d pipeline                 0.8409
+rep  1  1 SME + 3 KFR-d                    0.8256
+rep  1  4 x vDSP-D pipeline                0.8709
+rep  2  1 SME + 3 FFTW-d                   0.8160
+rep  2  2 SME + 2 FFTW-d                   0.8005
+rep  2  4 SME threads                      0.8035
+rep  2  4 x KFR-d pipeline                 0.8274
+rep  2  1 SME + 3 KFR-d                    0.8154
+rep  2  4 x vDSP-D pipeline                0.8288
+rep  2  4 x FFTW-d NEON pipeline           0.8212
+rep  3  2 SME + 2 FFTW-d                   0.8154
+rep  3  4 SME threads                      0.7928
+rep  3  4 x KFR-d pipeline                 0.8496
+rep  3  1 SME + 3 KFR-d                    0.8287
+rep  3  4 x vDSP-D pipeline                0.8400
+rep  3  4 x FFTW-d NEON pipeline           0.8266
+rep  3  1 SME + 3 FFTW-d                   0.8121
+rep  4  4 SME threads                      0.8008
+rep  4  4 x KFR-d pipeline                 0.8190
+rep  4  1 SME + 3 KFR-d                    0.8190
+rep  4  4 x vDSP-D pipeline                0.8425
+rep  4  4 x FFTW-d NEON pipeline           0.8338
+rep  4  1 SME + 3 FFTW-d                   0.8104
+rep  4  2 SME + 2 FFTW-d                   0.8270
+rep  5  4 x KFR-d pipeline                 0.8428
+rep  5  1 SME + 3 KFR-d                    0.8572
+rep  5  4 x vDSP-D pipeline                0.8846
+rep  5  4 x FFTW-d NEON pipeline           0.8794
+rep  5  1 SME + 3 FFTW-d                   0.8726
+rep  5  2 SME + 2 FFTW-d                   0.8212
+rep  5  4 SME threads                      0.7819
+rep  6  1 SME + 3 KFR-d                    0.8293
+rep  6  4 x vDSP-D pipeline                0.8489
+rep  6  4 x FFTW-d NEON pipeline           0.8189
+rep  6  1 SME + 3 FFTW-d                   0.8164
+rep  6  2 SME + 2 FFTW-d                   0.8049
+rep  6  4 SME threads                      0.7815
+rep  6  4 x KFR-d pipeline                 0.8182
+rep  7  4 x vDSP-D pipeline                0.8396
+rep  7  4 x FFTW-d NEON pipeline           0.8269
+rep  7  1 SME + 3 FFTW-d                   0.8093
+rep  7  2 SME + 2 FFTW-d                   0.8040
+rep  7  4 SME threads                      0.8084
+rep  7  4 x KFR-d pipeline                 0.8474
+rep  7  1 SME + 3 KFR-d                    0.8338
+rep  8  4 x FFTW-d NEON pipeline           0.8327
+rep  8  1 SME + 3 FFTW-d                   0.8263
+rep  8  2 SME + 2 FFTW-d                   0.7952
+rep  8  4 SME threads                      0.7937
+rep  8  4 x KFR-d pipeline                 0.8440
+rep  8  1 SME + 3 KFR-d                    0.8306
+rep  8  4 x vDSP-D pipeline                0.8320
+RESULT cluster welch fp64 N=2048 nov=1024 hann C=64 L=2^18 (128 MiB) 4 x vDSP-D pipeline          best     0.8288  median     0.8400  ns/input sample  (calls/rep 15)
+RESULT cluster welch fp64 N=2048 nov=1024 hann C=64 L=2^18 (128 MiB) 4 x FFTW-d NEON pipeline     best     0.8158  median     0.8266  ns/input sample  (calls/rep 17)
+RESULT cluster welch fp64 N=2048 nov=1024 hann C=64 L=2^18 (128 MiB) 1 SME + 3 FFTW-d             best     0.8093  median     0.8121  ns/input sample  (calls/rep 17)
+RESULT cluster welch fp64 N=2048 nov=1024 hann C=64 L=2^18 (128 MiB) 2 SME + 2 FFTW-d             best     0.7952  median     0.8049  ns/input sample  (calls/rep 17)
+RESULT cluster welch fp64 N=2048 nov=1024 hann C=64 L=2^18 (128 MiB) 4 SME threads                best     0.7815  median     0.7937  ns/input sample  (calls/rep 17)
+RESULT cluster welch fp64 N=2048 nov=1024 hann C=64 L=2^18 (128 MiB) 4 x KFR-d pipeline           best     0.8182  median     0.8409  ns/input sample  (calls/rep 16)
+RESULT cluster welch fp64 N=2048 nov=1024 hann C=64 L=2^18 (128 MiB) 1 SME + 3 KFR-d              best     0.8154  median     0.8293  ns/input sample  (calls/rep 17)
+MS 4 x vDSP-D pipeline      best    13.905 median    14.093 ms/call   vs 4 x vDSP median   +0.0 %  vs slot-1 library x 4 median   +1.6 %
+MS 4 x FFTW-d NEON pipeline best    13.687 median    13.868 ms/call   vs 4 x vDSP median   -1.6 %  vs slot-1 library x 4 median   +0.0 %
+MS 1 SME + 3 FFTW-d         best    13.577 median    13.625 ms/call   vs 4 x vDSP median   -3.3 %  vs slot-1 library x 4 median   -1.8 %
+MS 2 SME + 2 FFTW-d         best    13.341 median    13.503 ms/call   vs 4 x vDSP median   -4.2 %  vs slot-1 library x 4 median   -2.6 %
+MS 4 SME threads            best    13.111 median    13.316 ms/call   vs 4 x vDSP median   -5.5 %  vs slot-1 library x 4 median   -4.0 %
+MS 4 x KFR-d pipeline       best    13.728 median    14.108 ms/call   vs 4 x vDSP median   +0.1 %  vs slot-1 library x 4 median   +1.7 %
+MS 1 SME + 3 KFR-d          best    13.681 median    13.914 ms/call   vs 4 x vDSP median   -1.3 %  vs slot-1 library x 4 median   +0.3 %
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK 4 x vDSP-D pipeline (all 64 channels)    max abs err 0.000e+00  rel err 0.000e+00  (tol 1.0e-13) PASS
+CHECK 4 x FFTW-d NEON pipeline (all 64 channels) max abs err 5.684e-14  rel err 5.529e-16  (tol 1.0e-13) PASS
+CHECK 1 SME + 3 FFTW-d (all 64 channels)       max abs err 4.263e-14  rel err 4.146e-16  (tol 1.0e-13) PASS
+CHECK 2 SME + 2 FFTW-d (all 64 channels)       max abs err 4.263e-14  rel err 4.146e-16  (tol 1.0e-13) PASS
+CHECK 4 SME threads (all 64 channels)          max abs err 4.263e-14  rel err 4.146e-16  (tol 1.0e-13) PASS
+CHECK 4 x KFR-d pipeline (all 64 channels)     max abs err 5.684e-14  rel err 5.529e-16  (tol 1.0e-13) PASS
+CHECK 1 SME + 3 KFR-d (all 64 channels)        max abs err 5.684e-14  rel err 5.529e-16  (tol 1.0e-13) PASS
+## cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 (128 MiB)  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  4 x vDSP-D pipeline                0.9699
+rep  0  4 x FFTW-d NEON pipeline           0.9030
+rep  0  1 SME + 3 FFTW-d                   0.8617
+rep  0  2 SME + 2 FFTW-d                   0.8200
+rep  0  4 SME threads                      0.7949
+rep  0  4 x KFR-d pipeline                 0.9422
+rep  0  1 SME + 3 KFR-d                    0.8791
+rep  1  4 x FFTW-d NEON pipeline           0.9061
+rep  1  1 SME + 3 FFTW-d                   0.8523
+rep  1  2 SME + 2 FFTW-d                   0.8109
+rep  1  4 SME threads                      0.8063
+rep  1  4 x KFR-d pipeline                 0.9225
+rep  1  1 SME + 3 KFR-d                    0.8894
+rep  1  4 x vDSP-D pipeline                0.9758
+rep  2  1 SME + 3 FFTW-d                   0.8588
+rep  2  2 SME + 2 FFTW-d                   0.8658
+rep  2  4 SME threads                      0.8805
+rep  2  4 x KFR-d pipeline                 0.9261
+rep  2  1 SME + 3 KFR-d                    0.8911
+rep  2  4 x vDSP-D pipeline                1.0804
+rep  2  4 x FFTW-d NEON pipeline           0.9396
+rep  3  2 SME + 2 FFTW-d                   0.8601
+rep  3  4 SME threads                      0.8570
+rep  3  4 x KFR-d pipeline                 0.9549
+rep  3  1 SME + 3 KFR-d                    0.8937
+rep  3  4 x vDSP-D pipeline                0.9810
+rep  3  4 x FFTW-d NEON pipeline           0.9196
+rep  3  1 SME + 3 FFTW-d                   0.8919
+rep  4  4 SME threads                      0.8166
+rep  4  4 x KFR-d pipeline                 0.9982
+rep  4  1 SME + 3 KFR-d                    0.9044
+rep  4  4 x vDSP-D pipeline                1.0355
+rep  4  4 x FFTW-d NEON pipeline           1.0156
+rep  4  1 SME + 3 FFTW-d                   0.8857
+rep  4  2 SME + 2 FFTW-d                   0.8374
+rep  5  4 x KFR-d pipeline                 0.9669
+rep  5  1 SME + 3 KFR-d                    0.9022
+rep  5  4 x vDSP-D pipeline                1.0639
+rep  5  4 x FFTW-d NEON pipeline           1.0161
+rep  5  1 SME + 3 FFTW-d                   0.9034
+rep  5  2 SME + 2 FFTW-d                   0.8488
+rep  5  4 SME threads                      0.8141
+rep  6  1 SME + 3 KFR-d                    0.8960
+rep  6  4 x vDSP-D pipeline                1.0046
+rep  6  4 x FFTW-d NEON pipeline           0.9210
+rep  6  1 SME + 3 FFTW-d                   0.8665
+rep  6  2 SME + 2 FFTW-d                   0.8370
+rep  6  4 SME threads                      0.8267
+rep  6  4 x KFR-d pipeline                 0.9214
+rep  7  4 x vDSP-D pipeline                0.9827
+rep  7  4 x FFTW-d NEON pipeline           0.8996
+rep  7  1 SME + 3 FFTW-d                   0.8652
+rep  7  2 SME + 2 FFTW-d                   0.8139
+rep  7  4 SME threads                      0.8047
+rep  7  4 x KFR-d pipeline                 0.9200
+rep  7  1 SME + 3 KFR-d                    0.8725
+rep  8  4 x FFTW-d NEON pipeline           0.9031
+rep  8  1 SME + 3 FFTW-d                   0.8787
+rep  8  2 SME + 2 FFTW-d                   0.8247
+rep  8  4 SME threads                      0.8166
+rep  8  4 x KFR-d pipeline                 0.9114
+rep  8  1 SME + 3 KFR-d                    0.8634
+rep  8  4 x vDSP-D pipeline                0.9834
+RESULT cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 (128 MiB) 4 x vDSP-D pipeline          best     0.9699  median     0.9834  ns/input sample  (calls/rep 14)
+RESULT cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 (128 MiB) 4 x FFTW-d NEON pipeline     best     0.8996  median     0.9196  ns/input sample  (calls/rep 16)
+RESULT cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 (128 MiB) 1 SME + 3 FFTW-d             best     0.8523  median     0.8665  ns/input sample  (calls/rep 16)
+RESULT cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 (128 MiB) 2 SME + 2 FFTW-d             best     0.8109  median     0.8370  ns/input sample  (calls/rep 17)
+RESULT cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 (128 MiB) 4 SME threads                best     0.7949  median     0.8166  ns/input sample  (calls/rep 16)
+RESULT cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 (128 MiB) 4 x KFR-d pipeline           best     0.9114  median     0.9261  ns/input sample  (calls/rep 15)
+RESULT cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 (128 MiB) 1 SME + 3 KFR-d              best     0.8634  median     0.8911  ns/input sample  (calls/rep 15)
+MS 4 x vDSP-D pipeline      best    16.272 median    16.499 ms/call   vs 4 x vDSP median   +0.0 %  vs slot-1 library x 4 median   +6.9 %
+MS 4 x FFTW-d NEON pipeline best    15.092 median    15.429 ms/call   vs 4 x vDSP median   -6.5 %  vs slot-1 library x 4 median   +0.0 %
+MS 1 SME + 3 FFTW-d         best    14.300 median    14.538 ms/call   vs 4 x vDSP median  -11.9 %  vs slot-1 library x 4 median   -5.8 %
+MS 2 SME + 2 FFTW-d         best    13.604 median    14.042 ms/call   vs 4 x vDSP median  -14.9 %  vs slot-1 library x 4 median   -9.0 %
+MS 4 SME threads            best    13.336 median    13.700 ms/call   vs 4 x vDSP median  -17.0 %  vs slot-1 library x 4 median  -11.2 %
+MS 4 x KFR-d pipeline       best    15.291 median    15.537 ms/call   vs 4 x vDSP median   -5.8 %  vs slot-1 library x 4 median   +0.7 %
+MS 1 SME + 3 KFR-d          best    14.485 median    14.950 ms/call   vs 4 x vDSP median   -9.4 %  vs slot-1 library x 4 median   -3.1 %

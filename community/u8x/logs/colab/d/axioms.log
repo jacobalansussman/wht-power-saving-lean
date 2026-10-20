@@ -1,0 +1,3 @@
+'OAI.PowerSaving.transform_mainU8X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainU8X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8X_program' depends on axioms: [propext, Classical.choice, Quot.sound]

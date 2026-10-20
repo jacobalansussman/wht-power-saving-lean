@@ -1,0 +1,322 @@
+{
+ "hub_main": "ba82555 (blobless sparse clone in hub/)",
+ "control": {
+  "source": "#1042 (jeremykothe2): T16 owner packing on #1018 seven-slot k8 word",
+  "profile": {
+   "1": 349577,
+   "2": 60193,
+   "3": 62608,
+   "4": 20448,
+   "5": 11808,
+   "7": 3,
+   "8": 1152,
+   "16": 47,
+   "48": 4850
+  },
+  "m": 73,
+  "W": 14336,
+  "deficit": 5120,
+  "b": "418747253984418082117/250000000000000000000000",
+  "b_decimal": "0.001674989015937672328468",
+  "kappa": "0.001672188119205421",
+  "reproduced_exactly": true
+ },
+ "k8_word": {
+  "full_content_sha256": "c2b294300760e1fd...",
+  "canonical_file_sha256": "16bc0ebb04b4be6c...",
+  "R": 480,
+  "local_profile": {
+   "1": 2412,
+   "2": 418,
+   "3": 432,
+   "4": 142,
+   "5": 82,
+   "8": 8
+  },
+  "width": 3730,
+  "widths": {
+   "4": 56,
+   "5": 32,
+   "7": 30,
+   "8": 122,
+   "9": 240
+  },
+  "plane_helpers": 368,
+  "nonplane_Mcopy_helpers": 112
+ },
+ "blocks": {
+  "K_blocks_leaver_cells": [
+   0,
+   2,
+   5,
+   7,
+   8,
+   10
+  ],
+  "nonK_blocks": [
+   1,
+   3,
+   4,
+   6,
+   9,
+   11,
+   12,
+   13
+  ],
+  "partition": "d-pair-market u8_blocks.json (U8 numbering)",
+  "inblock_helpers_u8": 28,
+  "inblock_helpers_k8": {
+   "nonK": 28,
+   "K": 24
+  },
+  "cross_planes_k8": 16,
+  "two_visitor_planes_k8": 24,
+  "targets_rank2_stop_on_cell_pairs": {
+   "7": 8,
+   "8": 8,
+   "10": 8,
+   "2": 4,
+   "5": 4,
+   "0": 0
+  }
+ },
+ "pm_rerun": {
+  "demand_identical_to_U8": true,
+  "per_block_FB8_FACELOW0": {
+   "9": 32,
+   "5": 32,
+   "11": 32,
+   "10": 32,
+   "4": 32,
+   "8": 32,
+   "3": 32,
+   "2": 32,
+   "1": 32,
+   "0": 32,
+   "13": 32,
+   "7": 32,
+   "6": 32,
+   "12": 32
+  },
+  "total": 448,
+  "solutions_identical_to_d_pair_market": true,
+  "fb_variants": {
+   "b2_FB0": 36,
+   "b2_FB4": "34 (TL, bound 33)",
+   "b7_FB0": 36,
+   "b7_FB4": "34 (TL, bound 32)"
+  }
+ },
+ "kaware_pmk": {
+  "2": {
+   "FB0": {
+    "helpers": 32,
+    "status": 0,
+    "dropped": 12,
+    "low_uses": 0
+   },
+   "FB8": {
+    "helpers": 30,
+    "status": 0,
+    "dropped": 12,
+    "low_uses": 4
+   }
+  },
+  "8": {
+   "FB0": {
+    "helpers": 32,
+    "status": 0,
+    "dropped": 16,
+    "low_uses": 0
+   },
+   "FB8": {
+    "helpers": 32,
+    "status": 0,
+    "dropped": 16,
+    "low_uses": 0
+   }
+  },
+  "10": {
+   "FB8": {
+    "helpers": 28,
+    "status": 0,
+    "dropped": 20,
+    "low_uses": 0
+   },
+   "FB0": {
+    "helpers": 28,
+    "status": 0,
+    "dropped": 20,
+    "low_uses": 0
+   }
+  },
+  "0": {
+   "FB8": {
+    "helpers": 32,
+    "status": 0,
+    "dropped": 4,
+    "low_uses": 8
+   },
+   "FB0": {
+    "helpers": 36,
+    "status": 0,
+    "dropped": 4,
+    "low_uses": 0
+   }
+  },
+  "7": {
+   "FB8": {
+    "helpers": 30,
+    "status": 0,
+    "dropped": 18,
+    "low_uses": 0
+   },
+   "FB0": {
+    "helpers": 30,
+    "status": 0,
+    "dropped": 18,
+    "low_uses": 0
+   }
+  },
+  "5": {
+   "FB0": {
+    "helpers": 34,
+    "status": 0,
+    "dropped": 10,
+    "low_uses": 0
+   },
+   "FB8": {
+    "helpers": 32,
+    "status": 0,
+    "dropped": 10,
+    "low_uses": 4
+   }
+  }
+ },
+ "model_count": {
+  "safe": 448,
+  "kaware": 444,
+  "upper": 440,
+  "k8_actual": 480,
+  "gap_safe": 32,
+  "gap_kaware": 36,
+  "gap_upper": 40,
+  "u8_gap_for_reference": 56
+ },
+ "whatif_price_on_1042": {
+  "N32": {
+   "typical": {
+    "hole": {
+     "b": "0.001704231143210",
+     "b_gain_pct": 1.746,
+     "kappa": "0.001701331680774581",
+     "kappa_gain": 2.914356156916e-05,
+     "kappa_gain_pct": 1.743,
+     "binding": "complex"
+    },
+    "bins48": {
+     "b": "0.001741971834619",
+     "b_gain_pct": 3.999,
+     "kappa": "0.001730427469823602",
+     "kappa_gain": 5.8239350618181e-05,
+     "kappa_gain_pct": 3.483,
+     "binding": "bit"
+    }
+   },
+   "mcopy": {
+    "hole": {
+     "b": "0.001697777362016",
+     "b_gain_pct": 1.361,
+     "kappa": "0.001694899799505106",
+     "kappa_gain": 2.2711680299685e-05,
+     "kappa_gain_pct": 1.358,
+     "binding": "complex"
+    },
+    "bins48": {
+     "b": "0.001730879735007",
+     "b_gain_pct": 3.337,
+     "kappa": "0.001727888967009765",
+     "kappa_gain": 5.5700847804344e-05,
+     "kappa_gain_pct": 3.331,
+     "binding": "complex"
+    }
+   }
+  },
+  "N36": {
+   "typical": {
+    "hole": {
+     "b": "0.001707961098288",
+     "b_gain_pct": 1.968,
+     "kappa": "0.001705048941025591",
+     "kappa_gain": 3.286082182017e-05,
+     "kappa_gain_pct": 1.965,
+     "binding": "complex"
+    },
+    "bins48": {
+     "b": "0.001750718698091",
+     "b_gain_pct": 4.521,
+     "kappa": "0.001730427469823602",
+     "kappa_gain": 5.8239350618181e-05,
+     "kappa_gain_pct": 3.483,
+     "binding": "bit"
+    }
+   },
+   "mcopy": {
+    "hole": {
+     "b": "0.001700669692585",
+     "b_gain_pct": 1.533,
+     "kappa": "0.00169778232563929",
+     "kappa_gain": 2.5594206433869e-05,
+     "kappa_gain_pct": 1.531,
+     "binding": "complex"
+    },
+    "bins48": {
+     "b": "0.001738137809082",
+     "b_gain_pct": 3.77,
+     "kappa": "0.001730427469823602",
+     "kappa_gain": 5.8239350618181e-05,
+     "kappa_gain_pct": 3.483,
+     "binding": "bit"
+    }
+   }
+  },
+  "N40": {
+   "typical": {
+    "hole": {
+     "b": "0.001711704791926",
+     "b_gain_pct": 2.192,
+     "kappa": "0.00170877986524236",
+     "kappa_gain": 3.6591746036939e-05,
+     "kappa_gain_pct": 2.188,
+     "binding": "complex"
+    },
+    "bins48": {
+     "b": "0.001759558919634",
+     "b_gain_pct": 5.049,
+     "kappa": "0.001730427469823602",
+     "kappa_gain": 5.8239350618181e-05,
+     "kappa_gain_pct": 3.483,
+     "binding": "bit"
+    }
+   },
+   "mcopy": {
+    "hole": {
+     "b": "0.001703571774980",
+     "b_gain_pct": 1.706,
+     "kappa": "0.001700674553811258",
+     "kappa_gain": 2.8486434605837e-05,
+     "kappa_gain_pct": 1.704,
+     "binding": "complex"
+    },
+    "bins48": {
+     "b": "0.001745443265107",
+     "b_gain_pct": 4.206,
+     "kappa": "0.001730427469823602",
+     "kappa_gain": 5.8239350618181e-05,
+     "kappa_gain_pct": 3.483,
+     "binding": "bit"
+    }
+   }
+  }
+ }
+}

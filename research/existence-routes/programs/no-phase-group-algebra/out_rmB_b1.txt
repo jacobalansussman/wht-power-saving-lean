@@ -1,0 +1,19 @@
+order-2, n=7, 2 in 6
+{"m": 3, "n": 7, "W": 2, "M": 6, "chars": 2, "orbits": 10, "unknowns": 546}
+{"restart": 0, "loss": 5.391295380268341e-24, "secs": 75.8}
+{"restart": 1, "loss": 8.074398666933348e-25, "secs": 27.7}
+{"restart": 2, "loss": 8.141851829773544e-25, "secs": 39.6}
+BEST 8.074398666933348e-25
+order-2, n=7, 2 in 5
+{"m": 3, "n": 7, "W": 2, "M": 5, "chars": 2, "orbits": 10, "unknowns": 420}
+{"restart": 0, "loss": 445.7529101865906, "secs": 42.6}
+{"restart": 1, "loss": 444.43096600847565, "secs": 39.8}
+{"restart": 2, "loss": 560.2319490251857, "secs": 40.1}
+BEST 444.43096600847565
+order-2, n=7, 2 in 4
+{"m": 3, "n": 7, "W": 2, "M": 4, "chars": 2, "orbits": 10, "unknowns": 308}
+{"restart": 0, "loss": 673.2052022475447, "secs": 28.6}
+{"restart": 1, "loss": 674.1368565778018, "secs": 21.9}
+{"restart": 2, "loss": 675.8025101455419, "secs": 23.2}
+BEST 673.2052022475447
+EXIT 0

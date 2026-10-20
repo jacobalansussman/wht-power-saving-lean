@@ -1,0 +1,31 @@
+⚠ [1018/1051] Replayed Work.Mixed.Flow
+warning: Work/Mixed/Flow.lean:175:15: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.mem_filter, Finset.Nat.mem_antidiagonalTuple] at hb ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Work/Mixed/Flow.lean:178:15: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.mem_filter, Finset.Nat.mem_antidiagonalTuple] at ha ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Work/Mixed/Flow.lean:205:8: `Finset.prod_le_prod'` has been deprecated: Use `Finset.prod_le_prod` instead
+warning: Work/Mixed/Flow.lean:259:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:275:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:275:20: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:293:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:293:30: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:295:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:295:45: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:296:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:296:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:415:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+ℹ [1095/1095] Replayed Work.MixedCost.Match
+info: Work/MixedCost/Match.lean:172:0: 'OAI.PowerSaving.MX.Rule.sum_codes' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Match.lean:173:0: 'OAI.PowerSaving.MX.Rule.NU_eq_unitsC' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Match.lean:174:0: 'OAI.PowerSaving.MX.Rule.card_srcMS_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1095 jobs).

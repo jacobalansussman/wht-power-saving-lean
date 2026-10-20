@@ -1,0 +1,8 @@
+K = D(e3)(a+b t2)(a+b t1) exactly: True
+t1 = F X(e1) F^-1: True
+t1, t2 commute: True ; t1 commutes with X(e3): False
+frame B(a+b t1) == frame B D(e1) F^-1: True
+frame of D(e2)D(e1) fixed by F^-1: True
+F affine? (F(x)+F(y)+F(0) == F(x+y) for all x,y): False
+
+[exited with code 0]

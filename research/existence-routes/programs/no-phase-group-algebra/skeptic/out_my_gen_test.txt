@@ -1,0 +1,9 @@
+m=4 h=[2, 4, 1, 8] (order 3) W=4 M=15 dirs=all: deletion failures 0, tight forms 56, max clique 45, bound 12 -> EXCLUDED (clique)
+m=4 h=[2, 4, 1, 8] (order 3) W=4 M=16 dirs=plain: deletion failures 0, tight forms 256, max clique 12, bound 12 -> not excluded
+m=4 h=[2, 4, 8, 1] (order 4) W=4 M=15 dirs=all: deletion failures 0, tight forms 56, max clique 60, bound 16 -> EXCLUDED (clique)
+m=4 h=[2, 4, 8, 1] (order 4) W=4 M=16 dirs=plain: deletion failures 0, tight forms 256, max clique 16, bound 16 -> not excluded
+m=4 h=[2, 1, 8, 4] (order 2) W=4 M=15 dirs=all: deletion failures 0, tight forms 56, max clique 30, bound 8 -> EXCLUDED (clique)
+m=4 h=[2, 1, 8, 4] (order 2) W=4 M=16 dirs=plain: deletion failures 0, tight forms 256, max clique 8, bound 8 -> not excluded
+m=4 h=[2, 1, 4, 8] (order 2) W=4 M=15 dirs=all: deletion failures 0, tight forms 56, max clique 30, bound 8 -> EXCLUDED (clique)
+m=4 h=[2, 1, 4, 8] (order 2) W=4 M=16 dirs=plain: deletion failures 0, tight forms 256, max clique 8, bound 8 -> not excluded
+m=4 h=[2, 4, 8, 3] (order 15) W=4 M=15 dirs=e1x15: deletion failures 0, tight forms 0, max clique 0, bound 60 -> not excluded

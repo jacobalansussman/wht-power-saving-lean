@@ -1,0 +1,23 @@
+{
+  "effective_engine_sha256": "5057ff51285a8b5f40c87885ad01a208328832c7bb9e32b59e673dc7ce43d5c3",
+  "literal_patches": [
+    [
+      "'staged544': dict(commit='staged544-literal-v1',manifest='4c4f7067b1b5404b59213f480e9d91c96ffc79b5458e2736b159f5a522ed2dc3'",
+      "'staged544': dict(commit='terminal-width5-20261019',manifest='3d2ee0175b0cd8aec80c12fef82c2da3a3a54785ca9113140762fd5c41979608'"
+    ],
+    [
+      "helpers=408,source_file_count=660",
+      "helpers=408,source_file_count=666"
+    ],
+    [
+      "\"len(rd(work/'ADMISSION-CONTROLS.json')['rejected_controls'])==139\"",
+      "\"len(rd(work/'ADMISSION-CONTROLS.json')['rejected_controls'])==rd(spec)['expected']['assembly_controls_rejected']\""
+    ],
+    [
+      "\"controls=dict(admission=139,bit=12,controller=15,independent_owner=8,geometry=6)\"",
+      "\"controls=dict(admission=rd(P/'new/SPEC.json')['expected']['assembly_controls_rejected'],bit=12,controller=15,independent_owner=8,geometry=6)\""
+    ]
+  ],
+  "original_engine_sha256": "76f1b45793abb32a902a8d3cd353b39a018a35a277bb4e223e7508226b71eb6e",
+  "scope": "Only exact source-profile/file-count and frozen-spec mutation-count closure/report adaptations; scientific predicates unchanged."
+}

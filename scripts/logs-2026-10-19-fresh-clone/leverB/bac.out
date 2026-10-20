@@ -1,0 +1,860 @@
+START Tue Oct 20 02:34:47 AM UTC 2026 tree=/content/work/r-finalize/shea-leverB/lean/complex588 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 package=leverB
+=== STEP 01-Work.BlockAccounting.Sharp START Tue Oct 20 02:34:47 AM UTC 2026 cmd: lake build Work.BlockAccounting.Sharp
+=== STEP 01-Work.BlockAccounting.Sharp END rc=0 wall=14s last: Build completed successfully (3093 jobs).
+=== STEP 02-Work.L3945H.Stmt START Tue Oct 20 02:35:01 AM UTC 2026 cmd: lake build Work.L3945H.Stmt
+=== STEP 02-Work.L3945H.Stmt END rc=0 wall=22s last: Build completed successfully (9014 jobs).
+=== STEP 03-Work.Mixed.HeadM1 START Tue Oct 20 02:35:23 AM UTC 2026 cmd: lake build Work.Mixed.HeadM1
+=== STEP 03-Work.Mixed.HeadM1 END rc=0 wall=9s last: Build completed successfully (9024 jobs).
+=== STEP 04-Work.Mixed.LemmaA START Tue Oct 20 02:35:32 AM UTC 2026 cmd: lake build Work.Mixed.LemmaA
+=== STEP 04-Work.Mixed.LemmaA END rc=0 wall=2s last: Build completed successfully (2058 jobs).
+=== STEP 05-Work.Mixed.Flow START Tue Oct 20 02:35:34 AM UTC 2026 cmd: lake build Work.Mixed.Flow
+=== STEP 05-Work.Mixed.Flow END rc=0 wall=1s last: Build completed successfully (1019 jobs).
+=== STEP 06-Work.Mixed.Phi START Tue Oct 20 02:35:36 AM UTC 2026 cmd: lake build Work.Mixed.Phi
+=== STEP 06-Work.Mixed.Phi END rc=0 wall=2s last: Build completed successfully (2042 jobs).
+=== STEP 07-Work.MixedCost.Bill START Tue Oct 20 02:35:38 AM UTC 2026 cmd: lake build Work.MixedCost.Bill
+=== STEP 07-Work.MixedCost.Bill END rc=0 wall=1s last: Build completed successfully (1020 jobs).
+=== STEP 08-Work.Mixed.Bound START Tue Oct 20 02:35:39 AM UTC 2026 cmd: lake build Work.Mixed.Bound
+=== STEP 08-Work.Mixed.Bound END rc=0 wall=2s last: Build completed successfully (2065 jobs).
+=== STEP 09-Work.Mixed.TwoTarget START Tue Oct 20 02:35:41 AM UTC 2026 cmd: lake build Work.Mixed.TwoTarget
+=== STEP 09-Work.Mixed.TwoTarget END rc=0 wall=2s last: Build completed successfully (2066 jobs).
+=== STEP 10-Work.Mixed.Prog.Seq START Tue Oct 20 02:35:43 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Seq
+=== STEP 10-Work.Mixed.Prog.Seq END rc=0 wall=2s last: Build completed successfully (1004 jobs).
+=== STEP 11-Work.MixedCost.Match START Tue Oct 20 02:35:45 AM UTC 2026 cmd: lake build Work.MixedCost.Match
+=== STEP 11-Work.MixedCost.Match END rc=0 wall=1s last: Build completed successfully (1095 jobs).
+=== STEP 12-Work.Mixed.Prog.Sem START Tue Oct 20 02:35:46 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Sem
+=== STEP 12-Work.Mixed.Prog.Sem END rc=0 wall=9s last: Build completed successfully (9016 jobs).
+=== STEP 13-Work.Mixed.Prog.CTab START Tue Oct 20 02:35:55 AM UTC 2026 cmd: lake build Work.Mixed.Prog.CTab
+=== STEP 13-Work.Mixed.Prog.CTab END rc=0 wall=8s last: Build completed successfully (9029 jobs).
+=== STEP 14-Work.Mixed.Prog.Route START Tue Oct 20 02:36:03 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Route
+=== STEP 14-Work.Mixed.Prog.Route END rc=0 wall=8s last: Build completed successfully (9030 jobs).
+=== STEP 15-Work.Mixed.Prog.Block START Tue Oct 20 02:36:11 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Block
+=== STEP 15-Work.Mixed.Prog.Block END rc=0 wall=9s last: Build completed successfully (9031 jobs).
+=== STEP 16-Work.Mixed.Prog.Exit START Tue Oct 20 02:36:20 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Exit
+=== STEP 16-Work.Mixed.Prog.Exit END rc=0 wall=8s last: Build completed successfully (9032 jobs).
+=== STEP 17-Work.Mixed.Prog.Desc START Tue Oct 20 02:36:28 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Desc
+=== STEP 17-Work.Mixed.Prog.Desc END rc=0 wall=8s last: Build completed successfully (9033 jobs).
+=== STEP 18-Work.Mixed.Prog.Loops START Tue Oct 20 02:36:36 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Loops
+=== STEP 18-Work.Mixed.Prog.Loops END rc=0 wall=9s last: Build completed successfully (9034 jobs).
+=== STEP 19-Work.Mixed.Prog.ClassTabs START Tue Oct 20 02:36:45 AM UTC 2026 cmd: lake build Work.Mixed.Prog.ClassTabs
+=== STEP 19-Work.Mixed.Prog.ClassTabs END rc=0 wall=8s last: Build completed successfully (9035 jobs).
+=== STEP 20-Work.MixedCost.Naive START Tue Oct 20 02:36:53 AM UTC 2026 cmd: lake build Work.MixedCost.Naive
+=== STEP 20-Work.MixedCost.Naive END rc=0 wall=9s last: Build completed successfully (8956 jobs).
+=== STEP 21-Work.MixedCost.Close START Tue Oct 20 02:37:02 AM UTC 2026 cmd: lake build Work.MixedCost.Close
+=== STEP 21-Work.MixedCost.Close END rc=0 wall=8s last: Build completed successfully (8930 jobs).
+=== STEP 22-Work.MixedCost.TopCountM START Tue Oct 20 02:37:10 AM UTC 2026 cmd: lake build Work.MixedCost.TopCountM
+=== STEP 22-Work.MixedCost.TopCountM END rc=0 wall=9s last: Build completed successfully (9034 jobs).
+=== STEP 23-Work.MixedCost.TopCount START Tue Oct 20 02:37:19 AM UTC 2026 cmd: lake build Work.MixedCost.TopCount
+=== STEP 23-Work.MixedCost.TopCount END rc=0 wall=8s last: Build completed successfully (9037 jobs).
+=== STEP 24-Work.MixedCost.TopDesc START Tue Oct 20 02:37:27 AM UTC 2026 cmd: lake build Work.MixedCost.TopDesc
+=== STEP 24-Work.MixedCost.TopDesc END rc=0 wall=9s last: Build completed successfully (9034 jobs).
+=== STEP 25-Work.MixedCost.TopRest START Tue Oct 20 02:37:36 AM UTC 2026 cmd: lake build Work.MixedCost.TopRest
+=== STEP 25-Work.MixedCost.TopRest END rc=0 wall=9s last: Build completed successfully (9035 jobs).
+=== STEP 26-Work.MixedCost.TopBody START Tue Oct 20 02:37:45 AM UTC 2026 cmd: lake build Work.MixedCost.TopBody
+=== STEP 26-Work.MixedCost.TopBody END rc=0 wall=9s last: Build completed successfully (9042 jobs).
+=== STEP 27-Work.MixedCost.TopMain START Tue Oct 20 02:37:54 AM UTC 2026 cmd: lake build Work.MixedCost.TopMain
+=== STEP 27-Work.MixedCost.TopMain END rc=0 wall=9s last: Build completed successfully (9043 jobs).
+=== STEP 28-Work.MixedCost.Bridge START Tue Oct 20 02:38:03 AM UTC 2026 cmd: lake build Work.MixedCost.Bridge
+=== STEP 28-Work.MixedCost.Bridge END rc=0 wall=14s last: Build completed successfully (9047 jobs).
+=== STEP 29-Work.MixedCost.BridgeTwo START Tue Oct 20 02:38:17 AM UTC 2026 cmd: lake build Work.MixedCost.BridgeTwo
+=== STEP 29-Work.MixedCost.BridgeTwo END rc=0 wall=14s last: Build completed successfully (9052 jobs).
+=== STEP 30-Work.Mixed.Prog.RouteTabs START Tue Oct 20 02:38:31 AM UTC 2026 cmd: lake build Work.Mixed.Prog.RouteTabs
+=== STEP 30-Work.Mixed.Prog.RouteTabs END rc=0 wall=9s last: Build completed successfully (9036 jobs).
+=== STEP 31-Work.Mixed.Prog.Unload START Tue Oct 20 02:38:40 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Unload
+=== STEP 31-Work.Mixed.Prog.Unload END rc=0 wall=8s last: Build completed successfully (9037 jobs).
+=== STEP 32-Work.Mixed.Prog.LoadRAM START Tue Oct 20 02:38:48 AM UTC 2026 cmd: lake build Work.Mixed.Prog.LoadRAM
+=== STEP 32-Work.Mixed.Prog.LoadRAM END rc=0 wall=9s last: Build completed successfully (9038 jobs).
+=== STEP 33-Work.Mixed.Prog.Acc START Tue Oct 20 02:38:57 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Acc
+=== STEP 33-Work.Mixed.Prog.Acc END rc=0 wall=9s last: Build completed successfully (9039 jobs).
+=== STEP 34-Work.Mixed.Prog.SweepMath START Tue Oct 20 02:39:06 AM UTC 2026 cmd: lake build Work.Mixed.Prog.SweepMath
+=== STEP 34-Work.Mixed.Prog.SweepMath END rc=0 wall=8s last: Build completed successfully (9040 jobs).
+=== STEP 35-Work.Mixed.Prog.Sweep START Tue Oct 20 02:39:14 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Sweep
+=== STEP 35-Work.Mixed.Prog.Sweep END rc=0 wall=9s last: Build completed successfully (9041 jobs).
+=== STEP 36-Work.Mixed.Prog.SweepUp START Tue Oct 20 02:39:23 AM UTC 2026 cmd: lake build Work.Mixed.Prog.SweepUp
+=== STEP 36-Work.Mixed.Prog.SweepUp END rc=0 wall=8s last: Build completed successfully (9042 jobs).
+=== STEP 37-Work.Mixed.Prog.SweepLeaf START Tue Oct 20 02:39:31 AM UTC 2026 cmd: lake build Work.Mixed.Prog.SweepLeaf
+=== STEP 37-Work.Mixed.Prog.SweepLeaf END rc=0 wall=9s last: Build completed successfully (9043 jobs).
+=== STEP 38-Work.Mixed.Prog.ClassBody START Tue Oct 20 02:39:40 AM UTC 2026 cmd: lake build Work.Mixed.Prog.ClassBody
+=== STEP 38-Work.Mixed.Prog.ClassBody END rc=0 wall=8s last: Build completed successfully (9044 jobs).
+=== STEP 39-Work.Mixed.Prog.Valid START Tue Oct 20 02:39:48 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Valid
+=== STEP 39-Work.Mixed.Prog.Valid END rc=0 wall=8s last: Build completed successfully (9045 jobs).
+=== STEP 40-Work.Mixed.Prog.Glue START Tue Oct 20 02:39:56 AM UTC 2026 cmd: lake build Work.Mixed.Prog.Glue
+=== STEP 40-Work.Mixed.Prog.Glue END rc=0 wall=9s last: Build completed successfully (9054 jobs).
+=== STEP 41-Work.Mixed.Prog.CostC START Tue Oct 20 02:40:05 AM UTC 2026 cmd: lake build Work.Mixed.Prog.CostC
+=== STEP 41-Work.Mixed.Prog.CostC END rc=0 wall=8s last: Build completed successfully (9055 jobs).
+=== STEP 42-Work.MixedCost.Poly START Tue Oct 20 02:40:13 AM UTC 2026 cmd: lake build Work.MixedCost.Poly
+=== STEP 42-Work.MixedCost.Poly END rc=0 wall=2s last: Build completed successfully (1801 jobs).
+=== STEP 43-Work.Mixed.Prog.ClsDom START Tue Oct 20 02:40:16 AM UTC 2026 cmd: lake build Work.Mixed.Prog.ClsDom
+=== STEP 43-Work.Mixed.Prog.ClsDom END rc=0 wall=8s last: Build completed successfully (9058 jobs).
+=== STEP 44-Work.Mixed.Prog.ClassSide START Tue Oct 20 02:40:24 AM UTC 2026 cmd: lake build Work.Mixed.Prog.ClassSide
+=== STEP 44-Work.Mixed.Prog.ClassSide END rc=0 wall=9s last: Build completed successfully (9062 jobs).
+=== STEP 45-Work.MixedCost.TopDom START Tue Oct 20 02:40:33 AM UTC 2026 cmd: lake build Work.MixedCost.TopDom
+=== STEP 45-Work.MixedCost.TopDom END rc=0 wall=9s last: Build completed successfully (9049 jobs).
+=== STEP 46-Work.MixedCost.Wire START Tue Oct 20 02:40:42 AM UTC 2026 cmd: lake build Work.MixedCost.Wire
+=== STEP 46-Work.MixedCost.Wire END rc=0 wall=8s last: Build completed successfully (8933 jobs).
+=== STEP 47-Work.MixedCost.Fuel START Tue Oct 20 02:40:50 AM UTC 2026 cmd: lake build Work.MixedCost.Fuel
+=== STEP 47-Work.MixedCost.Fuel END rc=0 wall=9s last: Build completed successfully (9062 jobs).
+=== STEP 48-Work.MixedCost.SeamCost START Tue Oct 20 02:40:59 AM UTC 2026 cmd: lake build Work.MixedCost.SeamCost
+=== STEP 48-Work.MixedCost.SeamCost END rc=0 wall=9s last: Build completed successfully (9017 jobs).
+=== STEP 49-Work.MixedCost.Adapter START Tue Oct 20 02:41:08 AM UTC 2026 cmd: lake build Work.MixedCost.Adapter
+=== STEP 49-Work.MixedCost.Adapter END rc=0 wall=8s last: Build completed successfully (9021 jobs).
+=== STEP 50-Work.MixedCost.Final START Tue Oct 20 02:41:16 AM UTC 2026 cmd: lake build Work.MixedCost.Final
+=== STEP 50-Work.MixedCost.Final END rc=0 wall=8s last: Build completed successfully (9021 jobs).
+=== STEP 51-Work.MixedCost.SeamProg START Tue Oct 20 02:41:24 AM UTC 2026 cmd: lake build Work.MixedCost.SeamProg
+=== STEP 51-Work.MixedCost.SeamProg END rc=0 wall=9s last: Build completed successfully (9026 jobs).
+=== STEP 52-Work.MixedCost.Jobs START Tue Oct 20 02:41:33 AM UTC 2026 cmd: lake build Work.MixedCost.Jobs
+=== STEP 52-Work.MixedCost.Jobs END rc=0 wall=8s last: Build completed successfully (9027 jobs).
+=== STEP 53-Work.MixedCost.SeamPort START Tue Oct 20 02:41:41 AM UTC 2026 cmd: lake build Work.MixedCost.SeamPort
+=== STEP 53-Work.MixedCost.SeamPort END rc=0 wall=9s last: Build completed successfully (9058 jobs).
+=== STEP 54-Work.MixedCost.EngineClose START Tue Oct 20 02:41:50 AM UTC 2026 cmd: lake build Work.MixedCost.EngineClose
+=== STEP 54-Work.MixedCost.EngineClose END rc=0 wall=9s last: Build completed successfully (9072 jobs).
+=== STEP 55-Work.MixedCost.EngineFinal START Tue Oct 20 02:41:59 AM UTC 2026 cmd: lake build Work.MixedCost.EngineFinal
+=== STEP 55-Work.MixedCost.EngineFinal END rc=0 wall=8s last: Build completed successfully (9076 jobs).
+=== STEP 56-Work.Mixed.Bridge.Core START Tue Oct 20 02:42:07 AM UTC 2026 cmd: lake build Work.Mixed.Bridge.Core
+=== STEP 56-Work.Mixed.Bridge.Core END rc=0 wall=8s last: Build completed successfully (9089 jobs).
+=== STEP 57-Work.Mixed.Rate3815 START Tue Oct 20 02:42:15 AM UTC 2026 cmd: lake build Work.Mixed.Rate3815
+=== STEP 57-Work.Mixed.Rate3815 END rc=0 wall=3s last: Build completed successfully (3095 jobs).
+=== STEP 58-Work.Mixed.Rate3945 START Tue Oct 20 02:42:18 AM UTC 2026 cmd: lake build Work.Mixed.Rate3945
+=== STEP 58-Work.Mixed.Rate3945 END rc=0 wall=3s last: Build completed successfully (3095 jobs).
+=== STEP 59-Work.Mixed.Bridge.Inst START Tue Oct 20 02:42:21 AM UTC 2026 cmd: lake build Work.Mixed.Bridge.Inst
+=== STEP 59-Work.Mixed.Bridge.Inst END rc=0 wall=8s last: Build completed successfully (9094 jobs).
+=== STEP 60-Work.Mixed.Bridge.HeadsFirst START Tue Oct 20 02:42:29 AM UTC 2026 cmd: lake build Work.Mixed.Bridge.HeadsFirst
+=== STEP 60-Work.Mixed.Bridge.HeadsFirst END rc=0 wall=9s last: Build completed successfully (9095 jobs).
+=== STEP 61-Work.XHostD.FramesK START Tue Oct 20 02:42:38 AM UTC 2026 cmd: lake build Work.XHostD.FramesK
+=== STEP 61-Work.XHostD.FramesK END rc=0 wall=9s last: Build completed successfully (9105 jobs).
+=== STEP 62-Work.XHostD.Prov START Tue Oct 20 02:42:47 AM UTC 2026 cmd: lake build Work.XHostD.Prov
+=== STEP 62-Work.XHostD.Prov END rc=0 wall=8s last: Build completed successfully (9117 jobs).
+=== STEP 63-Work.XHostD.HDef START Tue Oct 20 02:42:55 AM UTC 2026 cmd: lake build Work.XHostD.HDef
+=== STEP 63-Work.XHostD.HDef END rc=0 wall=9s last: Build completed successfully (9133 jobs).
+=== STEP 64-Work.XHostD.HStage START Tue Oct 20 02:43:04 AM UTC 2026 cmd: lake build Work.XHostD.HStage
+=== STEP 64-Work.XHostD.HStage END rc=0 wall=10s last: Build completed successfully (9134 jobs).
+=== STEP 65-Work.XHostD.HCert START Tue Oct 20 02:43:14 AM UTC 2026 cmd: lake build Work.XHostD.HCert
+=== STEP 65-Work.XHostD.HCert END rc=0 wall=9s last: Build completed successfully (9135 jobs).
+=== STEP 66-Work.XHostR.HSchedR START Tue Oct 20 02:43:23 AM UTC 2026 cmd: lake build Work.XHostR.HSchedR
+=== STEP 66-Work.XHostR.HSchedR END rc=0 wall=9s last: Build completed successfully (9107 jobs).
+=== STEP 67-Work.XHostD.HSchedD START Tue Oct 20 02:43:32 AM UTC 2026 cmd: lake build Work.XHostD.HSchedD
+=== STEP 67-Work.XHostD.HSchedD END rc=0 wall=9s last: Build completed successfully (9122 jobs).
+=== STEP 68-Work.XHostD.HGeom START Tue Oct 20 02:43:41 AM UTC 2026 cmd: lake build Work.XHostD.HGeom
+=== STEP 68-Work.XHostD.HGeom END rc=0 wall=10s last: Build completed successfully (9222 jobs).
+=== STEP 69-Work.XHostT.HF.GeomA4 START Tue Oct 20 02:43:51 AM UTC 2026 cmd: lake build Work.XHostT.HF.GeomA4
+=== STEP 69-Work.XHostT.HF.GeomA4 END rc=0 wall=9s last: Build completed successfully (9224 jobs).
+=== STEP 70-Work.XHostT.TRoles START Tue Oct 20 02:44:00 AM UTC 2026 cmd: lake build Work.XHostT.TRoles
+=== STEP 70-Work.XHostT.TRoles END rc=0 wall=10s last: Build completed successfully (9128 jobs).
+=== STEP 71-Work.XHostT.TLocal START Tue Oct 20 02:44:10 AM UTC 2026 cmd: lake build Work.XHostT.TLocal
+=== STEP 71-Work.XHostT.TLocal END rc=0 wall=9s last: Build completed successfully (9129 jobs).
+=== STEP 72-Work.XHostT.TDef START Tue Oct 20 02:44:19 AM UTC 2026 cmd: lake build Work.XHostT.TDef
+=== STEP 72-Work.XHostT.TDef END rc=0 wall=9s last: Build completed successfully (9135 jobs).
+=== STEP 73-Work.XHostT.HF.Def START Tue Oct 20 02:44:28 AM UTC 2026 cmd: lake build Work.XHostT.HF.Def
+=== STEP 73-Work.XHostT.HF.Def END rc=0 wall=9s last: Build completed successfully (9136 jobs).
+=== STEP 74-Work.XHostT.TStage START Tue Oct 20 02:44:37 AM UTC 2026 cmd: lake build Work.XHostT.TStage
+=== STEP 74-Work.XHostT.TStage END rc=0 wall=10s last: Build completed successfully (9136 jobs).
+=== STEP 75-Work.XHostT.HF.Stage START Tue Oct 20 02:44:47 AM UTC 2026 cmd: lake build Work.XHostT.HF.Stage
+=== STEP 75-Work.XHostT.HF.Stage END rc=0 wall=9s last: Build completed successfully (9138 jobs).
+=== STEP 76-Work.XHostT.TCert START Tue Oct 20 02:44:56 AM UTC 2026 cmd: lake build Work.XHostT.TCert
+=== STEP 76-Work.XHostT.TCert END rc=0 wall=9s last: Build completed successfully (9137 jobs).
+=== STEP 77-Work.XHostT.HF.Cert START Tue Oct 20 02:45:05 AM UTC 2026 cmd: lake build Work.XHostT.HF.Cert
+=== STEP 77-Work.XHostT.HF.Cert END rc=0 wall=11s last: Build completed successfully (9140 jobs).
+=== STEP 78-Work.XHostT.HF.ToHF START Tue Oct 20 02:45:16 AM UTC 2026 cmd: lake build Work.XHostT.HF.ToHF
+=== STEP 78-Work.XHostT.HF.ToHF END rc=0 wall=9s last: Build completed successfully (9141 jobs).
+=== STEP 79-Work.XHostT.HF.Heads START Tue Oct 20 02:45:25 AM UTC 2026 cmd: lake build Work.XHostT.HF.Heads
+=== STEP 79-Work.XHostT.HF.Heads END rc=0 wall=9s last: Build completed successfully (9143 jobs).
+=== STEP 80-Work.XHostD.HEnd START Tue Oct 20 02:45:34 AM UTC 2026 cmd: lake build Work.XHostD.HEnd
+=== STEP 80-Work.XHostD.HEnd END rc=0 wall=10s last: Build completed successfully (9223 jobs).
+=== STEP 81-Work.XHostT.TGeom START Tue Oct 20 02:45:44 AM UTC 2026 cmd: lake build Work.XHostT.TGeom
+=== STEP 81-Work.XHostT.TGeom END rc=0 wall=9s last: Build completed successfully (9229 jobs).
+=== STEP 82-Work.XHostT.HF.GeomInst START Tue Oct 20 02:45:53 AM UTC 2026 cmd: lake build Work.XHostT.HF.GeomInst
+=== STEP 82-Work.XHostT.HF.GeomInst END rc=0 wall=9s last: Build completed successfully (9237 jobs).
+=== STEP 83-Work.Mixed.Bridge.HFTest START Tue Oct 20 02:46:02 AM UTC 2026 cmd: lake build Work.Mixed.Bridge.HFTest
+=== STEP 83-Work.Mixed.Bridge.HFTest END rc=0 wall=10s last: Build completed successfully (9297 jobs).
+=== STEP 84-Work.Mixed.Rate3945H START Tue Oct 20 02:46:12 AM UTC 2026 cmd: lake build Work.Mixed.Rate3945H
+=== STEP 84-Work.Mixed.Rate3945H END rc=0 wall=3s last: Build completed successfully (3095 jobs).
+=== STEP 85-Work.Mixed.Bridge.Inst3945H START Tue Oct 20 02:46:15 AM UTC 2026 cmd: lake build Work.Mixed.Bridge.Inst3945H
+=== STEP 85-Work.Mixed.Bridge.Inst3945H END rc=0 wall=9s last: Build completed successfully (9096 jobs).
+=== STEP 86-Work.Mixed.Bridge.HeadsFirst3945H START Tue Oct 20 02:46:24 AM UTC 2026 cmd: lake build Work.Mixed.Bridge.HeadsFirst3945H
+=== STEP 86-Work.Mixed.Bridge.HeadsFirst3945H END rc=0 wall=8s last: Build completed successfully (9098 jobs).
+=== STEP 87-Work.XHostT.TProvW START Tue Oct 20 02:46:32 AM UTC 2026 cmd: lake build Work.XHostT.TProvW
+=== STEP 87-Work.XHostT.TProvW END rc=0 wall=9s last: Build completed successfully (9223 jobs).
+=== STEP 88-Work.XHostT.HFW2979.GeomA4W START Tue Oct 20 02:46:41 AM UTC 2026 cmd: lake build Work.XHostT.HFW2979.GeomA4W
+=== STEP 88-Work.XHostT.HFW2979.GeomA4W END rc=0 wall=10s last: Build completed successfully (9226 jobs).
+=== STEP 89-Work.XHostT.TDefW START Tue Oct 20 03:18:38 AM UTC 2026 cmd: lake build Work.XHostT.TDefW
+=== STEP 89-Work.XHostT.TDefW END rc=0 wall=10s last: Build completed successfully (9227 jobs).
+=== STEP 90-Work.XHostT.HFW2979.Def START Tue Oct 20 03:18:48 AM UTC 2026 cmd: lake build Work.XHostT.HFW2979.Def
+=== STEP 90-Work.XHostT.HFW2979.Def END rc=0 wall=9s last: Build completed successfully (9228 jobs).
+=== STEP 91-Work.XHostT.TStageW START Tue Oct 20 03:18:57 AM UTC 2026 cmd: lake build Work.XHostT.TStageW
+=== STEP 91-Work.XHostT.TStageW END rc=0 wall=9s last: Build completed successfully (9229 jobs).
+=== STEP 92-Work.XHostT.HFW2979.Stage START Tue Oct 20 03:19:06 AM UTC 2026 cmd: lake build Work.XHostT.HFW2979.Stage
+=== STEP 92-Work.XHostT.HFW2979.Stage END rc=0 wall=9s last: Build completed successfully (9231 jobs).
+=== STEP 93-Work.XHostT.TCertW START Tue Oct 20 03:19:15 AM UTC 2026 cmd: lake build Work.XHostT.TCertW
+=== STEP 93-Work.XHostT.TCertW END rc=0 wall=8s last: Build completed successfully (9231 jobs).
+=== STEP 94-Work.XHostT.HFW2979.Cert START Tue Oct 20 03:19:23 AM UTC 2026 cmd: lake build Work.XHostT.HFW2979.Cert
+=== STEP 94-Work.XHostT.HFW2979.Cert END rc=0 wall=9s last: Build completed successfully (9234 jobs).
+=== STEP 95-Work.XHostT.HFW2979.ToHF START Tue Oct 20 03:19:32 AM UTC 2026 cmd: lake build Work.XHostT.HFW2979.ToHF
+=== STEP 95-Work.XHostT.HFW2979.ToHF END rc=0 wall=9s last: Build completed successfully (9239 jobs).
+=== STEP 96-Work.XHostT.HFW2979.Heads START Tue Oct 20 03:19:41 AM UTC 2026 cmd: lake build Work.XHostT.HFW2979.Heads
+=== STEP 96-Work.XHostT.HFW2979.Heads END rc=0 wall=8s last: Build completed successfully (9242 jobs).
+=== STEP 97-Work.XHostT.TGeomW START Tue Oct 20 03:19:49 AM UTC 2026 cmd: lake build Work.XHostT.TGeomW
+=== STEP 97-Work.XHostT.TGeomW END rc=0 wall=10s last: Build completed successfully (9234 jobs).
+=== STEP 98-Work.XHostT.HFW2979.GeomInstW START Tue Oct 20 03:19:59 AM UTC 2026 cmd: lake build Work.XHostT.HFW2979.GeomInstW
+=== STEP 98-Work.XHostT.HFW2979.GeomInstW END rc=0 wall=9s last: Build completed successfully (9249 jobs).
+=== STEP 99-Work.Mixed.Bridge.HFTest3945HW START Tue Oct 20 03:20:08 AM UTC 2026 cmd: lake build Work.Mixed.Bridge.HFTest3945HW
+=== STEP 99-Work.Mixed.Bridge.HFTest3945HW END rc=0 wall=13s last: Build completed successfully (9313 jobs).
+=== STEP 100-Work.L3945H.EngineOfGeomW START Tue Oct 20 03:20:21 AM UTC 2026 cmd: lake build Work.L3945H.EngineOfGeomW
+=== STEP 100-Work.L3945H.EngineOfGeomW END rc=0 wall=10s last: Build completed successfully (9315 jobs).
+=== STEP 101-Work.GCert.Data.Gen.S5BRows0 START Tue Oct 20 03:40:01 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows0
+=== STEP 101-Work.GCert.Data.Gen.S5BRows0 END rc=0 wall=2s last: Build completed successfully (2 jobs).
+=== STEP 102-Work.GCert.Data.Gen.S5BRows1 START Tue Oct 20 03:40:03 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows1
+=== STEP 102-Work.GCert.Data.Gen.S5BRows1 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 103-Work.GCert.Data.Gen.S5BRows10 START Tue Oct 20 03:40:04 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows10
+=== STEP 103-Work.GCert.Data.Gen.S5BRows10 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 104-Work.GCert.Data.Gen.S5BRows11 START Tue Oct 20 03:40:05 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows11
+=== STEP 104-Work.GCert.Data.Gen.S5BRows11 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 105-Work.GCert.Data.Gen.S5BRows12 START Tue Oct 20 03:40:06 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows12
+=== STEP 105-Work.GCert.Data.Gen.S5BRows12 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 106-Work.GCert.Data.Gen.S5BRows13 START Tue Oct 20 03:40:07 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows13
+=== STEP 106-Work.GCert.Data.Gen.S5BRows13 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 107-Work.GCert.Data.Gen.S5BRows14 START Tue Oct 20 03:40:08 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows14
+=== STEP 107-Work.GCert.Data.Gen.S5BRows14 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 108-Work.GCert.Data.Gen.S5BRows15 START Tue Oct 20 03:40:09 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows15
+=== STEP 108-Work.GCert.Data.Gen.S5BRows15 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 109-Work.GCert.Data.Gen.S5BRows16 START Tue Oct 20 03:40:10 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows16
+=== STEP 109-Work.GCert.Data.Gen.S5BRows16 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 110-Work.GCert.Data.Gen.S5BRows17 START Tue Oct 20 03:40:11 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows17
+=== STEP 110-Work.GCert.Data.Gen.S5BRows17 END rc=0 wall=2s last: Build completed successfully (2 jobs).
+=== STEP 111-Work.GCert.Data.Gen.S5BRows2 START Tue Oct 20 03:40:13 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows2
+=== STEP 111-Work.GCert.Data.Gen.S5BRows2 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 112-Work.GCert.Data.Gen.S5BRows3 START Tue Oct 20 03:40:14 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows3
+=== STEP 112-Work.GCert.Data.Gen.S5BRows3 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 113-Work.GCert.Data.Gen.S5BRows4 START Tue Oct 20 03:40:15 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows4
+=== STEP 113-Work.GCert.Data.Gen.S5BRows4 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 114-Work.GCert.Data.Gen.S5BRows5 START Tue Oct 20 03:40:16 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows5
+=== STEP 114-Work.GCert.Data.Gen.S5BRows5 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 115-Work.GCert.Data.Gen.S5BRows6 START Tue Oct 20 03:40:17 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows6
+=== STEP 115-Work.GCert.Data.Gen.S5BRows6 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 116-Work.GCert.Data.Gen.S5BRows7 START Tue Oct 20 03:40:18 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows7
+=== STEP 116-Work.GCert.Data.Gen.S5BRows7 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 117-Work.GCert.Data.Gen.S5BRows8 START Tue Oct 20 03:40:19 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows8
+=== STEP 117-Work.GCert.Data.Gen.S5BRows8 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 118-Work.GCert.Data.Gen.S5BRows9 START Tue Oct 20 03:40:20 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows9
+=== STEP 118-Work.GCert.Data.Gen.S5BRows9 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 119-Work.GCert.Data.Gen.S5BSched START Tue Oct 20 03:40:21 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BSched
+=== STEP 119-Work.GCert.Data.Gen.S5BSched END rc=0 wall=12s last: Build completed successfully (9139 jobs).
+=== STEP 120-Work.KLowW.Data START Tue Oct 20 03:40:33 AM UTC 2026 cmd: lake build Work.KLowW.Data
+=== STEP 120-Work.KLowW.Data END rc=0 wall=1s last: Build completed successfully (3 jobs).
+=== STEP 121-Work.KLowW.ScalK START Tue Oct 20 03:40:34 AM UTC 2026 cmd: lake build Work.KLowW.ScalK
+=== STEP 121-Work.KLowW.ScalK END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 122-Work.GCert.Data.Gen.S5B.D0 START Tue Oct 20 03:40:35 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5B.D0
+=== STEP 122-Work.GCert.Data.Gen.S5B.D0 END rc=0 wall=1s last: Build completed successfully (9 jobs).
+=== STEP 123-Work.GCert.Data.Gen.S5B.D1 START Tue Oct 20 03:40:36 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5B.D1
+=== STEP 123-Work.GCert.Data.Gen.S5B.D1 END rc=0 wall=1s last: Build completed successfully (10 jobs).
+=== STEP 124-Work.GCert.Data.Gen.S5B.D2 START Tue Oct 20 03:40:37 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5B.D2
+=== STEP 124-Work.GCert.Data.Gen.S5B.D2 END rc=0 wall=2s last: Build completed successfully (11 jobs).
+=== STEP 125-Work.GCert.Data.Gen.S5B.D3 START Tue Oct 20 03:40:39 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5B.D3
+=== STEP 125-Work.GCert.Data.Gen.S5B.D3 END rc=0 wall=1s last: Build completed successfully (12 jobs).
+=== STEP 126-Work.GCert.Data.Gen.S5B.D4 START Tue Oct 20 03:40:40 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5B.D4
+=== STEP 126-Work.GCert.Data.Gen.S5B.D4 END rc=0 wall=2s last: Build completed successfully (13 jobs).
+=== STEP 127-Work.GCert.Data.Gen.S5B.D5 START Tue Oct 20 03:40:42 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5B.D5
+=== STEP 127-Work.GCert.Data.Gen.S5B.D5 END rc=0 wall=1s last: Build completed successfully (14 jobs).
+=== STEP 128-Work.GCert.Data.Gen.S5B.D6 START Tue Oct 20 03:40:43 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5B.D6
+=== STEP 128-Work.GCert.Data.Gen.S5B.D6 END rc=0 wall=1s last: Build completed successfully (15 jobs).
+=== STEP 129-Work.GCert.Data.Gen.S5B START Tue Oct 20 03:40:44 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5B
+=== STEP 129-Work.GCert.Data.Gen.S5B END rc=0 wall=1s last: Build completed successfully (16 jobs).
+=== STEP 130-Work.GCert.Data.Gen.S5BEnds START Tue Oct 20 03:40:45 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BEnds
+=== STEP 130-Work.GCert.Data.Gen.S5BEnds END rc=0 wall=9s last: Build completed successfully (9164 jobs).
+=== STEP 131-Work.PWGen.Fp START Tue Oct 20 03:40:54 AM UTC 2026 cmd: lake build Work.PWGen.Fp
+=== STEP 131-Work.PWGen.Fp END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 132-Work.GCert.Data.Gen.S5BFp START Tue Oct 20 03:40:55 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BFp
+=== STEP 132-Work.GCert.Data.Gen.S5BFp END rc=0 wall=1s last: Build completed successfully (18 jobs).
+=== STEP 133-Work.GCert.Data.Gen.S5BHist START Tue Oct 20 03:40:56 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BHist
+=== STEP 133-Work.GCert.Data.Gen.S5BHist END rc=0 wall=1s last: Build completed successfully (19 jobs).
+=== STEP 134-Work.KLowW.LabK START Tue Oct 20 03:40:57 AM UTC 2026 cmd: lake build Work.KLowW.LabK
+=== STEP 134-Work.KLowW.LabK END rc=0 wall=1s last: Build completed successfully (8 jobs).
+=== STEP 135-Work.GCert.Data.Gen.S5BLab START Tue Oct 20 03:40:58 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BLab
+=== STEP 135-Work.GCert.Data.Gen.S5BLab END rc=0 wall=1s last: Build completed successfully (18 jobs).
+=== STEP 136-Work.GCert.Data.Gen.S5BLabB START Tue Oct 20 03:40:59 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BLabB
+=== STEP 136-Work.GCert.Data.Gen.S5BLabB END rc=0 wall=1s last: Build completed successfully (18 jobs).
+=== STEP 137-Work.GCert.Data.Gen.S5BRes START Tue Oct 20 03:41:00 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRes
+=== STEP 137-Work.GCert.Data.Gen.S5BRes END rc=0 wall=9s last: Build completed successfully (9156 jobs).
+=== STEP 138-Work.KLowW.LabSound START Tue Oct 20 03:41:09 AM UTC 2026 cmd: lake build Work.KLowW.LabSound
+=== STEP 138-Work.KLowW.LabSound END rc=0 wall=8s last: Build completed successfully (9076 jobs).
+=== STEP 139-Work.KLowW.Route START Tue Oct 20 03:41:17 AM UTC 2026 cmd: lake build Work.KLowW.Route
+=== STEP 139-Work.KLowW.Route END rc=0 wall=9s last: Build completed successfully (9133 jobs).
+=== STEP 140-Work.KLowW.ScalSound START Tue Oct 20 03:41:26 AM UTC 2026 cmd: lake build Work.KLowW.ScalSound
+=== STEP 140-Work.KLowW.ScalSound END rc=0 wall=8s last: Build completed successfully (9135 jobs).
+=== STEP 141-Work.KLowW.Main START Tue Oct 20 03:41:34 AM UTC 2026 cmd: lake build Work.KLowW.Main
+=== STEP 141-Work.KLowW.Main END rc=0 wall=9s last: Build completed successfully (9136 jobs).
+=== STEP 142-Work.KLowW.Inv START Tue Oct 20 03:41:43 AM UTC 2026 cmd: lake build Work.KLowW.Inv
+=== STEP 142-Work.KLowW.Inv END rc=0 wall=8s last: Build completed successfully (9161 jobs).
+=== STEP 143-Work.GCert.Data.Gen.S5BRows START Tue Oct 20 03:41:52 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BRows
+=== STEP 143-Work.GCert.Data.Gen.S5BRows END rc=0 wall=9s last: Build completed successfully (9170 jobs).
+=== STEP 144-Work.GCert.Data.Gen.S5BScB START Tue Oct 20 03:42:00 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BScB
+=== STEP 144-Work.GCert.Data.Gen.S5BScB END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 145-Work.GCert.Data.Gen.S5BScF START Tue Oct 20 03:42:01 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BScF
+=== STEP 145-Work.GCert.Data.Gen.S5BScF END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 146-Work.GCert.Data.Gen.S5BTab0 START Tue Oct 20 03:42:02 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BTab0
+=== STEP 146-Work.GCert.Data.Gen.S5BTab0 END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 147-Work.GCert.Data.Gen.S5BTab1 START Tue Oct 20 03:42:03 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BTab1
+=== STEP 147-Work.GCert.Data.Gen.S5BTab1 END rc=0 wall=2s last: Build completed successfully (17 jobs).
+=== STEP 148-Work.GCert.Data.Gen.S5BTab2 START Tue Oct 20 03:42:05 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BTab2
+=== STEP 148-Work.GCert.Data.Gen.S5BTab2 END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 149-Work.GCert.Data.Gen.S5BTab3 START Tue Oct 20 03:42:06 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BTab3
+=== STEP 149-Work.GCert.Data.Gen.S5BTab3 END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 150-Work.GCert.Data.Gen.S5BWT START Tue Oct 20 03:42:07 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BWT
+=== STEP 150-Work.GCert.Data.Gen.S5BWT END rc=0 wall=1s last: Build completed successfully (18 jobs).
+=== STEP 151-Work.GCert.Data.Gen.S5BWC START Tue Oct 20 03:42:08 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5BWC
+=== STEP 151-Work.GCert.Data.Gen.S5BWC END rc=0 wall=9s last: Build completed successfully (9186 jobs).
+=== STEP 152-Work.GCert.Data.RateS5Bx START Tue Oct 20 03:42:17 AM UTC 2026 cmd: lake build Work.GCert.Data.RateS5Bx
+=== STEP 152-Work.GCert.Data.RateS5Bx END rc=0 wall=3s last: Build completed successfully (3093 jobs).
+=== STEP 153-Work.GCert.Data.InstS5B START Tue Oct 20 03:42:20 AM UTC 2026 cmd: lake build Work.GCert.Data.InstS5B
+=== STEP 153-Work.GCert.Data.InstS5B END rc=0 wall=9s last: Build completed successfully (9040 jobs).
+=== STEP 154-Work.GCert.Data.S5BPrice START Tue Oct 20 03:42:29 AM UTC 2026 cmd: lake build Work.GCert.Data.S5BPrice
+=== STEP 154-Work.GCert.Data.S5BPrice END rc=0 wall=8s last: Build completed successfully (9072 jobs).
+=== STEP 155-Work.KLowW.InvMain START Tue Oct 20 03:42:37 AM UTC 2026 cmd: lake build Work.KLowW.InvMain
+=== STEP 155-Work.KLowW.InvMain END rc=0 wall=11s last: Build completed successfully (9162 jobs).
+=== STEP 156-Work.KLowW.Win START Tue Oct 20 03:42:48 AM UTC 2026 cmd: lake build Work.KLowW.Win
+=== STEP 156-Work.KLowW.Win END rc=0 wall=11s last: Build completed successfully (9163 jobs).
+=== STEP 157-Work.PWGen.Res START Tue Oct 20 03:42:59 AM UTC 2026 cmd: lake build Work.PWGen.Res
+=== STEP 157-Work.PWGen.Res END rc=0 wall=9s last: Build completed successfully (9163 jobs).
+=== STEP 158-Work.PWGen.Roles START Tue Oct 20 03:43:08 AM UTC 2026 cmd: lake build Work.PWGen.Roles
+=== STEP 158-Work.PWGen.Roles END rc=0 wall=10s last: Build completed successfully (9162 jobs).
+=== STEP 159-Work.Warp.Sem START Tue Oct 20 03:43:18 AM UTC 2026 cmd: lake build Work.Warp.Sem
+=== STEP 159-Work.Warp.Sem END rc=0 wall=18s last: Build completed successfully (9109 jobs).
+=== STEP 160-Work.Warp.Win START Tue Oct 20 03:43:36 AM UTC 2026 cmd: lake build Work.Warp.Win
+=== STEP 160-Work.Warp.Win END rc=0 wall=26s last: Build completed successfully (9111 jobs).
+=== STEP 161-Work.Warp.Word START Tue Oct 20 03:44:02 AM UTC 2026 cmd: lake build Work.Warp.Word
+=== STEP 161-Work.Warp.Word END rc=0 wall=8s last: Build completed successfully (9116 jobs).
+=== STEP 162-Work.Warp.KLW START Tue Oct 20 03:44:10 AM UTC 2026 cmd: lake build Work.Warp.KLW
+=== STEP 162-Work.Warp.KLW END rc=0 wall=9s last: Build completed successfully (9145 jobs).
+=== STEP 163-Work.GCert.Data.S5BGlue401 START Tue Oct 20 03:44:19 AM UTC 2026 cmd: lake build Work.GCert.Data.S5BGlue401
+=== STEP 163-Work.GCert.Data.S5BGlue401 END rc=0 wall=9s last: Build completed successfully (9251 jobs).
+=== STEP 164-Work.GCert.Data.Gen.S5ERows0 START Tue Oct 20 03:44:28 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows0
+=== STEP 164-Work.GCert.Data.Gen.S5ERows0 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 165-Work.GCert.Data.Gen.S5ERows1 START Tue Oct 20 03:44:29 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows1
+=== STEP 165-Work.GCert.Data.Gen.S5ERows1 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 166-Work.GCert.Data.Gen.S5ERows10 START Tue Oct 20 03:44:30 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows10
+=== STEP 166-Work.GCert.Data.Gen.S5ERows10 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 167-Work.GCert.Data.Gen.S5ERows11 START Tue Oct 20 03:44:31 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows11
+=== STEP 167-Work.GCert.Data.Gen.S5ERows11 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 168-Work.GCert.Data.Gen.S5ERows12 START Tue Oct 20 03:44:32 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows12
+=== STEP 168-Work.GCert.Data.Gen.S5ERows12 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 169-Work.GCert.Data.Gen.S5ERows13 START Tue Oct 20 03:44:33 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows13
+=== STEP 169-Work.GCert.Data.Gen.S5ERows13 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 170-Work.GCert.Data.Gen.S5ERows14 START Tue Oct 20 03:44:34 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows14
+=== STEP 170-Work.GCert.Data.Gen.S5ERows14 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 171-Work.GCert.Data.Gen.S5ERows15 START Tue Oct 20 03:44:35 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows15
+=== STEP 171-Work.GCert.Data.Gen.S5ERows15 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 172-Work.GCert.Data.Gen.S5ERows16 START Tue Oct 20 03:44:36 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows16
+=== STEP 172-Work.GCert.Data.Gen.S5ERows16 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 173-Work.GCert.Data.Gen.S5ERows17 START Tue Oct 20 03:44:37 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows17
+=== STEP 173-Work.GCert.Data.Gen.S5ERows17 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 174-Work.GCert.Data.Gen.S5ERows2 START Tue Oct 20 03:44:38 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows2
+=== STEP 174-Work.GCert.Data.Gen.S5ERows2 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 175-Work.GCert.Data.Gen.S5ERows3 START Tue Oct 20 03:44:39 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows3
+=== STEP 175-Work.GCert.Data.Gen.S5ERows3 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 176-Work.GCert.Data.Gen.S5ERows4 START Tue Oct 20 03:44:40 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows4
+=== STEP 176-Work.GCert.Data.Gen.S5ERows4 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 177-Work.GCert.Data.Gen.S5ERows5 START Tue Oct 20 03:44:41 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows5
+=== STEP 177-Work.GCert.Data.Gen.S5ERows5 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 178-Work.GCert.Data.Gen.S5ERows6 START Tue Oct 20 03:44:42 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows6
+=== STEP 178-Work.GCert.Data.Gen.S5ERows6 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 179-Work.GCert.Data.Gen.S5ERows7 START Tue Oct 20 03:44:43 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows7
+=== STEP 179-Work.GCert.Data.Gen.S5ERows7 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 180-Work.GCert.Data.Gen.S5ERows8 START Tue Oct 20 03:44:44 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows8
+=== STEP 180-Work.GCert.Data.Gen.S5ERows8 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 181-Work.GCert.Data.Gen.S5ERows9 START Tue Oct 20 03:44:45 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows9
+=== STEP 181-Work.GCert.Data.Gen.S5ERows9 END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 182-Work.GCert.Data.Gen.S5ESched START Tue Oct 20 03:44:46 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ESched
+=== STEP 182-Work.GCert.Data.Gen.S5ESched END rc=0 wall=9s last: Build completed successfully (9139 jobs).
+=== STEP 183-Work.GCert.Data.Gen.S5E.D0 START Tue Oct 20 03:44:55 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5E.D0
+=== STEP 183-Work.GCert.Data.Gen.S5E.D0 END rc=0 wall=1s last: Build completed successfully (9 jobs).
+=== STEP 184-Work.GCert.Data.Gen.S5E.D1 START Tue Oct 20 03:44:56 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5E.D1
+=== STEP 184-Work.GCert.Data.Gen.S5E.D1 END rc=0 wall=1s last: Build completed successfully (10 jobs).
+=== STEP 185-Work.GCert.Data.Gen.S5E.D2 START Tue Oct 20 03:44:57 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5E.D2
+=== STEP 185-Work.GCert.Data.Gen.S5E.D2 END rc=0 wall=1s last: Build completed successfully (11 jobs).
+=== STEP 186-Work.GCert.Data.Gen.S5E.D3 START Tue Oct 20 03:44:58 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5E.D3
+=== STEP 186-Work.GCert.Data.Gen.S5E.D3 END rc=0 wall=1s last: Build completed successfully (12 jobs).
+=== STEP 187-Work.GCert.Data.Gen.S5E.D4 START Tue Oct 20 03:44:59 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5E.D4
+=== STEP 187-Work.GCert.Data.Gen.S5E.D4 END rc=0 wall=1s last: Build completed successfully (13 jobs).
+=== STEP 188-Work.GCert.Data.Gen.S5E.D5 START Tue Oct 20 03:45:00 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5E.D5
+=== STEP 188-Work.GCert.Data.Gen.S5E.D5 END rc=0 wall=1s last: Build completed successfully (14 jobs).
+=== STEP 189-Work.GCert.Data.Gen.S5E.D6 START Tue Oct 20 03:45:01 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5E.D6
+=== STEP 189-Work.GCert.Data.Gen.S5E.D6 END rc=0 wall=1s last: Build completed successfully (15 jobs).
+=== STEP 190-Work.GCert.Data.Gen.S5E START Tue Oct 20 03:45:02 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5E
+=== STEP 190-Work.GCert.Data.Gen.S5E END rc=0 wall=1s last: Build completed successfully (16 jobs).
+=== STEP 191-Work.GCert.Data.Gen.S5EEnds START Tue Oct 20 03:45:03 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5EEnds
+=== STEP 191-Work.GCert.Data.Gen.S5EEnds END rc=0 wall=9s last: Build completed successfully (9164 jobs).
+=== STEP 192-Work.GCert.Data.Gen.S5EFp START Tue Oct 20 03:45:12 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5EFp
+=== STEP 192-Work.GCert.Data.Gen.S5EFp END rc=0 wall=1s last: Build completed successfully (18 jobs).
+=== STEP 193-Work.GCert.Data.Gen.S5EHist START Tue Oct 20 03:45:13 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5EHist
+=== STEP 193-Work.GCert.Data.Gen.S5EHist END rc=0 wall=1s last: Build completed successfully (19 jobs).
+=== STEP 194-Work.GCert.Data.Gen.S5ELab START Tue Oct 20 03:45:14 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ELab
+=== STEP 194-Work.GCert.Data.Gen.S5ELab END rc=0 wall=1s last: Build completed successfully (18 jobs).
+=== STEP 195-Work.GCert.Data.Gen.S5ELabB START Tue Oct 20 03:45:15 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ELabB
+=== STEP 195-Work.GCert.Data.Gen.S5ELabB END rc=0 wall=1s last: Build completed successfully (18 jobs).
+=== STEP 196-Work.GCert.Data.Gen.S5ERes START Tue Oct 20 03:45:16 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERes
+=== STEP 196-Work.GCert.Data.Gen.S5ERes END rc=0 wall=9s last: Build completed successfully (9156 jobs).
+=== STEP 197-Work.GCert.Data.Gen.S5ERows START Tue Oct 20 03:45:25 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ERows
+=== STEP 197-Work.GCert.Data.Gen.S5ERows END rc=0 wall=9s last: Build completed successfully (9170 jobs).
+=== STEP 198-Work.GCert.Data.Gen.S5EScB START Tue Oct 20 03:45:34 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5EScB
+=== STEP 198-Work.GCert.Data.Gen.S5EScB END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 199-Work.GCert.Data.Gen.S5EScF START Tue Oct 20 03:45:35 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5EScF
+=== STEP 199-Work.GCert.Data.Gen.S5EScF END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 200-Work.GCert.Data.Gen.S5ETab0 START Tue Oct 20 03:45:36 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ETab0
+=== STEP 200-Work.GCert.Data.Gen.S5ETab0 END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 201-Work.GCert.Data.Gen.S5ETab1 START Tue Oct 20 03:45:37 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ETab1
+=== STEP 201-Work.GCert.Data.Gen.S5ETab1 END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 202-Work.GCert.Data.Gen.S5ETab2 START Tue Oct 20 03:45:38 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ETab2
+=== STEP 202-Work.GCert.Data.Gen.S5ETab2 END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 203-Work.GCert.Data.Gen.S5ETab3 START Tue Oct 20 03:45:39 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5ETab3
+=== STEP 203-Work.GCert.Data.Gen.S5ETab3 END rc=0 wall=1s last: Build completed successfully (17 jobs).
+=== STEP 204-Work.GCert.Data.Gen.S5EWT START Tue Oct 20 03:45:40 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5EWT
+=== STEP 204-Work.GCert.Data.Gen.S5EWT END rc=0 wall=1s last: Build completed successfully (18 jobs).
+=== STEP 205-Work.GCert.Data.Gen.S5EWC START Tue Oct 20 03:45:41 AM UTC 2026 cmd: lake build Work.GCert.Data.Gen.S5EWC
+=== STEP 205-Work.GCert.Data.Gen.S5EWC END rc=0 wall=8s last: Build completed successfully (9186 jobs).
+=== STEP 206-Work.GCert.Data.RateS5Ex START Tue Oct 20 03:45:49 AM UTC 2026 cmd: lake build Work.GCert.Data.RateS5Ex
+=== STEP 206-Work.GCert.Data.RateS5Ex END rc=0 wall=3s last: Build completed successfully (3093 jobs).
+=== STEP 207-Work.GCert.Data.InstS5E START Tue Oct 20 03:45:52 AM UTC 2026 cmd: lake build Work.GCert.Data.InstS5E
+=== STEP 207-Work.GCert.Data.InstS5E END rc=0 wall=8s last: Build completed successfully (9040 jobs).
+=== STEP 208-Work.GCert.Data.S5EPrice START Tue Oct 20 03:46:00 AM UTC 2026 cmd: lake build Work.GCert.Data.S5EPrice
+=== STEP 208-Work.GCert.Data.S5EPrice END rc=0 wall=9s last: Build completed successfully (9072 jobs).
+=== STEP 209-Work.GCert.Data.S5EGlue401 START Tue Oct 20 03:46:09 AM UTC 2026 cmd: lake build Work.GCert.Data.S5EGlue401
+=== STEP 209-Work.GCert.Data.S5EGlue401 END rc=0 wall=9s last: Build completed successfully (9251 jobs).
+=== STEP 210-Work.PWGen.S5Pair START Tue Oct 20 03:46:18 AM UTC 2026 cmd: lake build Work.PWGen.S5Pair
+=== STEP 210-Work.PWGen.S5Pair END rc=0 wall=9s last: Build completed successfully (9298 jobs).
+=== STEP 211-Work.XHostT.HFW2979.Disp2979W START Tue Oct 20 03:46:27 AM UTC 2026 cmd: lake build Work.XHostT.HFW2979.Disp2979W
+=== STEP 211-Work.XHostT.HFW2979.Disp2979W END rc=0 wall=10s last: Build completed successfully (9235 jobs).
+=== STEP 212-Work.XHostT.Data.D3945.Disp START Tue Oct 20 03:46:37 AM UTC 2026 cmd: lake build Work.XHostT.Data.D3945.Disp
+=== STEP 212-Work.XHostT.Data.D3945.Disp END rc=0 wall=9s last: Build completed successfully (9118 jobs).
+=== STEP 213-Work.XHostT.KCheck START Tue Oct 20 03:46:46 AM UTC 2026 cmd: lake build Work.XHostT.KCheck
+=== STEP 213-Work.XHostT.KCheck END rc=0 wall=1s last: Build completed successfully (2 jobs).
+=== STEP 214-Work.XHostT.KGlue START Tue Oct 20 03:46:47 AM UTC 2026 cmd: lake build Work.XHostT.KGlue
+=== STEP 214-Work.XHostT.KGlue END rc=0 wall=1s last: Build completed successfully (3 jobs).
+=== STEP 215-Work.XHostT.Data.S5H.Calls START Tue Oct 20 03:46:48 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.Calls
+=== STEP 215-Work.XHostT.Data.S5H.Calls END rc=0 wall=1s last: Build completed successfully (4 jobs).
+=== STEP 216-Work.XHostT.Data.S5H.DispLink START Tue Oct 20 03:46:49 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.DispLink
+=== STEP 216-Work.XHostT.Data.S5H.DispLink END rc=0 wall=9s last: Build completed successfully (9122 jobs).
+=== STEP 217-Work.XHostT.KHistC START Tue Oct 20 03:46:58 AM UTC 2026 cmd: lake build Work.XHostT.KHistC
+=== STEP 217-Work.XHostT.KHistC END rc=0 wall=1s last: Build completed successfully (3 jobs).
+=== STEP 218-Work.XHostT.Data.S5H.GlobC0 START Tue Oct 20 03:46:59 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC0
+=== STEP 218-Work.XHostT.Data.S5H.GlobC0 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 219-Work.XHostT.Data.S5H.GlobC1 START Tue Oct 20 03:47:00 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC1
+=== STEP 219-Work.XHostT.Data.S5H.GlobC1 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 220-Work.XHostT.Data.S5H.GlobC10 START Tue Oct 20 03:47:01 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC10
+=== STEP 220-Work.XHostT.Data.S5H.GlobC10 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 221-Work.XHostT.Data.S5H.GlobC11 START Tue Oct 20 03:47:02 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC11
+=== STEP 221-Work.XHostT.Data.S5H.GlobC11 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 222-Work.XHostT.Data.S5H.GlobC12 START Tue Oct 20 03:47:03 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC12
+=== STEP 222-Work.XHostT.Data.S5H.GlobC12 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 223-Work.XHostT.Data.S5H.GlobC13 START Tue Oct 20 03:47:04 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC13
+=== STEP 223-Work.XHostT.Data.S5H.GlobC13 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 224-Work.XHostT.Data.S5H.GlobC14 START Tue Oct 20 03:47:05 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC14
+=== STEP 224-Work.XHostT.Data.S5H.GlobC14 END rc=0 wall=2s last: Build completed successfully (6 jobs).
+=== STEP 225-Work.XHostT.Data.S5H.GlobC15 START Tue Oct 20 03:47:07 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC15
+=== STEP 225-Work.XHostT.Data.S5H.GlobC15 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 226-Work.XHostT.Data.S5H.GlobC16 START Tue Oct 20 03:47:08 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC16
+=== STEP 226-Work.XHostT.Data.S5H.GlobC16 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 227-Work.XHostT.Data.S5H.GlobC17 START Tue Oct 20 03:47:09 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC17
+=== STEP 227-Work.XHostT.Data.S5H.GlobC17 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 228-Work.XHostT.Data.S5H.GlobC18 START Tue Oct 20 03:47:10 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC18
+=== STEP 228-Work.XHostT.Data.S5H.GlobC18 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 229-Work.XHostT.Data.S5H.GlobC19 START Tue Oct 20 03:47:11 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC19
+=== STEP 229-Work.XHostT.Data.S5H.GlobC19 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 230-Work.XHostT.Data.S5H.GlobC2 START Tue Oct 20 03:47:12 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC2
+=== STEP 230-Work.XHostT.Data.S5H.GlobC2 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 231-Work.XHostT.Data.S5H.GlobC20 START Tue Oct 20 03:47:13 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC20
+=== STEP 231-Work.XHostT.Data.S5H.GlobC20 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 232-Work.XHostT.Data.S5H.GlobC21 START Tue Oct 20 03:47:14 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC21
+=== STEP 232-Work.XHostT.Data.S5H.GlobC21 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 233-Work.XHostT.Data.S5H.GlobC22 START Tue Oct 20 03:47:15 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC22
+=== STEP 233-Work.XHostT.Data.S5H.GlobC22 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 234-Work.XHostT.Data.S5H.GlobC23 START Tue Oct 20 03:47:16 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC23
+=== STEP 234-Work.XHostT.Data.S5H.GlobC23 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 235-Work.XHostT.Data.S5H.GlobC24 START Tue Oct 20 03:47:17 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC24
+=== STEP 235-Work.XHostT.Data.S5H.GlobC24 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 236-Work.XHostT.Data.S5H.GlobC25 START Tue Oct 20 03:47:18 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC25
+=== STEP 236-Work.XHostT.Data.S5H.GlobC25 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 237-Work.XHostT.Data.S5H.GlobC26 START Tue Oct 20 03:47:19 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC26
+=== STEP 237-Work.XHostT.Data.S5H.GlobC26 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 238-Work.XHostT.Data.S5H.GlobC3 START Tue Oct 20 03:47:20 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC3
+=== STEP 238-Work.XHostT.Data.S5H.GlobC3 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 239-Work.XHostT.Data.S5H.GlobC4 START Tue Oct 20 03:47:21 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC4
+=== STEP 239-Work.XHostT.Data.S5H.GlobC4 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 240-Work.XHostT.Data.S5H.GlobC5 START Tue Oct 20 03:47:22 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC5
+=== STEP 240-Work.XHostT.Data.S5H.GlobC5 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 241-Work.XHostT.Data.S5H.GlobC6 START Tue Oct 20 03:47:23 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC6
+=== STEP 241-Work.XHostT.Data.S5H.GlobC6 END rc=0 wall=2s last: Build completed successfully (6 jobs).
+=== STEP 242-Work.XHostT.Data.S5H.GlobC7 START Tue Oct 20 03:47:25 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC7
+=== STEP 242-Work.XHostT.Data.S5H.GlobC7 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 243-Work.XHostT.Data.S5H.GlobC8 START Tue Oct 20 03:47:26 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC8
+=== STEP 243-Work.XHostT.Data.S5H.GlobC8 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 244-Work.XHostT.Data.S5H.GlobC9 START Tue Oct 20 03:47:27 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.GlobC9
+=== STEP 244-Work.XHostT.Data.S5H.GlobC9 END rc=0 wall=1s last: Build completed successfully (6 jobs).
+=== STEP 245-Work.XHostT.TSchedK START Tue Oct 20 03:47:28 AM UTC 2026 cmd: lake build Work.XHostT.TSchedK
+=== STEP 245-Work.XHostT.TSchedK END rc=0 wall=8s last: Build completed successfully (9137 jobs).
+=== STEP 246-Work.XHostT.KWhole START Tue Oct 20 03:47:36 AM UTC 2026 cmd: lake build Work.XHostT.KWhole
+=== STEP 246-Work.XHostT.KWhole END rc=0 wall=9s last: Build completed successfully (9139 jobs).
+=== STEP 247-Work.XHostT.KHist START Tue Oct 20 03:47:45 AM UTC 2026 cmd: lake build Work.XHostT.KHist
+=== STEP 247-Work.XHostT.KHist END rc=0 wall=9s last: Build completed successfully (9141 jobs).
+=== STEP 248-Work.XHostT.Data.S5H.Glob START Tue Oct 20 03:47:54 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.Glob
+=== STEP 248-Work.XHostT.Data.S5H.Glob END rc=0 wall=9s last: Build completed successfully (9170 jobs).
+=== STEP 249-Work.XHostT.KHeadC START Tue Oct 20 03:48:03 AM UTC 2026 cmd: lake build Work.XHostT.KHeadC
+=== STEP 249-Work.XHostT.KHeadC END rc=0 wall=1s last: Build completed successfully (4 jobs).
+=== STEP 250-Work.XHostT.Data.S5H.Heads START Tue Oct 20 03:48:04 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.Heads
+=== STEP 250-Work.XHostT.Data.S5H.Heads END rc=0 wall=1s last: Build completed successfully (7 jobs).
+=== STEP 251-Work.XHostT.Data.S5H.Order START Tue Oct 20 03:48:05 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.Order
+=== STEP 251-Work.XHostT.Data.S5H.Order END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 252-Work.XHostT.Data.S5H.P0 START Tue Oct 20 03:48:06 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P0
+=== STEP 252-Work.XHostT.Data.S5H.P0 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 253-Work.XHostT.Data.S5H.P1 START Tue Oct 20 03:48:07 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P1
+=== STEP 253-Work.XHostT.Data.S5H.P1 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 254-Work.XHostT.Data.S5H.P10 START Tue Oct 20 03:48:08 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P10
+=== STEP 254-Work.XHostT.Data.S5H.P10 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 255-Work.XHostT.Data.S5H.P100 START Tue Oct 20 03:48:09 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P100
+=== STEP 255-Work.XHostT.Data.S5H.P100 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 256-Work.XHostT.Data.S5H.P101 START Tue Oct 20 03:48:10 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P101
+=== STEP 256-Work.XHostT.Data.S5H.P101 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 257-Work.XHostT.Data.S5H.P102 START Tue Oct 20 03:48:11 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P102
+=== STEP 257-Work.XHostT.Data.S5H.P102 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 258-Work.XHostT.Data.S5H.P103 START Tue Oct 20 03:48:12 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P103
+=== STEP 258-Work.XHostT.Data.S5H.P103 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 259-Work.XHostT.Data.S5H.P104 START Tue Oct 20 03:48:13 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P104
+=== STEP 259-Work.XHostT.Data.S5H.P104 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 260-Work.XHostT.Data.S5H.P105 START Tue Oct 20 03:48:14 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P105
+=== STEP 260-Work.XHostT.Data.S5H.P105 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 261-Work.XHostT.Data.S5H.P106 START Tue Oct 20 03:48:15 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P106
+=== STEP 261-Work.XHostT.Data.S5H.P106 END rc=0 wall=2s last: Build completed successfully (5 jobs).
+=== STEP 262-Work.XHostT.Data.S5H.P107 START Tue Oct 20 03:48:17 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P107
+=== STEP 262-Work.XHostT.Data.S5H.P107 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 263-Work.XHostT.Data.S5H.P108 START Tue Oct 20 03:48:18 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P108
+=== STEP 263-Work.XHostT.Data.S5H.P108 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 264-Work.XHostT.Data.S5H.P109 START Tue Oct 20 03:48:19 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P109
+=== STEP 264-Work.XHostT.Data.S5H.P109 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 265-Work.XHostT.Data.S5H.P11 START Tue Oct 20 03:48:20 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P11
+=== STEP 265-Work.XHostT.Data.S5H.P11 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 266-Work.XHostT.Data.S5H.P110 START Tue Oct 20 03:48:21 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P110
+=== STEP 266-Work.XHostT.Data.S5H.P110 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 267-Work.XHostT.Data.S5H.P111 START Tue Oct 20 03:48:22 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P111
+=== STEP 267-Work.XHostT.Data.S5H.P111 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 268-Work.XHostT.Data.S5H.P112 START Tue Oct 20 03:48:23 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P112
+=== STEP 268-Work.XHostT.Data.S5H.P112 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 269-Work.XHostT.Data.S5H.P113 START Tue Oct 20 03:48:24 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P113
+=== STEP 269-Work.XHostT.Data.S5H.P113 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 270-Work.XHostT.Data.S5H.P114 START Tue Oct 20 03:48:25 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P114
+=== STEP 270-Work.XHostT.Data.S5H.P114 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 271-Work.XHostT.Data.S5H.P115 START Tue Oct 20 03:48:26 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P115
+=== STEP 271-Work.XHostT.Data.S5H.P115 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 272-Work.XHostT.Data.S5H.P116 START Tue Oct 20 03:48:27 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P116
+=== STEP 272-Work.XHostT.Data.S5H.P116 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 273-Work.XHostT.Data.S5H.P117 START Tue Oct 20 03:48:28 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P117
+=== STEP 273-Work.XHostT.Data.S5H.P117 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 274-Work.XHostT.Data.S5H.P118 START Tue Oct 20 03:48:29 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P118
+=== STEP 274-Work.XHostT.Data.S5H.P118 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 275-Work.XHostT.Data.S5H.P119 START Tue Oct 20 03:48:30 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P119
+=== STEP 275-Work.XHostT.Data.S5H.P119 END rc=0 wall=2s last: Build completed successfully (5 jobs).
+=== STEP 276-Work.XHostT.Data.S5H.P12 START Tue Oct 20 03:48:32 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P12
+=== STEP 276-Work.XHostT.Data.S5H.P12 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 277-Work.XHostT.Data.S5H.P120 START Tue Oct 20 03:48:33 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P120
+=== STEP 277-Work.XHostT.Data.S5H.P120 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 278-Work.XHostT.Data.S5H.P121 START Tue Oct 20 03:48:34 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P121
+=== STEP 278-Work.XHostT.Data.S5H.P121 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 279-Work.XHostT.Data.S5H.P122 START Tue Oct 20 03:48:35 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P122
+=== STEP 279-Work.XHostT.Data.S5H.P122 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 280-Work.XHostT.Data.S5H.P123 START Tue Oct 20 03:48:36 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P123
+=== STEP 280-Work.XHostT.Data.S5H.P123 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 281-Work.XHostT.Data.S5H.P124 START Tue Oct 20 03:48:37 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P124
+=== STEP 281-Work.XHostT.Data.S5H.P124 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 282-Work.XHostT.Data.S5H.P125 START Tue Oct 20 03:48:38 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P125
+=== STEP 282-Work.XHostT.Data.S5H.P125 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 283-Work.XHostT.Data.S5H.P126 START Tue Oct 20 03:48:39 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P126
+=== STEP 283-Work.XHostT.Data.S5H.P126 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 284-Work.XHostT.Data.S5H.P127 START Tue Oct 20 03:48:40 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P127
+=== STEP 284-Work.XHostT.Data.S5H.P127 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 285-Work.XHostT.Data.S5H.P128 START Tue Oct 20 03:48:41 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P128
+=== STEP 285-Work.XHostT.Data.S5H.P128 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 286-Work.XHostT.Data.S5H.P129 START Tue Oct 20 03:48:42 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P129
+=== STEP 286-Work.XHostT.Data.S5H.P129 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 287-Work.XHostT.Data.S5H.P13 START Tue Oct 20 03:48:43 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P13
+=== STEP 287-Work.XHostT.Data.S5H.P13 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 288-Work.XHostT.Data.S5H.P14 START Tue Oct 20 03:48:44 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P14
+=== STEP 288-Work.XHostT.Data.S5H.P14 END rc=0 wall=2s last: Build completed successfully (5 jobs).
+=== STEP 289-Work.XHostT.Data.S5H.P15 START Tue Oct 20 03:48:46 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P15
+=== STEP 289-Work.XHostT.Data.S5H.P15 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 290-Work.XHostT.Data.S5H.P16 START Tue Oct 20 03:48:47 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P16
+=== STEP 290-Work.XHostT.Data.S5H.P16 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 291-Work.XHostT.Data.S5H.P17 START Tue Oct 20 03:48:48 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P17
+=== STEP 291-Work.XHostT.Data.S5H.P17 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 292-Work.XHostT.Data.S5H.P18 START Tue Oct 20 03:48:49 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P18
+=== STEP 292-Work.XHostT.Data.S5H.P18 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 293-Work.XHostT.Data.S5H.P19 START Tue Oct 20 03:48:50 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P19
+=== STEP 293-Work.XHostT.Data.S5H.P19 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 294-Work.XHostT.Data.S5H.P2 START Tue Oct 20 03:48:51 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P2
+=== STEP 294-Work.XHostT.Data.S5H.P2 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 295-Work.XHostT.Data.S5H.P20 START Tue Oct 20 03:48:52 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P20
+=== STEP 295-Work.XHostT.Data.S5H.P20 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 296-Work.XHostT.Data.S5H.P21 START Tue Oct 20 03:48:53 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P21
+=== STEP 296-Work.XHostT.Data.S5H.P21 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 297-Work.XHostT.Data.S5H.P22 START Tue Oct 20 03:48:54 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P22
+=== STEP 297-Work.XHostT.Data.S5H.P22 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 298-Work.XHostT.Data.S5H.P23 START Tue Oct 20 03:48:55 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P23
+=== STEP 298-Work.XHostT.Data.S5H.P23 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 299-Work.XHostT.Data.S5H.P24 START Tue Oct 20 03:48:56 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P24
+=== STEP 299-Work.XHostT.Data.S5H.P24 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 300-Work.XHostT.Data.S5H.P25 START Tue Oct 20 03:48:57 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P25
+=== STEP 300-Work.XHostT.Data.S5H.P25 END rc=0 wall=2s last: Build completed successfully (5 jobs).
+=== STEP 301-Work.XHostT.Data.S5H.P26 START Tue Oct 20 03:48:59 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P26
+=== STEP 301-Work.XHostT.Data.S5H.P26 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 302-Work.XHostT.Data.S5H.P27 START Tue Oct 20 03:49:00 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P27
+=== STEP 302-Work.XHostT.Data.S5H.P27 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 303-Work.XHostT.Data.S5H.P28 START Tue Oct 20 03:49:01 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P28
+=== STEP 303-Work.XHostT.Data.S5H.P28 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 304-Work.XHostT.Data.S5H.P29 START Tue Oct 20 03:49:02 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P29
+=== STEP 304-Work.XHostT.Data.S5H.P29 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 305-Work.XHostT.Data.S5H.P3 START Tue Oct 20 03:49:03 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P3
+=== STEP 305-Work.XHostT.Data.S5H.P3 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 306-Work.XHostT.Data.S5H.P30 START Tue Oct 20 03:49:04 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P30
+=== STEP 306-Work.XHostT.Data.S5H.P30 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 307-Work.XHostT.Data.S5H.P31 START Tue Oct 20 03:49:05 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P31
+=== STEP 307-Work.XHostT.Data.S5H.P31 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 308-Work.XHostT.Data.S5H.P32 START Tue Oct 20 03:49:06 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P32
+=== STEP 308-Work.XHostT.Data.S5H.P32 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 309-Work.XHostT.Data.S5H.P33 START Tue Oct 20 03:49:07 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P33
+=== STEP 309-Work.XHostT.Data.S5H.P33 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 310-Work.XHostT.Data.S5H.P34 START Tue Oct 20 03:49:08 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P34
+=== STEP 310-Work.XHostT.Data.S5H.P34 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 311-Work.XHostT.Data.S5H.P35 START Tue Oct 20 03:49:09 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P35
+=== STEP 311-Work.XHostT.Data.S5H.P35 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 312-Work.XHostT.Data.S5H.P36 START Tue Oct 20 03:49:10 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P36
+=== STEP 312-Work.XHostT.Data.S5H.P36 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 313-Work.XHostT.Data.S5H.P37 START Tue Oct 20 03:49:11 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P37
+=== STEP 313-Work.XHostT.Data.S5H.P37 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 314-Work.XHostT.Data.S5H.P38 START Tue Oct 20 03:49:13 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P38
+=== STEP 314-Work.XHostT.Data.S5H.P38 END rc=0 wall=2s last: Build completed successfully (5 jobs).
+=== STEP 315-Work.XHostT.Data.S5H.P39 START Tue Oct 20 03:49:14 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P39
+=== STEP 315-Work.XHostT.Data.S5H.P39 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 316-Work.XHostT.Data.S5H.P4 START Tue Oct 20 03:49:15 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P4
+=== STEP 316-Work.XHostT.Data.S5H.P4 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 317-Work.XHostT.Data.S5H.P40 START Tue Oct 20 03:49:16 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P40
+=== STEP 317-Work.XHostT.Data.S5H.P40 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 318-Work.XHostT.Data.S5H.P41 START Tue Oct 20 03:49:17 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P41
+=== STEP 318-Work.XHostT.Data.S5H.P41 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 319-Work.XHostT.Data.S5H.P42 START Tue Oct 20 03:49:18 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P42
+=== STEP 319-Work.XHostT.Data.S5H.P42 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 320-Work.XHostT.Data.S5H.P43 START Tue Oct 20 03:49:19 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P43
+=== STEP 320-Work.XHostT.Data.S5H.P43 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 321-Work.XHostT.Data.S5H.P44 START Tue Oct 20 03:49:20 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P44
+=== STEP 321-Work.XHostT.Data.S5H.P44 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 322-Work.XHostT.Data.S5H.P45 START Tue Oct 20 03:49:21 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P45
+=== STEP 322-Work.XHostT.Data.S5H.P45 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 323-Work.XHostT.Data.S5H.P46 START Tue Oct 20 03:49:22 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P46
+=== STEP 323-Work.XHostT.Data.S5H.P46 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 324-Work.XHostT.Data.S5H.P47 START Tue Oct 20 03:49:23 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P47
+=== STEP 324-Work.XHostT.Data.S5H.P47 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 325-Work.XHostT.Data.S5H.P48 START Tue Oct 20 03:49:24 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P48
+=== STEP 325-Work.XHostT.Data.S5H.P48 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 326-Work.XHostT.Data.S5H.P49 START Tue Oct 20 03:49:25 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P49
+=== STEP 326-Work.XHostT.Data.S5H.P49 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 327-Work.XHostT.Data.S5H.P5 START Tue Oct 20 03:49:26 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P5
+=== STEP 327-Work.XHostT.Data.S5H.P5 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 328-Work.XHostT.Data.S5H.P50 START Tue Oct 20 03:49:27 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P50
+=== STEP 328-Work.XHostT.Data.S5H.P50 END rc=0 wall=2s last: Build completed successfully (5 jobs).
+=== STEP 329-Work.XHostT.Data.S5H.P51 START Tue Oct 20 03:49:29 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P51
+=== STEP 329-Work.XHostT.Data.S5H.P51 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 330-Work.XHostT.Data.S5H.P52 START Tue Oct 20 03:49:30 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P52
+=== STEP 330-Work.XHostT.Data.S5H.P52 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 331-Work.XHostT.Data.S5H.P53 START Tue Oct 20 03:49:31 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P53
+=== STEP 331-Work.XHostT.Data.S5H.P53 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 332-Work.XHostT.Data.S5H.P54 START Tue Oct 20 03:49:32 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P54
+=== STEP 332-Work.XHostT.Data.S5H.P54 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 333-Work.XHostT.Data.S5H.P55 START Tue Oct 20 03:49:33 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P55
+=== STEP 333-Work.XHostT.Data.S5H.P55 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 334-Work.XHostT.Data.S5H.P56 START Tue Oct 20 03:49:34 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P56
+=== STEP 334-Work.XHostT.Data.S5H.P56 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 335-Work.XHostT.Data.S5H.P57 START Tue Oct 20 03:49:35 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P57
+=== STEP 335-Work.XHostT.Data.S5H.P57 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 336-Work.XHostT.Data.S5H.P58 START Tue Oct 20 03:49:36 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P58
+=== STEP 336-Work.XHostT.Data.S5H.P58 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 337-Work.XHostT.Data.S5H.P59 START Tue Oct 20 03:49:37 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P59
+=== STEP 337-Work.XHostT.Data.S5H.P59 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 338-Work.XHostT.Data.S5H.P6 START Tue Oct 20 03:49:38 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P6
+=== STEP 338-Work.XHostT.Data.S5H.P6 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 339-Work.XHostT.Data.S5H.P60 START Tue Oct 20 03:49:39 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P60
+=== STEP 339-Work.XHostT.Data.S5H.P60 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 340-Work.XHostT.Data.S5H.P61 START Tue Oct 20 03:49:40 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P61
+=== STEP 340-Work.XHostT.Data.S5H.P61 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 341-Work.XHostT.Data.S5H.P62 START Tue Oct 20 03:49:41 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P62
+=== STEP 341-Work.XHostT.Data.S5H.P62 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 342-Work.XHostT.Data.S5H.P63 START Tue Oct 20 03:49:42 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P63
+=== STEP 342-Work.XHostT.Data.S5H.P63 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 343-Work.XHostT.Data.S5H.P64 START Tue Oct 20 03:49:43 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P64
+=== STEP 343-Work.XHostT.Data.S5H.P64 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 344-Work.XHostT.Data.S5H.P65 START Tue Oct 20 03:49:44 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P65
+=== STEP 344-Work.XHostT.Data.S5H.P65 END rc=0 wall=2s last: Build completed successfully (5 jobs).
+=== STEP 345-Work.XHostT.Data.S5H.P66 START Tue Oct 20 03:49:46 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P66
+=== STEP 345-Work.XHostT.Data.S5H.P66 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 346-Work.XHostT.Data.S5H.P67 START Tue Oct 20 03:49:47 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P67
+=== STEP 346-Work.XHostT.Data.S5H.P67 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 347-Work.XHostT.Data.S5H.P68 START Tue Oct 20 03:49:48 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P68
+=== STEP 347-Work.XHostT.Data.S5H.P68 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 348-Work.XHostT.Data.S5H.P69 START Tue Oct 20 03:49:49 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P69
+=== STEP 348-Work.XHostT.Data.S5H.P69 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 349-Work.XHostT.Data.S5H.P7 START Tue Oct 20 03:49:50 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P7
+=== STEP 349-Work.XHostT.Data.S5H.P7 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 350-Work.XHostT.Data.S5H.P70 START Tue Oct 20 03:49:51 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P70
+=== STEP 350-Work.XHostT.Data.S5H.P70 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 351-Work.XHostT.Data.S5H.P71 START Tue Oct 20 03:49:52 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P71
+=== STEP 351-Work.XHostT.Data.S5H.P71 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 352-Work.XHostT.Data.S5H.P72 START Tue Oct 20 03:49:53 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P72
+=== STEP 352-Work.XHostT.Data.S5H.P72 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 353-Work.XHostT.Data.S5H.P73 START Tue Oct 20 03:49:54 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P73
+=== STEP 353-Work.XHostT.Data.S5H.P73 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 354-Work.XHostT.Data.S5H.P74 START Tue Oct 20 03:49:55 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P74
+=== STEP 354-Work.XHostT.Data.S5H.P74 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 355-Work.XHostT.Data.S5H.P75 START Tue Oct 20 03:49:56 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P75
+=== STEP 355-Work.XHostT.Data.S5H.P75 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 356-Work.XHostT.Data.S5H.P76 START Tue Oct 20 03:49:57 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P76
+=== STEP 356-Work.XHostT.Data.S5H.P76 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 357-Work.XHostT.Data.S5H.P77 START Tue Oct 20 03:49:58 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P77
+=== STEP 357-Work.XHostT.Data.S5H.P77 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 358-Work.XHostT.Data.S5H.P78 START Tue Oct 20 03:49:59 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P78
+=== STEP 358-Work.XHostT.Data.S5H.P78 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 359-Work.XHostT.Data.S5H.P79 START Tue Oct 20 03:50:00 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P79
+=== STEP 359-Work.XHostT.Data.S5H.P79 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 360-Work.XHostT.Data.S5H.P8 START Tue Oct 20 03:50:01 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P8
+=== STEP 360-Work.XHostT.Data.S5H.P8 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 361-Work.XHostT.Data.S5H.P80 START Tue Oct 20 03:50:02 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P80
+=== STEP 361-Work.XHostT.Data.S5H.P80 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 362-Work.XHostT.Data.S5H.P81 START Tue Oct 20 03:50:03 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P81
+=== STEP 362-Work.XHostT.Data.S5H.P81 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 363-Work.XHostT.Data.S5H.P82 START Tue Oct 20 03:50:04 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P82
+=== STEP 363-Work.XHostT.Data.S5H.P82 END rc=0 wall=2s last: Build completed successfully (5 jobs).
+=== STEP 364-Work.XHostT.Data.S5H.P83 START Tue Oct 20 03:50:06 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P83
+=== STEP 364-Work.XHostT.Data.S5H.P83 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 365-Work.XHostT.Data.S5H.P84 START Tue Oct 20 03:50:07 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P84
+=== STEP 365-Work.XHostT.Data.S5H.P84 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 366-Work.XHostT.Data.S5H.P85 START Tue Oct 20 03:50:08 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P85
+=== STEP 366-Work.XHostT.Data.S5H.P85 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 367-Work.XHostT.Data.S5H.P86 START Tue Oct 20 03:50:09 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P86
+=== STEP 367-Work.XHostT.Data.S5H.P86 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 368-Work.XHostT.Data.S5H.P87 START Tue Oct 20 03:50:10 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P87
+=== STEP 368-Work.XHostT.Data.S5H.P87 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 369-Work.XHostT.Data.S5H.P88 START Tue Oct 20 03:50:11 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P88
+=== STEP 369-Work.XHostT.Data.S5H.P88 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 370-Work.XHostT.Data.S5H.P89 START Tue Oct 20 03:50:12 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P89
+=== STEP 370-Work.XHostT.Data.S5H.P89 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 371-Work.XHostT.Data.S5H.P9 START Tue Oct 20 03:50:13 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P9
+=== STEP 371-Work.XHostT.Data.S5H.P9 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 372-Work.XHostT.Data.S5H.P90 START Tue Oct 20 03:50:14 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P90
+=== STEP 372-Work.XHostT.Data.S5H.P90 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 373-Work.XHostT.Data.S5H.P91 START Tue Oct 20 03:50:15 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P91
+=== STEP 373-Work.XHostT.Data.S5H.P91 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 374-Work.XHostT.Data.S5H.P92 START Tue Oct 20 03:50:16 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P92
+=== STEP 374-Work.XHostT.Data.S5H.P92 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 375-Work.XHostT.Data.S5H.P93 START Tue Oct 20 03:50:17 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P93
+=== STEP 375-Work.XHostT.Data.S5H.P93 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 376-Work.XHostT.Data.S5H.P94 START Tue Oct 20 03:50:18 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P94
+=== STEP 376-Work.XHostT.Data.S5H.P94 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 377-Work.XHostT.Data.S5H.P95 START Tue Oct 20 03:50:19 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P95
+=== STEP 377-Work.XHostT.Data.S5H.P95 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 378-Work.XHostT.Data.S5H.P96 START Tue Oct 20 03:50:20 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P96
+=== STEP 378-Work.XHostT.Data.S5H.P96 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 379-Work.XHostT.Data.S5H.P97 START Tue Oct 20 03:50:21 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P97
+=== STEP 379-Work.XHostT.Data.S5H.P97 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 380-Work.XHostT.Data.S5H.P98 START Tue Oct 20 03:50:22 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P98
+=== STEP 380-Work.XHostT.Data.S5H.P98 END rc=0 wall=2s last: Build completed successfully (5 jobs).
+=== STEP 381-Work.XHostT.Data.S5H.P99 START Tue Oct 20 03:50:24 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.P99
+=== STEP 381-Work.XHostT.Data.S5H.P99 END rc=0 wall=1s last: Build completed successfully (5 jobs).
+=== STEP 382-Work.XHostT.Data.S5H.Whole START Tue Oct 20 03:50:25 AM UTC 2026 cmd: lake build Work.XHostT.Data.S5H.Whole
+=== STEP 382-Work.XHostT.Data.S5H.Whole END rc=0 wall=8s last: Build completed successfully (9272 jobs).
+=== STEP 383-Work.XHostT.TTab START Tue Oct 20 03:50:33 AM UTC 2026 cmd: lake build Work.XHostT.TTab
+=== STEP 383-Work.XHostT.TTab END rc=0 wall=9s last: Build completed successfully (9232 jobs).
+=== STEP 384-Work.XHostT.Inst.S5H START Tue Oct 20 03:50:42 AM UTC 2026 cmd: lake build Work.XHostT.Inst.S5H
+=== STEP 384-Work.XHostT.Inst.S5H END rc=0 wall=10s last: Build completed successfully (9368 jobs).
+=== STEP 385-Work.XHostT.KHead START Tue Oct 20 03:50:52 AM UTC 2026 cmd: lake build Work.XHostT.KHead
+=== STEP 385-Work.XHostT.KHead END rc=0 wall=8s last: Build completed successfully (9143 jobs).
+=== STEP 386-Work.XHostT.TEnd START Tue Oct 20 03:51:00 AM UTC 2026 cmd: lake build Work.XHostT.TEnd
+=== STEP 386-Work.XHostT.TEnd END rc=0 wall=9s last: Build completed successfully (9230 jobs).
+=== STEP 387-Work.XHostT.Inst.S5HFacts START Tue Oct 20 03:51:09 AM UTC 2026 cmd: lake build Work.XHostT.Inst.S5HFacts
+=== STEP 387-Work.XHostT.Inst.S5HFacts END rc=0 wall=9s last: Build completed successfully (9405 jobs).
+=== STEP 388-Work.L3945H.Prov START Tue Oct 20 03:51:18 AM UTC 2026 cmd: lake build Work.L3945H.Prov
+=== STEP 388-Work.L3945H.Prov END rc=0 wall=8s last: Build completed successfully (9591 jobs).
+=== STEP 389-Work.L3945H.Engine START Tue Oct 20 03:51:26 AM UTC 2026 cmd: lake build Work.L3945H.Engine
+=== STEP 389-Work.L3945H.Engine END rc=0 wall=9s last: Build completed successfully (9612 jobs).
+=== STEP 390-Work.Mixed.SeamConst START Tue Oct 20 03:51:35 AM UTC 2026 cmd: lake build Work.Mixed.SeamConst
+=== STEP 390-Work.Mixed.SeamConst END rc=0 wall=8s last: Build completed successfully (9014 jobs).
+=== STEP 391-Work.FourierL3945H.Seam START Tue Oct 20 03:51:43 AM UTC 2026 cmd: lake build Work.FourierL3945H.Seam
+=== STEP 391-Work.FourierL3945H.Seam END rc=0 wall=9s last: Build completed successfully (9614 jobs).
+=== STEP 392-Work.FourierL3945H.SectorAlgorithm START Tue Oct 20 03:51:52 AM UTC 2026 cmd: lake build Work.FourierL3945H.SectorAlgorithm
+=== STEP 392-Work.FourierL3945H.SectorAlgorithm END rc=0 wall=8s last: Build completed successfully (9615 jobs).
+=== STEP 393-Work.FourierL3945H.SynchronizedAlgorithm START Tue Oct 20 03:52:00 AM UTC 2026 cmd: lake build Work.FourierL3945H.SynchronizedAlgorithm
+=== STEP 393-Work.FourierL3945H.SynchronizedAlgorithm END rc=0 wall=9s last: Build completed successfully (9616 jobs).
+=== STEP 394-Work.FourierL3945H.WorkingTransform START Tue Oct 20 03:52:09 AM UTC 2026 cmd: lake build Work.FourierL3945H.WorkingTransform
+=== STEP 394-Work.FourierL3945H.WorkingTransform END rc=0 wall=8s last: Build completed successfully (9617 jobs).
+=== STEP 395-Work.FourierL3945H.WorkingCompiler START Tue Oct 20 03:52:17 AM UTC 2026 cmd: lake build Work.FourierL3945H.WorkingCompiler
+=== STEP 395-Work.FourierL3945H.WorkingCompiler END rc=0 wall=9s last: Build completed successfully (9618 jobs).
+=== STEP 396-Work.FourierL3945H.WorkingPreparation START Tue Oct 20 03:52:26 AM UTC 2026 cmd: lake build Work.FourierL3945H.WorkingPreparation
+=== STEP 396-Work.FourierL3945H.WorkingPreparation END rc=0 wall=8s last: Build completed successfully (9619 jobs).
+=== STEP 397-Work.FourierL3945H.ArbitraryLength START Tue Oct 20 03:52:34 AM UTC 2026 cmd: lake build Work.FourierL3945H.ArbitraryLength
+=== STEP 397-Work.FourierL3945H.ArbitraryLength END rc=0 wall=9s last: Build completed successfully (9620 jobs).
+=== STEP 398-Work.FourierL3945H.TransformProgram START Tue Oct 20 03:52:43 AM UTC 2026 cmd: lake build Work.FourierL3945H.TransformProgram
+=== STEP 398-Work.FourierL3945H.TransformProgram END rc=0 wall=8s last: Build completed successfully (9621 jobs).
+=== STEP 399-Work.FourierL3945H.ConvolutionProgram START Tue Oct 20 03:52:52 AM UTC 2026 cmd: lake build Work.FourierL3945H.ConvolutionProgram
+=== STEP 399-Work.FourierL3945H.ConvolutionProgram END rc=0 wall=9s last: Build completed successfully (9622 jobs).
+=== STEP 400-Work.FourierL3945H.UniformBounds START Tue Oct 20 03:53:01 AM UTC 2026 cmd: lake build Work.FourierL3945H.UniformBounds
+=== STEP 400-Work.FourierL3945H.UniformBounds END rc=0 wall=8s last: Build completed successfully (9623 jobs).
+=== STEP 401-Work.FourierL3945H.Asymptotics START Tue Oct 20 03:53:09 AM UTC 2026 cmd: lake build Work.FourierL3945H.Asymptotics
+=== STEP 401-Work.FourierL3945H.Asymptotics END rc=0 wall=9s last: Build completed successfully (9624 jobs).
+=== STEP 402-Work.FourierL3945H.Goal START Tue Oct 20 03:53:18 AM UTC 2026 cmd: lake build Work.FourierL3945H.Goal
+=== STEP 402-Work.FourierL3945H.Goal END rc=0 wall=8s last: Build completed successfully (8927 jobs).
+=== STEP 403-Work.FourierL3945H.Main START Tue Oct 20 03:53:26 AM UTC 2026 cmd: lake build Work.FourierL3945H.Main
+=== STEP 403-Work.FourierL3945H.Main END rc=0 wall=8s last: Build completed successfully (9626 jobs).
+=== STEP 404-Work.FourierL3945H.Axioms START Tue Oct 20 03:53:34 AM UTC 2026 cmd: lake build Work.FourierL3945H.Axioms
+=== STEP 404-Work.FourierL3945H.Axioms END rc=0 wall=9s last: Build completed successfully (9627 jobs).
+=== STEP 405-Work.FourierL3945H.UniformFourierChallenge START Tue Oct 20 03:53:43 AM UTC 2026 cmd: lake build Work.FourierL3945H.UniformFourierChallenge
+=== STEP 405-Work.FourierL3945H.UniformFourierChallenge END rc=0 wall=15s last: Build completed successfully (8924 jobs).
+=== STEP 406-Work.FourierL3945HNeg.UniformFourierChallenge START Tue Oct 20 03:53:58 AM UTC 2026 cmd: lake build Work.FourierL3945HNeg.UniformFourierChallenge
+=== STEP 406-Work.FourierL3945HNeg.UniformFourierChallenge END rc=0 wall=15s last: Build completed successfully (8924 jobs).
+=== STEP build-targets START Tue Oct 20 03:54:13 AM UTC 2026 cmd: lake build Work.L3945H.Stmt Work.L3945H.Engine Work.FourierL3945H.Main Work.FourierL3945H.UniformFourierChallenge Work.FourierL3945HNeg.UniformFourierChallenge Work.FourierL3945H.Axioms
+=== STEP build-targets END rc=0 wall=10s last: Build completed successfully (9629 jobs).
+=== STEP axioms START Tue Oct 20 03:54:23 AM UTC 2026 cmd: lake env lean Work/FourierL3945H/Axioms.lean
+=== STEP axioms END rc=0 wall=90s last: 'OAI.PowerSaving.RAM.hillsL3945H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== STEP axiom-targets START Tue Oct 20 03:55:53 AM UTC 2026 cmd: lake env lean /content/work/logs/r-finalize/leverB/bac/AxiomTargets.lean
+=== STEP axiom-targets END rc=0 wall=8s last: 'OAI.PowerSaving.Skies.alpha_thetaL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== STEP control-heads-and-residuals-one-step-too-far START Tue Oct 20 03:56:02 AM UTC 2026 cmd: lake env lean /content/work/r-finalize/repo-leverB/package/leverB/controls/Heads3945HNeg.lean
+=== STEP control-heads-and-residuals-one-step-too-far END rc=0 wall=9s last: 'OAI.PowerSaving.XHostT.K.DS5H.res_ge0_6_false' depends on axioms: [propext]
+=== STEP control-rate-fact-one-grid-step-higher START Tue Oct 20 03:56:11 AM UTC 2026 cmd: lake env lean /content/work/r-finalize/repo-leverB/package/leverB/controls/Rate3945HSharpCtl.lean
+=== STEP control-rate-fact-one-grid-step-higher END rc=0 wall=9s last: 'OAI.PowerSaving.MX.rate3945H_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== STEP control-80641-heads START Tue Oct 20 03:56:20 AM UTC 2026 cmd: lake env lean /content/work/r-finalize/repo-leverB/package/leverB/controls/NegHeads.lean
+=== STEP control-80641-heads END rc=1 wall=20s last: is false
+=== STEP control-the-published-fills-head-count START Tue Oct 20 03:56:40 AM UTC 2026 cmd: lake env lean /content/work/r-finalize/repo-leverB/package/leverB/controls/NegHeadsOld.lean
+=== STEP control-the-published-fills-head-count END rc=1 wall=22s last: is false
+=== STEP control-width-bound-6 START Tue Oct 20 03:57:02 AM UTC 2026 cmd: lake env lean /content/work/r-finalize/repo-leverB/package/leverB/controls/NegRes.lean
+=== STEP control-width-bound-6 END rc=1 wall=2s last: is false
+=== STEP control-one-chunk-count-too-high START Tue Oct 20 03:57:04 AM UTC 2026 cmd: lake env lean /content/work/r-finalize/repo-leverB/package/leverB/controls/NegGlob.lean
+=== STEP control-one-chunk-count-too-high END rc=1 wall=7s last: is false
+=== STEP compare START Tue Oct 20 03:57:11 AM UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierL3945H.UniformFourierChallenge Work.FourierL3945H.Main OAI.PowerSaving.transform_mainL3945H OAI.PowerSaving.convolution_mainL3945H
+=== STEP compare END rc=0 wall=104s last: RESULT: PASS
+=== STEP compare-negative START Tue Oct 20 03:58:55 AM UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierL3945HNeg.UniformFourierChallenge Work.FourierL3945H.Main OAI.PowerSaving.transform_mainL3945H OAI.PowerSaving.convolution_mainL3945H
+=== STEP compare-negative END rc=1 wall=77s last: RESULT: FAIL
+PASS compare: RESULT: PASS
+PASS compare-negative: fails (rc != 0)
+PASS compare-negative: the exponent definition differs (decimalExponentL3945H)
+PASS axioms: no sorryAx
+PASS statement files: both identical to OpenAI's statement with only the exponent and names changed
+PASS Lean control heads-and-residuals-one-step-too-far compiles
+PASS Lean control rate-fact-one-grid-step-higher compiles
+PASS Lean control 80641-heads fails, as it must
+PASS Lean control the-published-fills-head-count fails, as it must
+PASS Lean control width-bound-6 fails, as it must
+PASS Lean control one-chunk-count-too-high fails, as it must
+PASS axioms: OAI.PowerSaving.transform_mainL3945H only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.convolution_mainL3945H only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.RAM.hillsL3945H_program only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.MX.L3945H.engine only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.MX.L3945H.EngineStmt.lift only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.SeamL3945H.engine_L3945H only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.RAM.envelope_program_geL3945H only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.SeamL3945H.alphaL3945H_lt_target only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.Skies.alpha_thetaL3945H only on propext, Classical.choice, Quot.sound
+PASS source scan: lakefile.lean changed only by the lines of tree_change / lakefile_add (this package and those it requires)
+PASS source scan: no forbidden word outside comments and the challenges' sorry (0 hits)
+PASS source scan: no tracked file of the base tree changed
+ALL CHECKS PASSED
+END Tue Oct 20 04:00:13 AM UTC 2026 rc=0

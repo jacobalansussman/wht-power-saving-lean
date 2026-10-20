@@ -1,0 +1,42 @@
+a5_certA.py:21: RuntimeWarning: divide by zero encountered in matmul
+  K = reduce(np.matmul, [on(m, j, D) for j in range(m)])
+a5_certA.py:21: RuntimeWarning: overflow encountered in matmul
+  K = reduce(np.matmul, [on(m, j, D) for j in range(m)])
+a5_certA.py:21: RuntimeWarning: invalid value encountered in matmul
+  K = reduce(np.matmul, [on(m, j, D) for j in range(m)])
+a5_certA.py:23: RuntimeWarning: divide by zero encountered in matmul
+  Kinv = K @ Xall
+a5_certA.py:23: RuntimeWarning: overflow encountered in matmul
+  Kinv = K @ Xall
+a5_certA.py:23: RuntimeWarning: invalid value encountered in matmul
+  Kinv = K @ Xall
+a5_certA.py:24: RuntimeWarning: divide by zero encountered in matmul
+a5_certA.py:24: RuntimeWarning: overflow encountered in matmul
+a5_certA.py:24: RuntimeWarning: invalid value encountered in matmul
+a5_certA.py:26: RuntimeWarning: divide by zero encountered in matmul
+  W = S1 @ K @ S1 @ Kinv @ np.linalg.matrix_power(S1, 3)
+a5_certA.py:26: RuntimeWarning: overflow encountered in matmul
+  W = S1 @ K @ S1 @ Kinv @ np.linalg.matrix_power(S1, 3)
+a5_certA.py:26: RuntimeWarning: invalid value encountered in matmul
+  W = S1 @ K @ S1 @ Kinv @ np.linalg.matrix_power(S1, 3)
+numpy/linalg/_linalg.py:3220: RuntimeWarning: divide by zero encountered in matmul
+numpy/linalg/_linalg.py:3220: RuntimeWarning: overflow encountered in matmul
+numpy/linalg/_linalg.py:3220: RuntimeWarning: invalid value encountered in matmul
+a5_certA.py:28: RuntimeWarning: divide by zero encountered in matmul
+a5_certA.py:28: RuntimeWarning: overflow encountered in matmul
+a5_certA.py:28: RuntimeWarning: invalid value encountered in matmul
+a5_certA.py:38: RuntimeWarning: divide by zero encountered in matmul
+a5_certA.py:38: RuntimeWarning: overflow encountered in matmul
+a5_certA.py:38: RuntimeWarning: invalid value encountered in matmul
+a5_certA.py:46: RuntimeWarning: divide by zero encountered in matmul
+a5_certA.py:46: RuntimeWarning: overflow encountered in matmul
+a5_certA.py:46: RuntimeWarning: invalid value encountered in matmul
+a5_certA.py:44: RuntimeWarning: divide by zero encountered in matmul
+a5_certA.py:44: RuntimeWarning: overflow encountered in matmul
+a5_certA.py:44: RuntimeWarning: invalid value encountered in matmul
+A5 m=1: K*K^-1=I True; dir_e1 = S1 K S1 K^-1 S1^3 exactly True; K S1 K^-1 = (dir S dir^-1) x I True
+A5 m=2: K*K^-1=I True; dir_e1 = S1 K S1 K^-1 S1^3 exactly True; K S1 K^-1 = (dir S dir^-1) x I True
+A5 m=3: K*K^-1=I True; dir_e1 = S1 K S1 K^-1 S1^3 exactly True; K S1 K^-1 = (dir S dir^-1) x I True
+A5 m=4: K*K^-1=I True; dir_e1 = S1 K S1 K^-1 S1^3 exactly True; K S1 K^-1 = (dir S dir^-1) x I True
+A5 m=5: K*K^-1=I True; dir_e1 = S1 K S1 K^-1 S1^3 exactly True; K S1 K^-1 = (dir S dir^-1) x I True
+        0.23 real         0.22 user         0.01 sys

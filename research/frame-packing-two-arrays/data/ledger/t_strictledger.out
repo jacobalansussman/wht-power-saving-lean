@@ -1,0 +1,39 @@
+plain                        m=1 M= 1 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+plain                        m=1 M= 2 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+plain                        m=1 M= 3 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+detour(z=1)                  m=1 M= 4 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=1 Z=0 | frame: P=0 B=0
+pair trick                   m=1 M= 2 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+copy-move-copy               m=1 M= 2 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+plain                        m=2 M= 2 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+plain                        m=2 M= 4 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+plain                        m=2 M= 6 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+detour(z=3)                  m=2 M= 6 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=1 Z=0 | frame: P=0 B=0
+pair trick                   m=2 M= 4 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+copy-move-copy               m=2 M= 4 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+gauge-exchange               m=2 M= 4 unit=True | strict: raw_ok=True unit_ok=True P=1 B=1 D=0 Z=0 | frame: P=1 B=1
+== lateral: no free fix within depth 4 at m=2
+packing gadget               m=2 M= 5 unit=True | strict: raw_ok=True unit_ok=True P=1 B=2 D=0 Z=0 | frame: P=1 B=2
+plain                        m=3 M= 3 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+plain                        m=3 M= 6 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+plain                        m=3 M= 9 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+detour(z=3)                  m=3 M= 8 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=1 Z=0 | frame: P=0 B=0
+pair trick                   m=3 M= 6 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+copy-move-copy               m=3 M= 6 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+gauge-exchange               m=3 M= 6 unit=True | strict: raw_ok=True unit_ok=True P=2 B=2 D=0 Z=0 | frame: P=2 B=2
+== lateral: no free fix within depth 4 at m=3
+order-3 control C6O3         m=3 M= 6 unit=True | strict: raw_ok=True unit_ok=True P=3 B=3 D=0 Z=0 | frame: P=3 B=3
++-1 halving control C6H      m=3 M= 6 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+packing gadget               m=3 M= 7 unit=True | strict: raw_ok=True unit_ok=True P=1 B=2 D=0 Z=0 | frame: P=1 B=2
+plain                        m=4 M= 4 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+plain                        m=4 M= 8 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+plain                        m=4 M=12 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+detour(z=1)                  m=4 M=10 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=1 Z=0 | frame: P=0 B=0
+pair trick                   m=4 M= 8 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+copy-move-copy               m=4 M= 8 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+gauge-exchange               m=4 M= 8 unit=True | strict: raw_ok=True unit_ok=True P=3 B=3 D=0 Z=0 | frame: P=3 B=3
+== lateral: no free fix within depth 4 at m=4
+order-3 control C8O3         m=4 M= 8 unit=True | strict: raw_ok=True unit_ok=True P=4 B=4 D=0 Z=0 | frame: P=4 B=4
++-1 halving control C8H      m=4 M= 8 unit=True | strict: raw_ok=True unit_ok=True P=0 B=0 D=0 Z=0 | frame: P=0 B=0
+packing gadget               m=4 M= 9 unit=True | strict: raw_ok=True unit_ok=True P=1 B=2 D=0 Z=0 | frame: P=1 B=2
+
+strict labels: named cases all exact: True | random words: 280 violations: 0

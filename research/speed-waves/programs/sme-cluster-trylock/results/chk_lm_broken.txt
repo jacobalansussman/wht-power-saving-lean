@@ -1,0 +1,7 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK w0 sme         F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 2.595e-01 (frame 2356 mel 40) rms 7.225e-03 FAIL
+RESULT logmel     W=1 E=0 sme       median 3726.825 best 3726.825 ns/frame agg  =    0.268 Mframe/s | call p50  10696.5 p99  39404.3 max  39404.3 us | SME calls 100.0 % | mean us: sme 11377.8 neon 0.0 | calls 52 | CHECK FAIL
+CHECK w0 neon        F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 4.332e-06 (frame 649 mel 13) rms 3.457e-08 PASS
+RESULT logmel     W=1 E=0 neon      median 6078.496 best 6078.496 ns/frame agg  =    0.165 Mframe/s | call p50  20153.5 p99  31636.7 max  31636.7 us | SME calls   0.0 % | mean us: sme 0.0 neon 18212.1 | calls 32 | CHECK PASS
+CHECK w0 sme         F=3000 all 240000 log-mel values vs fp64 (DFT, Slaney mel, Whisper log): max abs 2.595e-01 (frame 2356 mel 40) rms 7.225e-03 FAIL
+RESULT logmel     W=1 E=0 owner     median 3016.968 best 3016.968 ns/frame agg  =    0.331 Mframe/s | call p50   8770.8 p99  29385.2 max  29385.2 us | SME calls 100.0 % | mean us: sme 9035.4 neon 0.0 | calls 59 | CHECK FAIL

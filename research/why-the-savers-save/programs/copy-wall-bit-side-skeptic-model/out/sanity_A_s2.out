@@ -1,0 +1,10 @@
+dim10 new best 69 [6, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+dim11 new best 74 [5, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+dim10 new best 68 [5, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+dim11 new best 69 [1, 5, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+dim10 new best 64 [1, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+dim11 new best 65 [1, 1, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+s2 dim10 cost histogram [(64, 13), (68, 8), (69, 39)]
+s2 dim11 cost histogram [(65, 5), (69, 5), (70, 13), (73, 1), (74, 8), (75, 28)]
+        2.64 real         2.45 user         0.05 sys
+            43319296  maximum resident set size

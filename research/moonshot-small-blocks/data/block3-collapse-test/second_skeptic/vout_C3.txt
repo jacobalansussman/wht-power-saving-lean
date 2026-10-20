@@ -1,0 +1,7 @@
+[     0s] C3: labels match (2430 top words); lower words 3570; claimed collapse vectors 10
+[   452s] f=3,4 fresh: rows 4608, lower rank 3262
+[   455s] claimed collapse vectors at f=3,4 (fresh inputs): residuals ['3.0e-15', '3.7e-15', '3.9e-15', '3.9e-15', '4.2e-15', '4.2e-15', '4.3e-15', '4.2e-15', '4.2e-15', '4.8e-15']
+[   484s] trivial columns at f=3,4 (fresh): 0; npz kept 2430 -> implied trivial 0
+[   853s] column dependencies of all top columns at f=3,4: 244
+[   861s] candidate space dim 254 (= X 10 + dependencies 244 + trivial 0, overlaps removed)
+[   979s] my reducibility: 0 top words reducible at f=3, 0 confirmed at f=4; npz red: 0; agreement on kept columns: 2430/2430

@@ -1,0 +1,10 @@
+d=1 subspaces=511 Tmax=90 of 1260 floor(d)=112.0000 basis: 256
+d=2 subspaces=43435 Tmax=180 of 1260 floor(d)=112.0000 basis: 256 128
+d=3 subspaces=788035 Tmax=340 of 1260 floor(d)=88.9412 basis: 256 128 65
+d=4 subspaces=3309747 Tmax=612 of 1260 floor(d)=65.8824 basis: 256 128 65 40
+d=5 subspaces=3309747 Tmax=897 of 1260 floor(d)=56.1873 basis: 256 128 65 38 24
+d=6 subspaces=788035 Tmax=1155 of 1260 floor(d)=52.3636 basis: 256 128 65 35 23 10
+d=7 subspaces=43435 Tmax=1260 of 1260 floor(d)=56.0000 basis: 256 128 64 32 18 11 6
+d=8 subspaces=511 Tmax=1260 of 1260 floor(d)=64.0000 basis: 256 128 64 32 16 9 4 2
+d=9 subspaces=1 Tmax=1260 of 1260 floor(d)=72.0000 basis: 256 128 64 32 16 8 4 2 1
+one-sided clique floor = 52.3636 per call

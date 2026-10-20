@@ -1,0 +1,5 @@
+m=4 seed=61 dup=False depth=12: 30 designs in 17s
+  injections by class: {'rescale': 50, 'genuine': 99, 'partial': 25}  total 174
+  designs with >= 1 injection: 30
+  genuine landings per design: histogram [(1, 2), (2, 9), (3, 3), (4, 11), (5, 4), (6, 1)]
+  null (rescale) injections per design: histogram [(0, 12), (1, 7), (2, 5), (4, 3), (5, 1), (6, 1), (10, 1)]

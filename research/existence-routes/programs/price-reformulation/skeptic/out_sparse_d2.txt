@@ -1,0 +1,8 @@
+d=2: N=8, w=64; Gamma^2=I ok; nnz(Gamma)=16 (paper (1+d/2)N = 16.0)
+A0 symmetric ok; nnz(A0)=256 (paper (d+2)w = 256); off-diagonal pairs h=128 (paper bound (d/2+1)w = 128.0); nonzero diagonal 0
+[p=2147483647] dim ker L = 32 (need 32); rank A0 = 32 (need 32); A0*E = 0: True
+[p=2147483647] dim V_S = 1; generic rank on full support = 32 (need 32)
+[p=2147483647] pairs whose removal keeps rank 32: 0 of 128 -> REMOVAL-MINIMAL
+[p=1000000007] dim ker L = 32 (need 32); rank A0 = 32 (need 32); A0*E = 0: True
+[p=1000000007] dim V_S = 1; generic rank on full support = 32 (need 32)
+[p=1000000007] pairs whose removal keeps rank 32: 0 of 128 -> REMOVAL-MINIMAL

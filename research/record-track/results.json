@@ -1,0 +1,1561 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "record-track",
+ "title": "The record track: the Lean ladder, the levers that failed, the recursion lever and the frontier",
+ "dates": "2026-10-13 to 2026-10-20",
+ "made_with": "AI agents (Claude) directed by the author",
+ "lean": "the ladder rungs are proved in Lean (packages elsewhere in the repository); the lever records' status is given by their entries; nothing else in this section is checked in Lean",
+ "findings": [
+  {
+   "id": "record-track/1",
+   "statement": "Shea's Lean-checked result on Kothe's #588 (112 source copies), reproduced through this repository's engine (DFT of every length and convolution, OpenAI's statement).",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it in a stand-in sandbox (not the real Landlock one); every price of the ladder reproduces it first; no person has read it",
+   "date": "2026-10-13",
+   "figure": 0.0012331685,
+   "circuit": null,
+   "numbers": {
+    "package": "Shea's own repository"
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "Shea's own repository"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R7"
+  },
+  {
+   "id": "record-track/2",
+   "statement": "Optimal re-packing of Shea's bank table with the sharper rate inequality term_le4 (5,009 banks; the padding cost is proved minimal and a table with one bank fewer is infeasible) (DFT of every length and convolution, OpenAI's statement).",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it in a stand-in sandbox (not the real Landlock one); five AI skeptics (the packing, its re-pricing, its truth, the statement, the WHT corollary) did not refute it; no person has read it",
+   "date": "2026-10-13",
+   "figure": 0.0012383291,
+   "circuit": null,
+   "numbers": {
+    "package": "community/c588-repack"
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../community/c588-repack/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R7"
+  },
+  {
+   "id": "record-track/3",
+   "statement": "Exit frames on the community's U8 circuit (#869, #870, #890) (DFT of every length and convolution, OpenAI's statement).",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it in a stand-in sandbox (not the real Landlock one); two AI skeptics (statement, rebuild) did not refute it; no person has read it",
+   "date": "2026-10-13",
+   "figure": 0.0012704023,
+   "circuit": null,
+   "numbers": {
+    "package": "community/u8x"
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../community/u8x/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R5"
+  },
+  {
+   "id": "record-track/4",
+   "statement": "C588M: #588 with mutable sources (written in place, then restored) instead of 112 source copies (DFT of every length and convolution, OpenAI's statement).",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it in a stand-in sandbox (not the real Landlock one); two AI skeptics, one an independent rebuild of all 70 modules, did not refute it; no person has read it",
+   "date": "2026-10-13",
+   "figure": 0.0013552606,
+   "circuit": null,
+   "numbers": {
+    "package": "community/c588m"
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../community/c588m/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R6"
+  },
+  {
+   "id": "record-track/5",
+   "statement": "U8XM: exit frames and mutable sources on U8, keeping 5 centre copies (DFT of every length and convolution, OpenAI's statement).",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it in a stand-in sandbox (not the real Landlock one); two AI skeptics did not refute it; no person has read it",
+   "date": "2026-10-13",
+   "figure": 0.0013868856,
+   "circuit": null,
+   "numbers": {
+    "package": "community/u8xm"
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../community/u8xm/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R5"
+  },
+  {
+   "id": "record-track/6",
+   "statement": "C588MHH: #588 with mutable sources and helpers hosted in idle data registers within one run (DFT of every length and convolution, OpenAI's statement).",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it in a stand-in sandbox (not the real Landlock one); three AI skeptics, one a clean rebuild of 32 modules, did not refute it; no person has read it",
+   "date": "2026-10-13",
+   "figure": 0.0015699305,
+   "circuit": null,
+   "numbers": {
+    "package": "community/c588mhh"
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../community/c588mhh/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R4"
+  },
+  {
+   "id": "record-track/7",
+   "statement": "U8XMHH: exit frames, mutable sources (5 centre copies kept) and same-run hosting on U8 (DFT of every length and convolution, OpenAI's statement).",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it in a stand-in sandbox (not the real Landlock one); two AI skeptics, one an independent rebuild, did not refute it; no person has read it",
+   "date": "2026-10-13",
+   "figure": 0.0016197705,
+   "circuit": null,
+   "numbers": {
+    "package": "community/u8xmhh"
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../community/u8xmhh/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R3"
+  },
+  {
+   "id": "record-track/8",
+   "statement": "U8X0HH: the same with no centre copies (DFT of every length and convolution, OpenAI's statement).",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it in a stand-in sandbox (not the real Landlock one); no skeptic of its own; its stage is rebuilt inside the U8X0HQ rebuild; replaced within hours; no person has read it",
+   "date": "2026-10-14",
+   "figure": 0.0016256506,
+   "circuit": null,
+   "numbers": {
+    "package": "package/u8x0hq (its Fourier chain is one of the four built on the way to U8X0HQ; README.txt there)"
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "package/u8x0hq/README.txt"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R2"
+  },
+  {
+   "id": "record-track/9",
+   "statement": "U8X0HQ: the same with a one-pad host table and term_le4 (W 7491, 323 banks, 4,032 helpers hosted per run) (DFT of every length and convolution, OpenAI's statement).",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it in a stand-in sandbox (not the real Landlock one); a fresh AI rebuild regenerated every file byte for byte and closed the proof; a statement skeptic did not refute it; no person has read it",
+   "date": "2026-10-14",
+   "figure": 0.0016256629,
+   "circuit": null,
+   "numbers": {
+    "package": "package/u8x0hq"
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../package/u8x0hq/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R1"
+  },
+  {
+   "id": "record-track/10",
+   "statement": "Of the factor 1.318 between Shea's start and U8X0HQ, about 1.032 is the community's better circuit (U8 against #588) and about 1.277 is overhead the Lean route had charged and the ladder removed; the words of this repository carry no saving object of their own.",
+   "status": "argued by hand, not checked",
+   "status_detail": "from a dissection of the words; one AI skeptic checked it in part (its D = 320 per replica and its fold root)",
+   "date": "2026-10-15",
+   "figure": null,
+   "circuit": null,
+   "numbers": {
+    "total": 1.318,
+    "community_circuit": 1.032,
+    "lean_overhead_removed": 1.277
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../why-the-savers-save/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R31"
+  },
+  {
+   "id": "record-track/11",
+   "statement": "Higher rungs priced and never built: on U8 with no copies, hosting across runs 1.6438659e-3 and deferred finals 1.6459856e-3; an early what-if for the whole U8 stack (1.6360855e-3) was re-priced lower once real host tables existed.",
+   "status": "checked by computer",
+   "status_detail": "prices computed by a program, not proved; what-ifs (they need a hosted network across replicas that was not written then); no skeptic for the stack figures",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {
+    "cross_run_hosting_no_copies": 0.0016438659,
+    "deferred_finals_no_copies": 0.0016459856,
+    "early_full_stack_whatif": 0.0016360855
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R22"
+  },
+  {
+   "id": "record-track/12",
+   "statement": "A faithful Lean port of the community's best circuit of 14 October (T74) lands at 1.6797548e-3, about 2e-10 below the community's b = 1.6797550e-3, because the Lean rate theorem certifies the same moment inequality; every extra built for the ladder adds exactly 0 on T74, because the community's price already assumes it.",
+   "status": "checked by computer",
+   "status_detail": "prices of each extra on T74's profile and the port through the Lean grid; one AI skeptic re-read the plan and did not refute it",
+   "date": "2026-10-14",
+   "figure": 0.0016797548,
+   "circuit": "T74 (#1839)",
+   "numbers": {
+    "community_b": 0.001679755,
+    "margin_target": 0.001686474
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R21"
+  },
+  {
+   "id": "record-track/13",
+   "statement": "Walsh packets (delivery helpers grouped so that additions need no common frame) are wrong at the matrix level as built; every correct repair costs at least 24 in rank per group against a break-even of 50 moves in all.",
+   "status": "checked by computer",
+   "status_detail": "exact matrix computation; one AI skeptic upheld it",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": "T74",
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R24"
+  },
+  {
+   "id": "record-track/14",
+   "statement": "Copies and plane ports in this repository's wider engine add nothing on T74: the shortest climbs never leave the community's frames; the open bundle question is worth at most +1.48 % as a what-if, with no construction.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by hand, in part as a written proof, not checked; one AI skeptic upheld it",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": "T74",
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R24"
+  },
+  {
+   "id": "record-track/15",
+   "statement": "Idle blocks cannot be merged into larger blocks on T74 (this engine has no rank cap): the idle blocks of each family never overlap in time and bridges wall them in (0 qualifying blocks).",
+   "status": "checked by computer",
+   "status_detail": "exact census; one AI skeptic upheld it",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": "T74",
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R24"
+  },
+  {
+   "id": "record-track/16",
+   "statement": "No other fill of T74's idle cells, and no other split of its 666 calls between its two helper circuits (the community uses 417 and 249), gives a higher community price.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a nine-way balance count and an exact LP-duality certificate (checked by computer); one AI skeptic upheld it. It concerns the community's uniform price; a fill does change the lever's price through the number of heads",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": "T74",
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R24"
+  },
+  {
+   "id": "record-track/17",
+   "statement": "Thirteen generated margin levers all fail against the exchange wall: one paid rank-1 move added per call costs -2.82 %.",
+   "status": "checked by computer",
+   "status_detail": "one AI skeptic upheld it",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": "T74",
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R24"
+  },
+  {
+   "id": "record-track/18",
+   "statement": "Grafts on the community's circuits #799 and #942: targets reading targets retire exactly 0 helpers; helper-slot reuse passes exactly 0 merges; the best legal reordering of gates loses 0.035 % (248 attempts); no 9-line bit-side puncture beats copy cost 63 (proof, SAT and enumeration); kappa can rise at most 4.13 % before the bit side binds.",
+   "status": "checked by computer",
+   "status_detail": "exact searches; the skeptics' verdicts are recorded but their texts are not shown; a 10-line puncture lead reaching 62 only in a finer model was weakened by its critic",
+   "date": "2026-10-13",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R25"
+  },
+  {
+   "id": "record-track/19",
+   "statement": "'Natural exits' (helpers stop wherever their last gate leaves them, with no restore) give 1.4862904e-3 (#552 word) and 1.4836786e-3 (X4).",
+   "status": "refuted",
+   "status_detail": "withdrawn before anything used them; the exit frames the community charges (1.2704e-3) stand",
+   "date": "2026-10-13",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "an AI skeptic: the engine's undo step needs helpers restored at full frames",
+   "archive_entry": "C6"
+  },
+  {
+   "id": "record-track/20",
+   "statement": "A 4,999-bank table for #588 (1.2401918e-3).",
+   "status": "refuted",
+   "status_detail": "unbuildable; never built",
+   "date": "2026-10-13",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the packing integer programme is infeasible",
+   "archive_entry": "R7"
+  },
+  {
+   "id": "record-track/21",
+   "statement": "Theorem 1G: a mixed rule with grouped paid blocks that is separated (every paid rank below every job size) costs at most C n^tau (ln n)^kappa in the job model, with tau the root of its balance, kappa = ceil(ln(2/eta_m)/ln(1/theta)), theta = ln r_max/ln k_min; so every saving below 1 - tau is reached with a fixed constant. The construction is a dilated lockstep tree: exactly balanced, integral, deadlock-free, with exits done by fresh calls.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two independent AI skeptics re-derived and simulated it (one re-derived the logic with its own simulation, one built the construction explicitly with a generic deadlock test) and found no error; no person and no proof checker has read it",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [
+    "programs/theorem-1g/tree_flow.py",
+    "programs/theorem-1g/indep_tree.py",
+    "programs/theorem-1g/explicit_sim.py"
+   ],
+   "data": [],
+   "evidence": [
+    "proofs/theorem-1g.md"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "M18"
+  },
+  {
+   "id": "record-track/22",
+   "statement": "Lemma A (the exact condition for the top-split induction with leftovers) and Lemma A4: a flow whose leftovers carry all the Phi can never give exact O(n^tau) through this induction; so exact O(n^tau) without a log factor is not reached by this construction for grouped blocks.",
+   "status": "argued by hand, not checked",
+   "status_detail": "part of the Theorem 1G proof; both skeptics' hypothesis checks agree with A4 at every n tested",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [
+    "programs/theorem-1g/check_E.py"
+   ],
+   "data": [],
+   "evidence": [
+    "proofs/theorem-1g.md"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "M18"
+  },
+  {
+   "id": "record-track/23",
+   "statement": "Every numerical check of the construction holds: 0 unbalanced points, sources in (L/m, L], Phi(exits) = Phi(sources), exits within r_max (L/m)^theta, the unit bound, a cost T(n)/n^tau that grows far below (ln n)^kappa (flat for the rank-1 control), and hypothesis (E) of Lemma A3 at every n up to 12,800 for five test rules and, for the T74 what-if rule, at every n up to 20,000 and at every 997th n up to 3,000,000.",
+   "status": "checked by computer",
+   "status_detail": "exact computations by the proof's own programs and by two skeptics' independent programs; all re-run on 19 Oct 2026 for this revision with identical outputs",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [
+    "programs/theorem-1g/tree_flow.py",
+    "programs/theorem-1g/recur.py",
+    "programs/theorem-1g/recheck_t1.py",
+    "programs/theorem-1g/indep_tree.py",
+    "programs/theorem-1g/explicit_sim.py",
+    "programs/theorem-1g/cost_fit.py",
+    "programs/theorem-1g/check_E.py"
+   ],
+   "data": [
+    "data/theorem-1g/"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "M18"
+  },
+  {
+   "id": "record-track/24",
+   "statement": "The Lean form of the mixed recursion inside OpenAI's RAM model (flow, cost bound without a log factor for every exponent above a rate point, the program of the lockstep tree, the head lemma and the 24 + 24 block split).",
+   "status": "proved in Lean",
+   "status_detail": "*proved in Lean*, as part of each of the five lever packages (in `package/leverF` and `package/leverB`, the modules under `Work/Mixed/` and `Work/MixedCost/`), with the official comparator accepting each result and three skeptics upholding each",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "proofs/theorem-1g.md",
+    "../../package/leverF/",
+    "../../package/leverB/",
+    "../../package/leverA/",
+    "../../package/lever2979/",
+    "../../package/lever/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/25",
+   "statement": "A head may be cut even though its array is read later: if the first operation on array w is a block H_S on w alone, the rest of the circuit applied to y = H_S x outputs the transform along the other axes on w and the correct outputs elsewhere; for the complex kernel the reduced job is a standard job up to free maps on the raw input.",
+   "status": "argued by hand, not checked",
+   "status_detail": "read by two AI skeptics on 14 Oct (the logic skeptic and the half-cut gate); no person has read it",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R23"
+  },
+  {
+   "id": "record-track/26",
+   "statement": "A rank-48 idle block equals two blocks of rank 24 on a split of its axes, in the community's semantics (orthonormal lines of the port's basis) and in this repository's (a block acts by its flat list of axis transforms).",
+   "status": "checked by computer",
+   "status_detail": "the half-cut gate checked prefix, suffix and 2,016 random 24-subsets on all 112 ports (checked by computer) and argued the general case by hand",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [
+    "data/lever-prices/half-cut-gate-g1.json"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R23"
+  },
+  {
+   "id": "record-track/27",
+   "statement": "11,010 of T74's 22,748 idle rank-48 blocks are literal heads (children 8 and 10 of pair 3: 6,150 + 4,860); the other 11,738 (children 12 and 13, pair 0) are neither heads nor tails, because a bridge adding pair 0 into pair 1 reads them after; no idle block is a tail.",
+   "status": "checked by computer",
+   "status_detail": "two independent programs on the community's controller, and a third in this repository's own lowering and Lean network (all 319,680 hosted roles inside a window); negative control (bridge first) 0 heads, positive control (gate removed) 11,738 tails",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": "T74 (#1839)",
+   "numbers": {
+    "heads": 11010,
+    "idle48": 22748
+   },
+   "programs": [],
+   "data": [
+    "data/heads/t74-head-test.json",
+    "data/heads/t74-head-recount-skeptic.json",
+    "data/heads/t74-heads-in-our-lowering.json"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R23"
+  },
+  {
+   "id": "record-track/28",
+   "statement": "#1042 has 2,329 literal heads, 1,735 net heads and 3,486 neither among its 7,550 idle blocks; 46 % fail the head test.",
+   "status": "checked by computer",
+   "status_detail": "two programs",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": "#1042",
+   "numbers": {
+    "literal": 2329,
+    "net": 1735,
+    "neither": 3486,
+    "idle": 7550
+   },
+   "programs": [],
+   "data": [
+    "data/heads/t74-head-test.json",
+    "data/heads/t74-head-recount-skeptic.json"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R23"
+  },
+  {
+   "id": "record-track/29",
+   "statement": "57,312 of #3945's 137,952 idle rank-48 blocks are literal heads (child 8: 28,672; child 10: 28,640); pair 0 (80,640 blocks) is never hosted and never a head.",
+   "status": "checked by computer",
+   "status_detail": "the head test, its bridge-first control (0), a recount with no chronology, a skeptic's own count inferring every helper width from the fill, and this repository's own lowering and network (all 1,321,920 roles inside a window)",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": "#3945",
+   "numbers": {
+    "heads": 57312,
+    "idle48": 137952
+   },
+   "programs": [],
+   "data": [
+    "data/heads/3945-head-test.json",
+    "data/heads/3945-head-test-control.json",
+    "data/heads/3945-head-recount-skeptic.json",
+    "data/heads/3945-heads-in-our-lowering.json"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/30",
+   "statement": "16,086 of #2979's 28,190 idle rank-48 blocks are literal heads (child 8: 8,064; child 10: 8,022); 12,104 neither.",
+   "status": "checked by computer",
+   "status_detail": "the head test with a stub of the helper origins (equal to the real field on #3945, and later to the real field on #2979 from this repository's own transport), its control (0), a recount with no chronology, and this repository's own lowering and network; the head test was re-run on 19 Oct 2026 for this revision with identical results",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": "#2979",
+   "numbers": {
+    "heads": 16086,
+    "idle48": 28190
+   },
+   "programs": [
+    "programs/head-test-2979/"
+   ],
+   "data": [
+    "data/heads/2979-head-test.json",
+    "data/heads/2979-head-test-control.json",
+    "data/heads/2979-head-recount.txt",
+    "data/heads/2979-heads-in-our-lowering.json"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/31",
+   "statement": "The half cut on T74 (#1839) prices at 1.6968621e-3 (+1.02 % over 1.6797550e-3; no break-even).",
+   "status": "checked by computer",
+   "status_detail": "a price computed by a program, not a theorem: the root of the balance, first computed by one program, reproduced by an AI skeptic's own code, and bracketed to width 1e-16 with exact interval arithmetic by lever_table.py (re-run 19 Oct 2026)",
+   "date": "2026-10-14",
+   "figure": 0.0016968621,
+   "circuit": "T74 (#1839)",
+   "numbers": {
+    "variant": "half cut"
+   },
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ],
+   "data": [
+    "data/lever-prices/lever_table.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R23"
+  },
+  {
+   "id": "record-track/32",
+   "statement": "The full cut on T74 (#1839) prices at 1.6948358e-3 (+0.90 %; break-even 9,443 heads).",
+   "status": "checked by computer",
+   "status_detail": "a price computed by a program, not a theorem: the root of the balance, first computed by one program, reproduced by an AI skeptic's own code, and bracketed to width 1e-16 with exact interval arithmetic by lever_table.py (re-run 19 Oct 2026)",
+   "date": "2026-10-14",
+   "figure": 0.0016948358,
+   "circuit": "T74 (#1839)",
+   "numbers": {
+    "variant": "full cut"
+   },
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ],
+   "data": [
+    "data/lever-prices/lever_table.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R23"
+  },
+  {
+   "id": "record-track/33",
+   "statement": "The half cut on #2979 prices at 1.7556473e-3 (+1.54 % over 1.7290340e-3).",
+   "status": "checked by computer",
+   "status_detail": "a price computed by a program, not a theorem: the root of the balance, computed by the build rounds' own programs (no skeptic re-derived it) and bracketed to width 1e-16 with exact interval arithmetic by lever_table.py (re-run 19 Oct 2026)",
+   "date": "2026-10-19",
+   "figure": 0.0017556473,
+   "circuit": "#2979",
+   "numbers": {
+    "variant": "half cut"
+   },
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ],
+   "data": [
+    "data/lever-prices/lever_table.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/34",
+   "statement": "The full cut on #2979 prices at 1.7744822e-3 (+2.63 %; break-even 11,702 heads; not built).",
+   "status": "checked by computer",
+   "status_detail": "a price computed by a program, not a theorem: the root of the balance, computed by the build rounds' own programs (no skeptic re-derived it) and bracketed to width 1e-16 with exact interval arithmetic by lever_table.py (re-run 19 Oct 2026)",
+   "date": "2026-10-19",
+   "figure": 0.0017744822,
+   "circuit": "#2979",
+   "numbers": {
+    "variant": "full cut"
+   },
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ],
+   "data": [
+    "data/lever-prices/lever_table.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/35",
+   "statement": "The half cut on #3945 prices at 1.7501109e-3 (+1.12 % over 1.7306632e-3).",
+   "status": "checked by computer",
+   "status_detail": "a price computed by a program, not a theorem: the root of the balance, first computed by one program, reproduced by an AI skeptic's own code, and bracketed to width 1e-16 with exact interval arithmetic by lever_table.py (re-run 19 Oct 2026)",
+   "date": "2026-10-19",
+   "figure": 0.0017501109,
+   "circuit": "#3945",
+   "numbers": {
+    "variant": "half cut"
+   },
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ],
+   "data": [
+    "data/lever-prices/lever_table.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/36",
+   "statement": "The full cut on #3945 prices at 1.7307680e-3 (+0.006 %; at break-even (57,262 heads against 57,312); not built).",
+   "status": "checked by computer",
+   "status_detail": "a price computed by a program, not a theorem: the root of the balance, first computed by one program, reproduced by an AI skeptic's own code, and bracketed to width 1e-16 with exact interval arithmetic by lever_table.py (re-run 19 Oct 2026)",
+   "date": "2026-10-19",
+   "figure": 0.001730768,
+   "circuit": "#3945",
+   "numbers": {
+    "variant": "full cut"
+   },
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ],
+   "data": [
+    "data/lever-prices/lever_table.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/37",
+   "statement": "The half cut on #3815 prices at 1.7500242e-3 (+1.12 % over 1.7305784e-3 (fallback for #3945)).",
+   "status": "checked by computer",
+   "status_detail": "a price computed by a program, not a theorem: the root of the balance, computed by the build rounds' own programs (no skeptic re-derived it) and bracketed to width 1e-16 with exact interval arithmetic by lever_table.py (re-run 19 Oct 2026)",
+   "date": "2026-10-19",
+   "figure": 0.0017500242,
+   "circuit": "#3815",
+   "numbers": {
+    "variant": "half cut"
+   },
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ],
+   "data": [
+    "data/lever-prices/lever_table.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/38",
+   "statement": "The full cut on #2979's published fill has a rate enclosure at 1.7744822e-3 (refused one unit higher) from the rate generator of the lever build.",
+   "status": "checked by computer",
+   "status_detail": "one program (an enclosure generator of the lever build); the Lean rate module and the full-cut bridge were not built",
+   "date": "2026-10-19",
+   "figure": 0.0017744822,
+   "circuit": "#2979",
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/39",
+   "statement": "#2979 is sound where checked: the community's registered check and its complete replay from scratch (fresh bootstrap, fresh native chains, complete admission and release, the author's library versions) pass; this repository's transport of its words replays exactly to the community's endpoint on all 632 columns, rejects 7 of 7 wrong versions, and equals the community's fresh native words in all 25 fields; twelve merged independent audits on the community's repository find no defect.",
+   "status": "checked by computer",
+   "status_detail": "the community's own programs run unchanged on a Linux machine, plus this repository's transport; audits read on the community's repository",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": "#2979",
+   "numbers": {},
+   "programs": [],
+   "data": [
+    "data/heads/2979-heads-in-our-lowering.json"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/40",
+   "statement": "#3945 is sound where checked: the native check of its 26 widened terminal frames and the phase check of its width-5 helpers pass, and its complete stated verification passes from scratch in one uninterrupted run (1 h 08 min); the fallback #3815 passes its complete admission with fresh natives.",
+   "status": "checked by computer",
+   "status_detail": "the community's own programs run unchanged on a Linux machine",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": "#3945",
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/41",
+   "statement": "Every community circuit on which the lever was priced near #3945's uses the same 72 warps (borrowed helpers with fixed linear changes of coordinates, from #2226 and #2312): the (lender, map) pairs, the 36 initial corrections and the 72 removed helpers are identical across the words of #2979, #3945, #3815, #3682, #3642/#3653, #3148 and #3605; the best circuit without warps is T74, whose half cut is below #3945's figure.",
+   "status": "checked by computer",
+   "status_detail": "one program over the word files, re-run on 19 Oct 2026 for this revision; the search for circuits without warps in the band 1.6950e-3 to 1.7310e-3 was by keywords over titles and bodies (a search, not a proof)",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [
+    "programs/head-test-2979/warpcmp.py"
+   ],
+   "data": [
+    "data/heads/warp-comparison.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/42",
+   "statement": "The half cut on #2979 (DFT of every length and convolution, OpenAI's statement) at 1.7556473e-3.",
+   "status": "proved in Lean",
+   "status_detail": "*Proved in Lean* (`package/lever2979`): OpenAI's statement at 1 - 17556473/10^10, a saving of 1.7556473e-3; the official comparator accepts it with both kernels and rejects it one unit higher, the leaderboard's verifier re-created offline accepts the merged form, and three skeptics (statement, rebuild, price) upheld it. It is a fallback of the revision's headline, design B.",
+   "date": "2026-10-19",
+   "figure": 0.0017556473,
+   "circuit": "#2979",
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../package/lever2979/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/43",
+   "statement": "The half cut on #3945 (DFT of every length and convolution, OpenAI's statement) at 1.7501109e-3.",
+   "status": "proved in Lean",
+   "status_detail": "*Proved in Lean* (`package/lever`): OpenAI's statement at 1 - 17501109/10^10, a saving of 1.7501109e-3; the official comparator accepts it with both kernels and rejects it one unit higher, the leaderboard's verifier re-created offline accepts the unmerged form, and three skeptics (statement, rebuild, price) upheld it.",
+   "date": "2026-10-19",
+   "figure": 0.0017501109,
+   "circuit": "#3945",
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../package/lever/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/44",
+   "statement": "The Lean figure of a lever record is its price rounded down to the 1e-10 grid, with no grid step lost (unlike every earlier record): the rate point and the seam's exponent need not lie on the grid. The rate facts at 1.7556473e-3 (#2979) and 1.7501109e-3 (#3945) are proved in Lean, and each is proved false one unit higher. The one exception is design A, whose root sits only 0.007 grid steps above 1.7564708e-3: its enclosure reaches 1.7564707e-3, the rate fact still holds at 1.7564708e-3, and it is proved false from 1.7564709e-3.",
+   "status": "proved in Lean",
+   "status_detail": "the rate lemmas compiled with only the three standard axioms on 19 Oct 2026; no skeptic has rebuilt them on their own; the records they belong to have the status given in their own entries",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/45",
+   "statement": "In both of the community's allocation models an empty rank-48 bin can sit in children 8/10 (a head) or 12/13 (never a head) at the same base price; forcing every non-empty rank-48 bin into 12/13 keeps the profile and the community's price exactly and makes every bin of children 8/10 a head (224 per replica). Only the fill changes.",
+   "status": "checked by computer",
+   "status_detail": "found with the community's own scheduling programs plus one constraint or one column cost; the resulting fills pass the community's own checks (entries below)",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/46",
+   "statement": "Design B: #3945 with all 80,640 head bins empty; its own b unchanged (1.7306632e-3); half cut 1.7581520e-3.",
+   "status": "checked by computer",
+   "status_detail": "passes #3945's owner verification unchanged (plain and optimised, four controls), the staged audit and #3815's whole verifier at every fill-level step; 80,640 literal heads (bridge-first control 0); one independent AI skeptic re-ran the community's verifiers with its own harness, recounted the heads with its own code and priced it by two routes (one certified on a 1e-24 grid), and upheld it. An independent gate agent ran the community's exact operator replay on all 360 owners: 0 differences in 2,029,945 moved characters, with its wrong-time and wrong-stream controls changing the operator. The community's complete admission with the new fill passes from scratch (fresh natives, owners, discovery, outer checks, release receipt; 119 of 119 controls rejected), run by the same independent gate agent",
+   "date": "2026-10-19",
+   "figure": 0.001758152,
+   "circuit": "#3945",
+   "numbers": {
+    "heads": 80640,
+    "full_cut_price_not_built": 0.0017806935
+   },
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ],
+   "data": [
+    "data/lever-prices/lever_table.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/47",
+   "statement": "Design A: #2979 with all 16,576 head bins empty; its own b unchanged (1.7290340e-3); half cut 1.7564708e-3 (its rate enclosure reaches 1.7564707e-3 at the Lean grid, since the root 1.75647080068e-3 is only 0.007 grid steps above 1.7564708e-3).",
+   "status": "checked by computer",
+   "status_detail": "passes #2979's registered allocation check with five rejection controls; 16,576 literal heads (bridge-first control 0); an independent gate agent re-ran the community's three checks of #2979 on a fresh copy, recounted the heads with its own code and in this repository's lowering and network, and ran the community's exact operator replay on all 74 owners (0 differences in 594,132 moved characters, controls as expected); no skeptic yet. The community's complete admission with the new fill passes from scratch (fresh bootstrap and natives, owners, discovery, outer checks, release receipt; 139 of 139 controls rejected), run by the same independent gate agent",
+   "date": "2026-10-19",
+   "figure": 0.0017564708,
+   "circuit": "#2979",
+   "numbers": {
+    "heads": 16576,
+    "lean_grid_figure": 0.0017564707,
+    "full_cut_price_not_built": 0.0017797095
+   },
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ],
+   "data": [
+    "data/lever-prices/lever_table.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/48",
+   "statement": "Design C: #2979's words at T60 (new order and fill), 13,440 heads, its own b 1.7290358e-3 (the relaxation cap of #2979's words), half cut 1.7564726e-3, the ceiling of #2979's words for every T and clock.",
+   "status": "checked by computer",
+   "status_detail": "one AI skeptic upheld it: the owner engine #2979 vendors passes it with seven rejection controls, #2979's allocation check with its three constants for 74 replicas set for 60 passes with five controls, 13,440 literal heads by the skeptic's own counter, and four price routes agree to 24 digits; a new T needs new admission inputs and a new Lean port, which do not exist",
+   "date": "2026-10-19",
+   "figure": 0.0017564726,
+   "circuit": "#2979 at T60",
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/49",
+   "statement": "No fill of #3945's words, with any chronology, gives a half cut above design B by more than 4e-34; on #2979's words nothing exceeds 1.7564726e-3 (reached by design C at 60 replicas); at #2979's own 74 replicas the best whole-number fill is at most 1.7564710e-3, 2.4e-10 above design A.",
+   "status": "checked by computer",
+   "status_detail": "two independent certificates by two agents: an exact LP dual over all 841 patterns checked in 90-digit arithmetic, and exact basis duals in 80-digit arithmetic re-checked on a second machine; they give the same ceilings; no skeptic",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/50",
+   "statement": "Design A on #2979 and design B on #3945, Lean status.",
+   "status": "proved in Lean",
+   "status_detail": "design A: *proved in Lean* at 1.7564707e-3 (`package/leverA`); the comparator accepts it, the re-created verifier accepts the merged form, and three skeptics upheld it.; design B: *proved in Lean* at 1.7581520e-3 (`package/leverB`), the headline until the full cut (`package/leverF`, 1.7806935e-3) replaced it; the comparator accepts it, the re-created verifier accepts the merged and the unmerged forms, a separate check found the merged form identical to the unmerged one theorem by theorem, and three skeptics upheld it.",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../package/leverA/",
+    "../../package/leverB/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/51",
+   "statement": "The frontier on 19 October 2026: the community's selected record was unchanged (kappa 1.6726602e-3, #1094; b 1.6754627e-3; bit side 1.7334270e-3 from #589); the best claims without a known refutation were #3945 (1.7306632e-3) and later claims of about 1.7310e-3 on its words (#4076, #4085, #4088 1.7309791e-3, #4091 a relaxation optimum 1.7309803e-3); no complex-side construction claimed on the community's repository by others, refuted or not, was at or above 1.7501e-3 at the last read (newest pull request #4096; some research notes print higher ceilings or targets, which are not constructions); the public Lean board's top was 1.2654e-3 (Hrishik Sai Bojnal on canghaimeng's C588AT, built on this repository's engine).",
+   "status": "checked by computer",
+   "status_detail": "readings of the community's repository and of bigospeedrun.com by several AI readers and a skeptic, with #3945's root reproduced to all 24 digits by two independent pricers; a search of the claims, not a check of them",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": null,
+   "numbers": {
+    "selected_kappa": 0.0016726602,
+    "selected_b": 0.0016754627,
+    "best_unrefuted_open_b_morning": 0.0017306632,
+    "best_open_b_afternoon": 0.0017309803,
+    "public_lean_top": 0.0012654
+   },
+   "programs": [],
+   "data": [
+    "data/lever-prices/hub-root-controls.txt"
+   ],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/52",
+   "statement": "The idle-axis chain #3934 to #3959 (up to kappa 1.7367387e-3, b 1.7411726e-3).",
+   "status": "refuted",
+   "status_detail": "read on the community's repository (refuted there by the audit #4046 and retracted by the chain's author); not re-run on this side",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "its base #3251 retracted by its author on 18 Oct after exact operator replays; the open audit #4046 (ChaloupeMusic) showed by exact replay that every one of #3934's 2,374 new moves changes the operator; the chain was retracted and closed on 19 Oct",
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/53",
+   "statement": "With the lever, the complex side rises above the community's selected bit side, 1.7334270e-3 (#589); kappa is capped both by the complex side and by a bit side, so with that bit side it would rise only to 1.7334270e-3 (about +0.16 % over #3945's kappa); under the selected record's own transfer the #589 bit side caps kappa at 1.7304275e-3; higher bit sides claimed since (#3647, 1.7366460e-3, audited by #3700; #2423, 1.7348463e-3; neither selected) are also below the lever's complex side.",
+   "status": "checked by computer",
+   "status_detail": "arithmetic on the community's figures; one AI skeptic corrected the convention",
+   "date": "2026-10-19",
+   "figure": null,
+   "circuit": null,
+   "numbers": {
+    "kappa_with_589": 0.001733427,
+    "kappa_cap_selected_transfer": 0.0017304275
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/54",
+   "statement": "The lever on T74 with every idle block cut gives 1.8169468e-3 (+8.17 %).",
+   "status": "refuted",
+   "status_detail": "the price itself is right; its structure is false",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [
+    "programs/theorem-1g/hub_whatif.py"
+   ],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the head test: only 48.4 % of T74's idle blocks are heads and none is a tail",
+   "archive_entry": "R23"
+  },
+  {
+   "id": "record-track/55",
+   "statement": "The lever on #1042 gives 1.821393e-3 (+8.7 %).",
+   "status": "refuted",
+   "status_detail": "#1042 is worse than T74 under every separated variant (best 1.6918825e-3)",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [
+    "programs/lever-prices/rescue1042.py"
+   ],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the head test: 46 % of #1042's idle blocks fail it",
+   "archive_entry": "R23"
+  },
+  {
+   "id": "record-track/56",
+   "statement": "Heads cut to 25 with the other rank-48 blocks kept whole: 1.7434773e-3 on T74 (+3.79 %) and 1.8033130e-3 on #3945 (+4.20 %).",
+   "status": "open",
+   "status_detail": "the prices are right, but the rule is not separated (48 is not below 25), so Theorem 1G does not cover it; a skeptic's caveat that held. Not refuted either",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": "R23"
+  },
+  {
+   "id": "record-track/57",
+   "statement": "Tails: the pair-0 idle blocks cannot be used without reordering the community's bridges, and moving one bridge changes what the next one reads.",
+   "status": "open",
+   "status_detail": "a guess in the plan of 14 Oct, not tested; using tails would be a new construction (open item 4)",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/58",
+   "statement": "Packing the mixed rule into one word for the old recursion loses about 0.5/ln B to 0.75/ln B of the whole saving per level on the existence-routes test rules (about 0.09/ln B in the exponent); with a lever worth about 1 % of the saving it would need ln B > 50, so only a new recursion gets the value.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by hand from the measured drift of a linear programme (in existence-routes), not checked",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/59",
+   "statement": "A Walsh-packet what-if of up to 1.7107451e-3 (+1.84 % on T74).",
+   "status": "refuted",
+   "status_detail": "wrong at the matrix level as built (an exact matrix computation, upheld by one AI skeptic)",
+   "date": "2026-10-14",
+   "figure": null,
+   "circuit": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the matrix-level check of the Walsh-packet lever (entry above)",
+   "archive_entry": "R21"
+  },
+  {
+   "id": "record-track/60",
+   "statement": "The same every-head-bin-empty re-allocation, found by local search from the published fills, gives #3682 (T360) 80,640 heads and #3653 (T488) 109,312 heads, both with half cut 1.7578999e-3: above design A, below design B; local search from #3945's published fill reaches design B's price and not more.",
+   "status": "checked by computer",
+   "status_detail": "one program; the fills pass the community's owner engine with five rejection controls, not those circuits' own complete admissions; the #3945 local-search fill was upheld by an AI skeptic (valid, 80,640 heads, 1.7581520e-3); no skeptic for #3653 and #3682",
+   "date": "2026-10-19",
+   "figure": 0.0017578999,
+   "circuit": "#3682, #3653",
+   "numbers": {
+    "heads_3682": 80640,
+    "heads_3653": 109312
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/61",
+   "statement": "The full cut on design B (#3945 with every head kept): the Fourier transform of every length, and convolution, in OpenAI's statement at 1 - 17806935/10^10; the 80,640 heads removed (job 25 on their arrays) and the other 57,312 idle rank-48 blocks split 24 + 24, so that every paid rank is at most 24 < 25.",
+   "status": "proved in Lean",
+   "status_detail": "*proved in Lean* at 1.7806935e-3 (`package/leverF`), the headline of this revision: only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it with both kernels in a stand-in sandbox (not the real Landlock one) and rejected one unit higher; the leaderboard's verifier, re-created offline, accepted the merged and the unmerged forms; this repository's scripts passed on it from a fresh clone; three AI skeptics upheld it; no person has read it",
+   "date": "2026-10-19",
+   "figure": 0.0017806935,
+   "circuit": "#3945 with every head kept (design B)",
+   "numbers": {
+    "package": "package/leverF",
+    "heads": 80640,
+    "split_blocks": 57312,
+    "jobs": {
+     "73": 241920,
+     "25": 80640
+    },
+    "price": "1.780693540576e-3"
+   },
+   "programs": [],
+   "data": [],
+   "evidence": [
+    "../../package/leverF/"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  },
+  {
+   "id": "record-track/62",
+   "statement": "A-fc: #2979's words, order and dispatch unchanged, with the table of helper storage re-solved for the full cut (class solution of a mixed-integer program, tolerant placement with the construction of #3815 by Erwan Secousses / ChaloupeMusic, 9 spare roles): the full cut prices at b = 1.7887046e-3, above the Lean result 1.7806935e-3 on #3945.",
+   "status": "checked by computer",
+   "status_detail": "*checked by computer*: price by three routes agreeing to 3e-60, grid figure 17887045/10^10 holds and one step higher fails; 16,576 heads by three counters; every paid rank at most 23 < 25 (no other rank-48 block, so nothing is split); the fill re-created byte for byte from its class solution; every check of #2979's line run unmodified on a fresh clone at 12fa8c5c passes except the strict-gain steps, which reject it by design (its own no-lever figure is 1.6897030e-3); Theorem 1G and the general full-cut theorem are proved in Lean (package/leverF), but in this table's instance the heads-first certificate and the rate fact 17887045/10^10 are checked by computer and the cut fact on #2979's words is *argued by hand, not checked*, from the template it shares with #3945 (where it is proved in Lean); *not proved in Lean*; kappa not claimed (bit side about 1.7334e-3)",
+   "date": "2026-10-20",
+   "figure": 0.0017887045,
+   "circuit": "#2979's words with a re-solved table (A-fc)",
+   "numbers": {
+    "heads": 16576,
+    "jobs": {
+     "73": 49728,
+     "25": 16576
+    },
+    "price": "1.7887045643e-3",
+    "uniform_hub_b": "1.6897030e-3",
+    "spare_roles": 9
+   },
+   "programs": [
+    "programs/a-fc/"
+   ],
+   "data": [
+    "data/a-fc/"
+   ],
+   "evidence": [
+    "data/a-fc/README.md"
+   ],
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "archive_entry": null
+  }
+ ],
+ "open": [
+  {
+   "id": "record-track/open-1",
+   "question": "Build the full cut (heads removed, job 25; every other rank-48 block split 24 + 24; separated, 24 < 25) on design A (#2979 with every head kept); it is built on design B (record-track/61).",
+   "worth": 0.0017797095,
+   "worth_detail": "1.7797095e-3 on design A, 1.7744822e-3 on #2979's published fill (prices); built on design B at 1.7806935e-3",
+   "first_experiment": "Generate design A's full-cut instance on the general full-cut bridge of package/leverF (Work/Mixed/Bridge/CoreF.lean): the instance file, the rate module at the largest grid numerator and the Fourier chain at its exponent, on design A's built tree; then the release checks.",
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ]
+  },
+  {
+   "id": "record-track/open-2",
+   "question": "Is there a recursion theorem for rules that are not separated (paid blocks as large as or larger than the smallest job)?",
+   "worth": 0.001803313,
+   "worth_detail": "1.8033130e-3 on #3945's published fill (+4.20 %), heads cut to 25 with the other rank-48 blocks kept",
+   "first_experiment": "Simulate the lockstep tree for small non-separated rules in the job model (rule X of cost_fit.py runs in seconds) and look for left-over jobs that grow faster than the theorem allows.",
+   "programs": [
+    "programs/theorem-1g/cost_fit.py",
+    "programs/theorem-1g/explicit_sim.py"
+   ]
+  },
+  {
+   "id": "record-track/open-3",
+   "question": "Can heads with hosted helper roles in front of them be cut (a head lemma that allows roles disjoint from the head's axes)?",
+   "worth": 0.0017600092,
+   "worth_detail": "1.7600092e-3 on #3945's published fill (the half cut plus these blocks cut fully; +1.70 % over #3945's b, against the half cut's +1.12 %; argued by hand, no skeptic); on design B only 4,272 such blocks remain",
+   "first_experiment": "For each such block list the hosted roles in front of it and check that their cells are disjoint from the block's axes (seconds of Python on the head test's output and the owner fill).",
+   "programs": []
+  },
+  {
+   "id": "record-track/open-4",
+   "question": "Can the pair-0 idle blocks be made tails by reordering the community's bridges?",
+   "worth": null,
+   "worth_detail": "every tail would add to the lever like a head",
+   "first_experiment": "Search over orders of the bridges that read pair 0 (three on T74), with the community's exact operator replay as the test of correctness.",
+   "programs": []
+  },
+  {
+   "id": "record-track/open-5",
+   "question": "Exact O(n^tau) for grouped blocks, with no log factor, at the root itself.",
+   "worth": null,
+   "worth_detail": "no change in the exponent; a cleaner theorem",
+   "first_experiment": "Look for a flow whose exits carry a Phi fraction below eta - beta (Lemma A2), for example by feeding exits into a second tree, and test it with check_E.py on rules A to J.",
+   "programs": [
+    "programs/theorem-1g/check_E.py"
+   ]
+  },
+  {
+   "id": "record-track/open-6",
+   "question": "The lever on the community's next circuits.",
+   "worth": null,
+   "worth_detail": "about +1.1 % to +1.6 % under the half cut on every circuit that keeps T74's schedule; a circuit paying idle blocks above rank 48 would break separation",
+   "first_experiment": "Run heads_fill.py and lever_table.py with the new circuit's profile and fill, then check whether its allocation leaves head bins that could be emptied at the same price.",
+   "programs": [
+    "programs/lever-prices/lever_table.py"
+   ]
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/lever-prices/lever_table.py",
+   "language": "python",
+   "shows": "certified prices of the uniform, half-cut, full-cut and non-separated rules on T74, #2979, #3945 and #3815 (published fills and every head bin empty) and the full-cut break-evens; checks every stated figure",
+   "command": "python3 -I -B lever_table.py out.json",
+   "time": "25 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun": "written and run on 2026-10-19 for this revision; all stated values reproduced",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/lever-prices/iprice.py",
+   "language": "python",
+   "shows": "rigorous root of the balance by exact rational interval arithmetic (library)",
+   "command": "imported by lever_table.py",
+   "time": "-",
+   "memory": "-",
+   "needs": [],
+   "rerun": "used by lever_table.py on 2026-10-19",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/lever-prices/rescue.py",
+   "language": "python",
+   "shows": "the 14 October plan's T74 prices: controls and every separated variant",
+   "command": "python3 -I -B rescue.py",
+   "time": "9 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/lever-prices/breakeven.py",
+   "language": "python",
+   "shows": "T74 break-even head counts (full cut 9,443; half cut 1)",
+   "command": "python3 -I -B breakeven.py",
+   "time": "11 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/lever-prices/rescue1042.py",
+   "language": "python",
+   "shows": "separated variants on #1042",
+   "command": "python3 -I -B rescue1042.py | tail -3",
+   "time": "9 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, the three #1042 rows identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/lever-prices/gateprice.py",
+   "language": "python",
+   "shows": "T74 prices against the number of heads (the head-maximising fill proposed on 14 Oct)",
+   "command": "python3 -I -B gateprice.py out.json",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/theorem-1g/tree_flow.py",
+   "language": "python",
+   "shows": "the dilated lockstep tree: literal and merged exact checks",
+   "command": "python3 -I -B tree_flow.py",
+   "time": "1 s",
+   "memory": "under 300 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/theorem-1g/recur.py",
+   "language": "python",
+   "shows": "cost of the whole schedule, T(n)/n^tau",
+   "command": "python3 -I -B recur.py 6400",
+   "time": "13 s",
+   "memory": "under 300 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/theorem-1g/recheck_t1.py",
+   "language": "python",
+   "shows": "re-check of the rank-1 tau-theorem (imports existence-routes' programs)",
+   "command": "python3 -I -B recheck_t1.py",
+   "time": "4 s",
+   "memory": "under 300 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/theorem-1g/hub_whatif.py",
+   "language": "python",
+   "shows": "the refuted all-idle-blocks what-if on T74 and #1042, with the theorem's constants",
+   "command": "python3 -I -B hub_whatif.py",
+   "time": "1 s",
+   "memory": "under 300 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/theorem-1g/indep_tree.py",
+   "language": "python",
+   "shows": "skeptic 1: independent merged tree",
+   "command": "python3 -I -B indep_tree.py",
+   "time": "1 s",
+   "memory": "under 300 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/theorem-1g/partial.py",
+   "language": "python",
+   "shows": "skeptic 1: partial truncation prices",
+   "command": "python3 -I -B partial.py",
+   "time": "1 s",
+   "memory": "under 300 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/theorem-1g/explicit_sim.py",
+   "language": "python",
+   "shows": "skeptic 2: explicit units, random matching, generic deadlock test",
+   "command": "python3 -I -B explicit_sim.py",
+   "time": "35 s",
+   "memory": "under 300 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/theorem-1g/cost_fit.py",
+   "language": "python",
+   "shows": "skeptic 2: independent cost recursion",
+   "command": "python3 -I -B cost_fit.py D 12800 0,3",
+   "time": "under 20 s per rule",
+   "memory": "under 300 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/theorem-1g/check_E.py",
+   "language": "python",
+   "shows": "skeptic 2: hypothesis (E) of Lemma A3, unit and exit bounds, psi = 1 control",
+   "command": "python3 -I -B check_E.py T 3000000 997",
+   "time": "under 20 s",
+   "memory": "under 300 MB",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, identical",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/head-test-2979/mk_native_stub.py",
+   "language": "python",
+   "shows": "stub native word with the helper origins, for the head test on #2979",
+   "command": "python3 -I -B mk_native_stub.py WORD.json.gz out.json.gz",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun": "the head test it feeds re-run 2026-10-19, identical",
+   "run_from": "any folder"
+  },
+  {
+   "path": "programs/head-test-2979/warpcmp.py",
+   "language": "python",
+   "shows": "the warp digests of the community's borrowed words",
+   "command": "python3 -I -B warpcmp.py <word files>",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun": "run 2026-10-19 on the words of seven circuits",
+   "run_from": "any folder"
+  },
+  {
+   "path": "programs/head-test-2979/warpscan.py",
+   "language": "python",
+   "shows": "warps, corrections, zero buffers per word file",
+   "command": "python3 -I -B warpscan.py <word files>",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun": "not re-run for this revision",
+   "run_from": "any folder"
+  },
+  {
+   "path": "programs/head-test-2979/fetch.sh",
+   "language": "zsh",
+   "shows": "read-only fetch of one community file at a pinned commit",
+   "command": "zsh fetch.sh <owner/repo> <commit> <path> <folder>",
+   "time": "seconds",
+   "memory": "-",
+   "needs": [
+    "gh"
+   ],
+   "rerun": "not re-run for this revision (the files were already downloaded)",
+   "run_from": "any folder"
+  }
+ ]
+}

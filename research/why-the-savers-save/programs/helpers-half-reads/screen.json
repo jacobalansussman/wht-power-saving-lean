@@ -1,0 +1,4218 @@
+[
+{
+"P": [
+259,
+131,
+24
+],
+"h3": 569,
+"a": 97,
+"b": 96,
+"verdicts": {
+"184": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+259,
+131,
+96
+],
+"h3": 572,
+"a": 390,
+"b": 387,
+"verdicts": {
+"268": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"674": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"280": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+259,
+131,
+120
+],
+"h3": 576,
+"a": 396,
+"b": 100,
+"verdicts": {
+"516": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+259,
+155,
+96
+],
+"h3": 575,
+"a": 102,
+"b": 103,
+"verdicts": {
+"527": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+259,
+155,
+120
+],
+"h3": 571,
+"a": 386,
+"b": 384,
+"verdicts": {
+"254": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"286": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"681": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"560": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"561": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"570": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+259,
+227,
+24
+],
+"h3": 578,
+"a": 98,
+"b": 397,
+"verdicts": {
+"146": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"506": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+]
+}
+},
+{
+"P": [
+265,
+137,
+6
+],
+"h3": 581,
+"a": 89,
+"b": 88,
+"verdicts": {
+"193": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"175": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+265,
+137,
+96
+],
+"h3": 583,
+"a": 402,
+"b": 400,
+"verdicts": {
+"14": [
+"x",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"285": [
+"h-cold",
+"R1: frame 2 before the merge not inside L_a",
+"ok"
+],
+"491": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"558": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"559": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"582": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+265,
+137,
+102
+],
+"h3": 587,
+"a": 94,
+"b": 95,
+"verdicts": {
+"70": [
+"x",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+265,
+143,
+96
+],
+"h3": 589,
+"a": 414,
+"b": 93,
+"verdicts": {
+"110": [
+"x",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+265,
+143,
+102
+],
+"h3": 585,
+"a": 404,
+"b": 401,
+"verdicts": {
+"38": [
+"x",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"560": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"561": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"301": [
+"h-cold",
+"R1: frame 2 before the merge not inside L_a",
+"ok"
+],
+"570": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"584": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"503": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+265,
+233,
+6
+],
+"h3": 591,
+"a": 415,
+"b": 91,
+"verdicts": {
+"161": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"143": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+266,
+138,
+30
+],
+"h3": 521,
+"a": 105,
+"b": 104,
+"verdicts": {
+"176": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+266,
+138,
+96
+],
+"h3": 524,
+"a": 326,
+"b": 323,
+"verdicts": {
+"263": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+266,
+138,
+126
+],
+"h3": 528,
+"a": 332,
+"b": 108,
+"verdicts": {
+"716": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"504": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"197": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"714": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+266,
+148,
+96
+],
+"h3": 527,
+"a": 110,
+"b": 111,
+"verdicts": {
+"711": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"491": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"205": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"704": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"705": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+266,
+148,
+126
+],
+"h3": 523,
+"a": 322,
+"b": 320,
+"verdicts": {
+"244": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"327": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"332": [
+"h-cold",
+"R1: frame 2 before the merge not inside L_a",
+"ok"
+],
+"256": [
+"h-cold",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"264": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"274": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"279": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"475": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"489": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"322": [
+"h-cold",
+"ok",
+"ok"
+],
+"324": [
+"h-cold",
+"R1: frame 2 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+266,
+234,
+30
+],
+"h3": 530,
+"a": 106,
+"b": 333,
+"verdicts": {
+"154": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"724": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+],
+"518": [
+"h-enter",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+],
+"165": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+],
+"554": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+271,
+137,
+96
+],
+"h3": 588,
+"a": 412,
+"b": 92,
+"verdicts": {
+"328": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+271,
+137,
+102
+],
+"h3": 584,
+"a": 406,
+"b": 403,
+"verdicts": {
+"296": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"264": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"684": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+271,
+143,
+96
+],
+"h3": 582,
+"a": 407,
+"b": 405,
+"verdicts": {
+"280": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"268": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"676": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+271,
+143,
+102
+],
+"h3": 586,
+"a": 408,
+"b": 410,
+"verdicts": {
+"312": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+276,
+138,
+96
+],
+"h3": 526,
+"a": 328,
+"b": 330,
+"verdicts": {
+"710": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"490": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"206": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"704": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"705": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+276,
+138,
+126
+],
+"h3": 522,
+"a": 327,
+"b": 325,
+"verdicts": {
+"246": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+276,
+148,
+96
+],
+"h3": 525,
+"a": 324,
+"b": 321,
+"verdicts": {
+"258": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+276,
+148,
+126
+],
+"h3": 529,
+"a": 334,
+"b": 109,
+"verdicts": {
+"717": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"505": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"198": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"712": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"714": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"715": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"716": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+283,
+131,
+96
+],
+"h3": 574,
+"a": 392,
+"b": 394,
+"verdicts": {
+"526": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+283,
+131,
+120
+],
+"h3": 570,
+"a": 391,
+"b": 389,
+"verdicts": {
+"252": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"680": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"284": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+283,
+155,
+96
+],
+"h3": 573,
+"a": 388,
+"b": 385,
+"verdicts": {
+"270": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"285": [
+"h-cold",
+"R1: frame 2 before the merge not inside L_a",
+"ok"
+],
+"491": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"675": [
+"h-enter",
+"R1: frame 5 before the merge not inside L_a",
+"ok"
+],
+"674": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"673": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"676": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"677": [
+"h-enter",
+"R1: frame 5 before the merge not inside L_a",
+"ok"
+],
+"558": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"559": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"572": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+283,
+155,
+120
+],
+"h3": 577,
+"a": 398,
+"b": 101,
+"verdicts": {
+"517": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+289,
+161,
+6
+],
+"h3": 614,
+"a": 50,
+"b": 445,
+"verdicts": {
+"198": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"130": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+289,
+161,
+24
+],
+"h3": 607,
+"a": 434,
+"b": 432,
+"verdicts": {
+"127": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"187": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+289,
+161,
+30
+],
+"h3": 608,
+"a": 438,
+"b": 435,
+"verdicts": {
+"182": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"114": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+289,
+167,
+24
+],
+"h3": 612,
+"a": 444,
+"b": 52,
+"verdicts": {
+"150": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"210": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+289,
+167,
+30
+],
+"h3": 611,
+"a": 54,
+"b": 55,
+"verdicts": {
+"223": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"155": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+289,
+185,
+6
+],
+"h3": 605,
+"a": 49,
+"b": 48,
+"verdicts": {
+"143": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"203": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+290,
+162,
+24
+],
+"h3": 496,
+"a": 299,
+"b": 297,
+"verdicts": {
+"124": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+290,
+162,
+102
+],
+"h3": 500,
+"a": 294,
+"b": 291,
+"verdicts": {
+"476": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+290,
+162,
+126
+],
+"h3": 505,
+"a": 302,
+"b": 37,
+"verdicts": {
+"715": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"529": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"192": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"716": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+290,
+186,
+102
+],
+"h3": 502,
+"a": 296,
+"b": 298,
+"verdicts": {
+"706": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"514": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"203": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+290,
+186,
+126
+],
+"h3": 499,
+"a": 290,
+"b": 288,
+"verdicts": {
+"465": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+290,
+196,
+24
+],
+"h3": 506,
+"a": 34,
+"b": 301,
+"verdicts": {
+"210": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"726": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+],
+"494": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+],
+"166": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+],
+"720": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"721": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+295,
+161,
+24
+],
+"h3": 613,
+"a": 446,
+"b": 53,
+"verdicts": {
+"151": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"211": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+295,
+161,
+30
+],
+"h3": 610,
+"a": 440,
+"b": 442,
+"verdicts": {
+"222": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"154": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+295,
+167,
+24
+],
+"h3": 606,
+"a": 439,
+"b": 437,
+"verdicts": {
+"126": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"186": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+295,
+167,
+30
+],
+"h3": 609,
+"a": 436,
+"b": 433,
+"verdicts": {
+"183": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"115": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+296,
+168,
+6
+],
+"h3": 460,
+"a": 251,
+"b": 249,
+"verdicts": {
+"172": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"132": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+296,
+168,
+120
+],
+"h3": 463,
+"a": 242,
+"b": 240,
+"verdicts": {
+"657": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"398": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"176": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+296,
+168,
+126
+],
+"h3": 466,
+"a": 248,
+"b": 250,
+"verdicts": {
+"688": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"332": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"187": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+296,
+174,
+120
+],
+"h3": 468,
+"a": 252,
+"b": 28,
+"verdicts": {
+"696": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"316": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"211": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+296,
+174,
+126
+],
+"h3": 465,
+"a": 244,
+"b": 241,
+"verdicts": {
+"665": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"382": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"216": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+296,
+208,
+6
+],
+"h3": 471,
+"a": 255,
+"b": 27,
+"verdicts": {
+"203": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"161": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+301,
+173,
+30
+],
+"h3": 544,
+"a": 363,
+"b": 361,
+"verdicts": {
+"116": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+301,
+173,
+102
+],
+"h3": 548,
+"a": 358,
+"b": 355,
+"verdicts": {
+"478": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+301,
+173,
+120
+],
+"h3": 553,
+"a": 366,
+"b": 45,
+"verdicts": {
+"493": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+301,
+179,
+102
+],
+"h3": 550,
+"a": 360,
+"b": 362,
+"verdicts": {
+"502": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+301,
+179,
+120
+],
+"h3": 547,
+"a": 354,
+"b": 352,
+"verdicts": {
+"469": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+301,
+203,
+30
+],
+"h3": 554,
+"a": 42,
+"b": 365,
+"verdicts": {
+"218": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"530": [
+"h-enter",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+],
+"518": [
+"h-enter",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"722": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"724": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"542": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+302,
+168,
+120
+],
+"h3": 469,
+"a": 254,
+"b": 29,
+"verdicts": {
+"697": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"318": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"208": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+302,
+168,
+126
+],
+"h3": 464,
+"a": 246,
+"b": 243,
+"verdicts": {
+"664": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"380": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"219": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+302,
+174,
+120
+],
+"h3": 462,
+"a": 247,
+"b": 245,
+"verdicts": {
+"656": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"396": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"179": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+302,
+174,
+126
+],
+"h3": 467,
+"a": 30,
+"b": 31,
+"verdicts": {
+"689": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"334": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"184": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+307,
+173,
+102
+],
+"h3": 551,
+"a": 46,
+"b": 47,
+"verdicts": {
+"503": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+307,
+173,
+120
+],
+"h3": 546,
+"a": 359,
+"b": 357,
+"verdicts": {
+"468": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+307,
+179,
+102
+],
+"h3": 549,
+"a": 356,
+"b": 353,
+"verdicts": {
+"479": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+307,
+179,
+120
+],
+"h3": 552,
+"a": 364,
+"b": 44,
+"verdicts": {
+"492": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+313,
+161,
+6
+],
+"h3": 604,
+"a": 443,
+"b": 441,
+"verdicts": {
+"206": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"138": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+313,
+185,
+6
+],
+"h3": 615,
+"a": 447,
+"b": 51,
+"verdicts": {
+"135": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"195": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+314,
+162,
+102
+],
+"h3": 503,
+"a": 38,
+"b": 39,
+"verdicts": {
+"707": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"515": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"200": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"708": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+314,
+162,
+126
+],
+"h3": 498,
+"a": 295,
+"b": 293,
+"verdicts": {
+"464": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+314,
+186,
+102
+],
+"h3": 501,
+"a": 292,
+"b": 289,
+"verdicts": {
+"477": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+314,
+186,
+126
+],
+"h3": 504,
+"a": 300,
+"b": 36,
+"verdicts": {
+"714": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"528": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"195": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+324,
+162,
+24
+],
+"h3": 507,
+"a": 303,
+"b": 35,
+"verdicts": {
+"211": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"727": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+],
+"495": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+],
+"165": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+],
+"720": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"721": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+324,
+196,
+24
+],
+"h3": 497,
+"a": 33,
+"b": 32,
+"verdicts": {
+"120": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+331,
+173,
+30
+],
+"h3": 555,
+"a": 367,
+"b": 43,
+"verdicts": {
+"219": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"531": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+]
+}
+},
+{
+"P": [
+331,
+203,
+30
+],
+"h3": 545,
+"a": 41,
+"b": 40,
+"verdicts": {
+"112": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+336,
+168,
+6
+],
+"h3": 470,
+"a": 26,
+"b": 253,
+"verdicts": {
+"164": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"206": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+336,
+208,
+6
+],
+"h3": 461,
+"a": 25,
+"b": 24,
+"verdicts": {
+"129": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"169": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+355,
+131,
+24
+],
+"h3": 579,
+"a": 399,
+"b": 99,
+"verdicts": {
+"147": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"507": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+]
+}
+},
+{
+"P": [
+355,
+227,
+24
+],
+"h3": 568,
+"a": 395,
+"b": 393,
+"verdicts": {
+"188": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+361,
+137,
+6
+],
+"h3": 590,
+"a": 90,
+"b": 413,
+"verdicts": {
+"138": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"164": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+361,
+233,
+6
+],
+"h3": 580,
+"a": 411,
+"b": 409,
+"verdicts": {
+"170": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"196": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+362,
+138,
+30
+],
+"h3": 531,
+"a": 335,
+"b": 107,
+"verdicts": {
+"155": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"725": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+],
+"519": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+],
+"166": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+],
+"720": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"723": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"722": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"724": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+362,
+234,
+30
+],
+"h3": 520,
+"a": 331,
+"b": 329,
+"verdicts": {
+"180": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+388,
+24,
+2
+],
+"h3": 485,
+"a": 9,
+"b": 8,
+"verdicts": {
+"144": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+388,
+96,
+2
+],
+"h3": 489,
+"a": 276,
+"b": 273,
+"verdicts": {
+"475": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+388,
+96,
+26
+],
+"h3": 490,
+"a": 280,
+"b": 282,
+"verdicts": {
+"704": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"526": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"203": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+388,
+98,
+24
+],
+"h3": 494,
+"a": 10,
+"b": 285,
+"verdicts": {
+"186": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"720": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+],
+"506": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+],
+"163": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+]
+}
+},
+{
+"P": [
+388,
+98,
+26
+],
+"h3": 486,
+"a": 279,
+"b": 277,
+"verdicts": {
+"462": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+388,
+120,
+2
+],
+"h3": 493,
+"a": 286,
+"b": 13,
+"verdicts": {
+"713": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"517": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"192": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+19,
+13
+],
+"h3": 533,
+"a": 1,
+"b": 0,
+"verdicts": {
+"152": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+390,
+37,
+24
+],
+"h3": 556,
+"a": 379,
+"b": 377,
+"verdicts": {
+"212": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+390,
+44,
+30
+],
+"h3": 508,
+"a": 315,
+"b": 313,
+"verdicts": {
+"220": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+390,
+67,
+24
+],
+"h3": 557,
+"a": 73,
+"b": 72,
+"verdicts": {
+"208": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+390,
+67,
+37
+],
+"h3": 561,
+"a": 372,
+"b": 369,
+"verdicts": {
+"22": [
+"x",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"479": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"269": [
+"h-cold",
+"R1: frame 2 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+67,
+61
+],
+"h3": 565,
+"a": 382,
+"b": 77,
+"verdicts": {
+"529": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+74,
+30
+],
+"h3": 509,
+"a": 65,
+"b": 64,
+"verdicts": {
+"216": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+390,
+74,
+44
+],
+"h3": 513,
+"a": 308,
+"b": 305,
+"verdicts": {
+"260": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+74,
+50
+],
+"h3": 517,
+"a": 318,
+"b": 69,
+"verdicts": {
+"719": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"493": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"197": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"712": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"713": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+84,
+44
+],
+"h3": 516,
+"a": 316,
+"b": 68,
+"verdicts": {
+"718": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"492": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"198": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"712": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"713": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+84,
+50
+],
+"h3": 512,
+"a": 310,
+"b": 307,
+"verdicts": {
+"262": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+91,
+37
+],
+"h3": 564,
+"a": 380,
+"b": 76,
+"verdicts": {
+"528": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+91,
+61
+],
+"h3": 560,
+"a": 374,
+"b": 371,
+"verdicts": {
+"264": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"296": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"682": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+96,
+13
+],
+"h3": 537,
+"a": 340,
+"b": 337,
+"verdicts": {
+"481": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+96,
+19
+],
+"h3": 536,
+"a": 342,
+"b": 339,
+"verdicts": {
+"480": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+96,
+26
+],
+"h3": 488,
+"a": 278,
+"b": 275,
+"verdicts": {
+"474": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+98,
+24
+],
+"h3": 484,
+"a": 283,
+"b": 281,
+"verdicts": {
+"148": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+390,
+98,
+26
+],
+"h3": 492,
+"a": 284,
+"b": 12,
+"verdicts": {
+"712": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"516": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"195": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+109,
+19
+],
+"h3": 540,
+"a": 348,
+"b": 4,
+"verdicts": {
+"504": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+390,
+109,
+30
+],
+"h3": 532,
+"a": 347,
+"b": 345,
+"verdicts": {
+"156": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+390,
+115,
+13
+],
+"h3": 541,
+"a": 350,
+"b": 5,
+"verdicts": {
+"505": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+395,
+96,
+19
+],
+"h3": 538,
+"a": 344,
+"b": 346,
+"verdicts": {
+"490": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+395,
+109,
+19
+],
+"h3": 534,
+"a": 343,
+"b": 341,
+"verdicts": {
+"466": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+395,
+109,
+30
+],
+"h3": 542,
+"a": 2,
+"b": 349,
+"verdicts": {
+"178": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"518": [
+"h-enter",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+],
+"722": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"530": [
+"h-enter",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"554": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+400,
+8,
+6
+],
+"h3": 473,
+"a": 17,
+"b": 16,
+"verdicts": {
+"169": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"136": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+400,
+96,
+8
+],
+"h3": 475,
+"a": 258,
+"b": 256,
+"verdicts": {
+"667": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"102": [
+"x",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"216": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"668": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+400,
+96,
+14
+],
+"h3": 481,
+"a": 270,
+"b": 21,
+"verdicts": {
+"699": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"110": [
+"x",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"208": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"700": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+400,
+102,
+8
+],
+"h3": 479,
+"a": 22,
+"b": 23,
+"verdicts": {
+"691": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"70": [
+"x",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"184": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"692": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+400,
+102,
+14
+],
+"h3": 477,
+"a": 260,
+"b": 257,
+"verdicts": {
+"659": [
+"h-enter",
+"R1: frame 5 before the merge not inside L_a",
+"ok"
+],
+"78": [
+"x",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"176": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"660": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+400,
+104,
+6
+],
+"h3": 483,
+"a": 271,
+"b": 19,
+"verdicts": {
+"195": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"167": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+405,
+96,
+13
+],
+"h3": 539,
+"a": 6,
+"b": 7,
+"verdicts": {
+"491": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+405,
+115,
+13
+],
+"h3": 535,
+"a": 338,
+"b": 336,
+"verdicts": {
+"467": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+406,
+96,
+8
+],
+"h3": 480,
+"a": 268,
+"b": 20,
+"verdicts": {
+"698": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"328": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"211": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+406,
+96,
+14
+],
+"h3": 474,
+"a": 263,
+"b": 261,
+"verdicts": {
+"666": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"392": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"219": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+406,
+102,
+8
+],
+"h3": 476,
+"a": 262,
+"b": 259,
+"verdicts": {
+"658": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"376": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"179": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+406,
+102,
+14
+],
+"h3": 478,
+"a": 264,
+"b": 266,
+"verdicts": {
+"690": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"312": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"187": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+408,
+49,
+6
+],
+"h3": 592,
+"a": 427,
+"b": 425,
+"verdicts": {
+"205": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"170": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+408,
+73,
+6
+],
+"h3": 593,
+"a": 81,
+"b": 80,
+"verdicts": {
+"175": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"200": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+408,
+73,
+49
+],
+"h3": 595,
+"a": 418,
+"b": 416,
+"verdicts": {
+"286": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"687": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"684": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"682": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"254": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"561": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"570": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"584": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"681": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+408,
+73,
+55
+],
+"h3": 599,
+"a": 86,
+"b": 87,
+"verdicts": {
+"334": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+408,
+74,
+44
+],
+"h3": 514,
+"a": 312,
+"b": 314,
+"verdicts": {
+"708": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"502": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"205": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"706": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+408,
+74,
+50
+],
+"h3": 510,
+"a": 311,
+"b": 309,
+"verdicts": {
+"247": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"311": [
+"h-cold",
+"ok",
+"ok"
+]
+}
+},
+{
+"P": [
+408,
+79,
+49
+],
+"h3": 598,
+"a": 424,
+"b": 426,
+"verdicts": {
+"332": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+408,
+79,
+55
+],
+"h3": 594,
+"a": 423,
+"b": 421,
+"verdicts": {
+"284": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"686": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"682": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"560": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"252": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"684": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"570": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"584": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"680": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+408,
+84,
+44
+],
+"h3": 511,
+"a": 306,
+"b": 304,
+"verdicts": {
+"242": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"510": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"478": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"306": [
+"h-cold",
+"ok",
+"ok"
+],
+"312": [
+"h-cold",
+"R1: frame 2 before the merge not inside L_a",
+"ok"
+],
+"514": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"690": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"692": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+408,
+84,
+50
+],
+"h3": 515,
+"a": 70,
+"b": 71,
+"verdicts": {
+"709": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"503": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"206": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"704": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"706": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"707": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+],
+"708": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+408,
+104,
+6
+],
+"h3": 472,
+"a": 267,
+"b": 265,
+"verdicts": {
+"141": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"172": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+412,
+96,
+2
+],
+"h3": 491,
+"a": 14,
+"b": 15,
+"verdicts": {
+"705": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"527": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"200": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+412,
+120,
+2
+],
+"h3": 487,
+"a": 274,
+"b": 272,
+"verdicts": {
+"463": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+414,
+67,
+37
+],
+"h3": 562,
+"a": 376,
+"b": 378,
+"verdicts": {
+"514": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+414,
+67,
+61
+],
+"h3": 558,
+"a": 375,
+"b": 373,
+"verdicts": {
+"248": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"300": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"672": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+414,
+73,
+49
+],
+"h3": 601,
+"a": 430,
+"b": 85,
+"verdicts": {
+"318": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+414,
+73,
+55
+],
+"h3": 597,
+"a": 420,
+"b": 417,
+"verdicts": {
+"302": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"559": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"253": [
+"h-cold",
+"R1: frame 2 before the merge not inside L_a",
+"ok"
+],
+"679": [
+"h-enter",
+"R1: frame 5 before the merge not inside L_a",
+"ok"
+],
+"572": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"582": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"676": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"674": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"467": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+414,
+79,
+49
+],
+"h3": 596,
+"a": 422,
+"b": 419,
+"verdicts": {
+"300": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"247": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"466": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"558": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"572": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"582": [
+"h-cold",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"672": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"674": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"676": [
+"h-enter",
+"R1: frame 1 before the merge not inside L_a",
+"ok"
+],
+"678": [
+"h-enter",
+"R1: frame 5 before the merge not inside L_a",
+"ok"
+],
+"242": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+414,
+79,
+55
+],
+"h3": 600,
+"a": 428,
+"b": 84,
+"verdicts": {
+"316": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+414,
+91,
+37
+],
+"h3": 559,
+"a": 370,
+"b": 368,
+"verdicts": {
+"30": [
+"x",
+"R1: frame 3 before the merge not inside L_a",
+"ok"
+],
+"253": [
+"h-cold",
+"R1: frame 2 before the merge not inside L_a",
+"ok"
+],
+"467": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+414,
+91,
+61
+],
+"h3": 563,
+"a": 78,
+"b": 79,
+"verdicts": {
+"515": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+419,
+67,
+24
+],
+"h3": 566,
+"a": 74,
+"b": 381,
+"verdicts": {
+"122": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"494": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+]
+}
+},
+{
+"P": [
+425,
+73,
+6
+],
+"h3": 603,
+"a": 431,
+"b": 83,
+"verdicts": {
+"167": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"135": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+426,
+74,
+30
+],
+"h3": 518,
+"a": 66,
+"b": 317,
+"verdicts": {
+"114": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"722": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+],
+"530": [
+"h-enter",
+"R1: next frame does not contain L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+],
+"163": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+],
+"542": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+448,
+32,
+6
+],
+"h3": 449,
+"a": 57,
+"b": 56,
+"verdicts": {
+"136": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"129": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+448,
+32,
+24
+],
+"h3": 451,
+"a": 226,
+"b": 224,
+"verdicts": {
+"497": [
+"h-enter",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"121": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+448,
+32,
+30
+],
+"h3": 455,
+"a": 62,
+"b": 63,
+"verdicts": {
+"545": [
+"h-enter",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"113": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+448,
+38,
+24
+],
+"h3": 456,
+"a": 236,
+"b": 60,
+"verdicts": {
+"568": [
+"h-enter",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"189": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+448,
+38,
+30
+],
+"h3": 452,
+"a": 230,
+"b": 227,
+"verdicts": {
+"520": [
+"h-enter",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"181": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+448,
+56,
+6
+],
+"h3": 458,
+"a": 58,
+"b": 237,
+"verdicts": {
+"196": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"205": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+453,
+37,
+24
+],
+"h3": 567,
+"a": 383,
+"b": 75,
+"verdicts": {
+"123": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"495": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+]
+}
+},
+{
+"P": [
+454,
+32,
+24
+],
+"h3": 457,
+"a": 238,
+"b": 61,
+"verdicts": {
+"569": [
+"h-enter",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"185": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+454,
+32,
+30
+],
+"h3": 453,
+"a": 228,
+"b": 225,
+"verdicts": {
+"521": [
+"h-enter",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"177": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+454,
+38,
+24
+],
+"h3": 450,
+"a": 231,
+"b": 229,
+"verdicts": {
+"496": [
+"h-enter",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"125": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+454,
+38,
+30
+],
+"h3": 454,
+"a": 232,
+"b": 234,
+"verdicts": {
+"544": [
+"h-enter",
+"R1: next frame does not contain L_a",
+"ok"
+],
+"117": [
+"y",
+"R1: next frame does not contain L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+460,
+44,
+30
+],
+"h3": 519,
+"a": 319,
+"b": 67,
+"verdicts": {
+"115": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"723": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+],
+"531": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+],
+"160": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+],
+"724": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"ok"
+]
+}
+},
+{
+"P": [
+465,
+49,
+6
+],
+"h3": 602,
+"a": 82,
+"b": 429,
+"verdicts": {
+"130": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"162": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+472,
+32,
+6
+],
+"h3": 459,
+"a": 239,
+"b": 59,
+"verdicts": {
+"200": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"193": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+472,
+56,
+6
+],
+"h3": 448,
+"a": 235,
+"b": 233,
+"verdicts": {
+"132": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"141": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+},
+{
+"P": [
+484,
+24,
+2
+],
+"h3": 495,
+"a": 287,
+"b": 11,
+"verdicts": {
+"187": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"721": [
+"h-enter",
+"R1: frame 4 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+],
+"507": [
+"h-cold",
+"R1: next frame does not contain L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+],
+"160": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+]
+}
+},
+{
+"P": [
+486,
+19,
+13
+],
+"h3": 543,
+"a": 351,
+"b": 3,
+"verdicts": {
+"179": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+],
+"519": [
+"h-cold",
+"R1: frame 3 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+]
+}
+},
+{
+"P": [
+496,
+8,
+6
+],
+"h3": 482,
+"a": 18,
+"b": 269,
+"verdicts": {
+"162": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+],
+"198": [
+"y",
+"R1: frame 2 before the merge not inside L_a",
+"R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+]
+}
+}
+]

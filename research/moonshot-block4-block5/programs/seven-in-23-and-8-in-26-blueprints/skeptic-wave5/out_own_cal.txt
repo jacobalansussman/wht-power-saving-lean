@@ -1,0 +1,23 @@
+Lagrangians 2295 39s
+neighbours of K at d3: 15 ; content cells t: 7  39s
+F choice 0, content cell #0: |G| = 10752, dim A = 184, G-fixed slots [0, 13] (t slot 0), input distances of fixed [2, 3]  43s
+G-orbit sizes on the 30 slots: [1, 28, 1] ; kernel slot 29 in orbit of size 28
+  chars [1, 2, 3, 4, 5, 6] lam1 16 start 0: ALS residual first 2.329e-14 -> last 2.670e-14 (min 2.329e-14)
+  chars [1, 2, 3, 4, 5, 6] lam1 16 start 1: ALS residual first 2.886e-14 -> last 3.114e-14 (min 2.823e-14)
+  chars [1, 2, 3, 4, 5, 6] lam1 16 start 2: ALS residual first 3.603e-14 -> last 3.434e-14 (min 3.031e-14)
+  chars [1, 2, 3, 4, 5, 6] lam1 16 start 3: ALS residual first 7.799e-14 -> last 8.420e-14 (min 7.494e-14)
+  chars [1, 2, 3, 4, 5, 6] lam1 16 start 4: ALS residual first 3.012e-14 -> last 3.341e-14 (min 2.772e-14)
+  chars [1, 2, 3, 4, 5, 6] lam1 16 start 5: ALS residual first 4.437e-14 -> last 5.208e-14 (min 4.335e-14)
+  chars [1, 2, 3, 4, 5, 6] lam1 16 start 6: ALS residual first 2.891e-14 -> last 3.033e-14 (min 2.767e-14)
+  chars [1, 2, 3, 4, 5, 6] lam1 16 start 7: ALS residual first 3.051e-14 -> last 3.331e-14 (min 2.836e-14)
+ chars [1, 2, 3, 4, 5, 6]: best ALS residual 2.329e-14
+  chars [0, 1, 2, 3, 4, 5, 6] lam1 16 start 0: ALS residual first 4.564e-01 -> last 4.564e-01 (min 4.564e-01)
+  chars [0, 1, 2, 3, 4, 5, 6] lam1 16 start 1: ALS residual first 4.564e-01 -> last 4.564e-01 (min 4.564e-01)
+  chars [0, 1, 2, 3, 4, 5, 6] lam1 16 start 2: ALS residual first 4.564e-01 -> last 4.564e-01 (min 4.564e-01)
+  chars [0, 1, 2, 3, 4, 5, 6] lam1 16 start 3: ALS residual first 4.564e-01 -> last 4.564e-01 (min 4.564e-01)
+  chars [0, 1, 2, 3, 4, 5, 6] lam1 16 start 4: ALS residual first 4.564e-01 -> last 4.564e-01 (min 4.564e-01)
+  chars [0, 1, 2, 3, 4, 5, 6] lam1 16 start 5: ALS residual first 4.564e-01 -> last 4.564e-01 (min 4.564e-01)
+  chars [0, 1, 2, 3, 4, 5, 6] lam1 16 start 6: ALS residual first 4.564e-01 -> last 4.564e-01 (min 4.564e-01)
+  chars [0, 1, 2, 3, 4, 5, 6] lam1 16 start 7: ALS residual first 4.564e-01 -> last 4.564e-01 (min 4.564e-01)
+ chars [0, 1, 2, 3, 4, 5, 6]: best ALS residual 4.564e-01
+done 111s

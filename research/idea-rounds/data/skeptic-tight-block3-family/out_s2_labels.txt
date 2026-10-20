@@ -1,0 +1,9 @@
+types (dim, mult, irreducibles): [(7, 1, [8]), (14, 1, [11]), (14, 1, [11]), (21, 2, [8, 11]), (28, 1, [8]), (56, 1, [11])]
+3486 certificates scanned (single types 0/all, shared 21 as 0, all, or 107 labels)
+best full-array ratio dK/cap = 2.8000 at (1, 'line(1,0)', 28, 10, 18, 28)
+5+0 in 14: least slack 0 (allowed) at mask=1 label=line(1,0) dim=28 cap=10 dR=18 dK=28
+4+1 in 13: least slack 0 (allowed) at mask=1 label=line(1,0) dim=28 cap=10 dR=18 dK=28
+3+2 in 12: least slack 0 (allowed) at mask=1 label=line(1,0) dim=28 cap=10 dR=18 dK=28
+2+3 in 11: least slack 0 (allowed) at mask=1 label=line(1,0) dim=28 cap=10 dR=18 dK=28
+1+4 in 10: least slack -1 (REFUSED) at mask=6 label=line(th=1.571,ph=0.00) dim=49 cap=20 dR=38 dK=49
+5+0 in 13: least slack -10 (REFUSED) at mask=1 label=line(1,0) dim=28 cap=10 dR=18 dK=28

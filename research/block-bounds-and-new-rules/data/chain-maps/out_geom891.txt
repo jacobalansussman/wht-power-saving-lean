@@ -1,0 +1,14 @@
+PASS Gamma-orbit of L0 has 891 frames = all generators of H(5,4) ((q+1)(q^3+1)(q^5+1), q = 2) (got 891)
+PASS every orbit frame is totally hJ-isotropic of size 64
+PASS Phi is an isometry (sampled 4096/7 x 4096/11 pairs; it is one by construction)
+PASS D-frames totally hD-isotropic
+PASS distance distribution [1, 42, 336, 512] = [1, 42, 336, 512] for every frame
+PASS all letters (63 symplectic transvections, E(alpha), chi(alpha)) preserve hJ (sampled)
+PASS Gamma transitive on ordered pairs at each distance (orbit size, number of pairs): [(891, 891), (37422, 37422), (299376, 299376), (456192, 456192)]
+PASS distances preserved by Phi
+PASS direction moves L0 to distance 1 (want 1); K to distance 3 (want 3)
+ALL CHECKS PASS
+
+real	0m47.551s
+user	0m47.686s
+sys	0m0.425s

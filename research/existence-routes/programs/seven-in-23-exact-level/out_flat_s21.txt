@@ -1,0 +1,10 @@
+[lift] seed 21: cells lam1 1 t1 16 F 137 K 731; |B_m sample| 151 of 4000; q order 7 found; 25s
+[d4] d1 0, d0 14, |S| 16
+[flat] (1) R_V(k) = Delta (Pi_k (x) k) Delta^-1 checked on 7 letters
+[flat] (2) flat-lift identity checked on actual Pauli-multiplied terms (each letter -> 64 Pauli terms)
+[flat] multiplicities m_a(p) = rank E_a(V(p)): {0: 4, 1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2}  sum 16
+[flat] all30 generic lift: top-alone kernel rank r_a / needed with F2 twisted by p (16 - m_a): a=0: 0/12 FAIL (top sv 1e-15), a=1: 0/14 FAIL (top sv 4e-15), a=2: 0/14 FAIL (top sv 3e-15), a=3: 0/14 FAIL (top sv 4e-15), a=4: 0/14 FAIL (top sv 5e-15), a=5: 0/14 FAIL (top sv 6e-15), a=6: 0/14 FAIL (top sv 4e-15)
+[flat] all30 flat lift   : top-alone kernel rank r_a / needed with F2 twisted by p (16 - m_a): a=0: 12/12 (top sv 5e-02), a=1: 14/14 (top sv 4e-01), a=2: 14/14 (top sv 4e-01), a=3: 14/14 (top sv 4e-01), a=4: 14/14 (top sv 4e-01), a=5: 14/14 (top sv 4e-01), a=6: 14/14 (top sv 4e-01)
+[flat] d4    generic lift: top-alone kernel rank r_a / needed with F2 twisted by p (16 - m_a): a=0: 0/12 FAIL (top sv 1e-15), a=1: 0/14 FAIL (top sv 3e-15), a=2: 0/14 FAIL (top sv 3e-15), a=3: 0/14 FAIL (top sv 3e-15), a=4: 0/14 FAIL (top sv 4e-15), a=5: 0/14 FAIL (top sv 6e-15), a=6: 0/14 FAIL (top sv 4e-15)
+[flat] d4    flat lift   : top-alone kernel rank r_a / needed with F2 twisted by p (16 - m_a): a=0: 12/12 (top sv 5e-02), a=1: 14/14 (top sv 4e-01), a=2: 14/14 (top sv 4e-01), a=3: 14/14 (top sv 4e-01), a=4: 14/14 (top sv 4e-01), a=5: 14/14 (top sv 4e-01), a=6: 14/14 (top sv 4e-01)
+done 63s

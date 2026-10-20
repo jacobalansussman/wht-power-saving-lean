@@ -1,0 +1,5 @@
+max identity error on the grid: 1.3322676295501878e-15
+min of lf, lp, lA on (0,1) grid: 0.0003410158847447775 0.00011826958066585291 0.00028755894095744416
+end values: lf(0), lf(1) = 1 0 ; lp(0), lp(1) = 0 1 ; lA(0), lA(1) = 0 0
+slopes: lf'(1) = -0.33979807359079484  lp'(0) = 0.11778303565638382  lA'(0) = 0.2876820724517808  lA'(1) = -0.523248143764548
+lf/lp decreasing on grid: True ; lA/lp decreasing on grid: True

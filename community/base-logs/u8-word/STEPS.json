@@ -1,0 +1,42 @@
+[
+  {
+    "step": "barch",
+    "exit_code": 0,
+    "seconds": 0.257
+  },
+  {
+    "step": "barch-controls",
+    "exit_code": 0,
+    "seconds": 66.48
+  },
+  {
+    "step": "layer-end-controls",
+    "exit_code": 0,
+    "seconds": 210.837
+  },
+  {
+    "step": "native",
+    "exit_code": 0,
+    "seconds": 3.376
+  },
+  {
+    "step": "ledgers",
+    "exit_code": 0,
+    "seconds": 2.148
+  },
+  {
+    "step": "local-replay",
+    "exit_code": 0,
+    "seconds": 16.336
+  },
+  {
+    "step": "wrappers",
+    "exit_code": 0,
+    "seconds": 5.492
+  },
+  {
+    "step": "phases",
+    "exit_code": 0,
+    "seconds": 331.655
+  }
+]

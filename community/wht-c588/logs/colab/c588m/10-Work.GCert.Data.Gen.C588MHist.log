@@ -1,0 +1,7 @@
+ℹ [5/9] Replayed Work.GCert.Data.Count
+info: Work/GCert/Data/Count.lean:44:0: 'GXD.wsumK_eq' depends on axioms: [propext]
+info: Work/GCert/Data/Count.lean:45:0: 'GXD.sum_of_wsumK' depends on axioms: [propext]
+ℹ [9/9] Built Work.GCert.Data.Gen.C588MHist (3.3s)
+info: Work/GCert/Data/Gen/C588MHist.lean:39:0: 'GXD.C588M.rankBoundA' does not depend on any axioms
+info: Work/GCert/Data/Gen/C588MHist.lean:40:0: 'GXD.C588M.rankA0_ok' does not depend on any axioms
+Build completed successfully (9 jobs).

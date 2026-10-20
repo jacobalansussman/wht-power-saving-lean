@@ -1,0 +1,36 @@
+PASS export-pr2894
+PASS export-pr2833
+PASS fresh-retained-bootstrap
+PASS four-kernel-stage
+PASS preload-stage
+PASS parent-paired-stage
+PASS paired-extension-stage
+PASS rank7-overlay-stage
+PASS derive-closed-adapters
+PASS fresh-current-native
+PASS complete-admission
+PASS_RANK7_JOINT_ENDFRAMES_COMPLETE_REPLAY 17290339826465135177169999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000
+	Command being timed: "nice -n 5 /content/work/ah-gate/vA/bin/python -B research/rank7-joint-endframes/reproduce.py --repo /content/work/hub --work /content/work/ah-gate/rpA --jobs 2"
+	User time (seconds): 4982.20
+	System time (seconds): 177.35
+	Percent of CPU this job got: 109%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:18:11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1435080
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 714
+	Minor (reclaiming a frame) page faults: 45924913
+	Voluntary context switches: 8417
+	Involuntary context switches: 694253
+	Swaps: 0
+	File system inputs: 452072
+	File system outputs: 1585752
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+rc 0

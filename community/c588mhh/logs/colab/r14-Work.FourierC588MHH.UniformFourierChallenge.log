@@ -1,0 +1,27 @@
+START Work.FourierC588MHH.UniformFourierChallenge 20:10:35
+Work/FourierC588MHH/UniformFourierChallenge.lean:326:8: warning: declaration uses `sorry`
+Work/FourierC588MHH/UniformFourierChallenge.lean:330:8: warning: declaration uses `sorry`
+	Command being timed: "/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean -DautoImplicit=false -R . -o .lake/build/lib/lean/Work/FourierC588MHH/UniformFourierChallenge.olean -i .lake/build/lib/lean/Work/FourierC588MHH/UniformFourierChallenge.ilean Work/FourierC588MHH/UniformFourierChallenge.lean"
+	User time (seconds): 8.22
+	System time (seconds): 2.61
+	Percent of CPU this job got: 113%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6913808
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6
+	Minor (reclaiming a frame) page faults: 180190
+	Voluntary context switches: 4236
+	Involuntary context switches: 494
+	Swaps: 0
+	File system inputs: 376
+	File system outputs: 2800
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+EXIT 0 Work.FourierC588MHH.UniformFourierChallenge 20:10:44

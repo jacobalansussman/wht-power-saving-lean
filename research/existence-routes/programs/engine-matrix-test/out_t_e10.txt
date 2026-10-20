@@ -1,0 +1,49 @@
+plain W=2                          m=2 f=1 d=   4 M= 4 sum k=    8  unit=True (expected True)  transfer-form err=2.3e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+pair trick W=2                     m=2 f=1 d=   4 M= 4 sum k=    8  unit=True (expected True)  transfer-form err=2.3e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+wasteful unit W=1 (T0=X)           m=2 f=1 d=   4 M= 4 sum k=    8  unit=True (expected True)  transfer-form err=3.9e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+address-map conjugated plain W=1   m=2 f=1 d=   4 M= 2 sum k=    4  unit=True (expected True)  transfer-form err=2.3e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+random word 0                      m=2 f=1 d=   4 M= 3 sum k=    6  unit=False (expected False)  transfer-form err=1.4e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+random word 1                      m=2 f=1 d=   4 M= 5 sum k=   10  unit=False (expected False)  transfer-form err=1.6e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.414
+random word 2                      m=2 f=1 d=   4 M= 2 sum k=    4  unit=False (expected False)  transfer-form err=0.0e+00  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+plain W=2                          m=2 f=2 d=  16 M= 4 sum k=   48  unit=True (expected True)  transfer-form err=1.1e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+pair trick W=2                     m=2 f=2 d=  16 M= 4 sum k=   48  unit=True (expected True)  transfer-form err=9.5e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+wasteful unit W=1 (T0=X)           m=2 f=2 d=  16 M= 4 sum k=   48  unit=True (expected True)  transfer-form err=2.2e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+address-map conjugated plain W=1   m=2 f=2 d=  16 M= 2 sum k=   24  unit=True (expected True)  transfer-form err=1.0e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+random word 0                      m=2 f=2 d=  16 M= 3 sum k=   36  unit=False (expected False)  transfer-form err=6.3e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+random word 1                      m=2 f=2 d=  16 M= 5 sum k=   60  unit=False (expected False)  transfer-form err=7.1e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=2.000
+random word 2                      m=2 f=2 d=  16 M= 2 sum k=   24  unit=False (expected False)  transfer-form err=0.0e+00  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+plain W=2                          m=2 f=3 d=  64 M= 4 sum k=  224  unit=True (expected True)  transfer-form err=1.1e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+pair trick W=2                     m=2 f=3 d=  64 M= 4 sum k=  224  unit=True (expected True)  transfer-form err=1.3e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+wasteful unit W=1 (T0=X)           m=2 f=3 d=  64 M= 4 sum k=  224  unit=True (expected True)  transfer-form err=2.0e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+address-map conjugated plain W=1   m=2 f=3 d=  64 M= 2 sum k=  112  unit=True (expected True)  transfer-form err=1.3e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+random word 0                      m=2 f=3 d=  64 M= 3 sum k=  168  unit=False (expected False)  transfer-form err=2.3e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+random word 1                      m=2 f=3 d=  64 M= 5 sum k=  280  unit=False (expected False)  transfer-form err=1.1e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=2.000
+random word 2                      m=2 f=3 d=  64 M= 2 sum k=  112  unit=False (expected False)  transfer-form err=0.0e+00  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+plain W=2                          m=3 f=1 d=   8 M= 6 sum k=   24  unit=True (expected True)  transfer-form err=2.8e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+pair trick W=2                     m=3 f=1 d=   8 M= 6 sum k=   24  unit=True (expected True)  transfer-form err=2.8e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+wasteful unit W=1 (T0=X)           m=3 f=1 d=   8 M= 5 sum k=   20  unit=True (expected True)  transfer-form err=4.5e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+address-map conjugated plain W=1   m=3 f=1 d=   8 M= 3 sum k=   12  unit=True (expected True)  transfer-form err=2.8e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+random word 0                      m=3 f=1 d=   8 M= 6 sum k=   24  unit=False (expected False)  transfer-form err=1.2e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.710
+random word 1                      m=3 f=1 d=   8 M= 3 sum k=   12  unit=False (expected False)  transfer-form err=4.3e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.658
+random word 2                      m=3 f=1 d=   8 M= 9 sum k=   36  unit=False (expected False)  transfer-form err=3.5e-16  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=2.261
+plain W=2                          m=3 f=2 d=  64 M= 6 sum k=  288  unit=True (expected True)  transfer-form err=1.3e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+pair trick W=2                     m=3 f=2 d=  64 M= 6 sum k=  288  unit=True (expected True)  transfer-form err=1.2e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+wasteful unit W=1 (T0=X)           m=3 f=2 d=  64 M= 5 sum k=  240  unit=True (expected True)  transfer-form err=1.9e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=1.000
+address-map conjugated plain W=1   m=3 f=2 d=  64 M= 3 sum k=  144  unit=True (expected True)  transfer-form err=1.9e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=0.000
+random word 0                      m=3 f=2 d=  64 M= 6 sum k=  288  unit=False (expected False)  transfer-form err=3.4e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=2.157
+random word 1                      m=3 f=2 d=  64 M= 3 sum k=  144  unit=False (expected False)  transfer-form err=6.1e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=2.000
+random word 2                      m=3 f=2 d=  64 M= 9 sum k=  432  unit=False (expected False)  transfer-form err=3.0e-15  max|rank N - (sum k + rank(Z-lam))|=0  |T0 - I|max=2.582
+ALL E10 CHECKS PASS
+
+zero-move fake: T_0 = P_K (x) I_W with P_K = prod_j P_{e_j,0} = diag(i^{|x|}) (a free letter), M = 0
+  m=2 f=1: rank(rho(P_K) - lam) = rank(rho(K) - lam) for lam in {1,i,-1,-i}: True
+  m=2 f=2: rank(rho(P_K) - lam) = rank(rho(K) - lam) for lam in {1,i,-1,-i}: True
+  m=2 f=3: rank(rho(P_K) - lam) = rank(rho(K) - lam) for lam in {1,i,-1,-i}: True
+  m=2 f=4: rank(rho(P_K) - lam) = rank(rho(K) - lam) for lam in {1,i,-1,-i}: True
+  m=2: |H^(x)m P_K H^(x)m - K|max = 2.2e-16;  S.dir(e1).S / H entries = [0.707107+0.707107j 0.707107+0.707107j 0.707107+0.707107j
+ 0.707107+0.707107j] (constant => H in G up to a scalar)
+  m=3 f=1: rank(rho(P_K) - lam) = rank(rho(K) - lam) for lam in {1,i,-1,-i}: True
+  m=3 f=2: rank(rho(P_K) - lam) = rank(rho(K) - lam) for lam in {1,i,-1,-i}: True
+  m=3 f=3: rank(rho(P_K) - lam) = rank(rho(K) - lam) for lam in {1,i,-1,-i}: True
+  m=3: |H^(x)m P_K H^(x)m - K|max = 1.8e-16;  S.dir(e1).S / H entries = [0.707107+0.707107j 0.707107+0.707107j 0.707107+0.707107j
+ 0.707107+0.707107j] (constant => H in G up to a scalar)

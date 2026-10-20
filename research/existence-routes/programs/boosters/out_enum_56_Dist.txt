@@ -1,0 +1,16 @@
+m=5 K=6: window-negative primitive-or-not candidates after frame/plain/A prefilter: 17; primitive survivors of all rigorous certificates: 1
+   tasks {2: 1, 4: 5} calls {3: 4, 5: 2}: arrays 6, D(1) = 0, min D on window -0.0122, roots [5e-05, 1.0], tight: ['A5', 'B5', 'C5k4', 'Dist5S0', 'Dist5S12345']
+m=6 K=5: window-negative primitive-or-not candidates after frame/plain/A prefilter: 160; primitive survivors of all rigorous certificates: 64
+   tasks {2: 1, 4: 2, 5: 1} calls {3: 3, 6: 1}: arrays 4, D(1) = 0, min D on window -0.00779, roots [0.2783, 1.0], tight: ['C6k5', 'Dist6S0', 'Dist6S123456']
+   tasks {5: 4} calls {1: 2, 6: 3}: arrays 4, D(1) = 0, min D on window -0.000335, roots [0.97845, 1.0], tight: []
+   tasks {4: 3, 5: 1} calls {1: 2, 3: 1, 6: 2}: arrays 4, D(1) = 0, min D on window -0.00109, roots [0.96115, 1.0], tight: []
+   tasks {3: 2, 5: 2} calls {1: 2, 2: 1, 6: 2}: arrays 4, D(1) = 0, min D on window -0.00331, roots [0.9318, 1.0], tight: []
+   tasks {2: 1, 5: 4} calls {3: 2, 4: 1, 6: 2}: arrays 5, D(1) = 0, min D on window -0.00341, roots [0.6806, 1.0], tight: ['C6k5', 'Dist6S0', 'Dist6S123456']
+   tasks {2: 1, 4: 1, 5: 3} calls {3: 3, 6: 2}: arrays 5, D(1) = 0, min D on window -0.0232, roots [5e-05, 1.0], tight: ['A6', 'C6k5', 'Dist6S0', 'Dist6S123456']
+   tasks {3: 1, 4: 4} calls {1: 1, 2: 3, 6: 2}: arrays 5, D(1) = 0, min D on window -0.00247, roots [0.94445, 1.0], tight: []
+   tasks {4: 2, 5: 3} calls {1: 2, 3: 1, 6: 3}: arrays 5, D(1) = 0, min D on window -0.0073, roots [0.9022, 1.0], tight: []
+   tasks {4: 5} calls {1: 2, 3: 2, 6: 2}: arrays 5, D(1) = 0, min D on window -0.00973, roots [0.8871, 1.0], tight: []
+   tasks {3: 1, 4: 4} calls {1: 2, 2: 1, 5: 3}: arrays 5, D(1) = 0, min D on window -0.000244, roots [0.9808, 1.0], tight: []
+   tasks {2: 1, 4: 5} calls {3: 4, 5: 2}: arrays 6, D(1) = 0, min D on window -0.0122, roots [5e-05, 1.0], tight: ['A6', 'C6k5', 'Dist6S0', 'Dist6S123456']
+   tasks {4: 4, 5: 2} calls {1: 1, 2: 2, 3: 1, 6: 3}: arrays 6, D(1) = 0, min D on window -0.000153, roots [0.9863, 1.0], tight: []
+python3 -B -c   12.46s user 0.20s system 44% cpu 28.194 total

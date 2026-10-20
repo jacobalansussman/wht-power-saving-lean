@@ -1,0 +1,5 @@
+frames: 135
+dim Y_L0 = 280
+delta(L0, V) by distance: {0: {0: 1}, 1: {80: 14}, 2: {144: 56}, 3: {224: 64}}
+delta(U, V) on random pairs by distance: {1: {80: 2}, 2: {144: 9}, 3: {224: 9}}
+ratio delta(distance 3)/delta(distance 1) = 224 / 80

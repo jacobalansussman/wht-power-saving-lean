@@ -1,0 +1,90 @@
+{
+ "scatter_natural": {
+  "readers_eq_support": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "junk_among_readers": [
+   784,
+   784,
+   784,
+   784,
+   784,
+   784,
+   784,
+   784
+  ],
+  "scatter_run": [
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4
+  ]
+ },
+ "scatter_best_twist": {
+  "readers_eq_support": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "junk_among_readers": [
+   784,
+   784,
+   784,
+   784,
+   784,
+   784,
+   784,
+   784
+  ],
+  "scatter_run": [
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8
+  ]
+ },
+ "twist_sample": {
+  "n": 251,
+  "bad": 0,
+  "hist": {
+   "(6, 8)": 114,
+   "(4, 6)": 82,
+   "(8, 8)": 30,
+   "(6, 6)": 25
+  }
+ },
+ "anneal": [
+  {
+   "support": 0,
+   "start": 15,
+   "best": 15,
+   "iters": 27753
+  },
+  {
+   "support": 1,
+   "start": 15,
+   "best": 15,
+   "iters": 27635
+  }
+ ]
+}

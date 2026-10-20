@@ -1,0 +1,112 @@
+target 169 cut [(60, '1/4'), (61, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (23, 256): 8, (31, 240): 8, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 170 cut [(63, '1/4'), (224, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (23, 256): 8, (31, 240): 8, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 172 cut [(60, '1/4'), (61, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (23, 256): 8, (31, 240): 8, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 175 cut [(63, '1/4'), (224, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (23, 256): 8, (31, 240): 8, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 137 cut [(60, '1/4'), (61, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (23, 256): 8, (31, 240): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 138 cut [(31, '1/4'), (240, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (23, 256): 8, (31, 240): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 140 cut [(60, '1/4'), (61, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (23, 256): 8, (31, 240): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 143 cut [(31, '1/4'), (240, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (23, 256): 8, (31, 240): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 129 cut [(60, '1/4'), (61, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (31, 240): 8, (23, 256): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 130 cut [(23, '1/4'), (256, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (31, 240): 8, (23, 256): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 132 cut [(60, '1/4'), (61, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (31, 240): 8, (23, 256): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 135 cut [(23, '1/4'), (256, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 6, (31, 240): 8, (23, 256): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 121 cut [(60, '1/4'), (63, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 5, (31, 23): 5, (240, 256): 7, (61, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 122 cut [(31, '1/4'), (23, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 5, (31, 23): 5, (240, 256): 7, (61, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 124 cut [(60, '1/4'), (63, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 5, (31, 23): 5, (240, 256): 7, (61, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 127 cut [(31, '1/4'), (23, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 5, (31, 23): 5, (240, 256): 7, (61, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 145 cut [(60, '1/4'), (63, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 5, (31, 23): 7, (240, 256): 5, (61, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 146 cut [(240, '1/4'), (256, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 5, (31, 23): 7, (240, 256): 5, (61, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 148 cut [(60, '1/4'), (63, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 5, (31, 23): 7, (240, 256): 5, (61, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 151 cut [(240, '1/4'), (256, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 5, (31, 23): 7, (240, 256): 5, (61, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 177 cut [(60, '1/4'), (224, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 7, (31, 256): 5, (240, 23): 7, (60, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 178 cut [(31, '1/4'), (256, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 7, (31, 256): 5, (240, 23): 7, (60, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 180 cut [(60, '1/4'), (224, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 7, (31, 256): 5, (240, 23): 7, (60, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 183 cut [(31, '1/4'), (256, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 7, (31, 256): 5, (240, 23): 7, (60, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 217 cut [(60, '1/4'), (224, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 7, (31, 256): 7, (240, 23): 5, (60, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 218 cut [(240, '1/4'), (23, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 7, (31, 256): 7, (240, 23): 5, (60, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 220 cut [(60, '1/4'), (224, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 7, (31, 256): 7, (240, 23): 5, (60, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 223 cut [(240, '1/4'), (23, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 7, (31, 256): 7, (240, 23): 5, (60, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 113 cut [(61, '1/4'), (63, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 5, (31, 256): 5, (240, 23): 7, (60, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 114 cut [(31, '1/4'), (256, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 5, (31, 256): 5, (240, 23): 7, (60, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 116 cut [(61, '1/4'), (63, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 5, (31, 256): 5, (240, 23): 7, (60, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 119 cut [(31, '1/4'), (256, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 5, (31, 256): 5, (240, 23): 7, (60, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 153 cut [(61, '1/4'), (63, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 5, (31, 256): 7, (240, 23): 5, (60, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 154 cut [(240, '1/4'), (23, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 5, (31, 256): 7, (240, 23): 5, (60, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 156 cut [(61, '1/4'), (63, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 5, (31, 256): 7, (240, 23): 5, (60, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 159 cut [(240, '1/4'), (23, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(61, 63): 5, (31, 256): 7, (240, 23): 5, (60, 224): 7} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 185 cut [(61, '1/4'), (224, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 7, (31, 23): 5, (240, 256): 7, (61, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 186 cut [(31, '1/4'), (23, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 7, (31, 23): 5, (240, 256): 7, (61, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 188 cut [(61, '1/4'), (224, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 7, (31, 23): 5, (240, 256): 7, (61, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 191 cut [(31, '1/4'), (23, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 7, (31, 23): 5, (240, 256): 7, (61, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 209 cut [(61, '1/4'), (224, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 7, (31, 23): 7, (240, 256): 5, (61, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 210 cut [(240, '1/4'), (256, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 7, (31, 23): 7, (240, 256): 5, (61, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 212 cut [(61, '1/4'), (224, '-1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 7, (31, 23): 7, (240, 256): 5, (61, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 215 cut [(240, '1/4'), (256, '1/4')] | outside targets sharing a chain frame: 24 shared-frame dims {1: 24} | with nonzero group packet content post-cut: 24 | their cut-centre sets {(60, 63): 7, (31, 23): 7, (240, 256): 5, (61, 224): 5} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 201 cut [(63, '1/4'), (224, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 8, (31, 240): 6, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 202 cut [(31, '1/4'), (240, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 8, (31, 240): 6, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 204 cut [(63, '1/4'), (224, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 8, (31, 240): 6, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 207 cut [(31, '1/4'), (240, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 8, (31, 240): 6, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 193 cut [(63, '1/4'), (224, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 6, (31, 240): 8, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 194 cut [(23, '1/4'), (256, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 6, (31, 240): 8, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 196 cut [(63, '1/4'), (224, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 6, (31, 240): 8, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 199 cut [(23, '1/4'), (256, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 6, (31, 240): 8, (63, 224): 6} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 161 cut [(31, '1/4'), (240, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 6, (31, 240): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 162 cut [(23, '1/4'), (256, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 6, (31, 240): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 164 cut [(31, '1/4'), (240, '-1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 6, (31, 240): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True
+target 167 cut [(23, '1/4'), (256, '1/4')] | outside targets sharing a chain frame: 28 shared-frame dims {1: 28} | with nonzero group packet content post-cut: 28 | their cut-centre sets {(60, 61): 8, (23, 256): 6, (31, 240): 6, (63, 224): 8} | t in span of sharers (incl. group mates)? True (rank 8 )
+     t in span of OUTSIDE sharers only? True

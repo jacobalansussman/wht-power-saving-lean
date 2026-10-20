@@ -1,0 +1,31 @@
+cert: m=6 k=3 alpha=0 p=2147483629 (prime: yes) I^2=-1: yes, 1919 distinct well-formed rows/cols: yes
+det mod p of the 1919 x 1919 minor of M_0 = 236082985
+RESULT: PASS  -> rank M_0 over Q(i) >= 1919
+Tue Oct 13 21:38:15 EDT 2026
+cert: m=6 k=3 alpha=1 p=2147483629 (prime: yes) I^2=-1: yes, 1917 distinct well-formed rows/cols: yes
+det mod p of the 1917 x 1917 minor of M_1 = 213392726
+RESULT: PASS  -> rank M_1 over Q(i) >= 1917
+Tue Oct 13 21:45:36 EDT 2026
+cert: m=6 k=3 alpha=3 p=2147483629 (prime: yes) I^2=-1: yes, 1917 distinct well-formed rows/cols: yes
+det mod p of the 1917 x 1917 minor of M_3 = 1647135842
+RESULT: PASS  -> rank M_3 over Q(i) >= 1917
+Tue Oct 13 21:52:56 EDT 2026
+cert: m=6 k=3 alpha=7 p=2147483629 (prime: yes) I^2=-1: yes, 1920 distinct well-formed rows/cols: yes
+det mod p of the 1920 x 1920 minor of M_7 = 890936609
+RESULT: PASS  -> rank M_7 over Q(i) >= 1920
+Tue Oct 13 22:00:02 EDT 2026
+cert: m=6 k=3 alpha=15 p=2147483629 (prime: yes) I^2=-1: yes, 1919 distinct well-formed rows/cols: yes
+det mod p of the 1919 x 1919 minor of M_15 = 1203151689
+RESULT: PASS  -> rank M_15 over Q(i) >= 1919
+Tue Oct 13 22:08:39 EDT 2026
+cert: m=6 k=3 alpha=31 p=2147483629 (prime: yes) I^2=-1: yes, 1920 distinct well-formed rows/cols: yes
+det mod p of the 1920 x 1920 minor of M_31 = 890936609
+RESULT: PASS  -> rank M_31 over Q(i) >= 1920
+Tue Oct 13 22:17:18 EDT 2026
+cert: m=6 k=3 alpha=63 p=2147483629 (prime: yes) I^2=-1: yes, 1950 distinct well-formed rows/cols: yes
+det mod p of the 1950 x 1950 minor of M_63 = 1216028313
+RESULT: PASS  -> rank M_63 over Q(i) >= 1950
+Tue Oct 13 22:26:10 EDT 2026
+cert: m=5 k=4 alpha=0 p=2147483629 (prime: yes) I^2=-1: yes, 4328 distinct well-formed rows/cols: yes
+det mod p of the 4328 x 4328 minor of M_0 = 959517141
+RESULT: PASS  -> rank M_0 over Q(i) >= 4328

@@ -1,0 +1,98 @@
+⚠ [1018/1263] Replayed Work.Mixed.Flow
+warning: Work/Mixed/Flow.lean:175:15: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.mem_filter, Finset.Nat.mem_antidiagonalTuple] at hb ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Work/Mixed/Flow.lean:178:15: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.mem_filter, Finset.Nat.mem_antidiagonalTuple] at ha ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Work/Mixed/Flow.lean:205:8: `Finset.prod_le_prod'` has been deprecated: Use `Finset.prod_le_prod` instead
+warning: Work/Mixed/Flow.lean:259:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:275:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:275:20: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:293:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:293:30: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:295:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:295:45: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:296:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:296:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:415:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+⚠ [1019/1263] Replayed Work.MixedCost.Bill
+warning: Work/MixedCost/Bill.lean:164:72: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:295:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Work/MixedCost/Bill.lean:314:65: Variable name `hlam` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hlam
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Work/MixedCost/Bill.lean:332:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:332:19: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:334:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:357:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:364:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:364:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:364:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:366:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Work/MixedCost/Bill.lean:518:42: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:519:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:529:42: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:530:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:526:31: Variable name `hn0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Work/MixedCost/Bill.lean:537:0: 'OAI.PowerSaving.MX.Rule.bill' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Bill.lean:538:0: 'OAI.PowerSaving.MX.Rule.kids_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Bill.lean:539:0: 'OAI.PowerSaving.MX.Rule.kids_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Bill.lean:540:0: 'OAI.PowerSaving.MX.Rule.allotM_jobRec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Bill.lean:541:0: 'OAI.PowerSaving.MX.Rule.allotM_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1801/1802] Replayed Work.MixedCost.Poly
+info: Work/MixedCost/Poly.lean:69:0: 'OAI.PowerSaving.MX.succ_pow_le_two_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Poly.lean:70:0: 'OAI.PowerSaving.MX.Rule.Nsrc_poly_ex' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9016/9017] Replayed Work.Scratch.Engine
+info: Work/Scratch/Engine.lean:1522:0: 'OAI.PowerSaving.RAM.recurse_runS' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1523:0: 'OAI.PowerSaving.RAM.engine_all_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1524:0: 'OAI.PowerSaving.RAM.engine_program_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1525:0: 'OAI.PowerSaving.RAM.hills_program_via_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1526:0: 'OAI.PowerSaving.RAM.LiveKernel.iff_erase_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1527:0: 'OAI.PowerSaving.RAM.no_erase_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1528:0: 'OAI.PowerSaving.RAM.Route.gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1529:0: 'OAI.PowerSaving.RAM.LiveKernel.of_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1530:0: 'OAI.PowerSaving.RAM.endpoint_reversible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1531:0: 'OAI.PowerSaving.RAM.endpoint_by_copy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1532:0: 'OAI.PowerSaving.two_stage_rate_28' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1533:0: 'OAI.PowerSaving.two_stage_rate_33' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1534:0: 'OAI.PowerSaving.RAM.two_stage_h24_if_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1535:0: 'OAI.PowerSaving.RAM.allotC_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9017/9017] Replayed Work.MixedCost.SeamCost
+warning: Work/MixedCost/SeamCost.lean:48:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+info: Work/MixedCost/SeamCost.lean:144:0: 'OAI.PowerSaving.MX.Rule.seam_dom' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9017 jobs).

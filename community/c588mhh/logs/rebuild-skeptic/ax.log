@@ -1,0 +1,6 @@
+OAI.PowerSaving.transform_mainC588MHH : OAI.PowerSaving.DFTGoalC588MHH
+def OAI.PowerSaving.decimalExponentC588MHH : ℝ :=
+1 - 15699305 / 10 ^ 10
+'OAI.PowerSaving.transform_mainC588MHH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainC588MHH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.engine_of_ginv_host' depends on axioms: [propext, Classical.choice, Quot.sound]

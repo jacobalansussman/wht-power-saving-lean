@@ -1,0 +1,13 @@
+E7 roots: 126
+radical of the mod-2 form on L/2L: [(1, 0, 1, 0, 1, 0, 0)]
+D1: 126 roots -> 63 nonzero vectors of F_2^6, 2 roots each; omega = <,> mod 2 well defined: OK
+7A1 frames: 135
+Lagrangians: 135  frames give 135 distinct Lagrangians; equal sets: True
+D2: 135 frames <-> 135 Lagrangians (frame lines = the 7 nonzero vectors): OK
+D3: non-frame roots = (+-b_i+-b_j+-b_k+-b_l)/2 on the 7 complements of the lines of a Fano plane,
+    all 16 sign patterns each (7*16 = 112 roots); paid reflection = I - v v^T/2, v in {0,+-1}^7 weight 4: OK
+    Fano automorphisms: 168 -> frame stabiliser order 2^7 * 168 = 21504 (Sp(6,2) parabolic P = 10752 = half of it, since -1 is central)
+D4: (lines, closed, rank) -> number of forms: {(28, True, 7): 36, (36, True, 6): 28}
+    36 forms with 28 lines (A7: 28 positive roots, rank 7), 28 forms with 36 lines (E6: 36 positive roots, rank 6): OK
+D5: product of the 7 reflections of a frame acts as -1 on the E7 space (checked on 5 frames): OK
+ALL CHECKS PASSED

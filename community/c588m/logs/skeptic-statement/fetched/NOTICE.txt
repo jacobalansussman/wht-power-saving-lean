@@ -1,0 +1,13 @@
+Notice (Apache License 2.0, section 4(b)) for the two files Work/FourierC588M/UniformFourierChallenge.lean and
+Work/FourierC588MNeg/UniformFourierChallenge.lean in this folder.
+
+They are the copies of the statement files that the independent agent fetched from the build machine and
+compared, kept as it fetched them. Each is a modified copy of lean/ComparatorChallenges/UniformFourier.lean of
+github.com/openai/math (commit fd4aeeb, Apache License 2.0). Changed, exactly:
+  1. the exponent `1 - 1/(10^(13:ℕ))` of decimalExponent is replaced by `1 - 13552606/(10^(10:ℕ))` (in the
+     folder FourierC588MNeg: `1 - 13552607/(10^(10:ℕ))`, one unit stronger, the negative control);
+  2. seven names have the suffix `C588M`: decimalExponent, decimalTime, TimeBounds, DFTGoal, ConvGoal,
+     transform_main, convolution_main.
+Every other line is OpenAI's. They are the files that were compiled and checked (sha256 db7fa3053f2f61ad...
+and 1fec1cc82eb1b662...), byte-for-byte the files of community/c588m/overlay/ at the same paths once the
+notice on their lines 3 to 12 is removed. tools/Compare.lean here is this repository's file.

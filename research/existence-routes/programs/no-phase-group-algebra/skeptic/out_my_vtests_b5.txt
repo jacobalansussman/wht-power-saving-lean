@@ -1,0 +1,4 @@
+m=5 n=31 (power 1, poly 0b100101) W=8 M=31: deletion failures 0 []; min slack 0; tight forms 0; max tight clique 0; bound Wn = 248 -> not excluded
+m=5 n=31 (power 1, poly 0b100101) W=7 M=31: deletion failures 0 []; min slack 0; tight forms 0; max tight clique 0; bound Wn = 217 -> not excluded
+m=5 n=1 (power 0, poly 0b100101) W=8 M=31: deletion failures 0 []; min slack 0; tight forms 240; max tight clique 31; bound Wn = 8 -> EXCLUDED (clique)
+m=5 n=31 (power 1, poly 0b100101) W=8 M=40: deletion failures 0 []; min slack 0; tight forms 0; max tight clique 0; bound Wn = 248 -> not excluded

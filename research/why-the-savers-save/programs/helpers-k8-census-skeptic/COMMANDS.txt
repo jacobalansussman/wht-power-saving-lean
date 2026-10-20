@@ -1,0 +1,15 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+v-k8-0 (skeptic of k8-pairs), 13 Oct 2026 ~19:35-20:20Z.  All python3 -I; VP = ../../../wht33/fatlabels/venv/bin/python3 (scipy).
+clean/ = fresh copies: pricer.py (../bound-check/m-anatomy, cmp-identical to k8-pairs'), pm.py + a0_demand.json + u8_blocks.json (../d-pair-market).
+data/  = k8 CANONICAL-WORD (sha256 16bc0ebb...) and U8 CANONICAL-WORD (387a2266...).
+runs/hub1042_*.json = hub research/community-frontier1042-audit/{ASSEMBLY,INDEPENDENT-T16,RESULT}.json via gh api (read-only).
+(1) control: python3 -I clean/pricer.py --profile '{"1":349577,"2":60193,"3":62608,"4":20448,"5":11808,"7":3,"8":1152,"16":47,"48":4850}' --m 73 --W 14336 --deficit 5120 -> runs/control1042.out (exact = hub ASSEMBLY)
+(2) demand: python3 -I tools/a0_demand.py data/k8-CANONICAL-WORD.json.gz runs/k8_demand_mine.json  (ports & demand == d-pair-market a0_demand.json)
+(3) census: python3 -I tools/mycensus.py data/{k8,u8}-CANONICAL-WORD.json.gz clean/u8_blocks.json runs/census_{k8,u8}.json
+(4) M copies: python3 -I tools/mcopy_reads.py data/{k8,u8}-CANONICAL-WORD.json.gz clean/u8_blocks.json -> runs/mcopy_reads.out
+(5) model: runs/run_mine.sh (under a memory cap) -> runs/pm/b{1,6,13}_{fb8,fb0,facesP,facesALL}.json
+(6) gh read-only: runs/prs_all.json; PR1148 (tomdif) research/k8-eight-ends RECIPE/README/PROOF -> runs/pr1148_*

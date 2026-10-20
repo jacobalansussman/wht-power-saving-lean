@@ -1,0 +1,3 @@
+cert: m=4 k=8 z=1,2 p=2147483629 (prime yes) I^2=-1 yes size 3399 well-formed yes
+components: max size 4, sign inconsistencies 0, exact membership failures 0; det mod p of the 3399 x 3399 minor = 459746501
+RESULT: PASS -> dim(D1 Z12 + D2 Z12) >= 16 x 3399 = 54384, f(dir 1 dir 2) <= 102960 - 54384 = 48576

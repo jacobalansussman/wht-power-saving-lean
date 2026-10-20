@@ -1,0 +1,9 @@
+The kernel program is `SeamC588M.engine_C588Mx` (Work/FourierC588M/Seam.lean of the C588M package): the
+certificate `GXD.C588M` of Jeremy Kothe's #588 circuit (CrocSwap/integer-mult-bounds hub) as Ryan Shea
+converted it to Lean (his conversion pipeline, generators and `complex588` instantiation), with Shea's 112
+source copies removed: the sources are written in place and restored, which the mutable-sources engine
+`Work/XMut/*` (Jacob Sussman's Lean proof, after Zhihao Chen's (jacklightChen) written scalar-interface
+argument on hub #425) allows.  Bank geometry: Dugongue (#401) and jacklightChen (#377); gauged #401 Lean
+extension `GX.engine_of_ginv_401` and Fourier chain templates: Nil Mamano.  Everything is checked in Lean
+through the engine and checkers of Jacob Sussman's wht-power-saving-lean, at the exponent
+`1 - 13552607/10^10` (annealed bank table).

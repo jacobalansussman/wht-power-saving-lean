@@ -1,0 +1,18 @@
+Lagrangians 2295 37s
+neighbours of K at d3: 15 ; content cells t: 7  37s
+F choice 3, content cell #4: |G| = 10752, dim A = 184, G-fixed slots [4, 8] (t slot 4), input distances of fixed [2, 3]  41s
+G-orbit sizes on the 30 slots: [28, 1, 1] ; kernel slot 29 in orbit of size 28
+order-7 elements 3072 ; G-classes 2 [1536, 1536]
+  lam1 19 class 0 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 4.61e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 1.9e-14
+  lam1 19 class 0 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+  lam1 19 class 1 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 3.40e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 1.3e-14
+  lam1 19 class 1 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+  lam1 21 class 0 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 4.55e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 2.1e-14
+  lam1 21 class 0 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+  lam1 21 class 1 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 2.81e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 1.2e-14
+  lam1 21 class 1 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+  lam1 29 class 0 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 4.34e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 2.1e-14
+  lam1 29 class 0 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+  lam1 29 class 1 chars [1, 2, 3, 4, 5, 6]: eqs 180 unknowns 208 rank 180 residual 3.64e-14 | control Y=I: fails 6/6 | control Y random in A: fails 6/6 | solved Y re-check worst 1.5e-14
+  lam1 29 class 1 chars [0, 1, 2, 3, 4, 5, 6]: eqs 210 unknowns 212 rank 205 residual 4.56e-01
+done 42s

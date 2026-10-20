@@ -1,0 +1,2 @@
+m=2: 3 distinct forms (a.z)(b.z) with a^T S b = 1; weights {1}; parities on S {1}; min decomposition 3 rank-ones; direction cover {1}; deletion bound per array = nQ/cover = 3.0 vs (2^m-1)/2^(m-2) = 3.0
+m=4: 60 distinct forms (a.z)(b.z) with a^T S b = 1; weights {4}; parities on S {1}; min decomposition 5 rank-ones; direction cover {16}; deletion bound per array = nQ/cover = 3.75 vs (2^m-1)/2^(m-2) = 3.75

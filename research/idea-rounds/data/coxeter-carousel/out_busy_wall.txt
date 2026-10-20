@@ -1,0 +1,14 @@
+# (1) Hankel rank of random shadows never exceeds r
+r=2 p=1 delta=4: max Hankel rank over 200 random shadows = 2 (<= r)
+r=3 p=1 delta=5: max Hankel rank over 200 random shadows = 3 (<= r)
+r=3 p=2 delta=3: max Hankel rank over 200 random shadows = 3 (<= r)
+r=5 p=2 delta=4: max Hankel rank over 200 random shadows = 5 (<= r)
+# (2) residual of the target pattern (a_k = 0 for k < delta, a_delta = I_p), best of 30 starts
+p=1 delta=2 r=2 (need 3): residual 2.59e-06
+p=1 delta=2 r=3 (need 3): residual 9.68e-12
+p=1 delta=3 r=3 (need 4): residual 2.03e-06
+p=1 delta=3 r=4 (need 4): residual 1.38e-09
+p=2 delta=1 r=3 (need 4): residual 3.67e-06
+p=2 delta=1 r=4 (need 4): residual 2.05e-09
+p=2 delta=2 r=5 (need 6): residual 4.45e-06
+p=2 delta=2 r=6 (need 6): residual 3.09e-09

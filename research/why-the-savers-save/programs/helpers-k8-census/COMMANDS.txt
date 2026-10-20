@@ -1,0 +1,25 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+k8-pairs, 13 Oct 2026 (18:11-~19:00Z).  All python3 -I unless VP; VP = ../../../wht33/fatlabels/venv/bin/python3 (scipy 1.13.1).
+hub/ = read-only blobless sparse clone of CrocSwap/integer-mult-bounds main ba82555 (after the 18:05Z merges of #1005 #1018 #1022 #1028 #1030 #1031 #1042).
+dl1042/ = data extracted from hub research/community-frontier1042-audit/selected-replay.tar.gz:
+   slots/local/FULL-WORD.json.gz (content sha256 c2b294300760e1fd..., = #1018's seven-slot k8 word, = PR1090's K8-SLOT-WORD)
+   slots/local/CANONICAL-WORD.json.gz (file sha256 16bc0ebb..., the canonical word INDEPENDENT-T16.json pins)
+(1) control:  python3 -I pricer.py --profile '{"1":349577,"2":60193,"3":62608,"4":20448,"5":11808,"7":3,"8":1152,"16":47,"48":4850}' --m 73 --W 14336 --deficit 5120  -> control1042.json
+    (profile/W/deficit from hub INDEPENDENT-T16.json: live 14336, deficit 5120, 144 calls x local {1:2412,2:418,3:432,4:142,5:82,8:8} + idle)
+(2) census:   python3 -I census.py dl1042/slots/local/CANONICAL-WORD.json.gz k8_census.json        (= u-helpers-hub/u8_census.py)
+              python3 -I tools/planes_cmp.py U8CANON K8CANON u8_blocks.json planes_cmp.json       (rank-3 frames visited, U8 vs k8)
+              python3 -I tools/block_frames.py WORD u8_blocks.json bf_{u8,k8}.json                (in-block helpers per block)
+              python3 -I tools/mcopy.py WORD u8_blocks.json mc_{u8,k8}.json                       (the 112 non-plane / M-copy helpers)
+              python3 -I tools/target_stops.py WORD u8_blocks.json ts_{u8,k8}.json                (what each target's rank-2 stop is spent on)
+              python3 -I tools/deliveries.py WORD u8_blocks.json k8_demand.json dlv_{u8,k8}.json  (how each pm need is delivered)
+              python3 -I tools/cell_needs.py WORD u8_blocks.json k8_demand.json cellneeds_{u8,k8}.json (needs served by leaver cells)
+              python3 -I a0_demand.py K8CANON k8_demand.json   (== d-pair-market a0_demand.json: ports and demand identical)
+              python3 -I map/map_raw_canon.py K8FULL K8CANON map/k8_raw2canon_regs.json   (pm-build's map, output path as argument)
+   U8CANON = ../../bound-check/k-word/data/u8-native/local/CANONICAL-WORD.json.gz ; K8CANON = dl1042/slots/local/CANONICAL-WORD.json.gz
+(3) MILP:     ./run_pm.sh  (under a memory cap) : d-pair-market pm.py unchanged, all 14 blocks, OPTS=P,LL,LF,H FB=8 FACELOW=0 -> own/ ; FB0/FB4 for blocks 2,7
+              ./run_pmk.sh (under a memory cap) : pmk.py = pm.py + DROP (cell-served needs removed) + NOLOW (targets whose low frame a cell uses) -> kaware/
+              python3 -I price_k8.py -> price_k8.json  (what-if prices on the #1042 control, N = 32/36/40/56 fewer helpers per call)

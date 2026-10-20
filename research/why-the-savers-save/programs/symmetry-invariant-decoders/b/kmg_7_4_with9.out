@@ -1,0 +1,8 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 16:01:51
+[heavy.sh] got slot heavy-3 16:02:20
+flats by dim: {1: 112, 4: 1557690, 7: 43173, 8: 510} 1s
+orbit representatives (size, dim) -> count: {'(1, 4)': 1, '(1, 7)': 4, '(1, 8)': 6, '(1, 9)': 1, '(7, 1)': 16, '(7, 4)': 222527, '(7, 7)': 6167, '(7, 8)': 72} 7s
+big reps 222527 small orbit pieces within budget 35: 28 Counter({(7, 1): 16, (1, 8): 6, (1, 7): 4, (1, 4): 1, (1, 9): 1})
+small combos: 4482
+second orbit type None reps 1
+n 7 big (size 7, dim 4) second None cost <= 63 K >= 9: {'pair prefilter pass': 0} survivors 0  15s

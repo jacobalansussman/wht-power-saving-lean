@@ -1,0 +1,309 @@
+{
+ "date": "2026-10-19",
+ "agent": "g-heads",
+ "round": "wht45/lever",
+ "gate": "G0 (rl-plan section 6) in OUR lowering",
+ "verdict": "PASS on #3945 and #3815: 57,312 literal rank-48 heads survive in our lowering (ok = at least one; the half cut has no break-even)",
+ "lowering": "hub native chain re-run on a Linux machine (run_native.py, all 5 stages PASS) -> tools/lower_b.py gcert/1b (warps, lifted targets), no copies, exit-route residuals; our hosted nine-stage network (h-L3-build Work/XHost, parsed from Lean; gates from Shea Bridge401/Gates.lean) with the staged544 ORDER / DISPATCH / PLAN / TEMPLATE / FILL as data, each replica run cut into segments at its call times",
+ "pr3945": {
+  "ok": true,
+  "heads": 57312,
+  "per_child": {
+   "8": [
+    "A4",
+    "x",
+    48,
+    "HEAD-literal",
+    28672
+   ],
+   "10": [
+    "A4",
+    "y",
+    48,
+    "HEAD-literal",
+    28640
+   ],
+   "12": [
+    "F1",
+    "x",
+    48,
+    "neither",
+    40320
+   ],
+   "13": [
+    "F1",
+    "y",
+    48,
+    "neither",
+    40320
+   ]
+  },
+  "remainder_profile": {
+   "3": 23328,
+   "5": 4320,
+   "48": 137952
+  },
+  "totals_by_class": {
+   "HEAD-literal": 57312,
+   "neither": 108288
+  },
+  "roles": 1321920,
+  "cross_replica_roles": 1152628,
+  "violations": {},
+  "loads_over_rank": 0,
+  "one_use_per_call_and_role": true,
+  "call_blocks": {
+   "max_rank": 8,
+   "all_le_8": true,
+   "global_profile": {
+    "1": 8041680,
+    "2": 2306880,
+    "3": 729648,
+    "4": 353160,
+    "5": 69120,
+    "8": 25920,
+    "48": 137952
+   },
+   "global_profile_equals_hub": true
+  },
+  "b_ours_hub_engine": "0.001730663236534549309146",
+  "b_reproduces_hub_digit_for_digit": true,
+  "lever_half_cut_b": "1.7501109246e-03",
+  "lever_half_cut_over_uniform_pct": "+1.124",
+  "full_cut_b": "1.7307679642e-03",
+  "full_cut_breakeven_heads": 57262,
+  "controls": {
+   "negative_gateA4_before_climbA4": {
+    "neither": 137952
+   },
+   "positive_without_gateC2": {
+    "HEAD-literal": 57312,
+    "TAIL-literal": 80640
+   }
+  },
+  "words": {
+   "base": {
+    "gcert": "data/gcert/S3945-base.gcert1b.json.gz",
+    "gcert_sha256": "c453b298f77a1a8cac0cff3d05989bc4c98f9e9ef8bab26186c3e8a721d90d54",
+    "canonical_content_sha256": "938f0924e78233bd3c21990efb3860874825bc522d6bfaaffc7d82d2a608bc43",
+    "hist": {
+     "1": 2482,
+     "2": 712,
+     "3": 218,
+     "4": 109,
+     "5": 20,
+     "8": 8
+    },
+    "hist_equals_hub_native_local_profile": true,
+    "exit_R": true,
+    "exit_C": true,
+    "hid": true,
+    "hy": true,
+    "dirt_check": true,
+    "residuals_equal_hub_widths": true,
+    "residual_hist": {
+     "5": 28,
+     "6": 18,
+     "7": 53,
+     "8": 96,
+     "9": 213
+    },
+    "mutants_all_rejected": true
+   },
+   "extra": {
+    "gcert": "data/gcert/S3945-extra.gcert1b.json.gz",
+    "gcert_sha256": "1fae6030e4873b5f59829dc6ef7601124464516c1d0aa34f757a7ead0eef0f62",
+    "canonical_content_sha256": "6df1ec686b7ea39225a7bc2d87639876ef65772f2d8852f40b4ebb979efd6e5a",
+    "hist": {
+     "1": 2482,
+     "2": 712,
+     "3": 218,
+     "4": 109,
+     "5": 20,
+     "8": 8
+    },
+    "hist_equals_hub_native_local_profile": true,
+    "exit_R": true,
+    "exit_C": true,
+    "hid": true,
+    "hy": true,
+    "dirt_check": true,
+    "residuals_equal_hub_widths": true,
+    "residual_hist": {
+     "5": 28,
+     "6": 18,
+     "7": 53,
+     "8": 96,
+     "9": 213
+    },
+    "mutants_all_rejected": true
+   }
+  }
+ },
+ "pr3815": {
+  "ok": true,
+  "heads": 57312,
+  "per_child": {
+   "8": [
+    "A4",
+    "x",
+    48,
+    "HEAD-literal",
+    28672
+   ],
+   "10": [
+    "A4",
+    "y",
+    48,
+    "HEAD-literal",
+    28640
+   ],
+   "12": [
+    "F1",
+    "x",
+    48,
+    "neither",
+    40320
+   ],
+   "13": [
+    "F1",
+    "y",
+    48,
+    "neither",
+    40320
+   ]
+  },
+  "remainder_profile": {
+   "1": 84240,
+   "3": 23328,
+   "5": 4320,
+   "48": 137952
+  },
+  "totals_by_class": {
+   "HEAD-literal": 57312,
+   "neither": 192528
+  },
+  "roles": 1321920,
+  "cross_replica_roles": 1152628,
+  "violations": {},
+  "loads_over_rank": 0,
+  "one_use_per_call_and_role": true,
+  "call_blocks": {
+   "max_rank": 8,
+   "all_le_8": true,
+   "global_profile": {
+    "1": 7989840,
+    "2": 2349000,
+    "3": 749088,
+    "4": 330480,
+    "5": 69120,
+    "8": 25920,
+    "48": 137952
+   },
+   "global_profile_equals_hub": true
+  },
+  "b_ours_hub_engine": "0.00173057843726624681874",
+  "b_reproduces_hub_digit_for_digit": true,
+  "lever_half_cut_b": "1.7500242253e-03",
+  "lever_half_cut_over_uniform_pct": "+1.124",
+  "full_cut_b": "1.7306831569e-03",
+  "full_cut_breakeven_heads": 57262,
+  "controls": {
+   "negative_gateA4_before_climbA4": {
+    "neither": 137952
+   },
+   "positive_without_gateC2": {
+    "HEAD-literal": 57312,
+    "TAIL-literal": 80640
+   }
+  },
+  "words": {
+   "base": {
+    "gcert": "data/gcert/S3815-base.gcert1b.json.gz",
+    "gcert_sha256": "09c8433ce591138650049d535118c9473eb0089aabe950cff7c3b9721547a2f3",
+    "canonical_content_sha256": "0db11248b311e5ae359f246621f945fa62d1a95a21c2634a14689c01fe042aa1",
+    "hist": {
+     "1": 2440,
+     "2": 725,
+     "3": 224,
+     "4": 102,
+     "5": 20,
+     "8": 8
+    },
+    "hist_equals_hub_native_local_profile": true,
+    "exit_R": true,
+    "exit_C": true,
+    "hid": true,
+    "hy": true,
+    "dirt_check": true,
+    "residuals_equal_hub_widths": true,
+    "residual_hist": {
+     "4": 26,
+     "5": 2,
+     "6": 18,
+     "7": 53,
+     "8": 96,
+     "9": 213
+    },
+    "mutants_all_rejected": true
+   },
+   "extra": {
+    "gcert": "data/gcert/S3815-extra.gcert1b.json.gz",
+    "gcert_sha256": "d37cda4e3426ad52d5c89402c27f6c547ffcaca7aa2ac68eecd6e32eba4a3817",
+    "canonical_content_sha256": "a82077d5c0245d671c06f49132f3bf4f66c856fd821e9fccb42febef0130fa7c",
+    "hist": {
+     "1": 2440,
+     "2": 725,
+     "3": 224,
+     "4": 102,
+     "5": 20,
+     "8": 8
+    },
+    "hist_equals_hub_native_local_profile": true,
+    "exit_R": true,
+    "exit_C": true,
+    "hid": true,
+    "hy": true,
+    "dirt_check": true,
+    "residuals_equal_hub_widths": true,
+    "residual_hist": {
+     "4": 26,
+     "5": 2,
+     "6": 18,
+     "7": 53,
+     "8": 96,
+     "9": 213
+    },
+    "mutants_all_rejected": true
+   }
+  }
+ },
+ "t74_regression_control": {
+  "heads": 11010,
+  "classes": [
+   [
+    8,
+    "HEAD-literal",
+    6150
+   ],
+   [
+    10,
+    "HEAD-literal",
+    4860
+   ],
+   [
+    12,
+    "neither",
+    6672
+   ],
+   [
+    13,
+    "neither",
+    5066
+   ]
+  ],
+  "equals_lg_g0": true
+ },
+ "hub_controller_count_this_morning": 57312,
+ "our_count_equals_hub_controller": true
+}

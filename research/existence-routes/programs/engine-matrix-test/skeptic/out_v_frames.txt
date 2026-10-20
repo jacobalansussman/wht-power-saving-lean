@@ -1,0 +1,36 @@
+m=2: image of dir e1 == transvection T_(e1,0): True ; image of K == (x,b)->(x+b,b): True
+   Lagrangians by brute force: 15 (prod(2^j+1) = 15); L0 = Z-type labels is one: True
+   every free letter's image fixes L0: True
+   t maps L0 to distance 1, K maps L0 to distance 2
+   P-orbits on frames: 3 (m+1 = 3); orbits are the distance classes: True; sizes [1, 6, 8]
+   E M(t) E and E M(K) E commute: True
+   joint eigenvalues (omega_j(1), omega_j(m)): [(np.float64(1.0), np.float64(1.0)), (np.float64(0.166667), np.float64(-0.25)), (np.float64(-0.5), np.float64(0.25))]
+   c_1/mu_1 = 1.5000000000 (claimed 2 - 2^(1-m) = 1.5000000000); c_m/mu_m = 0.5000000000 (claimed (2/3)(1-(-1/2)^m) = 0.5000000000)
+   rank of [mu; c] over characters j>=1: 2 (2 => not proportional, Theorem E2(ii) applies)
+v_frames.py:52: RuntimeWarning: divide by zero encountered in matmul
+  c = np.trace(Pm.conj().T @ Q) / N
+v_frames.py:52: RuntimeWarning: overflow encountered in matmul
+  c = np.trace(Pm.conj().T @ Q) / N
+v_frames.py:52: RuntimeWarning: invalid value encountered in matmul
+  c = np.trace(Pm.conj().T @ Q) / N
+v_frames.py:146: RuntimeWarning: divide by zero encountered in matmul
+  Ht = Pr.T @ Mperm(pt) @ Ind / 1.0   # not used directly
+v_frames.py:146: RuntimeWarning: overflow encountered in matmul
+  Ht = Pr.T @ Mperm(pt) @ Ind / 1.0   # not used directly
+v_frames.py:146: RuntimeWarning: invalid value encountered in matmul
+  Ht = Pr.T @ Mperm(pt) @ Ind / 1.0   # not used directly
+v_frames.py:149: RuntimeWarning: divide by zero encountered in matmul
+  Mg = Mperm(p) @ Ind
+v_frames.py:149: RuntimeWarning: overflow encountered in matmul
+  Mg = Mperm(p) @ Ind
+v_frames.py:149: RuntimeWarning: invalid value encountered in matmul
+  Mg = Mperm(p) @ Ind
+m=3: image of dir e1 == transvection T_(e1,0): True ; image of K == (x,b)->(x+b,b): True
+   Lagrangians by brute force: 135 (prod(2^j+1) = 135); L0 = Z-type labels is one: True
+   every free letter's image fixes L0: True
+   t maps L0 to distance 1, K maps L0 to distance 3
+   P-orbits on frames: 4 (m+1 = 4); orbits are the distance classes: True; sizes [1, 14, 56, 64]
+   E M(t) E and E M(K) E commute: True
+   joint eigenvalues (omega_j(1), omega_j(m)): [(np.float64(1.0), np.float64(1.0)), (np.float64(0.357143), np.float64(-0.125)), (np.float64(-0.071429), np.float64(0.0625)), (np.float64(-0.5), np.float64(-0.125))]
+   c_1/mu_1 = 1.7500000000 (claimed 2 - 2^(1-m) = 1.7500000000); c_m/mu_m = 0.7500000000 (claimed (2/3)(1-(-1/2)^m) = 0.7500000000)
+   rank of [mu; c] over characters j>=1: 2 (2 => not proportional, Theorem E2(ii) applies)

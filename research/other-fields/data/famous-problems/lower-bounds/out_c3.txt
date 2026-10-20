@@ -1,0 +1,34 @@
+(a) smallest admissible max|coefficient| for size C*N*(log2 N)^(1-s), C = 1
+   s=0.00162566  log2N=20             log2 max(2,c) >=    0.5024  ->  vacuous (2 already suffices)
+   s=0.00162566  log2N=64             log2 max(2,c) >=    0.5034  ->  vacuous (2 already suffices)
+   s=0.00162566  log2N=1000           log2 max(2,c) >=    0.5056  ->  vacuous (2 already suffices)
+   s=0.00162566  log2N=1e+06          log2 max(2,c) >=    0.5114  ->  vacuous (2 already suffices)
+   s=0.00162566  log2N=1e+12          log2 max(2,c) >=    0.5230  ->  vacuous (2 already suffices)
+   s=0.00168     log2N=20             log2 max(2,c) >=    0.5025  ->  vacuous (2 already suffices)
+   s=0.00168     log2N=64             log2 max(2,c) >=    0.5035  ->  vacuous (2 already suffices)
+   s=0.00168     log2N=1000           log2 max(2,c) >=    0.5058  ->  vacuous (2 already suffices)
+   s=0.00168     log2N=1e+06          log2 max(2,c) >=    0.5117  ->  vacuous (2 already suffices)
+   s=0.00168     log2N=1e+12          log2 max(2,c) >=    0.5238  ->  vacuous (2 already suffices)
+   s=0.1         log2N=20             log2 max(2,c) >=    0.6746  ->  vacuous (2 already suffices)
+   s=0.1         log2N=64             log2 max(2,c) >=    0.7579  ->  vacuous (2 already suffices)
+   s=0.1         log2N=1000           log2 max(2,c) >=    0.9976  ->  vacuous (2 already suffices)
+   s=0.1         log2N=1e+06          log2 max(2,c) >=    1.9905  ->  c >= 2^1.99
+   s=0.1         log2N=1e+12          log2 max(2,c) >=    7.9245  ->  c >= 2^7.92
+   s=0.5         log2N=20             log2 max(2,c) >=    2.2361  ->  c >= 2^2.24
+   s=0.5         log2N=64             log2 max(2,c) >=    4.0000  ->  c >= 2^4
+   s=0.5         log2N=1000           log2 max(2,c) >=   15.8114  ->  c >= 2^15.8
+   s=0.5         log2N=1e+06          log2 max(2,c) >=  500.0000  ->  c >= 2^500
+   s=0.5         log2N=1e+12          log2 max(2,c) >= 500000.0000  ->  c >= 2^5e+05
+(b) min over d of d * N^(1 + c/d) / (N log2 N)   (c = depth-2 excess exponent)
+   c=0.5    log2N=20    best/(N log2N) = 0.9421   (e ln2 c = 0.9421)
+   c=0.5    log2N=64    best/(N log2N) = 0.9421   (e ln2 c = 0.9421)
+   c=0.5    log2N=1000  best/(N log2N) = 0.9421   (e ln2 c = 0.9421)
+   c=0.443  log2N=20    best/(N log2N) = 0.8349   (e ln2 c = 0.8347)
+   c=0.443  log2N=64    best/(N log2N) = 0.8348   (e ln2 c = 0.8347)
+   c=0.443  log2N=1000  best/(N log2N) = 0.8347   (e ln2 c = 0.8347)
+   c=0.1    log2N=20    best/(N log2N) = 0.2000   (e ln2 c = 0.1884)
+   c=0.1    log2N=64    best/(N log2N) = 0.1895   (e ln2 c = 0.1884)
+   c=0.1    log2N=1000  best/(N log2N) = 0.1884   (e ln2 c = 0.1884)
+   c=0.01   log2N=20    best/(N log2N) = 0.0574   (e ln2 c = 0.0188)
+   c=0.01   log2N=64    best/(N log2N) = 0.0243   (e ln2 c = 0.0188)
+   c=0.01   log2N=1000  best/(N log2N) = 0.0188   (e ln2 c = 0.0188)

@@ -1,0 +1,11 @@
+# (1) border check
+m=2 r=1 |lam|~1: age residual 7.1e-01; stream max error 2.6e+00
+m=2 r=1 |lam|~10: age residual 1.0e-01; stream max error 2.7e+00
+m=2 r=1 |lam|~100: age residual 1.0e-02; stream max error 2.9e+00
+m=3 r=2 |lam|~1: age residual 3.5e-01; stream max error 2.4e+00
+m=3 r=2 |lam|~10: age residual 7.6e-03; stream max error 2.6e+00
+m=3 r=2 |lam|~100: age residual 7.7e-05; stream max error 2.5e+00
+# (2) menu of Coxeter-type steps at block 3
+|P| built = 10752; all symplectic: True; distinct: 10752
+block 3: steps c = p h_1 with p in P: 10752; orders of c: {2: 80, 3: 48, 4: 624, 5: 384, 6: 2512, 7: 768, 8: 1344, 9: 768, 10: 1152, 12: 2304, 15: 768}
+block 3: Coxeter-type steps (frames L_Z -> L_X geodesic in 3 rounds): 192; their orders: {6: 24, 7: 24, 8: 24, 9: 24, 10: 24, 12: 48, 15: 24}; distinct frame paths (as column sets): 88

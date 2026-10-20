@@ -1,0 +1,11 @@
+|B| = 3072
+distinct rho(b): 1536
+rho(generators) block diagonal in U6+U4+L2: yes (so A <= BD, dim 88)
+rank of span rho(B) mod p = 88 (lower bound for dim_C A; need 88)
+R, K preserve Sym2 and L2: True
+rank R[U6,U4] = 2  rank R[U4,U6] = 2
+need per array: rank K[U6,U4] = 3  rank K[U4,U6] = 3
+also rank K[U6,U6], K[U4,U4], R blocks: 3 1 4 2
+output 0: 0 entries differ from rho(D1 D0) in block 0 (exact)
+output 1: 0 entries differ from rho(D1 D0) in block 1 (exact)
+scheme 2 in 3: 19 mixing matrices, all in A (block diagonal, A = BD); 10 nonzero; VERDICT PASS

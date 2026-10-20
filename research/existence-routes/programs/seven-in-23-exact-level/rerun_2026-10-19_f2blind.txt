@@ -1,0 +1,10 @@
+off-diagonal blocks of K(x)K: rank DS 15  SD 15  DA, AD, SA, AS norms [0.0, 0.0, 0.0, 0.0]
+D(1)(x)D(1): rank DS 8  SD 8
+D(2)(x)D(2): rank DS 8  SD 8
+after the two moves, off-diagonal blocks left (must be 0): 8.680553500448608e-16
+FRESH random inputs: max |program(x) - (K(x)K) x| / |x| = 7.80e-16
+  rep2-style residual, block D: 1.15e-30 (row rank 31)
+  rep2-style residual, block S: 7.15e-31 (row rank 135)
+  rep2-style residual, block A: 6.99e-31 (row rank 120)
+TOTAL f = 2 widened residual of the 1-array 2-move program: 2.56e-30  (0 = passes)
+control, input + move 1 only: residual 0.496 (must be > 0)

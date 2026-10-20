@@ -1,0 +1,3 @@
+info: Work/FourierL3945F/Axioms.lean:3:0: 'OAI.PowerSaving.convolution_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL3945F/Axioms.lean:4:0: 'OAI.PowerSaving.RAM.hillsL3945F_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9633 jobs).

@@ -1,0 +1,10 @@
+RESTORE START Tue Oct 13 18:55:41 UTC 2026
+copy wall=781s
+chown wall=2s
+files base=137471 target=137471
+oleans base=8548 target=8548
+du: 7601700 7601508
+d13f23b723b8a846827a245b89c10fc7d3f11612
+https://github.com/leanprover-community/mathlib4.git
+RESTORE END Tue Oct 13 19:08:56 UTC 2026
+EXIT 0

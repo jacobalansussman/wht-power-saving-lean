@@ -1,0 +1,23 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK w1 neon    n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.043e-15 PASS
+CHECK w0 neon    n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.043e-15 PASS
+reps fft64 W=2 E=0 neon: 11.554 20.318
+RESULT fft64      W=2 E=0 neon      median   20.318 best   11.554 ns/point agg  =   49.217 Mpoint/s | call p50    296.6 p99   9319.0 max  29077.5 us | SME calls   0.0 % | mean us: sme 0.0 neon 960.5 | calls 2362 | CHECK PASS
+CHECK w0 sme     n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.170e-15 PASS
+CHECK w1 sme     n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.170e-15 PASS
+reps fft64 W=2 E=0 sme: 16.407 13.513
+RESULT fft64      W=2 E=0 sme       median   16.407 best   13.513 ns/point agg  =   60.951 Mpoint/s | call p50    259.8 p99   8481.8 max  17212.6 us | SME calls 100.0 % | mean us: sme 984.5 neon 0.0 | calls 1883 | CHECK PASS
+CHECK w1 neon    n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.043e-15 PASS
+CHECK w0 sme     n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.170e-15 PASS
+reps fft64 W=2 E=0 static:1: 13.886 10.793
+RESULT fft64      W=2 E=0 static:1  median   13.886 best   10.793 ns/point agg  =   72.013 Mpoint/s | call p50    239.2 p99   6137.0 max  10922.5 us | SME calls  59.1 % | mean us: sme 674.6 neon 969.5 | calls 2931 | CHECK PASS
+CHECK w1 neon    n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.043e-15 PASS
+CHECK w0 sme     n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.170e-15 PASS
+reps fft64 W=2 E=0 token:1: 15.505 22.870
+RESULT fft64      W=2 E=0 token:1   median   22.870 best   15.505 ns/point agg  =   43.725 Mpoint/s | call p50    342.0 p99  13034.2 max  28045.6 us | SME calls  57.3 % | mean us: sme 1149.5 neon 1412.3 | calls 1591 | CHECK PASS
+CHECK w1 neon    n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.043e-15 PASS
+CHECK w1 sme     n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.170e-15 PASS
+CHECK w0 neon    n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.043e-15 PASS
+CHECK w0 sme     n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.170e-15 PASS
+reps fft64 W=2 E=0 owner: 20.263 24.490
+RESULT fft64      W=2 E=0 owner     median   24.490 best   20.263 ns/point agg  =   40.833 Mpoint/s | call p50    389.5 p99  13877.8 max  30750.1 us | SME calls  45.5 % | mean us: sme 1613.3 neon 1320.3 | calls 1384 | CHECK PASS

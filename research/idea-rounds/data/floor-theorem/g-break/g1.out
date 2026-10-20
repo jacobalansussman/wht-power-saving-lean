@@ -1,0 +1,25 @@
+T1 transfer ranks over Q(i), exact: m, k, kernel-C block, plain +-1 Hadamard block, expected 2^m-2^(m-k)
+  m=1 k=1  C:1  H:1  expected:1
+  m=1 uniform fanout on bit 1: 1 ; uniform fold on bit 1: 0 ; uniform shift: 0
+  m=2 k=1  C:2  H:2  expected:2
+  m=2 k=2  C:3  H:3  expected:3
+  m=2 uniform fanout on bit 1: 2 ; uniform fold on bit 1: 0 ; uniform shift: 0
+  m=3 k=1  C:4  H:4  expected:4
+  m=3 k=2  C:6  H:6  expected:6
+  m=3 k=3  C:7  H:7  expected:7
+  m=3 uniform fanout on bit 1: 4 ; uniform fold on bit 1: 0 ; uniform shift: 0
+T2 m=1, f=2, zero blocks, every step the same on both columns:
+  shift, phase (engine's free maps)              elements  28  span dim  6  kernel C(x)C in span: no
+  + fanout (free in OpenAI's circuit)            elements  59  span dim  8  kernel C(x)C in span: no
+  + fold (1 addition per output)                 elements  59  span dim  8  kernel C(x)C in span: no
+  + fanout and fold                              elements 224  span dim 10  kernel C(x)C in span: YES
+T3 sum of the four one-column-shift conjugates of S(x)S == 2i*identity: True
+   group from one-column shifts + uniform phase: 64 elements; rational span dim 32; with C(x)C added: 32
+   control, uniform shift + uniform phase only: 16 elements; rational span dim 8; with C(x)C added: 9; complex span dim 6, with C(x)C: 7
+T4 z=0 inequality (2^s-1)B+2W<2^s W holds for some s<=40: [(1, 0, True), (1, 1, False), (2, 1, True), (2, 2, False), (5, 4, True), (5, 5, False)]
+   m=3 floor z > 0.3802 ; blocks/W >= 1.16667
+   m=4 floor z > 0.2398 ; blocks/W >= 1.07143
+   m=5 floor z > 0.1469 ; blocks/W >= 1.03333
+   m=6 floor z > 0.0878 ; blocks/W >= 1.01613
+   m=8 floor z > 0.0294 ; blocks/W >= 1.00394
+   m=10 floor z > 0.0093 ; blocks/W >= 1.00098

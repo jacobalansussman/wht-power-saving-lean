@@ -1,0 +1,189 @@
+{
+ "inputs": {
+  "hub/research/punctured112-global/vendor/pr514/inputs/work/complex-nine-native/DATA-PHASES.json": "f621f6d4296cb215f334830356c5f79fe10d6d04d15b3ccda76ba0885ab67d0a",
+  "hub/research/punctured112-global/vendor/pr514/inputs/work/complex-nine-native/GLOBAL-TEMPLATE.json.gz": "1b84904a31a733aab9bfdda3f528c06719f590d2133a43687a8bded955dc991e",
+  "checks/wht43/helpers/k8-pairs/dl1042/slots/local/CANONICAL-WORD.json.gz": "16bc0ebb04b4be6c0ade74badc6a0c0cdba4215eda86e4ff9f13abf8ecebd219"
+ },
+ "chart_axes_match": 120,
+ "translations_match": 1080,
+ "handover_boundaries": [
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   3,
+   4
+  ],
+  [
+   5,
+   6
+  ],
+  [
+   7,
+   8
+  ]
+ ],
+ "A_table_summary": [
+  {
+   "boundary": "0->1",
+   "distinct_A": 112,
+   "local_block_is_qqT": true,
+   "A_maps_E_next_to_qperp_plus_E": true,
+   "A_fixes_q": true,
+   "orders": {
+    "2": 112
+   },
+   "coordinates_moved": {
+    "17": 112
+   }
+  },
+  {
+   "boundary": "1->2",
+   "distinct_A": 112,
+   "local_block_is_qqT": true,
+   "A_maps_E_next_to_qperp_plus_E": true,
+   "A_fixes_q": true,
+   "orders": {
+    "3": 112
+   },
+   "coordinates_moved": {
+    "25": 112
+   }
+  },
+  {
+   "boundary": "3->4",
+   "distinct_A": 112,
+   "local_block_is_qqT": true,
+   "A_maps_E_next_to_qperp_plus_E": true,
+   "A_fixes_q": true,
+   "orders": {
+    "3": 112
+   },
+   "coordinates_moved": {
+    "25": 112
+   }
+  },
+  {
+   "boundary": "5->6",
+   "distinct_A": 112,
+   "local_block_is_qqT": true,
+   "A_maps_E_next_to_qperp_plus_E": true,
+   "A_fixes_q": true,
+   "orders": {
+    "3": 112
+   },
+   "coordinates_moved": {
+    "25": 112
+   }
+  },
+  {
+   "boundary": "7->8",
+   "distinct_A": 112,
+   "local_block_is_qqT": true,
+   "A_maps_E_next_to_qperp_plus_E": true,
+   "A_fixes_q": true,
+   "orders": {
+    "3": 112
+   },
+   "coordinates_moved": {
+    "25": 112
+   }
+  }
+ ],
+ "hub_decoder": [
+  {
+   "boundary": "0->1",
+   "transportable": 0,
+   "continuation_invocations_per_total": [
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56
+   ],
+   "total_frame_contains_new_base_pairs": 0,
+   "preload_frame_legal_pairs": 0,
+   "max_pieces_of_a_total_copresent_in_a_host_continuation": 1
+  },
+  {
+   "boundary": "1->2",
+   "transportable": 0,
+   "continuation_invocations_per_total": [
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56
+   ],
+   "total_frame_contains_new_base_pairs": 0,
+   "preload_frame_legal_pairs": 0,
+   "max_pieces_of_a_total_copresent_in_a_host_continuation": 1
+  },
+  {
+   "boundary": "3->4",
+   "transportable": 0,
+   "continuation_invocations_per_total": [
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56
+   ],
+   "total_frame_contains_new_base_pairs": 0,
+   "preload_frame_legal_pairs": 0,
+   "max_pieces_of_a_total_copresent_in_a_host_continuation": 1
+  },
+  {
+   "boundary": "5->6",
+   "transportable": 0,
+   "continuation_invocations_per_total": [
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56
+   ],
+   "total_frame_contains_new_base_pairs": 0,
+   "preload_frame_legal_pairs": 0,
+   "max_pieces_of_a_total_copresent_in_a_host_continuation": 1
+  },
+  {
+   "boundary": "7->8",
+   "transportable": 0,
+   "continuation_invocations_per_total": [
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56,
+    56
+   ],
+   "total_frame_contains_new_base_pairs": 0,
+   "preload_frame_legal_pairs": 0,
+   "max_pieces_of_a_total_copresent_in_a_host_continuation": 1
+  }
+ ],
+ "orbit_best": 0,
+ "paid_colocation_lower_bound_per_total": [
+  220
+ ]
+}

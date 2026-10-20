@@ -1,0 +1,13 @@
+h 9 v 112 R 616 registers 840
+  class x: blocks {8: 112}  rank 896  narrow(73) 1981.1  (8.6 % of narrow)
+  class y: blocks {1: 352, 2: 56, 3: 32, 4: 64, 5: 16}  rank 896  narrow(73) 3177.5  (13.8 % of narrow)
+  class s: blocks {1: 2308, 2: 282, 3: 414, 4: 98, 5: 56}  rank 4786  narrow(73) 17784.7  (77.0 % of narrow)
+  class c: blocks {8: 8}  rank 64  narrow(73) 141.5  (0.6 % of narrow)
+x starts on its port line: True | y ends on a hyperplane: True
+total rank 6642 = R h + 2v(h-1) + cst - ent = 6992 (cst 64 ent 408 )
+whole local profile {1: 2660, 2: 338, 3: 446, 4: 162, 5: 72, 8: 120}
+helpers ending below the full frame: 126 missing levels 350 | helpers entering above 0: 216 entrance levels 408
+identity with exits: R h + 2v(h-1) + cst - ent - exit = 6642
+single additions 5919 by denominator {1: 3877, 2: 1501, 4: 401, 8: 112, 16: 28}
+helper in-call span (final dim - start dim), all 616 slots: {4: 80, 5: 32, 7: 54, 8: 122, 9: 328}
+U8 E1 leftover widths (fsp-price words.json, 504 helpers): {4: 80, 5: 32, 7: 54, 8: 122, 9: 216}

@@ -1,0 +1,51 @@
+== (a) calibration: one first-order law against each source's own figure ==
+  OpenAI explicit DFT unit (h=100), per-dimension pricing                D/(Wm)=3.6671e-12 lbar=13.816  a~2.6543e-13  reported 2.6500e-13  (an-openai calc/family.py)
+  hub T74 (#1839 line), per call: w=99.556, D=35.556, E: r_eff 3.945     D/(Wm)=4.8924e-03 lbar=2.918  a~1.6766e-03  reported 1.6797e-03  (an-hub out/anatomy.txt)
+  our U8X0HQ (Lean-checked), D=2560, W=7491, lbar 2.885                  D/(Wm)=4.6814e-03 lbar=2.885  a~1.6227e-03  reported 1.6257e-03  (an-ours run1.out)
+
+== (b) design x template: D/(Wm) of the hub's template m = 1 + (k-1)(2P+1), helpers ignored ==
+   per run: D = 2Pv - (2P+1) cst ; one free coordinate per family (u = 1); cst = t*(k-1) on v = n - t ports
+   (the frame-line-removed variant that gives P112: v = 112, cst = 64) ; best P over 1..8
+   design                                   ports v  cst/v junk/port best P    m    D/W    D/(Wm) first m saving
+   A3                                             3  2.000       4.0      8   35 -1.125 -3.21e-02           None
+   A4                                             6  2.667       6.0      8   69 -1.833 -2.66e-02           None
+   A5                                            10  2.000       8.0      8   69 -1.125 -1.63e-02           None
+   A6                                            15  2.400      10.0      8  103 -1.550 -1.50e-02           None
+   A7                                            21  2.000      12.0      8  103 -1.125 -1.09e-02           None
+   A8                                            28  2.286      14.0      8  137 -1.429 -1.04e-02           None
+   A9                                            36  2.000      16.0      8  137 -1.125 -8.21e-03           None
+   A12                                           66  2.182      22.0      8  205 -1.318 -6.43e-03           None
+   A16                                          120  2.133      30.0      8  273 -1.267 -4.64e-03           None
+   D4                                             8  1.000       8.0      8   35 -0.062 -1.79e-03           None
+   D5                                            15  1.333      12.0      8   69 -0.417 -6.04e-03           None
+   D6                                            24  1.000      16.0      8   69 -0.062 -9.06e-04           None
+   D8                                            48  1.000      24.0      8  103 -0.062 -6.07e-04           None
+   D9                                            63  1.143      28.0      8  137 -0.214 -1.56e-03           None
+   D12                                          120  1.000      40.0      8  171 -0.062 -3.65e-04           None
+   D16                                          224  1.000      56.0      8  239 -0.062 -2.62e-04           None
+   D17                                          255  1.067      60.0      8  273 -0.133 -4.88e-04           None
+   E6                                            30  1.200      20.0      8  103 -0.275 -2.67e-03           None
+   E7                                            56  0.750      32.0      3   43  0.125  2.91e-03             31
+   E8                                           112  0.571      56.0      2   41  0.286  6.97e-03             25
+   Alon triples h=9 (OpenAI's design)            84  1.071      38.0      8  154 -0.138 -8.99e-04           None
+   Alon triples h=12 (OpenAI's design)          220  0.709     111.0      3   85  0.173  2.03e-03             61
+   Alon triples h=16 (OpenAI's design)          560  0.486     325.0      1   49  0.271  5.54e-03             49
+   Alon triples h=20 (OpenAI's design)         1140  0.368     731.0      1   61  0.447  7.33e-03             61
+   Alon triples h=25 (OpenAI's design)         2300  0.283    1606.0      1   76  0.576  7.58e-03             76
+   Alon triples h=30 (OpenAI's design)         4060  0.229    3006.0      1   91  0.656  7.21e-03             91
+
+== (c) two-sided slack on T74 (both banks start on a line: X: U -> V^perp, Y: V -> U^perp) ==
+   hub's ideal lever (centre charge unchanged)                        D/call= 135.11  a~6.514e-03  x3.88
+   one extra v-drop per centre per call (my reading: T->S restore)    D/call=  71.11  a~3.405e-03  x2.03
+   two extra v-drops per centre per call (T,S,T,S dirty pattern)      D/call=   7.11  a~3.382e-04  x0.20
+
+== (d) what the 1e-1 bar needs: free coordinates per array u_eff with a = -ln(1-u/m)/ln(m/r) ==
+      m  r_eff=1  r_eff=4  r_eff=m/sqrt2   (u_eff needed; T74 has 0.357 at m=73)
+      5     0.74     0.17           0.17
+      6     0.98     0.24           0.20
+      8     1.50     0.54           0.27
+     12     2.64     1.25           0.41
+     16     3.87     2.07           0.55
+     25     6.88     4.19           0.85
+     41    12.72     8.51           1.40
+     73    25.47    18.40           2.49

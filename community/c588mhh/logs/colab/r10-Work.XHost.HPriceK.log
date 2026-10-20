@@ -1,0 +1,28 @@
+START Work.XHost.HPriceK 19:56:12
+Work/XHost/HPriceK.lean:1:0: error: Could not find native implementation of external declaration 'Lean.registerTagAttributeExtra' (symbols 'lp_batteries_Lean_registerTagAttributeExtra___boxed' or 'lp_batteries_Lean_registerTagAttributeExtra').
+For declarations from `Init`, `Std`, or `Lean`, you need to set `supportInterpreter := true` in the relevant `lean_exe` statement in your `lakefile.lean`.
+Command exited with non-zero status 1
+	Command being timed: "/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean -DautoImplicit=false -R . -o .lake/build/lib/lean/Work/XHost/HPriceK.olean -i .lake/build/lib/lean/Work/XHost/HPriceK.ilean Work/XHost/HPriceK.lean"
+	User time (seconds): 4.24
+	System time (seconds): 2.40
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6166892
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 55
+	Minor (reclaiming a frame) page faults: 139433
+	Voluntary context switches: 58
+	Involuntary context switches: 431
+	Swaps: 0
+	File system inputs: 9408
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+EXIT 1 Work.XHost.HPriceK 19:56:18

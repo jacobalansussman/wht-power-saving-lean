@@ -1,0 +1,62 @@
+{
+ "source_frames_are_labels": true,
+ "target_ends_are_perps": true,
+ "planes": 168,
+ "blocks": 14,
+ "planes_per_block": [
+  [
+   12,
+   14
+  ]
+ ],
+ "sources_per_plane": [
+  [
+   4,
+   168
+  ]
+ ],
+ "planes_containing_a_source": [
+  [
+   6,
+   112
+  ]
+ ],
+ "targets_whose_perp_contains_plane": [
+  [
+   8,
+   168
+  ]
+ ],
+ "least_helpers": {
+  "one copy (k=2)": {
+   "block0": 16,
+   "all14": 224
+  },
+  "two copies (k=3)": {
+   "block0": 28,
+   "all14": 392
+  },
+  "two copies + targets": {
+   "block0": 0,
+   "all14": 280
+  },
+  "one copy + targets": {
+   "block0": 0,
+   "all14": 112
+  },
+  "two copies, one descent (2 planes/register)": {
+   "block0": 10,
+   "all14": 140
+  },
+  "two copies + targets + one descent": {
+   "block0": 0,
+   "all14": 28
+  }
+ },
+ "U8_actual": {
+  "plane_visitors_per_plane": 3,
+  "helper_plane_visitors": 392,
+  "helpers_not_visiting_a_plane": 112,
+  "total_helpers": 504
+ }
+}

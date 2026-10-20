@@ -1,0 +1,8 @@
+|A| 64, |Levi| 168 |A.Levi| distinct 10752
+p=33554393: dim X 105, dim N 56, profile (20, 38, 49)
+  dim E_kernel = 7
+  dim E_two-row = 18
+identity letter: defect_kernel(h) = 7
+identity letter: defect_two-row(h) = 2
+plain R in 2 (D1 then D2): OD 2 gains [20, 20] slack identity 2*20 - 38 = 2 = sum(cap-gain)+OD = 2
+plain K in 3: OD 7 gains [20, 20, 16] slack 60 - 49 = 11 =  11

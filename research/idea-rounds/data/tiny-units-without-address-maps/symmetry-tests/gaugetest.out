@@ -1,0 +1,5 @@
+PASS  S3b gauge plain9: unit 2.shift -> True; Z with dir Z dir^-1 = i Z shift (phase vector 2 on direction 2) -> True; x_3 += shift(3) x_0 -> True; expected True; moves 9
+PASS  S3b gauge wasteful11: unit 2.shift -> True; Z with dir Z dir^-1 = i Z shift (phase vector 1 on direction 1) -> True; x_1 += shift(3) x_0 -> True; expected True; moves 11
+PASS  S3b gauge invalid_mix: unit 2.shift -> False; Z with dir Z dir^-1 = i Z shift (phase vector 1 on direction 1) -> False; x_1 += shift(3) x_0 -> False; expected False; moves 11
+PASS  S3b gauge invalid8: unit 2.shift -> False; Z with dir Z dir^-1 = i Z shift (phase vector 2 on direction 2) -> False; x_3 += shift(3) x_0 -> False; expected False; moves 8
+ALL PASS

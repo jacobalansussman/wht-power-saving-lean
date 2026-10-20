@@ -1,0 +1,5 @@
+p=65537 mode=none  elements=2500 depth=7 span dim=88 (commutant of the swap: 136)  kernel in span mod p: no  time 2s
+p=65537 mode=both  elements=653 depth=4 span dim=136 (commutant of the swap: 136)  kernel in span mod p: YES  time 0s
+p=65537 mode=fan   elements=4000 depth=6 span dim=112 (commutant of the swap: 136)  kernel in span mod p: no  time 5s
+p=65537 mode=fold  elements=4000 depth=6 span dim=112 (commutant of the swap: 136)  kernel in span mod p: no  time 5s
+p=65537 mode=none  elements=3072 depth=10 span dim=88 (commutant of the swap: 136)  kernel in span mod p: no  time 3s

@@ -1,0 +1,16 @@
+pair u_S=001, u_T=111 (u_S.u_T = 1: S does not know T in the old sense); copy cost l = 2
+phi = element 646565 of Sp(6,2) (twist of x_T relative to x_S inside the total R)
+R reads X_S at a0:       frame  57 basis (011|000) (100|100) (000|011) excess 0 (subspace frame)
+   and X_T at phi(a0):   frame 134 basis (111|100) (111|010) (111|001) excess 0 (subspace frame)
+R delivers x_S at a*:    frame  71 basis (000|100) (000|010) (000|001) excess 0 (subspace frame)
+   and x_T at phi(a*):   frame  47 basis (101|000) (000|010) (000|101) excess 0 (subspace frame)
+Y_S cancels x_T with X_T itself when Y_S is at mu and X_T at phi(mu):
+   mu: frame  55 basis (011|000) (000|100) (000|011) excess 0 (subspace frame) 
+   phi(mu): frame  51 basis (101|000) (010|010) (000|101) excess 0 (subspace frame)
+Y_T cancels x_S with X_S itself when X_S is at nu and Y_T at phi(nu):
+   nu: frame  79 basis (100|100) (000|010) (000|001) excess 0 (subspace frame) 
+   phi(nu): frame  71 basis (000|100) (000|010) (000|001) excess 0 (subspace frame)
+geodesic midpoints of R's walk (x_S term) and the x_T term's frame there:
+   x_S: frame  55 basis (011|000) (000|100) (000|011) excess 0 (subspace frame) | x_T: frame  51 basis (101|000) (010|010) (000|101) excess 0 (subspace frame)
+   x_S: frame  79 basis (100|100) (000|010) (000|001) excess 0 (subspace frame) | x_T: frame  71 basis (000|100) (000|010) (000|001) excess 0 (subspace frame)
+   x_S: frame 134 basis (111|100) (111|010) (111|001) excess 0 (subspace frame) | x_T: frame 132 basis (111|100) (101|010) (111|001) excess 2

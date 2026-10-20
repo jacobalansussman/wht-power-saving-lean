@@ -1,0 +1,106 @@
+[
+ {
+  "case": "A1 GF 1x1y, 1 copy",
+  "min_changes": 1,
+  "rank": 1,
+  "slot_flips": 0,
+  "lemma_lower": 1,
+  "states": 150
+ },
+ {
+  "case": "A2 GB 1x1y, 1 copy",
+  "min_changes": 1,
+  "rank": 1,
+  "slot_flips": 0,
+  "lemma_lower": 1,
+  "states": 88
+ },
+ {
+  "case": "A3 GF 1x1y, no copy, no slot",
+  "min_changes": null,
+  "rank": 1,
+  "slot_flips": 0,
+  "lemma_lower": 1,
+  "states": 1
+ },
+ {
+  "case": "B1 GF 1x1y, slot N->S (natural climb), no copy",
+  "min_changes": 3,
+  "rank": 1,
+  "slot_flips": 1,
+  "lemma_lower": 2,
+  "states": 11232
+ },
+ {
+  "case": "B2 GF 1x1y, slot N->S (natural climb), 1 copy",
+  "min_changes": 2,
+  "rank": 1,
+  "slot_flips": 1,
+  "lemma_lower": 2,
+  "states": 210317
+ },
+ {
+  "case": "B3 GF 1x1y, slot N->N, no copy",
+  "min_changes": 2,
+  "rank": 1,
+  "slot_flips": 0,
+  "lemma_lower": 1,
+  "states": 4909
+ },
+ {
+  "case": "B4 GF 1x1y, slot S->S, no copy",
+  "min_changes": 2,
+  "rank": 1,
+  "slot_flips": 0,
+  "lemma_lower": 1,
+  "states": 7225
+ },
+ {
+  "case": "B5 GB 1x1y, slot N->S, no copy",
+  "min_changes": 3,
+  "rank": 1,
+  "slot_flips": 1,
+  "lemma_lower": 2,
+  "states": 11232
+ },
+ {
+  "case": "B6 GB 1x1y, slot S->N, no copy",
+  "min_changes": 3,
+  "rank": 1,
+  "slot_flips": 1,
+  "lemma_lower": 2,
+  "states": 11232
+ },
+ {
+  "case": "C1 GF 2x2y P=I, 1 copy",
+  "min_changes": 3,
+  "rank": 2,
+  "slot_flips": 0,
+  "lemma_lower": 2,
+  "states": 599041
+ },
+ {
+  "case": "C2 GF 2x2y P=[[1,1],[1,1]] (rank 1), 1 copy",
+  "min_changes": 1,
+  "rank": 1,
+  "slot_flips": 0,
+  "lemma_lower": 1,
+  "states": 8791
+ },
+ {
+  "case": "C3 GB 2x2y P=I, 1 copy",
+  "min_changes": 3,
+  "rank": 2,
+  "slot_flips": 0,
+  "lemma_lower": 2,
+  "states": 325180
+ },
+ {
+  "case": "C4 GF 2x2y P=[[1,1],[0,1]], 1 copy",
+  "min_changes": 3,
+  "rank": 2,
+  "slot_flips": 0,
+  "lemma_lower": 2,
+  "states": 600193
+ }
+]

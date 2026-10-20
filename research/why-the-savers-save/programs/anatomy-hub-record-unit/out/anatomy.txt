@@ -1,0 +1,19 @@
+T74 profile (PROFILE.json, PR1424 era)                     a=1.6796717955e-03  mass=4.81651e+06  1-bill0=4.892368e-03  r_eff=3.9448  a(all rank1)=1.143088e-03  a(1st order)=1.680691e-03
+  coverage check: mass 4816512 == 72*W + 64*calls = 4816512
+  per call: w=99.5556 families, paid mass/call=7232.00, plain m*w=7267.56, deficit/call=35.5556 = w - 64 = 35.5556
+  our words: block 73, W=99.556 arrays/call, M=7232.0 paid mass/call, rank-1 saving ln(mW/M)/ln m = 1.143088e-03
+  T74 local mass/call 5592.504504504504  idle mass/call 1639.4954954954956
+  lever idle at 51 (fractional)                       a=1.687577e-03  x1.005
+  lever local mass as rank-8                          a=2.716218e-03  x1.617
+  lever local mass as rank-16                         a=3.864075e-03  x2.300
+  lever everything at rank 51                         a=1.367516e-02  x8.142
+  lever centre free (drop 8x rank-8 per call)         a=4.708622e-03  x2.803
+  lever centre halved (drop 4x rank-8 per call)       a=3.193260e-03  x1.901
+  lever 2 unpaid coords/family (drop W rank-1)        a=6.458289e-03  x3.845
+  lever 2x families per call, same centre             a=3.193260e-03  x1.901
+  lever 4x families per call, same centre             a=3.950719e-03  x2.352
+#1042 (T16): 144 x local + derived idle                    a=1.6749890159e-03  mass=1.04141e+06  1-bill0=4.892368e-03  r_eff=3.9127  a(all rank1)=1.143088e-03  a(1st order)=1.675997e-03
+  coverage check #1042: 1041408 == 1041408
+#1094 local + all idle mass at rank 51 (hub ceiling)       a=1.6900541091e-03  mass=1.04141e+06  1-bill0=4.892368e-03  r_eff=4.0165  a(all rank1)=1.143088e-03  a(1st order)=1.691133e-03
+
+Share of the T74 saving due to child grouping (r_eff>1): 0.3194572461482952

@@ -1,0 +1,19 @@
+injections whose chart is the identity: 11 of 12
+injections that only add the register's own current walkers (rescalings): [0, 5, 6, 11, 2, 3, 7, 4, 8, 9, 10] -> 11 of 12
+effective scalars: trunk y1 weight 1+c0 = (-3.7e-08-3.5e-08j) | A slot 0: 1+c5+c6+c11 = (2.3203-3.2971j)  landing c1 = (-2.3203+3.2971j)
+psi residual at fp-build's scalars (per output: residual, max |readout coeff|): [(1.0578409450458906e-08, 526362.784399279), (5.119076596702268e-08, 0.9999999999999971)]
+trunk walkers (state 5): {(0, (128, 64, 32, 17)): np.complex128(-3.7e-08-3.5e-08j), (1, (136, 68, 34, 17)): np.complex128(1+0j)}
+  |1+c0| = 1e+00: psi residuals (out0, out1) = (5.415e-16, 7.071e-01); max readout coeff 5.00e-01
+  |1+c0| = 1e-01: psi residuals (out0, out1) = (5.417e-15, 9.950e-02); max readout coeff 9.90e-01
+  |1+c0| = 1e-02: psi residuals (out0, out1) = (5.415e-14, 1.000e-02); max readout coeff 2.69e+00
+  |1+c0| = 1e-04: psi residuals (out0, out1) = (5.415e-12, 1.000e-04); max readout coeff 2.69e+02
+  |1+c0| = 1e-06: psi residuals (out0, out1) = (5.415e-10, 1.000e-06); max readout coeff 2.69e+04
+  |1+c0| = 1e-08: psi residuals (out0, out1) = (5.415e-08, 1.000e-08); max readout coeff 2.69e+06
+  |1+c0| = 0e+00: psi residuals (out0, out1) = (1.000e+00, 0.000e+00); max readout coeff 1.00e+00
+  random other scalars, |1+c0| = 1e-6: psi residuals (1.000e+00, 1.000e-06)
+  random other scalars, |1+c0| = 1e-6: psi residuals (1.000e+00, 1.000e-06)
+  random other scalars, |1+c0| = 1e-6: psi residuals (1.000e+00, 1.000e-06)
+with c0 = -1 exactly, input-0 walkers outside the raw input state: 0
+with c0 = -1 exactly, input-0 walkers outside the raw input state: 0
+states touching (0, X1) or (1, L1) [state, coeff at (0,X1), coeff at (1,L1)], exact, random rational scalars: [(5, '(1.4078947368421053+0j)', '(1+0j)')]  (1+c0 = 107/76 )
+level of X1: 1 ; input-0 walkers by state: [1, 0, 0, 0, 0, 1, 1, 1, 1]

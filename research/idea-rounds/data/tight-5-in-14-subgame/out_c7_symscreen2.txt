@@ -1,0 +1,106 @@
+subgroup classes of L (orders): [1, 2, 3, 4, 4, 4, 6, 7, 8, 12, 12, 21, 24, 24, 168] [2s]
+S3 (coordinate permutations): irreps [2, 1, 1]
+   array orbit |S|=1 size 6 demand [56. 28. 28.]
+   array orbit |S|=2 size 3 demand [28. 12. 16.]
+   array orbit |S|=3 size 2 demand [18. 10. 10.]
+   array orbit |S|=6 size 1 demand [9. 3. 7.]
+   move orbit |T|=1 size 6 cap [20. 10. 10.] exact=True
+   move orbit |T|=2 size 3 cap [10.  4.  6.] exact=True
+   move orbit |T|=3 size 2 cap [6. 4. 4.] exact=True
+   move orbit |T|=6 size 1 cap [3. 1. 3.] exact=True
+CALIBRATION (slack mode = inequality):
+   S3 exact, 6 in 18: 8 array structures pass; e.g. ['arrays 6x1 | moves 18x1(T6)', 'arrays 6x1 | moves 1x2(T3)+16x1(T6)']
+   S3 exact, 5 in 15: 5 array structures pass; e.g. ['arrays 5x1 | moves 15x1(T6)', 'arrays 5x1 | moves 1x2(T3)+13x1(T6)']
+   S3 exact, 2 in 5: 0 array structures pass; e.g. []
+   S3 exact, 5 in 13: 0 array structures pass; e.g. []
+   S3 exact, 3 in 9: 3 array structures pass; e.g. ['arrays 3x1 | moves 9x1(T6)', 'arrays 3x1 | moves 1x2(T3)+7x1(T6)']
+S3, 5 in 14 tight, EXACT types: 
+      arrays 1x2+3x1 | moves 3x3(T2)+1x2(T3)+3x1(T6)
+      arrays 1x2+3x1 | moves 1x6(T1)+1x3(T2)+5x1(T6)
+      arrays 2x2+1x1 | moves 1x6(T1)+1x3(T2)+2x2(T3)+1x1(T6)
+      arrays 1x3+2x1 | moves 4x3(T2)+2x1(T6)
+      arrays 1x3+1x2 | moves 1x6(T1)+2x3(T2)+1x2(T3)
+      arrays 1x3+1x2 | moves 2x6(T1)+2x1(T6)
+S3, 5 in 14 tight, GAUGE types allowed: 
+      arrays 1x2+3x1 | moves 3x3(T2)+1x2(T3)+3x1(T6)
+      arrays 1x2+3x1 | moves 1x6(T1)+1x3(T2)+5x1(T6)
+      arrays 2x2+1x1 | moves 1x6(T1)+1x3(T2)+2x2(T3)+1x1(T6)
+      arrays 1x3+2x1 | moves 4x3(T2)+2x1(T6)
+      arrays 1x3+1x2 | moves 1x6(T1)+2x3(T2)+1x2(T3)
+      arrays 1x3+1x2 | moves 2x6(T1)+2x1(T6)
+[3s]
+H order 2 elt orders [1, 2]: exact shapes 3 (array structures 3), gauge shapes 3 (array structures 3)
+      exact: arrays 5x1 | moves 2x2(T1)+10x1(T2)
+      exact: arrays 1x2+3x1 | moves 4x2(T1)+6x1(T2)
+      exact: arrays 2x2+1x1 | moves 6x2(T1)+2x1(T2)
+      gauge: arrays 5x1 | moves 2x2(T1)+10x1(T2)
+      gauge: arrays 1x2+3x1 | moves 4x2(T1)+6x1(T2)
+      gauge: arrays 2x2+1x1 | moves 6x2(T1)+2x1(T2)
+H order 3 elt orders [1, 3]: exact shapes 2 (array structures 2), gauge shapes 2 (array structures 2)
+      exact: arrays 5x1 | moves 3x3(T1)+5x1(T3)
+      exact: arrays 1x3+2x1 | moves 4x3(T1)+2x1(T3)
+      gauge: arrays 5x1 | moves 3x3(T1)+5x1(T3)
+      gauge: arrays 1x3+2x1 | moves 4x3(T1)+2x1(T3)
+H order 4 elt orders [1, 2]: exact shapes 22 (array structures 11), gauge shapes 22 (array structures 11)
+      exact: arrays 5x1 | moves 1x2(T2)+1x2(T2)+1x2(T2)+8x1(T4)
+      exact: arrays 5x1 | moves 1x4(T1)+10x1(T4)
+      exact: arrays 1x2+3x1 | moves 1x2(T2)+1x2(T2)+3x2(T2)+4x1(T4)
+      exact: arrays 1x2+3x1 | moves 1x4(T1)+2x2(T2)+6x1(T4)
+      gauge: arrays 5x1 | moves 1x2(T2)+1x2(T2)+1x2(T2)+8x1(T4)
+      gauge: arrays 5x1 | moves 1x4(T1)+10x1(T4)
+      gauge: arrays 1x2+3x1 | moves 1x2(T2)+1x2(T2)+3x2(T2)+4x1(T4)
+H order 4 elt orders [1, 2]: exact shapes 22 (array structures 11), gauge shapes 22 (array structures 11)
+      exact: arrays 5x1 | moves 1x2(T2)+1x2(T2)+1x2(T2)+8x1(T4)
+      exact: arrays 5x1 | moves 1x4(T1)+10x1(T4)
+      exact: arrays 1x2+3x1 | moves 1x2(T2)+1x2(T2)+3x2(T2)+4x1(T4)
+      exact: arrays 1x2+3x1 | moves 1x4(T1)+2x2(T2)+6x1(T4)
+      gauge: arrays 5x1 | moves 1x2(T2)+1x2(T2)+1x2(T2)+8x1(T4)
+      gauge: arrays 5x1 | moves 1x4(T1)+10x1(T4)
+      gauge: arrays 1x2+3x1 | moves 1x2(T2)+1x2(T2)+3x2(T2)+4x1(T4)
+H order 4 elt orders [1, 2, 4]: exact shapes 19 (array structures 4), gauge shapes 19 (array structures 4)
+      exact: arrays 5x1 | moves 1x4(T1)+10x1(T4)
+      exact: arrays 5x1 | moves 1x4(T1)+1x2(T2)+8x1(T4)
+      exact: arrays 5x1 | moves 1x4(T1)+2x2(T2)+6x1(T4)
+      exact: arrays 1x2+3x1 | moves 1x4(T1)+10x1(T4)
+      gauge: arrays 5x1 | moves 1x4(T1)+10x1(T4)
+      gauge: arrays 5x1 | moves 1x4(T1)+1x2(T2)+8x1(T4)
+      gauge: arrays 5x1 | moves 1x4(T1)+2x2(T2)+6x1(T4)
+H order 6 elt orders [1, 2, 3]: exact shapes 6 (array structures 4), gauge shapes 6 (array structures 4)
+      exact: arrays 1x2+3x1 | moves 3x3(T2)+1x2(T3)+3x1(T6)
+      exact: arrays 1x2+3x1 | moves 1x6(T1)+1x3(T2)+5x1(T6)
+      exact: arrays 2x2+1x1 | moves 1x6(T1)+1x3(T2)+2x2(T3)+1x1(T6)
+      exact: arrays 1x3+2x1 | moves 4x3(T2)+2x1(T6)
+      gauge: arrays 1x2+3x1 | moves 3x3(T2)+1x2(T3)+3x1(T6)
+      gauge: arrays 1x2+3x1 | moves 1x6(T1)+1x3(T2)+5x1(T6)
+      gauge: arrays 2x2+1x1 | moves 1x6(T1)+1x3(T2)+2x2(T3)+1x1(T6)
+H order 7 elt orders [1, 7]: exact shapes 0 (array structures 0), gauge shapes 0 (array structures 0)
+H order 8 elt orders [1, 2, 4]: exact shapes 56 (array structures 13), gauge shapes 56 (array structures 13)
+      exact: arrays 5x1 | moves 1x4(T2)+1x2(T4)+8x1(T8)
+      exact: arrays 5x1 | moves 1x4(T2)+1x2(T4)+8x1(T8)
+      exact: arrays 1x2+3x1 | moves 1x4(T2)+1x2(T4)+2x2(T4)+4x1(T8)
+      exact: arrays 1x2+3x1 | moves 1x4(T2)+1x2(T4)+1x2(T4)+6x1(T8)
+      gauge: arrays 5x1 | moves 1x4(T2)+1x2(T4)+8x1(T8)
+      gauge: arrays 5x1 | moves 1x4(T2)+1x2(T4)+8x1(T8)
+      gauge: arrays 1x2+3x1 | moves 1x4(T2)+1x2(T4)+2x2(T4)+4x1(T8)
+H order 12 elt orders [1, 2, 3]: exact shapes 4 (array structures 2), gauge shapes 4 (array structures 2)
+      exact: arrays 5x1 | moves 1x4(T3)+2x3(T4)+4x1(T12)
+      exact: arrays 5x1 | moves 1x6(T2)+1x3(T4)+5x1(T12)
+      exact: arrays 1x3+2x1 | moves 1x4(T3)+3x3(T4)+1x1(T12)
+      exact: arrays 1x3+2x1 | moves 1x6(T2)+2x3(T4)+2x1(T12)
+      gauge: arrays 5x1 | moves 1x4(T3)+2x3(T4)+4x1(T12)
+      gauge: arrays 5x1 | moves 1x6(T2)+1x3(T4)+5x1(T12)
+      gauge: arrays 1x3+2x1 | moves 1x4(T3)+3x3(T4)+1x1(T12)
+H order 12 elt orders [1, 2, 3]: exact shapes 0 (array structures 0), gauge shapes 0 (array structures 0)
+H order 21 elt orders [1, 3, 7]: exact shapes 0 (array structures 0), gauge shapes 0 (array structures 0)
+H order 24 elt orders [1, 2, 3, 4]: exact shapes 9 (array structures 4), gauge shapes 9 (array structures 4)
+      exact: arrays 1x2+3x1 | moves 1x4(T6)+2x3(T8)+1x2(T12)+2x1(T24)
+      exact: arrays 1x2+3x1 | moves 1x6(T4)+1x4(T6)+4x1(T24)
+      exact: arrays 1x2+3x1 | moves 1x6(T4)+1x3(T8)+1x2(T12)+3x1(T24)
+      exact: arrays 2x2+1x1 | moves 1x6(T4)+1x3(T8)+2x2(T12)+1x1(T24)
+      gauge: arrays 1x2+3x1 | moves 1x4(T6)+2x3(T8)+1x2(T12)+2x1(T24)
+      gauge: arrays 1x2+3x1 | moves 1x6(T4)+1x4(T6)+4x1(T24)
+      gauge: arrays 1x2+3x1 | moves 1x6(T4)+1x3(T8)+1x2(T12)+3x1(T24)
+H order 24 elt orders [1, 2, 3, 4]: exact shapes 0 (array structures 0), gauge shapes 0 (array structures 0)
+H order 168 elt orders [1, 2, 3, 4, 7]: exact shapes 0 (array structures 0), gauge shapes 0 (array structures 0)
+SUMMARY (order, element orders, #exact shapes, #gauge shapes): [(2, [1, 2], 3, 3), (3, [1, 3], 2, 2), (4, [1, 2], 22, 22), (4, [1, 2], 22, 22), (4, [1, 2, 4], 19, 19), (6, [1, 2, 3], 6, 6), (7, [1, 7], 0, 0), (8, [1, 2, 4], 56, 56), (12, [1, 2, 3], 4, 4), (12, [1, 2, 3], 0, 0), (21, [1, 3, 7], 0, 0), (24, [1, 2, 3, 4], 9, 9), (24, [1, 2, 3, 4], 0, 0), (168, [1, 2, 3, 4, 7], 0, 0)]
+[21s]

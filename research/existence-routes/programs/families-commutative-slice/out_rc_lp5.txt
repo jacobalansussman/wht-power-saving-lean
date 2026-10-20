@@ -1,0 +1,4 @@
+block 5: even 3-flats 225; bound forms weight <= 8: 240; variables 4807; rows 51505; LP status 0; value 4.305555555555555 (plain 5, deletion LP 3.875)
+optimal c: {1: 0.1389, 2: 0.1389, 3: 0.1389, 4: 0.1389, 5: 0.1389, 6: 0.1389, 7: 0.1389, 8: 0.1389, 9: 0.1389, 10: 0.1389, 11: 0.1389, 12: 0.1389, 13: 0.1389, 14: 0.1389, 15: 0.1389, 16: 0.1389, 17: 0.1389, 18: 0.1389, 19: 0.1389, 20: 0.1389, 21: 0.1389, 22: 0.1389, 23: 0.1389, 24: 0.1389, 25: 0.1389, 26: 0.1389, 27: 0.1389, 28: 0.1389, 29: 0.1389, 30: 0.1389, 31: 0.1389}
+{'support': 194, 'free_vars': 0, 'inconsistent': False, 'nonneg': True, 'free_cols_cancel': True, 'c_cols_ok': True, 'value': '155/36', 'certificate': True}
+EXACT: every commutative-slice unit at block 5 has M >= 155/36 W = 4.305556 W

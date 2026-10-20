@@ -1,0 +1,12 @@
+one-sided #401 chain: m = 73  window bases [0, 8, 16, 24, 32, 40, 48, 56, 64]
+  pair 1 X: start dim 1 -> end dim 73 : in-call 24 + idle 48 (CH table 48)
+  pair 1 Y: start dim 0 -> end dim 72 : in-call 24 + idle 48 (CH table 48)
+  pair 2 X: start dim 1 -> end dim 73 : in-call 16 + idle 56 (CH table 56)
+  pair 2 Y: start dim 0 -> end dim 72 : in-call 16 + idle 56 (CH table 56)
+  pair 3 X: start dim 1 -> end dim 73 : in-call 16 + idle 56 (CH table 56)
+  pair 3 Y: start dim 0 -> end dim 72 : in-call 16 + idle 56 (CH table 56)
+  pair 4 X: start dim 1 -> end dim 73 : in-call 16 + idle 56 (CH table 56)
+  pair 4 Y: start dim 0 -> end dim 72 : in-call 16 + idle 56 (CH table 56)
+  paid per replica 65088  = 73*896 - D, D = 320
+U8 exact fill: W 7168 D 2560 price 1.6647327e-03
+U8X0HQ profile, W 7491: D 2560 price 1.6256631e-03 (Lean: 1.6256629e-3)

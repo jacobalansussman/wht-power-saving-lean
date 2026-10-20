@@ -1,0 +1,6 @@
+m=2 W=2 M=4 (bound max(2W, W+m-1) = 4): best residual 1.11e-15 (recheck 1.11e-15) ABSTRACT FAKE  [0.0s]
+m=2 W=2 M=3 (bound max(2W, W+m-1) = 4): best residual 6.73e-06 (recheck 6.73e-06) none found  [5.9s]
+m=3 W=2 M=4 (bound max(2W, W+m-1) = 4): best residual 6.81e-16 (recheck 6.81e-16) ABSTRACT FAKE  [0.0s]
+m=3 W=2 M=3 (bound max(2W, W+m-1) = 4): best residual 4.21e-01 (recheck 4.21e-01) none found  [4.0s]
+m=3 W=3 M=6 (bound max(2W, W+m-1) = 6): best residual 9.24e-15 (recheck 9.24e-15) ABSTRACT FAKE  [0.2s]
+m=3 W=3 M=5 (bound max(2W, W+m-1) = 6): best residual 2.30e-05 (recheck 2.30e-05) none found  [37.3s]

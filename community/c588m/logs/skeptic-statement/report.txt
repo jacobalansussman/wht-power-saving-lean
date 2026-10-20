@@ -1,0 +1,58 @@
+The written verdict of the independent agent (a skeptic) that ran this check, as it returned it, with home-folder
+paths shortened. Agent labels in it (c-base, m-build, m-gen, x-mutable, h-L1, h-L2, h-L3-build) are the names
+of the agents whose work it checked.
+
+I could not refute the Lean claim: the copy-free #588 result (C588M) with saving 1.3552606e-3 is Lean-checked. Every check my lens names holds. I checked the sources and the logs myself; I did not re-run Lean (reason at the end).
+
+1. Statement matches OpenAI's (checked by me).
+   - I fetched Work/FourierC588M/UniformFourierChallenge.lean from the Colab tree /content/work/mb/shea/lean/complex588 and diffed it against OpenAI's ComparatorChallenges/UniformFourier.lean. The local upstream copy at fd4aeeb has sha256 4c571f27…, the same as Shea's vendored copy.
+   - The only differences:
+     - line 269: `decimalExponentC588M : ℝ := 1 - 13552606/(10^(10:ℕ))` in place of `1 - 1/(10^(13:ℕ))`;
+     - seven names gain the suffix C588M (decimalExponent, decimalTime, TimeBounds, DFTGoal, ConvGoal, transform_main, convolution_main);
+     - one blank line moved.
+   - The import is still `import Mathlib`. DFTProgram, ConvProgram, paperTime and nlogn are OpenAI's own definitions.
+   - The theorems are `transform_mainC588M : DFTGoalC588M` and `convolution_mainC588M : ConvGoalC588M`. They take no arguments and have no extra hypotheses.
+   - Work/FourierC588M/Goal.lean and Main.lean in the tree match this.
+   - The negative challenge differs only on line 269 (13552607).
+
+2. Compare.lean: I read the tool and its output.
+   - The tool (tools/Compare.lean, sha256 e48d6d3b…) checks three things: the type is the same kernel term; every transitive statement dependency is identical in the solution environment; the axioms are only the permitted three.
+   - compare-fourier.log, for both theorems:
+     - "OK: statement is the same kernel term in both";
+     - all 2019 dependencies identical, 125 of them declared in the challenge file;
+     - axioms #[Classical.choice, Quot.sound, propext];
+     - "RESULT: PASS".
+   - compare-negative.log: "FAIL: decimalExponentC588M: definition body differs", "RESULT: FAIL", exit status 1.
+
+3. Axioms.
+   - axioms.log: transform_mainC588M, convolution_mainC588M and RAM.hillsC588M_program depend on [propext, Classical.choice, Quot.sound].
+   - Every kernel-check theorem depends only on [propext] (per-module logs): scal0..3_ok, ychk_ok, echk0..2_ok, seg/tab/end_ok and sched_ok.
+   - The three controls are proved false: bad_scalar_rejected, classic_rejected, duplicate_owner_rejected.
+   - The seam calls GX.engine_of_ginv_401 on GXD.C588M.ginv. C588MGlue401 defines that as x-mutable's `GXD.ginvOfZ raw scalOKZ es es_ok aux …`, so the chain really uses the mutable-source engine.
+
+4. Official comparator (cmp-A1.out).
+   - Pins: leanprover/comparator d03acab, lean4export 076e8e5 and nanoda 3a24072, the pins of bigospeedrun's tools.json (per c-base's cb-tools.sh).
+   - It built and exported both modules, then reported "nanoda kernel accepts the solution", "Lean default kernel accepts the solution", "Your solution is okay!", rc=0.
+   - Both kernels re-check the exported closure, including the decide +kernel proofs. That covers anything a source grep cannot see, such as kernel checks skipped at build time.
+   - cmp-A2neg.out: rejected with "Const does not match … decimalExponentC588M", rc=1.
+
+5. No sorry (my own grep).
+   - I grepped all 424 .lean files under Work/, OAI/ and WHTCheck/ in the Colab tree. That covers the overlay, the XMut modules, Shea's Gauge modules and everything vendored.
+   - Every real `sorry` is a challenge placeholder (C588/C588M/Neg, lines 327 and 331). All other hits are "No `sorry`" inside doc comments.
+   - Nothing matches native_decide, skipKernelTC, implemented_by, @[extern], ofReduceBool, trustCompiler, unsafe def or axiom declarations in code; the only native_decide hits are doc-comment mentions. The lakefile sets only autoImplicit false.
+
+6. Build consistency.
+   - The sources are dated 15:50 UTC. The oleans were built 16:29–17:07, before the comparator ran at 17:34. No .lean file in Work is newer than Main.olean.
+   - The tree is at Shea's 5239484 ("Prove exact DFT and convolution with saving 0.0012331685"), with 72 untracked files and no tracked changes.
+
+7. Arithmetic.
+   - 13552606/10^10 = 1.3552606e-3.
+   - Gain over Shea: 1.3552606e-3 − 1.2331685e-3 = 1.2209e-4, which is +9.90 %.
+
+Caveats (they do not refute the claim, but limit it):
+- I did not re-run Lean myself. The Colab had 4–5 Lean processes from other agents, already over the 2-slot rule. My confirmation of the Lean results therefore rests on the sources and on three independent logs that agree with each other (axioms.log, Compare, comparator).
+- The comparator ran inside the jail2.sh stand-in, not landrun/Landlock (this kernel has no Landlock). The claim already says so.
+- The offline Big O Speedrun verifier re-run had not finished: 9196 of 9282 jobs when I checked. The claim already says so.
+- After the checks, the tree's .lake/packages were deleted and copied back from c-base's tree. The verdict logs predate that.
+
+My fetched copies of the files I read are in <verify>/checks/wht43/bound-check/v-m-statement/fetched/.

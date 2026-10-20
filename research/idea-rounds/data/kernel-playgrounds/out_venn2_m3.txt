@@ -1,0 +1,34 @@
+H m=3 a=1 b=1: best ratio 1.7500 S=(1,) cap=4 dem=7 dimY=8
+H m=3 a=1 b=2: best ratio 2.0000 S=(1,) cap=24 dem=48 dimY=56
+H m=3 a=1 b=3: best ratio 2.3333 S=(1,) cap=60 dem=140 dimY=168
+H m=3 a=1 b=4: best ratio 2.8000 S=(1,) cap=80 dem=224 dimY=280
+H m=3 a=1 b=5: best ratio 2.3333 S=(1,) cap=60 dem=140 dimY=280
+H m=3 a=1 b=6: best ratio 2.0000 S=(1,) cap=24 dem=48 dimY=168
+H m=3 a=1 b=7: best ratio 1.7500 S=(1,) cap=4 dem=7 dimY=56
+H m=3 a=2 b=2: best ratio 2.2018 S=(1, 2) cap=114 dem=251 dimY=364
+H m=3 a=2 b=3: best ratio 2.5152 S=(1,) cap=264 dem=664 dimY=840
+H m=3 a=2 b=4: best ratio 1.9216 S=(2,) cap=204 dem=392 dimY=420
+H m=3 a=2 b=5: best ratio 2.5152 S=(1,) cap=264 dem=664 dimY=840
+H m=3 a=2 b=6: best ratio 2.2018 S=(2,) cap=114 dem=251 dimY=420
+H m=3 a=2 b=7: best ratio 2.0000 S=(2,) cap=24 dem=48 dimY=168
+H m=3 a=3 b=6: best ratio 2.5152 S=(2,) cap=264 dem=664 dimY=840
+H m=3 a=3 b=7: best ratio 2.3333 S=(3,) cap=60 dem=140 dimY=280
+H m=3 a=4 b=6: best ratio 1.9216 S=(4,) cap=204 dem=392 dimY=420
+== H m=3: top 5: [(2.8, 1, 4, (1,), 80, 224, 280), (2.8, 1, 4, (0,), 80, 224, 280), (2.5152, 3, 6, (2,), 264, 664, 840), (2.5152, 3, 6, (1, 3), 264, 664, 728), (2.5152, 2, 5, (1,), 264, 664, 840)]
+L m=3 a=1 b=1: best ratio 1.7500 S=(1,) cap=4 dem=7 dimY=8
+L m=3 a=1 b=2: best ratio 1.9167 S=(1,) cap=24 dem=46 dimY=56
+L m=3 a=1 b=3: best ratio 2.0500 S=(1,) cap=60 dem=123 dimY=168
+L m=3 a=1 b=4: best ratio 2.1625 S=(1,) cap=80 dem=173 dimY=280
+L m=3 a=1 b=5: best ratio 2.1333 S=(1,) cap=60 dem=128 dimY=280
+L m=3 a=1 b=6: best ratio 1.9583 S=(1,) cap=24 dem=47 dimY=168
+L m=3 a=1 b=7: best ratio 1.7500 S=(1,) cap=4 dem=7 dimY=56
+L m=3 a=2 b=2: best ratio 2.0088 S=(1, 2) cap=114 dem=229 dimY=364
+L m=3 a=2 b=3: best ratio 2.0093 S=(1, 2) cap=216 dem=434 dimY=1008
+L m=3 a=2 b=4: best ratio 1.8575 S=(1,) cap=372 dem=691 dimY=1120
+L m=3 a=2 b=5: best ratio 1.9676 S=(2,) cap=216 dem=425 dimY=560
+L m=3 a=2 b=6: best ratio 2.0965 S=(2,) cap=114 dem=239 dimY=420
+L m=3 a=2 b=7: best ratio 1.9583 S=(2,) cap=24 dem=47 dimY=168
+L m=3 a=3 b=6: best ratio 1.9676 S=(3,) cap=216 dem=425 dimY=560
+L m=3 a=3 b=7: best ratio 2.1333 S=(3,) cap=60 dem=128 dimY=280
+L m=3 a=4 b=6: best ratio 1.8575 S=(3,) cap=372 dem=691 dimY=1120
+== L m=3: top 5: [(2.1625, 1, 4, (1,), 80, 173, 280), (2.1625, 1, 4, (0,), 80, 173, 280), (2.1333, 3, 7, (3,), 60, 128, 280), (2.1333, 3, 7, (2,), 60, 128, 168), (2.1333, 1, 5, (1,), 60, 128, 280)]

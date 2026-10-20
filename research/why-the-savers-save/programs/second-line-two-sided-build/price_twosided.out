@@ -1,0 +1,6 @@
+calibration, one-sided U8 exact fill (residuals 3778/call, either side):  a = 1.6647327e-03  (an-ours 1.6647327e-3) {'m': 73, 'W': 7168, 'banks': 0, 'D': 2560, 'N': 1533104.1, 'a': 0.001664732700176769, 'overflow': 0, 'idle_left': 115056}
+one-sided U8X (with copies), exact fill:                                  a = 1.5197149e-03
+two-sided on U8X: Y width/call 3778  X 0  S 1120 ( 112 switching)  D per word 9728
+  bank model strict   : W  16293 banks  9125  D  9728  N  1862044.9  a = 5.1787224e-03  (x 3.111 over the one-sided U8 ceiling)
+  bank model per-run  : W   9319 banks  2151  D  9728  N  1787107.7  a = 5.3919553e-03  (x 3.239 over the one-sided U8 ceiling)
+  bank model relative : W   9319 banks  2151  D  9728  N  1787107.7  a = 5.3919553e-03  (x 3.239 over the one-sided U8 ceiling)

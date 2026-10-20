@@ -1,0 +1,23 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+d-bit-exits (13 Oct 2026). All scripts: python3 -I, standard library only, seconds to ~45 s each. Run from this folder.
+Input: data/bitE8mut-p111-tuned.json.gz = hub research/e8-bit-p111-tuned/tune/bitE8mut-p111-tuned.json.gz
+       (sha256 e3e301e62bc2b41dbf1ceac0acf3d35824ebeab1848c5a2142d4577b109da52f), data/selection9-p111.json (#589 frozen hosting),
+       data/xcheck_p.py (#589's checker, copied unchanged).
+0. controls:  control942.json, control589.json (pricer.py commands from the brief; both reproduce exactly)
+   python3 -I data/xcheck_p.py data/bitE8mut-p111-tuned.json.gz           # PASS on the unmodified word
+1. python3 -I anatomy.py   data/bitE8mut-p111-tuned.json.gz anatomy.json   # helper frame chains; least-frame literal cleanup -> all 439 at FULL
+2. python3 -I partners.py  data/bitE8mut-p111-tuned.json.gz partners.json  # every helper's C partners join to FULL
+3. python3 -I dirt_join.py data/bitE8mut-p111-tuned.json.gz dirt_join.json # EXACT exit obstruction (dirt-column lemma): 427 FULL joins
+4. python3 -I entrances.py data/bitE8mut-p111-tuned.json.gz entrances.json # D reads all 439 helpers; span test fails for the other 12
+5. python3 -I kernel.py    data/bitE8mut-p111-tuned.json.gz ent            # same-frame response kernels: 1 pivot
+6. python3 -I kernel_t.py  data/bitE8mut-p111-tuned.json.gz kernel_t.json  # time-shifted, donors at the entrance frame: 1
+7. python3 -I kernel_z.py  data/bitE8mut-p111-tuned.json.gz kz             # zero-cost re-timed: 2 alone, 1 jointly; word + replay in kz/
+8. python3 -I kernel_paid.py data/bitE8mut-p111-tuned.json.gz kernel_paid.json  # with <= 2 paid run splits: still 2
+9. python3 -I kernel_relax.py data/bitE8mut-p111-tuned.json.gz             # frames ignored: all 439 feasible (frames are the obstruction)
+10. python3 -I windows9.py data/selection9-p111.json                         # PR #442 nine-stage windows; frozen selection -> REM exactly
+11. python3 -I price_whatif.py                                              # what-if prices (r7 / r42 brackets and the real-window re-pack)
+12. python3 -I totals_exit.py data/bitE8mut-p111-tuned.json.gz              # the nine totals right after the scatter: 1 of 9 passes the span test

@@ -1,0 +1,8 @@
+m=2 f=3: dim W = 24, dim N = 12, dim notN = 12
+f(dir e1): rank mod p 2147483629 = 4, mod 2147483549 = 4, EXACT over Z[i] = 4   (0.0s)
+f(dir 2): rank mod p 2147483629 = 4, mod 2147483549 = 4, EXACT over Z[i] = 4   (0.0s)
+f(dir 3): rank mod p 2147483629 = 4, mod 2147483549 = 4, EXACT over Z[i] = 4   (0.0s)
+f(dir e1 dir e2): rank mod p 2147483629 = 8, mod 2147483549 = 8, EXACT over Z[i] = 8   (0.0s)
+f(kernel): rank mod p 2147483629 = 8, mod 2147483549 = 8, EXACT over Z[i] = 8   (0.0s)
+dim H - dim N = 8  (upper bound for every f)
+SUMMARY m=2 f=3: cap=4, f(B2)=8, dem=8

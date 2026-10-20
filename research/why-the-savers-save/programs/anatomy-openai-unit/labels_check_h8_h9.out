@@ -1,0 +1,16 @@
+h=8 stage 1: costs {'X': 7, 'Y': 7, 'C': 24, 'side': {2: 8, 0: 8}, 'fin': 504} ; table {'X': 7, 'Y': 7, 'C': 24, 'side': 8, 'fin': 504} ; decreasing edges ['C 3->4']
+h=8 stage 2: boundary X equal True, Y equal True
+h=8 stage 2: costs {'X': 56, 'Y': 56, 'C': 80, 'side': {2: 64, 0: 64}, 'fin': 448} ; table {'X': 56, 'Y': 56, 'C': 80, 'side': 64, 'fin': 448} ; decreasing edges ['C 3->4']
+h=8 stage 3: boundary X equal True, Y equal True
+h=8 terminals: X sink full True ; Y sink = U_a^perp True ; X source(stage1) = U_a checked at stage 1
+h=8 stage 3: costs {'X': 448, 'Y': 448, 'C': 528, 'side': {2: 512, 0: 512}, 'fin': 0} ; table {'X': 448, 'Y': 448, 'C': 528, 'side': 512, 'fin': 0} ; decreasing edges ['C 3->4']
+h=8: v=56 d=25 m=512 W=13607104 ; brute-force sum of residuals = 6967840768 ; W*m-2N+2L = 6967840768 ; equal: True ; Delta = -1003520
+problems: none
+h=9 stage 1: costs {'X': 8, 'Y': 8, 'C': 27, 'side': {2: 9, 0: 9}, 'fin': 720} ; table {'X': 8, 'Y': 8, 'C': 27, 'side': 9, 'fin': 720} ; decreasing edges ['C 3->4']
+h=9 stage 2: boundary X equal True, Y equal True
+h=9 stage 2: costs {'X': 72, 'Y': 72, 'C': 99, 'side': {2: 81, 0: 81}, 'fin': 648} ; table {'X': 72, 'Y': 72, 'C': 99, 'side': 81, 'fin': 648} ; decreasing edges ['C 3->4']
+h=9 stage 3: boundary X equal True, Y equal True
+h=9 terminals: X sink full True ; Y sink = U_a^perp True ; X source(stage1) = U_a checked at stage 1
+h=9 stage 3: costs {'X': 648, 'Y': 648, 'C': 747, 'side': {2: 729, 0: 729}, 'fin': 0} ; table {'X': 648, 'Y': 648, 'C': 747, 'side': 729, 'fin': 0} ; decreasing edges ['C 3->4']
+h=9: v=84 d=38 m=729 W=68965344 ; brute-force sum of residuals = 50278360608 ; W*m-2N+2L = 50278360608 ; equal: True ; Delta = -2624832
+problems: none

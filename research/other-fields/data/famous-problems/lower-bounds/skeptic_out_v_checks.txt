@@ -1,0 +1,21 @@
+(A) WHT = diag * XOR-convolution with fixed c(z)=i^-|z| * diag
+   n=1 N=2: max|Hv - D*xorconv(Dv,c)| = 0.00e+00; max|xorconv - H(Ha.Hb)/N| = 5.55e-17
+   n=2 N=4: max|Hv - D*xorconv(Dv,c)| = 0.00e+00; max|xorconv - H(Ha.Hb)/N| = 5.55e-17
+   n=3 N=8: max|Hv - D*xorconv(Dv,c)| = 0.00e+00; max|xorconv - H(Ha.Hb)/N| = 4.44e-16
+   n=4 N=16: max|Hv - D*xorconv(Dv,c)| = 0.00e+00; max|xorconv - H(Ha.Hb)/N| = 1.78e-15
+   n=5 N=32: max|Hv - D*xorconv(Dv,c)| = 5.33e-15; max|xorconv - H(Ha.Hb)/N| = 2.89e-15
+   n=6 N=64: max|Hv - D*xorconv(Dv,c)| = 7.23e-15; max|xorconv - H(Ha.Hb)/N| = 7.11e-15
+   n=7 N=128: max|Hv - D*xorconv(Dv,c)| = 2.21e-14; max|xorconv - H(Ha.Hb)/N| = 2.13e-14
+(B) Bluestein and convolution theorem, n = 1..40
+   Bluestein worst relative error 1.25e-14; convolution theorem worst error 1.11e-13; L <= 4n always
+(C) linear independence of f -> P^(x)f via Vandermonde at generic x, y
+   q=2, 12 distinct nonzero matrices: nodes distinct & nonzero: True; Vandermonde rank 12 / 12
+   q=3, 9 distinct nonzero matrices: nodes distinct & nonzero: True; Vandermonde rank 9 / 9
+(D) butterfly graph of the FFT for H_n is not a 2-superconcentrator
+   n=3: both pairings share an internal vertex: True; 2x2 minor of H on those rows/cols = 0.0
+   n=4: both pairings share an internal vertex: True; 2x2 minor of H on those rows/cols = 0.0
+   n=5: both pairings share an internal vertex: True; 2x2 minor of H on those rows/cols = 0.0
+(E) Morgenstern potential factors
+   trial 0: worst addition-gate factor 1.493 (<= 2); worst scalar-gate factor / max(1,|lam|) 1.000 (<= 1)
+   trial 1: worst addition-gate factor 1.000 (<= 2); worst scalar-gate factor / max(1,|lam|) 1.000 (<= 1)
+   trial 2: worst addition-gate factor 1.412 (<= 2); worst scalar-gate factor / max(1,|lam|) 1.000 (<= 1)

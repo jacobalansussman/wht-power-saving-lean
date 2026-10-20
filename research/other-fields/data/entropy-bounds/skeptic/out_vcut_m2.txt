@@ -1,0 +1,11 @@
+vcut.py:66: RuntimeWarning: divide by zero encountered in matmul
+  LB = float(yu @ bub + ye @ beq + np.minimum(red, 0).sum() * U)
+vcut.py:66: RuntimeWarning: overflow encountered in matmul
+  LB = float(yu @ bub + ye @ beq + np.minimum(red, 0).sum() * U)
+vcut.py:66: RuntimeWarning: invalid value encountered in matmul
+  LB = float(yu @ bub + ye @ beq + np.minimum(red, 0).sum() * U)
+m=2 W=3: 40 layouts; flow-form vs all-cuts mismatches 0; two-class stretchable 38, Lemma W violated 0; cut gaps 0
+m=2 W=4: 40 layouts; flow-form vs all-cuts mismatches 0; two-class stretchable 31, Lemma W violated 0; cut gaps 0
+m=2 W=5: 40 layouts; flow-form vs all-cuts mismatches 0; two-class stretchable 19, Lemma W violated 0; cut gaps 0
+m=2 W=6: 40 layouts; flow-form vs all-cuts mismatches 0; two-class stretchable 10, Lemma W violated 0; cut gaps 2
+m=2 session-1 gap layout [(0, 7), (3, 1), (4, 10), (0, 10), (10, 7)]: directed (9.0, 8.999999999999998), undirected (9.0, 9.0), all-cuts exact (8.999999999999995, Fraction(9, 1)); distances [2, 2, 2, 2, 2]

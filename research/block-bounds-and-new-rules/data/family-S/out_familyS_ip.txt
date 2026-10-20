@@ -1,0 +1,12 @@
+m=2: least n allowed by these constraints = 5 (plain 4); 15 parameter sets, e.g.
+  a,a',c,r1,r2,dJ = (0, 1, 1, 1, 0, 1)  T1 (size,dx,dz',L) = (1, 0, 1, 0)  T2 = (2, 1, 1, 0)
+  a,a',c,r1,r2,dJ = (0, 2, 1, 1, 1, 0)  T1 (size,dx,dz',L) = (0, 0, 0, 0)  T2 = (2, 2, 0, 0)
+m=3: least n allowed by these constraints = 7 (plain 6); 28 parameter sets, e.g.
+  a,a',c,r1,r2,dJ = (0, 2, 1, 2, 0, 1)  T1 (size,dx,dz',L) = (1, 0, 1, 0)  T2 = (3, 2, 1, 0)
+  a,a',c,r1,r2,dJ = (0, 3, 1, 2, 1, 0)  T1 (size,dx,dz',L) = (0, 0, 0, 0)  T2 = (3, 3, 0, 0)
+m=4: least n allowed by these constraints = 9 (plain 8); 45 parameter sets, e.g.
+  a,a',c,r1,r2,dJ = (0, 3, 1, 3, 0, 1)  T1 (size,dx,dz',L) = (1, 0, 1, 0)  T2 = (4, 3, 1, 0)
+  a,a',c,r1,r2,dJ = (0, 4, 1, 3, 1, 0)  T1 (size,dx,dz',L) = (0, 0, 0, 0)  T2 = (4, 4, 0, 0)
+m=5: least n allowed by these constraints = 11 (plain 10); 66 parameter sets, e.g.
+  a,a',c,r1,r2,dJ = (0, 4, 1, 4, 0, 1)  T1 (size,dx,dz',L) = (1, 0, 1, 0)  T2 = (5, 4, 1, 0)
+  a,a',c,r1,r2,dJ = (0, 5, 1, 4, 1, 0)  T1 (size,dx,dz',L) = (0, 0, 0, 0)  T2 = (5, 5, 0, 0)

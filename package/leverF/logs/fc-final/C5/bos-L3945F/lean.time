@@ -1,0 +1,23 @@
+	Command being timed: "/content/work/cc-jail/jail2.sh /content/work/fc-final/bos-L3945F/stage /bin/sh -c exec lake env /bin/sh -c 'PATH=/content/work/fc-final/bos-L3945F/control/bin:$PATH; export PATH; exec comparator /content/work/fc-final/bos-L3945F/control/lean.json'"
+	User time (seconds): 14520.48
+	System time (seconds): 1703.18
+	Percent of CPU this job got: 212%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:07:05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 10047212
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 123538
+	Minor (reclaiming a frame) page faults: 130312930
+	Voluntary context switches: 56547579
+	Involuntary context switches: 3007510
+	Swaps: 0
+	File system inputs: 14974944
+	File system outputs: 5884200
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -124,6 +124,12 @@ The statements of this section are written with one piece of notation. Choose on
 
 ## 3. One open case (pull request #288 lists it as open)
 
+*Added on 14 October 2026.* For the rules of my engine this case is now settled: section 8 of
+[open-directions-3.md](open-directions-3.md) gives a bound of 14/5 paid steps per message at m = 3, so three
+messages need 9 paid steps, not 8. The proof and its skeptics' checks are in the agents' working notes (not
+shown). I have not checked whether the bound holds in every reading of the register model of pull request #288.
+The section is kept as it was written.
+
 **The question. Three messages, m = 3, operator model: do 8 paid steps suffice, or are 9 needed?**
 
 **Who lists it.** Pull request #288 lists this case as open in its register model ("W = 3 with s = 8"), with the bound 50W/21, which is 7.14 for three messages.

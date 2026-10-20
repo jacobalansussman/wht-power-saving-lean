@@ -1,0 +1,13 @@
+ m=2 f=3 n=64 rank-1 block: weight under 'first two equal' 16 (formula 16), under 'number of equal pairs' 32, under 'all equal' 8
+ m=2 f=3 n=64 rank-2 block (= kernel): weight under 'first two equal' 24 (formula 24), under 'number of equal pairs' 40, under 'all equal' 8
+   => column permutations free, witness 'number of equal pairs': proper blocks >= W * 40/32 = 1.2500 W
+   => column permutations free, witness 'all equal': proper blocks >= W * 8/8 = 1.0000 W
+ m=2 f=4 n=256 rank-1 block: weight under 'first two equal' 64 (formula 64), under 'number of equal pairs' 144, under 'all equal' 8
+ m=2 f=4 n=256 rank-2 block (= kernel): weight under 'first two equal' 96 (formula 96), under 'number of equal pairs' 172, under 'all equal' 8
+   => column permutations free, witness 'number of equal pairs': proper blocks >= W * 172/144 = 1.1944 W
+   => column permutations free, witness 'all equal': proper blocks >= W * 8/8 = 1.0000 W
+ m=3 f=3 n=512 rank-1 block: weight under 'first two equal' 64 (formula 64), under 'number of equal pairs' 160, under 'all equal' 16
+ m=3 f=3 n=512 rank-2 block: weight under 'first two equal' 96 (formula 96), under 'number of equal pairs' 224, under 'all equal' 16
+ m=3 f=3 n=512 rank-3 block (= kernel): weight under 'first two equal' 112 (formula 112), under 'number of equal pairs' 304, under 'all equal' 16
+   => column permutations free, witness 'number of equal pairs': proper blocks >= W * 304/224 = 1.3571 W
+   => column permutations free, witness 'all equal': proper blocks >= W * 16/16 = 1.0000 W

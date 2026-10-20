@@ -1,0 +1,17 @@
+m=2 done: {'raw_words': 240, 'raw_bad': 0, 'pack_units': 0, 'pack_bad': 0, 'pack_nonunit': 0, 'gate_units': 60, 'gate_bad': 0, 'gate_nonunit': 0}
+m=3 done: {'raw_words': 480, 'raw_bad': 0, 'pack_units': 90, 'pack_bad': 0, 'pack_nonunit': 0, 'gate_units': 120, 'gate_bad': 0, 'gate_nonunit': 0}
+m=4 done: {'raw_words': 560, 'raw_bad': 0, 'pack_units': 180, 'pack_bad': 0, 'pack_nonunit': 0, 'gate_units': 180, 'gate_bad': 0, 'gate_nonunit': 0}
+FINAL {"raw_words": 560, "raw_bad": 0, "pack_units": 180, "pack_bad": 0, "pack_nonunit": 0, "gate_units": 180, "gate_bad": 0, "gate_nonunit": 0}
+example pack 3 2 {'M': 6, 'P': 3, 'B': 3, 'D': 0, 'Z': 0}
+example pack 3 3 {'M': 9, 'P': 6, 'B': 6, 'D': 0, 'Z': 0}
+example pack 3 3 {'M': 9, 'P': 6, 'B': 6, 'D': 0, 'Z': 0}
+example pack 3 2 {'M': 6, 'P': 3, 'B': 3, 'D': 0, 'Z': 0}
+example pack 3 3 {'M': 9, 'P': 6, 'B': 6, 'D': 0, 'Z': 0}
+example pack 3 2 {'M': 6, 'P': 3, 'B': 3, 'D': 0, 'Z': 0}
+example pack 3 3 {'M': 9, 'P': 6, 'B': 6, 'D': 0, 'Z': 0}
+example pack 3 3 {'M': 9, 'P': 6, 'B': 6, 'D': 0, 'Z': 0}
+example pack 3 3 {'M': 9, 'P': 6, 'B': 6, 'D': 0, 'Z': 0}
+example pack 3 3 {'M': 9, 'P': 6, 'B': 6, 'D': 0, 'Z': 0}
+example pack 3 2 {'M': 6, 'P': 3, 'B': 3, 'D': 0, 'Z': 0}
+example pack 3 2 {'M': 6, 'P': 3, 'B': 3, 'D': 0, 'Z': 0}
+python3 t_random.py 1 120  0.79s user 0.02s system 99% cpu 0.813 total

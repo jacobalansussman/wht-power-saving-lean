@@ -1,0 +1,11 @@
+coordinate masks: reads per total [56 56 56 56 56 56 56 56] frame dims [8, 8, 8, 8, 8, 8, 8, 8]
+(a) coord masks restart 0 residual 1.20e-10 natural: (8, 1, 0.6712263206478838) 1.2
+(a) coord masks restart 1 residual 1.20e-10 natural: (8, 1, 0.6787343321186246) 2.5
+(a) coord masks restart 2 residual 1.20e-10 natural: (8, 1, 0.5905567509592509) 3.7
+(b) unmasked K=8 restart 0 residual 1.51e-10 rank/natdim/min|d| (8, 1, 0.8689322736994655)  hist ['4.9e-09', '1.5e-10', '1.5e-10', '1.5e-10', '1.5e-10'] 5.4
+(b) unmasked K=8 restart 1 residual 1.43e-10 rank/natdim/min|d| (8, 1, 0.7215838450494853)  hist ['1.4e-07', '1.4e-10', '1.4e-10', '1.4e-10', '1.4e-10'] 6.8
+(b) unmasked K=9 restart 0 residual 1.61e-10 rank/natdim/min|d| (9, 1, 0.24429623274689805)  hist ['6.3e-06', '1.6e-10', '1.6e-10', '1.6e-10', '1.6e-10'] 9.2
+(b) unmasked K=9 restart 1 residual 2.96e-08 rank/natdim/min|d| (9, 0, 0.8776997493633791)  hist ['1.3e-06', '3.1e-08', '3.1e-08', '3.0e-08', '3.0e-08'] 11.6
+(b) unmasked K=10 restart 0 residual 1.62e-10 rank/natdim/min|d| (10, 1, 0.0005670738193957408)  hist ['8.9e-06', '1.7e-10', '1.6e-10', '1.6e-10', '1.6e-10'] 14.4
+(b) unmasked K=10 restart 1 residual 3.00e-08 rank/natdim/min|d| (10, 1, 0.7610526792833902)  hist ['3.2e-06', '2.7e-08', '3.1e-08', '3.1e-08', '3.0e-08'] 17.1
+$VENV -I controls.py 2  16.48s user 0.35s system 96% cpu 17.494 total

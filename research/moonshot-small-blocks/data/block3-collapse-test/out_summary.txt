@@ -1,0 +1,17 @@
+shape  W menu   patterns            n    best  median best max-per-array
+CH5    2 xw     pats_CH5            6   0.474   0.563              0.541
+ST     2 eng    pats_menu           5   0.628   0.635              0.629
+ST     2 wd     pats_menu           5   0.614   0.621              0.622
+ST     2 xq     pats_menu           5   0.599   0.604              0.622
+ST     2 xqm    pats_menu           5   0.570   0.572              0.594
+ST     2 xw     pats_E1dirs        69   0.560   0.804              0.614
+ST     2 xw     pats_E1pairs        7   0.682   0.851              0.896
+ST     2 xw     pats_E1same         3   0.822   0.829              0.849
+ST     2 xw     pats_E1single     184   0.573   0.666              0.581
+ST     2 xw     pats_E2           150   0.567   0.653              0.608
+ST     2 xw     pats_menu           5   0.578   0.581              0.613
+ST     2 xwg    pats_xwg            6   0.567   0.658              0.608
+ST     3 xw     pats_W37           60   0.652   0.708              0.677
+ST     3 xw     pats_W38           60   0.469   0.547              0.514
+ST     3 xw     pats_W38best        4   0.427   0.444              0.474
+distinct (pattern, campaign) pairs: 574; candidates (residual < 1e-7) outside controls: 0

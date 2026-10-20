@@ -1,0 +1,20 @@
+noise -12 dBFS (complex)         V0  SQNR  42.24 dB  max|err| 9.62 LSB  mean err (re) -0.503
+noise -12 dBFS (complex)         V6  SQNR  47.74 dB  max|err| 2.28 LSB  mean err (re) +0.001
+noise -12 dBFS (complex)         V7  SQNR  48.37 dB  max|err| 2.28 LSB  mean err (re) +0.084
+noise -12 dBFS (complex)         V4  SQNR  49.35 dB  max|err| 2.35 LSB  mean err (re) +0.169
+noise -12 dBFS (real)            V0  SQNR  39.31 dB  max|err| 7.92 LSB  mean err (re) -0.497
+noise -12 dBFS (real)            V6  SQNR  44.77 dB  max|err| 2.27 LSB  mean err (re) -0.001
+noise -12 dBFS (real)            V7  SQNR  45.40 dB  max|err| 2.17 LSB  mean err (re) +0.085
+noise -12 dBFS (real)            V4  SQNR  46.37 dB  max|err| 2.10 LSB  mean err (re) +0.169
+real tone -1 dBFS, off-bin       V0  SQNR  47.34 dB  max|err| 7.36 LSB  mean err (re) -0.490  worst spur -21.1 dBc (input itself -21.1 dBc)
+real tone -1 dBFS, off-bin       V6  SQNR  52.76 dB  max|err| 3.51 LSB  mean err (re) +0.001  worst spur -21.1 dBc (input itself -21.1 dBc)
+real tone -1 dBFS, off-bin       V7  SQNR  53.44 dB  max|err| 2.95 LSB  mean err (re) +0.086  worst spur -21.1 dBc (input itself -21.1 dBc)
+real tone -1 dBFS, off-bin       V4  SQNR  54.29 dB  max|err| 2.51 LSB  mean err (re) +0.164  worst spur -21.1 dBc (input itself -21.1 dBc)
+real tone -1 dBFS, bin 333       V0  SQNR  49.00 dB  max|err| 4.48 LSB  mean err (re) -0.326  worst spur -70.3 dBc (input itself -117.5 dBc)
+real tone -1 dBFS, bin 333       V6  SQNR  58.41 dB  max|err| 3.01 LSB  mean err (re) +0.013  worst spur -76.3 dBc (input itself -117.5 dBc)
+real tone -1 dBFS, bin 333       V7  SQNR  59.91 dB  max|err| 3.04 LSB  mean err (re) +0.021  worst spur -76.3 dBc (input itself -117.5 dBc)
+real tone -1 dBFS, bin 333       V4  SQNR  65.02 dB  max|err| 3.01 LSB  mean err (re) +0.012  worst spur -77.3 dBc (input itself -117.5 dBc)
+complex tone -1 dBFS, bin 333    V0  SQNR  53.28 dB  max|err| 5.37 LSB  mean err (re) -0.239  worst spur -75.3 dBc (input itself -117.6 dBc)
+complex tone -1 dBFS, bin 333    V6  SQNR  63.86 dB  max|err| 4.27 LSB  mean err (re) +0.010  worst spur -82.3 dBc (input itself -117.6 dBc)
+complex tone -1 dBFS, bin 333    V7  SQNR  65.45 dB  max|err| 3.96 LSB  mean err (re) +0.011  worst spur -82.3 dBc (input itself -117.6 dBc)
+complex tone -1 dBFS, bin 333    V4  SQNR  70.84 dB  max|err| 3.30 LSB  mean err (re) +0.006  worst spur -86.3 dBc (input itself -117.6 dBc)

@@ -1,0 +1,20 @@
+check (1)+(2): exact balance and Phi conservation
+  1+4 in 10, L=30: units at 7 columns, sources at 5 sizes (range 12..27), unbalanced sizes 0, leaves 10, sum Source*s^tau_c = 10.0000000000
+  1+4 in 10, L=200: units at 17 columns, sources at 8 sizes (range 72..192), unbalanced sizes 0, leaves 10, sum Source*s^tau_c = 10.0000000000
+  1+4 in 10, L=3000: units at 40 columns, sources at 11 sizes (range 1024..2916), unbalanced sizes 0, leaves 10, sum Source*s^tau_c = 10.0000000000
+  1+1 in 4, L=30: units at 7 columns, sources at 5 sizes (range 12..27), unbalanced sizes 0, leaves 4, sum Source*s^tau_c = 4.0000000000
+  1+1 in 4, L=200: units at 17 columns, sources at 8 sizes (range 72..192), unbalanced sizes 0, leaves 4, sum Source*s^tau_c = 4.0000000000
+  1+1 in 4, L=3000: units at 40 columns, sources at 11 sizes (range 1024..2916), unbalanced sizes 0, leaves 4, sum Source*s^tau_c = 4.0000000000
+  7+38 in 88, L=30: units at 7 columns, sources at 5 sizes (range 12..27), unbalanced sizes 0, leaves 88, sum Source*s^tau_c = 88.0000000000
+  7+38 in 88, L=200: units at 17 columns, sources at 8 sizes (range 72..192), unbalanced sizes 0, leaves 88, sum Source*s^tau_c = 88.0000000000
+  7+38 in 88, L=3000: units at 40 columns, sources at 11 sizes (range 1024..2916), unbalanced sizes 0, leaves 88, sum Source*s^tau_c = 88.0000000000
+  1+6 in 14, L=30: units at 7 columns, sources at 5 sizes (range 12..27), unbalanced sizes 0, leaves 14, sum Source*s^tau_c = 14.0000000000
+  1+6 in 14, L=200: units at 17 columns, sources at 8 sizes (range 72..192), unbalanced sizes 0, leaves 14, sum Source*s^tau_c = 14.0000000000
+  1+6 in 14, L=3000: units at 40 columns, sources at 11 sizes (range 1024..2916), unbalanced sizes 0, leaves 14, sum Source*s^tau_c = 14.0000000000
+check (3): T(n)/n^tau_c for the recursive frontier schedule, n <= 480
+  1+4 in 10: tau_c = 0.8811; n=60: T=42.76, T/n^tc=1.1595, L=54; n=120: T=78.94, T/n^tc=1.1622, L=108; n=240: T=145.76, T/n^tc=1.1651, L=216; n=480: T=269.16, T/n^tc=1.1681, L=432
+     max over 2<=n<=480 of T/n^tc = 1.1959
+  1+1 in 4: tau_c = 0.7605; n=60: T=29.54, T/n^tc=1.3127, L=54; n=120: T=50.84, T/n^tc=1.3336, L=108; n=240: T=88.44, T/n^tc=1.3694, L=216; n=480: T=152.49, T/n^tc=1.3938, L=432
+     max over 2<=n<=480 of T/n^tc = 1.4257
+  7+38 in 88: tau_c = 0.8750; n=60: T=42.20, T/n^tc=1.1732, L=54; n=120: T=77.56, T/n^tc=1.1756, L=108; n=240: T=142.51, T/n^tc=1.1778, L=216; n=480: T=261.85, T/n^tc=1.1800, L=432
+     max over 2<=n<=480 of T/n^tc = 1.2117

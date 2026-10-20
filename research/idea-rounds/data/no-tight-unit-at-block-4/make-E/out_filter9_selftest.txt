@@ -1,0 +1,4 @@
+self-test Lambda^8 dir: 5 columns match brute-force minors  (4s)
+random e in E built; e in N: True; nonzeros 102960  (13s)
+rho(K) e in N: True   (checks E_0 and the Z_c claim)  (19s)
+rho(d1) e in N: False; out-part nonzeros 47040  (19s)

@@ -1,0 +1,10 @@
+[2s]
+|B'| = 1344  |E'| = 192
+dims A, B, C: 7 21 28
+C7 ⟂ C21: True
+hook type 7: t = -0.333333, residual 1.57e-14
+hook type 21: t = 1.000000, residual 4.00e-14
+family members (cap, demand): [(10, 28), (10, 28), (10, 28), (10, 28)]
+V56 B'-types (dim, mult): [(7, 2), (21, 2)]
+C^30 B'-types (dim, mult): [(1, 4), (7, 2), (6, 2)]
+shared B'-types (dim, mult in V56, mult in C^30): []

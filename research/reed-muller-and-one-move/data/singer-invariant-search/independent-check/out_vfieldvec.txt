@@ -1,0 +1,12 @@
+m=3 sd   n=7 N=6: nonzero forms 63, odd 56 | odd with nontrivial stabiliser: 0 | even with nontrivial stabiliser: 0 | min |K| over nonzero 2, over odd 2 (2^(m-2)=2) | odd |J| values [4] | deletion max |J|/|K| = 2.000000 at |K|=2, |J|=4 | odd orbits = odd/n = 8.0 (2^(N-m) = 8)
+   rotation law a_(Q o s) = a a_Q: 0 violations in 200 random forms
+m=3 poly n=7 N=6: nonzero forms 63, odd 63 | odd with nontrivial stabiliser: 0 | even with nontrivial stabiliser: 0 | min |K| over nonzero 2, over odd 2 (2^(m-2)=2) | odd |J| values [2, 4, 6] | deletion max |J|/|K| = 3.000000 at |K|=2, |J|=6
+m=4 sd   n=15 N=10: nonzero forms 1023, odd 960 | odd with nontrivial stabiliser: 0 | even with nontrivial stabiliser: 18 | min |K| over nonzero 4, over odd 4 (2^(m-2)=4) | odd |J| values [8] | deletion max |J|/|K| = 2.000000 at |K|=4, |J|=8 | odd orbits = odd/n = 64.0 (2^(N-m) = 64)
+   rotation law a_(Q o s) = a a_Q: 0 violations in 200 random forms
+m=4 poly n=15 N=10: nonzero forms 1023, odd 1023 | odd with nontrivial stabiliser: 18 | even with nontrivial stabiliser: 0 | min |K| over nonzero 4, over odd 4 (2^(m-2)=4) | odd |J| values [4, 6, 8, 10, 12] | deletion max |J|/|K| = 3.000000 at |K|=4, |J|=12
+m=5 sd   n=31 N=15: nonzero forms 32767, odd 31744 | odd with nontrivial stabiliser: 0 | even with nontrivial stabiliser: 0 | min |K| over nonzero 8, over odd 8 (2^(m-2)=8) | odd |J| values [16] | deletion max |J|/|K| = 2.000000 at |K|=8, |J|=16 | odd orbits = odd/n = 1024.0 (2^(N-m) = 1024)
+   rotation law a_(Q o s) = a a_Q: 0 violations in 200 random forms
+m=5 poly n=31 N=15: nonzero forms 32767, odd 32767 | odd with nontrivial stabiliser: 0 | even with nontrivial stabiliser: 0 | min |K| over nonzero 8, over odd 8 (2^(m-2)=8) | odd |J| values [8, 12, 16, 20, 24] | deletion max |J|/|K| = 3.000000 at |K|=8, |J|=24
+m=6 sd   n=63 N=21: nonzero forms 2097151, odd 2064384 | odd with nontrivial stabiliser: 0 | even with nontrivial stabiliser: 511 | min |K| over nonzero 16, over odd 16 (2^(m-2)=16) | odd |J| values [32] | deletion max |J|/|K| = 2.000000 at |K|=16, |J|=32 | odd orbits = odd/n = 32768.0 (2^(N-m) = 32768)
+   rotation law a_(Q o s) = a a_Q: 0 violations in 200 random forms
+m=6 poly n=63 N=21: nonzero forms 2097151, odd 2097151 | odd with nontrivial stabiliser: 511 | even with nontrivial stabiliser: 0 | min |K| over nonzero 16, over odd 16 (2^(m-2)=16) | odd |J| values [16, 24, 28, 32, 36, 40, 48] | deletion max |J|/|K| = 2.500000 at |K|=16, |J|=40

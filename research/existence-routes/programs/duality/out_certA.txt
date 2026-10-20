@@ -1,0 +1,10 @@
+certificate A (label permutation module), delta_d = 2^m - 2^(m-d); m=3: [4, 6, 7] (w-bounds 5.4: 4, 6, 7)
+Rs 2[2] <= [1]+[3] at block 3: paid 11.000 vs tasks 12.000 -> EXCLUDED
+Rs 2[2] <= [1]+[3] at block 6: paid 88.000 vs tasks 96.000 -> EXCLUDED
+R2 2[2] <= 1.05[1]+[3] at block 3: paid 11.200 vs tasks 12.000 -> EXCLUDED
+R2 2[2] <= 1.05[1]+[3] at block 6: paid 89.600 vs tasks 96.000 -> EXCLUDED
+R2b 2[4] <= [1]+[7] at block 7: paid 191.000 vs tasks 240.000 -> EXCLUDED
+R2b 2[4] <= [1]+[7] at block 10: paid 1528.000 vs tasks 1920.000 -> EXCLUDED
+R1 2[3] <= 5[1] at block 3: paid 20.000 vs tasks 14.000 -> allowed by A
+R1 2[3] <= 5[1] at block 6: paid 160.000 vs tasks 112.000 -> allowed by A
+spreading family 2[k] <= [k-j]+[k+j]: paid - tasks = 2^(m-k) (2 - 2^j - 2^-j) < 0 for j >= 1

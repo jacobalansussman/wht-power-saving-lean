@@ -1,0 +1,12 @@
+W=13 t=0: multisets 1, excluded 1, open 0
+W=13 t=1: multisets 63, excluded 62, open 1; every open case contains 63 or two extras XOR to 63: True; e.g. [(63,)]
+W=13 t=2: multisets 2016, excluded 1922, open 94; every open case contains 63 or two extras XOR to 63: True; e.g. [(1, 62), (1, 63), (2, 61), (2, 63)]
+W=14 t=1: multisets 63, excluded 63, open 0
+W=14 t=2: multisets 2016, excluded 2015, open 1; every open case contains 63 or two extras XOR to 63: True; e.g. [(63, 63)]
+W=14 t=3: multisets 43680, excluded 43586, open 94; every open case contains 63 or two extras XOR to 63: True; e.g. [(1, 62, 63), (1, 63, 63), (2, 61, 63), (2, 63, 63)]
+W=15 t=1: multisets 63, excluded 63, open 0
+W=15 t=2: multisets 2016, excluded 2016, open 0
+W=15 t=3: multisets 43680, excluded 43679, open 1; every open case contains 63 or two extras XOR to 63: True; e.g. [(63, 63, 63)]
+W=16 t=1: multisets 63, excluded 63, open 0
+W=16 t=2: multisets 2016, excluded 2016, open 0
+W=16 t=3: multisets 43680, excluded 43680, open 0

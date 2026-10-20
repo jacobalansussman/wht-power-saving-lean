@@ -1,0 +1,41 @@
+== plain    m=2 W=2 registers=2  unit=True (true every-f model: True)  M=4 (W*m=4)
+   single-term always: True (max terms per entry 1); single-label always: True (max labels per entry 1)
+   frame-coherent gauge: True [coherent]; no-frame-packing gauge: True [no frame packing in some gauge]
+   Theorem C hypothesis (every move output at one level): True; (at one distance from L_T): True
+   Theorem B hypothesis (moved registers single-term, two-input ones with free twist): True; packed moves 0; distinct twists 0
+== gaugeX   m=2 W=2 registers=2  unit=True (true every-f model: True)  M=4 (W*m=4)
+   single-term always: True (max terms per entry 1); single-label always: True (max labels per entry 1)
+   frame-coherent gauge: True [coherent]; no-frame-packing gauge: True [no frame packing in some gauge]
+   Theorem C hypothesis (every move output at one level): False; (at one distance from L_T): False
+   Theorem B hypothesis (moved registers single-term, two-input ones with free twist): False; packed moves 1; distinct twists 1
+== SPLIT1   m=2 W=1 registers=3  unit=True (true every-f model: True)  M=3 (W*m=2)
+   single-term always: False (max terms per entry 2); single-label always: False (max labels per entry 2)
+   frame-coherent gauge: False [same-input split (input 0 carries 2 labels in one register)]; no-frame-packing gauge: False [frame packing forced (input 0 on 2 frames in a moved array)]
+   Theorem C hypothesis (every move output at one level): False; (at one distance from L_T): False
+== HOLO3    m=2 W=3 registers=3  unit=True (true every-f model: True)  M=6 (W*m=6)
+   single-term always: True (max terms per entry 1); single-label always: True (max labels per entry 1)
+   frame-coherent gauge: False [holonomy (inconsistent relative gauge between inputs 2 and 1)]; no-frame-packing gauge: False [frame packing forced (holonomy between inputs 2, 1)]
+   Theorem C hypothesis (every move output at one level): True; (at one distance from L_T): True
+== plain    m=3 W=2 registers=2  unit=True (true every-f model: True)  M=6 (W*m=6)
+   single-term always: True (max terms per entry 1); single-label always: True (max labels per entry 1)
+   frame-coherent gauge: True [coherent]; no-frame-packing gauge: True [no frame packing in some gauge]
+   Theorem C hypothesis (every move output at one level): True; (at one distance from L_T): True
+   Theorem B hypothesis (moved registers single-term, two-input ones with free twist): True; packed moves 0; distinct twists 0
+== gaugeX   m=3 W=2 registers=2  unit=True (true every-f model: True)  M=6 (W*m=6)
+   single-term always: True (max terms per entry 1); single-label always: True (max labels per entry 1)
+   frame-coherent gauge: True [coherent]; no-frame-packing gauge: True [no frame packing in some gauge]
+   Theorem C hypothesis (every move output at one level): False; (at one distance from L_T): False
+   Theorem B hypothesis (moved registers single-term, two-input ones with free twist): False; packed moves 2; distinct twists 1
+== C6O3     m=3 W=2 registers=2  unit=True (true every-f model: True)  M=6 (W*m=6)
+   single-term always: True (max terms per entry 1); single-label always: True (max labels per entry 1)
+   frame-coherent gauge: False [holonomy (inconsistent relative gauge between inputs 0 and 1)]; no-frame-packing gauge: False [frame packing forced (holonomy between inputs 0, 1)]
+   Theorem C hypothesis (every move output at one level): True; (at one distance from L_T): True
+   Theorem B hypothesis (moved registers single-term, two-input ones with free twist): True; packed moves 6; distinct twists 2
+== SPLIT1   m=3 W=1 registers=3  unit=True (true every-f model: True)  M=4 (W*m=3)
+   single-term always: False (max terms per entry 2); single-label always: False (max labels per entry 2)
+   frame-coherent gauge: False [same-input split (input 0 carries 2 labels in one register)]; no-frame-packing gauge: False [frame packing forced (input 0 on 2 frames in a moved array)]
+   Theorem C hypothesis (every move output at one level): False; (at one distance from L_T): False
+== HOLO3    m=3 W=3 registers=3  unit=True (true every-f model: True)  M=9 (W*m=9)
+   single-term always: True (max terms per entry 1); single-label always: True (max labels per entry 1)
+   frame-coherent gauge: False [holonomy (inconsistent relative gauge between inputs 2 and 1)]; no-frame-packing gauge: False [frame packing forced (holonomy between inputs 2, 1)]
+   Theorem C hypothesis (every move output at one level): True; (at one distance from L_T): True

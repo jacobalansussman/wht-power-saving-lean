@@ -1,0 +1,7 @@
+coord restart 0 iters 30 residual 5.969e-12  rank(B) 8  naturality defect 2.48e-13 (0 = B = D1 Gram D2 test passes)
+coord restart 1 iters 31 residual 6.004e-12  rank(B) 8  naturality defect 2.28e-13 (0 = B = D1 Gram D2 test passes)
+coord restart 2 iters 32 residual 7.351e-12  rank(B) 8  naturality defect 3.16e-13 (0 = B = D1 Gram D2 test passes)
+coord restart 3 iters 30 residual 3.473e-12  rank(B) 8  naturality defect 1.43e-13 (0 = B = D1 Gram D2 test passes)
+coord restart 4 iters 29 residual 8.210e-12  rank(B) 8  naturality defect 3.14e-13 (0 = B = D1 Gram D2 test passes)
+coord restart 5 iters 29 residual 9.565e-12  rank(B) 8  naturality defect 4.13e-13 (0 = B = D1 Gram D2 test passes)
+BEST coord 3.473e-12

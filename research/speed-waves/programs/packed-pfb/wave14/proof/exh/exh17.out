@@ -1,0 +1,3 @@
+legal coefficients (-511..512): 67108864 vectors, mismatches 0 PASS
+broken copy (correction bit P[15]) on legal coefficients: mismatches 10291968 (FAILS as it must)
+illegal coefficients: 67108864 vectors, mismatches 33548849 (failing c nearest the legal range: -512 and 513) -> the bound is tight

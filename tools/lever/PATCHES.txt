@@ -1,0 +1,39 @@
+Changes made to the programs in tools/lever/ when they were copied into this repository (19 Oct 2026).
+Nothing else differs from the versions that produced the recorded results.
+
+== controls.py
+-- before:
+import sys
+sys.path.insert(0, '<the agents' working folder>/wht43/bound-check/m-anatomy')
+sys.path.insert(0, '<the agents' working folder>/wht45/frontier/lever-reprice/tools')
+
+-- after:
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+
+== lever_price.py
+-- before:
+sys.path.insert(0, '<the agents' working folder>/wht45/frontier/lever-reprice/tools')
+
+-- after:
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+
+== price_ours.py
+-- before:
+sys.path.insert(0, '<the agents' working folder>/wht43/bound-check/m-anatomy')
+sys.path.insert(0, '<the agents' working folder>/wht45/frontier/lever-reprice/tools')
+
+-- after:
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+
+== g0_staged.py
+-- before:
+XH = BC + '/h-L3-build/lean/Work/XHost'
+-- after:
+XH = a[a.index('--xhost') + 1] if '--xhost' in a else BC + '/h-L3-build/lean/Work/XHost'   # release copy: --xhost added
+

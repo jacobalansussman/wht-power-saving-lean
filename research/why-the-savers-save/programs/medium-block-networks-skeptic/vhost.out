@@ -1,0 +1,9 @@
+P=1 m=25: D/replica 32; hosted (cx-medium exact fill) 7.3057e-04; all helpers on ideal banks 7.3057e-04; helper narrow mass per replica 30089 = 68.8% of the hosted N
+P=2 m=41: D/replica 128; hosted (cx-medium exact fill) 1.4667e-03; all helpers on ideal banks 1.3233e-03; helper narrow mass per replica 59492 = 68.3% of the hosted N
+P=3 m=57: D/replica 224; hosted (cx-medium exact fill) 1.6523e-03; all helpers on ideal banks 1.4054e-03; helper narrow mass per replica 92003 = 68.1% of the hosted N
+P=4 m=73: D/replica 320; hosted (cx-medium exact fill) 1.6647e-03; all helpers on ideal banks 1.3929e-03; helper narrow mass per replica 126702 = 66.1% of the hosted N
+P=5 m=89: D/replica 416; hosted (cx-medium exact fill) 1.6493e-03; all helpers on ideal banks 1.3559e-03; helper narrow mass per replica 163093 = 64.9% of the hosted N
+helpers free (no helper pieces, idle children whole):
+  P=1 m=25: D/replica 32; price 2.3338e-03
+  P=2 m=41: D/replica 128; price 3.4397e-03
+  P=4 m=73: D/replica 320; price 3.1087e-03

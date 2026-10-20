@@ -1,0 +1,5 @@
+bent n=4: rank 16 ; hyperplane ranks min/max 4 4 over 30
+circ n=5: rank 32 ; hyperplane ranks min/max 0 8 over 62 ; max nonzero autocorr 0
+circ n=5 (bit-reversed reading): rank 32 ; max hyperplane rank 8
+Singer permutation n=3: rank 8 ; hyperplane ranks min/max 2 2
+plain 1 in 5: star rows checked 6300 ; min slack (>= 0 means feasible) 0 ; even 3-flat supports 225 ; odd 240

@@ -1,0 +1,48 @@
+===== certificates: rigorous =====
+m=2 ranks<=2: boosters negative at 0/200 grid points of (0,1)
+   cover [0.9, 0.9983]: eps = -0 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.9983 (eps -0), v = {}
+m=3 ranks<=3: boosters negative at 0/200 grid points of (0,1)
+   cover [0.9, 0.9983]: eps = -0 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.9983 (eps -0), v = {}
+m=4 ranks<=4: boosters negative at 0/200 grid points of (0,1)
+   cover [0.9, 0.9983]: eps = -0 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.9983 (eps -0), v = {}
+m=5 ranks<=5: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 7.71e-05 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 1.01e-08), v = {1: 0.00016, 2: -0.16715, 3: 0.66683, 4: -0.83285, 5: 0.33301}
+m=6 ranks<=4: boosters negative at 109/200 grid points of (0,1), from 0.460 to 0.999
+m=6 ranks<=5: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=6 ranks<=6: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 0.00023 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 7.54e-08), v = {1: 0.00022, 2: -0.22786, 3: 0.8182, 4: -0.77214, 6: 0.18158}
+m=7 ranks<=4: boosters negative at 115/200 grid points of (0,1), from 0.430 to 0.999
+m=7 ranks<=5: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=7 ranks<=6: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=7 ranks<=7: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 0.000482 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 1.08e-07), v = {1: -0.06358, 3: 0.32948, 6: -0.93642, 7: 0.67052}
+m=8 ranks<=4: boosters negative at 115/200 grid points of (0,1), from 0.430 to 0.999
+m=8 ranks<=5: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=8 ranks<=6: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=8 ranks<=7: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=8 ranks<=8: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 0.000733 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 2.89e-08), v = {1: -0.3141, 2: 0.7094, 5: -0.6859, 8: 0.2906}
+===== certificates: all =====
+m=2 ranks<=2: boosters negative at 0/200 grid points of (0,1)
+   cover [0.9, 0.9983]: eps = -0 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.9983 (eps -0), v = {}
+m=3 ranks<=3: boosters negative at 0/200 grid points of (0,1)
+   cover [0.9, 0.9983]: eps = -0 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.9983 (eps -0), v = {}
+m=4 ranks<=4: boosters negative at 0/200 grid points of (0,1)
+   cover [0.9, 0.9983]: eps = -0 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.9983 (eps -0), v = {}
+m=5 ranks<=5: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 5.09e-05 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 8.87e-09), v = {1: 4e-05, 2: -0.16679, 3: 0.66671, 4: -0.83321, 5: 0.33325}
+m=6 ranks<=5: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=6 ranks<=6: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 0.00023 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 3.31e-08), v = {1: 0.00019, 2: -0.19099, 3: 0.52401, 5: -0.80901, 6: 0.4758}
+m=7 ranks<=4: boosters negative at 115/200 grid points of (0,1), from 0.430 to 0.999
+m=7 ranks<=5: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=7 ranks<=6: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=7 ranks<=7: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 0.000474 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 1.12e-07), v = {2: -0.18333, 3: 0.43333, 6: -0.81667, 7: 0.56667}
+m=8 ranks<=4: boosters negative at 115/200 grid points of (0,1), from 0.430 to 0.999
+m=8 ranks<=5: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=8 ranks<=6: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=8 ranks<=7: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=8 ranks<=8: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 0.000728 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 3.15e-09), v = {1: -0.25175, 2: 0.54312, 6: -0.74825, 8: 0.45688}
+python3 -B lp2.py  15.07s user 0.84s system 107% cpu 14.760 total

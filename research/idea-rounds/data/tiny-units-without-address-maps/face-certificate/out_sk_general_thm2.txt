@@ -1,0 +1,13 @@
+THEOREM 2 of general.md: N_u = span of e(x_1..x_f) with u.x_1 = ... = u.x_f; whole space V, Kronecker powers of the true matrices
+m=2 f=3: dem as predicted for 3 of 3 functionals u; least singular-value gap 2.11e+15; examples (u, dim N_u, dem, predicted): [(1, 16, 16, 16), (2, 16, 16, 16), (3, 16, 12, 12)]
+      directions with u.w=0: block (outside N_u) x N_u non-zero in 0 of 3 cases; with u.w=1: cap = dim N_u in 6 of 6 tested; shifts and phase letters moving N_u outside itself: 0
+m=2 f=4: dem as predicted for 3 of 3 functionals u; least singular-value gap 5.8e+14; examples (u, dim N_u, dem, predicted): [(1, 32, 32, 32), (2, 32, 32, 32), (3, 32, 28, 28)]
+      directions with u.w=0: block (outside N_u) x N_u non-zero in 0 of 3 cases; with u.w=1: cap = dim N_u in 6 of 6 tested; shifts and phase letters moving N_u outside itself: 0
+m=2 f=5: dem as predicted for 3 of 3 functionals u; least singular-value gap 1.92e+14; examples (u, dim N_u, dem, predicted): [(1, 64, 64, 64), (2, 64, 64, 64), (3, 64, 60, 60)]
+      directions with u.w=0: block (outside N_u) x N_u non-zero in 0 of 3 cases; with u.w=1: cap = dim N_u in 6 of 6 tested; shifts and phase letters moving N_u outside itself: 0
+m=3 f=3: dem as predicted for 7 of 7 functionals u; least singular-value gap 2.41e+14; examples (u, dim N_u, dem, predicted): [(1, 128, 128, 128), (2, 128, 128, 128), (3, 128, 96, 96)]
+      directions with u.w=0: block (outside N_u) x N_u non-zero in 0 of 21 cases; with u.w=1: cap = dim N_u in 28 of 28 tested; shifts and phase letters moving N_u outside itself: 0
+m=3 f=4: dem as predicted for 7 of 7 functionals u; least singular-value gap 3.93e+13; examples (u, dim N_u, dem, predicted): [(1, 512, 512, 512), (2, 512, 512, 512), (3, 512, 448, 448)]
+      directions with u.w=0: block (outside N_u) x N_u non-zero in 0 of 21 cases; with u.w=1: cap = dim N_u in 28 of 28 tested; shifts and phase letters moving N_u outside itself: 0
+m=4 f=3: dem as predicted for 15 of 15 functionals u; least singular-value gap 3.16e+13; examples (u, dim N_u, dem, predicted): [(1, 1024, 1024, 1024), (2, 1024, 1024, 1024), (3, 1024, 768, 768)]
+      directions with u.w=0: block (outside N_u) x N_u non-zero in 0 of 105 cases; with u.w=1: cap = dim N_u in 8 of 8 tested; shifts and phase letters moving N_u outside itself: 0

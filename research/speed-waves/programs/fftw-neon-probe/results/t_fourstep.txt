@@ -1,0 +1,7 @@
+[timing lock] waiting for timing lock 05:41:46
+[timing lock] got lock 05:44:39; load: { 25.18 18.25 12.83 }
+numpy 2.0.2
+n=2^16 (256x256) err 4.93e-16 | np.fft.fft single: best 10.563 med 10.677 ns/pt | four-step from numpy's batched calls: best 9.996 med 10.094 ns/pt | ratio 0.95
+n=2^18 (512x512) err 4.12e-16 | np.fft.fft single: best 8.636 med 8.762 ns/pt | four-step from numpy's batched calls: best 11.847 med 12.339 ns/pt | ratio 1.37
+n=2^20 (1024x1024) err 5.65e-16 | np.fft.fft single: best 11.193 med 11.346 ns/pt | four-step from numpy's batched calls: best 17.538 med 17.612 ns/pt | ratio 1.57
+n=2^22 (2048x2048) err 5.33e-16 | np.fft.fft single: best 13.189 med 13.365 ns/pt | four-step from numpy's batched calls: best 19.809 med 20.045 ns/pt | ratio 1.50

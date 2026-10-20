@@ -1,0 +1,8 @@
+M0 = Dbar L0; |nbr(L0)| = 62, N1 candidates (d(M0, N1) = 2): 60
+walk 0: |N2 choices| 56, anchors 48, targets per anchor {32: 48}, ordered anchor pairs with a special-position merge 1536 of 2256, configurations (P1, Q, A1, A2) 393216, leftover layers (d(Q,A1), d(P1,A2)) {(3, 3): 98304, (3, 4): 98304, (4, 3): 98304, (4, 4): 98304}
+   per ordered pair (|T(P1)|, #clean A1, #clean A2): {(32, 0, 0): 720, (32, 16, 16): 1536}
+walk 1: |N2 choices| 56, anchors 48, targets per anchor {32: 48}, ordered anchor pairs with a special-position merge 1536 of 2256, configurations (P1, Q, A1, A2) 393216, leftover layers (d(Q,A1), d(P1,A2)) {(3, 3): 98304, (3, 4): 98304, (4, 3): 98304, (4, 4): 98304}
+   per ordered pair (|T(P1)|, #clean A1, #clean A2): {(32, 0, 0): 720, (32, 16, 16): 1536}
+distinct census results over 60 random walks: 1  (walk-independent iff 1)
+  60 walks: (56, 48, ((32, 48),), 1536, 393216, (((3, 3), 98304), ((3, 4), 98304), ((4, 3), 98304), ((4, 4), 98304)))
+time 7.0s

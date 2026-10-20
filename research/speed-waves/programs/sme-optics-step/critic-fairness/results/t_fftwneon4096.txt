@@ -1,0 +1,46 @@
+[timing lock] waiting for timing lock 05:43:46
+[timing lock] got lock 05:46:34; load: { 31.94 22.85 15.29 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=4096 mode=step SW=16 PFD=4 col radices: 8 8 8 8
+# FFTW plans (MEASURE, time limit) took 4.4 s
+## propagation step 4096^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  SME step (rev. order)             78.0008
+rep  0  PFFFT-d rows+transp              229.4306
+rep  0  KFR-d rows+transp (rev.)         207.6053
+rep  0  FFTW-d 2D MEASURE                235.0637
+rep  1  PFFFT-d rows+transp              222.9265
+rep  1  KFR-d rows+transp (rev.)         204.6923
+rep  1  FFTW-d 2D MEASURE                229.8994
+rep  1  SME step (rev. order)             76.8608
+rep  2  KFR-d rows+transp (rev.)         206.7637
+rep  2  FFTW-d 2D MEASURE                233.5840
+rep  2  SME step (rev. order)             75.9979
+rep  2  PFFFT-d rows+transp              226.8505
+rep  3  FFTW-d 2D MEASURE                230.8618
+rep  3  SME step (rev. order)             76.4624
+rep  3  PFFFT-d rows+transp              223.8623
+rep  3  KFR-d rows+transp (rev.)         207.8198
+rep  4  SME step (rev. order)             77.3856
+rep  4  PFFFT-d rows+transp              226.9660
+rep  4  KFR-d rows+transp (rev.)         206.9336
+rep  4  FFTW-d 2D MEASURE                235.3718
+rep  5  PFFFT-d rows+transp              225.7998
+rep  5  KFR-d rows+transp (rev.)         206.3467
+rep  5  FFTW-d 2D MEASURE                235.0832
+rep  5  SME step (rev. order)             76.9981
+rep  6  KFR-d rows+transp (rev.)         204.9631
+rep  6  FFTW-d 2D MEASURE                233.0410
+rep  6  SME step (rev. order)             77.8941
+rep  6  PFFFT-d rows+transp              225.8303
+rep  7  FFTW-d 2D MEASURE                232.0890
+rep  7  SME step (rev. order)             76.6895
+rep  7  PFFFT-d rows+transp              222.1110
+rep  7  KFR-d rows+transp (rev.)         205.9976
+rep  8  SME step (rev. order)             77.4768
+rep  8  PFFFT-d rows+transp              225.6526
+rep  8  KFR-d rows+transp (rev.)         204.1619
+rep  8  FFTW-d 2D MEASURE                233.1940
+RESULT propagation step 4096^2 c128             SME step (rev. order)        best    75.9979  median    76.9981  ns/call(ms)  (calls/rep 3)
+RESULT propagation step 4096^2 c128             PFFFT-d rows+transp          best   222.1110  median   225.7998  ns/call(ms)  (calls/rep 1)
+RESULT propagation step 4096^2 c128             KFR-d rows+transp (rev.)     best   204.1619  median   206.3467  ns/call(ms)  (calls/rep 1)
+RESULT propagation step 4096^2 c128             FFTW-d 2D MEASURE            best   229.8994  median   233.1940  ns/call(ms)  (calls/rep 1)

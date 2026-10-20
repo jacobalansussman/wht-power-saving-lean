@@ -1,0 +1,8 @@
+petersen r=4 L=2 X_K=[I 0] |K|=4, independent encoding (Glucose4): UNSAT  vars 580 clauses 1826  0.0s
+petersen r=4 L=3 X_K=[I 0] |K|=4, independent encoding (Glucose4): UNSAT  vars 580 clauses 1826  0.0s
+D5 r=4 L=2 X_K=[I 0] |K|=4, independent encoding (Glucose4): UNSAT  vars 2000 clauses 6756  0.0s
+D5 r=4 L=3 X_K=[I 0] |K|=4, independent encoding (Glucose4): UNSAT  vars 2000 clauses 6756  0.0s
+C5 r=2 L=2 X_K=[I 0] |K|=2, independent encoding (Glucose4): UNSAT  vars 70 clauses 179  0.0s
+P111 r=8 L=1 X_K=[I 0] |K|=8, independent encoding (Glucose4): UNSAT  vars 89652 clauses 310167  0.1s
+P111 r=8 L=2 X_K=[I 0] |K|=8, independent encoding (Glucose4): UNSAT  vars 89652 clauses 315907  0.5s
+P120 r=8 L=2 X_K=[I 0] |K|=8, independent encoding (Glucose4): UNSAT  vars 104640 clauses 369304  0.6s

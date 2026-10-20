@@ -1,0 +1,1752 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "moonshot-small-blocks",
+ "title": "Moonshot waves at blocks 2 and 3: the everything-free game and mixed units",
+ "dates": "2026-10-14 to 2026-10-15",
+ "made_with": "AI agents (Claude) directed by the author",
+ "lean": "nothing in this section is checked in Lean; no person has read its proofs",
+ "findings": [
+  {
+   "statement": "Theorem 2W: at block 2, W arrays need at least 2W paid moves in every game whose free steps touch a bounded number of entries per row (engine, widened and everything-free games), so block 2 never saves; with the two-layer bound, every unit with W >= 2 arrays at block m needs at least max(W + m, 2W) moves.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it line by line and found no error, and checked its key orthogonality fact with its own code over a wider menu of free steps; the wave note recommends a second skeptic; no person has read it",
+   "date": "2026-10-15",
+   "block": 2,
+   "games": [
+    "engine",
+    "widened",
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "excluded_everything_free": {
+     "block2": [
+      "3 in 5 (0.263)",
+      "4 in 6 (0.415)",
+      "5 in 7 (0.515)"
+     ],
+     "block3": [
+      "4 in 7 (0.491)",
+      "5 in 8",
+      "5 in 9"
+     ],
+     "block4": [
+      "5 in 9",
+      "6 in 10",
+      "6 in 11"
+     ]
+    },
+    "skeptic_overlap_decay_block2": "2^(-(f-1)/2), f = 1..6"
+   },
+   "supersedes": [
+    "2-adic parity lattice bound 5W/3 for division-free units at block 2 (mw-xw2tight)",
+    "open-directions-3 section 8: plain chain map with running-XOR inverse open at block 2"
+   ],
+   "programs": [
+    "programs/block2-two-moves-per-array/check_orth.py",
+    "programs/block2-two-moves-per-array/lemD.py"
+   ],
+   "data": [
+    "data/block2-two-moves-per-array/out_orth_m2.txt",
+    "data/block2-two-moves-per-array/out_orth_m3.txt",
+    "data/block2-two-moves-per-array/out_lemD.txt"
+   ],
+   "archive_entry": "L5",
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/1"
+  },
+  {
+   "statement": "Theorem 2W': W targets that each apply at least two directions need at least 2W single-direction paid moves; rank-2 targets never save, and a mixed unit needs at least 2(W_K + W_R) moves.",
+   "status": "argued by hand, not checked",
+   "status_detail": "same proof and same skeptic as Theorem 2W; the skeptic checked that it applies to the mixed tracks' two-row targets and checked the exclusion arithmetic",
+   "date": "2026-10-15",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened",
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "excluded": [
+     "rank-2 7 in 13 and 9 in 17 at block 3",
+     "rank-2 5 in 9 at block 4 (0.152)",
+     "widened 6+35 in 80 (0.123), needs 82",
+     "widened 9+52 in 119 (0.124), needs 122"
+    ],
+    "on_the_bound": [
+     "1+5 in 12",
+     "2+9 in 22"
+    ],
+    "one_move_to_spare": [
+     "10+36 in 93"
+    ]
+   },
+   "programs": [
+    "programs/block2-two-moves-per-array/check_orth.py"
+   ],
+   "data": [
+    "data/block2-two-moves-per-array/out_orth_m3.txt"
+   ],
+   "archive_entry": "L5",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/2"
+  },
+  {
+   "statement": "Two-layer bound (Theorem T'): every unit with W >= 2 arrays at block m needs at least W + m paid moves, in every game with bounded free steps; in the everything-free game it excludes the exact 2 in 3 at block 2 (0.415), with or without division by 2, and 2 in 4 and 3 in 5 at block 3; at block 5 it excludes 2 in 6 (0.317).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic upheld the trace-limit version and reproduced its numbers (Lemma O overlaps, floors to f = 8) with its own code; the first version (engine and widened games only) never had a skeptic of its own",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [
+    "engine",
+    "widened",
+    "everything-free"
+   ],
+   "shape": "2 in 3",
+   "saving_if_it_existed": 0.415,
+   "numbers": {
+    "excluded_block5": "2 in 6 (0.317)",
+    "excluded_block6": "2 in 7 (0.301)"
+   },
+   "programs": [
+    "programs/two-layer-bound-everything-free/orth.py",
+    "programs/two-layer-bound-everything-free/lemO.py"
+   ],
+   "data": [
+    "data/two-layer-bound-everything-free/out_orth.txt",
+    "data/two-layer-bound-everything-free/skeptic_out_lemO.txt"
+   ],
+   "archive_entry": "L4",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/3"
+  },
+  {
+   "statement": "In the everything-free game, every-f identities can mix layers: conjugating the parity-phase identity P = (1+i)/2 + (1-i)/2 Z by D2 CS D1 equates a combination of one-move words with a free word (72 cases with four paid letters, none with three); so the engine-game proof of the two-layer bound does not transfer directly.",
+   "status": "checked by computer",
+   "status_detail": "one program, the relation finder found 24 relations, all within one layer, in menus of 437 distinct words; not repeated by a skeptic",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "cases_4_paid": 72,
+    "cases_3_paid": 0,
+    "of_3_paid_tested": 1296
+   },
+   "programs": [
+    "programs/two-layer-bound-everything-free/percol.py",
+    "programs/two-layer-bound-everything-free/relfind.py"
+   ],
+   "data": [
+    "data/two-layer-bound-everything-free/out_percol.txt",
+    "data/two-layer-bound-everything-free/out_relfind_main.txt"
+   ],
+   "archive_entry": "L4",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/4"
+  },
+  {
+   "statement": "Corollary S: a unit for W arrays needs at least W deep moves (at the end of a chain of m moves) and W co-deep moves that read inputs; the shared-top families searched earlier in the everything-free game had one deep move for two arrays and could not contain a unit.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the first half of the two-layer proof that one skeptic upheld",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [
+    "engine",
+    "widened",
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "archive_entry": "L4",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "id": "moonshot-small-blocks/5"
+  },
+  {
+   "statement": "Parity lattice: every free step of the everything-free game keeps the lattice of vectors whose entries agree modulo 1 - i and sum to an even number; at f = 2 a move pushes out 6 units and an array needs 10, so a unit that never divides by 2 needs at least 5/3 moves per array at block 2.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic read it; its two key numbers were computed four independent ways; superseded at block 2 by Theorem 2W for every unit",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "cap_f2": 6,
+    "demand_f2": 10,
+    "ratio": "5/3"
+   },
+   "superseded_by": "moonshot-small-blocks/1",
+   "programs": [
+    "programs/parity-lattice-block2/padic.py",
+    "programs/parity-lattice-block2/verify_lattice.py",
+    "programs/parity-lattice-block2/montecarlo.py"
+   ],
+   "archive_entry": "L6",
+   "supersedes": [],
+   "refuted_by": null,
+   "data": [],
+   "id": "moonshot-small-blocks/6"
+  },
+  {
+   "statement": "Reed-Muller lattices in the chi game at block 3 (Clifford steps plus the running XOR) give 2.327 moves per array at f = 3 and values rising toward 2.5 at larger odd f, which would exclude a 3 in 7 that never divides by 2 there.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the deciding value at f = 5 comes from a formula fitted to 161 exact values and has not been checked exactly; the exact f = 3 value misses by 0.006; no skeptic",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "chi"
+   ],
+   "shape": "3 in 7",
+   "saving_if_it_existed": 0.2288,
+   "numbers": {
+    "f3_exact": 2.327,
+    "f5_formula": 2.412,
+    "needed": 2.333
+   },
+   "archive_entry": null,
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "id": "moonshot-small-blocks/7"
+  },
+  {
+   "statement": "Block 3, everything-free game: about 136 exact cross-talk tests (menus of 9 to 115 free words, 1 to 4 paid moves, shared first, middle and last moves and two shared moves in a row) found only trivial collapses (a direction applied twice); the skeptic's complete-span re-run flagged 34 collapses at f = 3, 4, and all were small-f coincidences (25, missing by 0.54 to 0.76 at f = 5) or trivial identities in disguise (9).",
+   "status": "checked by computer",
+   "status_detail": "linear algebra in floating point (called exact in the notes with singular-value gaps of 10 to 14 orders); one skeptic re-ran it with the left-out terms and classified every flag; a second skeptic confirmed the parts it finished (three configurations and the identities at f = 3 to 7)",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 5, 3 in 7, 3 in 8",
+   "saving_if_it_existed": null,
+   "numbers": {
+    "exact_runs": 136,
+    "flags": 34,
+    "flags_counting_duplicate": 42,
+    "small_f_coincidences": 25,
+    "trivial": 9,
+    "genuine": 0
+   },
+   "programs": [
+    "programs/block3-collapse-test/annih4.py",
+    "programs/block3-collapse-test/annih6.py",
+    "programs/block3-collapse-test/path_ext.py",
+    "programs/block3-collapse-test/fu.py",
+    "programs/block3-collapse-test/classify.py",
+    "programs/block3-collapse-test/identity_check.py"
+   ],
+   "data": [
+    "data/block3-collapse-test/out_crosstab.md",
+    "data/block3-collapse-test/followup/out_classify.txt",
+    "data/block3-collapse-test/second_skeptic/out_vident.txt"
+   ],
+   "archive_entry": "X34",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/8"
+  },
+  {
+   "statement": "Within the menus tested, a shared move can serve two arrays at block 3 in the everything-free game only through a singular readout whose cancelling mix uses unboundedly long free words; such words exist (A.B has order 3, 7, 7, 31, 63 at f = 2..6).",
+   "status": "argued by hand, not checked",
+   "status_detail": "the argument is the author's; the skeptic found its logic sound and corrected 'exponential order' to 'unbounded, erratic order'",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "order_AB_f2_to_f6": [
+     3,
+     7,
+     7,
+     31,
+     63
+    ],
+    "order_AB_f7_f10_f15_f18": [
+     15,
+     63,
+     31,
+     87381
+    ]
+   },
+   "programs": [
+    "programs/block3-collapse-test/orders.py",
+    "programs/block3-collapse-test/krigid.py"
+   ],
+   "data": [
+    "data/block3-collapse-test/out_orders.txt",
+    "data/block3-collapse-test/out_krigid.txt"
+   ],
+   "archive_entry": "X34",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/9"
+  },
+  {
+   "statement": "Least squares over 574 (shape, direction pattern) pairs at block 3 in the everything-free game found no unit: best relative residual 0.427 (3 in 8) and 0.474 (2 in 5); a unit needs 0.",
+   "status": "open",
+   "status_detail": "a numerical search found nothing; this is evidence, not proof; every shape first recovered a planted target",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 5, 3 in 7, 3 in 8",
+   "saving_if_it_existed": null,
+   "numbers": {
+    "pairs": 574,
+    "best_3in8": 0.427,
+    "best_2in5": 0.474
+   },
+   "programs": [
+    "programs/block3-collapse-test/als3.py",
+    "programs/block3-collapse-test/fam.py"
+   ],
+   "data": [
+    "data/block3-collapse-test/out_summary.txt"
+   ],
+   "archive_entry": "X34",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/10"
+  },
+  {
+   "statement": "Theorem T: no exact unit that is exactly tight on the block-3 hook can give any array a two-row target, in the engine or widened game; excludes 1+4 in 10, 7+38 in 88, 2+8 in 20, 3+7 in 21, 4+21 in 49 and 10+35 in 91.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it line by line; its finite input (no single first step into a two-row array passes: 0 of 14 engine classes, 0 of 1,680 widened classes, smallest miss sqrt 8) is checked by computer and was rebuilt by the skeptic in three arithmetics",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": "1+4 in 10",
+   "saving_if_it_existed": 0.1189,
+   "numbers": {
+    "engine_classes_passing": "0/14",
+    "widened_classes_passing": "0/1680",
+    "smallest_miss": "sqrt(8)",
+    "excluded": {
+     "1+4 in 10": 0.1189,
+     "7+38 in 88": 0.125
+    }
+   },
+   "programs": [
+    "programs/mixed-units-tight-hook/v1_entry.py",
+    "programs/mixed-units-tight-hook/c10_entry_exhaustive.py"
+   ],
+   "data": [
+    "data/mixed-units-tight-hook/out_v1_entry.txt",
+    "data/mixed-units-tight-hook/out_c10_entry_exhaustive_p0.txt"
+   ],
+   "archive_entry": "X7",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/11"
+  },
+  {
+   "statement": "Theorem S8 as written (separating packed two-row arrays costs at least 8 per array, in a two-level model with Levi letters) is wrong: the Levi group has 73,728 elements, not 8,192, its key 2 x 2 grid of kernels is 9 kernels, and the 'exhaustive' two-letter check covered only a subgroup.",
+   "status": "refuted",
+   "status_detail": "refuted by its skeptic with its own code in two primes",
+   "refuted_by": "the skeptic's enumeration of the full Levi group (73,728 elements, 9 kernels)",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "levi_group": 73728,
+    "used": 8192,
+    "kernels": 9
+   },
+   "programs": [
+    "programs/separation-toll-strict-model/v1_struct.py"
+   ],
+   "data": [
+    "data/separation-toll-strict-model/out_v1_struct.txt"
+   ],
+   "archive_entry": "X10",
+   "supersedes": [],
+   "superseded_by": null,
+   "id": "moonshot-small-blocks/12"
+  },
+  {
+   "statement": "In the strict two-level model with any finite group of Levi letters, separating packed two-row arrays costs at least 8 per array in the large-f limit; so that model excludes the block-3 mixed units with hook room 16.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the skeptic's own short repair (an information-set argument); no one has read it; every computed minimum was 8 per array",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "toll_per_two_row_array": 8
+   },
+   "data": [
+    "data/separation-toll-strict-model/out_v2_W2_g16.txt",
+    "data/separation-toll-strict-model/out_v2_W3_g16.txt"
+   ],
+   "archive_entry": "X10",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "id": "moonshot-small-blocks/13"
+  },
+  {
+   "statement": "Symmetric programs split into a direct sum of smaller programs, one per symmetry type; with Theorem M's certificate this excludes engine 2+9 in 22, 10+35 in 91, 4+18 in 44 and 6+7 in 28 (exactly tight there, and no single first step into a kernel array passes); an order-4 twist leaves a loophole for two-row eigen-pieces.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic read it; the defect table it needs (6 or 7 on a kernel array) was later rebuilt over all 10,752 engine steps by another track and, from an independent model, by that track's skeptic; an analyst found the screen overcounts absorbed moves (no exclusion lost)",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "shape": "2+9 in 22",
+   "saving_if_it_existed": 0.1097,
+   "programs": [
+    "programs/first-touch-prices/skeptic/v105.py"
+   ],
+   "data": [
+    "data/first-touch-prices/skeptic_out_v105.txt"
+   ],
+   "archive_entry": "X9",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "numbers": {},
+   "id": "moonshot-small-blocks/14"
+  },
+  {
+   "statement": "First-touch prices (Lemmas Q, Q1, Q2, Q3, Q''): the waste caused by the first move touching each array adds up and never exceeds the room; with exhaustive tables they force engine 1+5 in 12 into a narrow shape (kernel array's first touch at least 5 steps, each two-row array's at least 2, total waste at most 1) and every kernel array of engine 10+36 in 93 to be first touched by at least 3 steps.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic read every lemma line by line; the tables (Theorem M's 105 over all 10,752 engine steps; hook stable ranks over all 1,680 widened classes) are checked by computer and were rebuilt by the skeptic from an independent model",
+   "date": "2026-10-15",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": "1+5 in 12",
+   "saving_if_it_existed": 0.1019,
+   "numbers": {
+    "kernel_defects_105": [
+     6,
+     7
+    ],
+    "two_row_defects_105": [
+     2,
+     4,
+     18
+    ],
+    "cheapest_two_row_stable_rank": 8,
+    "other_classes_min": 20
+   },
+   "programs": [
+    "programs/first-touch-prices/srank_classes.py",
+    "programs/first-touch-prices/skeptic/v105.py",
+    "programs/first-touch-prices/skeptic/vhook.py",
+    "programs/first-touch-prices/skeptic/vplain.py"
+   ],
+   "data": [
+    "data/first-touch-prices/out_srank_classes.txt",
+    "data/first-touch-prices/skeptic_out_v105.txt",
+    "data/first-touch-prices/skeptic_out_vplain.txt"
+   ],
+   "archive_entry": "X11",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/15"
+  },
+  {
+   "statement": "Conjecture FT, special case: touching one two-row array completely costs at least 8 when every touch draws its steps from an abelian group of Levi letters.",
+   "status": "argued by hand, not checked",
+   "status_detail": "proved by the skeptic of the first-touch track (fractional subadditivity of rank over characters); no one has read it",
+   "date": "2026-10-15",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "archive_entry": "X11",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "id": "moonshot-small-blocks/16"
+  },
+  {
+   "statement": "At f = 2 every 12-move family for 1+5 in 12 stops at a quantised floor (0.25, 0.5, 0.75 or more); the best misses exactly the characters 001 and 101 of the kernel array, and the 1+1 in 4 relay that the hook forbids stops at the same 0.25, so 0.25 is not a near miss.",
+   "status": "checked by computer",
+   "status_detail": "the f = 2 test is exact per program; the skeptic reproduced every saved floor with its own evaluator; that no 12-move program passes is evidence from the families tried, not proof",
+   "date": "2026-10-15",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": "1+5 in 12",
+   "saving_if_it_existed": 0.1019,
+   "numbers": {
+    "best_floor": 0.25,
+    "controls_found": "7/7",
+    "widened_2+9in22_floor": 0.5,
+    "control_24_moves": 6.5e-05
+   },
+   "programs": [
+    "programs/first-touch-prices/blk3.py",
+    "programs/first-touch-prices/fam.py",
+    "programs/first-touch-prices/small11c.py"
+   ],
+   "data": [
+    "data/first-touch-prices/out_small11c.txt",
+    "data/first-touch-prices/skeptic_out_myf2.txt"
+   ],
+   "archive_entry": "X11",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/17"
+  },
+  {
+   "statement": "Approximate units: with bounded coefficients they obey the full bound W + m (Theorem B'); with exploding coefficients they can reach W + m - 1 at best, and a shape with t < W deep moves has large-f error at least W - t (Theorem B).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic upheld it; the predicted floor 0.707 was measured at 0.699 and 0.711, and the skeptic reproduced it to f = 8",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [
+    "engine",
+    "widened",
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "floor_predicted": 0.7071,
+    "floor_measured": [
+     0.699,
+     0.711
+    ],
+    "border_2in3_limit": 0.451
+   },
+   "programs": [
+    "programs/two-layer-bound-everything-free/floor.py"
+   ],
+   "data": [
+    "data/two-layer-bound-everything-free/skeptic_out_floor_ST_121.txt"
+   ],
+   "archive_entry": "L13",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/18"
+  },
+  {
+   "statement": "'The one-move window W + m - 1 holds no useful approximate unit in the everything-free game' (wave 3).",
+   "status": "refuted",
+   "status_detail": "refuted by its skeptic",
+   "refuted_by": "the relative exactification theorem needs no finite group; the running XOR on one bit row commutes exactly with the paid move on the other row (f = 1..8, unbounded order), and a toy family using that commutation has error exactly 0 at f = 2..5 under the relative recursion",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 3",
+   "saving_if_it_existed": 0.415,
+   "programs": [
+    "programs/approximate-units-everything-free/check_chain.py",
+    "programs/approximate-units-everything-free/check_relX.py"
+   ],
+   "data": [
+    "data/approximate-units-everything-free/out_check_chain.txt",
+    "data/approximate-units-everything-free/out_check_relX.txt"
+   ],
+   "archive_entry": "L14",
+   "supersedes": [],
+   "superseded_by": null,
+   "numbers": {},
+   "id": "moonshot-small-blocks/19"
+  },
+  {
+   "statement": "At block 2 the recursion keeps exactly two kinds of identity whatever the smaller calls return: D1 D2 = D2 D1, and D1 commutes with every free step that touches only the other row; a full-value approximate 2 in 3 must blow up along a kept identity, and such identities (R8, R8') exist.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the identities are checked by computer at f = 1..5; one skeptic rebuilt them with its own code and read Lemmas H and K line by line",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 3",
+   "saving_if_it_existed": 0.415,
+   "programs": [
+    "programs/approximate-units-everything-free/keptrel.py",
+    "programs/approximate-units-everything-free/r8check.py",
+    "programs/approximate-units-everything-free/vcheck.py"
+   ],
+   "data": [
+    "data/approximate-units-everything-free/out_keptrel.txt",
+    "data/approximate-units-everything-free/out_r8check.txt",
+    "data/approximate-units-everything-free/vcheck_out.txt"
+   ],
+   "archive_entry": "L15",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "numbers": {},
+   "id": "moonshot-small-blocks/20"
+  },
+  {
+   "statement": "'A unit without an exact twin must use the running XOR together with lamps, or D1 D2 = D2 D1' and 'families built on R8 are exact programs in disguise' (wave 4).",
+   "status": "refuted",
+   "status_detail": "refuted by its skeptic",
+   "refuted_by": "the mirror running XOR also commutes with D1 and with the running XOR generates a lamp-free group (all 168 invertible 3 x 3 bit matrices at f = 3, 2,520 elements at f = 4, at least 3.08 million at f = 5); R8 with a Z-type halving gives a family whose limit is 0.79 to 0.85 away from the exact twin",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 3",
+   "saving_if_it_existed": 0.415,
+   "programs": [
+    "programs/approximate-units-everything-free/vcheck.py",
+    "programs/approximate-units-everything-free/vcheck7.py"
+   ],
+   "data": [
+    "data/approximate-units-everything-free/vcheck_out.txt",
+    "data/approximate-units-everything-free/vcheck7_out.txt"
+   ],
+   "archive_entry": "L15",
+   "supersedes": [],
+   "superseded_by": null,
+   "numbers": {},
+   "id": "moonshot-small-blocks/21"
+  },
+  {
+   "statement": "At block 2, copy-by-copy exactification of any approximate unit costs at least 2W moves (plain) and separate scales at least 2(W + 1); so an approximate unit can save at block 2 only if it is kept and has between W + 1 and 2W - 1 moves, which needs closure to fail among kept programs.",
+   "status": "argued by hand, not checked",
+   "status_detail": "it rests on Lemma W, which two skeptics upheld in an earlier round on approximate units; the skeptic of this track did not list this step among those it read line by line; no person has read it",
+   "date": "2026-10-15",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 3",
+   "saving_if_it_existed": 0.415,
+   "archive_entry": "L15",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "id": "moonshot-small-blocks/22"
+  },
+  {
+   "statement": "Lemma Lambda1: a first-order approximate unit at block 2 needs at least 1.5W moves; a first-order 2 in 3 has exploding readouts of rank exactly 1 and base inputs of rank exactly 1.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic read it line by line and checked the smallest case exhaustively over the two-element field (4,032 solvable configurations, all with b = g = 1; none in the exact case)",
+   "date": "2026-10-15",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 3",
+   "saving_if_it_existed": 0.415,
+   "numbers": {
+    "solvable_F2_general_n": 4032,
+    "solvable_F2_triangular_n": 24,
+    "exact_case_solutions": 0
+   },
+   "programs": [
+    "programs/block2-two-moves-per-array/check_lambda1.py"
+   ],
+   "data": [
+    "data/block2-two-moves-per-array/out_lambda1.txt"
+   ],
+   "archive_entry": "L15",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/23"
+  },
+  {
+   "statement": "Proposition Lambda-h: an approximate unit at block 2 with pole order h needs M >= W(h + 2)/(h + 1); an approximate W in W + 1 needs pole order at least W - 1.",
+   "status": "argued by hand, not checked",
+   "status_detail": "proved when the coefficients are numbers or matrices; only argued in the limit algebra (where h = 1 is Lemma Lambda1); one skeptic checked the field case",
+   "date": "2026-10-15",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "archive_entry": "L15",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "id": "moonshot-small-blocks/24"
+  },
+  {
+   "statement": "Proposition Lambda2: the simplest first-order approximate 2 in 3 at block 2 is the same as an exact triangular 2 in 3 (outputs K x + T y and K y); without collapses such a program is impossible.",
+   "status": "argued by hand, not checked",
+   "status_detail": "Lambda2 checked by hand by one skeptic; the 'needs collapses' step is argued only",
+   "date": "2026-10-15",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 3",
+   "saving_if_it_existed": 0.415,
+   "archive_entry": "L15",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "id": "moonshot-small-blocks/25"
+  },
+  {
+   "statement": "The triangular search (36 penalised runs, six direction patterns, three menus) found only a trade-off curve residual x |T| of about 0.5 to 0.8, never a program with bounded cross-term T; unpenalised runs fell only because T grew.",
+   "status": "open",
+   "status_detail": "a numerical search found nothing; this is evidence, not proof; the skeptic re-evaluated the runs on new inputs at f = 2, 4, 6 (products 0.47 to 0.65, and 0.82 to 0.89 at f = 6)",
+   "date": "2026-10-15",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 3",
+   "saving_if_it_existed": 0.415,
+   "numbers": {
+    "penalised_runs": 36,
+    "tradeoff_product": [
+     0.5,
+     0.8
+    ],
+    "unpenalised_best": {
+     "residual": 0.017,
+     "T_over_signal": 37
+    }
+   },
+   "programs": [
+    "programs/approximate-units-everything-free/tri_als.py",
+    "programs/approximate-units-everything-free/rescore.py"
+   ],
+   "data": [
+    "data/approximate-units-everything-free/triangular_search_summary.txt",
+    "data/approximate-units-everything-free/skeptic_out_rescore.txt"
+   ],
+   "archive_entry": "L15",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/26"
+  },
+  {
+   "statement": "A 'border family' for 2 in 3 at block 2 whose error kept falling as its coefficients grew had been fitted to a single random input; on fresh inputs one array missed by 3.2 to 5.7 times the target.",
+   "status": "refuted",
+   "status_detail": "refuted by a fresh-input test",
+   "refuted_by": "a fresh-input re-evaluation by the round's skeptic: one array misses by 3.2 to 5.7 times the target, and by 75 to 99 % with its readout refitted (the fit had 464 complex unknowns against 672 equations at f = 2 and 3, and one random input vector)",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 3",
+   "saving_if_it_existed": 0.415,
+   "archive_entry": "C7",
+   "supersedes": [],
+   "superseded_by": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "id": "moonshot-small-blocks/27"
+  },
+  {
+   "statement": "Search rules: W arrays need W independent routes into the target layer and, by transposition, W out of the inputs; a unit with exactly W + m - 1 moves is one chain; the division by 2 must come after a move and before a move in the reversed program; a transposed unit is a unit.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic read the rules as a whole; one skeptic re-derived one corollary of the top rule",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "archive_entry": "T15",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "id": "moonshot-small-blocks/28"
+  },
+  {
+   "statement": "Two arrays can be separated with two pieces using the order-3 cyclic shift sigma of three address bits: from x1 + x2 and x1 - sigma x2 the transform of x1 is recovered exactly, because 1 + sigma is invertible.",
+   "status": "checked by computer",
+   "status_detail": "checked with matrices at blocks 3 and 4; upheld; used in the block-4 section",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "archive_entry": "N10",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "numbers": {},
+   "programs": [],
+   "data": [],
+   "id": "moonshot-small-blocks/29"
+  },
+  {
+   "statement": "Against Theorem 2W' (a mixed unit needs at least 2(W_K + W_R) moves), the widened mixed units with hook room 32 that the wave-1 skeptic listed, 9+53 in 121, 10+57 in 131 and 5+32 in 72, would need 124, 134 and 74 moves and are excluded; widened 2+10 in 24 sits exactly on the bound; the engine units with room 16 to 48 (12+44 in 113, 11+40 in 103, 14+53 in 135, 13+49 in 125, 12+45 in 115, 11+41 in 105, 14+54 in 137) have one move to spare. Engine 12+44 in 113 and 14+53 in 135 are also exactly tight on Theorem M's certificate (2,260 of 2,260 and 2,700 of 2,700), so the symmetric track's term-by-term argument would exclude them.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the author's arithmetic for this write-up, on top of Theorem 2W' (one skeptic) and the symmetric track's term-by-term argument (no skeptic); no skeptic has checked it; the archive's catalogue still lists 9+53 in 121 as open",
+   "date": "2026-10-19",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": "9+53 in 121",
+   "saving_if_it_existed": 0.1222,
+   "numbers": {
+    "needs_under_2W_prime": {
+     "9+53 in 121": 124,
+     "10+57 in 131": 134,
+     "5+32 in 72": 74,
+     "2+10 in 24": 24
+    },
+    "theorem_M_tight_engine": [
+     "12+44 in 113",
+     "14+53 in 135"
+    ]
+   },
+   "programs": [],
+   "data": [],
+   "archive_entry": "N5",
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "id": "moonshot-small-blocks/30"
+  }
+ ],
+ "open": [
+  {
+   "id": "moonshot-small-blocks/open-1",
+   "question": "Is there a kept approximate 2 in 3 at block 2 in the everything-free game (or 3 in 4, 3 in 5), i.e. does closure fail among kept programs for W + 1 <= M <= 2W - 1?",
+   "worth": 0.415,
+   "first_experiment": "Re-run tri_als.py with a menu containing braid-capable phases, parity phases, the mirror running XOR and Toffoli-type steps, penalising the cross-term; a hit is a run with fresh residual below 0.05 at f = 5 and cross-term under twice the signal. In parallel, prove Proposition Lambda-h in the limit algebra.",
+   "programs": [
+    "programs/approximate-units-everything-free/tri_als.py",
+    "programs/approximate-units-everything-free/rescore.py"
+   ]
+  },
+  {
+   "id": "moonshot-small-blocks/open-2",
+   "question": "Block 3 with everything free: is there a 2 in 5 or 3 in 6 (exactly on max(W + 3, 2W)), or a 3 in 7 or 3 in 8 above it?",
+   "worth": {
+    "2 in 5": 0.166,
+    "3 in 6": 0.3691,
+    "3 in 7": 0.2288,
+    "3 in 8": 0.1072
+   },
+   "first_experiment": "Readouts 1 - g with g a free word of large order (start with A.B), contents built from powers of g, orbit sums truncated at length L; run the exact cross-talk test as L grows. Proof side: finish the third-layer case split (W = 2, M = m + 2), which would close 2 in 5 here and 2 in 7 at block 5; 3 in 6 needs the same step for W = 3.",
+   "programs": [
+    "programs/block3-collapse-test/path_ext.py",
+    "programs/block3-collapse-test/xw3lib.py"
+   ]
+  },
+  {
+   "id": "moonshot-small-blocks/open-3",
+   "question": "Conjecture FT: does touching a two-row array completely always cost at least 8 of the hook's room, for non-Levi steps, non-abelian groups and moves that touch several arrays at once, with a version for partly touched arrays?",
+   "worth": "with the versions for partly touched arrays and for moves that touch several arrays, it would exclude every remaining room-16 block-3 mixed unit",
+   "first_experiment": "Extend the abelian-Levi proof to the non-abelian letter group of order 8 already tested by fulltouch4.py; test letter groups of order 16 and more and three packed arrays; then state the partial version (removing a fraction x costs at least 8 g(x) with g(0.4) > 0.4).",
+   "programs": [
+    "programs/first-touch-prices/fulltouch4.py",
+    "programs/first-touch-prices/fulltouch2.py"
+   ]
+  },
+  {
+   "id": "moonshot-small-blocks/open-4",
+   "question": "Is there an engine (or widened) 1+5 in 12 at block 3?",
+   "worth": 0.1019,
+   "first_experiment": "Build candidates whose first touches use several steps (at least 5 on the kernel array), with input and readout directions of the one-move layer exact complements, and price them with the 105-dimensional certificate tools before any search.",
+   "programs": [
+    "programs/first-touch-prices/skeptic/v105.py"
+   ]
+  },
+  {
+   "id": "moonshot-small-blocks/open-5",
+   "question": "Is there an engine 10+36 in 93 or a widened 2+9 in 22 at block 3?",
+   "worth": {
+    "10+36 in 93": 0.114,
+    "2+9 in 22": 0.1097
+   },
+   "first_experiment": "Run the f = 2 screen (fam.py) on 10+36 in 93, never searched, with every kernel array first touched by at least 3 steps; for 2+9 in 22, a search built around the order-4 twist loophole.",
+   "programs": [
+    "programs/first-touch-prices/fam.py",
+    "programs/first-touch-prices/blk3.py"
+   ]
+  },
+  {
+   "id": "moonshot-small-blocks/open-6",
+   "question": "Is the f = 2 floor 0.25 of kernel-relay shapes a theorem?",
+   "worth": null,
+   "first_experiment": "Prove exactly, from the 4-move relay 1+1 in 4, that a kernel array whose middle move is shared with a two-row array's top can never supply the characters 001 and 101.",
+   "programs": [
+    "programs/first-touch-prices/small11c.py"
+   ]
+  },
+  {
+   "id": "moonshot-small-blocks/open-7",
+   "question": "Block-3 mixed units with more room (engine 12+44 in 113, 11+40 in 103, 14+53 in 135, 13+49 in 125, 12+45 in 115, 11+41 in 105, 14+54 in 137; widened 2+10 in 24): any of them?",
+   "worth": {
+    "12+44 in 113": 0.1148,
+    "14+53 in 135": 0.114
+   },
+   "first_experiment": "Have a skeptic check the term-by-term argument on Theorem M's certificate, which on the author's own unchecked arithmetic already excludes engine 12+44 in 113 and 14+53 in 135 (both exactly tight there: 2,260 of 2,260 and 2,700 of 2,700); then apply the first-touch lemmas to the rest as was done for 10+36 in 93 (minimum number of steps in each kernel array's first touch), and screen the survivors at f = 2.",
+   "programs": [
+    "programs/first-touch-prices/fam.py"
+   ]
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/block2-two-moves-per-array/check_orth.py",
+   "language": "python",
+   "shows": "skeptic's exact orthogonality traces behind Theorems 2W and 2W' (blocks 2 and 3)",
+   "command": "python3 check_orth.py 2 6 60 7 ; python3 check_orth.py 3 4 12 8",
+   "time": "about 4 min and 1 to 4 min",
+   "memory": "under 300 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19: block 2 identical to the saved output; block 3 identical with 12 samples (as the saved output was made); with 40 samples larger maxima, still within 2^(-f/2)",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block2-two-moves-per-array/lemD.py",
+   "language": "python",
+   "shows": "author's check that a spread paid move is orthogonal to free words (f = 2..7)",
+   "command": "python3 lemD.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block2-two-moves-per-array/check_lambda1.py",
+   "language": "python",
+   "shows": "Lemma Lambda1 exhaustively over F_2 in the smallest case; 3 in 4 sampled",
+   "command": "python3 check_lambda1.py",
+   "time": "about 1.5 min",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/two-layer-bound-everything-free/sanity2.py",
+   "language": "python",
+   "shows": "identities of the block-2 game library at f = 2..6",
+   "command": "python3 sanity2.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/two-layer-bound-everything-free/percol.py",
+   "language": "python",
+   "shows": "layer-mixing relation: 72 cases with four paid letters, none with three",
+   "command": "python3 percol.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/two-layer-bound-everything-free/lemO.py",
+   "language": "python",
+   "shows": "skeptic's independent Lemma O check at f = 2..5",
+   "command": "python3 lemO.py",
+   "time": "under a minute",
+   "memory": "about 2.6 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/two-layer-bound-everything-free/orth.py",
+   "language": "python",
+   "shows": "Lemma O numerically, f = 2..7",
+   "command": "python3 orth.py",
+   "time": "several minutes",
+   "memory": "about 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/two-layer-bound-everything-free/relfind.py",
+   "language": "python",
+   "shows": "relation finder over menus of words with at most two paid letters",
+   "command": "python3 relfind.py main (also orbit, ctl)",
+   "time": "minutes",
+   "memory": "about 0.9 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/two-layer-bound-everything-free/floor.py",
+   "language": "python",
+   "shows": "skeptic's test of the Theorem B floor (0.707) at f = 2..8",
+   "command": "python3 floor.py ST 1,2,1 3,4 15 1 8",
+   "time": "ran on a Colab machine",
+   "memory": "unknown",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/sanity3.py",
+   "language": "python",
+   "shows": "letter identities of the block-3 game at f = 1..4",
+   "command": "python3 sanity3.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/orders.py",
+   "language": "python",
+   "shows": "orders of free words at f = 2..6 (first table of the saved output)",
+   "command": "python3 orders.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one (the saved file also holds a second table from a run with a longer word list)",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/orders_mine.py",
+   "language": "python",
+   "shows": "skeptic's orders of A.B to f = 18 and A.T2.B to f = 7",
+   "command": "python3 orders_mine.py",
+   "time": "seconds",
+   "memory": "about 0.6 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/ctl_annih.py",
+   "language": "python",
+   "shows": "positive control of the collapse test",
+   "command": "python3 ctl_annih.py",
+   "time": "about a minute",
+   "memory": "about 0.9 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/annih4.py",
+   "language": "python",
+   "shows": "collapse test, 3-move words with mixes at both internal positions",
+   "command": "python3 annih4.py \"1;2;4\" \"$R9\" \"$H30\" \"$K9\" \"$H30\" 3,4 1",
+   "time": "15 s to 2 min per configuration",
+   "memory": "about 1.2 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one for configuration 1;2;4 (the current code also prints the NONTRIVIAL-COLLAPSE count, 1 here, a repeated-direction case)",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/annih6.py",
+   "language": "python",
+   "shows": "collapse test, two shared moves in a row (3-in-8 shape)",
+   "command": "python3 annih6.py \"1;2\" 4 7 \"$R9\" \"$H30\" \"$K5\" \"$H30\" 3,4 1",
+   "time": "under a minute per configuration",
+   "memory": "about 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one for top moves 4,7 and 4,4",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/krigid.py",
+   "language": "python",
+   "shows": "zero-divisor test for readouts",
+   "command": "python3 krigid.py <menuR> <menuB> 3,4 1",
+   "time": "minutes",
+   "memory": "unknown",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/als3.py",
+   "language": "python",
+   "shows": "block-coordinate exact least squares over programs at block 3 (library)",
+   "command": "imported by fam.py",
+   "time": "-",
+   "memory": "-",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/fam.py",
+   "language": "python",
+   "shows": "least-squares shape families for 2 in 5, 3 in 7, 3 in 8",
+   "command": "python3 fam.py CH5 xw \"1;2;4;1,T2;2,A\" 1 40 3 plant 3,4",
+   "time": "minutes to an hour per run",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/xtalk_ext.py",
+   "language": "python",
+   "shows": "skeptic's shared-top test against the complete lower span",
+   "command": "python3 xtalk_ext.py ...",
+   "time": "minutes",
+   "memory": "unknown",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/path_ext.py",
+   "language": "python",
+   "shows": "skeptic's n-move path test against the complete lower span",
+   "command": "python3 path_ext.py \"1;2;4;7\" \"$R9\" \"1\" \"$K5\" \"$H15\" \"$H15\" 3,4 1 5",
+   "time": "up to about 50 min (Colab)",
+   "memory": "several GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/fu.py",
+   "language": "python",
+   "shows": "follow-up: extraction of each flag and re-test at f = 5, 6",
+   "command": "python3 fu.py B1 \"1;2;4;7\" \"$R9\" \"1\" \"$K5\" \"$H15\" \"$H15\" 3,4 1",
+   "time": "up to about 50 min (Colab)",
+   "memory": "several GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/frame_check.py",
+   "language": "python",
+   "shows": "the frame of flag C5 commutes with D4, so C5 duplicates C2",
+   "command": "python3 frame_check.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/identity_check.py",
+   "language": "python",
+   "shows": "the explicit trivial identities behind the surviving flags, f = 3..6",
+   "command": "python3 identity_check.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/classify.py",
+   "language": "python",
+   "shows": "classification table of the 34 flags from the saved follow-up outputs",
+   "command": "python3 classify.py ../../data/block3-collapse-test/followup",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/terms.py",
+   "language": "python",
+   "shows": "the top words that carry each flag, from the saved collapse vectors",
+   "command": "FU_DIR=../../data/block3-collapse-test/followup python3 terms.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/second-skeptic/vident.py",
+   "language": "python",
+   "shows": "second skeptic's own letters: the identities and the C5 frame at f = 3..7",
+   "command": "cd second-skeptic && python3 vident.py",
+   "time": "seconds",
+   "memory": "about 1.7 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/block3-collapse-test/second-skeptic/vchk.py",
+   "language": "python",
+   "shows": "second skeptic's independent re-test of one flag",
+   "command": "python3 vchk.py <tag> <npz> ...",
+   "time": "minutes to 20 min (Colab)",
+   "memory": "several GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/mixed-units-tight-hook/v1_entry.py",
+   "language": "python",
+   "shows": "skeptic's table: 0 of 1,680 first steps into a two-row array pass; smallest miss sqrt 8",
+   "command": "python3 v1_entry.py",
+   "time": "1 to 4 minutes",
+   "memory": "under 100 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one (apart from the timing lines)",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/mixed-units-tight-hook/v2_contphase.py",
+   "language": "python",
+   "shows": "skeptic's check with continuous phases (smallest residual sqrt 8)",
+   "command": "python3 v2_contphase.py",
+   "time": "about 1.5 min",
+   "memory": "about 0.2 GB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/mixed-units-tight-hook/c10_entry_exhaustive.py",
+   "language": "python",
+   "shows": "author's table, 14 engine and 1,680 widened classes, two primes",
+   "command": "python3 c10_entry_exhaustive.py 0",
+   "time": "about 10 s",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19 (first prime), output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/mixed-units-tight-hook/c24_defects.py",
+   "language": "python",
+   "shows": "single-step defect ranks (minimum 8)",
+   "command": "python3 c24_defects.py",
+   "time": "about a minute",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/mixed-units-tight-hook/c23_open_mixed.py",
+   "language": "python",
+   "shows": "mixed targets left open by Theorem T (hook room 16), with savings",
+   "command": "python3 c23_open_mixed.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/separation-toll-strict-model/v1_struct.py",
+   "language": "python",
+   "shows": "skeptic: the full Levi group (73,728) and the 9 failure kernels",
+   "command": "python3 v1_struct.py",
+   "time": "about 7 min (Colab)",
+   "memory": "unknown",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/srank_classes.py",
+   "language": "python",
+   "shows": "exhaustive hook stable ranks over 14 and 1,680 classes",
+   "command": "python3 srank_classes.py",
+   "time": "about 1.5 min",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/twostep_quick.py",
+   "language": "python",
+   "shows": "two-step first touches through zero divisors",
+   "command": "python3 twostep_quick.py",
+   "time": "under a minute",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/fulltouch.py",
+   "language": "python",
+   "shows": "complete touches of one two-row array priced exactly (Conjecture FT evidence)",
+   "command": "python3 fulltouch.py 0 1",
+   "time": "about a minute per batch",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19 (seed 0, one batch): the first four sequences agree with the saved file; the other two (a projector, a random invertible entry) cost 8 where the saved lines cost 16, because the letter group drawn differs; every complete touch costs at least 8, as Conjecture FT says",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/fulltouch2.py",
+   "language": "python",
+   "shows": "complete touches of two packed arrays (abelian group of order 4)",
+   "command": "python3 fulltouch2.py 3",
+   "time": "minutes (Colab)",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/fulltouch3.py",
+   "language": "python",
+   "shows": "fulltouch.py in a non-abelian letter group of order 8",
+   "command": "python3 fulltouch3.py 0",
+   "time": "minutes (Colab)",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/fulltouch4.py",
+   "language": "python",
+   "shows": "fulltouch2.py in a non-abelian letter group of order 8",
+   "command": "python3 fulltouch4.py 0",
+   "time": "minutes (Colab)",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/small11c.py",
+   "language": "python",
+   "shows": "the 1+1 in 4 relay: the same 0.25 floor and the same missed characters",
+   "command": "python3 small11c.py 0 3",
+   "time": "about a minute",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19 (seed 0, three trials): floors 0.41, 0.25 and 0.38, all at or above 0.25; the saved file came from other seeds",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/fam.py",
+   "language": "python",
+   "shows": "f = 2 screen of 12-move mixed programs (library and solver)",
+   "command": "driven by job scripts",
+   "time": "minutes per fit (Colab)",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/skeptic/v105.py",
+   "language": "python",
+   "shows": "skeptic's independent 105 defect table over all 10,752 engine steps",
+   "command": "cd skeptic && python3 v105.py",
+   "time": "about a minute",
+   "memory": "about 0.15 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one (exact tables identical; floating-point round-off of dropped singular values differs at the 1e-15 level)",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/skeptic/vplain.py",
+   "language": "python",
+   "shows": "Lemma Q and the 105 table against the plain programs",
+   "command": "cd skeptic && python3 vplain.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/skeptic/vod.py",
+   "language": "python",
+   "shows": "over-demand of small programs (Q'' gives 16 where Q gives 8)",
+   "command": "cd skeptic && python3 vod.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/skeptic/vhook.py",
+   "language": "python",
+   "shows": "skeptic's hook tables (14 engine classes, 1,680 widened)",
+   "command": "cd skeptic && python3 vhook.py engine 6000 1",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one (seed 1; floating-point round-off differs at the 1e-14 level)",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/first-touch-prices/skeptic/vlift.py",
+   "language": "python",
+   "shows": "two-step touches of price exactly 1 exist (Clifford lifts)",
+   "command": "cd skeptic && python3 vlift.py",
+   "time": "about 2 min (Colab)",
+   "memory": "unknown",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/check_chain.py",
+   "language": "python",
+   "shows": "the chain map on row 1 commutes with D1, unbounded order; R7 exactly 0",
+   "command": "python3 check_chain.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/check_relX.py",
+   "language": "python",
+   "shows": "toy family exact under the relative recursion (refutes the wave-3 closing claim)",
+   "command": "python3 check_relX.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/keptrel.py",
+   "language": "python",
+   "shows": "which identities a fibrewise sub-call keeps",
+   "command": "python3 keptrel.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/r8check.py",
+   "language": "python",
+   "shows": "the kept identity R8 and its mirror",
+   "command": "python3 r8check.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/lamplighter.py",
+   "language": "python",
+   "shows": "the lamplighter group inside the commutant of D1",
+   "command": "python3 lamplighter.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/braid.py",
+   "language": "python",
+   "shows": "the braid relation holds at the transform, is not kept",
+   "command": "python3 braid.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/propS_check.py",
+   "language": "python",
+   "shows": "Proposition S (X-type halving) numerically",
+   "command": "python3 propS_check.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/vcheck.py",
+   "language": "python",
+   "shows": "skeptic's rebuild: R8, Prop S, lamplighter, mirror running XOR group sizes",
+   "command": "python3 vcheck.py",
+   "time": "about 1.5 min",
+   "memory": "about 1.6 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, its report vcheck_out.txt agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/vcheck7.py",
+   "language": "python",
+   "shows": "skeptic: R8 with the Z-type halving escapes Proposition S",
+   "command": "python3 vcheck7.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19: every saved line agrees; the program also prints the 'seeded at Q' lines (0.79 to 0.85 from the twin, X1 control 1.5e-7) that the skeptic's log quotes but its saved file lacks",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/dual_toy.py",
+   "language": "python",
+   "shows": "Proposition Lambda0 over the dual numbers",
+   "command": "python3 dual_toy.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/tri_als.py",
+   "language": "python",
+   "shows": "the triangular 2-in-3 search",
+   "command": "MU=0.01 python3 tri_als.py 1,2,1 chain 2,3,4 100 1 K 6",
+   "time": "minutes per run (Colab)",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/tnorm.py",
+   "language": "python",
+   "shows": "residual and cross-term size of a saved triangular solution",
+   "command": "python3 tnorm.py <npz> ...",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/approximate-units-everything-free/rescore.py",
+   "language": "python",
+   "shows": "skeptic's re-evaluation of saved solutions on new probes at f = 2, 4, 6",
+   "command": "python3 rescore.py ../../data/approximate-units-everything-free/saved-programs/cont121chain.npz 1,2,1 chain K 9191 2,4,6",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run 2026-10-19 on the five saved solutions, output agrees with the saved one",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/parity-lattice-block2/verify_lattice.py",
+   "language": "python",
+   "shows": "the parity lattice is kept; one move pushes out 6, K needs 10 (f = 2)",
+   "command": "python3 verify_lattice.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [],
+   "rerun": "re-run 2026-10-19: lambda(D) = 6, lambda(K) = 10, kept by all 33 generators (no saved output existed; the numbers match the notes)",
+   "run_from": "its own folder"
+  },
+  {
+   "path": "programs/parity-lattice-block2/montecarlo.py",
+   "language": "python",
+   "shows": "the same two numbers by sampling, from the lattice's definition",
+   "command": "python3 montecarlo.py",
+   "time": "about 2 min",
+   "memory": "small",
+   "needs": [],
+   "rerun": "re-run 2026-10-19: sampled lambda(K) = 9.93, lambda(D) = 5.98 to 5.99 against exact 10 and 6 (no saved output existed)",
+   "run_from": "its own folder"
+  }
+ ]
+}

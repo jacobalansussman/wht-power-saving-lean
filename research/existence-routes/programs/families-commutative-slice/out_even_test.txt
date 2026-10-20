@@ -1,0 +1,27 @@
+plain 1in3 b3 [clique ('passes', 1)] m=3 W=1 M=3: tight 24, even-test failures 0, odd-test failures 0 -> passes
+plain 2in6 b3 [clique ('passes', 2)] m=3 W=2 M=6: tight 24, even-test failures 0, odd-test failures 0 -> passes
+plain 3in9 b3 [clique ('passes', 3)] m=3 W=3 M=9: tight 24, even-test failures 0, odd-test failures 0 -> passes
+plain 2in8 b4 [clique ('passes', 2)] m=4 W=2 M=8: tight 256, even-test failures 0, odd-test failures 0 -> passes
+plain 4in16 b4 [clique ('passes', 4)] m=4 W=4 M=16: tight 256, even-test failures 0, odd-test failures 0 -> passes
+plain 3in15 b5 [clique ('passes', 3)] m=5 W=3 M=15: tight 5120, even-test failures 0, odd-test failures 0 -> passes
+1in4 (7,11,13,14) b4 [clique ('passes', 1)] m=4 W=1 M=4: tight 256, even-test failures 0, odd-test failures 0 -> passes
+a7 2in8 two reps b4 [clique ('passes', 2)] m=4 W=2 M=8: tight 128, even-test failures 0, odd-test failures 0 -> passes
+a8 4in16 2x2 reps b4 [clique ('passes', 4)] m=4 W=4 M=16: tight 128, even-test failures 0, odd-test failures 0 -> passes
+U3 2in7 b3 [clique ('passes', 2)] m=3 W=2 M=7: tight 12, even-test failures 0, odd-test failures 0 -> passes
+U3^(2) 4in14 b3 [clique ('passes', 4)] m=3 W=4 M=14: tight 12, even-test failures 0, odd-test failures 0 -> passes
+U4 4in15 b4 [excluded by Thm 1] [clique ('EXCLUDED', 15)] m=4 W=4 M=15: tight 56, even-test failures 511, odd-test failures 456 -> EXCLUDED; first even failure: support dirs [12, 13, 14, 15] (|D|=4, matching 0); first odd failure: (1, [8, 9, 10, 11, 12, 13, 14, 15], 0)
+U4 + e1: 4in16 b4 [excluded by Thm 1] [clique ('EXCLUDED', 14)] m=4 W=4 M=16: tight 40, even-test failures 511, odd-test failures 404 -> EXCLUDED; first even failure: support dirs [12, 13, 14, 15] (|D|=4, matching 0); first odd failure: (1, [8, 9, 10, 11, 12, 13, 14, 15], 0)
+U4 + e1 + e2: 4in17 b4 [excluded by Thm 1] [clique ('EXCLUDED', 8)] m=4 W=4 M=17: tight 26, even-test failures 384, odd-test failures 16 -> EXCLUDED; first even failure: support dirs [12, 13, 14, 15] (|D|=4, matching 0); first odd failure: (1, [8, 9, 10, 11, 12, 13, 14, 15], 0)
+2in5 b3 [impossible]: deletion test fails (1 < W)
+survivor dirs with >3 copies [7, 8] [clique ('passes', 12)] m=4 W=12 M=47: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [6, 6, 6, 7, 7, 7, 7, 14, 14, 14, 15, 15, 15] (|D|=13, matching 8)
+survivor dirs with >3 copies [4, 11] [clique ('passes', 12)] m=4 W=12 M=47: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [10, 10, 10, 11, 11, 11, 11, 14, 14, 14, 15, 15, 15] (|D|=13, matching 8)
+survivor dirs with >3 copies [2, 13] [clique ('passes', 12)] m=4 W=12 M=47: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 15, 15, 15] (|D|=13, matching 8)
+survivor dirs with >3 copies [1, 14] [clique ('passes', 12)] m=4 W=12 M=47: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [12, 12, 12, 13, 13, 13, 14, 14, 14, 14, 15, 15, 15] (|D|=13, matching 8)
+survivor dirs with >3 copies [7, 8, 11, 13, 14] [clique ('passes', 13)] m=4 W=13 M=51: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [6, 6, 6, 7, 7, 7, 7, 7, 14, 14, 14, 14, 15, 15, 15] (|D|=15, matching 10)
+survivor dirs with >3 copies [4, 7, 11, 13, 14] [clique ('passes', 13)] m=4 W=13 M=51: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [10, 10, 10, 11, 11, 11, 11, 11, 14, 14, 14, 14, 15, 15, 15] (|D|=15, matching 10)
+survivor dirs with >3 copies [2, 7, 11, 13, 14] [clique ('passes', 13)] m=4 W=13 M=51: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [12, 12, 12, 13, 13, 13, 13, 13, 14, 14, 14, 14, 15, 15, 15] (|D|=15, matching 10)
+survivor dirs with >3 copies [1, 7, 11, 13, 14] [clique ('passes', 13)] m=4 W=13 M=51: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 14, 14, 15, 15, 15] (|D|=15, matching 10)
+survivor dirs with >3 copies [1, 2, 4, 7, 8] [clique ('passes', 13)] m=4 W=13 M=51: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [6, 6, 6, 7, 7, 7, 7, 14, 14, 14, 15, 15, 15] (|D|=13, matching 8)
+survivor dirs with >3 copies [1, 2, 4, 8, 11] [clique ('passes', 13)] m=4 W=13 M=51: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [10, 10, 10, 11, 11, 11, 11, 14, 14, 14, 15, 15, 15] (|D|=13, matching 8)
+survivor dirs with >3 copies [1, 2, 4, 8, 13] [clique ('passes', 13)] m=4 W=13 M=51: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 15, 15, 15] (|D|=13, matching 8)
+survivor dirs with >3 copies [1, 2, 4, 8, 14] [clique ('passes', 13)] m=4 W=13 M=51: tight 27, even-test failures 192, odd-test failures 0 -> EXCLUDED; first even failure: support dirs [12, 12, 12, 13, 13, 13, 14, 14, 14, 14, 15, 15, 15] (|D|=13, matching 8)

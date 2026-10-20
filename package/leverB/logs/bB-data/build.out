@@ -1,0 +1,14 @@
+INSTALL B3945H: 1 new, 175 identical (skipped), from /content/work/bB-data/in/lean; hashes /content/work/bB-data/in-B3945H.sha256
+=== lightA START 19:07:34
+=== lightA END rc=0 wall=1s maxrss_kb=817148 19:07:35
+info: Work/XHostT/Data/S5H/Heads.lean:22:0: 'OAI.PowerSaving.XHostT.K.DS5H.res_eq01' depends on axioms: [propext]
+Build completed successfully (165 jobs).
+   (slot: waited 0s; heavy 1, avail 46846 MB)
+phase B LEAN_NUM_THREADS=2
+=== heavyB START 19:07:35
+=== heavyB END rc=0 wall=27s maxrss_kb=3314460 19:08:02
+info: Work/Mixed/Rate3945HSharp.lean:81:0: 'OAI.PowerSaving.MX.rate3945H_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9493 jobs).
+34
+AXIOMS 3945H: standard only
+BUILD 3945H OK

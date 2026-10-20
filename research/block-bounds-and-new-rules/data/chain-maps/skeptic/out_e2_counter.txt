@@ -1,0 +1,7 @@
+f=8: k,l symplectic: True; k in Q(r=1, symbol I): True; l in Q(r=1, symbol I): True
+   k*l: deep x deep nonzero entries of M - I for r = 1..3: {1: 36, 2: 16, 3: 4}  (all > 0 => k*l not in Q for any r)
+   k*l: rank(M(kl) - I) = 4  (bounded: the bounded-rank repair of Q keeps symbol I)
+f=12: k,l symplectic: True; k in Q(r=1, symbol I): True; l in Q(r=1, symbol I): True
+   k*l: deep x deep nonzero entries of M - I for r = 1..5: {1: 100, 2: 64, 3: 36, 4: 16, 5: 4}  (all > 0 => k*l not in Q for any r)
+   k*l: rank(M(kl) - I) = 4  (bounded: the bounded-rank repair of Q keeps symbol I)
+COUNTEREXAMPLE TO E2 AS WRITTEN CONFIRMED

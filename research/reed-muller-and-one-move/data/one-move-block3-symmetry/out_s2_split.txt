@@ -1,0 +1,28 @@
+Lagrangians: 135
+dual polar graph edges: 945
+coordinate permutations commute with K: ok
+Singer c (order 7): fixed cells 2 (distances from L_Z: [0, 3]), fixed edges 0, swapped edges 0
+coordinate 3-cycle (order 3): fixed cells 9 (distances from L_Z: [0, 1, 1, 2, 2, 3, 3, 3, 3]), fixed edges 9, swapped edges 0
+coordinate transposition (order 2): fixed cells 39 (distances from L_Z: [0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]), fixed edges 129, swapped edges 0
+Pauli X^1 (order 2): fixed cells 135 (distances from L_Z: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]), fixed edges 945, swapped edges 0
+Pauli X^3 (order 2): fixed cells 135 (distances from L_Z: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]), fixed edges 945, swapped edges 0
+Pauli X^7 (order 2): fixed cells 135 (distances from L_Z: [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]), fixed edges 945, swapped edges 0
+demand split of c' on N/E_N (Singer, order 7): [32, 32, 32, 32, 32, 32, 32]
+demand split of c' on N/E_N (3-cycle, order 3): [76, 74, 74]
+demand split of c' on N/E_N (transposition, order 2): [104, 120]
+demand split of c' on N/E_N (X^1, order 2): [112, 112]
+demand split of c' on N/E_N (X^7, order 2): [112, 112]
+3-cycle fixed move dir7           cap, split over chars of c: (80, [28, 26, 26])
+3-cycle fixed move S dir7 S^-1    cap, split over chars of c: (80, [28, 26, 26])
+3-cycle fixed move CZ dir7 CZ     cap, split over chars of c: (80, [28, 26, 26])
+3-cycle fixed move Z^7 dir7 Z^7   cap, split over chars of c: (80, [28, 26, 26])
+X^1 fixed move dir1: cap, split: (80, [40, 40])
+X^1 fixed move dir2: cap, split: (80, [40, 40])
+X^1 fixed move dir3: cap, split: (80, [40, 40])
+X^1 fixed move dir4: cap, split: (80, [40, 40])
+X^1 fixed move dir5: cap, split: (80, [40, 40])
+X^1 fixed move dir6: cap, split: (80, [40, 40])
+X^1 fixed move dir7: cap, split: (80, [40, 40])
+transposition fixed move dir7: cap, split: (80, [36, 44])
+transposition fixed move dir3: cap, split: (80, [36, 44])
+transposition fixed move dir4: cap, split: (80, [36, 44])

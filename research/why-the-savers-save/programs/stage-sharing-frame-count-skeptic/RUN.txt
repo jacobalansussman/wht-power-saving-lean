@@ -1,0 +1,6 @@
+v-s-fix (skeptic of s-fix), 13 Oct 2026. All standard library, python3 -I.
+  cd ../s-fix && python3 -I recount.py          -> rerun_recount.txt (identical to s-fix/out_recount.txt; 39 s)
+  python3 -I indep_local.py                      -> indep_local.txt  (6470 / 12210 from q dot products; hub rho identities 0 failures of 555)
+  python3 -I algebra_check.py                    -> algebra_check.txt (escape-(b) algebra, s-fix model vs model with target->target reads)
+  f2h4_pairs.txt: f2h4-odd has 32 ordered (16 unordered) orthogonal pairs
+  hub_per_call_contract.txt: global_k.py lines that force every call to restore all columns (no carried content)

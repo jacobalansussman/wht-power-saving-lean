@@ -1,0 +1,95 @@
+TARGET y12 own-block need {100: '-1/2', 56: '-1/2', 77: '1/2', 103: '-1/2'}
+    6 reads 1/2 h451 pstart 1 pframe 1 gate 1 tframe 0 own: {} n 0
+    43 reads 1/2 h497 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    513 reads -1/2 x100 pstart 1 pframe 2 gate 2 tframe 1 own: {'x100': '1', 'x56': '1'} n 2
+    1216 reads -1/2 h497 pstart 1 pframe 6 gate 7 tframe 2 own: {} n 8
+    1341 reads 1 y31 pstart 0 pframe 7 gate 7 tframe 7 own: {'x77': '1/2', 'x103': '-1/2'} n 10
+    1342 is read -1/2 y31 pstart 0 pframe 7 gate 7 tframe 7 own: {'x77': '1/2', 'x103': '-1/2'} n 10
+    1572 reads -1/2 h242 pstart 0 pframe 7 gate 8 tframe 7 own: {} n 16
+    1580 reads -1/2 h258 pstart 0 pframe 7 gate 8 tframe 8 own: {} n 16
+    ... total B gates 8  gate dims [1, 1, 2, 7, 7, 7, 8, 8]
+TARGET y17 own-block need {103: '-1/2', 77: '-1/2', 56: '1/2', 100: '-1/2'}
+    5 reads 1/2 h450 pstart 1 pframe 1 gate 1 tframe 0 own: {} n 0
+    519 reads -1/2 h281 pstart 0 pframe 2 gate 2 tframe 1 own: {'x103': '1', 'x77': '1'} n 2
+    894 reads -1/2 h299 pstart 0 pframe 3 gate 4 tframe 2 own: {} n 4
+    1215 reads -1/2 h450 pstart 1 pframe 6 gate 7 tframe 4 own: {} n 4
+    1338 reads 1 y38 pstart 0 pframe 7 gate 7 tframe 7 own: {'x56': '1/2', 'x100': '-1/2'} n 10
+    1339 is read -1/2 y38 pstart 0 pframe 7 gate 7 tframe 7 own: {'x56': '1/2', 'x100': '-1/2'} n 10
+    1573 reads -2 h366 pstart 0 pframe 7 gate 8 tframe 7 own: {} n 16
+    1577 reads -2 h344 pstart 0 pframe 7 gate 8 tframe 8 own: {} n 16
+    ... total B gates 8  gate dims [1, 2, 4, 7, 7, 7, 8, 8]
+TARGET y31 own-block need {77: '-1/2', 103: '1/2', 100: '-1/2', 56: '-1/2'}
+    516 reads -1 h567 pstart 1 pframe 1 gate 1 tframe 0 own: {} n 0
+    517 reads 1 h287 pstart 0 pframe 2 gate 2 tframe 1 own: {'x77': '1/2', 'x103': '-1/2'} n 2
+    898 reads 1 h567 pstart 1 pframe 3 gate 4 tframe 2 own: {} n 4
+    1220 reads -1/2 h434 pstart 0 pframe 6 gate 7 tframe 4 own: {} n 4
+    1341 is read 1 y12 pstart 0 pframe 7 gate 7 tframe 7 own: {'x100': '-1/2', 'x56': '-1/2'} n 10
+    1342 reads -1/2 y12 pstart 0 pframe 7 gate 7 tframe 7 own: {'x100': '-1/2', 'x56': '-1/2', 'x77': '1/2', 'x103': '-1/2'} n 20
+    1568 reads -1/2 h247 pstart 0 pframe 7 gate 8 tframe 7 own: {} n 16
+    1576 reads -1/2 h263 pstart 0 pframe 7 gate 8 tframe 8 own: {} n 16
+    ... total B gates 9  gate dims [1, 2, 4, 7, 7, 7, 7, 8, 8]
+TARGET y38 own-block need {56: '-1/2', 100: '1/2', 103: '-1/2', 77: '-1/2'}
+    76 reads 1/2 h606 pstart 1 pframe 1 gate 1 tframe 0 own: {} n 0
+    520 reads 1 x56 pstart 1 pframe 2 gate 2 tframe 1 own: {'x56': '1/2', 'x100': '-1/2'} n 2
+    897 reads -1/2 h606 pstart 1 pframe 3 gate 6 tframe 2 own: {} n 4
+    1219 reads 1 x3 pstart 1 pframe 3 gate 7 tframe 6 own: {} n 4
+    1338 is read 1 y17 pstart 0 pframe 7 gate 7 tframe 7 own: {'x103': '-1/2', 'x77': '-1/2'} n 10
+    1339 reads -1/2 y17 pstart 0 pframe 7 gate 7 tframe 7 own: {'x103': '-1/2', 'x77': '-1/2', 'x56': '1/2', 'x100': '-1/2'} n 20
+    1569 reads -2 h364 pstart 0 pframe 7 gate 8 tframe 7 own: {} n 16
+    1581 reads -2 x28 pstart 1 pframe 7 gate 8 tframe 8 own: {} n 16
+    ... total B gates 9  gate dims [1, 2, 6, 7, 7, 7, 7, 8, 8]
+TARGET y56 own-block need {38: '-1/2', 17: '1/2', 12: '-1/2', 31: '-1/2'}
+    148 reads -1/4 h640 pstart 1 pframe 1 gate 1 tframe 0 own: {} n 0
+    152 reads 1/4 h641 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    156 reads 1/4 h642 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    160 reads 1/2 h644 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    515 reads 1 h285 pstart 0 pframe 2 gate 2 tframe 1 own: {'x38': '1/2', 'x17': '-1/2'} n 2
+    896 reads 1 h566 pstart 1 pframe 3 gate 4 tframe 2 own: {} n 4
+    1218 reads -1/2 h439 pstart 0 pframe 6 gate 7 tframe 4 own: {} n 4
+    1347 is read 1 y100 pstart 0 pframe 7 gate 7 tframe 7 own: {'x12': '-1/2', 'x31': '-1/2'} n 10
+    1348 reads -1/2 y100 pstart 0 pframe 7 gate 7 tframe 7 own: {'x12': '-1/2', 'x31': '-1/2', 'x38': '1/2', 'x17': '-1/2'} n 20
+    1584 reads -1/2 h640 pstart 1 pframe 7 gate 8 tframe 7 own: {} n 16
+    1596 reads -1/2 h643 pstart 5 pframe 7 gate 8 tframe 8 own: {} n 16
+    ... total B gates 12  gate dims [1, 1, 1, 1, 2, 4, 7, 7, 7, 7, 8, 8]
+TARGET y77 own-block need {31: '-1/2', 12: '1/2', 17: '-1/2', 38: '-1/2'}
+    78 reads 1/2 h607 pstart 1 pframe 1 gate 1 tframe 0 own: {} n 0
+    150 reads -1/4 h640 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    154 reads 1/4 h641 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    158 reads -1/4 h642 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    162 reads 1/2 h644 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    521 reads 1 x31 pstart 1 pframe 2 gate 2 tframe 1 own: {'x31': '1/2', 'x12': '-1/2'} n 2
+    899 reads -1/2 h607 pstart 1 pframe 3 gate 6 tframe 2 own: {} n 4
+    1221 reads 1 h383 pstart 0 pframe 3 gate 7 tframe 6 own: {} n 4
+    1344 is read 1 y103 pstart 0 pframe 7 gate 7 tframe 7 own: {'x17': '-1/2', 'x38': '-1/2'} n 10
+    1345 reads -1/2 y103 pstart 0 pframe 7 gate 7 tframe 7 own: {'x17': '-1/2', 'x38': '-1/2', 'x31': '1/2', 'x12': '-1/2'} n 20
+    1585 reads -2 h647 pstart 5 pframe 7 gate 8 tframe 7 own: {} n 16
+    1593 reads -2 h645 pstart 5 pframe 7 gate 8 tframe 8 own: {} n 16
+    ... total B gates 13  gate dims [1, 1, 1, 1, 1, 2, 6, 7, 7, 7, 7, 8, 8]
+TARGET y100 own-block need {12: '-1/2', 31: '-1/2', 38: '1/2', 17: '-1/2'}
+    7 reads 1/2 h451 pstart 1 pframe 1 gate 1 tframe 0 own: {} n 0
+    147 reads 1/4 h640 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    151 reads 1/4 h641 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    155 reads 1/4 h642 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    159 reads -1/2 h644 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    514 reads -1/2 x12 pstart 1 pframe 2 gate 2 tframe 1 own: {'x12': '1', 'x31': '1'} n 2
+    895 reads -1/2 x54 pstart 1 pframe 3 gate 4 tframe 2 own: {} n 4
+    1217 reads -1/2 h451 pstart 1 pframe 6 gate 7 tframe 4 own: {} n 4
+    1347 reads 1 y56 pstart 0 pframe 7 gate 7 tframe 7 own: {'x38': '1/2', 'x17': '-1/2'} n 10
+    1348 is read -1/2 y56 pstart 0 pframe 7 gate 7 tframe 7 own: {'x38': '1/2', 'x17': '-1/2'} n 10
+    1588 reads -1/2 h641 pstart 1 pframe 7 gate 8 tframe 7 own: {} n 16
+    1592 reads -1/2 h642 pstart 1 pframe 7 gate 8 tframe 8 own: {} n 16
+    ... total B gates 12  gate dims [1, 1, 1, 1, 1, 2, 4, 7, 7, 7, 8, 8]
+TARGET y103 own-block need {17: '-1/2', 38: '-1/2', 31: '1/2', 12: '-1/2'}
+    4 reads 1/2 h450 pstart 1 pframe 1 gate 1 tframe 0 own: {} n 0
+    42 reads 1/2 h496 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    149 reads 1/4 h640 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    153 reads 1/4 h641 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    157 reads 1/4 h642 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    161 reads 1/2 h644 pstart 1 pframe 1 gate 1 tframe 1 own: {} n 0
+    518 reads -1/2 h283 pstart 0 pframe 2 gate 2 tframe 1 own: {'x17': '1', 'x38': '1'} n 2
+    1214 reads -1/2 h496 pstart 1 pframe 6 gate 7 tframe 2 own: {} n 8
+    1344 reads 1 y77 pstart 0 pframe 7 gate 7 tframe 7 own: {'x31': '1/2', 'x12': '-1/2'} n 10
+    1345 is read -1/2 y77 pstart 0 pframe 7 gate 7 tframe 7 own: {'x31': '1/2', 'x12': '-1/2'} n 10
+    1589 reads -2 h646 pstart 5 pframe 7 gate 8 tframe 7 own: {} n 16
+    1597 reads -2 h644 pstart 1 pframe 7 gate 8 tframe 8 own: {} n 16
+    ... total B gates 12  gate dims [1, 1, 1, 1, 1, 1, 2, 7, 7, 7, 8, 8]

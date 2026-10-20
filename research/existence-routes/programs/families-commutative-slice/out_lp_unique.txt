@@ -1,0 +1,3 @@
+m=3: LP value 3.000000 (uniform would give 3.500000); p_z range over the optimal face: min of lows 0.000000, max of highs 1.000000, uniform value 0.500000 -> not unique
+m=4: LP value 3.750000 (uniform would give 3.750000); p_z range over the optimal face: min of lows 0.250000, max of highs 0.250000, uniform value 0.250000 -> UNIQUE (uniform)
+m=5: LP value 3.875000 (uniform would give 3.875000); p_z range over the optimal face: min of lows 0.125000, max of highs 0.125000, uniform value 0.125000 -> UNIQUE (uniform)

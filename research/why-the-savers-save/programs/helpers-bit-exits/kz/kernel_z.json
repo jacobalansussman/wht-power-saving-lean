@@ -1,0 +1,33 @@
+{
+ "feasible_alone": 2,
+ "feasible_dims": {
+  "1": 2
+ },
+ "greedy": 1,
+ "replay_kept": 1,
+ "kept_entrance_dims": {
+  "1": 1
+ },
+ "kept_coordinate_entrances": 0,
+ "inserted_gates": 1,
+ "local_profile": {
+  "1": 1322,
+  "2": 1342,
+  "3": 79,
+  "4": 44,
+  "5": 102,
+  "6": 11,
+  "7": 19
+ },
+ "mass": 5128,
+ "ENT": 1,
+ "pivots": {
+  "444": [
+   [
+    0,
+    470,
+    79
+   ]
+  ]
+ }
+}

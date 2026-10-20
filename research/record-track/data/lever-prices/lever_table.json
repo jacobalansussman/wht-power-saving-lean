@@ -1,0 +1,246 @@
+[
+ {
+  "circuit": "T74 (#1839)",
+  "fill": "published fill",
+  "W": 66304,
+  "idle48": 22748,
+  "heads": 11010,
+  "uniform": {
+   "lo": "16797549561255",
+   "hi": "16797549561256",
+   "b": "1.6797549561e-03",
+   "separated": true,
+   "expected": "1.6797549561e-3",
+   "matches_expected": true
+  },
+  "half": {
+   "lo": "16968621073119",
+   "hi": "16968621073121",
+   "b": "1.6968621073e-03",
+   "separated": true,
+   "expected": "1.6968621073e-3",
+   "matches_expected": true
+  },
+  "full": {
+   "lo": "16948357904637",
+   "hi": "16948357904639",
+   "b": "1.6948357905e-03",
+   "separated": true,
+   "expected": "1.6948357905e-3",
+   "matches_expected": true
+  },
+  "unsep": {
+   "lo": "17434773228998",
+   "hi": "17434773229000",
+   "b": "1.7434773229e-03",
+   "separated": false,
+   "expected": "1.7434773229e-3",
+   "matches_expected": true
+  }
+ },
+ {
+  "circuit": "T74 (#1839)",
+  "full_cut_break_even_heads": 9443,
+  "of_idle48": 22748,
+  "expected": 9443,
+  "matches_expected": true
+ },
+ {
+  "circuit": "#2979",
+  "fill": "published fill",
+  "W": 66304,
+  "idle48": 28190,
+  "heads": 16086,
+  "uniform": {
+   "lo": "17290339826465",
+   "hi": "17290339826466",
+   "b": "1.7290339826e-03",
+   "separated": true,
+   "expected": "1.7290339826e-3",
+   "matches_expected": true
+  },
+  "half": {
+   "lo": "17556473152922",
+   "hi": "17556473152923",
+   "b": "1.7556473153e-03",
+   "separated": true,
+   "expected": "1.7556473153e-3",
+   "matches_expected": true
+  },
+  "full": {
+   "lo": "17744822149480",
+   "hi": "17744822149482",
+   "b": "1.7744822149e-03",
+   "separated": true,
+   "expected": "1.7744822149e-3",
+   "matches_expected": true
+  },
+  "unsep": {
+   "lo": "18295795872715",
+   "hi": "18295795872716",
+   "b": "1.8295795873e-03",
+   "separated": false
+  }
+ },
+ {
+  "circuit": "#2979",
+  "fill": "every head bin empty (design A)",
+  "W": 66304,
+  "idle48": 28190,
+  "heads": 16576,
+  "uniform": {
+   "lo": "17290339826465",
+   "hi": "17290339826466",
+   "b": "1.7290339826e-03",
+   "separated": true
+  },
+  "half": {
+   "lo": "17564708006815",
+   "hi": "17564708006816",
+   "b": "1.7564708007e-03",
+   "separated": true,
+   "expected": "1.7564708007e-3",
+   "matches_expected": true
+  },
+  "full": {
+   "lo": "17797095471364",
+   "hi": "17797095471366",
+   "b": "1.7797095471e-03",
+   "separated": true
+  },
+  "unsep": {
+   "lo": "18328256657689",
+   "hi": "18328256657691",
+   "b": "1.8328256658e-03",
+   "separated": false
+  }
+ },
+ {
+  "circuit": "#2979",
+  "full_cut_break_even_heads": 11702,
+  "of_idle48": 28190,
+  "expected": 11702,
+  "matches_expected": true
+ },
+ {
+  "circuit": "#3945",
+  "fill": "published fill",
+  "W": 322560,
+  "idle48": 137952,
+  "heads": 57312,
+  "uniform": {
+   "lo": "17306632365345",
+   "hi": "17306632365346",
+   "b": "1.7306632365e-03",
+   "separated": true,
+   "expected": "1.7306632365e-3",
+   "matches_expected": true
+  },
+  "half": {
+   "lo": "17501109246205",
+   "hi": "17501109246207",
+   "b": "1.7501109246e-03",
+   "separated": true,
+   "expected": "1.7501109246e-3",
+   "matches_expected": true
+  },
+  "full": {
+   "lo": "17307679642065",
+   "hi": "17307679642066",
+   "b": "1.7307679642e-03",
+   "separated": true,
+   "expected": "1.7307679642e-3",
+   "matches_expected": true
+  },
+  "unsep": {
+   "lo": "18033130058452",
+   "hi": "18033130058454",
+   "b": "1.8033130058e-03",
+   "separated": false,
+   "expected": "1.8033130e-3",
+   "matches_expected": true
+  }
+ },
+ {
+  "circuit": "#3945",
+  "fill": "every head bin empty (design B)",
+  "W": 322560,
+  "idle48": 137952,
+  "heads": 80640,
+  "uniform": {
+   "lo": "17306632365345",
+   "hi": "17306632365346",
+   "b": "1.7306632365e-03",
+   "separated": true
+  },
+  "half": {
+   "lo": "17581520167645",
+   "hi": "17581520167647",
+   "b": "1.7581520168e-03",
+   "separated": true,
+   "expected": "1.7581520168e-3",
+   "matches_expected": true
+  },
+  "full": {
+   "lo": "17806935405762",
+   "hi": "17806935405764",
+   "b": "1.7806935406e-03",
+   "separated": true,
+   "expected": "1.7806935406e-3",
+   "matches_expected": true
+  },
+  "unsep": {
+   "lo": "18346559212228",
+   "hi": "18346559212230",
+   "b": "1.8346559212e-03",
+   "separated": false
+  }
+ },
+ {
+  "circuit": "#3945",
+  "full_cut_break_even_heads": 57262,
+  "of_idle48": 137952,
+  "expected": 57262,
+  "matches_expected": true
+ },
+ {
+  "circuit": "#3815",
+  "fill": "published fill",
+  "W": 322560,
+  "idle48": 137952,
+  "heads": 57312,
+  "uniform": {
+   "lo": "17305784372662",
+   "hi": "17305784372664",
+   "b": "1.7305784373e-03",
+   "separated": true
+  },
+  "half": {
+   "lo": "17500242252886",
+   "hi": "17500242252888",
+   "b": "1.7500242253e-03",
+   "separated": true,
+   "expected": "1.7500242253e-3",
+   "matches_expected": true
+  },
+  "full": {
+   "lo": "17306831569372",
+   "hi": "17306831569374",
+   "b": "1.7306831569e-03",
+   "separated": true
+  },
+  "unsep": {
+   "lo": "18032209970635",
+   "hi": "18032209970636",
+   "b": "1.8032209971e-03",
+   "separated": false
+  }
+ },
+ {
+  "circuit": "#3815",
+  "full_cut_break_even_heads": 57262,
+  "of_idle48": 137952,
+  "expected": null,
+  "matches_expected": true
+ }
+]

@@ -1,0 +1,12 @@
+rank_modp_fast vs plain elimination mod 999983: 60/60 agree
+sub m=3: 16 frames; W=3: 20 pattern classes (2.4s)
+  class [0, 1, 2] (dims [0, 1, 1]): cut LP 4.6667 -> searched: no scheme states=1945 (4s)
+  class [1, 2, 8] (dims [1, 1, 2]): cut LP 4.6667 -> searched: no scheme states=950 (4s)
+SUMMARY sub m=3 W=3 GF(3) budget 5: {'searched: no scheme': 2, 'excluded by cut': 18}; cut-LP min 4.6667 max 6.0000 (4s)
+sub m=4: 67 frames; W=3: 56 pattern classes (2.3s)
+  class [1, 2, 16] (dims [1, 1, 2]): cut LP 4.6667 -> searched: no scheme states=7365 (18s)
+  class [1, 16, 17] (dims [1, 2, 2]): cut LP 4.6667 -> searched: no scheme states=4227 (18s)
+  class [0, 1, 2] (dims [0, 1, 1]): cut LP 4.6667 -> searched: no scheme states=14021 (19s)
+SUMMARY sub m=4 W=3 GF(3) budget 5: {'searched: no scheme': 3, 'excluded by cut': 53}; cut-LP min 4.6667 max 6.0000 (19s)
+sub m=4: 67 frames; W=4: 284 pattern classes (9.7s)
+exit 143

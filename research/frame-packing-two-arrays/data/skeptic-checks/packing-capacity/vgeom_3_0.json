@@ -1,0 +1,83 @@
+[
+ {
+  "m": 2,
+  "frames": 15,
+  "neighbours_of_L0": 6,
+  "lemmaS_ok": true,
+  "lemmaS_profile": {
+   "2": {
+    "(0, 3, 3)": 8
+   },
+   "1": {
+    "(4, 1, 1)": 6
+   },
+   "0": {
+    "(6, 0, 0)": 1
+   }
+  },
+  "min_blocking_set_levels_below_m": 3,
+  "union_bound_violations": 0,
+  "ordered_opposite_pairs": 120,
+  "pairs_examined": 120,
+  "rho_distribution": {
+   "0.0": 1,
+   "0.5": 6,
+   "1.0": 47,
+   "1.25": 36,
+   "1.5": 23,
+   "1.75": 6,
+   "2.0": 1
+  },
+  "mean_rho": 1.1833333333333333,
+  "count_rho_eq_m": 1,
+  "lambda_distribution": {
+   "0": 30,
+   "1": 89,
+   "2": 1
+  }
+ },
+ {
+  "m": 3,
+  "frames": 135,
+  "neighbours_of_L0": 14,
+  "lemmaS_ok": true,
+  "lemmaS_profile": {
+   "3": {
+    "(0, 7, 7)": 64
+   },
+   "2": {
+    "(8, 3, 3)": 56
+   },
+   "1": {
+    "(12, 1, 1)": 14
+   },
+   "0": {
+    "(14, 0, 0)": 1
+   }
+  },
+  "min_blocking_set_levels_below_m": 3,
+  "union_bound_violations": 0,
+  "ordered_opposite_pairs": 8640,
+  "pairs_examined": 8640,
+  "rho_distribution": {
+   "0.0": 1,
+   "0.5": 14,
+   "1.0": 182,
+   "1.5": 2415,
+   "1.75": 3136,
+   "2.0": 2128,
+   "2.25": 616,
+   "2.5": 133,
+   "2.75": 14,
+   "3.0": 1
+  },
+  "mean_rho": 1.7726273148148148,
+  "count_rho_eq_m": 1,
+  "lambda_distribution": {
+   "0": 127,
+   "1": 7329,
+   "2": 1183,
+   "3": 1
+  }
+ }
+]

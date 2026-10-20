@@ -1,0 +1,131 @@
+{
+  "format": "certificate-package/1 (as community/*/result.json of jacobalansussman/wht-power-saving-lean)",
+  "name": "u8x0hq",
+  "suffix": "U8X0HQ",
+  "title": "The community's U8 word with exit frames, mutable sources without centre copies, and same-run hosting (one-pad bank table, quartic rate lemma)",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "numerator": 16256629,
+  "kernel_numerator": 16256630,
+  "negative_numerator": 16256630,
+  "saving": "1.6256629e-3",
+  "exponent": "1 - 16256629/10^10",
+  "mode": "add",
+  "requires": [],
+  "lakefile_add": [
+    "lean_lib XExit where globs := #[`XExit.+]",
+    "lean_lib CSX where globs := #[`CSX.+]"
+  ],
+  "tree_change": "lakefile.lean gains two library lines: lean_lib XExit where globs := #[`XExit.+] and lean_lib CSX where globs := #[`CSX.+] (meta/lakefile.lean.ours; apply-overlay.sh appends them)",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainU8X0HQ",
+    "OAI.PowerSaving.convolution_mainU8X0HQ"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainU8X0HQ",
+    "OAI.PowerSaving.convolution_mainU8X0HQ",
+    "OAI.PowerSaving.RAM.hillsU8X0HQ_program"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierU8X0HQ.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierU8X0HQNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierU8X0HQ.Main",
+  "axioms_file": "Work/FourierU8X0HQ/Axioms.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentU8X0HQ",
+  "build_targets": [
+    "Work.BlockAccounting.Moment4",
+    "Work.XHost.U8X0HQ",
+    "Work.FourierU8X0HQ.Main",
+    "Work.FourierU8X0HQ.UniformFourierChallenge",
+    "Work.FourierU8X0HQNeg.UniformFourierChallenge",
+    "Work.FourierU8X0HQ.Axioms",
+    "Work.XHost.HBank",
+    "Work.XHost.HEnd"
+  ],
+  "lean_controls": [
+    {
+      "name": "glue-axioms",
+      "file": "meta/AxU8X0HQ.lean",
+      "what": "prints the axioms of the glue lemmas (standard three; propext alone for the host-table check)"
+    },
+    {
+      "name": "hostSchedK-negative",
+      "file": "meta/HsU8X0HQNeg.lean",
+      "what": "Lean's kernel proves that hostSchedK returns false on the host table with one remainder changed (rem[346] 1 -> 0)"
+    }
+  ],
+  "comparator": {
+    "positive": "comparator/fourier-u8x0hq.json",
+    "negative": "comparator/fourier-u8x0hq-neg.json"
+  },
+  "checks": {
+    "build (14 Oct 2026, Colab #3)": {
+      "status": "pass",
+      "log": "logs/2026-10-14-build/u8x0hq.out",
+      "note": "lake build 299 s, 8.9 GB at most"
+    },
+    "axioms": {
+      "status": "pass",
+      "log": "logs/2026-10-14-build/u8x0hq/axioms.log"
+    },
+    "hostSchedK negative": {
+      "status": "pass",
+      "log": "logs/2026-10-14-build/u8x0hq/hsneg.log"
+    },
+    "statement files derived from OpenAI's": {
+      "status": "pass",
+      "log": "logs/2026-10-14-build/u8x0hq/derived-FourierU8X0HQ.lean"
+    },
+    "Compare.lean positive": {
+      "status": "pass",
+      "log": "logs/2026-10-14-build/u8x0hq/compare-pos.log",
+      "note": "RESULT: PASS, 112 s, 16.0 GB"
+    },
+    "Compare.lean negative": {
+      "status": "pass",
+      "log": "logs/2026-10-14-build/u8x0hq/compare-neg.log",
+      "note": "RESULT: FAIL on decimalExponentU8X0HQ"
+    },
+    "official comparator positive (stand-in sandbox)": {
+      "status": "pass",
+      "log": "logs/2026-10-14-build/cmp.out",
+      "note": "nanoda and Lean's kernel accept; 953 s"
+    },
+    "official comparator negative": {
+      "status": "pass",
+      "log": "logs/2026-10-14-build/cmp.out",
+      "note": "rejected: Const does not match (decimalExponentU8X0HQ)"
+    },
+    "leaderboard verifier re-created offline (c92b9b6)": {
+      "status": "pass",
+      "log": "logs/2026-10-14-build/bos-Q.out",
+      "note": "Lean check 4659 s from source, axiom audit, nanoda 993 s"
+    },
+    "independent rebuild from a fresh base (skeptic)": {
+      "status": "pass",
+      "log": "logs/2026-10-14-skeptic-rebuild/RESULT.json",
+      "note": "not refuted; generators re-run byte-identical; the generator refuses one unit higher"
+    },
+    "rebuilt on all five machines, 19 Oct 2026": {
+      "status": "pass",
+      "log": "logs/2026-10-19-rebuilds/",
+      "note": "C1 and C5 in full mode (Compare positive PASS, negative FAIL)"
+    },
+    "published scripts on a fresh base, 19 Oct 2026 (apply-overlay, build-and-check, run-comparator)": {
+      "status": "pass",
+      "log": "logs/2026-10-19-published-scripts/README.txt",
+      "note": "build from source; build-and-check ALL CHECKS PASSED (check3/); comparator accepts, the stronger statement is rejected (cmp-*.out)"
+    }
+  },
+  "provenance": "meta/SOURCES.txt names the package of the agents' work from which each overlay file comes; meta/SHA256SUMS.overlay is the hash list of the overlay as built"
+}

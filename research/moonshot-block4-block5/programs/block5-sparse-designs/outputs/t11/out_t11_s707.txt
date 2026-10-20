@@ -1,0 +1,4 @@
+alpha3 config {'CAP': 20000, 'TRUNC': 1, 'FIFO': 1, 'LMMAX': 1500, 'NORM': 'all', 'OLDPEEL': 0, 'PROG': 10000, 'MODPMAX': 400000000.0} argv ['707', '42', '24', '3', '3', 'orbitSN', '0', '0', '543', '8'] PYTHONHASHSEED=0
+seed 707 mode orbitSN 2-in-8: config {'profA': (4, 2), 'profB': (2, 4), 'lam': (3, 3), 'Ya': (3, 3, False, False), 'Yb': (3, 3, False, False)} (0s)
+  orbit sigma: order None fixes A1,A2 None; rejections {'notswap': 39879, 'dead': 121}
+result ('nosigma', None) (6s) stats {}

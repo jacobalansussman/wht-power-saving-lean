@@ -1,0 +1,24 @@
+control_word_block3
+    m : 3
+    formal_identity_r1=Kx1 : True
+    formal_identity_r2=Kx2 : True
+    moves : 6
+    Wm : 6
+    deficit : 0
+    rows_after_step1 : {'r1': [True, True], 'r2_x2_is_s': True}
+    s_in_Paulis*scalars (needed for any coherent gauge) : False
+    terms_in_r2_before_K : [1, 1]
+control_word_block4
+    m : 4
+    formal_identity_r1=Kx1 : True
+    formal_identity_r2=Kx2 : True
+    moves : 8
+    Wm : 8
+    deficit : 0
+    rows_after_step1 : {'r1': [True, True], 'r2_x2_is_s': True}
+    s_in_Paulis*scalars (needed for any coherent gauge) : False
+    terms_in_r2_before_K : [1, 1]
+odd_unit_block1
+    2-move word b (dir S dir) b2 equals c * dir for some free b, b2 : True
+    example_scalars : [{'c': ['1', '0']}, {'c': ['0', '1']}, {'c': ['-1', '0']}]
+    consequence : 1-array unit at block 1 with M = 2 = Wm + 1 (odd deficit -1); exact as a group identity

@@ -1,0 +1,110 @@
+{
+ "pkg": "dl/pr3945/owner",
+ "fill": "dl/pr3945/owner/FILL.json.gz",
+ "control_bridge_first": true,
+ "T": 360,
+ "calls": 3240,
+ "roles_per_call": 408,
+ "idle_profile": {
+  "3": 23328,
+  "5": 4320,
+  "48": 137952
+ },
+ "full_profile": {
+  "1": 8041680,
+  "2": 2306880,
+  "3": 729648,
+  "4": 353160,
+  "5": 69120,
+  "8": 25920,
+  "48": 137952
+ },
+ "rank_mass": 23431680,
+ "classes": [
+  {
+   "child": 4,
+   "child_rank": 32,
+   "remainder": 5,
+   "pair": 2,
+   "side": 0,
+   "cls": "HEAD-net(argued)",
+   "count": 2192
+  },
+  {
+   "child": 6,
+   "child_rank": 32,
+   "remainder": 5,
+   "pair": 2,
+   "side": 1,
+   "cls": "HEAD-net(argued)",
+   "count": 2128
+  },
+  {
+   "child": 8,
+   "child_rank": 48,
+   "remainder": 3,
+   "pair": 3,
+   "side": 0,
+   "cls": "neither",
+   "count": 11648
+  },
+  {
+   "child": 8,
+   "child_rank": 48,
+   "remainder": 48,
+   "pair": 3,
+   "side": 0,
+   "cls": "neither",
+   "count": 28672
+  },
+  {
+   "child": 10,
+   "child_rank": 48,
+   "remainder": 3,
+   "pair": 3,
+   "side": 1,
+   "cls": "neither",
+   "count": 11680
+  },
+  {
+   "child": 10,
+   "child_rank": 48,
+   "remainder": 48,
+   "pair": 3,
+   "side": 1,
+   "cls": "neither",
+   "count": 28640
+  },
+  {
+   "child": 12,
+   "child_rank": 48,
+   "remainder": 48,
+   "pair": 0,
+   "side": 0,
+   "cls": "neither",
+   "count": 40320
+  },
+  {
+   "child": 13,
+   "child_rank": 48,
+   "remainder": 48,
+   "pair": 0,
+   "side": 1,
+   "cls": "neither",
+   "count": 40320
+  }
+ ],
+ "remainder_rank_by_class": {
+  "HEAD-net(argued)": {
+   "5": 4320
+  },
+  "neither": {
+   "3": 23328,
+   "48": 137952
+  }
+ },
+ "totals_by_class": {
+  "HEAD-net(argued)": 4320,
+  "neither": 161280
+ }
+}

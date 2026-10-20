@@ -1,0 +1,5 @@
+design two m=5 seed=251 trial=1: psilin=11 psinum=00 exact=cc orbits=[('stab', 'B', 0, 3, 0, 6), ('rand', 'R1', 3, 3, 1, 8), ('rand', 'B', 3, 3, 1, 8)]
+   psi system: 84 rows x 11 states, 22 orbit scalars, max degree 1
+   outputs [0]: smallest psi residual with ONE choice of orbit scalars: 0.707 (per output ['0.71'], |beta| 0.5, |c| 3.82); a pass needs 0
+   outputs [1]: smallest psi residual with ONE choice of orbit scalars: 6.94e-18 (per output ['6.9e-18'], |beta| 1.0, |c| 2.17); a pass needs 0
+   outputs [0, 1]: smallest psi residual with ONE choice of orbit scalars: 0.707 (per output ['0.71', '3.8e-09'], |beta| 1.118, |c| 4.31); a pass needs 0

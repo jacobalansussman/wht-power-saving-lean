@@ -1,0 +1,8 @@
+m=6 r=1: N_r(s) = {0: 96, 1: 3999}  (total points 4095)
+m=6 r=2: N_r(s) = {0: 48, 1: 192, 2: 3855}  (total points 4095)
+m=6 r=3: N_r(s) = {1: 168, 2: 336, 3: 3591}  (total points 4095)
+m=6 r=4: N_r(s) = {2: 420, 3: 600, 4: 3075}  (total points 4095)
+m=6 r=5: N_r(s) = {3: 930, 4: 1116, 5: 2049}  (total points 4095)
+m=6 r=6: N_r(s) = {4: 1953, 5: 2142}  (total points 4095)
+random-pair checks agree
+python3 -I  $m  6.71s user 0.09s system 10% cpu 1:03.34 total

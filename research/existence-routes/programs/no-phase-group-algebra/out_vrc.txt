@@ -1,0 +1,17 @@
+## controls 4 in 16
+m=4 n=15 W=4 M=16: forms checked 1023, violations 0 []
+VERDICT: not excluded by rank cover with <= 3 blocks
+m=4 n=5 W=4 M=16: forms checked 1023, violations 0 []
+VERDICT: not excluded by rank cover with <= 3 blocks
+m=4 n=3 W=4 M=16: forms checked 986, violations 0 []
+VERDICT: not excluded by rank cover with <= 3 blocks
+## block 3, n = 7: 2 in 6 and 2 in 5
+m=3 n=7 W=2 M=6: forms checked 56, violations 0 []
+VERDICT: not excluded by rank cover with <= 3 blocks
+## targets 4 in 15
+m=4 n=15 W=4 M=15: forms checked 1023, violations 0 []
+VERDICT: not excluded by rank cover with <= 3 blocks
+m=4 n=5 W=4 M=15: forms checked 1018, violations 0 []
+VERDICT: not excluded by rank cover with <= 3 blocks
+m=4 n=3 W=4 M=15: forms checked 1002, violations 0 []
+VERDICT: not excluded by rank cover with <= 3 blocks

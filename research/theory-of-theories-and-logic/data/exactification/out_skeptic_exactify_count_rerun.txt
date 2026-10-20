@@ -1,0 +1,6 @@
+toy Phi_r: M = 3 paid moves; coefficient-level paid calls used = 3 ; |eps^0 coef - D v| = 0.0
+   (the eps^-1 coefficient X X Z v - S Z v is 5.551115123125783e-17 ; it never reaches eps^0, so w1, w2 can even be pruned: 1 call suffices)
+   at fixed eps = 0.1: |Phi_r(eps; D) - D| = 3.389e-01  (not exact at any fixed eps != 0)
+   at fixed eps = 0.001: |Phi_r(eps; D) - D| = 3.389e-03  (not exact at any fixed eps != 0)
+   at fixed eps = 0.7: |Phi_r(eps; D) - D| = 2.373e+00  (not exact at any fixed eps != 0)
+two-output variant: M = 3, every move needed; coefficient-level paid calls = 3 ; errors 0.0 5.551115123125783e-17 -> factor 1, not >= 2

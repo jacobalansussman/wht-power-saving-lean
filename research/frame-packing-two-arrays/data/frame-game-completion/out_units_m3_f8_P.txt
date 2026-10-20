@@ -1,0 +1,29 @@
+m=3 plain1: W = 1, frame moves M = 3, readout terms [1]; engine word: 3 paid letters (= M), 43 free terms, all free heads in B
+    lift (all four blocks): float errors by f {8: 6.4e-16}
+    exact mod 167772161 and 469762049 on random arrays, by f: {7: True}
+    negative control, f = 1 lift only: float {}; exact mod p {}
+m=3 plain2: W = 2, frame moves M = 6, readout terms [1, 1]; engine word: 6 paid letters (= M), 86 free terms, all free heads in B
+    lift (all four blocks): float errors by f {8: 6.4e-16}
+    exact mod 167772161 and 469762049 on random arrays, by f: {7: True}
+    negative control, f = 1 lift only: float {}; exact mod p {}
+m=3 xchg: W = 2, frame moves M = 6, readout terms [2, 2]; engine word: 6 paid letters (= M), 120 free terms, all free heads in B
+    lift (all four blocks): float errors by f {8: 6.4e-16}
+    exact mod 167772161 and 469762049 on random arrays, by f: {7: True}
+    negative control, f = 1 lift only: float {}; exact mod p {}
+m=3 o3: W = 2, frame moves M = 6, readout terms [6, 6]; engine word: 6 paid letters (= M), 379 free terms, all free heads in B
+    lift (all four blocks): float errors by f {8: 8.1e-16}
+    exact mod 167772161 and 469762049 on random arrays, by f: {7: True}
+    negative control, f = 1 lift only: float {}; exact mod p {}
+m=3 mix13: W = 2, frame moves M = 6, readout terms [4, 4]; engine word: 6 paid letters (= M), 1591 free terms, all free heads in B
+    lift (all four blocks): float errors by f {8: 1.2e-15}
+    exact mod 167772161 and 469762049 on random arrays, by f: {7: True}
+    negative control, f = 1 lift only: float {}; exact mod p {}
+m=3 randW1_0: W = 1, frame moves M = 3, readout terms [1]; engine word: 3 paid letters (= M), 506 free terms, all free heads in B
+    lift (all four blocks): float errors by f {8: 7.1e-16}
+    exact mod 167772161 and 469762049 on random arrays, by f: {7: True}
+    negative control, f = 1 lift only: float {}; exact mod p {}
+m=3 randW1_1: W = 1, frame moves M = 3, readout terms [1]; engine word: 3 paid letters (= M), 406 free terms, all free heads in B
+    lift (all four blocks): float errors by f {8: 6.6e-16}
+    exact mod 167772161 and 469762049 on random arrays, by f: {7: True}
+    negative control, f = 1 lift only: float {}; exact mod p {}
+m=3: done in 1252.1 s

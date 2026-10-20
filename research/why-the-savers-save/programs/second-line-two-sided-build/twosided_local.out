@@ -1,0 +1,7 @@
+ports span rank 9 of 9 | readers per total [56, 56, 56, 56, 56, 56, 56, 56] | components 1
+x registers touched in phase B: 112 | x whose last gate is in A: 0
+violating gates (some participant holds s, some must avoid it): 0 of 7500 | in A: 0 in B: 0
+slot classes: {'y-only': 399, 'free': 105, 'crossing': 73, 'x-only': 39} | of them totals: Counter({'crossing': 5, 'y-only': 3})
+in-call span (final dim - start dim) by class: {'y-only': 2889, 'free': 889, 'crossing': 657, 'x-only': 351}
+crossing slots: last must-avoid gate in A for 73 of 73 ; first s gate in B for 73
+gates joining an x and a y directly: 0

@@ -1,0 +1,9 @@
+totals: support sizes [56, 56, 56, 56, 56, 56, 56, 56] | diagonal of the delivered map ['1']
+junk entries 5824 | per target [52] | symmetric True
+binary u.u on junk pairs: {0} | on the other 3304 pairs: counts {1: 3304}
+mirror: g even True | u_b.v_b = 0 for all b True | v.v = 1 True | v-Gram = u-Gram True | g_a.g_b = 1 on junk True | lines distinct True
+mirror cross terms u_a.v_b = 1 + u_a.u_b: True
+R2: dim of the meet of u_t^perp over the readers of each total (F_2^10): {0: 2, 1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2, 7: 2} | over all 112: 1
+omega of the binary NON-orthogonality graph of the ports: 8 [0, 7, 20, 23, 86, 93, 108, 111]
+largest set of y's (mirror lines) that can share one frame containing all their lines: 8
+non-orthogonal partners per port: [59]

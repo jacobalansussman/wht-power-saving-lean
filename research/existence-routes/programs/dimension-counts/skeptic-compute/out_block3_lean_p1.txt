@@ -1,0 +1,5 @@
+dim C_G iota_U = 288
+{"p": 2000029, "shape": "1in2", "dimR_growth": [64, 176, 288], "max": 288, "targets_in_R": [true], "exactly_solvable_in_relaxation": true, "sec": 4.7}
+{"p": 2000029, "shape": "1in1", "dimR_growth": [64, 176], "max": 288, "targets_in_R": [false], "exactly_solvable_in_relaxation": false, "sec": 1.2}
+{"p": 2000029, "shape": "2in5", "dimR_growth": [128, 240, 352, 464, 576, 576], "max": 576, "targets_in_R": [true, true], "exactly_solvable_in_relaxation": true, "sec": 95.4}
+{"p": 2000029, "shape": "3in8", "dimR_growth": [192, null, null, null, null, null, null, null, 864], "max": 864, "targets_in_R": [true, true, true], "exactly_solvable_in_relaxation": true, "sec": 199.8}

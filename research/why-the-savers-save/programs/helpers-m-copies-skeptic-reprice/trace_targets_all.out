@@ -1,0 +1,182 @@
+group 0 targets [169, 170, 172, 175] packet sources 64 own sources of targets [57, 58, 60, 63] in packets? [False, False, False, False]
+ after cut: target 169 packet-source nnz 64
+ after cut: target 170 packet-source nnz 64
+ after cut: target 172 packet-source nnz 64
+ after cut: target 175 packet-source nnz 64
+ target 169 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {57: '1'}
+ target 170 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {58: '1'}
+ target 172 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {60: '1'}
+ target 175 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {63: '1'}
+group 1 targets [137, 138, 140, 143] packet sources 64 own sources of targets [25, 26, 28, 31] in packets? [False, False, False, False]
+ after cut: target 137 packet-source nnz 64
+ after cut: target 138 packet-source nnz 64
+ after cut: target 140 packet-source nnz 64
+ after cut: target 143 packet-source nnz 64
+ target 137 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {25: '1'}
+ target 138 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {26: '1'}
+ target 140 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {28: '1'}
+ target 143 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {31: '1'}
+group 2 targets [129, 130, 132, 135] packet sources 64 own sources of targets [17, 18, 20, 23] in packets? [False, False, False, False]
+ after cut: target 129 packet-source nnz 64
+ after cut: target 130 packet-source nnz 64
+ after cut: target 132 packet-source nnz 64
+ after cut: target 135 packet-source nnz 64
+ target 129 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {17: '1'}
+ target 130 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {18: '1'}
+ target 132 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {20: '1'}
+ target 135 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {23: '1'}
+group 3 targets [121, 122, 124, 127] packet sources 64 own sources of targets [9, 10, 12, 15] in packets? [False, False, False, False]
+ after cut: target 121 packet-source nnz 64
+ after cut: target 122 packet-source nnz 64
+ after cut: target 124 packet-source nnz 64
+ after cut: target 127 packet-source nnz 64
+ target 121 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {9: '1'}
+ target 122 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {10: '1'}
+ target 124 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {12: '1'}
+ target 127 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {15: '1'}
+group 4 targets [145, 146, 148, 151] packet sources 64 own sources of targets [33, 34, 36, 39] in packets? [False, False, False, False]
+ after cut: target 145 packet-source nnz 64
+ after cut: target 146 packet-source nnz 64
+ after cut: target 148 packet-source nnz 64
+ after cut: target 151 packet-source nnz 64
+ target 145 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {33: '1'}
+ target 146 entries of packet sources by (phase, partner class): {('cut', 'h'): 64, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {34: '1'}
+ target 148 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {36: '1'}
+ target 151 entries of packet sources by (phase, partner class): {('cut', 'h'): 64, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {39: '1'}
+group 5 targets [177, 178, 180, 183] packet sources 64 own sources of targets [65, 66, 68, 71] in packets? [False, False, False, False]
+ after cut: target 177 packet-source nnz 64
+ after cut: target 178 packet-source nnz 64
+ after cut: target 180 packet-source nnz 64
+ after cut: target 183 packet-source nnz 64
+ target 177 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {65: '1'}
+ target 178 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {66: '1'}
+ target 180 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {68: '1'}
+ target 183 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {71: '1'}
+group 6 targets [217, 218, 220, 223] packet sources 64 own sources of targets [105, 106, 108, 111] in packets? [False, False, False, False]
+ after cut: target 217 packet-source nnz 64
+ after cut: target 218 packet-source nnz 64
+ after cut: target 220 packet-source nnz 64
+ after cut: target 223 packet-source nnz 64
+ target 217 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {105: '1'}
+ target 218 entries of packet sources by (phase, partner class): {('cut', 'h'): 32, ('cut', 'x'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {106: '1'}
+ target 220 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {108: '1'}
+ target 223 entries of packet sources by (phase, partner class): {('cut', 'h'): 32, ('cut', 'x'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {111: '1'}
+group 7 targets [113, 114, 116, 119] packet sources 64 own sources of targets [1, 2, 4, 7] in packets? [False, False, False, False]
+ after cut: target 113 packet-source nnz 64
+ after cut: target 114 packet-source nnz 64
+ after cut: target 116 packet-source nnz 64
+ after cut: target 119 packet-source nnz 64
+ target 113 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {1: '1'}
+ target 114 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {2: '1'}
+ target 116 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {4: '1'}
+ target 119 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {7: '1'}
+group 8 targets [153, 154, 156, 159] packet sources 64 own sources of targets [41, 42, 44, 47] in packets? [False, False, False, False]
+ after cut: target 153 packet-source nnz 64
+ after cut: target 154 packet-source nnz 64
+ after cut: target 156 packet-source nnz 64
+ after cut: target 159 packet-source nnz 64
+ target 153 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {41: '1'}
+ target 154 entries of packet sources by (phase, partner class): {('cut', 'h'): 32, ('cut', 'x'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {42: '1'}
+ target 156 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {44: '1'}
+ target 159 entries of packet sources by (phase, partner class): {('cut', 'h'): 32, ('cut', 'x'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {47: '1'}
+group 9 targets [185, 186, 188, 191] packet sources 64 own sources of targets [73, 74, 76, 79] in packets? [False, False, False, False]
+ after cut: target 185 packet-source nnz 64
+ after cut: target 186 packet-source nnz 64
+ after cut: target 188 packet-source nnz 64
+ after cut: target 191 packet-source nnz 64
+ target 185 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {73: '1'}
+ target 186 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {74: '1'}
+ target 188 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {76: '1'}
+ target 191 entries of packet sources by (phase, partner class): {('cut', 'x'): 64, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {79: '1'}
+group 10 targets [209, 210, 212, 215] packet sources 64 own sources of targets [97, 98, 100, 103] in packets? [False, False, False, False]
+ after cut: target 209 packet-source nnz 64
+ after cut: target 210 packet-source nnz 64
+ after cut: target 212 packet-source nnz 64
+ after cut: target 215 packet-source nnz 64
+ target 209 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {97: '1'}
+ target 210 entries of packet sources by (phase, partner class): {('cut', 'h'): 64, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {98: '1'}
+ target 212 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {100: '1'}
+ target 215 entries of packet sources by (phase, partner class): {('cut', 'h'): 64, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {103: '1'}
+group 11 targets [201, 202, 204, 207] packet sources 64 own sources of targets [89, 90, 92, 95] in packets? [False, False, False, False]
+ after cut: target 201 packet-source nnz 64
+ after cut: target 202 packet-source nnz 64
+ after cut: target 204 packet-source nnz 64
+ after cut: target 207 packet-source nnz 64
+ target 201 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {89: '1'}
+ target 202 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {90: '1'}
+ target 204 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {92: '1'}
+ target 207 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {95: '1'}
+group 12 targets [193, 194, 196, 199] packet sources 64 own sources of targets [81, 82, 84, 87] in packets? [False, False, False, False]
+ after cut: target 193 packet-source nnz 64
+ after cut: target 194 packet-source nnz 64
+ after cut: target 196 packet-source nnz 64
+ after cut: target 199 packet-source nnz 64
+ target 193 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {81: '1'}
+ target 194 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {82: '1'}
+ target 196 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {84: '1'}
+ target 199 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {87: '1'}
+group 13 targets [161, 162, 164, 167] packet sources 64 own sources of targets [49, 50, 52, 55] in packets? [False, False, False, False]
+ after cut: target 161 packet-source nnz 64
+ after cut: target 162 packet-source nnz 64
+ after cut: target 164 packet-source nnz 64
+ after cut: target 167 packet-source nnz 64
+ target 161 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {49: '1'}
+ target 162 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {50: '1'}
+ target 164 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 64, ('B', 'M'): 32}
+   final x-part {52: '1'}
+ target 167 entries of packet sources by (phase, partner class): {('cut', 'x'): 32, ('cut', 'h'): 32, ('B', 'y'): 32, ('B', 'M'): 32}
+   final x-part {55: '1'}

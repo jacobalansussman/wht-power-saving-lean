@@ -1,0 +1,6 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 15:05:04
+[heavy.sh] got slot heavy-3 15:07:06
+p 7 d 6 flats 763987 orbit reps 109141 octad orbits 180 maximal cliques 1996 Counter({8: 1260, 7: 512, 6: 224}) 75s
+secondary dim 1 orbit reps 16
+fixed combos within budget 14 : 34
+cost <= 63 stats {'stage0 pass': 71, 'candidates': 59372704, 'port': 62, 'clique Hall fails': 9} survivors 0 106s

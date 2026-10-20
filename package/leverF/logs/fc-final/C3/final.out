@@ -1,0 +1,127 @@
+FINAL RUN (C3 part: build, checks, comparator) L3945F NUM=17806935 START Tue Oct 20 02:34:09 AM UTC 2026 on b38fd20cac42; R=/content/work/fc-final
+=== nobuild START 02:34:09
+=== nobuild END rc=0 wall=14s maxrss_kb=989992 02:34:23
+All targets up-to-date (9327 jobs).
+TREE OK /content/work/fc-final/T (12G)
+INSTALL L3945F-extra: 0 new, 567 identical (skipped), from /content/work/fc-final/in/extra; hashes /content/work/fc-final/in-L3945F-extra.sha256
+INSTALL L3945F: 0 new, 20 identical (skipped), from /content/work/fc-final/in/final-L3945F/stage; hashes /content/work/fc-final/in-L3945F.sha256
+   (slot: waited 0s; heavy 0, avail 47406 MB)
+   LEAN_NUM_THREADS=3
+=== build START 02:34:26
+=== build END rc=0 wall=26s maxrss_kb=985836 02:34:52
+Build completed successfully (9633 jobs).
+=== nobuild START 02:34:52
+=== nobuild END rc=0 wall=7s maxrss_kb=1022292 02:34:59
+All targets up-to-date (9633 jobs).
+BUILD L3945F OK
+CHECKS L3945F NUM=17806935 START Tue Oct 20 02:34:59 AM UTC 2026
+   (slot: waited 0s; heavy 1, avail 50349 MB)
+=== axioms START 02:34:59
+=== axioms END rc=0 wall=49s maxrss_kb=6851084 02:35:48
+'OAI.PowerSaving.transform_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945F_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms L3945F: standard only
+   (slot: waited 0s; heavy 0, avail 50554 MB)
+=== axioms-extra START 02:35:48
+=== axioms-extra END rc=0 wall=6s maxrss_kb=6926872 02:35:54
+'OAI.PowerSaving.MX.L3945F.engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.L3945F.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945F.engine_L3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945F_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945F.alphaL3945F_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+extra axioms: standard only
+files grepped: 583 (from /content/work/fc-final/in-L3945F-all.files)
+sorry/admit lines: 0
+forbidden-construct mentions inside backquotes (not uses): 7
+forbidden-construct lines: 0
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74 /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierL3945F (1 - 17806935/10^10): byte-identical to my derivation from OpenAI's statement
+challenge FourierL3945FNeg (1 - 17806936/10^10): byte-identical to my derivation from OpenAI's statement
+positive and negative challenge differ only in the numerator
+Compare.lean e48d6d3b (= /content/work/ours/Compare.lean)
+   (slot: waited 0s; heavy 0, avail 49757 MB)
+=== compare-pos START 02:35:54
+=== compare-pos END rc=0 wall=56s maxrss_kb=16061044 02:36:50
+compare-pos rc=0
+RESULT: PASS
+   (slot: waited 0s; heavy 0, avail 50555 MB)
+=== compare-neg START 02:36:50
+=== compare-neg END rc=1 wall=49s maxrss_kb=16261184 02:37:39
+compare-neg rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentL3945F._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL3945F: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentL3945F._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL3945F: definition body differs
+RESULT: FAIL
+VERDICT Compare positive: PASS
+VERDICT Compare negative: FAIL (expected)
+CHECKS L3945F ALL AS EXPECTED Tue Oct 20 02:37:39 AM UTC 2026
+EXIT 0
+INSTALL SIDE: 3 new, 0 identical (skipped), from /content/work/fc-final/in/side; hashes /content/work/fc-final/in-SIDE.sha256
+   (slot: waited 0s; heavy 0, avail 50504 MB)
+   LEAN_NUM_THREADS=3
+=== build START 02:37:39
+=== build END rc=0 wall=13s maxrss_kb=6989492 02:37:52
+Build completed successfully (9037 jobs).
+   5.4s Work.Mixed.FullCut3945F
+   3.3s Work.Mixed.R5Joint3945F
+   3.0s Work.Mixed.Hist3945F
+=== nobuild START 02:37:52
+=== nobuild END rc=0 wall=5s maxrss_kb=998340 02:37:57
+All targets up-to-date (9037 jobs).
+BUILD side OK
+   info: Work/MixedCost/Bill.lean:537:0: 'OAI.PowerSaving.MX.Rule.bill' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/MixedCost/Bill.lean:538:0: 'OAI.PowerSaving.MX.Rule.kids_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/MixedCost/Bill.lean:539:0: 'OAI.PowerSaving.MX.Rule.kids_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/MixedCost/Bill.lean:540:0: 'OAI.PowerSaving.MX.Rule.allotM_jobRec' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/MixedCost/Bill.lean:541:0: 'OAI.PowerSaving.MX.Rule.allotM_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/BlockAccounting/Moment.lean:139:0: 'OAI.PowerSaving.BlockAccounting.term_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/BlockAccounting/Moment.lean:140:0: 'OAI.PowerSaving.BlockAccounting.log_le_of_le_expsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/BlockAccounting/Moment.lean:141:0: 'OAI.PowerSaving.BlockAccounting.moment_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/BlockAccounting/Moment.lean:142:0: 'OAI.PowerSaving.BlockAccounting.mem_keys_of_histFn_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/BlockAccounting/Moment4.lean:58:0: 'OAI.PowerSaving.BlockAccounting.term_le4' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/BlockAccounting/Sharp.lean:74:0: 'OAI.PowerSaving.BlockAccounting.term_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/BlockAccounting/Sharp.lean:75:0: 'OAI.PowerSaving.BlockAccounting.le_log_of_expbound' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/Rate3945F.lean:109:0: 'OAI.PowerSaving.MX.rate3945F_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/Rate3945F.lean:110:0: 'OAI.PowerSaving.MX.rate3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/Hist3945F.lean:126:0: 'OAI.PowerSaving.MX.hbody3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/Hist3945F.lean:127:0: 'OAI.PowerSaving.MX.hsplit3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/Hist3945F.lean:128:0: 'OAI.PowerSaving.MX.hsplit3945F_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/Hist3945F.lean:129:0: 'OAI.PowerSaving.MX.hcut3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/Hist3945F.lean:130:0: 'OAI.PowerSaving.MX.mass3945F' depends on axioms: [propext]
+   info: Work/Mixed/Hist3945F.lean:131:0: 'OAI.PowerSaving.MX.count3945F' depends on axioms: [propext]
+   info: Work/Mixed/Hist3945F.lean:132:0: 'OAI.PowerSaving.MX.cut3945F_sep' does not depend on any axioms
+   info: Work/Mixed/Hist3945F.lean:133:0: 'OAI.PowerSaving.MX.cut3945F_no48' depends on axioms: [propext]
+   info: Work/Mixed/Hist3945F.lean:134:0: 'OAI.PowerSaving.MX.hbody3945F_sharp' depends on axioms: [propext]
+   info: Work/Mixed/Hist3945F.lean:135:0: 'OAI.PowerSaving.MX.body3945F_ne_cut' depends on axioms: [propext]
+   info: Work/Mixed/Hist3945F.lean:136:0: 'OAI.PowerSaving.MX.half_ne_full3945F' depends on axioms: [propext]
+   info: Work/Mixed/R5Joint3945F.lean:77:0: 'OAI.PowerSaving.MX.sep3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/R5Joint3945F.lean:78:0: 'OAI.PowerSaving.MX.rk_bounds3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/R5Joint3945F.lean:79:0: 'OAI.PowerSaving.MX.rateQ3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/R5Joint3945F.lean:80:0: 'OAI.PowerSaving.MX.allotM3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/R5Joint3945F.lean:81:0: 'OAI.PowerSaving.MX.rateQ3945F'' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Mixed/R5Joint3945F.lean:82:0: 'OAI.PowerSaving.MX.allotM3945F'' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Scratch/Engine.lean:1522:0: 'OAI.PowerSaving.RAM.recurse_runS' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Scratch/Engine.lean:1523:0: 'OAI.PowerSaving.RAM.engine_all_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Scratch/Engine.lean:1524:0: 'OAI.PowerSaving.RAM.engine_program_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Scratch/Engine.lean:1525:0: 'OAI.PowerSaving.RAM.hills_program_via_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Scratch/Engine.lean:1526:0: 'OAI.PowerSaving.RAM.LiveKernel.iff_erase_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Scratch/Engine.lean:1527:0: 'OAI.PowerSaving.RAM.no_erase_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Scratch/Engine.lean:1528:0: 'OAI.PowerSaving.RAM.Route.gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Scratch/Engine.lean:1529:0: 'OAI.PowerSaving.RAM.LiveKernel.of_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+   info: Work/Scratch/Engine.lean:1530:0: 'OAI.PowerSaving.RAM.endpoint_reversible' depends on axioms: [propext, Classical.choice, Quot.sound]
+VERDICT side modules: built, standard axioms
+comparator: log /content/work/logs/fc-final/L3945F-cmp.out
+VERDICT comparator positive: accepted
+VERDICT comparator negative: rejected (expected)
+-rw-r--r-- 1 root root 0 Oct 20 02:37 /content/work/fc-final/CHECKS-L3945F-OK
+-rw-r--r-- 1 root root 0 Oct 20 03:47 /content/work/fc-final/CMP-L3945F-OK
+-rw-r--r-- 1 root root 0 Oct 20 02:36 /content/work/fc-final/CTL-L3945F-OK
+-rw-r--r-- 1 root root 0 Oct 20 02:37 /content/work/fc-final/SIDE-L3945F-OK
+FINAL RUN (C3 part) L3945F: EVERY VERDICT AS EXPECTED Tue Oct 20 03:47:47 AM UTC 2026
+EXIT 0

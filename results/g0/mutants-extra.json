@@ -1,0 +1,45 @@
+{
+ "control_unmutated": {
+  "rejected": false,
+  "by": []
+ },
+ "B_gate_frame_lowered": {
+  "rejected": true,
+  "by": "assertion: ('step not nested', 401, 139, 2)"
+ },
+ "warp_G_columns_swapped": {
+  "rejected": true,
+  "by": "assertion: ('G does not carry the frame', ['warp', 291, 243, 1, 290])"
+ },
+ "initial_correction_dropped": {
+  "rejected": true,
+  "by": [
+   "dirt"
+  ]
+ },
+ "compensation_coefficient_doubled": {
+  "rejected": true,
+  "by": [
+   "dirt"
+  ]
+ },
+ "exit_helper_widened_to_full": {
+  "rejected": true,
+  "by": [
+   "hist == hub profile",
+   "widths"
+  ]
+ },
+ "cut_coefficient_changed": {
+  "rejected": true,
+  "by": [
+   "hid",
+   "dirt"
+  ]
+ },
+ "lifted_add_on_unlifted_target": {
+  "rejected": true,
+  "by": "assertion: ('phase A names a y register that is not a lifted target at its level', ['add', 112, 715, -1, 2, 137])"
+ },
+ "all_mutants_rejected": true
+}

@@ -1,0 +1,9 @@
+Lean facts on the replayed forward map: hx True | y columns unit True | hid True
+slots with K = Mt[y, slot] != 0 (joined with the ys at time 0 by the dirt step): 328 of 616
+  of them meeting an x in phase A directly: 112
+backward word with the dirt step: x reached by y information: 112 of 112
+{"file": "U8X-parsed.json.gz", "integral_lp": true, "Kslots": 328, "crossing_copies_per_GB_call": 112, "crossing_slots_meeting_x_in_A": 112, "nonnested_copies_per_call": 0, "extra_per_replica": 448, "switching": 112, "classes": {"Y": 504, "S": 112}, "widths": {"Y": {"4": 80, "5": 32, "7": 54, "8": 122, "9": 216}, "S": {"10": 112}}, "width_sum": {"Y": 3778, "S": 1120}, "cross_slot_classes": {"S": 112}, "profile_GF": {"1": 2772, "2": 338, "3": 446, "4": 162, "5": 72, "8": 120}, "rank_GF": 6754, "cst": 64, "rank_minus_widths": 1856, "D_per_replica_upper": 768}
+time-0 crossing map (dirt slots meeting an x in A): 112 slots, rank 112
+end crossing map (x-dependent slots forced to hold s): 354 slots, rank 112
+crossings per GB call at this gate order >= 224 ; per replica (4 GB calls) >= 896 against the gain 896
+checks/wht42/common/heavy.sh sh -c   8.37s user 0.84s system 107% cpu 8.531 total

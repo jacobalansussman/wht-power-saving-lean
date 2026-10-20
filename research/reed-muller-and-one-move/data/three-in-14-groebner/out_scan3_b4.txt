@@ -1,0 +1,5 @@
+block 4: self-dual basis [8, 11, 13, 15]; frames per target [2]
+classes of 3-multisets: 15 (Burnside 15)
+PASS ks=(0, 1, 4) frames=(0, 0, 1) delete dir 2 (multiplicity 3) tight-before 68 moves=[1, 2, 2, 4, 7, 8, 8, 9, 10, 12, 15]
+PASS ks=(0, 1, 4) frames=(0, 1, 0) delete dir 4 (multiplicity 3) tight-before 68 moves=[1, 1, 2, 3, 4, 4, 5, 8, 9, 14, 15]
+block 4 W=3: classes 15, distinct plain multisets 108, passing single deletions 2, distinct resulting (class, multiset) pairs 2

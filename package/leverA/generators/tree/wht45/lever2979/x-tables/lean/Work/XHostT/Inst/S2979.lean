@@ -1,0 +1,36 @@
+import Work.XHostT.TTab
+import Work.XHostT.Data.H2979.Whole
+
+/-!
+# (key: bridge-host-cross) The host table of hub PR #2979 as a Lean cross-replica host schedule
+
+The whole-table theorem `DH2979.whole` (p-hostck's generator and glue on p-a3's kernel checker; data from x-tables'
+conversion of #2979's literal owner fill: mdumitrean, research/rank7-joint-endframes, on Jeremy Kothe's #2957 and Mason
+Hale's #2917 T74 words; 74 replicas, 666 calls, 408 hosted slots per call, 271,728 hosted slots) through
+`schedOfTabOK`: a `HostSchedT 74 (Fin 408) (Fin 112)` and its residual conditions.  With the providers' residuals
+(`resIc Ic = resK ct resT 74 408`) it is the hypothesis of `bridgeHostT_gcert` / `bridgeHostTW_gcert`.
+p-a3's `Inst/S5.lean` (the first platform's schedule) with only the instance changed; x-tables (wht45/lever2979,
+19 Oct 2026); prepared with assistance from Claude.  No `sorry`.
+-/
+
+namespace OAI.PowerSaving.XHostT.Inst
+open OAI.PowerSaving.XHostT OAI.PowerSaving.XHostT.K.DH2979
+
+/-- **the cross-replica host schedule of #2979.** -/
+noncomputable def sched2979 : HostSchedT 74 (Fin 408) (Fin 112) :=
+  schedOfTabOK ct rt resT 74 408 (by norm_num) whole.1 whole.2
+
+theorem sched2979_fits : sched2979.fits (resK ct resT 74 408) :=
+  schedOfTabOK_fits ct rt resT 74 408 (by norm_num) whole.1 whole.2
+
+theorem sched2979_hrem (ρh : Fin 74) (c : Fin 9) (j : Bool × Fin 112) :
+    sched2979.hrem ρh c j = K.remAt rt (2016 * ρh.val + 224 * c.val + (if j.1 then 112 else 0) + j.2.val) := rfl
+
+theorem sched2979_tm (ρ : Fin 74) (l : Fin 9) : sched2979.tm ρ l = (ct.get (9 * ρ.val + l.val)).2.1 := rfl
+
+theorem sched2979_host (ρ : Fin 74) (l : Fin 9) (q : Fin 408) :
+    sched2979.host ρ l q = decH 74 (by norm_num) (K.rowAt (ct.get (9 * ρ.val + l.val)).1 q.val) := rfl
+
+end OAI.PowerSaving.XHostT.Inst
+
+#print axioms OAI.PowerSaving.XHostT.Inst.sched2979_fits

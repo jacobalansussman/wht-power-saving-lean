@@ -1,0 +1,13 @@
+circuit      fill                                 heads          uniform         half cut         full cut    not separated
+T74 (#1839)  published fill                       11010 1.6797549561e-03 1.6968621073e-03 1.6948357905e-03 1.7434773229e-03
+T74 (#1839)  full-cut break-even: 9443 heads of 22748 idle rank-48 blocks
+#2979        published fill                       16086 1.7290339826e-03 1.7556473153e-03 1.7744822149e-03 1.8295795873e-03
+#2979        every head bin empty (design A)      16576 1.7290339826e-03 1.7564708007e-03 1.7797095471e-03 1.8328256658e-03
+#2979        full-cut break-even: 11702 heads of 28190 idle rank-48 blocks
+#3945        published fill                       57312 1.7306632365e-03 1.7501109246e-03 1.7307679642e-03 1.8033130058e-03
+#3945        every head bin empty (design B)      80640 1.7306632365e-03 1.7581520168e-03 1.7806935406e-03 1.8346559212e-03
+#3945        full-cut break-even: 57262 heads of 137952 idle rank-48 blocks
+#3815        published fill                       57312 1.7305784373e-03 1.7500242253e-03 1.7306831569e-03 1.8032209971e-03
+#3815        full-cut break-even: 57262 heads of 137952 idle rank-48 blocks
+every bracket has width at most 1e-16; separated: half and full cut yes, last column no
+all stated values reproduced

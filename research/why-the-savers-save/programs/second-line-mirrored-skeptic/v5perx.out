@@ -1,0 +1,4 @@
+natural | N symmetric True | S1 per-x copies: cleanup drops 112 U-drops 72 gates 256 | proportional classes 112 sizes [1] | S2 run registers 112 cleanup drops 112 U-drops 72
+best_twist | N symmetric True | S1 per-x copies: cleanup drops 112 U-drops 72 gates 256 | proportional classes 112 sizes [1] | S2 run registers 112 cleanup drops 112 U-drops 72
+every gate frame-equal, every climb nested, x frames inside [<u_b>, v_b^perp], all scratch exactly 0 at the end, R_k = sigma_k exactly at each U-drop: True (any failure raises)
+secs 0.9

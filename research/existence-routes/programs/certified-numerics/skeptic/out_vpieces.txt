@@ -1,0 +1,65 @@
+=== 777 56 -24
+h dim(L0 cap g L0) = 2
+h2 dim(L0 cap g L0) = 1
+k dim(L0 cap g L0) = 0
+module 777 dim 343 Z2a spectrum {-45: 21, -33: 21, -27: 56, -21: 210, -9: 35}
+null-space gap of Z - zI: s[-d-1] = 1.305e-01, s[-d] = 5.041e-13
+character of a transvection on X: -24.000000 (want -24)
+orbit size 28: part dim 28, commutant dim 1 (singular values around the gap: (np.float64(0.6891480534299872), np.float64(1.5360578598603887e-14)))
+orbit size 7: part dim 28, commutant dim 2 (singular values around the gap: (np.float64(0.4427700812816663), np.float64(1.2664228912039042e-12)))
+   splits by a generic commutant element into dims [7, 21]
+   piece dim 7: commutant dim 1 (gap (np.float64(1.7192422608941915), np.float64(3.3021469786459818e-15)))
+   piece dim 21: commutant dim 1 (gap (np.float64(0.5799984796801929), np.float64(1.6796675288806658e-14)))
+pieces (dims): [7, 21, 28] sum 56
+h: block ranks [[7, 4, 4], [4, 15, 10], [4, 10, 22]]; rank of [tau, others] per piece [4, 10, 10]; gaps ['(2.32e+00, 1.93e-12)', '(6.01e-01, 6.80e-13)', '(1.80e-01, 1.12e-12)']
+h2: block ranks [[7, 6, 6], [6, 15, 18], [6, 18, 22]]; rank of [tau, others] per piece [6, 18, 18]; gaps ['(1.68e+00, 3.78e-12)', '(3.92e-02, 1.02e-12)', '(6.66e-02, 5.71e-13)']
+k: block ranks [[7, 7, 7], [7, 13, 21], [7, 21, 20]]; rank of [tau, others] per piece [7, 21, 28]; gaps ['(1.70e+00, 0.00e+00)', '(4.02e-02, 0.00e+00)', '(3.50e-03, 0.00e+00)']
+=== 777 21 -11
+h dim(L0 cap g L0) = 2
+h2 dim(L0 cap g L0) = 1
+k dim(L0 cap g L0) = 0
+module 777 dim 343 Z2a spectrum {-45: 21, -33: 21, -27: 56, -21: 210, -9: 35}
+null-space gap of Z - zI: s[-d-1] = 1.740e-01, s[-d] = 4.976e-13
+character of a transvection on X: -11.000000 (want -11)
+orbit size 7: part dim 7, commutant dim 1 (singular values around the gap: (np.float64(2.7021327567855593), np.float64(3.4475141351097865e-15)))
+orbit size 7: part dim 14, commutant dim 1 (singular values around the gap: (np.float64(0.7990613538367782), np.float64(9.447644955204197e-15)))
+pieces (dims): [7, 14] sum 21
+h: block ranks [[4, 3], [3, 11]]; rank of [tau, others] per piece [3, 3]; gaps ['(1.73e+00, 9.12e-14)', '(8.33e-01, 9.01e-14)']
+h2: block ranks [[4, 5], [5, 11]]; rank of [tau, others] per piece [5, 5]; gaps ['(3.96e-01, 2.64e-13)', '(2.96e-01, 2.19e-13)']
+k: block ranks [[7, 6], [6, 14]]; rank of [tau, others] per piece [6, 6]; gaps ['(4.94e-01, 4.97e-14)', '(1.44e-01, 2.11e-13)']
+=== 777 35 -5
+h dim(L0 cap g L0) = 2
+h2 dim(L0 cap g L0) = 1
+k dim(L0 cap g L0) = 0
+module 777 dim 343 Z2a spectrum {-45: 21, -33: 21, -27: 56, -21: 210, -9: 35}
+null-space gap of Z - zI: s[-d-1] = 4.366e-01, s[-d] = 4.974e-13
+character of a transvection on X: -5.000000 (want -5)
+orbit size 7: part dim 7, commutant dim 1 (singular values around the gap: (np.float64(1.9518881308780465), np.float64(1.2508152298452864e-15)))
+orbit size 28: part dim 28, commutant dim 1 (singular values around the gap: (np.float64(1.2177726181697426), np.float64(1.2587118770741764e-14)))
+pieces (dims): [7, 28] sum 35
+h: block ranks [[1, 6], [6, 22]]; rank of [tau, others] per piece [6, 6]; gaps ['(1.82e+00, 3.56e-14)', '(5.82e-01, 3.31e-15)']
+h2: block ranks [[1, 6], [6, 22]]; rank of [tau, others] per piece [6, 6]; gaps ['(1.07e+00, 5.76e-14)', '(1.74e-01, 8.13e-15)']
+k: block ranks [[7, 7], [7, 28]]; rank of [tau, others] per piece [7, 7]; gaps ['(7.62e-01, 0.00e+00)', '(2.91e-01, 0.00e+00)']
+=== 77 27 15
+h dim(L0 cap g L0) = 2
+h2 dim(L0 cap g L0) = 1
+k dim(L0 cap g L0) = 0
+module 77 dim 49 Z2a spectrum {27: 21, 35: 27, 63: 1}
+null-space gap of Z - zI: s[-d-1] = 8.000e+00, s[-d] = 7.904e-14
+character of a transvection on X: 15.000000 (want 15)
+orbit size 1: part dim 6, commutant dim 1 (singular values around the gap: (np.float64(0.49573834110788134), np.float64(2.151125260269681e-15)))
+orbit size 21: part dim 21, commutant dim 1 (singular values around the gap: (np.float64(0.6395076108544451), np.float64(6.8652126833936785e-15)))
+pieces (dims): [6, 21] sum 27
+h: block ranks [[3, 3], [3, 18]]; rank of [tau, others] per piece [3, 3]; gaps ['(2.53e+00, 1.10e-13)', '(5.66e-01, 6.00e-15)']
+h2: block ranks [[3, 5], [5, 18]]; rank of [tau, others] per piece [5, 5]; gaps ['(6.35e-01, 1.54e-14)', '(2.00e-01, 2.26e-14)']
+k: block ranks [[6, 6], [6, 21]]; rank of [tau, others] per piece [6, 6]; gaps ['(5.35e-01, 0.00e+00)', '(8.77e-02, 0.00e+00)']
+=== L2L2 35 15
+h dim(L0 cap g L0) = 2
+h2 dim(L0 cap g L0) = 1
+k dim(L0 cap g L0) = 0
+module L2L2 dim 441 Z2a spectrum {-9: 35, 7: 189, 15: 168, 27: 21, 35: 27, 63: 1}
+Traceback (most recent call last):
+  File "vpieces.py", line 43, in <module>
+    assert dict(zip(vals.tolist(), cnt.tolist())).get(z) == dimchi, 'chi not of multiplicity one here'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: chi not of multiplicity one here

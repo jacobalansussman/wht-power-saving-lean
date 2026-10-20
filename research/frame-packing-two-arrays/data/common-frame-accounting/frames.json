@@ -1,0 +1,125 @@
+{
+ "a_generators": {
+  "1": {
+   "free_fix_L0": true,
+   "kernel_adjacent": true,
+   "left_free_invariant": true,
+   "paid_moves_one_step": true,
+   "C_full_is_LY": true,
+   "H_full_is_LX": true,
+   "L0_LY_opposite": true
+  },
+  "2": {
+   "free_fix_L0": true,
+   "kernel_adjacent": true,
+   "left_free_invariant": true,
+   "paid_moves_one_step": true,
+   "C_full_is_LY": true,
+   "H_full_is_LX": true,
+   "L0_LY_opposite": true
+  },
+  "3": {
+   "free_fix_L0": true,
+   "kernel_adjacent": true,
+   "left_free_invariant": true,
+   "paid_moves_one_step": true,
+   "C_full_is_LY": true,
+   "H_full_is_LX": true,
+   "L0_LY_opposite": true
+  }
+ },
+ "bcd_subspace_frames": {
+  "1": {
+   "n_subspaces": 2,
+   "n_nondegenerate": 2,
+   "all_L_U_lagrangian": true,
+   "subspace_distance_formula": true,
+   "pair_overlaps_and_opposite": true,
+   "degenerate_U_not_opposite": true,
+   "lam_Phi_U_equals_L_U": true,
+   "route_is_C_times_pauli": true
+  },
+  "2": {
+   "n_subspaces": 5,
+   "n_nondegenerate": 4,
+   "all_L_U_lagrangian": true,
+   "subspace_distance_formula": true,
+   "pair_overlaps_and_opposite": true,
+   "degenerate_U_not_opposite": true,
+   "lam_Phi_U_equals_L_U": true,
+   "route_is_C_times_pauli": true
+  },
+  "3": {
+   "n_subspaces": 16,
+   "n_nondegenerate": 10,
+   "all_L_U_lagrangian": true,
+   "subspace_distance_formula": true,
+   "pair_overlaps_and_opposite": true,
+   "degenerate_U_not_opposite": true,
+   "lam_Phi_U_equals_L_U": true,
+   "route_is_C_times_pauli": true
+  },
+  "4": {
+   "n_subspaces": 67,
+   "n_nondegenerate": 38,
+   "all_L_U_lagrangian": true,
+   "subspace_distance_formula": true,
+   "pair_overlaps_and_opposite": true,
+   "degenerate_U_not_opposite": true
+  }
+ },
+ "e_cuts": {
+  "2": {
+   "n_frames": 15,
+   "valency": 6,
+   "opposite_per_frame": 8,
+   "point_cut_ratio": 1.5,
+   "point_cut_ratio_all_equal": true,
+   "formula_2_minus_2pow": 1.5,
+   "eigen_pairs": [
+    [
+     -3.0,
+     2.0
+    ],
+    [
+     1.0,
+     -2.0
+    ],
+    [
+     6.0,
+     8.0
+    ]
+   ],
+   "spectral_cut_ceiling": 1.5,
+   "plain_m": 2
+  },
+  "3": {
+   "n_frames": 135,
+   "valency": 14,
+   "opposite_per_frame": 64,
+   "point_cut_ratio": 1.75,
+   "point_cut_ratio_all_equal": true,
+   "formula_2_minus_2pow": 1.75,
+   "eigen_pairs": [
+    [
+     -7.0,
+     -8.0
+    ],
+    [
+     -1.0,
+     4.0
+    ],
+    [
+     5.0,
+     -8.0
+    ],
+    [
+     14.0,
+     64.0
+    ]
+   ],
+   "spectral_cut_ceiling": 1.75,
+   "plain_m": 3
+  }
+ }
+}

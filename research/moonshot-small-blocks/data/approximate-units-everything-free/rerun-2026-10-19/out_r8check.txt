@@ -1,0 +1,5 @@
+f=1  pattern 1,2,1: exact 0.0e+00 | fibrewise 1.4e-17 | full 0.16 (half 0.14)   pattern 2,1,2: exact 0.0e+00 | fibrewise 2.8e-17 | full 0.95 (half 0.64)
+f=2  pattern 1,2,1: exact 5.3e-17 | fibrewise 1.3e-16 | full 0.71 (half 0.64)   pattern 2,1,2: exact 4.4e-17 | fibrewise 1.0e-16 | full 0.55 (half 0.40)
+f=3  pattern 1,2,1: exact 9.4e-17 | fibrewise 1.1e-16 | full 0.71 (half 0.53)   pattern 2,1,2: exact 8.4e-17 | fibrewise 1.5e-16 | full 0.74 (half 0.60)
+f=4  pattern 1,2,1: exact 1.2e-16 | fibrewise 1.9e-16 | full 0.76 (half 0.61)   pattern 2,1,2: exact 1.2e-16 | fibrewise 1.7e-16 | full 0.74 (half 0.60)
+f=5  pattern 1,2,1: exact 1.7e-16 | fibrewise 2.2e-16 | full 0.76 (half 0.61)   pattern 2,1,2: exact 1.6e-16 | fibrewise 2.1e-16 | full 0.74 (half 0.61)

@@ -1,0 +1,4 @@
+D(e3)(a+b t2)(a+b t1) == K exactly: True
+(a+b t2)(a+b t1) == D(e2)D(e1) exactly (so the extra route only changes the intermediate frame): True
+depth-1 frame B(a+b t1) equals some affine frame B D(z)? False
+t1 affine? True

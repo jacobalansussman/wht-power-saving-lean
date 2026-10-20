@@ -7,3 +7,10 @@ __pycache__/
 .DS_Store
 # default output directory of tools/gx/gxgen.py and tools/gx/gxrate.py
 tools/gx/out/
+# default output folders of the reproductions under tools/community/ (repack/out/ holds published results)
+tools/community/c588m-gen/out/
+tools/community/mutable/out/
+tools/community/repack/lean-out/
+tools/community/repack/venv/
+# default log folder of community/scripts/*.sh when run from the repository root
+/logs/

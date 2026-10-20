@@ -1,0 +1,10 @@
+[A] disjoint pairs used: [(1, 3), (2, 5), (4, 6)]
+     pair [1, 3]  points m=[0, 0, 0, 0, 0, 0, 0] m'=[0, 1, 1, 0, 2, 3, 3] : shifts equal, flips exactly [1, 3], rank of the end-state difference = 6
+     pair [2, 5]  points m=[0, 0, 0, 0, 0, 0, 0] m'=[0, 0, 1, 0, 3, 1, 0] : shifts equal, flips exactly [2, 5], rank of the end-state difference = 6
+     pair [4, 6]  points m=[0, 0, 0, 0, 0, 0, 0] m'=[0, 1, 1, 0, 0, 3, 3] : shifts equal, flips exactly [4, 6], rank of the end-state difference = 6
+[A] => every word reaching this end state has >= 18 paid moves (6 per disjoint pair)
+[B] disjoint pairs used: [(1, 3), (2, 5), (4, 6)]
+     pair [1, 3]  points m=[0, 0, 0, 0, 0, 0, 0] m'=[0, 1, 1, 0, 2, 3, 3] : shifts equal, flips exactly [1, 3], rank of the end-state difference = 6
+     pair [2, 5]  points m=[0, 0, 0, 0, 0, 0, 0] m'=[0, 0, 1, 0, 3, 1, 0] : shifts equal, flips exactly [2, 5], rank of the end-state difference = 6
+     pair [4, 6]  points m=[0, 0, 0, 0, 0, 0, 0] m'=[0, 1, 1, 0, 0, 3, 3] : shifts equal, flips exactly [4, 6], rank of the end-state difference = 6
+[B] => every word reaching this end state has >= 18 paid moves (6 per disjoint pair)

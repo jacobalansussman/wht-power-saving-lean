@@ -1,0 +1,285 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# P-core wisdom import: ok
+# FFTW c2c plan: (dft-ct-dit/32
+  (dftw-direct-32/124 "t2fv_32_neon")
+  (dft-direct-32-x32 "n2fv_32_neon"))
+# FFTW r2c plan: (rdft2-ct-dit/32
+  (hc2c-direct-32/62/0 "hc2cfdftv_32_neon"
+    (rdft2-r2hc-direct-32 "r2cf_32")
+    (rdft2-r2hc01-direct-32 "r2cfII_32"))
+  (dft-direct-32-x16 "n1fv_32_neon"))
+CHECK 4 x FFTW-d c2c pair (timer) (all 64 channels) max abs err 1.066e-14  rel err 3.376e-16  (tol 1.0e-13) PASS
+CHECK 4 x FFTW-d r2c/frame (all 64 channels)   max abs err 6.040e-14  rel err 1.913e-15  (tol 1.0e-13) PASS
+CHECK 4 x PFFFT-d real/frame (all 64 channels) max abs err 6.395e-14  rel err 2.025e-15  (tol 1.0e-13) PASS
+CHECK 4 x KFR-d c2c pair (all 64 channels)     max abs err 1.066e-14  rel err 3.376e-16  (tol 1.0e-13) PASS
+CHECK 4 SME threads (all 64 channels)          max abs err 1.776e-14  rel err 5.626e-16  (tol 1.0e-13) PASS
+CHECK 2 SME + 2 FFTW-d c2c (all 64 channels)   max abs err 1.776e-14  rel err 5.626e-16  (tol 1.0e-13) PASS
+CHECK 1 SME + 3 FFTW-d c2c (all 64 channels)   max abs err 1.776e-14  rel err 5.626e-16  (tol 1.0e-13) PASS
+## au1 cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  4 x FFTW-d c2c pair (timer)        0.6827
+rep  0  4 x FFTW-d r2c/frame               0.6892
+rep  0  4 x PFFFT-d real/frame             0.7205
+rep  0  4 x KFR-d c2c pair                 0.7149
+rep  0  4 SME threads                      0.6674
+rep  0  2 SME + 2 FFTW-d c2c               0.6628
+rep  0  1 SME + 3 FFTW-d c2c               0.6957
+rep  1  4 x FFTW-d r2c/frame               0.6915
+rep  1  4 x PFFFT-d real/frame             0.7229
+rep  1  4 x KFR-d c2c pair                 0.7181
+rep  1  4 SME threads                      0.6700
+rep  1  2 SME + 2 FFTW-d c2c               0.6704
+rep  1  1 SME + 3 FFTW-d c2c               0.6953
+rep  1  4 x FFTW-d c2c pair (timer)        0.6870
+rep  2  4 x PFFFT-d real/frame             0.7253
+rep  2  4 x KFR-d c2c pair                 0.7195
+rep  2  4 SME threads                      0.6742
+rep  2  2 SME + 2 FFTW-d c2c               0.6657
+rep  2  1 SME + 3 FFTW-d c2c               0.6963
+rep  2  4 x FFTW-d c2c pair (timer)        0.6892
+rep  2  4 x FFTW-d r2c/frame               0.6930
+rep  3  4 x KFR-d c2c pair                 0.7212
+rep  3  4 SME threads                      0.6682
+rep  3  2 SME + 2 FFTW-d c2c               0.6730
+rep  3  1 SME + 3 FFTW-d c2c               0.6946
+rep  3  4 x FFTW-d c2c pair (timer)        0.6966
+rep  3  4 x FFTW-d r2c/frame               0.6958
+rep  3  4 x PFFFT-d real/frame             0.7270
+rep  4  4 SME threads                      0.6765
+rep  4  2 SME + 2 FFTW-d c2c               0.6689
+rep  4  1 SME + 3 FFTW-d c2c               0.7025
+rep  4  4 x FFTW-d c2c pair (timer)        0.6946
+rep  4  4 x FFTW-d r2c/frame               0.6975
+rep  4  4 x PFFFT-d real/frame             0.7267
+rep  4  4 x KFR-d c2c pair                 0.7239
+rep  5  2 SME + 2 FFTW-d c2c               0.6717
+rep  5  1 SME + 3 FFTW-d c2c               0.7026
+rep  5  4 x FFTW-d c2c pair (timer)        0.6934
+rep  5  4 x FFTW-d r2c/frame               0.7000
+rep  5  4 x PFFFT-d real/frame             0.7307
+rep  5  4 x KFR-d c2c pair                 0.7239
+rep  5  4 SME threads                      0.6815
+rep  6  1 SME + 3 FFTW-d c2c               0.7036
+rep  6  4 x FFTW-d c2c pair (timer)        0.6934
+rep  6  4 x FFTW-d r2c/frame               0.7000
+rep  6  4 x PFFFT-d real/frame             0.7327
+rep  6  4 x KFR-d c2c pair                 0.7273
+rep  6  4 SME threads                      0.6757
+rep  6  2 SME + 2 FFTW-d c2c               0.6726
+rep  7  4 x FFTW-d c2c pair (timer)        0.6942
+rep  7  4 x FFTW-d r2c/frame               0.7038
+rep  7  4 x PFFFT-d real/frame             0.7334
+rep  7  4 x KFR-d c2c pair                 0.7274
+rep  7  4 SME threads                      0.6817
+rep  7  2 SME + 2 FFTW-d c2c               0.6763
+rep  7  1 SME + 3 FFTW-d c2c               0.7037
+rep  8  4 x FFTW-d r2c/frame               0.7230
+rep  8  4 x PFFFT-d real/frame             0.7354
+rep  8  4 x KFR-d c2c pair                 0.7281
+rep  8  4 SME threads                      0.6806
+rep  8  2 SME + 2 FFTW-d c2c               0.6738
+rep  8  1 SME + 3 FFTW-d c2c               0.7041
+rep  8  4 x FFTW-d c2c pair (timer)        0.6966
+RESULT au1 cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 4 x FFTW-d c2c pair (timer)  best     0.6827  median     0.6934  ns/input sample  (calls/rep 20)
+RESULT au1 cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 4 x FFTW-d r2c/frame         best     0.6892  median     0.6975  ns/input sample  (calls/rep 20)
+RESULT au1 cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 4 x PFFFT-d real/frame       best     0.7205  median     0.7270  ns/input sample  (calls/rep 19)
+RESULT au1 cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 4 x KFR-d c2c pair           best     0.7149  median     0.7239  ns/input sample  (calls/rep 19)
+RESULT au1 cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 4 SME threads                best     0.6674  median     0.6757  ns/input sample  (calls/rep 20)
+RESULT au1 cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 2 SME + 2 FFTW-d c2c         best     0.6628  median     0.6717  ns/input sample  (calls/rep 20)
+RESULT au1 cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 1 SME + 3 FFTW-d c2c         best     0.6946  median     0.7025  ns/input sample  (calls/rep 19)
+MS 4 x FFTW-d c2c pair (timer)    best    11.454 median    11.634 ms/call
+MS 4 x FFTW-d r2c/frame           best    11.562 median    11.701 ms/call
+MS 4 x PFFFT-d real/frame         best    12.087 median    12.197 ms/call
+MS 4 x KFR-d c2c pair             best    11.994 median    12.145 ms/call
+MS 4 SME threads                  best    11.197 median    11.336 ms/call
+MS 2 SME + 2 FFTW-d c2c           best    11.120 median    11.269 ms/call
+MS 1 SME + 3 FFTW-d c2c           best    11.653 median    11.786 ms/call
+VS best SME mix (2 SME + 2 FFTW-d c2c) vs best 4-thread library (4 x FFTW-d c2c pair (timer)): median   -3.1 %  best   -2.9 %
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# P-core wisdom import: ok
+# FFTW c2c plan: (dft-ct-dit/8
+  (dftw-direct-8/28 "t2fv_8_neon")
+  (dft-ct-dit/16
+    (dftw-direct-16/60-x8 "t2fv_16_neon")
+    (dft-vrank>=1-x16/1
+      (dft-direct-32-x8 "n1fv_32_neon"))))
+# FFTW r2c plan: (rdft2-ct-dit/4
+  (hc2c-direct-4/6/0 "hc2cfdftv_4_neon"
+    (rdft2-r2hc-direct-4 "r2cf_4")
+    (rdft2-r2hc01-direct-4 "r2cfII_4"))
+  (dft-ct-dit/16
+    (dftw-direct-16/60-x2 "t2fv_16_neon")
+    (dft-vrank>=1-x2/-1
+      (dft-direct-64-x16 "n1fv_64_neon"))))
+CHECK 4 x FFTW-d c2c pair (timer) (all 64 channels) max abs err 7.105e-14  rel err 6.911e-16  (tol 1.0e-13) PASS
+CHECK 4 x FFTW-d r2c/frame (all 64 channels)   max abs err 1.137e-13  rel err 1.106e-15  (tol 1.0e-13) PASS
+CHECK 4 x PFFFT-d real/frame (all 64 channels) max abs err 1.279e-13  rel err 1.244e-15  (tol 1.0e-13) PASS
+CHECK 4 x KFR-d c2c pair (all 64 channels)     max abs err 5.684e-14  rel err 5.529e-16  (tol 1.0e-13) PASS
+CHECK 4 SME threads (all 64 channels)          max abs err 4.263e-14  rel err 4.146e-16  (tol 1.0e-13) PASS
+CHECK 2 SME + 2 FFTW-d c2c (all 64 channels)   max abs err 7.105e-14  rel err 6.911e-16  (tol 1.0e-13) PASS
+CHECK 1 SME + 3 FFTW-d c2c (all 64 channels)   max abs err 5.684e-14  rel err 5.529e-16  (tol 1.0e-13) PASS
+## au1 cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  4 x FFTW-d c2c pair (timer)        0.8698
+rep  0  4 x FFTW-d r2c/frame               0.9309
+rep  0  4 x PFFFT-d real/frame             0.9277
+rep  0  4 x KFR-d c2c pair                 0.9127
+rep  0  4 SME threads                      0.8174
+rep  0  2 SME + 2 FFTW-d c2c               0.7882
+rep  0  1 SME + 3 FFTW-d c2c               0.8601
+rep  1  4 x FFTW-d r2c/frame               0.9306
+rep  1  4 x PFFFT-d real/frame             0.9272
+rep  1  4 x KFR-d c2c pair                 0.9134
+rep  1  4 SME threads                      0.8199
+rep  1  2 SME + 2 FFTW-d c2c               0.7919
+rep  1  1 SME + 3 FFTW-d c2c               0.8566
+rep  1  4 x FFTW-d c2c pair (timer)        0.8720
+rep  2  4 x PFFFT-d real/frame             0.9350
+rep  2  4 x KFR-d c2c pair                 0.9109
+rep  2  4 SME threads                      0.8168
+rep  2  2 SME + 2 FFTW-d c2c               0.7893
+rep  2  1 SME + 3 FFTW-d c2c               0.8532
+rep  2  4 x FFTW-d c2c pair (timer)        0.8746
+rep  2  4 x FFTW-d r2c/frame               0.9378
+rep  3  4 x KFR-d c2c pair                 0.9122
+rep  3  4 SME threads                      0.8196
+rep  3  2 SME + 2 FFTW-d c2c               0.7936
+rep  3  1 SME + 3 FFTW-d c2c               0.8606
+rep  3  4 x FFTW-d c2c pair (timer)        0.8773
+rep  3  4 x FFTW-d r2c/frame               0.9370
+rep  3  4 x PFFFT-d real/frame             0.9318
+rep  4  4 SME threads                      0.8151
+rep  4  2 SME + 2 FFTW-d c2c               0.7974
+rep  4  1 SME + 3 FFTW-d c2c               0.8603
+rep  4  4 x FFTW-d c2c pair (timer)        0.8777
+rep  4  4 x FFTW-d r2c/frame               0.9398
+rep  4  4 x PFFFT-d real/frame             0.9307
+rep  4  4 x KFR-d c2c pair                 0.9161
+rep  5  2 SME + 2 FFTW-d c2c               0.7933
+rep  5  1 SME + 3 FFTW-d c2c               0.8668
+rep  5  4 x FFTW-d c2c pair (timer)        0.8830
+rep  5  4 x FFTW-d r2c/frame               0.9394
+rep  5  4 x PFFFT-d real/frame             0.9328
+rep  5  4 x KFR-d c2c pair                 0.9184
+rep  5  4 SME threads                      0.8059
+rep  6  1 SME + 3 FFTW-d c2c               0.8603
+rep  6  4 x FFTW-d c2c pair (timer)        0.8761
+rep  6  4 x FFTW-d r2c/frame               0.9417
+rep  6  4 x PFFFT-d real/frame             0.9342
+rep  6  4 x KFR-d c2c pair                 0.9204
+rep  6  4 SME threads                      0.8228
+rep  6  2 SME + 2 FFTW-d c2c               0.7959
+rep  7  4 x FFTW-d c2c pair (timer)        0.8811
+rep  7  4 x FFTW-d r2c/frame               0.9427
+rep  7  4 x PFFFT-d real/frame             0.9367
+rep  7  4 x KFR-d c2c pair                 0.9197
+rep  7  4 SME threads                      0.8214
+rep  7  2 SME + 2 FFTW-d c2c               0.7958
+rep  7  1 SME + 3 FFTW-d c2c               0.8707
+rep  8  4 x FFTW-d r2c/frame               0.9448
+rep  8  4 x PFFFT-d real/frame             0.9386
+rep  8  4 x KFR-d c2c pair                 0.9235
+rep  8  4 SME threads                      0.8248
+rep  8  2 SME + 2 FFTW-d c2c               0.7946
+rep  8  1 SME + 3 FFTW-d c2c               0.8701
+rep  8  4 x FFTW-d c2c pair (timer)        0.8867
+RESULT au1 cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 4 x FFTW-d c2c pair (timer)  best     0.8698  median     0.8773  ns/input sample  (calls/rep 15)
+RESULT au1 cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 4 x FFTW-d r2c/frame         best     0.9306  median     0.9394  ns/input sample  (calls/rep 15)
+RESULT au1 cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 4 x PFFFT-d real/frame       best     0.9272  median     0.9328  ns/input sample  (calls/rep 15)
+RESULT au1 cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 4 x KFR-d c2c pair           best     0.9109  median     0.9161  ns/input sample  (calls/rep 15)
+RESULT au1 cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 4 SME threads                best     0.8059  median     0.8196  ns/input sample  (calls/rep 17)
+RESULT au1 cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 2 SME + 2 FFTW-d c2c         best     0.7882  median     0.7936  ns/input sample  (calls/rep 17)
+RESULT au1 cluster welch fp64 N=4096 nov=2048 hann C=64 L=2^18 1 SME + 3 FFTW-d c2c         best     0.8532  median     0.8603  ns/input sample  (calls/rep 16)
+MS 4 x FFTW-d c2c pair (timer)    best    14.593 median    14.718 ms/call
+MS 4 x FFTW-d r2c/frame           best    15.612 median    15.761 ms/call
+MS 4 x PFFFT-d real/frame         best    15.556 median    15.650 ms/call
+MS 4 x KFR-d c2c pair             best    15.283 median    15.370 ms/call
+MS 4 SME threads                  best    13.521 median    13.751 ms/call
+MS 2 SME + 2 FFTW-d c2c           best    13.225 median    13.314 ms/call
+MS 1 SME + 3 FFTW-d c2c           best    14.314 median    14.433 ms/call
+VS best SME mix (2 SME + 2 FFTW-d c2c) vs best 4-thread library (4 x FFTW-d c2c pair (timer)): median   -9.5 %  best   -9.4 %
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK 4 x vDSP-D pipeline (all 64 channels)    max abs err 0.000e+00  rel err 0.000e+00  (tol 1.0e-13) PASS
+CHECK 4 x FFTW-d NEON pipeline (all 64 channels) max abs err 1.066e-14  rel err 3.376e-16  (tol 1.0e-13) PASS
+CHECK 1 SME + 3 FFTW-d (all 64 channels)       max abs err 1.776e-14  rel err 5.626e-16  (tol 1.0e-13) PASS
+CHECK 2 SME + 2 FFTW-d (all 64 channels)       max abs err 1.776e-14  rel err 5.626e-16  (tol 1.0e-13) PASS
+CHECK 4 SME threads (all 64 channels)          max abs err 1.776e-14  rel err 5.626e-16  (tol 1.0e-13) PASS
+CHECK 4 x KFR-d pipeline (all 64 channels)     max abs err 1.066e-14  rel err 3.376e-16  (tol 1.0e-13) PASS
+CHECK 1 SME + 3 KFR-d (all 64 channels)        max abs err 1.776e-14  rel err 5.626e-16  (tol 1.0e-13) PASS
+## cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 (128 MiB)  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  4 x vDSP-D pipeline                0.7381
+rep  0  4 x FFTW-d NEON pipeline           0.7099
+rep  0  1 SME + 3 FFTW-d                   0.7170
+rep  0  2 SME + 2 FFTW-d                   0.6876
+rep  0  4 SME threads                      0.7039
+rep  0  4 x KFR-d pipeline                 0.7426
+rep  0  1 SME + 3 KFR-d                    0.7319
+rep  1  4 x FFTW-d NEON pipeline           0.7042
+rep  1  1 SME + 3 FFTW-d                   0.7205
+rep  1  2 SME + 2 FFTW-d                   0.6903
+rep  1  4 SME threads                      0.6980
+rep  1  4 x KFR-d pipeline                 0.7421
+rep  1  1 SME + 3 KFR-d                    0.7330
+rep  1  4 x vDSP-D pipeline                0.7405
+rep  2  1 SME + 3 FFTW-d                   0.7210
+rep  2  2 SME + 2 FFTW-d                   0.6941
+rep  2  4 SME threads                      0.6999
+rep  2  4 x KFR-d pipeline                 0.7424
+rep  2  1 SME + 3 KFR-d                    0.7323
+rep  2  4 x vDSP-D pipeline                0.7406
+rep  2  4 x FFTW-d NEON pipeline           0.7110
+rep  3  2 SME + 2 FFTW-d                   0.6882
+rep  3  4 SME threads                      0.6990
+rep  3  4 x KFR-d pipeline                 0.7432
+rep  3  1 SME + 3 KFR-d                    0.7329
+rep  3  4 x vDSP-D pipeline                0.7407
+rep  3  4 x FFTW-d NEON pipeline           0.7102
+rep  3  1 SME + 3 FFTW-d                   0.7164
+rep  4  4 SME threads                      0.7035
+rep  4  4 x KFR-d pipeline                 0.7640
+rep  4  1 SME + 3 KFR-d                    0.7604
+rep  4  4 x vDSP-D pipeline                0.7666
+rep  4  4 x FFTW-d NEON pipeline           0.7328
+rep  4  1 SME + 3 FFTW-d                   0.7351
+rep  4  2 SME + 2 FFTW-d                   0.7179
+rep  5  4 x KFR-d pipeline                 0.7790
+rep  5  1 SME + 3 KFR-d                    0.7749
+rep  5  4 x vDSP-D pipeline                0.7399
+rep  5  4 x FFTW-d NEON pipeline           0.7136
+rep  5  1 SME + 3 FFTW-d                   0.7181
+rep  5  2 SME + 2 FFTW-d                   0.6966
+rep  5  4 SME threads                      0.7012
+rep  6  1 SME + 3 KFR-d                    0.7354
+rep  6  4 x vDSP-D pipeline                0.7434
+rep  6  4 x FFTW-d NEON pipeline           0.7124
+rep  6  1 SME + 3 FFTW-d                   0.7216
+rep  6  2 SME + 2 FFTW-d                   0.6899
+rep  6  4 SME threads                      0.7058
+rep  6  4 x KFR-d pipeline                 0.7435
+rep  7  4 x vDSP-D pipeline                0.7405
+rep  7  4 x FFTW-d NEON pipeline           0.7126
+rep  7  1 SME + 3 FFTW-d                   0.7212
+rep  7  2 SME + 2 FFTW-d                   0.6986
+rep  7  4 SME threads                      0.7029
+rep  7  4 x KFR-d pipeline                 0.7463
+rep  7  1 SME + 3 KFR-d                    0.7341
+rep  8  4 x FFTW-d NEON pipeline           0.7123
+rep  8  1 SME + 3 FFTW-d                   0.7204
+rep  8  2 SME + 2 FFTW-d                   0.6993
+rep  8  4 SME threads                      0.7047
+rep  8  4 x KFR-d pipeline                 0.7441
+rep  8  1 SME + 3 KFR-d                    0.7343
+rep  8  4 x vDSP-D pipeline                0.7411
+RESULT cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 (128 MiB) 4 x vDSP-D pipeline          best     0.7381  median     0.7406  ns/input sample  (calls/rep 18)
+RESULT cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 (128 MiB) 4 x FFTW-d NEON pipeline     best     0.7042  median     0.7123  ns/input sample  (calls/rep 19)
+RESULT cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 (128 MiB) 1 SME + 3 FFTW-d             best     0.7164  median     0.7205  ns/input sample  (calls/rep 19)
+RESULT cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 (128 MiB) 2 SME + 2 FFTW-d             best     0.6876  median     0.6941  ns/input sample  (calls/rep 20)
+RESULT cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 (128 MiB) 4 SME threads                best     0.6980  median     0.7029  ns/input sample  (calls/rep 19)
+RESULT cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 (128 MiB) 4 x KFR-d pipeline           best     0.7421  median     0.7435  ns/input sample  (calls/rep 18)
+RESULT cluster welch fp64 N=1024 nov=512 hann C=64 L=2^18 (128 MiB) 1 SME + 3 KFR-d              best     0.7319  median     0.7341  ns/input sample  (calls/rep 18)
+MS 4 x vDSP-D pipeline      best    12.384 median    12.425 ms/call   vs 4 x vDSP median   +0.0 %  vs slot-1 library x 4 median   +4.0 %
+MS 4 x FFTW-d NEON pipeline best    11.814 median    11.950 ms/call   vs 4 x vDSP median   -3.8 %  vs slot-1 library x 4 median   +0.0 %
+MS 1 SME + 3 FFTW-d         best    12.020 median    12.087 ms/call   vs 4 x vDSP median   -2.7 %  vs slot-1 library x 4 median   +1.1 %
+MS 2 SME + 2 FFTW-d         best    11.535 median    11.645 ms/call   vs 4 x vDSP median   -6.3 %  vs slot-1 library x 4 median   -2.6 %
+MS 4 SME threads            best    11.711 median    11.793 ms/call   vs 4 x vDSP median   -5.1 %  vs slot-1 library x 4 median   -1.3 %
+MS 4 x KFR-d pipeline       best    12.451 median    12.474 ms/call   vs 4 x vDSP median   +0.4 %  vs slot-1 library x 4 median   +4.4 %
+MS 1 SME + 3 KFR-d          best    12.279 median    12.316 ms/call   vs 4 x vDSP median   -0.9 %  vs slot-1 library x 4 median   +3.1 %
+DONE

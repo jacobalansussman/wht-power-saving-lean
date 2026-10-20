@@ -1,0 +1,29 @@
+{
+ "stats": {
+  "candidates>0": 439,
+  "K_p in span": 1
+ },
+ "chosen": 1,
+ "chosen_entrance_dims": {
+  "1": 1
+ },
+ "chosen_coordinate": 0,
+ "chosen_coordinate_dims": {},
+ "donor_count": 1,
+ "mean_injections": 2.0,
+ "pivots": {
+  "444": {
+   "E": 79,
+   "injections": [
+    [
+     156,
+     77
+    ],
+    [
+     231,
+     77
+    ]
+   ]
+  }
+ }
+}

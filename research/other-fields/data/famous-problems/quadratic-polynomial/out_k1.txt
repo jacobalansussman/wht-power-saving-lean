@@ -1,0 +1,10 @@
+Baur-Strassen / transposition check: from a circuit for q(x,y) = x^T (A^T y) get A x by reverse mode in y
+  H_2              q-circuit    5 ops (A^T part    2); reverse mode gives A x exactly: True; adjoint cost <= 20 ops (= 4 size(q))
+  H_4              q-circuit   15 ops (A^T part    8); reverse mode gives A x exactly: True; adjoint cost <= 60 ops (= 4 size(q))
+  H_8              q-circuit   39 ops (A^T part   24); reverse mode gives A x exactly: True; adjoint cost <= 156 ops (= 4 size(q))
+  H_16             q-circuit   95 ops (A^T part   64); reverse mode gives A x exactly: True; adjoint cost <= 380 ops (= 4 size(q))
+  H_32             q-circuit  223 ops (A^T part  160); reverse mode gives A x exactly: True; adjoint cost <= 892 ops (= 4 size(q))
+  random A, N=5    q-circuit   24 ops (A^T part   15); reverse mode gives A x exactly: True; adjoint cost <= 96 ops (= 4 size(q))
+  random A, N=8    q-circuit   39 ops (A^T part   24); reverse mode gives A x exactly: True; adjoint cost <= 156 ops (= 4 size(q))
+  random A, N=13   q-circuit   64 ops (A^T part   39); reverse mode gives A x exactly: True; adjoint cost <= 256 ops (= 4 size(q))
+(b) holds with constant 4 (adjoint) x 3 (linearise) = 12 on these instances; (a) q <= L(A) + 2N by construction.

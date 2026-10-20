@@ -1,0 +1,2 @@
+Warning: Feature 'write_xaiger2' is experimental.
+{"design": "fft_sdf_256", "samples_checked": 2048, "mismatches": 1283, "first_mismatch_frame_pos": [0, 0], "result": "FAIL", "sqnr_db_model_vs_float_random_frames": 67.184}

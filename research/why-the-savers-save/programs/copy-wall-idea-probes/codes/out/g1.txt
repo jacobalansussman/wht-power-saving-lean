@@ -1,0 +1,7 @@
+cliques of 9 pairwise non-orthogonal lines: 0
+cliques of 8 (capped 200000): 8640
+(0, 8, 9, 16, 17, 24, 25, 32) ('open', [1, 1, 1, 1, 1, 1, 1, 1, 2, 2], 512)
+(0, 8, 9, 16, 17, 26, 27, 33) ('open', [1, 1, 1, 1, 1, 1, 1, 1, 2, 2], 512)
+(0, 8, 9, 16, 18, 24, 26, 40) ('open', [1, 1, 1, 1, 1, 1, 1, 1, 2, 2], 512)
+bit E8 pattern, rank 8, support propagation over 2000 gauge cliques: {'open': 2000}
+Z-size histogram (lines outside K): Counter({5: 56, 2: 28, 6: 28})

@@ -1,0 +1,142 @@
+[timing lock] waiting for timing lock 22:19:15
+[timing lock] got lock 22:19:15; load: { 3.52 3.82 4.02 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# ours: strips=0 B=14 high maxr=3
+CHECK FFHT-NEON pre-timing                     max abs err 2.788e-06  rel err 8.024e-08  (tol 1.0e-05) PASS
+CHECK ours-NEON pre-timing                     max abs err 2.053e-06  rel err 5.910e-08  (tol 1.0e-05) PASS
+## WHT fp32 2^8 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  FFHT-NEON                          0.2559
+rep  0  ours-NEON-textbook                 0.2105
+rep  1  ours-NEON-textbook                 0.2097
+rep  1  FFHT-NEON                          0.2554
+rep  2  FFHT-NEON                          0.2587
+rep  2  ours-NEON-textbook                 0.2099
+rep  3  ours-NEON-textbook                 0.2093
+rep  3  FFHT-NEON                          0.2552
+rep  4  FFHT-NEON                          0.2557
+rep  4  ours-NEON-textbook                 0.2112
+rep  5  ours-NEON-textbook                 0.2096
+rep  5  FFHT-NEON                          0.2534
+rep  6  FFHT-NEON                          0.2555
+rep  6  ours-NEON-textbook                 0.2094
+rep  7  ours-NEON-textbook                 0.2095
+rep  7  FFHT-NEON                          0.2553
+rep  8  FFHT-NEON                          0.2554
+rep  8  ours-NEON-textbook                 0.2104
+RESULT WHT fp32 2^8 separate                    FFHT-NEON                    best     0.2534  median     0.2554  ns/point  (calls/rep 3399034)
+RESULT WHT fp32 2^8 separate                    ours-NEON-textbook           best     0.2093  median     0.2097  ns/point  (calls/rep 4216858)
+CHECK FFHT-NEON pre-timing                     max abs err 5.681e-06  rel err 8.505e-08  (tol 1.0e-05) PASS
+CHECK ours-NEON pre-timing                     max abs err 6.004e-06  rel err 8.988e-08  (tol 1.0e-05) PASS
+## WHT fp32 2^10 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  FFHT-NEON                          0.2829
+rep  0  ours-NEON-textbook                 0.2101
+rep  1  ours-NEON-textbook                 0.2102
+rep  1  FFHT-NEON                          0.2828
+rep  2  FFHT-NEON                          0.2839
+rep  2  ours-NEON-textbook                 0.2110
+rep  3  ours-NEON-textbook                 0.2108
+rep  3  FFHT-NEON                          0.2826
+rep  4  FFHT-NEON                          0.2828
+rep  4  ours-NEON-textbook                 0.2111
+rep  5  ours-NEON-textbook                 0.2110
+rep  5  FFHT-NEON                          0.2845
+rep  6  FFHT-NEON                          0.2827
+rep  6  ours-NEON-textbook                 0.2103
+rep  7  ours-NEON-textbook                 0.2103
+rep  7  FFHT-NEON                          0.2823
+rep  8  FFHT-NEON                          0.2820
+rep  8  ours-NEON-textbook                 0.2104
+RESULT WHT fp32 2^10 separate                   FFHT-NEON                    best     0.2820  median     0.2828  ns/point  (calls/rep 755209)
+RESULT WHT fp32 2^10 separate                   ours-NEON-textbook           best     0.2101  median     0.2104  ns/point  (calls/rep 1024411)
+CHECK FFHT-NEON pre-timing                     max abs err 1.579e-05  rel err 1.192e-07  (tol 1.0e-05) PASS
+CHECK ours-NEON pre-timing                     max abs err 1.367e-05  rel err 1.031e-07  (tol 1.0e-05) PASS
+## WHT fp32 2^12 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  FFHT-NEON                          0.3319
+rep  0  ours-NEON-textbook                 0.2605
+rep  1  ours-NEON-textbook                 0.2578
+rep  1  FFHT-NEON                          0.3324
+rep  2  FFHT-NEON                          0.3319
+rep  2  ours-NEON-textbook                 0.2577
+rep  3  ours-NEON-textbook                 0.2580
+rep  3  FFHT-NEON                          0.3323
+rep  4  FFHT-NEON                          0.3330
+rep  4  ours-NEON-textbook                 0.2575
+rep  5  ours-NEON-textbook                 0.2581
+rep  5  FFHT-NEON                          0.3321
+rep  6  FFHT-NEON                          0.3322
+rep  6  ours-NEON-textbook                 0.2578
+rep  7  ours-NEON-textbook                 0.2579
+rep  7  FFHT-NEON                          0.3320
+rep  8  FFHT-NEON                          0.3324
+rep  8  ours-NEON-textbook                 0.2579
+RESULT WHT fp32 2^12 separate                   FFHT-NEON                    best     0.3319  median     0.3322  ns/point  (calls/rep 161953)
+RESULT WHT fp32 2^12 separate                   ours-NEON-textbook           best     0.2575  median     0.2579  ns/point  (calls/rep 208683)
+CHECK FFHT-NEON pre-timing                     max abs err 8.339e-05  rel err 1.237e-07  (tol 1.0e-05) PASS
+CHECK ours-NEON pre-timing                     max abs err 9.136e-05  rel err 1.355e-07  (tol 1.0e-05) PASS
+## WHT fp32 2^16 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  FFHT-NEON                          0.4240
+rep  0  ours-NEON-textbook                 0.3448
+rep  1  ours-NEON-textbook                 0.3443
+rep  1  FFHT-NEON                          0.4240
+rep  2  FFHT-NEON                          0.4236
+rep  2  ours-NEON-textbook                 0.3447
+rep  3  ours-NEON-textbook                 0.3445
+rep  3  FFHT-NEON                          0.4225
+rep  4  FFHT-NEON                          0.4252
+rep  4  ours-NEON-textbook                 0.3538
+rep  5  ours-NEON-textbook                 0.3475
+rep  5  FFHT-NEON                          0.4236
+rep  6  FFHT-NEON                          0.4221
+rep  6  ours-NEON-textbook                 0.3447
+rep  7  ours-NEON-textbook                 0.3448
+rep  7  FFHT-NEON                          0.4240
+rep  8  FFHT-NEON                          0.4241
+rep  8  ours-NEON-textbook                 0.3447
+RESULT WHT fp32 2^16 separate                   FFHT-NEON                    best     0.4221  median     0.4240  ns/point  (calls/rep 7961)
+RESULT WHT fp32 2^16 separate                   ours-NEON-textbook           best     0.3443  median     0.3447  ns/point  (calls/rep 9757)
+CHECK FFHT-NEON pre-timing                     max abs err 4.111e-04  rel err 1.302e-07  (tol 1.0e-05) PASS
+CHECK ours-NEON pre-timing                     max abs err 4.705e-04  rel err 1.490e-07  (tol 1.0e-05) PASS
+## WHT fp32 2^20 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  FFHT-NEON                          0.5608
+rep  0  ours-NEON-textbook                 0.5191
+rep  1  ours-NEON-textbook                 0.5154
+rep  1  FFHT-NEON                          0.5599
+rep  2  FFHT-NEON                          0.5631
+rep  2  ours-NEON-textbook                 0.5240
+rep  3  ours-NEON-textbook                 0.5201
+rep  3  FFHT-NEON                          0.5620
+rep  4  FFHT-NEON                          0.5640
+rep  4  ours-NEON-textbook                 0.5215
+rep  5  ours-NEON-textbook                 0.5214
+rep  5  FFHT-NEON                          0.5619
+rep  6  FFHT-NEON                          0.5619
+rep  6  ours-NEON-textbook                 0.5227
+rep  7  ours-NEON-textbook                 0.5222
+rep  7  FFHT-NEON                          0.5616
+rep  8  FFHT-NEON                          0.5617
+rep  8  ours-NEON-textbook                 0.5212
+RESULT WHT fp32 2^20 separate                   FFHT-NEON                    best     0.5599  median     0.5619  ns/point  (calls/rep 373)
+RESULT WHT fp32 2^20 separate                   ours-NEON-textbook           best     0.5154  median     0.5214  ns/point  (calls/rep 407)
+CHECK FFHT-NEON pre-timing                     max abs err 8.373e-04  rel err 1.405e-07  (tol 1.0e-05) PASS
+CHECK ours-NEON pre-timing                     max abs err 8.406e-04  rel err 1.411e-07  (tol 1.0e-05) PASS
+## WHT fp32 2^22 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  FFHT-NEON                          0.6407
+rep  0  ours-NEON-textbook                 0.6032
+rep  1  ours-NEON-textbook                 0.6017
+rep  1  FFHT-NEON                          0.6396
+rep  2  FFHT-NEON                          0.6405
+rep  2  ours-NEON-textbook                 0.6016
+rep  3  ours-NEON-textbook                 0.5979
+rep  3  FFHT-NEON                          0.6412
+rep  4  FFHT-NEON                          0.6406
+rep  4  ours-NEON-textbook                 0.6028
+rep  5  ours-NEON-textbook                 0.6060
+rep  5  FFHT-NEON                          0.6418
+rep  6  FFHT-NEON                          0.6416
+rep  6  ours-NEON-textbook                 0.6066
+rep  7  ours-NEON-textbook                 0.6066
+rep  7  FFHT-NEON                          0.6415
+rep  8  FFHT-NEON                          0.6432
+rep  8  ours-NEON-textbook                 0.5994
+RESULT WHT fp32 2^22 separate                   FFHT-NEON                    best     0.6396  median     0.6412  ns/point  (calls/rep 83)
+RESULT WHT fp32 2^22 separate                   ours-NEON-textbook           best     0.5979  median     0.6028  ns/point  (calls/rep 89)

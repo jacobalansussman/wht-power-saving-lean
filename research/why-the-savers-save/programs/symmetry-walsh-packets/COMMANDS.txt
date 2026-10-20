@@ -1,0 +1,12 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+d-I2-walsh (13 Oct 2026). Confirmation of w-walsh only; BRIEF.md says I2 is settled.
+cp w-walsh/{wordlib,mc_map,mc_groups,all_groups,block_matrix,obstruction,cover_valuefree,chain_cover,...}.py + K8-FULL-WORD.json.gz to scratch, then:
+  python3 -I mc_map.py K8-FULL-WORD.json.gz mc_map.json; python3 -I mc_groups.py K8-FULL-WORD.json.gz mc_groups.json
+  python3 -I all_groups.py K8-FULL-WORD.json.gz all_groups.json > all_groups.out
+  for g in 0..13: python3 -I block_matrix.py K8-FULL-WORD.json.gz $g > block$g.out
+  python3 -I obstruction.py K8-FULL-WORD.json.gz > obstruction.out; python3 -I cover_valuefree.py K8-FULL-WORD.json.gz > cover_valuefree.out
+  cmp each against w-walsh/: 35/35 identical. Copies of the key outputs in rerun/.

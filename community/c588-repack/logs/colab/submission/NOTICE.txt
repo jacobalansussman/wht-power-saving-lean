@@ -1,0 +1,8 @@
+Notice (Apache License 2.0, section 4(b)) for VerifierChallenge.lean in this folder.
+
+VerifierChallenge.lean is the challenge of the offline re-creation of the leaderboard's verifier, made the way
+that verifier makes it: the file challenges/dft/UniformFourier233.lean of github.com/bigospeedrun/verifier
+(commit c92b9b6, Apache License 2.0), which is itself a modified copy of lean/ComparatorChallenges/
+UniformFourier.lean of github.com/openai/math and says so in its first lines, followed by the target theorem
+Race.bound at the bound of this package (the lines after "Big O Speedrun exact-bound target"). Nothing else was
+changed. It is kept as it was compiled.

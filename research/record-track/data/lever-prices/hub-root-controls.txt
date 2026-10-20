@@ -1,0 +1,32 @@
+1839 T74   W=66304 calls/children=2343092 mass=4816512 deficit=23680 (320.0 per replica)
+           hub-engine b (1e-24 grid, certified) = 0.001679754956125544521335
+           mixed root (Decimal)                 = 1.6797549561255445213357e-3
+           stated: 0.0016797549561255445 (rl-plan control)
+3148 T740  W=663040 calls/children=23928455 mass=48165120 deficit=236800 (320.0 per replica)
+           hub-engine b (1e-24 grid, certified) = 0.001729777494678597011886
+           mixed root (Decimal)                 = 1.7297774946785970118869e-3
+           stated: kappa 0.001729777494678597011886 - 1e-46 - 1e-70 (PR body); profile from evidence/FINITE.json on main
+3605 T740  W=663040 calls/children=23953011 mass=48165120 deficit=236800 (320.0 per replica)
+           hub-engine b (1e-24 grid, certified) = 0.001730006549538841847005
+           mixed root (Decimal)                 = 1.7300065495388418470059e-3
+           stated: root [0.001730006549538841847005, ...006] (PR body); histogram published in #3659
+3642 T530  W=474880 calls/children=17144660 mass=34496640 deficit=169600 (320.0 per replica)
+           hub-engine b (1e-24 grid, certified) = 0.00173039439181396341512
+           mixed root (Decimal)                 = 1.7303943918139634151205e-3
+           stated: kappa 0.001730394391813963415120 - 1e-46 - 1e-70 (PR body)
+3653 T488  W=437248 calls/children=15786434 mass=31762944 deficit=156160 (320.0 per replica)
+           hub-engine b (1e-24 grid, certified) = 0.001730418899766071163804
+           mixed root (Decimal)                 = 1.7304188997660711638047e-3
+           stated: kappa 0.001730418899766071163804 - ... (PR body)
+3682 T360  W=322560 calls/children=11645730 mass=23431680 deficit=115200 (320.0 per replica)
+           hub-engine b (1e-24 grid, certified) = 0.001730418899766071163804
+           mixed root (Decimal)                 = 1.7304188997660711638047e-3
+           stated: kappa 0.001730418899766071163804 - ... (PR body)
+3815 T360  W=322560 calls/children=11651400 mass=23431680 deficit=115200 (320.0 per replica)
+           hub-engine b (1e-24 grid, certified) = 0.00173057843726624681874
+           mixed root (Decimal)                 = 1.7305784372662468187407e-3
+           stated: kappa 0.001730578437266246818740 - ... (PR body; profile = #3945 old-PROFILE.json)
+3945 T360  W=322560 calls/children=11664360 mass=23431680 deficit=115200 (320.0 per replica)
+           hub-engine b (1e-24 grid, certified) = 0.001730663236534549309146
+           mixed root (Decimal)                 = 1.7306632365345493091468e-3
+           stated: root [0.001730663236534549309146, ...147] (RESULT.json)

@@ -1,0 +1,7 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 13:48:58
+[heavy.sh] got slot heavy-2 13:49:42
+natural    readers == support [True, True, True, True, True, True, True, True] | orthogonal (junk) pairs among readers [784, 784, 784, 784, 784, 784, 784, 784] | longest drop-free scatter run [4, 4, 4, 4, 4, 4, 4, 4] | one frame for all readers: False
+best_twist readers == support [True, True, True, True, True, True, True, True] | orthogonal (junk) pairs among readers [784, 784, 784, 784, 784, 784, 784, 784] | longest drop-free scatter run [8, 8, 8, 8, 8, 8, 8, 8] | one frame for all readers: False
+random twists sampled 251 | failing orthogonality / port condition / symmetry: 0 | (worst support, best support) longest run: {'(4, 6)': 82, '(6, 6)': 25, '(6, 8)': 114, '(8, 8)': 30}
+longer anneal, best twist: [{'support': 0, 'start': 15, 'best': 15, 'iters': 27753}, {'support': 1, 'start': 15, 'best': 15, 'iters': 27635}]
+secs 71.4

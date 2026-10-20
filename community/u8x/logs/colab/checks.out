@@ -1,0 +1,21 @@
+== axioms (Main)
+'OAI.PowerSaving.transform_mainU8X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainU8X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8X_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+== axioms (glue)
+'GXD.U8X.exitRC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X.validX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X.ginv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X.fitsS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X.price' depends on axioms: [propext, Classical.choice, Quot.sound]
+== sorry grep
+Work/FourierU8X/UniformFourierChallenge.lean:327:  sorry
+Work/FourierU8X/UniformFourierChallenge.lean:331:  sorry
+== challenges
+challenge rc=0
+challenge-neg rc=0
+compare rc=0
+RESULT: PASS
+compare-neg rc=1 (must FAIL)
+RESULT: FAIL
+CHECKS END Tue Oct 13 17:26:22 UTC 2026

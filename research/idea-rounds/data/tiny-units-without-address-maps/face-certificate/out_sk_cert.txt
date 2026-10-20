@@ -1,0 +1,20 @@
+row [p0 seed 3 round 8]: planes 18; kept: 0 of 88 free letters (48 generators + 40 random products of 6) move N outside itself; control address map moves N: True
+   my cap 1..15 [6, 6, 5, 6, 3, 5, 6, 5, 6, 6, 3, 6, 7, 2, 6]
+   author's     [6, 6, 5, 6, 3, 5, 6, 5, 6, 6, 3, 6, 7, 2, 6]
+   my dem 16 (author 16); my sums by weight [23, 31, 18, 6] (author [23, 31, 18, 6]); all equal: True; least singular-value gap 9.66e+14
+row [p0 seed 3 round 182]: planes 18; kept: 0 of 88 free letters (48 generators + 40 random products of 6) move N outside itself; control address map moves N: True
+   my cap 1..15 [6, 2, 6, 3, 6, 3, 6, 7, 6, 5, 6, 5, 6, 5, 6]
+   author's     [6, 2, 6, 3, 6, 3, 6, 7, 6, 5, 6, 5, 6, 5, 6]
+   my dem 16 (author 16); my sums by weight [18, 31, 23, 6] (author [18, 31, 23, 6]); all equal: True; least singular-value gap 1.74e+15
+row [p0 seed 3 round 273]: planes 19; kept: 0 of 88 free letters (48 generators + 40 random products of 6) move N outside itself; control address map moves N: True
+   my cap 1..15 [6, 5, 6, 6, 5, 6, 3, 3, 6, 5, 6, 6, 7, 6, 3]
+   author's     [6, 5, 6, 6, 5, 6, 3, 3, 6, 5, 6, 6, 7, 6, 3]
+   my dem 16 (author 16); my sums by weight [20, 34, 22, 3] (author [20, 34, 22, 3]); all equal: True; least singular-value gap 1.26e+15
+row [p0 seed 3 round 452]: planes 17; kept: 0 of 88 free letters (48 generators + 40 random products of 6) move N outside itself; control address map moves N: True
+   my cap 1..15 [7, 6, 5, 6, 5, 6, 5, 6, 3, 7, 5, 3, 7, 6, 4]
+   author's     [7, 6, 5, 6, 5, 6, 5, 6, 3, 7, 5, 3, 7, 6, 4]
+   my dem 16 (author 16); my sums by weight [25, 29, 23, 4] (author [25, 29, 23, 4]); all equal: True; least singular-value gap 1.21e+15
+multipliers ['438/6095', '392/6095', '45/1219', '22/1219'] all >= 0: True
+weighted sum of my rows by weight: ['4', '6', '4', '1'] ; number of directions: [4, 6, 4, 1] ; equal: True
+weighted sum of my demands: 3728/1219 = 3.058244462674323 ; equals 3728/1219: True ; below 4: True
+ALL OK

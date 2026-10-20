@@ -1,0 +1,4 @@
+B G   order 0: [[0, 0], [0, 0]]  order 1: [[0, 0], [0, 0]]
+B n G order 0: [[0, 0], [0, 0]]  order 1: [[1, 0], [0, 1]] (want 0 and I)
+Proposition Lambda0 example: HOLDS
+control (exact case, M=3, W=2): smallest second singular value of b n g over 20000 random tries = 1.7e-22 (rank <= 1 always)

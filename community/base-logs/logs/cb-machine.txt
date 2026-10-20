@@ -1,0 +1,8 @@
+Linux a6ebc93abdd3 6.6.122+ #1 SMP Thu Apr 30 18:17:14 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+# CONFIG_SECURITY_LANDLOCK is not set
+/sbin/docker-init -- /datalab/run.sh 
+Failed to connect to bus: No medium found
+CPU(s):                                  8
+Model name:                              Intel(R) Xeon(R) CPU @ 2.20GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      4

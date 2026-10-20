@@ -1,0 +1,5 @@
+instance D5 rank 4 layers [2, 2, 1, 1, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2]
+S=0 [1, 1, 0, 0, 0] relays T=8 [0, 1, 1, 0, 0] (layer 0 < 2); T cancels T'=6 [1, 0, 0, 0, 1] (a_T'.a_T = 0) but a_T'.a_S = 1 != 0
+S=0 [1, 1, 0, 0, 0] relays T=9 [0, 1, -1, 0, 0] (layer 0 < 2); T cancels T'=6 [1, 0, 0, 0, 1] (a_T'.a_T = 0) but a_T'.a_S = 1 != 0
+S=0 [1, 1, 0, 0, 0] relays T=12 [0, 1, 0, 0, 1] (layer 0 < 2); T cancels T'=2 [1, 0, 1, 0, 0] (a_T'.a_T = 0) but a_T'.a_S = 1 != 0
+relayed pairs whose frame G cannot exist (one-level test): 42 of 42

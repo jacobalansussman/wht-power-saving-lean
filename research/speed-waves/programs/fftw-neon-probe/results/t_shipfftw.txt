@@ -1,0 +1,79 @@
+[timing lock] waiting for timing lock 05:41:15
+[timing lock] got lock 05:43:27; load: { 23.14 16.17 11.66 }
+fp64 c2c n=512  max|conda-neon|/max = 2.41e-16
+  rep 0 conda 1.9945  neon 1.1847 ns/pt
+  rep 1 conda 2.0020  neon 1.1938 ns/pt
+  rep 2 conda 1.9926  neon 1.1924 ns/pt
+  rep 3 conda 2.0193  neon 1.1894 ns/pt
+  rep 4 conda 2.0008  neon 1.1912 ns/pt
+  rep 5 conda 1.9930  neon 1.1912 ns/pt
+  rep 6 conda 2.0124  neon 1.1891 ns/pt
+  rep 7 conda 2.0045  neon 1.1928 ns/pt
+  rep 8 conda 2.0059  neon 1.1850 ns/pt
+RESULT fp64 c2c n=512 conda(no NEON) best 1.9926 med 2.0020 | NEON build best 1.1847 med 1.1912 | conda/neon best 1.68x
+fp64 c2c n=4096  max|conda-neon|/max = 3.00e-16
+  rep 0 conda 2.6746  neon 1.6822 ns/pt
+  rep 1 conda 2.6759  neon 1.6362 ns/pt
+  rep 2 conda 2.7112  neon 1.6235 ns/pt
+  rep 3 conda 2.6366  neon 1.6222 ns/pt
+  rep 4 conda 2.6392  neon 1.6112 ns/pt
+  rep 5 conda 2.6340  neon 1.6157 ns/pt
+  rep 6 conda 2.6407  neon 1.6249 ns/pt
+  rep 7 conda 2.6263  neon 1.6154 ns/pt
+  rep 8 conda 2.6493  neon 1.6101 ns/pt
+RESULT fp64 c2c n=4096 conda(no NEON) best 2.6263 med 2.6407 | NEON build best 1.6101 med 1.6222 | conda/neon best 1.63x
+fp64 r2c n=2048  max|conda-neon|/max = 2.55e-16
+  rep 0 conda 1.0580  neon 0.7559 ns/pt
+  rep 1 conda 1.0474  neon 0.7618 ns/pt
+  rep 2 conda 1.0479  neon 0.7751 ns/pt
+  rep 3 conda 1.0466  neon 0.7547 ns/pt
+  rep 4 conda 1.0634  neon 0.7651 ns/pt
+  rep 5 conda 1.0592  neon 0.7721 ns/pt
+  rep 6 conda 1.0790  neon 0.7688 ns/pt
+  rep 7 conda 1.0451  neon 0.7582 ns/pt
+  rep 8 conda 1.0496  neon 0.7669 ns/pt
+RESULT fp64 r2c n=2048 conda(no NEON) best 1.0451 med 1.0496 | NEON build best 0.7547 med 0.7651 | conda/neon best 1.38x
+fp64 r2c n=400  max|conda-neon|/max = 2.23e-16
+  rep 0 conda 0.8303  neon 0.6510 ns/pt
+  rep 1 conda 0.8229  neon 0.6479 ns/pt
+  rep 2 conda 0.8226  neon 0.6452 ns/pt
+  rep 3 conda 0.8280  neon 0.6454 ns/pt
+  rep 4 conda 0.8200  neon 0.6459 ns/pt
+  rep 5 conda 0.8205  neon 0.6441 ns/pt
+  rep 6 conda 0.8204  neon 0.6443 ns/pt
+  rep 7 conda 0.8229  neon 0.6536 ns/pt
+  rep 8 conda 0.8258  neon 0.6472 ns/pt
+RESULT fp64 r2c n=400 conda(no NEON) best 0.8200 med 0.8229 | NEON build best 0.6441 med 0.6459 | conda/neon best 1.27x
+fp32 c2c n=1024  max|conda-neon|/max = 1.93e-07
+  rep 0 conda 2.0450  neon 0.7865 ns/pt
+  rep 1 conda 2.0497  neon 0.7879 ns/pt
+  rep 2 conda 2.0421  neon 0.7877 ns/pt
+  rep 3 conda 2.0444  neon 0.7878 ns/pt
+  rep 4 conda 2.0456  neon 0.7880 ns/pt
+  rep 5 conda 2.0441  neon 0.7863 ns/pt
+  rep 6 conda 2.0448  neon 0.7868 ns/pt
+  rep 7 conda 2.0447  neon 0.7868 ns/pt
+  rep 8 conda 2.0475  neon 0.7912 ns/pt
+RESULT fp32 c2c n=1024 conda(no NEON) best 2.0421 med 2.0448 | NEON build best 0.7863 med 0.7877 | conda/neon best 2.60x
+fp32 r2c n=2048  max|conda-neon|/max = 1.22e-07
+  rep 0 conda 1.0488  neon 0.4944 ns/pt
+  rep 1 conda 1.0474  neon 0.4936 ns/pt
+  rep 2 conda 1.0473  neon 0.4942 ns/pt
+  rep 3 conda 1.0476  neon 0.4943 ns/pt
+  rep 4 conda 1.0482  neon 0.4965 ns/pt
+  rep 5 conda 1.0467  neon 0.4941 ns/pt
+  rep 6 conda 1.0467  neon 0.4933 ns/pt
+  rep 7 conda 1.0468  neon 0.4933 ns/pt
+  rep 8 conda 1.0480  neon 0.4936 ns/pt
+RESULT fp32 r2c n=2048 conda(no NEON) best 1.0467 med 1.0474 | NEON build best 0.4933 med 0.4941 | conda/neon best 2.12x
+fp32 r2c n=400  max|conda-neon|/max = 1.59e-07
+  rep 0 conda 0.8197  neon 0.4069 ns/pt
+  rep 1 conda 0.8213  neon 0.4082 ns/pt
+  rep 2 conda 0.8207  neon 0.4073 ns/pt
+  rep 3 conda 0.8207  neon 0.4078 ns/pt
+  rep 4 conda 0.8197  neon 0.4070 ns/pt
+  rep 5 conda 0.8197  neon 0.4069 ns/pt
+  rep 6 conda 0.8228  neon 0.4074 ns/pt
+  rep 7 conda 0.8194  neon 0.4071 ns/pt
+  rep 8 conda 0.8206  neon 0.4068 ns/pt
+RESULT fp32 r2c n=400 conda(no NEON) best 0.8194 med 0.8206 | NEON build best 0.4068 med 0.4071 | conda/neon best 2.01x

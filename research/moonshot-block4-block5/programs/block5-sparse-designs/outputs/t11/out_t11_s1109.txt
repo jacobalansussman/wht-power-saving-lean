@@ -1,0 +1,49 @@
+alpha3 config {'CAP': 20000, 'TRUNC': 1, 'FIFO': 1, 'LMMAX': 1500, 'NORM': 'all', 'OLDPEEL': 0, 'PROG': 10000, 'MODPMAX': 400000000.0} argv ['1109', '42', '24', '3', '3', 'orbitCYZ', '0', '0', '543', '8'] PYTHONHASHSEED=0
+seed 1109 mode orbitCYZ 2-in-8: config {'profA': (4, 2), 'profB': (2, 4), 'lam': (3, 3), 'Ya': (3, 3, False, False), 'Yb': (3, 1, False, False)} (0s)
+  orbit sigma: order 7 fixes A1,A2 False; rejections {'ord': 86, 'dead': 250, 'alive': {(0, 'a'): [(1, 2, 'non')], (1, 'a'): [(1, 0, 'non')], (0, 'b'): [(6, 4, 'non')], (1, 'b'): [(6, 3, 'non')]}}
+  orbit x1: 7 injections
+  orbit x2: 7 injections
+     peel2 out 1 d=5: created 1, killed 0, live 1, rows 0 (all rows of live cols 0), incomplete rows 0, class live 1 of 1, seeds live 1, unconstrained cols 1 (class 1), requeued 0 (1s)
+     peel2 out 2 d=5: created 1, killed 0, live 1, rows 0 (all rows of live cols 0), incomplete rows 0, class live 1 of 1, seeds live 1, unconstrained cols 1 (class 1), requeued 0 (1s)
+     out 1: 0 rows, 1 cols (1 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     out 2: 0 rows, 1 cols (1 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     modp out 1 d=5 norm=all complete: 1 x 1, rank A 1, rank [A|e] 1 -> CONSISTENT at random alpha (0s)
+     modp out 2 d=5 norm=all complete: 1 x 1, rank A 1, rank [A|e] 1 -> CONSISTENT at random alpha (0s)
+     LM (dense, special alpha): residual 2.103e-31
+  d=5 round 0: injections 14, closures [(0, 1, 1), (0, 1, 1)], residual 2.103e-31 (2s)
+     peel2 out 1 d=4: created 2, killed 0, live 2, rows 14 (all rows of live cols 14), incomplete rows 0, class live 1 of 1, seeds live 1, unconstrained cols 0 (class 0), requeued 0 (2s)
+     peel2 out 2 d=4: created 2, killed 0, live 2, rows 14 (all rows of live cols 14), incomplete rows 0, class live 1 of 1, seeds live 1, unconstrained cols 0 (class 0), requeued 0 (2s)
+     out 1: 14 rows, 2 cols (1 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     out 2: 14 rows, 2 cols (1 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     V4 (exact): alpha_k = base * C_k * s1^E1 s2^E2; components [0, 1, 8]; cycle lattice order 7; 7 solutions (s1, s2) = (z^a, z^b), z = zeta_7: [(0, 0), (1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)]
+     V4 check: every solution consistent at d=4 exactly: True
+  d=4 round 0: injections 14, closures [(14, 2, 1), (14, 2, 1)], residual 0.000e+00 (2s)
+     peel2 out 1 d=3: created 2, killed 4, live 0, rows 0 (all rows of live cols 0), incomplete rows 0, class live 0 of 1, seeds live 0, unconstrained cols 0 (class 0), requeued 0 (2s)
+     peel2 out 2 d=3: created 2, killed 4, live 0, rows 0 (all rows of live cols 0), incomplete rows 0, class live 0 of 1, seeds live 0, unconstrained cols 0 (class 0), requeued 0 (2s)
+     out 1: 0 rows, 0 cols (0 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     out 2: 0 rows, 0 cols (0 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     d=3 on V4 point (a,b)=(0,0): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(1,6): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(2,5): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(3,4): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(4,3): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(5,2): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(6,1): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 verdict on V4 (all alpha != 0, generic bases): INCONSISTENT at every solution [complete closure]
+  d=3 round 0: injections 14, closures [(0, 0, 0), (0, 0, 0)], residual 1.000e+00 (2s)
+STOP at d=3 (residual 1.000e+00)
+result ('stop', 3) (2s) stats {'zl_score_x1': (0, 1), 'zl_score_x2': (0, 1)}

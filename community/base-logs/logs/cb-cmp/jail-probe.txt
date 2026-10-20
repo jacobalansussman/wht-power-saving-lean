@@ -1,0 +1,30 @@
+id: uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
+CapEff:	0000000000000000 CapBnd:	0000000000000000 NoNewPrivs:	1 Seccomp:	2 Seccomp_filters:	2 
+[write inside .lake (must work)] rc=0 
+[write in project outside .lake (must fail)] rc=1 touch: cannot touch '/content/work/cc/probe/proj/outside': Read-only file system
+[write in /tmp (must fail)] rc=1 touch: cannot touch '/tmp/cc-jail-probe': Read-only file system
+[write in /var/tmp (must fail)] rc=1 touch: cannot touch '/var/tmp/cc-jail-probe': Read-only file system
+[write in /content/work/cc/probe/ro (must fail)] rc=1 touch: cannot touch '/content/work/cc/probe/ro/z': Read-only file system
+[write in /dev/shm (allowed, as landrun --rw /dev)] rc=0 
+[remove from /dev/shm] rc=0 
+[write to /dev/null (must work)] rc=0 
+[read /root (unix permissions)] rc=2 ls: cannot open directory '/root': Permission denied
+[network: curl github (must fail)] rc=6 curl: (6) Could not resolve host: github.com
+http=000
+[network interfaces] rc=0 Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+
+[socket(AF_UNIX) (must fail)] rc=1 Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import socket; s=socket.socket(socket.AF_UNIX); print("created AF_UNIX socket")
+                     ~~~~~~~~~~~~~^^^^^^^^
+[socket(AF_INET) (allowed to exist, no route)] rc=1 Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import socket; s=socket.socket(socket.AF_INET); s.settimeout(3); s.connect(("1.1.1.1",80))
+                               
+[mount (must fail)] rc=32 mount: /mnt: must be superuser to use mount.
+       dmesg(1) may have more information after failed mount system call.
+[become root again (must fail)] rc=127 setpriv: setresuid failed: Operation not permitted
+[kill pid 1 (must fail)] rc=1 /content/work/cc/inside.sh: line 3: kill: (1) - Operation not permitted
+[lean runs] rc=0 Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+[landrun strict inside] rc=1 [landrun:error] 2026/10/13 14:36:34 Failed to apply sandbox: failed to apply Landlock restrictions: missing kernel Landlock support. Got Landlock ABI v0, wanted {Landlock V9; FS: all; Net: all; Scoped

@@ -1,0 +1,5 @@
+block 3: 2 in 7, forms 64: max |X_Q - [odd]I| = 6.75e-16; Thm10(b) min sing. value on even supports 0.363; Thm10(c) rank mismatches 0, largest singular value beyond slack 2.63e-16; tight supports 12, max |E| on them 2.29e-16
+block 4: 2 in 9, forms 1024: max |X_Q - [odd]I| = 8.07e-16; Thm10(b) min sing. value on even supports 0.216; Thm10(c) rank mismatches 0, largest singular value beyond slack 3.83e-16; tight supports 104, max |E| on them 2.29e-16
+   rank-cover pieces/rows checked 945, violations 0; c-vector sum = 4.500 (LP floor 4)
+block 5: 2 in 11, forms 32768: max |X_Q - [odd]I| = 1.16e-15; Thm10(b) min sing. value on even supports 0.148; Thm10(c) rank mismatches 0, largest singular value beyond slack 6.26e-16; tight supports 1792, max |E| on them 2.29e-16
+   rank-cover pieces/rows checked 15585, violations 0; c-vector sum = 5.500 (LP floor 155/36=4.306)

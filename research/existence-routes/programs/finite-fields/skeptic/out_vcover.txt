@@ -1,0 +1,9 @@
+f27_Fp2_m3_s11: verdict=NO UNIT (every chart decided) | Z=[4, 6, 7] options=[[0, 1, 2], [0], [2], [0, 1, 2]] | steps 8 + full 9 + subs 0 | missing none | zero-move charts 0
+f27_Fp2_m3_s13: verdict=NO UNIT (every chart decided) | Z=[5, 6, 7] options=[[0, 1, 2], [0], [2], [0, 1, 2]] | steps 8 + full 9 + subs 0 | missing none | zero-move charts 0
+g27_Fp2b_m3_s2: verdict=NO UNIT (every chart decided) | Z=[0, 6, 7] options=[[1], [0], [2], [0, 1, 2]] | steps 10 + full 3 + subs 0 | missing none | zero-move charts 0
+g27_mid3_m3_s22: verdict=NO UNIT (every chart decided) | Z=[0, 4, 5, 6, 7] options=[[1], [0], [2], [0, 1]] | steps 10 + full 2 + subs 0 | missing none | zero-move charts 0
+t27_mid3_m2_s2: verdict=NO UNIT (every chart decided) | Z=[4] options=[[0, 1], [0], [1], [0, 1]] | steps 6 + full 4 + subs 0 | missing none | zero-move charts 0
+t27_Fmid3_m3_s5: verdict=NO UNIT (every chart decided) | Z=[4, 6, 7] options=[[0, 1, 2], [0], [2], [0, 1, 2]] | steps 8 + full 9 + subs 0 | missing none | zero-move charts 0
+t27_mid3_m2_s1: verdict=NO UNIT (every chart decided) | Z=[4] options=[[0, 1], [0], [1], [0, 1]] | steps 6 + full 4 + subs 0 | missing none | zero-move charts 0
+f27_Fp2_m3_s39: verdict=NO UNIT (every chart decided) | Z=[3, 6, 7] options=[[0, 1, 2], [1], [2], [0, 1, 2]] | steps 8 + full 9 + subs 9 | missing ['full_c_2_1_2_2'] | zero-move charts 0
+TOTAL 121/122 steps have a certificate accepted by my independent checker

@@ -1,0 +1,85 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# L=16 n=2^8 ols_N=1024 sme_chunk=1024 Cn=32 useful MAC fraction of SME 0.5000
+CHECK vdsp_conv L=16 n=2^8 (256 outs)          max abs err 2.590e-07  rel err 5.895e-08  (tol 1.0e-05) PASS
+CHECK vdsp_conv first 16 outputs               max abs err 1.098e-07  rel err 4.149e-08  (tol 1.0e-05) PASS
+CHECK vdsp_conv last 16 outputs                max abs err 1.484e-07  rel err 5.050e-08  (tol 1.0e-05) PASS
+CHECK ols_vdsp L=16 n=2^8 (256 outs)           max abs err 1.112e-06  rel err 2.531e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp first 16 outputs                max abs err 4.362e-07  rel err 1.649e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp last 16 outputs                 max abs err 3.869e-07  rel err 1.316e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=16 n=2^8 (256 outs)       max abs err 3.910e-07  rel err 8.900e-08  (tol 1.0e-05) PASS
+CHECK sme_toeplitz first 16 outputs            max abs err 1.098e-07  rel err 4.149e-08  (tol 1.0e-05) PASS
+CHECK sme_toeplitz last 16 outputs             max abs err 1.739e-07  rel err 5.917e-08  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=16 n=2^8 (256 outs)          max abs err 1.112e-06  rel err 2.531e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp first 16 outputs               max abs err 4.362e-07  rel err 1.649e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp last 16 outputs                max abs err 3.869e-07  rel err 1.316e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=16 n=2^8 (256 outs)          max abs err 5.789e-07  rel err 1.318e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft first 16 outputs               max abs err 4.180e-07  rel err 1.580e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft last 16 outputs                max abs err 2.894e-07  rel err 9.848e-08  (tol 1.0e-05) PASS
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# L=16 n=2^7 ols_N=1024 sme_chunk=1024 Cn=32 useful MAC fraction of SME 0.5000
+CHECK vdsp_conv L=16 n=2^7 (128 outs)          max abs err 2.590e-07  rel err 7.266e-08  (tol 1.0e-05) PASS
+CHECK vdsp_conv first 16 outputs               max abs err 1.098e-07  rel err 4.149e-08  (tol 1.0e-05) PASS
+CHECK vdsp_conv last 16 outputs                max abs err 1.698e-07  rel err 8.279e-08  (tol 1.0e-05) PASS
+CHECK ols_vdsp L=16 n=2^7 (128 outs)           max abs err 1.037e-06  rel err 2.909e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp first 16 outputs                max abs err 4.362e-07  rel err 1.649e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp last 16 outputs                 max abs err 5.550e-07  rel err 2.706e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=16 n=2^7 (128 outs)       max abs err 3.216e-07  rel err 9.023e-08  (tol 1.0e-05) PASS
+CHECK sme_toeplitz first 16 outputs            max abs err 1.098e-07  rel err 4.149e-08  (tol 1.0e-05) PASS
+CHECK sme_toeplitz last 16 outputs             max abs err 1.133e-07  rel err 5.523e-08  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=16 n=2^7 (128 outs)          max abs err 1.037e-06  rel err 2.909e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp first 16 outputs               max abs err 4.362e-07  rel err 1.649e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp last 16 outputs                max abs err 5.550e-07  rel err 2.706e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=16 n=2^7 (128 outs)          max abs err 3.909e-07  rel err 1.097e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft first 16 outputs               max abs err 2.858e-07  rel err 1.080e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft last 16 outputs                max abs err 2.866e-07  rel err 1.398e-07  (tol 1.0e-05) PASS
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# L=16 n=2^10 ols_N=1024 sme_chunk=1024 Cn=32 useful MAC fraction of SME 0.5000
+CHECK vdsp_conv L=16 n=2^10 (1024 outs)        max abs err 3.611e-07  rel err 8.009e-08  (tol 1.0e-05) PASS
+CHECK vdsp_conv first 16 outputs               max abs err 1.098e-07  rel err 4.149e-08  (tol 1.0e-05) PASS
+CHECK vdsp_conv last 16 outputs                max abs err 1.697e-07  rel err 4.558e-08  (tol 1.0e-05) PASS
+CHECK ols_vdsp L=16 n=2^10 (1024 outs)         max abs err 1.455e-06  rel err 3.227e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp first 16 outputs                max abs err 9.130e-07  rel err 3.451e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp last 16 outputs                 max abs err 8.016e-07  rel err 2.153e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=16 n=2^10 (1024 outs)     max abs err 5.242e-07  rel err 1.163e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz first 16 outputs            max abs err 5.242e-07  rel err 1.981e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz last 16 outputs             max abs err 2.789e-07  rel err 7.492e-08  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=16 n=2^10 (1024 outs)        max abs err 1.455e-06  rel err 3.227e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp first 16 outputs               max abs err 9.130e-07  rel err 3.451e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp last 16 outputs                max abs err 8.016e-07  rel err 2.153e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=16 n=2^10 (1024 outs)        max abs err 7.969e-07  rel err 1.768e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft first 16 outputs               max abs err 4.847e-07  rel err 1.832e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft last 16 outputs                max abs err 2.759e-07  rel err 7.411e-08  (tol 1.0e-05) PASS
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# L=64 n=2^7 ols_N=1024 sme_chunk=1024 Cn=80 useful MAC fraction of SME 0.8000
+CHECK vdsp_conv L=64 n=2^7 (128 outs)          max abs err 1.071e-06  rel err 1.492e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv first 64 outputs               max abs err 6.853e-07  rel err 1.035e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv last 64 outputs                max abs err 1.071e-06  rel err 1.492e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp L=64 n=2^7 (128 outs)           max abs err 2.127e-06  rel err 2.964e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp first 64 outputs                max abs err 2.127e-06  rel err 3.211e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp last 64 outputs                 max abs err 1.169e-06  rel err 1.629e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=64 n=2^7 (128 outs)       max abs err 7.342e-07  rel err 1.023e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz first 64 outputs            max abs err 7.342e-07  rel err 1.108e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz last 64 outputs             max abs err 6.118e-07  rel err 8.526e-08  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=64 n=2^7 (128 outs)          max abs err 2.127e-06  rel err 2.964e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp first 64 outputs               max abs err 2.127e-06  rel err 3.211e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp last 64 outputs                max abs err 1.169e-06  rel err 1.629e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=64 n=2^7 (128 outs)          max abs err 1.342e-06  rel err 1.870e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft first 64 outputs               max abs err 1.342e-06  rel err 2.026e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft last 64 outputs                max abs err 9.479e-07  rel err 1.321e-07  (tol 1.0e-05) PASS
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# L=64 n=2^10 ols_N=1024 sme_chunk=1024 Cn=80 useful MAC fraction of SME 0.8000
+CHECK vdsp_conv L=64 n=2^10 (1024 outs)        max abs err 1.146e-06  rel err 1.145e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv first 64 outputs               max abs err 6.853e-07  rel err 1.035e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv last 64 outputs                max abs err 9.477e-07  rel err 9.682e-08  (tol 1.0e-05) PASS
+CHECK ols_vdsp L=64 n=2^10 (1024 outs)         max abs err 2.670e-06  rel err 2.668e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp first 64 outputs                max abs err 2.544e-06  rel err 3.840e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp last 64 outputs                 max abs err 1.901e-06  rel err 1.942e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=64 n=2^10 (1024 outs)     max abs err 2.663e-06  rel err 2.661e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz first 64 outputs            max abs err 1.626e-06  rel err 2.455e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz last 64 outputs             max abs err 1.788e-06  rel err 1.827e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=64 n=2^10 (1024 outs)        max abs err 2.670e-06  rel err 2.668e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp first 64 outputs               max abs err 2.544e-06  rel err 3.840e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp last 64 outputs                max abs err 1.788e-06  rel err 1.827e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=64 n=2^10 (1024 outs)        max abs err 2.031e-06  rel err 2.030e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft first 64 outputs               max abs err 1.705e-06  rel err 2.574e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft last 64 outputs                max abs err 1.913e-06  rel err 1.955e-07  (tol 1.0e-05) PASS

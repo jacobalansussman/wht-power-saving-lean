@@ -1,0 +1,65 @@
+{
+  "checks": [
+    {
+      "mode": "x",
+      "pass": true,
+      "source_count": 112,
+      "denominators": {
+        "x": 4,
+        "y": 8,
+        "s": 8
+      },
+      "maximum_uncancelled_entry": {
+        "x": "5550",
+        "y": "81616",
+        "s": "56979/4"
+      },
+      "updates": 125518,
+      "x_rows_restored_(classic_hx)": false
+    },
+    {
+      "mode": "y",
+      "pass": true,
+      "source_count": 112,
+      "denominators": {
+        "x": 1,
+        "y": 2,
+        "s": 1
+      },
+      "maximum_uncancelled_entry": {
+        "x": "1",
+        "y": "3/2",
+        "s": "1"
+      },
+      "updates": 504,
+      "x_rows_restored_(classic_hx)": null
+    },
+    {
+      "mode": "e",
+      "pass": true,
+      "source_count": 228,
+      "denominators": {
+        "x": 4,
+        "y": 4,
+        "s": 4
+      },
+      "maximum_uncancelled_entry": {
+        "x": "1",
+        "y": "8",
+        "s": "4"
+      },
+      "updates": 3811,
+      "x_rows_restored_(classic_hx)": null
+    }
+  ],
+  "SPar_by_Shea_rule": [
+    10,
+    21,
+    4,
+    8,
+    8
+  ],
+  "largest_uncancelled_digit": 652928,
+  "scope": "Exact rational preflight only; the packed kernel terms are mirrored by zmirror.py; Lean kernel checks still required.",
+  "certificate_sha256": "b53a0194b4ee826377e95601dee03b87f43ab197da3f24447f7b8bfaf852d800"
+}

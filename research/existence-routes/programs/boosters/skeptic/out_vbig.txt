@@ -1,0 +1,15 @@
+T74E: W=10855 m=73 sum calls rank = 789855 vs W*m = 792415; root tau = 0.998595992057839207  saving 1 - tau = 0.0014040079421607
+#1042: W=14336 m=73 sum calls rank = 1041408 vs W*m = 1046528; root tau = 0.998325010984062327  saving 1 - tau = 0.0016749890159376
+T74E root_lower = {'root_lower': '17550099277/12500000000000', 'root_upper': '1404007942161/1000000000000000', 'root_lower_decimal': '0.00
+column recursion = matrix recursion at M = 6: True
+  T74E Dist73 S=odd: margin/(W*P[m]) = 28.644910  -> PASS
+  T74E Dist73 S=even: margin/(W*P[m]) = 28.644910  -> PASS
+  T74E Dist73 S=(1,): margin/(W*P[m]) = 23.594841  -> PASS
+  T74E Dist73 S=(0, 1): margin/(W*P[m]) = 23.594841  -> PASS
+  T74E Dist73 S=1..m: margin/(W*P[m]) = 23.594841  -> PASS
+  #1042 Dist73 S=odd: margin/(W*P[m]) = 42.758286  -> PASS
+  #1042 Dist73 S=even: margin/(W*P[m]) = 42.758286  -> PASS
+  #1042 Dist73 S=(1,): margin/(W*P[m]) = 34.622628  -> PASS
+  #1042 Dist73 S=(0, 1): margin/(W*P[m]) = 34.622628  -> PASS
+  #1042 Dist73 S=1..m: margin/(W*P[m]) = 34.622628  -> PASS
+$H python3 -B vbig.py  10.39s user 0.23s system 97% cpu 10.904 total

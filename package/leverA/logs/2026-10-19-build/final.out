@@ -1,0 +1,78 @@
+FINAL RUN L2979H NUM=17564707 START Mon Oct 19 08:15:20 PM UTC 2026 on fe8613e27353; R=/content/work/aA-final
+=== nobuild START 20:15:20
+=== nobuild END rc=0 wall=14s maxrss_kb=985768 20:15:34
+All targets up-to-date (9327 jobs).
+TREE OK /content/work/aA-final/T (12G)
+INSTALL L2979H-extra: 0 new, 266 identical (skipped), from /content/work/aA-final/in/engine; hashes /content/work/aA-final/in-L2979H-extra.sha256
+INSTALL L2979H: 0 new, 20 identical (skipped), from /content/work/aA-final/in/final-L2979H/stage; hashes /content/work/aA-final/in-L2979H.sha256
+   (slot: waited 30s; heavy 2, avail 43208 MB)
+   LEAN_NUM_THREADS=1
+=== build START 20:16:06
+=== build END rc=0 wall=18s maxrss_kb=979080 20:16:24
+Build completed successfully (9507 jobs).
+=== nobuild START 20:16:24
+=== nobuild END rc=0 wall=25s maxrss_kb=976964 20:16:49
+All targets up-to-date (9507 jobs).
+BUILD L2979H OK
+CHECKS L2979H NUM=17564707 START Mon Oct 19 08:16:50 PM UTC 2026
+   (slot: waited 0s; heavy 2, avail 36811 MB)
+=== axioms START 20:16:50
+=== axioms END rc=0 wall=29s maxrss_kb=6886812 20:17:19
+'OAI.PowerSaving.transform_mainL2979H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL2979H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL2979H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms L2979H: standard only
+   (slot: waited 0s; heavy 2, avail 30278 MB)
+=== axioms-extra START 20:17:19
+=== axioms-extra END rc=0 wall=16s maxrss_kb=6909828 20:17:35
+'OAI.PowerSaving.MX.L2979H.engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.L2979H.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL2979H.engine_L2979H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL2979H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL2979H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL2979H.alphaL2979H_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL2979H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL2979H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL2979H' depends on axioms: [propext, Classical.choice, Quot.sound]
+extra axioms: standard only
+files grepped: 282 (from /content/work/aA-final/in-L2979H-all.files)
+sorry/admit lines: 0
+forbidden-construct mentions inside backquotes (not uses): 5
+forbidden-construct lines: 0
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74 /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierL2979H (1 - 17564707/10^10): byte-identical to my derivation from OpenAI's statement
+challenge FourierL2979HNeg (1 - 17564708/10^10): byte-identical to my derivation from OpenAI's statement
+positive and negative challenge differ only in the numerator
+Compare.lean e48d6d3b (= /content/work/ours/Compare.lean)
+   (slot: waited 0s; heavy 1, avail 40972 MB)
+=== compare-pos START 20:17:35
+=== compare-pos END rc=0 wall=143s maxrss_kb=16037640 20:19:58
+compare-pos rc=0
+RESULT: PASS
+   (slot: waited 30s; heavy 2, avail 45892 MB)
+=== compare-neg START 20:20:28
+=== compare-neg END rc=1 wall=105s maxrss_kb=16240340 20:22:13
+compare-neg rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentL2979H: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentL2979H._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL2979H: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentL2979H._proof_1: type differs
+RESULT: FAIL
+VERDICT Compare positive: PASS
+VERDICT Compare negative: FAIL (expected)
+CHECKS L2979H ALL AS EXPECTED Mon Oct 19 08:22:13 PM UTC 2026
+EXIT 0
+comparator and bigospeedrun side by side: logs /content/work/logs/aA-final/L2979H-cmp.out, /content/work/logs/aA-final/L2979H-bos.out
+VERDICT comparator positive: accepted
+VERDICT comparator negative: rejected (expected)
+VERDICT bos lean: accepted
+VERDICT bos audit: standard axioms
+VERDICT bos nanoda: accepted
+VERDICT bos negative (bound one grid step too high): rejected (expected)
+-rw-r--r-- 1 root root 0 Oct 19 22:48 /content/work/aA-final/BOS-L2979Hneg-OK
+-rw-r--r-- 1 root root 0 Oct 19 22:42 /content/work/aA-final/BOS-L2979H-OK
+-rw-r--r-- 1 root root 0 Oct 19 20:22 /content/work/aA-final/CHECKS-L2979H-OK
+-rw-r--r-- 1 root root 0 Oct 19 21:15 /content/work/aA-final/CMP-L2979H-OK
+-rw-r--r-- 1 root root 0 Oct 19 20:16 /content/work/aA-final/CTL-L2979H-OK
+FINAL RUN L2979H: EVERY VERDICT AS EXPECTED Mon Oct 19 10:48:05 PM UTC 2026
+EXIT 0

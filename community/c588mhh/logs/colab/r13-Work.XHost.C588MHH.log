@@ -1,0 +1,44 @@
+START Work.XHost.C588MHH 20:07:53
+Work/XHost/C588MHH.lean:33:24: error: Tactic `rewrite` failed: motive is not type correct:
+  fun _a => 64 * _a + hsched.nb = 7279
+Error: Application type mismatch: The argument
+  hsched
+has type
+  HostSched (Fin C588M.raw.R) (Fin C588M.raw.v)
+but is expected to have type
+  HostSched (Fin C588M.raw.R) (Fin _a)
+in the application
+  hsched.nb
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+
+⊢ 64 * C588M.raw.v + hsched.nb = 7279
+'GXD.C588MHH.hfits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.C588MHH.hprice' depends on axioms: [propext, Classical.choice, Quot.sound]
+Command exited with non-zero status 1
+	Command being timed: "/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean -DautoImplicit=false -R . -o .lake/build/lib/lean/Work/XHost/C588MHH.olean -i .lake/build/lib/lean/Work/XHost/C588MHH.ilean Work/XHost/C588MHH.lean"
+	User time (seconds): 7.78
+	System time (seconds): 3.17
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.87
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7022516
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6
+	Minor (reclaiming a frame) page faults: 156454
+	Voluntary context switches: 2583
+	Involuntary context switches: 832
+	Swaps: 0
+	File system inputs: 696
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+EXIT 1 Work.XHost.C588MHH 20:08:03

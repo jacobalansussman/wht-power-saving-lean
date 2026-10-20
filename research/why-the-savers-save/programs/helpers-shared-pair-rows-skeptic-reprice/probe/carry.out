@@ -1,0 +1,3 @@
+min carried (target, face) incidences per own-plane option: Counter({16: 28})
+best found: total face copies 352 (U8/model: 2 x 168 = 336); carried incidences 448 ; copies per face plane {2: 153, 3: 14, 4: 1}
+python3 -I probe/carry.py  clean/a0_demand.json clean/u8_blocks.json  4.10s user 0.01s system 99% cpu 4.131 total

@@ -1,0 +1,9 @@
+DFZ weight 2/57  T = ['L0(s=0)']
+   A = s=<100>                  raise over T (mod 2) = 1
+   B = s=<010>                  raise over T (mod 2) = 1
+   C = s=<001>                  raise over T (mod 2) = 1
+   W = s=<110>                  raise over T (mod 2) = 1
+   X = s=<101>                  raise over T (mod 2) = 1
+   Y = s=<011>                  raise over T (mod 2) = 1
+   Z = s=<111>                  raise over T (mod 2) = 1
+   mod-2 dependencies: W in A+B: True  X in A+C: True  Y in B+C: True  Z in A+Y: True  A,B,C independent: True

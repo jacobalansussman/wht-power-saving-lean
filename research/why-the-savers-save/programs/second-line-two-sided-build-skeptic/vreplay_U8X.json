@@ -1,0 +1,34 @@
+{
+ "word": "checks/wht43/bound-check/k-lower/out/U8X-parsed.json.gz",
+ "v": 112,
+ "R": 616,
+ "gates_A": 4403,
+ "gates_B": 3097,
+ "M_times_Minv_identity_on_sampled_rows": true,
+ "x_rows_identity": true,
+ "y_dep_on_x": 112,
+ "y_dep_on_other_y": 0,
+ "y_dep_on_slots": 112,
+ "slots_restored_by_main_phase": 82,
+ "dirt_slots_joined_with_y_at_start": 328,
+ "dirt_slots_meeting_x_in_A": 112,
+ "rank_start_map_y_to_Kx": 112,
+ "rank_start_map_y_to_all_dirt": 112,
+ "gates_joining_x_with_an_s_holder_in_phase": {
+  "A": 0,
+  "scatter": 0,
+  "B": 0
+ },
+ "slots_forced_to_hold_s_by_y_gates": 464,
+ "direct_x_y_gates": {
+  "A": 0,
+  "B": 0
+ },
+ "end_bwd_forced_slots_with_x_dependence": 354,
+ "rank_end_bwd": 112,
+ "end_bwd_slots_with_x_and_y_entries": 0,
+ "end_fwd_forced_slots_with_x_dependence": 68,
+ "rank_end_fwd": 68,
+ "end_fwd_slots_with_x_and_y_entries": 0,
+ "rank_shear_block_K": 112
+}

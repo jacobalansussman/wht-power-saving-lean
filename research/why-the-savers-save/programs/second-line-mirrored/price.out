@@ -1,0 +1,6 @@
+calibration (one-sided, m 73, D 320): 1.6647327e-03
+two-sided, V-centre = a second P112 code (C = 128 per call), m 74, D 640: 3.2824847e-03  (x1.954 of the hub)
+largest C per call that still beats our exact fill 1.6647327e-3 (extra as rank-8 centre pieces): 163  -> D 325 per replica; room beyond a P112-sized V-centre: 35 per call
+largest C per call that still beats the hub 1.6797550e-3 (extra as rank-8 centre pieces): 162  -> D 334 per replica; room beyond a P112-sized V-centre: 34 per call
+largest C per call that still beats our exact fill 1.6647327e-3 (extra absorbed into the fill): 163  -> D 325 per replica; room beyond a P112-sized V-centre: 35 per call
+largest C per call that still beats the hub 1.6797550e-3 (extra absorbed into the fill): 162  -> D 334 per replica; room beyond a P112-sized V-centre: 34 per call

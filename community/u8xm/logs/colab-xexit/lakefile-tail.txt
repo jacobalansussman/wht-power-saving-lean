@@ -1,0 +1,4 @@
+lean_lib Work where globs := #[`Work.+]
+
+-- x-exit-lean (exit-frame helpers)
+lean_lib XExit where globs := #[`XExit.+]

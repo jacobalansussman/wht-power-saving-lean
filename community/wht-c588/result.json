@@ -1,0 +1,258 @@
+{
+  "format": "community-certificate-package/1",
+  "name": "wht-c588",
+  "suffix": "C588x",
+  "title": "Walsh-Hadamard corollaries of the #588 kernel programs (BlockWHT.wht_main_of_engine)",
+  "statement": "this repository's published Walsh-Hadamard statement (WHTProgram, WHTTimeBoundsAt), only the exponent and the theorem name changed",
+  "mode": "add",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "results": [
+    {
+      "theorem": "OAI.PowerSaving.WHT.wht_main_block_C588x",
+      "numerator": 12331686,
+      "negative_numerator": 12331687,
+      "saving": "1.2331686e-3",
+      "kernel": "Shea's SeamC588.engine_C588x on his unchanged tree",
+      "modules": [
+        "Work.WHTC588.Challenge",
+        "Work.WHTC588Neg.Challenge",
+        "Work.WHTC588.Main",
+        "Work.WHTC588.Solution",
+        "Work.WHTC588.Axioms"
+      ],
+      "comparator": {
+        "positive": "comparator/WHTC588.json",
+        "positive_nanoda": "comparator/WHTC588-nanoda.json",
+        "negative": "comparator/WHTC588Neg.json"
+      },
+      "checks": [
+        {
+          "id": "build",
+          "status": "pass",
+          "what": "pass",
+          "log": "logs/colab/build.log"
+        },
+        {
+          "id": "axioms",
+          "status": "pass",
+          "what": "pass",
+          "log": "logs/colab/checks.log"
+        },
+        {
+          "id": "compare",
+          "status": "pass",
+          "what": "pass",
+          "log": "logs/colab/checks.log"
+        },
+        {
+          "id": "compare-negative",
+          "status": "pass",
+          "what": "pass (FAIL as it must)",
+          "log": "logs/colab/checks.log"
+        },
+        {
+          "id": "comparator",
+          "status": "pass",
+          "what": "pass (Lean kernel; nanoda configuration also accepted)",
+          "log": "logs/colab/cmp/cwht-WHTC588.log"
+        },
+        {
+          "id": "comparator-negative",
+          "status": "pass",
+          "what": "pass (rejected)",
+          "log": "logs/colab/cmp/cwht-WHTC588Neg.log"
+        },
+        {
+          "id": "comparator-nanoda",
+          "status": "pass",
+          "what": "the nanoda configuration: nanoda and Lean kernels accept",
+          "log": "logs/colab/cmp/cwht-WHTC588-nanoda.log"
+        },
+        {
+          "id": "skeptic",
+          "status": "pass",
+          "log": "logs/colab/skeptic-v-c-wht/base.log",
+          "what": "an independent agent compiled the four new modules again with plain lean into its own folder, without Lake: axioms standard, Compare.lean RESULT: PASS and, one unit stronger, RESULT: FAIL (base.log); it did not repeat the comparator. report.txt is its written verdict"
+        }
+      ],
+      "logs": [
+        "logs/colab/build.log",
+        "logs/colab/checks.log",
+        "logs/colab/cmp.log",
+        "logs/colab/cmp/"
+      ]
+    },
+    {
+      "theorem": "OAI.PowerSaving.WHT.wht_main_block_C588Qx",
+      "numerator": 12383292,
+      "negative_numerator": 12383293,
+      "saving": "1.2383292e-3",
+      "kernel": "the repacked kernel of c588-repack (apply c588-repack first)",
+      "modules": [
+        "Work.WHTC588Q.Challenge",
+        "Work.WHTC588QNeg.Challenge",
+        "Work.WHTC588Q.Main",
+        "Work.WHTC588Q.Solution",
+        "Work.WHTC588Q.Axioms"
+      ],
+      "comparator": {
+        "positive": "comparator/WHTC588Q.json",
+        "positive_nanoda": "comparator/WHTC588Q-nanoda.json",
+        "negative": "comparator/WHTC588QNeg.json"
+      },
+      "checks": [
+        {
+          "id": "build",
+          "status": "pass",
+          "what": "pass",
+          "log": "logs/colab/packed/build.log"
+        },
+        {
+          "id": "axioms",
+          "status": "pass",
+          "what": "pass",
+          "log": "logs/colab/packed/checks.log"
+        },
+        {
+          "id": "compare",
+          "status": "pass",
+          "what": "pass",
+          "log": "logs/colab/packed/checks.log"
+        },
+        {
+          "id": "compare-negative",
+          "status": "pass",
+          "what": "pass (FAIL as it must)",
+          "log": "logs/colab/packed/checks.log"
+        },
+        {
+          "id": "comparator",
+          "status": "pass",
+          "what": "pass (Lean kernel; nanoda configuration also accepted)",
+          "log": "logs/colab/cmp/cwhtQ-WHTC588Q.log"
+        },
+        {
+          "id": "comparator-negative",
+          "status": "pass",
+          "what": "pass (rejected)",
+          "log": "logs/colab/cmp/cwhtQ-WHTC588QNeg.log"
+        },
+        {
+          "id": "comparator-nanoda",
+          "status": "pass",
+          "what": "the nanoda configuration: nanoda and Lean kernels accept",
+          "log": "logs/colab/cmp/cwhtQ-WHTC588Q-nanoda.log"
+        },
+        {
+          "id": "skeptic",
+          "status": "not shown",
+          "log": "",
+          "what": "the independent agent confirmed only that the statement matches; its fresh compile was stopped at its time box (skeptic-v-c-wht/packed.log) and its quick Compare and axiom runs timed out (packed-quick.log), so no verdict of its own is shown for this theorem"
+        }
+      ],
+      "logs": [
+        "logs/colab/packed/build.log",
+        "logs/colab/packed/checks.log",
+        "logs/colab/packed/cmp.log",
+        "logs/colab/cmp/"
+      ]
+    },
+    {
+      "theorem": "OAI.PowerSaving.WHT.wht_main_block_C588Mx",
+      "numerator": 13552607,
+      "negative_numerator": 13552608,
+      "saving": "1.3552607e-3",
+      "kernel": "SeamC588M.engine_C588Mx of community/c588m (annealed variant; apply c588m first)",
+      "modules": [
+        "Work.WHTC588M.Challenge",
+        "Work.WHTC588MNeg.Challenge",
+        "Work.WHTC588M.Main",
+        "Work.WHTC588M.Solution",
+        "Work.WHTC588M.Axioms"
+      ],
+      "comparator": {
+        "positive": "comparator/WHTC588M.json",
+        "positive_nanoda": "comparator/WHTC588M-nanoda.json",
+        "negative": "comparator/WHTC588MNeg.json"
+      },
+      "checks": [
+        {
+          "id": "build",
+          "status": "pass",
+          "what": "pass (the C588M modules up to Work.FourierC588M.Seam, 55 of 70, then the WHT modules; lake build --no-build rc 0)",
+          "log": "logs/colab/c588m/run.out"
+        },
+        {
+          "id": "axioms",
+          "status": "pass",
+          "what": "pass",
+          "log": "logs/colab/c588m/axioms.log"
+        },
+        {
+          "id": "compare",
+          "status": "pass",
+          "what": "pass",
+          "log": "logs/colab/c588m/compare-pos.log"
+        },
+        {
+          "id": "compare-negative",
+          "status": "pass",
+          "what": "pass (FAIL as it must, at 13552608)",
+          "log": "logs/colab/c588m/compare-neg.log"
+        },
+        {
+          "id": "comparator",
+          "status": "pass",
+          "what": "pass (Lean kernel 288 s, 7.0 GB; nanoda configuration also accepted, 305 s)",
+          "log": "logs/colab/c588m/cmp/rwht-WHTC588M.log"
+        },
+        {
+          "id": "comparator-negative",
+          "status": "pass",
+          "what": "pass (rejected: statements do not match)",
+          "log": "logs/colab/c588m/cmp/rwht-WHTC588MNeg.log"
+        },
+        {
+          "id": "source-scan",
+          "status": "pass",
+          "what": "pass (the only code sorry is the statement proof of the two Challenge files)",
+          "log": "logs/colab/c588m/sorry-grep.txt"
+        },
+        {
+          "id": "comparator-nanoda",
+          "status": "pass",
+          "what": "the nanoda configuration: nanoda and Lean kernels accept",
+          "log": "logs/colab/c588m/cmp/rwht-WHTC588M-nanoda.log"
+        },
+        {
+          "id": "skeptic",
+          "status": "not run",
+          "log": "",
+          "what": "no independent agent re-checked this theorem"
+        }
+      ],
+      "machine_note": "built on the second Colab machine, in a private copy of Shea's tree at 5239484 with the c588m overlay applied",
+      "logs": [
+        "logs/colab/c588m/run.out",
+        "logs/colab/c588m/axioms.log",
+        "logs/colab/c588m/compare-pos.log",
+        "logs/colab/c588m/compare-neg.log",
+        "logs/colab/c588m/cmp.out",
+        "logs/colab/c588m/cmp/",
+        "logs/colab/c588m/README-r-wht.txt"
+      ],
+      "scripts": "scripts-as-run/c588m/ (gen_wht.py writes the eight files from the published ChallengeB2Ge8x.lean and SolutionB2Ge8x.lean; rwht-run.sh builds and checks)"
+    }
+  ],
+  "machine": "Google Colab VM: Linux x86-64, Intel Xeon 2.20 GHz, 8 logical processors, 51 GiB, kernel 6.6.122+ without Landlock, no systemd",
+  "credits": [
+    "the kernels: as in c588m and c588-repack",
+    "Jacob Sussman (this repository): BlockWHT.wht_main_of_engine (Work/Block/WHT.lean, published) and the one-line corollaries"
+  ]
+}

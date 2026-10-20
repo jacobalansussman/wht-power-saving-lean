@@ -1,0 +1,44 @@
+[timing lock] waiting for timing lock 06:21:50
+[timing lock] got lock 06:23:44; load: { 57.35 62.62 65.31 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## valid fp64 L=2049 n=2^20 same-array (OLS N=8192)  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  sme                                8.9960
+rep  0  sme_b8                             9.3525
+rep  0  ols_pffftd                         2.8854
+rep  0  vdsp_convD                        71.3448
+rep  1  sme_b8                             9.3356
+rep  1  ols_pffftd                         2.8978
+rep  1  vdsp_convD                        71.3291
+rep  1  sme                                8.9715
+rep  2  ols_pffftd                         2.9397
+rep  2  vdsp_convD                        72.2370
+rep  2  sme                                8.9509
+rep  2  sme_b8                             9.3304
+rep  3  vdsp_convD                        71.5111
+rep  3  sme                                8.9549
+rep  3  sme_b8                             9.3462
+rep  3  ols_pffftd                         2.8984
+rep  4  sme                                8.9682
+rep  4  sme_b8                             9.3250
+rep  4  ols_pffftd                         2.8809
+rep  4  vdsp_convD                        71.2870
+rep  5  sme_b8                             9.4012
+rep  5  ols_pffftd                         2.9265
+rep  5  vdsp_convD                        71.3671
+rep  5  sme                                8.9547
+rep  6  ols_pffftd                         2.9156
+rep  6  vdsp_convD                        71.4288
+rep  6  sme                                8.9566
+rep  6  sme_b8                             9.3175
+rep  7  vdsp_convD                        71.2523
+rep  7  sme                                8.9515
+rep  7  sme_b8                             9.3377
+rep  7  ols_pffftd                         2.9473
+rep  8  sme                                9.0540
+rep  8  sme_b8                             9.3283
+rep  8  ols_pffftd                         2.8978
+rep  8  vdsp_convD                        71.3777
+RESULT valid fp64 L=2049 n=2^20 same-array (OLS N=8192) sme                          best     8.9509  median     8.9566  ns/output  (calls/rep 24)
+RESULT valid fp64 L=2049 n=2^20 same-array (OLS N=8192) sme_b8                       best     9.3175  median     9.3356  ns/output  (calls/rep 23)
+RESULT valid fp64 L=2049 n=2^20 same-array (OLS N=8192) ols_pffftd                   best     2.8809  median     2.8984  ns/output  (calls/rep 73)
+RESULT valid fp64 L=2049 n=2^20 same-array (OLS N=8192) vdsp_convD                   best    71.2523  median    71.3671  ns/output  (calls/rep 3)

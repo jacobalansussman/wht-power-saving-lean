@@ -1,0 +1,3 @@
+rows by type: {'elemental': 368, 'dfz': 1, 'ing1': 1, 'ing': 1}  equality rows: 1
+all coefficients of  sum lam(-g) + sum mu eq - c  are >= 0: True 
+PROVED (given the validity of each row type): mean delta_3 <= 4925/1653 = 2.9794313369630974 * mean delta_1  (certificate claims 4925/1653)

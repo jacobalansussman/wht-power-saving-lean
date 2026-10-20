@@ -1,0 +1,5 @@
+try 1: PASSES deletion: S=[1, 2, 4, 6, 7, 8, 11, 13, 14, 16, 18, 19, 21, 22, 25, 26, 28, 31] -> clique test ('EXCLUDED', 16)
+try 2: PASSES deletion: S=[1, 2, 4, 5, 7, 8, 11, 13, 14, 16, 19, 21, 22, 25, 26, 27, 28, 31] -> clique test ('EXCLUDED', 16)
+try 4: PASSES deletion: S=[1, 2, 4, 7, 8, 11, 13, 14, 16, 19, 21, 22, 25, 26, 27, 28, 30, 31] -> clique test ('EXCLUDED', 16)
+try 5: PASSES deletion: S=[1, 2, 4, 5, 7, 8, 11, 13, 14, 16, 17, 19, 21, 22, 25, 26, 28, 31] -> clique test ('EXCLUDED', 16)
+try 9: PASSES deletion: S=[1, 2, 4, 7, 8, 11, 13, 14, 15, 16, 19, 21, 22, 25, 26, 27, 28, 31] -> clique test ('EXCLUDED', 16)

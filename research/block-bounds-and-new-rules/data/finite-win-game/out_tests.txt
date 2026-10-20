@@ -1,0 +1,76 @@
+== b=2 G=3 all 24 pi (expect 0 leaves, even without the cancellation flag)
+pi 3 2 0 1 : nodes 1 leaves 0 complete 0.0s
+pi 3 2 1 0 : nodes 1 leaves 0 complete 0.0s
+TOTAL pis 24 leaves 0
+== b=2 G=4 all pi, no cancel flag (expect Yates-type leaves for pi=id only)
+pi 0 1 2 3 : nodes 300 leaves 10 complete 0.0s
+pi 0 1 2 3 | seq 0<1 1<3 2<3 0<2
+pi 0 1 2 3 | seq 0<1 2<3 0<2 1<3
+pi 0 1 2 3 | seq 0<2 1<3 0<1 2<3
+pi 0 1 2 3 | seq 1<2 2<3 1<2 0<1
+pi 0 1 2 3 | seq 1<3 0<1 0<2 2<3
+pi 0 1 2 3 | seq 1<3 0<1 2<3 0<2
+pi 0 1 2 3 | seq 1<3 2<1 0<2 2<1
+pi 0 1 2 3 | seq 2<1 1<3 2<1 0<2
+pi 0 1 2 3 | seq 2<3 0<2 1<3 0<1
+pi 0 1 2 3 | seq 2<3 1<2 0<1 1<2
+pi 0 1 3 2 : nodes 48 leaves 1 complete 0.0s
+pi 0 1 3 2 | seq 3<2 2<3 1<2 0<1
+pi 0 3 2 1 : nodes 52 leaves 1 complete 0.0s
+pi 0 3 2 1 | seq 3<1 1<3 2<1 0<2
+pi 1 0 2 3 : nodes 158 leaves 1 complete 0.0s
+pi 1 0 2 3 | seq 2<3 0<2 1<0 0<1
+pi 2 1 0 3 : nodes 169 leaves 1 complete 0.0s
+pi 2 1 0 3 | seq 1<3 0<1 2<0 0<2
+TOTAL pis 24 leaves 14
+== walk: Yates words must pass every pruning test
+walk: word of 12 calls passes every pruning test (overlap=0)
+walk: word of 12 calls passes every pruning test (overlap=0)
+== b=3 G=12 pi=id, no cancel flag, node cap 2e7 (rate test)
+pi 0 1 2 3 4 5 6 7 : nodes 20000214 leaves 25484 ABORTED(node cap) 7.5s
+TOTAL pis 1 leaves 25484
+== b=3 G=11 pi=id
+pi 0 1 2 3 4 5 6 7 : nodes 801585796 leaves 152434 complete 307.0s
+TOTAL pis 1 leaves 152434
+TESTS_DONE
+== pi list
+6828 classes; 1300 with LP <= 11 written to pis_b3_lp11.txt
+== cancellation-free BFS
+b=2: minimum cancellation-free in-place calls = 4  (standard b*2^(b-1) = 4; states explored 32)
+b=3: minimum cancellation-free in-place calls = 12  (standard b*2^(b-1) = 12; states explored 524287)
+== algebra sanity
+Yates calls 12 equations 19
+ p 31 solutions 1 e.g. [(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)]
+ p 37 solutions 1 e.g. [(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)]
+ exact rational check with c=1: True
+Yates minus last call: equations None (None = structurally impossible)
+G=12 pi=id leaves checked 3000 solvable mod 31: 0
+binomial test on Yates (must be None = consistent): None
+binomial test on toy inconsistent system (must give a relation): [(0, -1), (1, 1)]
+ALL_TESTS_DONE
+== main: algebra on the 152k pi=id leaves (binomial-lattice test exact, then F_101) Tue Oct 13 20:18:01 EDT 2026
+== main pass 1: DFS G=11 over the LP<=11 pi classes, cap 5e6 nodes per pi  Tue Oct 13 20:18:01 EDT 2026
+./run_main.sh: line 8: 62145 Terminated: 15          ./tdfs 3 11 1 3000000 5000000 < pis_b3_lp11.txt > leaves_b3_g11.txt 2> log_b3_g11.txt
+complete: 0  aborted: 39
+pi 0 2 1 3 5 4 6 7 : nodes 5000205 leaves 0 ABORTED(node cap) 2.2s
+./run_main.sh: line 11: 62143 Terminated: 15          $V -I algebra.py 8 leaves_b3_g11_id.txt 101 > out_algebra_g11_id.txt 2>&1
+MAIN_DONE Tue Oct 13 20:19:35 EDT 2026
+[queue] start 01_lgv.sh Tue Oct 13 20:19:35 EDT 2026
+[queue] end 01_lgv.sh Tue Oct 13 20:19:46 EDT 2026 exit 0
+[queue] start 02_dual_id.sh Tue Oct 13 20:19:46 EDT 2026
+[queue] end 02_dual_id.sh Tue Oct 13 20:23:31 EDT 2026 exit 0
+[queue] start 02_dual_id.sh Tue Oct 13 20:23:31 EDT 2026
+[queue] end 02_dual_id.sh Tue Oct 13 20:27:24 EDT 2026 exit 0
+[queue] start 03_all.sh Tue Oct 13 20:28:19 EDT 2026
+[queue] end 03_all.sh Tue Oct 13 20:30:23 EDT 2026 exit 0
+[queue] start 04_dual.sh Tue Oct 13 20:30:25 EDT 2026
+[queue] end 04_dual.sh Tue Oct 13 20:44:39 EDT 2026 exit 0
+[queue] start 05_cert.sh Tue Oct 13 20:44:39 EDT 2026
+[queue] end 05_cert.sh Tue Oct 13 20:45:53 EDT 2026 exit 0
+[queue] start 06_g10.sh Tue Oct 13 20:45:54 EDT 2026
+[queue] end 06_g10.sh Tue Oct 13 20:45:57 EDT 2026 exit 0
+[queue] start 07_sanity_dual.sh Tue Oct 13 20:45:57 EDT 2026
+[queue] end 07_sanity_dual.sh Tue Oct 13 21:00:58 EDT 2026 exit 0
+[queue] start 07_short.sh Tue Oct 13 21:00:58 EDT 2026
+[queue] end 07_short.sh Tue Oct 13 21:01:00 EDT 2026 exit 0
+[queue] exit Tue Oct 13 21:01:09 EDT 2026

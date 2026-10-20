@@ -1,0 +1,9 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 11:12:52
+[heavy.sh] got slot heavy-3 11:17:09
+=== match s2 6x8,7x2 11:17:10
+unit s2 v 111 cliques 4373 classes [7, 7, 6, 6, 6, 6, 6, 6, 6, 6] (cost <= 62) vars 355252 clauses 1732999 built 2.3 s
+./batch_match.sh: line 5: 55743 Alarm clock: 14         perl -e 'alarm 1200; exec @ARGV' $V -I match_sat.py s2 $prof 2>&1
+exit 142
+=== match s2 6x9,8x1 11:37:10
+unit s2 v 111 cliques 4373 classes [8, 6, 6, 6, 6, 6, 6, 6, 6, 6] (cost <= 62) vars 355252 clauses 1740259 built 4.8 s
+killed by agent at 11:37:45 to free the heavy slot (6x9,8x1 unresolved after ~1 min; 7x8 not started)

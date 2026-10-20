@@ -1,0 +1,5 @@
+cliques [[57, 17, 87, 56, 84, 21, 14, 10], [43, 27, 9, 72, 4, 42, 28, 70], [44, 94, 51, 11, 37, 16, 58, 93]]
+P111 r=9 k=2 mode=rows clique#0: SAT  0.3s rows freed [74, 108] cols freed []
+P111 r=9 k=2 mode=rows clique#1: SAT  0.3s rows freed [0, 7] cols freed []
+P111 r=9 k=2 mode=rows clique#2: SAT  0.2s rows freed [6, 46] cols freed []
+OVERALL SAT somewhere

@@ -1,0 +1,36 @@
+== fake_h_2_2_4
+m=2: image of dir e1 == transvection T_(e1,0): True ; image of K == (x,b)->(x+b,b): True
+|P| as frame permutations: 48
+(a) saved free elements: 13, all in P: True
+   coefficient sizes: max|tau| 1.00e+00 max|b| 1.25e+00 max|a| 9.35e-01 max|gam| 1.15e+00
+(b) two-sided: max |E M(Z) E - E M(K) E (x) I| over the whole frame module = 1.46e-15; on 5 fresh random complex vectors 8.12e-15; largest single term 1.62e+01  -> HOLDS
+    control: distance to the wrong target E M(t) E = 1.67e-01 (must be large)
+(c) one-sided: spanning set 194 vectors in dim 30; singular values (largest 3, around the gap, smallest 3):
+    top [236.014 189.023 189.023]  ... ['1.05e+00', '5.10e-01', '5.07e-01', '5.07e-01', '5.07e-01', '3.90e-01', '2.56e-01', '2.01e-01']
+    rel tol 1e-06: rank 30 of 30; distance of the targets delta_{K L0} (x) e_l to V_M = 1.49e-15
+    rel tol 1e-08: rank 30 of 30; distance of the targets delta_{K L0} (x) e_l to V_M = 1.49e-15
+    rel tol 1e-10: rank 30 of 30; distance of the targets delta_{K L0} (x) e_l to V_M = 1.49e-15
+== fake_h_3_2_4
+m=3: image of dir e1 == transvection T_(e1,0): True ; image of K == (x,b)->(x+b,b): True
+|P| as frame permutations: 10752
+(a) saved free elements: 17, all in P: True
+   coefficient sizes: max|tau| 1.00e+00 max|b| 7.54e-01 max|a| 1.16e+00 max|gam| 2.32e+00
+(b) two-sided: max |E M(Z) E - E M(K) E (x) I| over the whole frame module = 7.76e-16; on 5 fresh random complex vectors 7.64e-15; largest single term 9.82e+00  -> HOLDS
+    control: distance to the wrong target E M(t) E = 7.14e-02 (must be large)
+(c) one-sided: spanning set 43010 vectors in dim 270; singular values (largest 3, around the gap, smallest 3):
+    top [886.805 886.805 886.805]  ... ['9.34e+00', '9.34e+00', '9.34e+00', '9.34e+00', '1.24e-01', '8.70e-02', '1.62e-12', '9.87e-13']
+    rel tol 1e-06: rank 268 of 270; distance of the targets delta_{K L0} (x) e_l to V_M = 6.42e-13
+    rel tol 1e-08: rank 268 of 270; distance of the targets delta_{K L0} (x) e_l to V_M = 6.42e-13
+    rel tol 1e-10: rank 268 of 270; distance of the targets delta_{K L0} (x) e_l to V_M = 6.42e-13
+== fake_h_3_3_6
+m=3: image of dir e1 == transvection T_(e1,0): True ; image of K == (x,b)->(x+b,b): True
+|P| as frame permutations: 10752
+(a) saved free elements: 17, all in P: True
+   coefficient sizes: max|tau| 1.00e+00 max|b| 9.53e-01 max|a| 1.39e+00 max|gam| 1.54e+00
+(b) two-sided: max |E M(Z) E - E M(K) E (x) I| over the whole frame module = 2.22e-15; on 5 fresh random complex vectors 2.29e-14; largest single term 5.67e+01  -> HOLDS
+    control: distance to the wrong target E M(t) E = 7.14e-02 (must be large)
+(c) one-sided: spanning set 64515 vectors in dim 405; singular values (largest 3, around the gap, smallest 3):
+    top [7075.081 7075.081 7075.081]  ... ['6.11e+00', '6.11e+00', '1.24e-01', '1.10e-01', '8.61e-02', '7.85e-12', '5.18e-12', '4.61e-12']
+    rel tol 1e-06: rank 402 of 405; distance of the targets delta_{K L0} (x) e_l to V_M = 6.87e-12
+    rel tol 1e-08: rank 402 of 405; distance of the targets delta_{K L0} (x) e_l to V_M = 6.87e-12
+    rel tol 1e-10: rank 402 of 405; distance of the targets delta_{K L0} (x) e_l to V_M = 6.87e-12

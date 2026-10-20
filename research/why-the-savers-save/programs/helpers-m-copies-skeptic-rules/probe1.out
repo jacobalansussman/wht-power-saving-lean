@@ -1,0 +1,26 @@
+precondition gates 168 cleanup 6276 early 171
+precondition regs classes Counter({'y': 280})
+target 169 own source 57 final row {169: '1', 57: '1'}
+    ('B', 'Mgrp') nnz 32 own 0
+    ('B', 'h') nnz 8 own 0
+    ('B', 'x') nnz 2 own 0
+    ('B', 'y') nnz 66 own 1/2
+    ('cut', 'x') nnz 76 own 1/2
+target 170 own source 58 final row {170: '1', 58: '1'}
+    ('B', 'Mgrp') nnz 32 own 0
+    ('B', 'h') nnz 10 own 0
+    ('B', 'y') nnz 33 own 0
+    ('cut', 'h') nnz 56 own -1/4
+    ('cut', 'x') nnz 56 own -1/4
+target 172 own source 60 final row {172: '1', 60: '1'}
+    ('B', 'Mgrp') nnz 32 own 0
+    ('B', 'h') nnz 10 own 0
+    ('B', 'y') nnz 66 own 1/2
+    ('cut', 'x') nnz 76 own 1/2
+target 175 own source 63 final row {175: '1', 63: '1'}
+    ('B', 'Mgrp') nnz 32 own 0
+    ('B', 'h') nnz 8 own 0
+    ('B', 'x') nnz 2 own 0
+    ('B', 'y') nnz 33 own 0
+    ('cut', 'h') nnz 56 own -1/4
+    ('cut', 'x') nnz 56 own -1/4

@@ -1,0 +1,16 @@
+core 0 [bare]: params 4, closures [(104, 16), (3, 1)], sing_sig2/sig2_901_0_bare.sing
+core 1 [bare]: params 4, closures [(176, 16), (3, 1)], sing_sig2/sig2_901_1_bare.sing
+core 1 [x0u_out1_v1]: params 5, closures [(240, 16), (7, 2)], sing_sig2/sig2_901_1_x0u_out1_v1.sing
+core 1 [cum1]: params 5, closures [(240, 16), (7, 2)], sing_sig2/sig2_901_1_cum1.sing
+core 1 [x0u_out1_v0]: params 5, closures [(240, 16), (11, 2)], sing_sig2/sig2_901_1_x0u_out1_v0.sing
+core 1 [cum2]: params 6, closures [(304, 16), (238, 42)], sing_sig2/sig2_901_1_cum2.sing
+core 2 [bare]: closure cap
+core 2 [x1u_out0_v0]: closure cap
+core 2 [cum1]: closure cap
+core 2 [x0u_out1_v1]: closure cap
+core 2 [cum2]: closure cap
+core 2 [x1u_out0_v1]: closure cap
+core 2 [cum3]: closure cap
+core 2 [x0u_out1_v0]: closure cap
+core 2 [cum4]: closure cap
+core 3 [bare]: params 4, closures [(132, 12), (3, 1)], sing_sig2/sig2_901_3_bare.sing

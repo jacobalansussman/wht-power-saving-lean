@@ -1,0 +1,111 @@
+U8X0HQ START Wed Oct 14 12:25:43 UTC 2026
+/content/work/fsp-build/in/stage-u8x0hq.tgz: OK
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+STAGE-OK (23 files; 23 in the tarball)
+   (slot: waited 0s)
+=== build START 12:26:13
+=== build END rc=0 wall=299s maxrss_kb=8887532 12:31:12
+Build completed successfully (9330 jobs).
+   101s Work.XHost.Data.HU8X0HQSched
+   9.6s Work.XHost.Data.RateU8X0HQx
+   9.3s Work.FourierU8X0HQ.Asymptotics
+   9.2s Work.FourierU8X0HQ.WorkingPreparation
+   8.8s Work.FourierU8X0HQ.WorkingCompiler
+   8.2s Work.FourierU8X0HQ.ArbitraryLength
+   8.1s Work.FourierU8X0HQNeg.UniformFourierChallenge
+   8.1s Work.FourierU8X0HQ.UniformFourierChallenge
+   8.0s Work.FourierU8X0HQ.SectorAlgorithm
+   7.7s Work.XHost.U8X0HQ
+   (slot: waited 0s)
+=== nobuild START 12:31:12
+=== nobuild END rc=0 wall=8s maxrss_kb=1003588 12:31:20
+All targets up-to-date (9419 jobs).
+   (slot: waited 0s)
+=== axioms START 12:31:20
+=== axioms END rc=0 wall=8s maxrss_kb=7039144 12:31:28
+'OAI.PowerSaving.transform_mainU8X0HQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainU8X0HQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8X0HQ_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+   (slot: waited 0s)
+=== axioms-glue START 12:31:28
+=== axioms-glue END rc=0 wall=8s maxrss_kb=7036584 12:31:36
+'OAI.PowerSaving.BlockAccounting.term_le4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0HQ.hs_ok' depends on axioms: [propext]
+'GXD.U8X0HQ.hfits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0HQ.hwidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0HQ.hprice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BridgeRate.U8X0HQ.unit_cost_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BlockAccounting.fold_U8X0HQx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.engine_of_ginv_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamU8X0HQ.engine_U8X0HQx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8X0HQ_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0.ginv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0.scalOKZX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0.exitRC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0.validX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.ginvXOfZS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.CSX.GLabXZS.inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+   (slot: waited 0s)
+=== hsneg START 12:31:36
+=== hsneg END rc=0 wall=53s maxrss_kb=8778212 12:32:29
+hostSchedK negative rc=0 (0 = the kernel proved '= false')
+files checked: 21
+sorry lines:
+Work/FourierU8X0HQ/UniformFourierChallenge.lean:327:  sorry
+Work/FourierU8X0HQ/UniformFourierChallenge.lean:331:  sorry
+Work/FourierU8X0HQNeg/UniformFourierChallenge.lean:327:  sorry
+Work/FourierU8X0HQNeg/UniformFourierChallenge.lean:331:  sorry
+admit lines: 0
+forbidden-construct lines: 1
+Work/FourierU8X0HQ/Seam.lean:40:No `sorry`, no `native_decide`.
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74  /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierU8X0HQ (1 - 16256629/10^10): byte-identical to my derivation
+challenge FourierU8X0HQNeg (1 - 16256630/10^10): byte-identical to my derivation
+Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  tools/Compare.lean (ours: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9)
+   (slot: waited 0s)
+=== compare-pos START 12:32:29
+=== compare-pos END rc=0 wall=112s maxrss_kb=15982404 12:34:21
+compare-pos rc=0
+RESULT: PASS
+   (slot: waited 0s)
+=== compare-neg START 12:34:21
+=== compare-neg END rc=1 wall=92s maxrss_kb=16105320 12:35:53
+compare-neg rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentU8X0HQ: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentU8X0HQ._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentU8X0HQ: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentU8X0HQ._proof_1: type differs
+RESULT: FAIL
+U8X0HQ-CHECKS-DONE
+U8X0HQ END Wed Oct 14 12:35:53 UTC 2026
+EXIT 0

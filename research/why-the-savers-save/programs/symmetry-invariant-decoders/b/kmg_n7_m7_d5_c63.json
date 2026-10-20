@@ -1,0 +1,29 @@
+{
+ "n": 7,
+ "m": 7,
+ "d": 5,
+ "SECOND": null,
+ "COST": 63,
+ "KMIN": 9,
+ "SMALLTYPES": "1x4,1x7,1x8,7x1",
+ "MAXPIECES": 4,
+ "reps": {
+  "(7, 1)": 16,
+  "(1, 4)": 1,
+  "(7, 4)": 222527,
+  "(7, 5)": 397700,
+  "(1, 7)": 4,
+  "(7, 7)": 6167,
+  "(1, 8)": 6,
+  "(7, 8)": 72
+ },
+ "small": 27,
+ "combos": 16557,
+ "stats": {
+  "pair prefilter pass": 30,
+  "families": 6584718900,
+  "stage0 pass": 0
+ },
+ "survivors": [],
+ "n_survivors": 0
+}

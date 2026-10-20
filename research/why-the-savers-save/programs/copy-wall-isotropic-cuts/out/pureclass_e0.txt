@@ -1,0 +1,9 @@
+covering triple (5, 9, 12) [60, 60, 60]
+class h 5: |T_h| 60 omega 8 totals 8 (full-span cost 56)
+class h 9: |T_h| 26 omega 4 totals 4 (full-span cost 28)
+class h 12: |T_h| 26 omega 4 totals 4 (full-span cost 28)
+K 16 restart 0 iters 500 residual 3.722e+00
+K 16 restart 1 iters 500 residual 3.781e+00
+K 16 restart 2 iters 500 residual 3.794e+00
+BEST K 16 residual 3.722e+00
+$VENV -I -W ignore s2_pureclass.py 0 3 500  7.20s user 0.06s system 99% cpu 7.323 total

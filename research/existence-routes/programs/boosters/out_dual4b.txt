@@ -1,0 +1,8 @@
+m=3: 2 generator sets of size 3 contain the whole curve phi_theta, theta in [0,1] (grid of 401):
+    (('frame', 1), ('plain', 1), ('A3', 1))
+    (('frame', 1), ('plain', 1), ('B3', 1))
+   exact: lambda_j(theta) = sum_d c_jd d^theta for the set (('frame', 1), ('plain', 1), ('A3', 1)):
+     framex1: coefficients on d^theta, d = 1..3: ['4', '-5', '2']; sign changes 2
+     plainx1: coefficients on d^theta, d = 1..3: ['1', '-3', '2']; sign changes 2
+     A3x1: coefficients on d^theta, d = 1..3: ['-1', '2', '-1']; sign changes 2
+m=4: 0 generator sets of size 4 contain the whole curve phi_theta, theta in [0,1] (grid of 401):

@@ -1,0 +1,45 @@
+Re-run for this revision, 19 October 2026, on an Apple M4 Mac mini (Python 3.9 with numpy 2.0.2 and scipy 1.13.1), from the published files
+
+$ python3 -I verify_hook.py 3 5
+exit 0, 5 s
+m=3 f=5: dim W = 560, dim N = 280; pair vectors u: 200, with R u outside N: 0  (0.1s)
+independent pair vectors (exact mod-p rank, a lower bound) = 200  ->  cap <= 80   (formula 80)
+cap mod p (lower bound) = 80  (0.2s)
+dem mod p (lower bound) = 224  (4.5s)
+RESULT m=3 f=5: cap = 80 (upper bound proved, lower bound 80), dem >= 224: every unit needs >= 14/5 W = 2.8000 W moves; plain 3 W
+
+$ python3 -I verify_hook.py 2 3
+exit 0, 1 s
+m=2 f=3: dim W = 24, dim N = 12; pair vectors u: 8, with R u outside N: 0  (0.0s)
+independent pair vectors (exact mod-p rank, a lower bound) = 8  ->  cap <= 4   (formula 4)
+cap mod p (lower bound) = 4  (0.0s)
+dem mod p (lower bound) = 8  (0.0s)
+RESULT m=2 f=3: cap = 4 (upper bound proved, lower bound 4), dem >= 8: every unit needs >= 2 W = 2.0000 W moves; plain 2 W
+
+$ python3 -I hookcheck.py 3 5 0
+exit 0, 4 s
+m=3 f=5: dim W = 560, dim N = 280, dim notN = 280
+f(dir e1): rank mod p 2147483629 = 80, mod 2147483549 = 80   (0.2s)
+f(dir e1 dir e2): rank mod p 2147483629 = 144, mod 2147483549 = 144   (0.7s)
+f(kernel): rank mod p 2147483629 = 224, mod 2147483549 = 224   (4.1s)
+dim H - dim N = 224  (upper bound for every f)
+SUMMARY m=3 f=5: cap=None, f(B2)=None, dem=224
+
+$ python3 -I kept_check.py
+exit 0, 464 s
+A. 8*kernel (littleC^(x)3, Lean) == (2dir e1)(2dir e2)(2dir e3): True [0.0s]
+A. dir(e1)^2 == shift e1: True [0.0s]
+dim W = 560, dim N = 280, dim W/N = 280 [0.0s]
+B. letters tested: 199; image of N not inside N for: none [268.2s]
+B. every N basis vector supported on one multiset of addresses (=> eigenvector of EVERY diagonal^(x)5): True [268.3s]
+C. explicit vectors u: 200; all u in N: True; (2dir e1)^(x)5 u in N for all (exact Z[i]): True [269.6s]
+C. p=134217689: rank of the u's = 200  -> cap(dir e1) <= 80 (exact, over Q(i)) [269.8s]
+C. p=134217649: rank of the u's = 200  -> cap(dir e1) <= 80 (exact, over Q(i)) [270.0s]
+C. p=134217617: rank of the u's = 200  -> cap(dir e1) <= 80 (exact, over Q(i)) [270.1s]
+D. p=134217689: f(dir z), z=1..7 (mod-p lower bounds): [80, 80, 80, 80, 80, 80, 80] [282.3s]
+D. p=134217689: f(K) (mod-p lower bound) = 224 [287.2s]
+D. p=134217649: f(dir z), z=1..7 (mod-p lower bounds): [80, 80, 80, 80, 80, 80, 80] [296.8s]
+D. p=134217649: f(K) (mod-p lower bound) = 224 [301.8s]
+D. p=134217689: f(dir z1 dir z2) over 42 ordered independent pairs: values [144] [460.2s]
+D. p=134217689: f(dir e1 dir e1) = f(shift) = 0 [463.1s]
+

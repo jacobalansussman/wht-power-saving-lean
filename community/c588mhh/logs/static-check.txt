@@ -1,0 +1,11 @@
+PASS 1. SHA256SUMS (0 files differ)
+PASS 2. challenge = OpenAI's statement with only the exponent and seven names changed
+PASS 2b. both statement files carry the modification notice
+PASS 3. negative challenge = challenge with numerator 15699305 -> 15699306 only
+PASS 4. Goal.lean states the same exponent
+PASS 5. comparator configurations name the challenge, solution and theorems
+PASS 6. MODULES.txt lists the 49 overlay modules once each
+PASS 7. no forbidden word in Lean code (0 hits)
+PASS 8. figures agree with the numerators
+PASS 9. every check is pass with a log in the package, or not shown / not run (0 not)
+STATIC CHECKS PASSED

@@ -1,0 +1,4 @@
+[PASS] m=2 k=2 dir 1: nonzero u 8, u outside N 0, image coordinates outside N 0, support overlaps 0 -> f(dir 1) <= dim N - 8 = 12 - 8 = 4
+[PASS] m=2 k=2 dir 2: nonzero u 8, u outside N 0, image coordinates outside N 0, support overlaps 0 -> f(dir 2) <= dim N - 8 = 12 - 8 = 4
+[PASS] m=2 k=2 dir 3: nonzero u 8, u outside N 0, image coordinates outside N 0, support overlaps 0 -> f(dir 3) <= dim N - 8 = 12 - 8 = 4
+SUMMARY m=2 k=2: dim N = 12; all directions PASS

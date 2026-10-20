@@ -1,0 +1,4 @@
+m=3: min-weight flats 21 (odd 12); uncovered pairs (incl. a=b) 9 e.g. [(1, 2), (1, 4), (2, 4), (3, 5), (3, 6)]; => U_m^(r) not decided by this test (clique ? > W = r*2 per copy)
+m=4: min-weight flats 105 (odd 56); uncovered pairs (incl. a=b) 0; => U_m^(r) EXCLUDED for every r (clique 15 > W = r*4 per copy)
+m=5: min-weight flats 465 (odd 240); uncovered pairs (incl. a=b) 0; => U_m^(r) EXCLUDED for every r (clique 31 > W = r*8 per copy)
+m=6: min-weight flats 1953 (odd 992); uncovered pairs (incl. a=b) 0; => U_m^(r) EXCLUDED for every r (clique 63 > W = r*16 per copy)

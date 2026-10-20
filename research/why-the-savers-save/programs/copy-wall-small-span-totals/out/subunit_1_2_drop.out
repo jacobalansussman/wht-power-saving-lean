@@ -1,0 +1,15 @@
+sub-unit: duals (1,2), 35 ports, root rank 7, octads inside 30, orth degree [(np.int64(18), 35)]
+subspaces of V by dim: {1: 127, 2: 2667, 3: 11811, 4: 11811, 5: 2667, 6: 127, 7: 1} 0s
+natural floor of U: 42  (totals per frame dim: [(1, 0), (2, 0), (3, 0), (4, 0), (5, 0), (6, 7)])
+shapes tried (cost in [floor-6, floor-1], K = 8..11, dims 3..7): 1092
+  shape (4, 4, 5, 7, 7, 7, 7) cost 41: Hall OK; masked ALS best residual 1.839e+00
+  shape (4, 5, 5, 6, 7, 7, 7) cost 41: Hall OK; masked ALS best residual 1.298e+00
+  shape (1, 4, 6, 6, 6, 6, 6, 6) cost 41: Hall OK; masked ALS best residual 1.728e+00
+  shape (1, 5, 5, 5, 5, 6, 7, 7) cost 41: Hall OK; masked ALS best residual 1.276e+00
+  shape (2, 3, 5, 5, 5, 7, 7, 7) cost 41: Hall OK; masked ALS best residual 1.816e+00
+  shape (2, 4, 4, 4, 6, 7, 7, 7) cost 41: Hall OK; masked ALS best residual 1.890e+00
+  shape (4, 4, 4, 4, 4, 7, 7, 7) cost 41: Hall OK; masked ALS best residual 1.824e+00
+  shape (4, 4, 4, 5, 5, 6, 6, 7) cost 41: Hall OK; masked ALS best residual 1.779e+00
+  shape (4, 5, 5, 5, 5, 5, 6, 6) cost 41: Hall OK; masked ALS best residual 1.935e+00
+time box reached
+best below the natural floor: (0.7120922533423255, (2, 5, 5, 5, 6, 6, 6, 6)) 106s

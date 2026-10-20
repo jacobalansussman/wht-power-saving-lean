@@ -1,0 +1,42 @@
+{
+ "first_A_gate": [
+  "out",
+  2,
+  573,
+  [
+   [
+    558,
+    -1,
+    1
+   ]
+  ],
+  []
+ ],
+ "first_scatter_entry": [
+  0,
+  -1,
+  4
+ ],
+ "shea_style_first_A_gate_doubled_NOT_rejected": {
+  "value": true,
+  "adds": 4243,
+  "seconds": 0.02
+ },
+ "bad_scalar_rejected": {
+  "value": false,
+  "why": "gFin: register 112 (class base 112) does not hold exactly its source",
+  "seconds": 0.02
+ },
+ "classic_rejected": {
+  "value": false,
+  "why": "kind test fails: 0 += 27",
+  "seconds": 0.0
+ },
+ "positive_scal0": {
+  "value": true,
+  "adds": 4243,
+  "seconds": 0.02
+ },
+ "duplicate_owner_rejected": false,
+ "positive_sched": true
+}

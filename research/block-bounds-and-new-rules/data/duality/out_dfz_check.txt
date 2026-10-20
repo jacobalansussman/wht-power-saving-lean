@@ -1,0 +1,3 @@
+GF(2) Fano arrangement (DFZ Thm 8.7): RHS-LHS = -1 (must be < 0)
+same vectors over GF(3): RHS-LHS = 2 (must be >= 0)
+random arrangements over GF(3), GF(5), GF(7), GF(1000003): 13500 trials, min RHS-LHS = 0 (no violation)

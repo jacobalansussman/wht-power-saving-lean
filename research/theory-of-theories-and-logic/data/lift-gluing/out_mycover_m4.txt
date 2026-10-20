@@ -1,0 +1,5 @@
+m=4: 67 subspaces, 240 edges, 120 rows (K4=0)
+LP: 17.142857142857178
+scipy/HiGHS: 0 Optimization terminated successfully. (HiGHS Status 7: Optimal) incumbent 18.000000000000053 dual bound 18.000000000000053 time 6 s
+incumbent verified feasible, sum 18
+ortools not available: No module named 'ortools'

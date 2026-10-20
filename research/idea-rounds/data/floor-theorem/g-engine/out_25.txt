@@ -1,0 +1,7 @@
+PART 2  the potential lemma on random words of the widened class (steps 2-4 of the proof)
+  m=1, 3 arrays (2 live): 6000 letters, potential rose at 876 (largest rise 1), letters breaking the lemma: 0
+  m=2, 3 arrays (2 live): 960 letters, potential rose at 176 (largest rise 4), letters breaking the lemma: 0
+  CONTROL m=1: dir(e1) planted as a free letter: letters breaking the lemma: 119 (must be > 0)
+  CONTROL m=2: dir(e1) planted as a free letter: letters breaking the lemma: 27 (must be > 0)
+PART 5  T1 against the published block lists (arithmetic only; W and m from the Lean data files)
+  B2Gp193 (m=110, W=14692): blocks 361405 = 24.599 per live array; sum of weights 264781.0 against needed 14692.0: holds, ratio 18.02; total rank 1613040 against 2W(1-2^-m) = 29384

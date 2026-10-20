@@ -1,0 +1,37 @@
+m=3 M=5: 28 targets congruent to I; 64 forms
+  |GL(3,2)| = 168
+  11 classes of 5-multisets of directions (0.0 s)
+  surviving classes (span + deletion): 0
+  survivors with independent distinct directions: 0 (the lemma says 0 when M < 2m)
+  done in 0.0 s
+m=3 M=6: 28 targets congruent to I; 64 forms
+  |GL(3,2)| = 168
+  19 classes of 6-multisets of directions (0.0 s)
+  surviving classes (span + deletion): 6
+    dirs (1, 1, 2, 2, 4, 4) (orbit 28): 1 unordered target pairs pass; distinct dirs independent: True; example pair (16, 16) (equal targets)
+    dirs (1, 1, 2, 2, 4, 5) (orbit 84): 1 unordered target pairs pass; distinct dirs independent: True; example pair (16, 18)
+    dirs (1, 1, 2, 2, 4, 7) (orbit 42): 1 unordered target pairs pass; distinct dirs independent: True; example pair (16, 23)
+    dirs (1, 1, 2, 3, 4, 5) (orbit 21): 2 unordered target pairs pass; distinct dirs independent: True; example pair (16, 19)
+    dirs (1, 1, 2, 3, 4, 6) (orbit 84): 2 unordered target pairs pass; distinct dirs independent: True; example pair (16, 21)
+    dirs (1, 2, 3, 4, 5, 6) (orbit 7): 6 unordered target pairs pass; distinct dirs independent: True; example pair (1, 21)
+  survivors with independent distinct directions: 6 (the lemma says 0 when M < 2m)
+  done in 0.0 s
+m=3 M=7: 28 targets congruent to I; 64 forms
+  |GL(3,2)| = 168
+  29 classes of 7-multisets of directions (0.0 s)
+  surviving classes (span + deletion): 13
+    dirs (1, 1, 1, 2, 2, 4, 4) (orbit 84): 1 unordered target pairs pass; distinct dirs independent: True; example pair (16, 16) (equal targets)
+    dirs (1, 1, 1, 2, 2, 4, 5) (orbit 84): 1 unordered target pairs pass; distinct dirs independent: True; example pair (16, 18)
+    dirs (1, 1, 1, 2, 2, 4, 6) (orbit 84): 1 unordered target pairs pass; distinct dirs independent: True; example pair (16, 20)
+    dirs (1, 1, 1, 2, 2, 4, 7) (orbit 84): 1 unordered target pairs pass; distinct dirs independent: True; example pair (16, 23)
+    dirs (1, 1, 1, 2, 3, 4, 5) (orbit 21): 2 unordered target pairs pass; distinct dirs independent: True; example pair (16, 19)
+    dirs (1, 1, 1, 2, 3, 4, 6) (orbit 84): 2 unordered target pairs pass; distinct dirs independent: True; example pair (16, 21)
+    dirs (1, 1, 2, 2, 3, 4, 4) (orbit 84): 4 unordered target pairs pass; distinct dirs independent: True; example pair (12, 16)
+    dirs (1, 1, 2, 2, 3, 4, 5) (orbit 84): 7 unordered target pairs pass; distinct dirs independent: True; example pair (12, 18)
+    dirs (1, 1, 2, 2, 3, 4, 7) (orbit 42): 7 unordered target pairs pass; distinct dirs independent: True; example pair (12, 23)
+    dirs (1, 1, 2, 2, 4, 4, 7) (orbit 28): 4 unordered target pairs pass; distinct dirs independent: True; example pair (7, 16)
+    dirs (1, 1, 2, 2, 4, 5, 6) (orbit 84): 9 unordered target pairs pass; distinct dirs independent: True; example pair (0, 20)
+    dirs (1, 1, 2, 3, 4, 5, 6) (orbit 42): 22 unordered target pairs pass; distinct dirs independent: True; example pair (0, 21)
+    dirs (1, 2, 3, 4, 5, 6, 7) (orbit 1): 406 unordered target pairs pass; distinct dirs independent: False; example pair (0, 0) (equal targets)
+  survivors with independent distinct directions: 12 (the lemma says 0 when M < 2m)
+  done in 0.1 s

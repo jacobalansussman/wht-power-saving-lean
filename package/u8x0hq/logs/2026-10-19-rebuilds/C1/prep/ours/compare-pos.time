@@ -1,0 +1,23 @@
+	Command being timed: "lake env lean --run tools/Compare.lean Work.FourierU8X0HQ.UniformFourierChallenge Work.FourierU8X0HQ.Main OAI.PowerSaving.transform_mainU8X0HQ OAI.PowerSaving.convolution_mainU8X0HQ"
+	User time (seconds): 64.95
+	System time (seconds): 26.25
+	Percent of CPU this job got: 75%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:00.17
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 15959972
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 405
+	Minor (reclaiming a frame) page faults: 2419198
+	Voluntary context switches: 34398
+	Involuntary context switches: 1038
+	Swaps: 0
+	File system inputs: 1899496
+	File system outputs: 56
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

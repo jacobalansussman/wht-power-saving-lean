@@ -1,0 +1,35 @@
+m=5 n=32 float64
+  a=1 done (0.0s)
+  a=2 done (0.0s)
+  a=3 done (0.0s)
+  a=4 done (0.0s)
+  a=5 done (0.0s)
+  a=6 done (0.0s)
+  a=7 done (0.0s)
+  a=8 done (0.0s)
+  a=9 done (0.0s)
+  a=10 done (0.1s)
+  a=11 done (0.1s)
+  a=12 done (0.1s)
+  a=13 done (0.1s)
+  a=14 done (0.2s)
+  a=15 done (0.2s)
+  a=16 done (0.3s)
+mu_1 = (n-2)/(2(n-1)) = 0.483871;  spectral ceiling 2/(1-mu_1) = 4(n-1)/n = 3.875000;  hook ceiling 4(n-1)/(n+2) = 3.647059
+max over (a,b) of the chain's second eigenvalue: 0.483870968  (<= mu_1: True)
+top (a,b) by refined ceiling = min(sum_j min(dimY_j, dimS_j-dimY_j), m cap)/cap   [screen = min(dimN,codimN,m cap)/cap]
+  L^1 (x) L^15: refined 3.6471  screen 3.6471  J=(0,) dimN 9617286240.0 cap 2326762800.0 refined-dem-bound 8485840800.0  lambda2 0.483871
+  L^1 (x) L^16: refined 3.6471  screen 3.8750  J=(0,) dimN 9617286240.0 cap 2481880320.0 refined-dem-bound 9051563520.0  lambda2 0.483871
+  L^1 (x) L^14: refined 3.4444  screen 3.4444  J=(0,) dimN 8485840800.0 cap 1916157600.0 refined-dem-bound 6600098400.0  lambda2 0.483871
+  L^1 (x) L^17: refined 3.4444  screen 3.6471  J=(0,) dimN 8485840800.0 cap 2326762800.0 refined-dem-bound 8014405200.0  lambda2 0.483871
+  L^4 (x) L^27: refined 3.4381  screen 3.4431  J=(0, 1, 2, 3) dimN 3707332160.0 cap 1026436320.0 refined-dem-bound 3528970560.0  lambda2 0.483871
+  L^2 (x) L^23: refined 3.3779  screen 3.5534  J=(0, 1) dimN 6815858400.0 cap 1918144800.0 refined-dem-bound 6479272800.0  lambda2 0.483871
+  L^2 (x) L^22: refined 3.3607  screen 3.3607  J=(0, 1) dimN 17095743600.0 cap 4434229800.0 refined-dem-bound 14902327440.0  lambda2 0.483871
+  L^2 (x) L^9: refined 3.2960  screen 3.5534  J=(0,) dimN 7096346400.0 cap 1918144800.0 refined-dem-bound 6322199520.0  lambda2 0.483871
+  L^2 (x) L^8: refined 3.2871  screen 3.2871  J=(0,) dimN 2903050800.0 cap 703965600.0 refined-dem-bound 2314026000.0  lambda2 0.483871
+  L^3 (x) L^25: refined 3.2814  screen 3.2814  J=(0, 1, 2) dimN 8953176960.0 cap 2359229600.0 refined-dem-bound 7741468800.0  lambda2 0.483871
+  L^1 (x) L^13: refined 3.2632  screen 3.2632  J=(0,) dimN 6600098400.0 cap 1383891600.0 refined-dem-bound 4515856800.0  lambda2 0.483871
+  L^1 (x) L^18: refined 3.2632  screen 3.4444  J=(0,) dimN 6600098400.0 cap 1916157600.0 refined-dem-bound 6252724800.0  lambda2 0.483871
+best with a >= 2 (not a hook): L^4 (x) L^27: refined 3.4381  screen 3.4431  J=(0, 1, 2, 3)
+largest screen with a >= 2: L^2 (x) L^23: screen 3.5534
+done 0.3s

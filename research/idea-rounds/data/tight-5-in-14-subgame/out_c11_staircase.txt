@@ -1,0 +1,73 @@
+c11_staircase.py:16: RuntimeWarning: divide by zero encountered in matmul
+  assert np.allclose(P @ P, P, atol=1e-10)
+c11_staircase.py:16: RuntimeWarning: overflow encountered in matmul
+  assert np.allclose(P @ P, P, atol=1e-10)
+c11_staircase.py:16: RuntimeWarning: invalid value encountered in matmul
+  assert np.allclose(P @ P, P, atol=1e-10)
+c11_staircase.py:38: RuntimeWarning: divide by zero encountered in matmul
+  Tb = Tco @ T7
+c11_staircase.py:38: RuntimeWarning: overflow encountered in matmul
+  Tb = Tco @ T7
+c11_staircase.py:38: RuntimeWarning: invalid value encountered in matmul
+  Tb = Tco @ T7
+c11_staircase.py:30: RuntimeWarning: divide by zero encountered in matmul
+  p7 = p7 + N7 @ rng.standard_normal((7, 7)); p21 = p21 + N21 @ rng.standard_normal((21, 21))
+c11_staircase.py:30: RuntimeWarning: overflow encountered in matmul
+  p7 = p7 + N7 @ rng.standard_normal((7, 7)); p21 = p21 + N21 @ rng.standard_normal((21, 21))
+c11_staircase.py:30: RuntimeWarning: invalid value encountered in matmul
+  p7 = p7 + N7 @ rng.standard_normal((7, 7)); p21 = p21 + N21 @ rng.standard_normal((21, 21))
+c11_staircase.py:49: RuntimeWarning: divide by zero encountered in matmul
+  return np.hstack([V @ Pl[l] for l in range(W)])
+c11_staircase.py:49: RuntimeWarning: overflow encountered in matmul
+  return np.hstack([V @ Pl[l] for l in range(W)])
+c11_staircase.py:49: RuntimeWarning: invalid value encountered in matmul
+  return np.hstack([V @ Pl[l] for l in range(W)])
+c11_staircase.py:57: RuntimeWarning: divide by zero encountered in matmul
+  X = Nul[:Arows.shape[0]].T @ Arows
+c11_staircase.py:57: RuntimeWarning: overflow encountered in matmul
+  X = Nul[:Arows.shape[0]].T @ Arows
+c11_staircase.py:57: RuntimeWarning: invalid value encountered in matmul
+  X = Nul[:Arows.shape[0]].T @ Arows
+c11_staircase.py:84: RuntimeWarning: divide by zero encountered in matmul
+  R7 = np.vstack([R7, VP7 @ Ymat]); R21 = np.vstack([R21, VP @ Ymat]); Fsum = Fall; Tprev = Tcur
+c11_staircase.py:84: RuntimeWarning: overflow encountered in matmul
+  R7 = np.vstack([R7, VP7 @ Ymat]); R21 = np.vstack([R21, VP @ Ymat]); Fsum = Fall; Tprev = Tcur
+c11_staircase.py:84: RuntimeWarning: invalid value encountered in matmul
+  R7 = np.vstack([R7, VP7 @ Ymat]); R21 = np.vstack([R21, VP @ Ymat]); Fsum = Fall; Tprev = Tcur
+c11_staircase.py:69: RuntimeWarning: divide by zero encountered in matmul
+  Q = Tcur - (Tcur @ np.linalg.pinv(Tprev)) @ Tprev       # remove Tprev components
+c11_staircase.py:69: RuntimeWarning: overflow encountered in matmul
+  Q = Tcur - (Tcur @ np.linalg.pinv(Tprev)) @ Tprev       # remove Tprev components
+c11_staircase.py:69: RuntimeWarning: invalid value encountered in matmul
+  Q = Tcur - (Tcur @ np.linalg.pinv(Tprev)) @ Tprev       # remove Tprev components
+numpy/linalg/_linalg.py:3220: RuntimeWarning: divide by zero encountered in matmul
+  return _core_matmul(x1, x2)
+numpy/linalg/_linalg.py:3220: RuntimeWarning: overflow encountered in matmul
+  return _core_matmul(x1, x2)
+numpy/linalg/_linalg.py:3220: RuntimeWarning: invalid value encountered in matmul
+  return _core_matmul(x1, x2)
+c11_staircase.py:77: RuntimeWarning: divide by zero encountered in matmul
+  lower = Fsum.T @ X[:Fsum.shape[0]]                     # 140 x k
+c11_staircase.py:77: RuntimeWarning: overflow encountered in matmul
+  lower = Fsum.T @ X[:Fsum.shape[0]]                     # 140 x k
+c11_staircase.py:77: RuntimeWarning: invalid value encountered in matmul
+  lower = Fsum.T @ X[:Fsum.shape[0]]                     # 140 x k
+c11_staircase.py:78: RuntimeWarning: divide by zero encountered in matmul
+  vco = lead.T @ VP                                      # k x 28 (in V^P)
+c11_staircase.py:78: RuntimeWarning: overflow encountered in matmul
+  vco = lead.T @ VP                                      # k x 28 (in V^P)
+c11_staircase.py:78: RuntimeWarning: invalid value encountered in matmul
+  vco = lead.T @ VP                                      # k x 28 (in V^P)
+c11_staircase.py:80: RuntimeWarning: divide by zero encountered in matmul
+  badlead = np.linalg.norm(VP7.T @ c7 - vco.T)
+c11_staircase.py:80: RuntimeWarning: overflow encountered in matmul
+  badlead = np.linalg.norm(VP7.T @ c7 - vco.T)
+c11_staircase.py:80: RuntimeWarning: invalid value encountered in matmul
+  badlead = np.linalg.norm(VP7.T @ c7 - vco.T)
+dims: V^P 10  V^P_7 4  V^F_7 7  V^F_21 21
+14 moves (staircase), trial 0: hook gains per move [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]; dim R7 56, dim R21 140; T7 in R7: True; T21 in R21: True
+14 moves (staircase), trial 1: hook gains per move [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]; dim R7 56, dim R21 140; T7 in R7: True; T21 in R21: True
+14 moves (staircase), trial 2: hook gains per move [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]; dim R7 56, dim R21 140; T7 in R7: True; T21 in R21: True
+control 13 moves: gains [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10], T7 in R7 True, T21 in R21 False
+control 14 generic moves: gains [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10], T7 in R7 False, T21 in R21 True
+control staircase without corrections D: T7 in R7 True

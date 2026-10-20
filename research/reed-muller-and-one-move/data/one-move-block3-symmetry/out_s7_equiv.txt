@@ -1,0 +1,9 @@
+  sc = cc.flatten()[k0] / t.flatten()[k0]
+  sc = cc.flatten()[k0] / t.flatten()[k0]
+  if np.allclose(cc, sc * t):
+(a) n found: A = [[0, 0, 1], [1, 1, 1], [1, 0, 1]]  n c n^-1 = (1+0j) * c^2; n in B: True  n' = K^-1 n K in B: True
+    n' c' n'^-1 = c'^2 up to the scalar (1-0j) : True
+(b) conj(c') = s p c' p^-1 for Paulis p = X^a Z^b: [((0, 7), np.complex128(1+0j))] ... (1 found)
+    conj(K) == X^7 K: True
+    conj(dir z) == X^z dir z for z = 1..7: True
+    conj of the free generators is free: True

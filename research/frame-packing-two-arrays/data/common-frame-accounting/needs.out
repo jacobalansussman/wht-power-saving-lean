@@ -1,0 +1,23 @@
+   m  M/W at 0.1  M/W at 0.01  proved M/W  TR ceiling     0.1 status    0.01 status  u needed 0.1  u needed 0.01
+   2      1.8661       1.9862      2.0000         nan       excluded       excluded         0.134          0.014
+   3      2.6879       2.9672      2.8000      2.9649       excluded           open         0.312          0.033
+   4      3.4822       3.9449      3.1538      3.9426           open           open         0.518          0.055
+   5      4.2567       4.9202      2.9447         nan           open           open         0.743          0.080
+   6      5.0158       5.8935      2.9447         nan           open           open         0.984          0.107
+   7      5.7622       6.8651      2.9447         nan           open           open         1.238          0.135
+   8      6.4980       7.8354      2.9447         nan           open           open         1.502          0.165
+  10      7.9433       9.7724      2.9447         nan           open           open         2.057          0.228
+  12      9.3597      11.7055      2.9447         nan           open           open         2.640          0.295
+  16     12.1257      15.5625      2.9447         nan           open           open         3.874          0.438
+  25     18.1195      24.2081      2.9447         nan           open           open         6.881          0.792
+  29     20.7090      28.0397      2.9447         nan           open           open         8.291          0.960
+  41     28.2817      39.5054      2.9447         nan           open           open        12.718          1.495
+  73     47.5325      69.9342      2.9447         nan           open           open        25.468          3.066
+ 110     68.7469     104.9491      2.9447         nan           open           open        41.253          5.051
+overlap u = 1 per array (bridges free): saving 0.1 possible only for m <= 6
+overlap u = 1 per array (bridges free): saving 0.01 possible only for m <= 29
+overlap u = 2 per array (bridges free): saving 0.1 possible only for m <= 9
+overlap u = 2 per array (bridges free): saving 0.01 possible only for m <= 51
+overlap u = 4 per array (bridges free): saving 0.1 possible only for m <= 16
+overlap u = 4 per array (bridges free): saving 0.01 possible only for m <= 90
+W = 2 targets (savings): {'2 in 7, block 4': 0.0963, '2 in 6, block 5': 0.3174, '2 in 5, block 3': 0.166}

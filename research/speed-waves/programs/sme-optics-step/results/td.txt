@@ -1,0 +1,98 @@
+[timing lock] waiting for timing lock 04:27:42
+[timing lock] got lock 04:31:07; load: { 46.60 45.28 39.47 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=1024 mode=step SW=64 PFD=4 col radices: 2 8 8 8
+# FFTW plans (MEASURE, time limit) took 0.0 s
+## propagation step 1024^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  SME step (rev. order)              5.6068
+rep  0  PFFFT-d rows+transp               12.5020
+rep  0  KFR-d rows+transp (rev.)          13.6242
+rep  0  FFTW-d 2D MEASURE                 34.6210
+rep  1  PFFFT-d rows+transp               12.1964
+rep  1  KFR-d rows+transp (rev.)          13.5660
+rep  1  FFTW-d 2D MEASURE                 34.7368
+rep  1  SME step (rev. order)              5.4131
+rep  2  KFR-d rows+transp (rev.)          13.5299
+rep  2  FFTW-d 2D MEASURE                 34.6761
+rep  2  SME step (rev. order)              5.4401
+rep  2  PFFFT-d rows+transp               12.3104
+rep  3  FFTW-d 2D MEASURE                 35.0200
+rep  3  SME step (rev. order)              5.4323
+rep  3  PFFFT-d rows+transp               12.3928
+rep  3  KFR-d rows+transp (rev.)          13.8749
+rep  4  SME step (rev. order)              5.4733
+rep  4  PFFFT-d rows+transp               12.4593
+rep  4  KFR-d rows+transp (rev.)          13.4821
+rep  4  FFTW-d 2D MEASURE                 34.8982
+rep  5  PFFFT-d rows+transp               12.2957
+rep  5  KFR-d rows+transp (rev.)          13.4435
+rep  5  FFTW-d 2D MEASURE                 35.6989
+rep  5  SME step (rev. order)              5.4296
+rep  6  KFR-d rows+transp (rev.)          13.3192
+rep  6  FFTW-d 2D MEASURE                 34.5584
+rep  6  SME step (rev. order)              5.3537
+rep  6  PFFFT-d rows+transp               12.1059
+rep  7  FFTW-d 2D MEASURE                 34.5700
+rep  7  SME step (rev. order)              5.3885
+rep  7  PFFFT-d rows+transp               12.1017
+rep  7  KFR-d rows+transp (rev.)          13.2160
+rep  8  SME step (rev. order)              5.3297
+rep  8  PFFFT-d rows+transp               12.0839
+rep  8  KFR-d rows+transp (rev.)          13.3263
+rep  8  FFTW-d 2D MEASURE                 35.1505
+RESULT propagation step 1024^2 c128             SME step (rev. order)        best     5.3297  median     5.4296  ns/call(ms)  (calls/rep 40)
+RESULT propagation step 1024^2 c128             PFFFT-d rows+transp          best    12.0839  median    12.2957  ns/call(ms)  (calls/rep 18)
+RESULT propagation step 1024^2 c128             KFR-d rows+transp (rev.)     best    13.2160  median    13.4821  ns/call(ms)  (calls/rep 17)
+RESULT propagation step 1024^2 c128             FFTW-d 2D MEASURE            best    34.5584  median    34.7368  ns/call(ms)  (calls/rep 7)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=step SW=32 PFD=4 col radices: 4 8 8 8
+# FFTW plans (MEASURE, time limit) took 0.0 s
+## propagation step 2048^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  SME step (rev. order)             28.2471
+rep  0  PFFFT-d rows+transp               53.8992
+rep  0  KFR-d rows+transp (rev.)          53.5307
+rep  0  FFTW-d 2D MEASURE                195.2093
+rep  1  PFFFT-d rows+transp               54.1260
+rep  1  KFR-d rows+transp (rev.)          53.3238
+rep  1  FFTW-d 2D MEASURE                194.1598
+rep  1  SME step (rev. order)             28.4153
+rep  2  KFR-d rows+transp (rev.)          53.5754
+rep  2  FFTW-d 2D MEASURE                195.7380
+rep  2  SME step (rev. order)             28.4696
+rep  2  PFFFT-d rows+transp               54.0707
+rep  3  FFTW-d 2D MEASURE                196.8639
+rep  3  SME step (rev. order)             28.3780
+rep  3  PFFFT-d rows+transp               53.8149
+rep  3  KFR-d rows+transp (rev.)          53.2982
+rep  4  SME step (rev. order)             28.4357
+rep  4  PFFFT-d rows+transp               54.6527
+rep  4  KFR-d rows+transp (rev.)          53.0103
+rep  4  FFTW-d 2D MEASURE                197.3264
+rep  5  PFFFT-d rows+transp               53.6620
+rep  5  KFR-d rows+transp (rev.)          53.1325
+rep  5  FFTW-d 2D MEASURE                199.0212
+rep  5  SME step (rev. order)             28.3051
+rep  6  KFR-d rows+transp (rev.)          53.2474
+rep  6  FFTW-d 2D MEASURE                199.8263
+rep  6  SME step (rev. order)             28.0745
+rep  6  PFFFT-d rows+transp               53.5100
+rep  7  FFTW-d 2D MEASURE                198.2519
+rep  7  SME step (rev. order)             28.3642
+rep  7  PFFFT-d rows+transp               53.6374
+rep  7  KFR-d rows+transp (rev.)          53.0692
+rep  8  SME step (rev. order)             28.1804
+rep  8  PFFFT-d rows+transp               53.5123
+rep  8  KFR-d rows+transp (rev.)          53.1530
+rep  8  FFTW-d 2D MEASURE                195.8726
+RESULT propagation step 2048^2 c128             SME step (rev. order)        best    28.0745  median    28.3642  ns/call(ms)  (calls/rep 8)
+RESULT propagation step 2048^2 c128             PFFFT-d rows+transp          best    53.5100  median    53.8149  ns/call(ms)  (calls/rep 5)
+RESULT propagation step 2048^2 c128             KFR-d rows+transp (rev.)     best    53.0103  median    53.2474  ns/call(ms)  (calls/rep 5)
+RESULT propagation step 2048^2 c128             FFTW-d 2D MEASURE            best   194.1598  median   196.8639  ns/call(ms)  (calls/rep 2)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=1024 mode=parts SW=64 PFD=4 col radices: 2 8 8 8
+## parts 1024^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+RESULT parts 1024^2 c128                        transpose                    best     2.5797  median     2.6148  ns/call(ms)  (calls/rep 84)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=1024 mode=parts SW=64 PFD=4 col radices: 2 8 8 8
+## parts 1024^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+RESULT parts 1024^2 c128                        transpose                    best     1.7442  median     1.7737  ns/call(ms)  (calls/rep 126)

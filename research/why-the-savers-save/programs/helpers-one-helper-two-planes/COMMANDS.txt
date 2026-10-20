@@ -1,0 +1,21 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+d-aboveplane, 13 Oct 2026. All runs < 40 s, small memory, python3 -I (system Python 3.9). From this folder:
+  python3 -I ../../bound-check/m-anatomy/pricer.py --profile '{"1":848490,"2":112554,"3":148518,"4":53946,"5":23976,"8":2664,"48":11086}' --m 73 --W 33152 --deficit 11840   # #942 control (step 0)
+  python3 -I vendor/audit_local_py39.py --word FULL-WORD.json.gz --output audit_baseline.json   # hub U8 audit (pr870 independent/audit_local.py; only change: int.bit_count -> bin().count for Python 3.9)
+  python3 -I survey.py FULL-WORD.json.gz survey.json                    # 168 planes, visitors, contents, direct target reads
+  python3 -I copies.py FULL-WORD.json.gz survey.json copies.json        # copy-holder roles and their readers
+  python3 -I pairs.py FULL-WORD.json.gz survey.json pairs.json          # full frame-propagation sandwich (both gate directions)
+  python3 -I content_sandwich.py FULL-WORD.json.gz survey.json content.json   # one-register content sandwich
+  python3 -I arrival_sandwich.py FULL-WORD.json.gz survey.json arrival.json   # DECISIVE: arrival-gate content sandwich, pairs, I9, free carriers
+  REACH=content python3 -I latecopy.py FULL-WORD.json.gz survey.json latecopy.json   # copy time and source left free
+  REACH=frame   python3 -I latecopy.py FULL-WORD.json.gz survey.json latecopy_frame.json
+  python3 -I superpacket.py FULL-WORD.json.gz survey.json superpacket.json     # variant I2
+  python3 -I direct_vs_exact.py FULL-WORD.json.gz survey.json arrival.json direct_vs_exact.json   # g-fields' count redone + exact b-matching + certificates
+  python3 -I facts.py FULL-WORD.json.gz survey.json arrival.json
+  python3 -I life.py FULL-WORD.json.gz 387 390 572                      # print the full life of registers
+FULL-WORD.json.gz = copy of u-helpers-ours/u8-FULL-WORD.json.gz (= k-word/data/u8-native/local/FULL-WORD.json.gz, the format audit_local.py checks;
+same word as CANONICAL-WORD, different register numbering). lib.py = shared replay code (audit_local.py's frame rule and program order).

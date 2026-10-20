@@ -1,0 +1,36 @@
+GF             copies 1 (zero     ) fixed   min crossings 2   (calls: 1)   states 4993
+GF             copies 1 (zero     ) free    min crossings 2   (calls: 1)   states 5000
+GF             copies 2 (zero     ) fixed   min crossings 2   (calls: 1)   states 98215
+GF             copies 2 (zero     ) free    min crossings 2   (calls: 1)   states 98230
+GB             copies 1 (zero     ) fixed   min crossings 2   (calls: 1)   states 4993
+GB             copies 1 (zero     ) free    min crossings 2   (calls: 1)   states 5000
+GB             copies 2 (zero     ) fixed   min crossings 2   (calls: 1)   states 93210
+GB             copies 2 (zero     ) free    min crossings 2   (calls: 1)   states 98538
+GB-GF          copies 1 (zero     ) fixed   min crossings 4   (calls: 2)   states 9985
+GB-GF          copies 1 (zero     ) free    min crossings 2   (calls: 2)   states 9992
+GB-GF          copies 2 (zero     ) fixed   min crossings 4   (calls: 2)   states 191732
+GB-GF          copies 2 (zero     ) free    min crossings 2   (calls: 2)   states 198378
+GF-GB          copies 1 (zero     ) fixed   min crossings 4   (calls: 2)   states 9985
+GF-GB          copies 1 (zero     ) free    min crossings 2   (calls: 2)   states 9992
+GF-GB          copies 2 (zero     ) fixed   min crossings 4   (calls: 2)   states 194403
+GF-GB          copies 2 (zero     ) free    min crossings 2   (calls: 2)   states 180897
+GF-GB-GF       copies 1 (zero     ) fixed   min crossings 6   (calls: 3)   states 14977
+GF-GB-GF       copies 1 (zero     ) free    min crossings 2   (calls: 3)   states 14984
+GF-GB-GF       copies 2 (zero     ) fixed   min crossings 6   (calls: 3)   states 297895
+GF-GB-GF       copies 2 (zero     ) free    min crossings 2   (calls: 3)   states 265528
+GF-GB-GF-GB    copies 1 (zero     ) fixed   min crossings 8   (calls: 4)   states 19969
+GF-GB-GF-GB    copies 1 (zero     ) free    min crossings 2   (calls: 4)   states 19976
+GF-GB-GF-GB    copies 2 (zero     ) fixed   min crossings 8   (calls: 4)   states 394083
+GF-GB-GF-GB    copies 2 (zero     ) free    min crossings 2   (calls: 4)   states 348195
+GF             copies 1 (discarded) fixed   min crossings 1   (calls: 1)   states 4859
+GF             copies 1 (discarded) free    min crossings 1   (calls: 1)   states 4866
+GB             copies 1 (discarded) fixed   min crossings 1   (calls: 1)   states 4853
+GB             copies 1 (discarded) free    min crossings 1   (calls: 1)   states 4860
+GB-GF          copies 1 (discarded) fixed   min crossings 2   (calls: 2)   states 9851
+GB-GF          copies 1 (discarded) free    min crossings 2   (calls: 2)   states 9992
+GF-GB          copies 1 (discarded) fixed   min crossings 2   (calls: 2)   states 9851
+GF-GB          copies 1 (discarded) free    min crossings 2   (calls: 2)   states 9992
+GF-GB-GF       copies 1 (discarded) fixed   min crossings 3   (calls: 3)   states 14843
+GF-GB-GF       copies 1 (discarded) free    min crossings 2   (calls: 3)   states 14984
+GF-GB-GF-GB    copies 1 (discarded) fixed   min crossings 4   (calls: 4)   states 19835
+GF-GB-GF-GB    copies 1 (discarded) free    min crossings 2   (calls: 4)   states 19976

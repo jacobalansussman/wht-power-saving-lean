@@ -1,0 +1,11 @@
+totals 8 support sizes [56, 56, 56, 56, 56, 56, 56, 56] coefficient values ['-1/2', '-1/4', '1/2', '1/4']
+diag 1: True | junk entries 5824 | junk == orthogonal pairs: True | per target [52]
+readers per total [56, 56, 56, 56, 56, 56, 56, 56] | reads per y [4]
+ports all odd True | weights [3, 7]
+mirror: g even True | u_b.v_b=0 True | v-Gram = u-Gram True | u_a.v_b = 1+u_a.u_b True | psi involutive isometry True | psi swaps True
+largest pairwise non-orthogonal set inside each support [4, 4, 4, 4, 4, 4, 4, 4] | global omega 8
+support 0: pairwise non-orthogonal 4-sets 630 | junk pairs inside 784
+7-dim subspaces 43435 | P7 36 | P8 64
+quadratic functions (45 coeffs): rank on the 112 e_b 36 | on E 36 | joint 36 => every q vanishing on the e_b vanishes on E: True
+isotropic planes 5355 | Lagrangians 2295 | twisted mirrors 1 + planes + 28 * Lagrangians = 69616
+done in 53.7 s

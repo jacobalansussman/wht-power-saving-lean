@@ -1,0 +1,10 @@
+per data array of pair p: in-call levels (8 per active stage) + idle children = paid levels
+  pair 1: 24 in-call + 48 idle = 72 of 73  (free: 1)
+  pair 2: 16 in-call + 56 idle = 72 of 73  (free: 1)
+  pair 3: 16 in-call + 56 idle = 72 of 73  (free: 1)
+  pair 4: 16 in-call + 56 idle = 72 of 73  (free: 1)
+588atm3                                          per call: rank 5916, narrow   21305.2, rank-1 share of narrow 0.500; residual widths 4060; local - residuals = 1856 (= 224*8 + 64 = 1856); D per replica = 320
+U8E1                                             per call: rank 5634, narrow   20623.1, rank-1 share of narrow 0.530; residual widths 3778; local - residuals = 1856 (= 224*8 + 64 = 1856); D per replica = 320
+U8XM_5cc                                         per call: rank 5679, narrow   20733.0, rank-1 share of narrow 0.528; residual widths 3823; local - residuals = 1856 (= 224*8 + 64 = 1856); D per replica = 320
+T74 gauge44 (from T74E = 72 local + bank rest)   per call: rank 5594, narrow   20420.7, rank-1 share of narrow 0.492
+data arrays per replica 896 ; children rank per replica 48384 ; 73*896 - 320 = 65088

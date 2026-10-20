@@ -1,0 +1,5 @@
+f=4: label matrices of all 17 letters agree with the unitaries' conjugation action: True
+f=4: Lemma 4 on 40 random words: failures 0; sample (|tr|^2, 2^dimker): [(np.float64(0.0), 2048), (np.float64(0.0), 8192), (np.float64(4.0), 4), (np.float64(0.0), 8), (np.float64(0.0), 2), (np.float64(1.0), 1), (np.float64(8192.0), 8192), (np.float64(8.0), 8), (np.float64(16.0), 16), (np.float64(16.0), 16)]
+f=5: label matrices of all 17 letters agree with the unitaries' conjugation action: True
+f=5: Lemma 4 on 40 random words: failures 0; sample (|tr|^2, 2^dimker): [(np.float64(2.0), 2), (np.float64(0.0), 32768), (np.float64(2.0), 2), (np.float64(8.0), 8), (np.float64(64.0), 64), (np.float64(0.0), 4), (np.float64(8.0), 8), (np.float64(0.0), 512), (np.float64(2.0), 2), (np.float64(32.0), 32)]
+ALL PASS

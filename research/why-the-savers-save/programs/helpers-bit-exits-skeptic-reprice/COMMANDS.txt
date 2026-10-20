@@ -1,0 +1,15 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+v-bit-exits-reprice (13 Oct 2026), skeptic pass on d-bit-exits. All python3 -I, standard library.
+clean/      d-bit-exits scripts + inputs re-copied from the hub clone (word sha256 e3e301e6..., xcheck_p.py af3decc8...,
+            selection9-p111.json 4ab1ed45..., wlib.py a37fdf3c...: all equal to hub research/e8-bit-p111-tuned) + pricer.py
+  python3 -I pricer.py --profile '{"1":848490,"2":112554,"3":148518,"4":53946,"5":23976,"8":2664,"48":11086}' --m 73 --W 33152 --deficit 11840
+  python3 -I pricer.py --profile '{"1":381024,"2":400416,"3":22752,"4":26880,"5":29376,"6":17376,"7":26784,"42":288}' --m 64 --W 28416 --deficit 10272 --bad --nokappa
+  python3 -I data/xcheck_p.py data/bitE8mut-p111-tuned.json.gz        # PASS
+  python3 -I data/xcheck_p.py kz/bitE8mut-p111-kz.json.gz             # REJECT helper 444 does not start at frame 0
+  out/*.log, out/*.json: re-runs of every d-bit-exits script (identical results; dirt_join.json byte-equal in content)
+mine/indep_exit.py WORD   independent exit obstruction (targets included in holders and in the span test)
+mine/replay_kz.py KZ BASE independent replay of the entrance word with declared start frames

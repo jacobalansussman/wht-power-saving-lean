@@ -1,0 +1,51 @@
+{
+ "track": "ctr-search",
+ "date": "2026-10-15",
+ "outcome": "window-open-no-hit (O1 closed in the one-sided/COPY accounting)",
+ "calibration": {
+  "hub64_frame_decoder": {
+   "found_by": "calc/sas.py greedy from scratch; calc/dsearch.py pool {e_i}",
+   "pair": 64,
+   "one_sided": 64,
+   "exact": true
+  },
+  "coordinate72": {
+   "found_by": "calc/sas.py and calc/dsearch.py on the butterfly pool (e_2a +- e_2a+1)",
+   "pair": 72,
+   "one_sided": 72,
+   "exact": true
+  },
+  "other_bases": "halves, WHT rows: 72 (calc/calib.py)",
+  "refusal": "calc/negctl.py: frame decoder cut to 6-dim gathers (one-sided 48 < 52.36) fails exactness, 2333 violations; floor guard refuses",
+  "profile_method_soundness": "calc/soundness.py: 13 exact decoders from the searches (cost 64..140, 8..112 terms) all pass the counting bounds; 8^8 passes at 64, 9^8 at 72; m <= 8 excluded at <= 63, as the hub's square floor"
+ },
+ "searches_no_hit": {
+  "dsearch_anneal_FDR": 137,
+  "bresp_random_FDR": 120,
+  "bresp_from_coordinate_FDR": 64,
+  "sas_FDR": 64,
+  "sas_FDRH": 64,
+  "sas_DR_no_frame": 71
+ },
+ "theorem": "Every single-layer decoder of P112 whose realisation has rank 8 (Gram up to diagonal gauge) costs >= 64 per call in the one-sided (COPY) accounting, for any number of terms and factors anywhere.",
+ "proof_steps": [
+  "Reduction [proved]: scatter side may be replaced by A^T C^T where C^T = A Phi (row M = row C^T is inside row Phi); same gather supports, still exact. So the decoder is a dictionary: directions l_k = columns of A, each root c_b = sum_k x_b(k) l_k, cost sum_k dim span U(A_k).",
+  "WLOG A_k = all ports with labels in W_k = span U(A_k) (cost unchanged, availability only grows).",
+  "NC_k [proved]: ports usable only with a k-set K of directions have root rank <= k, so the other m-k directions' port sets cover the complement of a rank-k flat.",
+  "Incidence [proved]: sum_k |S_W_k| >= 224 - m.",
+  "Inputs [computed]: max ports in a d-dim label subspace n(d) = 1,2,4,8,12,20,36,64,112 (calc/nd.py); co-flats <= 69 ports are Gamma_a = a + junk(a) (53) and N_i (56), coverage maxima per dim (calc/coflat.py); co-flat list <= 80 (calc/coflats_all.py; completeness argued from the E8 rank-7 subsystems E7, D7, E6A1 plus lattice-normal enumeration and 30,000 random spanning 7-sets).",
+  "Profiles [computed, calc/profiles.py, re-done by brute force in calc/xcheck.py]: at cost <= 63 only m = 9 (7^9), 10 (7 profiles), 11 (4), 12 (1) survive.",
+  "m = 9 [computed, calc/m9.py]: covering-pair graph on 43,173 dim-7 sets has largest clique 2 (need 9).",
+  "m = 10 [computed, calc/cover3.py, cover3b.py]: (1,6,7^8): no port+dim6+dim7 cover of Gamma_a; others: no 3 dim-6 sets cover Gamma_a and the N_i covering-triple hypergraph (8,960 triples) has no K4.",
+  "m = 11, 12 [computed, calc/h2k4sym.py EPS 2; EPS 0 cross-checked against calc/h2k4.py and cover3b.py]: 134,400 defect-<=2 covering triples, no K4."
+ ],
+ "inputs_read": [
+  "rank-8 realisations are Gram up to gauge: hub #1212, #1815 (as cited in centre/WINDOW.md)"
+ ],
+ "open_after_this": [
+  "O2/O3: realisation rank >= 9 (junk changes; the reduction still holds, with the realisation's own vector configuration in place of the roots, but its co-flats are not known)",
+  "O4: label tables of rank >= 10",
+  "O5: multi-layer",
+  "pairing-rank accounting beyond the hub's closures (counting alone does not close it)"
+ ]
+}

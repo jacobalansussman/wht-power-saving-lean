@@ -1,0 +1,12 @@
+m=3 frames 135, subspace frames 16 = I(L_0,L_F): yes; interval lemma |I(X,Y)| = #subspaces of F_2^d(X,Y) and I(X,Y) = {Z : Z = (Z&X)+(Z&Y)} on 18225 ordered pairs: 0 failures
+excess d(L_0,Z)+d(Z,L_F)-m over all frames: {0: 16, 1: 35, 2: 56, 3: 28} (0 exactly on the subspace frames)
+|Sp(6,2)| enumerated: 1451520 (81.5s)
+frame permutations built (125.7s)
+
+Twisted pair search, odd labels, m=3 (all phi in Sp(6,2)):
+  u_S=001 u_T=010  knows (u_S.u_T=0), generous: twisted min copy cost l = 2 (a0,a* configs 20); phi = identity: 2
+  u_S=001 u_T=010  knows (u_S.u_T=0), timed: twisted min copy cost l = 2 (a0,a* configs 20); phi = identity: None
+  u_S=001 u_T=111  does NOT know (u_S.u_T=1), generous: twisted min copy cost l = 2 (a0,a* configs 20); phi = identity: None
+  u_S=001 u_T=111  does NOT know (u_S.u_T=1), timed: twisted min copy cost l = 2 (a0,a* configs 20); phi = identity: None
+  u_S=111 u_T=001  does NOT know (u_S.u_T=1), generous: twisted min copy cost l = 2 (a0,a* configs 20); phi = identity: None
+  u_S=111 u_T=001  does NOT know (u_S.u_T=1), timed: twisted min copy cost l = 2 (a0,a* configs 20); phi = identity: None

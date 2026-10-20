@@ -1,0 +1,4 @@
+F7  over GF(2): DFZ  = -1  dual-DFZ = 20
+F7* over GF(2): DFZ  = 20  dual-DFZ = -1  (dual-DFZ must be < 0)
+F7* vectors (A..Z): ['0001', '0010', '0100', '1000', '1110', '1101', '0111']
+dual-DFZ on 10000 random arrangements over GF(3), GF(5), GF(7), GF(1000003): min 0 (no violation)

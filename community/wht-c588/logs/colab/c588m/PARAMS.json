@@ -1,0 +1,12 @@
+{
+  "tag": "C588M",
+  "seam": "Work.FourierC588M.Seam",
+  "engine": "SeamC588M.engine_C588Mx",
+  "num": 13552607,
+  "theorem": "OAI.PowerSaving.WHT.wht_main_block_C588Mx",
+  "inner": "OAI.PowerSaving.WHTC588M.wht_main_C588Mx",
+  "dir": "WHTC588M",
+  "negdir": "WHTC588MNeg",
+  "published_challenge_sha256": "a59db9d54b83adc73391916f7c1ef5e381ff073027781c26cb350f43b79839e3",
+  "published_solution_sha256": "dd52f1fe0a372480edaf5e6c64903d6257c410e43d406f8acb6bf8f60a1ee28f"
+}

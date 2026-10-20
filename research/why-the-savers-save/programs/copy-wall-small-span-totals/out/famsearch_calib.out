@@ -1,0 +1,9 @@
+seed 0 dims [7, 7, 7, 7, 7, 7, 7, 7, 7, 7]: Hall failures 0 after 3916 steps, ports read per total [34, 34, 32, 32, 34, 34, 34, 32, 30, 34], uncovered 0  2s
+seed 1 dims [7, 7, 7, 7, 7, 7, 7, 7, 7, 7]: Hall failures 0 after 8371 steps, ports read per total [34, 34, 34, 28, 32, 34, 34, 34, 32, 34], uncovered 0  7s
+families passing Hall: 2
+seed 0 dims [7, 7, 7, 7, 7, 7, 7, 7, 8]: Hall failures 1 after 15000 steps, ports read per total [30, 32, 34, 34, 34, 32, 32, 34, 60], uncovered 0  9s
+seed 1 dims [7, 7, 7, 7, 7, 7, 7, 7, 8]: Hall failures 0 after 4653 steps, ports read per total [34, 34, 28, 30, 34, 34, 34, 34, 60], uncovered 0  11s
+families passing Hall: 1
+seed 0 dims [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]: Hall failures 424 after 15000 steps, ports read per total [20, 19, 19, 20, 19, 18, 18, 20, 19, 19, 20], uncovered 0  10s
+seed 1 dims [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]: Hall failures 518 after 15000 steps, ports read per total [16, 20, 19, 19, 19, 16, 19, 20, 20, 20, 18], uncovered 0  19s
+families passing Hall: 0

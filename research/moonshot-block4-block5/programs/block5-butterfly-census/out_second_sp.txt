@@ -1,0 +1,6 @@
+walk 0: |nbr(N2)| 62, |Y with d(M0,Y)=4| 48
+walk 1: |nbr(N2)| 62, |Y with d(M0,Y)=4| 48
+walk 2: |nbr(N2)| 62, |Y with d(M0,Y)=4| 48
+walk 3: |nbr(N2)| 62, |Y with d(M0,Y)=4| 48
+over lam=(3,3)-admissible ordered anchor pairs and all Y in nbr(N2) with d(M0,Y)=4: (d(P1,Y), d(Q,Y)) -> {(3, 5): 49152, (4, 5): 49152, (5, 3): 49152, (5, 4): 49152, (5, 5): 98304}
+low letters (d(P1,Y)=d(Q,Y)=3) by d(M0,Y): {2: 43008}

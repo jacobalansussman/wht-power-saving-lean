@@ -1,0 +1,239 @@
+== plain (m=1, W=1, R=1, M=1): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=1 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+== plain (m=1, W=2, R=2, M=2): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=1 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=2 X=0 D=2 Z=0 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+== plain (m=1, W=3, R=3, M=3): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=3 X=0 D=3 Z=0 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=3 X=1 D=2 Z=1 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=3 X=1 D=2 Z=1 B=0 P=0 I0=0 maxlab=1
+== detour(z=1) (m=1, W=2, R=2, M=4): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=3 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=2 X=0 D=3 Z=0 B=0 P=0 I0=0 maxlab=1
+== pair trick (m=1, W=2, R=2, M=2): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=2 P=2 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=1 X=0 D=2 Z=0 B=0 P=2 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=1 X=0 D=2 Z=0 B=0 P=2 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=2 P=2 I0=0 maxlab=2
+== copy-move-copy (m=1, W=2, R=4, M=2): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+== plain (m=2, W=1, R=1, M=2): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+== plain (m=2, W=2, R=2, M=4): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=3 X=2 D=1 Z=2 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=1 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+== plain (m=2, W=3, R=3, M=6): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=6 X=2 D=4 Z=2 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=3 X=1 D=2 Z=1 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=4 X=3 D=1 Z=3 B=0 P=0 I0=0 maxlab=1
+== detour(z=3) (m=2, W=2, R=2, M=6): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=3 X=2 D=2 Z=2 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=4 X=2 D=3 Z=2 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=0 Z=5 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=2 X=2 D=1 Z=2 B=0 P=0 I0=0 maxlab=1
+== pair trick (m=2, W=2, R=2, M=4): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=3 X=1 D=4 Z=2 B=-1 P=4 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=4 X=3 D=2 Z=6 B=-1 P=4 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=2 Z=2 B=1 P=4 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=2 B=3 P=4 I0=0 maxlab=2
+== copy-move-copy (m=2, W=2, R=4, M=4): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=3 X=2 D=1 Z=2 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=2 X=0 D=2 Z=0 B=0 P=0 I0=0 maxlab=1
+== gauge-exchange (m=2, W=2, R=2, M=4): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=1 P=1 I0=0 maxlab=2
+   coherent  unit=True raw_ok=True unit_ok=True | N=1 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=4 X=1 D=4 Z=1 B=-1 P=1 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=2 Z=1 B=-1 P=1 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=4 X=2 D=3 Z=2 B=-1 P=1 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=4 X=3 D=1 Z=4 B=0 P=1 I0=0 maxlab=2
+== lateral: no free fix within depth 4 at m=2
+== packing gadget (m=2, W=2, R=3, M=5): same-input split (input 1 carries 2 labels in one register)
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=2 P=1 I0=0 maxlab=2
+   random0   unit=True raw_ok=True unit_ok=True | N=2 X=2 D=0 Z=6 B=0 P=3 I0=0 maxlab=3
+   random1   unit=True raw_ok=True unit_ok=True | N=2 X=2 D=0 Z=2 B=4 P=3 I0=0 maxlab=3
+   random2   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=0 Z=7 B=0 P=3 I0=0 maxlab=3
+   random3   unit=True raw_ok=True unit_ok=True | N=4 X=4 D=2 Z=6 B=-2 P=3 I0=0 maxlab=3
+== plain (m=3, W=1, R=1, M=3): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=2 X=0 D=2 Z=0 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=0 Z=1 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=2 X=2 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+== plain (m=3, W=2, R=2, M=6): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=5 X=5 D=1 Z=3 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=5 X=5 D=2 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=4 X=2 D=2 Z=2 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=4 X=2 D=2 Z=2 B=0 P=0 I0=0 maxlab=1
+== plain (m=3, W=3, R=3, M=9): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=8 X=6 D=4 Z=2 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=5 X=2 D=4 Z=0 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=6 X=4 D=3 Z=2 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=3 X=1 D=2 Z=1 B=0 P=0 I0=0 maxlab=1
+== detour(z=1) (m=3, W=2, R=2, M=8): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=3 X=2 D=2 Z=2 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=3 X=1 D=2 Z=3 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=4 X=1 D=4 Z=1 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=1 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+== pair trick (m=3, W=2, R=2, M=6): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=4 X=4 D=2 Z=4 B=2 P=6 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=4 X=4 D=2 Z=4 B=2 P=6 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=5 X=5 D=2 Z=6 B=1 P=6 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=5 X=5 D=0 Z=10 B=1 P=6 I0=0 maxlab=2
+== copy-move-copy (m=3, W=2, R=4, M=6): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=6 X=4 D=4 Z=0 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=3 X=1 D=2 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=4 X=3 D=1 Z=3 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=5 X=3 D=3 Z=1 B=0 P=0 I0=0 maxlab=1
+== gauge-exchange (m=3, W=2, R=2, M=6): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=2 P=2 I0=0 maxlab=2
+   coherent  unit=True raw_ok=True unit_ok=True | N=1 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=4 X=3 D=2 Z=3 B=0 P=2 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=5 X=4 D=2 Z=4 B=0 P=2 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=4 X=3 D=2 Z=2 B=1 P=2 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=0 Z=4 B=1 P=2 I0=0 maxlab=2
+== lateral: no free fix within depth 4 at m=3
+== order-3 control C6O3 (m=3, W=2, R=2, M=6): holonomy (inconsistent relative gauge between inputs 0 and 1)
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=3 P=3 I0=0 maxlab=2
+   random0   unit=True raw_ok=True unit_ok=True | N=5 X=3 D=4 Z=6 B=-1 P=6 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=5 X=2 D=8 Z=0 B=-2 P=6 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=4 X=2 D=4 Z=4 B=0 P=6 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=4 X=3 D=2 Z=6 B=1 P=6 I0=0 maxlab=2
+== +-1 halving control C6H (m=3, W=2, R=2, M=6): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=3 X=2 D=2 Z=4 B=2 P=6 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=6 X=3 D=8 Z=2 B=-3 P=6 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=2 Z=2 B=3 P=6 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=5 X=4 D=2 Z=8 B=0 P=6 I0=0 maxlab=2
+== packing gadget (m=3, W=2, R=3, M=7): same-input split (input 1 carries 2 labels in one register)
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=2 P=1 I0=0 maxlab=2
+   random0   unit=True raw_ok=True unit_ok=True | N=5 X=4 D=1 Z=5 B=3 P=3 I0=0 maxlab=3
+   random1   unit=True raw_ok=True unit_ok=True | N=2 X=2 D=0 Z=3 B=3 P=3 I0=0 maxlab=3
+   random2   unit=True raw_ok=True unit_ok=True | N=2 X=2 D=1 Z=0 B=4 P=3 I0=0 maxlab=3
+   random3   unit=True raw_ok=True unit_ok=True | N=4 X=4 D=1 Z=3 B=3 P=3 I0=0 maxlab=3
+== plain (m=4, W=1, R=1, M=4): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=2 X=2 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=3 X=2 D=1 Z=2 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+== plain (m=4, W=2, R=2, M=8): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=8 X=6 D=3 Z=4 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=6 X=5 D=3 Z=1 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+== plain (m=4, W=3, R=3, M=12): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=7 X=5 D=3 Z=3 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=7 X=6 D=3 Z=2 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=4 X=2 D=2 Z=2 B=0 P=0 I0=0 maxlab=1
+== detour(z=10) (m=4, W=2, R=2, M=10): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=5 X=3 D=3 Z=3 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=2 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=4 X=1 D=3 Z=3 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=5 X=4 D=4 Z=0 B=0 P=0 I0=0 maxlab=1
+== pair trick (m=4, W=2, R=2, M=8): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=3 X=2 D=2 Z=4 B=4 P=8 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=5 X=3 D=5 Z=4 B=1 P=8 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=4 X=3 D=3 Z=4 B=3 P=8 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=2 Z=2 B=5 P=8 I0=0 maxlab=2
+== copy-move-copy (m=4, W=2, R=4, M=8): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=6 X=4 D=3 Z=2 B=0 P=0 I0=0 maxlab=1
+   random1   unit=True raw_ok=True unit_ok=True | N=4 X=3 D=2 Z=1 B=0 P=0 I0=0 maxlab=1
+   random2   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+   random3   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=1 Z=1 B=0 P=0 I0=0 maxlab=1
+== gauge-exchange (m=4, W=2, R=2, M=8): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=3 P=3 I0=0 maxlab=2
+   coherent  unit=True raw_ok=True unit_ok=True | N=1 X=0 D=1 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=3 X=1 D=3 Z=2 B=0 P=3 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=4 X=4 D=1 Z=3 B=2 P=3 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=5 X=3 D=3 Z=2 B=2 P=3 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=2 Z=1 B=1 P=3 I0=0 maxlab=2
+== lateral: no free fix within depth 4 at m=4
+== order-3 control C8O3 (m=4, W=2, R=2, M=8): holonomy (inconsistent relative gauge between inputs 0 and 1)
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=4 P=4 I0=0 maxlab=2
+   random0   unit=True raw_ok=True unit_ok=True | N=6 X=5 D=4 Z=6 B=1 P=8 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=4 X=1 D=6 Z=2 B=1 P=8 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=7 X=3 D=8 Z=6 B=-3 P=8 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=6 X=5 D=3 Z=8 B=1 P=8 I0=0 maxlab=2
+== +-1 halving control C8H (m=4, W=2, R=2, M=8): coherent
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   coherent  unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=0 P=0 I0=0 maxlab=1
+   random0   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=0 Z=6 B=5 P=8 I0=0 maxlab=2
+   random1   unit=True raw_ok=True unit_ok=True | N=3 X=3 D=2 Z=2 B=5 P=8 I0=0 maxlab=2
+   random2   unit=True raw_ok=True unit_ok=True | N=4 X=3 D=4 Z=2 B=3 P=8 I0=0 maxlab=2
+   random3   unit=True raw_ok=True unit_ok=True | N=2 X=1 D=2 Z=2 B=5 P=8 I0=0 maxlab=2
+== packing gadget (m=4, W=2, R=3, M=9): same-input split (input 1 carries 2 labels in one register)
+   trivial   unit=True raw_ok=True unit_ok=True | N=0 X=0 D=0 Z=0 B=2 P=1 I0=0 maxlab=2
+   random0   unit=True raw_ok=True unit_ok=True | N=5 X=5 D=1 Z=7 B=0 P=3 I0=0 maxlab=3
+   random1   unit=True raw_ok=True unit_ok=True | N=8 X=7 D=4 Z=6 B=-1 P=3 I0=0 maxlab=3
+   random2   unit=True raw_ok=True unit_ok=True | N=6 X=6 D=1 Z=5 B=3 P=3 I0=0 maxlab=3
+   random3   unit=True raw_ok=True unit_ok=True | N=4 X=2 D=4 Z=0 B=2 P=3 I0=0 maxlab=3
+
+SUMMARY: 34 cases, 199 (case, gauge) rows; identity violations: []; non-units: []
+python3 t_known.py 1  29.78s user 0.15s system 99% cpu 29.947 total

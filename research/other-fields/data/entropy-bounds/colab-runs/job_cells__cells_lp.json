@@ -1,0 +1,29 @@
+[
+ {
+  "label": "m=2 three cells (a line / far / rest)",
+  "cells": 3,
+  "ground": 12,
+  "routing": 80,
+  "cut": 80.0,
+  "scale": 0.013392857142857142,
+  "shannon": 80.00000016116222,
+  "shannon_rigorous_lb": 79.99999161295506,
+  "linear_rank": 79.99999700812265
+ },
+ {
+  "label": "m=3 annealed k=5 (rho 1.7027)",
+  "cells": 4,
+  "ground": 24,
+  "routing": 6912,
+  "cut": 6912.0,
+  "scale": 0.00024634009009009007
+ },
+ {
+  "label": "m=3 annealed k=6 (rho 1.7500)",
+  "cells": 4,
+  "ground": 24,
+  "routing": 6720,
+  "cut": 6720.0,
+  "scale": 0.00026041666666666666
+ }
+]

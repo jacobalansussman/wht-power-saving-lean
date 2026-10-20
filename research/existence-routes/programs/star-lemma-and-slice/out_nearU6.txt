@@ -1,0 +1,17 @@
+4-flats avoiding 0: 1953 even 961 odd 992
+even 4-flats all of whose hyperplanes lie in an odd 4-flat avoiding 0: 736
+W=13 t=0 (M=63, moves/array 4.846, above bar: True): 1/1 multisets U_6+Z excluded; not covered e.g. []
+W=13 t=1 (M=64, moves/array 4.923, above bar: True): 62/63 multisets U_6+Z excluded; not covered e.g. [(63,)]
+W=13 t=2 (M=65, moves/array 5.000, above bar: True): 1922/2016 multisets U_6+Z excluded; not covered e.g. [(1, 62), (1, 63), (2, 61)]
+W=14 t=0 (M=63, moves/array 4.500, above bar: True): 1/1 multisets U_6+Z excluded; not covered e.g. []
+W=14 t=1 (M=64, moves/array 4.571, above bar: True): 63/63 multisets U_6+Z excluded; not covered e.g. []
+W=14 t=2 (M=65, moves/array 4.643, above bar: True): 2015/2016 multisets U_6+Z excluded; not covered e.g. [(63, 63)]
+W=14 t=3 (M=66, moves/array 4.714, above bar: True): 43586/43680 multisets U_6+Z excluded; not covered e.g. [(1, 62, 63), (1, 63, 63), (2, 61, 63)]
+W=15 t=0 (M=63, moves/array 4.200, above bar: True): 1/1 multisets U_6+Z excluded; not covered e.g. []
+W=15 t=1 (M=64, moves/array 4.267, above bar: True): 63/63 multisets U_6+Z excluded; not covered e.g. []
+W=15 t=2 (M=65, moves/array 4.333, above bar: True): 2016/2016 multisets U_6+Z excluded; not covered e.g. []
+W=15 t=3 (M=66, moves/array 4.400, above bar: True): 43679/43680 multisets U_6+Z excluded; not covered e.g. [(63, 63, 63)]
+W=16 t=0 (M=63, moves/array 3.938, above bar: True): 1/1 multisets U_6+Z excluded; not covered e.g. []
+W=16 t=1 (M=64, moves/array 4.000, above bar: True): 63/63 multisets U_6+Z excluded; not covered e.g. []
+W=16 t=2 (M=65, moves/array 4.062, above bar: True): 2016/2016 multisets U_6+Z excluded; not covered e.g. []
+W=16 t=3 (M=66, moves/array 4.125, above bar: True): 43680/43680 multisets U_6+Z excluded; not covered e.g. []

@@ -1,0 +1,55 @@
+   (slot: waited 0s; heavy 1, avail 49835 MB)
+   LEAN_NUM_THREADS=2
+=== build START 19:19:03
+=== build END rc=0 wall=53s maxrss_kb=7541252 19:19:56
+Build completed successfully (9612 jobs).
+   35s Work.L3945H.Prov
+   9.1s Work.L3945H.Engine
+=== nobuild START 19:19:56
+=== nobuild END rc=0 wall=7s maxrss_kb=965136 19:20:03
+All targets up-to-date (9612 jobs).
+BUILD L3945Hengine OK
+final over hyp: Work/FourierL3945H/ArbitraryLength.lean
+final over hyp: Work/FourierL3945H/Asymptotics.lean
+final over hyp: Work/FourierL3945H/ConvolutionProgram.lean
+final over hyp: Work/FourierL3945H/Main.lean
+final over hyp: Work/FourierL3945H/Seam.lean
+final over hyp: Work/FourierL3945H/SectorAlgorithm.lean
+final over hyp: Work/FourierL3945H/SynchronizedAlgorithm.lean
+final over hyp: Work/FourierL3945H/TransformProgram.lean
+final over hyp: Work/FourierL3945H/UniformBounds.lean
+final over hyp: Work/FourierL3945H/WorkingCompiler.lean
+final over hyp: Work/FourierL3945H/WorkingPreparation.lean
+final over hyp: Work/FourierL3945H/WorkingTransform.lean
+replaced 12 files by the final stage
+   (slot: waited 0s; heavy 1, avail 49570 MB)
+   LEAN_NUM_THREADS=2
+=== build START 19:20:03
+=== build END rc=0 wall=100s maxrss_kb=6902880 19:21:43
+Build completed successfully (9629 jobs).
+   8.5s Work.FourierL3945H.Asymptotics
+   8.2s Work.FourierL3945H.WorkingPreparation
+   7.9s Work.FourierL3945H.SectorAlgorithm
+   7.7s Work.FourierL3945H.UniformBounds
+   7.4s Work.FourierL3945H.ArbitraryLength
+   7.3s Work.FourierL3945H.TransformProgram
+   7.0s Work.FourierL3945H.Seam
+   6.9s Work.FourierL3945H.Main
+=== nobuild START 19:21:43
+=== nobuild END rc=0 wall=7s maxrss_kb=972996 19:21:50
+All targets up-to-date (9629 jobs).
+BUILD L3945Hfinal OK
+   (slot: waited 0s; heavy 0, avail 49766 MB)
+=== axfinal START 19:21:50
+=== axfinal END rc=0 wall=6s maxrss_kb=6768176 19:21:56
+'OAI.PowerSaving.MX.L3945H.engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.L3945H.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945H.engine_L3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945H.alphaL3945H_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+AXIOMS final L3945H: standard only
+FINAL CHAIN L3945H BUILT

@@ -1,0 +1,7 @@
+irr 5 n=27, 1 in 2: 2862 unknowns, 729 equations; Gauss-Newton residual 3.47e-14; Jacobian rank 729 (sv 1.47e+02 .. 3.19e-02) [7s]
+square slice: cond 9.54e+04
+after square Newton: residual 3.56e-14
+Krawczyk at half-width 1e-11: fail (max |K - y| 1.88e-09 vs 1e-11) [3s]
+Krawczyk at half-width 1e-09: fail (max |K - y| 1.88e-09 vs 1e-09) [5s]
+Krawczyk at half-width 1e-07: PASS (max |K - y| 8.81e-09 vs 1e-07) [8s]
+THEOREM [certified numerics, no exact closure]: for every h', k' within 1e-15 of the stored irr-5 data, the relaxed 1-in-2 scheme exists exactly (unique in the box for the 729 chosen unknowns, the others fixed).

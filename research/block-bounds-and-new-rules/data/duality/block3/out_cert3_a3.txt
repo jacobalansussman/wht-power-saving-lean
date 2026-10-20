@@ -1,0 +1,11 @@
+frames 16 group 336 orbits of subsets 556
+distinct elemental inequalities: 8394
+float optimum 2.9794313369630863 ineq rows 8523 eq rows 1
+dual support 371 positive primal vars 555
+EXACT CERTIFICATE VALID: True  bound: mean delta_3 <=  4925/1653 = 2.9794313369630974 x mean delta_1
+non-Shannon / characteristic rows used (exact multipliers):
+   610/1653 ing:L=[512, 1, 2, 16384],T=0,viol=-0.01004
+   137/1653 ing1:L=[8192, 128, 8, 1024],T=0,viol=-0.03012
+   34/1653 dfz:points=lines,T=bottom
+elemental rows used: 368
+certificate written: 371 inequality rows, 1 equality rows

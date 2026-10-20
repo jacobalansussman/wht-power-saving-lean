@@ -1,0 +1,35 @@
+## calibration
+m=4 n=1 W=4 M=15: virtual moves 15, virtual arrays 4
+deletion failures: 0 []
+VERDICT: EXCLUDED (tight clique 15 > 4)
+m=4 n=1 W=4 M=16: virtual moves 16, virtual arrays 4
+deletion failures: 0 []
+VERDICT: not excluded by these two tests
+m=3 n=1 W=2 M=7: virtual moves 7, virtual arrays 2
+deletion failures: 0 []
+VERDICT: not excluded by these two tests
+m=3 n=7 W=2 M=6: virtual moves 42, virtual arrays 14
+deletion failures: 0 []
+VERDICT: not excluded by these two tests
+m=3 n=7 W=2 M=5: virtual moves 35, virtual arrays 14
+deletion failures: 7 [(5, 10, 12), (6, 10, 12), (10, 10, 12), (23, 10, 12), (26, 10, 12)]
+VERDICT: EXCLUDED (deletion)
+m=4 n=15 W=4 M=16: virtual moves 240, virtual arrays 60
+deletion failures: 0 []
+VERDICT: not excluded by these two tests
+m=4 n=5 W=4 M=16: virtual moves 80, virtual arrays 20
+deletion failures: 0 []
+VERDICT: not excluded by these two tests
+m=4 n=3 W=4 M=16: virtual moves 48, virtual arrays 12
+deletion failures: 0 []
+VERDICT: not excluded by these two tests
+## targets 4 in 15
+m=4 n=15 W=4 M=15: virtual moves 225, virtual arrays 60
+deletion failures: 0 []
+VERDICT: not excluded by these two tests
+m=4 n=5 W=4 M=15: virtual moves 75, virtual arrays 20
+deletion failures: 0 []
+VERDICT: not excluded by these two tests
+m=4 n=3 W=4 M=15: virtual moves 45, virtual arrays 12
+deletion failures: 0 []
+VERDICT: not excluded by these two tests

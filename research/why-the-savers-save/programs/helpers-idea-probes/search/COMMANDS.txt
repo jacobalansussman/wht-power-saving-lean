@@ -1,0 +1,13 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+g-search, 13 Oct 2026. WORD = ../../bound-check/k-word/data/u8-native/local/CANONICAL-WORD.json.gz ; VP = ../../../wht33/fatlabels/venv/bin/python3 (scipy 1.13.1 / numpy 2.0.2 = the versions of tools/e8's recorded run)
+  python3 -I a0_demand.py WORD a0_demand.json     # demand (52 sources per target, all dot 0), target reads
+  python3 -I a1_blocks.py a0_demand.json          # the 14 Hamming blocks (affine 3-flats), read shapes
+  python3 -I a2_signs.py                          # per block: 12 face planes (1 pattern, 6-8 readers), 2 own-block planes (4 patterns), whole-block needs
+  python3 -I a3_readorder.py WORD                 # target frames at their reads in phase B
+  python3 -I a4_superpackets.py                   # cross-block super-packets; own-block Hadamard check
+  TL=40 [FB=8] VP -I m1_block_milp.py BLOCK q [LL] [S] [first]   # block helper MILP (visit level, HiGHS)
+Results: m1_runs.jsonl, m1_first_b0.json, m1_first8_b0.json, m1_q8_b0.json, m1_q8_P_b0.json

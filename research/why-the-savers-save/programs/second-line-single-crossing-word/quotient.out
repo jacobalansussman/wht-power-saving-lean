@@ -1,0 +1,8 @@
+(a) random climbs and drops in F_2^7: 40000 checks, 8072 crossings, identity cost - projected cost = [crossing] fails 0 times
+(b) one-sided D per replica 320; two-sided gain +896; crossings >= 1008 (+B, cancelled by the B banks); D_two <= 208
+    an-build ceiling (GB only, 4 x 112): 768  (assumed the 5 GF calls free: they are not)
+(c) one-sided U8, exact fill (calibration, 1.6647327e-3)               m 73  D/replica  320  root 1.6647327e-03
+(c) two-sided, the lemma floor: D 208, 9 x 112 rank-1 crossings        m 74  D/replica  208  root 1.0545261e-03
+(c) two-sided, an-build fixed-order tie: D 320 (GB crossings only)     m 74  D/replica  320  root 1.6246236e-03
+(c) two-sided, an-build ceiling D 768 (GF free: impossible)            m 74  D/replica  768  root 3.9211580e-03
+checks/wht42/common/heavy.sh python3 -I quotient.py   4.53s user 0.05s system 97% cpu 4.692 total

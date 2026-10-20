@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "checks/wht43/copywall/v-R1-model/rowfree.py", line 36, in <module>
+    assert cliques, 'no disjoint cliques found'
+AssertionError: no disjoint cliques found

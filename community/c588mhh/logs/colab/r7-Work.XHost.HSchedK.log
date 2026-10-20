@@ -1,0 +1,36 @@
+START Work.XHost.HSchedK 19:12:03
+Work/XHost/HSchedK.lean:161:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+Work/XHost/HSchedK.lean:162:6: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+Work/XHost/HSchedK.lean:163:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+Work/XHost/HSchedK.lean:166:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+Work/XHost/HSchedK.lean:325:32: warning: `if_true` has been deprecated: Use `ite_true` instead
+Work/XHost/HSchedK.lean:327:53: warning: `if_false` has been deprecated: Use `ite_false` instead
+Work/XHost/HSchedK.lean:336:35: warning: `if_false` has been deprecated: Use `ite_false` instead
+Work/XHost/HSchedK.lean:345:15: warning: `if_true` has been deprecated: Use `ite_true` instead
+Work/XHost/HSchedK.lean:377:11: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+Work/XHost/HSchedK.lean:506:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+'OAI.PowerSaving.XHost.HostSched.ofTab_fitsR' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean -DautoImplicit=false -R . -o .lake/build/lib/lean/Work/XHost/HSchedK.olean -i .lake/build/lib/lean/Work/XHost/HSchedK.ilean Work/XHost/HSchedK.lean"
+	User time (seconds): 42.40
+	System time (seconds): 22.32
+	Percent of CPU this job got: 5%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 19:35.43
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6038824
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 251365
+	Minor (reclaiming a frame) page faults: 236738
+	Voluntary context switches: 263013
+	Involuntary context switches: 5090
+	Swaps: 0
+	File system inputs: 30141352
+	File system outputs: 4152
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+EXIT 0 Work.XHost.HSchedK 19:31:39

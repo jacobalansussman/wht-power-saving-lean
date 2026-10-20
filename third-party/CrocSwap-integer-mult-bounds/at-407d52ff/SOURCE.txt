@@ -1,0 +1,17 @@
+Unchanged copies of the notice files of github.com/CrocSwap/integer-mult-bounds at commit
+407d52ff15b2217b6e22bce44728b4c3907b6515 of its main branch (13 October 2026), at their paths there:
+
+  NOTICE                                                         sha256 b49022cb4104d90b182e4c335f670faf45529025b15db77bf0291835083c28bd
+  research/complex-t21-owners/NOTICE.md                          sha256 91fffbebc4bb0f3c1e4e81f239d3e7c44400c1f001a6fd5120572017bfb598f7
+  research/complex-t21-owners/vendor/pr870/NOTICE.md             sha256 e67a7bf357e62c130ed0df184c27d3b439b55c30e1c4c003c97bb1c6d0ab58e1
+  research/complex-t21-owners/vendor/pr870/UPSTREAM-NOTICE.md    sha256 a75967ebc34e3bf2ff2c25c08e6c7f1a61b0c0d171cfd1b62196ae2caaf2c610
+  research/complex-t21-owners/vendor/pr870/t16/NOTICE.md         sha256 902370e6bfcd39dbea2ece474f15fccbcce3b8e966b2b94066bd03e5174591b5
+
+The U8 word from which the certificates of community/u8x, community/u8xm and community/u8xmhh are derived was
+rebuilt at that commit with the repository's program research/complex-t21-owners/vendor/pr870/construction/barch/
+reproduce_barch.py (recipe U8); NOTICE, section 9, item g, says how. The repository's LICENSE at that commit is the
+same text as the file LICENSE at the root of this repository (sha256 c71d239df91726fc...). The NOTICE here differs
+from ../NOTICE (the state of pull request #193) in one passage only: lines 389 to 399 of ../NOTICE are a paragraph
+"Source-assisted common-frame extension (2026-10-09)" (icekylinx), and lines 389 to 415 here are, in its place,
+two paragraphs on the October 9 recycled-bit integration and the October 9 coordinated-frame and
+completed-entrance-bank integration. Every other line of the two files is the same.

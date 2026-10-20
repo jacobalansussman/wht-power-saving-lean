@@ -1,0 +1,39 @@
+{
+ "name": "U8XMHH",
+ "kernel_numerator": 16197706,
+ "dft_numerator": 16197705,
+ "W": 7478,
+ "banks": 310,
+ "hist": {
+  "1": 186137,
+  "2": 25216,
+  "3": 32368,
+  "4": 12560,
+  "5": 5184,
+  "8": 936,
+  "12": 64,
+  "48": 2608,
+  "61": 1
+ },
+ "pads": {
+  "0": 308,
+  "1": 1,
+  "61": 1
+ },
+ "rem_hist": {
+  "0": 1138,
+  "1": 290,
+  "2": 110,
+  "3": 32,
+  "4": 112,
+  "12": 8,
+  "48": 326
+ },
+ "slack": 5.964834437776731e-11,
+ "source": {
+  "hosttab": "out/HU8XM-hosttab.json",
+  "repack": "out/hu8xm_sr.padsa.json",
+  "price": "k-combine/out/price/U8XM.json",
+  "sched": "k-combine/out/global-U8XM/Work/GCert/Data/Gen/U8XMSched.lean"
+ }
+}

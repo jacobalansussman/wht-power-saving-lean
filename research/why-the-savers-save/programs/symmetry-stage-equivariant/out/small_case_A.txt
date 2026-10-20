@@ -1,0 +1,5 @@
+(A) h=3, m=5, ports [1, 2, 4]; |O(5,2)| = 720 (0.0s)
+    hub routes admissible: {1: True, 2: True, 4: True}
+    admissible (g_0, g_1) pairs per port: {1: 2880, 2: 2880, 4: 2880}; distinct continuation factors A per port: {1: 4, 2: 4, 4: 4}
+    every admissible A maps E_1 onto q^perp: True; largest overlap of the A-sets of two ports: 0
+PASS

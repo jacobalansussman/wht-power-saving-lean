@@ -1,0 +1,1458 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "existence-routes",
+ "title": "Proving that a unit exists without finding it",
+ "dates": "2026-10-14 to 2026-10-15",
+ "made_with": "AI agents (Claude) directed by the author",
+ "notes": [
+  "Only the two Lean files are proved in Lean; no person has read any of these proofs.",
+  "Most findings were checked by one AI skeptic, not two.",
+  "Savings are ln(mW/M)/ln m.",
+  "Re-runs of 19 October 2026 were done on Linux machines of Google's Colab service."
+ ],
+ "counts": {
+  "proved in Lean": 2,
+  "checked by computer": 19,
+  "argued by hand, not checked": 23,
+  "refuted": 9,
+  "open": 4
+ },
+ "findings": [
+  {
+   "id": "existence-routes/1",
+   "statement": "The engine accepts a unit known only to exist: from a hypothesis 'there exists a word w with GLiveKernel e w, Proper and price below the threshold' it yields the kernel program (also with Classical.choose, for a fixed shape with unknown coefficients, and from the engine's existential certificate GCert); the price of a mixing letter does not depend on its matrix.",
+   "status": "proved in Lean",
+   "status_detail": "five theorems in ExLegit.lean; only propext, Classical.choice, Quot.sound; an independent AI skeptic rebuilt it. The price of a whole shape is a hypothesis proved once per shape, and correctness at every f must still be proved for the unit.",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/lean-existence-counts/ExLegit.lean",
+    "programs/lean-existence-counts/logs/check-2026-10-19.log"
+   ],
+   "archive_entry": "M13",
+   "rerun_2026_10_19": "PASS"
+  },
+  {
+   "id": "existence-routes/2",
+   "statement": "Every value of paint scalar in OpenAI's RAM lies in any subfield containing the scalar inputs (and every value of paint left in any submodule over it containing the left inputs); so a Fourier program uses only scalars of Q(zeta_d), its outputs are Q(zeta_d)-linear combinations of its inputs, and every DFT program has zeta_n in Q(zeta_d).",
+   "status": "proved in Lean",
+   "status_detail": "ExLegitClosure.lean = OpenAI's UniformFourier.lean unchanged + 252 lines; only OpenAI's two challenge sorries, unused; an AI skeptic rebuilt it.",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/lean-existence-counts/ExLegitClosure.tail",
+    "programs/lean-existence-counts/check.sh"
+   ],
+   "archive_entry": "M13",
+   "rerun_2026_10_19": "PASS"
+  },
+  {
+   "id": "existence-routes/3",
+   "statement": "The program must be one fixed finite program for every length; a fixed unit counts however it was found or proved, and so does a fixed member of an asymptotic family; 'for each length some unit', chosen without a procedure the program runs and pays for, does not count.",
+   "status": "argued by hand, not checked",
+   "status_detail": "from the statement's syntax (P2); two AI skeptics found no error",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/what-the-challenge-accepts.md"
+   ],
+   "archive_entry": "M13",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/4",
+   "statement": "A unit's numbers must come from the field of the supplied root of unity.",
+   "status": "refuted",
+   "status_detail": "refuted independently by both AI skeptics of the first round: the Nullstellensatz gives an algebraic point and restriction of scalars rewrites it over Q(zeta_d) at a constant factor",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": "both skeptics of the existence round (restriction of scalars)",
+   "superseded_by": null,
+   "evidence": [
+    "proofs/what-the-challenge-accepts.md"
+   ],
+   "archive_entry": "C12",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/5",
+   "statement": "Any complex unit counts for the challenge (Nullstellensatz plus restriction of scalars); inside the engine as it stands any real unit counts (Tarski transfer plus a rational regular representation).",
+   "status": "argued by hand, not checked",
+   "status_detail": "the two skeptics' argument; no proof checker",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/what-the-challenge-accepts.md"
+   ],
+   "archive_entry": "C12",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/6",
+   "statement": "Toy: a unit with coefficients in Q(2^(1/3)), 2 paid moves for 1 array, becomes one with rational mixing, 6 for 3, exact at f = 1, 2, 3.",
+   "status": "checked by computer",
+   "status_detail": "one program, by a skeptic",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "before": "2 in 1",
+    "after": "6 in 3"
+   },
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/restriction-of-scalars-toy/weil.py"
+   ],
+   "archive_entry": "C12",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/7",
+   "statement": "Any saving above 1 - theta = 2.10643843004e-13 meets OpenAI's challenge.",
+   "status": "checked by computer",
+   "status_detail": "exact arithmetic on OpenAI's constants; two AI skeptics",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "one_minus_theta": 2.10643843004018e-13
+   },
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/challenge-root-field/theta.py"
+   ],
+   "archive_entry": "M14",
+   "rerun_2026_10_19": "2.10643843004018e-13"
+  },
+  {
+   "id": "existence-routes/8",
+   "statement": "From length 2^20 on, the order of the supplied root is divisible by 2^20 * 3*5*7*11*13*17, so zeta_8, sqrt 2, sqrt 3, sqrt 5, sqrt 13, sqrt 17 are available; below 2^20 the order is n.",
+   "status": "checked by computer",
+   "status_detail": "port of OpenAI's length selection on 221 sampled lengths (track) and 308 (skeptic, who also argued it for every length)",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/challenge-root-field/root_order.py",
+    "programs/challenge-root-field/skeptic/ord.py",
+    "programs/challenge-root-field/skeptic/ports.py"
+   ],
+   "archive_entry": "M14",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/9",
+   "statement": "If a numerical solution's last mixing layer can be re-solved after small real changes of the other layers, a unit with rational mixing exists (P5).",
+   "status": "argued by hand, not checked",
+   "status_detail": "upheld by the skeptics; not in Lean",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/what-the-challenge-accepts.md"
+   ],
+   "archive_entry": "M13",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/10",
+   "statement": "Fallback test: discard numerical hits whose numbers have the wrong kind of Galois group.",
+   "status": "refuted",
+   "status_detail": "wrong: it would discard usable hits",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": "the existence round's skeptics (restriction of scalars makes any field usable)",
+   "superseded_by": null,
+   "evidence": [
+    "proofs/what-the-challenge-accepts.md"
+   ],
+   "archive_entry": "C12",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/11",
+   "statement": "Written exactly, every shape has far more equations than unknowns, the plain schedules included (plain 1 in 2 at block 2: 18,432 unknowns, 46,080 equations), so a count can never be read as 'no solution'.",
+   "status": "checked by computer",
+   "status_detail": "exact counts; recounted by a skeptic",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "unknowns": 18432,
+    "equations": 46080
+   },
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/dimension-counts/exact_counts.py",
+    "programs/dimension-counts/skeptic-compute/counts.py"
+   ],
+   "archive_entry": "M17",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/12",
+   "statement": "Neither route from a count to existence is open: dominance would need 3.657, 14.49 and 65.76 moves per array at blocks 2, 3, 4, and the symmetries are too few to move the target to a typical point.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two AI skeptics",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "dominance_b2": 3.657,
+    "dominance_b3": 14.49,
+    "dominance_b4": 65.76
+   },
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/dimension-counts.md"
+   ],
+   "archive_entry": "M17",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/13",
+   "statement": "In the block-2 stand-in the program map is dominant exactly at plain cost and never below, yet 2 in 3 and 3 in 5 have exact solutions there: savings sit in special position.",
+   "status": "checked by computer",
+   "status_detail": "both skeptics reproduced the numbers with their own code, one with exact ranks modulo two primes",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/dimension-counts/",
+    "programs/dimension-counts/skeptic-compute/"
+   ],
+   "archive_entry": "M17",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/14",
+   "statement": "The stand-ins computable at blocks 3 and 4 are blind: the impossible 1 in 2 at block 3 is solvable in them.",
+   "status": "checked by computer",
+   "status_detail": "one track, one skeptic",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/dimension-counts/"
+   ],
+   "archive_entry": "M17",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/15",
+   "statement": "The everything-free game has no finite count: at each fixed f its free steps produce every matrix.",
+   "status": "argued by hand, not checked",
+   "status_detail": "given an upheld irreducibility result",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/dimension-counts.md"
+   ],
+   "archive_entry": "M17",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/16",
+   "statement": "Whether a dimension count can exclude a shape, and counts inside a smaller natural space, are undecided.",
+   "status": "open",
+   "status_detail": "the skeptics' correction",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/dimension-counts.md"
+   ],
+   "archive_entry": "M17",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/17",
+   "statement": "Tau-theorem: a mixed unit with W_k arrays owed k directions and M paid moves is worth exactly the tau solving sum W_k k^tau = M (balanced flow and lockstep schedule, no deadlock).",
+   "status": "argued by hand, not checked",
+   "status_detail": "in a job model; two AI skeptics found no error in its extension to grouped paid blocks (recursion-lever round); not in Lean as a general theorem",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/tau-theorem-and-laser.md",
+    "programs/tau-theorem-and-laser/frontier_flow.py",
+    "programs/tau-theorem-and-laser/lockstep_sim.py"
+   ],
+   "archive_entry": "M18",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/18",
+   "statement": "The induction constant of the tau schedule for 1 + 4 in 10 stays at most 1.2132 over sampled sizes up to 10^7.",
+   "status": "checked by computer",
+   "status_detail": "one program, exact fractions",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "max_constant": 1.2132
+   },
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/tau-theorem-and-laser/gamma_bound.py"
+   ],
+   "archive_entry": "M18",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/19",
+   "statement": "Packing a mixed unit into one big word for today's engine loses about 0.09/ln B; at B = 96 the savings would be 0.099 and 0.105 instead of 0.119 and 0.125.",
+   "status": "checked by computer",
+   "status_detail": "a linear program: a price, not a proof",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "B": 96,
+    "loss_times_lnB": 0.0898
+   },
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/tau-theorem-and-laser/macro_lp.py"
+   ],
+   "archive_entry": "M18",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/20",
+   "statement": "The block-3 mixed units 1 + 4 in 10 and 7 + 38 in 88, worth 0.119 and 0.125 by the tau-theorem if they existed, are live candidates for an existence proof (the first round ranked them second).",
+   "status": "refuted",
+   "status_detail": "both excluded in the engine game by Theorem M (an Sp(6,2) certificate, two skeptics) and, as units tight on the hook, in the engine and widened games by Theorem T (one skeptic); the tau-theorem's valuation itself stands",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": "Theorem M (theory-of-theories-and-logic) and Theorem T (moonshot-small-blocks)",
+   "superseded_by": null,
+   "evidence": [
+    "proofs/tau-theorem-and-laser.md"
+   ],
+   "archive_entry": "X7, X8",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/21",
+   "statement": "Theorem 3 (Phi barrier): if every rule respects one price n^tau, no mixture, power, Kronecker product or restriction beats the best single rule.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic has checked it; the duality track of the second round found it correct as stated, and only its broad corollary fails",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/tau-theorem-and-laser.md"
+   ],
+   "archive_entry": "M19",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/22",
+   "statement": "Kronecker powers of 1 + 4 in 10 drift towards exponent 1: 0.881, 0.936, 0.950, 0.960, 0.967, 0.971 over 1, 2, 3, 5, 8, 12 factors.",
+   "status": "checked by computer",
+   "status_detail": "one program",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/tau-theorem-and-laser/kron_check.py"
+   ],
+   "archive_entry": "M19",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/23",
+   "statement": "Any saving must come from one finite unit.",
+   "status": "refuted",
+   "status_detail": "it holds only when no paid block is bigger than a target",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": "the duality track of the second round: boosting by an oversized paid block, reproduced by its skeptic on made-up rules (0.723 against 0.834)",
+   "superseded_by": null,
+   "evidence": [
+    "proofs/duality.md"
+   ],
+   "archive_entry": "M19",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/24",
+   "statement": "Truncation lemma: dropping a single-array block at the start or end of an array and treating the array as mixed always raises a unit's value.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic of its own; its first large what-ifs on community circuits failed (record-track)",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/tau-theorem-and-laser.md"
+   ],
+   "archive_entry": "R23",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/25",
+   "statement": "One prime never decides existence, in either direction (x - 1 = 0, x^2 - 1 - p = 0 has a solution mod p and none over C; p x = 1 is the reverse).",
+   "status": "argued by hand, not checked",
+   "status_detail": "elementary; one AI skeptic checked it",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/finite-fields.md"
+   ],
+   "archive_entry": "M16",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/26",
+   "statement": "Three routes from finite fields to existence work: mod p + p-adic lift + recognition + exact check; one prime + an integer identity; many primes + effective Nullstellensatz (needs 2,636 primes at 3 unknowns, about 500,000 at 5, about 10^13 at 15).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic checked the propositions line by line and the KPS constant on the paper; the prime counts are computed",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "primes_3_unknowns": 2636
+   },
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/finite-fields.md",
+    "programs/finite-fields/kps_table.py"
+   ],
+   "archive_entry": "M16",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/27",
+   "statement": "All 17 hits of a relaxation screen of block-4 skeletons are feasible over C: 15 over Q, one over Q(i), one over Q(sqrt(-3)).",
+   "status": "checked by computer",
+   "status_detail": "the skeptic checked all 27 claimed exact points with its own code",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/finite-fields/skeptic/vpoints.py",
+    "programs/finite-fields/out/relax_hits.txt"
+   ],
+   "archive_entry": "M16",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/28",
+   "statement": "Eight block-4 skeletons have exact impossibility proofs: every one of their 122 exclusion steps has an identity 1 = sum g_i f_i over Q (one step is a constant system), plus 75 steps of the two hardest skeletons in a partial snapshot; independent of the msolve 0.6.5 bug.",
+   "status": "checked by computer",
+   "status_detail": "the skeptic re-checked all 240 certificate outputs and rebuilt the systems exactly (160 of 162 identical, 2 certified separately); assumes the closure model, a relaxation lemma and the split into charts",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "certificates": 240,
+    "steps": 122
+   },
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/finite-fields/skeptic/vall.py",
+    "programs/finite-fields/skeptic/vcover.py",
+    "data/finite-fields-systems-and-certificates.tar.gz"
+   ],
+   "archive_entry": "M16",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/29",
+   "statement": "Random search never finds the a4 = 3 special-position control.",
+   "status": "refuted",
+   "status_detail": "an artefact of a search box that excluded 3",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": "the finite-field skeptic",
+   "superseded_by": null,
+   "evidence": [
+    "proofs/skeptic-finite-fields.md"
+   ],
+   "archive_entry": "M16",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/30",
+   "statement": "In the block-2 stand-in, W arrays share s paid moves exactly when s >= ceil(3W/2); 2 in 3, 3 in 5 and 4 in 6 exist exactly with Gaussian-rational numbers.",
+   "status": "checked by computer",
+   "status_detail": "the 'only if' argued by hand and checked line by line by one skeptic; the stored schemes pass two independent exact checkers; this is a stand-in, not the real game",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/certified-numerics/sx/verify_scheme.py",
+    "programs/certified-numerics/skeptic/vstandin.py",
+    "programs/certified-numerics/sx/out/scheme_2in3.json",
+    "programs/certified-numerics/sx/out/scheme_3in5.json"
+   ],
+   "archive_entry": "N11",
+   "rerun_2026_10_19": "PASS"
+  },
+  {
+   "id": "existence-routes/31",
+   "statement": "Numerics alone prove existence only at stable points, and every unit at a saving is unstable, so an exact step is always needed.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the instability is argued only",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/certified-numerics.md"
+   ],
+   "archive_entry": "N11",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/32",
+   "statement": "Relaxations with no repeated irreducible piece are blind to depth: pieces of dimension 21 and 27 admit W in 2W at block 3 and one of dimension 35 admits 6 in 7, while engine units need 2.8 per array.",
+   "status": "checked by computer",
+   "status_detail": "argued under a stated condition; the block ranks reproduced by the skeptic in two independent models; 'such relaxations have depth 1' is false for one 35-dimensional piece",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/certified-numerics.md",
+    "programs/certified-numerics/skeptic/pieces/"
+   ],
+   "archive_entry": "N11",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/33",
+   "statement": "628 of 746 distinct systems that Singular calls empty got exact impossibility certificates (556 at degree 0, 71 at degree 1, 1 at degree 2); none of the 15 solvable ones was refused.",
+   "status": "checked by computer",
+   "status_detail": "the skeptic re-derived all 571 degree-0 and all 71 degree-1 certificate records (duplicates included) exactly over Q(i) with its own code and found none for a solvable system; the single degree-2 certificate was not re-derived",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/certified-numerics/out/",
+    "programs/certified-numerics/skeptic/vbulk.py"
+   ],
+   "archive_entry": "N11",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/34",
+   "statement": "Theorem 10: any slice program yields one M x M matrix E, nonsingular on every even support and of rank equal to the slack on every odd one.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic re-derived it and tested it on genuine sharing units",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [
+    "slice"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/families-commutative-slice.md"
+   ],
+   "archive_entry": "X4",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/35",
+   "statement": "The commutative slice never saves at block 4: M >= 4W (Theorem 17).",
+   "status": "checked by computer",
+   "status_detail": "an exact LP certificate plus a hand proof; one skeptic rebuilt both",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "slice"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/families-commutative-slice/verify_cert_b4.py",
+    "programs/families-commutative-slice/rc_cert_b4.json",
+    "programs/families-commutative-slice/hand_b4.py"
+   ],
+   "archive_entry": "X4",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/36",
+   "statement": "Every slice unit at block 5 needs at least 155/36 = 4.306 moves per array (Theorem 18).",
+   "status": "checked by computer",
+   "status_detail": "exact certificate; one skeptic",
+   "date": "2026-10-14",
+   "block": 5,
+   "games": [
+    "slice"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": "existence-routes Theorem E (93/20 = 4.65)",
+   "evidence": [
+    "programs/families-commutative-slice/verify_cert_b5.py",
+    "programs/families-commutative-slice/rc_cert_b5.json"
+   ],
+   "archive_entry": "X4",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/37",
+   "statement": "A family whose moves per array grow like m^d has saving tending to 1 - d; a family grown by a fixed gadget is worth no more than its first member.",
+   "status": "argued by hand, not checked",
+   "status_detail": "elementary",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/families-commutative-slice.md"
+   ],
+   "archive_entry": "X4",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/38",
+   "statement": "With infinitely many digit columns in the engine and widened games the limit is the finite problem for one residue class of f mod 4; in column-coupling games a program wrong on a vanishing share cannot count for words with at most one paid letter or Clifford letters only; with infinitely many address bits no limit unit with finitely many moves exists.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic checked the theorems step by step and corrected two calibration reasons; exact computations up to 8 columns agree",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/limits.md",
+    "programs/limits/"
+   ],
+   "archive_entry": "M17",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/39",
+   "statement": "OpenAI's price mechanism can prove a saving of at most 0.036 (Proposition 3).",
+   "status": "refuted",
+   "status_detail": "its hypothesis gives one matrix two prices at every exponent below 1",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": "the reformulation skeptic (check_prop3.py)",
+   "superseded_by": null,
+   "evidence": [
+    "programs/price-reformulation/skeptic/check_prop3.py"
+   ],
+   "archive_entry": "C17",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/40",
+   "statement": "The price language gives positive savings to six shapes that are proved impossible, so it is blind to existence.",
+   "status": "checked by computer",
+   "status_detail": "the skeptic",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/price-reformulation/skeptic/out_check_prop3.txt"
+   ],
+   "archive_entry": "C17",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/41",
+   "statement": "A saving above 0.1 exists exactly when no 0.9-price exists (Proposition 1).",
+   "status": "open",
+   "status_detail": "argued; its key step is not written out; neither refuted nor confirmed",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/price-reformulation.md"
+   ],
+   "archive_entry": "C17",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/42",
+   "statement": "On a register with spare rows one direction costs two big calls plus free steps, so Strassen's duality applies; its other side is the unknown exponent, so it cannot create a saving.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic; the repair identity checked exactly for blocks 1 to 6",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/duality.md",
+    "programs/duality/skeptic/a5_exact.py"
+   ],
+   "archive_entry": "M20",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/43",
+   "statement": "A relation whose balance changes sign once is worth its root, so mixed units and grouped paid blocks reach their full value without an explicit schedule.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic; that the job model's exponent equals the challenge's is checked by nobody",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/duality.md"
+   ],
+   "archive_entry": "M20",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/44",
+   "statement": "Certificate A rules out the spreading piece 2[2] <= [1] + [3] and its relatives at every block.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/duality.md",
+    "programs/duality/skeptic/a5_certA.py"
+   ],
+   "archive_entry": "M20",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/45",
+   "statement": "No booster whose jobs all have at most 3 rows exists on any register, and such relations never amplify one another (Theorem B1, Corollary B2).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic redid the identities and the Wronskians",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/boosters.md",
+    "programs/boosters/rank3.py",
+    "programs/boosters/wronskian.py",
+    "programs/boosters/skeptic/vB1.py"
+   ],
+   "archive_entry": "M21",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/46",
+   "statement": "Any booster needs a job of at least 6 rows.",
+   "status": "refuted",
+   "status_detail": "holds only on registers of at most 16 rows, given argued projections",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": "the booster skeptic",
+   "superseded_by": null,
+   "evidence": [
+    "proofs/skeptic-boosters.md"
+   ],
+   "archive_entry": "N8",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/47",
+   "statement": "The boosters S7 = [2]+[5]+[6] <= 2[3]+[7] (>= 0.133), S6 = [2]+4[5] <= 2[3]+[4]+2[6] (>= 0.319) and S8 = [2]+[5]+2[6] <= [3]+2[4]+[8] (>= 0.242) pass every certificate.",
+   "status": "open",
+   "status_detail": "checked by computer against about 65,000 of the skeptic's tests each; the skeptic's Lemma L (read by nobody else) rules out the listed catalyst-free forms; catalytic and slack forms open",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "S7": 0.133,
+    "S6": 0.319,
+    "S8": 0.242
+   },
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/boosters/check_survivor.py",
+    "programs/boosters/skeptic/vsurv.py"
+   ],
+   "archive_entry": "N8",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/48",
+   "statement": "Star lemma (Theorem C): no nonsingular 16 x 16 matrix on AG(4,2) has rank at most 3 on all 30 hyperplanes; hence 13 in 63 is impossible in the commutative slice and U_6 has no member above the bar.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic checked every step and tested the lemma exactly over four fields (1,432 cases)",
+   "date": "2026-10-15",
+   "block": 6,
+   "games": [
+    "slice"
+   ],
+   "shape": "13 in 63",
+   "saving_if_it_existed": 0.119,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/star-lemma-and-slice.md",
+    "programs/star-lemma-and-slice/check_star_lemma.py",
+    "programs/star-lemma-and-slice/skeptic/v_star.py"
+   ],
+   "archive_entry": "X5",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/49",
+   "statement": "Theorem D: the star lemma excludes U_m in the slice above about 0.81 to 0.82 of full sharing at every block (W >= 13/16, 26/32, 52/64, 209/256 at blocks 6, 7, 8, 10); the local argument cannot go below 3/4.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic; thresholds checked by computer; the skeptic supplied the odd-block floor",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "slice"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/star-lemma-and-slice/recursion.py",
+    "programs/star-lemma-and-slice/skeptic/v_recursion.py"
+   ],
+   "archive_entry": "X5",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/50",
+   "statement": "Theorem E: every slice unit from block 5 on needs at least 93/20 = 4.65 moves per array; the slice saves at most 0.045 at block 5 and could save up to 0.142 at block 6.",
+   "status": "checked by computer",
+   "status_detail": "an exact certificate re-verified by two independent programs; one skeptic",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "slice"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "bound": 4.65
+   },
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/star-lemma-and-slice/verify_star_cert.py",
+    "programs/star-lemma-and-slice/theorem-E-certificate/",
+    "programs/star-lemma-and-slice/skeptic/v_cert5.py"
+   ],
+   "archive_entry": "X4",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/51",
+   "statement": "Theorem A (slice): a program exists exactly when the order-2 system has a solution (correction ((1 - i) + (1 + i) X^z)/2 after each move).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic built the corrected 2 in 7 at register level (512 characters, f = 1 to 6); slip 448 -> 256",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "slice"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/star-lemma-and-slice.md"
+   ],
+   "archive_entry": "M22",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/52",
+   "statement": "Theorem A (no-phase game): with address group H there is a unit W in M exactly when C[Sym_m x| H] has one; with phases every engine unit gives one of C[Sp(2m,2)] (necessary only in this round).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one skeptic; the converse (every program of the frame game C[Sp(2m,2)] completes to an engine unit, with one scratch array) was proved the same day by another round, argued by hand with one skeptic for each half (frame-packing-two-arrays)",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "no-phase",
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/no-phase-group-algebra.md",
+    "programs/no-phase-group-algebra/phi_check.py"
+   ],
+   "archive_entry": "M22",
+   "rerun_2026_10_19": "MATCH"
+  },
+  {
+   "id": "existence-routes/53",
+   "statement": "The engine version of the slice's matrix test stops at a constant: its rank form is blind, its pinned form proves M >= max(2W, W + m - 1) and cannot exceed 2 moves per array at block 3 or 2.5 at block 4.",
+   "status": "argued by hand, not checked",
+   "status_detail": "with exact computations; one skeptic rebuilt every letter as a matrix; the refusal half of the calibration failed",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "proofs/engine-matrix-test.md",
+    "programs/engine-matrix-test/"
+   ],
+   "archive_entry": "M22",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/54",
+   "statement": "Address maps make the slice's exact tests blind (for any cyclic address group).",
+   "status": "refuted",
+   "status_detail": "the tests depend on how the group sits: 36/56 order-3 and 48/336 order-5 conjugates and every coordinate permutation group still exclude 4 in 15; only Singer groups of order 15 escape",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": "the no-phase skeptic",
+   "superseded_by": null,
+   "evidence": [
+    "programs/no-phase-group-algebra/skeptic/my_conj_sweep.py",
+    "programs/no-phase-group-algebra/skeptic/my_cert_check.py"
+   ],
+   "archive_entry": "N7",
+   "rerun_2026_10_19": "first certificate reproduced"
+  },
+  {
+   "id": "existence-routes/55",
+   "statement": "At block 5, 8 in 31 (0.158) and 7 in 31 pass every exact test computed in the no-phase game with the order-31 Singer cycle and 300 random conjugates.",
+   "status": "open",
+   "status_detail": "checked by computer; no unit built; later rounds showed 9 and 10 in 31 impossible in the natural form and reduced 8 in 31 to 127 target classes (reed-muller-and-one-move)",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [],
+   "shape": "8 in 31",
+   "saving_if_it_existed": 0.158,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/no-phase-group-algebra/vtest5.py"
+   ],
+   "archive_entry": "N7",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/56",
+   "statement": "The 7-in-23 survivor at block 4 is excluded at the exact level.",
+   "status": "refuted",
+   "status_detail": "random contents fail the same test in the same way, so only a generic lift is excluded",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [],
+   "shape": "7 in 23",
+   "saving_if_it_existed": 0.142,
+   "numbers": {},
+   "refuted_by": "the 7-in-23 skeptic; the construction was later closed in its configuration by a later wave (moonshot-block4-block5)",
+   "superseded_by": null,
+   "evidence": [
+    "proofs/skeptic-seven-in-23-exact-level.md"
+   ],
+   "archive_entry": "N4",
+   "rerun_2026_10_19": null
+  },
+  {
+   "id": "existence-routes/57",
+   "statement": "The f = 2 widened test with unknown move contents is blind: it accepts 1 array in 2 moves at block 4, where 4 are needed.",
+   "status": "checked by computer",
+   "status_detail": "one program, reproduced by the skeptic",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "refuted_by": null,
+   "superseded_by": null,
+   "evidence": [
+    "programs/seven-in-23-exact-level/f2blind.py",
+    "programs/seven-in-23-exact-level/skeptic/vf2blind.py"
+   ],
+   "archive_entry": "N4",
+   "rerun_2026_10_19": "MATCH in substance (float noise)"
+  }
+ ],
+ "open": [
+  {
+   "id": "existence-routes/open-1",
+   "question": "Catalytic or slack forms of the boosters S6, S7, S8; boosters with 5-row jobs on registers above 16 rows.",
+   "worth": 0.133,
+   "first_experiment": "Screen the catalytic forms of S7 (for example S7 + [3] <= 3[3] + [7]) with intenum.py, lp2.py and the skeptic's vsurv.py (seconds each); then extend certlib.py past block 16; check that the job model's exponent equals the challenge's before relying on a hit.",
+   "programs": [
+    "programs/boosters/"
+   ]
+  },
+  {
+   "id": "existence-routes/open-2",
+   "question": "U_7 with 23 to 25 arrays in 127 moves in the slice; U_m below 3/4 of full sharing; the 95 near-uniform 13-array cases at block 6.",
+   "worth": 0.122,
+   "first_experiment": "A sharper star count for 25 in 127; for 24 in 127 an exact order-2 solution under a symmetry ansatz seeded with the bent-function matrices; certify any solution with the finite-field pipeline (Theorem A makes it a unit).",
+   "programs": [
+    "programs/star-lemma-and-slice/"
+   ]
+  },
+  {
+   "id": "existence-routes/open-3",
+   "question": "The slice at block 6 for general multisets of moves.",
+   "worth": 0.142,
+   "first_experiment": "An integer version of the rank bounds (the linear version loses the rounding that decides Theorem C).",
+   "programs": [
+    "programs/families-commutative-slice/"
+   ]
+  },
+  {
+   "id": "existence-routes/open-4",
+   "question": "Phase letters: the group algebra C[Sp(2m,2)] (the frame game) is the whole problem, but no test of the matrix kind has yet been shown to see phases.",
+   "worth": null,
+   "first_experiment": "The exact identity on the whole 135-frame module at block 3 for engine 2 in 5 and 2 in 4; if it refuses engine 2 in 5 it is the first matrix test that sees phases.",
+   "programs": [
+    "programs/engine-matrix-test/"
+   ]
+  },
+  {
+   "id": "existence-routes/open-5",
+   "question": "Mid-size candidates that need an exact last step: 7 in 24 at block 4, the 2-in-8 design s1501 at block 5.",
+   "worth": 0.139,
+   "first_experiment": "Once their structured systems exist (moonshot-block4-block5), solve modulo a prime p = 1 mod 8, lift, recognise and check exactly.",
+   "programs": [
+    "programs/finite-fields/"
+   ]
+  },
+  {
+   "id": "existence-routes/open-6",
+   "question": "Whether a dimension count can ever exclude a shape; counts inside a certificate's rank locus.",
+   "worth": null,
+   "first_experiment": "The generic rank of the program map restricted to the hook's rank locus at block 3, first on 2 in 5 (known impossible).",
+   "programs": [
+    "programs/dimension-counts/"
+   ]
+  },
+  {
+   "id": "existence-routes/open-7",
+   "question": "Proposition 1 of the price language (a saving above 0.1 iff no 0.9-price).",
+   "worth": null,
+   "first_experiment": "Write out its key step (a program from a saving mixture of rules with several kernels).",
+   "programs": []
+  },
+  {
+   "id": "existence-routes/open-8",
+   "question": "Trace-weighted costs at even f.",
+   "worth": null,
+   "first_experiment": "Check whether the block-3 hook's bound survives half-price moves in one parity sector at even f.",
+   "programs": [
+    "programs/limits/"
+   ]
+  },
+  {
+   "id": "existence-routes/open-9",
+   "question": "The Lean lemma 'a formal identity is correct at every f', needed for a unit known only to exist.",
+   "worth": null,
+   "first_experiment": "State it for the engine's letters and prove it for words with one paid letter; build it only once a unit or a proof of one exists.",
+   "programs": [
+    "programs/lean-existence-counts/"
+   ]
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/lean-existence-counts/",
+   "language": "lean",
+   "shows": "a unit known only to exist counts; scalar closure in OpenAI's RAM",
+   "command": "sh check.sh (from the repository root)",
+   "time": "2 to 8 minutes",
+   "memory": "about 6.6 GB",
+   "needs": [
+    "Lean v4.34.1",
+    "Mathlib"
+   ]
+  },
+  {
+   "path": "programs/challenge-root-field/",
+   "language": "python",
+   "shows": "1 - theta and the roots supplied",
+   "command": "python3 theta.py; python3 root_order.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": []
+  },
+  {
+   "path": "programs/restriction-of-scalars-toy/",
+   "language": "python",
+   "shows": "restriction of scalars on a toy unit",
+   "command": "python3 weil.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": []
+  },
+  {
+   "path": "programs/dimension-counts/",
+   "language": "python",
+   "shows": "exact counts, stand-in ranks",
+   "command": "python3 exact_counts.py",
+   "time": "seconds to an hour",
+   "memory": "up to several GB for the rank runs",
+   "needs": [
+    "numpy",
+    "scipy"
+   ]
+  },
+  {
+   "path": "programs/tau-theorem-and-laser/",
+   "language": "python",
+   "shows": "tau schedule, induction constant, Kronecker powers, packing loss",
+   "command": "python3 frontier_flow.py 480; python3 gamma_bound.py",
+   "time": "seconds to a minute",
+   "memory": "under 1 GB except lockstep_sim's fifth case",
+   "needs": [
+    "numpy",
+    "scipy"
+   ]
+  },
+  {
+   "path": "programs/finite-fields/",
+   "language": "python",
+   "shows": "modular existence pipeline and exact impossibility certificates",
+   "command": "unpack the data bundle; cd skeptic; python3 vall.py",
+   "time": "about 3 minutes",
+   "memory": "under 200 MB",
+   "needs": [
+    "Singular, msolve for searches only"
+   ]
+  },
+  {
+   "path": "programs/certified-numerics/",
+   "language": "python",
+   "shows": "Krawczyk tests and the exact stand-in schemes",
+   "command": "cd sx; python3 verify_scheme.py out/scheme_2in3.json",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "python-flint 0.9",
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/families-commutative-slice/",
+   "language": "python",
+   "shows": "Theorems 10, 17, 18",
+   "command": "python3 verify_cert_b4.py; python3 verify_cert_b5.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy",
+    "scipy"
+   ]
+  },
+  {
+   "path": "programs/limits/",
+   "language": "python",
+   "shows": "overlap Gram matrices in the column limit",
+   "command": "see the program headers",
+   "time": "minutes to hours",
+   "memory": "large outputs, not published",
+   "needs": [
+    "numpy",
+    "scipy"
+   ]
+  },
+  {
+   "path": "programs/price-reformulation/",
+   "language": "python",
+   "shows": "the refutation of the 0.036 ceiling",
+   "command": "cd skeptic; python3 check_prop3.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/duality/",
+   "language": "python",
+   "shows": "the duality repair and boosting",
+   "command": "cd skeptic; python3 a5_exact.py; python3 v2_roots.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy",
+    "scipy"
+   ]
+  },
+  {
+   "path": "programs/star-lemma-and-slice/",
+   "language": "python",
+   "shows": "Theorems A, C, D, E",
+   "command": "python3 check_star_lemma.py; python3 verify_star_cert.py theorem-E-certificate/star_cert_b5.json theorem-E-certificate/star_vars_b5.json",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/engine-matrix-test/",
+   "language": "python",
+   "shows": "the engine matrix test and its fakes",
+   "command": "python3 t_e10.py",
+   "time": "seconds to minutes",
+   "memory": "under a few GB",
+   "needs": [
+    "numpy",
+    "scipy",
+    "torch (two programs)"
+   ]
+  },
+  {
+   "path": "programs/no-phase-group-algebra/",
+   "language": "python",
+   "shows": "Theorem A's lift and the exact tests with address maps",
+   "command": "python3 phi_check.py; python3 raw_check.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy",
+    "torch (searches)"
+   ]
+  },
+  {
+   "path": "programs/boosters/",
+   "language": "python",
+   "shows": "the booster screen",
+   "command": "python3 rank3.py; python3 check_survivor.py",
+   "time": "seconds to minutes",
+   "memory": "small",
+   "needs": [
+    "numpy",
+    "scipy"
+   ]
+  },
+  {
+   "path": "programs/seven-in-23-exact-level/",
+   "language": "python",
+   "shows": "the 7-in-23 lift and the f = 2 blindness",
+   "command": "python3 f2blind.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+VCP START Tue Oct 13 18:54:34 UTC 2026 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 status_lines=39
+32832981402b8b0ce25660878d899acd873509cb7ef00d5604160bf43d12d590  Work/FourierC588/UniformFourierChallenge.lean
+a821746ec2e7e67d3feb623aad0e84998e4be95ac5516f2b9ead08fa78003321  Work/FourierC588Neg/UniformFourierChallenge.lean
+db04770b23667a33ad3999287dcdf4ff5f98d3c2c770574922797e073f34efa2  Work/FourierC588/Goal.lean
+4dbc2b2e709044e40aa388d5deab788250edc996660bd2e8e2454062f42a486d  Work/FourierC588/Main.lean
+e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  tools/Compare.lean
+=== STEP nobuild START Tue Oct 13 18:54:34 UTC 2026 cmd: lake build --no-build Work.FourierC588.Main Work.FourierC588.UniformFourierChallenge Work.FourierC588Neg.UniformFourierChallenge Work.GCert.Data.C588Controls Work.FourierC588.Axioms

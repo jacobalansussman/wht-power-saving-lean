@@ -1,0 +1,7 @@
+(1) carry the swapped content into stage 2 (free route fix, copy-free stage-2 delivery at local P_t)
+  via0   passes all final checks: True (off-route 0, junk 0); after the free route fix: distance to local 0 [2], to local P_t [1], nested in P_t True
+         paid moves whole word {'copy': {1: 8}, 'climb': {3: 40, 1: 8, 2: 8}, 'carry': {1: 16}}: rank mass 168 (STD 168, plain 160, J 160)
+  rideH  passes all final checks: True (off-route 0, junk 0); after the free route fix: distance to local 0 [2], to local P_t [1], nested in P_t True
+         paid moves whole word {'copy': {1: 8}, 'climb': {3: 40, 1: 8, 2: 8}, 'carry': {1: 16}}: rank mass 168 (STD 168, plain 160, J 160)
+(2) parity lemma d(A,F)+d(F,B)-d(A,B) = 2[(rk F - dim F^B) + (rk A - dim A^F)] for A <= B: 0 failures of 400
+    tiny unit, label w1: min pair excess of a common frame F over 10 spanned candidates: 2 (2 expected)

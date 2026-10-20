@@ -1,0 +1,6 @@
+hecke m=2 W=1 M=2 frames=15 k_sub=12 unknowns=17: best residual 8.25e-16 (recheck 8.25e-16) REALISED FAKE [0.0s]
+hecke m=2 W=2 M=4 frames=15 k_sub=12 unknowns=92: best residual 2.99e-15 (recheck 2.99e-15) REALISED FAKE [0.2s]
+hecke m=2 W=2 M=3 frames=15 k_sub=12 unknowns=52: best residual 1.96e-04 (recheck 1.96e-04) none found [14.0s]
+column m=2 W=1 M=2 frames=15 k_sub=12 unknowns=39: best residual 8.42e-16 (recheck 8.42e-16) REALISED FAKE [0.0s]
+column m=2 W=2 M=4 frames=15 k_sub=12 unknowns=180: best residual 1.59e-15 (recheck 1.59e-15) REALISED FAKE [1.2s]
+column m=2 W=2 M=3 frames=15 k_sub=12 unknowns=118: best residual 1.99e-04 (recheck 1.99e-04) none found [104.3s]

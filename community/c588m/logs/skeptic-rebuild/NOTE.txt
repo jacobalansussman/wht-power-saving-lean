@@ -1,0 +1,9 @@
+v-m-rebuild (13 Oct 2026), skeptic of the C588M (copy-free #588, annealed) Lean claim. Log index:
+colab2/run6.out   full rebuild of all 70 overlay modules from m-gen's package (sha 6554fd38) with plain lean, against Colab #2's
+                  independently built base (Shea 5239484); output root = symlink farm of base oleans + 140 new files.
+colab2/P2-deps.log   proof-closure probe (Deps.lean): XMut engine + C588M checks reached; Shea's C588 objects absent.
+colab2/C-pos.log, C-neg.log   Compare.lean (sha e48d6d3b) on MY build: PASS / FAIL (one unit stronger), as required.
+colab2/P2-compare-*.log   IGNORE: failed in 2 s because `lean` was not on PATH (elan proxy, no default toolchain); rerun = C-*.log.
+olean-diff.txt   all 70 oleans differ from m-build's Lake-built ones; plain-lean compiles on Colab #1 and #2 are byte-identical
+                 (C588MGl, C588MTab0), so the difference is Lake-vs-plain invocation, not inputs.
+colab1/run6.out  phase 1 (Main recompiled against m-build's oleans) on Colab #1; stopped after Main to free the slot.

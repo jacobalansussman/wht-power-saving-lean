@@ -1,0 +1,4 @@
+n=56 k=8 omega=4 maxcliques=630 junk/port [28] orthogonal partners/port [27] sigma [7]; span dim 8; floor <= omega*k = 32; break-even (one pair) 37.33; block 22
+max lines orthogonal to one f (sampled/structured): 32 -> each symmetric total gathers >= 24
+best coordinate decoder over 202 orthonormal bases: (60, [8, 7, 7, 8, 7, 8, 8, 7])
+        0.86 real         0.84 user         0.01 sys

@@ -1,0 +1,30 @@
+threads for the solution build (lake adapter): 1
+=== lean START Tue Oct 13 17:50:01 UTC 2026 epoch=1791913801 olean files: 0
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/mb/bos/control/bin:$PATH; export PATH; exec comparator /content/work/mb/bos/control/lean.json'
+=== lean END rc=0 wall=6497s Tue Oct 13 19:38:18 UTC 2026 maxrss_kb=8200360
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, Race.bound, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Submission
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 359
+=== audit START Tue Oct 13 19:38:18 UTC 2026 epoch=1791920298 olean files: 359
+cmd: exec lake env lean VerifierAudit.lean
+=== audit END rc=0 wall=1054s Tue Oct 13 19:55:52 UTC 2026 maxrss_kb=6485188
+'Race.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+olean files after: 359
+/content/work/mb/bos/stage/.lake/build/lib/lean/VerifierChallenge.olean
+/content/work/mb/bos/stage/.lake/build/lib/lean/VerifierChallenge.olean.hash
+/content/work/mb/bos/stage/.lake/build/lib/lean/VerifierChallenge.ilean.hash
+/content/work/mb/bos/stage/.lake/build/lib/lean/VerifierChallenge.ilean
+/content/work/mb/bos/stage/.lake/build/lib/lean/VerifierChallenge.trace
+/content/work/mb/bos/stage/.lake/build/ir/VerifierChallenge.setup.json
+/content/work/mb/bos/stage/.lake/build/ir/VerifierChallenge.c.hash
+/content/work/mb/bos/stage/.lake/build/ir/VerifierChallenge.c
+=== nanoda START Tue Oct 13 19:55:52 UTC 2026 epoch=1791921352 olean files: 358
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/mb/bos/control/bin:$PATH; export PATH; exec comparator /content/work/mb/bos/control/nanoda.json'
+=== nanoda END rc=0 wall=986s Tue Oct 13 20:12:18 UTC 2026 maxrss_kb=6443176
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 359

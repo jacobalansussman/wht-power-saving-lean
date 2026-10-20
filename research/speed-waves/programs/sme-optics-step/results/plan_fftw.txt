@@ -1,0 +1,6 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=1024 mode=plan SW=64 col radices: 2 8 8 8
+# FFTW plans (MEASURE, time limit) took 4.2 s
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=plan SW=32 col radices: 4 8 8 8
+# FFTW plans (MEASURE, time limit) took 15.5 s

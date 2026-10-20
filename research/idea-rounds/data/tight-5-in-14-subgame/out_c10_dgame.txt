@@ -1,0 +1,29 @@
+[2s]
+|B'| = 1344  |E'| = 192
+dims A, B, C: 7 21 28
+C7 ⟂ C21: True
+hook type 7: t = -0.333333, residual 1.57e-14
+hook type 21: t = 1.000000, residual 4.00e-14
+family members (cap, demand): [(10, 28), (10, 28), (10, 28), (10, 28)]
+rho1 block-off-diagonal norm: 1.1850476863957312e-15 1.2497345686627152e-15
+rho1 block-off-diagonal norm: 1.2346487634116438e-15 1.1568691601695226e-15
+rho1 block-off-diagonal norm: 1.2334510826147767e-15 1.1450828816688346e-15
+B' generator: |rho1 - rho2| = 3.4416913763379853e-15
+B' generator: |rho1 - rho2| = 3.4416913763379853e-15
+B' generator: |rho1 - rho2| = 2.7478019859472624e-15
+B' generator: |rho1 - rho2| = 3.3306690738754696e-15
+B' generator: |rho1 - rho2| = 2.886579864025407e-15
+rank G = 10  rank F = 28
+blocks of G: rank G77 4, G7,21 4, G21,7 4, G21,21 10; rank G_7rows 4, G_21rows 10; rank G_7cols 4, G_21cols 10
+blocks of F: rank F77 7, F7,21 7, F21,7 7, F21,21 21
+eigenvalues of E_h (rounded): [np.complex128(-1+0j), np.complex128(-1+0j), np.complex128(-1-0j), np.complex128(-1+0j), np.complex128(-1+0j), np.complex128(-1+0j), np.complex128(-1-0j), np.complex128(-1+0j), np.complex128(-1+0j), np.complex128(-1+0j), np.complex128(1+0j), np.complex128(1+0j), np.complex128(1+0j), np.complex128(1-0j), np.complex128(1+0j), np.complex128(1+0j), np.complex128(1-0j), np.complex128(1+0j), np.complex128(1-0j), np.complex128(1+0j), np.complex128(1+0j), np.complex128(1+0j), np.complex128(1-0j), np.complex128(1+0j), np.complex128(1+0j), np.complex128(1+0j), np.complex128(1+0j), np.complex128(1+0j)]
+graph certificate t=(-0.333,1.000): cap rank(G T) = 10, demand rank(F T) = 28
+graph certificate t=(0.700,-2.000): cap rank(G T) = 10, demand rank(F T) = 28
+graph certificate t=(1.000,1.000): cap rank(G T) = 10, demand rank(F T) = 28
+type S=(7,) Z=(): cap 4, demand 7 ratio 1.750
+type S=(7,) Z=(7,): cap 4, demand 7 ratio 1.750
+type S=(21,) Z=(): cap 10, demand 21 ratio 2.100
+type S=(21,) Z=(21,): cap 4, demand 7 ratio 1.750
+type S=(7, 21) Z=(): cap 10, demand 28 ratio 2.800
+type S=(7, 21) Z=(7,): cap 10, demand 21 ratio 2.100
+type S=(7, 21) Z=(21,): cap 4, demand 7 ratio 1.750

@@ -1,0 +1,6 @@
+3-cycle lifts (10 of them, e.g. X0Z0,X0Z3,X0Z5,X0Z6): demand split (76, 74, 74); fixed-move cap splits [(28, 26, 26)]
+3-cycle lifts (6 of them, e.g. X3Z3,X3Z6,X5Z3,X5Z5): demand split (74, 74, 76); fixed-move cap splits [(26, 28, 26)]
+transposition lifts (3 of them, e.g. X0Z0,X0Z3,X3Z0): demand split (104, 120); fixed-move cap splits [(36, 44)]
+transposition lifts (12 of them, e.g. X0Z4,X0Z7,X3Z4,X3Z7): demand split (112, 112); fixed-move cap splits [(40, 40)]
+transposition lifts (1 of them, e.g. X3Z3): demand split (120, 104); fixed-move cap splits [(44, 36)]
+Singer lifts (64 of them, e.g. X0Z0,X0Z1,X0Z2,X0Z3): demand split (32, 32, 32, 32, 32, 32, 32); fixed-move cap splits none among the tested moves

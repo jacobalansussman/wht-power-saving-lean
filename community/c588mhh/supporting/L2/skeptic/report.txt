@@ -1,0 +1,41 @@
+The written verdict of the independent agent (a skeptic) that ran this check, as it returned it, with home-folder
+paths shortened. Agent labels in it (c-base, m-build, m-gen, x-mutable, h-L1, h-L2, h-L3-build) are the names
+of the agents whose work it checked.
+
+I could not refute it. h-L2's claim holds up under an independent rebuild and a check of its statements.
+
+**Clean rebuild.** I copied h-L2's four XHost files, unchanged (same sha256), into <verify>/checks/wht43/bound-check/v-host-1/proj/. I took Work/Bank401/Adapt.lean straight from Shea's complex588 tree, not from h-L2. Its sha256 is d1e8804a…, the same as `source_sha256` on line 617 of Shea's build-global-receipt.json. I built my own library directory and wrote my own mk.sh. All six modules compiled on the Mac through locked.sh, one at a time, with LEAN_NUM_THREADS=2, zero errors and no sorry:
+
+| module | exit | time | peak footprint |
+|---|---|---|---|
+| Core | 0 | 41 s | 0.918 GB |
+| Transport | 0 | 3 s | 0.929 GB |
+| HostBank | 0 | 3 s | 0.922 GB |
+| Adapt (Shea) | 0 | 3 s | 0.923 GB |
+| Slot | 0 | 3 s | 0.905 GB |
+| my audit module | 0 | 3 s | 0.912 GB |
+
+Core's 41 s is probably a cold start; another agent's build was running alongside. Every printed axiom list is exactly [propext, Classical.choice, Quot.sound].
+
+**Sources.** A grep finds no sorry, admit, native_decide, axiom, opaque, extern or implemented_by; the only hits are "No `sorry`" doc lines. The engine modules the files import (GFrame/Clifford/Basic, Core, Climb; Engine/Free; Labels/BXMap) are byte-identical in the verify tree and Shea's tree. Their oleans are newer than their sources, so nothing is stale. Line counts match the claim: Transport 291, HostBank 218, Slot 43, Core 170.
+
+**Statements are the ones the plan needs, not weaker.**
+- `permMat_conj_dir` is the "dir into dir along the mapped direction" lemma.
+- `exists_transport_into` gives σ : APerm with σ(z i) = v(e i) for any injection e, given linearly independent z and v. permMat σ is free by the engine's `Free.perm`, which covers any additive bijection.
+- GInvE.fwd in Shea's Gauge/Defs.lean uses W.X : BXMap (from GWin) and `SLbl.top U := ⟨U.G, univ⟩`. So `hostOK_slot`'s hypotheses hN and hW are exactly GInvE's slot hypotheses.
+- The L1 finding is correct. `B401.gauged_Wn` already gives Wn = A * pk R * A′ with A and A′ free and |R| = card H − dim E. The bank-form lemmas use `free_inv` and need no C′*C = 1. Only the matrix route (`transport_twisted`, `hosted_climb`) assumes it.
+
+**Independent audit (my own VHost/Audit.lean, compiled, same three axioms).**
+- `audit_one`: an idle host ⟨G,s⟩→⟨G,t⟩ takes one GInvE slot (with a free P) and then reaches X.Φ⟨G,t⟩ in ONE block of rank |t\s| − (card H′ − dim E).
+- `audit_two_full`: two slots from different windows stack on one host; when fully hosted, the remainder is free.
+- `audit_noinv`: `hostOK_use` works with any free C and C′.
+
+So the pieces compose end to end. The remainder rank matches x-hosting's host_price.py ("child keeps rank r − sum of hosted widths").
+
+**Caveats (none refutes the claim).**
+- The window condition (host untouched between its hosted uses and its climb) and "one residual per host per call" are not in L2. The claim says so itself and leaves them to L3's checker.
+- `idle_host` assumes the host's idle climb is a single-base move ⟨G,s⟩→⟨G,t⟩ in a BXMap. L3 must check that Shea's GNetStage idle climbs have this form, or convert them.
+- Core.lean, x-hosting's unchanged L0, declares its lemmas in OAI.PowerSaving.GF rather than XHost. A grep finds no clash in x-mutable, x-exit-lean, Shea's tree or the verify tree.
+- No price is claimed. 1.5785076e-3 and 1.6360855e-3 remain Python prices, conditional on L3 and L4.
+
+**Resume.** `<verify>/checks/wht43/bound-check/v-host-1/REPRODUCE.sh` (about 1 minute; the logs go to v-host-1/logs/).

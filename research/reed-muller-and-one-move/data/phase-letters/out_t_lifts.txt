@@ -1,0 +1,7 @@
+block 2: lift found with total edge excess 0 (restart 0); rows reduce to their frames: True; abar_1 = 1, abar_2 = 2; ratio 2
+   => in C[Sp(4,2)] every unit has M >= 2W: no saving at block 2 (agrees with the Lean-checked engine bound).
+block 3: E162 file: 135 distinct Lagrangians of the seven-point symplectic space, rows reduce correctly: True; dims [3]
+   distance 1: delta histogram {1: 1626, 2: 204, 3: 60}; abar = 41/35
+   distance 2: delta histogram {2: 6996, 3: 564}; abar = 1307/630
+   distance 3: delta histogram {3: 8640}; abar = 3
+   ratio abar_3/abar_1 = 105/41 = 2.560976; 2 in 5 needs 5*abar_1 >= 2*abar_3: 41/7 >= 6? False  => engine 2 in 5 REFUSED in C[Sp(6,2)]: True

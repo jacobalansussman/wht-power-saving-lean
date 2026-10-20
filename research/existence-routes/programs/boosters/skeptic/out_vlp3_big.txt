@@ -1,0 +1,11 @@
+rigorous+argued: register 13, ranks <= 4: 197 rows; booster-negative at 0/50
+rigorous+argued: register 13, ranks <= 5: 197 rows; booster-negative at 0/50
+rigorous+argued: register 14, ranks <= 4: 174 rows; booster-negative at 0/50
+rigorous+argued: register 14, ranks <= 5: 174 rows; booster-negative at 0/50
+rigorous+argued: register 16, ranks <= 4: 205 rows; booster-negative at 0/50
+rigorous+argued: register 16, ranks <= 5: 205 rows; booster-negative at 0/50
+rigorous+argued: register 17, ranks <= 4: 51 rows; booster-negative at 29/50 (0.44..0.9983)
+rigorous+argued: register 17, ranks <= 5: 51 rows; booster-negative at 50/50 (0.02..0.9983)
+rigorous+argued: register 20, ranks <= 4: 60 rows; booster-negative at 29/50 (0.44..0.9983)
+rigorous+argued: register 20, ranks <= 5: 60 rows; booster-negative at 50/50 (0.02..0.9983)
+$H python3 -B vlp3_big.py 13 14 16 17 20  8.60s user 0.77s system 99% cpu 9.375 total

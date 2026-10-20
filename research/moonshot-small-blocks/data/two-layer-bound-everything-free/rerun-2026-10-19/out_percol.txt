@@ -1,0 +1,24 @@
+x = D_w c D_z, y = D_v (3 paid letters), relation x P_r y = a x y + b x Zs_r y
+cases with lambda(x y) != lambda(x Zs_r y): 0
+Clifford middle letters among them: 0 (expected 0: Clifford x maps Zs to a Pauli)
+2 paid letters (x = D_w c, y = D_z or x = D_w, y = c D_z): inhomogeneous cases = 0 (expected 0)
+
+3 paid letters, other placements: x = D_w c D_z, y = c2 D_v; and x = D_w, y = c D_z c2 D_v
+inhomogeneous cases with 3 paid letters: 0
+
+4 paid letters: x = D_w c D_z, y = D_v c2 D_u  (includes h P h^-1 with h = D_w CS D_z)
+inhomogeneous cases with 4 paid letters: 72
+  D1.CS.C01.D1.[P0].D1.CS.C01.D1   lambda(xy) = 0, lambda(x Zs y) = 1
+  D1.CS.C01.D1.[P0].D1.CS.D3   lambda(xy) = 1, lambda(x Zs y) = 0
+  D1.CS.C01.D1.[P0].D1.CSi.D3   lambda(xy) = 1, lambda(x Zs y) = 0
+  D1.CS.D2.[P1].D2.CS.D1   lambda(xy) = 1, lambda(x Zs y) = 0
+  D1.CS.D2.[P1].D2.CSi.D1   lambda(xy) = 1, lambda(x Zs y) = 0
+  D1.CSi.D2.[P1].D2.CS.D1   lambda(xy) = 1, lambda(x Zs y) = 0
+  D1.CSi.D2.[P1].D2.CSi.D1   lambda(xy) = 1, lambda(x Zs y) = 0
+  D1.CS.C01.D2.[P1].D2.CS.C01.D1   lambda(xy) = 0, lambda(x Zs y) = 1
+  D1.CS.D2.[P1].D2.CS.C01.D3   lambda(xy) = 0, lambda(x Zs y) = 1
+  D1.CSi.D2.[P1].D2.CS.C01.D3   lambda(xy) = 0, lambda(x Zs y) = 1
+  D1.CS.C01.D2.[P1].D2.CS.D3   lambda(xy) = 1, lambda(x Zs y) = 0
+  D1.CS.C01.D2.[P1].D2.CSi.D3   lambda(xy) = 1, lambda(x Zs y) = 0
+h = D2.CS.D1: lambda(h Zs0 h^-1) = 1   (h P h^-1 = a + b h Zs h^-1: layers {1, 0})
+h = D2.CS.D1: lambda(h Zs1 h^-1) = 0   (h P h^-1 = a + b h Zs h^-1: layers {0, 0})

@@ -1,0 +1,12 @@
+files: m1_MIX_s21.jsonl (150), m1_RAWR_s21.jsonl (150), m1_RAWS_s21.jsonl (150), m1_SECR_s21.jsonl (150), m2_MIXED_s61.jsonl (120), w1_A_s11.jsonl (500), w1_COS_s12.jsonl (500), w1_MIX_s12.jsonl (500), w1_RAWR_s11.jsonl (500), w1_RAWS_s11.jsonl (500), w1_RAWS_s12.jsonl (500), w1_SECR_s11.jsonl (500), w2_COS_s52.jsonl (250), w2_MIXCOS_s52.jsonl (250), w2_MIXED_s51.jsonl (250), w2_SECR_s51.jsonl (250), w3_MIXCOS_s72.jsonl (300), w3_MIXED_s71.jsonl (300), w3_MIX_s73.jsonl (200), w3_RAWR_s74.jsonl (200), w4_TYPEM1_s92.jsonl (300), w4_TYPEM_s91.jsonl (300)
+A       prefixes   500 pairs   4500 PASS   0 | max dim eps(M4) {0: 346, 1: 154} | max dim eps(M5') {0: 346, 1: 154} | best relaxed level {'2': 33, '3': 81, 'None': 386}
+COS     prefixes   750 pairs   6750 PASS   0 | max dim eps(M4) {0: 704, 1: 46} | max dim eps(M5') {0: 704, 1: 46} | best relaxed level {'2': 1, '3': 7, 'None': 742}
+MIX     prefixes   850 pairs   9603 PASS   0 | max dim eps(M4) {0: 845, 1: 5} | max dim eps(M5') {0: 845, 1: 5} | best relaxed level {'3': 19, 'None': 831}
+MIXCOS  prefixes   550 pairs   7206 PASS   0 | max dim eps(M4) {0: 550} | max dim eps(M5') {0: 550} | best relaxed level {'None': 550}
+MIXED   prefixes   670 pairs   9179 PASS   0 | max dim eps(M4) {0: 670} | max dim eps(M5') {0: 670} | best relaxed level {'None': 670}
+RAWR    prefixes   850 pairs   7650 PASS   0 | max dim eps(M4) {0: 850} | max dim eps(M5') {0: 850} | best relaxed level {'3': 189, 'None': 661}
+RAWS    prefixes  1150 pairs  10350 PASS   0 | max dim eps(M4) {0: 1150} | max dim eps(M5') {0: 1130, 1: 20} | best relaxed level {'3': 1150}
+SECR    prefixes   900 pairs   9590 PASS   0 | max dim eps(M4) {0: 896, 1: 4} | max dim eps(M5') {0: 896, 1: 4} | best relaxed level {'3': 5, 'None': 895}
+TYPEM   prefixes   300 pairs   2700 PASS   0 | max dim eps(M4) {0: 300} | max dim eps(M5') {0: 300} | best relaxed level {'None': 300}
+TYPEM1  prefixes   300 pairs   2700 PASS   0 | max dim eps(M4) {0: 300} | max dim eps(M5') {0: 300} | best relaxed level {'None': 300}
+TOTAL prefixes 6820 target pairs 70228 PASS pairs 0

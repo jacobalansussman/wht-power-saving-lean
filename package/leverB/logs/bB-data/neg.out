@@ -1,0 +1,34 @@
+INSTALL NEG: 14 new, 0 identical (skipped), from /content/work/bB-data/in/neg; hashes /content/work/bB-data/in-NEG.sha256
+=== negcalls START 19:10:13
+=== negcalls END rc=0 wall=468s maxrss_kb=810864 19:18:01
+=== neg-Work_XHostT_Data_S5Hn_NegSome3123.lean START 19:18:01
+=== neg-Work_XHostT_Data_S5Hn_NegSome3123.lean END rc=1 wall=2s maxrss_kb=793668 19:18:03
+NEG-FAILS-AS-REQUIRED Work/XHostT/Data/S5Hn/NegSome3123.lean: error: Tactic `decide` proved that the proposition
+=== neg-Work_XHostT_Data_S5Hw_NegSome0.lean START 19:18:03
+=== neg-Work_XHostT_Data_S5Hw_NegSome0.lean END rc=1 wall=3s maxrss_kb=793644 19:18:06
+NEG-FAILS-AS-REQUIRED Work/XHostT/Data/S5Hw/NegSome0.lean: error: Tactic `decide` proved that the proposition
+=== neg-Work_XHostT_Data_S5Hw_NegSome2070.lean START 19:18:06
+=== neg-Work_XHostT_Data_S5Hw_NegSome2070.lean END rc=1 wall=2s maxrss_kb=792620 19:18:08
+NEG-FAILS-AS-REQUIRED Work/XHostT/Data/S5Hw/NegSome2070.lean: error: Tactic `decide` proved that the proposition
+=== neg-Work_XHostT_Data_S5Hneg_NegHeads.lean START 19:18:08
+=== neg-Work_XHostT_Data_S5Hneg_NegHeads.lean END rc=1 wall=19s maxrss_kb=1196304 19:18:27
+NEG-FAILS-AS-REQUIRED Work/XHostT/Data/S5Hneg/NegHeads.lean: error: Tactic `decide` proved that the proposition
+=== neg-Work_XHostT_Data_S5Hneg_NegHeadsOld.lean START 19:18:27
+=== neg-Work_XHostT_Data_S5Hneg_NegHeadsOld.lean END rc=1 wall=22s maxrss_kb=1191688 19:18:49
+NEG-FAILS-AS-REQUIRED Work/XHostT/Data/S5Hneg/NegHeadsOld.lean: error: Tactic `decide` proved that the proposition
+=== neg-Work_XHostT_Data_S5Hneg_NegRes.lean START 19:18:49
+=== neg-Work_XHostT_Data_S5Hneg_NegRes.lean END rc=1 wall=1s maxrss_kb=793008 19:18:50
+NEG-FAILS-AS-REQUIRED Work/XHostT/Data/S5Hneg/NegRes.lean: error: Tactic `decide` proved that the proposition
+=== neg-Work_XHostT_Data_S5Hneg_NegGlob.lean START 19:18:50
+=== neg-Work_XHostT_Data_S5Hneg_NegGlob.lean END rc=1 wall=7s maxrss_kb=784776 19:18:57
+NEG-FAILS-AS-REQUIRED Work/XHostT/Data/S5Hneg/NegGlob.lean: error: Tactic `decide` proved that the proposition
+=== neg-Work_XHostT_Data_S5Hn_NegNone3123.lean START 19:18:57
+=== neg-Work_XHostT_Data_S5Hn_NegNone3123.lean END rc=0 wall=2s maxrss_kb=788068 19:18:59
+NONE-COMPILES Work/XHostT/Data/S5Hn/NegNone3123.lean
+=== neg-Work_XHostT_Data_S5Hw_NegNone0.lean START 19:18:59
+=== neg-Work_XHostT_Data_S5Hw_NegNone0.lean END rc=0 wall=2s maxrss_kb=793136 19:19:01
+NONE-COMPILES Work/XHostT/Data/S5Hw/NegNone0.lean
+=== neg-Work_XHostT_Data_S5Hw_NegNone2070.lean START 19:19:01
+=== neg-Work_XHostT_Data_S5Hw_NegNone2070.lean END rc=0 wall=2s maxrss_kb=788956 19:19:03
+NONE-COMPILES Work/XHostT/Data/S5Hw/NegNone2070.lean
+NEG ALL AS REQUIRED

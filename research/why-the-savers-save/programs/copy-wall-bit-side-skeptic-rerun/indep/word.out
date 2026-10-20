@@ -1,0 +1,15 @@
+unit word v 111 rank_F2(B0|live) = 9
+F1 lower bounds: rank_p of r(q) over the 511 nonzero W0 vectors: [(7, 9), (8, 502)]
+   rank<=7 candidate |S| = 56  S lies in y^perp for punctured y = [17]
+   rank<=7 candidate |S| = 58  S lies in y^perp for punctured y = [53]
+   rank<=7 candidate |S| = 60  S lies in y^perp for punctured y = [63]
+   rank<=7 candidate |S| = 58  S lies in y^perp for punctured y = [114]
+   rank<=7 candidate |S| = 56  S lies in y^perp for punctured y = [58]
+   rank<=7 candidate |S| = 59  S lies in y^perp for punctured y = [8]
+   rank<=7 candidate |S| = 58  S lies in y^perp for punctured y = [51]
+   rank<=7 candidate |S| = 59  S lies in y^perp for punctured y = [72]
+   rank<=7 candidate |S| = 59  S lies in y^perp for punctured y = [39]
+F2 sizes |r(q)|: [(48, 4), (49, 12), (50, 32), (51, 50), (52, 76), (53, 52), (54, 24), (55, 5), (56, 5), (57, 24), (58, 52), (59, 76), (60, 50), (61, 32), (62, 12), (63, 4), (111, 1)]  min 48
+root-orthogonal 6-flats: 4900 line counts: [(30, 3780), (36, 1120)]
+F3 lower bound: min over the 4,900 flats of rank_p(r(q) minus F), histogram over q: [(7, 120), (8, 391)]  worst 7  70.3 s
+VERDICT F3 (every nonzero r(q) minus every E6/D6 flat has rank >= 7): True

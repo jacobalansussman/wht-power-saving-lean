@@ -1,0 +1,27 @@
+=== nobuild START 20:08:18
+=== nobuild END rc=0 wall=13s maxrss_kb=990216 20:08:31
+All targets up-to-date (9327 jobs).
+TREE OK /content/work/aA-final/T (12G)
+INSTALL L2979H-extra: 0 new, 266 identical (skipped), from /content/work/aA-final/in/engine; hashes /content/work/aA-final/in-L2979H-extra.sha256
+INSTALL L2979H-side: 0 new, 4 identical (skipped), from /content/work/aA-final/in/side; hashes /content/work/aA-final/in-L2979H-side.sha256
+INSTALL L2979H: 0 new, 20 identical (skipped), from /content/work/aA-final/in/final-L2979H/stage; hashes /content/work/aA-final/in-L2979H.sha256
+=== lightA START 20:08:32
+=== lightA END rc=0 wall=2s maxrss_kb=836652 20:08:34
+ℹ [41/41] Replayed Work.XHostT.Data.H2979H.Heads
+info: Work/XHostT/Data/H2979H/Heads.lean:20:0: 'OAI.PowerSaving.XHostT.K.DH2979H.heads_cnt' depends on axioms: [propext]
+Build completed successfully (41 jobs).
+   (slot: waited 70s; heavy 2, avail 40622 MB)
+phase B LEAN_NUM_THREADS=1
+=== engine START 20:09:44
+=== engine END rc=0 wall=244s maxrss_kb=7660928 20:13:48
+info: Work/FourierL2979H/Axioms.lean:3:0: 'OAI.PowerSaving.convolution_mainL2979H' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979H/Axioms.lean:4:0: 'OAI.PowerSaving.RAM.hillsL2979H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9511 jobs).
+PHASE B rc=0
+      1 info: XExit/Pack.lean:284:0: 'OAI.PowerSaving.XEX.fits_toE'' depends on axioms: [propext, Classical.choice, Quot.sound]
+      1 info: XExit/Pack.lean:283:0: 'OAI.PowerSaving.XEX.GInvX.toE'' depends on axioms: [propext, Classical.choice, Quot.sound]
+      1 info: XExit/Pack.lean:282:0: 'OAI.PowerSaving.XEX.GInvX.toE' depends on axioms: [propext, Classical.choice, Quot.sound]
+      1 info: XExit/Pack.lean:281:0: 'OAI.PowerSaving.XEX.GInvX.routeE' depends on axioms: [propext, Classical.choice, Quot.sound]
+      1 info: XExit/Pack.lean:280:0: 'OAI.PowerSaving.XEX.route_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+0
+EXIT 0

@@ -1,0 +1,25 @@
+PART 1  Lemma W, own transcription, exact in F_p
+  m=1 rank 1 (kernel rank): F over all independent tuples = [1]; predicted 1
+  m=2 rank 1: F over all independent tuples = [2]; predicted 2
+  m=2 rank 2 (kernel rank): F over all independent tuples = [3]; predicted 3
+  m=3 rank 1: F over all independent tuples = [4]; predicted 4
+  m=3 rank 2: F over all independent tuples = [6]; predicted 6
+  m=3 rank 3 (kernel rank): F over all independent tuples = [7]; predicted 7
+  m=4 rank 1: 3 random tuples: F = [8]; predicted 8
+  m=4 rank 3: 3 random tuples: F = [14]; predicted 14
+  m=4 rank 4: 3 random tuples: F = [15]; predicted 15
+PART 3  T2 (coverage form): weight of a paid step applied to a part of an array
+  m=1, other columns of dimension 2: 12 random controlled steps, rise above (rank of selector) x F(g): 0
+  m=1, other columns of dimension 3: 12 random controlled steps, rise above (rank of selector) x F(g): 0
+  m=2, other columns of dimension 2: 4 random controlled steps, rise above (rank of selector) x F(g): 0
+  m=2, other columns of dimension 3: 4 random controlled steps, rise above (rank of selector) x F(g): 0
+  CONTROL: C on one column only (cheap, O(n)): Delta rises by 2 (not kept, as the hypothesis says)
+  cross-column address permutation (x,y)->(x,x+y): Delta rises by 1 (a monomial step that does NOT keep Delta)
+  column swap (x,y)->(y,x): Delta rises by 0
+PART 4  the two sides of T1 at the smallest sizes
+  m=1: kernel needs 1 of 2; one block of rank m-1 gives 0; so per array at least no block exists (rank<1): the kernel cannot be made at all
+  m=2: kernel needs 3 of 4; one block of rank m-1 gives 2; so per array at least 3/2 = 1.5000 blocks
+  m=3: kernel needs 7 of 8; one block of rank m-1 gives 6; so per array at least 7/6 = 1.1667 blocks
+  m=4: kernel needs 15 of 16; one block of rank m-1 gives 14; so per array at least 15/14 = 1.0714 blocks
+  even-weight code on 4 columns, one bit: dim Y = 8, dim(Y meet C^4 Y) = 4: ratio 4/8 (Delta has 1/2)
+  repetition code on 3 columns, one bit: dim Y = 2, dim(Y meet C^3 Y) = 0: ratio 0/2

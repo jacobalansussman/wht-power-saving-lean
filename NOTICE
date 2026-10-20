@@ -9,8 +9,8 @@ those of openai/math and are kept only because the new files extend that
 development.
 
 This repository is not a project of CrocSwap/integer-mult-bounds either. Its
-authors did not write, review or endorse it. Section 6 says what is taken
-from their repository.
+authors did not write, review or endorse it. Sections 6, 9 and 10 say what
+is taken from their repository.
 
 This repository contains files from, and files derived from, the repository
 "openai/math" (https://github.com/openai/math), family 130, "Exact Fourier
@@ -482,6 +482,511 @@ to the authors of openai/math (OpenAI).
    SciPy (scipy.optimize.milp), with NumPy; none of the three is included
    here. The credits, with links, are in README.md ("Whose ideas the new
    unit uses") and in RELATED-WORK.md, section 8.
+
+9. Files under community/ (fifth revision).
+   The folders under community/ are packages of Lean files laid over a
+   clone of Ryan Shea's repository "shea256/fourier-transform-below-nlogn"
+   (https://github.com/shea256/fourier-transform-below-nlogn) at commit
+   52394849c7ecf3412d39b925d75fc7fdb98994d8. That repository is published
+   under the Apache License, Version 2.0. Its NOTICE files are copied,
+   unchanged, into third-party/shea256-fourier-transform-below-nlogn/
+   (NOTICE, lean/complex588/NOTICE and lean/complex588/NOTICE.complex588);
+   they apply to the material below that comes from his repository. Notices
+   of those files that pertain to it, quoted:
+
+     Finite Network Improvements for the Exact Discrete Fourier Transform
+     Copyright 2026 Ryan Shea
+
+     The source circuit is the atm3 provider reconstructed from Jeremy
+     Kothe's CrocSwap/integer-mult-bounds PR588, commit
+     6d0e53b66c29abd17981881a09eaff41ac862d85.
+
+     The dedicated entrance-gauged nine-stage layout is Dugongue's #401 on
+     Zhihao Chen/jacklightChen's #377, building on DaysSky's bridged layout
+     and lydakis's bank patterns. [...] These files are taken from Nil
+     Mamano's published Big O Speedrun submission, bigospeedrun/verifier
+     commit 025396033eede56e3af6e02ed2679ba828381bd5.
+
+   The repository bigospeedrun/verifier (https://github.com/bigospeedrun/
+   verifier) is published under the Apache License, Version 2.0.
+
+   a. Modified copies of OpenAI's statement file. Each file named
+      UniformFourierChallenge.lean under community/*/overlay/Work/ and
+      community/c588m/variants/*/Work/ (18 files: the folders FourierC588
+      and FourierC588Neg of c588-repack; FourierC588M and FourierC588MNeg of
+      c588m and of its two variants; FourierC588MH, FourierC588MHNeg,
+      FourierC588MHH and FourierC588MHHNeg of c588mhh; FourierU8X and
+      FourierU8XNeg of u8x; FourierU8XM and FourierU8XMNeg of u8xm;
+      FourierU8XMHH and FourierU8XMHHNeg of u8xmhh) is a
+      modified copy of lean/ComparatorChallenges/UniformFourier.lean of
+      openai/math at the commit above. Changes: the exponent
+      1 - 1/(10^(13:ℕ)) is replaced by the package's exponent (in a file
+      whose folder ends in Neg, one unit stronger); the seven names of
+      section 2 receive the package's suffix; and a comment, beginning on
+      line 3, that says so was added after the build and the checks. The
+      comment gives the sha256 of the file without it, the file that was
+      compiled and checked. The copies in c588-repack are made from Shea's
+      copies at the same paths (suffix C588), with only the exponent
+      changed. Everything else in these files is the upstream text,
+      unchanged. tools/community/package_check.py checks each of them
+      against third-party/openai-math/.
+      Seven more files hold the same upstream text, changed, without such a
+      comment inside them, because they are kept as they were compiled or
+      fetched; a file NOTICE.txt in each of their folders says what was
+      changed:
+      - community/c588m/logs/skeptic-statement/fetched/Work/FourierC588M/
+        and FourierC588MNeg/UniformFourierChallenge.lean (2 files): the
+        copies of c588m's two statement files that an independent agent
+        fetched from the build machine, as compiled (the files of
+        community/c588m/overlay/ at the same paths without their comment);
+      - community/base-logs/ref/mine-12331685.lean, mine-12331686.lean and
+        mine-Y-7547360.lean (3 files): the agents' own derivations of the
+        statement, with the exponent and the suffix (C588 or Y) changed;
+      - community/c588-repack/logs/colab/submission/VerifierChallenge.lean
+        and community/u8xmhh/logs/colab/bos-H-stage/VerifierChallenge.lean
+        (2 files): the challenge of the offline re-creation of the
+        leaderboard's verifier, which is challenges/dft/UniformFourier233.lean
+        of bigospeedrun/verifier (itself a modified copy of OpenAI's file
+        whose first lines say so) followed by the target theorem Race.bound.
+      community/base-logs/ref/ also holds three unmodified copies of
+      OpenAI's file (UniformFourier-<commit>.lean, byte-identical to
+      third-party/openai-math/).
+
+   b. Modified copies of OpenAI's proof files. In each package, the folder
+      Work/Fourier<suffix>/ (for example Work/FourierC588MHH/) holds copies
+      of eleven files of lean/OAI/Computability/FourierTransform/ of
+      openai/math and of five definitions of its Goal.lean, made the way
+      section 7 describes, by Shea's script mkchain_c401g5.py or by the
+      agents' generators that copy its output under a new suffix (for
+      example community/c588mhh/generators/lean-gen/mk_fourier_h.py). Each
+      begins with a
+      comment that names the upstream file and states what was changed. In
+      c588-repack these are Shea's own copies with the exponent changed.
+
+   c. Files that contain upstream text. The files Challenge.lean under
+      community/wht-c588/overlay/Work/ and community/wht-c588mhh/overlay/
+      Work/ contain the RAM cost model of
+      lean/ComparatorChallenges/UniformFourier.lean of openai/math,
+      unchanged, as Work/GCert/Data/ChallengeB2Ge8x.lean does (section 2);
+      their headers say what differs from that file.
+
+   d. Files adapted from Shea's repository in community/c588mhh/overlay/
+      Work/XHost/:
+      - HDef.lean is a copy of lean/complex588/Work/Bridge401/GNetDef.lean,
+        HStage.lean of Work/Bridge401/GNetStage.lean, HCert.lean of
+        Work/Bridge401/GNetCert.lean, HGeom.lean of the instance part of
+        Work/Bridge401/GGeom.lean, and HEnd.lean is adapted from
+        Work/Bridge401/End.lean, each with same-run hosting added (the idea
+        of DaysSky's pull request #442 to CrocSwap/integer-mult-bounds) and
+        the names changed. In Shea's tree these files are those of Nil
+        Mamano's submission named above (his SOURCE_MANIFEST.json records
+        each as taken from submissions/dft/nmamano-dft-record/ at the
+        verifier commit above), written by his generator gen401.py on the
+        layouts credited above, with the engine of this repository.
+      - Frames.lean adapts lemmas of Work/Bank401/Adapt.lean and
+        Work/Bank401/Frames.lean of the same tree, which come from the same
+        submission: host_adapt is bank_adapt, host_pad is bank_pad and
+        slot_frames is bank_frames, each with the new coordinates chosen
+        inside the pending set of an idle climb.
+      - HSchedK.lean copies the lemmas about lists of
+        Work/Bridge401/SchedK.lean of the same tree, and its checker
+        hostSchedK is modelled on the checker schedK there; HostK.lean is
+        modelled on the same checker.
+      The header of each file names its source and says what was changed.
+      One header is wrong in part: that of HEnd.lean says that Shea's
+      End.lean was written after a file Work/Bridge377/End.lean of Jacob
+      Sussman's. No such file of his exists; Shea's End.lean says only that
+      it follows a file of that name. The header is left as it was compiled
+      (community/c588mhh/README.txt says so).
+      The generators that wrote them are under
+      community/c588mhh/generators/lean-gen/. The same twelve network files
+      of Work/XHost/, byte-identical, are also in community/u8xmhh/overlay/
+      Work/XHost/.
+      The log community/c588mhh/supporting/L2/skeptic/logs/
+      Work_Bank401_Adapt.log is of his file, compiled unchanged; the file
+      itself is not included.
+
+   e. Programs from Shea's repository.
+      - Byte-for-byte copies of his files at the commit above, unchanged and
+        without a notice inside them (the same files are also in
+        third-party/shea256-fourier-transform-below-nlogn/ at their own
+        paths):
+        research/complex-transfer-588-596/experiments/generate_global_lean.py
+          is copied as tools/community/route/generate_global_lean.py and
+          tools/community/repack/tools/generate_global_lean.py;
+        research/complex-transfer-588-596/experiments/bank_reprice.py is
+          copied as tools/community/repack/tools/shea_bank_reprice.py;
+        research/complex-transfer-588-596/verification/exact_moment.py is
+          copied as tools/community/route/exact_moment.py,
+          tools/community/repack/tools/exact_moment.py,
+          community/c588mhh/generators/design-tools/exact_moment.py and
+          community/u8xmhh/generators/design-tools/exact_moment.py.
+      - route_price.py, in four identical copies (tools/community/route/,
+        tools/community/repack/tools/,
+        community/c588mhh/generators/design-tools/ and
+        community/u8xmhh/generators/design-tools/), contains functions
+        copied from his bank_reprice.py and generate_global_lean.py (its
+        header says so), changed to price a local word through his route.
+      - The generators of tools/community/c588m-gen/ drive or adapt his
+        scripts in third-party/shea256-fourier-transform-below-nlogn/
+        research/; each adapted file says what it changes.
+      - community/c588-repack/overlay/comparator/fourier.json is his
+        comparator configuration, unchanged.
+
+   f. Data. The certificate of Kothe's #588 circuit, its bank schedule and
+      its price, as published in Shea's repository, are in
+      third-party/shea256-fourier-transform-below-nlogn/lean/complex588/
+      artifacts/, unchanged. The packages' certificate and data modules
+      are derived from them (VERIFY.md, section 11, says how).
+
+   g. Data derived from CrocSwap/integer-mult-bounds at a later state (the
+      U8 circuit). The certificates of community/u8x and community/u8xm (the
+      files under their Work/GCert/Data/ whose paths contain U8X),
+      and the host table and data modules of community/u8xmhh, which are
+      computed from the certificate of u8xm, are derived from the U8 word of
+      the repository CrocSwap/integer-mult-bounds
+      (https://github.com/CrocSwap/integer-mult-bounds), a circuit of that
+      community: Jeremy Kothe's pull request #869, on his #799 (which
+      carries Chafik Boukhalfa's frame changes of #741), on icekylinx's
+      gauge44 construction (#645) and on the earlier work that their
+      notices name. Only the word's additions and their frames are used:
+      not the owner maps of #870 (Kothe, with Hao Yan's #858), #890
+      (Boukhalfa) and #942 (Jonathan Capalbo), nor DreamingOfClouds' bit
+      supplier #589. The agents rebuilt the word with that repository's
+      own program
+      research/complex-t21-owners/vendor/pr870/construction/barch/
+      reproduce_barch.py (recipe U8; #869's builder, in the copy of #870's
+      package that #890 keeps), in a clone at commit
+      407d52ff15b2217b6e22bce44728b4c3907b6515 of its main branch
+      (13 October 2026). The word they obtained has the canonical sha256
+      24db880b7dab31e6af4eec8a1aba1bbbae29cd50d9a7b77cf0e9b571b3e5ae7c, the
+      value pinned for it in that repository (the file
+      LOCAL-PINS-barch-U8.json next to the program). The logs of that run are in
+      community/base-logs/u8-word/. No program of that repository is
+      included here, and the word itself is not included: the packages hold
+      certificates computed from it.
+      That repository is published under the Apache License, Version 2.0
+      (its LICENSE at that commit is the same text as the file LICENSE).
+      Its NOTICE file at that commit differs from the copy of section 6 (the
+      state of pull request #193) in one passage, which
+      third-party/CrocSwap-integer-mult-bounds/at-407d52ff/SOURCE.txt
+      describes. Complete copies of that NOTICE file and of the notice files
+      of the folders the program comes from
+      (research/complex-t21-owners/NOTICE.md and, under its vendor/pr870/,
+      NOTICE.md, UPSTREAM-NOTICE.md and t16/NOTICE.md), unchanged and at
+      their paths, are in
+      third-party/CrocSwap-integer-mult-bounds/at-407d52ff/; they apply to
+      these data.
+
+   The new files of community/ were made on 2026-10-13 the way section 4
+   describes. The credits, with links, are in README.md.
+
+10. Files added in the fifth revision outside community/ (package/,
+    scripts/, tools/lever/, tools/lever-hub/, tools/reproduce-search.sh,
+    tools/compare_results.py, data/, results/, research/,
+    notes/how-the-lever-was-found.md, notes/open-directions-4.md and the
+    additions to third-party/).
+   The packages under package/ (the sixth result, package/u8x0hq, and the
+   recursion lever, package/leverF, package/leverB, package/leverA, package/lever2979, package/lever) are laid over the same
+   clone of Ryan Shea's repository as the packages of section 9 (commit
+   52394849c7ecf3412d39b925d75fc7fdb98994d8, folder lean/complex588,
+   Apache License, Version 2.0). His licence and notice files in
+   third-party/shea256-fourier-transform-below-nlogn/ apply to the material
+   of his repository that files of these packages copy or adapt; each such
+   file says so in its first lines, and the packages' README.txt list them.
+   Shea's tree carries Lean files of Nil Mamano's published Big O Speedrun
+   submission (bigospeedrun/verifier, Apache License, Version 2.0): the
+   gauged interface, the nine-stage network, its bank lemmas and checker,
+   its end theorem and the templates of the Fourier chain. The hosted
+   networks of these packages (Work/XHost in package/u8x0hq; Work/XHostD,
+   Work/XHostR and Work/XHostT in the lever packages) are adapted from those
+   network files, as their first lines say.
+
+   a. Modified copies of OpenAI's statement file. Each file named
+      UniformFourierChallenge.lean under package/*/overlay/Work/ is a
+      modified copy of lean/ComparatorChallenges/UniformFourier.lean of
+      openai/math at the commit above: in package/u8x0hq the folders
+      FourierU8XM, FourierU8XMHH, FourierU8X0, FourierU8X0HH and
+      FourierU8X0HQ and their twins ending in Neg (10 files);
+      in package/leverF the folders FourierL3945F and FourierL3945FNeg (2 files); in package/leverB the folders FourierL3945H and FourierL3945HNeg (2 files); in package/leverA the folders FourierL2979H and FourierL2979HNeg (2 files); in package/lever2979 the folders FourierL2979 and FourierL2979Neg (2 files); in package/lever the folders FourierL3945 and FourierL3945Neg (2 files). Changes: the exponent
+      1 - 1/(10^(13:ℕ)) is replaced by the package's exponent (in a folder
+      whose name ends in Neg, one unit stronger), and the seven names of
+      section 2 receive the package's suffix. Everything else in these files
+      is the upstream text, unchanged. Unlike the copies of section 9, these
+      files carry no comment inside them: they are kept byte for byte as they
+      were compiled, because scripts/build-and-check.sh derives them again
+      from third-party/openai-math/ (scripts/derive_challenges.sh) and
+      compares the two. This section is their notice.
+   b. Modified copies of OpenAI's proof files. In each package, the folders
+      Work/Fourier<suffix>/ hold copies of eleven files of
+      lean/OAI/Computability/FourierTransform/ of openai/math and of five
+      definitions of its Goal.lean, made by Shea's script mkchain_c401g5.py
+      or by the agents' generators that copy its output under a new suffix.
+      Each begins with a comment that names the upstream file and states
+      what was changed.
+   c. The community's files. third-party/CrocSwap-integer-mult-bounds/
+      staged544-terminal-gap-fill/ holds unmodified copies of 32 files of the
+      folder research/staged544-terminal-gap-fill/ of pull request #3945 of
+      CrocSwap/integer-mult-bounds at its head
+      91f81d131252db704f945891da1ea54e29d46b8b (Dugongue's branch): the owner
+      data (FILL, PROFILE, ORDER, DISPATCH, PLAN, TEMPLATE, the two words and
+      the files of #3815 that #3945 carries as old-*), README.md, PROOF.md,
+      RESULT.json, SOURCES.json, LICENSE, NOTICE.md and the native lineage
+      notices. BLOBS.txt gives the git blob hash of each, as GitHub stores
+      it. That repository and its contributors' branches are published under
+      the Apache License, Version 2.0; the NOTICE.md and native notices of
+      that folder apply to these files and are quoted in substance in (g).
+      The files of #2979 (research/rank7-joint-endframes/ of the main branch
+      of CrocSwap/integer-mult-bounds at 20ecf289; Marius-Paul Dumitrean,
+      with the files of Mason Hale's #2917 and of #2942 that its NOTICE
+      names) are copied unmodified, 12 of them, into package/lever2979/
+      and package/leverA/ under generators/tree/wht45/lever/p-alt/dl/
+      main2979/: CLAIM.json, CREDITS.md, PINS.json, ALLOCATION-PINS.json,
+      the allocation files DISPATCH, FILL, ORDER, PROFILE and PROVIDERS,
+      and the data files PARENT-base, WORD-base and WORD-extra.
+      package/leverA/generators/tree/wht45/allheads/aA-data/in/alloc2979H/
+      holds unmodified copies of its DISPATCH, ORDER, PROFILE and PROVIDERS
+      (beside the table with every head kept, FILL.json.gz, see (d)). Both
+      packages also hold #3945's owner/inputs/PLAN.json.gz and
+      TEMPLATE.json.gz under generators/tree/wht45/lever/g-heads/dl/pr3945/.
+      The generators check every one of these copies against its sha256
+      (generators/tree.sha256) before they run; the same licence and the
+      notices of #2979 (for PLAN and TEMPLATE, of #3945) apply to them.
+      Both packages also hold generators/tree/wht43/bound-check/k-word/
+      tools/build_tri_869.py, an unmodified copy of the community's word
+      builder construction/barch/build_tri.py (the same bytes as
+      research/complex-t21-owners/vendor/pr870/construction/barch/
+      build_tri.py of its main branch, whose notices section 9, item g,
+      names); the generators do not run it.
+      More unmodified copies of the same folder of #3945 are in package/leverF/
+      and package/leverB/, under generators/tree/wht45/lever/g-heads/dl/pr3945/
+      owner/: 21 of the files above, and #3945's build_fill.py, check_gain.py
+      and verify.py (git blob hashes equal to GitHub's at 91f81d13); the same
+      licence and notices apply to them.
+   d. Data derived from the community's files. data/native/ holds the
+      canonical native words of #3945's two words (and of #3815's), the
+      output of #3945's own program native/run_native.py, run unchanged by
+      the agents. data/gcert/, data/residuals-*.json and data/t74ctl/ are
+      the agents' conversion of those words, and of the earlier T74 words,
+      into this project's certificate format (tools/lever/lower_b.py and
+      t74_control.py); data/t74ctl/inputs/ holds the community's T74
+      inputs repackaged in the layout of #3945's package (TEMPLATE.json.gz
+      unmodified, and ORDER.json with the same content as the community's
+      T74 order). The Lean data of the lever packages (the words, the
+      dispatch, the tables of hosts) is generated from such conversions and
+      from the community's files by the generators in each package. The
+      tables with every head kept (the folders fill/ of the packages on
+      every head kept, where shipped) were made by the community's own
+      allocation programs (on #2979, its fill17.py and double.py; on #3945,
+      the hall_lp.py and build_fill.py of #3815 and #3945's offset step),
+      run with one added condition; each package's fill/ README says how,
+      and which of those programs it copies, with their notices.
+   e. Programs that re-implement or adapt the community's code:
+      - tools/lever/pricer.py re-implements (does not import) the community's
+        moment engine and kappa assembly (research/native-complex-moment552/
+        engines/moment.py and outer.py, research/gauge44-frames-x/code/
+        assemble.py). The package "native complex moment" is by Rohan Arun
+        with OpenAI Codex assistance, on Dugongue's #552, eumemic's #543 and
+        #558, and icekylinx's complex-cover notes; its outer assembly is
+        eumemic's, after icekylinx's #144 and Zhihao Chen's #23, with the
+        balanced prefix of the RaD project (hipotures).
+      - tools/lever/heads_fill.py and g0_staged.py re-implement the window
+        and family semantics of #3945's owner/verify.py (they do not import
+        it).
+      - tools/lever/lower_b.py extends this project's own lowering program
+        to the community's borrowed-helper words; the meaning of a warp
+        follows the community's native code (bw_transport.py, bw_emit.py of
+        #3945's native/vendor), which was read, not copied.
+   f. Scripts. scripts/apply-overlay.sh, build-and-check.sh and
+      run-comparator.sh are adapted from this project's community/scripts/;
+      scripts/base/, cc-jail/, bos/ and lever-run/ are the agents' scripts
+      as run. Those in bos/ and lever-run/ package a proof in the layout of
+      the entries of bigospeedrun/verifier and run that verifier's three
+      phases; the verifier's own code is not included, except its function
+      strip_comments (scripts/verifier.py of bigospeedrun/verifier, Apache
+      License, Version 2.0), whose logic scripts/bos/fspb_submission.py and
+      scripts/lever-run/isk_submission.py copy, as the line that defines it
+      says; the same function is in community/scripts/bos/mb_submission.py,
+      community/u8xmhh/scripts-as-run/build/fsb_submission.py and
+      package/leverF/logs/fc-engine/C3/scripts/isk_submission.py.
+   g. Credit for the circuits of the lever.
+      #3945, as its NOTICE.md and native lineage notices ask that the credit
+      be kept:
+      - #3945 (Dugongue, with substantial OpenAI Codex assistance, including
+        three parallel Codex agents): the terminal-width construction (26
+        protected helper terminals from width 4 to width 5, with scalar and
+        native frames refitted), the idle-gap absorption proof, the
+        source-guarded recipe, the independent finite checks and the
+        integration.
+      - dataisfire, #3734: the staged544 supplier and its full source closure.
+      - zxv, #3682: the staged pair; #3638: the earlier T360 allocation.
+      - Ross Richardson, #3605: the staged entrance, cleanup and residual
+        checks (helpers 644 and 660 from width 8 to 7).
+      - Erwan Secousses / ChaloupeMusic, #3815, with the #3638 lineage: the
+        attained T360 owner clock and fill, and the allocation programs that
+        made the table with every head kept on #3945.
+      - hexapode (Pierre-Loic Doulcet), #3802 and #3875: the earlier complete
+        endpoint combination and its refinement.
+      - Dugongue, #3857 (general proof and evaluator work) and #3929 (the
+        transported-frame compiler).
+      - Sagar Thakrar, #3687: audit_core.py, which reimplements Arham Tahir's
+        coupled-carrier audit; roger-sato, #3693: the whole-word audit adapter;
+        roger-sato, #3642: the T530 release retimings.
+      - Jeremy Diviney, #3148: the coupled-carrier T740 packing cap; dcharb78,
+        #3133: helpers 586 and 588 lowered by coupled carrier folds.
+      - Marius-Paul Dumitrean (mdumitrean), #2979: joint rank-7 end frames and
+        five paired extractions, on Jeremy Kothe's #2957 gate rewrites; #2802
+        (hostee moves and retired-lender aliases) and #2733.
+      - Jeremy Kothe: the frame and preload machinery, #2833 (dirt-entry
+        rewrite of helpers 530 and 542), #2957 (gate rewrites on Mason Hale's
+        #2917 words), and the source pipeline, label swap and order and fill
+        of #2462, #2588 and #2673; Mason Hale, #2917 (nine paired helper
+        extractions); Lyy-iiis, #2857 (shared kernels) and #2848; Dugongue,
+        #2863; philippeVV (Philippe Van Velzen), #2853, #2559 and #2679
+        (evacuation, six pre-life hosts, the refit alias).
+      - Cinna Davis (@1337isnot1337), #2226, with OpenAI Codex assistance:
+        anticipatory dirty borrowing (the borrowed helpers and their warps)
+        and the native exact Clifford and operator machinery.
+      - Tekalign (@tekuuu), #2436: the four lifted targets, the joint
+        twelve-source construction, and the sparse native accelerator, with
+        the authors its SPARSE-NOTICE names.
+      - zxv, #2530: the eight source-partner aliases; Mason Hale, #2696:
+        concentrated source-partner assignment and an independent local
+        interpreter; themilkman216, #2621: the priority order; Vlado
+        Vojdanovski, #2322: generator utilities; Jeremy Kothe, #2312: the
+        helper width exchange; Dugongue, #2309, with Sagar Thakrar's audit
+        #2315.
+      - icekylinx, #433 and #514, and the retained native ancestry;
+        DreamingOfClouds (with Claude): the inherited wrapper and outer
+        machinery; chafreaky (Chafik Boukhalfa), #458, and its lineage.
+      - Josie Elliston, #1956 (bootstrap carried-cutoff repair); Sagar
+        Thakrar, #1964 (label and adapter checks, mutants).
+      - The T74 words and owner construction underneath: Rohan Arun (#1218,
+        #1297, #1319 and the T74 exact-fill owner construction, with OpenAI
+        Codex assistance), Marius-Paul Dumitrean (#1625: the pivot-566
+        kernel, words, edits and rebuild scripts), Jeremy Kothe and LeverRank
+        (#1672), on Jeremy Kothe's k8 leaver word and seven-slot line (#1018,
+        #1042, #1274) with Thomas DiFiore (#1148), Jeremy Diviney (#1193) and
+        Chafik Boukhalfa (#1196); the outer and the assembly by Vlado
+        Vojdanovski (#1673), Chafik Boukhalfa (#1699, #1786) and Jeremy
+        Kothe (#1377, #1839).
+      - Rohan Arun's draft #3939 and his #3934 stack, and Chris R /
+        Clear1nsight's #3883, #3936 and #3941, are acknowledged by #3945 as
+        neighbouring work; they are not used here.
+      Checks of #3945 by others, which this project read and re-ran: Chris R /
+      Clear1nsight's audits #3969, #3988, #3994 and #4016; the exact
+      eight-stream operator replay of ChaloupeMusic's gist, on the operator
+      model of Nick Petalas (#3187) and Matarener (#3296).
+      #2979, from its pull request body, CREDITS.md and NOTICE ("All original
+      notices of the exported predecessor packages remain in force"):
+      - Marius-Paul Dumitrean (mdumitrean), #2979, prepared with substantial
+        AI assistance (Anthropic Claude, via Claude Code): the codimension-2
+        census, the joint end-frame lowering of 22 restored helpers in five
+        groups, the five further extractions, the composition with #2957's
+        rewrites, producer and checks, the overlay stage, the six-class
+        adapters, the literal T74 allocation, the cap certificates and the
+        complete fresh replay; also #2930 (cap allocation, relaxation
+        tools), #2942 (four normal-45 extractions; its words are #2979's
+        parent) and #2843 (the flow model's starting point).
+      - Jeremy Kothe, #2957, #2948 and #2966: the fourteen declared gate
+        rewrites and their applier; #2894 and #2833: the preload re-synthesis
+        supplier, frame accounting and cleanup, source materializer.
+      - Mason Hale, #2917: the nine paired extractions, the T74 chronology
+        (ORDER and DISPATCH), the allocation checker, moment auditor,
+        extension stage and adapter derivation.
+      - Jeremy Diviney, #2908: the paired input/output extraction, its
+        compensation rule, the two-sided certificate and the closed-adapter
+        admission chain.
+      - Dugongue, #2969 (comparator composition and baseline), #2863 and
+        #2839 (packing lineage, owner engine).
+      - Yiyang Lu (Lyy-iiis), #2857 and #2848: shared-kernel words, staged
+        native and overlay tooling, the flow model and realization of the
+        allocation.
+      - Ross Richardson, #2918: the rank-seven obstruction for helper 408.
+      - Tekalign: the independent owner and chronology checker; icekylinx: the
+        exact free-operator auditor (#2833); themilkman216: the integrality
+        observation behind the allocation's face step.
+      - Gareth Davidson (bitplane), #1995 and #2013: the fixed-word
+        terminal-subspace bounds that frame stage 1.
+      - Underneath: Cinna Davis (#2226, dirty borrowing and warps), Jeremy
+        Kothe (#2312, width exchange), and the T74 line above.
+      The table with every head kept on #2979 was made by #2979's own
+      allocation programs, credited as above.
+   h. Credit for the Lean route.
+      - Ryan Shea: the conversion pipeline, the generators and the Lean
+        instantiation of Jeremy Kothe's #588 circuit (lean/complex588), which
+        these packages are laid over.
+      - Nil Mamano: the files named at the start of this section.
+      - Dugongue (#401): the entrance gauges and the banks of the nine-stage
+        network; Zhihao Chen / jacklightChen (#377, #425): its compressed
+        layout with banks and padding, and the written argument for mutable
+        sources; lydakis (#275): the bank patterns; DaysSky (#363): the
+        bridged layout, and the proposal, with a written proof in the
+        community's terms, to host helpers in idle arrays.
+      - Jeremy Kothe and DreamingOfClouds: the community's lemmas about where
+        a helper may end, on which the charge for exit frames rests.
+      - For package/u8x0hq: the community's U8 circuit, Jeremy Kothe's #869 on
+        his #799, with Chafik Boukhalfa's frame changes (#741) and
+        icekylinx's gauge44 construction (#645), as the community's notices
+        record it.
+      - The idea that Theorem 1G extends is Schönhage's τ-theorem for matrix
+        multiplication.
+      - OpenAI: the cost model, the statement and the step from the lengths
+        2^k to every length.
+   i. research/. Written for this repository by the agents under my
+      direction. The sections cite papers by title or arXiv identifier and
+      the community's pull requests by number, commit and file hash; they
+      copy no paper text and no file of the community's repository, with
+      these exceptions: research/record-track/programs/a-fc/r2/tools/
+      fallback_patch.py carries a modified copy (made tolerant, as its first
+      lines say) of the placement loop of construction/build_fill.py of
+      #3815 (Erwan Secousses / ChaloupeMusic; CrocSwap/integer-mult-bounds,
+      Apache License, Version 2.0); and research/record-track/programs/
+      a-fc/r2/tools/fillmodel.py copies the window, family and width logic
+      of owner/verify.py of #3945 (Dugongue and the lineage its NOTICE.md
+      names, see (g); CrocSwap/integer-mult-bounds, Apache License, Version
+      2.0), as its first lines say; research/why-the-savers-save/programs/
+      helpers-narrower-ends-skeptic-rules/asm1042.json is an unmodified
+      copy of research/community-frontier1042-audit/ASSEMBLY.json of the
+      community's main branch (the community's #1042 audit, integrated by
+      its maintainer Douglas R. Colkitt on 13 October 2026);
+      research/record-track/data/a-fc/design/
+      ORDER.json and DISPATCH.json hold #2979's allocation/ORDER.json and
+      DISPATCH.json (Mason Hale's #2917, as #2979's NOTICE says), with the
+      same content, re-serialised; and research/why-the-savers-save/
+      programs/helpers-half-reads/bit/xcheck_base.json, the report of the
+      community's checker xcheck_p.py (DreamingOfClouds' line, on eumemic's
+      #555) on #589's word, has the same bytes as
+      research/community-frontier741-audit/bit/xcheck.json of the
+      community's main branch, integrated by Douglas R. Colkitt on 13
+      October 2026 (these three: CrocSwap/integer-mult-bounds,
+      Apache License, Version 2.0). fallback_patch.py, and tools/
+      place_patch.py, tools/hall_fc.py and tools/mkpatch_fill17.py of
+      programs/a-fc/, apply their changes to copies of community files that
+      they read by path (#3815's build_fill.py and hall_lp.py, #2979's
+      fill17.py); those files are not changed. The other programs of
+      programs/a-fc/ are mine.
+   j. What is mine: the mixed-target recursion (Theorem 1G and its Lean
+      proof in OpenAI's model); the lever (the head test, the half cut, the
+      full cut and its 24 + 24 split, the head lemma, the heads-first
+      certificate, and the tables with every head kept); the A-fc table on
+      #2979's words (its class solution and its tolerant placement); the Lean ports of
+      #3945 and #2979 (the conversion of their
+      words, the warp checker and its soundness, the networks of many copies
+      with hosting across copies, the dispatch, the generators); the Lean
+      engine of this project and its extensions for exit frames, mutable
+      sources, centre reading and hosting; the checks; the search and pricing
+      programs in tools/lever/ and tools/lever-hub/; and the research in
+      research/. tools/lever-hub/network/Gates.lean is an unmodified copy of
+      lean/complex588/Work/Bridge401/Gates.lean of Ryan Shea's repository
+      (commit 52394849c7ecf3412d39b925d75fc7fdb98994d8, Apache License,
+      Version 2.0; its header credits Dugongue, lydakis, jacklightChen and
+      DaysSky); the other files of tools/lever-hub/ are mine.
+
+   The new files of package/, scripts/, tools/lever/, data/, results/ and
+   research/ were made between 2026-10-13 and 2026-10-20 the way section 4
+   describes: by AI agents (Claude) under my direction. The credits, with
+   links, are in README.md.
 
 Not included in this repository and fetched by the build: Mathlib
 (https://github.com/leanprover-community/mathlib4, Apache License 2.0) and its

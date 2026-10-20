@@ -1,0 +1,80 @@
+[
+  {
+    "name": "discovery-bind",
+    "exit_code": 0,
+    "seconds": 0.4941049680001015,
+    "log_sha256": "71f679ce5a123fb58397fd6852ba64ce3832fd20e81a096bfda9a1cf3237237a"
+  },
+  {
+    "name": "discovery-emit",
+    "exit_code": 0,
+    "seconds": 10.349575489999552,
+    "log_sha256": "60b03a173b10a9ea574aad8e0a4ff01d639fdf1a34afa62b79a25e84532d7598"
+  },
+  {
+    "name": "discovery-audit",
+    "exit_code": 0,
+    "seconds": 41.41357089699977,
+    "log_sha256": "5d3f19917f5c09a43b748a2a12011690c0e6bf2265c6f830011b7d5b09633085"
+  },
+  {
+    "name": "discovery-invoice",
+    "exit_code": 0,
+    "seconds": 1.5182154009999067,
+    "log_sha256": "8f7074e3f78a103318ded6362c8e9bc8fc0e8c1ea3b510e63b9b84b181452cb3"
+  },
+  {
+    "name": "discovery-assembly",
+    "exit_code": 0,
+    "seconds": 0.7194606779994501,
+    "log_sha256": "4cbc86496266b7df3c2ee399d6a6dcbb1bf2a1bd7d7391d47f71c333db475b90"
+  },
+  {
+    "name": "strict-bind",
+    "exit_code": 0,
+    "seconds": 0.5709514109994416,
+    "log_sha256": "71f679ce5a123fb58397fd6852ba64ce3832fd20e81a096bfda9a1cf3237237a"
+  },
+  {
+    "name": "strict-emit",
+    "exit_code": 0,
+    "seconds": 9.592178844000046,
+    "log_sha256": "60b03a173b10a9ea574aad8e0a4ff01d639fdf1a34afa62b79a25e84532d7598"
+  },
+  {
+    "name": "strict-audit",
+    "exit_code": 0,
+    "seconds": 39.55721811500007,
+    "log_sha256": "5d3f19917f5c09a43b748a2a12011690c0e6bf2265c6f830011b7d5b09633085"
+  },
+  {
+    "name": "strict-invoice",
+    "exit_code": 0,
+    "seconds": 1.548621687999912,
+    "log_sha256": "8f7074e3f78a103318ded6362c8e9bc8fc0e8c1ea3b510e63b9b84b181452cb3"
+  },
+  {
+    "name": "strict-assembly",
+    "exit_code": 0,
+    "seconds": 0.5020756970006914,
+    "log_sha256": "4cbc86496266b7df3c2ee399d6a6dcbb1bf2a1bd7d7391d47f71c333db475b90"
+  },
+  {
+    "name": "admission",
+    "exit_code": 0,
+    "seconds": 0.7362735569995493,
+    "log_sha256": "051d242318154827c1672ffbb63ad2bdc8ecc4033be650b791dd69cd57d716b3"
+  },
+  {
+    "name": "bit",
+    "exit_code": 0,
+    "seconds": 0.96618702700016,
+    "log_sha256": "d54d260bf95bd8ae4ab8846314082b93b2e3d8f427eb35376691f2ce543a6b67"
+  },
+  {
+    "name": "independent",
+    "exit_code": 0,
+    "seconds": 1.5801135750007234,
+    "log_sha256": "9a822ed55b91969189acb1bb1bbdcebafc800855952fbd5e91c5d977c29cbbf9"
+  }
+]

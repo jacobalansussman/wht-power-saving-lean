@@ -1,0 +1,10 @@
+D5 r=4 L=1 closure=none gauge=XK=I(|K|=4)                    UNSAT  vars 1616 clauses 5252  0.0s
+D5 r=5 L=1 closure=none gauge=XK=I(|K|=4)                    SAT    vars 2072 clauses 6708  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 5, 'cT_static_fit': True, 'rank_cT': 5, 'layer_sizes': [20]}
+D5 r=4 L=2 closure=none gauge=XK=I(|K|=4)                    UNSAT  vars 2116 clauses 5972  0.0s
+D5 r=4 L=3 closure=none gauge=XK=I(|K|=4)                    SAT    vars 2376 clauses 6472  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 42, 'viol_one': 186, 'viol_trans': 248, 'rankB': 4, 'cT_static_fit': False, 'rank_cT': 4, 'layer_sizes': [10, 2, 8]}
+D5 r=4 L=2 closure=one gauge=XK=I(|K|=4)                     UNSAT  vars 2900 clauses 9860  0.0s
+D5 r=4 L=3 closure=one gauge=XK=I(|K|=4)                     UNSAT  vars 3160 clauses 10360  0.0s
+D5 r=4 L=3 closure=trans gauge=XK=I(|K|=4)                   UNSAT  vars 3300 clauses 10980  0.0s
+D5 r=4 L=20 closure=none gauge=XK=I(|K|=4)                   SAT    vars 6796 clauses 14972  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 41, 'viol_one': 143, 'viol_trans': 300, 'rankB': 4, 'cT_static_fit': False, 'rank_cT': 4, 'layer_sizes': [4, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 3, 2, 2, 0, 1]}
+D5 r=4 L=20 closure=one gauge=XK=I(|K|=4)                    UNSAT  vars 7580 clauses 18860  0.1s
+D5 r=4 L=20 closure=trans gauge=XK=I(|K|=4)                  UNSAT  vars 7720 clauses 19480  0.0s

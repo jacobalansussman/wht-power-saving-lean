@@ -1,0 +1,16 @@
+[      0s] # B1: moves=1;2;4;7 |R|=9 |W|=[1, 5, 15] |B|=15 FS=[3, 4] S=1
+[      5s] rows 4608, top 675, lower 2925
+[    728s] lower rank 2422
+[    911s] [A f=3,4] cols 675: trivial 0, kept 675; null space 131 = collapses 1 + column dependencies 130; sv gap 6.5e-02 / 1.8e-15; collapse sv/|A| ['2.2e-01', '1.3e-15', '1.1e-15']; f=3,4 residual of the extracted vectors <= 4.2e-15
+[   1008s] reducible kept columns: 0 of 675; examples []
+[   1162s] [A+ f=3,4 irreducible vs lower+reducible] cols 675: trivial 0, kept 675; null space 131 = collapses 1 + column dependencies 130; sv gap 6.5e-02 / 1.8e-15; collapse sv/|A| ['2.2e-01', '1.3e-15', '1.1e-15']; f=3,4 residual of the extracted vectors <= 4.2e-15
+[   1187s] f=5: rows subsampled 8000 of 32768
+[   2339s] f=5 (seed 501): rows 8000, lower rank 2423
+[   2342s] [B f=5] 1 collapse vectors (image rank 1); per-vector relative distance from the complete lower span: ['7.32e-01']
+[   2342s] [B f=5] subspace spectrum (min relative distance over combinations, ascending): ['7.32e-01']; SURVIVORS 0
+[   2356s] [B f=5] candidate space incl. f=3,4 column dependencies: dim 131, image rank 1, mod lower 1: collapses surviving 0
+[   2358s] [B+ f=5 irreducible vs lower+reducible] 1 collapse vectors (image rank 1); per-vector relative distance from the complete lower span: ['7.32e-01']
+[   2358s] [B+ f=5 irreducible vs lower+reducible] subspace spectrum (min relative distance over combinations, ascending): ['7.32e-01']; SURVIVORS 0
+[   2372s] [B+ f=5 irreducible vs lower+reducible] candidate space incl. f=3,4 column dependencies: dim 131, image rank 1, mod lower 1: collapses surviving 0
+RESULT {"tag": "B1", "moves": "1;2;4;7", "R": "1,X1,X2,X4,Z1,Z2,Z4,P01,P12", "W": ["1", "1,T2,A,A.T2.Ai,Pr0", "1,P01,P12,C01,S1,X4,Z1,A,Ai,B,lX1,fS1,Pr0,T2,CS01"], "B": {"per": [0.7316814879900398], "spectrum": [0.7316814879900401], "survivors": 0, "N_count": 0}, "FS": [3, 4], "S": 1, "seed5": 501, "A": {"tag": "A f=3,4", "ncols": 675, "trivial": 0, "keep": 675, "dimN": 131, "nt": 1, "kernel": 130, "gap": [0.06509431403166357, 1.7888945151591654e-15], "sw": [0.2173930664176527, 1.330284809012583e-15, 1.1317546377580382e-15, 1.051242386217653e-15], "res34_max": 4.230989056559803e-15}, "reducible": 0, "Aplus": {"tag": "A+ f=3,4 irreducible vs lower+reducible", "ncols": 675, "trivial": 0, "keep": 675, "dimN": 131, "nt": 1, "kernel": 130, "gap": [0.06509431403166357, 1.7888945151591654e-15], "sw": [0.2173930664176527, 1.330284809012583e-15, 1.1317546377580382e-15, 1.051242386217653e-15], "res34_max": 4.230989056559803e-15}, "Bplus": {"per": [0.7316814879900398], "spectrum": [0.7316814879900401], "survivors": 0, "N_count": 0}}
+[   2372s] done

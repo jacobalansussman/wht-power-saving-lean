@@ -1,0 +1,7 @@
+  Nk = colspace(P @ Nb)
+  Nk = colspace(P @ Nb)
+  Nk = colspace(P @ Nb)
+sigma (c-eigenvalue zeta^k on (N+mN)/N), k = 0,1,2: [28, 26, 26]
+k = 0: dim N_k = 96, gain of the fixed move on N_k-inputs = 28, predicted bound sigma_{-k} = 28
+k = 1: dim N_k = 92, gain of the fixed move on N_k-inputs = 26, predicted bound sigma_{-k} = 26
+k = 2: dim N_k = 92, gain of the fixed move on N_k-inputs = 26, predicted bound sigma_{-k} = 26

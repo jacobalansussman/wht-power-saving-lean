@@ -1,0 +1,18 @@
+Part A: McMillan degree of (I + zJ)^(x)f  (rank of the block Hankel matrix of its Markov parameters)
+  f=1: data width 4^f =     4;  Hankel rank =     4;  f*4^f =     4;  state arrays needed = 1
+  f=2: data width 4^f =    16;  Hankel rank =    32;  f*4^f =    32;  state arrays needed = 2
+  f=3: data width 4^f =    64;  Hankel rank =   192;  f*4^f =   192;  state arrays needed = 3
+  f=4: data width 4^f =   256;  Hankel rank =  1024;  f*4^f =  1024;  state arrays needed = 4
+
+Part B: simultaneous power versus per-column cascade (lam = 3, floats)
+  f=1: closure of L at z=1 equals I+J: True
+  f=2: simultaneous L^(x)f: state 48 = 8^f - 4^f;  closure at z=1 equals (I+J)^(x)f: False;  max |difference| = 3.38
+  f=3: simultaneous L^(x)f: state 448 = 8^f - 4^f;  closure at z=1 equals (I+J)^(x)f: False;  max |difference| = 5.97
+  f=2 per-column cascade (state 2*16 = 32): closure at z=1.0 equals (I+zJ)^(x)2: True
+  f=2 per-column cascade (state 2*16 = 32): closure at z=0.37 equals (I+zJ)^(x)2: True
+
+Part C: f-fold lift of the reflection.  nnz per row of the generator S(G^(x)f (x) I - I (x) G^(x)f) versus
+        the tensor price per coordinate of (G(x)G)^(x)f (= f d).  G = OpenAI's Gamma, nnz per row 1 + d/2.
+  d=30:  f=1: generator 32, price 30, ratio h/price 0.533;  f=2: generator 512, price 60, ratio h/price 4.27;  f=3: generator 8.19e+03, price 90, ratio h/price 45.5;  f=4: generator 1.31e+05, price 120, ratio h/price 546
+  d=60:  f=1: generator 62, price 60, ratio h/price 0.517;  f=2: generator 1.92e+03, price 120, ratio h/price 8.01;  f=3: generator 5.96e+04, price 180, ratio h/price 166;  f=4: generator 1.85e+06, price 240, ratio h/price 3.85e+03
+  The margin needs h/price < 2/3 (pairs at 3/2).  It holds only at f = 1.

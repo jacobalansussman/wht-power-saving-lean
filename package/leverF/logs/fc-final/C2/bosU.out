@@ -1,0 +1,102 @@
+sources-only tree: 618 .lean files from ours/T
+INSTALL L3945FUS: 412 new, 0 identical (skipped), from /content/work/fc-final/in/ov-install; hashes /content/work/fc-final/in-L3945FUS.sha256
+BOS L3945FU: L3945F Work.FourierL3945F.Main bound 17806935/10000000000 mode pos threads 3 START Tue Oct 20 02:42:58 AM UTC 2026
+verifier clone at c92b9b6; tracked changes: 0
+closure modules: 350; import lines rewritten: 568; bound 2466337/2000000000
+CONTROL PASS: packaging of Shea's C588 identical to nmamano's submission (350 files)
+CONTROL PASS: adapter body identical
+closure modules: 707; import lines rewritten: 1289; bound 3561387/2000000000
+staged lean files: 708; bytes: 30289653; largest: 7141733 /content/work/fc-final/bos-L3945FU/stage/Submission/Work/XHostT/Data/S5H/Calls.lean
+profile challenge: challenges/dft/UniformFourier233.lean  expected sha256 3a646acd3ac9cf6ff93e29cc363dbfea0c8953a2e1415f7965bd86e8b2ee62a3
+/content/work/bos/bos-verifier/challenges/dft/UniformFourier233.lean: OK
+challenge bound 3561387 2000000000
+363fb869ec8aeedea68f81e1e64bad010fbe7dccb6e40e7f36faa5165f6f3288  /content/work/fc-final/bos-L3945FU/stage/VerifierChallenge.lean
+7.7G	/content/work/fc-final/bos-L3945FU/stage/.lake/packages
+PREP DONE Tue Oct 20 02:46:00 AM UTC 2026
+   (slot: waited 0s; heavy 0, avail 50380 MB)
+   bos Lean threads for lean: 3
+=== lean START Tue Oct 20 02:46:01 AM UTC 2026 olean files: 0
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/fc-final/bos-L3945FU/control/bin:$PATH; export PATH; exec comparator /content/work/fc-final/bos-L3945FU/control/lean.json'
+=== lean END rc=0 wall=7389s Tue Oct 20 04:49:10 AM UTC 2026 maxrss_kb=10047248
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, Race.bound, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Submission
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 709
+VERDICT bos lean: accepted
+   (slot: waited 0s; heavy 0, avail 49394 MB)
+   bos Lean threads for audit: 3
+=== audit START Tue Oct 20 04:49:10 AM UTC 2026 olean files: 709
+cmd: exec lake env lean VerifierAudit.lean
+=== audit END rc=0 wall=169s Tue Oct 20 04:51:59 AM UTC 2026 maxrss_kb=6797484
+'Race.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+olean files after: 709
+VERDICT bos audit: standard axioms
+   (slot: waited 0s; heavy 0, avail 49351 MB)
+   bos Lean threads for nanoda: 3
+/content/work/fc-final/bos-L3945FU/stage/.lake/build/lib/lean/VerifierChallenge.ilean.hash
+/content/work/fc-final/bos-L3945FU/stage/.lake/build/lib/lean/VerifierChallenge.olean
+/content/work/fc-final/bos-L3945FU/stage/.lake/build/lib/lean/VerifierChallenge.trace
+/content/work/fc-final/bos-L3945FU/stage/.lake/build/lib/lean/VerifierChallenge.olean.hash
+/content/work/fc-final/bos-L3945FU/stage/.lake/build/lib/lean/VerifierChallenge.ilean
+/content/work/fc-final/bos-L3945FU/stage/.lake/build/ir/VerifierChallenge.c.hash
+/content/work/fc-final/bos-L3945FU/stage/.lake/build/ir/VerifierChallenge.c
+/content/work/fc-final/bos-L3945FU/stage/.lake/build/ir/VerifierChallenge.setup.json
+=== nanoda START Tue Oct 20 04:51:59 AM UTC 2026 olean files: 708
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/fc-final/bos-L3945FU/control/bin:$PATH; export PATH; exec comparator /content/work/fc-final/bos-L3945FU/control/nanoda.json'
+=== nanoda END rc=0 wall=5114s Tue Oct 20 06:17:13 AM UTC 2026 maxrss_kb=14497708
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 709
+VERDICT bos nanoda: accepted
+BOS RUN END Tue Oct 20 06:17:48 AM UTC 2026
+BOS L3945FU ALL AS EXPECTED
+EXIT 0
+BOS L3945FUneg: L3945F Work.FourierL3945F.Main bound 17806936/10000000000 mode neg threads 3 START Tue Oct 20 06:17:48 AM UTC 2026
+verifier clone at c92b9b6; tracked changes: 0
+closure modules: 350; import lines rewritten: 568; bound 2466337/2000000000
+CONTROL PASS: packaging of Shea's C588 identical to nmamano's submission (350 files)
+CONTROL PASS: adapter body identical
+closure modules: 707; import lines rewritten: 1289; bound 2225867/1250000000
+staged lean files: 708; bytes: 30289653; largest: 7141733 /content/work/fc-final/bos-L3945FUneg/stage/Submission/Work/XHostT/Data/S5H/Calls.lean
+profile challenge: challenges/dft/UniformFourier233.lean  expected sha256 3a646acd3ac9cf6ff93e29cc363dbfea0c8953a2e1415f7965bd86e8b2ee62a3
+/content/work/bos/bos-verifier/challenges/dft/UniformFourier233.lean: OK
+challenge bound 2225867 1250000000
+23e3aed65be3e159466441e0e5ba35a918426180488e523844769e2d7c7d7048  /content/work/fc-final/bos-L3945FUneg/stage/VerifierChallenge.lean
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/ir/VerifierChallenge.c.hash
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/ir/VerifierChallenge.c
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/ir/Submission.setup.json
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/ir/VerifierChallenge.setup.json
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/ir/Submission.c.hash
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/ir/Submission.c
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/lib/lean/Submission.trace
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/lib/lean/VerifierChallenge.ilean.hash
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/lib/lean/Submission.ilean.hash
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/lib/lean/VerifierChallenge.olean
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/lib/lean/VerifierChallenge.trace
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/lib/lean/Submission.ilean
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/lib/lean/Submission.olean.hash
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/lib/lean/VerifierChallenge.olean.hash
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/lib/lean/VerifierChallenge.ilean
+/content/work/fc-final/bos-L3945FUneg/stage/.lake/build/lib/lean/Submission.olean
+reused the positive stage's Submission/* oleans (707)
+7.7G	/content/work/fc-final/bos-L3945FUneg/stage/.lake/packages
+PREP DONE Tue Oct 20 06:21:48 AM UTC 2026
+   (slot: waited 0s; heavy 0, avail 50678 MB)
+   bos Lean threads for lean: 3
+=== lean START Tue Oct 20 06:21:48 AM UTC 2026 olean files: 707
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/fc-final/bos-L3945FUneg/control/bin:$PATH; export PATH; exec comparator /content/work/fc-final/bos-L3945FUneg/control/lean.json'
+=== lean END rc=1 wall=107s Tue Oct 20 06:23:35 AM UTC 2026 maxrss_kb=7069116
+Some required targets logged failures:
+- Submission
+error: build failed
+uncaught exception: Child exited with 1
+olean files after: 708
+VERDICT bos negative (bound one grid step too high): rejected (expected)
+BOS RUN END Tue Oct 20 06:23:35 AM UTC 2026
+BOS L3945FUneg ALL AS EXPECTED
+EXIT 0
+BOS L3945F (unmerged): EVERY VERDICT AS EXPECTED Tue Oct 20 06:23:36 AM UTC 2026
+EXIT 0

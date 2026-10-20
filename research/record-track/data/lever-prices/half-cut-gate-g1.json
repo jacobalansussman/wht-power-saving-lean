@@ -1,0 +1,105 @@
+{
+ "agent": "lg-g1",
+ "gate": "G1",
+ "date": "2026-10-14",
+ "verdict": "PASS: all three numbers reproduced by independent rigorous code; half cut UPHELD (split valid in hub and our semantics; separated 48 < 49)",
+ "prices_[what-if, mixed price, rigorous bracket]": {
+  "control: T74 uniform (hub #1839)": {
+   "b_lo_e16": "16797549561255",
+   "b_hi_e16": "16797549561256",
+   "vs_hub_pct": -0.0,
+   "separated": true,
+   "r_max": 48,
+   "k_min": 73
+  },
+  "control: all 22,748 cut to 25": {
+   "b_lo_e16": "18169467779878",
+   "b_hi_e16": "18169467779880",
+   "vs_hub_pct": 8.1674,
+   "separated": true,
+   "r_max": 8,
+   "k_min": 25
+  },
+  "control: heads cut to 25, others kept rank 48 (NOT separated)": {
+   "b_lo_e16": "17434773228998",
+   "b_hi_e16": "17434773229000",
+   "vs_hub_pct": 3.7936,
+   "separated": false,
+   "r_max": 48,
+   "k_min": 25
+  },
+  "FULL CUT: heads cut to 25, others split 24+24": {
+   "b_lo_e16": "16948357904637",
+   "b_hi_e16": "16948357904639",
+   "vs_hub_pct": 0.8978,
+   "separated": true,
+   "r_max": 24,
+   "k_min": 25
+  },
+  "HALF CUT: heads cut by 24 of 48 (target 49), rest 24 paid, others 48": {
+   "b_lo_e16": "16968621073119",
+   "b_hi_e16": "16968621073121",
+   "vs_hub_pct": 1.0184,
+   "separated": true,
+   "r_max": 48,
+   "k_min": 49
+  },
+  "full cut at break-even t=9443": {
+   "b_lo_e16": "16797623491039",
+   "b_hi_e16": "16797623491041",
+   "vs_hub_pct": 0.0004,
+   "separated": true,
+   "r_max": 24,
+   "k_min": 25
+  },
+  "full cut at t=9442": {
+   "b_lo_e16": "16797528152262",
+   "b_hi_e16": "16797528152264",
+   "vs_hub_pct": -0.0001,
+   "separated": true,
+   "r_max": 24,
+   "k_min": 25
+  },
+  "half cut at t=5000": {
+   "b_lo_e16": "16874810910281",
+   "b_hi_e16": "16874810910283",
+   "vs_hub_pct": 0.46,
+   "separated": true,
+   "r_max": 48,
+   "k_min": 49
+  }
+ },
+ "break_even": {
+  "full_cut_vs_hub_b": 9443,
+  "full_cut_vs_lean_grid": 9443,
+  "half_cut_vs_hub_b": 1,
+  "half_cut_vs_lean_grid": 1,
+  "heads": 11010,
+  "idle": 22748
+ },
+ "semantics": {
+  "hub": "children 8,10 (heads) and 12,13: on all 112 ports the 48 axes are orthonormal GF(2) lines of the port's orthonormal 73-basis B (hub orthobasis); B minus A = 25 orthonormal lines spanning span(A)^perp; prefix, suffix and 2,016 random 24-subsets A1: A1 and A minus A1 orthonormal, B minus A1 = 49 orthonormal lines spanning span(A1)^perp. The hub itself splits children: hosted helpers take axes[off:off+w] (w<=9), the rest is ONE paid block of rank rank-len(u) on axes[pending_offset:] (T74 audit_allcold lines 158, 178-180, 243).",
+  "ours": "BMove.block action is by definition its flat word List.ofFn (dir (z i)) (Work/Block/Word.lean); a 24+24 split of z : Fin 48 has the same flat word (List.ofFn_add), sub-families stay linearly independent, Proper needs only 1 <= rk < u; Frames.lean frame_union / deltas_eq factor frame changes over disjoint line sets.",
+  "translation_after": "heads carry a free translation after the block (15, 23, 27, ...); it stays in the reduced word as a free shift and does not affect the cut."
+ },
+ "theorem_1G_checks": "tree_flow.check on the actual T74 rules (full: targets {73:55294,25:11010}, paid calls+24x23476; half: targets {73:55294,49:11010}, paid calls+24x11010+48x11738), L=1e4..1e12: 0 unbalanced points, sources in (L/m,L], Phi_exit/Phi_src=1, exits within r_max (L/m)^theta, unit bound holds.",
+ "kappa": {
+  "eta_m": 0.99108,
+  "full_theta": 0.987318,
+  "half_theta": 0.994702,
+  "min_kappa_with_beta=eta-theta^kappa": {
+   "full": 0.7,
+   "half": 1.69
+  },
+  "kappa_by_A3_as_written_beta=eta/2": {
+   "full": 56,
+   "half": 133
+  }
+ },
+ "corrections_to_plan": [
+  "Lean decimals: under the chain's DFT = kernel - 1 convention (bh-gap lean_grid4: T74 root 16797549.56 -> kernel4 16797549 -> DFT 16797548), the full cut gives at best 1.6948356e-3, not 1.6948357e-3; the half cut 1.6968620e-3 as stated. The plan applied 'drop one step' to the ROUNDED figures, which is floor for one row and floor-1 for the other.",
+  "bh-gap found kernel4 = floor(root) for T74 (enclosure loss < 0.56e-10), not 'about 2e-10'; the mixed rate fact (R5) decides the last grid step for the cut rows.",
+  "kappa: with beta = eta - theta^kappa the minima are 0.70 (full) and 1.69 (half), close to the plan's 0.76 / 1.8; immaterial (constant only)."
+ ],
+ "not_checked_here": "the head count 11,010 in OUR lowering (gate G0), the RAM realisation (R3), mixed-target word correctness at every column count (M1)."
+}

@@ -1,0 +1,928 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "reed-muller-and-one-move",
+ "title": "The Reed-Muller family, and units that save a single move",
+ "dates": "2026-10-15 to 2026-10-16",
+ "made_with": "AI agents (Claude) directed by the author",
+ "human_review": "none; no proof here is checked in Lean or by a person",
+ "findings": [
+  {
+   "id": "reed-muller-and-one-move/RM1",
+   "statement": "In the game without phase letters, address maps are exactly per-array targets: a unit with address group H and a commutative program in which each array is owed h h^T reach the same moves per array (Theorem B, Proposition R, Theorem MT).",
+   "status": "argued by hand, not checked",
+   "status_detail": "three independent AI skeptics re-derived parts; one tested the whole chain by computer on a real unit (1 in 4 with the order-15 Singer group): the identity holds at all 1,023 forms and fails at 1,016 with targets on the wrong copies; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "no-phase"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "forms_checked": 1023,
+    "forms_failing_with_wrong_copies": 1016
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/address-maps-and-small-lift/t_lift.py",
+    "programs/four-in-15-by-address-group/independent-check/t10check.py",
+    "programs/four-in-15-by-address-group/independent-check/t10check_neg.py"
+   ],
+   "evidence": [
+    "proofs/address-maps-per-array-targets-and-block3.md",
+    "proofs/four-in-15-channels-and-rank-depth.md",
+    "data/address-maps-and-small-lift/out_t_lift.txt"
+   ],
+   "rerun_for_this_revision": false,
+   "archive_entry": "L21"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM2",
+   "statement": "Address maps that keep the dot product never help (Theorem O), and with any address maps and no phase letters one array needs m moves (Proposition D), so 1 in 3 at block 4 is impossible.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic read Proposition D line by line; Theorem O follows from RM1 and was not checked separately",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "no-phase"
+   ],
+   "shape": "1 in 3",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "evidence": [
+    "proofs/four-in-15-channels-and-rank-depth.md"
+   ],
+   "rerun_for_this_revision": false,
+   "archive_entry": "L23"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM3",
+   "statement": "Theorem C3: at block 3 without phase letters no unit saves, whatever the address maps (M >= 3W). Any block-3 saving must use address maps and phase letters together.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it; the certificate's numbers (cap 8 on all 7 directions, demand 24 in all 28 bases) are checked by computer by two separately written programs",
+   "date": "2026-10-15",
+   "block": 3,
+   "games": [
+    "no-phase",
+    "commutative slice"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "cap": 8,
+    "demand": 24,
+    "bases": 28,
+    "block4_transfer_moves_per_array": 2.706
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/address-maps-and-small-lift/t_face3.py",
+    "programs/address-maps-and-small-lift/independent-check/vk_face3.py",
+    "programs/address-maps-and-small-lift/t_cert4.py"
+   ],
+   "evidence": [
+    "proofs/address-maps-per-array-targets-and-block3.md",
+    "data/address-maps-and-small-lift/out_t_face3.txt",
+    "data/address-maps-and-small-lift/independent-check/out_vk_face3.txt",
+    "data/address-maps-and-small-lift/out_cert4.txt"
+   ],
+   "rerun_for_this_revision": true,
+   "archive_entry": "L22"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM4",
+   "statement": "At block 4 the Reed-Muller family cannot reach the 1e-1 bar in any game inside the engine and widened games: the 41/13 bound allows at most 4 arrays on 15 moves and the bar needs 5.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two lines of arithmetic from the 41/13 bound (itself checked by computer with certificates modulo a prime); no skeptic read the comparison",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened",
+    "no-phase",
+    "commutative slice"
+   ],
+   "shape": "W in 15",
+   "saving_if_it_existed": null,
+   "numbers": {
+    "bound_moves_per_array": 3.154,
+    "bar_moves_per_array": 3.482,
+    "max_arrays": 4,
+    "arrays_needed": 5
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "evidence": [],
+   "rerun_for_this_revision": false,
+   "archive_entry": "N7"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM5",
+   "statement": "With address maps and phase letters only at the ends, block 4 has no 2 in 7, 3 in 10, 3 in 11 or 4 in 13 (and block 3 no 3 in 8), so no unit above the bar with at most 4 arrays; every kind of target pair needs at least 56/15 moves per array.",
+   "status": "checked by computer",
+   "status_detail": "exhaustive exact computation; independent AI skeptics repeated it with their own code (including all 116,280 multisets of 7 directions); scope: ends must not mix arrays between their letters",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "no-phase",
+    "phase letters at the ends"
+   ],
+   "shape": "2 in 7, 3 in 10, 3 in 11, 4 in 13",
+   "saving_if_it_existed": null,
+   "numbers": {
+    "pair_bound_moves_per_array": "56/15",
+    "multisets_of_7_directions": 116280,
+    "pair_kinds": 20,
+    "savings_excluded": {
+     "2 in 7": 0.0963,
+     "3 in 10": 0.1315,
+     "3 in 11": 0.0628,
+     "4 in 13": 0.1498
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/address-maps-and-small-lift/t_small.py",
+    "programs/phase-letters/ends-only-block4/t_small_alt.py",
+    "programs/one-move-block4/certify_t.py",
+    "programs/one-move-block4/independent-check/vpairs.py"
+   ],
+   "evidence": [
+    "data/address-maps-and-small-lift/out_t_small_b4_W3_M10_nofilter.txt",
+    "data/address-maps-and-small-lift/out_W3_M11_nofilter.txt",
+    "data/address-maps-and-small-lift/out_W4_M13.txt",
+    "data/address-maps-and-small-lift/out_t_free_b4_7.txt",
+    "data/one-move-block4/out_certpairs4.txt",
+    "proofs/phase-letters-and-angle-barrier.md"
+   ],
+   "rerun_for_this_revision": true,
+   "archive_entry": "L24"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM5b",
+   "statement": "Phase letters used only at the ends add nothing at odd blocks (Corollary A4): an invertible symmetric binary matrix is congruent to I unless its diagonal is zero; such alternating targets exist only at even blocks (28 at block 4, 13,888 at block 6).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "phase letters at the ends"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "alternating_targets_block4": 28,
+    "alternating_targets_block6": 13888
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/phase-letters/ends-only-block4/congr_classes.py"
+   ],
+   "evidence": [
+    "proofs/phase-letters-and-angle-barrier.md"
+   ],
+   "rerun_for_this_revision": false,
+   "archive_entry": "L24"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM6",
+   "statement": "Without phase letters, 4 in 15 at block 4 is impossible for 3 of the 5 kinds of fixed-point-free order-3 address group (42 of 56 groups) and one kind of order 5 (24 groups); the LP alone excludes 76 of the 616 order-3 groups; Theorem E; 2 in 7 and 3 in 11 likewise for most small groups. The tests are blind with the order-15 Singer groups (they pass the impossible 1 in 3 in 6 of 10 classes) and with GL(4,2) (LP 2.035).",
+   "status": "checked by computer",
+   "status_detail": "exact finite computation; one AI skeptic rebuilt all four tests with its own code (45 rows agree), rebuilt the LP (same 76 exclusions) and wrote exact certificates in fractions for one group of each class the LP excludes",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "no-phase"
+   ],
+   "shape": "4 in 15",
+   "saving_if_it_existed": 0.0466,
+   "numbers": {
+    "order3_classes_excluded": "3 of 5",
+    "order3_groups_excluded": "42 of 56",
+    "order5_classes_excluded": "1 of 10",
+    "lp_bounds": {
+     "order3": "79/23",
+     "order5": "102/31",
+     "order15": "67/22",
+     "GL42": 2.035
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/four-in-15-by-address-group/chain_classes.py",
+    "programs/four-in-15-by-address-group/mtlp.py",
+    "programs/four-in-15-by-address-group/certify.py",
+    "programs/four-in-15-by-address-group/independent-check/vchain.py",
+    "programs/four-in-15-by-address-group/independent-check/thmE.py"
+   ],
+   "evidence": [
+    "data/four-in-15-by-address-group/out_chain_415.txt",
+    "data/four-in-15-by-address-group/out_chain_311.txt",
+    "data/four-in-15-by-address-group/out_chain_27.txt",
+    "data/four-in-15-by-address-group/independent-check/out_classes.txt"
+   ],
+   "rerun_for_this_revision": true,
+   "archive_entry": "X39"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM7",
+   "statement": "Natural form at block 5: 10 in 31 (286,155 classes) and 9 in 31 (130,065) are impossible for every set of different targets; 8 in 31 is impossible for 49,629 of 50,895 classes (1,266 survive); all 27 classes of 4 in 15 at block 4 with four different targets are impossible.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; one AI skeptic verified every 9- and 10-in-31 exclusion and 1,687 of the 8-in-31 ones with its own code; 47,942 rest on one program; derived zeros are tested on a genuine program only at block 3",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [
+    "no-phase, natural form"
+   ],
+   "shape": "8, 9, 10 in 31",
+   "saving_if_it_existed": null,
+   "numbers": {
+    "classes": {
+     "10 in 31": 286155,
+     "9 in 31": 130065,
+     "8 in 31": 50895
+    },
+    "left_after_round2": 1266,
+    "savings": {
+     "8 in 31": 0.1584,
+     "9 in 31": 0.2316,
+     "10 in 31": 0.297
+    },
+    "one_program_exclusions": 47942
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/natural-form-star-tool/starrec2.c",
+    "programs/natural-form-star-tool/scanrc.c",
+    "programs/natural-form-star-tool/gen_tables.py",
+    "programs/natural-form-star-tool/independent-check/vrec.py",
+    "programs/natural-form-star-tool/independent-check/coverage.py"
+   ],
+   "evidence": [
+    "data/natural-form-star-tool/all8.txt",
+    "data/natural-form-star-tool/surv8_final.txt",
+    "data/natural-form-star-tool/cert_8a.txt",
+    "data/natural-form-star-tool/job-outputs.tar.gz",
+    "data/natural-form-star-tool/independent-check/out_coverage.txt"
+   ],
+   "rerun_for_this_revision": true,
+   "archive_entry": "X36"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM8",
+   "statement": "Round 3: 1,139 of the 1,266 surviving 8-in-31 classes are excluded by rank bounds from below; none is feasible; 127 are undecided, 24 of them hyperplane classes that hang on one 7-array problem.",
+   "status": "checked by computer",
+   "status_detail": "exact computation; one AI skeptic's program, sharing no code, excluded all 1,139 again; its stronger program also excludes 31 of the 127, which rest on one program and are not counted (96 left if they hold)",
+   "date": "2026-10-16",
+   "block": 5,
+   "games": [
+    "no-phase, natural form"
+   ],
+   "shape": "8 in 31",
+   "saving_if_it_existed": 0.1584,
+   "numbers": {
+    "excluded": 1139,
+    "undecided": 127,
+    "hyperplane_classes": 24,
+    "extra_exclusions_one_program": 31
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/eight-in-31-rank-bounds/starrec4.c",
+    "programs/eight-in-31-rank-bounds/starrec6.c",
+    "programs/eight-in-31-rank-bounds/chkL.py",
+    "programs/eight-in-31-rank-bounds/independent-check/vr3.c"
+   ],
+   "evidence": [
+    "data/eight-in-31-rank-bounds/verdicts.txt",
+    "data/eight-in-31-rank-bounds/undecided.txt",
+    "data/eight-in-31-rank-bounds/hyperplane_classes.txt",
+    "data/eight-in-31-rank-bounds/independent-check/vverdicts.txt",
+    "data/eight-in-31-rank-bounds/independent-check/extra_exclusions.txt"
+   ],
+   "rerun_for_this_revision": true,
+   "archive_entry": "X37"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM9",
+   "statement": "Sharing next to plain: two arrays are excluded at blocks 3, 4 and 5; all 44 three-array sets at block 5 (3 in 14) are impossible, by the zero-block test and by Groebner bases with exact cofactor certificates over Q, for every time order.",
+   "status": "checked by computer",
+   "status_detail": "exact computation by two independent methods; one AI skeptic redid both on all 44 with its own model (5,280 time orders, every cofactor certificate checked exactly)",
+   "date": "2026-10-16",
+   "block": 5,
+   "games": [
+    "no-phase, natural form"
+   ],
+   "shape": "3 in 14",
+   "saving_if_it_existed": 0.0429,
+   "numbers": {
+    "sets": 44,
+    "time_orders_checked": 5280
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/three-in-14-groebner/run_z.py",
+    "programs/three-in-14-groebner/make_gb.py",
+    "programs/three-in-14-groebner/gb2.py",
+    "programs/three-in-14-groebner/independent-check/vcert.py"
+   ],
+   "evidence": [
+    "data/three-in-14-groebner/out_scan3_b5.txt",
+    "data/three-in-14-groebner/certs.json",
+    "data/three-in-14-groebner/out_summary.txt",
+    "data/three-in-14-groebner/systems.tar.gz",
+    "data/three-in-14-groebner/independent-check/out_vsummary.txt"
+   ],
+   "rerun_for_this_revision": true,
+   "archive_entry": "X38"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM10",
+   "statement": "With phase letters between moves only Theorem R certificates see anything (Theorem T), and no hook can ever refuse the family's full-sharing member at any block (Proposition H, the angle barrier); no lift can refuse 4 in 15; a block-5 lift with excess below 0.290 per edge would refuse 8 in 31 in every game.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it; inputs from other rounds (hook bound, lift floor 0.075) not re-checked",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "spectral_ceiling": "2 - 2^(1-m)",
+    "lift_floor_per_edge": 0.075,
+    "needed_excess_8in31": 0.29,
+    "needed_excess_9in31": 0.452,
+    "needed_excess_10in31": 0.613,
+    "best_known_excess": 0.88,
+    "bound_block5_moves_per_array": 2.992
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/phase-letters/spg.py",
+    "programs/phase-letters/thresholds.py",
+    "programs/phase-letters/t_lifts.py"
+   ],
+   "evidence": [
+    "proofs/phase-letters-and-angle-barrier.md",
+    "data/phase-letters/out_thresholds.txt"
+   ],
+   "rerun_for_this_revision": true,
+   "archive_entry": "L25"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM11",
+   "statement": "In the canonical Singer placement the target sees only the linear part of each quadratic form; the copies' targets are the field's multiplication matrices (the Kerdock / complete-MUB configuration); the target-carrying pieces are irreducible of dimension 2^m - 1, so the Fourier split does not reach them; in every Singer placement a form is odd on at most 3 times as many copies as its weight; Frobenius adds nothing to savings.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic per track re-derived it; structure checked exactly by computer at blocks 2 to 5 (some parts also on samples of forms up to block 7); the Frobenius point comes from comparing notes and has no skeptic",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "no-phase"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/singer-invariant-search/struct_check.py",
+    "programs/address-maps-and-small-lift/t_field.py",
+    "programs/address-maps-and-small-lift/t_place.py"
+   ],
+   "evidence": [
+    "proofs/singer-invariant-ansatz.md",
+    "data/singer-invariant-search/out_struct_check.txt",
+    "data/address-maps-and-small-lift/out_t_place_34.txt"
+   ],
+   "rerun_for_this_revision": true,
+   "archive_entry": "M29"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM12",
+   "statement": "Lemmas S, B(k) and Z restrict one-move savers: sharing must happen in the middle; both raw inputs must be fed in early; in the lifted block-5 game the fifth direction is never shared without mixed moves.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic checked each lemma line by line; the one-line summaries go a little further than the proofs",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "no-phase"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "evidence": [],
+   "rerun_for_this_revision": false,
+   "archive_entry": "X42"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM13",
+   "statement": "Block-4 triples (58 kinds passing deletion at 10 moves, 452 at 11) are already settled with address maps and phase letters only at the ends by RM5: no 3 in 10, no 3 in 11.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a comparison of upheld results; the comparison has no skeptic",
+   "date": "2026-10-16",
+   "block": 4,
+   "games": [
+    "no-phase",
+    "phase letters at the ends"
+   ],
+   "shape": "3 in 10, 3 in 11",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "evidence": [],
+   "rerun_for_this_revision": false,
+   "archive_entry": "N15"
+  },
+  {
+   "id": "reed-muller-and-one-move/RM14",
+   "statement": "Symmetry sorts a search but does not create sharing: if the group moves every move and every array freely, a symmetric unit is a smaller ordinary unit; fixed arrays are expensive (b fixed arrays under the 7-fold group need at least 7(b + 2) moves).",
+   "status": "argued by hand, not checked",
+   "status_detail": "core lemmas re-derived by one AI skeptic; their reach was refuted in part (R4)",
+   "date": "2026-10-15",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/one-move-block3-symmetry/s2_split.py"
+   ],
+   "evidence": [
+    "proofs/one-move-block3-symmetry.md"
+   ],
+   "rerun_for_this_revision": true,
+   "archive_entry": "M29"
+  },
+  {
+   "id": "reed-muller-and-one-move/R1",
+   "statement": "Round 1: 'target sets with no tight form pass every exact test' and 'no tool we have sees phase letters'.",
+   "status": "refuted",
+   "status_detail": "refuted by round 2: the star tool excludes such sets (RM7); Theorem R certificates see phase letters (RM10)",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [
+    "no-phase"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": "reed-muller-and-one-move/RM7",
+   "refuted_by": "the star tool (RM7) and Theorem T (RM10)",
+   "programs": [],
+   "evidence": [],
+   "rerun_for_this_revision": null,
+   "archive_entry": "C28"
+  },
+  {
+   "id": "reed-muller-and-one-move/R2",
+   "statement": "The round-2 search track's exact statements: two 'negative controls that pass every exact test', the 44 three-array sets 'open', '716 or more' four-array sets, 'no no-phase program with real sharing is known', 'serving an array partly never lowers the residual'.",
+   "status": "refuted",
+   "status_detail": "refuted as written by its skeptic; its search results stand",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [
+    "no-phase"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the zero-block test; the full scan (15,139 sets, 9 pass); U_3 = 2 in 7 at block 3",
+   "programs": [],
+   "evidence": [],
+   "rerun_for_this_revision": null,
+   "archive_entry": "C27"
+  },
+  {
+   "id": "reed-muller-and-one-move/R3",
+   "statement": "Tier 2 pair track: 'the Singer game holds every program' (coverage) and 'the closest point is a local minimum with bounded coefficients'.",
+   "status": "refuted",
+   "status_detail": "refuted by its skeptic: 10 placements at block 4 and 92 at block 5, 2 searched at each; a better method kept lowering the closest point while coefficients grew",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "no-phase"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the skeptic's placement count and its continued descent 230.76 -> 230.24",
+   "programs": [],
+   "evidence": [],
+   "rerun_for_this_revision": null,
+   "archive_entry": "C29"
+  },
+  {
+   "id": "reed-muller-and-one-move/R4",
+   "statement": "Tier 2 block-3 track: 'the number of moves must be a multiple of 7' under the 7-fold, 21-fold and 168-fold groups.",
+   "status": "refuted",
+   "status_detail": "holds only under exact symmetry; refuted for gauge symmetry by its skeptic",
+   "date": "2026-10-15",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "gauge symmetry: one move can serve one character (20 in 58, 20 in 59, 15 in 42 survive)",
+   "programs": [],
+   "evidence": [],
+   "rerun_for_this_revision": null,
+   "archive_entry": "C29"
+  },
+  {
+   "id": "reed-muller-and-one-move/R5",
+   "statement": "'Address maps make the slice's exact tests blind' (an earlier construction track).",
+   "status": "refuted",
+   "status_detail": "refuted in part by wave 8: blindness depends on the placement relative to the target; only the order-15 Singer groups escape in every placement",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "no-phase"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "RM6",
+   "programs": [],
+   "evidence": [],
+   "rerun_for_this_revision": null,
+   "archive_entry": "N7"
+  },
+  {
+   "id": "reed-muller-and-one-move/S1",
+   "statement": "A calibrated solver on the natural form at block 5 reached only plain splits: best 8-in-31 residual 3.08e4 (one unserved array costs about 1e4).",
+   "status": "open",
+   "status_detail": "a numerical search found nothing; this is evidence, not proof",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [
+    "no-phase, natural form"
+   ],
+   "shape": "8 in 31",
+   "saving_if_it_existed": 0.1584,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/natural-form-solver/glm.py",
+    "programs/natural-form-solver/run.py"
+   ],
+   "evidence": [],
+   "rerun_for_this_revision": null,
+   "archive_entry": "T20"
+  },
+  {
+   "id": "reed-muller-and-one-move/S2",
+   "statement": "Tier 2: where the solver is calibrated, the best two-array program one move short of plain misses by 21 to 29 % of the target (block 4 2 in 7: 230.7 of 1,024; lifted block 5 2 in 9: 0.21 to 0.26).",
+   "status": "open",
+   "status_detail": "a numerical search found nothing; this is evidence, not proof",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "no-phase"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/one-move-two-arrays/vp6.py",
+    "programs/one-move-two-arrays/independent-check/vt2.py"
+   ],
+   "evidence": [],
+   "rerun_for_this_revision": null,
+   "archive_entry": "X42"
+  },
+  {
+   "id": "reed-muller-and-one-move/S3",
+   "statement": "Tier 2 block 4: about 124 trials of 3 in 11 all stopped at 286 or more, at or just below the cost of 'one array a direction short' (288; best 286.12); 16 trials of 4 in 15 all stopped at 384 or more.",
+   "status": "open",
+   "status_detail": "a numerical search found nothing; this is evidence, not proof",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "no-phase"
+   ],
+   "shape": "3 in 11",
+   "saving_if_it_existed": 0.0628,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/one-move-block4/lms.py"
+   ],
+   "evidence": [],
+   "rerun_for_this_revision": null,
+   "archive_entry": "X42"
+  },
+  {
+   "id": "reed-muller-and-one-move/S4",
+   "statement": "Singer-invariant 2 in 7 at block 4: best residual 239.3 against the trivial split's 294.6; arrays share, but not enough.",
+   "status": "open",
+   "status_detail": "a numerical search found nothing; this is evidence, not proof",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "no-phase"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/singer-invariant-search/lbf.py"
+   ],
+   "evidence": [],
+   "rerun_for_this_revision": null,
+   "archive_entry": null
+  }
+ ],
+ "open": [
+  {
+   "id": "reed-muller-and-one-move/O1",
+   "question": "The 127 undecided 8-in-31 classes; 24 hang on the 7-array problem 0,1,2,5,11,18,19 (7 in 31). Is it possible?",
+   "worth": 0.0754,
+   "first_experiment": "Run the local Groebner test (three-in-14-groebner/gb2.py) on small move sets of the 7-array problem, every time order; second, confirm or drop the skeptic's 31 extra exclusions with a second implementation of vr3.c's rules.",
+   "programs": [
+    "programs/three-in-14-groebner/gb2.py",
+    "programs/eight-in-31-rank-bounds/independent-check/vr3.c"
+   ],
+   "archive_entry": "N14"
+  },
+  {
+   "id": "reed-muller-and-one-move/O2",
+   "question": "The unscanned natural form at block 5: repeated targets (about 235,000 classes), the other 91 Singer placements, GL(5,2), general targets; a second check of 47,942 one-program exclusions.",
+   "worth": 0.1584,
+   "first_experiment": "starrec2 over the repeated-target classes; vr3.c over all 50,895 classes.",
+   "programs": [
+    "programs/natural-form-star-tool/starrec2.c"
+   ],
+   "archive_entry": "N14"
+  },
+  {
+   "id": "reed-muller-and-one-move/O3",
+   "question": "Four arrays next to plain: one 4 in 15 at block 4 and nine 4 in 19 at block 5 pass every exact test. A later idea round argued that the block-4 set cannot exist without scratch arrays (a determinant count; argued by hand by one AI agent and re-derived by a second, not checked by a person or a proof checker); with scratch it is open.",
+   "worth": 0.0466,
+   "first_experiment": "The full exact system of each block-5 set for one time order through Singular, or the star tool extended to repeated directions.",
+   "programs": [
+    "programs/natural-form-solver/independent-check/vtests.py"
+   ],
+   "archive_entry": "N17"
+  },
+  {
+   "id": "reed-muller-and-one-move/O4",
+   "question": "The general game: address maps in the middle and phase letters between moves (8, 9, 10 in 31).",
+   "worth": 0.297,
+   "first_experiment": "Add 'a register is moved at most once per physical move' to the multi-target rank-cover LP and check it refuses 1 in 3 in all ten order-15 classes; for phases, search block-5 lifts with excess below 0.290 per edge invariant under an odd-order subgroup of Sp(10,2) of order 31 or 33.",
+   "programs": [
+    "programs/four-in-15-by-address-group/mtlp.py",
+    "programs/phase-letters/t_lifts.py"
+   ],
+   "archive_entry": "N19"
+  },
+  {
+   "id": "reed-muller-and-one-move/O5",
+   "question": "A no-phase proof route at block 4: a certificate whose average demand over the 840 bases exceeds 3.482 times its average cap.",
+   "worth": null,
+   "first_experiment": "Rerun the plane-subspace certificate search with objective (average demand over 840 bases) / (average cap over 15 directions).",
+   "programs": [
+    "programs/address-maps-and-small-lift/t_cert4.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "reed-muller-and-one-move/O6",
+   "question": "Block 3 under gauge symmetry: 20 in 58, 20 in 59 (7-fold), 15 in 42 (21-fold) and the 5-in-14 shapes pass every screen.",
+   "worth": 0.0628,
+   "first_experiment": "Decide exactly the two 6-move problems behind the 7-fold 15 in 42, one representative per orbit.",
+   "programs": [
+    "programs/one-move-block3-symmetry/independent-check/v4_gauge_table.py"
+   ],
+   "archive_entry": "N16"
+  },
+  {
+   "id": "reed-muller-and-one-move/O7",
+   "question": "Pairs with phase letters (2 in 7 at block 4) and pairs at block 5 (2 in 9).",
+   "worth": 0.0963,
+   "first_experiment": "The exact formulation of 2 in 7 at block 4 through the Sp(8,2) game, filtered by the two-array conditions of the frame-packing section; a block-5 solver must first find the plain 2 in 10.",
+   "programs": [
+    "programs/phase-letters/spg.py"
+   ],
+   "archive_entry": "X42"
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/address-maps-and-small-lift/t_face3.py",
+   "language": "python",
+   "shows": "RM3: the block-3 face certificate (caps and demands)",
+   "command": "python3 t_face3.py",
+   "time": "6 seconds",
+   "memory": "under 100 MB",
+   "needs": [
+    "numpy"
+   ],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/address-maps-and-small-lift/independent-check/vk_face3.py",
+   "language": "python",
+   "shows": "RM3: the skeptic's exact recomputation",
+   "command": "python3 vk_face3.py",
+   "time": "14 seconds",
+   "memory": "under 100 MB",
+   "needs": [],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/address-maps-and-small-lift/t_small.py",
+   "language": "python",
+   "shows": "RM5: exhaustive small-lift tables",
+   "command": "python3 t_small.py 4 3 10",
+   "time": "15 seconds (hours for 4 4 13)",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/four-in-15-by-address-group/independent-check/thmE.py",
+   "language": "python",
+   "shows": "RM6: Theorem E's numbers",
+   "command": "python3 thmE.py",
+   "time": "under 1 second",
+   "memory": "under 100 MB",
+   "needs": [],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/four-in-15-by-address-group/independent-check/vchain.py",
+   "language": "python",
+   "shows": "RM6: placement classes and the four exact tests",
+   "command": "python3 vchain.py classes",
+   "time": "40 seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/natural-form-star-tool/starrec2.c",
+   "language": "c",
+   "shows": "RM7: the star recursion with pooling",
+   "command": "cc -O2 -o starrec2 starrec2.c && ./cal2.sh < input",
+   "time": "about 1 minute per excluded class",
+   "memory": "under 500 MB",
+   "needs": [],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/natural-form-star-tool/independent-check/coverage.py",
+   "language": "python",
+   "shows": "RM7: class counts and verdict bookkeeping",
+   "command": "python3 coverage.py",
+   "time": "10 seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/eight-in-31-rank-bounds/starrec4.c",
+   "language": "c",
+   "shows": "RM8: stage 1 rank bounds from below",
+   "command": "MAXD=16 ROUNDS=3 LB=2 VMASK=1 ./starrec4 tables5.bin list < classes",
+   "time": "about 7 seconds per class",
+   "memory": "under 500 MB",
+   "needs": [],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/three-in-14-groebner/run_z.py",
+   "language": "python",
+   "shows": "RM9: zero-block test on the 44 sets and controls",
+   "command": "python3 run_z.py",
+   "time": "80 seconds",
+   "memory": "under 500 MB",
+   "needs": [
+    "numpy"
+   ],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/phase-letters/thresholds.py",
+   "language": "python",
+   "shows": "RM10: what a certificate must reach",
+   "command": "python3 thresholds.py",
+   "time": "under 1 second",
+   "memory": "under 100 MB",
+   "needs": [],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/phase-letters/t_setup.py",
+   "language": "python",
+   "shows": "RM10: exact checks of the Sp(2m,2) game",
+   "command": "python3 t_setup.py",
+   "time": "4 minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/singer-invariant-search/struct_check.py",
+   "language": "python",
+   "shows": "RM11: exact checks of the canonical Singer form",
+   "command": "python3 struct_check.py",
+   "time": "76 seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/one-move-block4/independent-check/vpairs.py",
+   "language": "python",
+   "shows": "RM5: pairs at block 4, exhaustive",
+   "command": "python3 vpairs.py",
+   "time": "20 seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "run_from": "the working copy made by programs/workdir.sh"
+  },
+  {
+   "path": "programs/workdir.sh",
+   "language": "sh",
+   "shows": "builds the working copy in which every command runs",
+   "command": "sh programs/workdir.sh",
+   "time": "seconds",
+   "memory": "under 100 MB",
+   "needs": [],
+   "run_from": "this section's folder"
+  }
+ ],
+ "counts": {
+  "proved in Lean": 0,
+  "checked by computer": 5,
+  "argued by hand, not checked": 10,
+  "refuted": 5,
+  "open": 4
+ }
+}

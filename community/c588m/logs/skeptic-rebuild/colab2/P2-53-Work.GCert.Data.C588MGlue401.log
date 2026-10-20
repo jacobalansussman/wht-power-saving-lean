@@ -1,0 +1,8 @@
+/content/work/v-m-rebuild/src/Work/GCert/Data/C588MGlue401.lean:24:61: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/content/work/v-m-rebuild/src/Work/GCert/Data/C588MGlue401.lean:24:61: warning: Unused tactic linter: `decide` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'GXD.C588M.ginv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.C588M.price' depends on axioms: [propext, Classical.choice, Quot.sound]

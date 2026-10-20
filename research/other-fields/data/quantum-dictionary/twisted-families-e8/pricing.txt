@@ -1,0 +1,16 @@
+== control #799 (python3 -I pricer.py)
+ "deficit": 2560,
+ "b_decimal": "0.001664400278850482327913",
+ "kappa_decimal": "0.001661634653669567",
+ "control_b_matches_799": true,
+ "control_kappa_matches_799": true
+== what-if cst63_one_total_rank7 (copy children per call: rank 8 x8 -> as named; x72 calls)
+ "deficit": 2632,
+ "b_decimal": "0.00171116718272074087062",
+ "binding": "complex",
+ "kappa_decimal": "0.001708244091491304"
+== what-if cst56_eight_totals_rank7 (copy children per call: rank 8 x8 -> as named; x72 calls)
+ "deficit": 3136,
+ "b_decimal": "0.00203846738565053174113",
+ "binding": "bit",
+ "kappa_decimal": "0.001730427469823602"

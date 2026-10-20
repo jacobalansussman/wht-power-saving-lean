@@ -1,0 +1,16 @@
+P111 r=8 at most 1 freed non-known cells: UNSAT  vars 89010 clauses 302713  0.3s
+P111 r=8 at most 2 freed non-known cells: UNSAT  vars 94747 clauses 314185  2.5s
+P111 r=8 at most 3 freed non-known cells: UNSAT  vars 100482 clauses 375033  8.8s
+P111 r=8 at most 1 RELAYED PORTS: UNSAT  vars 83492 clauses 291566  0.2s
+P111 r=8 at most 2 RELAYED PORTS: UNSAT  vars 83600 clauses 291780  0.3s
+P111 r=8 at most 3 RELAYED PORTS: UNSAT  vars 83706 clauses 341370  0.5s
+P111 r=8 at most 4 RELAYED PORTS: UNSAT  vars 83810 clauses 357500  0.7s
+P111 r=8 at most 5 RELAYED PORTS: UNSAT  vars 83912 clauses 357702  1.2s
+P111 r=8 at most 6 RELAYED PORTS: UNSAT  vars 84012 clauses 357900  1.7s
+P111 r=8 at most 8 RELAYED PORTS: UNSAT  vars 84206 clauses 358284  2.4s
+P111 r=8 at most 10 RELAYED PORTS: UNSAT  vars 84392 clauses 358652  4.4s
+P111 r=8 at most 12 RELAYED PORTS: UNSAT  vars 84570 clauses 359004  8.3s
+P111 8 16 cols undecided at 22s
+P111 r=8 at most 14 RELAYED PORTS: UNSAT  vars 84740 clauses 359340  13.6s
+P111 r=8 at most 16 RELAYED PORTS: UNSAT  vars 84902 clauses 359660  35.9s
+P111 8 20 cols undecided at 110s

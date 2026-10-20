@@ -1,0 +1,5 @@
+A4 {'n': 10, 'k': 5, 'omega': 2, 'cliques': 15, 'closed_sets': 161, 'best_dim': 4, 'best_T': 15, 'best_ports': 6, 'floor_per_call': '8', 'floor_float': 8.0, 'per_port': 0.8, 'distinct_labels': True}
+A5 {'n': 15, 'k': 5, 'omega': 3, 'cliques': 15, 'closed_sets': 291, 'best_dim': 4, 'best_T': 15, 'best_ports': 7, 'floor_per_call': '12', 'floor_float': 12.0, 'per_port': 0.8, 'distinct_labels': True}
+D5 {'n': 20, 'k': 5, 'omega': 4, 'cliques': 15, 'closed_sets': 161, 'best_dim': 4, 'best_T': 15, 'best_ports': 12, 'floor_per_call': '16', 'floor_float': 16.0, 'per_port': 0.8, 'distinct_labels': False}
+D6 {'n': 30, 'k': 5, 'omega': 6, 'cliques': 15, 'closed_sets': 291, 'best_dim': 4, 'best_T': 15, 'best_ports': 14, 'floor_per_call': '24', 'floor_float': 24.0, 'per_port': 0.8, 'distinct_labels': False}
+E7 {'n': 63, 'k': 7, 'omega': 7, 'cliques': 135, 'closed_sets': 26323, 'best_dim': 5, 'best_T': 135, 'best_ports': 15, 'floor_per_call': '35', 'floor_float': 35.0, 'per_port': 0.5555555555555556, 'distinct_labels': True}

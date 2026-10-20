@@ -1,0 +1,11 @@
+=== cal_plain4F_s2.json n=14 N=16 LM 1.0e-28
+   rank: 10
+   slices: linear (4 random integer forms)
+   square: (14, 14)
+   krawczyk: True
+   leftover: 6
+   simplest_rational_closes: False
+   root_sample: ['[-1.00816179918569532871555860', '[1.000106540355211653516991378', '[2.130944860485138194401797248']
+   route_S_closed: 0 of 6 leftover rows
+   verdict: UNDECIDED by Route S at these degrees: 6 rows not closed, e.g. (5, 'syzygies exist (nullity 494) but every u vanishes somewhere on the box [8054 x 3390]')
+   sliced unknowns: ['x2', 'x3', 'x12', 'x13']  alphas: 4

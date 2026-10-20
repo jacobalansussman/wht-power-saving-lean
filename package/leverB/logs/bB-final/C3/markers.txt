@@ -1,0 +1,26 @@
+-rw-r--r-- 1 root root 0 Oct 19 22:48 BOS-L3945Hneg-OK
+-rw-r--r-- 1 root root 0 Oct 19 22:43 BOS-L3945H-OK
+-rw-r--r-- 1 root root 0 Oct 19 20:10 CHECKS-L3945H-OK
+-rw-r--r-- 1 root root 0 Oct 19 21:19 CMP-L3945H-OK
+-rw-r--r-- 1 root root 0 Oct 19 20:08 CTL-L3945H-OK
+47f62017f714e44310bfd61244b19804654d60f5af9727891edcd8fd76febc4d  comparator/fourier-l3945h.json
+da48ab4be51a8464668ce269cd9fcf1310cd613e4901bbd351d59911a5ae9f04  comparator/fourier-l3945h-neg.json
+5ed11f2dc19f3ba3f1237d789cf6ae324b8e3a4675a65e51cc22f334fe7cf233  Work/FourierL3945H/ArbitraryLength.lean
+4024d7aeb0abab0134066f3bcbc3f50bd84d1db11ff00856a000ec1e70055b57  Work/FourierL3945H/Asymptotics.lean
+89af8c3150693ea0774f24527f575447702f59e59ddea704bb1a5059b8ae7d72  Work/FourierL3945H/Axioms.lean
+93d39a1df03ec9efb3e394ca4b037f2a89524c6a662ffaf72c925bd6eaeb6ffc  Work/FourierL3945H/ConvolutionProgram.lean
+59aa22667fa9a86185549176aaa5728c73d9e85c81e4d3a894f7bc45e5988a3b  Work/FourierL3945H/Goal.lean
+a95080c3f72a2b0812b19516fb21077231e60db188a3c9085415907786ab7ed1  Work/FourierL3945H/Main.lean
+fd97f76bde0559c7df10c3b5bfafa7e842f58d55017c57690a6024c016b96eb1  Work/FourierL3945HNeg/UniformFourierChallenge.lean
+107320d704be22eb4831730f5391396e96cfd611fa568c1f6df24889c23b8499  Work/FourierL3945H/Seam.lean
+b52a5b3150af9092938cb256f017c0aca1fa6bf8c3c372cee74f0ac3ed55ea08  Work/FourierL3945H/SectorAlgorithm.lean
+44fc9d47dc998bf1a43b9f12d59a361493b2c37a13c777906eb81ad8012bf448  Work/FourierL3945H/SynchronizedAlgorithm.lean
+b0639a0a5d7f7e81c92aa6bcfb2e0392e7ad09e5b551c59b1e7e5318bd834a0a  Work/FourierL3945H/TransformProgram.lean
+7f4f745a5244941879e51f0b84d748a632dfe123027077be2515e53e617f71ec  Work/FourierL3945H/UniformBounds.lean
+99480d1e8d3db7183de1a0b95b190388be0145d9d4603e32f314544cda6c1a3d  Work/FourierL3945H/UniformFourierChallenge.lean
+3904017f2582376da87982d72600eadef660b3a7007c8e8bbb156e8538b878b5  Work/FourierL3945H/WorkingCompiler.lean
+47c831b069ca0b9eaf91089b40cce65c068bda90399878f38c5f51eb22a69c20  Work/FourierL3945H/WorkingPreparation.lean
+71ece5642fdefcf3ed41348dcb3083c82d53e4aceea18c557f7f4c08409c6672  Work/FourierL3945H/WorkingTransform.lean
+83955a57b6c973e3dc89af201e2a271c703ea2bff1df7ed58034776c47e475ac  Work/L3945H/Stmt.lean
+9c623573443be64eaab1da26ca0ca75d2a5cd11b8798e5024f21675ff1f135b0  Work/Mixed/SeamConst.lean
+-rw-r--r-- 1 root root 51185 Oct 19 20:10 bos-L3945H/stage.merge-map.json

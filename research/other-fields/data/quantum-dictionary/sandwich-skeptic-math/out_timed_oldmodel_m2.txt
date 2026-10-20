@@ -1,0 +1,8 @@
+    Y_T moves 0 -> <e0> (end), Y_S moves 0 -> <e1> (end); both empty
+ok  Y_T -= X_S  (Y_T at <e0>, X_S at <e0> = its start)
+ok  Y_S -= X_T  (Y_S at <e1>, X_T at <e1> = its start)
+    X_S moves <e0> -> F, X_T moves <e1> -> F
+ok  R := X_S + X_T  (both at F)
+ok  R walks F -> <e0>; Y_T += R (Y_T = x_T)
+ok  R walks <e0> -> 0 -> <e1>; Y_S += R (Y_S = x_S)
+copy cost of R = 1 + 2 = 3 (two separate totals: 1 + 1 = 2)

@@ -1,0 +1,1266 @@
+0,1,10,12,13,15,18,21 claim=L:stage1 mine=EXCL-A L F=28617 dim=2 S=167772170 l=3 u=2 round=1
+0,1,10,12,14,15,17,21 claim=L:stage1 mine=EXCL-A L F=23544 dim=2 S=18876480 l=3 u=2 round=1
+0,1,10,12,14,15,20,21 claim=undecided mine=PASS-ABC 
+0,1,10,12,15,17,20,21 claim=L:stage1 mine=EXCL-A S F=24323 dim=2 S=41943680 tot=17 need=18 round=2
+0,1,10,12,15,17,20,22 claim=L:stage3 mine=EXCL-A L F=26599 dim=2 S=603979800 l=3 u=2 round=2
+0,1,2,10,12,15,20,22 claim=L:stage1 mine=EXCL-A M Q=10075 tr=11 s=12 round=1
+0,1,2,3,4,5,11,18 claim=L:stage1 mine=EXCL-A L F=9480 dim=3 S=1761616128 l=4 u=3 round=2
+0,1,2,3,5,10,11,18 claim=L:stage1 mine=EXCL-A L F=9248 dim=3 S=2689613952 l=4 u=3 round=2
+0,1,2,3,5,10,11,20 claim=L:stage1 mine=EXCL-A L F=852 dim=3 S=1162149888 l=4 u=3 round=2
+0,1,2,3,5,11,13,14 claim=L:stage1 mine=EXCL-A M Q=8292 tr=11 s=12 round=1
+0,1,2,3,5,11,15,18 claim=L:stage1 mine=EXCL-A L F=9480 dim=3 S=1761616128 l=4 u=2 round=2
+0,1,2,3,5,11,16,19 claim=L:stage3 mine=EXCL-A L F=24587 dim=2 S=110100480 l=3 u=2 round=1
+0,1,2,3,5,6,11,15 claim=L:stage1 mine=EXCL-A L F=9572 dim=3 S=209716416 l=4 u=3 round=2
+0,1,2,3,5,6,11,17 claim=L:stage1 mine=EXCL-A L F=15887 dim=2 S=4420 l=3 u=2 round=1
+0,1,2,3,5,6,12,15 claim=L:stage1 mine=EXCL-A L F=6339 dim=3 S=1342836738 l=4 u=3 round=2
+0,1,2,3,5,8,13,20 claim=L:stage1 mine=EXCL-A L F=32119 dim=2 S=170 l=3 u=2 round=1
+0,1,2,3,5,9,15,16 claim=L:stage3 mine=EXCL-A L F=16280 dim=3 S=1082229056 l=4 u=3 round=2
+0,1,2,3,6,9,12,20 claim=L:stage1 mine=EXCL-A L F=13298 dim=2 S=1207964160 l=3 u=2 round=1
+0,1,2,3,7,12,19,20 claim=L:stage1 mine=EXCL-A L F=3257 dim=3 S=2282824192 l=4 u=3 round=2
+0,1,2,3,9,10,14,20 claim=L:stage1 mine=EXCL-A L F=28469 dim=2 S=23040 l=1 u=0 round=1
+0,1,2,3,9,12,14,20 claim=L:stage1 mine=EXCL-A L F=6160 dim=3 S=3207168 l=4 u=3 round=2
+0,1,2,4,10,14,17,18 claim=L:stage1 mine=EXCL-A L F=25507 dim=3 S=543163398 l=4 u=3 round=2
+0,1,2,4,5,10,14,19 claim=L:stage1 mine=EXCL-A L F=19461 dim=2 S=603979842 l=3 u=2 round=1
+0,1,2,4,5,11,12,18 claim=L:stage1 mine=EXCL-A L F=20822 dim=2 S=8913032 l=3 u=2 round=1
+0,1,2,4,5,11,12,19 claim=L:stage1 mine=EXCL-A L F=6952 dim=3 S=17433864 l=4 u=3 round=2
+0,1,2,4,5,11,13,18 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=171969088 l=4 u=3 round=2
+0,1,2,4,5,11,14,18 claim=undecided mine=PASS-ABC 
+0,1,2,4,5,11,14,19 claim=L:stage1 mine=EXCL-A L F=27617 dim=3 S=22061058 l=4 u=3 round=2
+0,1,2,4,5,11,15,16 claim=L:stage1 mine=EXCL-A L F=3706 dim=3 S=604242980 l=4 u=3 round=2
+0,1,2,4,5,11,16,18 claim=undecided mine=PASS-ABC 
+0,1,2,4,5,11,16,19 claim=L:stage1 mine=EXCL-A L F=2028 dim=3 S=679608592 l=4 u=3 round=2
+0,1,2,4,5,6,11,18 claim=L:stage1 mine=EXCL-A L F=20969 dim=3 S=570958464 l=4 u=3 round=2
+0,1,2,4,5,7,10,13 claim=L:stage1 mine=EXCL-A L F=5954 dim=3 S=570691720 l=4 u=3 round=2
+0,1,2,4,5,7,10,16 claim=L:stage3 mine=EXCL-A L F=19461 dim=2 S=1213440 l=3 u=2 round=2
+0,1,2,4,5,8,11,14 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=1241532928 l=4 u=3 round=2
+0,1,2,4,5,8,11,18 claim=L:stage1 mine=EXCL-A S F=30920 dim=2 S=2182348800 tot=27 need=28 round=2
+0,1,2,4,5,8,11,19 claim=L:stage1 mine=EXCL-A L F=6952 dim=3 S=17433864 l=4 u=3 round=2
+0,1,2,4,6,11,18,19 claim=Z:stage2 mine=EXCL-A L F=19461 dim=2 S=90 l=3 u=2 round=2
+0,1,2,4,6,9,10,19 claim=L:stage1 mine=EXCL-A S F=640 dim=2 S=142608512 tot=17 need=18 round=2
+0,1,2,4,7,10,13,22 claim=L:stage1 mine=EXCL-A L F=8480 dim=3 S=3233841280 l=4 u=3 round=2
+0,1,2,4,7,11,12,18 claim=L:stage1 mine=EXCL-A L F=6484 dim=3 S=411140112 l=4 u=3 round=2
+0,1,2,4,7,11,19,20 claim=L:stage1 mine=EXCL-A L F=5673 dim=3 S=543170656 l=4 u=3 round=2
+0,1,2,4,7,8,12,18 claim=L:stage1 mine=EXCL-A L F=17088 dim=3 S=85985856 l=4 u=3 round=2
+0,1,2,4,7,8,13,14 claim=L:stage1 mine=EXCL-A L F=4113 dim=2 S=1114146 l=3 u=2 round=1
+0,1,2,4,8,10,13,14 claim=L:stage1 mine=EXCL-A L F=15520 dim=3 S=3415040 l=4 u=2 round=2
+0,1,2,4,9,11,14,18 claim=L:stage1 mine=EXCL-A M Q=7364 tr=11 s=12 round=1
+0,1,2,5,10,11,12,18 claim=Z:stage2 mine=EXCL-B S F=6980 dim=1 S=67108864 tot=1 need=2 round=2
+0,1,2,5,10,11,12,19 claim=L:stage1 mine=EXCL-A L F=6952 dim=3 S=539116608 l=4 u=3 round=2
+0,1,2,5,10,11,13,16 claim=L:stage1 mine=EXCL-A M Q=28837 tr=11 s=12 round=1
+0,1,2,5,10,11,13,18 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=171969088 l=4 u=3 round=2
+0,1,2,5,10,11,13,22 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=171969088 l=4 u=3 round=2
+0,1,2,5,10,11,14,18 claim=Z:stage2 mine=EXCL-A L F=19461 dim=2 S=83886090 l=3 u=2 round=2
+0,1,2,5,10,11,15,18 claim=L:stage1 mine=EXCL-A L F=22418 dim=3 S=273680904 l=4 u=3 round=2
+0,1,2,5,10,11,16,18 claim=Z:stage2 mine=EXCL-A L F=19461 dim=2 S=83886090 l=3 u=2 round=2
+0,1,2,5,10,11,18,19 claim=undecided mine=PASS-ABC 
+0,1,2,5,10,11,18,20 claim=Z:stage2 mine=EXCL-A L F=19461 dim=2 S=2684354640 l=3 u=2 round=2
+0,1,2,5,10,11,18,21 claim=L:stage1 mine=EXCL-A L F=22418 dim=3 S=273680904 l=4 u=3 round=2
+0,1,2,5,10,12,16,19 claim=L:stage1 mine=EXCL-A S F=14118 dim=2 S=268437504 tot=2 need=4 round=2
+0,1,2,5,10,13,15,18 claim=Z:stage2 mine=EXCL-A M Q=11278 tr=11 s=12 round=1
+0,1,2,5,10,13,18,19 claim=undecided mine=PASS-ABC 
+0,1,2,5,10,13,18,20 claim=L:stage1 mine=EXCL-A M Q=31268 tr=11 s=12 round=1
+0,1,2,5,10,15,18,19 claim=L:stage1 mine=EXCL-A L F=15475 dim=2 S=2147749890 l=3 u=2 round=1
+0,1,2,5,11,12,13,14 claim=L:stage1 mine=EXCL-A M Q=12838 tr=11 s=12 round=1
+0,1,2,5,11,12,13,19 claim=Z:stage2 mine=EXCL-A L F=8267 dim=2 S=134349060 l=3 u=2 round=2
+0,1,2,5,11,12,15,18 claim=L:stage1 mine=EXCL-A S F=748 dim=2 S=1074282504 tot=17 need=18 round=2
+0,1,2,5,11,12,15,19 claim=L:stage1 mine=EXCL-A L F=8188 dim=3 S=2155941912 l=4 u=3 round=2
+0,1,2,5,11,12,16,19 claim=L:stage2 mine=EXCL-A L F=24587 dim=2 S=100663302 l=3 u=2 round=1
+0,1,2,5,11,12,19,22 claim=L:stage1 mine=EXCL-A S F=7124 dim=2 S=1107313152 tot=27 need=28 round=2
+0,1,2,5,11,13,14,22 claim=L:stage1 mine=EXCL-A L F=8188 dim=3 S=1208033544 l=4 u=3 round=2
+0,1,2,5,11,13,17,18 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=171969088 l=4 u=2 round=2
+0,1,2,5,11,14,17,18 claim=Z:stage2 mine=EXCL-B S F=6484 dim=1 S=524288 tot=1 need=2 round=2
+0,1,2,5,11,14,19,22 claim=L:stage2 mine=EXCL-B S F=22804 dim=2 S=537395216 tot=15 need=16 round=2
+0,1,2,5,11,15,18,22 claim=L:stage1 mine=EXCL-A L F=30386 dim=3 S=3263365120 l=4 u=3 round=2
+0,1,2,5,11,16,17,18 claim=Z:stage2 mine=EXCL-A L F=7440 dim=2 S=1582080 l=1 u=0 round=2
+0,1,2,5,6,10,11,18 claim=Z:stage2 mine=EXCL-A L F=19461 dim=2 S=2684354640 l=3 u=2 round=2
+0,1,2,5,6,10,18,19 claim=Z:stage2 mine=EXCL-B L F=31479 dim=2 S=2359332 l=3 u=2 round=1
+0,1,2,5,6,11,13,18 claim=Z:stage2 mine=EXCL-B S F=1808 dim=1 S=128 tot=1 need=2 round=2
+0,1,2,5,6,11,15,18 claim=L:stage1 mine=EXCL-A L F=10120 dim=3 S=35133504 l=4 u=3 round=2
+0,1,2,5,6,11,15,22 claim=L:stage1 mine=EXCL-A S F=6160 dim=2 S=3194880 tot=17 need=18 round=2
+0,1,2,5,6,11,16,19 claim=L:stage1 mine=EXCL-A L F=27505 dim=3 S=2485714944 l=4 u=3 round=2
+0,1,2,5,6,11,17,18 claim=L:stage1 mine=EXCL-A L F=14360 dim=3 S=3234004992 l=4 u=3 round=2
+0,1,2,5,6,11,18,19 claim=undecided mine=PASS-ABC 
+0,1,2,5,6,11,18,21 claim=L:stage1 mine=EXCL-A L F=14360 dim=3 S=3234004992 l=4 u=3 round=2
+0,1,2,5,6,7,10,12 claim=L:stage1 mine=EXCL-A M Q=20653 tr=15 s=16 round=1
+0,1,2,5,6,8,11,13 claim=L:stage1 mine=EXCL-A L F=16347 dim=2 S=33686532 l=3 u=2 round=1
+0,1,2,5,6,9,11,18 claim=Z:stage2 mine=EXCL-B L F=2028 dim=2 S=25165832 l=2 u=1 round=2
+0,1,2,5,7,10,13,18 claim=L:stage1 mine=EXCL-A L F=3965 dim=3 S=402817312 l=4 u=3 round=2
+0,1,2,5,7,10,13,19 claim=L:stage1 mine=EXCL-A M Q=8516 tr=6 s=7 round=1
+0,1,2,5,7,10,14,19 claim=L:stage1 mine=EXCL-A M Q=28281 tr=10 s=11 round=1
+0,1,2,5,7,10,16,19 claim=L:stage1 mine=EXCL-A L F=20285 dim=3 S=1115758608 l=4 u=3 round=2
+0,1,2,5,7,11,12,19 claim=L:stage3 mine=EXCL-A L F=8267 dim=2 S=2149584960 l=3 u=2 round=2
+0,1,2,5,7,11,14,19 claim=undecided mine=EXCL-B L F=20397 dim=2 S=4491264 l=2 u=1 round=2
+0,1,2,5,7,11,15,18 claim=L:stage1 mine=EXCL-A L F=14360 dim=3 S=3234004992 l=4 u=2 round=2
+0,1,2,5,7,11,18,19 claim=undecided mine=PASS-ABC 
+0,1,2,5,7,12,19,20 claim=L:stage1 mine=EXCL-A S F=16592 dim=2 S=655520 tot=12 need=13 round=2
+0,1,2,5,7,9,10,18 claim=L:stage1 mine=EXCL-A L F=26870 dim=2 S=8655360 l=3 u=2 round=1
+0,1,2,5,7,9,10,19 claim=L:stage1 mine=EXCL-A S F=2028 dim=2 S=17825792 tot=3 need=4 round=2
+0,1,2,5,7,9,12,20 claim=L:stage1 mine=EXCL-A L F=964 dim=3 S=269093392 l=4 u=3 round=2
+0,1,2,5,8,10,11,18 claim=undecided mine=PASS-ABC 
+0,1,2,5,8,10,11,19 claim=L:stage1 mine=EXCL-A L F=6952 dim=3 S=539116608 l=4 u=3 round=2
+0,1,2,5,8,10,18,19 claim=Z:stage2 mine=EXCL-A S F=30090 dim=2 S=8659200 tot=12 need=13 round=2
+0,1,2,5,8,11,13,18 claim=L:stage1 mine=EXCL-A S F=30920 dim=2 S=2182348800 tot=26 need=28 round=2
+0,1,2,5,8,11,14,18 claim=undecided mine=EXCL-A L F=15887 dim=2 S=17302530 l=3 u=2 round=3
+0,1,2,5,8,11,15,18 claim=L:stage3 mine=EXCL-A L F=2310 dim=2 S=404226048 l=3 u=2 round=2
+0,1,2,5,8,11,16,18 claim=undecided mine=EXCL-A L F=30645 dim=2 S=33810 l=1 u=0 round=2
+0,1,2,5,8,11,17,18 claim=L:stage1 mine=EXCL-A L F=18641 dim=3 S=1141973000 l=4 u=3 round=2
+0,1,2,5,8,11,18,19 claim=undecided mine=PASS-ABC 
+0,1,2,5,8,11,18,21 claim=L:stage1 mine=EXCL-A L F=6980 dim=3 S=110493696 l=4 u=3 round=2
+0,1,2,5,8,13,18,19 claim=L:stage3 mine=EXCL-A S F=24168 dim=2 S=268697920 tot=7 need=8 round=2
+0,1,2,5,8,9,11,18 claim=L:stage1 mine=EXCL-A S F=30920 dim=2 S=2182348800 tot=27 need=28 round=2
+0,1,2,5,9,10,11,18 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=171969088 l=4 u=3 round=2
+0,1,2,5,9,10,15,16 claim=L:stage3 mine=EXCL-A L F=15391 dim=2 S=2147565570 l=3 u=2 round=1
+0,1,2,5,9,10,18,19 claim=L:stage2 mine=EXCL-A L F=296 dim=2 S=2283929600 l=3 u=2 round=2
+0,1,2,5,9,11,18,19 claim=undecided mine=PASS-ABC 
+0,1,2,5,9,11,18,20 claim=L:stage1 mine=EXCL-A L F=1424 dim=3 S=574890496 l=4 u=3 round=2
+0,1,2,6,10,11,18,19 claim=Z:stage2 mine=EXCL-A L F=19461 dim=2 S=553648200 l=3 u=2 round=1
+0,1,2,6,10,12,15,16 claim=undecided mine=EXCL-B S F=25892 dim=1 S=64 tot=1 need=2 round=2
+0,1,2,6,11,14,18,19 claim=Z:stage2 mine=EXCL-A S F=23300 dim=2 S=272646160 tot=17 need=18 round=2
+0,1,2,6,11,15,18,19 claim=undecided mine=EXCL-A L F=23300 dim=2 S=16400 l=1 u=0 round=2
+0,1,2,6,11,16,18,19 claim=L:stage1 mine=EXCL-A L F=1092 dim=3 S=202378256 l=4 u=2 round=2
+0,1,2,6,11,17,18,19 claim=L:stage1 mine=EXCL-A L F=8840 dim=3 S=19924160 l=4 u=3 round=2
+0,1,2,6,11,18,19,21 claim=L:stage2 mine=EXCL-A L F=21886 dim=2 S=335560960 l=3 u=2 round=1
+0,1,2,6,7,11,18,19 claim=Z:stage2 mine=EXCL-A L F=19461 dim=2 S=553648200 l=3 u=2 round=1
+0,1,2,6,9,11,14,18 claim=L:stage1 mine=EXCL-A L F=23300 dim=3 S=272678960 l=4 u=2 round=2
+0,1,2,6,9,11,16,19 claim=L:stage1 mine=EXCL-A L F=23104 dim=2 S=2694840320 l=2 u=1 round=2
+0,1,2,6,9,11,18,19 claim=undecided mine=EXCL-A S F=23300 dim=2 S=16400 tot=3 need=4 round=3
+0,1,2,7,10,12,13,22 claim=L:stage1 mine=EXCL-A M Q=6160 tr=11 s=12 round=1
+0,1,2,7,11,12,18,19 claim=L:stage1 mine=EXCL-A L F=5458 dim=3 S=1638500 l=4 u=3 round=2
+0,1,2,7,11,13,18,19 claim=undecided mine=PASS-ABC 
+0,1,2,7,8,12,19,20 claim=L:stage1 mine=EXCL-A L F=8267 dim=2 S=2149584960 l=3 u=2 round=1
+0,1,2,7,9,12,16,18 claim=L:stage1 mine=EXCL-A S F=8344 dim=1 S=266240 tot=3 need=4 round=2
+0,1,2,7,9,12,16,19 claim=L:stage1 mine=EXCL-A S F=6952 dim=1 S=1280 tot=3 need=4 round=2
+0,1,2,7,9,12,20,21 claim=L:stage1 mine=EXCL-A L F=32200 dim=3 S=2150678560 l=4 u=3 round=2
+0,1,2,8,10,14,19,20 claim=L:stage1 mine=EXCL-A L F=12198 dim=3 S=73400928 l=4 u=3 round=2
+0,1,2,8,11,13,18,19 claim=Z:stage2 mine=EXCL-A L F=296 dim=2 S=285217024 l=3 u=2 round=2
+0,1,2,8,11,13,18,20 claim=L:stage1 mine=EXCL-A S F=24648 dim=2 S=1280 tot=3 need=4 round=2
+0,1,2,8,11,14,18,19 claim=L:stage1 mine=EXCL-A L F=26456 dim=3 S=155189600 l=4 u=3 round=2
+0,1,2,8,11,14,19,20 claim=L:stage1 mine=EXCL-A L F=7124 dim=3 S=50905104 l=4 u=2 round=2
+0,1,2,8,11,18,19,21 claim=L:stage1 mine=EXCL-A L F=1424 dim=3 S=285238784 l=4 u=3 round=2
+0,1,2,8,13,14,15,18 claim=Z:stage2 mine=EXCL-A L F=28617 dim=2 S=805306560 l=3 u=2 round=1
+0,1,2,9,11,14,18,20 claim=L:stage1 mine=EXCL-A L F=31667 dim=2 S=327690 l=3 u=2 round=1
+0,1,2,9,11,14,19,20 claim=Z:stage2 mine=EXCL-A L F=5673 dim=2 S=6291552 l=1 u=0 round=2
+0,1,3,10,12,13,14,20 claim=L:stage1 mine=EXCL-A L F=16644 dim=2 S=41040 l=3 u=2 round=1
+0,1,3,10,12,14,15,20 claim=L:stage1 mine=EXCL-A L F=20673 dim=3 S=84541450 l=4 u=3 round=2
+0,1,3,10,12,14,17,20 claim=L:stage1 mine=EXCL-A L F=5289 dim=3 S=1075986466 l=4 u=3 round=2
+0,1,3,4,10,13,14,20 claim=L:stage3 mine=EXCL-A L F=10510 dim=2 S=344064000 l=3 u=2 round=2
+0,1,3,4,10,13,17,18 claim=L:stage3 mine=EXCL-C L F=736 dim=3 S=38273608 l=3 u=2 round=2
+0,1,3,4,10,14,17,18 claim=L:stage3 mine=EXCL-C L F=31584 dim=3 S=1090654248 l=3 u=2 round=1
+0,1,3,4,5,10,17,18 claim=Z:stage2 mine=EXCL-B S F=5505 dim=1 S=1024 tot=1 need=2 round=2
+0,1,3,4,6,10,11,16 claim=L:stage1 mine=EXCL-A L F=2301 dim=3 S=268509730 l=4 u=3 round=2
+0,1,3,4,6,10,14,17 claim=L:stage1 mine=EXCL-A L F=26870 dim=2 S=8524800 l=3 u=2 round=1
+0,1,3,4,6,11,18,19 claim=L:stage1 mine=EXCL-A L F=23228 dim=2 S=2147551248 l=3 u=2 round=1
+0,1,3,4,6,8,13,14 claim=L:stage1 mine=EXCL-A L F=6980 dim=3 S=9461904 l=4 u=3 round=2
+0,1,3,4,6,9,14,21 claim=L:stage3 mine=EXCL-A L F=31772 dim=2 S=50331696 l=3 u=2 round=1
+0,1,3,4,7,10,13,20 claim=L:stage1 mine=EXCL-A M Q=5352 tr=6 s=7 round=1
+0,1,3,4,7,10,17,18 claim=L:stage1 mine=EXCL-A L F=10341 dim=2 S=134365200 l=3 u=2 round=1
+0,1,3,4,8,10,13,14 claim=L:stage1 mine=EXCL-A L F=15520 dim=3 S=3415040 l=4 u=2 round=2
+0,1,3,4,8,10,13,20 claim=L:stage1 mine=EXCL-A L F=11362 dim=3 S=72353952 l=4 u=3 round=2
+0,1,3,4,9,10,12,21 claim=L:stage1 mine=EXCL-A M Q=3050 tr=11 s=12 round=1
+0,1,3,4,9,13,18,21 claim=L:stage1 mine=EXCL-A L F=6160 dim=3 S=3224567808 l=4 u=3 round=2
+0,1,3,5,10,11,18,19 claim=Z:stage2 mine=EXCL-B S F=11278 dim=2 S=3084 tot=17 need=18 round=2
+0,1,3,5,6,11,14,19 claim=L:stage1 mine=EXCL-A L F=15887 dim=2 S=2232576 l=3 u=2 round=1
+0,1,3,5,6,8,10,11 claim=L:stage3 mine=EXCL-A L F=16347 dim=2 S=393222 l=3 u=2 round=1
+0,1,3,5,6,8,9,15 claim=Z:stage2 mine=EXCL-A L F=26319 dim=2 S=537004160 l=3 u=2 round=1
+0,1,3,5,6,9,11,14 claim=L:stage1 mine=EXCL-A L F=31968 dim=2 S=269492256 l=3 u=2 round=1
+0,1,3,5,7,10,11,17 claim=Z:stage2 mine=EXCL-A L F=15971 dim=2 S=67244160 l=3 u=2 round=2
+0,1,3,5,7,11,13,14 claim=L:stage1 mine=EXCL-A L F=5289 dim=3 S=169871904 l=4 u=3 round=2
+0,1,3,5,7,11,18,19 claim=L:stage1 mine=EXCL-A L F=1987 dim=3 S=2290630660 l=4 u=3 round=2
+0,1,3,5,8,11,15,18 claim=L:stage1 mine=EXCL-A M Q=19370 tr=11 s=12 round=1
+0,1,3,5,8,11,16,18 claim=L:stage1 mine=EXCL-A M Q=3129 tr=6 s=7 round=1
+0,1,3,5,8,12,14,18 claim=L:stage1 mine=EXCL-A L F=6339 dim=3 S=36036 l=4 u=2 round=2
+0,1,3,5,8,12,15,18 claim=L:stage1 mine=EXCL-A L F=12057 dim=3 S=20778 l=4 u=3 round=2
+0,1,3,5,9,11,14,15 claim=L:stage1 mine=EXCL-A L F=19433 dim=3 S=234882816 l=4 u=2 round=2
+0,1,3,6,10,11,16,17 claim=L:stage1 mine=EXCL-A L F=32268 dim=3 S=805355568 l=4 u=3 round=2
+0,1,3,6,10,11,16,19 claim=L:stage2 mine=EXCL-A L F=26914 dim=3 S=554844164 l=4 u=3 round=2
+0,1,3,6,10,11,18,19 claim=L:stage1 mine=EXCL-A L F=23228 dim=2 S=3221228544 l=3 u=2 round=1
+0,1,3,6,10,11,19,20 claim=L:stage1 mine=EXCL-A L F=3329 dim=3 S=4473992 l=4 u=2 round=2
+0,1,3,6,10,12,15,18 claim=L:stage1 mine=EXCL-A L F=5458 dim=3 S=67702880 l=4 u=3 round=2
+0,1,3,6,10,12,16,17 claim=L:stage1 mine=EXCL-A L F=32268 dim=3 S=805355568 l=4 u=3 round=2
+0,1,3,6,10,12,17,19 claim=L:stage1 mine=EXCL-A L F=26870 dim=2 S=5140 l=2 u=0 round=1
+0,1,3,6,10,12,18,19 claim=L:stage1 mine=EXCL-A L F=23228 dim=2 S=2147616800 l=3 u=2 round=1
+0,1,3,6,10,12,19,20 claim=undecided mine=PASS-ABC 
+0,1,3,6,10,12,19,21 claim=L:stage1 mine=EXCL-A M Q=9103 tr=11 s=12 round=1
+0,1,3,6,10,13,16,17 claim=L:stage1 mine=EXCL-A L F=6339 dim=3 S=268601412 l=4 u=3 round=2
+0,1,3,6,10,14,16,17 claim=L:stage1 mine=EXCL-A L F=12057 dim=2 S=20490 l=3 u=2 round=2
+0,1,3,6,10,15,16,17 claim=L:stage1 mine=EXCL-A L F=30566 dim=2 S=25167888 l=3 u=2 round=1
+0,1,3,6,10,16,17,19 claim=L:stage1 mine=EXCL-A L F=30566 dim=2 S=25167888 l=3 u=2 round=1
+0,1,3,6,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=4933 dim=3 S=545292840 l=4 u=3 round=2
+0,1,3,6,11,15,19,20 claim=L:stage1 mine=EXCL-A L F=26599 dim=2 S=285212740 l=4 u=2 round=1
+0,1,3,6,11,17,18,19 claim=L:stage1 mine=EXCL-A M Q=16976 tr=11 s=12 round=1
+0,1,3,6,7,12,19,20 claim=Z:stage2 mine=EXCL-B S F=20285 dim=2 S=33554432 tot=1 need=2 round=2
+0,1,3,6,7,8,11,19 claim=L:stage1 mine=EXCL-A L F=31479 dim=2 S=276832320 l=3 u=2 round=1
+0,1,3,6,8,10,11,19 claim=L:stage1 mine=EXCL-A L F=23228 dim=2 S=3221228544 l=3 u=2 round=1
+0,1,3,6,8,11,14,15 claim=L:stage1 mine=EXCL-A S F=3050 dim=2 S=16912416 tot=7 need=8 round=2
+0,1,3,6,9,10,16,20 claim=L:stage1 mine=EXCL-A L F=18434 dim=2 S=1207959684 l=3 u=2 round=1
+0,1,3,6,9,11,18,19 claim=L:stage1 mine=EXCL-A L F=10654 dim=3 S=26900 l=4 u=2 round=2
+0,1,3,6,9,12,19,20 claim=Z:stage2 mine=EXCL-B L F=12658 dim=2 S=285212740 l=3 u=2 round=2
+0,1,3,7,10,13,14,22 claim=L:stage1 mine=EXCL-A L F=18621 dim=2 S=35652672 l=3 u=2 round=1
+0,1,3,7,11,13,14,22 claim=Z:stage2 mine=EXCL-A S F=20994 dim=2 S=50380800 tot=7 need=8 round=2
+0,1,3,7,11,13,16,17 claim=L:stage1 mine=EXCL-A L F=28902 dim=3 S=23070224 l=4 u=3 round=2
+0,1,3,7,9,13,14,22 claim=L:stage1 mine=EXCL-A L F=18621 dim=2 S=4293120 l=3 u=2 round=1
+0,1,3,7,9,13,18,21 claim=L:stage1 mine=EXCL-A L F=8188 dim=2 S=2147553288 l=2 u=1 round=2
+0,1,3,8,10,12,13,18 claim=L:stage1 mine=EXCL-A L F=15520 dim=3 S=3415040 l=4 u=2 round=2
+0,1,3,8,12,18,20,21 claim=Z:stage3 mine=EXCL-A L F=23544 dim=2 S=134283528 l=3 u=2 round=1
+0,1,3,8,13,15,18,20 claim=Z:stage2 mine=EXCL-A L F=31567 dim=2 S=26880 l=3 u=2 round=1
+0,1,3,9,11,13,14,16 claim=L:stage1 mine=EXCL-A L F=2114 dim=3 S=538971148 l=4 u=3 round=2
+0,1,3,9,11,16,18,21 claim=L:stage1 mine=EXCL-A L F=32268 dim=3 S=805355568 l=4 u=3 round=2
+0,1,3,9,12,16,18,21 claim=L:stage1 mine=EXCL-A L F=21625 dim=3 S=5570690 l=4 u=3 round=2
+0,1,3,9,13,14,15,18 claim=L:stage3 mine=EXCL-A L F=21637 dim=2 S=272646160 l=3 u=2 round=1
+0,1,3,9,13,16,18,21 claim=L:stage1 mine=EXCL-A L F=6339 dim=3 S=268601412 l=4 u=3 round=2
+0,1,4,10,11,13,14,20 claim=L:stage1 mine=EXCL-A L F=26420 dim=2 S=33624096 l=3 u=2 round=1
+0,1,4,10,11,13,17,18 claim=L:stage3 mine=EXCL-A L F=10341 dim=2 S=134365200 l=3 u=2 round=1
+0,1,4,10,11,14,17,18 claim=Z:stage2 mine=EXCL-B S F=7303 dim=2 S=1179648 tot=3 need=4 round=2
+0,1,4,10,11,17,18,21 claim=L:stage3 mine=EXCL-A L F=10341 dim=2 S=134365200 l=3 u=2 round=1
+0,1,4,10,12,14,19,20 claim=L:stage1 mine=EXCL-A L F=28837 dim=3 S=100827280 l=4 u=3 round=2
+0,1,4,10,13,14,19,20 claim=L:stage3 mine=EXCL-A L F=26420 dim=2 S=20640 l=3 u=2 round=2
+0,1,4,10,14,16,17,18 claim=Z:stage2 mine=EXCL-A S F=5289 dim=2 S=1073758208 tot=3 need=4 round=2
+0,1,4,5,10,11,18,21 claim=L:stage1 mine=EXCL-A L F=31268 dim=3 S=50610224 l=4 u=3 round=2
+0,1,4,5,10,12,14,15 claim=L:stage1 mine=EXCL-A L F=28385 dim=2 S=2219311104 l=3 u=2 round=1
+0,1,4,5,10,13,15,18 claim=Z:stage2 mine=EXCL-A L F=28617 dim=2 S=37752840 l=3 u=2 round=1
+0,1,4,5,10,13,17,18 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=171969088 l=4 u=3 round=2
+0,1,4,5,10,14,17,18 claim=undecided mine=PASS-ABC 
+0,1,4,5,10,15,17,18 claim=L:stage3 mine=EXCL-B L F=5254 dim=2 S=537403400 l=3 u=2 round=2
+0,1,4,5,10,16,17,18 claim=L:stage1 mine=EXCL-A L F=21637 dim=2 S=1572930 l=3 u=2 round=1
+0,1,4,5,10,16,18,19 claim=Z:stage2 mine=EXCL-A S F=30070 dim=2 S=10260 tot=6 need=8 round=2
+0,1,4,5,11,13,14,18 claim=Z:stage2 mine=EXCL-A S F=3965 dim=2 S=589968 tot=7 need=8 round=2
+0,1,4,5,6,10,11,18 claim=L:stage1 mine=EXCL-A S F=17088 dim=2 S=83888640 tot=17 need=18 round=2
+0,1,4,5,6,10,11,19 claim=L:stage1 mine=EXCL-A M Q=15520 tr=11 s=12 round=1
+0,1,4,5,6,11,18,19 claim=L:stage1 mine=EXCL-A L F=15904 dim=3 S=1080057920 l=4 u=2 round=2
+0,1,4,5,6,7,9,10 claim=L:stage1 mine=EXCL-A L F=12749 dim=2 S=1440 l=3 u=2 round=1
+0,1,4,5,6,9,10,16 claim=L:stage3 mine=EXCL-A L F=21637 dim=2 S=4718664 l=3 u=2 round=2
+0,1,4,5,6,9,10,17 claim=L:stage1 mine=EXCL-A M Q=546 tr=4 s=5 round=1
+0,1,4,5,6,9,11,14 claim=Z:stage2 mine=EXCL-A L F=31968 dim=2 S=269492256 l=3 u=2 round=1
+0,1,4,5,7,10,11,12 claim=L:stage1 mine=EXCL-A M Q=13770 tr=15 s=16 round=1
+0,1,4,5,7,10,11,14 claim=L:stage1 mine=EXCL-A L F=2689 dim=3 S=75776072 l=4 u=3 round=2
+0,1,4,5,7,10,13,22 claim=L:stage3 mine=EXCL-A L F=30430 dim=2 S=4325400 l=3 u=2 round=2
+0,1,4,5,7,10,16,18 claim=L:stage1 mine=EXCL-A S F=2689 dim=2 S=134381600 tot=7 need=8 round=2
+0,1,4,5,7,9,10,18 claim=Z:stage2 mine=EXCL-A L F=26870 dim=2 S=394752 l=3 u=2 round=1
+0,1,4,5,8,10,13,14 claim=L:stage1 mine=EXCL-A L F=27682 dim=3 S=1093173252 l=4 u=3 round=2
+0,1,4,5,8,10,17,18 claim=L:stage1 mine=EXCL-A L F=23939 dim=3 S=1610674176 l=4 u=3 round=2
+0,1,4,5,9,11,14,15 claim=L:stage1 mine=EXCL-A L F=19433 dim=3 S=234882816 l=4 u=2 round=2
+0,1,4,5,9,11,18,19 claim=Z:stage2 mine=EXCL-B S F=20757 dim=2 S=524288 tot=1 need=2 round=2
+0,1,4,6,10,11,17,18 claim=L:stage3 mine=EXCL-A L F=10341 dim=2 S=134365200 l=3 u=2 round=1
+0,1,4,6,10,15,17,18 claim=L:stage3 mine=EXCL-A L F=144 dim=2 S=294125568 l=3 u=2 round=2
+0,1,4,6,11,12,13,20 claim=L:stage1 mine=EXCL-A M Q=23300 tr=11 s=12 round=1
+0,1,4,6,7,10,16,18 claim=L:stage1 mine=EXCL-A L F=31243 dim=2 S=33718400 l=3 u=2 round=1
+0,1,4,6,7,9,10,16 claim=L:stage1 mine=EXCL-A L F=19182 dim=2 S=570425412 l=4 u=2 round=2
+0,1,4,6,7,9,10,19 claim=L:stage1 mine=EXCL-A L F=3394 dim=4 S=1107992612 l=8 u=6 round=2
+0,1,4,6,8,10,13,14 claim=L:stage1 mine=EXCL-A L F=16644 dim=2 S=12480 l=3 u=2 round=1
+0,1,4,6,8,10,17,18 claim=L:stage1 mine=EXCL-A S F=10212 dim=2 S=3072 tot=8 need=9 round=2
+0,1,4,6,8,11,12,18 claim=L:stage1 mine=EXCL-A S F=29153 dim=2 S=16781312 tot=8 need=9 round=1
+0,1,4,6,8,11,13,20 claim=L:stage2 mine=EXCL-A L F=15752 dim=2 S=553666560 l=3 u=2 round=1
+0,1,4,6,8,11,14,15 claim=Z:stage2 mine=EXCL-A S F=29537 dim=2 S=67141632 tot=3 need=4 round=2
+0,1,4,6,8,11,19,20 claim=L:stage1 mine=EXCL-A L F=27598 dim=3 S=1078462536 l=4 u=3 round=2
+0,1,4,6,8,9,11,14 claim=L:stage3 mine=EXCL-A L F=26319 dim=2 S=2448 l=3 u=2 round=1
+0,1,4,6,9,10,11,16 claim=L:stage1 mine=EXCL-A L F=8840 dim=3 S=555779200 l=4 u=3 round=2
+0,1,4,6,9,10,12,16 claim=L:stage1 mine=EXCL-A L F=8840 dim=3 S=555779200 l=4 u=3 round=2
+0,1,4,6,9,10,12,17 claim=L:stage1 mine=EXCL-A L F=32139 dim=2 S=6291552 l=3 u=2 round=1
+0,1,4,6,9,10,13,16 claim=L:stage3 mine=EXCL-A L F=24431 dim=2 S=67641360 l=3 u=2 round=1
+0,1,4,6,9,10,13,17 claim=L:stage1 mine=EXCL-A M Q=17388 tr=10 s=11 round=1
+0,1,4,6,9,10,14,16 claim=L:stage1 mine=EXCL-A L F=3394 dim=3 S=1174405220 l=4 u=3 round=2
+0,1,4,6,9,10,15,16 claim=L:stage1 mine=EXCL-A L F=6207 dim=3 S=34341132 l=4 u=3 round=2
+0,1,4,6,9,10,15,18 claim=L:stage1 mine=EXCL-A S F=12658 dim=2 S=2147483680 tot=3 need=4 round=2
+0,1,4,6,9,11,17,18 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=574628416 l=4 u=3 round=2
+0,1,4,6,9,11,19,20 claim=L:stage1 mine=EXCL-A S F=12658 dim=2 S=285212740 tot=7 need=8 round=2
+0,1,4,6,9,14,17,18 claim=L:stage1 mine=EXCL-A L F=1704 dim=3 S=2168488256 l=4 u=3 round=2
+0,1,4,6,9,15,17,18 claim=L:stage1 mine=EXCL-A L F=3437 dim=3 S=604258370 l=4 u=3 round=2
+0,1,4,7,10,13,14,20 claim=undecided mine=EXCL-B S F=21353 dim=2 S=270532866 tot=22 need=23 round=2
+0,1,4,7,10,14,17,18 claim=L:stage3 mine=EXCL-A L F=407 dim=2 S=12595200 l=3 u=2 round=2
+0,1,4,7,10,15,17,18 claim=L:stage3 mine=EXCL-B L F=31567 dim=2 S=272630020 l=3 u=2 round=1
+0,1,4,7,8,10,13,14 claim=Z:stage2 mine=EXCL-A L F=17852 dim=2 S=18890760 l=3 u=2 round=1
+0,1,4,7,8,10,13,20 claim=L:stage1 mine=EXCL-A L F=28385 dim=2 S=33824832 l=3 u=2 round=1
+0,1,4,7,8,10,17,18 claim=L:stage3 mine=EXCL-B L F=21637 dim=2 S=1572930 l=2 u=1 round=1
+0,1,4,7,9,10,17,18 claim=L:stage1 mine=EXCL-A L F=10341 dim=2 S=134365200 l=3 u=2 round=1
+0,1,4,8,10,11,13,14 claim=L:stage1 mine=EXCL-A L F=1704 dim=3 S=273158216 l=4 u=3 round=2
+0,1,4,8,10,11,13,20 claim=undecided mine=PASS-ABC 
+0,1,4,8,10,13,14,16 claim=L:stage1 mine=EXCL-A L F=15520 dim=3 S=3415040 l=4 u=3 round=2
+0,1,4,8,10,13,14,19 claim=L:stage1 mine=EXCL-A L F=16644 dim=2 S=12480 l=3 u=2 round=1
+0,1,4,8,10,13,19,20 claim=L:stage1 mine=EXCL-A L F=18348 dim=3 S=1141907592 l=4 u=3 round=2
+0,1,4,8,10,14,19,20 claim=undecided mine=PASS-ABC 
+0,1,4,8,11,13,18,20 claim=Z:stage2 mine=EXCL-A L F=3965 dim=3 S=134447152 l=4 u=3 round=2
+0,1,4,8,11,14,18,19 claim=L:stage1 mine=EXCL-A S F=22904 dim=2 S=16777248 tot=3 need=4 round=2
+0,1,4,8,13,14,19,20 claim=L:stage1 mine=EXCL-A L F=28617 dim=2 S=537133632 l=3 u=2 round=1
+0,1,4,8,9,10,13,14 claim=L:stage1 mine=EXCL-A L F=8292 dim=3 S=538988624 l=4 u=3 round=2
+0,1,4,8,9,13,14,19 claim=L:stage1 mine=EXCL-A M Q=20673 tr=11 s=12 round=1
+0,1,4,9,10,11,18,21 claim=L:stage1 mine=EXCL-A L F=21637 dim=2 S=4718610 l=3 u=2 round=1
+0,1,4,9,10,13,17,18 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=171969088 l=4 u=3 round=2
+0,1,4,9,10,14,17,18 claim=L:stage3 mine=EXCL-C L F=31584 dim=3 S=1090654248 l=3 u=2 round=1
+0,1,4,9,11,13,14,16 claim=undecided mine=EXCL-A S F=22317 dim=2 S=2155876368 tot=7 need=8 round=2
+0,1,4,9,11,13,14,18 claim=Z:stage2 mine=EXCL-A S F=1704 dim=3 S=3225468992 tot=15 need=16 round=2
+0,1,4,9,11,14,16,19 claim=L:stage3 mine=EXCL-C L F=22547 dim=3 S=38011460 l=3 u=2 round=1
+0,1,4,9,11,14,18,19 claim=Z:stage2 mine=EXCL-A L F=21886 dim=2 S=83906560 l=3 u=2 round=1
+0,1,4,9,11,14,18,21 claim=L:stage1 mine=EXCL-A M Q=23300 tr=11 s=12 round=1
+0,1,4,9,11,14,19,21 claim=L:stage1 mine=EXCL-A L F=1424 dim=3 S=285238784 l=4 u=3 round=2
+0,1,4,9,11,16,18,21 claim=L:stage1 mine=EXCL-A L F=31243 dim=2 S=537921540 l=3 u=2 round=1
+0,1,4,9,13,14,15,18 claim=L:stage1 mine=EXCL-A L F=1532 dim=3 S=852176 l=4 u=3 round=2
+0,1,4,9,13,15,18,19 claim=L:stage1 mine=EXCL-A L F=5114 dim=3 S=272662820 l=4 u=3 round=2
+0,1,5,10,11,12,18,19 claim=undecided mine=PASS-ABC 
+0,1,5,10,11,13,16,17 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=171969088 l=4 u=3 round=2
+0,1,5,10,11,13,18,19 claim=L:stage3 mine=EXCL-A L F=528 dim=2 S=51118080 l=3 u=2 round=2
+0,1,5,10,11,16,18,19 claim=undecided mine=PASS-ABC 
+0,1,5,10,11,16,18,21 claim=Z:stage2 mine=EXCL-A M Q=5673 tr=11 s=12 round=1
+0,1,5,10,12,13,15,18 claim=Z:stage2 mine=EXCL-A L F=28617 dim=2 S=167772170 l=3 u=2 round=1
+0,1,5,10,12,14,15,17 claim=Z:stage2 mine=EXCL-B S F=20242 dim=1 S=67108864 tot=1 need=2 round=2
+0,1,5,10,12,14,15,20 claim=L:stage1 mine=EXCL-A L F=9375 dim=3 S=591504 l=4 u=3 round=2
+0,1,5,10,12,15,17,20 claim=Z:stage2 mine=EXCL-A S F=24323 dim=2 S=41943680 tot=17 need=18 round=2
+0,1,5,10,13,16,17,18 claim=L:stage1 mine=EXCL-A S F=4970 dim=2 S=8912928 tot=4 need=6 round=2
+0,1,5,10,14,17,18,19 claim=L:stage1 mine=EXCL-A M Q=791 tr=11 s=12 round=1
+0,1,5,10,15,17,18,20 claim=M:stage2 mine=EXCL-A M Q=24612 tr=15 s=16 round=1
+0,1,5,10,16,17,18,19 claim=L:stage1 mine=EXCL-A S F=5505 dim=2 S=10280 tot=11 need=13 round=2
+0,1,5,11,12,18,21,23 claim=L:stage1 mine=EXCL-A M Q=27505 tr=11 s=12 round=1
+0,1,5,6,10,11,13,16 claim=L:stage1 mine=EXCL-A S F=10212 dim=1 S=67109888 tot=3 need=4 round=2
+0,1,5,6,10,11,16,19 claim=L:stage1 mine=EXCL-A L F=32523 dim=3 S=135274884 l=4 u=3 round=2
+0,1,5,6,10,11,18,19 claim=undecided mine=PASS-ABC 
+0,1,5,6,10,14,17,18 claim=L:stage1 mine=EXCL-A M Q=12838 tr=11 s=12 round=1
+0,1,5,6,10,16,18,19 claim=undecided mine=PASS-ABC 
+0,1,5,6,10,17,18,19 claim=Z:stage2 mine=EXCL-B S F=5289 dim=1 S=16777216 tot=1 need=2 round=2
+0,1,5,6,11,13,18,19 claim=undecided mine=PASS-ABC 
+0,1,5,6,11,14,15,21 claim=L:stage1 mine=EXCL-A L F=10212 dim=3 S=608305176 l=4 u=3 round=2
+0,1,5,6,11,14,16,19 claim=Z:stage2 mine=EXCL-A S F=7303 dim=2 S=67633152 tot=3 need=4 round=2
+0,1,5,6,11,14,18,19 claim=undecided mine=PASS-ABC 
+0,1,5,6,11,15,18,19 claim=L:stage1 mine=EXCL-A L F=15904 dim=3 S=1080057920 l=4 u=2 round=2
+0,1,5,6,11,16,18,19 claim=L:stage1 mine=EXCL-A L F=13018 dim=3 S=75628840 l=4 u=3 round=2
+0,1,5,6,11,17,18,19 claim=L:stage3 mine=EXCL-A L F=23228 dim=2 S=2147551248 l=3 u=2 round=2
+0,1,5,6,11,18,19,21 claim=undecided mine=EXCL-B S F=6339 dim=2 S=2 tot=1 need=2 round=2
+0,1,5,6,7,10,11,12 claim=L:stage1 mine=EXCL-A S F=5954 dim=1 S=402653184 tot=3 need=4 round=2
+0,1,5,6,7,10,11,17 claim=L:stage3 mine=EXCL-C L F=10162 dim=3 S=50446464 l=3 u=2 round=2
+0,1,5,6,7,10,16,18 claim=L:stage1 mine=EXCL-A S F=6456 dim=1 S=134217984 tot=16 need=17 round=2
+0,1,5,6,7,11,18,19 claim=L:stage1 mine=EXCL-A L F=15904 dim=3 S=1080057920 l=4 u=2 round=2
+0,1,5,6,7,8,11,18 claim=L:stage1 mine=EXCL-A L F=23228 dim=2 S=25169928 l=3 u=2 round=1
+0,1,5,6,8,10,11,18 claim=L:stage1 mine=EXCL-A S F=3965 dim=2 S=65666 tot=15 need=16 round=2
+0,1,5,6,8,11,15,18 claim=L:stage1 mine=EXCL-A L F=2754 dim=3 S=3225420812 l=4 u=2 round=2
+0,1,5,6,8,11,15,22 claim=L:stage2 mine=EXCL-A L F=20610 dim=2 S=1610649600 l=3 u=2 round=1
+0,1,5,6,9,13,18,19 claim=L:stage1 mine=EXCL-A L F=2193 dim=3 S=855638152 l=4 u=3 round=2
+0,1,5,7,10,11,13,14 claim=Z:stage2 mine=EXCL-A S F=23300 dim=2 S=272662560 tot=7 need=8 round=2
+0,1,5,7,10,11,13,16 claim=L:stage1 mine=EXCL-A M Q=28837 tr=11 s=12 round=1
+0,1,5,7,10,11,13,17 claim=L:stage3 mine=EXCL-A S F=29286 dim=3 S=168042576 tot=15 need=16 round=2
+0,1,5,7,10,11,14,17 claim=L:stage3 mine=EXCL-A S F=12002 dim=2 S=16896 tot=3 need=4 round=2
+0,1,5,7,10,11,14,20 claim=L:stage1 mine=EXCL-A M Q=25252 tr=11 s=12 round=1
+0,1,5,7,10,11,15,17 claim=L:stage2 mine=EXCL-A L F=6339 dim=3 S=268601412 l=4 u=3 round=2
+0,1,5,7,10,11,15,18 claim=L:stage1 mine=EXCL-A L F=26599 dim=2 S=402653220 l=3 u=2 round=1
+0,1,5,7,10,11,16,17 claim=L:stage3 mine=EXCL-B L F=15971 dim=2 S=67244160 l=3 u=2 round=2
+0,1,5,7,10,11,16,20 claim=L:stage1 mine=EXCL-A M Q=20869 tr=11 s=12 round=1
+0,1,5,7,10,11,17,20 claim=L:stage1 mine=EXCL-A L F=24323 dim=3 S=41949220 l=4 u=3 round=2
+0,1,5,7,10,12,13,22 claim=L:stage1 mine=EXCL-A L F=852 dim=3 S=2240086016 l=4 u=3 round=2
+0,1,5,7,10,12,14,17 claim=L:stage1 mine=EXCL-A M Q=6339 tr=11 s=12 round=1
+0,1,5,7,10,13,15,18 claim=L:stage1 mine=EXCL-A L F=6484 dim=3 S=151593024 l=4 u=3 round=2
+0,1,5,7,10,13,17,18 claim=L:stage1 mine=EXCL-A L F=20285 dim=3 S=1115758608 l=4 u=3 round=2
+0,1,5,7,10,14,20,21 claim=Z:stage2 mine=EXCL-B S F=19714 dim=2 S=128 tot=1 need=2 round=2
+0,1,5,7,10,16,18,19 claim=L:stage1 mine=EXCL-A L F=20285 dim=3 S=1115758608 l=4 u=3 round=2
+0,1,5,7,11,12,18,19 claim=L:stage1 mine=EXCL-A L F=15904 dim=3 S=1080057920 l=4 u=2 round=2
+0,1,5,7,11,13,14,15 claim=L:stage1 mine=EXCL-A L F=9843 dim=3 S=1208025732 l=4 u=2 round=2
+0,1,5,7,11,13,14,22 claim=L:stage1 mine=EXCL-A L F=29537 dim=3 S=318779904 l=4 u=3 round=2
+0,1,5,7,11,13,18,19 claim=Z:stage2 mine=EXCL-B S F=24928 dim=1 S=16777216 tot=1 need=2 round=2
+0,1,5,7,11,14,18,19 claim=Z:stage2 mine=EXCL-B S F=12002 dim=2 S=1107296256 tot=3 need=4 round=2
+0,1,5,7,11,18,19,21 claim=undecided mine=PASS-ABC 
+0,1,5,7,8,10,11,17 claim=undecided mine=PASS-ABC 
+0,1,5,7,8,9,12,18 claim=L:stage1 mine=EXCL-A L F=11101 dim=2 S=675348480 l=3 u=2 round=1
+0,1,5,7,9,10,11,17 claim=L:stage1 mine=EXCL-A L F=24323 dim=3 S=41949220 l=4 u=3 round=2
+0,1,5,7,9,10,12,16 claim=L:stage1 mine=EXCL-A L F=25055 dim=2 S=536936736 l=3 u=2 round=1
+0,1,5,7,9,11,14,15 claim=L:stage1 mine=EXCL-A L F=2301 dim=3 S=71304800 l=4 u=3 round=2
+0,1,5,7,9,11,14,21 claim=undecided mine=PASS-ABC 
+0,1,5,7,9,11,18,19 claim=L:stage1 mine=EXCL-A L F=1987 dim=3 S=2290630660 l=4 u=3 round=2
+0,1,5,7,9,13,18,19 claim=Z:stage2 mine=EXCL-A L F=24587 dim=2 S=2416312320 l=3 u=2 round=1
+0,1,5,8,10,11,13,16 claim=L:stage1 mine=EXCL-A L F=5673 dim=3 S=19005730 l=3 u=2 round=2
+0,1,5,8,10,11,18,19 claim=undecided mine=PASS-ABC 
+0,1,5,8,10,15,18,19 claim=L:stage1 mine=EXCL-A S F=5458 dim=1 S=67112960 tot=3 need=4 round=2
+0,1,5,8,11,13,18,19 claim=Z:stage2 mine=EXCL-B S F=791 dim=1 S=16 tot=1 need=2 round=2
+0,1,5,8,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=15971 dim=2 S=34635780 l=3 u=2 round=1
+0,1,5,8,11,15,18,19 claim=L:stage3 mine=EXCL-B S F=8147 dim=2 S=393216 tot=3 need=4 round=2
+0,1,5,8,11,15,18,20 claim=L:stage1 mine=EXCL-A L F=31479 dim=2 S=1310760 l=3 u=2 round=1
+0,1,5,8,11,16,18,19 claim=L:stage1 mine=EXCL-A L F=13018 dim=3 S=75628840 l=4 u=3 round=2
+0,1,5,8,11,17,18,19 claim=Z:stage2 mine=EXCL-A L F=4077 dim=2 S=1090519170 l=3 u=2 round=2
+0,1,5,8,11,18,19,21 claim=Z:stage2 mine=EXCL-B S F=791 dim=1 S=16 tot=1 need=2 round=2
+0,1,5,8,12,15,18,20 claim=undecided mine=EXCL-B S F=12874 dim=2 S=786444 tot=22 need=23 round=2
+0,1,5,8,13,15,18,20 claim=L:stage1 mine=EXCL-A M Q=24168 tr=11 s=12 round=1
+0,1,5,9,10,11,14,15 claim=L:stage3 mine=EXCL-A S F=31728 dim=2 S=545267840 tot=7 need=8 round=2
+0,1,5,9,10,11,18,19 claim=undecided mine=PASS-ABC 
+0,1,5,9,10,13,15,18 claim=L:stage1 mine=EXCL-A L F=18368 dim=3 S=306709056 l=3 u=2 round=2
+0,1,5,9,10,15,16,18 claim=L:stage1 mine=EXCL-A L F=30182 dim=3 S=608337936 l=4 u=2 round=2
+0,1,5,9,10,15,17,18 claim=Z:stage2 mine=EXCL-B S F=6339 dim=2 S=268566528 tot=3 need=4 round=2
+0,1,5,9,10,16,18,19 claim=L:stage1 mine=EXCL-A S F=6656 dim=2 S=805306560 tot=12 need=13 round=2
+0,1,5,9,11,12,14,15 claim=L:stage1 mine=EXCL-A L F=6272 dim=3 S=310645248 l=4 u=3 round=2
+0,1,5,9,11,12,18,19 claim=L:stage3 mine=EXCL-A L F=23228 dim=2 S=2147551248 l=3 u=2 round=2
+0,1,5,9,11,14,15,17 claim=Z:stage2 mine=EXCL-A L F=67 dim=2 S=2214592644 l=3 u=2 round=2
+0,1,5,9,11,14,15,20 claim=L:stage1 mine=EXCL-A M Q=12658 tr=11 s=12 round=1
+0,1,5,9,11,14,15,21 claim=undecided mine=PASS-ABC 
+0,1,5,9,11,14,17,21 claim=undecided mine=PASS-ABC 
+0,1,5,9,11,14,20,21 claim=undecided mine=EXCL-A L F=16976 dim=3 S=1007616 l=4 u=3 round=3
+0,1,5,9,11,17,18,19 claim=L:stage2 mine=EXCL-B S F=30501 dim=1 S=1026 tot=22 need=30 round=2
+0,1,5,9,12,15,18,21 claim=Z:stage2 mine=EXCL-A L F=24587 dim=2 S=395520 l=3 u=2 round=1
+0,1,5,9,13,17,18,19 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=2416312320 l=3 u=2 round=1
+0,1,6,10,11,13,16,17 claim=L:stage1 mine=EXCL-A L F=3394 dim=3 S=1141407812 l=4 u=3 round=2
+0,1,6,10,11,13,16,19 claim=L:stage1 mine=EXCL-A L F=26420 dim=2 S=33624096 l=3 u=2 round=1
+0,1,6,10,11,16,19,20 claim=M:stage2 mine=EXCL-A L F=19858 dim=2 S=1140885504 l=1 u=0 round=1
+0,1,6,10,11,17,19,20 claim=L:stage1 mine=EXCL-A L F=28902 dim=3 S=23070224 l=4 u=3 round=2
+0,1,6,10,12,14,15,17 claim=L:stage1 mine=EXCL-A L F=8292 dim=3 S=538988624 l=4 u=3 round=2
+0,1,6,10,12,15,16,18 claim=L:stage1 mine=EXCL-A M Q=5458 tr=11 s=12 round=1
+0,1,6,10,12,15,17,20 claim=L:stage1 mine=EXCL-A L F=14503 dim=3 S=1342324746 l=4 u=3 round=2
+0,1,6,10,12,16,17,18 claim=L:stage1 mine=EXCL-A L F=31243 dim=2 S=168427520 l=3 u=2 round=1
+0,1,6,10,12,16,19,20 claim=L:stage1 mine=EXCL-A S F=25679 dim=2 S=41944080 tot=17 need=18 round=2
+0,1,6,10,13,15,16,18 claim=L:stage1 mine=EXCL-A L F=26726 dim=3 S=3271557140 l=4 u=3 round=2
+0,1,6,10,14,16,19,20 claim=L:stage3 mine=EXCL-A L F=407 dim=2 S=671093760 l=3 u=2 round=2
+0,1,6,11,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=29681 dim=3 S=10813506 l=4 u=2 round=2
+0,1,6,11,13,16,18,21 claim=L:stage1 mine=EXCL-A L F=15971 dim=2 S=2147615360 l=3 u=2 round=1
+0,1,6,7,11,12,17,20 claim=L:stage1 mine=EXCL-A M Q=18902 tr=11 s=12 round=1
+0,1,6,7,8,11,19,20 claim=undecided mine=PASS-ABC 
+0,1,6,8,10,11,13,16 claim=undecided mine=PASS-ABC 
+0,1,6,8,10,11,19,20 claim=Z:stage2 mine=EXCL-B S F=7336 dim=0 S=67108864 tot=1 need=2 round=2
+0,1,6,8,10,13,15,18 claim=L:stage1 mine=EXCL-A L F=28617 dim=2 S=138416130 l=3 u=2 round=1
+0,1,6,8,11,13,19,20 claim=L:stage1 mine=EXCL-A L F=21737 dim=2 S=335544450 l=2 u=1 round=2
+0,1,6,8,11,14,19,20 claim=undecided mine=PASS-ABC 
+0,1,6,8,11,15,19,20 claim=undecided mine=PASS-ABC 
+0,1,6,8,11,16,19,20 claim=L:stage1 mine=EXCL-A L F=8840 dim=3 S=555779200 l=4 u=3 round=2
+0,1,6,8,11,17,19,20 claim=L:stage1 mine=EXCL-A L F=27598 dim=3 S=1078462536 l=4 u=3 round=2
+0,1,6,8,11,19,20,21 claim=undecided mine=PASS-ABC 
+0,1,6,8,12,15,18,20 claim=undecided mine=PASS-ABC 
+0,1,6,8,9,11,13,19 claim=Z:stage2 mine=EXCL-A M Q=21353 tr=11 s=12 round=1
+0,1,6,8,9,11,18,21 claim=L:stage1 mine=EXCL-A L F=17708 dim=2 S=272646160 l=3 u=2 round=1
+0,1,6,8,9,11,19,20 claim=L:stage1 mine=EXCL-A S F=6078 dim=1 S=1040 tot=3 need=4 round=2
+0,1,6,9,11,13,14,19 claim=undecided mine=EXCL-A L F=21886 dim=2 S=83906560 l=3 u=2 round=2
+0,1,6,9,11,13,18,19 claim=Z:stage2 mine=EXCL-A L F=20757 dim=3 S=1024000 l=4 u=3 round=2
+0,1,6,9,11,14,15,21 claim=L:stage1 mine=EXCL-A L F=23300 dim=2 S=1091829760 l=2 u=1 round=2
+0,1,6,9,11,14,18,21 claim=L:stage1 mine=EXCL-A L F=15475 dim=2 S=2147565570 l=3 u=2 round=1
+0,1,6,9,11,14,19,20 claim=Z:stage2 mine=EXCL-A M Q=14752 tr=11 s=12 round=1
+0,1,6,9,11,16,19,21 claim=Z:stage2 mine=EXCL-A M Q=416 tr=6 s=7 round=1
+0,1,6,9,11,19,20,21 claim=L:stage1 mine=EXCL-A S F=21737 dim=1 S=33280 tot=3 need=4 round=2
+0,1,6,9,13,15,18,19 claim=L:stage1 mine=EXCL-A M Q=29365 tr=11 s=12 round=1
+0,1,7,10,11,12,17,20 claim=L:stage1 mine=EXCL-A L F=26420 dim=2 S=67637280 l=1 u=0 round=1
+0,1,7,10,12,14,15,17 claim=L:stage1 mine=EXCL-A L F=23544 dim=2 S=18876480 l=3 u=2 round=1
+0,1,7,10,12,14,17,19 claim=L:stage1 mine=EXCL-A L F=8147 dim=1 S=1572864 l=2 u=1 round=2
+0,1,7,10,12,14,17,20 claim=undecided mine=PASS-ABC 
+0,1,7,10,12,14,19,20 claim=L:stage1 mine=EXCL-A L F=1347 dim=2 S=2147747904 l=3 u=2 round=2
+0,1,7,10,12,15,17,20 claim=L:stage1 mine=EXCL-A L F=4933 dim=3 S=545294370 l=4 u=3 round=2
+0,1,7,10,14,16,19,20 claim=L:stage1 mine=EXCL-A M Q=11278 tr=10 s=12 round=1
+0,1,7,11,13,14,16,17 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=268730370 l=3 u=2 round=1
+0,1,7,12,13,14,17,20 claim=L:stage1 mine=EXCL-A L F=21525 dim=2 S=67174920 l=3 u=2 round=1
+0,1,7,12,14,15,17,20 claim=L:stage1 mine=EXCL-A L F=26420 dim=2 S=537920520 l=3 u=2 round=1
+0,1,7,12,15,17,18,20 claim=L:stage1 mine=EXCL-A M Q=5289 tr=11 s=12 round=1
+0,1,7,13,14,15,16,18 claim=L:stage3 mine=EXCL-A L F=29537 dim=2 S=16785408 l=1 u=0 round=2
+0,1,7,8,10,12,15,18 claim=L:stage1 mine=EXCL-A L F=28385 dim=2 S=2685009920 l=3 u=2 round=1
+0,1,7,8,10,13,17,18 claim=L:stage1 mine=EXCL-A L F=20934 dim=2 S=270549120 l=3 u=2 round=1
+0,1,7,9,10,12,14,20 claim=L:stage1 mine=EXCL-A M Q=609 tr=6 s=7 round=1
+0,1,7,9,11,13,14,16 claim=Z:stage2 mine=EXCL-A L F=31968 dim=2 S=15360 l=3 u=2 round=1
+0,1,7,9,11,14,16,19 claim=undecided mine=EXCL-B L F=13473 dim=1 S=1073745920 l=2 u=1 round=2
+0,1,7,9,11,14,17,21 claim=L:stage1 mine=EXCL-A M Q=32 tr=0 s=2 round=1
+0,1,7,9,11,16,18,21 claim=undecided mine=EXCL-B S F=30070 dim=1 S=1073741824 tot=1 need=2 round=2
+0,1,8,10,11,12,15,18 claim=L:stage1 mine=EXCL-A L F=28385 dim=2 S=89128960 l=3 u=2 round=1
+0,1,8,10,13,14,19,20 claim=L:stage3 mine=EXCL-A L F=2901 dim=2 S=16844808 l=3 u=2 round=2
+0,1,8,10,13,16,17,18 claim=L:stage1 mine=EXCL-A S F=5505 dim=2 S=10280 tot=7 need=8 round=2
+0,1,8,11,12,18,20,21 claim=L:stage1 mine=EXCL-A L F=23544 dim=2 S=134283528 l=3 u=2 round=1
+0,1,8,11,13,14,15,18 claim=L:stage3 mine=EXCL-A S F=13361 dim=2 S=2101248 tot=3 need=4 round=2
+0,1,8,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,1,8,12,15,18,20,21 claim=L:stage3 mine=EXCL-A L F=4609 dim=2 S=268570626 l=3 u=2 round=2
+0,1,8,12,18,19,20,21 claim=L:stage3 mine=EXCL-B S F=19921 dim=2 S=33554440 tot=3 need=4 round=2
+0,1,8,9,10,13,16,19 claim=L:stage1 mine=EXCL-A L F=791 dim=3 S=33690130 l=4 u=2 round=2
+0,1,8,9,10,13,19,20 claim=L:stage1 mine=EXCL-A L F=19858 dim=2 S=71305344 l=3 u=2 round=1
+0,1,8,9,11,13,14,19 claim=L:stage1 mine=EXCL-A L F=28698 dim=2 S=245760 l=3 u=2 round=1
+0,1,8,9,11,13,18,19 claim=L:stage1 mine=EXCL-A L F=5114 dim=3 S=272662820 l=4 u=3 round=2
+0,1,8,9,11,14,18,19 claim=L:stage1 mine=EXCL-A L F=15180 dim=3 S=397056 l=4 u=3 round=2
+0,1,8,9,11,16,18,21 claim=L:stage1 mine=EXCL-A L F=8668 dim=3 S=2689925120 l=4 u=3 round=2
+0,1,8,9,12,15,18,20 claim=Z:stage2 mine=EXCL-A L F=28617 dim=2 S=37765122 l=3 u=2 round=1
+0,1,8,9,13,14,15,18 claim=L:stage3 mine=EXCL-A L F=28617 dim=2 S=805306560 l=3 u=2 round=1
+0,1,8,9,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=27682 dim=3 S=1231552512 l=4 u=3 round=2
+0,1,8,9,13,18,19,21 claim=Z:stage2 mine=EXCL-A S F=32291 dim=2 S=1184256 tot=6 need=8 round=2
+0,1,9,10,11,13,16,19 claim=L:stage2 mine=EXCL-A L F=19858 dim=2 S=71305344 l=3 u=2 round=1
+0,1,9,10,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=2028 dim=3 S=178258192 l=4 u=3 round=2
+0,1,9,10,11,14,18,21 claim=L:stage1 mine=EXCL-A L F=31667 dim=2 S=327690 l=3 u=2 round=1
+0,1,9,10,11,16,18,21 claim=L:stage1 mine=EXCL-A L F=8668 dim=3 S=2689925120 l=4 u=3 round=2
+0,1,9,10,12,14,15,20 claim=L:stage1 mine=EXCL-A L F=27121 dim=2 S=142614530 l=3 u=2 round=1
+0,1,9,10,13,14,18,19 claim=L:stage1 mine=EXCL-A M Q=3394 tr=11 s=12 round=1
+0,1,9,10,13,18,19,21 claim=L:stage2 mine=EXCL-A S F=4970 dim=2 S=8659200 tot=7 need=8 round=2
+0,1,9,11,12,13,14,20 claim=L:stage1 mine=EXCL-A M Q=18368 tr=11 s=12 round=1
+0,1,9,11,12,14,15,21 claim=L:stage1 mine=EXCL-A L F=5458 dim=3 S=1638500 l=4 u=3 round=2
+0,1,9,11,12,14,18,20 claim=L:stage1 mine=EXCL-A L F=23572 dim=3 S=248832 l=4 u=2 round=2
+0,1,9,11,12,14,18,21 claim=L:stage1 mine=EXCL-A M Q=5942 tr=10 s=11 round=1
+0,1,9,11,12,16,18,21 claim=L:stage1 mine=EXCL-A M Q=18858 tr=4 s=5 round=1
+0,1,9,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,1,9,11,13,14,17,19 claim=L:stage1 mine=EXCL-A L F=23980 dim=3 S=2148139344 l=4 u=3 round=2
+0,1,9,11,13,14,19,20 claim=L:stage1 mine=EXCL-A L F=13361 dim=3 S=17107458 l=4 u=3 round=2
+0,1,9,11,14,15,20,21 claim=L:stage3 mine=EXCL-A L F=23544 dim=2 S=6291552 l=3 u=2 round=1
+0,1,9,11,14,18,20,21 claim=L:stage1 mine=EXCL-A L F=15475 dim=2 S=2147565570 l=3 u=2 round=1
+0,1,9,11,14,19,20,21 claim=L:stage1 mine=EXCL-A M Q=3706 tr=11 s=12 round=1
+0,1,9,11,17,18,19,21 claim=L:stage1 mine=EXCL-A L F=26319 dim=3 S=1611007584 l=4 u=2 round=1
+0,1,9,11,18,19,20,21 claim=L:stage1 mine=EXCL-A M Q=11278 tr=11 s=12 round=1
+0,1,9,12,13,14,16,19 claim=L:stage3 mine=EXCL-A L F=15844 dim=2 S=3264 l=3 u=2 round=2
+0,1,9,12,13,18,19,21 claim=Z:stage2 mine=EXCL-A L F=27977 dim=2 S=1579008 l=3 u=2 round=2
+0,1,9,12,14,15,17,20 claim=undecided mine=PASS-ABC 
+0,1,9,12,14,16,18,19 claim=Z:stage2 mine=EXCL-A L F=24587 dim=2 S=2400 l=3 u=2 round=1
+0,2,3,10,12,14,17,20 claim=L:stage1 mine=EXCL-A L F=26599 dim=2 S=6168 l=1 u=0 round=1
+0,2,3,10,14,17,20,22 claim=Z:stage2 mine=EXCL-B L F=18693 dim=2 S=2149597200 l=2 u=1 round=1
+0,2,3,4,5,6,7,10 claim=L:stage1 mine=EXCL-A L F=31567 dim=2 S=26880 l=3 u=2 round=1
+0,2,3,4,5,7,10,12 claim=L:stage1 mine=EXCL-A S F=9480 dim=2 S=1179648 tot=8 need=9 round=2
+0,2,3,4,5,7,10,16 claim=undecided mine=EXCL-A L F=9480 dim=1 S=1179648 l=1 u=0 round=2
+0,2,3,4,5,7,10,18 claim=L:stage1 mine=EXCL-A L F=18052 dim=3 S=152045088 l=4 u=3 round=2
+0,2,3,4,5,7,10,19 claim=L:stage1 mine=EXCL-A L F=9572 dim=3 S=1140985992 l=4 u=3 round=2
+0,2,3,4,6,9,10,16 claim=undecided mine=PASS-ABC 
+0,2,3,4,7,10,13,17 claim=L:stage1 mine=EXCL-A L F=32119 dim=2 S=170 l=3 u=2 round=1
+0,2,3,4,7,11,17,18 claim=L:stage1 mine=EXCL-A S F=8480 dim=2 S=34952 tot=7 need=8 round=2
+0,2,3,4,8,9,14,20 claim=L:stage1 mine=EXCL-A L F=26319 dim=2 S=537133632 l=3 u=2 round=1
+0,2,3,5,10,11,18,19 claim=L:stage3 mine=EXCL-A L F=468 dim=2 S=83886160 l=3 u=2 round=2
+0,2,3,5,10,15,17,20 claim=L:stage1 mine=EXCL-A S F=7892 dim=2 S=528 tot=3 need=4 round=2
+0,2,3,5,6,7,8,11 claim=L:stage1 mine=EXCL-A L F=15887 dim=2 S=4718610 l=3 u=2 round=1
+0,2,3,5,6,8,13,20 claim=L:stage3 mine=EXCL-A L F=507 dim=2 S=1073811460 l=3 u=2 round=2
+0,2,3,5,6,9,12,15 claim=L:stage1 mine=EXCL-A M Q=21201 tr=11 s=12 round=1
+0,2,3,5,7,10,11,20 claim=L:stage1 mine=EXCL-A L F=1920 dim=3 S=67805248 l=4 u=3 round=2
+0,2,3,5,7,10,12,19 claim=L:stage1 mine=EXCL-A L F=14427 dim=3 S=35142 l=4 u=3 round=2
+0,2,3,5,7,11,18,19 claim=L:stage3 mine=EXCL-A L F=468 dim=2 S=20560 l=3 u=2 round=2
+0,2,3,5,8,10,15,20 claim=undecided mine=PASS-ABC 
+0,2,3,5,8,11,13,20 claim=L:stage3 mine=EXCL-A L F=507 dim=2 S=1073811460 l=3 u=2 round=2
+0,2,3,5,8,11,16,20 claim=L:stage1 mine=EXCL-A L F=23228 dim=2 S=25166208 l=3 u=2 round=1
+0,2,3,5,8,11,17,20 claim=L:stage1 mine=EXCL-A M Q=16280 tr=11 s=12 round=1
+0,2,3,5,8,12,13,20 claim=L:stage3 mine=EXCL-A L F=507 dim=2 S=1073811460 l=3 u=2 round=2
+0,2,3,5,8,12,17,20 claim=Z:stage2 mine=EXCL-B S F=16280 dim=1 S=524288 tot=1 need=2 round=2
+0,2,3,5,8,13,14,16 claim=L:stage1 mine=EXCL-A L F=12198 dim=3 S=2156007444 l=4 u=3 round=2
+0,2,3,5,8,13,15,20 claim=L:stage3 mine=EXCL-B L F=32119 dim=2 S=170 l=3 u=2 round=1
+0,2,3,5,8,13,16,20 claim=L:stage3 mine=EXCL-A L F=507 dim=2 S=1073811460 l=3 u=2 round=2
+0,2,3,5,8,13,17,20 claim=L:stage1 mine=EXCL-A L F=3329 dim=2 S=17442 l=2 u=1 round=2
+0,2,3,5,8,13,18,20 claim=L:stage1 mine=EXCL-A L F=27682 dim=3 S=34637892 l=4 u=3 round=2
+0,2,3,5,8,13,19,20 claim=undecided mine=EXCL-B S F=12901 dim=1 S=2 tot=1 need=2 round=2
+0,2,3,5,8,9,12,18 claim=L:stage1 mine=EXCL-A L F=16347 dim=2 S=614400 l=3 u=2 round=1
+0,2,3,5,8,9,13,20 claim=undecided mine=PASS-ABC 
+0,2,3,5,9,10,15,16 claim=L:stage3 mine=EXCL-A L F=15391 dim=2 S=2147565570 l=3 u=2 round=1
+0,2,3,5,9,10,15,20 claim=Z:stage2 mine=EXCL-A L F=18641 dim=3 S=136355850 l=4 u=3 round=3
+0,2,3,5,9,11,15,16 claim=L:stage1 mine=EXCL-A L F=1808 dim=3 S=17829056 l=4 u=3 round=2
+0,2,3,5,9,12,15,16 claim=L:stage1 mine=EXCL-A L F=964 dim=3 S=2148141696 l=4 u=3 round=2
+0,2,3,5,9,13,14,21 claim=Z:stage2 mine=EXCL-B S F=5289 dim=2 S=16777216 tot=1 need=2 round=2
+0,2,3,5,9,13,15,16 claim=L:stage3 mine=EXCL-C L F=16629 dim=3 S=1350598736 l=3 u=2 round=1
+0,2,3,5,9,15,16,18 claim=L:stage3 mine=EXCL-A L F=24587 dim=2 S=41975810 l=3 u=2 round=1
+0,2,3,6,10,12,15,16 claim=L:stage1 mine=EXCL-A L F=2028 dim=3 S=196083712 l=4 u=3 round=2
+0,2,3,6,7,9,12,20 claim=Z:stage2 mine=EXCL-A L F=29022 dim=2 S=17305728 l=3 u=2 round=1
+0,2,3,6,9,10,16,20 claim=L:stage1 mine=EXCL-A L F=2114 dim=3 S=2155882536 l=4 u=3 round=2
+0,2,3,7,11,13,20,21 claim=L:stage1 mine=EXCL-A L F=27598 dim=3 S=541589832 l=4 u=3 round=2
+0,2,3,7,12,15,17,20 claim=L:stage1 mine=EXCL-A M Q=3257 tr=11 s=12 round=1
+0,2,3,7,9,12,13,19 claim=Z:stage2 mine=EXCL-A L F=23544 dim=2 S=2162760 l=3 u=2 round=1
+0,2,3,7,9,12,20,21 claim=L:stage1 mine=EXCL-A L F=24431 dim=2 S=537399300 l=3 u=2 round=1
+0,2,3,9,11,13,14,16 claim=Z:stage2 mine=EXCL-A S F=22317 dim=2 S=8392704 tot=3 need=4 round=2
+0,2,3,9,11,13,16,19 claim=L:stage1 mine=EXCL-A L F=5114 dim=3 S=1347452960 l=4 u=3 round=2
+0,2,3,9,11,14,16,18 claim=L:stage1 mine=EXCL-A L F=852 dim=3 S=2155909264 l=4 u=3 round=2
+0,2,3,9,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=23043 dim=2 S=84541440 l=3 u=2 round=1
+0,2,3,9,12,15,16,20 claim=L:stage1 mine=EXCL-A L F=28617 dim=2 S=574881792 l=3 u=2 round=1
+0,2,3,9,13,15,20,21 claim=L:stage1 mine=EXCL-A S F=15180 dim=1 S=1040 tot=3 need=4 round=2
+0,2,4,10,13,15,16,18 claim=L:stage1 mine=EXCL-A M Q=5458 tr=11 s=12 round=1
+0,2,4,5,10,11,13,22 claim=L:stage1 mine=EXCL-A L F=14640 dim=3 S=27283464 l=4 u=3 round=2
+0,2,4,5,10,12,17,18 claim=L:stage1 mine=EXCL-A L F=24251 dim=2 S=150994950 l=3 u=2 round=1
+0,2,4,5,10,12,19,22 claim=L:stage1 mine=EXCL-A L F=20994 dim=2 S=786432 l=2 u=1 round=2
+0,2,4,5,10,13,15,22 claim=undecided mine=PASS-ABC 
+0,2,4,5,10,13,19,22 claim=L:stage1 mine=EXCL-A L F=15564 dim=3 S=17576000 l=4 u=3 round=2
+0,2,4,5,11,13,14,18 claim=L:stage2 mine=EXCL-B S F=7124 dim=1 S=33554432 tot=1 need=2 round=2
+0,2,4,5,11,13,15,18 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=9474048 l=3 u=2 round=1
+0,2,4,5,11,13,17,18 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=171969088 l=4 u=3 round=2
+0,2,4,5,11,15,16,22 claim=L:stage1 mine=EXCL-A L F=852 dim=2 S=3233808384 l=2 u=1 round=2
+0,2,4,5,11,15,17,18 claim=L:stage1 mine=EXCL-A S F=22382 dim=2 S=128 tot=4 need=7 round=1
+0,2,4,5,6,10,12,19 claim=L:stage1 mine=EXCL-A L F=29069 dim=2 S=1107329280 l=3 u=2 round=1
+0,2,4,5,6,11,17,18 claim=L:stage1 mine=EXCL-A L F=31968 dim=3 S=1426106880 l=4 u=3 round=1
+0,2,4,5,6,11,18,19 claim=Z:stage2 mine=EXCL-A S F=13622 dim=2 S=536870916 tot=8 need=9 round=3
+0,2,4,5,6,7,10,14 claim=L:stage1 mine=EXCL-A L F=31567 dim=2 S=26880 l=3 u=2 round=1
+0,2,4,5,6,7,10,17 claim=L:stage3 mine=EXCL-A L F=3641 dim=2 S=4276480 l=3 u=2 round=2
+0,2,4,5,6,9,10,18 claim=L:stage1 mine=EXCL-A L F=15391 dim=2 S=2181038210 l=3 u=2 round=1
+0,2,4,5,7,10,11,12 claim=L:stage3 mine=EXCL-A S F=26336 dim=2 S=2148008480 tot=7 need=8 round=2
+0,2,4,5,7,10,11,16 claim=undecided mine=EXCL-A S F=7303 dim=2 S=2219311104 tot=7 need=8 round=2
+0,2,4,5,7,10,11,20 claim=Z:stage2 mine=EXCL-A S F=26336 dim=2 S=2148008480 tot=7 need=8 round=2
+0,2,4,5,7,10,12,14 claim=Z:stage2 mine=EXCL-A S F=9480 dim=2 S=1179648 tot=8 need=9 round=2
+0,2,4,5,7,10,13,17 claim=L:stage1 mine=EXCL-A L F=9572 dim=3 S=1140985992 l=4 u=3 round=2
+0,2,4,5,7,10,13,22 claim=undecided mine=PASS-ABC 
+0,2,4,5,7,10,14,16 claim=undecided mine=EXCL-A S F=9480 dim=2 S=1179648 tot=8 need=9 round=2
+0,2,4,5,7,10,14,17 claim=L:stage1 mine=EXCL-A L F=9572 dim=3 S=1140985992 l=4 u=3 round=2
+0,2,4,5,7,10,14,18 claim=L:stage1 mine=EXCL-A L F=18052 dim=3 S=152045088 l=4 u=3 round=2
+0,2,4,5,7,10,14,19 claim=L:stage1 mine=EXCL-A L F=9572 dim=3 S=1140985992 l=4 u=3 round=2
+0,2,4,5,7,10,15,17 claim=L:stage3 mine=EXCL-A L F=3641 dim=2 S=4276480 l=3 u=2 round=2
+0,2,4,5,7,11,13,22 claim=L:stage1 mine=EXCL-A L F=4113 dim=2 S=1114146 l=3 u=2 round=1
+0,2,4,5,7,11,15,22 claim=L:stage1 mine=EXCL-A L F=26456 dim=3 S=151261280 l=4 u=3 round=2
+0,2,4,5,7,8,12,14 claim=L:stage1 mine=EXCL-A L F=26140 dim=2 S=268567056 l=2 u=1 round=1
+0,2,4,5,7,8,9,10 claim=L:stage1 mine=EXCL-A L F=26319 dim=2 S=18450 l=3 u=2 round=1
+0,2,4,5,7,9,10,11 claim=L:stage3 mine=EXCL-A L F=2049 dim=2 S=67371522 l=3 u=2 round=2
+0,2,4,5,7,9,10,13 claim=L:stage1 mine=EXCL-A L F=2028 dim=2 S=679608320 l=2 u=1 round=2
+0,2,4,5,7,9,10,18 claim=L:stage1 mine=EXCL-A L F=26870 dim=2 S=8655360 l=3 u=2 round=1
+0,2,4,5,8,11,12,18 claim=L:stage1 mine=EXCL-A S F=964 dim=2 S=8720 tot=5 need=6 round=2
+0,2,4,5,8,11,14,18 claim=L:stage1 mine=EXCL-A L F=9480 dim=3 S=4731648 l=4 u=3 round=2
+0,2,4,5,8,11,18,19 claim=Z:stage2 mine=EXCL-B S F=23339 dim=2 S=134217728 tot=1 need=2 round=2
+0,2,4,5,8,9,10,15 claim=L:stage1 mine=EXCL-A L F=25055 dim=2 S=537002528 l=3 u=2 round=1
+0,2,4,5,9,11,14,19 claim=L:stage1 mine=EXCL-A L F=2689 dim=2 S=2228258 l=2 u=1 round=2
+0,2,4,5,9,11,17,18 claim=L:stage1 mine=EXCL-A L F=640 dim=3 S=171969088 l=4 u=3 round=2
+0,2,4,5,9,11,18,19 claim=undecided mine=PASS-ABC 
+0,2,4,5,9,14,15,16 claim=L:stage1 mine=EXCL-A L F=1532 dim=3 S=852176 l=4 u=3 round=2
+0,2,4,5,9,15,16,18 claim=L:stage1 mine=EXCL-A L F=1532 dim=3 S=852176 l=4 u=3 round=2
+0,2,4,6,7,11,17,18 claim=L:stage1 mine=EXCL-A L F=19561 dim=3 S=4993280 l=4 u=2 round=2
+0,2,4,6,7,9,12,14 claim=L:stage1 mine=EXCL-A S F=18641 dim=2 S=204472320 tot=6 need=8 round=2
+0,2,4,6,8,9,10,12 claim=L:stage1 mine=EXCL-A L F=25055 dim=2 S=805306416 l=1 u=0 round=1
+0,2,4,6,8,9,11,14 claim=L:stage1 mine=EXCL-A L F=26726 dim=3 S=2519203840 l=4 u=3 round=2
+0,2,4,6,9,10,11,16 claim=L:stage1 mine=EXCL-A L F=28385 dim=2 S=541066242 l=3 u=2 round=1
+0,2,4,6,9,10,13,16 claim=Z:stage2 mine=EXCL-A L F=2049 dim=2 S=2228258 l=3 u=2 round=2
+0,2,4,6,9,10,16,18 claim=undecided mine=PASS-ABC 
+0,2,4,6,9,11,16,18 claim=L:stage1 mine=EXCL-A S F=5505 dim=2 S=5160 tot=4 need=8 round=2
+0,2,4,6,9,13,19,20 claim=L:stage1 mine=EXCL-A L F=13538 dim=3 S=2182353024 l=4 u=3 round=2
+0,2,4,7,10,12,13,22 claim=L:stage1 mine=EXCL-A L F=9120 dim=3 S=2281841160 l=4 u=3 round=2
+0,2,4,7,10,12,17,22 claim=Z:stage2 mine=EXCL-A L F=263 dim=2 S=335544340 l=3 u=2 round=2
+0,2,4,7,11,12,17,18 claim=L:stage1 mine=EXCL-A L F=27889 dim=3 S=3489718272 l=4 u=3 round=2
+0,2,4,7,11,13,17,18 claim=undecided mine=PASS-ABC 
+0,2,4,7,11,13,20,21 claim=L:stage3 mine=EXCL-A L F=18434 dim=2 S=3422552064 l=3 u=2 round=1
+0,2,4,7,11,14,17,18 claim=L:stage1 mine=EXCL-A L F=19561 dim=3 S=4993280 l=4 u=2 round=2
+0,2,4,7,11,15,17,18 claim=L:stage1 mine=EXCL-A L F=12658 dim=3 S=285279300 l=4 u=3 round=2
+0,2,4,7,11,16,17,18 claim=L:stage1 mine=EXCL-A L F=12658 dim=3 S=285279300 l=4 u=3 round=2
+0,2,4,7,11,17,18,20 claim=L:stage1 mine=EXCL-A L F=12658 dim=3 S=285279300 l=4 u=3 round=2
+0,2,4,7,8,11,17,18 claim=undecided mine=PASS-ABC 
+0,2,4,7,9,11,12,18 claim=L:stage1 mine=EXCL-A L F=24068 dim=2 S=268960800 l=3 u=2 round=1
+0,2,4,7,9,11,13,14 claim=L:stage1 mine=EXCL-A L F=13089 dim=3 S=143655520 l=4 u=3 round=2
+0,2,4,7,9,11,14,16 claim=L:stage1 mine=EXCL-A L F=8003 dim=3 S=1212158466 l=4 u=3 round=2
+0,2,4,7,9,11,17,18 claim=undecided mine=PASS-ABC 
+0,2,4,7,9,13,20,21 claim=L:stage1 mine=EXCL-A S F=2689 dim=2 S=10485770 tot=7 need=8 round=2
+0,2,4,7,9,13,21,22 claim=L:stage1 mine=EXCL-A M Q=19856 tr=6 s=7 round=1
+0,2,4,8,10,11,13,14 claim=Z:stage2 mine=EXCL-A L F=23939 dim=3 S=1761632256 l=5 u=4 round=2
+0,2,4,8,10,11,13,20 claim=L:stage2 mine=EXCL-A L F=2049 dim=2 S=2228258 l=3 u=2 round=2
+0,2,4,8,10,12,13,14 claim=L:stage1 mine=EXCL-A L F=15520 dim=3 S=3415040 l=4 u=2 round=2
+0,2,4,8,10,13,14,15 claim=Z:stage2 mine=EXCL-B L F=15752 dim=2 S=671098880 l=2 u=1 round=1
+0,2,4,8,10,13,14,16 claim=L:stage1 mine=EXCL-A L F=2049 dim=2 S=537010178 l=3 u=2 round=1
+0,2,4,8,10,13,14,18 claim=L:stage1 mine=EXCL-A L F=26319 dim=2 S=10370 l=3 u=2 round=1
+0,2,4,8,11,13,14,20 claim=L:stage3 mine=EXCL-A L F=4113 dim=2 S=1114146 l=3 u=2 round=1
+0,2,4,8,11,13,18,20 claim=L:stage1 mine=EXCL-A S F=3394 dim=2 S=100663392 tot=12 need=13 round=2
+0,2,4,8,11,14,17,18 claim=Z:stage2 mine=EXCL-B S F=8147 dim=2 S=4 tot=1 need=2 round=2
+0,2,4,9,11,13,14,16 claim=undecided mine=EXCL-A S F=22317 dim=2 S=2155876368 tot=7 need=8 round=2
+0,2,4,9,11,13,14,18 claim=L:stage1 mine=EXCL-A L F=4970 dim=3 S=9184000 l=4 u=3 round=2
+0,2,4,9,11,13,14,20 claim=L:stage1 mine=EXCL-A M Q=23980 tr=11 s=12 round=1
+0,2,4,9,11,14,16,19 claim=undecided mine=PASS-ABC 
+0,2,4,9,11,14,17,18 claim=L:stage1 mine=EXCL-A M Q=2082 tr=4 s=5 round=1
+0,2,4,9,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=2400 l=3 u=2 round=1
+0,2,5,10,11,13,18,19 claim=undecided mine=PASS-ABC 
+0,2,5,10,11,15,18,19 claim=L:stage1 mine=EXCL-A L F=23339 dim=3 S=273162500 l=4 u=3 round=2
+0,2,5,10,11,16,18,19 claim=Z:stage2 mine=EXCL-A M Q=31728 tr=11 s=12 round=1
+0,2,5,10,11,18,19,21 claim=L:stage1 mine=EXCL-A L F=19757 dim=2 S=808452096 l=3 u=2 round=1
+0,2,5,10,13,14,18,19 claim=L:stage1 mine=EXCL-A L F=31667 dim=2 S=20490 l=3 u=2 round=1
+0,2,5,10,13,15,16,18 claim=L:stage3 mine=EXCL-A S F=29041 dim=2 S=536940546 tot=7 need=8 round=2
+0,2,5,10,14,15,20,21 claim=L:stage1 mine=EXCL-A S F=10278 dim=3 S=2290615300 tot=15 need=16 round=2
+0,2,5,11,13,14,17,18 claim=Z:stage2 mine=EXCL-A L F=19757 dim=2 S=537936000 l=3 u=2 round=1
+0,2,5,6,10,11,15,18 claim=L:stage1 mine=EXCL-A M Q=17088 tr=11 s=12 round=1
+0,2,5,6,10,11,18,19 claim=L:stage3 mine=EXCL-A L F=468 dim=2 S=83886160 l=3 u=2 round=2
+0,2,5,6,11,12,15,22 claim=L:stage1 mine=EXCL-A M Q=28688 tr=6 s=7 round=1
+0,2,5,6,11,14,18,19 claim=L:stage1 mine=EXCL-A L F=4933 dim=3 S=49720 l=4 u=3 round=2
+0,2,5,6,11,15,18,19 claim=L:stage1 mine=EXCL-A L F=4933 dim=3 S=49720 l=4 u=3 round=2
+0,2,5,6,11,16,18,19 claim=L:stage2 mine=EXCL-A L F=23339 dim=3 S=403185700 l=4 u=3 round=2
+0,2,5,6,11,17,18,19 claim=L:stage3 mine=EXCL-A S F=29681 dim=2 S=6210 tot=7 need=8 round=2
+0,2,5,6,7,11,18,19 claim=L:stage3 mine=EXCL-A L F=468 dim=2 S=20560 l=3 u=2 round=2
+0,2,5,6,8,11,14,18 claim=L:stage1 mine=EXCL-A M Q=30629 tr=6 s=7 round=1
+0,2,5,6,8,11,15,18 claim=L:stage1 mine=EXCL-A M Q=30629 tr=6 s=7 round=1
+0,2,5,6,8,11,16,19 claim=L:stage1 mine=EXCL-A L F=3965 dim=3 S=134840464 l=4 u=3 round=2
+0,2,5,6,9,11,15,16 claim=L:stage1 mine=EXCL-A L F=12901 dim=3 S=2684486304 l=4 u=3 round=2
+0,2,5,6,9,11,15,18 claim=L:stage1 mine=EXCL-A L F=19757 dim=2 S=808452096 l=3 u=2 round=1
+0,2,5,7,10,11,15,22 claim=L:stage1 mine=EXCL-A L F=19498 dim=3 S=1140859460 l=4 u=3 round=2
+0,2,5,7,10,12,13,22 claim=undecided mine=PASS-ABC 
+0,2,5,7,10,12,17,22 claim=L:stage3 mine=EXCL-A L F=24792 dim=2 S=368640 l=3 u=2 round=2
+0,2,5,7,10,12,19,22 claim=undecided mine=PASS-ABC 
+0,2,5,7,10,13,19,22 claim=undecided mine=PASS-ABC 
+0,2,5,7,10,14,19,22 claim=L:stage1 mine=EXCL-A L F=19498 dim=3 S=1140859460 l=4 u=3 round=2
+0,2,5,7,11,12,18,19 claim=L:stage1 mine=EXCL-A L F=4674 dim=2 S=1074282504 l=3 u=2 round=1
+0,2,5,7,11,14,18,19 claim=L:stage1 mine=EXCL-A M Q=4385 tr=10 s=11 round=1
+0,2,5,7,11,15,18,19 claim=L:stage1 mine=EXCL-A M Q=4385 tr=10 s=11 round=1
+0,2,5,7,11,16,18,19 claim=L:stage3 mine=EXCL-A L F=4674 dim=2 S=1074282504 l=3 u=2 round=1
+0,2,5,7,11,18,19,20 claim=L:stage1 mine=EXCL-A L F=4674 dim=2 S=1074282504 l=3 u=2 round=1
+0,2,5,7,13,15,16,18 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=2147615040 l=3 u=2 round=1
+0,2,5,7,8,11,18,19 claim=L:stage3 mine=EXCL-A L F=26599 dim=2 S=268701700 l=3 u=2 round=1
+0,2,5,8,11,12,13,18 claim=L:stage1 mine=EXCL-A L F=3641 dim=2 S=1114146 l=3 u=2 round=1
+0,2,5,8,11,13,14,17 claim=L:stage1 mine=EXCL-A M Q=2114 tr=11 s=12 round=1
+0,2,5,8,11,13,18,19 claim=Z:stage2 mine=EXCL-B L F=31667 dim=2 S=20490 l=3 u=2 round=1
+0,2,5,8,11,13,18,20 claim=L:stage1 mine=EXCL-A L F=30920 dim=3 S=110100768 l=4 u=3 round=2
+0,2,5,8,11,16,18,19 claim=L:stage1 mine=EXCL-A L F=17623 dim=3 S=1074335750 l=4 u=3 round=2
+0,2,5,8,11,18,19,21 claim=L:stage1 mine=EXCL-A L F=4970 dim=2 S=2148008480 l=2 u=1 round=2
+0,2,5,8,13,15,18,20 claim=L:stage1 mine=EXCL-A L F=3965 dim=3 S=721072 l=4 u=2 round=2
+0,2,5,8,9,10,15,16 claim=L:stage1 mine=EXCL-A L F=19370 dim=3 S=140546052 l=4 u=3 round=2
+0,2,5,8,9,11,12,18 claim=L:stage1 mine=EXCL-A M Q=13306 tr=4 s=5 round=1
+0,2,5,8,9,11,18,19 claim=L:stage1 mine=EXCL-A L F=4970 dim=2 S=2148008480 l=2 u=1 round=2
+0,2,5,8,9,12,15,16 claim=L:stage1 mine=EXCL-A L F=25055 dim=2 S=537002528 l=3 u=2 round=1
+0,2,5,8,9,15,16,19 claim=L:stage1 mine=EXCL-A L F=21953 dim=3 S=1084228618 l=4 u=3 round=2
+0,2,5,9,10,11,15,16 claim=L:stage3 mine=EXCL-B S F=13361 dim=2 S=66048 tot=3 need=4 round=2
+0,2,5,9,10,11,15,18 claim=Z:stage2 mine=EXCL-A L F=19757 dim=2 S=808452096 l=3 u=2 round=1
+0,2,5,9,10,11,18,19 claim=L:stage3 mine=EXCL-A L F=19757 dim=2 S=808452096 l=3 u=2 round=1
+0,2,5,9,10,13,15,16 claim=L:stage2 mine=EXCL-A L F=15391 dim=2 S=2147565570 l=3 u=2 round=1
+0,2,5,9,10,14,15,16 claim=Z:stage2 mine=EXCL-B S F=27617 dim=1 S=8388608 tot=1 need=2 round=2
+0,2,5,9,10,15,16,17 claim=L:stage1 mine=EXCL-A L F=1987 dim=3 S=1109671940 l=4 u=3 round=2
+0,2,5,9,10,15,16,18 claim=Z:stage2 mine=EXCL-B S F=25115 dim=1 S=65536 tot=1 need=2 round=1
+0,2,5,9,10,15,16,19 claim=L:stage3 mine=EXCL-A L F=15391 dim=2 S=2147565570 l=3 u=2 round=1
+0,2,5,9,10,15,16,20 claim=L:stage1 mine=EXCL-A L F=30710 dim=3 S=270614660 l=4 u=3 round=2
+0,2,5,9,11,12,18,19 claim=L:stage3 mine=EXCL-A L F=17708 dim=2 S=142606608 l=3 u=2 round=1
+0,2,5,9,11,13,14,22 claim=L:stage1 mine=EXCL-A S F=5458 dim=1 S=2097216 tot=3 need=4 round=2
+0,2,5,9,11,15,16,20 claim=L:stage1 mine=EXCL-A L F=30710 dim=3 S=270614660 l=4 u=3 round=2
+0,2,5,9,11,15,16,22 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=68161540 l=3 u=2 round=1
+0,2,5,9,11,17,18,19 claim=L:stage3 mine=EXCL-A L F=19757 dim=2 S=808452096 l=3 u=2 round=1
+0,2,5,9,12,14,15,16 claim=L:stage1 mine=EXCL-A L F=1532 dim=3 S=852176 l=4 u=3 round=2
+0,2,5,9,12,15,16,18 claim=L:stage1 mine=EXCL-A L F=1532 dim=3 S=852176 l=4 u=3 round=2
+0,2,5,9,14,15,16,20 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=41947140 l=3 u=2 round=1
+0,2,5,9,14,16,17,19 claim=L:stage1 mine=EXCL-A L F=5505 dim=2 S=10280 l=3 u=2 round=2
+0,2,6,10,11,12,15,16 claim=L:stage1 mine=EXCL-A L F=15904 dim=2 S=263168 l=2 u=1 round=2
+0,2,6,10,12,13,15,16 claim=L:stage1 mine=EXCL-A L F=29069 dim=2 S=16920 l=3 u=2 round=1
+0,2,6,10,12,14,15,16 claim=L:stage1 mine=EXCL-A L F=15904 dim=3 S=136586248 l=4 u=3 round=2
+0,2,6,11,13,15,16,18 claim=L:stage3 mine=EXCL-B L F=296 dim=2 S=2281701512 l=3 u=2 round=2
+0,2,6,12,13,15,16,18 claim=L:stage1 mine=EXCL-A L F=4521 dim=3 S=612401440 l=4 u=3 round=2
+0,2,6,7,8,11,12,18 claim=L:stage1 mine=EXCL-A L F=26456 dim=3 S=151261280 l=4 u=3 round=2
+0,2,6,7,8,9,11,12 claim=L:stage1 mine=EXCL-A L F=12901 dim=3 S=2684486304 l=4 u=3 round=2
+0,2,6,7,9,11,12,14 claim=L:stage1 mine=EXCL-A L F=23572 dim=3 S=12782592 l=4 u=3 round=2
+0,2,6,8,11,12,14,18 claim=L:stage3 mine=EXCL-A S F=3050 dim=2 S=100687872 tot=7 need=8 round=2
+0,2,6,8,11,12,15,18 claim=L:stage3 mine=EXCL-A L F=31772 dim=2 S=196800 l=3 u=2 round=1
+0,2,6,8,11,12,17,18 claim=L:stage1 mine=EXCL-A L F=32728 dim=2 S=150997248 l=4 u=2 round=2
+0,2,6,8,9,11,12,18 claim=L:stage1 mine=EXCL-A L F=32728 dim=2 S=150997248 l=4 u=2 round=2
+0,2,6,9,11,12,14,16 claim=L:stage1 mine=EXCL-A L F=6272 dim=3 S=13373952 l=4 u=3 round=2
+0,2,6,9,11,12,14,17 claim=L:stage1 mine=EXCL-A L F=30566 dim=2 S=134496384 l=3 u=2 round=1
+0,2,6,9,11,14,16,19 claim=undecided mine=PASS-ABC 
+0,2,6,9,12,14,15,16 claim=L:stage1 mine=EXCL-A M Q=20869 tr=11 s=12 round=1
+0,2,6,9,12,15,16,20 claim=L:stage1 mine=EXCL-A M Q=4035 tr=4 s=5 round=1
+0,2,6,9,13,14,16,19 claim=L:stage1 mine=EXCL-A S F=1532 dim=2 S=262208 tot=3 need=4 round=2
+0,2,7,11,12,16,17,22 claim=L:stage1 mine=EXCL-A L F=30221 dim=3 S=1143083400 l=4 u=3 round=1
+0,2,7,11,12,17,20,22 claim=L:stage1 mine=EXCL-A M Q=21201 tr=11 s=12 round=1
+0,2,7,11,13,14,16,19 claim=L:stage3 mine=EXCL-A L F=296 dim=2 S=136315520 l=3 u=2 round=2
+0,2,7,11,13,16,17,22 claim=L:stage1 mine=EXCL-A L F=1532 dim=2 S=786624 l=2 u=1 round=2
+0,2,7,11,15,16,18,21 claim=L:stage3 mine=EXCL-A L F=15475 dim=2 S=285221376 l=3 u=2 round=2
+0,2,7,11,15,17,20,21 claim=L:stage3 mine=EXCL-A L F=2094 dim=2 S=2165833728 l=3 u=2 round=2
+0,2,7,8,9,12,16,18 claim=L:stage1 mine=EXCL-A L F=30645 dim=2 S=1509949440 l=3 u=2 round=1
+0,2,7,9,10,12,20,21 claim=L:stage2 mine=EXCL-A S F=12901 dim=3 S=131584 tot=4 need=6 round=2
+0,2,7,9,11,12,16,18 claim=L:stage1 mine=EXCL-A L F=9932 dim=2 S=150997248 l=3 u=2 round=2
+0,2,7,9,11,13,16,19 claim=L:stage1 mine=EXCL-A L F=26893 dim=2 S=1207968000 l=3 u=2 round=1
+0,2,7,9,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=23043 dim=2 S=84541440 l=3 u=2 round=1
+0,2,7,9,12,13,16,22 claim=L:stage1 mine=EXCL-A L F=31644 dim=3 S=35160352 l=4 u=3 round=2
+0,2,7,9,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=11362 dim=3 S=339748992 l=4 u=3 round=2
+0,2,8,10,11,12,15,18 claim=L:stage1 mine=EXCL-A L F=20822 dim=2 S=67635204 l=3 u=2 round=1
+0,2,8,10,11,13,14,20 claim=Z:stage2 mine=EXCL-A L F=26420 dim=2 S=327840 l=3 u=2 round=2
+0,2,8,9,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=2028 dim=3 S=178258192 l=4 u=2 round=2
+0,2,8,9,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=5289 dim=3 S=1124090624 l=4 u=3 round=2
+0,2,9,10,11,13,14,16 claim=Z:stage2 mine=EXCL-B S F=9776 dim=1 S=134217728 tot=1 need=2 round=2
+0,2,9,10,11,13,16,18 claim=L:stage1 mine=EXCL-A L F=15971 dim=2 S=136315520 l=3 u=2 round=1
+0,2,9,10,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=2028 dim=3 S=178258192 l=4 u=2 round=2
+0,2,9,10,13,14,18,20 claim=L:stage1 mine=EXCL-A M Q=7440 tr=11 s=12 round=1
+0,2,9,10,13,15,16,18 claim=L:stage1 mine=EXCL-A M Q=20994 tr=11 s=12 round=1
+0,2,9,11,12,13,14,16 claim=L:stage3 mine=EXCL-A S F=22317 dim=2 S=2155876368 tot=7 need=8 round=2
+0,2,9,11,12,13,16,19 claim=L:stage1 mine=EXCL-A L F=7892 dim=3 S=555811968 l=4 u=3 round=2
+0,2,9,11,12,14,16,19 claim=L:stage3 mine=EXCL-A L F=15475 dim=2 S=268967940 l=3 u=2 round=2
+0,2,9,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,2,9,11,13,14,18,20 claim=L:stage1 mine=EXCL-A L F=21886 dim=2 S=335560960 l=3 u=2 round=1
+0,2,9,11,13,16,19,20 claim=L:stage3 mine=EXCL-A L F=19858 dim=2 S=71305344 l=3 u=2 round=1
+0,2,9,11,14,16,17,19 claim=L:stage1 mine=EXCL-A L F=2028 dim=3 S=178258192 l=4 u=2 round=2
+0,2,9,11,14,16,19,20 claim=undecided mine=PASS-ABC 
+0,2,9,12,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=2416312320 l=3 u=2 round=1
+0,2,9,13,14,16,17,19 claim=Z:stage2 mine=EXCL-B S F=8480 dim=2 S=8388608 tot=1 need=2 round=2
+0,2,9,13,14,16,19,20 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=2416312320 l=3 u=2 round=1
+0,3,10,12,14,16,17,22 claim=L:stage1 mine=EXCL-A L F=18902 dim=3 S=5780 l=4 u=2 round=2
+0,3,10,12,14,17,20,23 claim=L:stage1 mine=EXCL-A L F=28385 dim=2 S=84541440 l=3 u=2 round=1
+0,3,4,10,11,13,14,20 claim=L:stage3 mine=EXCL-B S F=31088 dim=2 S=33624096 tot=22 need=23 round=2
+0,3,4,10,13,14,15,20 claim=L:stage1 mine=EXCL-A L F=11362 dim=3 S=336078852 l=4 u=3 round=2
+0,3,4,10,13,14,16,20 claim=L:stage3 mine=EXCL-C S F=707 dim=2 S=1024 tot=1 need=2 round=2
+0,3,4,10,13,14,17,20 claim=L:stage3 mine=EXCL-A L F=296 dim=2 S=2281710080 l=3 u=2 round=2
+0,3,4,10,13,16,17,21 claim=L:stage1 mine=EXCL-A L F=10510 dim=2 S=1342832640 l=3 u=2 round=1
+0,3,4,5,6,9,10,16 claim=undecided mine=PASS-ABC 
+0,3,4,5,8,10,12,19 claim=L:stage1 mine=EXCL-A S F=14118 dim=2 S=2228292 tot=7 need=8 round=2
+0,3,4,5,8,10,13,18 claim=L:stage1 mine=EXCL-A L F=24528 dim=2 S=1131520 l=3 u=2 round=1
+0,3,4,5,8,10,17,18 claim=L:stage1 mine=EXCL-A L F=9624 dim=3 S=1015087104 l=4 u=3 round=2
+0,3,4,5,8,12,18,19 claim=L:stage2 mine=EXCL-A L F=28698 dim=2 S=12779520 l=1 u=0 round=1
+0,3,4,5,8,9,14,16 claim=L:stage1 mine=EXCL-A L F=1532 dim=3 S=277086536 l=4 u=3 round=2
+0,3,4,5,8,9,14,21 claim=L:stage1 mine=EXCL-A L F=26319 dim=2 S=18450 l=3 u=2 round=1
+0,3,4,5,9,10,12,15 claim=M:stage2 mine=EXCL-A L F=15391 dim=2 S=16770 l=1 u=0 round=1
+0,3,4,6,10,11,13,16 claim=L:stage1 mine=EXCL-A L F=26420 dim=2 S=168099840 l=3 u=2 round=1
+0,3,4,6,10,13,14,20 claim=L:stage1 mine=EXCL-A L F=4521 dim=3 S=738231040 l=4 u=3 round=2
+0,3,4,6,7,9,10,16 claim=Z:stage2 mine=EXCL-A L F=20285 dim=2 S=50528256 l=2 u=1 round=2
+0,3,4,6,8,10,13,20 claim=undecided mine=EXCL-A M Q=31270 tr=10 s=11 round=2
+0,3,4,6,8,13,14,20 claim=Z:stage2 mine=EXCL-B S F=13922 dim=1 S=4 tot=1 need=2 round=2
+0,3,4,6,8,9,11,14 claim=undecided mine=EXCL-A S F=9624 dim=2 S=39168 tot=12 need=13 round=2
+0,3,4,6,9,10,11,16 claim=L:stage1 mine=EXCL-A L F=19182 dim=3 S=570949956 l=4 u=3 round=2
+0,3,4,6,9,10,12,16 claim=undecided mine=PASS-ABC 
+0,3,4,6,9,10,13,16 claim=undecided mine=PASS-ABC 
+0,3,4,6,9,10,14,16 claim=Z:stage2 mine=EXCL-A L F=18434 dim=2 S=1140850756 l=3 u=2 round=1
+0,3,4,6,9,10,15,16 claim=Z:stage2 mine=EXCL-B S F=8480 dim=2 S=1073741824 tot=1 need=2 round=2
+0,3,4,6,9,10,16,20 claim=L:stage1 mine=EXCL-A L F=19182 dim=3 S=570949956 l=4 u=3 round=2
+0,3,4,6,9,11,13,16 claim=L:stage1 mine=EXCL-A L F=15752 dim=2 S=1207968000 l=3 u=2 round=1
+0,3,4,6,9,13,14,22 claim=L:stage1 mine=EXCL-A L F=6980 dim=3 S=9461904 l=4 u=3 round=2
+0,3,4,6,9,13,19,20 claim=Z:stage2 mine=EXCL-A L F=29069 dim=2 S=301994496 l=3 u=2 round=1
+0,3,4,7,10,13,18,21 claim=L:stage1 mine=EXCL-A M Q=5570 tr=15 s=16 round=1
+0,3,4,7,11,13,16,17 claim=L:stage1 mine=EXCL-A L F=16280 dim=3 S=11053056 l=4 u=3 round=2
+0,3,4,7,9,10,12,19 claim=L:stage1 mine=EXCL-A L F=2689 dim=3 S=75776072 l=4 u=3 round=2
+0,3,4,7,9,13,14,22 claim=L:stage3 mine=EXCL-B L F=24528 dim=2 S=270565440 l=3 u=2 round=1
+0,3,4,8,10,11,13,14 claim=L:stage1 mine=EXCL-A L F=23939 dim=3 S=1761632256 l=5 u=4 round=2
+0,3,4,8,10,12,13,14 claim=L:stage1 mine=EXCL-A S F=15520 dim=2 S=8389120 tot=2 need=4 round=2
+0,3,4,8,10,13,14,15 claim=Z:stage2 mine=EXCL-A S F=27682 dim=2 S=157286400 tot=17 need=18 round=2
+0,3,4,8,10,13,14,16 claim=L:stage1 mine=EXCL-A L F=2049 dim=2 S=537010178 l=3 u=2 round=1
+0,3,4,8,10,13,14,17 claim=Z:stage2 mine=EXCL-B L F=15844 dim=2 S=4737024 l=2 u=1 round=1
+0,3,4,8,10,13,14,18 claim=L:stage1 mine=EXCL-A L F=26319 dim=2 S=10370 l=3 u=2 round=1
+0,3,4,8,10,13,14,20 claim=undecided mine=PASS-ABC 
+0,3,4,8,10,13,15,20 claim=L:stage1 mine=EXCL-A L F=11362 dim=3 S=72353952 l=4 u=3 round=2
+0,3,4,8,10,13,16,20 claim=L:stage1 mine=EXCL-A L F=23228 dim=2 S=1074266400 l=3 u=2 round=1
+0,3,4,8,10,13,18,20 claim=L:stage1 mine=EXCL-A L F=16203 dim=3 S=277873670 l=4 u=3 round=2
+0,3,4,8,10,13,19,20 claim=L:stage1 mine=EXCL-A L F=11362 dim=3 S=72353952 l=4 u=3 round=2
+0,3,4,8,11,13,14,18 claim=L:stage1 mine=EXCL-A L F=8292 dim=1 S=4112 l=2 u=1 round=2
+0,3,4,8,11,13,14,20 claim=undecided mine=PASS-ABC 
+0,3,4,8,13,14,16,20 claim=Z:stage2 mine=EXCL-B S F=15000 dim=1 S=67108864 tot=1 need=2 round=2
+0,3,4,8,13,14,18,20 claim=L:stage1 mine=EXCL-A L F=14472 dim=3 S=3941376 l=4 u=3 round=2
+0,3,4,8,9,10,13,20 claim=Z:stage2 mine=EXCL-B S F=23980 dim=1 S=524288 tot=1 need=2 round=2
+0,3,4,8,9,13,14,20 claim=Z:stage2 mine=EXCL-A L F=108 dim=2 S=537403400 l=3 u=2 round=2
+0,3,4,9,10,11,14,21 claim=L:stage1 mine=EXCL-A M Q=1160 tr=2 s=3 round=1
+0,3,4,9,10,13,14,20 claim=undecided mine=PASS-ABC 
+0,3,4,9,11,13,14,16 claim=L:stage3 mine=EXCL-A S F=22904 dim=2 S=1082131464 tot=7 need=8 round=2
+0,3,4,9,13,14,16,22 claim=L:stage1 mine=EXCL-A L F=8463 dim=2 S=25182210 l=3 u=2 round=1
+0,3,5,10,11,12,15,19 claim=L:stage1 mine=EXCL-A M Q=14735 tr=11 s=12 round=1
+0,3,5,11,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=7303 dim=3 S=2220490752 l=4 u=3 round=2
+0,3,5,11,13,15,16,17 claim=L:stage1 mine=EXCL-A L F=14735 dim=2 S=603983872 l=2 u=1 round=2
+0,3,5,6,7,8,10,13 claim=L:stage1 mine=EXCL-A L F=3394 dim=3 S=1140990020 l=4 u=3 round=2
+0,3,5,7,10,11,13,14 claim=L:stage1 mine=EXCL-A S F=15904 dim=2 S=2105344 tot=3 need=4 round=2
+0,3,5,7,8,10,12,13 claim=Z:stage2 mine=EXCL-A L F=32119 dim=2 S=33300 l=3 u=2 round=1
+0,3,5,7,8,10,13,17 claim=L:stage1 mine=EXCL-A L F=3394 dim=3 S=1140990020 l=4 u=3 round=2
+0,3,5,7,8,12,13,18 claim=Z:stage2 mine=EXCL-A L F=28873 dim=2 S=8529920 l=3 u=2 round=1
+0,3,5,7,8,12,18,19 claim=L:stage1 mine=EXCL-A L F=5954 dim=3 S=805572620 l=4 u=3 round=2
+0,3,5,7,8,13,14,16 claim=Z:stage2 mine=EXCL-A L F=24528 dim=2 S=1589760 l=3 u=2 round=1
+0,3,5,8,10,12,18,19 claim=undecided mine=PASS-ABC 
+0,3,5,8,10,15,17,20 claim=L:stage1 mine=EXCL-A L F=3394 dim=3 S=1140990020 l=4 u=3 round=2
+0,3,5,8,11,13,14,16 claim=L:stage1 mine=EXCL-A L F=12198 dim=3 S=2156007444 l=4 u=3 round=2
+0,3,5,8,11,16,18,19 claim=L:stage1 mine=EXCL-A L F=5289 dim=2 S=167774720 l=2 u=1 round=2
+0,3,5,8,12,13,18,19 claim=L:stage3 mine=EXCL-A L F=28873 dim=2 S=2148532488 l=3 u=2 round=1
+0,3,5,8,12,14,18,19 claim=L:stage1 mine=EXCL-A L F=23339 dim=3 S=805838860 l=4 u=3 round=2
+0,3,5,8,12,16,17,22 claim=L:stage1 mine=EXCL-A S F=8188 dim=2 S=2147553288 tot=17 need=18 round=2
+0,3,5,8,12,16,18,19 claim=L:stage3 mine=EXCL-C L F=23232 dim=3 S=144706080 l=3 u=2 round=2
+0,3,5,8,12,17,18,19 claim=L:stage1 mine=EXCL-A L F=28698 dim=2 S=12583680 l=3 u=2 round=1
+0,3,5,8,12,18,19,21 claim=L:stage3 mine=EXCL-A L F=28698 dim=2 S=12583680 l=3 u=2 round=1
+0,3,5,8,13,14,16,20 claim=L:stage1 mine=EXCL-A L F=24528 dim=2 S=9438720 l=3 u=2 round=1
+0,3,5,8,9,12,18,19 claim=L:stage1 mine=EXCL-A L F=27617 dim=3 S=21268482 l=4 u=3 round=2
+0,3,5,9,11,13,14,16 claim=Z:stage2 mine=EXCL-A S F=21953 dim=3 S=3229617160 tot=13 need=14 round=2
+0,3,5,9,11,14,19,22 claim=L:stage1 mine=EXCL-A L F=6980 dim=3 S=417936 l=4 u=3 round=2
+0,3,6,11,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=23228 dim=2 S=268960800 l=3 u=2 round=1
+0,3,6,7,8,11,13,20 claim=Z:stage2 mine=EXCL-A L F=2754 dim=2 S=2181038120 l=3 u=2 round=2
+0,3,6,7,9,12,13,19 claim=L:stage3 mine=EXCL-A L F=23544 dim=2 S=2181120 l=3 u=2 round=1
+0,3,6,8,10,11,13,16 claim=undecided mine=PASS-ABC 
+0,3,6,8,10,13,14,20 claim=undecided mine=PASS-ABC 
+0,3,6,8,9,10,11,16 claim=L:stage1 mine=EXCL-A L F=18621 dim=2 S=2162706 l=3 u=2 round=1
+0,3,6,8,9,11,12,19 claim=L:stage1 mine=EXCL-A M Q=7787 tr=11 s=12 round=1
+0,3,6,8,9,11,16,20 claim=L:stage1 mine=EXCL-A L F=9572 dim=3 S=1140985992 l=4 u=3 round=2
+0,3,6,8,9,11,19,20 claim=undecided mine=EXCL-A S F=9843 dim=2 S=16843266 tot=7 need=8 round=2
+0,3,6,9,11,13,14,16 claim=Z:stage2 mine=EXCL-B S F=7548 dim=2 S=4288 tot=5 need=6 round=2
+0,3,6,9,11,13,16,19 claim=L:stage1 mine=EXCL-A L F=17623 dim=3 S=1086328880 l=4 u=3 round=2
+0,3,6,9,11,14,16,17 claim=L:stage1 mine=EXCL-A L F=24792 dim=2 S=10813440 l=3 u=2 round=1
+0,3,6,9,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=23639 dim=3 S=2214660114 l=4 u=3 round=2
+0,3,6,9,13,14,16,19 claim=L:stage1 mine=EXCL-A M Q=21556 tr=10 s=11 round=1
+0,3,7,10,11,13,16,17 claim=L:stage1 mine=EXCL-A L F=24648 dim=3 S=1347440640 l=4 u=3 round=2
+0,3,7,10,13,14,16,22 claim=undecided mine=PASS-ABC 
+0,3,7,11,13,15,16,17 claim=L:stage1 mine=EXCL-A L F=23104 dim=3 S=2183692320 l=4 u=3 round=2
+0,3,7,11,13,16,17,18 claim=L:stage1 mine=EXCL-A L F=22058 dim=3 S=939541248 l=4 u=3 round=2
+0,3,7,8,10,11,13,17 claim=L:stage1 mine=EXCL-A L F=32119 dim=2 S=335544340 l=2 u=0 round=1
+0,3,7,8,12,13,14,17 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=36870 l=3 u=2 round=1
+0,3,7,8,12,13,14,18 claim=L:stage1 mine=EXCL-A M Q=15180 tr=11 s=12 round=1
+0,3,7,8,12,13,15,18 claim=L:stage1 mine=EXCL-A M Q=5732 tr=2 s=3 round=1
+0,3,7,8,12,18,20,21 claim=L:stage1 mine=EXCL-A L F=10120 dim=3 S=34230336 l=4 u=3 round=2
+0,3,7,8,13,14,18,20 claim=L:stage1 mine=EXCL-A L F=6596 dim=3 S=606339648 l=4 u=3 round=2
+0,3,7,8,9,12,18,20 claim=L:stage1 mine=EXCL-A L F=18348 dim=3 S=335675688 l=4 u=3 round=2
+0,3,7,9,10,12,13,19 claim=L:stage1 mine=EXCL-A L F=11101 dim=2 S=49200 l=3 u=2 round=1
+0,3,7,9,12,16,21,22 claim=L:stage3 mine=EXCL-C L F=12037 dim=3 S=5778 l=3 u=2 round=2
+0,3,8,10,13,14,17,20 claim=L:stage1 mine=EXCL-A L F=31567 dim=2 S=36960 l=3 u=2 round=1
+0,3,8,10,13,14,18,20 claim=L:stage1 mine=EXCL-A L F=31567 dim=2 S=36960 l=3 u=2 round=1
+0,3,8,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,3,8,11,14,16,17,19 claim=L:stage1 mine=EXCL-A L F=2028 dim=3 S=178258192 l=4 u=3 round=2
+0,3,8,12,14,16,17,19 claim=undecided mine=PASS-ABC 
+0,3,8,12,14,17,19,22 claim=L:stage1 mine=EXCL-A L F=8188 dim=3 S=2692763664 l=4 u=3 round=2
+0,3,8,9,10,13,14,20 claim=undecided mine=EXCL-A L F=12313 dim=2 S=167772320 l=1 u=0 round=2
+0,3,8,9,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=28469 dim=2 S=5245440 l=3 u=2 round=1
+0,3,8,9,13,14,16,19 claim=L:stage1 mine=EXCL-A M Q=21556 tr=10 s=11 round=1
+0,3,9,10,11,13,14,19 claim=Z:stage2 mine=EXCL-A L F=8547 dim=3 S=67387970 l=4 u=3 round=2
+0,3,9,10,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=28469 dim=2 S=5245440 l=3 u=2 round=1
+0,3,9,10,11,14,16,20 claim=L:stage1 mine=EXCL-A S F=7364 dim=3 S=143148096 tot=13 need=14 round=2
+0,3,9,11,13,14,15,19 claim=L:stage1 mine=EXCL-A L F=15475 dim=2 S=2147553288 l=3 u=2 round=1
+0,3,9,11,13,14,16,18 claim=L:stage1 mine=EXCL-A S F=30286 dim=1 S=4096 tot=14 need=15 round=1
+0,3,9,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,3,9,11,13,14,16,20 claim=Z:stage2 mine=EXCL-B S F=21953 dim=1 S=2147483648 tot=1 need=2 round=2
+0,3,9,11,13,14,16,21 claim=L:stage1 mine=EXCL-A L F=8480 dim=3 S=269518984 l=4 u=3 round=2
+0,3,9,11,13,16,18,19 claim=undecided mine=PASS-ABC 
+0,3,9,11,14,15,16,17 claim=L:stage1 mine=EXCL-A M Q=964 tr=11 s=12 round=1
+0,3,9,11,14,16,17,21 claim=L:stage1 mine=EXCL-A L F=24792 dim=2 S=10813440 l=3 u=2 round=1
+0,3,9,11,14,16,19,21 claim=L:stage1 mine=EXCL-A L F=23043 dim=2 S=84541440 l=3 u=2 round=1
+0,3,9,12,13,14,18,19 claim=L:stage1 mine=EXCL-A L F=8463 dim=2 S=545275920 l=3 u=2 round=1
+0,3,9,12,13,15,18,19 claim=L:stage1 mine=EXCL-A L F=30221 dim=2 S=1107296280 l=3 u=2 round=1
+0,3,9,13,14,16,18,19 claim=L:stage1 mine=EXCL-A L F=8463 dim=2 S=545275920 l=3 u=2 round=1
+0,3,9,13,14,16,19,21 claim=L:stage3 mine=EXCL-A S F=3706 dim=2 S=537134112 tot=7 need=8 round=2
+0,4,10,11,12,13,14,16 claim=L:stage1 mine=EXCL-A M Q=15280 tr=11 s=12 round=1
+0,4,10,11,12,13,14,20 claim=Z:stage2 mine=EXCL-B S F=2754 dim=2 S=1073741824 tot=1 need=2 round=2
+0,4,10,11,13,14,16,18 claim=L:stage1 mine=EXCL-A S F=20138 dim=2 S=37749120 tot=11 need=13 round=2
+0,4,10,11,13,14,17,20 claim=L:stage3 mine=EXCL-A L F=296 dim=2 S=2281710080 l=3 u=2 round=2
+0,4,10,11,13,14,18,20 claim=L:stage1 mine=EXCL-A L F=31644 dim=3 S=38798624 l=4 u=3 round=2
+0,4,5,10,11,13,14,20 claim=L:stage3 mine=EXCL-B S F=31088 dim=2 S=33624096 tot=22 need=23 round=2
+0,4,5,10,11,13,15,18 claim=L:stage1 mine=EXCL-A M Q=29041 tr=11 s=12 round=1
+0,4,5,10,13,14,15,20 claim=L:stage1 mine=EXCL-A L F=9375 dim=3 S=591504 l=4 u=3 round=2
+0,4,5,10,13,14,15,22 claim=L:stage1 mine=EXCL-A L F=32119 dim=2 S=75530244 l=3 u=2 round=1
+0,4,5,10,13,15,18,22 claim=Z:stage2 mine=EXCL-B S F=3050 dim=1 S=8192 tot=1 need=2 round=2
+0,4,5,10,14,17,19,22 claim=L:stage1 mine=EXCL-A L F=24251 dim=2 S=2181038120 l=3 u=2 round=1
+0,4,5,6,7,10,13,22 claim=undecided mine=EXCL-B S F=21778 dim=2 S=1114248 tot=22 need=23 round=1
+0,4,5,6,8,9,10,15 claim=L:stage1 mine=EXCL-A L F=15391 dim=2 S=33636480 l=3 u=2 round=1
+0,4,5,6,8,9,10,16 claim=L:stage1 mine=EXCL-A L F=19182 dim=3 S=2685435984 l=4 u=3 round=2
+0,4,5,6,9,10,11,16 claim=L:stage1 mine=EXCL-A L F=27598 dim=3 S=541589832 l=4 u=3 round=2
+0,4,5,6,9,10,13,15 claim=L:stage1 mine=EXCL-A L F=25055 dim=2 S=805307136 l=3 u=2 round=1
+0,4,5,6,9,10,13,16 claim=L:stage3 mine=EXCL-A L F=24431 dim=2 S=67641360 l=3 u=2 round=1
+0,4,5,6,9,10,14,16 claim=L:stage1 mine=EXCL-A L F=24431 dim=2 S=67641360 l=3 u=2 round=1
+0,4,5,6,9,10,15,20 claim=L:stage1 mine=EXCL-A L F=25055 dim=2 S=805307136 l=3 u=2 round=1
+0,4,5,6,9,10,16,17 claim=L:stage3 mine=EXCL-B S F=19370 dim=2 S=8388608 tot=1 need=2 round=2
+0,4,5,6,9,10,16,18 claim=undecided mine=PASS-ABC 
+0,4,5,6,9,10,16,19 claim=L:stage1 mine=EXCL-A L F=11278 dim=3 S=805309452 l=4 u=3 round=2
+0,4,5,7,10,12,13,22 claim=undecided mine=PASS-ABC 
+0,4,5,7,10,13,14,15 claim=L:stage1 mine=EXCL-A L F=31567 dim=2 S=26880 l=3 u=2 round=1
+0,4,5,7,10,13,15,22 claim=L:stage1 mine=EXCL-A L F=20285 dim=3 S=67641618 l=4 u=3 round=2
+0,4,5,7,10,13,16,22 claim=L:stage1 mine=EXCL-A L F=20285 dim=3 S=67641618 l=4 u=3 round=2
+0,4,5,7,10,13,19,22 claim=L:stage2 mine=EXCL-A L F=28581 dim=3 S=201601040 l=4 u=3 round=2
+0,4,5,7,11,13,17,22 claim=L:stage1 mine=EXCL-A L F=26634 dim=2 S=3224371200 l=3 u=2 round=1
+0,4,5,7,8,9,10,15 claim=L:stage1 mine=EXCL-A L F=28385 dim=2 S=4334592 l=3 u=2 round=1
+0,4,5,7,8,9,10,20 claim=L:stage1 mine=EXCL-A M Q=7336 tr=11 s=12 round=1
+0,4,5,7,9,10,12,19 claim=L:stage1 mine=EXCL-A L F=15391 dim=2 S=2151678210 l=3 u=2 round=1
+0,4,5,8,10,11,13,14 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=2215772160 l=3 u=2 round=1
+0,4,5,8,10,11,13,20 claim=L:stage1 mine=EXCL-A L F=19182 dim=3 S=2685435984 l=4 u=3 round=2
+0,4,5,8,10,12,13,14 claim=L:stage1 mine=EXCL-A L F=31856 dim=3 S=675353600 l=4 u=3 round=2
+0,4,5,8,10,13,15,18 claim=Z:stage2 mine=EXCL-A L F=29041 dim=3 S=671228034 l=4 u=3 round=2
+0,4,5,8,10,14,15,20 claim=L:stage1 mine=EXCL-A L F=8003 dim=3 S=1409296896 l=4 u=3 round=2
+0,4,5,8,10,14,19,20 claim=L:stage1 mine=EXCL-A L F=8003 dim=3 S=1409296896 l=4 u=3 round=2
+0,4,5,8,11,12,17,18 claim=L:stage1 mine=EXCL-A L F=6160 dim=2 S=61440 l=2 u=1 round=2
+0,4,5,8,12,14,17,18 claim=L:stage1 mine=EXCL-A L F=20242 dim=3 S=2147794956 l=4 u=3 round=2
+0,4,5,8,9,10,12,15 claim=L:stage1 mine=EXCL-A L F=25055 dim=2 S=537002528 l=3 u=2 round=1
+0,4,5,8,9,10,13,14 claim=L:stage1 mine=EXCL-A L F=7720 dim=3 S=42205512 l=4 u=3 round=2
+0,4,5,8,9,10,13,16 claim=L:stage1 mine=EXCL-A L F=31567 dim=2 S=6210 l=3 u=2 round=1
+0,4,5,9,10,11,12,15 claim=L:stage1 mine=EXCL-A L F=18693 dim=2 S=1109655552 l=3 u=2 round=1
+0,4,5,9,10,14,15,20 claim=L:stage1 mine=EXCL-A L F=8003 dim=2 S=335554560 l=2 u=1 round=2
+0,4,5,9,10,14,15,22 claim=L:stage1 mine=EXCL-A S F=24000 dim=1 S=2147745792 tot=3 need=4 round=1
+0,4,5,9,10,16,18,19 claim=L:stage1 mine=EXCL-A L F=7124 dim=3 S=1107837456 l=4 u=3 round=2
+0,4,5,9,11,13,14,15 claim=L:stage1 mine=EXCL-A S F=852 dim=1 S=67371008 tot=3 need=4 round=2
+0,4,5,9,11,13,14,16 claim=L:stage3 mine=EXCL-C L F=25987 dim=3 S=2164260966 l=3 u=2 round=2
+0,4,5,9,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=25252 dim=3 S=218103984 l=4 u=3 round=2
+0,4,5,9,11,14,16,21 claim=L:stage1 mine=EXCL-A S F=964 dim=2 S=3158016 tot=7 need=8 round=2
+0,4,5,9,15,16,17,18 claim=L:stage1 mine=EXCL-A S F=6980 dim=2 S=9437328 tot=12 need=13 round=2
+0,4,6,10,11,12,13,16 claim=L:stage1 mine=EXCL-A L F=2754 dim=3 S=169869984 l=4 u=2 round=2
+0,4,6,10,11,13,16,17 claim=L:stage1 mine=EXCL-A L F=26420 dim=2 S=168099840 l=3 u=2 round=1
+0,4,6,10,11,13,16,18 claim=L:stage1 mine=EXCL-A L F=7748 dim=3 S=1078494336 l=4 u=3 round=2
+0,4,6,7,10,13,14,20 claim=L:stage1 mine=EXCL-A L F=7748 dim=3 S=1078494336 l=4 u=3 round=2
+0,4,6,7,8,10,13,14 claim=L:stage3 mine=EXCL-A L F=17852 dim=2 S=18890760 l=3 u=2 round=1
+0,4,6,7,8,10,13,20 claim=L:stage1 mine=EXCL-A L F=6456 dim=3 S=202376064 l=4 u=3 round=2
+0,4,6,7,8,9,10,16 claim=L:stage1 mine=EXCL-A S F=29681 dim=2 S=6684672 tot=16 need=18 round=2
+0,4,6,7,9,10,11,16 claim=L:stage1 mine=EXCL-A L F=19182 dim=2 S=570425412 l=3 u=2 round=2
+0,4,6,7,9,10,12,13 claim=L:stage1 mine=EXCL-A L F=20285 dim=3 S=1082138898 l=4 u=3 round=2
+0,4,6,7,9,10,13,16 claim=Z:stage2 mine=EXCL-B S F=21737 dim=2 S=2 tot=1 need=2 round=2
+0,4,6,7,9,10,16,17 claim=L:stage1 mine=EXCL-A L F=27274 dim=3 S=2282754312 l=4 u=3 round=2
+0,4,6,7,9,10,16,18 claim=L:stage1 mine=EXCL-A L F=29681 dim=3 S=8460354 l=4 u=3 round=2
+0,4,6,7,9,10,16,19 claim=L:stage3 mine=EXCL-A L F=29681 dim=2 S=6210 l=2 u=1 round=2
+0,4,6,7,9,10,16,20 claim=L:stage1 mine=EXCL-A L F=19182 dim=2 S=570425412 l=3 u=2 round=2
+0,4,6,7,9,12,17,20 claim=L:stage1 mine=EXCL-A L F=24431 dim=2 S=1579008 l=2 u=0 round=1
+0,4,6,7,9,13,19,20 claim=undecided mine=PASS-ABC 
+0,4,6,8,10,12,13,14 claim=L:stage1 mine=EXCL-A L F=16644 dim=2 S=12480 l=3 u=2 round=1
+0,4,6,8,10,13,14,15 claim=Z:stage2 mine=EXCL-A S F=21353 dim=2 S=2638080 tot=7 need=8 round=2
+0,4,6,8,10,13,14,18 claim=L:stage1 mine=EXCL-A L F=12057 dim=3 S=536942658 l=4 u=3 round=2
+0,4,6,8,9,10,12,16 claim=undecided mine=PASS-ABC 
+0,4,6,8,9,10,15,16 claim=L:stage3 mine=EXCL-A S F=29681 dim=2 S=4325442 tot=12 need=13 round=2
+0,4,6,8,9,11,12,14 claim=undecided mine=EXCL-B L F=3078 dim=2 S=805306380 l=2 u=1 round=2
+0,4,6,8,9,11,14,15 claim=undecided mine=EXCL-A S F=32291 dim=2 S=285212706 tot=12 need=13 round=2
+0,4,6,8,9,11,14,17 claim=Z:stage3 mine=EXCL-B S F=31088 dim=2 S=1145044992 tot=15 need=16 round=2
+0,4,6,9,10,11,12,16 claim=L:stage1 mine=EXCL-A L F=8840 dim=3 S=555779200 l=4 u=3 round=2
+0,4,6,9,10,11,15,16 claim=L:stage1 mine=EXCL-A L F=19182 dim=2 S=570425412 l=3 u=2 round=2
+0,4,6,9,10,11,16,17 claim=L:stage1 mine=EXCL-A L F=8840 dim=3 S=555779200 l=4 u=3 round=2
+0,4,6,9,10,11,16,18 claim=L:stage1 mine=EXCL-A L F=19182 dim=3 S=570949956 l=4 u=3 round=2
+0,4,6,9,10,12,13,16 claim=L:stage1 mine=EXCL-A L F=24431 dim=2 S=67641360 l=3 u=2 round=1
+0,4,6,9,10,12,14,16 claim=L:stage1 mine=EXCL-A L F=24431 dim=2 S=67641360 l=3 u=2 round=1
+0,4,6,9,10,12,16,17 claim=L:stage1 mine=EXCL-A L F=8840 dim=3 S=555779200 l=4 u=3 round=2
+0,4,6,9,10,12,16,18 claim=undecided mine=PASS-ABC 
+0,4,6,9,10,12,16,19 claim=L:stage1 mine=EXCL-A L F=24648 dim=3 S=1342197920 l=4 u=3 round=2
+0,4,6,9,10,13,15,16 claim=L:stage1 mine=EXCL-A L F=21737 dim=3 S=60160 l=4 u=3 round=2
+0,4,6,9,10,13,16,17 claim=L:stage3 mine=EXCL-A L F=24431 dim=2 S=67641360 l=3 u=2 round=1
+0,4,6,9,10,13,16,18 claim=undecided mine=PASS-ABC 
+0,4,6,9,10,14,15,16 claim=L:stage1 mine=EXCL-A L F=25507 dim=3 S=19169316 l=4 u=3 round=2
+0,4,6,9,10,14,16,18 claim=L:stage1 mine=EXCL-A L F=18434 dim=2 S=1140850756 l=3 u=2 round=1
+0,4,6,9,10,15,16,18 claim=Z:stage2 mine=EXCL-B S F=8480 dim=2 S=1073741824 tot=1 need=2 round=2
+0,4,6,9,10,15,16,20 claim=L:stage1 mine=EXCL-A L F=19182 dim=2 S=570425412 l=3 u=2 round=2
+0,4,6,9,10,15,19,20 claim=Z:stage2 mine=EXCL-A L F=31243 dim=2 S=142608512 l=4 u=2 round=1
+0,4,6,9,11,12,14,17 claim=L:stage1 mine=EXCL-A L F=24068 dim=2 S=537134112 l=3 u=2 round=1
+0,4,6,9,11,13,14,15 claim=L:stage1 mine=EXCL-A S F=1808 dim=2 S=17827968 tot=12 need=13 round=2
+0,4,6,9,11,14,17,18 claim=L:stage1 mine=EXCL-A L F=7440 dim=3 S=2776694784 l=4 u=3 round=2
+0,4,6,9,12,14,15,17 claim=Z:stage2 mine=EXCL-A S F=8932 dim=2 S=1107296280 tot=11 need=13 round=2
+0,4,6,9,12,16,17,18 claim=L:stage1 mine=EXCL-A S F=6160 dim=1 S=8192 tot=1 need=2 round=2
+0,4,6,9,13,15,19,20 claim=L:stage1 mine=EXCL-A L F=20673 dim=3 S=2852147200 l=4 u=3 round=2
+0,4,6,9,13,18,19,20 claim=Z:stage2 mine=EXCL-A L F=16788 dim=2 S=268501536 l=3 u=2 round=1
+0,4,7,10,12,13,14,20 claim=Z:stage2 mine=EXCL-B S F=22904 dim=1 S=1048576 tot=1 need=2 round=2
+0,4,7,10,13,14,16,20 claim=Z:stage2 mine=EXCL-A L F=28385 dim=2 S=9282 l=1 u=0 round=2
+0,4,7,10,13,14,17,20 claim=M:stage2 mine=EXCL-A M Q=5636 tr=6 s=7 round=1
+0,4,7,10,13,14,18,20 claim=L:stage1 mine=EXCL-A L F=18641 dim=3 S=1611235330 l=4 u=3 round=2
+0,4,7,10,13,14,19,20 claim=L:stage1 mine=EXCL-A L F=18641 dim=3 S=1611235330 l=4 u=3 round=2
+0,4,7,10,13,15,18,20 claim=L:stage1 mine=EXCL-A L F=21525 dim=2 S=1075840002 l=3 u=2 round=1
+0,4,7,11,13,16,17,22 claim=L:stage1 mine=EXCL-A L F=31968 dim=2 S=15360 l=3 u=2 round=1
+0,4,7,8,10,11,13,14 claim=Z:stage2 mine=EXCL-A M Q=27472 tr=10 s=11 round=2
+0,4,7,8,10,11,13,20 claim=L:stage1 mine=EXCL-A L F=18686 dim=3 S=2166636560 l=4 u=3 round=2
+0,4,7,8,10,12,13,14 claim=Z:stage2 mine=EXCL-A L F=17852 dim=2 S=18890760 l=3 u=2 round=1
+0,4,7,8,10,12,13,20 claim=L:stage1 mine=EXCL-A L F=9120 dim=3 S=403718720 l=4 u=3 round=2
+0,4,7,8,10,13,14,15 claim=Z:stage2 mine=EXCL-A S F=21353 dim=2 S=2638080 tot=7 need=8 round=2
+0,4,7,8,10,13,14,16 claim=undecided mine=EXCL-B S F=3706 dim=2 S=263168 tot=3 need=4 round=2
+0,4,7,8,10,13,14,17 claim=L:stage1 mine=EXCL-A L F=20285 dim=3 S=118161408 l=4 u=3 round=2
+0,4,7,8,10,13,14,18 claim=undecided mine=EXCL-A L F=1732 dim=2 S=2415919248 l=1 u=0 round=2
+0,4,7,8,10,13,14,19 claim=Z:stage2 mine=EXCL-A L F=17852 dim=2 S=18890760 l=3 u=2 round=1
+0,4,7,8,10,13,14,20 claim=undecided mine=PASS-ABC 
+0,4,7,8,10,13,15,20 claim=M:stage2 mine=EXCL-A L F=28385 dim=2 S=33824832 l=3 u=2 round=1
+0,4,7,8,10,13,18,20 claim=L:stage1 mine=EXCL-A S F=9624 dim=2 S=603979776 tot=3 need=4 round=2
+0,4,7,8,12,14,17,18 claim=Z:stage2 mine=EXCL-A L F=21525 dim=2 S=75498000 l=3 u=2 round=1
+0,4,7,8,12,14,17,20 claim=L:stage1 mine=EXCL-A L F=28385 dim=2 S=84541440 l=3 u=2 round=1
+0,4,7,8,12,17,18,22 claim=Z:stage2 mine=EXCL-B S F=2689 dim=1 S=134217728 tot=1 need=2 round=2
+0,4,7,8,9,10,12,16 claim=L:stage1 mine=EXCL-A L F=25055 dim=2 S=816 l=5 u=3 round=1
+0,4,7,8,9,10,13,14 claim=L:stage3 mine=EXCL-B L F=2049 dim=2 S=537010178 l=3 u=2 round=1
+0,4,7,8,9,10,13,20 claim=L:stage1 mine=EXCL-A L F=18686 dim=3 S=2166636560 l=4 u=3 round=2
+0,4,7,8,9,13,14,20 claim=L:stage1 mine=EXCL-A L F=1280 dim=3 S=1720188928 l=4 u=3 round=2
+0,4,7,9,10,12,13,22 claim=L:stage1 mine=EXCL-A L F=19858 dim=2 S=2286157824 l=3 u=2 round=1
+0,4,7,9,10,12,14,17 claim=L:stage1 mine=EXCL-A L F=9480 dim=3 S=1761612288 l=4 u=3 round=2
+0,4,7,9,10,12,20,21 claim=L:stage1 mine=EXCL-A L F=6339 dim=3 S=268601412 l=3 u=2 round=2
+0,4,7,9,11,12,14,17 claim=L:stage3 mine=EXCL-A L F=24068 dim=2 S=537134112 l=3 u=2 round=1
+0,4,7,9,11,12,17,18 claim=L:stage1 mine=EXCL-A L F=24068 dim=2 S=268960800 l=3 u=2 round=1
+0,4,7,9,11,13,14,16 claim=L:stage1 mine=EXCL-A L F=21953 dim=3 S=153128962 l=4 u=3 round=2
+0,4,7,9,11,14,17,18 claim=Z:stage2 mine=EXCL-A L F=29069 dim=2 S=1342177290 l=3 u=2 round=1
+0,4,7,9,11,16,17,18 claim=Z:stage2 mine=EXCL-A S F=28301 dim=2 S=8519810 tot=12 need=13 round=2
+0,4,7,9,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=14640 dim=3 S=289415304 l=4 u=3 round=2
+0,4,8,10,11,12,13,14 claim=L:stage1 mine=EXCL-A M Q=822 tr=10 s=11 round=1
+0,4,8,10,11,12,13,20 claim=L:stage1 mine=EXCL-A S F=15904 dim=2 S=134480904 tot=17 need=18 round=2
+0,4,8,10,11,13,14,15 claim=L:stage3 mine=EXCL-A S F=15904 dim=2 S=1077952576 tot=11 need=13 round=2
+0,4,8,10,11,13,14,17 claim=L:stage1 mine=EXCL-A L F=8292 dim=3 S=22616 l=4 u=3 round=2
+0,4,8,10,11,13,14,18 claim=L:stage1 mine=EXCL-A L F=8188 dim=3 S=3221303304 l=4 u=3 round=2
+0,4,8,10,11,13,14,20 claim=undecided mine=PASS-ABC 
+0,4,8,10,11,13,15,20 claim=Z:stage2 mine=EXCL-B S F=14325 dim=1 S=8192 tot=1 need=2 round=2
+0,4,8,10,11,13,18,20 claim=L:stage2 mine=EXCL-A L F=2049 dim=2 S=570434048 l=3 u=2 round=2
+0,4,8,10,11,14,17,20 claim=L:stage3 mine=EXCL-A S F=25679 dim=2 S=4194336 tot=3 need=4 round=2
+0,4,8,10,12,13,14,16 claim=L:stage1 mine=EXCL-A L F=15520 dim=3 S=3415040 l=4 u=3 round=2
+0,4,8,10,13,14,16,18 claim=Z:stage2 mine=EXCL-A L F=24587 dim=2 S=2215772160 l=3 u=2 round=1
+0,4,8,11,12,13,14,18 claim=L:stage1 mine=EXCL-A L F=31567 dim=2 S=270532866 l=3 u=2 round=1
+0,4,8,11,12,13,18,20 claim=Z:stage2 mine=EXCL-A L F=27977 dim=2 S=1050624 l=2 u=1 round=2
+0,4,8,11,12,14,17,18 claim=M:stage2 mine=EXCL-A M Q=32268 tr=11 s=12 round=1
+0,4,8,11,13,14,16,17 claim=L:stage1 mine=EXCL-A L F=24431 dim=2 S=33090 l=3 u=2 round=1
+0,4,8,11,13,14,16,18 claim=L:stage1 mine=EXCL-A L F=852 dim=3 S=2155909264 l=4 u=3 round=2
+0,4,8,11,13,14,18,20 claim=L:stage1 mine=EXCL-A L F=21201 dim=3 S=270827586 l=4 u=3 round=2
+0,4,8,11,14,17,18,20 claim=M:stage2 mine=EXCL-A L F=21525 dim=2 S=67190800 l=3 u=2 round=1
+0,4,8,9,10,12,13,14 claim=L:stage1 mine=EXCL-A L F=8292 dim=3 S=538988624 l=4 u=3 round=2
+0,4,8,9,10,13,14,15 claim=L:stage1 mine=EXCL-A S F=24384 dim=2 S=67387456 tot=7 need=8 round=2
+0,4,8,9,10,13,14,17 claim=L:stage1 mine=EXCL-A L F=31856 dim=3 S=675353600 l=4 u=3 round=2
+0,4,8,9,10,13,15,20 claim=undecided mine=PASS-ABC 
+0,4,8,9,11,14,16,17 claim=L:stage1 mine=EXCL-A M Q=964 tr=11 s=12 round=1
+0,4,8,9,12,14,17,18 claim=L:stage1 mine=EXCL-A L F=28617 dim=2 S=805306560 l=3 u=2 round=1
+0,4,8,9,14,16,17,19 claim=L:stage1 mine=EXCL-A L F=24431 dim=2 S=9240 l=1 u=0 round=1
+0,4,9,10,12,15,17,20 claim=Z:stage2 mine=EXCL-A S F=9776 dim=2 S=2151677952 tot=3 need=4 round=2
+0,4,9,10,13,14,18,20 claim=Z:stage2 mine=EXCL-B L F=6160 dim=2 S=3221422080 l=2 u=1 round=2
+0,4,9,10,13,15,18,20 claim=L:stage1 mine=EXCL-A S F=3394 dim=2 S=524288 tot=4 need=7 round=2
+0,4,9,11,12,13,14,16 claim=L:stage1 mine=EXCL-A L F=21953 dim=3 S=153128962 l=4 u=3 round=2
+0,4,9,11,13,14,15,16 claim=L:stage1 mine=EXCL-A L F=21953 dim=3 S=153128962 l=4 u=3 round=2
+0,4,9,11,13,14,15,20 claim=L:stage1 mine=EXCL-A M Q=18902 tr=11 s=12 round=1
+0,4,9,11,13,14,16,17 claim=undecided mine=EXCL-B S F=640 dim=2 S=1073758208 tot=3 need=4 round=2
+0,4,9,11,13,14,16,18 claim=Z:stage2 mine=EXCL-B S F=26726 dim=1 S=2147483648 tot=1 need=2 round=2
+0,4,9,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,4,9,11,13,14,17,18 claim=L:stage1 mine=EXCL-A M Q=18307 tr=11 s=12 round=1
+0,4,9,11,13,14,17,20 claim=L:stage1 mine=EXCL-A L F=13089 dim=3 S=11010210 l=4 u=3 round=2
+0,4,9,11,13,14,18,19 claim=Z:stage2 mine=EXCL-A L F=6160 dim=2 S=49152 l=1 u=0 round=2
+0,4,9,11,14,15,16,19 claim=L:stage1 mine=EXCL-A L F=28469 dim=2 S=5263360 l=3 u=2 round=1
+0,4,9,11,14,16,17,19 claim=Z:stage2 mine=EXCL-B L F=24431 dim=2 S=68158480 l=3 u=2 round=1
+0,4,9,12,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,4,9,12,14,16,17,19 claim=Z:stage2 mine=EXCL-A S F=852 dim=3 S=3233812496 tot=14 need=15 round=2
+0,4,9,13,14,16,17,19 claim=L:stage1 mine=EXCL-A L F=14640 dim=3 S=289415304 l=4 u=3 round=2
+0,4,9,13,14,16,18,19 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=2400 l=3 u=2 round=1
+0,4,9,13,15,16,18,19 claim=L:stage1 mine=EXCL-A M Q=3394 tr=11 s=12 round=1
+0,5,10,11,12,15,16,21 claim=L:stage1 mine=EXCL-A M Q=23939 tr=11 s=12 round=1
+0,5,10,11,14,16,19,21 claim=L:stage1 mine=EXCL-A L F=15971 dim=2 S=75501570 l=3 u=2 round=1
+0,5,10,12,16,18,19,21 claim=L:stage1 mine=EXCL-A S F=9292 dim=2 S=2164277760 tot=7 need=8 round=2
+0,5,10,14,16,18,19,21 claim=L:stage1 mine=EXCL-A L F=31667 dim=2 S=536952840 l=3 u=2 round=1
+0,5,6,10,14,16,19,20 claim=L:stage3 mine=EXCL-B L F=28469 dim=2 S=1073840130 l=3 u=2 round=1
+0,5,6,11,15,17,19,22 claim=L:stage1 mine=EXCL-A L F=11122 dim=3 S=16852004 l=4 u=2 round=2
+0,5,6,7,10,11,16,17 claim=L:stage1 mine=EXCL-A L F=2754 dim=2 S=138413184 l=2 u=1 round=2
+0,5,6,7,10,14,16,19 claim=L:stage1 mine=EXCL-A L F=17556 dim=2 S=268567680 l=3 u=2 round=1
+0,5,6,8,10,11,13,16 claim=L:stage1 mine=EXCL-A L F=7124 dim=2 S=34095120 l=2 u=1 round=2
+0,5,6,8,10,11,19,20 claim=L:stage1 mine=EXCL-A L F=19182 dim=3 S=2685435984 l=4 u=3 round=2
+0,5,6,8,11,13,14,16 claim=L:stage1 mine=EXCL-A S F=6456 dim=2 S=1048704 tot=3 need=4 round=2
+0,5,6,8,11,13,16,18 claim=L:stage1 mine=EXCL-A M Q=23339 tr=11 s=12 round=1
+0,5,6,8,11,16,19,20 claim=Z:stage2 mine=EXCL-A L F=7124 dim=2 S=302008320 l=2 u=1 round=2
+0,5,6,8,11,17,19,20 claim=L:stage1 mine=EXCL-A L F=15640 dim=3 S=2852143360 l=4 u=3 round=2
+0,5,6,8,9,11,19,20 claim=L:stage1 mine=EXCL-A S F=11278 dim=2 S=50331696 tot=12 need=13 round=2
+0,5,6,9,11,13,16,19 claim=Z:stage2 mine=EXCL-A L F=296 dim=2 S=2228360 l=3 u=2 round=2
+0,5,6,9,11,14,16,19 claim=undecided mine=PASS-ABC 
+0,5,6,9,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=27682 dim=3 S=1231552512 l=4 u=3 round=2
+0,5,6,9,13,15,18,19 claim=L:stage1 mine=EXCL-A L F=14427 dim=3 S=33638532 l=4 u=3 round=2
+0,5,6,9,13,16,19,22 claim=L:stage1 mine=EXCL-A M Q=23572 tr=10 s=12 round=1
+0,5,7,10,14,16,20,21 claim=undecided mine=PASS-ABC 
+0,5,7,10,14,17,20,21 claim=L:stage1 mine=EXCL-A S F=8480 dim=2 S=2056 tot=3 need=4 round=2
+0,5,7,10,14,18,20,21 claim=L:stage1 mine=EXCL-A L F=18641 dim=3 S=1278279680 l=4 u=3 round=2
+0,5,7,10,14,19,20,21 claim=L:stage1 mine=EXCL-A L F=18641 dim=3 S=1278279680 l=4 u=3 round=2
+0,5,7,11,13,14,16,17 claim=L:stage1 mine=EXCL-A L F=7124 dim=3 S=1342704144 l=4 u=3 round=2
+0,5,7,11,14,17,19,22 claim=L:stage1 mine=EXCL-A L F=27442 dim=3 S=6881412 l=4 u=3 round=2
+0,5,7,11,16,18,19,21 claim=L:stage1 mine=EXCL-A L F=6339 dim=3 S=1074302982 l=4 u=3 round=2
+0,5,7,8,11,13,14,16 claim=L:stage1 mine=EXCL-A M Q=20285 tr=10 s=12 round=1
+0,5,7,8,9,10,12,16 claim=L:stage1 mine=EXCL-A L F=25055 dim=2 S=536936736 l=3 u=2 round=1
+0,5,7,8,9,11,14,16 claim=L:stage1 mine=EXCL-A L F=25055 dim=2 S=805306416 l=1 u=0 round=1
+0,5,7,9,10,12,15,17 claim=L:stage3 mine=EXCL-A S F=7787 dim=2 S=16770 tot=7 need=8 round=2
+0,5,7,9,10,12,15,18 claim=Z:stage2 mine=EXCL-A L F=7787 dim=2 S=16908546 l=2 u=1 round=2
+0,5,7,9,11,13,14,16 claim=L:stage1 mine=EXCL-A L F=19714 dim=3 S=285212876 l=4 u=3 round=2
+0,5,7,9,11,14,16,19 claim=Z:stage2 mine=EXCL-A L F=15844 dim=2 S=2147747904 l=3 u=2 round=1
+0,5,7,9,11,14,16,21 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=34635780 l=3 u=2 round=1
+0,5,7,9,13,15,18,19 claim=L:stage1 mine=EXCL-A L F=15971 dim=2 S=2236928 l=3 u=2 round=1
+0,5,8,10,12,13,15,18 claim=L:stage1 mine=EXCL-A L F=28873 dim=2 S=5244160 l=3 u=2 round=1
+0,5,8,10,12,16,18,19 claim=L:stage1 mine=EXCL-A M Q=1347 tr=11 s=12 round=1
+0,5,8,10,13,14,15,20 claim=Z:stage2 mine=EXCL-A L F=27225 dim=2 S=5250 l=3 u=2 round=2
+0,5,8,10,13,14,18,20 claim=Z:stage2 mine=EXCL-A L F=31567 dim=2 S=24720 l=3 u=2 round=1
+0,5,8,11,12,16,18,21 claim=L:stage1 mine=EXCL-A M Q=1192 tr=4 s=6 round=1
+0,5,8,11,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=16448 dim=3 S=1342218400 l=4 u=3 round=2
+0,5,8,12,13,15,18,22 claim=L:stage1 mine=EXCL-A L F=28873 dim=2 S=5244160 l=4 u=2 round=1
+0,5,8,9,10,13,15,16 claim=L:stage1 mine=EXCL-A S F=8668 dim=2 S=1280 tot=8 need=9 round=2
+0,5,8,9,11,13,14,16 claim=L:stage1 mine=EXCL-A S F=19074 dim=2 S=2155873284 tot=7 need=8 round=2
+0,5,8,9,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=18307 dim=3 S=67944576 l=4 u=3 round=2
+0,5,8,9,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=27682 dim=3 S=1231552512 l=4 u=3 round=2
+0,5,8,9,13,15,18,19 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=2415919200 l=3 u=2 round=1
+0,5,8,9,14,16,18,19 claim=Z:stage2 mine=EXCL-B S F=852 dim=1 S=8388608 tot=1 need=2 round=2
+0,5,8,9,14,16,19,20 claim=Z:stage2 mine=EXCL-A L F=28469 dim=2 S=2196480 l=3 u=2 round=1
+0,5,9,10,11,13,14,16 claim=L:stage1 mine=EXCL-A L F=30645 dim=2 S=336855040 l=3 u=2 round=1
+0,5,9,10,11,13,16,19 claim=Z:stage2 mine=EXCL-B S F=6980 dim=1 S=2097152 tot=1 need=2 round=2
+0,5,9,10,11,14,15,19 claim=L:stage1 mine=EXCL-A M Q=9375 tr=11 s=12 round=1
+0,5,9,10,12,15,16,20 claim=Z:stage2 mine=EXCL-A L F=28385 dim=2 S=53477376 l=3 u=2 round=1
+0,5,9,10,13,14,15,16 claim=L:stage1 mine=EXCL-A M Q=10075 tr=11 s=12 round=1
+0,5,9,10,13,15,16,18 claim=L:stage1 mine=EXCL-A L F=9375 dim=3 S=1686 l=4 u=2 round=2
+0,5,9,10,14,16,19,21 claim=L:stage1 mine=EXCL-A L F=10594 dim=2 S=1077937156 l=3 u=2 round=1
+0,5,9,10,15,16,18,19 claim=L:stage1 mine=EXCL-A L F=7124 dim=3 S=1107837456 l=4 u=3 round=2
+0,5,9,11,12,13,14,16 claim=Z:stage2 mine=EXCL-A S F=21953 dim=3 S=3229617160 tot=13 need=14 round=2
+0,5,9,11,12,13,14,19 claim=L:stage1 mine=EXCL-A L F=23339 dim=3 S=2152210690 l=4 u=3 round=2
+0,5,9,11,12,14,15,17 claim=L:stage1 mine=EXCL-A L F=5458 dim=3 S=19415080 l=4 u=3 round=2
+0,5,9,11,12,16,18,19 claim=L:stage1 mine=EXCL-A L F=21886 dim=2 S=1090535680 l=3 u=2 round=1
+0,5,9,11,13,14,15,17 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=36870 l=3 u=2 round=1
+0,5,9,11,13,14,16,17 claim=Z:stage2 mine=EXCL-A L F=24587 dim=2 S=36870 l=3 u=2 round=1
+0,5,9,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,5,9,11,13,14,16,22 claim=L:stage3 mine=EXCL-A L F=24587 dim=2 S=36870 l=3 u=2 round=1
+0,5,9,11,13,14,17,19 claim=L:stage1 mine=EXCL-A L F=23980 dim=3 S=2148139344 l=4 u=3 round=2
+0,5,9,11,13,14,19,22 claim=L:stage3 mine=EXCL-B L F=20498 dim=2 S=3145740 l=3 u=2 round=1
+0,5,9,11,14,15,20,21 claim=Z:stage2 mine=EXCL-B S F=23339 dim=2 S=32 tot=1 need=2 round=2
+0,5,9,11,14,16,17,21 claim=L:stage1 mine=EXCL-A M Q=16280 tr=11 s=12 round=1
+0,5,9,12,13,14,16,19 claim=L:stage3 mine=EXCL-A L F=15844 dim=2 S=3264 l=3 u=2 round=2
+0,5,9,12,13,15,18,19 claim=L:stage3 mine=EXCL-B L F=24587 dim=2 S=2415919200 l=3 u=2 round=1
+0,5,9,12,14,15,17,20 claim=L:stage1 mine=EXCL-A L F=21886 dim=2 S=671121920 l=3 u=2 round=1
+0,5,9,13,15,17,18,19 claim=L:stage1 mine=EXCL-A L F=14427 dim=3 S=33638532 l=4 u=3 round=2
+0,6,11,12,13,14,16,17 claim=L:stage1 mine=EXCL-A L F=11234 dim=3 S=270698500 l=4 u=3 round=2
+0,6,7,10,11,13,16,17 claim=Z:stage2 mine=EXCL-A L F=363 dim=2 S=142614530 l=3 u=2 round=2
+0,6,7,10,11,13,16,18 claim=L:stage1 mine=EXCL-A M Q=11169 tr=15 s=16 round=1
+0,6,7,10,11,13,16,19 claim=L:stage1 mine=EXCL-A M Q=19137 tr=11 s=12 round=1
+0,6,7,11,13,14,16,17 claim=L:stage1 mine=EXCL-A S F=2754 dim=2 S=3221225484 tot=11 need=13 round=2
+0,6,7,8,10,11,13,16 claim=L:stage1 mine=EXCL-A L F=19714 dim=3 S=11141256 l=4 u=3 round=2
+0,6,7,8,10,13,14,20 claim=Z:stage2 mine=EXCL-A M Q=5954 tr=11 s=12 round=1
+0,6,7,8,10,13,20,21 claim=L:stage1 mine=EXCL-A L F=32119 dim=2 S=4456584 l=3 u=2 round=1
+0,6,7,8,11,12,17,20 claim=L:stage1 mine=EXCL-A S F=8932 dim=2 S=42467328 tot=5 need=6 round=2
+0,6,7,8,11,13,14,16 claim=L:stage1 mine=EXCL-A L F=852 dim=3 S=2223276160 l=4 u=3 round=2
+0,6,7,8,11,13,16,18 claim=L:stage1 mine=EXCL-A M Q=23980 tr=11 s=12 round=1
+0,6,7,8,9,11,12,18 claim=L:stage1 mine=EXCL-A L F=16531 dim=2 S=75499584 l=3 u=2 round=1
+0,6,7,8,9,12,18,20 claim=L:stage1 mine=EXCL-A L F=1987 dim=3 S=2326265856 l=4 u=3 round=2
+0,6,7,9,11,13,14,16 claim=L:stage1 mine=EXCL-A L F=19182 dim=3 S=538476864 l=4 u=3 round=2
+0,6,7,9,12,16,19,22 claim=Z:stage2 mine=EXCL-B S F=21462 dim=2 S=536870928 tot=3 need=4 round=2
+0,6,8,10,11,13,16,17 claim=Z:stage2 mine=EXCL-A S F=7124 dim=2 S=16875648 tot=7 need=8 round=2
+0,6,8,10,11,13,16,18 claim=L:stage3 mine=EXCL-B L F=31772 dim=2 S=134291520 l=3 u=2 round=1
+0,6,8,10,12,13,15,18 claim=L:stage1 mine=EXCL-A L F=27225 dim=3 S=151588992 l=4 u=3 round=2
+0,6,8,11,13,15,18,20 claim=L:stage1 mine=EXCL-A L F=19074 dim=3 S=2160067596 l=4 u=3 round=2
+0,6,8,9,10,12,15,16 claim=L:stage1 mine=EXCL-A L F=18693 dim=2 S=2166620160 l=3 u=2 round=1
+0,6,8,9,11,12,13,14 claim=L:stage1 mine=EXCL-A L F=15752 dim=2 S=26880 l=3 u=2 round=1
+0,6,8,9,11,12,19,20 claim=L:stage1 mine=EXCL-A L F=23339 dim=3 S=805838860 l=4 u=3 round=2
+0,6,8,9,11,15,16,20 claim=L:stage1 mine=EXCL-A S F=12658 dim=2 S=2415919200 tot=12 need=13 round=2
+0,6,8,9,11,15,18,20 claim=L:stage1 mine=EXCL-A M Q=12658 tr=11 s=12 round=1
+0,6,8,9,11,15,19,20 claim=L:stage1 mine=EXCL-A L F=11278 dim=2 S=50331696 l=3 u=2 round=2
+0,6,8,9,11,17,19,20 claim=L:stage1 mine=EXCL-A L F=11278 dim=3 S=805310208 l=4 u=3 round=2
+0,6,8,9,11,18,19,20 claim=L:stage1 mine=EXCL-A L F=28322 dim=3 S=9986560 l=4 u=3 round=2
+0,6,9,10,11,12,15,16 claim=Z:stage2 mine=EXCL-A L F=26140 dim=2 S=1093140480 l=3 u=2 round=1
+0,6,9,10,12,14,15,16 claim=Z:stage2 mine=EXCL-A L F=18693 dim=2 S=2166620160 l=3 u=2 round=1
+0,6,9,11,12,13,14,16 claim=Z:stage2 mine=EXCL-B S F=21953 dim=1 S=2147483648 tot=1 need=2 round=2
+0,6,9,11,12,13,16,19 claim=L:stage3 mine=EXCL-B L F=8463 dim=2 S=4718724 l=3 u=2 round=2
+0,6,9,11,12,14,16,19 claim=L:stage1 mine=EXCL-A L F=23300 dim=3 S=17088560 l=4 u=3 round=2
+0,6,9,11,13,14,15,16 claim=L:stage1 mine=EXCL-A L F=23980 dim=3 S=2281836864 l=4 u=3 round=2
+0,6,9,11,13,14,16,17 claim=L:stage3 mine=EXCL-A L F=31968 dim=2 S=1006632960 l=3 u=2 round=1
+0,6,9,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,6,9,11,14,15,16,19 claim=Z:stage2 mine=EXCL-A S F=12658 dim=2 S=2415919200 tot=7 need=8 round=2
+0,6,9,11,14,16,17,19 claim=L:stage1 mine=EXCL-A S F=21737 dim=2 S=335560960 tot=7 need=8 round=2
+0,6,9,11,14,16,18,19 claim=Z:stage2 mine=EXCL-B S F=20397 dim=1 S=32768 tot=1 need=2 round=2
+0,6,9,13,14,16,18,19 claim=L:stage1 mine=EXCL-A L F=5289 dim=3 S=1124090624 l=4 u=3 round=2
+0,7,10,11,15,17,20,21 claim=L:stage1 mine=EXCL-A L F=11278 dim=3 S=805310208 l=4 u=3 round=2
+0,7,10,11,17,19,20,21 claim=L:stage1 mine=EXCL-A L F=23367 dim=2 S=2415919110 l=1 u=0 round=1
+0,7,11,12,13,16,18,21 claim=Z:stage2 mine=EXCL-A S F=6596 dim=2 S=512 tot=4 need=7 round=2
+0,7,11,13,16,17,21,22 claim=L:stage1 mine=EXCL-A L F=31968 dim=2 S=1006632960 l=3 u=2 round=1
+0,7,11,14,17,19,20,21 claim=L:stage1 mine=EXCL-A L F=31772 dim=2 S=2167296 l=3 u=2 round=1
+0,7,11,14,17,19,20,22 claim=Z:stage2 mine=EXCL-B L F=24587 dim=2 S=430080 l=3 u=2 round=1
+0,7,11,15,17,18,20,21 claim=L:stage1 mine=EXCL-A S F=11441 dim=2 S=69222402 tot=7 need=8 round=2
+0,7,11,17,18,19,20,21 claim=L:stage1 mine=EXCL-A L F=23367 dim=2 S=276824580 l=3 u=2 round=1
+0,7,8,10,11,13,16,17 claim=Z:stage2 mine=EXCL-A S F=22317 dim=2 S=2155876368 tot=7 need=8 round=2
+0,7,8,10,11,13,17,20 claim=L:stage1 mine=EXCL-A S F=2754 dim=2 S=2181038120 tot=17 need=18 round=2
+0,7,8,10,11,17,20,21 claim=L:stage1 mine=EXCL-A L F=23228 dim=2 S=2415919248 l=3 u=2 round=1
+0,7,8,10,12,13,14,20 claim=L:stage2 mine=EXCL-A L F=11122 dim=3 S=1145315360 l=4 u=3 round=2
+0,7,8,10,12,13,15,18 claim=L:stage3 mine=EXCL-A L F=2310 dim=2 S=1582080 l=3 u=2 round=2
+0,7,8,10,12,18,20,21 claim=L:stage1 mine=EXCL-A L F=8668 dim=3 S=2689925120 l=4 u=3 round=2
+0,7,8,10,13,14,16,20 claim=L:stage1 mine=EXCL-A L F=32119 dim=2 S=335577600 l=3 u=2 round=1
+0,7,8,10,13,14,17,20 claim=Z:stage2 mine=EXCL-A L F=32119 dim=2 S=335577600 l=3 u=2 round=1
+0,7,8,10,13,14,18,20 claim=L:stage1 mine=EXCL-A L F=32119 dim=2 S=335577600 l=3 u=2 round=1
+0,7,8,10,13,14,19,20 claim=Z:stage2 mine=EXCL-A L F=23228 dim=2 S=656640 l=3 u=2 round=1
+0,7,8,10,13,15,17,20 claim=L:stage1 mine=EXCL-A S F=7720 dim=2 S=83888640 tot=17 need=18 round=2
+0,7,8,11,12,14,17,20 claim=L:stage1 mine=EXCL-A L F=1920 dim=3 S=201466048 l=4 u=3 round=2
+0,7,8,11,13,14,16,19 claim=undecided mine=EXCL-B L F=296 dim=2 S=136315520 l=2 u=1 round=2
+0,7,8,11,13,17,19,22 claim=undecided mine=PASS-ABC 
+0,7,8,11,13,17,20,22 claim=L:stage1 mine=EXCL-A L F=23367 dim=2 S=276825090 l=3 u=2 round=1
+0,7,8,11,14,17,20,22 claim=L:stage1 mine=EXCL-A L F=28617 dim=2 S=272630280 l=3 u=2 round=1
+0,7,8,11,18,19,20,21 claim=L:stage1 mine=EXCL-A M Q=15904 tr=11 s=12 round=1
+0,7,8,12,18,19,20,21 claim=L:stage1 mine=EXCL-A L F=12838 dim=3 S=1677721700 l=4 u=3 round=2
+0,7,8,9,10,12,16,18 claim=L:stage1 mine=EXCL-A L F=24792 dim=2 S=10506240 l=3 u=2 round=1
+0,7,8,9,10,12,18,20 claim=L:stage1 mine=EXCL-A L F=8668 dim=3 S=2689925120 l=4 u=3 round=2
+0,7,8,9,10,13,14,20 claim=Z:stage2 mine=EXCL-A M Q=5954 tr=11 s=12 round=1
+0,7,8,9,11,12,16,18 claim=L:stage1 mine=EXCL-A L F=29069 dim=2 S=167772170 l=4 u=3 round=1
+0,7,8,9,11,13,14,16 claim=L:stage1 mine=EXCL-A L F=32139 dim=2 S=541065732 l=3 u=2 round=1
+0,7,8,9,11,13,14,19 claim=L:stage1 mine=EXCL-A L F=4970 dim=3 S=9184000 l=4 u=2 round=2
+0,7,8,9,11,14,16,18 claim=L:stage1 mine=EXCL-A M Q=9624 tr=11 s=12 round=1
+0,7,8,9,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=28469 dim=2 S=5245440 l=3 u=2 round=1
+0,7,8,9,11,14,20,21 claim=L:stage1 mine=EXCL-A L F=8188 dim=3 S=1082204184 l=4 u=3 round=2
+0,7,8,9,12,14,16,19 claim=L:stage1 mine=EXCL-A L F=23043 dim=2 S=675840 l=3 u=2 round=1
+0,7,8,9,12,16,18,19 claim=L:stage1 mine=EXCL-A L F=18693 dim=3 S=2166626370 l=4 u=3 round=1
+0,7,8,9,14,16,19,20 claim=L:stage1 mine=EXCL-A L F=28469 dim=2 S=5245440 l=3 u=2 round=1
+0,7,9,10,11,13,14,16 claim=Z:stage2 mine=EXCL-A L F=31968 dim=2 S=15360 l=3 u=2 round=1
+0,7,9,10,11,13,16,19 claim=L:stage1 mine=EXCL-A L F=31567 dim=2 S=2400 l=3 u=2 round=1
+0,7,9,10,11,14,16,19 claim=L:stage1 mine=EXCL-A L F=28469 dim=2 S=5245440 l=3 u=2 round=1
+0,7,9,10,13,14,16,19 claim=L:stage1 mine=EXCL-A L F=10981 dim=3 S=612374530 l=4 u=3 round=2
+0,7,9,11,12,14,17,18 claim=undecided mine=EXCL-B S F=7364 dim=2 S=540672 tot=3 need=4 round=2
+0,7,9,11,12,14,17,20 claim=L:stage1 mine=EXCL-A L F=26336 dim=3 S=3808 l=4 u=3 round=2
+0,7,9,11,13,14,15,16 claim=L:stage1 mine=EXCL-A L F=9624 dim=3 S=405045504 l=4 u=3 round=2
+0,7,9,11,13,14,16,18 claim=L:stage1 mine=EXCL-A L F=19714 dim=3 S=285212876 l=4 u=3 round=2
+0,7,9,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,7,9,11,13,14,16,20 claim=L:stage1 mine=EXCL-A S F=1092 dim=1 S=36864 tot=3 need=4 round=2
+0,7,9,11,14,16,20,21 claim=Z:stage2 mine=EXCL-B S F=12658 dim=1 S=268435456 tot=1 need=2 round=2
+0,7,9,12,13,16,18,22 claim=L:stage1 mine=EXCL-A L F=31644 dim=3 S=35160352 l=4 u=3 round=2
+0,7,9,12,14,17,18,20 claim=L:stage1 mine=EXCL-A M Q=24928 tr=11 s=12 round=1
+0,7,9,12,14,17,18,22 claim=L:stage1 mine=EXCL-A M Q=26456 tr=11 s=12 round=1
+0,7,9,13,14,16,18,19 claim=Z:stage2 mine=EXCL-B S F=1808 dim=2 S=64 tot=1 need=2 round=2
+0,7,9,13,14,16,19,20 claim=L:stage1 mine=EXCL-A L F=11362 dim=3 S=339748992 l=4 u=3 round=2
+0,8,10,11,12,13,14,20 claim=undecided mine=PASS-ABC 
+0,8,10,12,13,15,16,18 claim=L:stage3 mine=EXCL-A L F=31772 dim=2 S=208896 l=3 u=2 round=1
+0,8,11,13,14,16,18,19 claim=L:stage1 mine=EXCL-A L F=24431 dim=2 S=2400 l=3 u=2 round=1
+0,8,9,10,12,13,15,18 claim=L:stage1 mine=EXCL-A L F=20869 dim=3 S=15728720 l=4 u=3 round=2
+0,8,9,10,13,14,18,20 claim=L:stage1 mine=EXCL-A L F=31567 dim=2 S=24720 l=3 u=2 round=1
+0,8,9,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,8,9,11,13,14,18,19 claim=L:stage1 mine=EXCL-A L F=4970 dim=3 S=9184000 l=4 u=2 round=2
+0,8,9,11,13,16,18,19 claim=L:stage1 mine=EXCL-A L F=31567 dim=2 S=2400 l=3 u=2 round=1
+0,8,9,11,14,15,16,19 claim=Z:stage2 mine=EXCL-A L F=29453 dim=3 S=541102224 l=4 u=3 round=2
+0,8,9,11,14,16,18,19 claim=Z:stage2 mine=EXCL-B S F=17088 dim=1 S=268435456 tot=1 need=2 round=2
+0,8,9,12,13,14,16,19 claim=Z:stage2 mine=EXCL-B S F=1532 dim=1 S=262144 tot=1 need=2 round=2
+0,8,9,12,13,15,18,19 claim=L:stage1 mine=EXCL-A L F=12686 dim=2 S=4331520 l=3 u=2 round=1
+0,8,9,12,14,17,18,20 claim=Z:stage2 mine=EXCL-A M Q=4933 tr=11 s=12 round=1
+0,8,9,13,14,15,16,19 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=2182348800 l=3 u=2 round=1
+0,8,9,14,16,17,19,20 claim=L:stage1 mine=EXCL-A L F=28469 dim=2 S=5245440 l=3 u=2 round=1
+0,9,10,11,12,13,16,19 claim=L:stage1 mine=EXCL-A L F=7552 dim=3 S=2416313856 l=4 u=3 round=2
+0,9,10,11,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,9,10,11,14,15,16,19 claim=Z:stage2 mine=EXCL-B S F=17088 dim=1 S=268435456 tot=1 need=2 round=2
+0,9,10,11,14,15,17,20 claim=L:stage1 mine=EXCL-A L F=26420 dim=2 S=67637280 l=3 u=2 round=1
+0,9,10,11,14,16,18,19 claim=Z:stage2 mine=EXCL-A L F=17623 dim=3 S=272711700 l=4 u=3 round=2
+0,9,10,12,14,17,19,20 claim=L:stage1 mine=EXCL-A L F=4270 dim=3 S=285479172 l=4 u=2 round=2
+0,9,10,13,14,16,17,19 claim=L:stage1 mine=EXCL-A M Q=28301 tr=11 s=12 round=1
+0,9,10,13,14,16,18,19 claim=Z:stage2 mine=EXCL-A L F=2049 dim=2 S=8738 l=3 u=2 round=2
+0,9,11,12,13,14,16,19 claim=undecided mine=PASS-ABC 
+0,9,11,12,13,14,16,20 claim=Z:stage2 mine=EXCL-B S F=21953 dim=1 S=2147483648 tot=1 need=2 round=2
+0,9,11,12,13,14,18,19 claim=L:stage1 mine=EXCL-A L F=31667 dim=2 S=537137160 l=3 u=2 round=1
+0,9,11,12,13,14,19,20 claim=L:stage1 mine=EXCL-A L F=23339 dim=3 S=2152210690 l=4 u=3 round=2
+0,9,11,12,14,15,16,19 claim=Z:stage2 mine=EXCL-B S F=17623 dim=2 S=32 tot=1 need=2 round=2
+0,9,11,12,14,16,19,20 claim=Z:stage2 mine=EXCL-B S F=28790 dim=1 S=16384 tot=1 need=2 round=2
+0,9,11,13,14,15,16,19 claim=undecided mine=PASS-ABC 
+0,9,11,13,14,15,16,20 claim=L:stage1 mine=EXCL-A L F=23980 dim=3 S=2281836864 l=4 u=3 round=2
+0,9,11,13,14,16,17,19 claim=undecided mine=PASS-ABC 
+0,9,11,13,14,16,17,20 claim=L:stage1 mine=EXCL-A L F=31968 dim=2 S=1006632960 l=3 u=2 round=1
+0,9,11,13,14,16,18,19 claim=undecided mine=PASS-ABC 
+0,9,11,13,14,16,19,20 claim=undecided mine=PASS-ABC 
+0,9,11,13,14,17,18,19 claim=L:stage1 mine=EXCL-A L F=15475 dim=2 S=20490 l=1 u=0 round=1
+0,9,11,13,14,17,19,20 claim=L:stage1 mine=EXCL-A L F=11441 dim=3 S=106955808 l=4 u=3 round=2
+0,9,11,13,16,18,19,20 claim=L:stage3 mine=EXCL-B S F=9375 dim=2 S=2304 tot=3 need=4 round=2
+0,9,11,14,15,16,17,19 claim=Z:stage2 mine=EXCL-A M Q=16293 tr=4 s=5 round=1
+0,9,11,14,16,17,18,19 claim=Z:stage2 mine=EXCL-A L F=17623 dim=3 S=272711700 l=4 u=3 round=2
+0,9,11,14,16,17,19,20 claim=undecided mine=PASS-ABC 
+0,9,11,14,16,18,19,20 claim=L:stage1 mine=EXCL-A L F=28469 dim=2 S=5263360 l=3 u=2 round=1
+0,9,12,13,14,15,16,19 claim=L:stage3 mine=EXCL-A L F=2310 dim=2 S=402659328 l=3 u=2 round=2
+0,9,12,13,14,16,18,19 claim=L:stage1 mine=EXCL-A L F=24587 dim=2 S=2416312320 l=3 u=2 round=1
+0,9,12,13,14,16,19,20 claim=L:stage3 mine=EXCL-A L F=28469 dim=2 S=2196480 l=3 u=2 round=1
+0,9,13,14,15,16,17,19 claim=L:stage2 mine=EXCL-B S F=8480 dim=2 S=8388608 tot=1 need=2 round=2
+0,9,13,14,16,17,18,19 claim=Z:stage2 mine=EXCL-A S F=23016 dim=0 S=8 tot=1 need=2 round=2
+0,9,13,14,16,17,19,20 claim=L:stage1 mine=EXCL-A L F=9103 dim=3 S=1342702160 l=4 u=3 round=2
+0,9,13,14,16,18,19,20 claim=L:stage3 mine=EXCL-A L F=24587 dim=2 S=2416312320 l=3 u=2 round=1

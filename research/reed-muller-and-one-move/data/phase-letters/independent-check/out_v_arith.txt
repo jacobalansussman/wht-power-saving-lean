@@ -1,0 +1,23 @@
+2 T_m(m) = (2^m-1)/2^(m-2) for m = 2..40: ok
+4 in 15: lambda < 1/15
+8 in 31: lambda < 9/31 0.2903225806451613
+9 in 31: lambda < 14/31 0.45161290322580644
+10 in 31: lambda < 19/31 0.6129032258064516
+bar at block 4: M/W < 3.4822022531844965
+1 []
+2 []
+3 [10]
+4 [13]
+5 [16, 17]
+2 in 7: saving 0.0963
+3 in 10: saving 0.1315
+3 in 11: saving 0.0628
+4 in 13: saving 0.1498
+4 in 14: saving 0.0963
+4 in 15: saving 0.0466
+5 in 16: saving 0.1610
+5 in 17: saving 0.1172
+8 in 31: saving 0.1584, per array 3.8750
+9 in 31: saving 0.2316, per array 3.4444
+10 in 31: saving 0.2970, per array 3.1000
+2.561: 105/41 2.5609756097560976 5*41/35 = 41/7 < 6

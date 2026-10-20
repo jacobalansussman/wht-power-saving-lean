@@ -1,0 +1,13 @@
+S8 classes found: 22  sizes sum 40320
+V_56 restricted to S8: {(3, 1, 1, 1, 1, 1): np.float64(1.0), (2, 2, 2, 1, 1): np.float64(1.0), (2, 1, 1, 1, 1, 1, 1): np.float64(1.0)} [1s]
+B'-types in V_56: [(7, 2), (21, 2)]
+type 21: hook label (a, b) = [-0.860573  0.509327]  residual 8.052350014778645e-14
+type 7: hook label (a, b) = [ 0.423054 -0.906104]  residual 8.012270118130183e-14
+real-line scan (180 x 180): top ratios [(2.8, (28, 10, 28, 18), np.float64(0.0), np.float64(0.0)), (2.8, (28, 10, 28, 18), np.float64(0.0), np.float64(0.0175)), (2.8, (28, 10, 28, 18), np.float64(0.0), np.float64(0.0349)), (2.8, (28, 10, 28, 18), np.float64(0.0), np.float64(0.0524)), (2.8, (28, 10, 28, 18), np.float64(0.0), np.float64(0.0698)), (2.8, (28, 10, 28, 18), np.float64(0.0), np.float64(0.0873))]
+   distribution of (cap, demand): [((10, 28), 32400)]
+type 7 = all, type 21 a real line: best [(2.1, (35, 10, 21, 18), np.float64(0.0)), (2.1, (35, 10, 21, 18), np.float64(0.0175)), (2.1, (35, 10, 21, 18), np.float64(0.0349))]
+type 7 = None, type 21 a real line: best [(2.1, (21, 10, 21, 18), np.float64(0.0)), (2.1, (21, 10, 21, 18), np.float64(0.0175)), (2.1, (21, 10, 21, 18), np.float64(0.0349))]
+type 21 = all, type 7 a real line: best [(1.75, (49, 4, 7, 6), np.float64(0.0)), (1.75, (49, 4, 7, 6), np.float64(0.0175)), (1.75, (49, 4, 7, 6), np.float64(0.0349))]
+type 21 = None, type 7 a real line: best [(1.75, (7, 4, 7, 6), np.float64(0.0)), (1.75, (7, 4, 7, 6), np.float64(0.0175)), (1.75, (7, 4, 7, 6), np.float64(0.0349))]
+complex random lines: top [(2.8, 10, 28), (2.8, 10, 28), (2.8, 10, 28)]  (cap, demand) counts [((10, 28), 3000)]
+[19s]

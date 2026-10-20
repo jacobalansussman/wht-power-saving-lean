@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Work.FourierL3945F.UniformFourierChallenge",
+  "solution_module": "Work.FourierL3945F.Main",
+  "theorem_names": [
+    "OAI.PowerSaving.transform_mainL3945F",
+    "OAI.PowerSaving.convolution_mainL3945F"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}

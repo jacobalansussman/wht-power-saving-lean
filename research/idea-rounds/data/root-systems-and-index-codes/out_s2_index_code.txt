@@ -1,0 +1,18 @@
+sys  roots   d  lines alpha     w    ratio  N/(a w) note
+E8     240   8    120     8     9    0.600    1.667 perfect (alpha = d), junk/port 56, R35 says 0.600
+     side-information graph: 56-regular, eigenvalues {-4.0: 84, 8.0: 35, 56.0: 1} ; Lovasz theta = 8.0000 (alpha = 8)
+E7     126   7     63     7     7    0.778    1.286 perfect (alpha = d), junk/port 32, R35 says 0.778
+     side-information graph: 32-regular, eigenvalues {-4.0: 35, 4.0: 27, 32.0: 1} ; Lovasz theta = 7.0000 (alpha = 7)
+E6      72   6     36     4     7    1.167    1.286 alpha < d, junk/port 20, R35 says 1.167
+D4      24   4     12     4     3    1.000    1.000 perfect (alpha = d), junk/port 8
+D5      40   5     20     4     5    1.250    1.000 alpha < d, junk/port 12
+D6      60   6     30     6     5    1.000    1.000 perfect (alpha = d), junk/port 16
+D7      84   7     42     6     7    1.167    1.000 alpha < d, junk/port 20
+D8     112   8     56     8     7    1.000    1.000 perfect (alpha = d), junk/port 24
+A3      12   3      6     2     3    1.500    1.000 alpha < d, junk/port 4
+A4      20   4     10     2     5    2.000    1.000 alpha < d, junk/port 6
+A5      30   5     15     3     5    1.667    1.000 alpha < d, junk/port 8
+A6      42   6     21     3     7    2.000    1.000 alpha < d, junk/port 10
+A7      56   7     28     4     7    1.750    1.000 alpha < d, junk/port 12
+A8      72   8     36     4     9    2.000    1.000 alpha < d, junk/port 14
+R35 copy ratios reproduced by d*w/N for E8, E7, E6: OK

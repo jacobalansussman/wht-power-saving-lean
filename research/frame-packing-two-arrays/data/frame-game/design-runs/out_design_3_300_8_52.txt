@@ -1,0 +1,45 @@
+design.py m=3 trials=300 depth=8 seed=52 dup=False trunk length=1 (target 2 in 5)
+m=3: 300 designs, depth 8, 362s; best ((1, 0), 2, 1, 0, 3)
+   best history (statuses, orphans, total terms): [(['no', 'no'], 2, 9), (['no', 'no'], 6, 11), (['no', 'no'], 5, 12), (['yes', 'no'], 0, 9)]
+   (0, 0, 0, ('cap', 'cap')) 7
+   (0, 0, 0, ('no:linear syste', 'no:linear syste')) 25
+   (0, 0, 0, ('no:linear syste', 'no:target row u')) 3
+   (0, 0, 0, ('no:target row u', 'no:linear syste')) 4
+   (0, 0, 0, ('no:target row u', 'no:target row u')) 2
+   (0, 1, 0, ('cap', 'cap')) 7
+   (0, 1, 0, ('no:linear syste', 'no:linear syste')) 13
+   (0, 1, 0, ('no:target row u', 'no:linear syste')) 6
+   (0, 1, 0, ('no:target row u', 'no:target row u')) 4
+   (0, 1, 0, ('no:target row u', 'yes')) 2
+   (0, 2, 0, ('cap', 'cap')) 11
+   (0, 2, 0, ('no:target row u', 'no:linear syste')) 1
+   (0, 2, 0, ('no:target row u', 'no:target row u')) 16
+   (0, 2, 0, ('no:target row u', 'yes')) 3
+   (1, 0, 0, ('cap', 'cap')) 7
+   (1, 0, 0, ('no:linear syste', 'no:linear syste')) 12
+   (1, 0, 0, ('no:linear syste', 'no:target row u')) 4
+   (1, 0, 0, ('no:target row u', 'no:target row u')) 10
+   (1, 1, 0, ('cap', 'cap')) 1
+   (1, 1, 0, ('no:linear syste', 'no:linear syste')) 30
+   (1, 1, 0, ('no:linear syste', 'no:target row u')) 1
+   (1, 1, 0, ('no:target row u', 'no:linear syste')) 1
+   (1, 1, 0, ('no:target row u', 'no:target row u')) 1
+   (1, 2, 0, ('cap', 'cap')) 19
+   (1, 2, 0, ('no:linear syste', 'no:linear syste')) 2
+   (1, 2, 0, ('no:target row u', 'no:linear syste')) 1
+   (1, 2, 0, ('no:target row u', 'no:target row u')) 10
+   (1, 2, 0, ('no:target row u', 'yes')) 3
+   (2, 0, 0, ('cap', 'cap')) 7
+   (2, 0, 0, ('cap', 'no:target row u')) 2
+   (2, 0, 0, ('no:linear syste', 'no:target row u')) 2
+   (2, 0, 0, ('no:target row u', 'no:target row u')) 16
+   (2, 0, 0, ('yes', 'no:target row u')) 2
+   (2, 1, 0, ('cap', 'cap')) 13
+   (2, 1, 0, ('no:linear syste', 'no:target row u')) 1
+   (2, 1, 0, ('no:target row u', 'no:target row u')) 13
+   (2, 1, 0, ('no:target row u', 'yes')) 2
+   (2, 1, 0, ('yes', 'no:target row u')) 4
+   (2, 2, 0, ('cap', 'cap')) 7
+   (2, 2, 0, ('no:linear syste', 'no:linear syste')) 22
+   (2, 2, 0, ('no:target row u', 'no:target row u')) 2
+   (2, 2, 0, ('yes', 'no:target row u')) 1

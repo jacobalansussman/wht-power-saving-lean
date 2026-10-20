@@ -1,0 +1,10 @@
+intenum.py:29: RuntimeWarning: divide by zero encountered in matmul
+  Dm = (Vk.astype(float) @ PHI.T).min(1)
+intenum.py:29: RuntimeWarning: overflow encountered in matmul
+  Dm = (Vk.astype(float) @ PHI.T).min(1)
+intenum.py:29: RuntimeWarning: invalid value encountered in matmul
+  Dm = (Vk.astype(float) @ PHI.T).min(1)
+m=4 K=8: window-negative primitive-or-not candidates after frame/plain/A prefilter: 1; primitive survivors of all rigorous certificates: 0
+m=5 K=6: window-negative primitive-or-not candidates after frame/plain/A prefilter: 17; primitive survivors of all rigorous certificates: 1
+   tasks {2: 1, 4: 5} calls {3: 4, 5: 2}: arrays 6, D(1) = 0, min D on window -0.0122, roots [5e-05, 1.0], tight: ['A5', 'B5', 'C5k4']
+python3 -B -c   1.41s user 0.10s system 69% cpu 2.170 total

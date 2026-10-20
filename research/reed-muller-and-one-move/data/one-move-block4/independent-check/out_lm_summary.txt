@@ -1,0 +1,8 @@
+perm_t3.jsonl                trials   8  lowest [286.7616, 287.2426, 288.0, 288.0]  floors [(288.0, 6), (286.8, 1), (287.2, 1)]  max|x| 48.7
+perm_t3b.jsonl               trials   6  lowest [288.0, 288.0, 288.0, 288.0]  floors [(288.0, 6)]  max|x| 36.4
+rand_h2.jsonl                trials   7  lowest [288.0, 288.0, 288.0, 557.0468]  floors [(288.0, 3), (557.3, 3), (557.0, 1)]  max|x| 33.9
+rand_t3.jsonl                trials   7  lowest [557.1746, 557.2548, 557.2548, 557.2548]  floors [(557.3, 6), (557.2, 1)]  max|x| 13.9
+low8_3in10.jsonl             trials  14  lowest [576.0, 576.0, 576.0, 576.0]  floors [(576.0, 14)]  max|x| 18.0
+low8_3in11.jsonl             trials   8  lowest [288.0, 557.2548, 557.2548, 557.2548]  floors [(557.3, 7), (288.0, 1)]  max|x| 24.4
+low8_3in8.jsonl              trials   8  lowest [640.0, 640.0, 640.0, 640.0]  floors [(640.0, 7), (645.4, 1)]  max|x| 7.5
+low8_3in9.jsonl              trials   6  lowest [384.0, 602.5097, 602.5097, 602.5097]  floors [(602.5, 5), (384.0, 1)]  max|x| 522.8

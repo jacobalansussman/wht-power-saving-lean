@@ -1,0 +1,21 @@
+# Part A: frame game Sp(2m,2), exact
+m=2: c^m == h_full: True; c^(2m) == I: True; d(F_j, L_Z) for j=0..2m: [0, 1, 2, 1, 0]; d(F_j, L_X): [2, 1, 0, 1, 2]
+m=3: c^m == h_full: True; c^(2m) == I: True; d(F_j, L_Z) for j=0..2m: [0, 1, 2, 3, 2, 1, 0]; d(F_j, L_X): [3, 2, 1, 0, 1, 2, 3]
+m=4: c^m == h_full: True; c^(2m) == I: True; d(F_j, L_Z) for j=0..2m: [0, 1, 2, 3, 4, 3, 2, 1, 0]; d(F_j, L_X): [4, 3, 2, 1, 0, 1, 2, 3, 4]
+m=5: c^m == h_full: True; c^(2m) == I: True; d(F_j, L_Z) for j=0..2m: [0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0]; d(F_j, L_X): [5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5]
+m=6: c^m == h_full: True; c^(2m) == I: True; d(F_j, L_Z) for j=0..2m: [0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1, 0]; d(F_j, L_X): [6, 5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5, 6]
+m=7: c^m == h_full: True; c^(2m) == I: True; d(F_j, L_Z) for j=0..2m: [0, 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1, 0]; d(F_j, L_X): [7, 6, 5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5, 6, 7]
+m=8: c^m == h_full: True; c^(2m) == I: True; d(F_j, L_Z) for j=0..2m: [0, 1, 2, 3, 4, 5, 6, 7, 8, 7, 6, 5, 4, 3, 2, 1, 0]; d(F_j, L_X): [8, 7, 6, 5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5, 6, 7, 8]
+# Part B: real arrays, max abs error
+H: m=2 f=1: |(sigma K_1)^m x - K^(all) x| = 0.0e+00; |(sigma K_1)^(2m) x - id x| = 5.6e-16
+H: m=2 f=2: |(sigma K_1)^m x - K^(all) x| = 0.0e+00; |(sigma K_1)^(2m) x - id x| = 2.2e-15
+H: m=2 f=3: |(sigma K_1)^m x - K^(all) x| = 0.0e+00; |(sigma K_1)^(2m) x - id x| = 2.5e-15
+H: m=3 f=1: |(sigma K_1)^m x - K^(all) x| = 2.3e-16; |(sigma K_1)^(2m) x - id x| = 1.9e-15
+H: m=3 f=2: |(sigma K_1)^m x - K^(all) x| = 5.0e-16; |(sigma K_1)^(2m) x - id x| = 4.0e-15
+H: m=3 f=3: |(sigma K_1)^m x - K^(all) x| = 1.3e-15; |(sigma K_1)^(2m) x - id x| = 5.8e-15
+C: m=2 f=1: |(sigma K_1)^m x - K^(all) x| = 0.0e+00; |(sigma K_1)^(2m) x - Xflip x| = 2.3e-16
+C: m=2 f=2: |(sigma K_1)^m x - K^(all) x| = 0.0e+00; |(sigma K_1)^(2m) x - Xflip x| = 4.4e-16
+C: m=2 f=3: |(sigma K_1)^m x - K^(all) x| = 0.0e+00; |(sigma K_1)^(2m) x - Xflip x| = 8.0e-16
+C: m=3 f=1: |(sigma K_1)^m x - K^(all) x| = 4.4e-16; |(sigma K_1)^(2m) x - Xflip x| = 5.2e-16
+C: m=3 f=2: |(sigma K_1)^m x - K^(all) x| = 4.6e-16; |(sigma K_1)^(2m) x - Xflip x| = 4.6e-16
+C: m=3 f=3: |(sigma K_1)^m x - K^(all) x| = 1.1e-15; |(sigma K_1)^(2m) x - Xflip x| = 1.1e-15

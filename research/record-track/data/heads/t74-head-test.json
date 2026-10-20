@@ -1,0 +1,610 @@
+{
+ "date": "2026-10-14",
+ "agent": "rl-check",
+ "question": "Is each idle remainder child a paid block on ONE data family that is the first (head) or last (tail) operation on that family, with no addition in between (Lemma 6 of meta/ex-laser)?",
+ "method": "own re-implementation of the hub controller expansion (vendor/build_parent.py expanded_schedule semantics) over the hub lifted parent template, PLAN order/windows and OWNERS; every touch of every data family listed (local sweeps, bridges as src/dst, idle sweeps, hosted helper roles, terminal events, final translation); remainders derived as the hub audit derives them",
+ "labels": {
+  "counts": "[computed]",
+  "head blocks are droppable by Lemma 6 even though the array is read afterwards": "[argued]",
+  "net heads (hosted roles before the remainder commute)": "[argued]",
+  "prices": "[what-if] needs Theorem 1 of ex-laser extended to grouped paid blocks (open), its engine realisation, and Lean"
+ },
+ "controls": {
+  "#1042 derivation == hosted template idle_children (7550)": true,
+  "PLAN windows reproduced #1042": true,
+  "PLAN windows reproduced T74": true,
+  "T74 remainder profile == CONSTRUCTION idle {48: 22748}": true,
+  "negative control (bridge reading pair 3 moved before its initial sweep): T74 heads drop to 0": true,
+  "pricer controls": "moment root reproduces #1042 1.6749890e-3 and T74 1.6797550e-3; all-idle what-if reproduces ex-laser 1.8213933e-3"
+ },
+ "T74": {
+  "T": 74,
+  "calls": 666,
+  "remainders": 22748,
+  "remainder_profile": {
+   "48": 22748
+  },
+  "derivation_equals_hosted_template": null,
+  "plan_windows_reproduced": true,
+  "totals_by_class": {
+   "HEAD-literal": 11010,
+   "neither": 11738
+  },
+  "remainder_rank_by_class": {
+   "HEAD-literal": {
+    "48": 11010
+   },
+   "neither": {
+    "48": 11738
+   }
+  },
+  "classes": [
+   {
+    "child": 8,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 3,
+    "side": 0,
+    "cls": "HEAD-literal",
+    "count": 6150
+   },
+   {
+    "child": 10,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 3,
+    "side": 1,
+    "cls": "HEAD-literal",
+    "count": 4860
+   },
+   {
+    "child": 12,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 0,
+    "side": 0,
+    "cls": "neither",
+    "count": 6672
+   },
+   {
+    "child": 13,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 0,
+    "side": 1,
+    "cls": "neither",
+    "count": 5066
+   }
+  ],
+  "child_table": {
+   "0": {
+    "rank": 16,
+    "pair": 1,
+    "side": 0,
+    "sweep_source_event": 2
+   },
+   "1": {
+    "rank": 8,
+    "pair": 1,
+    "side": 0,
+    "sweep_source_event": 5
+   },
+   "2": {
+    "rank": 16,
+    "pair": 1,
+    "side": 1,
+    "sweep_source_event": 2
+   },
+   "3": {
+    "rank": 8,
+    "pair": 1,
+    "side": 1,
+    "sweep_source_event": 5
+   },
+   "4": {
+    "rank": 32,
+    "pair": 2,
+    "side": 0,
+    "sweep_source_event": 8
+   },
+   "5": {
+    "rank": 8,
+    "pair": 2,
+    "side": 0,
+    "sweep_source_event": 11
+   },
+   "6": {
+    "rank": 32,
+    "pair": 2,
+    "side": 1,
+    "sweep_source_event": 8
+   },
+   "7": {
+    "rank": 8,
+    "pair": 2,
+    "side": 1,
+    "sweep_source_event": 11
+   },
+   "8": {
+    "rank": 48,
+    "pair": 3,
+    "side": 0,
+    "sweep_source_event": 14
+   },
+   "9": {
+    "rank": 8,
+    "pair": 3,
+    "side": 0,
+    "sweep_source_event": 17
+   },
+   "10": {
+    "rank": 48,
+    "pair": 3,
+    "side": 1,
+    "sweep_source_event": 14
+   },
+   "11": {
+    "rank": 8,
+    "pair": 3,
+    "side": 1,
+    "sweep_source_event": 17
+   },
+   "12": {
+    "rank": 48,
+    "pair": 0,
+    "side": 0,
+    "sweep_source_event": 21
+   },
+   "13": {
+    "rank": 48,
+    "pair": 0,
+    "side": 1,
+    "sweep_source_event": 21
+   },
+   "14": {
+    "rank": 32,
+    "pair": 1,
+    "side": 0,
+    "sweep_source_event": 22
+   },
+   "15": {
+    "rank": 32,
+    "pair": 1,
+    "side": 1,
+    "sweep_source_event": 22
+   },
+   "16": {
+    "rank": 16,
+    "pair": 2,
+    "side": 0,
+    "sweep_source_event": 23
+   },
+   "17": {
+    "rank": 16,
+    "pair": 2,
+    "side": 1,
+    "sweep_source_event": 23
+   }
+  }
+ },
+ "pr1042": {
+  "T": 16,
+  "calls": 144,
+  "remainders": 7550,
+  "remainder_profile": {
+   "1": 2249,
+   "2": 1,
+   "3": 400,
+   "7": 3,
+   "16": 47,
+   "48": 4850
+  },
+  "derivation_equals_hosted_template": true,
+  "plan_windows_reproduced": true,
+  "totals_by_class": {
+   "HEAD-literal": 2329,
+   "HEAD-net(argued)": 1735,
+   "neither": 3486
+  },
+  "remainder_rank_by_class": {
+   "HEAD-literal": {
+    "16": 18,
+    "48": 2311
+   },
+   "HEAD-net(argued)": {
+    "1": 1348,
+    "3": 384,
+    "7": 3
+   },
+   "neither": {
+    "1": 901,
+    "2": 1,
+    "3": 16,
+    "16": 29,
+    "48": 2539
+   }
+  },
+  "classes": [
+   {
+    "child": 0,
+    "child_rank": 16,
+    "remainder": 3,
+    "pair": 1,
+    "side": 0,
+    "cls": "HEAD-net(argued)",
+    "count": 126
+   },
+   {
+    "child": 0,
+    "child_rank": 16,
+    "remainder": 7,
+    "pair": 1,
+    "side": 0,
+    "cls": "HEAD-net(argued)",
+    "count": 3
+   },
+   {
+    "child": 0,
+    "child_rank": 16,
+    "remainder": 16,
+    "pair": 1,
+    "side": 0,
+    "cls": "HEAD-literal",
+    "count": 18
+   },
+   {
+    "child": 2,
+    "child_rank": 16,
+    "remainder": 3,
+    "pair": 1,
+    "side": 1,
+    "cls": "HEAD-net(argued)",
+    "count": 258
+   },
+   {
+    "child": 4,
+    "child_rank": 32,
+    "remainder": 1,
+    "pair": 2,
+    "side": 0,
+    "cls": "HEAD-net(argued)",
+    "count": 80
+   },
+   {
+    "child": 6,
+    "child_rank": 32,
+    "remainder": 1,
+    "pair": 2,
+    "side": 1,
+    "cls": "HEAD-net(argued)",
+    "count": 1267
+   },
+   {
+    "child": 8,
+    "child_rank": 48,
+    "remainder": 1,
+    "pair": 3,
+    "side": 0,
+    "cls": "HEAD-net(argued)",
+    "count": 1
+   },
+   {
+    "child": 8,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 3,
+    "side": 0,
+    "cls": "HEAD-literal",
+    "count": 590
+   },
+   {
+    "child": 10,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 3,
+    "side": 1,
+    "cls": "HEAD-literal",
+    "count": 1721
+   },
+   {
+    "child": 12,
+    "child_rank": 48,
+    "remainder": 3,
+    "pair": 0,
+    "side": 0,
+    "cls": "neither",
+    "count": 4
+   },
+   {
+    "child": 12,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 0,
+    "side": 0,
+    "cls": "neither",
+    "count": 1505
+   },
+   {
+    "child": 13,
+    "child_rank": 48,
+    "remainder": 3,
+    "pair": 0,
+    "side": 1,
+    "cls": "neither",
+    "count": 3
+   },
+   {
+    "child": 13,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 0,
+    "side": 1,
+    "cls": "neither",
+    "count": 1034
+   },
+   {
+    "child": 14,
+    "child_rank": 32,
+    "remainder": 1,
+    "pair": 1,
+    "side": 0,
+    "cls": "neither",
+    "count": 94
+   },
+   {
+    "child": 15,
+    "child_rank": 32,
+    "remainder": 1,
+    "pair": 1,
+    "side": 1,
+    "cls": "neither",
+    "count": 807
+   },
+   {
+    "child": 15,
+    "child_rank": 32,
+    "remainder": 2,
+    "pair": 1,
+    "side": 1,
+    "cls": "neither",
+    "count": 1
+   },
+   {
+    "child": 15,
+    "child_rank": 32,
+    "remainder": 3,
+    "pair": 1,
+    "side": 1,
+    "cls": "neither",
+    "count": 9
+   },
+   {
+    "child": 16,
+    "child_rank": 16,
+    "remainder": 16,
+    "pair": 2,
+    "side": 0,
+    "cls": "neither",
+    "count": 29
+   }
+  ],
+  "child_table": {
+   "0": {
+    "rank": 16,
+    "pair": 1,
+    "side": 0,
+    "sweep_source_event": 2
+   },
+   "1": {
+    "rank": 8,
+    "pair": 1,
+    "side": 0,
+    "sweep_source_event": 5
+   },
+   "2": {
+    "rank": 16,
+    "pair": 1,
+    "side": 1,
+    "sweep_source_event": 2
+   },
+   "3": {
+    "rank": 8,
+    "pair": 1,
+    "side": 1,
+    "sweep_source_event": 5
+   },
+   "4": {
+    "rank": 32,
+    "pair": 2,
+    "side": 0,
+    "sweep_source_event": 8
+   },
+   "5": {
+    "rank": 8,
+    "pair": 2,
+    "side": 0,
+    "sweep_source_event": 11
+   },
+   "6": {
+    "rank": 32,
+    "pair": 2,
+    "side": 1,
+    "sweep_source_event": 8
+   },
+   "7": {
+    "rank": 8,
+    "pair": 2,
+    "side": 1,
+    "sweep_source_event": 11
+   },
+   "8": {
+    "rank": 48,
+    "pair": 3,
+    "side": 0,
+    "sweep_source_event": 14
+   },
+   "9": {
+    "rank": 8,
+    "pair": 3,
+    "side": 0,
+    "sweep_source_event": 17
+   },
+   "10": {
+    "rank": 48,
+    "pair": 3,
+    "side": 1,
+    "sweep_source_event": 14
+   },
+   "11": {
+    "rank": 8,
+    "pair": 3,
+    "side": 1,
+    "sweep_source_event": 17
+   },
+   "12": {
+    "rank": 48,
+    "pair": 0,
+    "side": 0,
+    "sweep_source_event": 21
+   },
+   "13": {
+    "rank": 48,
+    "pair": 0,
+    "side": 1,
+    "sweep_source_event": 21
+   },
+   "14": {
+    "rank": 32,
+    "pair": 1,
+    "side": 0,
+    "sweep_source_event": 22
+   },
+   "15": {
+    "rank": 32,
+    "pair": 1,
+    "side": 1,
+    "sweep_source_event": 22
+   },
+   "16": {
+    "rank": 16,
+    "pair": 2,
+    "side": 0,
+    "sweep_source_event": 23
+   },
+   "17": {
+    "rank": 16,
+    "pair": 2,
+    "side": 1,
+    "sweep_source_event": 23
+   }
+  }
+ },
+ "prices": {
+  "#1042 (T16 owner packing on the k8 word)": {
+   "W": 14336,
+   "idle_by_class": {
+    "HEAD-net(argued)": {
+     "3": 384,
+     "7": 3,
+     "1": 1348
+    },
+    "HEAD-literal": {
+     "16": 18,
+     "48": 2311
+    },
+    "neither": {
+     "3": 16,
+     "48": 2539,
+     "1": 901,
+     "2": 1,
+     "16": 29
+    }
+   },
+   "idle_total": 7550,
+   "deficit": 5120,
+   "control_moment_root": {
+    "truncated": {},
+    "arrays_truncated": 0,
+    "tau": "0.998325010984",
+    "saving": "1.6749890e-3"
+   },
+   "exlaser_all_idle_truncated": {
+    "truncated": {
+     "1": 2249,
+     "2": 1,
+     "3": 400,
+     "7": 3,
+     "16": 47,
+     "48": 4850
+    },
+    "arrays_truncated": 7550,
+    "tau": "0.998178606657",
+    "saving": "1.8213933e-3"
+   },
+   "heads_literal_only": {
+    "truncated": {
+     "16": 18,
+     "48": 2311
+    },
+    "arrays_truncated": 2329,
+    "tau": "0.998263168627",
+    "saving": "1.7368314e-3"
+   },
+   "heads_literal_plus_net": {
+    "truncated": {
+     "1": 1348,
+     "3": 384,
+     "7": 3,
+     "16": 18,
+     "48": 2311
+    },
+    "arrays_truncated": 4064,
+    "tau": "0.998256075965",
+    "saving": "1.7439240e-3"
+   }
+  },
+  "T74 (PR #1839, two provider words)": {
+   "W": 66304,
+   "idle_by_class": {
+    "HEAD-literal": {
+     "48": 11010
+    },
+    "neither": {
+     "48": 11738
+    }
+   },
+   "idle_total": 22748,
+   "deficit": 23680,
+   "control_moment_root": {
+    "truncated": {},
+    "arrays_truncated": 0,
+    "tau": "0.998320245044",
+    "saving": "1.6797550e-3"
+   },
+   "exlaser_all_idle_truncated": {
+    "truncated": {
+     "48": 22748
+    },
+    "arrays_truncated": 22748,
+    "tau": "0.998183053222",
+    "saving": "1.8169468e-3"
+   },
+   "heads_literal_only": {
+    "truncated": {
+     "48": 11010
+    },
+    "arrays_truncated": 11010,
+    "tau": "0.998256522677",
+    "saving": "1.7434773e-3"
+   },
+   "heads_literal_plus_net": {
+    "truncated": {
+     "48": 11010
+    },
+    "arrays_truncated": 11010,
+    "tau": "0.998256522677",
+    "saving": "1.7434773e-3"
+   }
+  }
+ }
+}

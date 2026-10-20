@@ -1,0 +1,29 @@
+  alpha=0000 x1: rows 1680 part 4238
+  alpha=1000 x1: rows 1736 part 4286
+  alpha=0001 x3: rows 1736 part 4238
+  alpha=1001 x3: rows 1736 part 4238
+  alpha=0011 x3: rows 1736 part 4238
+  alpha=1011 x3: rows 1736 part 4238
+  alpha=0111 x1: rows 868 part 4233
+  alpha=1111 x1: rows 868 part 4233
+m=4 Lambda^2 (x) Lambda^4 J=[1]: dim N 87360; cap (exact) 33376; f(B_3 (x) I_1) [float] = 67846; bound 67846/33376 = 2.032778 moves per array  (54.5s)
+  alpha=0000 x1: rows 1680 part 622
+  alpha=1000 x1: rows 1736 part 670
+  alpha=0001 x3: rows 1736 part 662
+  alpha=1001 x3: rows 1736 part 662
+  alpha=0011 x3: rows 1736 part 662
+  alpha=1011 x3: rows 1736 part 662
+  alpha=0111 x1: rows 868 part 662
+  alpha=1111 x1: rows 868 part 662
+m=4 Lambda^2 (x) Lambda^4 J=[2]: dim N 10920; cap (exact) 6888; f(B_3 (x) I_1) [float] = 10560; bound 10560/6888 = 1.533101 moves per array  (11.6s)
+  alpha=0000 x1: rows 1680 part 3488
+  alpha=0100 x2: rows 1736 part 3504
+  alpha=1100 x1: rows 1736 part 3504
+  alpha=0001 x2: rows 1736 part 3464
+  alpha=0101 x4: rows 1736 part 3464
+  alpha=1101 x2: rows 1736 part 3464
+  alpha=0011 x1: rows 868 part 3452
+  alpha=0111 x2: rows 868 part 3452
+  alpha=1111 x1: rows 868 part 3452
+m=4 Lambda^2 (x) Lambda^4 J=[1]: dim N 87360; cap (exact) 33376; f(B_2 (x) I_2) [float] = 55520; bound 55520/33376 = 1.663471 moves per array  (55.6s)
+exit 0

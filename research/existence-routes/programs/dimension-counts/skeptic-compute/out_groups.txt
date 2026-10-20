@@ -1,0 +1,11 @@
+m=2 |B| = 3072  |G| = 46080  [G:B] = 15.0
+  k=0: |B W_k B| = |B|^2/|B cap ..| = 3072 = 1.0 |B|;  |B cap W_k^-1 B W_k| = 3072 = |B|/1.0
+  k=1: |B W_k B| = |B|^2/|B cap ..| = 18432 = 6.0 |B|;  |B cap W_k^-1 B W_k| = 512 = |B|/6.0
+  k=2: |B W_k B| = |B|^2/|B cap ..| = 24576 = 8.0 |B|;  |B cap W_k^-1 B W_k| = 384 = |B|/8.0
+  sum of double coset sizes / |B| should be L = 15
+m=2: #Lagrangians (brute force) = 15, by distance {0: 1, 1: 6, 2: 8}; formula prod(2^i+1) = 15, n_k formula = [1, 6, 8]
+m=3: #Lagrangians (brute force) = 135, by distance {0: 1, 1: 14, 2: 56, 3: 64}; formula prod(2^i+1) = 135, n_k formula = [1, 14, 56, 64]
+m=4 formula L = 2295 n_k = [1, 30, 280, 960, 1024] sum 2295
+m=2: |G| = 4^(m+1)|Sp| = 46080, |B| = |G|/L = 3072
+m=3: |G| = 4^(m+1)|Sp| = 371589120, |B| = |G|/L = 2752512
+m=4: |G| = 4^(m+1)|Sp| = 48514675507200, |B| = |G|/L = 21139292160

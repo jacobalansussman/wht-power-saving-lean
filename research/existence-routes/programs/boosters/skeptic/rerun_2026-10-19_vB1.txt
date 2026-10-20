@@ -1,0 +1,8 @@
+B1 identity d=1: lf + 1 lp + 4 lA = {'1': 1, 'x': 0, 'y': 0}  (want {'1': 1}): True
+B1 identity d=2: lf + 2 lp + 6 lA = {'1': 0, 'x': 1, 'y': 0}  (want {'x': 1}): True
+B1 identity d=3: lf + 3 lp + 7 lA = {'1': 0, 'x': 0, 'y': 1}  (want {'y': 1}): True
+A(d) = 8(1 - 2^-d): [Fraction(4, 1), Fraction(6, 1), Fraction(7, 1)]
+endpoint data: lA(0), lA(1), lA'(0) = 0 0 0.2877 | lf(0), lf(1), lf'(1) = 1 0 -0.3398 | lp(0), lp'(0), lp(1) = 0 0.1178 1
+Wronskian closed forms: max error on 1001 points 8.9e-16, 7.2e-15
+g < 0 on (0,1]: True  h < 0 on [0,1]: True  h(0), h(1) = -0.1178 -0.0566  h' root = 0.3802
+lambdas > 0 on (0,1) (grid): True

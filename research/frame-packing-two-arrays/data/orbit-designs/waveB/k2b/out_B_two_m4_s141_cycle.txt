@@ -1,0 +1,100 @@
+orb.py mode=two m=4 W=2 target 2 in 7; trials=80 depth=4 seed=141 kinds=['cycle']
+trial 0: a=(0, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 1: a=(2, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 2: a=(1, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 3: a=(2, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 4: a=(0, 3) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 5: a=(0, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 6: a=(0, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, '-,-')]
+trial 7: a=(3, 1) dup=2 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 8: a=(1, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, '-,-')]
+trial 9: a=(1, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, '-,-')]
+trial 10: a=(3, 1) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 11: a=(2, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 12: a=(3, 1) dup=2 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 13: a=(0, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 14: a=(1, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 15: a=(2, 2) dup=2 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, '-,-')]
+trial 16: a=(3, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 17: a=(0, 1) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 18: a=(0, 2) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 19: a=(3, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 20: a=(0, 3) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 21: a=(1, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 22: a=(1, 2) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 23: a=(2, 0) dup=1 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 24: a=(0, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, '-,-')]
+trial 25: a=(2, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 26: a=(1, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 27: a=(0, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 28: a=(3, 1) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 29: a=(0, 3) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 30: a=(2, 3) dup=1 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 31: a=(0, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 32: a=(3, 3) dup=2 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, 'T1')]
+trial 33: a=(2, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 34: a=(0, 1) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 35: a=(0, 2) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 36: a=(1, 2) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 37: a=(2, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 38: a=(1, 2) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 39: a=(0, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 40: a=(2, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 41: a=(1, 3) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 42: a=(2, 1) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 43: a=(3, 3) dup=2 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, 'T1')]
+trial 44: a=(0, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, '-,-')]
+trial 45: a=(0, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 46: a=(2, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 47: a=(0, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, '-,-')]
+trial 48: a=(1, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, '-,-')]
+trial 49: a=(0, 2) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 50: a=(3, 2) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 51: a=(2, 1) dup=2 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 52: a=(1, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, '-,-')]
+trial 53: a=(3, 3) dup=3 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, 'T1')]
+trial 54: a=(1, 3) dup=1 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 55: a=(3, 3) dup=1 orbits=[] hist=[('00', 'nn', 'nn', 'H', 8, 'T1')]
+trial 56: a=(2, 0) dup=1 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 57: a=(3, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 58: a=(2, 1) dup=1 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 59: a=(1, 2) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 60: a=(2, 2) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 61: a=(0, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 3, '-,-')]
+trial 62: a=(0, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 63: a=(2, 3) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 64: a=(0, 2) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 65: a=(3, 1) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 66: a=(3, 2) dup=1 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 67: a=(3, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 4, '-,-')]
+trial 68: a=(0, 1) dup=2 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 69: a=(2, 2) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+trial 70: a=(0, 2) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 71: a=(1, 0) dup=1 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 72: a=(2, 0) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 73: a=(0, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 3, '-,-')]
+trial 74: a=(3, 2) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 75: a=(3, 0) dup=1 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 76: a=(3, 1) dup=1 orbits=[] hist=[('00', 'nn', 'nn', '-', 6, '-,-')]
+trial 77: a=(1, 2) dup=1 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 78: a=(1, 3) dup=0 orbits=[] hist=[('00', 'nn', 'nn', '-', 5, '-,-')]
+trial 79: a=(2, 1) dup=3 orbits=[] hist=[('00', 'nn', 'nn', '-', 7, '-,-')]
+done: 80 trials in 2s; found 0
+   ('KIND', (), 'psilin=00', 'chlin=nn') 80
+   ('two', 'a=(0, 0)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=H') 4
+   ('two', 'a=(0, 1)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 7
+   ('two', 'a=(0, 2)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 5
+   ('two', 'a=(0, 3)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 9
+   ('two', 'a=(1, 0)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 2
+   ('two', 'a=(1, 1)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=H') 4
+   ('two', 'a=(1, 2)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 5
+   ('two', 'a=(1, 3)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 6
+   ('two', 'a=(2, 0)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 5
+   ('two', 'a=(2, 1)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 8
+   ('two', 'a=(2, 2)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 2
+   ('two', 'a=(2, 2)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=H') 1
+   ('two', 'a=(2, 3)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 4
+   ('two', 'a=(3, 0)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 4
+   ('two', 'a=(3, 1)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 7
+   ('two', 'a=(3, 2)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=-') 3
+   ('two', 'a=(3, 3)', 'orbits=0', 'psilin=00', 'chlin=nn', 'exact=nn', 'height=H') 4

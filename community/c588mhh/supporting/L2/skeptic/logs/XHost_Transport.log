@@ -1,0 +1,28 @@
+'OAI.PowerSaving.GF.XHost.permMat_conj_dir' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.XHost.permMat_conj_blockMat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.XHost.exists_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.XHost.exists_transport_into' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.XHost.transport_twisted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.XHost.host_stack' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.XHost.hosted_climb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.XHost.hosted_climb_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.GF.XHost.hosted_climb_of_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+        3.25 real         2.13 user         1.67 sys
+          6030589952  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              448593  page reclaims
+                 324  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 258  voluntary context switches
+               16374  involuntary context switches
+         43757642756  instructions retired
+         15107708115  cycles elapsed
+           928529128  peak memory footprint
+EXIT=0 TIME=3s HEAVY=0 CMD=/usr/bin/env LEAN_PATH=<verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean:<verify>/.lake/build/lib/lean:<verify>/.lake/packages/mathlib/.lake/build/lib/lean:<verify>/.lake/packages/batteries/.lake/build/lib/lean:<verify>/.lake/packages/Qq/.lake/build/lib/lean:<verify>/.lake/packages/aesop/.lake/build/lib/lean:<verify>/.lake/packages/proofwidgets/.lake/build/lib/lean:<verify>/.lake/packages/importGraph/.lake/build/lib/lean:<verify>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<verify>/.lake/packages/plausible/.lake/build/lib/lean:<verify>/.lake/packages/Cli/.lake/build/lib/lean LEAN_NUM_THREADS=2 /usr/bin/time -l lean -DautoImplicit=false -R <verify>/checks/wht43/bound-check/v-host-1/proj -o <verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean/XHost/Transport.olean -i <verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean/XHost/Transport.ilean <verify>/checks/wht43/bound-check/v-host-1/proj/XHost/Transport.lean

@@ -1,0 +1,8 @@
+pool FDR: 176 directions
+reps per port: min 3608 max 3608 total 404096 (120 s)
+restart 0: annealed star 137; verified exact True n 64 pair 137 star 137  (141 s)
+   star terms [8, 8, 8, 8, 8, 8, 8, 8, 7, 3, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+restart 1: annealed star 140; verified exact True n 69 pair 140 star 140  (162 s)
+   star terms [8, 8, 8, 8, 8, 8, 8, 8, 4, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+restart 2: annealed star 128; verified exact True n 55 pair 128 star 128  (184 s)
+   star terms [8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]

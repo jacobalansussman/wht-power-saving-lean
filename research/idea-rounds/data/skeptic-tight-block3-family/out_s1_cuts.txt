@@ -1,0 +1,152 @@
+== cuts of V56 (irr8) (types [7, 21, 28])
+   Y =              7  dim   7  cap   4  two-row demand   6  full demand   7  (full/cap = 1.7500)
+   Y =             21  dim  21  cap  10  two-row demand  18  full demand  21  (full/cap = 2.1000)
+   Y =           7+21  dim  28  cap  10  two-row demand  18  full demand  28  (full/cap = 2.8000)
+   Y =             28  dim  28  cap  10  two-row demand  18  full demand  28  (full/cap = 2.8000)
+   Y =           7+28  dim  35  cap  10  two-row demand  18  full demand  21  (full/cap = 2.1000)
+   Y =          21+28  dim  49  cap   4  two-row demand   6  full demand   7  (full/cap = 1.7500)
+   Y =        7+21+28  dim  56  cap   0  two-row demand   0  full demand   0  (full/cap = inf)
+   5+0 in 14: tightest cut 7+21 slack 0 allowed
+   4+1 in 13: tightest cut 7+21 slack 0 allowed
+   3+2 in 12: tightest cut 7+21 slack 0 allowed
+   2+3 in 11: tightest cut 7+21 slack 0 allowed
+   1+4 in 10: tightest cut 7+21 slack 0 allowed
+   5+0 in 13: tightest cut 7+21 slack -10 REFUSED
+   1+4 in 9: tightest cut 7+21 slack -10 REFUSED
+   1+4 in 11: tightest cut 7+21 slack 10 allowed
+== cuts of V105a (irr11) (types [14, 14, 21, 56])
+   Y =             14  dim  14  cap  11  two-row demand  14  full demand  14  (full/cap = 1.2727)
+   Y =             14  dim  14  cap   9  two-row demand  13  full demand  14  (full/cap = 1.5556)
+   Y =          14+14  dim  28  cap  14  two-row demand  23  full demand  28  (full/cap = 2.0000)
+   Y =             21  dim  21  cap  14  two-row demand  21  full demand  21  (full/cap = 1.5000)
+   Y =          14+21  dim  35  cap  17  two-row demand  29  full demand  35  (full/cap = 2.0588)
+   Y =          14+21  dim  35  cap  23  two-row demand  34  full demand  35  (full/cap = 1.5217)
+   Y =       14+14+21  dim  49  cap  20  two-row demand  38  full demand  49  (full/cap = 2.4500)
+   Y =             56  dim  56  cap  20  two-row demand  38  full demand  49  (full/cap = 2.4500)
+   Y =          14+56  dim  70  cap  23  two-row demand  34  full demand  35  (full/cap = 1.5217)
+   Y =          14+56  dim  70  cap  17  two-row demand  29  full demand  35  (full/cap = 2.0588)
+   Y =       14+14+56  dim  84  cap  14  two-row demand  21  full demand  21  (full/cap = 1.5000)
+   Y =          21+56  dim  77  cap  14  two-row demand  23  full demand  28  (full/cap = 2.0000)
+   Y =       14+21+56  dim  91  cap   9  two-row demand  13  full demand  14  (full/cap = 1.5556)
+   Y =       14+21+56  dim  91  cap  11  two-row demand  14  full demand  14  (full/cap = 1.2727)
+   Y =    14+14+21+56  dim 105  cap   0  two-row demand   0  full demand   0  (full/cap = inf)
+   5+0 in 14: tightest cut 14+14+21 slack 35 allowed
+   4+1 in 13: tightest cut 14+14+21 slack 26 allowed
+   3+2 in 12: tightest cut 14+14+21 slack 17 allowed
+   2+3 in 11: tightest cut 14+14+21 slack 8 allowed
+   1+4 in 10: tightest cut 14+14+21 slack -1 REFUSED
+   5+0 in 13: tightest cut 14+14+21 slack 15 allowed
+   1+4 in 9: tightest cut 14+14+21 slack -21 REFUSED
+   1+4 in 11: tightest cut 14+14+21 slack 19 allowed
+== cuts of V105 (irr12) (types [7, 7, 21, 28, 42])
+   Y =              7  dim   7  cap   7  two-row demand   7  full demand   7  (full/cap = 1.0000)
+   Y =              7  dim   7  cap   6  two-row demand   7  full demand   7  (full/cap = 1.1667)
+   Y =            7+7  dim  14  cap  13  two-row demand  13  full demand  14  (full/cap = 1.0769)
+   Y =             21  dim  21  cap  18  two-row demand  19  full demand  21  (full/cap = 1.1667)
+   Y =           7+21  dim  28  cap  19  two-row demand  25  full demand  28  (full/cap = 1.4737)
+   Y =           7+21  dim  28  cap  18  two-row demand  25  full demand  28  (full/cap = 1.5556)
+   Y =         7+7+21  dim  35  cap  19  two-row demand  30  full demand  35  (full/cap = 1.8421)
+   Y =             28  dim  28  cap  22  two-row demand  27  full demand  28  (full/cap = 1.2727)
+   Y =           7+28  dim  35  cap  21  two-row demand  28  full demand  35  (full/cap = 1.6667)
+   Y =           7+28  dim  35  cap  28  two-row demand  34  full demand  28  (full/cap = 1.0000)
+   Y =         7+7+28  dim  42  cap  27  two-row demand  34  full demand  35  (full/cap = 1.2963)
+   Y =          21+28  dim  49  cap  28  two-row demand  28  full demand  49  (full/cap = 1.7500)
+   Y =        7+21+28  dim  56  cap  21  two-row demand  28  full demand  49  (full/cap = 2.3333)
+   Y =        7+21+28  dim  56  cap  28  two-row demand  34  full demand  49  (full/cap = 1.7500)
+   Y =      7+7+21+28  dim  63  cap  21  two-row demand  33  full demand  42  (full/cap = 2.0000)
+   Y =             42  dim  42  cap  21  two-row demand  33  full demand  42  (full/cap = 2.0000)
+   Y =           7+42  dim  49  cap  28  two-row demand  34  full demand  49  (full/cap = 1.7500)
+   Y =           7+42  dim  49  cap  21  two-row demand  28  full demand  49  (full/cap = 2.3333)
+   Y =         7+7+42  dim  56  cap  28  two-row demand  28  full demand  49  (full/cap = 1.7500)
+   Y =          21+42  dim  63  cap  27  two-row demand  34  full demand  35  (full/cap = 1.2963)
+   Y =        7+21+42  dim  70  cap  28  two-row demand  34  full demand  28  (full/cap = 1.0000)
+   Y =        7+21+42  dim  70  cap  21  two-row demand  28  full demand  35  (full/cap = 1.6667)
+   Y =      7+7+21+42  dim  77  cap  22  two-row demand  27  full demand  28  (full/cap = 1.2727)
+   Y =          28+42  dim  70  cap  19  two-row demand  30  full demand  35  (full/cap = 1.8421)
+   Y =        7+28+42  dim  77  cap  18  two-row demand  25  full demand  28  (full/cap = 1.5556)
+   Y =        7+28+42  dim  77  cap  19  two-row demand  25  full demand  28  (full/cap = 1.4737)
+   Y =      7+7+28+42  dim  84  cap  18  two-row demand  19  full demand  21  (full/cap = 1.1667)
+   Y =       21+28+42  dim  91  cap  13  two-row demand  13  full demand  14  (full/cap = 1.0769)
+   Y =     7+21+28+42  dim  98  cap   6  two-row demand   7  full demand   7  (full/cap = 1.1667)
+   Y =     7+21+28+42  dim  98  cap   7  two-row demand   7  full demand   7  (full/cap = 1.0000)
+   Y =   7+7+21+28+42  dim 105  cap   0  two-row demand   0  full demand   0  (full/cap = inf)
+   5+0 in 14: tightest cut 7 slack 49 allowed
+   4+1 in 13: tightest cut 7 slack 43 allowed
+   3+2 in 12: tightest cut 7 slack 37 allowed
+   2+3 in 11: tightest cut 7 slack 31 allowed
+   1+4 in 10: tightest cut 7 slack 25 allowed
+   5+0 in 13: tightest cut 7+21+28 slack 28 allowed
+   1+4 in 9: tightest cut 7+7+21+28 slack 15 allowed
+   1+4 in 11: tightest cut 7 slack 31 allowed
+== cuts of V105 (irr13) (types [7, 7, 21, 21, 21, 28])
+   Y =              7  dim   7  cap   7  two-row demand   7  full demand   7  (full/cap = 1.0000)
+   Y =              7  dim   7  cap   6  two-row demand   7  full demand   7  (full/cap = 1.1667)
+   Y =            7+7  dim  14  cap  13  two-row demand  13  full demand  13  (full/cap = 1.0000)
+   Y =             21  dim  21  cap  18  two-row demand  18  full demand  21  (full/cap = 1.1667)
+   Y =           7+21  dim  28  cap  25  two-row demand  25  full demand  28  (full/cap = 1.1200)
+   Y =           7+21  dim  28  cap  18  two-row demand  22  full demand  28  (full/cap = 1.5556)
+   Y =         7+7+21  dim  35  cap  19  two-row demand  28  full demand  34  (full/cap = 1.7895)
+   Y =             21  dim  21  cap  15  two-row demand  18  full demand  21  (full/cap = 1.4000)
+   Y =           7+21  dim  28  cap  22  two-row demand  22  full demand  28  (full/cap = 1.2727)
+   Y =           7+21  dim  28  cap  21  two-row demand  25  full demand  28  (full/cap = 1.3333)
+   Y =         7+7+21  dim  35  cap  28  two-row demand  28  full demand  34  (full/cap = 1.2143)
+   Y =          21+21  dim  42  cap  27  two-row demand  30  full demand  27  (full/cap = 1.0000)
+   Y =        7+21+21  dim  49  cap  34  two-row demand  34  full demand  34  (full/cap = 1.0000)
+   Y =        7+21+21  dim  49  cap  27  two-row demand  34  full demand  34  (full/cap = 1.2593)
+   Y =      7+7+21+21  dim  56  cap  28  two-row demand  31  full demand  28  (full/cap = 1.0000)
+   Y =             21  dim  21  cap  18  two-row demand  21  full demand  21  (full/cap = 1.1667)
+   Y =           7+21  dim  28  cap  25  two-row demand  24  full demand  27  (full/cap = 1.0800)
+   Y =           7+21  dim  28  cap  24  two-row demand  25  full demand  27  (full/cap = 1.1250)
+   Y =         7+7+21  dim  35  cap  25  two-row demand  27  full demand  33  (full/cap = 1.3200)
+   Y =          21+21  dim  42  cap  30  two-row demand  37  full demand  34  (full/cap = 1.1333)
+   Y =        7+21+21  dim  49  cap  31  two-row demand  40  full demand  40  (full/cap = 1.2903)
+   Y =        7+21+21  dim  49  cap  24  two-row demand  38  full demand  40  (full/cap = 1.6667)
+   Y =      7+7+21+21  dim  56  cap  25  two-row demand  34  full demand  34  (full/cap = 1.3600)
+   Y =          21+21  dim  42  cap  21  two-row demand  30  full demand  34  (full/cap = 1.6190)
+   Y =        7+21+21  dim  49  cap  28  two-row demand  33  full demand  40  (full/cap = 1.4286)
+   Y =        7+21+21  dim  49  cap  27  two-row demand  34  full demand  40  (full/cap = 1.4815)
+   Y =      7+7+21+21  dim  56  cap  28  two-row demand  36  full demand  34  (full/cap = 1.2143)
+   Y =       21+21+21  dim  63  cap  27  two-row demand  34  full demand  40  (full/cap = 1.4815)
+   Y =     7+21+21+21  dim  70  cap  28  two-row demand  31  full demand  34  (full/cap = 1.2143)
+   Y =     7+21+21+21  dim  70  cap  21  two-row demand  29  full demand  34  (full/cap = 1.6190)
+   Y =   7+7+21+21+21  dim  77  cap  22  two-row demand  25  full demand  28  (full/cap = 1.2727)
+   Y =             28  dim  28  cap  22  two-row demand  25  full demand  28  (full/cap = 1.2727)
+   Y =           7+28  dim  35  cap  21  two-row demand  29  full demand  34  (full/cap = 1.6190)
+   Y =           7+28  dim  35  cap  28  two-row demand  31  full demand  34  (full/cap = 1.2143)
+   Y =         7+7+28  dim  42  cap  27  two-row demand  34  full demand  40  (full/cap = 1.4815)
+   Y =          21+28  dim  49  cap  28  two-row demand  36  full demand  34  (full/cap = 1.2143)
+   Y =        7+21+28  dim  56  cap  27  two-row demand  34  full demand  40  (full/cap = 1.4815)
+   Y =        7+21+28  dim  56  cap  28  two-row demand  33  full demand  40  (full/cap = 1.4286)
+   Y =      7+7+21+28  dim  63  cap  21  two-row demand  30  full demand  34  (full/cap = 1.6190)
+   Y =          21+28  dim  49  cap  25  two-row demand  34  full demand  34  (full/cap = 1.3600)
+   Y =        7+21+28  dim  56  cap  24  two-row demand  38  full demand  40  (full/cap = 1.6667)
+   Y =        7+21+28  dim  56  cap  31  two-row demand  40  full demand  40  (full/cap = 1.2903)
+   Y =      7+7+21+28  dim  63  cap  30  two-row demand  37  full demand  34  (full/cap = 1.1333)
+   Y =       21+21+28  dim  70  cap  25  two-row demand  27  full demand  33  (full/cap = 1.3200)
+   Y =     7+21+21+28  dim  77  cap  24  two-row demand  25  full demand  27  (full/cap = 1.1250)
+   Y =     7+21+21+28  dim  77  cap  25  two-row demand  24  full demand  27  (full/cap = 1.0800)
+   Y =   7+7+21+21+28  dim  84  cap  18  two-row demand  21  full demand  21  (full/cap = 1.1667)
+   Y =          21+28  dim  49  cap  28  two-row demand  31  full demand  28  (full/cap = 1.0000)
+   Y =        7+21+28  dim  56  cap  27  two-row demand  34  full demand  34  (full/cap = 1.2593)
+   Y =        7+21+28  dim  56  cap  34  two-row demand  34  full demand  34  (full/cap = 1.0000)
+   Y =      7+7+21+28  dim  63  cap  27  two-row demand  30  full demand  27  (full/cap = 1.0000)
+   Y =       21+21+28  dim  70  cap  28  two-row demand  28  full demand  34  (full/cap = 1.2143)
+   Y =     7+21+21+28  dim  77  cap  21  two-row demand  25  full demand  28  (full/cap = 1.3333)
+   Y =     7+21+21+28  dim  77  cap  22  two-row demand  22  full demand  28  (full/cap = 1.2727)
+   Y =   7+7+21+21+28  dim  84  cap  15  two-row demand  18  full demand  21  (full/cap = 1.4000)
+   Y =       21+21+28  dim  70  cap  19  two-row demand  28  full demand  34  (full/cap = 1.7895)
+   Y =     7+21+21+28  dim  77  cap  18  two-row demand  22  full demand  28  (full/cap = 1.5556)
+   Y =     7+21+21+28  dim  77  cap  25  two-row demand  25  full demand  28  (full/cap = 1.1200)
+   Y =   7+7+21+21+28  dim  84  cap  18  two-row demand  18  full demand  21  (full/cap = 1.1667)
+   Y =    21+21+21+28  dim  91  cap  13  two-row demand  13  full demand  13  (full/cap = 1.0000)
+   Y =  7+21+21+21+28  dim  98  cap   6  two-row demand   7  full demand   7  (full/cap = 1.1667)
+   Y =  7+21+21+21+28  dim  98  cap   7  two-row demand   7  full demand   7  (full/cap = 1.0000)
+   Y = 7+7+21+21+21+28  dim 105  cap   0  two-row demand   0  full demand   0  (full/cap = inf)
+   5+0 in 14: tightest cut 7 slack 49 allowed
+   4+1 in 13: tightest cut 7 slack 43 allowed
+   3+2 in 12: tightest cut 7 slack 37 allowed
+   2+3 in 11: tightest cut 7 slack 31 allowed
+   1+4 in 10: tightest cut 7 slack 25 allowed
+   5+0 in 13: tightest cut 7 slack 43 allowed
+   1+4 in 9: tightest cut 7 slack 19 allowed
+   1+4 in 11: tightest cut 7 slack 31 allowed

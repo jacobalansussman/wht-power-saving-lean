@@ -1,0 +1,14 @@
+sphere sizes agree with engine_m.py (m = 3, 4, 5)
+m=2: eigenvalues [-3, 1, 6]; kappa_m <= 3/2 = 1.500000 (eigenvalue 1)
+m=3: eigenvalues [-7, -1, 5, 14]; kappa_m <= 7/4 = 1.750000 (eigenvalue 5)
+m=4: eigenvalues [-15, -5, 3, 13, 30]; kappa_m <= 15/8 = 1.875000 (eigenvalue 13)
+m=5: eigenvalues [-31, -13, -1, 11, 29, 62]; kappa_m <= 31/16 = 1.937500 (eigenvalue 29)
+m=6: eigenvalues [-63, -29, -9, 7, 27, 61, 126]; kappa_m <= 63/32 = 1.968750 (eigenvalue 61)
+m=7: eigenvalues [-127, -61, -25, -1, 23, 59, 125, 254]; kappa_m <= 127/64 = 1.984375 (eigenvalue 125)
+m=8: eigenvalues [-255, -125, -57, -17, 15, 55, 123, 253, 510]; kappa_m <= 255/128 = 1.992188 (eigenvalue 253)
+m=9: eigenvalues [-511, -253, -121, -49, -1, 47, 119, 251, 509, 1022]; kappa_m <= 511/256 = 1.996094 (eigenvalue 509)
+m=10: eigenvalues [-1023, -509, -249, -113, -33, 31, 111, 247, 507, 1021, 2046]; kappa_m <= 1023/512 = 1.998047 (eigenvalue 1021)
+m=11: eigenvalues [-2047, -1021, -505, -241, -97, -1, 95, 239, 503, 1019, 2045, 4094]; kappa_m <= 2047/1024 = 1.999023 (eigenvalue 2045)
+m=12: eigenvalues [-4095, -2045, -1017, -497, -225, -65, 63, 223, 495, 1015, 2043, 4093, 8190]; kappa_m <= 4095/2048 = 1.999512 (eigenvalue 4093)
+brute m=2: 15 Lagrangians; point cut {U : v in U}: P_m/P_1 = 3/2 = 1.500000 <= spectral 1.500000: True
+brute m=3: 135 Lagrangians; point cut {U : v in U}: P_m/P_1 = 7/4 = 1.750000 <= spectral 1.750000: True

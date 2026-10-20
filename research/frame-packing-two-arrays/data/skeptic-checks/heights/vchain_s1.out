@@ -1,0 +1,8 @@
+m=2 heights=level,colevel      W=2 {'moves': 170, 'rejected': 131, 'multi_input_kept': 23, 'fail_a': 0, 'fail_b': 0, 'fail_c': 0, 'fail_d': 0, 'maxdeg': 2, 'mindeg': 0}
+m=2 heights=colevel,mid,level  W=3 {'moves': 251, 'rejected': 83, 'multi_input_kept': 24, 'fail_a': 0, 'fail_b': 0, 'fail_c': 0, 'fail_d': 0, 'maxdeg': 2, 'mindeg': 0}
+m=2 heights=vee,level          W=2 {'moves': 181, 'rejected': 109, 'multi_input_kept': 0, 'fail_a': 0, 'fail_b': 0, 'fail_c': 0, 'fail_d': 0, 'maxdeg': 2, 'mindeg': -1}
+m=2 heights=mid,cap1,vee       W=3 {'moves': 226, 'rejected': 96, 'multi_input_kept': 16, 'fail_a': 0, 'fail_b': 0, 'fail_c': 0, 'fail_d': 0, 'maxdeg': 2, 'mindeg': -1}
+m=3 heights=level,colevel      W=2 {'moves': 58, 'rejected': 33, 'multi_input_kept': 0, 'fail_a': 0, 'fail_b': 0, 'fail_c': 0, 'fail_d': 0, 'maxdeg': 3, 'mindeg': 0}
+m=3 heights=colevel,mid,level  W=3 {'moves': 78, 'rejected': 28, 'multi_input_kept': 8, 'fail_a': 0, 'fail_b': 0, 'fail_c': 0, 'fail_d': 0, 'maxdeg': 2, 'mindeg': 0}
+m=3 heights=vee,level          W=2 {'moves': 59, 'rejected': 31, 'multi_input_kept': 0, 'fail_a': 0, 'fail_b': 0, 'fail_c': 0, 'fail_d': 0, 'maxdeg': 3, 'mindeg': -1}
+m=3 heights=mid,cap1,vee       W=3 {'moves': 83, 'rejected': 28, 'multi_input_kept': 0, 'fail_a': 0, 'fail_b': 0, 'fail_c': 0, 'fail_d': 0, 'maxdeg': 1, 'mindeg': -1}

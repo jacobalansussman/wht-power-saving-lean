@@ -1,0 +1,7 @@
+m=2 plain   moves=4  height system exists: True  -> cannot save (Theorem C);  best Theorem-C bound M >= 4 (W*m = 4)
+m=2 gaugeX  moves=4  height system exists: False  -> not excluded by Theorem C;  best Theorem-C bound M >= 3 (W*m = 4)
+m=2 HOLO3   moves=6  height system exists: True  -> cannot save (Theorem C);  best Theorem-C bound M >= 6 (W*m = 6)
+m=3 plain   moves=6  height system exists: True  -> cannot save (Theorem C);  best Theorem-C bound M >= 6 (W*m = 6)
+m=3 gaugeX  moves=6  height system exists: False  -> not excluded by Theorem C;  best Theorem-C bound M >= 5 (W*m = 6)
+m=3 HOLO3   moves=9  height system exists: True  -> cannot save (Theorem C);  best Theorem-C bound M >= 9 (W*m = 9)
+m=3 C6O3    moves=6  height system exists: True  -> cannot save (Theorem C);  best Theorem-C bound M >= 6 (W*m = 6)

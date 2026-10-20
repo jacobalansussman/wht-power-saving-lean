@@ -1,0 +1,5 @@
+FAIL convolve  n=   5000 m=   33 same  f64  path=1 vs numpy 1.14e+00  err/exact: fc64 5.75e-01 numpy 1.13e-16  ratio 5107914981803412.00
+FAIL convolve  n=   5000 m=   33 same  c128 path=1 vs numpy 1.30e+00  err/exact: fc64 5.18e-01 numpy 6.84e-17  ratio 7575147847777433.00
+FAIL convolve  n= 100000 m=  257 same  f64  path=1 vs numpy 1.10e+00  err/exact: fc64 3.29e-01 numpy 5.16e-17  ratio 6372823018458994.00
+FAIL convolve  n= 100000 m=  257 same  c128 path=1 vs numpy 1.45e+00  err/exact: fc64 1.61e-01 numpy 4.78e-17  ratio 3375073206697127.50
+BROKEN COPY: 4 of 4 checks FAIL (all must FAIL)

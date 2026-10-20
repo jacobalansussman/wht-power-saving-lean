@@ -1,0 +1,2 @@
+p = 1048549, engine: 14 classes of D b from 4000 samples; (K:N, K:Nperp, R:N, R:Nperp) -> count: {(True, True, False, False): 7, (False, True, False, False): 7}  [0s]
+p = 1048549, widened: 1680 classes of D b from 60000 samples; (K:N, K:Nperp, R:N, R:Nperp) -> count: {(False, True, False, False): 1575, (True, True, False, False): 105}  [8s]

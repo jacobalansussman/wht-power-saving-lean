@@ -1,0 +1,8 @@
+U8X word: x (start dim, final dim): [(1, 9)] | y: [(0, 8)] | centre frames dims: [8, 8, 8, 8, 8, 8, 8, 8] sum 64
+local rank per call 5634 ; leftover widths 3778 ; difference 1856 (= 224*8 + 64 = 1856 )
+replica: W 896 paid 65088 D 320 ; per word (8 replicas): W 7168 D 2560
+  two-sided m=74,   0 crossings per GB call (4 GB calls): D per replica 1216
+  two-sided m=74, 112 crossings per GB call (4 GB calls): D per replica 768
+  two-sided m=74, 224 crossings per GB call (4 GB calls): D per replica 320
+U8X0HQ: root a* = 0.001625663093 ; floor(a* 1e10) = 16256630 ; inequality at K=16256630: True, at K+1: False ; DFT figure (K-1)/1e10 = 1.6256629e-03
+U8 exact fill: W 7168 rank-48 pieces 2397 remainder 0 D 2560 root 1.6647327e-03

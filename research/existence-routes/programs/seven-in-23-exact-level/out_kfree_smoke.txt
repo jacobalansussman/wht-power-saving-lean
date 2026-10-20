@@ -1,0 +1,8 @@
+[lift] seed 21: cells lam1 1 t1 16 F 137 K 731; |B_m sample| 151 of 4000; q order 7 found; 23s
+[d4] d1 0, d0 14, |S| 16
+[kfree] 600 letters of B'_m, act computed  60s
+[kfree] sigma = V alone, a = 1, mode d4: 4096 equations, 600 unknowns; relative residual 9.25e-01  62s
+[kfree] trivial irrep alone, 6 characters: relative residual 6.85e-15
+[kfree] JOINT (V at a = 1 + trivial at all 6): 4192 equations, 600 unknowns; relative residual 9.28e-01; V part 9.44e-01, trivial part 8.84e-01  64s
+[kfree] joint matrix rank 600 of 4192 rows (singular values: top 5.41e+01, smallest 1.74e+01)
+done 65s

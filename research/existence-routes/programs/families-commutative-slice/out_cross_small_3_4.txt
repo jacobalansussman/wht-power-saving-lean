@@ -1,0 +1,11 @@
+m=3 W=4 M=12: deletion-passing 1, clique-excluded 0, newly excluded 0, all pass 1
+m=3 W=4 M=13: deletion-passing 8, clique-excluded 0, newly excluded 0, all pass 8
+m=3 W=4 M=14: deletion-passing 36, clique-excluded 0, newly excluded 0, all pass 36
+--- solver on NEWLY EXCLUDED multisets (must stall) ---
+--- solver on multisets that pass every test (control) ---
+  M=12 S=[1, 1, 1, 1, 2, 2, 2, 2, 4, 4, 4, 4] -> solver best residual over 3 orders 1.668e-17
+  M=13 S=[1, 1, 1, 1, 1, 2, 2, 2, 2, 4, 4, 4, 4] -> solver best residual over 3 orders 7.161e-23
+  M=13 S=[1, 1, 1, 1, 2, 2, 2, 2, 2, 4, 4, 4, 4] -> solver best residual over 3 orders 2.624e-17
+  M=13 S=[1, 1, 1, 1, 2, 2, 2, 2, 3, 4, 4, 4, 4] -> solver best residual over 3 orders 2.631e-15
+  M=13 S=[1, 1, 1, 1, 2, 2, 2, 2, 4, 4, 4, 4, 4] -> solver best residual over 3 orders 7.161e-23
+  M=13 S=[1, 1, 1, 1, 2, 2, 2, 2, 4, 4, 4, 4, 5] -> solver best residual over 3 orders 3.035e-18

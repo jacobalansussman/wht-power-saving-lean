@@ -1,0 +1,12 @@
+Levi elements n (mod scalar) with n c n^-1 = c^2 exactly and n^3 = 1: 7
+d = split of c'_n on N/E_N: [76, 74, 74]
+p = split of c'_n on c'-invariant part of N/E_N (dims 40 8 ): [12, 10, 10]
+n fixes 2 of the 14 distance-1 cells
+representative letters found for 1 fixed cells
+fixed cell [0, 9, 16, 25, 32, 41, 48, 57] : sigma(n) on (N+mN)/N = [28, 26, 26]
+|B mod scalars| scanned: 688128
+cell with second element 9 : letters in the coset commuting with n up to scalar: 48  exactly: 48
+Pauli twists n X^a Z^b of order 3 (mod scalar): 16
+twist demand split (76, 74, 74)  cap splits on the fixed cells ((28, 26, 26),)  count 10
+twist demand split (74, 76, 74)  cap splits on the fixed cells ((26, 26, 28),)  count 4
+twist demand split (74, 74, 76)  cap splits on the fixed cells ((26, 28, 26),)  count 2

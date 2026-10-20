@@ -1,0 +1,3 @@
+geometry sha256 ok; ports 111, orthogonal ordered pairs 6470, sampled 6470
+(1) global distance between a swapped 0-bank content's end frame (S-local K_T) and its own (S-local K_S): {2: 6470}
+(2) boundary-transfer condition rho(1,S) rho(1,T) rho(2,T) == rho(2,S): 0 of 6470 sampled pairs (control S = T: True)

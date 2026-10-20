@@ -1,0 +1,8 @@
+conventions: monomial lifts and dir z have exactly the frame-game images (20 random p, all z)
+case 1 (order-3 control, frame-game readout, lifted): max relative error by f: {1: 2.2e-16, 2: 1.7, 3: 4.7e-16, 4: 1.7, 5: 7e-16}
+Lam(T)^2 = 1 at f=5 (T is an involution in Sp): 3.1617775049868513e-16
+1 hom error 2.4e-16
+2 hom error 0.97
+3 hom error 2.0
+4 hom error 1.4
+5 hom error 7.1e-16

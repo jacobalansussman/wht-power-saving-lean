@@ -1,0 +1,10 @@
+== A633 class 0: frames 20, degree [9], m 3, twists 360, free 18
+A633/c0 M=1 states=2 max(L1+L2)=1 (I) holds  [0.1s]
+A633/c0 M=2 states=58 max(L1+L2)=2 (I) holds  [0.2s]
+A633/c0 M=3 states=2942 max(L1+L2)=3 (I) holds  [12.9s]
+A633/c0 M=4 raw successors=651287 (I) holds goal no | M=5: 66359 states passed the filter, goal-in-one no  [35.8s]
+== A633 class 1: frames 20, degree [9], m 3, twists 360, free 18
+A633/c1 M=1 states=2 max(L1+L2)=1 (I) holds  [0.1s]
+A633/c1 M=2 states=58 max(L1+L2)=2 (I) holds  [0.2s]
+A633/c1 M=3 states=2942 max(L1+L2)=3 (I) holds  [12.9s]
+A633/c1 M=4 raw successors=652776 (I) holds goal no | M=5: 66445 states passed the filter, goal-in-one no  [35.8s]

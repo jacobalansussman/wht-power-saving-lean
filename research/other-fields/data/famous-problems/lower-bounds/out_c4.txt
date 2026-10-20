@@ -1,0 +1,21 @@
+c4_dft_polymult_equivalence.py:24: RuntimeWarning: divide by zero encountered in matmul
+  return np.exp(-2j * np.pi * np.outer(k, k) / n) @ x
+c4_dft_polymult_equivalence.py:24: RuntimeWarning: overflow encountered in matmul
+  return np.exp(-2j * np.pi * np.outer(k, k) / n) @ x
+c4_dft_polymult_equivalence.py:24: RuntimeWarning: invalid value encountered in matmul
+  return np.exp(-2j * np.pi * np.outer(k, k) / n) @ x
+c4_dft_polymult_equivalence.py:45: RuntimeWarning: divide by zero encountered in matmul
+  return inv @ (A * B)
+c4_dft_polymult_equivalence.py:45: RuntimeWarning: overflow encountered in matmul
+  return inv @ (A * B)
+c4_dft_polymult_equivalence.py:45: RuntimeWarning: invalid value encountered in matmul
+  return inv @ (A * B)
+n=  2: |Bluestein - DFT| = 0.0e+00   |DFT-based product - naive product| = 3.6e-16
+n=  3: |Bluestein - DFT| = 4.5e-16   |DFT-based product - naive product| = 1.7e-15
+n=  5: |Bluestein - DFT| = 5.7e-16   |DFT-based product - naive product| = 3.9e-15
+n=  7: |Bluestein - DFT| = 2.2e-15   |DFT-based product - naive product| = 5.9e-15
+n=  8: |Bluestein - DFT| = 5.3e-15   |DFT-based product - naive product| = 1.9e-14
+n= 13: |Bluestein - DFT| = 1.4e-14   |DFT-based product - naive product| = 3.9e-14
+n= 16: |Bluestein - DFT| = 2.0e-14   |DFT-based product - naive product| = 6.6e-14
+n= 30: |Bluestein - DFT| = 1.1e-13   |DFT-based product - naive product| = 2.6e-13
+n= 31: |Bluestein - DFT| = 8.2e-14   |DFT-based product - naive product| = 1.6e-13

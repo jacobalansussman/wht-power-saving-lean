@@ -1,0 +1,8 @@
+k=2: all 16 sign patterns on F_2^2: 'separable' == 'not +-affine' for 16; separable 8; RM(1,2) cosets 2 (frustrated classes 1)
+k=3: all 256 sign patterns on F_2^3: 'separable' == 'not +-affine' for 256; separable 240; RM(1,3) cosets 16 (frustrated classes 15)
+k=3: smallest frustrated support has 4 points, e.g. (0, 1, 2, 3) (XOR of the points = 0: an affine plane), pattern bits 1; exact solve agrees: True
+k=4: smallest frustrated support has 4 points, e.g. (0, 1, 2, 3) (XOR of the points = 0: an affine plane), pattern bits 1; exact solve agrees: True
+k=4 random supports: criterion agrees with exact solve in 60/60
+covering radius of RM(1,2) = max nonlinearity on F_2^2: 1
+covering radius of RM(1,3) = max nonlinearity on F_2^3: 2
+covering radius of RM(1,4) = max nonlinearity on F_2^4: 6

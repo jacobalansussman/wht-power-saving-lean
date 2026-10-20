@@ -1,0 +1,24 @@
+f=3: rank 711 of 722, per-f exact null 11, nonzero spectrum bottom: 0.0044 0.0051 0.0056 0.0070 0.0093 0.0108 0.0118 0.0123
+f=4: rank 712 of 722, per-f exact null 10, nonzero spectrum bottom: 0.0115 0.0151 0.0250 0.0285 0.0314 0.0316 0.0336 0.0346
+f=5: rank 712 of 722, per-f exact null 10, nonzero spectrum bottom: 0.0135 0.0177 0.0309 0.0338 0.0372 0.0386 0.0412 0.0457
+f=6: rank 712 of 722, per-f exact null 10, nonzero spectrum bottom: 0.0146 0.0192 0.0334 0.0356 0.0383 0.0450 0.0455 0.0489
+relations exact at every f in [4, 5, 6] (fixed coefficients): 10 ; complement dim 712
+  f=3: on the complement: smallest eigenvalues 0.00000 0.00443 0.00508 0.00563 0.00704 0.00927 0.01083 0.01176 ; # below 1e-9: 1
+  f=4: on the complement: smallest eigenvalues 0.01145 0.01512 0.02497 0.02852 0.03136 0.03159 0.03360 0.03460 ; # below 1e-9: 0
+  f=5: on the complement: smallest eigenvalues 0.01346 0.01774 0.03091 0.03381 0.03725 0.03862 0.04119 0.04573 ; # below 1e-9: 0
+  f=6: on the complement: smallest eigenvalues 0.01459 0.01916 0.03339 0.03561 0.03835 0.04496 0.04547 0.04889 ; # below 1e-9: 0
+  max |G_4 - G_3| = 5.000e-01
+  max |G_5 - G_4| = 3.953e-01
+  max |G_6 - G_5| = 2.795e-01
+smallest-eigenvalue combination at f=6 (eig 0.01459), top terms:
+   -0.722-0.027i  1.D3.1
+   +0.256-0.097i  1.D3.fCS
+   +0.256-0.097i  fCS.D3.1
+   +0.255-0.097i  lCS.D3.1
+   +0.255-0.097i  1.D3.lCS
+   +0.104-0.102i  1.D3.Pr0
+   +0.104-0.102i  Pr0.D3.1
+   +0.104-0.100i  1.D3.Pr1
+   +0.104-0.100i  Pr1.D3.1
+   -0.057+0.091i  fCS.D3.fCS
+  its norm^2 at each f: f3:0.01455 f4:0.01396 f5:0.01397 f6:0.01459

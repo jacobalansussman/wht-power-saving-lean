@@ -1,0 +1,205 @@
+ROOT OAI.PowerSaving.transform_mainC588M: closure size 42000
+  REACHES engine_of_ginv_401 [OAI.PowerSaving.GX.engine_of_ginv_401]
+  REACHES GXD.ginvOfZ [GXD.ginvOfZ]
+  absent  GXD.ginvOf []
+  REACHES GXD.gscalOfZ [GXD.gscalOfZ]
+  REACHES GXD.glabOfZ [GXD.glabOfZ]
+  REACHES GX.GLabZ.inv [OAI.PowerSaving.GX.GLabZ.inv]
+  REACHES GLab.ValidE.glabZ [GLab.ValidE.glabZ]
+  REACHES GS.ScalOKZ [GS.ScalOKZ]
+  REACHES GS.scalCheckZ [GS.scalCheckZ]
+  REACHES GS.yCheckZ [GS.yCheckZ]
+  REACHES GS.eCheckZ [GS.eCheckZ]
+  REACHES GS.eCheckZ_sound [GS.eCheckZ_sound]
+  REACHES GS.XRunZ.of_check [GS.XRunZ.of_check]
+  REACHES GS.YRunZ.of_check [GS.YRunZ.of_check]
+  REACHES GXD.C588M.ginv [GXD.C588M.ginv]
+  REACHES GXD.C588M.scalOKZ [GXD.C588M.scalOKZ]
+  REACHES GXD.C588M.validE [GXD.C588M.validE]
+  REACHES GXD.C588M.es_ok [GXD.C588M.es_ok]
+  REACHES GXD.C588M.price [GXD.C588M.price]
+  REACHES GXD.C588M.sched [GXD.C588M.sched]
+  REACHES GXD.C588M.scal0_ok [GXD.C588M.scal0_ok]
+  REACHES GXD.C588M.scal3_ok [GXD.C588M.scal3_ok]
+  REACHES GXD.C588M.ychk_ok [GXD.C588M.ychk_ok]
+  REACHES GXD.C588M.echk0_ok [GXD.C588M.echk0_ok]
+  REACHES GXD.C588M.echk2_ok [GXD.C588M.echk2_ok]
+  REACHES GXD.C588M.sched_ok [GXD.C588M.sched_ok]
+  REACHES fold_C588Mx [OAI.PowerSaving.BlockAccounting.fold_C588Mx]
+  REACHES C588M.unit_cost_x [OAI.PowerSaving.BridgeRate.C588M.unit_cost_x]
+  REACHES SeamC588M.engine_C588Mx [OAI.PowerSaving.SeamC588M.engine_C588Mx]
+  REACHES RAM.hillsC588M_program [OAI.PowerSaving.RAM.hillsC588M_program]
+  absent  GXD.C588.ginv []  (no such constant in env)
+  absent  GXD.C588.scalOK []  (no such constant in env)
+  absent  RAM.hillsC588_program []  (no such constant in env)
+  absent  RAM.hills_program []
+  absent  transform_mainC588 []  (no such constant in env)
+  absent  fold_C588x []  (no such constant in env)
+  module Work.FourierC588M.ArbitraryLength: 49 constants reached
+  module Work.FourierC588M.Asymptotics: 22 constants reached
+  module Work.FourierC588M.Goal: 6 constants reached
+  module Work.FourierC588M.Main: 15 constants reached
+  module Work.FourierC588M.Seam: 13 constants reached
+  module Work.FourierC588M.SectorAlgorithm: 28 constants reached
+  module Work.FourierC588M.SynchronizedAlgorithm: 15 constants reached
+  module Work.FourierC588M.TransformProgram: 22 constants reached
+  module Work.FourierC588M.UniformBounds: 21 constants reached
+  module Work.FourierC588M.WorkingCompiler: 26 constants reached
+  module Work.FourierC588M.WorkingPreparation: 31 constants reached
+  module Work.FourierC588M.WorkingTransform: 5 constants reached
+  module Work.GCert.Data.C588MCert: 13 constants reached
+  module Work.GCert.Data.C588MGlue401: 17 constants reached
+  module Work.GCert.Data.C588MPrice: 11 constants reached
+  module Work.GCert.Data.C588MScalOK: 1 constants reached
+  module Work.GCert.Data.Gen.C588M: 1 constants reached
+  module Work.GCert.Data.Gen.C588M.S0: 164 constants reached
+  module Work.GCert.Data.Gen.C588MEChk: 6 constants reached
+  module Work.GCert.Data.Gen.C588MEnd: 2 constants reached
+  module Work.GCert.Data.Gen.C588MGl: 4 constants reached
+  module Work.GCert.Data.Gen.C588MHist: 50 constants reached
+  module Work.GCert.Data.Gen.C588MPar: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows0: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows1: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows10: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows11: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows12: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows13: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows14: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows15: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows16: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows17: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows2: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows3: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows4: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows5: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows6: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows7: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows8: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows9: 1 constants reached
+  module Work.GCert.Data.Gen.C588MScal0: 2 constants reached
+  module Work.GCert.Data.Gen.C588MScal1: 2 constants reached
+  module Work.GCert.Data.Gen.C588MScal2: 2 constants reached
+  module Work.GCert.Data.Gen.C588MScal3: 2 constants reached
+  module Work.GCert.Data.Gen.C588MSched: 65 constants reached
+  module Work.GCert.Data.Gen.C588MSeg0: 2 constants reached
+  module Work.GCert.Data.Gen.C588MSeg1: 2 constants reached
+  module Work.GCert.Data.Gen.C588MSeg2: 2 constants reached
+  module Work.GCert.Data.Gen.C588MSeg3: 2 constants reached
+  module Work.GCert.Data.Gen.C588MSegF: 2 constants reached
+  module Work.GCert.Data.Gen.C588MTab0: 2 constants reached
+  module Work.GCert.Data.Gen.C588MTab1: 2 constants reached
+  module Work.GCert.Data.Gen.C588MTab2: 2 constants reached
+  module Work.GCert.Data.Gen.C588MTab3: 2 constants reached
+  module Work.GCert.Data.Gen.C588MYChk: 2 constants reached
+  module Work.GCert.Data.InstC588M: 11 constants reached
+  module Work.GCert.Data.RateC588Mx: 2 constants reached
+  module Work.XMut.Dirt: 13 constants reached
+  module Work.XMut.ECheckZ: 10 constants reached
+  module Work.XMut.GInv: 53 constants reached
+  module Work.XMut.Glue: 14 constants reached
+  module Work.XMut.Labels: 26 constants reached
+  module Work.XMut.Scal: 28 constants reached
+  module Work.XMut.ScalarZ: 71 constants reached
+ROOT OAI.PowerSaving.convolution_mainC588M: closure size 42023
+  REACHES engine_of_ginv_401 [OAI.PowerSaving.GX.engine_of_ginv_401]
+  REACHES GXD.ginvOfZ [GXD.ginvOfZ]
+  absent  GXD.ginvOf []
+  REACHES GXD.gscalOfZ [GXD.gscalOfZ]
+  REACHES GXD.glabOfZ [GXD.glabOfZ]
+  REACHES GX.GLabZ.inv [OAI.PowerSaving.GX.GLabZ.inv]
+  REACHES GLab.ValidE.glabZ [GLab.ValidE.glabZ]
+  REACHES GS.ScalOKZ [GS.ScalOKZ]
+  REACHES GS.scalCheckZ [GS.scalCheckZ]
+  REACHES GS.yCheckZ [GS.yCheckZ]
+  REACHES GS.eCheckZ [GS.eCheckZ]
+  REACHES GS.eCheckZ_sound [GS.eCheckZ_sound]
+  REACHES GS.XRunZ.of_check [GS.XRunZ.of_check]
+  REACHES GS.YRunZ.of_check [GS.YRunZ.of_check]
+  REACHES GXD.C588M.ginv [GXD.C588M.ginv]
+  REACHES GXD.C588M.scalOKZ [GXD.C588M.scalOKZ]
+  REACHES GXD.C588M.validE [GXD.C588M.validE]
+  REACHES GXD.C588M.es_ok [GXD.C588M.es_ok]
+  REACHES GXD.C588M.price [GXD.C588M.price]
+  REACHES GXD.C588M.sched [GXD.C588M.sched]
+  REACHES GXD.C588M.scal0_ok [GXD.C588M.scal0_ok]
+  REACHES GXD.C588M.scal3_ok [GXD.C588M.scal3_ok]
+  REACHES GXD.C588M.ychk_ok [GXD.C588M.ychk_ok]
+  REACHES GXD.C588M.echk0_ok [GXD.C588M.echk0_ok]
+  REACHES GXD.C588M.echk2_ok [GXD.C588M.echk2_ok]
+  REACHES GXD.C588M.sched_ok [GXD.C588M.sched_ok]
+  REACHES fold_C588Mx [OAI.PowerSaving.BlockAccounting.fold_C588Mx]
+  REACHES C588M.unit_cost_x [OAI.PowerSaving.BridgeRate.C588M.unit_cost_x]
+  REACHES SeamC588M.engine_C588Mx [OAI.PowerSaving.SeamC588M.engine_C588Mx]
+  REACHES RAM.hillsC588M_program [OAI.PowerSaving.RAM.hillsC588M_program]
+  absent  GXD.C588.ginv []  (no such constant in env)
+  absent  GXD.C588.scalOK []  (no such constant in env)
+  absent  RAM.hillsC588_program []  (no such constant in env)
+  absent  RAM.hills_program []
+  absent  transform_mainC588 []  (no such constant in env)
+  absent  fold_C588x []  (no such constant in env)
+  module Work.FourierC588M.ArbitraryLength: 49 constants reached
+  module Work.FourierC588M.Asymptotics: 22 constants reached
+  module Work.FourierC588M.ConvolutionProgram: 5 constants reached
+  module Work.FourierC588M.Goal: 6 constants reached
+  module Work.FourierC588M.Main: 15 constants reached
+  module Work.FourierC588M.Seam: 13 constants reached
+  module Work.FourierC588M.SectorAlgorithm: 28 constants reached
+  module Work.FourierC588M.SynchronizedAlgorithm: 15 constants reached
+  module Work.FourierC588M.TransformProgram: 27 constants reached
+  module Work.FourierC588M.UniformBounds: 21 constants reached
+  module Work.FourierC588M.WorkingCompiler: 26 constants reached
+  module Work.FourierC588M.WorkingPreparation: 31 constants reached
+  module Work.FourierC588M.WorkingTransform: 5 constants reached
+  module Work.GCert.Data.C588MCert: 13 constants reached
+  module Work.GCert.Data.C588MGlue401: 17 constants reached
+  module Work.GCert.Data.C588MPrice: 11 constants reached
+  module Work.GCert.Data.C588MScalOK: 1 constants reached
+  module Work.GCert.Data.Gen.C588M: 1 constants reached
+  module Work.GCert.Data.Gen.C588M.S0: 164 constants reached
+  module Work.GCert.Data.Gen.C588MEChk: 6 constants reached
+  module Work.GCert.Data.Gen.C588MEnd: 2 constants reached
+  module Work.GCert.Data.Gen.C588MGl: 4 constants reached
+  module Work.GCert.Data.Gen.C588MHist: 50 constants reached
+  module Work.GCert.Data.Gen.C588MPar: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows0: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows1: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows10: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows11: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows12: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows13: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows14: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows15: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows16: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows17: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows2: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows3: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows4: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows5: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows6: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows7: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows8: 1 constants reached
+  module Work.GCert.Data.Gen.C588MRows9: 1 constants reached
+  module Work.GCert.Data.Gen.C588MScal0: 2 constants reached
+  module Work.GCert.Data.Gen.C588MScal1: 2 constants reached
+  module Work.GCert.Data.Gen.C588MScal2: 2 constants reached
+  module Work.GCert.Data.Gen.C588MScal3: 2 constants reached
+  module Work.GCert.Data.Gen.C588MSched: 65 constants reached
+  module Work.GCert.Data.Gen.C588MSeg0: 2 constants reached
+  module Work.GCert.Data.Gen.C588MSeg1: 2 constants reached
+  module Work.GCert.Data.Gen.C588MSeg2: 2 constants reached
+  module Work.GCert.Data.Gen.C588MSeg3: 2 constants reached
+  module Work.GCert.Data.Gen.C588MSegF: 2 constants reached
+  module Work.GCert.Data.Gen.C588MTab0: 2 constants reached
+  module Work.GCert.Data.Gen.C588MTab1: 2 constants reached
+  module Work.GCert.Data.Gen.C588MTab2: 2 constants reached
+  module Work.GCert.Data.Gen.C588MTab3: 2 constants reached
+  module Work.GCert.Data.Gen.C588MYChk: 2 constants reached
+  module Work.GCert.Data.InstC588M: 11 constants reached
+  module Work.GCert.Data.RateC588Mx: 2 constants reached
+  module Work.XMut.Dirt: 13 constants reached
+  module Work.XMut.ECheckZ: 10 constants reached
+  module Work.XMut.GInv: 53 constants reached
+  module Work.XMut.Glue: 14 constants reached
+  module Work.XMut.Labels: 26 constants reached
+  module Work.XMut.Scal: 28 constants reached
+  module Work.XMut.ScalarZ: 71 constants reached

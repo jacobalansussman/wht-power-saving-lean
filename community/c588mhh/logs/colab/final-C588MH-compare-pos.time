@@ -1,0 +1,23 @@
+	Command being timed: "env LEAN_PATH=/dev/shm/hl3/tree:/dev/shm/hl3/pk/mathlib:/dev/shm/hl3/pk/batteries:/dev/shm/hl3/pk/Qq:/dev/shm/hl3/pk/aesop:/dev/shm/hl3/pk/proofwidgets:/dev/shm/hl3/pk/importGraph:/dev/shm/hl3/pk/LeanSearchClient:/dev/shm/hl3/pk/plausible:/dev/shm/hl3/pk/Cli /content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean --run /content/work/ours/Compare.lean Work.FourierC588MH.UniformFourierChallenge Work.FourierC588MH.Main OAI.PowerSaving.transform_mainC588MH OAI.PowerSaving.convolution_mainC588MH"
+	User time (seconds): 67.35
+	System time (seconds): 18.18
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:25.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 16105016
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 34
+	Minor (reclaiming a frame) page faults: 2391980
+	Voluntary context switches: 2103
+	Involuntary context switches: 1887
+	Swaps: 0
+	File system inputs: 2904
+	File system outputs: 56
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

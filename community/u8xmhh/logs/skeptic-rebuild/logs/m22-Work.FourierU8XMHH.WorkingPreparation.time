@@ -1,0 +1,23 @@
+	Command being timed: "env LEAN_NUM_THREADS=1 lake build Work.FourierU8XMHH.WorkingPreparation"
+	User time (seconds): 31.77
+	System time (seconds): 7.92
+	Percent of CPU this job got: 88%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:45.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7059936
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 222336
+	Voluntary context switches: 69503
+	Involuntary context switches: 45780
+	Swaps: 0
+	File system inputs: 272
+	File system outputs: 13560
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

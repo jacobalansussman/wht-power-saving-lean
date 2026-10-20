@@ -1,0 +1,9 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 11:36:08
+[heavy.sh] got slot heavy-2 11:49:06
+=== sat_light s2 6x2 --caseB 11:49:06
+sat_light unit s2 K 10 light classes [6, 6] caseB True vars 106062 clauses 387215
+./batch3.sh: line 4: 62136 Alarm clock: 14         perl -e 'alarm 1200; exec @ARGV' $V -I sat_light.py $arg 2>&1
+exit 142
+=== sat_light s2 6x8 --caseB 12:09:07
+sat_light unit s2 K 10 light classes [6, 6, 6, 6, 6, 6, 6, 6] caseB True vars 121932 clauses 524039
+stopped by agent at 12:09:18 (time box); unresolved

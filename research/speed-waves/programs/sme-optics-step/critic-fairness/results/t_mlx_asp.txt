@@ -1,0 +1,37 @@
+[timing lock] waiting for timing lock 05:44:16
+[timing lock] got lock 05:46:48; load: { 33.84 23.71 15.72 }
+CHECK N=1024 GPU c64 vs numpy c128: max rel 1.125e-06  rel RMS 6.640e-07
+CHECK N=1024 broken (conj H): rel RMS 1.415e+00 (must be large)
+rep 0 N=1024 GPU c64 step 1.882 ms
+rep 1 N=1024 GPU c64 step 1.864 ms
+rep 2 N=1024 GPU c64 step 1.878 ms
+rep 3 N=1024 GPU c64 step 1.885 ms
+rep 4 N=1024 GPU c64 step 1.908 ms
+rep 5 N=1024 GPU c64 step 1.898 ms
+rep 6 N=1024 GPU c64 step 1.906 ms
+rep 7 N=1024 GPU c64 step 1.931 ms
+rep 8 N=1024 GPU c64 step 2.058 ms
+RESULT N=1024 MLX GPU complex64 step best 1.864 median 1.898 ms (calls/rep 128)
+CHECK N=2048 GPU c64 vs numpy c128: max rel 9.779e-07  rel RMS 6.639e-07
+CHECK N=2048 broken (conj H): rel RMS 1.415e+00 (must be large)
+rep 0 N=2048 GPU c64 step 6.880 ms
+rep 1 N=2048 GPU c64 step 6.792 ms
+rep 2 N=2048 GPU c64 step 6.885 ms
+rep 3 N=2048 GPU c64 step 6.780 ms
+rep 4 N=2048 GPU c64 step 6.783 ms
+rep 5 N=2048 GPU c64 step 6.819 ms
+rep 6 N=2048 GPU c64 step 6.801 ms
+rep 7 N=2048 GPU c64 step 6.768 ms
+rep 8 N=2048 GPU c64 step 6.742 ms
+RESULT N=2048 MLX GPU complex64 step best 6.742 median 6.792 ms (calls/rep 32)
+rep 0 N=4096 GPU c64 step 26.130 ms
+rep 1 N=4096 GPU c64 step 26.141 ms
+rep 2 N=4096 GPU c64 step 26.911 ms
+rep 3 N=4096 GPU c64 step 26.262 ms
+rep 4 N=4096 GPU c64 step 26.694 ms
+rep 5 N=4096 GPU c64 step 26.893 ms
+rep 6 N=4096 GPU c64 step 26.294 ms
+rep 7 N=4096 GPU c64 step 26.344 ms
+rep 8 N=4096 GPU c64 step 27.300 ms
+RESULT N=4096 MLX GPU complex64 step best 26.130 median 26.344 ms (calls/rep 8)
+MLXDONE

@@ -1,0 +1,32 @@
+word                                                      W banks     D          N    N/Wd        D/N     a* (ours)    Lean K
+Shea C588 (#588 atm3, 112 source copies, 5040 banks)  12208  5040  2560  2071832.4  289.04 1.2356e-03 1.2331698e-03  12331686  ours K=12331698
+C588 repack (5009 banks)                              12177  5009  2560  2063187.3  287.83 1.2408e-03 1.2383292e-03  12383292  ours K=12383292
+C588M (mutable sources)                               11200  4032  2560  1884752.2  262.94 1.3583e-03 1.3552624e-03  13552607  ours K=13552623
+C588MHH (mutable + same-run hosting)                   7279   111  2560  1626016.7  226.84 1.5744e-03 1.5699336e-03  15699306  ours K=15699335
+U8X (U8 word, exit frames, source copies, banks)      11889  4721  2560  2010969.0  280.55 1.2730e-03 1.2704037e-03  12704024  ours K=12704037
+U8XM (+ mutable sources, 5 centre copies)             10939  3771  2560  1841649.0  256.93 1.3901e-03 1.3868875e-03  13868857  ours K=13868874
+U8XMHH (+ same-run hosting)                            7478   310  2560  1575809.5  219.84 1.6246e-03 1.6197739e-03  16197706  ours K=16197738
+U8X0 (no centre copies, banks)                        10895  3727  2560  1833725.4  255.82 1.3961e-03 1.3928637e-03  13928619  ours K=13928637
+U8X0HH (no copies + hosting)                           7491   323  2560  1570091.5  219.04 1.6305e-03 1.6256541e-03  16256507  ours K=16256540
+U8X0HQ (one-pad table, term_le4) = our best            7491   323  2560  1570082.7  219.04 1.6305e-03 1.6256631e-03  16256630  ours K=16256630
+T74E (hub T74 gauge44 word, our lowering, banks)      10855  3687  2560  1819157.8  253.79 1.4072e-03 1.4040079e-03  14040061  ours K=14040079
+
+Decomposition: profile = 72 x local word + rest (idle remainders, bank/host pieces, pads, copies)
+Shea C588 (#588 atm3, 112 source copies, 5040 banks) local: rank  498528 N  1711211.8 | rest: rank  390096 N  360620.6 (17.41 % of N)  rest={1: 2448, 8: 5448, 16: 3584, 32: 3584, 48: 3584}
+C588 repack (5009 banks)                             local: rank  498528 N  1711211.8 | rest: rank  387833 N  351975.4 (17.06 % of N)  rest={1: 724, 8: 5376, 16: 3584, 32: 3584, 37: 1, 48: 3584}
+C588M (mutable sources)                              local: rank  425952 N  1533976.4 | rest: rank  389088 N  350775.8 (18.61 % of N)  rest={8: 5376, 16: 3584, 28: 72, 32: 3584, 48: 3584}
+C588MHH (mutable + same-run hosting)                 local: rank  425952 N  1533976.4 | rest: rank  102855 N   92040.4 ( 5.66 % of N)  rest={1: 1792, 3: 64, 4: 352, 5: 1696, 7: 320, 8: 1008, 39: 1, 48: 1680}
+U8XM (+ mutable sources, 5 centre copies)            local: rank  408888 N  1492778.2 | rest: rank  387099 N  348870.9 (18.94 % of N)  rest={8: 5376, 16: 3584, 27: 1, 32: 3584, 48: 3584}
+U8XMHH (+ same-run hosting)                          local: rank  408888 N  1492778.2 | rest: rank  134446 N   83031.4 ( 5.27 % of N)  rest={1: 2321, 2: 880, 3: 256, 4: 896, 12: 64, 48: 2608, 61: 1}
+U8X0 (no centre copies, banks)                       local: rank  405648 N  1484865.9 | rest: rank  387127 N  348859.6 (19.02 % of N)  rest={8: 5376, 16: 3584, 32: 3584, 48: 3584, 55: 1}
+U8X0HH (no copies + hosting)                         local: rank  405648 N  1484865.9 | rest: rank  138635 N   85225.6 ( 5.43 % of N)  rest={1: 2320, 2: 865, 3: 256, 4: 896, 12: 96, 48: 2688, 57: 1}
+U8X0HQ (one-pad table, term_le4) = our best          local: rank  405648 N  1484865.9 | rest: rank  138635 N   85216.8 ( 5.43 % of N)  rest={1: 2320, 2: 864, 3: 256, 4: 896, 12: 96, 48: 2688, 59: 1}
+
+Ceilings and what-ifs (price a* of the same fold; our own arithmetic)
+  U8 at an exact fill (W 7168, no banks, idle remainder {48: 2397}): W 7168 D 2560 N 1533104.1 D/N 1.6698e-03 a* 1.6647327e-03
+  U8, idle remainder in rank-72 pieces (not legal in this network; scale): W 7168 D 2560 N 1486452.9 D/N 1.7222e-03 a* 1.7166666e-03
+  U8X0HQ profile, W forced to 7168 (bank pieces kept): infeasible rank, shown for scale: W 7168 D -21019 N 1570082.7 D/N -1.3387e-02 a* 0.0000000e+00
+
+Deficit per data array: U8/C588 2560/7168 = 0.35714285714285715 ; T74 (hub, T = 37) 23680/66304 = 0.35714285714285715
+Network geometry (pr717 P4): m = 1 + 8(2P+1), W = 2PTv, D = T[2Pv - (2P+1)cst]; P=4, T=8, v=112, cst=64 -> 73 7168 2560
+  sensitivity D + 72 (one unit per call; e.g. a centre climb 8 -> 7): a* 1.6715740e-03 (+2.824 %)

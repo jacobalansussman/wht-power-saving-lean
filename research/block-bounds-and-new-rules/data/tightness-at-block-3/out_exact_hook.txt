@@ -1,0 +1,8 @@
+EXACT over Q(i): f(d1) = 80
+EXACT over Q(i): f(d2*d1 (rank-2 block)) = 144
+EXACT over Q(i): f(d4*d2*d1 (kernel)) = 224
+EXACT over Q(i): f(d2*S0*d1) = 144
+EXACT over Q(i): f(d2*CS01*d1) = 152
+EXACT over Q(i): f(d2*TOF2*d1) = 160
+EXACT over Q(i): f(d2*TOF2*d1) = 160
+BATCH2DONE

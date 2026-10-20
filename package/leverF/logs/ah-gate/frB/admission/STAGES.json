@@ -1,0 +1,113 @@
+[
+  {
+    "command": [
+      "/content/work/ah-gate/vB/bin/python",
+      "-B",
+      "/content/work/ah-gate/frB/admission/package/reconstruct.py",
+      "--out",
+      "/content/work/ah-gate/frB/admission/owners"
+    ],
+    "exit_code": 0,
+    "log_sha256": "e86b5eef2f8b4150be3599e15e5821fbb949c4a23a2c8148fb0fdcc21e05edb7",
+    "name": "owners",
+    "script_sha256": "5472811c24aef3852dc7e189dff5060076a6c0b25bfde928da50dcfe9b5bdc15",
+    "seconds": 94.44011832499746
+  },
+  {
+    "command": [
+      "/content/work/ah-gate/vB/bin/python",
+      "-B",
+      "/content/work/ah-gate/frB/admission/package/lift_parent.py",
+      "--package",
+      "/content/work/ah-gate/frB/admission/package",
+      "--owners",
+      "/content/work/ah-gate/frB/admission/owners",
+      "--out",
+      "/content/work/ah-gate/frB/admission/parent-data"
+    ],
+    "exit_code": 0,
+    "log_sha256": "2d738a7322c4303d36deb694e6d79b6b51bfe098642bf5cda8abc319f03d66ab",
+    "name": "parent-lift",
+    "script_sha256": "9a1edd7d4ab4a2f2ac8d15b42b7e40f93653d65026bac59e4c1ce80b486bd60e",
+    "seconds": 197.95558731799974
+  },
+  {
+    "command": [
+      "/content/work/ah-gate/vB/bin/python",
+      "-B",
+      "/content/work/ah-gate/frB/admission/package/new/rebind.py",
+      "/content/work/ah-gate/frB/admission/package",
+      "/content/work/ah-gate/frB/inputs/native-cache/08e6c96fbe3dfec96cb8451b3867ef8c1a214109ecd1e5af7fcc28e0f05728d0/local",
+      "/content/work/ah-gate/frB/inputs/native-cache/d83c2ec9cecc0ad092d34ea4080b28a4fd7199579356b6d5a8fc6cd53ff93299/local",
+      "/content/work/ah-gate/frB/admission/rebound"
+    ],
+    "exit_code": 0,
+    "log_sha256": "4c6918a78b4de859464132cfbe74370f3c6ee6c13a0c7249d50a77e9924bf617",
+    "name": "rebind",
+    "script_sha256": "52f8b4cec2dab69cbe590e1fd0f7a68e1b35de5a540bd22fd2adfce07a92b46b",
+    "seconds": 22.083798495998053
+  },
+  {
+    "command": [
+      "/content/work/ah-gate/vB/bin/python",
+      "-B",
+      "/content/work/ah-gate/frB/admission/layout/packing74/replay.py",
+      "--data",
+      "/content/work/ah-gate/frB/admission/layout/packing74/candidate",
+      "--work",
+      "/content/work/ah-gate/frB/admission/discovery",
+      "--local",
+      "/content/work/ah-gate/frB/inputs/native-cache/08e6c96fbe3dfec96cb8451b3867ef8c1a214109ecd1e5af7fcc28e0f05728d0/local",
+      "--discover"
+    ],
+    "exit_code": 0,
+    "log_sha256": "da583c5993e93ddef703fab1a1d1def380c9f99b5bbfe84697fd4250debcf39e",
+    "name": "discovery",
+    "script_sha256": "01da5270d47e9b9932a98c4511c5bd85e25324f64568126792b8c3fdcbb632a4",
+    "seconds": 1772.6739092300013
+  },
+  {
+    "command": [
+      "/content/work/ah-gate/vB/bin/python",
+      "-B",
+      "/content/work/ah-gate/frB/admission/package/outer/check_ledger.py"
+    ],
+    "exit_code": 0,
+    "log_sha256": "97ca1c8c1eec7c9fde59a018056b42109dc0773eb6defaaf40d06ce4e21fd7d9",
+    "name": "outer-check_ledger.py",
+    "script_sha256": "1dd56009986eb14dd6603c9193c7ad71dd45c7d005bf71c9cd3f916e66f54d98",
+    "seconds": 0.15263834300276358
+  },
+  {
+    "command": [
+      "/content/work/ah-gate/vB/bin/python",
+      "-B",
+      "/content/work/ah-gate/frB/admission/package/outer/independent_check.py"
+    ],
+    "exit_code": 0,
+    "log_sha256": "5b923287f4c9f7717bc688abdcee3d6eb396a0e8677677c663497af9c471f956",
+    "name": "outer-independent_check.py",
+    "script_sha256": "a5a0361539ec7cae9eb6c0371f857919335a1720040f22af291aa3e34fc864c7",
+    "seconds": 0.10536780999973416
+  },
+  {
+    "command": [
+      "/content/work/ah-gate/vB/bin/python",
+      "-B",
+      "/content/work/ah-gate/frB/admission/package/verify_release.py",
+      "--main",
+      "/content/work/ah-gate/frB",
+      "--work",
+      "/content/work/ah-gate/frB/admission/release",
+      "--native-cache",
+      "/content/work/ah-gate/frB/inputs/native-cache",
+      "--jobs",
+      "3"
+    ],
+    "exit_code": 0,
+    "log_sha256": "ddbead8f6bf7a5da5c870fe93f3f839cb697d9c9008759b56cb56cfea5a2765f",
+    "name": "release",
+    "script_sha256": "6cfefe80c02a6c0f243f50ca9e146e1ab1440b84a033d8a71d42be5a5fa27f6b",
+    "seconds": 2857.8144918539983
+  }
+]

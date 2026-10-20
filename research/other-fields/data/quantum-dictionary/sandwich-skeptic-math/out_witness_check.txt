@@ -1,0 +1,11 @@
+u_S.u_T = 1
+|X_S|,|Y_S|,|X_T|,|Y_T| = 5 5 5 5  X_T & Y_S empty (old: S does not know T): True
+frames identified as subspace frames: 57=L_<100,011>, 134=L_<111>, 71=L_0, 47=L_<101>, 55=L_<011>, 51=L_<101,010>, 79=L_<100>
+132 subspace frame? False  excess of 132: 2
+{'a0_in_XS': True, 'phia0_in_XT': True, 'astar_in_YS': True, 'phiastar_in_YT': True, 'mu_in_YS': True, 'phimu_in_XT': True, 'nu_in_XS': True, 'phinu_in_YT': True, 'cost': 2}
+symplectic phi satisfying all four frame conditions: 32
+one phi: images of (100|000),(010|000),(001|000),(000|100),(000|010),(000|001): ['(101|110)', '(110|000)', '(001|111)', '(101|000)', '(000|010)', '(000|111)']
+phi(134) = 132 in every solution: True
+midpoints of 57..71: ['134', '55', '79']
+(u_T|0) in every X_T frame: False ; in some: False | (u_T|u_T) in every X_T frame: True | (0|u_S) in every Y_S frame: True
+twisted pairing omega(p_T, phi q_S) = 0 ; omega(p_S, phi^-1 q_T) via omega(phi p_S, q_T) = 0

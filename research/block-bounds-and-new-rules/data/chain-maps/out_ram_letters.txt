@@ -1,0 +1,74 @@
+per-entry RAM ops (incl. 1 look + 1 write of the moved value); table ops / 2^k; exhaustive check
+m=2 f=2 r=0 k= 4  row ^= row<<1, all rows                    ops/entry= 22  tables/2^k= 10.312  OK
+m=2 f=2 r=0 k= 4  inverse (prefix XOR, table)                ops/entry= 14  tables/2^k= 12.000  OK
+m=2 f=2 r=0 k= 4  row0 ^= row1<<1                            ops/entry= 17  tables/2^k= 10.312  OK
+m=2 f=2 r=0 k= 4  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 27  tables/2^k= 10.312  OK
+m=2 f=2 r=0 k= 4  its inverse (adjugate + det^-1 table)      ops/entry= 29  tables/2^k= 11.062  OK
+m=2 f=2 r=0 k= 4  carry: +1 across column digits             ops/entry= 47  tables/2^k= 16.562  OK
+m=2 f=2 r=0 k= 4  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k= 16.688  OK
+m=2 f=2 r=0 k= 4  random GL(4,F2) as 4 row letters           ops/entry= 22  tables/2^k= 13.312  OK
+m=2 f=3 r=1 k= 7  row ^= row<<1, all rows                    ops/entry= 22  tables/2^k=  5.414  OK
+m=2 f=3 r=1 k= 7  inverse (prefix XOR, table)                ops/entry= 14  tables/2^k=  5.906  OK
+m=2 f=3 r=1 k= 7  row0 ^= row1<<1                            ops/entry= 17  tables/2^k=  5.414  OK
+m=2 f=3 r=1 k= 7  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 27  tables/2^k=  5.414  OK
+m=2 f=3 r=1 k= 7  its inverse (adjugate + det^-1 table)      ops/entry= 29  tables/2^k=  5.633  OK
+m=2 f=3 r=1 k= 7  carry: +1 across column digits             ops/entry= 47  tables/2^k=  9.398  OK
+m=2 f=3 r=1 k= 7  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k=  9.461  OK
+m=2 f=3 r=1 k= 7  random GL(6,F2) as 4 row letters           ops/entry= 22  tables/2^k=  6.289  OK
+m=2 f=4 r=0 k= 8  row ^= row<<1, all rows                    ops/entry= 22  tables/2^k= 10.957  OK
+m=2 f=4 r=0 k= 8  inverse (prefix XOR, table)                ops/entry= 14  tables/2^k= 11.484  OK
+m=2 f=4 r=0 k= 8  row0 ^= row1<<1                            ops/entry= 17  tables/2^k= 10.957  OK
+m=2 f=4 r=0 k= 8  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 27  tables/2^k= 10.957  OK
+m=2 f=4 r=0 k= 8  its inverse (adjugate + det^-1 table)      ops/entry= 29  tables/2^k= 11.191  OK
+m=2 f=4 r=0 k= 8  carry: +1 across column digits             ops/entry= 47  tables/2^k= 19.902  OK
+m=2 f=4 r=0 k= 8  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k= 19.980  OK
+m=2 f=4 r=0 k= 8  random GL(8,F2) as 8 row letters           ops/entry= 38  tables/2^k= 12.832  OK
+m=2 f=5 r=1 k=11  row ^= row<<1, all rows                    ops/entry= 22  tables/2^k=  5.495  OK
+m=2 f=5 r=1 k=11  inverse (prefix XOR, table)                ops/entry= 14  tables/2^k=  5.631  OK
+m=2 f=5 r=1 k=11  row0 ^= row1<<1                            ops/entry= 17  tables/2^k=  5.495  OK
+m=2 f=5 r=1 k=11  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 27  tables/2^k=  5.495  OK
+m=2 f=5 r=1 k=11  its inverse (adjugate + det^-1 table)      ops/entry= 29  tables/2^k=  5.555  OK
+m=2 f=5 r=1 k=11  carry: +1 across column digits             ops/entry= 47  tables/2^k= 10.226  OK
+m=2 f=5 r=1 k=11  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k= 10.248  OK
+m=2 f=5 r=1 k=11  random GL(10,F2) as 7 row letters          ops/entry= 34  tables/2^k=  5.918  OK
+m=2 f=6 r=0 k=12  row ^= row<<1, all rows                    ops/entry= 22  tables/2^k= 10.997  OK
+m=2 f=6 r=0 k=12  inverse (prefix XOR, table)                ops/entry= 14  tables/2^k= 11.136  OK
+m=2 f=6 r=0 k=12  row0 ^= row1<<1                            ops/entry= 17  tables/2^k= 10.997  OK
+m=2 f=6 r=0 k=12  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 27  tables/2^k= 10.997  OK
+m=2 f=6 r=0 k=12  its inverse (adjugate + det^-1 table)      ops/entry= 29  tables/2^k= 11.059  OK
+m=2 f=6 r=0 k=12  carry: +1 across column digits             ops/entry= 47  tables/2^k= 20.726  OK
+m=2 f=6 r=0 k=12  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k= 20.749  OK
+m=2 f=6 r=0 k=12  random GL(12,F2) as 5 row letters          ops/entry= 26  tables/2^k= 11.305  OK
+m=3 f=2 r=0 k= 6  row ^= row<<1, all rows                    ops/entry= 31  tables/2^k=  2.578  OK
+m=3 f=2 r=0 k= 6  inverse (prefix XOR, table)                ops/entry= 19  tables/2^k=  3.000  OK
+m=3 f=2 r=0 k= 6  row0 ^= row1<<1                            ops/entry= 21  tables/2^k=  2.578  OK
+m=3 f=2 r=0 k= 6  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 31  tables/2^k=  2.578  OK
+m=3 f=2 r=0 k= 6  its inverse (adjugate + det^-1 table)      ops/entry= 33  tables/2^k=  2.766  OK
+m=3 f=2 r=0 k= 6  carry: +1 across column digits             ops/entry= 68  tables/2^k=  4.141  OK
+m=3 f=2 r=0 k= 6  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k=  4.172  OK
+m=3 f=2 r=0 k= 6  random GL(6,F2) as 12 row letters          ops/entry= 55  tables/2^k=  4.828  OK
+m=3 f=3 r=1 k=10  row ^= row<<1, all rows                    ops/entry= 31  tables/2^k=  0.677  OK
+m=3 f=3 r=1 k=10  inverse (prefix XOR, table)                ops/entry= 19  tables/2^k=  0.738  OK
+m=3 f=3 r=1 k=10  row0 ^= row1<<1                            ops/entry= 21  tables/2^k=  0.677  OK
+m=3 f=3 r=1 k=10  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 31  tables/2^k=  0.677  OK
+m=3 f=3 r=1 k=10  its inverse (adjugate + det^-1 table)      ops/entry= 33  tables/2^k=  0.704  OK
+m=3 f=3 r=1 k=10  carry: +1 across column digits             ops/entry= 68  tables/2^k=  1.175  OK
+m=3 f=3 r=1 k=10  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k=  1.183  OK
+m=3 f=3 r=1 k=10  random GL(9,F2) as 10 row letters          ops/entry= 47  tables/2^k=  0.950  OK
+m=3 f=4 r=0 k=12  row ^= row<<1, all rows                    ops/entry= 31  tables/2^k=  0.685  OK
+m=3 f=4 r=0 k=12  inverse (prefix XOR, table)                ops/entry= 19  tables/2^k=  0.718  OK
+m=3 f=4 r=0 k=12  row0 ^= row1<<1                            ops/entry= 21  tables/2^k=  0.685  OK
+m=3 f=4 r=0 k=12  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 31  tables/2^k=  0.685  OK
+m=3 f=4 r=0 k=12  its inverse (adjugate + det^-1 table)      ops/entry= 33  tables/2^k=  0.699  OK
+m=3 f=4 r=0 k=12  carry: +1 across column digits             ops/entry= 68  tables/2^k=  1.244  OK
+m=3 f=4 r=0 k=12  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k=  1.249  OK
+m=3 f=4 r=0 k=12  random GL(12,F2) as 23 row letters         ops/entry= 99  tables/2^k=  1.022  OK
+m=4 f=3 r=0 k=12  row ^= row<<1, all rows                    ops/entry= 40  tables/2^k=  0.169  OK
+m=4 f=3 r=0 k=12  inverse (prefix XOR, table)                ops/entry= 24  tables/2^k=  0.185  OK
+m=4 f=3 r=0 k=12  row0 ^= row1<<1                            ops/entry= 25  tables/2^k=  0.169  OK
+m=4 f=3 r=0 k=12  polynomial matrix [[1+S,S^2],[S,1]]        ops/entry= 35  tables/2^k=  0.169  OK
+m=4 f=3 r=0 k=12  its inverse (adjugate + det^-1 table)      ops/entry= 37  tables/2^k=  0.176  OK
+m=4 f=3 r=0 k=12  carry: +1 across column digits             ops/entry= 89  tables/2^k=  0.294  OK
+m=4 f=3 r=0 k=12  phase i^|row0 & row1<<1| (CZ chain)        ops/entry= 13  tables/2^k=  0.296  OK
+m=4 f=3 r=0 k=12  random GL(12,F2) as 26 row letters         ops/entry=112  tables/2^k=  0.347  OK
+exit 0

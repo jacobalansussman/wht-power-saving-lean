@@ -1,0 +1,13 @@
+Wed Oct 14 06:10:58 EDT 2026
+m=4 W=4 n=13: N=10, multisets 20058300, candidate functionals 512
+certified failing: 20058300, passing the Phi-test: 0
+      227.87 real       220.87 user         3.27 sys
+Wed Oct 14 06:14:46 EDT 2026
+m=4 W=4 n=13: multisets enumerated 20058300, certificate entries 20058300, complete: True
+  exclusion certificates valid: 20058300; entries without certificate: 0 (of which pass the test by brute force: 0)
+RESULT: PASS -> 20058300 of 20058300 multisets EXCLUDED by certificate; 0 pass the test
+      370.88 real       355.61 user         3.89 sys
+            92143616  maximum resident set size
+Wed Oct 14 06:20:57 EDT 2026
+--- note (14 Oct): a second, separate run of the same checker at background priority (06:16-06:22) also printed
+    RESULT: PASS -> 20058300 of 20058300 multisets EXCLUDED by certificate; 0 pass the test

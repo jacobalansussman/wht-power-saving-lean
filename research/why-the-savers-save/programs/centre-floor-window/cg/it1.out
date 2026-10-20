@@ -1,0 +1,8 @@
+uniform over pool: z=0.338715 floor=23.6187 (worst W dim 1)
+round 0: candidates 345, exact z=0.146759 -> floor 54.5112 (worst W dim 6, |L(W)| 20)
+round 1: candidates 745, exact z=0.140564 -> floor 56.9135 (worst W dim 6, |L(W)| 20)
+round 2: candidates 1145, exact z=0.138222 -> floor 57.8780 (worst W dim 6, |L(W)| 20)
+round 3: candidates 1535, exact z=0.136595 -> floor 58.5673 (worst W dim 7, |L(W)| 34)
+round 4: candidates 1716, exact z=0.136307 -> floor 58.6912 (worst W dim 6, |L(W)| 20)
+round 5: candidates 1793, exact z=0.136137 -> floor 58.7642 (worst W dim 6, |L(W)| 20)
+BEST: exact z=0.13613730 floor=58.7642 per call; mass on frames 0.1359, on bases 0.8641; worst W dim 6 basis: 263 133 71 38 20 12

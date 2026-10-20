@@ -1,0 +1,21 @@
+'OAI.PowerSaving.transform_mainU8XMHH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainU8XMHH' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.PowerSaving.transform_mainU8XMHH : OAI.PowerSaving.DFTGoalU8XMHH
+OAI.PowerSaving.convolution_mainU8XMHH : OAI.PowerSaving.ConvGoalU8XMHH
+def OAI.PowerSaving.decimalExponentU8XMHH : ℝ :=
+1 - 16197705 / 10 ^ 10
+def OAI.PowerSaving.DFTGoalU8XMHH : Prop :=
+∃ order solve W, OAI.PowerSaving.DFTProgram order solve W ∧ OAI.PowerSaving.TimeBoundsU8XMHH W
+def OAI.PowerSaving.TimeBoundsU8XMHH : (ℕ → ℕ) → Prop :=
+fun W =>
+  have W' := fun n => ↑(W n);
+  W' =O[Filter.atTop] OAI.PowerSaving.paperTime ∧
+    W' =O[Filter.atTop] OAI.PowerSaving.decimalTimeU8XMHH ∧ W' =o[Filter.atTop] OAI.PowerSaving.nlogn
+OAI.PowerSaving.DFTGoalU8XMHH is declared in module some (Work.FourierU8XMHH.Goal)
+OAI.PowerSaving.transform_mainU8XMHH is declared in module some (Work.FourierU8XMHH.Main)
+OAI.PowerSaving.DFTProgram is declared in module some (OAI.Computability.FourierTransform.Goal)
+OAI.PowerSaving.ConvProgram is declared in module some (OAI.Computability.FourierTransform.Goal)
+OAI.PowerSaving.paperTime is declared in module some (OAI.Computability.FourierTransform.Goal)
+OAI.PowerSaving.nlogn is declared in module some (OAI.Computability.FourierTransform.Goal)
+OAI.PowerSaving.XHost.engine_of_ginv_host is declared in module some (Work.XHost.HEnd)
+OAI.PowerSaving.RAM.hillsU8XMHH_program is declared in module some (Work.FourierU8XMHH.Seam)

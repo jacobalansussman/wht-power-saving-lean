@@ -1,0 +1,33 @@
+Path-only patches (made by x-final's tools/mk_gen_tree.sh; nothing else in any program differs from the file at the
+same relative path in the workspace). GEN_ROOT is set by REGENERATE.sh to generators/tree.
+
+wht45/lever2979/x-inst/tools/mk_l2979.py  (original sha256 8b2114054757468ff17747d4377203dc38aa495331b2c73e83c82dc598c7ad47, patched 0d2f07049d4a679e24131a1273ffe0244a8c8c5f2970f29605754a5393a16a08)
+    49c49
+    < SRC = '<work>/wht43/bound-check/fsp-build/stage-u8x0hq'
+    ---
+    > SRC = os.environ['GEN_ROOT'] + '/wht43/bound-check/fsp-build/stage-u8x0hq'
+    52,53c52,53
+    < RATE = '<work>/wht45/lever/e-r45m1/tools/mk_rate_mixed.py'
+    < RATELEAN = '<work>/wht45/lever2979/x-inst/lean/Work/Mixed/Rate%s.lean'
+    ---
+    > RATE = os.environ['GEN_ROOT'] + '/wht45/lever/e-r45m1/tools/mk_rate_mixed.py'
+    > RATELEAN = os.environ['GEN_ROOT'] + '/wht45/lever2979/x-inst/lean/Work/Mixed/Rate%s.lean'
+    55,56c55,56
+    < PROFILE_FILES = {'2979': '<work>/wht45/lever2979/x-inst/tools/profile2979-palt.json'}
+    < SEAMCONST = '<work>/wht45/lever/e-r45m1/out/bundle/Work/Mixed/SeamConst.lean'
+    ---
+    > PROFILE_FILES = {'2979': os.environ['GEN_ROOT'] + '/wht45/lever2979/x-inst/tools/profile2979-palt.json'}
+    > SEAMCONST = os.environ['GEN_ROOT'] + '/wht45/lever/e-r45m1/out/bundle/Work/Mixed/SeamConst.lean'
+    58c58
+    < REF = '<work>/wht43/bound-check/k-build/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean'
+    ---
+    > REF = os.environ['GEN_ROOT'] + '/wht43/bound-check/k-build/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean'
+
+wht45/lever/e-r45m1/tools/mk_rate_mixed.py  (original sha256 ec73845024017ddb9be973b29b9c4063ef788a12f9fc1e31af4c3ed331bc0eee, patched bb56d9998536b506e49df349edbb40801d812a34d442d489dac361fc79c55757)
+    31c31
+    < sys.path.insert(0, '<work>/wht43/bound-check/x-pack/tools4')
+    ---
+    > sys.path.insert(0, os.environ['GEN_ROOT'] + '/wht43/bound-check/x-pack/tools4')
+
+wht43/bound-check/k-combine/toolkit: a symbolic link to ../k-lower/toolkit in the workspace; here a copy of that folder.
+wht45/lever2979/x-words/tools/pack_ceil2.py reads its helper modules from $KWORD_TOOLS (set by REGENERATE.sh); unchanged.

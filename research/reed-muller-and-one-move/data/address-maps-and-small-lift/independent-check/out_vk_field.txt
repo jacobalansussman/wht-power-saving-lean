@@ -1,0 +1,21 @@
+m=3: self-dual basis (3, 5, 7)
+  F1: sum f_j = 1: True; sum f_j^(1+2^i) = 0 all i: True
+  F2: tr Q = Tr(b) on 200 random forms: True
+  F4: all multiplication matrices symmetric: True; sigma^k sigma^kT = mult(alpha^2k): True
+  canonical placement: n_odd values [0, 4]; rho = 2.0
+  8.4: equivariant complements: system rank 9 of 9 unknowns, consistent True; number of complements = 2^0
+m=4: self-dual basis (8, 11, 13, 15)
+  F1: sum f_j = 1: True; sum f_j^(1+2^i) = 0 all i: True
+  F2: tr Q = Tr(b) on 200 random forms: True
+  F4: all multiplication matrices symmetric: True; sigma^k sigma^kT = mult(alpha^2k): True
+  canonical placement: n_odd values [0, 8]; rho = 2.0
+  F3: every form's copy-parity vector is (Tr(b alpha^-k))_k for some b: False; linear parts on weight-2^(m-2) forms: 0 nonzero of 15
+  m=4 all 420 targets: rho histogram {np.float64(2.5): 225, np.float64(3.0): 180, np.float64(2.0): 15}; rho=2 targets lying in U: 15
+  8.4: equivariant complements: system rank 24 of 24 unknowns, consistent True; number of complements = 2^0
+m=5: self-dual basis (3, 5, 12, 17, 26)
+  F1: sum f_j = 1: True; sum f_j^(1+2^i) = 0 all i: True
+  F2: tr Q = Tr(b) on 400 random forms: True
+  F4: all multiplication matrices symmetric: True; sigma^k sigma^kT = mult(alpha^2k): True
+  canonical placement: n_odd values [0, 16]; rho = 2.0
+  F3: every form's copy-parity vector is (Tr(b alpha^-k))_k for some b: False; linear parts on weight-2^(m-2) forms: 0 nonzero of 31
+  8.4: equivariant complements: system rank 50 of 50 unknowns, consistent True; number of complements = 2^0

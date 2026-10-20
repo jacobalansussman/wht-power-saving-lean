@@ -1,0 +1,39 @@
+{
+  "status": "PASS_LITERAL_ENLARGED_OWNER_FILL",
+  "replicas": 360,
+  "calls": 3240,
+  "roles": 1321920,
+  "owner_windows": 6480,
+  "physical_bins": 725760,
+  "changed_bins": 84240,
+  "idle_H1_consumed": 84240,
+  "idle": {
+    "3": 23328,
+    "5": 4320,
+    "48": 137952
+  },
+  "profile": {
+    "1": 8041680,
+    "2": 2306880,
+    "3": 729648,
+    "4": 353160,
+    "5": 69120,
+    "8": 25920,
+    "48": 137952
+  },
+  "controls_rejected": [
+    "same_call_family",
+    "offset_hole",
+    "closed_owner_window",
+    "overflow"
+  ],
+  "fill_sha256": "430233230c9194a52bda171afd21713351fdd02e0054230012109e44047c4c55",
+  "final_word_sha256": {
+    "base": "08e6c96fbe3dfec96cb8451b3867ef8c1a214109ecd1e5af7fcc28e0f05728d0",
+    "extra": "d83c2ec9cecc0ad092d34ea4080b28a4fd7199579356b6d5a8fc6cd53ff93299"
+  },
+  "manifest_sha256": "20340f8fd8c03297c59e1912ad1795048aa5d8bd0dd9a4c584222ed62912fd72",
+  "checker_sha256": "88315789a3f6e9296da6dcad46c0bbbc8e26c798980be32187b3fca405ae9df5",
+  "seconds": 8.125,
+  "scope": "Exact full owner role, chronology, distinctness, capacity, compact-prefix and paid histogram audit. Native/caller/outer admission handled separately."
+}

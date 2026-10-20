@@ -1,0 +1,54 @@
+m=3 plain 2 in 6: psi=11 exact=['Y1', 'Y1'] height system=True Theorem-C bound=6
+   plain cut by one move: psi=10 exact=['Y1', 'no']
+   o3 control (3-cycle address map): psi=11 exact=['Y6', 'Y6'] height system=True bound=6
+   o3 control cut by one move: psi=00 exact=['no', 'no']
+   two-frame sigma of order 2: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 7: psi=11 exact=['Y14', 'Y14'] (prediction: YES) height system=True
+   two-frame sigma of order 4: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 3: psi=11 exact=['Y6', 'Y6'] (prediction: YES) height system=True
+   two-frame sigma of order 7: psi=11 exact=['Y14', 'Y14'] (prediction: YES) height system=True
+   two-frame sigma of order 4: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 3: psi=11 exact=['Y6', 'Y6'] (prediction: YES) height system=True
+   two-frame sigma of order 2: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+m=4 plain 2 in 8: psi=11 exact=['Y1', 'Y1'] height system=True Theorem-C bound=8
+   plain cut by one move: psi=10 exact=['Y1', 'no']
+   o3 control (3-cycle address map): psi=11 exact=['Y6', 'Y6'] height system=True bound=8
+   o3 control cut by one move: psi=00 exact=['no', 'no']
+   two-frame sigma of order 7: psi=11 exact=['Y14', 'Y14'] (prediction: YES) height system=True
+   two-frame sigma of order 4: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 6: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 6: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 7: psi=11 exact=['Y14', 'Y14'] (prediction: YES) height system=True
+   two-frame sigma of order 15: psi=11 exact=['Y30', 'Y30'] (prediction: YES) height system=True
+   two-frame sigma of order 4: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 5: psi=11 exact=['Y10', 'Y10'] (prediction: YES) height system=True
+   two-frame sigma of order 3: psi=11 exact=['Y6', 'Y6'] (prediction: YES) height system=True
+   two-frame sigma of order 15: psi=11 exact=['Y30', 'Y30'] (prediction: YES) height system=True
+   two-frame sigma of order 5: psi=11 exact=['Y10', 'Y10'] (prediction: YES) height system=True
+   two-frame sigma of order 3: psi=11 exact=['Y6', 'Y6'] (prediction: YES) height system=True
+   two-frame sigma of order 2: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+m=5 plain 2 in 10: psi=11 exact=['Y1', 'Y1'] height system=True Theorem-C bound=10
+   plain cut by one move: psi=10 exact=['Y1', 'no']
+   o3 control (3-cycle address map): psi=11 exact=['Y6', 'Y6'] height system=True bound=10
+   o3 control cut by one move: psi=00 exact=['no', 'no']
+   two-frame sigma of order 31: psi=11 exact=['Y62', 'Y62'] (prediction: YES) height system=True
+   two-frame sigma of order 5: psi=11 exact=['Y10', 'Y10'] (prediction: YES) height system=True
+   two-frame sigma of order 21: psi=11 exact=['Y42', 'Y42'] (prediction: YES) height system=True
+   two-frame sigma of order 31: psi=11 exact=['Y62', 'Y62'] (prediction: YES) height system=True
+   two-frame sigma of order 12: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 8: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 21: psi=11 exact=['Y42', 'Y42'] (prediction: YES) height system=True
+   two-frame sigma of order 6: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 6: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 8: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 14: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 15: psi=11 exact=['Y30', 'Y30'] (prediction: YES) height system=True
+   two-frame sigma of order 12: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 14: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 4: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 5: psi=11 exact=['Y10', 'Y10'] (prediction: YES) height system=True
+   two-frame sigma of order 15: psi=11 exact=['Y30', 'Y30'] (prediction: YES) height system=True
+   two-frame sigma of order 7: psi=11 exact=['Y14', 'Y14'] (prediction: YES) height system=True
+   two-frame sigma of order 4: psi=11 exact=['no', 'no'] (prediction: NO) height system=True
+   two-frame sigma of order 7: psi=11 exact=['Y14', 'Y14'] (prediction: YES) height system=True
+perl -e 'alarm 120; exec @ARGV' python3 cal.py  0.41s user 0.02s system 67% cpu 0.636 total

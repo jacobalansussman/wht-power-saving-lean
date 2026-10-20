@@ -1,0 +1,31 @@
+'GXD.U8X.zc1' depends on axioms: [propext]
+'GXD.U8X.zc2' depends on axioms: [propext]
+'GXD.U8X.zc3' depends on axioms: [propext]
+'GXD.U8X.zc4' depends on axioms: [propext]
+'GXD.U8X.zc5' depends on axioms: [propext]
+'GXD.U8X.zc6' depends on axioms: [propext]
+'GXD.U8X.zc7' depends on axioms: [propext]
+'GXD.U8X.zc8' depends on axioms: [propext]
+	Command being timed: "lake env lean -DautoImplicit=false -R . -o .lake/build/lib/lean/Work/GCert/Data/Gen/U8XZChk2.olean -i .lake/build/lib/lean/Work/GCert/Data/Gen/U8XZChk2.ilean Work/GCert/Data/Gen/U8XZChk2.lean"
+	User time (seconds): 74.60
+	System time (seconds): 6.81
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:21.59
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7469308
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 607741
+	Voluntary context switches: 3238
+	Involuntary context switches: 1240
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

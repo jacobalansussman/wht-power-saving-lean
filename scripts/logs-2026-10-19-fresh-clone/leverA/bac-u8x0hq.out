@@ -1,0 +1,46 @@
+START Tue Oct 20 02:25:43 AM UTC 2026 tree=/content/work/r-finalize/shea-leverA/lean/complex588 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 package=u8x0hq
+=== STEP 01-Work.BlockAccounting.Moment4 START Tue Oct 20 02:25:43 AM UTC 2026 cmd: lake build Work.BlockAccounting.Moment4
+=== STEP 01-Work.BlockAccounting.Moment4 END rc=0 wall=2s last: Build completed successfully (3093 jobs).
+=== STEP 02-Work.XHost.U8X0HQ START Tue Oct 20 02:25:45 AM UTC 2026 cmd: lake build Work.XHost.U8X0HQ
+=== STEP 02-Work.XHost.U8X0HQ END rc=0 wall=477s last: Build completed successfully (9314 jobs).
+=== STEP 03-Work.FourierU8X0HQ.Main START Tue Oct 20 02:33:42 AM UTC 2026 cmd: lake build Work.FourierU8X0HQ.Main
+=== STEP 03-Work.FourierU8X0HQ.Main END rc=0 wall=79s last: Build completed successfully (9327 jobs).
+=== STEP 04-Work.FourierU8X0HQ.UniformFourierChallenge START Tue Oct 20 02:35:01 AM UTC 2026 cmd: lake build Work.FourierU8X0HQ.UniformFourierChallenge
+=== STEP 04-Work.FourierU8X0HQ.UniformFourierChallenge END rc=0 wall=12s last: Build completed successfully (8924 jobs).
+=== STEP 05-Work.FourierU8X0HQNeg.UniformFourierChallenge START Tue Oct 20 02:35:13 AM UTC 2026 cmd: lake build Work.FourierU8X0HQNeg.UniformFourierChallenge
+=== STEP 05-Work.FourierU8X0HQNeg.UniformFourierChallenge END rc=0 wall=12s last: Build completed successfully (8924 jobs).
+=== STEP 06-Work.FourierU8X0HQ.Axioms START Tue Oct 20 02:35:25 AM UTC 2026 cmd: lake build Work.FourierU8X0HQ.Axioms
+=== STEP 06-Work.FourierU8X0HQ.Axioms END rc=0 wall=11s last: Build completed successfully (9328 jobs).
+=== STEP 07-Work.XHost.HBank START Tue Oct 20 02:35:36 AM UTC 2026 cmd: lake build Work.XHost.HBank
+=== STEP 07-Work.XHost.HBank END rc=0 wall=6s last: Build completed successfully (9220 jobs).
+=== STEP 08-Work.XHost.HEnd START Tue Oct 20 02:35:42 AM UTC 2026 cmd: lake build Work.XHost.HEnd
+=== STEP 08-Work.XHost.HEnd END rc=0 wall=6s last: Build completed successfully (9219 jobs).
+=== STEP build-targets START Tue Oct 20 02:35:48 AM UTC 2026 cmd: lake build Work.BlockAccounting.Moment4 Work.XHost.U8X0HQ Work.FourierU8X0HQ.Main Work.FourierU8X0HQ.UniformFourierChallenge Work.FourierU8X0HQNeg.UniformFourierChallenge Work.FourierU8X0HQ.Axioms Work.XHost.HBank Work.XHost.HEnd
+=== STEP build-targets END rc=0 wall=6s last: Build completed successfully (9330 jobs).
+=== STEP axioms START Tue Oct 20 02:35:54 AM UTC 2026 cmd: lake env lean Work/FourierU8X0HQ/Axioms.lean
+=== STEP axioms END rc=0 wall=6s last: 'OAI.PowerSaving.RAM.hillsU8X0HQ_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== STEP axiom-targets START Tue Oct 20 02:36:00 AM UTC 2026 cmd: lake env lean /content/work/logs/r-finalize/leverA/bac-u8x0hq/AxiomTargets.lean
+=== STEP axiom-targets END rc=0 wall=6s last: 'OAI.PowerSaving.RAM.hillsU8X0HQ_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== STEP control-glue-axioms START Tue Oct 20 02:36:06 AM UTC 2026 cmd: lake env lean /content/work/r-finalize/repo-leverA/package/u8x0hq/meta/AxU8X0HQ.lean
+=== STEP control-glue-axioms END rc=0 wall=6s last: 'OAI.PowerSaving.CSX.GLabXZS.inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== STEP control-hostSchedK-negative START Tue Oct 20 02:36:12 AM UTC 2026 cmd: lake env lean /content/work/r-finalize/repo-leverA/package/u8x0hq/meta/HsU8X0HQNeg.lean
+=== STEP control-hostSchedK-negative END rc=0 wall=40s last: 
+=== STEP compare START Tue Oct 20 02:36:52 AM UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierU8X0HQ.UniformFourierChallenge Work.FourierU8X0HQ.Main OAI.PowerSaving.transform_mainU8X0HQ OAI.PowerSaving.convolution_mainU8X0HQ
+=== STEP compare END rc=0 wall=59s last: RESULT: PASS
+=== STEP compare-negative START Tue Oct 20 02:37:51 AM UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierU8X0HQNeg.UniformFourierChallenge Work.FourierU8X0HQ.Main OAI.PowerSaving.transform_mainU8X0HQ OAI.PowerSaving.convolution_mainU8X0HQ
+=== STEP compare-negative END rc=1 wall=46s last: RESULT: FAIL
+PASS compare: RESULT: PASS
+PASS compare-negative: fails (rc != 0)
+PASS compare-negative: the exponent definition differs (decimalExponentU8X0HQ)
+PASS axioms: no sorryAx
+PASS statement files: both identical to OpenAI's statement with only the exponent and names changed
+PASS Lean control glue-axioms compiles
+PASS Lean control hostSchedK-negative compiles
+PASS axioms: OAI.PowerSaving.transform_mainU8X0HQ only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.convolution_mainU8X0HQ only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.RAM.hillsU8X0HQ_program only on propext, Classical.choice, Quot.sound
+PASS source scan: lakefile.lean changed only by the lines of tree_change / lakefile_add (this package and those it requires)
+PASS source scan: no forbidden word outside comments and the challenges' sorry (0 hits)
+PASS source scan: no tracked file of the base tree changed
+ALL CHECKS PASSED
+END Tue Oct 20 02:38:38 AM UTC 2026 rc=0

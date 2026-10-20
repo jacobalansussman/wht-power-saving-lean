@@ -1,0 +1,165 @@
+[timing lock] waiting for timing lock 23:09:16
+[timing lock] got lock 23:12:40; load: { 19.54 20.43 16.38 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## cfft256 B=64 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME2 four-step v1                  0.4679
+rep  0  SME2 v5 (STR Y', x4 out)           0.4497
+rep  0  SME2 v7 (v5 + L2 pf 4)             0.3786
+rep  0  SME2 v8 (v5 + L2 pf 8)             0.3590
+rep  0  vDSP_DFT_Execute xB                0.5237
+rep  0  vDSP_fft_zop xB                    0.6453
+rep  0  vDSP_fftm_zop (1 call)             0.6352
+rep  0  PFFFT z-order xB (interl.)         0.6793
+rep  1  SME2 v5 (STR Y', x4 out)           0.4450
+rep  1  SME2 v7 (v5 + L2 pf 4)             0.3698
+rep  1  SME2 v8 (v5 + L2 pf 8)             0.3524
+rep  1  vDSP_DFT_Execute xB                0.5112
+rep  1  vDSP_fft_zop xB                    0.6598
+rep  1  vDSP_fftm_zop (1 call)             0.6564
+rep  1  PFFFT z-order xB (interl.)         0.6665
+rep  1  SME2 four-step v1                  0.4642
+rep  2  SME2 v7 (v5 + L2 pf 4)             0.3725
+rep  2  SME2 v8 (v5 + L2 pf 8)             0.3736
+rep  2  vDSP_DFT_Execute xB                0.5205
+rep  2  vDSP_fft_zop xB                    0.6596
+rep  2  vDSP_fftm_zop (1 call)             0.6417
+rep  2  PFFFT z-order xB (interl.)         0.6664
+rep  2  SME2 four-step v1                  0.4670
+rep  2  SME2 v5 (STR Y', x4 out)           0.4464
+rep  3  SME2 v8 (v5 + L2 pf 8)             0.3521
+rep  3  vDSP_DFT_Execute xB                0.5187
+rep  3  vDSP_fft_zop xB                    0.6603
+rep  3  vDSP_fftm_zop (1 call)             0.6389
+rep  3  PFFFT z-order xB (interl.)         0.6623
+rep  3  SME2 four-step v1                  0.4635
+rep  3  SME2 v5 (STR Y', x4 out)           0.4405
+rep  3  SME2 v7 (v5 + L2 pf 4)             0.3735
+rep  4  vDSP_DFT_Execute xB                0.5125
+rep  4  vDSP_fft_zop xB                    0.6632
+rep  4  vDSP_fftm_zop (1 call)             0.6424
+rep  4  PFFFT z-order xB (interl.)         0.6638
+rep  4  SME2 four-step v1                  0.4663
+rep  4  SME2 v5 (STR Y', x4 out)           0.4609
+rep  4  SME2 v7 (v5 + L2 pf 4)             0.3733
+rep  4  SME2 v8 (v5 + L2 pf 8)             0.3498
+rep  5  vDSP_fft_zop xB                    0.6476
+rep  5  vDSP_fftm_zop (1 call)             0.6372
+rep  5  PFFFT z-order xB (interl.)         0.6657
+rep  5  SME2 four-step v1                  0.4633
+rep  5  SME2 v5 (STR Y', x4 out)           0.4453
+rep  5  SME2 v7 (v5 + L2 pf 4)             0.3749
+rep  5  SME2 v8 (v5 + L2 pf 8)             0.3482
+rep  5  vDSP_DFT_Execute xB                0.5105
+rep  6  vDSP_fftm_zop (1 call)             0.6359
+rep  6  PFFFT z-order xB (interl.)         0.6662
+rep  6  SME2 four-step v1                  0.4625
+rep  6  SME2 v5 (STR Y', x4 out)           0.4427
+rep  6  SME2 v7 (v5 + L2 pf 4)             0.3648
+rep  6  SME2 v8 (v5 + L2 pf 8)             0.3494
+rep  6  vDSP_DFT_Execute xB                0.5203
+rep  6  vDSP_fft_zop xB                    0.6473
+rep  7  PFFFT z-order xB (interl.)         0.6789
+rep  7  SME2 four-step v1                  0.4766
+rep  7  SME2 v5 (STR Y', x4 out)           0.4656
+rep  7  SME2 v7 (v5 + L2 pf 4)             0.3707
+rep  7  SME2 v8 (v5 + L2 pf 8)             0.3513
+rep  7  vDSP_DFT_Execute xB                0.5137
+rep  7  vDSP_fft_zop xB                    0.6559
+rep  7  vDSP_fftm_zop (1 call)             0.6487
+rep  8  SME2 four-step v1                  0.4649
+rep  8  SME2 v5 (STR Y', x4 out)           0.4430
+rep  8  SME2 v7 (v5 + L2 pf 4)             0.3724
+rep  8  SME2 v8 (v5 + L2 pf 8)             0.3625
+rep  8  vDSP_DFT_Execute xB                0.5153
+rep  8  vDSP_fft_zop xB                    0.6526
+rep  8  vDSP_fftm_zop (1 call)             0.6416
+rep  8  PFFFT z-order xB (interl.)         0.6649
+RESULT cfft256 B=64 separate                    SME2 four-step v1            best     0.4625  median     0.4649  ns/point  (calls/rep 29134)
+RESULT cfft256 B=64 separate                    SME2 v5 (STR Y', x4 out)     best     0.4405  median     0.4453  ns/point  (calls/rep 29966)
+RESULT cfft256 B=64 separate                    SME2 v7 (v5 + L2 pf 4)       best     0.3648  median     0.3725  ns/point  (calls/rep 36096)
+RESULT cfft256 B=64 separate                    SME2 v8 (v5 + L2 pf 8)       best     0.3482  median     0.3521  ns/point  (calls/rep 38131)
+RESULT cfft256 B=64 separate                    vDSP_DFT_Execute xB          best     0.5105  median     0.5153  ns/point  (calls/rep 26359)
+RESULT cfft256 B=64 separate                    vDSP_fft_zop xB              best     0.6453  median     0.6559  ns/point  (calls/rep 19301)
+RESULT cfft256 B=64 separate                    vDSP_fftm_zop (1 call)       best     0.6352  median     0.6416  ns/point  (calls/rep 20841)
+RESULT cfft256 B=64 separate                    PFFFT z-order xB (interl.)   best     0.6623  median     0.6662  ns/point  (calls/rep 20211)
+## cfft256 B=256 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME2 four-step v1                  0.4698
+rep  0  SME2 v5 (STR Y', x4 out)           0.4577
+rep  0  SME2 v7 (v5 + L2 pf 4)             0.3882
+rep  0  SME2 v8 (v5 + L2 pf 8)             0.3809
+rep  0  vDSP_DFT_Execute xB                0.5677
+rep  0  vDSP_fft_zop xB                    0.6886
+rep  0  vDSP_fftm_zop (1 call)             0.6778
+rep  0  PFFFT z-order xB (interl.)         0.7049
+rep  1  SME2 v5 (STR Y', x4 out)           0.4487
+rep  1  SME2 v7 (v5 + L2 pf 4)             0.3830
+rep  1  SME2 v8 (v5 + L2 pf 8)             0.3494
+rep  1  vDSP_DFT_Execute xB                0.5235
+rep  1  vDSP_fft_zop xB                    0.6536
+rep  1  vDSP_fftm_zop (1 call)             0.6421
+rep  1  PFFFT z-order xB (interl.)         0.6690
+rep  1  SME2 four-step v1                  0.4643
+rep  2  SME2 v7 (v5 + L2 pf 4)             0.3744
+rep  2  SME2 v8 (v5 + L2 pf 8)             0.3537
+rep  2  vDSP_DFT_Execute xB                0.5233
+rep  2  vDSP_fft_zop xB                    0.6774
+rep  2  vDSP_fftm_zop (1 call)             0.6650
+rep  2  PFFFT z-order xB (interl.)         0.6776
+rep  2  SME2 four-step v1                  0.4765
+rep  2  SME2 v5 (STR Y', x4 out)           0.4588
+rep  3  SME2 v8 (v5 + L2 pf 8)             0.3648
+rep  3  vDSP_DFT_Execute xB                0.5470
+rep  3  vDSP_fft_zop xB                    0.6718
+rep  3  vDSP_fftm_zop (1 call)             0.6456
+rep  3  PFFFT z-order xB (interl.)         0.6685
+rep  3  SME2 four-step v1                  0.4743
+rep  3  SME2 v5 (STR Y', x4 out)           0.4615
+rep  3  SME2 v7 (v5 + L2 pf 4)             0.3819
+rep  4  vDSP_DFT_Execute xB                0.5369
+rep  4  vDSP_fft_zop xB                    0.6699
+rep  4  vDSP_fftm_zop (1 call)             0.6469
+rep  4  PFFFT z-order xB (interl.)         0.7012
+rep  4  SME2 four-step v1                  0.4841
+rep  4  SME2 v5 (STR Y', x4 out)           0.4660
+rep  4  SME2 v7 (v5 + L2 pf 4)             0.3880
+rep  4  SME2 v8 (v5 + L2 pf 8)             0.3780
+rep  5  vDSP_fft_zop xB                    0.7007
+rep  5  vDSP_fftm_zop (1 call)             0.7010
+rep  5  PFFFT z-order xB (interl.)         0.7319
+rep  5  SME2 four-step v1                  0.4948
+rep  5  SME2 v5 (STR Y', x4 out)           0.5160
+rep  5  SME2 v7 (v5 + L2 pf 4)             0.4310
+rep  5  SME2 v8 (v5 + L2 pf 8)             0.4020
+rep  5  vDSP_DFT_Execute xB                0.5860
+rep  6  vDSP_fftm_zop (1 call)             0.7236
+rep  6  PFFFT z-order xB (interl.)         0.7821
+rep  6  SME2 four-step v1                  0.4727
+rep  6  SME2 v5 (STR Y', x4 out)           0.4952
+rep  6  SME2 v7 (v5 + L2 pf 4)             0.3773
+rep  6  SME2 v8 (v5 + L2 pf 8)             0.3494
+rep  6  vDSP_DFT_Execute xB                0.7209
+rep  6  vDSP_fft_zop xB                    0.7479
+rep  7  PFFFT z-order xB (interl.)         0.6837
+rep  7  SME2 four-step v1                  0.4609
+rep  7  SME2 v5 (STR Y', x4 out)           0.4466
+rep  7  SME2 v7 (v5 + L2 pf 4)             0.4247
+rep  7  SME2 v8 (v5 + L2 pf 8)             0.4061
+rep  7  vDSP_DFT_Execute xB                0.5299
+rep  7  vDSP_fft_zop xB                    0.6721
+rep  7  vDSP_fftm_zop (1 call)             0.6883
+rep  8  SME2 four-step v1                  0.4616
+rep  8  SME2 v5 (STR Y', x4 out)           0.4357
+rep  8  SME2 v7 (v5 + L2 pf 4)             0.3683
+rep  8  SME2 v8 (v5 + L2 pf 8)             0.3472
+rep  8  vDSP_DFT_Execute xB                0.5134
+rep  8  vDSP_fft_zop xB                    0.6532
+rep  8  vDSP_fftm_zop (1 call)             0.6472
+rep  8  PFFFT z-order xB (interl.)         0.6762
+RESULT cfft256 B=256 separate                   SME2 four-step v1            best     0.4609  median     0.4727  ns/point  (calls/rep 7388)
+RESULT cfft256 B=256 separate                   SME2 v5 (STR Y', x4 out)     best     0.4357  median     0.4588  ns/point  (calls/rep 7502)
+RESULT cfft256 B=256 separate                   SME2 v7 (v5 + L2 pf 4)       best     0.3683  median     0.3830  ns/point  (calls/rep 8964)
+RESULT cfft256 B=256 separate                   SME2 v8 (v5 + L2 pf 8)       best     0.3472  median     0.3648  ns/point  (calls/rep 8855)
+RESULT cfft256 B=256 separate                   vDSP_DFT_Execute xB          best     0.5134  median     0.5369  ns/point  (calls/rep 6481)
+RESULT cfft256 B=256 separate                   vDSP_fft_zop xB              best     0.6532  median     0.6721  ns/point  (calls/rep 4985)
+RESULT cfft256 B=256 separate                   vDSP_fftm_zop (1 call)       best     0.6421  median     0.6650  ns/point  (calls/rep 5219)
+RESULT cfft256 B=256 separate                   PFFFT z-order xB (interl.)   best     0.6685  median     0.6837  ns/point  (calls/rep 5035)

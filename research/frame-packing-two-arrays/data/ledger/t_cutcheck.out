@@ -1,0 +1,22 @@
+m=2 plain W=2                W=2 R=2: cut condition violations 0 of 16383 sets; M=4, Wm=4, Thm 4.3 ok
+m=2 pair trick               W=2 R=2: cut condition violations 0 of 16383 sets; M=4, Wm=4, Thm 4.3 ok
+m=2 gauge-exchange           W=2 R=2: cut condition violations 0 of 16383 sets; M=4, Wm=4, Thm 4.3 ok
+m=2 copy-move-copy           W=2 R=4: cut condition violations 0 of 16383 sets; M=4, Wm=4, Thm 4.3 ok
+m=2 random gate W=3 #0       W=3 R=3: cut condition violations 0 of 16383 sets; M=6, Wm=6, Thm 4.3 ok
+m=2 random gate W=2 #1       W=2 R=2: cut condition violations 0 of 16383 sets; M=4, Wm=4, Thm 4.3 ok
+m=2 random gate W=3 #2       W=3 R=3: cut condition violations 0 of 16383 sets; M=6, Wm=6, Thm 4.3 ok
+m=2 random gate W=3 #3       W=3 R=3: cut condition violations 0 of 16383 sets; M=6, Wm=6, Thm 4.3 ok
+m=2 random gate W=3 #4       W=3 R=3: cut condition violations 0 of 16383 sets; M=6, Wm=6, Thm 4.3 ok
+m=2 random gate W=2 #5       W=2 R=2: cut condition violations 0 of 16383 sets; M=4, Wm=4, Thm 4.3 ok
+m=3 plain W=2                W=2 R=2: cut condition violations 0 of 3066 sets; M=6, Wm=6, Thm 4.3 ok
+m=3 pair trick               W=2 R=2: cut condition violations 0 of 3066 sets; M=6, Wm=6, Thm 4.3 ok
+m=3 gauge-exchange           W=2 R=2: cut condition violations 0 of 3066 sets; M=6, Wm=6, Thm 4.3 ok
+m=3 copy-move-copy           W=2 R=4: cut condition violations 0 of 3066 sets; M=6, Wm=6, Thm 4.3 ok
+m=3 random gate W=3 #0       W=3 R=3: cut condition violations 0 of 3066 sets; M=9, Wm=9, Thm 4.3 ok
+m=3 random gate W=2 #1       W=2 R=2: cut condition violations 0 of 3066 sets; M=6, Wm=6, Thm 4.3 ok
+m=3 random gate W=3 #2       W=3 R=3: cut condition violations 0 of 3066 sets; M=9, Wm=9, Thm 4.3 ok
+m=3 random gate W=2 #3       W=2 R=2: cut condition violations 0 of 3066 sets; M=6, Wm=6, Thm 4.3 ok
+m=3 random gate W=3 #4       W=3 R=3: cut condition violations 0 of 3066 sets; M=9, Wm=9, Thm 4.3 ok
+m=3 random gate W=2 #5       W=2 R=2: cut condition violations 0 of 3066 sets; M=6, Wm=6, Thm 4.3 ok
+m=3 order-3 control C6O3     W=2 R=2: skipped (frame packing forced (holonomy between inputs 0, 1))
+python3 t_cutcheck.py 1  0.65s user 0.02s system 97% cpu 0.685 total

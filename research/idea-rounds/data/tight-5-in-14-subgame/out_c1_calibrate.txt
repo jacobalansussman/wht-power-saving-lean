@@ -1,0 +1,14 @@
+V_28signed transvection-sum eigenvalues [np.float64(-45.0), np.float64(-33.0)]
+V_7 (x) V_27 transvection-sum eigenvalues [np.float64(-45.0), np.float64(-33.0), np.float64(-27.0), np.float64(-21.0)]
+homomorphism error 1.7208456881689926e-15
+orthogonality error 4.218847493575595e-15
+trace at identity 56.00000000000002  at a transvection -24.000000000000007 (table: 56, -24)
+trace of h1 h2 (expect class 2b value -8 or 2c value 8): 8.0  trace of K: -0.0
+distinct radical weights: 35 of 56
+Levi orbits on the 56 radical weights: [28, 28]
+weight multiplicities: [(1, 28), (4, 7)]  |multiplicity-one weights| = 28
+hook Y = 28-piece: f(h) = 10  f(h1h2) = 18  f(K) = 28   -> ratio 2.8
+complement (7+21, the 7 weights of multiplicity 4): f(h) = 10  f(h1h2) = 18  f(K) = 28
+Y is kept by the P0 generators
+plain chain h1,h2,h3: dims of Z after each move: [28, 18, 9, 0]
+elapsed 0.3s

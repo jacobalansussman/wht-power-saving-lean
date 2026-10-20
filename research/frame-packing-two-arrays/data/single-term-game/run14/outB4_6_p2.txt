@@ -1,0 +1,8 @@
+== B4:0: frames 16, degrees [4], m 4, twists 384, free 24, target orbit 1
+B4:0 M=1 states=2 max(L1+L2)=1 (I) holds goal no  [0.3s]
+B4:0 M=2 states=18 max(L1+L2)=2 (I) holds goal no  [0.6s]
+B4:0 M=3 states=297 max(L1+L2)=3 (I) holds goal no  [10.8s]
+B4:0 M=4 states=8366 max(L1+L2)=4 (I) holds goal no  [180.4s]
+   split: expanding part 2/4 of layer 4 (2091 states)
+B4:0 M=5 states=174966 max(L1+L2)=5 (I) holds goal no  [1357.0s]
+B4:0 M=6 successors(no dedup)=22824174 max(L1+L2)=6 (I) holds goal no  [1087.2s]

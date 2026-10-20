@@ -1,0 +1,5 @@
+block 4: 2295 frames, 34425 edges, valency {30}  (1.0s)
+greedy: E = 59703, ratio 1.4629  (4.9s)
+EXACT: rows reduce to their frames True; total edge excess E = 59703; abar_1 = 31376/11475; opposite pairs delta = 4 (sample of 3000 of 2350080; forced by the mod-2 rank anyway) True; ratio abar_4/abar_1 = 11475/7844 = 1.462902
+   so in C[Sp(8,2)] (Lemma N's block) every unit has M >= 1.4629 W; 4 in 15 needs > 3.75: refused False
+done (7.3s)

@@ -1,0 +1,234 @@
+[timing lock] waiting for timing lock 05:59:43
+[timing lock] got lock 06:01:27; load: { 94.01 83.43 56.39 }
+# numpy 2.5.4 scipy 1.18.1 fc64 lib wave-15/av-1/libfc64.dylib load (94.005859375, 83.427734375, 56.3876953125)
+CHECK N=1000000 M=257 same f64 fc_sme   rel err vs oa 1.21e-15 PASS
+CHECK N=1000000 M=257 same f64 fc_smeb  rel err vs oa 6.65e-16 PASS
+CHECK N=1000000 M=257 same f64 np       rel err vs oa 6.65e-16 PASS
+CHECK N=1000000 M=257 same f64 sp_auto  rel err vs oa 6.65e-16 PASS
+CHECK N=1000000 M=257 same f64 sp_oa    rel err vs oa 0.00e+00 PASS
+CHECK N=1000000 M=257 same f64 sp_fft   rel err vs oa 7.86e-16 PASS
+CHECK N=1000000 M=257 same f64 vdsp     rel err vs oa 7.25e-16 PASS
+rep  0 N=1000000 M=257 same f64 fc_sme       1.1527
+rep  0 N=1000000 M=257 same f64 fc_smeb      1.5199
+rep  0 N=1000000 M=257 same f64 np          24.2942
+rep  0 N=1000000 M=257 same f64 sp_auto     24.2647
+rep  0 N=1000000 M=257 same f64 sp_oa        6.1338
+rep  0 N=1000000 M=257 same f64 sp_fft      15.3901
+rep  0 N=1000000 M=257 same f64 vdsp         9.1589
+rep  1 N=1000000 M=257 same f64 fc_smeb      1.5157
+rep  1 N=1000000 M=257 same f64 np          24.1077
+rep  1 N=1000000 M=257 same f64 sp_auto     24.0621
+rep  1 N=1000000 M=257 same f64 sp_oa        6.1020
+rep  1 N=1000000 M=257 same f64 sp_fft      15.3506
+rep  1 N=1000000 M=257 same f64 vdsp         9.2294
+rep  1 N=1000000 M=257 same f64 fc_sme       1.1349
+rep  2 N=1000000 M=257 same f64 np          24.1338
+rep  2 N=1000000 M=257 same f64 sp_auto     24.1253
+rep  2 N=1000000 M=257 same f64 sp_oa        6.2681
+rep  2 N=1000000 M=257 same f64 sp_fft      15.3210
+rep  2 N=1000000 M=257 same f64 vdsp         9.1775
+rep  2 N=1000000 M=257 same f64 fc_sme       1.1145
+rep  2 N=1000000 M=257 same f64 fc_smeb      1.5103
+rep  3 N=1000000 M=257 same f64 sp_auto     24.0084
+rep  3 N=1000000 M=257 same f64 sp_oa        6.0188
+rep  3 N=1000000 M=257 same f64 sp_fft      15.6578
+rep  3 N=1000000 M=257 same f64 vdsp         9.1789
+rep  3 N=1000000 M=257 same f64 fc_sme       1.1184
+rep  3 N=1000000 M=257 same f64 fc_smeb      1.5180
+rep  3 N=1000000 M=257 same f64 np          23.8931
+rep  4 N=1000000 M=257 same f64 sp_oa        6.1986
+rep  4 N=1000000 M=257 same f64 sp_fft      15.3817
+rep  4 N=1000000 M=257 same f64 vdsp         9.4623
+rep  4 N=1000000 M=257 same f64 fc_sme       1.1249
+rep  4 N=1000000 M=257 same f64 fc_smeb      1.5160
+rep  4 N=1000000 M=257 same f64 np          24.0824
+rep  4 N=1000000 M=257 same f64 sp_auto     23.9133
+rep  5 N=1000000 M=257 same f64 sp_fft      15.2299
+rep  5 N=1000000 M=257 same f64 vdsp         9.2391
+rep  5 N=1000000 M=257 same f64 fc_sme       1.1169
+rep  5 N=1000000 M=257 same f64 fc_smeb      1.5223
+rep  5 N=1000000 M=257 same f64 np          23.9584
+rep  5 N=1000000 M=257 same f64 sp_auto     24.0544
+rep  5 N=1000000 M=257 same f64 sp_oa        6.1981
+rep  6 N=1000000 M=257 same f64 vdsp         9.2323
+rep  6 N=1000000 M=257 same f64 fc_sme       1.1222
+rep  6 N=1000000 M=257 same f64 fc_smeb      1.5183
+rep  6 N=1000000 M=257 same f64 np          24.1185
+rep  6 N=1000000 M=257 same f64 sp_auto     24.5778
+rep  6 N=1000000 M=257 same f64 sp_oa        6.1259
+rep  6 N=1000000 M=257 same f64 sp_fft      15.4546
+rep  7 N=1000000 M=257 same f64 fc_sme       1.1216
+rep  7 N=1000000 M=257 same f64 fc_smeb      1.5455
+rep  7 N=1000000 M=257 same f64 np          24.0154
+rep  7 N=1000000 M=257 same f64 sp_auto     23.8613
+rep  7 N=1000000 M=257 same f64 sp_oa        6.0953
+rep  7 N=1000000 M=257 same f64 sp_fft      15.1836
+rep  7 N=1000000 M=257 same f64 vdsp         9.1994
+rep  8 N=1000000 M=257 same f64 fc_smeb      1.5598
+rep  8 N=1000000 M=257 same f64 np          24.0960
+rep  8 N=1000000 M=257 same f64 sp_auto     24.4733
+rep  8 N=1000000 M=257 same f64 sp_oa        6.0538
+rep  8 N=1000000 M=257 same f64 sp_fft      15.2449
+rep  8 N=1000000 M=257 same f64 vdsp         9.2002
+rep  8 N=1000000 M=257 same f64 fc_sme       1.1139
+RESULT N=1000000 M=257 same f64 fc_sme   best     1.1139 median     1.1216 ns/output (calls/rep 197)
+RESULT N=1000000 M=257 same f64 fc_smeb  best     1.5103 median     1.5183 ns/output (calls/rep 143)
+RESULT N=1000000 M=257 same f64 np       best    23.8931 median    24.0960 ns/output (calls/rep 10)
+RESULT N=1000000 M=257 same f64 sp_auto  best    23.8613 median    24.0621 ns/output (calls/rep 10)
+RESULT N=1000000 M=257 same f64 sp_oa    best     6.0188 median     6.1259 ns/output (calls/rep 36)
+RESULT N=1000000 M=257 same f64 sp_fft   best    15.1836 median    15.3506 ns/output (calls/rep 14)
+RESULT N=1000000 M=257 same f64 vdsp     best     9.1589 median     9.2002 ns/output (calls/rep 23)
+CHECK N=1000000 M=513 same f64 fc_sme   rel err vs oa 2.13e-15 PASS
+CHECK N=1000000 M=513 same f64 fc_smeb  rel err vs oa 7.73e-16 PASS
+CHECK N=1000000 M=513 same f64 np       rel err vs oa 6.76e-16 PASS
+CHECK N=1000000 M=513 same f64 sp_auto  rel err vs oa 8.69e-16 PASS
+CHECK N=1000000 M=513 same f64 sp_oa    rel err vs oa 0.00e+00 PASS
+CHECK N=1000000 M=513 same f64 sp_fft   rel err vs oa 8.69e-16 PASS
+CHECK N=1000000 M=513 same f64 vdsp     rel err vs oa 8.69e-16 PASS
+rep  0 N=1000000 M=513 same f64 fc_sme       2.1475
+rep  0 N=1000000 M=513 same f64 fc_smeb      2.9034
+rep  0 N=1000000 M=513 same f64 np          49.8143
+rep  0 N=1000000 M=513 same f64 sp_auto     16.0702
+rep  0 N=1000000 M=513 same f64 sp_oa        7.0847
+rep  0 N=1000000 M=513 same f64 sp_fft      15.7289
+rep  0 N=1000000 M=513 same f64 vdsp        18.1537
+rep  1 N=1000000 M=513 same f64 fc_smeb      2.8754
+rep  1 N=1000000 M=513 same f64 np          49.7424
+rep  1 N=1000000 M=513 same f64 sp_auto     15.5685
+rep  1 N=1000000 M=513 same f64 sp_oa        6.7871
+rep  1 N=1000000 M=513 same f64 sp_fft      15.2020
+rep  1 N=1000000 M=513 same f64 vdsp        18.0856
+rep  1 N=1000000 M=513 same f64 fc_sme       2.1499
+rep  2 N=1000000 M=513 same f64 np          49.4908
+rep  2 N=1000000 M=513 same f64 sp_auto     15.7789
+rep  2 N=1000000 M=513 same f64 sp_oa        6.7817
+rep  2 N=1000000 M=513 same f64 sp_fft      15.4203
+rep  2 N=1000000 M=513 same f64 vdsp        18.1892
+rep  2 N=1000000 M=513 same f64 fc_sme       2.2241
+rep  2 N=1000000 M=513 same f64 fc_smeb      2.8823
+rep  3 N=1000000 M=513 same f64 sp_auto     15.6315
+rep  3 N=1000000 M=513 same f64 sp_oa        6.7722
+rep  3 N=1000000 M=513 same f64 sp_fft      15.3692
+rep  3 N=1000000 M=513 same f64 vdsp        18.1243
+rep  3 N=1000000 M=513 same f64 fc_sme       2.1551
+rep  3 N=1000000 M=513 same f64 fc_smeb      2.8809
+rep  3 N=1000000 M=513 same f64 np          49.5008
+rep  4 N=1000000 M=513 same f64 sp_oa        6.8088
+rep  4 N=1000000 M=513 same f64 sp_fft      15.5399
+rep  4 N=1000000 M=513 same f64 vdsp        18.1664
+rep  4 N=1000000 M=513 same f64 fc_sme       2.1606
+rep  4 N=1000000 M=513 same f64 fc_smeb      2.8871
+rep  4 N=1000000 M=513 same f64 np          50.2314
+rep  4 N=1000000 M=513 same f64 sp_auto     15.9256
+rep  5 N=1000000 M=513 same f64 sp_fft      15.6561
+rep  5 N=1000000 M=513 same f64 vdsp        18.5057
+rep  5 N=1000000 M=513 same f64 fc_sme       2.1984
+rep  5 N=1000000 M=513 same f64 fc_smeb      2.9408
+rep  5 N=1000000 M=513 same f64 np          50.5227
+rep  5 N=1000000 M=513 same f64 sp_auto     15.8506
+rep  5 N=1000000 M=513 same f64 sp_oa        7.1280
+rep  6 N=1000000 M=513 same f64 vdsp        18.4920
+rep  6 N=1000000 M=513 same f64 fc_sme       2.1825
+rep  6 N=1000000 M=513 same f64 fc_smeb      2.9521
+rep  6 N=1000000 M=513 same f64 np          50.6916
+rep  6 N=1000000 M=513 same f64 sp_auto     15.9423
+rep  6 N=1000000 M=513 same f64 sp_oa        6.9982
+rep  6 N=1000000 M=513 same f64 sp_fft      15.6813
+rep  7 N=1000000 M=513 same f64 fc_sme       2.2029
+rep  7 N=1000000 M=513 same f64 fc_smeb      2.9426
+rep  7 N=1000000 M=513 same f64 np          50.8321
+rep  7 N=1000000 M=513 same f64 sp_auto     16.0185
+rep  7 N=1000000 M=513 same f64 sp_oa        7.1569
+rep  7 N=1000000 M=513 same f64 sp_fft      18.2671
+rep  7 N=1000000 M=513 same f64 vdsp        19.0717
+rep  8 N=1000000 M=513 same f64 fc_smeb      3.0307
+rep  8 N=1000000 M=513 same f64 np          51.5837
+rep  8 N=1000000 M=513 same f64 sp_auto     16.7635
+rep  8 N=1000000 M=513 same f64 sp_oa        7.3117
+rep  8 N=1000000 M=513 same f64 sp_fft      16.3818
+rep  8 N=1000000 M=513 same f64 vdsp        18.7088
+rep  8 N=1000000 M=513 same f64 fc_sme       2.2908
+RESULT N=1000000 M=513 same f64 fc_sme   best     2.1475 median     2.1825 ns/output (calls/rep 104)
+RESULT N=1000000 M=513 same f64 fc_smeb  best     2.8754 median     2.9034 ns/output (calls/rep 77)
+RESULT N=1000000 M=513 same f64 np       best    49.4908 median    50.2314 ns/output (calls/rep 5)
+RESULT N=1000000 M=513 same f64 sp_auto  best    15.5685 median    15.9256 ns/output (calls/rep 15)
+RESULT N=1000000 M=513 same f64 sp_oa    best     6.7722 median     6.9982 ns/output (calls/rep 33)
+RESULT N=1000000 M=513 same f64 sp_fft   best    15.2020 median    15.6561 ns/output (calls/rep 14)
+RESULT N=1000000 M=513 same f64 vdsp     best    18.0856 median    18.1892 ns/output (calls/rep 13)
+CHECK N=1000000 M=1025 same f64 fc_sme   rel err vs oa 2.70e-15 PASS
+CHECK N=1000000 M=1025 same f64 fc_smeb  rel err vs oa 6.10e-16 PASS
+CHECK N=1000000 M=1025 same f64 np       rel err vs oa 5.78e-16 PASS
+CHECK N=1000000 M=1025 same f64 sp_auto  rel err vs oa 8.99e-16 PASS
+CHECK N=1000000 M=1025 same f64 sp_oa    rel err vs oa 0.00e+00 PASS
+CHECK N=1000000 M=1025 same f64 sp_fft   rel err vs oa 8.99e-16 PASS
+CHECK N=1000000 M=1025 same f64 vdsp     rel err vs oa 8.99e-16 PASS
+rep  0 N=1000000 M=1025 same f64 fc_sme       4.3513
+rep  0 N=1000000 M=1025 same f64 fc_smeb      5.8457
+rep  0 N=1000000 M=1025 same f64 np          95.0772
+rep  0 N=1000000 M=1025 same f64 sp_auto     16.0863
+rep  0 N=1000000 M=1025 same f64 sp_oa       14.3202
+rep  0 N=1000000 M=1025 same f64 sp_fft      15.6320
+rep  0 N=1000000 M=1025 same f64 vdsp        38.6393
+rep  1 N=1000000 M=1025 same f64 fc_smeb      5.9430
+rep  1 N=1000000 M=1025 same f64 np          95.8121
+rep  1 N=1000000 M=1025 same f64 sp_auto     15.9227
+rep  1 N=1000000 M=1025 same f64 sp_oa       14.3698
+rep  1 N=1000000 M=1025 same f64 sp_fft      16.0691
+rep  1 N=1000000 M=1025 same f64 vdsp        37.8880
+rep  1 N=1000000 M=1025 same f64 fc_sme       4.3231
+rep  2 N=1000000 M=1025 same f64 np          93.9171
+rep  2 N=1000000 M=1025 same f64 sp_auto     16.0655
+rep  2 N=1000000 M=1025 same f64 sp_oa       14.2368
+rep  2 N=1000000 M=1025 same f64 sp_fft      15.6885
+rep  2 N=1000000 M=1025 same f64 vdsp        36.9134
+rep  2 N=1000000 M=1025 same f64 fc_sme       4.3159
+rep  2 N=1000000 M=1025 same f64 fc_smeb      5.6991
+rep  3 N=1000000 M=1025 same f64 sp_auto     16.1417
+rep  3 N=1000000 M=1025 same f64 sp_oa       14.3352
+rep  3 N=1000000 M=1025 same f64 sp_fft      15.8708
+rep  3 N=1000000 M=1025 same f64 vdsp        37.0681
+rep  3 N=1000000 M=1025 same f64 fc_sme       4.3576
+rep  3 N=1000000 M=1025 same f64 fc_smeb      5.7429
+rep  3 N=1000000 M=1025 same f64 np          93.7920
+rep  4 N=1000000 M=1025 same f64 sp_oa       14.2061
+rep  4 N=1000000 M=1025 same f64 sp_fft      15.7434
+rep  4 N=1000000 M=1025 same f64 vdsp        36.8304
+rep  4 N=1000000 M=1025 same f64 fc_sme       4.2785
+rep  4 N=1000000 M=1025 same f64 fc_smeb      5.7492
+rep  4 N=1000000 M=1025 same f64 np          93.6622
+rep  4 N=1000000 M=1025 same f64 sp_auto     17.0114
+rep  5 N=1000000 M=1025 same f64 sp_fft      16.2637
+rep  5 N=1000000 M=1025 same f64 vdsp        36.6746
+rep  5 N=1000000 M=1025 same f64 fc_sme       4.2921
+rep  5 N=1000000 M=1025 same f64 fc_smeb      5.7033
+rep  5 N=1000000 M=1025 same f64 np          92.4955
+rep  5 N=1000000 M=1025 same f64 sp_auto     16.1455
+rep  5 N=1000000 M=1025 same f64 sp_oa       14.3120
+rep  6 N=1000000 M=1025 same f64 vdsp        37.3036
+rep  6 N=1000000 M=1025 same f64 fc_sme       4.2740
+rep  6 N=1000000 M=1025 same f64 fc_smeb      5.7021
+rep  6 N=1000000 M=1025 same f64 np          92.1827
+rep  6 N=1000000 M=1025 same f64 sp_auto     15.9827
+rep  6 N=1000000 M=1025 same f64 sp_oa       14.1981
+rep  6 N=1000000 M=1025 same f64 sp_fft      15.7776
+rep  7 N=1000000 M=1025 same f64 fc_sme       4.3826
+rep  7 N=1000000 M=1025 same f64 fc_smeb      5.7124
+rep  7 N=1000000 M=1025 same f64 np          94.3911
+rep  7 N=1000000 M=1025 same f64 sp_auto     15.8587
+rep  7 N=1000000 M=1025 same f64 sp_oa       14.4533
+rep  7 N=1000000 M=1025 same f64 sp_fft      15.6692
+rep  7 N=1000000 M=1025 same f64 vdsp        36.9380
+rep  8 N=1000000 M=1025 same f64 fc_smeb      5.8277
+rep  8 N=1000000 M=1025 same f64 np          93.3129
+rep  8 N=1000000 M=1025 same f64 sp_auto     15.9845
+rep  8 N=1000000 M=1025 same f64 sp_oa       14.0740
+rep  8 N=1000000 M=1025 same f64 sp_fft      15.7434
+rep  8 N=1000000 M=1025 same f64 vdsp        37.1710
+rep  8 N=1000000 M=1025 same f64 fc_sme       4.3158
+RESULT N=1000000 M=1025 same f64 fc_sme   best     4.2740 median     4.3159 ns/output (calls/rep 52)
+RESULT N=1000000 M=1025 same f64 fc_smeb  best     5.6991 median     5.7429 ns/output (calls/rep 39)
+RESULT N=1000000 M=1025 same f64 np       best    92.1827 median    93.7920 ns/output (calls/rep 3)
+RESULT N=1000000 M=1025 same f64 sp_auto  best    15.8587 median    16.0655 ns/output (calls/rep 14)
+RESULT N=1000000 M=1025 same f64 sp_oa    best    14.0740 median    14.3120 ns/output (calls/rep 16)
+RESULT N=1000000 M=1025 same f64 sp_fft   best    15.6320 median    15.7434 ns/output (calls/rep 14)
+RESULT N=1000000 M=1025 same f64 vdsp     best    36.6746 median    37.0681 ns/output (calls/rep 6)

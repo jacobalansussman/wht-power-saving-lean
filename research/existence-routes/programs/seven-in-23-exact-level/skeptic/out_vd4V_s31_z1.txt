@@ -1,0 +1,17 @@
+[lift] seed 31: cells lam1 1 t1 16 F 137 K 731; |B_m sample| 106 of 4000; q order 7 found; 26s
+[legit] letters checked: c, c', p, beta, q, 2800 F1 coefficient letters, 400 k_b, c_h c'_h; bad = [] (0)
+[legit] m = D_10 * letter; m1 = D_15 * letter; m2 = D_10 * letter; c^7 = I True; q^7 = I True
+[legit] p homomorphism: True
+[absorb] F1 terms 2800; max |tau_g(F1) - psi(g) c_g p_g^-1 F1| = 8.7e-16 (coef scale 0.20)
+[absorb] cells of array-0 terms [137] (F = 137); kappa f0 check: True 38s
+[V] D3 = D_1; |S4| 16; d0 slot 10
+[V] slots of all 30 x 7 x 400 products  43s
+[V] built generic  53s
+[V generic d4] scale 1.15e+00: a0: r=0 m=4 null=416 junk=3e-16 sv[0.0e+00|1.1e-15]; a1: r=0 m=2 null=416 junk=4e-16 sv[0.0e+00|1.0e-15]; a2: r=0 m=2 null=416 junk=3e-16 sv[0.0e+00|1.1e-15]; a3: r=0 m=2 null=416 junk=2e-16 sv[0.0e+00|1.3e-15]; a4: r=0 m=2 null=416 junk=2e-16 sv[0.0e+00|1.1e-15]; a5: r=0 m=2 null=416 junk=6e-16 sv[0.0e+00|1.7e-15]; a6: r=0 m=2 null=416 junk=6e-16 sv[0.0e+00|1.6e-15]
+[V flat d4] scale 6.52e-01: a0: r=12 m=4 null=428 junk=7e-16 sv[4.7e-02|4.6e-16]; a1: r=14 m=2 null=430 junk=9e-16 sv[4.7e-02|4.2e-16]; a2: r=14 m=2 null=430 junk=8e-16 sv[4.7e-02|4.3e-16]; a3: r=14 m=2 null=430 junk=7e-16 sv[4.7e-02|5.0e-16]; a4: r=14 m=2 null=430 junk=8e-16 sv[4.7e-02|4.0e-16]; a5: r=14 m=2 null=430 junk=6e-16 sv[4.7e-02|5.4e-16]; a6: r=14 m=2 null=430 junk=8e-16 sv[4.7e-02|6.1e-16]
+[V] total deficit generic 112 ; flat: r_a + m_a = [16, 16, 16, 16, 16, 16, 16]  65s
+[V TRIVIAL designed d4] scale 1.30e+00: a0: r=0 m=1 null=26 junk=1e-16 sv[0.0e+00|1.5e-16]; a1: r=1 m=0 null=27 junk=1e-15 sv[6.7e-02|0.0e+00]; a2: r=1 m=0 null=27 junk=9e-16 sv[4.7e-02|0.0e+00]; a3: r=1 m=0 null=27 junk=9e-16 sv[5.5e-02|0.0e+00]; a4: r=1 m=0 null=27 junk=1e-15 sv[5.4e-02|0.0e+00]; a5: r=1 m=0 null=27 junk=6e-16 sv[5.6e-02|0.0e+00]; a6: r=1 m=0 null=27 junk=1e-15 sv[8.4e-02|0.0e+00]
+[V TRIVIAL random-y d4] scale 4.48e+01: a0: r=0 m=1 null=26 junk=4e-15 sv[0.0e+00|4.7e-15]; a1: r=0 m=0 null=26 junk=3e-15 sv[0.0e+00|4.5e-15]; a2: r=0 m=0 null=26 junk=3e-15 sv[0.0e+00|4.5e-15]; a3: r=0 m=0 null=26 junk=6e-15 sv[0.0e+00|1.2e-14]; a4: r=0 m=0 null=26 junk=3e-15 sv[0.0e+00|6.2e-15]; a5: r=0 m=0 null=26 junk=2e-14 sv[0.0e+00|2.4e-14]; a6: r=0 m=0 null=26 junk=1e-14 sv[0.0e+00|2.0e-14]
+[V] reachable (neighbour of lam1) slots [0, 1, 3]
+[V random-y generic d4] scale 1.66e+01: a0: r=0 m=4 null=416 junk=6e-15 sv[0.0e+00|1.8e-14]; a1: r=0 m=2 null=416 junk=4e-15 sv[0.0e+00|1.7e-14]; a2: r=0 m=2 null=416 junk=4e-15 sv[0.0e+00|1.7e-14]; a3: r=0 m=2 null=416 junk=6e-15 sv[0.0e+00|2.1e-14]; a4: r=0 m=2 null=416 junk=5e-15 sv[0.0e+00|1.9e-14]; a5: r=0 m=2 null=416 junk=5e-15 sv[0.0e+00|2.9e-14]; a6: r=0 m=2 null=416 junk=1e-14 sv[0.0e+00|2.8e-14]
+done 82s

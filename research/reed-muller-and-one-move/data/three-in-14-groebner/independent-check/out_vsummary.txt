@@ -1,0 +1,11 @@
+main (20 lifts/set, msolve 2 primes 5 orders/set): 44 instances (0 duplicated), orders 5280, decided 5280, 1 in ideal over Q 5280, Singular time-outs 0, lifts exact 880 of 880, msolve [1] 440 of 440
+main, every lift (msolve 65521 every order): 44 instances (0 duplicated), orders 5280, decided 5280, 1 in ideal over Q 5280, Singular time-outs 0, lifts exact 5280 of 5280, msolve [1] 5280 of 5280
+must fail: controls: 3 instances (0 duplicated), orders 360, decided 360, 1 in ideal over Q 360, Singular time-outs 0, lifts exact 60 of 60, msolve [1] 30 of 30
+must pass ctl-plain1in5-139: orders 120, msolve mod 65521 complete non-unit bases 120 of 120
+must pass ctl-U3-138: orders 1, msolve mod 65521 complete non-unit bases 1 of 1
+must pass ctl-plain1in5-139: orders 1, msolve mod 65521 complete non-unit bases 1 of 1
+must pass ctl-U3-138: orders 1, Singular over Q NOT-UNIT 1 of 1 ['NOT-UNIT dim 30']
+must pass ctl-plain1in5-139: orders 1, Singular over Q NOT-UNIT 1 of 1 ['NOT-UNIT dim 15']
+must pass ctl-plain1in5-139: orders 120, Singular over Q NOT-UNIT 120 of 120 ['NOT-UNIT dim 15']
+must pass plain 3 in 15 (U+, 6 moves), Singular over Q: 6 sets, 10 orders decided, 0 with 1 in the ideal, time-outs 1; dims [('NOT-UNIT dim 28', 3), ('NOT-UNIT dim 29', 6), ('NOT-UNIT dim 30', 1)]; sets [0, 1, 2, 5, 6, 9]
+must pass plain 3 in 15 (U+), msolve mod 65521 (strict wrapper): 10 sets, 20 orders, complete non-unit bases 20, [1] 0, other []; sets [0, 1, 2, 3, 4, 5, 6, 7, 9, 11]

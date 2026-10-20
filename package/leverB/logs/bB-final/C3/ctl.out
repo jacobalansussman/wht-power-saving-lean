@@ -1,0 +1,30 @@
+   (slot: waited 0s; heavy 1, avail 43878 MB)
+Heads3945HNeg rc=0 8s maxrss_kb=1218012
+'OAI.PowerSaving.XHostT.K.DS5H.heads_cnt_ne_succ' depends on axioms: [propext]
+'OAI.PowerSaving.XHostT.K.DS5H.res_ge0_6_false' depends on axioms: [propext]
+VERDICT control Heads3945HNeg: compiles, standard axioms
+   (slot: waited 0s; heavy 1, avail 49404 MB)
+Rate3945HSharpCtl rc=0 48s maxrss_kb=3390092
+'OAI.PowerSaving.MX.twoTarget_fail_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.rate3945H_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.rate3945H_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+VERDICT control Rate3945HSharpCtl: compiles, standard axioms
+   (slot: waited 0s; heavy 1, avail 49047 MB)
+NegHeads rc=1 17s
+/content/work/bB-final/controls/NegHeads.lean:8:57: error: Tactic `decide` proved that the proposition
+VERDICT negative NegHeads: FAILS as required
+   (slot: waited 0s; heavy 2, avail 48733 MB)
+NegHeadsOld rc=1 16s
+/content/work/bB-final/controls/NegHeadsOld.lean:8:55: error: Tactic `decide` proved that the proposition
+VERDICT negative NegHeadsOld: FAILS as required
+   (slot: waited 0s; heavy 1, avail 49002 MB)
+NegRes rc=1 0s
+/content/work/bB-final/controls/NegRes.lean:8:52: error: Tactic `decide` proved that the proposition
+VERDICT negative NegRes: FAILS as required
+   (slot: waited 0s; heavy 1, avail 48959 MB)
+NegGlob rc=1 5s
+/content/work/bB-final/controls/NegGlob.lean:8:43: error: Tactic `decide` proved that the proposition
+VERDICT negative NegGlob: FAILS as required
+controls: sorry/admit lines 0; forbidden lines 0
+CONTROLS ALL AS EXPECTED
+EXIT 0

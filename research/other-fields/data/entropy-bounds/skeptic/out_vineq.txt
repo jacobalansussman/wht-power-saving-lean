@@ -1,0 +1,5 @@
+Ingleton on 150 random GF(2)/GF(3) rank functions, all orderings: max row value 0.0 (must be <= 0)
+DFZ (65) on 120 random GF(3) rank functions x 30 letter orders: max row value -3.0 (must be <= 0)
+Vamos, Ingleton(A,B;C,D) row value: 1.0 (must be +1: a violation)
+Fano matroid, DFZ (65) max row value over all 5040 labellings: 1.0 (> 0 expected for a char-not-2 inequality)
+same 7 vectors over GF(3) (non-Fano), DFZ (65) max row value: 0.0 (must be <= 0)

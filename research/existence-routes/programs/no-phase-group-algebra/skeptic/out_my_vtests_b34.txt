@@ -1,0 +1,13 @@
+m=3 n=7 (power 1, poly 0b1011) W=2 M=5: deletion failures 7 [(5, 10, 12), (6, 10, 12), (10, 10, 12), (23, 10, 12)]; min slack -2; tight forms 0; max tight clique 0; bound Wn = 14 -> EXCLUDED (deletion)
+m=3 n=7 (power 1, poly 0b1101) W=2 M=5: deletion failures 7 [(3, 10, 12), (7, 10, 12), (20, 10, 12), (24, 10, 12)]; min slack -2; tight forms 0; max tight clique 0; bound Wn = 14 -> EXCLUDED (deletion)
+m=3 n=7 (power 1, poly 0b1011) W=2 M=6: deletion failures 0 []; min slack 0; tight forms 7; max tight clique 12; bound Wn = 14 -> not excluded
+m=3 n=7 (power 1, poly 0b1101) W=2 M=6: deletion failures 0 []; min slack 0; tight forms 7; max tight clique 12; bound Wn = 14 -> not excluded
+m=3 n=1 (power 0, poly 0b1011) W=2 M=7: deletion failures 0 []; min slack 0; tight forms 12; max tight clique 2; bound Wn = 2 -> not excluded
+m=4 n=1 (power 0, poly 0b10011) W=4 M=15: deletion failures 0 []; min slack 0; tight forms 56; max tight clique 15; bound Wn = 4 -> EXCLUDED (clique)
+m=4 n=15 (power 1, poly 0b10011) W=4 M=15: deletion failures 0 []; min slack 0; tight forms 0; max tight clique 0; bound Wn = 60 -> not excluded
+m=4 n=15 (power 1, poly 0b10011) W=4 M=16: deletion failures 0 []; min slack 0; tight forms 0; max tight clique 0; bound Wn = 60 -> not excluded
+m=4 n=5 (power 3, poly 0b10011) W=4 M=15: deletion failures 0 []; min slack 0; tight forms 5; max tight clique 20; bound Wn = 20 -> not excluded
+m=4 n=3 (power 5, poly 0b10011) W=4 M=15: deletion failures 0 []; min slack 0; tight forms 21; max tight clique 12; bound Wn = 12 -> not excluded
+m=4 n=15 (power 1, poly 0b11001) W=4 M=15: deletion failures 0 []; min slack 0; tight forms 0; max tight clique 0; bound Wn = 60 -> not excluded
+m=4 n=5 (power 3, poly 0b11001) W=4 M=15: deletion failures 0 []; min slack 0; tight forms 5; max tight clique 20; bound Wn = 20 -> not excluded
+m=4 n=3 (power 5, poly 0b11001) W=4 M=15: deletion failures 0 []; min slack 0; tight forms 21; max tight clique 12; bound Wn = 12 -> not excluded

@@ -1,0 +1,5 @@
+PG(2,4): frames 44 symmetry group order 241920
+pairs at distance 1 / 3: 294 674
+rows by type: {'sub': 5, 'mono': 4, 'dfz': 1, 'ing': 3}  equalities: 5
+all coefficients >= 0: True 
+PROVED (given the validity of each row type): mean delta_3 <= 169/57 = 2.9649122807017543 x mean delta_1  (certificate claims 169/57)

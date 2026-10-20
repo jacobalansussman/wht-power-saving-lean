@@ -1,7 +1,11 @@
 # How to rebuild this repository and re-run the checks
 
-This file says how to rebuild the proofs and re-run the checks yourself. To check the newest result, the
-fourth, start at section 10. It sends you to sections 2 to 5 for what you need and for the first commands.
+This file says how to rebuild the proofs and re-run the checks yourself. The lever and the sixth result,
+built on Ryan Shea's Lean tree with the packages under `package/`, are checked in section 12, and section 12.6
+re-runs the lever's searches and prices on a laptop, with no Lean. The results of 13 October 2026, also built on
+Shea's tree, are checked in section 11. Section 13 says how to run the programs of `research/`. To check the
+fourth result, start at section 10. It sends you to sections 2 to 5 for what you need and for the first
+commands.
 
 The AI agents I directed ran everything in sections 1 to 9 on one machine, on 2026-10-09: Apple M4 (10 cores,
 16 GB memory), macOS 26.6.2, the copy on an external SSD. What was run and what was not is said in each
@@ -364,7 +368,13 @@ which the search programs in `tools/e8/` found (section 10; `tools/gx/ORIGIN.md`
 
     shasum -a 256 -c MANIFEST.sha256        # Linux: sha256sum -c MANIFEST.sha256
 
-`MANIFEST.sha256` lists every file of the repository except itself.
+`MANIFEST.sha256` lists every file of the repository except itself. It is written by
+
+    python3 -I -B tools/community/package_check.py manifest .
+
+which lists every file that git would commit (tracked files and untracked files that `.gitignore` does not
+exclude), sorted by name, with its sha256. Each package under `community/` and `package/` also has its own
+`SHA256SUMS`, which `scripts/apply-overlay.sh` and `tools/swap-certificate.sh` check before they lay it.
 
 ## 8. Limits
 
@@ -884,3 +894,527 @@ The comparator on that build: point 14 of section 8.
    `--pool --solve` it also rebuilds the pool and re-runs the solver, which needs NumPy and SciPy; two runs
    gave the recorded hierarchy and the same bytes (95 s and 107 s).
 7. **One day.** The certificate was found, built and checked on 2026-10-10. The measurements are single runs.
+
+## 11. The results built on the community's Lean tree (2026-10-13)
+
+This section is how to check the results of 13 October 2026 yourself. They are not built in this repository's
+own Lean project. They are laid over Ryan Shea's Lean tree, the folder `lean/complex588` of his repository
+`fourier-transform-below-nlogn`, which runs on the Lean engine of this repository. Each result is a *package*
+under `community/`: a folder `overlay/` that mirrors `lean/complex588/`, the list of its new modules in build
+order (`MODULES.txt`), a file `result.json` with its figures, theorem names and the status of every check,
+`SHA256SUMS`, and the logs of the runs.
+
+| package | what is proved | saving | status |
+|---|---|---|---|
+| `community/u8xmhh` (the headline) | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 16197705/10^10`; the community's U8 word with exit frames, mutable sources and same-run hosting | 1.6198e-3 | checked in Lean on the second Colab machine (11.2), comparator accepted (11.3); the three phases of the leaderboard's verifier re-created offline with the agents' scripts, in the stand-in sandbox; statement re-checked and modules rebuilt by two independent agents |
+| `community/c588mhh` | the same statement with `1 - 15699305/10^10`: Kothe's circuit with mutable sources and same-run hosting | 1.5699e-3 | checked in Lean (11.2d), comparator accepted (11.3), rebuilt by an independent agent; the leaderboard's verifier not run |
+| `community/c588m` | the same statement with `1 - 13552606/10^10`: the same circuit with mutable sources, no hosting | 1.3553e-3 | checked in Lean (11.2a); the three phases of the leaderboard's verifier re-created offline with the agents' scripts, in the stand-in sandbox (11.6, point 4); rebuilt by an independent agent |
+| `community/u8xm` | the same statement with `1 - 13868856/10^10`: the community's U8 word with exit frames and mutable sources | 1.3869e-3 | checked in Lean, comparator accepted (11.2c); the agents' second build and two independent agents' checks not shown |
+| `community/u8x` | the same statement with `1 - 12704023/10^10`: the U8 word with exit frames | 1.2704e-3 | checked in Lean, comparator accepted (11.2c); the agents' second build and two independent agents' checks not shown |
+| `community/c588-repack` | the same statement with `1 - 12383291/10^10`, on Shea's certificate with a new bank table | 1.2383e-3 | checked in Lean, comparator accepted; an independent agent's re-check of the built tree (its comparison one unit stronger not shown) |
+| `community/wht-c588mhh` | the Walsh-Hadamard transform, this repository's statement, with `1 - 15699306/10^10`, on the kernel of `community/c588mhh` | 1.5699e-3 | checked in Lean, comparator accepted (11.2b); no independent rebuild shown |
+| `community/wht-c588` | the Walsh-Hadamard transform, this repository's statement, with `1 - 12331686/10^10`, `1 - 12383292/10^10` and, on the kernel of `community/c588m`, `1 - 13552607/10^10` | 1.2332e-3, 1.2383e-3 and 1.3553e-3 | checked in Lean, comparator accepted; an independent agent's rebuild of the first (not shown for the second, not run for the third) |
+
+`community/current.json` names the headline package. To replace it by another one, see 11.5. `u8xmhh`,
+`c588mhh`, `u8xm` and `u8x` have a `README.txt`; every package's `result.json` lists every check with its status. A check marked
+"pass" gives the path of its log inside the package; every other check is marked "not shown" (it ran, but its log
+is not in the package or has no verdict) or "not run". The static checks of 11.5 (check 9) refuse a package that
+breaks this rule.
+
+### 11.1 What you need
+
+* A Linux machine the size of a Colab VM: the agents used 8 logical processors and 51 GiB of memory. One run
+  of `tools/Compare.lean` took 14.9 to 16.1 GB (resident size by `/usr/bin/time -v`); the largest module took
+  9.6 GB.
+* Shea's tree, built. His repository pins Lean v4.34.1 and the same Mathlib as this repository. Building his
+  tree from source took the agents 25 minutes; Mathlib's compiled files came from its cache server:
+
+      git clone https://github.com/shea256/fourier-transform-below-nlogn shea
+      cd shea && git checkout --detach 52394849c7ecf3412d39b925d75fc7fdb98994d8 && cd lean/complex588
+      lake exe cache get
+      lake build Work.FourierC588.Main Work.FourierC588.UniformFourierChallenge \
+        Work.FourierC588Neg.UniformFourierChallenge Work.GCert.Data.C588Controls Work.FourierC588.Axioms
+
+  `community/base-logs/` holds the logs of that build and the scripts the agents used (`scripts/cb-setup.sh`,
+  `scripts/cb-build.sh`).
+* Work on a copy of the built tree for each package (`cp -a shea shea-c588m`), so that one package never
+  meets another.
+
+### 11.2 Build and check the main result
+
+The main result, `community/u8xmhh`, puts the hosted network of `community/c588mhh` (11.2d) on the certificate
+of `community/u8xm` (11.2c): the community's U8 word with exit frames and mutable sources, with most leftover
+helper pieces stored in data registers that are idle during the same run, instead of in banks (310 banks
+instead of 3,771). Its twelve network modules of `Work/XHost` are the same files, byte for byte, as in
+`community/c588mhh`. New are the host table and bank table of the U8 word (2,016 hosts and 4,092 hosted pieces
+in each of the 8 runs), which the kernel checker `hostSchedK` reads (`Work/XHost/Data`), the glue
+`Work/XHost/U8XMHH.lean`, and the Fourier chain `Work/FourierU8XMHH`, with its seam pointed at
+`XHost.engine_of_ginv_host`. From the root of this repository, with `T` the folder `lean/complex588` of your
+copy, after adding the `XExit` line of 11.2c to `$T/lakefile.lean`:
+
+    bash community/scripts/apply-overlay.sh community/u8xmhh $T
+    bash community/scripts/build-and-check.sh community/u8xmhh $T
+
+The first command lays `community/u8xm` first (the package's `result.json` names it under "requires"), then the
+34 files of this package (32 modules and 2 comparator configurations); no file of the tree changes except
+`lakefile.lean`. The second builds the 32 modules in the order of `MODULES.txt` and runs the checks listed in
+11.2a, against the statement `1 - 16197705/10^10` and the one unit stronger, `16197706`.
+
+The agents' run is in `community/u8xmhh/logs/colab/`, on the second Colab machine, in a copy of a tree in which
+they had built `community/u8xm` a second time and checked it (`setup.out`: the 96 files of that overlay equal
+to its checksums, every target up to date, and that build's comparator verdicts; its other logs are not in the
+package). `build.out` has the six Lake steps (the rate certificate, the checker, the host table, the network,
+the glue, the Fourier chain), each ending without error, 15 minutes in all and 8.6 GB at most; then the axioms
+(`axioms.log`, `axioms-glue.log`: `propext`, `Classical.choice`, `Quot.sound`, and `propext` alone for the
+host-table check), the source scan (`sorry-grep.txt`), the check that both statement files equal the agents' own
+derivation from OpenAI's file, a negative control (a host table with one remainder off by one, for which Lean's
+kernel proves that `hostSchedK` returns false: `hsneg.time`, `ax/HsU8XMHHNeg.lean`), and the two comparisons
+(`compare-pos.log`: `RESULT: PASS`, 86 s, 15.8 GB; `compare-neg.log`: `RESULT: FAIL` on
+`decimalExponentU8XMHH`). The comparator's runs are in `cmp/` (11.3), and the offline re-creation of the
+leaderboard's verifier, done as in 11.6, point 4, on this package, is in `bos-H.out` and `bos-H/`: the Lean
+check accepted it (68 minutes, 8.4 GB, every module of the packaged submission compiled from source), the axiom
+audit printed the three standard axioms, and nanoda and Lean's kernel accepted it (14 minutes).
+
+Two independent agents then checked it. One, on the same machine in its own copy of the tree, compared both
+statement files with OpenAI's file, checked the theorems with plain `lean` as an unprivileged user, ran
+`tools/Compare.lean` both ways and replayed the comparator, which accepted it and rejected one unit stronger
+(`logs/skeptic-statement/`). The other compiled the 32 modules again on the first Colab machine from the two
+archives the agents had uploaded (their hashes checked), one module per Lake call, over its own copy of the
+agents' first build of `community/u8xm` there, with no compiled hosting or Fourier file before it: all compiled,
+`RESULT: PASS`, one unit stronger `RESULT: FAIL`, standard axioms; `uses.log` shows that both theorems reach
+`XHost.engine_of_ginv_host` and `hostSchedK` (`logs/skeptic-rebuild/`). It did not run the comparator. The
+`report.txt` in each folder is the agent's written verdict.
+
+### 11.2a The package with mutable sources only
+
+From the root of this repository:
+
+    bash community/scripts/apply-overlay.sh community/c588m $T
+    bash community/scripts/build-and-check.sh community/c588m $T
+
+The first command checks the package against its `SHA256SUMS` and copies its 72 files into the tree. Every
+file is new: it stops before copying anything if a file of the tree would change. The second builds the 70
+new modules one at a time, in the order of `MODULES.txt`, then runs the checks and prints one line per check:
+
+* `compare: RESULT: PASS`: `tools/Compare.lean` finds the theorem proved identical to the statement. The
+  statement is OpenAI's `UniformFourier.lean` with only the exponent and seven names changed;
+* `compare-negative`: the same comparison against the statement one unit stronger (`13552607`) fails on the
+  exponent, as it must;
+* `axioms`: the two theorems and the program behind them use only `propext`, `Classical.choice` and
+  `Quot.sound`;
+* `source scan`: no `sorry`, `admit`, `axiom` or `native_decide` in the new files, except the two `sorry` of
+  each statement file; no file of Shea's tree changed.
+
+It prints `ALL CHECKS PASSED` at the end. The agents' run of these steps is in `community/c588m/logs/colab/`
+(`mb-build.out`, `axioms.log`, `compare-fourier.log`, `compare-negative.log`, `source-scan.txt`). The 70
+modules took 29 minutes, 36 with the axioms and the two comparisons.
+
+The module `Work.GCert.Data.C588MControls` is a set of negative controls inside Lean: a certificate with one
+sign changed, the classic check (which forbids writing the sources) and a bank table with an owner used twice are each
+rejected by the kernel.
+
+### 11.2b The Walsh-Hadamard corollaries (`community/wht-c588` and `community/wht-c588mhh`)
+
+The theorem `OAI.PowerSaving.WHT.wht_main_block_C588Mx` (saving 1.3552607e-3) is one line on the kernel program
+of `community/c588m`, so build that package first, at least up to `Work.FourierC588M.Seam`. Its files are in
+`community/wht-c588/overlay/` (folders `Work/WHTC588M`, `Work/WHTC588MNeg`, and the three `WHTC588M*.json`
+comparator configurations). The statement file `Work/WHTC588M/Challenge.lean` is this repository's
+`Work/GCert/Data/ChallengeB2Ge8x.lean` with the theorem name and the exponent changed. Then, in `$T`:
+
+    cp -R <this repository>/community/wht-c588/overlay/Work/WHTC588M <this repository>/community/wht-c588/overlay/Work/WHTC588MNeg Work/
+    cp <this repository>/community/wht-c588/overlay/comparator/WHTC588M*.json comparator/
+    lake build Work.WHTC588M.Challenge Work.WHTC588MNeg.Challenge Work.WHTC588M.Main Work.WHTC588M.Solution
+    lake env lean Work/WHTC588M/Axioms.lean
+    lake env lean --run <this repository>/tools/Compare.lean Work.WHTC588M.Challenge Work.WHTC588M.Solution OAI.PowerSaving.WHT.wht_main_block_C588Mx
+    lake env lean --run <this repository>/tools/Compare.lean Work.WHTC588MNeg.Challenge Work.WHTC588M.Solution OAI.PowerSaving.WHT.wht_main_block_C588Mx
+
+The first comparison must print `RESULT: PASS`, the second (one unit stronger, `13552608`) `RESULT: FAIL`. The
+agents' run, on the second Colab machine, used `community/wht-c588/scripts-as-run/c588m/rwht-run.sh`; its logs
+are in `community/wht-c588/logs/colab/c588m/` (`run.out` prints `ALL CHECKS PASSED`; `cmp.out` has the
+comparator runs: both kernels accept, the configuration one unit stronger is rejected). The two other
+Walsh-Hadamard corollaries of `community/wht-c588` are built the same way on their own kernels
+(`WHTC588` on Shea's unchanged tree, `WHTC588Q` after `community/c588-repack`).
+
+The corollary on the kernel of `community/c588mhh`, `OAI.PowerSaving.WHT.wht_main_block_C588MHHx` (saving
+1.5699306e-3), is in `community/wht-c588mhh`, built the same way after `community/c588m` up to
+`Work.FourierC588M.Seam` and the 17 files of `community/c588mhh` that it needs (16 of `Work/XHost` and
+`Work/FourierC588MHH/Seam.lean`, listed with their checksums in
+`community/wht-c588mhh/scripts-as-run/hosting-sources.MANIFEST.sha256`). The agents' run, on the second Colab
+machine, used `community/wht-c588mhh/scripts-as-run/rfwht-run.sh`: 21 modules compiled with plain `lean`, then
+the axioms, both comparisons and the comparator (`logs/colab/run.out` prints `ALL CHECKS PASSED`; `cmp.out`
+has the comparator runs, accepted with both configurations and rejected one unit stronger, `15699307`). No
+Walsh-Hadamard corollary has been built on the kernel of the main result, `community/u8xmhh` (16197706).
+
+### 11.2c The packages on the U8 word
+
+`community/u8x` and `community/u8xm` are laid over Shea's tree directly, in a copy of their own. Both contain the
+five modules of `XExit` (exit frames), a Lean library of its own: first add the line
+
+    lean_lib XExit where globs := #[`XExit.+]
+
+to `$T/lakefile.lean` (the agents' line: `logs/colab-xexit/lakefile-tail.txt` of either package); this is the
+only change to a file of Shea's tree. Then run `apply-overlay.sh` and `build-and-check.sh` as in 11.2a with the
+package name. The agents' runs, in each package's `logs/colab/`:
+
+* `u8xm` (saving 1.3868856e-3): one Lake build of 9,305 jobs (`lake.out`), then `checks2.out`: standard axioms,
+  `RESULT: PASS`, the statement one unit stronger fails, the controls of `Work.GCert.Data.U8XMControls` proved;
+  comparator: `cmp/kcomb-U8XM-pos.log` accepted, `cmp/kcomb-U8XM-neg.log` rejected.
+* `u8x` (saving 1.2704023e-3): the 73 modules one at a time (`direct.out`), then `checks.out`: standard axioms,
+  `RESULT: PASS`, the stronger statement fails; comparator: `cmp/klower-U8X-pos.log` accepted (its own Lake build
+  of 9,289 jobs included), `cmp/klower-U8X-neg.log` rejected.
+
+In both runs the five `XExit` modules had been compiled earlier in the same tree, from the same sources
+(`logs/colab-xexit/`), and Lake replayed them. The agents built both packages a second time on the second
+Colab machine, and two independent agents checked them; those logs are not in the packages ("not shown"),
+except the lines of `community/u8xmhh/logs/colab/setup.out` that show the comparator's verdicts on the second
+build of `u8xm`. The main result (11.2) is laid over `u8xm` and needs the same line in the lakefile.
+
+### 11.2d Kothe's circuit with hosting (`community/c588mhh`)
+
+This package, `community/c588mhh`, extends `community/c588m` (11.2a): the same certificate of Kothe's
+circuit with mutable sources, with most leftover helper pieces stored in data registers that are idle during the
+same run, instead of in banks (111 banks instead of 4,032). This is DaysSky's idle-axis hosting. Its Lean proof
+is `Work/XHost`: Mamano's nine-stage network from Shea's tree with hosting added (`HDef`, `HStage`, `HGeom`,
+`HCert` copy his `GNetDef`, `GNetStage`, `GGeom`, `GNetCert`; `Frames` adapts his bank lemmas), the kernel
+checker `hostSchedK` of the host and bank tables with its soundness lemma `HostSched.ofTab_fitsR`, and the end
+theorem `XHost.engine_of_ginv_host`, adapted from his `GX.engine_of_ginv_401`, so the Fourier chain runs on it
+unchanged except for its seam (the first file of the chain, the only one that names the end theorem). A control instance, `C588MH`, runs the hosted network with an empty host table
+and must give exactly the figure of `community/c588m`. From the root of this repository, with `T` the folder
+`lean/complex588` of your copy:
+
+    bash community/scripts/apply-overlay.sh community/c588mhh $T
+    bash community/scripts/build-and-check.sh community/c588mhh $T
+
+The first command lays `community/c588m` first (the package's `result.json` names it under "requires"), then the
+53 files of this package (49 modules and 4 comparator configurations); every file is new. The second builds the
+49 modules in the order of `MODULES.txt` and runs the checks listed in 11.2a, against the statement
+`1 - 15699305/10^10` and the one unit stronger, `15699306`.
+
+The agents' run is in `community/c588mhh/logs/colab/`. The modules were compiled with plain `lean`, one at a
+time, in rounds while the agents fixed errors (`r2` to `r14`; the earlier rounds hold the failures); the last
+compile of every module ended without error (`r14.summary` and the earlier summaries). Then:
+`final-C588MHH-compare-pos.log` (`RESULT: PASS`), `final-C588MHH-compare-neg.log` (`RESULT: FAIL` on
+`decimalExponentC588MHH`), `r14-Work.FourierC588MHH.Axioms.log` (`propext`, `Classical.choice`, `Quot.sound`),
+and `final-C588MH.out` for the control (`RESULT: PASS` at `1 - 13552606/10^10`). An independent agent then
+copied the sources afresh, compiled the 32 modules of the package (all but the control) in import order into
+its own build folder, and ran `tools/Compare.lean` and the axioms on its build: all modules exit 0,
+`RESULT: PASS`, the stronger statement fails, standard axioms (`community/c588mhh/logs/rebuild-skeptic/`). It did
+not run the comparator.
+
+Two lemmas proved before the network was built are in `community/c588mhh/supporting/`: L1, which restates what
+Shea's tree already proves (`B401.gauged_step`, `B401.gauged_Wn`, `GX.entW_spec`, `GX.entW_form`,
+`GX.gauge_step`), and L2, which moves a helper's leftover piece into its host by a relabelling of addresses.
+They were compiled on the Mac, and no module of the overlay imports them: the result does the same step with
+`host_adapt` and `host_pad` (`Work/XHost/Frames.lean`), adapted from `bank_adapt` and `bank_pad` of Shea's
+`Work/Bank401/Adapt.lean`. Two independent agents rebuilt L1 and L2 on the Mac from their own copies, with
+the files of Shea's tree they need taken from his tree (`supporting/L1/skeptic/`, `supporting/L2/skeptic/`;
+`report.txt` in each is the agent's written verdict).
+
+### 11.3 The official comparator
+
+    chown -R 65534 $T/.lake
+    CC=<folder with the comparator's programs> bash community/scripts/run-comparator.sh pos $T comparator/fourier-c588m.json
+    CC=... bash community/scripts/run-comparator.sh neg $T comparator/fourier-c588m-neg.json
+
+The first must end with `Your solution is okay!` after both kernels (nanoda and Lean's) accept; the second
+must be rejected. `community/base-logs/scripts/cb-tools.sh` builds the comparator, `lean4export`, nanoda and
+landrun at the pins of the leaderboard's verifier. The comparator's own sandbox, landrun, needs Landlock, which
+the Colab VM's kernel lacks. So the agents ran it inside a stand-in, `community/base-logs/scripts/jail2.sh`: new
+mount, network and IPC namespaces, every mount read-only except the tree's `.lake`, the user nobody, no
+capabilities, and Unix sockets refused (`nounix.c`). It is not landrun. For the main result the
+configurations are `comparator/fourier-u8xmhh.json` and `comparator/fourier-u8xmhh-neg.json`; the agents' runs
+are `community/u8xmhh/logs/colab/cmp/fsb-U8XMHH-pos.log` (accepted, 15 minutes, 7.0 GB) and
+`fsb-U8XMHH-neg.log` (rejected). Its Lake build found the compiled files up to date (480 compiled files before
+and after, `cmp.out`), so it checked them with both kernels without compiling them again; the re-creation of the
+leaderboard's verifier and the independent rebuild of 11.2 compiled them from source. For `community/c588mhh`
+the configurations are `comparator/fourier-c588mhh.json` and `comparator/fourier-c588mhh-neg.json`; the agents'
+runs are `community/c588mhh/logs/colab/final-C588MHH-cmp-pos.out` (accepted, 14 minutes, 8.6 GB; its Lake build
+compiled the hosted modules again from source) and `final-C588MHH-cmp-neg.out` (rejected). A first attempt of both
+stopped after one second with "Child exited with 1" (end of `final-C588MHH.out`); the cause is not in the log, and
+the runs above started a minute later. The control `C588MH` was accepted and its negative rejected
+(`cmp-C588MH.out`). For `community/c588m`: `community/c588m/logs/colab/cmp-A1.out` (accepted, 9 minutes) and
+`cmp-A2neg.out` (rejected).
+
+After the `chown`, do not run `lake` as root in that tree: git refuses the package clones owned by nobody,
+Lake takes that for a changed address, deletes `.lake/packages` and fetches it again without its compiled
+files. Copy `.lake/packages` back from the built tree if that happens.
+
+### 11.4 Regenerate the package (no Lean needed)
+
+    bash tools/community/c588m-gen/REPRODUCE.sh
+
+It regenerates the certificate and all 147 Lean and comparator files of `community/c588m` (overlay and
+variants) from the inputs in this repository and compares them byte for byte with the published ones. It ends
+with `REGENERATION CHECK PASSED` (a few seconds on the Mac). Its steps also re-run the exact Python mirrors of
+every kernel check; their outputs are in `community/c588m/preflight/`.
+
+    SHEA=<Shea's clone> bash tools/community/mutable/REPRODUCE.sh
+
+re-derives, from Shea's generated Lean data, his certificate with the source copies, the same circuit with
+the copies folded back (mutable sources), the exact checks and controls of that circuit, the annealed bank
+table and the two engine files made by text substitution, and compares them with the published ones.
+`SHEA=<Shea's clone> VERIFIER=<a clone of bigospeedrun/verifier> bash tools/community/repack/REPRODUCE.sh` does the
+same for `community/c588-repack`. Its integer programme needs HiGHS in a `venv/` inside `tools/community/repack`
+(`python3 -m venv venv; venv/bin/pip install highspy`, as the script's header says).
+
+### 11.5 Replacing the certificate
+
+    tools/swap-certificate.sh --dry-run <package folder or .tar.gz>
+    tools/swap-certificate.sh <package folder or .tar.gz>
+    tools/swap-certificate.sh --tree $T --comparator <package>        # on the Linux machine
+
+The script first runs the static checks of the new package as it arrived (`tools/community/package_check.py
+check <package> .`), numbered as in its output: 1, the checksums; 2, the statement equal to OpenAI's up to the
+exponent and the names, once the modification notice of lines 3 to 12 is removed; 2b, that notice present in
+both statement files; 3, the negative statement one unit stronger; 4, the exponent of `Goal.lean`; 5, the
+comparator configurations; 6, the module list; 7, the source scan; 8, the figures of `result.json` against its
+numerators; 9, every check of `result.json` either "pass" with a log file inside the package, or "not shown" or
+"not run". The packages of the Walsh-Hadamard corollaries get checks 1, 3 and 5 to 9 for each of their
+theorems. `package_check.py same <file> <file>` compares two statement files with their notices removed.
+Then it installs the package under `community/` and keeps the old one (`--remove-old` removes it). With `--tree`
+it builds the package in Shea's tree and runs 11.2; with `--comparator` also 11.3; the statuses and log paths go
+into the package's `result.json`. It rewrites the package's `SHA256SUMS` and the repository's `MANIFEST.sha256`
+and prints the list of checks with their status and log.
+
+It changes the text files (README.md, VERIFY.md, NOTICE, ORIGIN.md, RELATED-WORK.md and `notes/`) and
+`community/current.json` only if every check of the new package is "pass" and names a log file inside the
+package. Otherwise it changes neither and lists the checks that block it. When it does change them, it replaces
+the figures and names of the old package by those of the new one with whole-word matches (`community/c588m` does
+not match `community/c588m-gen`), never touches a line about the Walsh-Hadamard corollary (its figures come from
+a separate build), and leaves alone the notes that start with a marker comment because they record the figures
+of their day (`notes/fifth-result-story.md`, `notes/open-directions-3.md`). It changes no prose: the title, the
+credits, the check tables and the sentences that describe how the certificate was made are mine to read and
+edit. It never commits. I moved the headline from `community/c588mhh` to `community/u8xmhh` by hand, running the
+script only with `--dry-run`: it would also have renamed the many places that name `community/c588mhh` itself,
+which stays.
+
+### 11.6 Limits particular to these results
+
+1. **Not this repository's Lean project.** `lake build` at the root of this repository does not build
+   `community/`. The packages need Shea's tree, which holds Nil Mamano's gauged extension of the engine and
+   the Fourier chain that the packages extend.
+2. **No real sandbox.** The comparator ran with the stand-in of 11.3, never with landrun, for every package.
+3. **Colab machines for the results.** Every Lean run of the results of this section was on Colab VMs of one
+   kind: Linux x86-64, 8 logical processors, 51 GiB, kernel without Landlock, no systemd. The main result,
+   `community/u8xmhh`, was built and checked on the second machine, and its independent rebuild ran on the
+   first (11.2). `community/c588mhh` and its independent rebuild ran on the first machine, as did most of the
+   other packages; the independent rebuild of `community/c588m` and the Walsh-Hadamard corollaries on the
+   kernels of `community/c588m` and `community/c588mhh` (11.2b) ran on the second. On the Mac ran only the two
+   supporting lemmas of `community/c588mhh` and their two independent rebuilds (11.2d), which no hosting
+   result imports; a negative control of `hostSchedK` for `community/c588mhh` (a host table with one remainder
+   off by one, rejected) on an earlier version of the data files, whose log is not in the package ("not
+   shown"); and the first run of `hostSchedK` on the tables of `community/u8xmhh` and on a copy with one
+   remainder off by one (`community/u8xmhh/logs/generation/`). The packages were built in copies of a tree that
+   already held Shea's compiled modules (and, for `community/c588mhh`, those of `community/c588m`; for
+   `community/u8xmhh`, those of a second build of `community/u8xm`). The exceptions are the re-creations of the
+   leaderboard's verifier (point 4 and 11.2), which compiled every module of the packaged submission from
+   source (Mathlib came already compiled), and the independent rebuild of `community/u8xmhh`, which compiled
+   its 32 modules from source over the agents' first build of `community/u8xm`.
+4. **Two later checks of `community/c588m`, both passed, with their limits.** The agents re-created the
+   leaderboard's verifier (bigospeedrun.com) offline, on a submission packaged like Nil Mamano's
+   (`community/scripts/bos/`). Its own controller needs bwrap and systemd-run, which the Colab VMs lack, so it
+   never ran. Instead `community/scripts/bos/mb-bos-run.sh` ran the verifier's three phases with the agents'
+   scripts, each inside the stand-in sandbox of 11.3 with `LEAN_NUM_THREADS=1`, and all three passed: the Lean
+   check ("Your solution is okay!"), the axiom audit (`propext`, `Classical.choice`, `Quot.sound`) and nanoda
+   (both kernels accept). Logs: `community/c588m/logs/colab/bos/`. An independent agent also rebuilt the 70
+   modules on a second Colab machine against that machine's own build of Shea's tree, and `tools/Compare.lean`
+   passed on its build and failed one unit stronger (`community/c588m/logs/skeptic-rebuild/`); it did not run
+   the comparator.
+5. **The leaderboard's verifier was not run on the newer packages.** It was never run online. Its three
+   phases were re-created offline, as in point 4, for `community/u8xmhh` (11.2) as well; not for
+   `community/c588mhh`, `community/u8xm` and `community/u8x`. Independent agents' rebuilds with their logs cover
+   `community/u8xmhh` (11.2) and `community/c588mhh` (11.2d); none is shown for the two U8 packages under the
+   main result.
+6. **Variants not built.** `community/c588m/variants/` holds two other bank tables for the same certificate:
+   `cyclic` (1.3513e-3) and `packed` (1.3566e-3). Their exact Python checks pass; Lean has not built them.
+
+## 12. The lever and the sixth result (`package/`, 2026-10-14 to 2026-10-20)
+
+This section is how to check the packages under `package/` yourself: the sixth result, `package/u8x0hq`, and the
+recursion lever. Like the results of section 11 they are laid over Ryan Shea's tree; unlike them, they come with
+their own scripts in `scripts/` (adapted from `community/scripts/`, with fixes found when they were tested on a
+fresh tree on 19 October).
+
+| package | what is proved | saving | status |
+|---|---|---|---|
+| `package/leverF` (the headline) | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17806935/10^10`; the community's #3945 with every head kept, and the recursion lever with the full cut | 1.7807e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the merged form (450 files) and on the unmerged one; rebuilt by an independent agent; this section's scripts run on it from a fresh clone of this repository on 20 October ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)); the package's `result.json` lists each check with its log |
+| `package/leverB` (the half cut on the same table) | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17581520/10^10`; the community's #3945 with every head kept, and the recursion lever | 1.7582e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the merged form (449 files) and on the unmerged one; rebuilt by an independent agent; this section's scripts run on it from a fresh clone of this repository on 19 and 20 October ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)); the package's `result.json` lists each check with its log |
+| `package/leverA` | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17564707/10^10`; the community's #2979 with every head kept, and the recursion lever | 1.7565e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the merged form (449 files); rebuilt by an independent agent; this section's scripts run on it from a fresh clone of this repository on 19 October ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)); the package's `result.json` lists each check with its log |
+| `package/lever2979` | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17556473/10^10`; the community's #2979 as published, with the recursion lever | 1.7556e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the merged form (449 files) and on the unmerged one; rebuilt by an independent agent (the package's `result.json` lists each check with its log) |
+| `package/lever` | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17501109/10^10`; the community's #3945 as published, with the recursion lever | 1.7501e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the unmerged form (702 files); rebuilt by an independent agent; this section's scripts run on it from a fresh tree on 19 October (the package's `result.json` lists each check with its log) |
+| `package/u8x0hq` | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 16256629/10^10`; the community's U8 word with exit frames, mutable sources without centre copies and same-run hosting | 1.6257e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline; rebuilt by an independent agent; this section's scripts run on it from a fresh tree on 19 October |
+
+Every lever package requires `package/u8x0hq` (its `result.json`, "requires"), and `scripts/apply-overlay.sh`
+lays that first. Each package has `overlay/` (files under `Work/` and `comparator/` only, so the tree's
+`lakefile.lean` gains only the two library lines of `package/u8x0hq`), `MODULES.txt` (the new modules in build
+order), `result.json` (figures, theorem names, Lean controls and the status of every check with its log),
+`README.txt`, `SHA256SUMS`, `logs/`, and, for the lever packages, `controls/` and `generators/`.
+
+### 12.1 What you need
+
+- A Linux machine the size of a Colab VM: the agents used 8 logical processors and about 50 GB of memory. One run
+  of `tools/Compare.lean` took about 16 GB and one run of the official comparator on a lever package about 15 GB.
+  Allow 20 to 40 GB of disk for one tree with its compiled files (Shea's built tree alone is about 10 GB).
+- Lean v4.34.1 through elan, and Mathlib at `d13f23b723b8a846827a245b89c10fc7d3f11612` (Shea's tree pins both).
+- Python 3.9 or newer for the scripts (standard library only).
+
+### 12.2 Build Shea's tree
+
+As in 11.1:
+
+    git clone https://github.com/shea256/fourier-transform-below-nlogn shea
+    cd shea && git checkout --detach 52394849c7ecf3412d39b925d75fc7fdb98994d8 && cd lean/complex588
+    lake exe cache get
+    lake build Work.FourierC588.Main Work.FourierC588.UniformFourierChallenge \
+      Work.FourierC588Neg.UniformFourierChallenge Work.GCert.Data.C588Controls Work.FourierC588.Axioms
+
+`scripts/base/cb-setup.sh` and `cb-build.sh` are the scripts the agents ran (paths under `/content/work`);
+`cb-build.sh` also runs Shea's own Compare control, which must pass before anything is laid over the tree. Below,
+`T` is the folder `lean/complex588` of a copy of this built tree. Use one copy per package (`cp -a shea
+shea-lever`), so that one package never meets another.
+
+### 12.3 Lay a package over the tree, build it, and check it
+
+From the root of this repository, with `P` one of the folders of the table above:
+
+    bash scripts/apply-overlay.sh package/P $T
+    bash scripts/build-and-check.sh package/u8x0hq $T      # optional: the sixth result, 1.6256629e-3
+    bash scripts/build-and-check.sh package/P $T
+
+The first command lays `package/u8x0hq` first, then `package/P`. Both are checked against their `SHA256SUMS`; no
+file of the tree is overwritten (the script refuses if one would be), and `lakefile.lean` gains the library lines
+that each `result.json` lists under `lakefile_add` (`lean_lib XExit` and `lean_lib CSX`, from `package/u8x0hq`).
+
+`build-and-check.sh` builds the modules in the order of `MODULES.txt`, one `lake build` each, waiting while
+`MAX_LEAN` Lean processes are running (default 2) and, if `MIN_FREE_MB` is set, while less memory than that is
+available. One module at a time, the several hundred modules of a lever package take hours. It is faster to build
+them all at once first, which lets Lake compile independent modules side by side, and then run the script, whose
+build steps then only confirm that each module is up to date:
+
+    M=$(grep -v '^#' package/P/MODULES.txt); (cd $T && lake build $M)
+
+Then it:
+
+1. prints the axioms of the theorems (the file named `axioms_file` in `result.json`, and a file it writes with
+   the same imports for every name under `axiom_targets`);
+2. derives both statement files from OpenAI's file (`third-party/openai-math/`) with `scripts/derive_challenges.sh`
+   and compares them byte for byte with the package's;
+3. runs the Lean controls that `result.json` lists (each must compile, except those marked `"expect": "fails"`,
+   which must fail with a Lean error: one head too many, a table chunk one too high);
+4. runs `tools/Compare.lean` against the statement (must print `RESULT: PASS`) and against the statement one unit
+   stronger (must fail, on the package's `decimalExponent`);
+5. scans the package's files for `sorry`, `admit`, `axiom`, `native_decide`, `implemented_by`, `extern`, `unsafe`
+   and `opaque` outside comments (the only allowed hits are the two `sorry` lines of each statement file, which
+   OpenAI's file has too), and checks that no tracked file of the tree changed except `lakefile.lean`.
+
+It ends with `ALL CHECKS PASSED`. The agents' runs, with machine, times and peak memory, are in each package's
+`logs/` and `result.json`. `controls/` of a lever package holds further controls compiled against the built tree:
+files that must fail to compile (one head too many, a table chunk one too high), and side checks.
+
+### 12.4 The official comparator
+
+    export CC=<folder with bin/comparator, bin/lean4export, bin/nanoda_bin> JAIL=<folder with jail2.sh, nounix, fresh-bin/lake>
+    bash scripts/run-comparator.sh pos $T <the positive configuration of result.json, under comparator/>
+    bash scripts/run-comparator.sh neg $T <the negative configuration>
+
+The first must end with `Your solution is okay!` after both kernels accept; the second must be rejected
+(`Const does not match ... decimalExponent<suffix>`). `scripts/base/cb-tools.sh` builds the comparator,
+`lean4export`, nanoda and landrun at the pins of the leaderboard's verifier. On a lever package the agents'
+runs took between about 45 minutes and an hour and a half, and about 15 GB: the kernel phases check every kernel decision of the table of hosts and
+of both words again.
+
+The comparator's own sandbox, landrun, needs Landlock, which the Colab VM's kernel lacks. So the agents ran it
+inside a stand-in, `scripts/cc-jail/jail2.sh`: new mount, network and IPC namespaces, every mount read-only except
+the tree's `.lake` and a private temporary folder, the user nobody, no capabilities, and Unix sockets refused by
+the seccomp helper `nounix` (`nounix.c`). It is not landrun. After the `chown`, do not run `lake` as root in that
+tree: git refuses the package clones owned by nobody, Lake takes that for a changed address and fetches
+`.lake/packages` again without its compiled files. (The script itself runs `chown -R 65534` on the tree's `.lake`.)
+
+### 12.5 The leaderboard's verifier, re-created offline
+
+`scripts/bos/` and `scripts/lever-run/` hold the scripts the agents used (their paths are those of the Colab
+machine). They package the proof as a submission folder in the layout of the entries already merged on
+[bigospeedrun/verifier](https://github.com/bigospeedrun/verifier) (the import closure of the solution module
+copied under `Submission/`, only local import paths changed, and an adapter `Race.bound`), and run the verifier's
+three phases at its commit `c92b9b6`: the Lean check, which compiles the packaged proof from source, the audit of
+the axioms, and the nanoda kernel. The verifier admits at most 500 files, and a lever package's closure has about 580 to
+700 modules, so the packaged proof merges small generated modules into larger ones; the Lean check of the
+packaged proof took the agents between about one and two and a half hours (2 h 07 for the headline), and about 10 GB. They run in the same stand-in sandbox as 12.4; the
+verifier's own controller is not run.
+
+### 12.6 Re-run the lever's searches and prices (no Lean)
+
+    bash tools/reproduce-search.sh <a new folder> <Shea's tree>/lean/complex588/Work/Bridge401/Gates.lean \
+        package/u8x0hq/overlay/Work/XHost
+
+This re-runs every program of `tools/lever/` on the community's files in `third-party/` and on `data/` (the head
+test, its control and recount, the prices, the conversion of #3945's words with seven mutants each, the head test in
+this project's network, and the T74 regression), and compares each output with `results/`. It ends with
+`ALL EQUAL`. It took 14 minutes and 0.97 GB on a Mac (`results/reproduced/`). What each program does, and its
+command on its own: [tools/lever/README.md](tools/lever/README.md). The head tests and prices of #2979 and of the
+tables with every head kept are in `research/record-track/programs/` and in each package's `fill/checks/`.
+
+To regenerate the Lean data of a lever package from the community's files and compare it with the package:
+
+    bash package/P/generators/REGENERATE.sh <a new folder>
+
+### 12.7 The community's own checks of the circuits (optional)
+
+The circuits' files are in `third-party/` (#3945) and in the generators of `package/lever2979` and
+`package/leverA` (#2979; `NOTICE`, section 10.c); the community's check programs are not included as a whole. To re-run them, check out CrocSwap/integer-mult-bounds on a Linux machine with
+Python 3.12:
+
+- #3945: pull request #3945 at `91f81d131252db704f945891da1ea54e29d46b8b`, and in
+  `research/staged544-terminal-gap-fill/`:
+
+      python3 native/run_native.py inputs/NEW-base.json.gz <out-base>     # and NEW-extra: both end in PASS_COMPLETE_T74_NATIVE_REPLAY
+      python3 admission/full_replay.py --work <empty folder> --jobs 3       # PASS_TERMINAL_WIDTH5_COMPLETE_CONDITIONAL_RELEASE
+
+  The first writes the canonical native word that `data/native/` holds ([data/README.md](data/README.md) gives
+  the file and content hashes). The second is the community's complete stated verification of #3945; it took the
+  agents 1 hour 8 minutes and 6.2 GB, and rejected all 119 of its controls.
+- #2979: the main branch at `20ecf289`, `python3 scripts/research_package.py --package research/rank7-joint-endframes`
+  (`PASS_REGISTERED_RESEARCH_PACKAGE`) and, in that folder, its complete replay `reproduce.py`
+  (`PASS_RANK7_JOINT_ENDFRAMES_COMPLETE_REPLAY`), with the author's recorded versions of numpy, scipy and ortools.
+- The tables with every head kept: each package's `fill/` README gives the commands that made the table and the
+  community checks that were run on it.
+
+### 12.8 Limits particular to these packages
+
+- Every Lean run of these packages was on Colab machines (Linux). None was on a Mac.
+- The comparator and the re-created verifier ran in the stand-in sandbox of 12.4, not in landrun or the
+  verifier's own controller, and nothing was submitted to the leaderboard.
+- The Lean data of the circuits is generated by programs from the community's files; Lean checks that data, so an
+  error in a generator could make the build fail but could not make a false statement pass.
+- The times and memory figures are those of the agents' runs on machines that were also running other jobs.
+
+## 13. The programs of `research/` (no Lean)
+
+Each section of [research/](research/README.md) has a `programs/` folder, grouped by finding; each program folder
+has a README with what it shows, the command, its time and memory, and what it should print. Python 3.9 or later;
+numpy for most programs and scipy for some; sympy, python-flint, Singular, msolve or a C compiler where a README
+says so. The heavy ones ran on Colab machines and the light ones on an Apple M4 Mac mini, as each README says.
+Two warnings apply everywhere: msolve 0.6.5 reads a product written `x*x` as `x` (write powers as `x^k` and
+cross-check with Singular), and `ledger.py` certifies a word only when the number of digit columns is 1 more than
+a multiple of 4 ([research/README.md](research/README.md), "Running the programs").
+
+    python3 -I -B research/make_index.py --check      # index.json and open-problems.md agree with the sections
+
+## Sources
+
+For section 11: the U8 word is pull request #869 (Jeremy Kothe) of CrocSwap/integer-mult-bounds, on
+his #799, which carries Chafik Boukhalfa's frame changes of #741, and on icekylinx's #645, rebuilt by the agents
+at its commit `407d52ff15b2217b6e22bce44728b4c3907b6515` (`community/base-logs/u8-word/`); the community's
+owner maps for it and its bit supplier are not used (README.md, section 9, names them); Kothe's circuit is its
+pull request #588 and DaysSky's idle-axis hosting its pull request #442 (README.md, section 9, "For the fifth
+result", has the other credits); the offline
+re-creations of the leaderboard's verifier used bigospeedrun/verifier at `c92b9b6`;
+Shea's repository `github.com/shea256/fourier-transform-below-nlogn` at
+`52394849c7ecf3412d39b925d75fc7fdb98994d8` (its `lean/` folder is the same at `0e61af6`); Lean v4.34.1;
+Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`; comparator `d03acab`, lean4export `076e8e5`, nanoda
+`3a24072`, landrun `811cfff` (the pins of `bigospeedrun/verifier`, `profiles/tools.json`).
+
+For sections 12 and 13: the community's pull requests #3945 (head `91f81d13`) and #2979 (main
+`20ecf289`); Shea's repository at `52394849c7ecf3412d39b925d75fc7fdb98994d8`; bigospeedrun/verifier at `c92b9b6`
+(re-created) and `1e009d7` (its file limit); README.md, section 9, "For the lever, the sixth result and the
+research", has the rest.

@@ -1,0 +1,4 @@
+calibration: one-sided, copy per total                     illegal gates     0 of 7948 {} | x 0, y 0, scratch 0 on them | excess dims 0
+natural mirror, one copy per total                         illegal gates  2453 of 7948 {'S': 448, 'B': 2005} | x 0, y 112, scratch 416 on them | excess dims 10978
+natural mirror, one copy per (total, reader)               illegal gates  2429 of 7948 {'S': 448, 'B': 1981} | x 0, y 112, scratch 856 on them | excess dims 3744
+best symmetric twisted mirror, one copy per (total, reader) illegal gates  2360 of 7948 {'S': 448, 'B': 1912} | x 0, y 112, scratch 856 on them | excess dims 3623

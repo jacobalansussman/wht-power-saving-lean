@@ -1,0 +1,1433 @@
+{
+ "targets_with_one_rank2_stop": 112,
+ "targets_whose_rank2_stop_is_a_premerge_half_read": 112,
+ "halves_read_by_targets": {
+  "a": 56,
+  "b": 56
+ },
+ "half_reads_of_a_plane_inside_the_readers_cap": 0,
+ "plane_target_pairs_with_P_in_cap": 1344,
+ "of_which_target_rank2_line_is_a_half_line_of_P": 0,
+ "partner_b": {
+  "merge in B / b keeps beta through the copy reads": 55,
+  "merge in A / b rewritten before a copy read (in A)": 112,
+  "merge in B / b rewritten before a copy read (in cleanup)": 1
+ },
+ "reader_classes_where_b_keeps_beta": {
+  "target": 16,
+  "cold helper, target": 6,
+  "target, target": 24,
+  "cold helper, entering helper, entering helper, target, target": 3,
+  "cold helper, entering helper, entering helper, entering helper, entering helper, target": 1,
+  "cold helper, entering helper, entering helper, entering helper, target, target": 1,
+  "cold helper, entering helper, entering helper, entering helper, entering helper, entering helper, target, target": 1,
+  "cold helper, entering helper, target, target": 2,
+  "cold helper, entering helper, entering helper, entering helper, target": 1
+ },
+ "planes_b_intact": [
+  {
+   "P": [
+    259,
+    131,
+    24
+   ],
+   "h3": 569,
+   "readers": [
+    184
+   ],
+   "verdicts": {
+    "184": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    259,
+    227,
+    24
+   ],
+   "h3": 578,
+   "readers": [
+    146,
+    506
+   ],
+   "verdicts": {
+    "146": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "506": [
+     "h-cold",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ]
+   }
+  },
+  {
+   "P": [
+    265,
+    137,
+    6
+   ],
+   "h3": 581,
+   "readers": [
+    175,
+    193
+   ],
+   "verdicts": {
+    "193": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "175": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    265,
+    233,
+    6
+   ],
+   "h3": 591,
+   "readers": [
+    143,
+    161
+   ],
+   "verdicts": {
+    "161": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "143": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    266,
+    138,
+    30
+   ],
+   "h3": 521,
+   "readers": [
+    176
+   ],
+   "verdicts": {
+    "176": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    266,
+    234,
+    30
+   ],
+   "h3": 530,
+   "readers": [
+    154,
+    165,
+    518,
+    554,
+    724
+   ],
+   "verdicts": {
+    "154": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "724": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ],
+    "518": [
+     "h-enter",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ],
+    "165": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+    ],
+    "554": [
+     "h-cold",
+     "R1: next frame does not contain L_a",
+     "ok"
+    ]
+   }
+  },
+  {
+   "P": [
+    289,
+    161,
+    6
+   ],
+   "h3": 614,
+   "readers": [
+    130,
+    198
+   ],
+   "verdicts": {
+    "198": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "130": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    289,
+    185,
+    6
+   ],
+   "h3": 605,
+   "readers": [
+    143,
+    203
+   ],
+   "verdicts": {
+    "143": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "203": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    290,
+    162,
+    24
+   ],
+   "h3": 496,
+   "readers": [
+    124
+   ],
+   "verdicts": {
+    "124": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    296,
+    168,
+    6
+   ],
+   "h3": 460,
+   "readers": [
+    132,
+    172
+   ],
+   "verdicts": {
+    "172": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "132": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    296,
+    208,
+    6
+   ],
+   "h3": 471,
+   "readers": [
+    161,
+    203
+   ],
+   "verdicts": {
+    "203": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "161": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    301,
+    173,
+    30
+   ],
+   "h3": 544,
+   "readers": [
+    116
+   ],
+   "verdicts": {
+    "116": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    301,
+    203,
+    30
+   ],
+   "h3": 554,
+   "readers": [
+    218,
+    518,
+    530,
+    542,
+    722,
+    724
+   ],
+   "verdicts": {
+    "218": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "530": [
+     "h-enter",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ],
+    "518": [
+     "h-enter",
+     "R1: frame 3 before the merge not inside L_a",
+     "ok"
+    ],
+    "722": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "ok"
+    ],
+    "724": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "ok"
+    ],
+    "542": [
+     "h-cold",
+     "R1: frame 3 before the merge not inside L_a",
+     "ok"
+    ]
+   }
+  },
+  {
+   "P": [
+    313,
+    161,
+    6
+   ],
+   "h3": 604,
+   "readers": [
+    138,
+    206
+   ],
+   "verdicts": {
+    "206": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "138": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    313,
+    185,
+    6
+   ],
+   "h3": 615,
+   "readers": [
+    135,
+    195
+   ],
+   "verdicts": {
+    "135": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "195": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    324,
+    162,
+    24
+   ],
+   "h3": 507,
+   "readers": [
+    165,
+    211,
+    495,
+    720,
+    721,
+    727
+   ],
+   "verdicts": {
+    "211": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "727": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ],
+    "495": [
+     "h-cold",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ],
+    "165": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+    ],
+    "720": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "ok"
+    ],
+    "721": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "ok"
+    ]
+   }
+  },
+  {
+   "P": [
+    324,
+    196,
+    24
+   ],
+   "h3": 497,
+   "readers": [
+    120
+   ],
+   "verdicts": {
+    "120": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    331,
+    173,
+    30
+   ],
+   "h3": 555,
+   "readers": [
+    219,
+    531
+   ],
+   "verdicts": {
+    "219": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "531": [
+     "h-cold",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ]
+   }
+  },
+  {
+   "P": [
+    331,
+    203,
+    30
+   ],
+   "h3": 545,
+   "readers": [
+    112
+   ],
+   "verdicts": {
+    "112": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    336,
+    168,
+    6
+   ],
+   "h3": 470,
+   "readers": [
+    164,
+    206
+   ],
+   "verdicts": {
+    "164": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "206": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    336,
+    208,
+    6
+   ],
+   "h3": 461,
+   "readers": [
+    129,
+    169
+   ],
+   "verdicts": {
+    "129": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "169": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    355,
+    131,
+    24
+   ],
+   "h3": 579,
+   "readers": [
+    147,
+    507
+   ],
+   "verdicts": {
+    "147": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "507": [
+     "h-cold",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ]
+   }
+  },
+  {
+   "P": [
+    355,
+    227,
+    24
+   ],
+   "h3": 568,
+   "readers": [
+    188
+   ],
+   "verdicts": {
+    "188": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    361,
+    137,
+    6
+   ],
+   "h3": 590,
+   "readers": [
+    138,
+    164
+   ],
+   "verdicts": {
+    "138": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "164": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    361,
+    233,
+    6
+   ],
+   "h3": 580,
+   "readers": [
+    170,
+    196
+   ],
+   "verdicts": {
+    "170": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "196": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    362,
+    138,
+    30
+   ],
+   "h3": 531,
+   "readers": [
+    155,
+    166,
+    519,
+    720,
+    722,
+    723,
+    724,
+    725
+   ],
+   "verdicts": {
+    "155": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "725": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ],
+    "519": [
+     "h-cold",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ],
+    "166": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+    ],
+    "720": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "ok"
+    ],
+    "723": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "ok"
+    ],
+    "722": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "ok"
+    ],
+    "724": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "ok"
+    ]
+   }
+  },
+  {
+   "P": [
+    362,
+    234,
+    30
+   ],
+   "h3": 520,
+   "readers": [
+    180
+   ],
+   "verdicts": {
+    "180": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    388,
+    24,
+    2
+   ],
+   "h3": 485,
+   "readers": [
+    144
+   ],
+   "verdicts": {
+    "144": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    388,
+    98,
+    24
+   ],
+   "h3": 494,
+   "readers": [
+    163,
+    186,
+    506,
+    720
+   ],
+   "verdicts": {
+    "186": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "720": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ],
+    "506": [
+     "h-cold",
+     "R1: next frame does not contain L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ],
+    "163": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+    ]
+   }
+  },
+  {
+   "P": [
+    390,
+    19,
+    13
+   ],
+   "h3": 533,
+   "readers": [
+    152
+   ],
+   "verdicts": {
+    "152": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    390,
+    37,
+    24
+   ],
+   "h3": 556,
+   "readers": [
+    212
+   ],
+   "verdicts": {
+    "212": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    390,
+    44,
+    30
+   ],
+   "h3": 508,
+   "readers": [
+    220
+   ],
+   "verdicts": {
+    "220": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    390,
+    67,
+    24
+   ],
+   "h3": 557,
+   "readers": [
+    208
+   ],
+   "verdicts": {
+    "208": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    390,
+    74,
+    30
+   ],
+   "h3": 509,
+   "readers": [
+    216
+   ],
+   "verdicts": {
+    "216": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    390,
+    98,
+    24
+   ],
+   "h3": 484,
+   "readers": [
+    148
+   ],
+   "verdicts": {
+    "148": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    390,
+    109,
+    30
+   ],
+   "h3": 532,
+   "readers": [
+    156
+   ],
+   "verdicts": {
+    "156": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    395,
+    109,
+    30
+   ],
+   "h3": 542,
+   "readers": [
+    178,
+    518,
+    530,
+    554,
+    722
+   ],
+   "verdicts": {
+    "178": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "518": [
+     "h-enter",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ],
+    "722": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "ok"
+    ],
+    "530": [
+     "h-enter",
+     "R1: frame 3 before the merge not inside L_a",
+     "ok"
+    ],
+    "554": [
+     "h-cold",
+     "R1: next frame does not contain L_a",
+     "ok"
+    ]
+   }
+  },
+  {
+   "P": [
+    400,
+    8,
+    6
+   ],
+   "h3": 473,
+   "readers": [
+    136,
+    169
+   ],
+   "verdicts": {
+    "169": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "136": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    400,
+    104,
+    6
+   ],
+   "h3": 483,
+   "readers": [
+    167,
+    195
+   ],
+   "verdicts": {
+    "195": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "167": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    408,
+    49,
+    6
+   ],
+   "h3": 592,
+   "readers": [
+    170,
+    205
+   ],
+   "verdicts": {
+    "205": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "170": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    408,
+    73,
+    6
+   ],
+   "h3": 593,
+   "readers": [
+    175,
+    200
+   ],
+   "verdicts": {
+    "175": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "200": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    408,
+    104,
+    6
+   ],
+   "h3": 472,
+   "readers": [
+    141,
+    172
+   ],
+   "verdicts": {
+    "141": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "172": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    419,
+    67,
+    24
+   ],
+   "h3": 566,
+   "readers": [
+    122,
+    494
+   ],
+   "verdicts": {
+    "122": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "494": [
+     "h-cold",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ]
+   }
+  },
+  {
+   "P": [
+    425,
+    73,
+    6
+   ],
+   "h3": 603,
+   "readers": [
+    135,
+    167
+   ],
+   "verdicts": {
+    "167": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "135": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    426,
+    74,
+    30
+   ],
+   "h3": 518,
+   "readers": [
+    114,
+    163,
+    530,
+    542,
+    722
+   ],
+   "verdicts": {
+    "114": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "722": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ],
+    "530": [
+     "h-enter",
+     "R1: next frame does not contain L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ],
+    "163": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+    ],
+    "542": [
+     "h-cold",
+     "R1: next frame does not contain L_a",
+     "ok"
+    ]
+   }
+  },
+  {
+   "P": [
+    448,
+    32,
+    6
+   ],
+   "h3": 449,
+   "readers": [
+    129,
+    136
+   ],
+   "verdicts": {
+    "136": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "129": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    448,
+    56,
+    6
+   ],
+   "h3": 458,
+   "readers": [
+    196,
+    205
+   ],
+   "verdicts": {
+    "196": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "205": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    453,
+    37,
+    24
+   ],
+   "h3": 567,
+   "readers": [
+    123,
+    495
+   ],
+   "verdicts": {
+    "123": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "495": [
+     "h-cold",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ]
+   }
+  },
+  {
+   "P": [
+    460,
+    44,
+    30
+   ],
+   "h3": 519,
+   "readers": [
+    115,
+    160,
+    531,
+    723,
+    724
+   ],
+   "verdicts": {
+    "115": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "723": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ],
+    "531": [
+     "h-cold",
+     "R1: next frame does not contain L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ],
+    "160": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+    ],
+    "724": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "ok"
+    ]
+   }
+  },
+  {
+   "P": [
+    465,
+    49,
+    6
+   ],
+   "h3": 602,
+   "readers": [
+    130,
+    162
+   ],
+   "verdicts": {
+    "130": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "162": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    472,
+    32,
+    6
+   ],
+   "h3": 459,
+   "readers": [
+    193,
+    200
+   ],
+   "verdicts": {
+    "200": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "193": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    472,
+    56,
+    6
+   ],
+   "h3": 448,
+   "readers": [
+    132,
+    141
+   ],
+   "verdicts": {
+    "132": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "141": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  },
+  {
+   "P": [
+    484,
+    24,
+    2
+   ],
+   "h3": 495,
+   "readers": [
+    160,
+    187,
+    507,
+    721
+   ],
+   "verdicts": {
+    "187": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "721": [
+     "h-enter",
+     "R1: frame 4 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ],
+    "507": [
+     "h-cold",
+     "R1: next frame does not contain L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ],
+    "160": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 8)"
+    ]
+   }
+  },
+  {
+   "P": [
+    486,
+    19,
+    13
+   ],
+   "h3": 543,
+   "readers": [
+    179,
+    519
+   ],
+   "verdicts": {
+    "179": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 4)"
+    ],
+    "519": [
+     "h-cold",
+     "R1: frame 3 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 5)"
+    ]
+   }
+  },
+  {
+   "P": [
+    496,
+    8,
+    6
+   ],
+   "h3": 482,
+   "readers": [
+    162,
+    198
+   ],
+   "verdicts": {
+    "162": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 6)"
+    ],
+    "198": [
+     "y",
+     "R1: frame 2 before the merge not inside L_a",
+     "R3: partner b climbs to [4] after the read, not containing G (rank 7)"
+    ]
+   }
+  }
+ ]
+}

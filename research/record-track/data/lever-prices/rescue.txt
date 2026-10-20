@@ -1,0 +1,39 @@
+== controls
+T74 uniform (expect 1.6797549561e-3)                       b=1.6797549561e-3  vs hub +0.000%  (+2.134e-20)  separated=True r_max=48 k_min=73 theta=0.9023
+T74 all 22,748 truncated (expect 1.8169467780e-3)          b=1.8169467780e-3  vs hub +8.167%  (+1.372e-04)  separated=True r_max=8 k_min=25 theta=0.6460
+T74 heads truncated, tails rank 48 (expect 1.7434773229e-3) b=1.7434773229e-3  vs hub +3.794%  (+6.372e-05)  separated=False r_max=48 k_min=25 theta=1.2027
+partial f=0.5 t=11374 (expect 1.6983759e-3)                b=1.6983759295e-3  vs hub +1.109%  (+1.862e-05)  separated=True r_max=24 k_min=25 theta=0.9873
+== separated variants on the computed head count (11,010 heads, 11,738 non-qualifying)
+heads cut by d=0 (target 73), tails 48                     b=1.6797549561e-3  vs hub +0.000%  (+2.134e-20)  separated=True r_max=48 k_min=73 theta=0.9023
+heads cut by d=1 (target 72), tails 48                     b=1.6803074726e-3  vs hub +0.033%  (+5.525e-07)  separated=True r_max=48 k_min=72 theta=0.9052
+heads cut by d=2 (target 71), tails 48                     b=1.6808700316e-3  vs hub +0.066%  (+1.115e-06)  separated=True r_max=48 k_min=71 theta=0.9082
+heads cut by d=3 (target 70), tails 48                     b=1.6814430031e-3  vs hub +0.100%  (+1.688e-06)  separated=True r_max=48 k_min=70 theta=0.9112
+heads cut by d=4 (target 69), tails 48                     b=1.6820267783e-3  vs hub +0.135%  (+2.272e-06)  separated=True r_max=48 k_min=69 theta=0.9143
+heads cut by d=5 (target 68), tails 48                     b=1.6826217709e-3  vs hub +0.171%  (+2.867e-06)  separated=True r_max=48 k_min=68 theta=0.9175
+heads cut by d=6 (target 67), tails 48                     b=1.6832284192e-3  vs hub +0.207%  (+3.473e-06)  separated=True r_max=48 k_min=67 theta=0.9207
+heads cut by d=7 (target 66), tails 48                     b=1.6838471879e-3  vs hub +0.244%  (+4.092e-06)  separated=True r_max=48 k_min=66 theta=0.9240
+heads cut by d=8 (target 65), tails 48                     b=1.6844785705e-3  vs hub +0.281%  (+4.724e-06)  separated=True r_max=48 k_min=65 theta=0.9274
+heads cut by d=9 (target 64), tails 48                     b=1.6851230913e-3  vs hub +0.320%  (+5.368e-06)  separated=True r_max=48 k_min=64 theta=0.9308
+heads cut by d=10 (target 63), tails 48                    b=1.6857813087e-3  vs hub +0.359%  (+6.026e-06)  separated=True r_max=48 k_min=63 theta=0.9344
+heads cut by d=11 (target 62), tails 48                    b=1.6864538179e-3  vs hub +0.399%  (+6.699e-06)  separated=True r_max=48 k_min=62 theta=0.9380
+heads cut by d=12 (target 61), tails 48                    b=1.6871412543e-3  vs hub +0.440%  (+7.386e-06)  separated=True r_max=48 k_min=61 theta=0.9417
+heads cut by d=13 (target 60), tails 48                    b=1.6878442970e-3  vs hub +0.482%  (+8.089e-06)  separated=True r_max=48 k_min=60 theta=0.9455
+heads cut by d=14 (target 59), tails 48                    b=1.6885636737e-3  vs hub +0.524%  (+8.809e-06)  separated=True r_max=48 k_min=59 theta=0.9494
+heads cut by d=15 (target 58), tails 48                    b=1.6893001649e-3  vs hub +0.568%  (+9.545e-06)  separated=True r_max=48 k_min=58 theta=0.9534
+heads cut by d=16 (target 57), tails 48                    b=1.6900546093e-3  vs hub +0.613%  (+1.030e-05)  separated=True r_max=48 k_min=57 theta=0.9575
+heads cut by d=17 (target 56), tails 48                    b=1.6908279102e-3  vs hub +0.659%  (+1.107e-05)  separated=True r_max=48 k_min=56 theta=0.9617
+heads cut by d=18 (target 55), tails 48                    b=1.6916210422e-3  vs hub +0.706%  (+1.187e-05)  separated=True r_max=48 k_min=55 theta=0.9660
+heads cut by d=19 (target 54), tails 48                    b=1.6924350590e-3  vs hub +0.755%  (+1.268e-05)  separated=True r_max=48 k_min=54 theta=0.9705
+heads cut by d=20 (target 53), tails 48                    b=1.6932711027e-3  vs hub +0.805%  (+1.352e-05)  separated=True r_max=48 k_min=53 theta=0.9750
+heads cut by d=21 (target 52), tails 48                    b=1.6941304140e-3  vs hub +0.856%  (+1.438e-05)  separated=True r_max=48 k_min=52 theta=0.9797
+heads cut by d=22 (target 51), tails 48                    b=1.6950143443e-3  vs hub +0.908%  (+1.526e-05)  separated=True r_max=48 k_min=51 theta=0.9846
+heads cut by d=23 (target 50), tails 48                    b=1.6959243698e-3  vs hub +0.963%  (+1.617e-05)  separated=True r_max=48 k_min=50 theta=0.9896
+heads cut by d=24 (target 49), tails 48                    b=1.6968621073e-3  vs hub +1.018%  (+1.711e-05)  separated=True r_max=48 k_min=49 theta=0.9947
+heads cut by d=25 (target 48), tails split                 b=1.6909107939e-3  vs hub +0.664%  (+1.116e-05)  separated=True r_max=47 k_min=48 theta=0.9946
+heads cut by d=30 (target 43), tails split                 b=1.6776000780e-3  vs hub -0.128%  (-2.155e-06)  separated=True r_max=42 k_min=43 theta=0.9937
+heads cut by d=36 (target 37), tails split                 b=1.6729412204e-3  vs hub -0.406%  (-6.814e-06)  separated=True r_max=36 k_min=37 theta=0.9924
+heads cut by d=40 (target 33), tails split                 b=1.6745534715e-3  vs hub -0.310%  (-5.201e-06)  separated=True r_max=32 k_min=33 theta=0.9912
+heads cut by d=44 (target 29), tails split                 b=1.6803783927e-3  vs hub +0.037%  (+6.234e-07)  separated=True r_max=28 k_min=29 theta=0.9896
+heads cut by d=47 (target 26), tails split                 b=1.6892482783e-3  vs hub +0.565%  (+9.493e-06)  separated=True r_max=25 k_min=26 theta=0.9880
+heads cut by d=48 (target 25), tails split                 b=1.6948357905e-3  vs hub +0.898%  (+1.508e-05)  separated=True r_max=24 k_min=25 theta=0.9873
+best separated d: 24 1.6968621073e-3

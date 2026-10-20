@@ -1,0 +1,31 @@
+threads for the solution build (lake adapter): 1
+=== lean START Tue Oct 13 15:06:27 UTC 2026 epoch=1791903987 olean files: 0
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/bos/control/bin:$PATH; export PATH; exec comparator /content/work/bos/control/lean.json'
+=== lean END rc=0 wall=3610s Tue Oct 13 16:06:37 UTC 2026 maxrss_kb=9461300
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, Race.bound, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Submission
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 352
+=== audit START Tue Oct 13 16:06:37 UTC 2026 epoch=1791907597 olean files: 352
+cmd: exec lake env lean VerifierAudit.lean
+=== audit END rc=0 wall=10s Tue Oct 13 16:06:47 UTC 2026 maxrss_kb=6769400
+'Race.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+olean files after: 352
+/content/work/bos/stage/.lake/build/lib/lean/VerifierChallenge.olean
+/content/work/bos/stage/.lake/build/lib/lean/VerifierChallenge.olean.hash
+/content/work/bos/stage/.lake/build/lib/lean/VerifierChallenge.ilean.hash
+/content/work/bos/stage/.lake/build/lib/lean/VerifierChallenge.ilean
+/content/work/bos/stage/.lake/build/lib/lean/VerifierChallenge.trace
+/content/work/bos/stage/.lake/build/ir/VerifierChallenge.setup.json
+/content/work/bos/stage/.lake/build/ir/VerifierChallenge.c.hash
+/content/work/bos/stage/.lake/build/ir/VerifierChallenge.c
+=== nanoda START Tue Oct 13 16:06:48 UTC 2026 epoch=1791907608 olean files: 351
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/bos/control/bin:$PATH; export PATH; exec comparator /content/work/bos/control/nanoda.json'
+=== nanoda END rc=0 wall=502s Tue Oct 13 16:15:10 UTC 2026 maxrss_kb=6756108
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 352
+EXIT 0

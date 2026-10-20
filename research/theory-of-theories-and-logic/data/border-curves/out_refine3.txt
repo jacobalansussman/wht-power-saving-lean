@@ -1,0 +1,15 @@
+start: n 42 eqs 108 max|res| at printed (6-decimal) curve 8.109042520715805e-06
+singular values (top, then smallest 18): ['5.04e+01', '4.35e+01', '2.66e+01'] ['7.06e-04', '6.13e-04', '8.07e-80', '2.70e-80', '2.02e-80', '1.57e-80', '1.53e-80', '1.37e-80', '6.27e-81', '3.45e-81', '5.29e-82', '6.46e-161', '9.15e-162', '6.85e-162', '5.62e-162', '1.71e-242', '9.88e-324', '0.00e+00']
+gauss-newton (min-norm, SVD) it 0: max|res| = 8.109e-6
+gauss-newton (min-norm, SVD) it 1: max|res| = 1.6675e-12
+gauss-newton (min-norm, SVD) it 2: max|res| = 3.4639e-24
+gauss-newton (min-norm, SVD) it 3: max|res| = 7.2766e-48
+gauss-newton (min-norm, SVD) it 4: max|res| = 1.2668e-80
+max|A| 2.223 max|D| 5.151 max|B| 0.57 max|C| 6.065
+B values (|.|>1e-20): {'B_b5': '(0.29145287 + 0.14971218j)', 'B_b6': '(-0.29145287 - 0.14971218j)', 'B_b8': '(-0.56894502 - 0.034780964j)', 'B_b9': '(0.56894502 + 0.034780964j)'}
+eps 0.01: relaxation |res|_inf = 0.471381  max|beta| = 56.4878
+eps 0.0001: relaxation |res|_inf = 0.00446663  max|beta| = 5699.46
+eps 1.0e-8: relaxation |res|_inf = 4.46412e-7  max|beta| = 5.70007e+7
+eps 1.0e-16: relaxation |res|_inf = 4.46412e-15  max|beta| = 5.70007e+15
+time 58.3 s
+EXIT 0

@@ -1,0 +1,49 @@
+frames per target: [6]
+classes of 3-multisets of targets: 36
+plain multisets (classes): 7032
+plain minus one passing span+deletion (classes): 44
+ks=(0, 1, 4) mult=3 tight_before=496 key=((0, 1, 4), (4, 6, 9, 13, 14, 15, 16, 21, 21, 22, 24, 25, 26, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 18, 'DF': 1729, 'rF': 0, 'Y': [0, 7, 9]}
+ks=(0, 1, 6) mult=3 tight_before=504 key=((0, 1, 6), (3, 5, 7, 9, 11, 11, 14, 17, 18, 22, 23, 24, 28, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 15, 'DF': 2610, 'rF': 0, 'Y': [1, 4, 11]}
+ks=(0, 1, 7) mult=3 tight_before=672 key=((0, 1, 7), (0, 6, 6, 10, 10, 11, 12, 13, 17, 18, 19, 21, 22, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 4, 'DF': 9380, 'rF': 0, 'Y': [2, 5, 10]}
+ks=(0, 1, 12) mult=3 tight_before=496 key=((0, 1, 12), (1, 3, 5, 11, 12, 13, 17, 18, 19, 21, 22, 22, 24, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 29, 'DF': 6340, 'rF': 0, 'Y': [2, 6, 11]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (0, 3, 4, 7, 12, 13, 13, 14, 20, 21, 21, 26, 27, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 50, 'DF': 9378, 'rF': 0, 'Y': [1, 5, 10]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (0, 3, 7, 12, 12, 13, 13, 18, 19, 20, 21, 22, 26, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 11, 'DF': 12680, 'rF': 0, 'Y': [3, 7, 12]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (0, 4, 6, 7, 9, 13, 13, 14, 21, 21, 24, 26, 27, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 32, 'DF': 5220, 'rF': 0, 'Y': [2, 5, 10]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (0, 4, 6, 7, 10, 13, 13, 14, 17, 21, 21, 22, 27, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 43, 'DF': 9384, 'rF': 0, 'Y': [3, 5, 10]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (0, 4, 7, 11, 12, 13, 13, 14, 17, 18, 21, 21, 27, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 57, 'DF': 5217, 'rF': 0, 'Y': [0, 5, 10]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (0, 6, 6, 7, 9, 10, 11, 13, 19, 21, 21, 24, 26, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 15, 'DF': 12578, 'rF': 0, 'Y': [1, 5, 13]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (0, 6, 7, 10, 11, 11, 12, 13, 17, 18, 19, 21, 21, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 11, 'DF': 12680, 'rF': 0, 'Y': [3, 7, 13]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (0, 6, 7, 10, 12, 13, 13, 17, 18, 19, 21, 22, 22, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 15, 'DF': 12564, 'rF': 0, 'Y': [2, 4, 12]}
+ks=(0, 1, 18) mult=2 tight_before=336 key=((0, 1, 18), (3, 4, 4, 5, 8, 11, 13, 14, 21, 22, 24, 27, 29, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 103, 'DF': 8897, 'rF': 0, 'Y': [0, 7, 13]}
+ks=(0, 1, 18) mult=2 tight_before=336 key=((0, 1, 18), (3, 4, 5, 5, 8, 11, 13, 14, 21, 22, 24, 27, 29, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 72, 'DF': 6214, 'rF': 0, 'Y': [2, 6, 11]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (3, 4, 8, 11, 12, 13, 13, 14, 20, 21, 24, 26, 27, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 11, 'DF': 12488, 'rF': 0, 'Y': [3, 6, 13]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (3, 5, 6, 8, 10, 11, 11, 13, 19, 21, 22, 24, 24, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 15, 'DF': 4898, 'rF': 0, 'Y': [1, 8, 12]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (3, 5, 6, 9, 10, 11, 11, 19, 21, 21, 22, 23, 24, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 25, 'DF': 8808, 'rF': 0, 'Y': [3, 6, 13]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (3, 5, 7, 8, 11, 11, 13, 14, 18, 22, 23, 24, 24, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 15, 'DF': 4658, 'rF': 0, 'Y': [1, 4, 12]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (3, 5, 7, 9, 11, 11, 14, 18, 21, 22, 23, 23, 24, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 15, 'DF': 4658, 'rF': 0, 'Y': [1, 4, 12]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (3, 8, 11, 12, 12, 13, 13, 18, 19, 20, 22, 24, 26, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 11, 'DF': 12680, 'rF': 0, 'Y': [3, 7, 13]}
+ks=(0, 1, 18) mult=2 tight_before=336 key=((0, 1, 18), (4, 5, 6, 6, 7, 10, 12, 13, 17, 22, 23, 25, 27, 28)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 113, 'DF': 2822, 'rF': 0, 'Y': [2, 8, 9]}
+ks=(0, 1, 18) mult=2 tight_before=336 key=((0, 1, 18), (4, 5, 6, 7, 10, 12, 13, 17, 22, 23, 23, 25, 27, 28)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 539, 'DF': 4756, 'rF': 0, 'Y': [2, 7, 12]}
+ks=(0, 1, 18) mult=2 tight_before=336 key=((0, 1, 18), (4, 5, 7, 11, 12, 13, 14, 17, 18, 21, 21, 23, 27, 28)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 16963, 'DF': 1801, 'rF': 0, 'Y': [3, 8, 9]}
+ks=(0, 1, 18) mult=2 tight_before=336 key=((0, 1, 18), (4, 5, 7, 11, 12, 13, 14, 17, 18, 21, 23, 27, 27, 28)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 57, 'DF': 2657, 'rF': 0, 'Y': [0, 5, 11]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (4, 6, 8, 10, 11, 13, 13, 14, 17, 21, 22, 24, 27, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 15, 'DF': 4804, 'rF': 0, 'Y': [2, 6, 9]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (4, 6, 9, 9, 11, 13, 14, 21, 21, 23, 24, 26, 27, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 15, 'DF': 4802, 'rF': 0, 'Y': [1, 7, 9]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (4, 9, 11, 11, 12, 13, 14, 17, 18, 21, 21, 23, 27, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 11, 'DF': 12488, 'rF': 0, 'Y': [3, 7, 13]}
+ks=(0, 1, 18) mult=3 tight_before=1024 key=((0, 1, 18), (6, 6, 9, 9, 10, 11, 11, 19, 21, 21, 23, 24, 26, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 36, 'DF': 6424, 'rF': 0, 'Y': [3, 4, 11]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (6, 8, 10, 11, 11, 12, 13, 17, 18, 19, 21, 21, 24, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 4, 'DF': 8865, 'rF': 0, 'Y': [0, 7, 13]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (6, 8, 10, 11, 12, 13, 13, 17, 18, 19, 22, 22, 24, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 15, 'DF': 4884, 'rF': 0, 'Y': [2, 4, 9]}
+ks=(0, 1, 18) mult=3 tight_before=896 key=((0, 1, 18), (6, 9, 10, 11, 11, 11, 12, 17, 18, 19, 21, 21, 23, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 11, 'DF': 12680, 'rF': 0, 'Y': [3, 7, 13]}
+ks=(0, 1, 18) mult=3 tight_before=896 key=((0, 1, 18), (6, 9, 10, 11, 11, 12, 17, 18, 19, 21, 21, 21, 23, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 4, 'DF': 8865, 'rF': 0, 'Y': [0, 7, 13]}
+ks=(0, 1, 18) mult=2 tight_before=320 key=((0, 1, 18), (6, 9, 10, 11, 12, 13, 13, 17, 18, 19, 21, 22, 23, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 4, 'DF': 8850, 'rF': 0, 'Y': [1, 4, 9]}
+ks=(0, 1, 18) mult=2 tight_before=320 key=((0, 1, 18), (6, 9, 10, 11, 12, 13, 17, 18, 19, 21, 22, 22, 23, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 22, 'DF': 12609, 'rF': 0, 'Y': [0, 6, 12]}
+ks=(0, 1, 18) mult=3 tight_before=560 key=((0, 1, 18), (7, 8, 11, 11, 12, 13, 14, 17, 18, 18, 21, 23, 24, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 61, 'DF': 2664, 'rF': 0, 'Y': [3, 6, 11]}
+ks=(0, 1, 18) mult=3 tight_before=1024 key=((0, 1, 18), (7, 9, 11, 11, 12, 14, 17, 18, 18, 21, 21, 23, 23, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 525, 'DF': 1698, 'rF': 0, 'Y': [1, 7, 10]}
+ks=(0, 1, 22) mult=3 tight_before=496 key=((0, 1, 22), (2, 3, 4, 6, 8, 9, 11, 12, 12, 17, 18, 21, 23, 25)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 29, 'DF': 5172, 'rF': 0, 'Y': [2, 4, 10]}
+ks=(0, 1, 24) mult=3 tight_before=504 key=((0, 1, 24), (3, 5, 6, 7, 9, 10, 10, 15, 18, 20, 22, 25, 27, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 18, 'DF': 3233, 'rF': 0, 'Y': [0, 7, 10]}
+ks=(0, 1, 24) mult=2 tight_before=288 key=((0, 1, 24), (5, 6, 7, 10, 11, 12, 13, 17, 18, 19, 21, 22, 25, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 16449, 'DF': 5204, 'rF': 0, 'Y': [2, 6, 10]}
+ks=(0, 3, 6) mult=3 tight_before=496 key=((0, 3, 6), (9, 11, 12, 12, 16, 17, 18, 19, 21, 23, 24, 27, 28, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 104, 'DF': 3265, 'rF': 0, 'Y': [0, 7, 11]}
+ks=(0, 3, 10) mult=3 tight_before=496 key=((0, 3, 10), (1, 3, 12, 13, 14, 15, 16, 20, 20, 21, 23, 24, 26, 27)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 72, 'DF': 10289, 'rF': 0, 'Y': [0, 5, 13]}
+ks=(0, 3, 12) mult=3 tight_before=504 key=((0, 3, 12), (1, 6, 8, 9, 12, 13, 17, 21, 21, 22, 23, 24, 26, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 2, 'DF': 10404, 'rF': 0, 'Y': [2, 5, 11]}
+ks=(0, 3, 13) mult=3 tight_before=504 key=((0, 3, 13), (3, 4, 5, 6, 9, 11, 12, 16, 18, 22, 24, 24, 27, 29)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 110, 'DF': 9608, 'rF': 0, 'Y': [3, 7, 10]}
+ks=(0, 3, 20) mult=3 tight_before=496 key=((0, 3, 20), (2, 6, 6, 10, 11, 13, 15, 16, 17, 22, 23, 26, 29, 30)) clique=3 Z=EXCLUDED cert={'kind': 'Z', 'F': 71, 'DF': 10408, 'rF': 0, 'Y': [3, 7, 13]}
+zero-block: 44 of 44 excluded

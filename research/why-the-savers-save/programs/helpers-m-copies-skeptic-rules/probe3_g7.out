@@ -1,0 +1,16 @@
+target 113 reads centre 61 coef 1/4 centre content by packet (coef relative to packet): {0: ['-2'], 2: ['-2'], 4: ['-2'], 6: ['-2']}  own source in centre: 1
+target 113 reads centre 63 coef 1/4 centre content by packet (coef relative to packet): {8: ['-2'], 10: ['-2'], 12: ['-2'], 14: ['-2']}  own source in centre: 1
+   target 113 after cut, by packet: {0: ['-1/2'], 2: ['-1/2'], 4: ['-1/2'], 6: ['-1/2'], 8: ['-1/2'], 10: ['-1/2'], 12: ['-1/2'], 14: ['-1/2']}
+   target 113 end of B, by packet: {}
+target 114 reads centre 31 coef 1/4 centre content by packet (coef relative to packet): {0: ['2'], 2: ['-2'], 8: ['2'], 10: ['-2']}  own source in centre: -1
+target 114 reads centre 256 coef -1/4 centre content by packet (coef relative to packet): {4: ['2'], 6: ['-2'], 12: ['2'], 14: ['-2']}  own source in centre: 1
+   target 114 after cut, by packet: {0: ['1/2'], 2: ['-1/2'], 4: ['-1/2'], 6: ['1/2'], 8: ['1/2'], 10: ['-1/2'], 12: ['-1/2'], 14: ['1/2']}
+   target 114 end of B, by packet: {}
+target 116 reads centre 61 coef 1/4 centre content by packet (coef relative to packet): {0: ['-2'], 2: ['-2'], 4: ['-2'], 6: ['-2']}  own source in centre: 1
+target 116 reads centre 63 coef -1/4 centre content by packet (coef relative to packet): {8: ['-2'], 10: ['-2'], 12: ['-2'], 14: ['-2']}  own source in centre: -1
+   target 116 after cut, by packet: {0: ['-1/2'], 2: ['-1/2'], 4: ['-1/2'], 6: ['-1/2'], 8: ['1/2'], 10: ['1/2'], 12: ['1/2'], 14: ['1/2']}
+   target 116 end of B, by packet: {}
+target 119 reads centre 31 coef 1/4 centre content by packet (coef relative to packet): {0: ['2'], 2: ['-2'], 8: ['2'], 10: ['-2']}  own source in centre: -1
+target 119 reads centre 256 coef 1/4 centre content by packet (coef relative to packet): {4: ['2'], 6: ['-2'], 12: ['2'], 14: ['-2']}  own source in centre: -1
+   target 119 after cut, by packet: {0: ['1/2'], 2: ['-1/2'], 4: ['1/2'], 6: ['-1/2'], 8: ['1/2'], 10: ['-1/2'], 12: ['1/2'], 14: ['-1/2']}
+   target 119 end of B, by packet: {}

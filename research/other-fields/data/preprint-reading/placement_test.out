@@ -1,0 +1,8 @@
+unordered pairs of G by distance: [(1, 735), (2, 5391), (3, 7318), (4, 2799), (5, 228)]
+of these, forced to keep their distance under any such map: [(1, 735), (2, 5391), (3, 6742), (4, 2199), (5, 157)]
+forced pairs at distance 3, each taken from both ends: 13484
+  number of first steps |Z| (size: count): [(1, 422), (2, 810), (3, 1178), (4, 2010), (5, 2700), (6, 2728), (7, 2112), (8, 1110), (9, 414)]
+  largest set of first steps with pairwise different images forced (size: count): [(1, 422), (2, 810), (3, 1178), (4, 2010), (5, 2700), (6, 2728), (7, 2112), (8, 1110), (9, 414)]
+  cases with 8 or more, against the 7 a frame graph allows: 1524
+  examples (x, y, first steps; vertex ids: point i = i, line j = 91 + j): [(1, 155, [91, 102, 103, 104, 105, 106, 108, 109]), (155, 1, [64, 65, 66, 67, 68, 69, 71, 72]), (2, 155, [94, 112, 120, 145, 153, 158, 169, 177])]
+sessions that force at least one violating pair: 151 of 157  (the code keeps a gain only while fewer than 10 sessions are dropped: 735 < 5*(157-k))

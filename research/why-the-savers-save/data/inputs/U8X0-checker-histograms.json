@@ -1,0 +1,276 @@
+{
+ "input_U8X_sha256": "62fbff5c7e789c896deaa4b65d22d0ebb9374dd0f2326cdf9c332c34dba495d0",
+ "centre_sources": [
+  9,
+  11,
+  57,
+  81,
+  92
+ ],
+ "control_5cc_equals_kcombine_U8XM": true,
+ "U8X0": {
+  "label": "U8 + exits + mutable sources, NO copies (centres on sources [9, 11, 57, 81, 92])",
+  "v": 112,
+  "R": 504,
+  "gates": {
+   "A": 4291,
+   "B": 3097
+  },
+  "ret_classes": {
+   "x": 5,
+   "s": 3
+  },
+  "ret_on_sources": [
+   9,
+   11,
+   57,
+   81,
+   92
+  ],
+  "E2_classic_violations": [
+   "E2 retained total 0 is not a slot (register 92)",
+   "E2 retained total 1 is not a slot (register 57)",
+   "E2 retained total 2 is not a slot (register 81)",
+   "E2 retained total 4 is not a slot (register 11)",
+   "E2 retained total 6 is not a slot (register 9)"
+  ],
+  "structure_mutable_E2prime": [],
+  "structure_classic_E2prime": 668,
+  "hist": {
+   "1": 2548,
+   "2": 338,
+   "3": 446,
+   "4": 162,
+   "5": 72,
+   "8": 8
+  },
+  "hist_by_class": {
+   "x": {
+    "1": 442,
+    "2": 12,
+    "3": 30,
+    "4": 50,
+    "5": 28
+   },
+   "y": {
+    "1": 352,
+    "2": 56,
+    "3": 32,
+    "4": 64,
+    "5": 16
+   },
+   "s": {
+    "1": 1754,
+    "2": 270,
+    "3": 384,
+    "4": 48,
+    "5": 28
+   },
+   "c": {
+    "8": 8
+   }
+  },
+  "N": 5634,
+  "blocks_mgen": {
+   "x": {
+    "1": 442,
+    "2": 12,
+    "3": 30,
+    "4": 50,
+    "5": 28
+   },
+   "y": {
+    "1": 352,
+    "2": 56,
+    "3": 32,
+    "4": 64,
+    "5": 16
+   },
+   "s": {
+    "1": 1754,
+    "2": 270,
+    "3": 384,
+    "4": 48,
+    "5": 28
+   },
+   "c": {
+    "8": 8
+   }
+  },
+  "N_mgen": 5634,
+  "cst": 64,
+  "invoice_E6x": [
+   6042,
+   6042
+  ],
+  "invoice_ok": true,
+  "exit_conditions": {
+   "ExitRows": true,
+   "ExitRows_bad": [],
+   "ExitCols": true,
+   "ExitCols_bad": [],
+   "ExitColsX": true,
+   "ExitColsX_bad": [],
+   "hid_y_from_x_identity": true,
+   "hy_y_columns_unit": true,
+   "x_rows_not_unit": 112,
+   "exit_diagonals": {
+    "1": 82,
+    "2": 14,
+    "4": 14,
+    "1/4": 14,
+    "-1": 2
+   }
+  },
+  "hid": true,
+  "hx_classic": false,
+  "hy": true,
+  "word_tests_undo_z": [
+   [
+    true,
+    true
+   ],
+   [
+    true,
+    true
+   ],
+   [
+    true,
+    true
+   ]
+  ]
+ },
+ "U8XM_control": {
+  "label": "U8XM control (5 centre copies kept)",
+  "v": 112,
+  "R": 509,
+  "gates": {
+   "A": 4296,
+   "B": 3097
+  },
+  "ret_classes": {
+   "s": 8
+  },
+  "ret_on_sources": [],
+  "E2_classic_violations": [],
+  "structure_mutable_E2prime": [],
+  "structure_classic_E2prime": 576,
+  "hist": {
+   "1": 2553,
+   "2": 338,
+   "3": 446,
+   "4": 162,
+   "5": 72,
+   "8": 13
+  },
+  "hist_by_class": {
+   "x": {
+    "1": 422,
+    "2": 12,
+    "3": 30,
+    "4": 45,
+    "5": 28,
+    "8": 5
+   },
+   "y": {
+    "1": 352,
+    "2": 56,
+    "3": 32,
+    "4": 64,
+    "5": 16
+   },
+   "s": {
+    "1": 1779,
+    "2": 270,
+    "3": 384,
+    "4": 53,
+    "5": 28
+   },
+   "c": {
+    "8": 8
+   }
+  },
+  "N": 5679,
+  "blocks_mgen": {
+   "x": {
+    "1": 422,
+    "2": 12,
+    "3": 30,
+    "4": 45,
+    "5": 28,
+    "8": 5
+   },
+   "y": {
+    "1": 352,
+    "2": 56,
+    "3": 32,
+    "4": 64,
+    "5": 16
+   },
+   "s": {
+    "1": 1779,
+    "2": 270,
+    "3": 384,
+    "4": 53,
+    "5": 28
+   },
+   "c": {
+    "8": 8
+   }
+  },
+  "N_mgen": 5679,
+  "cst": 64,
+  "invoice_E6x": [
+   6087,
+   6087
+  ],
+  "invoice_ok": true,
+  "exit_conditions": {
+   "ExitRows": true,
+   "ExitRows_bad": [],
+   "ExitCols": true,
+   "ExitCols_bad": [],
+   "ExitColsX": true,
+   "ExitColsX_bad": [],
+   "hid_y_from_x_identity": true,
+   "hy_y_columns_unit": true,
+   "x_rows_not_unit": 107,
+   "exit_diagonals": {
+    "1": 82,
+    "2": 14,
+    "4": 14,
+    "1/4": 14,
+    "-1": 2
+   }
+  },
+  "hid": true,
+  "hx_classic": false,
+  "hy": true,
+  "word_tests_undo_z": [
+   [
+    true,
+    true
+   ],
+   [
+    true,
+    true
+   ],
+   [
+    true,
+    true
+   ]
+  ]
+ },
+ "neg_ret_on_target_E2prime": [
+  "E2' retained total 0 on a target register 112"
+ ],
+ "neg_wrong_source_word_tests": [
+  [
+   false,
+   false
+  ]
+ ],
+ "neg_wrong_source_hid": false,
+ "U8X0_gcert_sha256": "87d6080e03475d37eed6969dc018a98f2ba090c6d969d1840f8303566ad2d454",
+ "U8X0_json_sha256": "ccbfe460e633767b28aa66a3bb8d8960e37e8a7c1a77732f4710d1f4634691ce"
+}

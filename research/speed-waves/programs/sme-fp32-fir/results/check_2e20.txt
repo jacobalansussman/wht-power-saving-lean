@@ -1,0 +1,75 @@
+CHECK vdsp_conv L=16 n=2^20 (1048576 outs)     max abs err 6.180e-07  rel err 1.114e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv first 16 outputs               max abs err 1.098e-07  rel err 4.149e-08  (tol 1.0e-05) PASS
+CHECK vdsp_conv last 16 outputs                max abs err 1.640e-07  rel err 8.357e-08  (tol 1.0e-05) PASS
+CHECK ols_vdsp L=16 n=2^20 (1048576 outs)      max abs err 2.240e-06  rel err 4.039e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp first 16 outputs                max abs err 9.130e-07  rel err 3.451e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp last 16 outputs                 max abs err 2.515e-07  rel err 1.281e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=16 n=2^20 (1048576 outs)  max abs err 1.197e-06  rel err 2.158e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz first 16 outputs            max abs err 5.242e-07  rel err 1.981e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz last 16 outputs             max abs err 1.476e-07  rel err 7.523e-08  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=16 n=2^20 (1048576 outs)     max abs err 2.479e-06  rel err 4.470e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp first 16 outputs               max abs err 9.130e-07  rel err 3.451e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp last 16 outputs                max abs err 6.295e-07  rel err 3.207e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=16 n=2^20 (1048576 outs)     max abs err 1.327e-06  rel err 2.391e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft first 16 outputs               max abs err 4.847e-07  rel err 1.832e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft last 16 outputs                max abs err 1.895e-07  rel err 9.655e-08  (tol 1.0e-05) PASS
+CHECK vdsp_conv L=64 n=2^20 (1048576 outs)     max abs err 2.180e-06  rel err 1.670e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv first 64 outputs               max abs err 6.853e-07  rel err 1.035e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv last 64 outputs                max abs err 1.103e-06  rel err 1.336e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp L=64 n=2^20 (1048576 outs)      max abs err 5.837e-06  rel err 4.471e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp first 64 outputs                max abs err 2.544e-06  rel err 3.840e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp last 64 outputs                 max abs err 1.907e-06  rel err 2.311e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=64 n=2^20 (1048576 outs)  max abs err 5.396e-06  rel err 4.134e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz first 64 outputs            max abs err 1.626e-06  rel err 2.455e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz last 64 outputs             max abs err 1.908e-06  rel err 2.312e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=64 n=2^20 (1048576 outs)     max abs err 5.695e-06  rel err 4.363e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp first 64 outputs               max abs err 2.544e-06  rel err 3.840e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp last 64 outputs                max abs err 1.723e-06  rel err 2.088e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=64 n=2^20 (1048576 outs)     max abs err 3.207e-06  rel err 2.457e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft first 64 outputs               max abs err 1.705e-06  rel err 2.574e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft last 64 outputs                max abs err 1.103e-06  rel err 1.336e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv L=256 n=2^20 (1048576 outs)    max abs err 7.649e-06  rel err 2.702e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv first 256 outputs              max abs err 4.064e-06  rel err 2.192e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv last 256 outputs               max abs err 3.575e-06  rel err 1.963e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp L=256 n=2^20 (1048576 outs)     max abs err 1.045e-05  rel err 3.690e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp first 256 outputs               max abs err 4.248e-06  rel err 2.291e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp last 256 outputs                max abs err 3.814e-06  rel err 2.094e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=256 n=2^20 (1048576 outs) max abs err 1.857e-05  rel err 6.561e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz first 256 outputs           max abs err 1.042e-05  rel err 5.620e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz last 256 outputs            max abs err 6.866e-06  rel err 3.771e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=256 n=2^20 (1048576 outs)    max abs err 8.402e-06  rel err 2.968e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp first 256 outputs              max abs err 4.248e-06  rel err 2.291e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp last 256 outputs               max abs err 3.710e-06  rel err 2.037e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=256 n=2^20 (1048576 outs)    max abs err 6.352e-06  rel err 2.244e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft first 256 outputs              max abs err 3.355e-06  rel err 1.809e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft last 256 outputs               max abs err 2.314e-06  rel err 1.271e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv L=1024 n=2^20 (16384 outs)     max abs err 2.434e-05  rel err 5.642e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv first 1024 outputs             max abs err 1.567e-05  rel err 3.943e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv last 1024 outputs              max abs err 2.226e-05  rel err 6.827e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp L=1024 n=2^20 (16384 outs)      max abs err 1.275e-05  rel err 2.955e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp first 1024 outputs              max abs err 1.072e-05  rel err 2.697e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp last 1024 outputs               max abs err 6.812e-06  rel err 2.089e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=1024 n=2^20 (16384 outs)  max abs err 5.146e-05  rel err 1.193e-06  (tol 1.0e-05) PASS
+CHECK sme_toeplitz first 1024 outputs          max abs err 3.509e-05  rel err 8.833e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz last 1024 outputs           max abs err 2.732e-05  rel err 8.378e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=1024 n=2^20 (16384 outs)     max abs err 1.275e-05  rel err 2.955e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp first 1024 outputs             max abs err 1.072e-05  rel err 2.697e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp last 1024 outputs              max abs err 6.635e-06  rel err 2.035e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=1024 n=2^20 (16384 outs)     max abs err 9.609e-06  rel err 2.227e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft first 1024 outputs             max abs err 9.063e-06  rel err 2.281e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft last 1024 outputs              max abs err 6.313e-06  rel err 1.936e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv L=4096 n=2^20 (16384 outs)     max abs err 7.766e-05  rel err 9.047e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv first 4096 outputs             max abs err 7.328e-05  rel err 8.537e-07  (tol 1.0e-05) PASS
+CHECK vdsp_conv last 4096 outputs              max abs err 6.525e-05  rel err 7.689e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp L=4096 n=2^20 (16384 outs)      max abs err 2.947e-05  rel err 3.434e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp first 4096 outputs              max abs err 2.934e-05  rel err 3.418e-07  (tol 1.0e-05) PASS
+CHECK ols_vdsp last 4096 outputs               max abs err 2.206e-05  rel err 2.599e-07  (tol 1.0e-05) PASS
+CHECK sme_toeplitz L=4096 n=2^20 (16384 outs)  max abs err 3.664e-04  rel err 4.269e-06  (tol 1.0e-05) PASS
+CHECK sme_toeplitz first 4096 outputs          max abs err 1.505e-04  rel err 1.753e-06  (tol 1.0e-05) PASS
+CHECK sme_toeplitz last 4096 outputs           max abs err 1.591e-04  rel err 1.875e-06  (tol 1.0e-05) PASS
+CHECK ols2_vdsp L=4096 n=2^20 (16384 outs)     max abs err 2.934e-05  rel err 3.418e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp first 4096 outputs             max abs err 2.934e-05  rel err 3.418e-07  (tol 1.0e-05) PASS
+CHECK ols2_vdsp last 4096 outputs              max abs err 1.808e-05  rel err 2.131e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft L=4096 n=2^20 (16384 outs)     max abs err 1.954e-05  rel err 2.277e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft first 4096 outputs             max abs err 1.878e-05  rel err 2.188e-07  (tol 1.0e-05) PASS
+CHECK ols_pffft last 4096 outputs              max abs err 1.392e-05  rel err 1.640e-07  (tol 1.0e-05) PASS

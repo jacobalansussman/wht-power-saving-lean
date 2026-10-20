@@ -1,0 +1,55 @@
+  // ---- lcs: logic-only, SERIAL twiddle multiply (1 bit of each twiddle per clock, both products of a component at
+  // once: H <- (H + b1_i*A1 + b2_i*A2) >> 1, the bit shifted out at steps 14 and 15 kept), 38-clock slots.
+  // slot: ph0 read a, ph1 read b, ph2 write a' (D <- d), ph3 write Y of the previous butterfly at bprev,
+  // ph2/ph3 ROM addresses k and k^1024 (C -> B1 at the end of ph3, ROM[k^1024] -> B2 at the end of ph4),
+  // H cleared at the end of ph4; Y_re steps at ph5..20, Y_re kept and H cleared at ph21 (P/Q swapped),
+  // Y_im steps at ph22..37 (done before ph3 of the next slot).
+  reg [5:0] ph; reg [10:0] j; reg [11:0] th; reg primed, drain; reg [11:0] bprev; reg [10:0] k, step;
+  wire [11:0] a, oh; genvar x;
+  generate for (x = 0; x < 12; x = x + 1) begin : ga
+    if (x == 0) begin
+      assign a[0] = th[0] ? j[0] : 1'b0;  assign oh[0] = ~th[0];
+    end else if (x == 11) begin
+      assign a[11] = th[10] ? 1'b0 : j[10]; assign oh[11] = th[10];
+    end else begin
+      assign a[x] = th[x] ? j[x] : (th[x-1] ? 1'b0 : j[x-1]); assign oh[x] = ~th[x] & th[x-1];
+    end
+  end endgenerate
+  wire [11:0] b = a | oh;
+  wire [11:0] caddr = ph == 6'd1 ? b : ph == 6'd3 ? bprev : a;
+  wire [13:0] maddr = {2'b00, busy ? caddr : addr_in};
+  wire mwe = busy ? ((ph == 6'd2 && !drain) || (ph == 6'd3 && primed)) : we_in;
+  wire [15:0] dr_o, di_o; assign dout_re = dr_o; assign dout_im = di_o;
+  reg [15:0] ra, ia; reg [15:0] romq; reg [10:0] radr;
+  wire [15:0] hbr = {dr_o[15], dr_o[15:1]}, hbi = {di_o[15], di_o[15:1]};
+  wire [15:0] sr = {ra[15], ra[15:1]} + hbr + dr_o[0], si = {ia[15], ia[15:1]} + hbi + di_o[0];
+  wire [15:0] dr = {ra[15], ra[15:1]} - hbr, di = {ia[15], ia[15:1]} - hbi;
+  reg [15:0] P, Q, B1, B2, yr; reg sk, t14, t15; reg signed [17:0] H;
+  always @* radr = {k[10] ^ (ph == 6'd3), k[9:0]};
+  wire stR = ph >= 6'd5 && ph <= 6'd20, stI = ph >= 6'd22 && ph <= 6'd37;
+  wire [5:0] im5 = ph - 6'd5, im22 = ph - 6'd22;
+  wire [3:0] i = stR ? im5[3:0] : im22[3:0];
+  wire neg1 = (i == 4'd15), neg2 = (stR ? ~sk : sk) ^ (i == 4'd15);
+  wire [18:0] t1 = {19{B1[0]}} & ({{3{P[15]}}, P} ^ {19{neg1}});
+  wire [18:0] t2 = {19{B2[0]}} & ({{3{Q[15]}}, Q} ^ {19{neg2}});
+  wire c1 = (B1[0] & neg1) | (i == 4'd13), c2 = B2[0] & neg2;
+  wire [18:0] s1 = {H[17], H} + t1 + c1;
+  wire [18:0] s2 = s1 + t2 + c2;
+  wire [15:0] yi = {H[13:0], t15, t14};
+  wire [15:0] mdin_re = busy ? (ph[0] ? yr : sr) : din_re;
+  wire [15:0] mdin_im = busy ? (ph[0] ? yi : si) : din_im;
+  always @(posedge clk) begin
+    if (busy) begin
+      if (ph == 6'd1) begin ra <= dr_o; ia <= di_o; end
+      if (ph == 6'd2) begin P <= dr; Q <= di; end
+      if (ph == 6'd21) begin P <= Q; Q <= P; yr <= yi; end
+      if (ph == 6'd3) begin B1 <= romq; sk <= k[10]; end
+      if (ph == 6'd4) begin B2 <= romq; k <= (j == 11'd0) ? 11'd0 : k + step; end   // j and step already advanced at ph3
+      if (ph == 6'd4 || ph == 6'd21) H <= 0;
+      else if (stR || stI) begin
+        H <= s2[18:1]; B1 <= {B1[0], B1[15:1]}; B2 <= {B2[0], B2[15:1]};
+        if (i == 4'd14) t14 <= s2[0];
+        if (i == 4'd15) t15 <= s2[0];
+      end
+    end
+  end

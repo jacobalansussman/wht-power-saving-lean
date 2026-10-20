@@ -1,0 +1,33 @@
+== H33 m 3
+  H33 M=1 states=6  max excess: C0 +0  C1 +0  C2 -99  C2s -99  C1c +0  C2c -99  C2cs -99  S +0  Phi +0
+  H33 M=2 states=96  max excess: C0 +0  C1 +0  C2 +0  C2s +1  C1c +0  C2c -99  C2cs -99  S +0  Phi +0
+  H33 M=3 states=1547  max excess: C0 +0  C1 +0  C2 +0  C2s +2  C1c +0  C2c -1  C2cs -1  S +0  Phi +0
+  H33 M=4 states=32302  max excess: C0 +0  C1 +0  C2 +0  C2s +2  C1c +0  C2c -1  C2cs +0  S +0  Phi +0
+   first C2s failure at M=2: A1 levels [0], A2 levels [0], lineages [(0, [(1, 1), (2, 2)])]
+== J52/c0 m 2
+  J52/c0 M=1 states=2  max excess: C0 +0  C1 +0  C2 -99  C2s -99  C1c +0  C2c -99  C2cs -99  S +0  Phi +0
+  J52/c0 M=2 states=36  max excess: C0 +0  C1 +0  C2 +0  C2s +1  C1c +0  C2c -99  C2cs -99  S +0  Phi +0
+  J52/c0 M=3 states=768  max excess: C0 +0  C1 +0  C2 +0  C2s +1  C1c +0  C2c -1  C2cs -1  S +0  Phi +0
+  J52/c0 M=4 states=25263  max excess: C0 +0  C1 +0  C2 +0  C2s +0  C1c +0  C2c -1  C2cs +0  S +0  Phi +0
+   first C2s failure at M=2: A1 levels [0], A2 levels [0], lineages [(0, [(1, 1), (2, 2)])]
+== GL3B/c2 m 2
+  GL3B/c2 M=1 states=4  max excess: C0 +0  C1 +0  C2 -99  C2s -99  C1c +0  C2c -99  C2cs -99  S +0  Phi +0
+  GL3B/c2 M=2 states=74  max excess: C0 +0  C1 +0  C2 +0  C2s +1  C1c +0  C2c -99  C2cs -99  S +0  Phi +0
+  GL3B/c2 M=3 states=2018  max excess: C0 +0  C1 +0  C2 +0  C2s +1  C1c +0  C2c -1  C2cs -99  S +0  Phi +0
+  GL3B/c2 M=4 states=81685  max excess: C0 +0  C1 +0  C2 +0  C2s +0  C1c +0  C2c -1  C2cs +0  S +0  Phi +0
+   first C2s failure at M=2: A1 levels [0], A2 levels [0], lineages [(0, [(2, 2), (1, 1)])]
+== D7/c1 m 3
+  D7/c1 M=1 states=2  max excess: C0 +0  C1 +0  C2 -99  C2s -99  C1c +0  C2c -99  C2cs -99  S +0  Phi +0
+  D7/c1 M=2 states=9  max excess: C0 +0  C1 +0  C2 +0  C2s +1  C1c +0  C2c -99  C2cs -99  S +0  Phi +0
+  D7/c1 M=3 states=27  max excess: C0 +0  C1 +0  C2 +0  C2s +2  C1c +0  C2c -1  C2cs -99  S +0  Phi +0
+  D7/c1 M=4 states=78  max excess: C0 +0  C1 +0  C2 +0  C2s +2  C1c +0  C2c -1  C2cs -99  S +0  Phi +0
+  D7/c1 M=5 states=193  max excess: C0 +0  C1 +0  C2 +0  C2s +1  C1c +0  C2c -1  C2cs -99  S +0  Phi +0
+  D7/c1 M=6 states=451  max excess: C0 +0  C1 +0  C2 +0  C2s +0  C1c +0  C2c -1  C2cs -99  S +0  Phi +0
+   first C2s failure at M=2: A1 levels [0], A2 levels [0], lineages [(0, [(1, 1), (2, 2)])]
+== A5Z2/c2 m 3
+  A5Z2/c2 M=1 states=4  max excess: C0 +0  C1 +0  C2 -99  C2s -99  C1c +0  C2c -99  C2cs -99  S +0  Phi +0
+  A5Z2/c2 M=2 states=40  max excess: C0 +0  C1 +0  C2 +0  C2s +1  C1c +0  C2c -99  C2cs -99  S +0  Phi +0
+  A5Z2/c2 M=3 states=379  max excess: C0 +0  C1 +0  C2 +0  C2s +2  C1c +0  C2c -1  C2cs -99  S +0  Phi +0
+  A5Z2/c2 M=4 states=3962  max excess: C0 +0  C1 +0  C2 +0  C2s +2  C1c +0  C2c -1  C2cs -99  S +0  Phi +0
+  A5Z2/c2 M=5 states=42696  max excess: C0 +0  C1 +0  C2 +0  C2s +1  C1c +0  C2c -1  C2cs -1  S +0  Phi +0
+   first C2s failure at M=2: A1 levels [0], A2 levels [0], lineages [(0, [(1, 1), (2, 2)])]

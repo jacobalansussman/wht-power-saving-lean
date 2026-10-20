@@ -1,0 +1,7 @@
+m = 2: nonsingular symmetric 4, of them alternating 1
+   rank depth: I -> 2; non-alternating nonsingular -> [2]; alternating nonsingular -> [3]
+m = 4: nonsingular symmetric 448, of them alternating 28
+   rank depth: I -> 4; non-alternating nonsingular -> [4]; alternating nonsingular -> [5]
+m = 2: 6 ordered pairs (a,b) with a^T S b = 1: every Q = (a.z)(b.z) odd at S with support 2^(m-2): True; every direction covered equally (2 times): True; deletion: M >= W * (2^m-1)/2^(m-2) = 3.0 W
+m = 4: 120 ordered pairs (a,b) with a^T S b = 1: every Q = (a.z)(b.z) odd at S with support 2^(m-2): True; every direction covered equally (32 times): True; deletion: M >= W * (2^m-1)/2^(m-2) = 3.75 W
+m = 6: 2016 ordered pairs (a,b) with a^T S b = 1: every Q = (a.z)(b.z) odd at S with support 2^(m-2): True; every direction covered equally (512 times): True; deletion: M >= W * (2^m-1)/2^(m-2) = 3.9375 W

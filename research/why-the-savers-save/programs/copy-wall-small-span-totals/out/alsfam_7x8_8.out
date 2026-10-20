@@ -1,0 +1,8 @@
+family 0: ports [34, 28, 34, 32, 36, 34, 30, 32, 60]  best residual 1.357e+01  (hist ['1.4e+01', '1.4e+01', '1.4e+01', '1.4e+01', '1.4e+01'])  rank/nat [9.     0.6981 0.7251 0.    ]  17s
+family 1: Hall not reached (2)
+family 2: ports [32, 34, 34, 30, 34, 34, 34, 34, 60]  best residual 1.388e+01  (hist ['1.4e+01', '1.4e+01', '1.4e+01', '1.4e+01', '1.4e+01'])  rank/nat [9.     0.5133 0.7423 0.    ]  43s
+family 3: Hall not reached (1)
+family 4: ports [34, 36, 34, 34, 32, 34, 34, 34, 60]  best residual 1.405e+01  (hist ['1.4e+01', '1.4e+01', '1.4e+01', '1.4e+01', '1.4e+01'])  rank/nat [9.     0.7077 0.7565 0.    ]  70s
+family 5: ports [34, 34, 34, 34, 34, 32, 34, 34, 56]  best residual 1.357e+01  (hist ['1.4e+01', '1.4e+01', '1.4e+01', '1.4e+01', '1.4e+01'])  rank/nat [9.     0.7072 0.7073 0.    ]  89s
+BEST over families: 1.357e+01
+$VENV -I alsfam.py 7,7,7,7,7,7,7,7,8 6 3 800 11 100  88.73s user 0.06s system 99% cpu 1:28.85 total

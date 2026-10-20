@@ -1,0 +1,14 @@
+{
+ "m": 3,
+ "v": "1/3",
+ "mu": {
+  "17": "1/12",
+  "18": "1/12",
+  "20": "1/4",
+  "25": "1/4",
+  "34": "1/12",
+  "44": "1/12",
+  "58": "1/6"
+ },
+ "note": "y as an integer: bits 0..m-1 = linear part, bit m+b = pair b of itertools.combinations(range(m),2)"
+}

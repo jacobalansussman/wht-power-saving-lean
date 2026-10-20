@@ -1,0 +1,40 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+k8-twin (13 Oct 2026). Folder checks/wht43/helpers/k8-twin. Mac: python3 -I (3.9); hub tools: Colab #2
+(/content/work/k8-twin, Python 3.13.16, 8 cores) via the Colab helper scripts.
+Hub clone (read-only, blobless+sparse): hub/repo at main ba82555c (selected #1042 at start); later main ce7ad1b6 selects #1094.
+Downloads (data/code read first, run only on Colab or with python3 -I): pr1090/ = PR1090 head b535975a (1337isnot1337);
+pr1121/ = PR1121 head 61e816c2 data only (jeremykothe2: OWNERS df373980..., PLAN, RESULT).
+
+1. Words (Mac):
+  python3 -I ../d-hpe-multigate/make_word.py words/K8-SLOT-WORD.json.gz ../v-hpe-multigate-rules/k8-lazy.json words/W-k8-580-581.json.gz 580,581
+  python3 -I ../d-hpe-multigate/make_word.py words/K8-SLOT-WORD.json.gz ../v-hpe-multigate-rules/k8-lazy.json words/W-k8-574-575-580-581.json.gz 574,575,580,581
+  python3 -I ../d-hpe-multigate/make_word.py words/K8-SLOT-WORD.json.gz ../v-hpe-multigate-rules/k8-lazy.json words/W-k8-574-575.json.gz 574,575
+2. Hub audit_local, unmodified (vendor/audit_local_hub.py = research/gauge44-slots-t16/independent/audit_local.py, sha 03afcfc9),
+   with --main parent-interface check (main/ holds the one pinned parent file, sha 66d3c3c7), Colab #2:
+  python3 -I -B vendor/audit_local_hub.py --word words/<W>.json.gz --output audit/audit-<W>.json --main /content/work/k8-twin/main
+3. Native pipeline (unchanged hub scripts, the PR1090 step list): native/native_run.py ROOT WORD WORKDIR, Colab #2:
+  python3 -B native_run.py /content/work/k8-twin/hub /content/work/k8-twin/words/<W>.json.gz /content/work/k8-twin/nat-<W>
+  (independent-local, hpe_audit_and_transport, hpe_emit_local, hpe_audit_local, hpe_adapters_local = cold wrappers, phases_full)
+4. #1042 baseline T16 replay with fresh natives of the k8 word (Colab #2):
+  python3 -B hub/research/gauge44-slots-t16/verify_t16.py --main /content/work/k8-twin/hub --local nat-K8-SLOT-WORD/new-local --work baseline
+5. Complete admission, 580/581 word with PR1090's map transferred by helper relabel (owners/relabel.py, Mac):
+  python3 -I owners/relabel.py pr1090/research/k8-rank7-composition/data/OWNERS.json.gz owners/OWNERS-580-581-from-PR1090.json.gz
+  (Colab) python3 -B admit_pr1090.py --owners OWNERS-580-581-from-PR1090.json.gz --out adm-580-581-relabel --root hub \
+     --predecessor hub/research/gauge44-slots-t16 --local nat-W-k8-580-581/new-local --baseline baseline
+6. Owner searches (Colab, ortools 9.15 CP-SAT): owners/wlns.py, owners/wlns2.py (window pattern-flow LNS + PR1030 slots_from_flow);
+   earlier bin-level attempts lns.py .. lns7.py (failed: holes did not consolidate).
+  python3 -u wlns2.py PLAN-PR1121.json OWNERS-PR1121.json.gz 356,357 OWNERS-g1314-on1121-s31.json.gz 31 40 0 4
+7. Admission of a both-pairs map (Colab): K8TWIN_WIDTHS='{"4":56,"5":32,"7":34,"8":118,"9":240}' python3 -B admit_k8twin.py \
+     --owners <map> --out <dir> --root hub --predecessor hub/research/gauge44-slots-t16 --local nat-W-k8-574-575-580-581/new-local --baseline baseline
+8. Prices (Mac): python3 -I price_twin.py ['label|G14|{idle json}' ...]
+9. The both-pairs map that was admitted (Colab, ortools 9.15.6755, CP-SAT 4 workers, non-deterministic; the map is frozen data):
+  LAM0=1.0015 python3 -u wlns3.py PLAN-PR1121.json OWNERS-PR1121.json.gz 356,357 OWNERS-g1314-on1121-s41.json.gz 41 40 0 4
+  -> owners/OWNERS-g1314-on1121-s41.json.gz; checked on the Mac by python3 -I owners/check_map.py pr1121/PLAN.json <map> 350,351,356,357
+  sh run_admit_both.sh OWNERS-g1314-on1121-s41.json.gz adm-both-s41   -> PASS_COMPLETE_K8_RANK7_ASSEMBLY 0.001673020532498619
+  (receipts in evidence/adm-both-s41/). Pipeline test: run_admit_both.sh OWNERS-both-holes-on1121.json.gz adm-both-holes -> 0.001672420539912278.
+10. Controls: same program, no shrinks, on PR1121's map: wlns3.py seed 41 (60 rounds) and wlns3c.py seeds 41/42 (six windows per round)
+  -> evidence/wlns3-ctrl-on1121-s41.out, wlns3c-ctrl6*-on1121.out.

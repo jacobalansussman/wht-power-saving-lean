@@ -1,0 +1,22 @@
+'OAI.PowerSaving.transform_mainC588' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainC588' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsC588_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+def OAI.PowerSaving.decimalExponentC588 : ℝ :=
+1 - 12383291 / 10 ^ 10
+def OAI.PowerSaving.TimeBoundsC588 : (ℕ → ℕ) → Prop :=
+fun W =>
+  have W' := fun n => ↑(W n);
+  W' =O[Filter.atTop] OAI.PowerSaving.paperTime ∧
+    W' =O[Filter.atTop] OAI.PowerSaving.decimalTimeC588 ∧ W' =o[Filter.atTop] OAI.PowerSaving.nlogn
+def OAI.PowerSaving.DFTGoalC588 : Prop :=
+∃ order solve W, OAI.PowerSaving.DFTProgram order solve W ∧ OAI.PowerSaving.TimeBoundsC588 W
+def OAI.PowerSaving.ConvGoalC588 : Prop :=
+∃ order solve W, OAI.PowerSaving.ConvProgram order solve W ∧ OAI.PowerSaving.TimeBoundsC588 W
+OAI.PowerSaving.transform_mainC588 : OAI.PowerSaving.DFTGoalC588
+OAI.PowerSaving.convolution_mainC588 : OAI.PowerSaving.ConvGoalC588
+OAI.PowerSaving.RAM.hillsC588_program : ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+  (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+  OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl) (OAI.PowerSaving.RAM.bundle cl)
+    (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+    (fun i => (OAI.PowerSaving.Binary.bits (k i)).tape (OAI.PowerSaving.Binary.ripple (k i) (v i))) fun i =>
+    2 ^ k i * OAI.PowerSaving.hillsC588 (k i)

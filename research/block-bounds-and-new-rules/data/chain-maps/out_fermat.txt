@@ -1,0 +1,13 @@
+Fermat planes: 405
+distinct frames hit: 405
+edges: 18711
+edges Fermat-Fermat 4860, Fermat-other 7290, other-other 6561
+Fermat neighbours of a Fermat frame: [24]
+Fermat neighbours of an other frame: [15]
+Fermat-Fermat ordered pairs at distance 1: delta histogram {1: 9720}
+Fermat-Fermat ordered pairs at distance 2: delta histogram {2: 63180}
+Fermat-Fermat ordered pairs at distance 3: delta histogram {3: 90720}
+
+real	0m11.759s
+user	0m12.254s
+sys	0m0.027s

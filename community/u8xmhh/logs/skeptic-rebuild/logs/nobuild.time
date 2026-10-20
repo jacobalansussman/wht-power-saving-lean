@@ -1,0 +1,23 @@
+	Command being timed: "lake build --no-build Work.XHost.HostK Work.XHost.HRoles Work.XHost.HDef Work.XHost.HStage Work.XHost.HCert Work.XHost.Frames Work.XHost.HSched Work.XHost.HGeom Work.XHost.HEnd Work.XHost.HBank Work.XHost.HSchedK Work.XHost.HPriceK Work.XHost.Data.HU8XMSched Work.XHost.Data.RateU8XMHHx Work.XHost.Data.InstU8XMHH Work.XHost.U8XMHH Work.FourierU8XMHH.Seam Work.FourierU8XMHH.SectorAlgorithm Work.FourierU8XMHH.SynchronizedAlgorithm Work.FourierU8XMHH.WorkingTransform Work.FourierU8XMHH.WorkingCompiler Work.FourierU8XMHH.WorkingPreparation Work.FourierU8XMHH.ArbitraryLength Work.FourierU8XMHH.TransformProgram Work.FourierU8XMHH.ConvolutionProgram Work.FourierU8XMHH.UniformBounds Work.FourierU8XMHH.Asymptotics Work.FourierU8XMHH.Goal Work.FourierU8XMHH.Main Work.FourierU8XMHH.Axioms Work.FourierU8XMHH.UniformFourierChallenge Work.FourierU8XMHHNeg.UniformFourierChallenge Work.FourierU8XM.Main"
+	User time (seconds): 18.57
+	System time (seconds): 4.88
+	Percent of CPU this job got: 82%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:28.28
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 982992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 38954
+	Voluntary context switches: 76496
+	Involuntary context switches: 17919
+	Swaps: 0
+	File system inputs: 192
+	File system outputs: 456
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

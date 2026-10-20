@@ -1,0 +1,17 @@
+pf-logging negative controls, 13 Oct 2026 (each checker must REJECT a corrupted certificate; run on copies in a scratch folder)
+check_m0 (C):  29x29 minor at m=3 (true rank 28) -> det 0, FAIL; duplicated row -> FAIL (format); composite modulus 2147483627 -> FAIL (format)
+               (full output: foundation/out_negative_controls_m0.txt)
+check_m3.py:   one coefficient of one B2 kernel vector +1 -> "(failures 1)" FAIL; duplicated row in the dem minor -> FAIL
+check_matroid: y xor 1 at every 1000th multiset (117 entries) -> 116163 of 116280 valid, FAIL
+check_farkas:  multiplier of T2_dist changed 1/2 -> 1/3 -> residual terms dpar2, dz2, L2, dist2, FAIL
+check_big (C, 64-bit masks): duplicated row in an m=3 certificate -> FAIL (format)
+check_r1.py:   one coefficient of one class-2 vector (imaginary part +1) -> 'exact failures 1', FAIL
+
+Added 14 Oct 2026:
+check_capA (C, exact):  sign of the second term of every u flipped (u' instead of u) -> FAIL at every direction tried
+               (m=3: 704 image coordinates outside N per direction; m=4 dir 5: 1,174,272); both orders of each pair kept
+               (every vector twice) -> "support overlaps 280", FAIL. (Builds in a scratch folder: check_capA_neg, check_capA_dup.)
+check_yint (C, exact): edge ratio sign flipped (+s_a s_b) -> m=3 dirs 1,2 and m=4 dirs 1,2 report exact failures, FAIL (scratch build check_yint_neg)
+check_lp (Python, exact): m=4 with v lowered to 1/4 -> FAIL; one weight 1/6 -> 1/5 (not a distribution) -> FAIL; one functional 984 -> 985 -> FAIL
+check_b2 (C): m=3 certificate enlarged to 18 rows/cols (true rank 17) -> det 0, FAIL; a repeated column -> FAIL (format)
+check_b2 (C): m=4 certificate enlarged to 3400 (a further row of the same spanning set, a further column) -> det 0, FAIL

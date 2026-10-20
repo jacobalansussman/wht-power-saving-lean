@@ -1,0 +1,252 @@
+
+/-!
+# ExLegitClosure, appended to a verbatim copy of OpenAI's `ComparatorChallenges/UniformFourier.lean`
+
+Research file of 14 October 2026.  Everything above this line is OpenAI's file, unchanged (sha256 of the original:
+4c571f27...ec74); the two `sorry`s above are OpenAI's open challenge theorems and are not used below.
+
+**Scalar closure.**  In OpenAI's RAM every value in a register of paint `scalar` lies in any subfield `K` of `ℂ` that
+contains the scalar inputs, and every value of paint `left` lies in any `K`-submodule `V` of `ℂ` that contains the
+`left` inputs.  So a DFT program can use no constant outside `ℚ(ζ_d)` (`d = run order n`), and computes a
+`ℚ(ζ_d)`-linear combination of its inputs.  Corollary: any `DFTProgram` has `ζ_n ∈ ℚ(ζ_d)` for every `n ≥ 2`.
+-/
+
+namespace OAI.PowerSaving.RAM.ExLegit
+open OAI.PowerSaving OAI.PowerSaving.RAM OAI.PowerSaving.RAM.Ty
+
+variable (K : Subfield ℂ) (V : Submodule K ℂ)
+
+/-- Good values: scalar parts in `K`, `left` parts in `V`, everything else unconstrained. -/
+def SG : (t : Ty) → t.T → Prop
+  | .w, _ => True
+  | .c .scalar, x => x ∈ K
+  | .c .left, x => x ∈ V
+  | .c .right, _ => True
+  | .c .both, _ => True
+  | .p s t, x => SG s x.1 ∧ SG t x.2
+  | .a t, x => ∀ i, SG t (x.pos i)
+
+/-- Good handlers. -/
+def HG : (r : Port) → Handler r → Prop
+  | none, _ => True
+  | some (s,t), h => ∀ x, SG K V s x → SG K V t (h x).val
+
+lemma sg_p {s t : Ty} {x : (Ty.p s t).T} : SG K V (.p s t) x ↔ SG K V s x.1 ∧ SG K V t x.2 := Iff.rfl
+lemma sg_a {t : Ty} {x : (Ty.a t).T} : SG K V (.a t) x ↔ ∀ i, SG K V t (x.pos i) := Iff.rfl
+lemma sg_w {x : (Ty.w).T} : SG K V .w x := True.intro
+lemma sg_sc {x : (Ty.c .scalar).T} : SG K V (.c .scalar) x ↔ x ∈ K := Iff.rfl
+lemma sg_left {x : (Ty.c .left).T} : SG K V (.c .left) x ↔ x ∈ V := Iff.rfl
+lemma sg_right {x : (Ty.c .right).T} : SG K V (.c .right) x := True.intro
+lemma sg_both {x : (Ty.c .both).T} : SG K V (.c .both) x := True.intro
+lemma hg_none {h : Handler none} : HG K V none h := True.intro
+lemma hg_some {s t : Ty} {h : Handler (some (s,t))} :
+    HG K V (some (s,t)) h ↔ ∀ x, SG K V s x → SG K V t (h x).val := Iff.rfl
+
+lemma sg_blank : ∀ t : Ty, SG K V t t.blank
+  | .w => sg_w K V
+  | .c .scalar => (sg_sc K V).2 K.zero_mem
+  | .c .left => (sg_left K V).2 V.zero_mem
+  | .c .right => sg_right K V
+  | .c .both => sg_both K V
+  | .p s t => (sg_p K V).2 ⟨sg_blank s, sg_blank t⟩
+  | .a _ => (sg_a K V).2 (fun i => Fin.elim0 (show Fin 0 from i))
+
+lemma sg_look {t : Ty} (v : Tape t.T) (hv : SG K V (.a t) v) (i : ℕ) :
+    SG K V t (v.look i t.blank) := by
+  unfold Tape.look
+  split
+  · exact (sg_a K V).1 hv _
+  · exact sg_blank K V t
+
+lemma sg_set {t : Ty} (v : Tape t.T) (hv : SG K V (.a t) v) (i : ℕ) (y : t.T) (hy : SG K V t y) :
+    SG K V (.a t) (v.set i y) := by
+  refine (sg_a K V).2 (fun j => ?_)
+  simp only [Tape.set]
+  split
+  · exact hy
+  · exact (sg_a K V).1 hv j
+
+lemma sg_tab {t : Ty} (n : ℕ) : SG K V (.a t) (Tape.tab n (fun _ => t.blank)) :=
+  (sg_a K V).2 (fun _ => sg_blank K V t)
+
+lemma atom_good {allow : Bool} {s t : Ty} (op : Atom allow s t) (x : s.T) (hx : SG K V s x) :
+    SG K V t (op.run x).val := by
+  cases op with
+  | lit n => exact sg_w K V
+  | int f => exact sg_w K V
+  | cz t =>
+    cases t
+    · exact (sg_sc K V).2 K.zero_mem
+    · exact (sg_left K V).2 V.zero_mem
+    · exact sg_right K V
+    · exact sg_both K V
+  | cone => exact (sg_sc K V).2 K.one_mem
+  | add t =>
+    obtain ⟨a, b⟩ := x
+    obtain ⟨ha, hb⟩ := (sg_p K V).1 hx
+    cases t
+    · exact (sg_sc K V).2 (K.add_mem ((sg_sc K V).1 ha) ((sg_sc K V).1 hb))
+    · exact (sg_left K V).2 (V.add_mem ((sg_left K V).1 ha) ((sg_left K V).1 hb))
+    · exact sg_right K V
+    · exact sg_both K V
+  | sub t =>
+    obtain ⟨a, b⟩ := x
+    obtain ⟨ha, hb⟩ := (sg_p K V).1 hx
+    cases t
+    · exact (sg_sc K V).2 (K.sub_mem ((sg_sc K V).1 ha) ((sg_sc K V).1 hb))
+    · exact (sg_left K V).2 (V.sub_mem ((sg_left K V).1 ha) ((sg_left K V).1 hb))
+    · exact sg_right K V
+    · exact sg_both K V
+  | scale t =>
+    obtain ⟨a, b⟩ := x
+    obtain ⟨ha, hb⟩ := (sg_p K V).1 hx
+    have ha' : a ∈ K := (sg_sc K V).1 ha
+    cases t
+    · exact (sg_sc K V).2 (K.mul_mem ha' ((sg_sc K V).1 hb))
+    · have h := V.smul_mem (⟨a, ha'⟩ : K) ((sg_left K V).1 hb)
+      exact (sg_left K V).2 h
+    · exact sg_right K V
+    · exact sg_both K V
+  | inv => exact (sg_sc K V).2 (K.inv_mem ((sg_sc K V).1 hx))
+  | cross h => exact sg_both K V
+  | id => exact hx
+  | fst => exact ((sg_p K V).1 hx).1
+  | snd => exact ((sg_p K V).1 hx).2
+  | len => exact sg_w K V
+  | look =>
+    obtain ⟨v, i⟩ := x
+    exact sg_look K V v ((sg_p K V).1 hx).1 i
+
+lemma steps_good {t : Ty} (init : t.T) (hi : SG K V t init) (F : ℕ → t.T → Bill t.T)
+    (hF : ∀ i z, SG K V t z → SG K V t (F i z).val) :
+    ∀ l, SG K V t (Bill.steps init F l).val
+  | 0 => hi
+  | l+1 => hF l _ (steps_good init hi F hF l)
+
+lemma depthRun_good {s t : Ty} (base : s.T → Bill t.T)
+    (hb : ∀ x, SG K V s x → SG K V t (base x).val)
+    (step : (s.T → Bill t.T) → (s.T → Bill t.T))
+    (hs : ∀ h : s.T → Bill t.T, (∀ x, SG K V s x → SG K V t (h x).val) →
+      ∀ x, SG K V s x → SG K V t (step h x).val) :
+    ∀ k x, SG K V s x → SG K V t (depthRun base step k x).val
+  | 0, x, hx => hb x hx
+  | k+1, x, hx => hs _ (depthRun_good base hb step hs k) x hx
+
+/-- **Scalar closure (main lemma).** -/
+theorem run_good {allow : Bool} {r : Port} {s t : Ty} (f : Code allow r s t) :
+    ∀ (h : Handler r), HG K V r h → ∀ x, SG K V s x → SG K V t (f.run h x).val := by
+  induction f with
+  | atom op =>
+    intro h _ x hx
+    exact atom_good K V op x hx
+  | comp f g ihf ihg =>
+    intro h hh x hx
+    exact ihg h hh (f.run h x).val (ihf h hh x hx)
+  | fork f g ihf ihg =>
+    intro h hh x hx
+    exact (sg_p K V).2 ⟨ihf h hh x hx, ihg h hh x hx⟩
+  | ifz q f g _ ihf ihg =>
+    intro h hh x hx
+    simp only [Code.run, Bill.pay, Bill.pass]
+    split
+    · exact ihf h hh x hx
+    · exact ihg h hh x hx
+  | loop n init body _ ihi ihb =>
+    intro h hh x hx
+    simp only [Code.run, Bill.pay, Bill.pass]
+    exact steps_good K V _ (ihi h hh x hx) _
+      (fun i z hz => ihb h hh (x, (i, z)) ((sg_p K V).2 ⟨hx, (sg_p K V).2 ⟨sg_w K V, hz⟩⟩)) _
+  | tab n body _ ihb =>
+    intro h hh x hx
+    simp only [Code.run, Bill.pay, Bill.pass, Bill.tab, Bill.sow]
+    refine steps_good K V (t := .a _) _ (sg_tab K V _) _ ?_ _
+    intro i v hv
+    simp only [Bill.one]
+    exact sg_set K V v hv i _ (ihb h hh (x, i) ((sg_p K V).2 ⟨hx, sg_w K V⟩))
+  | sow n count body _ _ ihb =>
+    intro h hh x hx
+    simp only [Code.run, Bill.pay, Bill.pass, Bill.sow]
+    refine steps_good K V (t := .a _) _ (sg_tab K V _) _ ?_ _
+    intro i v hv
+    simp only [Bill.one]
+    exact sg_set K V v hv _ _ ((sg_p K V).1 (ihb h hh (x, i) ((sg_p K V).2 ⟨hx, sg_w K V⟩))).2
+  | importClosed f ihf =>
+    intro h _ x hx
+    exact ihf () (hg_none K V) x hx
+  | call =>
+    intro h hh x hx
+    exact (hg_some K V).1 hh x hx
+  | descend base body ihb ihs =>
+    intro h _ x hx
+    obtain ⟨k, y⟩ := x
+    have hy : SG K V _ y := ((sg_p K V).1 hx).2
+    simp only [Code.run, Bill.pay]
+    exact depthRun_good K V _ (fun x hx => ihb () (hg_none K V) x hx) _
+      (fun h' hh' x hx => ihs h' ((hg_some K V).2 hh') x hx) k y hy
+
+/-- Closed programs. -/
+theorem prog_good {allow : Bool} {s t : Ty} (f : Prog allow s t) (x : s.T) (hx : SG K V s x) :
+    SG K V t (run f x).val :=
+  run_good K V f () (hg_none K V) x hx
+
+/-- **Every output entry of a DFT program lies in any `K`-submodule containing the input entries, where `K` is
+any subfield containing the supplied root** (so all scalars it uses are in `K`). -/
+theorem dft_output_mem (solve : Prog false dftInKind dftOutKind) (n d : ℕ) (x : Vec n)
+    (Ksub : Subfield ℂ) (hK : root d ∈ Ksub) (W : Submodule Ksub ℂ)
+    (hW : ∀ i, x i ∈ W) (j : Fin (run solve (n, root d, (⟨n,x⟩ : Tape ℂ))).val.len) :
+    (run solve (n, root d, (⟨n,x⟩ : Tape ℂ))).val.pos j ∈ W := by
+  have hin : SG Ksub W dftInKind (n, root d, (⟨n,x⟩ : Tape ℂ)) :=
+    (sg_p Ksub W).2 ⟨sg_w Ksub W, (sg_p Ksub W).2 ⟨(sg_sc Ksub W).2 hK,
+      (sg_a Ksub W).2 (fun i => (sg_left Ksub W).2 (hW i))⟩⟩
+  exact (sg_left Ksub W).1 ((sg_a Ksub W).1 (prog_good Ksub W solve _ hin) j)
+
+/-- **Corollary.** If `DFTProgram order solve W` holds, then for every `n ≥ 2` the root `ζ_n` lies in the
+subfield of `ℂ` generated by the supplied root `ζ_d`, `d = run order n`. -/
+theorem zeta_mem_of_DFTProgram (order : Prog false w w) (solve : Prog false dftInKind dftOutKind)
+    (Wf : ℕ → ℕ) (H : DFTProgram order solve Wf) (n : ℕ) (hn : 2 ≤ n) :
+    root n ∈ Subfield.closure {root (run order n).val} := by
+  obtain ⟨cB, hB⟩ := H
+  have hBn := hB n (by omega)
+  dsimp only at hBn
+  obtain ⟨_, _, _, _, _, _, hall⟩ := hBn
+  have hK : root (run order n).val ∈ Subfield.closure {root (run order n).val} :=
+    Subfield.subset_closure (Set.mem_singleton _)
+  -- the input: the indicator of index 1
+  let x : Vec n := fun k => if k.val = 1 then 1 else 0
+  have spec := hall x
+  obtain ⟨_, _, _, hres⟩ := spec
+  let W : Submodule (Subfield.closure {root (run order n).val}) ℂ := Submodule.span _ {1}
+  have hW : ∀ i, x i ∈ W := by
+    intro i
+    by_cases h : i.val = 1
+    · simp only [x, h, ite_true]; exact Submodule.subset_span (Set.mem_singleton _)
+    · simp only [x, h, ite_false]; exact W.zero_mem
+  have hj : 1 < (run solve (n, root (run order n).val, (⟨n,x⟩ : Tape ℂ))).val.len := by
+    rw [hres]; exact hn
+  have hmem := dft_output_mem solve n (run order n).val x _ hK W hW ⟨1, hj⟩
+  have hval : (run solve (n, root (run order n).val, (⟨n,x⟩ : Tape ℂ))).val.pos ⟨1, hj⟩ = root n := by
+    have e1 := congrArg (fun T : Tape ℂ => T.look 1 0) hres
+    rw [Tape.look_of_lt _ _ hj] at e1
+    rw [e1, Tape.look_of_lt _ _ (show 1 < n by omega)]
+    show dft n x ⟨1, _⟩ = root n
+    simp only [dft]
+    rw [Finset.sum_eq_single ⟨1, by omega⟩]
+    · simp [x]
+    · intro b _ hb
+      have : b.val ≠ 1 := fun h => hb (Fin.ext h)
+      simp [x, this]
+    · simp
+  rw [hval] at hmem
+  rw [Submodule.mem_span_singleton] at hmem
+  obtain ⟨c, hc⟩ := hmem
+  rw [← hc]
+  have e : c • (1:ℂ) = (c : ℂ) := by
+    rw [Algebra.smul_def, mul_one]; rfl
+  rw [e]
+  exact c.2
+
+end OAI.PowerSaving.RAM.ExLegit
+
+#print axioms OAI.PowerSaving.RAM.ExLegit.run_good
+#print axioms OAI.PowerSaving.RAM.ExLegit.dft_output_mem
+#print axioms OAI.PowerSaving.RAM.ExLegit.zeta_mem_of_DFTProgram

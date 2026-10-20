@@ -1,0 +1,8 @@
+m 2 all pairs of K rows compatible: True
+perfect matchings of K rows: 3
+continuing first steps (matchings): 3 distinct depth-(m-1) frames: 3 max matchings per frame: 1
+continuing translation matchings: 3 routes through them: 3
+TOTAL ROUTES (chains of distinct frames): 3
+  |S_1| = 3
+t=0.0 memo=0
+CONTROL affine-flag routes: 3 (expected: number of complete flags of F_2^2)

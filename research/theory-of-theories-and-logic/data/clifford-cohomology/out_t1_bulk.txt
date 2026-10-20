@@ -1,0 +1,25 @@
+m=1: 9 elementary letters, invalid letter rules: 0
+   (f) collapse = the letter itself on every one-column letter: PASS
+   m=1 done: 60 elements, 60 pairs so far
+m=2: 28 elementary letters, invalid letter rules: 0
+   (f) collapse = the letter itself on every one-column letter: PASS
+   m=2 done: 120 elements, 120 pairs so far
+m=3: 57 elementary letters, invalid letter rules: 0
+   (f) collapse = the letter itself on every one-column letter: PASS
+   m=3 done: 160 elements, 160 pairs so far
+(g) E^-1 Dcz E Dcz^-1 == CZ chain on row 1 (bulk): True
+    collapse(CZ chain row 1) == conjugation by Z_1: True | collapse(E)^-1 collapse(Dcz) collapse(E) collapse(Dcz)^-1 == Z_1: True
+
+psi3_ne_conj_collapse  0
+compared_psi1          160
+gamma_nonzero          0
+collapse_invalid       0
+collapse_nonmult       0
+psi_invalid            0
+psi_L_dependent        0
+psi_nonmult            0
+psi_ne_collapse_chi    0
+chi_nonzero            0
+pairs                  160
+elems                  160
+ALL PASS

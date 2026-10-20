@@ -1,0 +1,7 @@
+[lift] seed 21: cells lam1 1 t1 16 F 137 K 731; |B_m sample| 151 of 4000; q order 7 found; 25s
+[foofo] F1 route found after 95 tries: cells d1 55, d2 348, d3 739
+[foofo] F1 7 terms (absorption 3e-16), O1 8, O2 8, F2 22400 terms (absorption 9e-17)  85s
+[foofo] FRAME-SUM, ALL 7 characters, F O O F O (both): passes = False; mu_ok {0: np.True_, 1: np.False_, 2: np.True_, 3: np.True_, 4: np.True_, 5: np.True_, 6: np.True_}
+[foofo] FRAME-SUM, ALL 7 characters, without F1 route (F2 only): passes = False; mu_ok {0: np.True_, 1: np.False_, 2: np.True_, 3: np.True_, 4: np.True_, 5: np.True_, 6: np.True_}
+[foofo] control, O1 not reading F1: passes = False; mu_ok {0: np.True_, 1: np.False_, 2: np.True_, 3: np.True_, 4: np.True_, 5: np.True_, 6: np.True_}
+done 189s

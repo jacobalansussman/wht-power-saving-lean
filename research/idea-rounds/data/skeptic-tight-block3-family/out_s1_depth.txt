@@ -1,0 +1,34 @@
+== frame-candidate 1+15+35(6)+84: irreps [0, 2, 6, 10], n=135, types (dim x mult) = [(1, 3), (6, 1), (7, 2), (7, 1), (7, 2), (14, 1), (21, 1), (28, 2)], commutant dims of the types = [1, 1, 1, 1, 1, 1, 1, 1]
+   least depth with rho(K) in rho(C_d): 3;  two-row target K2: 2;  dim rho(C_d) in the relaxation algebra, d = 0..3: [1605, 7134, 8437, 8507] of 18225 (ambient incl. cross-irreducible blocks)
+== frame-candidate 1+15+35(7)+84: irreps [0, 2, 7, 10], n=135, types (dim x mult) = [(1, 4), (6, 2), (7, 2), (7, 3), (14, 1), (21, 2), (28, 1)], commutant dims of the types = [1, 1, 1, 1, 1, 1, 1]
+   least depth with rho(K) in rho(C_d): 3;  two-row target K2: 2;  dim rho(C_d) in the relaxation algebra, d = 0..3: [1556, 6386, 8380, 8507] of 18225 (ambient incl. cross-irreducible blocks)
+== irr1: irreps [1], n=7, types (dim x mult) = [(7, 1)], commutant dims of the types = [1]
+   least depth with rho(K) in rho(C_d): 0;  two-row target K2: 0;  dim rho(C_d) in the relaxation algebra, d = 0..3: [49, 49, 49, 49] of 49 (ambient incl. cross-irreducible blocks)
+== irr2: irreps [2], n=15, types (dim x mult) = [(1, 1), (7, 1), (7, 1)], commutant dims of the types = [1, 1, 1]
+   least depth with rho(K) in rho(C_d): 2;  two-row target K2: 2;  dim rho(C_d) in the relaxation algebra, d = 0..3: [99, 211, 225, 225] of 225 (ambient incl. cross-irreducible blocks)
+== irr3: irreps [3], n=21, types (dim x mult) = [(21, 1)], commutant dims of the types = [1]
+   least depth with rho(K) in rho(C_d): 0;  two-row target K2: 0;  dim rho(C_d) in the relaxation algebra, d = 0..3: [441, 441, 441, 441] of 441 (ambient incl. cross-irreducible blocks)
+== irr4: irreps [4], n=21, types (dim x mult) = [(7, 1), (14, 1)], commutant dims of the types = [1, 1]
+   least depth with rho(K) in rho(C_d): 1;  two-row target K2: 1;  dim rho(C_d) in the relaxation algebra, d = 0..3: [245, 441, 441, 441] of 441 (ambient incl. cross-irreducible blocks)
+== irr5: irreps [5], n=27, types (dim x mult) = [(6, 1), (21, 1)], commutant dims of the types = [1, 1]
+   least depth with rho(K) in rho(C_d): 1;  two-row target K2: 1;  dim rho(C_d) in the relaxation algebra, d = 0..3: [477, 729, 729, 729] of 729 (ambient incl. cross-irreducible blocks)
+== irr6: irreps [6], n=35, types (dim x mult) = [(7, 1), (28, 1)], commutant dims of the types = [1, 1]
+   least depth with rho(K) in rho(C_d): 1;  two-row target K2: 1;  dim rho(C_d) in the relaxation algebra, d = 0..3: [833, 1225, 1225, 1225] of 1225 (ambient incl. cross-irreducible blocks)
+== irr7: irreps [7], n=35, types (dim x mult) = [(1, 1), (6, 1), (7, 1), (21, 1)], commutant dims of the types = [1, 1, 1, 1]
+   least depth with rho(K) in rho(C_d): 2;  two-row target K2: 2;  dim rho(C_d) in the relaxation algebra, d = 0..3: [527, 1183, 1225, 1225] of 1225 (ambient incl. cross-irreducible blocks)
+== irr8: irreps [8], n=56, types (dim x mult) = [(7, 1), (21, 1), (28, 1)], commutant dims of the types = [1, 1, 1]
+   least depth with rho(K) in rho(C_d): 1;  two-row target K2: 1;  dim rho(C_d) in the relaxation algebra, d = 0..3: [1274, 3136, 3136, 3136] of 3136 (ambient incl. cross-irreducible blocks)
+== irr9: irreps [9], n=70, types (dim x mult) = [(21, 1), (21, 1), (28, 1)], commutant dims of the types = [1, 1, 1]
+   least depth with rho(K) in rho(C_d): 1;  two-row target K2: 1;  dim rho(C_d) in the relaxation algebra, d = 0..3: [1666, 4900, 4900, 4900] of 4900 (ambient incl. cross-irreducible blocks)
+== irr10: irreps [10], n=84, types (dim x mult) = [(1, 1), (6, 1), (7, 1), (7, 1), (14, 1), (21, 1), (28, 1)], commutant dims of the types = [1, 1, 1, 1, 1, 1, 1]
+   least depth with rho(K) in rho(C_d): 3;  two-row target K2: 2;  dim rho(C_d) in the relaxation algebra, d = 0..3: [1556, 5810, 7000, 7056] of 7056 (ambient incl. cross-irreducible blocks)
+== irr11: irreps [11], n=105, types (dim x mult) = [(14, 1), (14, 1), (21, 1), (56, 1)], commutant dims of the types = [1, 1, 1, 1]
+   least depth with rho(K) in rho(C_d): 2;  two-row target K2: 2;  dim rho(C_d) in the relaxation algebra, d = 0..3: [3969, 10437, 11025, 11025] of 11025 (ambient incl. cross-irreducible blocks)
+== irr12: irreps [12], n=105, types (dim x mult) = [(7, 1), (7, 1), (21, 1), (28, 1), (42, 1)], commutant dims of the types = [1, 1, 1, 1, 1]
+   least depth with rho(K) in rho(C_d): 2;  two-row target K2: 2;  dim rho(C_d) in the relaxation algebra, d = 0..3: [3087, 9947, 11025, 11025] of 11025 (ambient incl. cross-irreducible blocks)
+== irr13: irreps [13], n=105, types (dim x mult) = [(7, 1), (7, 1), (21, 1), (21, 1), (21, 1), (28, 1)], commutant dims of the types = [1, 1, 1, 1, 1, 1]
+   least depth with rho(K) in rho(C_d): 2;  two-row target K2: 2;  dim rho(C_d) in the relaxation algebra, d = 0..3: [2205, 9751, 11025, 11025] of 11025 (ambient incl. cross-irreducible blocks)
+== coupled 56+105a (a2-gct): irreps [8, 11], n=161, types (dim x mult) = [(7, 1), (14, 1), (14, 1), (21, 2), (28, 1), (56, 1)], commutant dims of the types = [1, 1, 1, 1, 1, 1]
+   least depth with rho(K) in rho(C_d): 2;  two-row target K2: 2;  dim rho(C_d) in the relaxation algebra, d = 0..3: [4802, 13573, 14161, 14161] of 25921 (ambient incl. cross-irreducible blocks)
+== coupled 56+70: irreps [8, 9], n=126, types (dim x mult) = [(7, 1), (21, 2), (21, 1), (28, 2)], commutant dims of the types = [1, 1, 1, 1]
+   least depth with rho(K) in rho(C_d): 1;  two-row target K2: 1;  dim rho(C_d) in the relaxation algebra, d = 0..3: [1715, 8036, 8036, 8036] of 15876 (ambient incl. cross-irreducible blocks)

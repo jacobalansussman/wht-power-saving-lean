@@ -1,0 +1,16 @@
+g27_Fp2b_m3_s2.u: 27 eqs, 12 alphas, 9 betas, 7 alpha-only hints
+census over 30 primes 101..257 (60 tries each): points at 14
+   residues mod 3: with points [1, 2]  without [1, 2]
+   residues mod 4: with points [1]  without [3]
+   residues mod 8: with points [1, 5]  without [3, 7]
+   residues mod 12: with points [1, 5]  without [7, 11]
+EXISTS [exact point over Q(t), t^2 + (0) t + (4) = 0; all 27 equations verified exactly] try 0, p = 10009:
+   a2=1, a3=1, a4=2, a5=(0+1*t), a6=(-2-1*t), a9=-1, a10=-1, a11=-1, a12=-2, b1=(1/2-1/4*t), b2=(1/2+1/4*t), b6=(1/8-1/16*t), b8=(3/64+1/128*t), b9=(-1/64-3/128*t)  (others 0)
+g27_Fany4_s12.u: 90 eqs, 16 alphas, 9 betas, 36 alpha-only hints
+census over 30 primes 101..257 (60 tries each): points at 14
+   residues mod 3: with points [1]  without [2]
+   residues mod 4: with points [1, 3]  without [1, 3]
+   residues mod 8: with points [1, 3, 5, 7]  without [1, 3, 5, 7]
+   residues mod 12: with points [1, 7]  without [5, 11]
+EXISTS [exact point over Q(t), t^2 + (2) t + (4) = 0; all 90 equations verified exactly] try 7, p = 10009:
+   a1=-1, a2=(0+1*t), a3=2, a4=(1+1/2*t), a7=2, a8=(0+1*t), a11=-2, a12=2, a13=2, a14=2, a15=-2, a16=-1, b2=1, b5=1/6, b6=-1/6, b8=(17/252+1/56*t), b9=(5/126+1/56*t)  (others 0)

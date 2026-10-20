@@ -1,0 +1,6 @@
+C5 r=2 L=5 closure=none gauge=none                           SAT    vars 135 clauses 270  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 3, 'viol_one': 3, 'viol_trans': 4, 'rankB': 2, 'cT_static_fit': False, 'rank_cT': 2, 'layer_sizes': [2, 1, 1, 0, 1]}
+C5 r=3 L=5 closure=none gauge=none                           SAT    vars 175 clauses 375  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 3, 'cT_static_fit': True, 'rank_cT': 3, 'layer_sizes': [5]}
+C5 r=2 L=5 closure=one gauge=none                            UNSAT  vars 165 clauses 380  0.0s
+C5 r=3 L=5 closure=one gauge=none                            SAT    vars 225 clauses 555  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 4, 'viol_one': 0, 'viol_trans': 0, 'rankB': 3, 'cT_static_fit': True, 'rank_cT': 3, 'layer_sizes': [3, 0, 0, 1, 1]}
+C5 r=2 L=5 closure=trans gauge=none                          UNSAT  vars 175 clauses 400  0.0s
+C5 r=3 L=5 closure=trans gauge=none                          SAT    vars 235 clauses 575  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 2, 'viol_one': 0, 'viol_trans': 0, 'rankB': 3, 'cT_static_fit': True, 'rank_cT': 3, 'layer_sizes': [3, 0, 0, 0, 2]}

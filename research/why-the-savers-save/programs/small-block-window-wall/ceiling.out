@@ -1,0 +1,101 @@
+calibration, proposal 3's own assumptions (m 16, u 2, free bridges, r_eff 4): a = 0.0963 (an-synth: 0.096)
+D6 (hub-type charge 0.8 assumed, not shown)   m=13 u=1.0: D per pair  0.40 (D/W 0.200), ceiling a = 0.0132
+D6 (hub-type charge 0.8 assumed, not shown)   m=13 u=1.5: D per pair  1.40 (D/W 0.700), ceiling a = 0.0470
+D6 (hub-type charge 0.8 assumed, not shown)   m=13 u=2.0: D per pair  2.40 (D/W 1.200), ceiling a = 0.0822
+E7                                            m=19 u=1.0: D per pair  0.67 (D/W 0.333), ceiling a = 0.0154
+E7                                            m=19 u=1.5: D per pair  1.67 (D/W 0.833), ceiling a = 0.0389
+E7                                            m=19 u=2.0: D per pair  2.67 (D/W 1.333), ceiling a = 0.0631
+P112                                          m=25 u=1.0: D per pair  0.86 (D/W 0.429), ceiling a = 0.0152
+P112                                          m=25 u=1.5: D per pair  1.86 (D/W 0.929), ceiling a = 0.0332
+P112                                          m=25 u=2.0: D per pair  2.86 (D/W 1.429), ceiling a = 0.0516
+E8 (120 ports)                                m=25 u=1.0: D per pair  0.93 (D/W 0.467), ceiling a = 0.0165
+E8 (120 ports)                                m=25 u=1.5: D per pair  1.93 (D/W 0.967), ceiling a = 0.0346
+E8 (120 ports)                                m=25 u=2.0: D per pair  2.93 (D/W 1.467), ceiling a = 0.0531
+-- if stages could share windows (the premise of proposal 3; excluded by the wall):
+D6 (hub-type charge 0.8 assumed, not shown)   m=10 u=1.0: ceiling a = 0.0220
+D6 (hub-type charge 0.8 assumed, not shown)   m=10 u=1.5: ceiling a = 0.0792
+E7                                            m=10 u=1.0: ceiling a = 0.0664
+E7                                            m=10 u=1.5: ceiling a = 0.1703
+P112                                          m=10 u=1.0: ceiling a = 0.1963
+P112                                          m=10 u=1.5: ceiling a = 0.4368
+E8 (120 ports)                                m=10 u=1.0: ceiling a = 0.2142
+E8 (120 ports)                                m=10 u=1.5: ceiling a = 0.4556
+-- blocks <= 16, proved centre floors (classfloor.json), generous everywhere else:
+D4: floor 1.00/port/call, m= 7, u=1.0: D per pair <=  0.00, ceiling a <= 0.0000
+D4: floor 1.00/port/call, m= 8, u=1.5: D per pair <=  1.00, ceiling a <= 0.0466
+D4: floor 1.00/port/call, m= 8, u=2.0: D per pair <=  2.00, ceiling a <= 0.0963
+A3: floor 1.00/port/call, m= 7, u=1.0: D per pair <=  0.00, ceiling a <= 0.0000
+A3: floor 1.00/port/call, m= 8, u=1.5: D per pair <=  1.00, ceiling a <= 0.0466
+A3: floor 1.00/port/call, m= 8, u=2.0: D per pair <=  2.00, ceiling a <= 0.0963
+D5: floor 0.60/port/call, m=13, u=1.0: D per pair <=  0.80, ceiling a <= 0.0265
+D5: floor 0.60/port/call, m=14, u=1.5: D per pair <=  1.80, ceiling a <= 0.0530
+D5: floor 0.60/port/call, m=14, u=2.0: D per pair <=  2.80, ceiling a <= 0.0841
+D6: floor 0.40/port/call, m=13, u=1.0: D per pair <=  1.20, ceiling a <= 0.0401
+D6: floor 0.40/port/call, m=14, u=1.5: D per pair <=  2.20, ceiling a <= 0.0653
+D6: floor 0.40/port/call, m=14, u=2.0: D per pair <=  3.20, ceiling a <= 0.0969
+A4: floor 0.60/port/call, m=13, u=1.0: D per pair <=  0.80, ceiling a <= 0.0265
+A4: floor 0.60/port/call, m=14, u=1.5: D per pair <=  1.80, ceiling a <= 0.0530
+A4: floor 0.60/port/call, m=14, u=2.0: D per pair <=  2.80, ceiling a <= 0.0841
+A5: floor 0.40/port/call, m=13, u=1.0: D per pair <=  1.20, ceiling a <= 0.0401
+A5: floor 0.40/port/call, m=14, u=1.5: D per pair <=  2.20, ceiling a <= 0.0653
+A5: floor 0.40/port/call, m=14, u=2.0: D per pair <=  3.20, ceiling a <= 0.0969
+largest generous ceiling among the designs that fit m <= 16: 0.0969
+-- at the proved floor 1 + 2 sigma, the argued floor 1 + 3 sigma, and two-sided with mirrored windows 2 + 3 sigma:
+E7               1+2sigma (proved)    m=13 u=1.0: ceiling a = 0.0336
+E7               1+2sigma (proved)    m=13 u=1.5: ceiling a = 0.0857
+E7               1+2sigma (proved)    m=13 u=2.0: ceiling a = 0.1400
+E7               1+3sigma (argued)    m=19 u=1.0: ceiling a = 0.0154
+E7               1+3sigma (argued)    m=19 u=1.5: ceiling a = 0.0389
+E7               1+3sigma (argued)    m=19 u=2.0: ceiling a = 0.0631
+E7               2+3sigma two-sided   m=20 u=2.0: ceiling a = 0.0573
+P112             1+2sigma (proved)    m=17 u=1.0: ceiling a = 0.0339
+P112             1+2sigma (proved)    m=17 u=1.5: ceiling a = 0.0745
+P112             1+2sigma (proved)    m=17 u=2.0: ceiling a = 0.1165
+P112             1+3sigma (argued)    m=25 u=1.0: ceiling a = 0.0152
+P112             1+3sigma (argued)    m=25 u=1.5: ceiling a = 0.0332
+P112             1+3sigma (argued)    m=25 u=2.0: ceiling a = 0.0516
+P112             2+3sigma two-sided   m=26 u=2.0: ceiling a = 0.0479
+E8 (120 ports)   1+2sigma (proved)    m=17 u=1.0: ceiling a = 0.0369
+E8 (120 ports)   1+2sigma (proved)    m=17 u=1.5: ceiling a = 0.0777
+E8 (120 ports)   1+2sigma (proved)    m=17 u=2.0: ceiling a = 0.1197
+E8 (120 ports)   1+3sigma (argued)    m=25 u=1.0: ceiling a = 0.0165
+E8 (120 ports)   1+3sigma (argued)    m=25 u=1.5: ceiling a = 0.0346
+E8 (120 ports)   1+3sigma (argued)    m=25 u=2.0: ceiling a = 0.0531
+E8 (120 ports)   2+3sigma two-sided   m=26 u=2.0: ceiling a = 0.0493
+-- small designs at the proved floor 1 + 2 sigma:
+D4: proved centre floor  1.000/port/call, m= 5, u=1.0: D per pair  0.00, ceiling a = 0.0000
+D4: proved centre floor  1.000/port/call, m= 6, u=1.5: D per pair  1.00, ceiling a = 0.0792
+D4: proved centre floor  1.000/port/call, m= 6, u=2.0: D per pair  2.00, ceiling a = 0.1660
+D4: hub-type charge      0.667/port/call, m= 5, u=1.0: D per pair  0.67, ceiling a = 0.0753
+D4: hub-type charge      0.667/port/call, m= 6, u=1.5: D per pair  1.67, ceiling a = 0.1361
+D4: hub-type charge      0.667/port/call, m= 6, u=2.0: D per pair  2.67, ceiling a = 0.2287
+A3: proved centre floor  1.000/port/call, m= 5, u=1.0: D per pair  0.00, ceiling a = 0.0000
+A3: proved centre floor  1.000/port/call, m= 6, u=1.5: D per pair  1.00, ceiling a = 0.0792
+A3: proved centre floor  1.000/port/call, m= 6, u=2.0: D per pair  2.00, ceiling a = 0.1660
+A3: hub-type charge      1.000/port/call, m= 5, u=1.0: D per pair  0.00, ceiling a = 0.0000
+A3: hub-type charge      1.000/port/call, m= 6, u=1.5: D per pair  1.00, ceiling a = 0.0792
+A3: hub-type charge      1.000/port/call, m= 6, u=2.0: D per pair  2.00, ceiling a = 0.1660
+D5: proved centre floor  0.600/port/call, m= 9, u=1.0: D per pair  0.80, ceiling a = 0.0561
+D5: proved centre floor  0.600/port/call, m=10, u=1.5: D per pair  1.80, ceiling a = 0.1029
+D5: proved centre floor  0.600/port/call, m=10, u=2.0: D per pair  2.80, ceiling a = 0.1646
+D5: hub-type charge      1.000/port/call, m= 9, u=1.0: D per pair  0.00, ceiling a = 0.0000
+D5: hub-type charge      1.000/port/call, m=10, u=1.5: D per pair  1.00, ceiling a = 0.0560
+D5: hub-type charge      1.000/port/call, m=10, u=2.0: D per pair  2.00, ceiling a = 0.1150
+D6: proved centre floor  0.400/port/call, m= 9, u=1.0: D per pair  1.20, ceiling a = 0.0851
+D6: proved centre floor  0.400/port/call, m=10, u=1.5: D per pair  2.20, ceiling a = 0.1272
+D6: proved centre floor  0.400/port/call, m=10, u=2.0: D per pair  3.20, ceiling a = 0.1903
+D6: hub-type charge      0.800/port/call, m= 9, u=1.0: D per pair  0.40, ceiling a = 0.0277
+D6: hub-type charge      0.800/port/call, m=10, u=1.5: D per pair  1.40, ceiling a = 0.0792
+D6: hub-type charge      0.800/port/call, m=10, u=2.0: D per pair  2.40, ceiling a = 0.1395
+A4: proved centre floor  0.600/port/call, m= 9, u=1.0: D per pair  0.80, ceiling a = 0.0561
+A4: proved centre floor  0.600/port/call, m=10, u=1.5: D per pair  1.80, ceiling a = 0.1029
+A4: proved centre floor  0.600/port/call, m=10, u=2.0: D per pair  2.80, ceiling a = 0.1646
+A4: hub-type charge      1.600/port/call, m= 9, u=1.0: D per pair -1.20, ceiling a = -0.0796
+A4: hub-type charge      1.600/port/call, m=10, u=1.5: D per pair -0.20, ceiling a = -0.0109
+A4: hub-type charge      1.600/port/call, m=10, u=2.0: D per pair  0.80, ceiling a = 0.0446
+A5: proved centre floor  0.400/port/call, m= 9, u=1.0: D per pair  1.20, ceiling a = 0.0851
+A5: proved centre floor  0.400/port/call, m=10, u=1.5: D per pair  2.20, ceiling a = 0.1272
+A5: proved centre floor  0.400/port/call, m=10, u=2.0: D per pair  3.20, ceiling a = 0.1903
+A5: hub-type charge      1.333/port/call, m= 9, u=1.0: D per pair -0.67, ceiling a = -0.0448
+A5: hub-type charge      1.333/port/call, m=10, u=1.5: D per pair  0.33, ceiling a = 0.0183
+A5: hub-type charge      1.333/port/call, m=10, u=2.0: D per pair  1.33, ceiling a = 0.0753

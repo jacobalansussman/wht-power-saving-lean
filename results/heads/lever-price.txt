@@ -1,0 +1,30 @@
+##### controls: T74 (#1839), rl-plan values 1.6948358e-3 / 1.6968621e-3 / break-even 9,443
+== T74 #1839: W=66304, idle rank-48 = 22748, literal heads = 11010 (48.40 %), others = 11738
+  uniform (the hub word)                               b=1.6797549561e-3  +0.000 % (+0.0000e+00)  separated=True
+  heads cut to target 25, other 48s split 24+24        b=1.6948357905e-3  +0.898 % (+1.5081e-05)  separated=True
+  heads cut by 24 axes (target 49), rest paid          b=1.6968621073e-3  +1.018 % (+1.7107e-05)  separated=True
+  heads cut to 25, others kept at 48 (NOT separated)   b=1.7434773229e-3  +3.794 % (+6.3722e-05)  separated=False
+  all idle 48s cut (structure false)                   b=1.8169467780e-3  +8.167 % (+1.3719e-04)  separated=True
+  best separated d = 24: b=1.6968621073e-3 (+1.018 %)
+  full-cut break-even: 9443 heads (41.51 % of 22748); have 11010
+##### #3945 T360 staged544 terminal-gap fill (heads counted by tools/heads_fill.py)
+== #3945 T360: W=322560, idle rank-48 = 137952, literal heads = 57312 (41.54 %), others = 80640
+  uniform (the hub word)                               b=1.7306632365e-3  +0.000 % (+0.0000e+00)  separated=True
+  heads cut to target 25, other 48s split 24+24        b=1.7307679642e-3  +0.006 % (+1.0473e-07)  separated=True
+  heads cut by 24 axes (target 49), rest paid          b=1.7501109246e-3  +1.124 % (+1.9448e-05)  separated=True
+  heads cut to 25, others kept at 48 (NOT separated)   b=1.8033130058e-3  +4.198 % (+7.2650e-05)  separated=False
+  all idle 48s cut (structure false)                   b=1.9164767077e-3  +10.737 % (+1.8581e-04)  separated=True
+  half cut + net heads (argued) cut fully              b=1.7600092122e-3  +1.696 % (+2.9346e-05)  separated=True
+  best separated d = 24: b=1.7501109246e-3 (+1.124 %)
+  full-cut break-even: 57262 heads (41.51 % of 137952); have 57312
+  kappa with bit c=0.001733427039589844234749: full_cut: min(b, c) = 1.7307679642e-3 (uniform: 1.7306632365e-3)
+  kappa with bit c=0.001733427039589844234749: half_cut: min(b, c) = 1.7334270396e-3 (uniform: 1.7306632365e-3)
+##### lever on each word, heads at the lower / upper end of the public bound
+word                                                b (hub word)      heads lo..hi     half cut lo     half cut hi     full cut lo  BE full
+#3148 T740 (merged, archive)                     1.7297774947e-3  116809.. 165760 1.7490386838e-3 1.7572380450e-3 1.7292915801e-3   117290
+#3605 T740 (open; histogram #3659)               1.7300065495e-3  117425.. 165760 1.7493755639e-3 1.7574743740e-3 1.7298846975e-3   117546
+#3642 T530 (open)                                1.7303943918e-3   84108.. 118720 1.7497736046e-3 1.7578746227e-3 1.7302776881e-3    84191
+#3653 T488 (open)                                1.7304188998e-3   77470.. 109312 1.7498055353e-3 1.7578999118e-3 1.7303265612e-3    77531
+#3682 T360 (open)                                1.7304188998e-3   57150..  80640 1.7498055353e-3 1.7578999118e-3 1.7303265612e-3    57195
+#3815 T360 (open; same idle-48 bins as #3945)    1.7305784373e-3   57312..  80640 1.7500242253e-3 1.7580645258e-3 1.7306831569e-3    57262
+#3945 T360 (open)                                1.7306632365e-3   57312..  80640 1.7501109246e-3 1.7581520168e-3 1.7307679642e-3    57262

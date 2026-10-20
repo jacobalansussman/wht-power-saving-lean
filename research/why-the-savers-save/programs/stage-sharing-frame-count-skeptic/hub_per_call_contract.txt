@@ -1,0 +1,7 @@
+110:        assert center is None and copies==9 and adds==ADDS
+114:            assert val[i]==want
+152:            assert vals==before
+208:                owners.append([DATA+s*NB+bank,['bank',offset,width,initial[2*V+r]]])
+240:                  cover='O(I_%d/2,F_q) for admitted odd address primes q'%M,loop_order='Each recipe phase: replicas then all cover classes; finish every local invocation before the next.',
+3:OLD identification, real subspace test: fwd->rev 0, rev->fwd 0 of 12544
+5:NEW identification, real subspace test: 5824 pairs (diagonal 0)

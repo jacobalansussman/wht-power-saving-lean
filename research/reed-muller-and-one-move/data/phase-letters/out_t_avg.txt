@@ -1,0 +1,5 @@
+|Sp(4,2)| = 720  |P| = 48  frames 15
+abar_1 = 23/15  abar_2 = 47/30  (pairs: {1: None, 2: None} )
+(a) every p in P keeps Yhat: True
+(b) f(g) = |Sp| * abar_d for all 720 elements (distance counts {0: 48, 1: 288, 2: 384} ): True
+(c) f(t_e1) = 720 abar_1 = 1104 ; f(K) = 720 abar_2 = 1128 ; Theorem R in C[Sp(4,2)]: moves >= W * abar_2 / abar_1 = 47/46 W

@@ -1,0 +1,11 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+v-pair-market-rules (skeptic of d-pair-market), 13 Oct 2026. WORD = ../../bound-check/k-word/data/u8-native/local/CANONICAL-WORD.json.gz
+VP = ../../../wht33/fatlabels/venv/bin/python3 ; pm.py, a0_demand.json, u8_blocks.json copied from ../d-pair-market/
+  env OPTS=P,LL,LF,H FB=8 FACELOW=0 TL=60 DUMP=b6_sol.json VP -I pm_check.py 6   -> b6_check.json (32, status 0, 0 violated rows: model optimum is real)
+  python3 -I trace_canon.py WORD u8_blocks.json a0_demand.json 6                  -> trace_block6.txt (how U8 serves block 6's targets)
+  python3 -I helper_roles.py WORD u8_blocks.json                                  -> helper_roles.txt / .json (roles of the 504 helpers)
+Hub ledger cited: hub clone research/format-limits-corrected/scripts/d3_carrier_ledger.py (504 = 224 carriers + 168 face copies + 112 M copies; M copies = key hosts - 56 borrowed output pairs).

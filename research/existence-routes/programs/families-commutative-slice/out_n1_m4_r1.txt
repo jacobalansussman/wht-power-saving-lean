@@ -1,0 +1,6 @@
+m=4 r=1: W=4 M=15 min-weight flats=105 (odd 56, even 49)
+  restart 0: |res|^2 = 4.144e-02  max|res| = 8.40e-02  t = 34.0s
+  restart 1: |res|^2 = 3.791e-02  max|res| = 6.80e-02  t = 35.2s
+  restart 2: |res|^2 = 1.140e-05  max|res| = 1.61e-03  t = 35.2s
+  restart 3: |res|^2 = 4.513e-08  max|res| = 7.43e-05  t = 34.6s
+  restart 4: |res|^2 = 4.456e-02  max|res| = 5.42e-02  t = 31.5s

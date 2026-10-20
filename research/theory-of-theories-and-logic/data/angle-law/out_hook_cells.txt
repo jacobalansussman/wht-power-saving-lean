@@ -1,0 +1,44 @@
+(A) Theorem H, random unitaries
+  n=3 k=1: last phi=1.4696170471 pred=1.4696170471
+  n=4 k=1: last phi=1.7098445132 pred=1.7098445132
+  n=4 k=2: last phi=4.7402026764 pred=4.7402026764
+  n=5 k=2: last phi=10.1357496348 pred=10.1357496348
+  n=6 k=2: last phi=16.9230173031 pred=16.9230173031
+  n=6 k=3: last phi=23.7914522109 pred=23.7914522109
+  n=7 k=3: last phi=50.6602883191 pred=50.6602883191
+  n=8 k=2: last phi=36.5343231880 pred=36.5343231880
+  n=8 k=4: last phi=122.3134640874 pred=122.3134640874
+  max |phi - closed form| over all trials: 3.126388037344441e-13
+
+(B) full-depth hook ranks r_j(a) at block j (float SVD gap, and mod two primes)
+  primes: [1000037, 999961]
+  j=1 a=0: empty block (dimN=0)
+  j=1 a=1: block (2, 2), float rank 1 (smallest kept sv 1.000e+00, largest dropped 0.000e+00), mod-p ranks [1, 1]; phi 1.000000 (Thm H 1.000000)
+  j=1 a=2: empty block (dimN=2)
+  j=2 a=0: empty block (dimN=0)
+  j=2 a=1: block (12, 4), float rank 3 (smallest kept sv 1.000e+00, largest dropped 1.159e-16), mod-p ranks [3, 3]; phi 3.000000 (Thm H 3.000000)
+  j=2 a=2: block (12, 12), float rank 8 (smallest kept sv 8.660e-01, largest dropped 2.407e-16), mod-p ranks [8, 8]; phi 6.000000 (Thm H 6.000000)
+  j=2 a=3: block (4, 12), float rank 3 (smallest kept sv 1.000e+00, largest dropped 5.730e-17), mod-p ranks [3, 3]; phi 3.000000 (Thm H 3.000000)
+  j=2 a=4: empty block (dimN=4)
+  j=3 a=0: empty block (dimN=0)
+  j=3 a=1: block (56, 8), float rank 7 (smallest kept sv 1.000e+00, largest dropped 4.801e-16), mod-p ranks [7, 7]; phi 7.000000 (Thm H 7.000000)
+  j=3 a=2: block (168, 56), float rank 48 (smallest kept sv 9.354e-01, largest dropped 5.583e-16), mod-p ranks [48, 48]; phi 42.000000 (Thm H 42.000000)
+  j=3 a=3: block (280, 168), float rank 140 (smallest kept sv 7.071e-01, largest dropped 8.463e-16), mod-p ranks [140, 140]; phi 105.000000 (Thm H 105.000000)
+  j=3 a=4: block (280, 280), float rank 224 (smallest kept sv 3.536e-01, largest dropped 8.217e-16), mod-p ranks [224, 224]; phi 140.000000 (Thm H 140.000000)
+  j=3 a=5: block (168, 280), float rank 140 (smallest kept sv 7.071e-01, largest dropped 8.874e-16), mod-p ranks [140, 140]; phi 105.000000 (Thm H 105.000000)
+  j=3 a=6: block (56, 168), float rank 48 (smallest kept sv 9.354e-01, largest dropped 6.661e-16), mod-p ranks [48, 48]; phi 42.000000 (Thm H 42.000000)
+  j=3 a=7: block (8, 56), float rank 7 (smallest kept sv 1.000e+00, largest dropped 5.920e-16), mod-p ranks [7, 7]; phi 7.000000 (Thm H 7.000000)
+  j=3 a=8: empty block (dimN=8)
+
+(C) assembled profiles: (depth j, rank, phi) 
+  m=3 k=2: d1: rank 24 phi 24.000 s=1.000000, d2: rank 40 phi 36.000 s=0.900000, d3: rank 48 phi 42.000 s=0.875000
+  m=3 k=4: d1: rank 80 phi 80.000 s=1.000000, d2: rank 144 phi 120.000 s=0.833333, d3: rank 224 phi 140.000 s=0.625000
+  m=4 k=2: d1: rank 112 phi 112.000 s=1.000000, d2: rank 176 phi 168.000 s=0.954545, d3: rank 208 phi 196.000 s=0.942308
+  m=4 k=5: d1: rank 8008 phi 8008.000 s=1.000000, d2: rank 13772 phi 12012.000 s=0.872204, d3: rank 18060 phi 14014.000 s=0.775969
+  m=4 k=6: d1: rank 16016 phi 16016.000 s=1.000000, d2: rank 27984 phi 24024.000 s=0.858491, d3: rank 38064 phi 28028.000 s=0.736339
+  m=4 k=7: d1: rank 24024 phi 24024.000 s=1.000000, d2: rank 42372 phi 36036.000 s=0.850467, d3: rank 59078 phi 42042.000 s=0.711635
+  m=4 k=8: d1: rank 27456 phi 27456.000 s=1.000000, d2: rank 48576 phi 41184.000 s=0.847826, d3: rank 68320 phi 48048.000 s=0.703279
+  m=4 k=10: d1: rank 16016 phi 16016.000 s=1.000000, d2: rank 27984 phi 24024.000 s=0.858491, d3: rank 38064 phi 28028.000 s=0.736339
+
+block 4, k = 8: depth-3/depth-1 = 68320/27456 = 2.488345; needed > 2.5 i.e. rank_3 > 68640.0; slack per array 320.0, two arrays 640.0
+5 moves x 27456 = 137280; 2 x 68320 = 136640; slack 640

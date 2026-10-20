@@ -1,0 +1,17 @@
+VCP2 START Tue Oct 13 19:09:35 UTC 2026 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 status_lines=39
+ro test: touch: cannot touch '.vcp-rotest': Read-only file system
+read-only-ok
+mathlib git: d13f23b723b8a846827a245b89c10fc7d3f11612 https://github.com/leanprover-community/mathlib4.git
+=== STEP nobuild START Tue Oct 13 19:09:35 UTC 2026 cmd: /content/work/v-c-pack/ro.sh lake build --no-build Work.FourierC588.Main Work.FourierC588.UniformFourierChallenge Work.FourierC588Neg.UniformFourierChallenge Work.GCert.Data.C588Controls Work.FourierC588.Axioms
+=== STEP nobuild END rc=0 wall=363s maxrss_kb=919752 last: All targets up-to-date (9278 jobs).
+gate ok after 60s heavy=2 avail=41G
+=== STEP probe-main START Tue Oct 13 19:16:38 UTC 2026 cmd: /content/work/v-c-pack/ro.sh lake env lean /content/work/v-c-pack/ProbeMain.lean
+=== STEP probe-main END rc=0 wall=1081s maxrss_kb=6426308 last:     2 ^ k i * OAI.PowerSaving.hillsC588 (k i)
+gate ok after 0s heavy=0 avail=47G
+=== STEP probe-chal START Tue Oct 13 19:34:39 UTC 2026 cmd: /content/work/v-c-pack/ro.sh lake env lean /content/work/v-c-pack/ProbeChal.lean
+=== STEP probe-chal END rc=0 wall=103s maxrss_kb=6248752 last: 'OAI.PowerSaving.transform_mainC588' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+gate ok after 0s heavy=0 avail=45G
+=== STEP compare-pos START Tue Oct 13 19:36:22 UTC 2026 cmd: /content/work/v-c-pack/ro.sh lake env lean --run tools/Compare.lean Work.FourierC588.UniformFourierChallenge Work.FourierC588.Main OAI.PowerSaving.transform_mainC588 OAI.PowerSaving.convolution_mainC588
+=== STEP compare-pos END rc=0 wall=1036s maxrss_kb=14882924 last: RESULT: PASS
+gate ok after 0s heavy=2 avail=41G
+=== STEP compare-neg START Tue Oct 13 19:53:38 UTC 2026 cmd: /content/work/v-c-pack/ro.sh lake env lean --run tools/Compare.lean Work.FourierC588Neg.UniformFourierChallenge Work.FourierC588.Main OAI.PowerSaving.transform_mainC588 OAI.PowerSaving.convolution_mainC588

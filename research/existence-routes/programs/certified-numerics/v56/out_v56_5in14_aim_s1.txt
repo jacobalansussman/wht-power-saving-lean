@@ -1,0 +1,21 @@
+flags 2835, coset reps done (1.2s)
+B order 512, |B'| = 32  |B/B'| = 16
+abelianisation F_2^4
+the 56 (chi(2a) = -24): u in X checked exactly; (z2a, z2b) = (-27, -45) unique among the constituents (32s)
+orbit 28 part (dim 28): commutant of P_0 has dimension 1 (exact) (91s)
+orbit 7 part (dim 28): commutant of P_0 has dimension 2 (exact) (97s)
+  split: piece of dim 7 (97s)
+  split: piece of dim 21 (97s)
+P_0-irreducible pieces of V_56: [7, 21, 28] (97s)
+piece 0 (dim 7): commutant of the P_0 generators has dimension 1 (exact) (99s)
+piece 1 (dim 21): commutant of the P_0 generators has dimension 1 (exact) (100s)
+piece 2 (dim 28): commutant of the P_0 generators has dimension 1 (exact) (103s)
+exact: need per array (k) [7, 21, 28]  (h2) [6, 18, 18]  cap per move [4, 10, 10] ; targets ['k', 'k', 'k', 'k', 'k'] ; total need [35, 105, 140]  moves needed >= [8.75, 10.5, 14.0] (104s)
+needed subspaces to aim at (target, type): [('h2', 0), ('h2', 1), ('h2', 2), ('k', 0), ('k', 1)]  annihilator dims {('h2', 0): 43, ('k', 0): 42, ('h2', 2): 10, ('k', 1): 14, ('h2', 1): 17} (104s)
+aimed left vectors per move: {0: 4, 1: 9, 2: 10}  (104s)
+constraint system for k-arrays: 294 x 1274 (104s)
+free parameters per (move, k-array): 980 (107s)
+type 0: delivered rank 14 (capacity 14 x 4 = 56, total need 35); with the needed rows 35 -> missing 21 (114s)
+type 1: delivered rank 98 (capacity 14 x 10 = 140, total need 105); with the needed rows 119 -> missing 21 (115s)
+type 2: delivered rank 98 (capacity 14 x 10 = 140, total need 140); with the needed rows 140 -> missing 42 (116s)
+VERDICT: not closed by this draw

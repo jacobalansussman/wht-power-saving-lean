@@ -1,0 +1,53 @@
+{"problem":"dft","bound":"2466337/2000000000"}
+
+staged lean files: 351
+profile challenge: challenges/dft/UniformFourier233.lean  expected sha256 3a646acd3ac9cf6ff93e29cc363dbfea0c8953a2e1415f7965bd86e8b2ee62a3
+/content/work/bos-verifier/challenges/dft/UniformFourier233.lean: OK
+challenge bound 2466337 2000000000
+7f5c5c7fbab39b217c4f31e04a0734cd6f7a60c0db730f948139249824c03939  /content/work/bos/stage/VerifierChallenge.lean
+name = "Verifier"
+version = "0.1.0"
+[leanOptions]
+autoImplicit = false
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[[lean_lib]]
+name = "Submission"
+
+[[lean_lib]]
+name = "VerifierChallenge"
+
+[[lean_lib]]
+name = "VerifierAudit"
+{
+  "challenge_module": "VerifierChallenge",
+  "definition_names": [],
+  "enable_nanoda": false,
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "solution_module": "Submission",
+  "theorem_names": [
+    "Race.bound"
+  ]
+}{
+  "challenge_module": "VerifierChallenge",
+  "definition_names": [],
+  "enable_nanoda": true,
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "solution_module": "Submission",
+  "theorem_names": [
+    "Race.bound"
+  ]
+}7.7G	/content/work/bos/stage/.lake/packages
+PREP DONE
+EXIT 0

@@ -1,0 +1,14 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+v-pair-market-reprice, 13 Oct 2026 (skeptic of d-pair-market).  WORD = ../../bound-check/k-word/data/u8-native/local/CANONICAL-WORD.json.gz
+VP = ../../../wht33/fatlabels/venv/bin/python3.  clean/ = copy of d-pair-market's programs and data.
+  python3 -I ../../bound-check/m-anatomy/pricer.py --profile '{"1":848490,"2":112554,"3":148518,"4":53946,"5":23976,"8":2664,"48":11086}' --m 73 --W 33152 --deficit 11840   # control: exact
+  (cd clean) python3 -I u8_blocks.py WORD ; python3 -I u8_target_low.py WORD             # same partition / same low frames
+  (cd clean) env OPTS=P,LL,LF,H FB=8 FACELOW=0 TL=90 VP -I pm.py B  (B = 0, 6, 11) -> rerun/own_b*.json  (32, exact)
+  (cd clean) env OPTS=P,LL,LF,H FB=0 TL=90 VP -I pm.py 0 -> 36 ; env OPTS=P SCOPE=faces VP -I pm.py 0 -> 28
+  python3 -I probe/lift_join.py WORD clean/a0_demand.json clean/u8_blocks.json ../d-mcopy-code/mc_groups.json   -> probe/lift_join.out
+  python3 -I probe/face_chains.py WORD clean/a0_demand.json clean/u8_blocks.json   -> probe/face_chains.out
+  python3 -I probe/carry.py WORD clean/a0_demand.json clean/u8_blocks.json         -> probe/carry.out

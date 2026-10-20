@@ -1,0 +1,37 @@
+run               prefixes    kframe     crit0      dead modp-only      open
+anyb_CROSS2_s61        119         0        64        55         0         0
+anyb_G3A_s73            37         0        15        22         0         0
+anyb_G3C_s72            66         1         7        59         0         0
+anyb_G3S_s61            25        25        12        11         0         2
+anyb_O3D_s61            99         0        59        40         0         0
+anyb_O3F_s61           134         0       131         3         0         0
+anyb_O3M_s61            37        31        24        13         0         0
+anyb_O3S_s61            71         0         8        63         0         0
+anyb_O3Z_s73           149         0       146         3         0         0
+anyb_STG2_s71           28        27         0        27         0         1
+cov2_CROSS2             16         0         9         7         0         0
+cov2_G3A                 5         0         1         4         0         0
+cov2_G3C                 9         0         4         5         0         0
+cov2_G3S                 9         9         5         4         0         0
+cov2_O3D                15         0         9         6         0         0
+cov2_O3F                29         0        28         1         0         0
+cov2_O3M                15        13         6         9         0         0
+cov2_O3S                10         0         0        10         0         0
+cov2_O3Z                27         0        27         0         0         0
+cov2_STG2                9         9         0         9         0         0
+lemma2_SMO3             40         0        28        12         0         0
+try_CROSS2               6         0         4         2         0         0
+try_STG2                 2         2         0         1         0         1
+w1_O3D                  15         0         8         7         0         0
+w1_O3S                   5         0         2         3         0         0
+w2_G3A                   4         2         1         3         0         0
+w2_G3C                   2         0         1         1         0         0
+w2_O3D                  33         0        19        14         0         0
+w2_O3S                  12         0         0        12         0         0
+w3_CROSS2              102         0        62        40         0         0
+w3_O3F                  79         0        76         3         0         0
+w3_O3Z                  46         0        46         0         0         0
+w3_STG2                  6         6         0         5         0         1
+TOTAL                 1261       125       802       454         0         5
+open: [('anyb_G3S_s61', 11), ('anyb_G3S_s61', 22), ('anyb_STG2_s71', 18), ('try_STG2', 0), ('w3_STG2', 17)]
+modp only: []

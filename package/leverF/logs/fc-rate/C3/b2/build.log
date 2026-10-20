@@ -1,0 +1,157 @@
+ℹ [3092/3095] Replayed Work.BlockAccounting.Moment
+info: Work/BlockAccounting/Moment.lean:139:0: 'OAI.PowerSaving.BlockAccounting.term_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:140:0: 'OAI.PowerSaving.BlockAccounting.log_le_of_le_expsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:141:0: 'OAI.PowerSaving.BlockAccounting.moment_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:142:0: 'OAI.PowerSaving.BlockAccounting.mem_keys_of_histFn_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3093/3095] Replayed Work.BlockAccounting.Moment4
+info: Work/BlockAccounting/Moment4.lean:58:0: 'OAI.PowerSaving.BlockAccounting.term_le4' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3094/3095] Replayed Work.BlockAccounting.Sharp
+info: Work/BlockAccounting/Sharp.lean:74:0: 'OAI.PowerSaving.BlockAccounting.term_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Sharp.lean:75:0: 'OAI.PowerSaving.BlockAccounting.le_log_of_expbound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3095/3095] Built Work.Mixed.Rate3945F (32s)
+info: Work/Mixed/Rate3945F.lean:109:0: 'OAI.PowerSaving.MX.rate3945F_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Rate3945F.lean:110:0: 'OAI.PowerSaving.MX.rate3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3095 jobs).
+
+real	0m48.146s
+user	0m8.349s
+sys	0m5.355s
+ℹ [3092/3107] Replayed Work.BlockAccounting.Moment
+info: Work/BlockAccounting/Moment.lean:139:0: 'OAI.PowerSaving.BlockAccounting.term_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:140:0: 'OAI.PowerSaving.BlockAccounting.log_le_of_le_expsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:141:0: 'OAI.PowerSaving.BlockAccounting.moment_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:142:0: 'OAI.PowerSaving.BlockAccounting.mem_keys_of_histFn_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3093/3107] Replayed Work.BlockAccounting.Moment4
+info: Work/BlockAccounting/Moment4.lean:58:0: 'OAI.PowerSaving.BlockAccounting.term_le4' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3094/3107] Replayed Work.BlockAccounting.Sharp
+info: Work/BlockAccounting/Sharp.lean:74:0: 'OAI.PowerSaving.BlockAccounting.term_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Sharp.lean:75:0: 'OAI.PowerSaving.BlockAccounting.le_log_of_expbound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3095/3107] Replayed Work.Mixed.Rate3945F
+info: Work/Mixed/Rate3945F.lean:109:0: 'OAI.PowerSaving.MX.rate3945F_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Rate3945F.lean:110:0: 'OAI.PowerSaving.MX.rate3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3096/3107] Replayed Work.Mixed.RateMono
+info: Work/Mixed/RateMono.lean:90:0: 'OAI.PowerSaving.MX.twoTarget_fail_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3097/3107] Replayed Work.Mixed.Flow
+warning: Work/Mixed/Flow.lean:175:15: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.mem_filter, Finset.Nat.mem_antidiagonalTuple] at hb ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Work/Mixed/Flow.lean:178:15: This simp argument is unused:
+  Finset.mem_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.mem_filter, Finset.Nat.mem_antidiagonalTuple] at ha ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Work/Mixed/Flow.lean:205:8: `Finset.prod_le_prod'` has been deprecated: Use `Finset.prod_le_prod` instead
+warning: Work/Mixed/Flow.lean:259:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:275:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:275:20: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:293:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:293:30: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Mixed/Flow.lean:295:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:295:45: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:296:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:296:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Flow.lean:415:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+⚠ [3098/3107] Replayed Work.Mixed.Phi
+warning: Work/Mixed/Phi.lean:61:30: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3101/3107] Replayed Work.Mixed.LemmaA
+warning: Work/Mixed/LemmaA.lean:56:18: Variable name `hA` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hA
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3102/3107] Replayed Work.MixedCost.Bill
+warning: Work/MixedCost/Bill.lean:164:72: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:295:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Work/MixedCost/Bill.lean:314:65: Variable name `hlam` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hlam
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Work/MixedCost/Bill.lean:332:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:332:19: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:334:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:357:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:364:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:364:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:364:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:366:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Work/MixedCost/Bill.lean:518:42: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:519:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:529:42: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/MixedCost/Bill.lean:530:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/MixedCost/Bill.lean:526:31: Variable name `hn0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Work/MixedCost/Bill.lean:537:0: 'OAI.PowerSaving.MX.Rule.bill' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Bill.lean:538:0: 'OAI.PowerSaving.MX.Rule.kids_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Bill.lean:539:0: 'OAI.PowerSaving.MX.Rule.kids_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Bill.lean:540:0: 'OAI.PowerSaving.MX.Rule.allotM_jobRec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Bill.lean:541:0: 'OAI.PowerSaving.MX.Rule.allotM_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3104/3107] Replayed Work.Mixed.TwoTarget
+warning: Work/Mixed/TwoTarget.lean:49:58: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.cons_val_zero, Matrix.cons_val_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ℹ [3105/3107] Built Work.Mixed.R5Joint3945F (2.0s)
+info: Work/Mixed/R5Joint3945F.lean:77:0: 'OAI.PowerSaving.MX.sep3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/R5Joint3945F.lean:78:0: 'OAI.PowerSaving.MX.rk_bounds3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/R5Joint3945F.lean:79:0: 'OAI.PowerSaving.MX.rateQ3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/R5Joint3945F.lean:80:0: 'OAI.PowerSaving.MX.allotM3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/R5Joint3945F.lean:81:0: 'OAI.PowerSaving.MX.rateQ3945F'' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/R5Joint3945F.lean:82:0: 'OAI.PowerSaving.MX.allotM3945F'' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3106/3107] Built Work.Mixed.Hist3945F (2.0s)
+warning: Work/Mixed/Hist3945F.lean:56:92: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Hist3945F.lean:72:91: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Hist3945F.lean:72:103: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Hist3945F.lean:98:91: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Mixed/Hist3945F.lean:98:103: `if_neg` has been deprecated: Use `ite_eq_right` instead
+info: Work/Mixed/Hist3945F.lean:126:0: 'OAI.PowerSaving.MX.hbody3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Hist3945F.lean:127:0: 'OAI.PowerSaving.MX.hsplit3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Hist3945F.lean:128:0: 'OAI.PowerSaving.MX.hsplit3945F_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Hist3945F.lean:129:0: 'OAI.PowerSaving.MX.hcut3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Hist3945F.lean:130:0: 'OAI.PowerSaving.MX.mass3945F' depends on axioms: [propext]
+info: Work/Mixed/Hist3945F.lean:131:0: 'OAI.PowerSaving.MX.count3945F' depends on axioms: [propext]
+info: Work/Mixed/Hist3945F.lean:132:0: 'OAI.PowerSaving.MX.cut3945F_sep' does not depend on any axioms
+info: Work/Mixed/Hist3945F.lean:133:0: 'OAI.PowerSaving.MX.cut3945F_no48' depends on axioms: [propext]
+info: Work/Mixed/Hist3945F.lean:134:0: 'OAI.PowerSaving.MX.hbody3945F_sharp' depends on axioms: [propext]
+info: Work/Mixed/Hist3945F.lean:135:0: 'OAI.PowerSaving.MX.body3945F_ne_cut' depends on axioms: [propext]
+info: Work/Mixed/Hist3945F.lean:136:0: 'OAI.PowerSaving.MX.half_ne_full3945F' depends on axioms: [propext]
+ℹ [3107/3107] Built Work.Mixed.Rate3945FSharp (4.8s)
+info: Work/Mixed/Rate3945FSharp.lean:75:0: 'OAI.PowerSaving.MX.rate3945F_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Rate3945FSharp.lean:76:0: 'OAI.PowerSaving.MX.rate3945F_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3107 jobs).
+
+real	0m6.903s
+user	0m10.564s
+sys	0m4.052s

@@ -1,0 +1,56 @@
+symlinked 22 entries; real dirs: /content/work/v-c-wht/packed/olean/Work/WHTC588Q /content/work/v-c-wht/packed/olean/Work/WHTC588QNeg 
+=== START Tue Oct 13 19:05:48 UTC 2026 tree=/content/work/c-wht-q/lean/complex588 label=packed
+git HEAD: 52394849c7ecf3412d39b925d75fc7fdb98994d8  status:
+ M Work/FourierC588/ArbitraryLength.lean
+ M Work/FourierC588/Asymptotics.lean
+ M Work/FourierC588/ConvolutionProgram.lean
+ M Work/FourierC588/Goal.lean
+ M Work/FourierC588/Main.lean
+ M Work/FourierC588/Seam.lean
+ M Work/FourierC588/SectorAlgorithm.lean
+ M Work/FourierC588/SynchronizedAlgorithm.lean
+ M Work/FourierC588/TransformProgram.lean
+ M Work/FourierC588/UniformBounds.lean
+ M Work/FourierC588/UniformFourierChallenge.lean
+ M Work/FourierC588/WorkingCompiler.lean
+ M Work/FourierC588/WorkingPreparation.lean
+ M Work/FourierC588/WorkingTransform.lean
+ M Work/FourierC588Neg/UniformFourierChallenge.lean
+ M Work/GCert/Data/C588Controls.lean
+ M Work/GCert/Data/C588Glue401.lean
+ M Work/GCert/Data/Gen/C588Rows0.lean
+ M Work/GCert/Data/Gen/C588Rows1.lean
+ M Work/GCert/Data/Gen/C588Rows10.lean
+ M Work/GCert/Data/Gen/C588Rows11.lean
+ M Work/GCert/Data/Gen/C588Rows12.lean
+ M Work/GCert/Data/Gen/C588Rows13.lean
+ M Work/GCert/Data/Gen/C588Rows14.lean
+ M Work/GCert/Data/Gen/C588Rows15.lean
+ M Work/GCert/Data/Gen/C588Rows16.lean
+ M Work/GCert/Data/Gen/C588Rows17.lean
+ M Work/GCert/Data/Gen/C588Rows2.lean
+ M Work/GCert/Data/Gen/C588Rows3.lean
+ M Work/GCert/Data/Gen/C588Rows4.lean
+ M Work/GCert/Data/Gen/C588Rows5.lean
+ M Work/GCert/Data/Gen/C588Rows6.lean
+ M Work/GCert/Data/Gen/C588Rows7.lean
+ M Work/GCert/Data/Gen/C588Rows8.lean
+ M Work/GCert/Data/Gen/C588Rows9.lean
+ M Work/GCert/Data/Gen/C588Sched.lean
+ M Work/GCert/Data/InstC588.lean
+ M Work/GCert/Data/RateC588x.lean
+?? Work/BlockAccounting/Moment4.lean
+?? Work/WHTC588Q/
+?? Work/WHTC588QNeg/
+?? comparator/WHTC588Q-nanoda.json
+?? comparator/WHTC588Q.json
+?? comparator/WHTC588QNeg.json
+LEAN_PATH=/content/work/v-c-wht/packed/olean:/content/work/c-wht-q/lean/complex588/.lake/packages/Cli/.lake/build/lib/lean:/content/work/c-wht-q/lean/complex588/.lake/packages/batteries/.lake/build/lib/lean:/content/work/c-wht-q/lean/complex588/.lake/packages/Qq/.lake/build/lib/lean:/content/work/c-wht-q/lean/complex588/.lake/packages/aesop/.lake/build/lib/lean:/content/work/c-wht-q/lean/complex588/.lake/packages/proofwidgets/.lake/build/lib/lean:/content/work/c-wht-q/lean/complex588/.lake/packages/importGraph/.lake/build/lib/lean:/content/work/c-wht-q/lean/complex588/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/content/work/c-wht-q/lean/complex588/.lake/packages/plausible/.lake/build/lib/lean:/content/work/c-wht-q/lean/complex588/.lake/packages/mathlib/.lake/build/lib/lean:/content/work/c-wht-q/lean/complex588/.lake/build/lib/lean
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+68f855b8196428c03e087fc0d5b7397c7e2e2af3ab0cc3afe3bac9e8dc0287ec  Work/WHTC588Q/Axioms.lean
+1f8f88c59834fff043b430e2f55021d506c2bef4a5916ffd8ab7b4a688ce3b50  Work/WHTC588Q/Challenge.lean
+3b8f06c06e1dbf17b8c02cc136398224b2b76e200e7ee29c4a1394f60849a147  Work/WHTC588Q/Main.lean
+41a0e3d0dd884d1ff9327768655496f40ee51a953378160c974950c765724816  Work/WHTC588Q/Solution.lean
+f8a0f32cf431a08fae51fc9ce70d0193a53135c4af72f90f75bcc50055d9c506  Work/WHTC588QNeg/Challenge.lean
+e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  /content/work/ours/Compare.lean
+STOPPED by v-c-wht at Tue Oct 13 19:06:31 UTC 2026 (time box); packed fresh compile not run

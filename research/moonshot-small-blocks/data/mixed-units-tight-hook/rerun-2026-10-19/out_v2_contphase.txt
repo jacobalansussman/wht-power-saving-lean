@@ -1,0 +1,11 @@
+floats: dim E_R = 136 (gap 0.866), dim E_K = 56 (gap 0.354), dim N_D = 200 -> cap = 80, dem_R = 144, dem_K = 224
+min over the torus of ||pi_O rho(D b(q)) E_R||_F^2, per matching (smallest 8):
+   matching [(0, 3), (1, 2), (4, 7), (5, 6)]: local min 8.000000 (grid min 8.000000, residual norm 2.8284)
+   matching [(0, 2), (1, 3), (4, 6), (5, 7)]: local min 8.000000 (grid min 8.000000, residual norm 2.8284)
+   matching [(0, 3), (1, 2), (4, 5), (6, 7)]: local min 8.000000 (grid min 8.000000, residual norm 2.8284)
+   matching [(0, 2), (1, 3), (4, 5), (6, 7)]: local min 8.000000 (grid min 8.000000, residual norm 2.8284)
+   matching [(0, 3), (1, 2), (4, 6), (5, 7)]: local min 8.000000 (grid min 8.000000, residual norm 2.8284)
+   matching [(0, 2), (1, 3), (4, 7), (5, 6)]: local min 8.000000 (grid min 8.000000, residual norm 2.8284)
+   matching [(0, 1), (2, 3), (4, 6), (5, 7)]: local min 8.000000 (grid min 8.000000, residual norm 2.8284)
+   matching [(0, 1), (2, 3), (4, 7), (5, 6)]: local min 8.000000 (grid min 8.000000, residual norm 2.8284)
+overall smallest residual norm over all 105 matchings and all continuous phases (grid + local): 2.8284

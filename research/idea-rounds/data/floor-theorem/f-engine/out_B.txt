@@ -1,0 +1,4 @@
+plain (ranks 2,1 per array): f=0:right f=1:right f=2:right f=3:right | potential along the word [0, 6, 7, 13, 14] | sum of block weights 20 | needed 2*(8-1)=14 | steps breaking the lemma: 0
+sum trick (array 1 gets no block): f=0:right f=1:right f=2:right f=3:right | potential along the word [0, 0, 6, 7, 13, 14, 14] | sum of block weights 20 | needed 2*(8-1)=14 | steps breaking the lemma: 0
+one rank-2 block per array + free letters: f=0:right f=1:WRONG f=2:WRONG f=3:WRONG | potential along the word [0, 6, 6, 6, 12, 12, 12] | sum of block weights 12 | needed 2*(8-1)=14 | steps breaking the lemma: 0
+random words: 120 words, 2880 letters, potential rose at 626 letters, largest potential seen 16 (ceiling 3*56=168), letters breaking the lemma: 0

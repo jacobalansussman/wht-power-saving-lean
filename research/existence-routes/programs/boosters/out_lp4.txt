@@ -1,0 +1,10 @@
+[no frame families above block 3] register 3: 700 rows; boosters negative at 0/200
+[no frame families above block 3] register 4: 1004 rows; boosters negative at 0/200
+[no frame families above block 3] register 5: 443 rows; boosters negative at 200/200, from 0.005 to 0.9983
+[+ exact block-4 lift] register 3: 701 rows; boosters negative at 0/200
+[+ exact block-4 lift] register 4: 1005 rows; boosters negative at 0/200
+[+ exact block-4 lift] register 5: 443 rows; boosters negative at 200/200, from 0.005 to 0.9983
+[+ projections (argued)] register 3: 913 rows; boosters negative at 0/200
+[+ projections (argued)] register 4: 1158 rows; boosters negative at 0/200
+[+ projections (argued)] register 5: 556 rows; boosters negative at 0/200
+python3 -B lp4.py  20.29s user 0.66s system 86% cpu 24.251 total

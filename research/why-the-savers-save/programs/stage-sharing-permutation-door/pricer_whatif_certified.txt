@@ -1,0 +1,60 @@
+=== control #799 (certified)
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 12:11:38
+[heavy.sh] got slot heavy-2 12:13:56
+{
+ "profile": {
+  "1": 183457,
+  "2": 24336,
+  "3": 30961,
+  "4": 13968,
+  "5": 4032,
+  "8": 576,
+  "44": 1,
+  "48": 2396
+ },
+ "m": 73,
+ "W": 7168,
+ "rank_mass": 520704,
+ "deficit": 2560,
+ "calls": 259727,
+ "maxrank": 48,
+ "b": "1664400278850482327913/1000000000000000000000000",
+ "b_decimal": "0.001664400278850482327913",
+ "certified": true,
+ "surcharge": false,
+ "c": "0.001733427039589844234749",
+ "binding": "complex",
+ "kappa": "1661634653669567/1000000000000000000",
+ "kappa_decimal": "0.001661634653669567",
+ "control_b_matches_799": true,
+ "control_kappa_matches_799": true
+}
+=== W1 (certified): repaired door on the 8 stage-1 calls
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 12:13:57
+[heavy.sh] got slot heavy-3 12:18:43
+{
+ "profile": {
+  "1": 185249,
+  "2": 24336,
+  "3": 30961,
+  "4": 13968,
+  "5": 4032,
+  "8": 512,
+  "44": 1,
+  "48": 2396
+ },
+ "m": 73,
+ "W": 7168,
+ "rank_mass": 521984,
+ "deficit": 1280,
+ "calls": 261455,
+ "maxrank": 48,
+ "b": "829923094014971084509/1000000000000000000000000",
+ "b_decimal": "0.000829923094014971084509",
+ "certified": true,
+ "surcharge": false,
+ "c": "0.001733427039589844234749",
+ "binding": "complex",
+ "kappa": "16584697856541/20000000000000000",
+ "kappa_decimal": "0.00082923489282705"
+}

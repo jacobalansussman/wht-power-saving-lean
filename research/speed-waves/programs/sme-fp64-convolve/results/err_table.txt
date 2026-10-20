@@ -1,0 +1,50 @@
+f64  n=100000 M=    3 fc_sme   max 2.07e-16 median 0.00e+00   max|err|/max|y| 1.56e-16
+f64  n=100000 M=    3 numpy    max 2.07e-16 median 0.00e+00   max|err|/max|y| 1.56e-16
+f64  n=100000 M=    3 sp_oa    max 5.15e-16 median 5.99e-17   max|err|/max|y| 2.34e-16
+f64  n=100000 M=    3 sp_fft   max 5.70e-15 median 2.56e-16   max|err|/max|y| 7.91e-16
+f64  n=100000 M=    3 fc_neon  max 2.07e-16 median 0.00e+00   max|err|/max|y| 1.56e-16
+f64  n=100000 M=    3 vdsp     max 2.07e-16 median 0.00e+00   max|err|/max|y| 1.56e-16
+f64  n=100000 M=   33 fc_sme   max 2.61e-16 median 2.16e-17   max|err|/max|y| 2.18e-16
+f64  n=100000 M=   33 numpy    max 1.42e-16 median 1.96e-17   max|err|/max|y| 1.74e-16
+f64  n=100000 M=   33 sp_oa    max 3.10e-16 median 6.05e-17   max|err|/max|y| 3.49e-16
+f64  n=100000 M=   33 sp_fft   max 5.44e-16 median 9.55e-17   max|err|/max|y| 6.10e-16
+f64  n=100000 M=   33 fc_neon  max 2.61e-16 median 2.16e-17   max|err|/max|y| 2.18e-16
+f64  n=100000 M=   33 vdsp     max 2.83e-16 median 1.60e-17   max|err|/max|y| 3.49e-16
+f64  n=100000 M=  257 fc_sme   max 1.65e-16 median 2.44e-17   max|err|/max|y| 6.99e-16
+f64  n=100000 M=  257 numpy    max 5.53e-17 median 1.31e-17   max|err|/max|y| 2.33e-16
+f64  n=100000 M=  257 sp_oa    max 2.09e-16 median 3.14e-17   max|err|/max|y| 6.41e-16
+f64  n=100000 M=  257 sp_fft   max 1.68e-16 median 3.31e-17   max|err|/max|y| 5.46e-16
+f64  n=100000 M=  257 fc_neon  max 1.65e-16 median 2.44e-17   max|err|/max|y| 6.99e-16
+f64  n=100000 M=  257 vdsp     max 8.43e-17 median 1.33e-17   max|err|/max|y| 3.35e-16
+f64  n=100000 M= 1025 fc_sme   max 1.62e-16 median 2.14e-17   max|err|/max|y| 1.13e-15
+f64  n=100000 M= 1025 numpy    max 2.87e-17 median 4.47e-18   max|err|/max|y| 2.05e-16
+f64  n=100000 M= 1025 sp_oa    max 9.71e-17 median 1.43e-17   max|err|/max|y| 4.11e-16
+f64  n=100000 M= 1025 sp_fft   max 1.41e-16 median 1.77e-17   max|err|/max|y| 6.67e-16
+f64  n=100000 M= 1025 fc_neon  max 1.62e-16 median 2.14e-17   max|err|/max|y| 1.13e-15
+f64  n=100000 M= 1025 vdsp     max 9.28e-17 median 1.42e-17   max|err|/max|y| 6.67e-16
+f64  n= 20000 M= 4097 fc_sme   max 2.06e-16 median 1.92e-17   max|err|/max|y| 2.67e-15
+f64  n= 20000 M= 4097 numpy    max 1.49e-17 median 3.41e-18   max|err|/max|y| 2.32e-16
+f64  n= 20000 M= 4097 sp_oa    max 5.77e-17 median 7.02e-18   max|err|/max|y| 5.43e-16
+f64  n= 20000 M= 4097 sp_fft   max 5.77e-17 median 7.02e-18   max|err|/max|y| 5.43e-16
+f64  n= 20000 M= 4097 fc_neon  max 2.06e-16 median 1.92e-17   max|err|/max|y| 2.67e-15
+f64  n= 20000 M= 4097 vdsp     max 8.10e-17 median 1.35e-17   max|err|/max|y| 1.36e-15
+c128 n=100000 M=    3 fc_sme   max 1.66e-16 median 3.30e-17   max|err|/max|y| 1.22e-16
+c128 n=100000 M=    3 numpy    max 1.78e-16 median 3.28e-17   max|err|/max|y| 1.22e-16
+c128 n=100000 M=    3 sp_oa    max 2.82e-16 median 7.56e-17   max|err|/max|y| 2.57e-16
+c128 n=100000 M=    3 sp_fft   max 9.26e-16 median 2.57e-16   max|err|/max|y| 5.28e-16
+c128 n=100000 M=   33 fc_sme   max 1.74e-16 median 3.75e-17   max|err|/max|y| 3.58e-16
+c128 n=100000 M=   33 numpy    max 8.54e-17 median 2.27e-17   max|err|/max|y| 2.00e-16
+c128 n=100000 M=   33 sp_oa    max 2.00e-16 median 5.70e-17   max|err|/max|y| 4.86e-16
+c128 n=100000 M=   33 sp_fft   max 2.09e-16 median 8.00e-17   max|err|/max|y| 4.53e-16
+c128 n=100000 M=  257 fc_sme   max 2.01e-16 median 3.33e-17   max|err|/max|y| 1.20e-15
+c128 n=100000 M=  257 numpy    max 5.55e-17 median 1.62e-17   max|err|/max|y| 3.01e-16
+c128 n=100000 M=  257 sp_oa    max 1.95e-16 median 3.40e-17   max|err|/max|y| 6.75e-16
+c128 n=100000 M=  257 sp_fft   max 1.51e-16 median 3.24e-17   max|err|/max|y| 5.98e-16
+c128 n=100000 M= 1025 fc_sme   max 1.60e-16 median 3.47e-17   max|err|/max|y| 1.92e-15
+c128 n=100000 M= 1025 numpy    max 5.87e-17 median 1.50e-17   max|err|/max|y| 7.27e-16
+c128 n=100000 M= 1025 sp_oa    max 5.90e-17 median 1.51e-17   max|err|/max|y| 5.82e-16
+c128 n=100000 M= 1025 sp_fft   max 6.41e-17 median 1.84e-17   max|err|/max|y| 5.51e-16
+c128 n= 20000 M= 4097 fc_sme   max 2.01e-16 median 3.47e-17   max|err|/max|y| 3.11e-15
+c128 n= 20000 M= 4097 numpy    max 4.53e-17 median 1.51e-17   max|err|/max|y| 8.31e-16
+c128 n= 20000 M= 4097 sp_oa    max 3.34e-17 median 9.06e-18   max|err|/max|y| 4.60e-16
+c128 n= 20000 M= 4097 sp_fft   max 3.34e-17 median 9.06e-18   max|err|/max|y| 4.60e-16

@@ -1,0 +1,3 @@
+#!/bin/sh
+export LEAN_NUM_THREADS=1
+exec /content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake "$@"

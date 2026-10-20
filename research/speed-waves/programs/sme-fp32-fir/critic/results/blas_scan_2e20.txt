@@ -1,0 +1,243 @@
+[timing lock] waiting for timing lock 00:40:48
+[timing lock] got lock 00:44:22; load: { 48.17 46.54 34.27 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=16 n=2^20 NT=4 NTS=2 BLAS_B=16 J=2 (useful MAC fraction 0.500) BLAS_CH=16384 ols_N=1024 pf_N=512 VPOS=0
+## alt L=16 n=2^20 same NT=4 B=16  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  sme_toeplitz                       0.0796
+rep  0  blas_toep                          0.2301
+rep  1  blas_toep                          0.2298
+rep  1  sme_toeplitz                       0.0800
+rep  2  sme_toeplitz                       0.0817
+rep  2  blas_toep                          0.2368
+rep  3  blas_toep                          0.2294
+rep  3  sme_toeplitz                       0.0790
+rep  4  sme_toeplitz                       0.0812
+rep  4  blas_toep                          0.2305
+rep  5  blas_toep                          0.2302
+rep  5  sme_toeplitz                       0.0806
+rep  6  sme_toeplitz                       0.0814
+rep  6  blas_toep                          0.2271
+rep  7  blas_toep                          0.2271
+rep  7  sme_toeplitz                       0.0796
+rep  8  sme_toeplitz                       0.0826
+rep  8  blas_toep                          0.2312
+RESULT alt L=16 n=2^20 same NT=4 B=16           sme_toeplitz                 best     0.0790  median     0.0806  ns/output  (calls/rep 2656)
+RESULT alt L=16 n=2^20 same NT=4 B=16           blas_toep                    best     0.2271  median     0.2301  ns/output  (calls/rep 911)
+GMACS alt L=16 n=2^20 same NT=4 B=16           sme_toeplitz   best   0.0790 ns/out =   202.4 GMAC/s (median   0.0806)
+GMACS alt L=16 n=2^20 same NT=4 B=16           blas_toep      best   0.2271 ns/out =    70.5 GMAC/s (median   0.2301)
+[timing lock] waiting for timing lock 00:44:27
+[timing lock] got lock 00:46:15; load: { 47.62 47.00 35.94 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=16 n=2^20 NT=4 NTS=2 BLAS_B=32 J=2 (useful MAC fraction 0.250) BLAS_CH=16384 ols_N=1024 pf_N=512 VPOS=0
+## alt L=16 n=2^20 same NT=4 B=32  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  sme_toeplitz                       0.0802
+rep  0  blas_toep                          0.1925
+rep  1  blas_toep                          0.1921
+rep  1  sme_toeplitz                       0.0805
+rep  2  sme_toeplitz                       0.0827
+rep  2  blas_toep                          0.1939
+rep  3  blas_toep                          0.2009
+rep  3  sme_toeplitz                       0.0833
+rep  4  sme_toeplitz                       0.0835
+rep  4  blas_toep                          0.1953
+rep  5  blas_toep                          0.1934
+rep  5  sme_toeplitz                       0.0793
+rep  6  sme_toeplitz                       0.0829
+rep  6  blas_toep                          0.1941
+rep  7  blas_toep                          0.1941
+rep  7  sme_toeplitz                       0.0789
+rep  8  sme_toeplitz                       0.0832
+rep  8  blas_toep                          0.1926
+RESULT alt L=16 n=2^20 same NT=4 B=32           sme_toeplitz                 best     0.0789  median     0.0827  ns/output  (calls/rep 2663)
+RESULT alt L=16 n=2^20 same NT=4 B=32           blas_toep                    best     0.1921  median     0.1939  ns/output  (calls/rep 1097)
+GMACS alt L=16 n=2^20 same NT=4 B=32           sme_toeplitz   best   0.0789 ns/out =   202.7 GMAC/s (median   0.0827)
+GMACS alt L=16 n=2^20 same NT=4 B=32           blas_toep      best   0.1921 ns/out =    83.3 GMAC/s (median   0.1939)
+[timing lock] waiting for timing lock 00:46:20
+[timing lock] got lock 00:47:19; load: { 45.38 46.40 36.52 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=16 n=2^20 NT=4 NTS=2 BLAS_B=128 J=2 (useful MAC fraction 0.062) BLAS_CH=16384 ols_N=1024 pf_N=512 VPOS=0
+## alt L=16 n=2^20 same NT=4 B=128  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  sme_toeplitz                       0.0790
+rep  0  blas_toep                          0.4171
+rep  1  blas_toep                          0.4097
+rep  1  sme_toeplitz                       0.0798
+rep  2  sme_toeplitz                       0.0820
+rep  2  blas_toep                          0.4056
+rep  3  blas_toep                          0.4107
+rep  3  sme_toeplitz                       0.0798
+rep  4  sme_toeplitz                       0.0825
+rep  4  blas_toep                          0.4079
+rep  5  blas_toep                          0.4264
+rep  5  sme_toeplitz                       0.0791
+rep  6  sme_toeplitz                       0.0805
+rep  6  blas_toep                          0.4137
+rep  7  blas_toep                          0.4221
+rep  7  sme_toeplitz                       0.0781
+rep  8  sme_toeplitz                       0.0825
+rep  8  blas_toep                          0.4106
+RESULT alt L=16 n=2^20 same NT=4 B=128          sme_toeplitz                 best     0.0781  median     0.0798  ns/output  (calls/rep 2719)
+RESULT alt L=16 n=2^20 same NT=4 B=128          blas_toep                    best     0.4056  median     0.4107  ns/output  (calls/rep 518)
+GMACS alt L=16 n=2^20 same NT=4 B=128          sme_toeplitz   best   0.0781 ns/out =   204.9 GMAC/s (median   0.0798)
+GMACS alt L=16 n=2^20 same NT=4 B=128          blas_toep      best   0.4056 ns/out =    39.5 GMAC/s (median   0.4107)
+[timing lock] waiting for timing lock 00:47:23
+[timing lock] got lock 00:47:48; load: { 46.08 46.46 36.89 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=64 n=2^20 NT=4 NTS=2 BLAS_B=16 J=5 (useful MAC fraction 0.800) BLAS_CH=16384 ols_N=1024 pf_N=512 VPOS=0
+## alt L=64 n=2^20 same NT=4 B=16  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  sme_toeplitz                       0.1124
+rep  0  blas_toep                          0.6100
+rep  1  blas_toep                          0.6062
+rep  1  sme_toeplitz                       0.1120
+rep  2  sme_toeplitz                       0.1122
+rep  2  blas_toep                          0.6010
+rep  3  blas_toep                          0.6094
+rep  3  sme_toeplitz                       0.1129
+rep  4  sme_toeplitz                       0.1132
+rep  4  blas_toep                          0.6059
+rep  5  blas_toep                          0.6197
+rep  5  sme_toeplitz                       0.1125
+rep  6  sme_toeplitz                       0.1122
+rep  6  blas_toep                          0.5977
+rep  7  blas_toep                          0.6003
+rep  7  sme_toeplitz                       0.1121
+rep  8  sme_toeplitz                       0.1119
+rep  8  blas_toep                          0.6006
+RESULT alt L=64 n=2^20 same NT=4 B=16           sme_toeplitz                 best     0.1119  median     0.1122  ns/output  (calls/rep 1872)
+RESULT alt L=64 n=2^20 same NT=4 B=16           blas_toep                    best     0.5977  median     0.6059  ns/output  (calls/rep 349)
+GMACS alt L=64 n=2^20 same NT=4 B=16           sme_toeplitz   best   0.1119 ns/out =   572.0 GMAC/s (median   0.1122)
+GMACS alt L=64 n=2^20 same NT=4 B=16           blas_toep      best   0.5977 ns/out =   107.1 GMAC/s (median   0.6059)
+[timing lock] waiting for timing lock 00:47:53
+[timing lock] got lock 00:47:53; load: { 46.40 46.51 36.96 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=64 n=2^20 NT=4 NTS=2 BLAS_B=32 J=3 (useful MAC fraction 0.667) BLAS_CH=16384 ols_N=1024 pf_N=512 VPOS=0
+## alt L=64 n=2^20 same NT=4 B=32  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  sme_toeplitz                       0.1120
+rep  0  blas_toep                          0.3149
+rep  1  blas_toep                          0.3050
+rep  1  sme_toeplitz                       0.1122
+rep  2  sme_toeplitz                       0.1167
+rep  2  blas_toep                          0.3049
+rep  3  blas_toep                          0.2998
+rep  3  sme_toeplitz                       0.1131
+rep  4  sme_toeplitz                       0.1151
+rep  4  blas_toep                          0.3070
+rep  5  blas_toep                          0.3001
+rep  5  sme_toeplitz                       0.1130
+rep  6  sme_toeplitz                       0.1153
+rep  6  blas_toep                          0.3122
+rep  7  blas_toep                          0.3134
+rep  7  sme_toeplitz                       0.1185
+rep  8  sme_toeplitz                       0.1131
+rep  8  blas_toep                          0.3040
+RESULT alt L=64 n=2^20 same NT=4 B=32           sme_toeplitz                 best     0.1120  median     0.1131  ns/output  (calls/rep 1873)
+RESULT alt L=64 n=2^20 same NT=4 B=32           blas_toep                    best     0.2998  median     0.3050  ns/output  (calls/rep 712)
+GMACS alt L=64 n=2^20 same NT=4 B=32           sme_toeplitz   best   0.1120 ns/out =   571.3 GMAC/s (median   0.1131)
+GMACS alt L=64 n=2^20 same NT=4 B=32           blas_toep      best   0.2998 ns/out =   213.5 GMAC/s (median   0.3050)
+[timing lock] waiting for timing lock 00:47:58
+[timing lock] got lock 00:47:58; load: { 46.76 46.59 37.04 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=64 n=2^20 NT=4 NTS=2 BLAS_B=128 J=2 (useful MAC fraction 0.250) BLAS_CH=16384 ols_N=1024 pf_N=512 VPOS=0
+## alt L=64 n=2^20 same NT=4 B=128  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  sme_toeplitz                       0.1137
+rep  0  blas_toep                          0.4020
+rep  1  blas_toep                          0.4061
+rep  1  sme_toeplitz                       0.1172
+rep  2  sme_toeplitz                       0.1152
+rep  2  blas_toep                          0.4067
+rep  3  blas_toep                          0.4378
+rep  3  sme_toeplitz                       0.1147
+rep  4  sme_toeplitz                       0.1158
+rep  4  blas_toep                          0.4437
+rep  5  blas_toep                          0.4574
+rep  5  sme_toeplitz                       0.1140
+rep  6  sme_toeplitz                       0.1154
+rep  6  blas_toep                          0.4260
+rep  7  blas_toep                          0.4376
+rep  7  sme_toeplitz                       0.1167
+rep  8  sme_toeplitz                       0.1155
+rep  8  blas_toep                          0.4128
+RESULT alt L=64 n=2^20 same NT=4 B=128          sme_toeplitz                 best     0.1137  median     0.1154  ns/output  (calls/rep 1836)
+RESULT alt L=64 n=2^20 same NT=4 B=128          blas_toep                    best     0.4020  median     0.4260  ns/output  (calls/rep 503)
+GMACS alt L=64 n=2^20 same NT=4 B=128          sme_toeplitz   best   0.1137 ns/out =   563.0 GMAC/s (median   0.1154)
+GMACS alt L=64 n=2^20 same NT=4 B=128          blas_toep      best   0.4020 ns/out =   159.2 GMAC/s (median   0.4260)
+[timing lock] waiting for timing lock 00:48:02
+[timing lock] got lock 00:48:02; load: { 47.26 46.69 37.14 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=256 n=2^20 NT=4 NTS=2 BLAS_B=16 J=17 (useful MAC fraction 0.941) BLAS_CH=16384 ols_N=2048 pf_N=1024 VPOS=0
+## alt L=256 n=2^20 same NT=4 B=16  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  sme_toeplitz                       0.3251
+rep  0  blas_toep                          1.9866
+rep  1  blas_toep                          2.0089
+rep  1  sme_toeplitz                       0.3241
+rep  2  sme_toeplitz                       0.3274
+rep  2  blas_toep                          1.9627
+rep  3  blas_toep                          1.9924
+rep  3  sme_toeplitz                       0.3180
+rep  4  sme_toeplitz                       0.3288
+rep  4  blas_toep                          2.0034
+rep  5  blas_toep                          2.0158
+rep  5  sme_toeplitz                       0.3209
+rep  6  sme_toeplitz                       0.3268
+rep  6  blas_toep                          1.9836
+rep  7  blas_toep                          1.9731
+rep  7  sme_toeplitz                       0.3160
+rep  8  sme_toeplitz                       0.3256
+rep  8  blas_toep                          1.9828
+RESULT alt L=256 n=2^20 same NT=4 B=16          sme_toeplitz                 best     0.3160  median     0.3251  ns/output  (calls/rep 653)
+RESULT alt L=256 n=2^20 same NT=4 B=16          blas_toep                    best     1.9627  median     1.9866  ns/output  (calls/rep 106)
+GMACS alt L=256 n=2^20 same NT=4 B=16          sme_toeplitz   best   0.3160 ns/out =   810.0 GMAC/s (median   0.3251)
+GMACS alt L=256 n=2^20 same NT=4 B=16          blas_toep      best   1.9627 ns/out =   130.4 GMAC/s (median   1.9866)
+[timing lock] waiting for timing lock 00:48:07
+[timing lock] got lock 00:48:07; load: { 47.48 46.75 37.21 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=256 n=2^20 NT=4 NTS=2 BLAS_B=32 J=9 (useful MAC fraction 0.889) BLAS_CH=16384 ols_N=2048 pf_N=1024 VPOS=0
+## alt L=256 n=2^20 same NT=4 B=32  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  sme_toeplitz                       0.3216
+rep  0  blas_toep                          0.9535
+rep  1  blas_toep                          0.9445
+rep  1  sme_toeplitz                       0.3162
+rep  2  sme_toeplitz                       0.3135
+rep  2  blas_toep                          0.9287
+rep  3  blas_toep                          0.9342
+rep  3  sme_toeplitz                       0.3179
+rep  4  sme_toeplitz                       0.3306
+rep  4  blas_toep                          0.9675
+rep  5  blas_toep                          0.9394
+rep  5  sme_toeplitz                       0.3163
+rep  6  sme_toeplitz                       0.3189
+rep  6  blas_toep                          0.9506
+rep  7  blas_toep                          0.9635
+rep  7  sme_toeplitz                       0.3284
+rep  8  sme_toeplitz                       0.3272
+rep  8  blas_toep                          0.9362
+RESULT alt L=256 n=2^20 same NT=4 B=32          sme_toeplitz                 best     0.3135  median     0.3189  ns/output  (calls/rep 658)
+RESULT alt L=256 n=2^20 same NT=4 B=32          blas_toep                    best     0.9287  median     0.9445  ns/output  (calls/rep 227)
+GMACS alt L=256 n=2^20 same NT=4 B=32          sme_toeplitz   best   0.3135 ns/out =   816.5 GMAC/s (median   0.3189)
+GMACS alt L=256 n=2^20 same NT=4 B=32          blas_toep      best   0.9287 ns/out =   275.6 GMAC/s (median   0.9445)
+[timing lock] waiting for timing lock 00:48:11
+[timing lock] got lock 00:48:11; load: { 47.52 46.77 37.28 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=256 n=2^20 NT=4 NTS=2 BLAS_B=128 J=3 (useful MAC fraction 0.667) BLAS_CH=16384 ols_N=2048 pf_N=1024 VPOS=0
+## alt L=256 n=2^20 same NT=4 B=128  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  sme_toeplitz                       0.3190
+rep  0  blas_toep                          0.6668
+rep  1  blas_toep                          0.6843
+rep  1  sme_toeplitz                       0.3259
+rep  2  sme_toeplitz                       0.3269
+rep  2  blas_toep                          0.6388
+rep  3  blas_toep                          0.6410
+rep  3  sme_toeplitz                       0.3194
+rep  4  sme_toeplitz                       0.3269
+rep  4  blas_toep                          0.6472
+rep  5  blas_toep                          0.6495
+rep  5  sme_toeplitz                       0.3278
+rep  6  sme_toeplitz                       0.3278
+rep  6  blas_toep                          0.6561
+rep  7  blas_toep                          0.6351
+rep  7  sme_toeplitz                       0.3187
+rep  8  sme_toeplitz                       0.3326
+rep  8  blas_toep                          0.6427
+RESULT alt L=256 n=2^20 same NT=4 B=128         sme_toeplitz                 best     0.3187  median     0.3269  ns/output  (calls/rep 666)
+RESULT alt L=256 n=2^20 same NT=4 B=128         blas_toep                    best     0.6351  median     0.6472  ns/output  (calls/rep 301)
+GMACS alt L=256 n=2^20 same NT=4 B=128         sme_toeplitz   best   0.3187 ns/out =   803.3 GMAC/s (median   0.3269)
+GMACS alt L=256 n=2^20 same NT=4 B=128         blas_toep      best   0.6351 ns/out =   403.1 GMAC/s (median   0.6472)

@@ -1,0 +1,7 @@
+case                                         n  d    s  h(a) bound  primes >= 2^30  primes >= 2^62
+toy: one alpha, one beta (3-row core)        2  4    3    1.59e+04             763             369
+plain chart, joint 2 arrays (cal_plain4F)    7  4    4    4.35e+08        2.09e+07        1.01e+07
+border chart 1_0_1_0, one array              5  4    8    1.09e+07        5.25e+05        2.54e+05
+border chart 0_0_1_1 (61 x 13 + 2 alphas)   15  4   62    2.56e+14        1.23e+13        5.97e+12
+relaxation hit (12 alphas, 9 betas)         21  5   40    3.85e+20        1.85e+19        8.96e+18
+core 133 x 37 + 3 alphas                    40  4  134    5.58e+30        2.68e+29         1.3e+29

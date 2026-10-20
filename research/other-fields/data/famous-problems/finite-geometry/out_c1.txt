@@ -1,0 +1,8 @@
+labels 120 (weight 3: 84 , weight 7: 36 )
+knowing degrees [56]
+dim E = 8: True ; singular nonzero in E: 135 (O+(8,2) has 135, O-(8,2) has 119)
+labels^1 == all nonsingular points of E: True 120
+know <=> images non-orthogonal: True
+knowing graph (v,k,lambda,mu): (120, {56}, {28}, {24})
+E8 roots 240
+E8 line graph, adjacency = non-orthogonal (v,k,lambda,mu): (120, {56}, {28}, {24})

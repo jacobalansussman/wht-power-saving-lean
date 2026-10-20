@@ -1,0 +1,30 @@
+<verify>/checks/wht43/bound-check/v-host-1/proj/Work/Bank401/Adapt.lean:83:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<verify>/checks/wht43/bound-check/v-host-1/proj/Work/Bank401/Adapt.lean:83:18: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<verify>/checks/wht43/bound-check/v-host-1/proj/Work/Bank401/Adapt.lean:89:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<verify>/checks/wht43/bound-check/v-host-1/proj/Work/Bank401/Adapt.lean:89:18: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+'OAI.PowerSaving.B401.pk_cperm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.B401.gauged_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.B401.gauged_Wn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.B401.bank_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.B401.bank_adapt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.B401.bank_pad' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.B401.bank_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+        3.14 real         1.74 user         1.74 sys
+          6027821056  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              448648  page reclaims
+                  44  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+               11346  involuntary context switches
+         39943982575  instructions retired
+         13682927527  cycles elapsed
+           923024464  peak memory footprint
+EXIT=0 TIME=3s HEAVY=0 CMD=/usr/bin/env LEAN_PATH=<verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean:<verify>/.lake/build/lib/lean:<verify>/.lake/packages/mathlib/.lake/build/lib/lean:<verify>/.lake/packages/batteries/.lake/build/lib/lean:<verify>/.lake/packages/Qq/.lake/build/lib/lean:<verify>/.lake/packages/aesop/.lake/build/lib/lean:<verify>/.lake/packages/proofwidgets/.lake/build/lib/lean:<verify>/.lake/packages/importGraph/.lake/build/lib/lean:<verify>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<verify>/.lake/packages/plausible/.lake/build/lib/lean:<verify>/.lake/packages/Cli/.lake/build/lib/lean LEAN_NUM_THREADS=2 /usr/bin/time -l lean -DautoImplicit=false -R <verify>/checks/wht43/bound-check/v-host-1/proj -o <verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean/Work/Bank401/Adapt.olean -i <verify>/checks/wht43/bound-check/v-host-1/proj/.lake/build/lib/lean/Work/Bank401/Adapt.ilean <verify>/checks/wht43/bound-check/v-host-1/proj/Work/Bank401/Adapt.lean

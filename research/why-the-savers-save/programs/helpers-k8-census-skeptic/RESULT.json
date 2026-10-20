@@ -1,0 +1,8 @@
+{"label":"v-k8-0","target":"k8-pairs","refuted":true,
+ "control_1042":"reproduced exactly: b 418747253984418082117/250000000000000000000000, kappa 0.001672188119205421",
+ "k8_census_mine":{"helpers":480,"inblock_per_block":{"nonK":28,"K":24},"inblock_total":368,"no_inblock_frame_Mcopies":112},
+ "u8_census_mine":{"helpers":504,"inblock_total":392,"Mcopies":112},
+ "pm_model_nonK_blocks_1_6_13":{"FB8_all_needs":32,"FB0_all_needs":36,"faces_only_P":28,"faces_only_allopts":28,"note":"all status 0, dual bound equal"},
+ "mcopy_reads_with_reader_own_block_sources":{"k8":0,"u8":0},
+ "like_for_like":{"inblock_model":448,"inblock_k8":368,"delta":"+80 (model worse)","with_Mcopies":"448+112 = 560 vs 480"},
+ "hub_now":{"main":"1b59b62 (19:31Z)","selected":"#1094 rohanarun 0.001672660197076918","1090":"MERGED","580_581":"claimed in open PR #1148 (tomdif, 19:08Z) with 572/573/574/575/582/583"}}

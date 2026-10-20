@@ -1,0 +1,710 @@
+{
+ "label": "T74 control",
+ "inputs": {
+  "gauge44": {
+   "gcert": "data/t74ctl/gauge44.gcert1b.json.gz",
+   "gcert_sha256": "3dd245e81edac391a143361c43e42023bd0b288a4bf2a91352913bdfabc55476",
+   "R": 480,
+   "h": 9,
+   "block_hist": {
+    "1": 2348,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82,
+    "8": 8
+   },
+   "max_block_rank": 8,
+   "res_hist": {
+    "4": 44,
+    "5": 44,
+    "7": 38,
+    "8": 114,
+    "9": 240
+   },
+   "res_sum": 3734,
+   "exits": 78
+  },
+  "extra": {
+   "gcert": "data/t74ctl/extra.gcert1b.json.gz",
+   "gcert_sha256": "6aa87f1513dab2581f9e8a211d935f44e2d585512426346fdd1182a9457a03a7",
+   "R": 480,
+   "h": 9,
+   "block_hist": {
+    "1": 2340,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82,
+    "8": 8
+   },
+   "max_block_rank": 8,
+   "res_hist": {
+    "4": 40,
+    "5": 48,
+    "7": 38,
+    "8": 114,
+    "9": 240
+   },
+   "res_sum": 3738,
+   "exits": 78
+  },
+  "lean": {
+   "HStage.lean": "fb59e998e31b7fb5501ff79f98072dd09f8283f51e65f5c6b7d36a5365ab577a",
+   "HCert.lean": "68c0bee5f71a75869f5fabfa98ce5c5f22c2a09bfecf837b5a2688eefbd70a23",
+   "HostK.lean": "595a84d2ca7c46e8f14c2481d602a0d1c07d6c918547d9fc65f8f041ab5b1eeb"
+  },
+  "Gates.lean": {
+   "path": "<Shea's tree>/lean/complex588/Work/Bridge401/Gates.lean",
+   "sha256": "077bcf0362a06cdf222477ae8fb68a1c556aa740119df50520efaa6705715d3f"
+  },
+  "ORDER.json": "b98452454a86bb6ea61e65bf2079d534bd8487ce6b288d04f41528c566da203d",
+  "DISPATCH.json": "ff91d189be8ad2d083ef74e4d411e67d39c5fb0d15278dff126df39ae12baa0a",
+  "PLAN.json.gz": "bb18714735a2e239fc59d2d92ac3716e32c5046be6b708add33662fe2aa73aff",
+  "TEMPLATE.json.gz": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+  "FILL": {
+   "path": "data/t74ctl/FILL.json.gz",
+   "sha256": "3bdcbb685677bebb0c4e16c58888e4c7e31b145d525f589e63ed07906aed7085"
+  },
+  "PROFILE": {
+   "path": "data/t74ctl/PROFILE.json",
+   "sha256": "a77801295540df04326c701c3b1ed9198cd17343db4a2f6070932b664b8961c4"
+  }
+ },
+ "our_network": {
+  "gates": {
+   "gateA2": {
+    "p": "pABQ_2",
+    "k": "kAQ_2",
+    "written": [
+     1,
+     4
+    ],
+    "read": [
+     2,
+     3
+    ],
+    "coeff": {
+     "1": 1,
+     "4": -1
+    }
+   },
+   "gateB2": {
+    "p": "pABQ_2",
+    "k": "kBQ_2",
+    "written": [
+     1,
+     4
+    ],
+    "read": [
+     2,
+     3
+    ],
+    "coeff": {
+     "1": -1,
+     "4": 1
+    }
+   },
+   "gateA3": {
+    "p": "pABQ_3",
+    "k": "kAQ_3",
+    "written": [
+     3,
+     6
+    ],
+    "read": [
+     4,
+     5
+    ],
+    "coeff": {
+     "3": 1,
+     "6": -1
+    }
+   },
+   "gateB3": {
+    "p": "pABQ_3",
+    "k": "kBQ_3",
+    "written": [
+     3,
+     6
+    ],
+    "read": [
+     4,
+     5
+    ],
+    "coeff": {
+     "3": -1,
+     "6": 1
+    }
+   },
+   "gateA4": {
+    "p": "pABQ_4",
+    "k": "kAQ_4",
+    "written": [
+     5,
+     8
+    ],
+    "read": [
+     6,
+     7
+    ],
+    "coeff": {
+     "5": 1,
+     "8": -1
+    }
+   },
+   "gateB4": {
+    "p": "pABQ_4",
+    "k": "kBQ_4",
+    "written": [
+     5,
+     8
+    ],
+    "read": [
+     6,
+     7
+    ],
+    "coeff": {
+     "5": -1,
+     "8": 1
+    }
+   },
+   "gateC4": {
+    "p": "pCQ_4",
+    "k": "kCQ_4",
+    "written": [
+     6,
+     7
+    ],
+    "read": [
+     5,
+     8
+    ],
+    "coeff": {
+     "6": -1,
+     "7": 1
+    }
+   },
+   "gateC3": {
+    "p": "pCQ_3",
+    "k": "kCQ_3",
+    "written": [
+     4,
+     5
+    ],
+    "read": [
+     3,
+     6
+    ],
+    "coeff": {
+     "4": -1,
+     "5": 1
+    }
+   },
+   "gateC2": {
+    "p": "pCQ_2",
+    "k": "kCQ_2",
+    "written": [
+     2,
+     3
+    ],
+    "read": [
+     1,
+     4
+    ],
+    "coeff": {
+     "2": -1,
+     "3": 1
+    }
+   }
+  },
+  "run_order": [
+   "adapt0",
+   "stage0",
+   "adapt1",
+   "stage1",
+   "climbA2",
+   "gateA2",
+   "adapt2",
+   "stage2",
+   "climbB2",
+   "gateB2",
+   "adapt3",
+   "stage3",
+   "climbA3",
+   "gateA3",
+   "adapt4",
+   "stage4",
+   "climbB3",
+   "gateB3",
+   "adapt5",
+   "stage5",
+   "climbA4",
+   "gateA4",
+   "adapt6",
+   "stage6",
+   "climbB4",
+   "gateB4",
+   "adapt7",
+   "stage7",
+   "adapt8",
+   "stage8",
+   "fin",
+   "gateC4",
+   "gateC3",
+   "gateC2"
+  ],
+  "kinds": {
+   "A2": {
+    "climb_step": "climbA2",
+    "comps": [
+     3,
+     4
+    ],
+    "pair": 2,
+    "rank": 16
+   },
+   "B2": {
+    "climb_step": "climbB2",
+    "comps": [
+     3,
+     4
+    ],
+    "pair": 2,
+    "rank": 8
+   },
+   "A3": {
+    "climb_step": "climbA3",
+    "comps": [
+     5,
+     6
+    ],
+    "pair": 3,
+    "rank": 32
+   },
+   "B3": {
+    "climb_step": "climbB3",
+    "comps": [
+     5,
+     6
+    ],
+    "pair": 3,
+    "rank": 8
+   },
+   "A4": {
+    "climb_step": "climbA4",
+    "comps": [
+     7,
+     8
+    ],
+    "pair": 4,
+    "rank": 48
+   },
+   "B4": {
+    "climb_step": "climbB4",
+    "comps": [
+     7,
+     8
+    ],
+    "pair": 4,
+    "rank": 8
+   },
+   "F1": {
+    "climb_step": "fin",
+    "comps": [
+     1,
+     2
+    ],
+    "pair": 1,
+    "rank": 48
+   },
+   "F2": {
+    "climb_step": "fin",
+    "comps": [
+     3,
+     4
+    ],
+    "pair": 2,
+    "rank": 32
+   },
+   "F3": {
+    "climb_step": "fin",
+    "comps": [
+     5,
+     6
+    ],
+    "pair": 3,
+    "rank": 16
+   }
+  }
+ },
+ "child_to_kind": {
+  "0": {
+   "kind": "A2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 16
+  },
+  "1": {
+   "kind": "B2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 8
+  },
+  "2": {
+   "kind": "A2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 16
+  },
+  "3": {
+   "kind": "B2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 8
+  },
+  "4": {
+   "kind": "A3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 32
+  },
+  "5": {
+   "kind": "B3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 8
+  },
+  "6": {
+   "kind": "A3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 32
+  },
+  "7": {
+   "kind": "B3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 8
+  },
+  "8": {
+   "kind": "A4",
+   "hub_pair": 3,
+   "side": 0,
+   "rank": 48
+  },
+  "9": {
+   "kind": "B4",
+   "hub_pair": 3,
+   "side": 0,
+   "rank": 8
+  },
+  "10": {
+   "kind": "A4",
+   "hub_pair": 3,
+   "side": 1,
+   "rank": 48
+  },
+  "11": {
+   "kind": "B4",
+   "hub_pair": 3,
+   "side": 1,
+   "rank": 8
+  },
+  "12": {
+   "kind": "F1",
+   "hub_pair": 0,
+   "side": 0,
+   "rank": 48
+  },
+  "13": {
+   "kind": "F1",
+   "hub_pair": 0,
+   "side": 1,
+   "rank": 48
+  },
+  "14": {
+   "kind": "F2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 32
+  },
+  "15": {
+   "kind": "F2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 32
+  },
+  "16": {
+   "kind": "F3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 16
+  },
+  "17": {
+   "kind": "F3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 16
+  }
+ },
+ "fill": {
+  "rows": 319680,
+  "roles_per_call": 480,
+  "calls": 666,
+  "replicas": 74
+ },
+ "G0": {
+  "label": "our network, T74 control order",
+  "roles": 319680,
+  "cross_replica_roles": 296300,
+  "violations": {},
+  "loads_over_rank": 0,
+  "one_use_per_call_and_role": true,
+  "remainders": 22748,
+  "remainder_profile": {
+   "48": 22748
+  },
+  "classes": [
+   {
+    "hub_child": 8,
+    "kind": "A4",
+    "side": "x",
+    "remainder": 48,
+    "cls": "HEAD-literal",
+    "count": 6150
+   },
+   {
+    "hub_child": 10,
+    "kind": "A4",
+    "side": "y",
+    "remainder": 48,
+    "cls": "HEAD-literal",
+    "count": 4860
+   },
+   {
+    "hub_child": 12,
+    "kind": "F1",
+    "side": "x",
+    "remainder": 48,
+    "cls": "neither",
+    "count": 6672
+   },
+   {
+    "hub_child": 13,
+    "kind": "F1",
+    "side": "y",
+    "remainder": 48,
+    "cls": "neither",
+    "count": 5066
+   }
+  ],
+  "totals_by_class": {
+   "HEAD-literal": 11010,
+   "neither": 11738
+  },
+  "rank48_by_class": {
+   "HEAD-literal": 11010,
+   "neither": 11738
+  },
+  "heads_rank48_unhosted": 11010,
+  "examples": {
+   "8:48:HEAD-literal": {
+    "replica": 0,
+    "port": 0,
+    "comp": 7,
+    "climb_pos": 482,
+    "first_nonidentity_before": [],
+    "first_nonfree_after": [
+     [
+      "483",
+      "gateA4:gate_read",
+      "False"
+     ],
+     [
+      "557",
+      "hosted:B4",
+      "False"
+     ],
+     [
+      "688",
+      "adapt6:adapter:B4",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "fin:free_final",
+     "brec401:relabel"
+    ]
+   },
+   "10:48:HEAD-literal": {
+    "replica": 0,
+    "port": 0,
+    "comp": 8,
+    "climb_pos": 482,
+    "first_nonidentity_before": [],
+    "first_nonfree_after": [
+     [
+      "483",
+      "gateA4:gate_write",
+      "False"
+     ],
+     [
+      "557",
+      "hosted:B4",
+      "False"
+     ],
+     [
+      "688",
+      "adapt6:adapter:B4",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "fin:free_final",
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "12:48:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 1,
+    "climb_pos": 1194,
+    "first_nonidentity_before": [
+     [
+      "1",
+      "stage0:local",
+      "False"
+     ],
+     [
+      "21",
+      "stage1:local",
+      "False"
+     ],
+     [
+      "23",
+      "gateA2:gate_write",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "1197",
+      "gateC2:gate_read",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "13:48:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 2,
+    "climb_pos": 1194,
+    "first_nonidentity_before": [
+     [
+      "1",
+      "stage0:local",
+      "False"
+     ],
+     [
+      "21",
+      "stage1:local",
+      "False"
+     ],
+     [
+      "23",
+      "gateA2:gate_read",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "1197",
+      "gateC2:gate_write",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   }
+  }
+ },
+ "control_gateA4_before_climbA4": {
+  "totals_by_class": {
+   "neither": 22748
+  },
+  "rank48_by_class": {
+   "neither": 22748
+  },
+  "violations": {
+   "outside_our_window": 33396
+  }
+ },
+ "control_without_gateC2": {
+  "totals_by_class": {
+   "HEAD-literal": 11010,
+   "TAIL-literal": 11738
+  },
+  "rank48_by_class": {
+   "HEAD-literal": 11010,
+   "TAIL-literal": 11738
+  },
+  "classes": [
+   {
+    "hub_child": 12,
+    "kind": "F1",
+    "side": "x",
+    "remainder": 48,
+    "cls": "TAIL-literal",
+    "count": 6672
+   },
+   {
+    "hub_child": 13,
+    "kind": "F1",
+    "side": "y",
+    "remainder": 48,
+    "cls": "TAIL-literal",
+    "count": 5066
+   }
+  ]
+ },
+ "call_blocks": {
+  "calls_per_provider": {
+   "extra": 417,
+   "gauge44": 249
+  },
+  "max_rank_over_both_words": 8,
+  "all_call_blocks_rank_le_8": true,
+  "global_profile": {
+   "1": 1560432,
+   "2": 336336,
+   "3": 278724,
+   "4": 84912,
+   "5": 54612,
+   "8": 5328,
+   "48": 22748
+  },
+  "hub_profile": {
+   "1": 1560432,
+   "2": 336336,
+   "3": 278724,
+   "4": 84912,
+   "5": 54612,
+   "8": 5328,
+   "48": 22748
+  },
+  "global_profile_equals_hub": true,
+  "rank_mass": 4816512
+ },
+ "ok": true
+}

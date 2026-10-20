@@ -1,0 +1,252 @@
+{
+  "format": "certificate-package/1 (as community/*/result.json of jacobalansussman/wht-power-saving-lean)",
+  "name": "leverF",
+  "suffix": "L3945F",
+  "title": "The community's #3945 circuit with every head kept (80,640 literal heads after re-allocating its hosted roles) and the recursion lever (full cut: each head removed by all 48 of its axes, target 25; the other 57,312 idle rank-48 blocks split 24 + 24), on the mixed-target recursion",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "numerator": 17806935,
+  "negative_numerator": 17806936,
+  "saving": "1.7806935e-3",
+  "exponent": "1 - 17806935/10^10",
+  "exponents": {
+    "statement": "1 - 17806935/10^10",
+    "seam_alpha": "1 - 1780693501/10^12",
+    "rate_point": "1 - 1780693502/10^12",
+    "mixed_root": "1.78069354058e-3"
+  },
+  "mode": "add",
+  "requires": [
+    "u8x0hq"
+  ],
+  "same_fill_as": "leverB",
+  "lakefile_add": [],
+  "tree_change": "none: every new file is under Work/ (lean_lib Work) or comparator/",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainL3945F",
+    "OAI.PowerSaving.convolution_mainL3945F"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainL3945F",
+    "OAI.PowerSaving.convolution_mainL3945F",
+    "OAI.PowerSaving.RAM.hillsL3945F_program",
+    "OAI.PowerSaving.MX.L3945F.engine",
+    "OAI.PowerSaving.MX.L3945F.EngineStmt.lift",
+    "OAI.PowerSaving.SeamL3945F.engine_L3945F",
+    "OAI.PowerSaving.RAM.envelope_program_geL3945F",
+    "OAI.PowerSaving.SeamL3945F.alphaL3945F_lt_target",
+    "OAI.PowerSaving.Skies.alpha_thetaL3945F"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierL3945F.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierL3945FNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierL3945F.Main",
+  "axioms_file": "Work/FourierL3945F/Axioms.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentL3945F",
+  "build_targets": [
+    "Work.L3945F.Stmt",
+    "Work.L3945F.Engine",
+    "Work.FourierL3945F.Main",
+    "Work.FourierL3945F.UniformFourierChallenge",
+    "Work.FourierL3945FNeg.UniformFourierChallenge",
+    "Work.FourierL3945F.Axioms"
+  ],
+  "lean_controls": [
+    {
+      "name": "heads-and-residuals-one-step-too-far",
+      "file": "controls/Heads3945HNeg.lean",
+      "expect": "compiles",
+      "what": "Lean's kernel decides that the host table does not have 80,641 heads and that not every residual is at least 6"
+    },
+    {
+      "name": "rate-fact-one-grid-step-higher",
+      "file": "controls/Rate3945FSharpCtl.lean",
+      "expect": "compiles",
+      "what": "the full cut's rate fact is false at 1 - 17806936/10^10 and at every larger saving (rate3945F_sharp, rate3945F_fails)"
+    },
+    {
+      "name": "full-cut-profile-identity-negatives",
+      "file": "controls/Ctl3945F.lean",
+      "expect": "compiles",
+      "what": "the full-cut profile identity is false with #3945's published head count (57,312), with 80,641 heads, and without the split"
+    },
+    {
+      "name": "80641-heads",
+      "file": "controls/NegHeads.lean",
+      "expect": "fails",
+      "what": "claims 80,641 heads; the kernel refutes it"
+    },
+    {
+      "name": "the-published-fills-head-count",
+      "file": "controls/NegHeadsOld.lean",
+      "expect": "fails",
+      "what": "claims #3945's own head count, 57,312, on this fill's table; the kernel refutes it"
+    },
+    {
+      "name": "width-bound-6",
+      "file": "controls/NegRes.lean",
+      "expect": "fails",
+      "what": "claims every residual of provider 0 is at least 6; the kernel refutes it (the smallest width is 5)"
+    },
+    {
+      "name": "one-chunk-count-too-high",
+      "file": "controls/NegGlob.lean",
+      "expect": "fails",
+      "what": "claims one host-table chunk count one higher; the kernel refutes it"
+    }
+  ],
+  "comparator": {
+    "positive": "overlay/comparator/fourier-l3945f.json",
+    "negative": "overlay/comparator/fourier-l3945f-neg.json"
+  },
+  "circuit": {
+    "community_pr": "#3945",
+    "head": "91f81d131252db704f945891da1ea54e29d46b8b (read at that head while open; merged on 20 October 2026 as an archive intake with the same files, not selected)",
+    "words_order_dispatch_template_plan": "#3945's, unchanged",
+    "fill": {
+      "FILL.json.gz": "9c06677d66b04436b02ec8d88036327bdc8fb12e6fd4f71a1b9c7e915c10c2d3",
+      "old-FILL.json.gz (the #3815 stage)": "0e61fce286ba9ebb76e4518efe8fb94aeba0a08fe1cbbb8ba21f53af5cfad9e9",
+      "rows": 1321920,
+      "made_by": "#3815's hall_lp.py with a head bonus on the empty child-8/10 pattern, an exact MIP on the generated columns (HiGHS), #3815's build_fill.py (--distinct 40), #3945's offset step (fill/made-by/)",
+      "hub_checks": "#3945 owner/verify.py PASS_LITERAL_ENLARGED_OWNER_FILL (plain and -O); PR3734 owner_audit.py PASS; #3945's complete admission replay PASS_TERMINAL_WIDTH5_COMPLETE_CONDITIONAL_RELEASE, 119/119 strict controls rejected"
+    },
+    "replicas": 360,
+    "calls": 3240,
+    "arrays_W": 322560,
+    "roles": 1321920,
+    "paid_profile_uniform": {
+      "1": 8041680,
+      "2": 2306880,
+      "3": 729648,
+      "4": 353160,
+      "5": 69120,
+      "8": 25920,
+      "48": 137952
+    },
+    "heads": 80640,
+    "heads_by_child": {
+      "8": 40320,
+      "10": 40320
+    },
+    "other_rank48": 57312,
+    "paid_profile_full_cut": {
+      "1": 8041680,
+      "2": 2306880,
+      "3": 729648,
+      "4": 353160,
+      "5": 69120,
+      "8": 25920,
+      "24": 114624
+    },
+    "targets_full_cut": {
+      "73": 241920,
+      "25": 80640
+    },
+    "max_paid_rank": 24,
+    "smallest_target": 25,
+    "half_cut_same_fill": {
+      "package": "leverB",
+      "saving": "1.7581520e-3"
+    },
+    "community_figure_b": "1.7306632e-3",
+    "published_fill_heads": 57312
+  },
+  "modules": 410,
+  "checks": {
+    "build (19 Oct 2026, Colab C3; first built by fc-engine)": {
+      "status": "pass",
+      "log": "logs/fc-final/C3/final.out",
+      "note": "a copy of the tree in which fc-engine built every file (logs/fc-engine/); the 567 + 20 overlay files installed identical (0 new); lake build 9633 jobs, all up to date"
+    },
+    "build from the release overlay (Colab C5)": {
+      "status": "pass",
+      "log": "logs/fc-final/C5/identC5.out",
+      "note": "Ryan Shea's tree with package/u8x0hq (prebuilt) plus this package's overlay/ (412 files, hash-checked), on a second machine: lake build 9633 jobs completed, 1 h 08 min; the final theorems' axioms are propext, Classical.choice, Quot.sound (logs/fc-final/C5/identC5/axioms-fresh.log)"
+    },
+    "axioms": {
+      "status": "pass",
+      "log": "logs/fc-final/C3/l3945f/axioms.log",
+      "note": "9 theorems (the two final theorems and the chain's seven named steps; logs also l3945f/axioms-extra.log): propext, Classical.choice, Quot.sound"
+    },
+    "source greps": {
+      "status": "pass",
+      "log": "logs/fc-final/C3/l3945f/forbidden-grep.txt",
+      "note": "583 files of the closure that are not Ryan Shea's: 0 lines with sorry or admit (OpenAI's two challenge statements aside), 0 with axiom, native_decide, unsafe, implemented_by or extern (sorry-grep.txt)"
+    },
+    "statement files derived from OpenAI's": {
+      "status": "pass",
+      "log": "logs/fc-final/C3/l3945f/derived-FourierL3945F.lean",
+      "note": "both challenge files byte-identical to the derivation (17806935 and 17806936)"
+    },
+    "Compare.lean positive": {
+      "status": "pass",
+      "log": "logs/fc-final/C3/l3945f/compare-pos.log",
+      "note": "RESULT: PASS, 56 s, 16.1 GB"
+    },
+    "Compare.lean negative": {
+      "status": "pass",
+      "log": "logs/fc-final/C3/l3945f/compare-neg.log",
+      "note": "RESULT: FAIL on decimalExponentL3945F (one grid step higher, 1 - 17806936/10^10)"
+    },
+    "official comparator positive (stand-in sandbox)": {
+      "status": "pass",
+      "log": "logs/fc-final/C3/L3945F-cmp.out",
+      "note": "nanoda and Lean's kernel accept; 1 h 06 min, 14.9 GB (l3945f/cmp/l3945f-pos.log)"
+    },
+    "official comparator negative": {
+      "status": "pass",
+      "log": "logs/fc-final/C3/L3945F-cmp.out",
+      "note": "rejected: Const does not match (decimalExponentL3945F); 4 min"
+    },
+    "leaderboard verifier re-created offline (c92b9b6), merged stage (C5)": {
+      "status": "pass",
+      "log": "logs/fc-final/C5/bosM.out",
+      "note": "the import closure has 707 local modules, over the pull-request limit of 500; merged to 448 modules (450 files with Submission.lean and manifest.json), static check passed; Lean check from source 2 h 07 min (10.0 GB), axiom audit standard (3 min), nanoda 1 h 28 min; the bound one grid step higher is rejected"
+    },
+    "merged stage = built tree, constant by constant": {
+      "status": "pass",
+      "log": "logs/fc-final/C5/identC5.out",
+      "note": "h-bos's fast identity check on C5: the 29,540 non-auxiliary constants of the closure are identical in the merged stage and in the tree built from the release overlay, and so are the statements and proof terms of all 12,330 theorems (the adapter module aside)"
+    },
+    "leaderboard verifier re-created offline, unmerged stage (C2, sources only)": {
+      "status": "pass",
+      "log": "logs/fc-final/C2/bosU.out",
+      "note": "the 707-module form for the verifier's issue route (no file limit), compiled from sources only: Lean check 2 h 03 min, audit standard, nanoda 1 h 25 min; the bound one grid step higher is rejected"
+    },
+    "release controls": {
+      "status": "pass",
+      "log": "logs/fc-final/C3/ctl.out",
+      "note": "Heads3945HNeg, Rate3945FSharpCtl and Ctl3945F compile with their axioms; NegHeads, NegHeadsOld, NegRes, NegGlob fail (Lean's decide refutes each)"
+    },
+    "side modules (controls/side/)": {
+      "status": "pass",
+      "log": "logs/fc-final/C3/side/build.log",
+      "note": "fc-rate's R5Joint3945F (the rate fact against the recursion's rule, separation 24 < 25), Hist3945F (unit to cut profile) and FullCut3945F (the full-cut word from the head lemma) built in the same tree; standard axioms (the build log prints each theorem's axioms)"
+    },
+    "generators re-run (generators/REGENERATE.sh)": {
+      "status": "pass",
+      "log": "logs/regenerate/regenerate.out",
+      "note": "192 generated overlay files made again byte-identical; each generator refuses one step too far"
+    },
+    "price of the full cut, independent routes": {
+      "status": "pass",
+      "log": "logs/fc-gate/GATE.md",
+      "note": "the full cut prices at 1.7806935e-3 by four routes (the lever pricer; exact rational interval arithmetic; the Lean data generator's scan; the community moment engine's enclosures); one grid step higher is refused by three of them; the profile was recounted from the fill (fill/checks/full-cut/, logs/fc-gate/GATE.md)"
+    },
+    "the community's complete admission replay of #3945 on this fill": {
+      "status": "pass",
+      "log": "logs/ah-gate/frB/fullB.out",
+      "note": "PASS_TERMINAL_WIDTH5_COMPLETE_CONDITIONAL_RELEASE with fresh native runs; 119 of 119 strict controls rejected (logs/ah-gate/GATE.md; the same fill as package/leverB)"
+    }
+  }
+}

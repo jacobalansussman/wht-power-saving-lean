@@ -1,0 +1,18 @@
+maxes [ "2.U4(2).2", "Isoclinic(2.A8.2)", "2.(2^5:S6)", "2xU3(3).2", "2.2^6.L3(2)", "2^2.[2^6].(S3xS3)", "2.(S3xS6)", "L2(8):3x2" ]
+faithful degrees [ 8, 48, 64, 64, 112, 112, 120, 168, 280, 448, 512, 560, 720 ]
+preimage of P0: 2.2^6.L3(2)
+its order 21504Syntax warning: Unbound global variable in cover.g:15 Print("
+FAITH ", chi[1], " : max mult ", Maximum(dec), " pieces ", Sum(dec), \" dims ", Concatenation(List([1..Length(dec)], i -> ListWithIdenticalEntries(d\ec[i], Irr(s)[i][1]))), "\n"); \ ^\^^
+FAITH 8 : max mult 1 pieces 1 dims [ 8 ]
+FAITH 48 : max mult 1 pieces 1 dims [ 48 ]
+FAITH 64 : max mult 1 pieces 1 dims [ 64 ]
+FAITH 64 : max mult 1 pieces 1 dims [ 64 ]
+FAITH 112 : max mult 1 pieces 2 dims [ 48, 64 ]
+FAITH 112 : max mult 1 pieces 3 dims [ 8, 48, 56 ]
+FAITH 120 : max mult 2 pieces 3 dims [ 8, 56, 56 ]
+FAITH 168 : max mult 1 pieces 3 dims [ 48, 56, 64 ]
+FAITH 280 : max mult 2 pieces 7 dims [ 8, 24, 24, 48, 56, 56, 64 ]
+FAITH 448 : max mult 3 pieces 9 dims [ 24, 24, 48, 48, 56, 56, 64, 64, 64 ]
+FAITH 512 : max mult 4 pieces 10 dims [ 24, 24, 48, 48, 56, 56, 64, 64, 64, 64 ]
+FAITH 560 : max mult 3 pieces 12 dims [ 8, 24, 24, 48, 48, 48, 56, 56, 56, 64, 64, 64 ]
+FAITH 720 : max mult 4 pieces 15 dims [ 24, 24, 24, 24, 48, 48, 48, 56, 56, 56, 56, 64, 64, 64, 64 ]

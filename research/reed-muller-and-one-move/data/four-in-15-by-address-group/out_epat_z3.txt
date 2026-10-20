@@ -1,0 +1,9 @@
+H=singer:5 |H|=3 W=4 M=15: 3876 compositions
+(3, 3, 4, 1, 4) ('pass', 3, 'tight forms; min matching margin', (0, 10))
+(3, 3, 4, 2, 3) ('pass', 0, 'tight forms; min matching margin', (0, 10))
+(3, 4, 3, 1, 4) ('pass', 1, 'tight forms; min matching margin', (0, 10))
+(3, 4, 4, 1, 3) ('pass', 3, 'tight forms; min matching margin', (0, 10))
+(4, 3, 3, 1, 4) ('pass', 1, 'tight forms; min matching margin', (0, 10))
+(4, 3, 4, 1, 3) ('pass', 3, 'tight forms; min matching margin', (0, 10))
+(4, 4, 3, 1, 3) ('pass', 1, 'tight forms; min matching margin', (0, 10))
+pass deletion + E-pattern: 7 of 3876

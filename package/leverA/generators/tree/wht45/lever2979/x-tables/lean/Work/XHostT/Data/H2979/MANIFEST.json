@@ -1,0 +1,251 @@
+{
+ "src": "H2979-hosttab.json.gz",
+ "sha256": "4c6720e49ac262a2947bf387a70de039deef5cbdc16cb56afb5cd0d83f657ec6",
+ "T": 74,
+ "NC": 666,
+ "R": 408,
+ "NH": 149184,
+ "NK": 666,
+ "kinds_per_part": 25,
+ "rem_hist": {
+  "0": 97000,
+  "1": 17310,
+  "3": 4956,
+  "5": 1728,
+  "48": 28190
+ },
+ "res_sums": {
+  "0": 3283,
+  "1": 3283
+ },
+ "glob_chunks": 6,
+ "glob_kinds_per_chunk": 111,
+ "parts": [
+  {
+   "module": "P0",
+   "kinds": [
+    0,
+    25
+   ],
+   "records": 8254
+  },
+  {
+   "module": "P1",
+   "kinds": [
+    25,
+    50
+   ],
+   "records": 10756
+  },
+  {
+   "module": "P2",
+   "kinds": [
+    50,
+    75
+   ],
+   "records": 9765
+  },
+  {
+   "module": "P3",
+   "kinds": [
+    75,
+    100
+   ],
+   "records": 9741
+  },
+  {
+   "module": "P4",
+   "kinds": [
+    100,
+    125
+   ],
+   "records": 9170
+  },
+  {
+   "module": "P5",
+   "kinds": [
+    125,
+    150
+   ],
+   "records": 9847
+  },
+  {
+   "module": "P6",
+   "kinds": [
+    150,
+    175
+   ],
+   "records": 10696
+  },
+  {
+   "module": "P7",
+   "kinds": [
+    175,
+    200
+   ],
+   "records": 8960
+  },
+  {
+   "module": "P8",
+   "kinds": [
+    200,
+    225
+   ],
+   "records": 11094
+  },
+  {
+   "module": "P9",
+   "kinds": [
+    225,
+    250
+   ],
+   "records": 8741
+  },
+  {
+   "module": "P10",
+   "kinds": [
+    250,
+    275
+   ],
+   "records": 11741
+  },
+  {
+   "module": "P11",
+   "kinds": [
+    275,
+    300
+   ],
+   "records": 11931
+  },
+  {
+   "module": "P12",
+   "kinds": [
+    300,
+    325
+   ],
+   "records": 11186
+  },
+  {
+   "module": "P13",
+   "kinds": [
+    325,
+    350
+   ],
+   "records": 9986
+  },
+  {
+   "module": "P14",
+   "kinds": [
+    350,
+    375
+   ],
+   "records": 8965
+  },
+  {
+   "module": "P15",
+   "kinds": [
+    375,
+    400
+   ],
+   "records": 10670
+  },
+  {
+   "module": "P16",
+   "kinds": [
+    400,
+    425
+   ],
+   "records": 9741
+  },
+  {
+   "module": "P17",
+   "kinds": [
+    425,
+    450
+   ],
+   "records": 9394
+  },
+  {
+   "module": "P18",
+   "kinds": [
+    450,
+    475
+   ],
+   "records": 9399
+  },
+  {
+   "module": "P19",
+   "kinds": [
+    475,
+    500
+   ],
+   "records": 10696
+  },
+  {
+   "module": "P20",
+   "kinds": [
+    500,
+    525
+   ],
+   "records": 9856
+  },
+  {
+   "module": "P21",
+   "kinds": [
+    525,
+    550
+   ],
+   "records": 10091
+  },
+  {
+   "module": "P22",
+   "kinds": [
+    550,
+    575
+   ],
+   "records": 9744
+  },
+  {
+   "module": "P23",
+   "kinds": [
+    575,
+    600
+   ],
+   "records": 9949
+  },
+  {
+   "module": "P24",
+   "kinds": [
+    600,
+    625
+   ],
+   "records": 12201
+  },
+  {
+   "module": "P25",
+   "kinds": [
+    625,
+    650
+   ],
+   "records": 10930
+  },
+  {
+   "module": "P26",
+   "kinds": [
+    650,
+    666
+   ],
+   "records": 8224
+  }
+ ],
+ "total_records": 271728,
+ "max_records_per_bin": 6,
+ "providers": [
+  0,
+  1
+ ],
+ "disp_counts": {
+  "0": 416,
+  "1": 250
+ }
+}

@@ -1,0 +1,9 @@
+mode ctl ; content cell 16 F cell 137 image order 10752 labelled twists 3072  16s
+input distances of the 30 slots: {2: 7, 3: 7, 4: 16} ; O1 cells [1, 2, 37]
+a = 1, b = 1: (twist1, twist2, O1 cell) tested 294912, chi served in 288; witness (None, 0, 17)
+a = 1, b = 2: (twist1, twist2, O1 cell) tested 294912, chi served in 288; witness (None, 0, 1369)
+a = 1, b = 3: (twist1, twist2, O1 cell) tested 294912, chi served in 288; witness (None, 0, 1885)
+a = 1, b = 4: (twist1, twist2, O1 cell) tested 294912, chi served in 288; witness (None, 0, 1556)
+a = 1, b = 5: (twist1, twist2, O1 cell) tested 294912, chi served in 288; witness (None, 0, 261)
+a = 1, b = 6: (twist1, twist2, O1 cell) tested 294912, chi served in 288; witness (None, 0, 1024)
+part 0 of 32 done  100s

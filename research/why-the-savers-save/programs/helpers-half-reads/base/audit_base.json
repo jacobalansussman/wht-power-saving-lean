@@ -1,0 +1,32 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+  "input_file": "u8-FULL-WORD.json.gz",
+  "content_sha256": "090fd574747fbf9628e70cb9beb792732914cfa52e1df147579fe4dbccc68c5a",
+  "compressed_sha256": "5d063c4cffdf384982c0aaff50aaafc4635442a967d271f83cce47e9fe82fba2",
+  "parent_center_interface": null,
+  "v": 112,
+  "h": 9,
+  "R": 504,
+  "entering": 216,
+  "lowends": 126,
+  "coldends": 72,
+  "compensation_gates": 6320,
+  "local_profile": {
+    "1": 2548,
+    "2": 338,
+    "3": 446,
+    "4": 162,
+    "5": 72,
+    "8": 8
+  },
+  "width_inventory": {
+    "4": 80,
+    "5": 32,
+    "7": 54,
+    "8": 122,
+    "9": 216
+  },
+  "checked_columns": 728,
+  "elapsed_seconds": 1.15320475,
+  "scope": "Exact rational full scalar map in both orientations; all literal native frame chains, center levels, dyadic units, entrance-zero response, wrapper exclusion and final helper row/column cones. No global owner admission or exponent repricing."
+}

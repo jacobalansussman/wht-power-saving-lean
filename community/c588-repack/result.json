@@ -1,0 +1,122 @@
+{
+  "format": "community-certificate-package/1",
+  "name": "c588-repack",
+  "suffix": "C588",
+  "title": "Ryan Shea's #588 certificate with a pad-optimal 5,009-bank table and a fourth-order rate lemma (x-pack B-quartic)",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "variant": "B-quartic",
+  "numerator": 12383291,
+  "kernel_numerator": 12383292,
+  "negative_numerator": 12383292,
+  "saving": "1.2383291e-3",
+  "saving_short": "1.2383e-3",
+  "exponent": "1 - 12383291/10^10",
+  "compared_with": {
+    "what": "Ryan Shea's Lean-checked record on the same certificate",
+    "numerator": 12331685,
+    "saving": "1.2331685e-3"
+  },
+  "mode": "replace",
+  "mode_note": "REPLACES 38 of Shea's generated files (bank table, rate, Fourier chain, challenges) and adds Work/BlockAccounting/Moment4.lean; the names keep Shea's suffix C588. Apply it to its own copy of the tree, never to the tree of c588m.",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainC588",
+    "OAI.PowerSaving.convolution_mainC588"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainC588",
+    "OAI.PowerSaving.convolution_mainC588",
+    "OAI.PowerSaving.RAM.hillsC588_program"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierC588.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierC588Neg.UniformFourierChallenge",
+  "solution_module": "Work.FourierC588.Main",
+  "axioms_file": "Work/FourierC588/Axioms.lean",
+  "goal_file": "Work/FourierC588/Goal.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentC588",
+  "build_targets": [
+    "Work.FourierC588.Main",
+    "Work.FourierC588.UniformFourierChallenge",
+    "Work.FourierC588Neg.UniformFourierChallenge",
+    "Work.GCert.Data.C588Controls",
+    "Work.FourierC588.Axioms"
+  ],
+  "comparator": {
+    "positive": "comparator/fourier.json",
+    "negative": "comparator/fourier-neg.json",
+    "note": "fourier.json is Shea's own configuration, byte-identical to his tree's (sha256 2906700b...); fourier-neg.json is the negative configuration that ran, re-made byte for byte from its text in logs/colab/cp-cmp-all.log (sha256 dc945246..., the hash printed there)"
+  },
+  "checks": [
+    {
+      "id": "build",
+      "status": "pass",
+      "what": "40 modules rebuilt from source on a copy of Shea's built tree",
+      "log": "logs/colab/cp-build.log"
+    },
+    {
+      "id": "axioms",
+      "status": "pass",
+      "what": "propext, Classical.choice, Quot.sound only",
+      "log": "logs/colab/build/axioms.log"
+    },
+    {
+      "id": "compare",
+      "status": "pass",
+      "what": "tools/Compare.lean: RESULT: PASS at 1 - 12383291/10^10",
+      "log": "logs/colab/build/ours-compare-fourier.log"
+    },
+    {
+      "id": "compare-negative",
+      "status": "pass",
+      "what": "one unit stronger: RESULT: FAIL, as it must",
+      "log": "logs/colab/build/ours-compare-negative.log"
+    },
+    {
+      "id": "comparator",
+      "status": "pass",
+      "what": "official comparator with Shea's configuration: nanoda and Lean kernels accept (jail2.sh stand-in)",
+      "log": "logs/colab/cp-cmp-all.log"
+    },
+    {
+      "id": "comparator-negative",
+      "status": "pass",
+      "what": "rejected one unit stronger",
+      "log": "logs/colab/cp-cmp-all.log"
+    },
+    {
+      "id": "skeptic",
+      "status": "pass",
+      "what": "an independent agent re-checked the built tree, mounted read-only: lake build --no-build is up to date (9,278 jobs); the three theorems depend on the standard axioms and the exponent is 1 - 12383291/10^10 (probe-main.log, probe-chal.log); Compare.lean RESULT: PASS (compare-pos.log). It did not repeat the comparator. INCIDENT-mathlib-deleted.txt and restore.log record how its first attempt (vcp.log) deleted the tree's Mathlib copy and how it was restored before these runs. report.txt is its written verdict",
+      "log": "logs/colab/skeptic-v-c-pack/vcp2.log"
+    },
+    {
+      "id": "skeptic-compare-negative",
+      "status": "not shown",
+      "log": "",
+      "what": "the same agent's Compare.lean one unit stronger was still running when it stopped; compare-neg.log is empty. The negative control of the build itself is compare-negative above"
+    }
+  ],
+  "machine": "Google Colab VM: Linux x86-64, Intel Xeon 2.20 GHz, 8 logical processors, 51 GiB, kernel 6.6.122+ without Landlock, no systemd",
+  "credits": [
+    "Jeremy Kothe: the #588 atm3 circuit",
+    "Ryan Shea: the certificate, generators and Lean instantiation this repacks",
+    "Nil Mamano: gauged extension and Fourier chain templates",
+    "Dugongue: the entrance gauges and the residual banks of the nine-stage network (#401)",
+    "Zhihao Chen (jacklightChen): the compressed nine-stage layout with its banks and padding (#377)",
+    "lydakis: the bank patterns (#275)",
+    "DaysSky: the bridged layout B_K the network starts from (#363)",
+    "OpenAI: model, statements, all-length reduction",
+    "Jacob Sussman (this repository): the engine, the pad-optimal bank table and the fourth-order rate lemma (Moment4)"
+  ]
+}

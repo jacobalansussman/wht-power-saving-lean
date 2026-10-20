@@ -1,0 +1,12 @@
+m=3 n=7 W=2 dirs=e1x5: 8 distinct conjugate subgroups
+  (deletion failures, tight forms, max clique, verdict) = (7, 0, 0, 'EXCL-deletion') x 6  bound Wn = 14
+  (deletion failures, tight forms, max clique, verdict) = (0, 0, 0, 'not-excluded') x 2  bound Wn = 14
+m=3 n=7 W=2 dirs=e1x6: 8 distinct conjugate subgroups
+  (deletion failures, tight forms, max clique, verdict) = (0, 7, 12, 'not-excluded') x 6  bound Wn = 14
+  (deletion failures, tight forms, max clique, verdict) = (0, 0, 0, 'not-excluded') x 2  bound Wn = 14
+m=4 n=3 W=4 dirs=all: 56 distinct conjugate subgroups
+  (deletion failures, tight forms, max clique, verdict) = (0, 15, 27, 'EXCL-clique') x 24  bound Wn = 12
+  (deletion failures, tight forms, max clique, verdict) = (0, 24, 36, 'EXCL-clique') x 12  bound Wn = 12
+  (deletion failures, tight forms, max clique, verdict) = (0, 21, 12, 'not-excluded') x 8  bound Wn = 12
+  (deletion failures, tight forms, max clique, verdict) = (0, 12, 12, 'not-excluded') x 6  bound Wn = 12
+  (deletion failures, tight forms, max clique, verdict) = (0, 0, 0, 'not-excluded') x 6  bound Wn = 12

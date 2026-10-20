@@ -1,0 +1,1128 @@
+{
+ "label": "#3815",
+ "inputs": {
+  "gauge44": {
+   "gcert": "wht45/lever/g-heads/data/gcert/S3815-base.gcert1b.json.gz",
+   "gcert_sha256": "09c8433ce591138650049d535118c9473eb0089aabe950cff7c3b9721547a2f3",
+   "R": 408,
+   "h": 9,
+   "block_hist": {
+    "1": 2440,
+    "2": 725,
+    "3": 224,
+    "4": 102,
+    "5": 20,
+    "8": 8
+   },
+   "max_block_rank": 8,
+   "res_hist": {
+    "4": 26,
+    "5": 2,
+    "6": 18,
+    "7": 53,
+    "8": 96,
+    "9": 213
+   },
+   "res_sum": 3278,
+   "exits": 91
+  },
+  "extra": {
+   "gcert": "wht45/lever/g-heads/data/gcert/S3815-extra.gcert1b.json.gz",
+   "gcert_sha256": "d37cda4e3426ad52d5c89402c27f6c547ffcaca7aa2ac68eecd6e32eba4a3817",
+   "R": 408,
+   "h": 9,
+   "block_hist": {
+    "1": 2440,
+    "2": 725,
+    "3": 224,
+    "4": 102,
+    "5": 20,
+    "8": 8
+   },
+   "max_block_rank": 8,
+   "res_hist": {
+    "4": 26,
+    "5": 2,
+    "6": 18,
+    "7": 53,
+    "8": 96,
+    "9": 213
+   },
+   "res_sum": 3278,
+   "exits": 91
+  },
+  "lean": {
+   "HStage.lean": "fb59e998e31b7fb5501ff79f98072dd09f8283f51e65f5c6b7d36a5365ab577a",
+   "HCert.lean": "68c0bee5f71a75869f5fabfa98ce5c5f22c2a09bfecf837b5a2688eefbd70a23",
+   "HostK.lean": "595a84d2ca7c46e8f14c2481d602a0d1c07d6c918547d9fc65f8f041ab5b1eeb"
+  },
+  "Gates.lean": {
+   "path": "wht43/bound-check/lg-g0/colab/Gates.lean",
+   "sha256": "077bcf0362a06cdf222477ae8fb68a1c556aa740119df50520efaa6705715d3f"
+  },
+  "ORDER.json": "743e74b538432e2b2045e754b0de9c18f36fc5039fdb8eb542177a898ec78e44",
+  "DISPATCH.json": "5d6fa711d704a1b498e5fe066ea821c4fa0217463702e82a7ce5be9da4023e8a",
+  "PLAN.json.gz": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e",
+  "TEMPLATE.json.gz": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+  "FILL": {
+   "path": "wht45/lever/g-heads/dl/pr3945/owner/inputs/old-FILL.json.gz",
+   "sha256": "50e4635123c0551a1a3c8f4cab870bcccc3e579c24447abe9d81336fde91f883"
+  },
+  "PROFILE": {
+   "path": "wht45/lever/g-heads/dl/pr3945/owner/inputs/old-PROFILE.json",
+   "sha256": "9686df0d8e710c2e94aef3887f4bf130a05b64215faeae702cccb59e95a469d5"
+  }
+ },
+ "our_network": {
+  "gates": {
+   "gateA2": {
+    "p": "pABQ_2",
+    "k": "kAQ_2",
+    "written": [
+     1,
+     4
+    ],
+    "read": [
+     2,
+     3
+    ],
+    "coeff": {
+     "1": 1,
+     "4": -1
+    }
+   },
+   "gateB2": {
+    "p": "pABQ_2",
+    "k": "kBQ_2",
+    "written": [
+     1,
+     4
+    ],
+    "read": [
+     2,
+     3
+    ],
+    "coeff": {
+     "1": -1,
+     "4": 1
+    }
+   },
+   "gateA3": {
+    "p": "pABQ_3",
+    "k": "kAQ_3",
+    "written": [
+     3,
+     6
+    ],
+    "read": [
+     4,
+     5
+    ],
+    "coeff": {
+     "3": 1,
+     "6": -1
+    }
+   },
+   "gateB3": {
+    "p": "pABQ_3",
+    "k": "kBQ_3",
+    "written": [
+     3,
+     6
+    ],
+    "read": [
+     4,
+     5
+    ],
+    "coeff": {
+     "3": -1,
+     "6": 1
+    }
+   },
+   "gateA4": {
+    "p": "pABQ_4",
+    "k": "kAQ_4",
+    "written": [
+     5,
+     8
+    ],
+    "read": [
+     6,
+     7
+    ],
+    "coeff": {
+     "5": 1,
+     "8": -1
+    }
+   },
+   "gateB4": {
+    "p": "pABQ_4",
+    "k": "kBQ_4",
+    "written": [
+     5,
+     8
+    ],
+    "read": [
+     6,
+     7
+    ],
+    "coeff": {
+     "5": -1,
+     "8": 1
+    }
+   },
+   "gateC4": {
+    "p": "pCQ_4",
+    "k": "kCQ_4",
+    "written": [
+     6,
+     7
+    ],
+    "read": [
+     5,
+     8
+    ],
+    "coeff": {
+     "6": -1,
+     "7": 1
+    }
+   },
+   "gateC3": {
+    "p": "pCQ_3",
+    "k": "kCQ_3",
+    "written": [
+     4,
+     5
+    ],
+    "read": [
+     3,
+     6
+    ],
+    "coeff": {
+     "4": -1,
+     "5": 1
+    }
+   },
+   "gateC2": {
+    "p": "pCQ_2",
+    "k": "kCQ_2",
+    "written": [
+     2,
+     3
+    ],
+    "read": [
+     1,
+     4
+    ],
+    "coeff": {
+     "2": -1,
+     "3": 1
+    }
+   }
+  },
+  "run_order": [
+   "adapt0",
+   "stage0",
+   "adapt1",
+   "stage1",
+   "climbA2",
+   "gateA2",
+   "adapt2",
+   "stage2",
+   "climbB2",
+   "gateB2",
+   "adapt3",
+   "stage3",
+   "climbA3",
+   "gateA3",
+   "adapt4",
+   "stage4",
+   "climbB3",
+   "gateB3",
+   "adapt5",
+   "stage5",
+   "climbA4",
+   "gateA4",
+   "adapt6",
+   "stage6",
+   "climbB4",
+   "gateB4",
+   "adapt7",
+   "stage7",
+   "adapt8",
+   "stage8",
+   "fin",
+   "gateC4",
+   "gateC3",
+   "gateC2"
+  ],
+  "kinds": {
+   "A2": {
+    "climb_step": "climbA2",
+    "comps": [
+     3,
+     4
+    ],
+    "pair": 2,
+    "rank": 16
+   },
+   "B2": {
+    "climb_step": "climbB2",
+    "comps": [
+     3,
+     4
+    ],
+    "pair": 2,
+    "rank": 8
+   },
+   "A3": {
+    "climb_step": "climbA3",
+    "comps": [
+     5,
+     6
+    ],
+    "pair": 3,
+    "rank": 32
+   },
+   "B3": {
+    "climb_step": "climbB3",
+    "comps": [
+     5,
+     6
+    ],
+    "pair": 3,
+    "rank": 8
+   },
+   "A4": {
+    "climb_step": "climbA4",
+    "comps": [
+     7,
+     8
+    ],
+    "pair": 4,
+    "rank": 48
+   },
+   "B4": {
+    "climb_step": "climbB4",
+    "comps": [
+     7,
+     8
+    ],
+    "pair": 4,
+    "rank": 8
+   },
+   "F1": {
+    "climb_step": "fin",
+    "comps": [
+     1,
+     2
+    ],
+    "pair": 1,
+    "rank": 48
+   },
+   "F2": {
+    "climb_step": "fin",
+    "comps": [
+     3,
+     4
+    ],
+    "pair": 2,
+    "rank": 32
+   },
+   "F3": {
+    "climb_step": "fin",
+    "comps": [
+     5,
+     6
+    ],
+    "pair": 3,
+    "rank": 16
+   }
+  }
+ },
+ "child_to_kind": {
+  "0": {
+   "kind": "A2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 16
+  },
+  "1": {
+   "kind": "B2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 8
+  },
+  "2": {
+   "kind": "A2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 16
+  },
+  "3": {
+   "kind": "B2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 8
+  },
+  "4": {
+   "kind": "A3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 32
+  },
+  "5": {
+   "kind": "B3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 8
+  },
+  "6": {
+   "kind": "A3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 32
+  },
+  "7": {
+   "kind": "B3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 8
+  },
+  "8": {
+   "kind": "A4",
+   "hub_pair": 3,
+   "side": 0,
+   "rank": 48
+  },
+  "9": {
+   "kind": "B4",
+   "hub_pair": 3,
+   "side": 0,
+   "rank": 8
+  },
+  "10": {
+   "kind": "A4",
+   "hub_pair": 3,
+   "side": 1,
+   "rank": 48
+  },
+  "11": {
+   "kind": "B4",
+   "hub_pair": 3,
+   "side": 1,
+   "rank": 8
+  },
+  "12": {
+   "kind": "F1",
+   "hub_pair": 0,
+   "side": 0,
+   "rank": 48
+  },
+  "13": {
+   "kind": "F1",
+   "hub_pair": 0,
+   "side": 1,
+   "rank": 48
+  },
+  "14": {
+   "kind": "F2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 32
+  },
+  "15": {
+   "kind": "F2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 32
+  },
+  "16": {
+   "kind": "F3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 16
+  },
+  "17": {
+   "kind": "F3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 16
+  }
+ },
+ "fill": {
+  "rows": 1321920,
+  "roles_per_call": 408,
+  "calls": 3240,
+  "replicas": 360
+ },
+ "G0": {
+  "label": "our network, #3815 order",
+  "roles": 1321920,
+  "cross_replica_roles": 1152628,
+  "violations": {},
+  "loads_over_rank": 0,
+  "one_use_per_call_and_role": true,
+  "remainders": 249840,
+  "remainder_profile": {
+   "1": 84240,
+   "3": 23328,
+   "5": 4320,
+   "48": 137952
+  },
+  "classes": [
+   {
+    "hub_child": 4,
+    "kind": "A3",
+    "side": "x",
+    "remainder": 1,
+    "cls": "neither",
+    "count": 23440
+   },
+   {
+    "hub_child": 4,
+    "kind": "A3",
+    "side": "x",
+    "remainder": 5,
+    "cls": "neither",
+    "count": 2192
+   },
+   {
+    "hub_child": 6,
+    "kind": "A3",
+    "side": "y",
+    "remainder": 1,
+    "cls": "neither",
+    "count": 25400
+   },
+   {
+    "hub_child": 6,
+    "kind": "A3",
+    "side": "y",
+    "remainder": 5,
+    "cls": "neither",
+    "count": 2128
+   },
+   {
+    "hub_child": 8,
+    "kind": "A4",
+    "side": "x",
+    "remainder": 3,
+    "cls": "neither",
+    "count": 11648
+   },
+   {
+    "hub_child": 8,
+    "kind": "A4",
+    "side": "x",
+    "remainder": 48,
+    "cls": "HEAD-literal",
+    "count": 28672
+   },
+   {
+    "hub_child": 10,
+    "kind": "A4",
+    "side": "y",
+    "remainder": 3,
+    "cls": "neither",
+    "count": 11680
+   },
+   {
+    "hub_child": 10,
+    "kind": "A4",
+    "side": "y",
+    "remainder": 48,
+    "cls": "HEAD-literal",
+    "count": 28640
+   },
+   {
+    "hub_child": 12,
+    "kind": "F1",
+    "side": "x",
+    "remainder": 48,
+    "cls": "neither",
+    "count": 40320
+   },
+   {
+    "hub_child": 13,
+    "kind": "F1",
+    "side": "y",
+    "remainder": 48,
+    "cls": "neither",
+    "count": 40320
+   },
+   {
+    "hub_child": 14,
+    "kind": "F2",
+    "side": "x",
+    "remainder": 1,
+    "cls": "neither",
+    "count": 15872
+   },
+   {
+    "hub_child": 15,
+    "kind": "F2",
+    "side": "y",
+    "remainder": 1,
+    "cls": "neither",
+    "count": 19528
+   }
+  ],
+  "totals_by_class": {
+   "HEAD-literal": 57312,
+   "neither": 192528
+  },
+  "rank48_by_class": {
+   "HEAD-literal": 57312,
+   "neither": 80640
+  },
+  "heads_rank48_unhosted": 57312,
+  "examples": {
+   "4:1:neither": {
+    "replica": 3,
+    "port": 44,
+    "comp": 5,
+    "climb_pos": 902,
+    "first_nonidentity_before": [
+     [
+      "48",
+      "adapt0:adapter:A3",
+      "False"
+     ],
+     [
+      "49",
+      "stage0:hostuse:A3",
+      "False"
+     ],
+     [
+      "260",
+      "adapt1:adapter:A3",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "903",
+      "gateA3:gate_read",
+      "False"
+     ],
+     [
+      "1469",
+      "hosted:B3",
+      "False"
+     ],
+     [
+      "1576",
+      "adapt4:adapter:B3",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "4:5:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 5,
+    "climb_pos": 574,
+    "first_nonidentity_before": [
+     [
+      "0",
+      "adapt0:adapter:A3",
+      "False"
+     ],
+     [
+      "1",
+      "stage0:hostuse:A3",
+      "False"
+     ],
+     [
+      "80",
+      "adapt1:adapter:A3",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "575",
+      "gateA3:gate_read",
+      "False"
+     ],
+     [
+      "1033",
+      "hosted:B3",
+      "False"
+     ],
+     [
+      "1120",
+      "adapt4:adapter:B3",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "6:1:neither": {
+    "replica": 3,
+    "port": 0,
+    "comp": 6,
+    "climb_pos": 902,
+    "first_nonidentity_before": [
+     [
+      "48",
+      "adapt0:adapter:A3",
+      "False"
+     ],
+     [
+      "49",
+      "stage0:hostuse:A3",
+      "False"
+     ],
+     [
+      "260",
+      "adapt1:adapter:A3",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "903",
+      "gateA3:gate_write",
+      "False"
+     ],
+     [
+      "1473",
+      "hosted:B3",
+      "False"
+     ],
+     [
+      "1576",
+      "adapt4:adapter:B3",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "6:5:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 6,
+    "climb_pos": 574,
+    "first_nonidentity_before": [
+     [
+      "0",
+      "adapt0:adapter:A3",
+      "False"
+     ],
+     [
+      "1",
+      "stage0:hostuse:A3",
+      "False"
+     ],
+     [
+      "80",
+      "adapt1:adapter:A3",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "575",
+      "gateA3:gate_write",
+      "False"
+     ],
+     [
+      "1029",
+      "hosted:B3",
+      "False"
+     ],
+     [
+      "1120",
+      "adapt4:adapter:B3",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "8:3:neither": {
+    "replica": 32,
+    "port": 0,
+    "comp": 7,
+    "climb_pos": 8530,
+    "first_nonidentity_before": [
+     [
+      "1677",
+      "hosted:A4",
+      "False"
+     ],
+     [
+      "3648",
+      "adapt0:adapter:A4",
+      "False"
+     ],
+     [
+      "3649",
+      "stage0:hostuse:A4",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "8531",
+      "gateA4:gate_read",
+      "False"
+     ],
+     [
+      "9065",
+      "hosted:B4",
+      "False"
+     ],
+     [
+      "9088",
+      "adapt6:adapter:B4",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "fin:free_final",
+     "brec401:relabel"
+    ]
+   },
+   "8:48:HEAD-literal": {
+    "replica": 0,
+    "port": 0,
+    "comp": 7,
+    "climb_pos": 1838,
+    "first_nonidentity_before": [],
+    "first_nonfree_after": [
+     [
+      "1839",
+      "gateA4:gate_read",
+      "False"
+     ],
+     [
+      "2701",
+      "hosted:B4",
+      "False"
+     ],
+     [
+      "2736",
+      "adapt6:adapter:B4",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "fin:free_final",
+     "brec401:relabel"
+    ]
+   },
+   "10:3:neither": {
+    "replica": 32,
+    "port": 0,
+    "comp": 8,
+    "climb_pos": 8530,
+    "first_nonidentity_before": [
+     [
+      "2613",
+      "hosted:A4",
+      "False"
+     ],
+     [
+      "3648",
+      "adapt0:adapter:A4",
+      "False"
+     ],
+     [
+      "3649",
+      "stage0:hostuse:A4",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "8531",
+      "gateA4:gate_write",
+      "False"
+     ],
+     [
+      "9065",
+      "hosted:B4",
+      "False"
+     ],
+     [
+      "9088",
+      "adapt6:adapter:B4",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "fin:free_final",
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "10:48:HEAD-literal": {
+    "replica": 0,
+    "port": 0,
+    "comp": 8,
+    "climb_pos": 1838,
+    "first_nonidentity_before": [],
+    "first_nonfree_after": [
+     [
+      "1839",
+      "gateA4:gate_write",
+      "False"
+     ],
+     [
+      "2701",
+      "hosted:B4",
+      "False"
+     ],
+     [
+      "2736",
+      "adapt6:adapter:B4",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "fin:free_final",
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "12:48:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 1,
+    "climb_pos": 4770,
+    "first_nonidentity_before": [
+     [
+      "1",
+      "stage0:local",
+      "False"
+     ],
+     [
+      "81",
+      "stage1:local",
+      "False"
+     ],
+     [
+      "83",
+      "gateA2:gate_write",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "4773",
+      "gateC2:gate_read",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "13:48:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 2,
+    "climb_pos": 4770,
+    "first_nonidentity_before": [
+     [
+      "1",
+      "stage0:local",
+      "False"
+     ],
+     [
+      "81",
+      "stage1:local",
+      "False"
+     ],
+     [
+      "83",
+      "gateA2:gate_read",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "4773",
+      "gateC2:gate_write",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 12,
+    "free_touches_after": [
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   },
+   "14:1:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 3,
+    "climb_pos": 4770,
+    "first_nonidentity_before": [
+     [
+      "0",
+      "adapt0:adapter:A2",
+      "False"
+     ],
+     [
+      "1",
+      "stage0:hostuse:A2",
+      "False"
+     ],
+     [
+      "71",
+      "hosted:A2",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "4772",
+      "gateC3:gate_read",
+      "False"
+     ],
+     [
+      "4773",
+      "gateC2:gate_write",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "brec401:relabel"
+    ]
+   },
+   "15:1:neither": {
+    "replica": 0,
+    "port": 0,
+    "comp": 4,
+    "climb_pos": 4770,
+    "first_nonidentity_before": [
+     [
+      "0",
+      "adapt0:adapter:A2",
+      "False"
+     ],
+     [
+      "1",
+      "stage0:hostuse:A2",
+      "False"
+     ],
+     [
+      "77",
+      "hosted:A2",
+      "False"
+     ]
+    ],
+    "first_nonfree_after": [
+     [
+      "4772",
+      "gateC3:gate_write",
+      "False"
+     ],
+     [
+      "4773",
+      "gateC2:gate_read",
+      "False"
+     ]
+    ],
+    "identity_touches_before": 0,
+    "free_touches_after": [
+     "shifts:free_shift",
+     "brec401:relabel"
+    ]
+   }
+  }
+ },
+ "control_gateA4_before_climbA4": {
+  "totals_by_class": {
+   "neither": 249840
+  },
+  "rank48_by_class": {
+   "neither": 137952
+  },
+  "violations": {
+   "outside_our_window": 116640
+  }
+ },
+ "control_without_gateC2": {
+  "totals_by_class": {
+   "HEAD-literal": 57312,
+   "TAIL-literal": 80640,
+   "neither": 111888
+  },
+  "rank48_by_class": {
+   "HEAD-literal": 57312,
+   "TAIL-literal": 80640
+  },
+  "classes": [
+   {
+    "hub_child": 12,
+    "kind": "F1",
+    "side": "x",
+    "remainder": 48,
+    "cls": "TAIL-literal",
+    "count": 40320
+   },
+   {
+    "hub_child": 13,
+    "kind": "F1",
+    "side": "y",
+    "remainder": 48,
+    "cls": "TAIL-literal",
+    "count": 40320
+   }
+  ]
+ },
+ "call_blocks": {
+  "calls_per_provider": {
+   "extra": 1672,
+   "gauge44": 1568
+  },
+  "max_rank_over_both_words": 8,
+  "all_call_blocks_rank_le_8": true,
+  "global_profile": {
+   "1": 7989840,
+   "2": 2349000,
+   "3": 749088,
+   "4": 330480,
+   "5": 69120,
+   "8": 25920,
+   "48": 137952
+  },
+  "hub_profile": {
+   "1": 7989840,
+   "2": 2349000,
+   "3": 749088,
+   "4": 330480,
+   "5": 69120,
+   "8": 25920,
+   "48": 137952
+  },
+  "global_profile_equals_hub": true,
+  "rank_mass": 23431680
+ },
+ "ok": true
+}

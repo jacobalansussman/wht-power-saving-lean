@@ -1,0 +1,12 @@
+block 3, targets k=[0, 1, 3] frames [0, 0, 0], delete dir 2: moves (direction ints, rm2-solve coordinates) [1, 4, 2, 3, 7, 2, 5, 6]
+targets (rows): [['100', '010', '001'], ['001', '011', '111'], ['101', '001', '110']]
+CERTIFICATE (forms as coefficient vectors over monomials [(0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 2)] )
+ Y = [1, 3, 6] (moves; directions [4, 3, 5] )
+  pair 1,1: tight form (0, 0, 0, 0, 1, 1)
+  pair 1,3: tight form (0, 1, 1, 0, 1, 1)
+  pair 1,6: tight form (0, 0, 0, 0, 1, 1)
+  pair 3,3: tight form (0, 1, 0, 0, 1, 0)
+  pair 3,6: tight form (0, 1, 1, 0, 0, 0)
+  pair 6,6: tight form (0, 0, 0, 0, 1, 1)
+ F = (0, 0, 0, 1, 0, 1)  D_F = [1, 2, 3, 5, 6]  r_F = 0  |D_F| + r_F = 5 < 2|Y| = 6
+CHECK: PASS (the instance is excluded by the zero-block test)

@@ -1,0 +1,8 @@
+N = 4  rank(H - sqrt(N) I) = 2  rank(H + sqrt(N) I) = 2
+  supports of size 1 : 4 sets, 0 carry a (-sqrt N)-eigenvector
+  supports of size 2 : 6 sets, 1 carry a (-sqrt N)-eigenvector
+N = 16  rank(H - sqrt(N) I) = 8  rank(H + sqrt(N) I) = 8
+  supports of size 1 : 16 sets, 0 carry a (-sqrt N)-eigenvector
+  supports of size 2 : 120 sets, 0 carry a (-sqrt N)-eigenvector
+  supports of size 3 : 560 sets, 0 carry a (-sqrt N)-eigenvector
+  supports of size 4 : 1820 sets, 6 carry a (-sqrt N)-eigenvector

@@ -1,0 +1,40 @@
+The written verdict of the independent agent (a skeptic) that ran this check, as it returned it, with home-folder
+paths shortened. Agent labels in it (c-base, m-build, m-gen, x-mutable, h-L1, h-L2, h-L3-build) are the names
+of the agents whose work it checked.
+
+I could not refute the claim. I re-ran the key step myself on an independent machine and it holds. The DFT of every length and convolution are Lean-checked at a saving of 1.3552606e-3 (exponent 1 - 13552606/10^10), built from m-gen's package (sha256 6554fd38…) on Shea's tree at 5239484.
+
+**What I checked myself**
+
+1. **Overlay hashes.** Package SHA256SUMS verifies (`sha256sum -c`). All 72 overlay files in m-build's tree /content/work/mb/shea/lean/complex588 match it. Tree HEAD is 5239484, with 0 tracked changes and 72 untracked files. c-base's base tree held no olean for any of the 70 overlay modules before the build.
+
+2. **Independent rebuild, on Colab #2 instead of #1.** Colab #1 had 4 to 7 Lean processes the whole time, so the 2-process rule ruled it out. Colab #2 was idle, and its base tree was built separately.
+   - All 70 modules recompiled from the package's own sources with the same toolchain (lean 4.34.1, `-DautoImplicit=false`), one at a time, every step rc=0. Glue401 → Seam → Main all compiled.
+   - I used plain `lean` with LEAN_PATH, not `lake build`. The output folder was a symlink farm of base oleans (1,770 symlinks) plus exactly 140 new files (olean and ilean per module).
+   - Axioms: transform_mainC588M, convolution_mainC588M and RAM.hillsC588M_program depend on [propext, Classical.choice, Quot.sound]. The three controls depend on [propext].
+   - Compare.lean (sha e48d6d3b) on MY build: RESULT: PASS. Every statement dependency is identical; the proof reaches 42,023 constants, with only the permitted axioms.
+   - Negative control (13552607): RESULT: FAIL, rc=1. 'decimalExponentC588M: definition body differs'.
+   - I re-derived both challenge files from OpenAI's UniformFourier.lean (sha 4c571f27, also matches the round-1 openai-math-now clone) with c-base's substitution. Both are byte-identical to the package's files.
+
+3. **The engine is not bypassed.** I walked the constant closure of both final theorems (types and values) with Deps.lean.
+   - Both reach `OAI.PowerSaving.GX.engine_of_ginv_401`, `GXD.ginvOfZ`, `gscalOfZ`, `glabOfZ`, `GX.GLabZ.inv`, `GLab.ValidE.glabZ`, `GS.ScalOKZ`, `scalCheckZ`, `yCheckZ`, `eCheckZ` and `eCheckZ_sound`.
+   - They reach every C588M kernel check (scal0..3_ok, ychk_ok, echk0..2_ok, sched_ok), plus `validE`, `price`, `fold_C588Mx` and `unit_cost_x`.
+   - All 7 Work.XMut modules contribute constants (13 to 71 each).
+   - Shea's copy-carrying `GXD.C588.ginv`/`scalOK` are not in the environment, and OpenAI's `hills_program` is present but not reached.
+   - The source agrees: `engine_of_ginv_401` passes the package `I` into `bridge401_gcert I …`.
+   - The package's XMut files equal x-mutable's sources except for import paths. A grep of all 70 files found no native_decide, implemented_by, extern, unsafe, axiom or sorry, apart from the 2 challenge placeholders in each challenge file.
+
+4. **Oleans.** All 70 of mine differ in bytes from m-build's Lake-built oleans. Two modules (C588MGl, C588MTab0) compiled with plain `lean` on Colab #1 against m-build's imports are byte-identical to my Colab #2 ones. So the difference comes from Lake's invocation, not from different sources or imports.
+
+**Caveats (not refutations)**
+- I did not re-run the official comparator. I read m-build's logs (cmp-A1.out: both kernels accept, rc=0; cmp-A2neg.out: rejected, rc=1); they are consistent, run in the jail stand-in, not Landlock.
+- I ran Main and Compare with plain `lean`, not `lake build`.
+- My phase 1 on Colab #1 (Main recompiled against m-build's oleans) stalled on I/O for 18 minutes on the loaded machine; I stopped it, and nothing of mine is still running.
+- The Big O Speedrun verifier re-run is still unfinished, as the claim itself says.
+- m-gen's build script comment says "78 modules", but MODULES.txt has 70. The comment is stale and has no effect.
+- The arithmetic holds: 1.3552606e-3 - 1.2331685e-3 = 1.2209e-4 (+9.9 %).
+
+**Files**
+- Logs on the Mac: ~/misc/fft/verify/checks/wht43/colab-run/logs/v-m-rebuild/ (NOTE.txt is the index; colab2/run6.out, colab2/P2-deps.log, colab2/C-pos.log, colab2/C-neg.log, olean-diff.txt, colab1/). Ignore colab2/P2-compare-*.log: that first Compare attempt failed in 2 s because `lean` was not on PATH, and C-*.log is the rerun.
+- Scripts: ~/misc/fft/verify/checks/wht43/bound-check/v-m-rebuild/colab/ (vmr-run6.sh, vmr-compare.sh, Deps.lean).
+- On Colab #2: /content/work/v-m-rebuild/ (src, out2).

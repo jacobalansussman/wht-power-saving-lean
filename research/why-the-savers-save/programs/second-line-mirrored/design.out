@@ -1,0 +1,14 @@
+supports = readers for every total: True | sizes [56, 56, 56, 56, 56, 56, 56, 56]
+junk (orthogonal) pairs inside each support: [784, 784, 784, 784, 784, 784, 784, 784] of 1540
+total 0: omega in its support 4 -> at least 14 drop-free clean chains (greedy cover 15; spans of the parts [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])
+total 1: omega in its support 4 -> at least 14 drop-free clean chains (greedy cover 15; spans of the parts [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])
+total 2: omega in its support 4 -> at least 14 drop-free clean chains (greedy cover 14; spans of the parts [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])
+total 3: omega in its support 4 -> at least 14 drop-free clean chains (greedy cover 15; spans of the parts [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])
+total 4: omega in its support 4 -> at least 14 drop-free clean chains (greedy cover 14; spans of the parts [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])
+total 5: omega in its support 4 -> at least 14 drop-free clean chains (greedy cover 15; spans of the parts [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])
+total 6: omega in its support 4 -> at least 14 drop-free clean chains (greedy cover 14; spans of the parts [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])
+total 7: omega in its support 4 -> at least 14 drop-free clean chains (greedy cover 14; spans of the parts [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])
+maximal cliques of the non-orthogonality graph (size, span): counts {(6, 4): 224, (7, 4): 512, (8, 4): 1260} (first 1996 )
+most ports in a 7-dim subspace P7 = 36 | in an 8-dim subspace P8 = 64
+any g: a drop-free x chain has at most P7 + 1 + omega = 45 members (a total has 56)
+natural mirror: rank of the 56 readers' lines per total (the merged copy's V-drop): [8, 8, 8, 8, 8, 8, 8, 8] -> sum 64 per call

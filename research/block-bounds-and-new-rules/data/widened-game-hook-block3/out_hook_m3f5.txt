@@ -1,0 +1,6 @@
+m=3 f=5: dim W = 560, dim N = 280, dim notN = 280
+f(dir e1): rank mod p 2147483629 = 80, mod 2147483549 = 80, EXACT over Z[i] = 80   (5.4s)
+f(dir e1 dir e2): rank mod p 2147483629 = 144, mod 2147483549 = 144, EXACT over Z[i] = 144   (20.4s)
+f(kernel): rank mod p 2147483629 = 224, mod 2147483549 = 224, EXACT over Z[i] = 224   (344.0s)
+dim H - dim N = 224  (upper bound for every f)
+SUMMARY m=3 f=5: cap=80, f(B2)=144, dem=224

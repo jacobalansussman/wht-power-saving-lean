@@ -1,0 +1,13 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+d-I1-idle, 13 Oct 2026. Confirmation run only: the BRIEF (UPDATE ~15:50 EDT) settles I1; nothing rebuilt, nothing run on Colab.
+Read-only inputs: D=../w-idle/dl/t16 (#1042 selected replay: lift/GLOBAL-TEMPLATE = parent, global/hosted/GLOBAL-TEMPLATE = hosted),
+  PH=../../helpers/k8-twin/hub/repo/research/complex-multicold/vendor/pr558/vendor/pr552/complex-global/vendor531/inputs/data-base/work/complex-nine-native/DATA-PHASES.json
+     (sha256 c5916ff3..., equal to the template's exact_data_phase_recipe_sha256), HB=../../helpers/k8-pairs/hub/research/gauge44-slots-t16/data (PLAN, OWNERS).
+sh ../t-open/tests/idle_regrain.sh                                  -> control_and_whatifs.out (line 1 = #1042 control)
+python3 -I tools/anatomy.py D/lift/GLOBAL-TEMPLATE.json.gz D/global/hosted/GLOBAL-TEMPLATE.json.gz PH HB/PLAN.json HB/OWNERS.json.gz -> anatomy_1042.out
+python3 -I tools/merge_check.py D/lift/GLOBAL-TEMPLATE.json.gz D/global/hosted/GLOBAL-TEMPLATE.json.gz PH HB/OWNERS.json.gz       -> merge_check.out
+  (local re-implementation of hub code/audit_allcold.py lines 175-181; not the hub's own run)

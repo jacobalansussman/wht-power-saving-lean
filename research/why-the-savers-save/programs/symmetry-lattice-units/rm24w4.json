@@ -1,0 +1,34 @@
+{
+ "v": 1120,
+ "ips": [
+  0,
+  1,
+  2
+ ],
+ "rank_I_plus_Aorth": 111,
+ "orth_classes_by_common_nonorth": [
+  392,
+  406,
+  536,
+  564
+ ],
+ "best_invariant_minrank_upper": [
+  111,
+  [
+   406,
+   536,
+   564
+  ]
+ ],
+ "clique": 40,
+ "x_needed_h40": {
+  "3": 0.22832610246800922,
+  "5": null
+ },
+ "x_needed_h40_vs_E8best": 0.21629958347312161,
+ "x_needed_h111": {
+  "3": null,
+  "5": null
+ },
+ "x_needed_h111_vs_E8best": null
+}

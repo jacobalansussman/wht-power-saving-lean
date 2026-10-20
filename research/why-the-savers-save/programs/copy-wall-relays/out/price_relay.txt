@@ -1,0 +1,7 @@
+control c0 = 1.7334270396e-03 (bit side #589)   control b0 = 1.6644002789e-03 (complex side #799)
+P111 cst 63 -> 62 (one rank unit per call)                                               c = 1.7820e-03 (+2.80 %)  what-if, UNREACHABLE by relays
+P111 cst 63 -> 56 (relay rank-8 decoder, spans 7: one rank-7 child removed per call)     c = 2.0740e-03 (+19.65 %)  what-if, UNREACHABLE by relays
+kappa: b binds (b0 1.6644e-03 < c0 1.7334e-03); a gain in c alone moves kappa by 0; c already sits +4.15 % above b.
+calibration: one rank-1 descent per call as {1:+2}: c = 1.6358e-03 (-5.63 %)  (hub C.7: -5.630 % c)
+P111 rank 8 with one rank-7 child removed and  4 rank-1 descents per call: c = 1.6835e-03 (-2.88 %)  what-if (>= 17 needed)
+P111 rank 8 with one rank-7 child removed and 17 rank-1 descents per call: c = 4.1958e-04 (-75.80 %)  what-if (>= 17 needed)

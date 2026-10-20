@@ -1,0 +1,6 @@
+m=3 f=4 mode=facet U=[1, 2, 4] dim A=70 dim N=6 rows outside N=64
+cap, direction w=1 (weight 1): rank mod p = 2; floating rank = 2 (least kept singular value 13.9, next 0); worst rounding of a minor 8.9e-16
+cap, direction w=3 (weight 2): rank mod p = 3; floating rank = 3 (least kept singular value 16, next 2.55e-15); worst rounding of a minor 8.9e-16
+cap, direction w=7 (weight 3): rank mod p = 4; floating rank = 4 (least kept singular value 13.9, next 3.69e-15); worst rounding of a minor 8.9e-16
+dem (kernel): rank mod p = 6; floating rank = 6 (least kept singular value 3.55e+03, next 0); worst rounding of a minor 4.5e-13
+summary m=3 f=4: dim N=6 = 3 x 2; caps={1: 2, 2: 3, 3: 4}; dem=6; dem/max cap = 1.5000

@@ -1,0 +1,25 @@
+A.B (Clifford, two-sided chain): f, order, 2^f-1
+  f= 2 order        3   2^f-1 = 3
+  f= 3 order        7   2^f-1 = 7
+  f= 4 order        7   2^f-1 = 15
+  f= 5 order       31   2^f-1 = 31
+  f= 6 order       63   2^f-1 = 63
+  f= 7 order       15   2^f-1 = 127
+  f= 8 order       15   2^f-1 = 255
+  f= 9 order      511   2^f-1 = 511
+  f=10 order       63   2^f-1 = 1023
+  f=11 order     2047   2^f-1 = 2047
+  f=12 order     1023   2^f-1 = 4095
+  f=13 order      511   2^f-1 = 8191
+  f=14 order    16383   2^f-1 = 16383
+  f=15 order       31   2^f-1 = 32767
+  f=16 order       31   2^f-1 = 65535
+  f=17 order     4095   2^f-1 = 131071
+  f=18 order    87381   2^f-1 = 262143
+A.T2.B (with Toffoli): f, order, cycles
+  f= 2 order        6 cycles 16
+  f= 3 order       14 cycles 46
+  f= 4 order       14 cycles 350
+  f= 5 order       62 cycles 562
+  f= 6 order      126 cycles 2146
+  f= 7 order       30 cycles 72778

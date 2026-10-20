@@ -1,0 +1,35 @@
+A. Weights rank[g^(x)f, Pi12] (witness: first two digits equal).  Predicted 2(q - 2^(m-k)) q^(f-2).
+ m=1 f=2 n=4: free generators blind: True; k=1 z=(1,): 2 exact (pred 2)
+ m=2 f=2 n=16: free generators blind: True; k=1 z=(1,): 4 exact (pred 4); k=1 z=(3,): 4 exact (pred 4); k=2 z=(1, 2): 6 exact (pred 6); k=2 z=(3, 1): 6 exact (pred 6)
+ m=3 f=2 n=64: free generators blind: True; k=1 z=(1,): 8,8 mod 2 primes (pred 8); k=1 z=(5,): 8,8 mod 2 primes (pred 8); k=2 z=(1, 2): 12,12 mod 2 primes (pred 12); k=2 z=(3, 5): 12,12 mod 2 primes (pred 12); k=3 z=(1, 2, 4): 14,14 mod 2 primes (pred 14); k=3 z=(1, 3, 5): 14,14 mod 2 primes (pred 14)
+ m=1 f=3 n=8: free generators blind: True; k=1 z=(1,): 4 exact (pred 4)
+ m=2 f=3 n=64: free generators blind: True; k=1 z=(1,): 16,16 mod 2 primes (pred 16); k=1 z=(3,): 16,16 mod 2 primes (pred 16); k=2 z=(1, 2): 24,24 mod 2 primes (pred 24); k=2 z=(3, 1): 24,24 mod 2 primes (pred 24)
+ m=1 f=4 n=16: free generators blind: True; k=1 z=(1,): 8 exact (pred 8)
+
+B. A block applied ONLY on the fibres that meet the witness set (digits 1,2 in the same coset of V), f = 2.
+ m=2 k=1 z=(1,): entries touched 8 of 16 (fraction 1/2); block crosses the set boundary: False; weight of the partial block: 4 exact; weight of the whole-array block: 4
+ m=2 k=1 z=(3,): entries touched 8 of 16 (fraction 1/2); block crosses the set boundary: False; weight of the partial block: 4 exact; weight of the whole-array block: 4
+ m=3 k=1 z=(1,): entries touched 16 of 64 (fraction 1/4); block crosses the set boundary: False; weight of the partial block: 8,8 mod 2 primes; weight of the whole-array block: 8
+ m=3 k=1 z=(5,): entries touched 16 of 64 (fraction 1/4); block crosses the set boundary: False; weight of the partial block: 8,8 mod 2 primes; weight of the whole-array block: 8
+ m=3 k=2 z=(1, 2): entries touched 32 of 64 (fraction 1/2); block crosses the set boundary: False; weight of the partial block: 12,12 mod 2 primes; weight of the whole-array block: 12
+ m=3 k=2 z=(3, 5): entries touched 32 of 64 (fraction 1/2); block crosses the set boundary: False; weight of the partial block: 12,12 mod 2 primes; weight of the whole-array block: 12
+
+C. Hatch H2 for more sizes: one-column move = G (a I + b * shift on ALL columns) G, G the address map x_d <- x_d + x_c.
+ m=1 f=2 n=4: every one-column move equals (address map)(one whole-array addition)(address map): True; product = kernel on all columns: True; whole-array additions used: 2 = m*f; blocks used: 0
+ m=1 f=3 n=8: every one-column move equals (address map)(one whole-array addition)(address map): True; product = kernel on all columns: True; whole-array additions used: 3 = m*f; blocks used: 0
+ m=2 f=2 n=16: every one-column move equals (address map)(one whole-array addition)(address map): True; product = kernel on all columns: True; whole-array additions used: 4 = m*f; blocks used: 0
+ m=1 f=4 n=16: every one-column move equals (address map)(one whole-array addition)(address map): True; product = kernel on all columns: True; whole-array additions used: 4 = m*f; blocks used: 0
+
+D. Masks from the engine's own letters: (1 + Ph + Ph^2 + Ph^3)/4 with Ph = phase(z,0) on every column (rational coefficients).
+ m=1 f=2: is a 0/1 diagonal matrix: True; keeps 1 of 4 addresses
+ m=2 f=2: is a 0/1 diagonal matrix: True; keeps 4 of 16 addresses
+ m=1 f=3: is a 0/1 diagonal matrix: True; keeps 1 of 8 addresses
+
+E. Column permutations as free steps (f = 3).  Witness 'all three digits equal' and witness 'number of equal pairs'.
+ m=1: swap(2,3) blind to 'first two equal': False; swaps blind to 'all equal': True; to 'number of equal pairs': True; free generators blind to both: True
+   k=1 z=(1,): weight under 'all equal': 4 exact; under 'number of equal pairs': 4 exact
+ m=2: swap(2,3) blind to 'first two equal': False; swaps blind to 'all equal': True; to 'number of equal pairs': True; free generators blind to both: True
+   k=1 z=(1,): weight under 'all equal': 8,8 mod 2 primes; under 'number of equal pairs': 32,32 mod 2 primes
+   k=1 z=(3,): weight under 'all equal': 8,8 mod 2 primes; under 'number of equal pairs': 32,32 mod 2 primes
+   k=2 z=(1, 2): weight under 'all equal': 8,8 mod 2 primes; under 'number of equal pairs': 40,40 mod 2 primes
+   k=2 z=(3, 1): weight under 'all equal': 8,8 mod 2 primes; under 'number of equal pairs': 40,40 mod 2 primes

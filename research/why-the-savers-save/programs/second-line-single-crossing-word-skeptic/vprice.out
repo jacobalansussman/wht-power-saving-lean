@@ -1,0 +1,5 @@
+calibration (one-sided, m 73, D 320)                       root 1.6647327e-03   first order T*D/N 1.6698e-03
+lemma floor (m 74, D 208, 9x112 rank-1 per replica)        root 1.0545261e-03   first order T*D/N 1.0566e-03
+lemma floor' (m 74, D 208, crossings absorbed)             root 1.0758216e-03   first order T*D/N 1.0779e-03
+trivial lift (m 74, D 320, 2 rank-1 per X array)           root 1.6246236e-03   first order T*D/N 1.6295e-03
+trivial lift' (m 74, D 320, crossings absorbed)            root 1.6537530e-03   first order T*D/N 1.6588e-03

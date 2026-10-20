@@ -1,0 +1,27 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 09:51:02
+[heavy.sh] got slot heavy-1 09:52:21
+octad removed: (0, 13, 22, 27, 92, 105, 114, 119) [('T', 0, 1, 2), ('T', 0, 3, 4), ('T', 0, 5, 6), ('T', 0, 7, 8), ('P', 1, 2), ('P', 3, 4), ('P', 5, 6), ('P', 7, 8)]
+|P| = 112
+(a) 8 coordinate totals of the removed octad: B = Gram/2 on P exactly: True; reads per total [(56, 8)]; cst = 64
+    the same totals on all 120 ports (they then read o itself): cst = 72 (control: 72)
+octads inside P: 1260  (each port of P in [(90, 112)] of them)
+(b) d = 8: 511 distinct port sets, most ports 64, most octads met 1260 of 1260 (157.5 per dim) [0 s]
+(b) d = 7: 43181 distinct port sets, most ports 36, most octads met 1260 of 1260 (180.0 per dim) [1 s]
+(b) d = 6: 776806 distinct port sets, most ports 20, most octads met 1155 of 1260 (192.5 per dim) [12 s]
+(b) d = 5: 2866579 distinct port sets, most ports 12, most octads met 897 of 1260 (179.4 per dim) [51 s]
+(b) d = 4: 1708359 distinct port sets, most ports 8, most octads met 612 of 1260 (153.0 per dim) [43 s]
+(b) d = 3: 161421 distinct port sets, most ports 4, most octads met 340 of 1260 (113.3 per dim) [9 s]
+(b) d = 2: 6329 distinct port sets, most ports 2, most octads met 180 of 1260 (90.0 per dim) [1 s]
+(b) d = 1: 113 distinct port sets, most ports 1, most octads met 90 of 1260 (90.0 per dim) [0 s]
+(b) octad-count floor on P: need 10080 octad-hits; LOWER BOUND cst >= 53 (most hits at 52: 9879)
+(c) uniform designs on P (all totals at one dimension d):
+    d = 1: ports/frame <=   1, octads met <=   90; K >= 112 (Hall), 112 (reads), 8 (rank): cost >= 112; K with cost < 64: []
+    d = 2: ports/frame <=   2, octads met <=  180; K >= 56 (Hall), 56 (reads), 8 (rank): cost >= 112; K with cost < 64: []
+    d = 3: ports/frame <=   4, octads met <=  340; K >= 30 (Hall), 32 (reads), 8 (rank): cost >= 96; K with cost < 64: []
+    d = 4: ports/frame <=   8, octads met <=  612; K >= 17 (Hall), 19 (reads), 8 (rank): cost >= 76; K with cost < 64: []
+    d = 5: ports/frame <=  12, octads met <=  897; K >= 12 (Hall), 14 (reads), 8 (rank): cost >= 70; K with cost < 64: []
+    d = 6: ports/frame <=  20, octads met <= 1155; K >= 9 (Hall), 9 (reads), 8 (rank): cost >= 54; K with cost < 64: [9, 10]
+    d = 7: ports/frame <=  36, octads met <= 1260; K >= 8 (Hall), 6 (reads), 8 (rank): cost >= 56; K with cost < 64: [8, 9]
+    d = 8: ports/frame <=  64, octads met <= 1260; K >= 8 (Hall), 4 (reads), 8 (rank): cost >= 64; K with cost < 64: []
+    d = 9: ports/frame <= 112, octads met <= 1260; K >= 8 (Hall), 2 (reads), 8 (rank): cost >= 72; K with cost < 64: []
+(d) d = 8: rank of the roots of the P-ports outside the frame, over distinct port sets: [(7, 8), (8, 503)]

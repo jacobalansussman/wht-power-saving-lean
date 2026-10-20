@@ -1,0 +1,11 @@
+[timing lock] waiting for timing lock 23:00:49
+[timing lock] got lock 23:01:39; load: { 18.18 14.97 10.36 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+round 0 SME2 v5 (STR Y', x4 out)     alone 0.2466  with SME hog on another P-core 0.4671 ns/pt  ratio 1.89
+round 0 vDSP_DFT_Execute xB          alone 0.3439  with SME hog on another P-core 0.6228 ns/pt  ratio 1.81
+round 0 vDSP_fft_zop xB              alone 0.5523  with SME hog on another P-core 1.0788 ns/pt  ratio 1.95
+round 0 PFFFT z-order xB (interl.)   alone 0.6557  with SME hog on another P-core 0.6766 ns/pt  ratio 1.03
+round 1 SME2 v5 (STR Y', x4 out)     alone 0.2473  with SME hog on another P-core 0.4700 ns/pt  ratio 1.90
+round 1 vDSP_DFT_Execute xB          alone 0.3439  with SME hog on another P-core 0.6218 ns/pt  ratio 1.81
+round 1 vDSP_fft_zop xB              alone 0.5525  with SME hog on another P-core 1.0787 ns/pt  ratio 1.95
+round 1 PFFFT z-order xB (interl.)   alone 0.6556  with SME hog on another P-core 0.6736 ns/pt  ratio 1.03

@@ -1,0 +1,39 @@
+[2s]
+|B'| = 1344  |E'| = 192
+dims A, B, C: 7 21 28
+C7 ⟂ C21: True
+hook type 7: t = -0.333333, residual 1.57e-14
+hook type 21: t = 1.000000, residual 4.00e-14
+family members (cap, demand): [(10, 28), (10, 28), (10, 28), (10, 28)]
+H order 2 fixes z-vectors [2, 5, 7] z-planes [(0, 1, 4, 5), (0, 2, 5, 7), (0, 3, 5, 6)]: slack-mode array structures passing {'4in12': 3, '5in15': 3, '6in18': 4, '8in24': 5, '12in36': 7, '24in72': 13, '5in13': 0, '2in5': 0}; tight 5in14 shapes 3
+       arrays 5x1 | moves 2x2(T1)+10x1(T2)
+       arrays 1x2+3x1 | moves 4x2(T1)+6x1(T2)
+       arrays 2x2+1x1 | moves 6x2(T1)+2x1(T2)
+H order 3 fixes z-vectors [2] z-planes [(0, 1, 4, 5)]: slack-mode array structures passing {'4in12': 2, '5in15': 2, '6in18': 3, '8in24': 3, '12in36': 5, '24in72': 9, '5in13': 0, '2in5': 0}; tight 5in14 shapes 2
+       arrays 5x1 | moves 3x3(T1)+5x1(T3)
+       arrays 1x3+2x1 | moves 4x3(T1)+2x1(T3)
+H order 4 fixes z-vectors [5] z-planes [(0, 1, 4, 5), (0, 2, 5, 7), (0, 3, 5, 6)]: slack-mode array structures passing {'4in12': 11, '5in15': 0, '6in18': 24, '8in24': 46, '12in36': 130, '24in72': 1036, '5in13': 0, '2in5': 0}; tight 5in14 shapes 7
+       arrays 2x2+1x1 | moves 1x2(T2)+1x2(T2)+5x2(T2)
+       arrays 1x2+1x2+1x1 | moves 1x2(T2)+3x2(T2)+3x2(T2)
+       arrays 2x2+1x1 | moves 1x2(T2)+5x2(T2)+1x2(T2)
+       arrays 1x2+1x2+1x1 | moves 3x2(T2)+1x2(T2)+3x2(T2)
+H order 4 fixes z-vectors [2, 5, 7] z-planes [(0, 2, 5, 7)]: slack-mode array structures passing {'4in12': 11, '5in15': 0, '6in18': 24, '8in24': 46, '12in36': 130, '24in72': 1036, '5in13': 0, '2in5': 0}; tight 5in14 shapes 7
+       arrays 2x2+1x1 | moves 1x2(T2)+1x2(T2)+5x2(T2)
+       arrays 1x2+1x2+1x1 | moves 1x2(T2)+3x2(T2)+3x2(T2)
+       arrays 2x2+1x1 | moves 1x2(T2)+5x2(T2)+1x2(T2)
+       arrays 1x2+1x2+1x1 | moves 3x2(T2)+1x2(T2)+3x2(T2)
+H order 4 fixes z-vectors [5] z-planes [(0, 2, 5, 7)]: slack-mode array structures passing {'4in12': 4, '5in15': 0, '6in18': 6, '8in24': 9, '12in36': 16, '24in72': 49, '5in13': 0, '2in5': 0}; tight 5in14 shapes 3
+       arrays 1x2+3x1 | moves 1x4(T1)+5x2(T2)
+       arrays 2x2+1x1 | moves 1x4(T1)+5x2(T2)
+       arrays 1x4+1x1 | moves 3x4(T1)+1x2(T2)
+H order 6 fixes z-vectors [2] z-planes [(0, 1, 4, 5)]: slack-mode array structures passing {'4in12': 4, '5in15': 5, '6in18': 8, '8in24': 12, '12in36': 27, '24in72': 125, '5in13': 0, '2in5': 0}; tight 5in14 shapes 6
+       arrays 1x2+3x1 | moves 3x3(T2)+1x2(T3)+3x1(T6)
+       arrays 1x2+3x1 | moves 1x6(T1)+1x3(T2)+5x1(T6)
+       arrays 2x2+1x1 | moves 1x6(T1)+1x3(T2)+2x2(T3)+1x1(T6)
+       arrays 1x3+2x1 | moves 4x3(T2)+2x1(T6)
+H order 8 fixes z-vectors [2] z-planes [(0, 2, 5, 7)]: slack-mode array structures passing {'4in12': 3, '5in15': 0, '6in18': 0, '8in24': 49, '12in36': 219, '24in72': 4216, '5in13': 0, '2in5': 0}; tight 5in14 shapes 0
+H order 12 fixes z-vectors [] z-planes [(0, 2, 5, 7)]: slack-mode array structures passing {'4in12': 1, '5in15': 0, '6in18': 1, '8in24': 3, '12in36': 10, '24in72': 67, '5in13': 0, '2in5': 0}; tight 5in14 shapes 0
+H order 12 fixes z-vectors [5] z-planes []: slack-mode array structures passing {'4in12': 1, '5in15': 0, '6in18': 1, '8in24': 3, '12in36': 10, '24in72': 67, '5in13': 0, '2in5': 0}; tight 5in14 shapes 0
+H order 24 fixes z-vectors [] z-planes [(0, 3, 5, 6)]: slack-mode array structures passing {'4in12': 1, '5in15': 0, '6in18': 0, '8in24': 5, '12in36': 29, '24in72': 658, '5in13': 0, '2in5': 0}; tight 5in14 shapes 0
+H order 24 fixes z-vectors [7] z-planes []: slack-mode array structures passing {'4in12': 1, '5in15': 0, '6in18': 0, '8in24': 5, '12in36': 29, '24in72': 658, '5in13': 0, '2in5': 0}; tight 5in14 shapes 0
+[43s]

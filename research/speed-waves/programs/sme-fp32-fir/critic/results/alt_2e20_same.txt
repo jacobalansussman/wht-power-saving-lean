@@ -1,0 +1,312 @@
+[timing lock] waiting for timing lock 00:23:08
+[timing lock] got lock 00:31:01; load: { 35.20 22.92 13.82 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=16 n=2^20 NT=4 NTS=2 BLAS_B=64 J=2 (useful MAC fraction 0.125) BLAS_CH=16384 ols_N=256 pf_N=1024 VPOS=0
+## alt L=16 n=2^20 same NT=4 B=64  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  vdsp_conv                          0.3116
+rep  0  vdsp_conv_pos                      0.3126
+rep  0  vdsp_conv_mt                       0.1523
+rep  0  ols_pffft                          0.8164
+rep  0  pffft_ols_mt                       0.3814
+rep  0  ols2_vdsp_mt                       0.4096
+rep  0  sme_toeplitz                       0.0809
+rep  0  sme_mt                             0.0744
+rep  0  blas_toep                          0.2564
+rep  1  vdsp_conv_pos                      0.3117
+rep  1  vdsp_conv_mt                       0.1566
+rep  1  ols_pffft                          0.8052
+rep  1  pffft_ols_mt                       0.3935
+rep  1  ols2_vdsp_mt                       0.4206
+rep  1  sme_toeplitz                       0.0681
+rep  1  sme_mt                             0.0700
+rep  1  blas_toep                          0.2542
+rep  1  vdsp_conv                          0.3115
+rep  2  vdsp_conv_mt                       0.1561
+rep  2  ols_pffft                          0.8083
+rep  2  pffft_ols_mt                       0.3970
+rep  2  ols2_vdsp_mt                       0.4306
+rep  2  sme_toeplitz                       0.0687
+rep  2  sme_mt                             0.0685
+rep  2  blas_toep                          0.2589
+rep  2  vdsp_conv                          0.3152
+rep  2  vdsp_conv_pos                      0.3134
+rep  3  ols_pffft                          0.8103
+rep  3  pffft_ols_mt                       0.3899
+rep  3  ols2_vdsp_mt                       0.4167
+rep  3  sme_toeplitz                       0.0802
+rep  3  sme_mt                             0.0780
+rep  3  blas_toep                          0.2502
+rep  3  vdsp_conv                          0.3198
+rep  3  vdsp_conv_pos                      0.3175
+rep  3  vdsp_conv_mt                       0.1550
+rep  4  pffft_ols_mt                       0.3823
+rep  4  ols2_vdsp_mt                       0.4159
+rep  4  sme_toeplitz                       0.0795
+rep  4  sme_mt                             0.0772
+rep  4  blas_toep                          0.2532
+rep  4  vdsp_conv                          0.3134
+rep  4  vdsp_conv_pos                      0.3272
+rep  4  vdsp_conv_mt                       0.1512
+rep  4  ols_pffft                          0.8197
+rep  5  ols2_vdsp_mt                       0.4178
+rep  5  sme_toeplitz                       0.0823
+rep  5  sme_mt                             0.0788
+rep  5  blas_toep                          0.2614
+rep  5  vdsp_conv                          0.3184
+rep  5  vdsp_conv_pos                      0.3147
+rep  5  vdsp_conv_mt                       0.1560
+rep  5  ols_pffft                          0.8188
+rep  5  pffft_ols_mt                       0.3806
+rep  6  sme_toeplitz                       0.0823
+rep  6  sme_mt                             0.0781
+rep  6  blas_toep                          0.2545
+rep  6  vdsp_conv                          0.3231
+rep  6  vdsp_conv_pos                      0.3237
+rep  6  vdsp_conv_mt                       0.1525
+rep  6  ols_pffft                          0.8276
+rep  6  pffft_ols_mt                       0.3860
+rep  6  ols2_vdsp_mt                       0.4157
+rep  7  sme_mt                             0.0722
+rep  7  blas_toep                          0.2540
+rep  7  vdsp_conv                          0.3189
+rep  7  vdsp_conv_pos                      0.3218
+rep  7  vdsp_conv_mt                       0.1538
+rep  7  ols_pffft                          0.8238
+rep  7  pffft_ols_mt                       0.3806
+rep  7  ols2_vdsp_mt                       0.4207
+rep  7  sme_toeplitz                       0.0805
+rep  8  blas_toep                          0.2495
+rep  8  vdsp_conv                          0.3276
+rep  8  vdsp_conv_pos                      0.3189
+rep  8  vdsp_conv_mt                       0.1505
+rep  8  ols_pffft                          0.8322
+rep  8  pffft_ols_mt                       0.3827
+rep  8  ols2_vdsp_mt                       0.4136
+rep  8  sme_toeplitz                       0.0807
+rep  8  sme_mt                             0.0786
+RESULT alt L=16 n=2^20 same NT=4 B=64           vdsp_conv                    best     0.3115  median     0.3184  ns/output  (calls/rep 675)
+RESULT alt L=16 n=2^20 same NT=4 B=64           vdsp_conv_pos                best     0.3117  median     0.3175  ns/output  (calls/rep 673)
+RESULT alt L=16 n=2^20 same NT=4 B=64           vdsp_conv_mt                 best     0.1505  median     0.1538  ns/output  (calls/rep 1365)
+RESULT alt L=16 n=2^20 same NT=4 B=64           ols_pffft                    best     0.8052  median     0.8188  ns/output  (calls/rep 251)
+RESULT alt L=16 n=2^20 same NT=4 B=64           pffft_ols_mt                 best     0.3806  median     0.3827  ns/output  (calls/rep 555)
+RESULT alt L=16 n=2^20 same NT=4 B=64           ols2_vdsp_mt                 best     0.4096  median     0.4167  ns/output  (calls/rep 495)
+RESULT alt L=16 n=2^20 same NT=4 B=64           sme_toeplitz                 best     0.0681  median     0.0805  ns/output  (calls/rep 2823)
+RESULT alt L=16 n=2^20 same NT=4 B=64           sme_mt                       best     0.0685  median     0.0772  ns/output  (calls/rep 2734)
+RESULT alt L=16 n=2^20 same NT=4 B=64           blas_toep                    best     0.2495  median     0.2542  ns/output  (calls/rep 784)
+GMACS alt L=16 n=2^20 same NT=4 B=64           vdsp_conv      best   0.3115 ns/out =    51.4 GMAC/s (median   0.3184)
+GMACS alt L=16 n=2^20 same NT=4 B=64           vdsp_conv_pos  best   0.3117 ns/out =    51.3 GMAC/s (median   0.3175)
+GMACS alt L=16 n=2^20 same NT=4 B=64           vdsp_conv_mt   best   0.1505 ns/out =   106.3 GMAC/s (median   0.1538)
+GMACS alt L=16 n=2^20 same NT=4 B=64           ols_pffft      best   0.8052 ns/out =    19.9 GMAC/s (median   0.8188)
+GMACS alt L=16 n=2^20 same NT=4 B=64           pffft_ols_mt   best   0.3806 ns/out =    42.0 GMAC/s (median   0.3827)
+GMACS alt L=16 n=2^20 same NT=4 B=64           ols2_vdsp_mt   best   0.4096 ns/out =    39.1 GMAC/s (median   0.4167)
+GMACS alt L=16 n=2^20 same NT=4 B=64           sme_toeplitz   best   0.0681 ns/out =   235.0 GMAC/s (median   0.0805)
+GMACS alt L=16 n=2^20 same NT=4 B=64           sme_mt         best   0.0685 ns/out =   233.5 GMAC/s (median   0.0772)
+GMACS alt L=16 n=2^20 same NT=4 B=64           blas_toep      best   0.2495 ns/out =    64.1 GMAC/s (median   0.2542)
+[timing lock] waiting for timing lock 00:31:21
+[timing lock] got lock 00:36:31; load: { 45.25 37.67 23.74 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=64 n=2^20 NT=4 NTS=2 BLAS_B=64 J=2 (useful MAC fraction 0.500) BLAS_CH=16384 ols_N=512 pf_N=1024 VPOS=0
+## alt L=64 n=2^20 same NT=4 B=64  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  vdsp_conv                          1.2105
+rep  0  vdsp_conv_pos                      1.2090
+rep  0  vdsp_conv_mt                       0.5132
+rep  0  ols_pffft                          0.8632
+rep  0  pffft_ols_mt                       0.4065
+rep  0  ols2_vdsp_mt                       0.4674
+rep  0  sme_toeplitz                       0.1159
+rep  0  sme_mt                             0.1142
+rep  0  blas_toep                          0.2574
+rep  1  vdsp_conv_pos                      1.2063
+rep  1  vdsp_conv_mt                       0.5011
+rep  1  ols_pffft                          0.8514
+rep  1  pffft_ols_mt                       0.3925
+rep  1  ols2_vdsp_mt                       0.4523
+rep  1  sme_toeplitz                       0.1146
+rep  1  sme_mt                             0.1113
+rep  1  blas_toep                          0.2616
+rep  1  vdsp_conv                          1.2194
+rep  2  vdsp_conv_mt                       0.4984
+rep  2  ols_pffft                          0.8517
+rep  2  pffft_ols_mt                       0.3942
+rep  2  ols2_vdsp_mt                       0.4547
+rep  2  sme_toeplitz                       0.1130
+rep  2  sme_mt                             0.1086
+rep  2  blas_toep                          0.2428
+rep  2  vdsp_conv                          1.2116
+rep  2  vdsp_conv_pos                      1.2049
+rep  3  ols_pffft                          0.8498
+rep  3  pffft_ols_mt                       0.3979
+rep  3  ols2_vdsp_mt                       0.4545
+rep  3  sme_toeplitz                       0.1142
+rep  3  sme_mt                             0.1110
+rep  3  blas_toep                          0.2559
+rep  3  vdsp_conv                          1.2125
+rep  3  vdsp_conv_pos                      1.2042
+rep  3  vdsp_conv_mt                       0.5020
+rep  4  pffft_ols_mt                       0.4057
+rep  4  ols2_vdsp_mt                       0.4580
+rep  4  sme_toeplitz                       0.1136
+rep  4  sme_mt                             0.1102
+rep  4  blas_toep                          0.2839
+rep  4  vdsp_conv                          1.2223
+rep  4  vdsp_conv_pos                      1.2163
+rep  4  vdsp_conv_mt                       0.4940
+rep  4  ols_pffft                          0.8574
+rep  5  ols2_vdsp_mt                       0.4583
+rep  5  sme_toeplitz                       0.1146
+rep  5  sme_mt                             0.1109
+rep  5  blas_toep                          0.2491
+rep  5  vdsp_conv                          1.2153
+rep  5  vdsp_conv_pos                      1.2141
+rep  5  vdsp_conv_mt                       0.4946
+rep  5  ols_pffft                          0.8455
+rep  5  pffft_ols_mt                       0.3977
+rep  6  sme_toeplitz                       0.1130
+rep  6  sme_mt                             0.1082
+rep  6  blas_toep                          0.2509
+rep  6  vdsp_conv                          1.2067
+rep  6  vdsp_conv_pos                      1.2130
+rep  6  vdsp_conv_mt                       0.5000
+rep  6  ols_pffft                          0.8601
+rep  6  pffft_ols_mt                       0.3934
+rep  6  ols2_vdsp_mt                       0.4546
+rep  7  sme_mt                             0.1092
+rep  7  blas_toep                          0.2491
+rep  7  vdsp_conv                          1.2242
+rep  7  vdsp_conv_pos                      1.2118
+rep  7  vdsp_conv_mt                       0.4953
+rep  7  ols_pffft                          0.8474
+rep  7  pffft_ols_mt                       0.3950
+rep  7  ols2_vdsp_mt                       0.4564
+rep  7  sme_toeplitz                       0.1157
+rep  8  blas_toep                          0.2532
+rep  8  vdsp_conv                          1.2218
+rep  8  vdsp_conv_pos                      1.2281
+rep  8  vdsp_conv_mt                       0.4931
+rep  8  ols_pffft                          0.8803
+rep  8  pffft_ols_mt                       0.4026
+rep  8  ols2_vdsp_mt                       0.4706
+rep  8  sme_toeplitz                       0.1156
+rep  8  sme_mt                             0.1171
+RESULT alt L=64 n=2^20 same NT=4 B=64           vdsp_conv                    best     1.2067  median     1.2153  ns/output  (calls/rep 174)
+RESULT alt L=64 n=2^20 same NT=4 B=64           vdsp_conv_pos                best     1.2042  median     1.2118  ns/output  (calls/rep 175)
+RESULT alt L=64 n=2^20 same NT=4 B=64           vdsp_conv_mt                 best     0.4931  median     0.4984  ns/output  (calls/rep 416)
+RESULT alt L=64 n=2^20 same NT=4 B=64           ols_pffft                    best     0.8455  median     0.8517  ns/output  (calls/rep 246)
+RESULT alt L=64 n=2^20 same NT=4 B=64           pffft_ols_mt                 best     0.3925  median     0.3977  ns/output  (calls/rep 543)
+RESULT alt L=64 n=2^20 same NT=4 B=64           ols2_vdsp_mt                 best     0.4523  median     0.4564  ns/output  (calls/rep 453)
+RESULT alt L=64 n=2^20 same NT=4 B=64           sme_toeplitz                 best     0.1130  median     0.1146  ns/output  (calls/rep 1851)
+RESULT alt L=64 n=2^20 same NT=4 B=64           sme_mt                       best     0.1082  median     0.1109  ns/output  (calls/rep 1920)
+RESULT alt L=64 n=2^20 same NT=4 B=64           blas_toep                    best     0.2428  median     0.2532  ns/output  (calls/rep 861)
+GMACS alt L=64 n=2^20 same NT=4 B=64           vdsp_conv      best   1.2067 ns/out =    53.0 GMAC/s (median   1.2153)
+GMACS alt L=64 n=2^20 same NT=4 B=64           vdsp_conv_pos  best   1.2042 ns/out =    53.1 GMAC/s (median   1.2118)
+GMACS alt L=64 n=2^20 same NT=4 B=64           vdsp_conv_mt   best   0.4931 ns/out =   129.8 GMAC/s (median   0.4984)
+GMACS alt L=64 n=2^20 same NT=4 B=64           ols_pffft      best   0.8455 ns/out =    75.7 GMAC/s (median   0.8517)
+GMACS alt L=64 n=2^20 same NT=4 B=64           pffft_ols_mt   best   0.3925 ns/out =   163.0 GMAC/s (median   0.3977)
+GMACS alt L=64 n=2^20 same NT=4 B=64           ols2_vdsp_mt   best   0.4523 ns/out =   141.5 GMAC/s (median   0.4564)
+GMACS alt L=64 n=2^20 same NT=4 B=64           sme_toeplitz   best   0.1130 ns/out =   566.3 GMAC/s (median   0.1146)
+GMACS alt L=64 n=2^20 same NT=4 B=64           sme_mt         best   0.1082 ns/out =   591.6 GMAC/s (median   0.1109)
+GMACS alt L=64 n=2^20 same NT=4 B=64           blas_toep      best   0.2428 ns/out =   263.5 GMAC/s (median   0.2532)
+[timing lock] waiting for timing lock 00:36:52
+[timing lock] got lock 00:40:28; load: { 48.03 42.60 29.23 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# alt L=256 n=2^20 NT=4 NTS=2 BLAS_B=64 J=5 (useful MAC fraction 0.800) BLAS_CH=16384 ols_N=8192 pf_N=2048 VPOS=0
+## alt L=256 n=2^20 same NT=4 B=64  (9 repeats of >= 0.20 s each, programs take turns; ns per output)
+rep  0  vdsp_conv                          5.5483
+rep  0  vdsp_conv_pos                      5.5329
+rep  0  vdsp_conv_mt                       2.1536
+rep  0  ols_pffft                          0.9977
+rep  0  pffft_ols_mt                       0.4810
+rep  0  ols2_vdsp_mt                       0.5439
+rep  0  sme_toeplitz                       0.3352
+rep  0  sme_mt                             0.3474
+rep  0  blas_toep                          0.6956
+rep  1  vdsp_conv_pos                      5.5285
+rep  1  vdsp_conv_mt                       2.1511
+rep  1  ols_pffft                          0.9995
+rep  1  pffft_ols_mt                       0.4822
+rep  1  ols2_vdsp_mt                       0.5406
+rep  1  sme_toeplitz                       0.3305
+rep  1  sme_mt                             0.3382
+rep  1  blas_toep                          0.6678
+rep  1  vdsp_conv                          5.5352
+rep  2  vdsp_conv_mt                       2.1568
+rep  2  ols_pffft                          1.0097
+rep  2  pffft_ols_mt                       0.4822
+rep  2  ols2_vdsp_mt                       0.5533
+rep  2  sme_toeplitz                       0.3243
+rep  2  sme_mt                             0.3322
+rep  2  blas_toep                          0.6703
+rep  2  vdsp_conv                          5.5316
+rep  2  vdsp_conv_pos                      5.5236
+rep  3  ols_pffft                          1.0125
+rep  3  pffft_ols_mt                       0.4832
+rep  3  ols2_vdsp_mt                       0.6478
+rep  3  sme_toeplitz                       0.3229
+rep  3  sme_mt                             0.3378
+rep  3  blas_toep                          0.6919
+rep  3  vdsp_conv                          5.5355
+rep  3  vdsp_conv_pos                      5.5254
+rep  3  vdsp_conv_mt                       2.0961
+rep  4  pffft_ols_mt                       0.4818
+rep  4  ols2_vdsp_mt                       0.5429
+rep  4  sme_toeplitz                       0.3243
+rep  4  sme_mt                             0.3355
+rep  4  blas_toep                          0.6701
+rep  4  vdsp_conv                          5.5579
+rep  4  vdsp_conv_pos                      5.5371
+rep  4  vdsp_conv_mt                       2.1277
+rep  4  ols_pffft                          1.0041
+rep  5  ols2_vdsp_mt                       0.5438
+rep  5  sme_toeplitz                       0.3272
+rep  5  sme_mt                             0.3318
+rep  5  blas_toep                          0.6701
+rep  5  vdsp_conv                          5.5391
+rep  5  vdsp_conv_pos                      5.5265
+rep  5  vdsp_conv_mt                       2.1012
+rep  5  ols_pffft                          1.0138
+rep  5  pffft_ols_mt                       0.4792
+rep  6  sme_toeplitz                       0.3248
+rep  6  sme_mt                             0.3357
+rep  6  blas_toep                          0.6651
+rep  6  vdsp_conv                          5.5371
+rep  6  vdsp_conv_pos                      5.5306
+rep  6  vdsp_conv_mt                       2.1443
+rep  6  ols_pffft                          1.0168
+rep  6  pffft_ols_mt                       0.4804
+rep  6  ols2_vdsp_mt                       0.5468
+rep  7  sme_mt                             0.3326
+rep  7  blas_toep                          0.6721
+rep  7  vdsp_conv                          5.5452
+rep  7  vdsp_conv_pos                      5.5323
+rep  7  vdsp_conv_mt                       2.1384
+rep  7  ols_pffft                          0.9911
+rep  7  pffft_ols_mt                       0.4787
+rep  7  ols2_vdsp_mt                       0.5455
+rep  7  sme_toeplitz                       0.3210
+rep  8  blas_toep                          0.6695
+rep  8  vdsp_conv                          5.5391
+rep  8  vdsp_conv_pos                      5.5280
+rep  8  vdsp_conv_mt                       2.1419
+rep  8  ols_pffft                          0.9880
+rep  8  pffft_ols_mt                       0.4792
+rep  8  ols2_vdsp_mt                       0.5527
+rep  8  sme_toeplitz                       0.3233
+rep  8  sme_mt                             0.3332
+RESULT alt L=256 n=2^20 same NT=4 B=64          vdsp_conv                    best     5.5316  median     5.5391  ns/output  (calls/rep 38)
+RESULT alt L=256 n=2^20 same NT=4 B=64          vdsp_conv_pos                best     5.5236  median     5.5285  ns/output  (calls/rep 38)
+RESULT alt L=256 n=2^20 same NT=4 B=64          vdsp_conv_mt                 best     2.0961  median     2.1419  ns/output  (calls/rep 97)
+RESULT alt L=256 n=2^20 same NT=4 B=64          ols_pffft                    best     0.9880  median     1.0041  ns/output  (calls/rep 199)
+RESULT alt L=256 n=2^20 same NT=4 B=64          pffft_ols_mt                 best     0.4787  median     0.4810  ns/output  (calls/rep 429)
+RESULT alt L=256 n=2^20 same NT=4 B=64          ols2_vdsp_mt                 best     0.5406  median     0.5455  ns/output  (calls/rep 327)
+RESULT alt L=256 n=2^20 same NT=4 B=64          sme_toeplitz                 best     0.3210  median     0.3243  ns/output  (calls/rep 663)
+RESULT alt L=256 n=2^20 same NT=4 B=64          sme_mt                       best     0.3318  median     0.3355  ns/output  (calls/rep 628)
+RESULT alt L=256 n=2^20 same NT=4 B=64          blas_toep                    best     0.6651  median     0.6701  ns/output  (calls/rep 306)
+GMACS alt L=256 n=2^20 same NT=4 B=64          vdsp_conv      best   5.5316 ns/out =    46.3 GMAC/s (median   5.5391)
+GMACS alt L=256 n=2^20 same NT=4 B=64          vdsp_conv_pos  best   5.5236 ns/out =    46.3 GMAC/s (median   5.5285)
+GMACS alt L=256 n=2^20 same NT=4 B=64          vdsp_conv_mt   best   2.0961 ns/out =   122.1 GMAC/s (median   2.1419)
+GMACS alt L=256 n=2^20 same NT=4 B=64          ols_pffft      best   0.9880 ns/out =   259.1 GMAC/s (median   1.0041)
+GMACS alt L=256 n=2^20 same NT=4 B=64          pffft_ols_mt   best   0.4787 ns/out =   534.8 GMAC/s (median   0.4810)
+GMACS alt L=256 n=2^20 same NT=4 B=64          ols2_vdsp_mt   best   0.5406 ns/out =   473.6 GMAC/s (median   0.5455)
+GMACS alt L=256 n=2^20 same NT=4 B=64          sme_toeplitz   best   0.3210 ns/out =   797.6 GMAC/s (median   0.3243)
+GMACS alt L=256 n=2^20 same NT=4 B=64          sme_mt         best   0.3318 ns/out =   771.5 GMAC/s (median   0.3355)
+GMACS alt L=256 n=2^20 same NT=4 B=64          blas_toep      best   0.6651 ns/out =   384.9 GMAC/s (median   0.6701)

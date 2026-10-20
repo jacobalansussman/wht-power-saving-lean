@@ -1,0 +1,33 @@
+vcheck.py:67: RuntimeWarning: divide by zero encountered in matmul
+  M = U.conj().T @ Q @ U
+vcheck.py:67: RuntimeWarning: overflow encountered in matmul
+  M = U.conj().T @ Q @ U
+vcheck.py:67: RuntimeWarning: invalid value encountered in matmul
+  M = U.conj().T @ Q @ U
+vcheck.py:178: RuntimeWarning: divide by zero encountered in matmul
+  D = (ca * np.eye(2 ** (m * f)) + cb * shc) @ D
+vcheck.py:178: RuntimeWarning: overflow encountered in matmul
+  D = (ca * np.eye(2 ** (m * f)) + cb * shc) @ D
+vcheck.py:178: RuntimeWarning: invalid value encountered in matmul
+  D = (ca * np.eye(2 ** (m * f)) + cb * shc) @ D
+vcheck.py:199: RuntimeWarning: divide by zero encountered in matmul
+  regs[r] = (free[rng.integers(len(free))] @ op, npth, dep)
+vcheck.py:199: RuntimeWarning: overflow encountered in matmul
+  regs[r] = (free[rng.integers(len(free))] @ op, npth, dep)
+vcheck.py:199: RuntimeWarning: invalid value encountered in matmul
+  regs[r] = (free[rng.integers(len(free))] @ op, npth, dep)
+vcheck.py:201: RuntimeWarning: divide by zero encountered in matmul
+  regs[r] = (dirs[rng.integers(len(dirs))] @ op, npth, dep + 1)
+vcheck.py:201: RuntimeWarning: overflow encountered in matmul
+  regs[r] = (dirs[rng.integers(len(dirs))] @ op, npth, dep + 1)
+vcheck.py:201: RuntimeWarning: invalid value encountered in matmul
+  regs[r] = (dirs[rng.integers(len(dirs))] @ op, npth, dep + 1)
+(A) dir == H S H: True ; S dir S == omega H: True
+(B) nonzeros per row and column = 2^d for 300/300 random Cliffords; (m, d) counts [((2, 0), 30), ((2, 1), 62), ((2, 2), 58), ((3, 0), 26), ((3, 1), 47), ((3, 2), 48), ((3, 3), 29)]
+(C) d(U (x) V) = d(U) + d(V): 60/60 ; d(L0, K L0) at m = 2: 2, K (x) K (W = 2 tensor copies, 4 qubits) distance 4
+(D) f=1: K^(x)f nonzeros per column 4 = 2^(m f) = 4
+(D) f=2: K^(x)f nonzeros per column 16 = 2^(m f) = 16
+(D) f=3: K^(x)f nonzeros per column 64 = 2^(m f) = 64
+(D) f=4: K^(x)f nonzeros per column 256 = 2^(m f) = 256
+(D) support bound nnz/col <= paths * 2^(f * depth): 1912/1912 register states pass; max ratio 1.000
+python3 -I vcheck.py  0.64s user 0.02s system 98% cpu 0.670 total

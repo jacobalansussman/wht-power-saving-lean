@@ -1,0 +1,343 @@
+{
+ "shape_I": {
+  "1": {
+   "with_half_reads": {
+    "consumers_get_p": true,
+    "helpers_sources_restored": true,
+    "monotone": true,
+    "final_frames_in_caps": true,
+    "registers_at_P": [
+     "a",
+     "b"
+    ],
+    "n_at_P": 2,
+    "consumer_chain_dims": {
+     "t1": [
+      0,
+      4
+     ]
+    },
+    "gates": 13,
+    "compensation_reads": 2,
+    "reads_per_consumer": {
+     "t1": 1
+    },
+    "half_reads": 0
+   },
+   "two_copy_interface": {
+    "consumers_get_p": true,
+    "helpers_sources_restored": true,
+    "monotone": true,
+    "final_frames_in_caps": true,
+    "registers_at_P": [
+     "a",
+     "b"
+    ],
+    "n_at_P": 2,
+    "consumer_chain_dims": {
+     "t1": [
+      0,
+      4
+     ]
+    },
+    "gates": 13,
+    "compensation_reads": 2,
+    "reads_per_consumer": {
+     "t1": 1
+    },
+    "half_reads": 0
+   }
+  },
+  "2": {
+   "with_half_reads": {
+    "consumers_get_p": true,
+    "helpers_sources_restored": true,
+    "monotone": true,
+    "final_frames_in_caps": true,
+    "registers_at_P": [
+     "a",
+     "b"
+    ],
+    "n_at_P": 2,
+    "consumer_chain_dims": {
+     "t1": [
+      0,
+      4
+     ],
+     "t2": [
+      0,
+      2,
+      4
+     ]
+    },
+    "gates": 17,
+    "compensation_reads": 4,
+    "reads_per_consumer": {
+     "t1": 1,
+     "t2": 2
+    },
+    "half_reads": 1
+   },
+   "two_copy_interface": {
+    "consumers_get_p": true,
+    "helpers_sources_restored": true,
+    "monotone": true,
+    "final_frames_in_caps": true,
+    "registers_at_P": [
+     "a",
+     "b",
+     "c0"
+    ],
+    "n_at_P": 3,
+    "consumer_chain_dims": {
+     "t1": [
+      0,
+      4
+     ],
+     "t2": [
+      0,
+      4
+     ]
+    },
+    "gates": 19,
+    "compensation_reads": 5,
+    "reads_per_consumer": {
+     "t1": 1,
+     "t2": 1
+    },
+    "half_reads": 0
+   }
+  },
+  "3": {
+   "with_half_reads": {
+    "consumers_get_p": true,
+    "helpers_sources_restored": true,
+    "monotone": true,
+    "final_frames_in_caps": true,
+    "registers_at_P": [
+     "a",
+     "b",
+     "c0"
+    ],
+    "n_at_P": 3,
+    "consumer_chain_dims": {
+     "t1": [
+      0,
+      4
+     ],
+     "t2": [
+      0,
+      4
+     ],
+     "t3": [
+      0,
+      2,
+      4
+     ]
+    },
+    "gates": 23,
+    "compensation_reads": 7,
+    "reads_per_consumer": {
+     "t1": 1,
+     "t2": 1,
+     "t3": 2
+    },
+    "half_reads": 1
+   },
+   "two_copy_interface": {
+    "consumers_get_p": true,
+    "helpers_sources_restored": true,
+    "monotone": true,
+    "final_frames_in_caps": true,
+    "registers_at_P": [
+     "a",
+     "b",
+     "c0",
+     "c1"
+    ],
+    "n_at_P": 4,
+    "consumer_chain_dims": {
+     "t1": [
+      0,
+      4
+     ],
+     "t2": [
+      0,
+      4
+     ],
+     "t3": [
+      0,
+      4
+     ]
+    },
+    "gates": 25,
+    "compensation_reads": 8,
+    "reads_per_consumer": {
+     "t1": 1,
+     "t2": 1,
+     "t3": 1
+    },
+    "half_reads": 0
+   }
+  },
+  "4": {
+   "with_half_reads": {
+    "consumers_get_p": true,
+    "helpers_sources_restored": true,
+    "monotone": true,
+    "final_frames_in_caps": true,
+    "registers_at_P": [
+     "a",
+     "b",
+     "c0",
+     "c1"
+    ],
+    "n_at_P": 4,
+    "consumer_chain_dims": {
+     "t1": [
+      0,
+      4
+     ],
+     "t2": [
+      0,
+      4
+     ],
+     "t3": [
+      0,
+      4
+     ],
+     "t4": [
+      0,
+      2,
+      4
+     ]
+    },
+    "gates": 29,
+    "compensation_reads": 10,
+    "reads_per_consumer": {
+     "t1": 1,
+     "t2": 1,
+     "t3": 1,
+     "t4": 2
+    },
+    "half_reads": 1
+   },
+   "two_copy_interface": {
+    "consumers_get_p": true,
+    "helpers_sources_restored": true,
+    "monotone": true,
+    "final_frames_in_caps": true,
+    "registers_at_P": [
+     "a",
+     "b",
+     "c0",
+     "c1",
+     "c2"
+    ],
+    "n_at_P": 5,
+    "consumer_chain_dims": {
+     "t1": [
+      0,
+      4
+     ],
+     "t2": [
+      0,
+      4
+     ],
+     "t3": [
+      0,
+      4
+     ],
+     "t4": [
+      0,
+      4
+     ]
+    },
+    "gates": 31,
+    "compensation_reads": 11,
+    "reads_per_consumer": {
+     "t1": 1,
+     "t2": 1,
+     "t3": 1,
+     "t4": 1
+    },
+    "half_reads": 0
+   }
+  }
+ },
+ "shape_N": {
+  "two_copy_interface": {
+   "consumers_get_p": true,
+   "helpers_sources_restored": true,
+   "monotone": true,
+   "final_frames_in_caps": true,
+   "registers_at_P": [
+    "a",
+    "b",
+    "c0"
+   ],
+   "n_at_P": 3,
+   "consumer_chain_dims": {
+    "tA": [
+     0,
+     4
+    ],
+    "tH1": [
+     0,
+     4
+    ],
+    "tH2": [
+     0,
+     5
+    ]
+   },
+   "gates": 23,
+   "compensation_reads": 8,
+   "reads_per_consumer": {
+    "tA": 1,
+    "tH1": 1,
+    "tH2": 1
+   },
+   "half_reads": 0
+  },
+  "with_half_reads": {
+   "consumers_get_p": true,
+   "helpers_sources_restored": true,
+   "monotone": true,
+   "final_frames_in_caps": true,
+   "registers_at_P": [
+    "a",
+    "b"
+   ],
+   "n_at_P": 2,
+   "consumer_chain_dims": {
+    "tA": [
+     0,
+     4
+    ],
+    "tH1": [
+     0,
+     2,
+     4
+    ],
+    "tH2": [
+     0,
+     2,
+     5
+    ]
+   },
+   "gates": 21,
+   "compensation_reads": 6,
+   "reads_per_consumer": {
+    "tA": 1,
+    "tH1": 2,
+    "tH2": 2
+   },
+   "half_reads": 2
+  }
+ },
+ "branch_lemma": {
+  "pairs_checked": 6,
+  "nested_pairs": 0
+ }
+}

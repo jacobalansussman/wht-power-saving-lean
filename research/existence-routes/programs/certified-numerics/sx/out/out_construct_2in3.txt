@@ -1,0 +1,10 @@
+|B| = 3072 (4s)
+distinct rho(b): 1536; dim_C A = 88 (exact rank; 36 + 36 + 16 = 88 needed for Lemma 1)
+ranks: R[U6,U4] = 2  R[U4,U6] = 2
+dim (U6+U6K) = 9  needed P-gain per array dim 3 ;  dim (U4+U4K) = 7  needed Q-gain per array dim 3
+lower bound from Lemma 2: s >= 3 (P) and 3 (Q); constructing with s = 3
+Sym^2 scheme built (108s)
+output 0: 0 of 512 entries differ from rho(D1 D0) in block 0 (exact)
+output 1: 0 of 512 entries differ from rho(D1 D0) in block 1 (exact)
+EXACT VERDICT (109s): a 2-in-3 scheme EXISTS in the V(x)V stand-in: every mixing matrix is block diagonal in the adapted basis, hence in A by Lemma 1, and the program output equals the target exactly
+wrote scheme_2in3.json

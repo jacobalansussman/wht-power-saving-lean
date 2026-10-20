@@ -1,0 +1,164 @@
+[timing lock] waiting for timing lock 04:30:21
+[timing lock] got lock 04:35:53; load: { 40.28 42.03 39.66 }
+# numpy 2.0.2 scipy scipy.fft 1.13.1; N=1024; ms per propagation step
+rep 0 SME prop (rev.)                  5.547
+rep 0 SME prop (natural)               6.108
+rep 0 SME step in place (rev.)         5.382
+rep 0 numpy asp                       20.113
+rep 0 scipy w=1                       18.897
+rep 0 scipy w=1 overwrite             18.874
+rep 0 scipy w=4                        8.549
+rep 0 scipy w=4 overwrite              8.272
+rep 1 SME prop (natural)               6.073
+rep 1 SME step in place (rev.)         5.377
+rep 1 numpy asp                       19.942
+rep 1 scipy w=1                       18.536
+rep 1 scipy w=1 overwrite             18.862
+rep 1 scipy w=4                        8.567
+rep 1 scipy w=4 overwrite              8.404
+rep 1 SME prop (rev.)                  5.409
+rep 2 SME step in place (rev.)         5.357
+rep 2 numpy asp                       19.934
+rep 2 scipy w=1                       18.700
+rep 2 scipy w=1 overwrite             18.839
+rep 2 scipy w=4                        8.601
+rep 2 scipy w=4 overwrite              8.304
+rep 2 SME prop (rev.)                  5.428
+rep 2 SME prop (natural)               6.112
+rep 3 numpy asp                       20.340
+rep 3 scipy w=1                       19.040
+rep 3 scipy w=1 overwrite             18.915
+rep 3 scipy w=4                        8.596
+rep 3 scipy w=4 overwrite              8.267
+rep 3 SME prop (rev.)                  5.385
+rep 3 SME prop (natural)               6.055
+rep 3 SME step in place (rev.)         5.371
+rep 4 scipy w=1                       18.915
+rep 4 scipy w=1 overwrite             18.924
+rep 4 scipy w=4                        8.566
+rep 4 scipy w=4 overwrite              8.268
+rep 4 SME prop (rev.)                  5.352
+rep 4 SME prop (natural)               6.040
+rep 4 SME step in place (rev.)         5.372
+rep 4 numpy asp                       20.161
+rep 5 scipy w=1 overwrite             18.810
+rep 5 scipy w=4                        8.578
+rep 5 scipy w=4 overwrite              8.250
+rep 5 SME prop (rev.)                  5.381
+rep 5 SME prop (natural)               6.071
+rep 5 SME step in place (rev.)         5.379
+rep 5 numpy asp                       20.123
+rep 5 scipy w=1                       18.682
+rep 6 scipy w=4                        8.574
+rep 6 scipy w=4 overwrite              8.252
+rep 6 SME prop (rev.)                  5.377
+rep 6 SME prop (natural)               6.094
+rep 6 SME step in place (rev.)         5.388
+rep 6 numpy asp                       20.080
+rep 6 scipy w=1                       18.699
+rep 6 scipy w=1 overwrite             18.629
+rep 7 scipy w=4 overwrite              8.430
+rep 7 SME prop (rev.)                  5.465
+rep 7 SME prop (natural)               6.054
+rep 7 SME step in place (rev.)         5.335
+rep 7 numpy asp                       19.943
+rep 7 scipy w=1                       18.798
+rep 7 scipy w=1 overwrite             18.864
+rep 7 scipy w=4                        8.527
+rep 8 SME prop (rev.)                  5.368
+rep 8 SME prop (natural)               6.078
+rep 8 SME step in place (rev.)         5.342
+rep 8 numpy asp                       20.116
+rep 8 scipy w=1                       18.861
+rep 8 scipy w=1 overwrite             18.648
+rep 8 scipy w=4                        8.501
+rep 8 scipy w=4 overwrite              8.252
+RESULT N=1024 SME prop (rev.)              best     5.352  median     5.385  ms/step  (calls/rep 39)
+RESULT N=1024 SME prop (natural)           best     6.040  median     6.073  ms/step  (calls/rep 37)
+RESULT N=1024 SME step in place (rev.)     best     5.335  median     5.372  ms/step  (calls/rep 42)
+RESULT N=1024 numpy asp                    best    19.934  median    20.113  ms/step  (calls/rep 11)
+RESULT N=1024 scipy w=1                    best    18.536  median    18.798  ms/step  (calls/rep 12)
+RESULT N=1024 scipy w=1 overwrite          best    18.629  median    18.862  ms/step  (calls/rep 12)
+RESULT N=1024 scipy w=4                    best     8.501  median     8.567  ms/step  (calls/rep 26)
+RESULT N=1024 scipy w=4 overwrite          best     8.250  median     8.268  ms/step  (calls/rep 27)
+# numpy 2.0.2 scipy scipy.fft 1.13.1; N=2048; ms per propagation step
+rep 0 SME prop (rev.)                 28.588
+rep 0 SME prop (natural)              31.743
+rep 0 SME step in place (rev.)        28.402
+rep 0 numpy asp                       88.983
+rep 0 scipy w=1                       87.691
+rep 0 scipy w=1 overwrite             85.787
+rep 0 scipy w=4                       37.589
+rep 0 scipy w=4 overwrite             37.034
+rep 1 SME prop (natural)              31.100
+rep 1 SME step in place (rev.)        28.246
+rep 1 numpy asp                       89.834
+rep 1 scipy w=1                       87.702
+rep 1 scipy w=1 overwrite             85.335
+rep 1 scipy w=4                       37.841
+rep 1 scipy w=4 overwrite             36.919
+rep 1 SME prop (rev.)                 28.260
+rep 2 SME step in place (rev.)        28.215
+rep 2 numpy asp                       88.505
+rep 2 scipy w=1                       87.525
+rep 2 scipy w=1 overwrite             86.470
+rep 2 scipy w=4                       37.518
+rep 2 scipy w=4 overwrite             37.237
+rep 2 SME prop (rev.)                 27.921
+rep 2 SME prop (natural)              30.838
+rep 3 numpy asp                       86.833
+rep 3 scipy w=1                       85.649
+rep 3 scipy w=1 overwrite             85.116
+rep 3 scipy w=4                       37.967
+rep 3 scipy w=4 overwrite             37.808
+rep 3 SME prop (rev.)                 29.177
+rep 3 SME prop (natural)              31.418
+rep 3 SME step in place (rev.)        28.221
+rep 4 scipy w=1                       85.614
+rep 4 scipy w=1 overwrite             87.629
+rep 4 scipy w=4                       37.918
+rep 4 scipy w=4 overwrite             37.108
+rep 4 SME prop (rev.)                 28.379
+rep 4 SME prop (natural)              31.030
+rep 4 SME step in place (rev.)        28.321
+rep 4 numpy asp                       87.998
+rep 5 scipy w=1 overwrite             87.557
+rep 5 scipy w=4                       38.848
+rep 5 scipy w=4 overwrite             37.093
+rep 5 SME prop (rev.)                 28.522
+rep 5 SME prop (natural)              31.186
+rep 5 SME step in place (rev.)        28.223
+rep 5 numpy asp                       86.820
+rep 5 scipy w=1                       85.473
+rep 6 scipy w=4                       37.917
+rep 6 scipy w=4 overwrite             37.175
+rep 6 SME prop (rev.)                 28.413
+rep 6 SME prop (natural)              31.322
+rep 6 SME step in place (rev.)        29.266
+rep 6 numpy asp                       87.462
+rep 6 scipy w=1                       85.778
+rep 6 scipy w=1 overwrite             86.454
+rep 7 scipy w=4 overwrite             36.921
+rep 7 SME prop (rev.)                 28.673
+rep 7 SME prop (natural)              31.295
+rep 7 SME step in place (rev.)        29.000
+rep 7 numpy asp                       87.568
+rep 7 scipy w=1                       86.939
+rep 7 scipy w=1 overwrite             86.337
+rep 7 scipy w=4                       37.571
+rep 8 SME prop (rev.)                 28.649
+rep 8 SME prop (natural)              31.435
+rep 8 SME step in place (rev.)        28.830
+rep 8 numpy asp                       88.655
+rep 8 scipy w=1                       87.284
+rep 8 scipy w=1 overwrite             87.206
+rep 8 scipy w=4                       38.008
+rep 8 scipy w=4 overwrite             37.005
+RESULT N=2048 SME prop (rev.)              best    27.921  median    28.522  ms/step  (calls/rep 8)
+RESULT N=2048 SME prop (natural)           best    30.838  median    31.295  ms/step  (calls/rep 7)
+RESULT N=2048 SME step in place (rev.)     best    28.215  median    28.321  ms/step  (calls/rep 8)
+RESULT N=2048 numpy asp                    best    86.820  median    87.998  ms/step  (calls/rep 3)
+RESULT N=2048 scipy w=1                    best    85.473  median    86.939  ms/step  (calls/rep 3)
+RESULT N=2048 scipy w=1 overwrite          best    85.116  median    86.454  ms/step  (calls/rep 3)
+RESULT N=2048 scipy w=4                    best    37.518  median    37.917  ms/step  (calls/rep 6)
+RESULT N=2048 scipy w=4 overwrite          best    36.919  median    37.093  ms/step  (calls/rep 6)

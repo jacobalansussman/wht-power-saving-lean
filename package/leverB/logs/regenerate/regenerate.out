@@ -1,0 +1,42 @@
+0. the design's owner folder: the community's #3945 owner folder with the design-B fill laid over it
+   owner folder = the one the Lean data was made from (24 files; FILL 9c06677d, old-FILL 0e61fce2)
+1. the head gate G0 in our lowering (g-heads' g0_staged.py)
+   G0: rank-48 bins {'HEAD-literal': 80640, 'neither': 57312} ; window violations 0 ; profile = #3945's: True
+2. the host table of the fill (p-own's converter), its head list and its Lean parts (p-hostck's generator)
+   host table S5H-hosttab.json.gz: b3185813... (the one the Lean data was made from)
+   head list: 80,640 literal heads (40,320 + 40,320), 57,312 other rank-48 bins: ALL OK
+refused as required (exit 3): 25 <work>/wht45/allheads/bB-final/out/regen/never-load --perturb load
+refused as required (exit 3): 25 <work>/wht45/allheads/bB-final/out/regen/never-win --perturb win
+3. the dispatch (p-disp's generator): it does not depend on the fill, so Disp.lean must be #3945's byte for byte
+refused as required (exit 3): 360 1673 1567 <work>/wht45/allheads/bB-final/out/regen/never-disp/Disp.lean
+4. the rate fact at the figure (e-r45m1's generator) and its sharpness control
+refused as required (exit 2): emit 3945H=<package>/generators/tree/wht45/allheads/bB-data/tools/profile3945H.json 17581521 <work>/wht45/allheads/bB-final/out/regen/never-rate/lean
+5. the hand-written fill-dependent files, instantiated for the fill (bB-data's mk_3945H.py: exact counted replacements)
+6. the statement chain at the figure (i-skel's mk_l3945.py with the design's profile)
+refused as required (exit 2): --num 17581521 --profile 3945H=<package>/generators/tree/wht45/allheads/bB-data/tools/profile3945H.json
+7. comparison with ../SHA256SUMS (overlay) and ../controls/
+   regenerated overlay files byte-identical: 193; DIFFERENT: 0; made but not in the overlay: 0; overlay files not generated here: 215 (list: <work>/wht45/allheads/bB-final/out/regen/compare.tsv)
+   controls/NegHeads.lean: byte-identical
+   controls/NegHeadsOld.lean: byte-identical
+   controls/NegRes.lean: byte-identical
+   controls/NegGlob.lean: byte-identical
+   controls/Rate3945HSharpCtl.lean contains the regenerated Rate3945HSharp.lean below its imports: True
+REGENERATE: ALL AS EXPECTED (log <work>/wht45/allheads/bB-final/out/regen/regenerate.log)
+      138.92 real       123.92 user         4.64 sys
+           869498880  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              381799  page reclaims
+                 468  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   1  signals received
+                 411  voluntary context switches
+               83014  involuntary context switches
+           109977211  instructions retired
+           103758896  cycles elapsed
+             1671480  peak memory footprint

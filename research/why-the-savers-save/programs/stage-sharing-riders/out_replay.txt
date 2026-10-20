@@ -1,0 +1,24 @@
+A | plain (no riders)                  | EQUAL  | paid moves 18 | END STATE EXACT
+A | plain (no riders)                  | EQUAL2 | paid moves 18 | END STATE EXACT
+A | plain (no riders)                  | WIDE   | paid moves 18 | END STATE EXACT
+A | riders + cleanup                   | EQUAL  | paid moves 21 | END STATE EXACT
+A | riders + cleanup                   | EQUAL2 | paid moves 21 | END STATE EXACT
+A | riders + cleanup                   | WIDE   | paid moves 21 | END STATE EXACT
+B | plain (no riders)                  | EQUAL  | paid moves 18 | END STATE EXACT
+B | plain (no riders)                  | EQUAL2 | paid moves 18 | END STATE EXACT
+B | plain (no riders)                  | WIDE   | paid moves 18 | END STATE EXACT
+B | riders + cleanup                   | EQUAL  | paid moves 18 | END STATE EXACT
+B | riders + cleanup                   | EQUAL2 | paid moves 18 | END STATE EXACT
+B | riders + cleanup                   | WIDE   | paid moves 18 | END STATE EXACT
+A | riders, cleanup after boundary     | EQUAL  | paid moves 21 | END STATE EXACT
+A | riders, cleanup after boundary     | EQUAL2 | paid moves 12 | ILLEGAL: at the call boundary: X1 holds terms at 2 local frames
+A | riders, cleanup after boundary     | WIDE   | paid moves 21 | END STATE EXACT
+A | riders, cleanup reused (overwrite) | EQUAL  | paid moves 18 | ILLEGAL: setlin X1: overwrite of a register is not a hub op
+A | riders, cleanup reused (overwrite) | EQUAL2 | paid moves 18 | ILLEGAL: setlin X1: overwrite of a register is not a hub op
+A | riders, cleanup reused (overwrite) | WIDE   | paid moves 18 | END STATE EXACT
+B | plain, Z carried into call i+1     | EQUAL  | paid moves 18 | END STATE EXACT
+B | plain, Z carried into call i+1     | EQUAL2 | paid moves 18 | ILLEGAL: at the call boundary: Z holds terms at 3 local frames
+B | plain, Z carried into call i+1     | WIDE   | paid moves 18 | END STATE EXACT
+B | riders, NO cleanup (what-if)       | EQUAL  | paid moves 15 | WRONG: X1, Y1, X2, Y2, X4, Y4
+B | riders, NO cleanup (what-if)       | EQUAL2 | paid moves 15 | WRONG: X1, Y1, X2, Y2, X4, Y4
+B | riders, NO cleanup (what-if)       | WIDE   | paid moves 15 | WRONG: X1, Y1, X2, Y2, X4, Y4

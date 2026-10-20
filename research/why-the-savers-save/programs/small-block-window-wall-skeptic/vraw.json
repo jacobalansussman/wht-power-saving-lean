@@ -1,0 +1,75 @@
+{
+ "identities m=1": {
+  "Phi0=I": true,
+  "Phi_full=C^m": true,
+  "Phi_u^2=R_u and Phi_uperp Phi_u^-1 = C^m R_u (all odd u with orthonormal complement)": true,
+  "basis independent": true,
+  "Phi_{U+V} = Phi_U Phi_V, U perp V": false
+ },
+ "identities m=2": {
+  "Phi0=I": true,
+  "Phi_full=C^m": true,
+  "Phi_u^2=R_u and Phi_uperp Phi_u^-1 = C^m R_u (all odd u with orthonormal complement)": true,
+  "basis independent": true,
+  "Phi_{U+V} = Phi_U Phi_V, U perp V": true
+ },
+ "identities m=3": {
+  "Phi0=I": true,
+  "Phi_full=C^m": true,
+  "Phi_u^2=R_u and Phi_uperp Phi_u^-1 = C^m R_u (all odd u with orthonormal complement)": true,
+  "basis independent": true,
+  "Phi_{U+V} = Phi_U Phi_V, U perp V": true
+ },
+ "identities m=4": {
+  "Phi0=I": true,
+  "Phi_full=C^m": true,
+  "Phi_u^2=R_u and Phi_uperp Phi_u^-1 = C^m R_u (all odd u with orthonormal complement)": true,
+  "basis independent": true,
+  "Phi_{U+V} = Phi_U Phi_V, U perp V": true
+ },
+ "lone pair m=3": {
+  "paid": 6,
+  "two_m": 6,
+  "Y_ok": true,
+  "X_ok": true
+ },
+ "lone pair m=4": {
+  "paid": 8,
+  "two_m": 8,
+  "Y_ok": true,
+  "X_ok": true
+ },
+ "lone pair m=5": {
+  "paid": 10,
+  "two_m": 10,
+  "Y_ok": true,
+  "X_ok": true
+ },
+ "two pair m=3": {
+  "Ya frame holds partner label u_b": true,
+  "Ya = C^m R_ua x_a + Phi(ua^perp) y_a exactly": true,
+  "Yb = C^m R_ub x_b + Phi(ub^perp) y_b exactly": true,
+  "Xa = C^m Phi_ua^-1 x_a (unchanged data, full frame)": true,
+  "scratch Z, Ka, Kb zero": true,
+  "paid": 17,
+  "descended levels": 2
+ },
+ "two pair m=4": {
+  "Ya frame holds partner label u_b": true,
+  "Ya = C^m R_ua x_a + Phi(ua^perp) y_a exactly": true,
+  "Yb = C^m R_ub x_b + Phi(ub^perp) y_b exactly": true,
+  "Xa = C^m Phi_ua^-1 x_a (unchanged data, full frame)": true,
+  "scratch Z, Ka, Kb zero": true,
+  "paid": 21,
+  "descended levels": 2
+ },
+ "two pair m=5": {
+  "Ya frame holds partner label u_b": true,
+  "Ya = C^m R_ua x_a + Phi(ua^perp) y_a exactly": true,
+  "Yb = C^m R_ub x_b + Phi(ub^perp) y_b exactly": true,
+  "Xa = C^m Phi_ua^-1 x_a (unchanged data, full frame)": true,
+  "scratch Z, Ka, Kb zero": true,
+  "paid": 25,
+  "descended levels": 2
+ }
+}

@@ -1,0 +1,196 @@
+{
+  "format": "community-certificate-package/1",
+  "name": "u8xmhh",
+  "suffix": "U8XMHH",
+  "title": "The community's U8 word with exit frames, mutable sources and same-run hosting: the leftover helper pieces stored in idle data registers of the same run",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "variant": "",
+  "numerator": 16197705,
+  "kernel_numerator": 16197706,
+  "negative_numerator": 16197706,
+  "saving": "1.6197705e-3",
+  "saving_short": "1.6198e-3",
+  "exponent": "1 - 16197705/10^10",
+  "compared_with": {
+    "what": "Lean-checked record before these packages (Jeremy Kothe's #588 circuit in Ryan Shea's Lean tree, with 112 source copies)",
+    "numerator": 12331685,
+    "saving": "1.2331685e-3"
+  },
+  "also_compared_with": {
+    "what": "community/c588mhh (Kothe's #588 circuit with mutable sources and same-run hosting)",
+    "numerator": 15699305,
+    "saving": "1.5699305e-3"
+  },
+  "mode": "add",
+  "requires": [
+    "u8xm"
+  ],
+  "requires_note": "laid over Shea's tree AFTER community/u8xm: it reuses GXD.U8XM (certificate, bank schedule, gauged invocation package, Work/GCert/Data/U8XMGlue401) and Work/KMX, Work/XMut, Work/KLow and XExit; apply-overlay.sh applies u8xm first. Its twelve network modules of Work/XHost are byte-identical to those of community/c588mhh, so the two packages can be laid in one tree",
+  "tree_change": "inherited from community/u8xm: the tree's lakefile.lean needs one more library line for the five XExit modules, lean_lib XExit where globs := #[`XExit.+] (community/u8xm/logs/colab-xexit/lakefile-tail.txt); apply-overlay.sh does not add it",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainU8XMHH",
+    "OAI.PowerSaving.convolution_mainU8XMHH"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainU8XMHH",
+    "OAI.PowerSaving.convolution_mainU8XMHH",
+    "OAI.PowerSaving.RAM.hillsU8XMHH_program"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierU8XMHH.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierU8XMHHNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierU8XMHH.Main",
+  "axioms_file": "Work/FourierU8XMHH/Axioms.lean",
+  "goal_file": "Work/FourierU8XMHH/Goal.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentU8XMHH",
+  "build_targets": [
+    "Work.FourierU8XMHH.Main",
+    "Work.FourierU8XMHH.UniformFourierChallenge",
+    "Work.FourierU8XMHHNeg.UniformFourierChallenge",
+    "Work.FourierU8XMHH.Axioms"
+  ],
+  "comparator": {
+    "positive": "comparator/fourier-u8xmhh.json",
+    "negative": "comparator/fourier-u8xmhh-neg.json"
+  },
+  "certificate": {
+    "uses": "GXD.U8XM of community/u8xm (unchanged): the U8 word of CrocSwap/integer-mult-bounds with exit frames and mutable sources, 5 centre-source copies kept",
+    "host_table": "data/HU8XM-hosttab.json (same-run hosting: 2,016 hosts and 4,092 hosted pieces in each of the 8 runs) with the banks of data/hu8xm_sr.padsa.json (the pieces that are not hosted, in 310 banks, pads 1 and 61)",
+    "slots_R": 509,
+    "banks": 310,
+    "banks_without_hosting": 3771,
+    "W": 7478,
+    "price_summary": "data/U8XMHH-price.json"
+  },
+  "new_lean": {
+    "Work/XHost (network)": "the twelve modules of the hosted nine-stage network (HostK, HRoles, HDef, HStage, HCert, Frames, HSched, HGeom, HEnd, HBank, HSchedK, HPriceK), byte-identical to those of community/c588mhh, whose README.txt describes them",
+    "Work/XHost/Data, Work/XHost/U8XMHH.lean": "the host and bank tables of this instance (checked in Lean by hostSchedK), its rate certificate and unit price, and the glue that runs GXD.U8XM through XHost.engine_of_ginv_host",
+    "Work/FourierU8XMHH": "the Fourier chain of the instance, made from community/u8xm's chain with the seam pointed at XHost.engine_of_ginv_host"
+  },
+  "checks": [
+    {
+      "id": "build",
+      "status": "pass",
+      "log": "logs/colab/build.out",
+      "what": "the 32 modules of the overlay compiled with Lake, one Lean thread, on the second Colab machine, in six staged Lake calls (rate, host-table checker, host table, network, glue, Fourier chain), all rc 0 (15 minutes, 8.6 GB at most); then lake build --no-build: all targets up to date (9,333 jobs). The tree was a copy of the agents' rebuild of community/u8xm on that machine, checked first (logs/colab/setup.out: the 96 files of the u8xm overlay identical to its package's checksums, lake build --no-build up to date, 9,303 jobs)"
+    },
+    {
+      "id": "axioms",
+      "status": "pass",
+      "log": "logs/colab/axioms.log",
+      "what": "transform_mainU8XMHH, convolution_mainU8XMHH and the program hillsU8XMHH_program depend on propext, Classical.choice, Quot.sound only; no sorryAx"
+    },
+    {
+      "id": "axioms-glue",
+      "status": "pass",
+      "log": "logs/colab/axioms-glue.log",
+      "what": "the host-table check hs_ok depends on propext only; hfits, hwidth, hprice, unit_cost_x, fold_U8XMHHx, HostSched.ofTab_fitsR, XHost.engine_of_ginv_host, the seam and the u8xm facts it uses depend on the three standard axioms only"
+    },
+    {
+      "id": "compare",
+      "status": "pass",
+      "log": "logs/colab/compare-pos.log",
+      "what": "tools/Compare.lean: RESULT: PASS against OpenAI's statement at 1 - 16197705/10^10 (86 s, 15.8 GB)"
+    },
+    {
+      "id": "compare-negative",
+      "status": "pass",
+      "log": "logs/colab/compare-neg.log",
+      "what": "tools/Compare.lean against the statement one unit stronger (16197706): RESULT: FAIL on decimalExponentU8XMHH, as it must"
+    },
+    {
+      "id": "challenge-derivation",
+      "status": "pass",
+      "log": "logs/colab/build.out",
+      "what": "both statement files, as compiled, are byte-identical to the agents' own derivation from OpenAI's UniformFourier.lean (fd4aeeb) at 16197705 and 16197706; the two derived files are left out of this package because they equal the as-built files (data/colab-sources.sha256)"
+    },
+    {
+      "id": "host-table-negative-control",
+      "status": "pass",
+      "log": "logs/colab/hsneg.time",
+      "what": "a copy of the host table with one remainder off by one (logs/colab/ax/HsU8XMHHNeg.lean) is rejected: Lean's kernel proves hostSchedK = false (exit status 0, 46 s; build.out says so; the log hsneg.log is empty because the check prints nothing)"
+    },
+    {
+      "id": "source-scan",
+      "status": "pass",
+      "log": "logs/colab/sorry-grep.txt",
+      "what": "126 Lean files (this overlay and the u8xm overlay; logs/colab/checked-lean-files.txt): sorry only in the statement placeholders of the four statement files, no admit (admit-grep.txt is empty), and the two lines of forbidden-grep.txt are comments that say 'No sorry, no native_decide'"
+    },
+    {
+      "id": "comparator",
+      "status": "pass",
+      "log": "logs/colab/cmp/fsb-U8XMHH-pos.log",
+      "what": "official comparator inside the sandbox stand-in jail2.sh (no Landlock on the machine): nanoda and Lean kernels accept, 'Your solution is okay!' (887 s, 7.0 GB). Its Lake build found the compiled files up to date (480 olean files before and after, logs/colab/cmp.out), so it checked them with both kernels without compiling them again"
+    },
+    {
+      "id": "comparator-negative",
+      "status": "pass",
+      "log": "logs/colab/cmp/fsb-U8XMHH-neg.log",
+      "what": "official comparator rejects the configuration one unit stronger: Const does not match ... decimalExponentU8XMHH (146 s)"
+    },
+    {
+      "id": "bigospeedrun-verifier",
+      "status": "pass",
+      "log": "logs/colab/bos-H.out",
+      "what": "offline re-creation of the three phases of the bigospeedrun.com verifier, run with the agents' own scripts (scripts-as-run/build/fsb-bos-*.sh, fsb_submission.py) inside the sandbox stand-in jail2.sh, not by the verifier's own controller, on a submission packaged like Nil Mamano's (bigospeedrun/verifier c92b9b6; the packaging control on Shea's C588 gives his submission's 350 files): the bound 3239541/2000000000 = 16197705/10^10 against challenges/dft/UniformFourier233.lean; Lean check 'Your solution is okay!' (68 min, 8.4 GB; the packaged folder compiled from source, with Mathlib already compiled), axiom audit [propext, Classical.choice, Quot.sound], nanoda and Lean kernels accept (14 min). Not a submission"
+    },
+    {
+      "id": "python-preflights",
+      "status": "pass",
+      "log": "logs/mac-preflight/preflight-indep_audit.log",
+      "what": "on the Mac before the build: an independent audit of the generated tables (R 509, 310 banks, W 7478, 4,092 hosted pieces per run, kernel 16197706), the audit of the placement, and the rate check (the fold holds at 16197706 and up to 16197738; the same check on community/c588mhh's tables as a control) (logs/mac-preflight/)"
+    },
+    {
+      "id": "static-checks",
+      "status": "pass",
+      "log": "logs/static-check.txt",
+      "what": "tools/community/package_check.py check on the Mac: checksums, the statement equal to OpenAI's up to the exponent and the names, the negative statement one unit stronger, the exponent of Goal.lean, the comparator configurations, the module list, no forbidden word in the Lean code"
+    },
+    {
+      "id": "statement-skeptic",
+      "status": "pass",
+      "log": "logs/skeptic-statement/logs/out/check.log",
+      "what": "an independent agent, on the second Colab machine in its own copy of the tree: OpenAI's file and the 89 OpenAI files of the tree byte-identical to openai/math; the challenge differs only in the exponent and the suffixed names, the negative only in its numerator; its own Lean check (plain lean, unprivileged user): standard axioms, the goal types, the exponent by rfl; Compare.lean PASS and, one unit stronger, FAIL (out/cmp-pos.log, out/cmp-neg.log); the official comparator replayed, accepted (cmp/vpos.log, 841 s) and rejected the negative (cmp/vneg.log). report.txt is its written verdict"
+    },
+    {
+      "id": "rebuild-skeptic",
+      "status": "pass",
+      "log": "logs/skeptic-rebuild/logs/build.out",
+      "what": "an independent agent rebuilt the 32 modules from the two uploaded archives (hashes checked) on the first Colab machine, over its own copy of the agents' original build of community/u8xm there (not the rebuild the build used): no compiled XHost or Fourier file before, one module per Lake call in import order, all rc 0; Compare.lean PASS, negative FAIL; standard axioms; its Uses.lean (logs/uses.log) shows that the proofs of both theorems reach XHost.engine_of_ginv_host, hostSchedK and the u8xm package. It did not run the comparator. report.txt is its written verdict"
+    },
+    {
+      "id": "u8xm-base",
+      "status": "pass",
+      "log": "logs/colab/setup.out",
+      "what": "community/u8xm, the package this one is laid over, was built again by the agents on the second Colab machine and accepted there by the official comparator, and rejected one unit stronger, before this build (the first lines of setup.out); that run's own logs are not in this package"
+    }
+  ],
+  "machine": "Google Colab VM: Linux x86-64, Intel Xeon 2.20 GHz, 8 logical processors, 51 GiB, kernel 6.6.122+ without Landlock, no systemd",
+  "credits": [
+    "Jeremy Kothe: the U8 word (#869 of CrocSwap/integer-mult-bounds), from his #799 and the line of circuits before it; with DreamingOfClouds, the endpoint lemmas on which the charge for exit frames rests (#593)",
+    "Chafik Boukhalfa: the frame changes of #741, which the U8 word carries",
+    "icekylinx: the gauge44 construction (#645) the U8 word is built on; the community's notice credits the word's triangle-hybrid step to NewBArch, with its driver and composition to ColdWitness/icekylinx",
+    "DreamingOfClouds: helpers that end early in the line of the U8 word (#604) and the endpoint lemmas of #599",
+    "not used by this package, though the community's figures for the U8 word use them: the owner maps of #870 (Kothe, applying Hao Yan's #858), #890 (Chafik Boukhalfa) and #942 (Jonathan Capalbo), and DreamingOfClouds' bit supplier #589",
+    "Ryan Shea: the conversion pipeline, the generators and the Lean instantiation (shea256/fourier-transform-below-nlogn, lean/complex588)",
+    "Nil Mamano: the Lean files of the nine-stage network that Shea's tree takes from his leaderboard submission (the gauged extension GInvE, the network G401 of Work/Bridge401, the bank lemmas of Work/Bank401, the checker schedK, the end theorem GX.engine_of_ginv_401) and the Fourier chain templates; the hosted network of Work/XHost copies or adapts his files (community/c588mhh/README.txt says which)",
+    "DaysSky: the bridged layout B_K the network starts from (#363); idle-axis hosting (pull request #442 of CrocSwap/integer-mult-bounds), the idea this package uses, with the written proof that it follows for hosts within one run, and the layout of its integer programme",
+    "Zhihao Chen (jacklightChen): the compressed nine-stage layout with its banks and padding (#377); the written scalar-interface argument for mutable sources (pull request #425 of CrocSwap/integer-mult-bounds)",
+    "Dugongue: the entrance gauges and the residual banks (#401)",
+    "lydakis: the bank patterns (#275)",
+    "the authors of CrocSwap/integer-mult-bounds",
+    "OpenAI: the model, the statements and the all-length reduction",
+    "Jacob Sussman (this repository): the original Lean engine; the Lean proofs of exit frames (XExit, Work/KLow), of mutable sources (Work/XMut), of their combination (Work/KMX) and of same-run hosting (Work/XHost, with the checker hostSchedK); the host table and the instance U8XMHH; the generators"
+  ]
+}

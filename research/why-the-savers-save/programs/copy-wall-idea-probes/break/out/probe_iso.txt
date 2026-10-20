@@ -1,0 +1,18 @@
+h kinds: (|served set in h-perp|, isotropic, span of those labels, h in that span) -> count
+    (64, False, 8, False) 7
+    (60, True, 8, True) 112
+    (60, False, 8, False) 112
+    (56, True, 8, True) 24
+    (56, False, 8, False) 24
+    (52, True, 8, True) 112
+    (52, False, 8, False) 112
+    (48, True, 8, True) 7
+    (0, False, 0, False) 1
+removed-octad labels: [152, 162, 193, 251, 271, 309, 342, 364]
+  top h 453: |D| 64 iso False span 8 contains False  (h is a removed-octad label: False, a live label: False)
+  top h 422: |D| 64 iso False span 8 contains False  (h is a removed-octad label: False, a live label: False)
+  top h 412: |D| 64 iso False span 8 contains False  (h is a removed-octad label: False, a live label: False)
+  top h 104: |D| 64 iso False span 8 contains False  (h is a removed-octad label: False, a live label: False)
+  top h  82: |D| 64 iso False span 8 contains False  (h is a removed-octad label: False, a live label: False)
+  top h  49: |D| 64 iso False span 8 contains False  (h is a removed-octad label: False, a live label: False)
+isotropic h with h in span of its own served set: 255  sizes Counter({(60, 8): 112, (52, 8): 112, (56, 8): 24, (48, 8): 7})

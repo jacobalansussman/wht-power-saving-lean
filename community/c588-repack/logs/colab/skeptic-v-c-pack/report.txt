@@ -1,0 +1,54 @@
+The written verdict of the independent agent (a skeptic) that ran this check, as it returned it, with home-folder
+paths shortened. Agent labels in it (c-base, m-build, m-gen, x-mutable, h-L1, h-L2, h-L3-build) are the names
+of the agents whose work it checked.
+
+I could not refute the claim. I re-ran the main checks myself on Colab #1, and the build does prove OpenAI's DFT and convolution statement at a saving of 12383291/10^10 = 1.2383291e-3 (Lean-checked). Nothing in the statement is weakened, there are no extra hypotheses and no custom axioms. My own negative control was still running when I stopped. The kernel replay (official comparator, nanoda) and the bigospeedrun phases are c-pack's runs, which I read but did not repeat.
+
+**Incident I caused (repaired):** at 18:54 UTC my first script ran `lake build --no-build` as root in /content/work/cpack/lean/complex588. c-pack had earlier run `chown -R 65534:65534` on .lake, so git as root could not read the package repo. Lake printed "mathlib: URL has changed; deleting '.../.lake/packages/mathlib' and cloning again" and deleted c-pack's Mathlib package. I killed the job within about a minute; the clone was a read-only fetch and nothing was written to GitHub. I restored the package with `cp -a` from /content/work/shea/.../packages/mathlib (the source of c-pack's own copy, untouched since 14:32), then `chown -R 65534:65534`.
+- Restore took 781 s. Afterwards 137471 files and 8548 oleans in both copies, git rev d13f23b, same origin URL.
+- Every later Lake call ran with /content/work/cpack bind-mounted read-only in a private mount namespace (ro.sh) and git's `safe.directory=*`.
+- Anyone else running Lake as root in a tree that was chowned to 65534 can delete Mathlib the same way.
+
+**Statement (checked myself):**
+- I diffed the overlay's Work/FourierC588/UniformFourierChallenge.lean (sha256 32832981...d590) against OpenAI's lean/ComparatorChallenges/UniformFourier.lean (sha256 4c571f27...ec74, matches the fd4aeeb hash in the claim).
+- The only differences are the C588 suffix on decimalExponent, decimalTime, TimeBounds, DFTGoal, ConvGoal, transform_main and convolution_main, and the exponent `1 - 1/(10^(13:ℕ))` becoming `1 - 12383291/(10^(10:ℕ))`. The imports (Mathlib only), the RAM model, DFTProgram, ConvProgram, paperTime and nlogn are unchanged.
+- Against Shea's file the only difference is 12331685 → 12383291. The Neg copy differs only at 12383292.
+- tools/Compare.lean = /content/work/ours/Compare.lean = Shea's local copy (sha256 e48d6d3b...).
+- Base HEAD is 52394849. Toolchain v4.34.1, Mathlib d13f23b723b8 (from lean-toolchain and lake-manifest). The lakefile sets only autoImplicit=false.
+
+**Source grep (myself):**
+- sorry appears in code only at UniformFourierChallenge.lean:327 and :331 and the same lines of the Neg copy.
+- No axiom, opaque or constant declarations.
+- No native_decide, implemented_by, extern, ofReduceBool, skipKernelTC, run_cmd or #eval in code. The `decide +kernel` uses (sched_ok, tab3_ok, the controls, C588Glue401) add no axiom.
+- set_option is used only for linters, maxRecDepth, synthInstance.maxSize and exponentiation.threshold.
+
+**Re-runs on the Colab** (my script /content/work/v-c-pack/vcp2.sh, tmux -L vcpack3, LEAN_NUM_THREADS=1). The machine was thrashing (I/O wait 47-75 %), so the times are 7-10x c-pack's.
+1. `lake build --no-build Work.FourierC588.Main Work.FourierC588.UniformFourierChallenge Work.FourierC588Neg.UniformFourierChallenge Work.GCert.Data.C588Controls Work.FourierC588.Axioms` on the read-only tree: exit 0, 363 s, 0.9 GB, "All targets up-to-date (9278 jobs)."
+2. `lake env lean ProbeMain.lean` (imports Work.FourierC588.Main): exit 0, 1081 s, 6.4 GB.
+   - transform_mainC588, convolution_mainC588 and RAM.hillsC588_program each "depends on axioms: [propext, Classical.choice, Quot.sound]".
+   - `#print decimalExponentC588` gives "1 - 12383291 / 10 ^ 10", and `example : decimalExponentC588 = 1 - 12383291/(10^(10:ℕ)) := rfl` compiles.
+   - The types are "transform_mainC588 : DFTGoalC588" and "convolution_mainC588 : ConvGoalC588", with TimeBoundsC588 = O(paperTime) ∧ O(decimalTimeC588) ∧ o(nlogn).
+3. `lake env lean ProbeChal.lean`: exit 0, 103 s, 6.2 GB. The challenge olean holds "1 - 12383291 / 10 ^ 10", and its theorem depends on sorryAx, as a challenge should.
+4. `lake env lean --run tools/Compare.lean Work.FourierC588.UniformFourierChallenge Work.FourierC588.Main OAI.PowerSaving.transform_mainC588 OAI.PowerSaving.convolution_mainC588`: exit 0, 1036 s, 14.9 GB.
+   - For both theorems: "OK: statement is the same kernel term in both", "OK: every statement dependency is identical in the solution" (including DFTProgram, paperTime, decimalExponentC588 and TimeBoundsC588) and "OK: only permitted axioms".
+   - It reaches 42057 constants for transform and 42080 for convolution; the claim's "42057 / 42080" means one count per theorem, not a fraction. "RESULT: PASS".
+5. The same Compare against Work.FourierC588Neg.UniformFourierChallenge (the negative control) was STILL RUNNING at 19:54 UTC. To collect it: ~/misc/fft/verify/checks/wht43/bound-check/v-c-pack/scripts/collect.sh. To stop it: `ssh.sh 'tmux -L vcpack3 kill-server'`.
+
+**Did the overlaid files really get rebuilt?** Yes.
+- c-pack's build.log shows "Built" (not Replayed) for all 18 C588Rows files, C588Sched, Moment4, RateC588x, InstC588, C588Glue401, C588Controls, every FourierC588 module and the Neg challenge; 40 Built lines in all.
+- The Goal and challenge oleans are dated 16:39 UTC, after the 16:28 overlay. Goal.trace records `lean .../cpack/.../Work/FourierC588/Goal.lean -o ...`.
+- The comparator's own `lake build` inside the jail only replayed, and my read-only `--no-build` says up-to-date, so Lake's hashes match the overlaid sources.
+
+**Not re-run by me (read in c-pack's logs):**
+- cp-cmp-all.log: P1 "nanoda kernel accepts the solution", "Lean default kernel accepts the solution", "Your solution is okay!" (exit 0, 719 s, 6.8 GB). N1 "Const does not match between challenge and target 'OAI.PowerSaving.decimalExponentC588'" (exit 1).
+- c-pack's Compare negative control: "FAIL: OAI.PowerSaving.decimalExponentC588: definition body differs", "RESULT: FAIL", exit 1.
+- New since c-pack's report: its bigospeedrun lean phase finished at 19:17:31 UTC. It printed "Lean default kernel accepts the solution" and "Your solution is okay!", exit 0, wall 7759 s, 9.1 GB. The audit phase was running; the nanoda phase had not started.
+
+**Remaining caveats:**
+- The comparator ran in the home-made jail2.sh, not landrun or systemd.
+- Moment4 (term_le4) is new and no human has reviewed it, though the kernel checks it.
+- The arithmetic is right: 12383291/12331685 = 1.004185, so +0.42 %, and the difference is 51606 units of 10^-10.
+
+**Logs on the Mac:** ~/misc/fft/verify/checks/wht43/colab-run/logs/v-c-pack/. Main files: vcp2.log, nobuild.log, probe-main.log, probe-chal.log, compare-pos.log, the *.time files, restore.log, INCIDENT-mathlib-deleted.txt; c-pack's bigospeedrun logs are copied into observed-c-pack-bos/.
+**Scripts:** ~/misc/fft/verify/checks/wht43/bound-check/v-c-pack/scripts/ (vcp2.sh, ro.sh, ProbeMain.lean, ProbeChal.lean, collect.sh).
+**On the Colab:** /content/work/logs/v-c-pack/.

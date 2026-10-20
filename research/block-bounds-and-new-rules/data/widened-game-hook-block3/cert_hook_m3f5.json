@@ -1,0 +1,30 @@
+{
+ "what": "Theorem-R certificate, block size m=3, f=5 digit columns: every unit needs >= 14/5 W moves",
+ "games": [
+  "engine affine game (shifts, affine address maps, Clifford phases, rational mixing, scratch)",
+  "widened game (ALL address permutations, ALL Z4 phase patterns; also arbitrary diagonals)"
+ ],
+ "module": "W = V (x) Lambda^4 V, V = C^8 (GL(V)-submodule of V^(x)5); g acts as g (x) Lambda^4 g",
+ "kept_subspace": "N = span{ e_x (x) e_T : T a 4-subset of F_2^3, x in T }  (dim 280; = repeated-address part of the hook Schur module S_(2,1,1,1)(V), dim 504)",
+ "kept_because": "every free letter is a monomial matrix (permutation times diagonal); it maps e_x (x) e_T to a multiple of e_(pi x) (x) e_(pi T); mixing of arrays is free in Theorem R",
+ "cap_dir_e1": 80,
+ "cap_proof": "N cap R^-1 N contains u(a,w) = e_a (x) (e_a ^ e_w) - e_b (x) (e_b ^ e_w) for the 4 pairs {a, b=a+e1} and every 3-subset w; (R (x) R)(e_a(x)e_a - e_b(x)e_b) = i (e_a(x)e_a - e_b(x)e_b) because alpha^2 - beta^2 = i (alpha=(1+i)/2, beta=(1-i)/2), so R u = i[e_a (x)(e_a ^ L3R w) - e_b (x)(e_b ^ L3R w)] in N; 4 x (C(8,3) - C(6,1)) = 200 independent such u (exact check in Z[i] + mod-p rank); cap = 280 - dim(N cap R^-1 N) <= 80; mod-p rank gives cap >= 80",
+ "all_directions": "dir(w) = A dir(e1) A^-1 for a linear address map A with A e1 = w; A keeps N",
+ "rank2_blocks": "f(dir z1 dir z2) <= f(dir z1) + f(dir z2) = 160 (triangle inequality for delta)",
+ "dem_kernel": ">= 224 (rank of [N | K N] mod p = 504, p printed by verify_hook.py; mod-p rank is a lower bound); float SVD in V^(x)5 via a Young symmetrizer (schur2.py) also gives 224",
+ "bound": "Theorem R: 80 (n1 + 2 n2) >= sum f(paid steps) >= W * 224  =>  moves >= 14/5 W",
+ "family": {
+  "m=2,f=3,(2,1)": "cap 4, dem 8 -> 2 (also proved in V^(x)3: exactq_m2f3.py)",
+  "m=3,f=4,(2,1,1)": "cap 60, dem 140 -> 7/3",
+  "m=3,f=5,(2,1,1,1)": "cap 80, dem 224 -> 14/5"
+ },
+ "cap_formula_hook": "cap <= C(n,f-1)(f-1) - (n/2)[C(n,f-2) - C(n-2,f-4)], n = 2^m",
+ "files": [
+  "verify_hook.py",
+  "out_verify_hook.txt",
+  "schur2.py",
+  "out_schur_m3f4.txt",
+  "out_schur_m3f5_a.txt"
+ ],
+ "status": "computed + argued by one agent (d-tof-cert), 13 Oct 2026; no person has read it; not in Lean; rests on Theorem R (wht35/wider/w-bounds.md section 2)"
+}

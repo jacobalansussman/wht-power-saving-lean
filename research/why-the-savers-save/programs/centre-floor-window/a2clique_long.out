@@ -1,0 +1,12 @@
+coordinate decoder terms [{'size': 56, 'A1': 8, 'A2': 8}, {'size': 56, 'A1': 8, 'A2': 8}, {'size': 56, 'A1': 8, 'A2': 8}, {'size': 56, 'A1': 8, 'A2': 8}, {'size': 56, 'A1': 8, 'A2': 8}, {'size': 56, 'A1': 8, 'A2': 8}, {'size': 56, 'A1': 8, 'A2': 8}, {'size': 56, 'A1': 8, 'A2': 8}] A1 total 64 A2 total 64
+A2 search: 221 s
+rank 1: best hits 598 of 1260 -> per-unit fraction 0.4746 -> clique bound <= 16.86
+rank 2: best hits 897 of 1260 -> per-unit fraction 0.3560 -> clique bound <= 22.47
+rank 3: best hits 1155 of 1260 -> per-unit fraction 0.3056 -> clique bound <= 26.18
+rank 4: best hits 1155 of 1260 -> per-unit fraction 0.2292 -> clique bound <= 34.91
+rank 5: best hits 1260 of 1260 -> per-unit fraction 0.2000 -> clique bound <= 40.00
+rank 6: best hits 1260 of 1260 -> per-unit fraction 0.1667 -> clique bound <= 48.00
+rank 7: best hits 1260 of 1260 -> per-unit fraction 0.1429 -> clique bound <= 56.00
+rank 8: best hits 1260 of 1260 -> per-unit fraction 0.1250 -> clique bound <= 64.00
+rank 9: best hits 1260 of 1260 -> per-unit fraction 0.1111 -> clique bound <= 72.00
+A2 clique bound is at most 16.86 (A1 one-sided, cx-medium exhaustive: 52.36)

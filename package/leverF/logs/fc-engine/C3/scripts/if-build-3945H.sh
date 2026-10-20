@@ -1,0 +1,27 @@
+#!/bin/bash
+# design B (wht45/allheads; bB-data's copy of i-final's if-build.sh, only the names changed): build the whole L3945H closure
+# in the tree before the fixed final run.  Overlay = i-final's ENG + bB-data/lean (both in $R/in/engine), stage = final-L3945H.
+# Phase A: the light kernel-data modules (core Lean, < 1 GB each) with 8 Lean threads; phase B: everything else with
+# at most 3 heavy Lean processes on this Colab (LEAN_NUM_THREADS = 3 minus the others).
+set -uo pipefail
+export ISK_R=${ISK_R:-/content/work/i-final-B} ISK_LOG=${ISK_LOG:-/content/work/logs/i-final-B} ISK_SCRIPTS=${ISK_SCRIPTS:-/content/work/i-final-B/scripts}
+. $ISK_SCRIPTS/isk-lib.sh
+G=$R/in/final-L3945H
+(cd $G/stage && sha256sum -c --quiet ../meta/stage.sha256) || fail "stage hashes"
+(cd $R/in && sha256sum -c --quiet ENG.sha256.chk) || fail "ENG hashes"
+bash $S/isk-tree.sh || fail tree
+bash $S/isk-install.sh L3945H-extra $R/in/engine || fail "install extra"
+bash $S/isk-install.sh L3945H $G/stage || fail install
+cd $T
+L=$LOGROOT/build-a; mkdir -p $L
+step lightA env LEAN_NUM_THREADS=8 lake build Work.XHostT.Data.S5H.P0 Work.XHostT.Data.S5H.P1 Work.XHostT.Data.S5H.P2 Work.XHostT.Data.S5H.P3 Work.XHostT.Data.S5H.P4 Work.XHostT.Data.S5H.P5 Work.XHostT.Data.S5H.P6 Work.XHostT.Data.S5H.P7 Work.XHostT.Data.S5H.P8 Work.XHostT.Data.S5H.P9 Work.XHostT.Data.S5H.P10 Work.XHostT.Data.S5H.P11 Work.XHostT.Data.S5H.P12 Work.XHostT.Data.S5H.P13 Work.XHostT.Data.S5H.P14 Work.XHostT.Data.S5H.P15 Work.XHostT.Data.S5H.P16 Work.XHostT.Data.S5H.P17 Work.XHostT.Data.S5H.P18 Work.XHostT.Data.S5H.P19 Work.XHostT.Data.S5H.P20 Work.XHostT.Data.S5H.P21 Work.XHostT.Data.S5H.P22 Work.XHostT.Data.S5H.P23 Work.XHostT.Data.S5H.P24 Work.XHostT.Data.S5H.P25 Work.XHostT.Data.S5H.P26 Work.XHostT.Data.S5H.P27 Work.XHostT.Data.S5H.P28 Work.XHostT.Data.S5H.P29 Work.XHostT.Data.S5H.P30 Work.XHostT.Data.S5H.P31 Work.XHostT.Data.S5H.P32 Work.XHostT.Data.S5H.P33 Work.XHostT.Data.S5H.P34 Work.XHostT.Data.S5H.P35 Work.XHostT.Data.S5H.P36 Work.XHostT.Data.S5H.P37 Work.XHostT.Data.S5H.P38 Work.XHostT.Data.S5H.P39 Work.XHostT.Data.S5H.P40 Work.XHostT.Data.S5H.P41 Work.XHostT.Data.S5H.P42 Work.XHostT.Data.S5H.P43 Work.XHostT.Data.S5H.P44 Work.XHostT.Data.S5H.P45 Work.XHostT.Data.S5H.P46 Work.XHostT.Data.S5H.P47 Work.XHostT.Data.S5H.P48 Work.XHostT.Data.S5H.P49 Work.XHostT.Data.S5H.P50 Work.XHostT.Data.S5H.P51 Work.XHostT.Data.S5H.P52 Work.XHostT.Data.S5H.P53 Work.XHostT.Data.S5H.P54 Work.XHostT.Data.S5H.P55 Work.XHostT.Data.S5H.P56 Work.XHostT.Data.S5H.P57 Work.XHostT.Data.S5H.P58 Work.XHostT.Data.S5H.P59 Work.XHostT.Data.S5H.P60 Work.XHostT.Data.S5H.P61 Work.XHostT.Data.S5H.P62 Work.XHostT.Data.S5H.P63 Work.XHostT.Data.S5H.P64 Work.XHostT.Data.S5H.P65 Work.XHostT.Data.S5H.P66 Work.XHostT.Data.S5H.P67 Work.XHostT.Data.S5H.P68 Work.XHostT.Data.S5H.P69 Work.XHostT.Data.S5H.P70 Work.XHostT.Data.S5H.P71 Work.XHostT.Data.S5H.P72 Work.XHostT.Data.S5H.P73 Work.XHostT.Data.S5H.P74 Work.XHostT.Data.S5H.P75 Work.XHostT.Data.S5H.P76 Work.XHostT.Data.S5H.P77 Work.XHostT.Data.S5H.P78 Work.XHostT.Data.S5H.P79 Work.XHostT.Data.S5H.P80 Work.XHostT.Data.S5H.P81 Work.XHostT.Data.S5H.P82 Work.XHostT.Data.S5H.P83 Work.XHostT.Data.S5H.P84 Work.XHostT.Data.S5H.P85 Work.XHostT.Data.S5H.P86 Work.XHostT.Data.S5H.P87 Work.XHostT.Data.S5H.P88 Work.XHostT.Data.S5H.P89 Work.XHostT.Data.S5H.P90 Work.XHostT.Data.S5H.P91 Work.XHostT.Data.S5H.P92 Work.XHostT.Data.S5H.P93 Work.XHostT.Data.S5H.P94 Work.XHostT.Data.S5H.P95 Work.XHostT.Data.S5H.P96 Work.XHostT.Data.S5H.P97 Work.XHostT.Data.S5H.P98 Work.XHostT.Data.S5H.P99 Work.XHostT.Data.S5H.P100 Work.XHostT.Data.S5H.P101 Work.XHostT.Data.S5H.P102 Work.XHostT.Data.S5H.P103 Work.XHostT.Data.S5H.P104 Work.XHostT.Data.S5H.P105 Work.XHostT.Data.S5H.P106 Work.XHostT.Data.S5H.P107 Work.XHostT.Data.S5H.P108 Work.XHostT.Data.S5H.P109 Work.XHostT.Data.S5H.P110 Work.XHostT.Data.S5H.P111 Work.XHostT.Data.S5H.P112 Work.XHostT.Data.S5H.P113 Work.XHostT.Data.S5H.P114 Work.XHostT.Data.S5H.P115 Work.XHostT.Data.S5H.P116 Work.XHostT.Data.S5H.P117 Work.XHostT.Data.S5H.P118 Work.XHostT.Data.S5H.P119 Work.XHostT.Data.S5H.P120 Work.XHostT.Data.S5H.P121 Work.XHostT.Data.S5H.P122 Work.XHostT.Data.S5H.P123 Work.XHostT.Data.S5H.P124 Work.XHostT.Data.S5H.P125 Work.XHostT.Data.S5H.P126 Work.XHostT.Data.S5H.P127 Work.XHostT.Data.S5H.P128 Work.XHostT.Data.S5H.P129 Work.XHostT.Data.S5H.GlobC0 Work.XHostT.Data.S5H.GlobC1 Work.XHostT.Data.S5H.GlobC2 Work.XHostT.Data.S5H.GlobC3 Work.XHostT.Data.S5H.GlobC4 Work.XHostT.Data.S5H.GlobC5 Work.XHostT.Data.S5H.GlobC6 Work.XHostT.Data.S5H.GlobC7 Work.XHostT.Data.S5H.GlobC8 Work.XHostT.Data.S5H.GlobC9 Work.XHostT.Data.S5H.GlobC10 Work.XHostT.Data.S5H.GlobC11 Work.XHostT.Data.S5H.GlobC12 Work.XHostT.Data.S5H.GlobC13 Work.XHostT.Data.S5H.GlobC14 Work.XHostT.Data.S5H.GlobC15 Work.XHostT.Data.S5H.GlobC16 Work.XHostT.Data.S5H.GlobC17 Work.XHostT.Data.S5H.GlobC18 Work.XHostT.Data.S5H.GlobC19 Work.XHostT.Data.S5H.GlobC20 Work.XHostT.Data.S5H.GlobC21 Work.XHostT.Data.S5H.GlobC22 Work.XHostT.Data.S5H.GlobC23 Work.XHostT.Data.S5H.GlobC24 Work.XHostT.Data.S5H.GlobC25 Work.XHostT.Data.S5H.GlobC26 Work.XHostT.Data.S5H.Order Work.XHostT.Data.S5H.Heads
+tail -3 $L/lightA.log
+L=$LOGROOT/build-b; mkdir -p $L
+wl 20000
+THR=$(( MAXHEAVY - $(heavy) )); [ $THR -ge 1 ] || THR=1
+echo "phase B LEAN_NUM_THREADS=$THR"
+step engine env LEAN_NUM_THREADS=$THR lake build Work.L3945H.Engine $(cat $G/meta/targets.txt)
+rc=$?
+grep -E "✖|error" $L/engine.log | head -40
+tail -3 $L/engine.log
+echo "PHASE B rc=$rc"

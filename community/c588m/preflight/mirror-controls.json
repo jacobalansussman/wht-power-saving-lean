@@ -1,0 +1,95 @@
+{
+ "shea_classic_10_21_1_8_8_batch0": {
+  "value": true,
+  "adds": 4355,
+  "seconds": 0.02
+ },
+ "shea_bad_scalar_rejected_expect_false": {
+  "value": false,
+  "why": "gFin: register 112 (class base 112) does not hold exactly its source",
+  "seconds": 0.02
+ },
+ "shea_classic_sw20_batch0": {
+  "value": false,
+  "why": "addNC: digit reaches 2^(sw-1) (or tag bit 63)",
+  "seconds": 0.01
+ },
+ "shea_mutable_checks_also_accept_classic_cert": true,
+ "ours_classic_expect_false": {
+  "spar": [
+   10,
+   21,
+   4,
+   8,
+   8
+  ],
+  "espar": [
+   10,
+   8,
+   4,
+   8,
+   8
+  ],
+  "scal": [
+   {
+    "lo": 0,
+    "n": 28,
+    "value": false,
+    "why": "kind test fails: 0 += 27",
+    "seconds": 0.0
+   },
+   {
+    "lo": 28,
+    "n": 28,
+    "value": false,
+    "why": "kind test fails: 0 += 27",
+    "seconds": 0.0
+   },
+   {
+    "lo": 56,
+    "n": 28,
+    "value": false,
+    "why": "kind test fails: 0 += 27",
+    "seconds": 0.0
+   },
+   {
+    "lo": 84,
+    "n": 28,
+    "value": false,
+    "why": "kind test fails: 0 += 27",
+    "seconds": 0.0
+   }
+  ],
+  "ychk": {
+   "lo": 0,
+   "n": 112,
+   "value": true,
+   "adds": 224,
+   "seconds": 0.0
+  },
+  "echk": [
+   {
+    "batch": 0,
+    "size": 80,
+    "value": false,
+    "why": "kind test fails: 0 += 27",
+    "seconds": 0.0
+   },
+   {
+    "batch": 1,
+    "size": 80,
+    "value": false,
+    "why": "kind test fails: 0 += 27",
+    "seconds": 0.0
+   },
+   {
+    "batch": 2,
+    "size": 68,
+    "value": false,
+    "why": "kind test fails: 0 += 27",
+    "seconds": 0.0
+   }
+  ],
+  "all_true": false
+ }
+}

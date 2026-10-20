@@ -1,0 +1,4 @@
+P120 r=9 L=1 closure=none gauge=XK=I(|K|=8)                  SAT    vars 110688 clauses 383496  0.3s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 9, 'cT_static_fit': True, 'rank_cT': 9, 'layer_sizes': [120]}
+P111 r=9 L=1 closure=none gauge=XK=I(|K|=8)                  SAT    vars 94359 clauses 326398  0.3s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 9, 'cT_static_fit': True, 'rank_cT': 9, 'layer_sizes': [111]}
+P111 r=9 L=2 closure=one gauge=XK=I(|K|=8)                   SAT    vars 207950 clauses 840762  9.4s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 9, 'cT_static_fit': True, 'rank_cT': 9, 'layer_sizes': [14, 97]}
+P111 r=9 at most 0 freed non-known cells: SAT  vars 94359 clauses 329268  0.3s freed pairs []

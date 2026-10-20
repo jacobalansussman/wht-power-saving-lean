@@ -1,0 +1,8 @@
+m = 2: symplectic True; K = t_e1...t_em = x(I) True; y(I)x(I)y(I) = w True; P fixes L0, t_z at distance 1, K and w at distance m True; t_z conjugate to t_e1 by an address map True
+   frames 15 (formula 15); distance classes {0: 1, 1: 6, 2: 8} (formula True); P-orbits on frames 3 (= m+1: True), each one distance class True
+m = 3: symplectic True; K = t_e1...t_em = x(I) True; y(I)x(I)y(I) = w True; P fixes L0, t_z at distance 1, K and w at distance m True; t_z conjugate to t_e1 by an address map True
+   frames 135 (formula 135); distance classes {0: 1, 1: 14, 2: 56, 3: 64} (formula True); P-orbits on frames 4 (= m+1: True), each one distance class True
+m = 4: symplectic True; K = t_e1...t_em = x(I) True; y(I)x(I)y(I) = w True; P fixes L0, t_z at distance 1, K and w at distance m True; t_z conjugate to t_e1 by an address map True
+   frames 2295 (formula 2295); distance classes {0: 1, 1: 30, 2: 280, 3: 960, 4: 1024} (formula True); P-orbits on frames 5 (= m+1: True), each one distance class True
+m = 5: symplectic True; K = t_e1...t_em = x(I) True; y(I)x(I)y(I) = w True; P fixes L0, t_z at distance 1, K and w at distance m True; t_z conjugate to t_e1 by an address map True
+   frames 75735 (formula 75735); distance classes {0: 1, 1: 62, 2: 1240, 3: 9920, 4: 31744, 5: 32768} (formula True); P-orbits not enumerated at m = 5

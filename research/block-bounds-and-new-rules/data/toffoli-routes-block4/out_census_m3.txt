@@ -1,0 +1,9 @@
+m=3 |AGL|=1344
+matchings 105
+orbits 3 sum sizes 105 t=0.0
+orbit size       7 cont=True routes=9 translation=True diffs=[1, 1, 1, 1] nsupp=2
+orbit size      42 cont=True routes=1 translation=False diffs=[1, 1, 2, 2] nsupp=4
+orbit size      56 cont=False routes=0 translation=False diffs=[1, 2, 5, 6] nsupp=8
+AGL-invariance spot check passed
+CONTINUING first steps: 49 of 105; translation ones: 7; total routes (chains of cosets) = 105
+t=0.0

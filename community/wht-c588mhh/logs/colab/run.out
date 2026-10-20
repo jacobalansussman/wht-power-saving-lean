@@ -1,0 +1,254 @@
+RFWHT START Tue Oct 13 21:15:53 UTC 2026 params: dir=WHTC588MHH negdir=WHTC588MHHNeg theorem=OAI.PowerSaving.WHT.wht_main_block_C588MHHx inner=OAI.PowerSaving.WHTC588MHH.wht_main_C588MHHx num=15699306
+--- 0. tree copy
+copied in 15s; .lake/packages -> /content/work/r-wht/shea/lean/complex588/.lake/packages
+tree=/content/work/rf-wht/shea/lean/complex588 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 tracked changes: 0
+Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  /content/work/ours/Compare.lean  tree tools/Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9
+Work/Block/WHT.lean: e00c1415767b05fd33c0ce9f778f60e96cae61de2bb21b187ec26dc8ff84ee72
+oleans in the copied build dir: 413
+--- 1. overlay (new files only)
+  17 of 17 files of /content/work/rf-wht-stage/ovl/MANIFEST.sha256 in place
+  8 of 8 files of /content/work/rf-wht-stage/src-C588MHH/MANIFEST.sha256 in place
+tracked changes after the overlay: 0
+--- 2. build (plain lean, LEAN_PATH = own build dir + Mathlib packages)
+=== A START Work.XHost.HostK 21:16:09 MemAvailable_GB=47
+Work.XHost.HostK EXIT 0 wall=0:00.98 maxrss_kb=481888 errors=0 sorry_mentions=0
+=== A START Work.XHost.HRoles 21:16:10 MemAvailable_GB=47
+Work.XHost.HRoles EXIT 0 wall=1:49.75 maxrss_kb=6786168 errors=0 sorry_mentions=0
+=== A START Work.XHost.HDef 21:18:00 MemAvailable_GB=47
+Work.XHost.HDef EXIT 0 wall=0:45.66 maxrss_kb=7113240 errors=0 sorry_mentions=0
+=== A START Work.XHost.HStage 21:18:45 MemAvailable_GB=46
+Work.XHost.HStage EXIT 0 wall=0:28.30 maxrss_kb=7018188 errors=0 sorry_mentions=0
+=== A START Work.XHost.HCert 21:19:14 MemAvailable_GB=45
+Work.XHost.HCert EXIT 0 wall=0:10.65 maxrss_kb=6848788 errors=0 sorry_mentions=0
+=== B START Work.XHost.Frames 21:16:29 MemAvailable_GB=47
+Work.XHost.Frames EXIT 0 wall=1:29.62 maxrss_kb=6739968 errors=0 sorry_mentions=0
+=== B START Work.XHost.HSched 21:17:59 MemAvailable_GB=46
+Work.XHost.HSched EXIT 0 wall=0:08.88 maxrss_kb=6812436 errors=0 sorry_mentions=0
+=== B START Work.XHost.HSchedK 21:18:08 MemAvailable_GB=47
+Work.XHost.HSchedK EXIT 0 wall=0:14.98 maxrss_kb=6852620 errors=0 sorry_mentions=0
+=== B START Work.XHost.HPriceK 21:18:23 MemAvailable_GB=45
+Work.XHost.HPriceK EXIT 0 wall=0:09.42 maxrss_kb=6787324 errors=0 sorry_mentions=0
+=== B START Work.XHost.Data.H588MSched 21:18:32 MemAvailable_GB=45
+Work.XHost.Data.H588MSched EXIT 0 wall=2:02.55 maxrss_kb=8566252 errors=0 sorry_mentions=0
+=== B START Work.XHost.Data.RateC588MHHx 21:20:35 MemAvailable_GB=35
+Work.XHost.Data.RateC588MHHx EXIT 0 wall=0:15.95 maxrss_kb=3451580 errors=0 sorry_mentions=0
+=== B START Work.WHTC588MHH.Challenge 21:20:51 MemAvailable_GB=47
+Work.WHTC588MHH.Challenge EXIT 0 wall=0:11.70 maxrss_kb=6751044 errors=0 sorry_mentions=1
+=== B START Work.WHTC588MHHNeg.Challenge 21:21:02 MemAvailable_GB=46
+Work.WHTC588MHHNeg.Challenge EXIT 0 wall=0:09.24 maxrss_kb=6753016 errors=0 sorry_mentions=1
+LANE FAILED (A rc=1, B rc=1)
+EXIT 1
+=== ATTEMPT 2 Tue Oct 13 21:21:46 UTC 2026: attempt 1 stopped after both lanes although every module exited 0 (mk returned the status of its last test); fixed with return 0, re-run resumes from build.summary
+RFWHT START Tue Oct 13 21:21:46 UTC 2026 params: dir=WHTC588MHH negdir=WHTC588MHHNeg theorem=OAI.PowerSaving.WHT.wht_main_block_C588MHHx inner=OAI.PowerSaving.WHTC588MHH.wht_main_C588MHHx num=15699306
+--- 0. tree copy
+already copied
+tree=/content/work/rf-wht/shea/lean/complex588 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 tracked changes: 0
+Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  /content/work/ours/Compare.lean  tree tools/Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9
+Work/Block/WHT.lean: e00c1415767b05fd33c0ce9f778f60e96cae61de2bb21b187ec26dc8ff84ee72
+oleans in the copied build dir: 426
+--- 1. overlay (new files only)
+  17 of 17 files of /content/work/rf-wht-stage/ovl/MANIFEST.sha256 in place
+  8 of 8 files of /content/work/rf-wht-stage/src-C588MHH/MANIFEST.sha256 in place
+tracked changes after the overlay: 0
+--- 2. build (plain lean, LEAN_PATH = own build dir + Mathlib packages)
+  (done before: Work.XHost.HostK)
+  (done before: Work.XHost.HRoles)
+  (done before: Work.XHost.HDef)
+  (done before: Work.XHost.HStage)
+  (done before: Work.XHost.HCert)
+  (done before: Work.XHost.Frames)
+  (done before: Work.XHost.HSched)
+  (done before: Work.XHost.HSchedK)
+  (done before: Work.XHost.HPriceK)
+  (done before: Work.XHost.Data.H588MSched)
+  (done before: Work.XHost.Data.RateC588MHHx)
+  (done before: Work.WHTC588MHH.Challenge)
+  (done before: Work.WHTC588MHHNeg.Challenge)
+=== C START Work.XHost.HGeom 21:22:06 MemAvailable_GB=47
+Work.XHost.HGeom EXIT 0 wall=0:38.57 maxrss_kb=7207924 errors=0 sorry_mentions=0
+=== C START Work.XHost.HEnd 21:22:45 MemAvailable_GB=47
+Work.XHost.HEnd EXIT 0 wall=0:07.59 maxrss_kb=6844464 errors=0 sorry_mentions=0
+=== C START Work.XHost.HBank 21:22:53 MemAvailable_GB=47
+Work.XHost.HBank EXIT 0 wall=0:09.88 maxrss_kb=6859580 errors=0 sorry_mentions=0
+=== C START Work.XHost.Data.InstC588MHH 21:23:03 MemAvailable_GB=46
+Work.XHost.Data.InstC588MHH EXIT 0 wall=0:07.55 maxrss_kb=6768596 errors=0 sorry_mentions=0
+=== C START Work.XHost.C588MHH 21:23:10 MemAvailable_GB=45
+Work.XHost.C588MHH EXIT 0 wall=0:07.70 maxrss_kb=6866708 errors=0 sorry_mentions=0
+=== C START Work.FourierC588MHH.Seam 21:23:18 MemAvailable_GB=44
+Work.FourierC588MHH.Seam EXIT 0 wall=0:08.52 maxrss_kb=6879940 errors=0 sorry_mentions=0
+=== C START Work.WHTC588MHH.Main 21:23:26 MemAvailable_GB=46
+Work.WHTC588MHH.Main EXIT 0 wall=0:09.12 maxrss_kb=6851632 errors=0 sorry_mentions=0
+=== C START Work.WHTC588MHH.Solution 21:23:36 MemAvailable_GB=47
+Work.WHTC588MHH.Solution EXIT 0 wall=0:09.15 maxrss_kb=6846364 errors=0 sorry_mentions=0
+--- 3. checks
+axioms rc=0 wall=7s
+'OAI.PowerSaving.WHTC588MHH.wht_main_C588MHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.WHT.wht_main_block_C588MHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms-seam rc=0 wall=9s
+'OAI.PowerSaving.SeamC588MHH.engine_C588MHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.engine_of_ginv_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.HostSched.ofTab_fitsR' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.PowerSaving.SeamC588MHH.engine_C588MHHx : ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+  (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+  OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl) (OAI.PowerSaving.RAM.bundle cl)
+    (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+    (fun i => (OAI.PowerSaving.Binary.bits (k i)).tape (OAI.PowerSaving.Binary.ripple (k i) (v i))) fun i =>
+    2 ^ k i * OAI.PowerSaving.envelope (1 - 15699306 / 10 ^ 10) (k i)
+=== SORRY/ESCAPE GREP in Work/WHTC588MHH Work/WHTC588MHHNeg (Challenge files carry the statement's deliberate 'sorry')
+Work/WHTC588MHH/Main.lean:30:This file adds one term and nothing else.  No `sorry`, no `native_decide`, no axiom.
+Work/WHTC588MHH/Challenge.lean:16:The proof is `sorry` on purpose: this file is a STATEMENT.  The proof is in
+Work/WHTC588MHH/Challenge.lean:329:  sorry
+Work/WHTC588MHHNeg/Challenge.lean:16:The proof is `sorry` on purpose: this file is a STATEMENT.  The proof is in
+Work/WHTC588MHHNeg/Challenge.lean:329:  sorry
+=== SORRY/ESCAPE GREP in the hosting overlay Work/XHost (without Test/) and Work/FourierC588MHH/Seam.lean
+Work/XHost/Frames.lean:24:Work/Bank401 (Shea's complex588 tree at 0e61af6), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HBank.lean:10:Written by h-L3-build (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HPriceK.lean:9:Written by h-L3-build (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HGeom.lean:19:Written by h-L3-build/gen/gen_hgeom.py (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HCert.lean:9:prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HEnd.lean:11:assistance from Claude.  No `sorry`.
+Work/XHost/HSched.lean:10:Written by h-L3-build (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HStage.lean:10:Claude.  No `sorry`.
+Work/XHost/C588MHH.lean:13:Written by h-L3-build/tools/gen_h588m.py (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HSchedK.lean:15:Written by h-L3-build (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HDef.lean:12:Written by h-L3-build/gen/gen_hnet.py (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HRoles.lean:15:Written by h-L3-build/gen/gen_hnet.py (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/FourierC588MHH/Seam.lean:40:No `sorry`, no `native_decide`.
+=== STEP compare-pos START Tue Oct 13 21:24:01 UTC 2026 cmd: lean --run Compare.lean Work.WHTC588MHH.Challenge Work.WHTC588MHH.Solution OAI.PowerSaving.WHT.wht_main_block_C588MHHx
+=== STEP compare-pos END rc=1 wall=9s maxrss_kb=1597032
+uncaught exception: process 'lean' exited with code 255
+stderr:
+could not execute external process 'lean'
+
+=== STEP compare-neg START Tue Oct 13 21:24:10 UTC 2026 cmd: lean --run Compare.lean Work.WHTC588MHHNeg.Challenge Work.WHTC588MHH.Solution OAI.PowerSaving.WHT.wht_main_block_C588MHHx
+=== STEP compare-neg END rc=1 wall=4s maxrss_kb=1607016
+uncaught exception: process 'lean' exited with code 255
+stderr:
+could not execute external process 'lean'
+
+tracked changes in the tree after the run: 0
+PASS axioms: inner theorem on the 3 standard axioms
+PASS axioms: comparator theorem on the 3 standard axioms
+PASS axioms: engine, hosted end theorem and checker soundness on standard axioms only, no sorryAx
+PASS axioms: no sorryAx
+PASS grep: no escape hatch in Main/Solution (only comment mentions)
+PASS grep: the only code sorry is the statement proof in the two Challenge files
+PASS grep: no code escape hatch in the hosting overlay (comment mentions only)
+FAIL Compare positive: rc 0 and RESULT: PASS
+FAIL Compare negative: rc != 0, RESULT: FAIL, statement differs
+SOME CHECK FAILED
+RFWHT END Tue Oct 13 21:24:14 UTC 2026 rc=1 total_wall=148s
+EXIT 1
+=== ATTEMPT 3 Tue Oct 13 21:24:45 UTC 2026: attempt 2 built every module and passed axioms and greps, but Compare.lean could not start its lean subprocess (toolchain bin not on PATH); fixed, re-run resumes from build.summary
+RFWHT START Tue Oct 13 21:24:46 UTC 2026 params: dir=WHTC588MHH negdir=WHTC588MHHNeg theorem=OAI.PowerSaving.WHT.wht_main_block_C588MHHx inner=OAI.PowerSaving.WHTC588MHH.wht_main_C588MHHx num=15699306
+--- 0. tree copy
+already copied
+tree=/content/work/rf-wht/shea/lean/complex588 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 tracked changes: 0
+Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  /content/work/ours/Compare.lean  tree tools/Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9
+Work/Block/WHT.lean: e00c1415767b05fd33c0ce9f778f60e96cae61de2bb21b187ec26dc8ff84ee72
+oleans in the copied build dir: 434
+--- 1. overlay (new files only)
+  17 of 17 files of /content/work/rf-wht-stage/ovl/MANIFEST.sha256 in place
+  8 of 8 files of /content/work/rf-wht-stage/src-C588MHH/MANIFEST.sha256 in place
+tracked changes after the overlay: 0
+--- 2. build (plain lean, LEAN_PATH = own build dir + Mathlib packages)
+  (done before: Work.XHost.HostK)
+  (done before: Work.XHost.HRoles)
+  (done before: Work.XHost.HDef)
+  (done before: Work.XHost.HStage)
+  (done before: Work.XHost.HCert)
+  (done before: Work.XHost.Frames)
+  (done before: Work.XHost.HSched)
+  (done before: Work.XHost.HSchedK)
+  (done before: Work.XHost.HPriceK)
+  (done before: Work.XHost.Data.H588MSched)
+  (done before: Work.XHost.Data.RateC588MHHx)
+  (done before: Work.WHTC588MHH.Challenge)
+  (done before: Work.WHTC588MHHNeg.Challenge)
+  (done before: Work.XHost.HGeom)
+  (done before: Work.XHost.HEnd)
+  (done before: Work.XHost.HBank)
+  (done before: Work.XHost.Data.InstC588MHH)
+  (done before: Work.XHost.C588MHH)
+  (done before: Work.FourierC588MHH.Seam)
+  (done before: Work.WHTC588MHH.Main)
+  (done before: Work.WHTC588MHH.Solution)
+--- 3. checks
+axioms rc=0 wall=9s
+'OAI.PowerSaving.WHTC588MHH.wht_main_C588MHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.WHT.wht_main_block_C588MHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms-seam rc=0 wall=8s
+'OAI.PowerSaving.SeamC588MHH.engine_C588MHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.engine_of_ginv_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.HostSched.ofTab_fitsR' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.PowerSaving.SeamC588MHH.engine_C588MHHx : ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+  (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+  OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl) (OAI.PowerSaving.RAM.bundle cl)
+    (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+    (fun i => (OAI.PowerSaving.Binary.bits (k i)).tape (OAI.PowerSaving.Binary.ripple (k i) (v i))) fun i =>
+    2 ^ k i * OAI.PowerSaving.envelope (1 - 15699306 / 10 ^ 10) (k i)
+=== SORRY/ESCAPE GREP in Work/WHTC588MHH Work/WHTC588MHHNeg (Challenge files carry the statement's deliberate 'sorry')
+Work/WHTC588MHH/Main.lean:30:This file adds one term and nothing else.  No `sorry`, no `native_decide`, no axiom.
+Work/WHTC588MHH/Challenge.lean:16:The proof is `sorry` on purpose: this file is a STATEMENT.  The proof is in
+Work/WHTC588MHH/Challenge.lean:329:  sorry
+Work/WHTC588MHHNeg/Challenge.lean:16:The proof is `sorry` on purpose: this file is a STATEMENT.  The proof is in
+Work/WHTC588MHHNeg/Challenge.lean:329:  sorry
+=== SORRY/ESCAPE GREP in the hosting overlay Work/XHost (without Test/) and Work/FourierC588MHH/Seam.lean
+Work/XHost/Frames.lean:24:Work/Bank401 (Shea's complex588 tree at 0e61af6), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HBank.lean:10:Written by h-L3-build (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HPriceK.lean:9:Written by h-L3-build (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HGeom.lean:19:Written by h-L3-build/gen/gen_hgeom.py (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HCert.lean:9:prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HEnd.lean:11:assistance from Claude.  No `sorry`.
+Work/XHost/HSched.lean:10:Written by h-L3-build (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HStage.lean:10:Claude.  No `sorry`.
+Work/XHost/C588MHH.lean:13:Written by h-L3-build/tools/gen_h588m.py (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HSchedK.lean:15:Written by h-L3-build (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HDef.lean:12:Written by h-L3-build/gen/gen_hnet.py (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/XHost/HRoles.lean:15:Written by h-L3-build/gen/gen_hnet.py (wht43, 13 Oct 2026), prepared with assistance from Claude.  No `sorry`.
+Work/FourierC588MHH/Seam.lean:40:No `sorry`, no `native_decide`.
+=== STEP compare-pos START Tue Oct 13 21:25:23 UTC 2026 cmd: lean --run Compare.lean Work.WHTC588MHH.Challenge Work.WHTC588MHH.Solution OAI.PowerSaving.WHT.wht_main_block_C588MHHx
+=== STEP compare-pos END rc=0 wall=80s maxrss_kb=15907120
+challenge module: Work.WHTC588MHH.Challenge   (10745 modules loaded)
+solution module:  Work.WHTC588MHH.Solution   (11107 modules loaded)
+sanity: imported proofs are loaded (Nat.add_comm uses 7 constants, Real.exp_pos uses 85)
+
+=== OAI.PowerSaving.WHT.wht_main_block_C588MHHx ===
+challenge: theorem in Work.WHTC588MHH.Challenge;  solution: theorem in Work.WHTC588MHH.Solution
+OK: statement is the same kernel term in both
+challenge proof uses sorryAx: true
+statement depends on 2035 constants; 107 are declared in the challenge file itself
+OK: every statement dependency is identical in the solution
+solution proof reaches 38018 constants; axioms: #[Classical.choice, Quot.sound, propext]
+OK: only permitted axioms
+
+RESULT: PASS
+=== STEP compare-neg START Tue Oct 13 21:26:43 UTC 2026 cmd: lean --run Compare.lean Work.WHTC588MHHNeg.Challenge Work.WHTC588MHH.Solution OAI.PowerSaving.WHT.wht_main_block_C588MHHx
+=== STEP compare-neg END rc=1 wall=46s maxrss_kb=16069196
+challenge module: Work.WHTC588MHHNeg.Challenge   (10745 modules loaded)
+solution module:  Work.WHTC588MHH.Solution   (11107 modules loaded)
+sanity: imported proofs are loaded (Nat.add_comm uses 7 constants, Real.exp_pos uses 85)
+
+=== OAI.PowerSaving.WHT.wht_main_block_C588MHHx ===
+challenge: theorem in Work.WHTC588MHHNeg.Challenge;  solution: theorem in Work.WHTC588MHH.Solution
+FAIL: statement (type) differs between challenge and solution
+challenge proof uses sorryAx: true
+statement depends on 2035 constants; 107 are declared in the challenge file itself
+OK: every statement dependency is identical in the solution
+solution proof reaches 38018 constants; axioms: #[Classical.choice, Quot.sound, propext]
+OK: only permitted axioms
+
+RESULT: FAIL
+tracked changes in the tree after the run: 0
+PASS axioms: inner theorem on the 3 standard axioms
+PASS axioms: comparator theorem on the 3 standard axioms
+PASS axioms: engine, hosted end theorem and checker soundness on standard axioms only, no sorryAx
+PASS axioms: no sorryAx
+PASS grep: no escape hatch in Main/Solution (only comment mentions)
+PASS grep: the only code sorry is the statement proof in the two Challenge files
+PASS grep: no code escape hatch in the hosting overlay (comment mentions only)
+PASS Compare positive: rc 0 and RESULT: PASS
+PASS Compare negative: rc != 0, RESULT: FAIL, statement differs
+ALL CHECKS PASSED
+RFWHT END Tue Oct 13 21:27:29 UTC 2026 rc=0 total_wall=163s
+EXIT 0

@@ -1,0 +1,135 @@
+{
+  "format": "community-certificate-package/1",
+  "name": "wht-c588mhh",
+  "suffix": "C588MHHx",
+  "title": "Walsh-Hadamard corollary of the C588MHH kernel program (Kothe's #588 circuit, mutable sources, same-run hosting)",
+  "statement": "this repository's published Walsh-Hadamard statement (WHTProgram, WHTTimeBoundsAt), only the exponent and the theorem name changed",
+  "mode": "add",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "requires": [
+    "community/c588m (annealed variant): the C588M modules up to Work.FourierC588M.Seam",
+    "community/c588mhh: its 16 files of Work/XHost and its Work/FourierC588MHH/Seam.lean (scripts-as-run/hosting-sources.MANIFEST.sha256 lists them with their sha256; byte-identical to that package's overlay)"
+  ],
+  "results": [
+    {
+      "theorem": "OAI.PowerSaving.WHT.wht_main_block_C588MHHx",
+      "inner_theorem": "OAI.PowerSaving.WHTC588MHH.wht_main_C588MHHx",
+      "numerator": 15699306,
+      "negative_numerator": 15699307,
+      "saving": "1.5699306e-3",
+      "dft_saving_same_kernel": "1.5699305e-3",
+      "exponent": "1 - 15699306/10^10",
+      "kernel": "SeamC588MHH.engine_C588MHHx (Work/FourierC588MHH/Seam.lean): XHost.engine_of_ginv_host with the same-run host table, 111 banks, unit width 7279, fill parameter s = 40",
+      "proof": "one term: BlockWHT.wht_main_of_engine (Work/Block/WHT.lean, sha256 e00c1415767b05fd33c0ce9f778f60e96cae61de2bb21b187ec26dc8ff84ee72, the published file) applied to the kernel program",
+      "modules": [
+        "Work.WHTC588MHH.Challenge",
+        "Work.WHTC588MHHNeg.Challenge",
+        "Work.WHTC588MHH.Main",
+        "Work.WHTC588MHH.Solution",
+        "Work.WHTC588MHH.Axioms"
+      ],
+      "comparator": {
+        "positive": "comparator/WHTC588MHH.json",
+        "positive_nanoda": "comparator/WHTC588MHH-nanoda.json",
+        "negative": "comparator/WHTC588MHHNeg.json"
+      },
+      "checks": [
+        {
+          "id": "build",
+          "status": "pass",
+          "what": "pass (plain lean, one process per module: the 17 hosting modules, then Challenge, Neg Challenge, Main, Solution; 21 modules, all exit 0; the comparator's own lake build, as user nobody inside the jail, rebuilt the 17 hosting modules, Main, Solution and the challenge, all built, nothing of the C588M base rebuilt)",
+          "log": "logs/colab/build.summary"
+        },
+        {
+          "id": "axioms",
+          "status": "pass",
+          "what": "pass (both theorems, and the engine theorem, XHost.engine_of_ginv_host and XHost.HostSched.ofTab_fitsR: propext, Classical.choice, Quot.sound)",
+          "log": "logs/colab/axioms.log"
+        },
+        {
+          "id": "compare",
+          "status": "pass",
+          "what": "pass (Compare.lean, the published tools/Compare.lean: same kernel term, only permitted axioms, RESULT: PASS)",
+          "log": "logs/colab/compare-pos.log"
+        },
+        {
+          "id": "compare-negative",
+          "status": "pass",
+          "what": "pass (FAIL as it must, at 15699307: statement differs)",
+          "log": "logs/colab/compare-neg.log"
+        },
+        {
+          "id": "comparator",
+          "status": "pass",
+          "what": "pass (nanoda configuration: nanoda kernel and Lean default kernel accept, 721 s, 8.8 GB; Lean-kernel configuration accepted, 327 s, 6.8 GB)",
+          "log": "logs/colab/cmp/rfwht-WHTC588MHH-nanoda.log"
+        },
+        {
+          "id": "comparator-negative",
+          "status": "pass",
+          "what": "pass (rejected: challenge and solution theorem statement do not match, at 15699307)",
+          "log": "logs/colab/cmp/rfwht-WHTC588MHHNeg.log"
+        },
+        {
+          "id": "source-scan",
+          "status": "pass",
+          "what": "pass (the only code sorry is the statement proof of the two Challenge files; the hosting files mention sorry in comments only)",
+          "log": "logs/colab/sorry-grep-overlay.txt"
+        },
+        {
+          "id": "comparator-lean-kernel",
+          "status": "pass",
+          "what": "the Lean-kernel configuration accepted",
+          "log": "logs/colab/cmp/rfwht-WHTC588MHH.log"
+        },
+        {
+          "id": "skeptic",
+          "status": "not run",
+          "log": "",
+          "what": "no independent agent re-checked this theorem"
+        },
+        {
+          "id": "bigospeedrun-verifier",
+          "status": "not run",
+          "log": "",
+          "what": "the leaderboard's own verifier has not been run on this result"
+        }
+      ],
+      "comparator_note": "official comparator run inside jail2.sh, a stand-in built from Linux namespaces, user nobody and a seccomp filter, because the Colab kernel has no Landlock (landrun) and the machine has no systemd; the official bigospeedrun verifier has not been run on this result",
+      "machine_note": "built on the second Colab machine, in a private copy of the tree on which the C588M corollary was built (Shea's tree at 5239484 with the c588m overlay applied and the C588M modules built up to Work.FourierC588M.Seam)",
+      "logs": [
+        "logs/colab/README-rf-wht.txt",
+        "logs/colab/run.out",
+        "logs/colab/build.summary",
+        "logs/colab/axioms.log",
+        "logs/colab/axioms-seam.log",
+        "logs/colab/sorry-grep.txt",
+        "logs/colab/sorry-grep-overlay.txt",
+        "logs/colab/compare-pos.log",
+        "logs/colab/compare-neg.log",
+        "logs/colab/cmp.out",
+        "logs/colab/cmp/"
+      ],
+      "scripts": "scripts-as-run/ (gen_wht.py, unchanged from wht-c588, writes the eight files from the published ChallengeB2Ge8x.lean and SolutionB2Ge8x.lean; rfwht-run.sh copies the tree, lays the files over it, builds and checks; cc/ runs the official comparator)"
+    }
+  ],
+  "machine": "Google Colab VM: Linux x86-64, Intel Xeon 2.20 GHz, 8 logical processors, 51 GiB, kernel 6.6.122+ without Landlock, no systemd",
+  "credits": [
+    "Jeremy Kothe: the #588 atm3 circuit (CrocSwap/integer-mult-bounds), with the predecessors its notices name",
+    "Ryan Shea: the conversion pipeline, the generators, the Lean instantiation of #588 (shea256/fourier-transform-below-nlogn, lean/complex588), and the lemmas that L1 restates (B401.gauged_step, B401.gauged_Wn, GX.entW_spec, GX.entW_form, GX.gauge_step)",
+    "Nil Mamano: the Lean files of the nine-stage network that Shea's tree takes from his leaderboard submission: the gauged extension (GInvE), the network G401 (Work/Bridge401), the bank lemmas (Work/Bank401), the bank-table checker schedK, the end theorem GX.engine_of_ginv_401 and the Fourier chain templates; the hosting modules of community/c588mhh copy or adapt them (see its result.json)",
+    "DaysSky: the bridged layout (#363); idle-axis hosting (pull request #442 of CrocSwap/integer-mult-bounds), with the written proof that the Lean proof follows for hosts within one run, and the layout of its integer programme (hosting_core)",
+    "Zhihao Chen (jacklightChen): the compressed nine-stage layout with its banks and padding (#377); the written scalar-interface argument for mutable sources (pull request #425 of CrocSwap/integer-mult-bounds)",
+    "Dugongue: the entrance gauges and the residual banks (#401)",
+    "lydakis: the bank patterns (#275)",
+    "the authors of CrocSwap/integer-mult-bounds",
+    "OpenAI: the model, the statements and the all-length reduction",
+    "Jacob Sussman (this repository): the original Lean engine and core_nested that the gauges and this proof run on, the Lean proof of mutable sources (Work/XMut), for same-run hosting adding hosting to Mamano's network (Work/XHost), the checker hostSchedK and its soundness, the host table and the instance, and BlockWHT.wht_main_of_engine (Work/Block/WHT.lean, published) with the one-line Walsh-Hadamard corollary of this package"
+  ]
+}

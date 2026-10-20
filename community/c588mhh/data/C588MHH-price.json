@@ -1,0 +1,40 @@
+{
+ "name": "C588MHH",
+ "kernel_numerator": 15699306,
+ "dft_numerator": 15699305,
+ "W": 7279,
+ "banks": 111,
+ "hist": {
+  "1": 180640,
+  "2": 35424,
+  "3": 20224,
+  "4": 17056,
+  "5": 5728,
+  "6": 4032,
+  "7": 320,
+  "8": 1584,
+  "39": 1,
+  "48": 1680
+ },
+ "pads": {
+  "0": 110,
+  "39": 1
+ },
+ "rem_hist": {
+  "0": 1152,
+  "1": 224,
+  "3": 8,
+  "4": 44,
+  "5": 212,
+  "7": 40,
+  "8": 126,
+  "48": 210
+ },
+ "slack": 9.864353780021738e-11,
+ "source": {
+  "hosttab": "data/H588-hosttab.json",
+  "repack": "data/h588_c0_samerun.repacked2.json",
+  "price": "price-annealed.json of the c588m generator (tools/community/c588m-gen/REPRODUCE.sh writes it to out/price/)",
+  "note": "names in this repository; as run, the files were in the agents' working folders"
+ }
+}

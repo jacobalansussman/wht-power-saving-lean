@@ -1,0 +1,13 @@
+flags 2835, coset reps done (3.4s)
+B order 512, |B'| = 32  |B/B'| = 16
+abelianisation F_2^4
+lambda 3 constituents (z2a, z2b, dim): [(np.float64(-27.0), np.float64(-45.0), 56), (np.float64(-9.0), np.float64(-45.0), 70), (np.float64(-9.0), np.float64(-21.0), 630), (np.float64(-17.0), np.float64(-5.0), 189), (np.float64(-21.0), np.float64(3.0), 105), (np.float64(-9.0), np.float64(-9.0), 280), (np.float64(3.0), np.float64(-21.0), 210), (np.float64(-5.0), np.float64(-5.0), 378), (np.float64(7.0), np.float64(-21.0), 405), (np.float64(-0.0), np.float64(0.0), 512)] (63s)
+GL(3,2)-orbits on characters of A, sizes: [1, 7, 7, 21, 28]
+
+irreducible 56(-24): u = sum_g chi(g) rho(g) e_F rounded (max rounding error 1.0e-11); exact membership u in X: True; (z2a, z2b) = (-27, -45) unique among constituents: True
+  A-weight space dims (mod p, summing to 56): orbit-wise {1: 0, 21: 0, 7: 28, 28: 28}
+  dim N = 28 (exact; mod p 28); orbit size 28; profile exact (psi1, psi2, psi3) = (10, 18, 28); mod-p profile (10, 18, 28); psi3/psi1 = 28/10; psi3 + 4 psi2 - 10 psi1 = 0; 7 psi3 + 38 psi2 - 88 psi1 = 0  (96s)
+
+irreducible 105(-35): u = sum_g chi(g) rho(g) e_F rounded (max rounding error 1.0e-11); exact membership u in X: True; (z2a, z2b) = (-21, 3) unique among constituents: True
+  A-weight space dims (mod p, summing to 105): orbit-wise {1: 0, 21: 0, 7: 35, 28: 56}
+  dim N = 56 (exact; mod p 56); orbit size 28; profile exact (psi1, psi2, psi3) = (20, 38, 49); mod-p profile (20, 38, 49); psi3/psi1 = 49/20; psi3 + 4 psi2 - 10 psi1 = 1; 7 psi3 + 38 psi2 - 88 psi1 = 27  (291s)

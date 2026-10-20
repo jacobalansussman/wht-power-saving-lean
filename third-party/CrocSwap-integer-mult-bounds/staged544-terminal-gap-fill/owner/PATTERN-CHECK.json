@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ALL_AFFECTED_BIN_PATTERNS",
+  "affected_bins": 84240,
+  "capacity": 32,
+  "old_width_pattern": {
+    "4": 1,
+    "9": 3
+  },
+  "old_idle": 1,
+  "new_idle": 0,
+  "source_old_fill_sha256": "50e4635123c0551a1a3c8f4cab870bcccc3e579c24447abe9d81336fde91f883",
+  "new_fill_sha256": "430233230c9194a52bda171afd21713351fdd02e0054230012109e44047c4c55"
+}

@@ -1,0 +1,140 @@
+== controls m=3 (expect f(B2)=488, f(K)=664, cap 264)
+Tue Oct 13 19:58:30 EDT 2026
+  alpha=000 x1: rows 196 part 61
+  alpha=100 x1: rows 196 part 61
+  alpha=001 x2: rows 196 part 61
+  alpha=101 x2: rows 196 part 61
+  alpha=011 x1: rows 196 part 61
+  alpha=111 x1: rows 196 part 61
+m=3 Lambda^2 (x) Lambda^3 J=[1]: dim N 840; cap (exact) 264; f(B_2 (x) I_1) [float] = 488; bound 488/264 = 1.848485 moves per array  (0.1s)
+  alpha=000 x1: rows 196 part 83
+  alpha=001 x3: rows 196 part 83
+  alpha=011 x3: rows 196 part 83
+  alpha=111 x1: rows 196 part 83
+m=3 Lambda^2 (x) Lambda^3 J=[1]: dim N 840; cap (exact) 264; f(B_3 (x) I_0) [float] = 664; bound 664/264 = 2.515152 moves per array  (0.1s)
+  alpha=000 x1: rows 196 part 33
+  alpha=010 x2: rows 196 part 33
+  alpha=110 x1: rows 196 part 33
+  alpha=001 x1: rows 196 part 33
+  alpha=011 x2: rows 196 part 33
+  alpha=111 x1: rows 196 part 33
+m=3 Lambda^2 (x) Lambda^3 J=[1]: dim N 840; cap (exact) 264; f(B_1 (x) I_2) [float] = 264; bound 264/264 = 1.000000 moves per array  (0.2s)
+venn_mask.py:90: RuntimeWarning: divide by zero encountered in matmul
+  out = np.fmod(out + X[:, s:s + 64] @ Y[s:s + 64, :], p)
+venn_mask.py:90: RuntimeWarning: overflow encountered in matmul
+  out = np.fmod(out + X[:, s:s + 64] @ Y[s:s + 64, :], p)
+venn_mask.py:90: RuntimeWarning: invalid value encountered in matmul
+  out = np.fmod(out + X[:, s:s + 64] @ Y[s:s + 64, :], p)
+  alpha=000 x1: rows 196 part 61
+  alpha=100 x1: rows 196 part 61
+  alpha=001 x2: rows 196 part 61
+  alpha=101 x2: rows 196 part 61
+  alpha=011 x1: rows 196 part 61
+  alpha=111 x1: rows 196 part 61
+m=3 Lambda^2 (x) Lambda^3 J=[1]: dim N 840; cap (exact) 264; f(B_2 (x) I_1) [modp] = 488; bound 488/264 = 1.848485 moves per array  (0.7s)
+== m=4 Lambda^2 (x) Lambda^2
+Tue Oct 13 19:58:35 EDT 2026
+  alpha=0000 x1: rows 120 part 149
+Traceback (most recent call last):
+  File "venn_mask.py", line 193, in <module>
+    dN, val = D.run(verbose=True)
+  File "venn_mask.py", line 165, in run
+    assert rk == len(cols), ("columns not independent", rk, len(cols))
+AssertionError: ('columns not independent', 49, 105)
+  alpha=0000 x1: rows 120 part 179
+Traceback (most recent call last):
+  File "venn_mask.py", line 193, in <module>
+    dN, val = D.run(verbose=True)
+  File "venn_mask.py", line 165, in run
+    assert rk == len(cols), ("columns not independent", rk, len(cols))
+AssertionError: ('columns not independent', 49, 105)
+  alpha=0000 x1: rows 120 part 138
+  alpha=0100 x2: rows 56 part 138
+  alpha=1100 x1: rows 56 part 138
+  alpha=0001 x2: rows 112 part 146
+  alpha=0101 x4: rows 112 part 146
+  alpha=1101 x2: rows 112 part 146
+  alpha=0011 x1: rows 112 part 146
+  alpha=0111 x2: rows 112 part 146
+  alpha=1111 x1: rows 112 part 146
+m=4 Lambda^2 (x) Lambda^2 J=[1]: dim N 3360; cap (exact) 1456; f(B_2 (x) I_2) [float] = 2304; bound 2304/1456 = 1.582418 moves per array  (0.9s)
+  alpha=0000 x1: rows 120 part 166
+  alpha=1000 x1: rows 56 part 166
+  alpha=0001 x3: rows 112 part 170
+  alpha=1001 x3: rows 112 part 170
+  alpha=0011 x3: rows 112 part 170
+  alpha=1011 x3: rows 112 part 170
+  alpha=0111 x1: rows 112 part 170
+  alpha=1111 x1: rows 112 part 170
+m=4 Lambda^2 (x) Lambda^2 J=[1]: dim N 3360; cap (exact) 1456; f(B_3 (x) I_1) [float] = 2712; bound 2712/1456 = 1.862637 moves per array  (0.7s)
+  alpha=0000 x1: rows 120 part 11
+Traceback (most recent call last):
+  File "venn_mask.py", line 193, in <module>
+    dN, val = D.run(verbose=True)
+  File "venn_mask.py", line 165, in run
+    assert rk == len(cols), ("columns not independent", rk, len(cols))
+AssertionError: ('columns not independent', 7, 15)
+  alpha=0000 x1: rows 120 part 13
+Traceback (most recent call last):
+  File "venn_mask.py", line 193, in <module>
+    dN, val = D.run(verbose=True)
+  File "venn_mask.py", line 165, in run
+    assert rk == len(cols), ("columns not independent", rk, len(cols))
+AssertionError: ('columns not independent', 7, 15)
+== m=4 Lambda^1 (x) Lambda^b, k=3 target (B3 hooks)
+Tue Oct 13 19:58:45 EDT 2026
+  alpha=0000 x1: rows 120 part 13
+  alpha=1000 x1: rows 120 part 13
+  alpha=0001 x3: rows 120 part 13
+  alpha=1001 x3: rows 120 part 13
+  alpha=0011 x3: rows 120 part 13
+  alpha=1011 x3: rows 120 part 13
+  alpha=0111 x1: rows 120 part 13
+  alpha=1111 x1: rows 120 part 13
+m=4 Lambda^1 (x) Lambda^2 J=[1]: dim N 240; cap (exact) 112; f(B_3 (x) I_1) [float] = 208; bound 208/112 = 1.857143 moves per array  (0.1s)
+  alpha=0000 x1: rows 35 part 89
+  alpha=1000 x1: rows 35 part 89
+  alpha=0001 x3: rows 70 part 89
+  alpha=1001 x3: rows 70 part 89
+  alpha=0011 x3: rows 70 part 89
+  alpha=1011 x3: rows 70 part 89
+  alpha=0111 x1: rows 70 part 97
+  alpha=1111 x1: rows 70 part 97
+m=4 Lambda^1 (x) Lambda^3 J=[1]: dim N 1680; cap (exact) 728; f(B_3 (x) I_1) [float] = 1440; bound 1440/728 = 1.978022 moves per array  (0.6s)
+  alpha=0000 x1: rows 1820 part 385
+  alpha=1000 x1: rows 1820 part 385
+  alpha=0001 x3: rows 1820 part 385
+  alpha=1001 x3: rows 1820 part 385
+  alpha=0011 x3: rows 1820 part 385
+  alpha=1011 x3: rows 1820 part 385
+  alpha=0111 x1: rows 1820 part 385
+  alpha=1111 x1: rows 1820 part 385
+m=4 Lambda^1 (x) Lambda^4 J=[1]: dim N 7280; cap (exact) 2912; f(B_3 (x) I_1) [float] = 6160; bound 6160/2912 = 2.115385 moves per array  (7.0s)
+== m=4 Lambda^2 (x) Lambda^3
+Tue Oct 13 19:58:55 EDT 2026
+  alpha=0000 x1: rows 4200 part 899
+  alpha=0100 x2: rows 4200 part 899
+  alpha=1100 x1: rows 4200 part 899
+  alpha=0001 x2: rows 4200 part 899
+  alpha=0101 x4: rows 4200 part 899
+  alpha=1101 x2: rows 4200 part 899
+  alpha=0011 x1: rows 4200 part 899
+  alpha=0111 x2: rows 4200 part 899
+  alpha=1111 x1: rows 4200 part 899
+m=4 Lambda^2 (x) Lambda^3 J=[1]: dim N 21840; cap (exact) 8848; f(B_2 (x) I_2) [float] = 14384; bound 14384/8848 = 1.625678 moves per array  (142.0s)
+  alpha=0000 x1: rows 4200 part 1125
+  alpha=1000 x1: rows 4200 part 1125
+  alpha=0001 x3: rows 4200 part 1125
+  alpha=1001 x3: rows 4200 part 1125
+  alpha=0011 x3: rows 4200 part 1125
+  alpha=1011 x3: rows 4200 part 1125
+  alpha=0111 x1: rows 4200 part 1125
+  alpha=1111 x1: rows 4200 part 1125
+m=4 Lambda^2 (x) Lambda^3 J=[1]: dim N 21840; cap (exact) 8848; f(B_3 (x) I_1) [float] = 18000; bound 18000/8848 = 2.034358 moves per array  (122.4s)
+  alpha=0000 x1: rows 4200 part 870
+  alpha=0100 x2: rows 4200 part 870
+  alpha=1100 x1: rows 4200 part 870
+  alpha=0001 x2: rows 4200 part 870
+  alpha=0101 x4: rows 4200 part 870
+  alpha=1101 x2: rows 4200 part 870
+exit 143

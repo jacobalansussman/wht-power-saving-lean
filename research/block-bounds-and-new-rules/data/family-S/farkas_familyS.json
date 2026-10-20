@@ -1,0 +1,50 @@
+{
+  "about": "pf-logging, 13 Oct 2026. Farkas (LP-dual) certificates for b4-depth4's family-S integer programmes, valid for EVERY block size m. Each constraint is a linear form g >= 0 in the listed variables and m (key '1' = constant term). A certificate is a list of nonnegative multipliers lambda_i such that  objective - sum_i lambda_i g_i  is identically a nonnegative constant. Then objective >= 0 at every feasible point, for every m.",
+  "variables": "a, a2: depths of the shared lineage's two parents (x in T1, y in T2); c, r1, r2: common prefix and branches of the shared lineage; dJ: junk depth; s1, s2: sizes of the pure trees T1, T2; dpar1 (>= a), dpar2 (>= a2): depth of the parent node in its tree; dz1, dz2: depth of the covering node (pure cover z) or of the lineage node y_f (lineage cover); L1, L2: depth of the lowest common ancestor in the Steiner tree; dist1, dist2: tree distance; q1, q2: lineage moves for J1, J2 (0 for a pure cover); lin: lineage cost charged (max(q1,q2) if both > 0, else q1 + q2); n: total moves",
+  "programs": {
+    "ip2": {
+      "file": "wave16/b4-depth4/familyS_ip2.py (the residual case behind 'FAMILY S CLOSED')",
+      "objective": {"n": 1, "m": -2},
+      "objective_meaning": "n - 2m >= 0, where n = s1 + s2 + c + r1 + r2 + lin (the program's n)",
+      "constraints": {
+        "def_n":   {"form": {"n": 1, "s1": -1, "s2": -1, "c": -1, "r1": -1, "r2": -1, "lin": -1}, "type": "eq", "source": "n = s1 + s2 + base + lin, base = c + r1 + r2"},
+        "K1":      {"form": {"a": 1, "c": 1, "r1": 1, "m": -1}, "source": "a + c + r1 >= m (K-path 1)"},
+        "K2":      {"form": {"a2": 1, "c": 1, "r2": 1, "m": -1}, "source": "a2 + c + r2 >= m (K-path 2)"},
+        "dJ_r":    {"form": {"dJ": 1, "m": -1, "r1": 1, "r2": 1}, "source": "dJ = max(0, m-(r1+r2), m-(a+a2)) >= m - (r1+r2)"},
+        "T1_size": {"form": {"s1": 1, "dpar1": -1, "dz1": -1, "L1": 1}, "source": "s1 = steiner(dpar1, dz1, dist1) = dpar1 + dz1 - L1 (J2 cover on T1, pure or lineage)"},
+        "T1_lca":  {"form": {"dz1": 1, "L1": -1}, "source": "L1 <= min(dpar1, dz1)"},
+        "T1_par":  {"form": {"dpar1": 1, "a": -1}, "source": "dpar ranges over range(d_par, ...) with d_par = a for T1"},
+        "T2_size": {"form": {"s2": 1, "dpar2": -1, "dz2": -1, "L2": 1}, "source": "s2 = steiner(dpar2, dz2, dist2) = dpar2 + dz2 - L2 (J1 cover on T2)"},
+        "T2_dist": {"form": {"dpar2": 1, "dz2": 1, "L2": -2, "dist2": -1}, "source": "steiner requires d1 + d2 - 2L >= dist"},
+        "T2_par":  {"form": {"dpar2": 1, "a2": -1}, "source": "dpar >= a2 for T2"},
+        "T2_dJ":   {"form": {"dz2": 1, "q1": 1, "dJ": -1}, "source": "pure: dz >= dJ (q1 = 0); lineage: q1 + dyf >= dJ"},
+        "T2_K":    {"form": {"dist2": 1, "q1": 1, "a": 1, "m": -1}, "source": "pure: dist + a >= m (q1 = 0); lineage: q1 + dist + a >= m"},
+        "lin_q1":  {"form": {"lin": 1, "q1": -1}, "source": "lin = max(q1,q2) if q1,q2 > 0 else q1 + q2; either way >= q1 (q1, q2 >= 0)"}
+      },
+      "multipliers": {"def_n": "1", "K1": "1/2", "K2": "1/2", "dJ_r": "1/2", "T1_size": "1", "T1_lca": "1", "T1_par": "1",
+                      "T2_size": "1", "T2_dist": "1/2", "T2_par": "1/2", "T2_dJ": "1/2", "T2_K": "1/2", "lin_q1": "1"}
+    },
+    "ip1": {
+      "file": "wave16/b4-depth4/familyS_ip.py (junk cancelled by pure nodes on both sides)",
+      "objective": {"n": 1, "m": -2, "1": -1},
+      "objective_meaning": "n - 2m - 1 >= 0, where n = s1 + s2 + c + r1 + r2",
+      "constraints": {
+        "def_n":   {"form": {"n": 1, "s1": -1, "s2": -1, "c": -1, "r1": -1, "r2": -1}, "type": "eq", "source": "n = t1 + t2 + c + r1 + r2"},
+        "c_pos":   {"form": {"c": 1, "1": -1}, "source": "c in range(1, m+1)"},
+        "dJ_r":    {"form": {"dJ": 1, "m": -1, "r1": 1, "r2": 1}, "source": "dJ >= m - (r1+r2)"},
+        "T1_size": {"form": {"s1": 1, "dpar1": -1, "dz1": -1, "L1": 1}, "source": "s = dx + dz - L"},
+        "T1_dist": {"form": {"dpar1": 1, "dz1": 1, "L1": -2, "dist1": -1}, "source": "dx + dz - 2L = dist (>= is enough)"},
+        "T1_par":  {"form": {"dpar1": 1, "a": -1}, "source": "dx >= a"},
+        "T1_dJ":   {"form": {"dz1": 1, "dJ": -1}, "source": "dz >= dJ"},
+        "T1_K":    {"form": {"dist1": 1, "a2": 1, "m": -1}, "source": "dx + dz - 2L >= m - other, other = a2 for T1"},
+        "T2_size": {"form": {"s2": 1, "dpar2": -1, "dz2": -1, "L2": 1}, "source": "s = dx + dz - L"},
+        "T2_dist": {"form": {"dpar2": 1, "dz2": 1, "L2": -2, "dist2": -1}, "source": "dist definition"},
+        "T2_par":  {"form": {"dpar2": 1, "a2": -1}, "source": "dx >= a2 for T2"},
+        "T2_dJ":   {"form": {"dz2": 1, "dJ": -1}, "source": "dz >= dJ"},
+        "T2_K":    {"form": {"dist2": 1, "a": 1, "m": -1}, "source": "other = a for T2"}
+      },
+      "multipliers": {"def_n": "1", "c_pos": "1", "dJ_r": "1", "T1_size": "1", "T1_dist": "1/2", "T1_par": "1/2", "T1_dJ": "1/2", "T1_K": "1/2",
+                      "T2_size": "1", "T2_dist": "1/2", "T2_par": "1/2", "T2_dJ": "1/2", "T2_K": "1/2"}
+    }
+  }
+}

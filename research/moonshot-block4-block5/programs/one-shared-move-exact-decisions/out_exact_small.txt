@@ -1,0 +1,27 @@
+skel 0 [bare]: params 1, closures [(2, 1), (2, 1)], script sing/sk711_0_bare.sing
+skel 0 [x1->u_lands_out0_via_v0]: params 2, closures [(5, 2), (3, 1)], script sing/sk711_0_x1u_lands_out0_via_v0.sing
+skel 0 [cumulative_1]: params 2, closures [(5, 2), (3, 1)], script sing/sk711_0_cumulative_1.sing
+skel 0 [x0->u_lands_out1_via_v1]: params 2, closures [(3, 1), (5, 2)], script sing/sk711_0_x0u_lands_out1_via_v1.sing
+skel 0 [cumulative_2]: params 3, closures [(7, 2), (7, 2)], script sing/sk711_0_cumulative_2.sing
+skel 0 [x1->u_lands_out0_via_v1]: params 2, closures [(5, 2), (3, 1)], script sing/sk711_0_x1u_lands_out0_via_v1.sing
+skel 0 [cumulative_3]: params 4, closures [(17, 4), (17, 4)], script sing/sk711_0_cumulative_3.sing
+skel 0 [x0->u_lands_out1_via_v0]: params 2, closures [(3, 1), (5, 2)], script sing/sk711_0_x0u_lands_out1_via_v0.sing
+skel 0 [cumulative_4]: params 5, closures [(80, 16), (80, 16)], script sing/sk711_0_cumulative_4.sing
+skel 1 [bare]: params 1, closures [(2, 1), (2, 1)], script sing/sk711_1_bare.sing
+skel 1 [x1->u_lands_out0_via_v0]: params 2, closures [(7, 3), (3, 1)], script sing/sk711_1_x1u_lands_out0_via_v0.sing
+skel 1 [cumulative_1]: params 2, closures [(7, 3), (3, 1)], script sing/sk711_1_cumulative_1.sing
+skel 1 [x0->u_lands_out1_via_v1]: params 2, closures [(3, 1), (5, 2)], script sing/sk711_1_x0u_lands_out1_via_v1.sing
+skel 1 [cumulative_2]: params 3, closures [(10, 3), (7, 2)], script sing/sk711_1_cumulative_2.sing
+skel 1 [x1->u_lands_out0_via_v1]: params 2, closures [(5, 2), (3, 1)], script sing/sk711_1_x1u_lands_out0_via_v1.sing
+skel 1 [cumulative_3]: params 4, closures [(21, 5), (21, 5)], script sing/sk711_1_cumulative_3.sing
+skel 1 [x0->u_lands_out1_via_v0]: params 2, closures [(3, 1), (5, 2)], script sing/sk711_1_x0u_lands_out1_via_v0.sing
+skel 1 [cumulative_4]: closure cap
+skel 2 [bare]: params 1, closures [(2, 1), (2, 1)], script sing/sk711_2_bare.sing
+skel 2 [x1->u_lands_out0_via_v0]: params 2, closures [(5, 2), (3, 1)], script sing/sk711_2_x1u_lands_out0_via_v0.sing
+skel 2 [cumulative_1]: params 2, closures [(5, 2), (3, 1)], script sing/sk711_2_cumulative_1.sing
+skel 2 [x0->u_lands_out1_via_v1]: params 2, closures [(3, 1), (5, 2)], script sing/sk711_2_x0u_lands_out1_via_v1.sing
+skel 2 [cumulative_2]: params 3, closures [(7, 2), (7, 2)], script sing/sk711_2_cumulative_2.sing
+skel 2 [x1->u_lands_out0_via_v1]: params 2, closures [(5, 2), (3, 1)], script sing/sk711_2_x1u_lands_out0_via_v1.sing
+skel 2 [cumulative_3]: params 4, closures [(21, 5), (21, 5)], script sing/sk711_2_cumulative_3.sing
+skel 2 [x0->u_lands_out1_via_v0]: params 2, closures [(3, 1), (5, 2)], script sing/sk711_2_x0u_lands_out1_via_v0.sing
+skel 2 [cumulative_4]: closure cap

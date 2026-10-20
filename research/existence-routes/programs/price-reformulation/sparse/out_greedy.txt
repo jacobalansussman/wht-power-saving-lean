@@ -1,0 +1,13 @@
+d=1 w=16: |support of A0| = 24 pairs; generic rank on it = 8 (need 8)
+  restart 0: removal-minimal support with 24 pairs (1.500 w) [13.8s]
+  restart 1: removal-minimal support with 24 pairs (1.500 w) [12.1s]
+  restart 2: removal-minimal support with 24 pairs (1.500 w) [11.0s]
+  restart 3: removal-minimal support with 24 pairs (1.500 w) [11.2s]
+  restart 4: removal-minimal support with 24 pairs (1.500 w) [12.6s]
+RESULT d=1: OpenAI 24 pairs (1.500 w), smallest removal-minimal subset found 24 (1.500 w)
+d=2 w=64: |support of A0| = 128 pairs; generic rank on it = 32 (need 32)
+  restart 0: removal-minimal support with 128 pairs (2.000 w) [893.3s]
+  restart 1: removal-minimal support with 128 pairs (2.000 w) [364.4s]
+RESULT d=2: OpenAI 128 pairs (2.000 w), smallest removal-minimal subset found 128 (2.000 w)
+
+[exited with code 0]

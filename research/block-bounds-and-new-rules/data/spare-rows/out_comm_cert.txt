@@ -1,0 +1,30 @@
+(1) dir(z) = J diag(i^[z.x]) J exactly: {2: True, 3: True, 4: True, 5: True}
+(2) k=2 m=2: phi(zz^T) over all 3 z: [(0, 0), (0, 1), (1, 0)]  all weight<=1: True;  phi(M_K) = (1, 1)
+(2) k=2 m=3: phi(zz^T) over all 7 z: [(0, 0), (0, 1), (1, 0)]  all weight<=1: True;  phi(M_K) = (1, 1)
+(2) k=2 m=4: phi(zz^T) over all 15 z: [(0, 0), (0, 1), (1, 0)]  all weight<=1: True;  phi(M_K) = (1, 1)
+(2) k=2 m=5: phi(zz^T) over all 31 z: [(0, 0), (0, 1), (1, 0)]  all weight<=1: True;  phi(M_K) = (1, 1)
+(2) k=2 m=6: phi(zz^T) over all 63 z: [(0, 0), (0, 1), (1, 0)]  all weight<=1: True;  phi(M_K) = (1, 1)
+(2) k=2 m=10: phi(zz^T) over all 1023 z: [(0, 0), (0, 1), (1, 0)]  all weight<=1: True;  phi(M_K) = (1, 1)
+(2) k=3 m=3: phi(zz^T) over all 7 z: [(0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0)]  all weight<=1: True;  phi(M_K) = (1, 1, 1)
+(2) k=3 m=4: phi(zz^T) over all 15 z: [(0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0)]  all weight<=1: True;  phi(M_K) = (1, 1, 1)
+(2) k=3 m=5: phi(zz^T) over all 31 z: [(0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0)]  all weight<=1: True;  phi(M_K) = (1, 1, 1)
+(2) k=3 m=6: phi(zz^T) over all 63 z: [(0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0)]  all weight<=1: True;  phi(M_K) = (1, 1, 1)
+(2) k=3 m=10: phi(zz^T) over all 1023 z: [(0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0)]  all weight<=1: True;  phi(M_K) = (1, 1, 1)
+(1') m=3: 200 random words in dir/shift/i: exponent is a Z/4 quadratic form with B_q = sum z z^T: True
+(1') m=4: 200 random words in dir/shift/i: exponent is a Z/4 quadratic form with B_q = sum z z^T: True
+(1') m=5: 200 random words in dir/shift/i: exponent is a Z/4 quadratic form with B_q = sum z z^T: True
+    m=3 k=2: B_k (x) I has B_q = M_K: True    m=3 k=3: B_k (x) I has B_q = M_K: True
+    m=4 k=2: B_k (x) I has B_q = M_K: True    m=4 k=3: B_k (x) I has B_q = M_K: True
+    m=5 k=2: B_k (x) I has B_q = M_K: True    m=5 k=3: B_k (x) I has B_q = M_K: True
+(3) k=2: dim V = 8, dim Y_0 = 4; f(0) = 0, f(unit vectors) = {(1, 0): 2, (0, 1): 2}, f(target (1..1)) = 4  ->  moves >= 4/2 W = 2.0 W
+(3) k=3: dim V = 24, dim Y_0 = 12; f(0) = 0, f(unit vectors) = {(1, 0, 0): 4, (0, 1, 0): 4, (0, 0, 1): 4}, f(target (1..1)) = 12  ->  moves >= 12/4 W = 3.0 W
+(4) k=2 m=3: random address maps with active rows = a permutation pi of the active bits: phi o A = sigma o phi in 300/300
+(4) k=2 m=4: random address maps with active rows = a permutation pi of the active bits: phi o A = sigma o phi in 300/300
+(4) k=3 m=4: random address maps with active rows = a permutation pi of the active bits: phi o A = sigma o phi in 300/300
+(4) k=3 m=5: random address maps with active rows = a permutation pi of the active bits: phi o A = sigma o phi in 300/300
+(5) m=2: free letters keep L_0: True; f(dir z) over all z: {2}; f(B_2 (x) I) = 3 -> 1.5000; f(B_3 (x) I) = 3 -> 1.5000
+(5) m=3: free letters keep L_0: True; f(dir z) over all z: {4}; f(B_2 (x) I) = 6 -> 1.5000; f(B_3 (x) I) = 7 -> 1.7500
+(5) m=4: free letters keep L_0: True; f(dir z) over all z: {8}; f(B_2 (x) I) = 12 -> 1.5000; f(B_3 (x) I) = 14 -> 1.7500
+(5) m=5: free letters keep L_0: True; f(dir z) over all z: {16}; f(B_2 (x) I) = 24 -> 1.5000; f(B_3 (x) I) = 28 -> 1.7500
+(5) m=6: free letters keep L_0: True; f(dir z) over all z: {32}; f(B_2 (x) I) = 48 -> 1.5000; f(B_3 (x) I) = 56 -> 1.7500
+exit 0

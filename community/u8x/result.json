@@ -1,0 +1,147 @@
+{
+ "format": "community-certificate-package/1",
+ "name": "u8x",
+ "suffix": "U8X",
+ "title": "The community's U8 word with exit frames (126 helpers end at a frame of dimension 4 or 8)",
+ "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+ "variant": "",
+ "numerator": 12704023,
+ "kernel_numerator": 12704024,
+ "negative_numerator": 12704024,
+ "saving": "1.2704023e-3",
+ "saving_short": "1.2704e-3",
+ "exponent": "1 - 12704023/10^10",
+ "compared_with": {
+  "what": "Lean-checked record before these packages (Jeremy Kothe's #588 circuit in Ryan Shea's Lean tree)",
+  "numerator": 12331685,
+  "saving": "1.2331685e-3"
+ },
+ "mode": "add",
+ "base": {
+  "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+  "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+  "path": "lean/complex588",
+  "lean": "leanprover/lean4:v4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+ },
+ "tree_change": "the tree's lakefile.lean needs one more library line for the five XExit modules: lean_lib XExit where globs := #[`XExit.+] (logs/colab-xexit/lakefile-tail.txt); apply-overlay.sh does not add it",
+ "theorems": [
+  "OAI.PowerSaving.transform_mainU8X",
+  "OAI.PowerSaving.convolution_mainU8X"
+ ],
+ "axiom_targets": [
+  "OAI.PowerSaving.transform_mainU8X",
+  "OAI.PowerSaving.convolution_mainU8X",
+  "OAI.PowerSaving.RAM.hillsU8X_program"
+ ],
+ "permitted_axioms": [
+  "propext",
+  "Classical.choice",
+  "Quot.sound"
+ ],
+ "challenge_module": "Work.FourierU8X.UniformFourierChallenge",
+ "negative_challenge_module": "Work.FourierU8XNeg.UniformFourierChallenge",
+ "solution_module": "Work.FourierU8X.Main",
+ "axioms_file": "Work/FourierU8X/Axioms.lean",
+ "goal_file": "Work/FourierU8X/Goal.lean",
+ "exponent_definition": "OAI.PowerSaving.decimalExponentU8X",
+ "comparator": {
+  "positive": "comparator/fourier-u8x.json",
+  "negative": "comparator/fourier-u8x-neg.json"
+ },
+ "machine": "Google Colab VM: Linux x86-64, Intel Xeon 2.20 GHz, 8 logical processors, 51 GiB, kernel 6.6.122+ without Landlock, no systemd",
+ "build_targets": [
+  "Work.FourierU8X.Main",
+  "Work.FourierU8X.UniformFourierChallenge",
+  "Work.FourierU8XNeg.UniformFourierChallenge",
+  "Work.FourierU8X.Axioms"
+ ],
+ "new_lean": {
+  "Work/KLow": "exit frames on the U8 word: ExitEnd, LabelsX, ZCheck, NoY, GlueX",
+  "XExit": "exit-frame helpers"
+ },
+ "checks": [
+  {
+   "id": "build",
+   "status": "pass",
+   "what": "the 73 modules of logs/agent-notes/MODULES-as-run.txt compiled one at a time with plain lean on the first Colab machine, all rc 0 (23 minutes in all); the statement files, Axioms and the controls in the checks step; the comparator's own Lake build then built the chain again (9,289 jobs, 'Build completed successfully')",
+   "log": "logs/colab/direct.out"
+  },
+  {
+   "id": "xexit-build",
+   "status": "pass",
+   "what": "the five XExit modules (exit frames) were compiled earlier in the same Colab tree by a separate build, from the same sources (logs/colab-xexit/xx-hashes.txt); the Lake runs below replayed them",
+   "log": "logs/colab-xexit/xx-build-XExit.Pack.log"
+  },
+  {
+   "id": "axioms",
+   "status": "pass",
+   "what": "the two theorems and hillsU8X_program depend on propext, Classical.choice, Quot.sound only; so do exitRC, validX, ginv_cost, fitsS, price",
+   "log": "logs/colab/checks.out"
+  },
+  {
+   "id": "compare",
+   "status": "pass",
+   "what": "tools/Compare.lean: RESULT: PASS at 1 - 12704023/10^10",
+   "log": "logs/colab/checks.out"
+  },
+  {
+   "id": "compare-negative",
+   "status": "pass",
+   "what": "tools/Compare.lean against the statement one unit stronger (12704024): RESULT: FAIL",
+   "log": "logs/colab/checks.out"
+  },
+  {
+   "id": "comparator",
+   "status": "pass",
+   "what": "official comparator inside the stand-in jail2.sh: nanoda and Lean kernels accept, 'Your solution is okay!' (77 minutes including its Lake build, 9.4 GB)",
+   "log": "logs/colab/cmp/klower-U8X-pos.log"
+  },
+  {
+   "id": "comparator-negative",
+   "status": "pass",
+   "what": "official comparator rejects the configuration one unit stronger: Const does not match ... decimalExponentU8X (40 minutes)",
+   "log": "logs/colab/cmp/klower-U8X-neg.log"
+  },
+  {
+   "id": "lean-controls",
+   "status": "pass",
+   "what": "zcheck_control and endkx_control proved (axiom propext only); the control file was compiled on the Colab but is not in overlay/",
+   "log": "logs/colab/controls.log"
+  },
+  {
+   "id": "static-checks",
+   "status": "pass",
+   "what": "tools/community/package_check.py check on the Mac",
+   "log": "logs/static-check.txt"
+  },
+  {
+   "id": "skeptic",
+   "status": "not shown",
+   "what": "no independent rebuild or review log of this package is in the repository",
+   "log": ""
+  },
+  {
+   "id": "bigospeedrun-verifier",
+   "status": "not run",
+   "what": "the leaderboard's own verifier has not been run on this package",
+   "log": ""
+  }
+ ],
+ "credits": [
+  "Jeremy Kothe: the U8 word (#869 of CrocSwap/integer-mult-bounds), from his #799 and the line of circuits before it; with DreamingOfClouds, the endpoint lemmas on which the charge for exit frames rests (#593)",
+  "Chafik Boukhalfa: the frame changes of #741, which the U8 word carries",
+  "icekylinx: the gauge44 construction (#645) the U8 word is built on; the community's notice credits the word's triangle-hybrid step to NewBArch, with its driver and composition to ColdWitness/icekylinx",
+  "DreamingOfClouds: helpers that end early in the line of the U8 word (#604) and the endpoint lemmas of #599",
+  "not used by this package, though the community's figures for the U8 word use them: the owner maps of #870 (Kothe, applying Hao Yan's #858), #890 (Chafik Boukhalfa) and #942 (Jonathan Capalbo), and DreamingOfClouds' bit supplier #589",
+  "Ryan Shea: the conversion pipeline, the generators and the Lean instantiation (shea256/fourier-transform-below-nlogn, lean/complex588)",
+  "Nil Mamano: the gauged extension (GInvE, GX.engine_of_ginv_401) and the Fourier chain templates",
+  "Dugongue: the entrance gauges and the residual banks of the nine-stage network (#401)",
+  "Zhihao Chen (jacklightChen): the compressed nine-stage layout with its banks and padding (#377)",
+  "lydakis: the bank patterns (#275)",
+  "DaysSky: the bridged layout B_K the network starts from (#363)",
+  "the authors of CrocSwap/integer-mult-bounds",
+  "OpenAI: the model, the statements and the all-length reduction",
+  "Jacob Sussman (this repository): the original Lean engine, the Lean proof of exit frames (XExit, Work/KLow) and the generation of this certificate"
+ ]
+}

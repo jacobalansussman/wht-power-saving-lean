@@ -1,0 +1,9 @@
+N=  8192 K= 16 tone -6 dBFS + noise -70 dBFS (truth floor -95.4 dB below the tone bin) | 16-bit halving (as-6): +15.91 dB | 25-bit (this design): +0.02 dB | acc_bits_needed (K/2 sums of |Z_k|^2+|Z_N-k|^2): 46
+N=  8192 K= 16 tone -6 dBFS + noise -90 dBFS (truth floor -114.6 dB below the tone bin) | 16-bit halving (as-6): +33.30 dB | 25-bit (this design): +0.73 dB | acc_bits_needed (K/2 sums of |Z_k|^2+|Z_N-k|^2): 46
+N=  8192 K= 16 tone -6 dBFS + noise -100 dBFS (truth floor -120.6 dB below the tone bin) | 16-bit halving (as-6): +39.29 dB | 25-bit (this design): +2.01 dB | acc_bits_needed (K/2 sums of |Z_k|^2+|Z_N-k|^2): 46
+N=  8192 K= 32 tone -6 dBFS + noise -70 dBFS (truth floor -95.4 dB below the tone bin) | 16-bit halving (as-6): +16.18 dB | 25-bit (this design): +0.01 dB | acc_bits_needed (K/2 sums of |Z_k|^2+|Z_N-k|^2): 47
+N=  8192 K= 32 tone -6 dBFS + noise -90 dBFS (truth floor -114.6 dB below the tone bin) | 16-bit halving (as-6): +33.80 dB | 25-bit (this design): +0.67 dB | acc_bits_needed (K/2 sums of |Z_k|^2+|Z_N-k|^2): 47
+N=  8192 K= 32 tone -6 dBFS + noise -100 dBFS (truth floor -120.5 dB below the tone bin) | 16-bit halving (as-6): +39.23 dB | 25-bit (this design): +1.90 dB | acc_bits_needed (K/2 sums of |Z_k|^2+|Z_N-k|^2): 47
+N= 16384 K= 16 tone -6 dBFS + noise -70 dBFS (truth floor -98.5 dB below the tone bin) | 16-bit halving (as-6): +18.93 dB | 25-bit (this design): +0.03 dB | acc_bits_needed (K/2 sums of |Z_k|^2+|Z_N-k|^2): 46
+N= 16384 K= 16 tone -6 dBFS + noise -90 dBFS (truth floor -117.6 dB below the tone bin) | 16-bit halving (as-6): +37.29 dB | 25-bit (this design): +0.88 dB | acc_bits_needed (K/2 sums of |Z_k|^2+|Z_N-k|^2): 46
+N= 16384 K= 16 tone -6 dBFS + noise -100 dBFS (truth floor -123.5 dB below the tone bin) | 16-bit halving (as-6): +43.23 dB | 25-bit (this design): +2.39 dB | acc_bits_needed (K/2 sums of |Z_k|^2+|Z_N-k|^2): 46

@@ -1,0 +1,87 @@
+[timing lock] waiting for timing lock 23:04:19
+[timing lock] got lock 23:05:28; load: { 22.53 19.27 13.35 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# vDSP_DFT_Execute (split): not supported at 400
+## cfft400 B=64 same  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME2 25x16 (split)                 0.3922
+rep  0  PFFFT z-order (interl.)            0.7754
+rep  0  PFFFT ordered (interl.)            0.8364
+rep  0  FFTW3f MEASURE (interl.)           0.5955
+rep  1  PFFFT z-order (interl.)            0.7774
+rep  1  PFFFT ordered (interl.)            0.8454
+rep  1  FFTW3f MEASURE (interl.)           0.5931
+rep  1  SME2 25x16 (split)                 0.3918
+rep  2  PFFFT ordered (interl.)            0.8404
+rep  2  FFTW3f MEASURE (interl.)           0.5978
+rep  2  SME2 25x16 (split)                 0.3925
+rep  2  PFFFT z-order (interl.)            0.7711
+rep  3  FFTW3f MEASURE (interl.)           0.5958
+rep  3  SME2 25x16 (split)                 0.3914
+rep  3  PFFFT z-order (interl.)            0.7750
+rep  3  PFFFT ordered (interl.)            0.8380
+rep  4  SME2 25x16 (split)                 0.3941
+rep  4  PFFFT z-order (interl.)            0.7736
+rep  4  PFFFT ordered (interl.)            0.8359
+rep  4  FFTW3f MEASURE (interl.)           0.5907
+rep  5  PFFFT z-order (interl.)            0.7727
+rep  5  PFFFT ordered (interl.)            0.8607
+rep  5  FFTW3f MEASURE (interl.)           0.6049
+rep  5  SME2 25x16 (split)                 0.3900
+rep  6  PFFFT ordered (interl.)            0.8354
+rep  6  FFTW3f MEASURE (interl.)           0.5932
+rep  6  SME2 25x16 (split)                 0.3896
+rep  6  PFFFT z-order (interl.)            0.7727
+rep  7  FFTW3f MEASURE (interl.)           0.5903
+rep  7  SME2 25x16 (split)                 0.3898
+rep  7  PFFFT z-order (interl.)            0.7713
+rep  7  PFFFT ordered (interl.)            0.8354
+rep  8  SME2 25x16 (split)                 0.3893
+rep  8  PFFFT z-order (interl.)            0.7713
+rep  8  PFFFT ordered (interl.)            0.8361
+rep  8  FFTW3f MEASURE (interl.)           0.5995
+RESULT cfft400 B=64 same                        SME2 25x16 (split)           best     0.3893  median     0.3914  ns/point  (calls/rep 22061)
+RESULT cfft400 B=64 same                        PFFFT z-order (interl.)      best     0.7711  median     0.7727  ns/point  (calls/rep 11133)
+RESULT cfft400 B=64 same                        PFFFT ordered (interl.)      best     0.8354  median     0.8364  ns/point  (calls/rep 10235)
+RESULT cfft400 B=64 same                        FFTW3f MEASURE (interl.)     best     0.5903  median     0.5955  ns/point  (calls/rep 13847)
+# vDSP_DFT_Execute (split): not supported at 400
+## cfft400 B=256 same  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME2 25x16 (split)                 0.3930
+rep  0  PFFFT z-order (interl.)            0.7747
+rep  0  PFFFT ordered (interl.)            0.8387
+rep  0  FFTW3f MEASURE (interl.)           0.5942
+rep  1  PFFFT z-order (interl.)            0.7731
+rep  1  PFFFT ordered (interl.)            0.8379
+rep  1  FFTW3f MEASURE (interl.)           0.5985
+rep  1  SME2 25x16 (split)                 0.3940
+rep  2  PFFFT ordered (interl.)            0.8372
+rep  2  FFTW3f MEASURE (interl.)           0.5981
+rep  2  SME2 25x16 (split)                 0.3925
+rep  2  PFFFT z-order (interl.)            0.7769
+rep  3  FFTW3f MEASURE (interl.)           0.5981
+rep  3  SME2 25x16 (split)                 0.3922
+rep  3  PFFFT z-order (interl.)            0.7754
+rep  3  PFFFT ordered (interl.)            0.8415
+rep  4  SME2 25x16 (split)                 0.3967
+rep  4  PFFFT z-order (interl.)            0.7806
+rep  4  PFFFT ordered (interl.)            0.8521
+rep  4  FFTW3f MEASURE (interl.)           0.5999
+rep  5  PFFFT z-order (interl.)            0.7886
+rep  5  PFFFT ordered (interl.)            0.8488
+rep  5  FFTW3f MEASURE (interl.)           0.6028
+rep  5  SME2 25x16 (split)                 0.3941
+rep  6  PFFFT ordered (interl.)            0.8376
+rep  6  FFTW3f MEASURE (interl.)           0.5933
+rep  6  SME2 25x16 (split)                 0.3943
+rep  6  PFFFT z-order (interl.)            0.7768
+rep  7  FFTW3f MEASURE (interl.)           0.6036
+rep  7  SME2 25x16 (split)                 0.3932
+rep  7  PFFFT z-order (interl.)            0.7754
+rep  7  PFFFT ordered (interl.)            0.8341
+rep  8  SME2 25x16 (split)                 0.3936
+rep  8  PFFFT z-order (interl.)            0.7758
+rep  8  PFFFT ordered (interl.)            0.8384
+rep  8  FFTW3f MEASURE (interl.)           0.5916
+RESULT cfft400 B=256 same                       SME2 25x16 (split)           best     0.3922  median     0.3936  ns/point  (calls/rep 5487)
+RESULT cfft400 B=256 same                       PFFFT z-order (interl.)      best     0.7731  median     0.7758  ns/point  (calls/rep 2769)
+RESULT cfft400 B=256 same                       PFFFT ordered (interl.)      best     0.8341  median     0.8384  ns/point  (calls/rep 2576)
+RESULT cfft400 B=256 same                       FFTW3f MEASURE (interl.)     best     0.5916  median     0.5981  ns/point  (calls/rep 3582)

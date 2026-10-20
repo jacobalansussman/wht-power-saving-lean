@@ -1,0 +1,15 @@
+## calibration
+m=4 n=1 W=4 M=15: forms checked 967, violations 967 [(1, 8, 4, 0), (2, 4, 4, 0), (4, 4, 4, 0), (6, 4, 4, 0)]
+VERDICT: EXCLUDED (rank cover)
+m=4 n=1 W=4 M=16: forms checked 704, violations 0 []
+VERDICT: not excluded by rank cover with <= 3 blocks
+Traceback (most recent call last):
+  File "vrc.py", line 31, in <module>
+    assert min(slack) >= 0, "deletion fails"
+AssertionError: deletion fails
+Traceback (most recent call last):
+  File "vrc.py", line 31, in <module>
+    assert min(slack) >= 0, "deletion fails"
+AssertionError: deletion fails
+m=3 n=1 W=2 M=7: forms checked 51, violations 0 []
+VERDICT: not excluded by rank cover with <= 3 blocks

@@ -1,0 +1,39 @@
+{
+ "word_sha256": "faf4159c53bed6d5516bcdc922becfc757d21ca6ea47f667ee72999d41c34128",
+ "histogram": {
+  "8": 120,
+  "1": 2460,
+  "2": 500,
+  "4": 130,
+  "3": 416,
+  "5": 82
+ },
+ "N": 6598,
+ "exits": 78,
+ "nB_without_tail": 2045,
+ "nB": 2982,
+ "tail": 121,
+ "invoice": [
+  6970,
+  6970
+ ],
+ "exit_conditions": {
+  "R_rows_offdiag_zero": true,
+  "R_bad": [],
+  "R_bad_count": 0,
+  "C_cols_slot_offdiag_zero": true,
+  "C_bad_count": 0,
+  "C_bad": [],
+  "C_cols_x_offdiag_zero": true,
+  "exit_diagonals": {
+   "1": 52,
+   "2": 8,
+   "4": 8,
+   "1/4": 8,
+   "-1": 2
+  },
+  "hx_x_rows_unit": true,
+  "hid_y_from_x_identity": true,
+  "hy_y_columns_unit": true
+ }
+}

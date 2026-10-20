@@ -1,0 +1,13 @@
+/content/work/logs/bB-final/fast-L3945H/BosDumpTree.lean:129:40: warning: `String.trim` has been deprecated: Use `String.trimAscii` instead
+
+Note: The updated constant has a different type:
+  String → String.Slice
+instead of
+  String → String
+/content/work/logs/bB-final/fast-L3945H/BosDumpTree.lean:129:76: warning: `String.trim` has been deprecated: Use `String.trimAscii` instead
+
+Note: The updated constant has a different type:
+  String → String.Slice
+instead of
+  String → String
+BosDump: 37606 constants of the closure written to /content/work/logs/bB-final/fast-L3945H/tree.tsv

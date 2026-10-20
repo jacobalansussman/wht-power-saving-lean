@@ -1,0 +1,19 @@
+cut gates 224 example [['add', 112, 61, 1, 4, None], ['add', 112, 63, 1, 4, None], ['add', 113, 61, 1, 4, None]]
+cut (dst,src) classes Counter({('y', 'x'): 140, ('y', 'h'): 84})
+centers [60, 61, 63, 224, 31, 240, 23, 256] ['x', 'x', 'x', 'h', 'x', 'h', 'x', 'h'] center frame dims [8, 8, 8, 8, 8, 8, 8, 8]
+target_levels count 0 dims Counter()
+group 0 needed 64 needed sources delivered to each group target through the CUT: {169: 64, 170: 64, 172: 64, 175: 64} centres read {169: [60, 61], 170: [63, 224], 172: [60, 61], 175: [63, 224]}
+group 1 needed 64 needed sources delivered to each group target through the CUT: {137: 64, 138: 64, 140: 64, 143: 64} centres read {137: [60, 61], 138: [31, 240], 140: [60, 61], 143: [31, 240]}
+group 2 needed 64 needed sources delivered to each group target through the CUT: {129: 64, 130: 64, 132: 64, 135: 64} centres read {129: [60, 61], 130: [23, 256], 132: [60, 61], 135: [23, 256]}
+group 3 needed 64 needed sources delivered to each group target through the CUT: {121: 64, 122: 64, 124: 64, 127: 64} centres read {121: [60, 63], 122: [23, 31], 124: [60, 63], 127: [23, 31]}
+group 4 needed 64 needed sources delivered to each group target through the CUT: {145: 64, 146: 64, 148: 64, 151: 64} centres read {145: [60, 63], 146: [240, 256], 148: [60, 63], 151: [240, 256]}
+group 5 needed 64 needed sources delivered to each group target through the CUT: {177: 64, 178: 64, 180: 64, 183: 64} centres read {177: [60, 224], 178: [31, 256], 180: [60, 224], 183: [31, 256]}
+group 6 needed 64 needed sources delivered to each group target through the CUT: {217: 64, 218: 64, 220: 64, 223: 64} centres read {217: [60, 224], 218: [23, 240], 220: [60, 224], 223: [23, 240]}
+group 7 needed 64 needed sources delivered to each group target through the CUT: {113: 64, 114: 64, 116: 64, 119: 64} centres read {113: [61, 63], 114: [31, 256], 116: [61, 63], 119: [31, 256]}
+group 8 needed 64 needed sources delivered to each group target through the CUT: {153: 64, 154: 64, 156: 64, 159: 64} centres read {153: [61, 63], 154: [23, 240], 156: [61, 63], 159: [23, 240]}
+group 9 needed 64 needed sources delivered to each group target through the CUT: {185: 64, 186: 64, 188: 64, 191: 64} centres read {185: [61, 224], 186: [23, 31], 188: [61, 224], 191: [23, 31]}
+group 10 needed 64 needed sources delivered to each group target through the CUT: {209: 64, 210: 64, 212: 64, 215: 64} centres read {209: [61, 224], 210: [240, 256], 212: [61, 224], 215: [240, 256]}
+group 11 needed 64 needed sources delivered to each group target through the CUT: {201: 64, 202: 64, 204: 64, 207: 64} centres read {201: [63, 224], 202: [31, 240], 204: [63, 224], 207: [31, 240]}
+group 12 needed 64 needed sources delivered to each group target through the CUT: {193: 64, 194: 64, 196: 64, 199: 64} centres read {193: [63, 224], 194: [23, 256], 196: [63, 224], 199: [23, 256]}
+group 13 needed 64 needed sources delivered to each group target through the CUT: {161: 64, 162: 64, 164: 64, 167: 64} centres read {161: [31, 240], 162: [23, 256], 164: [31, 240], 167: [23, 256]}
+centre 60 chain [(None, 1), (('A', 2119), 2), (('A', 2141), 3), (('A', 2143), 4), (('A', 4235), 8), (('final', None), 9)]

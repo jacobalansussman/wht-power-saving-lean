@@ -1,0 +1,257 @@
+cert/t27F5_0_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=42 drop=1 nonzero_cofactors=12 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27F5_0_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=42 drop=1 nonzero_cofactors=12 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27F5_0_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=25 drop=1 nonzero_cofactors=9 cof_maxden=1 sys_maxnum=20 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27F5_1_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27F5_1_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27F5_1_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27F5_2_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=4 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27F5_2_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=4 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27F5_2_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=3 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+EMPTY-OUTPUT cert/t27s1_0_0_1_0.a0
+cert/t27s1_0_0_1_1.a0: OK   Q-identity=True p2-raw-identity=True rows=61 drop=1 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27s1_1_0_1_0.a0: OK   Q-identity=True p2-raw-identity=True rows=7 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27s1_1_0_1_1.a0: OK   Q-identity=True p2-raw-identity=True rows=3 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True dropped-rows-alpha-only=YES
+cert/t27s1_scr_fz5: OK   Q-identity=True p2-raw-identity=True rows=31 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True
+cert/t27s1_scr_m0_zero: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True
+cert/t27s1_scr_m1_1: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True
+cert/t27s1_scr_m1_zero: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True
+cert/t27s1_scr_m2_zero: OK   Q-identity=True p2-raw-identity=True rows=32 drop=0 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True
+cert/t27s1_scr_m3_zero: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=True
+cert3/f27_Fp2_m3_s11__full_c_0_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=96 drop=1 nonzero_cofactors=54 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s11__full_c_0_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=96 drop=1 nonzero_cofactors=54 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s11__full_c_0_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=80 drop=1 nonzero_cofactors=22 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s11__full_c_1_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s11__full_c_1_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s11__full_c_1_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s11__full_c_2_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=4 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s11__full_c_2_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=4 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s11__full_c_2_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=3 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s11__fz5: OK   Q-identity=True p2-raw-identity=True rows=34 drop=0 nonzero_cofactors=21 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s11__fz7: OK   Q-identity=True p2-raw-identity=True rows=34 drop=0 nonzero_cofactors=9 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s11__fz8: OK   Q-identity=True p2-raw-identity=True rows=34 drop=0 nonzero_cofactors=12 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s11__m0_zero: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=7 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s11__m1_2: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=7 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s11__m1_zero: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s11__m2_zero: OK   Q-identity=True p2-raw-identity=True rows=37 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s11__m3_zero: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s13__full_c_0_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=12 drop=1 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s13__full_c_0_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=12 drop=1 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s13__full_c_0_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=11 drop=1 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s13__full_c_1_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s13__full_c_1_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s13__full_c_1_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s13__full_c_2_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=4 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s13__full_c_2_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=4 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s13__full_c_2_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=3 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/f27_Fp2_m3_s13__fz6: OK   Q-identity=True p2-raw-identity=True rows=58 drop=0 nonzero_cofactors=13 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s13__fz7: OK   Q-identity=True p2-raw-identity=True rows=58 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s13__fz8: OK   Q-identity=True p2-raw-identity=True rows=58 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s13__m0_zero: OK   Q-identity=True p2-raw-identity=True rows=63 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s13__m1_1: OK   Q-identity=True p2-raw-identity=True rows=62 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s13__m1_zero: OK   Q-identity=True p2-raw-identity=True rows=62 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s13__m2_zero: OK   Q-identity=True p2-raw-identity=True rows=61 drop=0 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/f27_Fp2_m3_s13__m3_zero: OK   Q-identity=True p2-raw-identity=True rows=63 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_Fp2b_m3_s2__full_c_1_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=168 drop=2 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/g27_Fp2b_m3_s2__full_c_1_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=168 drop=2 nonzero_cofactors=14 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+EMPTY-OUTPUT cert3/g27_Fp2b_m3_s2__full_c_1_0_2_2.a0
+cert3/g27_Fp2b_m3_s2__fz1: OK   Q-identity=True p2-raw-identity=True rows=28 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_Fp2b_m3_s2__fz7: OK   Q-identity=True p2-raw-identity=True rows=28 drop=0 nonzero_cofactors=7 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_Fp2b_m3_s2__fz8: OK   Q-identity=True p2-raw-identity=True rows=28 drop=0 nonzero_cofactors=7 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_Fp2b_m3_s2__m0_2: OK   Q-identity=True p2-raw-identity=True rows=32 drop=0 nonzero_cofactors=9 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_Fp2b_m3_s2__m0_zero: OK   Q-identity=True p2-raw-identity=True rows=32 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_Fp2b_m3_s2__m1_1: OK   Q-identity=True p2-raw-identity=True rows=32 drop=0 nonzero_cofactors=12 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_Fp2b_m3_s2__m1_2: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_Fp2b_m3_s2__m1_zero: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_Fp2b_m3_s2__m2_zero: OK   Q-identity=True p2-raw-identity=True rows=31 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_Fp2b_m3_s2__m3_zero: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_mid3_m3_s22__full_c_1_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=7 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/g27_mid3_m3_s22__full_c_1_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=3 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/g27_mid3_m3_s22__fz1: OK   Q-identity=True p2-raw-identity=True rows=90 drop=0 nonzero_cofactors=9 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_mid3_m3_s22__fz5: OK   Q-identity=True p2-raw-identity=True rows=90 drop=0 nonzero_cofactors=10 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_mid3_m3_s22__fz6: OK   Q-identity=True p2-raw-identity=True rows=90 drop=0 nonzero_cofactors=10 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_mid3_m3_s22__fz7: OK   Q-identity=True p2-raw-identity=True rows=90 drop=0 nonzero_cofactors=15 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_mid3_m3_s22__fz8: OK   Q-identity=True p2-raw-identity=True rows=90 drop=0 nonzero_cofactors=15 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_mid3_m3_s22__m0_2: OK   Q-identity=True p2-raw-identity=True rows=96 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_mid3_m3_s22__m0_zero: OK   Q-identity=True p2-raw-identity=True rows=96 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_mid3_m3_s22__m1_zero: OK   Q-identity=True p2-raw-identity=True rows=95 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_mid3_m3_s22__m2_zero: OK   Q-identity=True p2-raw-identity=True rows=95 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/g27_mid3_m3_s22__m3_zero: OK   Q-identity=True p2-raw-identity=True rows=96 drop=0 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_Fmid3_m3_s5__full_c_0_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=42 drop=1 nonzero_cofactors=12 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_0_0_2_0.a1: OK   Q-identity=True p2-raw-identity=True rows=42 drop=1 nonzero_cofactors=12 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_0_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=42 drop=1 nonzero_cofactors=12 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_0_0_2_1.a1: OK   Q-identity=True p2-raw-identity=True rows=42 drop=1 nonzero_cofactors=12 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_0_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=25 drop=1 nonzero_cofactors=9 cof_maxden=1 sys_maxnum=20 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_0_0_2_2.a1: OK   Q-identity=True p2-raw-identity=True rows=25 drop=1 nonzero_cofactors=12 cof_maxden=1 sys_maxnum=20 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_1_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_1_0_2_0.a1: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_1_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_1_0_2_1.a1: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_1_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_1_0_2_2.a1: OK   Q-identity=True p2-raw-identity=True rows=6 drop=1 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_2_0_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=4 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_2_0_2_0.a1: OK   Q-identity=True p2-raw-identity=True rows=4 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_2_0_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=4 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_2_0_2_1.a1: OK   Q-identity=True p2-raw-identity=True rows=4 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_2_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=3 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__full_c_2_0_2_2.a1: OK   Q-identity=True p2-raw-identity=True rows=3 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_Fmid3_m3_s5__fz5: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=25 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_Fmid3_m3_s5__fz7: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=21 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_Fmid3_m3_s5__fz8: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=25 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_Fmid3_m3_s5__m0_zero: OK   Q-identity=True p2-raw-identity=True rows=43 drop=0 nonzero_cofactors=7 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_Fmid3_m3_s5__m1_2: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_Fmid3_m3_s5__m1_zero: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_Fmid3_m3_s5__m2_zero: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_Fmid3_m3_s5__m3_zero: OK   Q-identity=True p2-raw-identity=True rows=43 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_mid3_m2_s1__full_c_0_0_1_0.a0: FAIL no cofactors in t27_mid3_m2_s1__full_c_0_0_1_0.a0.txt
+EMPTY-OUTPUT cert3/t27_mid3_m2_s1__full_c_0_0_1_0.a1
+cert3/t27_mid3_m2_s2__full_c_0_0_1_1.a0: OK   Q-identity=True p2-raw-identity=True rows=61 drop=1 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_mid3_m2_s2__full_c_1_0_1_0.a0: OK   Q-identity=True p2-raw-identity=True rows=7 drop=1 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_mid3_m2_s2__full_c_1_0_1_1.a0: OK   Q-identity=True p2-raw-identity=True rows=3 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+cert3/t27_mid3_m2_s2__fz5: OK   Q-identity=True p2-raw-identity=True rows=31 drop=0 nonzero_cofactors=10 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_mid3_m2_s2__m0_zero: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_mid3_m2_s2__m1_1: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_mid3_m2_s2__m1_zero: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_mid3_m2_s2__m2_zero: OK   Q-identity=True p2-raw-identity=True rows=32 drop=0 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert3/t27_mid3_m2_s2__m3_zero: OK   Q-identity=True p2-raw-identity=True rows=33 drop=0 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/SUB__sub_0_1_2_0_a6: OK   Q-identity=True p2-raw-identity=True rows=59 drop=0 nonzero_cofactors=14 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/SUB__sub_0_1_2_1_a6: OK   Q-identity=True p2-raw-identity=True rows=60 drop=0 nonzero_cofactors=15 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/SUB__sub_0_1_2_2_a6: OK   Q-identity=True p2-raw-identity=True rows=61 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/SUB__sub_1_1_2_0_a6: OK   Q-identity=True p2-raw-identity=True rows=60 drop=0 nonzero_cofactors=14 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/SUB__sub_1_1_2_1_a6: OK   Q-identity=True p2-raw-identity=True rows=61 drop=0 nonzero_cofactors=14 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/SUB__sub_1_1_2_2_a6: OK   Q-identity=True p2-raw-identity=True rows=62 drop=0 nonzero_cofactors=15 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/SUB__sub_2_1_2_0_a6: OK   Q-identity=True p2-raw-identity=True rows=61 drop=0 nonzero_cofactors=12 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/SUB__sub_2_1_2_1_a6: OK   Q-identity=True p2-raw-identity=True rows=62 drop=0 nonzero_cofactors=13 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/SUB__sub_2_1_2_2_a6: OK   Q-identity=True p2-raw-identity=True rows=63 drop=0 nonzero_cofactors=15 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__full_c_0_1_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=384 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__full_c_0_1_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=384 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__full_c_0_1_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=288 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__full_c_1_1_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=24 drop=0 nonzero_cofactors=8 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__full_c_1_1_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=24 drop=0 nonzero_cofactors=8 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__full_c_1_1_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=12 drop=0 nonzero_cofactors=3 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__full_c_2_1_2_0.a0: OK   Q-identity=True p2-raw-identity=True rows=2 drop=0 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__full_c_2_1_2_1.a0: OK   Q-identity=True p2-raw-identity=True rows=2 drop=0 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__fz4: OK   Q-identity=True p2-raw-identity=True rows=52 drop=0 nonzero_cofactors=31 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__fz7: OK   Q-identity=True p2-raw-identity=True rows=52 drop=0 nonzero_cofactors=33 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__fz8: OK   Q-identity=True p2-raw-identity=True rows=52 drop=0 nonzero_cofactors=33 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__m0_zero: OK   Q-identity=True p2-raw-identity=True rows=57 drop=0 nonzero_cofactors=7 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__m1_2: OK   Q-identity=True p2-raw-identity=True rows=56 drop=0 nonzero_cofactors=7 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__m1_zero: OK   Q-identity=True p2-raw-identity=True rows=56 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__m2_zero: OK   Q-identity=True p2-raw-identity=True rows=55 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+cert5/f27_Fp2_m3_s39__m3_zero: OK   Q-identity=True p2-raw-identity=True rows=57 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certc/s17_0_0_3_0.a0: FAIL no cofactors in s17_0_0_3_0.a0.txt
+certc/s17_0_0_3_1.a0: FAIL no cofactors in s17_0_0_3_1.a0.txt
+certc/s17_0_0_3_2.a0: FAIL no cofactors in s17_0_0_3_2.a0.txt
+certc/s17_0_0_3_3.a0: FAIL no cofactors in s17_0_0_3_3.a0.txt
+certe/ext_0_0_3_0_a0_0: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_0_a0_1: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False
+certe/ext_0_0_3_0_a0_2: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_0_a0_3: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_0_a0_4: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_0_a0_5: OK   Q-identity=True p2-raw-identity=True rows=38 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_1_a0_0: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_1_a0_1: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False
+certe/ext_0_0_3_1_a0_2: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_1_a0_3: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_1_a0_4: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_1_a0_5: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_2_a0_0: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_2_a0_1: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False
+certe/ext_0_0_3_2_a0_2: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_2_a0_3: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_2_a0_4: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_2_a0_5: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_3_a0_0: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_3_a0_1: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False
+certe/ext_0_0_3_3_a0_2: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_3_a0_3: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_3_a0_4: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/ext_0_0_3_3_a0_5: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certe/withext_0_0_3_0.a0: FAIL no cofactors in withext_0_0_3_0.a0.txt
+certe/withext_0_0_3_1.a0: FAIL no cofactors in withext_0_0_3_1.a0.txt
+certe/withext_0_0_3_2.a0: FAIL no cofactors in withext_0_0_3_2.a0.txt
+certe/withext_0_0_3_3.a0: FAIL no cofactors in withext_0_0_3_3.a0.txt
+certh/g27_Fany4_s17__full_c_0_0_3_0.a0: FAIL no cofactors in g27_Fany4_s17__full_c_0_0_3_0.a0.txt
+certh/g27_Fany4_s17__full_c_0_0_3_1.a0: FAIL no cofactors in g27_Fany4_s17__full_c_0_0_3_1.a0.txt
+certh/g27_Fany4_s17__full_c_0_0_3_2.a0: FAIL no cofactors in g27_Fany4_s17__full_c_0_0_3_2.a0.txt
+certh/g27_Fany4_s17__full_c_0_0_3_3.a0: FAIL no cofactors in g27_Fany4_s17__full_c_0_0_3_3.a0.txt
+certh/g27_Fany4_s17__full_c_0_1_3_0.a0: OK   Q-identity=True p2-raw-identity=True rows=192 drop=4 nonzero_cofactors=36 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+certh/g27_Fany4_s17__full_c_0_1_3_1.a0: OK   Q-identity=True p2-raw-identity=True rows=192 drop=4 nonzero_cofactors=36 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+certh/g27_Fany4_s17__full_c_0_1_3_2.a0: OK   Q-identity=True p2-raw-identity=True rows=48 drop=4 nonzero_cofactors=36 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+certh/g27_Fany4_s17__full_c_0_1_3_3.a0: OK   Q-identity=True p2-raw-identity=True rows=48 drop=4 nonzero_cofactors=36 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+certh/g27_Fany4_s17__full_c_0_2_3_0.a0: OK   Q-identity=True p2-raw-identity=True rows=168 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s17__full_c_0_2_3_1.a0: OK   Q-identity=True p2-raw-identity=True rows=162 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=4 sys_maxden=1 char0=False
+certh/g27_Fany4_s17__full_c_0_2_3_2.a0: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s17__full_c_0_2_3_3.a0: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=4 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s17__full_c_1_0_3_0.a0: OK   Q-identity=True p2-raw-identity=True rows=192 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s17__full_c_1_0_3_1.a0: OK   Q-identity=True p2-raw-identity=True rows=192 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s17__full_c_1_0_3_2.a0: OK   Q-identity=True p2-raw-identity=True rows=48 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s17__full_c_1_0_3_3.a0: OK   Q-identity=True p2-raw-identity=True rows=48 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s17__full_c_1_2_3_0.a0: OK   Q-identity=True p2-raw-identity=True rows=48 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s19__full_c_0_0_3_0.a0: OK   Q-identity=True p2-raw-identity=True rows=192 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s19__full_c_0_0_3_1.a0: OK   Q-identity=True p2-raw-identity=True rows=192 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s19__full_c_0_0_3_2.a0: OK   Q-identity=True p2-raw-identity=True rows=48 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s19__full_c_0_0_3_3.a0: OK   Q-identity=True p2-raw-identity=True rows=48 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh/g27_Fany4_s19__full_c_0_2_3_0.a0: OK   Q-identity=True p2-raw-identity=True rows=168 drop=0 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_0_1_3_0_a8: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_0_1_3_1_a8: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_0_1_3_2_a8: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_0_1_3_3_a8: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=20 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_0_2_3_0_a8: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=2 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_0_2_3_1_a8: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=2 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_0_2_3_2_a8: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=20 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_0_2_3_3_a8: OK   Q-identity=True p2-raw-identity=True rows=43 drop=0 nonzero_cofactors=21 cof_maxden=2 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_1_0_3_0_a6: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_1_0_3_0_a8: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_1_0_3_1_a6: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_1_0_3_1_a8: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_1_0_3_2_a6: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_1_0_3_2_a8: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_1_0_3_3_a6: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=20 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_1_0_3_3_a8: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=20 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_1_2_3_0_a8: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__SUB__sub_1_2_3_1_a8: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_1_1_3_0: OK   Q-identity=True p2-raw-identity=True rows=39 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_1_1_3_1: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_1_1_3_2: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_1_1_3_3: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_2_1_3_0: OK   Q-identity=True p2-raw-identity=True rows=40 drop=0 nonzero_cofactors=14 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_2_1_3_1: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=15 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_2_1_3_2: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_2_1_3_3: OK   Q-identity=True p2-raw-identity=True rows=43 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_3_1_3_0: OK   Q-identity=True p2-raw-identity=True rows=41 drop=0 nonzero_cofactors=15 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_3_1_3_1: OK   Q-identity=True p2-raw-identity=True rows=42 drop=0 nonzero_cofactors=16 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_3_1_3_2: OK   Q-identity=True p2-raw-identity=True rows=43 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__c_3_1_3_3: OK   Q-identity=True p2-raw-identity=True rows=44 drop=0 nonzero_cofactors=20 cof_maxden=2 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__fz10: OK   Q-identity=True p2-raw-identity=True rows=31 drop=0 nonzero_cofactors=21 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__fz11: OK   Q-identity=True p2-raw-identity=True rows=31 drop=0 nonzero_cofactors=15 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__fz9: OK   Q-identity=True p2-raw-identity=True rows=31 drop=0 nonzero_cofactors=21 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__m0_zero: OK   Q-identity=True p2-raw-identity=True rows=37 drop=0 nonzero_cofactors=8 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__m1_3: OK   Q-identity=True p2-raw-identity=True rows=37 drop=0 nonzero_cofactors=15 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__m1_zero: OK   Q-identity=True p2-raw-identity=True rows=37 drop=0 nonzero_cofactors=8 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__m2_zero: OK   Q-identity=True p2-raw-identity=True rows=34 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s17__m3_zero: OK   Q-identity=True p2-raw-identity=True rows=37 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__SUB__sub_0_0_3_0_a8: OK   Q-identity=True p2-raw-identity=True rows=61 drop=0 nonzero_cofactors=17 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__SUB__sub_0_0_3_1_a8: OK   Q-identity=True p2-raw-identity=True rows=62 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__SUB__sub_0_0_3_2_a8: OK   Q-identity=True p2-raw-identity=True rows=63 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__SUB__sub_0_0_3_3_a8: OK   Q-identity=True p2-raw-identity=True rows=64 drop=0 nonzero_cofactors=20 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__SUB__sub_0_2_3_0_a8: OK   Q-identity=True p2-raw-identity=True rows=62 drop=0 nonzero_cofactors=18 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__SUB__sub_0_2_3_1_a8: OK   Q-identity=True p2-raw-identity=True rows=63 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__fz10: OK   Q-identity=True p2-raw-identity=True rows=53 drop=0 nonzero_cofactors=27 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__fz11: OK   Q-identity=True p2-raw-identity=True rows=53 drop=0 nonzero_cofactors=37 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__fz6: OK   Q-identity=True p2-raw-identity=True rows=53 drop=0 nonzero_cofactors=19 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__fz9: OK   Q-identity=True p2-raw-identity=True rows=53 drop=0 nonzero_cofactors=30 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__m0_zero: OK   Q-identity=True p2-raw-identity=True rows=60 drop=0 nonzero_cofactors=9 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__m1_3: OK   Q-identity=True p2-raw-identity=True rows=59 drop=0 nonzero_cofactors=14 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__m1_zero: OK   Q-identity=True p2-raw-identity=True rows=59 drop=0 nonzero_cofactors=8 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__m2_zero: OK   Q-identity=True p2-raw-identity=True rows=57 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certh2/g27_Fany4_s19__m3_zero: OK   Q-identity=True p2-raw-identity=True rows=60 drop=0 nonzero_cofactors=5 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False
+certm/g27_Fp2b_m3_s2__full_c_1_0_2_2.a0: OK   Q-identity=True p2-raw-identity=True rows=156 drop=1 nonzero_cofactors=10 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+certm/t27_mid3_m2_s1__full_c_0_0_1_0.a0: OK   Q-identity=True p2-raw-identity=True rows=133 drop=1 nonzero_cofactors=6 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+certm/t27_mid3_m2_s1__full_c_0_0_1_0.a1: OK   Q-identity=True p2-raw-identity=True rows=133 drop=1 nonzero_cofactors=29 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+certm/t27_mid3_m2_s1__full_c_1_0_1_0.a0: OK   Q-identity=True p2-raw-identity=True rows=7 drop=1 nonzero_cofactors=2 cof_maxden=1 sys_maxnum=1 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+certm/t27_mid3_m2_s2__full_c_0_0_1_0.a0: OK   Q-identity=True p2-raw-identity=True rows=133 drop=1 nonzero_cofactors=29 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False dropped-rows-alpha-only=YES
+certp/withext_0_0_3_0.a0: OK   Q-identity=True p2-raw-identity=True rows=198 drop=0 nonzero_cofactors=10 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False
+certp/withext_0_0_3_1.a0: OK   Q-identity=True p2-raw-identity=True rows=198 drop=0 nonzero_cofactors=10 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False
+certp/withext_0_0_3_2.a0: OK   Q-identity=True p2-raw-identity=True rows=54 drop=0 nonzero_cofactors=10 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False
+certp/withext_0_0_3_3.a0: OK   Q-identity=True p2-raw-identity=True rows=54 drop=0 nonzero_cofactors=10 cof_maxden=1 sys_maxnum=2 sys_maxden=1 char0=False
+python3 vall.py  40.34s user 1.81s system 98% cpu 42.791 total

@@ -1,0 +1,29 @@
+=== m = 3: 28 targets (invertible non-alternating symmetric); forms 2^6; n = 7
+   2 classes under Singer x Frobenius; sizes [7, 21]
+   trace placement T = I in class 0; e3-rmbuild polynomial placement in class 1
+   class   0 size    7: rho = 2 = 2.0000 (at wt 2, n_odd 4); n_odd values [0, 4] | 2 in 5: viol 0 tight 0 | 2 in 6: viol 0 tight 0 | 2 in 7: viol 0 tight 0 | 3 in 7: viol 0 tight 0 | 3 in 8: viol 0 tight 0
+   class   1 size   21: rho = 3 = 3.0000 (at wt 2, n_odd 6); n_odd values [2, 4, 6] | 2 in 5: viol 7 tight 0 | 2 in 6: viol 0 tight 7 | 2 in 7: viol 0 tight 0 | 3 in 7: viol 7 tight 0 | 3 in 8: viol 7 tight 0
+   2 in 5: targets excluded by deletion 21 of 28 (21/28 = 0.7500); targets with a tight form 0
+   2 in 6: targets excluded by deletion 0 of 28 (0/28 = 0.0000); targets with a tight form 21
+   2 in 7: targets excluded by deletion 0 of 28 (0/28 = 0.0000); targets with a tight form 0
+   3 in 7: targets excluded by deletion 21 of 28 (21/28 = 0.7500); targets with a tight form 0
+   3 in 8: targets excluded by deletion 21 of 28 (21/28 = 0.7500); targets with a tight form 0
+./py.sh t_place.py 3 2,5 2,6 2,7 3,7 3,8  0.19s user 0.06s system 40% cpu 0.623 total
+=== m = 4: 420 targets (invertible non-alternating symmetric); forms 2^10; n = 15
+   10 classes under Singer x Frobenius; sizes [15, 15, 30, 30, 30, 60, 60, 60, 60, 60]
+   trace placement T = I in class 0; e3-rmbuild polynomial placement in class 1
+   class   0 size   15: rho = 2 = 2.0000 (at wt 4, n_odd 8); n_odd values [0, 8] | 4 in 15: viol 0 tight 0 | 4 in 16: viol 0 tight 0 | 5 in 19: viol 0 tight 0 | 7 in 23: viol 0 tight 0
+   class   1 size   60: rho = 3 = 3.0000 (at wt 4, n_odd 12); n_odd values [4, 6, 8, 10, 12] | 4 in 15: viol 0 tight 0 | 4 in 16: viol 0 tight 0 | 5 in 19: viol 0 tight 0 | 7 in 23: viol 0 tight 0
+   class   2 size   30: rho = 5/2 = 2.5000 (at wt 4, n_odd 10); n_odd values [0, 6, 8, 10] | 4 in 15: viol 0 tight 0 | 4 in 16: viol 0 tight 0 | 5 in 19: viol 0 tight 0 | 7 in 23: viol 0 tight 0
+   class   3 size   60: rho = 5/2 = 2.5000 (at wt 4, n_odd 10); n_odd values [4, 6, 8, 10, 12] | 4 in 15: viol 0 tight 0 | 4 in 16: viol 0 tight 0 | 5 in 19: viol 0 tight 0 | 7 in 23: viol 0 tight 0
+   class   4 size   60: rho = 5/2 = 2.5000 (at wt 4, n_odd 10); n_odd values [0, 4, 6, 8, 10, 12] | 4 in 15: viol 0 tight 0 | 4 in 16: viol 0 tight 0 | 5 in 19: viol 0 tight 0 | 7 in 23: viol 0 tight 0
+   class   5 size   30: rho = 3 = 3.0000 (at wt 4, n_odd 12); n_odd values [4, 6, 8, 10, 12] | 4 in 15: viol 0 tight 0 | 4 in 16: viol 0 tight 0 | 5 in 19: viol 0 tight 0 | 7 in 23: viol 0 tight 0
+   class   6 size   30: rho = 3 = 3.0000 (at wt 4, n_odd 12); n_odd values [4, 6, 8, 10, 12] | 4 in 15: viol 0 tight 0 | 4 in 16: viol 0 tight 0 | 5 in 19: viol 0 tight 0 | 7 in 23: viol 0 tight 0
+   class   7 size   60: rho = 3 = 3.0000 (at wt 4, n_odd 12); n_odd values [4, 6, 8, 10, 12] | 4 in 15: viol 0 tight 0 | 4 in 16: viol 0 tight 0 | 5 in 19: viol 0 tight 0 | 7 in 23: viol 0 tight 0
+   class   8 size   60: rho = 5/2 = 2.5000 (at wt 4, n_odd 10); n_odd values [4, 6, 8, 10, 12] | 4 in 15: viol 0 tight 0 | 4 in 16: viol 0 tight 0 | 5 in 19: viol 0 tight 0 | 7 in 23: viol 0 tight 0
+   class   9 size   15: rho = 5/2 = 2.5000 (at wt 4, n_odd 10); n_odd values [0, 4, 6, 8, 10, 12] | 4 in 15: viol 0 tight 0 | 4 in 16: viol 0 tight 0 | 5 in 19: viol 0 tight 0 | 7 in 23: viol 0 tight 0
+   4 in 15: targets excluded by deletion 0 of 420 (0/420 = 0.0000); targets with a tight form 0
+   4 in 16: targets excluded by deletion 0 of 420 (0/420 = 0.0000); targets with a tight form 0
+   5 in 19: targets excluded by deletion 0 of 420 (0/420 = 0.0000); targets with a tight form 0
+   7 in 23: targets excluded by deletion 0 of 420 (0/420 = 0.0000); targets with a tight form 0
+./py.sh t_place.py 4 4,15 4,16 5,19 7,23  0.31s user 0.06s system 80% cpu 0.450 total

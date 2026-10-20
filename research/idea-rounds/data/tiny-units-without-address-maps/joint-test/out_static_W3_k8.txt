@@ -1,0 +1,17 @@
+static cuts: 380 sets U
+distinct inequalities (coefficients c_1..c_7, D): 190
+W=3 K=8: multisets of directions 3003 (ordered patterns 5764801); rejected by a static cut: 3003 multisets (5764801 ordered patterns); NOT rejected by any static cut: 0 multisets (0 ordered patterns)
+static inequalities used (largest margin per multiset), most used first:
+   498 multisets: sum n_w*c_w >= 8*W with c = [0, 6, 6, 6, 6, 0, 0] ; example U = (1,1) (6,1) (7,1) (2 sets U give it)
+   447 multisets: sum n_w*c_w >= 8*W with c = [6, 0, 6, 6, 0, 6, 0] ; example U = (2,1) (5,1) (7,1) (2 sets U give it)
+   404 multisets: sum n_w*c_w >= 8*W with c = [6, 6, 0, 0, 6, 6, 0] ; example U = (3,1) (4,1) (7,1) (2 sets U give it)
+   340 multisets: sum n_w*c_w >= 10*W with c = [0, 0, 0, 10, 10, 10, 10] ; example U = (0,0) (1,0) (2,0) (3,0) (2 sets U give it)
+   326 multisets: sum n_w*c_w >= 10*W with c = [0, 10, 10, 0, 0, 10, 10] ; example U = (0,0) (1,0) (4,0) (5,0) (2 sets U give it)
+   312 multisets: sum n_w*c_w >= 10*W with c = [10, 0, 10, 0, 10, 0, 10] ; example U = (0,0) (2,0) (4,0) (6,0) (2 sets U give it)
+   298 multisets: sum n_w*c_w >= 10*W with c = [10, 10, 0, 10, 0, 0, 10] ; example U = (0,0) (3,0) (5,0) (6,0) (2 sets U give it)
+    90 multisets: sum n_w*c_w >= 9*W with c = [4, 4, 2, 4, 2, 2, 6] ; example U = (1,1) (2,1) (4,1) (2 sets U give it)
+    42 multisets: sum n_w*c_w >= 8*W with c = [0, 10, 10, 10, 10, 0, 0] ; example U = (0,0) (1,0) (6,0) (7,0) (2 sets U give it)
+    42 multisets: sum n_w*c_w >= 8*W with c = [10, 0, 10, 10, 0, 10, 0] ; example U = (0,0) (2,0) (5,0) (7,0) (2 sets U give it)
+    42 multisets: sum n_w*c_w >= 8*W with c = [10, 10, 0, 0, 10, 10, 0] ; example U = (0,0) (3,0) (4,0) (7,0) (2 sets U give it)
+    41 multisets: sum n_w*c_w >= 9*W with c = [6, 2, 4, 2, 4, 2, 4] ; example U = (3,1) (5,1) (7,1) (2 sets U give it)
+first multisets not rejected by any static cut: []

@@ -1,0 +1,39 @@
+control {'b': '0.001664727258740678855772', 'kappa': '0.001661960547713947', 'b_matches_942': True, 'kappa_matches_942': True}
+{"case": "typical x0 (optimistic)", "b": "0.001664729781628", "b_gain_pct": 0.00015154959443532137, "kappa": "0.00166196306222244", "kappa_gain_pct": 0.00015129772463364104, "binding": "complex"}
+{"case": "typical x1 (optimistic)", "b": "0.001666664846582", "b_gain_pct": 0.11639070788987754, "kappa": "0.001663891696782017", "kappa_gain_pct": 0.11619704635746775, "binding": "complex"}
+{"case": "typical x1 (hole)", "b": "0.001665577756655", "b_gain_pct": 0.05108932465764332, "kappa": "0.001662808220269298", "kappa_gain_pct": 0.05100437290867024, "binding": "complex"}
+{"case": "typical x10 (optimistic)", "b": "0.001684287664080", "b_gain_pct": 1.1749915931575867, "kappa": "0.001681455609139712", "kappa_gain_pct": 1.1730158969525941, "binding": "complex"}
+{"case": "typical x10 (hole)", "b": "0.001673274898350", "b_gain_pct": 0.5134558567532547, "kappa": "0.001670479726555004", "kappa_gain_pct": 0.5125981391541011, "binding": "complex"}
+{"case": "typical x28 (optimistic)", "b": "0.001720676625262", "b_gain_pct": 3.3608728533358296, "kappa": "0.001717720982917747", "kappa_gain_pct": 3.3550998115147412, "binding": "complex"}
+{"case": "typical x28 (hole)", "b": "0.001688885211524", "b_gain_pct": 1.4511658084911654, "kappa": "0.00168603768740782", "kappa_gain_pct": 1.4487190882474008, "binding": "complex"}
+{"case": "typical x50 (optimistic)", "b": "0.001767348676592", "b_gain_pct": 6.164458310640717, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x50 (hole)", "b": "0.001708366659554", "b_gain_pct": 2.6214144439879656, "kappa": "0.001705453120304151", "kappa_gain_pct": 2.616943744544882, "binding": "complex"}
+{"case": "typical x100 (optimistic)", "b": "0.001883451566088", "b_gain_pct": 13.138747275183176, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x100 (hole)", "b": "0.001754355949635", "b_gain_pct": 5.38398650129515, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x112 (optimistic)", "b": "0.001911625265034", "b_gain_pct": 14.83113855417828, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x112 (hole)", "b": "0.001765767928047", "b_gain_pct": 6.069502903593672, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x168 (optimistic)", "b": "0.002045741377434", "b_gain_pct": 22.88748001769286, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x168 (hole)", "b": "0.001821043773340", "b_gain_pct": 9.389917404111621, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x200 (optimistic)", "b": "0.002131194283271", "b_gain_pct": 28.020627528106505, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x200 (hole)", "b": "0.001854217699877", "b_gain_pct": 11.382671854574895, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x252 (optimistic)", "b": "0.002286410611308", "b_gain_pct": 37.34445683540135, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x252 (hole)", "b": "0.001910785162858", "b_gain_pct": 14.780673700494823, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x392 (optimistic)", "b": "0.002759690645028", "b_gain_pct": 65.77434114434618, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x392 (hole)", "b": "0.002081839574344", "b_gain_pct": 25.05589509712592, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x504 (optimistic)", "b": "0.003108698516613", "b_gain_pct": 86.7392090980899, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "typical x504 (hole)", "b": "0.002242526231108", "b_gain_pct": 34.70832650413387, "kappa": "0.001730427469823602", "kappa_gain_pct": 4.11964785829798, "binding": "bit (kappa capped by c)"}
+{"case": "one width-4 helper (optimistic)", "b": "0.001665940269253", "b_gain_pct": 0.07286542022008369, "kappa": "0.001663169528161718", "kappa_gain_pct": 0.07274423267351152, "binding": "complex"}
+{"case": "one width-4 helper (hole)", "b": "0.001665160855347", "b_gain_pct": 0.026046104794564783, "kappa": "0.001662392704089969", "kappa_gain_pct": 0.026002805940034974, "binding": "complex"}
+{"case": "one width-5 helper (optimistic)", "b": "0.001666133556848", "b_gain_pct": 0.08447618670780978, "kappa": "0.001663362173313798", "kappa_gain_pct": 0.08433567221429884, "binding": "complex"}
+{"case": "one width-5 helper (hole)", "b": "0.001665247945079", "b_gain_pct": 0.03127757629044793, "kappa": "0.001662479504500453", "kappa_gain_pct": 0.03122557796091088, "binding": "complex"}
+{"case": "one width-7 helper (optimistic)", "b": "0.001666479505386", "b_gain_pct": 0.105257280813996, "kappa": "0.001663706971814701", "kappa_gain_pct": 0.10508216354210297, "binding": "complex"}
+{"case": "one width-7 helper (hole)", "b": "0.001665425739963", "b_gain_pct": 0.04195769716946747, "kappa": "0.001662656708683236", "kappa_gain_pct": 0.04188793592282202, "binding": "complex"}
+{"case": "one width-8 helper (optimistic)", "b": "0.001666650151269", "b_gain_pct": 0.11550796193471163, "kappa": "0.001663877050331393", "kappa_gain_pct": 0.11531577088771329, "binding": "complex"}
+{"case": "one width-8 helper (hole)", "b": "0.001665529583921", "b_gain_pct": 0.04819559337513692, "kappa": "0.001662760207604374", "kappa_gain_pct": 0.04811545566030101, "binding": "complex"}
+{"case": "one width-9 helper (optimistic)", "b": "0.001667067724203", "b_gain_pct": 0.1405915263606675, "kappa": "0.001664293234668358", "kappa_gain_pct": 0.14035754083450705, "binding": "complex"}
+{"case": "one width-9 helper (hole)", "b": "0.001665890280592", "b_gain_pct": 0.069862606354787, "kappa": "0.001663119705639247", "kappa_gain_pct": 0.06974641647748138, "binding": "complex"}
+{"complex_removed": 50, "b": "0.001767348676592", "bit_helpers_to_remove_per_call": {"typical": 17, "rank1": 14}, "kappa_if_both": "0.001764230665859111"}
+{"complex_removed": 100, "b": "0.001883451566088", "bit_helpers_to_remove_per_call": {"typical": 68, "rank1": 55}, "kappa_if_both": "0.001879910845062463"}
+{"complex_removed": 200, "b": "0.002131194283271", "bit_helpers_to_remove_per_call": {"typical": 158, "rank1": 129}, "kappa_if_both": "0.002126661953473568"}
+{"complex_removed": 392, "b": "0.002759690645028", "bit_helpers_to_remove_per_call": {"typical": 315, "rank1": "> 165 (model limit)"}, "kappa_if_both": "0.002752095712236415"}
+{"complex_removed": 504, "b": "0.003108698516613", "bit_helpers_to_remove_per_call": {"typical": "> 439 (model limit)", "rank1": "> 165 (model limit)"}, "kappa_if_both": "0.003099064459524445"}

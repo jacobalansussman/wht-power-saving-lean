@@ -1,0 +1,156 @@
+FSB-BUILD START Tue Oct 13 22:05:01 UTC 2026 exponent 1 - 16197705/10^10 (kernel 1 - 16197706/10^10; negative challenge 1 - 16197706/10^10)
+owner of .lake: root packages: root
+   (slot: waited 0s; heavy lean now 0, avail 42441 MB)
+=== b1-rate START 22:05:01
+=== b1-rate END rc=0 wall=111s maxrss_kb=3400232 22:06:52
+Build completed successfully (3093 jobs).
+   93s Work.XHost.Data.RateU8XMHHx
+   (slot: waited 0s; heavy lean now 0, avail 49598 MB)
+=== b2-hostk START 22:06:52
+=== b2-hostk END rc=0 wall=306s maxrss_kb=6746852 22:11:58
+Build completed successfully (9108 jobs).
+   235s Work.XHost.Frames
+   9.8s Work.XHost.HSchedK
+   7.1s Work.XHost.HSched
+   6.5s Work.XHost.HPriceK
+   1.0s Work.XHost.HostK
+   (slot: waited 0s; heavy lean now 0, avail 49391 MB)
+=== b3-hosttab START 22:11:58
+=== b3-hosttab END rc=0 wall=95s maxrss_kb=8590436 22:13:33
+Build completed successfully (9152 jobs).
+   76s Work.XHost.Data.HU8XMSched
+   6.6s Work.XHost.Data.InstU8XMHH
+   (slot: waited 0s; heavy lean now 1, avail 49095 MB)
+=== b4-network START 22:13:33
+=== b4-network END rc=0 wall=153s maxrss_kb=7104408 22:16:06
+Build completed successfully (9220 jobs).
+   33s Work.XHost.HGeom
+   31s Work.XHost.HDef
+   19s Work.XHost.HStage
+   18s Work.XHost.HEnd
+   18s Work.XHost.HBank
+   10s Work.XHost.HRoles
+   8.0s Work.XHost.HCert
+   (slot: waited 40s; heavy lean now 0, avail 49066 MB)
+=== b5-glue START 22:16:46
+=== b5-glue END rc=0 wall=40s maxrss_kb=6756592 22:17:26
+Build completed successfully (9304 jobs).
+   7.5s Work.XHost.U8XMHH
+   (slot: waited 0s; heavy lean now 0, avail 48477 MB)
+=== b6-fourier START 22:17:26
+=== b6-fourier END rc=0 wall=130s maxrss_kb=6842256 22:19:36
+warning: Work/FourierU8XMHH/UniformFourierChallenge.lean:326:8: declaration uses `sorry`
+warning: Work/FourierU8XMHH/UniformFourierChallenge.lean:330:8: declaration uses `sorry`
+warning: Work/FourierU8XMHHNeg/UniformFourierChallenge.lean:326:8: declaration uses `sorry`
+warning: Work/FourierU8XMHHNeg/UniformFourierChallenge.lean:330:8: declaration uses `sorry`
+Build completed successfully (9320 jobs).
+   8.2s Work.FourierU8XMHH.UniformFourierChallenge
+   8.1s Work.FourierU8XMHH.WorkingPreparation
+   8.0s Work.FourierU8XMHH.Asymptotics
+   7.9s Work.FourierU8XMHHNeg.UniformFourierChallenge
+   7.7s Work.FourierU8XMHH.SynchronizedAlgorithm
+   7.7s Work.FourierU8XMHH.ConvolutionProgram
+   7.6s Work.FourierU8XMHH.ArbitraryLength
+   7.3s Work.FourierU8XMHH.WorkingCompiler
+   (slot: waited 40s; heavy lean now 0, avail 49126 MB)
+=== nobuild START 22:20:16
+=== nobuild END rc=0 wall=7s maxrss_kb=966272 22:20:23
+All targets up-to-date (9333 jobs).
+'declaration uses sorry' in the builds: 0 (the two in the challenge files are the challenge statements)
+   (slot: waited 30s; heavy lean now 1, avail 48395 MB)
+=== axioms START 22:20:53
+=== axioms END rc=0 wall=8s maxrss_kb=6699656 22:21:01
+'OAI.PowerSaving.transform_mainU8XMHH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainU8XMHH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8XMHH_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+   (slot: waited 0s; heavy lean now 1, avail 48674 MB)
+=== axioms-glue START 22:21:01
+=== axioms-glue END rc=0 wall=8s maxrss_kb=6703952 22:21:09
+'GXD.U8XMHH.hs_ok' depends on axioms: [propext]
+'GXD.U8XMHH.hfits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XMHH.hwidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XMHH.hprice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BridgeRate.U8XMHH.unit_cost_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BlockAccounting.fold_U8XMHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.HostSched.ofTab_fitsR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.engine_of_ginv_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.wht_of_ginv_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamU8XMHH.engine_U8XMHHx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8XMHH_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XM.ginv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XM.hent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XM.exitRC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XM.scalOKZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8XM.validX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.ginvXOfZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.exit_of_zchecksZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+@OAI.PowerSaving.XHost.engine_of_ginv_host : ∀ {H T Sl C : Type} [inst : Fintype H] [inst_1 : DecidableEq H]
+  [inst_2 : Fintype T] [inst_3 : DecidableEq T] [inst_4 : Fintype Sl] [inst_5 : DecidableEq Sl] [inst_6 : Fintype C]
+  [inst_7 : DecidableEq C] (I : OAI.PowerSaving.GX.GInvE H T Sl C),
+  Fintype.card H = 9 →
+    ∀ (S : OAI.PowerSaving.XHost.HostSched Sl T),
+      S.fits I.ent →
+        ∀ (u W : ℕ),
+          73 = u →
+            64 * Fintype.card T + S.nb = W →
+              1 ≤ W →
+                ∀ (U : List (ℕ × ℕ)),
+                  (∀ (φ : ℕ → ℝ), OAI.PowerSaving.XHost.unitPriceHost I S φ = OAI.PowerSaving.Binary.listCost φ U) →
+                    ∀ (s : ℕ) (z : ℝ),
+                      0 ≤ z →
+                        z ≤ 1 →
+                          (2 ^ s - 1) * OAI.PowerSaving.BlockAccounting.moment u z U +
+                                ↑W *
+                                  (OAI.PowerSaving.BlockAccounting.T u z (u - 1) 1 +
+                                    OAI.PowerSaving.BlockAccounting.T u z 1 1) <
+                              2 ^ s * ↑W →
+                            ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+                              (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+                              OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl)
+                                (OAI.PowerSaving.RAM.bundle cl) (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+                                (fun i =>
+                                  (OAI.PowerSaving.Binary.bits (k i)).tape (OAI.PowerSaving.Binary.ripple (k i) (v i)))
+                                fun i => 2 ^ k i * OAI.PowerSaving.envelope z (k i)
+OAI.PowerSaving.SeamU8XMHH.engine_U8XMHHx : ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+  (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+  OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl) (OAI.PowerSaving.RAM.bundle cl)
+    (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+    (fun i => (OAI.PowerSaving.Binary.bits (k i)).tape (OAI.PowerSaving.Binary.ripple (k i) (v i))) fun i =>
+    2 ^ k i * OAI.PowerSaving.envelope (1 - 16197706 / 10 ^ 10) (k i)
+   (slot: waited 0s; heavy lean now 1, avail 48594 MB)
+=== hsneg START 22:21:09
+=== hsneg END rc=0 wall=46s maxrss_kb=8477556 22:21:55
+hostSchedK negative rc=0 (0 = the kernel proved '= false')
+files checked: 126
+sorry lines:
+Work/FourierU8XM/UniformFourierChallenge.lean:327:  sorry
+Work/FourierU8XM/UniformFourierChallenge.lean:331:  sorry
+Work/FourierU8XMHH/UniformFourierChallenge.lean:327:  sorry
+Work/FourierU8XMHH/UniformFourierChallenge.lean:331:  sorry
+Work/FourierU8XMHHNeg/UniformFourierChallenge.lean:327:  sorry
+Work/FourierU8XMHHNeg/UniformFourierChallenge.lean:331:  sorry
+Work/FourierU8XMNeg/UniformFourierChallenge.lean:327:  sorry
+Work/FourierU8XMNeg/UniformFourierChallenge.lean:331:  sorry
+admit lines: 0
+forbidden-construct lines: 2
+Work/FourierU8XM/Seam.lean:42:No `sorry`, no `native_decide`.
+Work/FourierU8XMHH/Seam.lean:40:No `sorry`, no `native_decide`.
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74  /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierU8XMHH (1 - 16197705/10^10): byte-identical to my derivation
+challenge FourierU8XMHHNeg (1 - 16197706/10^10): byte-identical to my derivation
+Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  tools/Compare.lean (ours: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9)
+   (slot: waited 10s; heavy lean now 1, avail 48585 MB)
+=== compare-pos START 22:22:05
+=== compare-pos END rc=0 wall=86s maxrss_kb=15801884 22:23:31
+compare-pos rc=0
+RESULT: PASS
+   (slot: waited 0s; heavy lean now 0, avail 49092 MB)
+=== compare-neg START 22:23:31
+=== compare-neg END rc=1 wall=53s maxrss_kb=16135412 22:24:24
+compare-neg rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH: definition body differs
+RESULT: FAIL
+FSB-BUILD END Tue Oct 13 22:24:24 UTC 2026

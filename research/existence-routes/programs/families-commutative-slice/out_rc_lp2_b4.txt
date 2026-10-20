@@ -1,0 +1,10 @@
+rc_lp2.py:70: RuntimeWarning: divide by zero encountered in matmul
+  print(f"variables {nv}, rows {nr}; LP value {res.fun:.9f}; dual objective {-(b @ lam):.9f}; dual support {int((lam > 1e-9).sum())}")
+rc_lp2.py:70: RuntimeWarning: overflow encountered in matmul
+  print(f"variables {nv}, rows {nr}; LP value {res.fun:.9f}; dual objective {-(b @ lam):.9f}; dual support {int((lam > 1e-9).sum())}")
+rc_lp2.py:70: RuntimeWarning: invalid value encountered in matmul
+  print(f"variables {nv}, rows {nr}; LP value {res.fun:.9f}; dual objective {-(b @ lam):.9f}; dual support {int((lam > 1e-9).sum())}")
+variables 505, rows 89153; LP value 4.000000000; dual objective 4.000000000; dual support 83
+exact certificate: inconsistent=False; lambda >= 0: True; y-columns cancel: True; c-columns ok: True; value 4  -> PROVES M >= 4W
+rows used by kind: {'Sslack': 33, 'Cslack': 43, 'R': 7}
+certificate written to rc_cert_b4.json

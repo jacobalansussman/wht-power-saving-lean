@@ -1,0 +1,8 @@
+== B4: frames 16, m 4, twists 384, free 24, target orbit 1, D 7, split (4, 3, 6)
+B4 M=1 new canonical states 2 max(L1+L2) 1 (I) holds goal 0 [0s]
+B4 M=2 new canonical states 17 max(L1+L2) 2 (I) holds goal 0 [1s]
+B4 M=3 new canonical states 281 max(L1+L2) 3 (I) holds goal 0 [6s]
+B4 M=4 new canonical states 8074 max(L1+L2) 4 (I) holds goal 0 [122s]
+   split: part 3/6 of layer 4 (1346 states)
+B4 M=5 new canonical states 125981 max(L1+L2) 5 (I) holds goal 0 [576s]
+B4 M=6 successors 17651571 (I) holds goal 0 | M=7: tested 223219, goal-in-one 0 [692s]

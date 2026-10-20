@@ -1,0 +1,22 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+t-bw16, 13 Oct 2026.  VP = checks/wht33/fatlabels/venv/bin/python3 (numpy).  All runs take seconds.
+hubcopy/skel.py, hubcopy/cert.py = hub research/format-limits-corrected/scripts (read, copied unchanged; certified X(s,h,k,x)).
+pricer.py = copy of ../../bound-check/m-anatomy/pricer.py (exact hub moment engine; reproduces #1042).
+
+$VP -I survey.py e8 bw16 bw16_other rm14 rm24w4   -> survey_e8_bw16_bw16_other_rm14_rm24w4.json, clique_<name>.npy
+$VP -I survey.py bw32 leech                         -> survey_bw32_leech.json (survey_big.log)
+     line systems (linesys.py: real stabilizer states by support codimension; Leech from the Golay code), Q-rank,
+     |ip| counts, and a pairwise NON-orthogonal set (asserted exactly) = lower bound for the F_2 minrank of the pattern
+$VP -I minrank_try.py      F_2 ranks of invariant pattern matrices on BW16 (I+A_orth 191), pair classes
+$VP -I complex_ratio.py    complex-type BW16 unit with Gram decoder: frame labels h 135 x 1.0; I+A_orth h 191 x 1.311
+$VP -I bitdecoder.py       bit-side BW16 decoder from an ovoid of O+(8,2) (18 E8 blocks): fits, cst 1296, x 0.6
+$VP -I check_copyfloor.py  same decoder through copyfloor.py's Unit.delivered/fits/cost: fits, star 1296, pairing 1296
+$VP -I ceilings.py         certified hub ceilings X(s,h,1,x) for the candidates -> ceilings.json
+$VP -I per_s.py            same-s ratios against E8 P112 / P111 -> per_s.json
+$VP -I others.py           BW32, Leech, RM systems against E8 -> others.json
+$VP -I rm24w4.py ; $VP -I rm24w4_coord.py   the support-4 RM(2,4) system (the one not killed by the clique alone at s=3)
+$VP -I whatif.py           what-if words priced with the hub engine, calibrated on #1042 -> whatif.json

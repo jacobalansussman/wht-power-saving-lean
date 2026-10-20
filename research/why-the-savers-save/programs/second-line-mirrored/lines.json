@@ -1,0 +1,37 @@
+{
+ "total_support": [
+  56,
+  56,
+  56,
+  56,
+  56,
+  56,
+  56,
+  56
+ ],
+ "junk_per_target": [
+  52
+ ],
+ "junk_binary_gram": [
+  0
+ ],
+ "nonjunk_binary_gram_counts": {
+  "1": 3304
+ },
+ "mirror": {
+  "g_even": true,
+  "passes_junk_orthogonality": true
+ },
+ "R2_meet_dims": {
+  "0": 2,
+  "1": 2,
+  "2": 2,
+  "3": 2,
+  "4": 2,
+  "5": 2,
+  "6": 2,
+  "7": 2
+ },
+ "omega_u": 8,
+ "shared_frame_max": 8
+}

@@ -1,0 +1,18 @@
+U = blocks (x,1) with x in [1, 6]: sum_w n_w * [2, 4, 4, 4, 4, 2, 0] >= 7 * W
+U = blocks (x,1) with x in [2, 5]: sum_w n_w * [4, 2, 4, 4, 2, 4, 0] >= 7 * W
+U = blocks (x,1) with x in [4, 3]: sum_w n_w * [4, 4, 2, 2, 4, 4, 0] >= 7 * W
+U = blocks (x,1) with x in [5, 6, 7]: sum_w n_w * [2, 2, 2, 6, 4, 4, 4] >= 9 * W
+U = blocks (x,1) with x in [3, 6, 7]: sum_w n_w * [2, 6, 4, 2, 2, 4, 4] >= 9 * W
+U = blocks (x,1) with x in [3, 5, 7]: sum_w n_w * [6, 2, 4, 2, 4, 2, 4] >= 9 * W
+sum of the 3 pair inequalities:   coefficients [10, 10, 10, 10, 10, 10, 0] >= 21 W
+sum of the 3 triple inequalities: coefficients [10, 10, 10, 10, 10, 10, 12] >= 27 W
+every capacity of the model is even: True
+W = 1: the six inequalities alone need K >=  3 (first multiset passing: (1, 2, 4)) ; the formula of the hand proof gives K >=  3 ; 13W/5 = 2.6 ; a saving of 1e-1 needs K <= 2
+W = 2: the six inequalities alone need K >=  6 (first multiset passing: (1, 1, 1, 2, 4, 6)) ; the formula of the hand proof gives K >=  6 ; 13W/5 = 5.2 ; a saving of 1e-1 needs K <= 5
+W = 3: the six inequalities alone need K >=  9 (first multiset passing: (1, 1, 1, 1, 2, 2, 4, 4, 6)) ; the formula of the hand proof gives K >=  9 ; 13W/5 = 7.8 ; a saving of 1e-1 needs K <= 8
+W = 4: the six inequalities alone need K >= 11 (first multiset passing: (1, 1, 1, 1, 2, 2, 2, 4, 4, 4, 6)) ; the formula of the hand proof gives K >= 11 ; 13W/5 = 10.4 ; a saving of 1e-1 needs K <= 10
+W = 5: the six inequalities alone need K >= 14 (first multiset passing: (1, 1, 1, 1, 1, 2, 2, 2, 2, 4, 4, 4, 4, 6)) ; the formula of the hand proof gives K >= 14 ; 13W/5 = 13.0 ; a saving of 1e-1 needs K <= 13
+W = 6: the six inequalities alone need K >= 16 (first multiset passing: (1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 7)) ; the formula of the hand proof gives K >= 16 ; 13W/5 = 15.6 ; a saving of 1e-1 needs K <= 16
+W = 7: the six inequalities alone need K >= 19 (first multiset passing: (1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 7)) ; the formula of the hand proof gives K >= 19 ; 13W/5 = 18.2 ; a saving of 1e-1 needs K <= 18
+W = 8: the six inequalities alone need K >= 21 (first multiset passing: (1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 7, 7, 7)) ; the formula of the hand proof gives K >= 21 ; 13W/5 = 20.8 ; a saving of 1e-1 needs K <= 21
+W = 9: the six inequalities alone need K >= 24 (first multiset passing: (1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 7, 7, 7)) ; the formula of the hand proof gives K >= 24 ; 13W/5 = 23.4 ; a saving of 1e-1 needs K <= 24

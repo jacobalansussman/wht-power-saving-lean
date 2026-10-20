@@ -1,0 +1,24 @@
+Command exited with non-zero status 1
+	Command being timed: "/content/work/cc-jail/jail2.sh /content/work/aA-final/bos-L2979Hneg/stage /bin/sh -c exec lake env /bin/sh -c 'PATH=/content/work/aA-final/bos-L2979Hneg/control/bin:$PATH; export PATH; exec comparator /content/work/aA-final/bos-L2979Hneg/control/lean.json'"
+	User time (seconds): 39.08
+	System time (seconds): 18.25
+	Percent of CPU this job got: 84%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:08.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7025648
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 34957
+	Minor (reclaiming a frame) page faults: 862435
+	Voluntary context switches: 246068
+	Involuntary context switches: 1554
+	Swaps: 0
+	File system inputs: 3583536
+	File system outputs: 35696
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

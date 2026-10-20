@@ -1,0 +1,5 @@
+unit s2 label-space weights (rank of r(q)) over the 511 q: [(7, 9), (8, 502)]  sizes |r(q)|: [(48, 3), (49, 9), (50, 37), (51, 57), (52, 69), (53, 47), (54, 27), (55, 6), (56, 6), (57, 27), (58, 47), (59, 69), (60, 57), (61, 37), (62, 9), (63, 3), (111, 1)]
+flats used: root-orthogonal E6/D6 6-flats (4900)
+min over 6-flats F of rank(r(q) minus F): [(7, 120), (8, 391)]
+q with r(q) covered by two 6-flats: []
+min |r(q)| over q != 0 = 48  (so one part has >= 24 lines, hence is an E6 (36) or D6 (30) flat: every other rank-6 root system has <= 21 lines)

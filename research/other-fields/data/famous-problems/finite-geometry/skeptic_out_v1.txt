@@ -1,0 +1,11 @@
+(a) labels(know) ~ E8 root lines(non-orthogonal): iso found: True verified: True (0.0s)
+(b) frames(opposite) ~ singular points of O+(8,2)(non-orthogonal): iso found: True verified: True (0.0s)
+    image of distance-1 frame pairs under the found map: B(x,y) values {0: 945} (0 = orthogonal/collinear)
+(c) order-3 letter: 2 Z2 (1 + sigma) == 2 K: True ; sigma^3 = 1: True
+    2-group case: pieces x1 + s1 Z^u x2, x1 + s2 Z^v x2 (u != v): any sign pair is +-chi_a on {u,v} -> not separable
+(d) AG(2,3): n=9, t_3=12: t2 + 3/4 t3 = 9.0  vs  n + sum (r-4) t_r = 9: holds
+(d) AG(2,4): n=16, t_4=20: t2 + 3/4 t3 = 0.0  vs  n + sum (r-4) t_r = 16: violated
+(d) AG(2,5): n=25, t_5=30: t2 + 3/4 t3 = 0.0  vs  n + sum (r-4) t_r = 55: violated
+(d) AG(2,7): n=49, t_7=56: t2 + 3/4 t3 = 0.0  vs  n + sum (r-4) t_r = 217: violated
+(d) AG(2,8): n=64, t_8=72: t2 + 3/4 t3 = 0.0  vs  n + sum (r-4) t_r = 352: violated
+(d) AG(2,9): n=81, t_9=90: t2 + 3/4 t3 = 0.0  vs  n + sum (r-4) t_r = 531: violated

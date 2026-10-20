@@ -1,0 +1,54 @@
+m=2 n=3 self-dual basis [2, 3] ; sigma symmetric: True
+  (1) virtual targets = trace forms Tr(alpha^-2k xy): ok
+  (2,5) linear-part theorem over 8 forms x 3 channels and plain identity: violations 0
+  (3) code size 8 = 2^3 (expect 2^3); cyclic: True
+  (4) orbits (size, |K|, |J|): count
+      (1, 0, 0) 1
+      (1, 3, 0) 1
+      (3, 1, 2) 1
+      (3, 2, 2) 1
+      odd orbits: 2 (expect 2^(N-m) = 2: one per purely quadratic q)
+m=3 n=7 self-dual basis [3, 5, 7] ; sigma symmetric: True
+  (1) virtual targets = trace forms Tr(alpha^-2k xy): ok
+  (2,5) linear-part theorem over 64 forms x 7 channels and plain identity: violations 0
+  (3) code size 64 = 2^6 (expect 2^6); cyclic: True
+  (4) orbits (size, |K|, |J|): count
+      (1, 0, 0) 1
+      (7, 2, 4) 3
+      (7, 4, 0) 1
+      (7, 4, 4) 4
+      (7, 6, 4) 1
+      odd orbits: 8 (expect 2^(N-m) = 8: one per purely quadratic q)
+m=4 n=15 self-dual basis [8, 11, 13, 15] ; sigma symmetric: True
+  (1) virtual targets = trace forms Tr(alpha^-2k xy): ok
+  (2,5) linear-part theorem over 1024 forms x 15 channels and plain identity: violations 0
+  (3) code size 1024 = 2^10 (expect 2^10); cyclic: True
+  (4) orbits (size, |K|, |J|): count
+      (1, 0, 0) 1
+      (3, 10, 0) 1
+      (5, 6, 0) 2
+      (5, 12, 0) 1
+      (15, 4, 8) 7
+      (15, 6, 0) 1
+      (15, 6, 8) 17
+      (15, 8, 0) 2
+      (15, 8, 8) 27
+      (15, 10, 8) 11
+      (15, 12, 8) 2
+      odd orbits: 64 (expect 2^(N-m) = 64: one per purely quadratic q)
+m=5 n=31 self-dual basis [3, 5, 12, 17, 26] ; sigma symmetric: True
+  (1) virtual targets = trace forms Tr(alpha^-2k xy): ok
+  (2,5) linear-part theorem over 32768 forms x 31 channels and plain identity: violations 0
+  (3) code size 32768 = 2^15 (expect 2^15); cyclic: True
+  (4) orbits (size, |K|, |J|): count
+      (1, 0, 0) 1
+      (31, 8, 16) 15
+      (31, 12, 0) 10
+      (31, 12, 16) 270
+      (31, 16, 0) 17
+      (31, 16, 16) 572
+      (31, 20, 0) 6
+      (31, 20, 16) 162
+      (31, 24, 16) 5
+      odd orbits: 1024 (expect 2^(N-m) = 1024: one per purely quadratic q)
+ALL OK

@@ -1,0 +1,15 @@
+lever half cut vs 3945 b                    : +1.9448e-05 (+1.124 %)
+lever half cut vs 3148 b (merged)           : +2.0333e-05 (+1.175 %)
+lever half cut vs 3955 complex (disputed)   : +8.9383e-06 (+0.513 %)
+lever half cut vs 3934 complex (disputed)   : +1.5246e-05 (+0.879 %)
+lever half cut vs T74 lever target          : +5.3249e-05 (+3.138 %)
+lever half cut vs selected kappa 1094       : +7.7451e-05 (+4.630 %)
+lever half cut vs 1839 T74 b                : +7.0356e-05 (+4.188 %)
+T74 target vs 3945 b -3.3801e-05 -1.953 %
+T74 target vs 3148 b -3.2915e-05
+kappa with c=589 (selected bit)          : hub word 1.7306632365e-3; lever 1.7334270396e-3; gain +2.7638e-06 (+0.160 %); binds bit
+kappa with c=R438 (2971 merged replay)   : hub word 1.7306632365e-3; lever 1.7348462641e-3; gain +4.1830e-06 (+0.242 %); binds bit
+kappa with c=R437 3647 (open)            : hub word 1.7306632365e-3; lever 1.7366460420e-3; gain +5.9828e-06 (+0.346 %); binds bit
+kappa with c=pooled R437 3959 (open)     : hub word 1.7306632365e-3; lever 1.7367386511e-3; gain +6.0754e-06 (+0.351 %); binds bit
+pace 1839(14 Oct)->3148(17 Oct 09:29Z): 2.9779664212709034 %
+pace 3148(17 Oct 09:29Z)->3945(19 Oct 05:48Z): 0.0512 % over 44.3 h = 0.0277 %/day

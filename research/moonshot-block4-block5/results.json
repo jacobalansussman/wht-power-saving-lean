@@ -1,0 +1,1752 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "moonshot-block4-block5",
+ "title": "Moonshot waves 1-8 at blocks 4 and 5: the 2-in-7 near miss and the shape searches",
+ "dates": "2026-10-14 to 2026-10-16",
+ "made_with": "AI agents (Claude) directed by the author",
+ "notes": [
+  "No finding of this section is proved in Lean; none of its proofs has been checked by a person.",
+  "Most findings were checked by one AI skeptic, not two.",
+  "Savings are ln(mW/M)/ln m."
+ ],
+ "counts": {
+  "checked by computer": 21,
+  "argued by hand, not checked": 18,
+  "open": 11,
+  "refuted": 14,
+  "proved in Lean": 0
+ },
+ "findings": [
+  {
+   "id": "moonshot-block4-block5/1",
+   "statement": "Under the k = 8 hook at f = 9, one paid move at block 4 is worth at most 27,456 and a depth-3 piece needs 68,320; five moves allow 137,280 against 136,640 needed for two depth-3 pieces, leaving 640.",
+   "status": "checked by computer",
+   "status_detail": "exact ranks modulo 33,554,393; reproduced by an independent AI skeptic by another method; a skeptic of a later round confirmed 68,320 is the exact value, not only a mod-p lower bound (floating-point singular values with a wide gap, two more primes on every block); 27,456 is the m = 4, k = 8 case of the hook cap formula proved in Lean (see block-bounds-and-new-rules)",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, private ends",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {
+    "cap_k8": 27456,
+    "depth3_demand_k8": 68320,
+    "room": 640,
+    "out_of": 137280,
+    "ratio": 2.48834
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/hook-ratio-640/"
+   ],
+   "rerun_2026_10_19": "yes: rank blocks 1,716 and 4,270 at characters 0, 1 and 7",
+   "archive_entry": "N1"
+  },
+  {
+   "id": "moonshot-block4-block5/2",
+   "statement": "No hook with k = 1 to 15 values a depth-3 piece at 2.5 moves or more; k = 7 and 9 give 2.4591, k = 6 and 10 give 2.3766; mixing hooks cannot beat k = 8.",
+   "status": "checked by computer",
+   "status_detail": "one AI skeptic reproduced the values",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "k7": 2.4591,
+    "k9": 2.4591,
+    "k6": 2.3766,
+    "k10": 2.3766,
+    "k5": 2.2552
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/hook-ratio-640/"
+   ],
+   "rerun_2026_10_19": "no (odd k)",
+   "archive_entry": "N1"
+  },
+  {
+   "id": "moonshot-block4-block5/3",
+   "statement": "Every free letter that relabels addresses and multiplies by phases keeps the hook test space, so making more such letters free (order-3 shifts and every other odd-order letter included) cannot change the 640; every separating end of the private-end shape asks the first five moves for exactly two depth-3 values.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it and found no error",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, private ends",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "N1"
+  },
+  {
+   "id": "moonshot-block4-block5/4",
+   "statement": "In the widened game the 640 rests on the guess that non-engine depth-3 targets are never cheaper at k = 8 (computed only at k = 2, 3, 4).",
+   "status": "open",
+   "status_detail": "guess",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "N1"
+  },
+  {
+   "id": "moonshot-block4-block5/5",
+   "statement": "The first round's hook values at odd k (k = 5, 7, 9), computed as 16 times one character block.",
+   "status": "refuted",
+   "status_detail": "only valid for even k; corrected by ranking all 16 blocks (k = 7: 2.4591, not 2.476; k = 9: 2.4591, not 2.448; k = 5: 2.2552, not 2.221); the maximum stays at k = 8",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the order-3 round, which ranked all 16 character blocks; its skeptic reproduced the values",
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "C19"
+  },
+  {
+   "id": "moonshot-block4-block5/6",
+   "statement": "The closing test stated in the near-miss note (a certificate with average sin^2 below 0.7 at depth 3 closes the branch).",
+   "status": "refuted",
+   "status_detail": "orbit cut 1434 has spectral factor 7/4 and s3 = 0.699 yet misses (2.483) because s1 = 858/865; the correct test is s3 < 0.7 s1",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "a later certificate search and its skeptic",
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "N1"
+  },
+  {
+   "id": "moonshot-block4-block5/7",
+   "statement": "The 2-in-7 unit at block 4 with private ends (the 640 near miss).",
+   "status": "open",
+   "status_detail": "no program found, no certificate closes it; many shapes inside it excluded (findings below)",
+   "date": "2026-10-16",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, private ends",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {
+    "room": 640,
+    "out_of": 137280
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "N1"
+  },
+  {
+   "id": "moonshot-block4-block5/8",
+   "statement": "With sigma the order-3 cyclic shift of three address bits, Z1 (x1 + x2) + Z2 (x1 - sigma x2) = K x1 with Z2 = K (1 - sigma + sigma^2)/2 and Z1 = Z2 sigma: two pieces separate two arrays; for an order-2 letter no such pair works.",
+   "status": "checked by computer",
+   "status_detail": "explicit matrices at blocks 3 and 4 (an exact identity); found by the skeptic of wave 1",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/order-3-two-piece-separation/"
+   ],
+   "rerun_2026_10_19": "yes: identical output",
+   "archive_entry": "N10"
+  },
+  {
+   "id": "moonshot-block4-block5/9",
+   "statement": "An order-3 pair at the start or the end of a program is only a change of input basis, so the order-3 halving end is a private end in other coordinates and inherits the 640.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic confirmed it",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X21"
+  },
+  {
+   "id": "moonshot-block4-block5/10",
+   "statement": "A correct 8-move program for 2 arrays at block 4 with an order-3 halving end exists; it is two private chains in the basis y = (x1 + x2, x1 - sigma x2).",
+   "status": "checked by computer",
+   "status_detail": "exact end solve, formal identity, random complex arrays f = 1..5 (errors below 7e-16); replayed by the skeptic",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "moves": 8
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/order-3-halving-end-control/"
+   ],
+   "rerun_2026_10_19": "yes: identical JSON",
+   "archive_entry": "X21"
+  },
+  {
+   "id": "moonshot-block4-block5/11",
+   "statement": "Four shapes are dead for every choice of letters: one depth-2 carrier plus private helpers; single pieces with two-valued frustrated patterns; one depth-3 carrier for both targets; two depth-3 carriers that are not clean. A genuinely shared end for W arrays needs at least W + 1 pieces.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic read each proof; the first silently assumes the helper is shallower than the target",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X21"
+  },
+  {
+   "id": "moonshot-block4-block5/12",
+   "statement": "Sign patterns alone need four pieces to separate two arrays, so order-3 letters do better at the end.",
+   "status": "refuted",
+   "status_detail": "with multi-term pieces sign letters reach three pieces for two arrays and four for three",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the skeptic of the first order-3 round (explicit examples)",
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X21"
+  },
+  {
+   "id": "moonshot-block4-block5/13",
+   "statement": "The first order-3 searches were complete (312 template prefixes, 765 any-basis prefixes).",
+   "status": "refuted",
+   "status_detail": "some end moves were never tested and one template computed nothing",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": "moonshot-block4-block5/29",
+   "refuted_by": "the skeptic of the first order-3 round",
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X21"
+  },
+  {
+   "id": "moonshot-block4-block5/14",
+   "statement": "The swap-symmetric 2 in 7 at block 4 that met the frame-level test to 2.4e-10 is, normalised, a small exact program that fails the full test by a fixed amount (full residual tends to 2/3; 1 at the exact frame-level solution).",
+   "status": "checked by computer",
+   "status_detail": "the skeptic rebuilt the closure and the tests with its own code",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, symmetric",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/track-code/symmetric-2-in-7-repairs/",
+    "programs/track-code/symmetric-block4-skeletons/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X16"
+  },
+  {
+   "id": "moonshot-block4-block5/15",
+   "statement": "Unit/zero-divisor dilemma: in the symmetric shape with single-term shared and last moves, each array's single route 1 + a u into its target must be invertible, yet cancelling the other array's leftovers forces a = +-1, a zero divisor; so it is never a unit, for every filter, letter order and twist.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic upheld it and proved a stronger gadget statement; the two group-algebra facts it uses are checked by computer (programs/symmetric-2-in-7-dilemma/, re-run 19 Oct 2026)",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, symmetric",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/symmetric-2-in-7-dilemma/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X16"
+  },
+  {
+   "id": "moonshot-block4-block5/16",
+   "statement": "Repairs of the symmetric near miss: 16 order-3 twists (residual 1.0), a junk absorber (floor 1/3), 407 + 18 twisted gadgets (fail at f = 1).",
+   "status": "checked by computer",
+   "status_detail": "twists and absorber numerical (evidence only); gadgets computed, and the skeptic proved every gadget of that kind fails at f = 1",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/track-code/symmetric-2-in-7-repairs/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X16"
+  },
+  {
+   "id": "moonshot-block4-block5/17",
+   "statement": "The seed-301 limit skeleton is not a unit: least f = 2 residual 0.2333 over every coefficient and limit.",
+   "status": "open",
+   "status_detail": "numerical only (reproduced by the skeptic, 0.233327); the stated justification was wrong; evidence, not proof",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, symmetric",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {
+    "residual": 0.2333
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X23"
+  },
+  {
+   "id": "moonshot-block4-block5/18",
+   "statement": "Lemma P (separating arrays that share a generator needs frustrated signs and divides by 2) and Lemma S (two literal readings of the Fano blueprint fail for every choice of letters).",
+   "status": "argued by hand, not checked",
+   "status_detail": "the skeptic of wave 1 checked them; Lemma P(b) needs an invertible coefficient",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/track-code/fano-blueprint/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X15"
+  },
+  {
+   "id": "moonshot-block4-block5/19",
+   "statement": "At block 4 a private last move wastes 9,184 of a move's 27,456, so 3 in 10 and 4 in 13 can end privately for at most one array and an exactly tight schedule for none.",
+   "status": "checked by computer",
+   "status_detail": "exact ranks modulo a prime, given the counting rule; the skeptic held the arithmetic",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "waste": 9184,
+    "cap": 27456
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/track-code/fano-blueprint/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X15"
+  },
+  {
+   "id": "moonshot-block4-block5/20",
+   "statement": "The smallest frustrated set spread over frames is the Fano gadget.",
+   "status": "refuted",
+   "status_detail": "",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the order-3 two-piece separation found by the skeptic of wave 1",
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X15"
+  },
+  {
+   "id": "moonshot-block4-block5/21",
+   "statement": "The Singer-cycle template (2 in 7, 3 in 10, 4 in 13 with an odd-order address relabelling separating the arrays) is excluded for every separating matrix (top rule: read backwards it has one full-length chain from the inputs, a unit needs W).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it; its joint solver said yes 0 times in 2,052 calls (2 in 7) and 45 calls (3 in 10)",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, 3 in 10, 4 in 13",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/track-code/singer-template/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X17"
+  },
+  {
+   "id": "moonshot-block4-block5/22",
+   "statement": "The smallest odd-order separators with support at most 3 are 1 + sigma and 1 + sigma - sigma^2, both with denominator 2.",
+   "status": "checked by computer",
+   "status_detail": "exact enumeration",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/singer-template-separators/"
+   ],
+   "rerun_2026_10_19": "yes: identical output",
+   "archive_entry": "X17"
+  },
+  {
+   "id": "moonshot-block4-block5/23",
+   "statement": "The block-4 engine game is exactly the dual polar graph of Sp(8,2) on 2,295 Lagrangian frames; it agrees with the real 16 x 16 matrices on 400 of 400 random words (skeptic: 1,500 of 1,500).",
+   "status": "checked by computer",
+   "status_detail": "skeptic rebuilt it by brute force",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "frames": 2295
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/dual-polar-model-and-theorem-A/"
+   ],
+   "rerun_2026_10_19": "yes: 0 mismatches",
+   "archive_entry": "X18"
+  },
+  {
+   "id": "moonshot-block4-block5/24",
+   "statement": "Theorem A (with Lemma 5+): if u1 = D b1 y1, u2 = D b2 y2, u3 = D(r u1 + c r' u2) with single letters, in any input basis, no 4th and 5th moves deliver both depth-3 targets of a 2 in 7; engine and widened games.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic read every proof line by line and found no error",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X18"
+  },
+  {
+   "id": "moonshot-block4-block5/25",
+   "statement": "No letter advances one term of a single-letter shared move towards K while holding the other back.",
+   "status": "refuted",
+   "status_detail": "Proposition S: a selective advance exists for 43,008 of 100,352 single-letter shared moves",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "Proposition S, an exhaustive count in the exact model, recounted by the skeptic",
+   "programs": [
+    "programs/dual-polar-model-and-theorem-A/"
+   ],
+   "rerun_2026_10_19": "yes: 43,008 of 100,352",
+   "archive_entry": "C18"
+  },
+  {
+   "id": "moonshot-block4-block5/26",
+   "statement": "Theorem R of shape R: with one term per frame of the third move, no 2 in 7 exists in the engine game, for every choice of letters, rational coefficients and extra terms (with Theorem Q, Lemma G, Corollary G1, Lemmas R1, R1'', R2).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic read every proof and rebuilt the test; 1,588 of its own prefixes, 26,869 target pairs, none passed",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, shape R",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/shape-R-exact-test/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X19"
+  },
+  {
+   "id": "moonshot-block4-block5/27",
+   "statement": "Shape-R families: 6,820 prefixes and 70,228 target pairs, none passing the exact test.",
+   "status": "checked by computer",
+   "status_detail": "with controls; skeptic independent families agree",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, shape R",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {
+    "prefixes": 6820,
+    "target_pairs": 70228
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/shape-R-exact-test/"
+   ],
+   "rerun_2026_10_19": "controls and families A, TYPEM: match",
+   "archive_entry": "X19"
+  },
+  {
+   "id": "moonshot-block4-block5/28",
+   "statement": "Shape R with two or more terms on a frame of the third move, and shape R in the widened game.",
+   "status": "open",
+   "status_detail": "searched by the track and the skeptic, nothing passed, no proof",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, shape R",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X19"
+  },
+  {
+   "id": "moonshot-block4-block5/29",
+   "statement": "1,256 of the 1,261 saved 2-in-7 prefixes at block 4 are excluded exactly over Q for every end move and every invertible free mixing of the two end moves (802 by Criterion 0, 454 by Criterion D).",
+   "status": "checked by computer",
+   "status_detail": "the skeptic rebuilt both criteria in its own code: same verdict on all 1,261",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {
+    "excluded": 1256,
+    "of": 1261,
+    "criterion0": 802,
+    "criterionD": 454
+   },
+   "supersedes": [
+    "moonshot-block4-block5/13",
+    "moonshot-block4-block5/32"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/two-in-seven-prefix-end-tests/"
+   ],
+   "rerun_2026_10_19": "Criterion 0 on all 1,261: every value matches",
+   "archive_entry": "X20"
+  },
+  {
+   "id": "moonshot-block4-block5/30",
+   "statement": "3 of the 5 remaining prefixes are excluded against every end move within the P-test group of 24,576 letters.",
+   "status": "checked by computer",
+   "status_detail": "exact; one decided by the skeptic",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/two-in-seven-prefix-end-tests/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X20"
+  },
+  {
+   "id": "moonshot-block4-block5/31",
+   "statement": "The last 2 saved prefixes (anyb G3S s61 #11, w3 STG2 #17) against end moves outside the pool.",
+   "status": "open",
+   "status_detail": "their runs were left running and never collected",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/two-in-seven-prefix-end-tests/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X20"
+  },
+  {
+   "id": "moonshot-block4-block5/32",
+   "statement": "The second order-3 round's claim that 1,251 of the 1,261 prefixes were ruled out for every end move.",
+   "status": "refuted",
+   "status_detail": "on 22 kframe prefixes the P-test tried only the pool end moves; corrected count 1,229 for every end move, 22 against the pool only, 10 open; superseded by finding 29",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": "moonshot-block4-block5/29",
+   "refuted_by": "its skeptic (coverage)",
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X20"
+  },
+  {
+   "id": "moonshot-block4-block5/33",
+   "statement": "The 3-in-10 analogue of shape R gives dimension 0 in all 1,200 natural extensions.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone; no proof for three arrays",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "3 in 10",
+   "saving_if_it_existed": 0.1315,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/shape-R-exact-test/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X19"
+  },
+  {
+   "id": "moonshot-block4-block5/34",
+   "statement": "One shared move then two private layers (W in 3W + 1) with single-letter starts and merge: the readout of the tops is forced and a second route is only a relabelling of the top moves (Theorem R of that shape, Lemmas 1-5).",
+   "status": "argued by hand, not checked",
+   "status_detail": "the skeptic checked the proofs line by line, twice",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": "2 in 7, 3 in 10, 4 in 13",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/one-shared-move-exact-decisions/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X23"
+  },
+  {
+   "id": "moonshot-block4-block5/35",
+   "statement": "The f = 2 block test (three pieces of 16, 120, 120 dimensions; a row-space test in each) is a valid necessary test and sees the zero-divisor failure (the wave-2 near miss fails it at 0.267).",
+   "status": "argued by hand, not checked",
+   "status_detail": "upheld by the skeptic",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "near_miss_residual": 0.267
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/one-shared-move-exact-decisions/rep2.py"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X23"
+  },
+  {
+   "id": "moonshot-block4-block5/36",
+   "statement": "755 small skeletons of the one-shared-move shape have no solution for any complex coefficients (Groebner basis {1} over Q in Singular).",
+   "status": "checked by computer",
+   "status_detail": "the skeptic re-ran every decision, also modulo a prime, with its own pipeline",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, 3 in 10, 4 in 13",
+   "saving_if_it_existed": null,
+   "numbers": {
+    "inconsistent": 755,
+    "undecided": 144
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/one-shared-move-exact-decisions/"
+   ],
+   "rerun_2026_10_19": "the 25 systems of the first batch regenerated byte for byte; Singular not re-run",
+   "archive_entry": "X23"
+  },
+  {
+   "id": "moonshot-block4-block5/37",
+   "statement": "The 144 one-shared-move skeletons too large to decide (133 + 11 uncounted).",
+   "status": "open",
+   "status_detail": "a later claim to exclude 76 of them holds modulo one prime only",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X23"
+  },
+  {
+   "id": "moonshot-block4-block5/38",
+   "statement": "Theorem P: private starts, private layer-2 moves, one shared layer-3 move and private tops never make a unit for any W >= 2 (engine game, single letters, any injections).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic read it line by line and checked its geometry exhaustively over 2,295 frames (0 survivors; 1,344 with one condition dropped)",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, 3 in 10, 4 in 13",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/theorem-P-frame-check/",
+    "programs/track-code/two-shared-layer-2-moves/"
+   ],
+   "rerun_2026_10_19": "frame check: identical",
+   "archive_entry": "X24"
+  },
+  {
+   "id": "moonshot-block4-block5/39",
+   "statement": "Shared layer-2 variant: all 68 cross cores and 34 sigma-pair cores tested are excluded at the frame level; 395 + 598 + 18 + 18 skeletons have no solution by Groebner bases; no theorem.",
+   "status": "checked by computer",
+   "status_detail": "core verdicts upheld by the skeptic",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/track-code/two-shared-layer-2-moves/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X24"
+  },
+  {
+   "id": "moonshot-block4-block5/40",
+   "statement": "Lemma D' as stated (cross form of the first-round lemma).",
+   "status": "refuted",
+   "status_detail": "it misses two cancellation routes; 49,152 letters per such leftover pass a condition the proof says none can",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the skeptic of the two-shared track",
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X24"
+  },
+  {
+   "id": "moonshot-block4-block5/41",
+   "statement": "The 99 + 9 skeletons Singular left undecided in the two-shared track are excluded too.",
+   "status": "open",
+   "status_detail": "not confirmed: some contain two-letter injections outside the model; the skeptic job that would say which was never collected",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X24"
+  },
+  {
+   "id": "moonshot-block4-block5/42",
+   "statement": "The private-ending count extends to the endings with leftovers that Theorem R forces (which would close 3 in 10 and 4 in 13 in the one-shared-move shape).",
+   "status": "open",
+   "status_detail": "argued not to extend by itself; the computation is out of reach as posed",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "3 in 10, 4 in 13",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": null
+  },
+  {
+   "id": "moonshot-block4-block5/43",
+   "statement": "Over an abelian ratio group, a rationed shared end for W arrays needs at least W fields of the rational group algebra; prime-order letters never work, order 4 works for 3 arrays only; one paid end move is never enough.",
+   "status": "argued by hand, not checked",
+   "status_detail": "class counts checked by computer and reproduced by the skeptic; non-abelian groups not classified",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "3 in 10, 4 in 13",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/shared-ends-3-in-10-4-in-13/"
+   ],
+   "rerun_2026_10_19": "yes: identical",
+   "archive_entry": "X22"
+  },
+  {
+   "id": "moonshot-block4-block5/44",
+   "statement": "In the coordinate world all end moves form one class.",
+   "status": "refuted",
+   "status_detail": "sign letters give 4 classes, order 3 gives 2",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the skeptic of the shared-end track (coord_classes.py)",
+   "programs": [
+    "programs/shared-ends-3-in-10-4-in-13/skeptic/"
+   ],
+   "rerun_2026_10_19": "yes: identical",
+   "archive_entry": "X22"
+  },
+  {
+   "id": "moonshot-block4-block5/45",
+   "statement": "Shared-end searches: 1,447 prefixes for 3 in 10 and 678 for 4 in 13, none passing the relaxed level.",
+   "status": "open",
+   "status_detail": "a numerical/sampled search found nothing; evidence, not proof",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "3 in 10, 4 in 13",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X22"
+  },
+  {
+   "id": "moonshot-block4-block5/46",
+   "statement": "7 in 23 and 8 in 26 with both shared moves first (the blueprint as written) or both last are impossible (top rule: 2 of 7 routes); F O O O F and O F O O F with single-term shared moves fail.",
+   "status": "argued by hand, not checked",
+   "status_detail": "upheld by the skeptic; O F O O F checked exhaustively in the engine game",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "7 in 23, 8 in 26",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/seven-in-23-and-8-in-26-blueprints/wave3/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X28"
+  },
+  {
+   "id": "moonshot-block4-block5/47",
+   "statement": "Theorem R' one step deeper: order O O F O F with a single-term middle shared move fails.",
+   "status": "refuted",
+   "status_detail": "3,024 of 286,720 configurations escaped (exhaustive); later shown spurious",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": "moonshot-block4-block5/48",
+   "refuted_by": "the skeptic of wave 3 (as written); then superseded",
+   "programs": [
+    "programs/seven-in-23-and-8-in-26-blueprints/skeptic-wave3/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X28"
+  },
+  {
+   "id": "moonshot-block4-block5/48",
+   "statement": "O O F O F with a single-term middle shared move is excluded for 7 in 23 and 8 in 26 (the read term must be exactly 2 moves from the target; 0 of 35,840 escape); 1,216 skeletons of the other orders fail; pairs of single-term shared moves serve no character (0 of 28,311,552).",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone (the skeptic confirmed only file counts); the 7-in-23 part uses a Sylow argument, argued by hand; 520 of the 1,216 at random coefficients (screen only)",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "7 in 23, 8 in 26",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/seven-in-23-and-8-in-26-blueprints/wave5/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X30"
+  },
+  {
+   "id": "moonshot-block4-block5/49",
+   "statement": "A 7-in-23 group-algebra program (O O F O F, middle move reading one term through 184 letters) passes the frame-level test in all 6 characters outside its own.",
+   "status": "checked by computer",
+   "status_detail": "reproduced by the skeptic; the pass is generic (180 equations, 208 unknowns), so weak evidence",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "7 in 23",
+   "saving_if_it_existed": 0.1419,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/seven-in-23-and-8-in-26-blueprints/"
+   ],
+   "rerun_2026_10_19": "skeptic z7: identical",
+   "archive_entry": "N4"
+  },
+  {
+   "id": "moonshot-block4-block5/50",
+   "statement": "8 in 26 with a group-algebra middle shared move is excluded for every twist subgroup (target outside a fixed space in at least 4 of 7 characters; at most 2 can be set aside).",
+   "status": "checked by computer",
+   "status_detail": "the track tested 3,264 of 11,391 subgroups; the skeptic tested all 11,391 (later verdict used)",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "8 in 26",
+   "saving_if_it_existed": 0.1498,
+   "numbers": {
+    "subgroups": 11391,
+    "min_failing_characters": 4
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/seven-in-23-and-8-in-26-blueprints/skeptic-wave5/"
+   ],
+   "rerun_2026_10_19": "skeptic z2 over all 11,391: identical",
+   "archive_entry": "X29"
+  },
+  {
+   "id": "moonshot-block4-block5/51",
+   "statement": "The 7-in-23 group-algebra construction is excluded in both orders in its configuration: O O F O F rank at most 11 where 12 is needed (constituent (14,2)); O O F F O rank at most 13 where 14 is needed once only the 4 reachable slots are free (constituent (6,5)).",
+   "status": "checked by computer",
+   "status_detail": "exact bounds in floating point, rank gaps of 13 orders or more; not refuted: the skeptic rebuilt every space on both lifts and extended it to every pair of order-7 twists",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "7 in 23",
+   "saving_if_it_existed": 0.1419,
+   "numbers": {
+    "OOFOF_max_rank": 11,
+    "OOFOF_needed": 12,
+    "OOFFO_max_rank": 13,
+    "OOFFO_needed": 14
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/seven-in-23-gl14-rank-bounds/"
+   ],
+   "rerun_2026_10_19": "pair.py and one65.py: match",
+   "archive_entry": "X40"
+  },
+  {
+   "id": "moonshot-block4-block5/52",
+   "statement": "An earlier round's claim that the 7-in-23 O O F O F construction was excluded.",
+   "status": "refuted",
+   "status_detail": "it applied only to a generic lift; a corrected lift kept the family alive",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": "moonshot-block4-block5/51",
+   "refuted_by": "that round's skeptic (see existence-routes)",
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "N4"
+  },
+  {
+   "id": "moonshot-block4-block5/53",
+   "statement": "7 in 24 (O O F F O F) passes every distance-4 test computed.",
+   "status": "open",
+   "status_detail": "top part computed, terminal move argued by hand; nothing at distance 3 or below",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "7 in 24",
+   "saving_if_it_existed": 0.1112,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "N4"
+  },
+  {
+   "id": "moonshot-block4-block5/54",
+   "statement": "Corollary B++: in a block-5 butterfly both inputs must be injected within the first two shared moves; the ends split cleanly only for special merges.",
+   "status": "argued by hand, not checked",
+   "status_detail": "checked by the skeptic",
+   "date": "2026-10-14",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, butterfly",
+   "saving_if_it_existed": 0.2216,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/track-code/block5-early-separation/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X32"
+  },
+  {
+   "id": "moonshot-block4-block5/55",
+   "statement": "At block 5, leftovers find no partner, so the chain of cancellations stalls.",
+   "status": "refuted",
+   "status_detail": "a sampling artefact",
+   "date": "2026-10-14",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the skeptic of wave 2 (by the exact rule every leftover at layers 3 and 4 has a partner)",
+   "programs": [
+    "programs/track-code/block5-early-separation/skeptic/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X32"
+  },
+  {
+   "id": "moonshot-block4-block5/56",
+   "statement": "Theorem W3: the block-5 butterfly 2 in 7 with single-letter starts, merge and trunk is never a unit, whatever the injections into the first two trunk moves, side terms into the last and end contents.",
+   "status": "argued by hand, not checked",
+   "status_detail": "upheld by the skeptic, which redid the exact census over all 3,360 paths (0 violations over 1,720,320 pairs)",
+   "date": "2026-10-14",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, butterfly",
+   "saving_if_it_existed": 0.2216,
+   "numbers": {
+    "configurations_per_path": 393216,
+    "paths": 3360
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/block5-butterfly-census/"
+   ],
+   "rerun_2026_10_19": "census and skeptic geometry: identical",
+   "archive_entry": "X31"
+  },
+  {
+   "id": "moonshot-block4-block5/57",
+   "statement": "Several-branch trunk: Lemma P, Corollary P, Lemma L4', Lemma DC, the reduction of a split-trunk 2 in 7 to a 2 in 8, the three-middle-frames count, Lemma Q for injections into the first trunk move.",
+   "status": "argued by hand, not checked",
+   "status_detail": "upheld by the skeptic, which proved the three-frames count and checked it over every anchor pair",
+   "date": "2026-10-14",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, 2 in 8",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/block5-two-branch-census/",
+    "programs/track-code/block5-two-branch-trunk/"
+   ],
+   "rerun_2026_10_19": "three-frames census: rows match; the saved total line was inconsistent with its rows",
+   "archive_entry": "X32"
+  },
+  {
+   "id": "moonshot-block4-block5/58",
+   "statement": "Lemma Z' for three or more branch letters, and \"a second branch in the same frame changes nothing\".",
+   "status": "refuted",
+   "status_detail": "escaping configurations exist (none is a unit)",
+   "date": "2026-10-14",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the skeptic of wave 4",
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X32"
+  },
+  {
+   "id": "moonshot-block4-block5/59",
+   "statement": "Wave 7: Lemma E1-sigma, Lemma T (layout (4,2)/(2,4)), Corollary O.",
+   "status": "argued by hand, not checked",
+   "status_detail": "confirmed line by line by the skeptic",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 7, 2 in 8",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/track-code/block5-split-trunk-orbits/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X32"
+  },
+  {
+   "id": "moonshot-block4-block5/60",
+   "statement": "\"Only orbits that swap the branch frames can help\", and the Lemma S bullet \"the copy must fix array 2's target frame\" in the 2-in-8.",
+   "status": "refuted",
+   "status_detail": "cycle orbits help too (layer-3 residual 0.047); a two-letter start passes layers 5 and 4 exactly",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the skeptic of wave 7",
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X32"
+  },
+  {
+   "id": "moonshot-block4-block5/61",
+   "statement": "The forced-zero closure peel.py missed forced zeros in two ways; peel2.py fixes both and audits each closure; peel.py never produced a false exclusion but kept dead designs alive.",
+   "status": "checked by computer",
+   "status_detail": "upheld by one skeptic, which verified all 19 forced-zero chains with brute-force code",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/block5-sparse-designs/peel2.py",
+    "programs/block5-sparse-designs/peel.py"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "T12"
+  },
+  {
+   "id": "moonshot-block4-block5/62",
+   "statement": "All 20 rebuildable layer-3 near misses of wave 7 fail layer 3 exactly (19 by forced zeros, s1302 by a rank test 168 vs 169); s801-s805 fail within two steps of the seed; s1401, s1402 fail by Groebner bases; s1404, s1503 by forced zeros; s1407-s1409 excluded.",
+   "status": "checked by computer",
+   "status_detail": "one skeptic reproduced s1401/s1402 at a new prime and over Q and every kill chain; not re-checked: s1302 rank test, s1503, s1407-s1409",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 8",
+   "saving_if_it_existed": 0.1386,
+   "numbers": {},
+   "supersedes": [
+    "archive:X33"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/block5-ball-test/",
+    "programs/block5-sparse-designs/"
+   ],
+   "rerun_2026_10_19": "the 18 radius-2 systems of s801, s1401, s1402 regenerated byte for byte; solvers not re-run",
+   "archive_entry": "X41"
+  },
+  {
+   "id": "moonshot-block4-block5/63",
+   "statement": "Lemma F: in the most separated 2-in-8 layout, a far-branch column dies on its own layer-4 row unless a stream has a branch term at one prescribed frame.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic has read it",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 8",
+   "saving_if_it_existed": 0.1386,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "rerun_2026_10_19": null,
+   "archive_entry": "X41"
+  },
+  {
+   "id": "moonshot-block4-block5/64",
+   "statement": "s1501 (2 in 8 at block 5): passes layer 4 exactly; two-step layer-3 ball consistent numerically; three-step ball fails numerically unless an injection is switched off.",
+   "status": "open",
+   "status_detail": "layer 4 exact (skeptic); the rest numerical only",
+   "date": "2026-10-15",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": "2 in 8",
+   "saving_if_it_existed": 0.1386,
+   "numbers": {
+    "injections": 32,
+    "two_step_residual": 5e-29,
+    "three_step_residual": 0.3
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/block5-ball-test/systems/"
+   ],
+   "rerun_2026_10_19": null,
+   "archive_entry": "N9"
+  }
+ ],
+ "open": [
+  {
+   "id": "moonshot-block4-block5/open-1",
+   "question": "The 640 room of the private-end 2 in 7 at block 4.",
+   "worth": 0.0963,
+   "first_experiment": "Search for a certificate with spectral factor 7/4 at depth 3 and s3 < 0.7 s1, from hook relatives and orbit cuts in the pieces of dimension 85, 238, 510, 595; or an exact search confined to address maps in the middle and phase letters between moves.",
+   "programs": [
+    "programs/hook-ratio-640/"
+   ]
+  },
+  {
+   "id": "moonshot-block4-block5/open-2",
+   "question": "The 2 saved prefixes open against end moves outside the pool.",
+   "worth": 0.0963,
+   "first_experiment": "python3 poolsuff.py p32.jsonl out.jsonl anyb_G3S_s61:11,w3_STG2:17 to completion; pass = \"pool-suffices\".",
+   "programs": [
+    "programs/two-in-seven-prefix-end-tests/"
+   ]
+  },
+  {
+   "id": "moonshot-block4-block5/open-3",
+   "question": "Shape R with two or more terms on a frame; shape R in the widened game.",
+   "worth": 0.0963,
+   "first_experiment": "Extend Theorem R type by type to rows with two contributions; test with theoremR_check.py on families COS, MIX.",
+   "programs": [
+    "programs/shape-R-exact-test/"
+   ]
+  },
+  {
+   "id": "moonshot-block4-block5/open-4",
+   "question": "Other private-end shapes: mixing or multi-term first moves; depth 3 by the third move; three target moves.",
+   "worth": 0.0963,
+   "first_experiment": "Apply shape R's small system and Lemma G, starting with u3 and u4 as target moves.",
+   "programs": [
+    "programs/shape-R-exact-test/"
+   ]
+  },
+  {
+   "id": "moonshot-block4-block5/open-5",
+   "question": "144 undecided one-shared-move skeletons; 99 + 9 undecided two-shared skeletons.",
+   "worth": 0.1498,
+   "first_experiment": "Decide them with Singular on a high-memory machine, smallest first; list which two-shared ones use two-letter injections first.",
+   "programs": [
+    "programs/one-shared-move-exact-decisions/"
+   ]
+  },
+  {
+   "id": "moonshot-block4-block5/open-6",
+   "question": "Shared ends for 3 in 10 and 4 in 13.",
+   "worth": 0.1498,
+   "first_experiment": "Settle the coordinate world exactly with sign letters and several end classes (a group of order 6,144); then classify non-abelian ratio groups.",
+   "programs": [
+    "programs/shared-ends-3-in-10-4-in-13/"
+   ]
+  },
+  {
+   "id": "moonshot-block4-block5/open-7",
+   "question": "7 in 24 at block 4 (O O F F O F).",
+   "worth": 0.1112,
+   "first_experiment": "Joint search over the top and the shared content in gl14; then distance 3 and below; then the finite-field pipeline. Screen other orders and configurations with pair.py and one65.py first.",
+   "programs": [
+    "programs/seven-in-23-gl14-rank-bounds/"
+   ]
+  },
+  {
+   "id": "moonshot-block4-block5/open-8",
+   "question": "s1501 at block 5 (2 in 8).",
+   "worth": 0.1386,
+   "first_experiment": "Split V4 by the Fourier characters each cycle uses, work modulo p = 1 mod 8, run the three-step one-shot test on each piece with Singular.",
+   "programs": [
+    "programs/block5-ball-test/systems/"
+   ]
+  },
+  {
+   "id": "moonshot-block4-block5/open-9",
+   "question": "Block-5 2 in 7 and 2 in 8 beyond the shapes tried (multi-term trunk/merge/starts; E5, E7, E12, H; cycle-orbit readouts; z-cover designs).",
+   "worth": 0.2216,
+   "first_experiment": "Run z.list through batch.sh with peel2.py, then test every surviving cycle orbit's readout for invertibility.",
+   "programs": [
+    "programs/block5-sparse-designs/"
+   ]
+  },
+  {
+   "id": "moonshot-block4-block5/open-10",
+   "question": "Results relied on that no skeptic has checked: the first wave-5 session's single-term exclusion and 1,216 skeletons; Lemma F; s1302's rank test; s1503, s1407-s1409.",
+   "worth": null,
+   "first_experiment": "A first skeptic for each.",
+   "programs": []
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/hook-ratio-640/",
+   "language": "python+C",
+   "shows": "hook values 27,456 and 68,320 (the 640 room)",
+   "command": "cc -O2 -o rankp rankp.c; HOOKK=8 CHIS=0 python3 chirank.py d1,d3",
+   "time": "about a minute per block",
+   "memory": "under 3 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/order-3-two-piece-separation/",
+   "language": "python",
+   "shows": "the two-piece order-3 separation",
+   "command": "python3 cex.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/order-3-halving-end-control/",
+   "language": "python+C",
+   "shows": "the 8-move order-3 halving-end program",
+   "command": "cc -O2 -shared -fPIC -o libmp_mac.so mp.c; python3 verify_ctl.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/symmetric-2-in-7-dilemma/",
+   "language": "python",
+   "shows": "the cycle lemma and the sigma separation in Z_n",
+   "command": "python3 cyclelemma.py",
+   "time": "under a second",
+   "memory": "under 1 GB",
+   "needs": [
+    "sympy",
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/singer-template-separators/",
+   "language": "python",
+   "shows": "smallest odd-order separators",
+   "command": "python3 sep3.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/dual-polar-model-and-theorem-A/",
+   "language": "python+C",
+   "shows": "exact block-4 model, its check, the selective-advance census",
+   "command": "python3 selective_sp.py; python3 check_model.py; (skeptic) python3 vcensus.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/shape-R-exact-test/",
+   "language": "python+C",
+   "shows": "shape R exact test, families, Theorem R check",
+   "command": "python3 ctl.py 1 3; python3 theoremR_check.py A 101 40",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "partly"
+  },
+  {
+   "path": "programs/two-in-seven-prefix-end-tests/",
+   "language": "python+C",
+   "shows": "the 1,261 prefixes and Criteria 0 and D, Lemma P",
+   "command": "python3 sigma0.py prefixes/all_prefixes.jsonl out.jsonl",
+   "time": "13 seconds (Criterion 0); hours (the rest)",
+   "memory": "under 1 GB (Criterion 0)",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "Criterion 0"
+  },
+  {
+   "path": "programs/shared-ends-3-in-10-4-in-13/",
+   "language": "python",
+   "shows": "classification of shared ends over abelian ratio groups",
+   "command": "python3 classify.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/one-shared-move-exact-decisions/",
+   "language": "python+C+Singular",
+   "shows": "f = 2 test, skeleton builders, Singular systems",
+   "command": "python3 exact_small.py 3 711 3000 sing; Singular -q sing/<file>.sing",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy",
+    "scipy",
+    "Singular"
+   ],
+   "rerun_2026_10_19": "systems regenerated"
+  },
+  {
+   "path": "programs/theorem-P-frame-check/",
+   "language": "python",
+   "shows": "exhaustive check of Theorem P geometry",
+   "command": "python3 myframes.py",
+   "time": "14 seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/seven-in-23-and-8-in-26-blueprints/",
+   "language": "python",
+   "shows": "blueprint searches and the skeptics' rebuilds",
+   "command": "python3 skeptic-wave5/own.py 0 z7 0; python3 skeptic-wave5/own.py 0 z2 0",
+   "time": "seconds; about 8 minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "skeptic modes z7, z2"
+  },
+  {
+   "path": "programs/seven-in-23-gl14-rank-bounds/",
+   "language": "python",
+   "shows": "gl14 decompositions and rank bounds",
+   "command": "python3 pair.py dec_s21_gl14.npz p 0 d4 all; python3 one65.py dec_s21_gl14.npz 1 all30 1 20",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/block5-butterfly-census/",
+   "language": "python",
+   "shows": "census behind Theorem W3",
+   "command": "python3 census_sp.py 60 1",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/block5-two-branch-census/",
+   "language": "python",
+   "shows": "three middle frames",
+   "command": "python3 v_census.py 1",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_2026_10_19": "yes"
+  },
+  {
+   "path": "programs/block5-sparse-designs/",
+   "language": "python",
+   "shows": "block-5 designs, peel2.py, layer-4 sets, ball tests",
+   "command": "see README",
+   "time": "minutes to hours",
+   "memory": "up to several GB",
+   "needs": [
+    "numpy",
+    "python-flint",
+    "sympy",
+    "Singular",
+    "msolve"
+   ],
+   "rerun_2026_10_19": "no"
+  },
+  {
+   "path": "programs/block5-ball-test/",
+   "language": "python+Singular+msolve",
+   "shows": "radius-2 ball systems and verdicts; open s1501 systems",
+   "command": "Singular -q systems/<file>.sing",
+   "time": "seconds (inconsistent systems)",
+   "memory": "under 1 GB",
+   "needs": [
+    "Singular",
+    "msolve"
+   ],
+   "rerun_2026_10_19": "systems regenerated"
+  },
+  {
+   "path": "programs/track-code/",
+   "language": "python",
+   "shows": "code of the remaining tracks, as it ran",
+   "command": "see each script",
+   "time": "varies",
+   "memory": "varies",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "no"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+m=4 n=1 W=4 M=15: deletion failures 0, tight forms 56, live directions 15, max tight clique (virtual) 15, bound Wn = 4
+VERDICT: EXCLUDED (tight clique)
+m=4 n=15 W=4 M=15: deletion failures 0, tight forms 0, live directions 0, max tight clique (virtual) 0, bound Wn = 60
+VERDICT: not excluded
+m=4 n=15 W=4 M=16: deletion failures 0, tight forms 0, live directions 0, max tight clique (virtual) 0, bound Wn = 60
+VERDICT: not excluded
+m=4 n=5 W=4 M=15: deletion failures 0, tight forms 5, live directions 15, max tight clique (virtual) 20, bound Wn = 20
+VERDICT: not excluded
+m=4 n=3 W=4 M=15: deletion failures 0, tight forms 21, live directions 12, max tight clique (virtual) 12, bound Wn = 12
+VERDICT: not excluded

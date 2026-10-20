@@ -1,0 +1,223 @@
+[timing lock] waiting for timing lock 06:15:23
+[timing lock] got lock 06:15:58; load: { 69.71 74.81 69.22 }
+# numpy 2.5.4 scipy 1.18.1 fc64 lib wave-15/av-1/libfc64.dylib load (69.7119140625, 74.80908203125, 69.21728515625)
+CHECK N=1000000 M=3 same c128 fc_sme   rel err vs np 2.90e-16 PASS
+CHECK N=1000000 M=3 same c128 np       rel err vs np 0.00e+00 PASS
+CHECK N=1000000 M=3 same c128 sp_auto  rel err vs np 0.00e+00 PASS
+CHECK N=1000000 M=3 same c128 sp_oa    rel err vs np 5.68e-16 PASS
+CHECK N=1000000 M=3 same c128 sp_fft   rel err vs np 9.22e-16 PASS
+rep  0 N=1000000 M=3 same c128 fc_sme       0.6199
+rep  0 N=1000000 M=3 same c128 np           3.7679
+rep  0 N=1000000 M=3 same c128 sp_auto      4.1698
+rep  0 N=1000000 M=3 same c128 sp_oa        9.8603
+rep  0 N=1000000 M=3 same c128 sp_fft      28.3101
+rep  1 N=1000000 M=3 same c128 np           3.8204
+rep  1 N=1000000 M=3 same c128 sp_auto      4.2306
+rep  1 N=1000000 M=3 same c128 sp_oa        9.9515
+rep  1 N=1000000 M=3 same c128 sp_fft      28.8150
+rep  1 N=1000000 M=3 same c128 fc_sme       0.6109
+rep  2 N=1000000 M=3 same c128 sp_auto      4.1181
+rep  2 N=1000000 M=3 same c128 sp_oa       10.0322
+rep  2 N=1000000 M=3 same c128 sp_fft      28.7646
+rep  2 N=1000000 M=3 same c128 fc_sme       0.6276
+rep  2 N=1000000 M=3 same c128 np           4.0462
+rep  3 N=1000000 M=3 same c128 sp_oa        9.8963
+rep  3 N=1000000 M=3 same c128 sp_fft      28.2266
+rep  3 N=1000000 M=3 same c128 fc_sme       0.7200
+rep  3 N=1000000 M=3 same c128 np           4.2488
+rep  3 N=1000000 M=3 same c128 sp_auto      4.2391
+rep  4 N=1000000 M=3 same c128 sp_fft      28.4999
+rep  4 N=1000000 M=3 same c128 fc_sme       0.6071
+rep  4 N=1000000 M=3 same c128 np           3.7772
+rep  4 N=1000000 M=3 same c128 sp_auto      4.2274
+rep  4 N=1000000 M=3 same c128 sp_oa        9.9889
+rep  5 N=1000000 M=3 same c128 fc_sme       0.6655
+rep  5 N=1000000 M=3 same c128 np           4.0579
+rep  5 N=1000000 M=3 same c128 sp_auto      4.1179
+rep  5 N=1000000 M=3 same c128 sp_oa        9.7539
+rep  5 N=1000000 M=3 same c128 sp_fft      28.3101
+rep  6 N=1000000 M=3 same c128 np           3.8980
+rep  6 N=1000000 M=3 same c128 sp_auto      4.1517
+rep  6 N=1000000 M=3 same c128 sp_oa        9.7000
+rep  6 N=1000000 M=3 same c128 sp_fft      28.1055
+rep  6 N=1000000 M=3 same c128 fc_sme       0.6904
+rep  7 N=1000000 M=3 same c128 sp_auto      4.1831
+rep  7 N=1000000 M=3 same c128 sp_oa        9.8562
+rep  7 N=1000000 M=3 same c128 sp_fft      29.1439
+rep  7 N=1000000 M=3 same c128 fc_sme       0.6481
+rep  7 N=1000000 M=3 same c128 np           3.9543
+rep  8 N=1000000 M=3 same c128 sp_oa       10.1558
+rep  8 N=1000000 M=3 same c128 sp_fft      30.1976
+rep  8 N=1000000 M=3 same c128 fc_sme       0.6491
+rep  8 N=1000000 M=3 same c128 np           3.9353
+rep  8 N=1000000 M=3 same c128 sp_auto      4.2115
+RESULT N=1000000 M=3 same c128 fc_sme   best     0.6071 median     0.6481 ns/output (calls/rep 307)
+RESULT N=1000000 M=3 same c128 np       best     3.7679 median     3.9353 ns/output (calls/rep 59)
+RESULT N=1000000 M=3 same c128 sp_auto  best     4.1179 median     4.1831 ns/output (calls/rep 53)
+RESULT N=1000000 M=3 same c128 sp_oa    best     9.7000 median     9.8963 ns/output (calls/rep 23)
+RESULT N=1000000 M=3 same c128 sp_fft   best    28.1055 median    28.4999 ns/output (calls/rep 8)
+CHECK N=1000000 M=33 same c128 fc_sme   rel err vs np 6.56e-16 PASS
+CHECK N=1000000 M=33 same c128 np       rel err vs np 0.00e+00 PASS
+CHECK N=1000000 M=33 same c128 sp_auto  rel err vs np 0.00e+00 PASS
+CHECK N=1000000 M=33 same c128 sp_oa    rel err vs np 5.25e-16 PASS
+CHECK N=1000000 M=33 same c128 sp_fft   rel err vs np 7.20e-16 PASS
+rep  0 N=1000000 M=33 same c128 fc_sme       1.1185
+rep  0 N=1000000 M=33 same c128 np           9.5457
+rep  0 N=1000000 M=33 same c128 sp_auto      9.6373
+rep  0 N=1000000 M=33 same c128 sp_oa        8.9527
+rep  0 N=1000000 M=33 same c128 sp_fft      28.5860
+rep  1 N=1000000 M=33 same c128 np           9.5275
+rep  1 N=1000000 M=33 same c128 sp_auto      9.6405
+rep  1 N=1000000 M=33 same c128 sp_oa        9.3239
+rep  1 N=1000000 M=33 same c128 sp_fft      29.2670
+rep  1 N=1000000 M=33 same c128 fc_sme       1.1299
+rep  2 N=1000000 M=33 same c128 sp_auto      9.6320
+rep  2 N=1000000 M=33 same c128 sp_oa        9.2130
+rep  2 N=1000000 M=33 same c128 sp_fft      29.2823
+rep  2 N=1000000 M=33 same c128 fc_sme       1.1660
+rep  2 N=1000000 M=33 same c128 np           9.5219
+rep  3 N=1000000 M=33 same c128 sp_oa        9.2242
+rep  3 N=1000000 M=33 same c128 sp_fft      29.3754
+rep  3 N=1000000 M=33 same c128 fc_sme       1.1105
+rep  3 N=1000000 M=33 same c128 np           9.6284
+rep  3 N=1000000 M=33 same c128 sp_auto      9.6326
+rep  4 N=1000000 M=33 same c128 sp_fft      29.2900
+rep  4 N=1000000 M=33 same c128 fc_sme       1.1098
+rep  4 N=1000000 M=33 same c128 np           9.5957
+rep  4 N=1000000 M=33 same c128 sp_auto      9.6716
+rep  4 N=1000000 M=33 same c128 sp_oa        9.4150
+rep  5 N=1000000 M=33 same c128 fc_sme       1.0727
+rep  5 N=1000000 M=33 same c128 np           9.5566
+rep  5 N=1000000 M=33 same c128 sp_auto      9.5242
+rep  5 N=1000000 M=33 same c128 sp_oa        9.3954
+rep  5 N=1000000 M=33 same c128 sp_fft      28.7406
+rep  6 N=1000000 M=33 same c128 np           9.5516
+rep  6 N=1000000 M=33 same c128 sp_auto      9.5189
+rep  6 N=1000000 M=33 same c128 sp_oa        9.2553
+rep  6 N=1000000 M=33 same c128 sp_fft      29.0280
+rep  6 N=1000000 M=33 same c128 fc_sme       1.0927
+rep  7 N=1000000 M=33 same c128 sp_auto      9.5080
+rep  7 N=1000000 M=33 same c128 sp_oa        9.3031
+rep  7 N=1000000 M=33 same c128 sp_fft      30.5626
+rep  7 N=1000000 M=33 same c128 fc_sme       1.0841
+rep  7 N=1000000 M=33 same c128 np           9.5414
+rep  8 N=1000000 M=33 same c128 sp_oa        9.3543
+rep  8 N=1000000 M=33 same c128 sp_fft      29.2200
+rep  8 N=1000000 M=33 same c128 fc_sme       1.0602
+rep  8 N=1000000 M=33 same c128 np           9.4473
+rep  8 N=1000000 M=33 same c128 sp_auto      9.4753
+RESULT N=1000000 M=33 same c128 fc_sme   best     1.0602 median     1.1098 ns/output (calls/rep 205)
+RESULT N=1000000 M=33 same c128 np       best     9.4473 median     9.5457 ns/output (calls/rep 24)
+RESULT N=1000000 M=33 same c128 sp_auto  best     9.4753 median     9.6320 ns/output (calls/rep 23)
+RESULT N=1000000 M=33 same c128 sp_oa    best     8.9527 median     9.3031 ns/output (calls/rep 23)
+RESULT N=1000000 M=33 same c128 sp_fft   best    28.5860 median    29.2670 ns/output (calls/rep 7)
+CHECK N=1000000 M=257 same c128 fc_sme   rel err vs oa 1.81e-15 PASS
+CHECK N=1000000 M=257 same c128 np       rel err vs oa 7.52e-16 PASS
+CHECK N=1000000 M=257 same c128 sp_auto  rel err vs oa 7.52e-16 PASS
+CHECK N=1000000 M=257 same c128 sp_oa    rel err vs oa 0.00e+00 PASS
+CHECK N=1000000 M=257 same c128 sp_fft   rel err vs oa 8.33e-16 PASS
+rep  0 N=1000000 M=257 same c128 fc_sme       4.7682
+rep  0 N=1000000 M=257 same c128 np          64.0753
+rep  0 N=1000000 M=257 same c128 sp_auto     63.9240
+rep  0 N=1000000 M=257 same c128 sp_oa       11.4575
+rep  0 N=1000000 M=257 same c128 sp_fft      24.8438
+rep  1 N=1000000 M=257 same c128 np          63.2644
+rep  1 N=1000000 M=257 same c128 sp_auto     63.5784
+rep  1 N=1000000 M=257 same c128 sp_oa       11.7167
+rep  1 N=1000000 M=257 same c128 sp_fft      24.6901
+rep  1 N=1000000 M=257 same c128 fc_sme       4.6488
+rep  2 N=1000000 M=257 same c128 sp_auto     63.8983
+rep  2 N=1000000 M=257 same c128 sp_oa       11.5163
+rep  2 N=1000000 M=257 same c128 sp_fft      25.6658
+rep  2 N=1000000 M=257 same c128 fc_sme       4.7110
+rep  2 N=1000000 M=257 same c128 np          63.1476
+rep  3 N=1000000 M=257 same c128 sp_oa       11.4569
+rep  3 N=1000000 M=257 same c128 sp_fft      24.8256
+rep  3 N=1000000 M=257 same c128 fc_sme       4.6651
+rep  3 N=1000000 M=257 same c128 np          63.9185
+rep  3 N=1000000 M=257 same c128 sp_auto     63.7695
+rep  4 N=1000000 M=257 same c128 sp_fft      25.8922
+rep  4 N=1000000 M=257 same c128 fc_sme       4.7747
+rep  4 N=1000000 M=257 same c128 np          63.7998
+rep  4 N=1000000 M=257 same c128 sp_auto     63.7209
+rep  4 N=1000000 M=257 same c128 sp_oa       11.7704
+rep  5 N=1000000 M=257 same c128 fc_sme       4.6554
+rep  5 N=1000000 M=257 same c128 np          63.5854
+rep  5 N=1000000 M=257 same c128 sp_auto     63.1388
+rep  5 N=1000000 M=257 same c128 sp_oa       12.1513
+rep  5 N=1000000 M=257 same c128 sp_fft      26.2140
+rep  6 N=1000000 M=257 same c128 np          63.3023
+rep  6 N=1000000 M=257 same c128 sp_auto     63.0199
+rep  6 N=1000000 M=257 same c128 sp_oa       11.4852
+rep  6 N=1000000 M=257 same c128 sp_fft      24.9839
+rep  6 N=1000000 M=257 same c128 fc_sme       4.6825
+rep  7 N=1000000 M=257 same c128 sp_auto     62.5975
+rep  7 N=1000000 M=257 same c128 sp_oa       11.3222
+rep  7 N=1000000 M=257 same c128 sp_fft      24.4905
+rep  7 N=1000000 M=257 same c128 fc_sme       4.6173
+rep  7 N=1000000 M=257 same c128 np          64.4471
+rep  8 N=1000000 M=257 same c128 sp_oa       11.9892
+rep  8 N=1000000 M=257 same c128 sp_fft      25.3080
+rep  8 N=1000000 M=257 same c128 fc_sme       4.6659
+rep  8 N=1000000 M=257 same c128 np          63.8179
+rep  8 N=1000000 M=257 same c128 sp_auto     64.0894
+RESULT N=1000000 M=257 same c128 fc_sme   best     4.6173 median     4.6659 ns/output (calls/rep 48)
+RESULT N=1000000 M=257 same c128 np       best    63.1476 median    63.7998 ns/output (calls/rep 4)
+RESULT N=1000000 M=257 same c128 sp_auto  best    62.5975 median    63.7209 ns/output (calls/rep 4)
+RESULT N=1000000 M=257 same c128 sp_oa    best    11.3222 median    11.5163 ns/output (calls/rep 20)
+RESULT N=1000000 M=257 same c128 sp_fft   best    24.4905 median    24.9839 ns/output (calls/rep 9)
+CHECK N=1000000 M=1025 same c128 fc_sme   rel err vs oa 2.92e-15 PASS
+CHECK N=1000000 M=1025 same c128 np       rel err vs oa 7.13e-16 PASS
+CHECK N=1000000 M=1025 same c128 sp_auto  rel err vs oa 7.46e-16 PASS
+CHECK N=1000000 M=1025 same c128 sp_oa    rel err vs oa 0.00e+00 PASS
+CHECK N=1000000 M=1025 same c128 sp_fft   rel err vs oa 7.46e-16 PASS
+rep  0 N=1000000 M=1025 same c128 fc_sme      16.9792
+rep  0 N=1000000 M=1025 same c128 np         245.9736
+rep  0 N=1000000 M=1025 same c128 sp_auto     25.6233
+rep  0 N=1000000 M=1025 same c128 sp_oa       19.4427
+rep  0 N=1000000 M=1025 same c128 sp_fft      26.4086
+rep  1 N=1000000 M=1025 same c128 np         245.6180
+rep  1 N=1000000 M=1025 same c128 sp_auto     25.3926
+rep  1 N=1000000 M=1025 same c128 sp_oa       19.0534
+rep  1 N=1000000 M=1025 same c128 sp_fft      24.9686
+rep  1 N=1000000 M=1025 same c128 fc_sme      17.0410
+rep  2 N=1000000 M=1025 same c128 sp_auto     25.1234
+rep  2 N=1000000 M=1025 same c128 sp_oa       18.8165
+rep  2 N=1000000 M=1025 same c128 sp_fft      24.6385
+rep  2 N=1000000 M=1025 same c128 fc_sme      16.9378
+rep  2 N=1000000 M=1025 same c128 np         244.2191
+rep  3 N=1000000 M=1025 same c128 sp_oa       18.6421
+rep  3 N=1000000 M=1025 same c128 sp_fft      24.6204
+rep  3 N=1000000 M=1025 same c128 fc_sme      16.9728
+rep  3 N=1000000 M=1025 same c128 np         244.6478
+rep  3 N=1000000 M=1025 same c128 sp_auto     24.9619
+rep  4 N=1000000 M=1025 same c128 sp_fft      26.6107
+rep  4 N=1000000 M=1025 same c128 fc_sme      17.0303
+rep  4 N=1000000 M=1025 same c128 np         243.9626
+rep  4 N=1000000 M=1025 same c128 sp_auto     25.2062
+rep  4 N=1000000 M=1025 same c128 sp_oa       18.6857
+rep  5 N=1000000 M=1025 same c128 fc_sme      16.9000
+rep  5 N=1000000 M=1025 same c128 np         244.5925
+rep  5 N=1000000 M=1025 same c128 sp_auto     24.7733
+rep  5 N=1000000 M=1025 same c128 sp_oa       18.6375
+rep  5 N=1000000 M=1025 same c128 sp_fft      24.7223
+rep  6 N=1000000 M=1025 same c128 np         244.0851
+rep  6 N=1000000 M=1025 same c128 sp_auto     24.6089
+rep  6 N=1000000 M=1025 same c128 sp_oa       18.6614
+rep  6 N=1000000 M=1025 same c128 sp_fft      24.9686
+rep  6 N=1000000 M=1025 same c128 fc_sme      16.9395
+rep  7 N=1000000 M=1025 same c128 sp_auto     24.7690
+rep  7 N=1000000 M=1025 same c128 sp_oa       18.4398
+rep  7 N=1000000 M=1025 same c128 sp_fft      24.9905
+rep  7 N=1000000 M=1025 same c128 fc_sme      17.0175
+rep  7 N=1000000 M=1025 same c128 np         245.0627
+rep  8 N=1000000 M=1025 same c128 sp_oa       18.7628
+rep  8 N=1000000 M=1025 same c128 sp_fft      24.4724
+rep  8 N=1000000 M=1025 same c128 fc_sme      16.8913
+rep  8 N=1000000 M=1025 same c128 np         249.1918
+rep  8 N=1000000 M=1025 same c128 sp_auto     24.6505
+RESULT N=1000000 M=1025 same c128 fc_sme   best    16.8913 median    16.9728 ns/output (calls/rep 13)
+RESULT N=1000000 M=1025 same c128 np       best   243.9626 median   244.6478 ns/output (calls/rep 1)
+RESULT N=1000000 M=1025 same c128 sp_auto  best    24.6089 median    24.9619 ns/output (calls/rep 9)
+RESULT N=1000000 M=1025 same c128 sp_oa    best    18.4398 median    18.6857 ns/output (calls/rep 12)
+RESULT N=1000000 M=1025 same c128 sp_fft   best    24.4724 median    24.9686 ns/output (calls/rep 9)

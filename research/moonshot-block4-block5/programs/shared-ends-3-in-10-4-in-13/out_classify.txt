@@ -1,0 +1,46 @@
+=== W = 3, L = 4
+rationed cores (minimal covers of the pairs of rows by S-sets of size <= 2), up to row permutation: 3
+    [[0], [1], [2]]
+    [[0], [1], [2, 3]]
+    [[0], [1, 2], [1, 3], [2, 3]]
+  Z2 (one sign)                          min : orbits 2 sizes [1, 1]: valid assignments 50, classes up to S_L x Aut(R): 6
+  Z2 (one sign)                          rat2: orbits 2 sizes [1, 1]: valid assignments 0, classes up to S_L x Aut(R): 0
+  Z2^2 (signs)                           min : orbits 4 sizes [1, 1, 1, 1]: valid assignments 35714, classes up to S_L x Aut(R): 426
+  Z2^2 (signs)                           rat2: orbits 4 sizes [1, 1, 1, 1]: valid assignments 2976, classes up to S_L x Aut(R): 40
+  Z2^3 (signs)                           min : 8 orbits, 2562890625 assignments (not enumerated)
+  Z2^3 (signs)                           rat2: 8 orbits, 2562890625 assignments (not enumerated)
+  Z3 (order 3 alone)                     min : orbits 2 sizes [1, 2]: valid assignments 50, classes up to S_L x Aut(R): 6
+  Z3 (order 3 alone)                     rat2: orbits 2 sizes [1, 2]: valid assignments 0, classes up to S_L x Aut(R): 0
+  Z6 = Z3 x Z2 (order 3 x one sign)      min : orbits 4 sizes [1, 1, 2, 2]: valid assignments 35714, classes up to S_L x Aut(R): 1931
+  Z6 = Z3 x Z2 (order 3 x one sign)      rat2: orbits 4 sizes [1, 1, 2, 2]: valid assignments 2976, classes up to S_L x Aut(R): 157
+  Z3 x Z2^2 (order 3 x signs)            min : 8 orbits, 2562890625 assignments (not enumerated)
+  Z3 x Z2^2 (order 3 x signs)            rat2: 8 orbits, 2562890625 assignments (not enumerated)
+  Z4 (order 4)                           min : orbits 3 sizes [1, 2, 1]: valid assignments 1680, classes up to S_L x Aut(R): 119
+  Z4 (order 4)                           rat2: orbits 3 sizes [1, 2, 1]: valid assignments 60, classes up to S_L x Aut(R): 4
+      class [[0], [1], [2]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 1, 'terms_per_entry': [[4, 0, 0], [4, 4, 0], [0, 4, 0], [0, 0, 1]], 'denominators': [1, 4]}
+      class [[0], [1], [2, 3]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 2, 'terms_per_entry': [[2, 4, 0], [4, 0, 4], [4, 4, 0], [4, 0, 4]], 'denominators': [2, 4]}
+      class [[0], [1, 2], [3]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 2, 'terms_per_entry': [[4, 2, 0], [4, 4, 0], [2, 4, 4], [0, 0, 4]], 'denominators': [2, 4]}
+      class [[0, 1], [2], [3]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 2, 'terms_per_entry': [[1, 0, 0], [4, 4, 0], [0, 4, 4], [0, 0, 4]], 'denominators': [1, 4]}
+  Z4 x Z2 (order 4 x sign)               min : 6 orbits, 11390625 assignments (not enumerated)
+  Z4 x Z2 (order 4 x sign)               rat2: 6 orbits, 11390625 assignments (not enumerated)
+=== W = 4, L = 5
+rationed cores (minimal covers of the pairs of rows by S-sets of size <= 2), up to row permutation: 3
+    [[0], [1], [2], [3]]
+    [[0], [1], [2], [3, 4]]
+    [[0], [1], [2, 3], [2, 4], [3, 4]]
+  Z2 (one sign)                          rat2: orbits 2 sizes [1, 1]: valid assignments 0, classes up to S_L x Aut(R): 0
+  Z2^2 (signs)                           rat2: orbits 4 sizes [1, 1, 1, 1]: valid assignments 360, classes up to S_L x Aut(R): 3
+      class [[0], [1], [2], [3]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 1, 'terms_per_entry': [[4, 0, 0, 0], [4, 2, 0, 0], [0, 2, 4, 0], [0, 0, 4, 0], [0, 0, 0, 1]], 'denominators': [1, 2, 4]}
+      class [[0], [1], [2], [3, 4]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 2, 'terms_per_entry': [[2, 4, 0, 0], [4, 4, 4, 0], [0, 2, 0, 4], [4, 0, 4, 0], [4, 0, 0, 4]], 'denominators': [2, 4]}
+      class [[0, 1], [2], [3], [4]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 2, 'terms_per_entry': [[1, 0, 0, 0], [4, 4, 0, 0], [0, 4, 2, 0], [0, 0, 2, 4], [0, 0, 0, 4]], 'denominators': [1, 2, 4]}
+  Z2^3 (signs)                           rat2: 8 orbits, 852891037441 assignments (not enumerated)
+  Z3 (order 3 alone)                     rat2: orbits 2 sizes [1, 2]: valid assignments 0, classes up to S_L x Aut(R): 0
+  Z6 = Z3 x Z2 (order 3 x one sign)      rat2: orbits 4 sizes [1, 1, 2, 2]: valid assignments 360, classes up to S_L x Aut(R): 5
+      class [[0], [1], [2], [3]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 1, 'terms_per_entry': [[6, 0, 0, 0], [6, 3, 0, 0], [0, 3, 6, 0], [0, 0, 6, 0], [0, 0, 0, 1]], 'denominators': [1, 3, 6]}
+      class [[0], [1], [2], [3, 4]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 2, 'terms_per_entry': [[4, 6, 0, 0], [6, 6, 6, 0], [0, 3, 0, 6], [6, 0, 6, 0], [6, 0, 0, 6]], 'denominators': [2, 3, 6]}
+      class [[0], [1], [2, 3], [4]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 2, 'terms_per_entry': [[2, 6, 0, 0], [6, 6, 6, 0], [6, 3, 6, 0], [6, 0, 3, 6], [0, 0, 0, 6]], 'denominators': [2, 3, 6]}
+      class [[0], [1, 2], [3], [4]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 2, 'terms_per_entry': [[3, 6, 0, 0], [3, 3, 0, 0], [6, 6, 3, 0], [0, 0, 3, 6], [0, 0, 0, 6]], 'denominators': [3, 6]}
+      class [[0, 1], [2], [3], [4]]: {'separates': True, 'some_W_subset_basis': False, 'some_pair_extends': False, 'unimodular_rows': 2, 'terms_per_entry': [[1, 0, 0, 0], [6, 6, 0, 0], [0, 6, 3, 0], [0, 0, 3, 6], [0, 0, 0, 6]], 'denominators': [1, 3, 6]}
+  Z3 x Z2^2 (order 3 x signs)            rat2: 8 orbits, 852891037441 assignments (not enumerated)
+  Z4 (order 4)                           rat2: orbits 3 sizes [1, 2, 1]: valid assignments 0, classes up to S_L x Aut(R): 0
+  Z4 x Z2 (order 4 x sign)               rat2: 6 orbits, 887503681 assignments (not enumerated)

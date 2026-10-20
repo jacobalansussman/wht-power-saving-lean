@@ -1,0 +1,34 @@
+START Work.XHost.HRoles 20:55:03
+'OAI.PowerSaving.XHost.ghliftQ0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.ghliftQ1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.ghliftQ2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.ghliftQ3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.ghliftQ4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.ghliftQ5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.ghliftQ6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.ghliftQ7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.ghliftQ8' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean -DautoImplicit=false -R . -o /content/work/vh2/build/Work/XHost/HRoles.olean -i /content/work/vh2/build/Work/XHost/HRoles.ilean Work/XHost/HRoles.lean"
+	User time (seconds): 18.24
+	System time (seconds): 10.32
+	Percent of CPU this job got: 25%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:51.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6747952
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 92498
+	Minor (reclaiming a frame) page faults: 128601
+	Voluntary context switches: 112614
+	Involuntary context switches: 529
+	Swaps: 0
+	File system inputs: 11225976
+	File system outputs: 2600
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+EXIT 0 Work.XHost.HRoles 20:56:55

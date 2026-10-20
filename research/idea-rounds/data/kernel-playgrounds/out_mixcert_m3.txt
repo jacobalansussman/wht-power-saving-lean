@@ -1,0 +1,4 @@
+H VS a=1 b=2 dim=288 #sig=4: best ratio 2.1667 cap=48 dem=104 dimY=168 Y=[(((0, 1), 2), ((1, 0), 1))]
+L VS a=1 b=2 dim=288 #sig=4: best ratio 1.7500 cap=48 dem=84 dimY=168 Y=[(((0, 1), 2), ((1, 0), 1))]
+H VS a=1 b=3 dim=960 #sig=7: best ratio 2.3333 cap=192 dem=448 dimY=448 Y=[(((0, 1), 2), ((1, 1), 1)), (((0, 1), 3), ((1, 0), 1))]
+L VS a=1 b=3 dim=960 #sig=7: best ratio 1.8214 cap=56 dem=102 dimY=120 Y=[(((0, 1), 1), ((1, 2), 1)), (((0, 3), 1), ((1, 0), 1)), (((1, 3), 1),)]

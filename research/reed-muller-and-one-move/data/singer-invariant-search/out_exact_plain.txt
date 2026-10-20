@@ -1,0 +1,13 @@
+m=3 sd plain (orthonormal basis): moves 3, fibres 9, fibres violated (exact) 0
+m=3 sd plain minus one move: moves 2, fibres 9, fibres violated (exact) 9
+m=3 sd non-orthonormal basis: moves 3, fibres 9, fibres violated (exact) 9
+m=3 poly plain (orthonormal basis): moves 3, fibres 9, fibres violated (exact) 0
+m=3 poly plain minus one move: moves 2, fibres 9, fibres violated (exact) 9
+m=3 poly non-orthonormal basis: moves 3, fibres 9, fibres violated (exact) 9
+m=4 sd plain (orthonormal basis): moves 4, fibres 71, fibres violated (exact) 0
+m=4 sd plain minus one move: moves 3, fibres 71, fibres violated (exact) 71
+m=4 sd non-orthonormal basis: moves 4, fibres 71, fibres violated (exact) 71
+m=4 poly plain (orthonormal basis): moves 4, fibres 71, fibres violated (exact) 0
+m=4 poly plain minus one move: moves 3, fibres 71, fibres violated (exact) 71
+m=4 poly non-orthonormal basis: moves 4, fibres 71, fibres violated (exact) 71
+ALL AS EXPECTED

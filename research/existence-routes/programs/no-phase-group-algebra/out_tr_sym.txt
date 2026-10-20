@@ -1,0 +1,8 @@
+orbit 0: size 1, rank 0, alternating
+orbit 1: size 15, rank 1, non-alternating
+orbit 2: size 35, rank 2, alternating
+orbit 3: size 105, rank 2, non-alternating
+orbit 4: size 420, rank 3, non-alternating
+orbit 5: size 28, rank 4, alternating
+orbit 6: size 420, rank 4, non-alternating
+best ratio f(I)/f(zz^T) over unions of orbits: 1.214286 (mask 0b1111, f(I) = 136, f(move) = 112); plain needs 4

@@ -1,0 +1,4 @@
+block 5, W=8, 40 draws (seed 7): {'no tight form': 37, 'C': 3}; criterion 8.8 agrees with direct tight count in 40 of 40 deletion-passing draws
+block 5, W=9, 40 draws (seed 7): {'no tight form': 21, 'Z': 16, 'deletion': 1, 'C': 2}; criterion 8.8 agrees with direct tight count in 39 of 39 deletion-passing draws
+block 5, W=10, 40 draws (seed 7): {'no tight form': 10, 'Z': 20, 'C': 7, 'deletion': 3}; criterion 8.8 agrees with direct tight count in 37 of 37 deletion-passing draws
+block 5, W=10, 200 draws (seed 11): {'no tight form': 44, 'Z': 102, 'deletion': 26, 'C': 28}; criterion 8.8 agrees with direct tight count in 174 of 174 deletion-passing draws

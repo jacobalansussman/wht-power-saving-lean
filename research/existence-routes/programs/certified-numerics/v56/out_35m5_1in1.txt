@@ -1,0 +1,15 @@
+flags 2835, coset reps done (0.9s)
+B order 512, |B'| = 32  |B/B'| = 16
+abelianisation F_2^4
+irreducible 35-5 (lambda 14): u in X checked exactly; (30s)
+  (chi(2a) = -5): (z2a, z2b) = (-9, 27) unique among the constituents (30s)
+orbit 7 part (dim 7): commutant of P_0 has dimension 1 (exact) (48s)
+orbit 28 part (dim 28): commutant of P_0 has dimension 1 (exact) (52s)
+P_0-irreducible pieces of 35-5: [7, 28] (52s)
+piece 0 (dim 7): commutant of the P_0 generators has dimension 1 (exact) (53s)
+piece 1 (dim 28): commutant of the P_0 generators has dimension 1 (exact) (56s)
+block ranks of h (rows piece a, columns piece b): [[1, 6], [6, 22]] (56s)
+block ranks of k (rows piece a, columns piece b): [[7, 7], [7, 28]] (56s)
+block ranks of h2 (rows piece a, columns piece b): [[1, 6], [6, 22]] (56s)
+exact: need per array (k) [7, 7]  (h2) [6, 6]  cap per move [6, 6] ; targets ['k'] ; total need [7, 7]  moves needed >= [1.1667, 1.1667] (56s)
+CAPACITY BOUND VIOLATED for type 0: 1 moves x 6 < total need 7 -> NO relaxed scheme of this shape (56s)

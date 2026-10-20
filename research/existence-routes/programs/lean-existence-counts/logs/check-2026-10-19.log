@@ -1,0 +1,37 @@
+== ExLegitClosure.lean (imports Mathlib only)
+ExLegitClosure.lean:326:8: warning: declaration uses `sorry`
+ExLegitClosure.lean:330:8: warning: declaration uses `sorry`
+'OAI.PowerSaving.RAM.ExLegit.run_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.ExLegit.dft_output_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.ExLegit.zeta_mem_of_DFTProgram' depends on axioms: [propext, Classical.choice, Quot.sound]
+== ExLegit.lean (imports the engine)
+'OAI.PowerSaving.RAM.exlegit_engine_of_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.exlegit_engine_of_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.exlegit_costR_localM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.exlegit_engine_of_coeff_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.exlegit_engine_of_gcert' depends on axioms: [propext, Classical.choice, Quot.sound]
+== done
+	Command being timed: "sh ./check.sh <Shea tree at the commit named in the README>"
+	User time (seconds): 39.65
+	System time (seconds): 25.34
+	Percent of CPU this job got: 13%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 8:11.25
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6589556
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 155705
+	Minor (reclaiming a frame) page faults: 378200
+	Voluntary context switches: 195946
+	Involuntary context switches: 26510
+	Swaps: 0
+	File system inputs: 20678552
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+EXIT=0

@@ -1,0 +1,17 @@
+m=3 n=7 W=2 dirs=all: 8 distinct conjugate subgroups
+  (deletion failures, tight forms, max clique, verdict) = (0, 0, 0, 'not-excluded') x 8  bound Wn = 14
+m=3 h=[2, 4, 1] (order 3) W=2 M=7 dirs=all: deletion failures 0, tight forms 12, max clique 6, bound 6 -> not excluded
+m=3 h=[2, 1, 4] (order 2) W=2 M=7 dirs=all: deletion failures 0, tight forms 12, max clique 4, bound 4 -> not excluded
+m=3 h=[3, 2, 4] (order 2) W=2 M=7 dirs=all: deletion failures 0, tight forms 7, max clique 4, bound 4 -> not excluded
+m=3 h=[2, 4, 3] (order 7) W=2 M=7 dirs=all: deletion failures 0, tight forms 0, max clique 0, bound 14 -> not excluded
+m=3 h=[6, 4, 1] (order 7) W=2 M=7 dirs=all: deletion failures 0, tight forms 0, max clique 0, bound 14 -> not excluded
+m=4 h=[2, 4, 8, 1] (order 4) W=4 M=16 dirs=plain: deletion failures 0, tight forms 256, max clique 16, bound 16 -> not excluded
+m=4 h=[2, 4, 8, 1] (order 4) W=2 M=12 dirs=list:1,2,4,8,3,5,6,7,9,10,12,1..: deletion failures 4, tight forms 0, max clique 0, bound 8 -> EXCLUDED (deletion)
+m=4 h=[2, 1, 8, 4] (order 2) W=4 M=16 dirs=plain: deletion failures 0, tight forms 256, max clique 8, bound 8 -> not excluded
+m=4 h=[2, 1, 8, 4] (order 2) W=2 M=12 dirs=list:1,2,4,8,3,5,6,7,9,10,12,1..: deletion failures 2, tight forms 2, max clique 4, bound 4 -> EXCLUDED (deletion)
+m=4 h=[2, 4, 1, 8] (order 3) W=4 M=16 dirs=plain: deletion failures 0, tight forms 256, max clique 12, bound 12 -> not excluded
+m=4 h=[2, 4, 1, 8] (order 3) W=2 M=12 dirs=list:1,2,4,8,3,5,6,7,9,10,12,1..: deletion failures 1, tight forms 3, max clique 6, bound 6 -> EXCLUDED (deletion)
+m=4 h=[3, 2, 4, 8] (order 2) W=4 M=16 dirs=plain: deletion failures 0, tight forms 192, max clique 8, bound 8 -> not excluded
+m=4 h=[3, 2, 4, 8] (order 2) W=2 M=12 dirs=list:1,2,4,8,3,5,6,7,9,10,12,1..: deletion failures 0, tight forms 2, max clique 4, bound 4 -> not excluded
+m=4 h=[2, 4, 8, 3] (order 15) W=4 M=16 dirs=plain: deletion failures 0, tight forms 0, max clique 0, bound 60 -> not excluded
+m=4 h=[2, 4, 8, 3] (order 15) W=2 M=12 dirs=list:1,2,4,8,3,5,6,7,9,10,12,1..: deletion failures 0, tight forms 0, max clique 0, bound 30 -> not excluded

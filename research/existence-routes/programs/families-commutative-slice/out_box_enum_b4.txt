@@ -1,0 +1,6 @@
+m=4 W=4 M=15: count ranges [(1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1)]; box size 1
+  deletion-passing multisets 1; EXCLUDED by the clique test 1; survivors 0; t=0s
+m=4 W=5 M=19: count ranges [(1, 2), (1, 2), (1, 1), (1, 2), (1, 1), (1, 1), (1, 2), (1, 2), (1, 1), (1, 1), (1, 2), (1, 1), (1, 2), (1, 2), (1, 1)]; box size 256
+  deletion-passing multisets 2; EXCLUDED by the clique test 2; survivors 0; t=0s
+m=4 W=6 M=23: count ranges [(1, 3), (1, 3), (1, 2), (1, 3), (1, 2), (1, 2), (1, 3), (1, 3), (1, 2), (1, 2), (1, 3), (1, 2), (1, 3), (1, 3), (1, 2)]; box size 8.4e+05
+  deletion-passing multisets 3; EXCLUDED by the clique test 3; survivors 0; t=0s

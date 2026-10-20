@@ -1,0 +1,398 @@
+{
+ "words": [
+  {
+   "name": "Shea C588 (#588 atm3, 112 source copies, 5040 banks)",
+   "W": 12208,
+   "banks": 5040,
+   "D": 2560,
+   "rank": 888624,
+   "N": 2071832.4,
+   "N_per_data_array": 289.039,
+   "first_order": 0.0012356211636355776,
+   "a_star": "0.00123316982515",
+   "K_ours": 12331698,
+   "K_lean": 12331686,
+   "bands": {
+    "r=1": 812441.4,
+    "r=2..8": 1005638.5,
+    "r=9..32": 181626.7,
+    "r>=33": 72125.9
+   },
+   "src": "shea-src research/complex-transfer-588-596/ATTEMPT.md (H = 72 H_local + 112 H_idle + H_padding)"
+  },
+  {
+   "name": "C588 repack (5009 banks)",
+   "W": 12177,
+   "banks": 5009,
+   "D": 2560,
+   "rank": 886361,
+   "N": 2063187.3,
+   "N_per_data_array": 287.833,
+   "first_order": 0.0012407986562638065,
+   "a_star": "0.00123832924515",
+   "K_ours": 12383292,
+   "K_lean": 12383292,
+   "bands": {
+    "r=1": 805044.6,
+    "r=2..8": 1004364.9,
+    "r=9..32": 181626.7,
+    "r>=33": 72151.0
+   },
+   "src": "community/c588-repack/.../RateC588x.lean"
+  },
+  {
+   "name": "C588M (mutable sources)",
+   "W": 11200,
+   "banks": 4032,
+   "D": 2560,
+   "rank": 815040,
+   "N": 1884752.2,
+   "N_per_data_array": 262.94,
+   "first_order": 0.0013582687199311715,
+   "a_star": "0.00135526235291",
+   "K_ours": 13552623,
+   "K_lean": 13552607,
+   "bands": {
+    "r=1": 767340.1,
+    "r=2..8": 861727.8,
+    "r=9..32": 183558.5,
+    "r>=33": 72125.9
+   },
+   "src": "community/c588m/.../RateC588Mx.lean"
+  },
+  {
+   "name": "C588MHH (mutable + same-run hosting)",
+   "W": 7279,
+   "banks": 111,
+   "D": 2560,
+   "rank": 528807,
+   "N": 1626016.7,
+   "N_per_data_array": 226.844,
+   "first_order": 0.0015743995298655798,
+   "a_star": "0.00156993355133",
+   "K_ours": 15699335,
+   "K_lean": 15699306,
+   "bands": {
+    "r=1": 775028.6,
+    "r=2..8": 817154.7,
+    "r=9..32": 0.0,
+    "r>=33": 33833.4
+   },
+   "src": "community/c588mhh/.../RateC588MHHx.lean"
+  },
+  {
+   "name": "U8X (U8 word, exit frames, source copies, banks)",
+   "W": 11889,
+   "banks": 4721,
+   "D": 2560,
+   "rank": 865337,
+   "N": 2010969.0,
+   "N_per_data_array": 280.548,
+   "first_order": 0.0012730181503166984,
+   "a_star": "0.00127040373237",
+   "K_ours": 12704037,
+   "K_lean": 12704024,
+   "bands": {
+    "r=1": 821708.8,
+    "r=2..8": 935484.0,
+    "r=9..32": 181626.7,
+    "r>=33": 72149.5
+   },
+   "src": "community/u8x/.../RateU8Xx.lean"
+  },
+  {
+   "name": "U8XM (+ mutable sources, 5 centre copies)",
+   "W": 10939,
+   "banks": 3771,
+   "D": 2560,
+   "rank": 795987,
+   "N": 1841649.0,
+   "N_per_data_array": 256.926,
+   "first_order": 0.0013900585691287637,
+   "a_star": "0.00138688748720",
+   "K_ours": 13868874,
+   "K_lean": 13868857,
+   "bands": {
+    "r=1": 788655.1,
+    "r=2..8": 799214.5,
+    "r=9..32": 181653.5,
+    "r>=33": 72125.9
+   },
+   "src": "community/u8xm/.../RateU8XMx.lean"
+  },
+  {
+   "name": "U8XMHH (+ same-run hosting)",
+   "W": 7478,
+   "banks": 310,
+   "D": 2560,
+   "rank": 543334,
+   "N": 1575809.5,
+   "N_per_data_array": 219.839,
+   "first_order": 0.0016245618242513328,
+   "a_star": "0.00161977388621",
+   "K_ours": 16197738,
+   "K_lean": 16197706,
+   "bands": {
+    "r=1": 798613.2,
+    "r=2..8": 723314.2,
+    "r=9..32": 1386.7,
+    "r>=33": 52495.4
+   },
+   "src": "community/u8xmhh/.../RateU8XMHHx.lean"
+  },
+  {
+   "name": "U8X0 (no centre copies, banks)",
+   "W": 10895,
+   "banks": 3727,
+   "D": 2560,
+   "rank": 792775,
+   "N": 1833725.4,
+   "N_per_data_array": 255.821,
+   "first_order": 0.0013960650517706571,
+   "a_star": "0.00139286371753",
+   "K_ours": 13928637,
+   "K_lean": 13928619,
+   "bands": {
+    "r=1": 787110.5,
+    "r=2..8": 792846.8,
+    "r=9..32": 181626.7,
+    "r>=33": 72141.4
+   },
+   "src": "checks/wht43/bound-check/fsp-cc/out/global-U8X0/.../RateU8X0x.lean"
+  },
+  {
+   "name": "U8X0HH (no copies + hosting)",
+   "W": 7491,
+   "banks": 323,
+   "D": 2560,
+   "rank": 544283,
+   "N": 1570091.5,
+   "N_per_data_array": 219.042,
+   "first_order": 0.0016304782730462218,
+   "a_star": "0.00162565408075",
+   "K_ours": 16256540,
+   "K_lean": 16256507,
+   "bands": {
+    "r=1": 797064.4,
+    "r=2..8": 716838.6,
+    "r=9..32": 2080.0,
+    "r>=33": 54108.5
+   },
+   "src": "checks/wht43/bound-check/fsp-cc/stage-u8x0hh/.../RateU8X0HHx.lean"
+  },
+  {
+   "name": "U8X0HQ (one-pad table, term_le4) = our best",
+   "W": 7491,
+   "banks": 323,
+   "D": 2560,
+   "rank": 544283,
+   "N": 1570082.7,
+   "N_per_data_array": 219.041,
+   "first_order": 0.0016304873435239657,
+   "a_star": "0.00162566309335",
+   "K_ours": 16256630,
+   "K_lean": 16256630,
+   "bands": {
+    "r=1": 797064.4,
+    "r=2..8": 716831.4,
+    "r=9..32": 2080.0,
+    "r>=33": 54107.0
+   },
+   "src": "checks/wht43/bound-check/fsp-build/hq/lean/.../RateU8X0HQx.lean"
+  },
+  {
+   "name": "T74E (hub T74 gauge44 word, our lowering, banks)",
+   "W": 10855,
+   "banks": 3687,
+   "D": 2560,
+   "rank": 789855,
+   "N": 1819157.8,
+   "N_per_data_array": 253.789,
+   "first_order": 0.0014072446305893997,
+   "a_star": "0.00140400794216",
+   "K_ours": 14040079,
+   "K_lean": 14040061,
+   "bands": {
+    "r=1": 722856.6,
+    "r=2..8": 842524.9,
+    "r=9..32": 181650.4,
+    "r>=33": 72125.9
+   },
+   "src": "checks/wht43/bound-check/lg-a1/out/global-T74E/.../RateT74Ex.lean"
+  }
+ ],
+ "decomposition": {
+  "Shea C588 (#588 atm3, 112 source copies, 5040 banks)": {
+   "local72_rank": 498528,
+   "local72_N": 1711211.8,
+   "rest": {
+    "1": 2448,
+    "8": 5448,
+    "16": 3584,
+    "32": 3584,
+    "48": 3584
+   },
+   "rest_rank": 390096,
+   "rest_N": 360620.6,
+   "share_N_local": 0.8259,
+   "negative": {}
+  },
+  "C588 repack (5009 banks)": {
+   "local72_rank": 498528,
+   "local72_N": 1711211.8,
+   "rest": {
+    "1": 724,
+    "8": 5376,
+    "16": 3584,
+    "32": 3584,
+    "37": 1,
+    "48": 3584
+   },
+   "rest_rank": 387833,
+   "rest_N": 351975.4,
+   "share_N_local": 0.8294,
+   "negative": {}
+  },
+  "C588M (mutable sources)": {
+   "local72_rank": 425952,
+   "local72_N": 1533976.4,
+   "rest": {
+    "8": 5376,
+    "16": 3584,
+    "28": 72,
+    "32": 3584,
+    "48": 3584
+   },
+   "rest_rank": 389088,
+   "rest_N": 350775.8,
+   "share_N_local": 0.8139,
+   "negative": {}
+  },
+  "C588MHH (mutable + same-run hosting)": {
+   "local72_rank": 425952,
+   "local72_N": 1533976.4,
+   "rest": {
+    "1": 1792,
+    "3": 64,
+    "4": 352,
+    "5": 1696,
+    "7": 320,
+    "8": 1008,
+    "39": 1,
+    "48": 1680
+   },
+   "rest_rank": 102855,
+   "rest_N": 92040.4,
+   "share_N_local": 0.9434,
+   "negative": {}
+  },
+  "U8XM (+ mutable sources, 5 centre copies)": {
+   "local72_rank": 408888,
+   "local72_N": 1492778.2,
+   "rest": {
+    "8": 5376,
+    "16": 3584,
+    "27": 1,
+    "32": 3584,
+    "48": 3584
+   },
+   "rest_rank": 387099,
+   "rest_N": 348870.9,
+   "share_N_local": 0.8106,
+   "negative": {}
+  },
+  "U8XMHH (+ same-run hosting)": {
+   "local72_rank": 408888,
+   "local72_N": 1492778.2,
+   "rest": {
+    "1": 2321,
+    "2": 880,
+    "3": 256,
+    "4": 896,
+    "12": 64,
+    "48": 2608,
+    "61": 1
+   },
+   "rest_rank": 134446,
+   "rest_N": 83031.4,
+   "share_N_local": 0.9473,
+   "negative": {}
+  },
+  "U8X0 (no centre copies, banks)": {
+   "local72_rank": 405648,
+   "local72_N": 1484865.9,
+   "rest": {
+    "8": 5376,
+    "16": 3584,
+    "32": 3584,
+    "48": 3584,
+    "55": 1
+   },
+   "rest_rank": 387127,
+   "rest_N": 348859.6,
+   "share_N_local": 0.8098,
+   "negative": {}
+  },
+  "U8X0HH (no copies + hosting)": {
+   "local72_rank": 405648,
+   "local72_N": 1484865.9,
+   "rest": {
+    "1": 2320,
+    "2": 865,
+    "3": 256,
+    "4": 896,
+    "12": 96,
+    "48": 2688,
+    "57": 1
+   },
+   "rest_rank": 138635,
+   "rest_N": 85225.6,
+   "share_N_local": 0.9457,
+   "negative": {}
+  },
+  "U8X0HQ (one-pad table, term_le4) = our best": {
+   "local72_rank": 405648,
+   "local72_N": 1484865.9,
+   "rest": {
+    "1": 2320,
+    "2": 864,
+    "3": 256,
+    "4": 896,
+    "12": 96,
+    "48": 2688,
+    "59": 1
+   },
+   "rest_rank": 138635,
+   "rest_N": 85216.8,
+   "share_N_local": 0.9457,
+   "negative": {}
+  }
+ },
+ "ceilings": {
+  "U8 at an exact fill (W 7168, no banks, idle remainder {48: 2397})": {
+   "W": 7168,
+   "D": 2560,
+   "N": 1533104.1,
+   "D_over_N": 0.0016698148881577333,
+   "a_star": 0.001664732700176769
+  },
+  "U8, idle remainder in rank-72 pieces (not legal in this network; scale)": {
+   "W": 7168,
+   "D": 2560,
+   "N": 1486452.9,
+   "D_over_N": 0.001722220758998442,
+   "a_star": 0.0017166665831671963
+  },
+  "U8X0HQ profile, W forced to 7168 (bank pieces kept): infeasible rank, shown for scale": {
+   "W": 7168,
+   "D": -21019,
+   "N": 1570082.7,
+   "D_over_N": -0.013387192763097747,
+   "a_star": 0.0
+  }
+ },
+ "sensitivity": {
+  "D + 72 (one unit per call; e.g. a centre climb 8 -> 7)": 0.0016715739791573452,
+  "one port fewer (v 111): W -64, D -64, local scaled 111/112": null
+ }
+}

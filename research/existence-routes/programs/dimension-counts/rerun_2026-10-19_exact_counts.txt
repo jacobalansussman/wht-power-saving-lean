@@ -1,0 +1,17 @@
+shape                                status                         L  P/|B|   E/|B|   naive   orbit  P-gauge dominance-possible
+block 2 plain 1 in 2                 exists                        15      6      15      -9   1.875    5.667 False
+block 2 plain 2 in 4                 exists                        15     26      60     -34   7.500   25.333 False
+block 2 1 in 1                       empty (proof)                 15      3      15     -12   1.875    2.833 False
+block 2 2 in 3                       empty (proof)                 15     19      60     -41   7.500   18.500 False
+block 2 3 in 5 (XW target)           engine: empty; XW: open       15     49     135     -86  16.875   48.167 False
+block 3 plain 1 in 3                 exists                       135     10     135    -125   1.984    9.786 False
+block 3 plain 2 in 6                 exists                       135     43     540    -497   7.938   42.571 False
+block 3 2 in 5                       empty (proof); XW: open      135     34     540    -506   7.938   33.643 False
+block 3 3 in 8                       empty (14W/5); XW: open      135     85    1215   -1130  17.859   84.429 False
+block 3 5 in 14                      open                         135    256    3375   -3119  49.609  255.000 False
+block 3 mixed 1+4 in 10              open                         135    170    3375   -3205  49.699  169.286 False
+block 4 plain 1 in 4                 exists                      2295     15    2295   -2280   1.999   14.867 False
+block 4 plain 2 in 8                 exists                      2295     64    9180   -9116   7.996   63.733 False
+block 4 2 in 7                       open                        2295     53    9180   -9127   7.996   52.767 False
+block 4 2 in 7 grouped (2,2,2,1)     open                        2295     26    9180   -9154   7.996   25.956 False
+block 4 3 in 10                      open                        2295    114   20655  -20541  17.991  113.667 False

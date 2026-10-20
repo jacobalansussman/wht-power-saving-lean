@@ -1,0 +1,135 @@
+{
+ "units": {
+  "fourth result (E8)": {
+   "m": 45,
+   "W": 1263,
+   "D": 120,
+   "Wm": 56835,
+   "M": 56715,
+   "matches_README_table": true,
+   "D_parity": "even",
+   "share D/(Wm)": 0.002111375032990235,
+   "move-count exponent": 0.0005552389089780174,
+   "ThmR ceiling ln(m/2.9447)/ln m": 0.7162850798449159,
+   "one-overlap common-frame move-count ceiling -ln(1-1/m)/ln m": 0.005903558803137959
+  },
+  "second/third result (m=110)": {
+   "m": 110,
+   "W": 14692,
+   "D": 3080,
+   "Wm": 1616120,
+   "M": 1613040,
+   "matches_README_table": true,
+   "D_parity": "even",
+   "share D/(Wm)": 0.0019057990743261638,
+   "move-count exponent": 0.0004058345682922404,
+   "ThmR ceiling ln(m/2.9447)/ln m": 0.7702347717049828,
+   "one-overlap common-frame move-count ceiling -ln(1-1/m)/ln m": 0.0019428830358985876
+  },
+  "first result (m=80)": {
+   "m": 80,
+   "W": 9362,
+   "D": 1035,
+   "Wm": 748960,
+   "M": 747925,
+   "matches_README_table": true,
+   "D_parity": "odd",
+   "share D/(Wm)": 0.0013819162572099978,
+   "move-count exponent": 0.0003155781786284839,
+   "ThmR ceiling ln(m/2.9447)/ln m": 0.7535371109347635,
+   "one-overlap common-frame move-count ceiling -ln(1-1/m)/ln m": 0.002870539879271229
+  },
+  "U8 per replica (an-ours identity.out)": {
+   "data arrays": 896,
+   "D per replica": 320,
+   "D_parity": "even"
+  },
+  "stand-in 2 in 3 (not engine)": {
+   "W": 2,
+   "m": 2,
+   "M": 3,
+   "D": 1,
+   "D_parity": "odd"
+  }
+ },
+ "ThmR": {
+  "block3 14/5": 0.06280001798504764,
+  "block4 41/13": 0.1714438567615043,
+  "block5 2.99172": 0.3191110608373662,
+  "block6 2.97290": 0.3919173158538918,
+  "block8 2.9447": 0.48062644575712465
+ },
+ "thresholds": {
+  "overlap 1, s=0.1": 6,
+  "overlap 1, s=0.01": 29,
+  "overlap 2, s=0.1": 9,
+  "overlap 2, s=0.01": 51,
+  "overlap 4, s=0.1": 16,
+  "overlap 4, s=0.01": 90
+ },
+ "needs_deficit_per_array": {
+  "0.1": {
+   "3": 0.312,
+   "4": 0.518,
+   "5": 0.743,
+   "6": 0.984,
+   "8": 1.502,
+   "16": 3.874,
+   "25": 6.881,
+   "41": 12.718,
+   "73": 25.468
+  },
+  "0.01": {
+   "3": 0.033,
+   "4": 0.055,
+   "5": 0.08,
+   "6": 0.107,
+   "8": 0.165,
+   "16": 0.438,
+   "25": 0.792,
+   "41": 1.495,
+   "73": 3.066
+  }
+ },
+ "needs_rawpacking": {
+  "0.1": {
+   "4": 0.1487,
+   "8": 0.2311,
+   "16": 0.3195,
+   "73": 0.5358
+  },
+  "0.01": {
+   "4": 0.014,
+   "8": 0.021,
+   "16": 0.0281,
+   "73": 0.0438
+  }
+ },
+ "needs_coherent_avg_level": {
+  "0.1": {
+   "4": 0.2589,
+   "8": 0.751,
+   "16": 1.9371,
+   "73": 12.7338
+  },
+  "0.01": {
+   "4": 0.0275,
+   "8": 0.0823,
+   "16": 0.2188,
+   "73": 1.5329
+  }
+ },
+ "two-array targets": {
+  "2 in 7 at block 4": 0.09632253897119791,
+  "2 in 7 at block 5": 0.22161460295122537,
+  "2 in 8 at block 5": 0.1386468838532139,
+  "2 in 6 at block 5": 0.31739380551401464,
+  "2 in 8 at block 6": 0.22629438553091685,
+  "2 in 9 at block 6": 0.16055842170362467,
+  "2 in 10 at block 6": 0.10175559829607284,
+  "2 in 7 at block 6": 0.30081967473284965
+ },
+ "block3: 0.1 needs M/W <=": 2.6878753795222865,
+ "block4: 0.1 needs M/W <=": 3.4822022531844965,
+ "169/57": 2.9649122807017543
+}

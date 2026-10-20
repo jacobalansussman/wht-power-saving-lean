@@ -1,0 +1,8 @@
+W=2: LP values over all 120 configurations with a fixed first pair: [4.0] (2m = 4)
+W=3: smallest cut-LP value over 40 random configurations: 6.0000 = 2.0000 per pair (plain 2; engine floor 2)
+W=4: smallest cut-LP value over 40 random configurations: 8.0000 = 2.0000 per pair (plain 2; engine floor 2)
+W=6: smallest cut-LP value over 40 random configurations: 11.0000 = 1.8333 per pair (plain 2; engine floor 2)
+W=8: smallest cut-LP value over 40 random configurations: 15.0000 = 1.8750 per pair (plain 2; engine floor 2)
+W=12: smallest cut-LP value over 40 random configurations: 21.0000 = 1.7500 per pair (plain 2; engine floor 2)
+all 120 ordered opposite pairs: LP 180.0000 = 1.5000 per pair (c_2 = 1.5)
+python3 cutlp.py 40  59.20s user 1.42s system 91% cpu 1:06.41 total

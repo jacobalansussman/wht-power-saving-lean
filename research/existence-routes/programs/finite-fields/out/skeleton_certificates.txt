@@ -1,0 +1,11 @@
+f27_Fp2_m3_s11     screens/forced-zero/chart-relaxation systems 8/8 certified; full charts 9/9 certified -> EVERY mod-p exclusion step now has an exact certificate
+f27_Fp2_m3_s13     screens/forced-zero/chart-relaxation systems 8/8 certified; full charts 9/9 certified -> EVERY mod-p exclusion step now has an exact certificate
+g27_Fp2b_m3_s2     screens/forced-zero/chart-relaxation systems 10/10 certified; full charts 3/3 certified -> EVERY mod-p exclusion step now has an exact certificate
+g27_mid3_m3_s22    screens/forced-zero/chart-relaxation systems 10/10 certified; full charts 2/2 certified -> EVERY mod-p exclusion step now has an exact certificate
+t27_mid3_m2_s2     screens/forced-zero/chart-relaxation systems 6/6 certified; full charts 4/4 certified -> EVERY mod-p exclusion step now has an exact certificate
+t27_Fmid3_m3_s5    screens/forced-zero/chart-relaxation systems 8/8 certified; full charts 9/9 certified -> EVERY mod-p exclusion step now has an exact certificate
+t27_mid3_m2_s1     screens/forced-zero/chart-relaxation systems 6/6 certified; full charts 4/4 certified -> EVERY mod-p exclusion step now has an exact certificate
+total: 96/96 exclusion steps certified exactly
+f27_Fp2_m3_s39     (decided WITH --linsub) screens/forced-zero/chart-relaxation systems 8/8; 9 linsub relations (a6 = 1) 9/9; full charts 9/9 (8 beta-free, 1 core is the constant -1 after nag-rerun's constant-pivot elimination) -> EVERY exclusion step certified
+g27_Fany4_s17      (20:19 snapshot, partial: 18 of 36 charts exported) screens+relaxations+linsub 38/38; full charts 17/17 GB=[1] in snapshot (13 beta-free; 4 via 24 certified extras + full lift)
+g27_Fany4_s19      (20:19 snapshot, partial: 6 of 32 charts exported) screens+relaxations+linsub 15/15; full charts 5/5

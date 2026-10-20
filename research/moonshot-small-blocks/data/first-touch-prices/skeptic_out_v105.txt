@@ -1,0 +1,13 @@
+|A| 64, |Levi| 168 |A.Levi| distinct 10752
+p=33554393: dim X 105, dim N 56, profile (20, 38, 49)
+  dim E_kernel = 7
+  dim E_two-row = 18
+  kernel: defects over all 10752 elements of P0: {6: 5376, 7: 5376}; distinct images (defect <= 4): 0  (11s)
+  two-row: defects over all 10752 elements of P0: {2: 2304, 4: 2304, 18: 6144}; distinct images (defect <= 4): 9  (26s)
+p=33554383: dim X 105, dim N 56, profile (20, 38, 49)
+  dim E_kernel = 7
+  dim E_two-row = 18
+  kernel: defects over all 10752 elements of P0: {6: 5376, 7: 5376}; distinct images (defect <= 4): 0  (38s)
+  two-row: defects over all 10752 elements of P0: {2: 2304, 4: 2304, 18: 6144}; distinct images (defect <= 4): 9  (54s)
+float kernel: dim E 7; (rank: min srank, max srank, count) {6: (4.7143, 4.7143, 5376), 7: (7.0, 7.0, 5376)} ; smallest kept sv 5.000e-01, largest dropped sv 3.031e-15  (57s)
+float two-row: dim E 18; (rank: min srank, max srank, count) {2: (2.0, 2.0, 2304), 4: (4.0, 4.0, 2304), 18: (11.697, 11.697, 6144)} ; smallest kept sv 3.732e-01, largest dropped sv 3.994e-15  (59s)

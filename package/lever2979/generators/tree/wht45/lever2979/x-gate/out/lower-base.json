@@ -1,0 +1,128 @@
+{
+ "canonical": "<work>/wht45/lever2979/x-gate/out/base.canonical.json.gz",
+ "canonical_file_sha256": "8dd45190fcc2578f4b55e09b562ff138dd6cd49a4d618f24f6953f386b00efd2",
+ "canonical_content_sha256": "852d09f08b83b760055aaa525632b75f4a8497a816405edbc325670222db63b4",
+ "lowering": {
+  "nA": 4279,
+  "nP": 192,
+  "nB_without_tail": 1946,
+  "tail": 203,
+  "nB": 2781,
+  "nD0": 108,
+  "nC0": 5736,
+  "nU": 5389,
+  "phase_A_y_gates": {
+   "scale": 12,
+   "add": 48
+  },
+  "slot_units_not_one_after_B": 146,
+  "x_units_not_one_after_B": 45,
+  "units_end_not_one": {
+   "x": 0,
+   "slots": 40,
+   "exits": 40,
+   "zero_buffers": 40
+  }
+ },
+ "frames_and_price": {
+  "blocks": {
+   "x": {
+    "1": 465,
+    "2": 100,
+    "3": 17,
+    "4": 45
+   },
+   "y": {
+    "1": 371,
+    "2": 96,
+    "3": 41,
+    "4": 30,
+    "5": 18
+   },
+   "s": {
+    "1": 1609,
+    "2": 510,
+    "3": 174,
+    "4": 33
+   },
+   "c": {
+    "8": 8
+   }
+  },
+  "hist": {
+   "1": 2445,
+   "2": 706,
+   "3": 232,
+   "4": 108,
+   "5": 18,
+   "8": 8
+  },
+  "N": 5139,
+  "cst": 64,
+  "invoice": [
+   5303,
+   5303
+  ],
+  "frame_steps": 3014,
+  "warp_steps": 180,
+  "max_block_rank": 8,
+  "hist_equals_hub_local_profile": true
+ },
+ "full_replay": {
+  "endpoint": "exact on all 632 columns: identity, y_t += x_t, 91 zero buffers 0 at zfree"
+ },
+ "main_phase_words": {
+  "x_row_entries_with_words": 162,
+  "y_row_entries_with_words": 36,
+  "hid_y_from_x_identity": true
+ },
+ "counts": {
+  "R": 408,
+  "nZ": 91,
+  "exits": 91,
+  "ext": 134,
+  "tadds": 36,
+  "warp_events": {
+   "A": 24,
+   "B": 72,
+   "U": 72,
+   "D0": 72,
+   "main_and_cleanup": 168
+  },
+  "zero_buffer_incidences": 2328,
+  "residuals_hist": {
+   "4": 26,
+   "5": 2,
+   "6": 16,
+   "7": 52,
+   "8": 99,
+   "9": 213
+  }
+ },
+ "width_inventory": {
+  "word": "<work>/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data/WORD-base.json.gz",
+  "word_file_sha256": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+  "hist": {
+   "4": 26,
+   "5": 2,
+   "6": 16,
+   "7": 52,
+   "8": 99,
+   "9": 213
+  },
+  "equals_residuals_per_helper": true
+ },
+ "mutants": {
+  "wrong G column (warp 71, column 0 := 3, still invertible)": "rejected: ('table: G does not carry from -> to', 71)",
+  "wrong G column, warp-table check skipped (the gate-level frame check alone)": "rejected: ('warp G does not carry the frame', ('B', 261), ['warp', 401, 71, 293, 134])",
+  "B warp with a wrong end frame": "rejected: ('warp G does not carry the frame', ('B', 261), ['warp', 401, 71, 293, 250])",
+  "U unwarp dropped": "rejected: ('hub endpoint fails on rows', [32, 35, 45, 48, 85])",
+  "D0 twisted-add coefficient doubled": "rejected: ('hub endpoint fails on rows', [115])",
+  "U: last write to a zero buffer dropped": "rejected: ('zero buffer not zero at zfree', 672, 5337)",
+  "D0 warp sign flipped": "rejected: ('hub endpoint fails on rows', [273])"
+ },
+ "out": "<work>/wht45/lever2979/x-gate/out/base.gcert1w.json.gz",
+ "out_file_sha256": "8f2db1387aefe62bb660b664e18a001c996360e205dc2d604a2cd5d307048759",
+ "out_content_sha256": "c03055bfeda8058849ec6cf82ff9c1e2b47366485ec17b1e17a943e9e94e2760",
+ "seconds": 1.82
+}

@@ -1,0 +1,3 @@
+./run_sa2.sh: line 9:  6414 Terminated: 15          $VP -I sa2.py 11 $M 0.0 > sa2_11.log 2>&1
+./run_sa2.sh: line 9:  6415 Terminated: 15          $VP -I sa2.py 12 $M 0.0 > sa2_12.log 2>&1
+./run_sa2.sh: line 10:  6417 Terminated: 15          $VP -I sa2.py 14 $M 3.0 > sa2_14.log 2>&1

@@ -1,0 +1,164 @@
+[
+ {
+  "stage": 0,
+  "call": "GF",
+  "pair": 1,
+  "model": "G",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 0,
+  "call": "GF",
+  "pair": 1,
+  "model": "F",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 1,
+  "call": "GB",
+  "pair": 1,
+  "model": "G",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 1,
+  "call": "GB",
+  "pair": 1,
+  "model": "F",
+  "lines_with_count": 1,
+  "max_count": 112,
+  "total": 112
+ },
+ {
+  "stage": 2,
+  "call": "GF",
+  "pair": 1,
+  "model": "G",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 2,
+  "call": "GF",
+  "pair": 1,
+  "model": "F",
+  "lines_with_count": 1,
+  "max_count": 112,
+  "total": 112
+ },
+ {
+  "stage": 3,
+  "call": "GB",
+  "pair": 2,
+  "model": "G",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 3,
+  "call": "GB",
+  "pair": 2,
+  "model": "F",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 4,
+  "call": "GF",
+  "pair": 2,
+  "model": "G",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 4,
+  "call": "GF",
+  "pair": 2,
+  "model": "F",
+  "lines_with_count": 1,
+  "max_count": 112,
+  "total": 112
+ },
+ {
+  "stage": 5,
+  "call": "GB",
+  "pair": 3,
+  "model": "G",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 5,
+  "call": "GB",
+  "pair": 3,
+  "model": "F",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 6,
+  "call": "GF",
+  "pair": 3,
+  "model": "G",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 6,
+  "call": "GF",
+  "pair": 3,
+  "model": "F",
+  "lines_with_count": 1,
+  "max_count": 112,
+  "total": 112
+ },
+ {
+  "stage": 7,
+  "call": "GB",
+  "pair": 4,
+  "model": "G",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 7,
+  "call": "GB",
+  "pair": 4,
+  "model": "F",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 8,
+  "call": "GF",
+  "pair": 4,
+  "model": "G",
+  "lines_with_count": 112,
+  "max_count": 1,
+  "total": 112
+ },
+ {
+  "stage": 8,
+  "call": "GF",
+  "pair": 4,
+  "model": "F",
+  "lines_with_count": 1,
+  "max_count": 112,
+  "total": 112
+ }
+]

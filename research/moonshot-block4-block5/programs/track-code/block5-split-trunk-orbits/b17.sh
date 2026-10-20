@@ -1,0 +1,3 @@
+#!/bin/bash
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 ZTRIES=300 LMSTARTS=2 LMITERS=40 CAP=10000
+timeout 1800 python3 jdesign.py 801 42 24 3 3 orbitSNZ 0 0 3 8 > out_b17_s801.txt 2>&1

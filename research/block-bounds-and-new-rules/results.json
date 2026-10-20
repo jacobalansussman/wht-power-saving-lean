@@ -1,0 +1,1964 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "block-bounds-and-new-rules",
+ "title": "Block bounds in Lean, Toffoli and column-mixing maps (13-14 October)",
+ "dates": "2026-10-13 to 2026-10-16",
+ "made_with": "AI agents (Claude) directed by the author",
+ "notes": [
+  "No person has read any of the proofs of this section.",
+  "'Proved in Lean' means the engine game of this repository and only the three standard axioms.",
+  "Savings are ln(mW/M)/ln m; finite-win savings follow OpenAI's finite-tensor paper.",
+  "Where notes disagree, the later skeptic verdict is used."
+ ],
+ "counts": {
+  "proved in Lean": 5,
+  "checked by computer": 18,
+  "argued by hand, not checked": 31,
+  "open": 10,
+  "refuted": 6
+ },
+ "findings": [
+  {
+   "id": "block-bounds-and-new-rules/1",
+   "statement": "Theorem R for the engine's own words: for any subspace kept by every free letter, the total growth over the paid moves is at least what the targets need, so every unit needs at least W x demand / cap paid moves; singular mixing and garbage in scratch arrays are covered. It is a general form of the certificate lemma (the \"FO lemma\") of eumemic's pull request #288 in the community repository CrocSwap/integer-mult-bounds.",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; two AI skeptics rebuilt it independently; five deliberately broken versions failed to build",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/lean-block2-block3/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "yes: the Lean files rebuilt from the same sources on a Linux machine of Google's Colab service (exit 0, 11 minutes, 10.06 GB, three standard axioms, negative control rejected); programs/lean-block2-block3/logs/rebuild_2026-10-19.txt",
+   "archive_entry": "L1"
+  },
+  {
+   "id": "block-bounds-and-new-rules/2",
+   "statement": "Every free letter of the engine keeps the hook subspace, and one paid move raises the hook by at most (2^m/2) C(2^m - 2, k - 1) at every block size.",
+   "status": "proved in Lean",
+   "status_detail": "Hook.lean; that the cap is attained is also checked exactly for every direction at blocks 2 to 6 by check_capA.c",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "cap_block2": 4,
+    "cap_block3": 80,
+    "cap_block4": 27456
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/lean-block2-block3/",
+    "programs/hook-certificates-blocks-2-to-6/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "yes: the Lean files rebuilt from the same sources on a Linux machine of Google's Colab service (exit 0, 11 minutes, 10.06 GB, three standard axioms, negative control rejected); programs/lean-block2-block3/logs/rebuild_2026-10-19.txt",
+   "archive_entry": "L1"
+  },
+  {
+   "id": "block-bounds-and-new-rules/3",
+   "statement": "Block 2: every unit needs at least 2W paid moves (no saving) in the engine game (eumemic's pull request #288 first reported this for its own model).",
+   "status": "proved in Lean",
+   "status_detail": "block2_bound; demand 8, cap 4 at f = 3; also a separate certificate check",
+   "date": "2026-10-13",
+   "block": 2,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "moves_per_array": 2
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/lean-block2-block3/",
+    "programs/hook-certificates-blocks-2-to-6/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "yes: the Lean files rebuilt from the same sources on a Linux machine of Google's Colab service (exit 0, 11 minutes, 10.06 GB, three standard axioms, negative control rejected); programs/lean-block2-block3/logs/rebuild_2026-10-19.txt",
+   "archive_entry": "L6"
+  },
+  {
+   "id": "block-bounds-and-new-rules/4",
+   "statement": "Block 2 with every monomial map free: a certificate of ratio 2 (dimension 24, cap 8, demand 16).",
+   "status": "checked by computer",
+   "status_detail": "exact computation modulo two primes; replayed by a second agent with its own code",
+   "date": "2026-10-13",
+   "block": 2,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "moves_per_array": 2
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L6"
+  },
+  {
+   "id": "block-bounds-and-new-rules/5",
+   "statement": "Block 2: 3 arrays in 5 moves, and every 3k in 5k, is impossible for any complex phases: the best block-2 certificate is exactly tight for 3 in 5, and an exact certificate shows the first move can add nothing inside the target.",
+   "status": "argued by hand, not checked",
+   "status_detail": "with an exact Q(i) computation; no skeptic read it; later covered by Theorem 2W",
+   "date": "2026-10-13",
+   "block": 2,
+   "games": [
+    "widened"
+   ],
+   "shape": "3 in 5",
+   "saving_if_it_existed": 0.263,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": "moonshot-small-blocks (Theorem 2W)",
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L6"
+  },
+  {
+   "id": "block-bounds-and-new-rules/6",
+   "statement": "Block 2 in every game whose free steps touch a bounded number of entries per row (Toffoli, controlled-S, chain maps, the running XOR): every unit needs 2W paid moves (Theorem 2W).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it; told in moonshot-small-blocks; it supersedes the partial block-2 results for chain maps",
+   "date": "2026-10-15",
+   "block": 2,
+   "games": [
+    "engine",
+    "widened",
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [
+    "block-bounds-and-new-rules/46"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L5"
+  },
+  {
+   "id": "block-bounds-and-new-rules/7",
+   "statement": "Block 3: every unit of the engine game needs at least 14W/5 paid moves, with no hypothesis left: the demand 224 is split into 8 character blocks of 28 x 28, each checked invertible modulo 65537 by the Lean kernel (decide +kernel).",
+   "status": "proved in Lean",
+   "status_detail": "only the three standard axioms; Dem3.lean 432 lines; a negative control (one inverse entry + 1) is rejected; two AI skeptics (a restatement with a non-vacuity check, and a full rebuild with Lean's independent checker)",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "moves_per_array": 2.8,
+    "demand": 224,
+    "cap": 80,
+    "dem3_lines": 432,
+    "total_lines": 1662
+   },
+   "supersedes": [
+    "the 13 October version, which proved 14W/5 only given the demand as a hypothesis"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/lean-block2-block3/"
+   ],
+   "data": [
+    "data/lean-block3-certificate/cert65537.json"
+   ],
+   "rerun_2026_10_19": "yes: the Lean files rebuilt from the same sources on a Linux machine of Google's Colab service (exit 0, 11 minutes, 10.06 GB, three standard axioms, negative control rejected); programs/lean-block2-block3/logs/rebuild_2026-10-19.txt",
+   "archive_entry": "L7"
+  },
+  {
+   "id": "block-bounds-and-new-rules/8",
+   "statement": "Block 3 in the widened game (every address permutation, Toffoli included, and every Z4 phase pattern free): every unit needs at least 14W/5 paid moves.",
+   "status": "argued by hand, not checked",
+   "status_detail": "Theorem R with the hook, which every permutation and diagonal keeps; three AI skeptics upheld it (Theorem R re-derived against the Lean engine; keptness by 199 free steps checked exactly; numbers redone); the numbers 80, 144 and 224 are checked by computer; not in Lean (the Lean engine's relabellings are affine)",
+   "date": "2026-10-13",
+   "block": 3,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "moves_per_array": 2.8
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/widened-game-hook-block3/"
+   ],
+   "data": [
+    "data/widened-game-hook-block3/"
+   ],
+   "rerun_2026_10_19": "yes: verify_hook.py, hookcheck.py (mod p) and kept_check.py give the same values; data/widened-game-hook-block3/rerun_2026-10-19.txt",
+   "archive_entry": "L7"
+  },
+  {
+   "id": "block-bounds-and-new-rules/9",
+   "statement": "Block 3: two moves in a row raise the hook by at most 144, so the cap of 6.28e-2 on any block-3 saving also holds at engine prices.",
+   "status": "checked by computer",
+   "status_detail": "a certificate of 136 exact vectors with a separate checker",
+   "date": "2026-10-13",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "two_move_cap": 144,
+    "max_saving": 0.0628
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/hook-certificates-blocks-2-to-6/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "yes: the certificate checkers PASS on an Apple M4 Mac mini; data/hook-certificates/rerun_light_2026-10-19.txt",
+   "archive_entry": "L7"
+  },
+  {
+   "id": "block-bounds-and-new-rules/10",
+   "statement": "Excluded at block 3: 2 in 5, 3 in 7, 3 in 8, 4 in 11, 5 in 13, 6 in 16, and every unit with 4 or fewer arrays.",
+   "status": "proved in Lean",
+   "status_detail": "consequence of block3_bound in the engine game; in the widened game argued by hand (finding 8)",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": "3 in 8",
+   "saving_if_it_existed": 0.107,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L7"
+  },
+  {
+   "id": "block-bounds-and-new-rules/11",
+   "statement": "Block 4: every unit needs at least 41W/13 (about 3.154W) paid moves: the k = 8 hook at f = 9 has cap 27,456 and demand at least 86,592 = 16 x 5,412.",
+   "status": "checked by computer",
+   "status_detail": "the counting theorem and the cap are proved in Lean; the demand is a 5,412 x 5,412 minor nonzero modulo 2,147,483,629, checked by a checker that shares no code with its generator; three programs by different agents found the same demand (one in floating point), a skeptic rebuilt it with its own code from exact minors, and the certificate program found the same rank; in the widened game it also rests on the keptness argument",
+   "date": "2026-10-13",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "moves_per_array": 3.1538,
+    "cap": 27456,
+    "demand": 86592,
+    "max_saving": 0.171
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/hook-certificates-blocks-2-to-6/",
+    "programs/block4-hook-41-over-13/"
+   ],
+   "data": [
+    "data/hook-certificates/cert_m4_M0.txt"
+   ],
+   "rerun_2026_10_19": "yes: hookG.py gives f(K) >= 86592 (certified) in 48 s; data/block4-hook/rerun_2026-10-19.txt; the 5,412 x 5,412 demand certificate re-checked: determinant 1797789153 mod 2,147,483,629, PASS; data/hook-certificates/rerun_check_m4_2026-10-19.txt",
+   "archive_entry": "L9"
+  },
+  {
+   "id": "block-bounds-and-new-rules/12",
+   "statement": "Block 4: two moves in a row raise the hook by at most 48,576; the value 68,320 for three moves is computed but not certified, so the engine-price cap of 0.176 holds only with high probability.",
+   "status": "checked by computer",
+   "status_detail": "48,576 by a certificate with a 3,399 x 3,399 minor; 68,320 computed modulo a prime only",
+   "date": "2026-10-13",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "two_move_cap": 48576,
+    "three_move_value_computed": 68320,
+    "engine_price_cap": 0.176
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/hook-certificates-blocks-2-to-6/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "yes: the certificate checkers PASS on an Apple M4 Mac mini; data/hook-certificates/rerun_light_2026-10-19.txt",
+   "archive_entry": "L9"
+  },
+  {
+   "id": "block-bounds-and-new-rules/13",
+   "statement": "Block 4 targets left open by 41/13: 2 in 7, 3 in 10, 4 in 13, 5 in 16.",
+   "status": "open",
+   "status_detail": "searched in moonshot-block4-block5",
+   "date": "2026-10-13",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {
+    "3in10": 0.1315,
+    "4in13": 0.15,
+    "5in16": 0.161
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L9"
+  },
+  {
+   "id": "block-bounds-and-new-rules/14",
+   "statement": "Engine game: every unit needs at least 2.99172 paid moves per array at block 5, 2.97290 at block 6, and 2.9447 at every block from 4 on (moves counted by rank).",
+   "status": "argued by hand, not checked",
+   "status_detail": "from exact computation; two AI skeptics reproduced every number with their own code",
+   "date": "2026-10-13",
+   "block": 5,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "block5": 2.99172,
+    "block6": 2.9729,
+    "all_blocks_from_4": 2.9447,
+    "max_saving_block5": 0.319,
+    "max_saving_block6": 0.392
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/engine-bounds-blocks-5-and-6/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "yes: induct.py and checks.py, identical output; data/engine-bounds-blocks-5-and-6/rerun_2026-10-19.txt",
+   "archive_entry": "L11"
+  },
+  {
+   "id": "block-bounds-and-new-rules/15",
+   "statement": "Widened game: 62W/29 at block 5 and 63W/31 at block 6 (full-row certificates); 31/14 at block 5 computed exactly but not certified.",
+   "status": "checked by computer",
+   "status_detail": "certificates with a separate checker; an AI skeptic recomputed the exact values with its own code",
+   "date": "2026-10-14",
+   "block": 5,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "block5": 2.138,
+    "block6": 2.032,
+    "block5_computed": 2.214
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/hook-certificates-blocks-2-to-6/"
+   ],
+   "data": [
+    "data/hook-certificates/full-rows/"
+   ],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L10"
+  },
+  {
+   "id": "block-bounds-and-new-rules/16",
+   "statement": "Depth bound: every unit's total rank is at least W + m - 1, in both games, over any field, and for approximate units.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two AI skeptics upheld it; later strengthened to W + m for W >= 2 (moonshot-small-blocks)",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/ladder-above-theorem-R/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L4"
+  },
+  {
+   "id": "block-bounds-and-new-rules/17",
+   "statement": "Every bound from Theorem R also holds for approximate units (border barrier); if an approximate 5 in 14 exists, no argument of this kind can exclude it.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two AI skeptics upheld it",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L12"
+  },
+  {
+   "id": "block-bounds-and-new-rules/18",
+   "statement": "Commutative slice: no saving at block 3; at block 4 every scheme with fewer than 15W/4 moves fails; at block 5 fewer than 31W/8 fails; all 20,058,300 cases of 4 in 13 at block 4 checked one by one.",
+   "status": "checked by computer",
+   "status_detail": "certificates with exact checkers, given an earlier reduction of the slice to a test on direction multisets that was not re-derived",
+   "date": "2026-10-13",
+   "block": 4,
+   "games": [
+    "commutative slice"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "block4": 3.75,
+    "block5": 3.875
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/commutative-slice-certificates/"
+   ],
+   "data": [
+    "data/commutative-slice/"
+   ],
+   "rerun_2026_10_19": "yes: check_lp.py (blocks 2 to 5) and check_matroid.py (2 in 7) PASS; data/commutative-slice/rerun_2026-10-19.txt",
+   "archive_entry": "L9"
+  },
+  {
+   "id": "block-bounds-and-new-rules/19",
+   "statement": "Depth lemma (family S): if every content holds at most one term of each input, two arrays need at least 2m moves at every block size, whatever the free group.",
+   "status": "argued by hand, not checked",
+   "status_detail": "Farkas certificates checked by computer for every m, given b4-depth4's constraints; one skeptic's own program agrees on the hardest case",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/family-S-depth-lemma/"
+   ],
+   "data": [
+    "data/family-S/"
+   ],
+   "rerun_2026_10_19": "yes: RESULT: PASS; data/family-S/rerun_2026-10-19.txt",
+   "archive_entry": "X14"
+  },
+  {
+   "id": "block-bounds-and-new-rules/20",
+   "statement": "No hook, coordinate or cut certificate reaches 4 moves per array at any block size (hook family at most 4(n-1)/(n+2); coordinate certificates kept by all permutations at most 4(n-1)/n, argued by hand for m = 3 to 10; certificates that only the engine game keeps, such as lifts and affine-orbit sets, are not covered); so from block 5 on these certificates can never rule out a saving of 0.1 (about 0.16 at block 5, 0.24 at block 6 and 0.29 at block 7 stay out of reach).",
+   "status": "argued by hand, not checked",
+   "status_detail": "upheld by three AI skeptics with label corrections; cuts: Theorem S' (two skeptics, theory-of-theories-and-logic)",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "hook_ceiling_block4": 3.3333,
+    "coordinate_ceiling_block4": 3.75
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/certificate-ceilings/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "yes: numbers.py and table.py, identical output; data/certificate-ceilings/rerun_2026-10-19.txt",
+   "archive_entry": "T4"
+  },
+  {
+   "id": "block-bounds-and-new-rules/21",
+   "statement": "At block 4 no screened family (hooks, two- and three-factor Venn sets, small affine shapes) reaches 3.5, so no hook or two-factor certificate can ever exclude 2 in 7 or 3 in 10; the k = 8 hook almost surely stops at 41/13.",
+   "status": "checked by computer",
+   "status_detail": "screens computed; three codes agree on 86,592 against the upper bound 91,520 (argued by hand, re-derived by two skeptics); upheld with corrections",
+   "date": "2026-10-13",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/certificate-ceilings/",
+    "programs/block4-hook-41-over-13/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "T4"
+  },
+  {
+   "id": "block-bounds-and-new-rules/22",
+   "statement": "The best Theorem-R bound over all certificates (a relaxation over rank inequalities valid over C, including Dougherty-Freiling-Zeger) lies between 2.8 and 169/57 = 2.9649 at block 3 and between 3.154 and 3.94261 at block 4 (widened game); from block 4 on it is at most m - 0.0574.",
+   "status": "argued by hand, not checked",
+   "status_detail": "exact certificates checked only by the track's own verifier; no skeptic",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "block3_upper": 2.9649,
+    "block4_upper": 3.94261
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/duality-best-theorem-R-bound/"
+   ],
+   "data": [
+    "data/duality/"
+   ],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "T10"
+  },
+  {
+   "id": "block-bounds-and-new-rules/23",
+   "statement": "Ladder: reversal gives a unit with the same moves; beating 2.8 at block 3 needs c2 > 1.8 c1; excluding 2 in 7 at block 4 needs c2 > 1.75 c1 and c3 > 2.5 c1 (the block-4 hook has 1.77 and 2.49); Lambda^2 (x) Lambda^3 reaches c2 = 1.848 c1 but c3 = 2.515 c1; sums, mixtures, restrictions, single cuts, tensor squares and linear programmes over subspace dimensions give exactly Theorem R.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two AI skeptics upheld it; 1.848 confirmed exactly at two primes; the claim that excluding 5 in 14 or 2 in 7 'needs one of' a short list was corrected",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/ladder-above-theorem-R/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "T11"
+  },
+  {
+   "id": "block-bounds-and-new-rules/24",
+   "statement": "Induction limits: projection from block 4 raises the bound by a factor of at most 1.1, pullbacks by less than 2, direct sums never beat their best part; whether the best Theorem-R bound grows with m is open.",
+   "status": "argued by hand, not checked",
+   "status_detail": "upheld by two skeptics; 'general products are at most twice the best factor' was refuted by a skeptic's counterexample (true for constant dimension)",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "T11"
+  },
+  {
+   "id": "block-bounds-and-new-rules/25",
+   "statement": "'General products of certificate families are at most twice the best factor.'",
+   "status": "refuted",
+   "status_detail": "by a skeptic's counterexample when the families' dimensions vary",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "AI skeptic counterexample (tensor_cx.py)",
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "T11"
+  },
+  {
+   "id": "block-bounds-and-new-rules/26",
+   "statement": "Exact normal form: any run of moves on one array between two mixing steps equals free steps, the first r coordinate moves, free steps; so 'a unit exists' is one polynomial system over the group algebra; deciding 2 in 7 this way is out of reach.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic read it; programs not published",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "T11"
+  },
+  {
+   "id": "block-bounds-and-new-rules/27",
+   "statement": "Toffoli, every address permutation and every phase pattern are free in OpenAI's RAM model if the engine gets an AND look-up table next to its XOR table (about 400 to 450 Lean lines, not written).",
+   "status": "argued by hand, not checked",
+   "status_detail": "read from the Lean files and OpenAI's model; no skeptic was assigned",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "M15"
+  },
+  {
+   "id": "block-bounds-and-new-rules/28",
+   "statement": "Toffoli and the other new relabellings buy nothing at blocks 2 and 3: the bounds 2 and 14/5 hold with them free.",
+   "status": "argued by hand, not checked",
+   "status_detail": "see findings 4, 6 and 8",
+   "date": "2026-10-13",
+   "block": 3,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [
+    "the first widened-game certificate of 13 October, 7/3 at block 3, which had reopened 2 in 5, 3 in 7 and 3 in 8"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L7"
+  },
+  {
+   "id": "block-bounds-and-new-rules/29",
+   "statement": "One array at block 4 has 736,785 shortest routes in the widened game against 315 in the engine game (105 against 21 at block 3); the route set's symmetry group is the engine's affine group; the extra routes come from splitting into independent halves.",
+   "status": "checked by computer",
+   "status_detail": "exact census; a skeptic confirmed it with an independent model",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "routes_widened": 736785,
+    "routes_engine": 315,
+    "continuing_first_steps": 30465,
+    "first_steps": 2027025
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/toffoli-routes-block4/"
+   ],
+   "data": [
+    "data/toffoli-routes-block4/"
+   ],
+   "rerun_2026_10_19": "yes: census.py 3 and 4 give 105 and 736,785; data/toffoli-routes-block4/rerun_2026-10-19.txt",
+   "archive_entry": "X27"
+  },
+  {
+   "id": "block-bounds-and-new-rules/30",
+   "statement": "Junk independence: junk lands where the relative twist puts it, whatever the route; one shared register with single-term private chains never pays at block 4 (moves >= 3m/2 + L).",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic upheld it and extended it to every single-term, single-register scheme",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "X27"
+  },
+  {
+   "id": "block-bounds-and-new-rules/31",
+   "statement": "The block-4 beam search's conclusions as written: that its 0 hits in 12 target runs say something about the grouped target, and that the obstacle is junk.",
+   "status": "refuted",
+   "status_detail": "refuted as written by its skeptic (the 0 hits, the controls and every number were upheld): the grouped runs never tested a finishable scheme; the junk claim holds only for rank-1 2 in 7; 77 % of the 4-in-13 final tests were undecided",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "AI skeptic (tb4-vbeam)",
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "X27"
+  },
+  {
+   "id": "block-bounds-and-new-rules/32",
+   "statement": "Sampled widened-game search: 0 of 7,764 random 2-in-7 schemes.",
+   "status": "open",
+   "status_detail": "a sample, not a search; no skeptic",
+   "date": "2026-10-13",
+   "block": 4,
+   "games": [
+    "widened"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "X27"
+  },
+  {
+   "id": "block-bounds-and-new-rules/33",
+   "statement": "The exactly tight grouped schedule 2,2,2,1 at block 4 cannot be excluded by the f = 9 hook alone (Theorem V: a shadow scheme passes every test of the certificate), and tightness forces a rigid shape: no tested single-term content of depth 1 to 3 passes the zero-waste test.",
+   "status": "argued by hand, not checked",
+   "status_detail": "Theorem V upheld by one AI skeptic; the zero-waste tests checked by computer (about 400 terms plus 76 by the skeptic, two primes; a sample)",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": "2 arrays, blocks 2,2,2,1",
+   "saving_if_it_existed": 0.1675,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": "idea-rounds (16 October: no exactly tight engine unit at block 4; argued by hand from an exhaustive computer check of the 310 positions of depth 1 and 2, one program, no skeptic; grouped schedules with high probability; widened game not covered)",
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "N1"
+  },
+  {
+   "id": "block-bounds-and-new-rules/34",
+   "statement": "One controlled-S phase between two plain moves at block 4 removes the loss of the second move (24,288 becomes the full 27,456), so the claim that plain chains waste 17,184 of 2 in 7's spare 19,008 holds only for plain chains, and only 6,336 of it is established.",
+   "status": "checked by computer",
+   "status_detail": "a skeptic's computation; the earlier waste claim is refuted in part",
+   "date": "2026-10-14",
+   "block": 4,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "second_gain_plain": 24288,
+    "cap": 27456,
+    "proved_waste": 6336
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/hook-certificates-blocks-2-to-6/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "yes: the certificate checkers PASS on an Apple M4 Mac mini; data/hook-certificates/rerun_light_2026-10-19.txt",
+   "archive_entry": "C20"
+  },
+  {
+   "id": "block-bounds-and-new-rules/35",
+   "statement": "The flagship attempt to decide 3 in 8 at block 3 exactly: about 2.3e8 rational unknowns; new tools (per-input twist symmetry with 64 and 5 classes, a quotient game 256 times smaller, free finishing moves); every family searched empty; stopped once 14W/5 excluded the target.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the author's own checks and controls (9,261 plain 3-in-9 schedules found, none for 2 in 5); no skeptic",
+   "date": "2026-10-13",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "shape": "3 in 8",
+   "saving_if_it_existed": 0.107,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "X13"
+  },
+  {
+   "id": "block-bounds-and-new-rules/36",
+   "statement": "5 in 14 at block 3 is exactly tight on the hook (14 x 80 = 5 x 224) and not excluded in any game; in a tight one every move gains 80, no move's content is a single free image of an earlier output (gain at most 72), each input has at most two private moves, and the flagship's fresh-entry family is empty.",
+   "status": "open",
+   "status_detail": "the structure facts are argued by hand and upheld by three AI skeptics; the gain table is checked by computer (certificate)",
+   "date": "2026-10-13",
+   "block": 3,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "shape": "5 in 14",
+   "saving_if_it_existed": 0.0628,
+   "numbers": {
+    "cap": 80,
+    "demand": 224,
+    "single_term_gain_max": 72
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/five-in-fourteen-block3/"
+   ],
+   "data": [
+    "data/five-in-fourteen/"
+   ],
+   "rerun_2026_10_19": "yes: check_r1.py PASS, same table; data/five-in-fourteen/rerun_2026-10-19.txt",
+   "archive_entry": "N3"
+  },
+  {
+   "id": "block-bounds-and-new-rules/37",
+   "statement": "Term-by-term filter for a tight 5 in 14: only 30 of 135 frames can hold a term; for all 8 tight certificates the target looks exactly like 7 other targets, so no certificate argument can decide 5 in 14.",
+   "status": "argued by hand, not checked",
+   "status_detail": "computed at two primes; no skeptic has read the proofs",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "shape": "5 in 14",
+   "saving_if_it_existed": 0.0628,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "N3"
+  },
+  {
+   "id": "block-bounds-and-new-rules/38",
+   "statement": "A greedy 14-move program tight on all 8 certificates at f = 5 fails at f = 6 by 112 of 8,960 (0.175 of a move), all from one array's end condition; the per-array end condition at the next f is strictly stronger than the cheap tests.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated; not published (it depends on pickled data)",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "deficit": 112,
+    "of": 8960
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "N3"
+  },
+  {
+   "id": "block-bounds-and-new-rules/39",
+   "statement": "6 in 17 at block 3 is tight on no known certificate.",
+   "status": "open",
+   "status_detail": "",
+   "date": "2026-10-13",
+   "block": 3,
+   "games": [],
+   "shape": "6 in 17",
+   "saving_if_it_existed": 0.052,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "N3"
+  },
+  {
+   "id": "block-bounds-and-new-rules/40",
+   "statement": "Of the assumptions behind the games, dropping 'free steps are monomial', 'the same map on every column', 'correct for every f' (beyond infinitely many f), 'exact correctness', 'independent inputs', 'the same unit at every level' and 'arithmetic over Q(i)' gains nothing (given Theorem R); exactness and linear arithmetic on the data are truly forced.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic for the assumptions table; parts were later argued again and upheld by AI skeptics in the Conjecture U round",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L20"
+  },
+  {
+   "id": "block-bounds-and-new-rules/41",
+   "statement": "At block 3 a partial paid move adds exactly its share of a whole move's cap (exact rank 20 for one fibre call), so partial moves open nothing there; block 4 untested.",
+   "status": "checked by computer",
+   "status_detail": "one program, exact over Q(i), not repeated",
+   "date": "2026-10-13",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "fibre_rank": 20
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/tightness-at-block-3/"
+   ],
+   "data": [
+    "data/tightness-at-block-3/"
+   ],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L20"
+  },
+  {
+   "id": "block-bounds-and-new-rules/42",
+   "statement": "The line between free and paid steps in OpenAI's model is work per entry, not linear versus non-linear; no loophole was found (data are only added, subtracted and scaled).",
+   "status": "argued by hand, not checked",
+   "status_detail": "read from OpenAI's UniformFourier.lean and its two preprints; no skeptic",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "M15"
+  },
+  {
+   "id": "block-bounds-and-new-rules/43",
+   "statement": "Chain maps (row ^= row << 1, row0 ^= row1 << 1 and their inverses) cost constant work per entry in OpenAI's model, a paid move seen through them is still one transform call per fibre, and the Fourier result carries over.",
+   "status": "checked by computer",
+   "status_detail": "two independent simulators counted every operation (block sizes 2 to 4, up to 7 columns); the recursion argued by hand for every f and checked on raw arrays in 143 cases; one AI skeptic re-ran it",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/chain-maps-cost-and-every-f/"
+   ],
+   "data": [
+    "data/chain-maps/out_ram_letters.txt"
+   ],
+   "rerun_2026_10_19": "yes: every_f.py and ram_letters.py, identical output; data/chain-maps/rerun_2026-10-19.txt",
+   "archive_entry": "M15"
+  },
+  {
+   "id": "block-bounds-and-new-rules/44",
+   "statement": "Correctness at every f is decided exactly by a weighted-automaton test; testing small f proves nothing (row0 ^= row1 << e composed with the transform agrees with it up to f = e and differs at e + 1).",
+   "status": "checked by computer",
+   "status_detail": "exact over Q(i); a skeptic re-checked it",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/chain-maps-cost-and-every-f/"
+   ],
+   "data": [
+    "data/chain-maps/out_every_f.txt"
+   ],
+   "rerun_2026_10_19": "yes: every_f.py and ram_letters.py, identical output; data/chain-maps/rerun_2026-10-19.txt",
+   "archive_entry": "L18"
+  },
+  {
+   "id": "block-bounds-and-new-rules/45",
+   "statement": "With one chain map free, no subspace other than 0 and the whole space is kept by all free steps, so no Theorem-R certificate of the usual kind exists; a chain map and a shift give a one-column shift; a paid move seen through row ^= row << 1 contains a CZ chain between neighbouring columns.",
+   "status": "checked by computer",
+   "status_detail": "exact at block 2 for f = 2 to 5 and at block 3 for f = 3; argued by hand for every f at block 2 by a skeptic",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L18"
+  },
+  {
+   "id": "block-bounds-and-new-rules/46",
+   "statement": "Block 2 with Clifford chain maps of the listed kinds that have a reading at alpha (or all at 1): at least 2 moves per array, by the 27 lines on a cubic surface (a perfect certificate) and two lemmas about readings.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two AI skeptics (both re-ran the 27-line computation; one checked the proofs and narrowed the scope); superseded by Theorem 2W",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [
+    "everything-free"
+   ],
+   "shape": "2 in 3",
+   "saving_if_it_existed": 0.415,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": "block-bounds-and-new-rules/6",
+   "refuted_by": null,
+   "programs": [
+    "programs/chain-maps-certificates/"
+   ],
+   "data": [
+    "data/chain-maps/out_lines27.txt"
+   ],
+   "rerun_2026_10_19": "yes: lines27.py, relcheck.py and e2_counter.py, identical output; data/chain-maps/rerun_2026-10-19.txt",
+   "archive_entry": "L6"
+  },
+  {
+   "id": "block-bounds-and-new-rules/47",
+   "statement": "No certificate of the 27-line kind exists at the next readings (325 frames over the 16-element field, by Hirzebruch's inequality; 4,745 planes over the 8-element field, by Klein's classification).",
+   "status": "argued by hand, not checked",
+   "status_detail": "upheld by a skeptic; richer certificates are not excluded",
+   "date": "2026-10-14",
+   "block": 2,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "T9"
+  },
+  {
+   "id": "block-bounds-and-new-rules/48",
+   "statement": "Chain maps repeating every 2 columns are the engine at block 4 with paired directions; a unit needs at least 1.7826 pairs per array, which excludes 2 in 3, 3 in 5 and 4 in 7; the remaining 5 in 9 is covered by Theorem 2W.",
+   "status": "checked by computer",
+   "status_detail": "a skeptic recomputed the number with separate code and other primes; 5 in 9 by Theorem 2W (argued by hand, one skeptic)",
+   "date": "2026-10-13",
+   "block": 2,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "pairs_per_array": 1.7826
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/chain-maps-certificates/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L18"
+  },
+  {
+   "id": "block-bounds-and-new-rules/49",
+   "statement": "With row ^= row << 1 free, the phase i^(parity of one row over all columns) equals (1+i)/2 + (1-i)/2 x (column-wide sign flip) at every f; so the f = 1 shortcut is invalid and any product-form certificate must be Pauli-blind.",
+   "status": "argued by hand, not checked",
+   "status_detail": "checked by computer exactly up to f = 8 and by the automaton test; two AI skeptics upheld it",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/chain-maps-certificates/"
+   ],
+   "data": [
+    "data/chain-maps/out_relcheck.txt"
+   ],
+   "rerun_2026_10_19": "yes: lines27.py, relcheck.py and e2_counter.py, identical output; data/chain-maps/rerun_2026-10-19.txt",
+   "archive_entry": "L18"
+  },
+  {
+   "id": "block-bounds-and-new-rules/50",
+   "statement": "Block 3 with every free step a Clifford step with a reading at 1 (for example row0 ^= row1 << 1): at least 2.8 moves per array, so 3 in 8, 3 in 7 and 2 in 5 are excluded there.",
+   "status": "argued by hand, not checked",
+   "status_detail": "both halves checked by AI skeptics (counts 80, 144, 224 recomputed exactly over the rationals and modulo two large primes); extended by Theorem E+ to every chain map with a polynomial inverse when every other step is Clifford (theory-of-theories-and-logic, one skeptic)",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "chain maps with a reading at 1"
+   ],
+   "shape": "3 in 8",
+   "saving_if_it_existed": 0.107,
+   "numbers": {},
+   "supersedes": [
+    "open-directions-3 section 8 (14 October, morning): only 105/41 carries over at block 3 with chain maps"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/chain-maps-certificates/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L18"
+  },
+  {
+   "id": "block-bounds-and-new-rules/51",
+   "statement": "Block 3 with row ^= row << 1 or the running XOR free: the best certificate gives 231/131 = 1.763 moves per array (405 Fermat planes plus lifts, exact over Q(omega)); two natural constructions are capped below the 2.667 needed: 2.18 (Weil modules, computed) and 2.287 (keeping the Fermat planes, reproduced by a skeptic); lifts are capped only at 2.917 (a counting argument by hand), later lowered to 147/52 = 2.827 (theory-of-theories-and-logic), both above 2.667, so counting does not rule them out; 3 in 8 is open in this game.",
+   "status": "open",
+   "status_detail": "the 1.763 certificate is checked by computer (counts re-run by a skeptic)",
+   "date": "2026-10-14",
+   "block": 3,
+   "games": [
+    "chi game (running XOR free)"
+   ],
+   "shape": "3 in 8",
+   "saving_if_it_existed": 0.107,
+   "numbers": {
+    "best_bound": 1.763,
+    "needed": 2.667,
+    "lift_cap": 2.917,
+    "lift_cap_later": 2.827
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/chain-maps-certificates/"
+   ],
+   "data": [
+    "data/chain-maps/"
+   ],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L18"
+  },
+  {
+   "id": "block-bounds-and-new-rules/52",
+   "statement": "Weak bound for every cheap relabelling (chain maps, carries, affine maps of all address bits): if no mixing coefficient has an even denominator and the unit is correct at f = 2, it needs at least 1.5 moves per array at block 2 and 1.875 at block 3; it excludes no target.",
+   "status": "argued by hand, not checked",
+   "status_detail": "checked by AI skeptics, one of whom wrote out a missing lemma",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L18"
+  },
+  {
+   "id": "block-bounds-and-new-rules/53",
+   "statement": "Searches with chain maps free found no unit (least squares for 2 in 3, 3 in 5 at block 2 and 2 in 5 at block 3; exact fixed-shape searches for 3 in 8 and 2 in 5).",
+   "status": "open",
+   "status_detail": "evidence, not proof: the search found none of the existing units on 1,095 random 2-in-6 patterns; a skeptic rebuilt the least-squares search (99 of 99 checks) and re-ran it with a new seed; one apparent hit was a small-f artefact",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [
+    "everything-free"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "best_residual_2in3": 0.124,
+    "control_residual": 0.18
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "X35"
+  },
+  {
+   "id": "block-bounds-and-new-rules/54",
+   "statement": "Spare rows: in the game OpenAI's network lives in, rank-2 targets need 2W moves and rank-3 targets 3W, for every number of spare rows.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it by hand and tested 150 random words in each of four sizes",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/spare-rows/"
+   ],
+   "data": [
+    "data/spare-rows/"
+   ],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L16"
+  },
+  {
+   "id": "block-bounds-and-new-rules/55",
+   "statement": "Spare rows, full game: certificates give 1.8485 (rank 2, 3 rows), 1.7692 (rank 2, 4 rows), 2.4883 (rank 3, 4 rows), floors 1.5 and 1.75; adding a row can only lower the best rate.",
+   "status": "checked by computer",
+   "status_detail": "1.7692 reproduced by a skeptic's separate code; 2.4883 from one code family; superseded for rank 2 by Theorem 2W' and a Venn certificate",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "rank2_3rows": 1.8485,
+    "rank2_4rows": 1.7692,
+    "rank3_4rows": 2.4883
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/spare-rows/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L16"
+  },
+  {
+   "id": "block-bounds-and-new-rules/56",
+   "statement": "Rank-3 target, 2 arrays in 5 moves with 4 spare rows: the best certificate gives 2.4883 moves per array, 0.012 short of excluding it.",
+   "status": "open",
+   "status_detail": "",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": "2 in 5, rank-3 target, 4 spare rows",
+   "saving_if_it_existed": 0.166,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L16"
+  },
+  {
+   "id": "block-bounds-and-new-rules/57",
+   "statement": "OpenAI's finite-win game, Hadamard kernel on 4 and 8 entries: no word beats the plain call count (gossip bound 2N - 4; every dense 2 x 2 kernel).",
+   "status": "argued by hand, not checked",
+   "status_detail": "a classical theorem applied; no skeptic",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "entries_4": 4,
+    "entries_8": 12
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L19"
+  },
+  {
+   "id": "block-bounds-and-new-rules/58",
+   "statement": "Hadamard kernel on 16 entries: 28 to 31 calls are open; every word with 31 or fewer calls avoids every layer-boundary state, so no Cooley-Tukey-shaped word can be shortened; the case reduces to one unproved inequality.",
+   "status": "open",
+   "status_detail": "the reduction is argued by hand; annealing found nothing below 32 but failed to re-find a 32-call word, so it carries no weight; no skeptic",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": 0.039,
+   "numbers": {
+    "saving_31_calls": 0.0092,
+    "saving_28_calls": 0.039
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/finite-win-game/"
+   ],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L19"
+  },
+  {
+   "id": "block-bounds-and-new-rules/59",
+   "statement": "Zeta (subset-sum) kernel on 8 entries: no word with 11 or fewer calls exists, so Yates's 12 additions are optimal in OpenAI's finite-win game (11 calls would have saved 3.5e-2).",
+   "status": "checked by computer",
+   "status_detail": "5,528 of 6,828 output-order classes excluded by exact integer certificates, the other 1,300 searched exhaustively; one AI skeptic re-ran it and wrote an independent search for the hardest classes (its files were not kept)",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "classes": 6828,
+    "certified": 5528,
+    "searched": 1300
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/finite-win-game/"
+   ],
+   "data": [
+    "data/finite-win-game/"
+   ],
+   "rerun_2026_10_19": "yes: run_all.sh, 0 survivors at 11 calls over all 1,300 classes, 5,528 certificates valid; data/finite-win-game/rerun_zeta_2026-10-19.txt",
+   "archive_entry": "L19"
+  },
+  {
+   "id": "block-bounds-and-new-rules/60",
+   "statement": "Conjecture U: making more steps free (anything OpenAI's model does for a fixed amount of work per entry) never pushes a unit below 2, 2.8 and 41/13 moves per array at blocks 2, 3 and 4.",
+   "status": "open",
+   "status_detail": "shown (argued by hand, upheld) for the classes in the next findings; block 2 later closed for every bounded game by Theorem 2W; Theorem E+ (theory-of-theories-and-logic) later covered Clifford chain maps with a polynomial inverse at blocks 2 to 4",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L17"
+  },
+  {
+   "id": "block-bounds-and-new-rules/61",
+   "statement": "Conjecture U holds for every column-uniform free step (any relabelling, Toffoli included, any phases) plus any fixed invertible operators on a few end columns: 2W, 14W/5 and 41W/13 at blocks 2, 3 and 4.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two independent proofs, each checked by two AI skeptics; 38 to 40 mixed words with random non-unitary end operators tested",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [
+    "widened plus end-column steps"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L17"
+  },
+  {
+   "id": "block-bounds-and-new-rules/62",
+   "statement": "Theorem R-infinity: the counting theorem needs correctness only at infinitely many f, given the trace condition and unitary steps; the phases need entries in Z[zeta8, 1/2].",
+   "status": "argued by hand, not checked",
+   "status_detail": "upheld by AI skeptics; the field correction comes from a skeptic's counterexample (3 + 4i)/5",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "L17"
+  },
+  {
+   "id": "block-bounds-and-new-rules/63",
+   "statement": "Side claims of the Conjecture U round: the end-column theorem as a special case of the general reduction; the lemma for chain maps with polynomial inverses as stated; the lemma on families with banded label action; 'the f = 1 shortcut is dead however the runs are rewritten'.",
+   "status": "refuted",
+   "status_detail": "the first three refuted by AI skeptics (the global phase i^f; a false lemma; a counterexample with two global-parity maps), the fourth narrowed",
+   "date": "2026-10-14",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "AI skeptics (e2_counter.py and the round's logic skeptics)",
+   "programs": [
+    "programs/chain-maps-certificates/"
+   ],
+   "data": [
+    "data/chain-maps/skeptic/out_e2_counter.txt"
+   ],
+   "rerun_2026_10_19": "yes: lines27.py, relcheck.py and e2_counter.py, identical output; data/chain-maps/rerun_2026-10-19.txt",
+   "archive_entry": "C10"
+  },
+  {
+   "id": "block-bounds-and-new-rules/64",
+   "statement": "Hub-side levers tried on 13 October: folding small blocks into idle children (0 qualify), a weaker halving rule (unused by the template), Kerdock sets and mutually unbiased bases (copy charge 1 against E8's 0.6) give nothing.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "R26"
+  },
+  {
+   "id": "block-bounds-and-new-rules/65",
+   "statement": "Odd-or-zero line systems beyond E8 are closed at dimensions 10 and 12; one open object, 1,023 lines in 31 dimensions, would beat E8 by a constant factor.",
+   "status": "open",
+   "status_detail": "a heuristic search (best about 0.21 of E8's ceiling); no skeptic",
+   "date": "2026-10-13",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "R27"
+  },
+  {
+   "id": "block-bounds-and-new-rules/66",
+   "statement": "Augmentation lemma: with every free step set to 1, the moves that reach the final frame have W independent landing vectors, so a shared start serves two arrays only if its branches land different parts of the content or a register holds two bundles; at block 3 a single-term second move wastes 8 of 80.",
+   "status": "argued by hand, not checked",
+   "status_detail": "no skeptic; the waste computed at two primes",
+   "date": "2026-10-13",
+   "block": 3,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "T16"
+  },
+  {
+   "id": "block-bounds-and-new-rules/67",
+   "statement": "A free Toffoli between two moves makes the second move perfect for the block-3 hook (f(d2 TOF d1) = 160 = 2 x 80, exact over Q(i)).",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated",
+   "date": "2026-10-13",
+   "block": 3,
+   "games": [
+    "widened"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "value": 160
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/tightness-at-block-3/"
+   ],
+   "data": [
+    "data/tightness-at-block-3/out_exact_hook.txt"
+   ],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "T11"
+  },
+  {
+   "id": "block-bounds-and-new-rules/68",
+   "statement": "An 'approximate unit' at block 2 found on 13 October.",
+   "status": "refuted",
+   "status_detail": "a modelling bug (the model dropped a factor of each term), found by its author; no skeptic could be spawned",
+   "date": "2026-10-13",
+   "block": 2,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "its author (modelling bug)",
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "C8"
+  },
+  {
+   "id": "block-bounds-and-new-rules/69",
+   "statement": "'3 in 8 at block 3 is open even in the plain engine' (a chain-map round's report).",
+   "status": "refuted",
+   "status_detail": "by the 14W/5 bound, which excludes it in the engine game; it is open only with the running XOR free",
+   "date": "2026-10-13",
+   "block": 3,
+   "games": [],
+   "shape": "3 in 8",
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "14W/5 (finding 7)",
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "C9"
+  },
+  {
+   "id": "block-bounds-and-new-rules/70",
+   "statement": "'The hook reaches 4(n-1)/(n+2) at every block size.'",
+   "status": "refuted",
+   "status_detail": "very likely false at block 4, where three codes find the k = 8 hook stops at 41/13 (computed with high probability, not proved)",
+   "date": "2026-10-13",
+   "block": 4,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "three independent computations of 86,592 (with high probability)",
+   "programs": [],
+   "data": [],
+   "rerun_2026_10_19": "no",
+   "archive_entry": "T4"
+  }
+ ],
+ "open": [
+  {
+   "id": "block-bounds-and-new-rules/open-1",
+   "question": "Is there a 5 in 14 at block 3 (or a multiple)?",
+   "worth": 0.0628,
+   "first_experiment": "Decide one sector of the S8 sub-game of idea-rounds exactly by a search with one representative per symmetry orbit, judging candidates by the per-array end condition at f = 6.",
+   "programs": [
+    "programs/five-in-fourteen-block3/"
+   ]
+  },
+  {
+   "id": "block-bounds-and-new-rules/open-2",
+   "question": "3 in 8 at block 3 with the running XOR (row ^= row << 1) free",
+   "worth": 0.107,
+   "first_experiment": "Solve for the best Pauli-blind frame family on the 891 frames of the reading at alpha as a linear programme over orbit sums (the 169/57 cap leaves room above 2.667); in parallel an exact search with chain-map menus correct at f = 2, 3, 4, hits confirmed by every_f.py.",
+   "programs": [
+    "programs/chain-maps-certificates/",
+    "programs/chain-maps-cost-and-every-f/"
+   ]
+  },
+  {
+   "id": "block-bounds-and-new-rules/open-3",
+   "question": "Can a certificate close 2 in 7 or 3 in 10 at block 4 (above 3.5 or 3.33 moves per array)?",
+   "worth": 0.132,
+   "first_experiment": "Compute the exact finite-group form of the duality relaxation at block 3 (does anything beat 2.8?), then at block 4.",
+   "programs": [
+    "programs/duality-best-theorem-R-bound/"
+   ]
+  },
+  {
+   "id": "block-bounds-and-new-rules/open-4",
+   "question": "Rank-3 target, 2 in 5 with 4 spare rows",
+   "worth": 0.166,
+   "first_experiment": "Repeat the averaging proof that closed the 3-row case on the 2,295 Lagrangian frames of 4 rows, or try three-factor certificates.",
+   "programs": [
+    "programs/spare-rows/"
+   ]
+  },
+  {
+   "id": "block-bounds-and-new-rules/open-5",
+   "question": "Hadamard kernel on 16 entries in OpenAI's finite-win game: a word with 28 to 31 calls?",
+   "worth": 0.039,
+   "first_experiment": "Prove that a Kronecker layer followed by a direct sum cannot share calls, or run an exhaustive structural search built like tdfs.c with cell and singleton-state prunes; add the zeta kernel on 16 entries.",
+   "programs": [
+    "programs/finite-win-game/"
+   ]
+  },
+  {
+   "id": "block-bounds-and-new-rules/open-6",
+   "question": "Conjecture U at block 3 with Toffoli and chain maps together; column mixing at block 4 beyond Theorem E+ (the running XOR, non-Clifford steps)",
+   "worth": 0.107,
+   "first_experiment": "Look for a Pauli-blind certificate that Toffoli keeps (or an identity forcing it to be empty), first with Toffoli plus row0 ^= row1 << 1; calibrate block 4 with the period-2 computation.",
+   "programs": [
+    "programs/chain-maps-certificates/"
+   ]
+  },
+  {
+   "id": "block-bounds-and-new-rules/open-7",
+   "question": "41W/13 in Lean",
+   "worth": null,
+   "first_experiment": "Split the 16 character blocks further by the bit-swap group of hookG.py (blocks of about 1,400) and time the Lean kernel on one block.",
+   "programs": [
+    "programs/lean-block2-block3/",
+    "programs/block4-hook-41-over-13/"
+   ]
+  },
+  {
+   "id": "block-bounds-and-new-rules/open-8",
+   "question": "Does the best Theorem-R bound grow in step with the block size?",
+   "worth": null,
+   "first_experiment": "Compute the duality bound at block 5 restricted to frames within distance 2 of the start and of the target.",
+   "programs": []
+  },
+  {
+   "id": "block-bounds-and-new-rules/open-9",
+   "question": "An independent check of the duality certificates",
+   "worth": null,
+   "first_experiment": "Check the 18-row block-3 certificate by hand and re-implement verify3.py independently.",
+   "programs": [
+    "programs/duality-best-theorem-R-bound/"
+   ]
+  },
+  {
+   "id": "block-bounds-and-new-rules/open-10",
+   "question": "1,023 odd-or-zero lines in 31 dimensions",
+   "worth": null,
+   "first_experiment": "A sign search with a SAT solver on a Linux machine.",
+   "programs": []
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/lean-block2-block3/",
+   "language": "lean",
+   "shows": "Theorem R, the hook, block 2 and block 3 in Lean",
+   "command": "lake build Work.PfLean.Dem3Final Work.PfLean.Statements Work.PfLean.NegControl (after copying PfLean/*.lean to Work/PfLean/)",
+   "time": "about 45 minutes of one core for the kernel checks",
+   "memory": "up to 10 GB",
+   "needs": [
+    "Lean 4.34.1",
+    "Mathlib (this repository's pin)"
+   ],
+   "rerun_2026_10_19": "yes: the Lean files rebuilt from the same sources on a Linux machine of Google's Colab service (exit 0, 11 minutes, 10.06 GB, three standard axioms, negative control rejected); programs/lean-block2-block3/logs/rebuild_2026-10-19.txt"
+  },
+  {
+   "path": "programs/hook-certificates-blocks-2-to-6/",
+   "language": "c, python",
+   "shows": "caps, demands and two-move caps of the hooks at blocks 2 to 6, with separate checkers",
+   "command": "python3 -I check_m3.py; ./check_m0 cert_m4_M0.txt; ./check_capA 4 8; ./check_b2 cert_b2_m4.txt",
+   "time": "seconds; the block-4 demand about an hour",
+   "memory": "under 250 MB",
+   "needs": [
+    "C compiler"
+   ],
+   "rerun_2026_10_19": "yes: the certificate checkers PASS on an Apple M4 Mac mini; data/hook-certificates/rerun_light_2026-10-19.txt"
+  },
+  {
+   "path": "programs/widened-game-hook-block3/",
+   "language": "python",
+   "shows": "the hook in the widened game and the skeptics' checks",
+   "command": "python3 -I verify_hook.py 3 5",
+   "time": "seconds; kept_check about 8 minutes",
+   "memory": "up to 1.3 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes: verify_hook.py, hookcheck.py (mod p) and kept_check.py give the same values; data/widened-game-hook-block3/rerun_2026-10-19.txt"
+  },
+  {
+   "path": "programs/block4-hook-41-over-13/",
+   "language": "python, c",
+   "shows": "41/13 at block 4",
+   "command": "cc -O3 -shared -fPIC -o libent.so ent.c -lpthread; python3 -I hookG.py 4 8 01,23",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes: hookG.py gives f(K) >= 86592 (certified) in 48 s; data/block4-hook/rerun_2026-10-19.txt; the 5,412 x 5,412 demand certificate re-checked: determinant 1797789153 mod 2,147,483,629, PASS; data/hook-certificates/rerun_check_m4_2026-10-19.txt"
+  },
+  {
+   "path": "programs/commutative-slice-certificates/",
+   "language": "python",
+   "shows": "commutative-slice exclusions",
+   "command": "python3 -I check_lp.py CERT.json",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [],
+   "rerun_2026_10_19": "yes: check_lp.py (blocks 2 to 5) and check_matroid.py (2 in 7) PASS; data/commutative-slice/rerun_2026-10-19.txt"
+  },
+  {
+   "path": "programs/family-S-depth-lemma/",
+   "language": "python",
+   "shows": "Farkas certificates for single-term contents",
+   "command": "python3 -I check_farkas.py farkas_familyS.json 3",
+   "time": "about 3 minutes",
+   "memory": "small",
+   "needs": [],
+   "rerun_2026_10_19": "yes: RESULT: PASS; data/family-S/rerun_2026-10-19.txt"
+  },
+  {
+   "path": "programs/engine-bounds-blocks-5-and-6/",
+   "language": "python",
+   "shows": "2.9447, 2.99172, 2.97290",
+   "command": "python3 -I induct.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes: induct.py and checks.py, identical output; data/engine-bounds-blocks-5-and-6/rerun_2026-10-19.txt"
+  },
+  {
+   "path": "programs/certificate-ceilings/",
+   "language": "python",
+   "shows": "ceilings of certificate families; the table arithmetic",
+   "command": "python3 -I numbers.py",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy for table.py"
+   ],
+   "rerun_2026_10_19": "yes: numbers.py and table.py, identical output; data/certificate-ceilings/rerun_2026-10-19.txt"
+  },
+  {
+   "path": "programs/ladder-above-theorem-R/",
+   "language": "python",
+   "shows": "growth ratios and depth-bound checks",
+   "command": "python3 -I ladder_check.py",
+   "time": "about a minute",
+   "memory": "small",
+   "needs": [
+    "numpy for hook_c2.py, venn_c2.py"
+   ],
+   "rerun_2026_10_19": "no"
+  },
+  {
+   "path": "programs/duality-best-theorem-R-bound/",
+   "language": "python",
+   "shows": "duality certificates and verifiers",
+   "command": "python3 -I verify3.py certificate_u_1.json",
+   "time": "seconds",
+   "memory": "small",
+   "needs": [
+    "numpy and scipy for the generators"
+   ],
+   "rerun_2026_10_19": "no"
+  },
+  {
+   "path": "programs/five-in-fourteen-block3/",
+   "language": "python",
+   "shows": "single-term gain table at block 3",
+   "command": "python3 -I check_r1.py cert_r1.json",
+   "time": "minutes",
+   "memory": "small",
+   "needs": [],
+   "rerun_2026_10_19": "yes: check_r1.py PASS, same table; data/five-in-fourteen/rerun_2026-10-19.txt"
+  },
+  {
+   "path": "programs/toffoli-routes-block4/",
+   "language": "python",
+   "shows": "route counts in the widened game",
+   "command": "python3 -I census.py 4",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes: census.py 3 and 4 give 105 and 736,785; data/toffoli-routes-block4/rerun_2026-10-19.txt"
+  },
+  {
+   "path": "programs/chain-maps-cost-and-every-f/",
+   "language": "python",
+   "shows": "cost of chain maps in OpenAI's model; the every-f automaton test",
+   "command": "python3 -I every_f.py",
+   "time": "seconds",
+   "memory": "under 50 MB",
+   "needs": [],
+   "rerun_2026_10_19": "yes: every_f.py and ram_letters.py, identical output; data/chain-maps/rerun_2026-10-19.txt"
+  },
+  {
+   "path": "programs/chain-maps-certificates/",
+   "language": "python",
+   "shows": "27 lines, readings, 891 frames, parity identity, refuted lemma, period-2 maps",
+   "command": "python3 -I lines27.py",
+   "time": "seconds to minutes",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "yes: lines27.py, relcheck.py and e2_counter.py, identical output; data/chain-maps/rerun_2026-10-19.txt"
+  },
+  {
+   "path": "programs/spare-rows/",
+   "language": "python",
+   "shows": "spare-row certificates",
+   "command": "python3 -I comm_cert.py",
+   "time": "minutes",
+   "memory": "small",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_2026_10_19": "no"
+  },
+  {
+   "path": "programs/finite-win-game/",
+   "language": "c, python",
+   "shows": "zeta kernel on 8 entries; tools for the Hadamard kernel on 16",
+   "command": "PYTHON=python3 sh run_all.sh",
+   "time": "about 15 minutes",
+   "memory": "under 200 MB",
+   "needs": [
+    "C compiler",
+    "numpy",
+    "scipy >= 1.9"
+   ],
+   "rerun_2026_10_19": "yes: run_all.sh, 0 survivors at 11 calls over all 1,300 classes, 5,528 certificates valid; data/finite-win-game/rerun_zeta_2026-10-19.txt"
+  },
+  {
+   "path": "programs/tightness-at-block-3/",
+   "language": "python",
+   "shows": "exact hook gains; partial moves; Toffoli between moves",
+   "command": "python3 -I exact_hook.py",
+   "time": "minutes",
+   "memory": "small",
+   "needs": [],
+   "rerun_2026_10_19": "no"
+  }
+ ]
+}

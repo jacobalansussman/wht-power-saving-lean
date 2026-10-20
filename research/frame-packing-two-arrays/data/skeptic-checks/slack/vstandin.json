@@ -1,0 +1,14 @@
+{
+ "outputs_exact_in_VxV": [
+  true,
+  true
+ ],
+ "all_mixing_matrices_in_A_block_algebra": true,
+ "moves_act_on_inputs_only (depth 1)": true,
+ "frame distance of R = D0": 1,
+ "frame distance of K = D1 D0": 2,
+ "M": 3,
+ "Wm": 4,
+ "deficit": 1,
+ "deficit_parity": "odd"
+}

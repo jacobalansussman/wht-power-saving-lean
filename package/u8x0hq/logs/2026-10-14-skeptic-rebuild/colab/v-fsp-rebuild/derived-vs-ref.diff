@@ -1,0 +1,32 @@
+269c269
+< def decimalExponent : ℝ := 1 - 1/(10^(13:ℕ))
+---
+> def decimalExponentU8X0HQ : ℝ := 1 - 16256629/(10^(10:ℕ))
+274c274
+< def decimalTime (n : ℕ) : ℝ := (n:ℝ) * (Real.log (n:ℝ)) ^ decimalExponent
+---
+> def decimalTimeU8X0HQ (n : ℕ) : ℝ := (n:ℝ) * (Real.log (n:ℝ)) ^ decimalExponentU8X0HQ
+317c317
+< def TimeBounds (W : ℕ → ℕ) : Prop :=
+---
+> def TimeBoundsU8X0HQ (W : ℕ → ℕ) : Prop :=
+319c319
+<   W' =O[atTop] paperTime ∧ W' =O[atTop] decimalTime ∧ W' =o[atTop] nlogn
+---
+>   W' =O[atTop] paperTime ∧ W' =O[atTop] decimalTimeU8X0HQ ∧ W' =o[atTop] nlogn
+321c321
+< def DFTGoal : Prop := ∃ order solve W, DFTProgram order solve W ∧ TimeBounds W
+---
+> def DFTGoalU8X0HQ : Prop := ∃ order solve W, DFTProgram order solve W ∧ TimeBoundsU8X0HQ W
+323c323
+< def ConvGoal : Prop := ∃ order solve W, ConvProgram order solve W ∧ TimeBounds W
+---
+> def ConvGoalU8X0HQ : Prop := ∃ order solve W, ConvProgram order solve W ∧ TimeBoundsU8X0HQ W
+326c326
+< theorem transform_main : DFTGoal := by
+---
+> theorem transform_mainU8X0HQ : DFTGoalU8X0HQ := by
+330c330
+< theorem convolution_main : ConvGoal := by
+---
+> theorem convolution_mainU8X0HQ : ConvGoalU8X0HQ := by

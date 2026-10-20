@@ -1,0 +1,19 @@
+===== certificates: argued =====
+m=2 ranks<=2: boosters negative at 0/200 grid points of (0,1)
+   cover [0.9, 0.9983]: eps = -0 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.9983 (eps -0), v = {}
+m=3 ranks<=3: boosters negative at 0/200 grid points of (0,1)
+   cover [0.9, 0.9983]: eps = -0 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.9983 (eps -0), v = {}
+m=4 ranks<=4: boosters negative at 0/200 grid points of (0,1)
+   cover [0.9, 0.9983]: eps = -0 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.9983 (eps -0), v = {}
+m=5 ranks<=5: boosters negative at 0/200 grid points of (0,1)
+   cover [0.9, 0.9983]: eps = -0 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.9983 (eps -0), v = {}
+m=6 ranks<=6: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 7.56e-05 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 1e-09), v = {2: -0.11501, 3: 0.20991, 4: 0.35764, 5: -0.88499, 6: 0.43245}
+m=7 ranks<=6: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=7 ranks<=7: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 0.000129 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 1e-09), v = {2: -0.13913, 3: 0.18367, 4: 0.5609, 5: -0.86087, 7: 0.25542}
+m=8 ranks<=6: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=8 ranks<=7: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+m=8 ranks<=8: boosters negative at 200/200 grid points of (0,1), from 0.005 to 0.999
+   cover [0.9, 0.9983]: eps = 0.000243 (eps > 0: one certificate-allowed booster negative on the whole window); smallest theta0 with a cover of [theta0, 0.9983]: 0.0000 (eps 5.2e-08), v = {2: -0.10749, 3: -0.01438, 4: 0.61827, 6: -0.87813, 8: 0.38173}
+python3 -B lp2.py argued  54.58s user 0.80s system 98% cpu 56.083 total

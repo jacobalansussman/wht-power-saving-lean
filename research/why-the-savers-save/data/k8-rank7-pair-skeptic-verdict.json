@@ -1,0 +1,36 @@
+{
+ "label": "v-k8-1",
+ "date": "2026-10-13",
+ "role": "skeptic of k8-twin both-pairs claim",
+ "rerun_colab2": {
+  "hub_fresh_clone_main": "1b59b624d21924f8e3537cdc1ac52d3be6eda2fe (package dirs identical to ba82555c)",
+  "admit": "hub main research/k8-rank7-composition/admit.py (sha e0edcb63, = PR1090) with only the width-inventory line set to {4:56,5:32,7:34,8:118,9:240}",
+  "control_1042_replay": "PASS_GAUGE44_T16_STRICT_GLOBAL_REPLAY 0.001672188119205421",
+  "word_audit": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES fcdff8bd...",
+  "native": "PASS_NATIVE_ALL both words; wrappers PASS_RESIDUAL_WRAPPERS_ARE_EXACT",
+  "admission_both_pairs": "PASS_COMPLETE_K8_RANK7_ASSEMBLY 0.001673020532498619 (conservative 0.001673020529646581); 6 independent controls, deficit 5120",
+  "pricer": "0.001673020532498619 from the assembly profile"
+ },
+ "prior_claim": {
+  "pr": 1148,
+  "author": "tomdif (Thomas DiFiore)",
+  "pr_created": "2026-10-13T19:08:12Z",
+  "head": "3ba07f190e64bf7748f669d40fc5c37f77ce5dc4",
+  "package": "research/k8-eight-ends (commit 9395e6311d, 2026-10-13T17:45:00Z)",
+  "helpers_rank7": [
+   572,
+   573,
+   574,
+   575,
+   580,
+   581,
+   582,
+   583
+  ],
+  "input_word": "c2b29430... (same k8 word)",
+  "kappa_eight_ends": "0.001673414377866467 (PASS_K8_EIGHT_RANK7_ENDS_COMPLETE_ADMISSION, its CLAIM.json)",
+  "kappa_pr_final": "0.001675560947524449",
+  "overlap": "all 24 annotation edits of our W-k8-574-575-580-581 recipe appear verbatim in #1148 RECIPE.json (B, early_cleanup 93/94/96/100, helper_final 574/575/580/581)"
+ },
+ "verdict": "refuted: the admission figure reproduces, but 580/581 rank-7 ends on the k8 word are already claimed in open PR #1148 (before our scan), as a strict superset with higher admitted kappa; the claim that no PR claims 580/581 is false"
+}

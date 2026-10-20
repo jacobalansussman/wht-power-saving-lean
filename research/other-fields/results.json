@@ -1,0 +1,2037 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "other-fields",
+ "title": "Famous problems, network coding and quantum computing",
+ "dates": "2026-10-10 to 2026-10-15 (research), 2026-10-19 (re-runs and this write-up)",
+ "made_with": "AI agents (Claude) directed by the author; usually one AI skeptic per result, a few had two or three, some none; nothing found in these rounds is checked in Lean (preprints-8 is a cross-reference to a Lean-proved result of another section); no person has read the arguments",
+ "guard": "no claim of the author's own about any network-coding conjecture, and nothing about the correctness of the two network-coding preprints of 7 October 2026",
+ "status_words": [
+  "proved in Lean",
+  "checked by computer",
+  "argued by hand, not checked",
+  "refuted",
+  "open"
+ ],
+ "counts": {
+  "proved in Lean": 1,
+  "checked by computer": 16,
+  "argued by hand, not checked": 23,
+  "refuted": 8,
+  "open": 1
+ },
+ "findings": [
+  {
+   "id": "other-fields/famous-1",
+   "statement": "The problem is not another famous problem in disguise: it is the classic question whether the Fourier transform's N log N can be beaten, answered yes by OpenAI's preprints of September 2026; the refined question, the exact value of the best saving, has no famous name that the surveys found.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a literature reading by five survey agents, each read by one AI skeptic, plus a completeness critic; no person has checked it",
+   "date": "2026-10-14",
+   "field": "circuit complexity",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "README.md#1-it-is-a-famous-problem-not-another-one-in-disguise"
+   ],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/famous-2",
+   "statement": "The best DFT saving (all lengths) equals the best saving for exact complex polynomial multiplication (cyclic convolution): convolution theorem one way, Bluestein's trick with linearisation (at most 3x) the other.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a standard argument; the identities checked by computer for n = 1 to 40 by an AI skeptic",
+   "date": "2026-10-14",
+   "field": "algebraic complexity",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/famous-problems/lower-bounds/out_c4.txt",
+    "data/famous-problems/lower-bounds/skeptic_out_v_checks.txt"
+   ],
+   "programs": [
+    "programs/famous-problems/lower-bounds/c4_dft_polymult_equivalence.py",
+    "programs/famous-problems/lower-bounds/skeptic_v_checks.py"
+   ],
+   "archive_entry": "M2"
+  },
+  {
+   "id": "other-fields/famous-3",
+   "statement": "The best WHT saving equals the XOR-convolution saving and the saving of the Kronecker powers of every invertible 2x2 kernel that is not a permutation times a diagonal (Yates's zeta transform, the disjointness matrix, OpenAI's kernel C), via (-1)^(x.y) = i^|x| i^|y| i^(-|x xor y|) and H = U diag(1,-2) P U P.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the identity checked exactly by computer up to N = 128 and over finite fields, by two agents independently; one AI skeptic upheld the relation",
+   "date": "2026-10-14",
+   "field": "algebraic complexity",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/famous-problems/kernels-and-matrix-multiplication/out_universal.txt",
+    "data/famous-problems/kernels-and-matrix-multiplication/skeptic_out_xorbluestein.txt",
+    "data/famous-problems/network-coding-map/checks_out.txt"
+   ],
+   "programs": [
+    "programs/famous-problems/kernels-and-matrix-multiplication/universal.py",
+    "programs/famous-problems/kernels-and-matrix-multiplication/skeptic_xorbluestein.py",
+    "programs/famous-problems/network-coding-map/checks.py"
+   ],
+   "archive_entry": "M3"
+  },
+  {
+   "id": "other-fields/famous-4",
+   "statement": "Proving that the best saving is below 1 would give a superlinear lower bound for an explicit linear map (Valiant's problem) and, through WHT(n^2) <= 6 MM(n), a lower bound of about n^2 (log n)^eps for matrix multiplication; the links run one way and the two consequences are nested.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the AI skeptics of three surveys upheld the link to Valiant's problem and two upheld the link to matrix multiplication; one built Strassen's algorithm as a circuit (n = 2, 4), fixed one factor to H and linearised it exactly within 6 C(n) gates; s* < 1 gives a bound only infinitely often",
+   "date": "2026-10-14",
+   "field": "circuit complexity",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/famous-problems/lower-bounds/out_c1.txt",
+    "data/famous-problems/kernels-and-matrix-multiplication/skeptic_out_linearise.txt",
+    "data/famous-problems/kernels-and-matrix-multiplication/out_fourstep.txt"
+   ],
+   "programs": [
+    "programs/famous-problems/lower-bounds/c1_wht_via_matmul.py",
+    "programs/famous-problems/kernels-and-matrix-multiplication/skeptic_linearise.py",
+    "programs/famous-problems/kernels-and-matrix-multiplication/fourstep.py"
+   ],
+   "archive_entry": "M4"
+  },
+  {
+   "id": "other-fields/famous-5",
+   "statement": "The construction side and the restricted-game bounds match no famous open problem: each open unit question (fixed W, M, m, game and scratch bound) is a finite system of polynomial equations, decidable over C; hard by size, not by depth.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued in the survey; no skeptic disputed it",
+   "date": "2026-10-14",
+   "field": "circuit complexity",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "README.md#3-which-half-is-famous-hard"
+   ],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/famous-6",
+   "statement": "The saving for H equals the saving for the single quadratic polynomial y^T H x within a factor 15 (Baur-Strassen reverse mode, then linearisation).",
+   "status": "argued by hand, not checked",
+   "status_detail": "no AI skeptic has read it; one exact test on H with up to 32 points and on random matrices (constant 12 on those instances)",
+   "date": "2026-10-14",
+   "field": "algebraic complexity",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/famous-problems/quadratic-polynomial/out_k1.txt"
+   ],
+   "programs": [
+    "programs/famous-problems/quadratic-polynomial/k1_baur_strassen.py"
+   ],
+   "archive_entry": "M6"
+  },
+  {
+   "id": "other-fields/famous-7",
+   "statement": "Classical simulation of a Hadamard layer or the QFT on a state vector is literally the WHT or the DFT; the units are the first such simulations whose saving grows with n (not the first below n 2^n: Alman and Rao's 23/24 and the 5/6 result came first); at 40 qubits a saving of 1.63e-3 is worth a factor of about 1.006.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a literal restatement; one AI skeptic upheld it and corrected the 'first below n 2^n' wording",
+   "date": "2026-10-14",
+   "field": "quantum simulation",
+   "figure": 1.006,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/famous-problems/quantum-simulation/out_stab_frames.txt"
+   ],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/famous-8",
+   "statement": "The best DFT saving and the best WHT saving are two numbers not known to be equal; OpenAI's DFT preprint carries unit-type Kronecker constructions to the DFT at every length, but no reduction is known for arbitrary circuits or from the DFT to the WHT.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an AI skeptic's correction of an earlier summary that treated them as one number; a later argument (16 October, idea-rounds section) via Rader's trick over finite fields is not checked",
+   "date": "2026-10-14",
+   "field": "algebraic complexity",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "README.md#2-exact-reshapings-all-of-them-known"
+   ],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/famous-9",
+   "statement": "The network coding conjecture (Li and Li; Harvey, Kleinberg and Lehman) implies a best saving of 0, through the shift-network map of Afshani, Freksen, Kamma and Larsen; the networks this map makes from a saving of 1.68e-3 need log2 N of at least 2^595 (about 2^1786 with the guaranteed constant loss of about 8). No claim is made about the conjecture itself.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the implication is the published map, re-derived step by step by one agent; an AI skeptic checked its finite-field step by computer and corrected the constant from about 2 to about 8",
+   "date": "2026-10-14",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {
+    "log2N_exponent_favourable": 595,
+    "log2N_exponent_guaranteed": 1786,
+    "guaranteed_constant": 8
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/famous-problems/network-coding-map/checks_out.txt",
+    "data/famous-problems/network-coding-map/skeptic_vchecks_out.txt"
+   ],
+   "programs": [
+    "programs/famous-problems/network-coding-map/checks.py",
+    "programs/famous-problems/network-coding-map/skeptic_vchecks.py"
+   ],
+   "archive_entry": "M5"
+  },
+  {
+   "id": "other-fields/famous-10",
+   "statement": "Rigidity, Strassen's asymptotic spectrum, direct-sum problems, Alman's bounded-depth results, Morgenstern's and Ailon's restricted models, quantum gate counts, stabiliser rank, index coding and the group FFT conjecture have the same shape as the problem or share tools with it; none is a reduction. The Hadamard conjecture, orthogonal designs, the asymptotic rank conjecture, Cohn-Umans, VP vs VNP, P vs NP, log-rank, sunflower, Kakeya and Hilbert's 10th and 13th problems have no relation.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic per area corrected the relation types (rigidity upgraded to shared tools; direct sum downgraded to an analogy; Sylvester-Gallai, design matrices and cap sets downgraded to none or tools)",
+   "date": "2026-10-14",
+   "field": "several",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "README.md#5-what-only-looks-the-same"
+   ],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/famous-11",
+   "statement": "The community's 120 E8 labels and the 135 block-3 frames are the nonsingular and singular points of one quadric O+(8,2), with explicit isomorphisms; E8's packing and kissing properties play no part.",
+   "status": "checked by computer",
+   "status_detail": "an AI skeptic computed the isomorphisms with its own code",
+   "date": "2026-10-14",
+   "field": "finite geometry",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/famous-problems/finite-geometry/out_c1.txt",
+    "data/famous-problems/finite-geometry/out_c3.txt",
+    "data/famous-problems/finite-geometry/skeptic_out_v1.txt"
+   ],
+   "programs": [
+    "programs/famous-problems/finite-geometry/c1_e8_labels.py",
+    "programs/famous-problems/finite-geometry/c3_frames_vs_quadric.py",
+    "programs/famous-problems/finite-geometry/skeptic_v1_iso.py"
+   ],
+   "archive_entry": "M7"
+  },
+  {
+   "id": "other-fields/famous-12",
+   "statement": "For relabellings that form a 2-group, the frustration classes of two-array separations are exactly the nonzero cosets of RM(1,k), also with X letters allowed; an order-3 letter breaks the picture (two pieces suffice).",
+   "status": "argued by hand, not checked",
+   "status_detail": "checked by computer on small cases; one AI skeptic",
+   "date": "2026-10-14",
+   "field": "coding theory",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/famous-problems/finite-geometry/out_c2.txt",
+    "data/famous-problems/finite-geometry/skeptic_out_v2.txt"
+   ],
+   "programs": [
+    "programs/famous-problems/finite-geometry/c2_frustration_rm.py",
+    "programs/famous-problems/finite-geometry/skeptic_v2_fullpauli.py"
+   ],
+   "archive_entry": "M7"
+  },
+  {
+   "id": "other-fields/famous-13",
+   "statement": "Whether a better complex unit says anything about OpenAI's integer-multiplication exponent is unresolved: the skeptics label the relation shared tools or same shape, the critic one-way.",
+   "status": "open",
+   "status_detail": "the labels disagree",
+   "date": "2026-10-14",
+   "field": "integer multiplication",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "README.md#5-what-only-looks-the-same"
+   ],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-1",
+   "statement": "The transform game's complex side has an exact stabiliser dictionary: frames are Lagrangians (stabiliser states up to sign), free steps on one array are the Hadamard-free Clifford group up to scalars, a paid move is sqrt(X) after a CNOT circuit (one Hadamard up to free gates and e^(i pi/4)), frame distance is the least Hadamard count of the transition Clifford, subspace frames are S-twisted CSS states, the frame graph is the dual polar graph of Sp(2m,2), and the E8 knows-pattern is the commutation graph of the 120 odd-Y four-qubit Paulis.",
+   "status": "checked by computer",
+   "status_detail": "every row computed exactly at small m (m <= 3 or 4) by one agent and recomputed by an AI skeptic with its own code written from the Lean engine's definitions",
+   "date": "2026-10-13",
+   "field": "quantum information",
+   "figure": null,
+   "numbers": {
+    "frames": [
+     3,
+     15,
+     135,
+     2295
+    ],
+    "stabiliser_states": [
+     6,
+     60,
+     1080,
+     36720
+    ],
+    "subspace_frames": [
+     2,
+     5,
+     16,
+     67
+    ]
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/quantum-dictionary/dictionary-check/dictcheck.out",
+    "data/quantum-dictionary/dictionary-skeptic/run_final.out",
+    "data/quantum-dictionary/literature-checks/dictcheck.out"
+   ],
+   "programs": [
+    "programs/quantum-dictionary/dictionary-check/dictcheck.py",
+    "programs/quantum-dictionary/dictionary-skeptic/recheck.py",
+    "programs/quantum-dictionary/literature-checks/dictcheck.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-2",
+   "statement": "The stabiliser link 'appears new as a connection'.",
+   "status": "refuted",
+   "status_detail": "every fact is textbook quantum information, and the Clifford reading of frames was already in the community (icekylinx's general Clifford frame lemma, pull request #130; eumemic's pull request #288; the community's exact-Clifford scripts and Lean file) and in this project's notes of 9 October",
+   "date": "2026-10-13",
+   "field": "quantum information",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the novelty skeptic of the quantum round, 13 October",
+   "evidence": [
+    "README.md#6-the-quantum-dictionary"
+   ],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-3",
+   "statement": "Interval lemma: the frames on shortest paths between two frames at distance d are exactly those Z with Z = (Z cap X) + (Z cap Y) and form a copy of the subspace lattice of F_2^d; so shortest paths from start to end pass only through subspace frames (in quantum words, a stabiliser group lies on a shortest path from |0..0> to |+..+> exactly when it is CSS).",
+   "status": "argued by hand, not checked",
+   "status_detail": "two AI skeptics re-derived it; checked by computer on every pair at m = 2, 3 and 94,095 pairs at m = 4; its use for the copy wall assumes ports run without detours",
+   "date": "2026-10-13",
+   "field": "finite geometry",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/quantum-dictionary/sandwich-and-twists/twist_m3.txt",
+    "data/quantum-dictionary/sandwich-skeptic-model/indep_part1.txt",
+    "data/quantum-dictionary/sandwich-skeptic-model/indep_count.txt"
+   ],
+   "programs": [
+    "programs/quantum-dictionary/sandwich-and-twists/twist.py",
+    "programs/quantum-dictionary/sandwich-skeptic-math/interval_check.py",
+    "programs/quantum-dictionary/sandwich-skeptic-model/indep.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-4",
+   "statement": "Labels on non-subspace frames (avenue 4) are dead in their simple form: the start frame's 2(2^h - 1) neighbours split half and half, subspace neighbours h - 1 moves from the end and the others h moves, so a non-subspace label costs h + 1 instead of h.",
+   "status": "argued by hand, not checked",
+   "status_detail": "checked by computer for m <= 4 and h <= 9 (511 + 511 at h = 9); one AI skeptic",
+   "date": "2026-10-13",
+   "field": "quantum information",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [
+    "the earlier description '1,022 against 256'"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/quantum-dictionary/transfer/frames_geom.out"
+   ],
+   "programs": [
+    "programs/quantum-dictionary/transfer/frames_geom.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-5",
+   "statement": "In the engine's wider game a target can cancel a source it does not know, using fixed twists between terms in one array (labels 001 and 111 share one total at copy cost 2 at m = 3); the twisted relation is exactly twice the orthogonal one at odd sizes (12 vs 6 at m = 3; 65,280 vs 32,640 at h = 9) and less at even sizes (56 vs 32 at m = 4); it is unrelated to non-subspace frames and not legal in the community's format.",
+   "status": "checked by computer",
+   "status_detail": "exhaustive over all 720 and 1,451,520 symplectic twists at m = 2, 3; both AI skeptics rebuilt the example with their own code and corrected 'exactly doubles'",
+   "date": "2026-10-13",
+   "field": "quantum information",
+   "figure": null,
+   "numbers": {
+    "twisted_vs_orthogonal_m3": [
+     12,
+     6
+    ],
+    "twisted_vs_orthogonal_h9": [
+     65280,
+     32640
+    ],
+    "twisted_vs_orthogonal_m4": [
+     56,
+     32
+    ]
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/quantum-dictionary/sandwich-and-twists/twist_m2.txt",
+    "data/quantum-dictionary/sandwich-and-twists/twist_m3.txt",
+    "data/quantum-dictionary/sandwich-and-twists/witness_m3.txt",
+    "data/quantum-dictionary/sandwich-skeptic-model/indep_part23.txt"
+   ],
+   "programs": [
+    "programs/quantum-dictionary/sandwich-and-twists/twist.py",
+    "programs/quantum-dictionary/sandwich-and-twists/witness.py",
+    "programs/quantum-dictionary/sandwich-skeptic-math/witness_check.py",
+    "programs/quantum-dictionary/sandwich-skeptic-model/indep.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-6",
+   "statement": "A pair saves nothing: a total's copy cost is at least the F_2-rank of a twisted cross-Gram matrix with unit diagonal, so a total whose interference is cancelled directly costs at least one move per port; for a pair that is 2, the cost of two separate totals.",
+   "status": "argued by hand, not checked",
+   "status_detail": "two AI skeptics; one extended the bound to totals that walk through several frames",
+   "date": "2026-10-13",
+   "field": "index coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "README.md#7-what-the-dictionary-did-for-the-problem"
+   ],
+   "programs": [
+    "programs/quantum-dictionary/sandwich-and-twists/twist.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-7",
+   "statement": "'With timing respected, even the old rule cannot share one total.'",
+   "status": "refuted",
+   "status_detail": "true only for the searched shape: a longer walk shares one total at copy cost 3, worse than 2",
+   "date": "2026-10-13",
+   "field": "index coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "a sandwich skeptic's explicit schedule at m = 2",
+   "evidence": [],
+   "programs": [
+    "programs/quantum-dictionary/sandwich-skeptic-math/timed_oldmodel_m2.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-8",
+   "statement": "On the community's E8 frame decoder with a different twist per total, a SAT encoding of a generous relaxation makes copy cost 63 unsatisfiable and reaches 64 with the community's labels; one twist for the whole family lowers no total from 8 to 7; small families (h = 3, 4; every 4-port pattern with payload F_3 or F_5) cost one copy move per port.",
+   "status": "checked by computer",
+   "status_detail": "one program each, not repeated by anyone; the SAT encoding has not been re-checked; in a looser encoding (one modelling condition dropped) 62 becomes satisfiable, so the result rests on that condition",
+   "date": "2026-10-13",
+   "field": "index coding",
+   "figure": null,
+   "numbers": {
+    "copy_cost_unsat": 63,
+    "copy_cost_sat": 64,
+    "loose_model_sat": 62
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/quantum-dictionary/twisted-families-e8/e8_joint_sat.txt",
+    "data/quantum-dictionary/twisted-families-e8/e8_twist.txt",
+    "data/quantum-dictionary/twisted-families-e8/e8_minrank.txt",
+    "data/quantum-dictionary/twisted-families-e8/v4_floors.txt"
+   ],
+   "programs": [
+    "programs/quantum-dictionary/twisted-families-e8/e8_joint_sat.py",
+    "programs/quantum-dictionary/twisted-families-e8/e8_twist.py",
+    "programs/quantum-dictionary/twisted-families-e8/e8_minrank_check.py",
+    "programs/quantum-dictionary/twisted-families-e8/lagv4.py",
+    "programs/quantum-dictionary/twisted-families-e8/lagv4b.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-9",
+   "statement": "With payload F_2 the copy cost is at least one move per port for every label family and every twist.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a short proof; no AI skeptic has read it",
+   "date": "2026-10-13",
+   "field": "index coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "README.md#7-what-the-dictionary-did-for-the-problem"
+   ],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-10",
+   "statement": "What-if prices with this project's copy of the community's pricing program (control: the community's record 1.6644e-3 to the last digit): one copy move fewer per call gives 1.7112e-3 (+2.81 %); one whole total fewer per call gives 2.0385e-3 (+22.47 %, bit side then binding at 1.7304e-3). Neither construction exists.",
+   "status": "checked by computer",
+   "status_detail": "a price computed by a program for constructions that do not exist (what-if), not a result",
+   "date": "2026-10-13",
+   "field": "pricing",
+   "figure": 0.0017112,
+   "numbers": {
+    "what_if_63": 0.00171116718,
+    "what_if_56": 0.00203846739,
+    "control_799": 0.00166440028
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/quantum-dictionary/twisted-families-e8/pricing.txt"
+   ],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-11",
+   "statement": "Frames are described exactly by a subspace U and a symmetric form beta (Dehaene-De Moor); the excess of a frame (extra moves any path through it pays) has histogram {0: 16, 1: 35, 2: 56, 3: 28} at m = 3, and excess = rank(beta - dot) for m <= 4.",
+   "status": "checked by computer",
+   "status_detail": "the histogram confirmed by two independent recounts; the rank formula checked by one program for m <= 4, not repeated",
+   "date": "2026-10-13",
+   "field": "quantum information",
+   "figure": null,
+   "numbers": {
+    "excess_histogram_m3": {
+     "0": 16,
+     "1": 35,
+     "2": 56,
+     "3": 28
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/quantum-dictionary/transfer/frames_geom.out",
+    "data/quantum-dictionary/sandwich-skeptic-model/indep_part1.txt"
+   ],
+   "programs": [
+    "programs/quantum-dictionary/transfer/frames_geom.py",
+    "programs/quantum-dictionary/sandwich-skeptic-model/indep.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-12",
+   "statement": "Bravyi-Maslov normal form in the engine's matrices: a run of letters on one array equals free * one block of rank r * free, so a search needs at most one block per array between additions that touch it.",
+   "status": "checked by computer",
+   "status_detail": "computed at m <= 2 in the engine's own matrices; not repeated by anyone",
+   "date": "2026-10-13",
+   "field": "quantum information",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/quantum-dictionary/transfer/segnorm.out",
+    "data/quantum-dictionary/transfer/pathbound.out"
+   ],
+   "programs": [
+    "programs/quantum-dictionary/transfer/segnorm.py",
+    "programs/quantum-dictionary/transfer/pathbound.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-13",
+   "statement": "At m = 1 all 96 group elements stay linearly independent once up to 6 digit columns are tested, so the every-f rule makes cancellation exact there; at f = 1 the kernel would be a free combination, which is why single-copy quantum identities do not transfer.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by anyone; larger m untested",
+   "date": "2026-10-13",
+   "field": "quantum information",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/quantum-dictionary/transfer/pauli_and_f.out"
+   ],
+   "programs": [
+    "programs/quantum-dictionary/transfer/pauli_and_f.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/quantum-14",
+   "statement": "The distance between subspace frames is the Koetter-Kschischang subspace distance of random network coding, and the frame distance extends it; the copy floor is a linear index-coding (minrank) problem whose side-information graph at E8 is the commutation graph of the 120 odd-Y four-qubit Paulis, of which the largest pairwise anticommuting set has 8 members (so the minrank is at least 8 over every field).",
+   "status": "checked by computer",
+   "status_detail": "computed for m <= 4 (distance) and exhaustively (the 120 Paulis); one program for the anticommuting bound",
+   "date": "2026-10-13",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/quantum-dictionary/transfer/frames_geom.out",
+    "data/quantum-dictionary/transfer/pauli_and_f.out"
+   ],
+   "programs": [
+    "programs/quantum-dictionary/transfer/frames_geom.py",
+    "programs/quantum-dictionary/transfer/pauli_and_f.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/entropy-1",
+   "statement": "A common-frame (coherent) unit is a vector-linear network code over C on the frame graph, one session per array between opposite frames; a saver is a code that beats routing (m moves per input). The reading is first in the community's pull request #288.",
+   "status": "argued by hand, not checked",
+   "status_detail": "several AI readings in October found no gap; no person has checked it",
+   "date": "2026-10-15",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/entropy-bounds-proofs.md"
+   ],
+   "programs": [],
+   "archive_entry": "M8"
+  },
+  {
+   "id": "other-fields/entropy-2",
+   "statement": "Lemma 1: the uniform layout (every ordered opposite pair equally often) is the worst for common-frame units, because Sp(2m,2) is transitive on ordered opposite pairs; one number per block caps every common-frame unit.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the AI skeptic checked the symmetry facts by computer (transitive on 120 and 8,640 ordered opposite pairs and on arcs at blocks 2, 3)",
+   "date": "2026-10-15",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/entropy-bounds-proofs.md",
+    "data/entropy-bounds/skeptic/out_vsym.txt"
+   ],
+   "programs": [
+    "programs/entropy-bounds/skeptic/vsym.py"
+   ],
+   "archive_entry": "M28"
+  },
+  {
+   "id": "other-fields/entropy-3",
+   "statement": "On the uniform layout the cut bound is 1.5, 1.75 and 1.875 moves per array at blocks 2, 3, 4 (saving ceilings 0.415, 0.491, 0.547 for common-frame units), against certificates 2, 2.8, 41/13 (ceilings 0, 0.0628, 0.1714).",
+   "status": "checked by computer",
+   "status_detail": "the cut constants recomputed by two AI skeptics",
+   "date": "2026-10-15",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {
+    "cut_bound": [
+     1.5,
+     1.75,
+     1.875
+    ],
+    "certificate": [
+     2,
+     2.8,
+     3.1538
+    ],
+    "saving_ceiling_cut": [
+     0.415,
+     0.491,
+     0.547
+    ],
+    "saving_ceiling_certificate": [
+     0,
+     0.0628,
+     0.1714
+    ]
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/entropy-bounds/skeptic/out_vsym.txt",
+    "proofs/entropy-bounds-report.md"
+   ],
+   "programs": [
+    "programs/entropy-bounds/skeptic/vsym.py"
+   ],
+   "archive_entry": "M28"
+  },
+  {
+   "id": "other-fields/entropy-4",
+   "statement": "Lemma 3: any entropy LP that writes its network rows for only some node sets is capped by plain routing on the lumped network, whatever valid inequalities for linear codes it adds (Shannon, Ingleton, DFZ); Lemma 4: lumping into four groups or fewer never beats the cut bound. So no entropy LP small enough to solve proves more than the cut bound on Gamma_2, Gamma_3, Gamma_4.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the AI skeptic reproduced the values but wrote no separate check of these two proofs",
+   "date": "2026-10-15",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/entropy-bounds-proofs.md"
+   ],
+   "programs": [],
+   "archive_entry": "M28"
+  },
+  {
+   "id": "other-fields/entropy-5",
+   "statement": "Lumping searches: at block 2 the smallest lumping that beats cuts has five groups (rho = 1.6, a K_{2,3}) and 26 LP variables; reaching the certificate needs all 15 frames apart; at block 3 no lumping below 14 groups beat 1.75 and about 124 of 135 frames must stay apart for 2.8; at block 4 lumpings up to 300 groups stay below 1.875 and about 2,027 of 2,295 frames must stay apart for 41/13 (2,026 cells still fall short).",
+   "status": "checked by computer",
+   "status_detail": "exact for the lumpings found; that no smaller lumping does better is a search result, not a proof",
+   "date": "2026-10-15",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/entropy-bounds-report.md",
+    "data/entropy-bounds/colab-runs/job_m4__m4.out",
+    "data/entropy-bounds/lp-and-layouts/quot3_m3_agg.json"
+   ],
+   "programs": [
+    "programs/entropy-bounds/lp-and-layouts/quot3.py",
+    "programs/entropy-bounds/lp-and-layouts/quot5.py",
+    "programs/entropy-bounds/lp-and-layouts/star.py"
+   ],
+   "archive_entry": "M28"
+  },
+  {
+   "id": "other-fields/entropy-6",
+   "statement": "Calibration: the entropy LP gives 8 on the Okamura-Seymour network (cuts 6, routing 8; rigorous bound 7.9999986) and no coding gain for any rates there, finds the butterfly's gain 8/7, but gives only 70.8 against routing 80 on K_{2,3} with two-way sessions; the skeptic's own LP finds the combination network's gain (9 vs 10) and reproduces the three-group lumping of Gamma_2 (80); the Ingleton and DFZ rows are encoded correctly.",
+   "status": "checked by computer",
+   "status_detail": "one AI skeptic repeated parts with its own code",
+   "date": "2026-10-15",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/entropy-bounds-report.md",
+    "data/entropy-bounds/skeptic/out_vshannon.txt",
+    "data/entropy-bounds/skeptic/out_vineq.txt",
+    "data/entropy-bounds/skeptic/out_nclp_comb.txt"
+   ],
+   "programs": [
+    "programs/entropy-bounds/lp-and-layouts/nclp.py",
+    "programs/entropy-bounds/lp-and-layouts/test_cp.py",
+    "programs/entropy-bounds/skeptic/vshannon.py",
+    "programs/entropy-bounds/skeptic/vineq.py"
+   ],
+   "archive_entry": "M28"
+  },
+  {
+   "id": "other-fields/entropy-7",
+   "statement": "Lemma W (two-class stretch): if the pairs of a layout split into two stretchable sets, every common-frame unit with that layout needs W*m moves, at every block and every W.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it and checked its packings exactly on 300 random layouts for each W = 3..6 at each block 2..4",
+   "date": "2026-10-15",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/entropy-bounds-proofs.md",
+    "data/entropy-bounds/skeptic/out_vlemmas_m2.txt",
+    "data/entropy-bounds/skeptic/out_vlemmas_m3.txt",
+    "data/entropy-bounds/skeptic/out_vlemmas_m4.txt"
+   ],
+   "programs": [
+    "programs/entropy-bounds/lp-and-layouts/stretch2.py",
+    "programs/entropy-bounds/lp-and-layouts/lemma_calib.py",
+    "programs/entropy-bounds/skeptic/vlemmas.py"
+   ],
+   "archive_entry": "M28"
+  },
+  {
+   "id": "other-fields/entropy-8",
+   "statement": "Lemma W+: a three-pair layout with cross deficiency e needs at least 3m - e moves for a common-frame unit; e <= 1 for about 99.45 % of random layouts at block 4, so a common-frame 3 in 10 at block 4 is excluded on all of them.",
+   "status": "argued by hand, not checked",
+   "status_detail": "one AI skeptic re-derived it and checked the near-polygon fact by brute force (all 840 and 613,440 triples at blocks 2, 3; 381,300 at block 4)",
+   "date": "2026-10-15",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {
+    "e0_share": [
+     0.85,
+     0.78,
+     0.745
+    ],
+    "e_le_1_share_block4": 0.9945
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/entropy-bounds-proofs.md",
+    "data/entropy-bounds/skeptic/out_vlemmas_m4.txt"
+   ],
+   "programs": [
+    "programs/entropy-bounds/lp-and-layouts/edef.py",
+    "programs/entropy-bounds/skeptic/vlemmas.py"
+   ],
+   "archive_entry": "M28"
+  },
+  {
+   "id": "other-fields/entropy-9",
+   "statement": "Every three-pair layout at block 4 that anyone solved on all of Gamma_4 (37, most hill-climbed toward the worst case) has cut value exactly 12; of 709 random three-pair layouts, 531 are covered by Lemma W and the other 178 certified by the exact screen or the full LP.",
+   "status": "checked by computer",
+   "status_detail": "the AI skeptic repeated values with its own LPs and solved the 16 hard layouts the author had left; the author's full solves use the directed LP (sampled orientation), the skeptic's undirected solves cover every orientation",
+   "date": "2026-10-15",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {
+    "layouts_solved_on_gamma4": 37,
+    "random_layouts": 709,
+    "covered_by_lemma_W": 531
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/entropy-bounds/colab-runs/",
+    "data/entropy-bounds/skeptic-colab-runs/",
+    "proofs/entropy-bounds-skeptic.md"
+   ],
+   "programs": [
+    "programs/entropy-bounds/lp-and-layouts/w3screen.py",
+    "programs/entropy-bounds/lp-and-layouts/layout_cut_pdlp.py",
+    "programs/entropy-bounds/skeptic/vcut.py",
+    "programs/entropy-bounds/skeptic/vrun.py"
+   ],
+   "archive_entry": "M28"
+  },
+  {
+   "id": "other-fields/entropy-10",
+   "statement": "Cut gaps exist with four or more arrays: at block 3 a triangle-plus-pendant layout has cut value 11 against 12; at block 4 two such layouts have 14 and 15 against 16, so cuts cannot exclude a common-frame 4 in 14 or 4 in 15 at block 4; at block 3 with five arrays layouts reach 14 and 13, so cuts cannot exclude 5 in 14 there; at block 2 cut values fall short from five arrays on although Theorem 2W makes routing optimal.",
+   "status": "checked by computer",
+   "status_detail": "one AI skeptic (the block-4 four-array gaps are the skeptic's)",
+   "date": "2026-10-15",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [
+    "'cut gaps at W = 4 show cuts cannot settle 4 in 13 to 4 in 15' (block 4)"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/entropy-bounds-skeptic.md",
+    "data/entropy-bounds/lp-and-layouts/layouts_block3.json",
+    "data/entropy-bounds/skeptic-colab-runs/"
+   ],
+   "programs": [
+    "programs/entropy-bounds/lp-and-layouts/layout_cut2.py",
+    "programs/entropy-bounds/lp-and-layouts/dump_layouts.py",
+    "programs/entropy-bounds/skeptic/vtri.py"
+   ],
+   "archive_entry": "M28"
+  },
+  {
+   "id": "other-fields/preprints-1",
+   "statement": "Zhang, Li and Li's code (arXiv:2610.09367) cannot become a saving unit: its coefficients are integers and it never divides, while every unit the engine accepts that saves must divide by 2 in a free step.",
+   "status": "argued by hand, not checked",
+   "status_detail": "rests on an in-house argument read only by AI agents (statement B of the fourth revision's network-coding note); one AI skeptic gave this shorter form; nothing is claimed about the preprint's correctness",
+   "date": "2026-10-10",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "README.md#10-the-two-network-codes-of-7-october-read-against-the-game"
+   ],
+   "programs": [],
+   "archive_entry": "L2"
+  },
+  {
+   "id": "other-fields/preprints-2",
+   "statement": "Braverman and He's code (arXiv:2610.10108) gets its gain from the field with 9 elements: a rebuild from its published lists gives 166 free symbols there (131 without the cubing at lines), while the same integer rule read in Z[i]/p for p = 10007 and 1000003 keeps only 25, where a gain needs at least 152; no rational code with these sessions is known.",
+   "status": "checked by computer",
+   "status_detail": "one program, re-run for this revision with the same output; the AI skeptic did not repeat the rank computations; nothing is claimed about the preprint's correctness",
+   "date": "2026-10-10",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {
+    "free_symbols_F9": 166,
+    "free_symbols_F9_no_cubing": 131,
+    "free_symbols_gaussian_lift": 25,
+    "needed": 152
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/preprint-reading/rebuild_and_field.out"
+   ],
+   "programs": [
+    "programs/preprint-reading/extract_lists.py",
+    "programs/preprint-reading/rebuild_and_field.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/preprints-3",
+   "statement": "The Braverman-He graph cannot be laid on the block-5 frame graph with every edge one move and every session's ends 5 apart: 1,524 forced cases need 8 or 9 different first steps between vertices 3 apart, where every frame graph has exactly 7.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by hand with a computer count: the step from 5-edge routes to shortest paths is an argument; the 7 first steps are computed at blocks 3 and 4 and recalled as a standard fact at block 5; the 1,524 forced cases are counted by computer. The AI skeptic reproduced the count with separate loops and found the argument sound for block 5 with every edge one move",
+   "date": "2026-10-10",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {
+    "violating_cases": 1524,
+    "first_steps_frame_graph": 7
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/preprint-reading/placement_test.out",
+    "data/preprint-reading/skeptic_collapsed_edges.out",
+    "data/preprint-reading/first_steps_and_drops.out"
+   ],
+   "programs": [
+    "programs/preprint-reading/placement_test.py",
+    "programs/preprint-reading/first_steps_and_drops.py",
+    "programs/preprint-reading/skeptic_collapsed_edges.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/preprints-4",
+   "statement": "Blocks 3 and 4 are excluded for the Braverman-He code because 735 moves exceed 157*4 and 157*3.",
+   "status": "refuted",
+   "status_detail": "two vertices placed on one frame exchange symbols for free, so collapsed edges lower the count",
+   "date": "2026-10-10",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the preprint-reading skeptic, 10 October",
+   "evidence": [
+    "data/preprint-reading/skeptic_collapsed_edges.out"
+   ],
+   "programs": [
+    "programs/preprint-reading/skeptic_collapsed_edges.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/preprints-5",
+   "statement": "At block 4 the Braverman-He code gives no saving under any placement: collapsed edges form a matching (at most 91), leaving at least 644 moves against 628.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the AI skeptic's argument with a computer count; no second skeptic",
+   "date": "2026-10-10",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {
+    "moves_at_least": 644,
+    "plain": 628
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/preprint-reading/skeptic_collapsed_edges.out"
+   ],
+   "programs": [
+    "programs/preprint-reading/skeptic_collapsed_edges.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/preprints-6",
+   "statement": "With 157 arrays at block 5 and 735 rank-1 moves, a translated unit would save 4.09e-2 (4.23e-2 by the whole-block bound); 0.1 would need 14.9 % saved and more than 19.0 % of the edges free, against the preprint's 17.6 % and 18.2 %. Not a ceiling over all placements.",
+   "status": "checked by computer",
+   "status_detail": "a price computed by a program for a construction that does not exist",
+   "date": "2026-10-10",
+   "field": "network coding",
+   "figure": 0.0409,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/preprint-reading/frame_graphs.out",
+    "data/preprint-reading/skeptic_collapsed_edges.out"
+   ],
+   "programs": [
+    "programs/preprint-reading/frame_graphs.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/preprints-7",
+   "statement": "The engine's phase letter makes Gaussian coefficients available to a translated code.",
+   "status": "refuted",
+   "status_detail": "the letter multiplies an array by i^f, not by i, so a unit must be right with i replaced by 1 and -1; the lift a code needs is to the rationals",
+   "date": "2026-10-10",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the preprint-reading skeptic, reading the Lean letter definitions",
+   "evidence": [],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/preprints-8",
+   "statement": "The open case of the fourth revision's network-coding note (three messages at block 3 in the operator model, which is the engine game: 8 or 9 paid moves?) is closed: 9 are needed, by the block-3 bound 14W/5 = 8.4 for W = 3.",
+   "status": "proved in Lean",
+   "status_detail": "a corollary of the block-3 bound 14W/5, proved in Lean in the engine game with only the three standard axioms (14 October); recorded here as a cross-reference because it closes a case this repository listed as open; the proof belongs to the block-bounds-and-new-rules section",
+   "date": "2026-10-14",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [
+    "'W = 3 in 8 moves at block 3 is open' (fourth revision, notes/for-network-coding-readers.md, section 3)"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "../block-bounds-and-new-rules/README.md"
+   ],
+   "programs": [],
+   "archive_entry": "L7"
+  },
+  {
+   "id": "other-fields/corr-1",
+   "statement": "The units are the first exact Hadamard-layer simulations below n 2^n operations.",
+   "status": "refuted",
+   "status_detail": "Alman and Rao's 23/24 and the 5/6 result came first; the units are the first whose saving grows with n",
+   "date": "2026-10-14",
+   "field": "quantum simulation",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the quantum-survey skeptic",
+   "evidence": [],
+   "programs": [],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/corr-2",
+   "statement": "With one array the game is a solved quantum problem.",
+   "status": "refuted",
+   "status_detail": "only with no scratch arrays and no mixing, which is not one of the games; with mixing, one array needs m moves by a count of nonzeros along paths",
+   "date": "2026-10-14",
+   "field": "quantum information",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the quantum-survey skeptic",
+   "evidence": [
+    "data/famous-problems/quantum-simulation/skeptic_out_vcheck.txt"
+   ],
+   "programs": [
+    "programs/famous-problems/quantum-simulation/skeptic_vcheck.py"
+   ],
+   "archive_entry": "L3"
+  },
+  {
+   "id": "other-fields/corr-3",
+   "statement": "The shift networks are about 2 times below the plain FFT in general.",
+   "status": "refuted",
+   "status_detail": "that holds on the plain FFT's own graph; the guarantee for any degree-3 network is about 8",
+   "date": "2026-10-14",
+   "field": "network coding",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the network survey's skeptic",
+   "evidence": [
+    "data/famous-problems/network-coding-map/skeptic_vchecks_out.txt"
+   ],
+   "programs": [
+    "programs/famous-problems/network-coding-map/skeptic_vchecks.py"
+   ],
+   "archive_entry": null
+  },
+  {
+   "id": "other-fields/corr-4",
+   "statement": "A paid move is one Hadamard gate.",
+   "status": "refuted",
+   "status_detail": "as a cost yes, up to free gates and a scalar; the gate itself is sqrt(X)",
+   "date": "2026-10-13",
+   "field": "quantum information",
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the dictionary skeptic",
+   "evidence": [
+    "data/famous-problems/quantum-simulation/skeptic_out_vcheck.txt"
+   ],
+   "programs": [
+    "programs/famous-problems/quantum-simulation/skeptic_vcheck.py"
+   ],
+   "archive_entry": null
+  }
+ ],
+ "note_on_counts": "preprints-8 is a cross-reference to a result of the block-bounds-and-new-rules section; an index that sums sections should not count it twice",
+ "open": [
+  {
+   "id": "other-fields/open-1",
+   "question": "Does every three-pair layout on Gamma_4 have cut value above 11 (so every common-frame unit with at most three arrays needs W*m)?",
+   "worth": null,
+   "first_experiment": "Lemma W proves cut value above 11 only for e = 0; for e = 1 Lemma W+ gives 11, which excludes 3 in 10 but not 3 in 11. Exhaustive solving is out of reach (at least about 5.7e6 symmetry classes of three-pair layouts, 4.6e7 if each pair's direction counts, and about 1.5e6 with e >= 1, at 20-60 minutes of LP each). Take the LP duals of the 37 solved layouts, see which cut families they use (w3probe.py), and look for one family (like the level sets behind Lemma W+) giving at least 3m - 0.5 on every layout with e >= 1; test on the hill-climbed layouts before proving.",
+   "programs": [
+    "programs/entropy-bounds/lp-and-layouts/w3probe.py",
+    "programs/entropy-bounds/lp-and-layouts/edef.py",
+    "programs/entropy-bounds/lp-and-layouts/layout_cut_pdlp.py"
+   ]
+  },
+  {
+   "id": "other-fields/open-2",
+   "question": "Can cuts exclude a common-frame 4 in 13 at block 4?",
+   "worth": null,
+   "first_experiment": "layout_search.py at block 4, W = 4, seeded with triangle-plus-pendant layouts, looking for cut value <= 13.",
+   "programs": [
+    "programs/entropy-bounds/lp-and-layouts/layout_search.py",
+    "programs/entropy-bounds/skeptic/vtri.py"
+   ]
+  },
+  {
+   "id": "other-fields/open-3",
+   "question": "How strong is a non-lumped (partial polymatroid) entropy LP on Gamma_m?",
+   "worth": null,
+   "first_experiment": "At block 2, variables only for the arc sets at one frame together with the sessions starting or ending there; solve and compare with the cut bound 1.5.",
+   "programs": [
+    "programs/entropy-bounds/lp-and-layouts/nclp.py"
+   ]
+  },
+  {
+   "id": "other-fields/open-4",
+   "question": "Is the E8 twisted-decoder SAT result (63 impossible) right, and do decoders other than the frame decoder do better with a twist per total?",
+   "worth": null,
+   "first_experiment": "A skeptic re-encodes the model from its definition and re-runs 'min 7'; then extend the label-decoder SAT with twist groups.",
+   "programs": [
+    "programs/quantum-dictionary/twisted-families-e8/e8_joint_sat.py"
+   ]
+  },
+  {
+   "id": "other-fields/open-5",
+   "question": "Can a detour through a non-subspace frame shared by several ports pay for itself?",
+   "worth": null,
+   "first_experiment": "Extend twist.py's exhaustive search at m = 3 to totals with one detour step, on families of three and four ports.",
+   "programs": [
+    "programs/quantum-dictionary/sandwich-and-twists/twist.py"
+   ]
+  },
+  {
+   "id": "other-fields/open-6",
+   "question": "What is the minrank of the commutation graph of the 120 odd-Y four-qubit Paulis over F_2, F_3 and Q?",
+   "worth": null,
+   "first_experiment": "Lovasz theta and Haemers-type bounds of the 120-vertex graph (seconds), then a SAT search for low-rank fitting matrices over F_2 and F_3.",
+   "programs": [
+    "programs/quantum-dictionary/transfer/pauli_and_f.py",
+    "programs/quantum-dictionary/lib/copyfloor.py"
+   ]
+  },
+  {
+   "id": "other-fields/open-7",
+   "question": "Is there a rational code of Braverman-He type (local rules with far more solutions than counting allows) on the block-3 frame graph?",
+   "worth": null,
+   "first_experiment": "Local rules invariant under two or three subgroups of the block-3 symmetry group; solution dimension by a rank computation; stop if no rule keeps more than a third of the edges free. Odds under 2 %.",
+   "programs": []
+  },
+  {
+   "id": "other-fields/open-8",
+   "question": "Is the factor-15 equivalence between H and y^T H x right?",
+   "worth": null,
+   "first_experiment": "A skeptic re-derives it and extends k1_baur_strassen.py to random straight-line circuits for q with cancelling junk.",
+   "programs": [
+    "programs/famous-problems/quadratic-polynomial/k1_baur_strassen.py"
+   ]
+  },
+  {
+   "id": "other-fields/open-9",
+   "question": "Does a better complex unit say anything about OpenAI's integer-multiplication exponent?",
+   "worth": null,
+   "first_experiment": "Write out which of the two capping procedures a complex unit would replace, with the preprint's parameters.",
+   "programs": []
+  },
+  {
+   "id": "other-fields/open-10",
+   "question": "Do the units give o(N log N) synchronous circuits in Alman's model?",
+   "worth": null,
+   "first_experiment": "Count the wires of one recursion level of the smallest published unit with the scratch arrays laid out as that model requires.",
+   "programs": []
+  },
+  {
+   "id": "other-fields/open-11",
+   "question": "Is a saving of 1.68e-3 above the coding-gap exponents that follow from the two preprints' constructions?",
+   "worth": null,
+   "first_experiment": "Compute the missing amplification parameter from the published amplification theorem (a comparison of exponents, not a check of either preprint).",
+   "programs": []
+  },
+  {
+   "id": "other-fields/open-12",
+   "question": "What does the WHT result give for subset convolution over C, against the literature?",
+   "worth": null,
+   "first_experiment": "A literature search for the best known operation count of subset convolution over C.",
+   "programs": []
+  },
+  {
+   "id": "other-fields/open-13",
+   "question": "Could a block-3 placement of the Braverman-He sessions collapse at least 265 edges (313 for 0.1)?",
+   "worth": null,
+   "first_experiment": "Only meaningful once a rational code exists (open-7); then a SAT search for placements with many collapsed edges using skeptic_collapsed_edges.py's forced pairs.",
+   "programs": [
+    "programs/preprint-reading/skeptic_collapsed_edges.py"
+   ]
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/famous-problems/lower-bounds/c1_wht_via_matmul.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 c1_wht_via_matmul.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/lower-bounds/c2_semigroup_ring.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 c2_semigroup_ring.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/lower-bounds/c3_numbers.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 c3_numbers.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/lower-bounds/c4_dft_polymult_equivalence.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 c4_dft_polymult_equivalence.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/lower-bounds/skeptic_v_checks.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 skeptic_v_checks.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/kernels-and-matrix-multiplication/fourstep.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 fourstep.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/kernels-and-matrix-multiplication/universal.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 universal.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/kernels-and-matrix-multiplication/depth2.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 depth2.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/kernels-and-matrix-multiplication/skeptic_linearise.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 skeptic_linearise.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/kernels-and-matrix-multiplication/skeptic_xorbluestein.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 skeptic_xorbluestein.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/network-coding-map/checks.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 checks.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/network-coding-map/skeptic_vchecks.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 skeptic_vchecks.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/quantum-simulation/stab_frames.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 stab_frames.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/quantum-simulation/skeptic_vcheck.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 skeptic_vcheck.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/finite-geometry/c1_e8_labels.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 c1_e8_labels.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/finite-geometry/c2_frustration_rm.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 c2_frustration_rm.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/finite-geometry/c3_frames_vs_quadric.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 c3_frames_vs_quadric.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/finite-geometry/skeptic_v1_iso.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 skeptic_v1_iso.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/finite-geometry/skeptic_v2_fullpauli.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 skeptic_v2_fullpauli.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/famous-problems/quadratic-polynomial/k1_baur_strassen.py",
+   "language": "python",
+   "shows": "see programs/famous-problems/README.md",
+   "command": "python3 k1_baur_strassen.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/dictionary-check/dictcheck.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 dictcheck.py",
+   "time": "3 minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/dictionary-check/dictcheck_extra.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 dictcheck_extra.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/dictionary-skeptic/recheck.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 recheck.py",
+   "time": "minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_for_this_revision": "same output (109 checks, 0 FAIL)"
+  },
+  {
+   "path": "programs/quantum-dictionary/literature-checks/dictcheck.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 dictcheck.py",
+   "time": "1 minute",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/literature-checks/convexcheck.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 convexcheck.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/literature-checks/lempelcheck.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 lempelcheck.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/sandwich-and-twists/twist.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 twist.py 2; python3 twist.py 3",
+   "time": "seconds; about 4.5 minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_for_this_revision": "same output (m = 2 and m = 3)"
+  },
+  {
+   "path": "programs/quantum-dictionary/sandwich-and-twists/witness.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 witness.py",
+   "time": "minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/sandwich-skeptic-math/counts.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 counts.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "run for this revision; no saved output to compare"
+  },
+  {
+   "path": "programs/quantum-dictionary/sandwich-skeptic-math/interval_check.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 interval_check.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_for_this_revision": "run for this revision; no saved output to compare"
+  },
+  {
+   "path": "programs/quantum-dictionary/sandwich-skeptic-math/witness_check.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 witness_check.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "run for this revision; no saved output to compare"
+  },
+  {
+   "path": "programs/quantum-dictionary/sandwich-skeptic-math/timed_oldmodel_m2.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 timed_oldmodel_m2.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "run for this revision; no saved output to compare"
+  },
+  {
+   "path": "programs/quantum-dictionary/sandwich-skeptic-model/indep.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 indep.py 1; python3 indep.py 2 3",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/sandwich-skeptic-model/indep_count.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 indep_count.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/twisted-families-e8/e8_twist.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 e8_twist.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/twisted-families-e8/e8_minrank_check.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 e8_minrank_check.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/twisted-families-e8/sub_twist.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 sub_twist.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/twisted-families-e8/e8_joint_sat.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 e8_joint_sat.py min 7; python3 e8_joint_sat.py min 8",
+   "time": "seconds to a minute each",
+   "memory": "under 1 GB",
+   "needs": [
+    "python-sat"
+   ],
+   "rerun_for_this_revision": "not re-run (python-sat not installed on the re-run machine)"
+  },
+  {
+   "path": "programs/quantum-dictionary/twisted-families-e8/lagframes.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 lagframes.py 3 60 4 rand (also stab0, stabF; 3 60 5 rand; 4 30 4 rand)",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output (all five runs)"
+  },
+  {
+   "path": "programs/quantum-dictionary/twisted-families-e8/lagv4.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 lagv4.py 3",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/twisted-families-e8/lagv4b.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 lagv4b.py 3; python3 lagv4b.py 5",
+   "time": "seconds; about 80 s",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output (F_3 and F_5)"
+  },
+  {
+   "path": "programs/quantum-dictionary/transfer/frames_geom.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 frames_geom.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/transfer/segnorm.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 segnorm.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/transfer/pathbound.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 pathbound.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/transfer/pauli_and_f.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 pauli_and_f.py",
+   "time": "30 s",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/transfer/graphs3.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 graphs3.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/quantum-dictionary/transfer/avgfam.py",
+   "language": "python",
+   "shows": "see programs/quantum-dictionary/README.md",
+   "command": "python3 avgfam.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/entropy-bounds/lp-and-layouts/test_cp.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 test_cp.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same result as the run log"
+  },
+  {
+   "path": "programs/entropy-bounds/lp-and-layouts/test_closed.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 test_closed.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same result as the run log"
+  },
+  {
+   "path": "programs/entropy-bounds/lp-and-layouts/k23gap.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 k23gap.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same result as the run log"
+  },
+  {
+   "path": "programs/entropy-bounds/lp-and-layouts/star.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 star.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same result as the run log"
+  },
+  {
+   "path": "programs/entropy-bounds/lp-and-layouts/lay5_g2.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 lay5_g2.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same result as the run log"
+  },
+  {
+   "path": "programs/entropy-bounds/lp-and-layouts/dump_layouts.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 dump_layouts.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same layouts as layouts_block3.json"
+  },
+  {
+   "path": "programs/entropy-bounds/lp-and-layouts/lemma_calib.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 lemma_calib.py 2 3 100 1",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "run for this revision"
+  },
+  {
+   "path": "programs/entropy-bounds/lp-and-layouts/edef.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 edef.py 3 3000 1",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "run for this revision; 78 %, 21 %, 0.3 % as reported"
+  },
+  {
+   "path": "programs/entropy-bounds/lp-and-layouts/layout_cut_pdlp.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "see the drivers in lp-and-layouts/drivers/",
+   "time": "10-60 minutes per layout on a large machine",
+   "memory": "several GB",
+   "needs": [
+    "numpy",
+    "scipy",
+    "highspy"
+   ],
+   "rerun_for_this_revision": "not re-run (Colab-size LPs)"
+  },
+  {
+   "path": "programs/entropy-bounds/lp-and-layouts/nclp.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "imported by the calibration programs",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "exercised by the re-runs above"
+  },
+  {
+   "path": "programs/entropy-bounds/skeptic/vsym.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 vsym.py 2 3",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/entropy-bounds/skeptic/vineq.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 vineq.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/entropy-bounds/skeptic/vshannon.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 vshannon.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/entropy-bounds/skeptic/nclp_comb.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 nclp_comb.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/entropy-bounds/skeptic/vmisc.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 vmisc.py",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/entropy-bounds/skeptic/vlemmas.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "python3 vlemmas.py 2; python3 vlemmas.py 3",
+   "time": "seconds",
+   "memory": "under 200 MB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "same output (m = 2, 3)"
+  },
+  {
+   "path": "programs/entropy-bounds/skeptic/vrun.py",
+   "language": "python",
+   "shows": "see programs/entropy-bounds/README.md",
+   "command": "see its first lines (Colab runner)",
+   "time": "10-60 minutes per layout on a large machine",
+   "memory": "several GB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ],
+   "rerun_for_this_revision": "not re-run"
+  },
+  {
+   "path": "programs/preprint-reading/extract_lists.py",
+   "language": "python",
+   "shows": "see programs/preprint-reading/README.md",
+   "command": "python3 extract_lists.py bh.txt bh_lists.json",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_for_this_revision": "tested: same lists as the original parse"
+  },
+  {
+   "path": "programs/preprint-reading/rebuild_and_field.py",
+   "language": "python",
+   "shows": "see programs/preprint-reading/README.md",
+   "command": "python3 rebuild_and_field.py bh_lists.json",
+   "time": "16-51 s",
+   "memory": "under 100 MB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/preprint-reading/frame_graphs.py",
+   "language": "python",
+   "shows": "see programs/preprint-reading/README.md",
+   "command": "python3 frame_graphs.py",
+   "time": "36 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/preprint-reading/placement_test.py",
+   "language": "python",
+   "shows": "see programs/preprint-reading/README.md",
+   "command": "python3 placement_test.py bh_lists.json",
+   "time": "1 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/preprint-reading/first_steps_and_drops.py",
+   "language": "python",
+   "shows": "see programs/preprint-reading/README.md",
+   "command": "python3 first_steps_and_drops.py bh_lists.json",
+   "time": "42 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  },
+  {
+   "path": "programs/preprint-reading/skeptic_collapsed_edges.py",
+   "language": "python",
+   "shows": "see programs/preprint-reading/README.md",
+   "command": "python3 skeptic_collapsed_edges.py bh_lists.json",
+   "time": "3 s",
+   "memory": "under 100 MB",
+   "needs": [],
+   "rerun_for_this_revision": "same output"
+  }
+ ]
+}

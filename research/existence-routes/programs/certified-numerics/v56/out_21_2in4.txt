@@ -1,0 +1,27 @@
+flags 2835, coset reps done (1.3s)
+B order 512, |B'| = 32  |B/B'| = 16
+abelianisation F_2^4
+irreducible 21-11 (lambda 7): u in X checked exactly; (37s)
+  (chi(2a) = -11): (z2a, z2b) = (-33, 75) unique among the constituents (37s)
+orbit 7 part (dim 7): commutant of P_0 has dimension 1 (exact) (45s)
+orbit 7 part (dim 14): commutant of P_0 has dimension 1 (exact) (46s)
+P_0-irreducible pieces of 21-11: [7, 14] (46s)
+piece 0 (dim 7): commutant of the P_0 generators has dimension 1 (exact) (47s)
+piece 1 (dim 14): commutant of the P_0 generators has dimension 1 (exact) (47s)
+block ranks of h (rows piece a, columns piece b): [[4, 3], [3, 11]] (47s)
+block ranks of k (rows piece a, columns piece b): [[7, 6], [6, 14]] (47s)
+block ranks of h2 (rows piece a, columns piece b): [[4, 5], [5, 11]] (47s)
+exact: need per array (k) [6, 6]  (h2) [5, 5]  cap per move [3, 3] ; targets ['k', 'k'] ; total need [12, 12]  moves needed >= [4.0, 4.0] (47s)
+needed subspaces to aim at (target, type): [('h2', 0), ('h2', 1), ('k', 0), ('k', 1)]  annihilator dims {('k', 0): 8, ('k', 1): 1, ('h2', 0): 9, ('h2', 1): 2} (47s)
+aimed left vectors per move: {0: 3, 1: 3}  (47s)
+constraint system for k-arrays: 27 x 245 (47s)
+free parameters per (move, k-array): 218 (47s)
+type 0: delivered rank 12 (capacity 4 x 3 = 12, total need 12); with the needed rows 12 -> CONTAINS the needed space (47s)
+type 1: delivered rank 12 (capacity 4 x 3 = 12, total need 12); with the needed rows 12 -> CONTAINS the needed space (47s)
+Traceback (most recent call last):
+  File "v56.py", line 342, in <module>
+    print('VERDICT: %s' % (('EXISTS: a %d-in-%d relaxed scheme in the irreducible %s with rational coefficients (inputs-only moves; the outputs exist by '
+                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          'the module lemma since every needed row lies in the row spaces)' % (W, M, TAG)) if ok else 'not closed by this draw'), flush=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: not all arguments converted during string formatting

@@ -1,0 +1,2447 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "idea-rounds",
+ "title": "Idea rounds: 10 October evening and 16 October",
+ "dates": "2026-10-10 to 2026-10-16",
+ "made_with": "AI agents (Claude) directed by the author",
+ "lean": "nothing in this section is checked in Lean; no person has read its proofs",
+ "related": [
+  {
+   "name": "wht-fewer-operations",
+   "url": "https://github.com/jacobalansussman/wht-fewer-operations",
+   "holds": "the ten idea waves of the night of 10 to 11 October 2026 and the 5/6 circuit result"
+  }
+ ],
+ "counts": {
+  "proved in Lean": 0,
+  "checked by computer": 9,
+  "argued by hand, not checked": 29,
+  "refuted": 6,
+  "open": 4
+ },
+ "findings": [
+  {
+   "statement": "Diagonal floor: if for some pair of digit columns every cheap step keeps 'every array lies in the pair's diagonal', then the paid blocks satisfy sum over blocks of (1 - 2^-rank) >= W (1 - 2^-m); since a block has rank at most m - 1, a unit needs at least W (2^m - 1)/(2^m - 2) blocks, more than its live arrays.",
+   "status": "argued by hand, not checked",
+   "status_detail": "three agents reached it by three routes; three AI skeptics re-derived every step; exact tests (606 random exact programs at block sizes 1 to 3, 2,880 random letters, 7,020 letters in a widened class with a planted fault caught) did not break it; nothing in Lean; no person has read it",
+   "date": "2026-10-10",
+   "round": "floor theorem, 10 October",
+   "block": null,
+   "games": [
+    "engine",
+    "any linear program whose cheap steps keep one pair's diagonal"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/floor-theorem/f-engine/floor.py",
+    "programs/floor-theorem/f-break/diag.py",
+    "programs/floor-theorem/f-break/walk.py",
+    "programs/floor-theorem/g-engine/check.py",
+    "programs/floor-theorem/g-model/gcheck.py",
+    "programs/floor-theorem/g-break/g1.py"
+   ],
+   "data": [
+    "data/floor-theorem/f-engine/out_A.txt",
+    "data/floor-theorem/f-break/diag.out",
+    "data/floor-theorem/f-break/walk.out",
+    "data/floor-theorem/g-engine/out_134.txt",
+    "data/floor-theorem/g-model/gcheck.out",
+    "data/floor-theorem/g-break/g1.out"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/1"
+  },
+  {
+   "statement": "Inside the Lean engine (every letter acts alike on all columns) no unit certifies linear size and none reaches one block per array (about N log log N), at any fixed block size; the bound is weak on the exponent (at block size 110 it asks only 1 + 7.7e-34 blocks per array; at block 3 it caps the saving at 0.62).",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued from the diagonal floor; the engine's Lean statement was read as text, not compiled; a Lean version of the core lemma was written as text and never compiled",
+   "date": "2026-10-10",
+   "round": "floor theorem, 10 October",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "exponent_bound_z": {
+     "block3": 0.38,
+     "block10": 0.0093,
+     "block110": 8.4e-32
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/floor-theorem/f-engine/floor.py"
+   ],
+   "data": [
+    "data/floor-theorem/f-engine/out_B.txt",
+    "data/floor-theorem/f-engine/out_C.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/2"
+  },
+  {
+   "statement": "'Each array gets its own call' (a per-array form of the floor).",
+   "status": "refuted",
+   "status_detail": "refuted in the same round by a counterexample; the counterexample saves no call",
+   "date": "2026-10-10",
+   "round": "floor theorem, 10 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "counterexample of the floor round's skeptics",
+   "programs": [
+    "programs/floor-theorem/g-break/g1.py"
+   ],
+   "data": [
+    "data/floor-theorem/g-break/g1.out"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/3"
+  },
+  {
+   "statement": "'Treating the two columns alike is enough' as the hypothesis of the floor.",
+   "status": "refuted",
+   "status_detail": "refuted: the right condition is that every cheap step keeps the pair's diagonal",
+   "date": "2026-10-10",
+   "round": "floor theorem, 10 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the floor round's skeptics",
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/4"
+  },
+  {
+   "statement": "Child calls cover each array at least once (weighted coverage >= W (1 - 2^-m)) when the calls act on parts chosen by other columns.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by agents; never run on a whole working program; no person has read it",
+   "date": "2026-10-10",
+   "round": "floor theorem, 10 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/5"
+  },
+  {
+   "statement": "The same coverage when blocks run only where the pair's own digits agree ('known zeros').",
+   "status": "open",
+   "status_detail": "a block on part of an array can carry the whole weight (8 of 16, 16 of 64 entries); no program exploiting it was found",
+   "date": "2026-10-10",
+   "round": "floor theorem, 10 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/6"
+  },
+  {
+   "statement": "Cost at least about N log log N in OpenAI's operation count for a wide class.",
+   "status": "open",
+   "status_detail": "needs 'a sum costs N, a block a full call' for partly zero arrays, which is unproved",
+   "date": "2026-10-10",
+   "round": "floor theorem, 10 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/7"
+  },
+  {
+   "statement": "The plainest half-touch identity, transform = (multiple of the identity) + cheap . (half-size transform) . cheap, does not exist for the plain +-1 transform: the left cheap part would consist of eigenvectors, which have at least sqrt(N) nonzero entries.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by the floor note's writer alone; the support bound checked by computer at lengths 4 and 16; with the remainder sqrt(N) times a sign diagonal at length 16, only +-identity leaves room for one half-size call (all 65,536 sign patterns)",
+   "date": "2026-10-10",
+   "round": "floor theorem, 10 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/floor-theorem/f-note/eig.py",
+    "programs/floor-theorem/f-note/diagrem.py"
+   ],
+   "data": [
+    "data/floor-theorem/f-note/eig.out",
+    "data/floor-theorem/f-note/diagrem.out"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/8"
+  },
+  {
+   "statement": "Joint (label-routing) test at two digit columns, block 3, sub-game without address maps: 3 arrays in 8 moves is excluded (all 5,764,801 ordered patterns have a cut certificate; six fixed inequalities exclude all 3,003 multisets); W arrays need at least 13W/5 moves; a saving of 1e-1 is excluded for 1 to 5, 7 and 13 arrays. In the full game the method gives only 7W/3.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by agents (three written proofs of the lemma); the certificates checked by computer by five separate programs and a checker that only adds numbers; the lemma was never tested on a unit that shares work (none is known); superseded the same night by the three-column bound",
+   "date": "2026-10-10",
+   "round": "tiny units without address maps, 10 to 11 October",
+   "block": 3,
+   "games": [
+    "sub-game without address maps"
+   ],
+   "shape": "3 in 8",
+   "saving_if_it_existed": 0.107,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": "idea-rounds/10 (k >= 3W in the sub-game), then 14W/5 in the whole engine game (archive L7, proved in Lean)",
+   "refuted_by": null,
+   "programs": [
+    "programs/tiny-units-without-address-maps/joint-test/hand.py",
+    "programs/tiny-units-without-address-maps/joint-test/static.py",
+    "programs/tiny-units-without-address-maps/joint-test/check_cert.py",
+    "programs/tiny-units-without-address-maps/joint-test/sk_six.py",
+    "programs/tiny-units-without-address-maps/joint-test/certfind.c",
+    "programs/tiny-units-without-address-maps/joint-test/certcheck.c"
+   ],
+   "data": [
+    "data/tiny-units-without-address-maps/joint-test/out_hand.txt",
+    "data/tiny-units-without-address-maps/joint-test/out_static_W3_k8.txt",
+    "data/tiny-units-without-address-maps/joint-test/out_check_cert.txt",
+    "data/tiny-units-without-address-maps/joint-test/out_six.txt",
+    "data/tiny-units-without-address-maps/joint-test/out_check_W3_k8.txt",
+    "data/tiny-units-without-address-maps/joint-test/static_cert_W3_k8.json"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/9"
+  },
+  {
+   "statement": "Block 3, sub-game without address maps (phase letters allowed anywhere): W arrays need at least 3W moves, the plain cost, so nothing saves there; the same holds when all address maps permute one common basis of functionals. Certificate: at three digit columns, the span of the antisymmetric combinations of the 24 face triples; cap 8 for every direction, demand 24.",
+   "status": "argued by hand, not checked",
+   "status_detail": "every step has a hand proof given the lemma, read line by line by a second agent; the ranks 8 and 24 computed exactly by three programs of two agents; no person has read it; nothing in Lean. Later absorbed into Theorem C3 (15 October), which uses the same certificate in all 28 bases",
+   "date": "2026-10-11",
+   "round": "tiny units without address maps, 10 to 11 October",
+   "block": 3,
+   "games": [
+    "sub-game without address maps"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "cap": 8,
+    "demand": 24
+   },
+   "supersedes": [
+    "idea-rounds/9"
+   ],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/tiny-units-without-address-maps/face-certificate/facet.py",
+    "programs/tiny-units-without-address-maps/face-certificate/sk_general.py"
+   ],
+   "data": [
+    "data/tiny-units-without-address-maps/face-certificate/out_facet_3_3.txt",
+    "data/tiny-units-without-address-maps/face-certificate/out_sk_general_facet.txt",
+    "data/tiny-units-without-address-maps/face-certificate/out_sk_general_bases.txt"
+   ],
+   "archive_entry": "L22 (uses it)",
+   "id": "idea-rounds/10"
+  },
+  {
+   "statement": "Block 4, sub-game without address maps: W arrays need at least 3728/1219 W = 3.058 W moves (four kept subspaces with exact multipliers, at three and at four digit columns); this excludes 2 in 6, 3 in 8 and 3 in 9 there.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a computed certificate given the lemma, recomputed exactly by a second agent; superseded by the hook bound 41/13 = 3.154 in the whole engine game (13 October)",
+   "date": "2026-10-11",
+   "round": "tiny units without address maps, 10 to 11 October",
+   "block": 4,
+   "games": [
+    "sub-game without address maps"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "moves_per_array": 3.058
+   },
+   "supersedes": [],
+   "superseded_by": "41/13 in the engine game (archive L9, checked by computer)",
+   "refuted_by": null,
+   "programs": [
+    "programs/tiny-units-without-address-maps/face-certificate/sk_cert.py"
+   ],
+   "data": [
+    "data/tiny-units-without-address-maps/face-certificate/out_sk_cert.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/11"
+  },
+  {
+   "statement": "Block 4, sub-game without address maps: 2 arrays in 7 moves is excluded (of 116,280 multisets of 7 directions, 120 pass every order-free row; every ordering of them fails an order-aware chain form of the lemma).",
+   "status": "argued by hand, not checked",
+   "status_detail": "the order-aware form derived twice; certificates recomputed in whole numbers and modulo two primes by a second agent; no control on a unit that shares work; the full game is not covered (2 in 7 with address maps is open)",
+   "date": "2026-10-11",
+   "round": "tiny units without address maps, 10 to 11 October",
+   "block": 4,
+   "games": [
+    "sub-game without address maps"
+   ],
+   "shape": "2 in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/12"
+  },
+  {
+   "statement": "At every block size m, in the sub-game without address maps: every nonzero functional u needs at least W moves with u.w = 1, so a unit whose directions all lie in one basis needs m W moves.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a hand proof given the lemma; computed at m = 2, 3, 4; whether every unit needs m W is open for m >= 4",
+   "date": "2026-10-11",
+   "round": "tiny units without address maps, 10 to 11 October",
+   "block": null,
+   "games": [
+    "sub-game without address maps"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/13"
+  },
+  {
+   "statement": "Exact searches in the full game (with address maps) found no unit in their slices: 3 in 8 at block 3 in one family of 8-move schemes (two stages complete, one at about 23 %), the same with one relative address map from the six non-trivial powers of one map of order 7 (complete, about 645 million nodes), and 2 in 7 at block 4 (stage A complete; stages B, C, E at 9 of 12 shares; stage Cm at 3 of 12).",
+   "status": "checked by computer",
+   "status_detail": "one program each, not repeated; each covers a thin slice only; for 3 in 8 at block 3 now moot, since 14W/5 (proved in Lean) excludes it in the whole engine game",
+   "date": "2026-10-11",
+   "round": "tiny units without address maps, 10 to 11 October",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/14"
+  },
+  {
+   "statement": "Symmetries of the block-3 sub-game: only the 6 coordinate permutations of the 168 address maps keep the transform (so the 7^8 patterns fall by a factor of at most 12); time reversal with transposed additions is a symmetry; in the full game all 168 are two-sided symmetries that change the unknowns, not the pattern.",
+   "status": "checked by computer",
+   "status_detail": "exact replays of real schedules by regmachine.py (formal sum and f = 1, 2, 3); re-run by a checking agent with its own schedules",
+   "date": "2026-10-10",
+   "round": "tiny units without address maps, 10 to 11 October",
+   "block": 3,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/tiny-units-without-address-maps/symmetry-tests/symtest.py",
+    "programs/tiny-units-without-address-maps/symmetry-tests/gaugetest.py",
+    "programs/tiny-units-without-address-maps/regmachine.py"
+   ],
+   "data": [
+    "data/tiny-units-without-address-maps/symmetry-tests/symtest.out",
+    "data/tiny-units-without-address-maps/symmetry-tests/gaugetest.out"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/15"
+  },
+  {
+   "statement": "A floating-point search for 3 in 8 and a symmetric sweep could serve as evidence.",
+   "status": "refuted",
+   "status_detail": "refuted as evidence by their own controls: the first found a known 9-move solution once in 11 tries and was stopped; one sweep found its planted answer once in 8 starts, another was refused by its own gate",
+   "date": "2026-10-10",
+   "round": "tiny units without address maps, 10 to 11 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the searches' own positive controls",
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/16"
+  },
+  {
+   "statement": "The 25 % margin of OpenAI's reflection argument comes entirely from the dense pair B(u) (x) B(u) priced at 6 instead of 8; priced at 2 per pair the chain is a tie (d w <= (d + 8) w); the feedback, specialisation, pivot and graph steps only convert a cost between descriptions. The feedback law implies p(G) <= nnz(G) for every invertible G, so the margin is at most 1 - pi/2 + O(1/d) for dense-pair price pi.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued in full inside OpenAI's price world by one agent; every identity of the reflection argument checked by computer at d = 1 to 4; no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/openai-mechanism-price-world/openai_objects.py",
+    "programs/openai-mechanism-price-world/dense_pair.py"
+   ],
+   "data": [
+    "data/openai-mechanism-price-world/out_openai_objects.txt",
+    "data/openai-mechanism-price-world/out_dense_pair.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/17"
+  },
+  {
+   "statement": "Zero-overhead ceilings of any fixed-matrix quantitative version of OpenAI's existence argument: at most 1.58e-3 with OpenAI's own count of the chain's extra pairs (d about 63), at most 1.97e-3 with each of those extra pairs priced at 3/2 like a dense pair (d = 50); the realised forced win is below 1e-23 with the Lean packing and a tower of exponentials with the laws' own run lengths.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the ceilings are prices computed by a program under an idealisation (realising the laws costs nothing), not proved; the tower estimate is argued from the Lean and TeX sources; no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "ceiling_fixed_matrix_openai_overheads": 0.00158,
+    "ceiling_fixed_matrix_overheads_at_3_2": 0.00197,
+    "lean_packing_bound": 1.4e-23
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/openai-mechanism-price-world/ceilings.py",
+    "programs/openai-mechanism-price-world/openai_objects.py"
+   ],
+   "data": [
+    "data/openai-mechanism-price-world/out_ceilings.txt",
+    "data/openai-mechanism-price-world/out_openai_objects.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/18"
+  },
+  {
+   "statement": "OpenAI's second mechanism cannot be made right for every number of digit columns f: per-column feedback needs state growing with f (the McMillan degree of (I + zJ)^(x)f is exactly f 4^f), and one loop around the whole power gives the wrong matrix.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by one agent; the degrees computed exactly for f = 1 to 4, the wrong closure checked exactly at f = 2 (largest difference 27/8); no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/openai-mechanism-price-world/feedback_state.py",
+    "programs/openai-mechanism-price-world/feedback_exact.py"
+   ],
+   "data": [
+    "data/openai-mechanism-price-world/out_feedback_state.txt",
+    "data/openai-mechanism-price-world/out_feedback_exact.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/19"
+  },
+  {
+   "statement": "In the engine game a Clifford operator on one array costs exactly log2 of its nonzeros per row (Bruhat decomposition), so the engine has no 'sparse but costly' object and no analogue of OpenAI's gap pair; every engine saving must come from sharing across arrays.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued from a standard decomposition; checked by computer on 6,400 random letters and 160 circuits at m = 2 to 5; no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/openai-mechanism-price-world/clifford_rank.py"
+   ],
+   "data": [
+    "data/openai-mechanism-price-world/out_clifford_rank.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/20"
+  },
+  {
+   "statement": "Streaming cells add no rate: a cell run for T periods is a block unit with pT arrays (so every certificate binds on its rate; at block 2 it gives c >= 2p); if no paid move sits on a feedback loop, evaluating the delay at a generic number gives a block program with the same counts; the minimal cells are stage programs; in the commutative slice one stream needs at least m moves per period.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a written argument by one agent; the evaluator reproduces plain cells at every quadratic form of blocks 1 to 5, refuses cells with a move deleted, and finds no direction set below m moves at blocks 3 to 5 (37,059 sets); no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/streaming-cells/stream_calib.py",
+    "programs/streaming-cells/shapes.py"
+   ],
+   "data": [
+    "data/streaming-cells/out_calib.txt",
+    "data/streaming-cells/out_shapes.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/21"
+  },
+  {
+   "statement": "(2,2,4) in 7 at block 4 (one full array and two rank-2 stages in 7 moves; 9.63e-2 if streamed) is impossible without scratch in the multi-target slice.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by the recombiner from the root-system track's lemmas and a computation of the smallest dependency sets; one AI skeptic re-derived it with a shorter proof (the three targets sum to zero, so the 7 gates form a 3-flat, which cannot carry a rank-4 target); with scratch, address maps in the middle or phase letters between moves it is open",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 4,
+   "games": [],
+   "shape": "(2,2,4) in 7",
+   "saving_if_it_existed": 0.0963,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/no-tight-unit-at-block-4/dep_supports.py"
+   ],
+   "data": [
+    "data/no-tight-unit-at-block-4/out_dep_supports.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/22"
+  },
+  {
+   "statement": "The Coxeter step c = (one paid move along direction 1, then a cyclic relabelling of the directions) satisfies c^m = the whole transform and c^(2m) = 1 in Sp(2m,2) for m = 2 to 8; the carousel built on it with r = m carriers computes the transform exactly at the plain rate.",
+   "status": "checked by computer",
+   "status_detail": "exact over F_2 for the frame game; on real arrays to 1e-13 or better (m = 2, 3, 4); one program, not repeated by anyone",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/coxeter-carousel/coxeter.py",
+    "programs/coxeter-carousel/carousel.py",
+    "programs/coxeter-carousel/carousel3.py"
+   ],
+   "data": [
+    "data/coxeter-carousel/out_coxeter.txt",
+    "data/coxeter-carousel/out_carousel.txt",
+    "data/coxeter-carousel/out_carousel3.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/23"
+  },
+  {
+   "statement": "Busy-register wall: in a time-invariant cell in which every register gets exactly one paid move in every layer (any free mixing, inputs added on arrival, outputs fed back), r >= p(delta + 1) and d(delta + 1) >= m, so the rate is at least m moves per input; a saver must leave some register idle.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a written argument by one agent through the trivial representation and one Hankel rank; checked on 800 random scalar shadows; border versions with r = m - 1 stay wrong by about 2.5; no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/coxeter-carousel/busy_wall.py",
+    "programs/coxeter-carousel/carousel2.py"
+   ],
+   "data": [
+    "data/coxeter-carousel/out_busy_wall.txt",
+    "data/coxeter-carousel/out_carousel2.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/24"
+  },
+  {
+   "statement": "The block-3 frame game is the Weyl group of E7 up to sign: the 135 frames are the 135 sets of seven orthogonal E7 root lines, a paid move is a 4 x 4 'J - 2I' block in frame coordinates (OpenAI's dense pair B(-1) (x) B(-1)), and the symplectic quadrics are the 36 A7 and 28 E6 subsystems.",
+   "status": "checked by computer",
+   "status_detail": "exact integer and rational arithmetic, one program, not repeated by anyone",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 3,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/root-systems-and-index-codes/s1_e7_dictionary.py"
+   ],
+   "data": [
+    "data/root-systems-and-index-codes/out_s1_e7_dictionary.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/25"
+  },
+  {
+   "statement": "E8 is the best centre for crossing-slack units among simply-laced root systems: a centre is a linear index code with copy ratio (decoder rank) x (window) / (ports) = 0.600 (E8), 0.778 (E7), 1.167 (E6); E8 and E7 are perfect codes (Lovasz theta = independence number = rank), so by Haemers' bound no decoder brings E6, D_n or A_n below E8. As a whole unit it is still crossing slack, capped near one free direction per array.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the ratios checked by computer (one program, reproducing an earlier round's figures); the optimality argued from Haemers' bound and the classification of line systems, cited from memory; no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "copy_ratio": {
+     "E8": 0.6,
+     "E7": 0.778,
+     "E6": 1.167
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/root-systems-and-index-codes/s2_index_code.py"
+   ],
+   "data": [
+    "data/root-systems-and-index-codes/out_s2_index_code.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/26"
+  },
+  {
+   "statement": "Reflection-form lemmas for programs without scratch whose gates are reflections: the rank-one matrices z z^T of the gate directions add up, mod 2, to the sum of the targets (so no 'plain minus one' shape exists without scratch); no form may switch on exactly one non-sign-flip gate; two time-consecutive groups of commuting orthogonal reflections never save; isometric gates rule out dirty scratch.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a written argument by one agent (the two-group lemma only argued for oblique reflections); the determinant lemma re-derived by the second skeptic; the lemmas reprove the block-3 no-saving result in this form",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/root-systems-and-index-codes/s4_refl_probe.py",
+    "programs/root-systems-and-index-codes/s6_core_probe.py"
+   ],
+   "data": [
+    "data/root-systems-and-index-codes/out_s4_pos1.txt",
+    "data/root-systems-and-index-codes/out_s4_neg1.txt",
+    "data/root-systems-and-index-codes/out_s4_probe.txt",
+    "data/root-systems-and-index-codes/out_s6_altpos.txt",
+    "data/root-systems-and-index-codes/out_s6_alt4.txt",
+    "data/root-systems-and-index-codes/out_s6_mix.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/27"
+  },
+  {
+   "statement": "Without scratch and without interleaving, the block-5 7-array problem (7 in 31) reduces to a block-4 core of 15 gates delivering a total target length of at least 19, which must itself be a block-4 saving program.",
+   "status": "refuted",
+   "status_detail": "refuted by the second skeptic: the core must deliver total rank >= 19, not length; every such core is excluded by Theorem R with the block-4 hook values (414,688 needed against 411,840); the listed cores have rank 16; the outside gates must span all of F_2^5",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 5,
+   "games": [],
+   "shape": "7 in 31",
+   "saving_if_it_existed": 0.0754,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "idea-rounds skeptic of lead D2 (skeptic-2)",
+   "programs": [
+    "programs/skeptic-targets-on-a-subspace/k3_core_hook.py"
+   ],
+   "data": [
+    "data/skeptic-targets-on-a-subspace/out_k3_core_hook.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/28"
+  },
+  {
+   "statement": "The 30 positions where an exactly tight block-3 engine unit may hold terms are exactly the 30 maximal totally singular subspaces of the quadric x.z = 0 (the points and planes of PG(3,2), by the Klein correspondence); the maps keeping the quadric form O6+(2) = S8, in which the paid move is a transposition, the target a product of three disjoint transpositions and the quadric-respecting free letters AGL(3,2). This gives a closed sub-game 36 times smaller than the frame game whose programs are genuine units. The sub-game is the A7 reflection subgroup of the E7 picture.",
+   "status": "checked by computer",
+   "status_detail": "computed by one program; the structure (30 frames, the 7-regular bipartite step graph, the group of order 40,320, the stabiliser of order 1,344, the 8 sectors) repeated by an independent AI skeptic with its own code; the claim that a tight unit's terms lie on these 30 frames rests on an earlier lemma (Lemma C) that no skeptic has read; the A7 reading is the recombiner's argument (the counts agree; the quadric is forced by the start and target frames)",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 3,
+   "games": [
+    "engine"
+   ],
+   "shape": "5 in 14",
+   "saving_if_it_existed": 0.0628,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/tight-5-in-14-subgame/c2_singular.py",
+    "programs/tight-5-in-14-subgame/c3_s8.py",
+    "programs/skeptic-tight-block3-family/s3_singular.py"
+   ],
+   "data": [
+    "data/tight-5-in-14-subgame/out_c2_singular.txt",
+    "data/tight-5-in-14-subgame/out_c3_s8.txt",
+    "data/skeptic-tight-block3-family/out_s3_singular.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/29"
+  },
+  {
+   "statement": "Every step between two of the 30 singular frames changes the depth by exactly 1, so an exactly tight block-3 unit has no sideways steps.",
+   "status": "checked by computer",
+   "status_detail": "found by the first skeptic with its own program; not repeated by anyone",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 3,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/skeptic-tight-block3-family/s3_singular.py"
+   ],
+   "data": [
+    "data/skeptic-tight-block3-family/out_s3_singular.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/30"
+  },
+  {
+   "statement": "Symmetry of a tight 5 in 14: its symmetry group has order at most 24; no group of order 24 or 12 survives the screen (per-irreducible hook balance, the 105-dimensional certificate, the orbit count); among groups of order 6 or more only one D8 shape (arrays 4+1, moves 4+4+4+2, needing S-gate sectors) and six S3 shapes remain; in the pure sub-game the largest possible symmetry is S3.",
+   "status": "checked by computer",
+   "status_detail": "the order bound argued from upheld earlier results; the screen computed by one program, calibrated (the six S3 shapes reproduce an earlier round exactly; symmetrised plain programs pass; 5 in 13 and 2 in 5 fail); gauge symmetry and some embeddings not covered; depends on Lemma C",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 3,
+   "games": [],
+   "shape": "5 in 14",
+   "saving_if_it_existed": 0.0628,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/tight-5-in-14-subgame/c6_symscreen.py",
+    "programs/tight-5-in-14-subgame/c7_symscreen2.py",
+    "programs/tight-5-in-14-subgame/c8_s4.py",
+    "programs/tight-5-in-14-subgame/c14_105a.py",
+    "programs/tight-5-in-14-subgame/c15_cal105.py",
+    "programs/tight-5-in-14-subgame/c16_survivors.py"
+   ],
+   "data": [
+    "data/tight-5-in-14-subgame/out_c6_symscreen.txt",
+    "data/tight-5-in-14-subgame/out_c7_symscreen2.txt",
+    "data/tight-5-in-14-subgame/out_c8_s4.txt",
+    "data/tight-5-in-14-subgame/out_c14_105a.txt",
+    "data/tight-5-in-14-subgame/out_c15_cal105.txt",
+    "data/tight-5-in-14-subgame/out_c16_survivors.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/31"
+  },
+  {
+   "statement": "The sub-game's one-piece relaxation (the 56-dimensional irreducible) is satisfied by an explicit 5-in-14 'staircase' scheme whose moves act on raw inputs only (depth 1), which no real unit can do: that relaxation is blind to depth; no labelled certificate on copies of it beats 14/5 in the sub-game.",
+   "status": "checked by computer",
+   "status_detail": "computed by one program (13 moves and generic 14 moves fail as controls); the no-certificate statement argued from the computed ranks",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 3,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/tight-5-in-14-subgame/c10_dgame.py",
+    "programs/tight-5-in-14-subgame/c11_staircase.py",
+    "programs/tight-5-in-14-subgame/c5_labels.py"
+   ],
+   "data": [
+    "data/tight-5-in-14-subgame/out_c10_dgame.txt",
+    "data/tight-5-in-14-subgame/out_c11_staircase.txt",
+    "data/tight-5-in-14-subgame/out_c5_labels.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/32"
+  },
+  {
+   "statement": "The best saving of Kronecker powers is the same for every kernel width: s(q) = s(2) for every q >= 2 (OpenAI's generation lemma, H^(x)b as a 2^b x 2^b kernel, and adding a 1 x 1 block). A unit for any legal kernel transfers to the Walsh-Hadamard exponent; the Fourier saving is at least s(q) along OpenAI's lengths.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a written argument by one agent from OpenAI's lemmas; no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/33"
+  },
+  {
+   "statement": "Theorem 2W (at least 2W moves at block 2) and the two-layer bound W + m hold for every kernel once the free steps act alike on every column, in their group-algebra form (which does not need the paid move to be 'spread'); so block 2 never saves in any column-uniform playground.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by one agent; no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 2,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/34"
+  },
+  {
+   "statement": "The block-3 hook applies to every 2 x 2 kernel: every dense kernel gets exactly 14/5 moves per array (cap 80 argued by hand for all, demand 224 computed for six cross-ratios); the triangular class (shear, subset-sum kernel, binomial involution [[1,0],[1,-1]]) gets only 173/80 = 2.1625, leaving room for 2 in 5, 3 in 7 and 4 in 9.",
+   "status": "checked by computer",
+   "status_detail": "exact over Q for H, the shear and the binomial involution; two or three primes for the other kernels; one program each, not repeated; the cap bound for dense kernels argued by hand",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 3,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {
+    "triangular_hook": "173/80",
+    "dense_hook": "224/80"
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/kernel-playgrounds/exact_hook.py",
+    "programs/kernel-playgrounds/hookk.py",
+    "programs/kernel-playgrounds/chi_scan.py"
+   ],
+   "data": [
+    "data/kernel-playgrounds/out_exact_hook.txt",
+    "data/kernel-playgrounds/out_hook_m3_k4.txt",
+    "data/kernel-playgrounds/out_chi_scan.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/35"
+  },
+  {
+   "statement": "Is there a triangular-kernel unit at block 3 below 2.8 moves per array (2 in 5 would save 1.66e-1)? The room left by the hook is uncalibrated: at block 2 the same hook gives the triangular class only 7/4 where 2 holds by the block-2 argument, and every monomial-invariant subspace certificate tried stays at or below 7/4 (pattern subspaces at four columns: 1.673).",
+   "status": "open",
+   "status_detail": "the calibration failures checked by computer (one program each); a numerical or certificate gap is evidence, not proof",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 3,
+   "games": [],
+   "shape": "2 in 5 (triangular kernel)",
+   "saving_if_it_existed": 0.166,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/kernel-playgrounds/patterns.py",
+    "programs/kernel-playgrounds/venn2.py",
+    "programs/kernel-playgrounds/dualcert.py",
+    "programs/kernel-playgrounds/allinv.py",
+    "programs/kernel-playgrounds/scan_k.py"
+   ],
+   "data": [
+    "data/kernel-playgrounds/out_patterns_m2f4.txt",
+    "data/kernel-playgrounds/out_venn2_m2.txt",
+    "data/kernel-playgrounds/out_dualcert_m2.txt",
+    "data/kernel-playgrounds/out_allinv.txt",
+    "data/kernel-playgrounds/out_scan_k_m2.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/36"
+  },
+  {
+   "statement": "With the triangular kernel and only diagonals free (any diagonals, controlled ones included), no unit saves at any block: projected to the covers of each direction, the program becomes a block-1 problem needing W moves per direction.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by one agent; no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/37"
+  },
+  {
+   "statement": "Phases that are not powers of i open nothing at blocks 2 to 4: every hook is kept by every diagonal (eighth-root phases, controlled phases of any angle, any scalings) and every permutation of column states, and by free steps that depend only on column-state counts, so 2, 14/5 and 41/13 moves per array stand in those games.",
+   "status": "argued by hand, not checked",
+   "status_detail": "read from earlier upheld notes and recomputed for H at block 3 by one program; the count-dependent steps argued; the engine-only bound from block 4 up (2.9447) does not survive",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/38"
+  },
+  {
+   "statement": "The qutrit kernel F_3 at block 3: hooks within reach are weak (at most 1.733 at block 2, where 2 holds; 1.054 for the one block-3 member computed), and its finite frame game (1,120 frames) has not been searched.",
+   "status": "open",
+   "status_detail": "computed at two primes; uncalibrated",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 3,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/kernel-playgrounds/hook_q3.py",
+    "programs/kernel-playgrounds/hook_block.py"
+   ],
+   "data": [
+    "data/kernel-playgrounds/out_hook_q3_m2.txt",
+    "data/kernel-playgrounds/out_hook_m4_smallk.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/39"
+  },
+  {
+   "statement": "No exactly tight unit exists at block 4 in the engine game: an exactly tight unit must have every single term pass the f = 9 hook's termwise filter, and 0 of the 30 engine positions at depth 1 and 0 of the 280 at depth 2 pass (controls pass), so the first paid step already breaks tightness. Closed: 13 in 41 (1.71e-1), the grouped 2 in 7 with blocks 2,2,2,1 (1.675e-1) and every other schedule exactly on the 41/13 bound.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the computation checked by computer (one program, exact modulo 33,554,393, not repeated by anyone); the argument that makes it an exclusion argued by hand by one agent from a lemma (Lemma A) that no skeptic has read; the schedules with rank-2 blocks excluded only with high probability (their rank-2 cap 48,576 is computed at two primes, not certified); near-tight schedules, the widened game and the plain 2 in 7 are not covered",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "shape": "13 in 41; 2 in 7 with blocks 2,2,2,1",
+   "saving_if_it_existed": 0.171,
+   "numbers": {
+    "depth1_pass": "0 of 30",
+    "depth2_pass": "0 of 280",
+    "prime": 33554393
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/no-tight-unit-at-block-4/b4_admissible.py",
+    "programs/no-tight-unit-at-block-4/enum_test.py",
+    "programs/no-tight-unit-at-block-4/make-E/filter9.py"
+   ],
+   "data": [
+    "data/no-tight-unit-at-block-4/out_b4_depth1.txt",
+    "data/no-tight-unit-at-block-4/out_b4_depth2_s0.txt",
+    "data/no-tight-unit-at-block-4/out_b4_depth2_s1.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/40"
+  },
+  {
+   "statement": "The stage variants of 5 in 14 at block 3 ((2,3,3,3,3) in 13, (2,2,3,3,3) in 12, (2,2,2,3,3) in 11, (2,2,2,2,3) in 10), each worth 6.28e-2 if streamed, are excluded: each gives some array a two-row target, which no exactly tight block-3 unit can do.",
+   "status": "argued by hand, not checked",
+   "status_detail": "by citation of an earlier upheld theorem (Theorem T); the exact-tightness arithmetic checked by hand",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 3,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/41"
+  },
+  {
+   "statement": "OpenAI's second mechanism and streaming as sources of rate are closed: four tracks (the two on OpenAI's proof, streaming, the carousel) reach compatible verdicts from four directions.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a synthesis of argued results; no skeptic has read it; no person has read it",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/42"
+  },
+  {
+   "statement": "Schur-Weyl: the transform is block-diagonal in the Schur basis with blocks of size about sqrt(log N), but reaching that basis costs log N layers, and divide-and-conquer Schur transforms still cost order log N per entry.",
+   "status": "argued by hand, not checked",
+   "status_detail": "computed by hand by the coordinating agent in the round's brief; no track developed it; no skeptic",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/43"
+  },
+  {
+   "statement": "Lead D1 (decide the exactly tight block-3 family inside the S8 sub-game) as planned: calibrate the one numerical signal (a coupled descent on 5 in 14) on two controls, then run an exact search in C[S8].",
+   "status": "refuted",
+   "status_detail": "refuted as a plan by the first skeptic: one control had already run and misfired; the exact half of the other comes out uninformative (two moves span the whole relaxation algebra); shapes excluded for a junk reason look like 5 in 14 to every certificate on those pieces; the relaxation is underdetermined (3.5 unknowns per equation) where the real problem is overdetermined; the plain 1 in 3 shows the same tail; the decider can find but never refuse; '36 times smaller' holds only for one of 8 sectors. The question itself survives (see the open list)",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 3,
+   "games": [],
+   "shape": "5 in 14; 15 in 42",
+   "saving_if_it_existed": 0.0628,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the first skeptic (skeptic-1)",
+   "programs": [
+    "programs/skeptic-tight-block3-family/s1_depth_cuts.py",
+    "programs/skeptic-tight-block3-family/s2_labels.py",
+    "programs/skeptic-tight-block3-family/s4_typegraph.py"
+   ],
+   "data": [
+    "data/skeptic-tight-block3-family/out_s1_depth.txt",
+    "data/skeptic-tight-block3-family/out_s1_cuts.txt",
+    "data/skeptic-tight-block3-family/out_s2_labels.txt",
+    "data/skeptic-tight-block3-family/out_s4_typegraph.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/44"
+  },
+  {
+   "statement": "Lead D2: targets on a subspace, block-4 cores first: deciding the listed block-4 cores (4 in 15 with targets summing to zero) by exact Groebner bases decides the no-scratch 7-array problem, cheaply, both ways.",
+   "status": "refuted",
+   "status_detail": "refuted by the second skeptic: the listed cores have total rank 16, not the 19 a core of the 7-array problem needs, and every core of rank 19 or more is already excluded by Theorem R; the listed cores cannot exist without scratch (0 of 1,612 classes and 0 of 27,256 zero-sum target sets pass); three claimed consequences do not follow; the test is not cheap (15! orders)",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 4,
+   "games": [],
+   "shape": "4 in 15",
+   "saving_if_it_existed": 0.0466,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the second skeptic (skeptic-2)",
+   "programs": [
+    "programs/skeptic-targets-on-a-subspace/k1_sumzero.py",
+    "programs/skeptic-targets-on-a-subspace/k2_sumzero_nonalt.py",
+    "programs/skeptic-targets-on-a-subspace/k2b_calib.py",
+    "programs/skeptic-targets-on-a-subspace/k3_core_hook.py",
+    "programs/skeptic-targets-on-a-subspace/k4_sumzero_alt.py"
+   ],
+   "data": [
+    "data/skeptic-targets-on-a-subspace/out_k1_sumzero.txt",
+    "data/skeptic-targets-on-a-subspace/out_k2_sumzero_nonalt.txt",
+    "data/skeptic-targets-on-a-subspace/out_k2b_calib.txt",
+    "data/skeptic-targets-on-a-subspace/out_k3_core_hook.txt",
+    "data/skeptic-targets-on-a-subspace/out_k4_sumzero_alt.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/45"
+  },
+  {
+   "statement": "A no-scratch, non-interleaved 7 in 31 at block 5 must have outside gates spanning all of F_2^5.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by the second skeptic with an exact table (one skeptic, not repeated); it rests on the depth-3 hook value 68,320, which three independent computations agree on (a value computed modulo a prime can only undercount)",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 5,
+   "games": [],
+   "shape": "7 in 31",
+   "saving_if_it_existed": 0.0754,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/skeptic-targets-on-a-subspace/k3_core_hook.py"
+   ],
+   "data": [
+    "data/skeptic-targets-on-a-subspace/out_k3_core_hook.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/46"
+  },
+  {
+   "statement": "A 4 in 15 at block 4 on the 15 directions of F_2^4, with phase letters only at the ends, needs scratch, and with scratch its targets cannot sum to zero.",
+   "status": "argued by hand, not checked",
+   "status_detail": "argued by the second skeptic (determinant lemma) and checked by computer: all 12,333 + 14,923 zero-sum target sets fail the earlier exact tests; the harness calibrated (passes 1,612 survivors and plain 4 in 16, fails 5 in 15); one skeptic, not repeated",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": 4,
+   "games": [],
+   "shape": "4 in 15",
+   "saving_if_it_existed": 0.0466,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [
+    "programs/skeptic-targets-on-a-subspace/k2_sumzero_nonalt.py",
+    "programs/skeptic-targets-on-a-subspace/k4_sumzero_alt.py",
+    "programs/skeptic-targets-on-a-subspace/k2b_calib.py"
+   ],
+   "data": [
+    "data/skeptic-targets-on-a-subspace/out_k2_sumzero_nonalt.txt",
+    "data/skeptic-targets-on-a-subspace/out_k4_sumzero_alt.txt",
+    "data/skeptic-targets-on-a-subspace/out_k2b_calib.txt"
+   ],
+   "archive_entry": null,
+   "id": "idea-rounds/47"
+  },
+  {
+   "statement": "The saving of the Fourier transform at every length equals the Kronecker-power saving, through Rader's algorithm over finite fields F_(p^k).",
+   "status": "argued by hand, not checked",
+   "status_detail": "a short argument given by the round's coordinating agent at the end of the round; it is not written out in these notes and no skeptic has read it (the playground track had found that its own steps give only an inequality along OpenAI's lengths)",
+   "date": "2026-10-16",
+   "round": "idea round, 16 October",
+   "block": null,
+   "games": [],
+   "shape": null,
+   "saving_if_it_existed": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "programs": [],
+   "data": [],
+   "archive_entry": null,
+   "id": "idea-rounds/48"
+  }
+ ],
+ "history": [
+  {
+   "id": "idea-rounds/history-1",
+   "date": "2026-10-10",
+   "what": "Planning round after the fourth revision: five lenses (tiny units, levers on the present mechanism, imports from other fields, outside the engine, real machines), five skeptics and a planning agent ranked six avenues; its odds were the agents' guesses.",
+   "avenues": [
+    {
+     "avenue": "tiny units, bounds first (3 in 8 at block 3; 2 in 6 and 2 in 7 at block 4)",
+     "outcome": "run that night (findings 9-16); 3 in 8 at block 3 later excluded by 14W/5 (proved in Lean), 2 in 6 at block 4 by 41/13 (checked by computer); 2 in 7 at block 4 open (moonshot-block4-block5)"
+    },
+    {
+     "avenue": "a 16-point identity below the textbook count",
+     "outcome": "not run as a search; the ten idea waves of that night (public in wht-fewer-operations), looking for linear size, found small circuits with better constants, 16-point circuits among them; a search for a 16-point circuit in OpenAI's count has not been made (that repository's waves/LEADS.md, lead 1.1)"
+    },
+    {
+     "avenue": "the two network-coding preprints of 7 October",
+     "outcome": "read that evening; neither code becomes a unit (argued, one skeptic); told in other-fields"
+    },
+    {
+     "avenue": "fat labels; a unit with at most two additions; labels on frames that are not subspaces",
+     "outcome": "not run in these rounds (a screen earlier on 10 October had found no fat-label family that gains; archive R30)"
+    },
+    {
+     "avenue": "linear size",
+     "outcome": "the floor theorem round (findings 1-8) and the ten waves"
+    }
+   ],
+   "sources": [
+    "wht37/avenues/NOTE.md",
+    "wht37/avenues/FIRST-EXPERIMENTS.md"
+   ]
+  },
+  {
+   "id": "idea-rounds/history-2",
+   "date": "2026-10-16",
+   "what": "Recombiner's ranking of the round's leads: D1 tight block-3 family (6.28e-2), D2 targets on a subspace with block-4 cores first (4.66e-2, then 7.54e-2), D3 triangular kernel (up to 1.66e-1). Skeptic verdicts: D1 survives narrowed (plan refuted), D2 refuted; D3 has no skeptic.",
+   "sources": [
+    "wht44/ideas/RECOMBINE.md",
+    "wht44/ideas/skeptic-1/NOTE.md",
+    "wht44/ideas/skeptic-2/NOTE.md"
+   ]
+  }
+ ],
+ "open": [
+  {
+   "id": "idea-rounds/open-1",
+   "question": "Is there an exactly hook-tight block-3 engine unit (5 in 14, or the 7-fold symmetric 15 in 42)?",
+   "worth": 0.0628,
+   "first_experiment": "Decide the trivial-character 6-move problem of the 7-fold 15 in 42 exactly: deliver 2 full arrays and 1 trivial piece in 6 moves, every move gaining exactly 80, every term on the 30 singular frames; start with moves that each touch one array and show the two zero-divisor transfers cannot both keep +80. If machine time goes to the old descent, run the control 4+1 in 13 on the 56 + 105a pair first.",
+   "programs": [
+    "programs/tight-5-in-14-subgame/",
+    "programs/skeptic-tight-block3-family/"
+   ],
+   "notes": "the first skeptic's guess for its chance: well under 1 in 10"
+  },
+  {
+   "id": "idea-rounds/open-2",
+   "question": "Does the triangular kernel [[1,0],[1,-1]] have a block-3 unit below 2.8 moves per array (2 in 5, 3 in 7, 4 in 9)?",
+   "worth": 0.166,
+   "first_experiment": "Find a lower-bound method that gives 2 moves per array at block 2 for this kernel (group-algebra rank arguments are the only known candidates), then apply it at block 3; at least 14/5 closes the playground. Only then a calibrated search for 2 in 5 with AGL(3,2) maps, bit flips and continuous diagonals.",
+   "programs": [
+    "programs/kernel-playgrounds/"
+   ]
+  },
+  {
+   "id": "idea-rounds/open-3",
+   "question": "Can a 'termwise defect budget' extend the block-4 exclusion to near-tight schedules (the plain 2 in 7, 6 in 19, 3 arrays with 6 single moves and 2 rank-2 blocks)?",
+   "worth": 0.169,
+   "first_experiment": "Charge each failing term's defect against the schedule's slack: every depth-1 term has defect at least 3,920, above the 2,112 slack of the 1.6e-1-class schedules; decide whether defects add up per lineage (a plain chain costs 4,752, not 3 x 3,920).",
+   "programs": [
+    "programs/no-tight-unit-at-block-4/"
+   ]
+  },
+  {
+   "id": "idea-rounds/open-4",
+   "question": "Does the block-5 7-array problem (7 in 31) have a solution?",
+   "worth": 0.0754,
+   "first_experiment": "No block-4 shortcut exists; with scratch, run the Reed-Muller round's exact route (899 unknowns per time order), starting with the local Groebner test on the move sets of the weight-8 forms (see reed-muller-and-one-move).",
+   "programs": [
+    "programs/skeptic-targets-on-a-subspace/",
+    "programs/root-systems-and-index-codes/"
+   ]
+  },
+  {
+   "id": "idea-rounds/open-5",
+   "question": "Is there an idle-register Coxeter carousel at block 6 without phase letters at 5 moves per input?",
+   "worth": 0.102,
+   "first_experiment": "No-phase game, cyclic address group of order 6: five busy carriers with the Coxeter step plus one idle delay register, 2^21 forms (about 3.5e5 orbits), lags up to about 12; calibrate on the rate-6 carousel (must pass) and a deleted-move control (must fail). A cloud machine, not a laptop.",
+   "programs": [
+    "programs/coxeter-carousel/"
+   ]
+  },
+  {
+   "id": "idea-rounds/open-6",
+   "question": "(2,2,4) in 7 at block 4 with scratch, address maps in the middle or phase letters between moves?",
+   "worth": 0.0963,
+   "first_experiment": "Calibrate the tool (find the plain (2,2,4) in 8; refuse (2,2) in 3 at block 4 and (2,3) in 4 at block 3), then extend the exact six-move frame solver of the block-4 rounds to three inputs with targets (K, B, C).",
+   "programs": [
+    "programs/streaming-cells/"
+   ]
+  },
+  {
+   "id": "idea-rounds/open-7",
+   "question": "Does any escape hatch of the floor theorem give a program of linear size?",
+   "worth": null,
+   "first_experiment": "The half-touch experiment the floor round proposed (one half-length call plus sparse steps) was run the same night in the second idea wave (public in wht-fewer-operations, waves/wave-02/e-7.md and b-2.md): exact one-call identities at 4 to 64 points, none below the textbook count. Left open: one half-length plus one quarter-length call, where the known obstruction stops; the only construction of that shape has rows that grow like N^(1/4). First experiment (named in that wave's note): for that construction, compute the input side B by exact linear algebra at 16 and 64 points and count its nonzeros, which decides whether it gives such an identity at all (waves/LEADS.md, lead 2.10).",
+   "programs": [
+    "programs/floor-theorem/f-note/"
+   ]
+  },
+  {
+   "id": "idea-rounds/open-8",
+   "question": "The diagonal floor lemma in Lean.",
+   "worth": null,
+   "first_experiment": "Compile the two-theorem statement written in the floor round (the rise lemma by dimension counting; the rank-k value 2^m - 2^(m-k)), then a bridge from the engine's letters.",
+   "programs": []
+  },
+  {
+   "id": "idea-rounds/open-9",
+   "question": "Does the Fourier saving at every length equal the Kronecker-power saving?",
+   "worth": null,
+   "first_experiment": "Write out the Rader argument over F_(p^k) and give it to a skeptic.",
+   "programs": []
+  },
+  {
+   "id": "idea-rounds/open-10",
+   "question": "Is the qutrit kernel F_3 softer than the binary one at block 3?",
+   "worth": null,
+   "first_experiment": "Port the exact frame-game tools to the 1,120 Lagrangians of F_3^6 and compute frame certificates there (hooks are too weak for q = 3).",
+   "programs": [
+    "programs/kernel-playgrounds/"
+   ]
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/openai-mechanism-price-world/openai_objects.py",
+   "language": "python",
+   "shows": "identities of OpenAI's reflection argument at d = 1 to 4; the converter accounting; the p <= nnz cell; ceilings against the dense-pair price",
+   "command": "python3 openai_objects.py > out_openai_objects.txt",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/openai-mechanism-price-world/feedback_state.py",
+   "language": "python",
+   "shows": "McMillan degree f 4^f of (I + zJ)^(x)f; simultaneous versus per-column closure",
+   "command": "python3 feedback_state.py > out_feedback_state.txt",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/openai-mechanism-price-world/feedback_exact.py",
+   "language": "python",
+   "shows": "exact re-check of the f = 2 closures",
+   "command": "python3 feedback_exact.py > out_feedback_exact.txt",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/openai-mechanism-price-world/clifford_rank.py",
+   "language": "python",
+   "shows": "single-array Clifford cost = log2 of nonzeros per row",
+   "command": "python3 clifford_rank.py > out_clifford_rank.txt",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/openai-mechanism-price-world/ceilings.py",
+   "language": "python",
+   "shows": "zero-overhead ceilings of a fixed-matrix version of OpenAI's argument",
+   "command": "python3 ceilings.py > out_ceilings.txt",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/openai-mechanism-price-world/dense_pair.py",
+   "language": "python",
+   "shows": "the dense-pair identity; no diagonal + rank one form at 3 bits",
+   "command": "python3 dense_pair.py > out_dense_pair.txt",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/streaming-cells/stream_calib.py",
+   "language": "python",
+   "shows": "streaming evaluator with plain cells and deleted-move controls; slice consistency",
+   "command": "python3 stream_calib.py > out_calib.txt",
+   "time": "15 s to 75 s",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output (the saved file lacks the first three lines, the block-1 calibration, and ends with a timing record)"
+  },
+  {
+   "path": "programs/streaming-cells/shapes.py",
+   "language": "python",
+   "shows": "hook room of stage shapes; unknowns against equations",
+   "command": "python3 shapes.py > out_shapes.txt",
+   "time": "under a second",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/coxeter-carousel/coxeter.py",
+   "language": "python",
+   "shows": "c^m = full transform and c^(2m) = 1 in Sp(2m,2), m = 2 to 8; real arrays",
+   "command": "python3 coxeter.py (writes out_coxeter.txt)",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/coxeter-carousel/carousel.py",
+   "language": "python",
+   "shows": "the carousel at r = m is exact; age residual at r = m - 1",
+   "command": "python3 carousel.py (writes out_carousel.txt)",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/coxeter-carousel/carousel2.py",
+   "language": "python",
+   "shows": "border check with the drain; block-3 menu of one-move steps",
+   "command": "python3 carousel2.py (writes out_carousel2.txt)",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/coxeter-carousel/carousel3.py",
+   "language": "python",
+   "shows": "distinct geodesics of the block-3 menu",
+   "command": "python3 carousel3.py (writes out_carousel3.txt)",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/coxeter-carousel/busy_wall.py",
+   "language": "python",
+   "shows": "Hankel ranks of random scalar shadows (busy-register wall)",
+   "command": "python3 busy_wall.py (writes out_busy_wall.txt)",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/coxeter-carousel/carry.py",
+   "language": "python",
+   "shows": "carry identities behind the Hamming-weight-phasing verdict",
+   "command": "python3 carry.py (writes out_carry.txt)",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/root-systems-and-index-codes/s1_e7_dictionary.py",
+   "language": "python",
+   "shows": "block-3 frame game = W(E7) up to sign",
+   "command": "python3 s1_e7_dictionary.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/root-systems-and-index-codes/s2_index_code.py",
+   "language": "python",
+   "shows": "copy ratios of root-system centres as index codes",
+   "command": "python3 s2_index_code.py",
+   "time": "under a second",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/root-systems-and-index-codes/s3_subspace.py",
+   "language": "python",
+   "shows": "the 7-array problem as a three-qubit Pauli problem in E8",
+   "command": "python3 s3_subspace.py",
+   "time": "about 6.5 minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision (over the light-job limit)"
+  },
+  {
+   "path": "programs/root-systems-and-index-codes/s4_refl_probe.py",
+   "language": "python",
+   "shows": "reflection-form probe at block 4 (evidence only; calibrated)",
+   "command": "python3 s4_refl_probe.py pos|neg|probe SEED",
+   "time": "about 1 minute per seed",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output (the saved file ends with a timing record; the saved file ends with a timing record); seeds pos 1 and neg 1 only, the probe not re-run"
+  },
+  {
+   "path": "programs/root-systems-and-index-codes/s5_sub7_probe.py",
+   "language": "python",
+   "shows": "block-5 probe; positive control fails, no claim",
+   "command": "python3 s5_sub7_probe.py pos 7 1 1",
+   "time": "about 1 minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/root-systems-and-index-codes/s6_core_probe.py",
+   "language": "python",
+   "shows": "block-4 core probes (evidence only)",
+   "command": "python3 s6_core_probe.py altpos|alt4|mix SEED [N]",
+   "time": "1 to 4 minutes per run",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c1_calibrate.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c1_calibrate.py > out_c1_calibrate.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c2_singular.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c2_singular.py > out_c2_singular.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c3_s8.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c3_s8.py > out_c3_s8.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c4_cuts.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c4_cuts.py > out_c4_cuts.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c5_labels.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c5_labels.py > out_c5_labels.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c6_symscreen.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c6_symscreen.py > out_c6_symscreen.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c7_symscreen2.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c7_symscreen2.py > out_c7_symscreen2.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c8_s4.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c8_s4.py > out_c8_s4.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c9_subcal.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c9_subcal.py > out_c9_subcal.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c10_dgame.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c10_dgame.py > out_c10_dgame.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c11_staircase.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c11_staircase.py > out_c11_staircase.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output (differs only in the source lines that numpy's overflow warnings print to stderr)"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c12_framegraded.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c12_framegraded.py > out_c12_framegraded.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c13_overlap.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c13_overlap.py > out_c13_overlap.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c14_105a.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c14_105a.py > out_c14_105a.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c15_cal105.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c15_cal105.py > out_c15_cal105.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c16_survivors.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c16_survivors.py > out_c16_survivors.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c17_s8labels.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c17_s8labels.py > out_c17_s8labels.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tight-5-in-14-subgame/c18_s8sets.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 c18_s8sets.py > out_c18_s8sets.txt",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/kernel-playgrounds/exact_hook.py",
+   "language": "python",
+   "shows": "exact block-3 hook: 14/5 for H, 173/80 for the triangular class",
+   "command": "python3 exact_hook.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/kernel-playgrounds/hookk.py",
+   "language": "python",
+   "shows": "block-3 hook for seven kernels at two primes",
+   "command": "python3 hookk.py 3 4",
+   "time": "under a minute",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/kernel-playgrounds/allinv.py",
+   "language": "python",
+   "shows": "all monomial-invariant subspaces of the hook module",
+   "command": "python3 allinv.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/kernel-playgrounds/patterns.py",
+   "language": "python",
+   "shows": "pattern certificates at block 2 (triangular best 1.673 at f = 4)",
+   "command": "python3 patterns.py 2 3; python3 patterns.py 2 4",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/kernel-playgrounds/scan_k.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/kernel-playgrounds/chi_scan.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/kernel-playgrounds/venn2.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/kernel-playgrounds/venn2big.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/kernel-playgrounds/dualcert.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/kernel-playgrounds/mixcert.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/kernel-playgrounds/hook_q3.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/kernel-playgrounds/hook_block.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/no-tight-unit-at-block-4/b4_admissible.py",
+   "language": "python",
+   "shows": "engine positions at block 4 by depth through the f = 9 termwise filter: 0 of 30, 0 of 280",
+   "command": "python3 b4_admissible.py; DEPTH_MAX=2 NE=1 ONLY_DEPTH=2 SLICE=0/2 (and 1/2) python3 b4_admissible.py",
+   "time": "2 to 3 minutes per run",
+   "memory": "about 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output (one extra progress line, 'testing 30 positions', that the saved run, made with an earlier copy, did not print)"
+  },
+  {
+   "path": "programs/no-tight-unit-at-block-4/enum_test.py",
+   "language": "python",
+   "shows": "enumeration calibration 1, 30, 280, 960",
+   "command": "python3 enum_test.py 3",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/no-tight-unit-at-block-4/dep_supports.py",
+   "language": "python",
+   "shows": "smallest dependency sets are the 3-flats",
+   "command": "python3 dep_supports.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/no-tight-unit-at-block-4/make-E/",
+   "language": "python",
+   "shows": "rebuilds the filter's 53 MB data file E (dumpK.py, nullsp.c, blk9.py, filter9.py)",
+   "command": "see the folder README",
+   "time": "about 4 minutes",
+   "memory": "about 0.6 GB",
+   "needs": [
+    "numpy",
+    "scipy",
+    "C compiler"
+   ],
+   "rerun": "rebuilt on 19 Oct 2026: byte-identical (same sha256)"
+  },
+  {
+   "path": "programs/skeptic-tight-block3-family/s1_depth_cuts.py",
+   "language": "python",
+   "shows": "depths seen by relaxations; all cuts with refusals",
+   "command": "python3 s1_depth_cuts.py depth; python3 s1_depth_cuts.py cuts",
+   "time": "under two minutes",
+   "memory": "under 2.5 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/skeptic-tight-block3-family/s2_labels.py",
+   "language": "python",
+   "shows": "3,486 labelled certificates on 56 + 105a",
+   "command": "python3 s2_labels.py",
+   "time": "under two minutes",
+   "memory": "under 2.5 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/skeptic-tight-block3-family/s3_singular.py",
+   "language": "python",
+   "shows": "the 30 singular frames, S8, AGL(3,2), the 8 sectors, from scratch",
+   "command": "python3 s3_singular.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/skeptic-tight-block3-family/s4_typegraph.py",
+   "language": "python",
+   "shows": "type graphs of the move and the target",
+   "command": "python3 s4_typegraph.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/skeptic-targets-on-a-subspace/k1_sumzero.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 k1_sumzero.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/skeptic-targets-on-a-subspace/k2_sumzero_nonalt.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 k2_sumzero_nonalt.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/skeptic-targets-on-a-subspace/k2b_calib.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 k2b_calib.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/skeptic-targets-on-a-subspace/k3_core_hook.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 k3_core_hook.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/skeptic-targets-on-a-subspace/k4_sumzero_alt.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "python3 k4_sumzero_alt.py",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/f-engine/floor.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/f-model/checks.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/f-model/hatch2.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/f-break/diag.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/f-break/walk.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/f-break/span_clo.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/f-break/span_big.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/f-note/diagrem.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/f-note/eig.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/g-engine/check.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/g-engine/even.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/g-model/gcheck.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/g-model/gcheck2.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/g-model/gcheck3.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/g-break/g1.py",
+   "language": "python",
+   "shows": "see the folder README",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/floor-theorem/f-break/span.py",
+   "language": "python",
+   "shows": "finite-f span test",
+   "command": "python3 span.py M F P [bim]",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/floor-theorem/g-break/g2.py",
+   "language": "python",
+   "shows": "spans of zero-block steps modulo a prime",
+   "command": "python3 g2.py 65537 MODE CAP",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/regmachine.py",
+   "language": "python",
+   "shows": "hand transcription of the engine game (numeric and formal simulators); not Lean",
+   "command": "imported by the programs below",
+   "time": "-",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "used by the re-runs below"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/joint-test/hand.py",
+   "language": "python",
+   "shows": "six inequalities exclude 3 in 8 (sub-game)",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/joint-test/static.py",
+   "language": "python",
+   "shows": "static cuts for every multiset",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/joint-test/staticlp.py",
+   "language": "python",
+   "shows": "best static combination 13/5",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/joint-test/check_cert.py",
+   "language": "python",
+   "shows": "checks the static certificate",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/joint-test/sk_six.py",
+   "language": "python",
+   "shows": "skeptic's enumeration of the six inequalities",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/joint-test/model_cert.py",
+   "language": "python",
+   "shows": "capacities and demands of the label groups",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/face-certificate/facet.py",
+   "language": "python",
+   "shows": "face certificate cap and demand",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/face-certificate/sk_general.py",
+   "language": "python",
+   "shows": "checking agent's recomputation",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/face-certificate/sk_cert.py",
+   "language": "python",
+   "shows": "the 3.058 certificate at block 4",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/symmetry-tests/symtest.py",
+   "language": "python",
+   "shows": "symmetry maps on real schedules",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/symmetry-tests/gaugetest.py",
+   "language": "python",
+   "shows": "gauge freedom of the straight-line form",
+   "command": "see the folder README",
+   "time": "seconds to minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ],
+   "rerun": "re-run on 19 Oct 2026: same output"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/joint-test/certfind.c",
+   "language": "c",
+   "shows": "cut certificates for all ordered patterns",
+   "command": "see the folder README",
+   "time": "minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "C compiler"
+   ],
+   "rerun": "not re-run for this revision"
+  },
+  {
+   "path": "programs/tiny-units-without-address-maps/joint-test/certcheck.c",
+   "language": "c",
+   "shows": "checker of cut certificates",
+   "command": "see the folder README",
+   "time": "minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "C compiler"
+   ],
+   "rerun": "not re-run for this revision"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+F rows 196 pieces 225
+rows 1598 vars 240 build 0.0s
+LP optimum (float) 4.000000000000
+c at optimum (rounded): [np.float64(-0.0), np.float64(-0.0), np.float64(-0.0), np.float64(-0.0), np.float64(-0.0), np.float64(-0.0), np.float64(1.0), np.float64(-0.0), np.float64(-0.0), np.float64(-0.0), np.float64(1.0), np.float64(-0.0), np.float64(1.0), np.float64(1.0), np.float64(0.0)]
+limit_denominator 100: exact bound 4 = 4.000000000000  (rows used 45, repairs 0)
+limit_denominator 1000: exact bound 4 = 4.000000000000  (rows used 45, repairs 0)
+limit_denominator 10000: exact bound 4 = 4.000000000000  (rows used 45, repairs 0)
+limit_denominator 1e+06: exact bound 4 = 4.000000000000  (rows used 45, repairs 0)
+limit_denominator 1e+09: exact bound 4 = 4.000000000000  (rows used 45, repairs 0)
+limit_denominator 1e+12: exact bound 4 = 4.000000000000  (rows used 45, repairs 0)
+BEST exact lower bound on M/W: 4 = 4.000000000000

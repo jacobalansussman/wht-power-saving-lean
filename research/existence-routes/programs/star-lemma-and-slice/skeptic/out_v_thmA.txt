@@ -1,0 +1,8 @@
+W 2 M 7 dirs [1, 2, 3, 4, 5, 6, 7] ; Gam strictly lower: True  strictly upper: False
+order-2 system (*) max error over 64 forms: 6.753223014464258e-16
+check v_i.u_i = 1: 0.0 ; v_j.u_i = G_ji/2 (i<j): 1.5612511283791264e-17
+f=1:     8 inputs y,   8 distinct characters; literal: max err 1.99, wrong at 4; corrected: max err 0, wrong at 0
+f=2:    64 inputs y,  36 distinct characters; literal: max err 1.99, wrong at 32; corrected: max err 1.13e-15, wrong at 0
+f=3:   512 inputs y, 120 distinct characters; literal: max err 1.99, wrong at 256; corrected: max err 1.13e-15, wrong at 0
+f=4:  4096 inputs y, 295 distinct characters; literal: max err 1.99, wrong at 2048; corrected: max err 1.13e-15, wrong at 0
+all 512 characters reachable with some f: literal wrong at 256 (max err 1.99); corrected wrong at 0 (max err 1.13e-15)

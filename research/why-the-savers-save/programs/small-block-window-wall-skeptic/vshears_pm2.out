@@ -1,0 +1,5 @@
+banks 2, at most 2 calls per bank: exchange exists = False
+banks 3, at most 2 calls per bank: exchange exists = False
+banks 4, at most 2 calls per bank: exchange exists = False
+banks 2, at most 3 calls per bank: exchange exists = True
+banks 3, at most 3 calls per bank: exchange exists = False

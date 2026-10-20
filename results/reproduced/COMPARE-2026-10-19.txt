@@ -1,0 +1,28 @@
+  equal        heads/controls.txt
+  not re-run   heads/cross-replica-3945.txt
+  equal        heads/heads-3945-control.json
+  equal        heads/heads-3945.json
+  equal        heads/lever-price.txt
+  not re-run   heads/margins.txt
+  equal        heads/recount-3945.txt
+  equal        g0/g0-3815.json
+  equal        g0/g0-3945.json
+  equal        g0/g0-T74-control.json
+  equal        g0/g0-T74-control.txt
+  equal        g0/lower-3815-base.json
+  equal        g0/lower-3815-base.txt
+  equal        g0/lower-3815-extra.json
+  equal        g0/lower-3815-extra.txt
+  equal        g0/lower-base.json
+  equal        g0/lower-base.txt
+  equal        g0/lower-extra.json
+  equal        g0/lower-extra.txt
+  equal        g0/mutants-3815-base.json
+  equal        g0/mutants-3815-extra.json
+  equal        g0/mutants-base.json
+  equal        g0/mutants-base.txt
+  equal        g0/mutants-extra.json
+  equal        g0/mutants-extra.txt
+  equal        g0/price-3815.json
+  equal        g0/price-3945.json
+ALL EQUAL

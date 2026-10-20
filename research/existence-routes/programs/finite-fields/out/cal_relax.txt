@@ -1,0 +1,21 @@
+cal_plain4F_s1.u: 20 eqs, 8 alphas, 10 betas; alpha-only GB elements used as hints: 1
+EXISTS [exact rational point; all 20 equations verified over Q] try 2: a2=-1, a4=-1, a5=1, a6=-2, a7=1, b9=-2/3, b10=-1/3  (all other unknowns 0)
+   [no hints] EXISTS [exact rational point; all 20 equations verified over Q] try 48: a1=2, a2=1, a4=1, a5=1, a7=-1, a8=2, b10=1/3  (all other unknowns 0)
+cal_plain3_s0.u: 24 eqs, 6 alphas, 12 betas; alpha-only GB elements used as hints: 0
+EXISTS [exact rational point; all 24 equations verified over Q] try 1: a1=-2, a2=-1, a3=1, a6=2, b10=-1/18, b11=-2/9, b12=1/9  (all other unknowns 0)
+   [no hints] EXISTS [exact rational point; all 24 equations verified over Q] try 1: a1=-2, a2=-1, a3=1, a6=2, b10=-1/18, b11=-2/9, b12=1/9  (all other unknowns 0)
+cal_plain3_s1.u: 24 eqs, 6 alphas, 12 betas; alpha-only GB elements used as hints: 0
+EXISTS [exact rational point; all 24 equations verified over Q] try 1: a1=-2, a2=-1, a3=1, a6=2, b10=-2/9, b11=-1/18, b12=1/9  (all other unknowns 0)
+   [no hints] EXISTS [exact rational point; all 24 equations verified over Q] try 1: a1=-2, a2=-1, a3=1, a6=2, b10=-2/9, b11=-1/18, b12=1/9  (all other unknowns 0)
+cal_plain4P_s2.u: 28 eqs, 6 alphas, 10 betas; alpha-only GB elements used as hints: 1
+EXISTS [exact rational point; all 28 equations verified over Q] try 0: a1=1, a2=-2, a3=1, a5=-1, a6=1, b9=1  (all other unknowns 0)
+   [no hints] EXISTS [exact rational point; all 28 equations verified over Q] try 4: a1=2, a2=1, a3=2, a5=-2, a6=-1, b9=1/12  (all other unknowns 0)
+t27_mid3_m2_s1.u: 30 eqs, 8 alphas, 9 betas; alpha-only GB elements used as hints: 2
+EXISTS [exact rational point; all 30 equations verified over Q] try 0: a1=1, a2=1, a3=1, a4=1, a6=-2, a7=-2, a8=1, b6=-1/4, b8=1/12, b9=1/24  (all other unknowns 0)
+   [no hints] EXISTS [exact rational point; all 30 equations verified over Q] try 38: a2=2, a3=-1, a4=-1, a6=-1, a8=2, b6=1/4, b9=1/8  (all other unknowns 0)
+cal_b3_2in5_s0.u: 22 eqs, 6 alphas, 7 betas; alpha-only GB elements used as hints: 1
+NO CERTIFICATE after 300 tries: {'dead': 300, 'beta-inconsistent': 0}
+   [no hints] NO CERTIFICATE after 300 tries: {'dead': 0, 'beta-inconsistent': 300}
+cal_b3_2in5_s2.u: 20 eqs, 6 alphas, 7 betas; alpha-only GB elements used as hints: 1
+NO CERTIFICATE after 300 tries: {'dead': 300, 'beta-inconsistent': 0}
+   [no hints] NO CERTIFICATE after 300 tries: {'dead': 0, 'beta-inconsistent': 300}

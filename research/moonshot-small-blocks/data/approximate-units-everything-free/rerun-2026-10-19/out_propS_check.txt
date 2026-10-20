@@ -1,0 +1,12 @@
+f=2
+   eps=1e-02: |border_Q - twin|/|x| 4.2e-03  |border_Y| 1.15e+00  |border_G| 6.65e+01
+   eps=1e-04: |border_Q - twin|/|x| 4.2e-05  |border_Y| 1.15e+00  |border_G| 6.67e+03
+   eps=1e-06: |border_Q - twin|/|x| 4.2e-07  |border_Y| 1.15e+00  |border_G| 6.67e+05
+f=3
+   eps=1e-02: |border_Q - twin|/|x| 4.8e-03  |border_Y| 7.90e-01  |border_G| 7.37e+01
+   eps=1e-04: |border_Q - twin|/|x| 4.8e-05  |border_Y| 7.88e-01  |border_G| 7.36e+03
+   eps=1e-06: |border_Q - twin|/|x| 4.8e-07  |border_Y| 7.88e-01  |border_G| 7.36e+05
+f=4
+   eps=1e-02: |border_Q - twin|/|x| 4.6e-03  |border_Y| 9.00e-01  |border_G| 6.94e+01
+   eps=1e-04: |border_Q - twin|/|x| 4.6e-05  |border_Y| 8.98e-01  |border_G| 6.93e+03
+   eps=1e-06: |border_Q - twin|/|x| 4.6e-07  |border_Y| 8.98e-01  |border_G| 6.93e+05

@@ -1,0 +1,62 @@
+PUBTEST START Mon Oct 19 09:59:54 PM UTC 2026 host=b38fd20cac42 heavy=0 avail=49372
+copy 112s 9.7G
+base HEAD 52394849c7ecf3412d39b925d75fc7fdb98994d8; tracked changes: 0
+== lever requires u8x0hq: applying package/u8x0hq first
+applied 259 lines to /content/work/i-final/shea/lean/complex588; git status lines: 258
+applied 407 lines to /content/work/i-final/shea/lean/complex588; git status lines: 663
+apply rc=0
+lakefile.lean: 0 line(s) added: []
+mode add, variant default
+lakefile.lean: 2 line(s) added: ['lean_lib XExit where globs := #[`XExit.+]', 'lean_lib CSX where globs := #[`CSX.+]']
+mode add, variant default
+LAID TREE DIFFERS from the checked tree:
+1030c1030
+< b8d12a30852ec8720ce77f37295f531e92a68062f56e08ee0eacbb329baab866  lakefile.lean
+---
+> 72d46d69be91e3db2f702c67736b8101c9a8c527c00e6a2baebada25f15ee4a3  lakefile.lean
+=== prebuild START Mon Oct 19 10:01:48 PM UTC 2026
+=== prebuild END rc=0 wall=1930s Maximum resident set size (kbytes): 9568668
+info: Work/FourierL3945/Axioms.lean:4:0: 'OAI.PowerSaving.RAM.hillsL3945_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9733 jobs).
+=== STEP 397-Work.FourierL3945.UniformBounds START Mon Oct 19 10:50:59 PM UTC 2026 cmd: lake build Work.FourierL3945.UniformBounds
+=== STEP 397-Work.FourierL3945.UniformBounds END rc=0 wall=5s last: Build completed successfully (9620 jobs).
+=== STEP 398-Work.FourierL3945.Asymptotics START Mon Oct 19 10:51:04 PM UTC 2026 cmd: lake build Work.FourierL3945.Asymptotics
+=== STEP 398-Work.FourierL3945.Asymptotics END rc=0 wall=5s last: Build completed successfully (9621 jobs).
+=== STEP 399-Work.FourierL3945.Goal START Mon Oct 19 10:51:09 PM UTC 2026 cmd: lake build Work.FourierL3945.Goal
+=== STEP 399-Work.FourierL3945.Goal END rc=0 wall=5s last: Build completed successfully (8927 jobs).
+=== STEP 400-Work.FourierL3945.Main START Mon Oct 19 10:51:14 PM UTC 2026 cmd: lake build Work.FourierL3945.Main
+=== STEP 400-Work.FourierL3945.Main END rc=0 wall=5s last: Build completed successfully (9623 jobs).
+=== STEP 401-Work.FourierL3945.Axioms START Mon Oct 19 10:51:19 PM UTC 2026 cmd: lake build Work.FourierL3945.Axioms
+=== STEP 401-Work.FourierL3945.Axioms END rc=0 wall=5s last: Build completed successfully (9624 jobs).
+=== STEP 402-Work.FourierL3945.UniformFourierChallenge START Mon Oct 19 10:51:24 PM UTC 2026 cmd: lake build Work.FourierL3945.UniformFourierChallenge
+=== STEP 402-Work.FourierL3945.UniformFourierChallenge END rc=0 wall=5s last: Build completed successfully (8924 jobs).
+=== STEP 403-Work.FourierL3945Neg.UniformFourierChallenge START Mon Oct 19 10:51:29 PM UTC 2026 cmd: lake build Work.FourierL3945Neg.UniformFourierChallenge
+=== STEP 403-Work.FourierL3945Neg.UniformFourierChallenge END rc=0 wall=5s last: Build completed successfully (8924 jobs).
+=== STEP build-targets START Mon Oct 19 10:51:34 PM UTC 2026 cmd: lake build Work.L3945.Stmt Work.L3945.Engine Work.FourierL3945.Main Work.FourierL3945.UniformFourierChallenge Work.FourierL3945Neg.UniformFourierChallenge Work.FourierL3945.Axioms
+=== STEP build-targets END rc=0 wall=5s last: Build completed successfully (9626 jobs).
+=== STEP axioms START Mon Oct 19 10:51:39 PM UTC 2026 cmd: lake env lean Work/FourierL3945/Axioms.lean
+=== STEP axioms END rc=0 wall=7s last: 'OAI.PowerSaving.RAM.hillsL3945_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== STEP control-rate-fails-one-unit-higher START Mon Oct 19 10:51:46 PM UTC 2026 cmd: lake env lean /content/work/i-final/pub/in/package/lever/controls/Rate3945SharpCtl.lean
+=== STEP control-rate-fails-one-unit-higher END rc=0 wall=6s last: 'OAI.PowerSaving.MX.rate3945_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== STEP control-host-table-one-step-too-far START Mon Oct 19 10:51:52 PM UTC 2026 cmd: lake env lean /content/work/i-final/pub/in/package/lever/controls/Heads3945Neg.lean
+=== STEP control-host-table-one-step-too-far END rc=0 wall=6s last: 'OAI.PowerSaving.XHostT.K.DS5.res_ge0_6_false' depends on axioms: [propext]
+=== STEP compare START Mon Oct 19 10:51:58 PM UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierL3945.UniformFourierChallenge Work.FourierL3945.Main OAI.PowerSaving.transform_mainL3945 OAI.PowerSaving.convolution_mainL3945
+=== STEP compare END rc=0 wall=66s last: RESULT: PASS
+=== STEP compare-negative START Mon Oct 19 10:53:04 PM UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierL3945Neg.UniformFourierChallenge Work.FourierL3945.Main OAI.PowerSaving.transform_mainL3945 OAI.PowerSaving.convolution_mainL3945
+=== STEP compare-negative END rc=1 wall=48s last: RESULT: FAIL
+PASS compare: RESULT: PASS
+PASS compare-negative: fails (rc != 0)
+PASS compare-negative: the exponent definition differs (decimalExponentL3945)
+PASS axioms: no sorryAx
+PASS statement files: both identical to OpenAI's statement with only the exponent and names changed
+PASS Lean control rate-fails-one-unit-higher compiles
+PASS Lean control host-table-one-step-too-far compiles
+PASS axioms: OAI.PowerSaving.transform_mainL3945 only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.convolution_mainL3945 only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.RAM.hillsL3945_program only on propext, Classical.choice, Quot.sound
+PASS source scan: no forbidden word outside comments and the challenges' sorry (0 hits)
+FAIL source scan: no tracked file of the base tree changed
+SOME CHECK FAILED
+END Mon Oct 19 10:53:53 PM UTC 2026 rc=1
+check rc=1
+PUBTEST END Mon Oct 19 10:53:53 PM UTC 2026

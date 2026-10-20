@@ -1,0 +1,16 @@
+[lift] seed 21: cells lam1 1 t1 16 F 137 K 731; |B_m sample| 151 of 4000; q order 7 found; 24s
+[CTL] plain-chain positive control: kappa = 1, p_j = 1 (only a = 0 is nonzero)
+[legit] letters checked: c, c', p, beta, q, 7 F1 coefficient letters, 1 k_b, c_h c'_h; bad = [] (0)
+[legit] m = D_5 * letter; m1 = D_11 * letter; m2 = D_3 * letter; c^7 = I True; q^7 = I True
+[legit] p homomorphism: True
+[absorb] F1 terms 7; max |tau_g(F1) - psi(g) c_g p_g^-1 F1| = 3.1e-16 (coef scale 1.00)
+[absorb] cells of array-0 terms [137] (F = 137); kappa f0 check: True 24s
+[V] D3 = D_1; |S4| 16; d0 slot 10
+[V] slots of all 30 x 7 x 1 products  25s
+[triv generic d4] a0: r=1 m=1 junk=0e+00 sv[1.0e+00|0.0e+00]; a1: r=0 m=0 junk=3e-17 sv[0.0e+00|3.1e-17]; a2: r=0 m=0 junk=3e-17 sv[0.0e+00|3.1e-17]; a3: r=0 m=0 junk=2e-16 sv[0.0e+00|2.4e-16]; a4: r=0 m=0 junk=7e-17 sv[0.0e+00|6.8e-17]; a5: r=0 m=0 junk=8e-16 sv[0.0e+00|8.0e-16]; a6: r=0 m=0 junk=7e-16 sv[0.0e+00|7.2e-16]
+[triv generic d4] total deficit 6 vs ds 1
+[gl15 generic d4] a0: r=15 m=15 junk=0e+00 sv[1.0e+00|0.0e+00]; a1: r=0 m=0 junk=3e-17 sv[0.0e+00|3.1e-17]; a2: r=0 m=0 junk=3e-17 sv[0.0e+00|3.1e-17]; a3: r=0 m=0 junk=2e-16 sv[0.0e+00|2.4e-16]; a4: r=0 m=0 junk=7e-17 sv[0.0e+00|6.8e-17]; a5: r=0 m=0 junk=8e-16 sv[0.0e+00|8.0e-16]; a6: r=0 m=0 junk=7e-16 sv[0.0e+00|7.2e-16]
+[gl15 generic d4] total deficit 90 vs ds 15
+[aff16 generic d4] a0: r=16 m=16 junk=0e+00 sv[1.0e+00|0.0e+00]; a1: r=0 m=0 junk=3e-17 sv[0.0e+00|3.1e-17]; a2: r=0 m=0 junk=3e-17 sv[0.0e+00|3.1e-17]; a3: r=0 m=0 junk=2e-16 sv[0.0e+00|2.4e-16]; a4: r=0 m=0 junk=7e-17 sv[0.0e+00|6.8e-17]; a5: r=0 m=0 junk=8e-16 sv[0.0e+00|8.0e-16]; a6: r=0 m=0 junk=7e-16 sv[0.0e+00|7.2e-16]
+[aff16 generic d4] total deficit 96 vs ds 16
+done 26s

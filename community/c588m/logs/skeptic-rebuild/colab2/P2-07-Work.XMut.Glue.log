@@ -1,0 +1,5 @@
+/content/work/v-m-rebuild/src/Work/XMut/Glue.lean:46:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+'GXD.gscalOfZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.ginvOfZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.ginvOfZ_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.ginvOfZ_ent_dim' depends on axioms: [propext, Classical.choice, Quot.sound]

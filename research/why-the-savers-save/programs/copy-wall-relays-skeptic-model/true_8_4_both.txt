@@ -1,0 +1,7 @@
+cliques [[96, 18, 82, 92, 14, 22, 6, 10], [36, 53, 28, 41, 12, 98, 47, 103], [2, 79, 23, 50, 58, 51, 74, 27], [72, 30, 20, 76, 7, 9, 56, 94], [107, 91, 99, 64, 34, 97, 49, 77]]
+P111 r=8 k=4 mode=both clique#0: UNSAT  0.7s 
+P111 r=8 k=4 mode=both clique#1: UNSAT  0.5s 
+P111 r=8 k=4 mode=both clique#2: UNSAT  0.4s 
+P111 r=8 k=4 mode=both clique#3: UNSAT  0.7s 
+P111 r=8 k=4 mode=both clique#4: UNSAT  0.8s 
+OVERALL UNSAT in all 5 runs (covers every choice)

@@ -1,0 +1,28 @@
+cp rc=0 175s
+=== nobuild START 19:14:04
+=== nobuild END rc=0 wall=43s maxrss_kb=882548 19:14:47
+All targets up-to-date (9327 jobs).
+TREE OK /content/work/x-final/T (11G)
+INSTALL L2979-extra: 161 new, 105 identical (skipped), from /content/work/x-final/in/engine; hashes /content/work/x-final/in-L2979-extra.sha256
+INSTALL L2979-side: 1 new, 3 identical (skipped), from /content/work/x-final/in/side; hashes /content/work/x-final/in-L2979-side.sha256
+INSTALL L2979: 18 new, 2 identical (skipped), from /content/work/x-final/in/final-L2979/stage; hashes /content/work/x-final/in-L2979.sha256
+=== lightA START 19:14:50
+=== lightA END rc=0 wall=212s maxrss_kb=1324212 19:18:22
+✔ [40/41] Built Work.XHostT.Data.H2979.P1 (27s)
+✔ [41/41] Built Work.XHostT.Data.H2979.P0 (20s)
+Build completed successfully (41 jobs).
+   (slot: waited 0s; heavy 0, avail 37493 MB)
+phase B LEAN_NUM_THREADS=3
+=== engine START 19:18:22
+=== engine END rc=0 wall=1204s maxrss_kb=9486876 19:38:26
+info: Work/FourierL2979/Axioms.lean:3:0: 'OAI.PowerSaving.convolution_mainL2979' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979/Axioms.lean:4:0: 'OAI.PowerSaving.RAM.hillsL2979_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9511 jobs).
+PHASE B rc=0
+      1 info: XExit/Pack.lean:284:0: 'OAI.PowerSaving.XEX.fits_toE'' depends on axioms: [propext, Classical.choice, Quot.sound]
+      1 info: XExit/Pack.lean:283:0: 'OAI.PowerSaving.XEX.GInvX.toE'' depends on axioms: [propext, Classical.choice, Quot.sound]
+      1 info: XExit/Pack.lean:282:0: 'OAI.PowerSaving.XEX.GInvX.toE' depends on axioms: [propext, Classical.choice, Quot.sound]
+      1 info: XExit/Pack.lean:281:0: 'OAI.PowerSaving.XEX.GInvX.routeE' depends on axioms: [propext, Classical.choice, Quot.sound]
+      1 info: XExit/Pack.lean:280:0: 'OAI.PowerSaving.XEX.route_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+0
+EXIT 0

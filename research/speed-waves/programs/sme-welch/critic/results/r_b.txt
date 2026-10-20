@@ -1,0 +1,347 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# P-core wisdom import: ok
+# planning (c2c + r2c PATIENT, in process) 0.00 s
+# FFTW c2c plan: (dft-ct-dit/16
+  (dftw-direct-16/60 "t2fv_16_neon")
+  (dft-direct-32-x16 "n1fv_32_neon"))
+# FFTW r2c plan: (rdft2-ct-dit/32
+  (hc2c-direct-32/62/0 "hc2cfdftv_32_neon"
+    (rdft2-r2hc-direct-32 "r2cf_32")
+    (rdft2-r2hc01-direct-32 "r2cfII_32"))
+  (dft-direct-16-x16 "n2fv_16_neon"))
+CHECK FFTW-d c2c pair (timer,PAT)              max abs err 2.665e-15  rel err 1.676e-16  (tol 1.0e-13) PASS
+CHECK FFTW-d r2c/frame (timer,PAT)             max abs err 1.030e-13  rel err 6.480e-15  (tol 1.0e-13) PASS
+CHECK PFFFT-d real/frame ordered               max abs err 1.030e-13  rel err 6.480e-15  (tol 1.0e-13) PASS
+CHECK KFR-d c2c pair                           max abs err 2.665e-15  rel err 1.676e-16  (tol 1.0e-13) PASS
+CHECK PFFFT-d c2c pair z-order                 max abs err 1.776e-15  rel err 1.117e-16  (tol 1.0e-13) PASS
+CHECK SME-F                                    max abs err 1.332e-15  rel err 8.379e-17  (tol 1.0e-13) PASS
+## au1 welch fp64 N=512 nov=256 hann L=2^24 nseg=65535  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  FFTW-d c2c pair (timer,PAT)        1.6173
+rep  0  FFTW-d r2c/frame (timer,PAT)       1.8679
+rep  0  PFFFT-d real/frame ordered         1.7861
+rep  0  KFR-d c2c pair                     1.6818
+rep  0  PFFFT-d c2c pair z-order           1.7245
+rep  0  SME-F                              1.0937
+rep  1  FFTW-d r2c/frame (timer,PAT)       1.8664
+rep  1  PFFFT-d real/frame ordered         1.7873
+rep  1  KFR-d c2c pair                     1.6917
+rep  1  PFFFT-d c2c pair z-order           1.7227
+rep  1  SME-F                              1.0893
+rep  1  FFTW-d c2c pair (timer,PAT)        1.6136
+rep  2  PFFFT-d real/frame ordered         1.7929
+rep  2  KFR-d c2c pair                     1.6843
+rep  2  PFFFT-d c2c pair z-order           1.7203
+rep  2  SME-F                              1.0946
+rep  2  FFTW-d c2c pair (timer,PAT)        1.6192
+rep  2  FFTW-d r2c/frame (timer,PAT)       1.8717
+rep  3  KFR-d c2c pair                     1.6837
+rep  3  PFFFT-d c2c pair z-order           1.7196
+rep  3  SME-F                              1.0939
+rep  3  FFTW-d c2c pair (timer,PAT)        1.6156
+rep  3  FFTW-d r2c/frame (timer,PAT)       1.8614
+rep  3  PFFFT-d real/frame ordered         1.7882
+rep  4  PFFFT-d c2c pair z-order           1.7209
+rep  4  SME-F                              1.0991
+rep  4  FFTW-d c2c pair (timer,PAT)        1.6170
+rep  4  FFTW-d r2c/frame (timer,PAT)       1.8606
+rep  4  PFFFT-d real/frame ordered         1.7852
+rep  4  KFR-d c2c pair                     1.6848
+rep  5  SME-F                              1.0900
+rep  5  FFTW-d c2c pair (timer,PAT)        1.6193
+rep  5  FFTW-d r2c/frame (timer,PAT)       1.8636
+rep  5  PFFFT-d real/frame ordered         1.7890
+rep  5  KFR-d c2c pair                     1.6852
+rep  5  PFFFT-d c2c pair z-order           1.7205
+rep  6  FFTW-d c2c pair (timer,PAT)        1.6119
+rep  6  FFTW-d r2c/frame (timer,PAT)       1.8616
+rep  6  PFFFT-d real/frame ordered         1.7829
+rep  6  KFR-d c2c pair                     1.6795
+rep  6  PFFFT-d c2c pair z-order           1.7211
+rep  6  SME-F                              1.0907
+rep  7  FFTW-d r2c/frame (timer,PAT)       1.8656
+rep  7  PFFFT-d real/frame ordered         1.7959
+rep  7  KFR-d c2c pair                     1.6835
+rep  7  PFFFT-d c2c pair z-order           1.7320
+rep  7  SME-F                              1.0998
+rep  7  FFTW-d c2c pair (timer,PAT)        1.6193
+rep  8  PFFFT-d real/frame ordered         1.7806
+rep  8  KFR-d c2c pair                     1.6821
+rep  8  PFFFT-d c2c pair z-order           1.7205
+rep  8  SME-F                              1.0945
+rep  8  FFTW-d c2c pair (timer,PAT)        1.6175
+rep  8  FFTW-d r2c/frame (timer,PAT)       1.8635
+RESULT au1 welch fp64 N=512 nov=256 hann L=2^24 nseg=65535 FFTW-d c2c pair (timer,PAT)  best     1.6119  median     1.6173  ns/input sample  (calls/rep 9)
+RESULT au1 welch fp64 N=512 nov=256 hann L=2^24 nseg=65535 FFTW-d r2c/frame (timer,PAT) best     1.8606  median     1.8636  ns/input sample  (calls/rep 8)
+RESULT au1 welch fp64 N=512 nov=256 hann L=2^24 nseg=65535 PFFFT-d real/frame ordered   best     1.7806  median     1.7873  ns/input sample  (calls/rep 8)
+RESULT au1 welch fp64 N=512 nov=256 hann L=2^24 nseg=65535 KFR-d c2c pair               best     1.6795  median     1.6837  ns/input sample  (calls/rep 8)
+RESULT au1 welch fp64 N=512 nov=256 hann L=2^24 nseg=65535 PFFFT-d c2c pair z-order     best     1.7196  median     1.7209  ns/input sample  (calls/rep 8)
+RESULT au1 welch fp64 N=512 nov=256 hann L=2^24 nseg=65535 SME-F                        best     1.0893  median     1.0939  ns/input sample  (calls/rep 12)
+MS FFTW-d c2c pair (timer,PAT)    best   27.044 median   27.133 ms/call
+MS FFTW-d r2c/frame (timer,PAT)   best   31.216 median   31.266 ms/call
+MS PFFFT-d real/frame ordered     best   29.873 median   29.985 ms/call
+MS KFR-d c2c pair                 best   28.178 median   28.248 ms/call
+MS PFFFT-d c2c pair z-order       best   28.850 median   28.873 ms/call
+MS SME-F                          best   18.276 median   18.352 ms/call
+VS SME vs best library (FFTW-d c2c pair (timer,PAT)): best  -32.4 %  median  -32.4 %
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# P-core wisdom import: ok
+# planning (c2c + r2c PATIENT, in process) 0.00 s
+# FFTW c2c plan: (dft-ct-dit/8
+  (dftw-direct-8/28 "t2fv_8_neon")
+  (dft-ct-dit/16
+    (dftw-direct-16/60-x8 "t2fv_16_neon")
+    (dft-vrank>=1-x16/1
+      (dft-direct-32-x8 "n1fv_32_neon"))))
+# FFTW r2c plan: (rdft2-ct-dit/4
+  (hc2c-direct-4/6/0 "hc2cfdftv_4_neon"
+    (rdft2-r2hc-direct-4 "r2cf_4")
+    (rdft2-r2hc01-direct-4 "r2cfII_4"))
+  (dft-ct-dit/16
+    (dftw-direct-16/60-x2 "t2fv_16_neon")
+    (dft-vrank>=1-x2/-1
+      (dft-direct-64-x16 "n1fv_64_neon"))))
+CHECK FFTW-d c2c pair (timer,PAT)              max abs err 2.842e-14  rel err 2.849e-16  (tol 1.0e-13) PASS
+CHECK FFTW-d r2c/frame (timer,PAT)             max abs err 5.684e-13  rel err 5.698e-15  (tol 1.0e-13) PASS
+CHECK PFFFT-d real/frame ordered               max abs err 5.684e-13  rel err 5.698e-15  (tol 1.0e-13) PASS
+CHECK KFR-d c2c pair                           max abs err 3.331e-16  rel err 3.339e-18  (tol 1.0e-13) PASS
+CHECK PFFFT-d c2c pair z-order                 max abs err 2.842e-14  rel err 2.849e-16  (tol 1.0e-13) PASS
+CHECK SME-F                                    max abs err 2.842e-14  rel err 2.849e-16  (tol 1.0e-13) PASS
+## au1 welch fp64 N=4096 nov=2048 hann L=2^24 nseg=8191  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  FFTW-d c2c pair (timer,PAT)        2.2934
+rep  0  FFTW-d r2c/frame (timer,PAT)       2.5365
+rep  0  PFFFT-d real/frame ordered         2.3602
+rep  0  KFR-d c2c pair                     2.6555
+rep  0  PFFFT-d c2c pair z-order           2.7969
+rep  0  SME-F                              1.3495
+rep  1  FFTW-d r2c/frame (timer,PAT)       2.5472
+rep  1  PFFFT-d real/frame ordered         2.3643
+rep  1  KFR-d c2c pair                     2.6729
+rep  1  PFFFT-d c2c pair z-order           2.7825
+rep  1  SME-F                              1.3450
+rep  1  FFTW-d c2c pair (timer,PAT)        2.2814
+rep  2  PFFFT-d real/frame ordered         2.3484
+rep  2  KFR-d c2c pair                     2.6926
+rep  2  PFFFT-d c2c pair z-order           2.8431
+rep  2  SME-F                              1.3506
+rep  2  FFTW-d c2c pair (timer,PAT)        2.3103
+rep  2  FFTW-d r2c/frame (timer,PAT)       2.5324
+rep  3  KFR-d c2c pair                     2.6542
+rep  3  PFFFT-d c2c pair z-order           2.7811
+rep  3  SME-F                              1.3459
+rep  3  FFTW-d c2c pair (timer,PAT)        2.2875
+rep  3  FFTW-d r2c/frame (timer,PAT)       2.5320
+rep  3  PFFFT-d real/frame ordered         2.3622
+rep  4  PFFFT-d c2c pair z-order           2.7787
+rep  4  SME-F                              1.3503
+rep  4  FFTW-d c2c pair (timer,PAT)        2.3045
+rep  4  FFTW-d r2c/frame (timer,PAT)       2.4942
+rep  4  PFFFT-d real/frame ordered         2.3560
+rep  4  KFR-d c2c pair                     2.6831
+rep  5  SME-F                              1.3494
+rep  5  FFTW-d c2c pair (timer,PAT)        2.2822
+rep  5  FFTW-d r2c/frame (timer,PAT)       2.5477
+rep  5  PFFFT-d real/frame ordered         2.3826
+rep  5  KFR-d c2c pair                     2.6548
+rep  5  PFFFT-d c2c pair z-order           2.7956
+rep  6  FFTW-d c2c pair (timer,PAT)        2.2660
+rep  6  FFTW-d r2c/frame (timer,PAT)       2.5381
+rep  6  PFFFT-d real/frame ordered         2.3690
+rep  6  KFR-d c2c pair                     2.6843
+rep  6  PFFFT-d c2c pair z-order           2.7798
+rep  6  SME-F                              1.3469
+rep  7  FFTW-d r2c/frame (timer,PAT)       2.4966
+rep  7  PFFFT-d real/frame ordered         2.3629
+rep  7  KFR-d c2c pair                     2.6875
+rep  7  PFFFT-d c2c pair z-order           2.8230
+rep  7  SME-F                              1.3409
+rep  7  FFTW-d c2c pair (timer,PAT)        2.3149
+rep  8  PFFFT-d real/frame ordered         2.3858
+rep  8  KFR-d c2c pair                     2.6915
+rep  8  PFFFT-d c2c pair z-order           2.8274
+rep  8  SME-F                              1.3460
+rep  8  FFTW-d c2c pair (timer,PAT)        2.2628
+rep  8  FFTW-d r2c/frame (timer,PAT)       2.4858
+RESULT au1 welch fp64 N=4096 nov=2048 hann L=2^24 nseg=8191 FFTW-d c2c pair (timer,PAT)  best     2.2628  median     2.2875  ns/input sample  (calls/rep 6)
+RESULT au1 welch fp64 N=4096 nov=2048 hann L=2^24 nseg=8191 FFTW-d r2c/frame (timer,PAT) best     2.4858  median     2.5324  ns/input sample  (calls/rep 6)
+RESULT au1 welch fp64 N=4096 nov=2048 hann L=2^24 nseg=8191 PFFFT-d real/frame ordered   best     2.3484  median     2.3629  ns/input sample  (calls/rep 6)
+RESULT au1 welch fp64 N=4096 nov=2048 hann L=2^24 nseg=8191 KFR-d c2c pair               best     2.6542  median     2.6831  ns/input sample  (calls/rep 5)
+RESULT au1 welch fp64 N=4096 nov=2048 hann L=2^24 nseg=8191 PFFFT-d c2c pair z-order     best     2.7787  median     2.7956  ns/input sample  (calls/rep 5)
+RESULT au1 welch fp64 N=4096 nov=2048 hann L=2^24 nseg=8191 SME-F                        best     1.3409  median     1.3469  ns/input sample  (calls/rep 10)
+MS FFTW-d c2c pair (timer,PAT)    best   37.964 median   38.378 ms/call
+MS FFTW-d r2c/frame (timer,PAT)   best   41.705 median   42.487 ms/call
+MS PFFFT-d real/frame ordered     best   39.399 median   39.643 ms/call
+MS KFR-d c2c pair                 best   44.531 median   45.014 ms/call
+MS PFFFT-d c2c pair z-order       best   46.619 median   46.902 ms/call
+MS SME-F                          best   22.497 median   22.597 ms/call
+VS SME vs best library (FFTW-d c2c pair (timer,PAT)): best  -40.7 %  median  -41.1 %
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# P-core wisdom import: ok
+# planning (c2c + r2c PATIENT, in process) 0.00 s
+# FFTW c2c plan: (dft-ct-dit/32
+  (dftw-direct-32/124 "t2fv_32_neon")
+  (dft-direct-32-x32 "n2fv_32_neon"))
+# FFTW r2c plan: (rdft2-ct-dit/32
+  (hc2c-direct-32/62/0 "hc2cfdftv_32_neon"
+    (rdft2-r2hc-direct-32 "r2cf_32")
+    (rdft2-r2hc01-direct-32 "r2cfII_32"))
+  (dft-direct-32-x16 "n1fv_32_neon"))
+CHECK FFTW-d c2c pair (timer,PAT)              max abs err 7.105e-15  rel err 2.138e-16  (tol 1.0e-13) PASS
+CHECK FFTW-d r2c/frame (timer,PAT)             max abs err 1.634e-13  rel err 4.918e-15  (tol 1.0e-13) PASS
+CHECK PFFFT-d real/frame ordered               max abs err 1.634e-13  rel err 4.918e-15  (tol 1.0e-13) PASS
+CHECK KFR-d c2c pair                           max abs err 1.776e-15  rel err 5.345e-17  (tol 1.0e-13) PASS
+CHECK PFFFT-d c2c pair z-order                 max abs err 1.332e-15  rel err 4.009e-17  (tol 1.0e-13) PASS
+CHECK SME-D                                    max abs err 3.553e-15  rel err 1.069e-16  (tol 1.0e-13) PASS
+## au1 welch fp64 N=1024 nov=0 hamming L=2^22 nseg=4096  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  FFTW-d c2c pair (timer,PAT)        0.9802
+rep  0  FFTW-d r2c/frame (timer,PAT)       1.0099
+rep  0  PFFFT-d real/frame ordered         0.9291
+rep  0  KFR-d c2c pair                     1.0587
+rep  0  PFFFT-d c2c pair z-order           0.9489
+rep  0  SME-D                              0.6750
+rep  1  FFTW-d r2c/frame (timer,PAT)       1.0137
+rep  1  PFFFT-d real/frame ordered         0.9307
+rep  1  KFR-d c2c pair                     1.0590
+rep  1  PFFFT-d c2c pair z-order           0.9470
+rep  1  SME-D                              0.6671
+rep  1  FFTW-d c2c pair (timer,PAT)        0.9775
+rep  2  PFFFT-d real/frame ordered         0.9310
+rep  2  KFR-d c2c pair                     1.0616
+rep  2  PFFFT-d c2c pair z-order           0.9545
+rep  2  SME-D                              0.6679
+rep  2  FFTW-d c2c pair (timer,PAT)        0.9847
+rep  2  FFTW-d r2c/frame (timer,PAT)       1.0118
+rep  3  KFR-d c2c pair                     1.0614
+rep  3  PFFFT-d c2c pair z-order           0.9527
+rep  3  SME-D                              0.6708
+rep  3  FFTW-d c2c pair (timer,PAT)        0.9832
+rep  3  FFTW-d r2c/frame (timer,PAT)       1.0112
+rep  3  PFFFT-d real/frame ordered         0.9411
+rep  4  PFFFT-d c2c pair z-order           0.9545
+rep  4  SME-D                              0.6670
+rep  4  FFTW-d c2c pair (timer,PAT)        0.9836
+rep  4  FFTW-d r2c/frame (timer,PAT)       1.0119
+rep  4  PFFFT-d real/frame ordered         0.9349
+rep  4  KFR-d c2c pair                     1.0618
+rep  5  SME-D                              0.6747
+rep  5  FFTW-d c2c pair (timer,PAT)        0.9941
+rep  5  FFTW-d r2c/frame (timer,PAT)       1.0101
+rep  5  PFFFT-d real/frame ordered         0.9302
+rep  5  KFR-d c2c pair                     1.0573
+rep  5  PFFFT-d c2c pair z-order           0.9508
+rep  6  FFTW-d c2c pair (timer,PAT)        0.9822
+rep  6  FFTW-d r2c/frame (timer,PAT)       1.0116
+rep  6  PFFFT-d real/frame ordered         0.9314
+rep  6  KFR-d c2c pair                     1.0599
+rep  6  PFFFT-d c2c pair z-order           0.9513
+rep  6  SME-D                              0.6682
+rep  7  FFTW-d r2c/frame (timer,PAT)       1.0136
+rep  7  PFFFT-d real/frame ordered         0.9341
+rep  7  KFR-d c2c pair                     1.0615
+rep  7  PFFFT-d c2c pair z-order           0.9535
+rep  7  SME-D                              0.6812
+rep  7  FFTW-d c2c pair (timer,PAT)        0.9851
+rep  8  PFFFT-d real/frame ordered         0.9298
+rep  8  KFR-d c2c pair                     1.0601
+rep  8  PFFFT-d c2c pair z-order           0.9495
+rep  8  SME-D                              0.6657
+rep  8  FFTW-d c2c pair (timer,PAT)        0.9790
+rep  8  FFTW-d r2c/frame (timer,PAT)       1.0102
+RESULT au1 welch fp64 N=1024 nov=0 hamming L=2^22 nseg=4096 FFTW-d c2c pair (timer,PAT)  best     0.9775  median     0.9832  ns/input sample  (calls/rep 54)
+RESULT au1 welch fp64 N=1024 nov=0 hamming L=2^22 nseg=4096 FFTW-d r2c/frame (timer,PAT) best     1.0099  median     1.0116  ns/input sample  (calls/rep 52)
+RESULT au1 welch fp64 N=1024 nov=0 hamming L=2^22 nseg=4096 PFFFT-d real/frame ordered   best     0.9291  median     0.9310  ns/input sample  (calls/rep 57)
+RESULT au1 welch fp64 N=1024 nov=0 hamming L=2^22 nseg=4096 KFR-d c2c pair               best     1.0573  median     1.0601  ns/input sample  (calls/rep 50)
+RESULT au1 welch fp64 N=1024 nov=0 hamming L=2^22 nseg=4096 PFFFT-d c2c pair z-order     best     0.9470  median     0.9513  ns/input sample  (calls/rep 56)
+RESULT au1 welch fp64 N=1024 nov=0 hamming L=2^22 nseg=4096 SME-D                        best     0.6657  median     0.6682  ns/input sample  (calls/rep 78)
+MS FFTW-d c2c pair (timer,PAT)    best    4.100 median    4.124 ms/call
+MS FFTW-d r2c/frame (timer,PAT)   best    4.236 median    4.243 ms/call
+MS PFFFT-d real/frame ordered     best    3.897 median    3.905 ms/call
+MS KFR-d c2c pair                 best    4.435 median    4.446 ms/call
+MS PFFFT-d c2c pair z-order       best    3.972 median    3.990 ms/call
+MS SME-D                          best    2.792 median    2.803 ms/call
+VS SME vs best library (PFFFT-d real/frame ordered): best  -28.3 %  median  -28.2 %
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# P-core wisdom import: ok
+# planning (c2c + r2c PATIENT, in process) 0.06 s
+# FFTW c2c plan: (dft-ct-dit/32
+  (dftw-direct-32/124 "t2fv_32_neon")
+  (dft-direct-64-x32 "n1fv_64_neon"))
+# FFTW r2c plan: (rdft2-ct-dit/32
+  (hc2c-direct-32/62/0 "hc2cfdftv_32_neon"
+    (rdft2-r2hc-direct-32 "r2cf_32")
+    (rdft2-r2hc01-direct-32 "r2cfII_32"))
+  (dft-direct-64-x16 "n1fv_64_neon"))
+CHECK FFTW-d c2c pair (timer,PAT)              max abs err 1.066e-14  rel err 1.796e-16  (tol 1.0e-13) PASS
+CHECK FFTW-d r2c/frame (timer,PAT)             max abs err 1.208e-13  rel err 2.035e-15  (tol 1.0e-13) PASS
+CHECK PFFFT-d real/frame ordered               max abs err 1.137e-13  rel err 1.915e-15  (tol 1.0e-13) PASS
+CHECK KFR-d c2c pair                           max abs err 1.421e-14  rel err 2.394e-16  (tol 1.0e-13) PASS
+CHECK PFFFT-d c2c pair z-order                 max abs err 1.421e-14  rel err 2.394e-16  (tol 1.0e-13) PASS
+CHECK SME-D                                    max abs err 7.105e-15  rel err 1.197e-16  (tol 1.0e-13) PASS
+## au1 welch fp64 N=2048 nov=0 hamming L=2^22 nseg=2048  (9 repeats of >= 0.20 s each, programs take turns; ns per input sample)
+rep  0  FFTW-d c2c pair (timer,PAT)        1.0711
+rep  0  FFTW-d r2c/frame (timer,PAT)       1.0517
+rep  0  PFFFT-d real/frame ordered         1.0527
+rep  0  KFR-d c2c pair                     1.1601
+rep  0  PFFFT-d c2c pair z-order           1.1724
+rep  0  SME-D                              0.9315
+rep  1  FFTW-d r2c/frame (timer,PAT)       1.0546
+rep  1  PFFFT-d real/frame ordered         1.0551
+rep  1  KFR-d c2c pair                     1.1591
+rep  1  PFFFT-d c2c pair z-order           1.1702
+rep  1  SME-D                              0.9259
+rep  1  FFTW-d c2c pair (timer,PAT)        1.0624
+rep  2  PFFFT-d real/frame ordered         1.0675
+rep  2  KFR-d c2c pair                     1.1613
+rep  2  PFFFT-d c2c pair z-order           1.1729
+rep  2  SME-D                              0.9284
+rep  2  FFTW-d c2c pair (timer,PAT)        1.0697
+rep  2  FFTW-d r2c/frame (timer,PAT)       1.0498
+rep  3  KFR-d c2c pair                     1.1631
+rep  3  PFFFT-d c2c pair z-order           1.1708
+rep  3  SME-D                              0.9330
+rep  3  FFTW-d c2c pair (timer,PAT)        1.0517
+rep  3  FFTW-d r2c/frame (timer,PAT)       1.0535
+rep  3  PFFFT-d real/frame ordered         1.0661
+rep  4  PFFFT-d c2c pair z-order           1.1702
+rep  4  SME-D                              0.9314
+rep  4  FFTW-d c2c pair (timer,PAT)        1.0577
+rep  4  FFTW-d r2c/frame (timer,PAT)       1.0533
+rep  4  PFFFT-d real/frame ordered         1.0513
+rep  4  KFR-d c2c pair                     1.1694
+rep  5  SME-D                              0.9379
+rep  5  FFTW-d c2c pair (timer,PAT)        1.0574
+rep  5  FFTW-d r2c/frame (timer,PAT)       1.0510
+rep  5  PFFFT-d real/frame ordered         1.0544
+rep  5  KFR-d c2c pair                     1.1815
+rep  5  PFFFT-d c2c pair z-order           1.1746
+rep  6  FFTW-d c2c pair (timer,PAT)        1.0580
+rep  6  FFTW-d r2c/frame (timer,PAT)       1.0498
+rep  6  PFFFT-d real/frame ordered         1.0574
+rep  6  KFR-d c2c pair                     1.1661
+rep  6  PFFFT-d c2c pair z-order           1.1671
+rep  6  SME-D                              0.9282
+rep  7  FFTW-d r2c/frame (timer,PAT)       1.0494
+rep  7  PFFFT-d real/frame ordered         1.0506
+rep  7  KFR-d c2c pair                     1.1692
+rep  7  PFFFT-d c2c pair z-order           1.1837
+rep  7  SME-D                              0.9351
+rep  7  FFTW-d c2c pair (timer,PAT)        1.0570
+rep  8  PFFFT-d real/frame ordered         1.0728
+rep  8  KFR-d c2c pair                     1.1728
+rep  8  PFFFT-d c2c pair z-order           1.1758
+rep  8  SME-D                              0.9368
+rep  8  FFTW-d c2c pair (timer,PAT)        1.0506
+rep  8  FFTW-d r2c/frame (timer,PAT)       1.0460
+RESULT au1 welch fp64 N=2048 nov=0 hamming L=2^22 nseg=2048 FFTW-d c2c pair (timer,PAT)  best     1.0506  median     1.0577  ns/input sample  (calls/rep 49)
+RESULT au1 welch fp64 N=2048 nov=0 hamming L=2^22 nseg=2048 FFTW-d r2c/frame (timer,PAT) best     1.0460  median     1.0510  ns/input sample  (calls/rep 51)
+RESULT au1 welch fp64 N=2048 nov=0 hamming L=2^22 nseg=2048 PFFFT-d real/frame ordered   best     1.0506  median     1.0551  ns/input sample  (calls/rep 51)
+RESULT au1 welch fp64 N=2048 nov=0 hamming L=2^22 nseg=2048 KFR-d c2c pair               best     1.1591  median     1.1661  ns/input sample  (calls/rep 45)
+RESULT au1 welch fp64 N=2048 nov=0 hamming L=2^22 nseg=2048 PFFFT-d c2c pair z-order     best     1.1671  median     1.1724  ns/input sample  (calls/rep 45)
+RESULT au1 welch fp64 N=2048 nov=0 hamming L=2^22 nseg=2048 SME-D                        best     0.9259  median     0.9315  ns/input sample  (calls/rep 57)
+MS FFTW-d c2c pair (timer,PAT)    best    4.406 median    4.436 ms/call
+MS FFTW-d r2c/frame (timer,PAT)   best    4.387 median    4.408 ms/call
+MS PFFFT-d real/frame ordered     best    4.407 median    4.426 ms/call
+MS KFR-d c2c pair                 best    4.861 median    4.891 ms/call
+MS PFFFT-d c2c pair z-order       best    4.895 median    4.917 ms/call
+MS SME-D                          best    3.883 median    3.907 ms/call
+VS SME vs best library (FFTW-d r2c/frame (timer,PAT)): best  -11.5 %  median  -11.4 %
+DONE

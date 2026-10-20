@@ -1,0 +1,10 @@
+C5 r=2 L=5 closure=one gauge=XK=I(|K|=2)                     UNSAT  vars 135 clauses 280  0.0s
+C5 r=2 L=5 closure=trans gauge=XK=I(|K|=2)                   UNSAT  vars 145 clauses 300  0.0s
+petersen r=4 L=1 closure=none gauge=XK=I(|K|=4)              UNSAT  vars 374 clauses 1078  0.0s
+petersen r=4 L=2 closure=none gauge=XK=I(|K|=4)              UNSAT  vars 504 clauses 1258  0.0s
+petersen r=4 L=3 closure=none gauge=XK=I(|K|=4)              SAT    vars 574 clauses 1388  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 10, 'viol_one': 17, 'viol_trans': 23, 'rankB': 4, 'cT_static_fit': False, 'rank_cT': 4, 'layer_sizes': [5, 2, 3]}
+petersen r=4 L=2 closure=one gauge=XK=I(|K|=4)               UNSAT  vars 630 clauses 1810  0.0s
+petersen r=4 L=3 closure=one gauge=XK=I(|K|=4)               UNSAT  vars 700 clauses 1940  0.0s
+petersen r=4 L=3 closure=trans gauge=XK=I(|K|=4)             UNSAT  vars 730 clauses 2030  0.0s
+petersen r=4 L=10 closure=one gauge=XK=I(|K|=4)              UNSAT  vars 1190 clauses 2850  0.0s
+petersen r=4 L=10 closure=trans gauge=XK=I(|K|=4)            UNSAT  vars 1220 clauses 2940  0.0s

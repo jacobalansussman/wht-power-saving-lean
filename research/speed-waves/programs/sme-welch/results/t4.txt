@@ -1,0 +1,35 @@
+[timing lock] waiting for timing lock 04:11:31
+[timing lock] got lock 04:13:51; load: { 48.69 39.68 26.01 }
+numpy 2.0.2 scipy 1.13.1 mne 1.12.1; N=1024 nov=0 C=64 L=2^18 window=hamming
+CHECK scipy w4       vs scipy.signal.welch: max bin rel 0.00e+00 PASS
+CHECK mne n_jobs=1   vs scipy.signal.welch: max bin rel 0.00e+00 PASS
+CHECK as0 vdsp       vs scipy.signal.welch: max bin rel 3.04e-15 PASS
+CHECK as0 smed       vs scipy.signal.welch: max bin rel 3.04e-15 PASS
+RESULT N=1024 nov=0 C=64 L=2^18 hamming scipy.signal.welch 1 thread          best    64.154 median    65.903 ms/call  ns/sample  3.928  vs scipy-1   +0.0 %  vs C-vDSP +290.8 %
+RESULT N=1024 nov=0 C=64 L=2^18 hamming scipy.signal.welch set_workers(4)    best    52.342 median    53.824 ms/call  ns/sample  3.208  vs scipy-1  -18.3 %  vs C-vDSP +219.2 %
+RESULT N=1024 nov=0 C=64 L=2^18 hamming MNE psd_array_welch n_jobs=1         best    74.256 median    75.742 ms/call  ns/sample  4.515  vs scipy-1  +14.9 %  vs C-vDSP +349.1 %
+RESULT N=1024 nov=0 C=64 L=2^18 hamming MNE psd_array_welch n_jobs=4         best    73.883 median    75.327 ms/call  ns/sample  4.490  vs scipy-1  +14.3 %  vs C-vDSP +346.7 %
+RESULT N=1024 nov=0 C=64 L=2^18 hamming C vDSP-D pipeline (ctypes)           best    16.686 median    16.864 ms/call  ns/sample  1.005  vs scipy-1  -74.4 %  vs C-vDSP   +0.0 %
+RESULT N=1024 nov=0 C=64 L=2^18 hamming SME smed (ctypes)                    best    11.359 median    11.479 ms/call  ns/sample  0.684  vs scipy-1  -82.6 %  vs C-vDSP  -31.9 %
+numpy 2.0.2 scipy 1.13.1 mne 1.12.1; N=512 nov=256 C=64 L=2^18 window=hann
+CHECK scipy w4       vs scipy.signal.welch: max bin rel 0.00e+00 PASS
+CHECK mne n_jobs=1   vs scipy.signal.welch: max bin rel 0.00e+00 PASS
+CHECK as0 vdsp       vs scipy.signal.welch: max bin rel 5.30e-15 PASS
+CHECK as0 smef       vs scipy.signal.welch: max bin rel 4.94e-15 PASS
+RESULT N=512 nov=256 C=64 L=2^18 hann scipy.signal.welch 1 thread          best   126.010 median   127.813 ms/call  ns/sample  7.618  vs scipy-1   +0.0 %  vs C-vDSP +327.5 %
+RESULT N=512 nov=256 C=64 L=2^18 hann scipy.signal.welch set_workers(4)    best   109.436 median   110.898 ms/call  ns/sample  6.610  vs scipy-1  -13.2 %  vs C-vDSP +271.0 %
+RESULT N=512 nov=256 C=64 L=2^18 hann MNE psd_array_welch n_jobs=1         best   143.901 median   144.308 ms/call  ns/sample  8.601  vs scipy-1  +12.9 %  vs C-vDSP +382.7 %
+RESULT N=512 nov=256 C=64 L=2^18 hann MNE psd_array_welch n_jobs=4         best   142.809 median   143.761 ms/call  ns/sample  8.569  vs scipy-1  +12.5 %  vs C-vDSP +380.9 %
+RESULT N=512 nov=256 C=64 L=2^18 hann C vDSP-D pipeline (ctypes)           best    29.785 median    29.895 ms/call  ns/sample  1.782  vs scipy-1  -76.6 %  vs C-vDSP   +0.0 %
+RESULT N=512 nov=256 C=64 L=2^18 hann SME smef (ctypes)                    best    18.753 median    18.781 ms/call  ns/sample  1.119  vs scipy-1  -85.3 %  vs C-vDSP  -37.2 %
+numpy 2.0.2 scipy 1.13.1 mne 1.12.1; N=4096 nov=2048 C=64 L=2^18 window=hann
+CHECK scipy w4       vs scipy.signal.welch: max bin rel 0.00e+00 PASS
+CHECK mne n_jobs=1   vs scipy.signal.welch: max bin rel 0.00e+00 PASS
+CHECK as0 vdsp       vs scipy.signal.welch: max bin rel 4.96e-15 PASS
+CHECK as0 smef       vs scipy.signal.welch: max bin rel 4.96e-15 PASS
+RESULT N=4096 nov=2048 C=64 L=2^18 hann scipy.signal.welch 1 thread          best   144.839 median   146.990 ms/call  ns/sample  8.761  vs scipy-1   +0.0 %  vs C-vDSP +193.2 %
+RESULT N=4096 nov=2048 C=64 L=2^18 hann scipy.signal.welch set_workers(4)    best   112.605 median   114.132 ms/call  ns/sample  6.803  vs scipy-1  -22.4 %  vs C-vDSP +127.6 %
+RESULT N=4096 nov=2048 C=64 L=2^18 hann MNE psd_array_welch n_jobs=1         best   158.537 median   161.596 ms/call  ns/sample  9.632  vs scipy-1   +9.9 %  vs C-vDSP +222.3 %
+RESULT N=4096 nov=2048 C=64 L=2^18 hann MNE psd_array_welch n_jobs=4         best   159.518 median   163.340 ms/call  ns/sample  9.736  vs scipy-1  +11.1 %  vs C-vDSP +225.8 %
+RESULT N=4096 nov=2048 C=64 L=2^18 hann C vDSP-D pipeline (ctypes)           best    49.806 median    50.140 ms/call  ns/sample  2.989  vs scipy-1  -65.9 %  vs C-vDSP   +0.0 %
+RESULT N=4096 nov=2048 C=64 L=2^18 hann SME smef (ctypes)                    best    23.616 median    23.678 ms/call  ns/sample  1.411  vs scipy-1  -83.9 %  vs C-vDSP  -52.8 %

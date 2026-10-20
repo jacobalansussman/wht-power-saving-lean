@@ -1,0 +1,297 @@
++ python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/g0_staged.py <package>/generators/tree/wht43/bound-check <work>/wht45/allheads/bB-final/out/regen/owner <work>/wht45/allheads/bB-final/out/regen/owner/FILL.json.gz <package>/generators/tree/wht45/lever/g-heads/data/gcert/S3945-base.gcert1b.json.gz <package>/generators/tree/wht45/lever/g-heads/data/gcert/S3945-extra.gcert1b.json.gz <work>/wht45/allheads/bB-final/out/regen/owner/PROFILE.json <work>/wht45/allheads/bB-final/out/regen/g0-3945H.json --label #3945H (all heads)
+{
+ "label": "#3945H (all heads)",
+ "call_blocks": {
+  "calls_per_provider": {
+   "extra": 1672,
+   "gauge44": 1568
+  },
+  "max_rank_over_both_words": 8,
+  "all_call_blocks_rank_le_8": true,
+  "global_profile": {
+   "1": 8041680,
+   "2": 2306880,
+   "3": 729648,
+   "4": 353160,
+   "5": 69120,
+   "8": 25920,
+   "48": 137952
+  },
+  "hub_profile": {
+   "1": 8041680,
+   "2": 2306880,
+   "3": 729648,
+   "4": 353160,
+   "5": 69120,
+   "8": 25920,
+   "48": 137952
+  },
+  "global_profile_equals_hub": true,
+  "rank_mass": 23431680
+ },
+ "child_to_kind": {
+  "0": {
+   "kind": "A2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 16
+  },
+  "1": {
+   "kind": "B2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 8
+  },
+  "2": {
+   "kind": "A2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 16
+  },
+  "3": {
+   "kind": "B2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 8
+  },
+  "4": {
+   "kind": "A3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 32
+  },
+  "5": {
+   "kind": "B3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 8
+  },
+  "6": {
+   "kind": "A3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 32
+  },
+  "7": {
+   "kind": "B3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 8
+  },
+  "8": {
+   "kind": "A4",
+   "hub_pair": 3,
+   "side": 0,
+   "rank": 48
+  },
+  "9": {
+   "kind": "B4",
+   "hub_pair": 3,
+   "side": 0,
+   "rank": 8
+  },
+  "10": {
+   "kind": "A4",
+   "hub_pair": 3,
+   "side": 1,
+   "rank": 48
+  },
+  "11": {
+   "kind": "B4",
+   "hub_pair": 3,
+   "side": 1,
+   "rank": 8
+  },
+  "12": {
+   "kind": "F1",
+   "hub_pair": 0,
+   "side": 0,
+   "rank": 48
+  },
+  "13": {
+   "kind": "F1",
+   "hub_pair": 0,
+   "side": 1,
+   "rank": 48
+  },
+  "14": {
+   "kind": "F2",
+   "hub_pair": 1,
+   "side": 0,
+   "rank": 32
+  },
+  "15": {
+   "kind": "F2",
+   "hub_pair": 1,
+   "side": 1,
+   "rank": 32
+  },
+  "16": {
+   "kind": "F3",
+   "hub_pair": 2,
+   "side": 0,
+   "rank": 16
+  },
+  "17": {
+   "kind": "F3",
+   "hub_pair": 2,
+   "side": 1,
+   "rank": 16
+  }
+ },
+ "fill": {
+  "rows": 1321920,
+  "roles_per_call": 408,
+  "calls": 3240,
+  "replicas": 360
+ },
+ "ok": true
+}
+{
+ "label": "our network, #3945H (all heads) order",
+ "roles": 1321920,
+ "cross_replica_roles": 1161423,
+ "violations": {},
+ "loads_over_rank": 0,
+ "one_use_per_call_and_role": true,
+ "remainders": 165600,
+ "remainder_profile": {
+  "3": 23328,
+  "5": 4320,
+  "48": 137952
+ },
+ "classes": [
+  {
+   "hub_child": 4,
+   "kind": "A3",
+   "side": "x",
+   "remainder": 5,
+   "cls": "neither",
+   "count": 2144
+  },
+  {
+   "hub_child": 6,
+   "kind": "A3",
+   "side": "y",
+   "remainder": 5,
+   "cls": "neither",
+   "count": 2128
+  },
+  {
+   "hub_child": 8,
+   "kind": "A4",
+   "side": "x",
+   "remainder": 48,
+   "cls": "HEAD-literal",
+   "count": 40320
+  },
+  {
+   "hub_child": 10,
+   "kind": "A4",
+   "side": "y",
+   "remainder": 48,
+   "cls": "HEAD-literal",
+   "count": 40320
+  },
+  {
+   "hub_child": 12,
+   "kind": "F1",
+   "side": "x",
+   "remainder": 3,
+   "cls": "neither",
+   "count": 11648
+  },
+  {
+   "hub_child": 12,
+   "kind": "F1",
+   "side": "x",
+   "remainder": 48,
+   "cls": "neither",
+   "count": 28672
+  },
+  {
+   "hub_child": 13,
+   "kind": "F1",
+   "side": "y",
+   "remainder": 3,
+   "cls": "neither",
+   "count": 11680
+  },
+  {
+   "hub_child": 13,
+   "kind": "F1",
+   "side": "y",
+   "remainder": 48,
+   "cls": "neither",
+   "count": 28640
+  },
+  {
+   "hub_child": 14,
+   "kind": "F2",
+   "side": "x",
+   "remainder": 5,
+   "cls": "neither",
+   "count": 48
+  }
+ ],
+ "totals_by_class": {
+  "HEAD-literal": 80640,
+  "neither": 84960
+ },
+ "rank48_by_class": {
+  "HEAD-literal": 80640,
+  "neither": 57312
+ },
+ "heads_rank48_unhosted": 80640
+}
+controls: {"totals_by_class": {"neither": 165600}, "rank48_by_class": {"neither": 137952}, "violations": {}} {"totals_by_class": {"HEAD-literal": 80640, "TAIL-literal": 80640, "neither": 4320}, "rank48_by_class": {"HEAD-literal": 80640, "TAIL-literal": 57312}, "classes": [{"hub_child": 12, "kind": "F1", "side": "x", "remainder": 3, "cls": "TAIL-literal", "count": 11648}, {"hub_child": 12, "kind": "F1", "side": "x", "remainder": 48, "cls": "TAIL-literal", "count": 28672}, {"hub_child": 13, "kind": "F1", "side": "y", "remainder": 3, "cls": "TAIL-literal", "count": 11680}, {"hub_child": 13, "kind": "F1", "side": "y", "remainder": 48, "cls": "TAIL-literal", "count": 28640}]}
++ python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/own_to_host3945H.py <work>/wht45/allheads/bB-final/out/regen/owner <package>/generators/tree/wht45/lever/g-heads/data/residuals-3945.json <work>/wht45/allheads/bB-final/out/regen/g0-3945H.json <work>/wht45/allheads/bB-final/out/regen/tables/S5H
+{"producer": "p-own own_to_host.py", "T": 360, "calls": 3240, "R": 408, "NH": 725760, "nb": 0, "roles": 1321920, "cross_replica_roles": 1161423, "cross_share": 0.878588, "dispatch": {"extra": 1672, "gauge44": 1568}, "provider_slot_diffs": [], "inventory": {"5": 28, "6": 18, "7": 53, "8": 96, "9": 213}, "windows": {"equal": 6480}, "remainders": {"3": 23328, "5": 4320, "48": 137952}, "profile": {"1": 8041680, "2": 2306880, "3": 729648, "4": 353160, "5": 69120, "8": 25920, "48": 137952}, "profile_hub": {"1": 8041680, "2": 2306880, "3": 729648, "4": 353160, "5": 69120, "8": 25920, "48": 137952}, "rank_mass": 23431680, "fill_rule_errors": {}, "checks": {"widths_hub_eq_ours": true, "windows_ours_eq_hub_template": true, "fill_rules": true, "all_slots_hosted": true, "rows_injective": true, "capacity": true, "remainders": true, "profile_eq_PROFILE_json": true, "mass_deficit": true, "cross_replica_roles": true, "dispatch_counts": true, "g0_agrees": true}, "all_ok": true, "inputs_sha256": {"FILL": "9c06677d66b04436b02ec8d88036327bdc8fb12e6fd4f71a1b9c7e915c10c2d3", "PROFILE": "e4a34f8a3ec1f2f5bdcbe9a7ede4046c7606e5c8225ffe328d98a4734302468d", "ORDER": "743e74b538432e2b2045e754b0de9c18f36fc5039fdb8eb542177a898ec78e44", "DISPATCH": "5d6fa711d704a1b498e5fe066ea821c4fa0217463702e82a7ce5be9da4023e8a", "TEMPLATE": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e", "PLAN": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e", "WORD-base": "08e6c96fbe3dfec96cb8451b3867ef8c1a214109ecd1e5af7fcc28e0f05728d0", "WORD-extra": "d83c2ec9cecc0ad092d34ea4080b28a4fd7199579356b6d5a8fc6cd53ff93299", "old-NATIVE-base": "bfe0cc0badac6c6d18461ceea0b299162c0f280c05f81b63f11fcc06cf9180e6", "old-NATIVE-extra": "c5eec94a64cecfd6b83de05619628ad4868e889d62a55b49973f09705cc60448", "residuals": "f29c37e77473ac89bb41ea6e0b8645c421d4abfc029f7d5d403cb2d5340bdc2b", "g0": "d30c75a513f585d50f2f0a0206f45591ab8a221d5d8c19e3c68319010fffdeb6"}, "seconds": 12.2, "hosttab_sha256": "b3185813426853705e07c8d374b116252e4e4576e7f1f8dcf6069e8d239dfbf1", "hosttab_content_sha256": "009df87c16355df4657ea4f242c6ce27b3784121351c14a5444f2eba705e5151"}
+wrote <work>/wht45/allheads/bB-final/out/regen/tables/S5H-hosttab.json.gz <work>/wht45/allheads/bB-final/out/regen/tables/S5H-audit.json ALL OK
++ python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/mk_parts.py <work>/wht45/allheads/bB-final/out/regen/tables/S5H-hosttab.json.gz S5H 25 <work>/wht45/allheads/bB-final/out/regen/lean/Work/XHostT/Data/S5H
+wrote 130 parts, 3240 kinds, records 1321920 = NC*R 1321920
++ (must exit 3) python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/mk_parts.py <work>/wht45/allheads/bB-final/out/regen/tables/S5H-hosttab.json.gz S5Hn 25 <work>/wht45/allheads/bB-final/out/regen/never-load --perturb load
+perturbed one entry: {'mode': 'load', 'k': 0, 'q': 0, 'old': 699730, 'new': 699731}
+REFUSED: 1 host kind(s) fail the Python mirror; first: kind 3123: bin 699730: load 7 + remainder 0 != rank 16
++ (must exit 3) python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/mk_parts.py <work>/wht45/allheads/bB-final/out/regen/tables/S5H-hosttab.json.gz S5Hw 25 <work>/wht45/allheads/bB-final/out/regen/never-win --perturb win
+perturbed one entry: {'mode': 'win', 'k': 2, 'q': 1, 'old': 463900, 'new': 220}
+REFUSED: 2 host kind(s) fail the Python mirror; first: kind 0: bin 220: record (call 2, slot 1) outside the window [0, 40] (time 104)
++ python3 -I -B <package>/generators/tree/wht45/lever/p-disp/tools/mk_disp3945.py <work>/wht45/allheads/bB-final/out/regen/owner/inputs/DISPATCH.json <work>/wht45/allheads/bB-final/out/regen/owner/inputs/ORDER.json 360 1672 1568 <work>/wht45/allheads/bB-final/out/regen/tables/disp/Disp.lean
+wrote <work>/wht45/allheads/bB-final/out/regen/tables/disp/Disp.lean: 3240 calls, extra 1672, gauge44 1568; first 8 replicas extra 69 gauge44 3; DISPATCH list order = ORDER: False
++ (must exit 3) python3 -I -B <package>/generators/tree/wht45/lever/p-disp/tools/mk_disp3945.py <work>/wht45/allheads/bB-final/out/regen/owner/inputs/DISPATCH.json <work>/wht45/allheads/bB-final/out/regen/owner/inputs/ORDER.json 360 1673 1567 <work>/wht45/allheads/bB-final/out/regen/never-disp/Disp.lean
+REFUSED (nothing written):
+  counts extra 1672 gauge44 1568, expected 1673 1567
++ python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/mk_rate_mixed.py scan 3945H=<package>/generators/tree/wht45/allheads/bB-data/tools/profile3945H.json
+profile 3945H: root saving 0.0017581520167646315550314460207983372193535709322771299334482805381221478852180
+largest DFT numerator the enclosure proves: 17581520 (saving 1.7581520e-03); N+1 = 17581521 refused
+  slack_rel 2.503e-11, root - N = 0.1676 grid steps, rate point N + 2/100
++ python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/mk_rate_mixed.py emit 3945H=<package>/generators/tree/wht45/allheads/bB-data/tools/profile3945H.json 17581520 <work>/wht45/allheads/bB-final/out/regen/lean
+written <work>/wht45/allheads/bB-final/out/regen/lean/Work/Mixed/Rate3945H.lean slack_rel 2.503e-11
++ (must exit 2) python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/mk_rate_mixed.py emit 3945H=<package>/generators/tree/wht45/allheads/bB-data/tools/profile3945H.json 17581521 <work>/wht45/allheads/bB-final/out/regen/never-rate/lean
+REFUSED: the enclosure does not prove the rate fact at N = 17581521 (z1 = 1 - 1758152102/10^12)
++ python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/mk_3945H.py <work>/wht45/allheads/bB-final/out/regen/inst --neg-heads
+894524ec9134a7b8  Work/XHostT/Data/S5H/DispLink.lean  <- lever/p-disp/lean/Work/XHostT/Data/S5/DispLink.lean (c93eef44206364e0)
+e15963379c4bc7e5  Work/XHostT/Inst/S5H.lean  <- lever/i-final/out/a1/ENG/Work/XHostT/Inst/S5.lean (3e90d5b5eff87e5c)
+c5b40c8c012a5765  Work/XHostT/Data/S5H/Heads.lean  <- lever/i-final/lean/Work/XHostT/Data/S5/Heads.lean (001878923e0af4b1)
+316dba97a4f639b4  Work/XHostT/Inst/S5HFacts.lean  <- lever/i-final/lean/Work/XHostT/Inst/S5Facts.lean (e94e7299c1817e16)
+abf806f9b110d4b9  Work/XHostT/Inst/S5HHB.lean  <- lever/i-final/lean/Work/XHostT/Inst/S5HB.lean (540277b45ce8afac)
+5f6b8c507b4fa850  Work/Mixed/Bridge/Inst3945H.lean  <- lever2979/x-inst/lean/Work/Mixed/Bridge/Inst2979.lean (29ab8fcc02cf9862)
+4e57c2067800f2e4  Work/Mixed/Bridge/HeadsFirst3945H.lean  <- lever2979/x-inst/lean/Work/Mixed/Bridge/HeadsFirst2979.lean (413faeeeda84b0ee)
+e4046ce67928178b  Work/Mixed/Bridge/HFTest3945HW.lean  <- lever/i-final/lean/Work/Mixed/Bridge/HFTest3945W.lean (ec7960b9002b0895)
+92bdfa3d5322f4b0  Work/L3945H/EngineOfGeomW.lean  <- lever/i-final/lean/Work/L3945/EngineOfGeomW.lean (f2ca49160aaa0011)
+4a60d5cd23f8231b  Work/L3945H/Prov.lean  <- lever/i-final/lean/Work/L3945/Prov.lean (61ba20052ed04e3c)
+d3407da7d2bdba34  Work/L3945H/Engine.lean  <- lever/i-final/lean/Work/L3945/Engine.lean (590eb5755010e250)
+f34d824ef374d85f  Work/XHostT/Data/S5Hneg/NegHeads.lean  <- lever/i-final/lean/Work/XHostT/Data/S5neg/NegHeads.lean (a1ffa53b313637d5)
+d65fa5f8e4db8c49  Work/XHostT/Data/S5Hneg/NegRes.lean  <- lever/i-final/lean/Work/XHostT/Data/S5neg/NegRes.lean (b523f8f66cda522a)
+8c9d71e90f72b71f  Work/XHostT/Data/S5Hneg/NegHeadsOld.lean  <- lever/i-final/lean/Work/XHostT/Data/S5neg/NegHeads.lean (a1ffa53b313637d5)
++ python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/mk_l3945.py final <work>/wht45/allheads/bB-final/out/regen/final-L3945H --suffix L3945H --num 17581520 --profile 3945H=<package>/generators/tree/wht45/allheads/bB-data/tools/profile3945H.json
+ok L3945H files 18 alpha 1 - 1758152001/10^12, target 1 - 17581520/10^10
+  alpha = 1 - 1758152001/10^12 < target = 1 - 17581520/10^10 (exact)
+  profile 3945H: mixed root saving 0.00175815201676 (Decimal bisection), 0.1676 grid steps above N
+  rate point 1 - 1758152002/10^12 below the root: the rate fact holds (independent check)
+  e-r45m1 enclosure: OK N = 17581520 slack_rel 2.503e-11
+  challenge FourierL3945H (1 - 17581520/10^10): byte-identical to my derivation from OpenAI's statement
+  challenge FourierL3945HNeg (1 - 17581521/10^10): byte-identical to my derivation from OpenAI's statement
+ok L3945H mode final N 17581520: 20 files in <work>/wht45/allheads/bB-final/out/regen/final-L3945H/stage
++ (must exit 2) python3 -I -B <package>/generators/tree/wht45/allheads/bB-data/tools/mk_l3945.py final <work>/wht45/allheads/bB-final/out/regen/never-L3945H --suffix L3945H --num 17581521 --profile 3945H=<package>/generators/tree/wht45/allheads/bB-data/tools/profile3945H.json
+REFUSED: the rate point 1 - 1758152102/10^12 lies above the mixed root (saving 0.001758152016): the rate fact is false at N = 17581521

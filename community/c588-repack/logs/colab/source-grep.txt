@@ -1,0 +1,13 @@
+--- source grep (Work OAI WHTCheck)
+Work/FourierC588/UniformFourierChallenge.lean:327:  sorry
+Work/FourierC588/UniformFourierChallenge.lean:331:  sorry
+Work/FourierC588Neg/UniformFourierChallenge.lean:327:  sorry
+Work/FourierC588Neg/UniformFourierChallenge.lean:331:  sorry
+Work/FourierC588/Seam.lean:42:No `sorry`, no `native_decide`.
+--- build log
+4
+warning: Work/FourierC588/UniformFourierChallenge.lean:326:8: declaration uses `sorry`
+warning: Work/FourierC588/UniformFourierChallenge.lean:330:8: declaration uses `sorry`
+warning: Work/FourierC588Neg/UniformFourierChallenge.lean:326:8: declaration uses `sorry`
+warning: Work/FourierC588Neg/UniformFourierChallenge.lean:330:8: declaration uses `sorry`
+0

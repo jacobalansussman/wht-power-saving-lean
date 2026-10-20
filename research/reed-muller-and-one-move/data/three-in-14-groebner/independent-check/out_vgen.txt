@@ -1,0 +1,8 @@
+ctl-b4-3in11 idx 132: m=4 W=3 M=11 deletion ok clique 3 my verdict EXCLUDED (track: EXCLUDED) local cert (5, 0, [0, 7, 8])
+ctl-b4-3in11-plain idx 133: m=4 W=3 M=12 deletion ok clique 3 my verdict passes (track: passes) local cert None
+ctl-b4-3in11 idx 134: m=4 W=3 M=11 deletion ok clique 3 my verdict EXCLUDED (track: EXCLUDED) local cert (5, 0, [2, 6, 10])
+ctl-b4-3in11-plain idx 135: m=4 W=3 M=12 deletion ok clique 3 my verdict passes (track: passes) local cert None
+ctl-b3-3in8 idx 136: m=3 W=3 M=8 deletion ok clique 3 my verdict EXCLUDED (track: EXCLUDED) local cert (5, 0, [0, 6, 7])
+ctl-b3-3in8-plain idx 137: m=3 W=3 M=9 deletion ok clique 3 my verdict passes (track: passes) local cert None
+ctl-U3 idx 138: m=3 W=2 M=7 deletion ok clique 2 my verdict passes (track: passes) local cert None
+ctl-plain1in5 idx 139: m=5 W=1 M=5 deletion ok clique 1 my verdict passes (track: passes) local cert None

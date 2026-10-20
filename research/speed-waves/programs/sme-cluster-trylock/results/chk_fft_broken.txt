@@ -1,0 +1,5 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+CHECK w0 sme     n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.019e-01 FAIL
+RESULT fft64      W=1 E=0 sme       median   23.478 best   23.478 ns/point agg  =   42.594 Mpoint/s | call p50    237.1 p99   6458.9 max  14942.9 us | SME calls 100.0 % | mean us: sme 771.0 neon 0.0 | calls 761 | CHECK FAIL
+CHECK w0 sme     n=512 B=64 all 65536 values vs fp64 DFT: max|err|/max|X| 2.019e-01 FAIL
+RESULT fft64      W=1 E=0 owner     median   57.664 best   57.664 ns/point agg  =   17.342 Mpoint/s | call p50    459.0 p99  21944.1 max  27902.6 us | SME calls 100.0 % | mean us: sme 1912.0 neon 0.0 | calls 312 | CHECK FAIL

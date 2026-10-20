@@ -1,0 +1,39 @@
+PASS  plain9: 9 moves, accepted = True (expected True)
+PASS  wasteful11: 11 moves, accepted = True (expected True)
+PASS  invalid8: 8 moves, accepted = False (expected False)
+PASS  invalid_mix: 11 moves, accepted = False (expected False)
+PASS  S2: of the 168 address maps exactly 6 fix the kernel under conjugation; they are the 6 coordinate permutations
+PASS  S2 plain9: conjugation by the 6 coordinate permutations -> accepted = [True, True, True, True, True, True], moves 9
+PASS  S2 plain9: conjugation by an address map of order 7: accepted = False (expected False: it is NOT a symmetry of a sub-game); with the address map first and its inverse last on live arrays: True (expected True)
+PASS  S3a plain9: array permutations (3-cycle, swap) -> [True, True]
+PASS  S3a plain9: rational change of basis of the live arrays (h first, h^-1 last) -> True
+PASS  S3b plain9: letters on different arrays reordered between additions (two orders) -> True, True
+PASS  S3c plain9: transposed word (reversed, additions transposed, address maps inverted) -> True; complex conjugate -> True; adjoint -> True; moves 9, 9, 9
+PASS  S3c plain9: the transposed word has the same directions (order reversed up to the order inside a block)
+PASS  S1 plain9: straight-line form extracted (9 moves, directions [1, 2, 4, 1, 2, 4, 1, 2, 4], 12 non-zero coefficient slots, 1 free maps used) and replayed as a canonical word on 17 arrays -> formal True, numeric {1: True, 2: True, 3: True}
+PASS  S2 wasteful11: conjugation by the 6 coordinate permutations -> accepted = [True, True, True, True, True, True], moves 11
+PASS  S2 wasteful11: conjugation by an address map of order 7: accepted = False (expected False: it is NOT a symmetry of a sub-game); with the address map first and its inverse last on live arrays: True (expected True)
+PASS  S3a wasteful11: array permutations (3-cycle, swap) -> [True, True]
+PASS  S3a wasteful11: rational change of basis of the live arrays (h first, h^-1 last) -> True
+PASS  S3b wasteful11: letters on different arrays reordered between additions (two orders) -> True, True
+PASS  S3c wasteful11: transposed word (reversed, additions transposed, address maps inverted) -> True; complex conjugate -> True; adjoint -> True; moves 11, 11, 11
+PASS  S3c wasteful11: the transposed word has the same directions (order reversed up to the order inside a block)
+PASS  S1 wasteful11: straight-line form extracted (11 moves, directions [1, 1, 1, 4, 2, 4, 1, 2, 4, 3, 3], 18 non-zero coefficient slots, 6 free maps used) and replayed as a canonical word on 19 arrays -> formal True, numeric {1: True, 2: True, 3: True}
+PASS  S2 invalid8: conjugation by the 6 coordinate permutations -> accepted = [False, False, False, False, False, False], moves 8
+PASS  S2 invalid8: conjugation by an address map of order 7: accepted = False (expected False: it is NOT a symmetry of a sub-game); with the address map first and its inverse last on live arrays: False (expected False)
+PASS  S3a invalid8: array permutations (3-cycle, swap) -> [False, False]
+PASS  S3a invalid8: rational change of basis of the live arrays (h first, h^-1 last) -> False
+PASS  S3b invalid8: letters on different arrays reordered between additions (two orders) -> False, False
+PASS  S3c invalid8: transposed word (reversed, additions transposed, address maps inverted) -> False; complex conjugate -> False; adjoint -> False; moves 8, 8, 8
+PASS  S3c invalid8: the transposed word has the same directions (order reversed up to the order inside a block)
+PASS  S1 invalid8: straight-line form extracted (8 moves, directions [1, 2, 4, 1, 2, 4, 1, 2], 11 non-zero coefficient slots, 1 free maps used) and replayed as a canonical word on 16 arrays -> formal False, numeric {1: False, 2: False, 3: False}
+PASS  S2 invalid_mix: conjugation by the 6 coordinate permutations -> accepted = [False, False, False, False, False, False], moves 11
+PASS  S2 invalid_mix: conjugation by an address map of order 7: accepted = False (expected False: it is NOT a symmetry of a sub-game); with the address map first and its inverse last on live arrays: False (expected False)
+PASS  S3a invalid_mix: array permutations (3-cycle, swap) -> [False, False]
+PASS  S3a invalid_mix: rational change of basis of the live arrays (h first, h^-1 last) -> False
+PASS  S3b invalid_mix: letters on different arrays reordered between additions (two orders) -> False, False
+PASS  S3c invalid_mix: transposed word (reversed, additions transposed, address maps inverted) -> False; complex conjugate -> False; adjoint -> False; moves 11, 11, 11
+PASS  S3c invalid_mix: the transposed word has the same directions (order reversed up to the order inside a block)
+PASS  S1 invalid_mix: straight-line form extracted (11 moves, directions [1, 1, 1, 4, 2, 4, 1, 2, 4, 3, 3], 18 non-zero coefficient slots, 6 free maps used) and replayed as a canonical word on 19 arrays -> formal False, numeric {1: False, 2: False, 3: False}
+PASS  composition (conjugate, array 3-cycle, transpose, coordinate 3-cycle) of wasteful11 -> accepted
+ALL PASS

@@ -1,0 +1,14 @@
+m=4 W=4 M=14: 420 targets; 3938 classes of direction multisets (115.3 s)
+    zero-block exclusion: dirs (1, 1, 1, 1, 2, 2, 4, 4, 6, 8, 8, 10, 12, 14) targets [68, 236, 252, 252]: form 13 |D| = 6, r = 0, zero clique 4
+    zero-block exclusion: dirs (1, 1, 1, 1, 2, 2, 4, 4, 6, 8, 8, 10, 12, 14) targets [76, 228, 252, 252]: form 13 |D| = 6, r = 0, zero clique 4
+    zero-block exclusion: dirs (1, 1, 1, 1, 2, 2, 4, 4, 6, 8, 8, 10, 12, 14) targets [100, 252, 252, 380]: form 5 |D| = 6, r = 0, zero clique 4
+  SURVIVOR dirs (1, 1, 1, 2, 2, 2, 4, 4, 4, 7, 8, 11, 13, 14) (orbit 840; distinct dirs independent: False): 13 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 207,281,322,356 (tight 104, clique 4)
+  SURVIVOR dirs (1, 1, 1, 2, 2, 2, 4, 4, 5, 6, 8, 11, 12, 15) (orbit 2520; distinct dirs independent: False): 12 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 252,281,318,355 (tight 88, clique 4)
+  SURVIVOR dirs (1, 1, 1, 2, 2, 4, 4, 7, 8, 8, 11, 13, 14, 14) (orbit 840; distinct dirs independent: False): 1 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 124,180,252,356 (tight 120, clique 4)
+  SURVIVOR dirs (1, 1, 2, 2, 3, 4, 4, 5, 6, 7, 8, 11, 13, 14) (orbit 840; distinct dirs independent: False): 72 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 197,281,322,349 (tight 28, clique 4)
+  SURVIVOR dirs (1, 1, 2, 2, 3, 4, 4, 5, 8, 9, 10, 11, 12, 13) (orbit 5040; distinct dirs independent: False): 6 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 108,173,252,256 (tight 60, clique 4)
+  SURVIVOR dirs (1, 1, 2, 2, 3, 4, 4, 7, 8, 8, 11, 13, 13, 14) (orbit 3360; distinct dirs independent: False): 4 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 94,146,252,323 (tight 88, clique 4)
+  SURVIVOR dirs (1, 1, 2, 2, 3, 4, 4, 7, 8, 9, 10, 11, 12, 15) (orbit 5040; distinct dirs independent: False): 24 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 92,144,252,280 (tight 60, clique 4)
+  SURVIVOR dirs (1, 1, 2, 2, 4, 4, 7, 7, 8, 8, 11, 11, 13, 14) (orbit 420; distinct dirs independent: False): 290 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 57,57,215,306 (tight 64, clique 3)
+  SURVIVOR dirs (1, 1, 2, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15) (orbit 630; distinct dirs independent: False): 16 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 56,64,254,305 (tight 47, clique 4)
+  SURVIVOR dirs (1, 1, 2, 2, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14) (orbit 5040; distinct dirs independent: False): 12 target 4-multisets pass S+D+C+Z (0 with no tight form); example targets idx 58,66,252,327 (tight 50, clique 4)

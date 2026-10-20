@@ -1,0 +1,4 @@
+m=5 K=10: window-negative primitive-or-not candidates after frame/plain/A prefilter: 97; primitive survivors of all rigorous certificates: 2
+   tasks {2: 1, 4: 5} calls {3: 4, 5: 2}: arrays 6, D(1) = 0, min D on window -0.0122, roots [5e-05, 1.0], tight: ['A5', 'B5', 'C5k4', 'Dist5S0', 'Dist5S12345']
+   tasks {2: 2, 4: 8} calls {3: 7, 5: 3}: arrays 10, D(1) = 0, min D on window -0.00452, roots [0.63885, 1.0], tight: ['C5k4', 'Dist5S0', 'Dist5S12345']
+python3 -B -c   11.14s user 0.27s system 95% cpu 11.987 total

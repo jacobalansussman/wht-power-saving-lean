@@ -1,0 +1,12 @@
+Lagrangians: 135
+edges (meet of dim 2): 945
+cells at distance 1 from L_Z: 14
+L_Y = sigma(K) L_Z meets L_Z in 1 element(s) (distance 3 iff 1)
+|GL(3,2)| = 168  order 7: 48  order 3: 56
+Levi lifts (phase-diag) of one Singer A: 1
+Singer lift c: exact order 7 after scalar; free: True  K^-1 c K free: True
+Singer fixes cells: 2 (L_Z, L_Y among them: True True ) fixes edges: 0
+invariant 2-dim subspaces summed over the 48 order-7 elements of GL(3,2): 0
+hook: cap(dir1) = 80  dim E_N = 56  demand = 224
+cap 80 for every dir z, z = 1..7
+c' on N/E_N multiplicities: [32, 32, 32, 32, 32, 32, 32]

@@ -1,0 +1,17 @@
+{
+ "label": "x-pack (tier 1 on Shea's complex588 / Kothe #588 atm3)",
+ "date": "2026-10-13",
+ "control": {"source": "Shea's own bank table read back from his Lean (shea256/fourier-transform-below-nlogn @0e61af6)",
+             "banks": 5040, "W": 12208, "pads": {"0": 2520, "1": 2448, "8": 72}, "exact_root": "0.001233169825152",
+             "kernel": 12331686, "dft": 12331685, "status": "Lean-checked (Shea); reproduced here as Python price; his generator reproduces all 35 generated Lean files byte for byte"},
+ "best_cubic": {"banks": 5009, "W": 12177, "pads": {"0": 4284, "1": 724, "37": 1}, "exact_root": "0.001238329245158",
+                "kernel": 12383280, "dft": 12383279, "status": "Python price (pipeline generators); Lean data generated (lean-out/A-cubic); not built"},
+ "best_quartic": {"banks": 5009, "kernel": 12383292, "dft": 12383291,
+                  "status": "Python price; new engine lemma term_le4 (Work/BlockAccounting/Moment4.lean) compiled here; drop-in test on 4 real rows compiled; certificate not built (lean-out/B-quartic)"},
+ "quartic_alone_on_shea_table": {"kernel": 12331698, "dft": 12331697, "status": "Python price"},
+ "ceiling_4999": "infeasible (HiGHS kInfeasible; invariant 9T-73I = 46368 > 0 forces >= 724.5 banks of eight 9s with pad 1)",
+ "optimality": "pad invoice {1:724, 37:1} proven minimal for every table passing GX.schedK (tools/pad_optimal.py), for a in [0.00123, 0.00125]",
+ "tier2_whatif_ceiling": {"799_E1": {"banks": 4721, "pads": {"41": 1}, "exact_grid": 12702201, "kernel_cubic": 12702188, "kernel_quartic": 12702201},
+                          "869_870_890_U8_E1": {"banks": 4721, "pads": {"41": 1}, "exact_grid": 12704037, "kernel_cubic": 12704024, "kernel_quartic": 12704037},
+                          "status": "what-if (needs exit-frame Lean); tables validated with Shea's checks"}
+}

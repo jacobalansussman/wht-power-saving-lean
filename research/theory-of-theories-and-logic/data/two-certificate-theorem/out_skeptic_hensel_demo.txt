@@ -1,0 +1,2 @@
+p = 10007: point mod p [2392, 2392, 5295, 6923, 8918, 1058, 1058, 4707, 3064, 1060, 1117, 1117]; f(x) = 0 mod p: True; det J(x) mod p = 1250
+   lifted to p^16 (213 bits): f(X) = 0 mod p^16 for all 12 equations: True

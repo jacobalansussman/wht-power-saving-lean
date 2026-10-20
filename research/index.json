@@ -1,0 +1,265 @@
+{
+ "schema": "wht-research-index/1",
+ "repository": "jacobalansussman/wht-power-saving-lean",
+ "revision": "fifth revision",
+ "covers": "2026-10-10 to 2026-10-20",
+ "made_with": "AI agents (Claude) directed by the author",
+ "human_review": "none: no person has read any of the proofs",
+ "status_words": [
+  "proved in Lean",
+  "checked by computer",
+  "argued by hand, not checked",
+  "refuted",
+  "open"
+ ],
+ "related": [
+  {
+   "name": "wht-fewer-operations",
+   "url": "https://github.com/jacobalansussman/wht-fewer-operations",
+   "holds": "the 5/6 circuit result and the ten idea waves of 10-11 October 2026"
+  }
+ ],
+ "open_problems": "research/open-problems.md",
+ "generated_by": "research/make_index.py",
+ "sections": [
+  {
+   "key": "moonshot-small-blocks",
+   "title": "Moonshot waves at blocks 2 and 3: the everything-free game and mixed units",
+   "path": "research/moonshot-small-blocks/",
+   "dates": "2026-10-14 to 2026-10-15",
+   "summary": "The moonshot waves at blocks 2 and 3: no unit in the everything-free game or among mixed units; block 2 never saves in any game with bounded free steps (Theorem 2W); every unit with two or more arrays needs at least W + m moves.",
+   "findings": 30,
+   "counts": {
+    "proved in Lean": 0,
+    "checked by computer": 4,
+    "argued by hand, not checked": 20,
+    "refuted": 4,
+    "open": 2
+   },
+   "open_questions": 7,
+   "programs": 61,
+   "results": "research/moonshot-small-blocks/results.json",
+   "readme": "research/moonshot-small-blocks/README.md"
+  },
+  {
+   "key": "moonshot-block4-block5",
+   "title": "Moonshot waves 1-8 at blocks 4 and 5: the 2-in-7 near miss and the shape searches",
+   "path": "research/moonshot-block4-block5/",
+   "dates": "2026-10-14 to 2026-10-16",
+   "summary": "The moonshot waves at blocks 4 and 5: no unit; the 2-in-7 near miss at block 4 is still open by 640 out of 137,280; many shapes excluded under stated hypotheses.",
+   "findings": 64,
+   "counts": {
+    "proved in Lean": 0,
+    "checked by computer": 21,
+    "argued by hand, not checked": 18,
+    "refuted": 14,
+    "open": 11
+   },
+   "open_questions": 10,
+   "programs": 18,
+   "results": "research/moonshot-block4-block5/results.json",
+   "readme": "research/moonshot-block4-block5/README.md"
+  },
+  {
+   "key": "reed-muller-and-one-move",
+   "title": "The Reed-Muller family, and units that save a single move",
+   "path": "research/reed-muller-and-one-move/",
+   "dates": "2026-10-15 to 2026-10-16",
+   "summary": "The Reed-Muller family (whose saving would tend to 1) and units that save a single move: neither found; where the family is dead, and what is still undecided.",
+   "findings": 24,
+   "counts": {
+    "proved in Lean": 0,
+    "checked by computer": 5,
+    "argued by hand, not checked": 10,
+    "refuted": 5,
+    "open": 4
+   },
+   "open_questions": 7,
+   "programs": 14,
+   "results": "research/reed-muller-and-one-move/results.json",
+   "readme": "research/reed-muller-and-one-move/README.md"
+  },
+  {
+   "key": "frame-packing-two-arrays",
+   "title": "How savings happen: crossing slack, frame packing, the frame game, Proposition 6",
+   "path": "research/frame-packing-two-arrays/",
+   "dates": "2026-10-15 (research), 2026-10-19 (re-runs and this write-up)",
+   "summary": "How a unit saves at all: every saving is frame packing; the frame game holds the whole problem; whether any two-array unit saves (Proposition 6) is open.",
+   "findings": 50,
+   "counts": {
+    "proved in Lean": 0,
+    "checked by computer": 12,
+    "argued by hand, not checked": 24,
+    "refuted": 13,
+    "open": 1
+   },
+   "open_questions": 13,
+   "programs": 25,
+   "results": "research/frame-packing-two-arrays/results.json",
+   "readme": "research/frame-packing-two-arrays/README.md"
+  },
+  {
+   "key": "why-the-savers-save",
+   "title": "Why the record savers save, and what caps them: anatomy, centre, copy wall, helpers",
+   "path": "research/why-the-savers-save/",
+   "dates": "2026-10-13 to 2026-10-15",
+   "summary": "Where the record circuits' saving comes from (one free direction per array, a shared centre), and why every lever tried on that mechanism failed to lift the record.",
+   "findings": 38,
+   "counts": {
+    "proved in Lean": 0,
+    "checked by computer": 19,
+    "argued by hand, not checked": 10,
+    "refuted": 9,
+    "open": 0
+   },
+   "open_questions": 13,
+   "programs": 74,
+   "results": "research/why-the-savers-save/results.json",
+   "readme": "research/why-the-savers-save/README.md"
+  },
+  {
+   "key": "block-bounds-and-new-rules",
+   "title": "Block bounds in Lean, Toffoli and column-mixing maps (13-14 October)",
+   "path": "research/block-bounds-and-new-rules/",
+   "dates": "2026-10-13 to 2026-10-16",
+   "summary": "Lower bounds on the moves a unit needs, three of them proved in Lean (Theorem R, block 2, block 3), the ceiling of the method, and which new free steps (Toffoli, column mixing) are allowed and what they buy.",
+   "findings": 70,
+   "counts": {
+    "proved in Lean": 5,
+    "checked by computer": 18,
+    "argued by hand, not checked": 31,
+    "refuted": 6,
+    "open": 10
+   },
+   "open_questions": 10,
+   "programs": 17,
+   "results": "research/block-bounds-and-new-rules/results.json",
+   "readme": "research/block-bounds-and-new-rules/README.md"
+  },
+  {
+   "key": "theory-of-theories-and-logic",
+   "title": "What our methods can and cannot do: the abstract rounds",
+   "path": "research/theory-of-theories-and-logic/",
+   "dates": "2026-10-14 to 2026-10-15",
+   "summary": "Which kinds of lower-bound proof and construction can exist at all: the growth exponent screen, the spectral and angle factors, and what logic says about existence proofs.",
+   "findings": 54,
+   "counts": {
+    "proved in Lean": 0,
+    "checked by computer": 22,
+    "argued by hand, not checked": 21,
+    "refuted": 9,
+    "open": 2
+   },
+   "open_questions": 12,
+   "programs": 46,
+   "results": "research/theory-of-theories-and-logic/results.json",
+   "readme": "research/theory-of-theories-and-logic/README.md"
+  },
+  {
+   "key": "existence-routes",
+   "title": "Proving that a unit exists without finding it",
+   "path": "research/existence-routes/",
+   "dates": "2026-10-14 to 2026-10-15",
+   "summary": "Proving that a unit exists without finding it: a unit known only to exist counts (proved in Lean), but no route reached an open shape; which routes work as certifiers and which are blind.",
+   "findings": 57,
+   "counts": {
+    "proved in Lean": 2,
+    "checked by computer": 19,
+    "argued by hand, not checked": 23,
+    "refuted": 9,
+    "open": 4
+   },
+   "open_questions": 9,
+   "programs": 16,
+   "results": "research/existence-routes/results.json",
+   "readme": "research/existence-routes/README.md"
+  },
+  {
+   "key": "other-fields",
+   "title": "Famous problems, network coding and quantum computing",
+   "path": "research/other-fields/",
+   "dates": "2026-10-10 to 2026-10-15 (research), 2026-10-19 (re-runs and this write-up)",
+   "summary": "How the problem relates to famous problems, quantum circuits and network coding: exact reshapings, the textbook dictionary, and what each field's tools prove here.",
+   "findings": 49,
+   "counts": {
+    "proved in Lean": 1,
+    "checked by computer": 16,
+    "argued by hand, not checked": 23,
+    "refuted": 8,
+    "open": 1
+   },
+   "open_questions": 13,
+   "programs": 70,
+   "results": "research/other-fields/results.json",
+   "readme": "research/other-fields/README.md"
+  },
+  {
+   "key": "idea-rounds",
+   "title": "Idea rounds: 10 October evening and 16 October",
+   "path": "research/idea-rounds/",
+   "dates": "2026-10-10 to 2026-10-16",
+   "summary": "The two thinking rounds (10 October evening, 16 October): closed doors, structural facts and the leads still open.",
+   "findings": 48,
+   "counts": {
+    "proved in Lean": 0,
+    "checked by computer": 9,
+    "argued by hand, not checked": 29,
+    "refuted": 6,
+    "open": 4
+   },
+   "open_questions": 10,
+   "programs": 94,
+   "results": "research/idea-rounds/results.json",
+   "readme": "research/idea-rounds/README.md"
+  },
+  {
+   "key": "speed-waves",
+   "title": "Speed-first waves 11-15: real processors and FPGAs (11-13 October)",
+   "path": "research/speed-waves/",
+   "dates": "2026-10-11 to 2026-10-13",
+   "summary": "Real processors and FPGAs (11-13 October): one application-level gain (an NTT inside Microsoft SEAL, 21.2 % faster), kernel gains, and every lead that failed.",
+   "findings": 39,
+   "counts": {
+    "proved in Lean": 0,
+    "checked by computer": 35,
+    "argued by hand, not checked": 0,
+    "refuted": 3,
+    "open": 1
+   },
+   "open_questions": 12,
+   "programs": 16,
+   "results": "research/speed-waves/results.json",
+   "readme": "research/speed-waves/README.md"
+  },
+  {
+   "key": "record-track",
+   "title": "The record track: the Lean ladder, the levers that failed, the recursion lever and the frontier",
+   "path": "research/record-track/",
+   "dates": "2026-10-13 to 2026-10-20",
+   "summary": "The race for the record (13-20 October): the Lean ladder to 1.6257e-3, the levers that died, the recursion lever (Theorem 1G, heads, the half cut) and the frontier.",
+   "findings": 62,
+   "counts": {
+    "proved in Lean": 15,
+    "checked by computer": 32,
+    "argued by hand, not checked": 7,
+    "refuted": 6,
+    "open": 2
+   },
+   "open_questions": 6,
+   "programs": 19,
+   "results": "research/record-track/results.json",
+   "readme": "research/record-track/README.md"
+  }
+ ],
+ "totals": {
+  "findings": 585,
+  "counts": {
+   "proved in Lean": 23,
+   "checked by computer": 212,
+   "argued by hand, not checked": 216,
+   "refuted": 92,
+   "open": 42
+  },
+  "open_questions": 122
+ }
+}

@@ -1,0 +1,225 @@
+{
+  "format": "certificate-package/1 (as community/*/result.json of jacobalansussman/wht-power-saving-lean)",
+  "name": "leverB",
+  "suffix": "L3945H",
+  "title": "The community's #3945 circuit with every head kept (80,640 literal heads after re-allocating its hosted roles) and the recursion lever (half cut: each head cut by 24 of its 48 axes, target 49), on the mixed-target recursion",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "numerator": 17581520,
+  "negative_numerator": 17581521,
+  "saving": "1.7581520e-3",
+  "exponent": "1 - 17581520/10^10",
+  "exponents": {
+    "statement": "1 - 17581520/10^10",
+    "seam_alpha": "1 - 1758152001/10^12",
+    "rate_point": "1 - 1758152002/10^12",
+    "mixed_root": "1.75815201676e-3"
+  },
+  "mode": "add",
+  "requires": [
+    "u8x0hq"
+  ],
+  "lakefile_add": [],
+  "tree_change": "none: every new file is under Work/ (lean_lib Work) or comparator/",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainL3945H",
+    "OAI.PowerSaving.convolution_mainL3945H"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainL3945H",
+    "OAI.PowerSaving.convolution_mainL3945H",
+    "OAI.PowerSaving.RAM.hillsL3945H_program",
+    "OAI.PowerSaving.MX.L3945H.engine",
+    "OAI.PowerSaving.MX.L3945H.EngineStmt.lift",
+    "OAI.PowerSaving.SeamL3945H.engine_L3945H",
+    "OAI.PowerSaving.RAM.envelope_program_geL3945H",
+    "OAI.PowerSaving.SeamL3945H.alphaL3945H_lt_target",
+    "OAI.PowerSaving.Skies.alpha_thetaL3945H"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierL3945H.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierL3945HNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierL3945H.Main",
+  "axioms_file": "Work/FourierL3945H/Axioms.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentL3945H",
+  "build_targets": [
+    "Work.L3945H.Stmt",
+    "Work.L3945H.Engine",
+    "Work.FourierL3945H.Main",
+    "Work.FourierL3945H.UniformFourierChallenge",
+    "Work.FourierL3945HNeg.UniformFourierChallenge",
+    "Work.FourierL3945H.Axioms"
+  ],
+  "lean_controls": [
+    {
+      "name": "heads-and-residuals-one-step-too-far",
+      "file": "controls/Heads3945HNeg.lean",
+      "expect": "compiles",
+      "what": "Lean's kernel decides that the host table does not have 80,641 heads and that not every residual is at least 6"
+    },
+    {
+      "name": "rate-fact-one-grid-step-higher",
+      "file": "controls/Rate3945HSharpCtl.lean",
+      "expect": "compiles",
+      "what": "the rate fact is false at 1 - 17581521/10^10 and at every larger saving (rate3945H_sharp, rate3945H_fails)"
+    },
+    {
+      "name": "80641-heads",
+      "file": "controls/NegHeads.lean",
+      "expect": "fails",
+      "what": "claims 80,641 heads; the kernel refutes it"
+    },
+    {
+      "name": "the-published-fills-head-count",
+      "file": "controls/NegHeadsOld.lean",
+      "expect": "fails",
+      "what": "claims #3945's own head count, 57,312, on this fill's table; the kernel refutes it"
+    },
+    {
+      "name": "width-bound-6",
+      "file": "controls/NegRes.lean",
+      "expect": "fails",
+      "what": "claims every residual of provider 0 is at least 6; the kernel refutes it (the smallest width is 5)"
+    },
+    {
+      "name": "one-chunk-count-too-high",
+      "file": "controls/NegGlob.lean",
+      "expect": "fails",
+      "what": "claims one host-table chunk count one higher; the kernel refutes it"
+    }
+  ],
+  "comparator": {
+    "positive": "overlay/comparator/fourier-l3945h.json",
+    "negative": "overlay/comparator/fourier-l3945h-neg.json"
+  },
+  "circuit": {
+    "community_pr": "#3945",
+    "head": "91f81d131252db704f945891da1ea54e29d46b8b (read at that head while open; merged on 20 October 2026 as an archive intake with the same files, not selected)",
+    "words_order_dispatch_template_plan": "#3945's, unchanged",
+    "fill": {
+      "FILL.json.gz": "9c06677d66b04436b02ec8d88036327bdc8fb12e6fd4f71a1b9c7e915c10c2d3",
+      "old-FILL.json.gz (the #3815 stage)": "0e61fce286ba9ebb76e4518efe8fb94aeba0a08fe1cbbb8ba21f53af5cfad9e9",
+      "rows": 1321920,
+      "made_by": "#3815's hall_lp.py with a head bonus on the empty child-8/10 pattern, an exact MIP on the generated columns (HiGHS), #3815's build_fill.py (--distinct 40), #3945's offset step (fill/made-by/)",
+      "hub_checks": "#3945 owner/verify.py PASS_LITERAL_ENLARGED_OWNER_FILL (plain and -O); PR3734 owner_audit.py PASS; #3945's complete admission replay PASS_TERMINAL_WIDTH5_COMPLETE_CONDITIONAL_RELEASE, 119/119 strict controls rejected"
+    },
+    "replicas": 360,
+    "calls": 3240,
+    "arrays_W": 322560,
+    "roles": 1321920,
+    "paid_profile_uniform": {
+      "1": 8041680,
+      "2": 2306880,
+      "3": 729648,
+      "4": 353160,
+      "5": 69120,
+      "8": 25920,
+      "48": 137952
+    },
+    "heads": 80640,
+    "heads_by_child": {
+      "8": 40320,
+      "10": 40320
+    },
+    "other_rank48": 57312,
+    "paid_profile_half_cut": {
+      "1": 8041680,
+      "2": 2306880,
+      "3": 729648,
+      "4": 353160,
+      "5": 69120,
+      "8": 25920,
+      "24": 80640,
+      "48": 57312
+    },
+    "targets_half_cut": {
+      "73": 241920,
+      "49": 80640
+    },
+    "community_figure_b": "1.7306632e-3",
+    "published_fill_heads": 57312
+  },
+  "modules": 406,
+  "checks": {
+    "build (19 Oct 2026, Colab C3; first built by bB-data, logs/bB-data/)": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/final.out",
+      "note": "a copy of bB-data's built tree; the 561 + 20 overlay files installed identical (0 new); lake build 9629 jobs, all up to date"
+    },
+    "axioms": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/l3945h/axioms.log",
+      "note": "9 theorems (the two final theorems and the chain's seven named steps; logs also l3945h/axioms-extra.log): propext, Classical.choice, Quot.sound"
+    },
+    "source greps": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/l3945h/forbidden-grep.txt",
+      "note": "577 files of the closure that are not Ryan Shea's: 0 lines with sorry or admit (OpenAI's two challenge statements aside), 0 with axiom, native_decide, unsafe, implemented_by or extern (sorry-grep.txt)"
+    },
+    "statement files derived from OpenAI's": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/l3945h/derived-FourierL3945H.lean",
+      "note": "both challenge files byte-identical to the derivation (17581520 and 17581521)"
+    },
+    "Compare.lean positive": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/l3945h/compare-pos.log",
+      "note": "RESULT: PASS, 51 s, 16.0 GB"
+    },
+    "Compare.lean negative": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/l3945h/compare-neg.log",
+      "note": "RESULT: FAIL on decimalExponentL3945H (one grid step higher, 1 - 17581521/10^10)"
+    },
+    "official comparator positive (stand-in sandbox)": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/L3945H-cmp.out",
+      "note": "nanoda and Lean's kernel accept; 1 h 05 min, 15.1 GB (l3945h/cmp/l3945h-pos.log)"
+    },
+    "official comparator negative": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/L3945H-cmp.out",
+      "note": "rejected: Const does not match (decimalExponentL3945H); 3 min"
+    },
+    "leaderboard verifier re-created offline (c92b9b6), merged stage": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/L3945H-bos.out",
+      "note": "the import closure has 703 local modules, over the pull-request limit of 500; merged to 447 modules (449 files with Submission.lean and manifest.json), static check passed; Lean check from source 1 h 27 min (10.1 GB), axiom audit standard (1 min), nanoda 1 h 01 min; the bound one grid step higher is rejected"
+    },
+    "merged stage = built tree, constant by constant": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/ident.out",
+      "note": "h-bos's fast identity check: the 29,512 non-auxiliary constants of the closure are identical in the merged stage and in the built tree, and so are the statements and proof terms of all 12,307 theorems (the adapter module aside)"
+    },
+    "leaderboard verifier re-created offline, unmerged stage (C2, sources only)": {
+      "status": "pass",
+      "log": "logs/bB-final/C2/bosU.out",
+      "note": "the 703-module form for the verifier's issue route (no file limit), compiled from sources only: Lean check 2 h 29 min, audit standard, nanoda 1 h 30 min; the bound one grid step higher is rejected"
+    },
+    "release controls": {
+      "status": "pass",
+      "log": "logs/bB-final/C3/ctl.out",
+      "note": "Heads3945HNeg and Rate3945HSharpCtl compile with their axioms; NegHeads, NegHeadsOld, NegRes, NegGlob fail (Lean's decide refutes each)"
+    },
+    "generators re-run (generators/REGENERATE.sh)": {
+      "status": "pass",
+      "log": "logs/regenerate/regenerate.out",
+      "note": "193 generated overlay files made again byte-identical; each generator refuses one step too far"
+    },
+    "the community's complete admission replay of #3945 on this fill": {
+      "status": "pass",
+      "log": "logs/ah-gate/frB/fullB.out",
+      "note": "PASS_TERMINAL_WIDTH5_COMPLETE_CONDITIONAL_RELEASE with fresh native runs; 119 of 119 strict controls rejected (logs/ah-gate/GATE.md)"
+    }
+  }
+}

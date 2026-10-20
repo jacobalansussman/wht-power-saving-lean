@@ -1,0 +1,8 @@
+(a) ideal packing, no pads                                 T= 25 W=  16934 banks= 11334 pads=     0 D=  800 N= 1093937.6 D/N=7.3130e-04  price a=7.3057223e-04  (x0.435 of the hub)
+(b) first-fit, banks shared across replicas                T=  1 W=    778 banks=   554 pads=  2516 D=   32 N=   46483.1 D/N=6.8842e-04  price a=6.8779192e-04  (x0.409 of the hub)
+(c) first-fit, banks within one replica                    T=  1 W=    778 banks=   554 pads=  2516 D=   32 N=   46483.1 D/N=6.8842e-04  price a=6.8779192e-04  (x0.409 of the hub)
+(b) first-fit, banks shared across replicas                T=  8 W=   5600 banks=  3808 pads=  4528 D=  256 N=  361444.0 D/N=7.0827e-04  price a=7.0758567e-04  (x0.421 of the hub)
+(c) first-fit, banks within one replica                    T=  8 W=   6224 banks=  4432 pads= 20128 D=  256 N=  371864.8 D/N=6.8842e-04  price a=6.8779192e-04  (x0.409 of the hub)
+(b) first-fit, banks shared across replicas                T= 25 W=  17484 banks= 11884 pads= 13750 D=  800 N= 1127985.4 D/N=7.0923e-04  price a=7.0854245e-04  (x0.422 of the hub)
+(c) first-fit, banks within one replica                    T= 25 W=  19450 banks= 13850 pads= 62900 D=  800 N= 1162077.6 D/N=6.8842e-04  price a=6.8779192e-04  (x0.409 of the hub)
+(d) helpers as scratch outside W: D per replica = -11302 (gain 224 - centres 192 - helper levels 11334) -> no saving

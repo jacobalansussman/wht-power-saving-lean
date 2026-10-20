@@ -1,0 +1,7 @@
+uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
+TMPDIR=/tmp
+tmp-write-ok
+touch: cannot touch '/var/tmp/x': Read-only file system
+touch: cannot touch '/content/work/cc/probe/proj/outside': Read-only file system
+curl: (6) Could not resolve host: github.com
+(3, '/tmp/tmpqposjq88')

@@ -1,0 +1,5 @@
+'GS.XRunZ.of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GS.YRunZ.of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GS.ScalOKZ.hy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GS.ScalOKZ.hid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GS.ScalOKZ.toScalZ' depends on axioms: [propext, Classical.choice, Quot.sound]

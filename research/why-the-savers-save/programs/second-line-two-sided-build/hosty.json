@@ -1,0 +1,42 @@
+{
+ "calibration": {
+  "W": 7544,
+  "banks": 376,
+  "root_lower": "0.00162252782113",
+  "fold": 0.0016225278211303242
+ },
+ "two_sided_strict": {
+  "W": 15232,
+  "banks": 8064,
+  "D": 6144,
+  "N": 1964456.9,
+  "a": 0.003111325776627385,
+  "hosted_width": 193536,
+  "banked_Y": 12096,
+  "solver": {
+   "status": 0,
+   "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+   "seconds": 0.6637492179870605,
+   "nvar": 28439,
+   "gap": 0.0
+  },
+  "repaired": 0
+ },
+ "two_sided_per-run": {
+  "W": 9378,
+  "banks": 2210,
+  "D": 6144,
+  "N": 1901526.8,
+  "a": 0.0032131962679057243,
+  "hosted_width": 193536,
+  "banked_Y": 12096,
+  "solver": {
+   "status": 0,
+   "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+   "seconds": 0.6637492179870605,
+   "nvar": 28439,
+   "gap": 0.0
+  },
+  "repaired": 0
+ }
+}

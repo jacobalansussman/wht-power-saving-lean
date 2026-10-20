@@ -1,0 +1,3 @@
+def OAI.PowerSaving.decimalExponentC588 : ℝ :=
+1 - 12383291 / 10 ^ 10
+'OAI.PowerSaving.transform_mainC588' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

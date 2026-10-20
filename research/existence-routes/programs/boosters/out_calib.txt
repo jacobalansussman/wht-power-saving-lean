@@ -1,0 +1,49 @@
+(a) known relations: must PASS
+  plain [2] <= 2[1]: D(0)=1 D(1)=0 roots in (0,1]=[] min D on window=0.002355 at 0.9983 | PASSES  OK
+  plain [3] <= 3[1]: D(0)=2 D(1)=0 roots in (0,1]=[] min D on window=0.005598 at 0.9983 | PASSES  OK
+  plain [4] <= 4[1]: D(0)=3 D(1)=0 roots in (0,1]=[] min D on window=0.009416 at 0.9983 | PASSES  OK
+  plain [5] <= 5[1]: D(0)=4 D(1)=0 roots in (0,1]=[] min D on window=0.01366 at 0.9983 | PASSES  OK
+  plain [6] <= 6[1]: D(0)=5 D(1)=0 roots in (0,1]=[] min D on window=0.01825 at 0.9983 | PASSES  OK
+  plain [7] <= 7[1]: D(0)=6 D(1)=0 roots in (0,1]=[] min D on window=0.02312 at 0.9983 | PASSES  OK
+  plain [8] <= 8[1]: D(0)=7 D(1)=0 roots in (0,1]=[] min D on window=0.02823 at 0.9983 | PASSES  OK
+  Kronecker [2] <= [1]+[1]: D(0)=1 D(1)=0 roots in (0,1]=[] min D on window=0.002355 at 0.9983 | PASSES  OK
+  Kronecker [3] <= [1]+[2]: D(0)=1 D(1)=0 roots in (0,1]=[] min D on window=0.003242 at 0.9983 | PASSES  OK
+  Kronecker [4] <= [2]+[2]: D(0)=1 D(1)=0 roots in (0,1]=[] min D on window=0.004705 at 0.9983 | PASSES  OK
+  Kronecker [5] <= [2]+[3]: D(0)=1 D(1)=0 roots in (0,1]=[] min D on window=0.005709 at 0.9983 | PASSES  OK
+  Kronecker [8] <= [3]+[5]: D(0)=1 D(1)=0 roots in (0,1]=[] min D on window=0.008971 at 0.9983 | PASSES  OK
+  A5 [1] <= 2[2] (register 2): D(0)=1 D(1)=3 roots in (0,1]=[] min D on window=2.732 at 0.9000 | PASSES  OK
+  A5 [1] <= 2[3] (register 3): D(0)=1 D(1)=5 roots in (0,1]=[] min D on window=4.376 at 0.9000 | PASSES  OK
+  A5 [1] <= 2[4] (register 4): D(0)=1 D(1)=7 roots in (0,1]=[] min D on window=5.964 at 0.9000 | PASSES  OK
+  A5 [1] <= 2[5] (register 5): D(0)=1 D(1)=9 roots in (0,1]=[] min D on window=7.513 at 0.9000 | PASSES  OK
+  A5 [1] <= 2[6] (register 6): D(0)=1 D(1)=11 roots in (0,1]=[] min D on window=9.032 at 0.9000 | PASSES  OK
+  A5 [1] <= 2[7] (register 7): D(0)=1 D(1)=13 roots in (0,1]=[] min D on window=10.52 at 0.9000 | PASSES  OK
+  A5 [1] <= 2[8] (register 8): D(0)=1 D(1)=15 roots in (0,1]=[] min D on window=12 at 0.9000 | PASSES  OK
+  T74E (hub #1839 word, our chain; lg-a1 price file): W=10855 at block 73; J-balance root tau = 0.998595992058, saving 1 - tau = 1.40400794216e-03 (pipeline / earlier value root_lower 17550099277/12500000000000; dft_numerator 14040060 -> DFT saving 1.4040060e-03); certificates: PASSES
+  #1042 (hub; ex-laser reprice_hub.py control): W=14336 at block 73; J-balance root tau = 0.998325010984, saving 1 - tau = 1.67498901594e-03 (pipeline / earlier value stages.py 1.674989e-3); certificates: PASSES
+(b) proved impossible: must be EXCLUDED rigorously
+  engine 2 in 5 at block 3 (proved impossible): D(0)=3 D(1)=-1 roots in (0,1]=[0.83405] min D on window=-0.9888 at 0.9983 | EXCLUDED by [('hook3', 1, 'proved'), ('liftE162', 1, 'proved'), ('liftg3c', 1, 'proved')]  OK
+  W2: 2 arrays, 3 rank-1 + 1 rank-2 at block 3: D(0)=2 D(1)=-1 roots in (0,1]=[0.78135] min D on window=-0.9912 at 0.9983 | EXCLUDED by [('hook3', 1, 'proved'), ('liftE162', 1, 'proved'), ('liftg3c', 1, 'proved'), ('hook4', 1, 'whp'), ('proj3to4', 1, 'proved')]  OK
+  W2: 2 arrays, 1 rank-1 + 2 rank-2 at block 3: D(0)=1 D(1)=-1 roots in (0,1]=[0.67285] min D on window=-0.9935 at 0.9983 | EXCLUDED by [('hook3', 1, 'proved'), ('liftE162', 1, 'proved'), ('liftg3c', 1, 'proved'), ('hook4', 1, 'whp'), ('liftg4c', 1, 'proved'), ('proj3to4', 1, 'proved')]  OK
+  Rs 2[2] <= [1]+[3] (spreading; certificate A): D(0)=0 D(1)=0 roots in (0,1]=[5e-05, 1.0] min D on window=-0.04426 at 0.9000 | EXCLUDED by [('A3', 1, 'proved'), ('A6', 2, 'proved'), ('A9', 3, 'proved'), ('A12', 4, 'proved'), ('A15', 5, 'proved'), ('A18', 6, 'proved')]  OK
+  R2 2[2] <= 1.05[1]+[3]: D(0)=0.05 D(1)=0.05 roots in (0,1]=[0.19265, 0.8838] min D on window=0.005743 at 0.9000 | EXCLUDED by [('A3', 1, 'proved'), ('A6', 2, 'proved'), ('A9', 3, 'proved'), ('A12', 4, 'proved'), ('B3', 1, 'proved'), ('B6', 2, 'conj')]  OK
+  R2b 2[4] <= [1]+[7]: D(0)=0 D(1)=0 roots in (0,1]=[5e-05, 1.0] min D on window=-0.2022 at 0.9000 | EXCLUDED by [('A7', 1, 'proved'), ('A14', 2, 'proved'), ('A21', 3, 'proved'), ('A28', 4, 'proved'), ('A35', 5, 'proved'), ('A42', 6, 'proved')]  OK
+  spreading 2[3] <= [2]+[4]: D(0)=0 D(1)=0 roots in (0,1]=[5e-05, 1.0] min D on window=-0.02748 at 0.9000 | EXCLUDED by [('A4', 1, 'proved'), ('A8', 2, 'proved'), ('A12', 3, 'proved'), ('A16', 4, 'proved'), ('A20', 5, 'proved'), ('A24', 6, 'proved')]  OK
+  spreading 2[3] <= [1]+[5]: D(0)=0 D(1)=0 roots in (0,1]=[5e-05, 1.0] min D on window=-0.1191 at 0.9000 | EXCLUDED by [('A5', 1, 'proved'), ('A10', 2, 'proved'), ('A15', 3, 'proved'), ('A20', 4, 'proved'), ('A25', 5, 'proved'), ('A30', 6, 'proved')]  OK
+  spreading 2[4] <= [3]+[5]: D(0)=0 D(1)=0 roots in (0,1]=[5e-05, 1.0] min D on window=-0.01983 at 0.9000 | EXCLUDED by [('A5', 1, 'proved'), ('A10', 2, 'proved'), ('A15', 3, 'proved'), ('A20', 4, 'proved'), ('A25', 5, 'proved'), ('A30', 6, 'proved')]  OK
+  spreading 2[4] <= [1]+[7]: D(0)=0 D(1)=0 roots in (0,1]=[5e-05, 1.0] min D on window=-0.2022 at 0.9000 | EXCLUDED by [('A7', 1, 'proved'), ('A14', 2, 'proved'), ('A21', 3, 'proved'), ('A28', 4, 'proved'), ('A35', 5, 'proved'), ('A42', 6, 'proved')]  OK
+  spreading 2[5] <= [3]+[7]: D(0)=0 D(1)=0 roots in (0,1]=[5e-05, 1.0] min D on window=-0.06333 at 0.9000 | EXCLUDED by [('A7', 1, 'proved'), ('A14', 2, 'proved'), ('A21', 3, 'proved'), ('A28', 4, 'proved'), ('A35', 5, 'proved'), ('A42', 6, 'proved')]  OK
+  spreading 2[6] <= [5]+[7]: D(0)=0 D(1)=0 roots in (0,1]=[5e-05, 1.0] min D on window=-0.01261 at 0.9000 | EXCLUDED by [('A7', 1, 'proved'), ('A14', 2, 'proved'), ('A21', 3, 'proved'), ('A28', 4, 'proved'), ('A35', 5, 'proved'), ('A42', 6, 'proved')]  OK
+  hook-free check: 1 array in 2.75 moves at block 3 (hook 2.8): D(0)=7 D(1)=-1 roots in (0,1]=[0.9208] min D on window=-0.9776 at 0.9983 | EXCLUDED by [('hook3', 1, 'proved')]  OK
+  b56: 3 arrays with four rank-2 blocks at block 6 (lift-excluded, sampled): D(0)=1 D(1)=-10 roots in (0,1]=[0.2619] min D on window=-9.955 at 0.9983 | excluded-weakly by [('lift6', 1, 'sampled')]
+  block 2: 2 in 3 (engine; plain is optimal at block 2: certificate B is perfect there): D(0)=1 D(1)=-1 roots in (0,1]=[0.585] min D on window=-0.9953 at 0.9983 | EXCLUDED by [('B2', 1, 'proved'), ('hook3', 1, 'proved'), ('liftE162', 1, 'proved'), ('liftg3c', 1, 'proved'), ('hook4', 1, 'whp'), ('hook4', 2, 'whp')]  OK
+(c) blind by construction (price screen sees no program):
+  1+4 in 10 at block 3 (exactly hook-tight; excluded only by ms-mixed Theorem T, a program-level argument): D(0)=5 D(1)=-1 roots in (0,1]=[0.88115] min D on window=-0.985 at 0.9983 | PASSES
+  slice 3 in 11 at block 4 (Theorem 17 holds only in the commutative slice; engine certificates allow it): D(0)=8 D(1)=-1 roots in (0,1]=[0.93725] min D on window=-0.9718 at 0.9983 | PASSES
+  absorb4 limit (residual 2/3) and px-t514 (wrong at f = 6): not relations; a price screen cannot see them.
+(d) made-up rules of ex2-duality: the window test flags them, certificate A removes them
+  R1 2[3] <= 5[1]: D(1)=-1.000, min D on [0.9, 0.9983] = -0.9888 -> unit
+  Rs: D(1)=0.000, min D on [0.9, 0.9983] = -0.0443 -> booster-shaped (D(1) >= 0, negative in window)
+  R2b: D(1)=0.000, min D on [0.9, 0.9983] = -0.2022 -> booster-shaped (D(1) >= 0, negative in window)
+  R1 alone: max Theta = 0.8340
+  Rs alone: max Theta = 1.0000
+  R1 + Rs: max Theta = 0.0000

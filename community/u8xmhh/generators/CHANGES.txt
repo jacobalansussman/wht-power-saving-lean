@@ -1,0 +1,37 @@
+Every line of generators/ that differs from the copy that ran (home-folder paths shortened in 'as run').
+
+lean-gen/gen_hu8xm.py:10
+  as run: BC = '<verify>/checks/wht43/bound-check'
+  here:   BC = os.environ.get('BC', '.')  # as run: the agents' working folder; see generators/README.txt
+
+design-tools/host_price.py:24
+  as run: sys.path.append('<verify>/checks/wht33/tinygame/pylib')   # scipy 1.13.1, numpy 2.0.2
+  here:   # as run, a local folder holding scipy 1.13.1 and numpy 2.0.2 was added to sys.path here
+
+design-tools/host_repack.py:11
+  as run: XP = os.path.expanduser('~/misc/fft/verify/checks/wht43/bound-check/x-pack/tools')
+  here:   XP = os.path.join(os.environ.get('BC', '.'), 'x-pack/tools')  # as run: the agents' working folder; see generators/README.txt
+
+design-tools/indep_audit.py:62
+  as run: sys.path.insert(0, '<verify>/checks/wht43/bound-check/m-gen/toolkit/tools/gen')
+  here:   sys.path.insert(0, os.path.join(os.environ.get('BC', '.'), 'm-gen/toolkit/tools/gen'))  # see generators/README.txt
+
+design-tools/controls.py:7
+  as run: BC = '<verify>/checks/wht43/bound-check'
+  here:   BC = os.environ.get('BC', '.')  # as run: the agents' working folder; see generators/README.txt
+
+design-tools/summary.py:4
+  as run: F = '<verify>/checks/wht43/bound-check/fs-price/out/'
+  here:   F = os.path.join(os.environ.get('F', '.'), 'out/')  # as run: the agents' fs-price folder
+
+scripts/finish.sh:5
+  as run: F=<verify>/checks/wht43/bound-check/fs-price
+  here:   F=${F:-$PWD}  # as run: the agents' fs-price folder
+
+scripts/run_u8xm.sh:4
+  as run: F=<verify>/checks/wht43/bound-check/fs-price
+  here:   F=${F:-$PWD}  # as run: the agents' fs-price folder
+
+scripts/run_samerun.sh:4
+  as run: F=<verify>/checks/wht43/bound-check/fs-price
+  here:   F=${F:-$PWD}  # as run: the agents' fs-price folder

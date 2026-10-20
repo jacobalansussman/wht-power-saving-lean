@@ -1,0 +1,21 @@
+plain: x1, x2: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+packed x1 + x2, then x1: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+packed x1 + u1 x2, then x1 - u1 x2: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+packed (1+u1)(x1 + x2), then x1, then x2: prices per point [4.0, 8.0, 4.0], total 16.000 (two arrays), untouched left 0.000 of 272
+x1 + u1 x2, then u2 x1 + x2: prices per point [8.0, 4.0], total 12.000 (two arrays), untouched left 68.000 of 272
+(1+u1) x1 + (1-u1) x2, then (1-u1) x1 + (1+u1) x2, then x1, x2: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+random pair of rows: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+plain: x1, x2: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+packed x1 + x2, then x1: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+packed x1 + u1 x2, then x1 - u1 x2: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+packed (1+u1)(x1 + x2), then x1, then x2: prices per point [4.0, 8.0, 4.0], total 16.000 (two arrays), untouched left 0.000 of 272
+x1 + u1 x2, then u2 x1 + x2: prices per point [8.0, 4.0], total 12.000 (two arrays), untouched left 68.000 of 272
+(1+u1) x1 + (1-u1) x2, then (1-u1) x1 + (1+u1) x2, then x1, x2: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+random pair of rows: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+plain: x1, x2: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+packed x1 + x2, then x1: prices per point [8.0, 8.0], total 16.000 (two arrays), untouched left 0.000 of 272
+packed x1 + u1 x2, then x1 - u1 x2: prices per point [72.0, 8.0], total 80.000 (two arrays), untouched left 0.000 of 272
+packed (1+u1)(x1 + x2), then x1, then x2: prices per point [72.0, 8.0, 8.0], total 88.000 (two arrays), untouched left 0.000 of 272
+x1 + u1 x2, then u2 x1 + x2: prices per point [72.0, 8.0], total 80.000 (two arrays), untouched left 28.000 of 272
+(1+u1) x1 + (1-u1) x2, then (1-u1) x1 + (1+u1) x2, then x1, x2: prices per point [72.0, 8.0], total 80.000 (two arrays), untouched left 0.000 of 272
+random pair of rows: prices per point [72.0, 8.0], total 80.000 (two arrays), untouched left 0.000 of 272

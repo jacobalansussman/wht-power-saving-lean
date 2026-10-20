@@ -1,0 +1,1830 @@
+{
+ "schema": "wht-research-section/1",
+ "section": "frame-packing-two-arrays",
+ "title": "How savings happen: crossing slack, frame packing, the frame game, Proposition 6",
+ "dates": "2026-10-15 (research), 2026-10-19 (re-runs and this write-up)",
+ "made_with": "AI agents (Claude) directed by the author; at most one AI skeptic per result; nothing checked in Lean; no person has read the proofs",
+ "status_words": [
+  "proved in Lean",
+  "checked by computer",
+  "argued by hand, not checked",
+  "refuted",
+  "open"
+ ],
+ "counts": {
+  "proved in Lean": 0,
+  "checked by computer": 12,
+  "argued by hand, not checked": 24,
+  "refuted": 13,
+  "open": 1
+ },
+ "findings": [
+  {
+   "id": "frame-packing-two-arrays/1",
+   "statement": "For every engine unit and every choice of coordinates, M = W*m - 2N + X + 2D + Z + B - P (plus one per move on an empty array); in raw coordinates the moves saved equal P - B - 2D - Z, so every saving of every unit is frame packing that is not paid back.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic)",
+   "date": "2026-10-15",
+   "block": "every",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/ledger-for-every-unit.md",
+    "proofs/slack-skeptic.md"
+   ],
+   "programs": [
+    "programs/ledger/ledger.py"
+   ],
+   "archive_entry": "M23"
+  },
+  {
+   "id": "frame-packing-two-arrays/2",
+   "statement": "The ledger identity holds with no exception on 34 named exact units, 630 random units, 1,280 random words, every word up to length 4 at blocks 2 and 3 (692,402 and 2,164,802 runs, about 2.9 million) and a census of small two-move units at block 1.",
+   "status": "checked by computer",
+   "status_detail": "one program, not repeated by a skeptic; its block-2 exhaustive part (692,402 runs) was re-run for this revision with the same result",
+   "date": "2026-10-15",
+   "block": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "exhaustive_runs_block2": 692402,
+    "exhaustive_runs_block3": 2164802,
+    "named_units": 34,
+    "random_units": 630,
+    "random_words": 1280
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/ledger/t_exhaust_m2_R2_L4.out",
+    "data/ledger/t_exhaust_m3_R2_L4.out",
+    "data/ledger/t_known.out",
+    "data/ledger/t_random.out",
+    "data/ledger/t_census_m1_R2_nm2_k3.out"
+   ],
+   "programs": [
+    "programs/ledger/t_exhaust.py",
+    "programs/ledger/t_known.py",
+    "programs/ledger/t_random.py",
+    "programs/ledger/t_census.py"
+   ],
+   "archive_entry": "M23"
+  },
+  {
+   "id": "frame-packing-two-arrays/3",
+   "statement": "Crossing slack is packing that some change of coordinates removes: a change of coordinates only moves saving between the 2N term and the P term. Among the known units there is no second way to save; the five-stage Lean units re-frame their helpers (at block 110, 11,550 of 51,781 additions per invocation join arrays at different frames), so in Lean's coordinates they are outside the common-frame class, and their deficit is still crossing slack minus copy costs.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it; whether some other coordinates make the Lean units common-frame is unsettled (the skeptic expects not, argued)",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "block110_additions_per_invocation": 51781,
+    "block110_cross_frame_additions": 11550
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/ledger-for-every-unit.md",
+    "proofs/slack-skeptic.md"
+   ],
+   "programs": [],
+   "archive_entry": "M23"
+  },
+  {
+   "id": "frame-packing-two-arrays/4",
+   "statement": "The anatomy round's identity M = W*m - 2N + 2L holds for every unit.",
+   "status": "refuted",
+   "status_detail": "refuted by the general ledger: it is exact only for common-frame designs whose reference frame lies between every input's start and end frames; elsewhere it is bookkeeping and excludes nothing",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the ledger of finding 1, the block-80 unit's odd count and the re-framed Lean units",
+   "evidence": [
+    "proofs/ledger-for-every-unit.md",
+    "proofs/common-frame-accounting.md"
+   ],
+   "programs": [],
+   "archive_entry": "C22"
+  },
+  {
+   "id": "frame-packing-two-arrays/5",
+   "statement": "Saved moves are always even (the parity hypothesis).",
+   "status": "refuted",
+   "status_detail": "refuted by our own block-80 unit, which uses 747,925 moves instead of 748,960 (1,035 saved), and by small exact units",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "block80_moves": 747925,
+    "block80_plain": 748960,
+    "block80_saved": 1035
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the block-80 unit (1,035 saved moves) and small exact units with one sideways step, copy or idle move",
+   "evidence": [
+    "proofs/slack-skeptic.md",
+    "data/skeptic-checks/slack/vunits.out"
+   ],
+   "programs": [
+    "programs/skeptic-checks/slack/vunits.py"
+   ],
+   "archive_entry": "C21"
+  },
+  {
+   "id": "frame-packing-two-arrays/6",
+   "statement": "The number of saved moves is even only when the unit is common-frame in some coordinates, has no branching, no sideways steps with every source on the straight path, and no move on an empty array; dropping any one allows odd counts, so parity prunes no 'save one move' target and not the full-sharing family U_m.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (the skeptic added the fourth condition)",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/ledger-for-every-unit.md",
+    "proofs/slack-skeptic.md"
+   ],
+   "programs": [
+    "programs/ledger/t_known.py"
+   ],
+   "archive_entry": "M26"
+  },
+  {
+   "id": "frame-packing-two-arrays/7",
+   "statement": "In a common-frame design, moves saved = the sum over arrays of the overlap of start and end frames minus detours; pure routing saves nothing.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/common-frame-accounting.md"
+   ],
+   "programs": [
+    "programs/common-frame-accounting/frames.py"
+   ],
+   "archive_entry": "L28"
+  },
+  {
+   "id": "frame-packing-two-arrays/8",
+   "statement": "For every unit (engine and widened games), moves saved <= the sum over paid moves of (number of inputs whose data the move carries - 1). It excludes nothing by itself.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine",
+    "widened"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/common-frame-accounting.md"
+   ],
+   "programs": [],
+   "archive_entry": "L28"
+  },
+  {
+   "id": "frame-packing-two-arrays/9",
+   "statement": "Median bound: in a common-frame design the deficit is at most twice the summed distance from the best single frame to the inputs' start frames (or end frames), so clustered designs save little.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/common-frame-accounting.md"
+   ],
+   "programs": [],
+   "archive_entry": "L28"
+  },
+  {
+   "id": "frame-packing-two-arrays/10",
+   "statement": "A common-frame design whose inputs all start at one frame, or all end at one frame, needs at least W*m moves, for any number of arrays (max-flow min-cut).",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/ledger-for-every-unit.md"
+   ],
+   "programs": [],
+   "archive_entry": "L28"
+  },
+  {
+   "id": "frame-packing-two-arrays/11",
+   "statement": "Cut arguments are weak beyond two arrays: the cut condition gives at best 1.5, 1.75 and 1.875 moves per array at blocks 2, 3 and 4, against the true 2 at block 2 and the certificate's 2.8 at block 3.",
+   "status": "checked by computer",
+   "status_detail": "exhaustive over all 16,383 frame sets at block 2; one skeptic recomputed 3/2, 7/4 and 15/8 with its own code; the block-2 value was re-run for this revision",
+   "date": "2026-10-15",
+   "block": [
+    2,
+    3,
+    4
+   ],
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "cut_moves_per_array": {
+     "2": 1.5,
+     "3": 1.75,
+     "4": 1.875
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/ledger/cutconst_m2.out",
+    "data/ledger/cutconst_m3.out",
+    "data/skeptic-checks/slack/vspectral.out"
+   ],
+   "programs": [
+    "programs/ledger/cutconst.py",
+    "programs/skeptic-checks/slack/vspectral.py"
+   ],
+   "archive_entry": "L28"
+  },
+  {
+   "id": "frame-packing-two-arrays/12",
+   "statement": "A common-frame design needs at least W*m/(C*log 2W) moves for any number of arrays, from a published flow-cut gap with an unknown constant C.",
+   "status": "argued by hand, not checked",
+   "status_detail": "uses a published theorem cited from memory; an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/ledger-for-every-unit.md"
+   ],
+   "programs": [],
+   "archive_entry": "L28"
+  },
+  {
+   "id": "frame-packing-two-arrays/13",
+   "statement": "A common-frame unit is exactly a scalar linear network code for W unicast sessions on the frame graph, each joining two opposite frames; a saving is a coding gain over routing, which our certificates bound (none on the block-2 graph, at most 15/14 on the block-3 graph). No claim is made about any network-coding conjecture.",
+   "status": "argued by hand, not checked",
+   "status_detail": "a remark of the combinatorics track; the skeptic did not check it separately",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/ledger-for-every-unit.md"
+   ],
+   "programs": [],
+   "archive_entry": "M28"
+  },
+  {
+   "id": "frame-packing-two-arrays/14",
+   "statement": "Designs built like the known savers (one frame per array, equal-frame additions, overlap one per array as with line labels) reach 0.1 only up to block 6 and 0.01 only up to block 29, even with free bridges; overlap two reaches them up to blocks 9 and 51, overlap four up to blocks 16 and 90 (move counts).",
+   "status": "argued by hand, not checked",
+   "status_detail": "the formula is argued; every figure was recomputed by one skeptic",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "overlap1": {
+     "0.1": 6,
+     "0.01": 29
+    },
+    "overlap2": {
+     "0.1": 9,
+     "0.01": 51
+    },
+    "overlap4": {
+     "0.1": 16,
+     "0.01": 90
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/common-frame-accounting.md",
+    "data/common-frame-accounting/needs.out",
+    "data/skeptic-checks/slack/vunits.out"
+   ],
+   "programs": [
+    "programs/common-frame-accounting/needs.py"
+   ],
+   "archive_entry": "L28"
+  },
+  {
+   "id": "frame-packing-two-arrays/15",
+   "statement": "Refund identity: a label created at an addition and never delivered contributes exactly zero to P - B - 2D - Z, however many moves it rides; a delivered label contributes its final level. So packed junk is always paid back in full and the amount of packing means nothing by itself.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (checked line by line against the ledger's definitions)",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "README.md#4-the-refund-identity-packing-is-plentiful-and-almost-all-of-it-is-paid-back"
+   ],
+   "programs": [
+    "programs/packing-measurement/fm_ledger.py"
+   ],
+   "archive_entry": "M24"
+  },
+  {
+   "id": "frame-packing-two-arrays/16",
+   "statement": "Packing in the known savers: per call, one paid move advances 8.6 to 12.3 labels besides its own in the community's words and ours (about 102 in the block-110 circuit), and additions in the same call destroy 79 to 95 % of it; over whole units about 5.1 to 5.7 (E8), 6.2 to 6.8 (U8X0HQ), 6.0 to 6.6 (T74 per replica) and about 55 (block 110) extra labels per paid move, and 0.0034 for OpenAI's unit at the size in its paper; what survives is 0.0021, 0.0047, 0.0049, 0.0019 and 3.7e-12 moves saved per paid move.",
+   "status": "checked by computer",
+   "status_detail": "per-call counts exact, recomputed by one skeptic with its own code; whole-unit extra labels per move are estimates from the per-call counts (the global words were not replayed), except OpenAI's, which is exact; the E8 call was re-run for this revision with the same result",
+   "date": "2026-10-15",
+   "block": [
+    45,
+    73,
+    110,
+    1000000
+   ],
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "extra_labels_per_move": {
+     "E8": [
+      5.1,
+      5.7
+     ],
+     "U8X0HQ": [
+      6.2,
+      6.8
+     ],
+     "T74_per_replica": [
+      6.0,
+      6.6
+     ],
+     "block110": 55,
+     "OpenAI": 0.0034
+    },
+    "surviving_moves_saved_per_paid_move": {
+     "E8": 0.0021,
+     "U8X0HQ": 0.0047,
+     "T74_per_replica": 0.0049,
+     "block110": 0.0019,
+     "OpenAI": 3.7e-12
+    },
+    "most_labels_on_one_move": {
+     "OpenAI": 161701,
+     "block110": 886,
+     "U8_T74": 77
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/packing-measurement/out/summary.txt",
+    "data/packing-measurement/out/fm_E8r783.out",
+    "data/skeptic-checks/packing-measurement/out/vcal.out"
+   ],
+   "programs": [
+    "programs/packing-measurement/fm_ledger.py",
+    "programs/packing-measurement/bw_ledger.py",
+    "programs/packing-measurement/oa_ledger.py",
+    "programs/skeptic-checks/packing-measurement/vfm.py"
+   ],
+   "archive_entry": "M24"
+  },
+  {
+   "id": "frame-packing-two-arrays/17",
+   "statement": "'The third shear packs only the crossing' (896 per call) on the community's U8 and T74 lines.",
+   "status": "refuted",
+   "status_detail": "refuted by the measurement track's skeptic: there the targets read each other, so the third shear packs 1,680 (U8) and 1,968 (T74)",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the skeptic's replay (vfm_ydiag.py)",
+   "evidence": [
+    "data/skeptic-checks/packing-measurement/out/vfm_ydiag_U8X_F3.json"
+   ],
+   "programs": [
+    "programs/skeptic-checks/packing-measurement/vfm_ydiag.py"
+   ],
+   "archive_entry": "M24"
+  },
+  {
+   "id": "frame-packing-two-arrays/18",
+   "statement": "'A ceiling on gross packing per move cannot cap the saving.'",
+   "status": "refuted",
+   "status_detail": "refuted as an overstatement: in every measured case B >= 0, so the saving is at most P and a ceiling on P would cap it; B >= 0 is not proved in general, and any such ceiling would have to allow 5 to 100 per move at the known savers' blocks",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the measurement track's skeptic",
+   "evidence": [
+    "README.md#4-the-refund-identity-packing-is-plentiful-and-almost-all-of-it-is-paid-back"
+   ],
+   "programs": [],
+   "archive_entry": "M24"
+  },
+  {
+   "id": "frame-packing-two-arrays/19",
+   "statement": "For every unit (any number of arrays and scratch arrays): moves saved <= the sum over paid moves of (live frames the move raises - 1); units in which no paid move raises two live frames never save; no paid move lifts two live frames off the raw frame or finishes two at once.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/packing-capacity-and-rigidity.md"
+   ],
+   "programs": [
+    "programs/packing-capacity/vflowB.py",
+    "programs/skeptic-checks/packing-capacity/vunits.py"
+   ],
+   "archive_entry": "M25"
+  },
+  {
+   "id": "frame-packing-two-arrays/20",
+   "statement": "In any coordinates, moves saved <= live packing + coding gain of the network those coordinates define; in raw coordinates the coding gain is 0, in a common-frame design's own coordinates the packing is 0.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/packing-capacity-and-rigidity.md"
+   ],
+   "programs": [
+    "programs/packing-capacity/vflow.py"
+   ],
+   "archive_entry": "M25"
+  },
+  {
+   "id": "frame-packing-two-arrays/21",
+   "statement": "Two arrays, any coordinates: M >= 2m - P*, with P* the packing no choice of coordinates removes; with no scratch a two-array unit can save only if some array holds one input on two different labels (bit and sign flips are not enough; Proposition D).",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it; the skeptic replaced the reason for one step of Proposition D by a correct one",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/packing-capacity-and-rigidity.md"
+   ],
+   "programs": [
+    "programs/packing-capacity/vflow.py"
+   ],
+   "archive_entry": "M25"
+  },
+  {
+   "id": "frame-packing-two-arrays/22",
+   "statement": "Capacity is unbounded: one paid move can serve any finite set of steps with suitable contents; three frames one step below the top can block every move, two never can.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/packing-capacity-and-rigidity.md"
+   ],
+   "programs": [
+    "programs/packing-capacity/geom.py"
+   ],
+   "archive_entry": "M25"
+  },
+  {
+   "id": "frame-packing-two-arrays/23",
+   "statement": "Rigidity: the most a packed pair can add to the saving over its joint life averages 1.18, 1.77 and 2.31 moves at blocks 2, 3 and 4 (all 120 and all 8,640 relative positions at blocks 2 and 3; 300 sampled at block 4); only one relative position can carry a full m, and the order-3 controls that use it pay it all back.",
+   "status": "checked by computer",
+   "status_detail": "exact at blocks 2 and 3, a sample at block 4; one skeptic recomputed the geometry with its own code; re-run for this revision with the same output",
+   "date": "2026-10-15",
+   "block": [
+    2,
+    3,
+    4
+   ],
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "rigidity_average": {
+     "2": 1.18,
+     "3": 1.77,
+     "4": 2.31
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/packing-capacity/geom.out",
+    "data/skeptic-checks/packing-capacity/vgeom_m23.out"
+   ],
+   "programs": [
+    "programs/packing-capacity/geom.py",
+    "programs/skeptic-checks/packing-capacity/vgeom.py"
+   ],
+   "archive_entry": "M25"
+  },
+  {
+   "id": "frame-packing-two-arrays/24",
+   "statement": "Every ceiling is a refund ceiling: read through our certificates, at most 0, 0.071, 0.268, 0.671, 1.018, 1.717, 4.43 and 23.8 net saved moves per paid move survive at blocks 2, 3, 4, 5, 6, 8, 16 and 73; a unit with saving s needs at least m^s - 1 of them (0.149 at block 4 for 0.1, 0.011 at block 3 for 0.01). The best known object has 0.0049, about 9 times short of 0.01 and 110 times short of 0.1.",
+   "status": "argued by hand, not checked",
+   "status_detail": "the step from the certificates to this table is argued, not proved, even by the track that made it; the figures were recomputed by one skeptic",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "most_that_survive": {
+     "2": 0,
+     "3": 0.071,
+     "4": 0.268,
+     "5": 0.671,
+     "6": 1.018,
+     "8": 1.717,
+     "16": 4.43,
+     "73": 23.8
+    },
+    "needed_for_0_1": {
+     "4": 0.149,
+     "5": 0.175,
+     "6": 0.196,
+     "8": 0.231,
+     "16": 0.32,
+     "73": 0.536
+    },
+    "needed_for_0_01": {
+     "3": 0.011,
+     "4": 0.014,
+     "5": 0.016,
+     "6": 0.018,
+     "8": 0.021,
+     "16": 0.028,
+     "73": 0.044
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/packing-capacity-and-rigidity.md",
+    "data/packing-capacity/tables.out",
+    "data/skeptic-checks/packing-capacity/vtables.out"
+   ],
+   "programs": [
+    "programs/packing-capacity/tables.py"
+   ],
+   "archive_entry": "M25"
+  },
+  {
+   "id": "frame-packing-two-arrays/25",
+   "statement": "'Counting packing by image frames is the sharpest count.'",
+   "status": "refuted",
+   "status_detail": "refuted by the capacity track's skeptic with an exact block-2 unit (one array, two scratch arrays, 3 moves) counted more sharply by labels (-1, tight) than by image frames (0)",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "vsharp.py's block-2 unit",
+   "evidence": [
+    "data/skeptic-checks/packing-capacity/vsharp.out"
+   ],
+   "programs": [
+    "programs/skeptic-checks/packing-capacity/vsharp.py"
+   ],
+   "archive_entry": "M25"
+  },
+  {
+   "id": "frame-packing-two-arrays/26",
+   "statement": "'The two-array table of the packing round left out 2 in 7 at block 6 (worth 0.301), which is open.'",
+   "status": "refuted",
+   "status_detail": "this correction by the capacity track's skeptic is itself mistaken: 2 in 7 at block 6 is excluded by the two-layer bound (every unit with two or more arrays needs at least W + m = 8 moves; upheld as Theorem T' on 14 October). Found while writing this section; the skeptic had taken the target from an out-of-date map",
+   "date": "2026-10-19",
+   "block": 6,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the two-layer bound (archive entry L4)",
+   "evidence": [
+    "README.md#5-how-much-one-paid-move-can-carry"
+   ],
+   "programs": [],
+   "archive_entry": "M25"
+  },
+  {
+   "id": "frame-packing-two-arrays/27",
+   "statement": "The frame game (the engine with its Pauli part dropped; terms are 2m x 2m binary matrices) is the whole problem: every engine unit gives a frame-game program, and one explicit rule completes every frame-game program to an engine unit with the same arrays and the same paid moves in the same order, right at every number of digit columns at every block, using one scratch array and no extra paid move.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic for each half); also checked by computer: 34 program runs on raw arrays (f = 1 to 8 at blocks 2 and 3, 1 to 6 at block 4) and exact identities at blocks 2 and 3",
+   "date": "2026-10-15",
+   "block": "every",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/frame-game-sandwich.md",
+    "proofs/frame-game-sandwich-skeptic.md",
+    "proofs/frame-game-completion.md",
+    "data/frame-game-completion/out_units_m3_P.txt",
+    "data/frame-game-completion/out_units_m4_P.txt"
+   ],
+   "programs": [
+    "programs/frame-game-completion/complete.py",
+    "programs/frame-game-completion/lift.py"
+   ],
+   "archive_entry": "M27"
+  },
+  {
+   "id": "frame-packing-two-arrays/28",
+   "statement": "At block 2 the completion rule's key property holds for all 10,800 products of the 720 frame-game elements with 15 generators, exactly in the engine's group algebra.",
+   "status": "checked by computer",
+   "status_detail": "the skeptic's own engine and lift; re-run for this revision with the same output",
+   "date": "2026-10-15",
+   "block": 2,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "products": 10800,
+    "elements": 720,
+    "generators": 15
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/skeptic-checks/frame-game-completion/out_vexh2.txt"
+   ],
+   "programs": [
+    "programs/skeptic-checks/frame-game-completion/vexh2.py"
+   ],
+   "archive_entry": "M27"
+  },
+  {
+   "id": "frame-packing-two-arrays/29",
+   "statement": "Results about two arrays without scratch (Corollary 2', Theorem A, Proposition D) do not transfer to the frame game, because the completion needs one scratch array; whether every frame-game program has a scratch-free completion is open.",
+   "status": "open",
+   "status_detail": "see open item 8",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/frame-game-completion.md"
+   ],
+   "programs": [],
+   "archive_entry": "M27"
+  },
+  {
+   "id": "frame-packing-two-arrays/30",
+   "statement": "Theorem C (heights): for any number of arrays, any scratch and any contents, if some height system puts all terms of every moved array at one height right after each move, the unit needs at least W*m moves. So every saver needs, for every height system, a paid move whose output straddles two heights ('no crossing, no saving').",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it; the skeptic rebuilt the test units in its own exact engine and all twelve of its predictions held",
+   "date": "2026-10-15",
+   "block": "every",
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/heights-theorem-c.md",
+    "data/heights/heightfilter.out"
+   ],
+   "programs": [
+    "programs/heights/heightfilter.py",
+    "programs/skeptic-checks/heights/vchain.py"
+   ],
+   "archive_entry": "L26"
+  },
+  {
+   "id": "frame-packing-two-arrays/31",
+   "statement": "What a two-array saver must do: hold two different terms of one input in one array at some moment (Corollary 2', Theorem A, Proposition D), pack in every choice of coordinates (Theorem 4.3, via Hu's two-commodity flow theorem), have packing that survives the readout, and, with single-term moves, use twists of which some combination carries the raw frame closer than m to the transformed frame (Theorem B, Corollary T0). A unit saving k moves needs irreducible packing P* >= k: 1 for 2 in 7 at block 4; 3 and 2 for 2 in 7 and 2 in 8 at block 5; 4, 3 and 2 for 2 in 8, 2 in 9 and 2 in 10 at block 6.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (one skeptic per theorem)",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {
+    "P_star_needed": {
+     "2 in 7, block 4": 1,
+     "2 in 7, block 5": 3,
+     "2 in 8, block 5": 2,
+     "2 in 8, block 6": 4,
+     "2 in 9, block 6": 3,
+     "2 in 10, block 6": 2,
+     "2 in 9, block 5": 1,
+     "2 in 11, block 6": 1
+    }
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/common-frame-accounting.md",
+    "proofs/ledger-for-every-unit.md",
+    "proofs/packing-capacity-and-rigidity.md",
+    "proofs/heights-theorem-c.md"
+   ],
+   "programs": [
+    "programs/heights/checks.py"
+   ],
+   "archive_entry": "L27"
+  },
+  {
+   "id": "frame-packing-two-arrays/32",
+   "statement": "Lemma M: with unlimited scratch a unit is exactly a growing module: start from the free mixtures of the inputs; each paid move adds the free mixtures of one moved vector; the unit is done when every transformed input lies in the module.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/heights-theorem-c.md"
+   ],
+   "programs": [],
+   "archive_entry": "L27"
+  },
+  {
+   "id": "frame-packing-two-arrays/33",
+   "statement": "'A change of input basis makes every unit common-frame' (Proposition S).",
+   "status": "refuted",
+   "status_detail": "refuted by the prove track itself: the exact unit SPLIT1 (one input, m + 1 moves) holds one input at two frames in every basis and every choice of coordinates; it wastes a move, so Proposition 6's cost form is untouched",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the exact unit SPLIT1",
+   "evidence": [
+    "proofs/heights-theorem-c.md",
+    "data/heights/checks.out"
+   ],
+   "programs": [
+    "programs/heights/checks.py"
+   ],
+   "archive_entry": "C26"
+  },
+  {
+   "id": "frame-packing-two-arrays/34",
+   "statement": "'The single-term argument extends to three arrays' (Proposition H3).",
+   "status": "refuted",
+   "status_detail": "refuted by the prove track itself: the exact unit HOLO3 (three arrays, 3m moves) keeps one term per input and has holonomy; Theorem C still covers it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the exact unit HOLO3",
+   "evidence": [
+    "proofs/heights-theorem-c.md",
+    "data/heights/checks.out"
+   ],
+   "programs": [
+    "programs/heights/checks.py"
+   ],
+   "archive_entry": "C26"
+  },
+  {
+   "id": "frame-packing-two-arrays/35",
+   "statement": "Packing-first two-array designs (both inputs share one paid move, junk repaired by landing stored arrays one at a time): none of 8,522 designs at 2 in 7 (block 4), 2 in 8 and 2 in 9 (block 5), 2 in 10 and 2 in 11 (block 6) and 3 in 10 (block 4) delivered all its outputs, nor did any of 1,130 at the negative controls.",
+   "status": "checked by computer",
+   "status_detail": "exact frame-game solves; one skeptic recounted every tally from the raw outputs; a negative result for one design family, not for the targets",
+   "date": "2026-10-15",
+   "block": [
+    4,
+    5,
+    6
+   ],
+   "games": [
+    "frame game"
+   ],
+   "figure": null,
+   "numbers": {
+    "designs_at_targets": 8522,
+    "designs_at_controls": 1130
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/frame-game/design-runs",
+    "data/skeptic-checks/frame-game/out_vtally.txt"
+   ],
+   "programs": [
+    "programs/frame-game/design.py",
+    "programs/frame-game/design_w.py",
+    "programs/frame-game/fpa.py",
+    "programs/skeptic-checks/frame-game/vtally.py"
+   ],
+   "archive_entry": "X44"
+  },
+  {
+   "id": "frame-packing-two-arrays/36",
+   "statement": "The position test refuses 71 % of the 5,271 production designs exactly, for every choice of coefficients; a numerical search over the coefficients of 341 of the rest found none that passes (evidence only).",
+   "status": "checked by computer",
+   "status_detail": "the exact refusals were recounted by one skeptic; the numerical part is evidence, not proof",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "frame game"
+   ],
+   "figure": null,
+   "numbers": {
+    "production_designs": 5271,
+    "refused_share": 0.71
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/frame-game/design-runs",
+    "data/skeptic-checks/frame-game/out_vpsilin_m4_s61.txt"
+   ],
+   "programs": [
+    "programs/frame-game/t_psilin.py",
+    "programs/frame-game/t_psibil.py"
+   ],
+   "archive_entry": "X44"
+  },
+  {
+   "id": "frame-packing-two-arrays/37",
+   "statement": "The packing round's 'closest design' (2 in 7 at block 4) passes the position test with special coefficients.",
+   "status": "refuted",
+   "status_detail": "refuted by the build track's skeptic: it fails exactly for every choice; the reported near-pass was a limit in which the shared move stopped packing and the readout coefficients grew without bound (best genuine residual 0.21)",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the skeptic's exact position test",
+   "evidence": [
+    "proofs/frame-game-sandwich-skeptic.md",
+    "data/skeptic-checks/frame-game/out_vhit.txt"
+   ],
+   "programs": [
+    "programs/skeptic-checks/frame-game/vhit.py",
+    "programs/skeptic-checks/frame-game/loadhit.py"
+   ],
+   "archive_entry": "C25"
+  },
+  {
+   "id": "frame-packing-two-arrays/38",
+   "statement": "Orbit designs (each repair adds a whole orbit of a free symmetry): of 2,007 designs (6,244 orbits) at 2 in 7 (block 4), 2 in 8 and 2 in 9 (block 5) and 3 in 10 (block 4), 1,723 are dead for every choice of scalars, 147 are refused at the drawn scalars, 137 are undecided and none delivered all its outputs; orbits multiply the junk (66 to 99 terms after two repairs, against 17 to 20 for single landings).",
+   "status": "checked by computer",
+   "status_detail": "exact screens and solves; one skeptic recounted every tally with its own frame game; negative for one design family",
+   "date": "2026-10-15",
+   "block": [
+    4,
+    5
+   ],
+   "games": [
+    "frame game"
+   ],
+   "figure": null,
+   "numbers": {
+    "designs": 2007,
+    "orbits": 6244,
+    "dead_every_scalar": 1723,
+    "refused_drawn": 147,
+    "undecided": 137,
+    "delivered": 0
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/orbit-designs/out_tally.txt",
+    "data/skeptic-checks/closed-patterns/out_v_tally.txt",
+    "data/orbit-designs/growth-runs"
+   ],
+   "programs": [
+    "programs/orbit-designs/orb.py",
+    "programs/orbit-designs/growth.py"
+   ],
+   "archive_entry": "X44"
+  },
+  {
+   "id": "frame-packing-two-arrays/39",
+   "statement": "'None of the orbit designs delivered even one output exactly' and 'the negative controls show the same mix of verdicts'.",
+   "status": "refuted",
+   "status_detail": "refuted as overstatements by the orbit track's skeptic: 519 of 4,584 target outputs were refused by no screen, and the controls were dead for every scalar in 60 % and 74 % of cases against 86 % at the targets",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the orbit track's skeptic",
+   "evidence": [
+    "proofs/closed-patterns-and-conjecture-tc.md"
+   ],
+   "programs": [],
+   "archive_entry": "C25"
+  },
+  {
+   "id": "frame-packing-two-arrays/40",
+   "statement": "Parity law: the order-3 control's top-closed pattern, with a free symmetry sigma fixing the raw and target frames, works exactly when the order of sigma is odd; the even-order cases pass the position test and are still impossible.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it; also checked by computer on 41 cases at blocks 3 to 5 with orders 2 to 31 (the skeptic checked 40 with its own code, re-run for this revision), no exception",
+   "date": "2026-10-15",
+   "block": [
+    3,
+    4,
+    5
+   ],
+   "games": [
+    "frame game"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/closed-patterns-and-conjecture-tc.md",
+    "data/orbit-designs/out_cal.txt",
+    "data/skeptic-checks/closed-patterns/out_v_lemma1.txt"
+   ],
+   "programs": [
+    "programs/orbit-designs/cal.py",
+    "programs/skeptic-checks/closed-patterns/v_lemma1.py"
+   ],
+   "archive_entry": "X44"
+  },
+  {
+   "id": "frame-packing-two-arrays/41",
+   "statement": "One shared pair gives one ratio: once two inputs start sharing an array, every top-closed array descended from that moment holds them in one fixed ratio, so no readout of such arrays separates the outputs; a second ratio costs the saving back in the two shapes analysed.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it (for the two shapes analysed)",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "frame game"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/closed-patterns-and-conjecture-tc.md"
+   ],
+   "programs": [],
+   "archive_entry": "N13"
+  },
+  {
+   "id": "frame-packing-two-arrays/42",
+   "statement": "The block-4 cube (a small exact piece of the block-4 frame game) has no single-term two-input 2 in 7: its cheapest single-term two-input program costs exactly 8 moves.",
+   "status": "checked by computer",
+   "status_detail": "exhaustive; one skeptic re-ran it independently with its own decider on all 107.0 million six-move states (1.44 million could still finish; no seventh move delivers both inputs)",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "single-term game (block-4 cube)"
+   ],
+   "figure": null,
+   "numbers": {
+    "six_move_states": 107003696,
+    "could_still_finish_approx": 1440000.0
+   },
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/single-term-game/run16",
+    "data/skeptic-checks/single-term-game/block4-cube-2in7"
+   ],
+   "programs": [
+    "programs/single-term-game/t_stg_sub.py",
+    "programs/skeptic-checks/single-term-game/vb4.py"
+   ],
+   "archive_entry": "X43"
+  },
+  {
+   "id": "frame-packing-two-arrays/43",
+   "statement": "No single-term two-input 2 in 5 exists in any of 19 small games with the target three steps away.",
+   "status": "checked by computer",
+   "status_detail": "exhaustive; repeated by one skeptic with its own decider",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "abstract frame games"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/single-term-game/run19",
+    "data/skeptic-checks/single-term-game/prop45_local.txt"
+   ],
+   "programs": [
+    "programs/single-term-game/t_stg_2m1.py",
+    "programs/skeptic-checks/single-term-game/vb4.py"
+   ],
+   "archive_entry": "X43"
+  },
+  {
+   "id": "frame-packing-two-arrays/44",
+   "statement": "The inequality 'highest level of input 1 + highest level of input 2 <= moves' held at every reachable state of the block-3 cube and Hamming game to 6 moves (80 million states), the block-4 cube to 6 moves (91 million) and the block-4 Hamming game to 5 moves (111 million); a skeptic's beam search in the block-4 Hamming game to 7 moves found no violation (not exhaustive).",
+   "status": "checked by computer",
+   "status_detail": "exhaustive to the depths stated, one program; the beam search is a search",
+   "date": "2026-10-15",
+   "block": [
+    3,
+    4
+   ],
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/single-term-game/run12",
+    "data/single-term-game/run13",
+    "data/single-term-game/run14",
+    "data/skeptic-checks/single-term-game/hamming-beam"
+   ],
+   "programs": [
+    "programs/single-term-game/t_stg_sub.py",
+    "programs/skeptic-checks/single-term-game/vbeam.py"
+   ],
+   "archive_entry": "X43"
+  },
+  {
+   "id": "frame-packing-two-arrays/45",
+   "statement": "'A multi-term 2 in 7 in the block-4 cube would be an engine unit.'",
+   "status": "refuted",
+   "status_detail": "refuted by the refute track's skeptic: the cube's symmetries do not lift to the engine's letters (no engine element acting as an apartment swap squares to the identity; all 16 lifts checked for each of three kinds of swap); such a unit would be a frame-game program, not directly an engine unit (with the completion rule it should lift to an engine unit with scratch; that combination has not been checked)",
+   "date": "2026-10-15",
+   "block": 4,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "vlift.py",
+   "evidence": [
+    "proofs/single-term-game-skeptic.md"
+   ],
+   "programs": [
+    "programs/skeptic-checks/single-term-game/vlift.py"
+   ],
+   "archive_entry": "C26"
+  },
+  {
+   "id": "frame-packing-two-arrays/46",
+   "statement": "ledger.py certifies a word only when the number of digit columns is 1 more than a multiple of 4: a three-line word it accepts fails at every even f.",
+   "status": "checked by computer",
+   "status_detail": "confirmed by a skeptic; re-run for this revision",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "data/heights/t_scalar.out"
+   ],
+   "programs": [
+    "programs/heights/t_scalar.py",
+    "programs/ledger/ledger.py"
+   ],
+   "archive_entry": "T18"
+  },
+  {
+   "id": "frame-packing-two-arrays/47",
+   "statement": "The 'one term per input' filter holds only for plain mixes without scratch; a two-array ledger.py word that reads one array twice is really a scratch word.",
+   "status": "argued by hand, not checked",
+   "status_detail": "an independent AI skeptic re-derived it and found no error; no person and no proof checker has checked it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "proofs/heights-theorem-c.md"
+   ],
+   "programs": [],
+   "archive_entry": "T18"
+  },
+  {
+   "id": "frame-packing-two-arrays/48",
+   "statement": "Exact screens for any candidate word, cheapest first: height filter, live packing counts, one input on two labels (two arrays, no scratch), position test at the drawn scalars, top-state count, layered screens, then the exact frame-game solve and lift.py; the linearised position test is blind to rigidity on orbit designs.",
+   "status": "argued by hand, not checked",
+   "status_detail": "each screen is an exact test that can only refuse; their soundness is argued and was upheld by the skeptics of the rounds that used them",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": null,
+   "evidence": [
+    "README.md#11-warnings-for-anyone-who-searches"
+   ],
+   "programs": [
+    "programs/heights/heightfilter.py",
+    "programs/orbit-designs/orb.py",
+    "programs/frame-game/fpa.py"
+   ],
+   "archive_entry": "T17"
+  },
+  {
+   "id": "frame-packing-two-arrays/49",
+   "statement": "'For common-frame designs, height systems exist exactly when every start frame is opposite every end frame' (as stated in the prove track's summary note).",
+   "status": "refuted",
+   "status_detail": "refuted by the prove track's skeptic: the plain schedule with twists (e, D1) is common-frame and has a crossing, yet its levels form a height system; the statement holds for heights built from one function through the coordinates, as the proof file states it",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the plain schedule with twists (e, D1)",
+   "evidence": [
+    "proofs/heights-theorem-c.md"
+   ],
+   "programs": [],
+   "archive_entry": "C26"
+  },
+  {
+   "id": "frame-packing-two-arrays/50",
+   "statement": "'Corollary T0 shows that a single-term saver needs at least two twists, combined.'",
+   "status": "refuted",
+   "status_detail": "an overstatement found by the prove track's skeptic: what is argued is that at least two different twists occur and that some combination of them carries the raw frame closer than m to the transformed frame; that combination may be a single twist",
+   "date": "2026-10-15",
+   "block": null,
+   "games": [
+    "engine"
+   ],
+   "figure": null,
+   "numbers": {},
+   "supersedes": [],
+   "superseded_by": null,
+   "refuted_by": "the prove track's skeptic",
+   "evidence": [
+    "proofs/heights-theorem-c.md"
+   ],
+   "programs": [],
+   "archive_entry": "C26"
+  }
+ ],
+ "open": [
+  {
+   "id": "frame-packing-two-arrays/open-1",
+   "question": "Proposition 6: no unit costs less than the cheapest common-frame design with the same number of arrays. For two arrays: no two-array unit saves.",
+   "worth": {
+    "2 in 7, block 4": 0.096,
+    "2 in 7, block 5": 0.222,
+    "2 in 8, block 5": 0.139,
+    "2 in 8, block 6": 0.226,
+    "2 in 9, block 6": 0.161,
+    "2 in 10, block 6": 0.102,
+    "2 in 9, block 5": 0.065,
+    "2 in 11, block 6": 0.049
+   },
+   "first_experiment": "A two-height version of Theorem C (two height functions combined by their maximum), tested against the calibration units of programs/heights/checks.py before attempting a proof.",
+   "programs": [
+    "programs/heights/heightfilter.py",
+    "programs/heights/checks.py"
+   ],
+   "archive_entry": "N12"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-2",
+   "question": "Conjecture T: two inputs, scratch and single-term moves need 2m moves (it holds at blocks 2 and 3, where the Lean-checked certificates exclude every two-array saver; argued by hand for free twists and for a single twist; open from block 4). Candidate invariants: Conjecture S and Conjecture Phi.",
+   "worth": null,
+   "first_experiment": "Test candidate invariants with programs/single-term-game/t_inv.py on every reachable state of the small games; in parallel, a compiled version of stg.py for the block-4 Hamming game at 6 to 7 moves and the block-5 cube (2 in 8, 0.139).",
+   "programs": [
+    "programs/single-term-game/t_inv.py",
+    "programs/single-term-game/stg.py"
+   ],
+   "archive_entry": "N12"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-3",
+   "question": "The smallest open configuration: two inputs, scratch, single-term moves, two kinds of twist (one trivial, one crossing).",
+   "worth": 0.096,
+   "first_experiment": "Search single-term 2 in 7 at block 4 restricted to these two twist classes, with composed pairs and releases through single terms, in the full block-4 frame game.",
+   "programs": [
+    "programs/single-term-game/stg.py"
+   ],
+   "archive_entry": "N12"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-4",
+   "question": "Conjecture TC: every top-closed two-array program needs 2m moves.",
+   "worth": null,
+   "first_experiment": "Build closed patterns from exact relations among paid moves (orthogonal moves commute; by the braid relation three moves can equal one), aimed at junk below the target frame, screened in the frame game with the position test at the drawn scalars, the top-state count and the layered screens before the exact solve.",
+   "programs": [
+    "programs/orbit-designs/orb.py",
+    "programs/frame-game/fpa.py"
+   ],
+   "archive_entry": "N13"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-5",
+   "question": "The refund question for two arrays: is irreducible live packing always paid back?",
+   "worth": null,
+   "first_experiment": "Compute P* and the refund for every exact two-array unit at blocks 2 to 4 that ledger.py and fpa.py can enumerate, including the order-3 controls, and look for a quantity that pays P* back in every case.",
+   "programs": [
+    "programs/ledger/ledger.py",
+    "programs/packing-capacity/vflow.py"
+   ],
+   "archive_entry": "M25"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-6",
+   "question": "Must every saver be common-frame? Are our Lean savers common-frame in some coordinates?",
+   "worth": null,
+   "first_experiment": "Replay one call of the E8 word (tools/certificate/) with fm_ledger.py, which tracks every register's frame classes, and test whether one choice of reference per input puts every register on a single class at every step (new code; ledger.py's find_coherent_gauge does this only at blocks 1 to 4).",
+   "programs": [
+    "programs/packing-measurement/fm_ledger.py",
+    "programs/ledger/ledger.py"
+   ],
+   "archive_entry": "M23"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-7",
+   "question": "Can re-framing raise the deficit, not only cut the number of arrays?",
+   "worth": null,
+   "first_experiment": "Take the smallest re-framed exact unit ledger.py can hold at block 3 or 4 and measure whether re-framing changes P - B - 2D - Z.",
+   "programs": [
+    "programs/ledger/ledger.py"
+   ],
+   "archive_entry": "M23"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-8",
+   "question": "Does every frame-game program have a completion without scratch?",
+   "worth": null,
+   "first_experiment": "At block 2, enumerate small frame-game programs with fpa.py and solve directly for scratch-free free coefficients.",
+   "programs": [
+    "programs/frame-game/fpa.py",
+    "programs/frame-game-completion/lift.py"
+   ],
+   "archive_entry": "M27"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-9",
+   "question": "A multi-term 2 in 7 in the block-4 cube, with scratch (a frame-game program).",
+   "worth": 0.096,
+   "first_experiment": "Run fpa.py's module form restricted to the cube's frames, with the exact screens first; a find would be a frame-game program, to be written out with lift.py and checked in all four column-count blocks.",
+   "programs": [
+    "programs/frame-game/fpa.py"
+   ],
+   "archive_entry": "N12"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-10",
+   "question": "Can a common-frame unit with three or more arrays save at blocks 3 to 8 (coding gain beyond two arrays)?",
+   "worth": null,
+   "first_experiment": "A small exact search on the block-3 frame graph (135 frames, 3 to 6 sessions); our certificates cap the gain there at 15/14.",
+   "programs": [
+    "programs/common-frame-accounting/frames.py"
+   ],
+   "archive_entry": "L28"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-11",
+   "question": "The full-sharing family U_m (4 in 15, 8 in 31, 16 in 63): nothing proved excludes it; it would need source labels whose dimension grows with m.",
+   "worth": null,
+   "first_experiment": "At block 4, test whether any choice of plane labels for 4 in 15 passes the median bound and the cut condition, using cutconst.py's cut machinery.",
+   "programs": [
+    "programs/ledger/cutconst.py"
+   ],
+   "archive_entry": "M26"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-12",
+   "question": "'2 in m + 2 is impossible' (would close 2 in 7 at block 5 and 2 in 8 at block 6).",
+   "worth": {
+    "2 in 7, block 5": 0.222,
+    "2 in 8, block 6": 0.226
+   },
+   "first_experiment": "Write the third-layer argument in the two small games where the top two levels alone admit a 2 in 5 (D_7, and S_4 with a free subgroup of order 3), and check it against the exact single-term solver. The numerical session behind this lead has not been checked by a skeptic.",
+   "programs": [
+    "programs/single-term-game/toylab.py",
+    "programs/single-term-game/stg.py"
+   ],
+   "archive_entry": "N12"
+  },
+  {
+   "id": "frame-packing-two-arrays/open-13",
+   "question": "Measurement: replay one whole unit exactly, and count useful packing (moves carrying two or more labels that are each later delivered).",
+   "worth": null,
+   "first_experiment": "Replay the E8 unit (1,263 arrays at block 45, 5 calls) exactly; count useful packing in OpenAI's unit first, whose contents are exact in oa_ledger.py.",
+   "programs": [
+    "programs/packing-measurement/fm_ledger.py",
+    "programs/packing-measurement/oa_ledger.py"
+   ],
+   "archive_entry": "M24"
+  }
+ ],
+ "programs": [
+  {
+   "path": "programs/ledger/ledger.py",
+   "language": "python",
+   "shows": "exact engine at blocks 1 to 4 with the full ledger and coordinate tests (certifies only f = 1 mod 4)",
+   "command": "imported",
+   "run_from": "programs/ledger",
+   "time": "",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/ledger/t_exhaust.py",
+   "language": "python",
+   "shows": "the ledger identity on every word up to a length",
+   "command": "python3 t_exhaust.py 2 2 4",
+   "run_from": "programs/ledger",
+   "time": "6 minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/ledger/t_known.py",
+   "language": "python",
+   "shows": "the ledger on 34 named exact units",
+   "command": "python3 t_known.py 1",
+   "run_from": "programs/ledger",
+   "time": "30 seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/ledger/cutconst.py",
+   "language": "python",
+   "shows": "cut constants of the frame graph",
+   "command": "python3 cutconst.py 2",
+   "run_from": "programs/ledger",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/common-frame-accounting/frames.py",
+   "language": "python",
+   "shows": "frame geometry from actual matrices at blocks 1 to 3",
+   "command": "python3 frames.py",
+   "run_from": "programs/common-frame-accounting",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/heights/heightfilter.py",
+   "language": "python",
+   "shows": "Theorem C as an exact filter for any word",
+   "command": "python3 heightfilter.py",
+   "run_from": "programs/heights",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/heights/checks.py",
+   "language": "python",
+   "shows": "the named units (SPLIT1, HOLO3, C6O3) in the true model",
+   "command": "python3 checks.py",
+   "run_from": "programs/heights",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/heights/t_scalar.py",
+   "language": "python",
+   "shows": "the ledger.py f mod 4 warning",
+   "command": "python3 t_scalar.py",
+   "run_from": "programs/heights",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/packing-measurement/fm_ledger.py",
+   "language": "python",
+   "shows": "packing ledger of one call of a local word",
+   "command": "python3 fm_ledger.py ../../../../tools/certificate/gcert1-e8-r783.json.gz E8r783 init=F1,F2,F3 none ext-each gates gates-one",
+   "run_from": "programs/packing-measurement",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": []
+  },
+  {
+   "path": "programs/packing-measurement/oa_ledger.py",
+   "language": "python",
+   "shows": "packing ledger of OpenAI's network at small h",
+   "command": "python3 oa_ledger.py 6 7 8 9",
+   "run_from": "programs/packing-measurement",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": []
+  },
+  {
+   "path": "programs/packing-capacity/geom.py",
+   "language": "python",
+   "shows": "what one paid move can serve; rigidity tables",
+   "command": "python3 geom.py 3 300",
+   "run_from": "programs/packing-capacity",
+   "time": "10 seconds",
+   "memory": "0.45 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/packing-capacity/vflow.py",
+   "language": "python",
+   "shows": "Theorem A on actual units, with P*",
+   "command": "python3 vflow.py 2",
+   "run_from": "programs/packing-capacity",
+   "time": "minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy",
+    "scipy"
+   ]
+  },
+  {
+   "path": "programs/frame-game/fpa.py",
+   "language": "python",
+   "shows": "the frame game: exact solver, position test, landing charts",
+   "command": "imported",
+   "run_from": "programs/frame-game",
+   "time": "",
+   "memory": "under 1 GB",
+   "needs": []
+  },
+  {
+   "path": "programs/frame-game/design.py",
+   "language": "python",
+   "shows": "packing-first two-array designs",
+   "command": "python3 design.py 4 1500 12 61 psilin",
+   "run_from": "programs/frame-game",
+   "time": "hours",
+   "memory": "under 1 GB",
+   "needs": []
+  },
+  {
+   "path": "programs/frame-game-completion/lift.py",
+   "language": "python",
+   "shows": "frame-game program to explicit engine word, with evaluators",
+   "command": "python3 t_units.py 2 8 6",
+   "run_from": "programs/frame-game-completion",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/frame-game-completion/t_formal.py",
+   "language": "python",
+   "shows": "lifted words are exact identities at block 2",
+   "command": "python3 t_formal.py",
+   "run_from": "programs/frame-game-completion",
+   "time": "17 seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/orbit-designs/orb.py",
+   "language": "python",
+   "shows": "orbit designs with exact screens",
+   "command": "python3 orb.py two 4 1000 4 151",
+   "run_from": "programs/orbit-designs",
+   "time": "hours",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/orbit-designs/cal.py",
+   "language": "python",
+   "shows": "calibration and the parity law",
+   "command": "python3 cal.py",
+   "run_from": "programs/orbit-designs",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/single-term-game/stg.py",
+   "language": "python",
+   "shows": "exact single-term two-input game solver",
+   "command": "python3 t_stg_sub.py B4:0 7 3000000 4/0/6 two",
+   "run_from": "programs/single-term-game",
+   "time": "about 10 minutes per part",
+   "memory": "not measured; ran on a Colab machine",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/single-term-game/t_inv.py",
+   "language": "python",
+   "shows": "candidate invariants for Conjecture T on every reachable state",
+   "command": "python3 t_inv.py S4Z2:0:6 B3:0:6",
+   "run_from": "programs/single-term-game",
+   "time": "minutes",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/skeptic-checks/single-term-game/vb4.py",
+   "language": "python",
+   "shows": "independent decider for single-term 2 in D",
+   "command": "python3 vb4.py B4 7 4 0 6",
+   "run_from": "programs/skeptic-checks/single-term-game",
+   "time": "about 10 minutes per part",
+   "memory": "not measured; ran on a Colab machine",
+   "needs": []
+  },
+  {
+   "path": "programs/skeptic-checks/frame-game-completion/vexh2.py",
+   "language": "python",
+   "shows": "exhaustive block-2 check of the completion rule",
+   "command": "python3 vexh2.py",
+   "run_from": "programs/skeptic-checks/frame-game-completion",
+   "time": "40 seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/skeptic-checks/closed-patterns/v_lemma1.py",
+   "language": "python",
+   "shows": "independent check of the parity law",
+   "command": "python3 v_lemma1.py",
+   "run_from": "programs/skeptic-checks/closed-patterns",
+   "time": "20 seconds",
+   "memory": "under 1 GB",
+   "needs": []
+  },
+  {
+   "path": "programs/skeptic-checks/frame-game/vhit.py",
+   "language": "python",
+   "shows": "the build track's skeptic rebuilds the 'closest design' from its pickle with its own frame-game code and shows it fails the position test for every choice of coefficients",
+   "command": "python3 vhit.py",
+   "run_from": "programs/skeptic-checks/frame-game",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": [
+    "numpy"
+   ]
+  },
+  {
+   "path": "programs/skeptic-checks/frame-game/vtally.py",
+   "language": "python",
+   "shows": "independent recount of the packing-first design tallies from the raw outputs",
+   "command": "python3 vtally.py",
+   "run_from": "programs/skeptic-checks/frame-game",
+   "time": "seconds",
+   "memory": "under 1 GB",
+   "needs": []
+  }
+ ],
+ "rerun_2026_10_19": "40 programs (43 runs) re-run from a clean copy on a Mac; every shipped output reproduced line for line apart from timing lines, warning paths, one added summary line (t_strict.py) and one line repeated in the shipped vhit.py output; list in programs/README.md",
+ "not_shipped": [
+  {
+   "what": "U8X word (the U8 circuit with exit frames), gcert/1",
+   "sha256": "62fbff5c7e789c896deaa4b65d22d0ebb9374dd0f2326cdf9c332c34dba495d0"
+  },
+  {
+   "what": "X4X word (Kothe's #799 X4 word), gcert/1",
+   "sha256": "f046713d7ab279d38d4d0aa083b931ccd23d8a197fcbc18a7e557de7a847c78d"
+  },
+  {
+   "what": "T74g word (T74 line, gauge44-566), gcert/1",
+   "sha256": "1981cb2f93ff98aa9ce76e1ff16a7ba5c0c941bf489df25c99e0d8322ef91233"
+  }
+ ],
+ "inputs_in_repository": [
+  {
+   "path": "tools/certificate/gcert1-e8-r783.json.gz",
+   "sha256": "4b92f00fc7454b9b15e6d71a3b05062792eacca0a0ca4efee46f87827d57c8aa"
+  },
+  {
+   "path": "tools/certificate/gcert1-p11-pr193.json.gz",
+   "sha256": "15251deb0c11e0504d7b297c9786818888a93f08b92b03c6c122784b70488633"
+  }
+ ]
+}

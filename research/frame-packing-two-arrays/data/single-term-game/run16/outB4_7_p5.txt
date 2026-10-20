@@ -1,0 +1,8 @@
+== B4:0: frames 16, degrees [4], m 4, twists 384, free 24, target orbit 1
+B4:0 M=1 states=2 max(L1+L2)=1 (I) holds  [0.3s]
+B4:0 M=2 states=18 max(L1+L2)=2 (I) holds  [0.5s]
+B4:0 M=3 states=297 max(L1+L2)=3 (I) holds  [6.7s]
+B4:0 M=4 states=8366 max(L1+L2)=4 (I) holds  [99.5s]
+   split: expanding part 5/6 of layer 4 (1394 states)
+B4:0 M=5 states=131832 max(L1+L2)=5 (I) holds  [378.0s]
+B4:0 M=6 raw successors=15663493 (I) holds goal no | M=7: 197651 states passed the filter, goal-in-one no  [456.1s]

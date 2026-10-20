@@ -1,0 +1,30 @@
+{
+ "join_dims": {
+  "1->8": 1,
+  "4->8": 5,
+  "6->8": 180,
+  "7->8": 253
+ },
+ "outside_kinds": {
+  "end dim 7: partners outside own frame: h+x": 206,
+  "end dim 6: partners outside own frame: h+x": 82,
+  "end dim 6: partners outside own frame: h": 98,
+  "end dim 7: partners outside own frame: h": 46,
+  "end dim 4: partners outside own frame: h+x": 5,
+  "end dim 7: partners outside own frame: x": 1,
+  "end dim 1: partners outside own frame: h+x": 1
+ },
+ "outside_partner_count": {
+  "1": 2,
+  "2": 22,
+  "3": 27,
+  "4": 2,
+  "5": 21,
+  "6": 90,
+  "7": 93,
+  "8": 99,
+  "9": 72,
+  "10": 6,
+  "11": 5
+ }
+}

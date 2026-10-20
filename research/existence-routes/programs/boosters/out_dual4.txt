@@ -1,0 +1,7 @@
+m=3: generators ('C27k3x9', 'D3x1', 'plain'): theta in [0.01, 0.71] (71 grid points)
+m=3: generators ('B3x1', 'D3x1', 'plain'): theta in [0.72, 0.99] (28 grid points)
+m=4: generators ('C4k3x1', 'Dist4S2x1', 'Dist16S0-7x4', 'plain'): theta in [0.01, 0.14] (14 grid points)
+m=4: generators ('C4k2x1', 'C4k3x1', 'Dist4S2x1', 'plain'): theta in [0.15, 0.44] (30 grid points)
+m=4: generators ('C4k2x1', 'Dist4S2x1', 'proj3to4x1', 'plain'): theta in [0.45, 0.65] (21 grid points)
+m=4: generators ('C4k2x1', 'proj3to4x1', 'proj3to5x1', 'plain'): theta in [0.66, 0.68] (3 grid points)
+m=4: generators ('C4k2x1', 'hook5k4x1', 'proj3to5x1', 'plain'): theta in [0.69, 0.99] (31 grid points)

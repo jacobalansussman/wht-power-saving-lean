@@ -1,0 +1,6 @@
+   (slot: waited 0s; heavy 1, avail 47707 MB)
+=== words START 18:44:09
+=== words END rc=0 wall=929s maxrss_kb=9572312 18:59:38
+info: Work/PWGen/S5Pair.lean:46:0: 'PWG.same_price' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9353 jobs).
+WORDS rc=0

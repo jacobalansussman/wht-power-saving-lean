@@ -1,0 +1,18 @@
+⚠ [8930/8930] Replayed Work.MixedCost.Close
+warning: Work/MixedCost/Close.lean:169:33: Variable name `d` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _d
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Work/MixedCost/Close.lean:170:33: Variable name `d` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _d
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Work/MixedCost/Close.lean:259:0: 'OAI.PowerSaving.MCost.recurse_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Close.lean:260:0: 'OAI.PowerSaving.MCost.recurse_gen' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Close.lean:261:0: 'OAI.PowerSaving.MCost.recurse_list_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/MixedCost/Close.lean:262:0: 'OAI.PowerSaving.MCost.recurse_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8930 jobs).

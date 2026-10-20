@@ -1,0 +1,81 @@
+{
+  "admission_result_sha256": "94ca0daa0c77ea90ff91d99bd83b70066936b47815c393754e3a1a802d4f4120",
+  "comparison_pr": 2969,
+  "explicit_retained_reuse": false,
+  "fresh_retained_bootstrap": true,
+  "gain": "4998757898408639167/1000000000000000000000000",
+  "kappa": "17290339826465135177169999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+  "native_receipt_sha256": "050b3ce7be85ff287df2c02db827d9f7ae6419c252a5bf704582ce3bf24c7b7f",
+  "pr2917_source_manifest_sha256": "98d57c82a1c7318be3c330c3b66897844d57232f0aaeaea88fb4bebd0a1bedf1",
+  "scope": "Conditional finite supplier/outer result; inherited all-size theorem obligations remain.",
+  "source_manifest_sha256": "751b46364742cbb947f7db07c130ff09085b38b52c520d3b47f2dadc1e21ba80",
+  "stages": [
+    {
+      "exit_code": 0,
+      "log_sha256": "6bd8df30779863897e48441608240db6a7e3fcbd0754511e44f854f3a5c462a6",
+      "seconds": 0.7415345389999857,
+      "stage": "export-pr2894"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "5054ca0e621ee654b8944ca38571904dba39986a08945975e9e64093d61b3128",
+      "seconds": 1.665163391000533,
+      "stage": "export-pr2833"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "4a1625fdd9a947187583e67492c492f309e28669082f2e6f2aa97b5da345ea29",
+      "seconds": 2422.879693077997,
+      "stage": "fresh-retained-bootstrap"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "f2bbb6462b3f5bb8a6415bb33c0c35355353b13343ddb90961660f7473caa5a2",
+      "seconds": 4.3188785720012675,
+      "stage": "four-kernel-stage"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "2eb7601c48840a39c58eb838886aed00a531349b259f0bbc3ea6421376b8ea3c",
+      "seconds": 4.132124801999453,
+      "stage": "preload-stage"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "d80d8494c48816e3acf662db00cc0077a888b82392d736826f73beb1c4248299",
+      "seconds": 2.64725638100208,
+      "stage": "parent-paired-stage"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "61cc77beeae833d7473b5c5338b176b150f95f6652a888c0307f080674cfde35",
+      "seconds": 2.8800566159989103,
+      "stage": "paired-extension-stage"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "06150c3f42489b14e981b90ac0e594e7e32bfc6ec4a98f3551cf53b6d18acd36",
+      "seconds": 4.024246319997474,
+      "stage": "rank7-overlay-stage"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "d54a39b29d77d4cdc5085e8b60ef47ade846aa8998d0b628fcdbcc43e6266ce4",
+      "seconds": 1.139923197999451,
+      "stage": "derive-closed-adapters"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "57a95a5df95aa0574b48d59d71a6e5e84d017172e51b8627d8713c52a7134206",
+      "seconds": 241.11533910399885,
+      "stage": "fresh-current-native"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "37584a0aed98b08f491b676ba0e4914518027f556495b1ae4e8a9a123d360b4f",
+      "seconds": 2002.8153356609982,
+      "stage": "complete-admission"
+    }
+  ],
+  "status": "PASS_RANK7_JOINT_ENDFRAMES_COMPLETE_REPLAY"
+}

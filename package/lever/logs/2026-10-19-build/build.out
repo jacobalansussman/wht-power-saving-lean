@@ -1,0 +1,20 @@
+copy of ours/T done in 134s
+=== nobuild START 18:05:05
+=== nobuild END rc=0 wall=59s maxrss_kb=980136 18:06:04
+All targets up-to-date (9327 jobs).
+TREE OK /content/work/i-final/T (11G)
+INSTALL L3945-extra: 385 new, 0 identical (skipped), from /content/work/i-final/in/engine; hashes /content/work/i-final/in-L3945-extra.sha256
+INSTALL L3945: 20 new, 0 identical (skipped), from /content/work/i-final/in/final-L3945-run/stage; hashes /content/work/i-final/in-L3945.sha256
+=== lightA START 18:06:07
+=== lightA END rc=0 wall=885s maxrss_kb=1332964 18:20:52
+✔ [164/165] Built Work.XHostT.Data.S5.P1 (15s)
+✔ [165/165] Built Work.XHostT.Data.S5.P0 (11s)
+Build completed successfully (165 jobs).
+   (slot: waited 0s; heavy 0, avail 50496 MB)
+phase B LEAN_NUM_THREADS=3
+=== engine START 18:20:52
+=== engine END rc=0 wall=1085s maxrss_kb=9569208 18:38:57
+info: Work/FourierL3945/Axioms.lean:3:0: 'OAI.PowerSaving.convolution_mainL3945' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL3945/Axioms.lean:4:0: 'OAI.PowerSaving.RAM.hillsL3945_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9626 jobs).
+PHASE B rc=0

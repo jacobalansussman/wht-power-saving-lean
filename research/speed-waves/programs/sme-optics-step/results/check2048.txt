@@ -1,0 +1,7 @@
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=check SW=32 col radices: 4 8 8 8
+CHECK fft2 SME vs pocketfft (all 4194304 bins): max rel 1.249e-15  rel RMS 1.012e-15  PASS
+CHECK fft2 PFFFT-d rows+transpose vs pocketfft: max rel 9.067e-16  rel RMS 6.727e-16  PASS
+CHECK fft2 vs double-double DFT on 8 bins: SME rel RMS 7.323e-16 (max 6.982e-16)  pocketfft rel RMS 4.250e-16 (max 4.348e-16)  ratio 1.72  PASS
+CHECK propagation step SME (output read at -n) vs pocketfft ifft2(fft2(U)*H): max rel 2.074e-15  rel RMS 1.786e-15  PASS
+CHECK propagation step PFFFT-d (natural order) vs pocketfft: max rel 7.687e-16  rel RMS 6.929e-16  PASS

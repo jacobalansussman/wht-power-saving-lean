@@ -1,0 +1,14 @@
+rhoW == g^(x)5 restricted to W (3 random basis columns), dir e1: True
+rhoW == g^(x)5 restricted to W (3 random basis columns), random monomial: True
+rhoW == g^(x)5 restricted to W (3 random basis columns), random dense: True
+rhoW(a b) == rhoW(a) rhoW(b): True
+control: Hadamard on bit 0 keeps N? False   dir e1 keeps N? False
+Toffoli keeps N: True
+CS keeps N: True
+CCZ keeps N: True
+f(dir z), z=1..7: [80, 80, 80, 80, 80, 80, 80] [21s]
+plain schedule W=2: Phi_end = 448 (Theorem R end count needs >= 448); increments [80, 64, 80, 80, 64, 80]; violations []
+trial 0: Phi_end 268; rank-1 incs [0, 80, 0, 80]; rank-2 incs [0, 108]; free/mix steps 8; violations []  [45s]
+trial 1: Phi_end 560; rank-1 incs [80, 80, 80, 80, 0]; rank-2 incs [144, 66, 30]; free/mix steps 6; violations []  [110s]
+trial 2: Phi_end 448; rank-1 incs [80, 80, 0]; rank-2 incs [144, 144]; free/mix steps 9; violations []  [144s]
+SUMMARY seed 7: paid rank-1 steps 12 (max raise 80), rank-2 steps 7 (max raise 144), free/mix steps 23, violations 0

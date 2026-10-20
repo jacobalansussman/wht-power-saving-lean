@@ -1,0 +1,8 @@
+Re-run for this revision, 19 October 2026, on an Apple M4 Mac mini at background priority: cc -O2 -o check_m0 check_m0.c; ./check_m0 cert_m4_M0.txt
+
+Mon Oct 19 14:32:31 EDT 2026
+cert: m=4 k=8 alpha=0 p=2147483629 (prime: yes) I^2=-1: yes, 5412 distinct well-formed rows/cols: yes
+det mod p of the 5412 x 5412 minor of M_0 = 1797789153
+RESULT: PASS  -> rank M_0 over Q(i) >= 5412
+     3337.91 real      3055.95 user        34.01 sys
+(peak memory 235 MB)

@@ -1,0 +1,37 @@
+INSTALL L3945Hhyp: 20 new, 0 identical (skipped), from /content/work/bB-data/in/hyp-L3945H/stage; hashes /content/work/bB-data/in-L3945Hhyp.sha256
+   (slot: waited 0s; heavy 1, avail 46815 MB)
+   LEAN_NUM_THREADS=2
+=== build START 19:08:02
+=== build END rc=0 wall=118s maxrss_kb=6786484 19:10:00
+Build completed successfully (9332 jobs).
+   9.1s Work.FourierL3945HNeg.UniformFourierChallenge
+   8.8s Work.FourierL3945H.UniformFourierChallenge
+   8.3s Work.FourierL3945H.Asymptotics
+   8.1s Work.FourierL3945H.SynchronizedAlgorithm
+   7.4s Work.FourierL3945H.WorkingPreparation
+   7.3s Work.FourierL3945H.Goal
+   7.1s Work.L3945H.EngineOfGeomW
+   6.9s Work.FourierL3945H.WorkingTransform
+=== nobuild START 19:10:00
+=== nobuild END rc=0 wall=6s maxrss_kb=951068 19:10:06
+All targets up-to-date (9332 jobs).
+BUILD L3945Hhyp OK
+   (slot: waited 0s; heavy 0, avail 47851 MB)
+=== axhyp START 19:10:06
+=== axhyp END rc=0 wall=7s maxrss_kb=6592824 19:10:13
+'OAI.PowerSaving.MX.L3945H.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945H.engine_L3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945H.alphaL3945H_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+@OAI.PowerSaving.transform_mainL3945H : ∀ [hE_L3945H : Fact OAI.PowerSaving.MX.L3945H.EngineStmt],
+  OAI.PowerSaving.DFTGoalL3945H
+@OAI.PowerSaving.convolution_mainL3945H : ∀ [hE_L3945H : Fact OAI.PowerSaving.MX.L3945H.EngineStmt],
+  OAI.PowerSaving.ConvGoalL3945H
+AXIOMS hyp L3945H: standard only
+info: Work/L3945H/EngineOfGeomW.lean:43:0: 'OAI.PowerSaving.MX.L3945H.engine_of_geomW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/L3945H/Stmt.lean:49:0: 'OAI.PowerSaving.MX.L3945H.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+HYP L3945H OK

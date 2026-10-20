@@ -1,0 +1,20 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 11:28:49
+[heavy.sh] got slot heavy-2 11:29:37
+=== notW0 s2 9 11:29:38
+unit s2 v 111 K 9 gauge clique (0, 64, 65, 72, 73, 108, 116, 118) vars 90519 clauses 313526 fit pairs 5851
+RESULT UNSAT (every decoder with K totals has W >= W0) 57.4 s
+exit 0
+=== notW0 s2 10 11:30:37
+unit s2 v 111 K 10 gauge clique (0, 64, 65, 72, 73, 108, 116, 118) vars 101076 clauses 349755 fit pairs 5851
+RESULT SAT (a decoder whose read span misses W0) 4.5 s
+copyfloor check: fits True, star 78, pairing 76, per-total star [8, 8, 8, 8, 8, 8, 6, 8, 8, 8]
+exit 0
+=== notW0 word 9 11:30:46
+unit word v 111 K 9 gauge clique (0, 64, 65, 73, 75, 81, 112, 116) vars 90378 clauses 313030 fit pairs 5851
+RESULT UNSAT (every decoder with K totals has W >= W0) 1086.6 s
+exit 0
+=== notW0 word 10 11:48:55
+unit word v 111 K 10 gauge clique (0, 64, 65, 73, 75, 81, 112, 116) vars 100919 clauses 349203 fit pairs 5851
+RESULT SAT (a decoder whose read span misses W0) 6.8 s
+copyfloor check: fits True, star 79, pairing 79, per-total star [8, 8, 8, 8, 8, 8, 8, 8, 7, 8]
+exit 0

@@ -1,0 +1,35 @@
+== A5Z3 class 0: frames 20, degree [6], m 3, twists 60, free 3
+A5Z3/c0 M=1 states=4 max(L1+L2)=1 (I) holds  [0.0s]
+A5Z3/c0 M=2 states=59 max(L1+L2)=2 (I) holds  [0.0s]
+A5Z3/c0 M=3 states=1020 max(L1+L2)=3 (I) holds  [0.2s]
+A5Z3/c0 M=4 raw successors=44256 (I) holds goal no | M=5: 13355 states passed the filter, goal-in-one no  [4.7s]
+== A5Z5 class 0: frames 12, degree [5], m 3, twists 60, free 5
+A5Z5/c0 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+A5Z5/c0 M=2 states=25 max(L1+L2)=2 (I) holds  [0.0s]
+A5Z5/c0 M=3 states=392 max(L1+L2)=3 (I) holds  [0.2s]
+A5Z5/c0 M=4 raw successors=18160 (I) holds goal no | M=5: 3151 states passed the filter, goal-in-one no  [1.4s]
+== A5Z5 class 1: frames 12, degree [5], m 3, twists 60, free 5
+A5Z5/c1 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+A5Z5/c1 M=2 states=25 max(L1+L2)=2 (I) holds  [0.0s]
+A5Z5/c1 M=3 states=392 max(L1+L2)=3 (I) holds  [0.2s]
+A5Z5/c1 M=4 raw successors=18138 (I) holds goal no | M=5: 3149 states passed the filter, goal-in-one no  [1.4s]
+== A5V4 class 1: frames 15, degree [4], m 3, twists 60, free 4
+A5V4/c1 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+A5V4/c1 M=2 states=25 max(L1+L2)=2 (I) holds  [0.0s]
+A5V4/c1 M=3 states=226 max(L1+L2)=3 (I) holds  [0.1s]
+A5V4/c1 M=4 raw successors=7134 (I) holds goal no | M=5: 1716 states passed the filter, goal-in-one no  [0.6s]
+== A5V4 class 2: frames 15, degree [4], m 3, twists 60, free 4
+A5V4/c2 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+A5V4/c2 M=2 states=25 max(L1+L2)=2 (I) holds  [0.0s]
+A5V4/c2 M=3 states=226 max(L1+L2)=3 (I) holds  [0.1s]
+A5V4/c2 M=4 raw successors=7119 (I) holds goal no | M=5: 1712 states passed the filter, goal-in-one no  [0.6s]
+== A5V4 class 3: frames 15, degree [4], m 3, twists 60, free 4
+A5V4/c3 M=1 states=2 max(L1+L2)=1 (I) holds  [0.0s]
+A5V4/c3 M=2 states=25 max(L1+L2)=2 (I) holds  [0.0s]
+A5V4/c3 M=3 states=226 max(L1+L2)=3 (I) holds  [0.1s]
+A5V4/c3 M=4 raw successors=7141 (I) holds goal no | M=5: 1720 states passed the filter, goal-in-one no  [0.6s]
+== A5Z2 class 2: frames 30, degree [4], m 3, twists 60, free 2
+A5Z2/c2 M=1 states=4 max(L1+L2)=1 (I) holds  [0.0s]
+A5Z2/c2 M=2 states=40 max(L1+L2)=2 (I) holds  [0.0s]
+A5Z2/c2 M=3 states=379 max(L1+L2)=3 (I) holds  [0.1s]
+A5Z2/c2 M=4 raw successors=8467 (I) holds goal no | M=5: 3182 states passed the filter, goal-in-one no  [0.9s]

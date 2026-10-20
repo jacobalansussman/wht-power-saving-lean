@@ -1,0 +1,14 @@
+13 Oct 2026, Colab #1, v-c-pack.
+18:54:34 UTC: my first script (vcp.sh, tmux -L vcpack) ran, as root, in /content/work/cpack/lean/complex588:
+  lake build --no-build Work.FourierC588.Main Work.FourierC588.UniformFourierChallenge Work.FourierC588Neg.UniformFourierChallenge Work.GCert.Data.C588Controls Work.FourierC588.Axioms
+Its log (nobuild.log of that run, since overwritten by the second run) said:
+  info: mathlib: URL has changed; deleting '/content/work/cpack/lean/complex588/.lake/packages/mathlib' and cloning again
+  info: mathlib: cloning https://github.com/leanprover-community/mathlib4.git
+Probable cause: c-pack's cp-cmp-all.sh had run chown -R 65534:65534 on .lake; git run as root refuses the
+65534-owned repo (dubious ownership), so lake could not read the remote URL and took it for a change.
+About 1 min later I killed tmux -L vcpack. The clone (a read-only fetch from GitHub) was stopped and nothing was written to GitHub.
+18:55:41-19:08:56 UTC: restore.sh (tmux -L vcprest) ran cp -a of /content/work/shea/lean/complex588/.lake/packages/mathlib
+(root-owned, untouched since 14:32, the source of c-pack's original cp -a), then chown -R 65534:65534.
+Result: 137471 files and 8548 oleans in both, git rev d13f23b, origin URL unchanged (restore.log).
+All later lake calls ran in a private mount namespace with /content/work/cpack bind-mounted read-only (ro.sh)
+and GIT_CONFIG safe.directory='*'. lake build --no-build then said "All targets up-to-date (9278 jobs)".

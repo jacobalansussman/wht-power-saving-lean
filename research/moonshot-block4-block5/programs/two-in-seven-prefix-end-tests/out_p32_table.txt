@@ -1,0 +1,33 @@
+prefix                 brief      P-test, pool only (round 2)  widest test, every end move              P-test, every end move (Lemma P)
+anyb_G3S_s61 #2        open       zero                         excluded (crit0, exact)                  -
+anyb_G3S_s61 #4        open       undecided                    excluded (dead, exact)                   -
+anyb_G3S_s61 #11       open       zero                         open                                     -
+anyb_G3S_s61 #13       open       zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #17       open       zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #18       open       zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #22       open       zero                         open                                     -
+cov2_G3S #2            open       zero                         excluded (crit0, exact)                  -
+cov2_G3S #4            open       undecided                    excluded (dead, exact)                   -
+w2_G3A #0              open       zero                         excluded (dead, exact)                   -
+anyb_STG2_s71 #18      pool-only  zero                         open                                     pool-suffices (exact; 6 classes tested = 2 pool + 4 threat)
+anyb_STG2_s71 #33      pool-only  zero                         excluded (dead, exact)                   pool-suffices (two primes; 0 threat classes)
+anyb_STG2_s71 #60      pool-only  zero                         excluded (dead, exact)                   -
+anyb_G3C_s72 #17       pool-only  zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #0        pool-only  zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #1        pool-only  zero                         excluded (crit0, exact)                  -
+anyb_G3S_s61 #6        pool-only  zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #7        pool-only  zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #8        pool-only  zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #9        pool-only  zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #10       pool-only  zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #20       pool-only  zero                         excluded (dead, exact)                   -
+anyb_G3S_s61 #21       pool-only  zero                         excluded (crit0, exact)                  -
+w3_STG2 #14            pool-only  zero                         excluded (dead, exact)                   -
+w3_STG2 #17            pool-only  zero                         open                                     -
+cov2_G3S #0            pool-only  zero                         excluded (dead, exact)                   -
+cov2_G3S #1            pool-only  zero                         excluded (crit0, exact)                  -
+cov2_G3S #7            pool-only  zero                         excluded (dead, exact)                   -
+cov2_G3S #8            pool-only  zero                         excluded (dead, exact)                   -
+cov2_STG2 #3           pool-only  zero                         excluded (dead, exact)                   -
+try_STG2 #0            pool-only  zero                         open                                     pool-suffices (exact; 5 classes tested = 2 pool + 3 threat)
+w2_G3A #2              pool-only  zero                         excluded (dead, exact)                   -

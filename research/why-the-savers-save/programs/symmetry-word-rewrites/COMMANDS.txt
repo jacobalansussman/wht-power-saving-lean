@@ -1,0 +1,37 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+t-egraph (track 3: superoptimise the k8 word), 13 Oct 2026.  VP = ../../../wht33/fatlabels/venv/bin/python3 (scipy 1.13.1 / HiGHS).
+Word: K8-FULL-WORD.json.gz = ../../helpers/k8-pairs/dl1042/slots/local/FULL-WORD.json.gz (#1018 seven-slot k8 word, #1042 selected),
+      file sha256 49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289.
+Audit: audit_local_py39.py = hub research/gauge44-slots-t16/independent/audit_local.py with int.bit_count -> bin().count (copied from ../../helpers/pm-build).
+Pricer: pricer.py (m-anatomy, exact hub engine); price_local.py = #1042 control (144 calls x local + idle; mass change to/from rank-48 idle).
+
+(0) control:   python3 -I audit_local_py39.py --word K8-FULL-WORD.json.gz --output audit-control.json      (PASS, profile {1:2412,2:418,3:432,4:142,5:82,8:8})
+               python3 -I price_local.py '{"1":2412,"2":418,"3":432,"4":142,"5":82,"8":8}'                (kappa 0.001672188119205421, b 0.001674989015937672328468: exact)
+(1) survey:    python3 -I survey.py ; VP pq.py (P/Q intervals: 3672 of 5413 climbed positions forced, P=Q)
+(2) frames at fixed order, exact:  VP ilp.py  (pool) and  VP ilp_wide.py  (every subspace in [P,Q]; all gaps <= 3) -> optimum 20241.3597 = the word's own frames
+(3) run moves with propagation:    python3 -I search.py ; python3 -I why.py   (7 of 6236 legal, all worse; blocked by target hyperplanes / source ports)
+(4) decoupled lower bound, fixed order:  VP lb.py   (20169.81 vs 20241.36; same number of climbs per register, only splits differ)
+(5) single commuting reorders, all:      VP scan1.py 1 7000   (6342 moves: 4935 neutral, 35 worse, 1372 illegal, 0 better)
+(6) read-the-twin (clean-row twins):     VP twinscreen.py     (1034 dyadic options: 280 neutral, 754 frame-illegal, 0 better)
+(7) re-association (2 reads -> 1):       VP pairscreen.py     (106 options: 27 not movable, 79 frame-illegal)
+(8) sink to free cleanup / hoist to free ():  VP sink.py ; VP sink2.py ; VP hoist.py  (10 sinkable, 1182 hoistable = already at (); no change; W-sink10 audits PASS)
+(9) stochastic search (under a memory cap):  ./run_sa.sh 30 (v1, chain-adjacent swaps), ./run_sa2.sh 35 (window moves incl. across the cut), ./run_sa3.sh 40 (contamination-guided)
+(10) validation of walked words:   VP walk_audit.py 7 150 W-walk150.json.gz ; python3 -I audit_local_py39.py --word W-walk150.json.gz --output audit-walk150.json  (PASS)
+                                   W-sa2-9.json.gz (A grew 3451 -> 3460: gates crossed the cut) audit-sa2-9.json (PASS)
+(11) exhaustive small sub-words:   VP exhaust.py L MAXTRACES [starts]   (all trace classes of a window, local MILP each)
+(12) optimistic reorder gauge:     VP lbdep.py  (dependency-only intervals; 1200 cost units, not attainable: it ignores that one of two commuting gates must go first)
+(13) global re-listing (any linear extension of the dependency DAG by priority, exact frames):  VP relist.py
+(14) label-space (order-free) search: VP lsearch.py SEED MIN ; VP lsearch2.py SEED MIN (with repair closure); W-ls-0 audited PASS
+(15) label-space exact MILP over all commuting reorders within sections:
+       VP lmilp.py 600                    (word's 1004-frame vocabulary: optimal = word, 0.2 s)
+       WIDE=3 VP lmilp.py 900             (+ every subspace where the dependency interval gap <= 3: optimal = word, 16 s)
+       ./run_lmilp4.sh 1500 (under a memory cap)    (gap <= 4: optimal = word, 452 s, peak 1.5 GB)
+       ./run_lmilp5.sh 2700 (under a memory cap)    (gap <= 5: stopped in a HiGHS restart after ~3500 s; bound 20239.70 vs word 20241.36)
+       WORD=../../helpers/k8-twin/words/W-k8-574-575-580-581.json.gz VP lmilp.py 100   (stacked pair word: optimal = word)
+(16) exhaustive accumulation orders: VP slotperm.py 112,...,223 7   (203 runs, 564 legal permutations, 0 better)
+(17) frame re-optimisation of any word: VP reframe_word.py WORD [OUT]   (k8-twin pair words: already optimal)
+(18) ceilings priced: VP lbprof.py ; python3 -I price_local.py '<profile>'   (lbprof.json)

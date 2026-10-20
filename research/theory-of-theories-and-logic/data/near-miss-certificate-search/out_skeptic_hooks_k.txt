@@ -1,0 +1,24 @@
+(a,b,I) = (1,2,[1]): dim M' = 120 (expect C(n,a)C(n,b)/n = 120), dim N cap M' = 15
+  j=1: 36 classes (max 4), psi = 7 (x16 = 112), phi = 7.000000 (x16 = 112.000), s = 1.000000, kept >= 1.000e+00, dropped <= 0.0e+00, unitarity err (classes <= 2000) 1.1e-16 (0s)
+  j=3: 3 classes (max 64), psi = 13 (x16 = 208), phi = 12.250000 (x16 = 196.000), s = 0.942308, kept >= 9.354e-01, dropped <= 2.2e-16, unitarity err (classes <= 2000) 1.7e-15 (0s)
+RESULT (1,2,[1]): m = 4: psi1 = 112, psi3 = 208, ratio3 = 1.857143, spec3 = 1.750000
+(a,b,I) = (1,4,[1]): dim M' = 1820 (expect C(n,a)C(n,b)/n = 1820), dim N cap M' = 455
+  j=1: 266 classes (max 16), psi = 182 (x16 = 2912), phi = 182.000000 (x16 = 2912.000), s = 1.000000, kept >= 1.000e+00, dropped <= 1.2e-16, unitarity err (classes <= 2000) 5.6e-16 (0s)
+  j=3: 5 classes (max 784), psi = 385 (x16 = 6160), phi = 318.500000 (x16 = 5096.000), s = 0.827273, kept >= 3.536e-01, dropped <= 6.4e-16, unitarity err (classes <= 2000) 2.1e-15 (0s)
+RESULT (1,4,[1]): m = 4: psi1 = 2912, psi3 = 6160, ratio3 = 2.115385, spec3 = 1.750000
+(a,b,I) = (1,6,[1]): dim M' = 8008 (expect C(n,a)C(n,b)/n = 8008), dim N cap M' = 3003
+  j=1: 784 classes (max 64), psi = 1001 (x16 = 16016), phi = 1001.000000 (x16 = 16016.000), s = 1.000000, kept >= 1.000e+00, dropped <= 3.0e-16, unitarity err (classes <= 2000) 8.9e-16 (0s)
+  j=3: 7 classes (max 3136), psi = 2379 (x16 = 38064), phi = 1751.750000 (x16 = 28028.000), s = 0.736339, kept >= 3.536e-01, dropped <= 1.3e-15, unitarity err (classes <= 2000) 5.3e-15 (3s)
+RESULT (1,6,[1]): m = 4: psi1 = 16016, psi3 = 38064, ratio3 = 2.376623, spec3 = 1.750000
+(a,b,I) = (1,10,[1]): dim M' = 8008 (expect C(n,a)C(n,b)/n = 8008), dim N cap M' = 5005
+  j=1: 784 classes (max 64), psi = 1001 (x16 = 16016), phi = 1001.000000 (x16 = 16016.000), s = 1.000000, kept >= 1.000e+00, dropped <= 3.5e-16, unitarity err (classes <= 2000) 1.7e-15 (0s)
+  j=3: 7 classes (max 3136), psi = 2379 (x16 = 38064), phi = 1751.750000 (x16 = 28028.000), s = 0.736339, kept >= 3.536e-01, dropped <= 1.4e-15, unitarity err (classes <= 2000) 6.7e-15 (4s)
+RESULT (1,10,[1]): m = 4: psi1 = 16016, psi3 = 38064, ratio3 = 2.376623, spec3 = 1.750000
+(a,b,I) = (1,12,[1]): dim M' = 1820 (expect C(n,a)C(n,b)/n = 1820), dim N cap M' = 1365
+  j=1: 266 classes (max 16), psi = 182 (x16 = 2912), phi = 182.000000 (x16 = 2912.000), s = 1.000000, kept >= 1.000e+00, dropped <= 2.2e-16, unitarity err (classes <= 2000) 1.8e-15 (0s)
+  j=3: 5 classes (max 784), psi = 385 (x16 = 6160), phi = 318.500000 (x16 = 5096.000), s = 0.827273, kept >= 3.536e-01, dropped <= 6.7e-16, unitarity err (classes <= 2000) 7.0e-15 (1s)
+RESULT (1,12,[1]): m = 4: psi1 = 2912, psi3 = 6160, ratio3 = 2.115385, spec3 = 1.750000
+(a,b,I) = (1,14,[1]): dim M' = 120 (expect C(n,a)C(n,b)/n = 120), dim N cap M' = 105
+  j=1: 36 classes (max 4), psi = 7 (x16 = 112), phi = 7.000000 (x16 = 112.000), s = 1.000000, kept >= 1.000e+00, dropped <= 0.0e+00, unitarity err (classes <= 2000) 2.2e-15 (0s)
+  j=3: 3 classes (max 64), psi = 13 (x16 = 208), phi = 12.250000 (x16 = 196.000), s = 0.942308, kept >= 9.354e-01, dropped <= 3.3e-16, unitarity err (classes <= 2000) 7.2e-15 (0s)
+RESULT (1,14,[1]): m = 4: psi1 = 112, psi3 = 208, ratio3 = 1.857143, spec3 = 1.750000

@@ -1,0 +1,37 @@
+D7all:0 M=4 successors 136 (I) holds goal 0 | M=5: tested 66, goal-in-one 0 [0s]
+real 0.03
+D7all:1 M=4 successors 136 (I) holds goal 0 | M=5: tested 66, goal-in-one 0 [0s]
+real 0.02
+D7all:2 M=4 successors 136 (I) holds goal 0 | M=5: tested 66, goal-in-one 0 [0s]
+real 0.02
+S4Z2:0 M=4 successors 6647 (I) holds goal 0 | M=5: tested 2150, goal-in-one 0 [0s]
+real 0.17
+S4Z3all:1 M=4 successors 1732 (I) holds goal 0 | M=5: tested 718, goal-in-one 0 [0s]
+real 0.06
+A5Z2:2 M=4 successors 9564 (I) holds goal 0 | M=5: tested 3734, goal-in-one 0 [0s]
+real 0.33
+A5Z3:0 M=4 successors 53365 (I) holds goal 0 | M=5: tested 17088, goal-in-one 0 [1s]
+real 1.46
+A5Z5:0 M=4 successors 19903 (I) holds goal 0 | M=5: tested 3874, goal-in-one 0 [0s]
+real 0.48
+A5Z5:1 M=4 successors 19903 (I) holds goal 0 | M=5: tested 3874, goal-in-one 0 [0s]
+real 0.48
+A5V4:1 M=4 successors 7259 (I) holds goal 0 | M=5: tested 1996, goal-in-one 0 [0s]
+real 0.23
+A5V4:2 M=4 successors 7259 (I) holds goal 0 | M=5: tested 1996, goal-in-one 0 [0s]
+real 0.24
+A5V4:3 M=4 successors 7259 (I) holds goal 0 | M=5: tested 1996, goal-in-one 0 [0s]
+real 0.24
+S5D5:0 M=4 successors 39516 (I) holds goal 0 | M=5: tested 10738, goal-in-one 0 [1s]
+real 1.40
+J63:0 M=4 successors 1836273 (I) holds goal 0 | M=5: tested 123792, goal-in-one 0 [32s]
+real 185.82
+J63:1 M=4 successors 1835772 (I) holds goal 0 | M=5: tested 139152, goal-in-one 0 [33s]
+real 186.17
+A5V4:1 M=5 successors 92418 (I) holds goal 0 | M=6: tested 41038, goal-in-one 45 [4s]
+A5Z5:0 M=5 successors 384652 (I) holds goal 0 | M=6: tested 123863, goal-in-one 262 [13s]
+S4Z2:0 M=5 successors 62490 (I) holds goal 0 | M=6: tested 31754, goal-in-one 70 [2s]
+A5Z2:2 M=5 successors 114674 (I) holds goal 0 | M=6: tested 64234, goal-in-one 28 [5s]
+D7all:2 M=5 successors 349 (I) holds goal 0 | M=6: tested 245, goal-in-one 6 [0s]
+S5S3:0 M=4 successors 66643 (I) holds goal 0 | M=5: tested 17894, goal-in-one 0 [1s]
+real 1.95

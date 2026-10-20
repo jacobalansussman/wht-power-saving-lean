@@ -1,0 +1,27 @@
+m=3 n=7 W=2 dirs=plain: 8 distinct conjugate subgroups
+  (deletion failures, tight forms, max clique, verdict) = (0, 7, 12, 'not-excluded') x 6  bound Wn = 14
+  (deletion failures, tight forms, max clique, verdict) = (0, 0, 0, 'not-excluded') x 2  bound Wn = 14
+m=4 n=3 W=4 dirs=plain: 56 distinct conjugate subgroups
+  (deletion failures, tight forms, max clique, verdict) = (0, 70, 12, 'not-excluded') x 36  bound Wn = 12
+  (deletion failures, tight forms, max clique, verdict) = (0, 37, 12, 'not-excluded') x 8  bound Wn = 12
+  (deletion failures, tight forms, max clique, verdict) = (0, 28, 12, 'not-excluded') x 6  bound Wn = 12
+  (deletion failures, tight forms, max clique, verdict) = (0, 96, 8, 'not-excluded') x 6  bound Wn = 12
+m=4 n=5 W=4 dirs=plain: 336 distinct conjugate subgroups
+  (deletion failures, tight forms, max clique, verdict) = (0, 10, 20, 'not-excluded') x 168  bound Wn = 20
+  (deletion failures, tight forms, max clique, verdict) = (0, 51, 20, 'not-excluded') x 72  bound Wn = 20
+  (deletion failures, tight forms, max clique, verdict) = (0, 30, 16, 'not-excluded') x 36  bound Wn = 20
+  (deletion failures, tight forms, max clique, verdict) = (0, 25, 16, 'not-excluded') x 30  bound Wn = 20
+  (deletion failures, tight forms, max clique, verdict) = (0, 5, 20, 'not-excluded') x 24  bound Wn = 20
+  (deletion failures, tight forms, max clique, verdict) = (0, 160, 16, 'not-excluded') x 6  bound Wn = 20
+m=4 n=15 W=4 dirs=plain: 336 distinct conjugate subgroups
+  (deletion failures, tight forms, max clique, verdict) = (0, 0, 0, 'not-excluded') x 336  bound Wn = 60
+m=4 n=3 W=3 dirs=plain: 56 distinct conjugate subgroups
+  (deletion failures, tight forms, max clique, verdict) = (0, 70, 9, 'not-excluded') x 36  bound Wn = 9
+  (deletion failures, tight forms, max clique, verdict) = (0, 37, 9, 'not-excluded') x 8  bound Wn = 9
+  (deletion failures, tight forms, max clique, verdict) = (0, 28, 9, 'not-excluded') x 6  bound Wn = 9
+  (deletion failures, tight forms, max clique, verdict) = (0, 96, 6, 'not-excluded') x 6  bound Wn = 9
+m=4 n=3 W=1 dirs=plain: 56 distinct conjugate subgroups
+  (deletion failures, tight forms, max clique, verdict) = (0, 70, 3, 'not-excluded') x 36  bound Wn = 3
+  (deletion failures, tight forms, max clique, verdict) = (0, 37, 3, 'not-excluded') x 8  bound Wn = 3
+  (deletion failures, tight forms, max clique, verdict) = (0, 28, 3, 'not-excluded') x 6  bound Wn = 3
+  (deletion failures, tight forms, max clique, verdict) = (0, 96, 2, 'not-excluded') x 6  bound Wn = 3

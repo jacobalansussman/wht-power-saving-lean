@@ -1,0 +1,12 @@
+free8 restart 0 iters 20 residual 5.849e-12  rank(B) 8  naturality defect 3.65e-13 (0 = B = D1 Gram D2 test passes)
+free8 restart 1 iters 21 residual 1.769e-12  rank(B) 8  naturality defect 1.40e-13 (0 = B = D1 Gram D2 test passes)
+free8 restart 2 iters 22 residual 3.471e-12  rank(B) 8  naturality defect 2.72e-13 (0 = B = D1 Gram D2 test passes)
+BEST free8 1.769e-12
+k8special restart 0 iters 400 residual 6.642e+00  rank(B) 8  naturality defect 2.62e-01 (0 = B = D1 Gram D2 test passes)
+k8special restart 1 iters 400 residual 6.636e+00  rank(B) 8  naturality defect 2.62e-01 (0 = B = D1 Gram D2 test passes)
+k8special restart 2 iters 400 residual 6.644e+00  rank(B) 8  naturality defect 2.62e-01 (0 = B = D1 Gram D2 test passes)
+BEST k8special 6.636e+00
+k8c60 restart 0 iters 400 residual 7.201e+00  rank(B) 8  naturality defect 2.67e-01 (0 = B = D1 Gram D2 test passes)
+k8c60 restart 1 iters 400 residual 7.165e+00  rank(B) 8  naturality defect 3.62e-01 (0 = B = D1 Gram D2 test passes)
+k8c60 restart 2 iters 400 residual 7.201e+00  rank(B) 8  naturality defect 2.67e-01 (0 = B = D1 Gram D2 test passes)
+BEST k8c60 7.165e+00

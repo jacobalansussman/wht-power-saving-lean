@@ -1,0 +1,29 @@
+{
+ "port_span_rank": 9,
+ "readers_per_total": [
+  56,
+  56,
+  56,
+  56,
+  56,
+  56,
+  56,
+  56
+ ],
+ "reader_graph_components": 1,
+ "x_in_B": 112,
+ "violating_gates": 0,
+ "slot_classes": {
+  "y-only": 399,
+  "free": 105,
+  "crossing": 73,
+  "x-only": 39
+ },
+ "span_by_class": {
+  "y-only": 2889,
+  "free": 889,
+  "crossing": 657,
+  "x-only": 351
+ },
+ "direct_xy_gates": 0
+}

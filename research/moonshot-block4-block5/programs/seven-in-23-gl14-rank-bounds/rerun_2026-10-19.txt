@@ -1,0 +1,93 @@
+[pair] p a/chi 0: dim Z' = 12; type 0 (d 1, m 4, n 1), forced-zero types [1]: dim Phi(Omega') = 2, dim Phi(K') = 2, delta = 0; need delta <= m n = 4
+   singular values of Phi(K') around the rank: 1.0e+00 1.0e+00 2.8e-14 9.3e-15
+   singular values of Phi(Omega') around the rank: 1.0e+00 1.0e+00 2.8e-14 9.7e-15
+   dim P cap (copy 0 alone) = 0
+   dim P cap (copy 1 alone) = 0
+   dim P cap (copy 2 alone) = 0
+   dim P cap (copy 3 alone) = 0
+[pair] p a/chi 0: dim Z' = 12; type 2 (d 7, m 3, n 1), forced-zero types [1]: dim Phi(Omega') = 13, dim Phi(K') = 13, delta = 0; need delta <= m n = 3
+   singular values of Phi(K') around the rank: 5.8e-01 5.8e-01 5.8e-01 1.3e-14 9.3e-15 8.1e-15
+   singular values of Phi(Omega') around the rank: 6.0e-01 6.0e-01 6.0e-01 1.3e-14 9.6e-15 8.3e-15
+   dim P cap (copy 0 alone) = 3
+   dim P cap (copy 1 alone) = 3
+   dim P cap (copy 2 alone) = 3
+[pair] p a/chi 0: dim Z' = 12; type 3 (d 14, m 2, n 2), forced-zero types [1]: dim Phi(Omega') = 22, dim Phi(K') = 17, delta = 5; need delta <= m n = 4
+   singular values of Phi(K') around the rank: 7.1e-01 7.1e-01 7.1e-01 3.0e-14 2.4e-14 2.0e-14
+   singular values of Phi(Omega') around the rank: 2.3e-01 2.3e-01 2.3e-01 2.8e-14 2.2e-14 1.7e-14
+   dim P cap (copy 0 alone) = 3
+   dim P cap (copy 1 alone) = 3
+[pair] p a/chi 0: dim Z' = 12; type 4 (d 7, m 2, n 1), forced-zero types [1]: dim Phi(Omega') = 11, dim Phi(K') = 10, delta = 1; need delta <= m n = 2
+   singular values of Phi(K') around the rank: 1.0e+00 1.0e+00 1.0e+00 8.3e-15 3.7e-15 3.1e-15
+   singular values of Phi(Omega') around the rank: 1.0e+00 1.0e+00 5.0e-01 8.6e-15 3.7e-15 2.9e-15
+   dim P cap (copy 0 alone) = 3
+   dim P cap (copy 1 alone) = 3
+[pair] p a/chi 0: dim Z' = 12; type 5 (d 7, m 2, n 1), forced-zero types [1]: dim Phi(Omega') = 6, dim Phi(K') = 6, delta = 0; need delta <= m n = 2
+   singular values of Phi(K') around the rank: 1.0e+00 1.0e+00 1.0e+00 2.3e-14 1.9e-14 1.6e-14
+   singular values of Phi(Omega') around the rank: 1.0e+00 1.0e+00 1.0e+00 2.4e-14 1.9e-14 1.6e-14
+   dim P cap (copy 0 alone) = 3
+   dim P cap (copy 1 alone) = 3
+[pair] p a/chi 0: dim Z' = 12; type 6 (d 14, m 1, n 2), forced-zero types [1]: dim Phi(Omega') = 8, dim Phi(K') = 6, delta = 2; need delta <= m n = 2
+   singular values of Phi(K') around the rank: 1.0e+00 1.0e+00 1.0e+00 2.4e-14 2.0e-14 1.4e-14
+   singular values of Phi(Omega') around the rank: 1.0e+00 4.1e-01 4.1e-01 2.0e-14 1.9e-14 1.3e-14
+   dim P cap (copy 0 alone) = 6
+[pair] p a/chi 0: dim Z' = 12; type 7 (d 7, m 2, n 1), forced-zero types [1]: dim Phi(Omega') = 6, dim Phi(K') = 6, delta = 0; need delta <= m n = 2
+   singular values of Phi(K') around the rank: 1.0e+00 1.0e+00 1.0e+00 3.8e-14 2.4e-14 1.7e-14
+   singular values of Phi(Omega') around the rank: 1.0e+00 1.0e+00 1.0e+00 3.9e-14 2.4e-14 1.8e-14
+   dim P cap (copy 0 alone) = 3
+   dim P cap (copy 1 alone) = 3
+[pair] p a/chi 0: dim Z' = 12; type 8 (d 14, m 1, n 2), forced-zero types [1]: dim Phi(Omega') = 8, dim Phi(K') = 6, delta = 2; need delta <= m n = 2
+   singular values of Phi(K') around the rank: 1.0e+00 1.0e+00 1.0e+00 2.4e-14 1.9e-14 1.4e-14
+   singular values of Phi(Omega') around the rank: 1.0e+00 4.1e-01 4.1e-01 1.8e-14 1.6e-14 1.4e-14
+   dim P cap (copy 0 alone) = 6
+[pair] p a/chi 0: dim Z' = 12; type 9 (d 7, m 2, n 1), forced-zero types [1]: dim Phi(Omega') = 11, dim Phi(K') = 10, delta = 1; need delta <= m n = 2
+   singular values of Phi(K') around the rank: 1.0e+00 1.0e+00 1.0e+00 1.1e-14 9.2e-15 6.8e-15
+   singular values of Phi(Omega') around the rank: 1.0e+00 1.0e+00 5.0e-01 1.1e-14 9.4e-15 6.7e-15
+   dim P cap (copy 0 alone) = 3
+   dim P cap (copy 1 alone) = 3
+[pair] p a/chi 0: dim Z' = 12; type 10 (d 84, m 1, n 12), forced-zero types [1]: dim Phi(Omega') = 66, dim Phi(K') = 60, delta = 6; need delta <= m n = 12
+   singular values of Phi(K') around the rank: 7.1e-01 7.1e-01 7.1e-01 3.6e-13 2.1e-13 1.8e-13
+   singular values of Phi(Omega') around the rank: 3.8e-01 3.8e-01 3.8e-01 3.4e-13 1.8e-13 1.6e-13
+   dim P cap (copy 0 alone) = 60
+[pair] p a/chi 0: dim Z' = 12; type 11 (d 84, m 1, n 12), forced-zero types [1]: dim Phi(Omega') = 66, dim Phi(K') = 60, delta = 6; need delta <= m n = 12
+   singular values of Phi(K') around the rank: 7.1e-01 7.1e-01 7.1e-01 4.4e-13 2.4e-13 2.3e-13
+   singular values of Phi(Omega') around the rank: 3.8e-01 3.8e-01 3.8e-01 3.9e-13 2.2e-13 2.0e-13
+   dim P cap (copy 0 alone) = 60
+[pair] p a/chi 0: dim Z' = 12; type 12 (d 42, m 1, n 6), forced-zero types [1]: dim Phi(Omega') = 21, dim Phi(K') = 18, delta = 3; need delta <= m n = 6
+   singular values of Phi(K') around the rank: 1.0e+00 1.0e+00 1.0e+00 2.6e-13 2.3e-13 1.9e-13
+   singular values of Phi(Omega') around the rank: 7.1e-01 7.1e-01 7.1e-01 2.5e-13 2.2e-13 1.9e-13
+   dim P cap (copy 0 alone) = 18
+[pair] p a/chi 0: dim Z' = 12; type 13 (d 21, m 1, n 3), forced-zero types [1]: dim Phi(Omega') = 18, dim Phi(K') = 15, delta = 3; need delta <= m n = 3
+   singular values of Phi(K') around the rank: 7.1e-01 7.1e-01 7.1e-01 3.1e-14 2.1e-14 2.0e-14
+   singular values of Phi(Omega') around the rank: 3.1e-01 3.1e-01 3.1e-01 2.7e-14 2.0e-14 9.2e-15
+   dim P cap (copy 0 alone) = 15
+[pair] p a/chi 0: dim Z' = 12; type 14 (d 7, m 1, n 1), forced-zero types [1]: dim Phi(Omega') = 4, dim Phi(K') = 3, delta = 1; need delta <= m n = 1
+   singular values of Phi(K') around the rank: 1.0e+00 1.0e+00 1.0e+00 2.5e-14 1.9e-14 1.6e-14
+   singular values of Phi(Omega') around the rank: 1.0e+00 1.0e+00 5.0e-01 2.4e-14 1.8e-14 1.5e-14
+   dim P cap (copy 0 alone) = 3
+[pair] p a/chi 0: dim Z' = 12; type 15 (d 7, m 1, n 1), forced-zero types [1]: dim Phi(Omega') = 4, dim Phi(K') = 3, delta = 1; need delta <= m n = 1
+   singular values of Phi(K') around the rank: 1.0e+00 1.0e+00 1.0e+00 1.8e-14 1.2e-14 1.1e-14
+   singular values of Phi(Omega') around the rank: 1.0e+00 1.0e+00 5.0e-01 1.8e-14 1.2e-14 9.2e-15
+   dim P cap (copy 0 alone) = 3
+[pair] p a/chi 0: dim Z' = 12; type 16 (d 8, m 1, n 2), forced-zero types [1]: dim Phi(Omega') = 2, dim Phi(K') = 0, delta = 2; need delta <= m n = 2
+   singular values of Phi(K') around the rank: 9.2e-15 7.8e-15 4.8e-15
+   singular values of Phi(Omega') around the rank: 7.1e-01 7.1e-01 7.1e-15 5.7e-15 4.4e-15
+   dim P cap (copy 0 alone) = 0
+[pair] SUMMARY p a/chi 0 d4: dim Z' = 12; types violating delta <= m n (=> r = dim Z' impossible): [3]; JOINT-COPY BOUND r <= dim Z' - max(delta - m n) = 11
+[one65] type 1 (d 6, m 5); dim A 20, dim P 16, quotient q = 14, dim A/P = 4
+  start 0: relative residual 5.000e-01; singular values of [M(v); A/P] 1.4e+00 1.2e+00 1.2e+00 1.0e+00 3.2e-15 2.3e-15 1.0e-15 5.8e-16 4.2e-16
+  start 1: relative residual 5.000e-01; singular values of [M(v); A/P] 1.4e+00 1.2e+00 1.2e+00 1.0e+00 3.2e-15 2.4e-15 1.1e-15 5.4e-16 3.8e-16
+  start 2: relative residual 5.000e-01; singular values of [M(v); A/P] 1.4e+00 1.2e+00 1.2e+00 1.0e+00 3.1e-15 2.4e-15 1.1e-15 6.2e-16 4.4e-16
+  start 3: relative residual 5.000e-01; singular values of [M(v); A/P] 1.4e+00 1.2e+00 1.2e+00 1.0e+00 3.2e-15 2.3e-15 1.0e-15 5.6e-16 4.5e-16
+  start 4: relative residual 5.000e-01; singular values of [M(v); A/P] 1.4e+00 1.2e+00 1.2e+00 1.0e+00 3.2e-15 2.4e-15 8.9e-16 7.0e-16 4.5e-16
+[one65] best relative residual over 20 starts: 5.000e-01
+[one65] rank of M(v) = dim of (v (x) C^5 + P)/P for 20 random v: [3]; singular values (one v): 2.7e+00 2.6e+00 2.6e+00 1.7e-15 1.2e-15
+[one65] => the single-type condition needs dim >= dim A/P = 4; max over v is the generic value above
+[one65] type 1 (d 6, m 5); dim A 26, dim P 24, quotient q = 6, dim A/P = 2
+  start 0: relative residual 3.236e-15; singular values of [M(v); A/P] 1.2e+00 1.2e+00 3.3e-15 1.3e-15 7.4e-16 2.8e-16
+  start 1: relative residual 5.039e-15; singular values of [M(v); A/P] 1.0e+00 1.0e+00 1.1e-14 9.3e-15 6.2e-16 2.2e-17
+  start 2: relative residual 2.511e-02; singular values of [M(v); A/P] 1.0e+00 1.0e+00 8.7e-02 8.7e-02 4.5e-16 5.4e-17
+  start 3: relative residual 3.810e-03; singular values of [M(v); A/P] 1.0e+00 1.0e+00 9.0e-03 9.0e-03 4.5e-16 3.5e-17
+  start 4: relative residual 2.201e-04; singular values of [M(v); A/P] 1.0e+00 1.0e+00 3.9e-04 3.9e-04 3.0e-16 3.6e-17
+[one65] best relative residual over 5 starts: 3.236e-15
+[one65] rank of M(v) = dim of (v (x) C^5 + P)/P for 20 random v: [2]; singular values (one v): 1.8e+00 1.8e+00 8.5e-15 2.4e-15 3.9e-16
+[one65] => the single-type condition needs dim >= dim A/P = 2; max over v is the generic value above

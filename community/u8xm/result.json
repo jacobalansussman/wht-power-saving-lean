@@ -1,0 +1,159 @@
+{
+ "format": "community-certificate-package/1",
+ "name": "u8xm",
+ "suffix": "U8XM",
+ "title": "The community's U8 word with exit frames and mutable sources (five centre-source copies kept)",
+ "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+ "variant": "",
+ "numerator": 13868856,
+ "kernel_numerator": 13868857,
+ "negative_numerator": 13868857,
+ "saving": "1.3868856e-3",
+ "saving_short": "1.3869e-3",
+ "exponent": "1 - 13868856/10^10",
+ "compared_with": {
+  "what": "Lean-checked record before these packages (Jeremy Kothe's #588 circuit in Ryan Shea's Lean tree)",
+  "numerator": 12331685,
+  "saving": "1.2331685e-3"
+ },
+ "mode": "add",
+ "base": {
+  "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+  "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+  "path": "lean/complex588",
+  "lean": "leanprover/lean4:v4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+ },
+ "tree_change": "the tree's lakefile.lean needs one more library line for the five XExit modules: lean_lib XExit where globs := #[`XExit.+] (logs/colab-xexit/lakefile-tail.txt); apply-overlay.sh does not add it",
+ "theorems": [
+  "OAI.PowerSaving.transform_mainU8XM",
+  "OAI.PowerSaving.convolution_mainU8XM"
+ ],
+ "axiom_targets": [
+  "OAI.PowerSaving.transform_mainU8XM",
+  "OAI.PowerSaving.convolution_mainU8XM",
+  "OAI.PowerSaving.RAM.hillsU8XM_program"
+ ],
+ "permitted_axioms": [
+  "propext",
+  "Classical.choice",
+  "Quot.sound"
+ ],
+ "challenge_module": "Work.FourierU8XM.UniformFourierChallenge",
+ "negative_challenge_module": "Work.FourierU8XMNeg.UniformFourierChallenge",
+ "solution_module": "Work.FourierU8XM.Main",
+ "axioms_file": "Work/FourierU8XM/Axioms.lean",
+ "goal_file": "Work/FourierU8XM/Goal.lean",
+ "exponent_definition": "OAI.PowerSaving.decimalExponentU8XM",
+ "comparator": {
+  "positive": "comparator/fourier-u8xm.json",
+  "negative": "comparator/fourier-u8xm-neg.json"
+ },
+ "machine": "Google Colab VM: Linux x86-64, Intel Xeon 2.20 GHz, 8 logical processors, 51 GiB, kernel 6.6.122+ without Landlock, no systemd",
+ "build_targets": [
+  "Work.FourierU8XM.Main",
+  "Work.FourierU8XM.UniformFourierChallenge",
+  "Work.FourierU8XMNeg.UniformFourierChallenge",
+  "Work.GCert.Data.U8XMControls",
+  "Work.FourierU8XM.Axioms"
+ ],
+ "certificate": {
+  "word": "the U8 word of CrocSwap/integer-mult-bounds",
+  "slots_R": 509,
+  "moves_N": 5679,
+  "banks": 3771,
+  "W": 10939,
+  "note": "126 helpers end at exit frames of dimension 4 or 8; Shea's 112 source copies folded back except the 5 of the sources that host a split centre (9, 11, 57, 81, 92)"
+ },
+ "new_lean": {
+  "Work/KMX": "exit frames over the mutable-source scalar half: HalvesZ, ExitEndZ (with the new condition ExitColsX), ZCheckZ, LabelsXZ, GlueXZ",
+  "Work/KLow": "exit frames on the U8 word (the same files as community/u8x)",
+  "Work/XMut": "mutable sources (the same files as community/c588m)",
+  "XExit": "exit-frame helpers"
+ },
+ "checks": [
+  {
+   "id": "build",
+   "status": "pass",
+   "what": "one Lake build of the five targets in a copy of the U8X tree on the first Colab machine, one Lean thread: 9,305 jobs, 22 minutes, 8.9 GB, rc 0; then lake build --no-build is up to date",
+   "log": "logs/colab/lake.out"
+  },
+  {
+   "id": "xexit-build",
+   "status": "pass",
+   "what": "the five XExit modules (exit frames) were compiled earlier in the same Colab tree by a separate build, from the same sources (logs/colab-xexit/xx-hashes.txt); the Lake runs below replayed them",
+   "log": "logs/colab-xexit/xx-build-XExit.Pack.log"
+  },
+  {
+   "id": "axioms",
+   "status": "pass",
+   "what": "the two theorems and hillsU8XM_program depend on propext, Classical.choice, Quot.sound only; so do the glue facts exitRC, scalOKZ, validX, ginvX, ginv_cost, fitsS, price",
+   "log": "logs/colab/checks2.out"
+  },
+  {
+   "id": "compare",
+   "status": "pass",
+   "what": "tools/Compare.lean: RESULT: PASS at 1 - 13868856/10^10",
+   "log": "logs/colab/checks2.out"
+  },
+  {
+   "id": "compare-negative",
+   "status": "pass",
+   "what": "tools/Compare.lean against the statement one unit stronger (13868857): RESULT: FAIL",
+   "log": "logs/colab/checks2.out"
+  },
+  {
+   "id": "comparator",
+   "status": "pass",
+   "what": "official comparator inside the stand-in jail2.sh: nanoda and Lean kernels accept, 'Your solution is okay!' (17 minutes, 7.0 GB)",
+   "log": "logs/colab/cmp/kcomb-U8XM-pos.log"
+  },
+  {
+   "id": "comparator-negative",
+   "status": "pass",
+   "what": "official comparator rejects the configuration one unit stronger: Const does not match ... decimalExponentU8XM (3 minutes)",
+   "log": "logs/colab/cmp/kcomb-U8XM-neg.log"
+  },
+  {
+   "id": "lean-controls",
+   "status": "pass",
+   "what": "Work.GCert.Data.U8XMControls: zcheck_control, classic_rejected and endkx_control are proved (axiom propext only)",
+   "log": "logs/colab/checks2.out"
+  },
+  {
+   "id": "static-checks",
+   "status": "pass",
+   "what": "tools/community/package_check.py check on the Mac",
+   "log": "logs/static-check.txt"
+  },
+  {
+   "id": "skeptic",
+   "status": "not shown",
+   "what": "no independent rebuild or review log of this package is in the repository",
+   "log": ""
+  },
+  {
+   "id": "bigospeedrun-verifier",
+   "status": "not run",
+   "what": "the leaderboard's own verifier has not been run on this package",
+   "log": ""
+  }
+ ],
+ "credits": [
+  "Jeremy Kothe: the U8 word (#869 of CrocSwap/integer-mult-bounds), from his #799 and the line of circuits before it; with DreamingOfClouds, the endpoint lemmas on which the charge for exit frames rests (#593)",
+  "Chafik Boukhalfa: the frame changes of #741, which the U8 word carries",
+  "icekylinx: the gauge44 construction (#645) the U8 word is built on; the community's notice credits the word's triangle-hybrid step to NewBArch, with its driver and composition to ColdWitness/icekylinx",
+  "DreamingOfClouds: helpers that end early in the line of the U8 word (#604) and the endpoint lemmas of #599",
+  "not used by this package, though the community's figures for the U8 word use them: the owner maps of #870 (Kothe, applying Hao Yan's #858), #890 (Chafik Boukhalfa) and #942 (Jonathan Capalbo), and DreamingOfClouds' bit supplier #589",
+  "Ryan Shea: the conversion pipeline, the generators and the Lean instantiation (shea256/fourier-transform-below-nlogn, lean/complex588)",
+  "Nil Mamano: the gauged extension (GInvE, GX.engine_of_ginv_401) and the Fourier chain templates",
+  "Dugongue: the entrance gauges and the residual banks of the nine-stage network (#401)",
+  "Zhihao Chen (jacklightChen): the compressed nine-stage layout with its banks and padding (#377)",
+  "lydakis: the bank patterns (#275)",
+  "DaysSky: the bridged layout B_K the network starts from (#363)",
+  "the authors of CrocSwap/integer-mult-bounds",
+  "OpenAI: the model, the statements and the all-length reduction",
+  "Zhihao Chen (jacklightChen): the written scalar-interface argument for mutable sources (pull request #425 of CrocSwap/integer-mult-bounds)",
+  "Jacob Sussman (this repository): the original Lean engine, the Lean proofs of mutable sources (Work/XMut), of exit frames (XExit, Work/KLow) and of their combination (Work/KMX), and the generation of this certificate"
+ ]
+}

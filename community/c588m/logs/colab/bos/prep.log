@@ -1,0 +1,12 @@
+closure modules: 350; import lines rewritten: 568; bound 2466337/2000000000
+CONTROL PASS: packaging of Shea's C588 identical to nmamano's submission (350 files)
+CONTROL PASS: adapter body identical
+closure modules: 357; import lines rewritten: 584; bound 6776303/5000000000
+staged lean files: 358; bytes: 3443935; largest: 370056 /content/work/mb/bos/stage/Submission/Work/GCert/Data/Gen/C588M/S0.lean
+profile challenge: challenges/dft/UniformFourier233.lean  expected sha256 3a646acd3ac9cf6ff93e29cc363dbfea0c8953a2e1415f7965bd86e8b2ee62a3
+/content/work/bos-verifier/challenges/dft/UniformFourier233.lean: OK
+challenge bound 6776303 5000000000
+c290b016ac41a8d68a9aa5fe38252e025ec8dafca66fa5f4a16d34477b615051  /content/work/mb/bos/stage/VerifierChallenge.lean
+7.7G	/content/work/mb/bos/stage/.lake/packages
+PREP DONE
+EXIT 0

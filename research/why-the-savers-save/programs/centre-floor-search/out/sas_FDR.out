@@ -1,0 +1,10 @@
+pool FDR 176 directions; 18969 candidate subspaces
+checks/wht43/centre/ctr-search/calc/sas.py:176: RuntimeWarning: divide by zero encountered in matmul
+  g = s.CB @ red
+checks/wht43/centre/ctr-search/calc/sas.py:176: RuntimeWarning: overflow encountered in matmul
+  g = s.CB @ red
+checks/wht43/centre/ctr-search/calc/sas.py:176: RuntimeWarning: invalid value encountered in matmul
+  g = s.CB @ red
+seed 0: greedy served True cost 64 (1 s)
+seed 0: best 64; verified exact True n 8 pair 64 star 64  terms [8, 8, 8, 8, 8, 8, 8, 8] (36 s)
+seed 1: greedy served True cost 64 (37 s)

@@ -1,0 +1,7 @@
+MB START Tue Oct 13 15:49:40 UTC 2026 epoch=1791906580 base=/content/work/shea variant=annealed
+copy HEAD 52394849c7ecf3412d39b925d75fc7fdb98994d8; tracked changes: 0; olean files: 354
+PACKAGE-OK
+git status lines (new files are untracked): 72
+applied 74 lines to /content/work/mb/shea/lean/complex588 (annealed)
+BUILD START Tue Oct 13 15:49:41 UTC 2026 tree=/content/work/mb/shea/lean/complex588 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 pkg=/content/work/m-gen/c588m
+=== STEP 01-Work.XMut.Dirt START Tue Oct 13 15:49:41 UTC 2026 cmd: lake build Work.XMut.Dirt

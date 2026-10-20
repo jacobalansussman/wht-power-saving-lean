@@ -1,0 +1,6 @@
+m=4 seed=62 dup=True depth=12: 30 designs in 26s
+  injections by class: {'genuine': 116, 'partial': 23, 'rescale': 24}  total 163
+  designs with >= 1 injection: 30
+  genuine landings per design: histogram [(1, 1), (2, 4), (3, 5), (4, 11), (5, 7), (6, 1), (7, 1)]
+  null (rescale) injections per design: histogram [(0, 17), (1, 7), (2, 4), (3, 1), (6, 1)]
+python3 -B vselfinj.py 4 30 12 62  26.42s user 0.03s system 99% cpu 26.456 total

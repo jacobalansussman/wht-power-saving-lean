@@ -1,0 +1,4 @@
+m=1: 2 symmetric matrices; mismatches vs (rank, +1 if alternating nonzero): 0; classes {(0, False): 1, (1, False): 1}
+m=2: 8 symmetric matrices; mismatches vs (rank, +1 if alternating nonzero): 0; classes {(0, False): 1, (1, False): 3, (2, False): 3, (2, True): 1}
+m=3: 64 symmetric matrices; mismatches vs (rank, +1 if alternating nonzero): 0; classes {(0, False): 1, (1, False): 7, (2, False): 21, (2, True): 7, (3, False): 28}
+m=4: 1024 symmetric matrices; mismatches vs (rank, +1 if alternating nonzero): 0; classes {(0, False): 1, (1, False): 15, (2, False): 105, (2, True): 35, (3, False): 420, (4, False): 420, (4, True): 28}

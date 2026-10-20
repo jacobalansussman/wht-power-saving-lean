@@ -1,0 +1,4 @@
+15 blocks, sizes [8, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+labels a block receives from other blocks under the kernel: [7, 4, 4, 3, 4, 3, 3, 4, 3, 3, 4, 3, 4, 4, 3]
+closed forms hold on all 64 labels: dir(w): (x|z) -> (x+w|z) if w.z = 0 else fixed; kernel: (x|z) -> (x + not z | z)
+compared with model_m3.json: 1575 capacity entries, 0 differ; 225 demand entries, 0 differ; sizes equal: True

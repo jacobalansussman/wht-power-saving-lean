@@ -1,0 +1,11 @@
+LIB "poly.lib";
+ring R = 0, (b0_0,b1_0,a0), dp;
+ideal I = ((1))*b0_0-1,
+  ((1)*a0)*b0_0,
+  ((1)*a0)*b1_0-1,
+  ((1))*b1_0;
+option(redSB);
+ideal J = std(I);
+print("GB size"); print(size(J));
+if (size(J) == 1 and J[1] == 1) { print("INCONSISTENT: no complex solution (not a unit)"); } else { print("CONSISTENT: solutions exist; dimension"); print(dim(J)); }
+quit;

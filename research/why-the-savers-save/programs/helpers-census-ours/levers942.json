@@ -1,0 +1,128 @@
+{
+ "control_b": "416181814685169713943/250000000000000000000000",
+ "control_equals_942": true,
+ "one_helper_removed_pct_b": {
+  "M w4 (n=24)": {
+   "min": 0.0725,
+   "median": 0.0725,
+   "max": 0.0725
+  },
+  "M w5 (n=32)": {
+   "min": 0.0841,
+   "median": 0.0841,
+   "max": 0.0841
+  },
+  "M w8 (n=56)": {
+   "min": 0.119,
+   "median": 0.1231,
+   "max": 0.1231
+  },
+  "face w7 (n=54)": {
+   "min": 0.1049,
+   "median": 0.1049,
+   "max": 0.1049
+  },
+  "face w8 (n=64)": {
+   "min": 0.1075,
+   "median": 0.1075,
+   "max": 0.132
+  },
+  "face w9 (n=50)": {
+   "min": 0.1257,
+   "median": 0.1412,
+   "max": 0.1502
+  },
+  "factory w4 (n=56)": {
+   "min": 0.0725,
+   "median": 0.0725,
+   "max": 0.0725
+  },
+  "factory w8 (n=2)": {
+   "min": 0.1231,
+   "median": 0.1231,
+   "max": 0.1231
+  },
+  "factory w9 (n=163)": {
+   "min": 0.1254,
+   "median": 0.1478,
+   "max": 0.1568
+  }
+ },
+ "one_helper_removed_all_mean_pct_b": 0.1159,
+ "count_whatifs": {
+  "remove all 112 M copies (504 -> 392 incl. 3 centre-hosts; packet-plane bound with second copies)": {
+   "removed": 112,
+   "b": "1.8754299e-03",
+   "pct": 12.657
+  },
+  "remove all 168 face copies": {
+   "removed": 168,
+   "b": "2.0711482e-03",
+   "pct": 24.414
+  },
+  "remove M + face (-> 224-ish: packet-plane one-copy bound)": {
+   "removed": 280,
+   "b": "2.4078014e-03",
+   "pct": 44.636
+  },
+  "remove 112 helpers, most valuable first": {
+   "removed": 112,
+   "b": "1.9933920e-03",
+   "pct": 19.743
+  },
+  "remove 112 helpers, least valuable first": {
+   "removed": 112,
+   "b": "1.8193721e-03",
+   "pct": 9.29
+  },
+  "down to 280 (targets visit planes, two copies; toy V)": {
+   "removed": 224,
+   "b": "2.0927031e-03",
+   "pct": 25.708
+  },
+  "down to 112 (targets visit planes, one copy; toy V)": {
+   "removed": 392,
+   "b": "2.8734616e-03",
+   "pct": 72.609
+  },
+  "down to 107 (hub sink-only floor)": {
+   "removed": 397,
+   "b": "2.9089604e-03",
+   "pct": 74.741
+  },
+  "all helpers removed (strict floor 0)": {
+   "removed": 501,
+   "b": "3.9781389e-03",
+   "pct": 138.966
+  }
+ },
+ "stop_whatifs": {
+  "every helper in at most 1 runs (count 504 kept)": {
+   "b": "2.2533364e-03",
+   "pct": 35.358
+  },
+  "every helper in at most 2 runs (count 504 kept)": {
+   "b": "1.9397408e-03",
+   "pct": 16.52
+  },
+  "every helper in at most 3 runs (count 504 kept)": {
+   "b": "1.7982886e-03",
+   "pct": 8.023
+  },
+  "one stop fewer on every helper (two smallest runs merged)": {
+   "b": "1.7306426e-03",
+   "pct": 3.96
+  }
+ },
+ "ledger_per_replica": {
+  "gross": 896,
+  "copies": 576,
+  "deficit": 320,
+  "copies_pct_gross": 64.3,
+  "helpers_pct_D": 65.7,
+  "helpers_pct_gross": 23.4,
+  "data_pct_gross": 10.5,
+  "centres_pct_gross": 0.65,
+  "idle_pct_gross": 1.12
+ }
+}

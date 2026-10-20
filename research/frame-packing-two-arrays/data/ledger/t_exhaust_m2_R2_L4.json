@@ -1,0 +1,228 @@
+{
+ "m": 2,
+ "R": 2,
+ "L": 4,
+ "alphabet": 24,
+ "runs": 692402,
+ "bad": [],
+ "nbad": 0,
+ "units": [
+  {
+   "word": "[('move', 0, 1), ('move', 0, 2), ('move', 1, 1), ('move', 1, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 1), ('move', 0, 2), ('move', 1, 2), ('move', 1, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 1), ('move', 1, 1), ('move', 0, 2), ('move', 1, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 1), ('move', 1, 1), ('move', 1, 2), ('move', 0, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 1), ('move', 1, 2), ('move', 0, 2), ('move', 1, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 1), ('move', 1, 2), ('move', 1, 1), ('move', 0, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 2), ('move', 0, 1), ('move', 1, 1), ('move', 1, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 2), ('move', 0, 1), ('move', 1, 2), ('move', 1, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 2), ('move', 1, 1), ('move', 0, 1), ('move', 1, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 2), ('move', 1, 1), ('move', 1, 2), ('move', 0, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 2), ('move', 1, 2), ('move', 0, 1), ('move', 1, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 0, 2), ('move', 1, 2), ('move', 1, 1), ('move', 0, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 1), ('move', 0, 1), ('move', 0, 2), ('move', 1, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 1), ('move', 0, 1), ('move', 1, 2), ('move', 0, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 1), ('move', 0, 2), ('move', 0, 1), ('move', 1, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 1), ('move', 0, 2), ('move', 1, 2), ('move', 0, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 1), ('move', 1, 2), ('move', 0, 1), ('move', 0, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 1), ('move', 1, 2), ('move', 0, 2), ('move', 0, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 2), ('move', 0, 1), ('move', 0, 2), ('move', 1, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 2), ('move', 0, 1), ('move', 1, 1), ('move', 0, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 2), ('move', 0, 2), ('move', 0, 1), ('move', 1, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 2), ('move', 0, 2), ('move', 1, 1), ('move', 0, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 2), ('move', 1, 1), ('move', 0, 1), ('move', 0, 2)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  },
+  {
+   "word": "[('move', 1, 2), ('move', 1, 1), ('move', 0, 2), ('move', 0, 1)]",
+   "M": 4,
+   "P": 0,
+   "B": 0,
+   "D": 0,
+   "Z": 0,
+   "coherence": "coherent"
+  }
+ ],
+ "nunits": 24
+}

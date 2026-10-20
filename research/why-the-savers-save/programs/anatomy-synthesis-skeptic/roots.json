@@ -1,0 +1,47 @@
+[
+ {
+  "design": "E8",
+  "n": 120,
+  "t": 8,
+  "junk_min": 56,
+  "junk_max": 56,
+  "n_over_t": 15.0,
+  "one_plus_s4": 15.0,
+  "tight_rows_checked": true,
+  "window_rank_f2_JplusG": 9,
+  "junk_clique": 8,
+  "orth_clique": 8,
+  "copy_ratio": 0.6,
+  "copy_ratio_floor_with_clique_window": 0.5333333333333333
+ },
+ {
+  "design": "E7 (E8 lines orthogonal to one root)",
+  "n": 63,
+  "t": 7,
+  "junk_min": 32,
+  "junk_max": 32,
+  "n_over_t": 9.0,
+  "one_plus_s4": 9.0,
+  "tight_rows_checked": true,
+  "window_rank_f2_JplusG": 7,
+  "junk_clique": 7,
+  "orth_clique": 7,
+  "copy_ratio": 0.7777777777777778,
+  "copy_ratio_floor_with_clique_window": 0.7777777777777778
+ },
+ {
+  "design": "P112 = E8 minus an orthogonal frame",
+  "n": 112,
+  "t": 8,
+  "junk_min": 52,
+  "junk_max": 52,
+  "n_over_t": 14.0,
+  "one_plus_s4": 14.0,
+  "tight_rows_checked": true,
+  "window_rank_f2_JplusG": 9,
+  "junk_clique": 8,
+  "orth_clique": 8,
+  "copy_ratio": 0.6428571428571429,
+  "copy_ratio_floor_with_clique_window": 0.5714285714285714
+ }
+]

@@ -1,0 +1,14 @@
+=== cal_plain4P_s2.json  n=12 N=28  nalpha=2  LM best |F|^2=3.082e-33  max|x|=0.836
+   rank: 11
+   sv_gap: (0.4874471189770464, 7.55571822061785e-20)
+   square: (11, 11)
+   fixed: {'x0': ('25/64', '-47/64')}
+   krawczyk: True
+   rho: 1e-30
+   leftover_rows: 17
+   leftover_max_abs_upper: 1.1619726306124358e-59
+   exact_candidate_maxden: 5065
+   exact_nonzero_rows: 0
+   verdict: EXISTS (exact): a Gaussian-rational point in the certified box solves every row of F exactly
+   exact_point: {'x0': ('25/64', '-47/64'), 'x1': ('0', '0'), 'x2': ('0', '0'), 'x3': ('0', '0'), 'x4': ('0', '0'), 'x5': ('0', '0'), 'x6': ('0', '0'), 'x7': ('0', '0'), 'x8': ('0', '0'), 'x9': ('0', '0'), 'x10': ('2848/5065', '1504/5065'), 'x11': ('0', '0')}
+   time 0.2s

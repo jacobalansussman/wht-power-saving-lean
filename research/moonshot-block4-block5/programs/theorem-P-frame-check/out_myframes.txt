@@ -1,0 +1,12 @@
+Lagrangians: 2295  neighbours of L0: 30
+graph distance = codim of intersection: OK
+d(L0,L_D) = 1  dim H = 3
+2-dim subspaces of L0: 35
+(F4) every Q_U gated: True   corollary for neighbours: True
+neighbours N of L0 with d(N, L_D) = 2 (F1): 28
+(F2) U = L0 cap S_D(N) is 2-dim, inside H, inside N, for all such N: True
+candidates I(q_j): d(I,L0)=3 and d(I,L_D)=2: 224
+D4: (N_e, N_j) pairs admitting route+junk I: computed above
+D4: surviving (N_e, N_j, N_h) with both readings <= 2 and an admissible I(q_j): 0  [case U_e != U_j: 0 , case U_e = U_j: 0 ]
+D4 case U_e = U_j: (N_e, N_j) pairs with U_e = U_j that admit an I(q_j): 0
+control (N_h any neighbour, lambda(w_J) unrestricted): survivors 1344

@@ -1,0 +1,197 @@
+== (A) regularity by definition and symbols at alpha ==
+PASS chi (free): regular, q = (1+S)^0(1+S^-1)^1, band 1  symbol rows [[3, 0, 0, 0], [0, 3, 0, 0], [0, 0, 3, 0], [0, 0, 0, 3]]
+PASS chi_ac (free): regular, q = (1+S)^0(1+S^-1)^1, band 2  symbol rows [[2, 0, 0, 0], [0, 2, 0, 0], [0, 0, 2, 0], [0, 0, 0, 2]]
+PASS chi_row1 (free): regular, q = (1+S)^0(1+S^-1)^1, band 1  symbol rows [[1, 0, 0, 0], [0, 3, 0, 0], [0, 0, 1, 0], [0, 0, 0, 3]]
+PASS E (free): regular, q = (1+S)^0(1+S^-1)^0, band 1  symbol rows [[1, 2, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 3, 1]]
+PASS Gm (free): regular, q = (1+S)^0(1+S^-1)^1, band 2  symbol rows [[1, 2, 0, 0], [2, 0, 0, 0], [0, 0, 0, 2], [0, 0, 2, 3]]
+PASS G5 (free): regular, q = (1+S)^0(1+S^-1)^5, band 5  symbol rows [[2, 2, 0, 0], [0, 1, 0, 0], [0, 0, 2, 0], [0, 0, 1, 1]]
+PASS D1 (free): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 0, 0], [0, 1, 0, 0], [1, 0, 1, 0], [0, 1, 0, 1]]
+PASS Dcz (free): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 0, 0], [0, 1, 0, 0], [0, 1, 1, 0], [1, 0, 0, 1]]
+PASS CZch (free): regular, q = (1+S)^0(1+S^-1)^0, band 1  symbol rows [[1, 0, 0, 0], [0, 1, 0, 0], [0, 3, 1, 0], [2, 0, 0, 1]]
+PASS P (free): regular, q = (1+S)^0(1+S^-1)^1, band 1  symbol rows [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS Slast (free): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS Hlast (free): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS Hfirst (free): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS k (free): regular, q = (1+S)^0(1+S^-1)^1, band 1  symbol rows [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS l (free): regular, q = (1+S)^0(1+S^-1)^1, band 1  symbol rows [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS CNOT (free): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 0, 0], [1, 1, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]]
+PASS SWAPQ (free): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[0, 1, 0, 0], [1, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0]]
+PASS SS (free): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 0, 0], [0, 1, 0, 0], [1, 0, 1, 0], [0, 1, 0, 1]]
+PASS Dt01 (paid1): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 0, 0], [0, 1, 0, 1], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS Dt10 (paid1): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 1, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS Dt11 (paid1): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 1, 1], [0, 1, 1, 1], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS H0 (paid1): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[0, 0, 1, 0], [0, 1, 0, 0], [1, 0, 0, 0], [0, 0, 0, 1]]
+PASS H1 (paid1): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0], [0, 1, 0, 0]]
+PASS H11 (paid1): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[0, 0, 1, 1], [1, 1, 1, 1], [1, 0, 0, 1], [0, 0, 0, 1]]
+PASS HH (target): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[0, 0, 1, 0], [0, 0, 0, 1], [1, 0, 0, 0], [0, 1, 0, 0]]
+PASS KX (target): regular, q = (1+S)^0(1+S^-1)^0, band 0  symbol rows [[1, 0, 1, 0], [0, 1, 0, 1], [0, 0, 1, 0], [0, 0, 0, 1]]
+PASS CONTROL R3 singular at alpha: no regular data found (expected)
+PASS CONTROL G3b singular at alpha: no regular data found (expected)
+PASS chi^-1 regular (q = (1+S)^0(1+S^-1)^1) and s(k^-1) = s(k)^-1
+PASS chi_ac^-1 regular (q = (1+S)^0(1+S^-1)^1) and s(k^-1) = s(k)^-1
+PASS chi_row1^-1 regular (q = (1+S)^0(1+S^-1)^1) and s(k^-1) = s(k)^-1
+PASS E^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS Gm^-1 regular (q = (1+S)^0(1+S^-1)^1) and s(k^-1) = s(k)^-1
+PASS G5^-1 regular (q = (1+S)^0(1+S^-1)^5) and s(k^-1) = s(k)^-1
+PASS D1^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS Dcz^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS CZch^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS P^-1 regular (q = (1+S)^0(1+S^-1)^1) and s(k^-1) = s(k)^-1
+PASS Slast^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS Hlast^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS Hfirst^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS k^-1 regular (q = (1+S)^0(1+S^-1)^1) and s(k^-1) = s(k)^-1
+PASS l^-1 regular (q = (1+S)^0(1+S^-1)^1) and s(k^-1) = s(k)^-1
+PASS CNOT^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS SWAPQ^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS SS^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS Dt01^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS Dt10^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS Dt11^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS H0^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS H1^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS H11^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS HH^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+PASS KX^-1 regular (q = (1+S)^0(1+S^-1)^0) and s(k^-1) = s(k)^-1
+
+== (B) Hermitian form, frames, moves ==
+PASS chi: symbol preserves Hg
+PASS chi_ac: symbol preserves Hg
+PASS chi_row1: symbol preserves Hg
+PASS E: symbol preserves Hg
+PASS Gm: symbol preserves Hg
+PASS G5: symbol preserves Hg
+PASS D1: symbol preserves Hg
+PASS Dcz: symbol preserves Hg
+PASS CZch: symbol preserves Hg
+PASS P: symbol preserves Hg
+PASS Slast: symbol preserves Hg
+PASS Hlast: symbol preserves Hg
+PASS Hfirst: symbol preserves Hg
+PASS k: symbol preserves Hg
+PASS l: symbol preserves Hg
+PASS CNOT: symbol preserves Hg
+PASS SWAPQ: symbol preserves Hg
+PASS SS: symbol preserves Hg
+PASS Dt01: symbol preserves Hg
+PASS Dt10: symbol preserves Hg
+PASS Dt11: symbol preserves Hg
+PASS H0: symbol preserves Hg
+PASS H1: symbol preserves Hg
+PASS H11: symbol preserves Hg
+PASS HH: symbol preserves Hg
+PASS KX: symbol preserves Hg
+PASS chi^-1: symbol preserves Hg
+PASS chi_ac^-1: symbol preserves Hg
+PASS chi_row1^-1: symbol preserves Hg
+PASS E^-1: symbol preserves Hg
+PASS Gm^-1: symbol preserves Hg
+PASS G5^-1: symbol preserves Hg
+PASS D1^-1: symbol preserves Hg
+PASS Dcz^-1: symbol preserves Hg
+PASS CZch^-1: symbol preserves Hg
+PASS P^-1: symbol preserves Hg
+PASS Slast^-1: symbol preserves Hg
+PASS Hlast^-1: symbol preserves Hg
+PASS Hfirst^-1: symbol preserves Hg
+PASS k^-1: symbol preserves Hg
+PASS l^-1: symbol preserves Hg
+PASS CNOT^-1: symbol preserves Hg
+PASS SWAPQ^-1: symbol preserves Hg
+PASS SS^-1: symbol preserves Hg
+PASS Dt01^-1: symbol preserves Hg
+PASS Dt10^-1: symbol preserves Hg
+PASS Dt11^-1: symbol preserves Hg
+PASS H0^-1: symbol preserves Hg
+PASS H1^-1: symbol preserves Hg
+PASS H11^-1: symbol preserves Hg
+PASS HH^-1: symbol preserves Hg
+PASS KX^-1: symbol preserves Hg
+PASS 27 Hg-frames (got 27)
+PASS L0 = {x = 0} is a frame
+PASS chi (free): dist(L0, s L0) = 0
+PASS chi_ac (free): dist(L0, s L0) = 0
+PASS chi_row1 (free): dist(L0, s L0) = 0
+PASS E (free): dist(L0, s L0) = 0
+PASS Gm (free): dist(L0, s L0) = 0
+PASS G5 (free): dist(L0, s L0) = 0
+PASS D1 (free): dist(L0, s L0) = 0
+PASS Dcz (free): dist(L0, s L0) = 0
+PASS CZch (free): dist(L0, s L0) = 0
+PASS P (free): dist(L0, s L0) = 0
+PASS Slast (free): dist(L0, s L0) = 0
+PASS Hlast (free): dist(L0, s L0) = 0
+PASS Hfirst (free): dist(L0, s L0) = 0
+PASS k (free): dist(L0, s L0) = 0
+PASS l (free): dist(L0, s L0) = 0
+PASS CNOT (free): dist(L0, s L0) = 0
+PASS SWAPQ (free): dist(L0, s L0) = 0
+PASS SS (free): dist(L0, s L0) = 0
+PASS Dt01 (paid1): dist(L0, s L0) = 1
+PASS Dt10 (paid1): dist(L0, s L0) = 1
+PASS Dt11 (paid1): dist(L0, s L0) = 1
+PASS H0 (paid1): dist(L0, s L0) = 1
+PASS H1 (paid1): dist(L0, s L0) = 1
+PASS H11 (paid1): dist(L0, s L0) = 1
+PASS HH (target): dist(L0, s L0) = 2
+PASS KX (target): dist(L0, s L0) = 2
+PASS chi^-1 (free): dist(L0, s L0) = 0
+PASS chi_ac^-1 (free): dist(L0, s L0) = 0
+PASS chi_row1^-1 (free): dist(L0, s L0) = 0
+PASS E^-1 (free): dist(L0, s L0) = 0
+PASS Gm^-1 (free): dist(L0, s L0) = 0
+PASS G5^-1 (free): dist(L0, s L0) = 0
+PASS D1^-1 (free): dist(L0, s L0) = 0
+PASS Dcz^-1 (free): dist(L0, s L0) = 0
+PASS CZch^-1 (free): dist(L0, s L0) = 0
+PASS P^-1 (free): dist(L0, s L0) = 0
+PASS Slast^-1 (free): dist(L0, s L0) = 0
+PASS Hlast^-1 (free): dist(L0, s L0) = 0
+PASS Hfirst^-1 (free): dist(L0, s L0) = 0
+PASS k^-1 (free): dist(L0, s L0) = 0
+PASS l^-1 (free): dist(L0, s L0) = 0
+PASS CNOT^-1 (free): dist(L0, s L0) = 0
+PASS SWAPQ^-1 (free): dist(L0, s L0) = 0
+PASS SS^-1 (free): dist(L0, s L0) = 0
+PASS Dt01^-1 (paid1): dist(L0, s L0) = 1
+PASS Dt10^-1 (paid1): dist(L0, s L0) = 1
+PASS Dt11^-1 (paid1): dist(L0, s L0) = 1
+PASS H0^-1 (paid1): dist(L0, s L0) = 1
+PASS H1^-1 (paid1): dist(L0, s L0) = 1
+PASS H11^-1 (paid1): dist(L0, s L0) = 1
+PASS HH^-1 (target): dist(L0, s L0) = 2
+PASS KX^-1 (target): dist(L0, s L0) = 2
+
+== (C) words: product symbol, direct read, rank growth ==
+PASS direct read of s(w) from M(w) equals the product of letter symbols on 83 words
+PASS every word with s(w) != I has rank(M - I) >= K(f) and growing (72 words)
+   words with s(w) = I: 11; their rank sequences:
+     [3, 3, 3, 3, 3] l^-1 Hlast^-1
+     [1, 1, 1, 1, 1] Hlast Hlast Hlast
+     [1, 1, 1, 1, 1] chi Slast chi^-1
+     [2, 2, 2, 2, 2] chi Slast chi^-1 P^-1
+     [4, 4, 4, 4, 4] k l
+     [1, 1, 1, 1, 1] chi Hlast chi^-1
+     [15, 24, 32, 39, 48] chi Dt11 chi^-1 Dt11^-1
+     [0, 0, 0, 0, 0] P Dt10 P^-1 Dt10^-1
+     [4, 4, 4, 4, 4] l H0 l^-1 H0^-1
+     [0, 0, 0, 0, 0] k Dt01 k^-1 Dt01^-1
+     [60, 96, 128, 156, 192] chi_ac chi
+   sample of s(w) != I:
+     [63, 95, 127, 159, 191] CZch^-1 Hlast SS^-1 H11^-1 P KX^-1 Gm^-1
+     [34, 50, 66, 82, 98] D1^-1 H0 l^-1 H1 Dt11 Dcz^-1
+     [64, 96, 128, 160, 192] HH^-1 P CZch^-1 chi_ac^-1
+     [63, 96, 128, 158, 192] Dt10 chi_row1^-1 chi_ac^-1 SS CNOT E Dt01^-1 chi_row1^-1
+     [63, 95, 127, 159, 191] Dt11 SWAPQ^-1 D1^-1 HH^-1 l^-1 Hlast^-1 l^-1
+     [63, 96, 127, 159, 192] Dt11 HH^-1 SWAPQ H1^-1 chi_ac^-1
+     [63, 96, 128, 159, 192] Hfirst Gm Dt01^-1 H0 k Dcz
+     [50, 74, 98, 122, 146] D1 chi Dt11^-1 E H11
+
+== (D) the 27 Fermat lines: exact over Z[omega], reduction mod 2, distances ==
+PASS 27 lines lie on the Fermat cubic (generators and a few combinations)
+PASS 27 reductions are distinct 2-dim Hstd-isotropic subspaces
+PASS exact over Z[omega]: delta(Y_U, Y_V) = generator distance on all 729 ordered pairs (mismatches 0); by distance {0: 27, 1: 270, 2: 432}
+PASS Phi is an isometry Hg -> Hstd
+PASS Phi maps the 27 Hg-frames onto the 27 reduced Fermat lines
+
+ALL CHECKS PASS

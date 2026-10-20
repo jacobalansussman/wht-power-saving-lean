@@ -1,0 +1,24 @@
+Command exited with non-zero status 1
+	Command being timed: "/content/work/cc/jail2.sh /content/work/mb/shea/lean/complex588 lake env comparator comparator/fourier-c588m-neg.json"
+	User time (seconds): 113.78
+	System time (seconds): 38.39
+	Percent of CPU this job got: 57%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:22.43
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6642456
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 96061
+	Minor (reclaiming a frame) page faults: 1318408
+	Voluntary context switches: 407673
+	Involuntary context switches: 43002
+	Swaps: 0
+	File system inputs: 11998552
+	File system outputs: 408
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

@@ -1,0 +1,5 @@
+'GXD.U8X.exitRC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X.validX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X.ginv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X.fitsS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X.price' depends on axioms: [propext, Classical.choice, Quot.sound]

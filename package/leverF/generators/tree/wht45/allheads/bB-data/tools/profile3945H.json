@@ -1,0 +1,3 @@
+{"source": "design B (wht45/reopt FOUND.md): #3945's PROFILE (unchanged) {1: 8041680, 2: 2306880, 3: 729648, 4: 353160, 5: 69120, 8: 25920, 48: 137952} with every child-8/10 bin a literal head (80,640 = 40,320 + 40,320); half cut: heads -> rank 24, the other 57,312 idle-48 bins (children 12/13) stay 48",
+ "children": {"1": 8041680, "2": 2306880, "3": 729648, "4": 353160, "5": 69120, "8": 25920, "24": 80640, "48": 57312},
+ "W": 322560, "H": 80640, "kc": 49, "m": 73}

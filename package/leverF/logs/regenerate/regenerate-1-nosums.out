@@ -1,0 +1,28 @@
+0. the design's owner folder: the community's #3945 owner folder with the design-B fill laid over it
+   owner folder = the one the Lean data was made from (24 files; FILL 9c06677d, old-FILL 0e61fce2)
+1. the head gate G0 in our lowering (g-heads' g0_staged.py)
+   G0: rank-48 bins {'HEAD-literal': 80640, 'neither': 57312} ; window violations 0 ; profile = #3945's: True
+2. the host table of the fill (p-own's converter), its head list and its Lean parts (p-hostck's generator)
+   host table S5H-hosttab.json.gz: b3185813... (the one the Lean data was made from)
+   head list: 80,640 literal heads (40,320 + 40,320), 57,312 other rank-48 bins: ALL OK
+refused as required (exit 3): 25 <scratch>/regen-1/never-load --perturb load
+refused as required (exit 3): 25 <scratch>/regen-1/never-win --perturb win
+3. the dispatch (p-disp's generator): it does not depend on the fill, so Disp.lean must be #3945's byte for byte
+refused as required (exit 3): 360 1673 1567 <scratch>/regen-1/never-disp/Disp.lean
+4. the rate fact at the figure (e-r45m1's generator) and its sharpness control
+refused as required (exit 2): emit 3945H=<package>/generators/tree/wht45/allheads/bB-data/tools/profile3945H.json 17581521 <scratch>/regen-1/never-rate/lean
+   (Rate3945H.lean is design B's rate module: the generic bridge files of this closure import it; not used for this figure)
+4F. the FULL cut's rate fact at the figure (fc-rate's generator, e-r45m1's with a doc-text option) and its sharpness control
+refused as required (exit 2): emit 3945F=<package>/generators/tree/wht45/fullcut/fc-rate/tools/profile3945F.json 17806936 <scratch>/regen-1/never-rateF/lean
+5. the hand-written fill-dependent files, instantiated for the fill (bB-data's mk_3945H.py: exact counted replacements)
+6. the statement chain at the figure (i-skel's mk_l3945.py, fc-engine's copy with the comment-only --word option)
+refused as required (exit 2): --profile 3945F=<package>/generators/tree/wht45/fullcut/fc-engine/tools/profile3945F.json --word the full-cut #3945 word with every head kept (Dugongue, staged544 T360 terminal-gap fill, PR #3945 of CrocSwap/integer-mult-bounds, with the all-heads fill of round wht45/reopt: its 80,640 literal rank-48 heads removed entirely, target 25 on their arrays, and its other 57,312 idle rank-48 blocks split 24 + 24, every paid rank at most 24)
+refused as required (exit 2): --num 17806936 --profile 3945F=<package>/generators/tree/wht45/fullcut/fc-engine/tools/profile3945F.json
+7. comparison with ../SHA256SUMS (overlay) and ../controls/
+   controls/NegHeads.lean: byte-identical
+   controls/NegHeadsOld.lean: byte-identical
+   controls/NegRes.lean: byte-identical
+   controls/NegGlob.lean: byte-identical
+   controls/Rate3945FSharpCtl.lean contains the regenerated Rate3945FSharp.lean below its imports: True
+   design-B files not imported here (Work/L3945H/Engine, EngineOfGeomW): byte-identical to design B's package
+REGENERATE: SOMETHING FAILED (log <scratch>/regen-1/regenerate.log)

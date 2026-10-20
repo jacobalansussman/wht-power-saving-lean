@@ -1,0 +1,22 @@
+trace check 105a: id 105  transvection -35 (table 105, -35)
+Levi orbits on the distinct radical weights of 105a: [7, 7, 28]
+dim N 56  profile 20 38 49 (Theorem M: 20, 38, 49)
+dim E = 7
+cap module dim 20
+S3 (coordinate permutations): symmetrised plain program has 12 moves for 1 fixed array; hook per-irrep caps [40. 18. 22.] vs demand [9. 3. 7.] -> True; 105a caps [80. 40. 40.] vs demand [17.  8.  7.] -> True
+|S4_111| = 24
+S4 fixing address 111: symmetrised plain program has 48 moves for 1 fixed array; hook per-irrep caps [40. 58. 62. 22. 18.] vs demand [1. 3. 5. 2. 0.] -> True; 105a caps [ 80. 120. 120.  40.  40.] vs demand [5. 6. 6. 1. 2.] -> True
+class rep of order 2: symmetrised plain program has 6 moves for 1 fixed array; hook per-irrep caps [30. 30.] vs demand [16. 12.] -> True; 105a caps [60. 60.] vs demand [24. 25.] -> True
+class rep of order 3: symmetrised plain program has 9 moves for 1 fixed array; hook per-irrep caps [30. 30. 30.] vs demand [ 9.  9. 10.] -> True; 105a caps [60. 60. 60.] vs demand [17. 17. 15.] -> True
+class rep of order 4: symmetrised plain program has 12 moves for 1 fixed array; hook per-irrep caps [30. 30. 30. 30.] vs demand [8. 8. 8. 4.] -> True; 105a caps [60. 60. 60. 60.] vs demand [12. 12. 12. 13.] -> True
+class rep of order 4: symmetrised plain program has 12 moves for 1 fixed array; hook per-irrep caps [30. 30. 30. 30.] vs demand [8. 8. 8. 4.] -> True; 105a caps [60. 60. 60. 60.] vs demand [12. 12. 12. 13.] -> True
+class rep of order 4: symmetrised plain program has 12 moves for 1 fixed array; hook per-irrep caps [30. 30. 30. 30.] vs demand [8. 8. 6. 6.] -> True; 105a caps [60. 60. 60. 60.] vs demand [12. 12. 12. 13.] -> True
+class rep of order 6: symmetrised plain program has 18 moves for 1 fixed array; hook per-irrep caps [60. 30. 30.] vs demand [9. 3. 7.] -> True; 105a caps [120.  60.  60.] vs demand [17.  8.  7.] -> True
+class rep of order 7: symmetrised plain program has 21 moves for 1 fixed array; hook per-irrep caps [30. 30. 30. 30. 30. 30. 30.] vs demand [4. 4. 4. 4. 4. 4. 4.] -> True; 105a caps [60. 60. 60. 60. 60. 60. 60.] vs demand [7. 7. 7. 7. 7. 7. 7.] -> True
+class rep of order 8: symmetrised plain program has 20 moves for 1 fixed array; hook per-irrep caps [26. 26. 50. 24. 24.] vs demand [3. 5. 8. 3. 1.] -> True; 105a caps [ 50.  50. 100.  50.  50.] vs demand [ 6.  6. 12.  6.  7.] -> True
+class rep of order 12: symmetrised plain program has 36 moves for 1 fixed array; hook per-irrep caps [30. 30. 30. 90.] vs demand [1. 1. 2. 8.] -> True; 105a caps [ 60.  60.  60. 180.] vs demand [ 5.  5.  3. 12.] -> True
+class rep of order 12: symmetrised plain program has 36 moves for 1 fixed array; hook per-irrep caps [30. 30. 30. 90.] vs demand [1. 1. 2. 8.] -> True; 105a caps [ 60.  60.  60. 180.] vs demand [ 5.  5.  3. 12.] -> True
+class rep of order 21: symmetrised plain program has 63 moves for 1 fixed array; hook per-irrep caps [30. 30. 30. 90. 90.] vs demand [1. 1. 2. 4. 4.] -> True; 105a caps [ 60.  60.  60. 180. 180.] vs demand [3. 3. 1. 7. 7.] -> True
+class rep of order 24: symmetrised plain program has 48 moves for 1 fixed array; hook per-irrep caps [62. 58. 22. 40. 18.] vs demand [ 5.  3.  2.  1. -0.] -> True; 105a caps [120. 120.  40.  80.  40.] vs demand [6. 6. 1. 5. 2.] -> True
+class rep of order 24: symmetrised plain program has 48 moves for 1 fixed array; hook per-irrep caps [62. 58. 22. 40. 18.] vs demand [ 5.  3.  2.  1. -0.] -> True; 105a caps [120. 120.  40.  80.  40.] vs demand [6. 6. 1. 5. 2.] -> True
+ALL CALIBRATIONS PASS: True [3s]

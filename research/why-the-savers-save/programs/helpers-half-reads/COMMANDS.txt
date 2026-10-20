@@ -1,0 +1,24 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+d-halfread, 13 Oct 2026. Every run < 10 s, small memory, python3 -I (3.9 here; audit_local_py39.py only replaces int.bit_count).
+WORD = ../u-helpers-ours/u8-FULL-WORD.json.gz (hub FULL-WORD of the U8 local word used by #942; audit_local passes on it)
+  python3 -I ../../bound-check/m-anatomy/pricer.py --profile '{"1":848490,"2":112554,"3":148518,"4":53946,"5":23976,"8":2664,"48":11086}' --m 73 --W 33152 --deficit 11840   # #942 control
+  python3 -I audit_local_py39.py --word $WORD --output base/audit_base.json      # PR870 independent U8 audit, baseline PASS
+  python3 -I halfread_r.py halfread_r.json          # STEP 1: exact small case, r = 1..4 consumers, shapes I and N
+  python3 -I planes.py $WORD                         # 168 planes: every plane has exactly two gates at P (merge, copy)
+  python3 -I copies.py $WORD copies.json             # the 168 second copies: writers, readers, consumers
+  python3 -I screen.py $WORD copies.json             # literal half-read re-route per (copy, reader): 0 of 168 copies pass
+  python3 -I obstruction.py $WORD copies.json screen.json obstruction.json   # the exact obstruction counts
+  python3 -I bvalue.py $WORD copies.json             # partner b keeps beta? (112 planes: no, rewritten in A)
+  python3 -I carriers.py $WORD copies.json; python3 -I carriers_why.py $WORD copies.json; python3 -I mcopy_lines.py $WORD copies.json   # g-small-2 jump-over carriers: none
+  python3 -I swap_screen.py $WORD copies.json        # copy-of-copy re-route: 33 frame-feasible, 0 pass timing
+  python3 -I branch_merge.py $WORD copies.json       # variant without half reads (fold h3 into a's branch): 0
+  python3 -I price_whatif.py                         # WHAT-IF prices on #942 (no construction)
+BIT SIDE (#589's tuned word, copied into bit/ with the hub's wlib.py, xcheck_p.py and bit moment engine):
+  python3 -I bit_copies.py bit/bitE8mut-p111-tuned.json.gz bit_copies.json; python3 -I bit_carriers.py bit/bitE8mut-p111-tuned.json.gz bit_copies.json
+  python3 -I bit/retire470.py; python3 -I bit/retire_carriers.py   # carrier 470 retired literally (R 439 -> 438); the other 6 fail
+  python3 -I bit/xcheck_p.py bit/bitE8mut-p111-tuned-retire470-R438.json.gz --json bit/xcheck_retire470.json   # hub independent checker: PASS
+  python3 -I bit/price_bit.py                        # bit c control exact; bracket over where the freed width lands

@@ -1,0 +1,16 @@
+Skeptic v-ex-dimension-logic, 14 Oct 2026. Independent code (own BFS group B, |B|=3072; own A = span rho(B), dim 88 (VV), 224 (VL2);
+full Jacobian over every coordinate direction, no sketch; SVD rank at 1e-9 relative). The "dim rho(C[G])" line the scripts print
+(108/304) comes from a closure loop that was cut short and should be ignored; the ranks do not use it.
+Run with Python 3 and numpy.
+VV  W=1 s=1: P=264  rank=120   (sv gap 1.27e-01 | 4.4e-15)
+VV  W=1 s=2: P=528  rank=136   (2.8e-02 | 5.2e-15)
+VV  W=2 s=3: P=1672 rank=520   (4.5e-02 | 5.4e-15)
+VV  W=2 s=4: P=2288 rank=544   (7.4e-03 | 6.1e-15)
+VV  W=3 s=5: P=4312 rank=1192  (1.7e-02 | 6.4e-15)
+VL2 W=1 s=1: P=672  rank=352   (6.6e-02 | 1.9e-15)
+VL2 W=1 s=2: P=1344 rank=416   (1.7e-02 | 2.5e-15)
+VL2 W=2 s=3: P=4256 rank=1568  (3.5e-02 | 2.7e-15)
+Damped Gauss-Newton from random starts (solve23.py / solve35.py), V(x)V block 2:
+1 in 2: residual 1.4e-13 after 9 it., max|coef| 1.23; rank at solution 132 (gap 2.4e-2 | 9e-14), generic 136
+2 in 3: residual 1.2e-13 after 8 it., max|coef| 1.19; rank at solution 520 (9.8e-3 | 4.1e-15), generic 520
+3 in 5: residual 3.2e-13 after 9 it., max|coef| 1.20; rank at solution 1176 (3.2e-3 | 3.5e-15), generic 1192

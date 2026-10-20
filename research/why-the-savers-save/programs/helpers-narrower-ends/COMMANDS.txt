@@ -1,0 +1,18 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+d-hpe-multigate, 13 Oct 2026.  All python3 -I (3.9 on this Mac), seconds each, small memory.  From this folder:
+  python3 -I ../../bound-check/m-anatomy/pricer.py --profile '{"1":848490,"2":112554,"3":148518,"4":53946,"5":23976,"8":2664,"48":11086}' --m 73 --W 33152 --deficit 11840   # #942 control
+  python3 -I vendor/audit_local_pr870_py39.py --word U8-FULL-WORD.json.gz --output audit_control.json   # PR870 independent audit (bit_count -> bin().count only)
+  python3 -I cones.py U8-FULL-WORD.json.gz cones.json            # least admissible end of every helper, fixed end-B frames (= hub #988 census)
+  python3 -I classify.py U8-FULL-WORD.json.gz cones.json classify.json   # STEP 1 table for the 378 FULL-ended (272 = 8->9 in cleanup)
+  python3 -I lazy_cones.py U8-FULL-WORD.json.gz cones.json lazy_cones.json   # same with least (join) A/B frames: any frame re-annotation
+  python3 -I groups.py U8-FULL-WORD.json.gz lazy_cones.json groups.json      # the 20 rank-7 end groups of the 70 dim-8 ends, exact deltas
+  python3 -I make_word.py U8-FULL-WORD.json.gz lazy_cones.json W-g17g18.json.gz 588,589,598,599   # explicit word
+  python3 -I vendor/audit_local_pr870_py39.py --word W-g17g18.json.gz --output audit-g17g18.json  # PASS
+  python3 -I make_word.py U8-FULL-WORD.json.gz lazy_cones.json W-g17.json.gz 588,589             # = hub PR1030's 12 annotation changes
+  python3 -I price_variants.py                                   # prices
+U8-FULL-WORD.json.gz = copy of bound-check/k-word/data/u8-native/local/FULL-WORD.json.gz (content sha256 090fd574...).
+dl1030/ = PROOF.md, SEARCH.json, END-RECIPE.json of hub PR1030 at d71857cd (read-only gh api), for comparison only.

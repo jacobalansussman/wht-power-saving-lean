@@ -1,0 +1,158 @@
+{
+ "cert": "data/c588m.gcert.json.gz",
+ "mutable": true,
+ "main": {
+  "spar": [
+   10,
+   21,
+   4,
+   8,
+   8
+  ],
+  "espar": [
+   10,
+   8,
+   4,
+   8,
+   8
+  ],
+  "scal": [
+   {
+    "lo": 0,
+    "n": 28,
+    "value": true,
+    "adds": 4243,
+    "seconds": 0.02
+   },
+   {
+    "lo": 28,
+    "n": 28,
+    "value": true,
+    "adds": 4243,
+    "seconds": 0.02
+   },
+   {
+    "lo": 56,
+    "n": 28,
+    "value": true,
+    "adds": 4243,
+    "seconds": 0.02
+   },
+   {
+    "lo": 84,
+    "n": 28,
+    "value": true,
+    "adds": 4243,
+    "seconds": 0.02
+   }
+  ],
+  "ychk": {
+   "lo": 0,
+   "n": 112,
+   "value": true,
+   "adds": 224,
+   "seconds": 0.0
+  },
+  "echk": [
+   {
+    "batch": 0,
+    "size": 80,
+    "value": true,
+    "adds": 4243,
+    "seconds": 0.01
+   },
+   {
+    "batch": 1,
+    "size": 80,
+    "value": true,
+    "adds": 4243,
+    "seconds": 0.01
+   },
+   {
+    "batch": 2,
+    "size": 68,
+    "value": true,
+    "adds": 4243,
+    "seconds": 0.01
+   }
+  ],
+  "all_true": true
+ },
+ "sw_minus_1": {
+  "spar": [
+   10,
+   20,
+   4,
+   8,
+   8
+  ],
+  "espar": [
+   10,
+   7,
+   4,
+   8,
+   8
+  ],
+  "scal": [
+   {
+    "lo": 0,
+    "n": 28,
+    "value": false,
+    "why": "addNC: digit reaches 2^(sw-1) (or tag bit 63)",
+    "seconds": 0.01
+   },
+   {
+    "lo": 28,
+    "n": 28,
+    "value": false,
+    "why": "addNC: digit reaches 2^(sw-1) (or tag bit 63)",
+    "seconds": 0.01
+   },
+   {
+    "lo": 56,
+    "n": 28,
+    "value": false,
+    "why": "addNC: digit reaches 2^(sw-1) (or tag bit 63)",
+    "seconds": 0.01
+   },
+   {
+    "lo": 84,
+    "n": 28,
+    "value": false,
+    "why": "addNC: digit reaches 2^(sw-1) (or tag bit 63)",
+    "seconds": 0.01
+   }
+  ],
+  "ychk": {
+   "lo": 0,
+   "n": 112,
+   "value": true,
+   "adds": 224,
+   "seconds": 0.0
+  },
+  "echk": [
+   {
+    "batch": 0,
+    "size": 80,
+    "value": false,
+    "why": "addNC: digit reaches 2^(sw-1) (or tag bit 63)",
+    "seconds": 0.01
+   },
+   {
+    "batch": 1,
+    "size": 80,
+    "value": true,
+    "adds": 4243,
+    "seconds": 0.01
+   },
+   {
+    "batch": 2,
+    "size": 68,
+    "value": true,
+    "adds": 4243,
+    "seconds": 0.01
+   }
+  ],
+  "all_true": false
+ }
+}

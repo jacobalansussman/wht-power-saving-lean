@@ -1,0 +1,11 @@
+[timing lock] waiting for timing lock 04:47:26
+[timing lock] got lock 04:48:10; load: { 31.21 34.08 36.66 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=4096 mode=mt SW=16 PFD=4 col radices: 8 8 8 8
+# FFTW plans (MEASURE, time limit) took 0.0 s
+# cluster: NEON threads use KFR-d; SME takes 8 row units (8 rows each) at a time; tail 3
+CHECK cluster step (1 SME + 3 NEON) read at -n vs pocketfft: max rel 1.500e-15  PASS
+CHECK cluster step (4 NEON) read at -n vs pocketfft: max rel 7.999e-16  PASS
+RESULT cluster propagation step 4096^2 c128     cluster 1 SME + 3 NEON       best    58.4444  median    60.7434  ns/call(ms)  (calls/rep 4)
+RESULT cluster propagation step 4096^2 c128     cluster 4 NEON (same plan)   best    73.5484  median    74.5014  ns/call(ms)  (calls/rep 3)
+RESULT cluster propagation step 4096^2 c128     1 SME thread (others spin)   best    92.3169  median    97.1794  ns/call(ms)  (calls/rep 3)

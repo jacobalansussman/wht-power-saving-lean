@@ -1,0 +1,14 @@
+The kernel program is `SeamC588MHH.engine_C588MHHx` (Work/FourierC588MHH/Seam.lean of the C588MHH package): the
+certificate `GXD.C588M` of Jeremy Kothe's #588 circuit (CrocSwap/integer-mult-bounds hub) as Ryan Shea
+converted it to Lean (his conversion pipeline, generators and `complex588` instantiation), with Shea's 112
+source copies removed: the sources are written in place and restored, which the mutable-sources engine
+`Work/XMut/*` (Jacob Sussman's Lean proof, after Zhihao Chen's (jacklightChen) written scalar-interface
+argument on hub #425) allows; and with same-run hosting (DaysSky, hub #442): bank entries are held in data
+slots that are idle in the same run, through the hosted network `Work/XHost/*` (Jacob Sussman's Lean proof,
+ending in `XHost.engine_of_ginv_host`; host and bank tables checked by `XHost.hostSchedK`, whose soundness
+is `HostSched.ofTab_fitsR`), with 111 banks and unit width 7279.  The hosted network restates lemmas that
+were already in Shea's tree (`B401.gauged_step`, `B401.gauged_Wn`, `GX.entW_spec`, `GX.entW_form`,
+`GX.gauge_step`), built on Dugongue's #401 entrance gauges, Nil Mamano's gauged #401 extension and Jacob
+Sussman's `core_nested`.  Bank geometry: Dugongue (#401) and jacklightChen (#377); Fourier chain templates:
+Nil Mamano.  Everything is checked in Lean through the engine and checkers of Jacob Sussman's
+wht-power-saving-lean, at the exponent `1 - 15699306/10^10`.

@@ -1,0 +1,84 @@
+OURS START Mon Oct 19 12:45:13 PM UTC 2026 mode=full host=f64332260d21
+base tree built (waited 300s; controls still running)
+/content/work/ours/in/ours-u8x0hq-overlay.tgz: OK
+OVERLAY-OK (257 files)
+copy done in 186s; 9.7G
+mathlib: d13f23b723b8a846827a245b89c10fc7d3f11612; packages: aesop batteries Cli importGraph LeanSearchClient mathlib plausible proofwidgets Qq 
+IN-TREE-OK: 257 overlay files + lakefile (-- fsp-cc (split centres on mutable sources) lean_lib CSX where globs := #[`CSX.+] )
+tracked changes:  M lean/complex588/lakefile.lean 
+   (slot: waited 0s; heavy lean now 1, avail 41165 MB)
+=== build START 12:53:21
+=== build END rc=0 wall=940s maxrss_kb=8925304 13:09:01
+Build completed successfully (9330 jobs).
+   134s Work.GCert.Data.Gen.U8X0ZChk0
+   127s Work.GCert.Data.Gen.U8X0ZChk1
+   105s Work.XHost.Data.HU8X0HQSched
+   71s Work.GCert.Data.Gen.U8X0ZChk3
+   71s Work.GCert.Data.Gen.U8X0ZChk2
+   69s Work.GCert.Data.Gen.U8X0ZChk4
+   43s Work.XHost.Frames
+   42s Work.XHost.HDef
+   40s Work.XHost.HGeom
+   40s Work.GCert.Data.Gen.U8X0Sched
+   (slot: waited 0s; heavy lean now 0, avail 50476 MB)
+=== nobuild START 13:09:01
+=== nobuild END rc=0 wall=17s maxrss_kb=1003776 13:09:18
+All targets up-to-date (9330 jobs).
+   (slot: waited 0s; heavy lean now 0, avail 50474 MB)
+=== axioms START 13:09:18
+=== axioms END rc=0 wall=7s maxrss_kb=6898664 13:09:25
+'OAI.PowerSaving.transform_mainU8X0HQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainU8X0HQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8X0HQ_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+   (slot: waited 0s; heavy lean now 0, avail 50459 MB)
+=== axioms-glue START 13:09:25
+=== axioms-glue END rc=0 wall=8s maxrss_kb=6897436 13:09:33
+'OAI.PowerSaving.BlockAccounting.term_le4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0HQ.hs_ok' depends on axioms: [propext]
+'GXD.U8X0HQ.hfits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0HQ.hwidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0HQ.hprice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BridgeRate.U8X0HQ.unit_cost_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BlockAccounting.fold_U8X0HQx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.engine_of_ginv_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamU8X0HQ.engine_U8X0HQx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8X0HQ_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0.ginv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0.scalOKZX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0.exitRC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0.validX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.ginvXOfZS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.CSX.GLabXZS.inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+   (slot: waited 0s; heavy lean now 0, avail 50493 MB)
+=== hsneg START 13:09:33
+=== hsneg END rc=0 wall=53s maxrss_kb=8637560 13:10:26
+hostSchedK negative rc=0 (0 = the kernel proved '= false')
+sorry lines: 20
+admit lines: 0
+forbidden-construct lines: 5
+Work/FourierU8X0HH/Seam.lean:40:No `sorry`, no `native_decide`.
+Work/FourierU8X0HQ/Seam.lean:40:No `sorry`, no `native_decide`.
+Work/FourierU8X0/Seam.lean:42:No `sorry`, no `native_decide`.
+Work/FourierU8XMHH/Seam.lean:40:No `sorry`, no `native_decide`.
+Work/FourierU8XM/Seam.lean:42:No `sorry`, no `native_decide`.
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74  /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierU8X0HQ (1 - 16256629/10^10): byte-identical to my derivation
+challenge FourierU8X0HQNeg (1 - 16256630/10^10): byte-identical to my derivation
+Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9 (ours: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9)
+   (slot: waited 0s; heavy lean now 0, avail 50508 MB)
+=== compare-pos START 13:10:27
+=== compare-pos END rc=0 wall=88s maxrss_kb=16015504 13:11:55
+compare-pos rc=0
+RESULT: PASS
+   (slot: waited 0s; heavy lean now 0, avail 50489 MB)
+=== compare-neg START 13:11:55
+=== compare-neg END rc=1 wall=75s maxrss_kb=16141272 13:13:10
+compare-neg rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentU8X0HQ: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentU8X0HQ._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentU8X0HQ: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentU8X0HQ._proof_1: type differs
+RESULT: FAIL
+OURS FAILED: sorry/admit found
+OURS END Mon Oct 19 01:13:10 PM UTC 2026
+EXIT 1

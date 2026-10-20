@@ -1,0 +1,103 @@
+TEST START Mon Oct 19 03:02:19 PM UTC 2026 host=0629706ddf60
+copy 190s 9.7G
+base HEAD 52394849c7ecf3412d39b925d75fc7fdb98994d8; tracked changes: 0
+applied 259 lines to /content/work/release-prep/shea/lean/complex588; git status lines: 258
+apply rc=0
+XExit/Pack.lean
+lakefile.lean: 2 line(s) added: ['lean_lib XExit where globs := #[`XExit.+]', 'lean_lib CSX where globs := #[`CSX.+]']
+mode add, variant default
+-- The development of this repository, with the comparator challenge and solution modules
+-- (`Work.CarrierCheck.ChallengeB2Ke16x` etc.); not from openai/math.
+lean_lib Work where globs := #[`Work.+]
+
+lean_lib XExit where globs := #[`XExit.+]
+lean_lib CSX where globs := #[`CSX.+]
+START Mon Oct 19 03:05:31 PM UTC 2026 tree=/content/work/release-prep/shea/lean/complex588 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 package=u8x0hq
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP 01-Work.BlockAccounting.Moment4 START Mon Oct 19 03:05:31 PM UTC 2026 cmd: lake build Work.BlockAccounting.Moment4
+=== STEP 01-Work.BlockAccounting.Moment4 END rc=0 wall=31s last: Build completed successfully (3093 jobs).
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP 02-Work.XHost.U8X0HQ START Mon Oct 19 03:06:02 PM UTC 2026 cmd: lake build Work.XHost.U8X0HQ
+=== STEP 02-Work.XHost.U8X0HQ END rc=0 wall=734s last: Build completed successfully (9314 jobs).
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP 03-Work.FourierU8X0HQ.Main START Mon Oct 19 03:18:16 PM UTC 2026 cmd: lake build Work.FourierU8X0HQ.Main
+=== STEP 03-Work.FourierU8X0HQ.Main END rc=0 wall=112s last: Build completed successfully (9327 jobs).
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP 04-Work.FourierU8X0HQ.UniformFourierChallenge START Mon Oct 19 03:20:08 PM UTC 2026 cmd: lake build Work.FourierU8X0HQ.UniformFourierChallenge
+=== STEP 04-Work.FourierU8X0HQ.UniformFourierChallenge END rc=0 wall=16s last: Build completed successfully (8924 jobs).
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP 05-Work.FourierU8X0HQNeg.UniformFourierChallenge START Mon Oct 19 03:20:24 PM UTC 2026 cmd: lake build Work.FourierU8X0HQNeg.UniformFourierChallenge
+=== STEP 05-Work.FourierU8X0HQNeg.UniformFourierChallenge END rc=0 wall=16s last: Build completed successfully (8924 jobs).
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP 06-Work.FourierU8X0HQ.Axioms START Mon Oct 19 03:20:40 PM UTC 2026 cmd: lake build Work.FourierU8X0HQ.Axioms
+=== STEP 06-Work.FourierU8X0HQ.Axioms END rc=0 wall=14s last: Build completed successfully (9328 jobs).
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP 07-Work.XHost.HBank START Mon Oct 19 03:20:54 PM UTC 2026 cmd: lake build Work.XHost.HBank
+=== STEP 07-Work.XHost.HBank END rc=0 wall=8s last: Build completed successfully (9220 jobs).
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP 08-Work.XHost.HEnd START Mon Oct 19 03:21:02 PM UTC 2026 cmd: lake build Work.XHost.HEnd
+=== STEP 08-Work.XHost.HEnd END rc=0 wall=8s last: Build completed successfully (9219 jobs).
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP build-targets START Mon Oct 19 03:21:11 PM UTC 2026 cmd: lake build Work.BlockAccounting.Moment4 Work.XHost.U8X0HQ Work.FourierU8X0HQ.Main Work.FourierU8X0HQ.UniformFourierChallenge Work.FourierU8X0HQNeg.UniformFourierChallenge Work.FourierU8X0HQ.Axioms Work.XHost.HBank Work.XHost.HEnd
+=== STEP build-targets END rc=0 wall=8s last: Build completed successfully (9330 jobs).
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP axioms START Mon Oct 19 03:21:19 PM UTC 2026 cmd: lake env lean Work/FourierU8X0HQ/Axioms.lean
+=== STEP axioms END rc=0 wall=7s last: 'OAI.PowerSaving.RAM.hillsU8X0HQ_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP control-glue-axioms START Mon Oct 19 03:21:26 PM UTC 2026 cmd: lake env lean /content/work/release-prep/in/package/u8x0hq/meta/AxU8X0HQ.lean
+=== STEP control-glue-axioms END rc=0 wall=8s last: 'OAI.PowerSaving.CSX.GLabXZS.inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP control-hostSchedK-negative START Mon Oct 19 03:21:34 PM UTC 2026 cmd: lake env lean /content/work/release-prep/in/package/u8x0hq/meta/HsU8X0HQNeg.lean
+=== STEP control-hostSchedK-negative END rc=0 wall=53s last: 
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP compare START Mon Oct 19 03:22:27 PM UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierU8X0HQ.UniformFourierChallenge Work.FourierU8X0HQ.Main OAI.PowerSaving.transform_mainU8X0HQ OAI.PowerSaving.convolution_mainU8X0HQ
+=== STEP compare END rc=0 wall=102s last: RESULT: PASS
+/content/work/release-prep/in/scripts/build-and-check.sh: line 36: [: 0
+0: integer expression expected
+=== STEP compare-negative START Mon Oct 19 03:24:09 PM UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierU8X0HQNeg.UniformFourierChallenge Work.FourierU8X0HQ.Main OAI.PowerSaving.transform_mainU8X0HQ OAI.PowerSaving.convolution_mainU8X0HQ
+=== STEP compare-negative END rc=1 wall=87s last: RESULT: FAIL
+PASS compare: RESULT: PASS
+PASS compare-negative: fails (rc != 0)
+PASS compare-negative: the exponent definition differs (decimalExponentU8X0HQ)
+PASS axioms: no sorryAx
+PASS statement files: both identical to OpenAI's statement with only the exponent and names changed
+PASS Lean control glue-axioms compiles
+PASS Lean control hostSchedK-negative compiles
+PASS axioms: OAI.PowerSaving.transform_mainU8X0HQ only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.convolution_mainU8X0HQ only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.RAM.hillsU8X0HQ_program only on propext, Classical.choice, Quot.sound
+FAIL source scan: no forbidden word outside comments and the challenges' sorry (16 hits)
+FAIL source scan: no tracked file of the base tree changed
+   hit: Work/FourierU8X0HHNeg/UniformFourierChallenge.lean:327:  sorry
+   hit: Work/FourierU8X0HHNeg/UniformFourierChallenge.lean:331:  sorry
+   hit: Work/FourierU8X0HH/UniformFourierChallenge.lean:327:  sorry
+   hit: Work/FourierU8X0HH/UniformFourierChallenge.lean:331:  sorry
+   hit: Work/FourierU8X0Neg/UniformFourierChallenge.lean:327:  sorry
+   hit: Work/FourierU8X0Neg/UniformFourierChallenge.lean:331:  sorry
+   hit: Work/FourierU8X0/UniformFourierChallenge.lean:327:  sorry
+   hit: Work/FourierU8X0/UniformFourierChallenge.lean:331:  sorry
+   hit: Work/FourierU8XMHHNeg/UniformFourierChallenge.lean:327:  sorry
+   hit: Work/FourierU8XMHHNeg/UniformFourierChallenge.lean:331:  sorry
+   hit: Work/FourierU8XMHH/UniformFourierChallenge.lean:327:  sorry
+   hit: Work/FourierU8XMHH/UniformFourierChallenge.lean:331:  sorry
+   hit: Work/FourierU8XMNeg/UniformFourierChallenge.lean:327:  sorry
+   hit: Work/FourierU8XMNeg/UniformFourierChallenge.lean:331:  sorry
+   hit: Work/FourierU8XM/UniformFourierChallenge.lean:327:  sorry
+   hit: Work/FourierU8XM/UniformFourierChallenge.lean:331:  sorry
+SOME CHECK FAILED
+END Mon Oct 19 03:25:37 PM UTC 2026 rc=1
+check rc=1
+TEST END Mon Oct 19 03:25:37 PM UTC 2026

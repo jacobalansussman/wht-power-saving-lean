@@ -1,0 +1,32 @@
+{
+ "P1_block_spans": {
+  "{\"hyperplane_label_counts\": {\"0\": 1, \"4\": 14}, \"rank\": 4, \"targets_perp_containing_span\": 0, \"used_planes\": 12}": 14
+ },
+ "P2_entering_helpers(startdim,visits_plane,line_is_label,has_compatible_plane,has_plane_inside_its_chain)": {
+  "(1, False, False, True, True)": 56,
+  "(1, True, False, True, True)": 104,
+  "(4, False, False, False, False)": 32,
+  "(5, False, False, False, False)": 24
+ },
+ "P2_nonplane_entering_supply_chain_compatible": 56,
+ "P2_nonplane_entering_supply_any_plane_containing_start": 56,
+ "P4_target_reads_of_plane_helpers_by_phase": {
+  "cut": 84,
+  "compensation": 6320,
+  "B": 423
+ },
+ "P4_reads_where_another_register_holds_same_clean_row": {
+  "('compensation', (('h', 1),))": 400,
+  "('B', (('h', 1),))": 130,
+  "('B', (('x', 1),))": 35
+ },
+ "P3_per_block(helpers holding a clean in-block row before compensation and read by targets later, distinct rows)": {
+  "(11, 11)": 5,
+  "(12, 12)": 9
+ },
+ "P3_support_sizes_of_those_rows": {
+  "((2, 4), (4, 7))": 3,
+  "((2, 4), (4, 7), (8, 1))": 9,
+  "((2, 4), (4, 6), (8, 1))": 2
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "control_b": "0.001664727258740678855772",
+ "control_kappa": "1661960547713947/10^18",
+ "ablation_u8_block0": {
+  "faces,pair_toy rules (fixed 2 copies, no terminal)": 13,
+  "faces,+terminal": 22,
+  "faces,+q=4 copies": 16,
+  "faces,+q+terminal": 28,
+  "all,q,signed,terminal (m1 rules)": 36,
+  "all,unsigned": 32,
+  "all,no terminal": "20 (TL, bound 15)",
+  "P only, all": 36,
+  "P only, faces": 28
+ },
+ "market_block0": {
+  "FB0": 36,
+  "FB4": 34,
+  "FB8": 32,
+  "FB12": 30,
+  "FB16": 29,
+  "unlimited (inadmissible)": "20 (TL, bound 18)",
+  "P+H FB8": 34,
+  "P+LF FB8": 32
+ },
+ "all_blocks_FB8": {
+  "0": 32,
+  "1": 32,
+  "2": 32,
+  "3": 32,
+  "4": 32,
+  "5": 32,
+  "6": 32,
+  "7": 32,
+  "8": 32,
+  "9": 32,
+  "10": 32,
+  "11": 32,
+  "12": 32,
+  "13": 32
+ },
+ "lagrangian_lam_half_dual_bounds": {
+  "0": 34.0,
+  "1": 34.0,
+  "2": 34.0,
+  "3": 34.0,
+  "4": 34.0,
+  "5": 34.5,
+  "6": 34.5,
+  "7": 34.0,
+  "8": 34.0,
+  "9": 34.5,
+  "10": 34.5,
+  "11": 34.0,
+  "12": 34.5,
+  "13": 34.5
+ },
+ "m1_19_vs_30": "m1 without the per-target first-read cap reproduces 19 {LP:19} exactly: m1_runs.jsonl line 3 is the uncapped (inadmissible) model",
+ "total_model": 448,
+ "lagrangian_lower_bound": 423.0
+}

@@ -1,0 +1,69 @@
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:42:14: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:48:14: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:59:12: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:66:14: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:95:80: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:104:79: warning: This simp argument is unused:
+  Finset.sum_const_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [sum_const, card_univ, nsmul_eq_mul, mul_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:187:36: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:191:36: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:195:36: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:199:36: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:203:36: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:207:36: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:211:36: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:215:36: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:218:34: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:187:36: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:191:36: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:195:36: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:199:36: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:203:36: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:207:36: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:211:36: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:215:36: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/content/work/rf-wht/shea/lean/complex588/Work/XHost/HCert.lean:218:34: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'OAI.PowerSaving.XHost.GHost401.run' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.GHost401.runFull' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHost.ghost_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]

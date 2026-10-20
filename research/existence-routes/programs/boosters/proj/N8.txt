@@ -1,0 +1,9 @@
+m=8 r=1: N_r(s) = {0: 384, 1: 65151}  (total points 65535)
+m=8 r=2: N_r(s) = {0: 192, 1: 768, 2: 64575}  (total points 65535)
+m=8 r=3: N_r(s) = {1: 672, 2: 1344, 3: 63519}  (total points 65535)
+m=8 r=4: N_r(s) = {2: 1680, 3: 2400, 4: 61455}  (total points 65535)
+m=8 r=5: N_r(s) = {3: 3720, 4: 4464, 5: 57351}  (total points 65535)
+m=8 r=6: N_r(s) = {4: 7812, 5: 8568, 6: 49155}  (total points 65535)
+m=8 r=7: N_r(s) = {5: 16002, 6: 16764, 7: 32769}  (total points 65535)
+m=8 r=8: N_r(s) = {6: 32385, 7: 33150}  (total points 65535)
+random-pair checks agree

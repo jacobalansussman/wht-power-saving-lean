@@ -1,0 +1,71 @@
+{
+ "agent": "t-egraph (track 3: superoptimise the k8 word)",
+ "date": "2026-10-13",
+ "word": "K8-FULL-WORD.json.gz = #1018 seven-slot k8 word as selected by #1042 (sha256 49596aa4...)",
+ "control": {
+  "b": "0.001674989015937672328468",
+  "kappa": "0.001672188119205421",
+  "audit": "PASS",
+  "profile": {
+   "1": 2412,
+   "2": 418,
+   "3": 432,
+   "4": 142,
+   "5": 82,
+   "8": 8
+  }
+ },
+ "model": {
+  "climbed_positions": 5413,
+  "A": 3451,
+  "B": 1846,
+  "tail": 116,
+  "registers": 704,
+  "proxy_cost": 20241.3597,
+  "centre_paths": 141.5,
+  "forced_positions_fixed_order": 3672,
+  "forced_gates_any_order": 2979
+ },
+ "results": {
+  "fixed_order_frames_exact_MILP": "optimum 20241.3597 = word's own frames (all subspaces in [P,Q]; all gaps <= 3); 0.4 s",
+  "run_moves_with_propagation": "6236 tried, 7 legal, all worse",
+  "single_commuting_reorders": "6342: 4935 neutral (most cosmetic), 35 worse, 1372 illegal, 0 better (same on the stacked pair word W-k8-574-575-580-581)",
+  "read_the_twin": "1034 dyadic options: 280 neutral, 754 frame-illegal, 0 better",
+  "re_association_two_reads_to_one": "106 options: 27 not movable, 79 frame-illegal",
+  "cancellation_merge_pairs": "14 adjacent same-frame merges (no price effect); 283 cancel pairs all blocked",
+  "sink_to_free_cleanup": "10 gates; audited PASS; no price change",
+  "hoist_to_free_empty_frame": "1182 = already there",
+  "stochastic_search": "SA v1/v2/v3, ~18k accepted moves incl. 600+ cut crossings and uphill tempering: no improvement",
+  "global_list_scheduling": "any order sorted by the word's frames (up to 5414 gates displaced) has the same exact optimum; non-frame priorities infeasible",
+  "label_space_local_search": "59415 seeds, 184 legal (145 neutral, 39 worse), closure repair adds none",
+  "exhaustive_windows": "10 windows of 10 consecutive A gates (up to 288 trace classes each) + 4 of 8: 0 better",
+  "exhaustive_accumulation_orders": "all 112 targets, 203 runs <= 7 gates, 564 legal permutations: 0 better",
+  "label_space_MILP_vocab": "optimal 20241.3597 (all commuting reorders within sections, word's 1004-frame vocabulary)",
+  "label_space_MILP_wide3": "optimal 20241.3597 (every subspace for dependency-interval gaps <= 3)",
+  "label_space_MILP_wide4": "optimal 20241.3597 (every subspace for gaps <= 4; 451.7 s)",
+  "k8_twin_pair_words": "frame-optimal at their order; vocabulary label-space MILP optimal for W-k8-574-575-580-581",
+  "target_levels": "each centre serves 22 targets with first frames (24) x7, (30) x7 and 8 distinct 2-dim frames: not nested, nonzero levels cost more",
+  "label_space_MILP_wide5": "every subspace for gaps <= 5 (all but 8 gates): 188k vars; stopped after ~3500 s in a HiGHS restart; incumbent = the word (20241.3597), dual bound 20239.7025 => no labelling of this family beats the word by more than 1.66 proxy units (about 1.3e-7 in kappa, linearised); not closed"
+ },
+ "what_if_ceilings": {
+  "fixed_order_decoupled": {
+   "proxy": 20169.81,
+   "kappa": "0.001677839465173976",
+   "status": "what-if, unattainable: ignores the equal-frame rule"
+  },
+  "dependency_only": {
+   "proxy": 19041.07,
+   "b": "0.001775655048936852",
+   "kappa": "0.001730427469823602 (bit side binds)",
+   "status": "gauge only: ignores that one of two commuting gates on a register goes first"
+  }
+ },
+ "audited_words": [
+  "W-walk150 (150 reorders, 1498 gates displaced)",
+  "W-sa2-9 (cut crossings, A 3451 -> 3460)",
+  "W-ls-0 (label-space relabels + full re-sort, 3311 A and 1560 B positions moved)",
+  "W-sink10"
+ ],
+ "best_verified_price_change": 0,
+ "notes": "proxy unit ~ 7.9e-8 kappa (from the exact price of one 1+1->2 merge per call: +1.094e-7 kappa for 1.386 proxy units)"
+}

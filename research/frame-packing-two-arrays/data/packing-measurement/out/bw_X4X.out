@@ -1,0 +1,30 @@
+X4X backward B1/clean: M=6642 P=896 (0.13 per move) B=3616 D=0 I0=1122 maxlab=2 | x = x - y True, y kept True, slots restored True
+    x: M=896 P=896 D=0 I0=0 P/M=1.00
+    y: M=896 P=0 D=0 I0=0 P/M=0.00
+    s: M=4786 P=0 D=0 I0=1122 P/M=0.00
+    c: M=64 P=0 D=0 I0=0 P/M=0.00
+X4X backward B1/dirty: M=6642 P=21356 (3.22 per move) B=25606 D=0 I0=0 maxlab=19 | x = x - y True, y kept True, slots restored True
+    x: M=896 P=1792 D=0 I0=0 P/M=2.00
+    y: M=896 P=0 D=0 I0=0 P/M=0.00
+    s: M=4786 P=19564 D=0 I0=0 P/M=4.09
+    c: M=64 P=0 D=0 I0=0 P/M=0.00
+X4X backward B1/dirty-one: M=6642 P=5456 (0.82 per move) B=9706 D=0 I0=0 maxlab=3 | x = x - y True, y kept True, slots restored True
+    x: M=896 P=1792 D=0 I0=0 P/M=2.00
+    y: M=896 P=0 D=0 I0=0 P/M=0.00
+    s: M=4786 P=3664 D=0 I0=0 P/M=0.77
+    c: M=64 P=0 D=0 I0=0 P/M=0.00
+X4X backward B2/clean: M=6642 P=57271 (8.62 per move) B=52365 D=3813 I0=1122 maxlab=61 | x = x - y True, y kept True, slots restored True
+    x: M=896 P=0 D=0 I0=0 P/M=0.00
+    y: M=896 P=1680 D=0 I0=0 P/M=1.88
+    s: M=4786 P=52007 D=3365 I0=1122 P/M=10.87
+    c: M=64 P=3584 D=448 I0=0 P/M=56.00
+X4X backward B2/dirty: M=6642 P=77731 (11.70 per move) B=74355 D=3813 I0=0 maxlab=74 | x = x - y True, y kept True, slots restored True
+    x: M=896 P=896 D=0 I0=0 P/M=1.00
+    y: M=896 P=1680 D=0 I0=0 P/M=1.88
+    s: M=4786 P=71571 D=3365 I0=0 P/M=14.95
+    c: M=64 P=3584 D=448 I0=0 P/M=56.00
+X4X backward B2/dirty-one: M=6642 P=61831 (9.31 per move) B=58455 D=3813 I0=0 maxlab=62 | x = x - y True, y kept True, slots restored True
+    x: M=896 P=896 D=0 I0=0 P/M=1.00
+    y: M=896 P=1680 D=0 I0=0 P/M=1.88
+    s: M=4786 P=55671 D=3365 I0=0 P/M=11.63
+    c: M=64 P=3584 D=448 I0=0 P/M=56.00

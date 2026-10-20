@@ -1,0 +1,182 @@
+{
+ "pkg": "work/pkg2979",
+ "fill": "work/pkg2979/FILL.json.gz",
+ "control_bridge_first": false,
+ "T": 74,
+ "calls": 666,
+ "roles_per_call": 408,
+ "idle_profile": {
+  "1": 17310,
+  "3": 4956,
+  "5": 1728,
+  "48": 28190
+ },
+ "full_profile": {
+  "1": 1645680,
+  "2": 470196,
+  "3": 159468,
+  "4": 71928,
+  "5": 13716,
+  "8": 5328,
+  "48": 28190
+ },
+ "rank_mass": 4816512,
+ "classes": [
+  {
+   "child": 4,
+   "child_rank": 32,
+   "remainder": 1,
+   "pair": 2,
+   "side": 0,
+   "cls": "HEAD-net(argued)",
+   "count": 2306
+  },
+  {
+   "child": 4,
+   "child_rank": 32,
+   "remainder": 5,
+   "pair": 2,
+   "side": 0,
+   "cls": "HEAD-net(argued)",
+   "count": 1074
+  },
+  {
+   "child": 6,
+   "child_rank": 32,
+   "remainder": 1,
+   "pair": 2,
+   "side": 1,
+   "cls": "HEAD-net(argued)",
+   "count": 5978
+  },
+  {
+   "child": 6,
+   "child_rank": 32,
+   "remainder": 5,
+   "pair": 2,
+   "side": 1,
+   "cls": "HEAD-net(argued)",
+   "count": 652
+  },
+  {
+   "child": 8,
+   "child_rank": 48,
+   "remainder": 3,
+   "pair": 3,
+   "side": 0,
+   "cls": "HEAD-net(argued)",
+   "count": 224
+  },
+  {
+   "child": 8,
+   "child_rank": 48,
+   "remainder": 48,
+   "pair": 3,
+   "side": 0,
+   "cls": "HEAD-literal",
+   "count": 8064
+  },
+  {
+   "child": 10,
+   "child_rank": 48,
+   "remainder": 3,
+   "pair": 3,
+   "side": 1,
+   "cls": "HEAD-net(argued)",
+   "count": 266
+  },
+  {
+   "child": 10,
+   "child_rank": 48,
+   "remainder": 48,
+   "pair": 3,
+   "side": 1,
+   "cls": "HEAD-literal",
+   "count": 8022
+  },
+  {
+   "child": 12,
+   "child_rank": 48,
+   "remainder": 3,
+   "pair": 0,
+   "side": 0,
+   "cls": "neither",
+   "count": 1776
+  },
+  {
+   "child": 12,
+   "child_rank": 48,
+   "remainder": 48,
+   "pair": 0,
+   "side": 0,
+   "cls": "neither",
+   "count": 6512
+  },
+  {
+   "child": 13,
+   "child_rank": 48,
+   "remainder": 3,
+   "pair": 0,
+   "side": 1,
+   "cls": "neither",
+   "count": 2690
+  },
+  {
+   "child": 13,
+   "child_rank": 48,
+   "remainder": 48,
+   "pair": 0,
+   "side": 1,
+   "cls": "neither",
+   "count": 5592
+  },
+  {
+   "child": 14,
+   "child_rank": 32,
+   "remainder": 1,
+   "pair": 1,
+   "side": 0,
+   "cls": "neither",
+   "count": 2170
+  },
+  {
+   "child": 14,
+   "child_rank": 32,
+   "remainder": 5,
+   "pair": 1,
+   "side": 0,
+   "cls": "neither",
+   "count": 2
+  },
+  {
+   "child": 15,
+   "child_rank": 32,
+   "remainder": 1,
+   "pair": 1,
+   "side": 1,
+   "cls": "neither",
+   "count": 6856
+  }
+ ],
+ "remainder_rank_by_class": {
+  "HEAD-literal": {
+   "48": 16086
+  },
+  "HEAD-net(argued)": {
+   "1": 8284,
+   "3": 490,
+   "5": 1726
+  },
+  "neither": {
+   "1": 9026,
+   "3": 4466,
+   "5": 2,
+   "48": 12104
+  }
+ },
+ "totals_by_class": {
+  "HEAD-literal": 16086,
+  "HEAD-net(argued)": 10500,
+  "neither": 25598
+ }
+}

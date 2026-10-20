@@ -1,0 +1,17 @@
+'OAI.PowerSaving.transform_mainU8X0HQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainU8X0HQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BlockAccounting.term_le4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0HQ.hs_ok' depends on axioms: [propext]
+'GXD.U8X0HQ.hfits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0HQ.hwidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0HQ.hprice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BridgeRate.U8X0HQ.unit_cost_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.BlockAccounting.fold_U8X0HQx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamU8X0HQ.engine_U8X0HQx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsU8X0HQ_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X0.ginv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.ginvXOfZS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.CSX.GLabXZS.inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.PowerSaving.transform_mainU8X0HQ : OAI.PowerSaving.DFTGoalU8X0HQ
+def OAI.PowerSaving.decimalExponentU8X0HQ : ℝ :=
+1 - 16256629 / 10 ^ 10

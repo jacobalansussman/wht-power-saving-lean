@@ -1,0 +1,11 @@
+f=1: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+f=2: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+f=3: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+f=4: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+f=5: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+f=6: wS = S_last True;  chi S_last chi^-1 = i^parity(row1) True;  (i^parity)^2 = uniform Z string True;  i^parity = a + b Zstr pointwise True;  tau(i^parity) = (1+i)/2 True;  f=1: chi = E = I True
+t=1: entries where theta_t(S) != a + b theta_t(Z): 0 of 2  -> collapse IS a representation of the relation
+t=2: entries where theta_t(S) != a + b theta_t(Z): 1 of 4  -> collapse is NOT a representation of the relation
+t=3: entries where theta_t(S) != a + b theta_t(Z): 4 of 8  -> collapse is NOT a representation of the relation
+t=4: entries where theta_t(S) != a + b theta_t(Z): 10 of 16  -> collapse is NOT a representation of the relation
+t=5: entries where theta_t(S) != a + b theta_t(Z): 20 of 32  -> collapse is NOT a representation of the relation

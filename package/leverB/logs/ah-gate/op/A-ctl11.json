@@ -1,0 +1,21 @@
+{
+ "mode": "control",
+ "T": 74,
+ "owners": [
+  11
+ ],
+ "ref_sha256": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39",
+ "new_sha256": "764395fcc2d883e9dc1ecfedce2131c745dc7ad1b9c41d7b52ef54da16d7f71c",
+ "template_sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+ "identity_moved": 0,
+ "offset_plus_1": "rejected: compact hosted prefix",
+ "newly_hosted_slices_tested": 1120,
+ "by_child": {
+  "12": 560,
+  "13": 560
+ },
+ "wrong_time_tested": 1120,
+ "wrong_time_changed": 1120,
+ "wrong_stream_changed": 1120,
+ "seconds": 11.0
+}

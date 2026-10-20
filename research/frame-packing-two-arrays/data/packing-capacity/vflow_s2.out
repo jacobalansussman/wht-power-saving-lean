@@ -1,0 +1,154 @@
+m=2 plain W=1                    raw       M=2 Wm=2 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=2 flow=1 flow1=1 hu=None hu1=None
+m=2 plain W=2                    raw       M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=4 flow=2 flow1=2 hu=True hu1=True
+m=2 plain W=2                    coherent  M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 plain W=2                    random0   M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 plain W=2                    random1   M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 plain W=2                    P* (min over all relative gauges) = 0 over 2 candidate gauges (raw 0); Delta=0
+m=2 plain W=3                    raw       M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=6 flow=3 flow1=3 hu=None hu1=None
+m=2 pair trick                   raw       M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=4 flow=2 flow1=2 hu=True hu1=True
+m=2 pair trick                   coherent  M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 pair trick                   random0   M=4 Wm=4 Delta=0 P_all=4 P_live=4 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=False
+m=2 pair trick                   random1   M=4 Wm=4 Delta=0 P_all=4 P_live=4 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=False
+m=2 pair trick                   P* (min over all relative gauges) = 0 over 3 candidate gauges (raw 0); Delta=0
+m=2 copy-move-copy               raw       M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=4 flow=2 flow1=2 hu=True hu1=True
+m=2 copy-move-copy               coherent  M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 copy-move-copy               random0   M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 copy-move-copy               random1   M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 copy-move-copy               P* (min over all relative gauges) = 0 over 2 candidate gauges (raw 0); Delta=0
+m=2 gauge-exchange               raw       M=4 Wm=4 Delta=0 P_all=1 P_live=0 P_w=0.0 P_asc=0 Mv=4 flow=2 flow1=2 hu=True hu1=True
+m=2 gauge-exchange               coherent  M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 gauge-exchange               random0   M=4 Wm=4 Delta=0 P_all=1 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 gauge-exchange               random1   M=4 Wm=4 Delta=0 P_all=1 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 gauge-exchange               P* (min over all relative gauges) = 0 over 3 candidate gauges (raw 0); Delta=0
+m=2 packing gadget               raw       M=5 Wm=4 Delta=-1 P_all=1 P_live=0 P_w=-1.0 P_asc=-1 Mv=4 flow=2 flow1=2 hu=True hu1=True
+m=2 packing gadget               random0   M=5 Wm=4 Delta=-1 P_all=3 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 packing gadget               random1   M=5 Wm=4 Delta=-1 P_all=3 P_live=0 P_w=None P_asc=None Mv=4 flow=None flow1=None hu=True hu1=True
+m=2 packing gadget               P* (min over all relative gauges) = 0 over 4 candidate gauges (raw 0); Delta=-1
+m=3 plain W=1                    raw       M=3 Wm=3 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=3 flow=1 flow1=1 hu=None hu1=None
+m=3 plain W=2                    raw       M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=6 flow=2 flow1=2 hu=True hu1=True
+m=3 plain W=2                    coherent  M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 plain W=2                    random0   M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 plain W=2                    random1   M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 plain W=2                    P* (min over all relative gauges) = 0 over 2 candidate gauges (raw 0); Delta=0
+m=3 plain W=3                    raw       M=9 Wm=9 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=9 flow=3 flow1=3 hu=None hu1=None
+m=3 pair trick                   raw       M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=6 flow=2 flow1=2 hu=True hu1=True
+m=3 pair trick                   coherent  M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 pair trick                   random0   M=6 Wm=6 Delta=0 P_all=6 P_live=6 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=3 pair trick                   random1   M=6 Wm=6 Delta=0 P_all=6 P_live=6 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=3 pair trick                   P* (min over all relative gauges) = 0 over 3 candidate gauges (raw 0); Delta=0
+m=3 copy-move-copy               raw       M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=6 flow=2 flow1=2 hu=True hu1=True
+m=3 copy-move-copy               coherent  M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 copy-move-copy               random0   M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 copy-move-copy               random1   M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 copy-move-copy               P* (min over all relative gauges) = 0 over 2 candidate gauges (raw 0); Delta=0
+m=3 gauge-exchange               raw       M=6 Wm=6 Delta=0 P_all=2 P_live=0 P_w=0.0 P_asc=0 Mv=6 flow=2 flow1=2 hu=True hu1=True
+m=3 gauge-exchange               coherent  M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 gauge-exchange               random0   M=6 Wm=6 Delta=0 P_all=2 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 gauge-exchange               random1   M=6 Wm=6 Delta=0 P_all=2 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 gauge-exchange               P* (min over all relative gauges) = 0 over 3 candidate gauges (raw 0); Delta=0
+m=3 packing gadget               raw       M=7 Wm=6 Delta=-1 P_all=1 P_live=0 P_w=-1.0 P_asc=-1 Mv=6 flow=2 flow1=2 hu=True hu1=True
+m=3 packing gadget               random0   M=7 Wm=6 Delta=-1 P_all=3 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 packing gadget               random1   M=7 Wm=6 Delta=-1 P_all=3 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 packing gadget               P* (min over all relative gauges) = 0 over 4 candidate gauges (raw 0); Delta=-1
+m=3 order-3 control C6O3         raw       M=6 Wm=6 Delta=0 P_all=3 P_live=3 P_w=3.0 P_asc=3 Mv=9 flow=3 flow1=2 hu=True hu1=True
+m=3 order-3 control C6O3         random0   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 order-3 control C6O3         random1   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 order-3 control C6O3         P* (min over all relative gauges) = 3 over 4 candidate gauges (raw 3); Delta=0
+m=3 +-1 halving control C6H      raw       M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=6 flow=2 flow1=2 hu=True hu1=True
+m=3 +-1 halving control C6H      coherent  M=6 Wm=6 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=6 flow=None flow1=None hu=True hu1=True
+m=3 +-1 halving control C6H      random0   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 +-1 halving control C6H      random1   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 +-1 halving control C6H      P* (min over all relative gauges) = 0 over 3 candidate gauges (raw 0); Delta=0
+m=3 random order-3 packer W=3    raw       M=9 Wm=9 Delta=0 P_all=6 P_live=6 P_w=6.0 P_asc=6 Mv=15 flow=5 flow1=3 hu=None hu1=None
+m=3 random order-3 packer W=2    raw       M=6 Wm=6 Delta=0 P_all=3 P_live=3 P_w=3.0 P_asc=3 Mv=9 flow=3 flow1=2 hu=True hu1=True
+m=3 random order-3 packer W=2    random0   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 random order-3 packer W=2    random1   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 random order-3 packer W=2    P* (min over all relative gauges) = 3 over 4 candidate gauges (raw 3); Delta=0
+m=3 random order-3 packer W=2    raw       M=6 Wm=6 Delta=0 P_all=3 P_live=3 P_w=3.0 P_asc=3 Mv=9 flow=3 flow1=2 hu=True hu1=True
+m=3 random order-3 packer W=2    random0   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 random order-3 packer W=2    random1   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=True
+m=3 random order-3 packer W=2    P* (min over all relative gauges) = 3 over 4 candidate gauges (raw 3); Delta=0
+m=3 random order-3 packer W=2    raw       M=6 Wm=6 Delta=0 P_all=3 P_live=3 P_w=3.0 P_asc=3 Mv=9 flow=3 flow1=2 hu=True hu1=True
+m=3 random order-3 packer W=2    random0   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=True
+m=3 random order-3 packer W=2    random1   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 random order-3 packer W=2    P* (min over all relative gauges) = 3 over 4 candidate gauges (raw 3); Delta=0
+m=3 random order-3 packer W=3    raw       M=9 Wm=9 Delta=0 P_all=6 P_live=6 P_w=6.0 P_asc=6 Mv=15 flow=5 flow1=3 hu=None hu1=None
+m=3 random order-3 packer W=3    raw       M=9 Wm=9 Delta=0 P_all=6 P_live=6 P_w=6.0 P_asc=6 Mv=15 flow=5 flow1=3 hu=None hu1=None
+m=3 random order-3 packer W=3    raw       M=9 Wm=9 Delta=0 P_all=6 P_live=6 P_w=6.0 P_asc=6 Mv=15 flow=5 flow1=3 hu=None hu1=None
+m=3 random order-3 packer W=2    raw       M=6 Wm=6 Delta=0 P_all=3 P_live=3 P_w=3.0 P_asc=3 Mv=9 flow=3 flow1=2 hu=True hu1=True
+m=3 random order-3 packer W=2    random0   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=True
+m=3 random order-3 packer W=2    random1   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 random order-3 packer W=2    P* (min over all relative gauges) = 3 over 4 candidate gauges (raw 3); Delta=0
+m=3 random order-3 packer W=2    raw       M=6 Wm=6 Delta=0 P_all=3 P_live=3 P_w=3.0 P_asc=3 Mv=9 flow=3 flow1=2 hu=True hu1=True
+m=3 random order-3 packer W=2    random0   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=True
+m=3 random order-3 packer W=2    random1   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 random order-3 packer W=2    P* (min over all relative gauges) = 3 over 4 candidate gauges (raw 3); Delta=0
+m=3 random order-3 packer W=2    raw       M=6 Wm=6 Delta=0 P_all=3 P_live=3 P_w=3.0 P_asc=3 Mv=9 flow=3 flow1=2 hu=True hu1=True
+m=3 random order-3 packer W=2    random0   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=True
+m=3 random order-3 packer W=2    random1   M=6 Wm=6 Delta=0 P_all=6 P_live=3 P_w=None P_asc=None Mv=9 flow=None flow1=None hu=True hu1=False
+m=3 random order-3 packer W=2    P* (min over all relative gauges) = 3 over 4 candidate gauges (raw 3); Delta=0
+m=4 plain W=1                    raw       M=4 Wm=4 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=4 flow=1 flow1=1 hu=None hu1=None
+m=4 plain W=2                    raw       M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=8 flow=2 flow1=2 hu=True hu1=True
+m=4 plain W=2                    coherent  M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 plain W=2                    random0   M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 plain W=2                    random1   M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 plain W=2                    P* (min over all relative gauges) = 0 over 2 candidate gauges (raw 0); Delta=0
+m=4 plain W=3                    raw       M=12 Wm=12 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=12 flow=3 flow1=3 hu=None hu1=None
+m=4 pair trick                   raw       M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=8 flow=2 flow1=2 hu=True hu1=True
+m=4 pair trick                   coherent  M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 pair trick                   random0   M=8 Wm=8 Delta=0 P_all=8 P_live=8 P_w=None P_asc=None Mv=16 flow=None flow1=None hu=True hu1=False
+m=4 pair trick                   random1   M=8 Wm=8 Delta=0 P_all=8 P_live=8 P_w=None P_asc=None Mv=16 flow=None flow1=None hu=True hu1=False
+m=4 pair trick                   P* (min over all relative gauges) = 0 over 3 candidate gauges (raw 0); Delta=0
+m=4 copy-move-copy               raw       M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=8 flow=2 flow1=2 hu=True hu1=True
+m=4 copy-move-copy               coherent  M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 copy-move-copy               random0   M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 copy-move-copy               random1   M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 copy-move-copy               P* (min over all relative gauges) = 0 over 2 candidate gauges (raw 0); Delta=0
+m=4 gauge-exchange               raw       M=8 Wm=8 Delta=0 P_all=3 P_live=0 P_w=0.0 P_asc=0 Mv=8 flow=2 flow1=2 hu=True hu1=True
+m=4 gauge-exchange               coherent  M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 gauge-exchange               random0   M=8 Wm=8 Delta=0 P_all=3 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 gauge-exchange               random1   M=8 Wm=8 Delta=0 P_all=3 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 gauge-exchange               P* (min over all relative gauges) = 0 over 3 candidate gauges (raw 0); Delta=0
+m=4 packing gadget               raw       M=9 Wm=8 Delta=-1 P_all=1 P_live=0 P_w=-1.0 P_asc=-1 Mv=8 flow=2 flow1=2 hu=True hu1=True
+m=4 packing gadget               random0   M=9 Wm=8 Delta=-1 P_all=3 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 packing gadget               random1   M=9 Wm=8 Delta=-1 P_all=3 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 packing gadget               P* (min over all relative gauges) = 0 over 4 candidate gauges (raw 0); Delta=-1
+m=4 order-3 control C8O3         raw       M=8 Wm=8 Delta=0 P_all=4 P_live=4 P_w=4.0 P_asc=4 Mv=12 flow=3 flow1=2 hu=True hu1=True
+m=4 order-3 control C8O3         random0   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=True
+m=4 order-3 control C8O3         random1   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 order-3 control C8O3         P* (min over all relative gauges) = 4 over 4 candidate gauges (raw 4); Delta=0
+m=4 +-1 halving control C8H      raw       M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=0.0 P_asc=0 Mv=8 flow=2 flow1=2 hu=True hu1=True
+m=4 +-1 halving control C8H      coherent  M=8 Wm=8 Delta=0 P_all=0 P_live=0 P_w=None P_asc=None Mv=8 flow=None flow1=None hu=True hu1=True
+m=4 +-1 halving control C8H      random0   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 +-1 halving control C8H      random1   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=True
+m=4 +-1 halving control C8H      P* (min over all relative gauges) = 0 over 3 candidate gauges (raw 0); Delta=0
+m=4 random order-3 packer W=2    raw       M=8 Wm=8 Delta=0 P_all=4 P_live=4 P_w=4.0 P_asc=4 Mv=12 flow=3 flow1=2 hu=True hu1=True
+m=4 random order-3 packer W=2    random0   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 random order-3 packer W=2    random1   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 random order-3 packer W=2    P* (min over all relative gauges) = 4 over 4 candidate gauges (raw 4); Delta=0
+m=4 random order-3 packer W=3    raw       M=12 Wm=12 Delta=0 P_all=8 P_live=8 P_w=8.0 P_asc=8 Mv=20 flow=5 flow1=3 hu=None hu1=None
+m=4 random order-3 packer W=2    raw       M=8 Wm=8 Delta=0 P_all=4 P_live=4 P_w=4.0 P_asc=4 Mv=12 flow=3 flow1=2 hu=True hu1=True
+m=4 random order-3 packer W=2    random0   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 random order-3 packer W=2    random1   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 random order-3 packer W=2    P* (min over all relative gauges) = 4 over 4 candidate gauges (raw 4); Delta=0
+m=4 random order-3 packer W=2    raw       M=8 Wm=8 Delta=0 P_all=4 P_live=4 P_w=4.0 P_asc=4 Mv=12 flow=3 flow1=2 hu=True hu1=True
+m=4 random order-3 packer W=2    random0   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=True
+m=4 random order-3 packer W=2    random1   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 random order-3 packer W=2    P* (min over all relative gauges) = 4 over 4 candidate gauges (raw 4); Delta=0
+m=4 random order-3 packer W=2    raw       M=8 Wm=8 Delta=0 P_all=4 P_live=4 P_w=4.0 P_asc=4 Mv=12 flow=3 flow1=2 hu=True hu1=True
+m=4 random order-3 packer W=2    random0   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 random order-3 packer W=2    random1   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=True
+m=4 random order-3 packer W=2    P* (min over all relative gauges) = 4 over 4 candidate gauges (raw 4); Delta=0
+m=4 random order-3 packer W=2    raw       M=8 Wm=8 Delta=0 P_all=4 P_live=4 P_w=4.0 P_asc=4 Mv=12 flow=3 flow1=2 hu=True hu1=True
+m=4 random order-3 packer W=2    random0   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 random order-3 packer W=2    random1   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=True
+m=4 random order-3 packer W=2    P* (min over all relative gauges) = 4 over 4 candidate gauges (raw 4); Delta=0
+m=4 random order-3 packer W=3    raw       M=12 Wm=12 Delta=0 P_all=8 P_live=8 P_w=8.0 P_asc=8 Mv=20 flow=5 flow1=3 hu=None hu1=None
+m=4 random order-3 packer W=2    raw       M=8 Wm=8 Delta=0 P_all=4 P_live=4 P_w=4.0 P_asc=4 Mv=12 flow=3 flow1=2 hu=True hu1=True
+m=4 random order-3 packer W=2    random0   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 random order-3 packer W=2    random1   M=8 Wm=8 Delta=0 P_all=8 P_live=4 P_w=None P_asc=None Mv=12 flow=None flow1=None hu=True hu1=False
+m=4 random order-3 packer W=2    P* (min over all relative gauges) = 4 over 4 candidate gauges (raw 4); Delta=0
+m=4 random order-3 packer W=3    raw       M=12 Wm=12 Delta=0 P_all=8 P_live=8 P_w=8.0 P_asc=8 Mv=20 flow=5 flow1=3 hu=None hu1=None
+m=4 random order-3 packer W=3    raw       M=12 Wm=12 Delta=0 P_all=8 P_live=8 P_w=8.0 P_asc=8 Mv=20 flow=5 flow1=3 hu=None hu1=None
+
+SUMMARY: 152 rows; violations of Theorem A: 0; negative control (one capacity per move) fails max-flow in 0 raw rows: []; fails two-commodity LP in 28 rows: [('+-1 halving control C6H', 3, 'random0'), ('+-1 halving control C6H', 3, 'random1'), ('+-1 halving control C8H', 4, 'random0'), ('order-3 control C6O3', 3, 'random0'), ('order-3 control C6O3', 3, 'random1'), ('order-3 control C8O3', 4, 'random1'), ('pair trick', 2, 'random0'), ('pair trick', 2, 'random1'), ('pair trick', 3, 'random0'), ('pair trick', 3, 'random1'), ('pair trick', 4, 'random0'), ('pair trick', 4, 'random1'), ('random order-3 packer W=2', 3, 'random0'), ('random order-3 packer W=2', 3, 'random1'), ('random order-3 packer W=2', 4, 'random0'), ('random order-3 packer W=2', 4, 'random1')]

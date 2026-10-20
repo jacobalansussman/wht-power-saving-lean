@@ -1,0 +1,14 @@
+helpers by (visits rank 3, partner at a rank-2 stop, start->final dim):
+    (True, False, '0->9') 160
+    (True, False, '0->4') 56
+    (True, True, '0->9') 56
+    (False, False, '1->9') 56
+    (True, False, '1->8') 54
+    (True, False, '1->9') 50
+    (False, False, '4->9') 32
+    (False, False, '5->9') 24
+    (True, False, '0->8') 16
+non-plane helpers: 112 of which rank-2-stop pair rows: 0
+non-plane, not rank-2 partners, by start->final, #target readers, max content: [(('4->9', 1, 16), 31), (('5->9', 1, 16), 17), (('1->9', 4, 32), 13), (('1->9', 4, 16), 12), (('1->9', 4, 24), 8), (('1->9', 4, 34), 4), (('1->9', 4, 40), 3), (('5->9', 1, 17), 3), (('1->9', 4, 39), 2), (('1->9', 4, 38), 2), (('1->9', 4, 36), 2), (('1->9', 4, 68), 2)]
+rank-2-stop partners by class: Counter({'x': 56, 'h': 56})
+target<->target gates in B: 112  frame dims Counter({7: 112})  same U8 block: 112

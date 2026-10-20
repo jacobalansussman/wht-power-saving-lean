@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/content/work/ah-gate/regB/aud-negclock/owner_audit.py", line 87, in <module>
+    if __name__=='__main__':print(json.dumps(dict(positive=audit(),controls=controls()),sort_keys=True),flush=True)
+                                                           ^^^^^^^
+  File "/content/work/ah-gate/regB/aud-negclock/owner_audit.py", line 62, in audit
+    cap,lo,hi=windows[o,c];need(lo<t<=hi,'strict lower and closed upper window')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/work/ah-gate/regB/aud-negclock/owner_audit.py", line 8, in need
+    if not ok:raise ValueError(why)
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: strict lower and closed upper window

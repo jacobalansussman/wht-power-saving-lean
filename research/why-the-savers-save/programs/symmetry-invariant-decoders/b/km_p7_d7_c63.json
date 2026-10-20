@@ -1,0 +1,377 @@
+{
+ "p": 7,
+ "d": 7,
+ "COST": 63,
+ "flats": 43173,
+ "reps": 6167,
+ "octad_orbits": 180,
+ "results": [
+  {
+   "fixed": [
+    4,
+    4
+   ],
+   "fixed_idx": [
+    0,
+    0
+   ],
+   "cost": 57,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 18
+  },
+  {
+   "fixed": [
+    4,
+    4,
+    4
+   ],
+   "fixed_idx": [
+    0,
+    0,
+    0
+   ],
+   "cost": 61,
+   "K": 10,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 18
+  },
+  {
+   "fixed": [
+    4,
+    7
+   ],
+   "fixed_idx": [
+    0,
+    1
+   ],
+   "cost": 60,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 6
+  },
+  {
+   "fixed": [
+    4,
+    7
+   ],
+   "fixed_idx": [
+    0,
+    2
+   ],
+   "cost": 60,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 1
+  },
+  {
+   "fixed": [
+    4,
+    8
+   ],
+   "fixed_idx": [
+    0,
+    3
+   ],
+   "cost": 61,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 1
+  },
+  {
+   "fixed": [
+    4,
+    7
+   ],
+   "fixed_idx": [
+    0,
+    4
+   ],
+   "cost": 60,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 9
+  },
+  {
+   "fixed": [
+    4,
+    8
+   ],
+   "fixed_idx": [
+    0,
+    5
+   ],
+   "cost": 61,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 6
+  },
+  {
+   "fixed": [
+    4,
+    8
+   ],
+   "fixed_idx": [
+    0,
+    6
+   ],
+   "cost": 61,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 1
+  },
+  {
+   "fixed": [
+    4,
+    7
+   ],
+   "fixed_idx": [
+    0,
+    7
+   ],
+   "cost": 60,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 3
+  },
+  {
+   "fixed": [
+    4,
+    8
+   ],
+   "fixed_idx": [
+    0,
+    8
+   ],
+   "cost": 61,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 1
+  },
+  {
+   "fixed": [
+    4,
+    8
+   ],
+   "fixed_idx": [
+    0,
+    9
+   ],
+   "cost": 61,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 1
+  },
+  {
+   "fixed": [
+    4,
+    8
+   ],
+   "fixed_idx": [
+    0,
+    10
+   ],
+   "cost": 61,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 3
+  },
+  {
+   "fixed": [
+    7,
+    7
+   ],
+   "fixed_idx": [
+    1,
+    1
+   ],
+   "cost": 63,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 6
+  },
+  {
+   "fixed": [
+    7,
+    7
+   ],
+   "fixed_idx": [
+    1,
+    2
+   ],
+   "cost": 63,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 1
+  },
+  {
+   "fixed": [
+    7,
+    7
+   ],
+   "fixed_idx": [
+    1,
+    4
+   ],
+   "cost": 63,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 6
+  },
+  {
+   "fixed": [
+    7,
+    7
+   ],
+   "fixed_idx": [
+    1,
+    7
+   ],
+   "cost": 63,
+   "K": 9,
+   "passing": 1,
+   "passing_reps": [
+    [
+     16,
+     17,
+     18,
+     19,
+     31,
+     32,
+     33,
+     34,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     46,
+     47,
+     48,
+     49,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     100,
+     101,
+     102,
+     103,
+     108,
+     109,
+     110,
+     111
+    ]
+   ],
+   "least_partial_deficit": 0
+  },
+  {
+   "fixed": [
+    7,
+    7
+   ],
+   "fixed_idx": [
+    2,
+    2
+   ],
+   "cost": 63,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 1
+  },
+  {
+   "fixed": [
+    7,
+    7
+   ],
+   "fixed_idx": [
+    2,
+    4
+   ],
+   "cost": 63,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 1
+  },
+  {
+   "fixed": [
+    7,
+    7
+   ],
+   "fixed_idx": [
+    2,
+    7
+   ],
+   "cost": 63,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 1
+  },
+  {
+   "fixed": [
+    7,
+    7
+   ],
+   "fixed_idx": [
+    4,
+    4
+   ],
+   "cost": 63,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 12
+  },
+  {
+   "fixed": [
+    7,
+    7
+   ],
+   "fixed_idx": [
+    4,
+    7
+   ],
+   "cost": 63,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 6
+  },
+  {
+   "fixed": [
+    7,
+    7
+   ],
+   "fixed_idx": [
+    7,
+    7
+   ],
+   "cost": 63,
+   "K": 9,
+   "passing": 0,
+   "passing_reps": [],
+   "least_partial_deficit": 6
+  }
+ ]
+}

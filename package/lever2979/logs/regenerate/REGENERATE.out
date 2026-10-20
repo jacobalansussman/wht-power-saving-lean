@@ -1,0 +1,18 @@
+1. the two provider words: p-lower's transport and lowering (gauge44 = WORD-base, extra = WORD-extra)
+   lowered words: base 8f2db1387aefe62b (x-gate 8f2db1387aefe62b), extra 163466d55a870f90 (x-gate 163466d55a870f90)
+2. the word data, glue and price in Lean (p-wgen's generators, instance #2979)
+refused as required (exit 3): {"1": 2445, "2": 706, "3": 232, "4": 108, "5": 18, "8": 8} --dft 14611616
+refused as required (exit 3): {"1": 2445, "2": 706, "3": 232, "4": 108, "5": 18, "8": 8} --dft 14611616
+3. the host table, its Lean parts and the dispatch (p-own's converter, p-hostck's and p-disp's generators, instance #2979)
+lowering report equal to the original except for the recorded paths and run time: lower-base.json
+lowering report equal to the original except for the recorded paths and run time: lower-extra.json
+head count 16,086 (8,064 + 8,022): ALL OK
+refused as required: one head more (8,065)
+refused as required (exit 3): <scratch>/regen3/never-load --perturb load
+refused as required (exit 3): 417 249 <scratch>/regen3/never-disp/Disp.lean
+4. the rate fact at the figure (e-r45m1's generator), the statement chain, the warp heads-first files
+refused as required (exit 2): check 2979=<package>/generators/tree/wht45/lever2979/x-inst/tools/profile2979-palt.json 17556474
+refused as required (exit 2): <scratch>/regen3/never-L2979 --num 17556474
+5. comparison with ../SHA256SUMS
+regenerated overlay files byte-identical: 174; DIFFERENT: 0; made but outside the closure: 134; overlay files not generated here: 112 (list: <scratch>/regen3/compare.tsv)
+REGENERATE: ALL AS EXPECTED (log <scratch>/regen3/regenerate.log)

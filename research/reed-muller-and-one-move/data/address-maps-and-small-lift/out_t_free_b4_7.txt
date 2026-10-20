@@ -1,0 +1,7 @@
+m=4 M=7: 420 targets congruent to I; 1024 forms
+  |GL(4,2)| = 20160
+  56 classes of 7-multisets of directions (5.4 s)
+  surviving classes (span + deletion): 0
+  survivors with independent distinct directions: 0 (the lemma says 0 when M < 2m)
+  done in 5.4 s
+./py.sh t_free.py pairs 4 7  4.37s user 0.13s system 68% cpu 6.552 total

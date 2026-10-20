@@ -1,0 +1,3 @@
+#1042 uniform (expect 1.6749890159e-3)                             b=1.6749890159e-3 vs hub -0.284% separated=True
+#1042 literal heads cut fully, rank-48 neither split 24+24         b=1.6885350551e-3 vs hub +0.523% separated=True
+#1042 literal 48-heads cut by 24 (49), 16-heads cut (57), rest paid b=1.6918824705e-3 vs hub +0.722% separated=True

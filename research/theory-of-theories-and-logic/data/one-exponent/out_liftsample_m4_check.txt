@@ -1,0 +1,5 @@
+m=4: frames 2295, sphere sizes [1, 30, 280, 960, 1024]; 3000 uniform pairs per distance, seed 1
+d=1 pairs 3000 sumdelta 4401 mean 1.467000 stderr 0.012424 hist [(1, 1920), (2, 759), (3, 321)]
+d=2 pairs 3000 sumdelta 7395 mean 2.465000 stderr 0.011589 hist [(2, 1836), (3, 933), (4, 231)]
+d=3 pairs 3000 sumdelta 9539 mean 3.179667 stderr 0.007010 hist [(3, 2461), (4, 539)]
+d=4 pairs 3000 sumdelta 12000 mean 4.000000 stderr 0.000000 hist [(4, 3000)]

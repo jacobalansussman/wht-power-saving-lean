@@ -1,0 +1,4 @@
+m=6: self-dual basis (32, 35, 49, 55, 59, 63)
+  F1: sum f_j = 1: True; sum f_j^(1+2^i) = 0 all i: True
+  F2: tr Q = Tr(b) on 400 random forms: True
+  F4: all multiplication matrices symmetric: True; sigma^k sigma^kT = mult(alpha^2k): True

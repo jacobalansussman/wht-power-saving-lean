@@ -1,0 +1,615 @@
+{
+ "calibration_prop3": 0.09632253897119797,
+ "D6 (hub-type charge 0.8 assumed, not shown)|u=1": {
+  "m": 13,
+  "sigma": 4,
+  "cst_per_port": 0.8,
+  "u": 1,
+  "D_per_pair": 0.3999999999999999,
+  "a": 0.013154134656950311
+ },
+ "D6 (hub-type charge 0.8 assumed, not shown)|u=1.5": {
+  "m": 13,
+  "sigma": 4,
+  "cst_per_port": 0.8,
+  "u": 1.5,
+  "D_per_pair": 1.4,
+  "a": 0.04696038726765922
+ },
+ "D6 (hub-type charge 0.8 assumed, not shown)|u=2": {
+  "m": 13,
+  "sigma": 4,
+  "cst_per_port": 0.8,
+  "u": 2,
+  "D_per_pair": 2.4,
+  "a": 0.08216978360124377
+ },
+ "E7|u=1": {
+  "m": 19,
+  "sigma": 6,
+  "cst_per_port": 0.6667,
+  "u": 1,
+  "D_per_pair": 0.6666000000000001,
+  "a": 0.015353609771076526
+ },
+ "E7|u=1.5": {
+  "m": 19,
+  "sigma": 6,
+  "cst_per_port": 0.6667,
+  "u": 1.5,
+  "D_per_pair": 1.6666,
+  "a": 0.038908240250620285
+ },
+ "E7|u=2": {
+  "m": 19,
+  "sigma": 6,
+  "cst_per_port": 0.6667,
+  "u": 2,
+  "D_per_pair": 2.6666,
+  "a": 0.06312029220996968
+ },
+ "P112|u=1": {
+  "m": 25,
+  "sigma": 8,
+  "cst_per_port": 0.5714,
+  "u": 1,
+  "D_per_pair": 0.8572,
+  "a": 0.015176531158116846
+ },
+ "P112|u=1.5": {
+  "m": 25,
+  "sigma": 8,
+  "cst_per_port": 0.5714,
+  "u": 1.5,
+  "D_per_pair": 1.8572,
+  "a": 0.03321947709832501
+ },
+ "P112|u=2": {
+  "m": 25,
+  "sigma": 8,
+  "cst_per_port": 0.5714,
+  "u": 2,
+  "D_per_pair": 2.8571999999999997,
+  "a": 0.05164116352566589
+ },
+ "E8 (120 ports)|u=1": {
+  "m": 25,
+  "sigma": 8,
+  "cst_per_port": 0.5333,
+  "u": 1,
+  "D_per_pair": 0.9334,
+  "a": 0.016538423300135052
+ },
+ "E8 (120 ports)|u=1.5": {
+  "m": 25,
+  "sigma": 8,
+  "cst_per_port": 0.5333,
+  "u": 1.5,
+  "D_per_pair": 1.9334,
+  "a": 0.034609680251653174
+ },
+ "E8 (120 ports)|u=2": {
+  "m": 25,
+  "sigma": 8,
+  "cst_per_port": 0.5333,
+  "u": 2,
+  "D_per_pair": 2.9334,
+  "a": 0.053060879737210354
+ },
+ "shared|D6 (hub-type charge 0.8 assumed, not shown)|u=1": {
+  "m": 10,
+  "a": 0.022048359341360346
+ },
+ "shared|D6 (hub-type charge 0.8 assumed, not shown)|u=1.5": {
+  "m": 10,
+  "a": 0.07920050952212682
+ },
+ "shared|E7|u=1": {
+  "m": 10,
+  "a": 0.06635944210444183
+ },
+ "shared|E7|u=1.5": {
+  "m": 10,
+  "a": 0.1703276746204559
+ },
+ "shared|P112|u=1": {
+  "m": 10,
+  "a": 0.1963113317838711
+ },
+ "shared|P112|u=1.5": {
+  "m": 10,
+  "a": 0.4367524187366746
+ },
+ "shared|E8 (120 ports)|u=1": {
+  "m": 10,
+  "a": 0.2141857116841282
+ },
+ "shared|E8 (120 ports)|u=1.5": {
+  "m": 10,
+  "a": 0.4556140799115026
+ },
+ "small|D4|u=1": {
+  "m": 7,
+  "floor": 1.0,
+  "u": 1,
+  "D_per_pair": 0.0,
+  "a": 2.7755575615628914e-16
+ },
+ "small|D4|u=1.5": {
+  "m": 8,
+  "floor": 1.0,
+  "u": 1.5,
+  "D_per_pair": 1.0,
+  "a": 0.046554702195740816
+ },
+ "small|D4|u=2": {
+  "m": 8,
+  "floor": 1.0,
+  "u": 2,
+  "D_per_pair": 2.0,
+  "a": 0.09632253897119808
+ },
+ "small|A3|u=1": {
+  "m": 7,
+  "floor": 1.0,
+  "u": 1,
+  "D_per_pair": 0.0,
+  "a": 2.7755575615628914e-16
+ },
+ "small|A3|u=1.5": {
+  "m": 8,
+  "floor": 1.0,
+  "u": 1.5,
+  "D_per_pair": 1.0,
+  "a": 0.046554702195740816
+ },
+ "small|A3|u=2": {
+  "m": 8,
+  "floor": 1.0,
+  "u": 2,
+  "D_per_pair": 2.0,
+  "a": 0.09632253897119808
+ },
+ "small|D5|u=1": {
+  "m": 13,
+  "floor": 0.6,
+  "u": 1,
+  "D_per_pair": 0.8,
+  "a": 0.026515429537148083
+ },
+ "small|D5|u=1.5": {
+  "m": 14,
+  "floor": 0.6,
+  "u": 1.5,
+  "D_per_pair": 1.8,
+  "a": 0.053038843802955704
+ },
+ "small|D5|u=2": {
+  "m": 14,
+  "floor": 0.6,
+  "u": 2,
+  "D_per_pair": 2.8,
+  "a": 0.08410251444802025
+ },
+ "small|D6|u=1": {
+  "m": 13,
+  "floor": 0.4,
+  "u": 1,
+  "D_per_pair": 1.2,
+  "a": 0.04009051418541548
+ },
+ "small|D6|u=1.5": {
+  "m": 14,
+  "floor": 0.4,
+  "u": 1.5,
+  "D_per_pair": 2.2,
+  "a": 0.06531963372601474
+ },
+ "small|D6|u=2": {
+  "m": 14,
+  "floor": 0.4,
+  "u": 2,
+  "D_per_pair": 3.2,
+  "a": 0.09687455652526838
+ },
+ "small|A4|u=1": {
+  "m": 13,
+  "floor": 0.6,
+  "u": 1,
+  "D_per_pair": 0.8,
+  "a": 0.026515429537148083
+ },
+ "small|A4|u=1.5": {
+  "m": 14,
+  "floor": 0.6,
+  "u": 1.5,
+  "D_per_pair": 1.8,
+  "a": 0.053038843802955704
+ },
+ "small|A4|u=2": {
+  "m": 14,
+  "floor": 0.6,
+  "u": 2,
+  "D_per_pair": 2.8,
+  "a": 0.08410251444802025
+ },
+ "small|A5|u=1": {
+  "m": 13,
+  "floor": 0.4,
+  "u": 1,
+  "D_per_pair": 1.2,
+  "a": 0.04009051418541548
+ },
+ "small|A5|u=1.5": {
+  "m": 14,
+  "floor": 0.4,
+  "u": 1.5,
+  "D_per_pair": 2.2,
+  "a": 0.06531963372601474
+ },
+ "small|A5|u=2": {
+  "m": 14,
+  "floor": 0.4,
+  "u": 2,
+  "D_per_pair": 3.2,
+  "a": 0.09687455652526838
+ },
+ "small_best": 0.09687455652526838,
+ "floors|E7|1+2sigma (proved)|u=1": {
+  "m": 13,
+  "u": 1,
+  "a": 0.03359181906415837
+ },
+ "floors|E7|1+2sigma (proved)|u=1.5": {
+  "m": 13,
+  "u": 1.5,
+  "a": 0.08567965880966316
+ },
+ "floors|E7|1+2sigma (proved)|u=2": {
+  "m": 13,
+  "u": 2,
+  "a": 0.1399536247799204
+ },
+ "floors|E7|1+3sigma (argued)|u=1": {
+  "m": 19,
+  "u": 1,
+  "a": 0.015353609771076526
+ },
+ "floors|E7|1+3sigma (argued)|u=1.5": {
+  "m": 19,
+  "u": 1.5,
+  "a": 0.038908240250620285
+ },
+ "floors|E7|1+3sigma (argued)|u=2": {
+  "m": 19,
+  "u": 2,
+  "a": 0.06312029220996968
+ },
+ "floors|E7|2+3sigma two-sided|u=2": {
+  "m": 20,
+  "u": 2,
+  "a": 0.057302860601478434
+ },
+ "floors|P112|1+2sigma (proved)|u=1": {
+  "m": 17,
+  "u": 1,
+  "a": 0.033876335071276464
+ },
+ "floors|P112|1+2sigma (proved)|u=1.5": {
+  "m": 17,
+  "u": 1.5,
+  "a": 0.07452129287580384
+ },
+ "floors|P112|1+2sigma (proved)|u=2": {
+  "m": 17,
+  "u": 2,
+  "a": 0.11645095434682301
+ },
+ "floors|P112|1+3sigma (argued)|u=1": {
+  "m": 25,
+  "u": 1,
+  "a": 0.015176531158116846
+ },
+ "floors|P112|1+3sigma (argued)|u=1.5": {
+  "m": 25,
+  "u": 1.5,
+  "a": 0.03321947709832501
+ },
+ "floors|P112|1+3sigma (argued)|u=2": {
+  "m": 25,
+  "u": 2,
+  "a": 0.05164116352566589
+ },
+ "floors|P112|2+3sigma two-sided|u=2": {
+  "m": 26,
+  "u": 2,
+  "a": 0.04794734102016657
+ },
+ "floors|E8 (120 ports)|1+2sigma (proved)|u=1": {
+  "m": 17,
+  "u": 1,
+  "a": 0.03693002980046339
+ },
+ "floors|E8 (120 ports)|1+2sigma (proved)|u=1.5": {
+  "m": 17,
+  "u": 1.5,
+  "a": 0.07767010444311767
+ },
+ "floors|E8 (120 ports)|1+2sigma (proved)|u=2": {
+  "m": 17,
+  "u": 2,
+  "a": 0.11970099867535505
+ },
+ "floors|E8 (120 ports)|1+3sigma (argued)|u=1": {
+  "m": 25,
+  "u": 1,
+  "a": 0.016538423300135052
+ },
+ "floors|E8 (120 ports)|1+3sigma (argued)|u=1.5": {
+  "m": 25,
+  "u": 1.5,
+  "a": 0.034609680251653174
+ },
+ "floors|E8 (120 ports)|1+3sigma (argued)|u=2": {
+  "m": 25,
+  "u": 2,
+  "a": 0.053060879737210354
+ },
+ "floors|E8 (120 ports)|2+3sigma two-sided|u=2": {
+  "m": 26,
+  "u": 2,
+  "a": 0.04926391508249767
+ },
+ "proved_floor|D4|proved centre floor|u=1": {
+  "m": 5,
+  "c": 1.0,
+  "u": 1,
+  "D_per_pair": 0.0,
+  "a": 5.551115123125783e-17
+ },
+ "proved_floor|D4|proved centre floor|u=1.5": {
+  "m": 6,
+  "c": 1.0,
+  "u": 1.5,
+  "D_per_pair": 1.0,
+  "a": 0.07920116849877695
+ },
+ "proved_floor|D4|proved centre floor|u=2": {
+  "m": 6,
+  "c": 1.0,
+  "u": 2,
+  "D_per_pair": 2.0,
+  "a": 0.1659562328535304
+ },
+ "proved_floor|D4|hub-type charge|u=1": {
+  "m": 5,
+  "c": 0.6667,
+  "u": 1,
+  "D_per_pair": 0.6666000000000001,
+  "a": 0.0752880349604948
+ },
+ "proved_floor|D4|hub-type charge|u=1.5": {
+  "m": 6,
+  "c": 0.6667,
+  "u": 1.5,
+  "D_per_pair": 1.6666,
+  "a": 0.1361037773937041
+ },
+ "proved_floor|D4|hub-type charge|u=2": {
+  "m": 6,
+  "c": 0.6667,
+  "u": 2,
+  "D_per_pair": 2.6666,
+  "a": 0.22874974915303653
+ },
+ "proved_floor|A3|proved centre floor|u=1": {
+  "m": 5,
+  "c": 1.0,
+  "u": 1,
+  "D_per_pair": 0.0,
+  "a": 5.551115123125783e-17
+ },
+ "proved_floor|A3|proved centre floor|u=1.5": {
+  "m": 6,
+  "c": 1.0,
+  "u": 1.5,
+  "D_per_pair": 1.0,
+  "a": 0.07920116849877695
+ },
+ "proved_floor|A3|proved centre floor|u=2": {
+  "m": 6,
+  "c": 1.0,
+  "u": 2,
+  "D_per_pair": 2.0,
+  "a": 0.1659562328535304
+ },
+ "proved_floor|A3|hub-type charge|u=1": {
+  "m": 5,
+  "c": 1.0,
+  "u": 1,
+  "D_per_pair": 0.0,
+  "a": 5.551115123125783e-17
+ },
+ "proved_floor|A3|hub-type charge|u=1.5": {
+  "m": 6,
+  "c": 1.0,
+  "u": 1.5,
+  "D_per_pair": 1.0,
+  "a": 0.07920116849877695
+ },
+ "proved_floor|A3|hub-type charge|u=2": {
+  "m": 6,
+  "c": 1.0,
+  "u": 2,
+  "D_per_pair": 2.0,
+  "a": 0.1659562328535304
+ },
+ "proved_floor|D5|proved centre floor|u=1": {
+  "m": 9,
+  "c": 0.6,
+  "u": 1,
+  "D_per_pair": 0.8,
+  "a": 0.05606200529667987
+ },
+ "proved_floor|D5|proved centre floor|u=1.5": {
+  "m": 10,
+  "c": 0.6,
+  "u": 1.5,
+  "D_per_pair": 1.8,
+  "a": 0.10292658889863587
+ },
+ "proved_floor|D5|proved centre floor|u=2": {
+  "m": 10,
+  "c": 0.6,
+  "u": 2,
+  "D_per_pair": 2.8,
+  "a": 0.16460156638940887
+ },
+ "proved_floor|D5|hub-type charge|u=1": {
+  "m": 9,
+  "c": 1.0,
+  "u": 1,
+  "D_per_pair": 0.0,
+  "a": 2.7755575615628914e-16
+ },
+ "proved_floor|D5|hub-type charge|u=1.5": {
+  "m": 10,
+  "c": 1.0,
+  "u": 1.5,
+  "D_per_pair": 1.0,
+  "a": 0.055979278850323666
+ },
+ "proved_floor|D5|hub-type charge|u=2": {
+  "m": 10,
+  "c": 1.0,
+  "u": 2,
+  "D_per_pair": 2.0,
+  "a": 0.1149859013004802
+ },
+ "proved_floor|D6|proved centre floor|u=1": {
+  "m": 9,
+  "c": 0.4,
+  "u": 1,
+  "D_per_pair": 1.2,
+  "a": 0.08507867891378046
+ },
+ "proved_floor|D6|proved centre floor|u=1.5": {
+  "m": 10,
+  "c": 0.4,
+  "u": 1.5,
+  "D_per_pair": 2.2,
+  "a": 0.12717995741111182
+ },
+ "proved_floor|D6|proved centre floor|u=2": {
+  "m": 10,
+  "c": 0.4,
+  "u": 2,
+  "D_per_pair": 3.2,
+  "a": 0.19028173163790535
+ },
+ "proved_floor|D6|hub-type charge|u=1": {
+  "m": 9,
+  "c": 0.8,
+  "u": 1,
+  "D_per_pair": 0.3999999999999999,
+  "a": 0.027712441098709573
+ },
+ "proved_floor|D6|hub-type charge|u=1.5": {
+  "m": 10,
+  "c": 0.8,
+  "u": 1.5,
+  "D_per_pair": 1.4,
+  "a": 0.07920050952212682
+ },
+ "proved_floor|D6|hub-type charge|u=2": {
+  "m": 10,
+  "c": 0.8,
+  "u": 2,
+  "D_per_pair": 2.4,
+  "a": 0.139511802382218
+ },
+ "proved_floor|A4|proved centre floor|u=1": {
+  "m": 9,
+  "c": 0.6,
+  "u": 1,
+  "D_per_pair": 0.8,
+  "a": 0.05606200529667987
+ },
+ "proved_floor|A4|proved centre floor|u=1.5": {
+  "m": 10,
+  "c": 0.6,
+  "u": 1.5,
+  "D_per_pair": 1.8,
+  "a": 0.10292658889863587
+ },
+ "proved_floor|A4|proved centre floor|u=2": {
+  "m": 10,
+  "c": 0.6,
+  "u": 2,
+  "D_per_pair": 2.8,
+  "a": 0.16460156638940887
+ },
+ "proved_floor|A4|hub-type charge|u=1": {
+  "m": 9,
+  "c": 1.6,
+  "u": 1,
+  "D_per_pair": -1.2000000000000002,
+  "a": -0.07958578906912284
+ },
+ "proved_floor|A4|hub-type charge|u=1.5": {
+  "m": 10,
+  "c": 1.6,
+  "u": 1.5,
+  "D_per_pair": -0.20000000000000018,
+  "a": -0.010859359924787149
+ },
+ "proved_floor|A4|hub-type charge|u=2": {
+  "m": 10,
+  "c": 1.6,
+  "u": 2,
+  "D_per_pair": 0.7999999999999998,
+  "a": 0.0445513559181801
+ },
+ "proved_floor|A5|proved centre floor|u=1": {
+  "m": 9,
+  "c": 0.4,
+  "u": 1,
+  "D_per_pair": 1.2,
+  "a": 0.08507867891378046
+ },
+ "proved_floor|A5|proved centre floor|u=1.5": {
+  "m": 10,
+  "c": 0.4,
+  "u": 1.5,
+  "D_per_pair": 2.2,
+  "a": 0.12717995741111182
+ },
+ "proved_floor|A5|proved centre floor|u=2": {
+  "m": 10,
+  "c": 0.4,
+  "u": 2,
+  "D_per_pair": 3.2,
+  "a": 0.19028173163790535
+ },
+ "proved_floor|A5|hub-type charge|u=1": {
+  "m": 9,
+  "c": 1.3333,
+  "u": 1,
+  "D_per_pair": -0.6665999999999999,
+  "a": -0.044842419247360765
+ },
+ "proved_floor|A5|hub-type charge|u=1.5": {
+  "m": 10,
+  "c": 1.3333,
+  "u": 1.5,
+  "D_per_pair": 0.33340000000000014,
+  "a": 0.01834626016379265
+ },
+ "proved_floor|A5|hub-type charge|u=2": {
+  "m": 10,
+  "c": 1.3333,
+  "u": 2,
+  "D_per_pair": 1.3334000000000001,
+  "a": 0.07529972804677093
+ }
+}

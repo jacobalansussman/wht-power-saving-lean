@@ -1,0 +1,8 @@
+START Tue Oct 13 19:15:58 UTC 2026
+sources: 70 .lean files checked against SHA256SUMS (my copy and m-build's tree); mismatches: 0
+modules in MODULES.txt: 70
+overlay modules already present as oleans in c-base's base tree: 0 (must be 0)
+=== STEP P2-01-Work.XMut.Dirt START Tue Oct 13 19:15:59 UTC 2026 cmd: env LEAN_PATH=/content/work/v-m-rebuild/out2:/content/work/shea/lean/complex588/.lake/packages/Cli/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/Qq/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/aesop/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/batteries/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/importGraph/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/mathlib/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/plausible/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/packages/proofwidgets/.lake/build/lib/lean:/content/work/shea/lean/complex588/.lake/build/lib/lean lean -DautoImplicit=false -R /content/work/v-m-rebuild/src /content/work/v-m-rebuild/src/Work/XMut/Dirt.lean -o /content/work/v-m-rebuild/out2/Work/XMut/Dirt.olean -i /content/work/v-m-rebuild/out2/Work/XMut/Dirt.ilean
+=== STEP P2-01-Work.XMut.Dirt END rc=1 wall=1s maxrss_kb=5376 last: error: no default toolchain configured. run `elan default stable` to install & configure the latest Lean 4 stable release.
+P2 BUILD FAILED at Work.XMut.Dirt
+EXIT 1

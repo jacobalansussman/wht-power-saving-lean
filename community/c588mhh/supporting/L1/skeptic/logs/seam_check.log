@@ -1,0 +1,28 @@
+hosted == full climb: True {'h': 9, 'b': 1, 'pending': 9, 'widths': [5, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 1, 'pending': 8, 'widths': [4, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 1, 'pending': 8, 'widths': [4, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 1, 'pending': 9, 'widths': [4, 4], 'remaining': 1, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 1, 'pending': 8, 'widths': [4, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 1, 'pending': 8, 'widths': [4, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 1, 'pending': 8, 'widths': [5], 'remaining': 3, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 1, 'pending': 7, 'widths': [5], 'remaining': 2, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 1, 'pending': 9, 'widths': [7], 'remaining': 2, 'control': None}
+control applied_overlap (must fail): equality=False applicable=True {'h': 9, 'b': 1, 'pending': 8, 'widths': [4, 4], 'remaining': 1, 'control': 'applied_overlap'}
+control double_book (must fail): equality=False applicable=True {'h': 9, 'b': 1, 'pending': 8, 'widths': [4, 4], 'remaining': 1, 'control': 'double_book'}
+control wrong_tau (must fail): equality=False applicable=True {'h': 9, 'b': 1, 'pending': 8, 'widths': [4, 4], 'remaining': 0, 'control': 'wrong_tau'}
+control no_tau (must fail): equality=False applicable=True {'h': 9, 'b': 1, 'pending': 8, 'widths': [4, 4], 'remaining': 0, 'control': 'no_tau'}
+hosted == full climb: True {'h': 9, 'b': 2, 'pending': 8, 'widths': [4, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 2, 'pending': 8, 'widths': [4, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 2, 'pending': 8, 'widths': [4, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 2, 'pending': 8, 'widths': [4, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 2, 'pending': 9, 'widths': [5, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 2, 'pending': 9, 'widths': [5, 4], 'remaining': 0, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 2, 'pending': 7, 'widths': [4], 'remaining': 3, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 2, 'pending': 9, 'widths': [5], 'remaining': 4, 'control': None}
+hosted == full climb: True {'h': 9, 'b': 2, 'pending': 9, 'widths': [7], 'remaining': 2, 'control': None}
+control applied_overlap (must fail): equality=True applicable=False {'h': 9, 'b': 2, 'pending': 9, 'widths': [4, 5], 'remaining': 0, 'control': 'applied_overlap'}
+control double_book (must fail): equality=False applicable=True {'h': 9, 'b': 2, 'pending': 9, 'widths': [4, 5], 'remaining': 1, 'control': 'double_book'}
+control wrong_tau (must fail): equality=False applicable=True {'h': 9, 'b': 2, 'pending': 9, 'widths': [4, 4], 'remaining': 1, 'control': 'wrong_tau'}
+control no_tau (must fail): equality=False applicable=True {'h': 9, 'b': 2, 'pending': 9, 'widths': [5, 4], 'remaining': 0, 'control': 'no_tau'}
+{"all_pass": true, "runs": 26}
+ALL SEAM CHECKS PASS

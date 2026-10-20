@@ -1,0 +1,43 @@
+PART 1. Witness = 'first two digits equal' (two columns, f = 2).  comm(g) = rank of [g(x)g, Pi].
+ m=1 q=2: all 4 free generators commute with the witness: True; a random permutation of the digit and a random diagonal also: True
+   blocks of rank k=1: 1 independent tuples tried; (rank mod p1, rank mod p2): count = {(2, 2): 1}; predicted 2(q - 2^(m-k)) = 2
+   kernel K: [2, 2]; predicted 2(q-1) = 2
+   free * move * free: [2, 2] (same as one move: 2)
+ m=2 q=4: all 11 free generators commute with the witness: True; a random permutation of the digit and a random diagonal also: True
+   blocks of rank k=1: 3 independent tuples tried; (rank mod p1, rank mod p2): count = {(4, 4): 3}; predicted 2(q - 2^(m-k)) = 4
+   blocks of rank k=2: 6 independent tuples tried; (rank mod p1, rank mod p2): count = {(6, 6): 6}; predicted 2(q - 2^(m-k)) = 6
+   kernel K: [6, 6]; predicted 2(q-1) = 6
+   free * move * free: [4, 4] (same as one move: 4)
+   NOT column-uniform free step, for contrast: a single-column shift S(x)1 commutes with the witness: False
+   partial call (one move, applied only to the half of the addresses with top bit 1), as P(x)P: [2, 2]
+ m=3 q=8: all 24 free generators commute with the witness: True; a random permutation of the digit and a random diagonal also: True
+   blocks of rank k=1: 7 independent tuples tried; (rank mod p1, rank mod p2): count = {(8, 8): 7}; predicted 2(q - 2^(m-k)) = 8
+   blocks of rank k=2: 42 independent tuples tried; (rank mod p1, rank mod p2): count = {(12, 12): 42}; predicted 2(q - 2^(m-k)) = 12
+   blocks of rank k=3: 60 independent tuples tried; (rank mod p1, rank mod p2): count = {(14, 14): 60}; predicted 2(q - 2^(m-k)) = 14
+   kernel K: [14, 14]; predicted 2(q-1) = 14
+   free * move * free: [8, 8] (same as one move: 8)
+   NOT column-uniform free step, for contrast: a single-column shift S(x)1 commutes with the witness: False
+   partial call (one move, applied only to the half of the addresses with top bit 1), as P(x)P: [4, 4]
+
+PART 2. Where does the game start to bind?  Is g^{(x)f} a combination of b^{(x)f}, b free (modulo scalars)?
+ m=1: free maps modulo scalars: 8 elements
+   f=1 (array length 2): dim span = 4 of 4; one move in span: True; kernel in span: True; primes agree: True (2 prime(s))
+   f=2 (array length 4): dim span = 6 of 16; one move in span: False; kernel in span: False; primes agree: True (2 prime(s))
+   f=3 (array length 8): dim span = 8 of 64; one move in span: False; kernel in span: False; primes agree: True (2 prime(s))
+   f=4 (array length 16): dim span = 8 of 256; one move in span: False; kernel in span: False; primes agree: True (2 prime(s))
+ m=2: free maps modulo scalars: 768 elements
+   f=1 (array length 4): dim span = 16 of 16; one move in span: True; kernel in span: True; primes agree: True (1 prime(s))
+   f=2 (array length 16): dim span = 88 of 256; one move in span: False; kernel in span: False; primes agree: True (1 prime(s))
+
+PART 3. What the floor  sum_j (1 - 2^-k_j) >= W (1 - 2^-m)  gives for the engine's exponent z (price: sum_j (k_j/m)^z = W)
+   m= 3: blocks per array >= 1.166666666667;  z >= 3.802e-01 (attained by rank k=2);  saving exponent 1 - z <= 0.619818
+   m= 4: blocks per array >= 1.071428571429;  z >= 2.398e-01 (attained by rank k=3);  saving exponent 1 - z <= 0.760177
+   m= 5: blocks per array >= 1.033333333333;  z >= 1.469e-01 (attained by rank k=4);  saving exponent 1 - z <= 0.853055
+   m= 6: blocks per array >= 1.016129032258;  z >= 8.776e-02 (attained by rank k=5);  saving exponent 1 - z <= 0.912241
+   m= 8: blocks per array >= 1.003937007874;  z >= 2.943e-02 (attained by rank k=7);  saving exponent 1 - z <= 0.970574
+   m=10: blocks per array >= 1.000978473581;  z >= 9.282e-03 (attained by rank k=9);  saving exponent 1 - z <= 0.990718
+   m=12: blocks per array >= 1.000244259893;  z >= 2.807e-03 (attained by rank k=11);  saving exponent 1 - z <= 0.997193
+   m=16: blocks per array >= 1.000015259255;  z >= 2.364e-04 (attained by rank k=15);  saving exponent 1 - z <= 0.999764
+   m=20: blocks per array >= 1.000000953676;  z >= 1.859e-05 (attained by rank k=19);  saving exponent 1 - z <= 0.999981
+   m=30: blocks per array >= 1.000000000931;  z >= 2.747e-08 (attained by rank k=29);  saving exponent 1 - z <= 1.000000
+   m=45: blocks per array >= 1.000000000000;  z >= 1.265e-12 (attained by rank k=44);  saving exponent 1 - z <= 1.000000

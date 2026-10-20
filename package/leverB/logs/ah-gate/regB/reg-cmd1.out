@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/verify.py", line 51, in <module>
+    main()
+  File "/content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/verify.py", line 32, in main
+    for tag, source, patch, target in load():
+                                      ^^^^^^
+  File "/content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/verify.py", line 16, in load
+    need(hashlib.sha256((root / name).read_bytes()).hexdigest() == expected, 'input hash: ' + name)
+  File "/content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/apply_terminal.py", line 15, in need
+    raise ValueError(why)
+ValueError: input hash: owner/inputs/old-FILL.json.gz

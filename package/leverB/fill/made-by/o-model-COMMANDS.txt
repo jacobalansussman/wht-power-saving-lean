@@ -1,0 +1,58 @@
+o-model (round wht45/reopt), 19 Oct 2026. Hub code ran only on Colabs, under nice -n 19, in /content/work/reopt-o-model/
+(tmux -L reopt-o-model). Scripts written on the Mac in control/, probe/, tools/ and copied with ssh 'cat > ...'.
+Mac: light Python only (tools/groupstats.py on the published #2979 fill, 0.9 s; pricing with lever-reprice tools/mixed.py).
+
+0. Setup on C1 (hub clone /content/work/hub, read-only use; my own worktrees):
+   git -C /content/work/hub worktree add --detach /content/work/reopt-o-model/hub-main 20ecf2891
+   git -C /content/work/hub worktree add --detach /content/work/reopt-o-model/hub-3815 77ffbf287b6ca198b4a31e3835db3bae60718b93
+   git -C /content/work/hub worktree add --detach /content/work/reopt-o-model/hub-3945 91f81d131252db704f945891da1ea54e29d46b8b
+   uv venv -p /usr/bin/python3.12 v2979; uv pip install numpy==2.4.5 scipy==1.16.1 ortools==9.15.6755 mpmath==1.3.0 sympy==1.14.0 gmpy2==2.3.2
+       (#2979's recorded environment: CPython 3.12.13, numpy 2.4.5, scipy 1.16.1; "OR-Tools 9.15")
+   uv venv -p /usr/bin/python3.12 v3815; uv pip install numpy==2.5.4 scipy==1.18.1 highspy==1.15.1   (#3815's recorded versions)
+   sh control/setup2979.sh   (copies #2979 construction/allocation/*.py + tools/relax.py, root.py into c2979/code, and links
+                              S/r13/vendor/pr2917/research/paired-helper-extension, S/r12/vendor/pr2857/research/shared-kernel-repacking,
+                              S/r12/vendor/pr2833/research/gmx-t74-borrow43-handoff to main's copies, whose pinned files match)
+
+1. CONTROL A1 (#2979, byte equality): sh control/run2979_replay.sh  -> logs/a1.out
+   fill17.py --work runs/t37-replay --chronology pr2833-t37 --providers allocation/PROVIDERS.json
+     --mix-file construction/allocation/T37-FACE-MIX.json --reuse-flow construction/allocation/T37-FLOW.json.gz --buffers 91 --seed 1
+   double.py runs/t37-replay runs/t74-replay --providers allocation/PROVIDERS.json --buffers 91
+   -> runs/t74-replay/FILL.json.gz sha c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39 = published; cmp: FILL_BYTE_IDENTICAL.
+   ~1 min, 0.3 GB.
+
+2. CONTROL A2 (#2979, fresh CP-SAT search): sh control/run2979_fresh.sh -> logs/a2.out
+   same without --reuse-flow (--seconds 900 --workers 1 --seed 1): OPTIMAL in 667 s; flow differs (3156 vs 3174 z entries);
+   FILL sha c4f755ae... (valid: engine PASS, same profile and kappa); heads 14,526 (tools/groupstats.py).
+
+3. CONTROL B1 (#3815's construction): sh control/run3815_build.sh -> logs/b1.out
+   build_fill.py research/staged544-clock-ceiling/inputs/ORDER.json --out c3815/out-d40 --distinct 40   (8 min, 2.3 GB)
+   -> owner_audit PASS; PROFILE.json byte-identical (9686df0d...); FILL f85605cc... != 50e46351...; tools/cmpfill3815.py:
+   heads 57,312 both, remainders per pair class identical, 23 of 3240 classes differ, 606,021 identical rows.
+   B1v2 (same with NPY_DISABLE_CPU_FEATURES=X86_V3): logs/b1v2.out, FILL c3a7ba25..., still different (648,676 rows differ):
+   the result depends on numpy's SIMD dispatch, so the author's macOS arm64 bytes cannot be reproduced on x86.
+
+4. CONTROL B2 (#3945's offset step): sh control/run3945_offsets.sh -> logs/b2.out
+   owner/build_fill.py --output-dir c3945/regen -> PASS_REGENERATED_LITERAL_FILL (it compares with the frozen FILL itself);
+   payload sha 27eb2101... identical; gzip bytes identical except byte 9 (OS 3 vs 10); PROFILE equal up to CRLF.
+
+5. Probes (sections 6-7 of MODEL.md):
+   P1/P2 (#2979, C4): probe/mkpatch.py makes code/fill17_heads.py (fill17 + --force-heads / --max-heads);
+     sh probe/run_probe2979.sh --force-heads force --seconds 2400                     -> logs/p1.out
+     sh probe/run_probe2979.sh --max-heads maxh --seconds 2400 --hint-flow T37-FLOW.json.gz -> logs/p2.out
+   P3 (#3945 line, C3): probe/mkpatch3815.py (hall_lp + head bonus delta/a on class 9r+4, empty pattern);
+     sh probe/run_probe3945.sh 1 bonus1 -> logs/p3-bonus1.out ; sh probe/run_probe3945.sh 0 bonus0 -> logs/p3-bonus0.out (control)
+     sh probe/run_probe3945b.sh 1 mip1 900 -> logs/p3b-mip1.out  (LP, then MIP on the generated columns, re-separation; probe/hall_mip.py)
+   offsets: probe/offsets3945.py (re-implementation of #3945's owner/build_fill.py step on any #3815-stage fill).
+   hub checks on new designs:
+     sh control/run2979_checkalloc.sh (C1) -> logs/C1/checkalloc.out : #2979 check_allocation.py on a package copy, published
+        (control) and all-heads (only allocation/FILL.json.gz + its ALLOCATION-PINS entry replaced): both PASS.
+     sh probe/verify3945.sh published <old-FILL> <FILL> <PROFILE>  (C3; control, PASS, printed only)
+     sh probe/verify3945.sh allheads c3815h-mip1/out/inputs/FILL.json.gz c3815h-mip1/final3945/FILL.json.gz c3815h-mip1/final3945/PROFILE.json
+        -> logs/C3/verify3945-allheads.out : #3945 owner/verify.py (plain and -O) PASS_LITERAL_ENLARGED_OWNER_FILL.
+   Mac evaluation of both designs (light): o-eval tools/evalfill.py --design designs/{2979,3945}/design.json --fill <FILL> --out
+     designs/<x>-allheads/eval-o-eval.json ; lever-reprice tools/heads_fill.py <pkg> --fill <FILL> [--control-bridge-first] ;
+     tools/recount.py <FILL> <T>.
+   Logs: logs/C1, logs/C3, logs/C4 (copies of each Colab's /content/work/reopt-o-model/logs).
+
+6. Mac (light): python3 -I -B tools/groupstats.py <FILL> <ORDER> <DISPATCH> <PROVIDERS> <TEMPLATE>  (per pair-class remainders, heads)
+   pricing: lever-reprice tools/mixed.py root (half cut: children base + {24: H} + {48: I - H}, targets {73: W - H, 49: H}).

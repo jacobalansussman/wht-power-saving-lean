@@ -1,0 +1,7 @@
+pos seed 1 start 0: M = 16 gates, residual 1.32626e-28 after 29 iterations
+pos seed 1 start 1: M = 16 gates, residual 2.53669e-28 after 48 iterations
+pos seed 1 start 2: M = 16 gates, residual 2.52713e-25 after 37 iterations
+pos seed 1 start 3: M = 16 gates, residual 2.06641e-28 after 64 iterations
+pos seed 1 BEST 1.32626e-28
+time 47.3 s
+python3 s4_refl_probe.py pos 1  47.12s user 0.28s system 99% cpu 47.638 total

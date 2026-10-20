@@ -1,0 +1,8 @@
+|A| 64, |Levi| 168 |A.Levi| distinct 10752
+lifts of the 6 A-generators and 6 Levi generators verified against the symplectic action
+lift map spot-checked (products agree up to Paulis and scalars)
+two-row defect counts {2: 2304, 18: 6144, 4: 2304}
+involutions in P0: 399
+order-2 relating letters g with some b: A_{bg} proportional to A_b (delta_2 = 1): 79 g, pairs 108288
+of these g, lifts with C^2 scalar exist for: 79 ; none for: 0
+example: b index 0 g index 2 -> Lemma Q3 bound 2/2 = 1.0 attained by D(b + c b g) with a j = 2 lift

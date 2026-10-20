@@ -1,0 +1,5 @@
+(1) 2x2: 10 distinct matrices, evaluation rank over f=1..6 = 10 (independent: True), smallest/largest singular value 3.28e-01
+(1) 4x4: 14 distinct matrices, evaluation rank over f=1..3 = 14 (independent: True), smallest/largest singular value 2.69e-02
+(2) f=1: || (sqrt2 H)^(x)f - (X^(x)f + Z^(x)f) || = 0.000
+(2) f=2: || (sqrt2 H)^(x)f - (X^(x)f + Z^(x)f) || = 2.828
+(2) f=3: || (sqrt2 H)^(x)f - (X^(x)f + Z^(x)f) || = 6.928

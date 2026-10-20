@@ -1,0 +1,38 @@
+Part A: OpenAI's reflection objects, exact integer checks
+  d=1  N=4  w=16  h=24  h/w=1.500  (d/2+1)=1.500  all 11 checks pass: True  []
+  d=2  N=8  w=64  h=128  h/w=2.000  (d/2+1)=2.000  all 11 checks pass: True  []
+  d=3  N=16  w=256  h=640  h/w=2.500  (d/2+1)=2.500  all 11 checks pass: True  []
+  d=4  N=32  w=1024  h=3072  h/w=3.000  (d/2+1)=3.000  all 10 checks pass: True  []
+  m=1: T_(m+1) = diag(I,-I) ppt(U(x)T_m, bottom) diag(I,-I): True;  off-diagonal nnz: U^(x)(m+1) 5, T_(m+1) 4, price (m+1)2^m = 4
+  m=2: T_(m+1) = diag(I,-I) ppt(U(x)T_m, bottom) diag(I,-I): True;  off-diagonal nnz: U^(x)(m+1) 19, T_(m+1) 12, price (m+1)2^m = 12
+  m=3: T_(m+1) = diag(I,-I) ppt(U(x)T_m, bottom) diag(I,-I): True;  off-diagonal nnz: U^(x)(m+1) 65, T_(m+1) 32, price (m+1)2^m = 32
+  m=4: T_(m+1) = diag(I,-I) ppt(U(x)T_m, bottom) diag(I,-I): True;  off-diagonal nnz: U^(x)(m+1) 211, T_(m+1) 80, price (m+1)2^m = 80
+
+Part B: the converter.  All 2x2 pairs priced pi (dense pairs of K(eps), Cayley-cell scalar pairs,
+        P_beta/Q_beta of the graph pivot, F and F^-1).  Chain: d w <= pi (d/2 + 4) w.
+  pi = 2.0   (LDU price 2             ): margin per w = d(1 - pi/2) - 4 pi;  contradiction iff d > inf
+  pi = 1.5   (dense-pair lemma 3/2    ): margin per w = d(1 - pi/2) - 4 pi;  contradiction iff d > 24.00
+  pi = 1.25  (5/4                     ): margin per w = d(1 - pi/2) - 4 pi;  contradiction iff d > 13.33
+  pi = 1.0   (1                       ): margin per w = d(1 - pi/2) - 4 pi;  contradiction iff d > 8.00
+  pi = 0.5   (floor 1/2 (U ~ B D B)   ): margin per w = d(1 - pi/2) - 4 pi;  contradiction iff d > 2.67
+  OpenAI's own bookkeeping (pairs at 3/2 only inside K(eps), 2 elsewhere): d w <= (3d/4 + 7.5) w, d > 30.
+  With pi = 2 everywhere: d w <= (d + 8) w -- a tie up to 8w.  So the whole margin is (2 - pi) per pair of A.
+
+Part C: sparsity bound from the feedback law.  G invertible, D' generic diagonal, N = D'^-1 G - I invertible;
+        cell K = [[N, I],[I, 0]] (= swap o rectangular shear, price <= nnz(N)) closes at s = 1 to I + N.
+  random G #0: closure equals I + N: True;  D' (I+N) == G: True;  det N != 0: True;  nnz(N) = 14, nnz(G) = 14
+  random G #1: closure equals I + N: True;  D' (I+N) == G: True;  det N != 0: True;  nnz(N) = 18, nnz(G) = 18
+  random G #2: closure equals I + N: True;  D' (I+N) == G: True;  det N != 0: True;  nnz(N) = 16, nnz(G) = 15
+  Consequence: p(Gamma) <= nnz(Gamma); with A = S(Gamma(x)I - I(x)Gamma), h = N nnz(Gamma) >= N p(Gamma) = p(M)/2.
+    OpenAI's Gamma at d=10: p(Gamma)/(N) = 5.0, nnz(Gamma)/N = 6.0, h/p(M) = 0.6000 (floor 1/2)
+    OpenAI's Gamma at d=30: p(Gamma)/(N) = 15.0, nnz(Gamma)/N = 16.0, h/p(M) = 0.5333 (floor 1/2)
+    OpenAI's Gamma at d=60: p(Gamma)/(N) = 30.0, nnz(Gamma)/N = 31.0, h/p(M) = 0.5167 (floor 1/2)
+    OpenAI's Gamma at d=100: p(Gamma)/(N) = 50.0, nnz(Gamma)/N = 51.0, h/p(M) = 0.5100 (floor 1/2)
+
+Part D: zero-overhead ceilings, ratio r(d) = pi/2 + 4 pi/d
+  pi = 1.5  : fixed-matrix max s = 1.9697e-03 at d = 50;  uniform (hypothetical) max s = 4.1452e-02 at d = 186
+  pi = 1.25 : fixed-matrix max s = 5.4433e-03 at d = 29;  uniform (hypothetical) max s = 7.4044e-02 at d = 101
+  pi = 1.0  : fixed-matrix max s = 1.2355e-02 at d = 18;  uniform (hypothetical) max s = 1.1823e-01 at d = 61
+  pi = 0.75 : fixed-matrix max s = 2.6106e-02 at d = 11;  uniform (hypothetical) max s = 1.8128e-01 at d = 37
+  pi = 0.5  : fixed-matrix max s = 5.6279e-02 at d = 7;  uniform (hypothetical) max s = 2.8108e-01 at d = 22
+  (OpenAI's constants, pi = 3/2 inside K only: quantify/out_ceilings.txt gives 1.58e-3 fixed, 4.0e-2 uniform.)

@@ -1,0 +1,106 @@
+grp.py:23: RuntimeWarning: divide by zero encountered in matmul
+  for M in Ms[1:]: out = snap(out @ M)
+grp.py:23: RuntimeWarning: overflow encountered in matmul
+  for M in Ms[1:]: out = snap(out @ M)
+grp.py:23: RuntimeWarning: invalid value encountered in matmul
+  for M in Ms[1:]: out = snap(out @ M)
+f2blind.py:23: RuntimeWarning: divide by zero encountered in matmul
+  return {(a, b): Q[a] @ M @ Q[b].T for a in 'DSA' for b in 'DSA'}
+f2blind.py:23: RuntimeWarning: overflow encountered in matmul
+  return {(a, b): Q[a] @ M @ Q[b].T for a in 'DSA' for b in 'DSA'}
+f2blind.py:23: RuntimeWarning: invalid value encountered in matmul
+  return {(a, b): Q[a] @ M @ Q[b].T for a in 'DSA' for b in 'DSA'}
+numpy/linalg/_linalg.py:3220: RuntimeWarning: divide by zero encountered in matmul
+  return _core_matmul(x1, x2)
+numpy/linalg/_linalg.py:3220: RuntimeWarning: overflow encountered in matmul
+  return _core_matmul(x1, x2)
+numpy/linalg/_linalg.py:3220: RuntimeWarning: invalid value encountered in matmul
+  return _core_matmul(x1, x2)
+f2blind.py:47: RuntimeWarning: divide by zero encountered in matmul
+  As = np.linalg.pinv(Rt) @ np.vstack([Wi, np.zeros((Rt.shape[0] - k, 120))])
+f2blind.py:47: RuntimeWarning: overflow encountered in matmul
+  As = np.linalg.pinv(Rt) @ np.vstack([Wi, np.zeros((Rt.shape[0] - k, 120))])
+f2blind.py:47: RuntimeWarning: invalid value encountered in matmul
+  As = np.linalg.pinv(Rt) @ np.vstack([Wi, np.zeros((Rt.shape[0] - k, 120))])
+f2blind.py:46: RuntimeWarning: divide by zero encountered in matmul
+  Rd = np.zeros((16, 16), dtype=complex); Rd[:, :] = np.hstack([Ui, np.zeros((16, Lf.shape[1] - k))]) @ np.linalg.pinv(Lf)
+f2blind.py:46: RuntimeWarning: overflow encountered in matmul
+  Rd = np.zeros((16, 16), dtype=complex); Rd[:, :] = np.hstack([Ui, np.zeros((16, Lf.shape[1] - k))]) @ np.linalg.pinv(Lf)
+f2blind.py:46: RuntimeWarning: invalid value encountered in matmul
+  Rd = np.zeros((16, 16), dtype=complex); Rd[:, :] = np.hstack([Ui, np.zeros((16, Lf.shape[1] - k))]) @ np.linalg.pinv(Lf)
+f2blind.py:52: RuntimeWarning: divide by zero encountered in matmul
+  Rs = np.hstack([Ui, np.zeros((120, Lf.shape[1] - k))]) @ np.linalg.pinv(Lf)
+f2blind.py:52: RuntimeWarning: overflow encountered in matmul
+  Rs = np.hstack([Ui, np.zeros((120, Lf.shape[1] - k))]) @ np.linalg.pinv(Lf)
+f2blind.py:52: RuntimeWarning: invalid value encountered in matmul
+  Rs = np.hstack([Ui, np.zeros((120, Lf.shape[1] - k))]) @ np.linalg.pinv(Lf)
+f2blind.py:56: RuntimeWarning: divide by zero encountered in matmul
+  return Q['D'].T @ d @ Q['D'] + Q['S'].T @ s @ Q['S'] + Q['A'].T @ a @ Q['A']
+f2blind.py:56: RuntimeWarning: overflow encountered in matmul
+  return Q['D'].T @ d @ Q['D'] + Q['S'].T @ s @ Q['S'] + Q['A'].T @ a @ Q['A']
+f2blind.py:56: RuntimeWarning: invalid value encountered in matmul
+  return Q['D'].T @ d @ Q['D'] + Q['S'].T @ s @ Q['S'] + Q['A'].T @ a @ Q['A']
+f2blind.py:60: RuntimeWarning: divide by zero encountered in matmul
+  moves = [Ds[i] @ Am[i] for i in range(2)]
+f2blind.py:60: RuntimeWarning: overflow encountered in matmul
+  moves = [Ds[i] @ Am[i] for i in range(2)]
+f2blind.py:60: RuntimeWarning: invalid value encountered in matmul
+  moves = [Ds[i] @ Am[i] for i in range(2)]
+f2blind.py:61: RuntimeWarning: divide by zero encountered in matmul
+  rest = K2 - sum(Rm[i] @ moves[i] for i in range(2))
+f2blind.py:61: RuntimeWarning: overflow encountered in matmul
+  rest = K2 - sum(Rm[i] @ moves[i] for i in range(2))
+f2blind.py:61: RuntimeWarning: invalid value encountered in matmul
+  rest = K2 - sum(Rm[i] @ moves[i] for i in range(2))
+f2blind.py:65: RuntimeWarning: divide by zero encountered in matmul
+  prog = lambda x: Rx @ x + sum(Rm[i] @ (moves[i] @ x) for i in range(2))
+f2blind.py:65: RuntimeWarning: overflow encountered in matmul
+  prog = lambda x: Rx @ x + sum(Rm[i] @ (moves[i] @ x) for i in range(2))
+f2blind.py:65: RuntimeWarning: invalid value encountered in matmul
+  prog = lambda x: Rx @ x + sum(Rm[i] @ (moves[i] @ x) for i in range(2))
+f2blind.py:68: RuntimeWarning: divide by zero encountered in matmul
+  print('FRESH random inputs: max |program(x) - (K(x)K) x| / |x| = %.2e' % (np.abs(prog(X) - K2 @ X).max() / np.abs(X).max()))
+f2blind.py:68: RuntimeWarning: overflow encountered in matmul
+  print('FRESH random inputs: max |program(x) - (K(x)K) x| / |x| = %.2e' % (np.abs(prog(X) - K2 @ X).max() / np.abs(X).max()))
+f2blind.py:68: RuntimeWarning: invalid value encountered in matmul
+  print('FRESH random inputs: max |program(x) - (K(x)K) x| / |x| = %.2e' % (np.abs(prog(X) - K2 @ X).max() / np.abs(X).max()))
+f2blind.py:75: RuntimeWarning: divide by zero encountered in matmul
+  blocksG.append({b: Qb @ M for b, Qb in Q.items()})
+f2blind.py:75: RuntimeWarning: overflow encountered in matmul
+  blocksG.append({b: Qb @ M for b, Qb in Q.items()})
+f2blind.py:75: RuntimeWarning: invalid value encountered in matmul
+  blocksG.append({b: Qb @ M for b, Qb in Q.items()})
+f2blind.py:78: RuntimeWarning: divide by zero encountered in matmul
+  S = np.vstack([bl[b] for bl in blocksG]); Tt = Qb @ K2
+f2blind.py:78: RuntimeWarning: overflow encountered in matmul
+  S = np.vstack([bl[b] for bl in blocksG]); Tt = Qb @ K2
+f2blind.py:78: RuntimeWarning: invalid value encountered in matmul
+  S = np.vstack([bl[b] for bl in blocksG]); Tt = Qb @ K2
+f2blind.py:80: RuntimeWarning: divide by zero encountered in matmul
+  R = Tt - (Tt @ Vr.conj().T) @ Vr; res = float(np.sum(np.abs(R) ** 2) / np.sum(np.abs(Tt) ** 2)); tot += res
+f2blind.py:80: RuntimeWarning: overflow encountered in matmul
+  R = Tt - (Tt @ Vr.conj().T) @ Vr; res = float(np.sum(np.abs(R) ** 2) / np.sum(np.abs(Tt) ** 2)); tot += res
+f2blind.py:80: RuntimeWarning: invalid value encountered in matmul
+  R = Tt - (Tt @ Vr.conj().T) @ Vr; res = float(np.sum(np.abs(R) ** 2) / np.sum(np.abs(Tt) ** 2)); tot += res
+f2blind.py:86: RuntimeWarning: divide by zero encountered in matmul
+  S = np.vstack([bl[b] for bl in blocks1]); Tt = Qb @ K2
+f2blind.py:86: RuntimeWarning: overflow encountered in matmul
+  S = np.vstack([bl[b] for bl in blocks1]); Tt = Qb @ K2
+f2blind.py:86: RuntimeWarning: invalid value encountered in matmul
+  S = np.vstack([bl[b] for bl in blocks1]); Tt = Qb @ K2
+f2blind.py:88: RuntimeWarning: divide by zero encountered in matmul
+  R = Tt - (Tt @ Vr.conj().T) @ Vr; tot1 += float(np.sum(np.abs(R) ** 2) / np.sum(np.abs(Tt) ** 2))
+f2blind.py:88: RuntimeWarning: overflow encountered in matmul
+  R = Tt - (Tt @ Vr.conj().T) @ Vr; tot1 += float(np.sum(np.abs(R) ** 2) / np.sum(np.abs(Tt) ** 2))
+f2blind.py:88: RuntimeWarning: invalid value encountered in matmul
+  R = Tt - (Tt @ Vr.conj().T) @ Vr; tot1 += float(np.sum(np.abs(R) ** 2) / np.sum(np.abs(Tt) ** 2))
+off-diagonal blocks of K(x)K: rank DS 15  SD 15  DA, AD, SA, AS norms [0.0, 0.0, 0.0, 0.0]
+D(1)(x)D(1): rank DS 8  SD 8
+D(2)(x)D(2): rank DS 8  SD 8
+after the two moves, off-diagonal blocks left (must be 0): 9.228989749183033e-16
+FRESH random inputs: max |program(x) - (K(x)K) x| / |x| = 1.19e-15
+  rep2-style residual, block D: 3.48e-30 (row rank 31)
+  rep2-style residual, block S: 1.21e-30 (row rank 135)
+  rep2-style residual, block A: 1.70e-30 (row rank 120)
+TOTAL f = 2 widened residual of the 1-array 2-move program: 6.39e-30  (0 = passes)
+control, input + move 1 only: residual 0.496 (must be > 0)

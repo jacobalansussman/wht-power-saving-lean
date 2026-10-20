@@ -1,0 +1,84 @@
+X4X dirt=none: M=6642 (local N 6642, diff 0) P=81534 Bmix=26944 D=7840 Z=0 I0=1088 A=79248 | Psi0=0 Psi_end=44464 deliv=2800 scratch_end=41664 | P/M=12.276 D/M=1.180 maxlab=77 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=0 D=0 I0=0  P/M=0.00
+    y: M=896 P=61456 D=4704 I0=0  P/M=68.59
+    s: M=4786 P=16558 D=0 I0=1088  P/M=3.46
+    c: M=64 P=3520 D=3136 I0=0  P/M=55.00
+    labels per move (moves weighted): {0: 1088, 1: 1232, 2: 784, 4: 1592, 8: 514, 16: 464, 34: 112, 56: 72, 71: 176, 75: 384, 77: 224}
+    kept packing P_keep=19810 (labels the register still holds at the end); junk share of label-moves 0.715
+X4X dirt=ext-each: M=6642 (local N 6642, diff 0) P=86418 Bmix=25881 D=7840 Z=0 I0=432 A=84788 | Psi0=408 Psi_end=51475 deliv=2800 scratch_end=48675 | P/M=13.011 D/M=1.180 maxlab=83 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=0 D=0 I0=0  P/M=0.00
+    y: M=896 P=63496 D=4704 I0=0  P/M=70.87
+    s: M=4786 P=19402 D=0 I0=432  P/M=4.05
+    c: M=64 P=3520 D=3136 I0=0  P/M=55.00
+    labels per move (moves weighted): {0: 432, 1: 1792, 2: 784, 3: 14, 4: 944, 5: 682, 7: 42, 8: 392, 9: 56, 10: 7, 11: 7, 12: 50, 13: 1, 15: 6, 16: 193, 18: 16, 19: 12, 20: 4, 21: 208, 23: 8, 24: 4, 25: 20, 34: 56, 36: 56, 56: 72, 71: 48, 72: 40, 75: 128, 76: 96, 77: 192, 78: 16, 79: 72, 80: 48, 81: 104, 82: 16, 83: 24}
+    kept packing P_keep=22260 (labels the register still holds at the end); junk share of label-moves 0.696
+X4X dirt=gates: M=6642 (local N 6642, diff 0) P=230756 Bmix=202164 D=13600 Z=0 I0=0 A=223798 | Psi0=408 Psi_end=8442 deliv=2800 scratch_end=5642 | P/M=34.742 D/M=2.048 maxlab=221 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=0 D=0 I0=0  P/M=0.00
+    y: M=896 P=165420 D=4704 I0=0  P/M=184.62
+    s: M=4786 P=56056 D=0 I0=0  P/M=11.71
+    c: M=64 P=9280 D=8896 I0=0  P/M=145.00
+    labels per move (moves weighted): {1: 1568, 2: 199, 3: 175, 4: 602, 5: 154, 6: 52, 7: 18, 8: 304, 9: 354, 10: 213, 11: 203, 12: 441, 13: 314, 14: 36, 15: 21, 16: 52, 17: 26, 18: 4, 20: 92, 21: 138, 22: 63, 23: 38, 24: 44, 25: 27, 26: 17, 27: 18, 28: 16, 29: 12, 30: 2, 31: 4, 32: 17, 33: 2, 34: 16, 37: 24, 39: 24, 44: 8, 45: 16, 46: 44, 47: 24, 48: 40, 49: 16, 50: 30, 51: 50, 52: 50, 53: 50, 54: 28, 55: 10, 56: 6, 57: 2, 58: 2, 59: 8, 66: 4, 68: 4, 70: 4, 72: 4, 90: 1, 92: 1, 93: 1, 94: 10, 95: 5, 96: 16, 97: 11, 98: 14, 99: 10, 100: 17, 101: 4, 102: 4, 104: 1, 105: 1, 139: 4, 142: 9, 143: 18, 144: 13, 147: 29, 148: 9, 149: 9, 151: 12, 152: 13, 153: 16, 155: 16, 157: 4, 159: 12, 161: 16, 165: 4, 179: 2, 184: 2, 185: 1, 187: 10, 189: 4, 190: 1, 191: 8, 192: 5, 193: 14, 194: 4, 195: 17, 196: 8, 197: 13, 198: 17, 199: 25, 200: 16, 201: 26, 202: 26, 203: 28, 204: 25, 205: 10, 206: 24, 207: 34, 208: 48, 209: 25, 210: 39, 211: 46, 212: 54, 213: 33, 214: 27, 215: 32, 216: 16, 217: 19, 218: 4, 219: 3, 220: 2, 221: 4}
+    kept packing P_keep=10176 (labels the register still holds at the end); junk share of label-moves 0.934
+X4X dirt=gates-one: M=6642 (local N 6642, diff 0) P=86192 Bmix=68992 D=7904 Z=0 I0=0 A=84930 | Psi0=408 Psi_end=8442 deliv=2800 scratch_end=5642 | P/M=12.977 D/M=1.190 maxlab=78 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=0 D=0 I0=0  P/M=0.00
+    y: M=896 P=62352 D=4704 I0=0  P/M=69.59
+    s: M=4786 P=20256 D=0 I0=0  P/M=4.23
+    c: M=64 P=3584 D=3200 I0=0  P/M=56.00
+    labels per move (moves weighted): {1: 1984, 2: 336, 3: 784, 5: 1592, 9: 514, 17: 464, 35: 112, 57: 72, 72: 176, 76: 384, 78: 224}
+    kept packing P_keep=4480 (labels the register still holds at the end); junk share of label-moves 0.880
+X4X dirt=F2/none: M=6642 (local N 6642, diff 0) P=86192 Bmix=27064 D=7904 Z=0 I0=1088 A=83842 | Psi0=112 Psi_end=48986 deliv=2912 scratch_end=46074 | P/M=12.977 D/M=1.190 maxlab=77 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=896 D=0 I0=0  P/M=1.00
+    y: M=896 P=61456 D=4704 I0=0  P/M=68.59
+    s: M=4786 P=20256 D=0 I0=1088  P/M=4.23
+    c: M=64 P=3584 D=3200 I0=0  P/M=56.00
+    labels per move (moves weighted): {0: 1088, 2: 1232, 3: 784, 5: 1592, 9: 514, 17: 464, 34: 112, 57: 72, 71: 176, 75: 384, 77: 224}
+    kept packing P_keep=23050 (labels the register still holds at the end); junk share of label-moves 0.694
+X4X dirt=F2/ext-each: M=6642 (local N 6642, diff 0) P=91076 Bmix=26001 D=7904 Z=0 I0=432 A=89382 | Psi0=520 Psi_end=55997 deliv=2912 scratch_end=53085 | P/M=13.712 D/M=1.190 maxlab=83 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=896 D=0 I0=0  P/M=1.00
+    y: M=896 P=63496 D=4704 I0=0  P/M=70.87
+    s: M=4786 P=23100 D=0 I0=432  P/M=4.83
+    c: M=64 P=3584 D=3200 I0=0  P/M=56.00
+    labels per move (moves weighted): {0: 432, 1: 560, 2: 1232, 3: 798, 4: 82, 5: 862, 6: 682, 8: 42, 9: 392, 10: 56, 11: 7, 12: 7, 13: 50, 14: 1, 16: 6, 17: 193, 19: 16, 20: 12, 21: 4, 22: 208, 24: 8, 25: 4, 26: 20, 34: 56, 36: 56, 57: 72, 71: 48, 72: 40, 75: 128, 76: 96, 77: 192, 78: 16, 79: 72, 80: 48, 81: 104, 82: 16, 83: 24}
+    kept packing P_keep=25500 (labels the register still holds at the end); junk share of label-moves 0.677
+X4X dirt=F2/gates: M=6642 (local N 6642, diff 0) P=235414 Bmix=206694 D=13664 Z=0 I0=0 A=228392 | Psi0=520 Psi_end=8554 deliv=2912 scratch_end=5642 | P/M=35.443 D/M=2.057 maxlab=221 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=896 D=0 I0=0  P/M=1.00
+    y: M=896 P=165420 D=4704 I0=0  P/M=184.62
+    s: M=4786 P=59754 D=0 I0=0  P/M=12.49
+    c: M=64 P=9344 D=8960 I0=0  P/M=146.00
+    labels per move (moves weighted): {1: 672, 2: 983, 3: 287, 4: 140, 5: 476, 6: 140, 7: 52, 8: 18, 9: 304, 10: 354, 11: 213, 12: 203, 13: 441, 14: 314, 15: 36, 16: 21, 17: 52, 18: 26, 19: 4, 21: 92, 22: 138, 23: 63, 24: 38, 25: 44, 26: 27, 27: 17, 28: 18, 29: 16, 30: 12, 31: 2, 32: 4, 33: 17, 34: 2, 35: 16, 38: 24, 40: 24, 45: 8, 46: 16, 47: 44, 48: 24, 49: 40, 50: 16, 51: 30, 52: 50, 53: 50, 54: 50, 55: 28, 56: 10, 57: 6, 58: 2, 59: 2, 60: 8, 66: 4, 68: 4, 70: 4, 72: 4, 90: 1, 92: 1, 93: 1, 94: 10, 95: 5, 96: 16, 97: 11, 98: 14, 99: 10, 100: 17, 101: 4, 102: 4, 104: 1, 105: 1, 139: 4, 143: 9, 144: 22, 145: 9, 147: 20, 148: 9, 149: 9, 150: 9, 151: 12, 152: 4, 153: 25, 155: 16, 157: 4, 159: 12, 161: 16, 165: 4, 179: 2, 184: 2, 185: 1, 187: 10, 189: 4, 190: 1, 191: 8, 192: 5, 193: 14, 194: 4, 195: 17, 196: 8, 197: 13, 198: 17, 199: 25, 200: 16, 201: 26, 202: 26, 203: 28, 204: 25, 205: 10, 206: 24, 207: 34, 208: 48, 209: 25, 210: 39, 211: 46, 212: 54, 213: 33, 214: 27, 215: 32, 216: 16, 217: 19, 218: 4, 219: 3, 220: 2, 221: 4}
+    kept packing P_keep=10240 (labels the register still holds at the end); junk share of label-moves 0.935
+X4X dirt=F2/gates-one: M=6642 (local N 6642, diff 0) P=90850 Bmix=73522 D=7968 Z=0 I0=0 A=89524 | Psi0=520 Psi_end=8554 deliv=2912 scratch_end=5642 | P/M=13.678 D/M=1.200 maxlab=78 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=896 D=0 I0=0  P/M=1.00
+    y: M=896 P=62352 D=4704 I0=0  P/M=69.59
+    s: M=4786 P=23954 D=0 I0=0  P/M=5.01
+    c: M=64 P=3648 D=3264 I0=0  P/M=57.00
+    labels per move (moves weighted): {1: 1088, 2: 896, 3: 336, 4: 784, 6: 1592, 10: 514, 18: 464, 35: 112, 58: 72, 72: 176, 76: 384, 78: 224}
+    kept packing P_keep=4544 (labels the register still holds at the end); junk share of label-moves 0.885
+X4X dirt=F3/none: M=6642 (local N 6642, diff 0) P=1680 Bmix=904 D=64 Z=0 I0=1088 A=7170 | Psi0=224 Psi_end=6426 deliv=2016 scratch_end=4410 | P/M=0.253 D/M=0.010 maxlab=3 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=0 D=0 I0=0  P/M=0.00
+    y: M=896 P=1680 D=0 I0=0  P/M=1.88
+    s: M=4786 P=0 D=0 I0=1088  P/M=0.00
+    c: M=64 P=0 D=64 I0=0  P/M=0.00
+    labels per move (moves weighted): {0: 1088, 1: 4658, 2: 112, 3: 784}
+    kept packing P_keep=0 (labels the register still holds at the end); junk share of label-moves 0.304
+X4X dirt=F3/ext-each: M=6642 (local N 6642, diff 0) P=6564 Bmix=-159 D=64 Z=0 I0=432 A=12710 | Psi0=632 Psi_end=13437 deliv=2016 scratch_end=11421 | P/M=0.988 D/M=0.010 maxlab=10 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=0 D=0 I0=0  P/M=0.00
+    y: M=896 P=3720 D=0 I0=0  P/M=4.15
+    s: M=4786 P=2844 D=0 I0=432  P/M=0.59
+    c: M=64 P=0 D=64 I0=0  P/M=0.00
+    labels per move (moves weighted): {0: 432, 1: 4088, 2: 794, 3: 309, 4: 303, 5: 132, 6: 209, 7: 112, 8: 126, 9: 117, 10: 20}
+    kept packing P_keep=2450 (labels the register still holds at the end); junk share of label-moves 0.348
+X4X dirt=F3/gates: M=6642 (local N 6642, diff 0) P=150902 Bmix=139318 D=5824 Z=0 I0=0 A=151720 | Psi0=632 Psi_end=7210 deliv=2016 scratch_end=5194 | P/M=22.719 D/M=0.877 maxlab=147 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=0 D=0 I0=0  P/M=0.00
+    y: M=896 P=105644 D=0 I0=0  P/M=117.91
+    s: M=4786 P=39498 D=0 I0=0  P/M=8.25
+    c: M=64 P=5760 D=5824 I0=0  P/M=90.00
+    labels per move (moves weighted): {1: 1568, 2: 199, 3: 623, 4: 154, 5: 458, 6: 294, 7: 42, 8: 280, 9: 646, 10: 369, 11: 40, 12: 21, 13: 128, 14: 144, 15: 63, 16: 38, 17: 60, 18: 27, 19: 33, 20: 18, 21: 16, 22: 36, 23: 2, 24: 28, 25: 1, 26: 2, 29: 8, 30: 16, 31: 44, 32: 24, 33: 40, 34: 20, 35: 30, 36: 54, 37: 50, 38: 54, 39: 28, 40: 14, 41: 6, 42: 2, 43: 2, 44: 8, 58: 1, 60: 1, 61: 1, 62: 10, 63: 5, 64: 16, 65: 11, 66: 14, 67: 10, 68: 17, 69: 4, 70: 4, 71: 4, 72: 1, 73: 1, 75: 16, 76: 4, 77: 12, 79: 4, 81: 16, 83: 20, 84: 4, 85: 12, 87: 9, 88: 18, 89: 25, 91: 4, 92: 9, 93: 9, 94: 9, 97: 9, 111: 2, 115: 8, 116: 2, 117: 7, 119: 2, 121: 12, 122: 1, 123: 12, 124: 5, 125: 18, 126: 8, 127: 11, 128: 20, 129: 19, 130: 29, 131: 37, 132: 25, 133: 22, 134: 25, 135: 37, 136: 68, 137: 42, 138: 49, 139: 43, 140: 50, 141: 44, 142: 26, 143: 19, 144: 8, 145: 15, 146: 2, 147: 4}
+    kept packing P_keep=5760 (labels the register still holds at the end); junk share of label-moves 0.929
+X4X dirt=F3/gates-one: M=6642 (local N 6642, diff 0) P=6338 Bmix=6146 D=128 Z=0 I0=0 A=12852 | Psi0=632 Psi_end=7210 deliv=2016 scratch_end=5194 | P/M=0.954 D/M=0.019 maxlab=4 | x restored True, y_t = x_t + y_t True
+    x: M=896 P=0 D=0 I0=0  P/M=0.00
+    y: M=896 P=2576 D=0 I0=0  P/M=2.88
+    s: M=4786 P=3698 D=0 I0=0  P/M=0.77
+    c: M=64 P=64 D=128 I0=0  P/M=1.00
+    labels per move (moves weighted): {1: 1984, 2: 3762, 3: 112, 4: 784}
+    kept packing P_keep=64 (labels the register still holds at the end); junk share of label-moves 0.483

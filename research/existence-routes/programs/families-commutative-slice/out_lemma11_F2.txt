@@ -1,0 +1,9 @@
+n=3 s=0 over F_2: 168 nonsingular matrices, 0 with all principal submatrices of order <= 2 of rank <= 0
+n=3 s=1 over F_2: 168 nonsingular matrices, 0 with all principal submatrices of order <= 3 of rank <= 1
+n=4 s=0 over F_2: 20160 nonsingular matrices, 0 with all principal submatrices of order <= 2 of rank <= 0
+n=4 s=1 over F_2: 20160 nonsingular matrices, 0 with all principal submatrices of order <= 3 of rank <= 1
+n=5 s=1 over F_2: 9999360 nonsingular matrices, 0 with all principal submatrices of order <= 3 of rank <= 1
+n=5 s=2 over F_2: 9999360 nonsingular matrices, 0 with all principal submatrices of order <= 4 of rank <= 2
+sharpness (order s+1 instead of s+2):
+n=4 s=1 over F_2: 20160 nonsingular matrices, 522 with all principal submatrices of order <= 2 of rank <= 1
+n=5 s=2 over F_2: 9999360 nonsingular matrices, 59794 with all principal submatrices of order <= 3 of rank <= 2

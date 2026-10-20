@@ -1,0 +1,151 @@
+design_w.py W=3 m=3 trials=300 depth=10 seed=92 (target 3 in 7)
+W=3 m=3: 300 designs in 756s
+   ((0, 0, 0), ('cap', 'cap', 'cap', 'psilin:000')) 6
+   ((0, 0, 0), ('cap', 'cap', 'no:linear syste', 'psilin:000')) 1
+   ((0, 0, 0), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 6
+   ((0, 0, 0), ('no:linear syste', 'no:target row u', 'no:linear syste', 'psilin:000')) 1
+   ((0, 0, 1), ('cap', 'cap', 'cap', 'psilin:000')) 6
+   ((0, 0, 1), ('cap', 'cap', 'cap', 'psilin:001')) 2
+   ((0, 0, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 4
+   ((0, 0, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:001')) 1
+   ((0, 0, 2), ('cap', 'cap', 'cap', 'psilin:000')) 7
+   ((0, 0, 2), ('cap', 'cap', 'cap', 'psilin:010')) 1
+   ((0, 0, 2), ('cap', 'cap', 'cap', 'psilin:011')) 2
+   ((0, 0, 2), ('cap', 'cap', 'cap', 'psilin:100')) 2
+   ((0, 0, 2), ('cap', 'cap', 'cap', 'psilin:101')) 2
+   ((0, 0, 2), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 1
+   ((0, 0, 2), ('no:linear syste', 'no:target row u', 'no:linear syste', 'psilin:000')) 1
+   ((0, 0, 2), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:000')) 1
+   ((0, 1, 0), ('cap', 'cap', 'cap', 'psilin:000')) 4
+   ((0, 1, 0), ('cap', 'cap', 'cap', 'psilin:010')) 2
+   ((0, 1, 0), ('cap', 'no:target row u', 'cap', 'psilin:000')) 1
+   ((0, 1, 0), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 4
+   ((0, 1, 0), ('no:target row u', 'cap', 'cap', 'psilin:000')) 1
+   ((0, 1, 1), ('cap', 'cap', 'cap', 'psilin:000')) 4
+   ((0, 1, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 3
+   ((0, 1, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:010')) 1
+   ((0, 1, 1), ('no:target row u', 'no:linear syste', 'no:linear syste', 'psilin:000')) 2
+   ((0, 1, 1), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:000')) 1
+   ((0, 1, 2), ('cap', 'cap', 'cap', 'psilin:001')) 1
+   ((0, 1, 2), ('cap', 'cap', 'cap', 'psilin:010')) 4
+   ((0, 1, 2), ('cap', 'cap', 'cap', 'psilin:011')) 2
+   ((0, 1, 2), ('cap', 'cap', 'cap', 'psilin:100')) 1
+   ((0, 1, 2), ('cap', 'cap', 'cap', 'psilin:110')) 1
+   ((0, 1, 2), ('cap', 'cap', 'cap', 'psilin:111')) 1
+   ((0, 1, 2), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 1
+   ((0, 1, 2), ('no:target row u', 'cap', 'cap', 'psilin:001')) 1
+   ((0, 1, 2), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:010')) 1
+   ((0, 2, 0), ('cap', 'cap', 'cap', 'psilin:000')) 6
+   ((0, 2, 0), ('cap', 'cap', 'cap', 'psilin:010')) 1
+   ((0, 2, 0), ('cap', 'cap', 'cap', 'psilin:011')) 1
+   ((0, 2, 0), ('cap', 'cap', 'cap', 'psilin:110')) 1
+   ((0, 2, 0), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 2
+   ((0, 2, 1), ('cap', 'cap', 'cap', 'psilin:010')) 1
+   ((0, 2, 1), ('cap', 'cap', 'cap', 'psilin:100')) 2
+   ((0, 2, 1), ('no:target row u', 'cap', 'cap', 'psilin:000')) 1
+   ((0, 2, 1), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:100')) 1
+   ((0, 2, 2), ('cap', 'cap', 'cap', 'psilin:010')) 1
+   ((0, 2, 2), ('cap', 'cap', 'cap', 'psilin:011')) 4
+   ((0, 2, 2), ('cap', 'cap', 'cap', 'psilin:100')) 1
+   ((0, 2, 2), ('cap', 'cap', 'cap', 'psilin:101')) 1
+   ((0, 2, 2), ('cap', 'cap', 'cap', 'psilin:111')) 4
+   ((0, 2, 2), ('no:target row u', 'no:linear syste', 'no:linear syste', 'psilin:011')) 1
+   ((0, 2, 2), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:001')) 1
+   ((0, 2, 2), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:011')) 1
+   ((1, 0, 0), ('cap', 'cap', 'cap', 'psilin:000')) 3
+   ((1, 0, 0), ('cap', 'cap', 'cap', 'psilin:100')) 1
+   ((1, 0, 0), ('no:target row u', 'no:linear syste', 'no:linear syste', 'psilin:000')) 1
+   ((1, 0, 1), ('cap', 'cap', 'cap', 'psilin:000')) 3
+   ((1, 0, 1), ('cap', 'cap', 'cap', 'psilin:101')) 1
+   ((1, 0, 1), ('cap', 'no:target row u', 'cap', 'psilin:000')) 1
+   ((1, 0, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 4
+   ((1, 0, 1), ('no:linear syste', 'no:linear syste', 'no:target row u', 'psilin:000')) 1
+   ((1, 0, 1), ('no:linear syste', 'no:target row u', 'no:linear syste', 'psilin:000')) 1
+   ((1, 0, 1), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:000')) 1
+   ((1, 0, 2), ('cap', 'cap', 'cap', 'psilin:000')) 1
+   ((1, 0, 2), ('cap', 'cap', 'cap', 'psilin:010')) 2
+   ((1, 0, 2), ('cap', 'cap', 'cap', 'psilin:100')) 1
+   ((1, 0, 2), ('cap', 'cap', 'cap', 'psilin:101')) 3
+   ((1, 0, 2), ('cap', 'cap', 'cap', 'psilin:111')) 1
+   ((1, 1, 0), ('cap', 'cap', 'cap', 'psilin:000')) 4
+   ((1, 1, 0), ('cap', 'cap', 'cap', 'psilin:001')) 1
+   ((1, 1, 0), ('cap', 'cap', 'cap', 'psilin:010')) 2
+   ((1, 1, 0), ('cap', 'cap', 'cap', 'psilin:100')) 1
+   ((1, 1, 0), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 4
+   ((1, 1, 0), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:000')) 1
+   ((1, 1, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 13
+   ((1, 1, 1), ('no:target row u', 'no:linear syste', 'no:linear syste', 'psilin:000')) 1
+   ((1, 1, 2), ('cap', 'cap', 'cap', 'psilin:001')) 2
+   ((1, 1, 2), ('cap', 'cap', 'cap', 'psilin:011')) 1
+   ((1, 1, 2), ('cap', 'cap', 'cap', 'psilin:101')) 2
+   ((1, 1, 2), ('cap', 'cap', 'cap', 'psilin:111')) 3
+   ((1, 1, 2), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 2
+   ((1, 1, 2), ('no:linear syste', 'no:linear syste', 'no:target row u', 'psilin:101')) 1
+   ((1, 1, 2), ('no:target row u', 'cap', 'cap', 'psilin:111')) 1
+   ((1, 2, 0), ('cap', 'cap', 'cap', 'psilin:010')) 1
+   ((1, 2, 0), ('cap', 'cap', 'cap', 'psilin:100')) 3
+   ((1, 2, 0), ('cap', 'cap', 'cap', 'psilin:110')) 2
+   ((1, 2, 0), ('cap', 'cap', 'cap', 'psilin:111')) 1
+   ((1, 2, 0), ('cap', 'cap', 'no:target row u', 'psilin:010')) 1
+   ((1, 2, 0), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:110')) 1
+   ((1, 2, 1), ('cap', 'cap', 'cap', 'psilin:000')) 2
+   ((1, 2, 1), ('cap', 'cap', 'cap', 'psilin:001')) 2
+   ((1, 2, 1), ('cap', 'cap', 'cap', 'psilin:010')) 1
+   ((1, 2, 1), ('cap', 'cap', 'cap', 'psilin:011')) 2
+   ((1, 2, 1), ('cap', 'cap', 'cap', 'psilin:110')) 1
+   ((1, 2, 1), ('cap', 'cap', 'no:target row u', 'psilin:110')) 1
+   ((1, 2, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 5
+   ((1, 2, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:010')) 2
+   ((1, 2, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:110')) 1
+   ((1, 2, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:111')) 1
+   ((1, 2, 1), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:010')) 1
+   ((1, 2, 1), ('no:target row u', 'yes', 'no:linear syste', 'psilin:111')) 1
+   ((1, 2, 2), ('cap', 'cap', 'cap', 'psilin:011')) 1
+   ((1, 2, 2), ('cap', 'cap', 'cap', 'psilin:100')) 1
+   ((1, 2, 2), ('cap', 'cap', 'cap', 'psilin:110')) 1
+   ((1, 2, 2), ('cap', 'cap', 'cap', 'psilin:111')) 7
+   ((1, 2, 2), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:111')) 1
+   ((2, 0, 0), ('cap', 'cap', 'cap', 'psilin:000')) 4
+   ((2, 0, 0), ('cap', 'cap', 'cap', 'psilin:100')) 1
+   ((2, 0, 0), ('cap', 'no:target row u', 'cap', 'psilin:100')) 1
+   ((2, 0, 0), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 2
+   ((2, 0, 0), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:000')) 1
+   ((2, 0, 1), ('cap', 'cap', 'cap', 'psilin:000')) 1
+   ((2, 0, 1), ('cap', 'cap', 'cap', 'psilin:010')) 2
+   ((2, 0, 2), ('cap', 'cap', 'cap', 'psilin:000')) 1
+   ((2, 0, 2), ('cap', 'cap', 'cap', 'psilin:010')) 1
+   ((2, 0, 2), ('cap', 'cap', 'cap', 'psilin:100')) 1
+   ((2, 0, 2), ('cap', 'cap', 'cap', 'psilin:101')) 2
+   ((2, 0, 2), ('cap', 'cap', 'cap', 'psilin:111')) 1
+   ((2, 0, 2), ('cap', 'no:target row u', 'cap', 'psilin:101')) 1
+   ((2, 0, 2), ('no:linear syste', 'no:target row u', 'no:linear syste', 'psilin:000')) 1
+   ((2, 1, 0), ('cap', 'cap', 'cap', 'psilin:100')) 3
+   ((2, 1, 0), ('cap', 'cap', 'cap', 'psilin:101')) 1
+   ((2, 1, 0), ('cap', 'cap', 'cap', 'psilin:110')) 1
+   ((2, 1, 0), ('cap', 'cap', 'cap', 'psilin:111')) 3
+   ((2, 1, 0), ('cap', 'cap', 'no:target row u', 'psilin:000')) 1
+   ((2, 1, 0), ('cap', 'cap', 'no:target row u', 'psilin:110')) 1
+   ((2, 1, 0), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 2
+   ((2, 1, 1), ('cap', 'cap', 'cap', 'psilin:001')) 2
+   ((2, 1, 1), ('cap', 'cap', 'cap', 'psilin:100')) 2
+   ((2, 1, 1), ('cap', 'cap', 'cap', 'psilin:110')) 3
+   ((2, 1, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:000')) 1
+   ((2, 1, 1), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:100')) 3
+   ((2, 1, 2), ('cap', 'cap', 'cap', 'psilin:101')) 1
+   ((2, 1, 2), ('cap', 'cap', 'cap', 'psilin:111')) 6
+   ((2, 2, 0), ('cap', 'cap', 'cap', 'psilin:000')) 1
+   ((2, 2, 0), ('cap', 'cap', 'cap', 'psilin:001')) 1
+   ((2, 2, 0), ('cap', 'cap', 'cap', 'psilin:010')) 1
+   ((2, 2, 0), ('cap', 'cap', 'cap', 'psilin:011')) 1
+   ((2, 2, 0), ('cap', 'cap', 'cap', 'psilin:110')) 3
+   ((2, 2, 0), ('cap', 'cap', 'cap', 'psilin:111')) 5
+   ((2, 2, 0), ('no:linear syste', 'no:linear syste', 'no:target row u', 'psilin:000')) 2
+   ((2, 2, 0), ('no:linear syste', 'no:linear syste', 'no:target row u', 'psilin:110')) 1
+   ((2, 2, 0), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:001')) 1
+   ((2, 2, 0), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:110')) 1
+   ((2, 2, 1), ('cap', 'cap', 'cap', 'psilin:110')) 4
+   ((2, 2, 1), ('cap', 'cap', 'cap', 'psilin:111')) 3
+   ((2, 2, 1), ('no:target row u', 'no:target row u', 'no:target row u', 'psilin:111')) 2
+   ((2, 2, 2), ('cap', 'cap', 'cap', 'psilin:111')) 5
+   ((2, 2, 2), ('no:linear syste', 'no:linear syste', 'no:linear syste', 'psilin:111')) 4
+   ((2, 2, 2), ('no:linear syste', 'no:target row u', 'no:linear syste', 'psilin:111')) 1

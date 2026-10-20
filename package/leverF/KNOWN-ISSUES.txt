@@ -1,0 +1,52 @@
+KNOWN-ISSUES.txt: cosmetic points of this package (none affects a theorem, a check or a figure)
+
+1. Names from the half-cut package. The full cut reuses the half-cut package's data for the same fill unchanged: the
+   host table (Work/XHostT/Data/S5H/), the schedule and its facts (Work/XHostT/Inst/S5H*), the heads-first network
+   (Work/Mixed/Bridge/{Inst3945H, HeadsFirst3945H, HFTest3945HW}) and the providers (Work/L3945H/Prov.lean). Those files
+   keep the suffix 3945H. Only the files that depend on the cut carry 3945F or L3945F.
+
+2. Rate modules that this figure does not use. Work/Mixed/Rate3945.lean, Rate3815.lean and Rate3945H.lean are in the
+   import closure because the generic bridge files import them. They state the rate facts of earlier builds (the
+   published #3945 fill, #3815 and the half cut on this fill). The figure of this package comes from
+   Work/Mixed/Rate3945F.lean alone.
+
+3. One profile, three files. The full-cut profile appears in three JSON files with the same numbers and different
+   description text: generators/tree/wht45/fullcut/fc-rate/tools/profile3945F.json (it also carries the Lean
+   module's header text), generators/tree/wht45/fullcut/fc-engine/tools/profile3945F.json (read by the statement
+   generator's gate) and fill/checks/full-cut/profile3945F.json (the pricing routes').
+
+4. A comment line chosen by an option. The statement generator's default text for one comment line of
+   Work/FourierL3945F/Seam.lean describes the half cut. Its option --word (generators/tree/wht45/fullcut/fc-engine/
+   tools/word3945F.txt) puts the full-cut description there instead. No Lean code differs.
+
+5. Dates. Some file headers say "19-20 Oct 2026" or "20 Oct 2026". The work ran on the evening of 19 October (US Eastern
+   time), while the cloud machines' clocks read UTC, where it was already 20 October.
+
+6. Duplicates in the side modules. controls/side/Hist3945F.lean defines unit3945F, which is the same list as the
+   bridge's PB.unit3945H. controls/side/FullCut3945F.lean composes the full-cut word (fullCutWord) a second time at
+   the level of the head lemma, as an independent cross-check of the bridge's own composition in
+   Work/Mixed/Bridge/CoreF.lean. Neither side module is imported by the final theorems.
+
+7. Controls written for the half cut. controls/Heads3945HNeg.lean and the four Neg*.lean controls are the half-cut
+   package's files, byte for byte, and their comments say so. They test the host table and the head count, which the
+   two packages share.
+
+8. A generic file with a specific name. Work/XHostT/HFW2979/ holds the warp heads-first certificate. It is generic in
+   the instance, although its name says 2979 (as in the half-cut package).
+
+9. A comment that names a theorem that does not exist. The comment above transform_mainL3945F in
+   Work/FourierL3945F/Main.lean (and the same comment in the Main.lean of every other package of this repository)
+   says: "Sibling of the Walsh-Hadamard theorem wht_main_block_L3945Fx: both follow from one kernel program". There is
+   no such Walsh-Hadamard theorem in these packages. The correct text: "It follows from the kernel program
+   RAM.hillsL3945F_program (Work/FourierL3945F/Seam.lean)."
+
+10. A slack measured against the wrong number. The header of Work/Mixed/Rate3945F.lean says "Relative slack of the
+   rational certificate: 8.926e-11". That figure is measured against W; measured against the right side of the
+   inequality it is 1.07e-10. The inequality itself, and the refusal one grid step higher, are what Lean checks.
+
+11. Line numbers one off. The header of Work/FourierL3945F/Goal.lean (and of every other package's Goal.lean) cites
+   OpenAI's Goal.lean at commit fd4aeeb "lines 30, 35, 75-78, 80, 82". The definitions are at lines 30, 35, 75-77,
+   79 and 81.
+
+12. In the half-cut package (package/leverB), line 15 of Work/FourierL3945H/Seam.lean says the 57,312 literal rank-48
+   heads are cut; that package keeps every head and cuts 80,640. The correct text says 80,640.

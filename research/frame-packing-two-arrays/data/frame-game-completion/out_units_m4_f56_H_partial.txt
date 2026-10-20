@@ -1,0 +1,8 @@
+m=4 plain1: W = 1, frame moves M = 4, readout terms [1]; engine word: 4 paid letters (= M), 1089 free terms, all free heads in B
+    lift (all four blocks): float errors by f {5: 7.1e-16, 6: 7.2e-16}
+    exact mod 167772161 and 469762049 on random arrays, by f: {4: True, 5: True}
+    negative control, f = 1 lift only: float {5: 7.1e-16, 6: 7.2e-16}; exact mod p {4: True}
+m=4 plain2: W = 2, frame moves M = 8, readout terms [1, 1]; engine word: 8 paid letters (= M), 2178 free terms, all free heads in B
+    lift (all four blocks): float errors by f {5: 7.1e-16, 6: 7.2e-16}
+    exact mod 167772161 and 469762049 on random arrays, by f: {4: True, 5: True}
+    negative control, f = 1 lift only: float {5: 7.1e-16, 6: 7.2e-16}; exact mod p {4: True}

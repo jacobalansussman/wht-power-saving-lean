@@ -1,0 +1,175 @@
+{
+  "format": "community-certificate-package/1",
+  "name": "c588m",
+  "suffix": "C588M",
+  "title": "Kothe's #588 circuit with mutable sources: Ryan Shea's 112 source copies removed",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "variant": "annealed",
+  "numerator": 13552606,
+  "kernel_numerator": 13552607,
+  "negative_numerator": 13552607,
+  "saving": "1.3552606e-3",
+  "saving_short": "1.3553e-3",
+  "exponent": "1 - 13552606/10^10",
+  "compared_with": {
+    "what": "Lean-checked record before this package (Ryan Shea, Kothe's #588 circuit with 112 source copies)",
+    "numerator": 12331685,
+    "saving": "1.2331685e-3"
+  },
+  "mode": "add",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainC588M",
+    "OAI.PowerSaving.convolution_mainC588M"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainC588M",
+    "OAI.PowerSaving.convolution_mainC588M",
+    "OAI.PowerSaving.RAM.hillsC588M_program"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierC588M.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierC588MNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierC588M.Main",
+  "axioms_file": "Work/FourierC588M/Axioms.lean",
+  "goal_file": "Work/FourierC588M/Goal.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentC588M",
+  "build_targets": [
+    "Work.FourierC588M.Main",
+    "Work.FourierC588M.UniformFourierChallenge",
+    "Work.FourierC588MNeg.UniformFourierChallenge",
+    "Work.GCert.Data.C588MControls",
+    "Work.FourierC588M.Axioms"
+  ],
+  "comparator": {
+    "positive": "comparator/fourier-c588m.json",
+    "negative": "comparator/fourier-c588m-neg.json"
+  },
+  "certificate": {
+    "file": "data/c588m.gcert.json.gz",
+    "sha256": "b53a0194b4ee826377e95601dee03b87f43ab197da3f24447f7b8bfaf852d800",
+    "label_width_h": 9,
+    "copies_v": 112,
+    "helpers_R": 504,
+    "moves_N": 5916,
+    "banks": 4032
+  },
+  "variants": {
+    "annealed": {
+      "numerator": 13552606,
+      "kernel_numerator": 13552607,
+      "banks": 4032,
+      "status": "built and checked in Lean (the variant of this package's figure)"
+    },
+    "cyclic": {
+      "numerator": 13513071,
+      "kernel_numerator": 13513072,
+      "banks": 4032,
+      "status": "fallback; exact Python preflights pass; not built in Lean"
+    },
+    "packed": {
+      "numerator": 13566302,
+      "kernel_numerator": 13566303,
+      "banks": 4005,
+      "status": "optional upgrade; exact Python preflights pass; not built in Lean"
+    }
+  },
+  "checks": [
+    {
+      "id": "build",
+      "status": "pass",
+      "what": "all 70 new modules compiled from source, one at a time, on Shea's built tree",
+      "log": "logs/colab/mb-build.out"
+    },
+    {
+      "id": "axioms",
+      "status": "pass",
+      "what": "the three theorems depend on propext, Classical.choice, Quot.sound only; no sorryAx",
+      "log": "logs/colab/axioms.log"
+    },
+    {
+      "id": "compare",
+      "status": "pass",
+      "what": "tools/Compare.lean: RESULT: PASS against OpenAI's statement at 1 - 13552606/10^10",
+      "log": "logs/colab/compare-fourier.log"
+    },
+    {
+      "id": "compare-negative",
+      "status": "pass",
+      "what": "tools/Compare.lean against the challenge one unit stronger (13552607): RESULT: FAIL, as it must",
+      "log": "logs/colab/compare-negative.log"
+    },
+    {
+      "id": "comparator",
+      "status": "pass",
+      "what": "official comparator: nanoda and Lean kernels accept; sandbox stand-in jail2.sh (no Landlock on the machine)",
+      "log": "logs/colab/cmp-A1.out"
+    },
+    {
+      "id": "comparator-negative",
+      "status": "pass",
+      "what": "official comparator rejects the configuration one unit stronger",
+      "log": "logs/colab/cmp-A2neg.out"
+    },
+    {
+      "id": "lean-controls",
+      "status": "pass",
+      "what": "Work.GCert.Data.C588MControls: the bad certificate, the classic check and the bad bank tables are rejected by decide +kernel",
+      "log": "logs/colab/68-Work.GCert.Data.C588MControls.log"
+    },
+    {
+      "id": "source-scan",
+      "status": "pass",
+      "what": "no sorry/admit/axiom/native_decide in the overlay except the two sorry of each challenge file; no tracked file of Shea's tree changed",
+      "log": "logs/colab/source-scan.txt"
+    },
+    {
+      "id": "python-preflights",
+      "status": "pass",
+      "what": "exact Python mirrors of every kernel check, round trip, bank tables, rate",
+      "log": "preflight/PREFLIGHT.json"
+    },
+    {
+      "id": "statement-skeptic",
+      "status": "pass",
+      "what": "an independent agent compared the challenge file of the build tree with OpenAI's UniformFourier.lean: only the exponent and the seven suffixed names differ, and the negative challenge differs only in its numerator; it read the Compare, axiom and comparator logs and did not run Lean itself. report.txt is its written verdict; fetched/ holds the files it read, which are the package's files (the two challenge files once their modification notice is removed)",
+      "log": "logs/skeptic-statement/report.txt"
+    },
+    {
+      "id": "bigospeedrun-verifier",
+      "status": "pass",
+      "what": "offline re-creation of the three phases of the bigospeedrun.com verifier, run with the agents' own scripts (scripts-as-run/ and logs/colab/bos/) inside the sandbox stand-in jail2.sh, not by the verifier's own controller (it needs bwrap and systemd-run) on a submission packaged like Nil Mamano's (bigospeedrun/verifier c92b9b6): Lean check 'Your solution is okay!' (108 min, 8.2 GB), axiom audit [propext, Classical.choice, Quot.sound] (18 min), nanoda and Lean kernels accept (16 min); the comparator compiled the packaged folder from nothing",
+      "log": "logs/colab/bos/handoff.out"
+    },
+    {
+      "id": "rebuild-skeptic",
+      "status": "pass",
+      "what": "an independent agent recompiled all 70 modules from the package's sources with plain lean, one at a time, on the second Colab machine against that machine's own build of Shea's tree: every step rc=0 (colab2/run6.out); on its build Compare.lean gives RESULT: PASS (colab2/C-pos.log; colab2/cmp.out shows that Main.olean came from its build) and, one unit stronger, RESULT: FAIL (colab2/C-neg.log); standard axioms. It did not run the comparator. colab2/P2-compare-*.log are a first attempt that failed because lean was not on the PATH (NOTE.txt). report.txt is its written verdict",
+      "log": "logs/skeptic-rebuild/colab2/run6.out"
+    }
+  ],
+  "machine": "Google Colab VM: Linux x86-64, Intel Xeon 2.20 GHz, 8 logical processors, 51 GiB, kernel 6.6.122+ without Landlock, no systemd",
+  "credits": [
+    "Jeremy Kothe: the #588 atm3 circuit (CrocSwap/integer-mult-bounds), with the predecessors its notices name",
+    "Ryan Shea: the conversion pipeline, the generators and the Lean instantiation of #588 (shea256/fourier-transform-below-nlogn, lean/complex588)",
+    "Nil Mamano: the gauged extension (GInvE, GX.engine_of_ginv_401) and the Fourier chain templates",
+    "Zhihao Chen (jacklightChen): the written scalar-interface argument for mutable sources (pull request #425 of CrocSwap/integer-mult-bounds)",
+    "the authors of CrocSwap/integer-mult-bounds",
+    "Dugongue: the entrance gauges and the residual banks of the nine-stage network (#401)",
+    "Zhihao Chen (jacklightChen): the compressed nine-stage layout with its banks and padding (#377)",
+    "lydakis: the bank patterns (#275)",
+    "DaysSky: the bridged layout B_K the network starts from (#363)",
+    "OpenAI: the model, the statements and the all-length reduction",
+    "Jacob Sussman (this repository): the original Lean engine that Shea's and Mamano's results run on, the Lean proof of mutable sources (Work/XMut, 7 modules, 1,429 lines), the generation of this certificate"
+  ]
+}

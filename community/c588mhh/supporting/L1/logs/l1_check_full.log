@@ -1,0 +1,121 @@
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 12:13:08
+[heavy.sh] got slot heavy-3 12:18:45
+h=2 b=1 e=0 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=2 b=1 e=0 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': False, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=2 b=1 e=1 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': False, 'swapped_adapters': False, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=2 b=1 e=1 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': False, 'swapped_adapters': False, 'rank_one_short': True} dense ok
+h=2 b=1 e=2 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=2 b=1 e=2 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=2 b=2 e=0 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'rank_one_short': True} dense ok
+h=2 b=2 e=0 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=2 b=2 e=1 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': False, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=2 b=2 e=1 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=2 b=2 e=2 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=2 b=2 e=2 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=3 b=1 e=0 r=3 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=1 e=0 r=3 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=1 e=1 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=1 e=1 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=1 e=2 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=1 e=2 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=1 e=3 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=3 b=1 e=3 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=3 b=2 e=0 r=3 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=2 e=0 r=3 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=2 e=1 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=2 e=1 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=2 e=2 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=2 e=2 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=3 b=2 e=3 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=3 b=2 e=3 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=4 b=1 e=0 r=4 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=1 e=0 r=4 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=1 e=1 r=3 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=1 e=1 r=3 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=1 e=2 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=1 e=2 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=1 e=3 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=1 e=3 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=1 e=4 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=4 b=1 e=4 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=4 b=2 e=0 r=4 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=2 e=0 r=4 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=2 e=1 r=3 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=2 e=1 r=3 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=2 e=2 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=2 e=2 r=2 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=2 e=3 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=2 e=3 r=1 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} dense ok
+h=4 b=2 e=4 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=4 b=2 e=4 r=0 dense=True: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} dense ok
+h=9 b=1 e=0 r=9 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=0 r=9 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=0 r=9 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=0 r=9 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=1 r=8 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=1 r=8 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=1 r=8 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=1 r=8 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=2 r=7 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=2 r=7 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=2 r=7 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=2 r=7 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=3 r=6 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=4 r=5 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=4 r=5 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=4 r=5 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=4 r=5 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=5 r=4 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=5 r=4 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=5 r=4 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=5 r=4 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=6 r=3 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=7 r=2 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=8 r=1 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=1 e=9 r=0 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} 
+h=9 b=2 e=0 r=9 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=0 r=9 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=0 r=9 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=0 r=9 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=1 r=8 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=1 r=8 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=1 r=8 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=1 r=8 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=2 r=7 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=2 r=7 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=2 r=7 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=2 r=7 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=3 r=6 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=4 r=5 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=4 r=5 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=4 r=5 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=4 r=5 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=5 r=4 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=5 r=4 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=5 r=4 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=5 r=4 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=6 r=3 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=7 r=2 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=8 r=1 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True, 'no_adapters': True, 'swapped_adapters': True, 'other_window_adapter': True, 'rank_one_short': True} 
+h=9 b=2 e=9 r=0 dense=False: L1=True C'C=1:True pk=block:True controls={'dir_already_applied': True, 'dir_extra_coordinate': True} 
+{"all_pass": true, "n_instances": 98, "n_fail": 0, "h9_occurring_shapes": 40, "h9_occurring_pass": 40, "controls_run": 510, "controls_failed_as_expected": 504, "controls_coincidentally_true": [{"h": 2, "b": 1, "n": 3, "e": 0, "r": 2, "q": [], "s": [], "control": "swapped_adapters"}, {"h": 2, "b": 1, "n": 3, "e": 1, "r": 1, "q": [0], "s": [1], "control": "no_adapters"}, {"h": 2, "b": 1, "n": 3, "e": 1, "r": 1, "q": [0], "s": [1], "control": "swapped_adapters"}, {"h": 2, "b": 1, "n": 3, "e": 1, "r": 1, "q": [0], "s": [1], "control": "no_adapters"}, {"h": 2, "b": 1, "n": 3, "e": 1, "r": 1, "q": [0], "s": [1], "control": "swapped_adapters"}, {"h": 2, "b": 2, "n": 4, "e": 1, "r": 1, "q": [1], "s": [1], "control": "swapped_adapters"}], "seconds": 124.2}
+ALL L1 CHECKS PASS
+      124.48 real       119.42 user         3.11 sys
+           869285888  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              486958  page reclaims
+                  37  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  29  voluntary context switches
+               46806  involuntary context switches
+        234467569994  instructions retired
+        173190418788  cycles elapsed
+           863126440  peak memory footprint
+EXIT=0

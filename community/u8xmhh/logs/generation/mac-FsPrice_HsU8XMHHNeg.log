@@ -1,0 +1,19 @@
+       49.91 real        17.54 user         5.24 sys
+          5674647552  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              496026  page reclaims
+              145238  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               31314  voluntary context switches
+              129297  involuntary context switches
+        220225028274  instructions retired
+         89858802961  cycles elapsed
+          2784233000  peak memory footprint
+EXIT=0 TIME=50s HEAVY=0 CMD=/usr/bin/env LEAN_PATH=<verify>/checks/wht43/bound-check/fs-price/mac/.lake/build/lib/lean:<verify>/checks/wht43/bound-check/h-L3-build/lean/.lake/build/lib/lean:<verify>/.lake/build/lib/lean:<verify>/.lake/packages/mathlib/.lake/build/lib/lean:<verify>/.lake/packages/batteries/.lake/build/lib/lean:<verify>/.lake/packages/Qq/.lake/build/lib/lean:<verify>/.lake/packages/aesop/.lake/build/lib/lean:<verify>/.lake/packages/proofwidgets/.lake/build/lib/lean:<verify>/.lake/packages/importGraph/.lake/build/lib/lean:<verify>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<verify>/.lake/packages/plausible/.lake/build/lib/lean:<verify>/.lake/packages/Cli/.lake/build/lib/lean LEAN_NUM_THREADS=2 /usr/bin/time -l lean -DautoImplicit=false -R <verify>/checks/wht43/bound-check/fs-price/mac -o <verify>/checks/wht43/bound-check/fs-price/mac/.lake/build/lib/lean/FsPrice/HsU8XMHHNeg.olean -i <verify>/checks/wht43/bound-check/fs-price/mac/.lake/build/lib/lean/FsPrice/HsU8XMHHNeg.ilean <verify>/checks/wht43/bound-check/fs-price/mac/FsPrice/HsU8XMHHNeg.lean

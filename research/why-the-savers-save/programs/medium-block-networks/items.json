@@ -1,0 +1,145 @@
+{
+ "rows": [
+  {
+   "design": "E7",
+   "P": 1,
+   "m": 19,
+   "data_arrays": 126,
+   "free": 126,
+   "centre": 147,
+   "D_before_junk": -21,
+   "c": 49,
+   "decoder": "coordinate decoder (natural.py)",
+   "break_even_c": 42.0
+  },
+  {
+   "design": "D6",
+   "P": 1,
+   "m": 13,
+   "data_arrays": 60,
+   "free": 60,
+   "centre": 90,
+   "D_before_junk": -30,
+   "c": 30,
+   "decoder": "coordinate decoder (natural.py)",
+   "break_even_c": 20.0
+  },
+  {
+   "design": "A5",
+   "P": 1,
+   "m": 13,
+   "data_arrays": 30,
+   "free": 30,
+   "centre": 90,
+   "D_before_junk": -60,
+   "c": 30,
+   "decoder": "coordinate decoder (natural.py)",
+   "break_even_c": 10.0
+  },
+  {
+   "design": "D6",
+   "P": 2,
+   "m": 21,
+   "data_arrays": 120,
+   "free": 120,
+   "centre": 150,
+   "D_before_junk": -30,
+   "c": 30,
+   "decoder": "coordinate decoder (natural.py)",
+   "break_even_c": 24.0
+  },
+  {
+   "design": "A5",
+   "P": 2,
+   "m": 21,
+   "data_arrays": 60,
+   "free": 60,
+   "centre": 150,
+   "D_before_junk": -90,
+   "c": 30,
+   "decoder": "coordinate decoder (natural.py)",
+   "break_even_c": 12.0
+  },
+  {
+   "design": "P112",
+   "P": 1,
+   "m": 25,
+   "data_arrays": 224,
+   "free": 224,
+   "centre": 216,
+   "D_before_junk": 8,
+   "c": 72,
+   "decoder": "coordinate decoder (natural.py)",
+   "break_even_c": 74.66666666666667
+  },
+  {
+   "design": "E8",
+   "P": 1,
+   "m": 25,
+   "data_arrays": 240,
+   "free": 240,
+   "centre": 216,
+   "D_before_junk": 24,
+   "c": 72,
+   "decoder": "coordinate decoder (natural.py)",
+   "break_even_c": 80.0
+  },
+  {
+   "design": "P112",
+   "P": 1,
+   "m": 25,
+   "data_arrays": 224,
+   "free": 224,
+   "centre": 192,
+   "D_before_junk": 32,
+   "c": 64,
+   "decoder": "hub's decoder (U8X0, Lean-checked)",
+   "break_even_c": 74.66666666666667
+  },
+  {
+   "design": "E7",
+   "P": 1,
+   "m": 19,
+   "data_arrays": 126,
+   "free": 126,
+   "centre": 126,
+   "D_before_junk": 0,
+   "c": 42,
+   "decoder": "hypothetical t(k-1) decoder (not found)",
+   "break_even_c": 42.0
+  },
+  {
+   "design": "D6",
+   "P": 2,
+   "m": 21,
+   "data_arrays": 120,
+   "free": 120,
+   "centre": 120,
+   "D_before_junk": 0,
+   "c": 24,
+   "decoder": "hypothetical t(k-1) decoder (not found)",
+   "break_even_c": 24.0
+  }
+ ],
+ "p112_25": {
+  "W": 677.36,
+  "D": 32,
+  "levels": {
+   "x": 2688,
+   "y": 2688,
+   "s": 11334,
+   "c": 192
+  },
+  "narrow": {
+   "x": 6798.0657624107625,
+   "y": 6652.101257116907,
+   "s": 30088.566621684713,
+   "c": 218.77138237216604
+  },
+  "first_order": 0.0007313031212074944,
+  "helpers_free": 0.002341074270665551,
+  "beat_hub_helper_budget": 5381.458828648669,
+  "beat_hub_fraction": 0.17885394463325058,
+  "generous_ceiling": 0.008289874972755665
+ }
+}

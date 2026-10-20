@@ -1,0 +1,21 @@
+== P. E8 root lines: pairwise non-orthogonal sets, octad partitions
+  120 lines; each non-orthogonal to [56], orthogonal to [63] others
+  largest set of pairwise non-orthogonal lines: 8 (Gram-rank bound for pairwise anticommuting 4-qubit Paulis: 2*4+1 = 9)
+  octads (8 mutually orthogonal lines): 2025
+  partition of the 120 lines into 15 mutually orthogonal octads exists: True
+== Q. 'every f' versus single-copy identities, m = 1
+  |B_1| = 32, |G_1| = 96
+  f=1: dim_Q span{b^(x f)} = 8; with K^(x f) added: 8; K^(x f) in the free span: True  [exact over Q]
+  f=2: dim_Q span{b^(x f)} = 8; with K^(x f) added: 9; K^(x f) in the free span: False  [exact over Q]
+  f=3: dim_Q span{b^(x f)} = 16; with K^(x f) added: 17; K^(x f) in the free span: False  [exact over Q]
+  f=4: dim_Q span{b^(x f)} = 8; with K^(x f) added: 9; K^(x f) in the free span: False  [exact over Q]
+  f=5: dim_Q span{b^(x f)} = 16; with K^(x f) added: 17; K^(x f) in the free span: False  [exact over Q]
+  F=1: rank of the 96 vectors (g^(x f))_(f=0..F) mod p = 9
+  F=2: rank of the 96 vectors (g^(x f))_(f=0..F) mod p = 29
+  F=3: rank of the 96 vectors (g^(x f))_(f=0..F) mod p = 69
+  F=4: rank of the 96 vectors (g^(x f))_(f=0..F) mod p = 92, exact over Q = 92
+  F=5: rank of the 96 vectors (g^(x f))_(f=0..F) mod p = 92, exact over Q = 92
+  F=6: rank of the 96 vectors (g^(x f))_(f=0..F) mod p = 96  -> injective (rank mod p = 96 implies rank over Q = 96): 'every f' = 'f <= F'
+  distinct trace values of G_1 in its defining representation: 13 (Burnside-Brauer bound F <= 12)
+DONE
+       31.03 real        30.98 user         0.02 sys

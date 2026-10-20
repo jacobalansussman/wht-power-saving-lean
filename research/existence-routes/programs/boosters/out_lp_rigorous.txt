@@ -1,0 +1,85 @@
+m=2 [rigorous; 56 certificate rows: frame-count, A2x1, A4x2, A6x3, A8x4, A10x5, A12x6, A14x7, A16x8, A18x9, A20x10, A22x11, A24x12, A26x13, A28x14, A30x15, A32x16, A34x17, A36x18, A38x19, A40x20, A42x21, A44x22, A46x23, A48x24, A50x25, A52x26, A54x27, A56x28, A58x29, A60x30, A62x31, A64x32, B2x1, B4x2, C3x1, D3x1, E3x1, hook3x1, liftE162x1, liftg3cx1, hook4x1, hook4x2, liftg4cx1, liftg4cx2, proj3to4x1, proj3to4x2, hook5k3x1, hook5k3x2, hook5k4x1, hook5k4x2, proj3to5x1, proj3to5x2, hook6k3x1, hook6k3x2, hook6k3x3]
+   sep  : L < 0 none on [0.5, 1]
+   all  : L < 0 none on [0.5, 1]
+   boost: L < 0 none on [0.5, 1]
+      theta=0.9 sep: min D = 0.00000  v = {}
+      theta=0.9 boost: min D = 0.00000  v = {}
+      theta=0.95 sep: min D = 0.00000  v = {}
+      theta=0.95 boost: min D = 0.00000  v = {}
+      theta=0.99 sep: min D = 0.00000  v = {}
+      theta=0.99 boost: min D = 0.00000  v = {}
+      theta=0.9983 sep: min D = 0.00000  v = {}
+      theta=0.9983 boost: min D = 0.00000  v = {}
+m=3 [rigorous; 37 certificate rows: frame-count, A3x1, A6x2, A9x3, A12x4, A15x5, A18x6, A21x7, A24x8, A27x9, A30x10, A33x11, A36x12, A39x13, A42x14, A45x15, A48x16, A51x17, A54x18, A57x19, A60x20, A63x21, B3x1, C3x1, D3x1, E3x1, hook3x1, liftE162x1, liftg3cx1, hook4x1, liftg4cx1, proj3to4x1, hook5k3x1, hook5k4x1, proj3to5x1, hook6k3x1, hook6k3x2]
+   sep  : L < 0 from 0.850 (33 grid points of 103)
+   all  : L < 0 from 0.820 (39 grid points of 103)
+   boost: L < 0 none on [0.5, 1]
+      theta=0.9 sep: min D = -0.06607  v = {1: np.float64(1.8), 2: np.float64(-1.0)}
+      theta=0.9 boost: min D = -0.00000  v = {}
+      theta=0.95 sep: min D = -0.13187  v = {1: np.float64(1.8), 2: np.float64(-1.0)}
+      theta=0.95 boost: min D = -0.00000  v = {}
+      theta=0.99 sep: min D = -0.18618  v = {1: np.float64(1.8), 2: np.float64(-1.0)}
+      theta=0.99 boost: min D = -0.00000  v = {}
+      theta=0.9983 sep: min D = -0.19764  v = {1: np.float64(1.8), 2: np.float64(-1.0)}
+      theta=0.9983 boost: min D = -0.00000  v = {}
+m=4 [rigorous; 25 certificate rows: frame-count, A4x1, A8x2, A12x3, A16x4, A20x5, A24x6, A28x7, A32x8, A36x9, A40x10, A44x11, A48x12, A52x13, A56x14, A60x15, A64x16, B4x1, hook4x1, liftg4cx1, proj3to4x1, hook5k3x1, hook5k4x1, proj3to5x1, hook6k3x1]
+   sep  : L < 0 from 0.825 (38 grid points of 103)
+   all  : L < 0 from 0.810 (41 grid points of 103)
+   boost: L < 0 none on [0.5, 1]
+      theta=0.9 sep: min D = -0.32836  v = {1: np.float64(3.153846), 4: np.float64(-1.0)}
+      theta=0.9 boost: min D = -0.00000  v = {}
+      theta=0.95 sep: min D = -0.57829  v = {1: np.float64(3.153846), 4: np.float64(-1.0)}
+      theta=0.95 boost: min D = -0.00000  v = {}
+      theta=0.99 sep: min D = -0.79108  v = {1: np.float64(3.153846), 4: np.float64(-1.0)}
+      theta=0.99 boost: min D = -0.00000  v = {}
+      theta=0.9983 sep: min D = -0.83674  v = {1: np.float64(3.153846), 4: np.float64(-1.0)}
+      theta=0.9983 boost: min D = -0.00000  v = {}
+m=5 [rigorous; 18 certificate rows: frame-count, A5x1, A10x2, A15x3, A20x4, A25x5, A30x6, A35x7, A40x8, A45x9, A50x10, A55x11, A60x12, B5x1, hook5k3x1, hook5k4x1, proj3to5x1, hook6k3x1]
+   sep  : L < 0 from 0.500 (103 grid points of 103)
+   all  : L < 0 from 0.500 (103 grid points of 103)
+   boost: L < 0 from 0.500 (102 grid points of 103)
+      theta=0.9 sep: min D = -1.60327  v = {1: np.float64(2.653427), 5: np.float64(-1.0)}
+      theta=0.9 boost: min D = -0.00324  v = {1: np.float64(-0.094723), 2: np.float64(0.148247), 3: np.float64(0.419714), 4: np.float64(-0.905277), 5: np.float64(0.432039)}
+      theta=0.95 sep: min D = -1.95998  v = {1: np.float64(2.653427), 5: np.float64(-1.0)}
+      theta=0.95 boost: min D = -0.00193  v = {1: np.float64(-0.094723), 2: np.float64(0.148247), 3: np.float64(0.419714), 4: np.float64(-0.905277), 5: np.float64(0.432039)}
+      theta=0.99 sep: min D = -2.26675  v = {1: np.float64(2.653427), 5: np.float64(-1.0)}
+      theta=0.99 boost: min D = -0.00044  v = {1: np.float64(-0.094723), 2: np.float64(0.148247), 3: np.float64(0.419714), 4: np.float64(-0.905277), 5: np.float64(0.432039)}
+      theta=0.9983 sep: min D = -2.33291  v = {1: np.float64(2.653427), 5: np.float64(-1.0)}
+      theta=0.9983 boost: min D = -0.00008  v = {1: np.float64(-0.094723), 2: np.float64(0.148247), 3: np.float64(0.419714), 4: np.float64(-0.905277), 5: np.float64(0.432039)}
+m=6 [rigorous; 12 certificate rows: frame-count, A6x1, A12x2, A18x3, A24x4, A30x5, A36x6, A42x7, A48x8, A54x9, A60x10, hook6k3x1]
+   sep  : L < 0 from 0.500 (103 grid points of 103)
+   all  : L < 0 from 0.500 (103 grid points of 103)
+   boost: L < 0 from 0.500 (102 grid points of 103)
+      theta=0.9 sep: min D = -2.98349  v = {1: np.float64(2.032258), 6: np.float64(-1.0)}
+      theta=0.9 boost: min D = -0.00892  v = {1: np.float64(-0.269911), 2: np.float64(0.702433), 4: np.float64(-0.730089), 6: np.float64(0.297567)}
+      theta=0.95 sep: min D = -3.45359  v = {1: np.float64(2.032258), 6: np.float64(-1.0)}
+      theta=0.95 boost: min D = -0.00528  v = {1: np.float64(-0.269911), 2: np.float64(0.702433), 4: np.float64(-0.730089), 6: np.float64(0.297567)}
+      theta=0.99 sep: min D = -3.86119  v = {1: np.float64(2.032258), 6: np.float64(-1.0)}
+      theta=0.99 boost: min D = -0.00129  v = {2: np.float64(0.675952), 4: np.float64(-1.0), 6: np.float64(0.441349)}
+      theta=0.9983 sep: min D = -3.94949  v = {1: np.float64(2.032258), 6: np.float64(-1.0)}
+      theta=0.9983 boost: min D = -0.00023  v = {2: np.float64(0.675952), 4: np.float64(-1.0), 6: np.float64(0.441349)}
+m=7 [rigorous; 10 certificate rows: frame-count, A7x1, A14x2, A21x3, A28x4, A35x5, A42x6, A49x7, A56x8, A63x9]
+   sep  : L < 0 from 0.500 (103 grid points of 103)
+   all  : L < 0 from 0.500 (103 grid points of 103)
+   boost: L < 0 from 0.500 (102 grid points of 103)
+      theta=0.9 sep: min D = -3.77782  v = {1: np.float64(1.984375), 7: np.float64(-1.0)}
+      theta=0.9 boost: min D = -0.01837  v = {2: np.float64(0.557416), 5: np.float64(-1.0), 7: np.float64(0.555024)}
+      theta=0.95 sep: min D = -4.36664  v = {1: np.float64(1.984375), 7: np.float64(-1.0)}
+      theta=0.95 boost: min D = -0.01158  v = {2: np.float64(0.557416), 5: np.float64(-1.0), 7: np.float64(0.555024)}
+      theta=0.99 sep: min D = -4.88073  v = {1: np.float64(1.984375), 7: np.float64(-1.0)}
+      theta=0.99 boost: min D = -0.00274  v = {2: np.float64(0.557416), 5: np.float64(-1.0), 7: np.float64(0.555024)}
+      theta=0.9983 sep: min D = -4.99251  v = {1: np.float64(1.984375), 7: np.float64(-1.0)}
+      theta=0.9983 boost: min D = -0.00048  v = {2: np.float64(0.557416), 5: np.float64(-1.0), 7: np.float64(0.555024)}
+m=8 [rigorous; 9 certificate rows: frame-count, A8x1, A16x2, A24x3, A32x4, A40x5, A48x6, A56x7, A64x8]
+   sep  : L < 0 from 0.500 (103 grid points of 103)
+   all  : L < 0 from 0.500 (103 grid points of 103)
+   boost: L < 0 from 0.500 (102 grid points of 103)
+      theta=0.9 sep: min D = -4.50583  v = {1: np.float64(1.992188), 8: np.float64(-1.0)}
+      theta=0.9 boost: min D = -0.02851  v = {2: np.float64(0.691033), 5: np.float64(-1.0), 8: np.float64(0.452242)}
+      theta=0.95 sep: min D = -5.21782  v = {1: np.float64(1.992188), 8: np.float64(-1.0)}
+      theta=0.95 boost: min D = -0.01775  v = {2: np.float64(0.691033), 5: np.float64(-1.0), 8: np.float64(0.452242)}
+      theta=0.99 sep: min D = -5.84317  v = {1: np.float64(1.992188), 8: np.float64(-1.0)}
+      theta=0.99 boost: min D = -0.00417  v = {2: np.float64(0.691033), 5: np.float64(-1.0), 8: np.float64(0.452242)}
+      theta=0.9983 sep: min D = -5.97958  v = {1: np.float64(1.992188), 8: np.float64(-1.0)}
+      theta=0.9983 boost: min D = -0.00073  v = {2: np.float64(0.691033), 5: np.float64(-1.0), 8: np.float64(0.452242)}
+python3 -B lp.py rigorous  6.62s user 0.37s system 104% cpu 6.707 total

@@ -1,0 +1,9 @@
+[K] (first run, 12:05, before the heavy.sh attempt) LP bound 18.0000 ; INTEGER bound on total paid moves: 18   (n_z = {1: 6, 2: 6, 3: 0, 4: 6, 5: 0, 6: 0, 7: 0})
+[S] realisable flip sets D: 63 (sizes [2, 4, 6]); max rank per size: {2: 5, 4: 5, 6: 4}
+[S] LP bound 15.0000 ; INTEGER bound on total paid moves: 15   (n_z = {1: 5, 2: 5, 3: 0, 4: 5, 5: 0, 6: 0, 7: 0})
+[P] realisable flip sets D: 63 (sizes [2, 4, 6]); max rank per size: {2: 4, 4: 4, 6: 4}
+[P] LP bound 12.0000 ; INTEGER bound on total paid moves: 12   (n_z = {1: 4, 2: 4, 3: 0, 4: 4, 5: 0, 6: 0, 7: 0})
+[Bd] realisable flip sets D: 63 (sizes [2, 4, 6]); max rank per size: {2: 6, 4: 6, 6: 6}
+[Bd] LP bound 18.0000 ; INTEGER bound on total paid moves: 18   (n_z = {1: 6, 2: 6, 3: 0, 4: 6, 5: 0, 6: 0, 7: 0})
+[Zd] realisable flip sets D: 63 (sizes [2, 4, 6]); max rank per size: {2: 3, 4: 3, 6: 3}
+[Zd] LP bound 9.0000 ; INTEGER bound on total paid moves: 9   (n_z = {1: 3, 2: 3, 3: 0, 4: 3, 5: 0, 6: 0, 7: 0})

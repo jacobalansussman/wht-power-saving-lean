@@ -84,7 +84,7 @@ Most promising first, by my own judgement. The last two are checks and give no s
 | 2 | make the stops part of the design | 1 to 2 % from the first experiment; up to about 23 % only with a new kind of design | fair for the small gain, unknown for the large |
 | 3 | a larger family of labels, on 13 points | a unit above E8, if at least one helper in eight can be removed | below even |
 | 4 | fewer copy moves, between 55 and 72 | about 4 % of the saving per copy move | low |
-| 5 | three arrays in eight moves at block size 3 | a new mechanism, over a hundred times the saving | very low; a proof that it is impossible is the likelier result |
+| 5 | three arrays in eight moves at block size 3 | a new mechanism, over a hundred times the saving | settled on 14 October 2026: impossible (section 5) |
 | 6 | "fat" labels in the larger cases | a first fat family that saves | low |
 | 7 | run the comparator, an outside checking program, in a real sandbox | a check, not a saving | high that it passes |
 | 8 | a line-by-line human review | trust, not a saving | - |
@@ -269,6 +269,12 @@ for a fitting matrix in rational arithmetic, or prove that none exists.
 more totals may only prove that 72 is the floor. And a saved copy move has to survive the helpers it costs.
 
 ## 5. Three arrays in eight moves at block size 3
+
+*Added on 14 October 2026.* This case is settled: it is impossible. Section 8 of
+[open-directions-3.md](open-directions-3.md) shows that every unit of block size 3 needs at least 14/5 moves
+per array, under the engine's rules and also with every relabelling and phase pattern free. So three arrays
+need at least 9 moves, and four arrays at least 12, not 11. The proof and the checks of its three skeptics are
+in the agents' working notes (not shown). The rest of this section is kept as it was written.
 
 This is about a possible new mechanism at tiny size, not about labels. The question: can three arrays be
 transformed at block size 3 in eight moves, where the plain schedule needs nine? A yes would be worth over a

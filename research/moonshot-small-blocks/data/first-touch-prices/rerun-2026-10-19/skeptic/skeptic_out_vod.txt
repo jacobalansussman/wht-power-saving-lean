@@ -1,0 +1,4 @@
+dim N 280 cap 80 dim E_K 56 dim E_R 136  (expect 280, 80, 56, 136)
+plain 2R: gains [np.int64(80), np.int64(72), np.int64(80), np.int64(72)], demand 288, cap*M - dem = 32, sum(cap-gain) = 16, OD = 16, identity holds: True; Lemma Q'' 16 [8, 0, 8, 0]; untouched dim 0
+packed 2R: gains [np.int64(80), np.int64(80), np.int64(72), np.int64(72)], demand 288, cap*M - dem = 32, sum(cap-gain) = 16, OD = 16, identity holds: True; Lemma Q'' 16 [8, 8, 0, 0]; untouched dim 0
+plain K: gains [np.int64(80), np.int64(72), np.int64(72)], demand 224, cap*M - dem = 16, sum(cap-gain) = 16, OD = 0, identity holds: True; Lemma Q'' 0 [0, 0, 0]; untouched dim 0

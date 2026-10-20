@@ -1,0 +1,19 @@
+=== START Tue Oct 13 19:06:31 UTC 2026
+68f855b8196428c03e087fc0d5b7397c7e2e2af3ab0cc3afe3bac9e8dc0287ec  Work/WHTC588Q/Axioms.lean
+1f8f88c59834fff043b430e2f55021d506c2bef4a5916ffd8ab7b4a688ce3b50  Work/WHTC588Q/Challenge.lean
+3b8f06c06e1dbf17b8c02cc136398224b2b76e200e7ee29c4a1394f60849a147  Work/WHTC588Q/Main.lean
+41a0e3d0dd884d1ff9327768655496f40ee51a953378160c974950c765724816  Work/WHTC588Q/Solution.lean
+axioms rc=124
+challenge module: Work.WHTC588Q.Challenge   (10745 modules loaded)
+solution module:  Work.WHTC588Q.Solution   (11085 modules loaded)
+sanity: imported proofs are loaded (Nat.add_comm uses 7 constants, Real.exp_pos uses 85)
+
+=== OAI.PowerSaving.WHT.wht_main_block_C588Qx ===
+challenge: theorem in Work.WHTC588Q.Challenge;  solution: theorem in Work.WHTC588Q.Solution
+OK: statement is the same kernel term in both
+challenge proof uses sorryAx: true
+statement depends on 2035 constants; 107 are declared in the challenge file itself
+  identic
+compare-pos rc=124 wall=601s
+=== END Tue Oct 13 19:21:32 UTC 2026
+EXIT 0

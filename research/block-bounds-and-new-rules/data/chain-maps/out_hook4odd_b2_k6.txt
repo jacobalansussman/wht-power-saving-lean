@@ -1,0 +1,3 @@
+m=4 k=6 f=7: dim W = 128128, dim N = 48048, block chi=0: N 3003, out 5005
+  d1: rank on block chi=0 = 1001; x16 = 16016  (columns 27s, rank 2s)
+  B2: rank on block chi=0 = 1749; x16 = 27984  (columns 27s, rank 15s)

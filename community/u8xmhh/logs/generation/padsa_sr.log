@@ -1,0 +1,4 @@
+start: banks 310, pad total 62, pad cost 168.4 (one-pad optimum 10.1)
+  it 0: pad cost 168.4, padded banks 34
+  it 3500000: pad cost 15.2, padded banks 2
+pad_sa: 310 banks, pad cost 15.2, pads [(0, 308), (1, 1), (61, 1)]; W=7478 dft3=16197705 dft4=16197737

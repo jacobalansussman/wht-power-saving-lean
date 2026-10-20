@@ -1,0 +1,4 @@
+seed 1 residual 8.0e-13  nonzero orth entries 1288 (spread decoder: 840)  row read-span dims: min 8 max 8
+   symmetric up to scaling? True   row support sizes [np.int64(8), np.int64(12)]
+seed 2 residual 3.2e-01  nonzero orth entries 1736 (spread decoder: 840)  row read-span dims: min 8 max 8
+   symmetric up to scaling? True   row support sizes [np.int64(12), np.int64(16), np.int64(20), np.int64(24)]

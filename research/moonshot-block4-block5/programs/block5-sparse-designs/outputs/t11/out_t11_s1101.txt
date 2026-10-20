@@ -1,0 +1,52 @@
+alpha3 config {'CAP': 20000, 'TRUNC': 1, 'FIFO': 1, 'LMMAX': 1500, 'NORM': 'all', 'OLDPEEL': 0, 'PROG': 10000, 'MODPMAX': 400000000.0} argv ['1101', '42', '24', '3', '3', 'orbitCY', '0', '0', '543', '8'] PYTHONHASHSEED=0
+seed 1101 mode orbitCY 2-in-8: config {'profA': (4, 2), 'profB': (2, 4), 'lam': (3, 3), 'Ya': (3, 3, False, False), 'Yb': (3, 3, False, False)} (0s)
+  orbit sigma: order 8 fixes A1,A2 False; rejections {'dead': 322, 'notcycle': 3, 'ord': 104, 'alive': {(0, 'b'): [(3, 4, 'non'), (4, 3, 'twin'), (7, 4, 'non')], (1, 'b'): [(3, 3, 'non')], (1, 'a'): [(4, 3, 'twin')], (0, 'a'): [(5, 3, 'non')]}}
+  orbit x1: 8 injections
+  orbit x2: 8 injections
+     peel2 out 1 d=5: created 1, killed 0, live 1, rows 0 (all rows of live cols 0), incomplete rows 0, class live 1 of 1, seeds live 1, unconstrained cols 1 (class 1), requeued 0 (1s)
+     peel2 out 2 d=5: created 1, killed 0, live 1, rows 0 (all rows of live cols 0), incomplete rows 0, class live 1 of 1, seeds live 1, unconstrained cols 1 (class 1), requeued 0 (1s)
+     out 1: 0 rows, 1 cols (1 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     out 2: 0 rows, 1 cols (1 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     modp out 1 d=5 norm=all complete: 1 x 1, rank A 1, rank [A|e] 1 -> CONSISTENT at random alpha (0s)
+     modp out 2 d=5 norm=all complete: 1 x 1, rank A 1, rank [A|e] 1 -> CONSISTENT at random alpha (0s)
+     LM (dense, special alpha): residual 2.619e-31
+  d=5 round 0: injections 16, closures [(0, 1, 1), (0, 1, 1)], residual 2.619e-31 (1s)
+     peel2 out 1 d=4: created 4, killed 2, live 2, rows 16 (all rows of live cols 16), incomplete rows 0, class live 1 of 1, seeds live 1, unconstrained cols 0 (class 0), requeued 0 (2s)
+     peel2 out 2 d=4: created 4, killed 2, live 2, rows 16 (all rows of live cols 16), incomplete rows 0, class live 1 of 1, seeds live 1, unconstrained cols 0 (class 0), requeued 0 (2s)
+     out 1: 16 rows, 2 cols (1 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     out 2: 16 rows, 2 cols (1 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     V4 (exact): alpha_k = base * C_k * s1^E1 s2^E2; components [0, 1, 9]; cycle lattice order 8; 8 solutions (s1, s2) = (z^a, z^b), z = zeta_8: [(0, 0), (1, 7), (2, 6), (3, 5), (4, 4), (5, 3), (6, 2), (7, 1)]
+     V4 check: every solution consistent at d=4 exactly: True
+  d=4 round 0: injections 16, closures [(16, 2, 1), (16, 2, 1)], residual 0.000e+00 (2s)
+     peel2 out 1 d=3: created 1, killed 1, live 0, rows 0 (all rows of live cols 0), incomplete rows 0, class live 0 of 1, seeds live 0, unconstrained cols 0 (class 0), requeued 0 (2s)
+     peel2 out 2 d=3: created 1, killed 1, live 0, rows 0 (all rows of live cols 0), incomplete rows 0, class live 0 of 1, seeds live 0, unconstrained cols 0 (class 0), requeued 0 (2s)
+     out 1: 0 rows, 0 cols (0 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     out 2: 0 rows, 0 cols (0 class); single-producer rows 0 by producer {}, by (array, layer) {}
+     d=3 on V4 point (a,b)=(0,0): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(1,7): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(2,6): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(3,5): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(4,4): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(5,3): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(6,2): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 on V4 point (a,b)=(7,1): o1/seed:I(0/0) o1/all:I(0/0) o2/seed:I(0/0) o2/all:I(0/0) -> inconsistent
+        relaxed ALL-bases test out 1 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+        relaxed ALL-bases test out 2 (seed norm): 1 x 0 (3 parts), rank 0 / 1 -> EXCLUDED for every choice of bases (0s)
+     d=3 verdict on V4 (all alpha != 0, generic bases): INCONSISTENT at every solution [complete closure]
+  d=3 round 0: injections 16, closures [(0, 0, 0), (0, 0, 0)], residual 1.000e+00 (2s)
+STOP at d=3 (residual 1.000e+00)
+result ('stop', 3) (2s) stats {}

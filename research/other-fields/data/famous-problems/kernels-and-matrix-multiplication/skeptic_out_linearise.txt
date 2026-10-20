@@ -1,0 +1,11 @@
+Strassen n=2: C(n)=25 gates; left-fixed linearised: correct=True, 12 gates; right-fixed: correct=True, 14 gates; total 26 <= 6C(n)=150: True; (H(x)H)vecY exact: True
+Strassen n=4: C(n)=247 gates; left-fixed linearised: correct=True, 95 gates; right-fixed: correct=True, 111 gates; total 206 <= 6C(n)=1482: True; (H(x)H)vecY exact: True
+non-bilinear circuit (degree-3 junk + cancelling (y+1)(y-1)-y^2+1): C=25 gates, linearised correct=True, 15 gates <= 3C=75: True
+Bluestein N=2 via linearised cyclic convolution of length 3: max err 0.0e+00; linear gates 15 <= 3*C_conv=45: True
+Bluestein N=3 via linearised cyclic convolution of length 5: max err 4.4e-16; linear gates 45 <= 3*C_conv=135: True
+Bluestein N=4 via linearised cyclic convolution of length 7: max err 4.4e-16; linear gates 91 <= 3*C_conv=273: True
+Bluestein N=5 via linearised cyclic convolution of length 9: max err 6.3e-16; linear gates 153 <= 3*C_conv=459: True
+Bluestein N=6 via linearised cyclic convolution of length 11: max err 2.9e-15; linear gates 231 <= 3*C_conv=693: True
+Bluestein N=7 via linearised cyclic convolution of length 13: max err 7.2e-15; linear gates 325 <= 3*C_conv=975: True
+Bluestein N=8 via linearised cyclic convolution of length 15: max err 7.6e-15; linear gates 435 <= 3*C_conv=1305: True
+Bluestein N=9 via linearised cyclic convolution of length 17: max err 1.1e-14; linear gates 561 <= 3*C_conv=1683: True

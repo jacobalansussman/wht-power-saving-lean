@@ -1,0 +1,31 @@
+C1: commutation of chain maps with paid letters (exact Gaussian-integer arithmetic, 3 random vectors)
+ f=1: a1D1=D1a1 True  a0D2=D2a0 True  | controls (expect False for f>=2): a0D1 True a1D2 True a1D3 True
+ f=2: a1D1=D1a1 True  a0D2=D2a0 True  | controls (expect False for f>=2): a0D1 False a1D2 False a1D3 False
+ f=3: a1D1=D1a1 True  a0D2=D2a0 True  | controls (expect False for f>=2): a0D1 False a1D2 False a1D3 False
+ f=4: a1D1=D1a1 True  a0D2=D2a0 True  | controls (expect False for f>=2): a0D1 False a1D2 False a1D3 False
+ f=5: a1D1=D1a1 True  a0D2=D2a0 True  | controls (expect False for f>=2): a0D1 False a1D2 False a1D3 False
+ f=6: a1D1=D1a1 True  a0D2=D2a0 True  | controls (expect False for f>=2): a0D1 False a1D2 False a1D3 False
+ f=7: a1D1=D1a1 True  a0D2=D2a0 True  | controls (expect False for f>=2): a0D1 False a1D2 False a1D3 False
+ f=8: a1D1=D1a1 True  a0D2=D2a0 True  | controls (expect False for f>=2): a0D1 False a1D2 False a1D3 False
+C1b: a1 D1 = D1 a1 on ALL basis vectors (dense check), f = 1..4
+ f=1: True
+ f=2: True
+ f=3: True
+ f=4: True
+C2: order of a1 as a permutation, f = 1..8
+ f=1: order 1
+ f=2: order 2
+ f=3: order 4
+ f=4: order 4
+ f=5: order 8
+ f=6: order 8
+ f=7: order 8
+ f=8: order 8
+C3: a1 is not a product of single-column letters: bit 1 of column 1 depends on column 0 (f = 3): True
+C4: R7 rebuilt (scaled by 2^(3f) * 8 to stay integral), f = 1..6
+ f=1: max|Psi| (scaled) = 0; max|pi- u| (scaled) = 40 (nonzero half)
+ f=2: max|Psi| (scaled) = 0; max|pi- u| (scaled) = 192 (nonzero half)
+ f=3: max|Psi| (scaled) = 0; max|pi- u| (scaled) = 1296 (nonzero half)
+ f=4: max|Psi| (scaled) = 0; max|pi- u| (scaled) = 4224 (nonzero half)
+ f=5: max|Psi| (scaled) = 0; max|pi- u| (scaled) = 21568 (nonzero half)
+ f=6: max|Psi| (scaled) = 0; max|pi- u| (scaled) = 97536 (nonzero half)

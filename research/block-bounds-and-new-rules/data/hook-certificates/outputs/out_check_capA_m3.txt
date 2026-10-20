@@ -1,0 +1,8 @@
+[PASS] m=3 k=4 dir 1: nonzero u 200, u outside N 0, image coordinates outside N 0, support overlaps 0 -> f(dir 1) <= dim N - 200 = 280 - 200 = 80
+[PASS] m=3 k=4 dir 2: nonzero u 200, u outside N 0, image coordinates outside N 0, support overlaps 0 -> f(dir 2) <= dim N - 200 = 280 - 200 = 80
+[PASS] m=3 k=4 dir 3: nonzero u 200, u outside N 0, image coordinates outside N 0, support overlaps 0 -> f(dir 3) <= dim N - 200 = 280 - 200 = 80
+[PASS] m=3 k=4 dir 4: nonzero u 200, u outside N 0, image coordinates outside N 0, support overlaps 0 -> f(dir 4) <= dim N - 200 = 280 - 200 = 80
+[PASS] m=3 k=4 dir 5: nonzero u 200, u outside N 0, image coordinates outside N 0, support overlaps 0 -> f(dir 5) <= dim N - 200 = 280 - 200 = 80
+[PASS] m=3 k=4 dir 6: nonzero u 200, u outside N 0, image coordinates outside N 0, support overlaps 0 -> f(dir 6) <= dim N - 200 = 280 - 200 = 80
+[PASS] m=3 k=4 dir 7: nonzero u 200, u outside N 0, image coordinates outside N 0, support overlaps 0 -> f(dir 7) <= dim N - 200 = 280 - 200 = 80
+SUMMARY m=3 k=4: dim N = 280; all directions PASS

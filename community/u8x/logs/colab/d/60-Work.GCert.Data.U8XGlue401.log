@@ -1,0 +1,32 @@
+Work/GCert/Data/U8XGlue401.lean:28:61: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Work/GCert/Data/U8XGlue401.lean:28:61: warning: Unused tactic linter: `decide` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'GXD.U8X.ginv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X.price' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GXD.U8X.fitsS' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "lake env lean -DautoImplicit=false -R . -o .lake/build/lib/lean/Work/GCert/Data/U8XGlue401.olean -i .lake/build/lib/lean/Work/GCert/Data/U8XGlue401.ilean Work/GCert/Data/U8XGlue401.lean"
+	User time (seconds): 27.64
+	System time (seconds): 8.58
+	Percent of CPU this job got: 42%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:25.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8923288
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 56152
+	Minor (reclaiming a frame) page faults: 167096
+	Voluntary context switches: 74859
+	Involuntary context switches: 363
+	Swaps: 0
+	File system inputs: 6509256
+	File system outputs: 672
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,66 @@
+VFS START Wed Oct 14 01:03:04 UTC 2026
+toolchain file: leanprover/lean4:v4.34.1
+LEAN_PATH=/content/work/fs-build/B/lean/complex588/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/Cli/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/Qq/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/aesop/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/batteries/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/importGraph/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/mathlib/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/plausible/.lake/build/lib/lean:/content/work/fs-build/B/lean/complex588/.lake/packages/proofwidgets/.lake/build/lib/lean
+--- source hashes in the tree
+21
+--- olean vs source mtimes (olean must be newer)
+FourierU8XMHH/UniformFourierChallenge src=21:23:42 olean=22:17:49 ok
+FourierU8XMHHNeg/UniformFourierChallenge src=21:23:42 olean=22:17:57 ok
+FourierU8XMHH/Main src=21:23:42 olean=22:19:29 ok
+FourierU8XMHH/Goal src=21:23:42 olean=22:17:41 ok
+FourierU8XMHH/Seam src=21:23:42 olean=22:18:04 ok
+XHost/U8XMHH src=21:23:42 olean=22:17:25 ok
+XHost/Data/HU8XMSched src=21:23:42 olean=22:13:12 ok
+XHost/Data/RateU8XMHHx src=21:23:42 olean=22:06:52 ok
+=== check START 01:03:05
+=== check END rc=0 wall=127s maxrss_kb=6691440
+'OAI.PowerSaving.transform_mainU8XMHH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainU8XMHH' depends on axioms: [propext, Classical.choice, Quot.sound]
+OAI.PowerSaving.transform_mainU8XMHH : OAI.PowerSaving.DFTGoalU8XMHH
+OAI.PowerSaving.convolution_mainU8XMHH : OAI.PowerSaving.ConvGoalU8XMHH
+def OAI.PowerSaving.decimalExponentU8XMHH : ℝ :=
+1 - 16197705 / 10 ^ 10
+def OAI.PowerSaving.DFTGoalU8XMHH : Prop :=
+∃ order solve W, OAI.PowerSaving.DFTProgram order solve W ∧ OAI.PowerSaving.TimeBoundsU8XMHH W
+def OAI.PowerSaving.TimeBoundsU8XMHH : (ℕ → ℕ) → Prop :=
+fun W =>
+  have W' := fun n => ↑(W n);
+  W' =O[Filter.atTop] OAI.PowerSaving.paperTime ∧
+    W' =O[Filter.atTop] OAI.PowerSaving.decimalTimeU8XMHH ∧ W' =o[Filter.atTop] OAI.PowerSaving.nlogn
+OAI.PowerSaving.DFTGoalU8XMHH is declared in module some (Work.FourierU8XMHH.Goal)
+OAI.PowerSaving.transform_mainU8XMHH is declared in module some (Work.FourierU8XMHH.Main)
+OAI.PowerSaving.DFTProgram is declared in module some (OAI.Computability.FourierTransform.Goal)
+OAI.PowerSaving.ConvProgram is declared in module some (OAI.Computability.FourierTransform.Goal)
+OAI.PowerSaving.paperTime is declared in module some (OAI.Computability.FourierTransform.Goal)
+OAI.PowerSaving.nlogn is declared in module some (OAI.Computability.FourierTransform.Goal)
+OAI.PowerSaving.XHost.engine_of_ginv_host is declared in module some (Work.XHost.HEnd)
+OAI.PowerSaving.RAM.hillsU8XMHH_program is declared in module some (Work.FourierU8XMHH.Seam)
+=== cmp-pos START 01:05:12
+=== cmp-pos END rc=0 wall=82s maxrss_kb=15876516
+  identical: OAI.PowerSaving.paperDelta   [solution: OAI.Computability.FourierTransform.Goal]
+  identical: OAI.PowerSaving.paperDelta._proof_1   [solution: OAI.Computability.FourierTransform.Goal]
+  identical: OAI.PowerSaving.paperM   [solution: OAI.Computability.FourierTransform.Goal]
+  identical: OAI.PowerSaving.paperM._proof_1   [solution: OAI.Computability.FourierTransform.Goal]
+  identical: OAI.PowerSaving.paperMultiplier   [solution: OAI.Computability.FourierTransform.Goal]
+  identical: OAI.PowerSaving.paperTime   [solution: OAI.Computability.FourierTransform.Goal]
+  identical: OAI.PowerSaving.paperTime._proof_1   [solution: OAI.Computability.FourierTransform.Goal]
+  identical: OAI.PowerSaving.paperW   [solution: OAI.Computability.FourierTransform.Goal]
+  identical: OAI.PowerSaving.root   [solution: OAI.Computability.FourierTransform.Goal]
+  identical: OAI.PowerSaving.theta   [solution: OAI.Computability.FourierTransform.Goal]
+OK: every statement dependency is identical in the solution
+solution proof reaches 43037 constants; axioms: #[Classical.choice, Quot.sound, propext]
+OK: only permitted axioms
+
+RESULT: PASS
+=== cmp-neg START 01:06:34
+=== cmp-neg END rc=1 wall=49s maxrss_kb=16135676
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH: definition body differs
+FAIL: 2 statement dependencies differ
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentU8XMHH: definition body differs
+FAIL: 2 statement dependencies differ
+RESULT: FAIL
+--- unwritable check: any file in the tree newer than VFS start?
+VFS END Wed Oct 14 01:07:23 UTC 2026
+EXIT 0

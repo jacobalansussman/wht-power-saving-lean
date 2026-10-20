@@ -1,0 +1,21 @@
+INSTALL L3945HS: 20 new, 1 identical (skipped), from /content/work/bB-data/in/stub-L3945HS/stage; hashes /content/work/bB-data/in-L3945HS.sha256
+   (slot: waited 0s; heavy 2, avail 48633 MB)
+   LEAN_NUM_THREADS=1
+=== build START 19:21:56
+=== build END rc=0 wall=117s maxrss_kb=6815936 19:23:53
+Build completed successfully (9334 jobs).
+   6.9s Work.FourierL3945HS.WorkingPreparation
+   6.9s Work.FourierL3945HS.Asymptotics
+   6.6s Work.FourierL3945HS.SectorAlgorithm
+   6.5s Work.FourierL3945HS.UniformFourierChallenge
+   6.4s Work.L3945HS.Engine
+   6.4s Work.FourierL3945HSNeg.UniformFourierChallenge
+   6.1s Work.FourierL3945HS.WorkingCompiler
+   6.0s Work.FourierL3945HS.Main
+=== nobuild START 19:23:53
+=== nobuild END rc=0 wall=5s maxrss_kb=953832 19:23:58
+All targets up-to-date (9334 jobs).
+BUILD L3945HS OK
+bash: /content/work/bB-data/scripts/isk-checks.sh: No such file or directory
+FAILED: checks stub
+EXIT 1

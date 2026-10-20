@@ -1,0 +1,20 @@
+VERDICT bos lean: accepted
+   (slot: waited 0s; heavy 1, avail 49061 MB)
+FAST CHECK L2979 START Mon Oct 19 09:15:38 PM UTC 2026
+files in the PR: 449 (limit 500); largest 3495001 bytes (limit 20000000); total 17536379 bytes (limit 150000000)
+verifier planning: 448 modules in 146 serial chains, acyclic
+visibility: 0 modules see local modules outside their group that they did not see before; 79 see earlier siblings of their group only; 0 see new external imports
+STATIC CHECK PASS
+tree mode: root Work.FourierL2979.Main, 581 modules; axioms of: OAI.PowerSaving.transform_mainL2979 OAI.PowerSaving.convolution_mainL2979
+tree dump rc=0 332s: BosDump: 27118 constants of the closure written to /content/work/logs/x-final/fast-L2979/tree.tsv
+merged dump rc=0 331s: BosDump: 27102 constants of the closure written to /content/work/logs/x-final/fast-L2979/merged.tsv
+non-auxiliary constants: 21650 (original stage, 577 modules) vs 21650 (merged stage, 443 modules)
+auxiliary constants: 5468 (original) vs 5450 (merged); distinct contents 4250 vs 4250
+metaprogramming objects (notation parsers, macros; compared by type only): 1, value differs for 1
+theorems: 9584; same statement in both: all above; proof term identical for 9584, different for 0 (allowed)
+axioms of OAI.PowerSaving.convolution_mainL2979: original ['Classical.choice', 'Quot.sound', 'propext'], merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+axioms of OAI.PowerSaving.transform_mainL2979: original ['Classical.choice', 'Quot.sound', 'propext'], merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+axioms of Race.bound: original None, merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+IDENTITY CHECK PASS
+FAST CHECK L2979 END Mon Oct 19 09:27:06 PM UTC 2026
+EXIT 0

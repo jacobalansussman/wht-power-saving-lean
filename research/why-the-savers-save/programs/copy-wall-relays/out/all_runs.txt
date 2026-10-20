@@ -1,0 +1,141 @@
+== out/i_relay_c5_rerun.txt
+C5: scalar minrank (static side information): 3
+   with relays along an order: minrank values reached [2, 3]  e.g. order [0, 2, 3, 1, 4]
+== out/ii_c5_closure.txt
+C5 r=2 L=5 closure=none gauge=none                           SAT    vars 135 clauses 270  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 3, 'viol_one': 3, 'viol_trans': 4, 'rankB': 2, 'cT_static_fit': False, 'rank_cT': 2, 'layer_sizes': [2, 1, 1, 0
+C5 r=3 L=5 closure=none gauge=none                           SAT    vars 175 clauses 375  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 3, 'cT_static_fit': True, 'rank_cT': 3, 'layer_sizes': [5]}
+C5 r=2 L=5 closure=one gauge=none                            UNSAT  vars 165 clauses 380  0.0s
+C5 r=3 L=5 closure=one gauge=none                            SAT    vars 225 clauses 555  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 4, 'viol_one': 0, 'viol_trans': 0, 'rankB': 3, 'cT_static_fit': True, 'rank_cT': 3, 'layer_sizes': [3, 0, 0, 1,
+C5 r=2 L=5 closure=trans gauge=none                          UNSAT  vars 175 clauses 400  0.0s
+C5 r=3 L=5 closure=trans gauge=none                          SAT    vars 235 clauses 575  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 2, 'viol_one': 0, 'viol_trans': 0, 'rankB': 3, 'cT_static_fit': True, 'rank_cT': 3, 'layer_sizes': [3, 0, 0, 0,
+== out/iii_petersen.txt
+C5 r=2 L=5 closure=one gauge=XK=I(|K|=2)                     UNSAT  vars 135 clauses 280  0.0s
+C5 r=2 L=5 closure=trans gauge=XK=I(|K|=2)                   UNSAT  vars 145 clauses 300  0.0s
+petersen r=4 L=1 closure=none gauge=XK=I(|K|=4)              UNSAT  vars 374 clauses 1078  0.0s
+petersen r=4 L=2 closure=none gauge=XK=I(|K|=4)              UNSAT  vars 504 clauses 1258  0.0s
+petersen r=4 L=3 closure=none gauge=XK=I(|K|=4)              SAT    vars 574 clauses 1388  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 10, 'viol_one': 17, 'viol_trans': 23, 'rankB': 4, 'cT_static_fit': False, 'rank_cT': 4, 'layer_sizes': [5, 2, 
+petersen r=4 L=2 closure=one gauge=XK=I(|K|=4)               UNSAT  vars 630 clauses 1810  0.0s
+petersen r=4 L=3 closure=one gauge=XK=I(|K|=4)               UNSAT  vars 700 clauses 1940  0.0s
+petersen r=4 L=3 closure=trans gauge=XK=I(|K|=4)             UNSAT  vars 730 clauses 2030  0.0s
+petersen r=4 L=10 closure=one gauge=XK=I(|K|=4)              UNSAT  vars 1190 clauses 2850  0.0s
+petersen r=4 L=10 closure=trans gauge=XK=I(|K|=4)            UNSAT  vars 1220 clauses 2940  0.0s
+== out/iii_d5.txt
+D5 r=4 L=1 closure=none gauge=XK=I(|K|=4)                    UNSAT  vars 1616 clauses 5252  0.0s
+D5 r=5 L=1 closure=none gauge=XK=I(|K|=4)                    SAT    vars 2072 clauses 6708  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 5, 'cT_static_fit': True, 'rank_cT': 5, 'layer_sizes': [20]}
+D5 r=4 L=2 closure=none gauge=XK=I(|K|=4)                    UNSAT  vars 2116 clauses 5972  0.0s
+D5 r=4 L=3 closure=none gauge=XK=I(|K|=4)                    SAT    vars 2376 clauses 6472  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 42, 'viol_one': 186, 'viol_trans': 248, 'rankB': 4, 'cT_static_fit': False, 'rank_cT': 4, 'layer_sizes': [10,
+D5 r=4 L=2 closure=one gauge=XK=I(|K|=4)                     UNSAT  vars 2900 clauses 9860  0.0s
+D5 r=4 L=3 closure=one gauge=XK=I(|K|=4)                     UNSAT  vars 3160 clauses 10360  0.0s
+D5 r=4 L=3 closure=trans gauge=XK=I(|K|=4)                   UNSAT  vars 3300 clauses 10980  0.0s
+D5 r=4 L=20 closure=none gauge=XK=I(|K|=4)                   SAT    vars 6796 clauses 14972  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 41, 'viol_one': 143, 'viol_trans': 300, 'rankB': 4, 'cT_static_fit': False, 'rank_cT': 4, 'layer_sizes': [4,
+D5 r=4 L=20 closure=one gauge=XK=I(|K|=4)                    UNSAT  vars 7580 clauses 18860  0.1s
+D5 r=4 L=20 closure=trans gauge=XK=I(|K|=4)                  UNSAT  vars 7720 clauses 19480  0.0s
+== out/iii_e6.txt
+E6 r=6 L=1 closure=none gauge=XK=I(|K|=5)                    UNSAT  vars 7593 clauses 25494  0.0s
+E6 r=7 L=1 closure=none gauge=XK=I(|K|=5)                    SAT    vars 8967 clauses 30051  1.6s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 7, 'cT_static_fit': True, 'rank_cT': 7, 'layer_sizes': [36]}
+E6 r=5 L=2 closure=none gauge=XK=I(|K|=5)                    UNSAT  vars 7695 clauses 23097  0.1s
+E6 6 2 none --gaugeX                                         UNDECIDED (killed at 25s)
+E6 r=5 L=3 closure=none gauge=XK=I(|K|=5)                    UNSAT  vars 8451 clauses 24573  2.9s
+E6 6 3 none --gaugeX                                         UNDECIDED (killed at 25s)
+E6 5 36 none --gaugeX                                        UNDECIDED (killed at 25s)
+E6 6 36 none --gaugeX                                        UNDECIDED (killed at 25s)
+E6 6 3 one --gaugeX                                          UNDECIDED (killed at 25s)
+E6 6 3 trans --gaugeX                                        UNDECIDED (killed at 25s)
+E6 6 36 one --gaugeX                                         UNDECIDED (killed at 25s)
+E6 6 36 trans --gaugeX                                       UNDECIDED (killed at 25s)
+== out/iii_e6_more.txt
+E6 6 3 none --gaugeX --save out/e6_r6_L3_none.json           UNDECIDED (killed at 110s)
+== out/kfree_e6.txt
+E6 r=6 at most 2 RELAYED PORTS: UNSAT  vars 7697 clauses 26022  0.2s
+E6 r=6 at most 4 RELAYED PORTS: UNSAT  vars 7757 clauses 28592  1.9s
+E6 r=6 at most 6 RELAYED PORTS: UNSAT  vars 7809 clauses 28692  6.0s
+E6 r=6 at most 8 RELAYED PORTS: UNSAT  vars 7853 clauses 28776  24.0s
+== out/witness_d5.txt
+instance D5 rank 4 layers [2, 2, 1, 1, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2]
+S=0 [1, 1, 0, 0, 0] relays T=8 [0, 1, 1, 0, 0] (layer 0 < 2); T cancels T'=6 [1, 0, 0, 0, 1] (a_T'.a_T = 0) but a_T'.a_S = 1 != 0
+S=0 [1, 1, 0, 0, 0] relays T=9 [0, 1, -1, 0, 0] (layer 0 < 2); T cancels T'=6 [1, 0, 0, 0, 1] (a_T'.a_T = 0) but a_T'.a_S = 1 != 0
+S=0 [1, 1, 0, 0, 0] relays T=12 [0, 1, 0, 0, 1] (layer 0 < 2); T cancels T'=2 [1, 0, 1, 0, 0] (a_T'.a_T = 0) but a_T'.a_S = 1 != 0
+relayed pairs whose frame G cannot exist (one-level test): 42 of 42
+== out/theorem_witness.txt
+petersen r=5 L=3 closure=trans gauge=XK=I(|K|=4)             SAT    vars 870 clauses 2450  0.0s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 5, 'viol_one': 0, 'viol_trans': 0, 'rankB': 5, 'cT_static_fit': True, 'rank_cT': 5, 'layer_sizes': [4, 3, 3]}
+petersen r=5 L=10 closure=one gauge=XK=I(|K|=4)              SAT    vars 1330 clauses 3270  0.1s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 4, 'viol_one': 0, 'viol_trans': 0, 'rankB': 5, 'cT_static_fit': True, 'rank_cT': 5, 'layer_sizes': [2, 1, 2, 
+D5 r=5 L=3 closure=trans gauge=XK=I(|K|=4)                   SAT    vars 3980 clauses 13220  0.2s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 5, 'cT_static_fit': True, 'rank_cT': 5, 'layer_sizes': [2, 13, 5
+D5 r=5 L=20 closure=one gauge=XK=I(|K|=4)                    SAT    vars 8260 clauses 21100  1.2s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 5, 'cT_static_fit': True, 'rank_cT': 5, 'layer_sizes': [0, 0, 1,
+E6 7 3 trans --gaugeX                                        UNDECIDED (killed at 25s)
+E6 7 3 one --gaugeX                                          UNDECIDED (killed at 25s)
+P120 9 3 trans --gaugeX                                      UNDECIDED (killed at 25s)
+P120 9 3 one --gaugeX                                        UNDECIDED (killed at 25s)
+== out/nogain_random.txt
+closure=one   no relay     instances   390   c^T static fit   390   c^T in rowspace(B)   390
+closure=one   relays used  instances  2610   c^T static fit  2465   c^T in rowspace(B)  2610
+closure=trans no relay     instances   393   c^T static fit   393   c^T in rowspace(B)   393
+closure=trans relays used  instances  2607   c^T static fit  2607   c^T in rowspace(B)  2607
+== out/main_p120_a.txt
+P120 r=8 L=2 closure=one gauge=K(119, 118, 102, 98, 79, 72, 37, 34) UNSAT  vars 203640 clauses 859166  0.8s
+P120 r=8 L=2 closure=none gauge=K(119, 118, 102, 98, 79, 72, 37, 34) UNSAT  vars 105360 clauses 338534  0.3s
+== out/main_p120_b.txt
+P120 r=8 L=1 closure=none gauge=XK=I                         UNSAT  vars 97680 clauses 338808  0.3s
+P120 r=8 L=2 closure=none gauge=XK=I                         UNSAT  vars 111240 clauses 358968  1.5s
+== out/main_p120_d.txt
+P120 r=8 L=3 closure=one gauge=XK=I                          UNSAT  vars 223920 clauses 920880  6.7s
+P120 r=8 L=3 closure=trans gauge=XK=I                        UNSAT  vars 231480 clauses 1170360  6.9s
+== out/main_more.txt
+P120 r=8 L=2 closure=one gauge=XK=I(|K|=8)                   UNSAT  vars 217080 clauses 907320  1.9s
+P120 r=8 L=4 closure=trans gauge=XK=I(|K|=8)                 UNSAT  vars 238320 clauses 1183920  11.9s
+P111 r=8 L=4 closure=trans gauge=XK=I(|K|=8)                 UNSAT  vars 203034 clauses 981615  8.8s
+P120 r=8 L=6 closure=trans gauge=XK=I(|K|=8)                 UNSAT  vars 252000 clauses 1211040  16.9s
+P111 r=8 L=8 closure=trans gauge=XK=I(|K|=8)                 UNSAT  vars 226438 clauses 1027979  25.4s
+== out/main_p111_a.txt
+P111 r=8 L=1 closure=none gauge=XK=I                         UNSAT  vars 83271 clauses 288367  0.2s
+P111 r=8 L=2 closure=none gauge=XK=I                         UNSAT  vars 94862 clauses 305587  1.4s
+P111 r=8 L=2 closure=one gauge=XK=I                          UNSAT  vars 184862 clauses 760731  1.4s
+P111ours r=8 L=2 closure=none gauge=XK=I                     UNSAT  vars 95154 clauses 306523  1.2s
+== out/main_p111_b.txt
+P111 r=8 L=3 closure=one gauge=XK=I                          UNSAT  vars 190713 clauses 772322  5.3s
+P111 r=8 L=3 closure=trans gauge=XK=I                        UNSAT  vars 197183 clauses 970024  5.0s
+== out/main_p111_L3_none.txt
+[heavy.sh] got slot heavy-2 11:16:57
+P111 r=8 L=3 closure=none gauge=XK=I(|K|=8)                  UNSAT  vars 100713 clauses 317178  727.8s
+== out/main_p111_L3_alt.txt
+P111 8 3 none --gaugeX --solver mcb                          UNDECIDED (killed at 100s)
+== out/main_p111_L4_none.txt
+[heavy.sh] got slot heavy-1 11:35:30
+P111 8 4 none --gaugeX --save out/p111_L4_none_gX.json       UNDECIDED (killed at 2700s)
+== out/main_p120_L3_none.txt
+[cancelled 11:31: implied by P111 L=3 UNSAT (principal-submatrix argument)]
+== out/sub34_runs.txt
+sub:out/sub34.json r=8 L=1 closure=none gauge=XK=I(|K|=8)    UNSAT  vars 7474 clauses 24656  0.0s
+sub:out/sub34.json r=8 L=2 closure=none gauge=XK=I(|K|=8)    UNSAT  vars 8704 clauses 26450  13.2s
+sub:out/sub34.json r=8 L=3 closure=none gauge=XK=I(|K|=8)    SAT    vars 9336 clauses 27680  0.3s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 95, 'viol_one': 364, 'viol_trans': 541, 'rankB': 8, 'cT_static_fit': False, 'rank_cT': 8, 'layer_sizes': [10
+== out/kfree_p111.txt
+P111 r=8 at most 1 freed non-known cells: UNSAT  vars 89010 clauses 302713  0.3s
+P111 r=8 at most 2 freed non-known cells: UNSAT  vars 94747 clauses 314185  2.5s
+P111 r=8 at most 3 freed non-known cells: UNSAT  vars 100482 clauses 375033  8.8s
+P111 r=8 at most 1 RELAYED PORTS: UNSAT  vars 83492 clauses 291566  0.2s
+P111 r=8 at most 2 RELAYED PORTS: UNSAT  vars 83600 clauses 291780  0.3s
+P111 r=8 at most 3 RELAYED PORTS: UNSAT  vars 83706 clauses 341370  0.5s
+P111 r=8 at most 4 RELAYED PORTS: UNSAT  vars 83810 clauses 357500  0.7s
+P111 r=8 at most 5 RELAYED PORTS: UNSAT  vars 83912 clauses 357702  1.2s
+P111 r=8 at most 6 RELAYED PORTS: UNSAT  vars 84012 clauses 357900  1.7s
+P111 r=8 at most 8 RELAYED PORTS: UNSAT  vars 84206 clauses 358284  2.4s
+P111 r=8 at most 10 RELAYED PORTS: UNSAT  vars 84392 clauses 358652  4.4s
+P111 r=8 at most 12 RELAYED PORTS: UNSAT  vars 84570 clauses 359004  8.3s
+P111 8 16 cols undecided at 22s
+P111 r=8 at most 14 RELAYED PORTS: UNSAT  vars 84740 clauses 359340  13.6s
+P111 r=8 at most 16 RELAYED PORTS: UNSAT  vars 84902 clauses 359660  35.9s
+P111 8 20 cols undecided at 110s
+== out/controls_rank9.txt
+P120 r=9 L=1 closure=none gauge=XK=I(|K|=8)                  SAT    vars 110688 clauses 383496  0.3s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 9, 'cT_static_fit': True, 'rank_cT': 9, 'layer_sizes': [120]}
+P111 r=9 L=1 closure=none gauge=XK=I(|K|=8)                  SAT    vars 94359 clauses 326398  0.3s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 9, 'cT_static_fit': True, 'rank_cT': 9, 'layer_sizes': [111]}
+P111 r=9 L=2 closure=one gauge=XK=I(|K|=8)                   SAT    vars 207950 clauses 840762  9.4s  check {'bad_diag': 0, 'bad_order': 0, 'relays_used': 0, 'viol_one': 0, 'viol_trans': 0, 'rankB': 9, 'cT_static_fit': True, 'rank_cT': 9, 'layer_sizes': [14, 9
+P111 r=9 at most 0 freed non-known cells: SAT  vars 94359 clauses 329268  0.3s freed pairs []
+== out/hyperplane_greedy_p120.txt
+P120: no rank-8 order found in the V_f family (3 tries per f); fewest stuck targets 24 (f=11)
+== out/price_relay.txt
+control c0 = 1.7334270396e-03 (bit side #589)   control b0 = 1.6644002789e-03 (complex side #799)
+P111 cst 63 -> 62 (one rank unit per call)                                               c = 1.7820e-03 (+2.80 %)  what-if, UNREACHABLE by relays
+P111 cst 63 -> 56 (relay rank-8 decoder, spans 7: one rank-7 child removed per call)     c = 2.0740e-03 (+19.65 %)  what-if, UNREACHABLE by relays
+kappa: b binds (b0 1.6644e-03 < c0 1.7334e-03); a gain in c alone moves kappa by 0; c already sits +4.15 % above b.
+calibration: one rank-1 descent per call as {1:+2}: c = 1.6358e-03 (-5.63 %)  (hub C.7: -5.630 % c)
+P111 rank 8 with one rank-7 child removed and  4 rank-1 descents per call: c = 1.6835e-03 (-2.88 %)  what-if (>= 17 needed)
+P111 rank 8 with one rank-7 child removed and 17 rank-1 descents per call: c = 4.1958e-04 (-75.80 %)  what-if (>= 17 needed)

@@ -1,0 +1,76 @@
+{
+ "control": {
+  "b": "0.001674989015937672328468",
+  "kappa": "0.001672188119205421"
+ },
+ "twins+N0/mcopy/hole": {
+  "b": "0.001673889085143",
+  "b_gain_pct": -0.066,
+  "kappa": "0.001671091862713632",
+  "kappa_gain": -1.096256491789e-06,
+  "binding": "complex"
+ },
+ "twins+N0/mcopy/bins48": {
+  "b": "0.001675111324650",
+  "b_gain_pct": 0.007,
+  "kappa": "0.001672310019198037",
+  "kappa_gain": 1.21899992616e-07,
+  "binding": "complex"
+ },
+ "twins+N32/mcopy/hole": {
+  "b": "0.001696647237844",
+  "b_gain_pct": 1.293,
+  "kappa": "0.001693773501711249",
+  "kappa_gain": 2.1585382505828e-05,
+  "binding": "complex"
+ },
+ "twins+N32/mcopy/bins48": {
+  "b": "0.001731010295282",
+  "b_gain_pct": 3.345,
+  "kappa": "0.001728019076470244",
+  "kappa_gain": 5.5830957264823e-05,
+  "binding": "complex"
+ },
+ "twins+N32/typical/hole": {
+  "b": "0.001703092397340",
+  "b_gain_pct": 1.678,
+  "kappa": "0.001700196805087017",
+  "kappa_gain": 2.8008685881596e-05,
+  "binding": "complex"
+ },
+ "twins+N32/typical/bins48": {
+  "b": "0.001742104063664",
+  "b_gain_pct": 4.007,
+  "kappa": "0.001730427469823602",
+  "kappa_gain": 5.8239350618181e-05,
+  "binding": "bit"
+ },
+ "twins+N36/mcopy/hole": {
+  "b": "0.001699535706804",
+  "b_gain_pct": 1.465,
+  "kappa": "0.001696652185832362",
+  "kappa_gain": 2.4464066626941e-05,
+  "binding": "complex"
+ },
+ "twins+N36/mcopy/bins48": {
+  "b": "0.001738269460466",
+  "b_gain_pct": 3.778,
+  "kappa": "0.001730427469823602",
+  "kappa_gain": 5.8239350618181e-05,
+  "binding": "bit"
+ },
+ "twins+N36/typical/hole": {
+  "b": "0.001706817352705",
+  "b_gain_pct": 1.9,
+  "kappa": "0.001703909091101177",
+  "kappa_gain": 3.1720971895756e-05,
+  "binding": "complex"
+ },
+ "twins+N36/typical/bins48": {
+  "b": "0.001750852250809",
+  "b_gain_pct": 4.529,
+  "kappa": "0.001730427469823602",
+  "kappa_gain": 5.8239350618181e-05,
+  "binding": "bit"
+ }
+}

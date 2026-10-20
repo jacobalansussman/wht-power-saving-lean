@@ -1,0 +1,23 @@
+  1.    22/19 x submod  S={N<100>, N<010>}, a=L0, b=N<100,010>:  r(S+a)+r(S+b)-r(S+a+b)-r(S) >= 0
+  2.    28/57 x submod  S={L0, N<100,010>}, a=N<100>, b=N<010>:  r(S+a)+r(S+b)-r(S+a+b)-r(S) >= 0
+  3.     5/57 x submod  S={N<001>, N<100,010>}, a=L0, b=M0:  r(S+a)+r(S+b)-r(S+a+b)-r(S) >= 0
+  4.    10/57 x submod  S={L0, N<100>, N<010>}, a=N<001>, b=N<100,010>:  r(S+a)+r(S+b)-r(S+a+b)-r(S) >= 0
+  5.    14/19 x submod  S={L0, N<100>, N<100,010>}, a=N<010>, b=N<110>:  r(S+a)+r(S+b)-r(S+a+b)-r(S) >= 0
+  6.    10/57 x submod  S={L0, N<001>, N<100,010>}, a=N<100>, b=M0:  r(S+a)+r(S+b)-r(S+a+b)-r(S) >= 0
+  7.     5/57 x submod  S={L0, N<100>, M0}, a=N<010>, b=N<100,010>:  r(S+a)+r(S+b)-r(S+a+b)-r(S) >= 0
+  8.     5/57 x submod  S={L0, N<100>, N<010>, M0}, a=N<001>, b=N<100,011>:  r(S+a)+r(S+b)-r(S+a+b)-r(S) >= 0
+  9.     5/57 x submod  S={L0, N<100>, N<100,010>, M0}, a=N<010>, b=N<001>:  r(S+a)+r(S+b)-r(S+a+b)-r(S) >= 0
+ 10.     5/57 x monot   S={L0, M0}, a=N<100>:  r(S+a)-r(S) >= 0
+ 11.    14/19 x monot   S={L0, N<100>, N<010>, N<110>}, a=N<100,010>:  r(S+a)-r(S) >= 0
+ 12.    10/57 x monot   S={L0, N<100>, N<001>, N<100,010>}, a=N<010>:  r(S+a)-r(S) >= 0
+ 13.     5/57 x monot   S={L0, N<001>, N<100,010>, M0}, a=N<101>:  r(S+a)-r(S) >= 0
+ 14.     5/57 x monot   S={L0, N<100>, N<010>, N<001>, M0}, a=N<100,010>:  r(S+a)-r(S) >= 0
+ 15.     5/57 x monot   S={L0, N<001>, N<101>, N<100,010>, M0}, a=N<010>:  r(S+a)-r(S) >= 0
+ 16.     2/57 x DFZ(65) A,B,C,W,X,Y,Z = {N<100>}, {N<010>}, {N<001>}, {N<110>}, {N<101>}, {N<011>}, {N<111>}; T={L0}
+ 17.    14/57 x Ingleton A,B,C,D = {L0}, {N<100>}, {N<010>}, {N<100,001>}; T={}
+ 18.    11/19 x Ingleton A,B,C,D = {N<100>}, {N<100,001>}, {N<100,010>}, {N<101>}; T={}
+       16/285 x [r({N<100>}) - r({L0}) = 0]
+       58/285 x [delta(N<100> over N<100,010>) - delta(L0 over N<100>) = 0]
+        14/57 x [delta(N<100> over N<010>) - delta(L0 over N<100,010>) = 0]
+      88/1653 x [delta(N<100> over N<010,001>) - delta(L0 over M0) = 0]
+       169/57 x [mean delta_1 = 1]   (the bound)

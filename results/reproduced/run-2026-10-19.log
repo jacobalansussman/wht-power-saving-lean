@@ -1,0 +1,63 @@
+== pinned community files
+   all       32 files match their pins
+== controls.py
+== lever_price.py
+== heads_fill.py
+== recount.py
+== lower_b.py #3945 base
+== lower_b.py #3815 base
+== lower_b.py #3945 extra
+== lower_b.py #3815 extra
+== lowered words byte-identical to data/gcert
+          8 files identical
+== g0_staged.py #3945
+== g0_staged.py #3815
+== g0_staged.py on the T74 regression data (data/t74ctl)
+== price_ours.py
+== compare with the recorded results
+  equal        heads/controls.txt
+  not re-run   heads/cross-replica-3945.txt
+  equal        heads/heads-3945-control.json
+  equal        heads/heads-3945.json
+  equal        heads/lever-price.txt
+  not re-run   heads/margins.txt
+  equal        heads/recount-3945.txt
+  equal        g0/g0-3815.json
+  equal        g0/g0-3945.json
+  DIFFERS      g0/g0-T74-control.json
+  DIFFERS      g0/g0-T74-control.txt
+  equal        g0/lower-3815-base.json
+  equal        g0/lower-3815-base.txt
+  equal        g0/lower-3815-extra.json
+  equal        g0/lower-3815-extra.txt
+  equal        g0/lower-base.json
+  equal        g0/lower-base.txt
+  equal        g0/lower-extra.json
+  equal        g0/lower-extra.txt
+  equal        g0/mutants-3815-base.json
+  equal        g0/mutants-3815-extra.json
+  equal        g0/mutants-base.json
+  equal        g0/mutants-base.txt
+  equal        g0/mutants-extra.json
+  equal        g0/mutants-extra.txt
+  equal        g0/price-3815.json
+  equal        g0/price-3945.json
+2 DIFFERENCES
+      855.34 real       820.53 user        16.99 sys
+           970948608  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              704051  page reclaims
+                1745  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   3  signals received
+                 748  voluntary context switches
+              366308  involuntary context switches
+           113767652  instructions retired
+            87019467  cycles elapsed
+             1720632  peak memory footprint

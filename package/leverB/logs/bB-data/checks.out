@@ -1,0 +1,49 @@
+CHECKS L3945H NUM=17581520 START Mon Oct 19 07:28:20 PM UTC 2026
+   (slot: waited 0s; heavy 1, avail 49543 MB)
+=== axioms START 19:28:20
+=== axioms END rc=0 wall=7s maxrss_kb=7128700 19:28:27
+'OAI.PowerSaving.transform_mainL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms L3945H: standard only
+   (slot: waited 0s; heavy 0, avail 50231 MB)
+=== axioms-extra START 19:28:27
+=== axioms-extra END rc=0 wall=7s maxrss_kb=7134824 19:28:34
+'OAI.PowerSaving.MX.L3945H.engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.L3945H.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945H.engine_L3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945H.alphaL3945H_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945H' depends on axioms: [propext, Classical.choice, Quot.sound]
+extra axioms: standard only
+files grepped: 577 (from /content/work/bB-data/in-L3945H-all.files)
+sorry/admit lines: 0
+forbidden-construct mentions inside backquotes (not uses): 5
+forbidden-construct lines: 0
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74 /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierL3945H (1 - 17581520/10^10): byte-identical to my derivation from OpenAI's statement
+challenge FourierL3945HNeg (1 - 17581521/10^10): byte-identical to my derivation from OpenAI's statement
+positive and negative challenge differ only in the numerator
+Compare.lean e48d6d3b (= /content/work/ours/Compare.lean)
+   (slot: waited 0s; heavy 1, avail 49868 MB)
+=== compare-pos START 19:28:34
+=== compare-pos END rc=0 wall=53s maxrss_kb=16249212 19:29:27
+compare-pos rc=0
+RESULT: PASS
+   (slot: waited 0s; heavy 1, avail 48835 MB)
+=== compare-neg START 19:29:27
+=== compare-neg END rc=1 wall=53s maxrss_kb=16252848 19:30:20
+compare-neg rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentL3945H._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL3945H: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentL3945H._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL3945H: definition body differs
+RESULT: FAIL
+VERDICT Compare positive: PASS
+VERDICT Compare negative: FAIL (expected)
+CHECKS L3945H ALL AS EXPECTED Mon Oct 19 07:30:20 PM UTC 2026
+EXIT 0
+CHECKS L3945H OK

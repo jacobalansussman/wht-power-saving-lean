@@ -1,0 +1,6 @@
+m=4 k=8 G=<01,23> |G|=4: dim N 102960, E_0 columns 6435 -> G-reps 1789, rows 12870 -> G-reps 3578, classes [0, 2]  (0.0s)
+  chi=(0, 0): nonzero cols 1647, ranks {0: 1504, 2: 1525}, part 1382  (3.9s)
+  chi=(0, 1): nonzero cols 1620, ranks {0: 1497, 2: 1489}, part 1366  (7.5s)
+  chi=(1, 0): nonzero cols 1620, ranks {0: 1497, 2: 1489}, part 1366  (11.0s)
+  chi=(1, 1): nonzero cols 1548, ranks {0: 1419, 2: 1427}, part 1298  (14.4s)
+RESULT hookG m=4 k=8: dim N 102960, rank check 102960 EXACT, f(K) >= 86592 (certified); delta upper bound 91520  (14.4s)

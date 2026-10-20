@@ -1,0 +1,24 @@
+menu ctl: 13 words, 13 distinct group elements (0 duplicates merged); rows 10912; 0.2 s
+layer slopes seen (rounded to 0.05): [np.float64(0.0), np.float64(0.95), np.float64(1.0), np.float64(2.0)]
+dim of relation space N = 4   (cut between singular values 8.86e-01 and 2.61e-15)
+paid count: sum of dims within bins = 3  ->  excess (relations not split by paid count) = 1
+layer bin: sum of dims within bins = 3  ->  excess (relations not split by layer bin) = 1
+--- 1 independent relations not split by paid count; representatives:
+  relation 0: 7 terms; recheck rel. residual f=7: 8.4e-16  f=8: 8.4e-16
+     +1.0000+0.0000i  [paid 0, layer 0.00]  1
+     -0.6667+0.6667i  [paid 4, layer 0.97]  Di2.CSi.Di1.Pr0.D1.CS.D2
+     -0.6667+0.6667i  [paid 4, layer 0.00]  Di2.CSi.Di1.Pr1.D1.CS.D2
+     +0.0000-0.6667i  [paid 4, layer 1.00]  Di2.CSi.Di1.Z1.D1.CS.D2
+     +0.0000-0.6667i  [paid 4, layer 0.00]  Di2.CSi.Di1.Z2.D1.CS.D2
+     +0.3333-0.3333i  [paid 0, layer 0.00]  Pr0
+     +0.0000+0.3333i  [paid 0, layer 0.00]  Z1
+--- 1 independent relations not split by layer bin; representatives:
+  relation 0: 7 terms; recheck rel. residual f=7: 1.6e-15  f=8: 1.6e-15
+     +1.0000-0.0000i  [paid 4, layer 0.97]  Di2.CSi.Di1.Pr0.D1.CS.D2
+     -0.5000+0.5000i  [paid 4, layer 1.00]  Di2.CSi.Di1.Z1.D1.CS.D2
+     -0.3000-0.3000i  [paid 0, layer 0.00]  1
+     -0.2000+0.0000i  [paid 0, layer 0.00]  Pr0
+     -0.2000-0.0000i  [paid 4, layer 0.00]  Di2.CSi.Di1.Pr1.D1.CS.D2
+     +0.1000-0.1000i  [paid 0, layer 0.00]  Z1
+     +0.1000-0.1000i  [paid 4, layer 0.00]  Di2.CSi.Di1.Z2.D1.CS.D2
+done 1.4 s

@@ -1,0 +1,19 @@
+m=2 plain W=1                W=1 M= 2 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True
+m=2 plain W=2                W=2 M= 4 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True
+m=2 plain W=3                W=3 M= 6 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True
+m=2 gauge exchange           W=2 M= 4 Delta= 0 P=1 B=1 D=0 Z=0 I0=0 unit=True identity=True
+m=2 packing gadget           W=2 M= 5 Delta=-1 P=1 B=2 D=0 Z=0 I0=0 unit=True identity=True
+m=3 plain W=1                W=1 M= 3 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True
+m=3 plain W=2                W=2 M= 6 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True
+m=3 plain W=3                W=3 M= 9 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True
+m=3 gauge exchange           W=2 M= 6 Delta= 0 P=2 B=2 D=0 Z=0 I0=0 unit=True identity=True
+m=3 packing gadget           W=2 M= 7 Delta=-1 P=1 B=2 D=0 Z=0 I0=0 unit=True identity=True
+m=3 order-3 control C6O3     W=2 M= 6 Delta= 0 P=3 B=3 D=0 Z=0 I0=0 unit=True identity=True
+m=3 +-1 halving C6H          W=2 M= 6 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True
+m=4 plain W=1                W=1 M= 4 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True
+m=4 plain W=2                W=2 M= 8 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True
+m=4 plain W=3                W=3 M=12 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True
+m=4 gauge exchange           W=2 M= 8 Delta= 0 P=3 B=3 D=0 Z=0 I0=0 unit=True identity=True
+m=4 packing gadget           W=2 M= 9 Delta=-1 P=1 B=2 D=0 Z=0 I0=0 unit=True identity=True
+m=4 order-3 control C8O3     W=2 M= 8 Delta= 0 P=4 B=4 D=0 Z=0 I0=0 unit=True identity=True
+m=4 +-1 halving C8H          W=2 M= 8 Delta= 0 P=0 B=0 D=0 Z=0 I0=0 unit=True identity=True

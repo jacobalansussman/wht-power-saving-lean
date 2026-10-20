@@ -1,0 +1,80 @@
+[
+ {
+  "schedule": "out/opt/c588x.schedule.json.gz",
+  "banks": 5009,
+  "W": 12177,
+  "pad_hist": {
+   "0": 4284,
+   "1": 724,
+   "37": 1
+  },
+  "profile": {
+   "1": 187636,
+   "2": 35424,
+   "3": 20160,
+   "4": 16704,
+   "5": 4032,
+   "6": 4032,
+   "8": 14016,
+   "16": 3584,
+   "32": 3584,
+   "37": 1,
+   "48": 3584
+  },
+  "exact_root_lower": "0.001238329245158",
+  "exact_grid": 12383292,
+  "kernel_A": 12383280,
+  "dft": 12383279,
+  "rate": {
+   "root_lower": "619164622579/500000000000000",
+   "root_upper": "1238329245159/1000000000000000",
+   "root_lower_decimal": "0.001238329245158",
+   "root_upper_decimal": "0.001238329245159",
+   "lower_endpoint_margin_at_least": "5.110805570598332859041569047497473252617100173267041880E-16",
+   "upper_endpoint_excess_at_least": "1.819185032100906317301844316521662441261792343820385156E-15",
+   "moment_upper_at_dft_record": "0.9994963213581144080851914608962964497416895902847278500",
+   "strictly_beats_record_as_a_moment": true,
+   "method": "80-term rational atanh log; 30-degree rational exponential; explicit tails",
+   "scope": "Arithmetic only; no circuit realization or DFT transfer is inferred"
+  }
+ },
+ {
+  "schedule": "d-lean-route/out/c588p-price.schedule.json.gz (a working file, not published)",
+  "banks": 5040,
+  "W": 12208,
+  "pad_hist": {
+   "0": 4176,
+   "1": 792,
+   "31": 72
+  },
+  "profile": {
+   "1": 187704,
+   "2": 35424,
+   "3": 20160,
+   "4": 16704,
+   "5": 4032,
+   "6": 4032,
+   "8": 14016,
+   "16": 3584,
+   "31": 72,
+   "32": 3584,
+   "48": 3584
+  },
+  "exact_root_lower": "0.001237027354377",
+  "exact_grid": 12370273,
+  "kernel_A": 12370261,
+  "dft": 12370260,
+  "rate": {
+   "root_lower": "1237027354377/1000000000000000",
+   "root_upper": "618513677189/500000000000000",
+   "root_lower_decimal": "0.001237027354377",
+   "root_upper_decimal": "0.001237027354378",
+   "lower_endpoint_margin_at_least": "7.221741509307566043677981673252450537452079590210522743E-17",
+   "upper_endpoint_excess_at_least": "2.254569368640528849354656297942822606116341353401407201E-15",
+   "moment_upper_at_dft_record": "0.9995001003042600241272971493410156219140868750024131296",
+   "strictly_beats_record_as_a_moment": true,
+   "method": "80-term rational atanh log; 30-degree rational exponential; explicit tails",
+   "scope": "Arithmetic only; no circuit realization or DFT transfer is inferred"
+  }
+ }
+]

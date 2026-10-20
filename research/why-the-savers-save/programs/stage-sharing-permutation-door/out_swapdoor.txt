@@ -1,0 +1,86 @@
+r-swaps / swapdoor.py: exact two-stage replay of the permutation door on the tiny odd unit (h = 4, v = 8)
+  labels: {'e1': '1000', 'e2': '0100', 'e3': '0010', 'e4': '0001', 'w1': '0111', 'w2': '1011', 'w3': '1101', 'w4': '1110'}; norms [1, 3]; ordered orthogonal pairs 32 (unordered 16); matching [('e1', 'e2'), ('e3', 'e4'), ('w1', 'w2'), ('w3', 'w4')] all orthogonal: True
+  hub identities rho^2 = I, rho Lam(P|H|0|K) rho = (E<s+U | E<=s+U | E<s+K | E<=s+K), and the boundary identities H_s = P_(s+1), K_s = 0_(s+1) per port: 0 failures of 112
+  stage 1: P-bank global frames (P and H) port-independent on the matched pairs: True; 0-bank global start frames E<1 + K_t equal on matched pairs: 0 of 4
+  own-route distance between the K_S end frame and the partner end frame K_T (S-coordinates), matched pairs: [2, 2, 2, 2]
+  boundary-transfer condition rho(0,S) M_T == rho(1,S) (content of S crossing the 0->1 boundary in T's owner lands on its own route), orthogonal ordered pairs: 0 of 32
+  boundary-transfer condition rho(1,S) M_T == rho(2,S) (content of S crossing the 1->2 boundary in T's owner lands on its own route), orthogonal ordered pairs: 0 of 32
+
+== STD
+   whole-word scalar identity (what global_k.py's F2 replay sees): True
+   every term on its own port route at the end (per-port cover): True  (off-route terms 0, junk terms 0)
+   every owner at its declared end frame: True; kernel D_I on every input (Gamma_end = I - Gamma_start): True
+   stage-1 per-call contract (each 0-bank still holds its own port's columns): True
+   paid moves through stage 1 (stages 0+1), by category {rank: count}: {"copy": {"1": 16}, "climb": {"3": 32}}; rank mass 112
+   additions in the whole word: 24; descents (non-copy) 0
+   gate audit: {"gates": 24, "bit_contracts_agree_at_slot_g": 24, "gates_touching_off_route_terms": 0, "swap_gates": 0, "swap_gates_declared_contracts_differ": 0, "deliveries": 24, "deliveries_same_route_and_frame": 24}
+== B1
+   FAILS: ILLEGAL GATE Y_e1 += -1*Y_e2 (stage 1 swap back at the call end (e1,e2)): the two registers are at different frames, no common local frame
+   (failed during stage 1; paid moves until then {"copy": {"1": 8}, "climb": {"3": 24, "1": 8, "2": 8}}; additions 28)
+   gate audit up to the failure: {"gates": 28, "bit_contracts_agree_at_slot_g": 28, "gates_touching_off_route_terms": 16, "swap_gates": 12, "swap_gates_declared_contracts_differ": 12, "deliveries": 16, "deliveries_same_route_and_frame": 16}
+== B2
+   whole-word scalar identity (what global_k.py's F2 replay sees): True
+   every term on its own port route at the end (per-port cover): False  (off-route terms 16, junk terms 16)
+   every owner at its declared end frame: True; kernel D_I on every input (Gamma_end = I - Gamma_start): False
+   stage-1 per-call contract (each 0-bank still holds its own port's columns): False
+   paid moves through stage 1 (stages 0+1), by category {rank: count}: {"copy": {"1": 8}, "climb": {"3": 24, "1": 8, "2": 8}}; rank mass 104
+   additions in the whole word: 48; descents (non-copy) 0
+   mixed-route warnings: 8, e.g. after stage 2 fwd delivery e1: register Y_e1 holds input y_e1 on 2 different routes
+   gate audit: {"gates": 48, "bit_contracts_agree_at_slot_g": 48, "gates_touching_off_route_terms": 36, "swap_gates": 24, "swap_gates_declared_contracts_differ": 24, "deliveries": 24, "deliveries_same_route_and_frame": 16}
+   example at the end: owner Y_e1 holds 1*y_e1 on route ['rho(1,e1).M(e2)'] (its own route is rho(2,e1)); that term's own global frame is 2 rank units from the owner's declared one; owner holds 3 terms in all
+== B2f
+   FAILS: B2f: after the rank-0 route fix every swapped 0-bank content sits [2] rank units from its own stage-2 start frame (local 0); reaching it costs that many extra paid moves
+   (failed during stage 2; paid moves until then {"copy": {"1": 8}, "climb": {"3": 24, "1": 8, "2": 8}}; additions 40)
+   gate audit up to the failure: {"gates": 40, "bit_contracts_agree_at_slot_g": 40, "gates_touching_off_route_terms": 28, "swap_gates": 24, "swap_gates_declared_contracts_differ": 24, "deliveries": 16, "deliveries_same_route_and_frame": 16}
+== B3
+   whole-word scalar identity (what global_k.py's F2 replay sees): True
+   every term on its own port route at the end (per-port cover): True  (off-route terms 0, junk terms 0)
+   every owner at its declared end frame: True; kernel D_I on every input (Gamma_end = I - Gamma_start): True
+   stage-1 per-call contract (each 0-bank still holds its own port's columns): True
+   paid moves through stage 1 (stages 0+1), by category {rank: count}: {"copy": {"1": 8}, "climb": {"3": 24, "1": 8, "2": 8}, "excursion": {"1": 16}}; rank mass 120
+   additions in the whole word: 48; descents (non-copy) 8
+   gate audit: {"gates": 48, "bit_contracts_agree_at_slot_g": 48, "gates_touching_off_route_terms": 28, "swap_gates": 24, "swap_gates_declared_contracts_differ": 24, "deliveries": 24, "deliveries_same_route_and_frame": 24}
+== B5
+   whole-word scalar identity (what global_k.py's F2 replay sees): True
+   every term on its own port route at the end (per-port cover): True  (off-route terms 0, junk terms 0)
+   every owner at its declared end frame: True; kernel D_I on every input (Gamma_end = I - Gamma_start): True
+   stage-1 per-call contract (each 0-bank still holds its own port's columns): True
+   paid moves through stage 1 (stages 0+1), by category {rank: count}: {"copy": {"1": 8}, "climb": {"3": 24, "1": 8, "2": 8}, "excursion": {"1": 16}}; rank mass 120
+   additions in the whole word: 48; descents (non-copy) 8
+   gate audit: {"gates": 48, "bit_contracts_agree_at_slot_g": 48, "gates_touching_off_route_terms": 28, "swap_gates": 24, "swap_gates_declared_contracts_differ": 18, "deliveries": 24, "deliveries_same_route_and_frame": 24}
+== B0
+   whole-word scalar identity (what global_k.py's F2 replay sees): True
+   every term on its own port route at the end (per-port cover): True  (off-route terms 0, junk terms 0)
+   every owner at its declared end frame: True; kernel D_I on every input (Gamma_end = I - Gamma_start): True
+   stage-1 per-call contract (each 0-bank still holds its own port's columns): True
+   paid moves through stage 1 (stages 0+1), by category {rank: count}: {"copy": {"1": 8}, "climb": {"3": 32}, "excursion": {"1": 16}}; rank mass 120
+   additions in the whole word: 24; descents (non-copy) 8
+   gate audit: {"gates": 24, "bit_contracts_agree_at_slot_g": 24, "gates_touching_off_route_terms": 0, "swap_gates": 0, "swap_gates_declared_contracts_differ": 0, "deliveries": 24, "deliveries_same_route_and_frame": 24}
+== B6
+   whole-word scalar identity (what global_k.py's F2 replay sees): True
+   every term on its own port route at the end (per-port cover): False  (off-route terms 16, junk terms 16)
+   every owner at its declared end frame: True; kernel D_I on every input (Gamma_end = I - Gamma_start): False
+   stage-1 per-call contract (each 0-bank still holds its own port's columns): True
+   paid moves through stage 1 (stages 0+1), by category {rank: count}: {"copy": {"1": 16}, "climb": {"3": 32}}; rank mass 112
+   additions in the whole word: 48; descents (non-copy) 0
+   mixed-route warnings: 8, e.g. after stage 2 P-door delivery e1 through X_e2 at local P_e2: register Y_e1 holds input y_e1 on 2 different routes
+   gate audit: {"gates": 48, "bit_contracts_agree_at_slot_g": 48, "gates_touching_off_route_terms": 28, "swap_gates": 24, "swap_gates_declared_contracts_differ": 0, "deliveries": 24, "deliveries_same_route_and_frame": 16}
+   example at the end: owner Y_e1 holds -1*y_e1 on route ['rho(1,e1).M(e2)'] (its own route is rho(2,e1)); that term's own global frame is 2 rank units from the owner's declared one; owner holds 3 terms in all
+== J
+   whole-word scalar identity (what global_k.py's F2 replay sees): True
+   every term on its own port route at the end (per-port cover): True  (off-route terms 0, junk terms 0)
+   every owner at its declared end frame: True; kernel D_I on every input (Gamma_end = I - Gamma_start): True
+   stage-1 per-call contract (each 0-bank still holds its own port's columns): True
+   paid moves through stage 1 (stages 0+1), by category {rank: count}: {}; rank mass 0
+   additions in the whole word: 24; descents (non-copy) 8
+   gate audit: {"gates": 24, "bit_contracts_agree_at_slot_g": 24, "gates_touching_off_route_terms": 0, "swap_gates": 0, "swap_gates_declared_contracts_differ": 0, "deliveries": 24, "deliveries_same_route_and_frame": 24}
+
+  STD  stage 0+1 rank mass 112 (STD 112, delta +0); whole word 168, plain 160 (2v arrays x rank 10), deficit -8; passes all checks: True
+  B1   stage-1 rank mass: n/a (fails: ILLEGAL GATE Y_e1 += -1*Y_e2 (stage 1 swap back at the call end (e1,e2)))
+  B2   stage 0+1 rank mass 104 (STD 112, delta -8); whole word 160, plain 160 (2v arrays x rank 10), deficit +0; passes all checks: False
+  B2f  stage-1 rank mass: n/a (fails: B2f)
+  B3   stage 0+1 rank mass 120 (STD 112, delta +8); whole word 176, plain 160 (2v arrays x rank 10), deficit -16; passes all checks: True
+  B5   stage 0+1 rank mass 120 (STD 112, delta +8); whole word 176, plain 160 (2v arrays x rank 10), deficit -16; passes all checks: True
+  B0   stage 0+1 rank mass 120 (STD 112, delta +8); whole word 176, plain 160 (2v arrays x rank 10), deficit -16; passes all checks: True
+  B6   stage 0+1 rank mass 112 (STD 112, delta +0); whole word 160, plain 160 (2v arrays x rank 10), deficit +0; passes all checks: False
+  J    stage 0+1 rank mass n/a (STD 112, delta n/a); whole word 160, plain 160 (2v arrays x rank 10), deficit +0; passes all checks: True

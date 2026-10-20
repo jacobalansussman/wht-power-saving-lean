@@ -1,0 +1,8 @@
+P1 array 1 (target I, frame f_j): slice program delivers its target: True; lifted word delivers [I]: True
+P1 array 2 (target sigma sigma^T, frame alpha f_j): slice program delivers its target: True; lifted word delivers [I]: True
+P2 array 2 via 4 directions (2, 3, 4, 7): slice program delivers its target: True; lifted word delivers [I]: True
+P3 wrong lift ([sigma^2] for target sigma sigma^T): must FAIL: slice program delivers its target: True; lifted word delivers [I]: False
+P1 array 1 (target I, frame f_j): slice program delivers its target: True; lifted word delivers [I]: True
+P1 array 2 (target sigma sigma^T, frame alpha f_j): slice program delivers its target: True; lifted word delivers [I]: True
+P2 array 2 via 4 directions (1, 7, 11, 15): slice program delivers its target: True; lifted word delivers [I]: True
+P3 wrong lift ([sigma^2] for target sigma sigma^T): must FAIL: slice program delivers its target: True; lifted word delivers [I]: False

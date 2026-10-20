@@ -1,0 +1,13 @@
+m = 2: Part A, P D_z^(x)f P^-1 = X^(z x 1) . D_(z e_0)^-1 . CZ^W_z for every f
+  z=1: automata n=16+4; every-f equivalence: (True, 1); brute force f=0..3 vs RHS: True, vs LHS MPO: True
+        control: same identity with D^-1 on EVERY column instead of column 0: (False, 2)
+  z=2: automata n=16+4; every-f equivalence: (True, 1); brute force f=0..3 vs RHS: True, vs LHS MPO: True
+        control: same identity with D^-1 on EVERY column instead of column 0: (False, 2)
+  z=3: automata n=16+4; every-f equivalence: (True, 1); brute force f=0..3 vs RHS: True, vs LHS MPO: True
+        control: same identity with D^-1 on EVERY column instead of column 0: (False, 2)
+Part B: K^(x)f . E_e versus K^(x)f (E_e = row0 ^= row1 << e)
+  e=1: automata n=2+1; result (False, 2)  (expected: first difference at f = 2)
+  e=2: automata n=4+1; result (False, 3)  (expected: first difference at f = 3)
+  e=3: automata n=8+1; result (False, 4)  (expected: first difference at f = 4)
+  e=4: automata n=16+1; result (False, 5)  (expected: first difference at f = 5)
+exit 0

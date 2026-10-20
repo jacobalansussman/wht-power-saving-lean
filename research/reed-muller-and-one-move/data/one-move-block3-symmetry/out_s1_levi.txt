@@ -1,0 +1,22 @@
+calibration: Paulis, phase letters in B; dir1 Clifford, not in B: ok
+sigma(K) =
+[[1 0 0 1 0 0]
+ [0 1 0 0 1 0]
+ [0 0 1 0 0 1]
+ [0 0 0 1 0 0]
+ [0 0 0 0 1 0]
+ [0 0 0 0 0 1]]
+sigma(K) L_Z = [(0, 0, 1, 0, 0, 1), (0, 1, 0, 0, 1, 0), (0, 1, 1, 0, 1, 1), (1, 0, 0, 1, 0, 0), (1, 0, 1, 1, 0, 1), (1, 1, 0, 1, 1, 0), (1, 1, 1, 1, 1, 1)]
+|GL(3,2)| = 168
+lifts P_A diag(i^q) fixing L_Z and L_Y: per A min/max 1 1
+direct check c in B, K c K^-1 in B, c' = K^-1 c^-1 K in B for every A: ok
+order-7 elements of GL(3,2): 48
+Singer lift c: exact order 7, c in B, c' = K^-1 c^-1 K in B: ok; A = ((0, 0, 1), (0, 1, 1), (1, 1, 0))
+  c's permutation: [0, 4, 6, 2, 3, 7, 5, 1]
+  fixed cells of sigma(c) among Lagrangians: computed in s2
+hook calibration: cap(dir1) = 80  dim N = 280  dim E_N = N cap K^-1 N = 56  demand = 224
+rho(c') keeps N: True  keeps E_N: True
+traces of c'^s on N/E_N, s = 0..6: [(224+0j), 0j, (-0+0j), (-0-0j), 0j, -0j, -0j]
+multiplicity of eigenvalue zeta7^k of c' on N/E_N, k = 0..6: [np.float64(32.0), np.float64(32.0), np.float64(32.0), np.float64(32.0), np.float64(32.0), np.float64(32.0), np.float64(32.0)]  (imag max 5.0e-16)
+  on N: [np.float64(40.0), np.float64(40.0), np.float64(40.0), np.float64(40.0), np.float64(40.0), np.float64(40.0), np.float64(40.0)]
+c' on V: eigenvalue multiplicities: [np.float64(2.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0), np.float64(1.0)]

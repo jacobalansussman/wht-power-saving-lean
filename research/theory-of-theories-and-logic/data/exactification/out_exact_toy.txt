@@ -1,0 +1,12 @@
+depth L | formal: |coef0 - D| with precision 1+j (enough) | with precision 1 at every depth | relational: |coef0 - D| with precision 1+j, and with precision 1+3j
+  1     | 1.57e-16 | 1.57e-16 | 0.00e+00 | 0.00e+00
+  2     | 2.48e-16 | 2.48e-16 | 6.68e+00 | 6.68e+00
+  3     | 2.78e-16 | 2.29e-16 | 2.63e+02 | 2.63e+02
+  4     | 3.33e-16 | 3.51e-16 | 9.53e+04 | 9.53e+04
+  5     | 4.48e-16 | 4.58e-16 | 1.99e+10 | 1.99e+10
+  6     | 5.98e-16 | 5.66e-16 | 2.84e+20 | 2.84e+20
+numerical, floats: |U_0 - D| for depth L, shared eps = 1e-3 (formal | relational) and relational with separated scales
+  L=1: formal 1.14e-03 | relational shared 3.39e-03 | relational separated (eps_j = 1e-2^(2^j): needs 2^L digits) 3.39e-02
+  L=2: formal 2.28e-03 | relational shared 6.69e+00 | relational separated (eps_j = 1e-2^(2^j): needs 2^L digits) 1.01e-01
+  L=3: formal 3.42e-03 | relational shared 4.69e+04 | relational separated (eps_j = 1e-2^(2^j): needs 2^L digits) 1.61e-01
+  L=4: formal 4.56e-03 | relational shared 6.39e+12 | relational separated (eps_j = 1e-2^(2^j): needs 2^L digits) 7.15e-01

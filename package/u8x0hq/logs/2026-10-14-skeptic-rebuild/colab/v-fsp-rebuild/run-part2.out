@@ -1,0 +1,25 @@
+RUN START Wed Oct 14 14:24:10 UTC 2026
+HsU8X0HQ.lean: OK
+HsU8X0HQNeg.lean: OK
+base-sources.sha256: OK
+derive_challenges.sh: OK
+k-combine-u8xm.tar.gz: OK
+stage-u8x0.sha256: OK
+stage-u8x0.tgz: OK
+stage-u8x0hh.sha256: OK
+stage-u8x0hh.tgz: OK
+stage-u8x0hq.sha256: OK
+stage-u8x0hq.tgz: OK
+u8xmhh-src.tgz: OK
+xhost-src.tgz: OK
+xhost.sha256: OK
+RESUME: tree laid earlier; re-checking overlay hashes
+BASE-SOURCES-OK: all 234
+HQ-SOURCES-OK in tree
++
++-- x-exit-lean (exit-frame helpers)
++lean_lib XExit where globs := #[`XExit.+]
++
++-- fsp-cc (split centres on mutable sources)
++lean_lib CSX where globs := #[`CSX.+]
+=== build START 14:24:10

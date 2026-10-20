@@ -1,0 +1,35 @@
+{
+ "design": "E8",
+ "n": 120,
+ "k": 9,
+ "omega": 8,
+ "cliques": 2025,
+ "dims": {
+  "1": {
+   "subspaces": 511,
+   "Tmax": 135,
+   "floor": 120.0
+  },
+  "2": {
+   "subspaces": 43435,
+   "Tmax": 270,
+   "floor": 120.0
+  },
+  "3": {
+   "subspaces": 788035,
+   "Tmax": 510,
+   "floor": 95.29411764705883
+  },
+  "7": {
+   "subspaces": 43435,
+   "Tmax": 2025,
+   "floor": 56.0
+  },
+  "8": {
+   "subspaces": 511,
+   "Tmax": 2025,
+   "floor": 64.0
+  }
+ },
+ "floor": 56.0
+}

@@ -1,0 +1,6 @@
+cert: m=3 k=4 z=1,2 p=2147483629 (prime yes) I^2=-1 yes size 17 well-formed yes
+components: max size 4, sign inconsistencies 0, exact membership failures 0; det mod p of the 17 x 17 minor = 1958215661
+RESULT: PASS -> dim(D1 Z12 + D2 Z12) >= 8 x 17 = 136, f(dir 1 dir 2) <= 280 - 136 = 144
+cert: m=3 k=4 z=1,3 p=2147483629 (prime yes) I^2=-1 yes size 17 well-formed yes
+components: max size 4, sign inconsistencies 0, exact membership failures 0; det mod p of the 17 x 17 minor = 2052849645
+RESULT: PASS -> dim(D1 Z12 + D2 Z12) >= 8 x 17 = 136, f(dir 1 dir 3) <= 280 - 136 = 144

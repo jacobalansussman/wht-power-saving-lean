@@ -1,0 +1,21 @@
+Re-run for this revision, 19 October 2026, on an Apple M4 Mac mini (two processes, under 200 MB), with: PYTHON=<python3 with numpy 2.0.2 and scipy 1.13.1> sh run_all.sh
+
+== 1. output-order classes (mod permutations of the 3 address bits) and their cut-LP values
+6828 classes; 1300 with LP <= 11 written to pis_b3_lp11.txt
+== 2. exact integer certificates for every class with LP > 11 (they need at least 12 calls)
+classes 6828; kept for search (LP <= 11) 1300; excluded with an exact integer certificate 5528; excluded but certificate failed 0
+== 3. dual bounds per class (used for pruning inside the search)
+== 4. sanity: every correct 12-call word with the identity order must survive the prunes
+TOTAL pis 1 leaves 1451
+walk: word of 12 calls passes every pruning test (overlap=0)
+walk: word of 12 calls passes every pruning test (overlap=0)
+== 5. the exhaustive search: 11 calls, all 1,300 classes, two processes
+classes complete: 1300  aborted: 0
+survivors:        0
+TOTAL pis 650 leaves 0
+TOTAL pis 650 leaves 0
+== 6. fewer calls (9 and 10), all classes
+G=9: classes 1300 complete; TOTAL pis 1300 leaves 0
+G=10: classes 1300 complete; TOTAL pis 1300 leaves 0
+ALL_DONE
+exit 0

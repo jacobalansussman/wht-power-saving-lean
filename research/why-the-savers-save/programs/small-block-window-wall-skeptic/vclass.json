@@ -1,0 +1,74 @@
+[
+ {
+  "design": "D4",
+  "n": 12,
+  "Z": 12,
+  "how": "exact",
+  "floor_per_port": 1.0,
+  "hub_t_k1": 8
+ },
+ {
+  "design": "A3",
+  "n": 6,
+  "Z": 6,
+  "how": "exact",
+  "floor_per_port": 1.0,
+  "hub_t_k1": 6
+ },
+ {
+  "design": "D5",
+  "n": 20,
+  "Z": 12,
+  "how": "exact",
+  "floor_per_port": 0.6,
+  "hub_t_k1": 20
+ },
+ {
+  "design": "A4",
+  "n": 10,
+  "Z": 6,
+  "how": "exact",
+  "floor_per_port": 0.6,
+  "hub_t_k1": 16
+ },
+ {
+  "design": "A5",
+  "n": 15,
+  "Z": 6,
+  "how": "exact",
+  "floor_per_port": 0.4,
+  "hub_t_k1": 20
+ },
+ {
+  "design": "D6",
+  "n": 30,
+  "Z": 12,
+  "how": "greedy (lower bound on the best Z)",
+  "floor_per_port": 0.4,
+  "hub_t_k1": 24
+ },
+ {
+  "design": "E7",
+  "n": 63,
+  "Z": 12,
+  "how": "greedy (lower bound on the best Z)",
+  "floor_per_port": 0.19047619047619047,
+  "hub_t_k1": 42
+ },
+ {
+  "design": "P112",
+  "n": 112,
+  "Z": 14,
+  "how": "greedy (lower bound on the best Z)",
+  "floor_per_port": 0.125,
+  "hub_t_k1": 64
+ },
+ {
+  "design": "E8",
+  "n": 120,
+  "Z": 14,
+  "how": "greedy (lower bound on the best Z)",
+  "floor_per_port": 0.11666666666666667,
+  "hub_t_k1": 64
+ }
+]

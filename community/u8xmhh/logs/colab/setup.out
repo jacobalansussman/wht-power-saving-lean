@@ -1,0 +1,79 @@
+SETUP START Tue Oct 13 21:50:55 UTC 2026
+k-build B pipeline ended: KB-RUN END Tue Oct 13 21:59:59 UTC 2026 EXIT 0  Tue Oct 13 22:00:15 UTC 2026
+compare-neg rc=1 (must be nonzero)
+=== kb-U8XM-pos END rc=0 wall=1172s Tue Oct 13 21:57:11 UTC 2026
+nanoda kernel accepts the solution
+Lean default kernel accepts the solution
+Your solution is okay!
+=== kb-U8XM-neg END rc=1 wall=160s Tue Oct 13 21:59:59 UTC 2026
+copy done in 121s; 11G
+my copy's .lake chowned to root
+HEAD 52394849c7ecf3412d39b925d75fc7fdb98994d8; tracked changes:  M lean/complex588/lakefile.lean 
+mathlib before: d13f23b723b8a846827a245b89c10fc7d3f11612 ; manifest: 
+Cli
+LeanSearchClient
+Qq
+aesop
+batteries
+importGraph
+mathlib
+plausible
+proofwidgets
+lake --no-build U8XM rc=0 : All targets up-to-date (9303 jobs).
+mathlib after: d13f23b723b8a846827a245b89c10fc7d3f11612 ; packages: Cli LeanSearchClient Qq aesop batteries importGraph mathlib plausible proofwidgets 
+U8XM overlay files checked against k-combine's SHA256SUMS: 96, all identical
+k-combine package tarball: b18723496d576892e0bf907cc1f5a9d05335ac40ced9bb34b4199a49e6f3b5f9 (Mac: b18723496d576892e0bf907cc1f5a9d05335ac40ced9bb34b4199a49e6f3b5f9)
+/content/work/fs-build/in/xhost-src.tgz: OK
+/content/work/fs-build/in/u8xmhh-src.tgz: OK
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+U8XMHH-SOURCES-OK (22 files)
+XHOST-SOURCES-OK (= h-L3-build's)
+ M lean/complex588/lakefile.lean
+?? lean/complex588/Work/FourierU8XM/
+?? lean/complex588/Work/FourierU8XMHH/
+?? lean/complex588/Work/FourierU8XMHHNeg/
+?? lean/complex588/Work/FourierU8XMNeg/
+untracked entries: 70
+SETUP END Tue Oct 13 22:04:52 UTC 2026
+EXIT 0

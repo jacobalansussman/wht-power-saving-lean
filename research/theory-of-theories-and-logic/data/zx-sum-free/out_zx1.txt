@@ -1,0 +1,114 @@
+m W f n | case | d_before | pass: HAD sqrtX d_after tensor_ok
+2 1 1  2 | plain | d=  2 (mWf=  2) | basic: H=  2 sX=  0 d=  2 T full: H=  2 sX=  0 d=  2 T teleport: H=  2 sX=  0 d=  2 T
+2 1 1  2 | scr0  | d=  2 (mWf=  2) | basic: H=  2 sX=  0 d=  2 T full: H=  2 sX=  0 d=  2 T teleport: H=  2 sX=  0 d=  2 T
+2 1 1  2 | scr1  | d=  2 (mWf=  2) | basic: H=  2 sX=  0 d=  2 T full: H=  2 sX=  0 d=  2 T teleport: H=  2 sX=  0 d=  2 T
+2 1 1  2 | scr2  | d=  2 (mWf=  2) | basic: H=  2 sX=  0 d=  2 T full: H=  2 sX=  0 d=  2 T teleport: H=  2 sX=  0 d=  2 T
+2 1 2  4 | plain | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  4 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+2 1 2  4 | scr0  | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  6 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+2 1 2  4 | scr1  | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  4 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+2 1 2  4 | scr2  | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  4 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+2 1 3  6 | plain | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+2 1 3  6 | scr0  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+2 1 3  6 | scr1  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  7 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+2 1 3  6 | scr2  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+2 2 1  4 | plain | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  4 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+2 2 1  4 | scr0  | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  6 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+2 2 1  4 | scr1  | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  4 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+2 2 1  4 | scr2  | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  5 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+2 2 2  8 | plain | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H=  8 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+2 2 2  8 | scr0  | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H= 11 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+2 2 2  8 | scr1  | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H= 12 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+2 2 2  8 | scr2  | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H=  8 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+2 2 3 12 | plain | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 12 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+2 2 3 12 | scr0  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 14 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+2 2 3 12 | scr1  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 13 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+2 2 3 12 | scr2  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 14 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+2 3 1  6 | plain | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+2 3 1  6 | scr0  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  7 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+2 3 1  6 | scr1  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+2 3 1  6 | scr2  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  8 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+2 3 2 12 | plain | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 12 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+2 3 2 12 | scr0  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 13 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+2 3 2 12 | scr1  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 14 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+2 3 2 12 | scr2  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 14 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+2 3 3 18 | plain | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 18 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+2 3 3 18 | scr0  | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 23 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+2 3 3 18 | scr1  | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 23 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+2 3 3 18 | scr2  | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 24 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+3 1 1  3 | plain | d=  3 (mWf=  3) | basic: H=  3 sX=  0 d=  3 T full: H=  3 sX=  0 d=  3 T teleport: H=  3 sX=  0 d=  3 T
+3 1 1  3 | scr0  | d=  3 (mWf=  3) | basic: H=  3 sX=  0 d=  3 T full: H=  3 sX=  0 d=  3 T teleport: H=  3 sX=  0 d=  3 T
+3 1 1  3 | scr1  | d=  3 (mWf=  3) | basic: H=  3 sX=  0 d=  3 T full: H=  3 sX=  0 d=  3 T teleport: H=  3 sX=  0 d=  3 T
+3 1 1  3 | scr2  | d=  3 (mWf=  3) | basic: H=  3 sX=  0 d=  3 T full: H=  3 sX=  0 d=  3 T teleport: H=  3 sX=  0 d=  3 T
+3 1 2  6 | plain | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+3 1 2  6 | scr0  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+3 1 2  6 | scr1  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+3 1 2  6 | scr2  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  8 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+3 1 3  9 | plain | d=  9 (mWf=  9) | basic: H=  9 sX=  0 d=  9 T full: H=  9 sX=  0 d=  9 T teleport: H=  9 sX=  0 d=  9 T
+3 1 3  9 | scr0  | d=  9 (mWf=  9) | basic: H=  9 sX=  0 d=  9 T full: H= 11 sX=  0 d=  9 T teleport: H=  9 sX=  0 d=  9 T
+3 1 3  9 | scr1  | d=  9 (mWf=  9) | basic: H=  9 sX=  0 d=  9 T full: H= 15 sX=  0 d=  9 T teleport: H=  9 sX=  0 d=  9 T
+3 1 3  9 | scr2  | d=  9 (mWf=  9) | basic: H=  9 sX=  0 d=  9 T full: H= 10 sX=  0 d=  9 T teleport: H=  9 sX=  0 d=  9 T
+3 2 1  6 | plain | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+3 2 1  6 | scr0  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H= 11 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+3 2 1  6 | scr1  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+3 2 1  6 | scr2  | d=  6 (mWf=  6) | basic: H=  6 sX=  0 d=  6 T full: H=  6 sX=  0 d=  6 T teleport: H=  6 sX=  0 d=  6 T
+3 2 2 12 | plain | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 12 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+3 2 2 12 | scr0  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 13 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+3 2 2 12 | scr1  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 13 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+3 2 2 12 | scr2  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 15 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+3 2 3 18 | plain | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 18 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+3 2 3 18 | scr0  | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 26 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+3 2 3 18 | scr1  | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 22 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+3 2 3 18 | scr2  | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 25 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+3 3 1  9 | plain | d=  9 (mWf=  9) | basic: H=  9 sX=  0 d=  9 T full: H=  9 sX=  0 d=  9 T teleport: H=  9 sX=  0 d=  9 T
+3 3 1  9 | scr0  | d=  9 (mWf=  9) | basic: H=  9 sX=  0 d=  9 T full: H= 11 sX=  0 d=  9 T teleport: H=  9 sX=  0 d=  9 T
+3 3 1  9 | scr1  | d=  9 (mWf=  9) | basic: H=  9 sX=  0 d=  9 T full: H= 10 sX=  0 d=  9 T teleport: H=  9 sX=  0 d=  9 T
+3 3 1  9 | scr2  | d=  9 (mWf=  9) | basic: H=  9 sX=  0 d=  9 T full: H= 11 sX=  0 d=  9 T teleport: H=  9 sX=  0 d=  9 T
+3 3 2 18 | plain | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 18 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+3 3 2 18 | scr0  | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 19 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+3 3 2 18 | scr1  | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 19 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+3 3 2 18 | scr2  | d= 18 (mWf= 18) | basic: H= 18 sX=  0 d= 18  full: H= 23 sX=  0 d= 18  teleport: H= 18 sX=  0 d= 18 
+3 3 3 27 | plain | d= 27 (mWf= 27) | basic: H= 27 sX=  0 d= 27  full: H= 27 sX=  0 d= 27  teleport: H= 27 sX=  0 d= 27 
+3 3 3 27 | scr0  | d= 27 (mWf= 27) | basic: H= 27 sX=  0 d= 27  full: H= 36 sX=  0 d= 27  teleport: H= 27 sX=  0 d= 27 
+3 3 3 27 | scr1  | d= 27 (mWf= 27) | basic: H= 27 sX=  0 d= 27  full: H= 41 sX=  0 d= 27  teleport: H= 27 sX=  0 d= 27 
+3 3 3 27 | scr2  | d= 27 (mWf= 27) | basic: H= 27 sX=  0 d= 27  full: H= 36 sX=  0 d= 27  teleport: H= 27 sX=  0 d= 27 
+4 1 1  4 | plain | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  4 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+4 1 1  4 | scr0  | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  5 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+4 1 1  4 | scr1  | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  6 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+4 1 1  4 | scr2  | d=  4 (mWf=  4) | basic: H=  4 sX=  0 d=  4 T full: H=  6 sX=  0 d=  4 T teleport: H=  4 sX=  0 d=  4 T
+4 1 2  8 | plain | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H=  8 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+4 1 2  8 | scr0  | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H= 10 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+4 1 2  8 | scr1  | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H=  8 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+4 1 2  8 | scr2  | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H=  8 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+4 1 3 12 | plain | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 12 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+4 1 3 12 | scr0  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 13 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+4 1 3 12 | scr1  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 14 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+4 1 3 12 | scr2  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 17 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+4 2 1  8 | plain | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H=  8 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+4 2 1  8 | scr0  | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H= 14 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+4 2 1  8 | scr1  | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H=  8 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+4 2 1  8 | scr2  | d=  8 (mWf=  8) | basic: H=  8 sX=  0 d=  8 T full: H= 10 sX=  0 d=  8 T teleport: H=  8 sX=  0 d=  8 T
+4 2 2 16 | plain | d= 16 (mWf= 16) | basic: H= 16 sX=  0 d= 16  full: H= 16 sX=  0 d= 16  teleport: H= 16 sX=  0 d= 16 
+4 2 2 16 | scr0  | d= 16 (mWf= 16) | basic: H= 16 sX=  0 d= 16  full: H= 17 sX=  0 d= 16  teleport: H= 16 sX=  0 d= 16 
+4 2 2 16 | scr1  | d= 16 (mWf= 16) | basic: H= 16 sX=  0 d= 16  full: H= 20 sX=  0 d= 16  teleport: H= 16 sX=  0 d= 16 
+4 2 2 16 | scr2  | d= 16 (mWf= 16) | basic: H= 16 sX=  0 d= 16  full: H= 20 sX=  0 d= 16  teleport: H= 16 sX=  0 d= 16 
+4 2 3 24 | plain | d= 24 (mWf= 24) | basic: H= 24 sX=  0 d= 24  full: H= 24 sX=  0 d= 24  teleport: H= 24 sX=  0 d= 24 
+4 2 3 24 | scr0  | d= 24 (mWf= 24) | basic: H= 24 sX=  0 d= 24  full: H= 37 sX=  0 d= 24  teleport: H= 24 sX=  0 d= 24 
+4 2 3 24 | scr1  | d= 24 (mWf= 24) | basic: H= 24 sX=  0 d= 24  full: H= 32 sX=  0 d= 24  teleport: H= 24 sX=  0 d= 24 
+4 2 3 24 | scr2  | d= 24 (mWf= 24) | basic: H= 24 sX=  0 d= 24  full: H= 35 sX=  0 d= 24  teleport: H= 24 sX=  0 d= 24 
+4 3 1 12 | plain | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 12 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+4 3 1 12 | scr0  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 12 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+4 3 1 12 | scr1  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 16 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+4 3 1 12 | scr2  | d= 12 (mWf= 12) | basic: H= 12 sX=  0 d= 12  full: H= 14 sX=  0 d= 12  teleport: H= 12 sX=  0 d= 12 
+4 3 2 24 | plain | d= 24 (mWf= 24) | basic: H= 24 sX=  0 d= 24  full: H= 24 sX=  0 d= 24  teleport: H= 24 sX=  0 d= 24 
+4 3 2 24 | scr0  | d= 24 (mWf= 24) | basic: H= 24 sX=  0 d= 24  full: H= 33 sX=  0 d= 24  teleport: H= 24 sX=  0 d= 24 
+4 3 2 24 | scr1  | d= 24 (mWf= 24) | basic: H= 24 sX=  0 d= 24  full: H= 28 sX=  0 d= 24  teleport: H= 24 sX=  0 d= 24 
+4 3 2 24 | scr2  | d= 24 (mWf= 24) | basic: H= 24 sX=  0 d= 24  full: H= 31 sX=  0 d= 24  teleport: H= 24 sX=  0 d= 24 
+4 3 3 36 | plain | d= 36 (mWf= 36) | basic: H= 36 sX=  0 d= 36  full: H= 36 sX=  0 d= 36  teleport: H= 36 sX=  0 d= 36 
+4 3 3 36 | scr0  | d= 36 (mWf= 36) | basic: H= 36 sX=  0 d= 36  full: H= 40 sX=  0 d= 36  teleport: H= 36 sX=  0 d= 36 
+4 3 3 36 | scr1  | d= 36 (mWf= 36) | basic: H= 36 sX=  0 d= 36  full: H= 44 sX=  0 d= 36  teleport: H= 36 sX=  0 d= 36 
+4 3 3 36 | scr2  | d= 36 (mWf= 36) | basic: H= 36 sX=  0 d= 36  full: H= 42 sX=  0 d= 36  teleport: H= 36 sX=  0 d= 36 
+
+SUMMARY: rows 324; invariant d != mWf or changed: 0; (HAD + sqrtX) < mWf: 0; tensor mismatches: 0
+  basic    scrambled: (HAD+sqrtX)/mWf min 1.000 median 1.000 max 1.000 | plain: min 1.000 max 1.000
+  full     scrambled: (HAD+sqrtX)/mWf min 1.000 median 1.167 max 1.833 | plain: min 1.000 max 1.000
+  teleport scrambled: (HAD+sqrtX)/mWf min 1.000 median 1.000 max 1.000 | plain: min 1.000 max 1.000

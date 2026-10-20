@@ -1,0 +1,13 @@
+shift 0: leak 0
+shift 1: leak 0
+shift 2: leak 0
+shift 3: leak 0
+shift 4: leak 0
+shift 5: leak 0
+shift 6: leak 0
+shift 7: leak 0
+caps per direction: {1: 8, 2: 8, 3: 8, 4: 8, 5: 8, 6: 8, 7: 8}
+unordered bases: 28; demands histogram: {24: 28}
+orderings of (1, 3, 5): [24, 24, 24, 24, 24, 24]
+address maps keeping N: 6; leak histogram over 168 maps: {0: 6, 8: 54, 16: 90, 24: 18}
+rank-2 block caps histogram: {16: 21}

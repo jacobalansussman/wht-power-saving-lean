@@ -1,0 +1,13 @@
+(1) cycle lemma: filter phi = sum a_j w^j, junk w*phi must equal c*phi
+  n = 2: 2 solutions, all of the form a_j = c^-j with c^n = 1: True; K block singular (rank 1) for all: True
+  n = 3: 3 solutions, all of the form a_j = c^-j with c^n = 1: True; K block singular (rank 1) for all: True
+  n = 4: 4 solutions, all of the form a_j = c^-j with c^n = 1: True; K block singular (rank 1) for all: True
+  n = 5: 5 solutions, all of the form a_j = c^-j with c^n = 1: True; K block singular (rank 1) for all: True
+  n = 6: 6 solutions, all of the form a_j = c^-j with c^n = 1: True; K block singular (rank 1) for all: True
+(2) sigma separation: is 1 + s invertible in C[Z_n], and the inverse
+  n = 2: 1 + s singular (det 0)
+  n = 3: det(1 + s) = 2; (1 - s + ... + s^(n-1))/2 is the inverse: True
+  n = 4: 1 + s singular (det 0)
+  n = 5: det(1 + s) = 2; (1 - s + ... + s^(n-1))/2 is the inverse: True
+  n = 6: 1 + s singular (det 0)
+  n = 7: det(1 + s) = 2; (1 - s + ... + s^(n-1))/2 is the inverse: True

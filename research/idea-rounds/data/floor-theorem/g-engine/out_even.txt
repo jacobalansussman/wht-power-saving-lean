@@ -1,0 +1,7 @@
+dim Y = 64 of 256
+  block rank 1, direction e1: dim(Y + g^4 Y) - dim Y = 32; predicted 32
+  block rank 1, direction e1+e2: dim(Y + g^4 Y) - dim Y = 32; predicted 32
+  kernel (rank 2): dim(Y + g^4 Y) - dim Y = 48; predicted 48
+  all 17 free letters of block size 2 keep Y: True
+  CONTROL: a non-affine address permutation (swap addresses 0 and 1 only) keeps Y: True (expected False)
+  CONTROL: dir(e1) keeps Y: False (expected False)

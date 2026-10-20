@@ -1,0 +1,58 @@
+1 {'Phi0=I': True, 'Phi_full=C^m': True, 'Phi_u^2=R_u and Phi_uperp Phi_u^-1 = C^m R_u (all odd u with orthonormal complement)': True, 'basis independent': True, 'Phi_{U+V} = Phi_U Phi_V, U perp V': False}
+2 {'Phi0=I': True, 'Phi_full=C^m': True, 'Phi_u^2=R_u and Phi_uperp Phi_u^-1 = C^m R_u (all odd u with orthonormal complement)': True, 'basis independent': True, 'Phi_{U+V} = Phi_U Phi_V, U perp V': True}
+3 {'Phi0=I': True, 'Phi_full=C^m': True, 'Phi_u^2=R_u and Phi_uperp Phi_u^-1 = C^m R_u (all odd u with orthonormal complement)': True, 'basis independent': True, 'Phi_{U+V} = Phi_U Phi_V, U perp V': True}
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:39: RuntimeWarning: divide by zero encountered in matmul
+  M = M @ (Jm @ np.diag(d) @ Jm)
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:39: RuntimeWarning: overflow encountered in matmul
+  M = M @ (Jm @ np.diag(d) @ Jm)
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:39: RuntimeWarning: invalid value encountered in matmul
+  M = M @ (Jm @ np.diag(d) @ Jm)
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:65: RuntimeWarning: divide by zero encountered in matmul
+  res.append(np.allclose(A @ A, R(u, m)) and np.allclose(Phi(P, m, Jm) @ np.linalg.inv(A), Cm(m) @ R(u, m)))
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:65: RuntimeWarning: overflow encountered in matmul
+  res.append(np.allclose(A @ A, R(u, m)) and np.allclose(Phi(P, m, Jm) @ np.linalg.inv(A), Cm(m) @ R(u, m)))
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:65: RuntimeWarning: invalid value encountered in matmul
+  res.append(np.allclose(A @ A, R(u, m)) and np.allclose(Phi(P, m, Jm) @ np.linalg.inv(A), Cm(m) @ R(u, m)))
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:80: RuntimeWarning: divide by zero encountered in matmul
+  mu.append(np.allclose(Phi(S, m, Jm), Phi(U, m, Jm) @ Phi(V, m, Jm)))
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:80: RuntimeWarning: overflow encountered in matmul
+  mu.append(np.allclose(Phi(S, m, Jm), Phi(U, m, Jm) @ Phi(V, m, Jm)))
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:80: RuntimeWarning: invalid value encountered in matmul
+  mu.append(np.allclose(Phi(S, m, Jm), Phi(U, m, Jm) @ Phi(V, m, Jm)))
+4 {'Phi0=I': True, 'Phi_full=C^m': True, 'Phi_u^2=R_u and Phi_uperp Phi_u^-1 = C^m R_u (all odd u with orthonormal complement)': True, 'basis independent': True, 'Phi_{U+V} = Phi_U Phi_V, U perp V': True}
+lone pair 3 {'paid': 6, 'two_m': 6, 'Y_ok': True, 'X_ok': True}
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:144: RuntimeWarning: divide by zero encountered in matmul
+  Y_ok=np.allclose(N.phys['Y'], -(Cm(m) @ R(u, m) @ x)), X_ok=np.allclose(N.phys['X'], Cm(m) @ y))
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:144: RuntimeWarning: overflow encountered in matmul
+  Y_ok=np.allclose(N.phys['Y'], -(Cm(m) @ R(u, m) @ x)), X_ok=np.allclose(N.phys['X'], Cm(m) @ y))
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:144: RuntimeWarning: invalid value encountered in matmul
+  Y_ok=np.allclose(N.phys['Y'], -(Cm(m) @ R(u, m) @ x)), X_ok=np.allclose(N.phys['X'], Cm(m) @ y))
+lone pair 4 {'paid': 8, 'two_m': 8, 'Y_ok': True, 'X_ok': True}
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:95: RuntimeWarning: divide by zero encountered in matmul
+  s.phys[name] = s.ph(T) @ np.linalg.solve(s.ph(S), s.phys[name])
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:95: RuntimeWarning: overflow encountered in matmul
+  s.phys[name] = s.ph(T) @ np.linalg.solve(s.ph(S), s.phys[name])
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:95: RuntimeWarning: invalid value encountered in matmul
+  s.phys[name] = s.ph(T) @ np.linalg.solve(s.ph(S), s.phys[name])
+lone pair 5 {'paid': 10, 'two_m': 10, 'Y_ok': True, 'X_ok': True}
+two pair 3 {'Ya frame holds partner label u_b': True, 'Ya = C^m R_ua x_a + Phi(ua^perp) y_a exactly': True, 'Yb = C^m R_ub x_b + Phi(ub^perp) y_b exactly': True, 'Xa = C^m Phi_ua^-1 x_a (unchanged data, full frame)': True, 'scratch Z, Ka, Kb zero': True, 'paid': 17, 'descended levels': 2}
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:128: RuntimeWarning: divide by zero encountered in matmul
+  ok['Ya = C^m R_ua x_a + Phi(ua^perp) y_a exactly'] = np.allclose(N.phys['Ya'], Cmm @ R(ua, m) @ xa + N.ph(perp(A, m)) @ ya)
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:128: RuntimeWarning: overflow encountered in matmul
+  ok['Ya = C^m R_ua x_a + Phi(ua^perp) y_a exactly'] = np.allclose(N.phys['Ya'], Cmm @ R(ua, m) @ xa + N.ph(perp(A, m)) @ ya)
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:128: RuntimeWarning: invalid value encountered in matmul
+  ok['Ya = C^m R_ua x_a + Phi(ua^perp) y_a exactly'] = np.allclose(N.phys['Ya'], Cmm @ R(ua, m) @ xa + N.ph(perp(A, m)) @ ya)
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:129: RuntimeWarning: divide by zero encountered in matmul
+  ok['Yb = C^m R_ub x_b + Phi(ub^perp) y_b exactly'] = np.allclose(N.phys['Yb'], Cmm @ R(ub, m) @ xb + N.ph(perp(B, m)) @ yb)
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:129: RuntimeWarning: overflow encountered in matmul
+  ok['Yb = C^m R_ub x_b + Phi(ub^perp) y_b exactly'] = np.allclose(N.phys['Yb'], Cmm @ R(ub, m) @ xb + N.ph(perp(B, m)) @ yb)
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:129: RuntimeWarning: invalid value encountered in matmul
+  ok['Yb = C^m R_ub x_b + Phi(ub^perp) y_b exactly'] = np.allclose(N.phys['Yb'], Cmm @ R(ub, m) @ xb + N.ph(perp(B, m)) @ yb)
+two pair 4 {'Ya frame holds partner label u_b': True, 'Ya = C^m R_ua x_a + Phi(ua^perp) y_a exactly': True, 'Yb = C^m R_ub x_b + Phi(ub^perp) y_b exactly': True, 'Xa = C^m Phi_ua^-1 x_a (unchanged data, full frame)': True, 'scratch Z, Ka, Kb zero': True, 'paid': 21, 'descended levels': 2}
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:130: RuntimeWarning: divide by zero encountered in matmul
+  ok['Xa = C^m Phi_ua^-1 x_a (unchanged data, full frame)'] = np.allclose(N.phys['Xa'], Cmm @ np.linalg.solve(N.ph(A), xa))
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:130: RuntimeWarning: overflow encountered in matmul
+  ok['Xa = C^m Phi_ua^-1 x_a (unchanged data, full frame)'] = np.allclose(N.phys['Xa'], Cmm @ np.linalg.solve(N.ph(A), xa))
+checks/wht43/anatomy/v-an2-smallnet/calc/vraw.py:130: RuntimeWarning: invalid value encountered in matmul
+  ok['Xa = C^m Phi_ua^-1 x_a (unchanged data, full frame)'] = np.allclose(N.phys['Xa'], Cmm @ np.linalg.solve(N.ph(A), xa))
+two pair 5 {'Ya frame holds partner label u_b': True, 'Ya = C^m R_ua x_a + Phi(ua^perp) y_a exactly': True, 'Yb = C^m R_ub x_b + Phi(ub^perp) y_b exactly': True, 'Xa = C^m Phi_ua^-1 x_a (unchanged data, full frame)': True, 'scratch Z, Ka, Kb zero': True, 'paid': 25, 'descended levels': 2}

@@ -1,0 +1,45 @@
+start Wed Oct 14 12:36:20 UTC 2026
+verifier clone at c92b9b6; tracked changes: 0
+closure modules: 350; import lines rewritten: 568; bound 2466337/2000000000
+CONTROL PASS: packaging of Shea's C588 identical to nmamano's submission (350 files)
+CONTROL PASS: adapter body identical
+closure modules: 404; import lines rewritten: 692; bound 16256629/10000000000
+staged lean files: 405; bytes: 4338999; largest: 430409 /content/work/fsp-build/bos-Q/stage/Submission/Work/GCert/Data/Gen/U8X0/S0.lean
+profile challenge: challenges/dft/UniformFourier233.lean  expected sha256 3a646acd3ac9cf6ff93e29cc363dbfea0c8953a2e1415f7965bd86e8b2ee62a3
+/content/work/fsp-build/bos-verifier/challenges/dft/UniformFourier233.lean: OK
+challenge bound 16256629 10000000000
+3daf6ddc1a6c70ff0f742313701d501c992aabe121d76fa1daf5686228642ee2  /content/work/fsp-build/bos-Q/stage/VerifierChallenge.lean
+7.7G	/content/work/fsp-build/bos-Q/stage/.lake/packages
+PREP DONE
+threads for the solution build (lake adapter): 1
+=== lean START Wed Oct 14 12:39:00 UTC 2026 epoch=1791981540 olean files: 0
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/fsp-build/bos-Q/control/bin:$PATH; export PATH; exec comparator /content/work/fsp-build/bos-Q/control/lean.json'
+=== lean END rc=0 wall=4659s Wed Oct 14 13:56:39 UTC 2026 maxrss_kb=9062292
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, Race.bound, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Submission
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 406
+=== audit START Wed Oct 14 13:56:51 UTC 2026 epoch=1791986211 olean files: 406
+cmd: exec lake env lean VerifierAudit.lean
+=== audit END rc=0 wall=14s Wed Oct 14 13:57:05 UTC 2026 maxrss_kb=7034592
+'Race.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+olean files after: 406
+/content/work/fsp-build/bos-Q/stage/.lake/build/lib/lean/VerifierChallenge.ilean
+/content/work/fsp-build/bos-Q/stage/.lake/build/lib/lean/VerifierChallenge.olean
+/content/work/fsp-build/bos-Q/stage/.lake/build/lib/lean/VerifierChallenge.ilean.hash
+/content/work/fsp-build/bos-Q/stage/.lake/build/lib/lean/VerifierChallenge.trace
+/content/work/fsp-build/bos-Q/stage/.lake/build/lib/lean/VerifierChallenge.olean.hash
+/content/work/fsp-build/bos-Q/stage/.lake/build/ir/VerifierChallenge.setup.json
+/content/work/fsp-build/bos-Q/stage/.lake/build/ir/VerifierChallenge.c
+/content/work/fsp-build/bos-Q/stage/.lake/build/ir/VerifierChallenge.c.hash
+=== nanoda START Wed Oct 14 13:57:17 UTC 2026 epoch=1791986237 olean files: 405
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/fsp-build/bos-Q/control/bin:$PATH; export PATH; exec comparator /content/work/fsp-build/bos-Q/control/nanoda.json'
+=== nanoda END rc=0 wall=993s Wed Oct 14 14:13:50 UTC 2026 maxrss_kb=7031576
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 406
+BOS RUN END Wed Oct 14 14:13:50 UTC 2026
+EXIT 0

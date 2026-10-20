@@ -1,0 +1,26 @@
+{
+  "agent": "v-fs-rebuild (skeptic)",
+  "date": "2026-10-14 UTC (13 Oct EDT)",
+  "claim": "GXD.U8XMHH, DFT of every length at 1 - 16197705/10^10 (saving 1.6197705e-3), Lean-checked",
+  "refuted": false,
+  "where": "Colab #1 (not fs-build's Colab #2), own tree /content/work/v-fs-rebuild/T = cp -a of k-combine's ORIGINAL U8XM tree /content/work/k-combine/lean/complex588 (not k-build's Colab #2 rebuild); .lake chowned to root in my copy only; source tree untouched (still 65534)",
+  "inputs": {
+    "u8xmhh-src.tgz": "80e197279e4c748b01ba0103aee213e76279132228ec81269b072fa1f517ef1b (22 files, own SHA256SUMS OK; identical to fs-price/lean on the Mac)",
+    "xhost-src.tgz": "48d9aaf1cd0763c932524a0243ca91607f61af33957df5f2ef5debb64bf43a4b (12 files = xhost.sha256 = h-L3-build Mac sources = hl3 tree on Colab #1)",
+    "U8XM overlay": "96 files identical to k-combine's package SHA256SUMS; lake --no-build U8XM: All targets up-to-date (9301 jobs); mathlib d13f23b"
+  },
+  "build": "32 new modules (12 XHost network + 4 XHost data/glue + 16 Fourier chain/challenges), built from scratch (0 oleans before), one module per Lake call in topological order, LEAN_NUM_THREADS=1, 01:07-01:34 UTC, all rc 0; host table hs_ok (decide +kernel) 195 s, peak 8.8 GB; no-build afterwards: All targets up-to-date (9333 jobs)",
+  "sorry": "only the 4 'declaration uses `sorry`' warnings of the two challenge files (lines 326/330); source grep: no sorry/admit/axiom/native_decide/implemented_by/extern/unsafe/macro elsewhere",
+  "axioms": "transform_mainU8XMHH, convolution_mainU8XMHH, hillsU8XMHH_program: [propext, Classical.choice, Quot.sound]; hs_ok: [propext]",
+  "challenge": "diff against OpenAI UniformFourier.lean fd4aeeb (sha256 4c571f27...): only decimalExponent -> 1 - 16197705/10^10 and the U8XMHH renames of decimalTime/TimeBounds/DFTGoal/ConvGoal/transform_main/convolution_main; Neg differs only in 16197706",
+  "compare_pos": "RESULT: PASS (rc 0, 292 s, 16.0 GB); proof closures 43014 / 43037 constants (same as fs-build); axioms Classical.choice, Quot.sound, propext",
+  "compare_neg_16197706": "RESULT: FAIL (rc 1): decimalExponentU8XMHH definition body differs",
+  "usage_closure": {
+    "tool": "colab/Uses.lean: Compare.lean's walk with proofs, grouped by defining module; closure size equals Compare's (43014)",
+    "Work.XHost": 1154, "Work.KMX": 153, "Work.XMut": 132, "Work.KLow": 78, "Work.GCert": 1014, "Work.FourierU8XMHH": 253,
+    "reached": "XHost.engine_of_ginv_host, HostSched.ofTab_fitsR, hostSchedK, GXD.U8XMHH.{hs_ok,hsched,hfits,hprice,hwidth}, GXD.U8XM.ginv, GXD.ginvXOfZ, GXD.exit_of_zchecksZ, GXD.U8XM.scalOKZ, GXD.U8XM.validX, fold_U8XMHHx, blocksU8XMHHx, BridgeRate.U8XMHH.unit_cost_x, SeamU8XMHH.engine_U8XMHHx, RAM.hillsU8XMHH_program",
+    "not_reached": "BlockAccounting.fold_U8XMx (the old U8XM rate fact; the Seam docstring that names it is stale, code is not); no constant of Work.FourierU8XM or Work.FourierC588*; module Work.XMut.Labels contributes 0 constants (the other 6 XMut modules do)"
+  },
+  "not_done_by_me": "official comparator / nanoda / bigospeedrun re-creation not rerun (fs-build's); no lean4checker replay of the oleans; same Lean toolchain v4.34.1 and same Mathlib build as fs-build",
+  "colab_state": "Colab #1: tree /content/work/v-fs-rebuild/T (11 GB, .lake root-owned, root lake is safe there); logs /content/work/logs/v-fs-rebuild; remove with rm -rf /content/work/v-fs-rebuild/T"
+}

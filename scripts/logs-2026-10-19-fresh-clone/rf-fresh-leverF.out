@@ -1,0 +1,61 @@
+START Tue Oct 20 03:40:37 AM UTC 2026 package=leverF
+93e0def r7 test commit F: package/leverF added (scratch, never pushed)
+6fea2aa Fifth revision: the recursion lever, saving 1.7581520e-3, proved in Lean; the sixth result and the research since 10 October
+tree 7af1a0e76d687b67abde7973c6a2a5889094197a
+0
+base copy 166s HEAD 52394849c7ecf3412d39b925d75fc7fdb98994d8 status lines 0
+=== apply-overlay
+== leverF requires u8x0hq: applying package/u8x0hq first
+applied 259 lines to /content/work/r-finalize/shea-leverF/lean/complex588; git status lines: 258
+applied 414 lines to /content/work/r-finalize/shea-leverF/lean/complex588; git status lines: 670
+apply rc=0
+=== lake build of all modules at once (VERIFY 12.3)
+bulk build rc=0 2886s; Build completed successfully (9633 jobs).
+	Maximum resident set size (kbytes): 9579136
+=== build-and-check.sh package/leverF
+build-and-check rc=0 1823s
+PASS compare: RESULT: PASS
+PASS compare-negative: fails (rc != 0)
+PASS compare-negative: the exponent definition differs (decimalExponentL3945F)
+PASS axioms: no sorryAx
+PASS statement files: both identical to OpenAI's statement with only the exponent and names changed
+PASS Lean control heads-and-residuals-one-step-too-far compiles
+PASS Lean control rate-fact-one-grid-step-higher compiles
+PASS Lean control full-cut-profile-identity-negatives compiles
+PASS Lean control 80641-heads fails, as it must
+PASS Lean control the-published-fills-head-count fails, as it must
+PASS Lean control width-bound-6 fails, as it must
+PASS Lean control one-chunk-count-too-high fails, as it must
+PASS axioms: OAI.PowerSaving.transform_mainL3945F only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.convolution_mainL3945F only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.RAM.hillsL3945F_program only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.MX.L3945F.engine only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.MX.L3945F.EngineStmt.lift only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.SeamL3945F.engine_L3945F only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.RAM.envelope_program_geL3945F only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.SeamL3945F.alphaL3945F_lt_target only on propext, Classical.choice, Quot.sound
+PASS axioms: OAI.PowerSaving.Skies.alpha_thetaL3945F only on propext, Classical.choice, Quot.sound
+PASS source scan: lakefile.lean changed only by the lines of tree_change / lakefile_add (this package and those it requires)
+PASS source scan: no forbidden word outside comments and the challenges' sorry (0 hits)
+PASS source scan: no tracked file of the base tree changed
+ALL CHECKS PASSED
+=== build-and-check.sh package/u8x0hq skipped (SKIP_U8)
+configs from result.json: pos=comparator/fourier-l3945f.json neg=comparator/fourier-l3945f-neg.json
+=== run-comparator.sh neg
+comparator neg rc=1 (must be nonzero)
+uncaught exception: Const does not match between challenge and target 'OAI.PowerSaving.decimalExponentL3945F'
+=== run-comparator.sh pos
+comparator pos rc=0
+⚠ [9617/9630] Replayed Work.Mixed.SeamConst
+warning: Work/Mixed/SeamConst.lean:55:18: this tactic is never executed
+warning: Work/Mixed/SeamConst.lean:55:18: Unused tactic linter: `linarith` does nothing
+info: Work/Mixed/SeamConst.lean:89:0: 'OAI.PowerSaving.MX.dom_envelope_of_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:90:0: 'OAI.PowerSaving.MX.can_envelope_of_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:91:0: 'OAI.PowerSaving.MX.envelope_nat_real_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:92:0: 'OAI.PowerSaving.MX.can_envelope_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+nanoda kernel accepts the solution
+/content/work/logs/r-finalize/leverF/cmp/neg.time:	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:16.31
+/content/work/logs/r-finalize/leverF/cmp/neg.time:	Maximum resident set size (kbytes): 7045332
+/content/work/logs/r-finalize/leverF/cmp/pos.time:	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16:17
+/content/work/logs/r-finalize/leverF/cmp/pos.time:	Maximum resident set size (kbytes): 16089104
+RF-FRESH DONE Tue Oct 20 06:20:41 AM UTC 2026

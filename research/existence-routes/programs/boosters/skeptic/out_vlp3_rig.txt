@@ -1,0 +1,15 @@
+RIGOROUS only: register 6, ranks <= 4: 342 rows; booster-negative at 0/50
+RIGOROUS only: register 6, ranks <= 5: 342 rows; booster-negative at 50/50 (0.02..0.9983)
+RIGOROUS only: register 7, ranks <= 4: 478 rows; booster-negative at 0/50
+RIGOROUS only: register 7, ranks <= 5: 478 rows; booster-negative at 50/50 (0.02..0.9983)
+RIGOROUS only: register 8, ranks <= 4: 781 rows; booster-negative at 0/50
+RIGOROUS only: register 8, ranks <= 5: 781 rows; booster-negative at 50/50 (0.02..0.9983)
+RIGOROUS only: register 9, ranks <= 4: 144 rows; booster-negative at 0/50
+RIGOROUS only: register 9, ranks <= 5: 144 rows; booster-negative at 50/50 (0.02..0.9983)
+RIGOROUS only: register 10, ranks <= 4: 164 rows; booster-negative at 0/50
+RIGOROUS only: register 10, ranks <= 5: 164 rows; booster-negative at 50/50 (0.02..0.9983)
+RIGOROUS only: register 11, ranks <= 4: 143 rows; booster-negative at 0/50
+RIGOROUS only: register 11, ranks <= 5: 143 rows; booster-negative at 50/50 (0.02..0.9983)
+RIGOROUS only: register 12, ranks <= 4: 162 rows; booster-negative at 0/50
+RIGOROUS only: register 12, ranks <= 5: 162 rows; booster-negative at 50/50 (0.02..0.9983)
+$H python3 -B vlp3_rig.py  10.59s user 0.39s system 105% cpu 10.360 total

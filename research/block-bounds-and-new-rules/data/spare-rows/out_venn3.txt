@@ -1,0 +1,12 @@
+Tue Oct 13 20:29:21 EDT 2026
+m=4 k=4 f=5: dim W = 29120, dim N = 7280, block chi=0: N 455, out 1365
+  d1: rank on block chi=0 = 182; x16 = 2912  (columns 0s, rank 0s)
+  B3: rank on block chi=0 = 385; x16 = 6160  (columns 0s, rank 1s)
+cap formula 2912; dim N 7280; hook bound (dim H - dim N) 17472; ratio bound 2.5000
+m=4 k=6 f=7: dim W = 128128, dim N = 48048, block chi=0: N 3003, out 5005
+  d1: rank on block chi=0 = 1001; x16 = 16016  (columns 13s, rank 1s)
+  B3: rank on block chi=0 = 2379; x16 = 38064  (columns 14s, rank 112s)
+cap formula 16016; dim N 48048; hook bound (dim H - dim N) 68640; ratio bound 3.0000
+m=4 k=8 f=9: dim W = 205920, dim N = 102960, block chi=0: N 6435, out 6435
+MEMGUARD: KILLING heavy job (pid 56748): over its memory cap: footprint 3.04 GB > cap 3.00 GB (WHT42_MEM_CAP_GB=N raises it, at most 8). Command: ./run_venn3.sh
+exit 143

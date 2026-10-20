@@ -1,0 +1,24 @@
+cal_b3_2in5_s0.u: exact rows 22 raw rows 22 (distinct 22) max|coef| 1 -> IDENTICAL
+cal_b3_2in5_s2.u: exact rows 20 raw rows 20 (distinct 20) max|coef| 1 -> IDENTICAL
+cal_plain3_s0.u: exact rows 24 raw rows 24 (distinct 24) max|coef| 1 -> IDENTICAL
+cal_plain3_s1.u: exact rows 24 raw rows 24 (distinct 24) max|coef| 1 -> IDENTICAL
+cal_plain4F_s1.u: exact rows 20 raw rows 20 (distinct 20) max|coef| 1 -> IDENTICAL
+cal_plain4P_s2.u: exact rows 28 raw rows 28 (distinct 28) max|coef| 1 -> IDENTICAL
+f27_Fp2_m3_s11.u: exact rows 33 raw rows 33 (distinct 33) max|coef| 1 -> IDENTICAL
+f27_Fp2_m3_s13.u: exact rows 57 raw rows 57 (distinct 57) max|coef| 1 -> IDENTICAL
+f27_Fp2_m3_s39.u: exact rows 51 raw rows 51 (distinct 51) max|coef| 1 -> IDENTICAL
+g27_Fany4_s12.u: exact rows 90 raw rows 90 (distinct 90) max|coef| 1 -> IDENTICAL
+g27_Fany4_s14.u: exact rows 60 raw rows 60 (distinct 60) max|coef| 1 -> IDENTICAL
+g27_Fany4_s17.u: exact rows 30 raw rows 30 (distinct 30) max|coef| 1 -> IDENTICAL
+g27_Fany4_s18.u: exact rows 53 raw rows 53 (distinct 53) max|coef| 1 -> IDENTICAL
+g27_Fany4_s19.u: exact rows 52 raw rows 52 (distinct 52) max|coef| 1 -> IDENTICAL
+g27_Fany4_s2.u: exact rows 30 raw rows 30 (distinct 30) max|coef| 1 -> IDENTICAL
+g27_Fany4_s25.u: exact rows 42 raw rows 42 (distinct 42) max|coef| 1 -> IDENTICAL
+g27_Fany4_s7.u: exact rows 63 raw rows 63 (distinct 63) max|coef| 1 -> IDENTICAL
+g27_Fp2b_m3_s2.u: exact rows 27 raw rows 27 (distinct 27) max|coef| 1 -> IDENTICAL
+g27_mid3_m3_s13.u: exact rows 69 raw rows 69 (distinct 69) max|coef| 1 -> IDENTICAL
+g27_mid3_m3_s22.u: exact rows 89 raw rows 89 (distinct 89) max|coef| 1 -> IDENTICAL
+t27_Fmid3_m3_s5.u: exact rows 37 raw rows 37 (distinct 37) max|coef| 1 -> IDENTICAL
+t27_mid3_m2_s1.u: exact rows 30 raw rows 30 (distinct 30) max|coef| 1 -> IDENTICAL
+t27_mid3_m2_s2.u: exact rows 30 raw rows 30 (distinct 30) max|coef| 1 -> IDENTICAL
+TOTAL 23/23 relaxation exports identical to the exact build

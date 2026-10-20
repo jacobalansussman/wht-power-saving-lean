@@ -1,0 +1,23 @@
+[timing lock] waiting for timing lock 05:45:10
+[timing lock] got lock 05:46:57; load: { 34.94 24.28 16.02 }
+CHECK N=512 scipy.signal.welch 1 thread            max rel (vs max bin) 0.00e+00
+CHECK N=512 numpy 6-liner fp64 rfft workers=1      max rel (vs max bin) 4.05e-15
+CHECK N=512 numpy 6-liner fp64 rfft workers=4      max rel (vs max bin) 4.05e-15
+CHECK N=512 numpy 6-liner fp32 rfft workers=4      max rel (vs max bin) 1.76e-06
+CHECK N=512 as-0 SME engine (ctypes, 1 thread)     max rel (vs max bin) 4.05e-15
+RESULT N=512 scipy.signal.welch 1 thread            best   125.14 median   126.44 ms  reps 127.5 128.6 127.0 126.4 125.1 125.8 126.0 128.5 126.4
+RESULT N=512 numpy 6-liner fp64 rfft workers=1      best    83.85 median    85.79 ms  reps 86.4 83.8 84.9 85.1 84.9 85.8 86.5 87.1 85.8
+RESULT N=512 numpy 6-liner fp64 rfft workers=4      best    62.34 median    63.79 ms  reps 63.0 64.7 63.8 64.2 62.3 63.2 63.2 64.3 63.8
+RESULT N=512 numpy 6-liner fp32 rfft workers=4      best    34.51 median    34.80 ms  reps 35.2 34.7 34.8 34.6 36.0 34.5 36.6 34.7 35.0
+RESULT N=512 as-0 SME engine (ctypes, 1 thread)     best    21.79 median    21.87 ms  reps 21.8 21.8 21.9 21.9 22.0 22.1 22.1 22.0 21.8
+CHECK N=4096 scipy.signal.welch 1 thread            max rel (vs max bin) 0.00e+00
+CHECK N=4096 numpy 6-liner fp64 rfft workers=1      max rel (vs max bin) 1.82e-15
+CHECK N=4096 numpy 6-liner fp64 rfft workers=4      max rel (vs max bin) 1.82e-15
+CHECK N=4096 numpy 6-liner fp32 rfft workers=4      max rel (vs max bin) 5.71e-07
+CHECK N=4096 as-0 SME engine (ctypes, 1 thread)     max rel (vs max bin) 2.73e-15
+RESULT N=4096 scipy.signal.welch 1 thread            best   137.38 median   138.38 ms  reps 138.4 138.3 137.4 138.0 137.8 139.2 140.7 139.9 140.3
+RESULT N=4096 numpy 6-liner fp64 rfft workers=1      best   100.94 median   101.95 ms  reps 101.5 101.6 103.7 103.2 100.9 102.3 101.9 102.8 101.4
+RESULT N=4096 numpy 6-liner fp64 rfft workers=4      best    68.83 median    69.32 ms  reps 69.2 69.5 69.3 68.8 70.1 69.5 69.4 69.2 69.0
+RESULT N=4096 numpy 6-liner fp32 rfft workers=4      best    35.35 median    35.48 ms  reps 35.6 35.7 35.4 35.7 35.6 35.5 35.4 35.5 35.4
+RESULT N=4096 as-0 SME engine (ctypes, 1 thread)     best    25.88 median    25.99 ms  reps 25.9 25.9 26.0 26.0 26.0 26.0 26.0 26.1 26.0
+WDONE

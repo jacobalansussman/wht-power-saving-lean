@@ -1,0 +1,7 @@
+k=1: dim N = 8; c1, c2, c3 = 4, 6, 7 (float and mod-p agree: True); c2/c1 = 1.5000, c3/c1 = 1.7500, c3 vs c1 + c2: 7 vs 10
+k=2: dim N = 56; c1, c2, c3 = 24, 40, 48 (float and mod-p agree: True); c2/c1 = 1.6667, c3/c1 = 2.0000, c3 vs c1 + c2: 48 vs 64
+k=3: dim N = 168; c1, c2, c3 = 60, 106, 140 (float and mod-p agree: True); c2/c1 = 1.7667, c3/c1 = 2.3333, c3 vs c1 + c2: 140 vs 166
+k=4: dim N = 280; c1, c2, c3 = 80, 144, 224 (float and mod-p agree: True); c2/c1 = 1.8000, c3/c1 = 2.8000, c3 vs c1 + c2: 224 vs 224
+k=5: dim N = 280; c1, c2, c3 = 60, 106, 140 (float and mod-p agree: True); c2/c1 = 1.7667, c3/c1 = 2.3333, c3 vs c1 + c2: 140 vs 166
+k=6: dim N = 168; c1, c2, c3 = 24, 40, 48 (float and mod-p agree: True); c2/c1 = 1.6667, c3/c1 = 2.0000, c3 vs c1 + c2: 48 vs 64
+python3 -I -B hook_c2.py  5.27s user 0.19s system 87% cpu 6.211 total

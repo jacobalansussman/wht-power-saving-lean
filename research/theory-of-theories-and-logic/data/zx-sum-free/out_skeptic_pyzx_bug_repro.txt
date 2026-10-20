@@ -1,0 +1,43 @@
+pyzx 0.10.7 <Colab work folder>
+teleport_reduce+from_graph == input: True
+to_basic_gates == c2: True
+basic_optimization(to_basic_gates(c2)) == c2: False
+XPhase gates in input to basic_optimization: 3
+minimal failing input (3 gates on 3 qubits):
+   CNOT(2,1)
+   CNOT(1,2)
+   XPhase(1,phase=1/2)
+basic_optimization output:
+   ZPhase(1,phase=3/2)
+   CNOT(1,2)
+   HAD(1)
+   ZPhase(1,phase=3/2)
+   CNOT(1,2)
+   CNOT(2,1)
+   CNOT(1,2)
+input matrix:
+ [[0.5+0.5j 0.5-0.5j 0. +0.j  0. +0.j  0. +0.j  0. +0.j  0. +0.j  0. +0.j ]
+ [0. +0.j  0. +0.j  0.5-0.5j 0.5+0.5j 0. +0.j  0. +0.j  0. +0.j  0. +0.j ]
+ [0.5-0.5j 0.5+0.5j 0. +0.j  0. +0.j  0. +0.j  0. +0.j  0. +0.j  0. +0.j ]
+ [0. +0.j  0. +0.j  0.5+0.5j 0.5-0.5j 0. +0.j  0. +0.j  0. +0.j  0. +0.j ]
+ [0. +0.j  0. +0.j  0. +0.j  0. +0.j  0.5+0.5j 0.5-0.5j 0. +0.j  0. +0.j ]
+ [0. +0.j  0. +0.j  0. +0.j  0. +0.j  0. +0.j  0. +0.j  0.5-0.5j 0.5+0.5j]
+ [0. +0.j  0. +0.j  0. +0.j  0. +0.j  0.5-0.5j 0.5+0.5j 0. +0.j  0. +0.j ]
+ [0. +0.j  0. +0.j  0. +0.j  0. +0.j  0. +0.j  0. +0.j  0.5+0.5j 0.5-0.5j]]
+output matrix:
+ [[ 0.707-0.j     0.   +0.j     0.   +0.j    -0.   -0.707j  0.   +0.j
+   0.   +0.j     0.   +0.j     0.   +0.j   ]
+ [-0.   -0.707j  0.   +0.j     0.   +0.j     0.707-0.j     0.   +0.j
+   0.   +0.j     0.   +0.j     0.   +0.j   ]
+ [ 0.   +0.j     0.707-0.j    -0.   -0.707j  0.   +0.j     0.   +0.j
+   0.   +0.j     0.   +0.j     0.   +0.j   ]
+ [ 0.   +0.j    -0.   -0.707j  0.707-0.j     0.   +0.j     0.   +0.j
+   0.   +0.j     0.   +0.j     0.   +0.j   ]
+ [ 0.   +0.j     0.   +0.j     0.   +0.j     0.   +0.j     0.707-0.j
+   0.   +0.j     0.   +0.j    -0.   -0.707j]
+ [ 0.   +0.j     0.   +0.j     0.   +0.j     0.   +0.j    -0.   -0.707j
+   0.   +0.j     0.   +0.j     0.707-0.j   ]
+ [ 0.   +0.j     0.   +0.j     0.   +0.j     0.   +0.j     0.   +0.j
+   0.707-0.j    -0.   -0.707j  0.   +0.j   ]
+ [ 0.   +0.j     0.   +0.j     0.   +0.j     0.   +0.j     0.   +0.j
+  -0.   -0.707j  0.707-0.j     0.   +0.j   ]]

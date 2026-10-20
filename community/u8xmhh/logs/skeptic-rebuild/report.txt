@@ -1,0 +1,44 @@
+The written verdict of the independent agent (a skeptic) that ran this check, as it returned it, with home-folder
+paths shortened. Agent labels in it (fs-build, fs-price, h-L3-build, k-build, k-combine, v-k-rebuild) are the
+names of the agents whose work it checked; Colab #1 and Colab #2 are the first and second Colab machines.
+
+I could not refute the claim. I rebuilt it independently on the other Colab, and every key step held. The figure stands: GXD.U8XMHH proves the DFT of every length at 1 - 16197705/10^10, a saving of 1.6197705e-3 (Lean-checked). The +31.35 %, +3.17 %, +16.79 % and +19.52 % comparisons recompute exactly.
+
+HOW I TRIED (Colab #1, 01:01-01:50 UTC; fs-build had used Colab #2)
+- **Base tree.** I made my own `cp -a` of k-combine's original U8XM tree on Colab #1 (`/content/work/k-combine/lean/complex588`), not the k-build rebuild on Colab #2 that fs-build copied. I chowned `.lake` to root in my copy only; the source tree stays owned by 65534.
+  - All 96 U8XM overlay files match k-combine's package SHA256SUMS.
+  - `lake --no-build` on U8XM: "All targets up-to-date (9301 jobs)"; Mathlib stayed at d13f23b.
+- **Inputs.**
+  - `u8xmhh-src.tgz` (sha256 80e19727...) holds 22 files. Its own SHA256SUMS passes, and every file is byte-identical to `fs-price/lean`.
+  - `xhost-src.tgz` (sha256 48d9aaf1...) holds 12 files. They equal `xhost.sha256`, h-L3-build's sources on the Mac and the hl3 tree on Colab #1.
+- **Build from scratch.** No XHost or Fourier oleans existed before. I built all 32 new modules: the 12 network modules, 4 data and glue modules, the Fourier chain and both challenge files.
+  - One module per Lake call in topological order, with `LEAN_NUM_THREADS=1`, so at most one heavy Lean process ran at a time.
+  - Every step returned rc 0. The host table `hs_ok` (`decide +kernel`) took 195 s at an 8.8 GB peak.
+  - Afterwards `lake build --no-build` reports "All targets up-to-date (9333 jobs)".
+- **Axioms.**
+  - `transform_mainU8XMHH`, `convolution_mainU8XMHH` and `hillsU8XMHH_program` use only [propext, Classical.choice, Quot.sound].
+  - `hs_ok` uses only [propext].
+- **Sorry and forbidden constructs.** The only "declaration uses `sorry`" warnings are the 4 statement placeholders in the two challenge files. My own source grep found no sorry, admit, axiom, native_decide, implemented_by, extern, unsafe or macro anywhere else.
+- **Challenge.** I diffed it against OpenAI's `UniformFourier.lean` (fd4aeeb, sha256 4c571f27...). The only changes are the exponent 1 - 16197705/10^10 and the U8XMHH renames. The negative challenge differs only in 16197706.
+- **Compare.lean, which I ran myself** (sha e48d6d3b, the same file as our published one):
+  - Positive: RESULT: PASS (rc 0, 292 s, 16.0 GB). The proof closures are 43014 and 43037 constants, the same as fs-build's.
+  - Negative at 16197706: RESULT: FAIL (rc 1), "decimalExponentU8XMHH definition body differs".
+- **Do XHost, KMX and XMut really reach the final theorem?** My `Uses.lean` follows Compare's own dependency walk, proofs included, and groups the constants by module. Its closure size equals Compare's (43014). For both final theorems:
+  - The proof closure holds 1154 constants from Work.XHost, 153 from Work.KMX and 132 from Work.XMut.
+  - It contains `XHost.engine_of_ginv_host`, `HostSched.ofTab_fitsR`, `hostSchedK`, `GXD.U8XMHH.{hs_ok, hsched, hfits, hprice, hwidth}`, `GXD.U8XM.ginv`, `GXD.ginvXOfZ` (KMX), `GXD.exit_of_zchecksZ` (KMX), `scalOKZ`, `validX`, `fold_U8XMHHx`, `BridgeRate.U8XMHH.unit_cost_x`, `SeamU8XMHH.engine_U8XMHHx` and `RAM.hillsU8XMHH_program`.
+  - It does not contain the old U8XM rate fact `fold_U8XMx`, nor any constant of Work.FourierU8XM or Work.FourierC588*.
+  - So the figure really goes through the hosted network with U8XM's mutable-source package. The stale Seam docstrings that name `fold_U8XMx` are comments only.
+
+LIMITS OF MY CHECK (none of them undermines the claim)
+1. I did not rerun the official comparator, nanoda or the bigospeedrun re-creation; those results are fs-build's. My kernel check is the fresh Lean build itself. Compare.lean loads the oleans without re-checking them, and I ran no lean4checker replay.
+2. My build used the same toolchain (v4.34.1) and the same Mathlib build as fs-build.
+3. The underlying U8XM tree was k-combine's own build, which v-k-rebuild had already re-checked. Only XHost and U8XMHH were rebuilt from source here.
+4. Module Work.XMut.Labels contributes 0 constants; the other 6 XMut modules are used. This is harmless.
+
+FILES
+- `<verify>/checks/wht43/bound-check/v-fs-rebuild/RESULT.json`
+- Scripts in `<verify>/checks/wht43/bound-check/v-fs-rebuild/colab/`: `vfr-setup.sh`, `vfr-build.sh`, `Uses.lean`
+- Logs in `<verify>/checks/wht43/bound-check/v-fs-rebuild/logs/colab/`: `setup.out`, `build.out`, `m01..m32` build logs, `compare-pos.log`, `compare-neg.log`, `uses.log`
+
+COLAB #1 STATE
+My tree is `/content/work/v-fs-rebuild/T` (11 GB, `.lake` owned by root, so root Lake is safe there); logs are in `/content/work/logs/v-fs-rebuild`. To free the disk: `rm -rf /content/work/v-fs-rebuild/T`. No Lean processes of mine are left running.

@@ -1,0 +1,12 @@
+W 66304 calls 2320344 mass 4816512 deficit 23680
+control: T74 uniform (hub #1839)                               b in [16797549561255, 16797549561256]e-16  = 1.6797549561e-03  -0.000% (-2.357e-17) sep=True r_max=48 k_min=73 grid=16797549 [0.7s]
+control: all 22,748 cut to 25                                  b in [18169467779878, 18169467779880]e-16  = 1.8169467780e-03  +8.167% (+1.372e-04) sep=True r_max=8 k_min=25 grid=18169467 [0.7s]
+control: heads cut to 25, others kept rank 48 (NOT separated)  b in [17434773228998, 17434773229000]e-16  = 1.7434773229e-03  +3.794% (+6.372e-05) sep=False r_max=48 k_min=25 grid=17434773 [0.8s]
+FULL CUT: heads cut to 25, others split 24+24                  b in [16948357904637, 16948357904639]e-16  = 1.6948357905e-03  +0.898% (+1.508e-05) sep=True r_max=24 k_min=25 grid=16948357 [0.8s]
+HALF CUT: heads cut by 24 of 48 (target 49), rest 24 paid, others 48 b in [16968621073119, 16968621073121]e-16  = 1.6968621073e-03  +1.018% (+1.711e-05) sep=True r_max=48 k_min=49 grid=16968621 [0.9s]
+full cut break-even: b(t) > hub b first at t = 9443 heads (41.51 % of 22748); spare at 11,010: 1567
+full cut, Lean-grid break-even (floor(b*1e10)-1 > hub b): t = 9443
+full cut at break-even t=9443                                  b in [16797623491039, 16797623491041]e-16  = 1.6797623491e-03  +0.000% (+7.393e-09) sep=True r_max=24 k_min=25 grid=16797623 [0.8s]
+full cut at t=9442                                             b in [16797528152262, 16797528152264]e-16  = 1.6797528152e-03  -0.000% (-2.141e-09) sep=True r_max=24 k_min=25 grid=16797528 [0.8s]
+half cut: every head raises b (no break-even vs exact hub b: t=1 gives F<0: True); Lean-grid break-even t = 1
+half cut at t=5000                                             b in [16874810910281, 16874810910283]e-16  = 1.6874810910e-03  +0.460% (+7.726e-06) sep=True r_max=48 k_min=49 grid=16874810 [0.9s]

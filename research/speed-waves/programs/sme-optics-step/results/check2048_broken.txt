@@ -1,0 +1,3 @@
+CHECK fft2 SME vs pocketfft (all 4194304 bins): max rel 5.400e-01  rel RMS 1.540e-02  FAIL
+CHECK propagation step SME (output read at -n) vs pocketfft ifft2(fft2(U)*H): max rel 4.524e-01  rel RMS 1.555e-02  FAIL
+CHECK propagation step PFFFT-d (natural order) vs pocketfft: max rel 7.687e-16  rel RMS 6.929e-16  PASS

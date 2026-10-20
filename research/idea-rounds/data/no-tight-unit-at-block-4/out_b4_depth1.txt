@@ -1,0 +1,8 @@
+depth 1: 30 frames, longest word 5 letters  (5s)
+frames by depth: {0: 1, 1: 30} (dual polar Sp(8,2): 1, 30, 280, 960, 1024)
+2 random vectors of E built (72s)
+control identity (must pass): PASS  ok
+control K = d1 d2 d4 d8 (must pass): PASS  ok
+control K then free letters (must pass): PASS  ok
+depth 1: 0 of 30 engine positions pass the f = 9 termwise filter
+done (115s)

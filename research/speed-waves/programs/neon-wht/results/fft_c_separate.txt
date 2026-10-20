@@ -1,0 +1,327 @@
+[timing lock] waiting for timing lock 22:19:42
+[timing lock] got lock 22:19:42; load: { 3.34 3.75 3.99 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# wisdom import $BASELINES/fftw/wisdom-m4-fftwf-measure.txt: 1
+CHECK reference FFTW-double vs naive DFT n=256: rel err 8.589e-16 PASS
+CHECK vDSP_fft_zop(split) cplx n=256           max abs err 7.367e-06  rel err 2.544e-07  (tol 1.0e-05) PASS
+CHECK vDSP_DFT_Execute(split) cplx n=256       max abs err 4.492e-06  rel err 1.551e-07  (tol 1.0e-05) PASS
+CHECK vDSP_DFT_Interleaved cplx n=256          max abs err 4.512e-06  rel err 1.559e-07  (tol 1.0e-05) PASS
+# FFTW_MEASURE plan n=256 c2c: 0.000 s
+CHECK FFTW3f-NEON MEASURE cplx n=256           max abs err 3.420e-06  rel err 1.181e-07  (tol 1.0e-05) PASS
+CHECK PFFFT ordered cplx n=256                 max abs err 4.478e-06  rel err 1.546e-07  (tol 1.0e-05) PASS
+CHECK PFFFT z-order cplx n=256                 max abs err 4.478e-06  rel err 1.546e-07  (tol 1.0e-05) PASS
+## FFT fp32 cplx n=256 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  vDSP_fft_zop(split)                0.7294
+rep  0  vDSP_DFT_Execute(split)            0.5659
+rep  0  vDSP_DFT_Interleaved               1.0559
+rep  0  FFTW3f-NEON MEASURE                0.6434
+rep  0  PFFFT ordered                      0.7438
+rep  0  PFFFT z-order                      0.6796
+rep  1  vDSP_DFT_Execute(split)            0.5474
+rep  1  vDSP_DFT_Interleaved               1.0319
+rep  1  FFTW3f-NEON MEASURE                0.6540
+rep  1  PFFFT ordered                      0.7439
+rep  1  PFFFT z-order                      0.6769
+rep  1  vDSP_fft_zop(split)                0.7184
+rep  2  vDSP_DFT_Interleaved               1.0352
+rep  2  FFTW3f-NEON MEASURE                0.6393
+rep  2  PFFFT ordered                      0.7455
+rep  2  PFFFT z-order                      0.6794
+rep  2  vDSP_fft_zop(split)                0.7225
+rep  2  vDSP_DFT_Execute(split)            0.5546
+rep  3  FFTW3f-NEON MEASURE                0.6416
+rep  3  PFFFT ordered                      0.7436
+rep  3  PFFFT z-order                      0.6801
+rep  3  vDSP_fft_zop(split)                0.7224
+rep  3  vDSP_DFT_Execute(split)            0.5494
+rep  3  vDSP_DFT_Interleaved               1.0382
+rep  4  PFFFT ordered                      0.7390
+rep  4  PFFFT z-order                      0.6786
+rep  4  vDSP_fft_zop(split)                0.7177
+rep  4  vDSP_DFT_Execute(split)            0.5520
+rep  4  vDSP_DFT_Interleaved               1.0392
+rep  4  FFTW3f-NEON MEASURE                0.6370
+rep  5  PFFFT z-order                      0.6798
+rep  5  vDSP_fft_zop(split)                0.7222
+rep  5  vDSP_DFT_Execute(split)            0.5561
+rep  5  vDSP_DFT_Interleaved               1.0394
+rep  5  FFTW3f-NEON MEASURE                0.6384
+rep  5  PFFFT ordered                      0.7420
+rep  6  vDSP_fft_zop(split)                0.7223
+rep  6  vDSP_DFT_Execute(split)            0.5542
+rep  6  vDSP_DFT_Interleaved               1.0377
+rep  6  FFTW3f-NEON MEASURE                0.6371
+rep  6  PFFFT ordered                      0.7443
+rep  6  PFFFT z-order                      0.6747
+rep  7  vDSP_DFT_Execute(split)            0.5537
+rep  7  vDSP_DFT_Interleaved               1.0368
+rep  7  FFTW3f-NEON MEASURE                0.6393
+rep  7  PFFFT ordered                      0.7440
+rep  7  PFFFT z-order                      0.6777
+rep  7  vDSP_fft_zop(split)                0.7241
+rep  8  vDSP_DFT_Interleaved               1.0388
+rep  8  FFTW3f-NEON MEASURE                0.6374
+rep  8  PFFFT ordered                      0.7394
+rep  8  PFFFT z-order                      0.6767
+rep  8  vDSP_fft_zop(split)                0.7251
+rep  8  vDSP_DFT_Execute(split)            0.5553
+RESULT FFT fp32 cplx n=256 separate             vDSP_fft_zop(split)          best     0.7177  median     0.7224  ns/point  (calls/rep 1184673)
+RESULT FFT fp32 cplx n=256 separate             vDSP_DFT_Execute(split)      best     0.5474  median     0.5542  ns/point  (calls/rep 1573669)
+RESULT FFT fp32 cplx n=256 separate             vDSP_DFT_Interleaved         best     1.0319  median     1.0382  ns/point  (calls/rep 819162)
+RESULT FFT fp32 cplx n=256 separate             FFTW3f-NEON MEASURE          best     0.6370  median     0.6393  ns/point  (calls/rep 1347172)
+RESULT FFT fp32 cplx n=256 separate             PFFFT ordered                best     0.7390  median     0.7438  ns/point  (calls/rep 1152598)
+RESULT FFT fp32 cplx n=256 separate             PFFFT z-order                best     0.6747  median     0.6786  ns/point  (calls/rep 1258424)
+CHECK reference FFTW-double vs naive DFT n=1024: rel err 1.831e-15 PASS
+CHECK vDSP_fft_zop(split) cplx n=1024          max abs err 1.260e-05  rel err 2.164e-07  (tol 1.0e-05) PASS
+CHECK vDSP_DFT_Execute(split) cplx n=1024      max abs err 1.450e-05  rel err 2.491e-07  (tol 1.0e-05) PASS
+CHECK vDSP_DFT_Interleaved cplx n=1024         max abs err 1.450e-05  rel err 2.491e-07  (tol 1.0e-05) PASS
+# FFTW_MEASURE plan n=1024 c2c: 0.000 s
+CHECK FFTW3f-NEON MEASURE cplx n=1024          max abs err 7.593e-06  rel err 1.305e-07  (tol 1.0e-05) PASS
+CHECK PFFFT ordered cplx n=1024                max abs err 1.169e-05  rel err 2.010e-07  (tol 1.0e-05) PASS
+CHECK PFFFT z-order cplx n=1024                max abs err 1.169e-05  rel err 2.010e-07  (tol 1.0e-05) PASS
+## FFT fp32 cplx n=1024 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  vDSP_fft_zop(split)                0.6965
+rep  0  vDSP_DFT_Execute(split)            0.7185
+rep  0  vDSP_DFT_Interleaved               0.6996
+rep  0  FFTW3f-NEON MEASURE                0.9643
+rep  0  PFFFT ordered                      0.9458
+rep  0  PFFFT z-order                      0.8937
+rep  1  vDSP_DFT_Execute(split)            0.7130
+rep  1  vDSP_DFT_Interleaved               0.7066
+rep  1  FFTW3f-NEON MEASURE                0.9680
+rep  1  PFFFT ordered                      0.9546
+rep  1  PFFFT z-order                      0.9054
+rep  1  vDSP_fft_zop(split)                0.6946
+rep  2  vDSP_DFT_Interleaved               0.7065
+rep  2  FFTW3f-NEON MEASURE                0.9757
+rep  2  PFFFT ordered                      0.9503
+rep  2  PFFFT z-order                      0.8923
+rep  2  vDSP_fft_zop(split)                0.7020
+rep  2  vDSP_DFT_Execute(split)            0.7115
+rep  3  FFTW3f-NEON MEASURE                0.9652
+rep  3  PFFFT ordered                      0.9559
+rep  3  PFFFT z-order                      0.9066
+rep  3  vDSP_fft_zop(split)                0.6993
+rep  3  vDSP_DFT_Execute(split)            0.7202
+rep  3  vDSP_DFT_Interleaved               0.7002
+rep  4  PFFFT ordered                      0.9489
+rep  4  PFFFT z-order                      0.9028
+rep  4  vDSP_fft_zop(split)                0.7003
+rep  4  vDSP_DFT_Execute(split)            0.7179
+rep  4  vDSP_DFT_Interleaved               0.6992
+rep  4  FFTW3f-NEON MEASURE                0.9579
+rep  5  PFFFT z-order                      0.8975
+rep  5  vDSP_fft_zop(split)                0.7006
+rep  5  vDSP_DFT_Execute(split)            0.7158
+rep  5  vDSP_DFT_Interleaved               0.6992
+rep  5  FFTW3f-NEON MEASURE                0.9657
+rep  5  PFFFT ordered                      0.9467
+rep  6  vDSP_fft_zop(split)                0.7015
+rep  6  vDSP_DFT_Execute(split)            0.7131
+rep  6  vDSP_DFT_Interleaved               0.6965
+rep  6  FFTW3f-NEON MEASURE                0.9560
+rep  6  PFFFT ordered                      0.9486
+rep  6  PFFFT z-order                      0.8995
+rep  7  vDSP_DFT_Execute(split)            0.7157
+rep  7  vDSP_DFT_Interleaved               0.7019
+rep  7  FFTW3f-NEON MEASURE                0.9527
+rep  7  PFFFT ordered                      0.9614
+rep  7  PFFFT z-order                      0.9139
+rep  7  vDSP_fft_zop(split)                0.6995
+rep  8  vDSP_DFT_Interleaved               0.7050
+rep  8  FFTW3f-NEON MEASURE                0.9737
+rep  8  PFFFT ordered                      0.9424
+rep  8  PFFFT z-order                      0.9049
+rep  8  vDSP_fft_zop(split)                0.6959
+rep  8  vDSP_DFT_Execute(split)            0.7130
+RESULT FFT fp32 cplx n=1024 separate            vDSP_fft_zop(split)          best     0.6946  median     0.6995  ns/point  (calls/rep 305826)
+RESULT FFT fp32 cplx n=1024 separate            vDSP_DFT_Execute(split)      best     0.7115  median     0.7157  ns/point  (calls/rep 300874)
+RESULT FFT fp32 cplx n=1024 separate            vDSP_DFT_Interleaved         best     0.6965  median     0.7002  ns/point  (calls/rep 304242)
+RESULT FFT fp32 cplx n=1024 separate            FFTW3f-NEON MEASURE          best     0.9527  median     0.9652  ns/point  (calls/rep 209474)
+RESULT FFT fp32 cplx n=1024 separate            PFFFT ordered                best     0.9424  median     0.9489  ns/point  (calls/rep 209409)
+RESULT FFT fp32 cplx n=1024 separate            PFFFT z-order                best     0.8923  median     0.9028  ns/point  (calls/rep 221985)
+CHECK reference FFTW-double vs naive DFT n=4096: rel err 4.044e-15 PASS
+CHECK vDSP_fft_zop(split) cplx n=4096          max abs err 2.600e-05  rel err 1.947e-07  (tol 1.0e-05) PASS
+CHECK vDSP_DFT_Execute(split) cplx n=4096      max abs err 2.600e-05  rel err 1.947e-07  (tol 1.0e-05) PASS
+CHECK vDSP_DFT_Interleaved cplx n=4096         max abs err 3.301e-05  rel err 2.472e-07  (tol 1.0e-05) PASS
+# FFTW_MEASURE plan n=4096 c2c: 0.000 s
+CHECK FFTW3f-NEON MEASURE cplx n=4096          max abs err 2.061e-05  rel err 1.543e-07  (tol 1.0e-05) PASS
+CHECK PFFFT ordered cplx n=4096                max abs err 2.711e-05  rel err 2.030e-07  (tol 1.0e-05) PASS
+CHECK PFFFT z-order cplx n=4096                max abs err 2.711e-05  rel err 2.030e-07  (tol 1.0e-05) PASS
+## FFT fp32 cplx n=4096 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  vDSP_fft_zop(split)                0.6065
+rep  0  vDSP_DFT_Execute(split)            0.6115
+rep  0  vDSP_DFT_Interleaved               0.6657
+rep  0  FFTW3f-NEON MEASURE                1.2043
+rep  0  PFFFT ordered                      1.1806
+rep  0  PFFFT z-order                      1.0411
+rep  1  vDSP_DFT_Execute(split)            0.6122
+rep  1  vDSP_DFT_Interleaved               0.6645
+rep  1  FFTW3f-NEON MEASURE                1.2013
+rep  1  PFFFT ordered                      1.1788
+rep  1  PFFFT z-order                      1.0411
+rep  1  vDSP_fft_zop(split)                0.6049
+rep  2  vDSP_DFT_Interleaved               0.6630
+rep  2  FFTW3f-NEON MEASURE                1.2072
+rep  2  PFFFT ordered                      1.1749
+rep  2  PFFFT z-order                      1.0430
+rep  2  vDSP_fft_zop(split)                0.6037
+rep  2  vDSP_DFT_Execute(split)            0.5993
+rep  3  FFTW3f-NEON MEASURE                1.2034
+rep  3  PFFFT ordered                      1.1813
+rep  3  PFFFT z-order                      1.0397
+rep  3  vDSP_fft_zop(split)                0.6059
+rep  3  vDSP_DFT_Execute(split)            0.6111
+rep  3  vDSP_DFT_Interleaved               0.6606
+rep  4  PFFFT ordered                      1.1762
+rep  4  PFFFT z-order                      1.0425
+rep  4  vDSP_fft_zop(split)                0.6023
+rep  4  vDSP_DFT_Execute(split)            0.6110
+rep  4  vDSP_DFT_Interleaved               0.6601
+rep  4  FFTW3f-NEON MEASURE                1.2037
+rep  5  PFFFT z-order                      1.0438
+rep  5  vDSP_fft_zop(split)                0.6079
+rep  5  vDSP_DFT_Execute(split)            0.6108
+rep  5  vDSP_DFT_Interleaved               0.6631
+rep  5  FFTW3f-NEON MEASURE                1.1955
+rep  5  PFFFT ordered                      1.1787
+rep  6  vDSP_fft_zop(split)                0.6025
+rep  6  vDSP_DFT_Execute(split)            0.5996
+rep  6  vDSP_DFT_Interleaved               0.6632
+rep  6  FFTW3f-NEON MEASURE                1.2038
+rep  6  PFFFT ordered                      1.1775
+rep  6  PFFFT z-order                      1.0434
+rep  7  vDSP_DFT_Execute(split)            0.6104
+rep  7  vDSP_DFT_Interleaved               0.6605
+rep  7  FFTW3f-NEON MEASURE                1.1986
+rep  7  PFFFT ordered                      1.1829
+rep  7  PFFFT z-order                      1.0375
+rep  7  vDSP_fft_zop(split)                0.6011
+rep  8  vDSP_DFT_Interleaved               0.6610
+rep  8  FFTW3f-NEON MEASURE                1.1890
+rep  8  PFFFT ordered                      1.1759
+rep  8  PFFFT z-order                      1.0390
+rep  8  vDSP_fft_zop(split)                0.6030
+rep  8  vDSP_DFT_Execute(split)            0.6045
+RESULT FFT fp32 cplx n=4096 separate            vDSP_fft_zop(split)          best     0.6011  median     0.6037  ns/point  (calls/rep 89073)
+RESULT FFT fp32 cplx n=4096 separate            vDSP_DFT_Execute(split)      best     0.5993  median     0.6108  ns/point  (calls/rep 87718)
+RESULT FFT fp32 cplx n=4096 separate            vDSP_DFT_Interleaved         best     0.6601  median     0.6630  ns/point  (calls/rep 80953)
+RESULT FFT fp32 cplx n=4096 separate            FFTW3f-NEON MEASURE          best     1.1890  median     1.2034  ns/point  (calls/rep 44184)
+RESULT FFT fp32 cplx n=4096 separate            PFFFT ordered                best     1.1749  median     1.1787  ns/point  (calls/rep 45589)
+RESULT FFT fp32 cplx n=4096 separate            PFFFT z-order                best     1.0375  median     1.0411  ns/point  (calls/rep 51417)
+CHECK vDSP_fft_zop(split) cplx n=65536         max abs err 1.621e-04  rel err 2.379e-07  (tol 1.0e-05) PASS
+CHECK vDSP_DFT_Execute(split) cplx n=65536     max abs err 1.621e-04  rel err 2.379e-07  (tol 1.0e-05) PASS
+# skip vDSP_DFT_Interleaved n=65536 (unsupported)
+# FFTW_MEASURE plan n=65536 c2c: 0.000 s
+CHECK FFTW3f-NEON MEASURE cplx n=65536         max abs err 1.087e-04  rel err 1.596e-07  (tol 1.0e-05) PASS
+CHECK PFFFT ordered cplx n=65536               max abs err 1.729e-04  rel err 2.538e-07  (tol 1.0e-05) PASS
+CHECK PFFFT z-order cplx n=65536               max abs err 1.729e-04  rel err 2.538e-07  (tol 1.0e-05) PASS
+## FFT fp32 cplx n=65536 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  vDSP_fft_zop(split)                1.6636
+rep  0  vDSP_DFT_Execute(split)            1.6525
+rep  0  FFTW3f-NEON MEASURE                2.3454
+rep  0  PFFFT ordered                      1.8088
+rep  0  PFFFT z-order                      1.6336
+rep  1  vDSP_DFT_Execute(split)            1.6601
+rep  1  FFTW3f-NEON MEASURE                2.3650
+rep  1  PFFFT ordered                      1.8206
+rep  1  PFFFT z-order                      1.6608
+rep  1  vDSP_fft_zop(split)                1.6634
+rep  2  FFTW3f-NEON MEASURE                2.3327
+rep  2  PFFFT ordered                      1.7987
+rep  2  PFFFT z-order                      1.6632
+rep  2  vDSP_fft_zop(split)                1.6337
+rep  2  vDSP_DFT_Execute(split)            1.6577
+rep  3  PFFFT ordered                      1.8047
+rep  3  PFFFT z-order                      1.6583
+rep  3  vDSP_fft_zop(split)                1.6580
+rep  3  vDSP_DFT_Execute(split)            1.6148
+rep  3  FFTW3f-NEON MEASURE                2.3427
+rep  4  PFFFT z-order                      1.6578
+rep  4  vDSP_fft_zop(split)                1.6547
+rep  4  vDSP_DFT_Execute(split)            1.6592
+rep  4  FFTW3f-NEON MEASURE                2.3181
+rep  4  PFFFT ordered                      1.8000
+rep  5  vDSP_fft_zop(split)                1.6666
+rep  5  vDSP_DFT_Execute(split)            1.7416
+rep  5  FFTW3f-NEON MEASURE                2.3346
+rep  5  PFFFT ordered                      1.8202
+rep  5  PFFFT z-order                      1.6353
+rep  6  vDSP_DFT_Execute(split)            1.6876
+rep  6  FFTW3f-NEON MEASURE                2.3340
+rep  6  PFFFT ordered                      1.8221
+rep  6  PFFFT z-order                      1.6304
+rep  6  vDSP_fft_zop(split)                1.6552
+rep  7  FFTW3f-NEON MEASURE                2.3350
+rep  7  PFFFT ordered                      1.8282
+rep  7  PFFFT z-order                      1.6430
+rep  7  vDSP_fft_zop(split)                1.6676
+rep  7  vDSP_DFT_Execute(split)            1.6436
+rep  8  PFFFT ordered                      1.8025
+rep  8  PFFFT z-order                      1.6243
+rep  8  vDSP_fft_zop(split)                1.6794
+rep  8  vDSP_DFT_Execute(split)            1.6597
+rep  8  FFTW3f-NEON MEASURE                2.3500
+RESULT FFT fp32 cplx n=65536 separate           vDSP_fft_zop(split)          best     1.6337  median     1.6634  ns/point  (calls/rep 2095)
+RESULT FFT fp32 cplx n=65536 separate           vDSP_DFT_Execute(split)      best     1.6148  median     1.6592  ns/point  (calls/rep 2052)
+RESULT FFT fp32 cplx n=65536 separate           FFTW3f-NEON MEASURE          best     2.3181  median     2.3350  ns/point  (calls/rep 1431)
+RESULT FFT fp32 cplx n=65536 separate           PFFFT ordered                best     1.7987  median     1.8088  ns/point  (calls/rep 1794)
+RESULT FFT fp32 cplx n=65536 separate           PFFFT z-order                best     1.6243  median     1.6430  ns/point  (calls/rep 1918)
+CHECK vDSP_fft_zop(split) cplx n=1048576       max abs err 8.897e-04  rel err 2.884e-07  (tol 1.0e-05) PASS
+CHECK vDSP_DFT_Execute(split) cplx n=1048576   max abs err 8.897e-04  rel err 2.884e-07  (tol 1.0e-05) PASS
+# skip vDSP_DFT_Interleaved n=1048576 (unsupported)
+# FFTW_MEASURE plan n=1048576 c2c: 0.000 s
+CHECK FFTW3f-NEON MEASURE cplx n=1048576       max abs err 6.027e-04  rel err 1.954e-07  (tol 1.0e-05) PASS
+CHECK PFFFT ordered cplx n=1048576             max abs err 1.186e-03  rel err 3.843e-07  (tol 1.0e-05) PASS
+CHECK PFFFT z-order cplx n=1048576             max abs err 1.186e-03  rel err 3.843e-07  (tol 1.0e-05) PASS
+## FFT fp32 cplx n=1048576 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  vDSP_fft_zop(split)                2.9191
+rep  0  vDSP_DFT_Execute(split)            2.8429
+rep  0  FFTW3f-NEON MEASURE                6.4447
+rep  0  PFFFT ordered                      2.5374
+rep  0  PFFFT z-order                      2.4218
+rep  1  vDSP_DFT_Execute(split)            2.8684
+rep  1  FFTW3f-NEON MEASURE                6.1578
+rep  1  PFFFT ordered                      2.5656
+rep  1  PFFFT z-order                      2.3931
+rep  1  vDSP_fft_zop(split)                2.8866
+rep  2  FFTW3f-NEON MEASURE                6.0433
+rep  2  PFFFT ordered                      2.5676
+rep  2  PFFFT z-order                      2.4277
+rep  2  vDSP_fft_zop(split)                2.7715
+rep  2  vDSP_DFT_Execute(split)            2.8500
+rep  3  PFFFT ordered                      2.4966
+rep  3  PFFFT z-order                      2.4362
+rep  3  vDSP_fft_zop(split)                2.9122
+rep  3  vDSP_DFT_Execute(split)            2.8290
+rep  3  FFTW3f-NEON MEASURE                5.8821
+rep  4  PFFFT z-order                      2.4246
+rep  4  vDSP_fft_zop(split)                2.7886
+rep  4  vDSP_DFT_Execute(split)            2.7872
+rep  4  FFTW3f-NEON MEASURE                6.1174
+rep  4  PFFFT ordered                      2.5142
+rep  5  vDSP_fft_zop(split)                2.6537
+rep  5  vDSP_DFT_Execute(split)            2.6389
+rep  5  FFTW3f-NEON MEASURE                6.2415
+rep  5  PFFFT ordered                      2.5446
+rep  5  PFFFT z-order                      2.4094
+rep  6  vDSP_DFT_Execute(split)            2.8459
+rep  6  FFTW3f-NEON MEASURE                6.2748
+rep  6  PFFFT ordered                      2.5304
+rep  6  PFFFT z-order                      2.4418
+rep  6  vDSP_fft_zop(split)                2.9113
+rep  7  FFTW3f-NEON MEASURE                6.3900
+rep  7  PFFFT ordered                      2.5495
+rep  7  PFFFT z-order                      2.3817
+rep  7  vDSP_fft_zop(split)                2.8448
+rep  7  vDSP_DFT_Execute(split)            2.8209
+rep  8  PFFFT ordered                      2.5202
+rep  8  PFFFT z-order                      2.4130
+rep  8  vDSP_fft_zop(split)                2.9290
+rep  8  vDSP_DFT_Execute(split)            2.7987
+rep  8  FFTW3f-NEON MEASURE                6.2039
+RESULT FFT fp32 cplx n=1048576 separate         vDSP_fft_zop(split)          best     2.6537  median     2.8866  ns/point  (calls/rep 74)
+RESULT FFT fp32 cplx n=1048576 separate         vDSP_DFT_Execute(split)      best     2.6389  median     2.8290  ns/point  (calls/rep 74)
+RESULT FFT fp32 cplx n=1048576 separate         FFTW3f-NEON MEASURE          best     5.8821  median     6.2039  ns/point  (calls/rep 32)
+RESULT FFT fp32 cplx n=1048576 separate         PFFFT ordered                best     2.4966  median     2.5374  ns/point  (calls/rep 85)
+RESULT FFT fp32 cplx n=1048576 separate         PFFFT z-order                best     2.3817  median     2.4218  ns/point  (calls/rep 88)

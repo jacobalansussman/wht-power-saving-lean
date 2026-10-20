@@ -1,0 +1,188 @@
+{
+  "format": "community-certificate-package/1",
+  "name": "c588mhh",
+  "suffix": "C588MHH",
+  "title": "Kothe's #588 circuit with mutable sources and same-run hosting: the leftover helper pieces stored in idle data registers of the same run",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "variant": "",
+  "numerator": 15699305,
+  "kernel_numerator": 15699306,
+  "negative_numerator": 15699306,
+  "saving": "1.5699305e-3",
+  "saving_short": "1.5699e-3",
+  "exponent": "1 - 15699305/10^10",
+  "compared_with": {
+    "what": "Lean-checked record before these packages (Jeremy Kothe's #588 circuit in Ryan Shea's Lean tree, with 112 source copies)",
+    "numerator": 12331685,
+    "saving": "1.2331685e-3"
+  },
+  "also_compared_with": {
+    "what": "community/c588m (the same circuit with mutable sources, no hosting)",
+    "numerator": 13552606,
+    "saving": "1.3552606e-3"
+  },
+  "mode": "add",
+  "requires": [
+    "c588m"
+  ],
+  "requires_note": "laid over Shea's tree AFTER community/c588m (annealed variant): it reuses GXD.C588M (certificate, bank schedule, gauged invocation package) and Work/XMut; apply-overlay.sh applies c588m first",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainC588MHH",
+    "OAI.PowerSaving.convolution_mainC588MHH"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainC588MHH",
+    "OAI.PowerSaving.convolution_mainC588MHH",
+    "OAI.PowerSaving.RAM.hillsC588MHH_program"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierC588MHH.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierC588MHHNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierC588MHH.Main",
+  "axioms_file": "Work/FourierC588MHH/Axioms.lean",
+  "goal_file": "Work/FourierC588MHH/Goal.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentC588MHH",
+  "build_targets": [
+    "Work.FourierC588MHH.Main",
+    "Work.FourierC588MHH.UniformFourierChallenge",
+    "Work.FourierC588MHHNeg.UniformFourierChallenge",
+    "Work.FourierC588MHH.Axioms"
+  ],
+  "comparator": {
+    "positive": "comparator/fourier-c588mhh.json",
+    "negative": "comparator/fourier-c588mhh-neg.json"
+  },
+  "control": {
+    "what": "the hosted network with an EMPTY host table (every helper piece in a bank, as in community/c588m) must give exactly the figure of community/c588m",
+    "suffix": "C588MH",
+    "numerator": 13552606,
+    "comparator": {
+      "positive": "comparator/fourier-c588mh.json",
+      "negative": "comparator/fourier-c588mh-neg.json"
+    }
+  },
+  "certificate": {
+    "uses": "GXD.C588M of community/c588m (unchanged)",
+    "host_table": "data/h588_c0_samerun.repacked2.json (same-run hosting: hosts from data/H588-hosttab.json, leftover pieces re-packed into 111 banks)",
+    "slots_R": 504,
+    "banks": 111,
+    "banks_without_hosting": 4032,
+    "W": 7279,
+    "price_summary": "data/C588MHH-price.json"
+  },
+  "new_lean": {
+    "Work/XHost": "the hosted nine-stage network: role maps of a hosted stage (HRoles), the hosted invocation (HDef, HStage, HCert), host frames (Frames), host schedules (HSched) and the kernel checker hostSchedK with its soundness HostSched.ofTab_fitsR (HSchedK), the geometry of Shea's idle climbs (HGeom), the end theorem XHost.engine_of_ginv_host (HEnd), the empty host table (HBank), remainder prices (HPriceK), the instances C588MH (control) and C588MHH, and the data modules (Data/)",
+    "Work/FourierC588MHH": "the Fourier chain of the instance, made from community/c588m's chain with the seam pointed at XHost.engine_of_ginv_host",
+    "supporting/": "two lemmas proved as a plan before the network was built, compiled on the Mac and not imported by the modules above: L1 (supporting/L1, restating Shea's B401.gauged_step / gauged_Wn, GX.entW_spec / entW_form, GX.gauge_step) and L2 (supporting/L2, moving a helper's leftover piece into a host by a free relabelling of addresses; the result does this with host_adapt in Frames.lean, adapted from Mamano's bank_adapt)"
+  },
+  "checks": [
+    {
+      "id": "build",
+      "status": "pass",
+      "what": "the 49 modules of the overlay compiled on the first Colab machine with plain lean over the built c588m tree, in rounds r2 to r14 while the agents fixed errors; the last compile of every module ended with exit 0, no sorry and no error (the earlier rounds' failures are in the same folder)",
+      "log": "logs/colab/r14.summary"
+    },
+    {
+      "id": "axioms",
+      "status": "pass",
+      "what": "transform_mainC588MHH, convolution_mainC588MHH and the program hillsC588MHH_program depend on propext, Classical.choice, Quot.sound only; no sorryAx",
+      "log": "logs/colab/r14-Work.FourierC588MHH.Axioms.log"
+    },
+    {
+      "id": "compare",
+      "status": "pass",
+      "what": "tools/Compare.lean (sha256 e48d6d3b...): RESULT: PASS against OpenAI's statement at 1 - 15699305/10^10",
+      "log": "logs/colab/final-C588MHH-compare-pos.log"
+    },
+    {
+      "id": "compare-negative",
+      "status": "pass",
+      "what": "tools/Compare.lean against the statement one unit stronger (15699306): RESULT: FAIL on decimalExponentC588MHH, as it must",
+      "log": "logs/colab/final-C588MHH-compare-neg.log"
+    },
+    {
+      "id": "comparator",
+      "status": "pass",
+      "what": "official comparator inside the sandbox stand-in jail2.sh (no Landlock on the machine): its lake build compiled the hosted modules again from source, then nanoda and Lean kernels accept, 'Your solution is okay!' (14 min, 8.6 GB). A first attempt, recorded at the end of final-C588MHH.out, stopped after one second with 'Child exited with 1' for both configurations; its cause is not in the log, and the run cited here started a minute later",
+      "log": "logs/colab/final-C588MHH-cmp-pos.out"
+    },
+    {
+      "id": "comparator-negative",
+      "status": "pass",
+      "what": "official comparator rejects the configuration one unit stronger: Const does not match ... decimalExponentC588MHH",
+      "log": "logs/colab/final-C588MHH-cmp-neg.out"
+    },
+    {
+      "id": "control",
+      "status": "pass",
+      "what": "C588MH, the hosted network with the empty host table: Compare.lean PASS at 1 - 13552606/10^10 (the c588m figure), negative FAIL; comparator accepted, negative rejected",
+      "log": "logs/colab/final-C588MH.out"
+    },
+    {
+      "id": "static-checks",
+      "status": "pass",
+      "what": "tools/community/package_check.py check on the Mac: checksums, the statement equal to OpenAI's up to the exponent and the names, the negative statement one unit stronger, the exponent of Goal.lean, the comparator configurations, the module list, no forbidden word in the Lean code",
+      "log": "logs/static-check.txt"
+    },
+    {
+      "id": "rebuild-skeptic",
+      "status": "pass",
+      "what": "an independent agent compiled the 32 modules of the main result (all but the control) from a fresh copy of the sources, byte-identical to the Colab tree's, in import order into its own build folder on the first Colab machine, over the c588m build's compiled files (read only): all exit 0; Compare.lean PASS, negative FAIL on decimalExponentC588MHH; standard axioms, also for XHost.engine_of_ginv_host. It did not run the comparator",
+      "log": "logs/rebuild-skeptic/a.summary"
+    },
+    {
+      "id": "host-table-negative-control",
+      "status": "not shown",
+      "what": "a host table with one remainder off by one is rejected by hostSchedK: run on the Mac on an earlier split of the data modules; that test and its log are not in this package",
+      "log": ""
+    },
+    {
+      "id": "supporting-lemmas",
+      "status": "pass",
+      "what": "L1 and L2 (supporting/) compiled on the Mac, no sorry, standard axioms; the logs' home-folder paths are shortened",
+      "log": "supporting/L2/logs/XHost_HostBank.log"
+    },
+    {
+      "id": "bigospeedrun-verifier",
+      "status": "not run",
+      "what": "the leaderboard's own verifier has not been run on this package, neither online nor offline",
+      "log": ""
+    },
+    {
+      "id": "supporting-L1-skeptic",
+      "status": "pass",
+      "log": "supporting/L1/skeptic/logs/XHost_L1.log",
+      "what": "an independent agent rebuilt L1 on the Mac from its own clean copy, with Shea's Work/Gauge/Defs.lean taken from his tree: exit 0, standard axioms; it also compiled its own link to the network windows (Tie.lean) and re-ran the exact seam check (logs/seam_check.log: ALL SEAM CHECKS PASS). report.txt is its written verdict"
+    },
+    {
+      "id": "supporting-L2-skeptic",
+      "status": "pass",
+      "log": "supporting/L2/skeptic/logs/XHost_HostBank.log",
+      "what": "an independent agent rebuilt the L2 modules on the Mac from unchanged copies, with Shea's Work/Bank401/Adapt.lean taken from his tree, plus an audit module of its own (VHost/Audit.lean): all exit 0, standard axioms. L2 is a supporting lemma; the checked result does not import it. report.txt is its written verdict"
+    }
+  ],
+  "machine": "Google Colab VM: Linux x86-64, Intel Xeon 2.20 GHz, 8 logical processors, 51 GiB, kernel 6.6.122+ without Landlock, no systemd",
+  "credits": [
+    "Jeremy Kothe: the #588 atm3 circuit (CrocSwap/integer-mult-bounds), with the predecessors its notices name",
+    "Ryan Shea: the conversion pipeline, the generators, the Lean instantiation of #588 (shea256/fourier-transform-below-nlogn, lean/complex588), and the lemmas that L1 restates (B401.gauged_step, B401.gauged_Wn, GX.entW_spec, GX.entW_form, GX.gauge_step)",
+    "Nil Mamano: the Lean files of the nine-stage network that Shea's tree takes from his leaderboard submission (bigospeedrun/verifier 0253960, nmamano-dft-record): the gauged extension (GInvE), the network G401 (Work/Bridge401: GNetDef, GNetStage, GGeom, GNetCert, written by his gen401.py), the bank lemmas (Work/Bank401: bank_adapt, bank_pad, bank_frames), the bank-table checker schedK, the end theorem GX.engine_of_ginv_401 (Work/Bridge401/End.lean) and the Fourier chain templates. HDef, HStage, HGeom and HCert copy his network files with hosting added; HEnd adapts his End.lean; host_adapt, host_pad, slot_frames and host_frames (Frames.lean) adapt his bank lemmas; hostSchedK is modelled on schedK and copies its list lemmas",
+    "DaysSky: the bridged layout B_K the network starts from (#363); idle-axis hosting (pull request #442 of CrocSwap/integer-mult-bounds), the idea this package proves in Lean, with the written proof (research/idle-axis-hosting/PROOF.md) that it follows for hosts within one run, and the layout of its integer programme (hosting_core)",
+    "Zhihao Chen (jacklightChen): the compressed nine-stage layout with its banks and padding (#377); the written scalar-interface argument for mutable sources (pull request #425 of CrocSwap/integer-mult-bounds)",
+    "Dugongue: the entrance gauges and the residual banks (#401)",
+    "lydakis: the bank patterns (#275)",
+    "the authors of CrocSwap/integer-mult-bounds",
+    "OpenAI: the model, the statements and the all-length reduction",
+    "Jacob Sussman (this repository): the original Lean engine and core_nested that the gauges and this proof run on; the Lean proof of mutable sources (Work/XMut); for same-run hosting, adding hosting to Mamano's network (Work/XHost), the checker hostSchedK and its soundness HostSched.ofTab_fitsR, the host table and the instances C588MHH and C588MH; the generators; and the supporting lemmas L1 and L2, which the result does not import"
+  ]
+}

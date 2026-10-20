@@ -1,0 +1,73 @@
+Tue Oct 13 20:06:06 EDT 2026
+  alpha=00000 x1: rows 496 part 23
+  alpha=00100 x3: rows 496 part 23
+  alpha=01100 x3: rows 496 part 23
+  alpha=11100 x1: rows 496 part 23
+  alpha=00001 x2: rows 496 part 23
+  alpha=00101 x6: rows 496 part 23
+  alpha=01101 x6: rows 496 part 23
+  alpha=11101 x2: rows 496 part 23
+  alpha=00011 x1: rows 496 part 23
+  alpha=00111 x3: rows 496 part 23
+  alpha=01111 x3: rows 496 part 23
+  alpha=11111 x1: rows 496 part 23
+m=5 Lambda^1 (x) Lambda^2 J=[1]: dim N 992; cap (exact) 480; f(B_2 (x) I_3) [float] = 736; bound 736/480 = 1.533333 moves per array  (3.8s)
+  alpha=00000 x1: rows 496 part 27
+  alpha=01000 x2: rows 496 part 27
+  alpha=11000 x1: rows 496 part 27
+  alpha=00001 x3: rows 496 part 27
+  alpha=01001 x6: rows 496 part 27
+  alpha=11001 x3: rows 496 part 27
+  alpha=00011 x3: rows 496 part 27
+  alpha=01011 x6: rows 496 part 27
+  alpha=11011 x3: rows 496 part 27
+  alpha=00111 x1: rows 496 part 27
+  alpha=01111 x2: rows 496 part 27
+  alpha=11111 x1: rows 496 part 27
+m=5 Lambda^1 (x) Lambda^2 J=[1]: dim N 992; cap (exact) 480; f(B_3 (x) I_2) [float] = 864; bound 864/480 = 1.800000 moves per array  (4.4s)
+  alpha=00000 x1: rows 155 part 336
+  alpha=00100 x3: rows 155 part 336
+  alpha=01100 x3: rows 155 part 336
+  alpha=11100 x1: rows 155 part 336
+  alpha=00001 x2: rows 310 part 337
+  alpha=00101 x6: rows 310 part 337
+  alpha=01101 x6: rows 310 part 337
+  alpha=11101 x2: rows 310 part 337
+  alpha=00011 x1: rows 310 part 351
+  alpha=00111 x3: rows 310 part 351
+  alpha=01111 x3: rows 310 part 351
+  alpha=11111 x1: rows 310 part 351
+m=5 Lambda^1 (x) Lambda^3 J=[1]: dim N 14880; cap (exact) 6960; f(B_2 (x) I_3) [float] = 10888; bound 10888/6960 = 1.564368 moves per array  (20.5s)
+  alpha=00000 x1: rows 155 part 401
+  alpha=01000 x2: rows 155 part 401
+  alpha=11000 x1: rows 155 part 401
+  alpha=00001 x3: rows 310 part 401
+  alpha=01001 x6: rows 310 part 401
+  alpha=11001 x3: rows 310 part 401
+  alpha=00011 x3: rows 310 part 401
+  alpha=01011 x6: rows 310 part 401
+  alpha=11011 x3: rows 310 part 401
+  alpha=00111 x1: rows 310 part 417
+  alpha=01111 x2: rows 310 part 417
+  alpha=11111 x1: rows 310 part 417
+m=5 Lambda^1 (x) Lambda^3 J=[1]: dim N 14880; cap (exact) 6960; f(B_3 (x) I_2) [float] = 12896; bound 12896/6960 = 1.852874 moves per array  (24.7s)
+  alpha=0000 x1: rows 546 part 1135
+  alpha=1000 x1: rows 546 part 1135
+  alpha=0001 x3: rows 546 part 1131
+  alpha=1001 x3: rows 546 part 1131
+  alpha=0011 x3: rows 546 part 1131
+  alpha=1011 x3: rows 546 part 1131
+  alpha=0111 x1: rows 273 part 1109
+  alpha=1111 x1: rows 273 part 1109
+m=4 Lambda^1 (x) Lambda^5 J=[1]: dim N 21840; cap (exact) 8008; f(B_3 (x) I_1) [float] = 18060; bound 18060/8008 = 2.255245 moves per array  (24.2s)
+  alpha=0000 x1: rows 8008 part 2379
+  alpha=1000 x1: rows 8008 part 2379
+  alpha=0001 x3: rows 8008 part 2379
+  alpha=1001 x3: rows 8008 part 2379
+  alpha=0011 x3: rows 8008 part 2379
+  alpha=1011 x3: rows 8008 part 2379
+  alpha=0111 x1: rows 8008 part 2379
+  alpha=1111 x1: rows 8008 part 2379
+m=4 Lambda^1 (x) Lambda^6 J=[1]: dim N 48048; cap (exact) 16016; f(B_3 (x) I_1) [float] = 38064; bound 38064/16016 = 2.376623 moves per array  (1067.6s)
+Tue Oct 13 20:25:25 EDT 2026
+exit 0

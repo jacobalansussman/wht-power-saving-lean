@@ -569,6 +569,11 @@ For the engine's own rules (*on paper*):
 
 3 arrays in 8 moves is open (the next note).
 
+*Added on 14 October 2026:* it is not open any more. Section 8 of
+[open-directions-3.md](open-directions-3.md) raises the bound of 105 W / 41 to 14 W / 5 = 2.8 W moves at block
+size 3, so 3 arrays need 9 moves, 4 arrays need 12, and at most 0.063 is saved. The proof and its skeptics'
+checks are in the agents' working notes (not shown).
+
 **The lesson I take from it.**
 
 - Before a search spends hours in the cheapest field, spend an hour asking whether a short argument empties

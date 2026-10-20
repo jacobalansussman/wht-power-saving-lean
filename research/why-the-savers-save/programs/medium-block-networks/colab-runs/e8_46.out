@@ -1,0 +1,4 @@
+E8: n=120 k=9 omega=8 maximum cliques=2025 (0.1 s)
+  d=4: 3309747 subspaces, Tmax=918 of 2025 -> floor contribution 70.59 per call (33 s)
+  d=6: 788035 subspaces, Tmax=1785 of 2025 -> floor contribution 54.45 per call (16 s)
+E8: centre floor over d in [4, 6]: 54.45 per call

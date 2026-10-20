@@ -1,0 +1,5 @@
+== A633:1: frames 20, m 3, twists 360, free 18, target orbit 1, D 5, split None
+A633:1 M=1 new canonical states 2 max(L1+L2) 1 (I) holds goal 0 [0s]
+A633:1 M=2 new canonical states 57 max(L1+L2) 2 (I) holds goal 0 [0s]
+A633:1 M=3 new canonical states 2890 max(L1+L2) 3 (I) holds goal 0 [22s]
+A633:1 M=4 successors 773112 (I) holds goal 0 | M=5: tested 79064, goal-in-one 0 [24s]

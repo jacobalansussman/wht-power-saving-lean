@@ -1,0 +1,4 @@
+P112: n=112 k=9 omega=8 maximum cliques=1260 (0.0 s)
+  d=4: 3309747 subspaces, Tmax=612 of 1260 -> floor contribution 65.88 per call (28 s)
+  d=6: 788035 subspaces, Tmax=1155 of 1260 -> floor contribution 52.36 per call (14 s)
+P112: centre floor over d in [4, 6]: 52.36 per call

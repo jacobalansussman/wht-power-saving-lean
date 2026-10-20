@@ -1,0 +1,52 @@
+Rebuild of these files for this revision, 19 October 2026, 18:37-18:50 UTC, on a Linux machine of Google's Colab
+service (8 processors, about 50 GB), in a fresh copy of Ryan Shea's Lean tree (lean/complex588 at commit 5239484;
+Lean v4.34.1, Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612), with PfLean/*.lean copied to Work/PfLean/.
+
+Command: lake build Work.PfLean.Dem3Final Work.PfLean.Statements Work.PfLean.NegControl   (exit code 0)
+Wall time 11 min 16 s; user time 716 s; peak memory 10.06 GB (the eight kernel checks of Dem3Check).
+
+SHA-256 of the sources built (identical to the files in PfLean/):
+70922a0a22d55a099e54c368b564256e7a6616937863319d4544164efe3623c6  Bounds.lean
+8f9881334f48736e7d27d8bbc50a374936ec3f1192dca931736ad450b2ddd2df  Dem2.lean
+c026faf46c7690e7baaa7ed8ef7585b0bbeac6e9d5c9a8f84408e0bfa0ba6ff7  Dem3.lean
+ad4412918b478964917dffa2c5666687cb4f93c887fbfe19ec55678523a44c32  Dem3Check.lean
+0982f9cf408a7d2f930b4e65d1e2b1bd6a22b3c0601c372886fa7d9bf4c0cc52  Dem3Data.lean
+85c7d312667efa7ef568164538fe5ab503ee6e874f7743dfa08c42e17c3856dc  Dem3Defs.lean
+1661fe4c4c5d1e96c596d87f75007f630e725930d44a4e20d3629b73f4496333  Dem3Final.lean
+4e0f6cb4482b285fb8d26d77c0921b7a172add3bdb27a391645a9814abafb5d9  Hook.lean
+6c35c7f356d1df7d94c0e88445d531d590d5504fd3c0ea4dec8f2026999f93c9  NegControl.lean
+84b03f9c19e60d133530ec665a9d67321bf3e3ea5ae0f45806cb3b49ac9deedc  Statements.lean
+fecc04104b68a6b9bb4b578c31d91deb4a02e0c622ebe7aad68ae58b446098a6  TheoremR.lean
+
+Modules built (lake's own lines; the engine modules above them were already built in the base tree):
+⚠ [9023/9033] Built Work.PfLean.TheoremR (66s)
+✔ [9024/9033] Built Work.PfLean.Dem3Data (74s)
+⚠ [9025/9033] Built Work.PfLean.Hook (13s)
+✔ [9026/9033] Built Work.PfLean.Dem3Defs (7.4s)
+ℹ [9027/9033] Built Work.PfLean.NegControl (11s)
+⚠ [9028/9033] Built Work.PfLean.Dem2 (58s)
+⚠ [9029/9033] Built Work.PfLean.Bounds (8.9s)
+⚠ [9030/9033] Built Work.PfLean.Dem3 (15s)
+ℹ [9031/9033] Built Work.PfLean.Dem3Check (562s)
+ℹ [9032/9033] Built Work.PfLean.Dem3Final (7.4s)
+ℹ [9033/9033] Built Work.PfLean.Statements (6.7s)
+
+Axioms printed:
+Work/PfLean/TheoremR.lean:396:0: 'OAI.PowerSaving.PfLean.engine_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Hook.lean:448:0: 'OAI.PowerSaving.PfLean.hook_kept' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Hook.lean:449:0: 'OAI.PowerSaving.PfLean.hook_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/NegControl.lean:15:0: 'OAI.PowerSaving.PfLean.Dem3Comp.neg_control' depends on axioms: [propext]
+Work/PfLean/Dem2.lean:156:0: 'OAI.PowerSaving.PfLean.dem2' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Bounds.lean:70:0: 'OAI.PowerSaving.PfLean.hook_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Bounds.lean:71:0: 'OAI.PowerSaving.PfLean.block2_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Bounds.lean:72:0: 'OAI.PowerSaving.PfLean.block3_bound_of_dem' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Bounds.lean:73:0: 'OAI.PowerSaving.PfLean.block3_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Dem3.lean:432:0: 'OAI.PowerSaving.PfLean.Dem3.dem3_of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Dem3Check.lean:24:0: 'OAI.PowerSaving.PfLean.Dem3Comp.blkOK' depends on axioms: [propext]
+Work/PfLean/Dem3Final.lean:29:0: 'OAI.PowerSaving.PfLean.dem3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Dem3Final.lean:30:0: 'OAI.PowerSaving.PfLean.block3_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Statements.lean:18:0: 'OAI.PowerSaving.PfLean.dem3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Statements.lean:19:0: 'OAI.PowerSaving.PfLean.block3_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/PfLean/Statements.lean:20:0: 'OAI.PowerSaving.PfLean.block2_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Errors, sorry, native_decide in the log: 0

@@ -1,0 +1,6 @@
+P=1 stages=3 m= 25: D/replica   32; idle cover/call     0.0, hosted/call     0.0 of 3778, to banks/call  3778.0; T=200 W=135472 banks=90672  price <= 7.3057223e-04 (x0.435 of the hub)
+P=2 stages=5 m= 41: D/replica  128; idle cover/call  1792.0, hosted/call  1748.8 of 3778, to banks/call  2029.2; T=328 W=228112 banks=81168  price <= 1.4666649e-03 (x0.873 of the hub)
+P=3 stages=7 m= 57: D/replica  224; idle cover/call  3584.0, hosted/call  3443.3 of 3778, to banks/call   334.7; T=152 W=108392 banks=6248  price <= 1.6523260e-03 (x0.984 of the hub)
+P=4 stages=9 m= 73: D/replica  320; idle cover/call  5376.0, hosted/call  3778.0 of 3778, to banks/call     0.0; T=8 W=7168 banks=0  price <= 1.6647327e-03 (x0.991 of the hub)
+P=5 stages=11 m= 89: D/replica  416; idle cover/call  7168.0, hosted/call  3778.0 of 3778, to banks/call     0.0; T=8 W=8960 banks=0  price <= 1.6493457e-03 (x0.982 of the hub)
+calibration: P=4 must equal an-ours exact fill 1.6647327e-3: 1.6647327e-03 True

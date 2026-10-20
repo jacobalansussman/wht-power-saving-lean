@@ -1,0 +1,18 @@
+{
+  "status": "PASS_STANDARD_AND_OPTIMIZED_REPLAY_AND_REGENERATION",
+  "standard_replay": "PASS, controls4/4",
+  "optimized_replay": "PASS, controls4/4",
+  "uniform_gain_standard_and_optimized": "PASS exact rational certificate",
+  "regenerated_artifacts_exact_sha256_match": [
+    "FILL.json.gz",
+    "PROFILE.json"
+  ],
+  "verifier_sha256": "5c2b43cb3312c8637e149e8ef4cbeecc861658dd31c906e2f59c60e2618a67a9",
+  "generator_sha256": "cde41c3d00d349408599cd3098ed4a8a6bffe68fc32a666e3006b67937d1388f",
+  "gain_checker_sha256": "59b125e43dc1c1255f2c01d86ee9862f24c6fc46105f867a8b03c125f85628dc",
+  "sources_manifest_sha256": "fa36ba9945a512eda3e842154901d9d3542415e08fba87a89696b5035cb5c2b4",
+  "check_receipt_sha256": "d58b44e6587b2ad5ebee3afd2c5a76056df9248743a76665722430295b480ad8",
+  "byte_identity_environment": "Windows CPython 3.12.10; mathematical payload regeneration is portable, while gzip headers/text newlines may differ on other platforms.",
+  "formatting_only_verifier_predecessor_sha256": "88315789a3f6e9296da6dcad46c0bbbc8e26c798980be32187b3fca405ae9df5",
+  "post_format_replay": "Normal and optimized replay rechecked in final publication pipeline; mathematical source changes are whitespace only."
+}

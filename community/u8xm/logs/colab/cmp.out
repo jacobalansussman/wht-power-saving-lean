@@ -1,0 +1,75 @@
++ N=U8XM
++ P=/content/work/k-combine/lean/complex588
++ LOGD=/content/work/logs/k-combine/cmp
+++ echo U8XM
+++ tr A-Z a-z
++ n=u8xm
++ mkdir -p /content/work/logs/k-combine/cmp
++ cd /content/work/k-combine/lean/complex588
++ TC=/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin
++ for L in kcomb-$N-pos kcomb-$N-neg
++ C=comparator/fourier-u8xm.json
++ '[' kcomb-U8XM-pos = kcomb-U8XM-neg ']'
++ mkdir -p /content/work/cc/scratch-kcomb-U8XM-pos
++ chown -R 65534:65534 /content/work/k-combine/lean/complex588/.lake /content/work/cc/scratch-kcomb-U8XM-pos
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 0 -ge 2 ']'
+++ date -u
+++ sha256sum comparator/fourier-u8xm.json
++ echo '=== kcomb-U8XM-pos START Tue Oct 13 20:32:35 UTC 2026 config: b7f67740cfd04b4edb00fe03280f31cc4f7281782aaf3ec02c8450a84c47b3ae  comparator/fourier-u8xm.json'
+=== kcomb-U8XM-pos START Tue Oct 13 20:32:35 UTC 2026 config: b7f67740cfd04b4edb00fe03280f31cc4f7281782aaf3ec02c8450a84c47b3ae  comparator/fourier-u8xm.json
+++ date +%s
++ s=1791923555
++ env -i PATH=/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin:/content/work/cc/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin HOME=/content/work/cc/home LANG=C.UTF-8 JAIL_TMP=/content/work/cc/scratch-kcomb-U8XM-pos /usr/bin/time -v -o /content/work/logs/k-combine/cmp/kcomb-U8XM-pos.time /content/work/cc/jail2.sh /content/work/k-combine/lean/complex588 /bin/sh -c 'exec lake env /bin/sh -c '\''PATH=/content/work/cc/fresh-bin:$PATH; export PATH; exec comparator comparator/fourier-u8xm.json'\'''
++ rc=0
+++ date +%s
+++ date -u
++ echo '=== kcomb-U8XM-pos END rc=0 wall=1026s Tue Oct 13 20:49:41 UTC 2026'
+=== kcomb-U8XM-pos END rc=0 wall=1026s Tue Oct 13 20:49:41 UTC 2026
++ tail -5 /content/work/logs/k-combine/cmp/kcomb-U8XM-pos.log
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
++ grep -E 'Maximum resident|Elapsed|Exit status' /content/work/logs/k-combine/cmp/kcomb-U8XM-pos.time
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 17:06.30
+	Maximum resident set size (kbytes): 6995236
+	Exit status: 0
++ for L in kcomb-$N-pos kcomb-$N-neg
++ C=comparator/fourier-u8xm.json
++ '[' kcomb-U8XM-neg = kcomb-U8XM-neg ']'
++ C=comparator/fourier-u8xm-neg.json
++ mkdir -p /content/work/cc/scratch-kcomb-U8XM-neg
++ chown -R 65534:65534 /content/work/k-combine/lean/complex588/.lake /content/work/cc/scratch-kcomb-U8XM-neg
+++ ps -C lean -o rss=
+++ awk '$1>2000000'
+++ wc -l
++ '[' 0 -ge 2 ']'
+++ date -u
+++ sha256sum comparator/fourier-u8xm-neg.json
++ echo '=== kcomb-U8XM-neg START Tue Oct 13 20:49:46 UTC 2026 config: 267c58f471f052663a04819386e7760a942b12bf07fe935e5302154a8ffb09af  comparator/fourier-u8xm-neg.json'
+=== kcomb-U8XM-neg START Tue Oct 13 20:49:46 UTC 2026 config: 267c58f471f052663a04819386e7760a942b12bf07fe935e5302154a8ffb09af  comparator/fourier-u8xm-neg.json
+++ date +%s
++ s=1791924586
++ env -i PATH=/content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin:/content/work/cc/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin HOME=/content/work/cc/home LANG=C.UTF-8 JAIL_TMP=/content/work/cc/scratch-kcomb-U8XM-neg /usr/bin/time -v -o /content/work/logs/k-combine/cmp/kcomb-U8XM-neg.time /content/work/cc/jail2.sh /content/work/k-combine/lean/complex588 /bin/sh -c 'exec lake env /bin/sh -c '\''PATH=/content/work/cc/fresh-bin:$PATH; export PATH; exec comparator comparator/fourier-u8xm-neg.json'\'''
++ rc=1
+++ date +%s
+++ date -u
++ echo '=== kcomb-U8XM-neg END rc=1 wall=185s Tue Oct 13 20:52:51 UTC 2026'
+=== kcomb-U8XM-neg END rc=1 wall=185s Tue Oct 13 20:52:51 UTC 2026
++ tail -5 /content/work/logs/k-combine/cmp/kcomb-U8XM-neg.log
+info: Work/FourierU8XM/Seam.lean:172:0: 'OAI.PowerSaving.SeamU8XM.alphaU8XM_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierU8XM/Seam.lean:173:0: 'OAI.PowerSaving.hillsU8XM_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9301 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OAI.PowerSaving.transform_mainU8XM, OAI.PowerSaving.convolution_mainU8XM, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Work.FourierU8XM.Main
+uncaught exception: Const does not match between challenge and target 'OAI.PowerSaving.decimalExponentU8XM'
++ grep -E 'Maximum resident|Elapsed|Exit status' /content/work/logs/k-combine/cmp/kcomb-U8XM-neg.time
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:05.39
+	Maximum resident set size (kbytes): 6822612
+	Exit status: 1
++ echo CMPDONE
+CMPDONE
+RUN2 END Tue Oct 13 20:52:51 UTC 2026

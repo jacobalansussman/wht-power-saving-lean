@@ -1,0 +1,8 @@
+ℹ [2/34] Replayed Work.XHostT.KGlue
+info: Work/XHostT/KGlue.lean:53:0: 'OAI.PowerSaving.XHostT.K.KOK.one' depends on axioms: [propext, Quot.sound]
+info: Work/XHostT/KGlue.lean:54:0: 'OAI.PowerSaving.XHostT.K.KOK.app' depends on axioms: [propext, Quot.sound]
+ℹ [7/34] Replayed Work.XHostT.Data.S5H.Heads
+info: Work/XHostT/Data/S5H/Heads.lean:20:0: 'OAI.PowerSaving.XHostT.K.DS5H.heads_cnt' depends on axioms: [propext]
+info: Work/XHostT/Data/S5H/Heads.lean:21:0: 'OAI.PowerSaving.XHostT.K.DS5H.f1_cnt' depends on axioms: [propext]
+info: Work/XHostT/Data/S5H/Heads.lean:22:0: 'OAI.PowerSaving.XHostT.K.DS5H.res_eq01' depends on axioms: [propext]
+Build completed successfully (165 jobs).

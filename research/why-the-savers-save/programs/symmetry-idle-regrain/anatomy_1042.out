@@ -1,0 +1,70 @@
+child table: child rank pair side from->to  8*(to-from)
+   0  16  p1 s0  -1->1  16
+   1   8  p1 s0   1->2  8
+   2  16  p1 s1  -1->1  16
+   3   8  p1 s1   1->2  8
+   4  32  p2 s0  -1->3  32
+   5   8  p2 s0   3->4  8
+   6  32  p2 s1  -1->3  32
+   7   8  p2 s1   3->4  8
+   8  48  p3 s0  -1->5  48
+   9   8  p3 s0   5->6  8
+  10  48  p3 s1  -1->5  48
+  11   8  p3 s1   5->6  8
+  12  48  p0 s0   2->8  48
+  13  48  p0 s1   2->8  48
+  14  32  p1 s0   4->8  32
+  15  32  p1 s1   4->8  32
+  16  16  p2 s0   6->8  16
+  17  16  p2 s1   6->8  16
+unit-vector axes? (child, all unit): [((0, False), 112), ((1, True), 112), ((2, False), 112), ((3, True), 112), ((4, False), 112), ((5, True), 112), ((6, False), 112), ((7, True), 112), ((8, False), 112), ((9, True), 112), ((10, False), 112), ((11, True), 112), ((12, True), 112), ((13, True), 112), ((14, True), 112), ((15, True), 112), ((16, True), 112), ((17, True), 112)]
+family (pair, side, children, sum ranks, rank of union): ports
+  (0, 0, (12,), 48, 48) 112
+  (0, 1, (13,), 48, 48) 112
+  (1, 0, (0, 1, 14), 56, 56) 112
+  (1, 1, (2, 3, 15), 56, 56) 112
+  (2, 0, (4, 5, 16), 56, 56) 112
+  (2, 1, (6, 7, 17), 56, 56) 112
+  (3, 0, (8, 9), 56, 56) 112
+  (3, 1, (10, 11), 56, 56) 112
+port 0 child 8 axes (first 12 as bit lists): [[0, 2, 3], [1, 2, 3], [0, 1, 2], [4], [5], [6], [7], [8], [9], [10], [11], [12]]
+port 0 child 10 axes (first 12 as bit lists): [[0, 2, 3], [1, 2, 3], [0, 1, 2], [4], [5], [6], [7], [8], [9], [10], [11], [12]]
+port 0 child 12 axes (first 12 as bit lists): [[25], [26], [27], [28], [29], [30], [31], [32], [33], [34], [35], [36]]
+port 0 child 13 axes (first 12 as bit lists): [[25], [26], [27], [28], [29], [30], [31], [32], [33], [34], [35], [36]]
+remainders (child, child rank, remainder): count
+  (0, 16, 3) 126
+  (0, 16, 7) 3
+  (0, 16, 16) 18
+  (2, 16, 3) 258
+  (4, 32, 1) 80
+  (6, 32, 1) 1267
+  (8, 48, 1) 1
+  (8, 48, 48) 590
+  (10, 48, 48) 1721
+  (12, 48, 3) 4
+  (12, 48, 48) 1505
+  (13, 48, 3) 3
+  (13, 48, 48) 1034
+  (14, 32, 1) 94
+  (15, 32, 1) 807
+  (15, 32, 2) 1
+  (15, 32, 3) 9
+  (16, 16, 16) 29
+same family (replica,pair,side,port) holding a 1/3 remainder AND a 48 remainder: 0
+same replica+port, different family: (48-children, 1/3-children): count  [top 12]
+  ((10, 12), (6, 15)) 182
+  ((10, 12, 13), (6,)) 174
+  ((10, 12, 13), (6, 15)) 155
+  ((10, 12), (6,)) 100
+  ((10, 12), (15,)) 80
+  ((8, 10), (6,)) 54
+  ((10, 12, 13), (0, 2, 6, 15)) 50
+  ((10, 12, 13), (2, 6)) 43
+  ((8, 12, 13), (6,)) 37
+  ((10, 12, 13), (0, 6, 15)) 34
+  ((8, 10, 12), (6,)) 29
+  ((10, 12, 13), (15,)) 29
+total (replica,port) with both: 1465
+hosted idle remainder children: 7550 keys ['child', 'family', 'hosted', 'pending_offset', 'port', 'rank', 'replica', 'replicas']
+hosted remainder ranks: {1: 2249, 2: 1, 3: 400, 7: 3, 16: 47, 48: 4850}
+family formula check f = rep*8V + (2*pair+side)*V + port: True

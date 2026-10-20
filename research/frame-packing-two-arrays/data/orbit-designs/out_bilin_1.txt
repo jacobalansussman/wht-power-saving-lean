@@ -1,0 +1,20 @@
+design two m=4 seed=152 trial=0: psilin=11 psinum=00 exact=cc orbits=[('stab', 'R1', 1, 2, 1, 6), ('stab', 'R2', 0, 0, 3, 3), ('stab', 'B', 0, 1, 6, 6), ('cycle', 'B', 0, 0, 5, 7)]
+   psi system: 240 rows x 9 states, 22 orbit scalars, max degree 3
+   outputs [0]: smallest psi residual with ONE choice of orbit scalars: 1.71e-05 (per output ['1.7e-05'], |beta| 0.0, |c| 5.84e+04); a pass needs 0
+   outputs [1]: smallest psi residual with ONE choice of orbit scalars: 0.0111 (per output ['0.011'], |beta| 0.0, |c| 179); a pass needs 0
+   outputs [0, 1]: smallest psi residual with ONE choice of orbit scalars: 0.919 (per output ['0.51', '0.76'], |beta| 0.664, |c| 2.29); a pass needs 0
+design two m=4 seed=152 trial=1: psilin=11 psinum=00 exact=cc orbits=[('stab', 'Rt', 0, 0, 0, 6), ('stab', 'A', 0, 2, 5, 4), ('stab', 'A', 1, 1, 4, 6), ('stab', 'A', 0, 2, 5, 6)]
+   psi system: 53 rows x 9 states, 22 orbit scalars, max degree 2
+   outputs [0]: smallest psi residual with ONE choice of orbit scalars: 5.68e-05 (per output ['5.7e-05'], |beta| 0.0, |c| 1.76e+04); a pass needs 0
+   outputs [1]: smallest psi residual with ONE choice of orbit scalars: 1.02e-17 (per output ['1e-17'], |beta| 1.0, |c| 10.3); a pass needs 0
+   outputs [0, 1]: smallest psi residual with ONE choice of orbit scalars: 0.408 (per output ['0.41', '3.8e-05'], |beta| 1.0, |c| 2.76e+03); a pass needs 0
+design two m=4 seed=151 trial=1: psilin=11 psinum=00 exact=cc orbits=[('perm', 'R2', 0, 1, 4, 3), ('rand', 'R2', 0, 1, 2, 4), ('twof', 'R1', 0, 1, 0, 7), ('perm', 'B', 0, 0, 7, 2)]
+   psi system: 177 rows x 9 states, 16 orbit scalars, max degree 3
+   outputs [0]: smallest psi residual with ONE choice of orbit scalars: 2.22e-05 (per output ['2.2e-05'], |beta| 0.0, |c| 1.7e+04); a pass needs 0
+   outputs [1]: smallest psi residual with ONE choice of orbit scalars: 0.5 (per output ['0.5'], |beta| 0.815, |c| 931); a pass needs 0
+   outputs [0, 1]: smallest psi residual with ONE choice of orbit scalars: 0.607 (per output ['0.29', '0.53'], |beta| 0.373, |c| 5.31); a pass needs 0
+design two m=3 seed=451 trial=1: psilin=11 psinum=00 exact=cc orbits=[('twof', 'R1', 0, 1, 1, 7), ('twof', 'R2', 0, 0, 3, 7), ('rand', 'B', 0, 0, 5, 4), ('twof', 'R1', 1, 1, 2, 3)]
+   psi system: 182 rows x 7 states, 21 orbit scalars, max degree 4
+   outputs [0]: smallest psi residual with ONE choice of orbit scalars: 0.00222 (per output ['0.0022'], |beta| 0.048, |c| 20.2); a pass needs 0
+   outputs [1]: smallest psi residual with ONE choice of orbit scalars: 0.000556 (per output ['0.00056'], |beta| 0.0, |c| 1.8e+03); a pass needs 0
+   outputs [0, 1]: smallest psi residual with ONE choice of orbit scalars: 0.382 (per output ['0.0074', '0.38'], |beta| 1.114, |c| 38); a pass needs 0

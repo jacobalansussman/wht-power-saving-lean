@@ -1,0 +1,15 @@
+ℹ [5/19] Replayed Work.GCert.Data.Count
+info: Work/GCert/Data/Count.lean:44:0: 'GXD.wsumK_eq' depends on axioms: [propext]
+info: Work/GCert/Data/Count.lean:45:0: 'GXD.sum_of_wsumK' depends on axioms: [propext]
+ℹ [19/19] Replayed Work.GCert.Data.Gen.S5EHist
+info: Work/GCert/Data/Gen/S5EHist.lean:19:0: 'GXD.S5E.rankBound' does not depend on any axioms
+info: Work/GCert/Data/Gen/S5EHist.lean:20:0: 'GXD.S5E.rank0_ok' does not depend on any axioms
+info: Work/GCert/Data/Gen/S5EHist.lean:21:0: 'GXD.S5E.rank1_ok' does not depend on any axioms
+info: Work/GCert/Data/Gen/S5EHist.lean:22:0: 'GXD.S5E.rank2_ok' does not depend on any axioms
+info: Work/GCert/Data/Gen/S5EHist.lean:23:0: 'GXD.S5E.rank3_ok' does not depend on any axioms
+info: Work/GCert/Data/Gen/S5EHist.lean:24:0: 'GXD.S5E.rank4_ok' does not depend on any axioms
+info: Work/GCert/Data/Gen/S5EHist.lean:25:0: 'GXD.S5E.rank5_ok' does not depend on any axioms
+info: Work/GCert/Data/Gen/S5EHist.lean:26:0: 'GXD.S5E.rank6_ok' does not depend on any axioms
+info: Work/GCert/Data/Gen/S5EHist.lean:27:0: 'GXD.S5E.rank7_ok' does not depend on any axioms
+info: Work/GCert/Data/Gen/S5EHist.lean:28:0: 'GXD.S5E.rank8_ok' does not depend on any axioms
+Build completed successfully (19 jobs).

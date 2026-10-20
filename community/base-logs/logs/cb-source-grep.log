@@ -1,0 +1,14 @@
+lean files: 354
+-- word sorry, not in backticks:
+Work/FourierC588/UniformFourierChallenge.lean:327:  sorry
+Work/FourierC588/UniformFourierChallenge.lean:331:  sorry
+Work/FourierC588Neg/UniformFourierChallenge.lean:327:  sorry
+Work/FourierC588Neg/UniformFourierChallenge.lean:331:  sorry
+-- axiom decls:
+-- native_decide / implemented_by / extern / unsafe / ofReduceBool / opaque (code lines, not in backticks):
+-- skipKernelTC / debug options:
+-- bos stage sorry (not in backticks, .lake excluded):
+./VerifierChallenge.lean:334:  sorry
+./VerifierChallenge.lean:338:  sorry
+./VerifierChallenge.lean:351:  sorry
+-- bos stage axiom decls / native_decide etc (.lake excluded):

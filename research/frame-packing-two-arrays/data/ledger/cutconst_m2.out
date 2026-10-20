@@ -1,0 +1,14 @@
+m=2: |Gamma| = 15, valency 6, opposite per vertex 8, diameter 2 (0.0 s)
+  ball radius 0: ratio 1.000000
+  ball radius 1: ratio 1.000000
+  Voronoi <, d(F1,F2)=1: ratio 1.333333
+  Voronoi <=, d(F1,F2)=1: ratio 1.333333
+  Voronoi <, d(F1,F2)=2: ratio 1.083333
+  Voronoi <=, d(F1,F2)=2: ratio 1.083333
+  vector set w=1: ratio 1.500000 (2(1-2^-m) = 1.500000)
+  vector set w=4: ratio 1.500000 (2(1-2^-m) = 1.500000)
+  vector set w=5: ratio 1.500000 (2(1-2^-m) = 1.500000)
+  EXHAUSTIVE over all 16383 subsets: c_2 = 1.500000, attained by [0, 1, 2]
+RESULT m=2: c_m >= 1.500000 (m = 2; plain needs 2; engine floor 2) from: vector set w=1
+  best set size 3 of 15
+python3 cutconst.py 2  0.12s user 0.01s system 91% cpu 0.146 total

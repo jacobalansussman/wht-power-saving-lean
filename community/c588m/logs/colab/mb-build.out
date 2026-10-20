@@ -1,0 +1,593 @@
+MB START Tue Oct 13 15:50:53 UTC 2026 epoch=1791906653 base=/content/work/shea variant=annealed
+copy HEAD 52394849c7ecf3412d39b925d75fc7fdb98994d8; tracked changes: 0; olean files: 354
+PACKAGE-OK
+git status lines (new files are untracked): 72
+applied 74 lines to /content/work/mb/shea/lean/complex588 (annealed)
+BUILD START Tue Oct 13 15:50:53 UTC 2026 tree=/content/work/mb/shea/lean/complex588 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 pkg=/content/work/m-gen/c588m
+=== STEP 01-Work.XMut.Dirt START Tue Oct 13 16:02:26 UTC 2026 cmd: lake build Work.XMut.Dirt
+=== STEP 01-Work.XMut.Dirt END rc=0 wall=146s maxrss_kb=6725656 last: Build completed successfully (9050 jobs).
+=== STEP 02-Work.XMut.Scal START Tue Oct 13 16:05:04 UTC 2026 cmd: lake build Work.XMut.Scal
+=== STEP 02-Work.XMut.Scal END rc=0 wall=21s maxrss_kb=6836432 last: Build completed successfully (9096 jobs).
+=== STEP 03-Work.XMut.GInv START Tue Oct 13 16:05:37 UTC 2026 cmd: lake build Work.XMut.GInv
+=== STEP 03-Work.XMut.GInv END rc=0 wall=22s maxrss_kb=6874456 last: Build completed successfully (9116 jobs).
+=== STEP 04-Work.XMut.ScalarZ START Tue Oct 13 16:06:11 UTC 2026 cmd: lake build Work.XMut.ScalarZ
+=== STEP 04-Work.XMut.ScalarZ END rc=0 wall=22s maxrss_kb=6888144 last: Build completed successfully (9138 jobs).
+=== STEP 05-Work.XMut.ECheckZ START Tue Oct 13 16:07:08 UTC 2026 cmd: lake build Work.XMut.ECheckZ
+=== STEP 05-Work.XMut.ECheckZ END rc=0 wall=21s maxrss_kb=6847744 last: Build completed successfully (9140 jobs).
+=== STEP 06-Work.XMut.Labels START Tue Oct 13 16:09:12 UTC 2026 cmd: lake build Work.XMut.Labels
+=== STEP 06-Work.XMut.Labels END rc=0 wall=58s maxrss_kb=6827496 last: Build completed successfully (9150 jobs).
+=== STEP 07-Work.XMut.Glue START Tue Oct 13 16:10:22 UTC 2026 cmd: lake build Work.XMut.Glue
+=== STEP 07-Work.XMut.Glue END rc=0 wall=25s maxrss_kb=6851224 last: Build completed successfully (9178 jobs).
+=== STEP 08-Work.GCert.Data.Gen.C588M.S0 START Tue Oct 13 16:10:59 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588M.S0
+=== STEP 08-Work.GCert.Data.Gen.C588M.S0 END rc=0 wall=26s maxrss_kb=893924 last: Build completed successfully (4 jobs).
+=== STEP 09-Work.GCert.Data.Gen.C588M START Tue Oct 13 16:11:37 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588M
+=== STEP 09-Work.GCert.Data.Gen.C588M END rc=0 wall=2s maxrss_kb=843112 last: Build completed successfully (5 jobs).
+=== STEP 10-Work.GCert.Data.Gen.C588MHist START Tue Oct 13 16:11:51 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MHist
+=== STEP 10-Work.GCert.Data.Gen.C588MHist END rc=0 wall=5s maxrss_kb=845124 last: Build completed successfully (9 jobs).
+=== STEP 11-Work.GCert.Data.C588MPrice START Tue Oct 13 16:12:08 UTC 2026 cmd: lake build Work.GCert.Data.C588MPrice
+=== STEP 11-Work.GCert.Data.C588MPrice END rc=0 wall=17s maxrss_kb=6818084 last: Build completed successfully (9062 jobs).
+=== STEP 12-Work.GCert.Data.Gen.C588MGl START Tue Oct 13 16:12:37 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MGl
+=== STEP 12-Work.GCert.Data.Gen.C588MGl END rc=0 wall=2s maxrss_kb=844104 last: Build completed successfully (6 jobs).
+=== STEP 13-Work.GCert.Data.Gen.C588MPar START Tue Oct 13 16:12:51 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MPar
+=== STEP 13-Work.GCert.Data.Gen.C588MPar END rc=0 wall=2s maxrss_kb=844728 last: Build completed successfully (9 jobs).
+=== STEP 14-Work.GCert.Data.Gen.C588MEnd START Tue Oct 13 16:13:05 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MEnd
+=== STEP 14-Work.GCert.Data.Gen.C588MEnd END rc=0 wall=17s maxrss_kb=6926092 last: Build completed successfully (9150 jobs).
+=== STEP 15-Work.GCert.Data.Gen.C588MSeg0 START Tue Oct 13 16:13:34 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSeg0
+=== STEP 15-Work.GCert.Data.Gen.C588MSeg0 END rc=0 wall=5s maxrss_kb=845144 last: Build completed successfully (10 jobs).
+=== STEP 16-Work.GCert.Data.Gen.C588MSeg1 START Tue Oct 13 16:13:51 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSeg1
+=== STEP 16-Work.GCert.Data.Gen.C588MSeg1 END rc=0 wall=4s maxrss_kb=845124 last: Build completed successfully (10 jobs).
+=== STEP 17-Work.GCert.Data.Gen.C588MSeg2 START Tue Oct 13 16:14:07 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSeg2
+=== STEP 17-Work.GCert.Data.Gen.C588MSeg2 END rc=0 wall=5s maxrss_kb=844944 last: Build completed successfully (10 jobs).
+=== STEP 18-Work.GCert.Data.Gen.C588MSeg3 START Tue Oct 13 16:14:24 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSeg3
+=== STEP 18-Work.GCert.Data.Gen.C588MSeg3 END rc=0 wall=4s maxrss_kb=845352 last: Build completed successfully (10 jobs).
+=== STEP 19-Work.GCert.Data.Gen.C588MSegF START Tue Oct 13 16:14:40 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSegF
+=== STEP 19-Work.GCert.Data.Gen.C588MSegF END rc=0 wall=2s maxrss_kb=843020 last: Build completed successfully (10 jobs).
+=== STEP 20-Work.GCert.Data.Gen.C588MTab0 START Tue Oct 13 16:14:54 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MTab0
+=== STEP 20-Work.GCert.Data.Gen.C588MTab0 END rc=0 wall=2s maxrss_kb=844184 last: Build completed successfully (9 jobs).
+=== STEP 21-Work.GCert.Data.Gen.C588MTab1 START Tue Oct 13 16:15:08 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MTab1
+=== STEP 21-Work.GCert.Data.Gen.C588MTab1 END rc=0 wall=1s maxrss_kb=844856 last: Build completed successfully (9 jobs).
+=== STEP 22-Work.GCert.Data.Gen.C588MTab2 START Tue Oct 13 16:15:21 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MTab2
+=== STEP 22-Work.GCert.Data.Gen.C588MTab2 END rc=0 wall=2s maxrss_kb=844580 last: Build completed successfully (9 jobs).
+=== STEP 23-Work.GCert.Data.Gen.C588MTab3 START Tue Oct 13 16:15:35 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MTab3
+=== STEP 23-Work.GCert.Data.Gen.C588MTab3 END rc=0 wall=2s maxrss_kb=843780 last: Build completed successfully (9 jobs).
+=== STEP 24-Work.GCert.Data.C588MCert START Tue Oct 13 16:15:49 UTC 2026 cmd: lake build Work.GCert.Data.C588MCert
+=== STEP 24-Work.GCert.Data.C588MCert END rc=0 wall=16s maxrss_kb=6838972 last: Build completed successfully (9170 jobs).
+=== STEP 25-Work.GCert.Data.Gen.C588MScal0 START Tue Oct 13 16:16:17 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MScal0
+=== STEP 25-Work.GCert.Data.Gen.C588MScal0 END rc=0 wall=22s maxrss_kb=7284508 last: Build completed successfully (9141 jobs).
+=== STEP 26-Work.GCert.Data.Gen.C588MScal1 START Tue Oct 13 16:16:51 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MScal1
+=== STEP 26-Work.GCert.Data.Gen.C588MScal1 END rc=0 wall=22s maxrss_kb=7286076 last: Build completed successfully (9141 jobs).
+=== STEP 27-Work.GCert.Data.Gen.C588MScal2 START Tue Oct 13 16:17:25 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MScal2
+=== STEP 27-Work.GCert.Data.Gen.C588MScal2 END rc=0 wall=22s maxrss_kb=7283316 last: Build completed successfully (9141 jobs).
+=== STEP 28-Work.GCert.Data.Gen.C588MScal3 START Tue Oct 13 16:17:59 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MScal3
+=== STEP 28-Work.GCert.Data.Gen.C588MScal3 END rc=0 wall=22s maxrss_kb=7265804 last: Build completed successfully (9141 jobs).
+=== STEP 29-Work.GCert.Data.Gen.C588MYChk START Tue Oct 13 16:18:33 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MYChk
+=== STEP 29-Work.GCert.Data.Gen.C588MYChk END rc=0 wall=16s maxrss_kb=6873760 last: Build completed successfully (9141 jobs).
+=== STEP 30-Work.GCert.Data.C588MScalOK START Tue Oct 13 16:19:01 UTC 2026 cmd: lake build Work.GCert.Data.C588MScalOK
+=== STEP 30-Work.GCert.Data.C588MScalOK END rc=0 wall=16s maxrss_kb=6826372 last: Build completed successfully (9146 jobs).
+=== STEP 31-Work.GCert.Data.Gen.C588MEChk START Tue Oct 13 16:19:29 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MEChk
+=== STEP 31-Work.GCert.Data.Gen.C588MEChk END rc=0 wall=35s maxrss_kb=7276124 last: Build completed successfully (9144 jobs).
+=== STEP 32-Work.GCert.Data.RateC588Mx START Tue Oct 13 16:20:16 UTC 2026 cmd: lake build Work.GCert.Data.RateC588Mx
+=== STEP 32-Work.GCert.Data.RateC588Mx END rc=0 wall=24s maxrss_kb=3473984 last: Build completed successfully (3093 jobs).
+=== STEP 33-Work.GCert.Data.InstC588M START Tue Oct 13 16:20:52 UTC 2026 cmd: lake build Work.GCert.Data.InstC588M
+=== STEP 33-Work.GCert.Data.InstC588M END rc=0 wall=35s maxrss_kb=6779288 last: Build completed successfully (9040 jobs).
+=== STEP 34-Work.GCert.Data.Gen.C588MRows0 START Tue Oct 13 16:21:39 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows0
+=== STEP 34-Work.GCert.Data.Gen.C588MRows0 END rc=0 wall=3s maxrss_kb=844108 last: Build completed successfully (6 jobs).
+=== STEP 35-Work.GCert.Data.Gen.C588MRows1 START Tue Oct 13 16:21:54 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows1
+=== STEP 35-Work.GCert.Data.Gen.C588MRows1 END rc=0 wall=3s maxrss_kb=844872 last: Build completed successfully (6 jobs).
+=== STEP 36-Work.GCert.Data.Gen.C588MRows10 START Tue Oct 13 16:22:09 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows10
+=== STEP 36-Work.GCert.Data.Gen.C588MRows10 END rc=0 wall=3s maxrss_kb=845728 last: Build completed successfully (6 jobs).
+=== STEP 37-Work.GCert.Data.Gen.C588MRows11 START Tue Oct 13 16:22:24 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows11
+=== STEP 37-Work.GCert.Data.Gen.C588MRows11 END rc=0 wall=3s maxrss_kb=847572 last: Build completed successfully (6 jobs).
+=== STEP 38-Work.GCert.Data.Gen.C588MRows12 START Tue Oct 13 16:22:39 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows12
+=== STEP 38-Work.GCert.Data.Gen.C588MRows12 END rc=0 wall=3s maxrss_kb=844312 last: Build completed successfully (6 jobs).
+=== STEP 39-Work.GCert.Data.Gen.C588MRows13 START Tue Oct 13 16:22:54 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows13
+=== STEP 39-Work.GCert.Data.Gen.C588MRows13 END rc=0 wall=3s maxrss_kb=844896 last: Build completed successfully (6 jobs).
+=== STEP 40-Work.GCert.Data.Gen.C588MRows14 START Tue Oct 13 16:23:09 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows14
+=== STEP 40-Work.GCert.Data.Gen.C588MRows14 END rc=0 wall=2s maxrss_kb=844100 last: Build completed successfully (6 jobs).
+=== STEP 41-Work.GCert.Data.Gen.C588MRows15 START Tue Oct 13 16:23:23 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows15
+=== STEP 41-Work.GCert.Data.Gen.C588MRows15 END rc=0 wall=3s maxrss_kb=844740 last: Build completed successfully (6 jobs).
+=== STEP 42-Work.GCert.Data.Gen.C588MRows16 START Tue Oct 13 16:23:38 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows16
+=== STEP 42-Work.GCert.Data.Gen.C588MRows16 END rc=0 wall=3s maxrss_kb=847700 last: Build completed successfully (6 jobs).
+=== STEP 43-Work.GCert.Data.Gen.C588MRows17 START Tue Oct 13 16:23:53 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows17
+=== STEP 43-Work.GCert.Data.Gen.C588MRows17 END rc=0 wall=3s maxrss_kb=845260 last: Build completed successfully (6 jobs).
+=== STEP 44-Work.GCert.Data.Gen.C588MRows2 START Tue Oct 13 16:24:08 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows2
+=== STEP 44-Work.GCert.Data.Gen.C588MRows2 END rc=0 wall=3s maxrss_kb=843268 last: Build completed successfully (6 jobs).
+=== STEP 45-Work.GCert.Data.Gen.C588MRows3 START Tue Oct 13 16:24:23 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows3
+=== STEP 45-Work.GCert.Data.Gen.C588MRows3 END rc=0 wall=2s maxrss_kb=844896 last: Build completed successfully (6 jobs).
+=== STEP 46-Work.GCert.Data.Gen.C588MRows4 START Tue Oct 13 16:24:37 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows4
+=== STEP 46-Work.GCert.Data.Gen.C588MRows4 END rc=0 wall=3s maxrss_kb=845516 last: Build completed successfully (6 jobs).
+=== STEP 47-Work.GCert.Data.Gen.C588MRows5 START Tue Oct 13 16:24:52 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows5
+=== STEP 47-Work.GCert.Data.Gen.C588MRows5 END rc=0 wall=4s maxrss_kb=843956 last: Build completed successfully (6 jobs).
+=== STEP 48-Work.GCert.Data.Gen.C588MRows6 START Tue Oct 13 16:25:08 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows6
+=== STEP 48-Work.GCert.Data.Gen.C588MRows6 END rc=0 wall=3s maxrss_kb=844952 last: Build completed successfully (6 jobs).
+=== STEP 49-Work.GCert.Data.Gen.C588MRows7 START Tue Oct 13 16:25:23 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows7
+=== STEP 49-Work.GCert.Data.Gen.C588MRows7 END rc=0 wall=3s maxrss_kb=844440 last: Build completed successfully (6 jobs).
+=== STEP 50-Work.GCert.Data.Gen.C588MRows8 START Tue Oct 13 16:25:38 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows8
+=== STEP 50-Work.GCert.Data.Gen.C588MRows8 END rc=0 wall=3s maxrss_kb=847732 last: Build completed successfully (6 jobs).
+=== STEP 51-Work.GCert.Data.Gen.C588MRows9 START Tue Oct 13 16:25:53 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows9
+=== STEP 51-Work.GCert.Data.Gen.C588MRows9 END rc=0 wall=3s maxrss_kb=846544 last: Build completed successfully (6 jobs).
+=== STEP 52-Work.GCert.Data.Gen.C588MSched START Tue Oct 13 16:26:08 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSched
+=== STEP 52-Work.GCert.Data.Gen.C588MSched END rc=0 wall=58s maxrss_kb=8918488 last: Build completed successfully (9142 jobs).
+=== STEP 53-Work.GCert.Data.C588MGlue401 START Tue Oct 13 16:27:18 UTC 2026 cmd: lake build Work.GCert.Data.C588MGlue401
+=== STEP 53-Work.GCert.Data.C588MGlue401 END rc=0 wall=40s maxrss_kb=8202124 last: Build completed successfully (9263 jobs).
+=== STEP 54-Work.FourierC588M.Goal START Tue Oct 13 16:28:10 UTC 2026 cmd: lake build Work.FourierC588M.Goal
+=== STEP 54-Work.FourierC588M.Goal END rc=0 wall=18s maxrss_kb=6685564 last: Build completed successfully (8927 jobs).
+=== STEP 55-Work.FourierC588M.Seam START Tue Oct 13 16:28:40 UTC 2026 cmd: lake build Work.FourierC588M.Seam
+=== STEP 55-Work.FourierC588M.Seam END rc=0 wall=21s maxrss_kb=6878992 last: Build completed successfully (9268 jobs).
+=== STEP 56-Work.FourierC588M.SectorAlgorithm START Tue Oct 13 16:29:13 UTC 2026 cmd: lake build Work.FourierC588M.SectorAlgorithm
+=== STEP 56-Work.FourierC588M.SectorAlgorithm END rc=0 wall=21s maxrss_kb=6856412 last: Build completed successfully (9269 jobs).
+=== STEP 57-Work.FourierC588M.SynchronizedAlgorithm START Tue Oct 13 16:29:46 UTC 2026 cmd: lake build Work.FourierC588M.SynchronizedAlgorithm
+=== STEP 57-Work.FourierC588M.SynchronizedAlgorithm END rc=0 wall=23s maxrss_kb=6845044 last: Build completed successfully (9270 jobs).
+=== STEP 58-Work.FourierC588M.WorkingTransform START Tue Oct 13 16:41:17 UTC 2026 cmd: lake build Work.FourierC588M.WorkingTransform
+=== STEP 58-Work.FourierC588M.WorkingTransform END rc=0 wall=242s maxrss_kb=6767668 last: Build completed successfully (9271 jobs).
+=== STEP 59-Work.FourierC588M.WorkingCompiler START Tue Oct 13 16:45:31 UTC 2026 cmd: lake build Work.FourierC588M.WorkingCompiler
+=== STEP 59-Work.FourierC588M.WorkingCompiler END rc=0 wall=26s maxrss_kb=6878456 last: Build completed successfully (9272 jobs).
+=== STEP 60-Work.FourierC588M.WorkingPreparation START Tue Oct 13 16:46:09 UTC 2026 cmd: lake build Work.FourierC588M.WorkingPreparation
+=== STEP 60-Work.FourierC588M.WorkingPreparation END rc=0 wall=21s maxrss_kb=6954296 last: Build completed successfully (9273 jobs).
+=== STEP 61-Work.FourierC588M.ArbitraryLength START Tue Oct 13 16:46:42 UTC 2026 cmd: lake build Work.FourierC588M.ArbitraryLength
+=== STEP 61-Work.FourierC588M.ArbitraryLength END rc=0 wall=22s maxrss_kb=6886936 last: Build completed successfully (9274 jobs).
+=== STEP 62-Work.FourierC588M.TransformProgram START Tue Oct 13 16:47:16 UTC 2026 cmd: lake build Work.FourierC588M.TransformProgram
+=== STEP 62-Work.FourierC588M.TransformProgram END rc=0 wall=19s maxrss_kb=6892552 last: Build completed successfully (9275 jobs).
+=== STEP 63-Work.FourierC588M.ConvolutionProgram START Tue Oct 13 16:47:47 UTC 2026 cmd: lake build Work.FourierC588M.ConvolutionProgram
+=== STEP 63-Work.FourierC588M.ConvolutionProgram END rc=0 wall=19s maxrss_kb=6893732 last: Build completed successfully (9276 jobs).
+=== STEP 64-Work.FourierC588M.UniformBounds START Tue Oct 13 16:48:18 UTC 2026 cmd: lake build Work.FourierC588M.UniformBounds
+=== STEP 64-Work.FourierC588M.UniformBounds END rc=0 wall=18s maxrss_kb=6904136 last: Build completed successfully (9277 jobs).
+=== STEP 65-Work.FourierC588M.Asymptotics START Tue Oct 13 16:48:48 UTC 2026 cmd: lake build Work.FourierC588M.Asymptotics
+=== STEP 65-Work.FourierC588M.Asymptotics END rc=0 wall=23s maxrss_kb=6911020 last: Build completed successfully (9278 jobs).
+=== STEP 66-Work.FourierC588M.Main START Tue Oct 13 16:51:05 UTC 2026 cmd: lake build Work.FourierC588M.Main
+=== STEP 66-Work.FourierC588M.Main END rc=0 wall=25s maxrss_kb=6896420 last: Build completed successfully (9280 jobs).
+=== STEP 67-Work.FourierC588M.Axioms START Tue Oct 13 16:52:12 UTC 2026 cmd: lake build Work.FourierC588M.Axioms
+=== STEP 67-Work.FourierC588M.Axioms END rc=0 wall=28s maxrss_kb=6815012 last: Build completed successfully (9281 jobs).
+=== STEP 68-Work.GCert.Data.C588MControls START Tue Oct 13 16:52:52 UTC 2026 cmd: lake build Work.GCert.Data.C588MControls
+=== STEP 68-Work.GCert.Data.C588MControls END rc=0 wall=54s maxrss_kb=7269792 last: Build completed successfully (9184 jobs).
+=== STEP 69-Work.FourierC588M.UniformFourierChallenge START Tue Oct 13 17:02:52 UTC 2026 cmd: lake build Work.FourierC588M.UniformFourierChallenge
+=== STEP 69-Work.FourierC588M.UniformFourierChallenge END rc=0 wall=296s maxrss_kb=6668716 last: Build completed successfully (8924 jobs).
+=== STEP 70-Work.FourierC588MNeg.UniformFourierChallenge START Tue Oct 13 17:08:00 UTC 2026 cmd: lake build Work.FourierC588MNeg.UniformFourierChallenge
+=== STEP 70-Work.FourierC588MNeg.UniformFourierChallenge END rc=0 wall=55s maxrss_kb=6741844 last: Build completed successfully (8924 jobs).
+=== STEP axioms START Tue Oct 13 17:26:36 UTC 2026 cmd: lake env lean Work/FourierC588M/Axioms.lean
+=== STEP axioms END rc=0 wall=228s maxrss_kb=6650968 last: 'OAI.PowerSaving.RAM.hillsC588M_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== STEP compare-fourier START Tue Oct 13 17:30:24 UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierC588M.UniformFourierChallenge Work.FourierC588M.Main OAI.PowerSaving.transform_mainC588M OAI.PowerSaving.convolution_mainC588M
+=== STEP compare-fourier END rc=0 wall=134s maxrss_kb=15826276 last: RESULT: PASS
+=== STEP compare-negative START Tue Oct 13 17:32:38 UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierC588MNeg.UniformFourierChallenge Work.FourierC588M.Main OAI.PowerSaving.transform_mainC588M OAI.PowerSaving.convolution_mainC588M
+=== STEP compare-negative END rc=1 wall=101s maxrss_kb=16010056 last: RESULT: FAIL
+(negative control must be nonzero: rc=1)
+PASS positive comparison RESULT: PASS
+PASS negative comparison fails (rc != 0)
+PASS negative: definition body differs, decimalExponentC588M
+PASS no sorryAx
+PASS three theorems on [propext, Classical.choice, Quot.sound]
+ALL CHECKS PASSED
+info: Work/BlockAccounting/Moment.lean:139:0: 'OAI.PowerSaving.BlockAccounting.term_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:140:0: 'OAI.PowerSaving.BlockAccounting.log_le_of_le_expsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:141:0: 'OAI.PowerSaving.BlockAccounting.moment_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:142:0: 'OAI.PowerSaving.BlockAccounting.mem_keys_of_histFn_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Steps.lean:62:0: 'OAI.PowerSaving.BlockAccounting.moment_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Steps.lean:63:0: 'OAI.PowerSaving.BlockAccounting.histFn_eq_of_list' depends on axioms: [propext, Quot.sound]
+info: Work/Carrier/Ring.lean:133:0: 'OAI.PowerSaving.CR.dirt_fwd' depends on axioms: [propext]
+info: Work/Carrier/Ring.lean:134:0: 'OAI.PowerSaving.CR.dirt_bwd' depends on axioms: [propext]
+info: Work/FoldRate/Arith.lean:136:0: 'OAI.PowerSaving.FoldRate.table_split' depends on axioms: [propext]
+info: Work/FoldRate/Arith.lean:137:0: 'OAI.PowerSaving.FoldRate.copies_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FoldRate/Arith.lean:138:0: 'OAI.PowerSaving.FoldRate.block_arith' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FoldRate/Arith.lean:139:0: 'OAI.PowerSaving.FoldRate.rank_arith' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FoldRate/Arith.lean:140:0: 'OAI.PowerSaving.FoldRate.spare_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Data/Count.lean:44:0: 'GXD.wsumK_eq' depends on axioms: [propext]
+info: Work/GCert/Data/Count.lean:45:0: 'GXD.sum_of_wsumK' depends on axioms: [propext]
+info: Work/Scratch/Engine.lean:1522:0: 'OAI.PowerSaving.RAM.recurse_runS' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1523:0: 'OAI.PowerSaving.RAM.engine_all_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1524:0: 'OAI.PowerSaving.RAM.engine_program_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1525:0: 'OAI.PowerSaving.RAM.hills_program_via_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1526:0: 'OAI.PowerSaving.RAM.LiveKernel.iff_erase_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1527:0: 'OAI.PowerSaving.RAM.no_erase_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1528:0: 'OAI.PowerSaving.RAM.Route.gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1529:0: 'OAI.PowerSaving.RAM.LiveKernel.of_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1530:0: 'OAI.PowerSaving.RAM.endpoint_reversible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1531:0: 'OAI.PowerSaving.RAM.endpoint_by_copy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1532:0: 'OAI.PowerSaving.two_stage_rate_28' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1533:0: 'OAI.PowerSaving.two_stage_rate_33' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1534:0: 'OAI.PowerSaving.RAM.two_stage_h24_if_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1535:0: 'OAI.PowerSaving.RAM.allotC_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Split.lean:257:0: 'OAI.PowerSaving.Binary.blockMat_eq_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Split.lean:258:0: 'OAI.PowerSaving.Binary.exists_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Split.lean:259:0: 'OAI.PowerSaving.Binary.linearIndependent_of_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Peel.lean:133:0: 'OAI.PowerSaving.Binary.Split.act' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Address.lean:181:0: 'OAI.PowerSaving.RAM.Gear.from_gridB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Address.lean:182:0: 'OAI.PowerSaving.RAM.Gear.to_gridB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Batches.lean:353:0: 'OAI.PowerSaving.RAM.Rig.open_blockB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Batches.lean:354:0: 'OAI.PowerSaving.RAM.Rig.sweepB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Recursion.lean:386:0: 'OAI.PowerSaving.RAM.amplifyB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Recursion.lean:387:0: 'OAI.PowerSaving.RAM.recurse_runB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Engine.lean:317:0: 'OAI.PowerSaving.RAM.allotB_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Engine.lean:318:0: 'OAI.PowerSaving.RAM.engine_all_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Engine.lean:319:0: 'OAI.PowerSaving.RAM.engine_program_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Bridge.lean:306:0: 'OAI.PowerSaving.RAM.engine_program_block_costR' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Bridge.lean:307:0: 'OAI.PowerSaving.RAM.engine_program_block_of_tally' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Bridge.lean:308:0: 'OAI.PowerSaving.RAM.hills_program_via_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Bridge.lean:309:0: 'OAI.PowerSaving.Binary.SwapEq.walk_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Frames.lean:327:0: 'OAI.PowerSaving.Binary.OBase.deltas_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Frames.lean:328:0: 'OAI.PowerSaving.Binary.OBase.reframe_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Paths.lean:416:0: 'OAI.PowerSaving.RAM.BRoute.parallel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Paths.lean:417:0: 'OAI.PowerSaving.RAM.BRoute.liveKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Paths.lean:418:0: 'OAI.PowerSaving.RAM.BPath.reframe' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Paths.lean:419:0: 'OAI.PowerSaving.RAM.engine_program_broute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Extras.lean:104:0: 'OAI.PowerSaving.RAM.allotB_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Extras.lean:105:0: 'OAI.PowerSaving.RAM.BRoute.shifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Extras.lean:106:0: 'OAI.PowerSaving.RAM.demo_block_engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:468:0: 'OAI.PowerSaving.RAM.hills_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:469:0: 'OAI.PowerSaving.WHT.wht_can' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:470:0: 'OAI.PowerSaving.WHT.wht_program_internal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:471:0: 'OAI.PowerSaving.WHT.wht_main' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/WHT.lean:213:0: 'OAI.PowerSaving.BlockWHT.wht_main_of_engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/WHT.lean:214:0: 'OAI.PowerSaving.BlockWHT.wht_main_of_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Port.lean:101:0: 'OAI.PowerSaving.RAM.BPath.parallel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Port.lean:102:0: 'OAI.PowerSaving.RAM.engine_program_bpath' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Majorant.lean:165:0: 'OAI.PowerSaving.RAM.engine_program_block_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Majorant.lean:166:0: 'OAI.PowerSaving.RAM.engine_program_broute_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Majorant.lean:167:0: 'OAI.PowerSaving.RAM.engine_program_block_jensen' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Exact.lean:647:0: 'OAI.PowerSaving.Binary.BWord.hist_of_listCost' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Exact.lean:648:0: 'OAI.PowerSaving.Binary.OBase.xreframe_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Exact.lean:649:0: 'OAI.PowerSaving.RAM.XRoute.parallel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Exact.lean:650:0: 'OAI.PowerSaving.RAM.XRoute.liveKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Exact.lean:651:0: 'OAI.PowerSaving.RAM.XPath.reframe' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Exact.lean:652:0: 'OAI.PowerSaving.RAM.engine_program_xcert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Combine/XG.lean:354:0: 'OAI.PowerSaving.RAM.XRoute.reach_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Combine/XG.lean:355:0: 'OAI.PowerSaving.CB.xmap1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Combine/XG.lean:356:0: 'OAI.PowerSaving.CB.xmap2' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Combine/XG.lean:357:0: 'OAI.PowerSaving.CB.xreach_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Combine/XG.lean:358:0: 'OAI.PowerSaving.CB.xreach_idle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Combine/XInvocation.lean:277:0: 'OAI.PowerSaving.CB.xinvocation_fwd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Combine/XInvocation.lean:278:0: 'OAI.PowerSaving.CB.xinvocation_bwd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Combine/Chunks.lean:725:0: 'SSC.Complete.xpath' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Bits.lean:216:0: 'GS.gAcc_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Bits.lean:217:0: 'GS.coef_wgt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Step.lean:169:0: 'GS.modK_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Step.lean:170:0: 'GS.gAdd_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Ops.lean:206:0: 'GS.gChunks_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Scat.lean:92:0: 'GS.gScat_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Fin.lean:178:0: 'GS.gPre_sound' depends on axioms: [propext]
+info: Work/GCert/Scalar/Fin.lean:179:0: 'GS.init_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/End.lean:148:0: 'GS.gFin_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/End.lean:149:0: 'GS.cont_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/End.lean:150:0: 'GS.cont_end' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/End.lean:151:0: 'GS.beqK_eq' depends on axioms: [propext]
+info: Work/GCert/Scalar/Runs.lean:188:0: 'GS.SegOK.append' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Runs.lean:189:0: 'GS.XRun.of_seg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Check.lean:143:0: 'GS.SegOK.of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Check.lean:144:0: 'GS.XRun.of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Check.lean:145:0: 'GS.YRun.of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Id.lean:212:0: 'GS.GRun_Cm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Id.lean:213:0: 'GS.scatFrom_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Basic.lean:123:0: 'OAI.PowerSaving.RAM.XRoute.reframe' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Basic.lean:124:0: 'OAI.PowerSaving.RAM.XRoute.reframe_actPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Basic.lean:125:0: 'OAI.PowerSaving.CB.XReach.mul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Erase.lean:169:0: 'OAI.PowerSaving.CB.xerase' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Erase.lean:170:0: 'OAI.PowerSaving.CB.erase_fwd_erase' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Erase.lean:171:0: 'OAI.PowerSaving.CB.erase_bwd_erase' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Erase.lean:172:0: 'OAI.PowerSaving.CB.shearF_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/FrameAlg.lean:153:0: 'OAI.PowerSaving.CB.frameM_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/FrameAlg.lean:154:0: 'OAI.PowerSaving.CB.frameM_add_reD' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/FrameAlg.lean:155:0: 'OAI.PowerSaving.Binary.OBase.mat_orth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/FrameAlg.lean:156:0: 'OAI.PowerSaving.CB.frame_mul_unframe' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Shared.lean:283:0: 'OAI.PowerSaving.CB.xinvocation_fwd_erased' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Shared.lean:284:0: 'OAI.PowerSaving.CB.xinvocation_bwd_erased' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Shared.lean:285:0: 'OAI.PowerSaving.CB.xinvocation_fwd_reframed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Shared.lean:286:0: 'OAI.PowerSaving.CB.xinvocation_bwd_reframed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Shared.lean:287:0: 'OAI.PowerSaving.CB.xinvocation_fwd_dirty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Shared.lean:288:0: 'OAI.PowerSaving.CB.xinvocation_bwd_dirty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Shared.lean:289:0: 'OAI.PowerSaving.CB.xinvocation_fwd_shared' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Shared.lean:290:0: 'OAI.PowerSaving.CB.xinvocation_bwd_shared' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Shared.lean:291:0: 'OAI.PowerSaving.CB.xinvocation_fwd_shared_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Shared.lean:292:0: 'OAI.PowerSaving.CB.xinvocation_bwd_shared_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/SNet.lean:241:0: 'OAI.PowerSaving.RF.sstage' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/SNet.lean:242:0: 'OAI.PowerSaving.RF.sstage_fwd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/SNet.lean:243:0: 'OAI.PowerSaving.RF.sstage_bwd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Copies.lean:286:0: 'OAI.PowerSaving.RAM.walk_copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Copies.lean:287:0: 'OAI.PowerSaving.RAM.BCert.prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Copies.lean:288:0: 'OAI.PowerSaving.RAM.BCert.sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Copies.lean:289:0: 'OAI.PowerSaving.RAM.BCert.spare' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Copies.lean:290:0: 'OAI.PowerSaving.RAM.BCert.copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockApply/Copies.lean:291:0: 'OAI.PowerSaving.RAM.engine_program_bcert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bridge/Roles.lean:264:0: 'OAI.PowerSaving.BR.blift1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bridge/Roles.lean:265:0: 'OAI.PowerSaving.BR.blift2' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bridge/Roles.lean:266:0: 'OAI.PowerSaving.BR.gateP' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bridge/Inv.lean:159:0: 'OAI.PowerSaving.CB.XCircuit.inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bridge/Inv.lean:160:0: 'OAI.PowerSaving.BR.istage_fwd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bridge/Inv.lean:161:0: 'OAI.PowerSaving.BR.istage_bwd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Sched.lean:198:0: 'OAI.PowerSaving.CR.Step.route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Sched.lean:199:0: 'OAI.PowerSaving.CR.sched_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Pack.lean:182:0: 'OAI.PowerSaving.CR.route_erased' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Pack.lean:183:0: 'OAI.PowerSaving.CR.dirty_of_erased' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Pack.lean:184:0: 'OAI.PowerSaving.CR.Carrier.inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Scat.lean:195:0: 'OAI.PowerSaving.CR.scat_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Scat.lean:196:0: 'OAI.PowerSaving.CR.act_shear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Scat.lean:197:0: 'OAI.PowerSaving.CR.act_shearT' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Glue.lean:210:0: 'OAI.PowerSaving.CR.lift_live' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Glue.lean:211:0: 'OAI.PowerSaving.CR.scat_glue' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Glue.lean:212:0: 'OAI.PowerSaving.CR.scat_glueT' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Phases.lean:191:0: 'OAI.PowerSaving.CR.Phased.fwd_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/Phases.lean:192:0: 'OAI.PowerSaving.CR.Phased.bwd_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Roles.lean:171:0: 'GS.unemb_emb' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Roles.lean:172:0: 'GS.emb_unemb' depends on axioms: [propext, Quot.sound]
+info: Work/GCert/Scalar/Roles.lean:173:0: 'GS.cm_scat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Mat3.lean:152:0: 'GS.XU_mic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Mat3.lean:153:0: 'GS.ycol_filter' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Mat3.lean:154:0: 'GS.GRun_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Cols.lean:141:0: 'GS.XRun.addA' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Cols.lean:142:0: 'GS.XRun.addB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Cols.lean:143:0: 'GS.XRun.xcol' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Main.lean:204:0: 'GS.ScalOK.hx' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Main.lean:205:0: 'GS.ScalOK.hy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Main.lean:206:0: 'GS.ScalOK.hid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Main.lean:207:0: 'GS.ScalOK.hAi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Scalar/Main.lean:208:0: 'GS.ScalOK.hBi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Calc.lean:175:0: 'OAI.PowerSaving.GF.xcalc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Calc.lean:176:0: 'OAI.PowerSaving.GF.FMv.step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Calc.lean:177:0: 'OAI.PowerSaving.GF.FMv.factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Quad.lean:224:0: 'OAI.PowerSaving.GF.QPh.unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Quad.lean:225:0: 'OAI.PowerSaving.GF.wrap_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Quad.lean:226:0: 'OAI.PowerSaving.GF.wrap_astep' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Sched.lean:169:0: 'OAI.PowerSaving.GF.GSt.route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Sched.lean:170:0: 'OAI.PowerSaving.GF.gsched_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Sched.lean:171:0: 'OAI.PowerSaving.GF.gsched_xroute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GXMap.lean:185:0: 'OAI.PowerSaving.GF.GXMap.orth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GXMap.lean:186:0: 'OAI.PowerSaving.GF.GXMap.alt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GXMap.lean:187:0: 'OAI.PowerSaving.GF.GXMap.mv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Embed.lean:192:0: 'OAI.PowerSaving.GF.Climb.gclimbO' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Embed.lean:193:0: 'OAI.PowerSaving.GF.GXMap.toXMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Embed.lean:194:0: 'OAI.PowerSaving.GF.emb_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Embed.lean:195:0: 'OAI.PowerSaving.GF.sched_route_any' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Maps.lean:155:0: 'OAI.PowerSaving.GF.gxmap1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Maps.lean:156:0: 'OAI.PowerSaving.GF.gxmap2' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Maps.lean:157:0: 'OAI.PowerSaving.GF.gxmap1_Φ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/GeomBase.lean:245:0: 'OAI.PowerSaving.RF.frame_ofCols' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/GeomBase.lean:246:0: 'OAI.PowerSaving.RF.submatrix_diagI' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/GeomBase.lean:247:0: 'OAI.PowerSaving.RF.frameM_conj_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/GeomBase.lean:248:0: 'OAI.PowerSaving.RF.Orth.conjPerm_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Geom3.lean:317:0: 'OAI.PowerSaving.RF.PhiQ_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Geom3.lean:318:0: 'OAI.PowerSaving.RF.PhiQ_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Geom3.lean:319:0: 'OAI.PowerSaving.RF.map_piF_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Geom3.lean:320:0: 'OAI.PowerSaving.RF.map_piF_compl' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/Geom3.lean:321:0: 'OAI.PowerSaving.RF.map_tauF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Blocks.lean:319:0: 'OAI.PowerSaving.BG.PhiB_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Blocks.lean:320:0: 'OAI.PowerSaving.BG.PhiB_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Blocks.lean:321:0: 'OAI.PowerSaving.BG.map_piB_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Blocks.lean:322:0: 'OAI.PowerSaving.BG.map_piB_compl' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Blocks.lean:323:0: 'OAI.PowerSaving.BG.map_tauB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Conj.lean:119:0: 'OAI.PowerSaving.GF.GXMap.ofConj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Conj.lean:120:0: 'OAI.PowerSaving.GF.gxmapQ_Φ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Conj.lean:121:0: 'OAI.PowerSaving.GF.gxmapB_Φ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Letters.lean:197:0: 'OAI.PowerSaving.GF.gwalk_ofB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Letters.lean:198:0: 'OAI.PowerSaving.GF.GLiveKernel.ofB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Letters.lean:199:0: 'OAI.PowerSaving.GF.GWord.costR_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Free.lean:118:0: 'OAI.PowerSaving.GF.gstep_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Free.lean:119:0: 'OAI.PowerSaving.GF.gstep_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Free.lean:120:0: 'OAI.PowerSaving.GF.gstep_of_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Free.lean:121:0: 'OAI.PowerSaving.GF.gstep_of_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Route.lean:111:0: 'OAI.PowerSaving.GF.GRoute.trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Route.lean:112:0: 'OAI.PowerSaving.GF.GRoute.gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Route.lean:113:0: 'OAI.PowerSaving.GF.GRoute.on_role' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Route.lean:114:0: 'OAI.PowerSaving.GF.GRoute.liveKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GCalc.lean:106:0: 'OAI.PowerSaving.GF.gcalc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GCalc.lean:107:0: 'OAI.PowerSaving.GF.fmv_of_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GCalc.lean:108:0: 'OAI.PowerSaving.GF.gsched_groute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GCalc.lean:109:0: 'OAI.PowerSaving.GF.GSchedOk.ofX' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Basic.lean:136:0: 'OAI.PowerSaving.GF.mul_permMat_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Basic.lean:137:0: 'OAI.PowerSaving.GF.wrap_conj_tint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Basic.lean:138:0: 'OAI.PowerSaving.GF.invdir_mul_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Fibre.lean:172:0: 'OAI.PowerSaving.GF.alt_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/FreeLift.lean:193:0: 'OAI.PowerSaving.GF.free_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/FreeLift.lean:194:0: 'OAI.PowerSaving.GF.free_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/FreeLift.lean:195:0: 'OAI.PowerSaving.GF.free_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/AltBlock.lean:128:0: 'OAI.PowerSaving.GF.alt_block_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/AltBlock.lean:129:0: 'OAI.PowerSaving.GF.alt_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/AltBlock.lean:130:0: 'OAI.PowerSaving.GF.alt_block_dirs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageA.lean:106:0: 'OAI.PowerSaving.GF.altAt_gcalc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageA.lean:107:0: 'OAI.PowerSaving.GF.gstep_alt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageA.lean:108:0: 'OAI.PowerSaving.GF.asched_groute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageA.lean:109:0: 'OAI.PowerSaving.GF.emb_aok' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GCarrier.lean:182:0: 'OAI.PowerSaving.GF.GCarrier.fwd_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GCarrier.lean:183:0: 'OAI.PowerSaving.GF.GCarrier.bwd_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GCarrier.lean:184:0: 'OAI.PowerSaving.GF.Carrier.toG' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Proj.lean:128:0: 'OAI.PowerSaving.GF.gclimbO_of_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Proj.lean:129:0: 'OAI.PowerSaving.GF.complete_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Proj.lean:130:0: 'OAI.PowerSaving.GF.complete_indep' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/Proj.lean:131:0: 'OAI.PowerSaving.GF.complete_proj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Core.lean:163:0: 'OAI.PowerSaving.GF.free_kg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Core.lean:164:0: 'OAI.PowerSaving.GF.core_id_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Core.lean:165:0: 'OAI.PowerSaving.GF.core_nested_ex' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageB.lean:166:0: 'OAI.PowerSaving.GF.core_down' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageB.lean:167:0: 'OAI.PowerSaving.GF.SMv.fmv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageB.lean:168:0: 'OAI.PowerSaving.GF.bsched_groute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Entry.lean:122:0: 'OAI.PowerSaving.GF.pk_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Entry.lean:123:0: 'OAI.PowerSaving.GF.core_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Rep.lean:164:0: 'OAI.PowerSaving.GF.rep_change_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/RepFree.lean:205:0: 'OAI.PowerSaving.GF.free_repMat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Climb.lean:139:0: 'OAI.PowerSaving.GF.rep_change' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Climb.lean:140:0: 'OAI.PowerSaving.GF.climb_any' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Climb.lean:141:0: 'OAI.PowerSaving.GF.climb_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Climb.lean:142:0: 'OAI.PowerSaving.GF.core_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageBFull.lean:84:0: 'OAI.PowerSaving.GF.repChange' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageBFull.lean:85:0: 'OAI.PowerSaving.GF.SMv.nested' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageBFull.lean:86:0: 'OAI.PowerSaving.GF.SLbl.rep_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageBFull.lean:87:0: 'OAI.PowerSaving.GF.bsched_groute_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/BXMap.lean:127:0: 'OAI.PowerSaving.GF.BXMap.smv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/BXMap.lean:128:0: 'OAI.PowerSaving.GF.BXMap.fmv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/BXMap.lean:129:0: 'OAI.PowerSaving.GF.hsched_groute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/ConjB.lean:109:0: 'OAI.PowerSaving.GF.insub_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/ConjB.lean:110:0: 'OAI.PowerSaving.GF.BXMap.ofConj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Old.lean:159:0: 'OAI.PowerSaving.GF.frame_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Old.lean:160:0: 'OAI.PowerSaving.GF.frame_core_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Base.lean:153:0: 'OAI.PowerSaving.GF.exists_flag_base' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Base.lean:154:0: 'OAI.PowerSaving.GF.exists_rep' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Base.lean:155:0: 'OAI.PowerSaving.GF.frame_lemma' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Base.lean:156:0: 'OAI.PowerSaving.GF.card_le_of_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Cross.lean:138:0: 'OAI.PowerSaving.GF.core_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Cross.lean:139:0: 'OAI.PowerSaving.GF.cross_any' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Cross.lean:140:0: 'OAI.PowerSaving.GF.frame_lemma_down' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Cross.lean:141:0: 'OAI.PowerSaving.GF.kernel_mul_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Pair.lean:150:0: 'OAI.PowerSaving.GF.exists_pair_base' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Pair.lean:151:0: 'OAI.PowerSaving.GF.cross_lemma' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:129:0: 'OAI.PowerSaving.GF.gstep_rep' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:130:0: 'OAI.PowerSaving.GF.gstep_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:131:0: 'OAI.PowerSaving.GF.gstep_old_nested' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:132:0: 'OAI.PowerSaving.GF.gstep_alt_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:133:0: 'OAI.PowerSaving.GF.gstep_frame_down' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:134:0: 'OAI.PowerSaving.GF.gstep_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:135:0: 'OAI.PowerSaving.GF.gstep_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:136:0: 'OAI.PowerSaving.GF.cross_lemma' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:137:0: 'OAI.PowerSaving.GF.gstep_compl'' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:138:0: 'OAI.PowerSaving.GF.kernel_mul_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:139:0: 'OAI.PowerSaving.GF.frame_lemma' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:140:0: 'OAI.PowerSaving.GF.rep_change' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:141:0: 'OAI.PowerSaving.GF.core_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:142:0: 'OAI.PowerSaving.GF.frame_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Clifford/Step.lean:143:0: 'OAI.PowerSaving.GF.alt_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageBSem.lean:115:0: 'OAI.PowerSaving.GF.SMv.of_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageBSem.lean:116:0: 'OAI.PowerSaving.GF.SMv.of_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageBSem.lean:117:0: 'OAI.PowerSaving.GF.fmv_old_to_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/StageBSem.lean:118:0: 'OAI.PowerSaving.GF.BXMap.fmv_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/SchedR.lean:113:0: 'OAI.PowerSaving.GF.gsched_route_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/SchedR.lean:114:0: 'OAI.PowerSaving.GF.gsched_groute_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/SchedR.lean:115:0: 'OAI.PowerSaving.GF.GSchedOk.toR' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/SCert.lean:252:0: 'OAI.PowerSaving.RF.Fold3S.stage1_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/SCert.lean:253:0: 'OAI.PowerSaving.RF.Fold3S.stage2_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/SCert.lean:254:0: 'OAI.PowerSaving.RF.Fold3S.stage3_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/SCert.lean:255:0: 'OAI.PowerSaving.RF.fold3s_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/GeomNet.lean:451:0: 'OAI.PowerSaving.RF.fmapQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/GeomNet.lean:452:0: 'OAI.PowerSaving.RF.helper_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/GeomNet.lean:453:0: 'OAI.PowerSaving.RF.geomNet' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Reframe/GeomNet.lean:454:0: 'OAI.PowerSaving.RF.fold3s_bcert_geom' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Stage.lean:597:0: 'OAI.PowerSaving.BG.fmapB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Stage.lean:598:0: 'OAI.PowerSaving.BG.bank_xx' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Stage.lean:599:0: 'OAI.PowerSaving.BG.bank_yy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Stage.lean:600:0: 'OAI.PowerSaving.BG.climb_X0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Stage.lean:601:0: 'OAI.PowerSaving.BG.climb_Yend' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Stage.lean:602:0: 'OAI.PowerSaving.BG.win_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Stage.lean:603:0: 'OAI.PowerSaving.BG.win_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BridgeGeom/Stage.lean:604:0: 'OAI.PowerSaving.BG.class_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GeomOld.lean:39:0: 'OAI.PowerSaving.GF.gxmapQ_toXMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/GeomOld.lean:40:0: 'OAI.PowerSaving.GF.gxmapB_toXMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:18:0: 'OAI.PowerSaving.GF.gsched_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:19:0: 'OAI.PowerSaving.GF.gsched_groute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:20:0: 'OAI.PowerSaving.GF.gsched_groute_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:21:0: 'OAI.PowerSaving.GF.sched_route_any' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:22:0: 'OAI.PowerSaving.GF.GXMap.toXMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:23:0: 'OAI.PowerSaving.GF.altAt_gcalc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:24:0: 'OAI.PowerSaving.GF.asched_groute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:25:0: 'OAI.PowerSaving.GF.bsched_groute_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:26:0: 'OAI.PowerSaving.GF.hsched_groute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:27:0: 'OAI.PowerSaving.GF.SMv.of_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:28:0: 'OAI.PowerSaving.GF.SMv.of_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:29:0: 'OAI.PowerSaving.GF.fmv_old_to_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:30:0: 'OAI.PowerSaving.GF.BXMap.fmv_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:31:0: 'OAI.PowerSaving.GF.SLbl.rep_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:32:0: 'OAI.PowerSaving.GF.gxmap1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:33:0: 'OAI.PowerSaving.GF.gxmap2' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:34:0: 'OAI.PowerSaving.GF.gxmapQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:35:0: 'OAI.PowerSaving.GF.gxmapB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:36:0: 'OAI.PowerSaving.GF.gxmapB_toXMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:37:0: 'OAI.PowerSaving.GF.BXMap.ofConj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:38:0: 'OAI.PowerSaving.GF.GCarrier.fwd_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:39:0: 'OAI.PowerSaving.GF.GCarrier.bwd_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:40:0: 'OAI.PowerSaving.GF.Carrier.toG' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Labels/All.lean:41:0: 'OAI.PowerSaving.GF.complete_proj' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Phased.lean:198:0: 'OAI.PowerSaving.GX.Scal.fwd_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Phased.lean:199:0: 'OAI.PowerSaving.GX.Scal.bwd_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XMut/Dirt.lean:107:0: 'XMut.dirt_fwdZ' depends on axioms: [propext]
+info: Work/XMut/Dirt.lean:108:0: 'XMut.dirt_bwdZ' depends on axioms: [propext]
+info: Work/XMut/Dirt.lean:109:0: 'XMut.hFz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XMut/Dirt.lean:110:0: 'XMut.hBz' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XMut/Dirt.lean:111:0: 'XMut.offdiag_z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XMut/Scal.lean:139:0: 'OAI.PowerSaving.GX.ScalZ.fwd_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XMut/Scal.lean:140:0: 'OAI.PowerSaving.GX.ScalZ.bwd_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XMut/ScalarZ.lean:516:0: 'GS.XRunZ.of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XMut/ScalarZ.lean:517:0: 'GS.YRunZ.of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XMut/ScalarZ.lean:518:0: 'GS.ScalOKZ.hy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XMut/ScalarZ.lean:519:0: 'GS.ScalOKZ.hid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/XMut/ScalarZ.lean:520:0: 'GS.ScalOKZ.toScalZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Data/Gen/C588MScal0.lean:10:0: 'GXD.C588M.scal0_ok' depends on axioms: [propext]
+info: Work/Bank401/Adapt.lean:186:0: 'OAI.PowerSaving.B401.pk_cperm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bank401/Adapt.lean:187:0: 'OAI.PowerSaving.B401.gauged_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bank401/Adapt.lean:188:0: 'OAI.PowerSaving.B401.gauged_Wn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bank401/Adapt.lean:189:0: 'OAI.PowerSaving.B401.bank_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bank401/Adapt.lean:190:0: 'OAI.PowerSaving.B401.bank_adapt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bank401/Adapt.lean:191:0: 'OAI.PowerSaving.B401.bank_pad' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bank401/Adapt.lean:192:0: 'OAI.PowerSaving.B401.bank_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Over.lean:200:0: 'OAI.PowerSaving.GF.gwalk_over' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Over.lean:201:0: 'OAI.PowerSaving.GF.gwalk_out' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Over.lean:202:0: 'OAI.PowerSaving.GF.GRoute.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Over.lean:203:0: 'OAI.PowerSaving.GF.GRoute.parallel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Cert.lean:210:0: 'OAI.PowerSaving.GF.gwalk_copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Cert.lean:211:0: 'OAI.PowerSaving.GF.GCert.ofB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Cert.lean:212:0: 'OAI.PowerSaving.GF.GCert.copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Adapt.lean:182:0: 'OAI.PowerSaving.RAM.Rig.perm_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Adapt.lean:183:0: 'OAI.PowerSaving.RAM.GRig.phase_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Sweep.lean:123:0: 'OAI.PowerSaving.RAM.GRig.open_gmove' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Sweep.lean:124:0: 'OAI.PowerSaving.RAM.GRig.gsweep' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Sweep.lean:125:0: 'OAI.PowerSaving.RAM.gamplifies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Level.lean:163:0: 'OAI.PowerSaving.RAM.gamplify' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Recursion.lean:189:0: 'OAI.PowerSaving.RAM.grecurse_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Main.lean:109:0: 'OAI.PowerSaving.RAM.engine_all_g' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Main.lean:110:0: 'OAI.PowerSaving.RAM.engine_program_g' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Main.lean:111:0: 'OAI.PowerSaving.RAM.engine_program_g_costR' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Main.lean:112:0: 'OAI.PowerSaving.RAM.engine_program_block_costR_via_g' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FoldRate/Group.lean:267:0: 'OAI.PowerSaving.FoldRate.table_bcert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FoldRate/Group.lean:268:0: 'OAI.PowerSaving.RAM.engine_program_group' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FoldRate/Group.lean:269:0: 'OAI.PowerSaving.RAM.engine_program_group_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FoldRate/Group.lean:270:0: 'OAI.PowerSaving.RAM.engine_program_group_perRank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FoldRate/Group.lean:271:0: 'OAI.PowerSaving.BlockWHT.wht_main_of_group' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FoldRate/Group.lean:272:0: 'OAI.PowerSaving.BlockWHT.wht_main_of_group_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FoldRate/Group.lean:273:0: 'OAI.PowerSaving.BlockWHT.wht_main_of_group_perRank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Group.lean:147:0: 'OAI.PowerSaving.GF.gtable_cert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Group.lean:148:0: 'OAI.PowerSaving.RAM.engine_program_ggroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Group.lean:149:0: 'OAI.PowerSaving.RAM.engine_program_ggroup_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Group.lean:150:0: 'OAI.PowerSaving.BlockWHT.wht_main_of_ggroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Engine/Group.lean:151:0: 'OAI.PowerSaving.BlockWHT.wht_main_of_ggroup_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Assemble.lean:151:0: 'OAI.PowerSaving.GF.gcert_of_sched' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Assemble.lean:152:0: 'OAI.PowerSaving.GF.gcert_of_groute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Assemble.lean:153:0: 'OAI.PowerSaving.RAM.engine_program_gsched' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Assemble.lean:154:0: 'OAI.PowerSaving.RAM.engine_program_groute' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Assemble.lean:155:0: 'OAI.PowerSaving.BlockWHT.wht_main_of_gsched' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Menu.lean:139:0: 'OAI.PowerSaving.GF.Reach.trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Menu.lean:140:0: 'OAI.PowerSaving.GF.reach_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Menu.lean:141:0: 'OAI.PowerSaving.GF.reach_nested' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Menu.lean:142:0: 'OAI.PowerSaving.GF.reach_nested_down' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Menu.lean:143:0: 'OAI.PowerSaving.GF.reach_rep' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Menu.lean:144:0: 'OAI.PowerSaving.GF.reach_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Menu.lean:145:0: 'OAI.PowerSaving.GF.reach_compl' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Menu.lean:146:0: 'OAI.PowerSaving.GF.reach_old_nested' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Menu.lean:147:0: 'OAI.PowerSaving.GF.reach_alt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Api.lean:119:0: 'OAI.PowerSaving.GF.GStep.mul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Api.lean:120:0: 'OAI.PowerSaving.GF.GReach.ofX' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Api.lean:121:0: 'OAI.PowerSaving.GF.GReach.mul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Api.lean:122:0: 'OAI.PowerSaving.GF.GRoute.reach_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GFrame/Top/Api.lean:123:0: 'OAI.PowerSaving.GF.GRoute.reframe_actPoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bank401/Frames.lean:201:0: 'OAI.PowerSaving.B401.bank_frames' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Win.lean:148:0: 'OAI.PowerSaving.GX.insub_iff_of_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Win.lean:149:0: 'OAI.PowerSaving.GX.GWin.line' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Win.lean:150:0: 'OAI.PowerSaving.GX.GWin.zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Win.lean:151:0: 'OAI.PowerSaving.GX.GWin.full' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Win.lean:152:0: 'OAI.PowerSaving.GX.GWin.perp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/PhasedInv.lean:186:0: 'OAI.PowerSaving.CR.Phased.fwd_erased' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/PhasedInv.lean:187:0: 'OAI.PowerSaving.CR.Phased.bwd_erased' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Carrier/PhasedInv.lean:188:0: 'OAI.PowerSaving.CR.Phased.inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Inv.lean:169:0: 'OAI.PowerSaving.GX.glift_live' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Inv.lean:170:0: 'OAI.PowerSaving.GX.Lab.ad0' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Inv.lean:171:0: 'OAI.PowerSaving.GX.Lab.adF' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Inv.lean:172:0: 'OAI.PowerSaving.GX.Lab.cdown' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/Inv.lean:173:0: 'OAI.PowerSaving.GX.Lab.cup' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/InvThm.lean:162:0: 'OAI.PowerSaving.GX.Lab.fwd_erased' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/InvThm.lean:163:0: 'OAI.PowerSaving.GX.Lab.bwd_erased' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Chain/InvThm.lean:164:0: 'OAI.PowerSaving.GX.Lab.inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bridge401/Sched.lean:164:0: 'OAI.PowerSaving.GX.BankSched.L_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bridge401/Sched.lean:165:0: 'OAI.PowerSaving.GX.sched_frames' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bridge401/SchedK.lean:298:0: 'OAI.PowerSaving.GX.BankSched.ofTab_fits' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Bridge401/SchedK.lean:299:0: 'OAI.PowerSaving.GX.BankSched.ofTab_padPrice' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/GCert/Data/Gen/C588MSched.lean:59:0: 'GXD.C588M.sched_ok' depends on axioms: [propext]
+info: Work/GCert/Data/C588MControls.lean:23:0: 'GXD.C588MControls.bad_scalar_rejected' depends on axioms: [propext]
+info: Work/GCert/Data/C588MControls.lean:24:0: 'GXD.C588MControls.classic_rejected' depends on axioms: [propext]
+info: Work/GCert/Data/C588MControls.lean:25:0: 'GXD.C588MControls.duplicate_owner_rejected' depends on axioms: [propext]
+'OAI.PowerSaving.transform_mainC588M' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainC588M' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsC588M_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD END Tue Oct 13 17:34:19 UTC 2026 rc=0
+build-c588m rc=0 wall-so-far=6206s

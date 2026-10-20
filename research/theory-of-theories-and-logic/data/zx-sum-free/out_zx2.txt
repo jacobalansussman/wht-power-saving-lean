@@ -1,0 +1,18 @@
+== (A) free-only circuits: paid 0, but Hadamard edges in graph-like form
+  n=3: gates 8, H-edges after full_reduce 8, spiders 11 (paid count 0, d = 0)
+  n=4: gates 11, H-edges after full_reduce 13, spiders 15 (paid count 0, d = 0)
+  n=6: gates 17, H-edges after full_reduce 26, spiders 23 (paid count 0, d = 0)
+== (B) slot encoding, W = 2: plain schedule = 2m slot-controlled transversal sqrt-X moves
+  m=2 f=1: our paid count 2m = 4 moves (4 gadgets); PyZX T-count 12 -> 0; extracted HAD+sqrtX = 2 (= m f = 2: 'one array'); equals I_2 (x) K: True; extraction exact: True
+  m=2 f=2: our paid count 2m = 4 moves (8 gadgets); PyZX T-count 24 -> 0; extracted HAD+sqrtX = 4 (= m f = 4: 'one array'); equals I_2 (x) K: True; extraction exact: True
+  m=3 f=1: our paid count 2m = 6 moves (6 gadgets); PyZX T-count 18 -> 0; extracted HAD+sqrtX = 3 (= m f = 3: 'one array'); equals I_2 (x) K: True; extraction exact: True
+  m=3 f=2: our paid count 2m = 6 moves (12 gadgets); PyZX T-count 36 -> 0; extracted HAD+sqrtX = 6 (= m f = 6: 'one array'); equals I_2 (x) K: True; extraction exact: True
+  m=4 f=1: our paid count 2m = 8 moves (8 gadgets); PyZX T-count 24 -> 0; extracted HAD+sqrtX = 4 (= m f = 4: 'one array'); equals I_2 (x) K: True; extraction exact: True
+  m=4 f=2: our paid count 2m = 8 moves (16 gadgets); PyZX T-count 48 -> 0; extracted HAD+sqrtX = 8 (= m f = 8: 'one array'); equals I_2 (x) K: True; extraction exact: True
+  single slot-controlled move: T-count 3 -> 3 after full_reduce
+  plain + redundant pair on array 1 = (I_2 (x) K) then slot-controlled X (free): True
+== (C) fixed-f degeneracy (block 2)
+  |G1| = 3072 (with Z4 scalars)
+  f = 1: K in span(G1)? rank span = 16 / 16, relative residual 2.36e-15  (0 paid moves at f = 1)
+  f = 2: rank span{g(x)g} = 88 / 256, relative residual of K(x)K: 0.6124
+  f = 2, 3 jointly: relative residual 0.8216

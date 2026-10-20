@@ -1,0 +1,9 @@
+cmd1 rc=0 secs=6 :: python3.12 -B research/staged544-terminal-gap-fill/verify.py
+cmd2 rc=0 secs=3 :: python3.12 -B research/staged544-terminal-gap-fill/checks/independent_frames.py --controls
+cmd3 rc=0 secs=0 :: python3.12 -B research/staged544-terminal-gap-fill/checks/exact_root.py --controls
+cmd4 rc=0 secs=15 :: python3.12 -B research/staged544-terminal-gap-fill/owner/verify.py
+cmd5 rc=0 secs=0 :: python3.12 -B research/staged544-terminal-gap-fill/owner/check_gain.py
+cmd6 rc=0 secs=6 :: python3.12 -B research/staged544-terminal-gap-fill/test_verify.py
+cmd7 rc=0 secs=4 :: python3.12 -O -B research/staged544-terminal-gap-fill/test_verify.py
+cmd8 rc=0 secs=1 :: python3.12 -B research/staged544-terminal-gap-fill/admission/authenticate.py
+ALLDONE

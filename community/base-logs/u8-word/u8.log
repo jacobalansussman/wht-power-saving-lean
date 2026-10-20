@@ -1,0 +1,34 @@
+START 2026-10-13T15:57:58Z hub 407d52ff15b2217b6e22bce44728b4c3907b6515
+PASS barch
+PASS barch-controls
+PASS layer-end-controls
+PASS native
+PASS ledgers
+PASS local-replay
+PASS wrappers
+PASS phases
+DONE /content/work/k-word/u8-native/local
+	Command being timed: "python3 -B /content/work/k-word/hub/research/complex-k492-owner-repair/vendor/multicold/code/run_portable.py /content/work/k-word/hub/research/complex-t21-owners/vendor/pr870/construction/barch/reproduce_barch.py --main /content/work/k-word/hub --pr635 /content/work/k-word/hub/research/complex-sw4-frame8/vendor/pr635 --jx-dir /content/work/k-word/jx799 --recipe U8 --out /content/work/k-word/u8-native"
+	User time (seconds): 627.22
+	System time (seconds): 4.83
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:36.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 71932
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6
+	Minor (reclaiming a frame) page faults: 465473
+	Voluntary context switches: 813
+	Involuntary context switches: 5736
+	Swaps: 0
+	File system inputs: 2568
+	File system outputs: 19688
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+EXIT 0 2026-10-13T16:08:34Z

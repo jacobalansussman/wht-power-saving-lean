@@ -1,0 +1,7 @@
+bit P120, 9 label totals (columns of U)                      (72, 72)
+bit P120: min reader span over all 511 functionals           8
+bit P111: punctured lines (our numbering)                    [8, 9, 10, 12, 16, 17, 24, 32, 64]
+bit P111 (independent puncture), greedy star basis           (63, 63)
+bit P111: star weights of the chosen totals                  [7, 7, 7, 7, 7, 7, 7, 7, 7]
+complex P112 frame decoder (hub formula): star, ThmC         (64, 64)
+E7 bit: v, F2 rank of the pattern B0, label-decoder star floor (greedy), weights (63, 7, 49, [7, 7, 7, 7, 7, 7, 7])

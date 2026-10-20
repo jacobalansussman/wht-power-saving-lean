@@ -1,0 +1,65 @@
+The written verdict of the independent agent (a skeptic) that ran this check, as it returned it, with home-folder
+paths shortened. Agent labels in it (c-base, m-build, m-gen, x-mutable, h-L1, h-L2, h-L3-build) are the names
+of the agents whose work it checked.
+
+I could not refute the claim for the headline figure, 1.2331686e-3 (Walsh-Hadamard on Shea's base tree). I re-ran the deciding checks myself on the Colab, against .olean files I compiled fresh from the overlaid sources. For the packed figure, 1.2383292e-3, I only confirmed that the statement matches; the rest of that claim rests on c-wht's logs.
+
+BASE TREE (/content/work/c-wht/lean/complex588)
+- Provenance:
+  - git HEAD is 52394849 (Shea's proof commit). `git status --short` shows only the 5 untracked overlay paths and no modified tracked file.
+  - Toolchain is leanprover/lean4:v4.34.1; Mathlib rev is d13f23b723b8a846827a245b89c10fc7d3f11612.
+  - The 8 overlay files on the Colab have the same sha256 as c-wht's src/ copies on the Mac.
+  - Work/Block/WHT.lean (e00c1415…), WHTCheck/Solution.lean (ce638be5…) and all 89 OAI/*.lean files have the same sha256 as `git show 9c94857:` of our published repo.
+- Statement:
+  - Diffed against the published Work/GCert/Data/ChallengeB2Ge8x.lean (`git show 9c94857:`, sha256 a59db9d5…839e3). Only comment lines, the theorem name (B2Ge8x -> C588x) and the exponent (8762479 -> 12331686) differ.
+  - So it is our published Walsh-Hadamard statement (the RAM model, wht, WHTProgram with Prog false, WHTTimeBoundsAt), with nothing weakened and no extra hypotheses. It is not OpenAI's DFT statement, and does not claim to be.
+  - The negative challenge differs from the positive one only in 12331686 -> 12331687 (and the module name in a comment).
+  - Shea's Seam.lean proves engine_C588x at exactly `1 - 12331686/(10:ℝ)^10`, and his DFT target is 12331685. The figure "one unit above his DFT figure" is therefore consistent.
+- Sorry grep (mine, on both overlay dirs): `grep -rnwE "sorry|native_decide|implemented_by|extern|unsafe|ofReduceBool|ofReduceNat|skipKernelTC|axiom|opaque|addDecl|run_cmd|initialize"`. The only hits are comments and the intended `sorry` at Challenge.lean:329 in WHTC588 and WHTC588Neg.
+- Fresh rebuild without Lake (script /content/work/v-c-wht/vcwht-fresh.sh, tmux servers vcwht and vcwht2):
+  - `lean -DautoImplicit=false -R . -o <my dir>/Work/<m>.olean Work/<m>.lean`. LEAN_PATH puts my output directory first; it symlinks every other Work module to the tree's build directory. Nothing was written into the tree.
+  - WHTC588/Challenge: rc=0, 5:41, max RSS 6.47 GB, with the expected sorry warning.
+  - WHTC588Neg/Challenge: rc=0, 0:11, 6.59 GB.
+  - WHTC588/Main: rc=0, 0:38, 6.71 GB, printing "'OAI.PowerSaving.WHTC588.wht_main_C588x' depends on axioms: [propext, Classical.choice, Quot.sound]".
+  - WHTC588/Solution: rc=0, 0:14, 6.71 GB, with the same axioms line for wht_main_block_C588x.
+- Axioms on my fresh .olean files: rc=0, 0:16, 6.70 GB. Both theorems depend on [propext, Classical.choice, Quot.sound]. #check prints `∃ solve W, OAI.PowerSaving.WHT.WHTProgram solve W ∧ OAI.PowerSaving.WHT.WHTTimeBoundsAt (1 - 12331686 / 10 ^ 10) W`.
+- Compare.lean (sha256 e48d6d3b…dae9; I read it), positive run on my fresh .olean files: rc=0, 3:33, max RSS 14.8 GB. Output:
+  - "OK: statement is the same kernel term in both"
+  - "statement depends on 2035 constants; 107 are declared in the challenge file itself"
+  - "OK: every statement dependency is identical in the solution"
+  - "solution proof reaches 37496 constants; axioms: #[Classical.choice, Quot.sound, propext]"
+  - "OK: only permitted axioms"
+  - "RESULT: PASS"
+- Negative control (12331687): "FAIL: statement (type) differs between challenge and solution", "RESULT: FAIL", rc=1, 10:20, 14.3 GB.
+- Were the overlay modules rebuilt from the overlaid files? c-wht's build.log shows "Built" for exactly the four overlay modules, after a gate that printed "All targets up-to-date (9273 jobs)". My fresh .olean files are not byte-identical to the Lake-built ones (all four have different sha256), so I could not prove the match by hash. Lake also passes `--setup` json, so I would not expect byte identity anyway. My fresh compile and checks give the same results either way, so this does not affect the verdict.
+
+PACKED TREE (/content/work/c-wht-q, C588Qx at 12383292)
+- Confirmed by me:
+  - Its 39 overlay files (38 modified, plus the new Work/BlockAccounting/Moment4.lean) are sha256-identical to /content/work/cpack. The claim says 38; the extra file is Moment4.lean.
+  - My grep of those 39 files finds only the challenge-file sorrys and comments; no native_decide or axiom.
+  - The challenge diff against the published file is again only comments, name and exponent; the negative challenge differs only in 12383293.
+  - c-pack's Seam.lean proves engine_C588x at 1 - 12383292/10^10.
+- Partial run: my quick check on the tree's own Lake-built .olean files (script /content/work/v-c-wht/vcwht-packed-quick.sh, tmux server vcwhtq) reached "OK: statement is the same kernel term in both" and "statement depends on 2035 constants; 107 are declared in the challenge file itself". The 600 s timeout then killed it (rc=124). The #print axioms step also hit its 300 s timeout (rc=124).
+- Cause: I/O pressure on the Colab (PSI io some avg10 = 68 %, 3 to 4 other agents' Lean processes running).
+- So I did NOT confirm myself the packed axioms, the identical dependencies, or the negative control. Those rest on c-wht's logs, which are consistent (37554 constants, PASS; FAIL on 12383293). I also did not do a fresh rebuild of the packed modules: I stopped that chain because of the time box.
+
+NOT RE-RUN BY ME
+- The official comparator: no Landlock here, and the machine was already over the 2-heavy-process limit. c-wht's logs show "nanoda kernel accepts the solution", "Lean default kernel accepts the solution", "Your solution is okay!" (rc=0) and the negative run "Challenge and solution theorem statement do not match" (rc=1), on both trees.
+- Compare.lean trusts the .olean files of Shea's tree (Seam etc.). Independence from those rests on c-wht's comparator kernel replay and on the clean git status plus the up-to-date gate. I did not repeat that replay.
+
+Minor wording issues, not refutations:
+- The packed Main.lean docstring calls engine_C588x "Shea's kernel program", but in that tree it is c-pack's modified Seam.
+- The overlay-file count is 39, not 38.
+
+PROBLEMS I HAD
+- My first fresh-compile attempt failed (rc=1). Lean resolves the root package `Work` in the first LEAN_PATH entry that has it, so Seam.olean was "not found" in my directory. I fixed it with a symlink farm and kept the Challenge .olean files from attempt 1 (same source sha256). The attempt-1 logs are kept separately.
+- My steps waited up to 90 s for a slot, but other agents kept 3 to 4 Lean processes running.
+
+LOGS ON THE MAC: <verify>/checks/wht43/colab-run/logs/v-c-wht/
+- base.log, base/*.time and *.out: the fresh rebuild, axioms and Compare runs.
+- base-attempt1.log, base-attempt1/: the failed first attempt, including the Challenge compile times.
+- packed.log (stopped), packed-quick.log, packed-quick-*.time.
+- The scripts: vcwht-fresh.sh, vcwht-chain.sh, vcwht-packed-quick.sh.
+- Script copies are also in <verify>/checks/wht43/bound-check/v-c-wht/.
+
+ON THE COLAB: logs are in /content/work/logs/v-c-wht/ and my fresh .olean files in /content/work/v-c-wht/. No v-c-wht processes or tmux servers are left running.

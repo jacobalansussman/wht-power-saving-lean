@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/admission/authenticate.py", line 62, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/admission/authenticate.py", line 31, in main
+    evidence=read(P/'EVIDENCE.json');need(evidence['source_manifest_sha256']==sha(P/'SOURCE-NEW.json'),'evidence source binding');need(evidence['inputs']=={'base_word':sha(PACKAGE/'inputs/NEW-base.json.gz'),'extra_word':sha(PACKAGE/'inputs/NEW-extra.json.gz'),'fill':sha(PACKAGE/'owner/FILL.json.gz'),'order':sha(PACKAGE/'owner/inputs/ORDER.json'),'dispatch':sha(PACKAGE/'owner/inputs/DISPATCH.json')},'complete admission frozen inputs')
+                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/work/ah-gate/regB/pkg/research/staged544-terminal-gap-fill/admission/authenticate.py", line 10, in need
+    if not ok:raise ValueError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: complete admission frozen inputs

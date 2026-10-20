@@ -1,0 +1,10 @@
+neighbours N1 of L0 with tau N1 at depth 2: 28 (of 30)
+depth-2 single-letter term states: 28672
+  of which on a geodesic to K (dist_K = 2): 3584
+distinct mu for depth-2 terms: 28
+pairs (geodesic term h1, depth-2 term h2): 100352
+  number of letter classes N giving a SELECTIVE GEODESIC advance of h1: [(0, 57344), (1, 43008)]
+  number giving a selective DEPTH advance of h1 (any frame at depth 3): [(0, 14336), (4, 86016)]
+  (selective exists, dim(J1 cap I2), I1 == I2) : [((False, 0, False), 43008), ((False, 0, True), 14336), ((True, 1, False), 43008)]
+check 'h not advanced <=> N cap L0 contains mu cap L0': 860160 of 860160
+check 'the 3 letters N advancing a geodesic term towards K are those with N cap L0 = the 3 hyperplanes containing J = kappa cap L0' (as sets of hyperplanes): 3584 of 3584

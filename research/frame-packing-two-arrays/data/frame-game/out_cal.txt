@@ -1,0 +1,12 @@
+m=2 W=1: plain end solves ['yes']; array 0 without its last move: no (target row unproduced after peel)
+m=2 W=2: plain end solves ['yes', 'yes']; array 0 without its last move: no (target row unproduced after peel)
+m=2: phases inserted between the K directions (generally NOT K): end solve no
+m=3 W=1: plain end solves ['yes']; array 0 without its last move: no (target row unproduced after peel)
+m=3 W=2: plain end solves ['yes', 'yes']; array 0 without its last move: no (target row unproduced after peel)
+m=3: phases inserted between the K directions (generally NOT K): end solve no
+m=4 W=1: plain end solves ['yes']; array 0 without its last move: no (target row unproduced after peel)
+m=4 W=2: plain end solves ['yes', 'yes']; array 0 without its last move: no (target row unproduced after peel)
+m=4: phases inserted between the K directions (generally NOT K): end solve no
+m=5 W=1: plain end solves ['yes']; array 0 without its last move: no (target row unproduced after peel)
+m=5 W=2: plain end solves ['yes', 'yes']; array 0 without its last move: no (target row unproduced after peel)
+m=5: phases inserted between the K directions (generally NOT K): end solve no

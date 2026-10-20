@@ -1,0 +1,11 @@
+m=3 (A) x1-coeff == K: True; x2-coeff == 0: True; max denominator in (1 - s + s^2)/2: 2
+   sigma^-1 D(e0) sigma = D(e2)
+   sigma^-1 D(e1) sigma = D(e0)
+   sigma^-1 D(e2) sigma = D(e1)
+m=3 (B) rank of X = D(1+Z_e1): 4 of 8  -> (P1+P2) X = K impossible
+m=4 (A) x1-coeff == K: True; x2-coeff == 0: True; max denominator in (1 - s + s^2)/2: 2
+   sigma^-1 D(e0) sigma = D(e2)
+   sigma^-1 D(e1) sigma = D(e0)
+   sigma^-1 D(e2) sigma = D(e1)
+   sigma^-1 D(e3) sigma = D(e3)
+m=4 (B) rank of X = D(1+Z_e1): 8 of 16  -> (P1+P2) X = K impossible

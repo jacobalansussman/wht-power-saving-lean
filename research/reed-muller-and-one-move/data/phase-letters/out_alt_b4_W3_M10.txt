@@ -1,0 +1,6 @@
+[ALT=1 ALTONLY=1; non-alternating targets 420, alternating 28]
+m=4 W=3 M=10: 448 targets; 372 classes of direction multisets (1.7 s)
+  classes with some target in span: 276; with a target 3-multiset passing deletion: 3; passing cliques and the zero-block test too: 0
+  target tuples passing deletion but excluded: by cliques 256, by the zero-block test 0
+  classes skipped by the free-direction lemma (independent distinct directions, M < mW): 0
+  done in 2.3 s

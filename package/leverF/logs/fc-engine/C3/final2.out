@@ -1,0 +1,67 @@
+files for the greps: 585
+   (slot: waited 0s; heavy 0, avail 50571 MB)
+   LEAN_NUM_THREADS=3
+=== build START 02:17:38
+=== build END rc=0 wall=103s maxrss_kb=7270596 02:19:21
+Build completed successfully (9633 jobs).
+   6.7s Work.FourierL3945F.Asymptotics
+   6.6s Work.FourierL3945F.WorkingPreparation
+   5.9s Work.FourierL3945F.ArbitraryLength
+   5.8s Work.FourierL3945F.TransformProgram
+   5.7s Work.FourierL3945F.UniformBounds
+   5.7s Work.FourierL3945F.Main
+   5.6s Work.FourierL3945F.WorkingCompiler
+   5.6s Work.FourierL3945F.SectorAlgorithm
+=== nobuild START 02:19:21
+=== nobuild END rc=0 wall=5s maxrss_kb=1013796 02:19:26
+All targets up-to-date (9633 jobs).
+BUILD L3945Ffinal OK
+CHECKS L3945F NUM=17806935 START Tue Oct 20 02:19:26 AM UTC 2026
+   (slot: waited 0s; heavy 0, avail 50566 MB)
+=== axioms START 02:19:26
+=== axioms END rc=0 wall=6s maxrss_kb=7130676 02:19:32
+'OAI.PowerSaving.transform_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945F_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms L3945F: standard only
+   (slot: waited 0s; heavy 0, avail 50582 MB)
+=== axioms-extra START 02:19:32
+=== axioms-extra END rc=0 wall=5s maxrss_kb=7135428 02:19:37
+'OAI.PowerSaving.MX.L3945F.engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.L3945F.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945F.engine_L3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945F_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL3945F.alphaL3945F_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+extra axioms: standard only
+files grepped: 583 (from /content/work/fc-engine/in-L3945F-all.files)
+sorry/admit lines: 0
+forbidden-construct mentions inside backquotes (not uses): 7
+forbidden-construct lines: 0
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74 /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierL3945F (1 - 17806935/10^10): byte-identical to my derivation from OpenAI's statement
+challenge FourierL3945FNeg (1 - 17806936/10^10): byte-identical to my derivation from OpenAI's statement
+positive and negative challenge differ only in the numerator
+Compare.lean e48d6d3b (= /content/work/ours/Compare.lean)
+   (slot: waited 0s; heavy 0, avail 50568 MB)
+=== compare-pos START 02:19:38
+=== compare-pos END rc=0 wall=49s maxrss_kb=16257144 02:20:27
+compare-pos rc=0
+RESULT: PASS
+   (slot: waited 0s; heavy 0, avail 50556 MB)
+=== compare-neg START 02:20:27
+=== compare-neg END rc=1 wall=48s maxrss_kb=16258324 02:21:15
+compare-neg rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentL3945F._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL3945F: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentL3945F._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL3945F: definition body differs
+RESULT: FAIL
+VERDICT Compare positive: PASS
+VERDICT Compare negative: FAIL (expected)
+CHECKS L3945F ALL AS EXPECTED Tue Oct 20 02:21:15 AM UTC 2026
+EXIT 0
+FINAL L3945F BUILT AND CHECKED

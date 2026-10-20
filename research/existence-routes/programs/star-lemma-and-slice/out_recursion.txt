@@ -1,0 +1,12 @@
+ m  n  |F|  max s excluded  => U_m excluded for W >=   (Cor. 15 had W > 0.9|F|)  fraction
+ 4  2     4      0          4  (old     4)  1.0000  bar needs W >= 5; open above bar: none; saving at W = 4: 0.047
+ 5  3     8      1          7  (old     8)  0.8750  bar needs W >= 8; open above bar: none; saving at W = 7: 0.075
+ 6  4    16      3         13  (old    15)  0.8125  bar needs W >= 13; open above bar: none; saving at W = 13: 0.119
+ 7  5    32      6         26  (old    29)  0.8125  bar needs W >= 23; open above bar: 23..25 (savings 0.122..0.165); saving at W = 26: 0.185
+ 8  6    64     12         52  (old    58)  0.8125  bar needs W >= 40; open above bar: 40..51 (savings 0.109..0.226); saving at W = 52: 0.235
+ 9  7   128     23        105  (old   116)  0.8203  bar needs W >= 71; open above bar: 71..104 (savings 0.102..0.275); saving at W = 105: 0.280
+10  8   256     47        209  (old   231)  0.8164  bar needs W >= 129; open above bar: 129..208 (savings 0.101..0.308); saving at W = 209: 0.310
+11  9   512     93        419  (old   461)  0.8184  bar needs W >= 237; open above bar: 237..418 (savings 0.101..0.337); saving at W = 419: 0.338
+12 10  1024    186        838  (old   922)  0.8184  bar needs W >= 438; open above bar: 438..837 (savings 0.100..0.361); saving at W = 838: 0.362
+13 11  2048    371       1677  (old  1844)  0.8188  bar needs W >= 815; open above bar: 815..1676 (savings 0.100..0.381); saving at W = 1677: 0.382
+14 12  4096    742       3354  (old  3687)  0.8188  bar needs W >= 1524; open above bar: 1524..3353 (savings 0.100..0.399); saving at W = 3354: 0.399

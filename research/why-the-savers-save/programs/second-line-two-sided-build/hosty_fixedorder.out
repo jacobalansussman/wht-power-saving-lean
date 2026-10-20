@@ -1,0 +1,5 @@
+calibration (tool, one-sided same-run U8): W 7544 banks 376 root_lower 0.00162252782113
+  same hist with our fold: 1.6225278e-03
+two-sided same-run, banks strict : W  15232 banks  8064 D 2560 N 1979882.6 a = 1.2902106e-03 (x 0.795 over the one-sided same-run 1.6225278e-03; x 0.794 over our Lean 1.6256629e-3; x 0.768 over the hub 1.6797550e-3)
+two-sided same-run, banks per-run: W   9378 banks  2210 D 2560 N 1916952.6 a = 1.3323778e-03 (x 0.821 over the one-sided same-run 1.6225278e-03; x 0.820 over our Lean 1.6256629e-3; x 0.793 over the hub 1.6797550e-3)
+  Y residuals hosted per word 193536 of 272016 | Y residuals banked 12096 | solver 0 0.7 s gap 0.0

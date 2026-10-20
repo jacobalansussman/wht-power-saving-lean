@@ -1,0 +1,14 @@
+star lemma tests: 1432 violations: 0 tight: 19
+bent mod p: rank 16 ; hyperplane ranks [4] ; plane ranks [1, 4]
+bent  |Psi|,g,k,lhs,rhs = (1, 15, 0, 2, 2) x 65
+bent  |Psi|,g,k,lhs,rhs = (1, 15, 1, 0, 0) x 72
+bent  |Psi|,g,k,lhs,rhs = (2, 7, 0, 4, 14) x 70
+bent  |Psi|,g,k,lhs,rhs = (2, 7, 1, 2, 12) x 70
+bent  |Psi|,g,k,lhs,rhs = (4, 3, 0, 8, 8) x 13
+bent  |Psi|,g,k,lhs,rhs = (4, 3, 0, 8, 11) x 34
+bent  |Psi|,g,k,lhs,rhs = (4, 3, 1, 6, 6) x 12
+bent  |Psi|,g,k,lhs,rhs = (4, 3, 1, 6, 9) x 24
+bent  |Psi|,g,k,lhs,rhs = (4, 3, 2, 4, 4) x 13
+bent  |Psi|,g,k,lhs,rhs = (4, 3, 3, 2, 2) x 16
+bent  |Psi|,g,k,lhs,rhs = (4, 3, 4, 0, 0) x 11
+GF(2) low-rank: min slack rhs-lhs by (|Psi|,g,k): [(1, 15, 0), (1, 15, 1), (2, 7, 0)] ; min rhs-lhs = 0 ; cases 399

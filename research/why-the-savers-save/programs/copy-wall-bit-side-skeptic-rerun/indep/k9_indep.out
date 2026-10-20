@@ -1,0 +1,9 @@
+=== s2 9 12:21:46
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 12:21:47
+[heavy.sh] got slot heavy-3 12:30:10
+k9_indep unit s2 K 9 gauge clique (last of 4373) (58, 60, 74, 76, 94, 96, 107, 108) vars 90668 clauses 314588
+RESULT UNSAT (W >= W0 for every decoder with K totals) 87.1 s
+=== word 9 12:31:41
+k9_indep unit word K 9 gauge clique (last of 4373) (54, 56, 73, 75, 93, 95, 107, 108) vars 90278 clauses 313180
+RESULT UNSAT (W >= W0 for every decoder with K totals) 151.9 s
+=== done 12:34:15

@@ -1,0 +1,21 @@
+FINAL START Tue Oct 13 17:27:26 UTC 2026
+Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  /content/work/ours/Compare.lean e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  tools/Compare.lean 
+HANDOFF from mb-build.sh Tue Oct 13 17:34:23 UTC 2026; its result: ALL CHECKS PASSED
+PASS positive comparison RESULT: PASS
+PASS negative comparison fails (rc != 0)
+PASS negative: definition body differs, decimalExponentC588M
+PASS no sorryAx
+PASS three theorems on [propext, Classical.choice, Quot.sound]
+COMPARATOR A1 positive rc=0 Tue Oct 13 17:43:51 UTC 2026
+nanoda kernel accepts the solution
+Lean default kernel accepts the solution
+Your solution is okay!
+=== m-build-A1 END rc=0 wall=561s Tue Oct 13 17:43:51 UTC 2026 epoch=1791913431
+COMPARATOR A2 negative rc=1 (must be nonzero) Tue Oct 13 17:48:15 UTC 2026
+uncaught exception: Const does not match between challenge and target 'OAI.PowerSaving.decimalExponentC588M'
+=== m-build-A2neg END rc=1 wall=262s Tue Oct 13 17:48:15 UTC 2026 epoch=1791913695
+=== STEP nobuild START Tue Oct 13 17:48:15 UTC 2026 cmd: lake build --no-build Work.FourierC588M.Main Work.FourierC588M.UniformFourierChallenge Work.FourierC588MNeg.UniformFourierChallenge Work.GCert.Data.C588MControls Work.FourierC588M.Axioms
+=== STEP nobuild END rc=3 wall=103s maxrss_kb=895448 last: - Mathlib.MeasureTheory.Measure.Typeclasses.NoAtoms
+FINAL END Tue Oct 13 17:49:58 UTC 2026 total_wall=1352s
+sampler: max single process RSS 15635 MB, max summed lean/lake RSS 34810 MB (all agents)
+EXIT 0

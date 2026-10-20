@@ -1,0 +1,14 @@
+ℹ [3092/3095] Replayed Work.BlockAccounting.Moment
+info: Work/BlockAccounting/Moment.lean:139:0: 'OAI.PowerSaving.BlockAccounting.term_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:140:0: 'OAI.PowerSaving.BlockAccounting.log_le_of_le_expsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:141:0: 'OAI.PowerSaving.BlockAccounting.moment_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Moment.lean:142:0: 'OAI.PowerSaving.BlockAccounting.mem_keys_of_histFn_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3093/3095] Replayed Work.BlockAccounting.Moment4
+info: Work/BlockAccounting/Moment4.lean:58:0: 'OAI.PowerSaving.BlockAccounting.term_le4' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3094/3095] Replayed Work.BlockAccounting.Sharp
+info: Work/BlockAccounting/Sharp.lean:74:0: 'OAI.PowerSaving.BlockAccounting.term_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/BlockAccounting/Sharp.lean:75:0: 'OAI.PowerSaving.BlockAccounting.le_log_of_expbound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3095/3095] Replayed Work.Mixed.Rate3815
+info: Work/Mixed/Rate3815.lean:110:0: 'OAI.PowerSaving.MX.rate3815_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/Rate3815.lean:111:0: 'OAI.PowerSaving.MX.rate3815' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3095 jobs).

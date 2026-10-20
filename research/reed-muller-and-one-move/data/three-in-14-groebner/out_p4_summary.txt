@@ -1,0 +1,17 @@
+| run | candidates in the list | tried | filter passes (two orders UNIT) | result |
+|---|---|---|---|---|
+| b4 untargeted (|U| <= 6) | 99 | 99 (all) | 0 | None |
+| b4 targeted (|U| <= 7) | 133 | 133 (all) | 0 | None |
+| b4plain untargeted (must find none) | 92 | 92 (all) | 0 | None |
+| w3:0 untargeted (must find) | 1252 | until the first find (probe4.py stops there) | 1 | [2, 3, 4, 5, 6] |
+| b5:0 targeted (|U| <= 7) | 1957 | 1411 (stopped) | 0 | stopped, nothing found |
+| b5:1 targeted (|U| <= 7) | 1675 | at least 160 (stopped) | 0 | stopped, nothing found |
+| b5:2 targeted (|U| <= 7) | 1032 | 1032 (all) | 0 | None |
+| b5:3 targeted (|U| <= 7) | 1688 | at least 1520 (stopped) | 0 | stopped, nothing found |
+| b5:4 targeted (|U| <= 7) | 1736 | 150 (all of the cap) | 0 | None |
+| b5:5 targeted (|U| <= 7) | 2885 | at least 1680 (stopped) | 0 | stopped, nothing found |
+| b5:6 targeted (|U| <= 7) | 1878 | 250 (all of the cap) | 0 | None |
+| b5:7 targeted (|U| <= 7) | 3447 | at least 1460 (stopped) | 0 | stopped, nothing found |
+| b5:8 targeted (|U| <= 7) | 1872 | 150 (all of the cap) | 0 | None |
+
+block 5, all nine sets: 7813 of 18170 targeted candidates tried (at least), no filter pass

@@ -1,0 +1,6 @@
+path 0-1-2-3 (directed), one session: expect 3 = 3.0
+directed butterfly, 2 sources multicast to 2 sinks: expect 7 (routing 8) = 7.0
+  same with Ingleton rows:  7.000000000000002
+butterfly as two unicasts s1->t2, s2->t1 (side arcs s1->t1, s2->t2 useless): routing 6 = 5.999999999999999
+combination network C(3,2), 2 symbols multicast to 3 sinks: expect 9 (routing 10) = 9.000000000000002
+one edge both ways, sessions u->v, v->u: expect 2 = 2.0

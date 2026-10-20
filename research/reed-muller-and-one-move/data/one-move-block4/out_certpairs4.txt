@@ -1,0 +1,21 @@
+targets:I,1.2.4.8 m=4 |H|=2 targets=1: dual rows used 41; -lam.b = 4 (4.000000000); negative reduced costs 0; CERTIFIED M/W >= 4 = 4.000000000
+targets:I,1.2.8.4 m=4 |H|=2 targets=2: dual rows used 71; -lam.b = 56/15 (3.733333333); negative reduced costs 0; CERTIFIED M/W >= 56/15 = 3.733333333
+targets:I,1.2.8.12 m=4 |H|=2 targets=2: dual rows used 67; -lam.b = 871/222 (3.923423423); negative reduced costs 0; CERTIFIED M/W >= 871/222 = 3.923423423
+targets:I,1.4.10.12 m=4 |H|=2 targets=2: dual rows used 53; -lam.b = 47/12 (3.916666667); negative reduced costs 0; CERTIFIED M/W >= 47/12 = 3.916666667
+targets:I,1.4.14.12 m=4 |H|=2 targets=2: dual rows used 60; -lam.b = 47/12 (3.916666667); negative reduced costs 0; CERTIFIED M/W >= 47/12 = 3.916666667
+targets:I,1.6.14.12 m=4 |H|=2 targets=2: dual rows used 55; -lam.b = 47/12 (3.916666667); negative reduced costs 0; CERTIFIED M/W >= 47/12 = 3.916666667
+targets:I,1.12.10.14 m=4 |H|=2 targets=2: dual rows used 40; -lam.b = 4 (4.000000000); negative reduced costs 0; CERTIFIED M/W >= 4 = 4.000000000
+targets:I,2.1.8.12 m=4 |H|=2 targets=2: dual rows used 60; -lam.b = 3595/919 (3.911860718); negative reduced costs 0; CERTIFIED M/W >= 3595/919 = 3.911860718
+targets:I,2.3.8.12 m=4 |H|=2 targets=2: dual rows used 53; -lam.b = 47/12 (3.916666667); negative reduced costs 0; CERTIFIED M/W >= 47/12 = 3.916666667
+targets:I,2.5.14.4 m=4 |H|=2 targets=2: dual rows used 56; -lam.b = 47/12 (3.916666667); negative reduced costs 0; CERTIFIED M/W >= 47/12 = 3.916666667
+targets:I,2.7.10.12 m=4 |H|=2 targets=2: dual rows used 62; -lam.b = 47/12 (3.916666667); negative reduced costs 0; CERTIFIED M/W >= 47/12 = 3.916666667
+targets:I,2.7.14.4 m=4 |H|=2 targets=2: dual rows used 51; -lam.b = 47/12 (3.916666667); negative reduced costs 0; CERTIFIED M/W >= 47/12 = 3.916666667
+targets:I,2.13.6.10 m=4 |H|=2 targets=2: dual rows used 48; -lam.b = 47/12 (3.916666667); negative reduced costs 0; CERTIFIED M/W >= 47/12 = 3.916666667
+targets:I,2.13.10.14 m=4 |H|=2 targets=2: dual rows used 51; -lam.b = 47/12 (3.916666667); negative reduced costs 0; CERTIFIED M/W >= 47/12 = 3.916666667
+targets:I,3.7.14.12 m=4 |H|=2 targets=2: dual rows used 73; -lam.b = 47/12 (3.916666667); negative reduced costs 0; CERTIFIED M/W >= 47/12 = 3.916666667
+targets:I,3.13.6.10 m=4 |H|=2 targets=2: dual rows used 54; -lam.b = 145/37 (3.918918919); negative reduced costs 0; CERTIFIED M/W >= 145/37 = 3.918918919
+targets:I,3.13.10.6 m=4 |H|=2 targets=2: dual rows used 59; -lam.b = 3595/919 (3.911860718); negative reduced costs 0; CERTIFIED M/W >= 3595/919 = 3.911860718
+targets:I,6.9.13.14 m=4 |H|=2 targets=2: dual rows used 71; -lam.b = 155/39 (3.974358974); negative reduced costs 0; CERTIFIED M/W >= 155/39 = 3.974358974
+targets:I,7.11.13.14 m=4 |H|=2 targets=2: dual rows used 50; -lam.b = 361/91 (3.967032967); negative reduced costs 0; CERTIFIED M/W >= 361/91 = 3.967032967
+targets:I,7.13.11.14 m=4 |H|=2 targets=2: dual rows used 60; -lam.b = 31/8 (3.875000000); negative reduced costs 0; CERTIFIED M/W >= 31/8 = 3.875000000
+time ./certpairs.sh  182.41s user 8.94s system 108% cpu 2:56.14 total

@@ -1,0 +1,47 @@
+# The commands of this track as its agent recorded them during the round, with private paths and machine
+# names removed. Paths are those of the round's working folders: the programs are now in this folder,
+# the community's files are listed in ../../data/hub-inputs/README.md (or ../../../data/... one level
+# deeper), and pricer.py is found through PRICER_DIR (see ../README.md).
+
+t-km (wht43/symmetry track 2, Kramer-Mesner), 13 Oct 2026.  VP = ./venv/bin/python (python-sat, highspy, numpy 2.0.2,
+scipy 1.13.1; Python 3.9.6).  H = a private memory-capping wrapper, not included (remove $H to run the scripts without it).  All runs -I.
+
+(b) decoders on P112 (copy gap 53-63), folder b/   [model.py, frames.py, als.py copied from ../../copywall/d-R7]
+  cd b; VP -I aut2.py 12          random automorphisms of P112 in GL(9,2) (labels + label dot parity kept) -> gens.npz:
+                                  g7 (order 7, 16 port 7-cycles), g3 (order 3, 36 3-cycles + 4 fixed ports)   (88 s)
+  VP -I km_fixed.py 7             g7-fixed flats: dims 4 (1), 7 (4), 8 (6), 9 (1) -> fixed_flats_g7.json
+  VP -I km7.py 7 7 63             octad-Hall-only stage: ONE family passes (9 x 7, cost 63) -> km_p7_d7_c63.json
+  VP -I fam63.py 4 600            that family: octad Hall deficit 0 on all 1260 octads; masked ALS residual 14.4 -> fam63.json
+  VP -I obstruct.py fam63.json    exact obstructions: clique Hall fails on 21 maximal 6/7-cliques; 63 ports pinned
+                                  -> witness_octadHall_9x7.json (frames with span bases)
+  VP -I control64.py              control: the hub's natural decoder (8 x 8, cost 64) PASSES all exact tests; it is
+                                  g7- and g3-invariant
+  VP -I km7b.py 7 8 64 8          positive control of the search: 21 survivors at cost 64
+  VP -I km7b.py 7 7 63 ; VP -I km7b.py 7 8 63 8 ; H VP -I km7b.py 7 6 63 (kmb_d6.out) ; H VP -I km7b.py 7 5 63 (kmb_d5.out)
+  VP -I km7c.py 7 7 1 63 ; H VP -I km7c.py 7 7 2 63 / 7 8 1 63 / 7 6 1 63 / 7 6 2 63   (two G-orbits, second of dim 1 or 2)
+     -> kmb_*.json, kmc_*.json  (stats: candidates, stage-0 count pass, failures by exact test, survivors)
+
+(a) packet decompositions of a Hamming block, folder a/   [pm.py, a0_demand.json, u8_blocks.json from ../../helpers/d-pair-market]
+  cd a; python3 -I geom.py        faces forced by label geometry (1456/1456 reads), 14 affine planes = 12 faces + 2 own,
+                                  AGL(3,2) 1344, face-set stabiliser 192 = signed symmetries of the 12 face needs, transitive
+  env OPTS=P|LL|P,LL SCOPE=faces TL=60 VP -I pm.py 0          -> 28 / 52 / 28 (exact, bound = objective)
+  env OPTS=P,LL,LF,H SCOPE=faces FB=0|8 TL=90 VP -I pm.py 0   -> 28 / 26 (FB=8 uses the 8 low frames U8 spends on own-block service)
+
+Added later the same session:
+  b/: kmg.py = km7b generalised to any cyclic group <g> (perm{n} in gens.npz: g7, g8 and its powers g4, g2, g3), orbit
+      types (size, dim), one BIG enumerated orbit type, optional SECOND enumerated type, SMALL orbit pieces within the
+      remaining budget (env SMALLTYPES, MAXPIECES), pair prefilter.  Flats of every dim cached in flats_cache.npz
+      (true dims 1..8: 112, 6216, 155092, 1557690, 2783900, 763987, 43173, 510).
+      Controls: VP -I kmg.py 7 7 8 64 8 -> 21 survivors (same as km7b);  VP -I kmg.py 8 8 7 63 -> 0 of 21,400.
+      ./run_more.sh (under a memory cap): C8 big dim 6; C7 big dim 5 and 4 (small = fixed flats + single-port orbits); C4 two
+      4-orbits of dim 7 / dim 6+7 + small; C8 big dim 5 (restricted small types); C3 three 3-orbits of dim 7.
+      H VP -I cliquefloor.py : counting floor with all 1996 maximal cliques (octads-only control 53 reproduced;
+      all cliques 52, 6/7-cliques alone 46: no improvement of the floor by plain counting).
+  a/: python3 -I common_readers.py : face pairs in different blocks share 0, 2 or 4 readers; every face's 8 readers
+      split 4 + 4 between exactly two partner faces (rank of P+Q = 5); the 4-reader graph is 56 triangles.
+  Final runs (b/): ALLOW9=1 adds the whole-space frame (dim 9, all ports) as a fixed piece:
+    ALLOW9=1 VP -I km7b.py 7 7 63 ; ALLOW9=1 H VP -I km7b.py 7 6 63 ; ALLOW9=1 H VP -I km7c.py 7 6 1 63
+    H VP -I kmg.py 8 8 6 63 (and ALLOW9=1) ; SMALLTYPES=... MAXPIECES=... ALLOW9=1 H VP -I kmg.py 7 7 5 63 / 8 8 5 63 / 7 7 4 63
+    (exact SMALLTYPES/MAXPIECES per run are stored in each kmg_*.json)
+    kmg.py stage 0b (vectorised octad Hall on octad-orbit representatives) added last; controls unchanged (21 at cost 64; 0 for C8 dim 7)
+    SECOND=4x7 SMALLTYPES=1x1,...,1x7 MAXPIECES=1 H VP -I kmg.py 4 4 7 63 -> kmg_4_7_4x7_fixed.out (C4: two 4-orbits of dim 7 + one fixed flat)

@@ -1,0 +1,5 @@
+projector sanity: ranks [16, 120, 120]  sum = I True
+off-diagonal parts: Rx 0.0e+00, R1 0.0e+00, R2 0.0e+00, A1 0.0e+00, A2 0.0e+00
+moves are D(z)(x)D(z) for z = 1, 2: True True
+identity |K(x)K - (Rx + sum R_i M_i A_i)| = 6.1e-16  (|K(x)K| max 0.06)
+rank of the D(1)(x)D(1) block S<-D: 8, D<-S: 8 ; of K(x)K: 15, 15

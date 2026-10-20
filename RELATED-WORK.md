@@ -21,6 +21,13 @@ For the fourth revision they read more on 2026-10-10:
   and the list of the community's pull requests again, between 21:25 and 21:35 on 2026-10-10 (section 8,
   "The look of the evening of 2026-10-10").
 
+For the results of 2026-10-13, the agents read the leaderboard bigospeedrun.com/exact-dft, Ryan Shea's
+repository and the community's repository on that day; README.md, section 9, "For the fifth result", lists
+what was read, and section 9 of this file says what the fifth result takes from others. For the lever, of
+2026-10-19, they read the community's repository, the leaderboard and its verifier again, read-only, several
+times that day; README.md, section 9, "For the lever, the sixth result and the research", lists what was read,
+and section 10 of this file says what the lever takes from others.
+
 **All times are UTC.**
 
 Rules of this file:
@@ -626,3 +633,103 @@ machine.
   two heaviest modules need about 13 GB each.
 - **Not merged:** his files are in his pull request and not in this repository, so these three theorems are
   his and are not theorems of this repository. The README says why ("Whose circuit this is").
+
+## 9. The fifth result (2026-10-13): credits, and where the outside figures stood
+
+**Where its proof lives.** The fifth result is not built in this repository's own Lean project. It is a set
+of packages under `community/`, laid over Ryan Shea's Lean tree, which runs on the Lean engine of this
+repository and holds Nil Mamano's extension of it. README.md, "The results of 13 October 2026", gives the
+theorems and their checks; this section gives the credit in more detail.
+
+**What it takes from others.** The fifth result is the community's U8 circuit with three steps proved in Lean:
+exit frames, mutable sources and same-run hosting. The same two last steps on Jeremy Kothe's circuit give the
+smaller result `community/c588mhh`.
+
+- **The circuit** is the community's U8 circuit, which Jeremy Kothe made from another circuit of his and the
+  line of circuits before it. It carries Chafik Boukhalfa's frame changes and is built on icekylinx's "gauge44"
+  construction; the community's notice credits its last step, the triangle-hybrid construction, to NewBArch,
+  with its driver and composition to ColdWitness/icekylinx. All of it rests on the earlier work that the
+  community's notices name. The agents rebuilt it with the community's own program.
+- **Not used:** the community's owner maps for the U8 circuit, which say which array keeps each helper's
+  leftover piece (Hao Yan's sixteen-copy controller, applied by Kothe, and the owner packings of Boukhalfa and
+  Jonathan Capalbo), and DreamingOfClouds' bit supplier, the second ingredient of the community's figure for
+  integer multiplication. The certificates take only the circuit's additions and their frames.
+- **Kothe's earlier circuit** ("atm3", in the community's repository) is the circuit of Shea's proof and of
+  the smaller hosting result.
+- **The Lean proof of that circuit**, which the fifth result extends, is Ryan Shea's: the conversion pipeline,
+  the generators and the Lean instantiation, whose tree the U8 results are laid over too. His proof was the top
+  entry of the leaderboard on the morning of 13 October 2026.
+- **The nine-stage network** that Shea's proof runs on is in Lean files that his tree takes from Nil Mamano's
+  submission to the leaderboard: the gauged extension of the engine, the network files written by Mamano's
+  generator, the bank lemmas, the bank-table checker, the end theorem and the templates of the Fourier chain.
+  Its design is the community's: Dugongue's entrance gauges and banks, Zhihao Chen's (jacklightChen)
+  compressed nine-stage layout with its banks and padding, lydakis's bank patterns and DaysSky's bridged
+  layout.
+- **Hosting** is DaysSky's idea, with a written proof that the Lean proof follows for hosts within one run.
+  The hosted network copies Mamano's network files and adds hosting to them; its step into a host adapts his
+  bank lemmas; its checker is modelled on his bank-table checker; its end theorem adapts his. Each file says so
+  in its first lines, and `NOTICE`, section 9, lists them.
+- **Mutable sources** had Zhihao Chen's written argument in the community's terms.
+- **The first hosting lemma, L1**, restates what Shea's tree already proves. Neither L1 nor L2 is used by either
+  checked hosting result.
+- **Exit frames** are the community's idea, from its helpers that end early (Kothe's, DreamingOfClouds' and
+  icekylinx's among them); Shea's notes name them as the next step for the Lean route, and the charge for them
+  follows the lemmas about where a helper may end that Kothe and DreamingOfClouds wrote for the community.
+- **OpenAI** made the cost model, the statement and the step to every length, as for every result here.
+
+**What is mine.** The original Lean engine that these proofs run on; the Lean proofs of exit frames, of mutable
+sources and of the two together; for same-run hosting, adding hosting to Mamano's network, the checker
+`hostSchedK` and its soundness proof, the host tables and the instances; the generators, the certificates, the repacked bank table,
+the Walsh-Hadamard corollaries and the checks. The agents wrote the proofs under my direction.
+
+**Where the outside figures stood on 13 October 2026.**
+
+- The leaderboard listed Ryan Shea first, with 1.2331685e-3 and a Lean proof, Nil Mamano second with
+  1.0221e-3, and the fourth result of this repository third, with 8.7625e-4.
+- The community's selected results of that day had complex sides of 1.6644e-3 in the morning and about
+  1.675e-3 in the afternoon, and the community prices Kothe's earlier circuit at a complex side of 1.6049e-3.
+  These figures are conditional: they assume steps with no Lean proof, among them mutable sources and hosting
+  across the whole call, as the community's own README lists.
+- The fifth result is compared only with figures that have a Lean proof.
+
+**Sources for this section.** Kothe's circuit is pull request #588 of CrocSwap/integer-mult-bounds; the U8
+circuit is #869 (Kothe), on his #799, which carries Boukhalfa's frame changes of #741, and on icekylinx's #645,
+rebuilt at the community's commit `407d52ff15b2217b6e22bce44728b4c3907b6515`; the owner maps not used are #870
+(Kothe, with Hao Yan's #858), #890 (Boukhalfa) and #942 (Capalbo), and the bit supplier #589 (DreamingOfClouds)
+(README.md, section 9). Dugongue's entrance gauges and banks are #401; jacklightChen's layout #377 and the
+argument for mutable sources #425; lydakis's bank patterns #275; DaysSky's bridged layout #363 and idle-axis
+hosting #442. The community's lemmas about where a helper may end are #593 (Kothe) and #599
+(DreamingOfClouds), and its helpers that end early are in #596 and #601 (Kothe), #604 and #610
+(DreamingOfClouds) and #645 (icekylinx). The selected results were #799 (morning), #942 and #1042
+(afternoon). Shea's tree is shea256/fourier-transform-below-nlogn at
+`52394849c7ecf3412d39b925d75fc7fdb98994d8`, with its notices and `SOURCE_MANIFEST.json`; his notes on exit
+frames are its `research/complex-transfer-588-596/HANDOFF.md`. Mamano's submission is in bigospeedrun/verifier
+at `025396033eede56e3af6e02ed2679ba828381bd5`. README.md, section 9, "For the fifth result", has the dates and
+commits of what was read.
+
+## 10. The lever and the sixth result (2026-10-14 to 2026-10-20): credits, and where the outside figures stood
+
+**Where the proofs live.** The sixth result and the lever are packages under `package/`, laid over Ryan Shea's
+Lean tree like the packages of section 9. README.md, "What is new in the fifth revision", gives the theorems and
+their checks; [NOTICE](NOTICE), section 10, gives the credit for every circuit and step with its pull request.
+
+**What they take from others.** The sixth result is the fifth taken further on the same circuit (no source copies
+left, a tighter bank table), so its credits are those of section 9. The lever is built on the community's newest
+circuits: Dugongue's #3945 and the long line of circuits under it, and Marius-Paul Dumitrean's #2979, on Jeremy
+Kothe's and Mason Hale's work; the borrowed helpers and their warps are Cinna Davis's; the price of a circuit is
+the community's moment formula, whose exact engine the agents re-implemented; the tables with every head kept were
+made by the community's own allocation programs with one added condition. The idea of the recursion with jobs of
+two sizes extends Schönhage's τ-theorem for matrix multiplication. What is new, and mine, is the recursion with
+two job sizes (Theorem 1G) and its Lean proof, the head lemma, the half cut and the full cut (with its 24 + 24 split of the other idle blocks), the heads-first certificate, the
+Lean ports of the two circuits with their warps, the choice to keep every head, and the A-fc table on #2979's words
+(its class solution and its tolerant placement, made with the construction of #3815 by Erwan Secousses /
+ChaloupeMusic; checked by computer, not proved in Lean).
+
+**What others had at the time.** As far as the agents could find on 19 October 2026, nobody on the community's
+repository had used heads or a recursion with two job sizes, and no complex-side construction claimed there was at or above the lever's (some research notes there print higher
+ceilings or targets, which are not constructions). The highest complex-side constructions in open pull requests were
+a little above 1.7309e-3; the highest ever claimed,
+1.7411726e-3, was withdrawn after an audit; the community's selected record was kappa 1.6726602e-3. The public
+Lean leaderboard's top entry was 1.2654e-3, Bojnal's, built on canghaimeng's C588AT, which runs on this
+repository's engine. README.md, section 9, "For the lever, the sixth result and the research", has the pull
+requests, heads and dates.

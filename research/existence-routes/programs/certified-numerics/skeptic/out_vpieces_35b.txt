@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    exec(open("vpieces.py").read().split("mod, dimchi")[0])
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 7, in <module>
+    R1=R7_t(ee(1)); R2=R7_t(5); print("sym2 hom check:", (sym2(R1@R2)==sym2(R1)@sym2(R2)).all())
+                       ^^^^^^^^
+NameError: name '__file__' is not defined. Did you mean: '__name__'?
+h dim(L0 cap g L0) = 2
+h2 dim(L0 cap g L0) = 1
+k dim(L0 cap g L0) = 0
+module L2S2 dim 588 Z2a spectrum {7: 189, 15: 210, 21: 120, 27: 42, 35: 27}
+Z2a eigenspace for 27 has dim 42; refining by Z2b
+isotropic lines: 315
+Z2b spectrum on it: {-45: 42}
+Traceback (most recent call last):
+  File "vpieces.py", line 66, in <module>
+    zb = [v for v, c in zip(vb.tolist(), cb.tolist()) if c == dimchi]; assert len(zb) == 1, 'no unique d-dim joint eigenspace'
+                                                                              ^^^^^^^^^^^^
+AssertionError: no unique d-dim joint eigenspace

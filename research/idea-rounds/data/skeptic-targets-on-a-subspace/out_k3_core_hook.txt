@@ -1,0 +1,11 @@
+span dim 4, |O| =  7: need sum rank >= 11; least demand 241,504 (0, 0, 0, 0, 3, 4, 4) vs 7 x cap = 192,192  ->  EXCLUDED (margin 49,312)
+span dim 4, |O| =  8: need sum rank >= 12; least demand 259,776 (0, 0, 0, 0, 4, 4, 4) vs 8 x cap = 219,648  ->  EXCLUDED (margin 40,128)
+span dim 4, |O| =  9: need sum rank >= 13; least demand 287,232 (0, 0, 0, 1, 4, 4, 4) vs 9 x cap = 247,104  ->  EXCLUDED (margin 40,128)
+span dim 4, |O| = 10: need sum rank >= 14; least demand 308,352 (0, 0, 0, 2, 4, 4, 4) vs 10 x cap = 274,560  ->  EXCLUDED (margin 33,792)
+span dim 4, |O| = 11: need sum rank >= 15; least demand 328,096 (0, 0, 0, 3, 4, 4, 4) vs 11 x cap = 302,016  ->  EXCLUDED (margin 26,080)
+span dim 4, |O| = 12: need sum rank >= 16; least demand 346,368 (0, 0, 0, 4, 4, 4, 4) vs 12 x cap = 329,472  ->  EXCLUDED (margin 16,896)
+span dim 4, |O| = 13: need sum rank >= 17; least demand 373,824 (0, 0, 1, 4, 4, 4, 4) vs 13 x cap = 356,928  ->  EXCLUDED (margin 16,896)
+span dim 4, |O| = 14: need sum rank >= 18; least demand 394,944 (0, 0, 2, 4, 4, 4, 4) vs 14 x cap = 384,384  ->  EXCLUDED (margin 10,560)
+span dim 4, |O| = 15: need sum rank >= 19; least demand 414,688 (0, 0, 3, 4, 4, 4, 4) vs 15 x cap = 411,840  ->  EXCLUDED (margin 2,848)
+span dim 3, |O| =  7: need sum rank >= 11; least demand     800 (0, 0, 2, 2, 2, 2, 3) vs 7 x cap =     560  ->  EXCLUDED (margin 240)
+four-alternating core / N17-type 4-in-15 core: sum of ranks = 16 < 19 required -> not a 7-array core

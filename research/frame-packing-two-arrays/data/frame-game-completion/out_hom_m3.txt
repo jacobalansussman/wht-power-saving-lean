@@ -1,0 +1,7 @@
+m=3: (1) conventions hold: symp(dir z) = T_z for all z; symp(lift(p)) = p for 30 random p; symp(K) = Kbar
+m=3: (2) block-0 character orbits [1, 63] (expected [1, 63]); block-2 orbits [28, 36] (expected [28, 36])
+m=3: (3) cocycle identities: 80/80 hold; Pauli rules eps(n,v) = chi_v(n), del(n,w) = (-1)^j chi_w(u): all 256 hold
+m=3: (5) eps(g, 0) = 1 for every letter, so the frame-game projection of Lambda(lambda) is lambda
+m=3: (4) word 0 (3 moves): Lambda letter by letter vs Lambda(one lift): errors by f {1: 5e-16, 2: 4.5e-16, 3: 6.8e-16, 4: 4.4e-16, 5: 6.9e-16, 6: 4.9e-16}; the f = 1 lift alone (D = Pexp(g^-1) in every block): {1: 5e-16, 2: 1.0, 3: 2.0, 4: 1.3, 5: 1.2e-15, 6: 1.6}
+m=3: (4) word 1 (3 moves): Lambda letter by letter vs Lambda(one lift): errors by f {1: 5.9e-16, 2: 5.1e-16, 3: 5.1e-16, 4: 5.6e-16, 5: 7.3e-16, 6: 5.4e-16}; the f = 1 lift alone (D = Pexp(g^-1) in every block): {1: 4.8e-16, 2: 1.2, 3: 2.0, 4: 1.4, 5: 7.1e-16, 6: 1.4}
+m=3: done in 0.8 s

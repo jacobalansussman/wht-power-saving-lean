@@ -1,0 +1,121 @@
+[timing lock] waiting for timing lock 05:58:37
+[timing lock] got lock 05:59:57; load: { 97.21 79.70 52.17 }
+Mon Oct 12 05:59:57 EDT 2026
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=4096 mode=st1 SW=16 PFD=4 col radices: 8 8 8 8
+# FFTW-d 1-D row plan: PATIENT, 0.24 s
+# FFTW-d NEON 2-D plans (MEASURE, 1 threads, out of place) took 5.0 s
+CHECK FFTW-d 2-D step vs pocketfft: max rel 6.999e-16 rel RMS 6.386e-16 PASS
+# cluster: NEON threads use PFFFT-d; SME takes 8 row units (8 rows each) at a time; tail 0
+CHECK cluster step (with SME, 0 NEON workers) read at -n vs pocketfft: max rel 2.083e-15  PASS
+CHECK cluster step (NEON only, 0 NEON workers) read at -n vs pocketfft: max rel 1.350e-15  PASS
+CHECK strip plan, FFTW-d rows, NEON only (0 workers): max rel 6.666e-16  PASS
+## one thread step 4096^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  SME step (rev. order)             91.5245
+rep  0  strip plan KFR-d 1 thr           241.6583
+rep  0  strip plan FFTW-d 1 thr          232.4847
+rep  0  KFR-d rows+transp (rev.)         229.8730
+rep  0  FFTW-d NEON 2D plan              260.6710
+rep  1  strip plan KFR-d 1 thr           244.3385
+rep  1  strip plan FFTW-d 1 thr          234.3293
+rep  1  KFR-d rows+transp (rev.)         228.6974
+rep  1  FFTW-d NEON 2D plan              259.4032
+rep  1  SME step (rev. order)             87.5542
+rep  2  strip plan FFTW-d 1 thr          231.5383
+rep  2  KFR-d rows+transp (rev.)         236.6292
+rep  2  FFTW-d NEON 2D plan              252.1781
+rep  2  SME step (rev. order)             89.9652
+rep  2  strip plan KFR-d 1 thr           242.2728
+rep  3  KFR-d rows+transp (rev.)         220.4469
+rep  3  FFTW-d NEON 2D plan              249.8672
+rep  3  SME step (rev. order)             82.6742
+rep  3  strip plan KFR-d 1 thr           245.3155
+rep  3  strip plan FFTW-d 1 thr          233.1941
+rep  4  FFTW-d NEON 2D plan              253.9758
+rep  4  SME step (rev. order)             88.5691
+rep  4  strip plan KFR-d 1 thr           240.4073
+rep  4  strip plan FFTW-d 1 thr          229.4181
+rep  4  KFR-d rows+transp (rev.)         223.1011
+rep  5  SME step (rev. order)             87.0654
+rep  5  strip plan KFR-d 1 thr           239.4536
+rep  5  strip plan FFTW-d 1 thr          227.9034
+rep  5  KFR-d rows+transp (rev.)         227.9698
+rep  5  FFTW-d NEON 2D plan              261.8412
+rep  6  strip plan KFR-d 1 thr           249.6012
+rep  6  strip plan FFTW-d 1 thr          235.9229
+rep  6  KFR-d rows+transp (rev.)         229.2038
+rep  6  FFTW-d NEON 2D plan              255.7740
+rep  6  SME step (rev. order)             85.7147
+rep  7  strip plan FFTW-d 1 thr          232.9808
+rep  7  KFR-d rows+transp (rev.)         223.3463
+rep  7  FFTW-d NEON 2D plan              247.0213
+rep  7  SME step (rev. order)             83.5277
+rep  7  strip plan KFR-d 1 thr           237.6715
+rep  8  KFR-d rows+transp (rev.)         216.0754
+rep  8  FFTW-d NEON 2D plan              258.2890
+rep  8  SME step (rev. order)             88.0528
+rep  8  strip plan KFR-d 1 thr           237.4933
+rep  8  strip plan FFTW-d 1 thr          229.7757
+RESULT one thread step 4096^2 c128              SME step (rev. order)        best    82.6742  median    87.5542  ns/call(ms)  (calls/rep 3)
+RESULT one thread step 4096^2 c128              strip plan KFR-d 1 thr       best   237.4933  median   241.6583  ns/call(ms)  (calls/rep 1)
+RESULT one thread step 4096^2 c128              strip plan FFTW-d 1 thr      best   227.9034  median   232.4847  ns/call(ms)  (calls/rep 1)
+RESULT one thread step 4096^2 c128              KFR-d rows+transp (rev.)     best   216.0754  median   227.9698  ns/call(ms)  (calls/rep 1)
+RESULT one thread step 4096^2 c128              FFTW-d NEON 2D plan          best   247.0213  median   255.7740  ns/call(ms)  (calls/rep 1)
+Mon Oct 12 06:00:19 EDT 2026
+Mon Oct 12 06:00:19 EDT 2026
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=fw SW=16 PFD=4 col radices: 4 8 8 8
+# FFTW-d 1-D row plan: PATIENT, 0.11 s
+# FFTW-d NEON 2-D plans (MEASURE, 4 threads, out of place) took 2.2 s
+CHECK FFTW-d 2-D step vs pocketfft: max rel 5.930e-16 rel RMS 6.021e-16 PASS
+## FFTW-d 2-D step 2048^2 c128 4 thr  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  FFTW-d NEON 2D step               23.1080
+rep  1  FFTW-d NEON 2D step               22.9408
+rep  2  FFTW-d NEON 2D step               22.8008
+rep  3  FFTW-d NEON 2D step               22.4473
+rep  4  FFTW-d NEON 2D step               22.3536
+rep  5  FFTW-d NEON 2D step               18.5154
+rep  6  FFTW-d NEON 2D step               18.8520
+rep  7  FFTW-d NEON 2D step               18.5608
+rep  8  FFTW-d NEON 2D step               18.5206
+RESULT FFTW-d 2-D step 2048^2 c128 4 thr        FFTW-d NEON 2D step          best    18.5154  median    22.3536  ns/call(ms)  (calls/rep 12)
+Mon Oct 12 06:00:24 EDT 2026
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=mt SW=16 PFD=4 col radices: 4 8 8 8
+# FFTW-d 1-D row plan: PATIENT, 0.11 s
+# cluster: NEON threads use KFR-d; SME takes 8 row units (8 rows each) at a time; tail 3
+CHECK cluster step (with SME, 3 NEON workers) read at -n vs pocketfft: max rel 1.323e-15  PASS
+CHECK cluster step (NEON only, 3 NEON workers) read at -n vs pocketfft: max rel 7.866e-16  PASS
+CHECK strip plan, FFTW-d rows, NEON only (3 workers): max rel 5.899e-16  PASS
+## cluster propagation step 2048^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  cluster 1 SME + 3 NEON            13.4862
+rep  0  cluster 4 NEON KFR-d              16.9118
+rep  0  cluster 4 NEON FFTW-d rows        15.8099
+rep  1  cluster 4 NEON KFR-d              17.1582
+rep  1  cluster 4 NEON FFTW-d rows        16.0198
+rep  1  cluster 1 SME + 3 NEON            14.5785
+rep  2  cluster 4 NEON FFTW-d rows        16.0590
+rep  2  cluster 1 SME + 3 NEON            13.6500
+rep  2  cluster 4 NEON KFR-d              16.3858
+rep  3  cluster 1 SME + 3 NEON            14.2320
+rep  3  cluster 4 NEON KFR-d              16.5530
+rep  3  cluster 4 NEON FFTW-d rows        15.6307
+rep  4  cluster 4 NEON KFR-d              16.4540
+rep  4  cluster 4 NEON FFTW-d rows        15.5129
+rep  4  cluster 1 SME + 3 NEON            13.5651
+rep  5  cluster 4 NEON FFTW-d rows        15.4398
+rep  5  cluster 1 SME + 3 NEON            13.5242
+rep  5  cluster 4 NEON KFR-d              16.3745
+rep  6  cluster 1 SME + 3 NEON            13.8189
+rep  6  cluster 4 NEON KFR-d              16.5637
+rep  6  cluster 4 NEON FFTW-d rows        15.5607
+rep  7  cluster 4 NEON KFR-d              16.9837
+rep  7  cluster 4 NEON FFTW-d rows        15.4626
+rep  7  cluster 1 SME + 3 NEON            14.4709
+rep  8  cluster 4 NEON FFTW-d rows        15.9806
+rep  8  cluster 1 SME + 3 NEON            14.3693
+rep  8  cluster 4 NEON KFR-d              16.7535
+RESULT cluster propagation step 2048^2 c128     cluster 1 SME + 3 NEON       best    13.4862  median    13.8189  ns/call(ms)  (calls/rep 17)
+RESULT cluster propagation step 2048^2 c128     cluster 4 NEON KFR-d         best    16.3745  median    16.5637  ns/call(ms)  (calls/rep 14)
+RESULT cluster propagation step 2048^2 c128     cluster 4 NEON FFTW-d rows   best    15.4398  median    15.6307  ns/call(ms)  (calls/rep 15)
+Mon Oct 12 06:00:32 EDT 2026

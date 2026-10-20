@@ -1,0 +1,48 @@
+[timing lock] waiting for timing lock 05:18:15
+[timing lock] got lock 05:18:15; load: { 5.08 6.94 12.64 }
+# hold start 05:18:15 load { 5.08 6.94 12.64 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# FFTW-d (timer build) plans MEASURE row, MEASURE many, PATIENT many: 0.12 s on this P-core
+CHECK SME ap-0               n=512 B=64 row0 relRMS vs direct DFT 9.15e-16; all rows vs FFTW row plan 5.21e-16 PASS
+CHECK FFTW-d MEASURE row     n=512 B=64 row0 relRMS vs direct DFT 7.87e-16; all rows vs FFTW row plan 0.00e+00 PASS
+CHECK FFTW-d MEASURE many    n=512 B=64 row0 relRMS vs direct DFT 7.87e-16; all rows vs FFTW row plan 0.00e+00 PASS
+CHECK FFTW-d PATIENT many    n=512 B=64 row0 relRMS vs direct DFT 7.87e-16; all rows vs FFTW row plan 0.00e+00 PASS
+## smevsfftw n=512 B=64 same  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+RESULT smevsfftw n=512 B=64 same                SME fp64 (ap-0)              best     0.6873  median     0.6876  ns/point  (calls/rep 9769)
+RESULT smevsfftw n=512 B=64 same                FFTW-d MEASURE row           best     1.1632  median     1.1644  ns/point  (calls/rep 5748)
+RESULT smevsfftw n=512 B=64 same                FFTW-d MEASURE many          best     1.1630  median     1.1637  ns/point  (calls/rep 5771)
+RESULT smevsfftw n=512 B=64 same                FFTW-d PATIENT many          best     1.1621  median     1.1640  ns/point  (calls/rep 5763)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# FFTW-d (timer build) plans MEASURE row, MEASURE many, PATIENT many: 0.00 s on this P-core
+CHECK SME ap-0               n=512 B=512 row0 relRMS vs direct DFT 9.15e-16; all rows vs FFTW row plan 5.21e-16 PASS
+CHECK FFTW-d MEASURE row     n=512 B=512 row0 relRMS vs direct DFT 7.87e-16; all rows vs FFTW row plan 0.00e+00 PASS
+CHECK FFTW-d MEASURE many    n=512 B=512 row0 relRMS vs direct DFT 7.87e-16; all rows vs FFTW row plan 0.00e+00 PASS
+CHECK FFTW-d PATIENT many    n=512 B=512 row0 relRMS vs direct DFT 7.87e-16; all rows vs FFTW row plan 0.00e+00 PASS
+## smevsfftw n=512 B=512 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+RESULT smevsfftw n=512 B=512 separate           SME fp64 (ap-0)              best     0.7846  median     0.7995  ns/point  (calls/rep 1046)
+RESULT smevsfftw n=512 B=512 separate           FFTW-d MEASURE row           best     1.7098  median     1.7521  ns/point  (calls/rep 473)
+RESULT smevsfftw n=512 B=512 separate           FFTW-d MEASURE many          best     1.7533  median     1.7622  ns/point  (calls/rep 477)
+RESULT smevsfftw n=512 B=512 separate           FFTW-d PATIENT many          best     1.7496  median     1.7548  ns/point  (calls/rep 476)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# FFTW-d (timer build) plans MEASURE row, MEASURE many, PATIENT many: 2.03 s on this P-core
+CHECK SME ap-0               n=4096 B=64 row0 relRMS vs direct DFT 2.20e-15; all rows vs FFTW row plan 6.36e-16 PASS
+CHECK FFTW-d MEASURE row     n=4096 B=64 row0 relRMS vs direct DFT 2.13e-15; all rows vs FFTW row plan 0.00e+00 PASS
+CHECK FFTW-d MEASURE many    n=4096 B=64 row0 relRMS vs direct DFT 2.13e-15; all rows vs FFTW row plan 0.00e+00 PASS
+CHECK FFTW-d PATIENT many    n=4096 B=64 row0 relRMS vs direct DFT 2.13e-15; all rows vs FFTW row plan 2.57e-16 PASS
+## smevsfftw n=4096 B=64 same  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+RESULT smevsfftw n=4096 B=64 same               SME fp64 (ap-0)              best     0.9522  median     0.9548  ns/point  (calls/rep 870)
+RESULT smevsfftw n=4096 B=64 same               FFTW-d MEASURE row           best     1.7101  median     1.7295  ns/point  (calls/rep 469)
+RESULT smevsfftw n=4096 B=64 same               FFTW-d MEASURE many          best     1.7086  median     1.7219  ns/point  (calls/rep 489)
+RESULT smevsfftw n=4096 B=64 same               FFTW-d PATIENT many          best     1.7350  median     1.7416  ns/point  (calls/rep 478)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# FFTW-d (timer build) plans MEASURE row, MEASURE many, PATIENT many: 0.02 s on this P-core
+CHECK SME ap-0               n=4096 B=512 row0 relRMS vs direct DFT 2.20e-15; all rows vs FFTW row plan 6.36e-16 PASS
+CHECK FFTW-d MEASURE row     n=4096 B=512 row0 relRMS vs direct DFT 2.13e-15; all rows vs FFTW row plan 0.00e+00 PASS
+CHECK FFTW-d MEASURE many    n=4096 B=512 row0 relRMS vs direct DFT 2.13e-15; all rows vs FFTW row plan 0.00e+00 PASS
+CHECK FFTW-d PATIENT many    n=4096 B=512 row0 relRMS vs direct DFT 2.13e-15; all rows vs FFTW row plan 0.00e+00 PASS
+## smevsfftw n=4096 B=512 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+RESULT smevsfftw n=4096 B=512 separate          SME fp64 (ap-0)              best     0.9910  median     1.0023  ns/point  (calls/rep 103)
+RESULT smevsfftw n=4096 B=512 separate          FFTW-d MEASURE row           best     2.0794  median     2.0903  ns/point  (calls/rep 51)
+RESULT smevsfftw n=4096 B=512 separate          FFTW-d MEASURE many          best     2.0865  median     2.0955  ns/point  (calls/rep 50)
+RESULT smevsfftw n=4096 B=512 separate          FFTW-d PATIENT many          best     2.0832  median     2.0915  ns/point  (calls/rep 51)
+# hold end 05:18:53

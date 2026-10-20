@@ -1,0 +1,30 @@
+inputs:
+   f621f6d4296cb215  hub/research/punctured112-global/vendor/pr514/inputs/work/complex-nine-native/DATA-PHASES.json
+   1b84904a31a733aa  hub/research/punctured112-global/vendor/pr514/inputs/work/complex-nine-native/GLOBAL-TEMPLATE.json.gz
+   16bc0ebb04b4be6c  checks/wht43/helpers/k8-pairs/dl1042/slots/local/CANONICAL-WORD.json.gz
+template route semantics: {"data": "physical cover class d*rho(stage,port); rho is the exact orthogonal involution from data_phases.py", "helper": "physical cover class d*Pi(slot)^(-1); Pi swaps the local nine coordinates with the assigned bank block", "work": "private family at class d; every allocated work stream is erased before reuse"}
+labels: DATA-PHASES 120 ports; #1042 k8 word 112 live ports (all distinct); punctured 8 at canonical indices [0, 13, 22, 35, 40, 51, 54, 119]
+(1a) chart columns 1..8 + block 1 = hub idle-child-0 axes: 120 / 120 ports
+     hub stage translations reproduced (s=0: zero; s>0: entry = q+e_z, exit = e_z + rho_s(e_z)): 1080 / 1080 
+(1b) rho_{s,q}: 9 x 112 matrices in O(73,2), all symmetric involutions
+(2) boundary identities H_s = P_(s+1) and K_s = 0_(s+1) [= data levels X_s = U+E_s, Y_s = q^perp+E_s]: 0 of 896 (boundary, port) pairs fail
+    scalar replay of the template recipe: word = identity: True; same-bank hand-over boundaries [(0, 1), (1, 2), (3, 4), (5, 6), (7, 8)]
+    (content exact at [(0, 1), (7, 8)]; a bridge term in between at [(1, 2), (3, 4), (5, 6)])
+(1c) boundary 0->1: A_q = rho_0,q rho_1,q: 112 distinct over 112 ports; 9x9 local block = q q^T: True; A_q(E_1) = q^perp + E_0: True; A_q q = q: True; orders {2: 112}; coordinates moved {17: 112}
+(1c) boundary 1->2: A_q = rho_1,q rho_2,q: 112 distinct over 112 ports; 9x9 local block = q q^T: True; A_q(E_2) = q^perp + E_1: True; A_q q = q: True; orders {3: 112}; coordinates moved {25: 112}
+(1c) boundary 3->4: A_q = rho_3,q rho_4,q: 112 distinct over 112 ports; 9x9 local block = q q^T: True; A_q(E_4) = q^perp + E_3: True; A_q q = q: True; orders {3: 112}; coordinates moved {25: 112}
+(1c) boundary 5->6: A_q = rho_5,q rho_6,q: 112 distinct over 112 ports; 9x9 local block = q q^T: True; A_q(E_6) = q^perp + E_5: True; A_q q = q: True; orders {3: 112}; coordinates moved {25: 112}
+(1c) boundary 7->8: A_q = rho_7,q rho_8,q: 112 distinct over 112 ports; 9x9 local block = q q^T: True; A_q(E_8) = q^perp + E_7: True; A_q q = q: True; orders {3: 112}; coordinates moved {25: 112}
+     all 5 x 112 matrices written to out/A_table.json (column j = A(e_j), hex)
+(3) hub P112 decoder: 8 totals, read sizes [56, 56, 56, 56, 56, 56, 56, 56], widths [8, 8, 8, 8, 8, 8, 8, 8] (star cost 64); P_a = q_a^perp for the punctured q_a
+    punctured labels pairwise dot: [(1, 28)]
+    boundary 0->1: transportable totals 0 / 8; distinct continuation invocations per total [56, 56, 56, 56, 56, 56, 56, 56]; (total, port) pairs whose frame reaches the new window 0 / 448; frame-legal pre-loads 0 / 896; most pieces of one total co-present in any host continuation 1
+    boundary 1->2: transportable totals 0 / 8; distinct continuation invocations per total [56, 56, 56, 56, 56, 56, 56, 56]; (total, port) pairs whose frame reaches the new window 0 / 448; frame-legal pre-loads 0 / 896; most pieces of one total co-present in any host continuation 1
+    boundary 3->4: transportable totals 0 / 8; distinct continuation invocations per total [56, 56, 56, 56, 56, 56, 56, 56]; (total, port) pairs whose frame reaches the new window 0 / 448; frame-legal pre-loads 0 / 896; most pieces of one total co-present in any host continuation 1
+    boundary 5->6: transportable totals 0 / 8; distinct continuation invocations per total [56, 56, 56, 56, 56, 56, 56, 56]; (total, port) pairs whose frame reaches the new window 0 / 448; frame-legal pre-loads 0 / 896; most pieces of one total co-present in any host continuation 1
+    boundary 7->8: transportable totals 0 / 8; distinct continuation invocations per total [56, 56, 56, 56, 56, 56, 56, 56]; (total, port) pairs whose frame reaches the new window 0 / 448; frame-legal pre-loads 0 / 896; most pieces of one total co-present in any host continuation 1
+(4) q -> q^perp + E_s injective on all 120 labels (s = 3 shown): 120 distinct subspaces
+    => transportable totals of ANY decoder (any orbit element, any replica, any of the 5 boundaries) = totals that
+       read a single port.  Hub decoder 0 / 8; best over its orbit 0 / 8; a decoder with only such totals costs >= 112.
+(5) paid co-location of a total's ports (generous non-nested cost): >= [220] moves per total per boundary, against the 8 its star copy costs
+PASS  (out/summary.json, out/A_table.json)

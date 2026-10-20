@@ -1,0 +1,32 @@
+  for j in range(6): P = P @ (np.eye(d) + (-1 if s >> j & 1 else 1) * A[j]) / 2
+  for j in range(6): P = P @ (np.eye(d) + (-1 if s >> j & 1 else 1) * A[j]) / 2
+  for j in range(6): P = P @ (np.eye(d) + (-1 if s >> j & 1 else 1) * A[j]) / 2
+  Q = Lm @ WP[s] @ Lm.T
+  Q = Lm @ WP[s] @ Lm.T
+  Q = Lm @ WP[s] @ Lm.T
+  if np.abs(WP[t] @ Q - Q).max() < 1e-8: return t
+  if np.abs(WP[t] @ Q - Q).max() < 1e-8: return t
+  if np.abs(WP[t] @ Q - Q).max() < 1e-8: return t
+  PNm = Nb @ Nb.T
+  PNm = Nb @ Nb.T
+  PNm = Nb @ Nb.T
+  G = T @ Nb; R = G - PNm @ G
+  G = T @ Nb; R = G - PNm @ G
+  G = T @ Nb; R = G - PNm @ G
+  return Nb @ vh[r:].T, r
+  return Nb @ vh[r:].T, r
+  return Nb @ vh[r:].T, r
+  gg = Lm @ g; kk = np.round(gg + 1e-7, 3).tobytes()
+  gg = Lm @ g; kk = np.round(gg + 1e-7, 3).tobytes()
+  gg = Lm @ g; kk = np.round(gg + 1e-7, 3).tobytes()
+  if bits >> j & 1: a = a @ A[j]
+  if bits >> j & 1: a = a @ A[j]
+  if bits >> j & 1: a = a @ A[j]
+  W = h @ a @ l @ E; W = W - PNm @ W
+  W = h @ a @ l @ E; W = W - PNm @ W
+  W = h @ a @ l @ E; W = W - PNm @ W
+irreducible irr11 trace(h) = -34.999999999999986
+dim N 56 profile (20, 38, 49) dim E_K 7 dim E_R 18
+Levi group order 168
+kernel: single-term defects over all 10752 elements of P0: {6: 5376, 7: 5376} ; distinct images among defect <= 4: 0
+two-row: single-term defects over all 10752 elements of P0: {2: 2304, 4: 2304, 18: 6144} ; distinct images among defect <= 4: 9

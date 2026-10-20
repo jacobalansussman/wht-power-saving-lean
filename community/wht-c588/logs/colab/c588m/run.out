@@ -1,0 +1,253 @@
+RWHT START Tue Oct 13 19:20:17 UTC 2026 tree=/content/work/r-wht/shea/lean/complex588 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 tracked changes: 0
+params: dir=WHTC588M negdir=WHTC588MNeg theorem=OAI.PowerSaving.WHT.wht_main_block_C588Mx inner=OAI.PowerSaving.WHTC588M.wht_main_C588Mx num=13552607 variant=annealed stop=Work.FourierC588M.Seam
+Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9  /content/work/ours/Compare.lean  tree tools/Compare.lean: e48d6d3b5be7f7c84ea949f1dace0a95bd58710c7cd5f3b94c60f4785975dae9
+Work/Block/WHT.lean: e00c1415767b05fd33c0ce9f778f60e96cae61de2bb21b187ec26dc8ff84ee72
+--- 1. overlay (m-gen package /content/work/r-wht/pkg/c588m, variant annealed)
+git status lines (new files are untracked): 72
+applied 74 lines to /content/work/r-wht/shea/lean/complex588 (annealed)
+--- 2. C588M modules up to Work.FourierC588M.Seam, one per lake call
+  (slot free after 0s; lean procs now: 1)
+=== STEP 01-Work.XMut.Dirt START Tue Oct 13 19:20:17 UTC 2026 cmd: lake build Work.XMut.Dirt
+=== STEP 01-Work.XMut.Dirt END rc=0 wall=89s maxrss_kb=6779004 last: Build completed successfully (9050 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 02-Work.XMut.Scal START Tue Oct 13 19:21:46 UTC 2026 cmd: lake build Work.XMut.Scal
+=== STEP 02-Work.XMut.Scal END rc=0 wall=15s maxrss_kb=6868004 last: Build completed successfully (9096 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 03-Work.XMut.GInv START Tue Oct 13 19:22:01 UTC 2026 cmd: lake build Work.XMut.GInv
+=== STEP 03-Work.XMut.GInv END rc=0 wall=19s maxrss_kb=6905268 last: Build completed successfully (9116 jobs).
+  (slot free after 0s; lean procs now: 0)
+=== STEP 04-Work.XMut.ScalarZ START Tue Oct 13 19:22:20 UTC 2026 cmd: lake build Work.XMut.ScalarZ
+=== STEP 04-Work.XMut.ScalarZ END rc=0 wall=19s maxrss_kb=6917956 last: Build completed successfully (9138 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 05-Work.XMut.ECheckZ START Tue Oct 13 19:22:39 UTC 2026 cmd: lake build Work.XMut.ECheckZ
+=== STEP 05-Work.XMut.ECheckZ END rc=0 wall=17s maxrss_kb=6882148 last: Build completed successfully (9140 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 06-Work.XMut.Labels START Tue Oct 13 19:22:57 UTC 2026 cmd: lake build Work.XMut.Labels
+=== STEP 06-Work.XMut.Labels END rc=0 wall=17s maxrss_kb=6874068 last: Build completed successfully (9150 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 07-Work.XMut.Glue START Tue Oct 13 19:23:14 UTC 2026 cmd: lake build Work.XMut.Glue
+=== STEP 07-Work.XMut.Glue END rc=0 wall=19s maxrss_kb=6888008 last: Build completed successfully (9178 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 08-Work.GCert.Data.Gen.C588M.S0 START Tue Oct 13 19:23:33 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588M.S0
+=== STEP 08-Work.GCert.Data.Gen.C588M.S0 END rc=0 wall=27s maxrss_kb=879012 last: Build completed successfully (4 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 09-Work.GCert.Data.Gen.C588M START Tue Oct 13 19:24:00 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588M
+=== STEP 09-Work.GCert.Data.Gen.C588M END rc=0 wall=1s maxrss_kb=826380 last: Build completed successfully (5 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 10-Work.GCert.Data.Gen.C588MHist START Tue Oct 13 19:24:01 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MHist
+=== STEP 10-Work.GCert.Data.Gen.C588MHist END rc=0 wall=5s maxrss_kb=828528 last: Build completed successfully (9 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 11-Work.GCert.Data.C588MPrice START Tue Oct 13 19:24:06 UTC 2026 cmd: lake build Work.GCert.Data.C588MPrice
+=== STEP 11-Work.GCert.Data.C588MPrice END rc=0 wall=16s maxrss_kb=6849260 last: Build completed successfully (9062 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 12-Work.GCert.Data.Gen.C588MGl START Tue Oct 13 19:24:22 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MGl
+=== STEP 12-Work.GCert.Data.Gen.C588MGl END rc=0 wall=2s maxrss_kb=825504 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 13-Work.GCert.Data.Gen.C588MPar START Tue Oct 13 19:24:24 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MPar
+=== STEP 13-Work.GCert.Data.Gen.C588MPar END rc=0 wall=1s maxrss_kb=826352 last: Build completed successfully (9 jobs).
+  (slot free after 0s; lean procs now: 0)
+=== STEP 14-Work.GCert.Data.Gen.C588MEnd START Tue Oct 13 19:24:25 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MEnd
+=== STEP 14-Work.GCert.Data.Gen.C588MEnd END rc=0 wall=16s maxrss_kb=6962312 last: Build completed successfully (9150 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 15-Work.GCert.Data.Gen.C588MSeg0 START Tue Oct 13 19:24:41 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSeg0
+=== STEP 15-Work.GCert.Data.Gen.C588MSeg0 END rc=0 wall=3s maxrss_kb=825724 last: Build completed successfully (10 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 16-Work.GCert.Data.Gen.C588MSeg1 START Tue Oct 13 19:24:44 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSeg1
+=== STEP 16-Work.GCert.Data.Gen.C588MSeg1 END rc=0 wall=2s maxrss_kb=825916 last: Build completed successfully (10 jobs).
+  (slot free after 0s; lean procs now: 0)
+=== STEP 17-Work.GCert.Data.Gen.C588MSeg2 START Tue Oct 13 19:24:46 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSeg2
+=== STEP 17-Work.GCert.Data.Gen.C588MSeg2 END rc=0 wall=5s maxrss_kb=825296 last: Build completed successfully (10 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 18-Work.GCert.Data.Gen.C588MSeg3 START Tue Oct 13 19:24:51 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSeg3
+=== STEP 18-Work.GCert.Data.Gen.C588MSeg3 END rc=0 wall=4s maxrss_kb=826112 last: Build completed successfully (10 jobs).
+  (slot free after 0s; lean procs now: 0)
+=== STEP 19-Work.GCert.Data.Gen.C588MSegF START Tue Oct 13 19:24:55 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSegF
+=== STEP 19-Work.GCert.Data.Gen.C588MSegF END rc=0 wall=2s maxrss_kb=826616 last: Build completed successfully (10 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 20-Work.GCert.Data.Gen.C588MTab0 START Tue Oct 13 19:24:57 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MTab0
+=== STEP 20-Work.GCert.Data.Gen.C588MTab0 END rc=0 wall=2s maxrss_kb=824804 last: Build completed successfully (9 jobs).
+  (slot free after 0s; lean procs now: 0)
+=== STEP 21-Work.GCert.Data.Gen.C588MTab1 START Tue Oct 13 19:24:59 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MTab1
+=== STEP 21-Work.GCert.Data.Gen.C588MTab1 END rc=0 wall=2s maxrss_kb=825384 last: Build completed successfully (9 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 22-Work.GCert.Data.Gen.C588MTab2 START Tue Oct 13 19:25:01 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MTab2
+=== STEP 22-Work.GCert.Data.Gen.C588MTab2 END rc=0 wall=1s maxrss_kb=825224 last: Build completed successfully (9 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 23-Work.GCert.Data.Gen.C588MTab3 START Tue Oct 13 19:25:02 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MTab3
+=== STEP 23-Work.GCert.Data.Gen.C588MTab3 END rc=0 wall=2s maxrss_kb=828884 last: Build completed successfully (9 jobs).
+  (slot free after 0s; lean procs now: 0)
+=== STEP 24-Work.GCert.Data.C588MCert START Tue Oct 13 19:25:04 UTC 2026 cmd: lake build Work.GCert.Data.C588MCert
+=== STEP 24-Work.GCert.Data.C588MCert END rc=0 wall=14s maxrss_kb=6870896 last: Build completed successfully (9170 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 25-Work.GCert.Data.Gen.C588MScal0 START Tue Oct 13 19:25:18 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MScal0
+=== STEP 25-Work.GCert.Data.Gen.C588MScal0 END rc=0 wall=21s maxrss_kb=7320340 last: Build completed successfully (9141 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 26-Work.GCert.Data.Gen.C588MScal1 START Tue Oct 13 19:25:39 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MScal1
+=== STEP 26-Work.GCert.Data.Gen.C588MScal1 END rc=0 wall=19s maxrss_kb=7298684 last: Build completed successfully (9141 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 27-Work.GCert.Data.Gen.C588MScal2 START Tue Oct 13 19:25:58 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MScal2
+=== STEP 27-Work.GCert.Data.Gen.C588MScal2 END rc=0 wall=18s maxrss_kb=7321512 last: Build completed successfully (9141 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 28-Work.GCert.Data.Gen.C588MScal3 START Tue Oct 13 19:26:16 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MScal3
+=== STEP 28-Work.GCert.Data.Gen.C588MScal3 END rc=0 wall=18s maxrss_kb=7323156 last: Build completed successfully (9141 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 29-Work.GCert.Data.Gen.C588MYChk START Tue Oct 13 19:26:34 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MYChk
+=== STEP 29-Work.GCert.Data.Gen.C588MYChk END rc=0 wall=13s maxrss_kb=6899724 last: Build completed successfully (9141 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 30-Work.GCert.Data.C588MScalOK START Tue Oct 13 19:26:47 UTC 2026 cmd: lake build Work.GCert.Data.C588MScalOK
+=== STEP 30-Work.GCert.Data.C588MScalOK END rc=0 wall=14s maxrss_kb=6865324 last: Build completed successfully (9146 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 31-Work.GCert.Data.Gen.C588MEChk START Tue Oct 13 19:27:01 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MEChk
+=== STEP 31-Work.GCert.Data.Gen.C588MEChk END rc=0 wall=23s maxrss_kb=7313004 last: Build completed successfully (9144 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 32-Work.GCert.Data.RateC588Mx START Tue Oct 13 19:27:24 UTC 2026 cmd: lake build Work.GCert.Data.RateC588Mx
+=== STEP 32-Work.GCert.Data.RateC588Mx END rc=0 wall=11s maxrss_kb=3493040 last: Build completed successfully (3093 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 33-Work.GCert.Data.InstC588M START Tue Oct 13 19:27:35 UTC 2026 cmd: lake build Work.GCert.Data.InstC588M
+=== STEP 33-Work.GCert.Data.InstC588M END rc=0 wall=19s maxrss_kb=6827428 last: Build completed successfully (9040 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 34-Work.GCert.Data.Gen.C588MRows0 START Tue Oct 13 19:27:54 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows0
+=== STEP 34-Work.GCert.Data.Gen.C588MRows0 END rc=0 wall=5s maxrss_kb=825756 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 35-Work.GCert.Data.Gen.C588MRows1 START Tue Oct 13 19:27:59 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows1
+=== STEP 35-Work.GCert.Data.Gen.C588MRows1 END rc=0 wall=4s maxrss_kb=830752 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 36-Work.GCert.Data.Gen.C588MRows10 START Tue Oct 13 19:28:03 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows10
+=== STEP 36-Work.GCert.Data.Gen.C588MRows10 END rc=0 wall=4s maxrss_kb=825500 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 37-Work.GCert.Data.Gen.C588MRows11 START Tue Oct 13 19:28:07 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows11
+=== STEP 37-Work.GCert.Data.Gen.C588MRows11 END rc=0 wall=4s maxrss_kb=828692 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 38-Work.GCert.Data.Gen.C588MRows12 START Tue Oct 13 19:28:11 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows12
+=== STEP 38-Work.GCert.Data.Gen.C588MRows12 END rc=0 wall=5s maxrss_kb=828652 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 39-Work.GCert.Data.Gen.C588MRows13 START Tue Oct 13 19:28:16 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows13
+=== STEP 39-Work.GCert.Data.Gen.C588MRows13 END rc=0 wall=5s maxrss_kb=827620 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 40-Work.GCert.Data.Gen.C588MRows14 START Tue Oct 13 19:28:21 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows14
+=== STEP 40-Work.GCert.Data.Gen.C588MRows14 END rc=0 wall=3s maxrss_kb=825680 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 0)
+=== STEP 41-Work.GCert.Data.Gen.C588MRows15 START Tue Oct 13 19:28:25 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows15
+=== STEP 41-Work.GCert.Data.Gen.C588MRows15 END rc=0 wall=4s maxrss_kb=825916 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 42-Work.GCert.Data.Gen.C588MRows16 START Tue Oct 13 19:28:29 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows16
+=== STEP 42-Work.GCert.Data.Gen.C588MRows16 END rc=0 wall=4s maxrss_kb=826248 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 43-Work.GCert.Data.Gen.C588MRows17 START Tue Oct 13 19:28:33 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows17
+=== STEP 43-Work.GCert.Data.Gen.C588MRows17 END rc=0 wall=5s maxrss_kb=826740 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 44-Work.GCert.Data.Gen.C588MRows2 START Tue Oct 13 19:28:38 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows2
+=== STEP 44-Work.GCert.Data.Gen.C588MRows2 END rc=0 wall=4s maxrss_kb=831068 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 45-Work.GCert.Data.Gen.C588MRows3 START Tue Oct 13 19:28:42 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows3
+=== STEP 45-Work.GCert.Data.Gen.C588MRows3 END rc=0 wall=4s maxrss_kb=827996 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 46-Work.GCert.Data.Gen.C588MRows4 START Tue Oct 13 19:28:46 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows4
+=== STEP 46-Work.GCert.Data.Gen.C588MRows4 END rc=0 wall=5s maxrss_kb=829644 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 47-Work.GCert.Data.Gen.C588MRows5 START Tue Oct 13 19:28:51 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows5
+=== STEP 47-Work.GCert.Data.Gen.C588MRows5 END rc=0 wall=5s maxrss_kb=827524 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 48-Work.GCert.Data.Gen.C588MRows6 START Tue Oct 13 19:28:56 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows6
+=== STEP 48-Work.GCert.Data.Gen.C588MRows6 END rc=0 wall=4s maxrss_kb=830908 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 49-Work.GCert.Data.Gen.C588MRows7 START Tue Oct 13 19:29:00 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows7
+=== STEP 49-Work.GCert.Data.Gen.C588MRows7 END rc=0 wall=4s maxrss_kb=828228 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 50-Work.GCert.Data.Gen.C588MRows8 START Tue Oct 13 19:29:04 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows8
+=== STEP 50-Work.GCert.Data.Gen.C588MRows8 END rc=0 wall=4s maxrss_kb=830624 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 51-Work.GCert.Data.Gen.C588MRows9 START Tue Oct 13 19:29:08 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MRows9
+=== STEP 51-Work.GCert.Data.Gen.C588MRows9 END rc=0 wall=3s maxrss_kb=829692 last: Build completed successfully (6 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 52-Work.GCert.Data.Gen.C588MSched START Tue Oct 13 19:29:11 UTC 2026 cmd: lake build Work.GCert.Data.Gen.C588MSched
+=== STEP 52-Work.GCert.Data.Gen.C588MSched END rc=0 wall=103s maxrss_kb=8953516 last: Build completed successfully (9142 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 53-Work.GCert.Data.C588MGlue401 START Tue Oct 13 19:30:54 UTC 2026 cmd: lake build Work.GCert.Data.C588MGlue401
+=== STEP 53-Work.GCert.Data.C588MGlue401 END rc=0 wall=42s maxrss_kb=8255136 last: Build completed successfully (9263 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 54-Work.FourierC588M.Goal START Tue Oct 13 19:31:36 UTC 2026 cmd: lake build Work.FourierC588M.Goal
+=== STEP 54-Work.FourierC588M.Goal END rc=0 wall=26s maxrss_kb=6743456 last: Build completed successfully (8927 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP 55-Work.FourierC588M.Seam START Tue Oct 13 19:32:02 UTC 2026 cmd: lake build Work.FourierC588M.Seam
+=== STEP 55-Work.FourierC588M.Seam END rc=0 wall=25s maxrss_kb=6930852 last: Build completed successfully (9268 jobs).
+--- 3. WHT overlay from /content/work/r-wht/src (new files only)
+  Work/WHTC588M/Main.lean: OK
+  Work/WHTC588M/Solution.lean: OK
+  Work/WHTC588M/Challenge.lean: OK
+  Work/WHTC588MNeg/Challenge.lean: OK
+  Work/WHTC588M/Axioms.lean: OK
+  comparator/WHTC588M.json: OK
+  comparator/WHTC588M-nanoda.json: OK
+  comparator/WHTC588MNeg.json: OK
+  (slot free after 0s; lean procs now: 1)
+=== STEP wht-build-Work.WHTC588M.Challenge START Tue Oct 13 19:32:27 UTC 2026 cmd: lake build Work.WHTC588M.Challenge
+=== STEP wht-build-Work.WHTC588M.Challenge END rc=0 wall=24s maxrss_kb=6819492 last: Build completed successfully (8924 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP wht-build-Work.WHTC588MNeg.Challenge START Tue Oct 13 19:32:51 UTC 2026 cmd: lake build Work.WHTC588MNeg.Challenge
+=== STEP wht-build-Work.WHTC588MNeg.Challenge END rc=0 wall=31s maxrss_kb=6807140 last: Build completed successfully (8924 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP wht-build-Work.WHTC588M.Main START Tue Oct 13 19:33:22 UTC 2026 cmd: lake build Work.WHTC588M.Main
+=== STEP wht-build-Work.WHTC588M.Main END rc=0 wall=29s maxrss_kb=6905060 last: Build completed successfully (9269 jobs).
+  (slot free after 0s; lean procs now: 1)
+=== STEP wht-build-Work.WHTC588M.Solution START Tue Oct 13 19:33:51 UTC 2026 cmd: lake build Work.WHTC588M.Solution
+=== STEP wht-build-Work.WHTC588M.Solution END rc=0 wall=28s maxrss_kb=6896112 last: Build completed successfully (9270 jobs).
+=== STEP wht-nobuild START Tue Oct 13 19:34:19 UTC 2026 cmd: lake build --no-build Work.WHTC588M.Main Work.WHTC588M.Solution Work.WHTC588M.Challenge Work.WHTC588MNeg.Challenge Work.FourierC588M.Seam
+=== STEP wht-nobuild END rc=0 wall=14s maxrss_kb=969588 last: All targets up-to-date (9272 jobs).
+--- 4. checks
+  (slot free after 0s; lean procs now: 1)
+=== STEP axioms START Tue Oct 13 19:34:33 UTC 2026 cmd: lake env lean Work/WHTC588M/Axioms.lean
+=== STEP axioms END rc=0 wall=14s maxrss_kb=6849776 last: 'OAI.PowerSaving.WHT.wht_main_block_C588Mx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.WHTC588M.wht_main_C588Mx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.WHT.wht_main_block_C588Mx' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== SORRY/ESCAPE GREP in Work/WHTC588M Work/WHTC588MNeg (Challenge files carry the statement's deliberate 'sorry')
+Work/WHTC588M/Main.lean:25:This file adds one term and nothing else.  No `sorry`, no `native_decide`, no axiom.
+Work/WHTC588M/Challenge.lean:16:The proof is `sorry` on purpose: this file is a STATEMENT.  The proof is in
+Work/WHTC588M/Challenge.lean:329:  sorry
+Work/WHTC588MNeg/Challenge.lean:16:The proof is `sorry` on purpose: this file is a STATEMENT.  The proof is in
+Work/WHTC588MNeg/Challenge.lean:329:  sorry
+  (slot free after 0s; lean procs now: 1)
+=== STEP compare-pos START Tue Oct 13 19:34:47 UTC 2026 cmd: lake env lean --run /content/work/ours/Compare.lean Work.WHTC588M.Challenge Work.WHTC588M.Solution OAI.PowerSaving.WHT.wht_main_block_C588Mx
+=== STEP compare-pos END rc=0 wall=59s maxrss_kb=15959576 last: RESULT: PASS
+challenge module: Work.WHTC588M.Challenge   (10745 modules loaded)
+solution module:  Work.WHTC588M.Solution   (11091 modules loaded)
+sanity: imported proofs are loaded (Nat.add_comm uses 7 constants, Real.exp_pos uses 85)
+
+=== OAI.PowerSaving.WHT.wht_main_block_C588Mx ===
+challenge: theorem in Work.WHTC588M.Challenge;  solution: theorem in Work.WHTC588M.Solution
+OK: statement is the same kernel term in both
+challenge proof uses sorryAx: true
+statement depends on 2035 constants; 107 are declared in the challenge file itself
+OK: every statement dependency is identical in the solution
+solution proof reaches 37497 constants; axioms: #[Classical.choice, Quot.sound, propext]
+OK: only permitted axioms
+
+RESULT: PASS
+  (slot free after 0s; lean procs now: 0)
+=== STEP compare-neg START Tue Oct 13 19:35:46 UTC 2026 cmd: lake env lean --run /content/work/ours/Compare.lean Work.WHTC588MNeg.Challenge Work.WHTC588M.Solution OAI.PowerSaving.WHT.wht_main_block_C588Mx
+=== STEP compare-neg END rc=1 wall=30s maxrss_kb=16110924 last: RESULT: FAIL
+challenge module: Work.WHTC588MNeg.Challenge   (10745 modules loaded)
+solution module:  Work.WHTC588M.Solution   (11091 modules loaded)
+sanity: imported proofs are loaded (Nat.add_comm uses 7 constants, Real.exp_pos uses 85)
+
+=== OAI.PowerSaving.WHT.wht_main_block_C588Mx ===
+challenge: theorem in Work.WHTC588MNeg.Challenge;  solution: theorem in Work.WHTC588M.Solution
+FAIL: statement (type) differs between challenge and solution
+challenge proof uses sorryAx: true
+statement depends on 2035 constants; 107 are declared in the challenge file itself
+OK: every statement dependency is identical in the solution
+solution proof reaches 37497 constants; axioms: #[Classical.choice, Quot.sound, propext]
+OK: only permitted axioms
+
+RESULT: FAIL
+tracked changes in the tree after the run: 0
+PASS axioms: inner theorem on the 3 standard axioms
+PASS axioms: comparator theorem on the 3 standard axioms
+PASS axioms: no sorryAx
+PASS grep: no escape hatch in Main/Solution (only comment mentions)
+PASS grep: the only code sorry is the statement proof in the two Challenge files
+PASS Compare positive: rc 0 and RESULT: PASS
+PASS Compare negative: rc != 0, RESULT: FAIL, statement differs
+ALL CHECKS PASSED
+RWHT END Tue Oct 13 19:36:16 UTC 2026 rc=0 total_wall=959s
+EXIT 0

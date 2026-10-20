@@ -1,0 +1,11 @@
+target                 designs  both deadAll noDrawn  open oneYes cand
+2 in 7, block 4           1500     0     951     706   429     73    0
+2 in 7 dup, block 4       1500     0     953     700   428     59    0
+2 in 9, block 5            600     0     426     268   141     15    0
+2 in 8, block 5            594     0     475     413    80      7    0
+2 in 11, block 6           300     0     224     153    52     10    0
+2 in 10, block 6           277     0     245     200    17      2    0
+3 in 10, block 4           500     0     455     145    40      1    0
+ctl 3 in 7, block 3        300     0     249     112    40      1    0
+chk 2 in 3, block 2        200     0      70     200     0     24    0
+targets total: {'designs': 5271, 'deadAll': 3729, 'noDrawn': 2585, 'oneYes': 167, 'open': 1187}  deadAll share 0.707, open share 0.225

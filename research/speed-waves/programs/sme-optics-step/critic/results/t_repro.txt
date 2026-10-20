@@ -1,0 +1,116 @@
+[timing lock] waiting for timing lock 05:37:56
+[timing lock] got lock 05:37:56; load: { 8.90 5.71 7.31 }
+Mon Oct 12 05:37:57 EDT 2026
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=1024 mode=step SW=64 PFD=4 col radices: 2 8 8 8
+# FFTW plans (MEASURE, time limit) took 0.0 s
+## propagation step 1024^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  SME step (rev. order)              5.0769
+rep  0  PFFFT-d rows+transp               11.3537
+rep  0  KFR-d rows+transp (rev.)          12.0075
+rep  0  FFTW-d 2D MEASURE                 32.7049
+rep  1  PFFFT-d rows+transp               11.2041
+rep  1  KFR-d rows+transp (rev.)          12.1467
+rep  1  FFTW-d 2D MEASURE                 32.2941
+rep  1  SME step (rev. order)              5.1004
+rep  2  KFR-d rows+transp (rev.)          12.5236
+rep  2  FFTW-d 2D MEASURE                 32.2763
+rep  2  SME step (rev. order)              5.0999
+rep  2  PFFFT-d rows+transp               11.1681
+rep  3  FFTW-d 2D MEASURE                 32.7688
+rep  3  SME step (rev. order)              5.0028
+rep  3  PFFFT-d rows+transp               11.2449
+rep  3  KFR-d rows+transp (rev.)          11.7702
+rep  4  SME step (rev. order)              5.0266
+rep  4  PFFFT-d rows+transp               11.3726
+rep  4  KFR-d rows+transp (rev.)          12.2703
+rep  4  FFTW-d 2D MEASURE                 32.6873
+rep  5  PFFFT-d rows+transp               11.2280
+rep  5  KFR-d rows+transp (rev.)          12.0062
+rep  5  FFTW-d 2D MEASURE                 32.4077
+rep  5  SME step (rev. order)              5.0183
+rep  6  KFR-d rows+transp (rev.)          12.1100
+rep  6  FFTW-d 2D MEASURE                 32.6205
+rep  6  SME step (rev. order)              5.0393
+rep  6  PFFFT-d rows+transp               11.2086
+rep  7  FFTW-d 2D MEASURE                 32.3459
+rep  7  SME step (rev. order)              5.0021
+rep  7  PFFFT-d rows+transp               11.5000
+rep  7  KFR-d rows+transp (rev.)          11.9841
+rep  8  SME step (rev. order)              5.0367
+rep  8  PFFFT-d rows+transp               11.2943
+rep  8  KFR-d rows+transp (rev.)          11.8326
+rep  8  FFTW-d 2D MEASURE                 32.2866
+RESULT propagation step 1024^2 c128             SME step (rev. order)        best     5.0021  median     5.0367  ns/call(ms)  (calls/rep 40)
+RESULT propagation step 1024^2 c128             PFFFT-d rows+transp          best    11.1681  median    11.2449  ns/call(ms)  (calls/rep 20)
+RESULT propagation step 1024^2 c128             KFR-d rows+transp (rev.)     best    11.7702  median    12.0075  ns/call(ms)  (calls/rep 19)
+RESULT propagation step 1024^2 c128             FFTW-d 2D MEASURE            best    32.2763  median    32.4077  ns/call(ms)  (calls/rep 7)
+Mon Oct 12 05:38:06 EDT 2026
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=2048 mode=step SW=16 PFD=4 col radices: 4 8 8 8
+## propagation step 2048^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  SME step (rev. order)             24.8939
+rep  0  PFFFT-d rows+transp               50.2503
+rep  0  KFR-d rows+transp (rev.)          49.2095
+rep  1  PFFFT-d rows+transp               50.1556
+rep  1  KFR-d rows+transp (rev.)          49.0677
+rep  1  SME step (rev. order)             24.6884
+rep  2  KFR-d rows+transp (rev.)          49.4439
+rep  2  SME step (rev. order)             24.8712
+rep  2  PFFFT-d rows+transp               50.1504
+rep  3  SME step (rev. order)             24.8934
+rep  3  PFFFT-d rows+transp               50.5278
+rep  3  KFR-d rows+transp (rev.)          49.5567
+rep  4  PFFFT-d rows+transp               50.0868
+rep  4  KFR-d rows+transp (rev.)          48.9334
+rep  4  SME step (rev. order)             24.6305
+rep  5  KFR-d rows+transp (rev.)          49.3947
+rep  5  SME step (rev. order)             24.7901
+rep  5  PFFFT-d rows+transp               50.8319
+rep  6  SME step (rev. order)             25.1772
+rep  6  PFFFT-d rows+transp               50.5921
+rep  6  KFR-d rows+transp (rev.)          49.3050
+rep  7  PFFFT-d rows+transp               50.2887
+rep  7  KFR-d rows+transp (rev.)          49.4469
+rep  7  SME step (rev. order)             24.7471
+rep  8  KFR-d rows+transp (rev.)          49.7721
+rep  8  SME step (rev. order)             24.6985
+rep  8  PFFFT-d rows+transp               49.9790
+RESULT propagation step 2048^2 c128             SME step (rev. order)        best    24.6305  median    24.7901  ns/call(ms)  (calls/rep 9)
+RESULT propagation step 2048^2 c128             PFFFT-d rows+transp          best    49.9790  median    50.2503  ns/call(ms)  (calls/rep 5)
+RESULT propagation step 2048^2 c128             KFR-d rows+transp (rev.)     best    48.9334  median    49.3947  ns/call(ms)  (calls/rep 5)
+Mon Oct 12 05:38:13 EDT 2026
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+# prop N=4096 mode=step SW=16 PFD=4 col radices: 8 8 8 8
+## propagation step 4096^2 c128  (9 repeats of >= 0.20 s each, programs take turns; ns per call(ms))
+rep  0  SME step (rev. order)             75.8319
+rep  0  PFFFT-d rows+transp              227.4352
+rep  0  KFR-d rows+transp (rev.)         205.4648
+rep  1  PFFFT-d rows+transp              224.9381
+rep  1  KFR-d rows+transp (rev.)         203.6038
+rep  1  SME step (rev. order)             82.2026
+rep  2  KFR-d rows+transp (rev.)         207.2133
+rep  2  SME step (rev. order)             76.8790
+rep  2  PFFFT-d rows+transp              221.9228
+rep  3  SME step (rev. order)             81.4543
+rep  3  PFFFT-d rows+transp              226.2920
+rep  3  KFR-d rows+transp (rev.)         206.3089
+rep  4  PFFFT-d rows+transp              224.7685
+rep  4  KFR-d rows+transp (rev.)         205.2441
+rep  4  SME step (rev. order)             79.5725
+rep  5  KFR-d rows+transp (rev.)         204.5615
+rep  5  SME step (rev. order)             79.1138
+rep  5  PFFFT-d rows+transp              224.7211
+rep  6  SME step (rev. order)             80.2977
+rep  6  PFFFT-d rows+transp              220.9067
+rep  6  KFR-d rows+transp (rev.)         205.7098
+rep  7  PFFFT-d rows+transp              230.1795
+rep  7  KFR-d rows+transp (rev.)         207.0669
+rep  7  SME step (rev. order)             76.5709
+rep  8  KFR-d rows+transp (rev.)         207.4406
+rep  8  SME step (rev. order)             80.3890
+rep  8  PFFFT-d rows+transp              221.3375
+RESULT propagation step 4096^2 c128             SME step (rev. order)        best    75.8319  median    79.5725  ns/call(ms)  (calls/rep 3)
+RESULT propagation step 4096^2 c128             PFFFT-d rows+transp          best   220.9067  median   224.7685  ns/call(ms)  (calls/rep 1)
+RESULT propagation step 4096^2 c128             KFR-d rows+transp (rev.)     best   203.6038  median   205.7098  ns/call(ms)  (calls/rep 1)
+Mon Oct 12 05:38:21 EDT 2026

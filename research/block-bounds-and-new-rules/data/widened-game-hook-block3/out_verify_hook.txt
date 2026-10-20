@@ -1,0 +1,15 @@
+m=2 f=3: dim W = 24, dim N = 12; pair vectors u: 8, with R u outside N: 0  (0.0s)
+independent pair vectors (exact mod-p rank, a lower bound) = 8  ->  cap <= 4   (formula 4)
+cap mod p (lower bound) = 4  (0.0s)
+dem mod p (lower bound) = 8  (0.0s)
+RESULT m=2 f=3: cap = 4 (upper bound proved, lower bound 4), dem >= 8: every unit needs >= 2 W = 2.0000 W moves; plain 2 W
+m=3 f=4: dim W = 448, dim N = 168; pair vectors u: 108, with R u outside N: 0  (0.0s)
+independent pair vectors (exact mod-p rank, a lower bound) = 108  ->  cap <= 60   (formula 60)
+cap mod p (lower bound) = 60  (0.0s)
+dem mod p (lower bound) = 140  (0.3s)
+RESULT m=3 f=4: cap = 60 (upper bound proved, lower bound 60), dem >= 140: every unit needs >= 7/3 W = 2.3333 W moves; plain 3 W
+m=3 f=5: dim W = 560, dim N = 280; pair vectors u: 200, with R u outside N: 0  (0.0s)
+independent pair vectors (exact mod-p rank, a lower bound) = 200  ->  cap <= 80   (formula 80)
+cap mod p (lower bound) = 80  (0.0s)
+dem mod p (lower bound) = 224  (0.8s)
+RESULT m=3 f=5: cap = 80 (upper bound proved, lower bound 80), dem >= 224: every unit needs >= 14/5 W = 2.8000 W moves; plain 3 W

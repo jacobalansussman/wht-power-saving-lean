@@ -1,0 +1,54 @@
+{
+  "status": "EXACT_ARITHMETIC_CANDIDATE_EXIT_FRAMES_TAIL_IN_B",
+  "schedule": "x-exit-words pad-minimal (remapped)",
+  "source_sha256": "00bd018bde704bb8620a0b3eaa3096865f02c5bfa86749bf25305c778b6263ea",
+  "schedule_sha256": "984d8c78b6fc6db103b874629632213ff8b3ece8d138c73f7554511cb41dd5df",
+  "h": 9,
+  "m": 73,
+  "v": 112,
+  "local_profile": {
+    "1": 2553,
+    "2": 338,
+    "3": 446,
+    "4": 162,
+    "5": 72,
+    "8": 13
+  },
+  "local_residual_count": 509,
+  "banks": 3771,
+  "W": 10939,
+  "deficit": 2560,
+  "profile": {
+    "1": 183816,
+    "2": 24336,
+    "3": 32112,
+    "4": 11664,
+    "5": 5184,
+    "8": 6312,
+    "16": 3584,
+    "27": 1,
+    "32": 3584,
+    "48": 3584
+  },
+  "pad_hist": {
+    "0": 3770,
+    "27": 1
+  },
+  "exact_rate": {
+    "root_lower": "693443743601/500000000000000",
+    "root_upper": "1386887487203/1000000000000000",
+    "root_lower_decimal": "0.001386887487202",
+    "root_upper_decimal": "0.001386887487203",
+    "lower_endpoint_margin_at_least": "1.982069573936620215116820629692976700904544883660394938E-15",
+    "upper_endpoint_excess_at_least": "3.347357959719966498546940264520344645014531505708966892E-16",
+    "moment_upper_at_dft_record": "0.9991553834337283186394419969194823468164177276903446518",
+    "strictly_beats_record_as_a_moment": true,
+    "method": "80-term rational atanh log; 30-degree rational exponential; explicit tails",
+    "scope": "Arithmetic only; no circuit realization or DFT transfer is inferred"
+  },
+  "kernel_numerator": 13868857,
+  "dft_numerator": 13868856,
+  "schedK_mirror": true,
+  "schedK_duplicate_owner_control": false,
+  "schedK_wrong_pad_control": false
+}

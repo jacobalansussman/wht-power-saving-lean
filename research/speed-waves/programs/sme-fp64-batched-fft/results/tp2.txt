@@ -1,0 +1,210 @@
+[timing lock] waiting for timing lock 03:04:23
+[timing lock] got lock 03:07:48; load: { 22.34 22.87 28.22 }
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## c2c fp64 interleaved n=1024 B=64 same  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME DIT-2 (LD4D)                   1.1099
+rep  0  SME fp64 interleaved               1.4283
+rep  0  PFFFT-d ordered                    1.6306
+rep  0  pocketfft c2c copy+exec            2.3780
+rep  0  vDSP_DFT_Interleaved_D             1.8177
+rep  1  SME fp64 interleaved               1.4451
+rep  1  PFFFT-d ordered                    1.6403
+rep  1  pocketfft c2c copy+exec            2.3862
+rep  1  vDSP_DFT_Interleaved_D             1.8101
+rep  1  SME DIT-2 (LD4D)                   1.1115
+rep  2  PFFFT-d ordered                    1.6281
+rep  2  pocketfft c2c copy+exec            2.3810
+rep  2  vDSP_DFT_Interleaved_D             1.8159
+rep  2  SME DIT-2 (LD4D)                   1.1114
+rep  2  SME fp64 interleaved               1.4271
+rep  3  pocketfft c2c copy+exec            2.3791
+rep  3  vDSP_DFT_Interleaved_D             1.8089
+rep  3  SME DIT-2 (LD4D)                   1.1072
+rep  3  SME fp64 interleaved               1.4313
+rep  3  PFFFT-d ordered                    1.6383
+rep  4  vDSP_DFT_Interleaved_D             1.8237
+rep  4  SME DIT-2 (LD4D)                   1.1056
+rep  4  SME fp64 interleaved               1.4313
+rep  4  PFFFT-d ordered                    1.6364
+rep  4  pocketfft c2c copy+exec            2.3964
+rep  5  SME DIT-2 (LD4D)                   1.1114
+rep  5  SME fp64 interleaved               1.4203
+rep  5  PFFFT-d ordered                    1.6235
+rep  5  pocketfft c2c copy+exec            2.3810
+rep  5  vDSP_DFT_Interleaved_D             1.8086
+rep  6  SME fp64 interleaved               1.4248
+rep  6  PFFFT-d ordered                    1.6238
+rep  6  pocketfft c2c copy+exec            2.3798
+rep  6  vDSP_DFT_Interleaved_D             1.8114
+rep  6  SME DIT-2 (LD4D)                   1.1061
+rep  7  PFFFT-d ordered                    1.6203
+rep  7  pocketfft c2c copy+exec            2.3835
+rep  7  vDSP_DFT_Interleaved_D             1.8093
+rep  7  SME DIT-2 (LD4D)                   1.1139
+rep  7  SME fp64 interleaved               1.4306
+rep  8  pocketfft c2c copy+exec            2.3801
+rep  8  vDSP_DFT_Interleaved_D             1.8088
+rep  8  SME DIT-2 (LD4D)                   1.1042
+rep  8  SME fp64 interleaved               1.4195
+rep  8  PFFFT-d ordered                    1.6203
+RESULT c2c fp64 interleaved n=1024 B=64 same    SME DIT-2 (LD4D)             best     1.1042  median     1.1099  ns/point  (calls/rep 3012)
+RESULT c2c fp64 interleaved n=1024 B=64 same    SME fp64 interleaved         best     1.4195  median     1.4283  ns/point  (calls/rep 2348)
+RESULT c2c fp64 interleaved n=1024 B=64 same    PFFFT-d ordered              best     1.6203  median     1.6281  ns/point  (calls/rep 2058)
+RESULT c2c fp64 interleaved n=1024 B=64 same    pocketfft c2c copy+exec      best     2.3780  median     2.3810  ns/point  (calls/rep 1411)
+RESULT c2c fp64 interleaved n=1024 B=64 same    vDSP_DFT_Interleaved_D       best     1.8086  median     1.8101  ns/point  (calls/rep 1862)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## c2c fp64 interleaved n=1024 B=512 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME DIT-2 (LD4D)                   1.3982
+rep  0  SME fp64 interleaved               1.4754
+rep  0  PFFFT-d ordered                    1.6731
+rep  0  pocketfft c2c copy+exec            2.9046
+rep  0  vDSP_DFT_Interleaved_D             2.5617
+rep  1  SME fp64 interleaved               1.4658
+rep  1  PFFFT-d ordered                    1.6723
+rep  1  pocketfft c2c copy+exec            2.9342
+rep  1  vDSP_DFT_Interleaved_D             2.5606
+rep  1  SME DIT-2 (LD4D)                   1.3958
+rep  2  PFFFT-d ordered                    1.6709
+rep  2  pocketfft c2c copy+exec            2.9121
+rep  2  vDSP_DFT_Interleaved_D             2.5295
+rep  2  SME DIT-2 (LD4D)                   1.3908
+rep  2  SME fp64 interleaved               1.4665
+rep  3  pocketfft c2c copy+exec            2.8988
+rep  3  vDSP_DFT_Interleaved_D             2.5459
+rep  3  SME DIT-2 (LD4D)                   1.3911
+rep  3  SME fp64 interleaved               1.4684
+rep  3  PFFFT-d ordered                    1.6721
+rep  4  vDSP_DFT_Interleaved_D             2.5568
+rep  4  SME DIT-2 (LD4D)                   1.4012
+rep  4  SME fp64 interleaved               1.4645
+rep  4  PFFFT-d ordered                    1.6668
+rep  4  pocketfft c2c copy+exec            2.8982
+rep  5  SME DIT-2 (LD4D)                   1.3952
+rep  5  SME fp64 interleaved               1.4691
+rep  5  PFFFT-d ordered                    1.6743
+rep  5  pocketfft c2c copy+exec            2.8963
+rep  5  vDSP_DFT_Interleaved_D             2.5517
+rep  6  SME fp64 interleaved               1.4845
+rep  6  PFFFT-d ordered                    1.6664
+rep  6  pocketfft c2c copy+exec            2.9056
+rep  6  vDSP_DFT_Interleaved_D             2.5579
+rep  6  SME DIT-2 (LD4D)                   1.4127
+rep  7  PFFFT-d ordered                    1.6688
+rep  7  pocketfft c2c copy+exec            2.9314
+rep  7  vDSP_DFT_Interleaved_D             2.5492
+rep  7  SME DIT-2 (LD4D)                   1.3938
+rep  7  SME fp64 interleaved               1.4673
+rep  8  pocketfft c2c copy+exec            2.9087
+rep  8  vDSP_DFT_Interleaved_D             2.5391
+rep  8  SME DIT-2 (LD4D)                   1.3940
+rep  8  SME fp64 interleaved               1.4767
+rep  8  PFFFT-d ordered                    1.6715
+RESULT c2c fp64 interleaved n=1024 B=512 separate SME DIT-2 (LD4D)             best     1.3908  median     1.3952  ns/point  (calls/rep 303)
+RESULT c2c fp64 interleaved n=1024 B=512 separate SME fp64 interleaved         best     1.4645  median     1.4684  ns/point  (calls/rep 288)
+RESULT c2c fp64 interleaved n=1024 B=512 separate PFFFT-d ordered              best     1.6664  median     1.6715  ns/point  (calls/rep 252)
+RESULT c2c fp64 interleaved n=1024 B=512 separate pocketfft c2c copy+exec      best     2.8963  median     2.9056  ns/point  (calls/rep 145)
+RESULT c2c fp64 interleaved n=1024 B=512 separate vDSP_DFT_Interleaved_D       best     2.5295  median     2.5517  ns/point  (calls/rep 164)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## c2c fp64 interleaved n=1024 B=512 same  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME DIT-2 (LD4D)                   1.3697
+rep  0  SME fp64 interleaved               1.4459
+rep  0  PFFFT-d ordered                    1.6554
+rep  0  pocketfft c2c copy+exec            2.6698
+rep  0  vDSP_DFT_Interleaved_D             2.1523
+rep  1  SME fp64 interleaved               1.4450
+rep  1  PFFFT-d ordered                    1.6543
+rep  1  pocketfft c2c copy+exec            2.6985
+rep  1  vDSP_DFT_Interleaved_D             2.1768
+rep  1  SME DIT-2 (LD4D)                   1.3769
+rep  2  PFFFT-d ordered                    1.6598
+rep  2  pocketfft c2c copy+exec            2.6612
+rep  2  vDSP_DFT_Interleaved_D             2.2644
+rep  2  SME DIT-2 (LD4D)                   1.3758
+rep  2  SME fp64 interleaved               1.4493
+rep  3  pocketfft c2c copy+exec            2.7123
+rep  3  vDSP_DFT_Interleaved_D             2.2733
+rep  3  SME DIT-2 (LD4D)                   1.3862
+rep  3  SME fp64 interleaved               1.4490
+rep  3  PFFFT-d ordered                    1.6576
+rep  4  vDSP_DFT_Interleaved_D             2.1429
+rep  4  SME DIT-2 (LD4D)                   1.3744
+rep  4  SME fp64 interleaved               1.4425
+rep  4  PFFFT-d ordered                    1.6656
+rep  4  pocketfft c2c copy+exec            2.6828
+rep  5  SME DIT-2 (LD4D)                   1.3671
+rep  5  SME fp64 interleaved               1.4439
+rep  5  PFFFT-d ordered                    1.6573
+rep  5  pocketfft c2c copy+exec            2.6910
+rep  5  vDSP_DFT_Interleaved_D             2.1911
+rep  6  SME fp64 interleaved               1.4439
+rep  6  PFFFT-d ordered                    1.6534
+rep  6  pocketfft c2c copy+exec            2.7122
+rep  6  vDSP_DFT_Interleaved_D             2.1514
+rep  6  SME DIT-2 (LD4D)                   1.3704
+rep  7  PFFFT-d ordered                    1.6581
+rep  7  pocketfft c2c copy+exec            2.6771
+rep  7  vDSP_DFT_Interleaved_D             2.1710
+rep  7  SME DIT-2 (LD4D)                   1.3688
+rep  7  SME fp64 interleaved               1.4446
+rep  8  pocketfft c2c copy+exec            2.6755
+rep  8  vDSP_DFT_Interleaved_D             2.1485
+rep  8  SME DIT-2 (LD4D)                   1.3662
+rep  8  SME fp64 interleaved               1.4439
+rep  8  PFFFT-d ordered                    1.6676
+RESULT c2c fp64 interleaved n=1024 B=512 same   SME DIT-2 (LD4D)             best     1.3662  median     1.3704  ns/point  (calls/rep 307)
+RESULT c2c fp64 interleaved n=1024 B=512 same   SME fp64 interleaved         best     1.4425  median     1.4446  ns/point  (calls/rep 290)
+RESULT c2c fp64 interleaved n=1024 B=512 same   PFFFT-d ordered              best     1.6534  median     1.6576  ns/point  (calls/rep 254)
+RESULT c2c fp64 interleaved n=1024 B=512 same   pocketfft c2c copy+exec      best     2.6612  median     2.6828  ns/point  (calls/rep 155)
+RESULT c2c fp64 interleaved n=1024 B=512 same   vDSP_DFT_Interleaved_D       best     2.1429  median     2.1710  ns/point  (calls/rep 191)
+# bench.h: cpu=Apple M4 qos=user-interactive clock=CLOCK_UPTIME_RAW
+## c2c fp64 interleaved n=1024 B=64 separate  (9 repeats of >= 0.20 s each, programs take turns; ns per point)
+rep  0  SME DIT-2 (LD4D)                   1.4009
+rep  0  SME fp64 interleaved               1.4767
+rep  0  PFFFT-d ordered                    1.6689
+rep  0  pocketfft c2c copy+exec            2.7586
+rep  0  vDSP_DFT_Interleaved_D             2.6371
+rep  1  SME fp64 interleaved               1.4782
+rep  1  PFFFT-d ordered                    1.6732
+rep  1  pocketfft c2c copy+exec            2.7967
+rep  1  vDSP_DFT_Interleaved_D             2.6482
+rep  1  SME DIT-2 (LD4D)                   1.4021
+rep  2  PFFFT-d ordered                    1.6875
+rep  2  pocketfft c2c copy+exec            2.8169
+rep  2  vDSP_DFT_Interleaved_D             2.6424
+rep  2  SME DIT-2 (LD4D)                   1.3984
+rep  2  SME fp64 interleaved               1.4874
+rep  3  pocketfft c2c copy+exec            2.8020
+rep  3  vDSP_DFT_Interleaved_D             2.6431
+rep  3  SME DIT-2 (LD4D)                   1.4036
+rep  3  SME fp64 interleaved               1.4817
+rep  3  PFFFT-d ordered                    1.6736
+rep  4  vDSP_DFT_Interleaved_D             2.6388
+rep  4  SME DIT-2 (LD4D)                   1.4044
+rep  4  SME fp64 interleaved               1.4815
+rep  4  PFFFT-d ordered                    1.6715
+rep  4  pocketfft c2c copy+exec            2.7950
+rep  5  SME DIT-2 (LD4D)                   1.4012
+rep  5  SME fp64 interleaved               1.5946
+rep  5  PFFFT-d ordered                    1.6714
+rep  5  pocketfft c2c copy+exec            2.8039
+rep  5  vDSP_DFT_Interleaved_D             2.6485
+rep  6  SME fp64 interleaved               1.4827
+rep  6  PFFFT-d ordered                    1.6935
+rep  6  pocketfft c2c copy+exec            2.7955
+rep  6  vDSP_DFT_Interleaved_D             2.6399
+rep  6  SME DIT-2 (LD4D)                   1.3947
+rep  7  PFFFT-d ordered                    1.6693
+rep  7  pocketfft c2c copy+exec            2.7792
+rep  7  vDSP_DFT_Interleaved_D             2.6704
+rep  7  SME DIT-2 (LD4D)                   1.4100
+rep  7  SME fp64 interleaved               1.4844
+rep  8  pocketfft c2c copy+exec            2.7906
+rep  8  vDSP_DFT_Interleaved_D             2.6513
+rep  8  SME DIT-2 (LD4D)                   1.3958
+rep  8  SME fp64 interleaved               1.4773
+rep  8  PFFFT-d ordered                    1.6773
+RESULT c2c fp64 interleaved n=1024 B=64 separate SME DIT-2 (LD4D)             best     1.3947  median     1.4012  ns/point  (calls/rep 2359)
+RESULT c2c fp64 interleaved n=1024 B=64 separate SME fp64 interleaved         best     1.4767  median     1.4817  ns/point  (calls/rep 2276)
+RESULT c2c fp64 interleaved n=1024 B=64 separate PFFFT-d ordered              best     1.6689  median     1.6732  ns/point  (calls/rep 2006)
+RESULT c2c fp64 interleaved n=1024 B=64 separate pocketfft c2c copy+exec      best     2.7586  median     2.7955  ns/point  (calls/rep 1208)
+RESULT c2c fp64 interleaved n=1024 B=64 separate vDSP_DFT_Interleaved_D       best     2.6371  median     2.6431  ns/point  (calls/rep 1261)

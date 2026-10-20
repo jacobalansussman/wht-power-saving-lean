@@ -1,0 +1,5 @@
+which lean: /content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean  Compare sha: e48d6d3b5be7f7c8
+Main.olean resolved from: /content/work/v-m-rebuild/out2/Work/FourierC588M/Main.olean (regular file: yes)
+compare-pos rc=0 wall=48s maxrss_kb=16096240 result: RESULT: PASS
+compare-neg rc=1 wall=45s maxrss_kb=16111972 result: RESULT: FAIL
+DONE

@@ -1,0 +1,18 @@
+[timing lock] waiting for timing lock 02:14:58
+[timing lock] got lock 02:15:03; load: { 9.76 8.36 6.54 }
+check max abs err 6.661e-16 PASS
+SME panel store=0: 68.17 ns/panel  240.3 GMAC/s  0.1332 ns per complex point per radix-8 pass
+SME panel store=0: 68.20 ns/panel  240.2 GMAC/s  0.1332 ns per complex point per radix-8 pass
+SME panel store=0: 68.20 ns/panel  240.2 GMAC/s  0.1332 ns per complex point per radix-8 pass
+SME panel store=0: 68.18 ns/panel  240.3 GMAC/s  0.1332 ns per complex point per radix-8 pass
+SME panel store=0: 68.16 ns/panel  240.4 GMAC/s  0.1331 ns per complex point per radix-8 pass
+SME panel store=1: 125.07 ns/panel  131.0 GMAC/s  0.2443 ns per complex point per radix-8 pass
+SME panel store=1: 132.42 ns/panel  123.7 GMAC/s  0.2586 ns per complex point per radix-8 pass
+SME panel store=1: 132.88 ns/panel  123.3 GMAC/s  0.2595 ns per complex point per radix-8 pass
+SME panel store=1: 135.80 ns/panel  120.6 GMAC/s  0.2652 ns per complex point per radix-8 pass
+SME panel store=1: 135.18 ns/panel  121.2 GMAC/s  0.2640 ns per complex point per radix-8 pass
+NEON/C panel: 1064.86 ns/panel  15.4 GMAC/s  2.0798 ns per complex point per pass
+NEON/C panel: 1062.73 ns/panel  15.4 GMAC/s  2.0757 ns per complex point per pass
+NEON/C panel: 1062.15 ns/panel  15.4 GMAC/s  2.0745 ns per complex point per pass
+NEON/C panel: 1080.58 ns/panel  15.2 GMAC/s  2.1105 ns per complex point per pass
+NEON/C panel: 1081.21 ns/panel  15.2 GMAC/s  2.1117 ns per complex point per pass

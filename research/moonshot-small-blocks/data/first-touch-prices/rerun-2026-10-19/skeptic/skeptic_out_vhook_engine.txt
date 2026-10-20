@@ -1,0 +1,9 @@
+dim N 280 cap 80 dim E_K 56 dim E_R 136  (expect 280, 80, 56, 136)
+engine samples 6000 distinct left classes of D1 b: 14 (3s)
+((rank R, srank R), (rank K, srank K)) -> count
+    ((8, 8.0), (0, 0.0)) 3
+    ((72, 56.0), (56, 40.0)) 3
+    ((80, 52.8), (0, 0.0)) 4
+    ((80, 52.8), (56, 40.0)) 4
+least srank R 7.999999999999988 ; least srank R among rank != 8: 52.7999999999999 ; least srank K (nonzero): 39.999999999999936
+min kept relative sv 4.472e-01, max dropped relative sv 6.930e-15  (3s)

@@ -1,0 +1,10 @@
+tasks {2: 1, 5: 4} calls {3: 2, 4: 1, 6: 2} on a register of 6 rows: 3964 certificate tests, failed: []; tight: ['C12k10x2', 'C12k11x2', 'C12k9x2', 'C18k13x3', 'C18k14x3', 'C18k15x3', 'C18k16x3', 'C18k17x3', 'C24k17x4', 'C24k18x4', 'C24k19x4', 'C24k20x4']
+tasks {2: 1, 5: 4} calls {3: 2, 4: 1, 6: 2} on a register of 7 rows: 3427 certificate tests, failed: []; tight: ['C14k11x2', 'C14k12x2', 'C14k13x2', 'C21k16x3', 'C21k17x3', 'C21k18x3', 'C21k19x3', 'C21k20x3', 'C28k21x4', 'C28k22x4', 'C28k23x4', 'C28k24x4']
+tasks {2: 1, 5: 4} calls {3: 2, 4: 1, 6: 2} on a register of 8 rows: 3447 certificate tests, failed: []; tight: ['C16k13x2', 'C16k14x2', 'C16k15x2', 'C24k19x3', 'C24k20x3', 'C24k21x3', 'C24k22x3', 'C24k23x3', 'C32k25x4', 'C32k26x4', 'C32k27x4', 'C32k28x4']
+   walk condition: True ; D(0) = 0.0 ; D(1) = 0.0 ; roots: [0.6806, 1.0] ; D(0.9) = -0.003406 ; D(0.9983) = -0.00010596
+tasks {2: 1, 5: 1, 6: 1} calls {3: 2, 7: 1} on a register of 7 rows: 3427 certificate tests, failed: []; tight: ['C14k11x2', 'C14k12x2', 'C14k13x2', 'C21k16x3', 'C21k17x3', 'C21k18x3', 'C21k19x3', 'C21k20x3', 'C28k21x4', 'C28k22x4', 'C28k23x4', 'C28k24x4']
+tasks {2: 1, 5: 1, 6: 1} calls {3: 2, 7: 1} on a register of 8 rows: 3447 certificate tests, failed: []; tight: ['C16k13x2', 'C16k14x2', 'C16k15x2', 'C24k19x3', 'C24k20x3', 'C24k21x3', 'C24k22x3', 'C24k23x3', 'C32k25x4', 'C32k26x4', 'C32k27x4', 'C32k28x4']
+   walk condition: True ; D(0) = 0.0 ; D(1) = 0.0 ; roots: [0.8667, 1.0] ; D(0.9) = -0.000569 ; D(0.9983) = -4.848e-05
+tasks {2: 1, 5: 1, 6: 2} calls {3: 1, 4: 2, 8: 1} on a register of 8 rows: 3447 certificate tests, failed: []; tight: ['C16k13x2', 'C16k14x2', 'C16k15x2', 'C24k19x3', 'C24k20x3', 'C24k21x3', 'C24k22x3', 'C24k23x3', 'C32k25x4', 'C32k26x4', 'C32k27x4', 'C32k28x4']
+   walk condition: True ; D(0) = 0.0 ; D(1) = 0.0 ; roots: [0.7581, 1.0] ; D(0.9) = -0.003972 ; D(0.9983) = -0.00014646
+python3 -B check_survivor.py  6.42s user 0.08s system 98% cpu 6.616 total

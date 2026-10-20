@@ -1,0 +1,60 @@
+{
+ "N2": [
+  {
+   "m": 2,
+   "paid": 8,
+   "expected": 8,
+   "outputs_exact": true
+  },
+  {
+   "m": 3,
+   "paid": 10,
+   "expected": 10,
+   "outputs_exact": true
+  },
+  {
+   "m": 4,
+   "paid": 12,
+   "expected": 12,
+   "outputs_exact": true
+  },
+  {
+   "m": 5,
+   "paid": 14,
+   "expected": 14,
+   "outputs_exact": true
+  }
+ ],
+ "N3": [
+  {
+   "m": 3,
+   "paid_in_call": 10,
+   "scratch_levels": {
+    "centre": 4,
+    "carriers": 2
+   },
+   "y_plus_x_exact": true,
+   "scratch_clean": true
+  },
+  {
+   "m": 4,
+   "paid_in_call": 10,
+   "scratch_levels": {
+    "centre": 4,
+    "carriers": 2
+   },
+   "y_plus_x_exact": true,
+   "scratch_clean": true
+  },
+  {
+   "m": 5,
+   "paid_in_call": 10,
+   "scratch_levels": {
+    "centre": 4,
+    "carriers": 2
+   },
+   "y_plus_x_exact": true,
+   "scratch_clean": true
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+	Command being timed: "nice -n 10 /content/work/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean --run /content/work/ours/Compare.lean Work.WHTC588.Challenge Work.WHTC588.Solution OAI.PowerSaving.WHT.wht_main_block_C588x"
+	User time (seconds): 42.96
+	System time (seconds): 24.22
+	Percent of CPU this job got: 31%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:32.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 14841932
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 36817
+	Minor (reclaiming a frame) page faults: 2453141
+	Voluntary context switches: 72951
+	Involuntary context switches: 2457
+	Swaps: 0
+	File system inputs: 7978920
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

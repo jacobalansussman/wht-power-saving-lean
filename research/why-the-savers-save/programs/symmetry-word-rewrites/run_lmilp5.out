@@ -1,0 +1,1 @@
+./run_lmilp5.sh: line 3: 13585 Terminated: 15          WIDE=5 checks/wht33/fatlabels/venv/bin/python3 -I lmilp.py ${1:-900} > lmilp_k8_w5.log 2>&1

@@ -1,0 +1,20 @@
+--- block m = 4 ---
+hook k=8 (both games)        psi_j/psi_m = 0.3171, 0.5610, 0.7890 | z_j = 0.8286, 0.8340, 0.8238 | engine-priced cap 0.1762  (moves-only cap 0.1714)
+projection of m=3 hook (eng) psi_j/psi_m = 0.3793, 0.6552, 0.9103 | z_j = 0.6993, 0.6101, 0.3265 | engine-priced cap 0.6735  (moves-only cap 0.3007)
+lift g4c, exact (eng)        psi_j/psi_m = 0.3674, 0.6109, 0.7971 | z_j = 0.7222, 0.7110, 0.7885 | engine-priced cap 0.2890  (moves-only cap 0.2778)
+BEST MIXTURE: z = 0.8238, engine-priced saving cap 0.1762, weights {'hook k=8 (both games)': 1.0, 'projection of m=3 hook (eng)': 0.0}
+--- block m = 5 ---
+hook k=3 (both games)        psi_j/psi_m = 0.4839, 0.7570, 0.8966, 0.9655 | z_j = 0.4511, 0.3039, 0.2138, 0.1573 | engine-priced cap 0.8427  (moves-only cap 0.5489)
+hook k=4 (both games)        psi_j/psi_m = 0.4677, 0.7452, 0.8929, 0.9643 | z_j = 0.4721, 0.3210, 0.2219, 0.1630 | engine-priced cap 0.8370  (moves-only cap 0.5279)
+projection of m=3 hook (eng) psi_j/psi_m = 0.3769, 0.6400, 0.8599, 0.9413 | z_j = 0.6063, 0.4871, 0.2955, 0.2712 | engine-priced cap 0.7288  (moves-only cap 0.3937)
+lift g5c, d>=2 sampled (eng) psi_j/psi_m = 0.3752, 0.5945, 0.7474, 0.8666 | z_j = 0.6091, 0.5676, 0.5701, 0.6417 | engine-priced cap 0.4324  (moves-only cap 0.3909)
+projection of m=4 lift (eng) psi_j/psi_m = 0.3858, 0.6320, 0.8055, 0.9481 | z_j = 0.5918, 0.5008, 0.4234, 0.2390 | engine-priced cap 0.7610  (moves-only cap 0.4082)
+BEST MIXTURE: z = 0.5676, engine-priced saving cap 0.4324, weights {'hook k=3 (both games)': 0.0, 'lift g5c, d>=2 sampled (eng)': 1.0}
+--- block m = 6 ---
+hook k=3 (both games)        psi_j/psi_m = 0.4921, 0.7537, 0.8852, 0.9508, 0.9836 | z_j = 0.3958, 0.2574, 0.1758, 0.1244, 0.0907 | engine-priced cap 0.9093  (moves-only cap 0.6042)
+projection of m=3 hook, twice (eng) psi_j/psi_m = 0.3786, 0.6380, 0.8457, 0.9243, 0.9796 | z_j = 0.5420, 0.4090, 0.2418, 0.1940, 0.1130 | engine-priced cap 0.8870  (moves-only cap 0.4580)
+projection of m=5 lift (eng) psi_j/psi_m = 0.3913, 0.6164, 0.7684, 0.8770, 0.9678 | z_j = 0.5237, 0.4404, 0.3800, 0.3237, 0.1792 | engine-priced cap 0.8208  (moves-only cap 0.4763)
+lift (gen.py rule), sampled 1500/dist (eng) psi_j/psi_m = 0.3958, 0.5954, 0.7430, 0.8404, 0.9132 | z_j = 0.5173, 0.4719, 0.4286, 0.4287, 0.4979 | engine-priced cap 0.5714  (moves-only cap 0.4827)
+BEST MIXTURE: z = 0.4286, engine-priced saving cap 0.5714, weights {'hook k=3 (both games)': 0.0, 'lift (gen.py rule), sampled 1500/dist (eng)': 1.0}
+projection profiles: m=4 [18480, 31920, 44352, 48720]  m=5 [18018000, 30597840, 41110272, 45002160, 47809440]
+block-5 lift profile used: [1.8758808834710163, 2.972255, 3.736826, 4.33294, 5.0] (d>=2 sampled)

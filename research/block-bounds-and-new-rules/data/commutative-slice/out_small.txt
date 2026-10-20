@@ -1,0 +1,27 @@
+m=4 W=1 n=4: N=10, multisets 3060, candidate functionals 512
+certified failing: 3058, passing the Phi-test: 2
+  passes: (1, 2, 4, 8)
+  passes: (7, 11, 13, 14)
+m=4 W=1 n=4: multisets enumerated 3060, certificate entries 3060, complete: True
+  exclusion certificates valid: 3058; entries without certificate: 2 (of which pass the test by brute force: 2)
+RESULT: PASS -> 3058 of 3060 multisets EXCLUDED by certificate; 2 pass the test
+m=2 W=2 n=3: N=3, multisets 10, candidate functionals 4
+certified failing: 10, passing the Phi-test: 0
+m=2 W=2 n=3: multisets enumerated 10, certificate entries 10, complete: True
+  exclusion certificates valid: 10; entries without certificate: 0 (of which pass the test by brute force: 0)
+RESULT: PASS -> 10 of 10 multisets EXCLUDED by certificate; 0 pass the test
+m=3 W=2 n=5: N=6, multisets 462, candidate functionals 32
+certified failing: 462, passing the Phi-test: 0
+m=3 W=2 n=5: multisets enumerated 462, certificate entries 462, complete: True
+  exclusion certificates valid: 462; entries without certificate: 0 (of which pass the test by brute force: 0)
+RESULT: PASS -> 462 of 462 multisets EXCLUDED by certificate; 0 pass the test
+m=3 W=3 n=8: N=6, multisets 3003, candidate functionals 32
+certified failing: 3003, passing the Phi-test: 0
+m=3 W=3 n=8: multisets enumerated 3003, certificate entries 3003, complete: True
+  exclusion certificates valid: 3003; entries without certificate: 0 (of which pass the test by brute force: 0)
+RESULT: PASS -> 3003 of 3003 multisets EXCLUDED by certificate; 0 pass the test
+m=4 W=2 n=7: N=10, multisets 116280, candidate functionals 512
+certified failing: 116280, passing the Phi-test: 0
+m=4 W=2 n=7: multisets enumerated 116280, certificate entries 116280, complete: True
+  exclusion certificates valid: 116280; entries without certificate: 0 (of which pass the test by brute force: 0)
+RESULT: PASS -> 116280 of 116280 multisets EXCLUDED by certificate; 0 pass the test

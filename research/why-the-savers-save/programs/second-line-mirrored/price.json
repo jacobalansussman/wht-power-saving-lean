@@ -1,0 +1,27 @@
+{
+ "calibration": 0.001664732700176769,
+ "ceiling_C128": {
+  "D_per_replica": 640,
+  "a": 0.003282484700725189
+ },
+ "breakeven_vs_ours_centre_pieces": {
+  "C_max": 163,
+  "D_per_replica": 325,
+  "extra_over_V_centre_per_call": 35
+ },
+ "breakeven_vs_hub_centre_pieces": {
+  "C_max": 162,
+  "D_per_replica": 334,
+  "extra_over_V_centre_per_call": 34
+ },
+ "breakeven_vs_ours_absorbed": {
+  "C_max": 163,
+  "D_per_replica": 325,
+  "extra_over_V_centre_per_call": 35
+ },
+ "breakeven_vs_hub_absorbed": {
+  "C_max": 162,
+  "D_per_replica": 334,
+  "extra_over_V_centre_per_call": 34
+ }
+}

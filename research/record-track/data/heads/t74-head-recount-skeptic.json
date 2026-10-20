@@ -1,0 +1,490 @@
+{
+ "agent": "v-rl-price",
+ "date": "2026-10-14",
+ "verdict": "rl-check counts and prices reproduced exactly by independent code",
+ "struct_T74": {
+  "totals": {
+   "HEAD-literal": 11010,
+   "neither": 11738
+  },
+  "rows": [
+   {
+    "child": 8,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 3,
+    "side": 0,
+    "cls": "HEAD-literal",
+    "first_addition_after": "bridge_read@15",
+    "count": 6150
+   },
+   {
+    "child": 10,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 3,
+    "side": 1,
+    "cls": "HEAD-literal",
+    "first_addition_after": "bridge_read@15",
+    "count": 4860
+   },
+   {
+    "child": 12,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 0,
+    "side": 0,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@27",
+    "count": 6672
+   },
+   {
+    "child": 13,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 0,
+    "side": 1,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@27",
+    "count": 5066
+   }
+  ],
+  "controls": {
+   "pairs_sides_match_plan": true,
+   "call_data_owner_numbering_ok": true,
+   "calls_checked": 666,
+   "owner_role_checks_failed": {},
+   "roles": 319680,
+   "hosted_roles_outside_window": 0,
+   "hosted_cell_sets_not_a_prefix": 0,
+   "plan_window_mismatches": 0,
+   "plan_windows_checked": 1332,
+   "max_remainders_per_family": 1,
+   "families_with_several_remainders": 0,
+   "several_remainder_patterns": []
+  }
+ },
+ "struct_1042": {
+  "totals": {
+   "HEAD-literal": 2329,
+   "HEAD-net": 1735,
+   "neither": 3486
+  },
+  "rows": [
+   {
+    "child": 0,
+    "child_rank": 16,
+    "remainder": 3,
+    "pair": 1,
+    "side": 0,
+    "cls": "HEAD-net",
+    "first_addition_after": "bridge_read@3",
+    "count": 126
+   },
+   {
+    "child": 0,
+    "child_rank": 16,
+    "remainder": 7,
+    "pair": 1,
+    "side": 0,
+    "cls": "HEAD-net",
+    "first_addition_after": "bridge_read@3",
+    "count": 3
+   },
+   {
+    "child": 0,
+    "child_rank": 16,
+    "remainder": 16,
+    "pair": 1,
+    "side": 0,
+    "cls": "HEAD-literal",
+    "first_addition_after": "bridge_read@3",
+    "count": 18
+   },
+   {
+    "child": 2,
+    "child_rank": 16,
+    "remainder": 3,
+    "pair": 1,
+    "side": 1,
+    "cls": "HEAD-net",
+    "first_addition_after": "bridge_read@3",
+    "count": 258
+   },
+   {
+    "child": 4,
+    "child_rank": 32,
+    "remainder": 1,
+    "pair": 2,
+    "side": 0,
+    "cls": "HEAD-net",
+    "first_addition_after": "bridge_read@9",
+    "count": 80
+   },
+   {
+    "child": 6,
+    "child_rank": 32,
+    "remainder": 1,
+    "pair": 2,
+    "side": 1,
+    "cls": "HEAD-net",
+    "first_addition_after": "bridge_read@9",
+    "count": 1267
+   },
+   {
+    "child": 8,
+    "child_rank": 48,
+    "remainder": 1,
+    "pair": 3,
+    "side": 0,
+    "cls": "HEAD-net",
+    "first_addition_after": "bridge_read@15",
+    "count": 1
+   },
+   {
+    "child": 8,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 3,
+    "side": 0,
+    "cls": "HEAD-literal",
+    "first_addition_after": "bridge_read@15",
+    "count": 590
+   },
+   {
+    "child": 10,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 3,
+    "side": 1,
+    "cls": "HEAD-literal",
+    "first_addition_after": "bridge_read@15",
+    "count": 1721
+   },
+   {
+    "child": 12,
+    "child_rank": 48,
+    "remainder": 3,
+    "pair": 0,
+    "side": 0,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@27",
+    "count": 4
+   },
+   {
+    "child": 12,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 0,
+    "side": 0,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@27",
+    "count": 1505
+   },
+   {
+    "child": 13,
+    "child_rank": 48,
+    "remainder": 3,
+    "pair": 0,
+    "side": 1,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@27",
+    "count": 3
+   },
+   {
+    "child": 13,
+    "child_rank": 48,
+    "remainder": 48,
+    "pair": 0,
+    "side": 1,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@27",
+    "count": 1034
+   },
+   {
+    "child": 14,
+    "child_rank": 32,
+    "remainder": 1,
+    "pair": 1,
+    "side": 0,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@26",
+    "count": 94
+   },
+   {
+    "child": 15,
+    "child_rank": 32,
+    "remainder": 1,
+    "pair": 1,
+    "side": 1,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@26",
+    "count": 807
+   },
+   {
+    "child": 15,
+    "child_rank": 32,
+    "remainder": 2,
+    "pair": 1,
+    "side": 1,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@26",
+    "count": 1
+   },
+   {
+    "child": 15,
+    "child_rank": 32,
+    "remainder": 3,
+    "pair": 1,
+    "side": 1,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@26",
+    "count": 9
+   },
+   {
+    "child": 16,
+    "child_rank": 16,
+    "remainder": 16,
+    "pair": 2,
+    "side": 0,
+    "cls": "neither",
+    "first_addition_after": "bridge_read@25",
+    "count": 29
+   }
+  ],
+  "controls": {
+   "my_expansion_equals_explicit_schedule": true,
+   "pairs_sides_match_plan": true,
+   "call_data_owner_numbering_ok": true,
+   "calls_checked": 144,
+   "owner_role_checks_failed": {},
+   "roles": 69120,
+   "hosted_roles_outside_window": 0,
+   "hosted_cell_sets_not_a_prefix": 0,
+   "plan_window_mismatches": 0,
+   "plan_windows_checked": 288,
+   "max_remainders_per_family": 2,
+   "families_with_several_remainders": 133,
+   "several_remainder_patterns": [
+    [
+     [
+      [
+       2,
+       3,
+       "HEAD-net"
+      ],
+      [
+       15,
+       1,
+       "neither"
+      ]
+     ],
+     132
+    ],
+    [
+     [
+      [
+       0,
+       7,
+       "HEAD-net"
+      ],
+      [
+       14,
+       1,
+       "neither"
+      ]
+     ],
+     1
+    ]
+   ],
+   "remainders_equal_explicit_idle_children": true,
+   "explicit_idle_children": 7550
+  }
+ },
+ "prices": {
+  "T74": {
+   "W": 66304,
+   "dispatch": {
+    "extra": 417,
+    "gauge44": 249
+   },
+   "call_profile": {
+    "1": 1560432,
+    "2": 336336,
+    "3": 278724,
+    "4": 84912,
+    "5": 54612,
+    "8": 5328
+   },
+   "idle": {
+    "48": 22748
+   },
+   "idle_by_class": {
+    "HEAD-literal": {
+     "48": 11010
+    },
+    "neither": {
+     "48": 11738
+    }
+   },
+   "profile_equals_PLAN_profile": true,
+   "deficit": 23680,
+   "plan_deficit": 23680,
+   "remainders": 22748,
+   "control_moment_root": {
+    "truncated": {},
+    "saving": "1.6797549561e-3",
+    "saving_full": "1.6797549561255445213356709939207025769983e-3",
+    "sign_changes_on_grid": 1,
+    "vs_control_pct": "0.000"
+   },
+   "all_idle_truncated_one_per_array": {
+    "truncated": {
+     "48": 22748
+    },
+    "saving": "1.8169467780e-3",
+    "saving_full": "1.8169467779879255576593497713997603577873e-3",
+    "sign_changes_on_grid": 1,
+    "vs_control_pct": "8.167"
+   },
+   "all_idle_truncated_per_family": {
+    "truncated": {
+     "48": 22748
+    },
+    "saving": "1.8169467780e-3",
+    "saving_full": "1.8169467779879255576593497713997603577873e-3",
+    "sign_changes_on_grid": 1,
+    "vs_control_pct": "8.167"
+   },
+   "heads_literal": {
+    "truncated": {
+     "48": 11010
+    },
+    "saving": "1.7434773229e-3",
+    "saving_full": "1.7434773228999190933813124449451875176238e-3",
+    "sign_changes_on_grid": 1,
+    "vs_control_pct": "3.794"
+   },
+   "heads_literal_plus_net": {
+    "truncated": {
+     "48": 11010
+    },
+    "saving": "1.7434773229e-3",
+    "saving_full": "1.7434773228999190933813124449451875176238e-3",
+    "sign_changes_on_grid": 1,
+    "vs_control_pct": "3.794"
+   },
+   "control_bform_moment_at_b_minus_1e-15_and_plus": [
+    "-2.921e-15",
+    "2.921e-15"
+   ],
+   "hub_B_json_b": "1.6797549561255445e-3"
+  },
+  "1042": {
+   "W": 14336,
+   "dispatch": {
+    "gauge44": 144
+   },
+   "call_profile": {
+    "1": 347328,
+    "2": 60192,
+    "3": 62208,
+    "4": 20448,
+    "5": 11808,
+    "8": 1152
+   },
+   "idle": {
+    "1": 2249,
+    "2": 1,
+    "3": 400,
+    "7": 3,
+    "16": 47,
+    "48": 4850
+   },
+   "idle_by_class": {
+    "HEAD-net": {
+     "1": 1348,
+     "3": 384,
+     "7": 3
+    },
+    "HEAD-literal": {
+     "16": 18,
+     "48": 2311
+    },
+    "neither": {
+     "1": 901,
+     "2": 1,
+     "3": 16,
+     "16": 29,
+     "48": 2539
+    }
+   },
+   "profile_equals_PLAN_profile": true,
+   "deficit": 5120,
+   "plan_deficit": 5120,
+   "remainders": 7550,
+   "control_moment_root": {
+    "truncated": {},
+    "saving": "1.6749890159e-3",
+    "saving_full": "1.6749890159376723284688154166168067254476e-3",
+    "sign_changes_on_grid": 1,
+    "vs_control_pct": "0.000"
+   },
+   "all_idle_truncated_one_per_array": {
+    "truncated": {
+     "1": 2249,
+     "2": 1,
+     "3": 400,
+     "7": 3,
+     "16": 47,
+     "48": 4850
+    },
+    "saving": "1.8213933435e-3",
+    "saving_full": "1.8213933434758634261473152079632839529938e-3",
+    "sign_changes_on_grid": 1,
+    "vs_control_pct": "8.741"
+   },
+   "all_idle_truncated_per_family": {
+    "truncated": {
+     "1": 2249,
+     "2": 1,
+     "3": 400,
+     "7": 3,
+     "16": 47,
+     "48": 4850
+    },
+    "saving": "1.8213896827e-3",
+    "saving_full": "1.8213896826771106945121095054466047278265e-3",
+    "sign_changes_on_grid": 1,
+    "vs_control_pct": "8.740"
+   },
+   "heads_literal": {
+    "truncated": {
+     "16": 18,
+     "48": 2311
+    },
+    "saving": "1.7368313726e-3",
+    "saving_full": "1.7368313726219307318538398274034220195636e-3",
+    "sign_changes_on_grid": 1,
+    "vs_control_pct": "3.692"
+   },
+   "heads_literal_plus_net": {
+    "truncated": {
+     "1": 1348,
+     "3": 384,
+     "7": 3,
+     "16": 18,
+     "48": 2311
+    },
+    "saving": "1.7439240349e-3",
+    "saving_full": "1.7439240349113648342574015295056501503101e-3",
+    "sign_changes_on_grid": 1,
+    "vs_control_pct": "4.116"
+   },
+   "control_bform_moment_at_b_minus_1e-15_and_plus": [
+    "-2.930e-15",
+    "2.930e-15"
+   ]
+  }
+ }
+}

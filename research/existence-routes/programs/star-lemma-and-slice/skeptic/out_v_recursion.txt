@@ -1,0 +1,14 @@
+m= 4 n= 2 full=    4  excluded W >=     4 (fraction 1.0000, negative at d=0)  bar W >= 5  open above bar: none
+m= 5 n= 3 full=    8  excluded W >=     7 (fraction 0.8750, negative at d=1)  bar W >= 8  open above bar: none
+m= 6 n= 4 full=   16  excluded W >=    13 (fraction 0.8125, Lemma 11 at d=2 (s_d=1))  bar W >= 13  open above bar: none
+m= 7 n= 5 full=   32  excluded W >=    26 (fraction 0.8125, Lemma 11 at d=3 (s_d=2))  bar W >= 23  open above bar: 23..25 (savings 0.122..0.165)
+m= 8 n= 6 full=   64  excluded W >=    52 (fraction 0.8125, Lemma 11 at d=3 (s_d=2))  bar W >= 40  open above bar: 40..51 (savings 0.109..0.226)
+m= 9 n= 7 full=  128  excluded W >=   105 (fraction 0.8203, rank 0 on 4-flats)  bar W >= 71  open above bar: 71..104 (savings 0.102..0.275)
+m=10 n= 8 full=  256  excluded W >=   209 (fraction 0.8164, Lemma 11 at d=4 (s_d=3))  bar W >= 129  open above bar: 129..208 (savings 0.101..0.308)
+m=11 n= 9 full=  512  excluded W >=   419 (fraction 0.8184, Lemma 11 at d=5 (s_d=2))  bar W >= 237  open above bar: 237..418 (savings 0.101..0.337)
+m=12 n=10 full= 1024  excluded W >=   838 (fraction 0.8184, Lemma 11 at d=6 (s_d=5))  bar W >= 438  open above bar: 438..837 (savings 0.100..0.361)
+m=13 n=11 full= 2048  excluded W >=  1677 (fraction 0.8188, Lemma 11 at d=7 (s_d=5))  bar W >= 815  open above bar: 815..1676 (savings 0.100..0.381)
+m=14 n=12 full= 4096  excluded W >=  3354 (fraction 0.8188, Lemma 11 at d=7 (s_d=2))  bar W >= 1524  open above bar: 1524..3353 (savings 0.100..0.399)
+check m=6 W=13: ({3: 3, 2: 1}, 'Lemma 11 at d=2 (s_d=1)')
+check m=6 W=12: ({3: 4, 2: 4, 1: 2, 0: 1}, None)
+m=7 W=25: ({4: 7, 3: 5, 2: 4, 1: 2, 0: 1}, None)  W=26: ({4: 6, 3: 2}, 'Lemma 11 at d=3 (s_d=2)')

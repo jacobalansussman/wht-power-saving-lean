@@ -1,0 +1,41 @@
+LP with head bonus: root 0.0017305784372663  heads(LP) 80640.000  fractional classes 11 (span index counts {2: 6, 6: 2, 7: 3})
+MIP round 0: Optimal in 195 s, obj -26696204.402740
+   heads(MIP) 80640.000  fractional classes 0  root 0.0017305784372663
+   new Hall rows on the MIP point: 0
+PL : racine 0.0017305784372663
+entier : racine 0.0017305784372663  restes inactifs {1: 84240, 3: 23328, 5: 4320, 48: 137952}
+owner_audit : 0 {"controls": ["same_call_family", "duplicate_helper", "unpaid_hole"], "positive": {"calls": 3240, "idle": {"1": 84240, "3": 23328, "5": 4320, "48": 137952}, "physical": 323069, "profile": {"1": 7989840, "2": 2349000, "3": 749088, "4": 330480, "5": 69120, "8": 25920, "48": 137952}, "replicas": 360, "roles": 1321920, "status": "PASS_STANDARD_LIBRARY_INDEPENDENT_LITERAL_AUDIT"}}
+ 
+	Command being timed: "nice -n 19 /content/work/reopt-o-model/v3815/bin/python -B /content/work/reopt-o-model/probe/hall_mip.py /content/work/reopt-o-model/c3815h-mip1/research/clock-heads/construction /content/work/reopt-o-model/hub-3815/research/staged544-clock-ceiling/inputs/ORDER.json /content/work/reopt-o-model/c3815h-mip1/out 900"
+	User time (seconds): 491.02
+	System time (seconds): 9.74
+	Percent of CPU this job got: 110%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:33.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4090088
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 83
+	Minor (reclaiming a frame) page faults: 3563315
+	Voluntary context switches: 792
+	Involuntary context switches: 20785
+	Swaps: 0
+	File system inputs: 20072
+	File system outputs: 15800
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+A heads 80640
+  remainders by pair class {'0/2': {0: 80640}, '1/3': {0: 80640}, '12/13': {3: 23328, 48: 57312}, '14/15': {0: 46368, 1: 34224, 5: 48}, '16/17': {0: 80640}, '4/6': {0: 26352, 1: 50016, 5: 4272}, '5/7': {0: 80640}, '8/10': {48: 80640}, '9/11': {0: 80640}}
+B heads 57312
+  remainders by pair class {'0/2': {0: 80640}, '1/3': {0: 80640}, '12/13': {48: 80640}, '14/15': {0: 45240, 1: 35400}, '16/17': {0: 80640}, '4/6': {0: 27480, 1: 48840, 5: 4320}, '5/7': {0: 80640}, '8/10': {3: 23328, 48: 57312}, '9/11': {0: 80640}}
+classes (owner, child pair) with a different multiset of bin patterns: 283 of 3240
+bins with a different pattern: 56470
+rows with same (t,h,o,c,p): 516534 of 1321920
+rows with same (t,h) -> same (o, child pair): 690981
+{"status": "OFFSETS_REGENERATED", "roles": 1321920, "payload_sha256": "54334b430dedc7b2a0cde454bc5280539611e9b2d804caf282f68569ca6fb9c0", "profile": {"1": 8041680, "2": 2306880, "3": 729648, "4": 353160, "5": 69120, "8": 25920, "48": 137952}}
+DONE_P3B mip1

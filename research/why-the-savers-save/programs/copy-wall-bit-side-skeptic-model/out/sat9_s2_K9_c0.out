@@ -1,0 +1,6 @@
+=== mine, s2 K9, their clique 12:35:31
+[heavy.sh] waiting for a heavy slot (3 for the whole Mac) 12:35:31
+[heavy.sh] got slot heavy-2 12:46:23
+unit s2 K 9 seed 0 clique(live idx) [0, 61, 62, 68, 69, 101, 107, 109] -> lines [0, 64, 65, 72, 73, 108, 116, 118]  vars 90552 clauses 313622 fit 5851 solver cadical153
+RESULT UNSAT (W contains W0 for every K-total decoder) 64.8 s
+exit 0 12:47:29

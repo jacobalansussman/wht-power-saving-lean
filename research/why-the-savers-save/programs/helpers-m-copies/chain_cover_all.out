@@ -1,0 +1,84 @@
+group 0 needed sources 64 packets 8
+giver frames with needed content: 136 Counter({1: 64, 2: 32, 3: 16, 4: 16, 5: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{5: 8}, {2: 8}, {7: 8}, {3: 8}, {4: 8}, {1: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 1 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{2: 8}, {5: 8}, {0: 8}, {4: 8}, {3: 8}, {1: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 2 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{7: 8}, {2: 8}, {6: 8}, {1: 8}, {4: 8}, {3: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 3 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{2: 8}, {6: 8}, {4: 8}, {5: 8}, {1: 8}, {7: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 4 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{2: 8}, {1: 8}, {0: 8}, {6: 8}, {4: 8}, {7: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 5 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{2: 8}, {6: 8}, {7: 8}, {5: 8}, {1: 8}, {4: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 6 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{5: 8}, {0: 8}, {6: 8}, {2: 8}, {1: 8}, {4: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 7 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{2: 8}, {6: 8}, {4: 8}, {5: 8}, {1: 8}, {7: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 8 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{2: 8}, {1: 8}, {0: 8}, {6: 8}, {4: 8}, {7: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 9 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{2: 8}, {6: 8}, {7: 8}, {5: 8}, {1: 8}, {4: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 10 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{5: 8}, {0: 8}, {6: 8}, {2: 8}, {4: 8}, {1: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 11 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{2: 8}, {6: 8}, {5: 8}, {0: 8}, {4: 8}, {3: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 12 needed sources 64 packets 8
+giver frames with needed content: 120 Counter({1: 64, 2: 32, 3: 16, 6: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{5: 8}, {4: 8}, {6: 8}, {2: 8}, {3: 8}, {0: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8
+group 13 needed sources 64 packets 8
+giver frames with needed content: 136 Counter({1: 64, 2: 32, 3: 16, 4: 16, 5: 8})
+group targets sharing a chain frame with a giver of needed content: []
+distinct maximal chain coverage sets: 8  sizes Counter({8: 8})
+ largest: [{5: 8}, {7: 8}, {4: 8}, {2: 8}, {3: 8}, {1: 8}]
+EXACT minimum number of nested giver chains covering all needed sources (support relaxation): 8

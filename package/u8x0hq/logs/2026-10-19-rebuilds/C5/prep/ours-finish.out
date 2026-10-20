@@ -1,0 +1,6 @@
+all checks of the run hold: sorry lines only in the 10 challenge files (lines 327, 331 = OpenAI's statement), 5 forbidden-grep hits are the comment 'No sorry, no native_decide'
+OURS-READY written
+OURS-READY Mon Oct 19 01:14:18 PM UTC 2026 host=f64332260d21 mode=full
+tree /content/work/ours/T (Lake project /content/work/ours/T/lean/complex588)
+build OK, --no-build OK, axioms OK, glue axioms printed, hostSchedK negative proved, Compare.lean U8X0HQ positive PASS / negative FAIL, challenges byte-identical to OpenAI's statement with 16256629 / 16256630 (finished by ours-finish.sh)
+BASE-READY: Mon Oct 19 12:59:30 PM UTC 2026
