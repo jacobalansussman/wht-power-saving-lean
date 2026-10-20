@@ -1,0 +1,109 @@
+{
+  "status": "PASS_INDEPENDENT_ASYNC_WHOLE_OWNER_CONTROLLER_PHASES_AND_SPECTATORS",
+  "template_sha256": "76ad31f1b3b88f4ac9a0cb99b0ee45bfdb4f7affa487192354a329ae1424152d",
+  "complex_template_sha256": "76ad31f1b3b88f4ac9a0cb99b0ee45bfdb4f7affa487192354a329ae1424152d",
+  "complex_live": 66304,
+  "complex_profile": {
+    "1": 1630639,
+    "2": 470196,
+    "3": 154512,
+    "4": 71928,
+    "5": 11988,
+    "6": 5,
+    "7": 3,
+    "8": 5328,
+    "17": 8,
+    "19": 1,
+    "23": 25905,
+    "48": 16576
+  },
+  "complex_hosted_residuals": 271728,
+  "physical": 66813,
+  "rank_mass": 4816512,
+  "deficit": 23680,
+  "entering_helper_roles": 129870,
+  "cross_replica_helper_roles": 238715,
+  "one_owner_per_complete_invocation": true,
+  "helper_busy_family_window_checks": 271728,
+  "complete_invocations": 666,
+  "actual_orthogonal_73column_maps": 8299,
+  "actual_sigma_stream_sha256": "f88ea1f7f24a628107f37ae85b2bac875a3483d8fe878dd08093e0d03a9e3b6f",
+  "all_actual_residual_and_spectator_charts": true,
+  "idle_remainders": 44767,
+  "mutations_rejected": [
+    "alias two whole owners",
+    "helper on active data family",
+    "owner in private namespace",
+    "wrong residual width",
+    "wrong spectator coordinate",
+    "omit idle remainder",
+    "omit private zero buffers",
+    "private buffer aliases data",
+    "pooled slots exchange invocation time (equal widths)",
+    "pooled slot time shifted",
+    "understate physical reserve",
+    "extra: wrong provider at its invocation",
+    "extra: stale per-call local program hash",
+    "extra: stale serialized provider program",
+    "extra: unbound residual adapter hash",
+    "extra: wrong per-call residual width",
+    "extra: wrong sweep provider",
+    "extra: entering helper width silently restored to nine",
+    "gauge44: wrong provider at its invocation",
+    "gauge44: stale per-call local program hash",
+    "gauge44: stale serialized provider program",
+    "gauge44: unbound residual adapter hash",
+    "gauge44: wrong per-call residual width",
+    "gauge44: wrong sweep provider",
+    "gauge44: entering helper width silently restored to nine"
+  ],
+  "mutation_controls_run": true,
+  "provider_phase_semantic_sha256": {
+    "extra": "a489f4c57bb1c3a83863eb90e666431cf142c07ca3158bf1827c5374ff7117ee",
+    "gauge44": "e9989ac43a2555a5c22d9520407c127a23dfe799baaa0d2511f376cb0fc3fe33"
+  },
+  "provider_artifact_semantic_sha256": {
+    "extra": {
+      "CANONICAL-WORD.json.gz": "202d3bfa43c5449eb0531816dc0dbd116b22ae1bf6cede550d82c49eb3bb1b22",
+      "LOCAL-PROGRAMS.json.gz": "73f6e286234d6f57adf9a2563d5ceef28433e4888a33eaeea46341843b0ced16",
+      "LOCAL-CHECKS.json": "df0918924cb96ba59097292abc71c047cb980fdc5b92dedfd17b7c48d5691582",
+      "INDEPENDENT-LOCAL-REPLAY.json": "003fb2e4abca11c1065c7d18f419b058ecc579ca3a56861138a27f9d090e35e4",
+      "CLIFFORD-RECIPES.json": "fc315f2affdf4294a6490c949585d144627957cb0d0527a30bce1b0da8b1e2f9",
+      "CLIFFORD-REVIEW.json": "a489f4c57bb1c3a83863eb90e666431cf142c07ca3158bf1827c5374ff7117ee",
+      "RESIDUAL-ADAPTERS.json": "400da8d45cc1330a8d46afe9345a2beb0619b98ae2edffdec869be7933e9b35b"
+    },
+    "gauge44": {
+      "CANONICAL-WORD.json.gz": "852d09f08b83b760055aaa525632b75f4a8497a816405edbc325670222db63b4",
+      "LOCAL-PROGRAMS.json.gz": "73f6e286234d6f57adf9a2563d5ceef28433e4888a33eaeea46341843b0ced16",
+      "LOCAL-CHECKS.json": "df0918924cb96ba59097292abc71c047cb980fdc5b92dedfd17b7c48d5691582",
+      "INDEPENDENT-LOCAL-REPLAY.json": "3df910e82dfc8700786672fd6bd0e6f7fcdda8a375b1ac8b97ff45ff413d05d6",
+      "CLIFFORD-RECIPES.json": "0367d988b83dd8cad6953980295895e038665e7b4be177fdb2552e2f4e1aa7ba",
+      "CLIFFORD-REVIEW.json": "e9989ac43a2555a5c22d9520407c127a23dfe799baaa0d2511f376cb0fc3fe33",
+      "RESIDUAL-ADAPTERS.json": "a33e9706194c197325086a2ac1c90fa0f918734e3f44881be4398edd29c34a64"
+    }
+  },
+  "widths_by_provider": {
+    "extra": {
+      "4": 26,
+      "5": 2,
+      "6": 16,
+      "7": 52,
+      "8": 99,
+      "9": 213
+    },
+    "gauge44": {
+      "4": 26,
+      "5": 2,
+      "6": 16,
+      "7": 52,
+      "8": 99,
+      "9": 213
+    }
+  },
+  "provider_counts": {
+    "extra": 416,
+    "gauge44": 250
+  },
+  "all_provider_program_phase_and_wrapper_bindings": true,
+  "scope": "Independent exact asynchronous chronology, per-replica phase projection, owner/chart/paid-profile audit. Uses per-invocation local providers bound by exact scalar, phase and residual-wrapper receipts; all-size compilation and complete coefficient invoice are separate inherited obligations."
+}

@@ -1,0 +1,124 @@
+sources-only tree: 618 .lean files from ours/T
+INSTALL L2979FcS: 282 new, 0 identical (skipped), from /content/work/afc-final/in/ov-install; hashes /content/work/afc-final/in-L2979FcS.sha256
+BOS L2979Fc: L2979Fc Work.FourierL2979Fc.Main bound 17887045/10000000000 mode pos threads 3 START Tue Oct 20 16:47:08 UTC 2026
+verifier clone at c92b9b6; tracked changes: 0
+closure modules: 350; import lines rewritten: 568; bound 2466337/2000000000
+CONTROL PASS: packaging of Shea's C588 identical to nmamano's submission (350 files)
+CONTROL PASS: adapter body identical
+closure modules: 577; import lines rewritten: 1006; bound 3577409/2000000000
+staged lean files: 578; bytes: 17472227; largest: 1485529 /content/work/afc-final/bos-L2979Fc/stage/Submission/Work/XHostT/Data/H2979Fc/Calls.lean
+level chain: 577 modules -> 447 (23 merged groups holding 153 modules); PR files 449 (limit 500)
+files in the PR: 449 (limit 500); largest 3494965 bytes (limit 20000000); total 17508194 bytes (limit 150000000)
+verifier planning: 448 modules in 145 serial chains, acyclic
+visibility: 0 modules see local modules outside their group that they did not see before; 78 see earlier siblings of their group only; 0 see new external imports
+STATIC CHECK PASS
+files in the PR: 449 (limit 500); largest 3494965 bytes (limit 20000000); total 17508194 bytes (limit 150000000)
+verifier planning: 448 modules in 145 serial chains, acyclic
+visibility: 0 modules see local modules outside their group that they did not see before; 78 see earlier siblings of their group only; 0 see new external imports
+STATIC CHECK PASS
+MERGED: 577 -> 447 modules (map /content/work/afc-final/bos-L2979Fc/stage.merge-map.json)
+staged lean files after the merge: 448; bytes: 17508194; largest: 3494965 /content/work/afc-final/bos-L2979Fc/stage/Submission/Work/GCert/Data/Gen/S2979E/Merged1.lean
+profile challenge: challenges/dft/UniformFourier233.lean  expected sha256 3a646acd3ac9cf6ff93e29cc363dbfea0c8953a2e1415f7965bd86e8b2ee62a3
+/content/work/bos/bos-verifier/challenges/dft/UniformFourier233.lean: OK
+challenge bound 3577409 2000000000
+e58fa3e6b6ccb5082c73d19756c4f6904a6c941cda8e68e996081601f3542f94  /content/work/afc-final/bos-L2979Fc/stage/VerifierChallenge.lean
+7.7G	/content/work/afc-final/bos-L2979Fc/stage/.lake/packages
+PREP DONE Tue Oct 20 16:50:52 UTC 2026
+   (slot: waited 0s; heavy 0, avail 50684 MB)
+   bos Lean threads for lean: 3
+=== lean START Tue Oct 20 16:50:52 UTC 2026 olean files: 0
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/afc-final/bos-L2979Fc/control/bin:$PATH; export PATH; exec comparator /content/work/afc-final/bos-L2979Fc/control/lean.json'
+=== lean END rc=0 wall=3802s Tue Oct 20 17:54:14 UTC 2026 maxrss_kb=9988860
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, Race.bound, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Submission
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 449
+VERDICT bos lean: accepted
+   (slot: waited 0s; heavy 0, avail 24503 MB)
+   bos Lean threads for audit: 3
+=== audit START Tue Oct 20 17:54:14 UTC 2026 olean files: 449
+cmd: exec lake env lean VerifierAudit.lean
+=== audit END rc=0 wall=113s Tue Oct 20 17:56:07 UTC 2026 maxrss_kb=6886020
+'Race.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+olean files after: 449
+VERDICT bos audit: standard axioms
+   (slot: waited 0s; heavy 0, avail 50065 MB)
+   bos Lean threads for nanoda: 3
+/content/work/afc-final/bos-L2979Fc/stage/.lake/build/lib/lean/VerifierChallenge.olean.hash
+/content/work/afc-final/bos-L2979Fc/stage/.lake/build/lib/lean/VerifierChallenge.ilean.hash
+/content/work/afc-final/bos-L2979Fc/stage/.lake/build/lib/lean/VerifierChallenge.ilean
+/content/work/afc-final/bos-L2979Fc/stage/.lake/build/lib/lean/VerifierChallenge.olean
+/content/work/afc-final/bos-L2979Fc/stage/.lake/build/lib/lean/VerifierChallenge.trace
+/content/work/afc-final/bos-L2979Fc/stage/.lake/build/ir/VerifierChallenge.c.hash
+/content/work/afc-final/bos-L2979Fc/stage/.lake/build/ir/VerifierChallenge.setup.json
+/content/work/afc-final/bos-L2979Fc/stage/.lake/build/ir/VerifierChallenge.c
+=== nanoda START Tue Oct 20 17:56:07 UTC 2026 olean files: 448
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/afc-final/bos-L2979Fc/control/bin:$PATH; export PATH; exec comparator /content/work/afc-final/bos-L2979Fc/control/nanoda.json'
+=== nanoda END rc=0 wall=2199s Tue Oct 20 18:32:46 UTC 2026 maxrss_kb=15298652
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 449
+VERDICT bos nanoda: accepted
+BOS RUN END Tue Oct 20 18:33:12 UTC 2026
+BOS L2979Fc ALL AS EXPECTED
+EXIT 0
+BOS L2979Fcneg: L2979Fc Work.FourierL2979Fc.Main bound 17887046/10000000000 mode neg threads 3 START Tue Oct 20 18:33:12 UTC 2026
+verifier clone at c92b9b6; tracked changes: 0
+closure modules: 350; import lines rewritten: 568; bound 2466337/2000000000
+CONTROL PASS: packaging of Shea's C588 identical to nmamano's submission (350 files)
+CONTROL PASS: adapter body identical
+closure modules: 577; import lines rewritten: 1006; bound 8943523/5000000000
+staged lean files: 578; bytes: 17472227; largest: 1485529 /content/work/afc-final/bos-L2979Fcneg/stage/Submission/Work/XHostT/Data/H2979Fc/Calls.lean
+level chain: 577 modules -> 447 (23 merged groups holding 153 modules); PR files 449 (limit 500)
+files in the PR: 449 (limit 500); largest 3494965 bytes (limit 20000000); total 17508194 bytes (limit 150000000)
+verifier planning: 448 modules in 145 serial chains, acyclic
+visibility: 0 modules see local modules outside their group that they did not see before; 78 see earlier siblings of their group only; 0 see new external imports
+STATIC CHECK PASS
+files in the PR: 449 (limit 500); largest 3494965 bytes (limit 20000000); total 17508194 bytes (limit 150000000)
+verifier planning: 448 modules in 145 serial chains, acyclic
+visibility: 0 modules see local modules outside their group that they did not see before; 78 see earlier siblings of their group only; 0 see new external imports
+STATIC CHECK PASS
+MERGED: 577 -> 447 modules (map /content/work/afc-final/bos-L2979Fcneg/stage.merge-map.json)
+staged lean files after the merge: 448; bytes: 17508194; largest: 3494965 /content/work/afc-final/bos-L2979Fcneg/stage/Submission/Work/GCert/Data/Gen/S2979E/Merged1.lean
+profile challenge: challenges/dft/UniformFourier233.lean  expected sha256 3a646acd3ac9cf6ff93e29cc363dbfea0c8953a2e1415f7965bd86e8b2ee62a3
+/content/work/bos/bos-verifier/challenges/dft/UniformFourier233.lean: OK
+challenge bound 8943523 5000000000
+88ae04d8569ff80323ff13b4e5ed9bc44549289da0c85d46b222ba3c6f4fd356  /content/work/afc-final/bos-L2979Fcneg/stage/VerifierChallenge.lean
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/lib/lean/Submission.trace
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/lib/lean/Submission.ilean
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/lib/lean/Submission.olean.hash
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/lib/lean/VerifierChallenge.olean.hash
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/lib/lean/VerifierChallenge.ilean.hash
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/lib/lean/VerifierChallenge.ilean
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/lib/lean/Submission.olean
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/lib/lean/Submission.ilean.hash
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/lib/lean/VerifierChallenge.olean
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/lib/lean/VerifierChallenge.trace
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/ir/Submission.setup.json
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/ir/VerifierChallenge.c.hash
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/ir/VerifierChallenge.setup.json
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/ir/Submission.c
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/ir/Submission.c.hash
+/content/work/afc-final/bos-L2979Fcneg/stage/.lake/build/ir/VerifierChallenge.c
+reused the positive stage's Submission/* oleans (447)
+7.7G	/content/work/afc-final/bos-L2979Fcneg/stage/.lake/packages
+PREP DONE Tue Oct 20 18:36:29 UTC 2026
+   (slot: waited 0s; heavy 1, avail 49289 MB)
+   bos Lean threads for lean: 2
+=== lean START Tue Oct 20 18:36:29 UTC 2026 olean files: 447
+cmd: exec lake env /bin/sh -c 'PATH=/content/work/afc-final/bos-L2979Fcneg/control/bin:$PATH; export PATH; exec comparator /content/work/afc-final/bos-L2979Fcneg/control/lean.json'
+=== lean END rc=1 wall=147s Tue Oct 20 18:38:56 UTC 2026 maxrss_kb=6942436
+Some required targets logged failures:
+- Submission
+error: build failed
+uncaught exception: Child exited with 1
+olean files after: 448
+VERDICT bos negative (bound one grid step too high): rejected (expected)
+BOS RUN END Tue Oct 20 18:38:56 UTC 2026
+BOS L2979Fcneg ALL AS EXPECTED
+EXIT 0
+BOS L2979Fc (merged): EVERY VERDICT AS EXPECTED Tue Oct 20 18:38:56 UTC 2026
+EXIT 0

@@ -1,0 +1,324 @@
+{
+  "format": "certificate-package/1 (as community/*/result.json of jacobalansussman/wht-power-saving-lean)",
+  "name": "leverAFc",
+  "suffix": "L2979Fc",
+  "title": "The community's #2979 words with a re-allocated fill (every child-8/10 bin empty, no other idle rank-48 block: 16,576 literal heads) and the recursion lever (full cut: each head removed by all 48 of its axes, target 25; nothing to split), on the mixed-target recursion",
+  "statement": "OpenAI's UniformFourier statement (DFT of every length and convolution), only the exponent and seven names changed",
+  "numerator": 17887045,
+  "negative_numerator": 17887046,
+  "saving": "1.7887045e-3",
+  "exponent": "1 - 17887045/10^10",
+  "exponents": {
+    "statement": "1 - 17887045/10^10",
+    "seam_alpha": "1 - 1788704501/10^12",
+    "rate_point": "1 - 1788704502/10^12",
+    "mixed_root": "1.78870456430e-3"
+  },
+  "mode": "add",
+  "requires": [
+    "u8x0hq"
+  ],
+  "shares_files_with": [
+    "leverA (the words, the word stage, the hosted network, the dispatch, the heads-first certificate)",
+    "leverF (the full-cut bridge Work/Mixed/Bridge/CoreF.lean)"
+  ],
+  "lakefile_add": [],
+  "tree_change": "none: every new file is under Work/ (lean_lib Work) or comparator/",
+  "base": {
+    "repo": "https://github.com/shea256/fourier-transform-below-nlogn",
+    "commit": "52394849c7ecf3412d39b925d75fc7fdb98994d8",
+    "path": "lean/complex588",
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorems": [
+    "OAI.PowerSaving.transform_mainL2979Fc",
+    "OAI.PowerSaving.convolution_mainL2979Fc"
+  ],
+  "axiom_targets": [
+    "OAI.PowerSaving.transform_mainL2979Fc",
+    "OAI.PowerSaving.convolution_mainL2979Fc",
+    "OAI.PowerSaving.RAM.hillsL2979Fc_program",
+    "OAI.PowerSaving.MX.L2979Fc.engine",
+    "OAI.PowerSaving.MX.L2979Fc.EngineStmt.lift",
+    "OAI.PowerSaving.SeamL2979Fc.engine_L2979Fc",
+    "OAI.PowerSaving.RAM.envelope_program_geL2979Fc",
+    "OAI.PowerSaving.SeamL2979Fc.alphaL2979Fc_lt_target",
+    "OAI.PowerSaving.Skies.alpha_thetaL2979Fc"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "challenge_module": "Work.FourierL2979Fc.UniformFourierChallenge",
+  "negative_challenge_module": "Work.FourierL2979FcNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierL2979Fc.Main",
+  "axioms_file": "Work/FourierL2979Fc/Axioms.lean",
+  "exponent_definition": "OAI.PowerSaving.decimalExponentL2979Fc",
+  "build_targets": [
+    "Work.L2979Fc.Stmt",
+    "Work.L2979Fc.Engine",
+    "Work.FourierL2979Fc.Main",
+    "Work.FourierL2979Fc.UniformFourierChallenge",
+    "Work.FourierL2979FcNeg.UniformFourierChallenge",
+    "Work.FourierL2979Fc.Axioms"
+  ],
+  "lean_controls": [
+    {
+      "name": "heads-and-residuals-one-step-too-far",
+      "file": "controls/Heads2979FcNeg.lean",
+      "expect": "compiles",
+      "what": "Lean's kernel decides that the host table does not have 16,577 heads and that not every residual is at least 5"
+    },
+    {
+      "name": "rate-fact-one-grid-step-higher",
+      "file": "controls/Rate2979FcSharpCtl.lean",
+      "expect": "compiles",
+      "what": "the full cut's rate fact is false at 1 - 17887046/10^10 and at every larger saving (rate2979Fc_sharp, rate2979Fc_fails)"
+    },
+    {
+      "name": "16577-heads",
+      "file": "controls/NegHeads.lean",
+      "expect": "fails",
+      "what": "claims 16,577 heads; the kernel refutes it"
+    },
+    {
+      "name": "one-chunk-count-too-high",
+      "file": "controls/NegGlob.lean",
+      "expect": "fails",
+      "what": "claims one host-table chunk count one higher; the kernel refutes it"
+    },
+    {
+      "name": "one-other-rank48-block",
+      "file": "controls/NegF1.lean",
+      "expect": "fails",
+      "what": "claims one idle rank-48 block outside children 8 and 10; the kernel refutes it (there is none)"
+    }
+  ],
+  "lean_controls_extra": [
+    {
+      "name": "full-cut-profile-identity-negatives",
+      "file": "controls/Ctl2979Fc.lean",
+      "expect": "compiles",
+      "what": "the full-cut profile identity is false with one head fewer and for the unit profile of package/leverA's fill (whose heads removed still leave 11,614 rank-48 blocks); needs package/leverA's Inst2979H",
+      "needs": "package/leverA's overlay in the same tree (it imports Work/Mixed/Bridge/Inst2979H.lean)"
+    },
+    {
+      "name": "load-moved",
+      "file": "controls/perturbed/NegSome119.lean",
+      "expect": "fails",
+      "what": "the host-table piece of host kind 119 with one load moved; the kernel refutes it",
+      "needs": "the two perturbed tables of controls/side/ (Work/XHostT/Data/H2979Fcnload/Calls.lean, H2979Fcnwin/Calls.lean) copied into the tree and built"
+    },
+    {
+      "name": "window-moved-46",
+      "file": "controls/perturbed/NegSome46.lean",
+      "expect": "fails",
+      "what": "the host-table piece of host kind 46 with one record moved out of its window; the kernel refutes it",
+      "needs": "the two perturbed tables of controls/side/ (Work/XHostT/Data/H2979Fcnload/Calls.lean, H2979Fcnwin/Calls.lean) copied into the tree and built"
+    },
+    {
+      "name": "window-moved-334",
+      "file": "controls/perturbed/NegSome334.lean",
+      "expect": "fails",
+      "what": "the host-table piece of host kind 334 with one record moved out of its window; the kernel refutes it",
+      "needs": "the two perturbed tables of controls/side/ (Work/XHostT/Data/H2979Fcnload/Calls.lean, H2979Fcnwin/Calls.lean) copied into the tree and built"
+    },
+    {
+      "name": "unmoved-119",
+      "file": "controls/perturbed/NegNone119.lean",
+      "expect": "compiles",
+      "what": "the same piece unmoved checks",
+      "needs": "the two perturbed tables of controls/side/ (Work/XHostT/Data/H2979Fcnload/Calls.lean, H2979Fcnwin/Calls.lean) copied into the tree and built"
+    },
+    {
+      "name": "unmoved-46",
+      "file": "controls/perturbed/NegNone46.lean",
+      "expect": "compiles",
+      "what": "the same piece unmoved checks",
+      "needs": "the two perturbed tables of controls/side/ (Work/XHostT/Data/H2979Fcnload/Calls.lean, H2979Fcnwin/Calls.lean) copied into the tree and built"
+    },
+    {
+      "name": "unmoved-334",
+      "file": "controls/perturbed/NegNone334.lean",
+      "expect": "compiles",
+      "what": "the same piece unmoved checks",
+      "needs": "the two perturbed tables of controls/side/ (Work/XHostT/Data/H2979Fcnload/Calls.lean, H2979Fcnwin/Calls.lean) copied into the tree and built"
+    }
+  ],
+  "lean_controls_note": "scripts/build-and-check.sh runs lean_controls in a tree with this package and package/u8x0hq only. The controls under lean_controls_extra need more (each says what); all twelve control files were compiled on 20 Oct 2026 in the build machine's tree, which had both (logs/afc-final/C4/ctl.out). In the package as first assembled, all of them were under lean_controls (KNOWN-ISSUES.txt, item 14).",
+  "comparator": {
+    "positive": "overlay/comparator/fourier-l2979fc.json",
+    "negative": "overlay/comparator/fourier-l2979fc-neg.json"
+  },
+  "circuit": {
+    "community_pr": "#2979",
+    "head": "be191346 (merged; read on main bb4bccbf)",
+    "words_order_dispatch_template_providers": "#2979's, unchanged",
+    "fill": {
+      "file": "fill/FILL.json.gz",
+      "sha256": "7fc766c6c3e1561cee60b258138a918020b96d85ea782a2b01ad0ee035fd082e",
+      "profile_sha256": "5df7941120150492c64e62dc3362095eff3dfac9facff041ebb5c25b2e78f75e",
+      "rows": 271728,
+      "made_by": "#3815's per-tick Hall LP with the full cut's objective, a MIP on the generated columns, and #3815's reverse-time placement made tolerant (9 spare roles); fill/made-by/",
+      "hub_checks": "#2979's PR2839 owner engine (with its controls), verify.py, the complete replay's natives and admission steps, and the release's verify.py pass; rejected only by the strict-gain steps and check_cap.py's near-optimality bound, which compare its uniform figure 1.6897030e-3 with higher ones (fill/checks/hub/)"
+    },
+    "replicas": 74,
+    "calls": 666,
+    "arrays_W": 66304,
+    "roles": 271728,
+    "paid_profile_uniform": {
+      "1": 1630639,
+      "2": 470196,
+      "3": 154512,
+      "4": 71928,
+      "5": 11988,
+      "6": 5,
+      "7": 3,
+      "8": 5328,
+      "17": 8,
+      "19": 1,
+      "23": 25905,
+      "48": 16576
+    },
+    "idle_remainders": {
+      "1": 2269,
+      "6": 5,
+      "7": 3,
+      "17": 8,
+      "19": 1,
+      "23": 25905,
+      "48": 16576
+    },
+    "heads": 16576,
+    "heads_by_child": {
+      "8": 8288,
+      "10": 8288
+    },
+    "other_rank48": 0,
+    "paid_profile_full_cut": {
+      "1": 1630639,
+      "2": 470196,
+      "3": 154512,
+      "4": 71928,
+      "5": 11988,
+      "6": 5,
+      "7": 3,
+      "8": 5328,
+      "17": 8,
+      "19": 1,
+      "23": 25905
+    },
+    "targets_full_cut": {
+      "73": 49728,
+      "25": 16576
+    },
+    "max_paid_rank": 23,
+    "smallest_target": 25,
+    "uniform_figure_b_of_this_fill": "1.6897030e-3",
+    "community_figure_b": "1.7290340e-3",
+    "related": {
+      "leverA (every head kept, half cut)": "1.7564707e-3",
+      "leverF (#3945's words, every head kept, full cut)": "1.7806935e-3"
+    }
+  },
+  "modules": 280,
+  "checks": {
+    "build (20 Oct 2026, Colab C4; first built by afc-data and afc-cut)": {
+      "status": "pass",
+      "log": "logs/afc-final/C4/final.out",
+      "note": "a copy of the tree in which afc-data and afc-cut built every file (logs/afc-data/, logs/afc-cut/); the 282 overlay files and the 20 stage files installed identical (0 new); lake build 9503 jobs, all up to date"
+    },
+    "build from the release overlay (Colab C5)": {
+      "status": "pass",
+      "log": "logs/afc-final/C5/identC5.out",
+      "note": "Ryan Shea's tree with package/u8x0hq (prebuilt) plus this package's overlay/ (282 files, hash-checked), on a second machine: lake build 9503 jobs completed, 38 min; the final theorems' axioms are propext, Classical.choice, Quot.sound (logs/afc-final/C5/identC5/axioms-fresh.log)"
+    },
+    "axioms": {
+      "status": "pass",
+      "log": "logs/afc-final/C4/l2979fc/axioms.log",
+      "note": "9 theorems (the two final theorems and the chain's seven named steps; logs also l2979fc/axioms-extra.log): propext, Classical.choice, Quot.sound"
+    },
+    "source greps": {
+      "status": "pass",
+      "log": "logs/afc-final/C4/l2979fc/forbidden-grep.txt",
+      "note": "the 278 Lean files of this package's overlay other than the two challenge files (which hold OpenAI's own two sorry lines each): 0 lines with sorry or admit, 0 with axiom, native_decide, unsafe, implemented_by or extern (sorry-grep.txt)"
+    },
+    "source greps over the whole closure": {
+      "status": "pass",
+      "log": "logs/afc-final/C2/closure-grep/sorry-grep.txt",
+      "note": "every one of the 577 Lean files of the import closure as packaged for the verifier (Ryan Shea's, package/u8x0hq's and this package's; the challenge files are not part of it): 0 lines with sorry or admit, 0 with axiom, native_decide, unsafe, implemented_by or extern (C2/closure-grep/)"
+    },
+    "statement files derived from OpenAI's": {
+      "status": "pass",
+      "log": "logs/afc-final/C4/l2979fc/derived-FourierL2979Fc.lean",
+      "note": "both challenge files byte-identical to the derivation (17887045 and 17887046)"
+    },
+    "Compare.lean positive": {
+      "status": "pass",
+      "log": "logs/afc-final/C4/l2979fc/compare-pos.log",
+      "note": "RESULT: PASS, 77 s, 15.9 GB"
+    },
+    "Compare.lean negative": {
+      "status": "pass",
+      "log": "logs/afc-final/C4/l2979fc/compare-neg.log",
+      "note": "RESULT: FAIL on decimalExponentL2979Fc (one grid step higher, 1 - 17887046/10^10)"
+    },
+    "official comparator positive (stand-in sandbox)": {
+      "status": "pass",
+      "log": "logs/afc-final/C4/L2979Fc-cmp.out",
+      "note": "nanoda and Lean's kernel accept; 28 min, 14.6 GB (l2979fc/cmp/l2979fc-pos.log)"
+    },
+    "official comparator negative": {
+      "status": "pass",
+      "log": "logs/afc-final/C4/L2979Fc-cmp.out",
+      "note": "rejected: Const does not match (decimalExponentL2979Fc); 2 min"
+    },
+    "leaderboard verifier re-created offline (c92b9b6), merged stage (C5)": {
+      "status": "pass",
+      "log": "logs/afc-final/C5/bosM.out",
+      "note": "the import closure has 577 local modules, over the pull-request limit of 500; merged to 447 modules (449 files with Submission.lean and manifest.json), static check passed; Lean check from source 1 h 03 min (10.0 GB), axiom audit standard (2 min), nanoda 37 min; the bound one grid step higher is rejected"
+    },
+    "merged stage = built tree, constant by constant": {
+      "status": "pass",
+      "log": "logs/afc-final/C5/identC5.out",
+      "note": "h-bos's fast identity check on C5: the 21,665 non-auxiliary constants of the closure are identical in the merged stage and in the tree built from the release overlay, and so are the statements and proof terms of all 9,601 theorems (the adapter module aside)"
+    },
+    "leaderboard verifier re-created offline, unmerged stage (C2, sources only)": {
+      "status": "pass",
+      "log": "logs/afc-final/C2/bosU.out",
+      "note": "the 577-module form for the verifier's issue route (no file limit), compiled from sources only: Lean check 1 h 12 min, audit standard, nanoda 37 min; the bound one grid step higher is rejected"
+    },
+    "release controls": {
+      "status": "pass",
+      "log": "logs/afc-final/C4/ctl.out",
+      "note": "Heads2979FcNeg, Rate2979FcSharpCtl and Ctl2979Fc compile with their axioms; NegHeads, NegGlob, NegF1 and the perturbed pieces NegSome119, NegSome46, NegSome334 fail (Lean's decide refutes each); the unperturbed NegNone* compile"
+    },
+    "side modules (controls/side/)": {
+      "status": "pass",
+      "log": "logs/afc-final/C4/side/build.log",
+      "note": "R5Joint2979Fc (the rate fact against the recursion's rule, separation 23 < 25), FullCut2979Fc (the full-cut word from the head lemma; the split keeps the histogram), Rate2979FcSharp, and the schedule's side checks S2979FcHB, S2979FcHFW, S2979FcUnit, built in the same tree; standard axioms or fewer (the build log prints each theorem's axioms)"
+    },
+    "generators re-run (generators/REGENERATE.sh)": {
+      "status": "pass",
+      "log": "logs/regenerate/regenerate.out",
+      "note": "179 generated overlay files made again byte-identical; each generator refuses one step too far"
+    },
+    "price of the full cut, independent routes": {
+      "status": "pass",
+      "log": "fill/checks/price/hx-price-NOTE.md",
+      "note": "the full cut prices at 1.78870456430e-3 by three independent routes (exact rational enclosures on the 1e-24 grid, a 60-digit root, 70-digit interval arithmetic) and by the Lean rate generator's scan, whose largest grid numerator is 17887045 (17887046 refused)"
+    },
+    "the community's checks of #2979's line on this fill": {
+      "status": "pass",
+      "log": "fill/checks/hub/hx-admit-NOTE.md",
+      "note": "the community's own checks of #2979's line, unmodified, on this fill: #2979's PR2839 owner engine with its controls, verify.py, the complete replay's fresh natives and the admission's owner, lift, rebind, discovery and outer-ledger steps, and the release's verify.py pass; it is rejected only by the steps that ask for a higher uniform figure than the one it improves on (its uniform figure is 1.6897030e-3)"
+    },
+    "gate: the cut fact on these words": {
+      "status": "pass",
+      "log": "logs/afc-gate/GATE.md",
+      "note": "the 48-line cut fact on #2979's words (a head's 48 directions are the 48 lines the cut removes) compiled on its own first, on the design-A tree, with the heads-first certificate and the full-cut bundle at this fill's numbers"
+    }
+  }
+}

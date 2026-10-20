@@ -1,0 +1,50 @@
+IDENT C5 START Tue Oct 20 16:51:06 UTC 2026
+cp -a ours/T: 143s
+INSTALL L2979FcI: 282 new, 0 identical (skipped), from /content/work/afc-final/in/ov-install; hashes /content/work/afc-final/in-L2979FcI.sha256
+waiting for the merged bos lean verdict Tue Oct 20 16:53:30 UTC 2026
+VERDICT bos lean: accepted
+   (slot: waited 0s; heavy 0, avail 41585 MB)
+   LEAN_NUM_THREADS=2
+=== build START 17:54:31
+=== build END rc=0 wall=2263s maxrss_kb=9554692 18:32:14
+Build completed successfully (9503 jobs).
+   134s Work.GCert.Data.Gen.S2979BScB
+   126s Work.GCert.Data.Gen.S2979EScB
+   108s Work.Mixed.Prog.Sem
+   106s Work.L2979Fc.Stmt
+   104s Work.GCert.Data.Gen.S2979BScF
+   96s Work.GCert.Data.Gen.S2979EScF
+   76s Work.GCert.Data.Gen.S2979E.D3
+   65s Work.XHostD.HGeom
+=== nobuild START 18:32:14
+=== nobuild END rc=0 wall=29s maxrss_kb=1001296 18:32:43
+All targets up-to-date (9503 jobs).
+BUILD L2979FcI OK
+   (slot: waited 0s; heavy 0, avail 49439 MB)
+=== axioms-fresh START 18:32:43
+=== axioms-fresh END rc=0 wall=8s maxrss_kb=6897096 18:32:51
+'OAI.PowerSaving.transform_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL2979Fc_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+VERDICT fresh tree axioms: standard only
+   (slot: waited 0s; heavy 0, avail 50632 MB)
+FAST CHECK L2979Fc START Tue Oct 20 18:32:51 UTC 2026
+files in the PR: 449 (limit 500); largest 3494965 bytes (limit 20000000); total 17508194 bytes (limit 150000000)
+verifier planning: 448 modules in 145 serial chains, acyclic
+visibility: 0 modules see local modules outside their group that they did not see before; 78 see earlier siblings of their group only; 0 see new external imports
+STATIC CHECK PASS
+tree mode: root Work.FourierL2979Fc.Main, 577 modules; axioms of: OAI.PowerSaving.transform_mainL2979Fc OAI.PowerSaving.convolution_mainL2979Fc
+tree dump rc=0 206s: BosDump: 27167 constants of the closure written to /content/work/logs/afc-final/fast-L2979Fc/tree.tsv
+merged dump rc=0 220s: BosDump: 27152 constants of the closure written to /content/work/logs/afc-final/fast-L2979Fc/merged.tsv
+non-auxiliary constants: 21665 (original stage, 573 modules) vs 21665 (merged stage, 443 modules)
+auxiliary constants: 5502 (original) vs 5485 (merged); distinct contents 4284 vs 4284
+metaprogramming objects (notation parsers, macros; compared by type only): 1, value differs for 1
+theorems: 9601; same statement in both: all above; proof term identical for 9601, different for 0 (allowed)
+axioms of OAI.PowerSaving.convolution_mainL2979Fc: original ['Classical.choice', 'Quot.sound', 'propext'], merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+axioms of OAI.PowerSaving.transform_mainL2979Fc: original ['Classical.choice', 'Quot.sound', 'propext'], merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+axioms of Race.bound: original None, merged ['Classical.choice', 'Quot.sound', 'propext']: OK
+IDENTITY CHECK PASS
+FAST CHECK L2979Fc END Tue Oct 20 18:40:21 UTC 2026
+EXIT 0
+IDENT C5 END Tue Oct 20 18:40:21 UTC 2026
+EXIT 0

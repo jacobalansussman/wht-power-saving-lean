@@ -1,0 +1,42 @@
+GATE-LEAN START Tue Oct 20 15:10:37 UTC 2026 mode=ta host=70bbcce2940a
+AFC-TA-READY found (waited 0s)
+cp -a TA done in 36s
+CoreF sha256 7aa5f6c235e29642; HeadM1 caac2d8c18784a07; GeomInstW 715b89ef281b82b8
+source grep hits (doc comments only expected): 3
+Work/Gate/CutFact2979Fc.lean:22:Prepared with assistance from Claude.  No `sorry`.
+Work/Gate/CutFact2979FcRate.lean:9:Round wht45/afc (20 Oct 2026), agent afc-gate; prepared with assistance from Claude.  No `sorry`.
+Work/Mixed/Rate2979Fc.lean:22:No `sorry`, no `native_decide`.
+   (slot: waited 0s; heavy 0, avail 48921 MB)
+   LEAN_NUM_THREADS=8
+=== build1 START 15:11:13
+=== build1 END rc=0 wall=110s maxrss_kb=6877356 15:13:03
+info: Work/Gate/CutFact2979Fc.lean:189:0: 'OAI.PowerSaving.PB.Gate2979Fc.unitFc_ne_cutFc' depends on axioms: [propext]
+info: Work/Gate/CutFact2979Fc.lean:190:0: 'OAI.PowerSaving.PB.Gate2979Fc.bundle_Fc_hyp' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9309 jobs).
+   (slot: waited 0s; heavy 0, avail 48714 MB)
+=== build2 START 15:13:03
+=== build2 END rc=0 wall=37s maxrss_kb=6909632 15:13:40
+info: Work/Gate/CutFact2979FcRate.lean:49:0: 'OAI.PowerSaving.PB.Gate2979Fc.cutFc_eq' does not depend on any axioms
+info: Work/Gate/CutFact2979FcRate.lean:50:0: 'OAI.PowerSaving.PB.Gate2979Fc.bundle_Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9313 jobs).
+   (slot: waited 0s; heavy 0, avail 48758 MB)
+=== ax1 START 15:13:40
+=== ax1 END rc=0 wall=10s maxrss_kb=6904496 15:13:50
+Work/Gate/CutFact2979Fc.lean:67:22: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+'OAI.PowerSaving.PB.Gate2979Fc.bph_cutF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.PB.Gate2979Fc.bph_cutF2979' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.PB.Gate2979Fc.cutTgt_rank25' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.PB.Gate2979Fc.xnetGeomW_cut_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.PB.Gate2979Fc.hcutF_Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.PB.Gate2979Fc.unitFc_48' depends on axioms: [propext]
+'OAI.PowerSaving.PB.Gate2979Fc.hcutF_Fc_fewer' depends on axioms: [propext]
+'OAI.PowerSaving.PB.Gate2979Fc.unitFc_ne_cutFc' depends on axioms: [propext]
+'OAI.PowerSaving.PB.Gate2979Fc.bundle_Fc_hyp' depends on axioms: [propext, Classical.choice, Quot.sound]
+   (slot: waited 0s; heavy 0, avail 48637 MB)
+=== ax2 START 15:13:50
+=== ax2 END rc=0 wall=9s maxrss_kb=6881120 15:13:59
+'OAI.PowerSaving.PB.Gate2979Fc.cutFc_eq' does not depend on any axioms
+'OAI.PowerSaving.PB.Gate2979Fc.bundle_Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+axiom lines: 10 with-axioms + 1 none; standard-subset lines: 11
+GATE-LEAN ALL AS EXPECTED Tue Oct 20 15:13:59 UTC 2026
+EXIT 0

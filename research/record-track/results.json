@@ -1229,7 +1229,7 @@
    "id": "record-track/61",
    "statement": "The full cut on design B (#3945 with every head kept): the Fourier transform of every length, and convolution, in OpenAI's statement at 1 - 17806935/10^10; the 80,640 heads removed (job 25 on their arrays) and the other 57,312 idle rank-48 blocks split 24 + 24, so that every paid rank is at most 24 < 25.",
    "status": "proved in Lean",
-   "status_detail": "*proved in Lean* at 1.7806935e-3 (`package/leverF`), the headline of this revision: only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it with both kernels in a stand-in sandbox (not the real Landlock one) and rejected one unit higher; the leaderboard's verifier, re-created offline, accepted the merged and the unmerged forms; this repository's scripts passed on it from a fresh clone; three AI skeptics upheld it; no person has read it",
+   "status_detail": "*proved in Lean* at 1.7806935e-3 (`package/leverF`), the headline of the fifth revision: only the three standard axioms; Compare.lean PASS on the claim and FAIL one unit higher; the official comparator accepted it with both kernels in a stand-in sandbox (not the real Landlock one) and rejected one unit higher; the leaderboard's verifier, re-created offline, accepted the merged and the unmerged forms; this repository's scripts passed on it from a fresh clone; three AI skeptics upheld it; no person has read it",
    "date": "2026-10-19",
    "figure": 0.0017806935,
    "circuit": "#3945 with every head kept (design B)",
@@ -1255,9 +1255,9 @@
   },
   {
    "id": "record-track/62",
-   "statement": "A-fc: #2979's words, order and dispatch unchanged, with the table of helper storage re-solved for the full cut (class solution of a mixed-integer program, tolerant placement with the construction of #3815 by Erwan Secousses / ChaloupeMusic, 9 spare roles): the full cut prices at b = 1.7887046e-3, above the Lean result 1.7806935e-3 on #3945.",
-   "status": "checked by computer",
-   "status_detail": "*checked by computer*: price by three routes agreeing to 3e-60, grid figure 17887045/10^10 holds and one step higher fails; 16,576 heads by three counters; every paid rank at most 23 < 25 (no other rank-48 block, so nothing is split); the fill re-created byte for byte from its class solution; every check of #2979's line run unmodified on a fresh clone at 12fa8c5c passes except the strict-gain steps, which reject it by design (its own no-lever figure is 1.6897030e-3); Theorem 1G and the general full-cut theorem are proved in Lean (package/leverF), but in this table's instance the heads-first certificate and the rate fact 17887045/10^10 are checked by computer and the cut fact on #2979's words is *argued by hand, not checked*, from the template it shares with #3945 (where it is proved in Lean); *not proved in Lean*; kappa not claimed (bit side about 1.7334e-3)",
+   "statement": "A-fc: #2979's words, order and dispatch unchanged, with the table of helper storage re-solved for the full cut (class solution of a mixed-integer program, tolerant placement with the construction of #3815 by Erwan Secousses / ChaloupeMusic, 9 spare roles): the full cut prices at b = 1.7887046e-3 (the price 1.78870456e-3, rounded) and is proved in Lean at 1.7887045e-3, above the Lean result 1.7806935e-3 on #3945.",
+   "status": "proved in Lean",
+   "status_detail": "*proved in Lean* at 1.7887045e-3 (package/leverAFc, 20 Oct 2026: OpenAI's statement at 1 - 17887045/10^10; the table's heads-first certificate, the rate fact and the cut fact on #2979's words are in the proof; comparator accepted, the re-created leaderboard verifier accepted the merged and the unmerged forms, three skeptics upheld it); the computed root 1.78870456e-3, rounded to 1.7887046e-3, is *not proved in Lean* (the rate fact is false there, and Lean proves that); *checked by computer*: price by three routes agreeing to 3e-60; 16,576 heads by three counters; every paid rank at most 23 < 25 (no other rank-48 block, so nothing is split); the fill re-created byte for byte from its class solution; every check of #2979's line run unmodified on a fresh clone at 12fa8c5c passes except the strict-gain steps, which reject it by design (its own no-lever figure is 1.6897030e-3); in the fifth revision this finding was *checked by computer* only, with the cut fact on #2979's words *argued by hand, not checked*; kappa not claimed (bit side about 1.7334e-3)",
    "date": "2026-10-20",
    "figure": 0.0017887045,
    "circuit": "#2979's words with a re-solved table (A-fc)",
@@ -1269,7 +1269,8 @@
     },
     "price": "1.7887045643e-3",
     "uniform_hub_b": "1.6897030e-3",
-    "spare_roles": 9
+    "spare_roles": 9,
+    "lean_numerator": 17887045
    },
    "programs": [
     "programs/a-fc/"
@@ -1278,7 +1279,8 @@
     "data/a-fc/"
    ],
    "evidence": [
-    "data/a-fc/README.md"
+    "data/a-fc/README.md",
+    "../../package/leverAFc/"
    ],
    "supersedes": [],
    "superseded_by": null,
@@ -1291,7 +1293,7 @@
    "id": "record-track/open-1",
    "question": "Build the full cut (heads removed, job 25; every other rank-48 block split 24 + 24; separated, 24 < 25) on design A (#2979 with every head kept); it is built on design B (record-track/61).",
    "worth": 0.0017797095,
-   "worth_detail": "1.7797095e-3 on design A, 1.7744822e-3 on #2979's published fill (prices); built on design B at 1.7806935e-3",
+   "worth_detail": "1.7797095e-3 on design A, 1.7744822e-3 on #2979's published fill (prices); built on design B at 1.7806935e-3; its value is now passed by A-fc (record-track/62), a table re-solved for the full cut on the same words, proved in Lean at 1.7887045e-3",
    "first_experiment": "Generate design A's full-cut instance on the general full-cut bridge of package/leverF (Work/Mixed/Bridge/CoreF.lean): the instance file, the rate module at the largest grid numerator and the Fourier chain at its exponent, on design A's built tree; then the release checks.",
    "programs": [
     "programs/lever-prices/lever_table.py"

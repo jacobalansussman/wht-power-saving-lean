@@ -1,0 +1,44 @@
+[
+  {
+    "name": "bind",
+    "seconds": 2.005630707993987,
+    "exit_code": 0,
+    "log_sha256": "71f679ce5a123fb58397fd6852ba64ce3832fd20e81a096bfda9a1cf3237237a"
+  },
+  {
+    "name": "emit",
+    "seconds": 51.578669487003936,
+    "exit_code": 0,
+    "log_sha256": "7b6eaba5849836a5cd6ba7e86780a753d6d479b46bf4eac236b6aa9620f26849"
+  },
+  {
+    "name": "audit",
+    "seconds": 186.97676542800036,
+    "exit_code": 0,
+    "log_sha256": "7f0d264b8b07fc3ec0d9bbf1e6b2e08222f60038a7a771750ab6b7de30863116"
+  },
+  {
+    "name": "invoice",
+    "seconds": 10.135229053994408,
+    "exit_code": 0,
+    "log_sha256": "d8a316d4c786fb5f9ce83eaa7e39894478d952d5cdc462decf2980f6697011fd"
+  },
+  {
+    "name": "assembly",
+    "seconds": 1.5862077269994188,
+    "exit_code": 0,
+    "log_sha256": "af3d766fb9fdfd9e3da56fe02b5989f9324ee38166a09f3859ffd22ef5affd3e"
+  },
+  {
+    "name": "freeze",
+    "seconds": 0.3125090370012913,
+    "exit_code": 0,
+    "log_sha256": "c371aaf4d7d1c644de8f24d7ee4ad24d4b491c350d39a6fb7c863b08bf2fb01b"
+  },
+  {
+    "name": "independent",
+    "seconds": 15.37402180400386,
+    "exit_code": 0,
+    "log_sha256": "d2c176fb1b9778e4fb8b98b6272d5f713d676ea3fed84da20213eca036bb58fe"
+  }
+]

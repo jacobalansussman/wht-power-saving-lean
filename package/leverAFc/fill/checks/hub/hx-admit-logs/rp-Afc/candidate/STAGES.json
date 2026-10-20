@@ -1,0 +1,93 @@
+[
+  {
+    "command": [
+      "/content/work/hx-admit/vA/bin/python",
+      "-B",
+      "/content/work/hx-admit/rp-Afc/candidate/package/reconstruct.py",
+      "--out",
+      "/content/work/hx-admit/rp-Afc/candidate/owners"
+    ],
+    "exit_code": 0,
+    "log_sha256": "6fc6bb62a51cfed52b1fd1fd346ec7cff186217cc2732e833762926f2d5be147",
+    "name": "owners",
+    "script_sha256": "5472811c24aef3852dc7e189dff5060076a6c0b25bfde928da50dcfe9b5bdc15",
+    "seconds": 11.633924035995733
+  },
+  {
+    "command": [
+      "/content/work/hx-admit/vA/bin/python",
+      "-B",
+      "/content/work/hx-admit/rp-Afc/candidate/package/lift_parent.py",
+      "--package",
+      "/content/work/hx-admit/rp-Afc/candidate/package",
+      "--owners",
+      "/content/work/hx-admit/rp-Afc/candidate/owners",
+      "--out",
+      "/content/work/hx-admit/rp-Afc/candidate/parent-data"
+    ],
+    "exit_code": 0,
+    "log_sha256": "7b6249a123ca39fae7b7a6339dd9e8ae8777b081f4336418f2cc101704b70644",
+    "name": "parent-lift",
+    "script_sha256": "9a1edd7d4ab4a2f2ac8d15b42b7e40f93653d65026bac59e4c1ce80b486bd60e",
+    "seconds": 30.69889251400309
+  },
+  {
+    "command": [
+      "/content/work/hx-admit/vA/bin/python",
+      "-B",
+      "/content/work/hx-admit/rp-Afc/candidate/package/new/rebind.py",
+      "/content/work/hx-admit/rp-Afc/candidate/package",
+      "/content/work/hx-admit/rp-Afc/native/native-cache/abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d/local",
+      "/content/work/hx-admit/rp-Afc/native/native-cache/e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7/local",
+      "/content/work/hx-admit/rp-Afc/candidate/rebound"
+    ],
+    "exit_code": 0,
+    "log_sha256": "5eea12aff0e951dc348b206765868af371bcba7d9f7050d3f5a7dec523c70c14",
+    "name": "rebind",
+    "script_sha256": "52f8b4cec2dab69cbe590e1fd0f7a68e1b35de5a540bd22fd2adfce07a92b46b",
+    "seconds": 4.353805751001346
+  },
+  {
+    "command": [
+      "/content/work/hx-admit/vA/bin/python",
+      "-B",
+      "/content/work/hx-admit/rp-Afc/candidate/layout/packing74/replay.py",
+      "--data",
+      "/content/work/hx-admit/rp-Afc/candidate/layout/packing74/candidate",
+      "--work",
+      "/content/work/hx-admit/rp-Afc/candidate/discovery",
+      "--local",
+      "/content/work/hx-admit/rp-Afc/native/native-cache/abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d/local",
+      "--discover"
+    ],
+    "exit_code": 0,
+    "log_sha256": "e3f3d06f5aa124ab4fa9137e896a3ff75da94e5357e29748c0817b4f96d60857",
+    "name": "discovery",
+    "script_sha256": "4f5c0926b70edb5aef3af0f8a8d9fa8119fa7af6603df1721c0dc31760b08254",
+    "seconds": 280.88266603500233
+  },
+  {
+    "command": [
+      "/content/work/hx-admit/vA/bin/python",
+      "-B",
+      "/content/work/hx-admit/rp-Afc/candidate/package/outer/check_ledger.py"
+    ],
+    "exit_code": 0,
+    "log_sha256": "38e97657927592cb077ecf3dbaac300ea182da035e6a6c43a04a5f4c9b032c87",
+    "name": "outer-check_ledger.py",
+    "script_sha256": "1dd56009986eb14dd6603c9193c7ad71dd45c7d005bf71c9cd3f916e66f54d98",
+    "seconds": 0.5317832019936759
+  },
+  {
+    "command": [
+      "/content/work/hx-admit/vA/bin/python",
+      "-B",
+      "/content/work/hx-admit/rp-Afc/candidate/package/outer/independent_check.py"
+    ],
+    "exit_code": 0,
+    "log_sha256": "b4d2a608f0749e542921de97525a78a1c7629d45018a87245db4d65390eb3b96",
+    "name": "outer-independent_check.py",
+    "script_sha256": "a5a0361539ec7cae9eb6c0371f857919335a1720040f22af291aa3e34fc864c7",
+    "seconds": 0.204881119003403
+  }
+]

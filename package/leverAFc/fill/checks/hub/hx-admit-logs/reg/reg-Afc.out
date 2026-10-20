@@ -1,0 +1,14 @@
+PASS verify.py PASS_RANK7_JOINT_ENDFRAMES_THREE_STAGE_REPLAY controls 86 seconds 207.1
+Traceback (most recent call last):
+  File "/content/work/hx-admit/reg/Afc/rank7-joint-endframes/check_allocation.py", line 118, in <module>
+    main()
+  File "/content/work/hx-admit/reg/Afc/rank7-joint-endframes/check_allocation.py", line 105, in main
+    exact = moment.run(base, base / 'baseline')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/work/hx-admit/reg/Afc/rank7-joint-endframes/tools/audit_allocation_moment.py", line 65, in run
+    need(target>prior and target<F(lo,q),'strict frontier improvement and lower endpoint')
+  File "/content/work/hx-admit/reg/Afc/rank7-joint-endframes/tools/audit_allocation_moment.py", line 20, in need
+    if not c:raise ValueError(m)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: strict frontier improvement and lower endpoint
+

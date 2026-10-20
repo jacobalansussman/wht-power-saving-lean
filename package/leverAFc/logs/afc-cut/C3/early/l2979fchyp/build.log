@@ -1,0 +1,418 @@
+ℹ [9013/9044] Replayed Work.Scratch.Engine
+info: Work/Scratch/Engine.lean:1522:0: 'OAI.PowerSaving.RAM.recurse_runS' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1523:0: 'OAI.PowerSaving.RAM.engine_all_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1524:0: 'OAI.PowerSaving.RAM.engine_program_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1525:0: 'OAI.PowerSaving.RAM.hills_program_via_scratch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1526:0: 'OAI.PowerSaving.RAM.LiveKernel.iff_erase_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1527:0: 'OAI.PowerSaving.RAM.no_erase_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1528:0: 'OAI.PowerSaving.RAM.Route.gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1529:0: 'OAI.PowerSaving.RAM.LiveKernel.of_route' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1530:0: 'OAI.PowerSaving.RAM.endpoint_reversible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1531:0: 'OAI.PowerSaving.RAM.endpoint_by_copy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1532:0: 'OAI.PowerSaving.two_stage_rate_28' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1533:0: 'OAI.PowerSaving.two_stage_rate_33' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1534:0: 'OAI.PowerSaving.RAM.two_stage_h24_if_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Scratch/Engine.lean:1535:0: 'OAI.PowerSaving.RAM.allotC_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9014/9044] Replayed Work.L2979Fc.Stmt
+info: Work/L2979Fc/Stmt.lean:49:0: 'OAI.PowerSaving.MX.L2979Fc.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9015/9044] Replayed Work.Block.Split
+warning: Work/Block/Split.lean:67:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:67:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:67:32: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:68:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:68:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:75:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:80:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:82:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:88:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:89:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:109:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:109:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:109:32: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:110:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Split.lean:110:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:110:32: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:111:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Split.lean:111:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+info: Work/Block/Split.lean:257:0: 'OAI.PowerSaving.Binary.blockMat_eq_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Split.lean:258:0: 'OAI.PowerSaving.Binary.exists_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Split.lean:259:0: 'OAI.PowerSaving.Binary.linearIndependent_of_orthonormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9016/9044] Replayed Work.Block.Peel
+warning: Work/Block/Peel.lean:118:11: `if_neg` has been deprecated: Use `ite_eq_right` instead
+info: Work/Block/Peel.lean:133:0: 'OAI.PowerSaving.Binary.Split.act' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9017/9044] Replayed Work.Block.Address
+warning: Work/Block/Address.lean:70:20: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Work/Block/Address.lean:181:0: 'OAI.PowerSaving.RAM.Gear.from_gridB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Address.lean:182:0: 'OAI.PowerSaving.RAM.Gear.to_gridB' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9019/9044] Replayed Work.Block.Batches
+info: Work/Block/Batches.lean:353:0: 'OAI.PowerSaving.RAM.Rig.open_blockB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Batches.lean:354:0: 'OAI.PowerSaving.RAM.Rig.sweepB' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9020/9044] Replayed Work.Block.Recursion
+warning: Work/Block/Recursion.lean:52:14: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: Work/Block/Recursion.lean:56:14: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: Work/Block/Recursion.lean:270:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Recursion.lean:337:40: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Recursion.lean:348:39: `if_neg` has been deprecated: Use `ite_eq_right` instead
+info: Work/Block/Recursion.lean:386:0: 'OAI.PowerSaving.RAM.amplifyB' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Recursion.lean:387:0: 'OAI.PowerSaving.RAM.recurse_runB' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9021/9044] Replayed WHTCheck.Solution
+info: WHTCheck/Solution.lean:468:0: 'OAI.PowerSaving.RAM.hills_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:469:0: 'OAI.PowerSaving.WHT.wht_can' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:470:0: 'OAI.PowerSaving.WHT.wht_program_internal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:471:0: 'OAI.PowerSaving.WHT.wht_main' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WHTCheck/Solution.lean:472:0: OAI.PowerSaving.WHT.wht_can : ∀ (cl : OAI.PowerSaving.RAM.Paint) (m : Bool) {ι : Type u_1} (k : ι → ℕ)
+  (v : (i : ι) → OAI.PowerSaving.Binary.Bits (k i) → ℂ),
+  OAI.PowerSaving.RAM.Can m (fun i => 2 ^ k i) (OAI.PowerSaving.RAM.simIn cl) (OAI.PowerSaving.RAM.bundle cl)
+    (fun i => OAI.PowerSaving.RAM.givenBits cl (k i) (v i))
+    (fun i => (OAI.PowerSaving.Binary.bits (k i)).tape (Matrix.mulVec (OAI.PowerSaving.Binary.wal (Fin (k i))) (v i)))
+    fun i => 2 ^ k i * OAI.PowerSaving.hills (k i)
+info: WHTCheck/Solution.lean:473:0: OAI.PowerSaving.WHT.wht_main : OAI.PowerSaving.WHT.WHTGoal
+info: WHTCheck/Solution.lean:474:0: def OAI.PowerSaving.WHT.WHTGoal : Prop :=
+∃ solve W, OAI.PowerSaving.WHT.WHTProgram solve W ∧ OAI.PowerSaving.WHT.WHTTimeBounds W
+⚠ [9022/9044] Replayed Work.Mixed.SeamConst
+warning: Work/Mixed/SeamConst.lean:55:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Work/Mixed/SeamConst.lean:55:18: Unused tactic linter: `linarith` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: Work/Mixed/SeamConst.lean:89:0: 'OAI.PowerSaving.MX.dom_envelope_of_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:90:0: 'OAI.PowerSaving.MX.can_envelope_of_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:91:0: 'OAI.PowerSaving.MX.envelope_nat_real_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:92:0: 'OAI.PowerSaving.MX.can_envelope_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9023/9044] Built Work.FourierL2979Fc.UniformFourierChallenge (7.2s)
+warning: Work/FourierL2979Fc/UniformFourierChallenge.lean:326:8: declaration uses `sorry`
+warning: Work/FourierL2979Fc/UniformFourierChallenge.lean:330:8: declaration uses `sorry`
+⚠ [9024/9044] Built Work.FourierL2979FcNeg.UniformFourierChallenge (7.2s)
+warning: Work/FourierL2979FcNeg/UniformFourierChallenge.lean:326:8: declaration uses `sorry`
+warning: Work/FourierL2979FcNeg/UniformFourierChallenge.lean:330:8: declaration uses `sorry`
+ℹ [9025/9044] Replayed Work.Block.Engine
+info: Work/Block/Engine.lean:317:0: 'OAI.PowerSaving.RAM.allotB_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Engine.lean:318:0: 'OAI.PowerSaving.RAM.engine_all_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Engine.lean:319:0: 'OAI.PowerSaving.RAM.engine_program_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9026/9044] Replayed Work.Block.Bridge
+info: Work/Block/Bridge.lean:306:0: 'OAI.PowerSaving.RAM.engine_program_block_costR' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Bridge.lean:307:0: 'OAI.PowerSaving.RAM.engine_program_block_of_tally' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Bridge.lean:308:0: 'OAI.PowerSaving.RAM.hills_program_via_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Bridge.lean:309:0: 'OAI.PowerSaving.Binary.SwapEq.walk_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9027/9044] Replayed Work.Block.Frames
+warning: Work/Block/Frames.lean:68:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Frames.lean:68:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Frames.lean:243:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Frames.lean:248:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Frames.lean:250:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Frames.lean:252:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Frames.lean:275:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Frames.lean:280:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Frames.lean:282:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Frames.lean:284:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+info: Work/Block/Frames.lean:327:0: 'OAI.PowerSaving.Binary.OBase.deltas_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Frames.lean:328:0: 'OAI.PowerSaving.Binary.OBase.reframe_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9028/9044] Replayed Work.Block.Paths
+warning: Work/Block/Paths.lean:345:55: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: Work/Block/Paths.lean:358:16: This simp argument is unused:
+  Function.update_of_ne hr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finset.mem_insert, hr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Work/Block/Paths.lean:416:0: 'OAI.PowerSaving.RAM.BRoute.parallel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Paths.lean:417:0: 'OAI.PowerSaving.RAM.BRoute.liveKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Paths.lean:418:0: 'OAI.PowerSaving.RAM.BPath.reframe' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Paths.lean:419:0: 'OAI.PowerSaving.RAM.engine_program_broute' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9029/9044] Replayed Work.Block.Extras
+warning: Work/Block/Extras.lean:49:43: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: Work/Block/Extras.lean:54:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: Work/Block/Extras.lean:59:42: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+info: Work/Block/Extras.lean:104:0: 'OAI.PowerSaving.RAM.allotB_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Extras.lean:105:0: 'OAI.PowerSaving.RAM.BRoute.shifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/Extras.lean:106:0: 'OAI.PowerSaving.RAM.demo_block_engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9030/9044] Replayed Work.Block.WHT
+info: Work/Block/WHT.lean:213:0: 'OAI.PowerSaving.BlockWHT.wht_main_of_engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Block/WHT.lean:214:0: 'OAI.PowerSaving.BlockWHT.wht_main_of_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9031/9044] Built Work.FourierL2979Fc.Goal (5.6s)
+ℹ [9032/9044] Built Work.FourierL2979Fc.Seam (6.4s)
+info: Work/FourierL2979Fc/Seam.lean:156:0: 'OAI.PowerSaving.RAM.hillsL2979Fc_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979Fc/Seam.lean:157:0: 'OAI.PowerSaving.RAM.envelope_program_geL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979Fc/Seam.lean:158:0: 'OAI.PowerSaving.SeamL2979Fc.alphaL2979Fc_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979Fc/Seam.lean:159:0: 'OAI.PowerSaving.hillsL2979Fc_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9033/9044] Built Work.FourierL2979Fc.SectorAlgorithm (6.9s)
+warning: Work/FourierL2979Fc/SectorAlgorithm.lean:85:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.MattingL2979Fc.transfer`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/SectorAlgorithm.lean:90:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.MattingL2979Fc.kitOf`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/SectorAlgorithm.lean:126:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.WeftL2979Fc.kitOf`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/SectorAlgorithm.lean:130:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.WeftL2979Fc.stowOf`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9034/9044] Built Work.FourierL2979Fc.SynchronizedAlgorithm (6.3s)
+warning: Work/FourierL2979Fc/SynchronizedAlgorithm.lean:35:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.tapeCongrL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/SynchronizedAlgorithm.lean:93:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.ThicketL2979Fc.transfer`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/SynchronizedAlgorithm.lean:99:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.ThicketL2979Fc.digitize`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9035/9044] Built Work.FourierL2979Fc.WorkingTransform (6.3s)
+warning: Work/FourierL2979Fc/WorkingTransform.lean:42:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.Fen.chartTL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9036/9044] Built Work.FourierL2979Fc.WorkingCompiler (7.2s)
+warning: Work/FourierL2979Fc/WorkingCompiler.lean:39:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.haloSpringsL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/WorkingCompiler.lean:68:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.FoundryL2979Fc.transfer`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/WorkingCompiler.lean:75:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.FoundryL2979Fc.nickL`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/WorkingCompiler.lean:77:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.FoundryL2979Fc.archE`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/WorkingCompiler.lean:89:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.FoundryL2979Fc.unitM`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9037/9044] Built Work.FourierL2979Fc.WorkingPreparation (8.1s)
+warning: Work/FourierL2979Fc/WorkingPreparation.lean:45:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.shiftPL2979Fc.stepP`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/WorkingPreparation.lean:94:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.Neaps.n_ltL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/WorkingPreparation.lean:101:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.Neaps.layersGL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/WorkingPreparation.lean:104:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.Neaps.layersSL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/WorkingPreparation.lean:138:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.Neaps.ratioSqL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/WorkingPreparation.lean:149:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.Neaps.ladeGrainL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9038/9044] Built Work.FourierL2979Fc.ArbitraryLength (7.7s)
+warning: Work/FourierL2979Fc/ArbitraryLength.lean:35:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.surf_degL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ArbitraryLength.lean:43:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.SwiftL2979Fc.of_moves`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ArbitraryLength.lean:46:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.SwiftL2979Fc.of_dry`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ArbitraryLength.lean:72:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.signPL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ArbitraryLength.lean:78:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.table_scaleL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ArbitraryLength.lean:91:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.CruiseL2979Fc.transfer`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ArbitraryLength.lean:95:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.CruiseL2979Fc.volume_ge`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ArbitraryLength.lean:97:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.CruiseL2979Fc.volume_lt`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ArbitraryLength.lean:138:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.CruiseL2979Fc.pearl`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9039/9044] Built Work.FourierL2979Fc.TransformProgram (8.0s)
+warning: Work/FourierL2979Fc/TransformProgram.lean:33:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.Dry.linearPowL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/TransformProgram.lean:77:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.fairwind_leftL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/TransformProgram.lean:87:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.BreezyL2979Fc.congr`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9040/9044] Built Work.FourierL2979Fc.ConvolutionProgram (6.8s)
+warning: Work/FourierL2979Fc/ConvolutionProgram.lean:33:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.polyOf_mulL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ConvolutionProgram.lean:55:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.polyOf_coeff_exactL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ConvolutionProgram.lean:64:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.crossTL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/ConvolutionProgram.lean:77:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.stretch_posL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9041/9044] Built Work.FourierL2979Fc.UniformBounds (6.0s)
+warning: Work/FourierL2979Fc/UniformBounds.lean:64:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.BreezyL2979Fc.ration`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/UniformBounds.lean:101:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.RAM.Bench.onlyLength_numL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9042/9044] Built Work.FourierL2979Fc.Asymptotics (8.8s)
+warning: Work/FourierL2979Fc/Asymptotics.lean:34:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.Skies.TtopL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/Asymptotics.lean:36:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.Skies.log2_minL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/Asymptotics.lean:134:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.Skies.dwarfL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9043/9044] Built Work.FourierL2979Fc.Main (7.5s)
+warning: Work/FourierL2979Fc/Main.lean:53:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.Skies.multiplier_rangeL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/Main.lean:82:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.Skies.decimal_rangeL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Work/FourierL2979Fc/Main.lean:174:0: automatically included section variable(s) unused in theorem `OAI.PowerSaving.matrix_definitionL2979Fc`:
+  hE_L2979Fc
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hE_L2979Fc in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ℹ [9044/9044] Built Work.FourierL2979Fc.Axioms (5.7s)
+info: Work/FourierL2979Fc/Axioms.lean:2:0: 'OAI.PowerSaving.transform_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979Fc/Axioms.lean:3:0: 'OAI.PowerSaving.convolution_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979Fc/Axioms.lean:4:0: 'OAI.PowerSaving.RAM.hillsL2979Fc_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9044 jobs).

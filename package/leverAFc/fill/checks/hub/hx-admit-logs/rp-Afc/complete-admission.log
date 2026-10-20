@@ -1,0 +1,14 @@
+PASS owners
+PASS parent-lift
+PASS rebind
+PASS discovery
+PASS outer-check_ledger.py
+PASS outer-independent_check.py
+Traceback (most recent call last):
+  File "/content/work/hx-admit/rp-Afc/adapters/admit_extension.py", line 419, in <module>
+    main()
+  File "/content/work/hx-admit/rp-Afc/adapters/admit_extension.py", line 388, in main
+    need(kappa == C-Q(1,10**70)-Q(1,10**46) and kappa > previous,
+  File "/content/work/hx-admit/rp-Afc/adapters/admit_extension.py", line 85, in need
+    raise RuntimeError(why)
+RuntimeError: candidate must strictly improve full exact pinned frontier headline before full release

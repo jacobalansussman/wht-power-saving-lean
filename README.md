@@ -1,4 +1,4 @@
-# Discrete Fourier transform of every length in O(n (log n)^z), z = 1 - 1.7806935e-3, checked in Lean
+# Discrete Fourier transform of every length in O(n (log n)^z), z = 1 - 1.7887045e-3, checked in Lean
 
 Author: Jacob Sussman. Repository: https://github.com/jacobalansussman/wht-power-saving-lean. Licence: Apache-2.0 ([LICENSE](LICENSE), [NOTICE](NOTICE)).
 
@@ -8,31 +8,42 @@ statement, from their "Exact Fourier transforms below n log n" ([openai/math](ht
 family 130). The cost model is theirs too: a random-access machine (RAM) with exact arithmetic. I call 1 - z
 *the saving*. OpenAI's statement has a saving of 10^-13.
 
-**The new result.** On 19 October 2026 I proved the saving 1.7807e-3, exactly
-z = 1 - 17806935/10^10, for the Fourier transform of every length. OpenAI's statement file also states
-convolution, and that is proved at the same exponent. It is built on the community's circuit [#3945](https://github.com/CrocSwap/integer-mult-bounds/pull/3945), Dugongue's,
-with two steps of mine: I re-solved its table of where helper storage goes with the community's own programs, so
-that every head is kept, and the main one, the *recursion lever*, here in its full form (the *full cut*). The saving is above every complex-side construction claimed by others on the community's repository, proved or not (the complex side is the part of their figure that measures the same
-thing as my saving; some research notes there print higher ceilings or targets, which are not constructions), and 9.54 % above my own previous Lean-checked saving,
-1.6256629e-3, which is published here for the first time too. This is the seventh result of this repository; the
+**The new result.** On 20 October 2026 I proved the saving 1.7887e-3, exactly
+z = 1 - 17887045/10^10, for the Fourier transform of every length. OpenAI's statement file also states
+convolution, and that is proved at the same exponent. It is built on the community's circuit
+[#2979](https://github.com/CrocSwap/integer-mult-bounds/pull/2979), Marius-Paul Dumitrean's, with two steps of
+mine: a new table of where helper storage goes, which I solved for this purpose with the allocation model and the
+placement program of the community's #3815 (Erwan Secousses / ChaloupeMusic), and the *recursion lever* in its
+full form (the *full cut*). I call the table A-fc. The saving is above every complex-side construction claimed by
+others on the community's repository, proved or not (the complex side is the part of their figure that measures
+the same thing as my saving; some research notes there print higher ceilings or targets, which are not
+constructions), and 0.45 % above my own previous Lean-checked saving, 1.7806935e-3, the full cut on the
+community's #3945, which was the headline of the fifth revision. This is the eighth result of this repository; the
 table "All the results" below lists all of them.
 
 | | saving | how it is checked |
 |---|---|---|
-| **this result** (the full cut) | **1.7806935e-3** | Lean proof of OpenAI's statement |
-| the half cut on the same circuit and table, also proved in Lean here | 1.7581520e-3 | Lean proof |
+| **this result** (the full cut on #2979's words with the table A-fc) | **1.7887045e-3** | Lean proof of OpenAI's statement |
+| the same, its price rounded to the nearest unit of 10^-10 | 1.7887046e-3 | computed; not proved in Lean, and Lean proves the rate fact behind it false there |
+| the full cut on #3945 with every head kept, also proved in Lean here (the seventh result) | 1.7806935e-3 | Lean proof |
+| the half cut on #3945 with every head kept, also proved in Lean here | 1.7581520e-3 | Lean proof |
 | the lever on #2979 with every head kept, also proved in Lean here | 1.7564707e-3 | Lean proof |
 | the lever on #2979 as published, also proved in Lean here | 1.7556473e-3 | Lean proof |
 | the lever on #3945 as published, also proved in Lean here | 1.7501109e-3 | Lean proof |
-| the circuit it is built on, Dugongue's [#3945](https://github.com/CrocSwap/integer-mult-bounds/pull/3945), as the community prices it | 1.7306632e-3 | the community's own programs |
+| the circuit it is built on, Marius-Paul Dumitrean's [#2979](https://github.com/CrocSwap/integer-mult-bounds/pull/2979), as the community prices it | 1.7290340e-3 | the community's own programs; merged there as research |
+| the same words with the table A-fc and no lever, as the community prices them | 1.6897030e-3 | the community's own programs |
+| Dugongue's [#3945](https://github.com/CrocSwap/integer-mult-bounds/pull/3945), as the community prices it | 1.7306632e-3 | the community's own programs |
 | the highest complex-side construction claimed on the community's repository on 19 October ([#4088](https://github.com/CrocSwap/integer-mult-bounds/pull/4088), Cinna Davis; the same figure in [#4100](https://github.com/CrocSwap/integer-mult-bounds/pull/4100)) | 1.7309791e-3 | the community's own programs; open then, archived on 20 October; not selected |
 | the highest complex-side construction ever claimed there (the chain of pull requests #3934 to #3959) | 1.7411726e-3 | withdrawn: it carried moves that their author had retracted, and another contributor's audit (#4046) disputed it |
 | the community's selected record ([#1094](https://github.com/CrocSwap/integer-mult-bounds/pull/1094)) | kappa 1.6726602e-3 (complex side 1.6754627e-3) | reviewed and selected by the community |
 | the largest saving on the public Lean leaderboard, [bigospeedrun.com/exact-dft](https://bigospeedrun.com/exact-dft) | 1.2654e-3 | Lean proof (Bojnal's, on canghaimeng's C588AT, which runs on my engine) |
-| my previous Lean-checked saving, the sixth result (first published here) | 1.6256629e-3 | Lean proof |
+| my previous Lean-checked saving before the lever, the sixth result (first published in the fifth revision) | 1.6256629e-3 | Lean proof |
 
-The result is 2.89 % above the figure of the circuit it is built on (the half cut is 1.59 % above it). All the community's figures in
-the table are those of 19 October 2026; the community moves fast, and section 9 says where each one was read.
+The result is 3.45 % above the figure of the circuit it is built on and 3.35 % above #3945's. Its price is
+1.78870456e-3: rounded to the nearest unit of 10^-10 that is 1.7887046e-3, and rounded down it is 1.7887045e-3,
+the figure proved in Lean; Lean also proves that the rate fact behind it is false one unit higher. The community's
+figures in the table are those of 19 and 20 October 2026; the community moves fast, and section 9 says where each
+one was read.
 Ross Richardson's [#4091](https://github.com/CrocSwap/integer-mult-bounds/pull/4091) certifies 1.7309803e-3 as the
 optimum of a pooled (relaxed) model of #4088's words: a ceiling, not a construction. On 20 October
 [#4181](https://github.com/CrocSwap/integer-mult-bounds/pull/4181) (Rohan Arun, open) claimed a fill that attains
@@ -44,18 +55,25 @@ integer multiplication also depends on a second ingredient, the *bit side*, whic
 smaller transforms, the community's circuit, and does each of those by calling itself. How fast such a program
 is depends on one balance between the sizes of the smaller transforms and the size of the job. In the
 community's recursion every array of the circuit always takes a full-size job. But in each round of the circuit
-used here, 80,640 of the smaller transforms are *heads*: each one is the very first thing done to its
+used here, 16,576 of the smaller transforms are *heads*: each one is the very first thing done to its
 array, and it touches no other array. On those arrays the circuit can take a smaller job instead, and the head
 itself leaves the circuit: its work is done elsewhere in the recursion. The recursion then has to handle jobs of
 two sizes at once, in a fixed ratio, and the proof shows that it still runs at the speed the balance predicts,
 provided every piece of paid work is smaller than every job. With the whole head removed, the smaller job has 25
-axes, so each of the other 57,312 idle blocks of rank 48 in each round is split into two blocks of rank 24, which
-computes the same thing. This step is what I call *the lever*: removing the whole head is its *full cut*, the
-result above; removing half of each head, which needs no split, is its *half cut*. "What is new in the fifth
-revision", below, explains it with the numbers.
+axes, and in the table used here every other block has rank 23 or less, so nothing else has to change. This step
+is what I call *the lever*, and removing the whole head is its *full cut*. The table matters: the community's
+tables for #2979 leave thousands of other idle blocks of rank 48, which the full cut has to split into two blocks
+of rank 24 each, and the table A-fc was solved so that none is left. Without the lever it is worse than #2979's
+own table; with the full cut it is better. "What is new in the sixth revision", below, gives the numbers, and
+"What is new in the fifth revision" explains the lever itself.
 
-**What is new in this revision.** This is the fifth revision of the repository; the fourth was published on
-10 October 2026 with a saving of 8.7625e-4. Since then:
+**What is new in this revision.** This is the sixth revision of the repository. It adds one result, the one above
+(`package/leverAFc`), and keeps everything of the fifth revision, whose headline was the full cut on #3945,
+1.7806935e-3. The research finding for the table A-fc changes from "checked by computer" to "proved in Lean" (at
+1.7887045e-3; the rounded price 1.7887046e-3 is not proved in Lean). The regeneration scripts of three packages
+run again from the published files, and their instructions now say that they need Python 3.11 or earlier ("What
+is new in the sixth revision"). The fifth revision came after the fourth, published on 10 October 2026 with a
+saving of 8.7625e-4, and added:
 
 - **The lever, proved in Lean** (19 October 2026): a recursion with jobs of two sizes (Theorem 1G and its Lean
   proof inside OpenAI's machine model), the *head lemma* (removing half of each head, or all of it, leaves a
@@ -63,7 +81,7 @@ revision", below, explains it with the numbers.
   of rank 48 into two blocks of rank 24 (an identity, proved in Lean with no condition on the block), a Lean check that the heads are heads
   (a *heads-first certificate*), and the community's circuits #3945 and #2979 ported to Lean, with a device the Lean route
   had never handled: *borrowed* helpers whose coordinates are changed for free by a fixed linear map (the
-  community calls them *warps*). Proved in Lean on four pairs of circuit and table of hosts, five results in all: #3945 with every head kept, with the full cut (1.7806935e-3, the result above) and with the half cut (1.7581520e-3), and, with the half cut, #2979 with every head kept (1.7564707e-3), #2979 as published (1.7556473e-3) and #3945 as published (1.7501109e-3).
+  community calls them *warps*). Proved in Lean on four pairs of circuit and table of hosts, five results in all: #3945 with every head kept, with the full cut (1.7806935e-3, the fifth revision's headline) and with the half cut (1.7581520e-3), and, with the half cut, #2979 with every head kept (1.7564707e-3), #2979 as published (1.7556473e-3) and #3945 as published (1.7501109e-3).
 - **Every head kept.** The community's programs that decide where helper storage goes put each empty block of
   rank 48 either where it is a head or where it never is, at the same price, as their solvers happened to. I re-ran the community's own
   allocation programs with one more condition, that every block that can be a head stays empty, and the same
@@ -76,7 +94,7 @@ revision", below, explains it with the numbers.
   circuit) and 1.6256629e-3 (the sixth result: the same with no source copies left and a tighter bank table),
   with the smaller rungs of the same days. They stayed unpublished because they did not beat the community's own
   figures. The lever is built on top of them.
-- **The research of 10 to 20 October**, in [research/](research/README.md): twelve sections, 585 findings, each with its status (23 proved in Lean, 212 checked by computer, 216 argued by hand and not checked, 92 refuted, 42 open),
+- **The research of 10 to 20 October**, in [research/](research/README.md): twelve sections, 585 findings, each with its status (24 proved in Lean, 211 checked by computer, 216 argued by hand and not checked, 92 refuted, 42 open),
   and 122 open questions, each with a first experiment. It holds the moonshot waves of 14 and 15 October,
   which looked for a small unit with a large saving at blocks 2 to 5 in every game I could define and found
   none; the lower bounds found along the way (three proved in Lean); why the record circuits save; the
@@ -95,7 +113,8 @@ theirs. [NOTICE](NOTICE), section 10, lists every contribution with its pull req
   rewrites (#2957) and Mason Hale's words, chronology and allocation checker (#2917), with Jeremy Diviney's
   paired extraction, Yiyang Lu's shared kernels and allocation model, Dugongue's owner engine, Ross Richardson,
   Tekalign, icekylinx, themilkman216 and Gareth Davidson; the programs that made the every-head table on #2979
-  are #2979's own. Before them came Jeremy Kothe, Lyy-iiis, philippeVV, Mason Hale, Sagar Thakrar (with Arham
+  are #2979's own. The table A-fc of the result above was made with the allocation model and the placement program
+  of #3815, Erwan Secousses's (ChaloupeMusic). Before them came Jeremy Kothe, Lyy-iiis, philippeVV, Mason Hale, Sagar Thakrar (with Arham
   Tahir's audit), Tekalign, themilkman216, Vlado Vojdanovski and the others NOTICE names.
 - **The borrowed helpers and their warps**, with the exact Clifford machinery that checks them, are Cinna Davis's
   (1337isnot1337, with OpenAI Codex), on icekylinx's native line and the wrappers of DreamingOfClouds and
@@ -129,6 +148,7 @@ What is mine:
 - the mixed-target recursion: Theorem 1G and its Lean proof in OpenAI's model;
 - the lever: finding the heads, the half cut and the full cut with its split, which keep the recursion's
   condition, the head lemma, and the tables with every head kept (made with the community's own allocation programs and one added condition);
+- the table A-fc on #2979's words (its class solution, solved for the full cut, and its tolerant placement);
 - the Lean ports of the community's newest circuits: the conversion of their borrowed-helper words into my
   certificate format, the Lean checker for warps with its soundness proof, the networks of many copies with
   hosting across copies, and the generators of the Lean data;
@@ -139,56 +159,67 @@ What is mine:
 The agents (Claude) wrote the proofs and programs under my direction ("Who made it, and how", below).
 
 **How it was checked, and the limits.** Every check below passed for the result above, on Linux machines of
-Google's Colab service (8 processors, about 50 GB of memory). Each lever package's `README.txt` and `result.json`
-list its own checks with their logs:
+Google's Colab service (8 processors, about 50 GB of memory). The package's `README.txt` and `result.json` list
+each check with its log:
 
-- Lean's kernel accepted the new modules (410 for the result above), compiled from source over Shea's
-  tree with `package/u8x0hq`. The two theorems depend only on the three standard axioms (`propext`,
-  `Classical.choice`, `Quot.sound`), and the source files contain no `sorry` other than the two lines that
-  OpenAI's statement file has too.
+- Lean's kernel accepted the 280 new modules, compiled from source over Shea's tree with `package/u8x0hq`, on the
+  machine where they were built and again, from the package's files alone, on a second machine. The two theorems
+  depend only on the three standard axioms (`propext`, `Classical.choice`, `Quot.sound`), and the source files
+  contain no `sorry` other than the two lines that OpenAI's statement file has too.
 - `tools/Compare.lean` printed `RESULT: PASS`: the theorems proved are those of OpenAI's statement file,
   `UniformFourier.lean`, with only the exponent and seven names changed. The same comparison against a statement
   one unit of 10^-10 stronger fails, as it must.
 - The official comparator, the program that OpenAI's repository uses, accepted the proof with both of its kernels
   (nanoda and Lean's) and rejected the statement one unit stronger.
 - The agents re-created the leaderboard's verifier offline, on the proof packaged as a submission, and its phases
-  passed: the Lean check, which compiled the packaged proof from source, the audit of the axioms, and the nanoda
-  kernel, and the same run one unit stronger was rejected. The leaderboard admits at most 500 files, so the
-  packaged proof merges small modules (generated data, and chains of modules each importing the one before) into
-  larger ones (450 files). A separate check compared the merged form, constant by constant, with the proof built
-  from the unmerged files and found the same 29,540 constants in both, each with the same statement and definition,
-  and every one of the 12,330 theorems with the same proof.
-- The rate fact behind the figure is proved in Lean at 1.7806935e-3, and Lean also proves that it fails at
-  every saving one unit higher. Lean's kernel counts the heads in the table of hosts (80,640) and
-  refuses one more, and Lean proves that the full cut's profile is wrong with #3945's own head count, with one head
-  more, and without the split.
-- The agents also re-ran the community's complete checks of each circuit from scratch, with the new tables where
-  the tables changed, and they passed.
-- Three more agents, each with the sole job of finding a fault, checked the full cut again on other machines: one
-  fetched OpenAI's statement afresh, derived the statement files from it once more and rebuilt the proof from the
-  package alone; one rebuilt every new module from the package on a fresh copy of the base and ran the official
-  comparator again; one re-derived the head count, the split blocks, the separation and the rate fact from the Lean
-  data files with programs of its own, checked the hypotheses of Theorem 1G, and re-read the community's figures.
-  None found a fault in the proof. They found cosmetic points only, listed with the correct text in the package's `KNOWN-ISSUES.txt`; they are left as
-  compiled, because the files are checked byte for byte. Known cosmetic issues: names left from the half-cut package
-  that the full cut reuses; in every package's `Main.lean` the comment above the Fourier theorem calls it a sibling of
-  a Walsh-Hadamard theorem `wht_main_block_...` that does not exist (it should say only that the theorem follows from
-  the package's kernel program); line 15 of design B's `Seam.lean` says 57,312 heads where it should say 80,640; the
-  header of `Rate3945F.lean` gives a relative slack of 8.926e-11, which is measured against W (against the right side
-  it is 1.07e-10); and the header of each `Goal.lean` cites OpenAI's lines 75-78, 80 and 82 where the definitions are
-  at 75-77, 79 and 81. For the half cut on the same table, three other agents did the same; none found a fault in the proof, and one found two comments in Lean files that are out of date (one gives #3945's own head count); they are left as compiled, because the files are checked byte for byte.
-- This repository's own scripts (`scripts/`), run as VERIFY.md section 12 says from a fresh clone on a fresh copy
-  of Shea's tree, rebuilt `package/leverF` (the result above), `package/leverB` (the half cut on the same table) and
-  `package/leverA` (the lever on #2979 with every head kept), passed every check on all three, and the comparator
-  accepted all three again ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)).
-  Preparing that run found three faults in `scripts/build-and-check.sh` with the lever packages; they are fixed.
+  passed: the Lean check, which compiled the packaged proof from source in 63 minutes, the audit of the axioms, and
+  the nanoda kernel; the same run one unit stronger was rejected. For the leaderboard's limit of 500 files the
+  packaged proof merges small modules into larger ones (449 files); the unmerged form (577 modules) passed the same
+  run. A separate check compared the merged form, constant by constant, with the proof built from the package's
+  files: the 21,665 constants that are not generated by Lean itself are the same in both, and all 9,601 theorems
+  have the same statement and the same proof.
+- The rate fact behind the figure is proved in Lean at 1.7887045e-3, and Lean also proves that it fails at every
+  saving one unit higher. Lean's kernel counts the heads in the table of hosts (16,576) and refuses one more, and
+  Lean proves that the full cut's profile is wrong with one head fewer, and wrong for the table with every head kept
+  of the fifth revision, whose heads removed still leave 11,614 blocks of rank 48.
+- The one fact of the full cut that depends on the circuit's words, that the 48 directions of each head are the 48
+  lines that the cut removes, is proved in Lean on #2979's words. In the fifth revision it was proved only on
+  #3945's words, and on #2979's it was argued by hand.
+- The agents ran the community's own checks of #2979's line on the new table, unmodified, on a fresh clone of the
+  community's repository: #2979's owner engine with its corruption controls, its verify program, the complete
+  replay's fresh native runs and the other steps of its admission pass. The table is rejected only by the steps
+  that ask for a higher figure without the lever (the strict-gain steps and a near-optimality bound), as it must
+  be: without the lever it is worth 1.6897030e-3, against #2979's 1.7290340e-3.
+- Three more agents, each with the sole job of finding a fault, checked the result again on other machines: one
+  fetched OpenAI's statement afresh, derived the statement files from it once more, rebuilt the proof from the
+  package's files, ran the official comparator again, and walked the constants the proof uses, to see that it
+  reaches the new table's data and the cut fact on #2979's words and no data of any other table; one rebuilt every
+  new module from the package alone on a fresh copy of the base and ran `tools/Compare.lean` and the official
+  comparator again; one decoded the Lean data files with programs of its own, rebuilt the table from them byte for
+  byte, re-derived the heads, the profile, the separation and the rate fact (true at the figure, false one unit
+  higher), checked the hypotheses of Theorem 1G, and re-read the community's figures. None found a fault in the
+  proof. They found one fault in the package: the program that regenerates its Lean data gives different bytes for
+  36 data files on Python 3.12 or later, because Python 3.12 changed how it adds floating-point numbers; the files
+  Lean checked are not affected, and the package's instructions now say to use Python 3.11 or earlier, with a
+  workaround. Known cosmetic issues, listed with the correct text in `package/leverAFc/KNOWN-ISSUES.txt` and left as
+  compiled, because the files are checked byte for byte: comments that name the earlier builds a file was made
+  from; the comment above the Fourier theorem calls it a sibling of a Walsh-Hadamard theorem
+  `wht_main_block_L2979Fcx` that does not exist (it should say only that the theorem follows from the package's
+  kernel program); and the header of `Goal.lean` cites OpenAI's lines 75-78, 80 and 82 where the definitions are at
+  75-77, 79 and 81.
+- This repository's own scripts (`scripts/`), run as VERIFY.md section 12 says from a fresh clone of this revision
+  on a fresh copy of Shea's tree, laid `package/leverAFc` over the tree, built it and passed every check of
+  `scripts/build-and-check.sh` (`ALL CHECKS PASSED`;
+  [scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)). That script runs five of
+  the package's twelve Lean controls; the other seven need files of other packages or side files, and VERIFY.md
+  section 12.3 says how to run them.
 
 The limits are properties of how it was built and checked:
 
 - Like every figure in this race, the result is asymptotic. The constant hidden in the O is astronomically
   large, so it says nothing about running times at sizes anyone can run.
 - The proof lives in Shea's Lean tree, laid over it as two packages (`package/u8x0hq`, then
-  `package/leverF`), not in this repository's own Lean project.
+  `package/leverAFc`), not in this repository's own Lean project.
 - Every Lean run was on Colab machines. The comparator's sandbox needs a feature of the Linux kernel (Landlock)
   that those machines lack, so it ran inside a stand-in; the re-creation of the leaderboard's verifier used the
   agents' own scripts in the same stand-in, and the verifier's own controller never ran.
@@ -204,6 +235,7 @@ The limits are properties of how it was built and checked:
 
 | Result | What is computed | Saving | Where the proof is | Date |
 |---|---|---|---|---|
+| eighth | Fourier transform of every length, and convolution: the community's #2979 words with the table A-fc, solved for the full cut, and the recursion lever (16,576 heads, full cut, nothing to split) | 1.7887045e-3 | `package/leverAFc`, on Shea's tree | 20 October 2026 |
 | seventh | Fourier transform of every length, and convolution: the community's #3945 with every head kept, and the recursion lever (80,640 heads, full cut, the other 57,312 blocks of rank 48 split) | 1.7806935e-3 | `package/leverF`, on Shea's tree | 19 October 2026 |
 | with the seventh | Fourier transform of every length, and convolution: the community's #3945 with every head kept, and the recursion lever (80,640 heads, half cut) | 1.7581520e-3 | `package/leverB`, on Shea's tree | 19 October 2026 |
 | with the seventh | Fourier transform of every length, and convolution: the community's #2979 with every head kept, and the recursion lever (16,576 heads, half cut) | 1.7564707e-3 | `package/leverA`, on Shea's tree | 19 October 2026 |
@@ -242,7 +274,9 @@ tried to refute one another's work. For the results since the fifth I chose to b
 community had published rather than on my own circuit, and to prove the steps its figures assume. The lever's
 idea came out of a round on abstract routes on 14 October 2026; the agents counted the heads, proved Theorem 1G on
 paper and planned the Lean route that day, and then I paused it for other directions. On 19 October the agents
-priced the lever on the community's newest circuits, and I had the proofs built on five machines at once.
+priced the lever on the community's newest circuits, and I had the proofs built on five machines at once. On
+20 October the agents solved the table A-fc for the full cut, and I had it built in Lean the same day, on the same
+machines, with three more agents trying to refute it.
 [notes/how-the-lever-was-found.md](notes/how-the-lever-was-found.md) tells that story and
 [notes/fifth-result-story.md](notes/fifth-result-story.md) the story of 13 October, each with what failed and the
 claims that did not stand.
@@ -269,7 +303,9 @@ Ryan Shea, Nil Mamano, DaysSky and the community's authors have not reviewed it 
 
 **Where to look next.**
 
-- "What is new in the fifth revision", just below: the lever with the numbers, the theorem, what the proof is made
+- "What is new in the sixth revision", just below: the table A-fc with the numbers, the theorem and the other
+  changes of this revision.
+- "What is new in the fifth revision", after it: the lever with the numbers, the theorem, what the proof is made
   of and what is not claimed; the sixth result; the research.
 - [research/README.md](research/README.md): the research of 10 to 20 October, section by section, and
   [research/open-problems.md](research/open-problems.md), every open question with a first experiment.
@@ -281,6 +317,95 @@ Ryan Shea, Nil Mamano, DaysSky and the community's authors have not reviewed it 
 - "The results of 13 October 2026", further down: the fifth result and its rungs, with every check and its log.
 - The fourth result and the earlier ones follow, from "What was new in the fourth revision" on. Section 9 has
   the dates, commits and outside sources behind every statement, kept out of the prose.
+
+## What is new in the sixth revision (2026-10-20)
+
+### The full cut on #2979's words with a table solved for it (A-fc)
+
+The words used here (array, block, rank, job, unit, the balance, heads, the half cut and the full cut) are
+explained in "What is new in the fifth revision", below.
+
+**The circuit and the table.** #2979, Marius-Paul Dumitrean's circuit, runs 74 copies of a pattern of 9 calls in
+each unit: 666 calls of two provider words, over 66,304 arrays per copy of its gauge, with 271,728 helper roles that
+a table of hosts assigns to calls. The words, the clock, the order of the calls, the dispatch and the providers stay
+#2979's here; only the table is new. The fifth revision's table with every head kept on #2979 (`package/leverA`)
+has 16,576 heads, but it also leaves 11,614 other idle blocks of rank 48, which the full cut has to split into two
+blocks of rank 24; its full cut prices at 1.7797095e-3, below the full cut on #3945. The table A-fc was solved for
+the price after the full cut instead. With the allocation model of the community's #3815 (Erwan Secousses /
+ChaloupeMusic), a linear program for each tick with the full cut's objective, and then an integer program on the
+columns it generated, gave a class solution; #3815's own placement program, which works in reverse time, then
+placed the roles. I made that program tolerant: a role with no planned slot left at its call goes to a free place
+that obeys the same rules of windows, calls and capacity. Nine roles needed that (eight of width 6 at call 553 and
+one of width 4 at call 0).
+
+**The numbers.** In A-fc every bin of the two head positions of each copy is empty, so its 16,576 blocks of rank 48
+(8,288 in each position) are all heads, and no other idle block has rank 48: the other idle blocks have ranks 1, 6,
+7, 17, 19 and 23. One copy of the gauge does 1,630,639 blocks of rank 1, 470,196 of rank 2, 154,512 of rank 3,
+71,928 of rank 4, 11,988 of rank 5, 5 of rank 6, 3 of rank 7, 5,328 of rank 8, 8 of rank 17, 1 of rank 19,
+25,905 of rank 23 and the 16,576 heads of rank 48, on W = 66,304 arrays. With the full cut the heads leave, their
+arrays take jobs of 25 axes, and the balance becomes
+
+    (the blocks of ranks 1 to 23 above, each counted as r^τ)  =  49,728 · 73^τ + 16,576 · 25^τ .
+
+Every paid block has rank at most 23 and the smaller job has 25 axes, so the rule is separated, Theorem 1G
+applies, and nothing has to be split. The root gives a saving of 1.78870456430e-3. Rounded down to the grid of
+10^-10 that is 17,887,045/10^10, the figure proved in Lean; rounded to the nearest it is 1.7887046e-3, which is not
+proved in Lean, and Lean proves that the rate fact fails there. Without the lever the table is worse than #2979's
+own: the community's formula gives it 1.6897030e-3, against 1.7290340e-3. An exact bound from a linear program
+(checked by computer; [research/record-track/](research/record-track/README.md), section 4.8) puts the full cut on
+#2979's words, in the allocation model used there, at no more than 1.7893658e-3, so A-fc is within 6.7e-7 of that
+bound.
+
+| table on #2979's words | heads | other idle blocks of rank 48 | without the lever | price with the full cut | in Lean |
+|---|---|---|---|---|---|
+| A-fc (this revision) | 16,576 | 0 | 1.6897030e-3 | 1.78870456e-3 | 1.7887045e-3, proved in Lean (`package/leverAFc`) |
+| every head kept (fifth revision) | 16,576 | 11,614 | 1.7290340e-3 | 1.7797095e-3 | the half cut, 1.7564707e-3, proved in Lean (`package/leverA`); the full cut not built |
+| as published | 16,086 | 12,104 | 1.7290340e-3 | 1.7744822e-3 | the half cut, 1.7556473e-3, proved in Lean (`package/lever2979`); the full cut not built |
+
+**What is new in the Lean proof.** Almost nothing. The proof reuses the fifth revision's parts: Theorem 1G in
+OpenAI's model, the head lemma with its full cut, the heads-first certificate, the port of #2979's words with their
+warps and the network of copies. New are the table's data (the hosts of all 271,728 roles, checked by Lean's
+kernel), its instance of the full cut, its rate fact and the Fourier chain at its exponent, and one fact: the full
+cut needs the 48 directions of each head to be the 48 lines that the cut removes. On #3945's words that followed
+from a fact proved there; on #2979's words it is now proved in Lean as well (the gate of the build,
+`package/leverAFc/logs/afc-gate/`). The full cut's bridge always splits the blocks of rank 48 that are not heads;
+on A-fc there are none, so the split changes nothing (`KNOWN-ISSUES.txt`, item 6).
+
+**The theorem.**
+
+| | |
+|---|---|
+| statement | OpenAI's `UniformFourier.lean` (family 130), with the exponent `1 - 17887045/10^10` and seven names changed |
+| theorems | `OAI.PowerSaving.transform_mainL2979Fc` (the transform of every length) and `OAI.PowerSaving.convolution_mainL2979Fc` (convolution) |
+| file | `Work/FourierL2979Fc/Main.lean` in `package/leverAFc/overlay/` |
+| statement files compared | `Work/FourierL2979Fc/UniformFourierChallenge.lean` (this exponent) and `Work/FourierL2979FcNeg/UniformFourierChallenge.lean` (one unit stronger) |
+| axioms | `propext`, `Classical.choice`, `Quot.sound` |
+| base | Ryan Shea's `lean/complex588` at commit `5239484`, with `package/u8x0hq` and then `package/leverAFc` laid over it |
+
+Its checks are listed at the top ("How it was checked, and the limits"), and each with its log in the package's
+`README.txt` and `result.json`.
+
+**Other changes in this revision.**
+
+- The regeneration scripts (`generators/REGENERATE.sh`) of `package/lever2979`, `package/leverA` and
+  `package/leverAFc` run again from the published files. Two reports in their generators name the machine paths of
+  the run that made them; those paths were shortened for publication, which changed the two files' checksums, so
+  in the fifth revision the scripts of `package/lever2979` and `package/leverA` stopped at their first check. The
+  checksum lists now give the published bytes, and the scripts put the reports' original checksums back where the
+  data records them. On a Mac with Python 3.9, all three end with `REGENERATE: ALL AS EXPECTED`, every generated file
+  byte for byte as compiled. They need Python 3.11 or earlier: with Python 3.12 or later, 36 data files of the
+  provider words come out different (the packages' `generators/README.txt` gives a workaround).
+- `package/leverAFc/result.json` lists under `lean_controls` only the five Lean controls that this repository's
+  `scripts/build-and-check.sh` can run in a tree with this package alone; the other seven need files of
+  `package/leverA` or side files of the package, and are listed apart with what each needs. All twelve were
+  compiled on the build machine.
+- In [research/](research/README.md), the record track's finding for A-fc is now "proved in Lean at 1.7887045e-3";
+  its price, 1.7887046e-3 rounded, stays a computed figure.
+
+**What is not claimed.** The list "What is not claimed for the lever" in the fifth revision, below, holds for this
+result too: nothing about integer multiplication (the community's kappa is capped by a bit side that this work does
+not touch), no speed-up in practice, nothing about the community's premises, and no claim to be the largest saving
+anyone will have. In addition, the figure 1.7887046e-3 is a price, not a Lean result.
 
 ## What is new in the fifth revision (2026-10-20)
 
@@ -367,9 +492,11 @@ The last column gives the figure proved in Lean, a point of the same grid at or 
 The figures of the full cut are prices, not built, except on #3945 with every head kept, where it is proved in
 Lean (`package/leverF`). The full cut on #2979 with every head kept (1.7797095e-3) would need the data of that
 table and the cut fact proved on #2979's words: the Lean bridge of the full cut (`Work/Mixed/Bridge/CoreF`, listed in
-`package/leverF/README.txt`) is general in the table, but its cut fact is proved in Lean only on #3945's words. On #2979's words a re-solved table, A-fc, prices at 1.7887046e-3 under the full cut (the price 1.7887045643e-3
-rounded to the nearest; on the grid of 10^-10, rounded down as above, 17,887,045/10^10), above the Lean result;
-it is checked by computer, not proved in Lean ([research/record-track/data/a-fc/](research/record-track/data/a-fc/README.md)).
+`package/leverF/README.txt`) is general in the table, but in the fifth revision its cut fact was proved in Lean only on #3945's words. On #2979's words a re-solved table, A-fc, prices at 1.7887046e-3 under the full cut (the price 1.7887045643e-3
+rounded to the nearest; on the grid of 10^-10, rounded down as above, 17,887,045/10^10), above the Lean result on #3945.
+In the fifth revision it was checked by computer only; the sixth revision proves it in Lean at 1.7887045e-3
+(`package/leverAFc`, "What is new in the sixth revision", above; its table and the programs that made it are also in
+[research/record-track/data/a-fc/](research/record-track/data/a-fc/README.md)).
 
 **The theorem.**
 
@@ -413,6 +540,54 @@ figure one unit higher.
   repository neither uses nor checks.
 - No claim to be the largest saving anyone will have: the community's figures that are not Lean-checked are listed
   in the table at the top, and higher claims may appear at any time.
+
+**How the full cut on #3945 was checked.** Every check below passed for the full cut on #3945 with every head
+kept (`package/leverF`), the headline of the fifth revision, on Linux machines of
+Google's Colab service (8 processors, about 50 GB of memory). Each lever package's `README.txt` and `result.json`
+list its own checks with their logs:
+
+- Lean's kernel accepted the new modules (410 for the full cut), compiled from source over Shea's
+  tree with `package/u8x0hq`. The two theorems depend only on the three standard axioms (`propext`,
+  `Classical.choice`, `Quot.sound`), and the source files contain no `sorry` other than the two lines that
+  OpenAI's statement file has too.
+- `tools/Compare.lean` printed `RESULT: PASS`: the theorems proved are those of OpenAI's statement file,
+  `UniformFourier.lean`, with only the exponent and seven names changed. The same comparison against a statement
+  one unit of 10^-10 stronger fails, as it must.
+- The official comparator, the program that OpenAI's repository uses, accepted the proof with both of its kernels
+  (nanoda and Lean's) and rejected the statement one unit stronger.
+- The agents re-created the leaderboard's verifier offline, on the proof packaged as a submission, and its phases
+  passed: the Lean check, which compiled the packaged proof from source, the audit of the axioms, and the nanoda
+  kernel, and the same run one unit stronger was rejected. The leaderboard admits at most 500 files, so the
+  packaged proof merges small modules (generated data, and chains of modules each importing the one before) into
+  larger ones (450 files). A separate check compared the merged form, constant by constant, with the proof built
+  from the unmerged files and found the same 29,540 constants in both, each with the same statement and definition,
+  and every one of the 12,330 theorems with the same proof.
+- The rate fact behind the figure is proved in Lean at 1.7806935e-3, and Lean also proves that it fails at
+  every saving one unit higher. Lean's kernel counts the heads in the table of hosts (80,640) and
+  refuses one more, and Lean proves that the full cut's profile is wrong with #3945's own head count, with one head
+  more, and without the split.
+- The agents also re-ran the community's complete checks of each circuit from scratch, with the new tables where
+  the tables changed, and they passed.
+- Three more agents, each with the sole job of finding a fault, checked the full cut again on other machines: one
+  fetched OpenAI's statement afresh, derived the statement files from it once more and rebuilt the proof from the
+  package alone; one rebuilt every new module from the package on a fresh copy of the base and ran the official
+  comparator again; one re-derived the head count, the split blocks, the separation and the rate fact from the Lean
+  data files with programs of its own, checked the hypotheses of Theorem 1G, and re-read the community's figures.
+  None found a fault in the proof. They found cosmetic points only, listed with the correct text in the package's `KNOWN-ISSUES.txt`; they are left as
+  compiled, because the files are checked byte for byte. Known cosmetic issues: names left from the half-cut package
+  that the full cut reuses; in every package's `Main.lean` the comment above the Fourier theorem calls it a sibling of
+  a Walsh-Hadamard theorem `wht_main_block_...` that does not exist (it should say only that the theorem follows from
+  the package's kernel program); line 15 of design B's `Seam.lean` says 57,312 heads where it should say 80,640; the
+  header of `Rate3945F.lean` gives a relative slack of 8.926e-11, which is measured against W (against the right side
+  it is 1.07e-10); and the header of each `Goal.lean` cites OpenAI's lines 75-78, 80 and 82 where the definitions are
+  at 75-77, 79 and 81. For the half cut on the same table, three other agents did the same; none found a fault in the proof, and one found two comments in Lean files that are out of date (one gives #3945's own head count); they are left as compiled, because the files are checked byte for byte.
+- This repository's own scripts (`scripts/`), run as VERIFY.md section 12 says from a fresh clone on a fresh copy
+  of Shea's tree, rebuilt `package/leverF` (the full cut), `package/leverB` (the half cut on the same table) and
+  `package/leverA` (the lever on #2979 with every head kept), passed every check on all three, and the comparator
+  accepted all three again ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)).
+  Preparing that run found three faults in `scripts/build-and-check.sh` with the lever packages; they are fixed.
+
+The limits listed with the result at the top hold for it too, with `package/leverF` in place of `package/leverAFc`.
 
 ### The sixth result: 1.6256629e-3 (14 October 2026)
 
@@ -467,7 +642,7 @@ each with its programs, data and a machine-readable `results.json`. In short:
 ## The results of 13 October 2026 (the fifth result and its rungs)
 
 This part is the text I wrote on 13 and 14 October 2026 for the fifth result, which was not published until
-this revision; its figures, checks and credits are unchanged. The sixth result and the lever, above, are built
+the fifth revision; its figures, checks and credits are unchanged. The sixth result and the lever, above, are built
 on it.
 
 **The fifth result.** On 13 October 2026 I proved the saving 1.6198e-3, exactly z = 1 - 16197705/10^10, for the
@@ -1360,10 +1535,31 @@ computation the same circuit in a three-stage word gives 7.0091e-4.
 
 ## 1. The results
 
-### The lever: 1.7807e-3, on Shea's Lean tree (new on 2026-10-19)
+### The eighth result: 1.7887e-3, on Shea's Lean tree (new on 2026-10-20)
 
-The lever gives the largest saving of this repository: 1.7807e-3 for the Fourier transform of every
-length and for convolution, with the full cut. Its proof is the package `package/leverF`, laid over Ryan Shea's
+The full cut on #2979's words with the table A-fc gives the largest saving of this repository: 1.7887e-3 for the
+Fourier transform of every length and for convolution. Its proof is the package `package/leverAFc`, laid over
+Ryan Shea's tree `lean/complex588` after the package `package/u8x0hq` (VERIFY.md, section 12). The definitions that
+carry the exponent, in `Work/FourierL2979Fc/Goal.lean` and in the statement file
+`Work/FourierL2979Fc/UniformFourierChallenge.lean`:
+
+    def decimalExponentL2979Fc : ℝ := 1 - 17887045/(10^(10:ℕ))
+    def decimalTimeL2979Fc (n : ℕ) : ℝ := (n:ℝ) * (Real.log (n:ℝ)) ^ decimalExponentL2979Fc
+    def TimeBoundsL2979Fc (W : ℕ → ℕ) : Prop :=
+      let W' := fun n : ℕ => (W n : ℝ)
+      W' =O[atTop] paperTime ∧ W' =O[atTop] decimalTimeL2979Fc ∧ W' =o[atTop] nlogn
+    def DFTGoalL2979Fc : Prop := ∃ order solve W, DFTProgram order solve W ∧ TimeBoundsL2979Fc W
+    def ConvGoalL2979Fc : Prop := ∃ order solve W, ConvProgram order solve W ∧ TimeBoundsL2979Fc W
+
+    theorem OAI.PowerSaving.transform_mainL2979Fc : DFTGoalL2979Fc
+    theorem OAI.PowerSaving.convolution_mainL2979Fc : ConvGoalL2979Fc
+
+"What is new in the sixth revision", at the top, has the numbers, and the opening has the checks and the credits.
+
+### The lever on #3945: 1.7807e-3, on Shea's Lean tree (new on 2026-10-19)
+
+The full cut on #3945 with every head kept gave the largest saving of the fifth revision: 1.7807e-3 for the
+Fourier transform of every length and for convolution, with the full cut. Its proof is the package `package/leverF`, laid over Ryan Shea's
 tree `lean/complex588` after the package `package/u8x0hq` (VERIFY.md, section 12). The definitions that carry the
 exponent, in `Work/FourierL3945F/Goal.lean` and in the statement file
 `Work/FourierL3945F/UniformFourierChallenge.lean`:
@@ -1381,15 +1577,14 @@ exponent, in `Work/FourierL3945F/Goal.lean` and in the statement file
 
 `DFTProgram`, `ConvProgram`, `paperTime` and `nlogn` are OpenAI's, unchanged. The other lever packages of the
 table "All the results" have the same form with their own suffix (the half cut on the same table: `package/leverB`,
-suffix `L3945H`, at 1 - 17581520/10^10). "What is new in the fifth revision", at the top,
-has the checks and the credits.
+suffix `L3945H`, at 1 - 17581520/10^10). "What is new in the fifth revision" has the checks and the credits.
 
 ### The sixth result: 1.6257e-3, on Shea's Lean tree (14 October 2026)
 
 The sixth result is `package/u8x0hq`, laid over Ryan Shea's tree (VERIFY.md, section 12), with the theorems
 `OAI.PowerSaving.transform_mainU8X0HQ` and `OAI.PowerSaving.convolution_mainU8X0HQ` at the exponent
-1 - 16256629/10^10, in the same form as above with the suffix `U8X0HQ`. "What is new in the fifth revision", at
-the top, has its checks.
+1 - 16256629/10^10, in the same form as above with the suffix `U8X0HQ`. "What is new in the fifth revision" has
+its checks.
 
 ### The fifth result: 1.6198e-3, on Shea's Lean tree (new on 2026-10-13)
 
@@ -2406,7 +2601,9 @@ of the research since 10 October, each with a first experiment.
                   current.json names the headline package of 13 October
     package/      the sixth result and the lever, as packages laid over Ryan Shea's Lean tree with `scripts/`
                   (VERIFY.md, section 12): u8x0hq (the sixth result, laid first; every lever package requires it),
-                  leverF (the full cut on #3945 with every head kept, 1.7806935e-3; the result of the title),
+                  leverAFc (the full cut on #2979's words with the table A-fc, 1.7887045e-3; the result of the
+                  title, added in the sixth revision),
+                  leverF (the full cut on #3945 with every head kept, 1.7806935e-3; the fifth revision's headline),
                   leverB (the half cut on #3945 with every head kept, 1.7581520e-3),
                   leverA (the lever on #2979 with every head kept, 1.7564707e-3),
                   lever2979 (the lever on #2979 as published, 1.7556473e-3),
@@ -2460,7 +2657,7 @@ kept out of the prose so that the prose can be read.
 
 ### For the opening and what is new
 
-The five texts of this README, and one follow-up:
+The six texts of this README, and one follow-up:
 
 - First text (first result): commit `024f763`, 2026-10-09.
 - Second text (second result): commit `fdfb781`, with its note on open directions in commit `e0bbe1c`,
@@ -2470,11 +2667,13 @@ The five texts of this README, and one follow-up:
 - Follow-up to the fourth text: commit `9c94857`, 2026-10-10. It added the comparator verdicts on the Linux
   machine that arrived after the fourth text was published, and it corrected wording about the runs on that
   machine. It changed no Lean file and no figure of a result.
-- Fifth text (fifth revision): this one, 19 and 20 October 2026. Its part "The results of 13 October 2026" was written
-  on 13 October 2026 for a fifth text that was not published; before this revision, its headline had been moved
+- Fifth text (fifth revision): commit `563b4e6`, 19 and 20 October 2026. Its part "The results of 13 October 2026" was written
+  on 13 October 2026 for a fifth text that was not published; before the fifth revision, its headline had been moved
   on 2026-10-14 from `community/c588mhh` to the full stack, `community/u8xmhh`. Its sources are in "For the fifth
   result", below; those of the lever, the sixth result and the research are in "For the lever, the sixth result
   and the research".
+- Sixth text (sixth revision): this one, 20 October 2026. It keeps the fifth text below its new opening and its
+  section "What is new in the sixth revision"; its sources are in "For the sixth revision", below.
 
 OpenAI's work that the statement and the cost model come from: [openai/math](https://github.com/openai/math),
 family 130, commit `fd4aeeb`.
@@ -2723,7 +2922,7 @@ its status.
 ### For the lever, the sixth result and the research
 
 **The text.** The opening, "What is new in the fifth revision" and the lever's entries elsewhere were written on
-19 October 2026 and revised on 20 October 2026 for this revision. The sixth result was built and checked on 14 October 2026
+19 October 2026 and revised on 20 October 2026 for the fifth revision. The sixth result was built and checked on 14 October 2026
 and rebuilt on 19 October 2026 (`package/u8x0hq/logs/`).
 
 **The community's figures** (the table at the top), read on 19 October 2026 from the pull requests of
@@ -2776,6 +2975,51 @@ leaderboard's verifier: bigospeedrun/verifier at `c92b9b6`, re-created offline; 
 
 **The research.** [research/README.md](research/README.md) and each section's own Sources section name the notes,
 rounds and skeptic verdicts behind it.
+
+### For the sixth revision (the table A-fc in Lean)
+
+**The text.** The opening and "What is new in the sixth revision" were written on 20 October 2026 for this
+revision; the entries of the fifth revision were changed only where they said that A-fc was not proved in Lean.
+
+**The table A-fc.** Made by round `wht45/fullcut` (agent `fc-reopt`, design `u1-2979sep`) on 20 October 2026;
+`FILL.json.gz` sha256 `7fc766c6c3e1561cee60b258138a918020b96d85ea782a2b01ad0ee035fd082e`, `PROFILE.json` sha256
+`5df79411...`. Its admission by the community's checks, its prices and its first skeptic: round `wht45/hubx`
+(`hx-admit`, `hx-price`, `hx-skeptic`), on a fresh clone of CrocSwap/integer-mult-bounds at main `12fa8c5c`; #2979's
+own files at main `20ecf289` (read at `bb4bccbf`).
+
+**The Lean build and its skeptics.** Round `wht45/afc`, 20 October 2026 (about 10:20 to 16:05 EDT), on four Colab
+machines: the data layer `afc-data`, the gate of the cut fact on #2979's words `afc-gate`, the full-cut instance and
+the rate fact `afc-cut`, and the integration `afc-final` (the final run, the official comparator and the release
+controls on C4; the merged re-creation of the leaderboard's verifier, a fresh build from the package's files and
+the identity check on C5; the unmerged re-creation on C2), with `afc-prep`'s machine setup. The skeptics:
+`vAFc-statement` (C2), `vAFc-rebuild` (C3) and `vAFc-price` (C4); all three upheld the result, and the statement
+skeptic found the Python 3.12 property of the generators. The package as checked is the staging tarball of the
+package, sha256 `fcad92871cc93b83fa0ad71bf91ef5b3a47bec364eecb4f361ebcafdaeb1f336` (its overlay
+`061188433b0d...`, the merged leaderboard stage `1cb208e5d920...`). The copy in this repository differs from it in
+text files only, none of them under `overlay/` or `controls/`: machine paths shortened in eight files (two price
+records, `generators/PATCHES.txt`, the two lowering reports, `logs/afc-gate/GATE.md` and the two logs of
+`logs/regenerate/`), `README.txt`, `KNOWN-ISSUES.txt` and `result.json` (the controls listed apart), and the
+generators' `README.txt`, `PATCHES.txt`, `REGENERATE.sh` and `tree.sha256`; `SHA256SUMS` lists the files as
+published. The run of `scripts/` from a fresh clone of this revision is agent `fu-prep`'s (C3).
+
+**The regeneration scripts.** The two lowering reports
+`generators/tree/wht45/lever2979/x-gate/out/lower-base.json` and `lower-extra.json` had sha256 `f219f479...` and
+`5e5d7945...` as the run wrote them; `generators/PATCHES.txt` of `package/lever2979`, `package/leverA` and
+`package/leverAFc` gives the published values. The Python property: `x-words/tools/pack_ceil2.py` and the change to
+`sum()` over floats in Python 3.12; the 36 files are `Work/GCert/Data/Gen/S2979BRows0..17.lean` and
+`S2979ERows0..17.lean`.
+
+**The community's figures**, read on 20 October 2026, read-only: by the skeptics between 15:00 and 15:14 EDT (all
+pull requests and issues updated since 17 October, with their bodies and comments; newest #4221 and #4223; main
+`12fa8c5c`), and again by me at 16:36 EDT (the pull requests opened since, up to #4243; main `12fa8c5c`). No
+complex-side construction claimed by others was at or above 1.7887045e-3. The highest construction claims were
+#4181's kappa 1.7309803e-3 (Rohan Arun, open), #4100's 1.7309791e-3 and #3945's b 1.7306632e-3; the chain #3934 to
+#3959 (b 1.7411726e-3) was withdrawn. Higher figures there are ceilings, caps, targets or hypothetical ledgers (for
+example #3729's 4.7377e-3, a ceiling), not constructions.
+
+**The leaderboard.** bigospeedrun.com/exact-dft, read on 20 October 2026: top entry 1.2654e-3, as on 19 October.
+The leaderboard's verifier was re-created offline at `c92b9b6`, as for the fifth revision; its main was `7f4f6bd` on
+20 October.
 
 ### For the credits
 

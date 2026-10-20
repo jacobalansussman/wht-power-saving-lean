@@ -1,0 +1,4 @@
+files in the PR: 449 (limit 500); largest 3494965 bytes (limit 20000000); total 17508194 bytes (limit 150000000)
+verifier planning: 448 modules in 145 serial chains, acyclic
+visibility: 0 modules see local modules outside their group that they did not see before; 78 see earlier siblings of their group only; 0 see new external imports
+STATIC CHECK PASS

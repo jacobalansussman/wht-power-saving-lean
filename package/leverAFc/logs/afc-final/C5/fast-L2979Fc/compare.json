@@ -1,0 +1,58 @@
+{
+ "orig": "/content/work/logs/afc-final/fast-L2979Fc/tree.tsv",
+ "merged": "/content/work/logs/afc-final/fast-L2979Fc/merged.tsv",
+ "constants_orig": 21665,
+ "constants_merged": 21665,
+ "modules_orig": 573,
+ "modules_merged": 443,
+ "rows_only_orig": [],
+ "rows_only_merged": [],
+ "aux_orig": 5502,
+ "aux_merged": 5485,
+ "aux_distinct_orig": 4284,
+ "aux_distinct_merged": 4284,
+ "meta_value_differs": [
+  "meta:GS.termRUN.\u00ab\u2039private\u203a\u00bb"
+ ],
+ "theorems": 9601,
+ "theorems_proof_differs": 0,
+ "theorems_proof_differs_sample": [],
+ "axioms": {
+  "OAI.PowerSaving.convolution_mainL2979Fc": {
+   "orig": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+   ],
+   "merged": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+   ],
+   "ok": true
+  },
+  "OAI.PowerSaving.transform_mainL2979Fc": {
+   "orig": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+   ],
+   "merged": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+   ],
+   "ok": true
+  },
+  "Race.bound": {
+   "orig": null,
+   "merged": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+   ],
+   "ok": true
+  }
+ },
+ "verdict": "PASS"
+}

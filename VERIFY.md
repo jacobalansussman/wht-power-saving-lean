@@ -1237,7 +1237,8 @@ fresh tree on 19 October).
 
 | package | what is proved | saving | status |
 |---|---|---|---|
-| `package/leverF` (the headline) | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17806935/10^10`; the community's #3945 with every head kept, and the recursion lever with the full cut | 1.7807e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the merged form (450 files) and on the unmerged one; rebuilt by an independent agent; this section's scripts run on it from a fresh clone of this repository on 20 October ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)); the package's `result.json` lists each check with its log |
+| `package/leverAFc` (the headline) | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17887045/10^10`; the community's #2979 words with the table A-fc, solved for the full cut, and the recursion lever with the full cut | 1.7887e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the merged form (449 files) and on the unmerged one; rebuilt by an independent agent; this section's scripts run on it from a fresh clone of this repository on 20 October ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)); the package's `result.json` lists each check with its log |
+| `package/leverF` (the headline of the fifth revision) | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17806935/10^10`; the community's #3945 with every head kept, and the recursion lever with the full cut | 1.7807e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the merged form (450 files) and on the unmerged one; rebuilt by an independent agent; this section's scripts run on it from a fresh clone of this repository on 20 October ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)); the package's `result.json` lists each check with its log |
 | `package/leverB` (the half cut on the same table) | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17581520/10^10`; the community's #3945 with every head kept, and the recursion lever | 1.7582e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the merged form (449 files) and on the unmerged one; rebuilt by an independent agent; this section's scripts run on it from a fresh clone of this repository on 19 and 20 October ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)); the package's `result.json` lists each check with its log |
 | `package/leverA` | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17564707/10^10`; the community's #2979 with every head kept, and the recursion lever | 1.7565e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the merged form (449 files); rebuilt by an independent agent; this section's scripts run on it from a fresh clone of this repository on 19 October ([scripts/logs-2026-10-19-fresh-clone/](scripts/logs-2026-10-19-fresh-clone/README.md)); the package's `result.json` lists each check with its log |
 | `package/lever2979` | the Fourier transform of every length, and convolution: OpenAI's statement with `1 - 17556473/10^10`; the community's #2979 as published, with the recursion lever | 1.7556e-3 | checked in Lean, comparator accepted, the leaderboard's verifier re-created offline on the merged form (449 files) and on the unmerged one; rebuilt by an independent agent (the package's `result.json` lists each check with its log) |
@@ -1307,6 +1308,14 @@ Then it:
    and `opaque` outside comments (the only allowed hits are the two `sorry` lines of each statement file, which
    OpenAI's file has too), and checks that no tracked file of the tree changed except `lakefile.lean`.
 
+For `package/leverAFc`, `result.json` lists seven more Lean controls under `lean_controls_extra`, which the
+script does not run, because they need more than the package in the tree: `controls/Ctl2979Fc.lean` needs
+`package/leverA`'s files in the same tree, and the six files of `controls/perturbed/` need the package's two
+perturbed tables. For those six, copy `controls/side/Work/XHostT/Data/H2979Fcnload/` and `H2979Fcnwin/` into the
+tree's `Work/XHostT/Data/`, run `lake build Work.XHostT.Data.H2979Fcnload.Calls Work.XHostT.Data.H2979Fcnwin.Calls`
+in the tree, and then `lake env lean` on each control: the three `NegSome*` files must fail and the three `NegNone*`
+files must compile.
+
 It ends with `ALL CHECKS PASSED`. The agents' runs, with machine, times and peak memory, are in each package's
 `logs/` and `result.json`. `controls/` of a lever package holds further controls compiled against the built tree:
 files that must fail to compile (one head too many, a table chunk one too high), and side checks.
@@ -1339,7 +1348,7 @@ copied under `Submission/`, only local import paths changed, and an adapter `Rac
 three phases at its commit `c92b9b6`: the Lean check, which compiles the packaged proof from source, the audit of
 the axioms, and the nanoda kernel. The verifier admits at most 500 files, and a lever package's closure has about 580 to
 700 modules, so the packaged proof merges small generated modules into larger ones; the Lean check of the
-packaged proof took the agents between about one and two and a half hours (2 h 07 for the headline), and about 10 GB. They run in the same stand-in sandbox as 12.4; the
+packaged proof took the agents between about one and two and a half hours (2 h 07 for the full cut on #3945, 1 h 03 for the table A-fc), and about 10 GB. They run in the same stand-in sandbox as 12.4; the
 verifier's own controller is not run.
 
 ### 12.6 Re-run the lever's searches and prices (no Lean)
@@ -1357,6 +1366,14 @@ tables with every head kept are in `research/record-track/programs/` and in each
 To regenerate the Lean data of a lever package from the community's files and compare it with the package:
 
     bash package/P/generators/REGENERATE.sh <a new folder>
+
+The generators of `package/lever2979`, `package/leverA` and `package/leverAFc` need Python 3.11 or earlier: with
+Python 3.12 or later, 36 data files of #2979's provider words come out different, because Python 3.12 changed how it
+adds floating-point numbers and one program chooses between near-ties by such a sum (each package's
+`generators/README.txt` says more and gives a workaround). In the fifth revision the scripts of `package/lever2979`
+and `package/leverA` stopped at their first check, because two reports in their generators had their machine paths
+shortened for publication; the sixth revision fixes that (each package's `generators/PATCHES.txt`, last paragraph).
+On a Mac with Python 3.9 all three end with `REGENERATE: ALL AS EXPECTED` (about 45 seconds and 0.26 GB each).
 
 ### 12.7 The community's own checks of the circuits (optional)
 
@@ -1417,4 +1434,5 @@ Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`; comparator `d03acab`, lean4e
 For sections 12 and 13: the community's pull requests #3945 (head `91f81d13`) and #2979 (main
 `20ecf289`); Shea's repository at `52394849c7ecf3412d39b925d75fc7fdb98994d8`; bigospeedrun/verifier at `c92b9b6`
 (re-created) and `1e009d7` (its file limit); README.md, section 9, "For the lever, the sixth result and the
-research", has the rest.
+research", has the rest. For `package/leverAFc` (the sixth revision): README.md, section 9, "For the sixth
+revision".

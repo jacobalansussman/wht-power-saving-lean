@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/content/work/hx-admit/vA/bin/python",
+    "-B",
+    "/content/work/hx-admit/rp-Afc/candidate/package/verify_release.py",
+    "--main",
+    "/content/work/hx-admit",
+    "--work",
+    "/content/work/hx-admit/rp-Afc/candidate/release",
+    "--native-cache",
+    "/content/work/hx-admit/rp-Afc/native/native-cache",
+    "--jobs",
+    "2"
+  ],
+  "exit_code": 1,
+  "log_sha256": "bf2bebfbdc0ca987f03099f3659facfd38d47c6d904399a57dc8a264d3ed6e83",
+  "log_tail": "PYC-GUARD planted stale .pyc: tree guard rejected; plain interpreter ran 'authenticated source'; fresh-prefix interpreter ran 'authenticated source'\nledger kappa does not exceed PR2269\n",
+  "script_sha256": "6cfefe80c02a6c0f243f50ca9e146e1ab1440b84a033d8a71d42be5a5fa27f6b",
+  "seconds": 982.4888761000038,
+  "stage": "release (hx-admit glue: strict-gain step skipped)"
+}

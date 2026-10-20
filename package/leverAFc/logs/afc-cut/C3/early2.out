@@ -1,0 +1,122 @@
+INSTALL L2979FcS: 20 new, 1 identical (skipped), from /content/work/afc-cut/in/stub-L2979FcS/stage; hashes /content/work/afc-cut/in-L2979FcS.sha256
+   (slot: waited 10s; heavy 2, avail 36940 MB)
+   LEAN_NUM_THREADS=2
+=== build START 15:09:48
+=== build END rc=0 wall=131s maxrss_kb=6966020 15:11:59
+Build completed successfully (9334 jobs).
+   11s Work.FourierL2979FcSNeg.UniformFourierChallenge
+   10s Work.FourierL2979FcS.UniformFourierChallenge
+   8.9s Work.Mixed.SeamConst
+   8.2s Work.FourierL2979FcS.WorkingPreparation
+   8.2s Work.FourierL2979FcS.Asymptotics
+   7.5s Work.FourierL2979FcS.Goal
+   7.2s Work.FourierL2979FcS.SectorAlgorithm
+   7.2s Work.FourierL2979FcS.ArbitraryLength
+=== nobuild START 15:11:59
+=== nobuild END rc=0 wall=8s maxrss_kb=996816 15:12:07
+All targets up-to-date (9334 jobs).
+BUILD L2979FcS OK
+CHECKS L2979FcS NUM=16256629 START Tue Oct 20 15:12:07 UTC 2026
+   (slot: waited 0s; heavy 2, avail 48499 MB)
+=== axioms START 15:12:07
+=== axioms END rc=0 wall=9s maxrss_kb=6817364 15:12:16
+'OAI.PowerSaving.transform_mainL2979FcS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL2979FcS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL2979FcS_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms L2979FcS: standard only
+   (slot: waited 0s; heavy 1, avail 46205 MB)
+=== axioms-extra START 15:12:16
+=== axioms-extra END rc=0 wall=8s maxrss_kb=6825464 15:12:24
+'OAI.PowerSaving.MX.L2979FcS.engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.L2979FcS.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL2979FcS.engine_L2979FcS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL2979FcS_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL2979FcS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL2979FcS.alphaL2979FcS_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL2979FcS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL2979FcS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL2979FcS' depends on axioms: [propext, Classical.choice, Quot.sound]
+extra axioms: standard only
+files grepped: 17 (from /content/work/afc-cut/in-L2979FcS.files)
+sorry/admit lines: 0
+forbidden-construct mentions inside backquotes (not uses): 1
+forbidden-construct lines: 0
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74 /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierL2979FcS (1 - 16256629/10^10): byte-identical to my derivation from OpenAI's statement
+challenge FourierL2979FcSNeg (1 - 16256630/10^10): byte-identical to my derivation from OpenAI's statement
+positive and negative challenge differ only in the numerator
+Compare.lean e48d6d3b (= /content/work/ours/Compare.lean)
+   (slot: waited 0s; heavy 2, avail 44883 MB)
+=== compare-pos START 15:12:24
+=== compare-pos END rc=0 wall=112s maxrss_kb=15708152 15:14:16
+compare-pos rc=0
+RESULT: PASS
+   (slot: waited 0s; heavy 1, avail 49867 MB)
+=== compare-neg START 15:14:16
+=== compare-neg END rc=1 wall=73s maxrss_kb=16070968 15:15:29
+compare-neg rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentL2979FcS._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL2979FcS: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentL2979FcS._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL2979FcS: definition body differs
+RESULT: FAIL
+VERDICT Compare positive: PASS
+VERDICT Compare negative: FAIL (expected)
+CHECKS L2979FcS ALL AS EXPECTED Tue Oct 20 15:15:29 UTC 2026
+EXIT 0
+STUB L2979FcS OK 15:15:29
+INSTALL HYP: 18 new, 2 identical (skipped), from /content/work/afc-cut/in/hyp-L2979Fc/stage; hashes /content/work/afc-cut/in-HYP.sha256
+   (slot: waited 0s; heavy 1, avail 49442 MB)
+   LEAN_NUM_THREADS=2
+=== build START 15:15:29
+=== build END rc=0 wall=109s maxrss_kb=7069068 15:17:18
+Build completed successfully (9044 jobs).
+   8.8s Work.FourierL2979Fc.Asymptotics
+   8.1s Work.FourierL2979Fc.WorkingPreparation
+   8.0s Work.FourierL2979Fc.TransformProgram
+   7.7s Work.FourierL2979Fc.ArbitraryLength
+   7.5s Work.FourierL2979Fc.Main
+   7.2s Work.FourierL2979FcNeg.UniformFourierChallenge
+   7.2s Work.FourierL2979Fc.WorkingCompiler
+   7.2s Work.FourierL2979Fc.UniformFourierChallenge
+=== nobuild START 15:17:18
+=== nobuild END rc=0 wall=7s maxrss_kb=986592 15:17:25
+All targets up-to-date (9044 jobs).
+BUILD L2979Fchyp OK
+CHECKS L2979Fc NUM=17887045 START Tue Oct 20 15:17:25 UTC 2026
+   (slot: waited 0s; heavy 0, avail 50532 MB)
+=== axioms START 15:17:25
+=== axioms END rc=0 wall=7s maxrss_kb=6926408 15:17:33
+'OAI.PowerSaving.transform_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL2979Fc_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms L2979Fc: standard only
+   (slot: waited 0s; heavy 0, avail 50535 MB)
+=== axioms-extra START 15:17:33
+=== axioms-extra END rc=0 wall=7s maxrss_kb=6915720 15:17:40
+'OAI.PowerSaving.MX.L2979Fc.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL2979Fc.engine_L2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL2979Fc_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL2979Fc.alphaL2979Fc_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+@OAI.PowerSaving.transform_mainL2979Fc : ∀ [hE_L2979Fc : Fact OAI.PowerSaving.MX.L2979Fc.EngineStmt],
+  OAI.PowerSaving.DFTGoalL2979Fc
+@OAI.PowerSaving.convolution_mainL2979Fc : ∀ [hE_L2979Fc : Fact OAI.PowerSaving.MX.L2979Fc.EngineStmt],
+  OAI.PowerSaving.ConvGoalL2979Fc
+extra axioms: standard only
+files grepped: 25 (from /content/work/afc-cut/in-HYPALL.files)
+sorry/admit lines: 0
+forbidden-construct mentions inside backquotes (not uses): 2
+forbidden-construct lines: 0
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74 /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierL2979Fc (1 - 17887045/10^10): byte-identical to my derivation from OpenAI's statement
+challenge FourierL2979FcNeg (1 - 17887046/10^10): byte-identical to my derivation from OpenAI's statement
+positive and negative challenge differ only in the numerator
+Compare.lean skipped (ISK_NOCOMPARE=1)
+CHECKS L2979Fc (no Compare) ALL AS EXPECTED Tue Oct 20 15:17:40 UTC 2026
+EXIT 0
+HYP L2979Fc OK 15:17:40
+EARLY2 DONE

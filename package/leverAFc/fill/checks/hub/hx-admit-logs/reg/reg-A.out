@@ -1,0 +1,10 @@
+PASS verify.py PASS_RANK7_JOINT_ENDFRAMES_THREE_STAGE_REPLAY controls 86 seconds 156.3
+PASS check_allocation.py PASS_RANK7_LITERAL_OWNERS_AND_EXACT_MOMENT 0.0017290339826465135177169999999999999999999998999999999999999999999999 0.000004998757898408639167
+PASS check_cap.py PASS_LITERAL_ALLOCATION_BELOW_FIXED_INVENTORY_CAP_WITH_RECORDED_GAP gap 1.7822290026637263e-09
+Traceback (most recent call last):
+  File "/content/work/hx-admit/reg/A/rank7-joint-endframes/run_registered.py", line 104, in <module>
+    main()
+  File "/content/work/hx-admit/reg/A/rank7-joint-endframes/run_registered.py", line 96, in main
+    assert admit['fill_sha256'] == sha(P / 'allocation/FILL.json.gz') == claim['fill_sha256']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

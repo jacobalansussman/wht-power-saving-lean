@@ -1,0 +1,61 @@
+{
+ "calls": 666,
+ "candidate_sha256": {
+  "DISPATCH": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c",
+  "FILL": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39",
+  "ORDER": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+  "PROFILE": "94a819747f3ced41f1544ada0036c983fc0c92847b9644380f877a06cd7931cf"
+ },
+ "controls": [
+  {
+   "name": "false_replica_count",
+   "reason": "complete T call coverage"
+  },
+  {
+   "name": "missing_literal_helper_role",
+   "reason": "complete role count"
+  },
+  {
+   "name": "unbound_provider_at_actual_call",
+   "reason": "provider dispatch coverage"
+  },
+  {
+   "name": "unavailable_source_window",
+   "reason": "literal source window"
+  },
+  {
+   "name": "same_call_physical_family_collision",
+   "reason": "same-call family collision"
+  },
+  {
+   "name": "unpaid_hole_in_compact_pending_prefix",
+   "reason": "compact bin prefix"
+  },
+  {
+   "name": "changed_total_paid_profile",
+   "reason": "complete claimed profile"
+  }
+ ],
+ "engine_sha256": "77a848729159e271ba64f403dfd59dddb13044b17b2950fa56700f442e2fe461",
+ "idle": {
+  "1": 17310,
+  "3": 4956,
+  "5": 1728,
+  "48": 28190
+ },
+ "live": 66304,
+ "physical": 66794,
+ "profile": {
+  "1": 1645680,
+  "2": 470196,
+  "3": 159468,
+  "4": 71928,
+  "5": 13716,
+  "8": 5328,
+  "48": 28190
+ },
+ "rank_mass": 4816512,
+ "replicas": 74,
+ "roles": 271728,
+ "status": "PASS_INDEPENDENT_T_OWNER_CHRONOLOGY_MASKS"
+}

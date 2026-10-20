@@ -1,0 +1,38 @@
+A-FILL.json.gz: OK
+A-PROFILE.json: OK
+Afc-DISPATCH.json: OK
+Afc-FILL.json.gz: OK
+Afc-ORDER.json: OK
+Afc-PROFILE.json: OK
+SOL-MIP0.json: OK
+Cloning into '/content/work/hx-admit/hub'...
+origin/main 12fa8c5c844be21bfefb38a19503fbd867a11244
+From https://github.com/CrocSwap/integer-mult-bounds
+ * branch              e2ca469b08385d3d5e29a918d66dbefaf889e9f3 -> FETCH_HEAD
+ * branch              e62d3eb9005117d82a9babcfa937ecc53237c490 -> FETCH_HEAD
+ * branch              b74b25f3ccc84c16e1a801d73b2f47e5ea764c78 -> FETCH_HEAD
+ * branch              a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf -> FETCH_HEAD
+ * branch              224bd5e56041c40078ff6b5fa7393733a215de5c -> FETCH_HEAD
+ * branch              51309592971e3b5be935599eed2a95404dc7781e -> FETCH_HEAD
+ * branch              18d03c447886895ef9abf888398178e0428533ca -> FETCH_HEAD
+ * branch              e9307b48d7d1b690939935ecef0f8e524e6d92f4 -> FETCH_HEAD
+have e2ca469b08385d3d5e29a918d66dbefaf889e9f3
+have e62d3eb9005117d82a9babcfa937ecc53237c490
+have b74b25f3ccc84c16e1a801d73b2f47e5ea764c78
+have a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf
+have 224bd5e56041c40078ff6b5fa7393733a215de5c
+have 51309592971e3b5be935599eed2a95404dc7781e
+have 18d03c447886895ef9abf888398178e0428533ca
+have e9307b48d7d1b690939935ecef0f8e524e6d92f4
+rank7-joint-endframes tree at base: 9981a8c135d98105c6299b324ff9faef409f2a41
+rank7-joint-endframes tree at 20ecf289 (ah-gate): 9981a8c135d98105c6299b324ff9faef409f2a41
+staged544-clock-ceiling: exported from base, tree e867b76f11462f8a73d657a84e5d1deafe00b17e
+Using Python 3.12.3 environment at: /content/work/hx-admit/vA
+repinned /content/work/hx-admit/pkg/A/research/rank7-joint-endframes allocation pins changed: ['allocation/FILL.json.gz'] manifest entries changed: ['ALLOCATION-PINS.json', 'allocation/FILL.json.gz'] formats {'indent': 1, 'sort_keys': True} '\n' {'indent': 1, 'sort_keys': True} '\n'
+repinned /content/work/hx-admit/pkg/Afc/research/rank7-joint-endframes allocation pins changed: ['allocation/FILL.json.gz', 'allocation/PROFILE.json'] manifest entries changed: ['ALLOCATION-PINS.json', 'allocation/FILL.json.gz', 'allocation/PROFILE.json'] formats {'indent': 1, 'sort_keys': True} '\n' {'indent': 1, 'sort_keys': True} '\n'
+repinned /content/work/hx-admit/pkg/AfcC/research/rank7-joint-endframes allocation pins changed: ['allocation/FILL.json.gz', 'allocation/PROFILE.json'] manifest entries changed: ['ALLOCATION-PINS.json', 'CLAIM.json', 'allocation/FILL.json.gz', 'allocation/PROFILE.json'] formats {'indent': 1, 'sort_keys': True} '\n' {'indent': 1, 'sort_keys': True} '\n'
+pub c2136be9434cda51 94a819747f3ced41 436e0d297cbdf195
+A 764395fcc2d883e9 94a819747f3ced41 436e0d297cbdf195
+Afc 7fc766c6c3e1561c 5df7941120150492 436e0d297cbdf195
+AfcC 7fc766c6c3e1561c 5df7941120150492 adfa88833fa8955d
+SETUP_DONE

@@ -1,8 +1,11 @@
-# A-fc: a higher table on #2979's words with the full cut (checked by computer, not proved in Lean)
+# A-fc: a higher table on #2979's words with the full cut (proved in Lean at 1.7887045e-3)
 
-**Status: checked by computer, not proved in Lean.** The Lean result of this revision is the full cut on #3945 with
-every head kept, 1.7806935e-3 (`package/leverF`). This folder holds a table for #2979's words on which the same full
-cut prices higher, at **1.7887046e-3** (8.0e-6 above). It is not built in Lean.
+**Status: proved in Lean at 1.7887045e-3** (`package/leverAFc`, the headline of the sixth revision, 20 October
+2026). This folder holds a table for #2979's words on which the full cut prices at **1.7887046e-3** (the price
+1.78870456e-3, rounded to the nearest), 8.0e-6 above the full cut on #3945 with every head kept (1.7806935e-3,
+`package/leverF`). The Lean figure is the point of the 10^-10 grid just below the price; the rounded figure
+1.7887046e-3 is not proved in Lean (the rate fact is false there). This folder was written for the fifth revision,
+when the table was checked by computer only; only its Lean status is brought up to date here.
 
 ## What it is
 
@@ -18,10 +21,10 @@ its corruption controls.
 - The full cut: the heads are removed (their arrays take a job of 25 = 73 - 48); the table has no other rank-48
   block, so nothing is split, and every paid rank is at most 23 < 25, so the recursion with two job sizes
   (Theorem 1G) applies. Theorem 1G itself and the general theorem of the full
-  cut are proved in Lean (they are the ones `package/leverF` uses on #3945 with every head kept). What is not in Lean
-  is this table's own instance: its heads-first certificate and the rate fact 17,887,045/10^10 are checked by
-  computer; the cut fact on #2979's words is argued by hand from the template it shares with #3945 (where it is
-  proved in Lean), not checked.
+  cut are proved in Lean (they are the ones `package/leverF` uses on #3945 with every head kept). This table's own
+  instance is proved in Lean too, in `package/leverAFc`: its heads-first certificate, the rate fact 17,887,045/10^10
+  and the cut fact on #2979's words. In the fifth revision the first two were checked by computer and the cut fact
+  was argued by hand from the template it shares with #3945, not checked.
 - The price: b = 1.7887045643e-3 by three routes (exact rational enclosures certified on a 1e-24 grid; 60 digits;
   an independent exact interval program at 70 digits), which agree to 3e-60. The grid figure 17,887,045/10^10 holds,
   and one step higher fails.

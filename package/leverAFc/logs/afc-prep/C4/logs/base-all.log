@@ -1,0 +1,17 @@
+== elan Tue Oct 20 14:13:03 UTC 2026
+elan rc=0
+== setup Tue Oct 20 14:13:05 UTC 2026
+setup rc=0
++ echo 'CACHE rc=0'
+CACHE rc=0
+== build Tue Oct 20 14:16:19 UTC 2026
+build script rc=0
+=== STEP build END rc=0 wall=1254s maxrss_kb=9708900 last: Build completed successfully (9277 jobs).
+BUILD rc=0
+=== STEP ours-compare-fourier END rc=0 wall=65s maxrss_kb=16123940 last: RESULT: PASS
+=== STEP ours-compare-negative END rc=1 wall=64s maxrss_kb=16123580 last: RESULT: FAIL
+=== STEP nobuild END rc=0 wall=8s maxrss_kb=991828 last: All targets up-to-date (9277 jobs).
+== tools Tue Oct 20 14:41:52 UTC 2026
+tools rc=0
+READY-MARKED
+== END Tue Oct 20 14:43:20 UTC 2026

@@ -1,0 +1,80 @@
+AFC-DATA START Tue Oct 20 15:06:11 UTC 2026 on 70bbcce2940a
+copy of ours/TA done in 66s
+=== nobuild-base START 15:07:17
+=== nobuild-base END rc=0 wall=42s maxrss_kb=985332 15:07:59
+All targets up-to-date (9504 jobs).
+INSTALL A2979Fc: 54 new, 48 identical (skipped), from /content/work/afc-data/in/T; hashes /content/work/afc-data/in-A2979Fc.sha256
+   (slot: waited 0s; heavy 0, avail 50294 MB)
+   LEAN_NUM_THREADS=3
+=== build START 15:08:00
+=== build END rc=0 wall=471s maxrss_kb=6895420 15:15:51
+Build completed successfully (9317 jobs).
+   131s Work.XHostT.Data.D3945.Disp
+   115s Work.XHostT.Data.H2979Fc.DispLink
+   108s Work.XHostT.TDisp
+   49s Work.XHostT.Data.H2979Fcnload.Calls
+   44s Work.XHostT.Data.H2979Fcnwin.Calls
+   43s Work.XHostT.Data.H2979Fc.GlobC3
+   41s Work.XHostT.Data.H2979Fc.GlobC1
+   41s Work.XHostT.Data.H2979Fc.GlobC0
+=== nobuild START 15:15:51
+=== nobuild END rc=0 wall=9s maxrss_kb=1015084 15:16:00
+All targets up-to-date (9317 jobs).
+BUILD A2979Fc OK
+   (slot: waited 0s; heavy 0, avail 49724 MB)
+=== axioms START 15:16:00
+=== axioms END rc=0 wall=8s maxrss_kb=6847904 15:16:08
+'OAI.PowerSaving.XHostT.K.DH2979Fc.whole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.rem_hist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.res_sum0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.res_sum1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.heads_cnt' depends on axioms: [propext]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.f1_cnt' depends on axioms: [propext]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.res_ge0' depends on axioms: [propext]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.res_ge1' depends on axioms: [propext]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.res_eq01' depends on axioms: [propext]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.dpChk_ok' depends on axioms: [propext]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.dp_disp' depends on axioms: [propext, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.sched2979Fc_fits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.sched2979Fc_hrem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.sched2979Fc_tm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.sched2979Fc_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.sched2979Fc_heads' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.sched2979Fc_f1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.sched2979Fc_hcost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.resK2979Fc_disp' depends on axioms: [propext, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.resK2979Fc_ge4' depends on axioms: [propext, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.resK2979Fc_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.resK2979Fc_eq0' depends on axioms: [propext, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.card_live2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.unit2979Fc_arith' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.hU2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.headBins2979Fc_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.hLlen2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.XHostT.Inst.heads_first2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms A2979Fc: standard only
+axiom lines: 28
+no sorry warnings in the build log
+sorry/admit lines: 0
+forbidden-construct lines: 0
+decide +kernel lines in my files: 731
+   (slot: waited 0s; heavy 0, avail 49720 MB)
+NEG-OK Work/XHostT/Data/H2979Fc/NegF1.lean rc=1: /content/work/afc-data/in/neg/Work/XHostT/Data/H2979Fc/NegF1.lean:9:43: error: Tactic `decide` proved that the proposition
+   (slot: waited 0s; heavy 0, avail 49720 MB)
+NEG-OK Work/XHostT/Data/H2979Fc/NegGlob.lean rc=1: /content/work/afc-data/in/neg/Work/XHostT/Data/H2979Fc/NegGlob.lean:8:43: error: Tactic `decide` proved that the proposition
+   (slot: waited 0s; heavy 0, avail 49721 MB)
+NEG-OK Work/XHostT/Data/H2979Fc/NegHeads.lean rc=1: /content/work/afc-data/in/neg/Work/XHostT/Data/H2979Fc/NegHeads.lean:10:50: error: Tactic `decide` proved that the proposition
+   (slot: waited 0s; heavy 0, avail 49730 MB)
+NEG-NONE-OK Work/XHostT/Data/H2979Fcnload/NegNone119.lean compiles
+   (slot: waited 0s; heavy 0, avail 49733 MB)
+NEG-OK Work/XHostT/Data/H2979Fcnload/NegSome119.lean rc=1: /content/work/afc-data/in/neg/Work/XHostT/Data/H2979Fcnload/NegSome119.lean:9:90: error: Tactic `decide` proved that the proposition
+   (slot: waited 0s; heavy 0, avail 49738 MB)
+NEG-NONE-OK Work/XHostT/Data/H2979Fcnwin/NegNone334.lean compiles
+   (slot: waited 0s; heavy 0, avail 49757 MB)
+NEG-NONE-OK Work/XHostT/Data/H2979Fcnwin/NegNone46.lean compiles
+   (slot: waited 0s; heavy 0, avail 49763 MB)
+NEG-OK Work/XHostT/Data/H2979Fcnwin/NegSome334.lean rc=1: /content/work/afc-data/in/neg/Work/XHostT/Data/H2979Fcnwin/NegSome334.lean:9:90: error: Tactic `decide` proved that the proposition
+   (slot: waited 0s; heavy 0, avail 49697 MB)
+NEG-OK Work/XHostT/Data/H2979Fcnwin/NegSome46.lean rc=1: /content/work/afc-data/in/neg/Work/XHostT/Data/H2979Fcnwin/NegSome46.lean:9:85: error: Tactic `decide` proved that the proposition
+AFC-DATA: EVERY VERDICT AS EXPECTED Tue Oct 20 15:16:36 UTC 2026
+EXIT 0

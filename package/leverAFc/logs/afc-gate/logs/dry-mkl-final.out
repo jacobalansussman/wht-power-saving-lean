@@ -1,0 +1,8 @@
+ok L2979Fc files 18 alpha 1 - 1788704501/10^12, target 1 - 17887045/10^10
+  alpha = 1 - 1788704501/10^12 < target = 1 - 17887045/10^10 (exact)
+  profile 2979Fc: mixed root saving 0.00178870456430 (Decimal bisection), 0.6430 grid steps above N
+  rate point 1 - 1788704502/10^12 below the root: the rate fact holds (independent check)
+  e-r45m1 enclosure: OK N = 17887045 slack_rel 1.538e-10
+  challenge FourierL2979Fc (1 - 17887045/10^10): byte-identical to my derivation from OpenAI's statement
+  challenge FourierL2979FcNeg (1 - 17887046/10^10): byte-identical to my derivation from OpenAI's statement
+ok L2979Fc mode final N 17887045: 20 files in dry/final-L2979Fc/stage

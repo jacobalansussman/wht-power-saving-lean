@@ -31,3 +31,12 @@ wht45/lever/e-r45m1/tools/mk_rate_mixed.py  (original sha256 ec73845024017ddb9be
 
 wht43/bound-check/k-combine/toolkit: a symbolic link to ../k-lower/toolkit in the workspace; here a copy of that folder.
 wht45/lever2979/x-words/tools/pack_ceil2.py reads its helper modules from $KWORD_TOOLS (set by REGENERATE.sh); unchanged.
+
+Published copy (sixth revision of the repository, 20 Oct 2026)
+  tree/wht45/lever2979/x-gate/out/lower-base.json and lower-extra.json: the machine paths inside them were shortened
+  for publication (fields canonical, word, out). sha256 before (as the run wrote them) and after:
+    lower-base.json   f219f479f8b72d772648715709686c171744580bb35bc23757bc99b6cac10a2d -> 3ceb0fe4b5e024827fbf15b6f2c5cf02e52cdb668478fa607c4d7ddf13353409
+    lower-extra.json  5e5d794595c9d370c9212900bdb915d002b88833de9ea41d0f29982010924012 -> 1f0d40c904f118b0a48c54145644a0475c39a8e04c1bec2e60d9464ee3615b86
+  tree.sha256 gives the new values. REGENERATE.sh, right after mk_resid2979.py, sets the two report hashes that the
+  residual file records back to the values before, so the residual file and everything made from it come out byte
+  for byte as before; the comparison of the regenerated reports with these ignores the path fields, as it always did.

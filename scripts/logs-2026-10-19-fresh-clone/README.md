@@ -38,8 +38,9 @@ proof with both kernels ("Your solution is okay!", 88 minutes, 15.0 GB) and reje
 stronger ("Const does not match ... decimalExponentL3945H"). `rf-fresh-leverB.out` is its output and `leverB/` its
 logs, kept the same way (the comparator summaries keep the first lines and the verdict lines of each run).
 
-The same run on `package/leverF` (the full cut on #3945 with every head kept, 1.7806935e-3, the headline), on 20
-October (UTC), from a second test commit with `package/leverF` added. That commit differs from this revision only
+The same run on `package/leverF` (the full cut on #3945 with every head kept, 1.7806935e-3, the headline of the
+fifth revision), on 20 October (UTC), from a second test commit with `package/leverF` added. That commit differs
+from this revision only
 in documentation and in `package/leverF`'s records (its logs, `README.txt`, the checks listed in `result.json`,
 `SHA256SUMS`, and the import path of one pricing program); its scripts and the overlay, controls and module list
 of `package/leverF`, which are what the scripts read, are byte for byte those of this revision. The script was
@@ -49,3 +50,16 @@ tree overwritten; one parallel build of every module (9,633 jobs, 48 minutes, 9.
 ended `ALL CHECKS PASSED` for `package/leverF`; the official comparator accepted the proof with both kernels ("Your
 solution is okay!", 76 minutes, 16.1 GB) and rejected the statement one unit stronger ("Const does not match ...
 decimalExponentL3945F"). `rf-fresh-leverF.out` is its output and `leverF/` its logs.
+
+The same run on `package/leverAFc` (the full cut on #2979's words with the table A-fc, 1.7887045e-3, the headline
+of the sixth revision), on 20 October (UTC), from a test commit of the sixth revision. That commit differs from the
+revision in documentation, in this folder, and in `package/leverAFc`'s `SHA256SUMS` and one comment line of its
+`generators/REGENERATE.sh`; its scripts and the overlay, controls, module list and `result.json` of
+`package/leverAFc`, which are what the scripts read, are byte for byte those of this revision. The script was
+`fu-fresh.sh`, which is `rf-fresh.sh` without the optional `package/u8x0hq` step and with three threads for the
+build. The overlay laid with no file of the tree overwritten;
+one parallel build of every module (9,503 jobs, 22 minutes, 9.6 GB at most); `build-and-check.sh` ended
+`ALL CHECKS PASSED` for `package/leverAFc` (25 minutes), with the five Lean controls that `result.json` lists under
+`lean_controls`. `fu-fresh-leverAFc.out` is its output up to there and `leverAFc/` its logs, kept the same way. The
+official comparator was not part of this record; it accepted the same overlay on the build machine (the package's
+`logs/`) and, in the checks of two of the agents that tried to refute the result, on two more machines.

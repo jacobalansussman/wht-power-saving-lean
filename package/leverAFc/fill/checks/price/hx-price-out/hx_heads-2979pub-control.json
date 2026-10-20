@@ -1,0 +1,36 @@
+{
+ "T": 74,
+ "calls": 666,
+ "roles_per_call": 408,
+ "roles": 271728,
+ "W": 66304,
+ "control_bridge_first": true,
+ "widths_providers_equal_own_gf2": {
+  "extra": true,
+  "gauge44": true
+ },
+ "literal_heads": 0,
+ "heads_by_child": {},
+ "unhosted_rank48_not_head": {
+  "8": 8064,
+  "10": 8022,
+  "12": 6512,
+  "13": 5592
+ },
+ "idle_profile": {
+  "1": 17310,
+  "3": 4956,
+  "5": 1728,
+  "48": 28190
+ },
+ "paid_profile": {
+  "1": 1645680,
+  "2": 470196,
+  "3": 159468,
+  "4": 71928,
+  "5": 13716,
+  "8": 5328,
+  "48": 28190
+ },
+ "rank_mass": 4816512
+}

@@ -1,0 +1,10 @@
+Work/Gate/CutFact2979Fc.lean:67:22: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+'OAI.PowerSaving.PB.Gate2979Fc.bph_cutF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.PB.Gate2979Fc.bph_cutF2979' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.PB.Gate2979Fc.cutTgt_rank25' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.PB.Gate2979Fc.xnetGeomW_cut_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.PB.Gate2979Fc.hcutF_Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.PB.Gate2979Fc.unitFc_48' depends on axioms: [propext]
+'OAI.PowerSaving.PB.Gate2979Fc.hcutF_Fc_fewer' depends on axioms: [propext]
+'OAI.PowerSaving.PB.Gate2979Fc.unitFc_ne_cutFc' depends on axioms: [propext]
+'OAI.PowerSaving.PB.Gate2979Fc.bundle_Fc_hyp' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,61 @@
+tools: afa65e57a1770f59 /content/work/cc/bin/comparator 8c5d64ba68f4d3a6 /content/work/cc/bin/lean4export 1f50c692a7ff2a12 /content/work/cc/bin/nanoda_bin 8fac2a5378b48d35 /content/work/cc-jail/jail2.sh 1e6528c3f2c8b10b /content/work/cc-jail/nounix 01f56ebe57de64f1 /content/work/cc-jail/fresh-bin/lake 
+   (slot: waited 0s; heavy 0, avail 50589 MB)
+=== l2979fc-pos START Tue Oct 20 16:53:44 UTC 2026 config: f23d1ee898638fad
+{
+  "challenge_module": "Work.FourierL2979Fc.UniformFourierChallenge",
+  "solution_module": "Work.FourierL2979Fc.Main",
+  "theorem_names": [
+    "OAI.PowerSaving.transform_mainL2979Fc",
+    "OAI.PowerSaving.convolution_mainL2979Fc"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
+olean files before: 839
+=== l2979fc-pos END rc=0 wall=1707s maxrss_kb=14580896 Tue Oct 20 17:22:11 UTC 2026
+warning: Work/Mixed/SeamConst.lean:55:18: Unused tactic linter: `linarith` does nothing
+info: Work/Mixed/SeamConst.lean:89:0: 'OAI.PowerSaving.MX.dom_envelope_of_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:90:0: 'OAI.PowerSaving.MX.can_envelope_of_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:91:0: 'OAI.PowerSaving.MX.envelope_nat_real_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:92:0: 'OAI.PowerSaving.MX.can_envelope_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+nanoda kernel accepts the solution
+Lean default kernel accepts the solution
+Your solution is okay!
+olean files after: 839
+VERDICT comparator positive: accepted
+   (slot: waited 0s; heavy 0, avail 50612 MB)
+=== l2979fc-neg START Tue Oct 20 17:22:12 UTC 2026 config: 337eafe5207db9bb
+{
+  "challenge_module": "Work.FourierL2979FcNeg.UniformFourierChallenge",
+  "solution_module": "Work.FourierL2979Fc.Main",
+  "theorem_names": [
+    "OAI.PowerSaving.transform_mainL2979Fc",
+    "OAI.PowerSaving.convolution_mainL2979Fc"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
+olean files before: 839
+=== l2979fc-neg END rc=1 wall=101s maxrss_kb=7155304 Tue Oct 20 17:23:53 UTC 2026
+⚠ [9487/9500] Replayed Work.Mixed.SeamConst
+warning: Work/Mixed/SeamConst.lean:55:18: this tactic is never executed
+warning: Work/Mixed/SeamConst.lean:55:18: Unused tactic linter: `linarith` does nothing
+info: Work/Mixed/SeamConst.lean:89:0: 'OAI.PowerSaving.MX.dom_envelope_of_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:90:0: 'OAI.PowerSaving.MX.can_envelope_of_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:91:0: 'OAI.PowerSaving.MX.envelope_nat_real_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/Mixed/SeamConst.lean:92:0: 'OAI.PowerSaving.MX.can_envelope_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+uncaught exception: Const does not match between challenge and target 'OAI.PowerSaving.decimalExponentL2979Fc'
+olean files after: 839
+VERDICT comparator negative: rejected (expected)
+CMP L2979Fc ALL AS EXPECTED
+EXIT 0

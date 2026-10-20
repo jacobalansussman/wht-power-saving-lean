@@ -1,0 +1,86 @@
+{
+ "checks": {
+  "children": true,
+  "heads_count": true,
+  "nonheads_count": true,
+  "heads_rem_48": true,
+  "rem48_bins_eq_heads_plus_nonheads": true,
+  "one_head_per_array": true,
+  "fill_recount_heads_equal": true,
+  "fill_recount_nonheads_equal": true,
+  "template_heads_first": true,
+  "template_F1_read_after": true
+ },
+ "all_ok": true,
+ "heads": 16086,
+ "by_child": {
+  "8": 8064,
+  "10": 8022
+ },
+ "nonheads": 12104,
+ "nonheads_by_child": {
+  "12": 6512,
+  "13": 5592
+ },
+ "heads_sha256": "f6f7c82ebc246b7e245928ec209f34d4587f629e536d2e15f73f678745b3561b",
+ "heads_content_sha256": "6e461f9ba4968b463626950f8ee296906d365eca763de139b945c643b9b32193",
+ "head_bins_sha256": "633cf6d0abdf2b80ac1fdd4be9239b779bc44b230ad96e769dd2e116cbf9e63b",
+ "first_heads": [
+  [
+   896,
+   0,
+   8,
+   0,
+   0,
+   0,
+   144
+  ],
+  [
+   897,
+   0,
+   8,
+   0,
+   1,
+   0,
+   144
+  ],
+  [
+   898,
+   0,
+   8,
+   0,
+   2,
+   0,
+   144
+  ]
+ ],
+ "last_heads": [
+  [
+   148285,
+   73,
+   10,
+   1,
+   109,
+   0,
+   607
+  ],
+  [
+   148286,
+   73,
+   10,
+   1,
+   110,
+   0,
+   607
+  ],
+  [
+   148287,
+   73,
+   10,
+   1,
+   111,
+   0,
+   607
+  ]
+ ]
+}

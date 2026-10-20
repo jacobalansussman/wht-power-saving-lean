@@ -1,6 +1,6 @@
 generators/: how the generated Lean files of this package are made again
 
-Run (Python 3, standard library only; about 3.5 minutes and under 0.3 GB on a laptop):
+Run (Python 3.11 or earlier, standard library only; about 3.5 minutes and under 0.3 GB on a laptop):
 
     bash generators/REGENERATE.sh /some/new/folder
 
@@ -12,6 +12,20 @@ with ../SHA256SUMS and with the controls in ../controls/. Every generator that w
 one unit too high and must refuse. On 19 Oct 2026 it ended in "REGENERATE: ALL AS EXPECTED": 185 overlay files came
 out byte-identical (written by the generators, or copied in by the word-stage tool), none differed, and the four
 controls and three side checks came out byte-identical too. The record of that run is ../logs/regenerate/.
+
+Python 3.11 or earlier. x-words/tools/pack_ceil2.py chooses a bank pattern by the smallest sum of squares of floats,
+and Python 3.12 changed how sum() adds floats (compensated summation), so near-ties break differently: on Python 3.12
+or later, 36 row tables of the two provider words (Work/GCert/Data/Gen/S2979BRows0..17.lean and S2979ERows0..17.lean)
+come out different and the script ends "REGENERATE: SOMETHING FAILED". Those files are the ones Lean compiled and
+checked; only their regeneration depends on the Python version. With Python 3.12 or later installed, make a virtual
+environment with an older Python and put it first on PATH, for example:
+
+    python3.11 -m venv /tmp/py311 && PATH=/tmp/py311/bin:$PATH bash generators/REGENERATE.sh /some/new/folder
+
+The two lowering reports in tree/wht45/lever2979/x-gate/out/ (lower-base.json, lower-extra.json) name the machine
+paths of the run that made them; those paths were shortened for publication. tree.sha256 gives their published bytes,
+and REGENERATE.sh puts their original sha256 (f219f479..., 5e5d7945...) back into the residual file it makes, since
+that file records them; PATCHES.txt says the same.
 
 tree/ holds the programs at the same relative paths as in my workspace, so each runs unchanged. The changes are one
 path-only patch (absolute paths become $GEN_ROOT, which REGENERATE.sh sets to tree/) and one sha256 pin that follows

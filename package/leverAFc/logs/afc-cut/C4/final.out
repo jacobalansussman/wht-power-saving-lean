@@ -1,0 +1,175 @@
+afc-data built + axioms OK 15:16:26
+cp -a /content/work/afc-data/T done in 86s
+INSTALL ENG: 10 new, 0 identical (skipped), from /content/work/afc-cut/in/eng; hashes /content/work/afc-cut/in-ENG.sha256
+INSTALL PROV: 2 new, 0 identical (skipped), from /content/work/afc-cut/in/prov; hashes /content/work/afc-cut/in-PROV.sha256
+INSTALL L2979Fc: 18 new, 2 identical (skipped), from /content/work/afc-cut/in/final-L2979Fc/stage; hashes /content/work/afc-cut/in-L2979Fc.sha256
+   (slot: waited 0s; heavy 0, avail 49761 MB)
+   LEAN_NUM_THREADS=3
+=== build START 15:17:53
+=== build END rc=0 wall=163s maxrss_kb=7698712 15:20:36
+Build completed successfully (9490 jobs).
+   85s Work.L2979Fc.Stmt
+   62s Work.Mixed.Rate2979Fc
+   54s Work.Mixed.RateMono
+   23s Work.L2979Fc.Prov
+   14s Work.Mixed.FullCut2979Fc
+   12s Work.Mixed.Bridge.Inst2979Fc
+   10s Work.Mixed.Rate2979FcSharp
+   9.4s Work.Mixed.Bridge.HFTest2979FcW
+=== nobuild START 15:20:36
+=== nobuild END rc=0 wall=20s maxrss_kb=978568 15:20:56
+All targets up-to-date (9490 jobs).
+BUILD F1 OK
+axiom lines of the engine build: 1104
+Work/XHostT/Data/H2979Fc/Whole.lean:44:0: 'OAI.PowerSaving.XHostT.K.DH2979Fc.whole' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/XHostT/Inst/S2979Fc.lean:38:0: 'OAI.PowerSaving.XHostT.Inst.sched2979Fc_fits' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/XHostT/Data/H2979Fc/Glob.lean:78:0: 'OAI.PowerSaving.XHostT.K.DH2979Fc.rem_hist' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/XHostT/Data/H2979Fc/Glob.lean:79:0: 'OAI.PowerSaving.XHostT.K.DH2979Fc.res_sum0' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/XHostT/Data/H2979Fc/Glob.lean:80:0: 'OAI.PowerSaving.XHostT.K.DH2979Fc.res_sum1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/XHostT/Data/H2979Fc/Heads.lean:20:0: 'OAI.PowerSaving.XHostT.K.DH2979Fc.heads_cnt' depends on axioms: [propext]
+Work/XHostT/Data/H2979Fc/DispLink.lean:52:0: 'OAI.PowerSaving.XHostT.K.DH2979Fc.dpChk_ok' depends on axioms: [propext]
+Work/XHostT/Data/H2979Fc/DispLink.lean:53:0: 'OAI.PowerSaving.XHostT.K.DH2979Fc.dp_disp' depends on axioms: [propext, Quot.sound]
+Work/XHostT/Inst/S2979FcFacts.lean:99:0: 'OAI.PowerSaving.XHostT.Inst.sched2979Fc_heads' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/XHostT/Inst/S2979FcFacts.lean:100:0: 'OAI.PowerSaving.XHostT.Inst.sched2979Fc_f1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/XHostT/Inst/S2979FcFacts.lean:101:0: 'OAI.PowerSaving.XHostT.Inst.sched2979Fc_hcost' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/XHostT/Inst/S2979FcFacts.lean:102:0: 'OAI.PowerSaving.XHostT.Inst.resK2979Fc_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/XHostT/Inst/S2979FcFacts.lean:103:0: 'OAI.PowerSaving.XHostT.Inst.resK2979Fc_eq0' depends on axioms: [propext, Quot.sound]
+Work/XHostT/Inst/S2979FcFacts.lean:104:0: 'OAI.PowerSaving.XHostT.Inst.card_live2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Rate2979Fc.lean:129:0: 'OAI.PowerSaving.MX.rate2979Fc_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Rate2979Fc.lean:130:0: 'OAI.PowerSaving.MX.rate2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/R5Joint2979Fc.lean:78:0: 'OAI.PowerSaving.MX.sep2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/R5Joint2979Fc.lean:79:0: 'OAI.PowerSaving.MX.rk_bounds2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/R5Joint2979Fc.lean:80:0: 'OAI.PowerSaving.MX.rateQ2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/R5Joint2979Fc.lean:81:0: 'OAI.PowerSaving.MX.allotM2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/R5Joint2979Fc.lean:82:0: 'OAI.PowerSaving.MX.rateQ2979Fc'' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/R5Joint2979Fc.lean:83:0: 'OAI.PowerSaving.MX.allotM2979Fc'' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Hist2979Fc.lean:130:0: 'OAI.PowerSaving.MX.body2979Fc_eq_cut' does not depend on any axioms
+Work/Mixed/Hist2979Fc.lean:131:0: 'OAI.PowerSaving.MX.hbody2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Hist2979Fc.lean:132:0: 'OAI.PowerSaving.MX.body2979Fc_no48' depends on axioms: [propext]
+Work/Mixed/Hist2979Fc.lean:133:0: 'OAI.PowerSaving.MX.hsplit2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Hist2979Fc.lean:134:0: 'OAI.PowerSaving.MX.hsplit2979Fc_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Hist2979Fc.lean:135:0: 'OAI.PowerSaving.MX.hcut2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Hist2979Fc.lean:136:0: 'OAI.PowerSaving.MX.mass2979Fc' depends on axioms: [propext]
+Work/Mixed/Hist2979Fc.lean:137:0: 'OAI.PowerSaving.MX.unit2979Fc_mass' depends on axioms: [propext]
+Work/Mixed/Hist2979Fc.lean:138:0: 'OAI.PowerSaving.MX.count2979Fc' depends on axioms: [propext]
+Work/Mixed/Hist2979Fc.lean:139:0: 'OAI.PowerSaving.MX.cut2979Fc_sep' does not depend on any axioms
+Work/Mixed/Hist2979Fc.lean:140:0: 'OAI.PowerSaving.MX.cut2979Fc_no48' depends on axioms: [propext]
+Work/Mixed/Hist2979Fc.lean:141:0: 'OAI.PowerSaving.MX.cut2979Fc_no24' depends on axioms: [propext]
+Work/Mixed/Hist2979Fc.lean:142:0: 'OAI.PowerSaving.MX.hbody2979Fc_sharp' depends on axioms: [propext]
+Work/Mixed/Hist2979Fc.lean:143:0: 'OAI.PowerSaving.MX.unit2979Fc_ne_cut' depends on axioms: [propext]
+Work/Mixed/Rate2979FcSharp.lean:95:0: 'OAI.PowerSaving.MX.rate2979Fc_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Rate2979FcSharp.lean:96:0: 'OAI.PowerSaving.MX.rate2979Fc_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/L2979Fc/Stmt.lean:49:0: 'OAI.PowerSaving.MX.L2979Fc.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Bridge/Inst2979Fc.lean:132:0: 'OAI.PowerSaving.PB.hcutF2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Bridge/Inst2979Fc.lean:133:0: 'OAI.PowerSaving.PB.hcutF2979Fc_fewer' depends on axioms: [propext]
+Work/Mixed/Bridge/Inst2979Fc.lean:134:0: 'OAI.PowerSaving.PB.unit2979Fc_ne_cutF' depends on axioms: [propext]
+Work/Mixed/Bridge/Inst2979Fc.lean:135:0: 'OAI.PowerSaving.PB.unit2979Fc_48' depends on axioms: [propext]
+Work/Mixed/Bridge/Inst2979Fc.lean:136:0: 'OAI.PowerSaving.PB.unit2979Fc_48_sharp' depends on axioms: [propext]
+Work/Mixed/Bridge/Inst2979Fc.lean:137:0: 'OAI.PowerSaving.PB.bundle2979Fc_of_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Bridge/Inst2979Fc.lean:138:0: 'OAI.PowerSaving.PB.engine2979Fc_of_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/FullCut2979Fc.lean:191:0: 'OAI.PowerSaving.MX.cut_heads_full_split2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/FullCut2979Fc.lean:192:0: 'OAI.PowerSaving.MX.cutTgt_rank_full2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/FullCut2979Fc.lean:193:0: 'OAI.PowerSaving.MX.hist_fullCutWord2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/FullCut2979Fc.lean:194:0: 'OAI.PowerSaving.MX.hist_fullCutWord_noSplit2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/FullCut2979Fc.lean:195:0: 'OAI.PowerSaving.MX.proper_fullCutWord2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/FullCut2979Fc.lean:196:0: 'OAI.PowerSaving.MX.ghist_pos_of_mem2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/FullCut2979Fc.lean:197:0: 'OAI.PowerSaving.MX.proper25_of_hist2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/FullCut2979Fc.lean:198:0: 'OAI.PowerSaving.MX.body_hist2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/FullCut2979Fc.lean:199:0: 'OAI.PowerSaving.MX.hist_fullCutWord2979Fc_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/FullCut2979Fc.lean:200:0: 'OAI.PowerSaving.MX.fullCut2979Fc_cert' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Bridge/HFTest2979FcW.lean:133:0: 'OAI.PowerSaving.PB.HFTest2979FcW.bph_cutF' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Bridge/HFTest2979FcW.lean:134:0: 'OAI.PowerSaving.PB.HFTest2979FcW.engine2979Fc_geomW' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Bridge/HFTest2979FcW.lean:135:0: 'OAI.PowerSaving.PB.HFTest2979FcW.engine2979Fc_geomW_auto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/Mixed/Bridge/HFTest2979FcW.lean:136:0: 'OAI.PowerSaving.PB.HFTest2979FcW.engine2979Fc_geomW_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/L2979Fc/EngineOfGeomW.lean:47:0: 'OAI.PowerSaving.MX.L2979Fc.engine_of_geomW' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/L2979Fc/Prov.lean:128:0: 'OAI.PowerSaving.MX.L2979Fc.hIc2979W' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/L2979Fc/Prov.lean:129:0: 'OAI.PowerSaving.MX.L2979Fc.hOk2979' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/L2979Fc/Prov.lean:130:0: 'OAI.PowerSaving.MX.L2979Fc.resIcW2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/L2979Fc/Prov.lean:131:0: 'OAI.PowerSaving.MX.L2979Fc.hfit2979FcW' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/L2979Fc/Prov.lean:132:0: 'OAI.PowerSaving.MX.L2979Fc.hpos2979FcW' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/L2979Fc/Prov.lean:133:0: 'OAI.PowerSaving.MX.L2979Fc.hU2979FcW' depends on axioms: [propext, Classical.choice, Quot.sound]
+Work/L2979Fc/Engine.lean:35:0: 'OAI.PowerSaving.MX.L2979Fc.engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+engine build axioms: standard only
+files for the greps: 131 (mine + afc-data's install set + the stage; design A's closure was grepped by aA-final)
+   (slot: waited 0s; heavy 0, avail 48019 MB)
+   LEAN_NUM_THREADS=3
+=== build START 15:20:56
+=== build END rc=0 wall=206s maxrss_kb=7034308 15:24:22
+Build completed successfully (9503 jobs).
+   19s Work.FourierL2979Fc.UniformFourierChallenge
+   18s Work.FourierL2979FcNeg.UniformFourierChallenge
+   16s Work.FourierL2979Fc.Asymptotics
+   15s Work.FourierL2979Fc.ArbitraryLength
+   14s Work.FourierL2979Fc.WorkingPreparation
+   14s Work.FourierL2979Fc.Goal
+   13s Work.FourierL2979Fc.WorkingCompiler
+   13s Work.FourierL2979Fc.UniformBounds
+=== nobuild START 15:24:22
+=== nobuild END rc=0 wall=19s maxrss_kb=985156 15:24:41
+All targets up-to-date (9503 jobs).
+BUILD L2979Fcfinal OK
+CHECKS L2979Fc NUM=17887045 START Tue Oct 20 15:24:41 UTC 2026
+   (slot: waited 0s; heavy 0, avail 48516 MB)
+=== axioms START 15:24:41
+=== axioms END rc=0 wall=14s maxrss_kb=6892144 15:24:55
+'OAI.PowerSaving.transform_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL2979Fc_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+axioms L2979Fc: standard only
+   (slot: waited 0s; heavy 0, avail 48421 MB)
+=== axioms-extra START 15:24:55
+=== axioms-extra END rc=0 wall=14s maxrss_kb=6896356 15:25:09
+'OAI.PowerSaving.MX.L2979Fc.engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.L2979Fc.EngineStmt.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL2979Fc.engine_L2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL2979Fc_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.envelope_program_geL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.SeamL2979Fc.alphaL2979Fc_lt_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.Skies.alpha_thetaL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.transform_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+extra axioms: standard only
+files grepped: 129 (from /content/work/afc-cut/in-L2979Fc-all.files)
+sorry/admit lines: 0
+forbidden-construct mentions inside backquotes (not uses): 2
+forbidden-construct lines: 0
+OpenAI ref: 4c571f275bd7506c3ccd1e6d78f2fca77e07112c969c1c62ad8359d61544ec74 /content/work/ref/UniformFourier-fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.lean
+challenge FourierL2979Fc (1 - 17887045/10^10): byte-identical to my derivation from OpenAI's statement
+challenge FourierL2979FcNeg (1 - 17887046/10^10): byte-identical to my derivation from OpenAI's statement
+positive and negative challenge differ only in the numerator
+Compare.lean e48d6d3b (= /content/work/ours/Compare.lean)
+   (slot: waited 0s; heavy 0, avail 48461 MB)
+=== compare-pos START 15:25:10
+=== compare-pos END rc=0 wall=176s maxrss_kb=15753560 15:28:06
+compare-pos rc=0
+RESULT: PASS
+   (slot: waited 0s; heavy 0, avail 47878 MB)
+=== compare-neg START 15:28:06
+=== compare-neg END rc=1 wall=149s maxrss_kb=16215908 15:30:35
+compare-neg rc=1 (must be nonzero)
+FAIL: OAI.PowerSaving.decimalExponentL2979Fc._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL2979Fc: definition body differs
+FAIL: OAI.PowerSaving.decimalExponentL2979Fc._proof_1: type differs
+FAIL: OAI.PowerSaving.decimalExponentL2979Fc: definition body differs
+RESULT: FAIL
+VERDICT Compare positive: PASS
+VERDICT Compare negative: FAIL (expected)
+CHECKS L2979Fc ALL AS EXPECTED Tue Oct 20 15:30:35 UTC 2026
+EXIT 0
+FINAL L2979Fc BUILT AND CHECKED 15:30:35
+INSTALL CTL: 1 new, 0 identical (skipped), from /content/work/afc-cut/in/ctl; hashes /content/work/afc-cut/in-CTL.sha256
+   (slot: waited 0s; heavy 0, avail 48733 MB)
+   LEAN_NUM_THREADS=3
+=== build START 15:30:35
+=== build END rc=0 wall=28s maxrss_kb=6998284 15:31:03
+Build completed successfully (9098 jobs).
+   10s Work.Mixed.Bridge.Ctl2979Fc
+=== nobuild START 15:31:03
+=== nobuild END rc=0 wall=17s maxrss_kb=993336 15:31:20
+All targets up-to-date (9098 jobs).
+BUILD CTL OK
+info: Work/Mixed/Bridge/Ctl2979Fc.lean:48:0: 'OAI.PowerSaving.PB.hcutF2979Fc_fewerAll' depends on axioms: [propext]
+info: Work/Mixed/Bridge/Ctl2979Fc.lean:49:0: 'OAI.PowerSaving.PB.hcutF2979Fc_designA' depends on axioms: [propext]
+info: Work/Mixed/Bridge/Ctl2979Fc.lean:50:0: 'OAI.PowerSaving.PB.hcutF2979Fc_noSplitA' depends on axioms: [propext]
+info: Work/Mixed/Bridge/Ctl2979Fc.lean:51:0: 'OAI.PowerSaving.PB.unit2979Fc_ne_designA' depends on axioms: [propext]
+ALL DONE 15:31:20

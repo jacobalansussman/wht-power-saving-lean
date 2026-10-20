@@ -1,0 +1,4 @@
+AFC-TA-READY Tue Oct 20 15:05:48 UTC 2026 host=70bbcce2940a
+tree /content/work/ours/TA (Lake project /content/work/ours/TA/lean/complex588) = ours/T + lever-l2979H-overlay.tgz (e768d770, 286 files) + Work/Mixed/Bridge/{CoreF,HFTest}.lean from lever-l3945f-overlay.tgz (generic)
+built: all 284 L2979H overlay modules + CoreF + HFTest (--no-build OK); axioms of transform_mainL2979H, convolution_mainL2979H, hillsL2979H_program: propext, Classical.choice, Quot.sound
+sorry warnings: 4, all in OpenAI's challenge files

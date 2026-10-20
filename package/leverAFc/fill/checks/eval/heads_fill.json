@@ -1,0 +1,209 @@
+{
+ "pkg": "/content/work/fc-reopt/evalkit/lever/p-alt/work/pkg2979",
+ "fill": "/content/work/fc-reopt/r2/runs/u1-2979sep/design/FILL.json.gz",
+ "control_bridge_first": false,
+ "T": 74,
+ "calls": 666,
+ "roles_per_call": 408,
+ "idle_profile": {
+  "1": 2269,
+  "6": 5,
+  "7": 3,
+  "17": 8,
+  "19": 1,
+  "23": 25905,
+  "48": 16576
+ },
+ "full_profile": {
+  "1": 1630639,
+  "2": 470196,
+  "3": 154512,
+  "4": 71928,
+  "5": 11988,
+  "6": 5,
+  "7": 3,
+  "8": 5328,
+  "17": 8,
+  "19": 1,
+  "23": 25905,
+  "48": 16576
+ },
+ "rank_mass": 4816512,
+ "classes": [
+  {
+   "child": 0,
+   "child_rank": 16,
+   "remainder": 1,
+   "pair": 1,
+   "side": 0,
+   "cls": "HEAD-net(argued)",
+   "count": 80
+  },
+  {
+   "child": 2,
+   "child_rank": 16,
+   "remainder": 1,
+   "pair": 1,
+   "side": 1,
+   "cls": "HEAD-net(argued)",
+   "count": 148
+  },
+  {
+   "child": 2,
+   "child_rank": 16,
+   "remainder": 7,
+   "pair": 1,
+   "side": 1,
+   "cls": "HEAD-net(argued)",
+   "count": 3
+  },
+  {
+   "child": 4,
+   "child_rank": 32,
+   "remainder": 1,
+   "pair": 2,
+   "side": 0,
+   "cls": "HEAD-net(argued)",
+   "count": 760
+  },
+  {
+   "child": 4,
+   "child_rank": 32,
+   "remainder": 6,
+   "pair": 2,
+   "side": 0,
+   "cls": "HEAD-net(argued)",
+   "count": 2
+  },
+  {
+   "child": 4,
+   "child_rank": 32,
+   "remainder": 19,
+   "pair": 2,
+   "side": 0,
+   "cls": "HEAD-net(argued)",
+   "count": 1
+  },
+  {
+   "child": 4,
+   "child_rank": 32,
+   "remainder": 23,
+   "pair": 2,
+   "side": 0,
+   "cls": "HEAD-net(argued)",
+   "count": 5039
+  },
+  {
+   "child": 6,
+   "child_rank": 32,
+   "remainder": 1,
+   "pair": 2,
+   "side": 1,
+   "cls": "HEAD-net(argued)",
+   "count": 855
+  },
+  {
+   "child": 6,
+   "child_rank": 32,
+   "remainder": 6,
+   "pair": 2,
+   "side": 1,
+   "cls": "HEAD-net(argued)",
+   "count": 3
+  },
+  {
+   "child": 6,
+   "child_rank": 32,
+   "remainder": 23,
+   "pair": 2,
+   "side": 1,
+   "cls": "HEAD-net(argued)",
+   "count": 5040
+  },
+  {
+   "child": 8,
+   "child_rank": 48,
+   "remainder": 48,
+   "pair": 3,
+   "side": 0,
+   "cls": "HEAD-literal",
+   "count": 8288
+  },
+  {
+   "child": 10,
+   "child_rank": 48,
+   "remainder": 48,
+   "pair": 3,
+   "side": 1,
+   "cls": "HEAD-literal",
+   "count": 8288
+  },
+  {
+   "child": 14,
+   "child_rank": 32,
+   "remainder": 1,
+   "pair": 1,
+   "side": 0,
+   "cls": "neither",
+   "count": 220
+  },
+  {
+   "child": 14,
+   "child_rank": 32,
+   "remainder": 23,
+   "pair": 1,
+   "side": 0,
+   "cls": "neither",
+   "count": 7752
+  },
+  {
+   "child": 15,
+   "child_rank": 32,
+   "remainder": 1,
+   "pair": 1,
+   "side": 1,
+   "cls": "neither",
+   "count": 206
+  },
+  {
+   "child": 15,
+   "child_rank": 32,
+   "remainder": 17,
+   "pair": 1,
+   "side": 1,
+   "cls": "neither",
+   "count": 8
+  },
+  {
+   "child": 15,
+   "child_rank": 32,
+   "remainder": 23,
+   "pair": 1,
+   "side": 1,
+   "cls": "neither",
+   "count": 8074
+  }
+ ],
+ "remainder_rank_by_class": {
+  "HEAD-literal": {
+   "48": 16576
+  },
+  "HEAD-net(argued)": {
+   "1": 1843,
+   "6": 5,
+   "7": 3,
+   "19": 1,
+   "23": 10079
+  },
+  "neither": {
+   "1": 426,
+   "17": 8,
+   "23": 15826
+  }
+ },
+ "totals_by_class": {
+  "HEAD-literal": 16576,
+  "HEAD-net(argued)": 11931,
+  "neither": 16260
+ }
+}

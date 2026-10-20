@@ -51,8 +51,9 @@ fourth revision and earlier are in [`../notes/`](../notes/).
   so.
 - **What is open**: 122 questions, each with a concrete first experiment, collected in
   [open-problems.md](open-problems.md). The nearest are the 2-in-7 near miss at block 4 (open by 640 out of 137,280,
-  a saving of 9.63e-2 if it exists), Proposition 6 for two arrays, the full cut of the lever on other tables (on #3945 with every head kept it is the
-  headline, proved in Lean), and rules of the lever that are not separated.
+  a saving of 9.63e-2 if it exists), Proposition 6 for two arrays, the full cut of the lever on other tables (proved
+  in Lean on #3945 with every head kept, 1.7806935e-3, and on #2979's words with the table A-fc, 1.7887045e-3, the
+  headline of the sixth revision), and rules of the lever that are not separated.
 
 ## The sections
 
@@ -75,7 +76,7 @@ expected output) and `data/` (small certificates and outputs). Some also have `p
 | [other-fields](other-fields/README.md) | 10-15 Oct | famous problems, network coding and quantum computing | 1 / 16 / 23 / 8 / 1 | 13 |
 | [idea-rounds](idea-rounds/README.md) | 10 and 16 Oct | the two thinking rounds: closed doors, structural facts, open leads | 0 / 9 / 29 / 6 / 4 | 10 |
 | [speed-waves](speed-waves/README.md) | 11-13 Oct | speed-first waves 11 to 15: real processors and FPGAs | 0 / 35 / 0 / 3 / 1 | 12 |
-| [record-track](record-track/README.md) | 13-20 Oct | the Lean ladder, the levers that failed, the recursion lever and the frontier | 15 / 32 / 7 / 6 / 2 | 6 |
+| [record-track](record-track/README.md) | 13-20 Oct | the Lean ladder, the levers that failed, the recursion lever and the frontier | 16 / 31 / 7 / 6 / 2 | 6 |
 <!-- end of the table written by make_index.py -->
 
 The counts are of the findings listed in each `results.json`; one finding can be a single number or a whole

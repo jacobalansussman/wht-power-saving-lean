@@ -723,7 +723,8 @@ two sizes extends Schönhage's τ-theorem for matrix multiplication. What is new
 two job sizes (Theorem 1G) and its Lean proof, the head lemma, the half cut and the full cut (with its 24 + 24 split of the other idle blocks), the heads-first certificate, the
 Lean ports of the two circuits with their warps, the choice to keep every head, and the A-fc table on #2979's words
 (its class solution and its tolerant placement, made with the construction of #3815 by Erwan Secousses /
-ChaloupeMusic; checked by computer, not proved in Lean).
+ChaloupeMusic; proved in Lean at 1.7887045e-3 in the sixth revision (`package/leverAFc`); the rounded price
+1.7887046e-3 is not proved in Lean).
 
 **What others had at the time.** As far as the agents could find on 19 October 2026, nobody on the community's
 repository had used heads or a recursion with two job sizes, and no complex-side construction claimed there was at or above the lever's (some research notes there print higher

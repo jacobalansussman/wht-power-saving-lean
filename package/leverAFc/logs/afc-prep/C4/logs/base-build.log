@@ -1,0 +1,25 @@
+BUILD START Tue Oct 20 14:16:19 UTC 2026 epoch=1792505779 HEAD=52394849c7ecf3412d39b925d75fc7fdb98994d8 status_lines=0
+=== STEP cache START Tue Oct 20 14:16:19 UTC 2026 cmd: lake exe cache get
+=== STEP cache END rc=0 wall=6s maxrss_kb=849180 last: Already decompressed 8908 file(s)
+=== STEP build START Tue Oct 20 14:16:25 UTC 2026 cmd: lake build Work.FourierC588.Main Work.FourierC588.UniformFourierChallenge Work.FourierC588Neg.UniformFourierChallenge Work.GCert.Data.C588Controls Work.FourierC588.Axioms
+=== STEP build END rc=0 wall=1254s maxrss_kb=9708900 last: Build completed successfully (9277 jobs).
+BUILD rc=0
+=== STEP axioms START Tue Oct 20 14:37:19 UTC 2026 cmd: lake env lean Work/FourierC588/Axioms.lean
+=== STEP axioms END rc=0 wall=6s maxrss_kb=7009964 last: 'OAI.PowerSaving.RAM.hillsC588_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== STEP compare-fourier START Tue Oct 20 14:37:25 UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierC588.UniformFourierChallenge Work.FourierC588.Main OAI.PowerSaving.transform_mainC588 OAI.PowerSaving.convolution_mainC588
+=== STEP compare-fourier END rc=0 wall=67s maxrss_kb=16122016 last: RESULT: PASS
+=== STEP compare-negative START Tue Oct 20 14:38:32 UTC 2026 cmd: lake env lean --run tools/Compare.lean Work.FourierC588Neg.UniformFourierChallenge Work.FourierC588.Main OAI.PowerSaving.transform_mainC588 OAI.PowerSaving.convolution_mainC588
+=== STEP compare-negative END rc=1 wall=62s maxrss_kb=16119944 last: RESULT: FAIL
+(negative control must be nonzero)
+=== STEP ours-compare-fourier START Tue Oct 20 14:39:34 UTC 2026 cmd: lake env lean --run /content/work/ours/Compare.lean Work.FourierC588.UniformFourierChallenge Work.FourierC588.Main OAI.PowerSaving.transform_mainC588 OAI.PowerSaving.convolution_mainC588
+=== STEP ours-compare-fourier END rc=0 wall=65s maxrss_kb=16123940 last: RESULT: PASS
+=== STEP ours-compare-negative START Tue Oct 20 14:40:39 UTC 2026 cmd: lake env lean --run /content/work/ours/Compare.lean Work.FourierC588Neg.UniformFourierChallenge Work.FourierC588.Main OAI.PowerSaving.transform_mainC588 OAI.PowerSaving.convolution_mainC588
+=== STEP ours-compare-negative END rc=1 wall=64s maxrss_kb=16123580 last: RESULT: FAIL
+(negative control must be nonzero)
+=== STEP nobuild START Tue Oct 20 14:41:43 UTC 2026 cmd: lake build --no-build Work.FourierC588.Main Work.FourierC588.UniformFourierChallenge Work.FourierC588Neg.UniformFourierChallenge Work.GCert.Data.C588Controls Work.FourierC588.Axioms
+=== STEP nobuild END rc=0 wall=8s maxrss_kb=991828 last: All targets up-to-date (9277 jobs).
+olean count: 354  lean sources: 354
+git status lines after: 0
+2.0G	.lake/build
+7.7G	.lake/packages
+BUILD END Tue Oct 20 14:41:52 UTC 2026 total_wall=1533s

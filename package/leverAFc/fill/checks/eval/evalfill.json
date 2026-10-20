@@ -1,0 +1,288 @@
+{
+ "design": "#2979 T74 rank7-joint-endframes (mdumitrean), merged, read at main bb4bccbf",
+ "T": 74,
+ "calls": 666,
+ "roles_per_call": 408,
+ "roles": 271728,
+ "valid": true,
+ "checks": {
+  "input_pins": "pass",
+  "call_coverage": "pass",
+  "per_replica_chronology": "pass",
+  "dispatch_coverage": "pass",
+  "template_blocks": "pass",
+  "template_children": "pass",
+  "owner_windows_complete": "pass",
+  "source_family_windows_disjoint": "pass",
+  "fill_schema": "pass",
+  "dispatch_overrides": "pass",
+  "role_count": "pass",
+  "integer_row_shape": "pass",
+  "canonical_row_order": "pass",
+  "role_bounds": "pass",
+  "owner_window_lo_lt_t_le_hi": "pass",
+  "helper_identity_unique": "pass",
+  "all_helper_identities": "pass",
+  "same_call_family_distinct": "pass",
+  "compact_chronological_prefix": "pass",
+  "capacity": "pass",
+  "bin_mask_no_overlap": "pass",
+  "compact_mask_prefix": "pass",
+  "claimed_profile": "not checked",
+  "rank_mass_identity": "pass"
+ },
+ "offsets_recomputed": false,
+ "control_bridge_first": false,
+ "idle_profile": {
+  "1": 2269,
+  "6": 5,
+  "7": 3,
+  "17": 8,
+  "19": 1,
+  "23": 25905,
+  "48": 16576
+ },
+ "profile": {
+  "1": 1630639,
+  "2": 470196,
+  "3": 154512,
+  "4": 71928,
+  "5": 11988,
+  "6": 5,
+  "7": 3,
+  "8": 5328,
+  "17": 8,
+  "19": 1,
+  "23": 25905,
+  "48": 16576
+ },
+ "rank_mass": 4816512,
+ "profile_equals_claimed": false,
+ "heads": {
+  "literal_rank48": 16576,
+  "by_child": {
+   "8": 8288,
+   "10": 8288
+  },
+  "recount_unhosted_rank48_by_child": {
+   "8": 8288,
+   "10": 8288
+  },
+  "recount_agrees": true,
+  "remainder_by_class": {
+   "HEAD-literal": {
+    "48": 16576
+   },
+   "HEAD-net(argued)": {
+    "1": 1843,
+    "6": 5,
+    "7": 3,
+    "19": 1,
+    "23": 10079
+   },
+   "neither": {
+    "1": 426,
+    "17": 8,
+    "23": 15826
+   }
+  },
+  "classes": [
+   {
+    "child": 0,
+    "child_rank": 16,
+    "remainder": 1,
+    "cls": "HEAD-net(argued)",
+    "count": 80
+   },
+   {
+    "child": 2,
+    "child_rank": 16,
+    "remainder": 1,
+    "cls": "HEAD-net(argued)",
+    "count": 148
+   },
+   {
+    "child": 2,
+    "child_rank": 16,
+    "remainder": 7,
+    "cls": "HEAD-net(argued)",
+    "count": 3
+   },
+   {
+    "child": 4,
+    "child_rank": 32,
+    "remainder": 1,
+    "cls": "HEAD-net(argued)",
+    "count": 760
+   },
+   {
+    "child": 4,
+    "child_rank": 32,
+    "remainder": 6,
+    "cls": "HEAD-net(argued)",
+    "count": 2
+   },
+   {
+    "child": 4,
+    "child_rank": 32,
+    "remainder": 19,
+    "cls": "HEAD-net(argued)",
+    "count": 1
+   },
+   {
+    "child": 4,
+    "child_rank": 32,
+    "remainder": 23,
+    "cls": "HEAD-net(argued)",
+    "count": 5039
+   },
+   {
+    "child": 6,
+    "child_rank": 32,
+    "remainder": 1,
+    "cls": "HEAD-net(argued)",
+    "count": 855
+   },
+   {
+    "child": 6,
+    "child_rank": 32,
+    "remainder": 6,
+    "cls": "HEAD-net(argued)",
+    "count": 3
+   },
+   {
+    "child": 6,
+    "child_rank": 32,
+    "remainder": 23,
+    "cls": "HEAD-net(argued)",
+    "count": 5040
+   },
+   {
+    "child": 8,
+    "child_rank": 48,
+    "remainder": 48,
+    "cls": "HEAD-literal",
+    "count": 8288
+   },
+   {
+    "child": 10,
+    "child_rank": 48,
+    "remainder": 48,
+    "cls": "HEAD-literal",
+    "count": 8288
+   },
+   {
+    "child": 14,
+    "child_rank": 32,
+    "remainder": 1,
+    "cls": "neither",
+    "count": 220
+   },
+   {
+    "child": 14,
+    "child_rank": 32,
+    "remainder": 23,
+    "cls": "neither",
+    "count": 7752
+   },
+   {
+    "child": 15,
+    "child_rank": 32,
+    "remainder": 1,
+    "cls": "neither",
+    "count": 206
+   },
+   {
+    "child": 15,
+    "child_rank": 32,
+    "remainder": 17,
+    "cls": "neither",
+    "count": 8
+   },
+   {
+    "child": 15,
+    "child_rank": 32,
+    "remainder": 23,
+    "cls": "neither",
+    "count": 8074
+   }
+  ]
+ },
+ "seconds_check": 1.31,
+ "inputs": {
+  "fill": "/content/work/fc-reopt/r2/runs/u1-2979sep/design/FILL.json.gz",
+  "fill_sha256": "7fc766c6c3e1561cee60b258138a918020b96d85ea782a2b01ad0ee035fd082e",
+  "design": "/content/work/fc-reopt/evalkit/reopt/o-eval/designs/2979/design.json",
+  "design_pins": {
+   "fill": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39",
+   "profile": "94a819747f3ced41f1544ada0036c983fc0c92847b9644380f877a06cd7931cf",
+   "order": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+   "dispatch": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c",
+   "template": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+   "plan": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e",
+   "providers": "f2edb7922f3029a5d607437e737775ff3371bca49ebab62e5e2495d16d3bf573",
+   "word_base": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+   "word_extra": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7"
+  },
+  "design_pins_ok": {
+   "fill": true,
+   "profile": true,
+   "order": true,
+   "dispatch": true,
+   "template": true,
+   "plan": true,
+   "providers": true,
+   "word_base": true,
+   "word_extra": true
+  },
+  "widths": {
+   "gauge44": "word (stub range(224,704) minus removed); PROVIDERS.json agrees: True",
+   "extra": "word (stub range(224,704) minus removed); PROVIDERS.json agrees: True"
+  }
+ },
+ "price": {
+  "T": 74,
+  "W": 66304,
+  "heads": 16576,
+  "rank48": 16576,
+  "rank_mass": 4816512,
+  "uniform": {
+   "b_root60": "1.689703011137435213783375126577e-3",
+   "b_grid24": "0.001689703011137435213783",
+   "b_grid24_frac": "1689703011137435213783/1000000000000000000000000"
+  },
+  "lever": {
+   "model": "half cut: 16576 heads 48 -> 24, targets {73: W-h, 49: h}",
+   "children": {
+    "1": 1630639,
+    "2": 470196,
+    "3": 154512,
+    "4": 71928,
+    "5": 11988,
+    "6": 5,
+    "7": 3,
+    "8": 5328,
+    "17": 8,
+    "19": 1,
+    "23": 25905,
+    "24": 16576
+   },
+   "targets": {
+    "49": 16576,
+    "73": 49728
+   },
+   "separated": true,
+   "b_root60": "1.715900502862271494554161262349e-3",
+   "b": "1.7159005e-3",
+   "gain_over_uniform": "2.6197e-5",
+   "gain_pct": "+1.5504",
+   "b_grid24": "0.001715900502862271494554",
+   "b_grid24_frac": "857950251431135747277/500000000000000000000000"
+  }
+ },
+ "lever_price": "1.7159005e-3",
+ "lever_separated": true,
+ "uniform_b": "0.001689703011137435213783",
+ "seconds_price": 0.89,
+ "seconds_total": 3.25
+}

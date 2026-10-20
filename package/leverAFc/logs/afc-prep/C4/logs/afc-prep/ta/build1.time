@@ -1,0 +1,23 @@
+	Command being timed: "env LEAN_NUM_THREADS=8 lake build Work.XHostT.Data.H2979H.Calls Work.XHostT.Data.H2979H.DispLink Work.XHostT.Data.H2979H.GlobC0 Work.XHostT.Data.H2979H.GlobC1 Work.XHostT.Data.H2979H.GlobC2 Work.XHostT.Data.H2979H.GlobC3 Work.XHostT.Data.H2979H.GlobC4 Work.XHostT.Data.H2979H.GlobC5 Work.XHostT.Data.H2979H.Glob Work.XHostT.Data.H2979H.Heads Work.XHostT.Data.H2979H.Order Work.XHostT.Data.H2979H.P0 Work.XHostT.Data.H2979H.P1 Work.XHostT.Data.H2979H.P10 Work.XHostT.Data.H2979H.P11 Work.XHostT.Data.H2979H.P12 Work.XHostT.Data.H2979H.P13 Work.XHostT.Data.H2979H.P14 Work.XHostT.Data.H2979H.P15 Work.XHostT.Data.H2979H.P16 Work.XHostT.Data.H2979H.P17 Work.XHostT.Data.H2979H.P18 Work.XHostT.Data.H2979H.P19 Work.XHostT.Data.H2979H.P2 Work.XHostT.Data.H2979H.P20 Work.XHostT.Data.H2979H.P21 Work.XHostT.Data.H2979H.P22 Work.XHostT.Data.H2979H.P23 Work.XHostT.Data.H2979H.P24 Work.XHostT.Data.H2979H.P25 Work.XHostT.Data.H2979H.P26 Work.XHostT.Data.H2979H.P3 Work.XHostT.Data.H2979H.P4 Work.XHostT.Data.H2979H.P5 Work.XHostT.Data.H2979H.P6 Work.XHostT.Data.H2979H.P7 Work.XHostT.Data.H2979H.P8 Work.XHostT.Data.H2979H.P9 Work.XHostT.Data.H2979H.Whole"
+	User time (seconds): 849.83
+	System time (seconds): 62.44
+	Percent of CPU this job got: 572%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:39.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7440912
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 88
+	Minor (reclaiming a frame) page faults: 6320273
+	Voluntary context switches: 619459
+	Involuntary context switches: 251030
+	Swaps: 0
+	File system inputs: 6968
+	File system outputs: 200824
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

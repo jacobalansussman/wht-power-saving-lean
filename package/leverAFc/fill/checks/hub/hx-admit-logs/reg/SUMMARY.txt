@@ -1,0 +1,29 @@
+== pub fill c2136be9434cda51 profile 94a819747f3ced41 claim 436e0d297cbdf195
+verify-pub rc=0 | PASS_RANK7_JOINT_ENDFRAMES_THREE_STAGE_REPLAY controls 86 seconds 172.4
+chk-pub rc=0 | PASS_RANK7_LITERAL_OWNERS_AND_EXACT_MOMENT 0.0017290339826465135177169999999999999999999998999999999999999999999999 0.000004998757898408639167
+cap-pub rc=0 | {"cap_lower": "432258941218879045361/250000000000000000000000", "cap_upper": "17290357648755161814441/10000000000000000000000000", "comparisons": {"pr2942": {"gain": "6217662783299189721/1000000000000000000000000", "gain_float": 6.21766278329919e-06, "kappa": "172281631986321432799599999999999999999
+reg-pub rc=0 | PASS_RANK7_JOINT_ENDFRAMES_LOCAL_OWNER_MOMENT_CAP_AND_STORED_RELEASE 0.00172903398264651351771699999999999999 gain over PR2969 4.998757898408639e-06 Native and full integrated admission are authenticated stored evidence here; reproduce.py reruns them. 
+own7-pub rc=0 | PASS_INDEPENDENT_T_OWNER_CHRONOLOGY_MASKS T 74 roles 271728 idle {1: 17310, 3: 4956, 5: 1728, 48: 28190} controls rejected 7 ['false_replica_count', 'missing_literal_helper_role', 'unbound_provider_at_actual_call', 'unavailable_source_window', 'same_call_physical_family_collision', 'unpaid_hole_in_compact_pending_prefix', 'changed_total_paid_profile']
+manifest-equal True
+== A fill 764395fcc2d883e9 profile 94a819747f3ced41 claim 436e0d297cbdf195
+verify-A rc=0 | PASS_RANK7_JOINT_ENDFRAMES_THREE_STAGE_REPLAY controls 86 seconds 193.7
+chk-A rc=0 | PASS_RANK7_LITERAL_OWNERS_AND_EXACT_MOMENT 0.0017290339826465135177169999999999999999999998999999999999999999999999 0.000004998757898408639167
+cap-A rc=0 | {"cap_lower": "432258941218879045361/250000000000000000000000", "cap_upper": "17290357648755161814441/10000000000000000000000000", "comparisons": {"pr2942": {"gain": "6217662783299189721/1000000000000000000000000", "gain_float": 6.21766278329919e-06, "kappa": "172281631986321432799599999999999999999
+reg-A rc=1 |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AssertionError 
+own7-A rc=0 | PASS_INDEPENDENT_T_OWNER_CHRONOLOGY_MASKS T 74 roles 271728 idle {1: 17310, 3: 4956, 5: 1728, 48: 28190} controls rejected 7 ['false_replica_count', 'missing_literal_helper_role', 'unbound_provider_at_actual_call', 'unavailable_source_window', 'same_call_physical_family_collision', 'unpaid_hole_in_compact_pending_prefix', 'changed_total_paid_profile']
+manifest-equal True
+== Afc fill 7fc766c6c3e1561c profile 5df7941120150492 claim 436e0d297cbdf195
+verify-Afc rc=0 | PASS_RANK7_JOINT_ENDFRAMES_THREE_STAGE_REPLAY controls 86 seconds 173.3
+chk-Afc rc=1 | ValueError: strict frontier improvement and lower endpoint
+cap-Afc rc=1 | AssertionError: recorded gap
+reg-Afc rc=1 | ValueError: strict frontier improvement and lower endpoint  
+own7-Afc rc=0 | PASS_INDEPENDENT_T_OWNER_CHRONOLOGY_MASKS T 74 roles 271728 idle {1: 2269, 6: 5, 7: 3, 17: 8, 19: 1, 23: 25905, 48: 16576} controls rejected 7 ['false_replica_count', 'missing_literal_helper_role', 'unbound_provider_at_actual_call', 'unavailable_source_window', 'same_call_physical_family_collision', 'unpaid_hole_in_compact_pending_prefix', 'changed_total_paid_profile']
+manifest-equal True
+== AfcC fill 7fc766c6c3e1561c profile 5df7941120150492 claim adfa88833fa8955d
+verify-AfcC rc=0 | PASS_RANK7_JOINT_ENDFRAMES_THREE_STAGE_REPLAY controls 86 seconds 188.8
+chk-AfcC rc=1 | ValueError: strict frontier improvement and lower endpoint
+cap-AfcC rc=1 | AssertionError: recorded gap
+reg-AfcC rc=1 | ValueError: strict frontier improvement and lower endpoint  
+own7-AfcC rc=0 | PASS_INDEPENDENT_T_OWNER_CHRONOLOGY_MASKS T 74 roles 271728 idle {1: 2269, 6: 5, 7: 3, 17: 8, 19: 1, 23: 25905, 48: 16576} controls rejected 7 ['false_replica_count', 'missing_literal_helper_role', 'unbound_provider_at_actual_call', 'unavailable_source_window', 'same_call_physical_family_collision', 'unpaid_hole_in_compact_pending_prefix', 'changed_total_paid_profile']
+manifest-equal True
+ALLDONE

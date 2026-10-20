@@ -1,0 +1,29 @@
+pinned_PR2969 True
+new_rank_mass True
+old_rank_mass True
+global_root_bracket True
+root_lower_1e-26 172903398264651351771759/100000000000000000000000000
+root_lower_float 0.0017290339826465135
+target_float 0.0017290339826465135
+prior_PR2969_float 0.001724035224748105
+gain_float 4.998757898408639e-06
+conjunct_target_gt_prior (strict gain) True
+conjunct_target_lt_lower_endpoint True
+new_moment_below_one_at_previous_headline (strict gain, restated) True
+zero_controls True
+overstated_endpoint_rejected (control) True
+omitted_rank_charge_rejected (control) True
+cap_certificate True
+rank_mass_74x65088 True
+pays_complete_local_profile True
+literal_idle {1: 17310, 3: 4956, 5: 1728, 48: 28190}
+literal_root_float [0.0017290339826465135, 0.0017290339826465135]
+cap_float [0.001729035764875516, 0.001729035764875516]
+literal_root_at_most_cap (weak duality) True
+gap_float [1.7822290026637263e-09, 1.7822290026637266e-09]
+recorded_gap_below_1e-6 True
+finer_idle_split_lowers_root (control) True
+strict_gain_over_pr2969 [True, 4.998757898408639e-06]
+strict_gain_over_pr2966 [True, 4.999710123061341e-06]
+strict_gain_over_pr2957 [True, 5.316567575775347e-06]
+strict_gain_over_pr2942 [True, 6.21766278329919e-06]

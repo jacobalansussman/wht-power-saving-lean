@@ -239,3 +239,10 @@ of this repository.
 | `third-party/openai-math/SOURCE.md` | 1 file | This project. Describes the unmodified copy of OpenAI's statement file beside it. |
 | `research/` | 12 sections and the index: `README.md`, `index.json`, `open-problems.md`, `make_index.py` | This project. Each section's `README.md`, `results.json`, `programs/` and `data/`, written and copied from the agents' working notes, with paths made relative and machine names removed; `make_index.py` writes `index.json` and `open-problems.md` from the sections' `results.json`. No paper text is copied, and files of the community's repository only where `NOTICE` (section 10, item i) names them. |
 | `notes/how-the-lever-was-found.md`, `notes/open-directions-4.md` | 2 notes | This project. The account of the lever and its open directions. No part of any proof. |
+
+### Added in the sixth revision (20 October 2026)
+
+| path | files | origin |
+|---|---|---|
+| `package/leverAFc/` | 1 package: `overlay/` (282 files), `MODULES.txt` (280 modules), `result.json`, `README.txt`, `KNOWN-ISSUES.txt`, `ORIGINS.tsv`, `SHA256SUMS`, `logs/`, `controls/`, `generators/`, `fill/` | This project, laid over Shea's tree after `package/u8x0hq`: the full cut on #2979's words with the table A-fc. Its two statement files are **openai/math, modified**, kept byte for byte as compiled, and its Fourier chain copies OpenAI's proof files and says so (`NOTICE`, section 11, items a and b); the network files adapt Nil Mamano's and say so; the Lean data is generated from the community's files and the table by `generators/`, which holds unmodified copies of #2979's and #3945's files (item c); `fill/` holds the table, the programs that made it (two of them copy or patch community code, item d) and the logs of the community's checks run on it. `ORIGINS.tsv` says which part of the work wrote each overlay file. |
+| `package/lever2979/generators/`, `package/leverA/generators/` | `REGENERATE.sh`, `README.txt`, `PATCHES.txt`, `tree.sha256` | This project. Changed so that the regeneration runs from the published files, and to say that it needs Python 3.11 or earlier (each `PATCHES.txt`, last paragraph). |

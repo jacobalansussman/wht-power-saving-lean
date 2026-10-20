@@ -1,0 +1,79 @@
+TREES START Tue Oct 20 14:22:23 UTC 2026 mode=both host=70bbcce2940a
+OURS-READY found (waited 1640s): OURS-READY Tue Oct 20 14:49:39 UTC 2026 host=70bbcce2940a mode=quick
+OVERLAY-OK lever-l2979H-overlay.tgz (e768d7701736f0e6f9f0e6b6805f847f4a2f5bd97b11cf2e4ae91d3b488fe71d) 286 files
+OVERLAY-OK lever-l3945f-overlay.tgz (bcfd47922ceb325f81750d88b9671581a3bcd82a5799c54a5e829e2516a6d4b4) 412 files
+OVERLAY-OK eng-overlay.tgz (c650eea3463edd6e7f516ec02b47e5032450658026695a9bc0ab8fed7dfe4ba5) 385 files
+ENG per-file hashes = i-final out/a1/ENG.sha256 (6ec8c1bb)
+TA: cp -a ours/T done in 31s
+TA base .lean files: 618 = ours/T
+INSTALL lever-l2979H-overlay: 286 new, 0 identical
+INSTALL F generic: Work/Mixed/Bridge/CoreF.lean (7aa5f6c235e29642)
+INSTALL F generic: Work/Mixed/Bridge/HFTest.lean (0f23665dd6207403)
+   (slot: waited 0s; heavy 0, avail 50395 MB)
+=== nobuild-base START 14:50:16
+=== nobuild-base END rc=0 wall=10s maxrss_kb=987260 14:50:26
+TA phase 1 (H2979H data): 39 modules
+   (slot: waited 0s; heavy 0, avail 50430 MB)
+   LEAN_NUM_THREADS=8
+=== build1 START 14:50:26
+=== build1 END rc=0 wall=159s maxrss_kb=7440912 14:53:05
+info: Work/XHostT/Data/H2979H/Glob.lean:62:0: 'OAI.PowerSaving.XHostT.K.DH2979H.res_sum1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9182 jobs).
+TA phase 2 (all 286 modules: L2979H's 284 (chain, challenges, Axioms) + CoreF, HFTest)
+   (slot: waited 0s; heavy 0, avail 50395 MB)
+   LEAN_NUM_THREADS=8
+=== build2 START 14:53:05
+=== build2 END rc=0 wall=749s maxrss_kb=9543716 15:05:34
+info: Work/FourierL2979H/Axioms.lean:4:0: 'OAI.PowerSaving.RAM.hillsL2979H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9509 jobs).
+   (slot: waited 0s; heavy 0, avail 50425 MB)
+=== nobuild START 15:05:34
+=== nobuild END rc=0 wall=7s maxrss_kb=1017664 15:05:41
+All targets up-to-date (9613 jobs).
+   (slot: waited 0s; heavy 0, avail 50403 MB)
+=== axioms START 15:05:41
+=== axioms END rc=0 wall=7s maxrss_kb=7127632 15:05:48
+'OAI.PowerSaving.transform_mainL2979H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL2979H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL2979H_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+TA sorry warnings: 4 (outside the challenge files: 0)
+AFC-TA-READY written Tue Oct 20 15:05:48 UTC 2026
+AFC-TA-READY Tue Oct 20 15:05:48 UTC 2026 host=70bbcce2940a
+tree /content/work/ours/TA (Lake project /content/work/ours/TA/lean/complex588) = ours/T + lever-l2979H-overlay.tgz (e768d770, 286 files) + Work/Mixed/Bridge/{CoreF,HFTest}.lean from lever-l3945f-overlay.tgz (generic)
+built: all 284 L2979H overlay modules + CoreF + HFTest (--no-build OK); axioms of transform_mainL2979H, convolution_mainL2979H, hillsL2979H_program: propext, Classical.choice, Quot.sound
+sorry warnings: 4, all in OpenAI's challenge files
+TAF: cp -a TA done in 89s
+INSTALL lever-l3945f-overlay: 288 new, 124 identical
+INSTALL eng-overlay: 169 new, 216 identical
+TAF phase 1 (host-table data: S5H of design B, S5 of #3945's published fill): 326 modules
+   (slot: waited 0s; heavy 0, avail 50370 MB)
+   LEAN_NUM_THREADS=8
+=== build1 START 15:07:22
+=== build1 END rc=0 wall=1868s maxrss_kb=7103356 15:38:30
+info: Work/XHostT/Data/S5H/Whole.lean:147:0: 'OAI.PowerSaving.XHostT.K.DS5H.whole' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9469 jobs).
+TAF phase 2 (all 577 modules of F and ENG)
+   (slot: waited 0s; heavy 0, avail 50537 MB)
+   LEAN_NUM_THREADS=8
+=== build2 START 15:38:30
+=== build2 END rc=0 wall=650s maxrss_kb=9580628 15:49:20
+info: Work/FourierL3945F/Axioms.lean:4:0: 'OAI.PowerSaving.RAM.hillsL3945F_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9800 jobs).
+   (slot: waited 0s; heavy 0, avail 50318 MB)
+=== nobuild START 15:49:20
+=== nobuild END rc=0 wall=11s maxrss_kb=1022832 15:49:31
+All targets up-to-date (10066 jobs).
+   (slot: waited 0s; heavy 0, avail 50336 MB)
+=== axioms-F START 15:49:31
+=== axioms-F END rc=0 wall=8s maxrss_kb=6927020 15:49:39
+'OAI.PowerSaving.transform_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.convolution_mainL3945F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.RAM.hillsL3945F_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+TAF sorry warnings: 4 (outside the challenge files: 0)
+AFC-TAF-READY written Tue Oct 20 15:49:39 UTC 2026
+AFC-TAF-READY Tue Oct 20 15:49:39 UTC 2026 host=70bbcce2940a
+tree /content/work/ours/TAF (Lake project /content/work/ours/TAF/lean/complex588) = TA + lever-l3945f-overlay.tgz (bcfd4792, 412 files) + eng-overlay.tgz (c650eea3, i-final's ENG, 385 files)
+built: all 740 modules of A, F and ENG except Work.L3945.EngineOfGeomW, Work.L3945.Engine (they import the L3945 stage, not laid on) (--no-build OK); axioms of transform_mainL3945F, convolution_mainL3945F, hillsL3945F_program: propext, Classical.choice, Quot.sound
+sorry warnings: 4, all in OpenAI's challenge files
+TREES END Tue Oct 20 15:49:39 UTC 2026
+EXIT 0

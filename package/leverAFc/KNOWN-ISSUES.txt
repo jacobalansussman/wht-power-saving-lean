@@ -1,0 +1,81 @@
+KNOWN-ISSUES.txt: cosmetic points of this package (none affects a theorem, a check or a figure)
+
+1. Comments that name earlier builds. Most of the closure is shared with package/leverA (the every-head-kept fill on
+   the same #2979 words): the words, the word stage, the hosted network, the warp checker, the dispatch and the
+   heads-first certificate are its files, byte for byte (ORIGINS.tsv: "design A"). Some comments in this package's
+   own files say which earlier file they were made from (for example Work/L2979Fc/Prov.lean, made from package/
+   leverA's Work/L2979H/Prov.lean by renaming). No file of the closure imports an instance module of another fill
+   (suffix 2979H of package/leverA, 3945H or 3945F of package/leverB or leverF).
+
+2. One profile in several files. A-fc's paid profile appears as fill/PROFILE.json, twice in generators/tree/ (the
+   allocation folder the Lean data were made from, and the run folder of the fill), and, with the heads removed, as
+   the full-cut profile in fill/checks/price/profile2979Fc.json and generators/tree/.../afc-cut/tools/profile2979Fc.json
+   (the same file). The numbers are the same everywhere.
+
+3. ORDER.json and DISPATCH.json. fill/ holds the order and dispatch files written by the run that made the fill.
+   They are equal as JSON to #2979's own files but not byte for byte; the Lean data and the community's checks used
+   #2979's own files (generators/tree/wht45/afc/afc-data/in/alloc2979Fc/ holds those bytes).
+
+4. Dates. File headers say "19 Oct 2026" (the files shared with package/leverA) or "20 Oct 2026". The cloud
+   machines' clocks read UTC, so some logs carry the next day's date in the evening (US Eastern time).
+
+5. Duplicates in the side modules. controls/side/Work/XHostT/Inst/S2979FcUnit.lean defines unit2979Fc, the same list
+   as Work/Mixed/Hist2979Fc.lean's MX.unit2979Fc. controls/side/Work/Mixed/FullCut2979Fc.lean composes the full-cut
+   word a second time at the level of the head lemma, as an independent cross-check of the bridge's own composition in
+   Work/Mixed/Bridge/CoreF.lean. Neither side module is imported by the final theorems.
+
+6. A split that splits nothing. The full-cut bridge (Work/Mixed/Bridge/CoreF.lean, shared with package/leverF) always
+   applies splitWord 24 24 to the rank-48 blocks that are not heads. This fill has none, so the profile identity
+   (PB.hcutF2979Fc) has 0 rank-24 pieces and the split changes nothing; Work/Mixed/Hist2979Fc.lean and
+   controls/side/.../FullCut2979Fc.lean prove that it keeps the histogram. The identity uses natural subtraction
+   (16,576 - 16,576 = 0), so on its own it cannot see one head MORE; the head count itself is pinned by
+   Work/XHostT/Inst/S2979FcFacts.lean (sched2979Fc_heads = 16,576) and refuted at 16,577 by controls/NegHeads.lean
+   and controls/Heads2979FcNeg.lean.
+
+7. A control that needs package/leverA. controls/Ctl2979Fc.lean imports package/leverA's
+   Work/Mixed/Bridge/Inst2979H.lean, to show that the full-cut identity fails for that fill's profile. It compiles in
+   a tree that holds both packages (as on the build machine).
+
+8. A generic file with a specific name. Work/XHostT/HFW2979/ holds the warp heads-first certificate. It is generic in
+   the schedule, although its name says 2979.
+
+9. A comment that names a theorem that does not exist. The comment above transform_mainL2979Fc in
+   Work/FourierL2979Fc/Main.lean says: "Sibling of the Walsh-Hadamard theorem wht_main_block_L2979Fcx: both follow from
+   one kernel program". There is no such Walsh-Hadamard theorem in this package (the comment comes from the chain
+   generator, as in every other package of this repository). The correct text: "It follows from the kernel program
+   RAM.hillsL2979Fc_program (Work/FourierL2979Fc/Seam.lean)."
+
+10. Line numbers one off. The header of Work/FourierL2979Fc/Goal.lean cites OpenAI's Goal.lean at commit fd4aeeb
+   "lines 30, 35, 75-78, 80, 82". The definitions are at lines 30, 35, 75-77, 79 and 81.
+
+11. The generators need Python 3.11 or earlier. x-words/tools/pack_ceil2.py (the same program as in package/leverA and
+   package/lever2979) chooses a bank pattern by the smallest sum of squares of floats, and Python 3.12 changed how
+   sum() adds floats (compensated summation), so near-ties break differently. On Python 3.12 or later, 36 row tables of
+   the two provider words (Work/GCert/Data/Gen/S2979BRows0..17.lean and S2979ERows0..17.lean) come out different and
+   generators/REGENERATE.sh ends "REGENERATE: SOMETHING FAILED"; every other file, count and refusal comes out as on
+   Python 3.9. The 36 files in overlay/ are the ones Lean compiled and checked; only their regeneration depends on the
+   Python version. The workaround: run the script with Python 3.11 or earlier as python3, for example
+       python3.11 -m venv /tmp/py311 && PATH=/tmp/py311/bin:$PATH bash generators/REGENERATE.sh /some/new/folder
+   (with the plain left-to-right sum of Python 3.11 put back, pack_ceil2.py on Python 3.13 also gives the 36 files
+   byte for byte).
+
+12. Two reports with shortened paths. The two lowering reports generators/tree/wht45/lever2979/x-gate/out/
+   lower-base.json and lower-extra.json name the machine paths of the run that made them; for publication those paths
+   were shortened, which changed the two files' sha256. generators/tree.sha256 gives the published bytes, and
+   generators/REGENERATE.sh puts the reports' original sha256 back into the residual file it makes (that file records
+   them), so everything comes out byte for byte as on 20 Oct (generators/PATCHES.txt, last paragraph). The same was
+   done for package/leverA and package/lever2979.
+
+13. The axioms file prints three theorems. Work/FourierL2979Fc/Axioms.lean prints the axioms of the two final
+   theorems and of RAM.hillsL2979Fc_program; the other six theorems of "axioms: 9 theorems" in README.txt were printed
+   by a separate file of the same imports (logs/afc-final/C4/l2979fc/axioms-extra.log).
+
+14. Controls that need more than this package. In the package as first assembled, result.json listed all twelve
+   control files under lean_controls, one entry naming three files. scripts/build-and-check.sh of the repository
+   compiles each control listed there in a tree with package/u8x0hq and this package only, so seven of them could not
+   run there: controls/Ctl2979Fc.lean imports package/leverA's Work/Mixed/Bridge/Inst2979H.lean (item 7), and the six
+   files of controls/perturbed/ import the perturbed tables Work/XHostT/Data/H2979Fcnload/Calls.lean and
+   H2979Fcnwin/Calls.lean of controls/side/, which are not in overlay/. result.json now lists those seven under
+   lean_controls_extra, each with what it needs; lean_controls keeps the five that need only this package. The control
+   files are unchanged, and all twelve were compiled on 20 Oct in the build machine's tree, which had both
+   (logs/afc-final/C4/ctl.out).

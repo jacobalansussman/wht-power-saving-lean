@@ -1,0 +1,8 @@
+{"design": "#2979 T74 rank7-joint-endframes (mdumitrean), merged, read at main bb4bccbf", "valid": true, "failed": [], "heads": 16576, "recount_agrees": true, "profile_equals_claimed": false, "uniform_b": "0.001689703011137435213783", "lever_price": "0.001715900502862271494554", "separated": true, "seconds": 3.25}
+fully idle rank-48 bins by child: {8: 8288, 10: 8288} pair3 (8,10): 16576 pair0 (12,13): 0
+valid True failed checks []
+heads 16576 {'8': 8288, '10': 8288} recount_agrees True
+idle {'1': 2269, '6': 5, '7': 3, '17': 8, '19': 1, '23': 25905, '48': 16576}
+uniform 1.6897030111e-3 half 1.7159005029e-3 FULL 1.7887045643e-3 0.00178870456430307919393 best d {'d': 48, 'target': 25, 'C': 24, 'b': '1.7887045643e-3'}
+heads_fill.json {'HEAD-literal': 16576, 'HEAD-net(argued)': 11931, 'neither': 16260}
+heads_fill-control.json {'HEAD-net(argued)': 11931, 'neither': 32836}

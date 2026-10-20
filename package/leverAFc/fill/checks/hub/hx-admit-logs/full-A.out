@@ -1,0 +1,36 @@
+PASS export-pr2894
+PASS export-pr2833
+PASS fresh-retained-bootstrap
+PASS four-kernel-stage
+PASS preload-stage
+PASS parent-paired-stage
+PASS paired-extension-stage
+PASS rank7-overlay-stage
+PASS derive-closed-adapters
+PASS fresh-current-native
+PASS complete-admission
+PASS_RANK7_JOINT_ENDFRAMES_COMPLETE_REPLAY 17290339826465135177169999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000
+	Command being timed: "nice -n 5 /content/work/hx-admit/vA/bin/python -B research/rank7-joint-endframes/reproduce.py --repo /content/work/hx-admit/hub --work /content/work/hx-admit/rp-A --jobs 2"
+	User time (seconds): 3639.93
+	System time (seconds): 131.11
+	Percent of CPU this job got: 118%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 52:52.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1435140
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 24
+	Minor (reclaiming a frame) page faults: 45923022
+	Voluntary context switches: 5137
+	Involuntary context switches: 52434
+	Swaps: 0
+	File system inputs: 60080
+	File system outputs: 1585648
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+rc 0

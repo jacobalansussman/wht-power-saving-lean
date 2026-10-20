@@ -1,0 +1,55 @@
+   (slot: waited 0s; heavy 0, avail 50392 MB)
+Heads2979FcNeg rc=0 2s maxrss_kb=638012
+'OAI.PowerSaving.XHostT.K.DH2979Fc.heads_cnt_ne_succ' depends on axioms: [propext]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.res_ge0_5_false' depends on axioms: [propext]
+'OAI.PowerSaving.XHostT.K.DH2979Fc.res_ge1_5_false' depends on axioms: [propext]
+VERDICT control Heads2979FcNeg: compiles, standard axioms
+   (slot: waited 0s; heavy 0, avail 50440 MB)
+Rate2979FcSharpCtl rc=0 65s maxrss_kb=3393764
+'OAI.PowerSaving.MX.twoTarget_fail_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.rate2979Fc_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.PowerSaving.MX.rate2979Fc_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+VERDICT control Rate2979FcSharpCtl: compiles, standard axioms
+   (slot: waited 0s; heavy 0, avail 50368 MB)
+Ctl2979Fc rc=0 42s maxrss_kb=6638192
+'OAI.PowerSaving.PB.hcutF2979Fc_fewerAll' depends on axioms: [propext]
+'OAI.PowerSaving.PB.hcutF2979Fc_designA' depends on axioms: [propext]
+'OAI.PowerSaving.PB.hcutF2979Fc_noSplitA' depends on axioms: [propext]
+'OAI.PowerSaving.PB.unit2979Fc_ne_designA' depends on axioms: [propext]
+VERDICT control Ctl2979Fc: compiles, standard axioms
+   (slot: waited 0s; heavy 0, avail 50551 MB)
+NegHeads rc=1 4s
+/content/work/afc-final/controls/NegHeads.lean:10:50: error: Tactic `decide` proved that the proposition
+VERDICT negative NegHeads: FAILS as required
+   (slot: waited 0s; heavy 1, avail 50139 MB)
+NegGlob rc=1 6s
+/content/work/afc-final/controls/NegGlob.lean:8:43: error: Tactic `decide` proved that the proposition
+VERDICT negative NegGlob: FAILS as required
+   (slot: waited 0s; heavy 0, avail 50454 MB)
+NegF1 rc=1 4s
+/content/work/afc-final/controls/NegF1.lean:9:43: error: Tactic `decide` proved that the proposition
+VERDICT negative NegF1: FAILS as required
+   (slot: waited 0s; heavy 1, avail 49750 MB)
+perturbed/NegSome119 rc=1 1s
+/content/work/afc-final/controls/perturbed/NegSome119.lean:9:90: error: Tactic `decide` proved that the proposition
+VERDICT negative perturbed/NegSome119: FAILS as required
+   (slot: waited 0s; heavy 1, avail 49653 MB)
+perturbed/NegSome46 rc=1 0s
+/content/work/afc-final/controls/perturbed/NegSome46.lean:9:85: error: Tactic `decide` proved that the proposition
+VERDICT negative perturbed/NegSome46: FAILS as required
+   (slot: waited 0s; heavy 1, avail 49541 MB)
+perturbed/NegSome334 rc=1 1s
+/content/work/afc-final/controls/perturbed/NegSome334.lean:9:90: error: Tactic `decide` proved that the proposition
+VERDICT negative perturbed/NegSome334: FAILS as required
+   (slot: waited 0s; heavy 1, avail 49436 MB)
+perturbed/NegNone119 rc=0 0s
+VERDICT positive perturbed/NegNone119: compiles
+   (slot: waited 0s; heavy 1, avail 49344 MB)
+perturbed/NegNone46 rc=0 1s
+VERDICT positive perturbed/NegNone46: compiles
+   (slot: waited 0s; heavy 1, avail 49258 MB)
+perturbed/NegNone334 rc=0 1s
+VERDICT positive perturbed/NegNone334: compiles
+controls: sorry/admit lines 0; forbidden lines 0
+CONTROLS ALL AS EXPECTED
+EXIT 0

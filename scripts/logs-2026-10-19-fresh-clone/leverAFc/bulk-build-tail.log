@@ -1,0 +1,31 @@
+precated: Use `ite_eq_left` instead
+warning: Work/L2979Fc/Prov.lean:92:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+info: Work/L2979Fc/Prov.lean:128:0: 'OAI.PowerSaving.MX.L2979Fc.hIc2979W' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/L2979Fc/Prov.lean:129:0: 'OAI.PowerSaving.MX.L2979Fc.hOk2979' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/L2979Fc/Prov.lean:130:0: 'OAI.PowerSaving.MX.L2979Fc.resIcW2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/L2979Fc/Prov.lean:131:0: 'OAI.PowerSaving.MX.L2979Fc.hfit2979FcW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/L2979Fc/Prov.lean:132:0: 'OAI.PowerSaving.MX.L2979Fc.hpos2979FcW' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/L2979Fc/Prov.lean:133:0: 'OAI.PowerSaving.MX.L2979Fc.hU2979FcW' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9490/9503] Built Work.L2979Fc.Engine (6.0s)
+info: Work/L2979Fc/Engine.lean:35:0: 'OAI.PowerSaving.MX.L2979Fc.engine' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9491/9503] Built Work.FourierL2979Fc.Seam (6.5s)
+info: Work/FourierL2979Fc/Seam.lean:153:0: 'OAI.PowerSaving.RAM.hillsL2979Fc_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979Fc/Seam.lean:154:0: 'OAI.PowerSaving.RAM.envelope_program_geL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979Fc/Seam.lean:155:0: 'OAI.PowerSaving.SeamL2979Fc.alphaL2979Fc_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979Fc/Seam.lean:156:0: 'OAI.PowerSaving.hillsL2979Fc_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9492/9503] Built Work.FourierL2979Fc.SectorAlgorithm (7.2s)
+✔ [9493/9503] Built Work.FourierL2979Fc.SynchronizedAlgorithm (6.7s)
+✔ [9494/9503] Built Work.FourierL2979Fc.WorkingTransform (6.6s)
+✔ [9495/9503] Built Work.FourierL2979Fc.WorkingCompiler (7.1s)
+✔ [9496/9503] Built Work.FourierL2979Fc.WorkingPreparation (8.3s)
+✔ [9497/9503] Built Work.FourierL2979Fc.ArbitraryLength (7.5s)
+✔ [9498/9503] Built Work.FourierL2979Fc.TransformProgram (6.9s)
+✔ [9499/9503] Built Work.FourierL2979Fc.ConvolutionProgram (6.9s)
+✔ [9500/9503] Built Work.FourierL2979Fc.UniformBounds (7.1s)
+✔ [9501/9503] Built Work.FourierL2979Fc.Asymptotics (8.4s)
+✔ [9502/9503] Built Work.FourierL2979Fc.Main (6.9s)
+ℹ [9503/9503] Built Work.FourierL2979Fc.Axioms (5.5s)
+info: Work/FourierL2979Fc/Axioms.lean:2:0: 'OAI.PowerSaving.transform_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979Fc/Axioms.lean:3:0: 'OAI.PowerSaving.convolution_mainL2979Fc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Work/FourierL2979Fc/Axioms.lean:4:0: 'OAI.PowerSaving.RAM.hillsL2979Fc_program' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (9503 jobs).

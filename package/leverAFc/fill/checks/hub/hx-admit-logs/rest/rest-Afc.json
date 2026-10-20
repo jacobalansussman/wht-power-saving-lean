@@ -1,0 +1,60 @@
+{
+ "pinned_PR2969": true,
+ "new_rank_mass": true,
+ "old_rank_mass": true,
+ "global_root_bracket": true,
+ "root_lower_1e-26": "168970301113743521378337/100000000000000000000000000",
+ "root_lower_float": 0.0016897030111374352,
+ "target_float": 0.0016897030111374352,
+ "prior_PR2969_float": 0.001724035224748105,
+ "gain_float": -3.433221361066966e-05,
+ "conjunct_target_gt_prior (strict gain)": false,
+ "conjunct_target_lt_lower_endpoint": true,
+ "new_moment_below_one_at_previous_headline (strict gain, restated)": false,
+ "zero_controls": true,
+ "overstated_endpoint_rejected (control)": true,
+ "omitted_rank_charge_rejected (control)": true,
+ "cap_certificate": true,
+ "rank_mass_74x65088": true,
+ "pays_complete_local_profile": true,
+ "literal_idle": {
+  "1": 2269,
+  "6": 5,
+  "7": 3,
+  "17": 8,
+  "19": 1,
+  "23": 25905,
+  "48": 16576
+ },
+ "literal_root_float": [
+  0.0016897030111374352,
+  0.0016897030111374352
+ ],
+ "cap_float": [
+  0.001729035764875516,
+  0.001729035764875516
+ ],
+ "literal_root_at_most_cap (weak duality)": true,
+ "gap_float": [
+  3.9332753738080965e-05,
+  3.9332753738080965e-05
+ ],
+ "recorded_gap_below_1e-6": false,
+ "finer_idle_split_lowers_root (control)": true,
+ "strict_gain_over_pr2969": [
+  false,
+  -3.433221361066966e-05
+ ],
+ "strict_gain_over_pr2966": [
+  false,
+  -3.4331261386016964e-05
+ ],
+ "strict_gain_over_pr2957": [
+  false,
+  -3.401440393330296e-05
+ ],
+ "strict_gain_over_pr2942": [
+  false,
+  -3.311330872577911e-05
+ ]
+}

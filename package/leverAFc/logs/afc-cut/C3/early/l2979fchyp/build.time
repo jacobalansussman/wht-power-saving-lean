@@ -1,0 +1,23 @@
+	Command being timed: "env LEAN_NUM_THREADS=2 lake build Work.L2979Fc.Stmt Work.FourierL2979Fc.Main Work.FourierL2979Fc.UniformFourierChallenge Work.FourierL2979FcNeg.UniformFourierChallenge Work.FourierL2979Fc.Axioms"
+	User time (seconds): 113.18
+	System time (seconds): 32.99
+	Percent of CPU this job got: 133%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:49.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7069068
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 76
+	Minor (reclaiming a frame) page faults: 2848200
+	Voluntary context switches: 145033
+	Involuntary context switches: 11959
+	Swaps: 0
+	File system inputs: 55592
+	File system outputs: 224768
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

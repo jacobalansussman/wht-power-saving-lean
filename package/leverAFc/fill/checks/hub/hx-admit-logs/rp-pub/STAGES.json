@@ -1,0 +1,68 @@
+[
+  {
+    "exit_code": 0,
+    "log_sha256": "6bd8df30779863897e48441608240db6a7e3fcbd0754511e44f854f3a5c462a6",
+    "seconds": 1.0137179409939563,
+    "stage": "export-pr2894"
+  },
+  {
+    "exit_code": 0,
+    "log_sha256": "2aa976e4e0cc5c28ce2503656c4c1821c73ed578ca65a138e4c29fb628eec9e3",
+    "seconds": 1.8556684060022235,
+    "stage": "export-pr2833"
+  },
+  {
+    "exit_code": 0,
+    "log_sha256": "4a1625fdd9a947187583e67492c492f309e28669082f2e6f2aa97b5da345ea29",
+    "seconds": 1505.0981990250002,
+    "stage": "fresh-retained-bootstrap"
+  },
+  {
+    "exit_code": 0,
+    "log_sha256": "f2bbb6462b3f5bb8a6415bb33c0c35355353b13343ddb90961660f7473caa5a2",
+    "seconds": 4.041549896996003,
+    "stage": "four-kernel-stage"
+  },
+  {
+    "exit_code": 0,
+    "log_sha256": "2eb7601c48840a39c58eb838886aed00a531349b259f0bbc3ea6421376b8ea3c",
+    "seconds": 3.9546029920020374,
+    "stage": "preload-stage"
+  },
+  {
+    "exit_code": 0,
+    "log_sha256": "d80d8494c48816e3acf662db00cc0077a888b82392d736826f73beb1c4248299",
+    "seconds": 2.5139944399998058,
+    "stage": "parent-paired-stage"
+  },
+  {
+    "exit_code": 0,
+    "log_sha256": "61cc77beeae833d7473b5c5338b176b150f95f6652a888c0307f080674cfde35",
+    "seconds": 2.5356239789980464,
+    "stage": "paired-extension-stage"
+  },
+  {
+    "exit_code": 0,
+    "log_sha256": "06150c3f42489b14e981b90ac0e594e7e32bfc6ec4a98f3551cf53b6d18acd36",
+    "seconds": 4.985031021002214,
+    "stage": "rank7-overlay-stage"
+  },
+  {
+    "exit_code": 0,
+    "log_sha256": "459ca57fb73f78a18a656c09079eb0f88fa849b220c17cf5bf25b964c49f9dcf",
+    "seconds": 1.084282992000226,
+    "stage": "derive-closed-adapters"
+  },
+  {
+    "exit_code": 0,
+    "log_sha256": "d7581123b0f3330f2598e7758ccbca466018d2599124fc6ceb1b678a9ee27dec",
+    "seconds": 178.59219448600197,
+    "stage": "fresh-current-native"
+  },
+  {
+    "exit_code": 0,
+    "log_sha256": "37584a0aed98b08f491b676ba0e4914518027f556495b1ae4e8a9a123d360b4f",
+    "seconds": 1327.912955452004,
+    "stage": "complete-admission"
+  }
+]

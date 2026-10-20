@@ -1,0 +1,869 @@
++ python3 -I -B <package>/generators/tree/wht45/lever/p-lower/tools/transport.py <package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data/WORD-base.json.gz <scratch>/regenP/words/base.canonical.json.gz <scratch>/regenP/words/base.transport-audit.json
+{
+ "word": "<package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data/WORD-base.json.gz",
+ "word_file_sha256": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+ "word_content_sha256": "bbfe6acaea975063928f491e0fff2ce6027a572948c229bb734420a99a43d526",
+ "free_algebra_replay": "both orientations exact on all 632 columns",
+ "cleanup_warps_at_full": 72,
+ "canonical": "<scratch>/regenP/words/base.canonical.json.gz",
+ "canonical_file_sha256": "8dd45190fcc2578f4b55e09b562ff138dd6cd49a4d618f24f6953f386b00efd2",
+ "canonical_content_sha256": "852d09f08b83b760055aaa525632b75f4a8497a816405edbc325670222db63b4",
+ "v": 112,
+ "R": 408,
+ "original_helpers": 480,
+ "removed": 72,
+ "zero_buffers": 91,
+ "zero_buffer_reads": 2328,
+ "warps": 72,
+ "warp_events": {
+  "A": 24,
+  "B": 72,
+  "cleanup": 72,
+  "tadd_expansion": 72
+ },
+ "tadds": 36,
+ "scalar_operations": 17407,
+ "local_profile": {
+  "1": 2445,
+  "2": 706,
+  "3": 232,
+  "4": 108,
+  "5": 18,
+  "8": 8
+ },
+ "local_rank_mass": 5139,
+ "frames": 1124,
+ "directed_edges": 3030,
+ "warp_edge_classes": 180,
+ "widths_hist": {
+  "4": 26,
+  "5": 2,
+  "6": 16,
+  "7": 52,
+  "8": 99,
+  "9": 213
+ },
+ "seconds": 0.82
+}
++ python3 -I -B <package>/generators/tree/wht45/lever/p-lower/tools/lower_w.py <scratch>/regenP/words/base.canonical.json.gz <scratch>/regenP/words/base.gcert1w.json.gz <scratch>/regenP/words/lower-base.json --provider gauge44 --word <package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data/WORD-base.json.gz --mutants
+{
+ "canonical": "<scratch>/regenP/words/base.canonical.json.gz",
+ "canonical_file_sha256": "8dd45190fcc2578f4b55e09b562ff138dd6cd49a4d618f24f6953f386b00efd2",
+ "canonical_content_sha256": "852d09f08b83b760055aaa525632b75f4a8497a816405edbc325670222db63b4",
+ "lowering": {
+  "nA": 4279,
+  "nP": 192,
+  "nB_without_tail": 1946,
+  "tail": 203,
+  "nB": 2781,
+  "nD0": 108,
+  "nC0": 5736,
+  "nU": 5389,
+  "phase_A_y_gates": {
+   "scale": 12,
+   "add": 48
+  },
+  "slot_units_not_one_after_B": 146,
+  "x_units_not_one_after_B": 45,
+  "units_end_not_one": {
+   "x": 0,
+   "slots": 40,
+   "exits": 40,
+   "zero_buffers": 40
+  }
+ },
+ "frames_and_price": {
+  "blocks": {
+   "x": {
+    "1": 465,
+    "2": 100,
+    "3": 17,
+    "4": 45
+   },
+   "y": {
+    "1": 371,
+    "2": 96,
+    "3": 41,
+    "4": 30,
+    "5": 18
+   },
+   "s": {
+    "1": 1609,
+    "2": 510,
+    "3": 174,
+    "4": 33
+   },
+   "c": {
+    "8": 8
+   }
+  },
+  "hist": {
+   "1": 2445,
+   "2": 706,
+   "3": 232,
+   "4": 108,
+   "5": 18,
+   "8": 8
+  },
+  "N": 5139,
+  "cst": 64,
+  "invoice": [
+   5303,
+   5303
+  ],
+  "frame_steps": 3014,
+  "warp_steps": 180,
+  "max_block_rank": 8,
+  "hist_equals_hub_local_profile": true
+ },
+ "full_replay": {
+  "endpoint": "exact on all 632 columns: identity, y_t += x_t, 91 zero buffers 0 at zfree"
+ },
+ "main_phase_words": {
+  "x_row_entries_with_words": 162,
+  "y_row_entries_with_words": 36,
+  "hid_y_from_x_identity": true
+ },
+ "counts": {
+  "R": 408,
+  "nZ": 91,
+  "exits": 91,
+  "ext": 134,
+  "tadds": 36,
+  "warp_events": {
+   "A": 24,
+   "B": 72,
+   "U": 72,
+   "D0": 72,
+   "main_and_cleanup": 168
+  },
+  "zero_buffer_incidences": 2328,
+  "residuals_hist": {
+   "4": 26,
+   "5": 2,
+   "6": 16,
+   "7": 52,
+   "8": 99,
+   "9": 213
+  }
+ },
+ "width_inventory": {
+  "word": "<package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data/WORD-base.json.gz",
+  "word_file_sha256": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+  "hist": {
+   "4": 26,
+   "5": 2,
+   "6": 16,
+   "7": 52,
+   "8": 99,
+   "9": 213
+  },
+  "equals_residuals_per_helper": true
+ },
+ "out": "<scratch>/regenP/words/base.gcert1w.json.gz",
+ "out_file_sha256": "8f2db1387aefe62bb660b664e18a001c996360e205dc2d604a2cd5d307048759",
+ "out_content_sha256": "c03055bfeda8058849ec6cf82ff9c1e2b47366485ec17b1e17a943e9e94e2760",
+ "seconds": 1.98
+}
++ python3 -I -B <package>/generators/tree/wht45/lever/p-lower/tools/transport.py <package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data/WORD-extra.json.gz <scratch>/regenP/words/extra.canonical.json.gz <scratch>/regenP/words/extra.transport-audit.json
+{
+ "word": "<package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data/WORD-extra.json.gz",
+ "word_file_sha256": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7",
+ "word_content_sha256": "06136758a53b380a09658879439032160867602fdceedd455b94d69c0ff1c5ef",
+ "free_algebra_replay": "both orientations exact on all 632 columns",
+ "cleanup_warps_at_full": 72,
+ "canonical": "<scratch>/regenP/words/extra.canonical.json.gz",
+ "canonical_file_sha256": "b9dfa1ce1bff0dfcf6aea7a5ce6e341988cc3f5a580dd31686f7a63260d9acda",
+ "canonical_content_sha256": "202d3bfa43c5449eb0531816dc0dbd116b22ae1bf6cede550d82c49eb3bb1b22",
+ "v": 112,
+ "R": 408,
+ "original_helpers": 480,
+ "removed": 72,
+ "zero_buffers": 91,
+ "zero_buffer_reads": 2328,
+ "warps": 72,
+ "warp_events": {
+  "A": 24,
+  "B": 72,
+  "cleanup": 72,
+  "tadd_expansion": 72
+ },
+ "tadds": 36,
+ "scalar_operations": 17407,
+ "local_profile": {
+  "1": 2445,
+  "2": 706,
+  "3": 232,
+  "4": 108,
+  "5": 18,
+  "8": 8
+ },
+ "local_rank_mass": 5139,
+ "frames": 1124,
+ "directed_edges": 3030,
+ "warp_edge_classes": 180,
+ "widths_hist": {
+  "4": 26,
+  "5": 2,
+  "6": 16,
+  "7": 52,
+  "8": 99,
+  "9": 213
+ },
+ "seconds": 0.79
+}
++ python3 -I -B <package>/generators/tree/wht45/lever/p-lower/tools/lower_w.py <scratch>/regenP/words/extra.canonical.json.gz <scratch>/regenP/words/extra.gcert1w.json.gz <scratch>/regenP/words/lower-extra.json --provider extra --word <package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data/WORD-extra.json.gz --mutants
+{
+ "canonical": "<scratch>/regenP/words/extra.canonical.json.gz",
+ "canonical_file_sha256": "b9dfa1ce1bff0dfcf6aea7a5ce6e341988cc3f5a580dd31686f7a63260d9acda",
+ "canonical_content_sha256": "202d3bfa43c5449eb0531816dc0dbd116b22ae1bf6cede550d82c49eb3bb1b22",
+ "lowering": {
+  "nA": 4279,
+  "nP": 192,
+  "nB_without_tail": 1946,
+  "tail": 203,
+  "nB": 2781,
+  "nD0": 108,
+  "nC0": 5736,
+  "nU": 5389,
+  "phase_A_y_gates": {
+   "scale": 12,
+   "add": 48
+  },
+  "slot_units_not_one_after_B": 146,
+  "x_units_not_one_after_B": 45,
+  "units_end_not_one": {
+   "x": 0,
+   "slots": 40,
+   "exits": 40,
+   "zero_buffers": 40
+  }
+ },
+ "frames_and_price": {
+  "blocks": {
+   "x": {
+    "1": 465,
+    "2": 100,
+    "3": 17,
+    "4": 45
+   },
+   "y": {
+    "1": 371,
+    "2": 96,
+    "3": 41,
+    "4": 30,
+    "5": 18
+   },
+   "s": {
+    "1": 1609,
+    "2": 510,
+    "3": 174,
+    "4": 33
+   },
+   "c": {
+    "8": 8
+   }
+  },
+  "hist": {
+   "1": 2445,
+   "2": 706,
+   "3": 232,
+   "4": 108,
+   "5": 18,
+   "8": 8
+  },
+  "N": 5139,
+  "cst": 64,
+  "invoice": [
+   5303,
+   5303
+  ],
+  "frame_steps": 3014,
+  "warp_steps": 180,
+  "max_block_rank": 8,
+  "hist_equals_hub_local_profile": true
+ },
+ "full_replay": {
+  "endpoint": "exact on all 632 columns: identity, y_t += x_t, 91 zero buffers 0 at zfree"
+ },
+ "main_phase_words": {
+  "x_row_entries_with_words": 162,
+  "y_row_entries_with_words": 36,
+  "hid_y_from_x_identity": true
+ },
+ "counts": {
+  "R": 408,
+  "nZ": 91,
+  "exits": 91,
+  "ext": 134,
+  "tadds": 36,
+  "warp_events": {
+   "A": 24,
+   "B": 72,
+   "U": 72,
+   "D0": 72,
+   "main_and_cleanup": 168
+  },
+  "zero_buffer_incidences": 2328,
+  "residuals_hist": {
+   "4": 26,
+   "5": 2,
+   "6": 16,
+   "7": 52,
+   "8": 99,
+   "9": 213
+  }
+ },
+ "width_inventory": {
+  "word": "<package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data/WORD-extra.json.gz",
+  "word_file_sha256": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7",
+  "hist": {
+   "4": 26,
+   "5": 2,
+   "6": 16,
+   "7": 52,
+   "8": 99,
+   "9": 213
+  },
+  "equals_residuals_per_helper": true
+ },
+ "out": "<scratch>/regenP/words/extra.gcert1w.json.gz",
+ "out_file_sha256": "163466d55a870f90776279b1c9b2540c2d8067139d7b8e326ab4eb2061641d48",
+ "out_content_sha256": "43f4b3f09a62aa2181c196f1413fc28856e0e850440531e9932666652e84331a",
+ "seconds": 1.85
+}
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/mk_info.py <scratch>/regenP/words/base.gcert1w.json.gz <scratch>/regenP/tables-base/base.info.json
+R 408 residuals [(4, 26), (5, 2), (6, 16), (7, 52), (8, 99), (9, 213)] hist {1: 2445, 2: 706, 3: 232, 4: 108, 5: 18, 8: 8}
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/pack_ceil2.py <scratch>/regenP/tables-base/base.info.json <scratch>/regenP/tables-base/base-mut0-ceil.schedule.json.gz
+residuals [(4, 26), (5, 2), (6, 16), (7, 52), (8, 99), (9, 213)] S 3283 banks 3239 pad 71 leftover width 71
+L (9, 8, 8, 8, 8, 8, 8, 7, 7) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 8, 8, 6) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 7, 7, 7) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 8, 8, 5) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 7, 7, 7, 7) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 8, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 8, 8, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 7, 7, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 7, 7, 7, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 8, 5, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 7, 5, 5) one partial bank no 0.0s
+L (8, 8, 7, 7, 7, 7, 7, 7, 7, 6) one partial bank no 0.0s
+L (8, 8, 8, 7, 7, 7, 7, 7, 6, 6) one partial bank no 0.0s
+L (8, 8, 8, 7, 7, 7, 7, 7, 7, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 7, 7, 7, 6, 6, 6) one partial bank no 0.0s
+L (8, 8, 8, 8, 7, 7, 7, 7, 7, 4) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 7, 6, 6, 6, 6) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 7, 7, 7, 5, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 6, 6, 6, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 8, 7, 4, 4) one partial bank no 0.0s
+L (9, 7, 7, 7, 7, 7, 7, 7, 7, 6) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 6, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 7, 7, 7, 7, 7, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 7, 7, 7, 7, 7, 7, 7, 4) one partial bank no 0.0s
+L (9, 9, 9, 7, 7, 6, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 8, 6, 6, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 8, 4, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 6, 6, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 6, 6, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 7, 7, 4, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 5, 4, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 9, 8) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 8, 8, 7) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 8, 7, 6) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 7, 7, 6) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 8, 7, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 7, 7, 7, 7) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 7, 7, 7, 6) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 7, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 7, 7, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 8, 6, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 8, 7, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 7, 7, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 8, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 7, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 8, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 9, 4, 4) one partial bank no 0.0s
+L (8, 7, 7, 7, 7, 7, 7, 7, 7, 7) one partial bank no 0.0s
+L (8, 8, 8, 8, 7, 7, 7, 7, 6, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 7, 7, 6, 6, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 7, 7, 7, 6, 4) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 7, 6, 5, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 7, 6, 6, 4) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 7, 7, 5, 4) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 8, 6, 5, 4) one partial bank no 0.0s
+L (9, 8, 7, 7, 7, 7, 7, 7, 6, 6) one partial bank no 0.0s
+L (9, 8, 7, 7, 7, 7, 7, 7, 7, 5) one partial bank no 0.0s
+L (9, 8, 8, 7, 7, 7, 7, 6, 6, 6) one partial bank no 0.0s
+L (9, 8, 8, 7, 7, 7, 7, 7, 7, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 7, 7, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 8, 8, 8, 7, 7, 7, 7, 5, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 6, 6, 5, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 6, 6, 6, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 7, 7, 4, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 8, 5, 5, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 8, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 7, 7, 7, 7, 7, 7, 6, 5) one partial bank no 0.0s
+L (9, 9, 8, 7, 7, 7, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 8, 7, 7, 7, 7, 7, 5, 5) one partial bank no 0.0s
+L (9, 9, 8, 8, 7, 6, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 6, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 7, 7, 7, 4, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 8, 5, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 7, 7, 7, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 9, 7, 7, 7, 7, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 9, 7, 7, 7, 7, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 7, 7, 7, 7, 7, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 7, 7, 7, 7, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 6, 6, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 6, 6, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 6, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 6, 6, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 6, 6, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 7, 7, 5, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 7, 7, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 7, 4, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 6, 6, 5, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 5, 5, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 6, 4, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 7, 6, 5) one partial bank no 0.0s
+L (9, 8, 8, 7, 7, 7, 7, 7, 6, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 7, 7, 7, 6, 6, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 7, 7, 7, 7, 6, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 7, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 7, 7, 6, 5, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 7, 7, 6, 6, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 7, 7, 7, 5, 4) one partial bank no 0.0s
+L (9, 9, 8, 7, 7, 7, 7, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 8, 7, 7, 7, 7, 7, 6, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 7, 7, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 8, 8, 7, 7, 7, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 8, 8, 7, 7, 7, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 7, 7, 7, 7, 5, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 7, 6, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 7, 6, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 6, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 7, 5, 5, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 7, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 7, 6, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 9, 8, 7, 7, 6, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 9, 8, 7, 7, 6, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 7, 7, 5, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 7, 7, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 6, 5, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 7, 5, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 7, 6, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 6, 6, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 7, 6, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 7, 7, 5, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 6, 5, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 7, 6, 5, 4, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 7, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 7, 7, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 7, 7, 7, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 7, 6, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 7, 6, 5, 5, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 8, 7, 7) two partial banks no 4.5s
+L (9, 8, 8, 8, 8, 8, 8, 8, 6) two partial banks no 6.9s
+L (9, 9, 8, 8, 8, 8, 7, 7, 7) two partial banks ok 0.0s
+realised table: banks 3239 pads [(0, 3237), (35, 1), (36, 1)] W 10407 root 0.00146116384351 kernel 14611616 dft 14611615
++ python3 -I -B <package>/generators/tree/wht43/bound-check/k-combine/tools/make_sched_x.py <scratch>/regenP/words/base.gcert1w.json.gz <scratch>/regenP/tables-base/base-mut0-ceil.schedule.json.gz <package>/generators/tree/wht43/bound-check/k-combine/toolkit <scratch>/regenP/price/S2979B
+{
+ "banks": 3239,
+ "W": 10407,
+ "pads": {
+  "0": 3237,
+  "35": 1,
+  "36": 1
+ },
+ "root": "0.001461163843517",
+ "kernel": 14611616,
+ "dft": 14611615,
+ "schedK": true
+}
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/wgen2.py <scratch>/regenP/words/base.gcert1w.json.gz S2979B <scratch>/regenP/w2-S2979B --expect {"1": 2445, "2": 706, "3": 232, "4": 108, "5": 18, "8": 8}
+{
+ "name": "S2979B",
+ "cert": "<scratch>/regenP/words/base.gcert1w.json.gz",
+ "cert_sha256": "8f2db1387aefe62bb660b664e18a001c996360e205dc2d604a2cd5d307048759",
+ "provider": "gauge44",
+ "n": 731,
+ "nc": 99,
+ "events": 18373,
+ "segments": 15,
+ "seg_phases": [
+  "D0",
+  "P",
+  "C0",
+  "C0",
+  "C0",
+  "A",
+  "A",
+  "A",
+  "CS",
+  "B",
+  "B",
+  "U",
+  "U",
+  "U",
+  "US"
+ ],
+ "seg_lengths": [
+  108,
+  192,
+  2000,
+  2000,
+  1736,
+  2000,
+  2000,
+  87,
+  40,
+  2000,
+  781,
+  2000,
+  2000,
+  1389,
+  40
+ ],
+ "ranks": {
+  "1": 2445,
+  "2": 706,
+  "3": 232,
+  "4": 108,
+  "5": 18,
+  "8": 8
+ },
+ "D": 64,
+ "B": 256,
+ "N": 731,
+ "K": 18,
+ "max_row_entries": [
+  16357,
+  12751
+ ],
+ "fp": 607772475368371082,
+ "fp_stream_length": 352176
+}
+wrote 7 data modules (4326492 bytes), 60 check modules
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/gen_global_w.py <scratch>/regenP/price/S2979B.json --toolkit <package>/generators/tree/wht43/bound-check/k-combine/toolkit --out <scratch>/regenP/w2-S2979B --name S2979B --wgen <scratch>/regenP/w2-S2979B/logs/wgen-S2979B.json --v2 --glue <package>/generators/tree/wht45/lever2979/x-words/tools/glue2.lean.tmpl --expect {"1": 2445, "2": 706, "3": 232, "4": 108, "5": 18, "8": 8}
+S2979B: kernel saving 14611616/10^10; DFT saving 14611615/10^10; banks 3239; W 10407; rational slack 2.0199016155454584e-10
++ (must exit 3) python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/gen_global_w.py <scratch>/regenP/price/S2979B.json --toolkit <package>/generators/tree/wht43/bound-check/k-combine/toolkit --out <scratch>/regenP/never-S2979B --name S2979B --wgen <scratch>/regenP/w2-S2979B/logs/wgen-S2979B.json --v2 --glue <package>/generators/tree/wht45/lever2979/x-words/tools/glue2.lean.tmpl --expect {"1": 2445, "2": 706, "3": 232, "4": 108, "5": 18, "8": 8} --dft 14611616
+REFUSED: DFT numerator 14611616: no block plan at kernel numerator 14611617 (one grid step above the largest, 14611616)
++ python3 -I -B <package>/generators/tree/wht43/bound-check/k-combine/tools/generate_checks_x.py --out <scratch>/regenP/w2-S2979B --original-challenge <package>/generators/tree/wht43/bound-check/k-combine/toolkit/third-party/openai-math/lean/ComparatorChallenges/UniformFourier.lean --comparator <package>/generators/tree/wht43/bound-check/k-combine/toolkit/tools/Compare.lean --name S2979B
+challenge exponent 1 - 14611615/10^10 (negative 14611616)
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/mk_stage.py S2979B <scratch>/regenP/w2-S2979B <package>/generators/tree/wht45/lever2979/x-words/stage/extra none <scratch>/regenP/stage
+S2979B 132 files 4979805 bytes; tgz 50554b0a984988db29d8265f6ac1b203a5e8398fb85a75a637eb3e8eaf8a86ac
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/mk_info.py <scratch>/regenP/words/extra.gcert1w.json.gz <scratch>/regenP/tables-extra/extra.info.json
+R 408 residuals [(4, 26), (5, 2), (6, 16), (7, 52), (8, 99), (9, 213)] hist {1: 2445, 2: 706, 3: 232, 4: 108, 5: 18, 8: 8}
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/pack_ceil2.py <scratch>/regenP/tables-extra/extra.info.json <scratch>/regenP/tables-extra/extra-mut0-ceil.schedule.json.gz
+residuals [(4, 26), (5, 2), (6, 16), (7, 52), (8, 99), (9, 213)] S 3283 banks 3239 pad 71 leftover width 71
+L (9, 8, 8, 8, 8, 8, 8, 7, 7) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 8, 8, 6) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 7, 7, 7) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 8, 8, 5) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 7, 7, 7, 7) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 8, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 8, 8, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 7, 7, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 7, 7, 7, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 8, 5, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 7, 5, 5) one partial bank no 0.0s
+L (8, 8, 7, 7, 7, 7, 7, 7, 7, 6) one partial bank no 0.0s
+L (8, 8, 8, 7, 7, 7, 7, 7, 6, 6) one partial bank no 0.0s
+L (8, 8, 8, 7, 7, 7, 7, 7, 7, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 7, 7, 7, 6, 6, 6) one partial bank no 0.0s
+L (8, 8, 8, 8, 7, 7, 7, 7, 7, 4) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 7, 6, 6, 6, 6) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 7, 7, 7, 5, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 6, 6, 6, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 8, 7, 4, 4) one partial bank no 0.0s
+L (9, 7, 7, 7, 7, 7, 7, 7, 7, 6) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 6, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 7, 7, 7, 7, 7, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 7, 7, 7, 7, 7, 7, 7, 4) one partial bank no 0.0s
+L (9, 9, 9, 7, 7, 6, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 8, 6, 6, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 8, 4, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 6, 6, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 6, 6, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 7, 7, 4, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 5, 4, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 9, 8) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 8, 8, 7) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 8, 7, 6) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 7, 7, 6) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 8, 7, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 7, 7, 7, 7) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 7, 7, 7, 6) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 7, 6, 6) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 7, 7, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 8, 6, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 8, 7, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 7, 7, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 8, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 7, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 8, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 9, 9, 4, 4) one partial bank no 0.0s
+L (8, 7, 7, 7, 7, 7, 7, 7, 7, 7) one partial bank no 0.0s
+L (8, 8, 8, 8, 7, 7, 7, 7, 6, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 7, 7, 6, 6, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 7, 7, 7, 6, 4) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 7, 6, 5, 5) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 7, 6, 6, 4) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 7, 7, 5, 4) one partial bank no 0.0s
+L (8, 8, 8, 8, 8, 8, 8, 6, 5, 4) one partial bank no 0.0s
+L (9, 8, 7, 7, 7, 7, 7, 7, 6, 6) one partial bank no 0.0s
+L (9, 8, 7, 7, 7, 7, 7, 7, 7, 5) one partial bank no 0.0s
+L (9, 8, 8, 7, 7, 7, 7, 6, 6, 6) one partial bank no 0.0s
+L (9, 8, 8, 7, 7, 7, 7, 7, 7, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 7, 7, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 8, 8, 8, 7, 7, 7, 7, 5, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 6, 6, 5, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 6, 6, 6, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 7, 7, 4, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 8, 5, 5, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 8, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 7, 7, 7, 7, 7, 7, 6, 5) one partial bank no 0.0s
+L (9, 9, 8, 7, 7, 7, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 8, 7, 7, 7, 7, 7, 5, 5) one partial bank no 0.0s
+L (9, 9, 8, 8, 7, 6, 6, 6, 6, 6) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 6, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 7, 7, 7, 4, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 8, 5, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 7, 7, 7, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 9, 7, 7, 7, 7, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 9, 7, 7, 7, 7, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 7, 7, 7, 7, 7, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 7, 7, 7, 7, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 6, 6, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 6, 6, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 6, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 6, 6, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 6, 6, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 7, 7, 5, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 7, 7, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 7, 4, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 6, 6, 5, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 5, 5, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 6, 4, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 8, 7, 6, 5) one partial bank no 0.0s
+L (9, 8, 8, 7, 7, 7, 7, 7, 6, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 7, 7, 7, 6, 6, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 7, 7, 7, 7, 6, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 7, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 7, 7, 6, 5, 5) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 7, 7, 6, 6, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 7, 7, 7, 5, 4) one partial bank no 0.0s
+L (9, 9, 8, 7, 7, 7, 7, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 8, 7, 7, 7, 7, 7, 6, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 7, 7, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 8, 8, 7, 7, 7, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 8, 8, 7, 7, 7, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 7, 7, 7, 7, 5, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 7, 6, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 7, 6, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 6, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 7, 5, 5, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 8, 7, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 7, 6, 6, 6, 6, 5) one partial bank no 0.0s
+L (9, 9, 9, 8, 7, 7, 6, 6, 5, 5) one partial bank no 0.0s
+L (9, 9, 9, 8, 7, 7, 6, 6, 6, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 7, 7, 5, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 7, 7, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 6, 5, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 8, 7, 5, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 7, 7, 6, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 6, 6, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 7, 6, 6, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 7, 7, 5, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 8, 6, 5, 4, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 9, 7, 6, 5, 4, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 7, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 8, 8, 8, 7, 7, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 7, 7, 7, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 8, 8, 7, 6, 6, 5, 4) one partial bank no 0.0s
+L (9, 9, 9, 9, 8, 7, 6, 5, 5, 4) one partial bank no 0.0s
+L (9, 8, 8, 8, 8, 8, 8, 7, 7) two partial banks no 4.7s
+L (9, 8, 8, 8, 8, 8, 8, 8, 6) two partial banks no 7.1s
+L (9, 9, 8, 8, 8, 8, 7, 7, 7) two partial banks ok 0.0s
+realised table: banks 3239 pads [(0, 3237), (35, 1), (36, 1)] W 10407 root 0.00146116384351 kernel 14611616 dft 14611615
++ python3 -I -B <package>/generators/tree/wht43/bound-check/k-combine/tools/make_sched_x.py <scratch>/regenP/words/extra.gcert1w.json.gz <scratch>/regenP/tables-extra/extra-mut0-ceil.schedule.json.gz <package>/generators/tree/wht43/bound-check/k-combine/toolkit <scratch>/regenP/price/S2979E
+{
+ "banks": 3239,
+ "W": 10407,
+ "pads": {
+  "0": 3237,
+  "35": 1,
+  "36": 1
+ },
+ "root": "0.001461163843517",
+ "kernel": 14611616,
+ "dft": 14611615,
+ "schedK": true
+}
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/wgen2.py <scratch>/regenP/words/extra.gcert1w.json.gz S2979E <scratch>/regenP/w2-S2979E --expect {"1": 2445, "2": 706, "3": 232, "4": 108, "5": 18, "8": 8}
+{
+ "name": "S2979E",
+ "cert": "<scratch>/regenP/words/extra.gcert1w.json.gz",
+ "cert_sha256": "163466d55a870f90776279b1c9b2540c2d8067139d7b8e326ab4eb2061641d48",
+ "provider": "extra",
+ "n": 731,
+ "nc": 99,
+ "events": 18373,
+ "segments": 15,
+ "seg_phases": [
+  "D0",
+  "P",
+  "C0",
+  "C0",
+  "C0",
+  "A",
+  "A",
+  "A",
+  "CS",
+  "B",
+  "B",
+  "U",
+  "U",
+  "U",
+  "US"
+ ],
+ "seg_lengths": [
+  108,
+  192,
+  2000,
+  2000,
+  1736,
+  2000,
+  2000,
+  87,
+  40,
+  2000,
+  781,
+  2000,
+  2000,
+  1389,
+  40
+ ],
+ "ranks": {
+  "1": 2445,
+  "2": 706,
+  "3": 232,
+  "4": 108,
+  "5": 18,
+  "8": 8
+ },
+ "D": 64,
+ "B": 256,
+ "N": 731,
+ "K": 18,
+ "max_row_entries": [
+  16357,
+  12751
+ ],
+ "fp": 14770551171431252492,
+ "fp_stream_length": 352176
+}
+wrote 7 data modules (4326497 bytes), 60 check modules
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/gen_global_w.py <scratch>/regenP/price/S2979E.json --toolkit <package>/generators/tree/wht43/bound-check/k-combine/toolkit --out <scratch>/regenP/w2-S2979E --name S2979E --wgen <scratch>/regenP/w2-S2979E/logs/wgen-S2979E.json --v2 --glue <package>/generators/tree/wht45/lever2979/x-words/tools/glue2.lean.tmpl --expect {"1": 2445, "2": 706, "3": 232, "4": 108, "5": 18, "8": 8}
+S2979E: kernel saving 14611616/10^10; DFT saving 14611615/10^10; banks 3239; W 10407; rational slack 2.0199016155454584e-10
++ (must exit 3) python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/gen_global_w.py <scratch>/regenP/price/S2979E.json --toolkit <package>/generators/tree/wht43/bound-check/k-combine/toolkit --out <scratch>/regenP/never-S2979E --name S2979E --wgen <scratch>/regenP/w2-S2979E/logs/wgen-S2979E.json --v2 --glue <package>/generators/tree/wht45/lever2979/x-words/tools/glue2.lean.tmpl --expect {"1": 2445, "2": 706, "3": 232, "4": 108, "5": 18, "8": 8} --dft 14611616
+REFUSED: DFT numerator 14611616: no block plan at kernel numerator 14611617 (one grid step above the largest, 14611616)
++ python3 -I -B <package>/generators/tree/wht43/bound-check/k-combine/tools/generate_checks_x.py --out <scratch>/regenP/w2-S2979E --original-challenge <package>/generators/tree/wht43/bound-check/k-combine/toolkit/third-party/openai-math/lean/ComparatorChallenges/UniformFourier.lean --comparator <package>/generators/tree/wht43/bound-check/k-combine/toolkit/tools/Compare.lean --name S2979E
+challenge exponent 1 - 14611615/10^10 (negative 14611616)
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/mk_stage.py S2979E <scratch>/regenP/w2-S2979E <package>/generators/tree/wht45/lever2979/x-words/stage/extra none <scratch>/regenP/stage
+S2979E 132 files 4979751 bytes; tgz 59b4793cccbf85d283be533ccffb23e72bde56a3e5fc19226eadc62748b9aaba
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-words/tools/mk_stage_pair.py <scratch>/regenP/stage <package>/generators/tree/wht45/lever2979/x-words/stage/pair <scratch>/regenP/stage
+pair stage 242 files; tgz b445a5b6945ca631b90524f9cf9989ec66bde72e5fb6ab2c15c28a575780352a
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-tables/tools/mk_resid2979.py <scratch>/regenP/resid-in <scratch>/regenP/tables/residuals-2979.json
+wrote <scratch>/regenP/tables/residuals-2979.json {'base.gcert1w.json.gz': '8f2db1387aefe62b', 'lower-base.json': 'f219f479f8b72d77', 'extra.gcert1w.json.gz': '163466d55a870f90', 'lower-extra.json': '5e5d794595c9d370'}
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-tables/tools/own_to_host2979.py <package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/allocation <package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data <package>/generators/tree/wht45/lever/g-heads/dl/pr3945/owner/inputs <scratch>/regenP/tables/residuals-2979.json <scratch>/regenP/tables/H2979
+{"producer": "x-tables own_to_host2979.py (p-own own_to_host.py, instance #2979)", "T": 74, "calls": 666, "R": 408, "NH": 149184, "nb": 0, "roles": 271728, "cross_replica_roles": 251358, "cross_share": 0.925035, "dispatch": {"extra": 416, "gauge44": 250}, "provider_slot_diffs": [], "inventory": {"0": {"4": 26, "5": 2, "6": 16, "7": 52, "8": 99, "9": 213}, "1": {"4": 26, "5": 2, "6": 16, "7": 52, "8": 99, "9": 213}}, "windows": {"equal": 1332}, "remainders": {"1": 17310, "3": 4956, "5": 1728, "48": 28190}, "profile": {"1": 1645680, "2": 470196, "3": 159468, "4": 71928, "5": 13716, "8": 5328, "48": 28190}, "profile_hub": {"1": 1645680, "2": 470196, "3": 159468, "4": 71928, "5": 13716, "8": 5328, "48": 28190}, "rank_mass": 4816512, "fill_rule_errors": {}, "checks": {"widths_hub_eq_ours": true, "windows_ours_eq_hub_template": true, "fill_rules": true, "all_slots_hosted": true, "rows_injective": true, "capacity": true, "remainders_eq_PROFILE_minus_calls": true, "profile_eq_PROFILE_json": true, "rank_total": true, "dispatch_counts_eq_DISPATCH_json": true}, "all_ok": true, "inputs_sha256": {"FILL": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39", "PROFILE": "94a819747f3ced41f1544ada0036c983fc0c92847b9644380f877a06cd7931cf", "ORDER": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1", "DISPATCH": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c", "PROVIDERS": "f2edb7922f3029a5d607437e737775ff3371bca49ebab62e5e2495d16d3bf573", "TEMPLATE": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e", "PLAN": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e", "WORD-base": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d", "WORD-extra": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7", "residuals": "05503c4534460602ed4181f555924fc7529c0bef7e7fb98a05ba9dc99c1275d5"}, "seconds": 0.8, "hosttab_sha256": "1369667ecb08978a3526db34ccd7d988553cc6d476b7d3ad481e87ea2bbcaf7a", "hosttab_content_sha256": "4c6720e49ac262a2947bf387a70de039deef5cbdc16cb56afb5cd0d83f657ec6"}
+wrote <scratch>/regenP/tables/H2979-hosttab.json.gz <scratch>/regenP/tables/H2979-audit.json ALL OK
++ python3 -I -B <scratch>/regenP/afd/tools/own_to_host2979Fc.py <scratch>/regenP/afd/in/alloc2979Fc <package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/data <package>/generators/tree/wht45/lever/g-heads/dl/pr3945/owner/inputs <scratch>/regenP/tables/residuals-2979.json <scratch>/regenP/afd/out/H2979Fc
+{"producer": "afc-data own_to_host2979Fc.py (aA-data own_to_host2979H.py, FILL = A-fc 7fc766c6, PROFILE = A-fc 5df79411)", "T": 74, "calls": 666, "R": 408, "NH": 149184, "nb": 0, "roles": 271728, "cross_replica_roles": 238715, "cross_share": 0.878507, "dispatch": {"extra": 416, "gauge44": 250}, "provider_slot_diffs": [], "inventory": {"0": {"4": 26, "5": 2, "6": 16, "7": 52, "8": 99, "9": 213}, "1": {"4": 26, "5": 2, "6": 16, "7": 52, "8": 99, "9": 213}}, "windows": {"equal": 1332}, "remainders": {"1": 2269, "6": 5, "7": 3, "17": 8, "19": 1, "23": 25905, "48": 16576}, "profile": {"1": 1630639, "2": 470196, "3": 154512, "4": 71928, "5": 11988, "6": 5, "7": 3, "8": 5328, "17": 8, "19": 1, "23": 25905, "48": 16576}, "profile_hub": {"1": 1630639, "2": 470196, "3": 154512, "4": 71928, "5": 11988, "6": 5, "7": 3, "8": 5328, "17": 8, "19": 1, "23": 25905, "48": 16576}, "rank_mass": 4816512, "fill_rule_errors": {}, "checks": {"widths_hub_eq_ours": true, "windows_ours_eq_hub_template": true, "fill_rules": true, "all_slots_hosted": true, "rows_injective": true, "capacity": true, "remainders_eq_PROFILE_minus_calls": true, "profile_eq_PROFILE_json": true, "rank_total": true, "dispatch_counts_eq_DISPATCH_json": true}, "all_ok": true, "inputs_sha256": {"FILL": "7fc766c6c3e1561cee60b258138a918020b96d85ea782a2b01ad0ee035fd082e", "PROFILE": "5df7941120150492c64e62dc3362095eff3dfac9facff041ebb5c25b2e78f75e", "ORDER": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1", "DISPATCH": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c", "PROVIDERS": "f2edb7922f3029a5d607437e737775ff3371bca49ebab62e5e2495d16d3bf573", "TEMPLATE": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e", "PLAN": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e", "WORD-base": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d", "WORD-extra": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7", "residuals": "05503c4534460602ed4181f555924fc7529c0bef7e7fb98a05ba9dc99c1275d5"}, "seconds": 0.8, "hosttab_sha256": "a4baa4e69f2b7d0ff633fd176039d2759399c3c97a6176e8b0a9b2646b78963e", "hosttab_content_sha256": "3f3d0bed40eff594d4b4a45382361171649cd158d57de1d747114e79ba3f510a"}
+wrote <scratch>/regenP/afd/out/H2979Fc-hosttab.json.gz <scratch>/regenP/afd/out/H2979Fc-audit.json ALL OK
++ python3 -I -B <scratch>/regenP/afd/tools/fill_indep2979Fc.py <scratch>/regenP/afd/out/H2979Fc-hosttab.json.gz <scratch>/regenP/tables/H2979-hosttab.json.gz <scratch>/regenP/afd/out/fill-independence.json
+{"fields": {"NH": "same", "R": "same", "T": "same", "child_of": "same", "disp": "same", "format": "same", "hpair": "same", "hrem": "DIFFERS", "hrows": "DIFFERS", "kinds": "same", "kk": "same", "kz": "same", "local_profile": "same", "nb": "same", "offs": "DIFFERS", "order_k": "same", "providers": "same", "ranks": "same", "res": "same", "time": "same", "windows": "same"}, "source": {"FILL": "DIFFERS", "ORDER": "same", "DISPATCH": "same", "PROFILE": "DIFFERS", "PROVIDERS": "same", "TEMPLATE": "same", "PLAN": "same", "WORD-base": "same", "WORD-extra": "same", "residuals": "same"}, "roles_rehosted": 271671, "hrem_changes": {"0->1": 1269, "0->23": 10408, "0->6": 4, "0->7": 3, "1->0": 2530, "1->17": 8, "1->19": 1, "1->23": 13770, "1->6": 1, "3->0": 4466, "3->48": 490, "48->0": 12104, "5->0": 1, "5->23": 1727}}
+FILL-INDEPENDENT CALL FIELDS
++ python3 -I -B <scratch>/regenP/afd/tools/mk_parts.py <scratch>/regenP/afd/out/H2979Fc-hosttab.json.gz H2979Fc 25 <scratch>/regenP/lean/Work/XHostT/Data/H2979Fc
+wrote 27 parts, 666 kinds, records 271728 = NC*R 271728
++ (must exit 3) python3 -I -B <scratch>/regenP/afd/tools/mk_parts.py <scratch>/regenP/afd/out/H2979Fc-hosttab.json.gz H2979Fcnload 25 <scratch>/regenP/never-load --perturb load
+perturbed one entry: {'mode': 'load', 'k': 0, 'q': 0, 'old': 26716, 'new': 26717}
+REFUSED: 1 host kind(s) fail the Python mirror; first: kind 119: bin 26716: load 0 + remainder 23 != rank 32
++ (must exit 3) python3 -I -B <scratch>/regenP/afd/tools/mk_parts.py <scratch>/regenP/afd/out/H2979Fc-hosttab.json.gz H2979Fcnwin 25 <scratch>/regenP/never-win --perturb win
+perturbed one entry: {'mode': 'win', 'k': 2, 'q': 2, 'old': 74844, 'new': 10332}
+REFUSED: 2 host kind(s) fail the Python mirror; first: kind 46: bin 10332: record (call 2, slot 2) outside the window [33, 62] (time 30)
++ python3 -I -B <scratch>/regenP/afd/tools/mk_parts.py <scratch>/regenP/afd/out/H2979Fc-hosttab.json.gz H2979Fcnload 25 <scratch>/regenP/neg/Work/XHostT/Data/H2979Fcnload --perturb load --emit-neg
+perturbed one entry: {'mode': 'load', 'k': 0, 'q': 0, 'old': 26716, 'new': 26717}
+NEGATIVE: wrote Calls + 2 modules: [('NegSome119.lean', 'FAIL'), ('NegNone119.lean', 'PASS')]
++ python3 -I -B <scratch>/regenP/afd/tools/mk_parts.py <scratch>/regenP/afd/out/H2979Fc-hosttab.json.gz H2979Fcnwin 25 <scratch>/regenP/neg/Work/XHostT/Data/H2979Fcnwin --perturb win --emit-neg
+perturbed one entry: {'mode': 'win', 'k': 2, 'q': 2, 'old': 74844, 'new': 10332}
+NEGATIVE: wrote Calls + 4 modules: [('NegSome46.lean', 'FAIL'), ('NegNone46.lean', 'PASS'), ('NegSome334.lean', 'FAIL'), ('NegNone334.lean', 'PASS')]
++ python3 -I -B <scratch>/regenP/afd/tools/mk_disp2979.py <package>/generators/tree/wht45/afc/afc-data/in/alloc2979Fc/DISPATCH.json <package>/generators/tree/wht45/afc/afc-data/in/alloc2979Fc/ORDER.json 74 416 250 <scratch>/regenP/tables/disp/Disp.lean
+wrote <scratch>/regenP/tables/disp/Disp.lean: 666 calls, extra 416, gauge44 250; first 8 replicas extra 69 gauge44 3; DISPATCH list order = ORDER: True
++ (must exit 3) python3 -I -B <scratch>/regenP/afd/tools/mk_disp2979.py <package>/generators/tree/wht45/afc/afc-data/in/alloc2979Fc/DISPATCH.json <package>/generators/tree/wht45/afc/afc-data/in/alloc2979Fc/ORDER.json 74 417 249 <scratch>/regenP/never-disp/Disp.lean
+REFUSED (nothing written):
+  counts extra 416 gauge44 250, expected 417 249
++ python3 -I -B <scratch>/regenP/afd/tools/mk_inst2979Fc.py <scratch>/regenP/lean
+ok: 9 modules written (H 16576, F1 0, remainders {1: 2269, 6: 5, 7: 3, 17: 8, 19: 1, 23: 25905, 48: 16576})
+  Work/XHostT/Data/H2979Fc/DispLink.lean        <- x-tables/lean/Work/XHostT/Data/H2979/DispLink.lean DH2979:5, H2979:2
+  Work/XHostT/Data/H2979Fc/Heads.lean           <- x-tables/lean/Work/XHostT/Data/H2979/Heads.lean    12104:1, 16,086:1, 16086:1, DH2979:3, H2979:2, txt:(unhosted, not heads: 6,512 + :1, txt:per-kind data facts of #2979's:1, txt:the literal heads: 8,064 of ch:1
+  Work/XHostT/Data/H2979Fc/NegHeads.lean        <- x-tables/lean/Work/XHostT/Data/H2979/NegHeads.lean 16087:1, DH2979:2, H2979:1
+  Work/XHostT/Inst/S2979Fc.lean                 <- x-tables/lean/Work/XHostT/Inst/S2979.lean          DH2979:2, H2979:1, sched2979:5, sched2979_fits:2, sched2979_host:1, sched2979_hrem:1, sched2979_tm:1, txt:The host table of hub PR #2979:1, txt:data from x-tables'
+conversion:1, txt:the cross-replica host schedul:1
+  Work/XHostT/Inst/S2979FcFacts.lean            <- x-tables/lean/Work/XHostT/Inst/S2979Facts.lean     12104:2, 16,086:2, 16086:2, DH2979:1, H2979:3, S2979:2, card_live2979:3, resAt2979_ge:2, resK2979_disp:4, resK2979_eq0:3, resK2979_ge4:3, resK2979_pos:3, sched2979:6, sched2979_f1:2, sched2979_hcost:3, sched2979_heads:3, sched2979_hrem:2, txt:**the head count of #2979**:1, txt:**the price of the remaining c:1, txt:17310 * φ 1 + 4956 * φ 3 + 172:1, txt:17310 φ1 + 4956 φ3 + 1728 φ5 +:1, txt:The data facts of #2979's sche:1, txt:the cross-replica host schedul:1, txt:the idle part of #2979's PROFI:1
+  Work/XHostT/Inst/S2979FcHB.lean               <- x-tables/lean/Work/XHostT/Inst/S2979HB.lean        16,086:2, 16086:1, DH2979:1, S2979Facts:1, headBins2979_card:2, resK2979_pos:2, sched2979:4, sched2979_fits:1, sched2979_heads:2, txt:#2979's head bins:1, txt:**the head bins of #2979**:1
+  Work/XHostT/Inst/S2979FcUnit.lean             <- x-tables/lean/Work/XHostT/Inst/S2979Unit.lean      S2979Facts:1, hU2979:3, lp2979:8, sched2979:4, sched2979_hcost:1, txt:#2979's profile:1, txt:#2979's unit price is its PROF:1, txt:#2979's unit profile:2, txt:#2979's whole unit profile:1, txt:17310 * φ 1 + 4956 * φ 3 + 172:1, txt:[(1, 1645680), (2, 470196), (3:1, txt:`allocation/PROFILE.json`:1, txt:`allocation/PROFILE.json`, sha:1, unit2979:7, unit2979_arith:4
+  Work/XHostT/Data/H2979Fc/NegF1.lean           <- template in mk_inst2979Fc.py                       
+  Work/XHostT/Inst/S2979FcHFW.lean              <- template in mk_inst2979Fc.py                       
++ python3 -I -B <package>/generators/tree/wht45/afc/afc-cut/tools/mk_profile2979Fc.py <package>/generators/tree/wht45/afc/afc-data/in/alloc2979Fc/PROFILE.json <scratch>/regenP/afc/profile2979Fc.json
+written <scratch>/regenP/afc/profile2979Fc.json: children {1: 1630639, 2: 470196, 3: 154512, 4: 71928, 5: 11988, 6: 5, 7: 3, 8: 5328, 17: 8, 19: 1, 23: 25905}, blocks 2370513, rmax 23
++ (must exit 2) python3 -I -B <package>/generators/tree/wht45/afc/afc-cut/tools/mk_profile2979Fc.py <package>/generators/tree/wht45/lever/p-alt/dl/main2979/research/rank7-joint-endframes/allocation/PROFILE.json <scratch>/regenP/afc/never-profile.json
+REFUSED: PROFILE.json sha256 is not the pinned A-fc profile
++ python3 -I -B <package>/generators/tree/wht45/afc/afc-cut/tools/mk_rate_mixed.py scan 2979Fc=<scratch>/regenP/afc/profile2979Fc.json
+profile 2979Fc: root saving 0.00178870456430307919393004196931647499770177329384913028146696661601588292973705
+largest DFT numerator the enclosure proves: 17887045 (saving 1.7887045e-03); N+1 = 17887046 refused
+  slack_rel 1.538e-10, root - N = 0.6430 grid steps, rate point N + 2/100
++ python3 -I -B <package>/generators/tree/wht45/afc/afc-cut/tools/mk_rate_mixed.py emit 2979Fc=<scratch>/regenP/afc/profile2979Fc.json 17887045 <scratch>/regenP/lean
+written <scratch>/regenP/lean/Work/Mixed/Rate2979Fc.lean slack_rel 1.538e-10
++ (must exit 2) python3 -I -B <package>/generators/tree/wht45/afc/afc-cut/tools/mk_rate_mixed.py emit 2979Fc=<scratch>/regenP/afc/profile2979Fc.json 17887046 <scratch>/regenP/never-rate
+REFUSED: the enclosure does not prove the rate fact at N = 17887046 (z1 = 1 - 1788704602/10^12)
++ python3 -I -B <package>/generators/tree/wht45/afc/afc-cut/tools/mk_l2979Fc.py final <scratch>/regenP/final-L2979Fc
+ok L2979Fc files 18 alpha 1 - 1788704501/10^12, target 1 - 17887045/10^10
+  alpha = 1 - 1788704501/10^12 < target = 1 - 17887045/10^10 (exact)
+  profile 2979Fc = the histogram cut2979Fc of the Lean rate module Rate2979Fc.lean (afc-cut, by fc-rate's copy of e-r45m1's generator; sha 194f0c7d)
+  profile 2979Fc: mixed root saving 0.00178870456430 (Decimal bisection), 0.6430 grid steps above N
+  rate point 1 - 1788704502/10^12 below the root: the rate fact holds (independent check)
+  e-r45m1 enclosure: OK N = 17887045 slack_rel 1.538e-10
+  challenge FourierL2979Fc (1 - 17887045/10^10): byte-identical to my derivation from OpenAI's statement
+  challenge FourierL2979FcNeg (1 - 17887046/10^10): byte-identical to my derivation from OpenAI's statement
+ok L2979Fc mode final N 17887045: 20 files in <scratch>/regenP/final-L2979Fc/stage
++ (must exit 2) python3 -I -B <package>/generators/tree/wht45/afc/afc-cut/tools/mk_l2979Fc.py final <scratch>/regenP/never-L2979Fc --num 17887046
+REFUSED: the rate point 1 - 1788704602/10^12 lies above the mixed root (saving 0.001788704564): the rate fact is false at N = 17887046
++ (must exit 2) python3 -I -B <package>/generators/tree/wht45/afc/afc-cut/tools/mk_l2979Fc.py hyp <scratch>/regenP/never-L2979Fch --num 17887046
+REFUSED: the rate point 1 - 1788704602/10^12 lies above the mixed root (saving 0.001788704564): the rate fact is false at N = 17887046
++ python3 -I -B <package>/generators/tree/wht45/lever2979/x-inst/tools/mk_hfw2979.py <package>/generators/tree/wht45/lever/p-bridge/lean2 <scratch>/regenP/lean
+<scratch>/regenP/lean/Work/XHostT/HFW2979/Def.lean: 623 lines, 67 declarations, sha256 abc185b033f3843b
+<scratch>/regenP/lean/Work/XHostT/HFW2979/Stage.lean: 1511 lines, 29 declarations, sha256 1d23d2e7c3cd77f7
+<scratch>/regenP/lean/Work/XHostT/HFW2979/Cert.lean: 336 lines, 15 declarations, sha256 974ba95b8749f5cb
+<scratch>/regenP/lean/Work/XHostT/HFW2979/ToHF.lean: 416 lines, 18 declarations, sha256 aeb9514ae8f2f83a
+<scratch>/regenP/lean/Work/XHostT/HFW2979/Heads.lean: 161 lines, 4 declarations, sha256 6f3ac5100a275cb5
++ python3 -I -B <package>/generators/tree/wht45/afc/afc-cut/tools/mk_prov2979Fc.py <scratch>/regenP/lean <scratch>/regenP/lean/Work/XHostT/Inst/S2979FcFacts.lean
+written <scratch>/regenP/lean/Work/L2979Fc/Prov.lean (afc-data facts S2979FcFacts.lean (sha 59752fe0)); hcost 2269 * φ 1 + 5 * φ 6 + 3 * φ 7 + 8 * φ 17 + 1 * φ 19 + 25905 * φ 23 + 16576 * φ 48; sha256 9c39e246dbc938398dfc7d91a234d7a4ca2f4ba74df946f7ae6b5e628af7734d
++ python3 -I -B <package>/generators/tree/wht45/afc/afc-final/tools/mk_controls2979Fc.py <scratch>/regenP/controls-made <scratch>/regenP/side/Work/Mixed/Rate2979FcSharp.lean <scratch>/regenP/neg
+Heads2979FcNeg.lean 31f83e29a71380e2 19 lines
+Rate2979FcSharpCtl.lean 8d7ab5fd78eabf19 187 lines
+Ctl2979Fc.lean 36f906d4c713deda 52 lines
+NegHeads.lean 771ae0a90b74a52c 12 lines
+NegGlob.lean a9213cb0da4ef698 10 lines
+NegF1.lean 1ad9709a0bde08cf 11 lines
+perturbed/NegSome119.lean d3c4cad917dddcc1 11 lines
+perturbed/NegNone119.lean 8e7419cd19432490 11 lines
+perturbed/NegSome46.lean edc1a069976e4f2f 11 lines
+perturbed/NegNone46.lean 75ac55aba09f0771 11 lines
+perturbed/NegSome334.lean 30425de47b1d79ff 11 lines
+perturbed/NegNone334.lean e21c583f01d7bbf4 11 lines

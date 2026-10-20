@@ -1,0 +1,42 @@
+PASS export-pr2894
+PASS export-pr2833
+PASS fresh-retained-bootstrap
+PASS four-kernel-stage
+PASS preload-stage
+PASS parent-paired-stage
+PASS paired-extension-stage
+PASS rank7-overlay-stage
+PASS derive-closed-adapters
+PASS fresh-current-native
+Traceback (most recent call last):
+  File "/content/work/hx-admit/pkg/Afc/research/rank7-joint-endframes/reproduce.py", line 184, in <module>
+    main()
+  File "/content/work/hx-admit/pkg/Afc/research/rank7-joint-endframes/reproduce.py", line 156, in main
+    assert result.returncode == 0, 'failed ' + name + '; see ' + str(log)
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: failed complete-admission; see /content/work/hx-admit/rp-Afc/complete-admission.log
+Command exited with non-zero status 1
+	Command being timed: "nice -n 5 /content/work/hx-admit/vA/bin/python -B research/rank7-joint-endframes/reproduce.py --repo /content/work/hx-admit/hub --work /content/work/hx-admit/rp-Afc --jobs 2"
+	User time (seconds): 2179.32
+	System time (seconds): 115.53
+	Percent of CPU this job got: 116%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 32:46.92
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1439200
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 26
+	Minor (reclaiming a frame) page faults: 40346179
+	Voluntary context switches: 2758
+	Involuntary context switches: 22965
+	Swaps: 0
+	File system inputs: 4776
+	File system outputs: 1319576
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+rc 1

@@ -1,0 +1,122 @@
+{
+  "status": "PASS_T74_EXACT_FILL_COMPLETE_FINITE_ADMISSION",
+  "kappa": "345209916851919/200000000000000000",
+  "kappa_decimal": "0.001726049584259595",
+  "manifest_sha256": "ad59246dcd4a7690d9ec2c23bfa5c71af106999cc96df9d83e69cc9c2a75967f",
+  "native_reuse": {
+    "base": true,
+    "extra": true
+  },
+  "provider_verification": "PASS_GLOBAL_MIXED_X54_FUSIONS_NATIVE_AND_STRICT_ADMISSION",
+  "roles": 271728,
+  "prefix_bits": 1475,
+  "charged_prefix_bits": 2048,
+  "physical_row_coefficient": 19545,
+  "row_limit": 20161,
+  "controls": {
+    "admission": 139,
+    "bit": 12,
+    "controller": 15,
+    "independent_owner": 8,
+    "geometry": 6
+  },
+  "stages": [
+    {
+      "name": "fine-engine-oracle",
+      "exit_code": 0,
+      "seconds": 3.385585791998892,
+      "log_sha256": "ea6df7be568d6461ac54e0d56754797de0f70f2f1ecc335114791445b75795d3"
+    },
+    {
+      "name": "retained-provider-and-parent-admission",
+      "reused_receipt": "e0eefc96567fbb45e19e6de0ca295381dbe0e686c08ddc783639b065c7c791d4",
+      "exit_code": 0,
+      "seconds": 1.0429754999931902
+    },
+    {
+      "name": "rebuild-words-566",
+      "exit_code": 0,
+      "seconds": 11.826959950005403,
+      "log_sha256": "dcbcbeda80423df29ef008bfac58409378f1fd0a3b9b23fc31ab9f03659dd86f"
+    },
+    {
+      "name": "reconstruct-owners",
+      "exit_code": 0,
+      "seconds": 16.900339473009808,
+      "log_sha256": "dc4840d279e447e42af2ece9437cb92ab13c7f631440911ca5e8a676e3fa418c"
+    },
+    {
+      "name": "lift-parent",
+      "exit_code": 0,
+      "seconds": 42.656862767005805,
+      "log_sha256": "7b6249a123ca39fae7b7a6339dd9e8ae8777b081f4336418f2cc101704b70644"
+    },
+    {
+      "name": "rebuild-borrow-words",
+      "exit_code": 0,
+      "seconds": 476.656692974997,
+      "log_sha256": "e027c67ef4796cb41084de089a4d66cd801aad3e1c946dbef0324e3bb4c1d042"
+    },
+    {
+      "name": "shared-kernel-independent-review",
+      "exit_code": 0,
+      "seconds": 36.212110270993435,
+      "log_sha256": "3dc6eb8940cf8a4b993f80129c98b6c4846ad346ccf773a78af225cff3339cc3"
+    },
+    {
+      "name": "preload-move-independent-review",
+      "exit_code": 0,
+      "seconds": 35.95666334700945,
+      "log_sha256": "c456d3e39c09e960ceebf80251d5e808fa9299991471fd86f4093d9bc4dd3eda"
+    },
+    {
+      "name": "two-sided-helper408-review",
+      "exit_code": 0,
+      "seconds": 11.676688815001398,
+      "log_sha256": "6faf9892844fb49824a44b6f31426be262642ccccb80d5e26ad86e8f83c1524b"
+    },
+    {
+      "name": "paired-extension-review",
+      "exit_code": 0,
+      "seconds": 67.25647336999828,
+      "log_sha256": "7e90c28aa9e8dfc05014ac05e1c9b4f305ac05191e3193e2bfdab560ed23d3f9"
+    },
+    {
+      "name": "audit-local-566-base",
+      "exit_code": 0,
+      "seconds": 2.232887996986392,
+      "log_sha256": "08f227b6b2dc649d62b83f464aff53bd384a564eebc9a631ee7e79ff31ebac30"
+    },
+    {
+      "name": "audit-local-566-extra",
+      "exit_code": 0,
+      "seconds": 2.162371782993432,
+      "log_sha256": "20d85d0ebd6bfc326b48c6aabda542d53864aab4da3e2b7d2449b7d087646727"
+    },
+    {
+      "name": "rebind-566",
+      "exit_code": 0,
+      "seconds": 2.4986735340062296,
+      "log_sha256": "6126af0a7935a1605ddad6074978494d462ed67cbd54be809ce13fcb32469d67"
+    },
+    {
+      "name": "lemmag-labels",
+      "exit_code": 0,
+      "seconds": 67.55482020101044,
+      "log_sha256": "91fafdc76824e278546bb51465cf84d60a3513df3f2e8ab9854919c416cd3469"
+    },
+    {
+      "name": "strict-t74",
+      "exit_code": 0,
+      "seconds": 241.21127710099972,
+      "log_sha256": "5d4a8c42ad6ce85295b8e38ddb72f02be01efb5a42722c8a585415998fdd72dc"
+    },
+    {
+      "name": "geometry-controls",
+      "exit_code": 0,
+      "seconds": 1.3924200310138986,
+      "log_sha256": "0a3ecf05cfa2bebb61fffd2fbb4b244c03d742069e2705d02512699bbf4b01f9"
+    }
+  ],
+  "scope": "Conditional finite construction only. All-size compiler, common-label/mutable-source realization, whole-call hosting, precision/tape, exact recovery, analytic transfer, PR559 recurrence correction and PR589 bit H1-H5 assumptions remain. No unconditional theorem, full Lean certification, or global packing claim."
+}

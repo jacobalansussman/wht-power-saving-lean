@@ -1,0 +1,4 @@
+AFC-TAF-READY Tue Oct 20 15:49:39 UTC 2026 host=70bbcce2940a
+tree /content/work/ours/TAF (Lake project /content/work/ours/TAF/lean/complex588) = TA + lever-l3945f-overlay.tgz (bcfd4792, 412 files) + eng-overlay.tgz (c650eea3, i-final's ENG, 385 files)
+built: all 740 modules of A, F and ENG except Work.L3945.EngineOfGeomW, Work.L3945.Engine (they import the L3945 stage, not laid on) (--no-build OK); axioms of transform_mainL3945F, convolution_mainL3945F, hillsL3945F_program: propext, Classical.choice, Quot.sound
+sorry warnings: 4, all in OpenAI's challenge files

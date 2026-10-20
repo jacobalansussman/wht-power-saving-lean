@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/content/work/hx-admit/reg/AfcC/rank7-joint-endframes/check_cap.py", line 106, in <module>
+    main()
+  File "/content/work/hx-admit/reg/AfcC/rank7-joint-endframes/check_cap.py", line 68, in main
+    assert 0 < gap[0] <= gap[1] < Q(1, 10 ** 6), 'recorded gap'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: recorded gap

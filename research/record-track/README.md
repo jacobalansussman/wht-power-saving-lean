@@ -26,7 +26,7 @@ construction claimed by others on the community's repository (some research note
 circuits give 1.7565e-3 and 1.7582e-3.
 Which of these are proved in Lean is stated in sections 4.7 and 4.8. The *full cut*, which removes heads entirely
 and splits the other idle rank-48 blocks 24 + 24, prices at 1.7797e-3 and 1.7807e-3 on those allocations; on #3945's
-it was built in Lean on the night of 19 October, at 1.7806935e-3, the headline of this revision (section 4.8). On #2979's words a re-solved table (A-fc, section 4.10) prices at 1.7887046e-3 under the full cut, *checked by computer*, not proved in Lean.
+it was built in Lean on the night of 19 October, at 1.7806935e-3, the headline of the fifth revision (section 4.8). On #2979's words a re-solved table (A-fc, section 4.10) prices at 1.7887046e-3 under the full cut (its price 1.78870456e-3, rounded); on 20 October it was *proved in Lean* at 1.7887045e-3, the point of the 10^-10 grid just below the price, and it is the headline of the sixth revision. The rounded figure 1.7887046e-3 is not proved in Lean.
 
 ## Contents
 
@@ -43,6 +43,7 @@ it was built in Lean on the night of 19 October, at 1.7806935e-3, the headline o
    - [4.7 The gates and the prices on #2979 and #3945](#47-the-gates-and-the-prices-on-2979-and-3945)
    - [4.8 Every head bin empty: higher designs on the same circuits](#48-every-head-bin-empty-higher-designs-on-the-same-circuits)
    - [4.9 The frontier on 19 October](#49-the-frontier-on-19-october)
+   - [4.10 A higher table on #2979's words with the full cut (A-fc), proved in Lean at 1.7887045e-3](#410-a-higher-table-on-2979s-words-with-the-full-cut-a-fc-proved-in-lean-at-17887045e-3)
 5. [What failed or was refuted](#5-what-failed-or-was-refuted)
 6. [What is still open, with a first experiment for each](#6-what-is-still-open-with-a-first-experiment-for-each)
 7. [The programs and how to run them](#7-the-programs-and-how-to-run-them)
@@ -416,12 +417,12 @@ admissions; no skeptic).
   arithmetic over all 841 patterns, shows that, with the half cut, no fill of #3945's words, with any chronology, exceeds design B by more than 4e-34; a second certificate, built separately from exact basis duals in 80-digit arithmetic, gives the same
   ceilings. On #2979's words, with the half cut, nothing exceeds 1.7564726e-3, which design C reaches at 60 replicas; at #2979's own 74
   replicas the best whole-number fill is at most 1.7564710e-3, 2.4e-10 above design A. These bounds hold for the half cut only: with the full cut the same LP bounds are
-  1.7823049e-3 on #3945's words and 1.7893658e-3 on #2979's words (*checked by computer*), above the full cut of design B. Fills come close to them: 1.7822982e-3 on #3945's words and A-fc, 1.7887046e-3, on
-  #2979's (section 4.10), both *checked by computer* and not built in Lean.
+  1.7823049e-3 on #3945's words and 1.7893658e-3 on #2979's words (*checked by computer*), above the full cut of design B. Fills come close to them: 1.7822982e-3 on #3945's words (*checked by computer*, not built in Lean) and A-fc on
+  #2979's, priced at 1.7887046e-3 and *proved in Lean* at 1.7887045e-3 (section 4.10).
 - *Lean.* Design A's rate enclosure reaches 1.7564707e-3 and not 1.7564708e-3 (its root, 1.75647080068e-3, sits 0.007
   grid steps above that point), so a Lean proof of design A states 1.7564707e-3, one unit below its rounded price;
   there the rate fact still holds one unit higher, and Lean proves it false from two units higher.
-  Design A: *proved in Lean* at 1.7564707e-3 (`package/leverA`); the comparator accepts it, the re-created verifier accepts the merged form, and three skeptics upheld it. Design B, the full cut: *proved in Lean* at 1.7806935e-3 (`package/leverF`), the headline of this revision; the comparator accepts it, the re-created verifier accepts the merged and the unmerged forms, a separate check found the merged form identical to the unmerged one theorem by theorem, and three skeptics upheld it. Design B, the half cut: *proved in Lean* at 1.7581520e-3 (`package/leverB`); the comparator accepts it, the re-created verifier accepts the merged and the unmerged forms, a separate check found the merged form identical to the unmerged one theorem by theorem, and three skeptics upheld it.
+  Design A: *proved in Lean* at 1.7564707e-3 (`package/leverA`); the comparator accepts it, the re-created verifier accepts the merged form, and three skeptics upheld it. Design B, the full cut: *proved in Lean* at 1.7806935e-3 (`package/leverF`), the headline of the fifth revision; the comparator accepts it, the re-created verifier accepts the merged and the unmerged forms, a separate check found the merged form identical to the unmerged one theorem by theorem, and three skeptics upheld it. Design B, the half cut: *proved in Lean* at 1.7581520e-3 (`package/leverB`); the comparator accepts it, the re-created verifier accepts the merged and the unmerged forms, a separate check found the merged form identical to the unmerged one theorem by theorem, and three skeptics upheld it.
 - *History.* The gate note of 14 October had already proposed a head-maximising fill on T74 as an optional upside
   (all 16,576 head bins empty, priced then on T74's own profile at 1.7506306e-3 under the full cut), but it was never
   run, because the build was paused that afternoon. It was found again on 19 October.
@@ -462,22 +463,26 @@ Read on the morning of 19 October and again at midday and in the afternoon (all 
 Every community figure above is the author's claim checked by the community's programs, and by mine where I say so;
 only my own figures are Lean-checked, and only those marked so.
 
-### 4.10 A higher table on #2979's words with the full cut (A-fc), checked by computer, not proved in Lean
+### 4.10 A higher table on #2979's words with the full cut (A-fc), proved in Lean at 1.7887045e-3
 
 On #2979's words, unchanged, I re-solved the table of where helper storage goes for the full cut (a class solution
 of a mixed-integer program, then a literal placement with the construction of #3815 by Erwan Secousses (ChaloupeMusic) in
-a tolerant mode, which needed 9 spare roles). The full cut on that table prices at **1.7887046e-3**, 8.0e-6 above the Lean result on
-#3945 (*checked by computer*, three routes that agree to 3e-60; the grid figure holds and one step higher fails). It
-has 16,576 heads and no other rank-48 block, every paid rank is at most 23 < 25, and Theorem 1G applies (Theorem 1G and the general theorem of the full cut are
-*proved in Lean*, as used on #3945 with every head kept). In this table's own instance, its heads-first certificate and
-the rate fact 17,887,045/10^10 are *checked by computer*, *not proved in Lean*; the cut fact on #2979's words is
-*argued by hand, not checked*, from the template it shares with #3945 (where it is *proved in Lean*). The community's
+a tolerant mode, which needed 9 spare roles). The full cut on that table prices at **1.7887046e-3** (the price 1.78870456e-3, rounded to the nearest), 8.0e-6
+above the Lean result on #3945 (*checked by computer*, three routes that agree to 3e-60; the grid figure holds and one
+step higher fails). It has 16,576 heads and no other rank-48 block, every paid rank is at most 23 < 25, and Theorem 1G
+applies. **It is proved in Lean at 1.7887045e-3** (`package/leverAFc`, 20 October; the headline of the sixth
+revision): OpenAI's statement at the exponent 1 - 17,887,045/10^10, with this table's heads-first certificate, its
+rate fact and the cut fact on #2979's words all proved in Lean; the comparator accepts it, the re-created leaderboard
+verifier accepts the merged and the unmerged forms, a separate check found the merged form identical to the
+unmerged one theorem by theorem, and three skeptics upheld it. The rounded price 1.7887046e-3 is *not proved in
+Lean*: the rate fact is false there, and Lean proves that too. In the fifth revision this table was *checked by
+computer* only, and the cut fact on #2979's words was *argued by hand, not checked*, from the template it shares
+with #3945. The community's
 own figure for it, with no lever, is 1.6897030e-3, below #2979's 1.7290340e-3, so their admission rejects it by
 design at its strict-gain steps; it passes every other check of #2979's line, run unmodified on a fresh clone of
 their repository, including #2979's owner engine with its corruption controls. Files, checks and the commands to
-re-create it: [data/a-fc/](data/a-fc/README.md); programs: `programs/a-fc/`. A first experiment: build it in Lean
-the way `package/leverF` was built (the bridge of the full cut is general in the table, but its cut fact is proved in
-Lean only on #3945's words, so it must first be ported to #2979's).
+re-create it: [data/a-fc/](data/a-fc/README.md); programs: `programs/a-fc/`; the Lean proof: `package/leverAFc`
+([README.md](../../README.md), "What is new in the sixth revision").
 
 ## 5. What failed or was refuted
 
@@ -517,7 +522,8 @@ Lean only on #3945's words, so it must first be ported to #2979's).
 
 ## 6. What is still open, with a first experiment for each
 
-1. **The full cut on design A** (the largest lead on #2979). The full cut is built on design B (`package/leverF`,
+1. **The full cut on design A** (once the largest lead on #2979; its value is now passed by A-fc, a table re-solved
+   for the full cut on the same words, *proved in Lean* at 1.7887045e-3, section 4.10). The full cut is built on design B (`package/leverF`,
    1.7806935e-3, proved in Lean): its bridge from the network certificate to the rule's numbers
    (`Work/Mixed/Bridge/CoreF.lean`) is general, and the split of a block is an identity with no condition on the
    block. Prices on #2979: 1.7797095e-3 on design A (+1.32 % above its half cut) and 1.7744822e-3 on the published

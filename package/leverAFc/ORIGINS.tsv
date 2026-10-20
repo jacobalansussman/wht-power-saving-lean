@@ -1,0 +1,283 @@
+path	sha256	written by
+Work/BlockAccounting/Sharp.lean	07c0cde93babdf789a44fbee1931c3b7128663a9f9371e23da1fda07be07a7cb	design A (aA-final staging): e-r45m1-bundle
+Work/FourierL2979Fc/ArbitraryLength.lean	0af9f699d19d754106b951b70c15484f5d454a28baf63e3033a7b21e56f68a99	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/Asymptotics.lean	5b8340bdf8984fdfa52bdeb827554fa2053ffe865a2335dedcf41d2b8a17da1d	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/Axioms.lean	7971eaee96a935c84e7331cd8abed5cdaa4bed184fcd150d0a1695187e9e9e85	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/ConvolutionProgram.lean	f9470d8d32b1974a9fc66f6e5bf3d29d088f92ef91f1f71d1ea0d11e851ad43a	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/Goal.lean	10728c2a603e162ea20589a40795eaae9b3b6463278fc838e10a2c77e8900b1c	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/Main.lean	d01edaff055b35dc2c4792321205ad9b70e1c7fc73c937a01ccaae7df89343fd	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/Seam.lean	c156f2535624e2221df011fc2958ced4caab9f0e770798e7b23e90e2904bc70e	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/SectorAlgorithm.lean	c495a4ff0a779070680722fc4bce0687b56c1667a59b461841a374f148cf5f14	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/SynchronizedAlgorithm.lean	5bf9b06335886b07a103ce5c2f39ee281c850242e9d3bec3429d27ed261491f6	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/TransformProgram.lean	ad0d28034f1538d76a201213434342f54b81edbdb34a5061c7fbaab6902f8532	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/UniformBounds.lean	893df7f95ec6ef4bc5c4599e243e019957d4390c2d062274bc32703ee773425d	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/UniformFourierChallenge.lean	5ec3454bc4024dbcc66eaff3fd24b29d70c5f8c5cb3b841d1f39b82b31f58ffa	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/WorkingCompiler.lean	f01334e1eefc69c74a638dba2168ea4bb38a1e98d8dfc4fe083c21919aac4f79	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/WorkingPreparation.lean	616d8a0aab285968c8247c4f35868618b4d3896516ea342ce989fe5e900db51d	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979Fc/WorkingTransform.lean	2d6c6d9c246be43b71004f6ea17bc8db857f30c3c5c00f04f1b6f639fd864972	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/FourierL2979FcNeg/UniformFourierChallenge.lean	b9b6a5d5dcb21acaa0799516566f1c7b5376278794d78ad37663c7f26bef6471	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+Work/GCert/Data/Gen/S2979B.lean	199d4ca845f7ed8cd04268e5383cb4b23c8824f9fcf962bd4e4ba5e4bfa78c47	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979B/D0.lean	bd7553ceebd7a45032e0e5adf683e26a21e3c5ffd8ea70aaa28e57f17bc212e9	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979B/D1.lean	e68affe838e18fa4f13c777a961a706af34d3798b1685df1d3f57f21146b514a	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979B/D2.lean	5e5f23838c5915351cc7cfc30f256ece0f72cc36d6dc39f57a10fdd0e1cff5e1	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979B/D3.lean	ad214c4ec73627b8ddac304128953fa05a6965554426e1fc5947ed68a55f0b21	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979B/D4.lean	6a2dd2e17e7e8823e5d77e8b80a9623baf286b7439edfe9eca07c05a0e6a5ef7	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979B/D5.lean	a176ce2e4e227d9fa7daac841c1cb9b67383553cf846a9e28dc3714fa9de54ee	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979B/D6.lean	f172c42e553cd840ef55bba0d2087327cd6fe8d0df169dbef761f661d6f7971d	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BEnds.lean	f8aea5d600b6b502788c96e6f619cf62ae24c1daed1f2407e931226bb6675684	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BFp.lean	9743828ac1fdac844ac907f7b8aec3df14eed06913ae564a2b9d0320f58676a6	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BHist.lean	0fbeda95e1e3450d2055fbc7985d3b3e1b954b194d07e2b05bfdb2f6e1d4ccf2	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BLab.lean	6defcae1dc3a4208e7677f2b7897812fc877cc1785137f33da579b2ab254aca3	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BLabB.lean	e217e354b447e9fb2d089f895a141f284416017a0cce6343e3484c7275d79347	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRes.lean	1ceb2e39e8dc9014a3ddeb1e576296c21643bbea23b962c2034c9bf98795abe7	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows.lean	29c05b73881ff15f8bfa1379e803f2b85fa43d42db052ef00ab1684c32c05d75	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows0.lean	a4881ccda56c52fd772ed562e75794d9a136f4ebe7561c81ed60f0b374e92086	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows1.lean	0091d22c13bc8b597d0dd7982fc07fdb74419678d656ffde4b92951bac40b643	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows10.lean	50ba14223cbce006d9c64f573775539af5eed412180d2044b54b0609e28c0494	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows11.lean	ba014bb994a7502c9446cd4ab1c7e3347ff54c9cb00f1993e63345aa31f3d59d	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows12.lean	c62ebe51f61415d767294db21012122fa45d3be302706c555a65e98a539ce69f	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows13.lean	5ee8a0f41392e83d946e194d31cadf5fbbeeef33bddd0050567f865ef9f31231	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows14.lean	0772f2cde04db1f9fb7540a16b8db65c92882e0a5691a917b9085f2654584acc	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows15.lean	038ca3e1b583bb0f2a71b420c1a07449153668c3a7501147c73aa940494bd1e2	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows16.lean	01b973785ff12f4abf6a58688bbed7fac7a9b9760e144d42865d6e7deb14e528	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows17.lean	22c43485f6d0219738f710783227cdd7d99060e1130969eaec7296a78153618d	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows2.lean	8b7c87ae90b99f01400b2e5b4ae331c11c511e0c54764b1c2a31e868377bef8e	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows3.lean	03563436ad167bc2dbd7e03ce19ef33b48a8dfbf6a99dcc9d7b0897b359f3010	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows4.lean	2956b4eaceeb4d131a2d047b093a176383100224f57fe64565ef08fc8337087d	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows5.lean	fd64b00e418cf0ec1138aa883661d22c5f46e4b1a69fbb45c309d362355b21ef	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows6.lean	9fb61b48db4eb22cf16492e4071bff73a3778a905eaab57de42957a7823af4dd	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows7.lean	4d588497da6b1643d84ea264dc797c198b287797479ebf9a9a954b054607cd75	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows8.lean	922552d3b5593f36c432eeb106911946f5fd66bc89a58609bbd95d36ddc9af5c	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BRows9.lean	8638a97974511b8f2f3102be44d573f4a4e571d38269864879f27c7f3ff10b99	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BScB.lean	76fdb0c3055f62ce26fb9157b55aec8eb00b764564f3f7f07e824866c8ac9c1e	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BScF.lean	3422be1777832be10d1e5c3a901b3aec2a1a320e7d89c75ecf811a85a1cd2152	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BSched.lean	7e2503404970f538274edfdd5e5c2e950370cb3317279c85550d29019377ef45	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BTab0.lean	f7de0e523c604ceb88f40feac8a43c383b52feb0138feccd534eeef45d3d03a1	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BTab1.lean	bbef8de053bdc80b27d6f4ca33f27d369f9b138f0c3740e88fa61c2077319591	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BTab2.lean	2318de1e6acadc72b489e4cb464bbfcad91b234c52107511332e2a804062f28a	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BTab3.lean	f2d9f12eb4bb4f2bafb239da13deef0281e1a75092036a7ff33a1315c4d373bd	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BWC.lean	92848fad2c885f66431abbc5dbd0f9ccc916a4361b397f49cece3f8829df2f15	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979BWT.lean	659cbf832c620b27ec32b6e2ad6951f0fc570f5c1a3cf96929d79a9feb50e977	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979E.lean	f926670321e8b38641df4fc38eaeab0b0353c83abb702e23afb79f4bc8c008a5	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979E/D0.lean	a4eefd11eb3439455808ea21c33966c4cfc622a727a98dabf5324eda4c20a210	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979E/D1.lean	7e07cc24871d00a550b767721c812cfb753d611722351d3094244935e22979f2	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979E/D2.lean	55e2ff465ec0c717b711adc124d7e4f7d5c13b764493cf0446ad2c87109e71b7	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979E/D3.lean	5fa9b3de1f7f4ec50ef1960e5625155e98162d70333ac39dbc7d6ea2751b3453	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979E/D4.lean	87407999eb867041fc46499f437aa602382104f8faccff8c685058506f9b9e8b	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979E/D5.lean	b459175212bf053492ffb9d5e2815e4b895666a2e7d10ff729280e01278d69c1	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979E/D6.lean	a01c285b0c9d2bed60c3c5f46a4624fcb62c4cdfdd9e9678a73815e30995b238	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979EEnds.lean	7a71fcc851e28bf0488e4b3fe87556ae53c903d1f080635651e10d104a950682	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979EFp.lean	3941b20ad712d96dab69b45c8c493e6881cd7795d7c66652d4674ff643d894c7	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979EHist.lean	14b267e6d226c98b470ac89d901f000e96a05062355017642fdb621eb7c03c9a	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ELab.lean	5e6ad5090624baf7834bc21f4145196a6ba18b97af784f295ca18c744f2ac5f1	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ELabB.lean	2d1653a0e7151cd05174f154e09c3efcd9eab20386218a2499d610b386e26e3f	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERes.lean	7fbae773d9d4ccc943cf7478a3fc84ef3f9684d7f07909fdb2ded61322767f5e	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows.lean	c1034b2bcb938a5e85ab8e587822c9477eabc07095844bcb3e3761acccbc312b	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows0.lean	e8625824ea311080562fe9b1b9f9a91b7230a7ce86e3803332804accdc0f0423	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows1.lean	e583fad180d61abc40c01a2af4107e02cf9e461027659e9de1de15e2f009e913	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows10.lean	074e1a923b8556e0a6164fff453f6e912f4d48200d48bd79453b643c4e441914	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows11.lean	f493d8d982c9cf589fe690a8088b6895591ef159d9288bfe10616edecffef0ed	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows12.lean	0e9f65db1831adc5468aca8c0b3681cc6a776e8a7f6c24861543902157354b1f	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows13.lean	ad41d821462d24f81ad6e101a541040e608ba4aaefe679974b930bbb9a24d50f	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows14.lean	fe2ae4efb65fa6cd066dfce9e06b6c2ce3bf15e56ac2acfdd6bc0a1fe8e6bbe1	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows15.lean	594a64ce55f441ef67f1ba3c494bd196a88c82aac5ced2af6699817e9efae669	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows16.lean	23168c9b2cbc1c82250a4e2ed2ee2c4e647a761b088291573c858c0b0aa6558f	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows17.lean	c6e71be34e3895440731852d8b18079e2a413e13ab12af8ac72aebe0918b1073	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows2.lean	296425135dc4fad3953556c2176d7e757a79fc84e08772986837aa20f870d4f2	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows3.lean	f9abc8a7e21883db06ccb0175fe23a56fbcdb4fa6d5c2ee128628922e0c052e2	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows4.lean	39c95b48ad868aa1d3a1245fe99ff735abd8331b8e76638990998bae047958fc	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows5.lean	15ad7edbc21a76a118fb7d39a0998388330714cb3fd317aa922f959b07063951	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows6.lean	1503030194dfe259e9f114fe1f3535c620e3b1401baf6a04fd0d5a1e45cfd2d0	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows7.lean	a20a4f3166e203b1edd53bad686f821d5ec1724d5feb42d4737862626046b92e	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows8.lean	1ad3e84ec005f1e2bda23dd4854d39c1922d9d2e2e6be6eb33f34b5a3e7d90d3	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ERows9.lean	d024f39af8c262e3df094d026318920bc09d2d7433f51a08d27b5d702f4cf162	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979EScB.lean	da40520d4f2729bcc7a482d2fc70563b33b411850de0c0dffd590fe5f142efd9	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979EScF.lean	368a2c4ee6aec4f404e410c94c7c6c84f8a497d8bd1118a9b47f5d9408c0d647	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ESched.lean	23c302f48e67e49973caac61bae5552801271ace026417564cad4a8c74bf9cc9	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ETab0.lean	0cbc436cf4e1daa3e9277efe984008d7e10cb0366f291deea4312c59091b398f	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ETab1.lean	7f24c626977dfe6ca23d523742d81ec731e0598283ec80aad59fbca5bb3f45e2	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ETab2.lean	751ee635edd568865ad64de878784f2c16df2ea6adf40e478e8a3e99517a75ac	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979ETab3.lean	d28b95068cf8a970b3c6fd334bf4cdbde876f214819b74c98d8b1fdec143dcd7	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979EWC.lean	0e6d8a4e06201f18ab442f7eb8ddc7e17d23ebff57e742bdbdb56091a83f89a6	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/Gen/S2979EWT.lean	b3cf020dd919ca1634f2dfc7fb10e86fabd01dbc813c880986f03fb637888157	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/InstS2979B.lean	4537946abbe6a568345bc567ffbe4f9161d0b898696d14e4259116bd5a862e2f	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/InstS2979E.lean	7eb8f9183218ef1ba3d163d5cac78f86c54e9134245715609aebab31a50b4493	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/RateS2979Bx.lean	72b5ca30c1dd16469c5d79c987f357d20a5d1af67e07da5f586481a9c60577d2	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/RateS2979Ex.lean	2feccc097753b0c8896a3ad5c2218152844b39a578b740b42191bb67541017e2	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/S2979BGlue401.lean	af52fa738fa3e1d00b793dbdbb9af537b0b0ea8c8f8975e03c3bf1d31899e39b	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/S2979BPrice.lean	8695b6a3f51c78e1dcc06e16d8862bb55a15dfa783b35ea4fd7e9455d5154618	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/S2979EGlue401.lean	ad443f23ddf39ec061d1a6a4593aafd979c311e2f28a804dd9791afb9e850db9	design A (aA-final staging): x-words-S2979pair
+Work/GCert/Data/S2979EPrice.lean	dcb768c8b683e7924ff8bfa8f1d191c786de93b90b586ab3017e8ae5003613ad	design A (aA-final staging): x-words-S2979pair
+Work/KLowW/Data.lean	1392eeb7472416e363745bca30ce34f877cfc77c9562c85f92d033cd828baa61	design A (aA-final staging): x-words-S2979pair
+Work/KLowW/Inv.lean	f015a3be572b7bcd28a2fb27af35433ec130acb24beca3afb45ba02d005da2df	design A (aA-final staging): x-words-S2979pair
+Work/KLowW/InvMain.lean	9a1834d1e7bb52d1fc14f0e6fb2f78ebc25b23fa3dc215d1522c1ec9c8eaadf3	design A (aA-final staging): x-words-S2979pair
+Work/KLowW/LabK.lean	16ecde122981e5225eb8cb4ac1af0e2d5a738a044b1450fec0e1049ae45d5b98	design A (aA-final staging): x-words-S2979pair
+Work/KLowW/LabSound.lean	100dddf2adeebc5be16f8a7203c9eb3508a61ce63c8dd7cefd8ba90189e81efc	design A (aA-final staging): x-words-S2979pair
+Work/KLowW/Main.lean	849970b8211f11c217fa08394794395ee418f0abc87aeb0cf66927272cfbff6c	design A (aA-final staging): x-words-S2979pair
+Work/KLowW/Route.lean	ede80d845273c3be4238d288ae30233048712a6db77b2711b31f39b7798d5ca3	design A (aA-final staging): x-words-S2979pair
+Work/KLowW/ScalK.lean	2755f54b7ff811e7915e3a56c279687ee153015d4e91496488be8979675c6687	design A (aA-final staging): x-words-S2979pair
+Work/KLowW/ScalSound.lean	26b9c99c6403d78ec23cfd8942180dc2df581cdd6582eb93f410f0c260e49d48	design A (aA-final staging): x-words-S2979pair
+Work/KLowW/Win.lean	b3235686c30e0fff66423d8acf9a270d0e15e7a8827ab9a6822055b3bc5a5b33	design A (aA-final staging): x-words-S2979pair
+Work/L2979Fc/Engine.lean	d307cc556ba398f42715ab3f85dff2955a9efab4c49cd4fec2eb9511e6fbc03e	afc-cut: L2979Fc engine
+Work/L2979Fc/EngineOfGeomW.lean	ecf81cd7dc0cbe7a184bcd25d1efef2b4f252ec224cfea2a8afa05048c9724df	afc-cut (wht45/afc): full cut on #2979 words, A-fc instance
+Work/L2979Fc/Prov.lean	9c39e246dbc938398dfc7d91a234d7a4ca2f4ba74df946f7ae6b5e628af7734d	afc-cut: tools/mk_prov2979Fc.py (aA-final Prov.lean renamed, A-fc hcost)
+Work/L2979Fc/Stmt.lean	72348d1681d9d757f83055add82a5d3d3e2fa6045c3f39218a32d6f6c8d23eb3	afc-cut: tools/mk_l2979Fc.py final (= the stage file)
+Work/Mixed/Bound.lean	c228da90b3e96e94809827af8f2a323db748b4f265b68f04242be19488120868	design A (aA-final staging): engine-1110
+Work/Mixed/Bridge/Core.lean	8ec42f5199670d01530192efa039afacb04f317482585c6a1f32827b08b8c48a	design A (aA-final staging): p-bridge
+Work/Mixed/Bridge/CoreF.lean	7aa5f6c235e29642f9c1d9c1aba83fcdd196e5cea3870a50c2e5e9720a7938b4	fc-engine (wht45/fullcut): generic full-cut bridge
+Work/Mixed/Bridge/HFTest2979FcW.lean	ac9f71061354c1ebfde0170f5f991db6c047adfad30799611a40a8ba67236979	afc-cut (wht45/afc): full cut on #2979 words, A-fc instance
+Work/Mixed/Bridge/Inst2979Fc.lean	0e7a06bd752f95bf7d74789d3f1f9bfe6b38f34b7849aaee828cb35896125116	afc-cut (wht45/afc): full cut on #2979 words, A-fc instance
+Work/Mixed/Flow.lean	45c1bc5ef1766aa4b23a785d780e6da5b02d2ee442700726c81b9231bbc584fa	design A (aA-final staging): engine-1110
+Work/Mixed/HeadM1.lean	caac2d8c18784a0734dc87e28af4a84883e3b1fdf0f92d850efff73342db3cea	design A (aA-final staging): e-r45m1-bundle
+Work/Mixed/Hist2979Fc.lean	ead2630c124d1dd14d7a739bb0d0ff36d8c092c1c261c47506bd2300ffca31f9	afc-cut (wht45/afc): full cut on #2979 words, A-fc instance
+Work/Mixed/LemmaA.lean	e80a81d7f34e193e27a11f2df0606c51baa8ec0433c223a5bcba9483bb3d2325	design A (aA-final staging): engine-1110
+Work/Mixed/Phi.lean	9faff7a5b12feaf52119b8bbf6a2eb8ef9cdfc78e1dc64e651a1a6337c0475ae	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Acc.lean	c710b809e5c0dc89ccb2ed0d2633983a94ceae4b4104c64466326c11bb93251d	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Block.lean	2a8ae056f9f0d42cfe2859879050921a261184421e537aef3eaf39c6efb622c8	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/CTab.lean	35c5f8f6983c3bd5c8e88f827ff72df55ac52bb1f0c742c111778455ff828a26	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/ClassBody.lean	1dfe2ecd5ebb245b5ad3d45c499623a7da97bbf5270cf86d6339a1af861a4015	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/ClassSide.lean	5fd3320ba7c114978b6a8ff5c30fe6a8d042c16694163513a65e6d7b55ddfe96	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/ClassTabs.lean	30689d0c41a2aaafc59f38683bc4bf046e7fa62c6f706921d73240dc3ff11a2e	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/ClsDom.lean	1847aabadb7e2e732efddf08aa8dc426ddcb9d2f9f838241c872f3e7224e2f45	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/CostC.lean	33600928e7a0279794c932aa8bec4a5fec9b084531eb2655fa3de03f5eff9e2b	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Desc.lean	d7e7798388015ddf052362568c46d089319ef16500625d99d9b21901568d5484	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Exit.lean	ae54c58b4f2d6f5ba8a4fcd6bba5b7952e35107dfe7c600aa9ed1874e941c733	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Glue.lean	9af4d1d3a2b9e53a802f0b100d88ee0d2cba851112c292653260cc75fd79298d	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/LoadRAM.lean	99c650054d55f2be788972e32ade4d245c0842df8bb5fa619908fed4915512a0	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Loops.lean	441b83ad879d70a2f40b38f59ace03dae3081a2ee652895f9224f7c75d289868	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Route.lean	5b3c097b0fc7d244135a2f6ca2b875eaf20434bc09e56247b0af3069635269f1	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/RouteTabs.lean	fb75ec22047fee99b33c6f6f69bb115a7c901214c56b05591798d6349500ab83	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Sem.lean	443b13049163daae74e3655bac4bffa8d5bba407267811af5cbf6efde5ded754	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Seq.lean	86c8969d8b34b0043154c851dc1339b1810d582c8ce4b5db6d29a53cbc5a8819	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Sweep.lean	24e5de1c67345f61096f3912e93cb415add35019e932532178b82c7f597c42a6	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/SweepLeaf.lean	a23e5a6df8c17690620f47a58f1b6656e0d2a529bfa9f9d12ff3504eed9e87f0	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/SweepMath.lean	cd834fa703c3a417968bb2406c24df85bf6dde04c4ed6879d0c0b1a286f1548c	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/SweepUp.lean	a4806b090e050abd6b6ef370abe163b292f21b983e6f0993568b3724471c9716	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Unload.lean	9e3c84e77871341af48c7dcadee68041f49de259adf91a7b08f4f15f6c78c6c7	design A (aA-final staging): engine-1110
+Work/Mixed/Prog/Valid.lean	fb9102c9cc2df6f98fbc4504b152216dffc2620f1400158b4801937681f40a82	design A (aA-final staging): engine-1110
+Work/Mixed/Rate2979Fc.lean	194f0c7df32af1e5cdce063959731054be2717922c6bc4c7a542cd4e68b83010	afc-cut: mk_rate_mixed.py emit 2979Fc=profile2979Fc.json 17887045
+Work/Mixed/SeamConst.lean	9c623573443be64eaab1da26ca0ca75d2a5cd11b8798e5024f21675ff1f135b0	design A (aA-final staging): aA-data (generated by tools/mk_l2979H.py final, N 17564707)
+Work/Mixed/TwoTarget.lean	fd6ac5f6c64b01220cf516d236a76db03f449d5c07a9698a35a212f64b1d8635	design A (aA-final staging): engine-1110
+Work/MixedCost/Adapter.lean	3024faeb49357232fa283b6fe4fdec0bb616a1422998e21681e78a77a26c8c7c	design A (aA-final staging): engine-1110
+Work/MixedCost/Bill.lean	b445b1f7cdeaee227cb3e88035f8e40408f0feb516f248192f358d5b2fdcf393	design A (aA-final staging): engine-1110
+Work/MixedCost/Bridge.lean	168410c557e2e20b708d4dd288ecf2616f198973da7c4f914eed0e620797bf92	design A (aA-final staging): engine-1110
+Work/MixedCost/BridgeTwo.lean	387ad22542d4801a349d153f68e2fa6361d2ffce31a263b467e2f79da4536d5d	design A (aA-final staging): engine-1110
+Work/MixedCost/Close.lean	1873fcd370f869e34c22f9a81f028eafcb719a59dd9437f535ca851d1e77e58b	design A (aA-final staging): engine-1110
+Work/MixedCost/EngineClose.lean	cf59daac1f277b24b08603d1955d60658eec6bf1b403e200ec4a245bca443854	design A (aA-final staging): engine-1110
+Work/MixedCost/EngineFinal.lean	52f9b5b8def126d49c95484ce22b022dd8e83f073cc30acbfb9722cc64d4d786	design A (aA-final staging): engine-1110
+Work/MixedCost/Final.lean	538bd3b573a5b4a321af7b413f40ec928118b7b2cb3a52fd3600765ddd382432	design A (aA-final staging): engine-1110
+Work/MixedCost/Fuel.lean	bd26322d39c90d1047a40f4c771d69f5d094e8fefb40ef4fda02686729f44260	design A (aA-final staging): engine-1110
+Work/MixedCost/Jobs.lean	d58be9c3bcac5394ec38443f6a75c473e45e784a45ecda4f50a1ddcf85a95c1a	design A (aA-final staging): engine-1110
+Work/MixedCost/Match.lean	bb84b9179ab4b245c0fe0a1e3d4424c0b865a8c0fc774c0da39d87c7ec86071c	design A (aA-final staging): engine-1110
+Work/MixedCost/Naive.lean	5b98d82f9f273901cde06fcd41f9059da1b3bee19babafc6e9b4ab8e24f1d4d8	design A (aA-final staging): engine-1110
+Work/MixedCost/Poly.lean	5091043a72ac0baa3644a8b0a0f1a9d1e2e9fa50df759fc312184b61f23408ac	design A (aA-final staging): engine-1110
+Work/MixedCost/SeamCost.lean	9ac44db14409692476103e9e591f6b9894255e9200d114e607cf217e18e80c6f	design A (aA-final staging): engine-1110
+Work/MixedCost/SeamPort.lean	25e922852c37aa7dd2eb608b35509290298e3bc390503f34a8108a308536f8f4	design A (aA-final staging): engine-1110
+Work/MixedCost/SeamProg.lean	6a68f3b18ecd01f5e69db77366d2404711109c8c4f507e9fa49a0ff0246ae74a	design A (aA-final staging): engine-1110
+Work/MixedCost/TopBody.lean	19300cfb44f6b36c92a013f9ba4372b1029894b5ad300525845c6311b3243ee1	design A (aA-final staging): engine-1110
+Work/MixedCost/TopCount.lean	d7a87c5b33ae256908f84b397e3feb72667044b65c8c74fe26560726acc6bd1c	design A (aA-final staging): engine-1110
+Work/MixedCost/TopCountM.lean	b0137ed31d514c527d939abe682f3fac8063fc1277361a793775956aaf684aaa	design A (aA-final staging): engine-1110
+Work/MixedCost/TopDesc.lean	ada75933250eb4e1fe783aae7340fffc0071af026fd6a1c097e99cc14451a37b	design A (aA-final staging): engine-1110
+Work/MixedCost/TopDom.lean	9193e7b73913e45615f66cd2b6d82805091ebd76247700bff5836b3261bc1871	design A (aA-final staging): engine-1110
+Work/MixedCost/TopMain.lean	49e739dbc5f3bb7b41b605774890d2a84ca7d0a13257c6a9867385012235bf72	design A (aA-final staging): engine-1110
+Work/MixedCost/TopRest.lean	d632daf4bdacd825c1d7b176be8d2c46891d1739c161e94859d8b40713b3e530	design A (aA-final staging): engine-1110
+Work/MixedCost/Wire.lean	13f4404943e00a3cb4c746f4b456b162e4b58e8728e2c0e4f1df9df5fe39a005	design A (aA-final staging): engine-1110
+Work/PWGen/Fp.lean	e75c3f463d61c1868c3f4fc48284832a43a3cf780f9974bd530aae53a5e1b006	design A (aA-final staging): x-words-S2979pair
+Work/PWGen/Res.lean	831078c4522a86df55c6b21d82cfe7c430f9fb08bb52bdee9eafe837400aacfe	design A (aA-final staging): x-words-S2979pair
+Work/PWGen/Roles.lean	10392b84bc756cf28bc69469a93c12053f0fe98feff7b7d5eec97fc82c9804ee	design A (aA-final staging): x-words-S2979pair
+Work/PWGen/S2979Pair.lean	065128c1d8a44207e1fc2b776366fe6cc05140cf6d0cf648a74b9151f860fc38	design A (aA-final staging): x-words-S2979pair
+Work/Warp/KLW.lean	d1e2d22266a0298f57a41fd19edf2e50145d8605bb0eecab89b8c0a1b0885ffd	design A (aA-final staging): x-words-S2979pair
+Work/Warp/Sem.lean	9cbf75f6971a65c195f6db9367024d6f7158285ea3d3fc85d91c22bb5e5be84b	design A (aA-final staging): x-words-S2979pair
+Work/Warp/Win.lean	06eb17634ba5007f30b96089a9711bb7ea2c0f9712af68e89207553e785a6f9c	design A (aA-final staging): x-words-S2979pair
+Work/Warp/Word.lean	6dd6a8427956e637bdf7829d54e065b752553ea21e68ef13caa34c6a4cbcc31f	design A (aA-final staging): x-words-S2979pair
+Work/XHostD/FramesK.lean	6084364e8b25d148883736632b864fb272f7bdcc014a4b2f2f32d514be03dfb8	design A (aA-final staging): p-a3
+Work/XHostD/HCert.lean	3ee34a5a452470209f6bce5c5dd8b35a1e057d3598ed43ec2ed28b96a8a50811	design A (aA-final staging): p-a3
+Work/XHostD/HDef.lean	6a2ac0eeed26721bf1cf63990d72db7c5fcb43c9745d871fa7d6f5fd4d9c24a4	design A (aA-final staging): p-a3
+Work/XHostD/HEnd.lean	d0ae3649d5e00cadc920f08704b724a2d3216063b36dbdff6cac8f61c16ed8b9	design A (aA-final staging): p-a3
+Work/XHostD/HGeom.lean	15a2e71ad486c317030127f1953ce5926635cad637c3ef0795592469d25f446f	design A (aA-final staging): p-a3
+Work/XHostD/HSchedD.lean	ed1690083fa9cd4acc75b5ee2dd5bc4645c73942893d99cbd46a3762cae555e0	design A (aA-final staging): p-a3
+Work/XHostD/HStage.lean	fe6c9317ddd00a59d285acc307ee541f7fe4a9287586c64ee2d3d6ed497811d9	design A (aA-final staging): p-a3
+Work/XHostD/Prov.lean	1064da54132063f61966db71cff79e0e0366acbcfec8e123dc09ed460542b64d	design A (aA-final staging): p-a3
+Work/XHostR/HSchedR.lean	0411a87365d6933fe0e012e48cf478c065a7b8f1997de43a0359ee21e996500d	design A (aA-final staging): p-a3
+Work/XHostT/Data/D2979/Disp.lean	2ded98efdad29c3f76d56e0fec8ba61215bbe8984e4f73b768b7226ac430d3d3	design A (aA-final staging): aA-data
+Work/XHostT/Data/H2979Fc/Calls.lean	8ec76e22c1d0a7ac68c080877937a5dc7b701a008c076a3ea6a361fe109a466e	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/DispLink.lean	f586b21ae4673cce4a1cf77c5b4902e2153dbc5dd7e8ecc051713d6dad481658	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/Glob.lean	ebebd0e350738c61a653efc188bbbbdd65f6614274aeef0b33a0049ecb8e67a1	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/GlobC0.lean	5a359739accdf77f6b126a8e472cb55047100560147870f133703639e8d4f68c	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/GlobC1.lean	d9b20d58211720a0bb7bd666c1419fabba4fe812e3c6a009eda86e7ccd56af2e	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/GlobC2.lean	726bb7788841d575e80240285948be4b1c2fe38ab840bbe19c0bf1c6fc167b58	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/GlobC3.lean	490289530746049d04c20cb760389fbd3ecae61e3b6df7d95064be0ad37961e4	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/GlobC4.lean	29f33606d960474671a463bfae282be30b9a7ed8d0baede21ee2a86340cb1f99	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/GlobC5.lean	1d0a651df364027e773da8a7a0890e24a9b3344394437c9f854efdc4c1f13716	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/Heads.lean	92a6e6cb950056b6c31dda28d502b6ab63d46b11866df29e090a18240fbb3b30	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/Order.lean	9563b89b4e98ae5f7b03bd23e14c64ceac64a69a4c84f0abf76139fa6d68b8e5	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P0.lean	e9f01e99b483277d2cff1841da5d1e5286ee2ec77ad66bf644d2d619dbe379ca	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P1.lean	125a5edb61d6b27d56d2fa0cf469e02f3bd9be400400d39d9437a3bc2b1660bc	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P10.lean	7c64d1d1de4dfa4f1be668623a9cdc4baa589db2af8c647c286a3ee71b84fe98	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P11.lean	3f191e6a7a9f941fc963be786ab66d61ffaf948fb30fd9ede4b4d315bada0f6a	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P12.lean	3ae436962a85cf19f17af4b781e47cf4183d805f7ef0ddf61cde729ef6db7f37	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P13.lean	0553615b62a67d55e726e381936cfa7969c6f3091c733291382b321ff959cbd9	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P14.lean	47aa52f7b3881268a7546abc72e4887b5cbb0755fdb75cd9db62f4fd3fdbbd5e	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P15.lean	b008cc0f0740262db40a24d0e50290bf41099d7fa432881f913b4dce7ce99b41	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P16.lean	41b89863adf477a41cfe499499ad5e4767a471915fe76afd777eb4aa499a2efe	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P17.lean	7d0ecb8dfcaa196716548930a718b593da27b90d75d211fc015964d5223f7f2d	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P18.lean	f2b863ebe7ea0e6e5b28dea4d3e48eaba8bfe8cfd1ac1821c63dadc69c003d47	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P19.lean	8d671f91c9f5c66572ac1767c5efb823cf275d404e0b8875b8f538a8560132f4	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P2.lean	1d5038bd8a2fdc034f69b5d2b688b6cf9d36fd2c3f5fae595c4409ac4555fc1a	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P20.lean	6b9b9c7050a0db9435f8f04cad62874a782151b78dec3cf19611c09b1485ed50	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P21.lean	9d9cfc7d67f4713d71cf8d14b15fbdaaa5ece4e0c508173e1e815e1a83a2af1b	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P22.lean	d4eed5ae3b7e3f4ff33f4100ac711588dab5bae4217800ce0b2af4374ecb0768	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P23.lean	8ff2816c60890ec529e22100f616e596c3c94e898b45bfa9bb299cbc34e09a49	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P24.lean	3f4d45530df32c9412901d7301256f597d55e7468eeeb7c3e079c972d5238d59	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P25.lean	c0bf449d60852b3e0afefac9ff16f0264bf81f9c25e631eb25109c4b382a2949	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P26.lean	351306e6eba9163b6008f9693d923affdc12c8aad81bd9e1bf6ccf712b82fc3f	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P3.lean	4615aab53a740f7fca456fc8639874bc8b5595a2636332350154315ceb13f690	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P4.lean	bad7d06d4e37dcd4aaf6e69cde9b3ce7bbc0496064fe1ec0d55687215b82e1bc	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P5.lean	c239e1c697a40580f5ff68e8c1ba31af7778469bcc5f3f9c9d38d6a9fcb9791e	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P6.lean	e16e1debaa71a96eda872984fad818d866da988d2216532841078cd25932c353	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P7.lean	6a998908087c842f8f409b113ccc1f6f8ca7e3e7413e3c46569b405871a34837	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P8.lean	a615b0b846a962bb8a6e67a65f312c6fa25e38fb445c942f4203629d6cbcbb2c	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/P9.lean	9a066dd68a585188377abc115c5c54b814d6acd39748cec3eec1637e10b48764	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Data/H2979Fc/Whole.lean	2052b2e2580f604a17c02ee33ef0c6fd9140adc98ec370d9d35aa2f511a3d82d	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/HF/Cert.lean	9fe657e3e9ee20725b3a78d249dd51d1191b051e52a8050cf1d886235ec3c337	design A (aA-final staging): p-hfirst
+Work/XHostT/HF/Count2979C.lean	2de43fd37873f873d1e05753994452db42eb5110b5878e984b10584847fe8d32	design A (aA-final staging): x-inst
+Work/XHostT/HF/Def.lean	a975984e69651fed433eda85b1e9d80ccf8ed12268adb3443429012423be85e8	design A (aA-final staging): p-hfirst
+Work/XHostT/HF/GeomA4.lean	5a50bbd6b2443e455f31a2eb97ec9100c558054228c1b271fc79ea20e456a117	design A (aA-final staging): p-hfirst
+Work/XHostT/HF/GeomInst.lean	92a09f87e51ef7eb4be358dd06e9eee18ad3ff3b569675c62599297256d6a419	design A (aA-final staging): p-hfirst
+Work/XHostT/HF/Heads.lean	c63087137f92e12f3d10341f369441a347dc343b9682f0ef6aef3a3dddc8bcf0	design A (aA-final staging): p-hfirst
+Work/XHostT/HF/Inst2979.lean	c79185e86503c6d45fb15876d43e6cb1ae21eb834452b7d0e54604e4eae470ce	design A (aA-final staging): x-inst
+Work/XHostT/HF/Stage.lean	bbe5fec36a9a9e28fb49d6a7f05271a99546b4d67cd13186bb134dac8144f570	design A (aA-final staging): p-hfirst
+Work/XHostT/HF/ToHF.lean	3dcb703ea560ca1555cce53901e06f1dea332ac1cbb17eebb77e8b810a34f66b	design A (aA-final staging): p-hfirst
+Work/XHostT/HFW2979/Cert.lean	974ba95b8749f5cb04a89b4536194597b4014f2b3614441363c17bd35dc716c0	design A (aA-final staging): x-inst
+Work/XHostT/HFW2979/Def.lean	abc185b033f3843b678defdb7b3820072d6cddab750ca25c1f329ba41f03e459	design A (aA-final staging): x-inst
+Work/XHostT/HFW2979/Disp2979W.lean	a53af77518d97729b620272b67e414ea1f4a859cac2197bfa9d9c26eb19bc9d1	design A (aA-final staging): x-inst
+Work/XHostT/HFW2979/GeomA4W.lean	1b82394c7b9625556b6b2456b7a66f341dca16be40a0c4b735a267b04c34d298	design A (aA-final staging): x-inst
+Work/XHostT/HFW2979/GeomInstW.lean	715b89ef281b82b8c9f279fcef6debb6da93b1a979769baaf5bff2dfa8fcd09f	design A (aA-final staging): x-inst
+Work/XHostT/HFW2979/Heads.lean	6f3ac5100a275cb50ad205b81fb37df41ce054944d95e9cd050bf07b836e13cc	design A (aA-final staging): x-inst
+Work/XHostT/HFW2979/Stage.lean	1d23d2e7c3cd77f72a1e3c02b2d1d55368e4cd4fd4bb1b1cba6f06779258ee63	design A (aA-final staging): x-inst
+Work/XHostT/HFW2979/ToHF.lean	aeb9514ae8f2f83ac82f6f756bc0fed42c90f179b517a2794517c27b75454a3d	design A (aA-final staging): x-inst
+Work/XHostT/Inst/S2979Fc.lean	f614a3ed0b684d160e5b8eb0a966a9fa78cbd36cfcd758c4b723f98b1bef4951	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/Inst/S2979FcFacts.lean	59752fe0e50eba9344acc79812267ab55cda3ad545b8ca6b11cae1c5bc106138	afc-data (wht45/afc): A-fc data layer (design A recipes on fill u1-2979sep)
+Work/XHostT/KCheck.lean	6c50d4893a623b5432be5a75bdb87a1fdf1fbcf42d7b0817b75f670a2a0fbf46	design A (aA-final staging): p-a3
+Work/XHostT/KGlue.lean	6c309dcc06fb2a0858740fc656270a2cee8324d5b9d55bb7574c769da28b628d	design A (aA-final staging): aA-data
+Work/XHostT/KHead.lean	a3866d86b679e96d1b624906ef5a1678a12ff6167f497008b574065f8ac42910	design A (aA-final staging): aA-data
+Work/XHostT/KHeadC.lean	0ca8a6cd9cc687eb61cf169cd50cffc92341aaa4cf624ba0c55e93f90c6c1ab1	design A (aA-final staging): aA-data
+Work/XHostT/KHist.lean	32376b964971ecb496bd7f05d66a55741df606c38ac4d6fecd4fa8e05fcfdbdd	design A (aA-final staging): aA-data
+Work/XHostT/KHistC.lean	5da382f3859c9586c5bf2f6d15aa28e2bf6140be4f22bb3db0c26f6b637864aa	design A (aA-final staging): aA-data
+Work/XHostT/KWhole.lean	52f76c93e2e3443b8b5d3d092fafe34165fffafdcbfe0821ddcec97a33fafcd0	design A (aA-final staging): aA-data
+Work/XHostT/TCert.lean	36d9e6d0d0051f668362f5f7adb1e07f8af8ff624eabff17125b7e8acc35e70e	design A (aA-final staging): p-a3
+Work/XHostT/TCertW.lean	40aafebc472f10f771bd6892329194f0326c04043847fc7a59cd17d8da8e9890	design A (aA-final staging): x-inst
+Work/XHostT/TDef.lean	5073784bed41c64c1b53452de9583d2c144df0067075656b278e824ce099650a	design A (aA-final staging): p-a3
+Work/XHostT/TDefW.lean	50d130d0c99a03edcf17333ef741c947d46cf758ec1438d3f44b006de02a87dc	design A (aA-final staging): x-inst
+Work/XHostT/TEnd.lean	9ee3d8ad925aed6274c48e10f72c7d4b4238741ca3ff1515a4ba2e89494bb106	design A (aA-final staging): aA-data
+Work/XHostT/TGeom.lean	691ec31c0525cdd079cfd0a7d8f9b9c1f5a06796ea8b8fd045d0c4df1dd16de0	design A (aA-final staging): p-a3
+Work/XHostT/TGeomW.lean	4dce29df44f21fb6970fdf0fe1966027dcf67c34d3a3ce84fd0c2cbf27ea4782	design A (aA-final staging): x-inst
+Work/XHostT/TLocal.lean	6d1a3d6ce89d0aa4242473d16ddb7a6a2045e56370d7c5ab70fd2600e3918477	design A (aA-final staging): p-a3
+Work/XHostT/TProvW.lean	142c0c41cc5136c4e95a5a4d053741019fddffb3090681011ddaf82b334f2123	design A (aA-final staging): x-inst
+Work/XHostT/TRoles.lean	1245d858305c5ad30b116bd44baad5fb0db66c9e552278cfe4800155662ca255	design A (aA-final staging): p-a3
+Work/XHostT/TSchedK.lean	af7f5f61d7f96e5ef827c54955873105f55ebe29eb37c2972814890b728c0284	design A (aA-final staging): p-a3
+Work/XHostT/TStage.lean	2832e0f9e71d001e6e769ebe46a3c3626752a8081e926a3284ea347c1824fc87	design A (aA-final staging): p-a3
+Work/XHostT/TStageW.lean	0336eaf83b80aeab2f54db0e44c15f6a9b3c5d644d56491da0af2551e48c3ee7	design A (aA-final staging): x-inst
+Work/XHostT/TTab.lean	03087760580c231c5ebfda6cf546729fddb9f6d9169653aa20f13d43fb82b069	design A (aA-final staging): p-a3
+comparator/fourier-l2979fc-neg.json	337eafe5207db9bb7b9f58baa9aef43abb41a27f7964a5fc50fec7941359dbd6	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)
+comparator/fourier-l2979fc.json	f23d1ee898638fad32eaf1d33420fe2b7cbdbadd27a1d77c8fbe5c1ba8f68e58	afc-cut tools/mk_l2979Fc.py final (suffix L2979Fc, N 17887045, profile 2979Fc)

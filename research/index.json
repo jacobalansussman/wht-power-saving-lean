@@ -1,7 +1,7 @@
 {
  "schema": "wht-research-index/1",
  "repository": "jacobalansussman/wht-power-saving-lean",
- "revision": "fifth revision",
+ "revision": "sixth revision",
  "covers": "2026-10-10 to 2026-10-20",
  "made_with": "AI agents (Claude) directed by the author",
  "human_review": "none: no person has read any of the proofs",
@@ -239,8 +239,8 @@
    "summary": "The race for the record (13-20 October): the Lean ladder to 1.6257e-3, the levers that died, the recursion lever (Theorem 1G, heads, the half cut) and the frontier.",
    "findings": 62,
    "counts": {
-    "proved in Lean": 15,
-    "checked by computer": 32,
+    "proved in Lean": 16,
+    "checked by computer": 31,
     "argued by hand, not checked": 7,
     "refuted": 6,
     "open": 2
@@ -254,8 +254,8 @@
  "totals": {
   "findings": 585,
   "counts": {
-   "proved in Lean": 23,
-   "checked by computer": 212,
+   "proved in Lean": 24,
+   "checked by computer": 211,
    "argued by hand, not checked": 216,
    "refuted": 92,
    "open": 42

@@ -988,6 +988,76 @@ to the authors of openai/math (OpenAI).
    describes: by AI agents (Claude) under my direction. The credits, with
    links, are in README.md.
 
+11. Files added in the sixth revision (package/leverAFc).
+   package/leverAFc is laid over the same clone of Ryan Shea's repository as
+   the packages of section 10, after package/u8x0hq, and everything said at
+   the start of section 10 about Shea's and Nil Mamano's files applies to
+   it. The other changes of the sixth revision are to text files and to the
+   generators' REGENERATE.sh, README.txt, PATCHES.txt and tree.sha256 of
+   package/lever2979 and package/leverA (no copied file among them).
+
+   a. Modified copies of OpenAI's statement file: package/leverAFc/overlay/
+      Work/FourierL2979Fc/UniformFourierChallenge.lean and Work/
+      FourierL2979FcNeg/UniformFourierChallenge.lean, modified copies of
+      lean/ComparatorChallenges/UniformFourier.lean of openai/math at the
+      commit of section 10. Changes: the exponent 1 - 1/(10^(13:ℕ)) is
+      replaced by 1 - 17887045/(10^(10:ℕ)) (in the folder ending in Neg, one
+      unit stronger, 17887046), and the seven names of section 2 receive the
+      suffix L2979Fc. Everything else is the upstream text, unchanged. As in
+      section 10, item a, the files are kept byte for byte as compiled, and
+      this section is their notice.
+   b. Modified copies of OpenAI's proof files: the folder
+      Work/FourierL2979Fc/ holds copies of eleven files of
+      lean/OAI/Computability/FourierTransform/ of openai/math and of five
+      definitions of its Goal.lean, made by Shea's script mkchain_c401g5.py
+      or by the agents' generators that copy its output under a new suffix;
+      each begins with a comment that names the upstream file and states
+      what was changed.
+   c. The community's files. package/leverAFc/generators/tree/ holds the
+      same unmodified copies as package/leverA's generators (section 10,
+      item c): the 12 files of #2979 under wht45/lever/p-alt/dl/main2979/,
+      the copies of #2979's DISPATCH, ORDER, PROFILE and PROVIDERS under
+      wht45/allheads/aA-data/in/alloc2979H/, #3945's PLAN.json.gz and
+      TEMPLATE.json.gz under wht45/lever/g-heads/dl/pr3945/, and the unused
+      copy of the community's word builder build_tri.py
+      (wht43/bound-check/k-word/tools/build_tri_869.py). Its folder
+      wht45/afc/afc-data/in/alloc2979Fc/ also holds unmodified copies of
+      #2979's DISPATCH.json, ORDER.json and PROVIDERS.json beside the table
+      A-fc (FILL.json.gz and PROFILE.json, this project's). package/leverAFc/
+      fill/ORDER.json and fill/DISPATCH.json hold #2979's allocation/
+      ORDER.json and DISPATCH.json (Mason Hale's #2917, as #2979's NOTICE
+      says), with the same content, re-serialised. The generators check
+      every copy against its sha256 before they run. The licence of
+      CrocSwap/integer-mult-bounds (Apache License, Version 2.0) and the
+      notices of #2979 (for PLAN and TEMPLATE, of #3945) apply to them.
+   d. Programs that copy or patch the community's code. package/leverAFc/
+      fill/made-by/ holds the programs that made the table A-fc, the same
+      files as research/record-track/programs/a-fc/ (section 10, item i):
+      r2/tools/fallback_patch.py carries a modified copy (made tolerant, as
+      its first lines say) of the placement loop of construction/
+      build_fill.py of #3815 (Erwan Secousses / ChaloupeMusic);
+      r2/tools/fillmodel.py copies the window, family and width logic of
+      owner/verify.py of #3945 (Dugongue and the lineage its NOTICE.md
+      names); tools/hall_fc.py applies its changes to a copy of #3815's
+      hall_lp.py that it reads by path, which is not changed. The other
+      programs of fill/made-by/ are mine. fill/checks/hub/ holds the logs
+      and result files that the community's own check programs wrote when
+      the agents ran them, unmodified, on the table; the programs themselves
+      are not included. Same licence (CrocSwap/integer-mult-bounds, Apache
+      License, Version 2.0).
+   e. Credit. The circuit is #2979, credited in section 10, item g. The
+      allocation model (the per-tick Hall program) and the reverse-time
+      placement program with which the table A-fc was made are those of
+      #3815, by Erwan Secousses / ChaloupeMusic, with the #3638 lineage.
+      #2979's owner engine, which checks the table, is Dugongue's (#2839,
+      #2863). The Lean route is credited in section 10, item h.
+   f. What is mine: the table A-fc (its class solution, solved for the full
+      cut, and its tolerant placement), the full cut's instance on #2979's
+      words with its cut fact, the generators of its data and its rate fact,
+      and the checks. The new files of package/leverAFc were made on
+      20 October 2026 the way section 4 describes: by AI agents (Claude)
+      under my direction.
+
 Not included in this repository and fetched by the build: Mathlib
 (https://github.com/leanprover-community/mathlib4, Apache License 2.0) and its
 dependencies. The comparator (https://github.com/leanprover/comparator) is a

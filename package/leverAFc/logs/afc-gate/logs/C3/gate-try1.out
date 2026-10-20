@@ -1,0 +1,12 @@
+GATE-LEAN START Tue Oct 20 14:38:33 UTC 2026 mode=ours host=91c6f15e7ad3
+OURS-READY and overlays unpacked (waited 540s)
+cp -a ours/T done in 75s
+INSTALL A overlay: 286 new
+CoreF sha256 7aa5f6c235e29642; HeadM1 caac2d8c18784a07; GeomInstW 715b89ef281b82b8
+source grep hits (doc comments only expected): 3
+Work/Gate/CutFact2979Fc.lean:22:Prepared with assistance from Claude.  No `sorry`.
+Work/Gate/CutFact2979FcRate.lean:9:Round wht45/afc (20 Oct 2026), agent afc-gate; prepared with assistance from Claude.  No `sorry`.
+Work/Mixed/Rate2979Fc.lean:22:No `sorry`, no `native_decide`.
+   (slot: waited 0s; heavy 0, avail 50484 MB)
+   LEAN_NUM_THREADS=8
+=== build1 START 14:49:19

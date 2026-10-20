@@ -95,7 +95,7 @@ def build():
     index = {
         "schema": "wht-research-index/1",
         "repository": "jacobalansussman/wht-power-saving-lean",
-        "revision": "fifth revision",
+        "revision": "sixth revision",
         "covers": "2026-10-10 to 2026-10-20",
         "made_with": "AI agents (Claude) directed by the author",
         "human_review": "none: no person has read any of the proofs",
