@@ -1,0 +1,35 @@
+m=2 r=1: {0: 6, 1: 9}
+m=2 r=2: {0: 3, 1: 12}
+m=3 r=1: {0: 12, 1: 51}
+m=3 r=2: {0: 6, 1: 24, 2: 33}
+m=3 r=3: {1: 21, 2: 42}
+m=4 r=1: {0: 24, 1: 231}
+m=4 r=2: {0: 12, 1: 48, 2: 195}
+m=4 r=3: {1: 42, 2: 84, 3: 129}
+m=4 r=4: {2: 105, 3: 150}
+m=5 r=1: {0: 48, 1: 975}
+m=5 r=2: {0: 24, 1: 96, 2: 903}
+m=5 r=3: {1: 84, 2: 168, 3: 771}
+m=5 r=4: {2: 210, 3: 300, 4: 513}
+m=5 r=5: {3: 465, 4: 558}
+m=6 r=1: {0: 96, 1: 3999}
+m=6 r=2: {0: 48, 1: 192, 2: 3855}
+m=6 r=3: {1: 168, 2: 336, 3: 3591}
+m=6 r=4: {2: 420, 3: 600, 4: 3075}
+m=6 r=5: {3: 930, 4: 1116, 5: 2049}
+m=6 r=6: {4: 1953, 5: 2142}
+random symplectic images agree
+from perfect m=2 improve=True: m=3 bound 35/17 = 2.058824
+from perfect m=2 improve=True: m=4 bound 400/187 = 2.139037
+from perfect m=2 improve=True: m=5 bound 26319/12155 = 2.165282
+from perfect m=2 improve=True: m=6 bound 228354/104533 = 2.184516
+from perfect m=2 improve=False: m=3 bound 35/17 = 2.058824
+from perfect m=2 improve=False: m=4 bound 400/187 = 2.139037
+from perfect m=2 improve=False: m=5 bound 26319/12155 = 2.165282
+from perfect m=2 improve=False: m=6 bound 228354/104533 = 2.184516
+from hook m=3 (80,144,224) improve=True: m=4 bound 29/11 = 2.636364
+from hook m=3 (80,144,224) improve=True: m=5 bound 9486/3575 = 2.653427
+from hook m=3 (80,144,224) improve=True: m=6 bound 405993/153725 = 2.641034
+from hook m=3 (80,144,224) improve=False: m=4 bound 29/11 = 2.636364
+from hook m=3 (80,144,224) improve=False: m=5 bound 9486/3575 = 2.653427
+from hook m=3 (80,144,224) improve=False: m=6 bound 405993/153725 = 2.641034

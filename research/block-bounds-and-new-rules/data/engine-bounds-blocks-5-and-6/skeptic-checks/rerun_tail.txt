@@ -1,0 +1,33 @@
+(3) dominating chain: p_up(j,k) <= 2^-(j+1) and p_down(j,k) >= 1 - 2^-j for all k <= 80, j < k: violations 0
+    dominating chain is stochastically monotone (p_up(j) + p_down(j+1) <= 1): True
+    pi*(0..4) = [0.419422, 0.419422, 0.139807, 0.019972, 0.001331], normalizer in [2.384231029031, 2.384231029031]
+== hook m=4 k=8 (27456, 48576, 68320, 86592)
+   exact tops: m=5: 2.991720, m=6: 2.972896, m=7: 2.954600, m=8: 2.950945, m=10: 2.946223, m=20: 2.944711, m=40: 2.944709, m=60: 2.944709
+   min over m = 5..60 of the exact top ratio: 2.944709234 (at m=60)
+   (2) block-60 profile nondecreasing in r: True
+   (4) certified bound for EVERY m >= 60: T_m >= c* = 2.944709234
+   (5) no-growth: S_inf(m0=4) >= 0.909090909; every block-m projection of this base has T_m <= 3.469231
+   limit of the exact tops (m = 60): 2.944709234121
+== hook m=3 k=4 (80, 144, 224)
+   exact tops: m=4: 2.636364, m=5: 2.653427, m=6: 2.641034, m=7: 2.645739, m=8: 2.643517, m=10: 2.644208, m=20: 2.644444, m=40: 2.644444, m=60: 2.644444
+   min over m = 4..60 of the exact top ratio: 2.636363636 (at m=4)
+   (2) block-60 profile nondecreasing in r: True
+   (4) certified bound for EVERY m >= 60: T_m >= c* = 2.644444444
+   (5) no-growth: S_inf(m0=3) >= 0.823529412; every block-m projection of this base has T_m <= 3.400000
+   limit of the exact tops (m = 60): 2.644444444444
+== perfect m=2 (1, 2)
+   exact tops: m=3: 2.058824, m=4: 2.139037, m=5: 2.165282, m=6: 2.184516, m=7: 2.191355, m=8: 2.196117, m=10: 2.199029, m=20: 2.199999, m=40: 2.200000, m=60: 2.200000
+   min over m = 3..60 of the exact top ratio: 2.058823529 (at m=3)
+   (2) block-60 profile nondecreasing in r: True
+   (4) certified bound for EVERY m >= 60: T_m >= c* = 2.200000000
+   (5) no-growth: S_inf(m0=2) >= 0.666666667; every block-m projection of this base has T_m <= 3.000000
+   limit of the exact tops (m = 60): 2.200000000000
+   projection from block 2, ANY base family: T_m <= 2 / S_inf = 3.000000 for every m
+   projection from block 3, ANY base family: T_m <= 3 / S_inf = 3.642857 for every m
+   projection from block 4, ANY base family: T_m <= 4 / S_inf = 4.400000 for every m
+   projection from block 5, ANY base family: T_m <= 5 / S_inf = 5.241935 for every m
+   projection from block 6, ANY base family: T_m <= 6 / S_inf = 6.142857 for every m
+   projection from block 7, ANY base family: T_m <= 7 / S_inf = 7.082677 for every m
+   projection from block 8, ANY base family: T_m <= 8 / S_inf = 8.047059 for every m
+(6) block-4 hook: c* = 2.944709234120998, min exact top (m=5..60) = 2.944709234120998; all-m bound = min of the two >= 2.9447: True
+    exact: T_5 = 834241/278850, T_6 = 1188222/399685, T_7 = 2361819/799370

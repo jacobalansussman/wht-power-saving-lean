@@ -1,0 +1,15 @@
+Re-run of 23 October 2026, Apple M4 Mac mini, from a copy of this section as published (so every relative path is the
+public one), each program under a memory guard. "identical": the same bytes as the stored output (for nrs.py, the
+same apart from its unseeded random-pair lines).
+
+nrs.py: exit 0
+nrs.py output identical to out_nrs.txt
+fcheck: exit 0, real 6.90, output identical
+tensor_cx: exit 0, real 8.22, output identical
+sk_nrs: exit 0, real 71.94, output identical
+sk_claim1: exit 0, real 3.20, output identical
+sk_tail: exit 0, real 4.82, output identical
+sk_kappa: exit 0, real 1.13, output identical
+engine_m.py 3 identical
+engine_m.py 4 identical
+engine_m.py 5 identical

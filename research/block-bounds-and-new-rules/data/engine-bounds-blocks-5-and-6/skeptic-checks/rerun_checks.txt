@@ -1,0 +1,5 @@
+base block-4 profile ratios [1.0, 1.7692, 2.4883, 3.1538] subadditive: True
+block 5: profile [1.0, 1.737, 2.3587, 2.8061, 2.9917]; nondecreasing True; R_(r+s) <= R_r + R_s: True; R_r <= r: True
+block 6: profile [1.0, 1.7225, 2.306, 2.6941, 2.8645, 2.9729]; nondecreasing True; R_(r+s) <= R_r + R_s: True; R_r <= r: True
+law of the block-4 distance of a projected opposite pair (from block 60): {4: 0.4462, 3: 0.4183, 2: 0.122, 1: 0.0131, 0: 0.0004}
+T_60 = sum_s w_s R_s with w_s = P(D_4 = s)/S_60: {4: 0.4908, 3: 0.4601, 2: 0.1342, 1: 0.0144} -> 2.944709

@@ -5,7 +5,7 @@
 # Usage: python3 -I nrs.py
 import re, ast, random, sys, os
 HERE = os.path.dirname(os.path.abspath(__file__))
-W16 = os.path.join(HERE, '..', '..', 'wave16')
+W16 = os.path.join(HERE, '..', '..', 'data', 'engine-bounds-blocks-5-and-6', 'exact-projection-table')   # the two table files, copied unchanged from my notes
 
 def N_closed(m, r):
     """number of nonzero p in F_2^{2m} with d(pi_p L, pi_p M) = s, for d(L, M) = r (1 <= r <= m)."""

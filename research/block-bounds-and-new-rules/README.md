@@ -188,7 +188,8 @@ game the bound also rests on the keptness argument of 1.3 (argued by hand).
 - **Engine game, every block from 4 on: at least 2.9447 moves per array**; 2.99172 at block 5 and 2.97290 at block
   6. The method carries the block-4 hook upward through projections between frame graphs, controlled by a coupling
   argument. **Argued by hand, not checked**, from exact computations; two AI skeptics reproduced every number with
-  their own code. Its inputs from block 4 are the exact cap 27,456 and lower bounds on what two, three and four
+  their own code. The written proof is [proofs/induction-across-block-sizes.md](proofs/induction-across-block-sizes.md)
+  (section 4), with the skeptics' reports beside it. Its inputs from block 4 are the exact cap 27,456 and lower bounds on what two, three and four
   moves in independent directions do to the hook (48,576, 68,320 and 86,592); each lower bound is a certificate
   checked by computer (1.4; for 86,592 together with the hand-argued lemma that its 16 character blocks have equal
   rank). Newly excluded: 3 in 8 and 4 in 11 at blocks 5 and 6; 5 in 14 at block 6; W arrays in 3W - 1 moves
@@ -271,7 +272,8 @@ a better certificate could still settle and which need a construction or a new k
   computation into a bound that grows with m. Whether the best Theorem-R bound grows in step with m is open (the
   track guesses it does not). **Argued by hand, not checked; upheld by two skeptics, one of whom refuted the claim
   "general products are at most twice the best factor"** with a counterexample (it holds for certificates of
-  constant dimension).
+  constant dimension). The proofs are sections 5 to 7 of
+  [proofs/induction-across-block-sizes.md](proofs/induction-across-block-sizes.md).
 - **"A unit exists" as equations.** Any run of moves on one array between two mixing steps equals free steps, then
   the first r coordinate moves, then free steps; so "a unit exists" is one polynomial system over the group algebra
   of the free steps, and each representation gives a relaxation. Deciding 2 in 7 this way is out of reach (about
@@ -601,7 +603,8 @@ is the one used.
 
 Each folder under `programs/` has a README with what it shows, the command, time and memory, and the expected
 output. Small certificates and outputs are in `data/`; nothing here is larger than 5 MB. `results.json` lists every
-finding with its status, figures and evidence files.
+finding with its status, figures and evidence files. `proofs/` holds the written proof of the bound for every block
+from 4 on and the two skeptics' reports on it.
 
 | folder | what it shows | re-run for this revision |
 |---|---|---|
@@ -667,11 +670,15 @@ paths are relative to its `checks/wht43/` folder. Archive catalogue entries are 
   `programs/family-S-depth-lemma/`, `programs/five-in-fourteen-block3/`; `wave16/d-tof-cert/`, `wave16/v28-theorem/`,
   `wave16/v28-kept/`, `wave16/v28-numbers/` → `programs/widened-game-hook-block3/`; `wave16/b56-compute/`,
   `wave16/b4-cert/`, `wave16/v-b56-compute/`, `wave16/b4-depth4/` → `programs/block4-hook-41-over-13/`;
-  `proofs/induction/` → `programs/engine-bounds-blocks-5-and-6/`; `wave16/d-tof-search/NOTE.md`.
+  `proofs/induction/` → `proofs/induction-across-block-sizes.md` and `programs/engine-bounds-blocks-5-and-6/`;
+  `proofs/v-pf-induction-logic/`, `proofs/v-pf-induction-compute/` → `proofs/induction-across-block-sizes-skeptics.md`
+  and `programs/engine-bounds-blocks-5-and-6/skeptic-checks/`; `wave16/v-b56-methods/engine_m.py` →
+  `programs/engine-bounds-blocks-5-and-6/fact-a/`; `wave16/d-tof-search/NOTE.md`.
 - Section 2 [T4, T6, T10, T11]: `wave16/b56-ceilings/`, `wave16/b56-methods/`, `wave16/b56-v-skeptic/`,
   `wave16/v-b56-methods/` → `programs/certificate-ceilings/`; `proofs/ladder/` → `programs/ladder-above-theorem-R/`;
   `proofs/duality/` → `programs/duality-best-theorem-R-bound/`; `proofs/algebraic/` (not published);
-  `proofs/v-pf-induction-logic/` (the product counterexample).
+  `proofs/v-pf-induction-logic/` (the product counterexample, published as
+  `programs/engine-bounds-blocks-5-and-6/skeptic-checks/tensor_cx.py`).
 - Section 3 [M15, X13, X27, N3, C20]: `wave16/d-tof-cert/LEGIT.md`; `wave16/tb4-beam/`, `wave16/tb4-vbeam/`,
   `wave16/tb4-tight/`, `wave16/tb4-v-tight/`, `wave16/tb4-nonlinear/`, `wave16/tb4-nonlinear-skeptic/` →
   `programs/toffoli-routes-block4/`; `wave16/b4-search/`; `wave16/f-reduce/NOTE.md`; `wave16/t514-cert/`,

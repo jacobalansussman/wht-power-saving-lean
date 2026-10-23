@@ -1,0 +1,25 @@
+m=2 r=1: N_r(s) = {0: 6, 1: 9}  (total points 15)
+m=2 r=2: N_r(s) = {0: 3, 1: 12}  (total points 15)
+random-pair checks agree
+m=3 r=1: N_r(s) = {0: 12, 1: 51}  (total points 63)
+m=3 r=2: N_r(s) = {0: 6, 1: 24, 2: 33}  (total points 63)
+m=3 r=3: N_r(s) = {1: 21, 2: 42}  (total points 63)
+random-pair checks agree
+m=4 r=1: N_r(s) = {0: 24, 1: 231}  (total points 255)
+m=4 r=2: N_r(s) = {0: 12, 1: 48, 2: 195}  (total points 255)
+m=4 r=3: N_r(s) = {1: 42, 2: 84, 3: 129}  (total points 255)
+m=4 r=4: N_r(s) = {2: 105, 3: 150}  (total points 255)
+random-pair checks agree
+m=5 r=1: N_r(s) = {0: 48, 1: 975}  (total points 1023)
+m=5 r=2: N_r(s) = {0: 24, 1: 96, 2: 903}  (total points 1023)
+m=5 r=3: N_r(s) = {1: 84, 2: 168, 3: 771}  (total points 1023)
+m=5 r=4: N_r(s) = {2: 210, 3: 300, 4: 513}  (total points 1023)
+m=5 r=5: N_r(s) = {3: 465, 4: 558}  (total points 1023)
+random-pair checks agree
+m=6 r=1: N_r(s) = {0: 96, 1: 3999}  (total points 4095)
+m=6 r=2: N_r(s) = {0: 48, 1: 192, 2: 3855}  (total points 4095)
+m=6 r=3: N_r(s) = {1: 168, 2: 336, 3: 3591}  (total points 4095)
+m=6 r=4: N_r(s) = {2: 420, 3: 600, 4: 3075}  (total points 4095)
+m=6 r=5: N_r(s) = {3: 930, 4: 1116, 5: 2049}  (total points 4095)
+m=6 r=6: N_r(s) = {4: 1953, 5: 2142}  (total points 4095)
+random-pair checks agree

@@ -390,7 +390,11 @@
    "programs": [
     "programs/engine-bounds-blocks-5-and-6/"
    ],
-   "data": [],
+   "data": [
+    "proofs/induction-across-block-sizes.md",
+    "proofs/induction-across-block-sizes-skeptics.md",
+    "data/engine-bounds-blocks-5-and-6/skeptic-checks/"
+   ],
    "rerun_2026_10_19": "yes: induct.py and checks.py, identical output; data/engine-bounds-blocks-5-and-6/rerun_2026-10-19.txt",
    "archive_entry": "L11"
   },
@@ -644,8 +648,13 @@
    "supersedes": [],
    "superseded_by": null,
    "refuted_by": null,
-   "programs": [],
-   "data": [],
+   "programs": [
+    "programs/engine-bounds-blocks-5-and-6/skeptic-checks/"
+   ],
+   "data": [
+    "proofs/induction-across-block-sizes.md",
+    "proofs/induction-across-block-sizes-skeptics.md"
+   ],
    "rerun_2026_10_19": "no",
    "archive_entry": "T11"
   },
@@ -663,8 +672,13 @@
    "supersedes": [],
    "superseded_by": null,
    "refuted_by": "AI skeptic counterexample (tensor_cx.py)",
-   "programs": [],
-   "data": [],
+   "programs": [
+    "programs/engine-bounds-blocks-5-and-6/skeptic-checks/"
+   ],
+   "data": [
+    "data/engine-bounds-blocks-5-and-6/skeptic-checks/out_tensor_cx.txt",
+    "proofs/induction-across-block-sizes-skeptics.md"
+   ],
    "rerun_2026_10_19": "no",
    "archive_entry": "T11"
   },
@@ -1841,7 +1855,7 @@
   {
    "path": "programs/engine-bounds-blocks-5-and-6/",
    "language": "python",
-   "shows": "2.9447, 2.99172, 2.97290",
+   "shows": "2.9447, 2.99172, 2.97290; Fact A by matrices (fact-a/); the two skeptics' independent checks (skeptic-checks/)",
    "command": "python3 -I induct.py",
    "time": "seconds",
    "memory": "small",
