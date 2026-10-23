@@ -307,9 +307,9 @@
   },
   {
    "id": "block-bounds-and-new-rules/12",
-   "statement": "Block 4: two moves in a row raise the hook by at most 48,576; the value 68,320 for three moves is computed but not certified, so the engine-price cap of 0.176 holds only with high probability.",
+   "statement": "Block 4: two moves in a row raise the hook by at most 48,576, and two moves in independent directions raise it by at least 48,576, so the value is exactly 48,576; three moves in independent directions raise it by at least 68,320; that three moves raise it by no more than 68,320 is not certified, so the engine-price cap of 0.176 holds only with high probability.",
    "status": "checked by computer",
-   "status_detail": "48,576 by a certificate with a 3,399 x 3,399 minor; 68,320 computed modulo a prime only",
+   "status_detail": "at most 48,576 by a certificate with a 3,399 x 3,399 minor; at least 48,576 and at least 68,320 by nonsingular minors (3,036 and 4,270) on all 16 characters, added 23 October 2026 after Maximilian Lutz (hub #4643) pointed out that these lower bounds had no stored certificate; at most 68,320 rests on floating-point singular values and further primes only",
    "date": "2026-10-13",
    "block": 4,
    "games": [
@@ -320,6 +320,8 @@
    "saving_if_it_existed": null,
    "numbers": {
     "two_move_cap": 48576,
+    "two_move_value_exact": 48576,
+    "three_move_lower_bound_certified": 68320,
     "three_move_value_computed": 68320,
     "engine_price_cap": 0.176
    },
@@ -329,7 +331,11 @@
    "programs": [
     "programs/hook-certificates-blocks-2-to-6/"
    ],
-   "data": [],
+   "data": [
+    "data/hook-certificates/cert_b2_m4.txt",
+    "data/hook-certificates/cert_m4_g2_M0.txt",
+    "data/hook-certificates/cert_m4_g3_M0.txt"
+   ],
    "rerun_2026_10_19": "yes: the certificate checkers PASS on an Apple M4 Mac mini; data/hook-certificates/rerun_light_2026-10-19.txt",
    "archive_entry": "L9"
   },
@@ -363,7 +369,7 @@
    "id": "block-bounds-and-new-rules/14",
    "statement": "Engine game: every unit needs at least 2.99172 paid moves per array at block 5, 2.97290 at block 6, and 2.9447 at every block from 4 on (moves counted by rank).",
    "status": "argued by hand, not checked",
-   "status_detail": "from exact computation; two AI skeptics reproduced every number with their own code",
+   "status_detail": "from exact computation; two AI skeptics reproduced every number with their own code; its block-4 inputs (cap 27,456 exact; lower bounds 48,576, 68,320, 86,592) are certificates checked by computer (entry 12 and the 41/13 entry)",
    "date": "2026-10-13",
    "block": 5,
    "games": [
@@ -1779,9 +1785,9 @@
   {
    "path": "programs/hook-certificates-blocks-2-to-6/",
    "language": "c, python",
-   "shows": "caps, demands and two-move caps of the hooks at blocks 2 to 6, with separate checkers",
-   "command": "python3 -I check_m3.py; ./check_m0 cert_m4_M0.txt; ./check_capA 4 8; ./check_b2 cert_b2_m4.txt",
-   "time": "seconds; the block-4 demand about an hour",
+   "shows": "caps, demands and two-move caps of the hooks at blocks 2 to 6, and lower bounds for two and three moves at block 4 on all 16 characters, with separate checkers",
+   "command": "python3 -I check_m3.py; ./check_m0 cert_m4_M0.txt; ./check_capA 4 8; ./check_b2 cert_b2_m4.txt; ./run_depth.sh 6",
+   "time": "seconds; the block-4 demand about an hour; run_depth.sh 42 minutes with six runs at a time",
    "memory": "under 250 MB",
    "needs": [
     "C compiler"

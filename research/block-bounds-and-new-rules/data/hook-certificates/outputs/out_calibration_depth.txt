@@ -1,0 +1,29 @@
+Calibration of gen_mj / check_mj, 23 October 2026, Apple M4 Mac mini (numpy 2.0.2).
+
+1. With every bit a letter (lab = 2^m - 1) gen_mj is gen_m0: same rank and the same pivot rows and columns.
+   m=2 k=1: pivots identical (1 of them)
+   m=3 k=4: pivots identical (28 of them)
+   check_mj on the block-3 one: RESULT: PASS  (1 alpha value checked, 28 x 28 each)
+
+2. The sum over all 2^m characters of rank M_alpha (gen_mj) against the rank of the whole block computed densely
+   in floating point (dense_small.py, numpy SVD).
+   gen_mj m=3 k=4 lab=1: sum 80 (per character: 10 10 10 10 10 10 10 10)
+   m=3 k=4 lab=1: dim N 280, demand (dense rank) 80, smallest kept sv 1.000e+00, largest dropped 9.6e-16
+   gen_mj m=3 k=4 lab=3: sum 144 (per character: 18 18 18 18 18 18 18 18)
+   m=3 k=4 lab=3: dim N 280, demand (dense rank) 144, smallest kept sv 8.660e-01, largest dropped 9.6e-16
+   gen_mj m=3 k=4 lab=7: sum 224 (per character: 28 28 28 28 28 28 28 28)
+   m=3 k=4 lab=7: dim N 280, demand (dense rank) 224, smallest kept sv 3.536e-01, largest dropped 8.2e-16
+   gen_mj m=3 k=2 lab=3: sum 40 (per character: 5 5 5 5 5 5 5 5)
+   m=3 k=2 lab=3: dim N 56, demand (dense rank) 40, smallest kept sv 8.660e-01, largest dropped 4.2e-16
+   gen_mj m=4 k=2 lab=1: sum 112 (per character: 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7)
+   m=4 k=2 lab=1: dim N 240, demand (dense rank) 112, smallest kept sv 1.000e+00, largest dropped 8.9e-16
+   gen_mj m=4 k=2 lab=3: sum 176 (per character: 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11)
+   m=4 k=2 lab=3: dim N 240, demand (dense rank) 176, smallest kept sv 8.660e-01, largest dropped 7.1e-16
+   gen_mj m=4 k=2 lab=7: sum 208 (per character: 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13)
+   m=4 k=2 lab=7: dim N 240, demand (dense rank) 208, smallest kept sv 9.354e-01, largest dropped 5.6e-15
+   gen_mj m=4 k=2 lab=15: sum 224 (per character: 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14)
+   m=4 k=2 lab=15: dim N 240, demand (dense rank) 224, smallest kept sv 9.682e-01, largest dropped 4.2e-15
+
+3. Block 4, k = 6, against hookG.py (data/block4-hook/out_rank2_blocks.txt: f >= 27,984 for b01 and 38,064 for b012).
+   m=4 k=6 lab=3 alpha=0: rank mod 2147483629 of M_alpha (5005 x 3003) = 1749  -> x 16 = 27984
+   m=4 k=6 lab=7 alpha=0: rank mod 2147483629 of M_alpha (5005 x 3003) = 2379  -> x 16 = 38064

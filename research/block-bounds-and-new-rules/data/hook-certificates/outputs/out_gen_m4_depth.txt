@@ -1,0 +1,12 @@
+Generator runs, 23 October 2026, Apple M4 Mac mini, under the memory guard (bg.sh, background priority), both at once.
+
+$ ./gen_mj 4 8 3 0 cert_m4_g2_M0.txt
+m=4 k=8 lab=3 alpha=0: rank mod 2147483629 of M_alpha (6435 x 6435) = 3036
+   39.84 real        38.89 user         0.48 sys
+   334217216  maximum resident set size
+
+$ ./gen_mj 4 8 7 0 cert_m4_g3_M0.txt
+m=4 k=8 lab=7 alpha=0: rank mod 2147483629 of M_alpha (6435 x 6435) = 4270
+   69.89 real        68.63 user         0.71 sys
+   334249984  maximum resident set size
+

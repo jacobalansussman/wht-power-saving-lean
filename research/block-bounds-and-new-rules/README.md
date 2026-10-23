@@ -171,8 +171,13 @@ computer-checked certificate). **Re-run for this revision:** the demand certific
 game the bound also rests on the keptness argument of 1.3 (argued by hand).
 - **Excluded:** 2 in 6, 3 in 9, 4 in 12, and every "W arrays in 3W moves". Any block-4 saving is at most 0.171.
 - **Grouped moves:** two moves in a row raise the hook by at most 48,576 (**checked by computer**, a certificate
-  with a 3,399 × 3,399 minor). The value 68,320 for three moves in a row is computed modulo a prime but not
-  certified, so the engine-price cap of 0.176 at block 4 holds only with high probability.
+  with a 3,399 × 3,399 minor), and two moves in independent directions raise it by at least 48,576 (**checked by
+  computer**, one 3,036 × 3,036 minor for each of the 16 characters), so the value is exactly 48,576. Three moves in
+  independent directions raise it by at least 68,320 (**checked by computer** the same way, with minors of size
+  4,270). That three moves in a row raise it by no more than 68,320 rests on floating-point singular values and on
+  ranks modulo further primes, not on a certificate, so the engine-price cap of 0.176 at block 4 holds only with high
+  probability. The bound for every block from 4 on (1.5) uses only the lower bounds, which until 23 October 2026 were
+  a program's output with no stored certificate.
 - **Open:** 2 in 7 (9.63e-2), 3 in 10 (0.132), 4 in 13 (0.150), 5 in 16 (0.161). The searches for them are told in
   `../moonshot-block4-block5/`.
 - **Not in Lean.** The block-3 route would need 16 character blocks of rank 5,412 each, roughly 10^7 times the
@@ -183,7 +188,10 @@ game the bound also rests on the keptness argument of 1.3 (argued by hand).
 - **Engine game, every block from 4 on: at least 2.9447 moves per array**; 2.99172 at block 5 and 2.97290 at block
   6. The method carries the block-4 hook upward through projections between frame graphs, controlled by a coupling
   argument. **Argued by hand, not checked**, from exact computations; two AI skeptics reproduced every number with
-  their own code. Newly excluded: 3 in 8 and 4 in 11 at blocks 5 and 6; 5 in 14 at block 6; W arrays in 3W - 1 moves
+  their own code. Its inputs from block 4 are the exact cap 27,456 and lower bounds on what two, three and four
+  moves in independent directions do to the hook (48,576, 68,320 and 86,592); each lower bound is a certificate
+  checked by computer (1.4; for 86,592 together with the hand-argued lemma that its 16 character blocks have equal
+  rank). Newly excluded: 3 in 8 and 4 in 11 at blocks 5 and 6; 5 in 14 at block 6; W arrays in 3W - 1 moves
   for W up to 120 (block 5) and 36 (block 6). The largest saving left open in the engine game is 0.319 at block 5
   and 0.392 at block 6; at block m it is at most ln(m/2.9447)/ln m.
 - **Widened game:** 62W/29 at block 5 and 63W/31 at block 6, **checked by computer** (full-row certificates);
@@ -598,7 +606,7 @@ finding with its status, figures and evidence files.
 | folder | what it shows | re-run for this revision |
 |---|---|---|
 | `programs/lean-block2-block3/` | the Lean files of Theorem R, the hook, block 2 and block 3 (11 files, 1,662 lines), the certificate generator, the skeptic's restatement | yes: rebuilt from these exact files on 19 October on a Linux machine of Google's Colab service (11 minutes, 10 GB, the three standard axioms, negative control rejected); the generator re-run gives the same certificate |
-| `programs/hook-certificates-blocks-2-to-6/` | certificate generators and separate checkers: caps, demands, rank-2 blocks, the chain gain, blocks 5 and 6 | yes: blocks 2 and 3, every cap, the chain gain, both rank-2 caps, the negative controls; and the block-4 demand determinant (56 minutes, the same value) |
+| `programs/hook-certificates-blocks-2-to-6/` | certificate generators and separate checkers: caps, demands, rank-2 blocks, two and three moves at block 4, the chain gain, blocks 5 and 6 | yes: blocks 2 and 3, every cap, the chain gain, both rank-2 caps, the negative controls; and the block-4 demand determinant (56 minutes, the same value); the two- and three-move certificates were added and checked on all 16 characters on 23 October 2026 (42 minutes) |
 | `programs/widened-game-hook-block3/` | the hook in the widened game; the skeptics' recomputation and keptness check | yes |
 | `programs/block4-hook-41-over-13/` | 41/13 by symmetry-reduced ranks; the skeptic's rebuild | yes (`hookG.py`, 48 seconds) |
 | `programs/commutative-slice-certificates/` | the slice exclusions for every W | yes (the LP certificates and 2 in 7) |

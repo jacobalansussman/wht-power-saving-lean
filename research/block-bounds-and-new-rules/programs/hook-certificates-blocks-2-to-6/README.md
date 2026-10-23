@@ -4,8 +4,10 @@
 64,960, 438,480, 60,512) for every direction, by exact vectors over the Gaussian integers; the demands (block 2: 8;
 block 3: 224; block 4: 86,592 = 16 × 5,412; blocks 5 and 6 in the widened game: 138,880 and 122,976) by nonsingular
 minors modulo a prime; the cap of two moves in a row (144 at block 3, 48,576 at block 4); the exact gain of the second
-of two plain moves at block 4 (24,288). Each generator is untrusted; each checker shares no code with its generator.
-A nonzero minor modulo p proves the rank over Q(i) is at least its size, which is the safe direction for a demand.
+of two plain moves at block 4 (24,288); and, at block 4, what two and three moves in independent directions do to the
+hook at least (48,576 and 68,320, by minors on all 16 characters). Each generator is untrusted; each checker shares no
+code with its generator. A nonzero minor modulo p proves the rank over Q(i) is at least its size, which is the safe
+direction for a demand.
 
 **Programs** (C compiled with `cc -O2`, and pure Python):
 - `gen_m3.py`, `check_m3.py`: block 3 (cap ≤ 80 for all 7 directions, demand ≥ 224, two moves ≤ 144). Run
@@ -18,6 +20,16 @@ A nonzero minor modulo p proves the rank over Q(i) is at least its size, which i
 - `check_yint.c`: the second step of a plain chain at block 4: `./check_yint 4 8 1 2` (1 second).
 - `gen_b2.c`, `check_b2.c`: two moves in a row: `./check_b2 cert_b2_m3.txt`, `./check_b2 cert_b2_m4.txt` (under a
   second).
+- `gen_mj.c`, `check_mj.c`, `run_depth.sh`: lower bounds on what the first two and the first three moves of the
+  transform, dir(e_1)dir(e_2) and dir(e_1)dir(e_2)dir(e_3), do to the block-4 hook. `gen_mj` is `gen_m0` with the
+  transform replaced by the product of the moves on a chosen set of address bits (`lab` is their mask; all bits gives
+  the transform and `gen_m0` again). `./check_mj CERT ALPHA` checks the minor for one character; with the two
+  certificates copied next to the programs, `./run_depth.sh 6` checks both on all 16 characters (32 runs, six at a
+  time; 42 minutes on an Apple M4 Mac mini at background priority, 3.3 hours of processor time; each run holds one
+  matrix of at most 146 MB). Because every character is checked, 48,576 = 16 × 3,036 and 68,320 = 16 × 4,270 do
+  not rest on the lemma that the character blocks have equal rank. `calibrate_depth.sh` (needs numpy, for `dense_small.py`)
+  shows that the new programs agree with `gen_m0` when every bit is used, with a dense floating-point rank in eight
+  small cases, and with `hookG.py` at block 4 with k = 6. The four certificates `neg_m3_g2_*` must FAIL.
 - `gen_big.c`, `check_big.c`, `run_b56.sh`, `run_full.sh`: blocks 5 and 6 in the widened game (full-row certificates
   in `../../data/hook-certificates/full-rows/`; about 6 minutes per block-6 class and 20 minutes for block 5 on a
   Linux machine). `run_m4_alpha.sh` checks a second character block at block 4 (same rank 5,412).
@@ -27,7 +39,8 @@ checker must reject (`neg_m3_*`), and the original outputs (`outputs/`). Copy th
 before running them.
 
 **Expected output.** `RESULT: PASS` (or `[PASS]` lines and a `SUMMARY`) for every certificate, `RESULT: FAIL` for the
-three negative controls; the block-4 determinant is 1797789153 modulo 2,147,483,629.
+three negative controls; the block-4 determinant is 1797789153 modulo 2,147,483,629. `run_depth.sh` ends with
+`g2: all 16 characters PASS -> f >= 16 x 3036 = 48576` and `g3: all 16 characters PASS -> f >= 16 x 4270 = 68320`.
 
 **Re-run for this revision:** yes, on 19 October 2026 on an Apple M4 Mac mini: `check_m3.py`, `check_m0` on the
 block-2 certificate, `check_capA` for all six (block, k) pairs, `check_yint 4 8 1 2` and `check_b2` at blocks 3 and 4
@@ -40,3 +53,13 @@ re-checked.
 These are the proof-logging track's certificates of 13-14 October 2026; their written proofs (the cap lemma, the
 splitting of the demand into equal character blocks) are argued by hand, and the Lean files of
 `../lean-block2-block3/` prove the cap lemma and the block-3 demand independently.
+
+**Added on 23 October 2026: two and three moves at block 4.** Maximilian Lutz checked my bound for every block from
+4 on independently and pointed out that two of its inputs, 48,576 and 68,320, rested on runs of `hookG.py` modulo a
+prime with no stored certificate ([#4643](https://github.com/CrocSwap/integer-mult-bounds/pull/4643)). `gen_mj`
+found the same ranks, 3,036 and 4,270 per character (`../../data/hook-certificates/outputs/out_gen_m4_depth.txt`),
+and `check_mj` confirmed both on all 16 characters (`out_check_m4_g2.txt`, `out_check_m4_g3.txt`,
+`run_depth_2026-10-23.txt`), so both lower bounds are now certificates. With the cap certificate `cert_b2_m4.txt`,
+two moves in independent directions raise the hook by exactly 48,576. That three moves raise it by no more than
+68,320 is still not certified. The calibration and the negative controls are in `out_calibration_depth.txt` and
+`out_negative_controls_depth.txt`.

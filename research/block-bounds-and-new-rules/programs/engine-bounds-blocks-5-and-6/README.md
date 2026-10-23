@@ -2,8 +2,11 @@
 
 **What it shows.** The induction track carries the block-4 hook upward through projections between frame graphs,
 controlled by a coupling argument, and gets at least 2.99172 moves per array at block 5, 2.97290 at block 6 and 2.9447
-at every block from 4 on, in the engine game, with moves counted by rank. The inputs are the exact cap and mod-p
-lower bounds on demands (the safe direction).
+at every block from 4 on, in the engine game, with moves counted by rank. The inputs are the block-4 hook's exact
+cap 27,456 and lower bounds on what two, three and four moves in independent directions do to it: 48,576, 68,320 and
+86,592 (the safe direction). Each lower bound is a nonsingular minor modulo a prime, stored with a checker that
+shares no code with the program that found it, in `../hook-certificates-blocks-2-to-6/`: 48,576 and 68,320 on all 16
+characters, 86,592 on one character together with the hand-argued lemma that all 16 have equal rank.
 
 **Programs** (numpy where imported):
 - `induct.py [M]`: the induction table up to block M (default 60).

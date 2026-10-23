@@ -1,0 +1,27 @@
+Negative controls for check_mj (block 3, depth 2: g_2 = dir(e_1) dir(e_2), k = 4; the valid certificate first).
+$ ./check_mj cert_m3_g2_M0.txt
+cert: m=3 k=4 lab=3 p=2147483629 (prime: yes) I^2=-1: yes, 18 distinct well-formed rows/cols: yes
+det mod p of the 18 x 18 minor of M_0 (lab 3) = 92416
+ALPHA 0: PASS  -> rank M_0 over Q(i) >= 18
+RESULT: PASS  (1 alpha value checked, 18 x 18 each)
+exit 0
+$ ./check_mj neg_m3_g2_extra.txt
+cert: m=3 k=4 lab=3 p=2147483629 (prime: yes) I^2=-1: yes, 19 distinct well-formed rows/cols: yes
+det mod p of the 19 x 19 minor of M_0 (lab 3) = 0
+ALPHA 0: FAIL  -> rank M_0 over Q(i) >= 0 (not certified)
+RESULT: FAIL  (1 alpha value checked, 19 x 19 each)
+exit 1
+$ ./check_mj neg_m3_g2_lab1.txt
+cert: m=3 k=4 lab=1 p=2147483629 (prime: yes) I^2=-1: yes, 18 distinct well-formed rows/cols: yes
+det mod p of the 18 x 18 minor of M_0 (lab 1) = 0
+ALPHA 0: FAIL  -> rank M_0 over Q(i) >= 0 (not certified)
+RESULT: FAIL  (1 alpha value checked, 18 x 18 each)
+exit 1
+$ ./check_mj neg_m3_g2_dup.txt
+cert: m=3 k=4 lab=3 p=2147483629 (prime: yes) I^2=-1: yes, 18 distinct well-formed rows/cols: NO
+RESULT: FAIL (format)
+exit 1
+$ ./check_mj neg_m3_g2_comp.txt
+cert: m=3 k=4 lab=3 p=2147483631 (prime: NO) I^2=-1: NO, 18 distinct well-formed rows/cols: yes
+RESULT: FAIL (format)
+exit 1

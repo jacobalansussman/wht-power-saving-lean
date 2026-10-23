@@ -1,0 +1,6 @@
+$ ./run_depth.sh 6   (23 October 2026, Apple M4 Mac mini; 32 runs, six at a time, background priority)
+g2: all 16 characters PASS -> f >= 16 x 3036 = 48576
+g3: all 16 characters PASS -> f >= 16 x 4270 = 68320
+real 2504.94
+user 11916.50
+sys 76.21
