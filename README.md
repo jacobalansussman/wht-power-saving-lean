@@ -1816,8 +1816,8 @@ figures are higher and rest on steps without a Lean proof; the leaderboard's own
    otherwise. In particular:
    - It is in whole-block accounting only (point 3).
    - Its Fourier saving is strictly below its kernel's: 8762478 against 8762479 (point 4).
-   - It is a statement about growth (point 5). The sizes given there are those of the earlier units. They
-     were not recomputed for the new unit, the one with m = 45.
+   - It is a statement about growth (point 5). Point 5 gives the sizes of the new unit, the one with m = 45,
+     in braces.
    - It says nothing about integer multiplication. No bit side is offered here (point 1).
 1. **The second result is not a better circuit, and it does not verify the community's theorem.** The second
    result places their circuit in my layout and checks it for my statement. Nothing here is about integer
@@ -1885,29 +1885,48 @@ figures are higher and rest on steps without a Lean proof; the leaderboard's own
      root of unity supplied to the program. Nothing is claimed for other transforms or other models.
 5. **It is a statement about growth, not a usable algorithm.** The items below give the sizes involved. A
    number marked (c) was computed from a formula, not in Lean. The figures are those of the kernel program of
-   the second and third results. The first result's are in square brackets.
+   the second and third results. The first result's are in square brackets, and the fourth result's in
+   braces; where braces are missing, that figure was not recomputed for the fourth result.
    - The proof works with a table of 2^a arrays indexed by all orthogonal matrices of a 110-dimensional space
-     over F_2 [80-dimensional]. The table is never written down. a = 6049 (c) [3213], and 2^a has
-     1821 digits (c) [968].
-   - Below log2 n = m (a + 1) = 665,500 (c) [257,120] the program is the ordinary n log n algorithm.
-     Nothing changes for any input whose length has fewer than 200,336 digits (c) [77,401].
-   - The constant is huge. As one of the agents read in the Lean proofs, the program fills all 2^a arrays with
-     the input, which puts a factor 2^a into the constant. With it the bound is below n log2 n only when
-     log2 log2 n exceeds a/(1 - z), about 8e6 (c) [6e6].
-   - A second explicit factor is 1 + 1/slack of the rate inequality. The slack is 6e-10 here
-     [2e-10 to 4e-10], by the auditing agent's arithmetic; the rational bounds of the Lean proof leave 2e-12.
-     Machine constants were never computed, here or by OpenAI.
-   - With every constant set to 1, a gain of 1% over the ordinary algorithm needs log2 n near 2^39
-     (c, heuristic) [2^45].
-   - For the third result these are figures of the kernel program, not of the Fourier program. The
-     Fourier program calls the kernel program on arrays whose lengths it chooses itself: by the agents'
-     reading of OpenAI's files, about (log log n)^2 sweeps on arrays of total length at most 8n. The
-     lengths n at which the saving starts, and the constants of the reduction, were not computed, here
-     or by OpenAI.
+     over F_2 [80-dimensional] {45-dimensional}. The table is never written down. a = 6049 (c) [3213] {1040},
+     and 2^a has 1821 digits (c) [968] {314}.
+   - The program in the proof never runs the ordinary n log n algorithm. It first copies the whole input into
+     every one of the 2^a arrays. On arrays of order below the threshold m (a + 1) = 665,500 (c) [257,120]
+     {46,845} it computes every output straight from the definition of the transform, as a sum over all the
+     inputs, so its work there grows like 2^a n^2. The recursion that gives the saving starts only at that
+     threshold: it is never used on an input whose length has fewer than 200,336 digits (c) [77,401] {14,102}.
+   - So the constant is huge: about 2^(a + m (a + 1)), roughly 10^202,150 (c) [10^78,360] {10^14,410}. With it
+     the bound is below n log2 n only when log2 log2 n exceeds about (a + m (a + 1))/(1 - z), that is 9e8 (c)
+     [5e8] {5.5e7}.
+   - A version built for speed would split the input among the 2^a arrays instead of copying it, and would use
+     the ordinary fast transform below the threshold. I have not written it or checked it in Lean. In a cost
+     model of it, it is the ordinary algorithm up to log2 n = a + m (a + 1) = 671,549 (c) [260,333] {47,885},
+     and for the fourth result its constant is about 1.01 for every n >= 2 (c). With every constant set to 1,
+     a gain of 1% over the ordinary algorithm needs log2 n near 2^39 (c, heuristic) [2^45].
+   - A second explicit factor is 1 + 1/slack of the rate inequality. The slack is 6e-10 here (c) [2e-10 to
+     4e-10]; the rational bounds of the Lean proof leave 2e-12. Machine constants were never computed, here or
+     by OpenAI.
+   - The kernel programs of the fifth and sixth results are of the same kind, with the same copies and the same
+     base case. Their figures are not recomputed here, except for the Walsh-Hadamard result with the fifth
+     (saving 1.5699306e-3): a = 2681 (c) and m (a + 1) = 195,786 (c), so a version built for speed would be the
+     ordinary algorithm up to log2 n = 198,467 (c), with a constant of about 1.02 (c).
+   - The seventh and eighth results use another kernel program, the recursion lever. It hands its small jobs
+     to OpenAI's own kernel program, which copies its input into 2^50 arrays and computes from the definition
+     on arrays of order below 1,671,168. The constant of the lever's program was not computed.
+   - For the Fourier results these are figures of the kernel program, not of the Fourier program. OpenAI's
+     reduction, which every Fourier result here uses, makes three transforms of a length between 2n and 4n,
+     and each makes 5e8 to 7e8 passes of the kernel program over its array for n from 2^20 to 2^64 (c); the
+     number of passes grows like (log log n)^2. Neither the lengths n at which the saving starts nor the
+     constants of the reduction are in Lean, here or in OpenAI's work. In a cost model with a kernel program
+     built for speed, the reduction costs about 10^9 times the fast transform at every size a computer could
+     hold, and for the eighth result the program needs fewer than 5 n log2 n real operations only when
+     log2 log2 n exceeds about 22,000 (c, heuristic).
 
    In Lean: `tableExp n s = Nat.clog 2 n + s`, `threshold u a = u * (a + 1)`, m = 110, s = 40, 14,692
-   arrays per unit [m = 80, s = 40, 9362], one unit per orthogonal matrix. Not in Lean: the order of that group,
-   which gives a and so every (c).
+   arrays per unit [m = 80, s = 40, 9362] {m = 45, s = 40, 1263}, one unit per orthogonal matrix. Below the
+   threshold the engine calls OpenAI's `almost_fixed`, that is `fixed_order`, the sum over all inputs
+   (`OAI/Computability/FourierTransform/TensorAlgorithm.lean`). Not in Lean: the order of that group, which
+   gives a and so every (c).
 6. **It is not a statement about bit complexity or about numerical computation.** One unit of work is one exact
    operation on complex numbers of any size, and the coefficients are unrestricted (section 1). OpenAI writes of
    its circuit result that it makes "no all-length, bounded-coefficient, conditioning, or bit-complexity claim".
